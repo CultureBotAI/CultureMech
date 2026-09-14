@@ -435,19 +435,24 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_946_nautilia_score10.py
+  action: RESOLVED_KOMODO_946_NAUTILIA_TOPOLOGY
+  changes: Reclassified KOMODO Medium 946.1 and 946.2 as strain variants
+  source: KOMODO Medium 946, 946.1, and 946.2
+  notes: Linked KOMODO Medium 946.1 and 946.2 under the KOMODO Medium 946 NAUTILIA
+    base while preserving the DSMZ 946 duplicate parent relationship.
 variant_children:
 - path: data/normalized_yaml/bacterial/for_dsm_13497.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006881
   name: for_dsm_13497
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 946.1 applies NAUTILIA medium to DSM 13497.
 - path: data/normalized_yaml/bacterial/for_dsm_21940.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006882
   name: for_dsm_21940
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 946.2 applies NAUTILIA medium to DSM 21940.
 parent_media:
   path: data/normalized_yaml/bacterial/nautilia_medium.yaml
   relationship: SOURCE_DUPLICATE

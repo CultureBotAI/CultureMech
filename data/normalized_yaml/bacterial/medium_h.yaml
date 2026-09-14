@@ -10,18 +10,24 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M1748 / NBRC Medium 959
+  notes: TOGO M1748 / NBRC Medium 959 lists 0.2 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Seawater
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source, Solvating media; Properties: Undefined component'
+    value: '1.0'
+    unit: L
+  source: TOGO M1748 / NBRC Medium 959
+  notes: TOGO M1748 / NBRC Medium 959 lists 1 L Seawater as the solvent; this natural
+    seawater remains intentionally unmapped.
 - preferred_term: Monosodium glutamate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
-    Simple component'
+  source: TOGO M1748 / NBRC Medium 959
+  notes: TOGO M1748 / NBRC Medium 959 lists 0.5 g/L Monosodium glutamate.
   term:
     id: CHEBI:64220
     label: monosodium glutamate
@@ -30,10 +36,10 @@ ingredients:
     label: monosodium glutamate
 - preferred_term: Glucose
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  source: TOGO M1748 / NBRC Medium 959
+  notes: TOGO M1748 / NBRC Medium 959 lists 2 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
@@ -42,19 +48,24 @@ ingredients:
     label: glucose
 - preferred_term: Agar (if needed)
   concentration:
-    value: '12'
+    value: '12.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M1748 / NBRC Medium 959
+  notes: TOGO M1748 / NBRC Medium 959 lists 12 g/L Agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M1748
   term:
     id: TOGO:M1748
     label: medium-H
-notes: 'Source: https://togomedium.org/medium/M1748
-
-  Original source: NBRC - NBRC_M959
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=959'
+notes: TOGO M1748 imports NBRC Medium 959 as medium-H. The source formula lists 0.2
+  g Yeast extract, 1 L Seawater, 0.5 g Monosodium glutamate, 2 g Glucose, and 12 g
+  Agar if needed.
 applications:
 - Microbial cultivation
 curation_history:
@@ -84,3 +95,19 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m1748_medium_h_score15.py
+  action: RESOLVED_TOGO_M1748_SCORE15
+  source: https://togomedium.org/medium/M1748; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=959
+  notes: TOGO M1748 imports NBRC Medium 959 as medium-H. The source formula lists
+    0.2 g Yeast extract, 1 L Seawater, 0.5 g Monosodium glutamate, 2 g Glucose, and
+    12 g Agar if needed. Corrected the imported Seawater unit, grounded Yeast extract
+    and Agar, kept Seawater intentionally unmapped, and recorded the original NBRC
+    source URL.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1748
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=959

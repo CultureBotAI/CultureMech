@@ -5,17 +5,81 @@ category: archaea
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
-ingredients: []
+ph_value: 7.0
+ingredients:
+- preferred_term: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: TOGO M291 lists this component for Vulcanisaeta Medium; TOGO pH variants
+    M583 and M643 adjust the prepared medium to their final pH values.
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+  physicochemical_roles:
+  - REDOX_INDICATOR
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: TOGO M291 lists this component for Vulcanisaeta Medium; TOGO pH variants
+    M583 and M643 adjust the prepared medium to their final pH values.
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  nutritional_roles:
+  - SULFUR_SOURCE
+  physicochemical_roles:
+  - REDUCING_AGENT
+- preferred_term: Sulfur (powder)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: TOGO M291 lists this component for Vulcanisaeta Medium; TOGO pH variants
+    M583 and M643 adjust the prepared medium to their final pH values.
+  term:
+    id: CHEBI:33403
+    label: elemental sulfur
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33403
+    label: elemental sulfur
+  nutritional_roles:
+  - SULFUR_SOURCE
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: TOGO M291 lists this component for Vulcanisaeta Medium; TOGO pH variants
+    M583 and M643 adjust the prepared medium to their final pH values.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: H2SO4
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: TOGO M291 lists this component for Vulcanisaeta Medium; TOGO pH variants
+    M583 and M643 adjust the prepared medium to their final pH values.
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  physicochemical_roles:
+  - BUFFER
 media_term:
   preferred_term: TOGO Medium M643
   term:
     id: TOGO:M643
     label: Thermoproteus Medium (C)
-notes: 'Source: https://togomedium.org/medium/M643
-
-  Original source: JCM - JCM_M630
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=630'
+notes: TOGO M643 prepares Vulcanisaeta Medium from TOGO M291/JCM Medium 297 and adjusts
+  the complete medium to pH 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -44,11 +108,43 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_archaea_togo_score40.py
+  action: RESOLVED_ARCHAEA_TOGO_SCORE40_GRAPH
+  changes: Resolved score-40 archaeal TOGO cross-reference graph
+  source: https://togomedium.org/medium/M643; https://togomedium.org/medium/M291
+  notes: TOGO M643 prepares Vulcanisaeta Medium from TOGO M291/JCM Medium 297 and
+    adjusts the complete medium to pH 7.0.
 solutions:
-- preferred_term: VULCANISAETA MEDIUM (see Medium [M291])
-  composition: []
-  notes: Cross-reference to Medium M291
+- preferred_term: Modified Brock's salt base solution
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '1000'
+    unit: ML_PER_L
+  culturemech_term:
+    id: CultureMech:008118
+    label: Sulfolobus Medium
+  notes: TOGO M291 uses the Modified Brock's salt base solution from TOGO M156.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare Vulcanisaeta Medium from Modified Brock's salt base, yeast
+    extract, sulfur, resazurin, and sodium sulfide under an N2 atmosphere.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust the complete medium to pH 7.0.
+parent_media:
+  path: data/normalized_yaml/archaea/TOGO_M291_Vulcanisaeta_Medium.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:009455
+  name: vulcanisaeta_medium
+  notes: Adjusts TOGO M291 Vulcanisaeta Medium to pH 7.0.
+variant_relationship: PH_VARIANT
+variant_modifications:
+- Adjusts TOGO M291 Vulcanisaeta Medium to pH 7.0.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M643
+- reference: https://togomedium.org/medium/M291

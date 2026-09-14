@@ -11,26 +11,53 @@ media_term:
   term:
     id: mediadive.medium:J291
     label: MODIFIED MRS MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=291'
+notes: JCM Medium 291 lists 55.0 g Lactobacilli MRS broth from BD-Difco, 0.5 g L-Cysteine
+  HCl x H2O, and 1.0 L Distilled water; the pH is adjusted to 6.5. Lactobacilli MRS
+  broth is retained as a commercial medium product.
 ingredients:
-- preferred_term: Lactobacilli MRS broth
+- preferred_term: Lactobacilli MRS broth (BD-Difco)
   concentration:
-    value: '55'
+    value: '55.0'
     unit: G_PER_L
+  source: JCM Medium 291
+  notes: JCM Medium 291 lists 55.0 g/L Lactobacilli MRS broth from BD-Difco; this
+    commercial medium product is retained as an opaque component.
 - preferred_term: L-Cysteine HCl x H2O
-  term:
-    id: CHEBI:91248
-    label: L-cysteine hydrochloride hydrate
   concentration:
     value: '0.5'
     unit: G_PER_L
+  source: JCM Medium 291
+  notes: JCM Medium 291 lists 0.5 g/L L-Cysteine HCl x H2O.
+  term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
     label: L-cysteine hydrochloride hydrate
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: JCM Medium 291
+  notes: JCM Medium 291 lists 1.0 L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Suspend 55.0 g Lactobacilli MRS broth and 0.5 g L-Cysteine HCl x H2O
+    in 1.0 L distilled water.
+- step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.5.
+- step_number: 3
+  action: AUTOCLAVE
+  duration: 15 min
+  description: Autoclave at 121 C for 15 min unless otherwise stated.
 applications:
 - Microbial cultivation
 curation_history:
@@ -57,3 +84,36 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_jcm_j291_modified_mrs_score15.py
+  action: RESOLVED_JCM_J291_SCORE15
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=291
+  notes: JCM Medium 291 lists 55.0 g Lactobacilli MRS broth from BD-Difco, 0.5 g L-Cysteine
+    HCl x H2O, and 1.0 L Distilled water; the pH is adjusted to 6.5. Lactobacilli
+    MRS broth is retained as a commercial medium product. Restored the 1.0 L distilled-water
+    row, preserved Lactobacilli MRS broth as a source-disclosed commercial input,
+    added JCM autoclave evidence, and linked the TOGO M285 source duplicate.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: JCM's default instruction is to autoclave media at 121 C for 15 min.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=291
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M285_Modified_MRS_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009400
+  name: modified_mrs_medium
+  notes: TOGO M285 imports the same JCM Medium 291 Modified MRS Medium formulation
+    represented by MediaDive J291.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- TOGO M285 imports the same JCM Medium 291 Modified MRS Medium formulation represented
+  by MediaDive J291.

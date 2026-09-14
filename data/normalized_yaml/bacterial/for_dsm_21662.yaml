@@ -298,6 +298,21 @@ curation_history:
     @ 1 ml/l. Each moved component matched the MediaDive stock by name AND value;
     bulk ingredients sharing a name were left in place (#150).'
   changes: Nested 5 ingredient(s) under 2 solution(s); ingredients 29 -> 24
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_503_fwm_score10.py
+  action: RESOLVED_KOMODO_503_FWM_TOPOLOGY
+  changes: Linked under KOMODO Medium 503 as STRAIN_SPECIFIC_VARIANT
+  source: KOMODO Medium 503.16
+  notes: KOMODO Medium 503.16 applies KOMODO Medium 503 to DSM 21662.
+parent_media:
+  path: data/normalized_yaml/bacterial/fwm_medium.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005678
+  name: fwm_medium
+  notes: KOMODO Medium 503.16 applies KOMODO Medium 503 to DSM 21662.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
+variant_modifications:
+- KOMODO Medium 503.16 applies KOMODO Medium 503 to DSM 21662.
 solutions:
 - preferred_term: Trace element solution SL-10
   composition:
@@ -381,3 +396,5 @@ solutions:
   preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
     asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
     (#150).'
+data_quality_flags:
+- ingredients_curated

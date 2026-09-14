@@ -391,3 +391,16 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_bs107_score35.py
+  action: LINKED_BS107_SCORE35_CHILDREN
+  changes: Linked Bs 107 score-35 child media
+  source: data/normalized_yaml/bacterial/TOGO_M904_Bs_107_Medium.yaml
+  notes: Added or refreshed reciprocal parent-child link for data/normalized_yaml/bacterial/TOGO_M904_Bs_107_Medium.yaml.
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M904_Bs_107_Medium.yaml
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  id: CultureMech:010323
+  name: bs_107_medium
+  notes: TOGO M904 preserves JCM Medium 867 as a Bs 107 variant of JCM Medium 866
+    with yeast extract replaced by 3.0 micrograms/L Na2SeO3 x 5 H2O.

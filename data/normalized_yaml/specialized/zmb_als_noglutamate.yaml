@@ -3,18 +3,23 @@ name: ZMB ALS noGlutamate
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: ZMB_ALS
+ingredients: []
+solutions:
+- preferred_term: ZMB ALS
   concentration:
     value: '1'
     unit: FOLD_DILUTION
-- preferred_term: L-Glutamic acid monopotassium salt monohydrate
-  concentration:
-    value: '-'
-    unit: G_PER_L
-  notes: 'CAS: 6382-01-0; MW: 203.24'
+  culturemech_term:
+    id: CultureMech:015792
+    label: ZMB ALS
+  notes: CultureBotHT lists ZMB_ALS at one-fold final strength.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare ZMB ALS without L-Glutamic acid monopotassium salt monohydrate.
 description: Media for culturing Bifidobacterium minus glutamate
-notes: 'Source: FEBA media definitions'
+notes: CultureBotHT imports this variant as ZMB ALS with L-Glutamic acid monopotassium
+  salt monohydrate omitted.
 category: specialized
 sources:
 - database: CultureBotHT
@@ -33,5 +38,25 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_culturebotht_specialized_score50.py
+  action: RESOLVED_CULTUREBOTHT_SPECIALIZED_SCORE50_GRAPH
+  changes: Resolved score-50 CultureBotHT specialized recipe graph
+  source: CultureBotHT:ZMB ALS noGlutamate; https://github.com/CultureBotAI/CultureBotHT
+  notes: CultureBotHT imports this variant as ZMB ALS with L-Glutamic acid monopotassium
+    salt monohydrate omitted.
 data_quality_flags:
-- has_unmapped_ingredients
+- has_ontology_mappings
+- ingredients_curated
+parent_media:
+  path: data/normalized_yaml/specialized/zmb_als.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015792
+  name: ZMB ALS
+  notes: Omits L-Glutamic acid monopotassium salt monohydrate from ZMB ALS.
+variant_relationship: OMITTED_COMPONENT_VARIANT
+variant_modifications:
+- Omits L-Glutamic acid monopotassium salt monohydrate from ZMB ALS.
+references:
+- reference: CultureBotHT:ZMB ALS noGlutamate
+- reference: https://github.com/CultureBotAI/CultureBotHT

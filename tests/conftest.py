@@ -24,6 +24,7 @@ import yaml
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 NORMALIZED = REPO_ROOT / "data" / "normalized_yaml"
+YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
@@ -83,7 +84,7 @@ def corpus() -> list[tuple[Path, dict[str, Any]]]:
     out: list[tuple[Path, dict[str, Any]]] = []
     for path in sorted(NORMALIZED.rglob("*.yaml")):
         try:
-            doc = yaml.safe_load(path.read_text(errors="replace"))
+            doc = yaml.load(path.read_text(errors="replace"), Loader=YAML_LOADER)
         except (yaml.YAMLError, OSError):
             continue
         if isinstance(doc, dict):

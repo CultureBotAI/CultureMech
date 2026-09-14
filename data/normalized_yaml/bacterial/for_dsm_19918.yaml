@@ -331,34 +331,22 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-variant_children:
-- path: data/normalized_yaml/bacterial/medium_377_modified_for_dsm_12428.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005109
-  name: medium_377_modified_for_dsm_12428
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/medium_377_modified_for_dsm_13482.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005110
-  name: medium_377_modified_for_dsm_13482
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/medium_377_modified_for_dsm_15127.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005111
-  name: medium_377_modified_for_dsm_15127
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/pyrococcus_st04_medium.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:001480
-  name: pyrococcus_st04_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/pyrococcus_staphylothermus_medium.yaml
-  relationship: SOURCE_DUPLICATE
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_377_pyrococcus_score10.py
+  action: RESOLVED_KOMODO_377_PYROCOCCUS_TOPOLOGY
+  changes: Linked under KOMODO Medium 377
+  source: KOMODO Medium 377.1
+  notes: KOMODO Medium 377.1 applies PYROCOCCUS / STAPHYLOTHERMUS medium at pH 7 for
+    DSM 19918.
+parent_media:
+  path: data/normalized_yaml/archaea/pyrococcus_staphylothermus_medium.yaml
+  relationship: PH_VARIANT
   id: CultureMech:005113
   name: pyrococcus_staphylothermus_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 377 is the pH 6.5 PYROCOCCUS / STAPHYLOTHERMUS medium base.
+variant_relationship: PH_VARIANT
+variant_modifications:
+- KOMODO Medium 377.1 applies PYROCOCCUS / STAPHYLOTHERMUS medium at pH 7 for DSM
+  19918.
+data_quality_flags:
+- ingredients_curated

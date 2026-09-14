@@ -10,138 +10,36 @@ media_term:
   term:
     id: mediadive.medium:J302
     label: R AGAR WITH 0.5% TWEEN 80
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=302
-
-
-  Commercial Product: Brain Heart Infusion
-
-  Supplier: Difco/BD
-
-  Catalog: 237500
-
-  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
+notes: JCM Medium 302 defines R Agar with 0.5% Tween 80 as 1 L of JCM Medium 26 R
+  Agar plus 5 g/L Tween 80.
 ingredients:
 - preferred_term: Tween 80
-  term:
-    id: CHEBI:53426
-    label: polysorbate 80
   concentration:
     value: '5'
     unit: G_PER_L
+  notes: Adds 5 g/L Tween 80 to JCM Medium 26 R Agar.
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
   mediaingredientmech_chebi_term:
     id: CHEBI:53426
     label: polysorbate 80
-- preferred_term: Calf brains
-  term:
-    id: UBERON:0000955
-    label: brain
+solutions:
+- preferred_term: R agar
   concentration:
-    value: variable
-    unit: VARIABLE
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain tissue;
-    Constituent of Brain Heart Infusion commercial product
-- preferred_term: Beef heart
-  term:
-    id: UBERON:0000948
-    label: heart
-  concentration:
-    value: variable
-    unit: VARIABLE
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox heart
-    tissue; Constituent of Brain Heart Infusion commercial product
-- preferred_term: Proteose peptone
-  term:
-    id: MICRO:0000180
-    label: proteose peptone
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Enzymatic digest of animal protein providing amino acids and peptides; Constituent
-    of Brain Heart Infusion commercial product
-- preferred_term: Dextrose
-  term:
-    id: CHEBI:17634
-    label: D-glucose
-  concentration:
-    value: '2.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial product
-  synonyms:
-  - synonym_text: glucose
-    synonym_type: EXACT
-  - synonym_text: D-glucose
-    synonym_type: EXACT
-  - synonym_text: dextrose
-    synonym_type: EXACT
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial
-    product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
-- preferred_term: Disodium phosphate
-  term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial
-    product
-  synonyms:
-  - synonym_text: Na2HPO4
-    synonym_type: EXACT
-  - synonym_text: disodium hydrogen phosphate
-    synonym_type: EXACT
-  - synonym_text: sodium phosphate dibasic
-    synonym_type: EXACT
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
+    value: '1000'
+    unit: ML_PER_L
+  notes: Adds 5 g/L Tween 80 to JCM Medium 26 R Agar.
+  culturemech_term:
+    id: CultureMech:002627
+    label: R Agar
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adds 5 g/L Tween 80 to JCM Medium 26 R Agar.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -168,3 +66,24 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_r_agar_salinity_score20.py
+  action: RESOLVED_R_AGAR_SALINITY_SCORE20
+  changes: Resolved score-20 R Agar salinity variant
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=302; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=26
+  notes: Adds 5 g/L Tween 80 to JCM Medium 26 R Agar.
+parent_media:
+  path: data/normalized_yaml/bacterial/r_agar.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:002627
+  name: r_agar
+  notes: Adds 5 g/L Tween 80 to JCM Medium 26 R Agar.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adds 5 g/L Tween 80 to JCM Medium 26 R Agar.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=302
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=26

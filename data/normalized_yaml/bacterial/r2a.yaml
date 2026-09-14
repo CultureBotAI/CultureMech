@@ -4,19 +4,21 @@ original_name: R2A
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: R2A (Difco)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2972
+  notes: TOGO M2972 lists one liter of R2A from Difco.
 media_term:
   preferred_term: TOGO Medium M2972
   term:
     id: TOGO:M2972
     label: R2A
-notes: 'Source: https://togomedium.org/medium/M2972'
+notes: TOGO M2972 records one liter of R2A from Difco; the source does not disclose
+  the product's internal formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -32,3 +34,15 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "R2A" to "r2a" for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_products_more_score40.py
+  action: RESOLVED_TOGO_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO product graph
+  source: https://togomedium.org/medium/M2972
+  notes: TOGO M2972 records one liter of R2A from Difco; the source does not disclose
+    the product's internal formulation.
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2972

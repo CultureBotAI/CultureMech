@@ -3,50 +3,57 @@ name: pygv_marine_medium_b
 original_name: PYGV Marine Medium (B)
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
+ph_range:
+  min: 7.2
+  max: 7.4
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '710'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Bacto peptone (BD-Difco)
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: KOH
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  source: TOGO M1127 / JCM Medium 1059
+  notes: TOGO M1127 / JCM Medium 1059 lists 0.25 g/L Bacto peptone (BD-Difco).
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  source: TOGO M1127 / JCM Medium 1059
+  notes: TOGO M1127 / JCM Medium 1059 lists 0.25 g/L Yeast extract (BD-Difco).
+- preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: TOGO M1127 / JCM Medium 1059
+  notes: TOGO M1127 / JCM Medium 1059 lists 15.0 g/L Agar.
   term:
-    id: CHEBI:32035
-    label: potassium hydroxide
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '710.0'
+    unit: ML_PER_L
+  source: TOGO M1127 / JCM Medium 1059
+  notes: TOGO M1127 / JCM Medium 1059 lists 710.0 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: KOH
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M1127 / JCM Medium 1059
+  notes: JCM Medium 1059 adjusts the medium to pH 7.2-7.4 with sterile KOH, if necessary.
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
   mediaingredientmech_chebi_term:
     id: CHEBI:32035
     label: potassium hydroxide
@@ -55,11 +62,13 @@ media_term:
   term:
     id: TOGO:M1127
     label: PYGV Marine Medium (B)
-notes: 'Source: https://togomedium.org/medium/M1127
-
-  Original source: JCM - JCM_M1059-2
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1059'
+notes: TOGO M1127 records JCM Medium 1059 with Bacto peptone, yeast extract, mineral
+  salt solution from JCM Medium 304, 2.5% glucose solution, vitamin solution from
+  JCM Medium 304, artificial seawater from JCM Medium 304, distilled water, KOH for
+  optional pH adjustment, and 15 g/L agar for the solid formulation. JCM 1059 gently
+  heats the base, autoclaves it, cools it to 45-50 degrees C, adds filter-sterilized
+  glucose and vitamin solutions aseptically, and adjusts pH to 7.2-7.4 with sterile
+  KOH if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -107,32 +116,427 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m1127_score15.py
+  action: RESOLVED_TOGO_M1127_SCORE15
+  source: https://togomedium.org/medium/M1127; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1059;
+    https://togomedium.org/medium/M299; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=304;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=149
+  notes: TOGO M1127 records JCM Medium 1059 with Bacto peptone, yeast extract, mineral
+    salt solution from JCM Medium 304, 2.5% glucose solution, vitamin solution from
+    JCM Medium 304, artificial seawater from JCM Medium 304, distilled water, KOH
+    for optional pH adjustment, and 15 g/L agar for the solid formulation. JCM 1059
+    gently heats the base, autoclaves it, cools it to 45-50 degrees C, adds filter-sterilized
+    glucose and vitamin solutions aseptically, and adjusts pH to 7.2-7.4 with sterile
+    KOH if necessary.
 solutions:
+- preferred_term: Mineral salt solution
+  concentration:
+    value: '20.0'
+    unit: ML_PER_L
+  source: TOGO M1127 / JCM Medium 1059
+  notes: JCM Medium 1059 adds 20.0 ml/L Mineral salt solution.
+  composition:
+  - preferred_term: MgSO4 x 7H2O
+    concentration:
+      value: '29.7'
+      unit: G_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 29.7 g/L MgSO4 x 7H2O.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: Nitrilotriacetic acid
+    concentration:
+      value: '10.0'
+      unit: G_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 10.0 g/L Nitrilotriacetic acid.
+    term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+  - preferred_term: CaCl2 x 2H2O
+    concentration:
+      value: '3.34'
+      unit: G_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 3.34 g/L CaCl2 x 2H2O.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: FeSO4 x 7H2O
+    concentration:
+      value: '99.0'
+      unit: MG_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 99.0 mg/L FeSO4 x 7H2O.
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+  - preferred_term: Na2MoO4 x 2H2O
+    concentration:
+      value: '13.0'
+      unit: MG_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 13.0 mg/L Na2MoO4 x 2H2O.
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+  - preferred_term: Metals 44
+    concentration:
+      value: '50.0'
+      unit: ML_PER_L
+    source: JCM Medium 149
+    notes: JCM Medium 304 adds 50.0 ml/L Metals 44 from JCM Medium 149.
+  - preferred_term: Distilled water
+    concentration:
+      value: '950.0'
+      unit: ML_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 950.0 ml/L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
 - preferred_term: 2.5% Glucose solution
-  composition: []
   concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
-  name: Unknown solution
-- preferred_term: Mineral salt solution (see Medium [M299])
-  composition: []
-  notes: Cross-reference to Medium M299
+    value: '10.0'
+    unit: ML_PER_L
+  source: TOGO M1127 / JCM Medium 1059
+  notes: JCM Medium 1059 adds 10.0 ml/L 2.5% Glucose solution.
+  composition:
+  - preferred_term: Glucose
+    concentration:
+      value: '2.5'
+      unit: PERCENT_W_V
+    source: TOGO M1127 / JCM Medium 1059
+    notes: TOGO M1127 / JCM Medium 1059 lists 2.5 % w/v Glucose.
+    term:
+      id: CHEBI:17234
+      label: glucose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17234
+      label: glucose
+  preparation_notes: Filter-sterilize before aseptic addition.
+- preferred_term: Vitamin solution
   concentration:
-    value: '20'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Vitamin solution (see Medium [M299])
-  composition: []
-  notes: Cross-reference to Medium M299
+    value: '10.0'
+    unit: ML_PER_L
+  source: TOGO M1127 / JCM Medium 1059
+  notes: JCM Medium 1059 adds 10.0 ml/L Vitamin solution.
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 2.0 mg/L Biotin.
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+  - preferred_term: Folic acid
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 2.0 mg/L Folic acid.
+    term:
+      id: CHEBI:27470
+      label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
+  - preferred_term: Pyridoxine HCl
+    concentration:
+      value: '10.0'
+      unit: MG_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 10.0 mg/L Pyridoxine HCl.
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+  - preferred_term: Riboflavin
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 5.0 mg/L Riboflavin.
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
+  - preferred_term: Thiamine HCl
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 5.0 mg/L Thiamine HCl.
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+  - preferred_term: Nicotinamide
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 5.0 mg/L Nicotinamide.
+    term:
+      id: CHEBI:17154
+      label: nicotinamide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17154
+      label: nicotinamide
+  - preferred_term: Calcium pantothenate
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 5.0 mg/L Calcium pantothenate.
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.1'
+      unit: MG_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 0.1 mg/L Vitamin B12.
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 5.0 mg/L p-Aminobenzoic acid.
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  preparation_notes: Filter-sterilize before aseptic addition.
+- preferred_term: Artificial seawater
   concentration:
-    value: '10'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Artificial seawater (see Medium [M299])
-  composition: []
-  notes: Cross-reference to Medium M299
-  concentration:
-    value: '250'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '250.0'
+    unit: ML_PER_L
+  source: TOGO M1127 / JCM Medium 1059
+  notes: JCM Medium 1059 adds 250.0 ml/L Artificial seawater.
+  composition:
+  - preferred_term: NaCl
+    concentration:
+      value: '23.477'
+      unit: G_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 23.477 g/L NaCl.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: Na2SO4
+    concentration:
+      value: '3.917'
+      unit: G_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 3.917 g/L Na2SO4.
+    term:
+      id: CHEBI:32149
+      label: sodium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32149
+      label: sodium sulfate
+  - preferred_term: MgCl2 x 6H2O
+    concentration:
+      value: '4.981'
+      unit: G_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 4.981 g/L MgCl2 x 6H2O.
+    term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+  - preferred_term: CaCl2 x 2H2O
+    concentration:
+      value: '1.102'
+      unit: G_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 1.102 g/L CaCl2 x 2H2O.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: NaHCO3
+    concentration:
+      value: '192.0'
+      unit: MG_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 192.0 mg/L NaHCO3.
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+  - preferred_term: KCl
+    concentration:
+      value: '664.0'
+      unit: MG_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 664.0 mg/L KCl.
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+  - preferred_term: KBr
+    concentration:
+      value: '6.0'
+      unit: MG_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 6.0 mg/L KBr.
+    term:
+      id: CHEBI:32030
+      label: potassium bromide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32030
+      label: potassium bromide
+  - preferred_term: H3BO3
+    concentration:
+      value: '26.0'
+      unit: MG_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 26.0 mg/L H3BO3.
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: SrCl2 x 6H2O
+    concentration:
+      value: '24.0'
+      unit: MG_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 24.0 mg/L SrCl2 x 6H2O.
+    term:
+      id: CHEBI:36385
+      label: strontium dichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:36385
+      label: strontium dichloride hexahydrate
+  - preferred_term: NaF
+    concentration:
+      value: '3.0'
+      unit: MG_PER_L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 3.0 mg/L NaF.
+    term:
+      id: CHEBI:28741
+      label: sodium fluoride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:28741
+      label: sodium fluoride
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: TOGO M299 / JCM Medium 304
+    notes: TOGO M299 / JCM Medium 304 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix peptone, yeast extract, mineral salt solution, artificial seawater,
+    agar, and distilled water.
+- step_number: 2
+  action: HEAT
+  description: Gently heat and bring to a boil.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 degrees C for 15 min.
+- step_number: 4
+  action: COOL
+  description: Cool to 45-50 degrees C.
+- step_number: 5
+  action: MIX
+  description: Aseptically add the filter-sterilized glucose solution and vitamin
+    solution.
+- step_number: 6
+  action: ADJUST_PH
+  description: Adjust to pH 7.2-7.4 with sterile KOH, if necessary.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: Filter-sterilize glucose and vitamin solutions separately.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1127
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1059
+- reference: https://togomedium.org/medium/M299
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=304
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=149

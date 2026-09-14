@@ -11,26 +11,32 @@ media_term:
   term:
     id: mediadive.medium:J527
     label: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 5% NaCl (pH 9.0)
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=527'
+notes: JCM Medium 527 defines Yeast extract-malt extract agar (ISP-2) with 5% NaCl
+  and pH 9.0 as 1 L of JCM Medium 43 ISP-2 plus 50 g/L NaCl, followed by pH adjustment
+  with sterilized 10% Na2CO3 solution after autoclaving.
 ingredients:
-- preferred_term: Yeast extract-malt extract agar
-  concentration:
-    value: '1000'
-    unit: G_PER_L
 - preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
   concentration:
     value: '50'
     unit: G_PER_L
+  source: JCM Medium 527
+  notes: Adds 50 g/L NaCl to JCM Medium 43 ISP-2.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Adds 50 g/L NaCl to JCM Medium 43 ISP-2.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+- step_number: 3
   action: ADJUST_PH
-  description: After autoclaving, adjust pH to 9.0 with sterilized 10% Na2CO3 solution.
+  description: Adjusts pH to 9.0 with sterilized 10% Na2CO3 solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,15 +64,59 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_isp2_salinity_score20.py
+  action: RESOLVED_JCM_ISP2_SALINITY_SCORE20
+  changes: Resolved score-20 JCM ISP-2 salinity variant
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=527; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=43
+  notes: Adds 50 g/L NaCl to JCM Medium 43 ISP-2.; Adjusts pH to 9.0 with sterilized
+    10% Na2CO3 solution.
 kg_microbe_match: mediadive.medium:74
 parent_media:
-  path: data/normalized_yaml/fungal/yeast_extract_malt_extract_agar_isp_2_with_2_nacl.yaml
+  path: data/normalized_yaml/fungal/yeast_extract_malt_extract_agar_isp_2.yaml
   relationship: SALINITY_VARIANT
-  id: CultureMech:010493
-  name: yeast_extract_malt_extract_agar_isp_2_with_2_nacl
-  notes: Reviewed JCM fungal ISP-2 agar salinity/pH variant; parent already represents
-    the 2% NaCl base and child is the 5% NaCl pH 9.0 variant.
+  id: CultureMech:010528
+  name: yeast_extract_malt_extract_agar_isp_2
+  notes: Adds 50 g/L NaCl to JCM Medium 43 ISP-2 and adjusts the medium to pH 9.0
+    with sterilized 10% Na2CO3 solution.
 variant_relationship: SALINITY_VARIANT
 variant_modifications:
-- NaCl increased from 20 g/L to 50 g/L; child record also specifies pH 9.0 while the
-  yeast extract-malt extract agar ISP-2 base remains unchanged.
+- Adds 50 g/L NaCl to JCM Medium 43 ISP-2.
+- Adjusts pH to 9.0 with sterilized 10% Na2CO3 solution.
+solutions:
+- preferred_term: Yeast extract-malt extract agar (ISP-2)
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  notes: Adds 50 g/L NaCl to JCM Medium 43 ISP-2 and adjusts the medium to pH 9.0
+    with sterilized 10% Na2CO3 solution.
+  culturemech_term:
+    id: CultureMech:010528
+    label: Yeast extract-malt extract agar (ISP-2)
+- preferred_term: 10% Na2CO3 solution
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: JCM Medium 527 specifies sterilized 10% Na2CO3 solution.
+  composition:
+  - preferred_term: Na2CO3
+    concentration:
+      value: '10.0'
+      unit: PERCENT_W_V
+    source: JCM Medium 527
+    notes: JCM Medium 527 specifies sterilized 10% Na2CO3 solution.
+    term:
+      id: CHEBI:29377
+      label: sodium carbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:29377
+      label: sodium carbonate
+    physicochemical_roles:
+    - BUFFER
+  preparation_notes: Sterilize the 10% Na2CO3 solution before addition.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=527
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=43

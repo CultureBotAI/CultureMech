@@ -11,103 +11,321 @@ media_term:
   term:
     id: mediadive.medium:J276
     label: CASTENHOLZ MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=276'
+notes: JCM Medium 276 / Castenholz Medium lists 900.0 ml distilled water, 1.0 g/L
+  BD-Difco yeast extract, 1.0 g/L BD-Difco tryptone, and 100.0 ml/L Castenholz basal
+  salt solution from JCM Medium 273, then adjusts the final medium to pH 8.2 with
+  NaOH.
 ingredients:
-- preferred_term: Tryptone
+- preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Nitrilotriacetic acid
+    value: '900.0'
+    unit: ML_PER_L
+  source: MediaDive J276 / JCM Medium 276
+  notes: MediaDive J276 / JCM Medium 276 lists 900.0 ml/L Distilled water.
   term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
-  concentration:
-    value: '0.980392'
-    unit: G_PER_L
+    id: CHEBI:15377
+    label: water
   mediaingredientmech_chebi_term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
-- preferred_term: CaSO4 x 2 H2O
-  term:
-    id: CHEBI:32583
-    label: calcium sulfate dihydrate
+    id: CHEBI:15377
+    label: water
+- preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: '0.588235'
+    value: '1.0'
     unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32583
-    label: calcium sulfate dihydrate
-- preferred_term: MgSO4 x 7 H2O
+  source: MediaDive J276 / JCM Medium 276
+  notes: MediaDive J276 / JCM Medium 276 lists 1.0 g/L Yeast extract (BD-Difco).
   term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
+  - VITAMIN_SOURCE
+- preferred_term: Tryptone (BD-Difco)
   concentration:
-    value: '0.980392'
+    value: '1.0'
     unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-- preferred_term: NaCl
+  source: MediaDive J276 / JCM Medium 276
+  notes: MediaDive J276 / JCM Medium 276 lists 1.0 g/L Tryptone (BD-Difco).
   term:
-    id: CHEBI:26710
-    label: sodium chloride
+    id: MICRO:0000182
+    label: tryptone
+  nutritional_roles:
+  - PROTEIN_SOURCE
+solutions:
+- preferred_term: Castenholz basal salt solution
   concentration:
-    value: '0.0784314'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: KNO3
+    value: '100.0'
+    unit: ML_PER_L
+  source: MediaDive J276 / JCM Medium 276
+  notes: MediaDive J276 / JCM Medium 276 adds 100.0 ml/L Castenholz basal salt solution
+    defined by JCM Medium 273.
   term:
-    id: CHEBI:63043
-    label: potassium nitrate
-  concentration:
-    value: '1.0098'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000170
-    label: KNO3
-- preferred_term: NaNO3
-  term:
-    id: CHEBI:63005
-    label: sodium nitrate
-  concentration:
-    value: '6.7549'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000171
-    label: NaNO3
-- preferred_term: Na2HPO4
-  term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-  concentration:
-    value: '1.08824'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-- preferred_term: FeCl3 x 6 H2O
-  term:
-    id: CHEBI:86254
-    label: iron trichloride hexahydrate
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86254
-    label: iron trichloride hexahydrate
+    id: mediadive.solution:3963
+    label: Castenholz basal salt solution
+  culturemech_term:
+    id: CultureMech:013022
+    label: Castenholz basal salt solution
+  composition:
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    source: JCM Medium 273
+    notes: JCM Medium 273 lists 1000.0 ml/L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: JCM Medium 273
+    notes: JCM Medium 273 lists 1.0 g/L MgSO4 x 7 H2O.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: NaCl
+    concentration:
+      value: '0.08'
+      unit: G_PER_L
+    source: JCM Medium 273
+    notes: JCM Medium 273 lists 0.08 g/L NaCl.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: NaNO3
+    concentration:
+      value: '6.89'
+      unit: G_PER_L
+    source: JCM Medium 273
+    notes: JCM Medium 273 lists 6.89 g/L NaNO3.
+    term:
+      id: CHEBI:63005
+      label: sodium nitrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63005
+      label: sodium nitrate
+    nutritional_roles:
+    - NITROGEN_SOURCE
+  - preferred_term: Nitrilotriacetic acid
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: JCM Medium 273
+    notes: JCM Medium 273 lists 1.0 g/L Nitrilotriacetic acid.
+    term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+  - preferred_term: KNO3
+    concentration:
+      value: '1.03'
+      unit: G_PER_L
+    source: JCM Medium 273
+    notes: JCM Medium 273 lists 1.03 g/L KNO3.
+    term:
+      id: CHEBI:63043
+      label: potassium nitrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63043
+      label: potassium nitrate
+  - preferred_term: Na2HPO4
+    concentration:
+      value: '1.11'
+      unit: G_PER_L
+    source: JCM Medium 273
+    notes: JCM Medium 273 lists 1.11 g/L Na2HPO4.
+    term:
+      id: CHEBI:34683
+      label: disodium hydrogenphosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:34683
+      label: disodium hydrogenphosphate
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: CaSO4 x 2 H2O
+    concentration:
+      value: '0.6'
+      unit: G_PER_L
+    source: JCM Medium 273
+    notes: JCM Medium 273 lists 0.6 g/L CaSO4 x 2 H2O.
+    term:
+      id: CHEBI:32583
+      label: calcium sulfate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32583
+      label: calcium sulfate dihydrate
+  solutions:
+  - preferred_term: FeCl3 x 6 H2O solution (0.03%)
+    concentration:
+      value: '10.0'
+      unit: ML_PER_L
+    source: JCM Medium 273
+    notes: JCM Medium 273 adds 10.0 ml/L FeCl3 x 6 H2O solution at 0.03% w/v.
+    term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    composition:
+    - preferred_term: FeCl3 x 6 H2O
+      concentration:
+        value: '0.03'
+        unit: PERCENT_W_V
+      source: JCM Medium 273
+      notes: JCM Medium 273 lists 0.03 % w/v FeCl3 x 6 H2O.
+      term:
+        id: CHEBI:86254
+        label: iron trichloride hexahydrate
+      mediaingredientmech_chebi_term:
+        id: CHEBI:86254
+        label: iron trichloride hexahydrate
+      nutritional_roles:
+      - IRON_SOURCE
+  - preferred_term: Nitsch's trace elements
+    concentration:
+      value: '10.0'
+      unit: ML_PER_L
+    source: JCM Medium 273
+    notes: JCM Medium 273 adds 10.0 ml/L Nitsch's trace elements.
+    term:
+      id: mediadive.solution:3964
+      label: Nitsch's trace elements
+    culturemech_term:
+      id: CultureMech:013023
+      label: Nitsch's trace elements
+    composition:
+    - preferred_term: Distilled water
+      concentration:
+        value: '1000.0'
+        unit: ML_PER_L
+      source: JCM Medium 273
+      notes: JCM Medium 273 lists 1000.0 ml/L Distilled water.
+      term:
+        id: CHEBI:15377
+        label: water
+      mediaingredientmech_chebi_term:
+        id: CHEBI:15377
+        label: water
+    - preferred_term: Na2MoO4 x 2 H2O
+      concentration:
+        value: '0.025'
+        unit: G_PER_L
+      source: JCM Medium 273
+      notes: JCM Medium 273 lists 0.025 g/L Na2MoO4 x 2 H2O.
+      term:
+        id: CHEBI:75213
+        label: sodium molybdate dihydrate
+      mediaingredientmech_chebi_term:
+        id: CHEBI:75213
+        label: sodium molybdate dihydrate
+      nutritional_roles:
+      - TRACE_ELEMENT
+    - preferred_term: H3BO3
+      concentration:
+        value: '0.5'
+        unit: G_PER_L
+      source: JCM Medium 273
+      notes: JCM Medium 273 lists 0.5 g/L H3BO3.
+      term:
+        id: CHEBI:33118
+        label: boric acid
+      mediaingredientmech_chebi_term:
+        id: CHEBI:33118
+        label: boric acid
+      nutritional_roles:
+      - TRACE_ELEMENT
+    - preferred_term: CoCl2 x 6 H2O
+      concentration:
+        value: '0.046'
+        unit: G_PER_L
+      source: JCM Medium 273
+      notes: JCM Medium 273 lists 0.046 g/L CoCl2 x 6 H2O.
+      term:
+        id: CHEBI:53503
+        label: cobalt chloride hexahydrate
+      mediaingredientmech_chebi_term:
+        id: CHEBI:53503
+        label: cobalt chloride hexahydrate
+      nutritional_roles:
+      - TRACE_ELEMENT
+    - preferred_term: ZnSO4 x 7 H2O
+      concentration:
+        value: '0.5'
+        unit: G_PER_L
+      source: JCM Medium 273
+      notes: JCM Medium 273 lists 0.5 g/L ZnSO4 x 7 H2O.
+      term:
+        id: CHEBI:32312
+        label: zinc sulfate heptahydrate
+      mediaingredientmech_chebi_term:
+        id: CHEBI:32312
+        label: zinc sulfate heptahydrate
+      nutritional_roles:
+      - TRACE_ELEMENT
+    - preferred_term: CuSO4 x 5 H2O
+      concentration:
+        value: '0.016'
+        unit: G_PER_L
+      source: JCM Medium 273
+      notes: JCM Medium 273 lists 0.016 g/L CuSO4 x 5 H2O.
+      term:
+        id: CHEBI:31440
+        label: copper(II) sulfate pentahydrate
+      mediaingredientmech_chebi_term:
+        id: CHEBI:31440
+        label: copper(II) sulfate pentahydrate
+      nutritional_roles:
+      - TRACE_ELEMENT
+    - preferred_term: MnSO4 x n H2O
+      concentration:
+        value: '2.2'
+        unit: G_PER_L
+      source: JCM Medium 273
+      notes: JCM Medium 273 lists 2.2 g/L MnSO4 x n H2O.
+      term:
+        id: CHEBI:86360
+        label: manganese(II) sulfate
+      mediaingredientmech_chebi_term:
+        id: CHEBI:86360
+        label: manganese(II) sulfate
+      nutritional_roles:
+      - TRACE_ELEMENT
+    - preferred_term: H2SO4
+      concentration:
+        value: '0.5'
+        unit: ML_PER_L
+      source: JCM Medium 273
+      notes: JCM Medium 273 lists 0.5 ml/L H2SO4.
+      term:
+        id: CHEBI:26836
+        label: sulfuric acid
+      mediaingredientmech_chebi_term:
+        id: CHEBI:26836
+        label: sulfuric acid
+    preparation_notes: Prepare the Nitsch trace-elements stock with 1.0 L distilled
+      water, mineral salts, and 0.5 ml/L H2SO4.
+  preparation_notes: Adjust pH to 8.2.
 preparation_steps:
 - step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 8.2 with NaOH.
+  action: MIX
+  description: Mix 900.0 ml/L distilled water, 1.0 g/L BD-Difco yeast extract, 1.0
+    g/L BD-Difco tryptone, and 100.0 ml/L Castenholz basal salt solution.
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH to 8.2.
+  description: Adjust pH to 8.2 with NaOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -142,10 +360,38 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m269_castenholz_score15.py
+  action: LINKED_TOGO_M269_JCM276_SOURCE_DUPLICATE
+  source: https://togomedium.org/medium/M269; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=276;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=273
+  notes: Linked TOGO M269 as a source duplicate of JCM Medium 276.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m935_microaerophilic_thermus_score15.py
+  action: RESOLVED_MEDIADIVE_J276_CASTENHOLZ_MEDIUM
+  source: https://mediadive.dsmz.de/medium/J276; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=276;
+    https://togomedium.org/medium/M266; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=273
+  notes: Restored the JCM Medium 276 direct composition with 900.0 ml/L water, moved
+    the flattened Castenholz stock salts into a 100.0 ml/L nested solution, expanded
+    the Castenholz and Nitsch stock definitions from JCM Medium 273, and linked the
+    JCM Medium 894 pH/atmosphere variant.
 variant_children:
 - path: data/normalized_yaml/bacterial/microaerophilic_thermus_medium.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: PH_VARIANT
   id: CultureMech:003243
   name: microaerophilic_thermus_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: JCM Medium 894 uses the JCM Medium 276 Castenholz formulation adjusted to
+    pH 8.0 and cultivated under a 99:1 N2/O2 gas atmosphere.
+- path: data/normalized_yaml/bacterial/TOGO_M269_Castenholz_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009252
+  name: castenholz_medium
+  notes: TOGO M269 is a source duplicate of JCM Medium 276.
+references:
+- reference: https://mediadive.dsmz.de/medium/J276
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=276
+- reference: https://togomedium.org/medium/M266
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=273
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings

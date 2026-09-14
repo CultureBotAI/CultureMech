@@ -6,30 +6,35 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: DI Water
-  concentration:
-    value: '980'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: Potato Extract
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Nutrient Broth
   concentration:
-    value: '8'
+    value: '8.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  source: ATCC Medium 415
+  notes: ATCC Medium 415 lists 8.0 g Nutrient Broth for the broth recipe.
+  culturemech_term:
+    id: CultureMech:009000
+    label: Nutrient Broth
+- preferred_term: DI Water
+  concentration:
+    value: '980.0'
+    unit: ML_PER_L
+  source: ATCC Medium 415
+  notes: ATCC Medium 415 lists 980.0 mL deionized water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M2466
   term:
     id: TOGO:M2466
     label: Potato Extract Broth
-notes: 'Source: https://togomedium.org/medium/M2466
-
-  Original URL: https://www.atcc.org/~/media/8EB453C5F5EA430497149B4C68FBB8F8.ashx'
+notes: TOGO M2466 cites ATCC Medium 415; ATCC Medium 415 defines Potato Extract Broth
+  as Nutrient Broth, Potato Extract, and DI water, and prints instructions for making
+  the Potato Extract.
 applications:
 - Microbial cultivation
 curation_history:
@@ -46,3 +51,39 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Potato Extract Broth" to "potato_extract_broth" for
     consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_exact_score25.py
+  action: RESOLVED_TOGO_EXACT_SCORE25_GRAPH
+  changes: Resolved score-25 TOGO exact recipe graph
+  source: https://togomedium.org/medium/M2466; https://www.atcc.org/~/media/8EB453C5F5EA430497149B4C68FBB8F8.ashx
+  notes: TOGO M2466 cites ATCC Medium 415; ATCC Medium 415 defines Potato Extract
+    Broth as Nutrient Broth, Potato Extract, and DI water, and prints instructions
+    for making the Potato Extract.
+solutions:
+- preferred_term: Potato Extract
+  concentration:
+    value: '20.0'
+    unit: ML_PER_L
+  notes: ATCC Medium 415 adds 20.0 mL Potato Extract prepared by boiling peeled, diced
+    potatoes in distilled water and decanting the infusion.
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Boil 300 g peeled, diced potatoes in 500 mL distilled water for half
+    an hour and decant the infusion.
+- step_number: 2
+  action: MIX
+  description: Prepare the broth from 8.0 g Nutrient Broth, 20.0 mL Potato Extract,
+    and 980.0 mL DI water.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 C.
+sterilization:
+  method: AUTOCLAVE
+references:
+- reference: https://togomedium.org/medium/M2466
+- reference: https://www.atcc.org/~/media/8EB453C5F5EA430497149B4C68FBB8F8.ashx
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients

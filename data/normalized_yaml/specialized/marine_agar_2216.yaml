@@ -10,18 +10,34 @@ media_term:
   term:
     id: mediadive.medium:J118
     label: MARINE AGAR 2216
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=118'
+notes: JCM Medium 118 defines Marine Agar 2216 with 55.1 g Marine agar 2216 (BD-Difco)
+  and 1.0 L distilled water.
 ingredients:
-- preferred_term: Marine agar 2216
-  term:
-    id: CHEBI:2509
-    label: agar
+- preferred_term: Marine agar 2216 (BD-Difco)
   concentration:
     value: '55.1'
     unit: G_PER_L
+  source: JCM Medium 118
+  notes: JCM Medium 118 prints this commercial component.
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: JCM Medium 118
+  notes: JCM Medium 118 lists 1.0 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
   mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
+    id: CHEBI:15377
+    label: water
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare Marine Agar 2216.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -48,4 +64,125 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_marine_agar_score20.py
+  action: RESOLVED_JCM_MARINE_AGAR_SCORE20
+  changes: Resolved JCM Medium 118 Marine Agar 2216 base composition
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=118
+  notes: Rebuilt the JCM Medium 118 Marine Agar 2216 base from the JCM table.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_marine_agar_score20.py
+  action: LINKED_JCM_MARINE_AGAR_SCORE20_CHILDREN
+  changes: Linked score-20 JCM Marine Agar 2216 additive children
+  source: https://togomedium.org/medium/M968; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=922;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=118
+  notes: Added or refreshed reciprocal SALINITY_VARIANT link for specialized/marine_agar_2216_with_1_nacl.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_marine_agar_score20.py
+  action: LINKED_JCM_MARINE_AGAR_SCORE20_CHILDREN
+  changes: Linked score-20 JCM Marine Agar 2216 additive children
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=357; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=118
+  notes: Added or refreshed reciprocal SALINITY_VARIANT link for specialized/marine_agar_2216_with_3_1_nacl.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_marine_agar_score20.py
+  action: LINKED_JCM_MARINE_AGAR_SCORE20_CHILDREN
+  changes: Linked score-20 JCM Marine Agar 2216 additive children
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=732; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=118
+  notes: Added or refreshed reciprocal SALINITY_VARIANT link for specialized/marine_agar_2216_with_5_nacl.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_marine_agar_score20.py
+  action: LINKED_JCM_MARINE_AGAR_SCORE20_CHILDREN
+  changes: Linked score-20 JCM Marine Agar 2216 additive children
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1015; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=118
+  notes: Added or refreshed reciprocal SALINITY_VARIANT link for specialized/marine_agar_2216_with_8_0_nacl.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_marine_agar_score20.py
+  action: LINKED_JCM_MARINE_AGAR_SCORE20_CHILDREN
+  changes: Linked score-20 JCM Marine Agar 2216 additive children
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=532; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=118
+  notes: Added or refreshed reciprocal SALINITY_VARIANT link for specialized/marine_agar_2216_with_8_nacl.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_marine_agar_score20.py
+  action: LINKED_JCM_MARINE_AGAR_SCORE20_CHILDREN
+  changes: Linked score-20 JCM Marine Agar 2216 additive children
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=733; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=118
+  notes: Added or refreshed reciprocal SALINITY_VARIANT link for specialized/marine_agar_2216_with_10_nacl.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_marine_agar_score20.py
+  action: LINKED_JCM_MARINE_AGAR_SCORE20_CHILDREN
+  changes: Linked score-20 JCM Marine Agar 2216 additive children
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1164; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=118
+  notes: Added or refreshed reciprocal SUPPLEMENTED_VARIANT link for specialized/marine_agar_2216_with_1_starch.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_marine_agar_score20.py
+  action: LINKED_JCM_MARINE_AGAR_SCORE20_CHILDREN
+  changes: Linked score-20 JCM Marine Agar 2216 additive children
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=768; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=118
+  notes: Added or refreshed reciprocal SUPPLEMENTED_VARIANT link for specialized/marine_agar_with_1_tween_20.yaml.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_jcm_specialized_marine_score15.py
+  action: LINKED_JCM_MARINE_PH_SCORE15_CHILDREN
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1001; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1016;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=118
+  notes: Added or refreshed reciprocal PH_VARIANT links for the specialized JCM 1001
+    and JCM 1016 Marine Agar 2216 pH wrappers.
 kg_microbe_match: mediadive.medium:12
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=118
+variant_children:
+- path: data/normalized_yaml/specialized/marine_agar_2216_ph_8_5.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:015371
+  name: marine_agar_2216_ph_8_5
+  notes: JCM Medium 1001 adjusts JCM Medium 118 Marine Agar 2216 to pH 8.5.
+- path: data/normalized_yaml/specialized/marine_agar_2216_ph_9_0.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:015373
+  name: marine_agar_2216_ph_9_0
+  notes: JCM Medium 1016 adjusts JCM Medium 118 Marine Agar 2216 to pH 9.0.
+- path: data/normalized_yaml/specialized/marine_agar_2216_with_10_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:015418
+  name: marine_agar_2216_with_10_nacl
+  notes: Adds 100 g/L NaCl to JCM Medium 118 Marine Agar 2216.
+- path: data/normalized_yaml/specialized/marine_agar_2216_with_1_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:015426
+  name: marine_agar_2216_with_1_nacl
+  notes: Adds 10 g/L NaCl to JCM Medium 118 Marine Agar 2216.
+- path: data/normalized_yaml/specialized/marine_agar_2216_with_1_starch.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:015387
+  name: marine_agar_2216_with_1_starch
+  notes: Adds 10 g/L soluble starch to JCM Medium 118 Marine Agar 2216.
+- path: data/normalized_yaml/specialized/marine_agar_2216_with_3_1_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:015400
+  name: marine_agar_2216_with_3_1_nacl
+  notes: Adds 31 g/L NaCl to JCM Medium 118 Marine Agar 2216.
+- path: data/normalized_yaml/specialized/marine_agar_2216_with_5_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:015417
+  name: marine_agar_2216_with_5_nacl
+  notes: Adds 50 g/L NaCl to JCM Medium 118 Marine Agar 2216.
+- path: data/normalized_yaml/specialized/marine_agar_2216_with_8_0_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:015372
+  name: marine_agar_2216_with_8_0_nacl
+  notes: Adds 80 g/L NaCl to JCM Medium 118 Marine Agar 2216.
+- path: data/normalized_yaml/specialized/marine_agar_2216_with_8_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:015410
+  name: marine_agar_2216_with_8_nacl
+  notes: Adds 80 g/L NaCl to JCM Medium 118 Marine Agar 2216.
+- path: data/normalized_yaml/specialized/marine_agar_with_1_tween_20.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:015421
+  name: marine_agar_with_1_tween_20
+  notes: Adds 10 g/L Tween 20 to JCM Medium 118 Marine Agar 2216.

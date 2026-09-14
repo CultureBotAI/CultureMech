@@ -6,38 +6,47 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
+- preferred_term: ISP Medium 1 (Difco)
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  source: TOGO M1896 / NBRC Medium 1153
+  notes: TOGO M1896 / NBRC Medium 1153 lists 8 g/L ISP Medium 1 (Difco); this commercial
+    powder is retained as a source-disclosed complex component.
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  source: TOGO M1896 / NBRC Medium 1153
+  notes: TOGO M1896 / NBRC Medium 1153 lists 20 g/L Agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1.0'
+    unit: L
+  source: TOGO M1896 / NBRC Medium 1153
+  notes: TOGO M1896 / NBRC Medium 1153 lists 1.0 L Distilled water.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: Agar (if needed)
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: ISP Medium 1 (Difco)
-  concentration:
-    value: '8'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 media_term:
   preferred_term: TOGO Medium M1896
   term:
     id: TOGO:M1896
     label: Tryptone Yeast Extract Broth (ISP Medium No.1)
-notes: 'Source: https://togomedium.org/medium/M1896
-
-  Original source: NBRC - NBRC_M1153
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1153'
+notes: TOGO M1896 imports NBRC Medium 1153 as Tryptone Yeast Extract Broth (ISP Medium
+  No.1). NBRC 1153 lists 8 g ISP Medium 1 (Difco), 20 g Agar if needed, and 1 L Distilled
+  water.
 applications:
 - Microbial cultivation
 curation_history:
@@ -68,3 +77,17 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_togo_m1418_m1424_m1678_m1896_score15.py
+  action: RESOLVED_TOGO_M1418_M1424_M1678_M1896_SCORE15
+  source: https://togomedium.org/medium/M1896; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1153
+  notes: Corrected Distilled water from a mass-like 1 g/L import to 1 L, grounded
+    water and agar, and retained ISP Medium 1 (Difco) as a sourced opaque commercial
+    component.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1896
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1153

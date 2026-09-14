@@ -8,10 +8,10 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
-    Defined component'
+    value: '1.0'
+    unit: L
+  source: TOGO M2966 / Mobley et al. 1990
+  notes: TOGO M2966 records the formulation with 1 L Distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -20,38 +20,55 @@ ingredients:
     label: water
 - preferred_term: yeast extract
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M2966 / Mobley et al. 1990
+  notes: TOGO M2966 / Mobley et al. 1990 lists 5 g/L yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: NaCl
   concentration:
     value: '8.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO M2966 / Mobley et al. 1990
+  notes: TOGO M2966 / Mobley et al. 1990 lists 8.5 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
-- preferred_term: N-2-hydroxy- ethylpiperazine-N'-2-ethanesulfonic acid [HEPES; pH
-    7.2])
+- preferred_term: HEPES
   concentration:
-    value: '100'
+    value: '100.0'
     unit: MILLIMOLAR
-  notes: 'Role: Buffer; Properties: Defined component, Solution'
+  source: TOGO M2966 / Mobley et al. 1990
+  notes: TOGO M2966 / Mobley et al. 1990 lists 100 mM N-2-hydroxyethylpiperazine-N'-2-ethanesulfonic
+    acid [HEPES; pH 7.2].
+  term:
+    id: CHEBI:42334
+    label: HEPES
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42334
+    label: HEPES
 - preferred_term: tryptone [Difco]
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2966 / Mobley et al. 1990
+  notes: TOGO M2966 / Mobley et al. 1990 lists 10 g/L tryptone from Difco.
+  term:
+    id: MICRO:0000182
+    label: Tryptone
 media_term:
   preferred_term: TOGO Medium M2966
   term:
     id: TOGO:M2966
     label: modified Luria broth
-notes: 'Source: https://togomedium.org/medium/M2966'
+notes: 'TOGO M2966 extracts the modified Luria broth formulation used by Mobley et
+  al. 1990: per liter, 10 g tryptone from Difco, 5 g yeast extract, 8.5 g NaCl, and
+  100 mM HEPES at pH 7.2, diluted to 300 mosmol.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -82,3 +99,26 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2966_modified_luria_score15.py
+  action: RESOLVED_TOGO_M2966_SCORE15
+  source: https://togomedium.org/medium/M2966; https://doi.org/10.1128/iai.58.5.1281-1289.1990
+  notes: 'TOGO M2966 extracts the modified Luria broth formulation used by Mobley
+    et al. 1990: per liter, 10 g tryptone from Difco, 5 g yeast extract, 8.5 g NaCl,
+    and 100 mM HEPES at pH 7.2, diluted to 300 mosmol. Corrected the imported 1 L
+    water row from grams per liter to liters and grounded yeast extract, tryptone,
+    and HEPES.'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the modified Luria broth from 1 L distilled water, 10 g/L tryptone,
+    5 g/L yeast extract, 8.5 g/L NaCl, and 100 mM HEPES at pH 7.2.
+- step_number: 2
+  action: MIX
+  description: Dilute the medium to 300 mosmol.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2966
+- reference: https://doi.org/10.1128/iai.58.5.1281-1289.1990

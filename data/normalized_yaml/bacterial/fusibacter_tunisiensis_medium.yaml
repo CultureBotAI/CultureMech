@@ -342,12 +342,23 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_853_fusibacter_score10.py
+  action: RESOLVED_KOMODO_853_FUSIBACTER_TOPOLOGY
+  changes: Linked under KOMODO Medium 853
+  source: DSMZ Medium 853a
+  notes: DSMZ Medium 853a has the same high-salt 29-component Fusibacter signature
+    as KOMODO Medium 853.
 parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_24436.yaml
+  path: data/normalized_yaml/bacterial/fusibacter_paucivorans_medium.yaml
   relationship: SOURCE_DUPLICATE
-  id: CultureMech:006669
-  name: for_dsm_24436
+  id: CultureMech:006670
+  name: fusibacter_paucivorans_medium
+  notes: DSMZ Medium 853a has the same high-salt 29-component Fusibacter signature
+    as KOMODO Medium 853.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- DSMZ Medium 853a has the same high-salt 29-component Fusibacter signature as KOMODO
+  Medium 853.
+data_quality_flags:
+- ingredients_curated

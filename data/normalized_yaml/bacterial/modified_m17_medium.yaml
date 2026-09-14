@@ -5,19 +5,16 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_range:
+  min: 7.1
+  max: 7.2
 ingredients:
-- preferred_term: 1.0 M MgSO4.7H2O (May and Baker)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
 - preferred_term: Distilled water
   concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+    value: '1000.0'
+    unit: ML_PER_L
+  source: TOGO M2214
+  notes: TOGO M2214 lists 1000 ml/L Distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -28,19 +25,32 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
-- preferred_term: β-Disodium glycerophosphate (grade II, Sigma)
+  source: TOGO M2214
+  notes: TOGO M2214 lists 0.5 g/L Ascorbic acid from Sigma.
+  term:
+    id: CHEBI:22652
+    label: Ascorbic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:22652
+    label: Ascorbic acid
+- preferred_term: Sodium beta-glycerophosphate
   concentration:
-    value: '19'
+    value: '19.0'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Organic compound, Simple component, Defined
-    component'
+  source: TOGO M2214
+  notes: TOGO M2214 lists 19 g/L beta-Disodium glycerophosphate grade II from Sigma.
+  term:
+    id: CHEBI:132089
+    label: sodium glycerol 2-phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132089
+    label: sodium glycerol 2-phosphate
 - preferred_term: Glucose
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  source: TOGO M2214
+  notes: TOGO M2214 lists 5 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
@@ -51,28 +61,48 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2214
+  notes: TOGO M2214 lists 2.5 g/L Yeast extract from BBL.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Beef extract (BBL)
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2214
+  notes: TOGO M2214 lists 5 g/L Beef extract from BBL.
+  term:
+    id: FOODON:03302088
+    label: Beef extract
 - preferred_term: Polypeptone (BBL)
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2214
+  notes: TOGO M2214 lists 5 g/L Polypeptone from BBL.
+  term:
+    id: FOODON:03315306
+    label: Polypeptone
 - preferred_term: Phytone peptone (BBL)
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2214
+  notes: TOGO M2214 lists 5 g/L Phytone peptone from BBL.
+  term:
+    id: FOODON:03315720
+    label: Soy peptone
 media_term:
   preferred_term: TOGO Medium M2214
   term:
     id: TOGO:M2214
     label: Modified M17 medium
-notes: 'Source: https://togomedium.org/medium/M2214'
+notes: 'TOGO M2214 describes Modified M17 medium with glucose replacing lactose: 1000
+  ml distilled water, 1 ml 1.0 M MgSO4.7H2O, 0.5 g ascorbic acid, 19 g beta-disodium
+  glycerophosphate, 5 g glucose, 2.5 g BBL yeast extract, 5 g BBL beef extract, 5
+  g BBL Polypeptone, and 5 g BBL Phytone peptone per liter. The broth is autoclaved
+  at 121 C for 15 min and has pH 7.15 +/- 0.05 at 22 to 25 C.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -103,3 +133,59 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2214_modified_m17_score15.py
+  action: RESOLVED_TOGO_M2214_SCORE15
+  source: https://togomedium.org/medium/M2214; PMID:6087394; PMID:16350018
+  notes: 'TOGO M2214 describes Modified M17 medium with glucose replacing lactose:
+    1000 ml distilled water, 1 ml 1.0 M MgSO4.7H2O, 0.5 g ascorbic acid, 19 g beta-disodium
+    glycerophosphate, 5 g glucose, 2.5 g BBL yeast extract, 5 g BBL beef extract,
+    5 g BBL Polypeptone, and 5 g BBL Phytone peptone per liter. The broth is autoclaved
+    at 121 C for 15 min and has pH 7.15 +/- 0.05 at 22 to 25 C. Restored MgSO4.7H2O
+    as a 1 ml/L 1.0 M stock, corrected the water row to ml/L, normalized beta-disodium
+    glycerophosphate, grounded all disclosed components, and added pH and autoclave
+    evidence.'
+solutions:
+- preferred_term: 1.0 M MgSO4.7H2O (May and Baker)
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  source: TOGO M2214
+  notes: TOGO M2214 adds 1 ml/L of 1.0 M MgSO4.7H2O from May and Baker.
+  composition:
+  - preferred_term: MgSO4.7H2O
+    concentration:
+      value: '1.0'
+      unit: MOLAR
+    source: TOGO M2214 MgSO4.7H2O stock
+    notes: TOGO M2214 identifies the magnesium stock as 1.0 M MgSO4.7H2O.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the broth from 1000 ml distilled water, 1 ml of 1.0 M MgSO4.7H2O
+    stock, ascorbic acid, beta-disodium glycerophosphate, glucose, yeast extract,
+    beef extract, Polypeptone, and Phytone peptone.
+- step_number: 2
+  action: AUTOCLAVE
+  duration: 15 min
+  description: Dispense 10 ml portions and autoclave at 121 C for 15 min.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: TOGO M2214 autoclaves 10 ml broth portions at 121 C for 15 min.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2214
+- reference: PMID:6087394
+- reference: PMID:16350018

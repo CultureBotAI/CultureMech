@@ -4,14 +4,14 @@ original_name: Thioglycollate Medium
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: LIQUID
+physical_state: SEMISOLID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M530
+  notes: TOGO M530 lists 1.0 L distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -22,17 +22,15 @@ ingredients:
   concentration:
     value: '29.8'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M530
+  notes: TOGO M530 lists 29.8 g/L Thioglycollate medium from Sigma.
 media_term:
   preferred_term: TOGO Medium M530
   term:
     id: TOGO:M530
     label: Thioglycollate Medium
-notes: 'Source: https://togomedium.org/medium/M530
-
-  Original source: JCM - JCM_M529
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=529'
+notes: TOGO M530 records 29.8 g/L Thioglycollate medium from Sigma in distilled water
+  and describes the medium as semisolid.
 applications:
 - Microbial cultivation
 curation_history:
@@ -63,3 +61,17 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_sparse_score20.py
+  action: RESOLVED_TOGO_SPARSE_SCORE20
+  changes: Resolved sparse score-20 TOGO product record
+  source: https://togomedium.org/medium/M530; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=529
+  notes: TOGO M530 records 29.8 g/L Thioglycollate medium from Sigma in distilled
+    water and describes the medium as semisolid.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M530
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=529

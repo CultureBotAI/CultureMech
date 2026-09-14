@@ -6,6 +6,12 @@ description: 296. NBRC 294.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 5.0
+media_term:
+  preferred_term: NBRC Medium 294
+  term:
+    id: nbrc.medium:294
+    label: NBRC Medium 294
 ingredients:
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
@@ -20,14 +26,8 @@ ingredients:
     label: water
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
-- step_number: 2
   action: ADJUST_PH
-  description: Adjust pH if needed
-- step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  description: Adjust pH to 5.0 with 1 N HCl.
 curation_history:
 - timestamp: '2026-02-20T00:22:35.947874Z'
   curator: nbrc-import
@@ -62,4 +62,20 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
-notes: Adjust pH to 5.0 with 1 N HCl
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score30.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE30
+  changes: Added source metadata to recovered NBRC score-30 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=294
+  notes: Preserved the recovered NBRC Medium 294 composition table.
+notes: 'Source: NBRC Medium 294 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=294
+
+
+  The NBRC table lists 5 g Bacto Yeast Extract (Difco), 1 L distilled water, and adjustment
+  to pH 5.0 with 1 N HCl.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=294

@@ -386,16 +386,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-variant_children:
-- path: data/normalized_yaml/bacterial/clostridium_m1_medium.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005611
-  name: clostridium_m1_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/peptoclostridium_medium_betaine.yaml
-  relationship: SOURCE_DUPLICATE
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_487_peptoclostridium_score10.py
+  action: RESOLVED_KOMODO_487_PEPTOCLOSTRIDIUM_TOPOLOGY
+  changes: Linked under MediaDive Medium 487
+  source: KOMODO Medium 487.1
+  notes: KOMODO Medium 487.1 applies PEPTOCLOSTRIDIUM MEDIUM (BETAINE) for DSM 5388.
+parent_media:
+  path: data/normalized_yaml/bacterial/peptoclostridium_medium_betaine.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:001615
   name: peptoclostridium_medium_betaine
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: MediaDive Medium 487 is the DSMZ PEPTOCLOSTRIDIUM MEDIUM (BETAINE) base.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
+variant_modifications:
+- KOMODO Medium 487.1 applies PEPTOCLOSTRIDIUM MEDIUM (BETAINE) for DSM 5388.
+data_quality_flags:
+- ingredients_curated

@@ -38,15 +38,17 @@ from typing import Any
 # same shape.
 SOLUTION_TERM_PREFIXES = ("mediadive.solution:", "MediaIngredientMech:")
 
-# A CURATED assertion, for solutions that carry no upstream solution id (#175).
+# A CURATED assertion, for stock/base solutions that carry no upstream solution id.
 #
-# 202 records are stock solutions imported as media — "Trace element solution
-# (medium 929)", "Solution C, medium 1275", "10 x M9 salts". They have no
-# `mediadive.solution:` id to key on, and the id they DO carry cannot be reused:
-# their `mediadive.medium:N` values collide coincidentally with unrelated entries
-# in the solutions namespace, so `mediadive.medium:3145` ("100x Vitamin solution")
-# resolves to solution 3145, "SODIUM CHLORIDE". Only 3 of 202 have a
-# name-agreeing id; asserting the other 170 would record a false identity.
+# These include stock solutions imported as media — "Trace element solution
+# (medium 929)", "Solution C, medium 1275", "10 x M9 salts" — and empty KOMODO
+# `SubMedium: Yes` rows like "Artificial sea water (medium 600)". They have no
+# `mediadive.solution:` id to key on, and the `mediadive.medium:N` id some carry
+# cannot be reused: those values collide coincidentally with unrelated entries in
+# the solutions namespace, so `mediadive.medium:3145` ("100x Vitamin solution")
+# resolves to solution 3145, "SODIUM CHLORIDE". Only 3 of the first 202
+# name-obvious records had a name-agreeing id; asserting the other 170 would
+# record a false identity.
 #
 # So the kind is stated directly instead of inferred from a borrowed identifier.
 # This is deliberately NOT a name heuristic: the value is written once, by a
@@ -65,11 +67,11 @@ def has_solution_shape(instance: Any) -> bool:
     this?" — a question about what the record IS. This one answers "which schema
     class does this record's SHAPE match?", which is what `validate_strict` needs.
 
-    The 202 records carrying a curated `record_kind: SOLUTION` (#175) are stock
-    solutions conceptually, but they were imported with MediaRecipe shape — `name`,
+    Records carrying a curated `record_kind: SOLUTION` are stock/base solutions
+    conceptually, but they were imported with MediaRecipe shape — `name`,
     `original_name`, `ingredients` — not the `preferred_term` / `composition` /
-    `term` shape of a SolutionRecipe. Validating them as SolutionRecipe produced
-    606 spurious errors across exactly those 202 files.
+    `term` shape of a SolutionRecipe. Validating the first batch as
+    SolutionRecipe produced 606 spurious errors.
 
     So shape routing keys on the upstream `term.id` prefix only. A curated
     assertion about what a record means cannot change what it structurally is.
@@ -91,9 +93,8 @@ def is_solution_record(instance: Any) -> bool:
     research ranking:
 
       * `term.id` prefix — an upstream provenance assertion (4,784 records).
-      * `record_kind: SOLUTION` — curated, for the 202 with no upstream id.
       * `record_kind: SOLUTION` — a curated assertion, for solutions that have no
-        upstream solution id to point at (#175).
+        upstream solution id to point at.
     """
     if not isinstance(instance, dict):
         return False

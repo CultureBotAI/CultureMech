@@ -362,3 +362,10 @@ curation_history:
     same value, so the pre-merge value is unambiguous and no source lookup was needed.
     Rows whose merged parts differ were left untouched.
 high_metal: true
+variant_children:
+- path: data/normalized_yaml/bacterial/widdel_freshwater_medium_with_glycerin.yaml
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  id: CultureMech:002391
+  name: widdel_freshwater_medium_with_glycerin
+  notes: JCM Medium 1224 uses JCM Medium 1223 and replaces the 1.0 M L-sodium lactate
+    solution with 11.0 ml/L 1.0 M glycerin solution.

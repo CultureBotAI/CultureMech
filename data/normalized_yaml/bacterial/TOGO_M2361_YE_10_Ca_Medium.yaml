@@ -5,53 +5,71 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.5
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: CaCl2 x 2 H2O
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: TRIS x HCl
-  concentration:
-    value: '0.61'
-    unit: G_PER_L
-  notes: 'Role: Buffer'
 - preferred_term: Yeast extract (Difco)
   concentration:
-    value: '0.3'
+    value: '0.30'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2361 / DSMZ Medium 1463
+  notes: DSMZ Medium 1463 lists 0.30 g/L Yeast extract (Difco).
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Peptone
   concentration:
     value: '0.06'
     unit: G_PER_L
+  source: TOGO M2361 / DSMZ Medium 1463
+  notes: DSMZ Medium 1463 lists 0.06 g/L Peptone.
+  term:
+    id: MICRO:0000178
+    label: Peptone
+- preferred_term: TRIS x HCl
+  concentration:
+    value: '0.61'
+    unit: G_PER_L
+  source: TOGO M2361 / DSMZ Medium 1463
+  notes: DSMZ Medium 1463 lists 0.61 g/L Tris-HCl buffer.
+  term:
+    id: CHEBI:9754
+    label: tris
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
+    label: tris
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.30'
+    unit: G_PER_L
+  source: TOGO M2361 / DSMZ Medium 1463
+  notes: DSMZ Medium 1463 lists 0.30 g/L CaCl2 x 2 H2O, added from a sterilized stock
+    solution after autoclaving.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: TOGO M2361 / DSMZ Medium 1463
+  notes: DSMZ Medium 1463 lists 1000 ml Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M2361
   term:
     id: TOGO:M2361
     label: YE/10 + Ca Medium
-notes: 'Source: https://togomedium.org/medium/M2361
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1463.pdf'
+notes: TOGO M2361 imports DSMZ Medium 1463, YE/10 + Ca Medium. DSMZ Medium 1463 lists,
+  per liter, 0.30 g Yeast extract (Difco), 0.06 g Peptone, 0.61 g Tris-HCl buffer,
+  0.30 g CaCl2 x 2 H2O, and 1000 ml Distilled water. Adjust final pH to 7.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -82,3 +100,41 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2361_score15.py
+  action: RESOLVED_TOGO_M2361_SCORE15
+  source: https://togomedium.org/medium/M2361; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1463.pdf
+  notes: TOGO M2361 imports DSMZ Medium 1463, YE/10 + Ca Medium. DSMZ Medium 1463
+    lists, per liter, 0.30 g Yeast extract (Difco), 0.06 g Peptone, 0.61 g Tris-HCl
+    buffer, 0.30 g CaCl2 x 2 H2O, and 1000 ml Distilled water. Adjust final pH to
+    7.5. Corrected the imported water unit artifact, grounded all disclosed components,
+    recorded pH 7.5 and the calcium chloride stock-addition preparation, and linked
+    the record as a DSMZ Medium 1463 source duplicate.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add all components except calcium chloride.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the medium; add calcium chloride from a sterilized stock
+    solution after the autoclaved medium has cooled.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust final pH to 7.5.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2361
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1463.pdf
+parent_media:
+  path: data/normalized_yaml/bacterial/ye_10_ca_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000929
+  name: ye_10_ca_medium
+  notes: TOGO M2361 imports DSMZ Medium 1463 and exactly matches its YE/10 + Ca Medium
+    formula, with the source distilled-water row retained.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature as DSMZ Medium 1463; TOGO M2361 explicitly
+  retains the source distilled-water row.

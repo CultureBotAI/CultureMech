@@ -5,77 +5,101 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 8.5
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Yeast extract
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: Gellan Gum (if needed)
-  concentration:
-    value: '7'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component; Properties: Organic compound, Undefined component'
 - preferred_term: Glucose
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
+  source: TOGO M3060 / NBRC Medium 1631
+  notes: NBRC Medium 1631 lists 1.0 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
-- preferred_term: Meat extract
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Casamino acids
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Peptone
   concentration:
     value: '7.5'
     unit: G_PER_L
+  source: TOGO M3060 / NBRC Medium 1631
+  notes: NBRC Medium 1631 lists 7.5 g/L Peptone.
+  term:
+    id: MICRO:0000178
+    label: Peptone
+- preferred_term: Meat extract
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: TOGO M3060 / NBRC Medium 1631
+  notes: NBRC Medium 1631 lists 5.0 g/L Meat extract.
+  term:
+    id: FOODON:03315424
+    label: Meat Extract
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  source: TOGO M3060 / NBRC Medium 1631
+  notes: NBRC Medium 1631 lists 2.5 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Casamino acids
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  source: TOGO M3060 / NBRC Medium 1631
+  notes: NBRC Medium 1631 lists 2.5 g/L Casamino acids.
+  term:
+    id: FOODON:03315719
+    label: mammalian milk protein (hydrolyzed)
+- preferred_term: NaCl
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: TOGO M3060 / NBRC Medium 1631
+  notes: NBRC Medium 1631 lists 5.0 g/L NaCl.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: TOGO M3060 / NBRC Medium 1631
+  notes: NBRC Medium 1631 lists 1.0 L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Gellan Gum (if needed)
+  concentration:
+    value: '7.0'
+    unit: G_PER_L
+  source: TOGO M3060 / NBRC Medium 1631
+  notes: NBRC Medium 1631 lists 7.0 g/L Gellan Gum if needed.
+  term:
+    id: CHEBI:85248
+    label: gellan gum
+  mediaingredientmech_chebi_term:
+    id: CHEBI:85248
+    label: gellan gum
 media_term:
   preferred_term: TOGO Medium M3060
   term:
     id: TOGO:M3060
     label: OTTOW MEDIUM
-notes: 'Source: https://togomedium.org/medium/M3060
-
-  Original source: NBRC - NBRC_M1631
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1631'
+notes: TOGO M3060 imports NBRC Medium 1631, OTTOW MEDIUM. NBRC Medium 1631 lists,
+  in 1 L Distilled water, 1.0 g Glucose, 7.5 g Peptone, 5.0 g Meat extract, 2.5 g
+  Yeast extract, 2.5 g Casamino acids, 5 g NaCl, and, if needed, 7 g Gellan Gum. pH
+  8.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -111,3 +135,38 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m3060_score15.py
+  action: RESOLVED_TOGO_M3060_SCORE15
+  source: https://togomedium.org/medium/M3060; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1631
+  notes: TOGO M3060 imports NBRC Medium 1631, OTTOW MEDIUM. NBRC Medium 1631 lists,
+    in 1 L Distilled water, 1.0 g Glucose, 7.5 g Peptone, 5.0 g Meat extract, 2.5
+    g Yeast extract, 2.5 g Casamino acids, 5 g NaCl, and, if needed, 7 g Gellan Gum.
+    pH 8.5. Corrected the distilled-water unit, added pH and composition preparation
+    steps, grounded all components, and linked the record as an NBRC supplemented
+    variant of DSMZ Medium 467.
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve glucose, peptone, meat extract, yeast extract, casamino acids,
+    NaCl, and, if needed, 7.0 g/L gellan gum in 1.0 L distilled water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 8.5.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M3060
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1631
+parent_media:
+  path: data/normalized_yaml/bacterial/ottow_medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:001596
+  name: ottow_medium
+  notes: NBRC Medium 1631 uses distilled water in place of DSMZ tap water and adds
+    optional 7.0 g/L gellan gum.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- NBRC Medium 1631 uses distilled water in place of DSMZ Medium 467 tap water and
+  adds 7.0 g/L gellan gum if needed.

@@ -6,6 +6,12 @@ description: 336. NBRC 335.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
+media_term:
+  preferred_term: NBRC Medium 335
+  term:
+    id: nbrc.medium:335
+    label: NBRC Medium 335
 ingredients:
 - preferred_term: KNO3
   concentration:
@@ -30,28 +36,28 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: MICRO:0000182
+    label: Tryptone
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
     unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: Agar
 - preferred_term: Seawater**
   concentration:
     value: '1'
     unit: L
-preparation_steps:
-- step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
-- step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+preparation_steps: []
 curation_history:
 - timestamp: '2026-02-20T00:22:35.951125Z'
   curator: nbrc-import
@@ -89,6 +95,12 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 4 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=335
+  notes: Preserved the recovered NBRC Medium 335 composition table.
 solutions:
 - preferred_term: Trace element solution
   composition:
@@ -104,10 +116,16 @@ solutions:
     concentration:
       value: '1.36'
       unit: G_PER_L
+    term:
+      id: CHEBI:75836
+      label: FeSO4 x 7 H2O
   - preferred_term: CuCl2·2H2O
     concentration:
       value: '26.9'
       unit: MG_PER_L
+    term:
+      id: CHEBI:86318
+      label: CuCl2 x 2 H2O
   - preferred_term: ZnCl2
     concentration:
       value: '20.8'
@@ -123,13 +141,16 @@ solutions:
     concentration:
       value: '25.2'
       unit: MG_PER_L
+    term:
+      id: CHEBI:75213
+      label: Na2MoO4 x 2 H2O
   - preferred_term: Sodium tartrate
     concentration:
       value: '1.77'
       unit: G_PER_L
     term:
       id: CHEBI:63017
-      label: sodium L-tartrate
+      label: Sodium tartrate
   - preferred_term: Distilled water
     concentration:
       value: '1'
@@ -138,5 +159,15 @@ solutions:
       id: CHEBI:15377
       label: water
   name: Trace element solution
-notes: pH 7.0 Filtered, aged seawater or artificial seawater (Daigo's Artificial Seawater
-  SP***). Wako Pure Chemical Ind., Ltd., Osaka, Japan.
+notes: 'Source: NBRC Medium 335 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=335
+
+
+  The NBRC Medium for Marine Flexibacteria table lists final pH 7.0, a nested trace
+  element solution, and either filtered aged seawater or Daigo''s Artificial Seawater
+  SP.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=335

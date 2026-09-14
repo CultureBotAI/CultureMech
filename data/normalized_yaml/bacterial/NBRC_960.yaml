@@ -3,9 +3,19 @@ name: '960'
 original_name: '960'
 category: bacterial
 description: 960. NBRC 959.
+notes: 'Source: NBRC Medium 959 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=959
+
+
+  The NBRC medium-H table lists 2 g glucose, 0.2 g yeast extract, 0.5 g monosodium
+  glutamate, 12 g agar if needed, and 1 L seawater.'
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: NBRC Medium 959
+  term:
+    id: nbrc.medium:959
+    label: NBRC Medium 959
 ingredients:
 - preferred_term: Glucose
   concentration:
@@ -18,28 +28,31 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Monosodium glutamate
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:64220
+    label: Na glutamate
 - preferred_term: Agar (if needed)
   concentration:
     value: '12'
     unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: Agar
 - preferred_term: Seawater
   concentration:
     value: '1'
     unit: L
-preparation_steps:
-- step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
-- step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  term:
+    id: ENVO:00002149
+    label: Seawater
+preparation_steps: []
 curation_history:
 - timestamp: '2026-02-20T00:22:35.998275Z'
   curator: nbrc-import
@@ -74,3 +87,14 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score30.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE30
+  changes: Added source metadata to recovered NBRC score-30 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=959
+  notes: Preserved the recovered NBRC Medium 959 composition table.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=959

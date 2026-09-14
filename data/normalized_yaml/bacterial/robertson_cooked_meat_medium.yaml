@@ -8,15 +8,17 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Robertson cooked meat medium
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2793
+  notes: TOGO M2793 lists one liter of Robertson cooked meat medium.
 media_term:
   preferred_term: TOGO Medium M2793
   term:
     id: TOGO:M2793
     label: Robertson cooked meat medium
-notes: 'Source: https://togomedium.org/medium/M2793'
+notes: TOGO M2793 records one liter of Robertson cooked meat medium; the source does
+  not disclose the product's internal formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -33,3 +35,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Robertson cooked meat medium" to "robertson_cooked_meat_medium"
     for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_products_more_score40.py
+  action: RESOLVED_TOGO_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO product graph
+  source: https://togomedium.org/medium/M2793
+  notes: TOGO M2793 records one liter of Robertson cooked meat medium; the source
+    does not disclose the product's internal formulation.
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2793

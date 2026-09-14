@@ -208,7 +208,10 @@ curation_history:
 - timestamp: '2026-06-08T23:19:28.633721+00:00'
   curator: chebi-regrounding-v1.0
   action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
-  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
 - timestamp: '2026-06-10T07:37:34.337923+00:00'
   curator: primary-term-regrounding-v1.0
   action: Re-grounded wrong primary term id (OAK-verified)
@@ -217,6 +220,12 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_8301_r2a_score10.py
+  action: RESOLVED_KOMODO_8301_R2A_STRAIN_VARIANT
+  changes: Reclassified KOMODO 830.1 as strain-specific
+  source: KOMODO Medium 830.1
+  notes: KOMODO Medium 830.1 applies DSMZ Medium 830 to DSM 22224.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_830a_medium_R2A_MODIFIED.yaml
   relationship: SOURCE_DUPLICATE
@@ -231,11 +240,10 @@ variant_children:
   notes: Same ingredient and concentration signature; review as possible duplicate
     source record.
 - path: data/normalized_yaml/bacterial/for_dsm_22224.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006591
   name: for_dsm_22224
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 830.1 applies DSMZ Medium 830 to DSM 22224.
 - path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_13665.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006567

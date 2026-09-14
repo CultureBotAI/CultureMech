@@ -28,19 +28,19 @@ from __future__ import annotations
 
 import argparse
 import csv
-import os
 import re
 import sys
 import unicodedata
+from collections.abc import Iterable
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable
 
 import yaml
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 CACHE_DIR = REPO_ROOT / "references_cache"
 YAML_ROOT = REPO_ROOT / "data" / "normalized_yaml"
+YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 OUT_DIR = REPO_ROOT / "workspace" / "reports"
 OUT_TSV = OUT_DIR / "evidence_reference_validation.tsv"
@@ -185,7 +185,7 @@ def walk_yamls() -> Iterable[Verdict]:
     for path in sorted(YAML_ROOT.rglob("*.yaml")):
         try:
             with open(path) as f:
-                y = yaml.safe_load(f) or {}
+                y = yaml.load(f, Loader=YAML_LOADER) or {}
         except Exception:
             continue
         rel = str(path.relative_to(REPO_ROOT))

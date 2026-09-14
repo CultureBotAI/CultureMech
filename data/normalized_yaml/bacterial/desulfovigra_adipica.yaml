@@ -8,27 +8,136 @@ physical_state: LIQUID
 ph_range:
   min: 7.0
   max: 7.2
-notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 868 | DSMZ Medium: 868
-  (mediadive.medium:868) | Aerobic: Yes'
+notes: Archived DSMZ Medium 868 lists Desulfovigra adipica as basal DSMZ Medium 503
+  supplemented per liter with 7.0 ml 10% Na2SO4, 10.0 ml 10% yeast extract, 1.0 ml
+  trace element solution from DSMZ Medium 320, 50.0 ml 5% NaHCO3, 1.0 ml selenite-tungstate
+  solution from DSMZ Medium 385, 10.0 ml vitamin solution from DSMZ Medium 141, 1.0
+  ml 10% propanol, and 17.0 ml 3% Na2S x 9H2O from sterile anaerobic stock solutions.
+  The sheet states to adjust the completed medium to pH 7.0-7.2 with sterile anaerobic
+  5% Na2CO3 and to feed the same amount of propanol again after growth starts.
 media_term:
   preferred_term: KOMODO Medium 868
   term:
     id: komodo.medium:868
     label: DESULFOVIGRA ADIPICA
-ingredients:
-- preferred_term: Na2CO3
-  notes: Extracted from recipe notes (pH buffer)
-  data_quality_flags:
-  - extracted_from_notes
+ingredients: []
+solutions:
+- preferred_term: 10% (w/v) Na2SO4 solution
   concentration:
-    value: variable
-    unit: VARIABLE
-  mediaingredientmech_chebi_term:
-    id: CHEBI:29377
-    label: sodium carbonate
-  term:
-    id: CHEBI:29377
-    label: sodium carbonate
+    value: '7.0'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Na2SO4
+    concentration:
+      value: '100.0'
+      unit: G_PER_L
+    source: Archived DSMZ Medium 868
+    notes: Solute concentration for DSMZ Medium 868 10% (w/v) Na2SO4 stock.
+    term:
+      id: CHEBI:32149
+      label: sodium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32149
+      label: sodium sulfate
+  source: Archived DSMZ Medium 868
+  notes: DSMZ Medium 868 adds 7.0 ml/L sterile anaerobic 10% Na2SO4 stock.
+- preferred_term: 10% (w/v) Yeast extract solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Yeast extract
+    concentration:
+      value: '100.0'
+      unit: G_PER_L
+    source: Archived DSMZ Medium 868
+    notes: Solute concentration for DSMZ Medium 868 10% (w/v) yeast extract stock.
+    term:
+      id: FOODON:03315426
+      label: yeast extract
+  source: Archived DSMZ Medium 868
+  notes: DSMZ Medium 868 adds 10.0 ml/L sterile anaerobic 10% yeast extract stock.
+- preferred_term: Trace element solution SL-10 (DSMZ Medium 320)
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  composition: []
+  source: Archived DSMZ Medium 868
+  notes: DSMZ Medium 868 adds 1.0 ml/L sterile anaerobic trace element solution from
+    DSMZ Medium 320.
+- preferred_term: 5% (w/v) NaHCO3 solution
+  concentration:
+    value: '50.0'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: NaHCO3
+    concentration:
+      value: '50.0'
+      unit: G_PER_L
+    source: Archived DSMZ Medium 868
+    notes: Solute concentration for DSMZ Medium 868 5% (w/v) NaHCO3 stock.
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+  source: Archived DSMZ Medium 868
+  notes: DSMZ Medium 868 adds 50.0 ml/L sterile anaerobic 5% NaHCO3 stock.
+- preferred_term: Selenite-tungstate solution (DSMZ Medium 385)
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  composition: []
+  source: Archived DSMZ Medium 868
+  notes: DSMZ Medium 868 adds 1.0 ml/L sterile anaerobic selenite-tungstate solution
+    from DSMZ Medium 385.
+- preferred_term: Vitamin solution (DSMZ Medium 141)
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  composition: []
+  source: Archived DSMZ Medium 868
+  notes: DSMZ Medium 868 adds 10.0 ml/L sterile anaerobic vitamin solution from DSMZ
+    Medium 141.
+- preferred_term: 10% (v/v) Propanol solution
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Propanol
+    concentration:
+      value: '10.0'
+      unit: PERCENT_V_V
+    source: Archived DSMZ Medium 868
+    notes: Solute proportion for DSMZ Medium 868 10% (v/v) propanol stock.
+    term:
+      id: CHEBI:28831
+      label: Propan-1-ol
+    mediaingredientmech_chebi_term:
+      id: CHEBI:28831
+      label: Propan-1-ol
+  source: Archived DSMZ Medium 868
+  notes: DSMZ Medium 868 adds 1.0 ml/L sterile anaerobic 10% propanol stock.
+- preferred_term: 3% (w/v) Na2S x 9H2O solution
+  concentration:
+    value: '17.0'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Na2S x 9H2O
+    concentration:
+      value: '30.0'
+      unit: G_PER_L
+    source: Archived DSMZ Medium 868
+    notes: Solute concentration for DSMZ Medium 868 3% (w/v) Na2S x 9H2O stock.
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+  source: Archived DSMZ Medium 868
+  notes: DSMZ Medium 868 adds 17.0 ml/L sterile anaerobic 3% Na2S x 9H2O stock.
 applications:
 - Microbial cultivation
 curation_history:
@@ -71,4 +180,36 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-kg_microbe_match: mediadive.medium:634c
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_dsmz_868_desulfovigra_adipica_score15.py
+  action: RESOLVED_DSMZ_868_DESULFOVIGRA_ADIPICA_SCORE15
+  source: https://web.archive.org/web/20121030083126id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium868.pdf
+  notes: Archived DSMZ Medium 868 lists Desulfovigra adipica as basal DSMZ Medium
+    503 supplemented per liter with 7.0 ml 10% Na2SO4, 10.0 ml 10% yeast extract,
+    1.0 ml trace element solution from DSMZ Medium 320, 50.0 ml 5% NaHCO3, 1.0 ml
+    selenite-tungstate solution from DSMZ Medium 385, 10.0 ml vitamin solution from
+    DSMZ Medium 141, 1.0 ml 10% propanol, and 17.0 ml 3% Na2S x 9H2O from sterile
+    anaerobic stock solutions. The sheet states to adjust the completed medium to
+    pH 7.0-7.2 with sterile anaerobic 5% Na2CO3 and to feed the same amount of propanol
+    again after growth starts. Replaced the KOMODO pH-buffer placeholder with the
+    archived DSMZ supplement list and removed a stale kg_microbe_match to MediaDive
+    634c.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use basal DSMZ Medium 503 and add the Na2SO4, yeast extract, trace
+    element, NaHCO3, selenite-tungstate, vitamin, propanol, and Na2S x 9H2O supplements
+    from sterile anaerobic stock solutions at the listed amounts per liter.
+- step_number: 2
+  action: ADJUST_PH
+  description: After completing the medium, adjust to pH 7.0-7.2 with sterile anaerobic
+    5% Na2CO3.
+- step_number: 3
+  action: MIX
+  description: When growth has started, feed the same amount of propanol again.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://web.archive.org/web/20121030083126id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium868.pdf

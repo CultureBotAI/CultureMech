@@ -3,74 +3,94 @@ name: sea_salts_ytg_medium
 original_name: Sea Salts YTG Medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
+ph_value: 7.0
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Resazurin
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
-    compound, Defined component'
+  source: TOGO M1399 / JCM Medium 1302
+  notes: TOGO M1399 / JCM Medium 1302 lists 0.5 g/L Yeast extract.
   term:
-    id: CHEBI:8806
-    label: Resazurin
-  mediaingredientmech_chebi_term:
-    id: CHEBI:8806
-    label: Resazurin
-- preferred_term: Sea salts (Sigma-Aldrich)
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Tryptone
   concentration:
-    value: '30'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Complex component'
+  source: TOGO M1399 / JCM Medium 1302
+  notes: TOGO M1399 / JCM Medium 1302 lists 1.0 g/L Tryptone.
+  term:
+    id: MICRO:0000182
+    label: tryptone
 - preferred_term: Glucose
   concentration:
     value: '2.5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  source: TOGO M1399 / JCM Medium 1302
+  notes: TOGO M1399 / JCM Medium 1302 lists 2.5 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
-- preferred_term: L-Cysteine・HCl・H2O
+- preferred_term: Sea salts (Sigma-Aldrich)
+  concentration:
+    value: '30.0'
+    unit: G_PER_L
+  source: TOGO M1399 / JCM Medium 1302
+  notes: JCM Medium 1302 lists 30.0 g/L Sea salts (Sigma-Aldrich); this commercial
+    mixture is source-disclosed but not reducible to one ChEBI molecule.
+- preferred_term: L-Cysteine HCl H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
+  source: TOGO M1399 / JCM Medium 1302
+  notes: TOGO M1399 / JCM Medium 1302 lists 0.2 g/L L-Cysteine HCl H2O.
   term:
     id: CHEBI:91248
     label: L-cysteine hydrochloride hydrate
-- preferred_term: Tryptone
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+- preferred_term: Resazurin
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+    value: '0.5'
+    unit: MG_PER_L
+  source: TOGO M1399 / JCM Medium 1302
+  notes: TOGO M1399 / JCM Medium 1302 lists 0.5 mg/L Resazurin.
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: TOGO M1399 / JCM Medium 1302
+  notes: JCM Medium 1302 brings the base medium to 1.0 L with distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: N2
-  notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M1399 / JCM Medium 1302
+  notes: JCM Medium 1302 dispenses the base into culture vessels under a N2 gas atmosphere
+    and adds filter-sterilized stocks anaerobically after cooling.
   term:
+    id: CHEBI:17997
+    label: dinitrogen
+  mediaingredientmech_chebi_term:
     id: CHEBI:17997
     label: dinitrogen
 media_term:
@@ -78,11 +98,10 @@ media_term:
   term:
     id: TOGO:M1399
     label: Sea Salts YTG Medium
-notes: 'Source: https://togomedium.org/medium/M1399
-
-  Original source: JCM - JCM_M1302
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1302'
+notes: TOGO M1399 imports JCM Medium 1302. JCM 1302 records the pH 7.0 Sea Salts YTG
+  base, 1.0 ml/L Trace minerals from JCM Medium 151, and filter-sterilized post-autoclave
+  additions of 10.0 ml/L Trace vitamins from JCM Medium 197 and 5.0 ml/L 1 M Sodium
+  thiosulfate.
 applications:
 - Microbial cultivation
 curation_history:
@@ -130,32 +149,416 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m1399_score15.py
+  action: RESOLVED_TOGO_M1399_SCORE15
+  source: https://togomedium.org/medium/M1399; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1302;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197;
+    https://mediadive.dsmz.de/rest/medium/J1302
+  notes: TOGO M1399 imports JCM Medium 1302. JCM 1302 records the pH 7.0 Sea Salts
+    YTG base, 1.0 ml/L Trace minerals from JCM Medium 151, and filter-sterilized post-autoclave
+    additions of 10.0 ml/L Trace vitamins from JCM Medium 197 and 5.0 ml/L 1 M Sodium
+    thiosulfate. MediaDive J1302 confirms the same post-autoclave 10.0 ml/L Trace
+    vitamins and 5.0 ml/L Sodium thiosulfate additions; corrected the imported stock
+    additions from g/L artifacts to ml/L volumes.
 solutions:
+- preferred_term: Trace minerals
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  source: JCM Medium 151
+  notes: JCM Medium 1302 adds 1.0 ml/L Trace minerals and links this stock to the
+    Trace minerals recipe printed in JCM Medium 151.
+  composition:
+  - preferred_term: Nitrilotriacetic acid
+    concentration:
+      value: '1.5'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 1.5 g/L Nitrilotriacetic acid.
+    term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '3.0'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 3.0 g/L MgSO4 x 7 H2O.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: MnSO4 x n H2O
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 0.5 g/L MnSO4 x n H2O.
+    term:
+      id: CHEBI:86360
+      label: manganese(II) sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86360
+      label: manganese(II) sulfate
+  - preferred_term: NaCl
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 1.0 g/L NaCl.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: FeSO4 x 7 H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 0.1 g/L FeSO4 x 7 H2O.
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+  - preferred_term: CoSO4 x 7 H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 0.1 g/L CoSO4 x 7 H2O.
+    term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+  - preferred_term: CaCl2 x 2 H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 0.1 g/L CaCl2 x 2 H2O.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 0.1 g/L ZnSO4 x 7 H2O.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+  - preferred_term: CuSO4 x 5 H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 0.01 g/L CuSO4 x 5 H2O.
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+  - preferred_term: AlK(SO4)2
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 0.01 g/L AlK(SO4)2.
+    term:
+      id: CHEBI:86463
+      label: potassium aluminium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86463
+      label: potassium aluminium sulfate
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 0.01 g/L H3BO3.
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 0.01 g/L Na2MoO4 x 2 H2O.
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: KOH
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: JCM Medium 151
+    notes: JCM Medium 151 uses KOH solution to adjust the Trace minerals stock to
+      pH 6.5 before mineral addition and to final pH 7.0.
+    term:
+      id: CHEBI:32035
+      label: potassium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32035
+      label: potassium hydroxide
+  preparation_notes: Dissolve nitrilotriacetic acid and adjust to pH 6.5 with KOH
+    solution; add minerals and adjust final pH to 7.0.
 - preferred_term: 0.1% Na2SeO3 solution
-  composition: []
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source'
-  name: Unknown solution
-- preferred_term: Trace minerals (see Medium [M142])
-  composition: []
-  notes: Cross-reference to Medium M142
+    value: '1.0'
+    unit: ML_PER_L
+  source: TOGO M1399 / JCM Medium 1302
+  notes: JCM Medium 1302 adds 1.0 ml/L 0.1% Na2SeO3 solution.
+  composition:
+  - preferred_term: Na2SeO3
+    concentration:
+      value: '0.1'
+      unit: PERCENT_W_V
+    source: TOGO M1399 / JCM Medium 1302
+    notes: TOGO M1399 / JCM Medium 1302 lists 0.1 % w/v Na2SeO3.
+    term:
+      id: CHEBI:48843
+      label: disodium selenite
+    mediaingredientmech_chebi_term:
+      id: CHEBI:48843
+      label: disodium selenite
+- preferred_term: Trace vitamins
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: 1M Sodium thiosulfate solution
-  composition: []
+    value: '10.0'
+    unit: ML_PER_L
+  source: JCM Medium 197
+  notes: JCM Medium 1302 adds 10.0 ml/L filter-sterilized Trace vitamins from the
+    stock recipe printed in JCM Medium 197 after autoclaving.
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 2.0 mg/L Biotin.
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+  - preferred_term: Folic acid
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 2.0 mg/L Folic acid.
+    term:
+      id: CHEBI:27470
+      label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
+  - preferred_term: Pyridoxine hydrochloride
+    concentration:
+      value: '10.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 10.0 mg/L Pyridoxine hydrochloride.
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+  - preferred_term: Thiamine HCl
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 5.0 mg/L Thiamine HCl.
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+  - preferred_term: Riboflavin
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 5.0 mg/L Riboflavin.
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 5.0 mg/L Nicotinic acid.
+    term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: nicotinic acid
+  - preferred_term: Calcium pantothenate
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 5.0 mg/L Calcium pantothenate.
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.1'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 0.1 mg/L Vitamin B12.
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 5.0 mg/L p-Aminobenzoic acid.
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+  - preferred_term: Lipoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 5.0 mg/L Lipoic acid.
+    term:
+      id: CHEBI:16494
+      label: lipoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16494
+      label: lipoic acid
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  preparation_notes: Filter-sterilize before aseptic and anaerobic addition.
+- preferred_term: 1 M Sodium thiosulfate solution
   concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-  name: Unknown solution
-- preferred_term: Trace vitamins (see Medium [M190])
-  composition: []
-  notes: Cross-reference to Medium M190
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '5.0'
+    unit: ML_PER_L
+  source: TOGO M1399 / JCM Medium 1302
+  notes: JCM Medium 1302 adds 5.0 ml/L filter-sterilized 1 M Sodium thiosulfate solution
+    after autoclaving.
+  composition:
+  - preferred_term: Sodium thiosulfate
+    concentration:
+      value: '1.0'
+      unit: MOLAR
+    source: TOGO M1399 / JCM Medium 1302
+    notes: TOGO M1399 / JCM Medium 1302 lists 1.0 M Sodium thiosulfate.
+    term:
+      id: CHEBI:132112
+      label: sodium thiosulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:132112
+      label: sodium thiosulfate
+  preparation_notes: Filter-sterilize before aseptic and anaerobic addition.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix the base components with Trace minerals and 0.1% Na2SeO3 solution
+    and bring the volume to 1.0 L.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust the base medium to pH 7.0.
+- step_number: 3
+  action: ALIQUOT
+  description: Dispense the medium into culture vessels under N2 gas, for example
+    10 ml medium in Hungate tubes, and seal with butyl rubber stoppers.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave at 121 degrees C for 15 min.
+- step_number: 5
+  action: COOL
+  description: Cool after autoclaving.
+- step_number: 6
+  action: MIX
+  description: Aseptically and anaerobically add filter-sterilized Trace vitamins
+    and 1 M Sodium thiosulfate stocks per liter.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: Autoclave the sealed base under N2. Add the filter-sterilized Trace vitamins
+    and Sodium thiosulfate stocks aseptically and anaerobically after cooling.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1399
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1302
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+- reference: https://mediadive.dsmz.de/rest/medium/J1302

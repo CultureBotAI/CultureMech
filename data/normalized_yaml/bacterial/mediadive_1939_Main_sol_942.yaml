@@ -5,47 +5,51 @@ term:
   label: Main sol. 942
 composition:
 - preferred_term: CaCl2 x 2 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
   term:
-    id: mediadive.compound:7
-    label: CaCl2 x 2 H2O
-  chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: corpus_consensus
-- preferred_term: Agar
   concentration:
-    value: '15'
+    value: '1.0'
     unit: G_PER_L
+  source: MediaDive solution 1939 / DSMZ Medium 942
+  notes: MediaDive solution 1939 / DSMZ Medium 942 lists 1.0 g/L CaCl2 x 2 H2O.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Agar
   term:
-    id: mediadive.compound:3
-    label: Agar
-  chebi_term:
     id: CHEBI:2509
     label: agar
-    confidence: 0.7
-    match_type: corpus_consensus
-- preferred_term: Distilled water
   concentration:
-    value: '1000'
-    unit: PERCENT_V_V
+    value: '15.0'
+    unit: G_PER_L
+  source: MediaDive solution 1939 / DSMZ Medium 942
+  notes: MediaDive solution 1939 / DSMZ Medium 942 lists 15.0 g/L Agar.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
   term:
-    id: mediadive.compound:4
-    label: Distilled water
-  chebi_term:
     id: CHEBI:15377
     label: water
-    confidence: 0.7
-    match_type: corpus_consensus
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: MediaDive solution 1939 / DSMZ Medium 942
+  notes: MediaDive solution 1939 / DSMZ Medium 942 lists 1000.0 ml/L Distilled water.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_notes: Adjust pH to 7.2, autoclave and pour plates. Grow Escherichia coli
-  (e.g. DSM 498) in liquid culture, collect cells by centrifugation and resuspend
-  them in enough water to receive a thick but ready-to-pipet suspension. Autoclave.
-  Place three separate drops on one CaCl2-agar plate and streak every drop once to
-  receive E. coli lines, about 3 cm long, across the E. coli drops. Inoculate E. coli
-  lines/drops with myxobacteria.
+  in liquid culture, collect cells by centrifugation, and resuspend them in enough
+  water to receive a thick but ready-to-pipet suspension. Autoclave the suspension
+  separately. Place three separate drops on one CaCl2-agar plate, streak every drop
+  once to receive Escherichia coli lines about 3 cm long, and inoculate the lines/drops
+  with myxobacteria.
+notes: MediaDive solution 1939 is the DSMZ Medium 942 main-solution import for Agar
+  with E. coli as Feed.
 curation_history:
 - timestamp: '2026-03-13T06:20:19.086772Z'
   curator: culturemech-id-assigner-v1.0
@@ -74,11 +78,13 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 3 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
-data_quality_flags:
-- incomplete_composition
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_dsmz_942_e_coli_feed_score15.py
+  action: RESOLVED_MEDIADIVE_1939_DSMZ_942
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium942.pdf
+  notes: Corrected Distilled water from a false percent-volume row to an implicit
+    1000.0 ml/L solvent, grounded the solution composition directly to CHEBI, and
+    removed the placeholder ingredient.
 category: bacterial
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium942.pdf

@@ -27,6 +27,9 @@ ingredients:
   concentration:
     value: '7.5'
     unit: G_PER_L
+  term:
+    id: MICRO:0000178
+    label: Peptone
 - preferred_term: Meat extract
   concentration:
     value: '5'
@@ -35,10 +38,16 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Casamino acids
   concentration:
     value: '2.5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315719
+    label: Casamino acids
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -98,6 +107,22 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2316_score15.py
+  action: LINKED_TOGO_M2316_SOURCE_DUPLICATE
+  source: https://togomedium.org/medium/M2316; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf
+  notes: Linked TOGO M2316 as a source duplicate of DSMZ Medium 467.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m3060_score15.py
+  action: LINKED_TOGO_M3060_SUPPLEMENTED_VARIANT
+  source: https://togomedium.org/medium/M3060; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1631
+  notes: Linked TOGO M3060 as an NBRC supplemented variant of DSMZ Medium 467.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_bacterial_score10_exact_terms_batch7.py
+  action: GROUNDED_BACTERIAL_SCORE10_EXACT_TERMS_BATCH7
+  changes: Grounded bacterial score-10 exact ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Casamino acids, Peptone, Yeast extract.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_467_OTTOW_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -105,3 +130,14 @@ variant_children:
   name: ottow_medium
   notes: Same ingredient and concentration signature; KOMODO record copied from the
     matching DSMZ medium source.
+- path: data/normalized_yaml/bacterial/TOGO_M2316_Ottow_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008903
+  name: ottow_medium
+  notes: TOGO M2316 imports DSMZ Medium 467 and exactly matches this parent formula.
+- path: data/normalized_yaml/bacterial/TOGO_M3060_OTTOW_MEDIUM.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:009575
+  name: ottow_medium
+  notes: TOGO M3060 imports NBRC Medium 1631, which uses distilled water in place
+    of DSMZ tap water and adds optional 7.0 g/L gellan gum.

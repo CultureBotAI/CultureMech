@@ -3,6 +3,8 @@ name: CPG
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: CPG
 ingredients:
 - preferred_term: casamino acids
   concentration:
@@ -14,6 +16,9 @@ ingredients:
     value: '10'
     unit: G_PER_L
   notes: 'CAS: 51142-18-8'
+  term:
+    id: MICRO:0000178
+    label: Bacto peptone
 - preferred_term: D-Glucose
   concentration:
     value: '5'
@@ -26,8 +31,12 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 description: Casamino acid-Peptone-Glucose (CPG) medium
-notes: 'Source: FEBA media definitions'
+notes: CultureBotHT imports CPG as casamino acids, Bacto Peptone, D-glucose, and yeast
+  extract.
 category: specialized
 sources:
 - database: CultureBotHT
@@ -52,5 +61,17 @@ curation_history:
   notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_exact_score25.py
+  action: MARKED_CULTUREBOTHT_EXACT_SCORE25
+  changes: Marked exact sparse CultureBotHT formula as curated
+  source: CultureBotHT:CPG; https://github.com/CultureBotAI/CultureBotHT
+  notes: CultureBotHT imports CPG as casamino acids, Bacto Peptone, D-glucose, and
+    yeast extract.
 data_quality_flags:
 - has_unmapped_ingredients
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: CultureBotHT:CPG
+- reference: https://github.com/CultureBotAI/CultureBotHT

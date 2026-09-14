@@ -14,121 +14,92 @@ media_term:
 notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium78b.pdf'
 ingredients:
 - preferred_term: Ground beef
+  source: DSMZ Medium 78b
+  notes: DSMZ Medium 78b lists 487.805 g/L Ground beef in the final-component table.
   concentration:
     value: '487.805'
     unit: G_PER_L
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: sodium hydroxide
-  concentration:
-    value: '26.0'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 25.0, 1.0]'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32145
-    label: sodium hydroxide
 - preferred_term: Casitone
+  source: DSMZ Medium 78b
+  notes: DSMZ Medium 78b lists 29.2683 g/L Casitone in the final-component table.
   concentration:
     value: '29.2683'
     unit: G_PER_L
 - preferred_term: Yeast extract
+  source: DSMZ Medium 78b
+  notes: DSMZ Medium 78b lists 4.87805 g/L Yeast extract in the final-component table.
   concentration:
     value: '4.87805'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: K2HPO4
+  source: DSMZ Medium 78b
+  notes: DSMZ Medium 78b lists 4.87805 g/L K2HPO4 in the final-component table.
+  concentration:
+    value: '4.87805'
+    unit: G_PER_L
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  concentration:
-    value: '4.87805'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
 - preferred_term: Sodium resazurin
+  source: DSMZ Medium 78b
+  notes: DSMZ Medium 78b lists 0.000487805 g/L Sodium resazurin in the final-component
+    table.
   concentration:
     value: '0.000487805'
     unit: G_PER_L
   term:
     id: CHEBI:8806
     label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: L-Cysteine HCl x H2O
-  term:
-    id: CHEBI:91248
-    label: L-cysteine hydrochloride hydrate
+  source: DSMZ Medium 78b
+  notes: DSMZ Medium 78b lists 0.487805 g/L L-Cysteine HCl x H2O in the final-component
+    table.
   concentration:
     value: '0.487805'
     unit: G_PER_L
+  term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
     label: L-cysteine hydrochloride hydrate
-- preferred_term: Haemin
-  term:
-    id: CHEBI:50385
-    label: hemin
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:50385
-    label: hemin
-- preferred_term: Vitamin K1
-  term:
-    id: CHEBI:18067
-    label: phylloquinone
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:18067
-    label: phylloquinone
-- preferred_term: Ethanol
-  term:
-    id: CHEBI:16236
-    label: ethanol
-  concentration:
-    value: '959.5'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 950.0, 9.5]'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:16236
-    label: ethanol
-- preferred_term: Vitamin K3
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  term:
-    id: CHEBI:28869
-    label: menadione
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Use lean beef or horse meat. Remove fat and connective tissue before\
-    \ grinding. Mix meat, water and NaOH, then boil for 15 min with stirring. Cool\
-    \ to room temperature, skim fat off surface, and filter, retaining both meat particles\
-    \ and filtrate. To the filtrate add Casitone, yeast extract, hydrogen\r\nphosphate\
-    \ and resazurin, then add water to a final volume of 700 ml. Sparge medium with\
-    \ 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then add cysteine\
-    \ and adjust pH to 7.0.\r\nDispense medium under same gas atmosphere into anoxic\
-    \ Hungate-type tubes containing meat particles (use ca. 7 ml liquid medium for\
-    \ 1 - 2 g meat particles), then autoclave at 121°C for 20 min."
+  description: DSMZ Medium 78b boils lean chopped beef or horse meat with water and
+    NaOH for 15 min, filters while retaining meat particles and filtrate, adds Casitone,
+    yeast extract, K2HPO4, resazurin, and water to 700 ml, sparges with 80% N2/20%
+    CO2 for 30-45 min, adds L-cysteine HCl x H2O, adjusts pH to 7.0, dispenses under
+    the same gas into Hungate tubes with meat particles, and autoclaves at 121 C for
+    20 min.
 - step_number: 2
-  action: MIX
-  description: 'In some cases (as indicated in the catalogue) the addition of Haemin
-    and Vitamin K1 or Vitamin K3 is necessary. Add to 1000 ml of medium after autoclaving:'
-- step_number: 3
   action: FILTER_STERILIZE
-  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
-    water and filter sterilize. Store refrigerated.
-- step_number: 4
-  action: FILTER_STERILIZE
-  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
-    Store refrigerated in a brown bottle.
-- step_number: 5
-  action: FILTER_STERILIZE
-  description: Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05 mg/ml
-    in water and filter sterilize. Store refrigerated in a brown bottle.
+  description: When the DSMZ catalogue specifies Haemin, Vitamin K1, or Vitamin K3,
+    prepare those stocks separately, filter-sterilize them, and add them to the autoclaved
+    chopped-meat medium.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/78b
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium78b.pdf
+- reference: https://mediadive.dsmz.de/rest/medium/78b
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_78b_medium_FOR_TREPONEMA_PARVUM.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006496
+  name: KOMODO_78b_medium_FOR_TREPONEMA_PARVUM
+  notes: KOMODO Medium 78b is the Treponema parvum formulation of DSMZ Medium 78b.
 applications:
 - Microbial cultivation
 curation_history:
@@ -163,3 +134,11 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_dsmz_78b_treponema_score15.py
+  action: RESOLVED_DSMZ_KOMODO_78B_SCORE15
+  changes: Resolved DSMZ/KOMODO Medium 78b Treponema variant metadata and stale ingredients
+  source: https://mediadive.dsmz.de/rest/medium/78b
+  notes: MediaDive defines DSMZ Medium 78b as liquid CHOPPED MEAT MEDIUM (N2/CO2);
+    optional Haemin/Vitamin K stock-solution internals were removed from the final-ingredient
+    list.

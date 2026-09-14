@@ -10,33 +10,32 @@ media_term:
   term:
     id: mediadive.medium:J1235
     label: R2A AGAR WITH FUMARATE
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1235'
+notes: JCM Medium 1235 lists 18.2 g/L R2A agar (BD-Difco), 3.2 g/L disodium fumarate,
+  and 1.0 L distilled water; its comment describes replacing the gas phase with N2
+  or using AnaeroPack(TM) for anaerobic cultivation.
 ingredients:
-- preferred_term: R2A agar
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '18.2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
 - preferred_term: Disodium fumarate
-  term:
-    id: CHEBI:115156
-    label: disodium fumarate
   concentration:
     value: '3.2'
     unit: G_PER_L
+  source: JCM Medium 1235
+  notes: Adds 3.2 g/L disodium fumarate to R2A Agar.
+  term:
+    id: CHEBI:115156
+    label: disodium fumarate
   mediaingredientmech_chebi_term:
     id: CHEBI:115156
     label: disodium fumarate
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: When cultivate anaerobically, replace the gas phase with N2. An anaerobic
-    gas generating system, such as AnaeroPackTM, is also available.
+  description: Adds 3.2 g/L disodium fumarate to R2A Agar.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+- step_number: 3
+  action: MIX
+  description: For anaerobic cultivation, replace the gas phase with N2 or use AnaeroPack(TM).
 applications:
 - Microbial cultivation
 curation_history:
@@ -63,3 +62,35 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_r2a_score20.py
+  action: RESOLVED_JCM_R2A_SCORE20
+  changes: Resolved score-20 direct JCM R2A Agar wrapper
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1235; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=346
+  notes: Adds 3.2 g/L disodium fumarate to R2A Agar.; For anaerobic cultivation, replace
+    the gas phase with N2 or use AnaeroPack(TM).
+solutions:
+- preferred_term: R2A Agar
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  notes: Adds 3.2 g/L disodium fumarate to R2A Agar.
+  culturemech_term:
+    id: CultureMech:002706
+    label: R2A Agar
+parent_media:
+  path: data/normalized_yaml/bacterial/r2a_agar.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:002706
+  name: r2a_agar
+  notes: Adds 3.2 g/L disodium fumarate to R2A Agar.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adds 3.2 g/L disodium fumarate to R2A Agar.
+- For anaerobic cultivation, replace the gas phase with N2 or use AnaeroPack(TM).
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1235
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=346

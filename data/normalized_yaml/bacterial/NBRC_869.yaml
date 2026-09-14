@@ -6,6 +6,12 @@ description: 869. NBRC 868.
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.6
+media_term:
+  preferred_term: NBRC Medium 868
+  term:
+    id: nbrc.medium:868
+    label: NBRC Medium 868
 ingredients:
 - preferred_term: Bacto Marine Broth 2216 (Difco)
   concentration:
@@ -15,10 +21,16 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: CHEBI:50144
+    label: Na-pyruvate
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
     unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: Agar
 - preferred_term: Sea water*
   concentration:
     value: '800'
@@ -30,16 +42,7 @@ ingredients:
   term:
     id: CHEBI:15377
     label: water
-preparation_steps:
-- step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
-- step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+preparation_steps: []
 curation_history:
 - timestamp: '2026-02-20T00:22:35.979642Z'
   curator: nbrc-import
@@ -76,5 +79,21 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
-notes: pH 7.6 Filtered, aged seawater or artificial seawater (Daigo's Artificial Seawater
-  SP**) Wako Pure Chemical Ind., Ltd., Osaka, Japan.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=868
+  notes: Preserved the recovered NBRC Medium 868 composition table.
+notes: 'Source: NBRC Medium 868 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=868
+
+
+  The NBRC 1/5 Marine Broth + 0.5% Sodium Pyruvate table lists Bacto Marine Broth
+  2216, sodium pyruvate, optional agar, filtered aged seawater or Daigo''s Artificial
+  Seawater SP, and final pH 7.6.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=868

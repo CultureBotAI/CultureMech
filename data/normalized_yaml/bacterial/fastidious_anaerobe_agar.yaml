@@ -13,29 +13,55 @@ media_term:
   term:
     id: mediadive.medium:1203
     label: FASTIDIOUS ANAEROBE AGAR
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1203.pdf'
+notes: DSMZ Medium 1203 lists 45.7 g Acumedia Fastidious Anaerobe Agar brought to
+  one liter with deionized water, soaked, autoclaved at 121 C, cooled to 47 C, and
+  supplemented with 5-10% sterile defibrinated horse blood.
 ingredients:
-- preferred_term: Fastidious Anaerobe Agar
-  term:
-    id: CHEBI:2509
-    label: agar
+- preferred_term: Fastidious Anaerobe Agar (Acumedia)
   concentration:
     value: '45.7'
     unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Horse blood
+  notes: DSMZ Medium 1203 lists this commercial Acumedia agar base as supplied.
+- preferred_term: Deionized water
   concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: ' (adjust if required)'
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: DSMZ Medium 1203 brings the agar base to 1000 ml.
+- preferred_term: Sterile defibrinated horse blood
+  concentration:
+    value: 5-10
+    unit: PERCENT_V_V
+  term:
+    id: UBERON:0000178
+    label: blood
+  notes: DSMZ Medium 1203 instructs adding 5-10% sterile defibrinated horse blood
+    after autoclaving and cooling to 47 C.
 preparation_steps:
 - step_number: 1
-  action: POUR_PLATES
-  description: 'Allow to soak for 10 minutes, swirl to mix then sterilize by autoclaving
-    at 121°C for 15 minutes. Cool to 47°C then aseptically add 5-10% of sterile defibrinated
-    horse blood, mix well and pour plates. pH: 7.2 ± 0.2'
+  action: MIX
+  description: Allow the agar powder to soak for 10 min, then swirl to mix.
+  duration: 10 minutes
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the mixed medium at 121 C for 15 min.
+- step_number: 3
+  action: COOL
+  description: Cool the sterilized medium to 47 C.
+  temperature:
+    value: 47.0
+    unit: CELSIUS
+- step_number: 4
+  action: MIX
+  description: Aseptically add 5-10% sterile defibrinated horse blood, mix well, and
+    pour plates.
+sterilization:
+  method: AUTOCLAVE
 applications:
 - Microbial cultivation
 curation_history:
@@ -66,11 +92,29 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_dsmz_1203_fastidious_score20.py
+  action: RESOLVED_DSMZ_1203_FASTIDIOUS_SCORE20
+  changes: Resolved DSMZ Medium 1203 Fastidious Anaerobe Agar formula
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1203.pdf
+  notes: DSMZ Medium 1203 lists 45.7 g Acumedia Fastidious Anaerobe Agar brought to
+    one liter with deionized water, soaked, autoclaved at 121 C, cooled to 47 C, and
+    supplemented with 5-10% sterile defibrinated horse blood.
 kg_microbe_match: mediadive.medium:12
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1203_FASTIDIOUS_ANAEROBE_AGAR.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003951
   name: fastidious_anaerobe_agar
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1203; local ingredient
-    and concentration signatures match.
+  notes: KOMODO Medium 1203 is a duplicate of DSMZ Medium 1203.
+- path: data/normalized_yaml/bacterial/KOMODO_3136_Fastidious_Anaerobe_Agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004984
+  name: fastidious_anaerobe_agar
+  notes: KOMODO Medium 3136 resolves to MediaDive/DSMZ Medium 1203.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1203.pdf

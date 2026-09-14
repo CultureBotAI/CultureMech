@@ -6,38 +6,57 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
+- preferred_term: Bacto Marine Broth 2216 (Difco)
+  concentration:
+    value: '37.4'
+    unit: G_PER_L
+  source: NBRC Medium 947
+  notes: NBRC Medium 947 lists 37.4 g/L Bacto Marine Broth 2216 from Difco without
+    disclosing the product composition.
+- preferred_term: Methanol
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+  source: NBRC Medium 947
+  notes: NBRC Medium 947 lists 5 ml/L methanol and marks it for separate filter sterilization.
+  term:
+    id: CHEBI:17790
+    label: methanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
+    label: methanol
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  source: NBRC Medium 947
+  notes: NBRC Medium 947 lists 15 g/L agar as an optional solidifying agent.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1000'
+    unit: ML_PER_L
+  source: NBRC Medium 947
+  notes: NBRC Medium 947 lists 1 L distilled water.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: Agar (if needed)
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Bacto Marine Broth 2216 (Difco)
-  concentration:
-    value: '37.4'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
 media_term:
   preferred_term: TOGO Medium M1738
   term:
     id: TOGO:M1738
     label: Marine Broth with 0.5% Methanol
-notes: 'Source: https://togomedium.org/medium/M1738
-
-  Original source: NBRC - NBRC_M947
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=947'
+notes: NBRC Medium 947 Marine Broth with 0.5% Methanol lists 37.4 g Bacto Marine Broth
+  2216 (Difco), 5 ml methanol, 15 g optional agar, and 1 L distilled water with pH
+  unadjusted. NBRC marks methanol for separate filter sterilization.
 applications:
 - Microbial cultivation
 curation_history:
@@ -80,12 +99,31 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-solutions:
-- preferred_term: Methanol*
-  composition: []
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Solution, Organic
-    compound'
-  name: Unknown solution
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m1738_marine_methanol_score15.py
+  action: RESOLVED_TOGO_M1738_MARINE_METHANOL_SCORE15
+  source: https://togomedium.org/medium/M1738; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=947
+  notes: NBRC Medium 947 Marine Broth with 0.5% Methanol lists 37.4 g Bacto Marine
+    Broth 2216 (Difco), 5 ml methanol, 15 g optional agar, and 1 L distilled water
+    with pH unadjusted. NBRC marks methanol for separate filter sterilization. Corrected
+    distilled water from 1 g/L to 1 L, converted methanol from an empty migrated solution
+    to a 5 ml/L ingredient, grounded methanol, agar, and water, and restored NBRC's
+    pH and filter-sterilization notes.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix 37.4 g Bacto Marine Broth 2216 (Difco) in 1 L distilled water with
+    15 g agar if a solid medium is needed.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Sterilize methanol separately by filtration.
+- step_number: 3
+  action: MIX
+  description: Add 5 ml filter-sterilized methanol per liter of medium.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1738
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=947

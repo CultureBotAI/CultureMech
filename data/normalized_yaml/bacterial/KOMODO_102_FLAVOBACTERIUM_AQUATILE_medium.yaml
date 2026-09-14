@@ -22,10 +22,16 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Proteose peptone
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: MICRO:0000180
+    label: Proteose Peptone
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -80,6 +86,12 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_jcm_score10_exact_terms.py
+  action: GROUNDED_KOMODO_JCM_SCORE10_EXACT_TERMS
+  changes: Grounded exact KOMODO/JCM score-10 ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Proteose peptone, Yeast extract.
 kg_microbe_match: mediadive.medium:102
 parent_media:
   path: data/normalized_yaml/bacterial/flavobacterium_aquatile_medium.yaml

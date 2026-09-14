@@ -4,18 +4,22 @@ original_name: CHROMagerTM Malassezia/Candida*
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: LIQUID
-ingredients: []
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: CHROMagerTM Malassezia/Candida
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: TOGO M1889
+  notes: TOGO M1889 names the CHROMagerTM Malassezia/Candida product from Kanto Chemical
+    without stating an amount.
 media_term:
   preferred_term: TOGO Medium M1889
   term:
     id: TOGO:M1889
     label: CHROMagerTM Malassezia/Candida*
-notes: 'Source: https://togomedium.org/medium/M1889
-
-  Original source: NBRC - NBRC_M1136
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1136'
+notes: TOGO M1889 records the CHROMagerTM Malassezia/Candida product from Kanto Chemical
+  without a disclosed internal formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -48,11 +52,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2
-solutions:
-- preferred_term: CHROMagerTM Malassezia/Candida*
-  composition: []
-  concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'Properties: Undefined component, Complex component'
-  name: Unknown solution
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_products_more_score40.py
+  action: RESOLVED_TOGO_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO product graph
+  source: https://togomedium.org/medium/M1889; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1136
+  notes: TOGO M1889 records the CHROMagerTM Malassezia/Candida product from Kanto
+    Chemical without a disclosed internal formulation.
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M1889
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1136

@@ -379,17 +379,21 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-ph_value: 7.0
-variant_children:
-- path: data/normalized_yaml/bacterial/for_dsm_14005.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006918
-  name: for_dsm_14005
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/thermincola_ferriacetica_medium.yaml
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_962_thermincola_score10.py
+  action: RESOLVED_KOMODO_962_THERMINCOLA_TOPOLOGY
+  changes: Linked under DSMZ Medium 962 as SOURCE_DUPLICATE
+  source: KOMODO Medium 962
+  notes: KOMODO Medium 962 has the same 33-ingredient signature as DSMZ Medium 962.
+parent_media:
+  path: data/normalized_yaml/bacterial/thermincola_ferriacetica_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002142
   name: thermincola_ferriacetica_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 962 has the same 33-ingredient signature as DSMZ Medium 962.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO Medium 962 has the same 33-ingredient signature as DSMZ Medium 962.
+ph_value: 7.0
+data_quality_flags:
+- ingredients_curated

@@ -5,17 +5,76 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ingredients: []
+ph_value: 8.0
+ingredients:
+- preferred_term: Czapek-Dox liquid medium, modified (Oxoid)
+  concentration:
+    value: '33.4'
+    unit: G_PER_L
+  notes: TOGO M41 and JCM Medium 49 list this component for CYC Agar; TOGO M212 and
+    JCM Medium 219 use the same formulation adjusted to pH 8.0.
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: TOGO M41 and JCM Medium 49 list this component for CYC Agar; TOGO M212 and
+    JCM Medium 219 use the same formulation adjusted to pH 8.0.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+  - PROTEIN_SOURCE
+- preferred_term: Casamino acids, vitamin assay (BD-Difco)
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: TOGO M41 and JCM Medium 49 list this component for CYC Agar; TOGO M212 and
+    JCM Medium 219 use the same formulation adjusted to pH 8.0.
+  nutritional_roles:
+  - AMINO_ACID_SOURCE
+  - NITROGEN_SOURCE
+- preferred_term: Agar
+  concentration:
+    value: '16'
+    unit: G_PER_L
+  notes: TOGO M41 and JCM Medium 49 list this component for CYC Agar; TOGO M212 and
+    JCM Medium 219 use the same formulation adjusted to pH 8.0.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  notes: TOGO M41 and JCM Medium 49 list this component for CYC Agar; TOGO M212 and
+    JCM Medium 219 use the same formulation adjusted to pH 8.0.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve the CYC Agar components in distilled water and bring the final
+    volume to 1 L.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust the complete medium to pH 8.0.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
 media_term:
   preferred_term: TOGO Medium M212
   term:
     id: TOGO:M212
     label: CYC Agar (pH 8.0)
-notes: 'Source: https://togomedium.org/medium/M212
-
-  Original source: JCM - JCM_M219
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=219'
+notes: TOGO M212/JCM Medium 219 prepares CYC Agar from TOGO M41/JCM Medium 49 and
+  adjusts the complete medium to pH 8.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -44,11 +103,29 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
-solutions:
-- preferred_term: CYC agar (see Medium [M41])
-  composition: []
-  notes: Cross-reference to Medium M41
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_ph_score40.py
+  action: RESOLVED_JCM_PH_SCORE40_GRAPH
+  changes: Resolved score-40 JCM pH-variant recipe graph
+  source: https://togomedium.org/medium/M212; https://togomedium.org/medium/M41; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=219;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=49
+  notes: TOGO M212/JCM Medium 219 prepares CYC Agar from TOGO M41/JCM Medium 49 and
+    adjusts the complete medium to pH 8.0.
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M41_CYC_Agar.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:009805
+  name: cyc_agar
+  notes: Adjusts TOGO M41 CYC Agar to pH 8.0.
+variant_relationship: PH_VARIANT
+variant_modifications:
+- Adjusts TOGO M41 CYC Agar to pH 8.0.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M212
+- reference: https://togomedium.org/medium/M41
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=219
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=49

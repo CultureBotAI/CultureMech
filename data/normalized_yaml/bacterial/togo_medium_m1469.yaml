@@ -5,56 +5,103 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_range:
+  min: 9.0
+  max: 10.0
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '4'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: NBRC Medium 248
+  notes: NBRC Medium 248 lists 4 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+- preferred_term: Malt extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  source: NBRC Medium 248
+  notes: NBRC Medium 248 lists 10 g/L Malt extract.
+  term:
+    id: FOODON:03301056
+    label: Malt extract
 - preferred_term: Glucose
   concentration:
     value: '4'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
+  source: NBRC Medium 248
+  notes: NBRC Medium 248 lists 4 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+- preferred_term: Na2CO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  source: NBRC Medium 248
+  notes: NBRC Medium 248 lists 10 g/L Na2CO3 sterilized separately.
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: NBRC Medium 248
+  notes: NBRC Medium 248 lists 1000 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar (if needed)
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Malt extract
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: NBRC Medium 248
+  notes: NBRC Medium 248 lists 20 g/L agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 media_term:
   preferred_term: TOGO Medium M1469
   term:
     id: TOGO:M1469
     label: TOGO Medium M1469
-notes: 'Source: https://togomedium.org/medium/M1469
-
-  Original source: NBRC - NBRC_M248
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=248'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Combine 4 g/L Yeast extract, 10 g/L Malt extract, 4 g/L Glucose, and
+    1000 ml/L Distilled water.
+- step_number: 2
+  action: MIX
+  description: Add 10 g/L Na2CO3 sterilized separately.
+- step_number: 3
+  action: MIX
+  description: Add 20 g/L agar when solid NBRC Medium 248 is needed.
+- step_number: 4
+  action: ADJUST_PH
+  description: Adjust pH to 9.0 to 10.0.
+notes: TOGO M1469 imports NBRC Medium 248, which lists 4 g/L Yeast extract, 10 g/L
+  Malt extract, 4 g/L Glucose, 10 g/L Na2CO3, 1000 ml/L Distilled water, and 20 g/L
+  Agar if needed. NBRC lists pH 9.0 to 10.0 and instructs that Na2CO3 is sterilized
+  separately.
 applications:
 - Microbial cultivation
 curation_history:
@@ -97,12 +144,16 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-solutions:
-- preferred_term: Na2CO3*
-  composition: []
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
-  name: Unknown solution
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nbrc_248_score15.py
+  action: RESOLVED_NBRC_248_SCORE15
+  source: https://togomedium.org/medium/M1469; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=248
+  notes: Curated TOGO:M1469 from TOGO and NBRC Medium 248; corrected Distilled water
+    from a mass-like 1 g/L import to 1000 ml/L, moved Na2CO3 from the false empty
+    solution into the final formula, added pH 9.0 to 10.0, and grounded all components.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1469
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=248

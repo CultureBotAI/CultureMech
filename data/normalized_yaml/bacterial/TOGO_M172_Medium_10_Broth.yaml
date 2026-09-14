@@ -5,13 +5,16 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_range:
+  min: 6.7
+  max: 6.8
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '850'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '850.0'
+    unit: ML_PER_L
+  source: TOGO M172 / JCM Medium 179
+  notes: TOGO M172 / JCM Medium 179 lists 850 ml distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -22,8 +25,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  source: TOGO M172 / JCM Medium 179
+  notes: TOGO M172 / JCM Medium 179 lists 0.5 g/L Cellobiose.
   term:
     id: CHEBI:17057
     label: cellobiose
@@ -34,8 +37,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  source: TOGO M172 / JCM Medium 179
+  notes: TOGO M172 / JCM Medium 179 lists 0.5 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
@@ -46,30 +49,45 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Undefined component'
+  source: TOGO M172 / JCM Medium 179
+  notes: TOGO M172 / JCM Medium 179 lists 0.5 g/L Soluble starch.
   term:
+    id: CHEBI:28017
+    label: starch
+  mediaingredientmech_chebi_term:
     id: CHEBI:28017
     label: starch
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M172 / JCM Medium 179
+  notes: TOGO M172 / JCM Medium 179 lists 0.5 g/L Yeast extract from BD-Difco.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Trypticase peptone (BD-BBL)
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M172 / JCM Medium 179
+  notes: TOGO M172 / JCM Medium 179 lists 2 g/L Trypticase peptone from BD-BBL.
+  term:
+    id: MICRO:0000175
+    label: Trypticase peptone
 media_term:
   preferred_term: TOGO Medium M172
   term:
     id: TOGO:M172
     label: Medium 10 Broth
-notes: 'Source: https://togomedium.org/medium/M172
-
-  Original source: JCM - JCM_M179
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=179'
+notes: TOGO M172 preserves JCM Medium 179 as Medium 10 Broth. TOGO M172 records 850
+  ml distilled water, 0.5 g each of cellobiose, glucose, soluble starch, and Yeast
+  extract from BD-Difco, 2 g Trypticase peptone from BD-BBL, 0.5 ml 0.1% Resazurin
+  solution, 0.5 ml 0.2% Hemin solution, 100 ml 4% Na2SO3 solution, 2 ml 25% L-Ascorbic
+  acid solution, 10 ml 5% L-Cysteine HCl H2O solution, and VFA and salt stocks from
+  Medium 10 / TOGO M124, with pH adjusted to 6.7-6.8. It omits agar and Toray silicone
+  from the JCM Medium 133 Medium 10 formulation. The current JCM Medium 179 URL no
+  longer exposes the recipe.
 applications:
 - Microbial cultivation
 curation_history:
@@ -114,61 +132,171 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m172_score15.py
+  action: RESOLVED_TOGO_M172_SCORE15
+  source: https://togomedium.org/medium/M172; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=179;
+    https://togomedium.org/medium/M124; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=133
+  notes: TOGO M172 preserves JCM Medium 179 as Medium 10 Broth. TOGO M172 records
+    850 ml distilled water, 0.5 g each of cellobiose, glucose, soluble starch, and
+    Yeast extract from BD-Difco, 2 g Trypticase peptone from BD-BBL, 0.5 ml 0.1% Resazurin
+    solution, 0.5 ml 0.2% Hemin solution, 100 ml 4% Na2SO3 solution, 2 ml 25% L-Ascorbic
+    acid solution, 10 ml 5% L-Cysteine HCl H2O solution, and VFA and salt stocks from
+    Medium 10 / TOGO M124, with pH adjusted to 6.7-6.8. It omits agar and Toray silicone
+    from the JCM Medium 133 Medium 10 formulation. The current JCM Medium 179 URL
+    no longer exposes the recipe. Corrected imported ml additions, added the TOGO
+    pH range and Medium 10 note, represented simple concentration stocks, and marked
+    the source formula as curated.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_jcm_medium_10_duplicates_score15.py
+  action: LINKED_JCM_MEDIUM_10_SOURCE_DUPLICATE
+  source: https://togomedium.org/medium/M172; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=179;
+    https://togomedium.org/medium/M124; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=133
+  notes: Added or refreshed the reciprocal SOURCE_DUPLICATE link for bacterial/medium_10_broth.yaml.
 solutions:
 - preferred_term: 0.1% Resazurin solution
-  composition: []
   concentration:
     value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Solution, Defined component'
-  name: Unknown solution
+    unit: ML_PER_L
+  source: TOGO M172 / JCM Medium 179
+  notes: TOGO M172 / JCM Medium 179 adds 0.5 ml/L 0.1% Resazurin solution.
+  composition:
+  - preferred_term: Resazurin
+    concentration:
+      value: '0.1'
+      unit: PERCENT_W_V
+    source: TOGO M172 / JCM Medium 179
+    notes: TOGO M172 / JCM Medium 179 identifies the redox indicator stock as 0.1%
+      Resazurin.
+    term:
+      id: CHEBI:8806
+      label: Resazurin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:8806
+      label: Resazurin
 - preferred_term: 0.2% Hemin solution
-  composition: []
   concentration:
     value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Solution, Organic compound, Defined component'
-  name: Unknown solution
+    unit: ML_PER_L
+  source: TOGO M172 / JCM Medium 179
+  notes: TOGO M172 / JCM Medium 179 adds 0.5 ml/L 0.2% Hemin solution.
+  composition:
+  - preferred_term: Hemin
+    concentration:
+      value: '0.2'
+      unit: PERCENT_W_V
+    source: TOGO M172 / JCM Medium 179
+    notes: TOGO M172 / JCM Medium 179 identifies the growth-factor stock as 0.2% Hemin.
+    term:
+      id: CHEBI:50385
+      label: hemin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:50385
+      label: hemin
 - preferred_term: 4% Na2SO3 solution
-  composition: []
   concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
-    Solution'
-  name: Unknown solution
+    value: '100.0'
+    unit: ML_PER_L
+  source: TOGO M172 / JCM Medium 179
+  notes: TOGO M172 / JCM Medium 179 adds 100.0 ml/L 4% Na2SO3 solution.
+  composition:
+  - preferred_term: Na2SO3
+    concentration:
+      value: '4.0'
+      unit: PERCENT_W_V
+    source: TOGO M172 / JCM Medium 179
+    notes: TOGO M172 / JCM Medium 179 identifies the reducing stock as 4% Na2SO3.
+    term:
+      id: CHEBI:86477
+      label: sodium sulfite
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86477
+      label: sodium sulfite
 - preferred_term: 25% L--Ascorbic acid solution
-  composition: []
   concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Solution, Defined component'
-  name: Unknown solution
+    value: '2.0'
+    unit: ML_PER_L
+  source: TOGO M172 / JCM Medium 179
+  notes: TOGO M172 / JCM Medium 179 adds 2.0 ml/L 25% L--Ascorbic acid solution.
+  composition:
+  - preferred_term: L-Ascorbic acid
+    concentration:
+      value: '25.0'
+      unit: PERCENT_W_V
+    source: TOGO M172 / JCM Medium 179
+    notes: TOGO M172 / JCM Medium 179 identifies the vitamin stock as 25% L-Ascorbic
+      acid.
+    term:
+      id: CHEBI:29073
+      label: L-Ascorbic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:29073
+      label: L-Ascorbic acid
 - preferred_term: 5% L--Cysteine・HCl・H2O solution
-  composition: []
   concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Solution'
-  name: Unknown solution
+    value: '10.0'
+    unit: ML_PER_L
+  source: TOGO M172 / JCM Medium 179
+  notes: TOGO M172 / JCM Medium 179 adds 10.0 ml/L 5% L--Cysteine・HCl・H2O solution.
+  composition:
+  - preferred_term: L-Cysteine HCl H2O
+    concentration:
+      value: '5.0'
+      unit: PERCENT_W_V
+    source: TOGO M172 / JCM Medium 179
+    notes: TOGO M172 / JCM Medium 179 identifies the cysteine stock as 5% L-Cysteine
+      HCl H2O.
+    term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
 - preferred_term: VFA solution (see Medium [M124])
-  composition: []
-  notes: Cross-reference to Medium M124
   concentration:
     value: '3.1'
-    unit: G_PER_L
-  name: Unknown solution
+    unit: ML_PER_L
+  source: TOGO M172 / JCM Medium 179
+  notes: TOGO M172 / JCM Medium 179 adds 3.1 ml/L VFA solution from Medium 10; TOGO
+    M124 / JCM Medium 133 defines the source stock.
+  composition: []
 - preferred_term: Salt solution No. 1 (see Medium [M124])
-  composition: []
-  notes: Cross-reference to Medium M124
   concentration:
     value: '37.5'
-    unit: G_PER_L
-  name: Unknown solution
+    unit: ML_PER_L
+  source: TOGO M172 / JCM Medium 179
+  notes: TOGO M172 / JCM Medium 179 adds 37.5 ml/L Salt solution No. 1 from Medium
+    10; TOGO M124 / JCM Medium 133 defines the source stock.
+  composition: []
 - preferred_term: Salt solution No. 2 (see Medium [M124])
-  composition: []
-  notes: Cross-reference to Medium M124
   concentration:
     value: '37.5'
-    unit: G_PER_L
-  name: Unknown solution
+    unit: ML_PER_L
+  source: TOGO M172 / JCM Medium 179
+  notes: TOGO M172 / JCM Medium 179 adds 37.5 ml/L Salt solution No. 2 from Medium
+    10; TOGO M124 / JCM Medium 133 defines the source stock.
+  composition: []
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.7-6.8.
+- step_number: 2
+  action: MIX
+  description: Use Medium 10 from JCM Medium 133 with 0.5 ml/L final 0.2% hemin solution,
+    and omit agar and Toray silicone solution.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M172
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=179
+- reference: https://togomedium.org/medium/M124
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=133
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_10_broth.yaml
+  relationship: SOURCE_DUPLICATE
+  notes: MediaDive JCM J179 is a source-catalogue duplicate of TOGO M172 for JCM Medium
+    179 Medium 10 Broth.
+  id: CultureMech:002539
+  name: medium_10_broth

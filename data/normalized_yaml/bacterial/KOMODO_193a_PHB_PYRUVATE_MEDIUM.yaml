@@ -380,56 +380,54 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-high_metal: true
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_193a_desulfobacter_score10.py
+  action: RESOLVED_KOMODO_193A_DESULFOBACTER_TOPOLOGY
+  changes: Changed KOMODO Medium 193a DSM wrappers from duplicates to strain variants
+  source: KOMODO Medium 193, 193.1-193.5, 193_6637, 193_8775
+  notes: Kept KOMODO Medium 193a as the DSMZ Medium 193a source duplicate parent.
 variant_children:
 - path: data/normalized_yaml/bacterial/desulfobacter_postgatei_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004227
   name: desulfobacter_postgatei_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 193 has the same 34-ingredient signature as KOMODO Medium 193a.
 - path: data/normalized_yaml/bacterial/for_dsm_14956.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:004220
   name: for_dsm_14956
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_15102.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:004223
-  name: for_dsm_15102
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 193.1 applies KOMODO Medium 193a to DSM 14956.
 - path: data/normalized_yaml/bacterial/for_dsm_15249.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:004221
   name: for_dsm_15249
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_16697.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:004224
-  name: for_dsm_16697
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 193.2 applies KOMODO Medium 193a to DSM 15249.
 - path: data/normalized_yaml/bacterial/for_dsm_18843.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:004222
   name: for_dsm_18843
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 193.3 applies KOMODO Medium 193a to DSM 18843.
+- path: data/normalized_yaml/bacterial/for_dsm_15102.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004223
+  name: for_dsm_15102
+  notes: KOMODO Medium 193.4 applies KOMODO Medium 193a to DSM 15102.
+- path: data/normalized_yaml/bacterial/for_dsm_16697.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004224
+  name: for_dsm_16697
+  notes: KOMODO Medium 193.5 applies KOMODO Medium 193a to DSM 16697.
 - path: data/normalized_yaml/bacterial/medium_193_modified_for_dsm_6637.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:004225
   name: medium_193_modified_for_dsm_6637
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 193_6637 applies KOMODO Medium 193a to DSM 6637.
 - path: data/normalized_yaml/bacterial/medium_193_modified_for_dsm_8775.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:004226
   name: medium_193_modified_for_dsm_8775
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 193_8775 applies KOMODO Medium 193a to DSM 8775.
+high_metal: true
 parent_media:
   path: data/normalized_yaml/bacterial/phb_pyruvate_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -441,3 +439,5 @@ variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same ingredient and concentration signature; KOMODO record copied from the matching
   DSMZ medium source.
+data_quality_flags:
+- ingredients_curated

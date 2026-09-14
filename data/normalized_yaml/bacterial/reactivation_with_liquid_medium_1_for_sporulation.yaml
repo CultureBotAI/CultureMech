@@ -5,25 +5,31 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Peptone
   concentration:
-    value: '1000'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO M2359 / DSMZ Medium 1a
+  notes: DSMZ Medium 1a lists 5 g/L Peptone.
   term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
+    id: MICRO:0000178
+    label: Peptone
+- preferred_term: Meat extract
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  source: TOGO M2359 / DSMZ Medium 1a
+  notes: DSMZ Medium 1a lists 3 g/L Meat extract; this generic complex extract is
+    retained without an ontology grounding.
 - preferred_term: MnSO4 x H2O
   concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+    value: '10.0'
+    unit: MG_PER_L
+  source: TOGO M2359 / DSMZ Medium 1a
+  notes: DSMZ Medium 1a recommends adding 10 mg/L MnSO4 x H2O for Bacillus-strain
+    sporulation.
   term:
     id: CHEBI:86364
     label: manganese(II) sulfate monohydrate
@@ -32,26 +38,38 @@ ingredients:
     label: manganese(II) sulfate monohydrate
 - preferred_term: Agar, if required
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Meat extract
+  source: TOGO M2359 / DSMZ Medium 1a
+  notes: DSMZ Medium 1a lists 15 g/L Agar, if required.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Distilled water
   concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
+    value: '1.0'
+    unit: L
+  source: TOGO M2359 / DSMZ Medium 1a
+  notes: DSMZ Medium 1a lists 1000 ml Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M2359
   term:
     id: TOGO:M2359
     label: Reactivation With Liquid Medium 1  (For sporulation)
-notes: 'Source: https://togomedium.org/medium/M2359
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1a.pdf'
+notes: TOGO M2359 / DSMZ Medium 1a defines Reactivation With Liquid Medium 1 using
+  DSMZ Medium 1a. DSMZ Medium 1a lists, per liter, 5 g Peptone, 3 g Meat extract,
+  15 g Agar if required, and 1000 ml Distilled water. Adjust pH to 7.0. TOGO M2359
+  represents the source-recommended Bacillus sporulation addition as 10 mg/L MnSO4
+  x H2O.
 applications:
 - Microbial cultivation
 curation_history:
@@ -88,3 +106,38 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2358_m2359_score15.py
+  action: RESOLVED_TOGO_M2358_M2359_SCORE15
+  source: https://togomedium.org/medium/M2359; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1a.pdf
+  notes: TOGO M2359 / DSMZ Medium 1a defines Reactivation With Liquid Medium 1 using
+    DSMZ Medium 1a. DSMZ Medium 1a lists, per liter, 5 g Peptone, 3 g Meat extract,
+    15 g Agar if required, and 1000 ml Distilled water. Adjust pH to 7.0. TOGO M2359
+    represents the source-recommended Bacillus sporulation addition as 10 mg/L MnSO4
+    x H2O. Corrected the imported water and manganese unit artifacts, grounded the
+    disclosed simple and protein-hydrolysate components, kept Meat extract intentionally
+    unmapped, and linked the record to DSMZ Medium 1a.
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 2
+  action: MIX
+  description: Add 10 mg/L MnSO4 x H2O for Bacillus-strain sporulation.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2359
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1a.pdf
+parent_media:
+  path: data/normalized_yaml/bacterial/reactivation_with_liquid_medium_1.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:001298
+  name: reactivation_with_liquid_medium_1
+  notes: TOGO M2359 imports DSMZ Medium 1a with the source-recommended 10 mg/L MnSO4
+    x H2O addition for Bacillus-strain sporulation.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adds 10 mg/L MnSO4 x H2O for Bacillus-strain sporulation.

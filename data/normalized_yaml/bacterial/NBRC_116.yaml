@@ -1,11 +1,22 @@
 id: CultureMech:007460
-name: '116'
-original_name: '116'
+name: Medium for the 2µ Mapping Strains
+original_name: Medium for the 2µ Mapping Strains
 category: bacterial
 description: 116. NBRC 114.
+notes: 'Source: NBRC Medium 114 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=114
+
+
+  The NBRC Medium for the 2µ Mapping Strains table lists Bacto-Yeast Nitrogen Base
+  without amino acids, glucose, L-Leucine, L-Histidine, L-Tryptophan, L-Methionine,
+  distilled water, and agar.'
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: NBRC Medium 114
+  term:
+    id: nbrc.medium:114
+    label: NBRC Medium 114
 ingredients:
 - preferred_term: Bacto-Yeast Nitrogen Base w/o Amino acids (Difco)
   concentration:
@@ -60,16 +71,7 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-preparation_steps:
-- step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
-- step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+preparation_steps: []
 curation_history:
 - timestamp: '2026-02-20T00:22:35.938584Z'
   curator: nbrc-import
@@ -105,3 +107,16 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 7 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_nbrc_exact_score20.py
+  action: RESOLVED_NBRC_EXACT_SCORE20
+  changes: Added source metadata to recovered NBRC score-20 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=114
+  notes: Resolved the recovered NBRC Medium 114 table as Medium for the 2µ Mapping
+    Strains.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=114

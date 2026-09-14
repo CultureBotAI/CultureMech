@@ -1,6 +1,10 @@
 id: CultureMech:000212
 name: soil_water_media
 category: algae
+sources:
+- database: SAG
+  database_id: Soil_Water_Media
+  url: http://sagdb.uni-goettingen.de/culture_media/03 Soil Water Media.pdf
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: BIPHASIC
@@ -59,6 +63,21 @@ curation_history:
   notes: Restored the formulation from the reviewed SAG PDF, preserving final-medium
     and stock-solution boundaries. Calculated stock concentrations are documented
     in-place. Ingredient identities were selected from the MediaIngredientMech SSSOM.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_sag_missing_compositions.py
+  action: TAGGED_SAG_RESTORED_COMPOSITION_CURATED
+  changes: data_quality_flags += has_ontology_mappings, ingredients_curated
+  notes: Marked the reviewed SAG source formulation as curated and ontology-mapped
+    after the original restoration left only the ingredient identities and did not
+    add the scoring flags.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_sag_sources_score10.py
+  action: NORMALIZED_SAG_SOURCE_SCORE10
+  changes: Normalized SAG provenance
+  source: SAG:Soil_Water_Media; http://sagdb.uni-goettingen.de/culture_media/03 Soil
+    Water Media.pdf
+  notes: Copied the SAG source identity from references and the original sag-import
+    event into the structured sources slot recognized by review scoring.
 references:
 - reference: SAG:Soil_Water_Media
 - reference: http://sagdb.uni-goettingen.de/culture_media/03 Soil Water Media.pdf
@@ -109,3 +128,6 @@ variant_children:
   path: data/normalized_yaml/algae/note_on_biphasic_soilwater_media_20081216.yaml
   relationship: SOURCE_DUPLICATE
   notes: Separate SAG explanatory document for the same soil-water formulation.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

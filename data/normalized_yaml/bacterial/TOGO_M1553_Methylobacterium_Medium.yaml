@@ -3,53 +3,85 @@ name: methylobacterium_medium
 original_name: Methylobacterium Medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Hipolypepton*
   concentration:
-    value: '1'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: MgSO4·7H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
+  source: TOGO M1553 / NBRC Medium 352
+  notes: NBRC Medium 352 lists 10 g/L Hipolypepton and notes that the asterisk marks
+    Wako Pure Chemical Industries; this peptone product is retained as an opaque complex
+    component.
 - preferred_term: Yeast extract
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M1553 / NBRC Medium 352
+  notes: TOGO M1553 / NBRC Medium 352 lists 2.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Methanol**
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+  source: TOGO M1553 / NBRC Medium 352
+  notes: NBRC Medium 352 lists 5 ml/L Methanol and notes that the double asterisk
+    marks separate filter sterilization.
+  term:
+    id: CHEBI:17790
+    label: methanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
+    label: methanol
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: TOGO M1553 / NBRC Medium 352
+  notes: TOGO M1553 / NBRC Medium 352 lists 1.0 g/L MgSO4·7H2O.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: Agar (if needed)
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M1553 / NBRC Medium 352
+  notes: TOGO M1553 / NBRC Medium 352 lists 15.0 g/L Agar (if needed).
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: TOGO M1553 / NBRC Medium 352
+  notes: NBRC Medium 352 lists 1 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M1553
   term:
     id: TOGO:M1553
     label: Methylobacterium Medium
-notes: 'Source: https://togomedium.org/medium/M1553
-
-  Original source: NBRC - NBRC_M352
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=352'
+notes: TOGO M1553 imports NBRC Medium 352 as Methylobacterium Medium. NBRC 352 lists
+  10 g Hipolypepton from Wako Pure Chemical Industries, 2 g yeast extract, 5 ml methanol,
+  1 g MgSO4·7H2O, optional 15 g agar, and 1 L distilled water at pH 7.0, and states
+  that methanol is sterilized separately by filtration.
 applications:
 - Microbial cultivation
 curation_history:
@@ -98,37 +130,70 @@ curation_history:
   notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
     magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
     labels untouched.
-solutions:
-- preferred_term: Methanol**
-  composition: []
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Organic compound, Solution, Defined component'
-  name: Unknown solution
-- preferred_term: Hipolypepton*
-  composition: []
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-  name: Unknown solution
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m1553_score15.py
+  action: RESOLVED_TOGO_M1553_SCORE15
+  source: https://togomedium.org/medium/M1553; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=352
+  notes: TOGO M1553 imports NBRC Medium 352 as Methylobacterium Medium. NBRC 352 lists
+    10 g Hipolypepton from Wako Pure Chemical Industries, 2 g yeast extract, 5 ml
+    methanol, 1 g MgSO4·7H2O, optional 15 g agar, and 1 L distilled water at pH 7.0,
+    and states that methanol is sterilized separately by filtration. Moved methanol
+    and Hipolypepton out of empty solution wrappers, corrected liquid quantities,
+    and marked the NBRC formula as curated.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nbrc_316_score15.py
+  action: LINKED_NBRC_316_METHYLOBACTERIUM_VARIANT
+  source: https://togomedium.org/medium/M1529; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=316
+  notes: Linked NBRC Medium 316 as a substituted-component Methylobacterium Medium
+    variant.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nbrc_351_score15.py
+  action: LINKED_NBRC_351_METHYLOBACTERIUM_VARIANT
+  source: https://togomedium.org/medium/M1552; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=351
+  notes: Linked NBRC Medium 351 as a substituted-component Methylobacterium Medium
+    variant.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nbrc_802_score15.py
+  action: LINKED_NBRC_802_METHYLOBACTERIUM_VARIANT
+  source: https://togomedium.org/medium/M1603; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=802
+  notes: Linked NBRC Medium 802 as an omitted-component Methylobacterium Medium variant.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nbrc_841_score15.py
+  action: LINKED_NBRC_841_METHYLOBACTERIUM_VARIANT
+  source: https://togomedium.org/medium/M1638; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=841
+  notes: Linked NBRC Medium 841 as a kanamycin-stock Methylobacterium Medium variant.
 variant_children:
 - path: data/normalized_yaml/bacterial/togo_medium_m1552.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
   id: CultureMech:008101
   name: togo_medium_m1552
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: Substitutes 30 mg/L separately filter-sterilized N-Acetyl glucosamine for
+    methanol.
 - path: data/normalized_yaml/bacterial/togo_medium_m1603.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: OMITTED_COMPONENT_VARIANT
   id: CultureMech:008156
   name: togo_medium_m1603
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: Omits the 5 ml/L methanol supplement from TOGO M1553.
 - path: data/normalized_yaml/bacterial/togo_medium_m1529.yaml
-  relationship: CONCENTRATION_VARIANT
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
   id: CultureMech:008075
   name: togo_medium_m1529
-  notes: MgSO4·7H2O decreased from 1 g/L to 0.5 g/L while the TOGO Methylobacterium
-    medium formulation remains unchanged.
+  notes: Substitutes 10 g/L separately autoclaved Na2CO3 for methanol and decreases
+    MgSO4·7H2O from 1 g/L to 0.5 g/L.
+- path: data/normalized_yaml/bacterial/togo_medium_m1638.yaml
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  id: CultureMech:008193
+  name: togo_medium_m1638
+  notes: Substitutes 100 ml/L filter-sterilized 250 ug/ml Kanamycin sulfate solution
+    for methanol and 100 ml/L water.
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Sterilize methanol separately by filtration.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1553
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=352

@@ -6,11 +6,22 @@ description: 270. NBRC 268.
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: SOLID_AGAR
+ph_range:
+  min: 7.0
+  max: 7.4
+media_term:
+  preferred_term: NBRC Medium 268
+  term:
+    id: nbrc.medium:268
+    label: NBRC Medium 268
 ingredients:
 - preferred_term: Soluble starch
   concentration:
     value: '10'
     unit: G_PER_L
+  term:
+    id: CHEBI:28017
+    label: Starch
 - preferred_term: K2HPO4 (anhydrous base)
   concentration:
     value: '1'
@@ -55,16 +66,7 @@ ingredients:
   term:
     id: CHEBI:15377
     label: water
-preparation_steps:
-- step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
-- step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+preparation_steps: []
 curation_history:
 - timestamp: '2026-02-20T00:22:35.945442Z'
   curator: nbrc-import
@@ -102,6 +104,12 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 5 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=268
+  notes: Preserved the recovered NBRC Medium 268 composition table.
 solutions:
 - preferred_term: Trace salts solution
   composition:
@@ -109,6 +117,9 @@ solutions:
     concentration:
       value: '0.1'
       unit: G_PER_L
+    term:
+      id: CHEBI:75836
+      label: FeSO4 x 7 H2O
   - preferred_term: MnCl2·4H2O
     concentration:
       value: '0.1'
@@ -117,6 +128,9 @@ solutions:
     concentration:
       value: '0.1'
       unit: G_PER_L
+    term:
+      id: CHEBI:32312
+      label: ZnSO4 x 7 H2O
   - preferred_term: Distilled water
     concentration:
       value: '100'
@@ -125,4 +139,14 @@ solutions:
       id: CHEBI:15377
       label: water
   name: Trace salts solution
-notes: The unadjusted pH should be 7.0 - 7.4
+notes: 'Source: NBRC Medium 268 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=268
+
+
+  The NBRC Inorganic Salts Starch Agar table lists ISP Medium No.4 with a nested trace
+  salts solution and an unadjusted pH range of 7.0 to 7.4.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=268

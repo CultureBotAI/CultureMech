@@ -11,40 +11,83 @@ media_term:
   term:
     id: mediadive.medium:J610
     label: SPHAEROTILUS MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=610'
+notes: JCM Medium 610 Sphaerotilus Medium lists 0.5 g Tryptone (BD-Difco), 1.0 g Glycerol,
+  0.1 g Yeast extract (BD-Difco), 10.0 g Agar if needed, and 1.0 L Distilled water,
+  adjusted to pH 7.0.
 ingredients:
-- preferred_term: Tryptone
+- preferred_term: Tryptone (BD-Difco)
   concentration:
     value: '0.5'
     unit: G_PER_L
+  source: MediaDive J610 / JCM Medium 610
+  notes: MediaDive J610 / JCM Medium 610 lists 0.5 g/L Tryptone (BD-Difco).
+  term:
+    id: MICRO:0000182
+    label: Tryptone
+  nutritional_roles:
+  - NITROGEN_SOURCE
 - preferred_term: Glycerol
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: MediaDive J610 / JCM Medium 610
+  notes: MediaDive J610 / JCM Medium 610 lists 1.0 g/L Glycerol.
   term:
     id: CHEBI:17754
     label: glycerol
-  concentration:
-    value: '1'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
     label: glycerol
-- preferred_term: Yeast extract
+  nutritional_roles:
+  - CARBON_SOURCE
+- preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: Agar
+  source: MediaDive J610 / JCM Medium 610
+  notes: MediaDive J610 / JCM Medium 610 lists 0.1 g/L Yeast extract (BD-Difco).
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: MediaDive J610 / JCM Medium 610
+  notes: MediaDive J610 / JCM Medium 610 lists 10 g/L Agar if needed.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '10'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: MediaDive J610 / JCM Medium 610
+  notes: MediaDive J610 / JCM Medium 610 lists 1.0 L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
   description: Adjust pH to 7.0.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: JCM's default instruction is to autoclave media at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -71,3 +114,23 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m618_score15.py
+  action: RESOLVED_JCM_610_SPHAEROTILUS
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=610; https://mediadive.dsmz.de/medium/J610
+  notes: Restored the JCM Medium 610 distilled-water component omitted by the MediaDive
+    import, grounded tryptone and yeast extract, added JCM autoclave metadata, and
+    linked the TOGO M618 source duplicate.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=610
+- reference: https://mediadive.dsmz.de/medium/J610
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M618_Sphaerotilus_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010017
+  name: sphaerotilus_medium
+  notes: TOGO M618 imports the same JCM Medium 610 Sphaerotilus Medium formulation
+    represented by MediaDive J610.

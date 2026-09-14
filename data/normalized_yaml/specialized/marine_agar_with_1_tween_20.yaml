@@ -10,35 +10,31 @@ media_term:
   term:
     id: mediadive.medium:J768
     label: MARINE AGAR WITH 1% TWEEN 20
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=768'
+notes: JCM Medium 768 defines Marine Agar with 1% Tween 20 as 1 L of JCM Medium 118
+  Marine Agar 2216 plus 10 g/L Tween 20.
 ingredients:
-- preferred_term: Marine agar 2216
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
 - preferred_term: Tween 20
-  term:
-    id: CHEBI:53424
-    label: polysorbate 20
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000804
-    label: Tween 20
+  source: JCM Medium 768
+  notes: Adds 10 g/L Tween 20 to JCM Medium 118 Marine Agar 2216.
+  term:
+    id: CHEBI:53424
+    label: polysorbate 20
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53424
+    label: polysorbate 20
+  physicochemical_roles:
+  - SURFACTANT
 applications:
 - Microbial cultivation
 curation_history:
 - timestamp: '2026-06-14T05:58:58.561437+00:00'
   curator: idnf-grounding-fix-v1.0
   action: Fixed ID_NOT_FOUND term groundings
-  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
+  notes: Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI,
+    0 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-26T17:53:17.541357Z'
   curator: mediadive-import
   action: Imported from MediaDive
@@ -62,3 +58,40 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_marine_agar_score20.py
+  action: RESOLVED_JCM_MARINE_AGAR_SCORE20
+  changes: Resolved score-20 JCM Marine Agar 2216 additive wrapper
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=768; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=118
+  notes: Adds 10 g/L Tween 20 to JCM Medium 118 Marine Agar 2216.
+solutions:
+- preferred_term: Marine agar 2216
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  notes: Adds 10 g/L Tween 20 to JCM Medium 118 Marine Agar 2216.
+  culturemech_term:
+    id: CultureMech:015393
+    label: Marine Agar 2216
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adds 10 g/L Tween 20 to JCM Medium 118 Marine Agar 2216.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+parent_media:
+  path: data/normalized_yaml/specialized/marine_agar_2216.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:015393
+  name: marine_agar_2216
+  notes: Adds 10 g/L Tween 20 to JCM Medium 118 Marine Agar 2216.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adds 10 g/L Tween 20 to JCM Medium 118 Marine Agar 2216.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=768
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=118

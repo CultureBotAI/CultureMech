@@ -5,17 +5,28 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
-ingredients: []
+ingredients:
+- preferred_term: Sterilized natural seawater
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: NBRC Medium 985 / TOGO Medium M1770
+  notes: NBRC Medium 985 and TOGO M1770 list sterilized natural seawater without specifying
+    an amount.
+- preferred_term: Porphyra thalli
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: NBRC Medium 985 / TOGO Medium M1770
+  notes: NBRC Medium 985 and TOGO M1770 list Porphyra thalli without specifying an
+    amount.
 media_term:
   preferred_term: TOGO Medium M1770
   term:
     id: TOGO:M1770
     label: Seawater with Porphyra
-notes: 'Source: https://togomedium.org/medium/M1770
-
-  Original source: NBRC - NBRC_M985
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=985'
+notes: NBRC Medium 985 and TOGO M1770 record sterilized natural seawater with Porphyra
+  thalli; the sources do not disclose the Porphyra amount or any seawater chemistry.
 applications:
 - Microbial cultivation
 curation_history:
@@ -42,5 +53,21 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_nbrc_score35.py
+  action: RESOLVED_JCM_NBRC_SCORE35_GRAPH
+  changes: Resolved score-35 JCM/NBRC opaque medium graph
+  source: https://togomedium.org/medium/M1770; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=985
+  notes: NBRC Medium 985 and TOGO M1770 record sterilized natural seawater with Porphyra
+    thalli; the sources do not disclose the Porphyra amount or any seawater chemistry.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_unmapped_ingredients
+salinity: marine (natural seawater)
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use sterilized natural seawater with Porphyra thalli.
+references:
+- reference: https://togomedium.org/medium/M1770
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=985

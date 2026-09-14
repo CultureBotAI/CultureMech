@@ -4,139 +4,317 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: A+ Medium
+  term:
+    id: UTEX:a-plus-medium
+    label: A+ Medium
+salinity: 18 ppt
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
+- preferred_term: dH2O
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: UTEX starts the 1 L A+ liquid recipe with approximately 900 mL dH2O.
 - preferred_term: NaCl
   concentration:
     value: '0.308'
     unit: MOLAR
-  notes: 'UTEX lists: amount 18 g/L; final 0.308 M'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: S271-500
-- preferred_term: MgSO4•7H2O
+  notes: UTEX lists 18 g/L NaCl, for 0.308 M final.
+  physicochemical_roles:
+  - OSMOTIC_AGENT
+- preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.02'
     unit: MOLAR
-  notes: 'UTEX lists: amount 5 g/L; final 0.02 M'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: '230391'
-- preferred_term: Na2EDTA•2H2O
+  notes: UTEX lists 5 g/L MgSO4 x 7 H2O, for 0.02 M final.
+  nutritional_roles:
+  - SULFUR_SOURCE
+  - TRACE_ELEMENT
+- preferred_term: Na2EDTA x 2 H2O
   concentration:
     value: '0.08'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 0.3 g/100 mL; final 0.08 mM'
+  term:
+    id: CHEBI:64758
+    label: EDTA disodium salt dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64758
+    label: EDTA disodium salt dihydrate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: ED255
+  notes: UTEX adds 10 mL/L of a 0.3 g/100 mL stock, for 0.08 mM final.
+  physicochemical_roles:
+  - CHELATOR
 - preferred_term: KCl
   concentration:
     value: '8.05'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 6 g/100 mL; final 8.05 mM'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: P 217
-- preferred_term: CaCl2•2H2O
+  notes: UTEX adds 10 mL/L of a 6 g/100 mL stock, for 8.05 mM final.
+- preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '2.52'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 3.7 g/100 mL; final 2.52 mM'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: C-3881
+  notes: UTEX adds 10 mL/L of a 3.7 g/100 mL stock, for 2.52 mM final.
 - preferred_term: NaNO3
   concentration:
     value: '11.8'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 10 g/100 mL; final 11.8 mM'
+  term:
+    id: CHEBI:63005
+    label: sodium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: BP360-500
+  notes: UTEX adds 10 mL/L of a 10 g/100 mL stock, for 11.8 mM final.
+  nutritional_roles:
+  - NITROGEN_SOURCE
 - preferred_term: KH2PO4
   concentration:
     value: '0.37'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 0.5 g/100 mL; final 0.37 mM'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: P 0662
-- preferred_term: Trizma Base pH 8.2
+  notes: UTEX adds 10 mL/L of a 0.5 g/100 mL stock, for 0.37 mM final.
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: Trizma Base
   concentration:
     value: '8.26'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 10 g/100 mL; final 8.26 mM'
-- preferred_term: A+ Trace Components (sterilize before adding)
+  term:
+    id: CHEBI:9754
+    label: tris
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
+    label: tris
+  notes: UTEX adds 10 mL/L of a 10 g/100 mL Trizma Base stock adjusted to pH 8.2,
+    for 8.26 mM final.
+  physicochemical_roles:
+  - BUFFER
+solutions:
+- preferred_term: A+ Trace Components
   concentration:
     value: '10'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 10 mL/L'
-- preferred_term: Sodium Thiosulfate Pentahydrate (agar media only,sterile)
-  concentration:
-    value: '1'
-    unit: MICROMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 24.819 g/100 mL; final 1 µM'
-  supplier_catalog:
-    supplier_name: Baker
-    catalog_number: '3946'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX brings A+ Trace Components to 1 L with dH2O.
+  - preferred_term: H3BO3
+    concentration:
+      value: '3.43'
+      unit: G_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+    supplier_catalog:
+      supplier_name: Baker
+      catalog_number: 0084
+    notes: UTEX lists 3.43 g/L H3BO3 in A+ Trace Components.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: ZnCl2
+    concentration:
+      value: '0.0315'
+      unit: G_PER_L
+    term:
+      id: CHEBI:49976
+      label: zinc chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49976
+      label: zinc chloride
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: Z 0152
+    notes: UTEX lists 0.0315 g/L ZnCl2 in A+ Trace Components.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: MoO3
+    concentration:
+      value: '0.003'
+      unit: G_PER_L
+    term:
+      id: CHEBI:30627
+      label: molybdenum trioxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30627
+      label: molybdenum trioxide
+    notes: UTEX lists 0.003 g/L MoO3 in A+ Trace Components.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.0004'
+      unit: G_PER_L
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: V 6629
+    notes: UTEX lists 0.0004 g/L cyanocobalamin in A+ Trace Components.
+  - preferred_term: FeCl3 x 6 H2O
+    concentration:
+      value: '0.14'
+      unit: MILLIMOLAR
+    term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: F 1513
+    notes: UTEX adds 1 mL/L of a 3.89 g/100 mL stock, for 0.14 mM FeCl3 x 6 H2O in
+      A+ Trace Components.
+    nutritional_roles:
+    - IRON_SOURCE
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '0.22'
+      unit: MILLIMOLAR
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    supplier_catalog:
+      supplier_name: Baker
+      catalog_number: '2540'
+    notes: UTEX adds 1 mL/L of a 4.3 g/100 mL stock, for 0.22 mM MnCl2 x 4 H2O in
+      A+ Trace Components.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CuSO4 x 5 H2O
+    concentration:
+      value: '0.00012'
+      unit: MILLIMOLAR
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    supplier_catalog:
+      supplier_name: MCIB
+      catalog_number: 3M11
+    notes: UTEX adds 1 mL/L of a 0.003 g/100 mL stock, for 0.00012 mM CuSO4 x 5 H2O
+      in A+ Trace Components.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.0005'
+      unit: MILLIMOLAR
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: C 3169
+    notes: UTEX adds 1 mL/L of a 0.012 g/100 mL stock, for 0.0005 mM CoCl2 x 6 H2O
+      in A+ Trace Components.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  notes: UTEX adds 10 mL/L filter-sterilized A+ Trace Components.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: To approximately 900 mL dH2O, add NaCl, MgSO4 x 7 H2O, Na2EDTA x 2
+    H2O, KCl, CaCl2 x 2 H2O, NaNO3, KH2PO4, and Trizma Base in the UTEX order while
+    stirring.
 - step_number: 2
   action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  description: Bring the total volume to 1 L with dH2O.
 - step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
+  action: AUTOCLAVE
+  description: Cover and autoclave the medium.
 - step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
+  action: FILTER_STERILIZE
+  description: Add filter-sterilized A+ Trace Components.
 - step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
-notes: A+ MediumDirectionsFor 1 L TotalLiquid media:To approximately 900 mL of dH2O
-  add the first 8 components in the order specified while stirring continuously.Bring
-  total volume to 1 L with dH2O.Cover and autoclave medium.Add filter sterilized A+
-  Trace Components.Allow to cool then store at refrigerator temperature.Agar media:To
-  approximately 390 mL of dH2O add the first 8 components in the order specified while
-  stirring continuously.Bring total volume to 500 mL with dH2O.In a separate container
-  add 15 g of agar to 500 mL of dH2O (Final 1.5% w/v).Cover and autoclave both solutions.In
-  a water bath allow both solutions to cool to 45-50°C.Add sterile Sodium Thiosulfate
-  to agar solution and mix well.Add filter sterilized A+ Trace Components.Combine
-  both agar and liquid solutions, mix well. Note the agar can solidify quickly.Allow
-  to cool then store at refrigerator temperature.#ComponentAmountStock Solution ConcentrationFinal
-  Concentration1NaCl(Fisher S271-500)18 g/L0.308 M2MgSO4•7H2O(Sigma 230391)5 g/L0.02
-  M3Na2EDTA•2H2O(Sigma ED255)10 mL/L0.3 g/100 mL0.08 mM4KCl(Fisher P 217)10 mL/L6
-  g/100 mL8.05 mM5CaCl2•2H2O(Sigma C-3881)10 mL/L3.7 g/100 mL2.52 mM6NaNO3(Fisher
-  BP360-500)10 mL/L10 g/100 mL11.8 mM7KH2PO4(Sigma P 0662)10 mL/L0.5 g/100 mL0.37
-  mM8Trizma Base pH 8.210 mL/L10 g/100 mL8.26 mM9A+ Trace Components (sterilize before
-  adding)10 mL/L10Sodium Thiosulfate Pentahydrate (agar media only,sterile)(Baker
-  3946)1 mL/L24.819 g/100 mL1 µM
+  action: STORE
+  description: Allow to cool, then store at refrigerator temperature.
+notes: UTEX prepares liquid A+ Medium by adding NaCl, MgSO4 x 7 H2O, Na2EDTA x 2 H2O,
+  KCl, CaCl2 x 2 H2O, NaNO3, KH2PO4, and Trizma Base to dH2O, autoclaving, and then
+  adding filter-sterilized A+ Trace Components.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -174,7 +352,19 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_utex_a_bg11_score30.py
+  action: RESOLVED_UTEX_A_BG11_SCORE30
+  changes: Grounded score-30 UTEX A+, BG-11, and silicated Soil Extract
+  source: https://utex.org/products/a-plus-medium
+  notes: UTEX prepares liquid A+ Medium by adding NaCl, MgSO4 x 7 H2O, Na2EDTA x 2
+    H2O, KCl, CaCl2 x 2 H2O, NaNO3, KH2PO4, and Trizma Base to dH2O, autoclaving,
+    and then adding filter-sterilized A+ Trace Components.
 references:
 - reference: UTEX:a-plus-medium
 - reference: https://utex.org/products/a-plus-medium
+- reference: https://utex.org/products/a-plus-trace-components
 original_name: A+ Medium
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

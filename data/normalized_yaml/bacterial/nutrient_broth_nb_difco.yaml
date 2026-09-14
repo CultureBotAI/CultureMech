@@ -2,33 +2,13 @@ id: CultureMech:008787
 name: nutrient_broth_nb_difco
 original_name: Nutrient broth (NB) (Difco)
 category: bacterial
-medium_type: COMPLEX
-composition_type: UNDEFINED
-physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Nutrient broth (NB) (Difco)
-  concentration:
-    value: '8'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
 media_term:
   preferred_term: TOGO Medium M2194
   term:
     id: TOGO:M2194
     label: Nutrient broth (NB) (Difco)
-notes: 'Source: https://togomedium.org/medium/M2194'
+notes: TOGO M2194 lists 8 g Nutrient broth (NB) from Difco in one liter of distilled
+  water at pH 6.8 +/- 0.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -59,3 +39,50 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_condition_wrappers_score20.py
+  action: RESOLVED_TOGO_CONDITION_WRAPPERS_SCORE20
+  changes: Resolved score-20 TOGO product and condition wrapper
+  source: https://togomedium.org/medium/M2194
+  notes: TOGO M2194 lists 8 g Nutrient broth (NB) from Difco in one liter of distilled
+    water at pH 6.8 +/- 0.2.
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_range:
+  min: 6.6
+  max: 7.0
+temperature_value: 30.0
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2194
+  notes: TOGO M2194 lists one liter of distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Nutrient broth (NB) (Difco)
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  source: TOGO M2194
+  notes: TOGO M2194 lists 8 G_PER_L of Nutrient broth (NB) (Difco).
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve 8 g Nutrient broth (NB) (Difco) in one liter of distilled
+    water.
+- step_number: 2
+  action: MIX
+  description: Cultivate at 30 C.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2194

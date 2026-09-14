@@ -6,25 +6,171 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.5
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 3045 | DSMZ Medium: 3045
-  (mediadive.medium:3045) | Aerobic: No | SubMedium: Yes'
+notes: KOMODO Medium 3045 is a SubMedium import whose label points to the Salt base
+  solution printed inside DSMZ Medium 1189, not to the local unrelated mediadive.solution:3045
+  Solution G record. DSMZ Medium 1189 lists eleven salt rows, 1000.00 ml distilled
+  water, and a final adjustment to pH 2.5 with 10 N H2SO4 for this salt base solution.
 media_term:
   preferred_term: KOMODO Medium 3045
   term:
     id: komodo.medium:3045
     label: salt base solution (medium 1189)
 ingredients:
-- preferred_term: H2SO4
-  notes: Extracted from recipe notes (pH buffer)
-  data_quality_flags:
-  - extracted_from_notes
+- preferred_term: (NH4)2SO4
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '1.30'
+    unit: G_PER_L
+  source: DSMZ Medium 1189
+  notes: DSMZ Medium 1189 Salt base solution lists 1.30 g (NH4)2 SO4.
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
   mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.28'
+    unit: G_PER_L
+  source: DSMZ Medium 1189
+  notes: DSMZ Medium 1189 Salt base solution lists 0.28 g KH2PO4.
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  source: DSMZ Medium 1189
+  notes: DSMZ Medium 1189 Salt base solution lists 0.25 g MgSO4 x 7 H2O.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+  source: DSMZ Medium 1189
+  notes: DSMZ Medium 1189 Salt base solution lists 0.07 g CaCl2 x 2 H2O.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '1.80'
+    unit: MG_PER_L
+  source: DSMZ Medium 1189
+  notes: DSMZ Medium 1189 Salt base solution lists 1.80 mg MnCl2 x 4 H2O.
+  term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '4.50'
+    unit: MG_PER_L
+  source: DSMZ Medium 1189
+  notes: DSMZ Medium 1189 Salt base solution lists 4.50 mg Na2B4O7 x 10 H2O.
+  term:
+    id: CHEBI:131366
+    label: disodium tetraborate decahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131366
+    label: disodium tetraborate decahydrate
+- preferred_term: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.22'
+    unit: G_PER_L
+  source: DSMZ Medium 1189
+  notes: DSMZ Medium 1189 Salt base solution lists 0.22 g ZnSO4 x 7 H2O.
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: CuCl2 x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  source: DSMZ Medium 1189
+  notes: DSMZ Medium 1189 Salt base solution lists 0.05 mg CuCl2 x 2 H2O.
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: MG_PER_L
+  source: DSMZ Medium 1189
+  notes: DSMZ Medium 1189 Salt base solution lists 0.03 mg Na2MoO4 x 2 H2O.
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: VOSO4 x n H2O
+  concentration:
+    value: '0.03'
+    unit: MG_PER_L
+  source: DSMZ Medium 1189
+  notes: DSMZ Medium 1189 Salt base solution lists 0.03 mg VOSO4 x n H2O.
+  term:
+    id: CHEBI:87020
+    label: vanadyl sulfate hydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:87020
+    label: vanadyl sulfate hydrate
+- preferred_term: CoSO4 x 7 H2O
+  concentration:
+    value: '0.01'
+    unit: MG_PER_L
+  source: DSMZ Medium 1189
+  notes: DSMZ Medium 1189 Salt base solution lists 0.01 mg CoSO4 x 7 H2O.
+  term:
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 1189
+  notes: DSMZ Medium 1189 Salt base solution lists 1000.00 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: H2SO4
+  concentration:
+    value: 10 N
+    unit: VARIABLE
+  source: DSMZ Medium 1189
+  notes: DSMZ Medium 1189 Salt base solution instructs adjustment to pH 2.5 with 10
+    N H2SO4; normality is retained verbatim because the schema has no normality unit.
+  term:
     id: CHEBI:26836
     label: sulfuric acid
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:26836
     label: sulfuric acid
 applications:
@@ -61,3 +207,31 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_komodo_3045_salt_base_1189_score15.py
+  action: RESOLVED_KOMODO_3045_SALT_BASE_1189_SCORE15
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1189.pdf
+  notes: KOMODO Medium 3045 is a SubMedium import whose label points to the Salt base
+    solution printed inside DSMZ Medium 1189, not to the local unrelated mediadive.solution:3045
+    Solution G record. DSMZ Medium 1189 lists eleven salt rows, 1000.00 ml distilled
+    water, and a final adjustment to pH 2.5 with 10 N H2SO4 for this salt base solution.
+    Replaced the imported H2SO4-only pH-buffer stub with the complete salt-base formula,
+    explicit water, a grounded 10 N H2SO4 pH-adjustment row, DSMZ preparation steps,
+    and an AUTOCLAVE sterilization annotation.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve the salt base components in 1000.0 ml distilled water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust to pH 2.5 with 10 N H2SO4.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave the salt base solution separately.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1189.pdf

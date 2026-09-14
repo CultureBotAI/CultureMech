@@ -5,24 +5,39 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+temperature_value: 37.0
 ingredients:
 - preferred_term: Todd Hewitt broth (Becton, Dickinson and Company, Franklin Lakes,
     NJ, USA)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2963
+  notes: TOGO M2963 lists the opaque Todd Hewitt broth base for this formulation.
+  culturemech_term:
+    id: CultureMech:008070
+    label: Todd Hewitt Medium
 - preferred_term: yeast extract (Nacalai Tesque, Kyoto, Japan)
   concentration:
     value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-- preferred_term: CO2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
+    unit: PERCENT_W_V
+  source: TOGO M2963
+  notes: TOGO M2963 lists 1% w/v yeast extract from Nacalai Tesque.
   term:
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: CO2
+  concentration:
+    value: '5'
+    unit: PERCENT_V_V
+  source: TOGO M2963
+  notes: TOGO M2963 lists 5% CO2 as the incubation atmosphere.
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term:
     id: CHEBI:16526
     label: carbon dioxide
 media_term:
@@ -30,7 +45,9 @@ media_term:
   term:
     id: TOGO:M2963
     label: Todd Hewitt broth (supplemented with 1% (wt/vol) yeast extract)
-notes: 'Source: https://togomedium.org/medium/M2963'
+notes: TOGO M2963 lists Todd Hewitt broth supplemented with 1% w/v yeast extract and
+  5% CO2. Oogai et al. cultured Aggregatibacter actinomycetemcomitans strains in this
+  THY broth at 37 C under 5% CO2 without shaking.
 applications:
 - Microbial cultivation
 curation_history:
@@ -56,3 +73,34 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_todd_hewitt_score15.py
+  action: RESOLVED_TOGO_TODD_HEWITT_SCORE15
+  source: https://togomedium.org/medium/M2963; DOI:10.1093/dnares/dsx050
+  notes: Curated TOGO:M2963 from TOGO and Oogai et al. 2018; corrected imported percentage
+    units, added 37 C cultivation evidence, and linked opaque Todd Hewitt broth to
+    a curated CultureMech recipe.
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: Aggregatibacter actinomycetemcomitans
+  term:
+    id: NCBITaxon:714
+    label: Aggregatibacter actinomycetemcomitans
+  evidence:
+  - reference: DOI:10.1093/dnares/dsx050
+    supports: SUPPORT
+    explanation: Oogai et al. report that five Aggregatibacter actinomycetemcomitans
+      strains were grown in THY broth at 37 C under 5% CO2 without shaking.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Supplement Todd Hewitt broth with 1% w/v yeast extract.
+- step_number: 2
+  action: MIX
+  description: Cultivate at 37 C under 5% CO2 without shaking.
+references:
+- reference: https://togomedium.org/medium/M2963
+- reference: DOI:10.1093/dnares/dsx050
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

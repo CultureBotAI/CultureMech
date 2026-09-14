@@ -1,17 +1,26 @@
 id: CultureMech:007461
-name: '1170'
-original_name: '1170'
+name: Methanohalobium medium
+original_name: Methanohalobium medium
 category: bacterial
 description: 1170. NBRC 1169.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: NBRC Medium 1169
+  term:
+    id: nbrc.medium:1169
+    label: NBRC Medium 1169
+ph_value: 7.4
 ingredients:
 - preferred_term: NH4Cl
   concentration:
     value: '0.33'
     unit: G_PER_L
   term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
     id: CHEBI:31206
     label: ammonium chloride
 - preferred_term: KH2PO4
@@ -21,6 +30,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
 - preferred_term: KCl
   concentration:
     value: '0.33'
@@ -28,18 +40,39 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.33'
     unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '0.33'
     unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '4'
     unit: G_PER_L
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '250'
@@ -47,14 +80,26 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Coenzyme M
   concentration:
     value: '0.142'
     unit: G_PER_L
+  term:
+    id: CHEBI:17905
+    label: coenzyme M
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17905
+    label: coenzyme M
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Vitamin solution*
   concentration:
     value: '10'
@@ -70,11 +115,17 @@ ingredients:
   term:
     id: CHEBI:64700
     label: trimethylamine hydrochloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64700
+    label: trimethylamine hydrochloride
 - preferred_term: Resazurin
   concentration:
     value: '1'
     unit: MG_PER_L
   term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
     id: CHEBI:8806
     label: Resazurin
 - preferred_term: NaHCO3
@@ -84,10 +135,19 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Na2S·9H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -95,16 +155,49 @@ ingredients:
   term:
     id: CHEBI:15377
     label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Na2CO3
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: NBRC Medium 1169
+  notes: NBRC Medium 1169 adjusts the final medium to pH 7.4 with filter-sterile 5%
+    Na2CO3, approximately 0.5 g/L final Na2CO3.
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  description: Mix all ingredients except vitamin solution, trimethylamine-HCl, NaHCO3,
+    and Na2S·9H2O.
 - step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
+  action: AUTOCLAVE
+  description: Autoclave the medium under an N2/CO2 (80/20) atmosphere.
 - step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: AUTOCLAVE
+  description: Separately autoclave Na2S·9H2O as a 5% solution under N2.
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Filter-sterilize the vitamin solution, 50% trimethylamine-HCl solution,
+    5% NaHCO3 solution, and 5% Na2CO3 solution.
+- step_number: 5
+  action: MIX
+  description: Prior to inoculation, add the filter-sterile vitamin, trimethylamine-HCl,
+    and NaHCO3 solutions and the Na2S·9H2O solution.
+- step_number: 6
+  action: ADJUST_PH
+  description: Adjust pH of the medium to 7.4 with filter-sterile 5% Na2CO3 solution,
+    approximately 0.5 g/L Na2CO3 final concentration.
+- step_number: 7
+  action: ADJUST_PH
+  description: For the trace elements solution, first dissolve NTA, adjust pH to 6.5
+    with NaOH, then add minerals; final pH is 7.0.
 curation_history:
 - timestamp: '2026-02-20T00:22:36.029597Z'
   curator: nbrc-import
@@ -147,6 +240,14 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_nbrc_1170_score15.py
+  action: RESOLVED_NBRC_1170_SCORE15
+  changes: Grounded recovered NBRC Medium 1169 Methanohalobium formula
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1169
+  notes: Added the NBRC Medium 1169 source term and official title, grounded the recovered
+    Methanohalobium medium formula and stocks, recorded pH 7.4, and converted anaerobic
+    preparation instructions into structured steps.
 solutions:
 - preferred_term: Vitamin solution
   composition:
@@ -157,6 +258,9 @@ solutions:
     term:
       id: CHEBI:15956
       label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
   - preferred_term: Folic acid
     concentration:
       value: '2'
@@ -164,15 +268,27 @@ solutions:
     term:
       id: CHEBI:27470
       label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
   - preferred_term: Pyridoxine-HCl
     concentration:
       value: '10'
       unit: MG_PER_L
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
   - preferred_term: Thiamine-HCl
     concentration:
       value: '5'
       unit: MG_PER_L
     term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
       id: CHEBI:49105
       label: thiamine hydrochloride
   - preferred_term: Riboflavin
@@ -182,6 +298,9 @@ solutions:
     term:
       id: CHEBI:17015
       label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
   - preferred_term: Nicotinic acid
     concentration:
       value: '5'
@@ -189,15 +308,27 @@ solutions:
     term:
       id: CHEBI:15940
       label: nicotinic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: nicotinic acid
   - preferred_term: Ca-pantothenate
     concentration:
       value: '5'
       unit: MG_PER_L
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
   - preferred_term: p-Aminobenzoic acid
     concentration:
       value: '1'
       unit: MG_PER_L
     term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
       id: CHEBI:30753
       label: 4-aminobenzoic acid
   - preferred_term: Vitamin B12
@@ -207,11 +338,17 @@ solutions:
     term:
       id: CHEBI:176843
       label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
   - preferred_term: Distilled water
     concentration:
       value: '1'
       unit: L
     term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
       id: CHEBI:15377
       label: water
   name: Vitamin solution
@@ -221,22 +358,52 @@ solutions:
     concentration:
       value: '12.8'
       unit: G_PER_L
+    term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
   - preferred_term: FeCl3·6H2O
     concentration:
       value: '1.35'
       unit: G_PER_L
+    term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
   - preferred_term: MnCl2·4H2O
     concentration:
       value: '0.1'
       unit: G_PER_L
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
   - preferred_term: CoCl2·6H2O
     concentration:
       value: '0.024'
       unit: G_PER_L
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
   - preferred_term: CaCl2·2H2O
     concentration:
       value: '0.1'
       unit: G_PER_L
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
   - preferred_term: ZnCl2
     concentration:
       value: '0.1'
@@ -244,10 +411,19 @@ solutions:
     term:
       id: CHEBI:49976
       label: zinc dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49976
+      label: zinc dichloride
   - preferred_term: CuCl2·2H2O
     concentration:
       value: '0.025'
       unit: G_PER_L
+    term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
   - preferred_term: H3BO3
     concentration:
       value: '0.01'
@@ -255,10 +431,19 @@ solutions:
     term:
       id: CHEBI:33118
       label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
   - preferred_term: Na2MoO4·2H2O
     concentration:
       value: '0.024'
       unit: G_PER_L
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
   - preferred_term: NaCl
     concentration:
       value: '1'
@@ -266,10 +451,19 @@ solutions:
     term:
       id: CHEBI:26710
       label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
   - preferred_term: NiCl2·6H2O
     concentration:
       value: '0.12'
       unit: G_PER_L
+    term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
   - preferred_term: Distilled water
     concentration:
       value: '1'
@@ -277,11 +471,34 @@ solutions:
     term:
       id: CHEBI:15377
       label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: NaOH
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: NBRC Medium 1169
+    notes: NBRC Medium 1169 uses NaOH to adjust the trace elements solution to pH
+      6.5 before mineral addition.
+    term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32145
+      label: sodium hydroxide
   name: Trace elements solution
-notes: Mix ingredients except for vitamin solution, trimethylamine-HCl, NaHCO3 and
-  Na2S·9H2O, and autoclave under a N2/CO2 atmosphere (80/20). Separately autoclave
-  Na2S·9H2O solution as 5% solution under a N2 atmosphere. Prior to inoculation, add
-  the filter-sterile vitamin, 50% trimethylamine-HCl and 5% NaHCO3 solutions, and
-  Na2S·9H2O. Adjust pH of the medium to 7.4 with filter-sterile 5% Na2CO3 solution
-  (approximately final concentration of Na2CO3 is 0.5 g/L). First dissolve nitrilotriacetic
-  acid and adjust pH to 6.5 with NaOH, and then add minerals. Final pH 7.0.
+notes: 'Source: NBRC Medium 1169 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1169
+
+
+  NBRC lists Methanohalobium medium with mineral salts, Coenzyme M, Bacto Yeast Extract,
+  vitamin and trace-element stocks, trimethylamine-HCl, NaHCO3, Na2S, Na2CO3 adjustment
+  to pH 7.4, and anaerobic N2/CO2 preparation.'
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1169

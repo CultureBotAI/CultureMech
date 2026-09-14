@@ -11,44 +11,80 @@ media_term:
   term:
     id: mediadive.medium:J569
     label: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH ARTIFICIAL SEAWATER
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=569'
+notes: JCM Medium 569 defines Yeast Extract-Malt Extract Agar (ISP-2) With Artificial
+  Seawater with 4 g yeast extract, 10 g malt extract, 4 g glucose, 15 g agar, and
+  1 L artificial seawater, adjusted to pH 7.3.
 ingredients:
-- preferred_term: Yeast extract
+- preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: '4'
+    value: '4.0'
     unit: G_PER_L
-- preferred_term: Malt extract
+  source: MediaDive J569 / JCM Medium 569
+  notes: MediaDive J569 / JCM Medium 569 lists 4 g/L Yeast extract (BD-Difco).
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Malt extract (BD-Difco)
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
+  source: MediaDive J569 / JCM Medium 569
+  notes: MediaDive J569 / JCM Medium 569 lists 10 g/L Malt extract (BD-Difco).
+  term:
+    id: FOODON:03301056
+    label: malt extract
+  nutritional_roles:
+  - CARBON_SOURCE
+  - NITROGEN_SOURCE
 - preferred_term: Glucose
+  concentration:
+    value: '4.0'
+    unit: G_PER_L
+  source: MediaDive J569 / JCM Medium 569
+  notes: MediaDive J569 / JCM Medium 569 lists 4.0 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
-  concentration:
-    value: '4'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  nutritional_roles:
+  - CARBON_SOURCE
 - preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: MediaDive J569 / JCM Medium 569
+  notes: MediaDive J569 / JCM Medium 569 lists 15.0 g/L Agar.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
-- preferred_term: Sea water
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Artificial seawater
   concentration:
-    value: '1000'
-    unit: G_PER_L
+    value: '1000.0'
+    unit: ML_PER_L
+  source: MediaDive J569 / JCM Medium 569
+  notes: MediaDive J569 / JCM Medium 569 lists 1 L artificial seawater per liter;
+    the artificial seawater mixture is retained without a single-compound ontology
+    grounding.
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
   description: Adjust pH to 7.3.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: JCM's default instruction is to autoclave media at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -76,3 +112,31 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m573_score15.py
+  action: RESOLVED_JCM_569_ISP2_ARTIFICIAL_SEAWATER
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=569; https://mediadive.dsmz.de/medium/J569
+  notes: Corrected the imported artificial-seawater row from a 1000 g/L Sea water
+    placeholder to a 1000 ml/L Artificial seawater input, grounded the yeast extract
+    and malt extract rows, retained Artificial seawater as intentionally unmapped,
+    and linked the TOGO M573 and TOGO M1804 source duplicates.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=569
+- reference: https://mediadive.dsmz.de/medium/J569
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M573_Yeast_Extract-Malt_Extract_Agar_ISP-2_With_Artificial_Seawater.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009969
+  name: yeast_extract_malt_extract_agar_isp_2_with_artificial_seawater
+  notes: TOGO M573 imports the same JCM Medium 569 ISP-2 artificial-seawater formulation
+    represented by MediaDive J569.
+- path: data/normalized_yaml/bacterial/yeast_extract_malt_extract_agar_isp_2_with_artificial_seawater.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008374
+  name: yeast_extract_malt_extract_agar_isp_2_with_artificial_seawater
+  notes: TOGO M1804 imports the same pH 7.3 ISP-2 artificial-seawater formulation
+    from NBRC Medium 1030.

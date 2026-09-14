@@ -11,20 +11,30 @@ media_term:
   term:
     id: komodo.medium:191.4
     label: For DSM 25939
-notes: 'Source: KOMODO ModelSEED | ID: 191.4 | DSMZ Medium: 191 (mediadive.medium:191)
-  | Aerobic: Yes'
+notes: KOMODO Medium 191.4 states DSMZ Medium 191 provenance and records pH 7.2 for
+  DSM 25939; DSMZ Medium 191 provides the 50.0 g/L corn meal plus 10.0 g/L agar formulation.
 ingredients:
 - preferred_term: Corn meal
   concentration:
-    value: '50'
+    value: '50.0'
     unit: G_PER_L
+  source: DSMZ Medium 191
+  notes: DSMZ Medium 191 blends 50.0 g corn meal in 800 ml distilled water, leaves
+    it overnight in the refrigerator, heats it at 60 C for one hour, filters it, and
+    brings the filtrate to 1 L.
+  term:
+    id: mediadive.compound:2087
+    label: Corn meal
 - preferred_term: Agar
   term:
     id: CHEBI:2509
     label: agar
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
+  source: DSMZ Medium 191
+  notes: DSMZ Medium 191 adds 10.0 g agar after bringing the corn-meal filtrate to
+    1 L and heats to dissolve it before autoclaving.
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
@@ -57,13 +67,47 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_corn_meal_score25.py
+  action: RESOLVED_KOMODO_CORN_MEAL_SCORE25_GRAPH
+  changes: Resolved KOMODO Medium 191.4 Corn Meal Agar recipe
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium191.pdf
+  notes: KOMODO Medium 191.4 states DSMZ Medium 191 provenance and records pH 7.2
+    for DSM 25939; DSMZ Medium 191 provides the 50.0 g/L corn meal plus 10.0 g/L agar
+    formulation.
 kg_microbe_match: mediadive.medium:12
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Blend 50.0 g corn meal in 800 ml distilled water and leave overnight
+    in the refrigerator.
+- step_number: 2
+  action: HEAT
+  description: Heat at 60 C for one hour.
+- step_number: 3
+  action: FILTER
+  description: Filter and bring the volume to 1 L.
+- step_number: 4
+  action: HEAT
+  description: Add 10.0 g agar and heat to dissolve.
+- step_number: 5
+  action: AUTOCLAVE
+  description: Autoclave the completed corn meal agar.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium191.pdf
 parent_media:
-  path: data/normalized_yaml/bacterial/KOMODO_191_CORN_MEAL_AGAR.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:004218
+  path: data/normalized_yaml/bacterial/corn_meal_agar.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:001283
   name: corn_meal_agar
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 191.4 preserves DSMZ Medium 191 components and concentrations
+    but records pH 7.2 for DSM 25939.
+variant_relationship: PH_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 191.4 preserves DSMZ Medium 191 components and concentrations but
+  records pH 7.2 for DSM 25939.

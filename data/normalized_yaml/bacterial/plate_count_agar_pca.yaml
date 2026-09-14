@@ -5,24 +5,36 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.2
 ingredients:
-- preferred_term: Disrilled water
+- preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1.0'
+    unit: L
+  source: TOGO M1930 / NBRC Medium 1197
+  notes: TOGO M1930 / NBRC Medium 1197 lists 1 L water as the solvent; the source
+    label typo 'Disrilled water' is normalized to Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '2.5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M1930 / NBRC Medium 1197
+  notes: TOGO M1930 / NBRC Medium 1197 lists 2.5 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Glucose
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
+  source: TOGO M1930 / NBRC Medium 1197
+  notes: TOGO M1930 / NBRC Medium 1197 lists 1 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
@@ -31,24 +43,37 @@ ingredients:
     label: glucose
 - preferred_term: Agar (if needed)
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M1930 / NBRC Medium 1197
+  notes: TOGO M1930 / NBRC Medium 1197 lists 15 g/L Agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Tryptone
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M1930 / NBRC Medium 1197
+  notes: TOGO M1930 / NBRC Medium 1197 lists 5 g/L Tryptone.
+  term:
+    id: MICRO:0000182
+    label: tryptone
 media_term:
   preferred_term: TOGO Medium M1930
   term:
     id: TOGO:M1930
     label: Plate Count Agar (PCA)
-notes: 'Source: https://togomedium.org/medium/M1930
-
-  Original source: NBRC - NBRC_M1197
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1197'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
+notes: TOGO M1930 imports NBRC Medium 1197 Plate Count Agar (PCA). NBRC 1197 lists
+  5 g tryptone, 2.5 g yeast extract, 1 g glucose, 15 g agar if needed, 1 L water,
+  and pH 7.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -79,4 +104,16 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-kg_microbe_match: mediadive.medium:21
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m1930_plate_count_agar_score15.py
+  action: RESOLVED_TOGO_M1930_PLATE_COUNT_AGAR_SCORE15
+  source: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1930; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1197
+  notes: Corrected NBRC 1197 water from an imported 1 g/L 'Disrilled water' row to
+    1 L distilled water, added pH 7.2, grounded every PCA component, and removed a
+    stale MediaDive Medium 21 match.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1930
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1197

@@ -1,17 +1,26 @@
 id: CultureMech:007486
-name: '310'
-original_name: '310'
+name: Rhamnose Salt Medium
+original_name: Rhamnose Salt Medium
 category: bacterial
 description: 310. NBRC 309.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: NBRC Medium 309
+  term:
+    id: nbrc.medium:309
+    label: NBRC Medium 309
+ph_value: 7.0
 ingredients:
 - preferred_term: K2HPO4
   concentration:
     value: '2.9'
     unit: G_PER_L
   term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
 - preferred_term: KH2PO4
@@ -21,6 +30,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '2'
@@ -28,10 +40,19 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.4'
     unit: G_PER_L
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '30'
@@ -39,14 +60,29 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '3'
     unit: MG_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '1'
     unit: MG_PER_L
+  term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
     value: '3'
@@ -58,11 +94,17 @@ ingredients:
   term:
     id: CHEBI:26546
     label: rhamnose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26546
+    label: rhamnose
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: L
   term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
 preparation_steps:
@@ -109,4 +151,21 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 6 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
-notes: pH 7.0
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_nbrc_310_score15.py
+  action: RESOLVED_NBRC_310_SCORE15
+  changes: Grounded recovered NBRC Medium 309 Rhamnose Salt Medium formula
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=309
+  notes: Added the NBRC Medium 309 source term and official title, structured the
+    final pH, grounded the defined formula rows, and added the official NBRC reference.
+notes: 'Source: NBRC Medium 309 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=309
+
+
+  NBRC lists Rhamnose Salt Medium with K2HPO4, KH2PO4, NH4Cl, MgSO4·7H2O, NaCl, CaCl2·2H2O,
+  FeSO4·7H2O, yeast extract, rhamnose, and distilled water at final pH 7.0.'
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=309

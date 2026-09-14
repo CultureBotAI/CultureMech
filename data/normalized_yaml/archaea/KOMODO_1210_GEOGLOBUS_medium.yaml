@@ -387,16 +387,23 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1210_geoglobus_score10.py
+  action: RESOLVED_KOMODO_1210_GEOGLOBUS_TOPOLOGY
+  changes: Resolved KOMODO Medium 1210 Geoglobus child topology
+  source: KOMODO Medium 1210.1 and DSMZ Medium 1210c
+  notes: Kept the exact-signature DSM 24515 KOMODO strain wrapper and DSMZ Medium
+    1210c duplicate under the KOMODO Medium 1210 Geoglobus base.
 variant_children:
 - path: data/normalized_yaml/bacterial/dsm_24515.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003961
   name: dsm_24515
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 1210.1 applies Geoglobus medium to DSM 24515.
 - path: data/normalized_yaml/bacterial/thermosulfuriphilus_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000668
   name: thermosulfuriphilus_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: DSMZ Medium 1210c has the same 33-ingredient signature as KOMODO Medium 1210.
+data_quality_flags:
+- ingredients_curated

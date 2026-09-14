@@ -11,98 +11,160 @@ media_term:
   term:
     id: mediadive.medium:J363
     label: PY4S AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=363'
+notes: JCM Medium 363 PY4S Agar lists, per liter, 75 ml Salt solution I from JCM Medium
+  133, 75 ml Salt solution II from JCM Medium 133, 10.0 g Trypticase peptone (BD-BBL),
+  5.0 g Yeast extract (BD-Difco), 0.25 g each Glucose, Cellobiose, Maltose, and Soluble
+  starch, 1.0 ml 0.1% resazurin-Na, 2.5 ml 8% Na2CO3, 0.3 g L-Cysteine HCl H2O, 15.0
+  g Bacto agar (BD-Difco), and 850 ml Distilled water. The final pH is 6.7, and the
+  medium is prepared anaerobically and poured into rubber-stopped tubes under oxygen-free
+  N2-CO2 (95:5).
 ingredients:
-- preferred_term: Trypticase peptone
+- preferred_term: Trypticase peptone (BD-BBL)
   concentration:
-    value: '9.96016'
+    value: '10.0'
     unit: G_PER_L
-- preferred_term: Yeast extract
+  source: JCM Medium 363
+  notes: JCM Medium 363 lists 10.0 g/L Trypticase peptone (BD-BBL).
+- preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: '4.98008'
+    value: '5.0'
     unit: G_PER_L
+  source: JCM Medium 363
+  notes: JCM Medium 363 lists 5.0 g/L Yeast extract (BD-Difco).
 - preferred_term: Glucose
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  source: JCM Medium 363
+  notes: JCM Medium 363 lists 0.25 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
-  concentration:
-    value: '0.249004'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
 - preferred_term: Cellobiose
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  source: JCM Medium 363
+  notes: JCM Medium 363 lists 0.25 g/L Cellobiose.
   term:
     id: CHEBI:17057
     label: cellobiose
-  concentration:
-    value: '0.249004'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17057
     label: cellobiose
 - preferred_term: Maltose
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  source: JCM Medium 363
+  notes: JCM Medium 363 lists 0.25 g/L Maltose.
   term:
     id: CHEBI:17306
     label: maltose
-  concentration:
-    value: '0.249004'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17306
     label: maltose
-- preferred_term: Starch
+- preferred_term: Soluble starch
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  source: JCM Medium 363
+  notes: JCM Medium 363 lists 0.25 g/L Soluble starch.
   term:
     id: CHEBI:28017
     label: starch
-  concentration:
-    value: '0.249004'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
     label: starch
-- preferred_term: Sodium resazurin
+- preferred_term: L-Cysteine HCl H2O
   concentration:
-    value: '1'
+    value: '0.3'
     unit: G_PER_L
-  term:
-    id: CHEBI:8806
-    label: Resazurin
-- preferred_term: Na2CO3
-  term:
-    id: CHEBI:29377
-    label: sodium carbonate
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:29377
-    label: sodium carbonate
-- preferred_term: L-Cysteine HCl x H2O
+  source: JCM Medium 363
+  notes: JCM Medium 363 lists 0.3 g/L L-Cysteine HCl H2O.
   term:
     id: CHEBI:91248
     label: L-cysteine hydrochloride hydrate
-  concentration:
-    value: '0.298805'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
     label: L-cysteine hydrochloride hydrate
-- preferred_term: Agar
+- preferred_term: Bacto agar (BD-Difco)
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: JCM Medium 363
+  notes: JCM Medium 363 lists 15.0 g/L Bacto agar (BD-Difco).
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '14.9402'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '850.0'
+    unit: ML_PER_L
+  source: JCM Medium 363
+  notes: JCM Medium 363 lists 850.0 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Nitrogen gas
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: JCM Medium 363
+  notes: JCM Medium 363 prepares and dispenses the medium under oxygen-free N2-CO2
+    (95:5).
+  term:
+    id: CHEBI:17997
+    label: dinitrogen
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17997
+    label: dinitrogen
+- preferred_term: Carbon dioxide gas
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: JCM Medium 363
+  notes: JCM Medium 363 prepares and dispenses the medium under oxygen-free N2-CO2
+    (95:5).
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Prepare PY4S Agar with Salt solution I, Salt solution II, Trypticase
+    peptone, Yeast extract, Glucose, Cellobiose, Maltose, Soluble starch, resazurin-Na,
+    Na2CO3, L-Cysteine HCl H2O, Bacto agar, and distilled water.
+- step_number: 2
   action: ADJUST_PH
-  description: Adjust pH to 6.7. Prepare medium anaerobically and pour into rubber
-    stopped tubes under oxygen-free N2-CO2 (95:5).
+  description: Adjust pH to 6.7.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min unless otherwise stated.
+- step_number: 4
+  action: ALIQUOT
+  description: Prepare anaerobically and pour into rubber-stopped tubes under oxygen-free
+    N2-CO2 (95:5).
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: JCM states to sterilize media by autoclaving at 121 C for 15 min unless otherwise
+    stated.
 applications:
 - Microbial cultivation
 curation_history:
@@ -144,22 +206,193 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_reference_wrappers_score40.py
+  action: LINKED_JCM_REFERENCE_WRAPPER_CHILD
+  changes: Linked JCM reference-wrapper child media to source parents
+  notes: Added or refreshed reciprocal parent-child link for bacterial/xylanobacter_medium.yaml.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m358_score15.py
+  action: RESOLVED_JCM_363_FOR_TOGO_M358
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=363; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=133
+  notes: JCM Medium 363 PY4S Agar lists, per liter, 75 ml Salt solution I from JCM
+    Medium 133, 75 ml Salt solution II from JCM Medium 133, 10.0 g Trypticase peptone
+    (BD-BBL), 5.0 g Yeast extract (BD-Difco), 0.25 g each Glucose, Cellobiose, Maltose,
+    and Soluble starch, 1.0 ml 0.1% resazurin-Na, 2.5 ml 8% Na2CO3, 0.3 g L-Cysteine
+    HCl H2O, 15.0 g Bacto agar (BD-Difco), and 850 ml Distilled water. The final pH
+    is 6.7, and the medium is prepared anaerobically and poured into rubber-stopped
+    tubes under oxygen-free N2-CO2 (95:5). Corrected MediaDive stock-volume artifacts,
+    expanded Salt solution I and II from JCM Medium 133, moved the resazurin-Na and
+    Na2CO3 stocks to solutions, and restored the source component amounts before linking
+    TOGO M358.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m358_score15.py
+  action: LINKED_TOGO_M358_SUPPLEMENTED_VARIANT
+  source: https://togomedium.org/medium/M358; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=364;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=363
+  notes: Linked TOGO M358 as a plant-residue supplemented variant of PY4S Agar.
 solutions:
 - preferred_term: Salt Solution I
-  term:
-    id: mediadive.solution:5691
-    label: Salt Solution I
   concentration:
-    value: '75'
-    unit: G_PER_L
-  notes: See mediadive_5691_Salt_Solution_I.yaml for composition
-  name: Unknown solution
+    value: '75.0'
+    unit: ML_PER_L
+  source: JCM Medium 363
+  notes: JCM Medium 363 adds 75 ml/L Salt solution I from JCM Medium 133; JCM Medium
+    133 defines this stock as 0.78 g K2HPO4 in 100 ml Distilled water.
+  composition:
+  - preferred_term: K2HPO4
+    concentration:
+      value: '7.8'
+      unit: G_PER_L
+    source: JCM Medium 133
+    notes: JCM Medium 133 lists 7.8 g/L K2HPO4.
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 133
+    notes: JCM Medium 133 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
 - preferred_term: Salt Solution II
-  term:
-    id: mediadive.solution:2571
-    label: Salt Solution II
   concentration:
-    value: '75'
-    unit: G_PER_L
-  notes: See mediadive_2571_Salt_Solution_II.yaml for composition
-  name: Unknown solution
+    value: '75.0'
+    unit: ML_PER_L
+  source: JCM Medium 363
+  notes: JCM Medium 363 adds 75 ml/L Salt solution II from JCM Medium 133; JCM Medium
+    133 defines this stock as KH2PO4, NaCl, (NH4)2SO4, CaCl2, and MgSO4 x H2O in 100
+    ml Distilled water.
+  composition:
+  - preferred_term: KH2PO4
+    concentration:
+      value: '4.7'
+      unit: G_PER_L
+    source: JCM Medium 133
+    notes: JCM Medium 133 lists 4.7 g/L KH2PO4.
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+  - preferred_term: NaCl
+    concentration:
+      value: '11.8'
+      unit: G_PER_L
+    source: JCM Medium 133
+    notes: JCM Medium 133 lists 11.8 g/L NaCl.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: (NH4)2SO4
+    concentration:
+      value: '12.0'
+      unit: G_PER_L
+    source: JCM Medium 133
+    notes: JCM Medium 133 lists 12.0 g/L (NH4)2SO4.
+    term:
+      id: CHEBI:62946
+      label: ammonium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:62946
+      label: ammonium sulfate
+  - preferred_term: CaCl2
+    concentration:
+      value: '1.2'
+      unit: G_PER_L
+    source: JCM Medium 133
+    notes: JCM Medium 133 lists 1.2 g/L CaCl2.
+    term:
+      id: CHEBI:3312
+      label: calcium dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:3312
+      label: calcium dichloride
+  - preferred_term: MgSO4 x H2O
+    concentration:
+      value: '2.5'
+      unit: G_PER_L
+    source: JCM Medium 133
+    notes: JCM Medium 133 lists 2.5 g/L MgSO4 x H2O.
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 133
+    notes: JCM Medium 133 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: 0.1% (w/v) resazurin-Na
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  source: JCM Medium 363
+  notes: JCM Medium 363 adds 1.0 ml/L 0.1% (w/v) resazurin-Na.
+  composition:
+  - preferred_term: Sodium resazurin
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: JCM Medium 363
+    notes: JCM Medium 363 lists 1.0 g/L Sodium resazurin.
+    term:
+      id: CHEBI:8806
+      label: Resazurin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:8806
+      label: Resazurin
+- preferred_term: 8% (w/v) Na2CO3
+  concentration:
+    value: '2.5'
+    unit: ML_PER_L
+  source: JCM Medium 363
+  notes: JCM Medium 363 adds 2.5 ml/L 8% (w/v) Na2CO3.
+  composition:
+  - preferred_term: Na2CO3
+    concentration:
+      value: '80.0'
+      unit: G_PER_L
+    source: JCM Medium 363
+    notes: JCM Medium 363 lists 80.0 g/L Na2CO3.
+    term:
+      id: CHEBI:29377
+      label: sodium carbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:29377
+      label: sodium carbonate
+variant_children:
+- path: data/normalized_yaml/bacterial/xylanobacter_medium.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:002873
+  name: xylanobacter_medium
+  notes: Adjusts PY4S Agar from JCM Medium 363 to pH 6.0.
+- path: data/normalized_yaml/bacterial/TOGO_M358_PY4SR_Agar.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:009738
+  name: py4sr_agar
+  notes: TOGO M358 imports JCM Medium 364 PY4SR Agar, which supplements JCM Medium
+    363 PY4S Agar with 50 ml/L plant residue extract.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=363
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=133

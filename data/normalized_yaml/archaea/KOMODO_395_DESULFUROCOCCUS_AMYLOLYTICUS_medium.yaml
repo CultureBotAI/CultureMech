@@ -341,6 +341,13 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_395_desulfurococcus_score10.py
+  action: RESOLVED_KOMODO_395_DESULFUROCOCCUS_TOPOLOGY
+  changes: Reclassified KOMODO Medium 395.1, 395.2, and 395.3 variants
+  source: KOMODO Medium 395, 395.1, 395.2, and 395.3
+  notes: Linked the KOMODO Medium 395.1, 395.2, and 395.3 records under the KOMODO
+    Medium 395 DESULFUROCOCCUS AMYLOLYTICUS base.
 variant_children:
 - path: data/normalized_yaml/bacterial/fervidicoccus_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -349,20 +356,18 @@ variant_children:
   notes: Same ingredient and concentration signature; review as possible duplicate
     source record.
 - path: data/normalized_yaml/bacterial/for_dsm_16532.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:005179
   name: for_dsm_16532
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 395.1 applies DESULFUROCOCCUS AMYLOLYTICUS medium to DSM 16532.
 - path: data/normalized_yaml/bacterial/for_dsm_18924.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: PH_VARIANT
   id: CultureMech:005180
   name: for_dsm_18924
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 395.2 applies DESULFUROCOCCUS AMYLOLYTICUS medium at pH 6.5
+    to DSM 18924.
 - path: data/normalized_yaml/bacterial/for_dsm_19380.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:005181
   name: for_dsm_19380
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 395.3 applies DESULFUROCOCCUS AMYLOLYTICUS medium to DSM 19380.

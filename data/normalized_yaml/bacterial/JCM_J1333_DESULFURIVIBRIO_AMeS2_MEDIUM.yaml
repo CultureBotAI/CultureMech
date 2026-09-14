@@ -17,6 +17,8 @@ ingredients:
   concentration:
     value: '22.0'
     unit: G_PER_L
+  source: JCM Medium 1333
+  notes: JCM Medium 1333 lists 22.0 g Na2CO3.
   term:
     id: CHEBI:29377
     label: sodium carbonate
@@ -27,6 +29,8 @@ ingredients:
   concentration:
     value: '8.0'
     unit: G_PER_L
+  source: JCM Medium 1333
+  notes: JCM Medium 1333 lists 8.0 g NaHCO3.
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -37,6 +41,8 @@ ingredients:
   concentration:
     value: '6.0'
     unit: G_PER_L
+  source: JCM Medium 1333
+  notes: JCM Medium 1333 lists 6.0 g NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -47,6 +53,8 @@ ingredients:
   concentration:
     value: '1.0'
     unit: G_PER_L
+  source: JCM Medium 1333
+  notes: JCM Medium 1333 lists 1.0 g K2HPO4.
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -57,53 +65,118 @@ ingredients:
   concentration:
     value: '5.0'
     unit: G_PER_L
+  source: JCM Medium 1333
+  notes: JCM Medium 1333 lists 5.0 g sulfur steamed separately before use.
   term:
     id: CHEBI:26833
     label: sulfur atom
   mediaingredientmech_chebi_term:
     id: CHEBI:26833
     label: sulfur atom
+solutions:
 - preferred_term: 1 M MgCl2 solution
   concentration:
     value: '1.0'
     unit: ML_PER_L
+  source: JCM Medium 1333
+  notes: JCM Medium 1333 adds 1.0 ml/L autoclaved 1 M MgCl2 solution.
+  composition:
+  - preferred_term: MgCl2
+    concentration:
+      value: '1'
+      unit: MOLAR
+    source: JCM Medium 1333
+    notes: Solute of the 1 M MgCl2 stock added by JCM Medium 1333.
+    term:
+      id: CHEBI:6636
+      label: magnesium dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:6636
+      label: magnesium dichloride
 - preferred_term: 1 M NH4Cl solution
   concentration:
     value: '4.0'
     unit: ML_PER_L
-- preferred_term: Trace element solution (see Medium No. 1079 )
+  source: JCM Medium 1333
+  notes: JCM Medium 1333 adds 4.0 ml/L autoclaved 1 M NH4Cl solution.
+  composition:
+  - preferred_term: NH4Cl
+    concentration:
+      value: '1'
+      unit: MOLAR
+    source: JCM Medium 1333
+    notes: Solute of the 1 M NH4Cl stock added by JCM Medium 1333.
+    term:
+      id: CHEBI:31206
+      label: ammonium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31206
+      label: ammonium chloride
+- preferred_term: Trace element solution (JCM Medium 1079)
   concentration:
     value: '1.0'
     unit: ML_PER_L
-- preferred_term: Se/W solution* (see Medium No. 852 )
+  source: JCM Medium 1333 / JCM Medium 1079
+  notes: JCM Medium 1333 adds 1.0 ml/L autoclaved Trace element solution from JCM
+    Medium 1079.
+- preferred_term: Se/W solution (JCM Medium 852)
   concentration:
     value: '1.0'
     unit: ML_PER_L
-- preferred_term: Trace vitamins* (see Medium No. 197 )
+  source: JCM Medium 1333 / JCM Medium 852
+  notes: JCM Medium 1333 adds 1.0 ml/L filter-sterilized Se/W solution from JCM Medium
+    852.
+- preferred_term: Trace vitamins (JCM Medium 197)
   concentration:
     value: '1.0'
     unit: ML_PER_L
-- preferred_term: 5% Na2S·9H2O solution
+  source: JCM Medium 1333 / JCM Medium 197
+  notes: JCM Medium 1333 adds 1.0 ml/L filter-sterilized Trace vitamins from JCM Medium
+    197.
+- preferred_term: 5% Na2S x 9H2O solution
   concentration:
     value: '5.0'
     unit: ML_PER_L
+  source: JCM Medium 1333
+  notes: JCM Medium 1333 conditionally adds 5.0 ml/L autoclaved 5% Na2S x 9H2O solution
+    if the inoculum lacks sulfide or polysulfide.
+  composition:
+  - preferred_term: Na2S x 9H2O
+    concentration:
+      value: '50.0'
+      unit: G_PER_L
+    source: JCM Medium 1333
+    notes: Solute of the 5% Na2S x 9H2O stock added by JCM Medium 1333.
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Add components, except sulfur, to distilled water and bring volume
-    to 1.0 L.
+  description: Add Na2CO3, NaHCO3, NaCl, and K2HPO4 to distilled water and bring the
+    base volume to 1.0 L.
 - step_number: 2
-  action: MIX
-  description: Autoclave in closed bottles.
+  action: AUTOCLAVE
+  description: Autoclave the base in closed bottles.
 - step_number: 3
   action: MIX
-  description: 'After cooling, aseptically add per liter the following solutions (autoclaved
-    or *filter-sterilized): Steam sulfur for 3 hr on each of 3 successive days.'
+  description: After cooling, aseptically add MgCl2, NH4Cl, Trace element, Se/W, and
+    Trace vitamins stocks at the JCM Medium 1333 per-liter ratios.
 - step_number: 4
+  action: HEAT
+  description: Steam sulfur for 3 hr on each of 3 successive days.
+- step_number: 5
   action: MIX
   description: Aseptically and anaerobically distribute the medium and sterilized
-    sulfur into culture vessels (e.g., 10 ml medium and 0.05 g sulfur in Hungate tubes)
-    under a N2 gas steam and seal with butyl rubber stoppers.
+    sulfur into culture vessels under an N2 gas stream and seal with butyl rubber
+    stoppers.
+- step_number: 6
+  action: MIX
+  description: If the inoculum does not contain sulfide or polysulfide, add 5.0 ml/L
+    autoclaved 5% Na2S x 9H2O solution stored under N2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -120,3 +193,20 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_jcm_1333_desulfurivibrio_score15.py
+  action: RESOLVED_JCM_1333_DESULFURIVIBRIO_SCORE15
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1333
+  notes: JCM Medium 1333 lists Na2CO3, NaHCO3, NaCl, K2HPO4, and sulfur as direct
+    components; after autoclaving the base, add MgCl2, NH4Cl, JCM 1079 Trace element,
+    JCM 852 Se/W, and JCM 197 Trace vitamins stocks, with 5% Na2S x 9H2O solution
+    added conditionally if the inoculum lacks sulfide or polysulfide.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1333
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1079
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197

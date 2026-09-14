@@ -2,6 +2,7 @@ id: CultureMech:004814
 name: mineral_solution_1_medium_1033
 original_name: Mineral solution 1 (medium 1033)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
@@ -61,3 +62,9 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_komodo_note_mined_submedia_score15.py
+  action: RETYPED_KOMODO_NOTE_MINED_SUBMEDIUM
+  notes: 'KOMODO marks this record as SubMedium: Yes. Retained the note-mined pH-buffer
+    row and retyped the record as a stock solution stub so it is not audited as a
+    complete growth medium.'

@@ -5,31 +5,34 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+temperature_value: 37.0
+aeration: 5% CO2 in an incubator
 ingredients:
-- preferred_term: sheep blood
+- preferred_term: Heart Infusion Agar (Difco)
+  concentration:
+    value: '95'
+    unit: PERCENT_V_V
+  source: TOGO M2291
+  notes: TOGO M2291 lists the commercial Difco Heart Infusion Agar base with 5% sheep
+    blood as the final supplement; the base is the remaining 95% v/v and is retained
+    as an opaque component.
+- preferred_term: Sheep blood
   concentration:
     value: '5'
-    unit: PERCENT_W_V
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: CO2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
+    unit: PERCENT_V_V
+  source: TOGO M2291
+  notes: TOGO M2291 lists 5% sheep blood from Oxoid as the supplement.
   term:
-    id: CHEBI:16526
-    label: carbon dioxide
-- preferred_term: Heart Infusion Agar (Difco)
-  notes: 'Properties: Undefined component, Complex component'
-  concentration:
-    value: variable
-    unit: VARIABLE
+    id: UBERON:0000178
+    label: blood
 media_term:
   preferred_term: TOGO Medium M2291
   term:
     id: TOGO:M2291
     label: Heart Infusion Agar (supplemented with 5% sheep blood)
-notes: 'Source: https://togomedium.org/medium/M2291'
+notes: TOGO M2291 reports routine growth on Heart Infusion Agar (Difco) supplemented
+  with 5% sheep blood (Oxoid) for 2 days at 37 C in an incubator containing 5% CO2.
+  CO2 is retained as the incubation aeration condition instead of as a medium ingredient.
 applications:
 - Microbial cultivation
 curation_history:
@@ -55,3 +58,25 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2291_heart_infusion_sheep_score15.py
+  action: RESOLVED_TOGO_M2291_HEART_INFUSION_SHEEP_SCORE15
+  source: https://togomedium.org/medium/M2291; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2291
+  notes: TOGO M2291 reports routine growth on Heart Infusion Agar (Difco) supplemented
+    with 5% sheep blood (Oxoid) for 2 days at 37 C in an incubator containing 5% CO2.
+    CO2 is retained as the incubation aeration condition instead of as a medium ingredient.
+    Corrected sheep blood from %w/v to %v/v, grounded it to UBERON blood, represented
+    the prepared Difco agar base as the remaining 95% v/v, removed CO2 from the ingredients,
+    and kept Heart Infusion Agar (Difco) intentionally unmapped as a source-disclosed
+    commercial base.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Supplement Heart Infusion Agar (Difco) with 5% sheep blood (Oxoid).
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2291
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2291

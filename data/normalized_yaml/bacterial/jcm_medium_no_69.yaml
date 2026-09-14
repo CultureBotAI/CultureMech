@@ -10,19 +10,19 @@ media_term:
   term:
     id: mediadive.medium:J69
     label: JCM MEDIUM No. 69
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=69'
+notes: JCM Medium 69 contains 1.0 L GYP-sodium acetate-mineral salts broth from JCM
+  Medium 68 plus 50.0 g/L NaCl.
 ingredients:
-- preferred_term: GYP-sodium acetate-mineral salts broth
-  concentration:
-    value: '1000'
-    unit: G_PER_L
 - preferred_term: NaCl
+  concentration:
+    value: '50.0'
+    unit: G_PER_L
+  source: JCM Medium 69
+  notes: JCM Medium 69 supplements 1.0 L GYP-sodium acetate-mineral salts broth with
+    50.0 g NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
-  concentration:
-    value: '50'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
@@ -52,5 +52,40 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_official_simple_score20.py
+  action: RESOLVED_OFFICIAL_SIMPLE_SCORE20
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=69; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=68
+  notes: JCM Medium 69 contains 1.0 L GYP-sodium acetate-mineral salts broth from
+    JCM Medium 68 plus 50.0 g/L NaCl.
 high_metal: true
 kg_microbe_match: mediadive.medium:74
+solutions:
+- preferred_term: GYP-sodium acetate-mineral salts broth
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  notes: JCM Medium 69 uses 1.0 L GYP-sodium acetate-mineral salts broth from JCM
+    Medium 68.
+  culturemech_term:
+    id: CultureMech:003035
+    label: GYP-Sodium Acetate-Mineral Salts Broth
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add 50.0 g/L NaCl to 1.0 L GYP-sodium acetate-mineral salts broth.
+parent_media:
+  path: data/normalized_yaml/bacterial/gyp_sodium_acetate_mineral_salts_broth.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:003035
+  name: gyp_sodium_acetate_mineral_salts_broth
+  notes: Supplements 1.0 L GYP-sodium acetate-mineral salts broth with 50.0 g/L NaCl.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- Supplements 1.0 L GYP-sodium acetate-mineral salts broth with 50.0 g/L NaCl.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=69
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=68

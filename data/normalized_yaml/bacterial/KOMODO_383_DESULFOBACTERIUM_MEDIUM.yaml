@@ -367,12 +367,175 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-parent_media:
-  path: data/normalized_yaml/bacterial/KOMODO_383d_DESULFONAUTICUS_medium.yaml
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_383_desulfobacterium_score10.py
+  action: RESOLVED_KOMODO_383_DESULFOBACTERIUM_TOPOLOGY
+  changes: Promoted KOMODO Medium 383 as the Desulfobacterium parent
+  source: KOMODO and DSMZ Medium 383 exact-signature source records
+  notes: Moved exact-signature KOMODO Medium 383 source duplicates and DSM-specific
+    Medium 383 wrappers under the KOMODO Medium 383 base.
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_383d_DESULFONAUTICUS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005159
+  name: KOMODO_383d_DESULFONAUTICUS_medium
+  notes: KOMODO Medium 383d has the same 32-component sulfate-reducing seawater mineral
+    signature as KOMODO Medium 383.
+- path: data/normalized_yaml/bacterial/desulfobacula_toluolica_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005157
+  name: desulfobacula_toluolica_medium
+  notes: KOMODO Medium 383b has the same 32-component sulfate-reducing seawater mineral
+    signature as KOMODO Medium 383.
+- path: data/normalized_yaml/bacterial/desulfonauticus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001491
   name: desulfonauticus_medium
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+  notes: DSMZ Medium 383b has the same 32-component sulfate-reducing seawater mineral
+    signature as KOMODO Medium 383.
+- path: data/normalized_yaml/bacterial/desulfovibrio_sax_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005156
+  name: desulfovibrio_sax_medium
+  notes: KOMODO Medium 383a has the same 32-component sulfate-reducing seawater mineral
+    signature as KOMODO Medium 383.
+- path: data/normalized_yaml/bacterial/desulfovibrio_zosterae_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005158
+  name: desulfovibrio_zosterae_medium
+  notes: KOMODO Medium 383c has the same 32-component sulfate-reducing seawater mineral
+    signature as KOMODO Medium 383.
+- path: data/normalized_yaml/bacterial/for_dsm_3382.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005143
+  name: for_dsm_3382
+  notes: KOMODO Medium 383.1 applies DESULFOBACTERIUM MEDIUM to DSM 3382.
+- path: data/normalized_yaml/bacterial/for_dsm_3383.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005144
+  name: for_dsm_3383
+  notes: KOMODO Medium 383.2 applies DESULFOBACTERIUM MEDIUM to DSM 3383.
+- path: data/normalized_yaml/bacterial/for_dsm_3384.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005145
+  name: for_dsm_3384
+  notes: KOMODO Medium 383.3 applies DESULFOBACTERIUM MEDIUM to DSM 3384.
+- path: data/normalized_yaml/bacterial/for_dsm_3385.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005146
+  name: for_dsm_3385
+  notes: KOMODO Medium 383.4 applies DESULFOBACTERIUM MEDIUM to DSM 3385.
+- path: data/normalized_yaml/bacterial/for_dsm_8541.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005147
+  name: for_dsm_8541
+  notes: KOMODO Medium 383.5 applies DESULFOBACTERIUM MEDIUM to DSM 8541.
+- path: data/normalized_yaml/bacterial/for_dsm_9120_dsm_17456_and_dsm_19275.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005148
+  name: for_dsm_9120_dsm_17456_and_dsm_19275
+  notes: KOMODO Medium 383.6 applies DESULFOBACTERIUM MEDIUM to DSM 9120, DSM 17456,
+    and DSM 19275.
+- path: data/normalized_yaml/bacterial/for_dsm_12861_and_dsm_12883.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005149
+  name: for_dsm_12861_and_dsm_12883
+  notes: KOMODO Medium 383.7 applies DESULFOBACTERIUM MEDIUM to DSM 12861 and DSM
+    12883.
+- path: data/normalized_yaml/bacterial/for_dsm_12888.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005151
+  name: for_dsm_12888
+  notes: KOMODO Medium 383.8 applies DESULFOBACTERIUM MEDIUM to DSM 12888.
+- path: data/normalized_yaml/bacterial/for_dsm_14367_dsm_15579_dsm_15816_dsm_19338_dsm_22027.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005153
+  name: for_dsm_14367_dsm_15579_dsm_15816_dsm_19338_dsm_22027
+  notes: KOMODO Medium 383.9 applies DESULFOBACTERIUM MEDIUM to DSM 14367, DSM 15579,
+    DSM 15816, DSM 19338, and DSM 22027.
+- path: data/normalized_yaml/bacterial/for_dsm_14728.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005134
+  name: for_dsm_14728
+  notes: KOMODO Medium 383.11 applies DESULFOBACTERIUM MEDIUM to DSM 14728.
+- path: data/normalized_yaml/bacterial/for_dsm_14982.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005135
+  name: for_dsm_14982
+  notes: KOMODO Medium 383.12 applies DESULFOBACTERIUM MEDIUM to DSM 14982.
+- path: data/normalized_yaml/bacterial/for_dsm_15286_and_dsm_21156.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005136
+  name: for_dsm_15286_and_dsm_21156
+  notes: KOMODO Medium 383.13 applies DESULFOBACTERIUM MEDIUM to DSM 15286 and DSM
+    21156.
+- path: data/normalized_yaml/bacterial/for_dsm_16109_and_dsm_17464.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005137
+  name: for_dsm_16109_and_dsm_17464
+  notes: KOMODO Medium 383.14 applies DESULFOBACTERIUM MEDIUM to DSM 16109 and DSM
+    17464.
+- path: data/normalized_yaml/bacterial/for_dsm_17291.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005138
+  name: for_dsm_17291
+  notes: KOMODO Medium 383.15 applies DESULFOBACTERIUM MEDIUM to DSM 17291.
+- path: data/normalized_yaml/bacterial/for_dsm_17477.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005139
+  name: for_dsm_17477
+  notes: KOMODO Medium 383.16 applies DESULFOBACTERIUM MEDIUM to DSM 17477.
+- path: data/normalized_yaml/bacterial/for_dsm_18378_and_dsm_18379.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005140
+  name: for_dsm_18378_and_dsm_18379
+  notes: KOMODO Medium 383.17 applies DESULFOBACTERIUM MEDIUM to DSM 18378 and DSM
+    18379.
+- path: data/normalized_yaml/bacterial/for_dsm_3379_dsm_3380_dsm_3381.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005141
+  name: for_dsm_3379_dsm_3380_dsm_3381
+  notes: KOMODO Medium 383.18 applies DESULFOBACTERIUM MEDIUM to DSM 3379, DSM 3380,
+    and DSM 3381.
+- path: data/normalized_yaml/bacterial/for_dsm_14454.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005142
+  name: for_dsm_14454
+  notes: KOMODO Medium 383.19 applies DESULFOBACTERIUM MEDIUM to DSM 14454.
+- path: data/normalized_yaml/bacterial/for_dsm_18732.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005155
+  name: for_dsm_18732
+  notes: KOMODO Medium 383a.1 applies DESULFOBACTERIUM MEDIUM to DSM 18732.
+- path: data/normalized_yaml/bacterial/medium_383_modified_for_dsm_10085.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005130
+  name: medium_383_modified_for_dsm_10085
+  notes: KOMODO Medium 383_10085 applies DESULFOBACTERIUM MEDIUM to DSM 10085.
+- path: data/normalized_yaml/bacterial/medium_383_modified_for_dsm_10141.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005131
+  name: medium_383_modified_for_dsm_10141
+  notes: KOMODO Medium 383_10141 applies DESULFOBACTERIUM MEDIUM to DSM 10141.
+- path: data/normalized_yaml/bacterial/medium_383_modified_for_dsm_10259.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005132
+  name: medium_383_modified_for_dsm_10259
+  notes: KOMODO Medium 383_10259 applies DESULFOBACTERIUM MEDIUM to DSM 10259.
+- path: data/normalized_yaml/bacterial/medium_383_modified_for_dsm_11384.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005133
+  name: medium_383_modified_for_dsm_11384
+  notes: KOMODO Medium 383_11384 applies DESULFOBACTERIUM MEDIUM to DSM 11384.
+- path: data/normalized_yaml/bacterial/medium_383_modified_for_dsm_8540.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005150
+  name: medium_383_modified_for_dsm_8540
+  notes: KOMODO Medium 383_8540 applies DESULFOBACTERIUM MEDIUM to DSM 8540.
+- path: data/normalized_yaml/bacterial/medium_383_modified_for_dsm_9755.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005152
+  name: medium_383_modified_for_dsm_9755
+  notes: KOMODO Medium 383_9755 applies DESULFOBACTERIUM MEDIUM to DSM 9755.
+data_quality_flags:
+- ingredients_curated

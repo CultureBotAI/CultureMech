@@ -1,44 +1,65 @@
 id: CultureMech:007458
-name: '1135'
-original_name: '1135'
+name: Malt Extract Ebios Agar (MEBA)
+original_name: Malt Extract Ebios Agar (MEBA)
 category: bacterial
 description: 1135. NBRC 1132.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: NBRC Medium 1132
+  term:
+    id: nbrc.medium:1132
+    label: NBRC Medium 1132
 ingredients:
 - preferred_term: Malt extract
   concentration:
     value: '20'
     unit: G_PER_L
+  source: NBRC Medium 1132
+  notes: NBRC Medium 1132 lists 20 g malt extract.
+  term:
+    id: FOODON:03301056
+    label: malt extract
 - preferred_term: Ebios (tablets)*
   concentration:
     value: '1'
     unit: G_PER_L
+  source: NBRC Medium 1132
+  notes: NBRC Medium 1132 lists 1 g Ebios tablets; Ebios tablets were manufactured
+    by Asahi Breweries, Ltd., Tokyo, Japan and distributed by Tanabe Seiyaku Co. Ltd.,
+    Osaka, Japan.
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: L
+  source: NBRC Medium 1132
+  notes: NBRC Medium 1132 lists 1 L distilled water.
   term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
 - preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
+  source: NBRC Medium 1132
+  notes: NBRC Medium 1132 lists 15 g agar.
   term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  description: Dissolve malt extract, Ebios tablets, and agar in 1 L distilled water.
 - step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
-- step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: AUTOCLAVE
+  description: Sterilize by autoclaving.
 curation_history:
 - timestamp: '2026-02-20T00:22:36.027801Z'
   curator: nbrc-import
@@ -74,5 +95,25 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 2 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
-notes: Manufactured by Asahi Breweries, Ltd., Tokyo, Japan. Distributed by Tanabe
-  Seiyaku Co. Ltd., Osaka, Japan.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_nbrc_1135_score15.py
+  action: RESOLVED_NBRC_1135_SCORE15
+  changes: Curated recovered NBRC Medium 1132 Malt Extract Ebios Agar
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1132
+  notes: Added the NBRC Medium 1132 source term and official title, grounded malt
+    extract and agar, and kept Ebios tablets as an explicitly unmapped commercial
+    product.
+notes: 'Source: NBRC Medium 1132 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1132
+
+
+  NBRC lists Malt Extract Ebios Agar with malt extract, Ebios tablets, distilled water,
+  and agar. Ebios tablets were manufactured by Asahi Breweries, Ltd., Tokyo, Japan
+  and distributed by Tanabe Seiyaku Co. Ltd., Osaka, Japan.'
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1132

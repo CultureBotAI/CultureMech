@@ -3,14 +3,18 @@ name: microaerophilic_lutibacter_medium
 original_name: Microaerophilic Lutibacter Medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
+ph_range:
+  min: 6.2
+  max: 6.5
 ingredients:
 - preferred_term: MES
   concentration:
     value: '1.95'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  source: TOGO M1138 / JCM Medium 1069
+  notes: TOGO M1138 / JCM Medium 1069 lists 1.95 g/L MES.
   term:
     id: CHEBI:39010
     label: MES
@@ -19,40 +23,56 @@ ingredients:
     label: MES
 - preferred_term: Tryptone (BD-Difco)
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M1138 / JCM Medium 1069
+  notes: TOGO M1138 / JCM Medium 1069 lists 2.0 g/L Tryptone (BD-Difco).
 - preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M1138 / JCM Medium 1069
+  notes: JCM Medium 1069 replaces the gas phase with N2-CO2-O2 (90:10:2, v/v/v).
   term:
     id: CHEBI:16526
     label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M1138 / JCM Medium 1069
+  notes: JCM Medium 1069 replaces the gas phase with N2-CO2-O2 (90:10:2, v/v/v).
   term:
     id: CHEBI:17997
     label: dinitrogen
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17997
+    label: dinitrogen
 - preferred_term: Oxygen gas
-  notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M1138 / JCM Medium 1069
+  notes: JCM Medium 1069 replaces the gas phase with N2-CO2-O2 (90:10:2, v/v/v).
+  term:
+    id: CHEBI:15379
+    label: dioxygen
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15379
+    label: dioxygen
 media_term:
   preferred_term: TOGO Medium M1138
   term:
     id: TOGO:M1138
     label: Microaerophilic Lutibacter Medium
-notes: 'Source: https://togomedium.org/medium/M1138
-
-  Original source: JCM - JCM_M1069
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1069'
+notes: TOGO M1138 records JCM Medium 1069 with Artificial saltwater from JCM Medium
+  629, MES, Wolfe's mineral solution from JCM Medium 265, Trace vitamins from JCM
+  Medium 197, Tryptone, and an N2-CO2-O2 gas phase. JCM 1069 adjusts the medium to
+  pH 6.2-6.5, distributes it into culture vessels, replaces the gas phase with N2-CO2-O2
+  (90:10:2, v/v/v), seals with butyl rubber stoppers, and autoclaves.
 applications:
 - Microbial cultivation
 curation_history:
@@ -102,25 +122,508 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m1138_score15.py
+  action: RESOLVED_TOGO_M1138_SCORE15
+  source: https://togomedium.org/medium/M1138; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1069;
+    https://togomedium.org/medium/M642; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=629;
+    https://togomedium.org/medium/M257; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=265;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151; https://togomedium.org/medium/M190;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+  notes: TOGO M1138 records JCM Medium 1069 with Artificial saltwater from JCM Medium
+    629, MES, Wolfe's mineral solution from JCM Medium 265, Trace vitamins from JCM
+    Medium 197, Tryptone, and an N2-CO2-O2 gas phase. JCM 1069 adjusts the medium
+    to pH 6.2-6.5, distributes it into culture vessels, replaces the gas phase with
+    N2-CO2-O2 (90:10:2, v/v/v), seals with butyl rubber stoppers, and autoclaves.
 solutions:
-- preferred_term: Artificial saltwater (see Medium [M642])
-  composition: []
-  notes: Cross-reference to Medium M642
+- preferred_term: Artificial saltwater
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Wolfe's mineral solution (see Medium [M257])
-  composition: []
-  notes: Cross-reference to Medium M257
+    value: '1000.0'
+    unit: ML_PER_L
+  source: TOGO M1138 / JCM Medium 1069
+  notes: JCM Medium 1069 lists 1.0 L Artificial saltwater.
+  composition:
+  - preferred_term: NaCl
+    concentration:
+      value: '27.5'
+      unit: G_PER_L
+    source: TOGO M642 / JCM Medium 629
+    notes: TOGO M642 / JCM Medium 629 lists 27.5 g/L NaCl.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: MgCl2 x 6H2O
+    concentration:
+      value: '5.38'
+      unit: G_PER_L
+    source: TOGO M642 / JCM Medium 629
+    notes: TOGO M642 / JCM Medium 629 lists 5.38 g/L MgCl2 x 6H2O.
+    term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+  - preferred_term: MgSO4 x 7H2O
+    concentration:
+      value: '6.78'
+      unit: G_PER_L
+    source: TOGO M642 / JCM Medium 629
+    notes: TOGO M642 / JCM Medium 629 lists 6.78 g/L MgSO4 x 7H2O.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: KCl
+    concentration:
+      value: '0.72'
+      unit: G_PER_L
+    source: TOGO M642 / JCM Medium 629
+    notes: TOGO M642 / JCM Medium 629 lists 0.72 g/L KCl.
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+  - preferred_term: NaHCO3
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    source: TOGO M642 / JCM Medium 629
+    notes: TOGO M642 / JCM Medium 629 lists 0.2 g/L NaHCO3.
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+  - preferred_term: CaCl2 x 2H2O
+    concentration:
+      value: '1.4'
+      unit: G_PER_L
+    source: TOGO M642 / JCM Medium 629
+    notes: TOGO M642 / JCM Medium 629 lists 1.4 g/L CaCl2 x 2H2O.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: NH4Cl
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: TOGO M642 / JCM Medium 629
+    notes: TOGO M642 / JCM Medium 629 lists 1.0 g/L NH4Cl.
+    term:
+      id: CHEBI:31206
+      label: ammonium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31206
+      label: ammonium chloride
+  - preferred_term: KH2PO4
+    concentration:
+      value: '0.05'
+      unit: G_PER_L
+    source: TOGO M642 / JCM Medium 629
+    notes: TOGO M642 / JCM Medium 629 lists 0.05 g/L KH2PO4.
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: TOGO M642 / JCM Medium 629
+    notes: TOGO M642 / JCM Medium 629 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: Wolfe's mineral solution
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Trace vitamins (see Medium [M190])
-  composition: []
-  notes: Cross-reference to Medium M190
+    value: '1.0'
+    unit: ML_PER_L
+  source: TOGO M1138 / JCM Medium 1069
+  notes: JCM Medium 1069 lists 1.0 ml/L Wolfe's mineral solution.
+  composition:
+  - preferred_term: Nitrilotriacetic acid
+    concentration:
+      value: '1.5'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 1.5 g/L Nitrilotriacetic acid.
+    term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+  - preferred_term: MgSO4 x 7H2O
+    concentration:
+      value: '3.0'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 3.0 g/L MgSO4 x 7H2O.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: MnSO4 x xH2O
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 0.5 g/L MnSO4 x xH2O.
+    term:
+      id: CHEBI:86360
+      label: manganese(II) sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86360
+      label: manganese(II) sulfate
+  - preferred_term: NaCl
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 1.0 g/L NaCl.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: FeSO4 x 7H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 0.1 g/L FeSO4 x 7H2O.
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+  - preferred_term: CoSO4 x 7H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 0.1 g/L CoSO4 x 7H2O.
+    term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+  - preferred_term: CaCl2 x 2H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 0.1 g/L CaCl2 x 2H2O.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: ZnSO4 x 7H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 0.1 g/L ZnSO4 x 7H2O.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+  - preferred_term: CuSO4 x 5H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 0.01 g/L CuSO4 x 5H2O.
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+  - preferred_term: AlK(SO4)2
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 0.01 g/L AlK(SO4)2.
+    term:
+      id: CHEBI:86463
+      label: potassium aluminium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86463
+      label: potassium aluminium sulfate
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 0.01 g/L H3BO3.
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: Na2MoO4 x 2H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 0.01 g/L Na2MoO4 x 2H2O.
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 151
+    notes: JCM Medium 151 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: NiCl2 x 6H2O
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    source: TOGO M257 / JCM Medium 265
+    notes: TOGO M257 / JCM Medium 265 lists 0.02 g/L NiCl2 x 6H2O.
+    term:
+      id: CHEBI:34887
+      label: nickel dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:34887
+      label: nickel dichloride
+  - preferred_term: Na2SeO3
+    concentration:
+      value: '0.001'
+      unit: G_PER_L
+    source: TOGO M257 / JCM Medium 265
+    notes: TOGO M257 / JCM Medium 265 lists 0.001 g/L Na2SeO3.
+    term:
+      id: CHEBI:48843
+      label: disodium selenite
+    mediaingredientmech_chebi_term:
+      id: CHEBI:48843
+      label: disodium selenite
+  - preferred_term: Na2WO4 x 2H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: TOGO M257 / JCM Medium 265
+    notes: TOGO M257 / JCM Medium 265 lists 0.01 g/L Na2WO4 x 2H2O.
+    term:
+      id: CHEBI:63939
+      label: sodium tungstate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63939
+      label: sodium tungstate dihydrate
+  preparation_notes: JCM Medium 265 prepares Wolfe's mineral solution from Trace minerals
+    from JCM Medium 151, NiCl2 x 6H2O, Na2SeO3, and Na2WO4 x 2H2O.
+- preferred_term: Trace vitamins
   concentration:
-    value: '10'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '10.0'
+    unit: ML_PER_L
+  source: TOGO M1138 / JCM Medium 1069
+  notes: JCM Medium 1069 lists 10.0 ml/L Trace vitamins.
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 2.0 mg/L Biotin.
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+  - preferred_term: Folic acid
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 2.0 mg/L Folic acid.
+    term:
+      id: CHEBI:27470
+      label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
+  - preferred_term: Pyridoxine HCl
+    concentration:
+      value: '10.0'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 10.0 mg/L Pyridoxine HCl.
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+  - preferred_term: Thiamine HCl
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 5.0 mg/L Thiamine HCl.
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+  - preferred_term: Riboflavin
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 5.0 mg/L Riboflavin.
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 5.0 mg/L Nicotinic acid.
+    term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: nicotinic acid
+  - preferred_term: Calcium pantothenate
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 5.0 mg/L Calcium pantothenate.
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.1'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 0.1 mg/L Vitamin B12.
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 5.0 mg/L p-Aminobenzoic acid.
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+  - preferred_term: Lipoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 5.0 mg/L Lipoic acid.
+    term:
+      id: CHEBI:16494
+      label: lipoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16494
+      label: lipoic acid
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix Artificial saltwater, MES, Wolfe's mineral solution, Trace vitamins,
+    and Tryptone.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust to pH 6.2-6.5.
+- step_number: 3
+  action: ALIQUOT
+  description: Distribute the medium into culture vessels, replace the gas phase with
+    N2-CO2-O2 (90:10:2, v/v/v), and seal with butyl rubber stoppers.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave at 121 degrees C for 15 min.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: Autoclave the sealed culture vessels.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1138
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1069
+- reference: https://togomedium.org/medium/M642
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=629
+- reference: https://togomedium.org/medium/M257
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=265
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+- reference: https://togomedium.org/medium/M190
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197

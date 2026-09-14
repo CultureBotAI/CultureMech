@@ -6,6 +6,11 @@ description: 1197. NBRC 1196.
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: NBRC Medium 1196
+  term:
+    id: nbrc.medium:1196
+    label: NBRC Medium 1196
 ingredients:
 - preferred_term: Substrates*
   concentration:
@@ -83,16 +88,10 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
-- step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  term:
+    id: CHEBI:2509
+    label: Agar
+preparation_steps: []
 curation_history:
 - timestamp: '2026-02-20T00:22:36.035486Z'
   curator: nbrc-import
@@ -128,4 +127,20 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 4 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
-notes: Vanillic acid and syringic acid etc.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1196
+  notes: Preserved the recovered NBRC Medium 1196 composition table.
+notes: 'Source: NBRC Medium 1196 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1196
+
+
+  The NBRC Modified W-medium table lists agar as optional and describes the 10 mM
+  substrates row as vanillic acid, syringic acid, etc.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1196

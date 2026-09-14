@@ -6,45 +6,23 @@ term:
 composition:
 - preferred_term: NH4Cl
   concentration:
-    value: '0.242718'
+    value: '0.25'
     unit: G_PER_L
+  source: MediaDive J902 / JCM Medium 902
+  notes: MediaDive J902 / JCM Medium 902 lists 0.25 g/L NH4Cl.
   term:
-    id: mediadive.compound:42
-    label: NH4Cl
-  chebi_term:
     id: CHEBI:31206
     label: ammonium chloride
-    confidence: 1.0
-    match_type: exact_match
-- preferred_term: NaHCO3
-  concentration:
-    value: '4.854368932038835'
-    unit: PERCENT_V_V
-  term:
-    id: mediadive.compound:55
-    label: NaHCO3
-  chebi_term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-    confidence: 1.0
-    match_type: exact_match
-- preferred_term: Na2S2O3 x 5 H2O
-  concentration:
-    value: '14.563106796116505'
-    unit: PERCENT_V_V
-  term:
-    id: mediadive.compound:65
-    label: Na2S2O3 x 5 H2O
-  chebi_term:
-    id: CHEBI:32150
-    label: sodium thiosulfate pentahydrate
-    confidence: 0.7
-    match_type: corpus_consensus
-preparation_notes: "Mix components, adjust pH to 5.5 and autoclave. After cooling,\
-  \ add aseptically the following solutions (filter-sterilized): \nDistribute the\
-  \ medium into sterile culture vessels under a N2-CO2-O2 (76:19:5, v/v) gas mixture\
-  \ and seal with butyl rubber stoppers. Pressurize the culture vessels to 50 kPa\
-  \ with the same gas mixture.\n\nOriginal volume: 1030 mL"
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  nutritional_roles:
+  - NITROGEN_SOURCE
+preparation_notes: Mix NH4Cl with 1.0 L MJ(-N) synthetic seawater. Adjust to pH 5.5
+  and autoclave. After cooling, aseptically add filter-sterilized 5.0 ml/L 8% NaHCO3
+  solution, 15.0 ml/L 10% Na2S2O3 x 5 H2O solution, and 10.0 ml/L Trace vitamins.
+  Distribute under an N2-CO2-O2 (76:19:5, v/v) gas mixture, seal with butyl rubber
+  stoppers, and pressurize to 50 kPa with the same gas mixture.
 curation_history:
 - timestamp: '2026-03-13T06:20:33.749787Z'
   curator: culturemech-id-assigner-v1.0
@@ -73,11 +51,389 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m943_microaerophilic_autotrophs_score15.py
+  action: RESOLVED_MEDIADIVE_4901_MAIN_SOL_J902
+  source: https://mediadive.dsmz.de/medium/J902; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=902;
+    https://togomedium.org/medium/M260; https://togomedium.org/medium/M190
+  notes: Replaced flattened final-volume composition rows and the placeholder top-level
+    ingredient with the JCM Medium 902 main-solution recipe.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
 category: bacterial
+solutions:
+- preferred_term: MJ(-N) synthetic seawater
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: MediaDive J902 / JCM Medium 902
+  notes: MediaDive J902 / JCM Medium 902 adds 1.0 L MJ(-N) synthetic seawater from
+    TOGO M260/JCM Medium 268.
+  composition:
+  - preferred_term: NaCl
+    concentration:
+      value: '30.0'
+      unit: G_PER_L
+    source: TOGO M260 / JCM Medium 268
+    notes: TOGO M260 / JCM Medium 268 lists 30.0 g/L NaCl.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: K2HPO4
+    concentration:
+      value: '0.14'
+      unit: G_PER_L
+    source: TOGO M260 / JCM Medium 268
+    notes: TOGO M260 / JCM Medium 268 lists 0.14 g/L K2HPO4.
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: CaCl2 x 2 H2O
+    concentration:
+      value: '0.14'
+      unit: G_PER_L
+    source: TOGO M260 / JCM Medium 268
+    notes: TOGO M260 / JCM Medium 268 lists 0.14 g/L CaCl2 x 2 H2O.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '3.4'
+      unit: G_PER_L
+    source: TOGO M260 / JCM Medium 268
+    notes: TOGO M260 / JCM Medium 268 lists 3.4 g/L MgSO4 x 7 H2O.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: MgCl2 x 6 H2O
+    concentration:
+      value: '4.18'
+      unit: G_PER_L
+    source: TOGO M260 / JCM Medium 268
+    notes: TOGO M260 / JCM Medium 268 lists 4.18 g/L MgCl2 x 6 H2O.
+    term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+  - preferred_term: KCl
+    concentration:
+      value: '0.33'
+      unit: G_PER_L
+    source: TOGO M260 / JCM Medium 268
+    notes: TOGO M260 / JCM Medium 268 lists 0.33 g/L KCl.
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+  - preferred_term: NiCl2 x 6 H2O
+    concentration:
+      value: '0.5'
+      unit: MG_PER_L
+    source: TOGO M260 / JCM Medium 268
+    notes: TOGO M260 / JCM Medium 268 lists 0.5 mg/L NiCl2 x 6 H2O.
+    term:
+      id: CHEBI:34887
+      label: nickel dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:34887
+      label: nickel dichloride
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Na2SeO3 x 5 H2O
+    concentration:
+      value: '0.5'
+      unit: MG_PER_L
+    source: TOGO M260 / JCM Medium 268
+    notes: TOGO M260 / JCM Medium 268 lists 0.5 mg/L Na2SeO3 x 5 H2O.
+    term:
+      id: CHEBI:131361
+      label: disodium selenite pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131361
+      label: disodium selenite pentahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: TOGO M260 / JCM Medium 268
+    notes: TOGO M260 / JCM Medium 268 lists 0.01 g/L Fe(NH4)2(SO4)2 x 6 H2O.
+    term:
+      id: CHEBI:76181
+      label: ferrous ammonium sulfate hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76181
+      label: ferrous ammonium sulfate hexahydrate
+    nutritional_roles:
+    - IRON_SOURCE
+    - NITROGEN_SOURCE
+    - SULFUR_SOURCE
+    - TRACE_ELEMENT
+  - preferred_term: Trace minerals
+    concentration:
+      value: '10.0'
+      unit: ML_PER_L
+    source: TOGO M260 / JCM Medium 268
+    notes: TOGO M260/JCM Medium 268 adds 10.0 ml/L Trace minerals from TOGO M142.
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: TOGO M260 / JCM Medium 268
+    notes: TOGO M260/JCM Medium 268 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  preparation_notes: Adjust pH to 7.5.
+- preferred_term: 8% NaHCO3 solution
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+  source: MediaDive J902 / JCM Medium 902
+  notes: MediaDive J902 / JCM Medium 902 adds 5.0 ml/L 8% NaHCO3 solution after cooling.
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  composition:
+  - preferred_term: NaHCO3
+    concentration:
+      value: '8.0'
+      unit: PERCENT_W_V
+    source: MediaDive J902 / JCM Medium 902
+    notes: MediaDive J902 / JCM Medium 902 specifies the added NaHCO3 solution as
+      8% w/v.
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    physicochemical_roles:
+    - BUFFER
+  preparation_notes: Filter-sterilize.
+- preferred_term: 10% Na2S2O3 x 5 H2O solution
+  concentration:
+    value: '15.0'
+    unit: ML_PER_L
+  source: MediaDive J902 / JCM Medium 902
+  notes: MediaDive J902 / JCM Medium 902 adds 15.0 ml/L 10% Na2S2O3 x 5 H2O solution
+    after cooling.
+  term:
+    id: CHEBI:32150
+    label: sodium thiosulfate pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
+    label: sodium thiosulfate pentahydrate
+  composition:
+  - preferred_term: Na2S2O3 x 5 H2O
+    concentration:
+      value: '10.0'
+      unit: PERCENT_W_V
+    source: MediaDive J902 / JCM Medium 902
+    notes: MediaDive J902 / JCM Medium 902 specifies the added Na2S2O3 x 5 H2O solution
+      as 10% w/v.
+    term:
+      id: CHEBI:32150
+      label: sodium thiosulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32150
+      label: sodium thiosulfate pentahydrate
+    nutritional_roles:
+    - SULFUR_SOURCE
+  preparation_notes: Filter-sterilize.
+- preferred_term: Trace vitamins
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: MediaDive J902 / JCM Medium 902
+  notes: MediaDive J902 / JCM Medium 902 adds 10.0 ml/L Trace vitamins from TOGO M190/JCM
+    Medium 197 after cooling.
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 2.0 mg/L Biotin.
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Folic acid
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 2.0 mg/L Folic acid.
+    term:
+      id: CHEBI:27470
+      label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Pyridoxine hydrochloride
+    concentration:
+      value: '10.0'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 10.0 mg/L Pyridoxine hydrochloride.
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Thiamine HCl
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 5.0 mg/L Thiamine HCl.
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Riboflavin
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 5.0 mg/L Riboflavin.
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 5.0 mg/L Nicotinic acid.
+    term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Calcium pantothenate
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 5.0 mg/L Calcium pantothenate.
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.1'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 0.1 mg/L Vitamin B12.
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 5.0 mg/L p-Aminobenzoic acid.
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Lipoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 5.0 mg/L Lipoic acid.
+    term:
+      id: CHEBI:16494
+      label: lipoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16494
+      label: lipoic acid
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    source: TOGO M190 / JCM Medium 197
+    notes: TOGO M190 / JCM Medium 197 lists 1000.0 ml/L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  preparation_notes: Filter-sterilize.
+notes: MediaDive solution 4901 is the JCM Medium 902 main-solution import for MJ Medium
+  for Microaerophilic Autotrophs.
+references:
+- reference: https://mediadive.dsmz.de/medium/J902
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=902
+- reference: https://togomedium.org/medium/M260
+- reference: https://togomedium.org/medium/M190

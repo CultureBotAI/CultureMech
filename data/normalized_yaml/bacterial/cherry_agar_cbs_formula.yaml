@@ -13,37 +13,50 @@ media_term:
   term:
     id: mediadive.medium:277
     label: CHERRY AGAR (CBS formula)
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium277.pdf'
+notes: DSMZ Medium 277 prepares CHERRY AGAR (CBS formula) from a cherry extract made
+  by simmering 200.0 g pulp of sour stone cherries in 1 l water, then adds 200 ml
+  sterilized cherry extract to 20.0 g agar dissolved in 800 ml water. Final pH is
+  3.8-4.6.
 ingredients:
 - preferred_term: Agar
+  concentration:
+    value: '20.0'
+    unit: G_PER_L
+  source: DSMZ Medium 277
+  notes: DSMZ Medium 277 dissolves 20.0 g agar in the final agar base.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '20'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
-- preferred_term: Pulp of sour stone cherries
+- preferred_term: Distilled water
   concentration:
-    value: '200'
-    unit: G_PER_L
+    value: '800.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 277
+  notes: DSMZ Medium 277 dissolves agar in 800 ml water before adding cherry extract.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve 20.0 g agar in 800 ml water and sterilize. Add 200 ml cherry
-    extract, distribute in presterilized tubes and sterilize for 5 min at 120°C.
-- step_number: 2
-  action: MIX
-  description: Final pH 3.8 - 4.6.
-- step_number: 3
-  action: MIX
-  description: Add 1 l water to 200.0 g pulp of sour stone cherries.
-- step_number: 4
   action: HEAT
-  description: Heat to boiling and simmer gently for 2 h . Strain through cloth and
-    sterilize at 110°C for 30 minutes .
+  description: Add 1 l water to 200.0 g pulp of sour stone cherries, heat to boiling,
+    simmer gently for 2 h, and strain through cloth.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Sterilize the cherry extract at 110 C for 30 min.
+- step_number: 3
+  action: DISSOLVE
+  description: Dissolve 20.0 g agar in 800 ml water and sterilize.
+- step_number: 4
+  action: MIX
+  description: Add 200 ml cherry extract, distribute in presterilized tubes, and sterilize
+    for 5 min at 120 C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,4 +87,51 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_dsmz_277_cherry_agar_score15.py
+  action: RESOLVED_DSMZ_277_CHERRY_AGAR_SCORE15
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium277.pdf
+  notes: DSMZ Medium 277 prepares CHERRY AGAR (CBS formula) from a cherry extract
+    made by simmering 200.0 g pulp of sour stone cherries in 1 l water, then adds
+    200 ml sterilized cherry extract to 20.0 g agar dissolved in 800 ml water. Final
+    pH is 3.8-4.6.
 kg_microbe_match: mediadive.medium:12
+solutions:
+- preferred_term: Cherry extract
+  concentration:
+    value: '200.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 277
+  notes: DSMZ Medium 277 adds 200 ml sterilized cherry extract.
+  composition:
+  - preferred_term: Pulp of sour stone cherries
+    concentration:
+      value: '200.0'
+      unit: G_PER_L
+    source: DSMZ Medium 277
+    notes: DSMZ Medium 277 extracts 200.0 g pulp of sour stone cherries in water.
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    source: DSMZ Medium 277
+    notes: DSMZ Medium 277 adds 1 l water while preparing the cherry extract.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  preparation_notes: Add 1 l water to 200.0 g pulp of sour stone cherries, heat to
+    boiling, simmer gently for 2 h, strain through cloth, and sterilize at 110 C for
+    30 min.
+sterilization:
+  method: AUTOCLAVE
+  notes: DSMZ Medium 277 sterilizes the cherry extract at 110 C for 30 min and the
+    distributed final medium at 120 C for 5 min.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium277.pdf

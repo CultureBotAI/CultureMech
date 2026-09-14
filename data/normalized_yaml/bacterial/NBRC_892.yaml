@@ -1,25 +1,42 @@
 id: CultureMech:007502
-name: '892'
-original_name: '892'
+name: Soybean Casein Digest Agar
+original_name: Soybean Casein Digest Agar
 category: bacterial
 description: 892. NBRC 891.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: NBRC Medium 891
+  term:
+    id: nbrc.medium:891
+    label: NBRC Medium 891
+ph_range:
+  min: 7.1
+  max: 7.5
 ingredients:
 - preferred_term: Casein peptone
   concentration:
     value: '15'
     unit: G_PER_L
+  term:
+    id: FOODON:03315719
+    label: Casein peptone
 - preferred_term: Soybean peptone
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315720
+    label: Soy peptone
 - preferred_term: NaCl
   concentration:
     value: '5'
     unit: G_PER_L
   term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
 - preferred_term: Agar
@@ -29,6 +46,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -36,16 +56,17 @@ ingredients:
   term:
     id: CHEBI:15377
     label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  description: Prepare the listed Soybean Casein Digest Agar formula with casein peptone,
+    soybean peptone, NaCl, agar, and distilled water.
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH if needed
-- step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  description: Adjust the medium to pH 7.1-7.5.
 curation_history:
 - timestamp: '2026-02-20T00:22:35.982294Z'
   curator: nbrc-import
@@ -80,4 +101,21 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 3 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
-notes: pH 7.1-7.5
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_nbrc_892_score15.py
+  action: RESOLVED_NBRC_892_SCORE15
+  changes: Grounded recovered NBRC Medium 891 formula
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=891
+  notes: Added the NBRC Medium 891 source term and official title, structured its
+    pH range, grounded every source-listed ingredient, replaced generic preparation
+    instructions with source-specific steps, and added the official NBRC reference.
+notes: 'Source: NBRC Medium 891 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=891
+
+
+  NBRC lists Soybean Casein Digest Agar with casein peptone, soybean peptone, NaCl,
+  agar, and distilled water at final pH 7.1-7.5.'
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=891

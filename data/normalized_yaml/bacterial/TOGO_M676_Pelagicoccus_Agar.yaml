@@ -5,39 +5,43 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.5
 ingredients:
+- preferred_term: Marine broth 2216 (BD-Difco)
+  concentration:
+    value: '37.4'
+    unit: G_PER_L
+  source: TOGO M676 / JCM Medium 659 liquid form
+  notes: TOGO M676 / JCM Medium 659 liquid form lists 37.4 g/L Marine broth 2216 (BD-Difco);
+    this commercial medium product is retained as an opaque complex component.
+- preferred_term: R2A broth (Daigo)
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+  source: TOGO M676 / JCM Medium 659 liquid form
+  notes: TOGO M676 / JCM Medium 659 liquid form lists 1.6 g/L R2A broth (Daigo); this
+    commercial medium product is retained as an opaque complex component.
 - preferred_term: Distilled water
   concentration:
-    value: '250'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '250.0'
+    unit: ML_PER_L
+  source: TOGO M676 / JCM Medium 659 liquid form
+  notes: TOGO M676 / JCM Medium 659 liquid form lists 250.0 ml/L Distilled water.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: Marine broth 2216 (BD-Difco)
-  concentration:
-    value: '37.4'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-- preferred_term: R2A broth (Daigo)
-  concentration:
-    value: '1.6'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 media_term:
   preferred_term: TOGO Medium M676
   term:
     id: TOGO:M676
     label: Pelagicoccus Agar
-notes: 'Source: https://togomedium.org/medium/M676
-
-  Original source: JCM - JCM_M659-2
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=659'
+notes: JCM Medium 659 directs the liquid medium to dissolve 37.4 g/L Marine Broth
+  2216 (BD-Difco) and 1.6 g/L R2A broth (Daigo) in the artificial sea water; TOGO
+  M676 imports that liquid form with 750.0 ml/L Artificial seawater and 250.0 ml/L
+  Distilled water.
 applications:
 - Microbial cultivation
 curation_history:
@@ -80,11 +84,131 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m675_m676_score15.py
+  action: RESOLVED_TOGO_M676_SCORE15
+  source: https://togomedium.org/medium/M676; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=659;
+    https://mediadive.dsmz.de/medium/J659; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=346
+  notes: Corrected the imported distilled-water and Artificial seawater units, replaced
+    the empty Artificial seawater cross-reference with a 750.0 ml/L inline stock solution,
+    added pH 7.5, kept the commercial Marine broth and R2A broth products ungrounded,
+    and linked the JCM 659 agar parent as a physical-state variant.
 solutions:
-- preferred_term: Artificial seawater (see Medium [M675])
-  composition: []
-  notes: Cross-reference to Medium M675
+- preferred_term: Artificial seawater
   concentration:
-    value: '750'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '750.0'
+    unit: ML_PER_L
+  source: JCM Medium 659
+  notes: JCM Medium 659 adds 750.0 ml/L Artificial seawater prepared from the printed
+    subrecipe.
+  culturemech_term:
+    id: CultureMech:013514
+    label: Artificial seawater
+  composition:
+  - preferred_term: NaCl
+    concentration:
+      value: '24.0'
+      unit: G_PER_L
+    source: JCM Medium 659
+    notes: JCM Medium 659 lists 24.0 g/L NaCl.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '7.0'
+      unit: G_PER_L
+    source: JCM Medium 659
+    notes: JCM Medium 659 lists 7.0 g/L MgSO4 x 7 H2O.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: MgCl2 x 6 H2O
+    concentration:
+      value: '5.3'
+      unit: G_PER_L
+    source: JCM Medium 659
+    notes: JCM Medium 659 lists 5.3 g/L MgCl2 x 6 H2O.
+    term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+  - preferred_term: KCl
+    concentration:
+      value: '0.7'
+      unit: G_PER_L
+    source: JCM Medium 659
+    notes: JCM Medium 659 lists 0.7 g/L KCl.
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+  - preferred_term: CaCl2 x 2 H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: JCM Medium 659
+    notes: JCM Medium 659 lists 0.1 g/L CaCl2 x 2 H2O.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 659
+    notes: JCM Medium 659 lists 1.0 L Distilled water in the Artificial seawater stock
+      solution.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Combine the listed commercial medium components with 750.0 ml Artificial
+    seawater and 250.0 ml distilled water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.5.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: JCM's default instruction is to autoclave media at 121 C for 15 min.
+parent_media:
+  path: data/normalized_yaml/bacterial/pelagicoccus_agar.yaml
+  relationship: PHYSICAL_STATE_VARIANT
+  id: CultureMech:003004
+  name: pelagicoccus_agar
+  notes: TOGO M676 represents the liquid JCM Medium 659 formulation.
+variant_relationship: PHYSICAL_STATE_VARIANT
+variant_modifications:
+- Substitutes 37.4 g/L Marine broth 2216 and 1.6 g/L R2A broth for the solidifying
+  agar products in JCM Medium 659.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M676
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=659
+- reference: https://mediadive.dsmz.de/medium/J659
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=346

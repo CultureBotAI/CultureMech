@@ -6,28 +6,28 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: isovitalex (BD Biosciences)
+- preferred_term: IsoVitaleX (BD Biosciences)
   concentration:
-    value: '1'
-    unit: PERCENT_W_V
-- preferred_term: CO2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-  term:
-    id: CHEBI:16526
-    label: carbon dioxide
-- preferred_term: chocolate agar plates
+    value: '1.0'
+    unit: PERCENT_V_V
+  source: TOGO M2975
+  notes: TOGO M2975 lists chocolate agar plates supplemented with 1% IsoVitaleX from
+    BD Biosciences.
+- preferred_term: Chocolate agar plates
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M2975
+  notes: TOGO M2975 lists chocolate agar plates but does not disclose the plate formulation
+    or amount.
 media_term:
   preferred_term: TOGO Medium M2975
   term:
     id: TOGO:M2975
     label: chocolate agar plates (supplemented with 1% isovitalex)
-notes: 'Source: https://togomedium.org/medium/M2975'
+notes: TOGO M2975 quotes growth of H. influenzae strains at 37 C in room air or 5%
+  CO2, where indicated, on chocolate agar plates supplemented with 1% IsoVitaleX from
+  BD Biosciences; the source does not disclose the chocolate agar plate formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -53,3 +53,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2975_chocolate_isovitalex_score15.py
+  action: RESOLVED_TOGO_M2975_CHOCOLATE_ISOVITALEX_SCORE15
+  source: https://togomedium.org/medium/M2975
+  notes: TOGO M2975 quotes growth of H. influenzae strains at 37 C in room air or
+    5% CO2, where indicated, on chocolate agar plates supplemented with 1% IsoVitaleX
+    from BD Biosciences; the source does not disclose the chocolate agar plate formulation.
+temperature_value: 37.0
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2975

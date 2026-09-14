@@ -10,23 +10,177 @@ media_term:
   term:
     id: mediadive.medium:J688
     label: MB MEDIUM WITH FORMATE
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=688'
+notes: 'TOGO M708 records JCM Medium 688 as MB Medium With Formate: Solution A contains
+  920 ml distilled water plus salts, yeast extract, Trypticase peptone, 10 ml trace
+  minerals from M142, and 1 ml selenite-tungstate solution from M431; per liter, add
+  5 ml each of 5% Na2S x 9H2O and 5% L-cysteine x HCl x H2O, 50 ml of 136 g/L sodium
+  formate stock, and 10 ml trace vitamins from M190.'
 ingredients:
-- preferred_term: Sodium formate
-  term:
-    id: CHEBI:62965
-    label: sodium formate
+- preferred_term: Distilled water
   concentration:
-    value: '136'
-    unit: G_PER_L
+    value: '920'
+    unit: ML_PER_L
+  source: TOGO M708/JCM Medium 688
+  notes: TOGO M708/JCM Medium 688 lists 920 ml distilled water in Solution A.
+  term:
+    id: CHEBI:15377
+    label: water
   mediaingredientmech_chebi_term:
-    id: CHEBI:62965
-    label: sodium formate
+    id: CHEBI:15377
+    label: water
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  source: TOGO M708/JCM Medium 688
+  notes: TOGO M708/JCM Medium 688 lists 2 g yeast extract in Solution A.
+- preferred_term: NaCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  source: TOGO M708/JCM Medium 688
+  notes: TOGO M708/JCM Medium 688 lists 10 g NaCl in Solution A.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2 x 2H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  source: TOGO M708/JCM Medium 688
+  notes: TOGO M708/JCM Medium 688 lists 0.4 g CaCl2 x 2H2O in Solution A.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  source: TOGO M708/JCM Medium 688
+  notes: TOGO M708/JCM Medium 688 lists 1 g NH4Cl in Solution A.
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  source: TOGO M708/JCM Medium 688
+  notes: TOGO M708/JCM Medium 688 lists 0.4 g K2HPO4 in Solution A.
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  source: TOGO M708/JCM Medium 688
+  notes: TOGO M708/JCM Medium 688 lists 0.5 mg resazurin in Solution A.
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: MgCl2 x 6H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  source: TOGO M708/JCM Medium 688
+  notes: TOGO M708/JCM Medium 688 lists 1 g MgCl2 x 6H2O in Solution A.
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: TOGO M708/JCM Medium 688
+  notes: TOGO M708/JCM Medium 688 lists 0.5 g KCl in Solution A.
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: NaHCO3
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  source: TOGO M708/JCM Medium 688
+  notes: TOGO M708/JCM Medium 688 lists 4 g NaHCO3 in Solution A.
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  source: TOGO M708/JCM Medium 688
+  notes: TOGO M708/JCM Medium 688 lists 2 g Trypticase peptone in Solution A.
+- preferred_term: CO2
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: TOGO M708/JCM Medium 688
+  notes: TOGO M708/JCM Medium 688 lists CO2 gas under N2-CO2 (80:20) in Solution A.
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
+- preferred_term: N2
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: TOGO M708/JCM Medium 688
+  notes: TOGO M708/JCM Medium 688 lists N2 gas under N2-CO2 (80:20) in Solution A.
+  term:
+    id: CHEBI:17997
+    label: dinitrogen
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17997
+    label: dinitrogen
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 687, replacing Methanol solution with Sodium formate
-    solution (see below).
+  description: Mix Solution A components except NaHCO3.
+- step_number: 2
+  action: HEAT
+  description: Bring to a boil for several seconds and cool under N2-CO2 (80:20).
+- step_number: 3
+  action: MIX
+  description: Add NaHCO3, mix thoroughly, and distribute the medium into culture
+    vessels under N2-CO2 (80:20).
+- step_number: 4
+  action: AUTOCLAVE
+  description: Seal with butyl rubber stoppers and autoclave.
+- step_number: 5
+  action: FILTER_STERILIZE
+  description: Filter-sterilize the sodium formate solution.
+- step_number: 6
+  action: MIX
+  description: Finally, add the sterile 5% Na2S x 9H2O, 5% L-cysteine x HCl x H2O,
+    sodium formate, and trace vitamin solutions per liter.
 applications:
 - Microbial cultivation
 curation_history:
@@ -53,4 +207,410 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_688_mb_formate_score20.py
+  action: RESOLVED_JCM_688_MB_FORMATE_SCORE20
+  source: https://togomedium.org/medium/M708
+  notes: 'TOGO M708 records JCM Medium 688 as MB Medium With Formate: Solution A contains
+    920 ml distilled water plus salts, yeast extract, Trypticase peptone, 10 ml trace
+    minerals from M142, and 1 ml selenite-tungstate solution from M431; per liter,
+    add 5 ml each of 5% Na2S x 9H2O and 5% L-cysteine x HCl x H2O, 50 ml of 136 g/L
+    sodium formate stock, and 10 ml trace vitamins from M190.'
 kg_microbe_match: mediadive.medium:J688
+solutions:
+- preferred_term: Trace minerals (TOGO Medium M142)
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  notes: TOGO M708/JCM Medium 688 adds 10 ml/L Trace minerals from TOGO M142.
+  composition:
+  - preferred_term: MgSO4 x 7H2O
+    concentration:
+      value: '3'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: Component of TOGO M142 trace minerals.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: NaCl
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: Component of TOGO M142 trace minerals.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: CaCl2 x 2H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: Component of TOGO M142 trace minerals.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: Na2MoO4 x 2H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: Component of TOGO M142 trace minerals.
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: Component of TOGO M142 trace minerals.
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: FeSO4 x 7H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: Component of TOGO M142 trace minerals.
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+  - preferred_term: ZnSO4 x 7H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: Component of TOGO M142 trace minerals.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+  - preferred_term: CuSO4 x 5H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: Component of TOGO M142 trace minerals.
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+  - preferred_term: CoSO4 x 7H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: Component of TOGO M142 trace minerals.
+    term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+  - preferred_term: Nitrilotriacetic acid
+    concentration:
+      value: '1.5'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: Component of TOGO M142 trace minerals.
+    term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+  - preferred_term: MnSO4 x n H2O
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: Component of TOGO M142 trace minerals.
+    term:
+      id: CHEBI:86360
+      label: manganese(II) sulfate hydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86360
+      label: manganese(II) sulfate hydrate
+  - preferred_term: AlK(SO4)2
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: Component of TOGO M142 trace minerals.
+    term:
+      id: CHEBI:86463
+      label: potassium aluminium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86463
+      label: potassium aluminium sulfate
+  - preferred_term: KOH solution
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: TOGO M142 trace minerals
+    notes: Component of TOGO M142 trace minerals.
+    term:
+      id: CHEBI:32035
+      label: potassium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32035
+      label: potassium hydroxide
+- preferred_term: Selenite--tungstate solution (TOGO Medium M431)
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  notes: TOGO M708/JCM Medium 688 adds 1 ml/L Selenite--tungstate solution from TOGO
+    M431.
+  composition:
+  - preferred_term: Na2SeO3 x 5H2O
+    concentration:
+      value: '0.006'
+      unit: G_PER_L
+    source: TOGO M431 selenite-tungstate solution
+    notes: Component of TOGO M431 selenite-tungstate solution.
+    term:
+      id: CHEBI:131361
+      label: disodium selenite pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131361
+      label: disodium selenite pentahydrate
+  - preferred_term: Na2WO4 x 2H2O
+    concentration:
+      value: '0.008'
+      unit: G_PER_L
+    source: TOGO M431 selenite-tungstate solution
+    notes: Component of TOGO M431 selenite-tungstate solution.
+    term:
+      id: CHEBI:63939
+      label: sodium tungstate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63939
+      label: sodium tungstate dihydrate
+  - preferred_term: NaOH
+    concentration:
+      value: '0.4'
+      unit: G_PER_L
+    source: TOGO M431 selenite-tungstate solution
+    notes: Component of TOGO M431 selenite-tungstate solution.
+    term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+- preferred_term: 5% Na2S x 9H2O solution
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+  notes: TOGO M708/JCM Medium 688 adds 5 ml/L 5% Na2S x 9H2O solution.
+  composition:
+  - preferred_term: Na2S x 9H2O
+    concentration:
+      value: '50'
+      unit: G_PER_L
+    source: TOGO M708/JCM Medium 688
+    notes: Component of TOGO M708/JCM Medium 688.
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+- preferred_term: 5% L-Cysteine x HCl x H2O solution
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+  notes: TOGO M708/JCM Medium 688 adds 5 ml/L 5% L-cysteine x HCl x H2O solution.
+  composition:
+  - preferred_term: L-Cysteine x HCl x H2O
+    concentration:
+      value: '50'
+      unit: G_PER_L
+    source: TOGO M708/JCM Medium 688
+    notes: Component of TOGO M708/JCM Medium 688.
+    term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+- preferred_term: Sodium formate solution
+  concentration:
+    value: '50'
+    unit: ML_PER_L
+  notes: TOGO M708/JCM Medium 688 adds 50 ml/L filter-sterilized sodium formate stock
+    containing 6.8 g sodium formate in 50 ml water.
+  composition:
+  - preferred_term: Sodium formate
+    concentration:
+      value: '136'
+      unit: G_PER_L
+    source: TOGO M708/JCM Medium 688
+    notes: Component of TOGO M708/JCM Medium 688.
+    term:
+      id: CHEBI:62965
+      label: sodium formate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:62965
+      label: sodium formate
+- preferred_term: Trace vitamins (TOGO Medium M190)
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  notes: TOGO M708/JCM Medium 688 adds 10 ml/L Trace vitamins from TOGO M190.
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '0.002'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: Component of TOGO M190 trace vitamins.
+    term:
+      id: CHEBI:15956
+      label: Biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: Biotin
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: Component of TOGO M190 trace vitamins.
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+  - preferred_term: Thiamine-HCl
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: Component of TOGO M190 trace vitamins.
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+  - preferred_term: Calcium pantothenate
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: Component of TOGO M190 trace vitamins.
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+  - preferred_term: Pyridoxine-HCl
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: Component of TOGO M190 trace vitamins.
+    term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+  - preferred_term: Folic acid
+    concentration:
+      value: '0.002'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: Component of TOGO M190 trace vitamins.
+    term:
+      id: CHEBI:27470
+      label: Folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: Folic acid
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.0001'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: Component of TOGO M190 trace vitamins.
+    term:
+      id: CHEBI:176843
+      label: Vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: Vitamin B12
+  - preferred_term: Riboflavin
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: Component of TOGO M190 trace vitamins.
+    term:
+      id: CHEBI:17015
+      label: Riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: Riboflavin
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: Component of TOGO M190 trace vitamins.
+    term:
+      id: CHEBI:15940
+      label: Nicotinic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: Nicotinic acid
+  - preferred_term: Lipoic acid
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: Component of TOGO M190 trace vitamins.
+    term:
+      id: CHEBI:16494
+      label: lipoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16494
+      label: lipoic acid
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=688
+- reference: https://togomedium.org/medium/M708
+- reference: https://togomedium.org/medium/M142
+- reference: https://togomedium.org/medium/M190
+- reference: https://togomedium.org/medium/M431

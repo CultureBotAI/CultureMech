@@ -10,22 +10,39 @@ media_term:
   term:
     id: mediadive.medium:J245
     label: TODD HEWITT AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=245'
+notes: JCM Medium 245 contains 30.0 g Todd Hewitt Broth (BD-Difco), 15.0 g agar, and
+  1.0 L distilled water.
 ingredients:
-- preferred_term: Todd Hewitt Broth
+- preferred_term: Todd Hewitt Broth (BD-Difco)
   concentration:
-    value: '30'
+    value: '30.0'
     unit: G_PER_L
+  source: JCM Medium 245
+  notes: JCM Medium 245 lists 30.0 g Todd Hewitt Broth (BD-Difco).
 - preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: JCM Medium 245
+  notes: JCM Medium 245 lists 15.0 g agar.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: JCM Medium 245
+  notes: JCM Medium 245 lists 1000 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,4 +69,26 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_official_simple_score20.py
+  action: RESOLVED_OFFICIAL_SIMPLE_SCORE20
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=245
+  notes: JCM Medium 245 contains 30.0 g Todd Hewitt Broth (BD-Difco), 15.0 g agar,
+    and 1.0 L distilled water.
 kg_microbe_match: mediadive.medium:12
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Suspend 30.0 g Todd Hewitt Broth (BD-Difco) and 15.0 g agar in 1.0
+    L distilled water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min unless otherwise stated.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=245

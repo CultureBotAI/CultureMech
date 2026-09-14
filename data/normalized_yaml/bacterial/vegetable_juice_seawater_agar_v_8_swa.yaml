@@ -5,33 +5,72 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
+- preferred_term: Vegetable juice
+  concentration:
+    value: '200'
+    unit: ML_PER_L
+  source: TOGO M1418 / NBRC Medium 15
+  notes: TOGO M1418 / NBRC Medium 15 lists 200 ml/L Vegetable juice supernatant; this
+    food extract is retained as a source-disclosed complex component.
+- preferred_term: CaCO3
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  source: TOGO M1418 / NBRC Medium 15
+  notes: TOGO M1418 / NBRC Medium 15 lists 3 g/L CaCO3.
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
 - preferred_term: Seawater (2% salinity)
   concentration:
     value: '800'
-    unit: G_PER_L
-  notes: 'Role: Solvating media, Mineral source; Properties: Undefined component'
+    unit: ML_PER_L
+  source: TOGO M1418 / NBRC Medium 15
+  notes: TOGO M1418 / NBRC Medium 15 lists 800 ml/L Seawater at 2% salinity without
+    disclosing the seawater composition.
 - preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M1418 / NBRC Medium 15
+  notes: TOGO M1418 / NBRC Medium 15 lists 15 g/L Agar.
   term:
     id: CHEBI:2509
     label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 media_term:
   preferred_term: TOGO Medium M1418
   term:
     id: TOGO:M1418
     label: Vegetable Juice Seawater Agar (V-8 SWA)
-notes: 'Source: https://togomedium.org/medium/M1418
-
-  Original source: NBRC - NBRC_M15
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=15'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add 3 g CaCO3 to approximately 300 ml V-8 vegetable juice and stir
+    for 2 h.
+  duration: 2 h
+- step_number: 2
+  action: FILTER
+  description: Centrifuge and retain 200 ml of the clarified vegetable juice supernatant.
+- step_number: 3
+  action: MIX
+  description: Add 800 ml seawater at 2% salinity and 15 g agar to the 200 ml vegetable
+    juice supernatant.
+- step_number: 4
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+notes: TOGO M1418 imports NBRC Medium 15 as Vegetable Juice Seawater Agar (V-8 SWA).
+  NBRC 15 lists 200 ml Vegetable juice, 3 g CaCO3, 800 ml Seawater at 2% salinity,
+  and 15 g Agar at pH 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,20 +113,19 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-solutions:
-- preferred_term: CaCO3*
-  composition: []
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Inorganic
-    compound, Simple component'
-  name: Unknown solution
-- preferred_term: Vegetable juice*
-  composition: []
-  concentration:
-    value: '200'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-  name: Unknown solution
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_togo_m1418_m1424_m1678_m1896_score15.py
+  action: RESOLVED_TOGO_M1418_M1424_M1678_M1896_SCORE15
+  source: https://togomedium.org/medium/M1418; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=15
+  notes: Flattened the migrated Vegetable juice and CaCO3 solution wrappers, corrected
+    Vegetable juice and Seawater from mass-like imports to ml/L volume additions,
+    grounded CaCO3 and agar, added pH 7.0 and NBRC's V-8 juice clarification procedure,
+    and retained Vegetable juice and Seawater as sourced opaque components.
 kg_microbe_match: mediadive.medium:12
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1418
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=15

@@ -71,12 +71,25 @@ curation_history:
   curator: migrate_ph_range.py
   action: MIGRATED_PH_RANGE
   notes: 'ph_range ''6.0-7.4'' -> {''min'': 6.0, ''max'': 7.4}'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_339_wilkins_topology_score10.py
+  action: RESOLVED_KOMODO_339_WILKINS_TOPOLOGY
+  changes: Linked under WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643)
+  source: KOMODO Medium 339.1
+  notes: KOMODO Medium 339.1 applies WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643)
+    for DSM 14204, DSM 14205, DSM 14206, DSM 14207, DSM 14924, DSM 15176, DSM 15243,
+    DSM 15248, DSM 15480, DSM 15481, DSM 15498, DSM 15567, DSM 15692, DSM 17763, and
+    DSM 22608.
 parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_14428.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005041
-  name: for_dsm_14428
-variant_relationship: SOURCE_DUPLICATE
+  path: data/normalized_yaml/bacterial/wilkins_chalgren_anaerobe_broth_oxoid_cm_643.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005046
+  name: wilkins_chalgren_anaerobe_broth_oxoid_cm_643
+  notes: KOMODO Medium 339 is the WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643) base.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 339.1 applies WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643) for DSM
+  14204, DSM 14205, DSM 14206, DSM 14207, DSM 14924, DSM 15176, DSM 15243, DSM 15248,
+  DSM 15480, DSM 15481, DSM 15498, DSM 15567, DSM 15692, DSM 17763, and DSM 22608.
+data_quality_flags:
+- ingredients_curated

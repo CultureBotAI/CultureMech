@@ -17,10 +17,16 @@ ingredients:
   concentration:
     value: '9.70874'
     unit: G_PER_L
+  term:
+    id: MICRO:0000182
+    label: Tryptone
 - preferred_term: Peptone
   concentration:
     value: '5.14563'
     unit: G_PER_L
+  term:
+    id: MICRO:0000178
+    label: Peptone
 - preferred_term: PPLO broth
   concentration:
     value: '3.39806'
@@ -38,6 +44,9 @@ ingredients:
     value: '4.5'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 3.5, 1.0]'
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Phenol red
   term:
     id: CHEBI:31991
@@ -93,4 +102,10 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_sp4_score10_exact_terms.py
+  action: GROUNDED_KOMODO_SP4_SCORE10_EXACT_TERMS
+  changes: Grounded exact KOMODO SP4 score-10 ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Peptone, Tryptone, Yeast extract.
 ph_value: 7.4

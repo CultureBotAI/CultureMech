@@ -2,31 +2,190 @@ id: CultureMech:004350
 name: trace_mineral_solution_ferguson_and_mah_1983
 original_name: Trace mineral solution (Ferguson and Mah, 1983)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 3.0
-notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 2073 | DSMZ Medium: 2073 (mediadive.medium:2073)
-  | Aerobic: No | SubMedium: Yes'
+notes: KOMODO 2073 lists Trace mineral solution (Ferguson and Mah, 1983) as a defined
+  submedium at pH 3.0. Its metabolite table contains 0.50 g/L Na2-EDTA x 2 H2O, 0.15
+  g/L CoCl2 x 6 H2O, 0.10 g/L ZnCl2, 0.10 g/L MnCl2 x 4 H2O, 0.10 g/L FeSO4 x 7 H2O,
+  0.04 g/L AlCl3 x 6 H2O, 0.03 g/L Na2WO4 x 2 H2O, 0.02 g/L CuCl2 x 2 H2O, 0.02 g/L
+  NiSO4 x 6 H2O, 0.01 g/L H2SeO3, 0.01 g/L H3BO3, 0.01 g/L NaMoO4 x 2 H2O, and variable
+  HCl.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the 1 L Ferguson and Mah trace mineral stock from HCl, Na2-EDTA,
+    the cobalt, aluminum, zinc, selenium, manganese, iron, copper, nickel, borate,
+    molybdate, and tungstate salts listed by KOMODO.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust the Ferguson and Mah trace mineral stock to pH 3.0 with HCl.
 media_term:
   preferred_term: KOMODO Medium 2073
   term:
     id: komodo.medium:2073
     label: Trace mineral solution (Ferguson and Mah, 1983)
 ingredients:
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  source: KOMODO Medium 2073
+  notes: KOMODO Medium 2073 lists 0.15 g/L CoCl2 x 6 H2O.
+  term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: HCl
-  notes: Extracted from recipe notes (pH buffer)
-  data_quality_flags:
-  - extracted_from_notes
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17883
-    label: hydrogen chloride
+  source: KOMODO Medium 2073
+  notes: KOMODO Medium 2073 lists HCl without a gram amount and also identifies HCl
+    as the pH adjuster for pH 3.0.
   term:
     id: CHEBI:17883
     label: hydrogen chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+- preferred_term: AlCl3 x 6 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  source: KOMODO Medium 2073
+  notes: KOMODO Medium 2073 lists 0.04 g/L AlCl3 x 6 H2O.
+  term:
+    id: CHEBI:30115
+    label: aluminium trichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30115
+    label: aluminium trichloride hexahydrate
+- preferred_term: ZnCl2
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: KOMODO Medium 2073
+  notes: KOMODO Medium 2073 lists 0.10 g/L ZnCl2.
+  term:
+    id: CHEBI:49976
+    label: zinc dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
+- preferred_term: H2SeO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: KOMODO Medium 2073
+  notes: KOMODO Medium 2073 lists 0.01 g/L H2SeO3.
+  term:
+    id: CHEBI:26642
+    label: selenous acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26642
+    label: selenous acid
+- preferred_term: Na2-EDTA x 2 H2O
+  concentration:
+    value: '0.50'
+    unit: G_PER_L
+  source: KOMODO Medium 2073
+  notes: KOMODO Medium 2073 lists 0.50 g/L Na2-EDTA x 2 H2O.
+  term:
+    id: CHEBI:64758
+    label: EDTA disodium salt dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64758
+    label: EDTA disodium salt dihydrate
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: KOMODO Medium 2073
+  notes: KOMODO Medium 2073 lists 0.10 g/L MnCl2 x 4 H2O.
+  term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: KOMODO Medium 2073
+  notes: KOMODO Medium 2073 lists 0.10 g/L FeSO4 x 7 H2O.
+  term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+- preferred_term: CuCl2 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  source: KOMODO Medium 2073
+  notes: KOMODO Medium 2073 lists 0.02 g/L CuCl2 x 2 H2O.
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+- preferred_term: NiSO4 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  source: KOMODO Medium 2073
+  notes: KOMODO Medium 2073 lists 0.02 g/L NiSO4 x 6 H2O.
+  term:
+    id: CHEBI:53437
+    label: nickel sulfate hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53437
+    label: nickel sulfate hexahydrate
+- preferred_term: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: KOMODO Medium 2073
+  notes: KOMODO Medium 2073 lists 0.01 g/L H3BO3.
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: KOMODO Medium 2073
+  notes: KOMODO Medium 2073 lists 0.01 g/L NaMoO4 x 2 H2O; normalized here as Na2MoO4
+    x 2 H2O.
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  source: KOMODO Medium 2073
+  notes: KOMODO Medium 2073 lists 0.03 g/L Na2WO4 x 2 H2O.
+  term:
+    id: CHEBI:63939
+    label: sodium tungstate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
+    label: sodium tungstate dihydrate
 applications:
 - Microbial cultivation
 curation_history:
@@ -61,3 +220,15 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_komodo_2073_2075_score15.py
+  action: RESOLVED_KOMODO_2073_2075_SCORE15
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2073
+  notes: Replaced the incomplete KOMODO Medium 2073 import with the complete KOMODO
+    metabolite table, preserved HCl as a variable pH adjuster where KOMODO lists one,
+    and grounded disclosed components through MediaIngredientMech.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2073

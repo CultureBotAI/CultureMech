@@ -74,12 +74,22 @@ curation_history:
   curator: migrate_ph_range.py
   action: MIGRATED_PH_RANGE
   notes: 'ph_range ''6.8-7'' -> {''min'': 6.8, ''max'': 7.0}'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_339_wilkins_topology_score10.py
+  action: RESOLVED_KOMODO_339_WILKINS_TOPOLOGY
+  changes: Linked under WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643)
+  source: MediaDive Medium 339
+  notes: MediaDive Medium 339 exactly matches the KOMODO Medium 339 WILKINS-CHALGREN
+    ANAEROBE BROTH (Oxoid CM 643) base.
 parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_14428.yaml
+  path: data/normalized_yaml/bacterial/wilkins_chalgren_anaerobe_broth_oxoid_cm_643.yaml
   relationship: SOURCE_DUPLICATE
-  id: CultureMech:005041
-  name: for_dsm_14428
+  id: CultureMech:005046
+  name: wilkins_chalgren_anaerobe_broth_oxoid_cm_643
+  notes: KOMODO Medium 339 is the WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643) base.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- MediaDive Medium 339 exactly matches the KOMODO Medium 339 WILKINS-CHALGREN ANAEROBE
+  BROTH (Oxoid CM 643) base.
+data_quality_flags:
+- ingredients_curated

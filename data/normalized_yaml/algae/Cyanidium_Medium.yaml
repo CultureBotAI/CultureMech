@@ -4,76 +4,107 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: Cyanidium Medium
+  term:
+    id: UTEX:cyanidium-medium
+    label: Cyanidium Medium
+ph_value: 2.7
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
+notes: 'UTEX prepares Cyanidium Medium in 500 mL batches with ammonium sulfate, phosphate,
+  magnesium sulfate, and Soilwater: GR+ Medium adjusted to pH 2.7.'
 ingredients:
+- preferred_term: dH2O
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: UTEX starts the 500 mL Cyanidium recipe with approximately 200 mL dH2O.
 - preferred_term: (NH4)2SO4
   concentration:
     value: '3.78'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 0.5 g/500 mL; final 3.78 mM'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: A 702
+  notes: UTEX lists 0.5 g/500 mL (NH4)2SO4, for 3.78 mM final.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+  - SULFUR_SOURCE
 - preferred_term: K2HPO4
   concentration:
     value: '0.057'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 0.01 g/500 mL; final 0.057 mM'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: P 3786
-- preferred_term: MgSO4•7H2O
+  notes: UTEX lists 0.01 g/500 mL K2HPO4, for 0.057 mM final.
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.041'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 0.01 g/500 mL; final 0.041 mM'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: '230391'
+  notes: UTEX lists 0.01 g/500 mL MgSO4 x 7 H2O, for 0.041 mM final.
+  nutritional_roles:
+  - SULFUR_SOURCE
+  - TRACE_ELEMENT
 - preferred_term: 'Soilwater: GR+ Medium'
   concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'UTEX lists: amount 15 mL'
+    value: '30'
+    unit: ML_PER_L
+  culturemech_term:
+    id: CultureMech:000225
+    label: 'Soilwater: GR+ Medium'
+  notes: 'UTEX lists 30 mL prepared Soilwater: GR+ Medium per liter from 15 mL/500
+    mL.'
+solutions: []
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: To approximately 200 mL dH2O, add components in the listed order while
+    stirring continuously.
 - step_number: 2
-  action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
-- step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
-- step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
-- step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
   action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
+  description: Adjust the medium to pH 2.7.
+- step_number: 3
   action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
+  description: Bring the total volume to 500 mL with dH2O.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Cover and autoclave the medium.
+- step_number: 5
+  action: STORE
+  description: Store at refrigerator temperature.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -112,7 +143,18 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_simple_score35.py
+  action: RESOLVED_UTEX_SIMPLE_SCORE35
+  changes: Grounded simple UTEX score-35 algal components
+  source: https://utex.org/products/cyanidium-medium
+  notes: 'UTEX prepares Cyanidium Medium in 500 mL batches with ammonium sulfate,
+    phosphate, magnesium sulfate, and Soilwater: GR+ Medium adjusted to pH 2.7.'
 references:
 - reference: UTEX:cyanidium-medium
 - reference: https://utex.org/products/cyanidium-medium
+- reference: https://utex.org/products/soilwater-gr-plus-medium
 original_name: Cyanidium Medium
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

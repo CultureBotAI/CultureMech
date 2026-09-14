@@ -78,4 +78,16 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2361_score15.py
+  action: LINKED_TOGO_M2361_SOURCE_DUPLICATE
+  source: https://togomedium.org/medium/M2361; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1463.pdf
+  notes: Linked TOGO M2361 as a source duplicate of DSMZ Medium 1463.
 kg_microbe_match: mediadive.medium:1143
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M2361_YE_10_Ca_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008947
+  name: ye_10_ca_medium
+  notes: TOGO M2361 imports DSMZ Medium 1463 and explicitly retains its distilled-water
+    row.

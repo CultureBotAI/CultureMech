@@ -52,10 +52,20 @@ def test_ingredient_chebi_id_falls_back_to_chebi_term():
     assert _render.ingredient_chebi_id(ing) == "CHEBI:17234"
 
 
-def test_ingredient_display_id_prefers_chebi_then_any_term():
+def test_ingredient_display_id_prefers_chebi_then_culturemech_then_any_term():
     assert _render.ingredient_display_id({"term": {"id": "CHEBI:17234"}}) == "CHEBI:17234"
+    assert (
+        _render.ingredient_display_id({"culturemech_term": {"id": "CultureMech:003183"}})
+        == "CultureMech:003183"
+    )
     assert _render.ingredient_display_id({"term": {"id": "mediadive.compound:5"}}) == "mediadive.compound:5"
     assert _render.ingredient_display_id({"preferred_term": "Distilled water"}) == "ing:Distilled water"
+
+
+def test_solution_display_id_prefers_external_then_culturemech_term():
+    assert _render.solution_display_id({"term": {"id": "mediadive.solution:2227"}}) == "mediadive.solution:2227"
+    assert _render.solution_display_id({"culturemech_term": {"id": "CultureMech:000037"}}) == "CultureMech:000037"
+    assert _render.solution_display_id({"preferred_term": "Bristol Medium"}) == "sol:Bristol Medium"
 
 
 # ---------------- single-recipe rendering ----------------
@@ -202,6 +212,30 @@ def test_single_recipe_solutions_produce_solution_layer(tmp_path):
     # Composition ingredients under the solution.
     assert "mediadive_solution_2227 --> CHEBI_15956" in mmd
     assert "mediadive_solution_2227 --> CHEBI_27470" in mmd
+
+
+def test_single_recipe_emits_prepared_solution_nodes_without_inline_composition(tmp_path):
+    recipe = _write(tmp_path, {
+        "preferred_term": "Prepared solution medium",
+        "ingredients": [],
+        "solutions": [
+            {
+                "preferred_term": "Bristol Medium",
+                "culturemech_term": {"id": "CultureMech:000037", "label": "Bristol Medium"},
+            },
+            {
+                "preferred_term": "Soilwater: GR+ Medium",
+                "culturemech_term": {"id": "CultureMech:000225", "label": "Soilwater: GR+ Medium"},
+            },
+        ],
+    })
+
+    mmd = _render.render_single_recipe(recipe)
+
+    assert 'CultureMech_000037(["`Bristol Medium\\n(CultureMech:000037)`"]):::solution' in mmd
+    assert "MEDIUM -.-> CultureMech_000037" in mmd
+    assert 'CultureMech_000225(["`Soilwater: GR+ Medium\\n(CultureMech:000225)`"]):::solution' in mmd
+    assert "MEDIUM -.-> CultureMech_000225" in mmd
 
 
 def test_single_recipe_max_ingredients_cap_emits_sentinel(tmp_path):

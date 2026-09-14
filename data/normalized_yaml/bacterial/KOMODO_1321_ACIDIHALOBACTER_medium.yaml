@@ -135,3 +135,16 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1321_acidihalobacter_score10.py
+  action: RESOLVED_KOMODO_1321_ACIDIHALOBACTER_TOPOLOGY
+  changes: Promoted KOMODO Medium 1321 to the Acidihalobacter parent
+  source: KOMODO Medium 1321 and KOMODO Medium 1321.1
+  notes: Linked the strain-specific KOMODO Medium 1321.1 record under the KOMODO Medium
+    1321 ACIDIHALOBACTER base.
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_14174.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004076
+  name: for_dsm_14174
+  notes: KOMODO Medium 1321.1 applies ACIDIHALOBACTER medium to DSM 14174.

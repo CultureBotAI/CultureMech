@@ -6,6 +6,12 @@ description: 393. NBRC 392.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 6.9
+media_term:
+  preferred_term: NBRC Medium 392
+  term:
+    id: nbrc.medium:392
+    label: NBRC Medium 392
 ingredients:
 - preferred_term: KCl
   concentration:
@@ -18,6 +24,9 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '3.45'
@@ -33,6 +42,9 @@ ingredients:
   concentration:
     value: '0.14'
     unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
 - preferred_term: K2HPO4
   concentration:
     value: '0.14'
@@ -58,6 +70,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Sodium lactate
   concentration:
     value: '1.5'
@@ -69,6 +84,9 @@ ingredients:
   concentration:
     value: '2'
     unit: MG_PER_L
+  term:
+    id: CHEBI:131378
+    label: Fe(NH4)2(SO4)2 x 7 H2O
 - preferred_term: Trace element solution*
   concentration:
     value: '10'
@@ -84,6 +102,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -93,14 +114,27 @@ ingredients:
     label: water
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  action: MIX
+  description: Dissolve ingredients except bicarbonate and sulfide.
 - step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
+  action: HEAT
+  description: Bring to a boil for a few minutes.
 - step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: COOL
+  description: Cool quickly to room temperature while gassing with N2/CO2 (80/20).
+- step_number: 4
+  action: ADJUST_PH
+  description: Add sodium bicarbonate and adjust pH to 6.9.
+- step_number: 5
+  action: ALIQUOT
+  description: Distribute 20 ml portions into 100 ml serum bottles under N2/CO2.
+- step_number: 6
+  action: AUTOCLAVE
+  description: Seal and pressurize the bottles to 2 bar overpressure, then autoclave.
+- step_number: 7
+  action: MIX
+  description: Before use, reduce the medium with sodium sulfide from an anaerobic
+    sterile neutral stock solution.
 curation_history:
 - timestamp: '2026-02-20T00:22:35.956250Z'
   curator: nbrc-import
@@ -138,6 +172,12 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 12 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=392
+  notes: Preserved the recovered NBRC Medium 392 composition table.
 solutions:
 - preferred_term: Trace element solution
   composition:
@@ -167,6 +207,9 @@ solutions:
     concentration:
       value: '0.1'
       unit: G_PER_L
+    term:
+      id: CHEBI:75836
+      label: FeSO4 x 7 H2O
   - preferred_term: CoSO4·7H2O
     concentration:
       value: '0.18'
@@ -175,14 +218,23 @@ solutions:
     concentration:
       value: '0.1'
       unit: G_PER_L
+    term:
+      id: CHEBI:86158
+      label: CaCl2 x 2 H2O
   - preferred_term: ZnSO4·7H2O
     concentration:
       value: '0.18'
       unit: G_PER_L
+    term:
+      id: CHEBI:32312
+      label: ZnSO4 x 7 H2O
   - preferred_term: CuSO4·5H2O
     concentration:
       value: '0.01'
       unit: G_PER_L
+    term:
+      id: CHEBI:31440
+      label: CuSO4 x 5 H2O
   - preferred_term: KAl(SO4)2·12H2O
     concentration:
       value: '4'
@@ -198,6 +250,9 @@ solutions:
     concentration:
       value: '0.01'
       unit: G_PER_L
+    term:
+      id: CHEBI:75213
+      label: Na2MoO4 x 2 H2O
   - preferred_term: NiCl2·6H2O
     concentration:
       value: '0.025'
@@ -206,6 +261,9 @@ solutions:
     concentration:
       value: '0.8'
       unit: MG_PER_L
+    term:
+      id: CHEBI:131361
+      label: Na2SeO3 x 5 H2O
   - preferred_term: Na2WO4·H2O
     concentration:
       value: '0.8'
@@ -218,10 +276,15 @@ solutions:
       id: CHEBI:15377
       label: water
   name: Trace element solution
-notes: Dissolve ingredients except bicarbonate and sulfide, bring to boil for few
-  minutes, then cool quickly to room temperature while gassing with N2/CO2 (80/20),
-  add sodium bicarbonate and adjust pH to 6.9. Distribute in serum bottles (20 ml
-  per 100 ml bottle) under N2/CO2, seal, pressurize bottles up to 2 bar overpressure,
-  then autoclave. Before use, reduce the medium with sodium sulfide from anaerobic
-  sterile neutral stock solution. First dissolve nitrilotriacetic acid and adjust
-  pH to 6.5 with KOH, then add minerals. Final pH 7.0 (with KOH).
+notes: 'Source: NBRC Medium 392 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=392
+
+
+  The NBRC Archaeoglobus Medium table lists final pH 6.9 after bicarbonate addition,
+  anaerobic N2/CO2 preparation in sealed serum bottles, sodium sulfide reduction before
+  use, and a nested trace element solution brought to pH 7.0 with KOH.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=392

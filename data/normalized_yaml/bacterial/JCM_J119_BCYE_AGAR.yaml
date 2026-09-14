@@ -10,28 +10,37 @@ media_term:
   term:
     id: mediadive.medium:J119
     label: BCYE AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=119'
+notes: 'Source: JCM Medium 119 | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=119
+
+
+  The JCM BCYE Agar table lists BCYE agar, Legionella agar enrichment, and distilled
+  water as supplied BD-Difco products.'
 ingredients:
-- preferred_term: BCYE agar
-  term:
-    id: CHEBI:2509
-    label: agar
+- preferred_term: BCYE agar (BD-Difco)
   concentration:
     value: '37'
     unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Legionella agar enrichment
-  term:
-    id: CHEBI:2509
-    label: agar
+  notes: JCM Medium 119 lists this commercial BD-Difco medium base as supplied.
+- preferred_term: Legionella agar enrichment (BD-Difco)
   concentration:
     value: '100'
-    unit: G_PER_L
+    unit: ML_PER_L
+  notes: JCM Medium 119 lists this commercial BD-Difco enrichment as supplied.
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
   mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
+    id: CHEBI:15377
+    label: water
+  notes: JCM Medium 119 brings the base plus enrichment to 1 L.
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -57,4 +66,22 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_bcye_score20.py
+  action: RESOLVED_JCM_J119_BCYE_AGAR
+  changes: Resolved JCM Medium 119 BCYE Agar composition
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=119
+  notes: Rebuilt the BCYE Agar ingredients from the JCM Medium 119 table.
 kg_microbe_match: mediadive.medium:12
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M111_BCYE_Agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:007640
+  name: bcye_agar
+  notes: TOGO Medium M111 points to the same JCM Medium 119 recipe.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=119

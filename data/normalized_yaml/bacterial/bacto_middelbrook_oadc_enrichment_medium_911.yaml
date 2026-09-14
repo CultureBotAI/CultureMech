@@ -2,6 +2,7 @@ id: CultureMech:004791
 name: bacto_middelbrook_oadc_enrichment_medium_911
 original_name: Bacto Middelbrook OADC enrichment (medium 911)
 category: bacterial
+record_kind: SOLUTION
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID

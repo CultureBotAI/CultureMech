@@ -4,37 +4,37 @@ Generated from `reports/media_content_review_manifest.tsv`.
 
 ## Scope
 
-- Candidate parent groups: 1,451
-- Candidate parent-child links: 9,145
-- Proposed links ready for curated migration: 3,251
-- Links requiring review before migration: 5,894
+- Candidate parent groups: 625
+- Candidate parent-child links: 1,778
+- Proposed links ready for curated migration: 1,032
+- Links requiring review before migration: 746
 
 ## Group Status
 
 | Status | Groups |
 |---|---:|
-| `PROPOSED` | 1,306 |
-| `REVIEW_REQUIRED` | 145 |
+| `PROPOSED` | 508 |
+| `REVIEW_REQUIRED` | 117 |
 
 ## Link Confidence
 
 | Confidence | Links |
 |---|---:|
-| `HIGH` | 2,878 |
-| `LOW` | 5,284 |
-| `MEDIUM` | 983 |
+| `HIGH` | 751 |
+| `LOW` | 290 |
+| `MEDIUM` | 737 |
 
 ## Relationship Counts
 
 | Relationship | Links |
 |---|---:|
-| `PHYSICAL_STATE_VARIANT` | 4,857 |
-| `SOURCE_DUPLICATE` | 2,517 |
-| `DERIVED_FROM` | 691 |
-| `CONCENTRATION_VARIANT` | 652 |
-| `SUPPLEMENTED_VARIANT` | 224 |
-| `SALINITY_VARIANT` | 143 |
-| `SUBSTITUTED_COMPONENT_VARIANT` | 58 |
+| `SOURCE_DUPLICATE` | 774 |
+| `CONCENTRATION_VARIANT` | 491 |
+| `DERIVED_FROM` | 169 |
+| `SUPPLEMENTED_VARIANT` | 160 |
+| `SALINITY_VARIANT` | 80 |
+| `SUBSTITUTED_COMPONENT_VARIANT` | 56 |
+| `PHYSICAL_STATE_VARIANT` | 45 |
 | `OMITTED_COMPONENT_VARIANT` | 3 |
 
 ## Outputs

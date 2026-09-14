@@ -10,22 +10,39 @@ media_term:
   term:
     id: mediadive.medium:J853
     label: MRS FRUCTOSE MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=853'
+notes: JCM Medium 853 contains 55.0 g Lactobacilli MRS broth (BD-Difco), 10.0 g fructose,
+  and 1.0 L distilled water.
 ingredients:
-- preferred_term: Lactobacilli MRS broth
+- preferred_term: Lactobacilli MRS broth (BD-Difco)
   concentration:
-    value: '55'
+    value: '55.0'
     unit: G_PER_L
+  source: JCM Medium 853
+  notes: JCM Medium 853 lists 55.0 g Lactobacilli MRS broth (BD-Difco).
 - preferred_term: Fructose
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: JCM Medium 853
+  notes: JCM Medium 853 lists 10.0 g fructose.
   term:
     id: CHEBI:28757
     label: fructose
-  concentration:
-    value: '10'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28757
     label: fructose
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: JCM Medium 853
+  notes: JCM Medium 853 lists 1000 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,3 +69,25 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_official_simple_score20.py
+  action: RESOLVED_OFFICIAL_SIMPLE_SCORE20
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=853
+  notes: JCM Medium 853 contains 55.0 g Lactobacilli MRS broth (BD-Difco), 10.0 g
+    fructose, and 1.0 L distilled water.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Suspend 55.0 g Lactobacilli MRS broth (BD-Difco) and 10.0 g fructose
+    in 1.0 L distilled water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min unless otherwise stated.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=853

@@ -103,6 +103,14 @@ curation_history:
   changes: ingredients 2 -> 3; solutions 0 -> 0
   notes: Rebuilt sw_ca from the reviewed CCAP PDF. Preserved stock boundaries and
     per-vessel quantities; ingredient identities follow the MediaIngredientMech SSSOM.
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_ccap_sw_flags_score20.py
+  action: MARKED_CCAP_SW_SPARSE_SCORE20_GRAPH
+  notes: Marked reviewed CCAP S/W soil-water components as intentionally curated with
+    unmapped bulk material identities.
 kg_microbe_match: mediadive.medium:C101
 sterilization:
   method: AUTOCLAVE
+data_quality_flags:
+- has_unmapped_ingredients
+- ingredients_curated

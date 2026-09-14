@@ -177,10 +177,22 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-variant_children:
-- path: data/normalized_yaml/bacterial/acidithiobacillus_caldus_medium.yaml
-  relationship: SOURCE_DUPLICATE
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1501_acidithiobacillus_score10.py
+  action: RESOLVED_KOMODO_1501_ACIDITHIOBACILLUS_PH_VARIANT
+  changes: Linked under DSMZ Medium 150a as a pH variant
+  source: KOMODO Medium 150.1
+  notes: KOMODO Medium 150.1 preserves the 13-component Acidithiobacillus caldus signature
+    and records pH 0.8 for DSM 18786.
+parent_media:
+  path: data/normalized_yaml/bacterial/acidithiobacillus_caldus_medium.yaml
+  relationship: PH_VARIANT
   id: CultureMech:000981
   name: acidithiobacillus_caldus_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: DSMZ Medium 150a is the pH 2.5 Acidithiobacillus caldus base.
+variant_relationship: PH_VARIANT
+variant_modifications:
+- KOMODO Medium 150.1 preserves the 13-component Acidithiobacillus caldus signature
+  and records pH 0.8 for DSM 18786.
+data_quality_flags:
+- ingredients_curated

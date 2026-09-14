@@ -2,6 +2,7 @@ id: CultureMech:004389
 name: artificial_sea_water_3_times_concentrated_medium_590
 original_name: Artificial sea water, 3 times concentrated (medium 590)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

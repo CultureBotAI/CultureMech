@@ -4,53 +4,69 @@ term:
   id: mediadive.solution:3636
   label: Main sol. J15
 composition:
-- preferred_term: Tryptone
+- preferred_term: Tryptone (BD-Difco)
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
+  source: MediaDive solution 3636 / JCM Medium 15
+  notes: MediaDive solution 3636 / JCM Medium 15 lists 10.0 g/L Tryptone (BD-Difco).
   term:
-    id: mediadive.compound:71
+    id: MICRO:0000182
     label: Tryptone
-- preferred_term: Yeast extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
+- preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
+  source: MediaDive solution 3636 / JCM Medium 15
+  notes: MediaDive solution 3636 / JCM Medium 15 lists 10.0 g/L Yeast extract (BD-Difco).
   term:
-    id: mediadive.compound:16
+    id: FOODON:03315426
     label: Yeast extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
+  - VITAMIN_SOURCE
 - preferred_term: Tomato juice
   concentration:
-    value: '200'
-    unit: PERCENT_V_V
-  notes: ' filtered, pH 7.0'
+    value: '200.0'
+    unit: ML_PER_L
+  source: MediaDive solution 3636 / JCM Medium 15
+  notes: MediaDive solution 3636 / JCM Medium 15 lists 200.0 ml/L filtered tomato
+    juice that was adjusted to pH 7.0 before addition.
   term:
-    id: mediadive.compound:105
+    id: FOODON:03301454
     label: Tomato juice
 - preferred_term: Agar
   concentration:
-    value: '11'
+    value: '11.0'
     unit: G_PER_L
+  source: MediaDive solution 3636 / JCM Medium 15
+  notes: MediaDive solution 3636 / JCM Medium 15 lists 11.0 g/L Agar.
   term:
-    id: mediadive.compound:3
-    label: Agar
-  chebi_term:
     id: CHEBI:2509
     label: agar
-    confidence: 0.7
-    match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 - preferred_term: Distilled water
   concentration:
-    value: '800'
-    unit: PERCENT_V_V
+    value: '800.0'
+    unit: ML_PER_L
+  source: MediaDive solution 3636 / JCM Medium 15
+  notes: MediaDive solution 3636 / JCM Medium 15 lists 800.0 ml/L Distilled water.
   term:
-    id: mediadive.compound:4
-    label: Distilled water
-  chebi_term:
     id: CHEBI:15377
     label: water
-    confidence: 0.7
-    match_type: corpus_consensus
-preparation_notes: Adjust pH to 7.2.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+preparation_notes: Mix BD-Difco tryptone, BD-Difco yeast extract, filtered tomato
+  juice, agar, and distilled water, then adjust pH to 7.2.
+notes: MediaDive solution 3636 is the complete main solution for JCM Medium J15 /
+  Tomato Juice Agar.
 curation_history:
 - timestamp: '2026-03-13T06:20:27.371043Z'
   curator: culturemech-id-assigner-v1.0
@@ -89,11 +105,16 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m8_tomato_juice_score15.py
+  action: RESOLVED_MEDIADIVE_3636_MAIN_SOL_J15
+  source: https://mediadive.dsmz.de/medium/J15
+  notes: Corrected the Tomato juice and Distilled water rows from false percent-volume
+    values to source ml/L units, restored the BD-Difco attributes for tryptone and
+    yeast extract, and removed the placeholder top-level ingredient.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/medium/J15

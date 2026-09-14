@@ -112,12 +112,22 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_545_tsb_score10.py
+  action: RESOLVED_KOMODO_545_TSB_STRAIN_VARIANT
+  changes: Linked as a TSB strain-specific variant
+  source: KOMODO Medium 545.1
+  notes: KOMODO Medium 545.1 preserves TRYPTONE SOYA BROTH components and pH 7.3 but
+    applies the recipe for DSM 22112.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_545_TRYPTONE_SOYA_BROTH_TSB.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:005984
   name: tryptone_soya_broth_tsb
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 545 is the pH 7.3 TSB base.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 545.1 preserves TRYPTONE SOYA BROTH components and pH 7.3 but applies
+  the recipe for DSM 22112.
+data_quality_flags:
+- ingredients_curated

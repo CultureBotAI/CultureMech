@@ -305,3 +305,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_479_methanohalophilus_score10.py
+  action: RESOLVED_KOMODO_479_METHANOHALOPHILUS_TOPOLOGY
+  changes: Linked under MediaDive Medium 479
+  source: KOMODO Medium 479
+  notes: KOMODO Medium 479 exactly mirrors DSMZ Medium 479.
+parent_media:
+  path: data/normalized_yaml/archaea/methanohalophilus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000266
+  name: methanohalophilus_medium
+  notes: MediaDive Medium 479 is the DSMZ METHANOHALOPHILUS MEDIUM base.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO Medium 479 exactly mirrors DSMZ Medium 479.
+data_quality_flags:
+- ingredients_curated

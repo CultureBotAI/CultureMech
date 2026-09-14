@@ -1,13 +1,18 @@
 id: CultureMech:000097
 name: n75s
 category: algae
+sources:
+- database: CCAP
+  database_id: N75S
+  url: https://www.ccap.ac.uk/wp-content/uploads/MR_N75S.pdf
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from CCAP Culture Collection. Suitable for saltwater
   algae cultivation. Recipe available in PDF format.
-notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_N75S.pdf
-salinity: marine (natural seawater or artificial seawater)
+notes: CCAP prepares N75S from 750 mL natural filtered seawater, 250 mL deionized
+  water, and 1 g Cerophyll cereal grass leaves per liter.
+salinity: marine (natural seawater)
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -50,18 +55,88 @@ curation_history:
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
     category->lowercase=1; concentration.unit aliases=1
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_algae_score45_blends_soils.py
+  action: RESOLVED_SCORE45_ALGAE_GRAPH
+  changes: Resolved score-45 algae recipe graph
+  source: https://www.ccap.ac.uk/wp-content/uploads/MR_N75S.pdf
+  notes: CCAP prepares N75S from 750 mL natural filtered seawater, 250 mL deionized
+    water, and 1 g Cerophyll cereal grass leaves per liter.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_algae_score45_blends_soils.py
+  action: LINKED_SCORE45_ALGAE_CHILDREN
+  changes: Linked score-45 algae child media to prepared-media parents
+  notes: Added or refreshed reciprocal parent-child link for algae/n75s_nsw.yaml.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_ccap_sources_score10.py
+  action: NORMALIZED_CCAP_SOURCE_SCORE10
+  changes: Normalized CCAP provenance
+  source: CCAP:N75S; https://www.ccap.ac.uk/wp-content/uploads/MR_N75S.pdf
+  notes: Copied the CCAP source identity from references and the original ccap-import
+    event into the structured sources slot recognized by review scoring.
 references:
 - reference: CCAP:N75S
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_N75S.pdf
 ingredients:
-- preferred_term: Bring
-  notes: Ontology mapping not yet available; From CCAP Medium MR_N75S.pdf; Curated
-    from CCAP Medium MR_N75S.pdf specification
+- preferred_term: Natural filtered seawater
   concentration:
-    value: '75'
-    unit: PERCENT_W_V
-  source: CCAP Medium MR_N75S.pdf
+    value: '750'
+    unit: ML_PER_L
+  term:
+    id: ENVO:00002149
+    label: sea water
+  notes: CCAP lists 750 mL Natural filtered seawater per liter.
+  physicochemical_roles:
+  - OSMOTIC_AGENT
+- preferred_term: Deionized water
+  concentration:
+    value: '250'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: CCAP lists 250 mL Deionized water per liter.
+- preferred_term: Cerophyll cereal grass leaves
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: CCAP lists 1 g/L Cerophyll cereal grass leaves from Ward's.
+  nutritional_roles:
+  - CARBON_SOURCE
+solutions: []
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare 75% seawater from natural filtered seawater and deionized water.
+- step_number: 2
+  action: HEAT
+  description: Bring the 75% seawater to the boil, add the powdered cereal leaves,
+    and boil for 5 minutes.
+- step_number: 3
+  action: MIX
+  description: Cool and restore the final volume to 1 L with deionized water.
+- step_number: 4
+  action: FILTER
+  description: Filter through Whatman GF/C paper.
+- step_number: 5
+  action: AUTOCLAVE
+  description: Autoclave at 15 psi for 15 minutes.
 data_quality_flags:
 - ingredients_curated
 - curation_method:automated_expert_mapping
+- has_ontology_mappings
+- has_unmapped_ingredients
 original_name: N75S
+sterilization:
+  method: AUTOCLAVE
+  pressure: 15
+  duration: 15 minutes
+variant_children:
+- path: data/normalized_yaml/algae/n75s_nsw.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:000098
+  name: n75s_nsw
+  notes: Blends two parts prepared N75S with one part prepared NSW.

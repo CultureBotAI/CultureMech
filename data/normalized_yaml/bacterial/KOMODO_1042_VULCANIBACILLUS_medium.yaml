@@ -354,13 +354,19 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1042_vulcanibacillus_score10.py
+  action: RESOLVED_KOMODO_1042_VULCANIBACILLUS_TOPOLOGY
+  changes: Reclassified KOMODO Medium 1042.1 as a strain variant
+  source: KOMODO Medium 1042 and 1042.1
+  notes: Linked KOMODO Medium 1042.1 under the KOMODO Medium 1042 VULCANIBACILLUS
+    base while preserving the DSMZ 1042 duplicate parent relationship.
 variant_children:
 - path: data/normalized_yaml/bacterial/for_dsm_22131.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003600
   name: for_dsm_22131
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 1042.1 applies VULCANIBACILLUS medium to DSM 22131.
 parent_media:
   path: data/normalized_yaml/bacterial/vulcanibacillus_medium.yaml
   relationship: SOURCE_DUPLICATE

@@ -81,6 +81,9 @@ source_data:
       iron-oxidizing, free-living diazotroph
     explanation: Confirms successful cultivation and characterization as iron-oxidizing
       diazotroph
+sources:
+- database: CommunityMech
+  database_id: CommunityMech:000059
 curation_history:
 - timestamp: '2026-03-15T00:15:00.445462Z'
   curator: communitymech-importer-v1.0
@@ -107,6 +110,13 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_communitymech_sources_score10_batch10.py
+  action: ADDED_COMMUNITYMECH_STRUCTURED_SOURCES_BATCH10
+  changes: Added structured CommunityMech sources
+  source: source_data.community_ids
+  notes: Promoted CommunityMech upstream IDs into sources[] for source-provenance
+    scoring.
 source_environment:
 - preferred_term: acid mine drainage
   term:

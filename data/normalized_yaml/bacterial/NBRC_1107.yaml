@@ -6,6 +6,12 @@ description: 1107. NBRC 1106.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: NBRC Medium 1106
+  term:
+    id: nbrc.medium:1106
+    label: NBRC Medium 1106
 ingredients:
 - preferred_term: NaNO3
   concentration:
@@ -50,14 +56,26 @@ ingredients:
     label: water
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  action: ALIQUOT
+  description: Dispense the medium into culture vessels and seal with butyl rubber
+    stoppers.
 - step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 minutes.
 - step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: COOL
+  description: Cool to room temperature.
+- step_number: 4
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 with sterile pH-adjusting agent by syringe without
+    opening the vessel.
+- step_number: 5
+  action: FILTER_STERILIZE
+  description: Filter-sterilize high-purity methane gas.
+- step_number: 6
+  action: MIX
+  description: Before inoculation, aseptically add methane to an approximately 1:4
+    methane-to-air headspace.
 curation_history:
 - timestamp: '2026-02-20T00:22:36.022472Z'
   curator: nbrc-import
@@ -95,6 +113,12 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 5 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1106
+  notes: Preserved the recovered NBRC Medium 1106 composition table.
 solutions:
 - preferred_term: Trace metal solution
   composition:
@@ -133,9 +157,14 @@ solutions:
       id: CHEBI:15377
       label: water
   name: Trace metal solution
-notes: pH 7 Dispense the medium into suitable culture vessels, seal with butyl rubber
-  stoppers, and autoclave at 121°C for 15 min. After cooling to room temperature,
-  the pH is adjusted to pH 7 by adding of sterile pH-adjusting agent with a syringe
-  without opening the vessel. Prior to inoculation, aseptically add the filter-sterilized
-  methane gas to the vessel. The methane and air ratio in the headspace is about 1:4.
-  Methane should be of high purity.
+notes: 'Source: NBRC Medium 1106 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1106
+
+
+  The NBRC 1a Medium table lists pH 7.0 and instructs sealed-vessel autoclaving followed
+  by syringe pH adjustment and addition of filter-sterilized methane before inoculation.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1106

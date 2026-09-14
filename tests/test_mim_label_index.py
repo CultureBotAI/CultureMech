@@ -137,6 +137,23 @@ def test_source_compound_is_not_promoted_to_semantic_identity():
     assert decision.source_compound_id == "mediadive.compound:999999"
 
 
+def test_missing_mim_label_can_fall_back_to_culturemech_term():
+    decision = get_default_mim_label_index().resolve(
+        {
+            "preferred_term": "CultureMech test-only missing ingredient 260",
+            "term": {"id": "mediadive.compound:999999"},
+            "culturemech_term": {
+                "id": "CultureMech:003183",
+                "label": "R2A Broth",
+            },
+        }
+    )
+    assert decision.identifier == "CultureMech:003183"
+    assert decision.local_identifier == "CultureMech:003183"
+    assert decision.source_compound_id == "mediadive.compound:999999"
+    assert decision.resolution_source is ResolutionSource.LOCAL_FALLBACK
+
+
 def test_merged_tombstone_resolves_only_when_a_live_record_holds_the_identifier():
     index = MIMLabelIndex.from_csv_text(
         _csv(

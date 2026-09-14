@@ -1,6 +1,10 @@
 id: CultureMech:000101
 name: ncl_pj
 category: algae
+sources:
+- database: CCAP
+  database_id: NCL_PJ
+  url: https://www.ccap.ac.uk/wp-content/uploads/MR_NCL_PJ.pdf
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
@@ -49,6 +53,13 @@ curation_history:
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
     category->lowercase=1
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_ccap_sources_score10.py
+  action: NORMALIZED_CCAP_SOURCE_SCORE10
+  changes: Normalized CCAP provenance
+  source: CCAP:NCL_PJ; https://www.ccap.ac.uk/wp-content/uploads/MR_NCL_PJ.pdf
+  notes: Copied the CCAP source identity from references and the original ccap-import
+    event into the structured sources slot recognized by review scoring.
 references:
 - reference: CCAP:NCL_PJ
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_NCL_PJ.pdf

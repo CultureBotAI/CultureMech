@@ -128,13 +128,18 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2023_am3_antibiotics_score15.py
+  action: LINKED_TOGO_M2023_AM3_ANTIBIOTICS_VARIANT
+  source: https://togomedium.org/medium/M2023; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1314
+  notes: Linked TOGO M2023 / NBRC Medium 1314 as a supplemented variant of AM3 medium.
 variant_children:
 - path: data/normalized_yaml/bacterial/am3_nalidixic_acid_kanamycin_medium.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: SUPPLEMENTED_VARIANT
   id: CultureMech:008611
   name: am3_nalidixic_acid_kanamycin_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: TOGO M2023 / NBRC Medium 1314 supplements AM3 medium with 1 ml/L Nalidixic
+    acid solution (100 mg/ml) and 1 ml/L Kanamycin solution (25 mg/ml).
 - path: data/normalized_yaml/bacterial/am3_nalidixic_acid_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:008610

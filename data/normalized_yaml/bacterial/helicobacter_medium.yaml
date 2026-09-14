@@ -17,6 +17,11 @@ ingredients:
   concentration:
     value: '35'
     unit: G_PER_L
+  term:
+    id: mediadive.compound:1136
+    label: Brucella Broth
+  source: MediaDive solution 2559
+  notes: MediaDive solution 2559 lists Brucella Broth for DSMZ Medium 1279.
 - preferred_term: Demineralized water
   term:
     id: CHEBI:15377
@@ -31,18 +36,42 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: mediadive.compound:954
+    label: Fetal bovine serum
+  source: MediaDive solution 2559
+  notes: MediaDive solution 2559 lists Fetal bovine serum as an aseptic addition for
+    DSMZ Medium 1279.
 - preferred_term: Vitox
   concentration:
     value: '0.06'
     unit: G_PER_L
+  term:
+    id: mediadive.compound:1138
+    label: Vitox
+  source: MediaDive solution 2559
+  notes: MediaDive solution 2559 lists Vitox as an aseptic addition for DSMZ Medium
+    1279.
 - preferred_term: Skirrow supplement
   concentration:
     value: '0.02'
     unit: G_PER_L
+  term:
+    id: mediadive.compound:1139
+    label: Skirrow supplement
+  source: MediaDive solution 2559
+  notes: MediaDive solution 2559 lists Skirrow supplement as an aseptic addition for
+    DSMZ Medium 1279.
 - preferred_term: Amphotericin
   concentration:
     value: '0.02'
     unit: G_PER_L
+  term:
+    id: mediadive.compound:1140
+    label: Amphotericin
+  source: MediaDive solution 2559
+  notes: MediaDive solution 2559 lists Amphotericin as an aseptic addition for DSMZ
+    Medium 1279.
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -80,3 +109,13 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_helicobacter_medium_1279_score10.py
+  action: GROUNDED_HELICOBACTER_1279_COMPONENTS
+  changes: Grounded Helicobacter Medium 1279 commercial additions
+  source: MediaDive solution 2559 for DSMZ Medium 1279
+  notes: Copied exact MediaDive compound identifiers for Brucella Broth, Fetal bovine
+    serum, Vitox, Skirrow supplement, and Amphotericin.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings

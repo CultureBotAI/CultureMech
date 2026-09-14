@@ -2,32 +2,13 @@ id: CultureMech:009064
 name: mrs_medium_containing_erythromycin
 original_name: MRS medium (containing erythromycin)
 category: bacterial
-medium_type: COMPLEX
-composition_type: UNDEFINED
-physical_state: LIQUID
-ingredients:
-- preferred_term: erythromycin
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Simple component'
-  term:
-    id: CHEBI:48923
-    label: erythromycin
-  mediaingredientmech_chebi_term:
-    id: CHEBI:48923
-    label: erythromycin
-- preferred_term: MRS medium (Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 media_term:
   preferred_term: TOGO Medium M2490
   term:
     id: TOGO:M2490
     label: MRS medium (containing erythromycin)
-notes: 'Source: https://togomedium.org/medium/M2490'
+notes: TOGO M2490 lists MRS medium from Difco with erythromycin at 5 ug/ml and 24
+  h incubation at 37 C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,3 +39,49 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_condition_wrappers_score20.py
+  action: RESOLVED_TOGO_CONDITION_WRAPPERS_SCORE20
+  changes: Resolved score-20 TOGO product and condition wrapper
+  source: https://togomedium.org/medium/M2490
+  notes: TOGO M2490 lists MRS medium from Difco with erythromycin at 5 ug/ml and 24
+    h incubation at 37 C.
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+temperature_value: 37.0
+ingredients:
+- preferred_term: erythromycin
+  concentration:
+    value: '5'
+    unit: MG_PER_L
+  source: TOGO M2490
+  notes: TOGO M2490 lists erythromycin at 5 ug/ml; this is stored as the equivalent
+    5 mg/L.
+  term:
+    id: CHEBI:48923
+    label: erythromycin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:48923
+    label: erythromycin
+  cellular_metabolic_roles:
+  - INHIBITOR
+- preferred_term: MRS medium (Difco)
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2490
+  notes: TOGO M2490 lists 1000 ML_PER_L of MRS medium (Difco).
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Supplement one liter of MRS medium (Difco) with erythromycin to 5 ug/ml.
+- step_number: 2
+  action: MIX
+  description: Incubate for 24 h at 37 C.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2490

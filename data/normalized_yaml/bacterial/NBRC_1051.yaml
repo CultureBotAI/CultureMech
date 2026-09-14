@@ -6,6 +6,12 @@ description: 1051. NBRC 1050.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: NBRC Medium 1050
+  term:
+    id: nbrc.medium:1050
+    label: NBRC Medium 1050
 ingredients:
 - preferred_term: NaCl
   concentration:
@@ -18,6 +24,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '3'
@@ -105,14 +114,23 @@ ingredients:
     label: water
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  action: MIX
+  description: Mix all ingredients except vitamin solution and Na2S·9H2O.
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH if needed
+  description: Adjust pH to 7.0 with H2SO4.
 - step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: AUTOCLAVE
+  description: Autoclave the medium under a N2 atmosphere.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave Na2S·9H2O separately as a 5% solution under N2.
+- step_number: 5
+  action: FILTER_STERILIZE
+  description: Filter-sterilize the vitamin solution.
+- step_number: 6
+  action: MIX
+  description: Anaerobically add filter-sterile vitamin solution and sterile Na2S·9H2O.
 curation_history:
 - timestamp: '2026-02-20T00:22:36.011606Z'
   curator: nbrc-import
@@ -155,6 +173,12 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1050
+  notes: Preserved the recovered NBRC Medium 1050 composition table.
 solutions:
 - preferred_term: Trace elements solution
   composition:
@@ -290,8 +314,14 @@ solutions:
       id: CHEBI:15377
       label: water
   name: Vitamin solution
-notes: Mix ingredients except for vitamin and Na2S·9H2O, adjust pH to 7 with H2SO4,
-  and autoclave under a N2 atmosphere. Separately autoclave Na2S·9H2O as 5% solution
-  under a N2 atmosphere. Anaerobically add filter-sterile vitamin and Na2S·9H2O. First
-  dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and then add other
-  minerals. Final pH 7.0.
+notes: 'Source: NBRC Medium 1050 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1050
+
+
+  The NBRC A medium table lists 18 top-level rows, nested trace-elements and vitamin
+  solutions, and a final pH of 7.0.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1050

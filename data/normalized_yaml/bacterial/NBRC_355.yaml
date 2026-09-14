@@ -6,6 +6,12 @@ description: 355. NBRC 352.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
+media_term:
+  preferred_term: NBRC Medium 352
+  term:
+    id: nbrc.medium:352
+    label: NBRC Medium 352
 ingredients:
 - preferred_term: Hipolypepton*
   concentration:
@@ -15,10 +21,16 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Methanol**
   concentration:
     value: '5'
     unit: ML_PER_L
+  term:
+    id: CHEBI:17790
+    label: Methanol
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '1'
@@ -27,6 +39,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: Agar
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -36,14 +51,8 @@ ingredients:
     label: water
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
-- step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: FILTER_STERILIZE
+  description: Sterilize methanol separately by filtration.
 curation_history:
 - timestamp: '2026-02-20T00:22:35.952707Z'
   curator: nbrc-import
@@ -79,5 +88,20 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
-notes: pH 7.0 Wako Pure Chemical Ind., Ltd., Osaka, Japan. Sterilize separately by
-  filtration.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=352
+  notes: Preserved the recovered NBRC Medium 352 composition table.
+notes: 'Source: NBRC Medium 352 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=352
+
+
+  The NBRC Methylobacterium Medium table lists final pH 7.0, Hipolypepton from Wako
+  Pure Chemical Industries, and separate filtration of methanol.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=352

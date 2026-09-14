@@ -10,26 +10,56 @@ media_term:
   term:
     id: mediadive.medium:C78
     label: PM
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_PM.pdf'
+notes: CCAP Medium C78 PM (Polytoma Medium) lists 2.0 g sodium acetate trihydrate,
+  1.0 g yeast extract, 1.0 g tryptone, and deionised water to 1 litre, with autoclaving
+  at 15 psi for 15 minutes. MediaDive C78 preserves the same CCAP formulation and
+  identifies the yeast extract as Oxoid L21 and the tryptone as Oxoid L42. The accessible
+  CCAP and MediaDive records do not state a pH or incubation temperature.
 ingredients:
 - preferred_term: Sodium acetate trihydrate
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: CCAP Medium C78 / MediaDive C78
+  notes: CCAP PM and MediaDive C78 list 2.0 g/L Sodium acetate trihydrate.
   term:
     id: CHEBI:32138
     label: sodium acetate trihydrate
-  concentration:
-    value: '2'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32138
     label: sodium acetate trihydrate
 - preferred_term: Yeast extract
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
+  source: CCAP Medium C78 / MediaDive C78
+  notes: CCAP PM and MediaDive C78 list 1.0 g/L Yeast extract; MediaDive identifies
+    this as Oxoid L21.
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Tryptone
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
+  source: CCAP Medium C78 / MediaDive C78
+  notes: CCAP PM and MediaDive C78 list 1.0 g/L Tryptone; MediaDive identifies this
+    as Oxoid L42.
+  term:
+    id: MICRO:0000182
+    label: tryptone
+- preferred_term: Deionized water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: CCAP Medium C78 / MediaDive C78
+  notes: CCAP PM says to make the medium up to 1 litre with deionised water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -60,4 +90,16 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_ccap_c78_pm_score15.py
+  action: RESOLVED_CCAP_C78_PM_SCORE15
+  source: https://www.ccap.ac.uk/wp-content/uploads/MR_PM.pdf; https://mediadive.dsmz.de/rest/medium/C78
+  notes: Added the CCAP/MediaDive deionised-water row, grounded every PM component,
+    and documented that the accessible source records do not state pH or temperature.
 kg_microbe_match: mediadive.medium:C78
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_PM.pdf
+- reference: https://mediadive.dsmz.de/rest/medium/C78

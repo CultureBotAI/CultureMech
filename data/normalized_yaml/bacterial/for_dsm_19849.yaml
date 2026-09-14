@@ -380,12 +380,22 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_506_methanobacterium_ph_score10.py
+  action: RESOLVED_KOMODO_506_METHANOBACTERIUM_PH_TOPOLOGY
+  changes: Linked under KOMODO Medium 506
+  source: KOMODO Medium 506.1
+  notes: KOMODO Medium 506.1 applies METHANOBACTERIUM ESPANOLAE medium at pH 7.0 to
+    DSM 19849.
 parent_media:
-  path: data/normalized_yaml/bacterial/KOMODO_506_METHANOBACTERIUM_ESPANOLAE_MEDIUM.yaml
-  relationship: SOURCE_DUPLICATE
+  path: data/normalized_yaml/archaea/KOMODO_506_METHANOBACTERIUM_ESPANOLAE_MEDIUM.yaml
+  relationship: PH_VARIANT
   id: CultureMech:005699
   name: methanobacterium_espanolae_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 506 is the METHANOBACTERIUM ESPANOLAE base for KOMODO Medium
+    506.1.
+variant_relationship: PH_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 506.1 applies METHANOBACTERIUM ESPANOLAE medium at pH 7.0 to DSM 19849.
+data_quality_flags:
+- ingredients_curated

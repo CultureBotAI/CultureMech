@@ -11,9 +11,113 @@ media_term:
   term:
     id: komodo.medium:2074
     label: Trace mineral solution (medium 1000)
-notes: 'Source: KOMODO ModelSEED | ID: 2074 | DSMZ Medium: 2074 (mediadive.medium:2074)
-  | Aerobic: No | SubMedium: Yes'
-ingredients: []
+notes: KOMODO 2074 lists Trace mineral solution (medium 1000) as a defined submedium.
+  Its metabolite table contains 1.50 g/L nitrilotriacetic acid, 0.50 g/L MnSO4 x 2
+  H2O, 0.50 g/L CoSO4 x 7 H2O, 0.18 g/L ZnSO4 x 7 H2O, 0.02 g/L KAl(SO4)2 x 12 H2O,
+  0.01 g/L CuSO4 x 5 H2O, 0.01 g/L Na2MoO4 x 2 H2O, and 0.01 g/L H3BO3.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the trace mineral stock from nitrilotriacetic acid and the
+    potassium aluminum, manganese, zinc, copper, molybdate, borate, and cobalt salts
+    listed by KOMODO.
+ingredients:
+- preferred_term: KAl(SO4)2 x 12 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  source: KOMODO Medium 2074
+  notes: KOMODO Medium 2074 lists 0.02 g/L KAl(SO4)2 x 12 H2O.
+  term:
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+- preferred_term: MnSO4 x 2 H2O
+  concentration:
+    value: '0.50'
+    unit: G_PER_L
+  source: KOMODO Medium 2074
+  notes: KOMODO Medium 2074 lists 0.50 g/L MnSO4 x 2 H2O.
+  term:
+    id: CHEBI:86356
+    label: manganese(II) sulfate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86356
+    label: manganese(II) sulfate dihydrate
+- preferred_term: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+  source: KOMODO Medium 2074
+  notes: KOMODO Medium 2074 lists 0.18 g/L ZnSO4 x 7 H2O.
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: CuSO4 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: KOMODO Medium 2074
+  notes: KOMODO Medium 2074 lists 0.01 g/L CuSO4 x 5 H2O.
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+- preferred_term: Nitrilotriacetic acid
+  concentration:
+    value: '1.50'
+    unit: G_PER_L
+  source: KOMODO Medium 2074
+  notes: KOMODO Medium 2074 lists 1.50 g/L Nitrilotriacetic acid.
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: KOMODO Medium 2074
+  notes: KOMODO Medium 2074 lists 0.01 g/L Na2MoO4 x 2 H2O.
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: KOMODO Medium 2074
+  notes: KOMODO Medium 2074 lists 0.01 g/L H3BO3.
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: CoSO4 x 7 H2O
+  concentration:
+    value: '0.50'
+    unit: G_PER_L
+  source: KOMODO Medium 2074
+  notes: KOMODO Medium 2074 lists 0.50 g/L CoSO4 x 7 H2O.
+  term:
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
 applications:
 - Microbial cultivation
 curation_history:
@@ -30,3 +134,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Trace mineral solution (medium 1000)" to "trace_mineral_solution_medium_1000"
     for consistent matching
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_komodo_2073_2075_score15.py
+  action: RESOLVED_KOMODO_2073_2075_SCORE15
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2074
+  notes: Replaced the incomplete KOMODO Medium 2074 import with the complete KOMODO
+    metabolite table, preserved HCl as a variable pH adjuster where KOMODO lists one,
+    and grounded disclosed components through MediaIngredientMech.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2074

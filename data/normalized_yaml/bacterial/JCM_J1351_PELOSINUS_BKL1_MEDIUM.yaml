@@ -68,6 +68,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: FeCl2 solution (see Medium No. 187 )
   concentration:
     value: '1.0'
@@ -130,3 +133,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_bacterial_score10_extracts.py
+  action: GROUNDED_BACTERIAL_EXTRACTS_SCORE10
+  changes: Grounded exact bacterial extract mappings
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied exact MediaIngredientMech mappings for Yeast extract (BD-Difco).

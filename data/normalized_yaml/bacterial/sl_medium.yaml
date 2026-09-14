@@ -169,16 +169,21 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_959_sl_ph_score10.py
+  action: RESOLVED_KOMODO_959_SL_PH_VARIANTS
+  changes: Linked SL medium pH variant children
+  source: KOMODO Medium 959.1 and DSMZ Medium 959a
+  notes: Changed DSM 21709 and Marinitoga litoralis from SOURCE_DUPLICATE to PH_VARIANT
+    children of SL medium.
 variant_children:
 - path: data/normalized_yaml/bacterial/for_dsm_21709.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: PH_VARIANT
   id: CultureMech:006903
   name: for_dsm_21709
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 959.1 applies SL medium at pH 6 for DSM 21709.
 - path: data/normalized_yaml/bacterial/marinitoga_litoralis_medium.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: PH_VARIANT
   id: CultureMech:002138
   name: marinitoga_litoralis_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: DSMZ Medium 959a applies SL medium at pH 6 for Marinitoga litoralis.

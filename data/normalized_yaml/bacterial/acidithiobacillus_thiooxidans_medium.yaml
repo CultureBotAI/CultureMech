@@ -108,12 +108,22 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_14366.yaml
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_71_acidithiobacillus_score10.py
+  action: RESOLVED_KOMODO_71_ACIDITHIOBACILLUS_TOPOLOGY
+  changes: Re-rooted KOMODO Medium 71 Acidithiobacillus exact topology
+  source: DSMZ Medium 71; KOMODO Medium 71, 71.1
+  notes: Moved exact KOMODO Medium 71 and its strain wrapper under DSMZ Medium 71.
+variant_children:
+- path: data/normalized_yaml/bacterial/thiobacillus_ferrooxidans_medium_with_thiosulfate.yaml
   relationship: SOURCE_DUPLICATE
+  id: CultureMech:006362
+  name: thiobacillus_ferrooxidans_medium_with_thiosulfate
+  notes: KOMODO Medium 71 has the same 5-ingredient signature as DSMZ Medium 71.
+- path: data/normalized_yaml/bacterial/for_dsm_14366.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006345
   name: for_dsm_14366
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+  notes: KOMODO Medium 71.1 applies Acidithiobacillus thiooxidans medium to DSM 14366.
+data_quality_flags:
+- ingredients_curated

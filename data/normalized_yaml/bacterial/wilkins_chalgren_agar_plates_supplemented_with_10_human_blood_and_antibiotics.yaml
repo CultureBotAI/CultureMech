@@ -5,66 +5,142 @@ original_name: Wilkins-Chalgren agar plates (supplemented with 10% human blood a
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
+functional_role:
+- SELECTIVE
 physical_state: SOLID_AGAR
+temperature_value: 37.0
+incubation_atmosphere: MICROAEROPHILIC
 ingredients:
-- preferred_term: vancomycin (Lilly France S.A., Fergesheim, France)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent'
-- preferred_term: human blood
-  concentration:
-    value: '10'
-    unit: PERCENT_W_V
-  notes: 'Role: Nutrient source'
-- preferred_term: cefsulodin (Takeda France S.A., Puteaux, France)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent'
-- preferred_term: Fungizone (Bristol-Myers Squibb Co.)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent'
-- preferred_term: trimethoprim (GlaxoSmithKline)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent'
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
+- preferred_term: Wilkins-Chalgren agar plates (Oxoid)
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M2852 / Bernarde et al. 2010
+  notes: Bernarde et al. 2010 uses pre-poured Oxoid Wilkins-Chalgren agar plates;
+    the commercial plate substrate is retained as an opaque unmapped product because
+    the source does not disclose a per-liter mass or internal formulation.
+- preferred_term: Human blood
+  concentration:
+    value: '10'
+    unit: PERCENT_V_V
+  source: TOGO M2852 / Bernarde et al. 2010
+  notes: Bernarde et al. 2010 supplements the Wilkins-Chalgren agar plates with 10%
+    human blood.
+  term:
+    id: UBERON:0000178
+    label: blood
+- preferred_term: Vancomycin
+  concentration:
+    value: '1.0'
+    unit: MG_PER_ML
+  source: TOGO M2852 / Bernarde et al. 2010
+  notes: Bernarde et al. 2010 lists 1 mg/ml vancomycin from Lilly France S.A.
+  term:
+    id: CHEBI:28001
+    label: vancomycin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28001
+    label: vancomycin
+  cellular_metabolic_roles:
+  - INHIBITOR
+- preferred_term: Cefsulodin
+  concentration:
+    value: '5.0'
+    unit: MG_PER_ML
+  source: TOGO M2852 / Bernarde et al. 2010
+  notes: Bernarde et al. 2010 lists 5 mg/ml cefsulodin from Takeda France S.A.
+  term:
+    id: CHEBI:3507
+    label: cefsulodin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3507
+    label: cefsulodin
+  cellular_metabolic_roles:
+  - INHIBITOR
+- preferred_term: Fungizone (Bristol-Myers Squibb Co.)
+  concentration:
+    value: '5.0'
+    unit: MG_PER_ML
+  source: TOGO M2852 / Bernarde et al. 2010
+  notes: Bernarde et al. 2010 lists 5 mg/ml Fungizone from Bristol-Myers Squibb Co.;
+    the branded product is retained unmapped because the source does not identify
+    its active ingredient.
+  cellular_metabolic_roles:
+  - INHIBITOR
+- preferred_term: Trimethoprim
+  concentration:
+    value: '1.0'
+    unit: MG_PER_ML
+  source: TOGO M2852 / Bernarde et al. 2010
+  notes: Bernarde et al. 2010 lists 1 mg/ml trimethoprim from GlaxoSmithKline.
+  term:
+    id: CHEBI:45924
+    label: trimethoprim
+  mediaingredientmech_chebi_term:
+    id: CHEBI:45924
+    label: trimethoprim
+  cellular_metabolic_roles:
+  - INHIBITOR
+- preferred_term: Oxygen gas
+  concentration:
+    value: '5'
+    unit: PERCENT_V_V
+  source: TOGO M2852 / Bernarde et al. 2010
+  notes: Bernarde et al. 2010 incubates the plates under microaerobic 5% O2, 10% CO2,
+    and 85% N2.
+  term:
+    id: CHEBI:15379
+    label: dioxygen
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15379
+    label: dioxygen
+- preferred_term: Carbon dioxide gas
+  concentration:
+    value: '10'
+    unit: PERCENT_V_V
+  source: TOGO M2852 / Bernarde et al. 2010
+  notes: Bernarde et al. 2010 incubates the plates under microaerobic 5% O2, 10% CO2,
+    and 85% N2.
   term:
     id: CHEBI:16526
     label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '85'
+    unit: PERCENT_V_V
+  source: TOGO M2852 / Bernarde et al. 2010
+  notes: Bernarde et al. 2010 incubates the plates under microaerobic 5% O2, 10% CO2,
+    and 85% N2.
   term:
     id: CHEBI:17997
     label: dinitrogen
-- preferred_term: Oxygen gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Wilkins-Chalgren agar plates (Oxoid Ltd., Hampshire, UK)
-  concentration:
-    value: variable
-    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17997
+    label: dinitrogen
 media_term:
   preferred_term: TOGO Medium M2852
   term:
     id: TOGO:M2852
     label: Wilkins-Chalgren agar plates (supplemented with 10% human blood and antibiotics)
-notes: 'Source: https://togomedium.org/medium/M2852'
+notes: 'TOGO M2852 captures the Helicobacter pylori B38/J99 growth condition from
+  Bernarde et al. 2010: commercial Oxoid Wilkins-Chalgren agar plates supplemented
+  with 10% human blood, 1 mg/ml vancomycin, 5 mg/ml cefsulodin, 5 mg/ml Fungizone,
+  and 1 mg/ml trimethoprim, then incubated 48 h at 37 C under 5% O2, 10% CO2, and
+  85% N2.'
 applications:
 - Microbial cultivation
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Oxoid Wilkins-Chalgren agar plates supplemented with 10% human
+    blood.
+- step_number: 2
+  action: MIX
+  description: Supplement the plates with 1 mg/ml vancomycin, 5 mg/ml cefsulodin,
+    5 mg/ml Fungizone, and 1 mg/ml trimethoprim.
 curation_history:
 - timestamp: '2026-01-27T06:35:57.357648Z'
   curator: togo-import
@@ -91,3 +167,45 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_togo_m2852_wilkins_chalgren_score15.py
+  action: RESOLVED_TOGO_M2852_WILKINS_CHALGREN_SCORE15
+  source: https://togomedium.org/medium/M2852; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2852;
+    https://doi.org/10.1074/mcp.M110.001065; PMID:20610778
+  notes: Curated TOGO M2852 from the official TOGO API payload and Bernarde et al.
+    2010; corrected imported atmosphere values to the 5:10:85 O2/CO2/N2 percentages
+    and retained Wilkins-Chalgren agar plates and Fungizone as opaque source-level
+    products.
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: Helicobacter pylori
+  term:
+    id: NCBITaxon:210
+    label: Helicobacter pylori
+  strain: B38
+  evidence:
+  - reference: PMID:20610778
+    supports: SUPPORT
+    snippet: H. pylori B38 and J99 cells were cultured
+    explanation: Bernarde et al. 2010 directly reports growth of H. pylori B38 for
+      48 h on this supplemented Wilkins-Chalgren agar plate condition.
+- preferred_term: Helicobacter pylori
+  term:
+    id: NCBITaxon:210
+    label: Helicobacter pylori
+  strain: J99 (ATCC 700824)
+  evidence:
+  - reference: PMID:20610778
+    supports: SUPPORT
+    snippet: H. pylori B38 and J99 cells were cultured
+    explanation: Bernarde et al. 2010 directly reports growth of H. pylori J99 for
+      48 h on this supplemented Wilkins-Chalgren agar plate condition.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2852
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2852
+- reference: https://doi.org/10.1074/mcp.M110.001065
+- reference: PMID:20610778

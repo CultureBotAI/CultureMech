@@ -3,58 +3,69 @@ name: lb_kanamycin_medium
 original_name: LB + Kanamycin medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Yeast extract
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: Agar (if needed)
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
 - preferred_term: Bacto Tyrptone (Difco)
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M1937 / NBRC Medium 1204
+  notes: NBRC Medium 1204 lists Bacto Tyrptone (Difco) as a source-disclosed digest
+    product not reducible to one ChEBI molecule.
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  source: TOGO M1937 / NBRC Medium 1204
+  notes: TOGO M1937 / NBRC Medium 1204 lists 5 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  source: TOGO M1937 / NBRC Medium 1204
+  notes: TOGO M1937 / NBRC Medium 1204 lists 5 g/L NaCl.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M1937 / NBRC Medium 1204
+  notes: TOGO M1937 / NBRC Medium 1204 lists 1000 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  source: TOGO M1937 / NBRC Medium 1204
+  notes: TOGO M1937 / NBRC Medium 1204 lists 15 g/L agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M1937
   term:
     id: TOGO:M1937
     label: LB + Kanamycin medium
-notes: 'Source: https://togomedium.org/medium/M1937
-
-  Original source: NBRC - NBRC_M1204
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1204'
+notes: TOGO M1937 imports NBRC Medium 1204 LB + Kanamycin medium. NBRC 1204 lists
+  the LB base with 1.0 ml/L Kanamycin sulfate solution (20 mg/ml), 15 g/L agar if
+  needed, and pH 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -97,25 +108,71 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m1937_lb_kanamycin_score15.py
+  action: RESOLVED_TOGO_M1937_LB_KANAMYCIN_SCORE15
+  source: https://togomedium.org/medium/M1937; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1204
+  notes: TOGO M1937 imports NBRC Medium 1204 LB + Kanamycin medium. NBRC 1204 lists
+    the LB base with 1.0 ml/L Kanamycin sulfate solution (20 mg/ml), 15 g/L agar if
+    needed, and pH 7.0. Corrected the imported distilled-water row from a g/L artifact
+    to an ml/L volume and nested the separately filter-sterilized 20 mg/ml kanamycin
+    sulfate stock.
 solutions:
-- preferred_term: Kanamycin sulfate solution (20 mg/ml)*
-  composition: []
+- preferred_term: Kanamycin sulfate solution (20 mg/ml)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Solution, Organic compound, Defined
-    component'
-  name: Unknown solution
-variant_children:
-- path: data/normalized_yaml/bacterial/lb_50_ug_ml_kanamycin_medium.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:008689
-  name: lb_50_ug_ml_kanamycin_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/lb_ampicillin_medium.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:008244
-  name: lb_ampicillin_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+    value: '1.0'
+    unit: ML_PER_L
+  source: TOGO M1937 / NBRC Medium 1204
+  notes: TOGO M1937 / NBRC Medium 1204 lists 1 ml/L Kanamycin sulfate solution (20
+    mg/ml).
+  term:
+    id: CHEBI:6109
+    label: kanamycin A sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6109
+    label: kanamycin A sulfate
+  composition:
+  - preferred_term: Kanamycin sulfate
+    concentration:
+      value: '20.0'
+      unit: MG_PER_ML
+    source: TOGO M1937 / NBRC Medium 1204
+    notes: NBRC Medium 1204 specifies this stock as 20 mg/ml Kanamycin sulfate.
+    term:
+      id: CHEBI:6109
+      label: kanamycin A sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:6109
+      label: kanamycin A sulfate
+  name: Kanamycin sulfate solution (20 mg/ml)
+  preparation_notes: Sterilize separately by filtration.
+ph_value: 7.0
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the LB base from 10 g/L Bacto Tyrptone (Difco), 5 g/L yeast
+    extract, 5 g/L NaCl, 1000 ml/L distilled water, and 15 g/L agar if needed.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Sterilize the 20 mg/ml kanamycin sulfate stock separately by filtration.
+- step_number: 3
+  action: MIX
+  description: Add 1.0 ml/L filter-sterilized Kanamycin sulfate solution (20 mg/ml)
+    to the LB base.
+parent_media:
+  path: data/normalized_yaml/bacterial/lb_medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:008037
+  name: lb_medium
+  notes: NBRC Medium 1204 supplements LB Medium with 1.0 ml/L separately filter-sterilized
+    Kanamycin sulfate solution (20 mg/ml).
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adds 1.0 ml/L Kanamycin sulfate solution (20 mg/ml) after separate filter sterilization.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1937
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1204

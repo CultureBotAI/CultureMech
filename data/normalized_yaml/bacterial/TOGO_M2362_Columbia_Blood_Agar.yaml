@@ -6,23 +6,36 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: 4% horse blood
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: Columbia agar base
   concentration:
     value: variable
     unit: VARIABLE
+  source: DSMZ Medium 429
+  notes: DSMZ Medium 429 specifies Columbia agar base supplemented with 4% horse blood.
+  term:
+    id: MICRO:0000536
+    label: Columbia agar base
+- preferred_term: Defibrinated horse blood
+  concentration:
+    value: '4'
+    unit: PERCENT_V_V
+  source: DSMZ Medium 429
+  notes: DSMZ Medium 429 specifies 4% horse blood added to Columbia agar base.
+  term:
+    id: UBERON:0000178
+    label: blood
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Supplement Columbia agar base with 4% horse blood.
 media_term:
   preferred_term: TOGO Medium M2362
   term:
     id: TOGO:M2362
     label: Columbia Blood Agar
-notes: 'Source: https://togomedium.org/medium/M2362
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium429.pdf'
+notes: 'TOGO M2362 mirrors DSMZ Medium 429: Columbia agar base supplemented with 4%
+  horse blood. DSMZ''s liquid media 545, 215, and 1 are freeze-dried pellet rehydration
+  alternatives, not components of the cultivation agar.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -48,3 +61,26 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_columbia_blood_score40.py
+  action: RESOLVED_COLUMBIA_BLOOD_SCORE40_GRAPH
+  changes: Resolved score-40 Columbia/Blood Agar TOGO source duplicate
+  source: https://togomedium.org/medium/M2362; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium429.pdf
+  notes: 'TOGO M2362 mirrors DSMZ Medium 429: Columbia agar base supplemented with
+    4% horse blood. DSMZ''s liquid media 545, 215, and 1 are freeze-dried pellet rehydration
+    alternatives, not components of the cultivation agar.'
+parent_media:
+  path: data/normalized_yaml/bacterial/columbia_blood_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001533
+  name: columbia_blood_agar
+  notes: Existing MediaDive record for the same source-catalogue formulation.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Source-catalogue duplicate of DSMZ Medium 429; TOGO M2362 preserves the same formulation.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M2362
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium429.pdf

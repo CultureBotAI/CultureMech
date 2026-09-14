@@ -2,8 +2,8 @@ id: CultureMech:007715
 name: methanol_utilizing_bacteria_medium_d
 original_name: Methanol-Utilizing Bacteria Medium D
 category: bacterial
-medium_type: COMPLEX
-composition_type: UNDEFINED
+medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients: []
 media_term:
@@ -11,11 +11,8 @@ media_term:
   term:
     id: TOGO:M118
     label: Methanol-Utilizing Bacteria Medium D
-notes: 'Source: https://togomedium.org/medium/M118
-
-  Original source: JCM - JCM_M126
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=126'
+notes: 'TOGO M118 mirrors JCM Medium 126: use 1.0 L Methanol-Utilizing Bacteria Medium
+  B and adjust pH to 9.0 with filter-sterilized 10% NaCO3 solution.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -48,18 +45,59 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_methanol_utilizing_score40.py
+  action: RESOLVED_METHANOL_UTILIZING_SCORE40_GRAPH
+  changes: Resolved score-40 JCM/TOGO methanol-utilizing recipe graph
+  source: https://togomedium.org/medium/M118; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=126;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=79
+  notes: 'TOGO M118 mirrors JCM Medium 126: use 1.0 L Methanol-Utilizing Bacteria
+    Medium B and adjust pH to 9.0 with filter-sterilized 10% NaCO3 solution.'
 solutions:
-- preferred_term: Methanol--utilizing bacteria medium B (see Medium [M70])
-  composition: []
-  notes: Cross-reference to Medium M70
+- preferred_term: Methanol-utilizing bacteria medium B
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: NaHCO3 solution
-  composition: []
+    value: '1000'
+    unit: ML_PER_L
+  notes: JCM Medium 126 lists 1.0 L Methanol-utilizing bacteria medium B.
+  culturemech_term:
+    id: CultureMech:003144
+    label: Methanol-Utilizing Bacteria Medium B
+- preferred_term: Filter-sterilized 10% NaCO3 solution
   concentration:
     value: variable
     unit: VARIABLE
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-  name: Unknown solution
+  notes: JCM Medium 126 adjusts Medium B to pH 9.0 with filter-sterilized 10% NaCO3
+    solution; the final addition volume is not specified.
+  preparation_notes: Filter-sterilize before pH adjustment.
+ph_value: 9.0
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave Methanol-utilizing bacteria medium B.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Filter-sterilize the 10% NaCO3 solution.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 9.0 with filter-sterilized 10% NaCO3 solution.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M118
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=126
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=79
+parent_media:
+  path: data/normalized_yaml/bacterial/methanol_utilizing_bacteria_medium_b.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:003144
+  name: methanol_utilizing_bacteria_medium_b
+  notes: JCM Medium 126 supplements Methanol-Utilizing Bacteria Medium B with filter-sterilized
+    10% NaCO3 solution to adjust pH to 9.0.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adjusts Methanol-Utilizing Bacteria Medium B to pH 9.0 with filter-sterilized 10%
+  NaCO3 solution.

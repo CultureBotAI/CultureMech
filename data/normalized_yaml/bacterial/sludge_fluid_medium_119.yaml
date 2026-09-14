@@ -2,6 +2,7 @@ id: CultureMech:004990
 name: sludge_fluid_medium_119
 original_name: Sludge fluid (medium 119)
 category: bacterial
+record_kind: SOLUTION
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID

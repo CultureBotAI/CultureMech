@@ -3,6 +3,8 @@ name: BG11 TES no bicarb
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: BG11 TES no bicarb
 ingredients:
 - preferred_term: Sodium nitrate
   concentration:
@@ -145,5 +147,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_culturebotht_bg11_score15.py
+  action: MARKED_CULTUREBOTHT_BG11_SCORE15
+  changes: Marked exact CultureBotHT BG11-family formula as curated
+  source: CultureBotHT:BG11 TES no bicarb; https://github.com/CultureBotAI/CultureBotHT
+  notes: CultureBotHT imports BG11 TES no bicarb as a BG11-family formula.
 data_quality_flags:
+- has_ontology_mappings
 - has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: CultureBotHT:BG11 TES no bicarb
+- reference: https://github.com/CultureBotAI/CultureBotHT

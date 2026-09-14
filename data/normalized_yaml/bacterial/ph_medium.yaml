@@ -10,40 +10,105 @@ media_term:
   term:
     id: mediadive.medium:1077
     label: PH MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1077.pdf'
-ingredients:
-- preferred_term: PPLO broth
+notes: DSMZ Medium 1077 prepares PH MEDIUM by combining 80 ml Solution 1 with 20 ml
+  Solution 2. Solution 1 is PPLO broth in distilled water adjusted to pH 6.5 and autoclaved;
+  Solution 2 contains inactivated horse serum, autoclaved 25% yeast extract solution,
+  filter-sterilized fish sperm DNA solution, and water adjusted to pH 7.8.
+ingredients: []
+solutions:
+- preferred_term: Solution 1
   concentration:
-    value: '21'
-    unit: G_PER_L
-- preferred_term: Horse serum
+    value: '800.0'
+    unit: ML_PER_L
+  source: DSMZ/MediaDive Medium 1077
+  notes: The final 100 ml PH MEDIUM combines 80 ml Solution 1 with 20 ml Solution
+    2.
+  composition:
+  - preferred_term: PPLO broth
+    concentration:
+      value: '21.0'
+      unit: G_PER_L
+    source: DSMZ/MediaDive Medium 1077
+    notes: DSMZ Medium 1077 Solution 1 lists 1.68 g PPLO broth in 80.00 ml. PPLO broth
+      is retained ungrounded because the pinned MIM label index marks it as an intentionally
+      unmapped complex product.
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    source: DSMZ/MediaDive Medium 1077
+    notes: DSMZ Medium 1077 Solution 1 lists 80.00 ml distilled water per 80 ml.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: Solution 2
   concentration:
-    value: '18.7'
-    unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.234'
-    unit: G_PER_L
-- preferred_term: Fish-Sperm DNA
-  concentration:
-    value: '0.187'
-    unit: G_PER_L
-  term:
-    id: CHEBI:16991
-    label: deoxyribonucleic acid
-  mediaingredientmech_chebi_term:
-    id: CHEBI:16991
-    label: deoxyribonucleic acid
+    value: '200.0'
+    unit: ML_PER_L
+  source: DSMZ/MediaDive Medium 1077
+  notes: The final 100 ml PH MEDIUM combines 80 ml Solution 1 with 20 ml Solution
+    2.
+  composition:
+  - preferred_term: Horse serum
+    concentration:
+      value: '935.0'
+      unit: ML_PER_L
+    source: DSMZ/MediaDive Medium 1077
+    notes: DSMZ Medium 1077 Solution 2 lists 18.700 ml inactivated horse serum in
+      20 ml.
+    term:
+      id: MICRO:0001235
+      label: Horse serum
+  - preferred_term: Distilled water
+    concentration:
+      value: '9.35'
+      unit: ML_PER_L
+    source: DSMZ/MediaDive Medium 1077
+    notes: DSMZ Medium 1077 Solution 2 lists 0.187 ml distilled water in 20 ml.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  solutions:
+  - preferred_term: Yeast Extract Solution (25%, autoclaved)
+    concentration:
+      value: '46.8'
+      unit: ML_PER_L
+    source: DSMZ/MediaDive Medium 1077
+    notes: DSMZ Medium 1077 Solution 2 lists 0.936 ml 25% autoclaved yeast extract
+      solution in 20 ml.
+    composition:
+    - preferred_term: Yeast extract
+      concentration:
+        value: '250.0'
+        unit: G_PER_L
+      source: DSMZ/MediaDive Medium 1077
+      notes: The stock name states 25% Yeast Extract Solution.
+      term:
+        id: FOODON:03315426
+        label: Yeast extract
+  - preferred_term: Fish sperm DNA solution (filter-sterilized)
+    concentration:
+      value: '9.35'
+      unit: ML_PER_L
+    source: DSMZ/MediaDive Medium 1077
+    notes: DSMZ Medium 1077 Solution 2 lists 0.187 ml filter-sterilized fish sperm
+      DNA solution in 20 ml; the source does not disclose its DNA concentration.
 preparation_steps:
 - step_number: 1
-  action: MIX
-  description: Combine solutions 1 and 2.
-- step_number: 2
-  action: AUTOCLAVE
-  description: Adjust pH to 6.5 and autoclave.
-- step_number: 3
   action: ADJUST_PH
-  description: Adjust pH to 7.8.
+  description: Prepare Solution 1, adjust it to pH 6.5, and autoclave it.
+- step_number: 2
+  action: ADJUST_PH
+  description: Prepare Solution 2 and adjust it to pH 7.8.
+- step_number: 3
+  action: MIX
+  description: Combine 80 ml Solution 1 with 20 ml Solution 2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -73,4 +138,18 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_mediadive_1077_ph_medium_score15.py
+  action: RESOLVED_MEDIADIVE_1077_PH_MEDIUM_SCORE15
+  source: https://mediadive.dsmz.de/medium/1077; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1077.pdf
+  notes: Restored the DSMZ/MediaDive Solution 1 and Solution 2 stock structure, corrected
+    milliliter stock additions imported as g/L, grounded exact MIM-supported components,
+    and retained PPLO broth and fish sperm DNA solution as intentionally unmapped.
 kg_microbe_match: mediadive.medium:1077
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://mediadive.dsmz.de/medium/1077
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1077.pdf

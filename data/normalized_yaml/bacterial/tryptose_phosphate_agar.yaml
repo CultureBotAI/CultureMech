@@ -10,22 +10,33 @@ media_term:
   term:
     id: mediadive.medium:J158
     label: TRYPTOSE PHOSPHATE AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=158'
+notes: TOGO M149 records 15 g/L Bacto agar and 29.5 g/L Tryptose phosphate broth from
+  BD-Difco in 1.0 L distilled water.
 ingredients:
-- preferred_term: Tryptose-phosphate
+- preferred_term: Distilled water
   concentration:
-    value: '29.5'
-    unit: G_PER_L
-- preferred_term: Agar
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M149/JCM Medium 158 snapshot
+  notes: TOGO M149 lists 1.0 L distilled water.
   term:
-    id: CHEBI:2509
-    label: agar
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Bacto agar (BD-Difco)
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
+  source: TOGO M149/JCM Medium 158 snapshot
+  notes: TOGO M149 lists 15 g/L Bacto agar from BD-Difco.
+- preferred_term: Tryptose phosphate broth (BD-Difco)
+  concentration:
+    value: '29.5'
+    unit: G_PER_L
+  source: TOGO M149/JCM Medium 158 snapshot
+  notes: TOGO M149 lists 29.5 g/L Tryptose phosphate broth from BD-Difco.
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,4 +63,16 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_m149_tryptose_phosphate_score20.py
+  action: RESOLVED_TOGO_M149_TRYPTOSE_PHOSPHATE_SCORE20
+  source: https://togomedium.org/medium/M149
+  notes: TOGO M149 records 15 g/L Bacto agar and 29.5 g/L Tryptose phosphate broth
+    from BD-Difco in 1.0 L distilled water.
 kg_microbe_match: mediadive.medium:12
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M149

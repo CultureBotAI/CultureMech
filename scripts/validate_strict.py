@@ -55,10 +55,10 @@ def infer_target_class(instance: dict) -> str:
     not full MediaRecipes. Everything else is MediaRecipe.
 
     Deliberately `has_solution_shape`, NOT `is_solution_record`. The latter also
-    honours the curated `record_kind: SOLUTION` (#175), which says what a record
-    MEANS — but those 202 records were imported with MediaRecipe shape, so routing
-    them to SolutionRecipe produced 606 spurious errors. A curatorial assertion
-    cannot change what a record structurally is.
+    honours the curated `record_kind: SOLUTION`, which says what a record MEANS —
+    but those records were imported with MediaRecipe shape, so routing them to
+    SolutionRecipe produced spurious errors. A curatorial assertion cannot change
+    what a record structurally is.
     """
     return "SolutionRecipe" if has_solution_shape(instance) else "MediaRecipe"
 

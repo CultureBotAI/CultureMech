@@ -3,53 +3,104 @@ name: togo_medium_m1552
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Hipolypepton*
   concentration:
-    value: '1'
+    value: '10'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: MgSO4·7H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
+  source: NBRC Medium 351
+  notes: NBRC Medium 351 lists 10 g/L Hipolypepton and notes that the asterisk marks
+    Wako Pure Chemical Industries; this peptone product is retained as an opaque complex
+    component.
 - preferred_term: Yeast extract
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: NBRC Medium 351
+  notes: NBRC Medium 351 lists 2 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: N-Acetyl glucosamine**
+  concentration:
+    value: '30'
+    unit: MG_PER_L
+  source: NBRC Medium 351
+  notes: NBRC Medium 351 lists 30 mg/L N-Acetyl glucosamine, sterilized separately
+    by filtration.
+  term:
+    id: CHEBI:59640
+    label: N-Acetylglucosamine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:59640
+    label: N-Acetylglucosamine
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  source: NBRC Medium 351
+  notes: NBRC Medium 351 lists 1 g/L MgSO4·7H2O.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: NBRC Medium 351
+  notes: NBRC Medium 351 lists 15 g/L agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: NBRC Medium 351
+  notes: NBRC Medium 351 lists 1.0 L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M1552
   term:
     id: TOGO:M1552
     label: TOGO Medium M1552
-notes: 'Source: https://togomedium.org/medium/M1552
-
-  Original source: NBRC - NBRC_M351
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=351'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Combine 10 g/L Hipolypepton, 2 g/L Yeast extract, 1 g/L MgSO4·7H2O,
+    and 1 L Distilled water.
+- step_number: 2
+  action: MIX
+  description: Add 15 g/L agar when solid NBRC Medium 351 is needed.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize N-Acetyl glucosamine separately by filtration.
+- step_number: 4
+  action: MIX
+  description: Add 30 mg/L filter-sterilized N-Acetyl glucosamine.
+- step_number: 5
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+notes: TOGO M1552 imports NBRC Medium 351, which lists 10 g/L Hipolypepton from Wako
+  Pure Chemical Industries, 2 g/L Yeast extract, 30 mg/L N-Acetyl glucosamine, 1 g/L
+  MgSO4·7H2O, 15 g/L Agar if needed, and 1 L Distilled water at pH 7.0. The N-Acetyl
+  glucosamine is sterilized separately by filtration.
 applications:
 - Microbial cultivation
 curation_history:
@@ -98,28 +149,31 @@ curation_history:
   notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
     magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
     labels untouched.
-solutions:
-- preferred_term: N-Acetyl glucosamine**
-  composition: []
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
-  name: Unknown solution
-- preferred_term: Hipolypepton*
-  composition: []
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-  name: Unknown solution
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nbrc_351_score15.py
+  action: RESOLVED_NBRC_351_SCORE15
+  source: https://togomedium.org/medium/M1552; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=351
+  notes: Curated TOGO:M1552 from TOGO and NBRC Medium 351; corrected Distilled water
+    from a mass-like 1 g/L import to 1 L, moved Hipolypepton and N-Acetyl glucosamine
+    from migrated empty solutions to sourced formula ingredients, corrected N-Acetyl
+    glucosamine from 30 g/L to 30 mg/L, added pH 7.0, grounded yeast extract, N-Acetylglucosamine,
+    magnesium sulfate heptahydrate, water, and agar, retained Hipolypepton as a sourced
+    opaque component, and linked M1552 to M1553 as a substituted-component variant.
 parent_media:
   path: data/normalized_yaml/bacterial/TOGO_M1553_Methylobacterium_Medium.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
   id: CultureMech:008102
   name: methylobacterium_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: Substitutes 30 mg/L separately filter-sterilized N-Acetyl glucosamine for
+    methanol.
+variant_relationship: SUBSTITUTED_COMPONENT_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- Substitutes 30 mg/L separately filter-sterilized N-Acetyl glucosamine for the 5
+  ml/L methanol supplement in TOGO M1553.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1552
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=351

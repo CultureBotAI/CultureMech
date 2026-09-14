@@ -12,38 +12,51 @@ media_term:
     label: TCG MEDIUM
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=720'
 ingredients:
-- preferred_term: Tryptone
+- preferred_term: Tryptone (BD-Difco)
   concentration:
     value: '3'
     unit: G_PER_L
-- preferred_term: Casitone
+  source: JCM Medium 720
+  notes: JCM Medium 720 lists the BD-Difco tryptone product; the product is source-disclosed
+    but not reducible to one ChEBI molecule.
+- preferred_term: Casitone (BD-Difco)
   concentration:
     value: '5'
     unit: G_PER_L
+  source: JCM Medium 720
+  notes: JCM Medium 720 lists the BD-Difco Casitone product; the product is source-disclosed
+    but not reducible to one ChEBI molecule.
 - preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: glucose
   concentration:
     value: '4'
     unit: G_PER_L
+  source: JCM Medium 720
+  notes: JCM Medium 720 lists 4 g glucose.
+  term:
+    id: CHEBI:17234
+    label: glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
 - preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
+  source: JCM Medium 720
+  notes: JCM Medium 720 lists 15 g agar.
+  term:
+    id: CHEBI:2509
+    label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
-- preferred_term: Sea water
+- preferred_term: Artificial seawater
   concentration:
     value: '1000'
-    unit: G_PER_L
+    unit: ML_PER_L
+  source: JCM Medium 720
+  notes: JCM Medium 720 lists 1.0 L artificial seawater; the seawater stock is a source-disclosed
+    mixture, not a single ChEBI molecule.
 applications:
 - Microbial cultivation
 curation_history:
@@ -69,16 +82,31 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-variant_children:
-- path: data/normalized_yaml/bacterial/KOMODO_1009_TCG_medium.yaml
-  relationship: CONCENTRATION_VARIANT
-  id: CultureMech:003514
-  name: tcg_medium
-  notes: Same ingredient identity signature but concentration signature differs from
-    parent.
-- path: data/normalized_yaml/bacterial/tcg_medium.yaml
-  relationship: CONCENTRATION_VARIANT
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_tcg_a1_seawater_score15.py
+  action: RESOLVED_TCG_A1_SEAWATER_SCORE15
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=720
+  notes: JCM Medium 720 lists 3 g Tryptone (BD-Difco), 5 g Casitone (BD-Difco), 4
+    g glucose, 15 g agar, and 1 L artificial seawater.
+parent_media:
+  path: data/normalized_yaml/bacterial/tcg_medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
   id: CultureMech:000425
   name: tcg_medium
-  notes: Same ingredient identity signature but concentration signature differs from
-    parent.
+  notes: JCM Medium 720 adds agar to the same tryptone, Casitone, glucose, and seawater
+    base.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- JCM Medium 720 adds 15 g/L agar to DSMZ Medium 1009's liquid TCG base.
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M743_TCG_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010148
+  name: tcg_medium
+  notes: TOGO M743 mirrors JCM Medium 720.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=720

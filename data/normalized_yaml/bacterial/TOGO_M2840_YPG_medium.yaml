@@ -6,34 +6,44 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: yeast extract
+- preferred_term: Yeast extract
   concentration:
-    value: '1'
+    value: '1.0'
     unit: PERCENT_W_V
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: glycerol
+  source: TOGO M2840 / Azuma et al. 2009
+  notes: TOGO M2840 lists 1.0% yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Polypeptone
   concentration:
-    value: '2'
+    value: '1.0'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  source: TOGO M2840 / Azuma et al. 2009
+  notes: TOGO M2840 lists 1.0% polypeptone.
+  term:
+    id: FOODON:03315306
+    label: Polypeptone
+- preferred_term: Glycerol
+  concentration:
+    value: '2.0'
+    unit: PERCENT_W_V
+  source: TOGO M2840 / Azuma et al. 2009
+  notes: TOGO M2840 lists 2.0% glycerol.
   term:
     id: CHEBI:17754
     label: glycerol
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
     label: glycerol
-- preferred_term: polypeptone
-  concentration:
-    value: '1'
-    unit: PERCENT_W_V
-  notes: 'Properties: Undefined component'
 media_term:
   preferred_term: TOGO Medium M2840
   term:
     id: TOGO:M2840
     label: YPG medium
-notes: 'Source: https://togomedium.org/medium/M2840'
+notes: TOGO M2840 records the YPG medium that Azuma et al. used to grow Acetobacter
+  pasteurianus IFO 3283 and Gluconacetobacter xylinus NBRC 3288 routinely at 30 C;
+  the formulation is 1.0% yeast extract, 1.0% polypeptone, and 2.0% glycerol.
 applications:
 - Microbial cultivation
 curation_history:
@@ -69,4 +79,24 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
-kg_microbe_match: mediadive.medium:780
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2840_score15.py
+  action: RESOLVED_TOGO_M2840_SCORE15
+  source: https://togomedium.org/medium/M2840; PMID:19638423; doi:10.1093/nar/gkp612
+  notes: TOGO M2840 records the YPG medium that Azuma et al. used to grow Acetobacter
+    pasteurianus IFO 3283 and Gluconacetobacter xylinus NBRC 3288 routinely at 30
+    C; the formulation is 1.0% yeast extract, 1.0% polypeptone, and 2.0% glycerol.
+    Grounded all three source ingredients and removed kg_microbe_match mediadive.medium:780
+    because MediaDive medium 780 is Middlebrook Medium with Mycobactin, not YPG medium.
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve 1.0% yeast extract, 1.0% polypeptone, and 2.0% glycerol to
+    prepare YPG medium.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2840
+- reference: PMID:19638423
+- reference: doi:10.1093/nar/gkp612

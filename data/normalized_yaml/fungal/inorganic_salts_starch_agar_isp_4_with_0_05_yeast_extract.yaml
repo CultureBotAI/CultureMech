@@ -10,22 +10,19 @@ media_term:
   term:
     id: mediadive.medium:J217
     label: INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 0.05% YEAST EXTRACT
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=217'
+notes: JCM Medium 217 contains 1.0 L Inorganic salts-starch agar (ISP-4) from JCM
+  Medium 58 plus 0.5 g/L Yeast extract.
 ingredients:
-- preferred_term: Inorganic salts-starch agar
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
     unit: G_PER_L
+  source: JCM Medium 217
+  notes: JCM Medium 217 supplements 1.0 L Inorganic salts-starch agar (ISP-4) with
+    0.5 g Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 applications:
 - Microbial cultivation
 curation_history:
@@ -53,4 +50,40 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_official_simple_score20.py
+  action: RESOLVED_OFFICIAL_SIMPLE_SCORE20
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=217; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=58
+  notes: JCM Medium 217 contains 1.0 L Inorganic salts-starch agar (ISP-4) from JCM
+    Medium 58 plus 0.5 g/L Yeast extract.
 kg_microbe_match: mediadive.medium:12
+solutions:
+- preferred_term: Inorganic salts-starch agar (ISP-4)
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  notes: JCM Medium 217 uses 1.0 L Inorganic salts-starch agar (ISP-4) from JCM Medium
+    58.
+  culturemech_term:
+    id: CultureMech:009900
+    label: Inorganic Salts-Starch Agar (ISP-4)
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use 1.0 L Inorganic salts-starch agar (ISP-4) with 0.5 g/L Yeast extract.
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M50_Inorganic_Salts-Starch_Agar_ISP-4.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:009900
+  name: inorganic_salts_starch_agar_isp_4
+  notes: Supplements 1.0 L Inorganic salts-starch agar (ISP-4) with 0.5 g/L Yeast
+    extract.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Supplements 1.0 L Inorganic salts-starch agar (ISP-4) with 0.5 g/L Yeast extract.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=217
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=58

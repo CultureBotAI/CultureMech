@@ -11,87 +11,136 @@ media_term:
   term:
     id: mediadive.medium:J659
     label: PELAGICOCCUS AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=659'
+notes: JCM Medium 659 Pelagicoccus Agar lists 55.1 g Marine agar 2216 (BD-Difco),
+  9.1 g R2A agar (BD-Difco), 750.0 ml Artificial seawater, and 250.0 ml Distilled
+  water, then adjusts pH to 7.5.
+solutions:
+- preferred_term: Artificial seawater
+  concentration:
+    value: '750.0'
+    unit: ML_PER_L
+  source: JCM Medium 659
+  notes: JCM Medium 659 adds 750.0 ml/L Artificial seawater prepared from the printed
+    subrecipe.
+  culturemech_term:
+    id: CultureMech:013514
+    label: Artificial seawater
+  composition:
+  - preferred_term: NaCl
+    concentration:
+      value: '24.0'
+      unit: G_PER_L
+    source: JCM Medium 659
+    notes: JCM Medium 659 lists 24.0 g/L NaCl.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '7.0'
+      unit: G_PER_L
+    source: JCM Medium 659
+    notes: JCM Medium 659 lists 7.0 g/L MgSO4 x 7 H2O.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: MgCl2 x 6 H2O
+    concentration:
+      value: '5.3'
+      unit: G_PER_L
+    source: JCM Medium 659
+    notes: JCM Medium 659 lists 5.3 g/L MgCl2 x 6 H2O.
+    term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+  - preferred_term: KCl
+    concentration:
+      value: '0.7'
+      unit: G_PER_L
+    source: JCM Medium 659
+    notes: JCM Medium 659 lists 0.7 g/L KCl.
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+  - preferred_term: CaCl2 x 2 H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: JCM Medium 659
+    notes: JCM Medium 659 lists 0.1 g/L CaCl2 x 2 H2O.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 659
+    notes: JCM Medium 659 lists 1.0 L Distilled water in the Artificial seawater stock
+      solution.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
 ingredients:
-- preferred_term: Marine agar 2216
-  term:
-    id: CHEBI:2509
-    label: agar
+- preferred_term: Marine agar 2216 (BD-Difco)
   concentration:
     value: '55.1'
     unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: R2A agar
-  term:
-    id: CHEBI:2509
-    label: agar
+  source: MediaDive J659 / JCM Medium 659
+  notes: MediaDive J659 / JCM Medium 659 lists 55.1 g/L Marine agar 2216 (BD-Difco);
+    this commercial medium product is retained as an opaque complex component.
+- preferred_term: R2A agar (BD-Difco)
   concentration:
     value: '9.1'
     unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
+  source: MediaDive J659 / JCM Medium 659
+  notes: MediaDive J659 / JCM Medium 659 lists 9.1 g/L R2A agar (BD-Difco); this commercial
+    medium product is retained as an opaque complex component.
+- preferred_term: Distilled water
   concentration:
-    value: '24'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: MgSO4 x 7 H2O
+    value: '250.0'
+    unit: ML_PER_L
+  source: MediaDive J659 / JCM Medium 659
+  notes: MediaDive J659 / JCM Medium 659 lists 250.0 ml/L Distilled water.
   term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  concentration:
-    value: '7'
-    unit: G_PER_L
+    id: CHEBI:15377
+    label: water
   mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-  concentration:
-    value: '5.3'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-  concentration:
-    value: '0.7'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Combine the listed commercial medium components with 750.0 ml Artificial
+    seawater and 250.0 ml distilled water.
+- step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.5.
-- step_number: 2
-  action: MIX
-  description: 'Comment: For preparation of the liquid medium, use Marine broth 2216
-    (BD-Difco) instead of Marine agar 2216 and R2A broth instead of R2A agar by omitting
-    agar from the R2A agar medium composition (see Medium No. 346).'
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: JCM's default instruction is to autoclave media at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -118,3 +167,29 @@ curation_history:
   notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m675_m676_score15.py
+  action: RESOLVED_JCM_659_PELAGICOCCUS_AGAR
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=659; https://mediadive.dsmz.de/medium/J659
+  notes: Restored JCM Medium 659 as the printed agar recipe, represented Artificial
+    seawater as a 750.0 ml/L stock solution instead of flattening its salt recipe
+    into the medium, de-grounded the commercial Marine agar and R2A agar products,
+    and linked TOGO M675 and M676.
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M675_Pelagicoccus_Agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010079
+  name: pelagicoccus_agar
+  notes: TOGO M675 imports the same JCM Medium 659 agar formulation.
+- path: data/normalized_yaml/bacterial/TOGO_M676_Pelagicoccus_Agar.yaml
+  relationship: PHYSICAL_STATE_VARIANT
+  id: CultureMech:010080
+  name: pelagicoccus_agar
+  notes: TOGO M676 represents the liquid JCM Medium 659 formulation.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=659
+- reference: https://mediadive.dsmz.de/medium/J659

@@ -5,68 +5,84 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.0
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: N NaOH
-  concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
 - preferred_term: Ground beef (free of fat)
   concentration:
-    value: '500'
+    value: '500.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO:M2710 / ATCC Medium 593
+  notes: ATCC Medium 593 lists 500.0 g/L fat-free ground beef.
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: TOGO:M2710 / ATCC Medium 593
+  notes: ATCC Medium 593 starts with 1.0 L distilled water and restores the filtrate
+    to a final 1.0 L volume.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Peptone
+  concentration:
+    value: '30.0'
+    unit: G_PER_L
+  source: TOGO:M2710 / ATCC Medium 593
+  notes: ATCC Medium 593 lists 30.0 g/L peptone.
+  term:
+    id: MICRO:0000178
+    label: peptone
 - preferred_term: Yeast extract
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO:M2710 / ATCC Medium 593
+  notes: ATCC Medium 593 lists 5.0 g/L yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: K2HPO4
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
+  source: TOGO:M2710 / ATCC Medium 593
+  notes: ATCC Medium 593 lists 5.0 g/L K2HPO4.
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-- preferred_term: Peptone
-  concentration:
-    value: '30'
-    unit: G_PER_L
 - preferred_term: L-cysteine . HCl
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Properties: Simple component, Defined component, Organic compound'
+  source: TOGO:M2710 / ATCC Medium 593
+  notes: ATCC Medium 593 adds 0.5 g/L L-cysteine HCl.
+  term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
 - preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO:M2710 / ATCC Medium 593
+  notes: ATCC Medium 593 uses 97% nitrogen / 3% hydrogen while dispensing.
   term:
     id: CHEBI:17997
     label: dinitrogen
 - preferred_term: Hydrogen gas
-  notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO:M2710 / ATCC Medium 593
+  notes: ATCC Medium 593 uses 97% nitrogen / 3% hydrogen while dispensing.
   term:
     id: CHEBI:18276
     label: dihydrogen
@@ -75,9 +91,10 @@ media_term:
   term:
     id: TOGO:M2710
     label: Chopped meat medium
-notes: 'Source: https://togomedium.org/medium/M2710
-
-  Original URL: https://www.atcc.org/~/media/2BF00161B1BA47E1A67EBC2003E4AA3D.ashx'
+notes: TOGO M2710 imports ATCC Medium 593 Chopped meat medium. ATCC 593 lists 500.0
+  g fat-free ground beef, 1.0 L distilled water, 25.0 ml N NaOH, 30.0 g peptone, 5.0
+  g yeast extract, 5.0 g K2HPO4, 4.0 ml 0.025% resazurin solution, and 0.5 g L-cysteine
+  HCl, adjusts the medium to pH 7.0, and dispenses it under 97% nitrogen / 3% hydrogen.
 applications:
 - Microbial cultivation
 curation_history:
@@ -129,11 +146,81 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2710_m2754_atcc_chopped_meat_score15.py
+  action: RESOLVED_TOGO_ATCC_CHOPPED_MEAT_SCORE15
+  source: https://togomedium.org/medium/M2710; https://www.atcc.org/~/media/2BF00161B1BA47E1A67EBC2003E4AA3D.ashx
+  notes: TOGO M2710 imports ATCC Medium 593 Chopped meat medium. ATCC 593 lists 500.0
+    g fat-free ground beef, 1.0 L distilled water, 25.0 ml N NaOH, 30.0 g peptone,
+    5.0 g yeast extract, 5.0 g K2HPO4, 4.0 ml 0.025% resazurin solution, and 0.5 g
+    L-cysteine HCl, adjusts the medium to pH 7.0, and dispenses it under 97% nitrogen
+    / 3% hydrogen. Corrected imported water, N NaOH, and 0.025% resazurin volumes
+    to ml/L units; retained the anaerobic N2/H2 headspace gases as variable gas-phase
+    ingredients; grounded the disclosed chemical and extract ingredients; and left
+    fat-free ground beef intentionally unmapped.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2710_m2754_atcc_chopped_meat_score15.py
+  action: LINKED_M2754_TO_M2710_SUPPLEMENTED_VARIANT
+  source: https://togomedium.org/medium/M2710; https://togomedium.org/medium/M2754;
+    https://www.atcc.org/~/media/2BF00161B1BA47E1A67EBC2003E4AA3D.ashx; https://www.atcc.org/~/media/0AB039CD914D4A9BAC9CAB709196F694.ashx
+  notes: Linked ATCC Medium 735 as a glucose-supplemented ATCC Medium 593 variant.
 solutions:
-- preferred_term: 0.025% Resazurin solution
-  composition: []
+- preferred_term: N NaOH
   concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
-  name: Unknown solution
+    value: '25.0'
+    unit: ML_PER_L
+  source: TOGO:M2710 / ATCC Medium 593
+  notes: ATCC Medium 593 lists 25.0 ml/L N NaOH for the boiled meat extraction.
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+- preferred_term: 0.025% Resazurin solution
+  concentration:
+    value: '4.0'
+    unit: ML_PER_L
+  source: TOGO:M2710 / ATCC Medium 593
+  notes: ATCC Medium 593 adds 4.0 ml/L 0.025% resazurin solution.
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Use lean beef or horse meat; remove fat and connective tissue before
+    grinding. Mix meat, distilled water, and N NaOH and bring to a boil while stirring.
+- step_number: 2
+  action: FILTER
+  description: Cool to room temperature, skim fat off the surface, and filter, retaining
+    both meat particles and filtrate. Add enough distilled water to restore 1.0 L
+    of filtrate.
+- step_number: 3
+  action: HEAT
+  description: Add peptone, yeast extract, K2HPO4, any glucose supplement, and 0.025%
+    resazurin solution to the filtrate, then boil and cool.
+- step_number: 4
+  action: ADJUST_PH
+  description: Add L-cysteine HCl and adjust to pH 7.0.
+- step_number: 5
+  action: AUTOCLAVE
+  description: Under 97% nitrogen / 3% hydrogen, dispense 7 ml medium over one part
+    meat particles to four to five parts fluid per tube. Cap with butyl rubber stoppers
+    under N2/H2 and autoclave for 15 minutes under fast exhaust.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2710
+- reference: https://www.atcc.org/~/media/2BF00161B1BA47E1A67EBC2003E4AA3D.ashx
+variant_children:
+- path: data/normalized_yaml/bacterial/chopped_meat_medium_with_1_glucose.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:009305
+  name: chopped_meat_medium_with_1_glucose
+  notes: ATCC Medium 735 adds 10.0 g/L glucose to ATCC Medium 593.

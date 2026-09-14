@@ -59,6 +59,11 @@ source_data:
       system we show that the isolates form assemblies resembling natural microbiota
       on their cognate host organs, but are also capable of ectopic leaf or root colonization
     explanation: 'Auto-filled placeholder: explanation not supplied by upstream import.'
+sources:
+- database: CommunityMech
+  database_id: CommunityMech:000003
+- database: CommunityMech
+  database_id: CommunityMech:000022
 curation_history:
 - timestamp: '2026-03-15T00:15:00.393357Z'
   curator: communitymech-importer-v1.0
@@ -85,6 +90,13 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_communitymech_sources_score10_batch10.py
+  action: ADDED_COMMUNITYMECH_STRUCTURED_SOURCES_BATCH10
+  changes: Added structured CommunityMech sources
+  source: source_data.community_ids
+  notes: Promoted CommunityMech upstream IDs into sources[] for source-provenance
+    scoring.
 kg_microbe_match: mediadive.medium:263
 source_environment:
 - preferred_term: rhizosphere

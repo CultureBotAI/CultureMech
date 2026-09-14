@@ -8,10 +8,10 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1.0'
+    unit: L
+  source: TOGO Medium M3215
+  notes: TOGO Medium M3215 lists 1.0 L distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -20,15 +20,19 @@ ingredients:
     label: water
 - preferred_term: Yeast extract
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO Medium M3215
+  notes: TOGO Medium M3215 lists 10.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: NaCl
   concentration:
-    value: '3'
+    value: '3.0'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO Medium M3215
+  notes: TOGO Medium M3215 lists 3.0 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -37,20 +41,28 @@ ingredients:
     label: sodium chloride
 - preferred_term: Beef extract
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO Medium M3215
+  notes: TOGO Medium M3215 lists 5.0 g/L Beef extract.
+  term:
+    id: FOODON:03302088
+    label: beef extract
 - preferred_term: Trypton
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO Medium M3215
+  notes: TOGO Medium M3215 lists 10.0 g/L Trypton; this source-spelled complex component
+    is retained as opaque.
 media_term:
   preferred_term: TOGO Medium M3215
   term:
     id: TOGO:M3215
     label: Seed medium
-notes: 'Source: https://togomedium.org/medium/M3215'
+notes: TOGO Medium M3215 lists Seed medium with 1.0 L Distilled water, 10.0 g/L Yeast
+  extract, 3.0 g/L NaCl, 5.0 g/L Beef extract, and 10.0 g/L Trypton. Trypton is retained
+  with the source spelling as an opaque complex peptone-like component.
 applications:
 - Microbial cultivation
 curation_history:
@@ -80,3 +92,18 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m3215_seed_score15.py
+  action: RESOLVED_TOGO_M3215_SEED_SCORE15
+  source: https://togomedium.org/medium/M3215
+  notes: TOGO Medium M3215 lists Seed medium with 1.0 L Distilled water, 10.0 g/L
+    Yeast extract, 3.0 g/L NaCl, 5.0 g/L Beef extract, and 10.0 g/L Trypton. Trypton
+    is retained with the source spelling as an opaque complex peptone-like component.
+    Corrected the imported 1 L distilled-water unit, grounded yeast extract and beef
+    extract, and kept Trypton with its source spelling as an opaque component.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M3215

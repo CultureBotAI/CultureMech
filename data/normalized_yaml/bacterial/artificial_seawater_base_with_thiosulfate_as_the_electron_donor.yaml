@@ -3,38 +3,56 @@ name: artificial_seawater_base_with_thiosulfate_as_the_electron_donor
 original_name: Artificial seawater base with thiosulfate as the electron donor
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
+temperature_value: 25.0
+aeration: static O2 gradient
+incubation_atmosphere: MICROAEROPHILIC
 ingredients:
 - preferred_term: Artificial seawater
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media, Mineral source; Properties: Complex component, Defined
-    component, Solution'
+    value: '1000.0'
+    unit: ML_PER_L
+  source: TOGO M2252
+  notes: TOGO M2252 lists 1 L Artificial seawater as the base; this artificial seawater
+    mixture is retained without a single-compound ontology grounding.
 - preferred_term: thiosulfate
   concentration:
-    value: '10'
+    value: '10.0'
     unit: MILLIMOLAR
-  notes: 'Role: Growth factor; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO M2252
+  notes: TOGO M2252 lists 10 mM thiosulfate as the electron donor.
   term:
     id: CHEBI:26977
     label: thiosulfate
   mediaingredientmech_chebi_term:
     id: CHEBI:26977
     label: thiosulfate
-- preferred_term: O2
-  notes: 'Properties: Gas'
+- preferred_term: Oxygen gas
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M2252
+  notes: TOGO M2252 lists O2 and states that cultures were incubated statically under
+    an O2 gradient.
+  term:
+    id: CHEBI:15379
+    label: dioxygen
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15379
+    label: dioxygen
 media_term:
   preferred_term: TOGO Medium M2252
   term:
     id: TOGO:M2252
     label: Artificial seawater base with thiosulfate as the electron donor
-notes: 'Source: https://togomedium.org/medium/M2252'
+notes: TOGO M2252 reports a liquid artificial seawater base with 10 mM thiosulfate
+  as the electron donor for microaerobic strain MC-1 growth. Its comments cite PMID:16461683
+  for the cultivation context and state that cultures were incubated statically under
+  an O2 gradient at 25 C in the dark.
+references:
+- reference: https://togomedium.org/medium/M2252
+- reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC1392968/
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,3 +92,14 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2252_artificial_seawater_thiosulfate_score15.py
+  action: RESOLVED_TOGO_M2252_ARTIFICIAL_SEAWATER_THIOSULFATE_SCORE15
+  source: https://togomedium.org/medium/M2252; https://pmc.ncbi.nlm.nih.gov/articles/PMC1392968/
+  notes: Corrected Artificial seawater from TOGO's imported 1 g/L row to a 1000.0
+    ml/L base, grounded thiosulfate and O2, added the 25 C static O2-gradient incubation
+    condition, and retained Artificial seawater as intentionally unmapped.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated

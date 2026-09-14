@@ -10,8 +10,8 @@ ingredients:
   concentration:
     value: '0.72'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  source: JCM Medium 752
+  notes: JCM Medium 752 uses Medium 504 with 0.72 g/L glucose.
   term:
     id: CHEBI:17234
     label: glucose
@@ -23,11 +23,7 @@ media_term:
   term:
     id: TOGO:M777
     label: Opitutus Terrae Medium
-notes: 'Source: https://togomedium.org/medium/M777
-
-  Original source: JCM - JCM_M752
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=752'
+notes: 'TOGO M777 mirrors JCM Medium 752: Medium 504 with 0.72 g/L glucose.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -70,12 +66,40 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_wrappers_direct_score20.py
+  action: RESOLVED_JCM_WRAPPERS_DIRECT_SCORE20
+  source: https://togomedium.org/medium/M777; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=752;
+    https://togomedium.org/medium/M505; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=504
+  notes: 'TOGO M777 mirrors JCM Medium 752: Medium 504 with 0.72 g/L glucose.'
 solutions:
-- preferred_term: NE23-3 MEDIUM (see Medium [M505])
-  composition: []
-  notes: Cross-reference to Medium M505
+- preferred_term: NE23-3 Medium
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '1000'
+    unit: ML_PER_L
+  notes: JCM Medium 752 uses Medium 504 as the prepared base.
+  culturemech_term:
+    id: CultureMech:009895
+    label: NE23-3 Medium
 kg_microbe_match: mediadive.medium:21
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 504 with 0.72 g/L glucose.
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M505_NE23-3_Medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:009895
+  name: ne23_3_medium
+  notes: Supplements Medium 504 with 0.72 g/L glucose.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Supplements Medium 504 with 0.72 g/L glucose.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M777
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=752
+- reference: https://togomedium.org/medium/M505
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=504

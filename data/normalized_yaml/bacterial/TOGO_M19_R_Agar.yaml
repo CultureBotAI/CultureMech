@@ -5,98 +5,144 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.2
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-- preferred_term: Tween 80
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Organic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:53426
-    label: polysorbate 80
-  mediaingredientmech_chebi_term:
-    id: CHEBI:53426
-    label: polysorbate 80
-- preferred_term: Glycerol
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
-  term:
-    id: CHEBI:17754
-    label: glycerol
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17754
-    label: glycerol
-- preferred_term: Malt extract (BD-Difco)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Bacto peptone (BD-Difco)
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Beef extract (BD-Difco)
+  notes: JCM Medium 26 lists this component for R Agar; the salinity variants reuse
+    the same agar base.
+  term:
+    id: MICRO:0000178
+    label: Bacto peptone
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: '2'
+    value: '5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  notes: JCM Medium 26 lists this component for R Agar; the salinity variants reuse
+    the same agar base.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Malt extract (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: JCM Medium 26 lists this component for R Agar; the salinity variants reuse
+    the same agar base.
+  term:
+    id: FOODON:03301056
+    label: malt extract
+  nutritional_roles:
+  - CARBON_SOURCE
+  - NITROGEN_SOURCE
 - preferred_term: Casamino acids (BD-Difco)
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  notes: JCM Medium 26 lists this component for R Agar; the salinity variants reuse
+    the same agar base.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Beef extract (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: JCM Medium 26 lists this component for R Agar; the salinity variants reuse
+    the same agar base.
+  term:
+    id: FOODON:03302088
+    label: beef extract
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Glycerol
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: JCM Medium 26 lists this component for R Agar; the salinity variants reuse
+    the same agar base.
+  term:
+    id: CHEBI:17754
+    label: glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
+    label: glycerol
+  nutritional_roles:
+  - CARBON_SOURCE
+- preferred_term: Tween 80
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: JCM Medium 26 lists 50 mg/L Tween 80.
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
+    label: polysorbate 80
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: JCM Medium 26 lists this component for R Agar; the salinity variants reuse
+    the same agar base.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+  - SULFUR_SOURCE
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: JCM Medium 26 lists this component for R Agar; the salinity variants reuse
+    the same agar base.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  notes: JCM Medium 26 brings the R Agar recipe to 1 L with distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
 media_term:
   preferred_term: TOGO Medium M19
   term:
     id: TOGO:M19
     label: R Agar
-notes: 'Source: https://togomedium.org/medium/M19
+notes: 'Source: TOGO Medium M19 | Link: https://togomedium.org/medium/M19
 
-  Original source: JCM - JCM_M26
 
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=26'
+  TOGO Medium M19 mirrors JCM Medium 26 R Agar: peptone and extract nutrients, glycerol,
+  50 mg/L Tween 80, magnesium sulfate heptahydrate, agar, and distilled water, with
+  a final pH of 7.2.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -138,3 +184,85 @@ curation_history:
   notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
     magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
     labels untouched.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_bacterial_togo_score40.py
+  action: LINKED_BACTERIAL_TOGO_SCORE40_CHILDREN
+  changes: Linked score-40 bacterial TOGO children to source parents
+  notes: Added or refreshed reciprocal parent-child link for bacterial/TOGO_M109_R_Agar_With_Catalase.yaml.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_bacterial_togo_score40.py
+  action: LINKED_BACTERIAL_TOGO_SCORE40_CHILDREN
+  changes: Linked score-40 bacterial TOGO children to source parents
+  notes: Added or refreshed reciprocal parent-child link for bacterial/TOGO_M1159_R_Agar_pH_9.0.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_r_agar_salinity_score20.py
+  action: RESOLVED_R_AGAR_SALINITY_SCORE20
+  changes: Resolved JCM Medium 26 R Agar base composition
+  source: https://togomedium.org/medium/M19; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=26
+  notes: Rebuilt the R Agar base from the JCM Medium 26 table.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_r_agar_salinity_score20.py
+  action: LINKED_R_AGAR_SALINITY_SCORE20_CHILDREN
+  changes: Linked score-20 R Agar salinity variants to their base parents
+  source: https://togomedium.org/medium/M105; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=113;
+    https://togomedium.org/medium/M19; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=26
+  notes: Added or refreshed reciprocal salinity-variant link for bacterial/TOGO_M105_R_Agar_With_3_NaCl.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_r_agar_salinity_score20.py
+  action: LINKED_R_AGAR_SALINITY_SCORE20_CHILDREN
+  changes: Linked score-20 R Agar salinity variants to their base parents
+  source: https://togomedium.org/medium/M67; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=76;
+    https://togomedium.org/medium/M19; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=26
+  notes: Added or refreshed reciprocal salinity-variant link for bacterial/TOGO_M67_R_Agar_With_5_NaCl.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_r_agar_salinity_score20.py
+  action: LINKED_R_AGAR_SALINITY_SCORE20_CHILDREN
+  changes: Linked score-20 R Agar salinity variants to their base parents
+  source: https://togomedium.org/medium/M297; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=302;
+    https://togomedium.org/medium/M19; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=26
+  notes: Added or refreshed reciprocal supplemented-variant link for bacterial/TOGO_M297_R_Agar_With_0.5_Tween_80.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_r_agar_salinity_score20.py
+  action: LINKED_R_AGAR_SALINITY_SCORE20_CHILDREN
+  changes: Linked score-20 R Agar salinity variants to their base parents
+  source: https://togomedium.org/medium/M916; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=877;
+    https://togomedium.org/medium/M19; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=26
+  notes: Added or refreshed reciprocal salinity-variant link for bacterial/TOGO_M916_R_Agar_With_10_NaCl.yaml.
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M105_R_Agar_With_3_NaCl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:007576
+  name: r_agar_with_3_nacl
+  notes: Adds 30 g/L NaCl to TOGO M19 R Agar.
+- path: data/normalized_yaml/bacterial/TOGO_M109_R_Agar_With_Catalase.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:007617
+  name: r_agar_with_catalase
+  notes: Supplements TOGO M19 R Agar with 60 mg/L filter-sterilized catalase.
+- path: data/normalized_yaml/bacterial/TOGO_M1159_R_Agar_pH_9.0.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:007682
+  name: r_agar_ph_9_0
+  notes: Adjusts TOGO M19 R Agar to pH 9.0 with sterilized 10% Na2CO3 solution.
+- path: data/normalized_yaml/bacterial/TOGO_M297_R_Agar_With_0.5_Tween_80.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:009502
+  name: r_agar_with_0_5_tween_80
+  notes: Adds 5 g/L Tween 80 to TOGO M19 R Agar.
+- path: data/normalized_yaml/bacterial/TOGO_M67_R_Agar_With_5_NaCl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:010084
+  name: r_agar_with_5_nacl
+  notes: Adds 50 g/L NaCl to TOGO M19 R Agar.
+- path: data/normalized_yaml/bacterial/TOGO_M916_R_Agar_With_10_NaCl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:010336
+  name: r_agar_with_10_nacl
+  notes: Adds 100 g/L NaCl to TOGO M19 R Agar.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M19
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=26

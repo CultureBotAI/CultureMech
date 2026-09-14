@@ -6,22 +6,12 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: 1% (w/v) Phenol red
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: pH indicator; Properties: Defined component, Organic compound, Solution'
-- preferred_term: 25% (w/v) Glucose
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Solution, Organic compound'
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1.0'
+    unit: L
+  source: TOGO M2215
+  notes: TOGO M2215 lists 1 L distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -30,15 +20,17 @@ ingredients:
     label: water
 - preferred_term: Horse serum
   concentration:
-    value: '200'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+    value: '200.0'
+    unit: ML_PER_L
+  source: TOGO M2215
+  notes: TOGO M2215 lists 200 ml/L horse serum; this serum is retained as an opaque
+    complex component.
 - preferred_term: Ampicillin
   concentration:
-    value: '120'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Simple component, Defined component,
-    Organic compound'
+    value: '120.0'
+    unit: MG_PER_L
+  source: TOGO M2215
+  notes: TOGO M2215 lists 120.0 mg/L Ampicillin.
   term:
     id: CHEBI:28971
     label: ampicillin
@@ -49,18 +41,26 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Undefined component'
+  source: TOGO M2215
+  notes: TOGO M2215 lists 0.2 g/L Salmon sperm DNA from Sigma; this commercial biological
+    product is retained as an opaque complex component.
 - preferred_term: PPLO broth powder (Difco)
   concentration:
     value: '22.5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  source: TOGO M2215
+  notes: TOGO M2215 lists 22.5 g/L PPLO broth powder from Difco; the catalog broth
+    is not reducible to one ChEBI molecule.
 media_term:
   preferred_term: TOGO Medium M2215
   term:
     id: TOGO:M2215
     label: PPLO broth
-notes: 'Source: https://togomedium.org/medium/M2215'
+notes: TOGO M2215 lists PPLO broth as a growth medium containing, per liter, 22.5
+  g PPLO broth powder from Difco, 0.2 g Salmon sperm DNA from Sigma, 200 ml horse
+  serum, 5 ml IsoVitaleX solution from Becton Dickinson, 10 ml 25% (w/v) Glucose,
+  4 ml 1% (w/v) Phenol red, 120 mg Ampicillin, and 1 L distilled water. The TOGO record
+  does not state pH, temperature, or sterilization conditions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -102,10 +102,67 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2215_score15.py
+  action: RESOLVED_TOGO_M2215_SCORE15
+  source: https://togomedium.org/medium/M2215
+  notes: TOGO M2215 lists PPLO broth as a growth medium containing, per liter, 22.5
+    g PPLO broth powder from Difco, 0.2 g Salmon sperm DNA from Sigma, 200 ml horse
+    serum, 5 ml IsoVitaleX solution from Becton Dickinson, 10 ml 25% (w/v) Glucose,
+    4 ml 1% (w/v) Phenol red, 120 mg Ampicillin, and 1 L distilled water. The TOGO
+    record does not state pH, temperature, or sterilization conditions. Corrected
+    ml/L and mg/L import artifacts, moved the disclosed glucose and phenol-red stocks
+    into solutions, and kept commercial or biological complex inputs unmapped.
 solutions:
-- preferred_term: IsoVitaleX solution (Becton Dickinson)
-  composition: []
+- preferred_term: 1% (w/v) Phenol red
   concentration:
-    value: '5'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '4.0'
+    unit: ML_PER_L
+  source: TOGO M2215
+  notes: TOGO M2215 lists 4 ml/L 1% (w/v) Phenol red.
+  composition:
+  - preferred_term: Phenol red
+    concentration:
+      value: '1.0'
+      unit: PERCENT_W_V
+    source: TOGO M2215
+    notes: TOGO M2215 identifies the stock as 1.0 % w/v Phenol red.
+    term:
+      id: CHEBI:31991
+      label: phenol red
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31991
+      label: phenol red
+- preferred_term: 25% (w/v) Glucose
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: TOGO M2215
+  notes: TOGO M2215 lists 10 ml/L 25% (w/v) Glucose.
+  composition:
+  - preferred_term: Glucose
+    concentration:
+      value: '25.0'
+      unit: PERCENT_W_V
+    source: TOGO M2215
+    notes: TOGO M2215 identifies the stock as 25.0 % w/v Glucose.
+    term:
+      id: CHEBI:17234
+      label: glucose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17234
+      label: glucose
+- preferred_term: IsoVitaleX solution (Becton Dickinson)
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+  source: TOGO M2215
+  notes: TOGO M2215 lists 5 ml/L IsoVitaleX solution from Becton Dickinson; this commercial
+    enrichment is retained as an opaque complex component.
+  composition: []
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2215

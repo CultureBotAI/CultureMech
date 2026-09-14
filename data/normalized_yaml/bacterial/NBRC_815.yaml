@@ -1,11 +1,19 @@
 id: CultureMech:007495
-name: '815'
-original_name: '815'
+name: Trypticase Soy Yeast Extract Medium
+original_name: Trypticase Soy Yeast Extract Medium
 category: bacterial
 description: 815. NBRC 814.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: NBRC Medium 814
+  term:
+    id: nbrc.medium:814
+    label: NBRC Medium 814
+ph_range:
+  min: 7.0
+  max: 7.2
 ingredients:
 - preferred_term: Pancreatic digest of casein
   term:
@@ -68,6 +76,9 @@ ingredients:
     synonym_type: EXACT
   - synonym_text: D-glucose
     synonym_type: EXACT
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: glucose
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -87,6 +98,9 @@ ingredients:
     synonym_type: EXACT
   - synonym_text: table salt
     synonym_type: EXACT
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Dipotassium phosphate
   term:
     id: CHEBI:131527
@@ -108,6 +122,9 @@ ingredients:
     synonym_type: EXACT
   - synonym_text: dipotassium hydrogen phosphate
     synonym_type: EXACT
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -122,6 +139,9 @@ ingredients:
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
   notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic Soy
     Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -161,15 +181,23 @@ curation_history:
   notes: Record already held a grounded ingredient list, so the NBRC medium 814 page
     was NOT used — it lists only the commercial premix. Dropped the empty-name row
     and 0 unparsed solution blob(s) (#299).
-notes: 'Commercial Product: Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_nbrc_815_score15.py
+  action: RESOLVED_NBRC_815_SCORE15
+  changes: Added NBRC Medium 814 identity to curated TSA expansion
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=814
+  notes: Added the NBRC Medium 814 source term and official title, structured its
+    pH range, preserved the existing curated Tryptic Soy Agar constituent expansion,
+    and added the official NBRC reference.
+notes: 'Source: NBRC Medium 814 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=814
 
-  Supplier: Multiple suppliers (BD, Sigma, Neogen)
 
-  Catalog: Multiple (22092 Sigma, 211825 BD)
-
-  Source: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
+  NBRC lists Trypticase Soy Yeast Extract Medium as Trypticase Soy Broth (Difco),
+  yeast extract, optional agar, and distilled water at pH 7.0 - 7.2. The ingredient
+  list keeps the curated Tryptic Soy Broth / Tryptic Soy Agar constituent expansion
+  because NBRC lists only the commercial premix.'
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=814

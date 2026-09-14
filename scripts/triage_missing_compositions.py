@@ -5,9 +5,9 @@ Classifies every record with nothing to work from, so the backlog can be attacke
 by cause rather than one record at a time. REPORT ONLY — see "the trap" below for
 why the obvious repair is not attempted.
 
-## The count is 150 — historical measurements were 463, 428, 226, and 224
+## The count is 92 — historical measurements were 463, 428, 226, and 224
 
-Two corrections, both of which shrank the problem:
+Three corrections, all of which shrank the problem:
 
   463 -> 428  The original issue measured `ingredients` alone. A stock-supplied
               component is recorded under `solutions`, and 35 records that look
@@ -22,17 +22,22 @@ Two corrections, both of which shrank the problem:
               flattened into their parent media by the KOMODO import, so nothing
               is missing — the stubs are leftovers.
 
+  147 -> 92   55 more empty KOMODO `SubMedium: Yes` rows used stock/base names
+              like "Artificial sea water" and "Bacto Middlebrook OADC enrichment"
+              rather than words like "solution" or "buffer". They are now also
+              explicitly typed as `record_kind: SOLUTION`.
+
 The 2026-08-24 content review started at 224 after two further record-kind
 corrections. Source-backed remediation recovered 74 recipes; no composition was
 inferred from a medium name or copied from a related formula.
 
-## What the remaining 150 are
+## What the remaining 92 are
 
-  125  KOMODO ModelSEED records, with no ingredients and no solutions
+   67  KOMODO ModelSEED records, with no ingredients and no solutions
    25  other-source records, likewise with no ingredients and no solutions
 
 These are the genuine gap: media whose recipe the corpus does not hold. Unlike the
-202, no other record carries their composition.
+curated solution stubs, no other record carries their composition.
 
 ## The trap — why cited-medium matches are NOT auto-repairable
 
@@ -87,6 +92,7 @@ sys.path.insert(0, str(REPO / "scripts"))
 from record_kinds import is_solution_record  # noqa: E402
 
 NORMALIZED = REPO / "data" / "normalized_yaml"
+YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 # Untracked (`.gitignore: data/raw/**/*.json`), so it can only ever be an input to
 # BUILDING the index below — never read at report time. See `MEDIADIVE_INDEX`.
 MEDIADIVE_COMPOSITIONS = REPO / "data" / "raw" / "mediadive" / "compositions"
@@ -205,7 +211,7 @@ def collect(normalized: Path = NORMALIZED) -> list[dict[str, str]]:
     records = []
     for path in sorted(normalized.rglob("*.yaml")):
         try:
-            doc = yaml.safe_load(path.read_text(errors="replace"))
+            doc = yaml.load(path.read_text(errors="replace"), Loader=YAML_LOADER)
         except (yaml.YAMLError, OSError):
             continue
         records.append((str(path.relative_to(normalized)), doc))

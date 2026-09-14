@@ -8,15 +8,17 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Reinforced clostridial medium (Oxoid)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2805
+  notes: TOGO M2805 lists one liter of Reinforced clostridial medium from Oxoid.
 media_term:
   preferred_term: TOGO Medium M2805
   term:
     id: TOGO:M2805
     label: Reinforced clostridial medium (RCM)
-notes: 'Source: https://togomedium.org/medium/M2805'
+notes: TOGO M2805 records cultivation at 37 C in one liter of Reinforced clostridial
+  medium from Oxoid; the source does not disclose the product's internal formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -33,3 +35,16 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Reinforced clostridial medium (RCM)" to "reinforced_clostridial_medium_rcm"
     for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_products_more_score40.py
+  action: RESOLVED_TOGO_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO product graph
+  source: https://togomedium.org/medium/M2805
+  notes: TOGO M2805 records cultivation at 37 C in one liter of Reinforced clostridial
+    medium from Oxoid; the source does not disclose the product's internal formulation.
+temperature_value: 37.0
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2805

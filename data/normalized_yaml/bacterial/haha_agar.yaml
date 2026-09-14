@@ -4,19 +4,40 @@ original_name: HaHa agar
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:
   preferred_term: public Medium P1
   term:
     id: mediadive.medium:P1
     label: HaHa agar
-notes: 'Source: public'
-ingredients: []
+notes: MediaDive public Medium P1 provides a complete HaHa agar test recipe with a
+  700 ml main solution, washed Bacto agar, ASW 2x, Trace element solution SL-8, Selenite-tungstate
+  solution II, and sterile stock additions; water fill-up rows were omitted.
+ingredients:
+- preferred_term: HEPES
+  concentration:
+    value: '14.1714'
+    unit: G_PER_L
+  source: MediaDive public Medium P1
+  notes: P1 adds 9.92 g HEPES to a 700 ml main solution.
+  term:
+    id: CHEBI:42334
+    label: 2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42334
+    label: 2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid
+- preferred_term: Bacto agar
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  source: MediaDive public Medium P1
+  notes: P1 adds 18 g/L washed Bacto agar.
 applications:
 - Microbial cultivation
 references:
 - reference: 10.1016/j.syapm.2013.06.006
+- reference: https://www.bacmedia.dsmz.de/medium/P1
 curation_history:
 - timestamp: '2026-01-26T17:53:19.837238Z'
   curator: mediadive-import
@@ -40,5 +61,356 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_mediadive_public_score30.py
+  action: RESOLVED_MEDIADIVE_PUBLIC_SCORE30
+  changes: Resolved score-30 public MediaDive placeholder graph
+  source: 10.1016/j.syapm.2013.06.006; https://www.bacmedia.dsmz.de/medium/P1
+  notes: MediaDive public Medium P1 provides a complete HaHa agar test recipe with
+    a 700 ml main solution, washed Bacto agar, ASW 2x, Trace element solution SL-8,
+    Selenite-tungstate solution II, and sterile stock additions; water fill-up rows
+    were omitted.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+solutions:
+- preferred_term: Artificial sea water (ASW) 2x
+  concentration:
+    value: '500'
+    unit: ML_PER_L
+  notes: P1 adds 350 ml Artificial sea water (ASW) 2x to a 700 ml main solution.
+  composition:
+  - preferred_term: NaCl
+    concentration:
+      value: '52.74'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: NaHCO3
+    concentration:
+      value: '1000'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+  - preferred_term: CaCl2 x 2 H2O
+    concentration:
+      value: '2.94'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: KCl
+    concentration:
+      value: '1.44'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+  - preferred_term: KBr
+    concentration:
+      value: '0.20'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.040'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: SrCl2
+    concentration:
+      value: '0.040'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+  - preferred_term: NaF
+    concentration:
+      value: '0.006'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+    term:
+      id: CHEBI:28741
+      label: sodium fluoride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:28741
+      label: sodium fluoride
+- preferred_term: Trace element solution SL-8
+  concentration:
+    value: '2'
+    unit: ML_PER_L
+  notes: P1 adds 1.4 ml Trace element solution SL-8 to a 700 ml main solution.
+  composition:
+  - preferred_term: Na2-EDTA
+    concentration:
+      value: '5.2'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+  - preferred_term: FeSO4 x 7 H2O
+    concentration:
+      value: '2'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.190'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+  - preferred_term: MnCl2 x 2 H2O
+    concentration:
+      value: '0.100'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.150'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+  - preferred_term: NiCl2 x 6 H2O
+    concentration:
+      value: '0.024'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.036'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.062'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: CuCl2 x 2 H2O
+    concentration:
+      value: '0.017'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+- preferred_term: Selenite-tungstate solution II
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  notes: P1 adds 0.7 ml Selenite-tungstate solution II to a 700 ml main solution.
+  composition:
+  - preferred_term: NaOH
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+    term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+  - preferred_term: Na2SeO3 x 5 H2O
+    concentration:
+      value: '0.018'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+  - preferred_term: Na2WO4 x 2 H2O
+    concentration:
+      value: '0.018'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+- preferred_term: KH2PO4 stock
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  notes: P1 adds 7 ml of a 50 g/L autoclaved KH2PO4 stock to a 700 ml main solution.
+  composition:
+  - preferred_term: KH2PO4
+    concentration:
+      value: '50'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+- preferred_term: NH4Cl stock
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+  notes: P1 adds 3.5 ml of a 50 g/L autoclaved NH4Cl stock to a 700 ml main solution.
+  composition:
+  - preferred_term: NH4Cl
+    concentration:
+      value: '50'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+    term:
+      id: CHEBI:31206
+      label: ammonium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31206
+      label: ammonium chloride
+- preferred_term: Glucose stock
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+  notes: P1 adds 3.5 ml of a sterile-filtered 100 g/L glucose stock to a 700 ml main
+    solution.
+  composition:
+  - preferred_term: Glucose
+    concentration:
+      value: '100'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+    term:
+      id: CHEBI:17234
+      label: glucose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17234
+      label: glucose
+- preferred_term: Cellobiose stock
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+  notes: P1 adds 3.5 ml of a sterile-filtered 100 g/L cellobiose stock to a 700 ml
+    main solution.
+  composition:
+  - preferred_term: Cellobiose
+    concentration:
+      value: '100'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+    term:
+      id: CHEBI:17057
+      label: cellobiose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17057
+      label: cellobiose
+- preferred_term: Yeast extract stock
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+  notes: P1 adds 3.5 ml of a sterile-filtered 100 g/L yeast extract stock to a 700
+    ml main solution.
+  composition:
+  - preferred_term: Yeast extract
+    concentration:
+      value: '100'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+    term:
+      id: FOODON:03315426
+      label: yeast extract
+- preferred_term: Casamino acids stock
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+  notes: P1 adds 3.5 ml of a sterile-filtered 100 g/L Casamino acids stock to a 700
+    ml main solution.
+  composition:
+  - preferred_term: Casamino acids
+    concentration:
+      value: '100'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+    term:
+      id: FOODON:03315719
+      label: casamino acids
+- preferred_term: Tryptone peptone stock
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+  notes: P1 adds 3.5 ml of a sterile-filtered 100 g/L Tryptone peptone stock to a
+    700 ml main solution.
+  composition:
+  - preferred_term: Tryptone peptone
+    concentration:
+      value: '100'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+    term:
+      id: MICRO:0000182
+      label: tryptone
+- preferred_term: MgCl2 x 6 H2O stock
+  concentration:
+    value: '11.2857'
+    unit: ML_PER_L
+  notes: P1 adds 7.9 ml of a 500 g/L autoclaved MgCl2 x 6 H2O stock to a 700 ml main
+    solution.
+  composition:
+  - preferred_term: MgCl2 x 6 H2O
+    concentration:
+      value: '500'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+    term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+- preferred_term: MgSO4 x 7 H2O stock
+  concentration:
+    value: '13.5714'
+    unit: ML_PER_L
+  notes: P1 adds 9.5 ml of a 500 g/L autoclaved MgSO4 x 7 H2O stock to a 700 ml main
+    solution.
+  composition:
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '500'
+      unit: G_PER_L
+    source: MediaDive public Medium P1
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix Artificial sea water (ASW) 2x, HEPES, and a magnetic stir bar,
+    then fill to 650 ml with MilliQ water.
+- step_number: 2
+  action: MIX
+  description: Wash the Bacto agar with ultrapure water, allow the agar to settle,
+    remove the overlaying water, and repeat the wash twice.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Directly before autoclaving, mix agar and liquid, autoclave, cool to
+    60 C, and hold at 55 C.
+- step_number: 4
+  action: MIX
+  description: Add sterile Trace element solution SL-8, Selenite-tungstate solution
+    II, phosphate, ammonium, glucose, cellobiose, yeast extract, Casamino acids, Tryptone
+    peptone, magnesium chloride, and magnesium sulfate stocks.
+- step_number: 5
+  action: MIX
+  description: Adjust to pH 7.5 with sterile 1 M HCl or 1 M NaOH, then add sterile
+    MilliQ water to a final volume of 700 ml while avoiding bubbles.

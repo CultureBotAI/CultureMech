@@ -212,3 +212,16 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_897_ignicoccus_score10.py
+  action: RESOLVED_KOMODO_897_IGNICOCCUS_TOPOLOGY
+  changes: Promoted KOMODO Medium 897 to the Ignicoccus parent
+  source: KOMODO Medium 897 and KOMODO Medium 897.1
+  notes: Linked the strain-specific KOMODO Medium 897.1 record under the KOMODO Medium
+    897 IGNICOCCUS base.
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_18386.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006752
+  name: for_dsm_18386
+  notes: KOMODO Medium 897.1 applies IGNICOCCUS medium to DSM 18386.

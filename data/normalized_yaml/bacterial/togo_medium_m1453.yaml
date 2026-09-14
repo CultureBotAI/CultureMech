@@ -5,62 +5,92 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_range:
+  min: 6.6
+  max: 6.8
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Table wine
   concentration:
     value: '500'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
+    unit: ML_PER_L
+  source: NBRC Medium 225
+  notes: NBRC Medium 225 lists 500 ml/L Table wine; this fermented source material
+    is retained as an opaque complex component.
 - preferred_term: Yeast extract
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: NBRC Medium 225
+  notes: NBRC Medium 225 lists 20 g/L Yeast extract.
+- preferred_term: Calcium lactate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  source: NBRC Medium 225
+  notes: NBRC Medium 225 lists 10 g/L Calcium lactate.
+  term:
+    id: CHEBI:3315
+    label: calcium lactate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3315
+    label: calcium lactate
 - preferred_term: CaCO3
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Protective agent, Mineral source; Properties: Defined component, Simple
-    component, Inorganic compound'
+  source: NBRC Medium 225
+  notes: NBRC Medium 225 lists 20 g/L CaCO3.
   term:
     id: CHEBI:3311
     label: calcium carbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:3311
     label: calcium carbonate
-- preferred_term: Calcium lactate
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Simple
-    component'
-- preferred_term: Table wine
+- preferred_term: Distilled water
   concentration:
     value: '500'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+    unit: ML_PER_L
+  source: NBRC Medium 225
+  notes: NBRC Medium 225 lists 500 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: NBRC Medium 225
+  notes: NBRC Medium 225 lists 15 g/L agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 media_term:
   preferred_term: TOGO Medium M1453
   term:
     id: TOGO:M1453
     label: TOGO Medium M1453
-notes: 'Source: https://togomedium.org/medium/M1453
-
-  Original source: NBRC - NBRC_M225
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=225'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Combine 500 ml/L Table wine, 20 g/L Yeast extract, 10 g/L Calcium lactate,
+    20 g/L CaCO3, and 500 ml/L Distilled water.
+- step_number: 2
+  action: MIX
+  description: Add 15 g/L agar when solid NBRC Medium 225 is needed.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 6.6 to 6.8.
+notes: TOGO M1453 imports NBRC Medium 225, which lists 500 ml/L Table wine, 20 g/L
+  Yeast extract, 10 g/L Calcium lactate, 20 g/L CaCO3, 500 ml/L Distilled water, and
+  15 g/L Agar if needed. The listed pH range is 6.6 to 6.8.
 applications:
 - Microbial cultivation
 curation_history:
@@ -91,3 +121,18 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nbrc_225_score15.py
+  action: RESOLVED_NBRC_225_SCORE15
+  source: https://togomedium.org/medium/M1453; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=225
+  notes: Curated TOGO:M1453 from TOGO and NBRC Medium 225; corrected Table wine and
+    Distilled water from mass-like imports to 500 ml/L volume additions, added pH
+    6.6 to 6.8, grounded Calcium lactate and agar, and retained Table wine as a sourced
+    unmapped component.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1453
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=225

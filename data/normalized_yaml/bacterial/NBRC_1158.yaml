@@ -1,47 +1,69 @@
 id: CultureMech:007459
-name: '1158'
-original_name: '1158'
+name: TG agar
+original_name: TG agar
 category: bacterial
 description: 1158. NBRC 1155.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: NBRC Medium 1155
+  term:
+    id: nbrc.medium:1155
+    label: NBRC Medium 1155
 ingredients:
 - preferred_term: Tryptone (Diffico)
   concentration:
     value: '10'
     unit: G_PER_L
+  source: NBRC Medium 1155
+  notes: NBRC Medium 1155 lists 10 g Tryptone (Diffico).
+  term:
+    id: MICRO:0000182
+    label: tryptone
 - preferred_term: Glucose
   concentration:
     value: '3'
     unit: G_PER_L
+  source: NBRC Medium 1155
+  notes: NBRC Medium 1155 lists 3 g glucose.
   term:
+    id: CHEBI:17234
+    label: glucose
+  mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
 - preferred_term: Agar
   concentration:
     value: '10'
     unit: G_PER_L
+  source: NBRC Medium 1155
+  notes: NBRC Medium 1155 lists 10 g agar.
   term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: L
+  source: NBRC Medium 1155
+  notes: NBRC Medium 1155 lists 1 L distilled water.
   term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  description: Dissolve Tryptone (Diffico), glucose, and agar in 1 L distilled water.
 - step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
-- step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: AUTOCLAVE
+  description: Sterilize by autoclaving.
 curation_history:
 - timestamp: '2026-02-20T00:22:36.028725Z'
   curator: nbrc-import
@@ -76,5 +98,22 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 3 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
-notes: Tryptone (Diffico) 10 g Glucose 3 g Agar 10 g Distilled water 1 L Tryptone
-  (Diffico) 10 g Glucose 3 g Agar 10 g Distilled water 1 L
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_nbrc_1158_score15.py
+  action: RESOLVED_NBRC_1158_SCORE15
+  changes: Curated recovered NBRC Medium 1155 TG agar
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1155
+  notes: Added the NBRC Medium 1155 source term and official title, grounded all recovered
+    TG agar ingredients, and converted the placeholder preparation into source-specific
+    autoclave steps.
+notes: 'Source: NBRC Medium 1155 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1155
+
+
+  NBRC lists TG agar with Tryptone (Diffico), glucose, agar, and distilled water.'
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1155

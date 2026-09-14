@@ -10,28 +10,42 @@ media_term:
   term:
     id: mediadive.medium:J804
     label: 1/10 R2A AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=804'
+notes: JCM Medium 804 lists 1.82 g/L R2A agar (BD-Difco), 15 g/L agar, and 1.0 L distilled
+  water.
 ingredients:
-- preferred_term: R2A agar
-  term:
-    id: CHEBI:2509
-    label: agar
+- preferred_term: R2A agar (BD-Difco)
   concentration:
     value: '1.82'
     unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
+  source: JCM Medium 804
+  notes: JCM Medium 804 lists 1.82 g/L R2A agar (BD-Difco).
+  culturemech_term:
+    id: CultureMech:002706
+    label: R2A Agar
 - preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
+  source: JCM Medium 804
+  notes: JCM Medium 804 adds 15 g/L agar.
+  term:
+    id: CHEBI:2509
+    label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: JCM Medium 804
+  notes: JCM Medium 804 lists 1.0 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -57,4 +71,33 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_r2a_score20.py
+  action: RESOLVED_JCM_R2A_SCORE20
+  changes: Resolved score-20 direct JCM R2A Agar wrapper
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=804; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=346
+  notes: Uses 1.82 g/L R2A agar (BD-Difco) with 15 g/L added agar.
 kg_microbe_match: mediadive.medium:12
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve 1.82 g R2A agar (BD-Difco) and 15 g agar in 1.0 L distilled
+    water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+parent_media:
+  path: data/normalized_yaml/bacterial/r2a_agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002706
+  name: r2a_agar
+  notes: Uses 1.82 g/L R2A agar (BD-Difco) with 15 g/L added agar.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Uses 1.82 g/L R2A agar (BD-Difco) with 15 g/L added agar.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=804
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=346

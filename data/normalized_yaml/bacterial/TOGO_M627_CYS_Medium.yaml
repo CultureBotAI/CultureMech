@@ -5,123 +5,289 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.5
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: N-Z-Case (Wako)
   concentration:
-    value: '1'
+    value: '3.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+  source: TOGO M627 / JCM Medium 618
+  notes: TOGO M627 / JCM Medium 618 lists 3.0 g/L N-Z-Case (Wako).
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: TOGO M627 / JCM Medium 618
+  notes: TOGO M627 / JCM Medium 618 lists 2.0 g/L Yeast extract (BD-Difco).
   term:
-    id: CHEBI:15377
-    label: water
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Soluble starch (BD-Difco)
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: TOGO M627 / JCM Medium 618
+  notes: TOGO M627 / JCM Medium 618 lists 1.0 g/L Soluble starch (BD-Difco).
+  term:
+    id: CHEBI:28017
+    label: starch
   mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
+    id: CHEBI:28017
+    label: starch
+  nutritional_roles:
+  - CARBON_SOURCE
 - preferred_term: NaCl
   concentration:
-    value: '20'
+    value: '20.0'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  source: TOGO M627 / JCM Medium 618
+  notes: TOGO M627 / JCM Medium 618 lists 20.0 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.025'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: MgCl2・6H2O
+- preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '0.125'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO M627 / JCM Medium 618
+  notes: TOGO M627 / JCM Medium 618 lists 0.125 g/L MgCl2 x 6 H2O.
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-- preferred_term: FeSO4・7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  source: TOGO M627 / JCM Medium 618
+  notes: TOGO M627 / JCM Medium 618 lists 0.025 g/L CaCl2 x 2 H2O.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  source: TOGO M627 / JCM Medium 618
+  notes: TOGO M627 / JCM Medium 618 lists 0.01 g/L FeSO4 x 7 H2O.
   term:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
-- preferred_term: Soluble starch (BD-Difco)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+- preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Undefined component'
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: N-Z-Case (Wako)
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: MnCl2・4H2O (5.0 g/L in 0.01 N H2SO4)
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: ZnSO4・7H2O (0.6 g/L in 0.01 N H2SO4)
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
-- preferred_term: CuSO4・5H2O (0.15 g/L in 0.01 N H2SO4)
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
-- preferred_term: VOSO4・xH2O (1 g/L)
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Solution'
-- preferred_term: Na2MoO4・2H2O (12 g/L)
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
-    component'
-- preferred_term: CoCl2・6H2O (8.0 g/L in 0.01 N H2SO4)
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Solution, Defined component'
-- preferred_term: NiCl2・6H2O (0.2 g/L in 0.01 N H2SO4)
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Solution, Defined component'
+    value: '900.0'
+    unit: ML_PER_L
+  source: TOGO M627 / JCM Medium 618
+  notes: TOGO M627 / JCM Medium 618 lists 900 ml distilled water before pH adjustment.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M627
   term:
     id: TOGO:M627
     label: CYS Medium
-notes: 'Source: https://togomedium.org/medium/M627
-
-  Original source: JCM - JCM_M618
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=618'
+notes: JCM Medium 618 CYS Medium lists 3 g N-Z-Case, 2 g yeast extract, 1 g soluble
+  starch, 20 g NaCl, 0.125 g MgCl2 x 6 H2O, 0.025 g CaCl2 x 2 H2O, 0.01 g FeSO4 x
+  7 H2O, and seven trace-metal stocks added at 100 uL each before pH adjustment to
+  7.5 and final volume to 1 L.
+solutions:
+- preferred_term: Na2MoO4 x 2 H2O stock
+  concentration:
+    value: '0.1'
+    unit: ML_PER_L
+  source: TOGO M627 / JCM Medium 618
+  notes: TOGO M627 / JCM Medium 618 adds 100 uL of 12.0 g/L Na2MoO4 x 2 H2O.
+  composition:
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '12.0'
+      unit: G_PER_L
+    source: TOGO M627 / JCM Medium 618
+    notes: Na2MoO4 x 2 H2O stock is represented as a 12.0 g/L Na2MoO4 x 2 H2O stock.
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+- preferred_term: VOSO4 x n H2O stock
+  concentration:
+    value: '0.1'
+    unit: ML_PER_L
+  source: TOGO M627 / JCM Medium 618
+  notes: TOGO M627 / JCM Medium 618 adds 100 uL of 1.0 g/L VOSO4 x n H2O.
+  composition:
+  - preferred_term: VOSO4 x n H2O
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: TOGO M627 / JCM Medium 618
+    notes: VOSO4 x n H2O stock is represented as a 1.0 g/L VOSO4 x n H2O stock.
+    term:
+      id: CHEBI:87020
+      label: vanadyl sulfate hydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:87020
+      label: vanadyl sulfate hydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+- preferred_term: MnCl2 x 4 H2O stock
+  concentration:
+    value: '0.1'
+    unit: ML_PER_L
+  source: TOGO M627 / JCM Medium 618
+  notes: TOGO M627 / JCM Medium 618 adds 100 uL of 5.0 g/L MnCl2 x 4 H2O in 0.01 N
+    H2SO4.
+  composition:
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '5.0'
+      unit: G_PER_L
+    source: TOGO M627 / JCM Medium 618
+    notes: MnCl2 x 4 H2O stock is represented as a 5.0 g/L MnCl2 x 4 H2O stock in
+      0.01 N H2SO4.
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+- preferred_term: ZnSO4 x 7 H2O stock
+  concentration:
+    value: '0.1'
+    unit: ML_PER_L
+  source: TOGO M627 / JCM Medium 618
+  notes: TOGO M627 / JCM Medium 618 adds 100 uL of 0.6 g/L ZnSO4 x 7 H2O in 0.01 N
+    H2SO4.
+  composition:
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.6'
+      unit: G_PER_L
+    source: TOGO M627 / JCM Medium 618
+    notes: ZnSO4 x 7 H2O stock is represented as a 0.6 g/L ZnSO4 x 7 H2O stock in
+      0.01 N H2SO4.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+- preferred_term: CuSO4 x 5 H2O stock
+  concentration:
+    value: '0.1'
+    unit: ML_PER_L
+  source: TOGO M627 / JCM Medium 618
+  notes: TOGO M627 / JCM Medium 618 adds 100 uL of 0.15 g/L CuSO4 x 5 H2O in 0.01
+    N H2SO4.
+  composition:
+  - preferred_term: CuSO4 x 5 H2O
+    concentration:
+      value: '0.15'
+      unit: G_PER_L
+    source: TOGO M627 / JCM Medium 618
+    notes: CuSO4 x 5 H2O stock is represented as a 0.15 g/L CuSO4 x 5 H2O stock in
+      0.01 N H2SO4.
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+- preferred_term: CoCl2 x 6 H2O stock
+  concentration:
+    value: '0.1'
+    unit: ML_PER_L
+  source: TOGO M627 / JCM Medium 618
+  notes: TOGO M627 / JCM Medium 618 adds 100 uL of 8.0 g/L CoCl2 x 6 H2O in 0.01 N
+    H2SO4.
+  composition:
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '8.0'
+      unit: G_PER_L
+    source: TOGO M627 / JCM Medium 618
+    notes: CoCl2 x 6 H2O stock is represented as a 8.0 g/L CoCl2 x 6 H2O stock in
+      0.01 N H2SO4.
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+- preferred_term: NiCl2 x 6 H2O stock
+  concentration:
+    value: '0.1'
+    unit: ML_PER_L
+  source: TOGO M627 / JCM Medium 618
+  notes: TOGO M627 / JCM Medium 618 adds 100 uL of 0.2 g/L NiCl2 x 6 H2O in 0.01 N
+    H2SO4.
+  composition:
+  - preferred_term: NiCl2 x 6 H2O
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    source: TOGO M627 / JCM Medium 618
+    notes: NiCl2 x 6 H2O stock is represented as a 0.2 g/L NiCl2 x 6 H2O stock in
+      0.01 N H2SO4.
+    term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add the base components to 900 ml distilled water and mix thoroughly.
+- step_number: 2
+  action: MIX
+  description: Add each trace-metal stock solution at 0.1 ml/L in the listed order.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 7.5, bring the volume to 1.0 L with distilled water, and
+    autoclave.
+- step_number: 4
+  action: HEAT
+  description: Inoculate into the medium prewarmed to the optimal growth temperature.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: JCM's default instruction is to autoclave media at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -151,11 +317,29 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-high_metal: true
-variant_children:
-- path: data/normalized_yaml/bacterial/TOGO_M628_CYS_Medium_For_YMO722.yaml
-  relationship: SALINITY_VARIANT
-  id: CultureMech:010028
-  name: cys_medium_for_ymo722
-  notes: NaCl decreased from 20 g/L to 16 g/L while the TOGO CYS medium formulation
-    remains unchanged.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m627_m628_score15.py
+  action: RESOLVED_TOGO_M627_SCORE15
+  source: https://togomedium.org/medium/M627; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=618;
+    https://mediadive.dsmz.de/medium/J618
+  notes: Corrected the imported distilled-water and trace-stock units, added pH 7.5,
+    represented the seven 100 uL trace-metal additions as stock solutions, grounded
+    soluble starch, yeast extract, and the trace salts, retained N-Z-Case as intentionally
+    unmapped, and linked MediaDive J618 as a source duplicate.
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J618_CYS_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002965
+  name: cys_medium
+  notes: TOGO M627 imports the same JCM Medium 618 CYS Medium recipe.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same JCM Medium 618 CYS Medium formulation represented by MediaDive J618.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M627
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=618
+- reference: https://mediadive.dsmz.de/medium/J618

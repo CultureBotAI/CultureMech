@@ -8,32 +8,48 @@ physical_state: LIQUID
 ph_range:
   min: 7.2
   max: 7.4
+  notes: DSMZ Medium 601 states pH 7.2-7.4.
 media_term:
   preferred_term: DSMZ Medium 601
   term:
     id: mediadive.medium:601
     label: MARINE CAULOBACTER MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium601.pdf'
+notes: DSMZ Medium 601 contains 3.0 g yeast extract, 10.0 g Proteose peptone (Difco
+  0120), and 1000.0 ml artificial sea water, with pH 7.2-7.4.
 ingredients:
 - preferred_term: Yeast extract
   concentration:
-    value: '3'
+    value: '3.0'
     unit: G_PER_L
-- preferred_term: Proteose peptone
+  source: DSMZ Medium 601
+  notes: DSMZ Medium 601 lists 3.0 g yeast extract.
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+- preferred_term: Proteose peptone (Difco 0120)
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
-- preferred_term: Sea water
+  source: DSMZ Medium 601
+  notes: DSMZ Medium 601 lists 10.0 g Proteose peptone (Difco 0120).
+  term:
+    id: MICRO:0000180
+    label: Proteose Peptone
+- preferred_term: Artificial sea water
   concentration:
-    value: '1000'
-    unit: G_PER_L
+    value: '1000.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 601
+  notes: DSMZ Medium 601 lists 1000.0 ml artificial sea water prepared from marine
+    aquarium salt mixtures.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: pH 7.2-7.4
+  description: Mix 3.0 g yeast extract, 10.0 g Proteose peptone (Difco 0120), and
+    1000.0 ml artificial sea water.
 - step_number: 2
-  action: MIX
-  description: Artificial sea water is prepared from marine aquarium salt mixtures.
+  action: ADJUST_PH
+  description: Adjust pH to 7.2-7.4.
 applications:
 - Microbial cultivation
 curation_history:
@@ -54,3 +70,15 @@ curation_history:
   curator: migrate_ph_range.py
   action: MIGRATED_PH_RANGE
   notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_official_simple_score20.py
+  action: RESOLVED_OFFICIAL_SIMPLE_SCORE20
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium601.pdf
+  notes: DSMZ Medium 601 contains 3.0 g yeast extract, 10.0 g Proteose peptone (Difco
+    0120), and 1000.0 ml artificial sea water, with pH 7.2-7.4.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium601.pdf

@@ -6,33 +6,46 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
+- preferred_term: BL Agar*
+  concentration:
+    value: '58.0'
+    unit: G_PER_L
+  source: TOGO M1645 / NBRC Medium 848
+  notes: NBRC Medium 848 lists 58 g/L BL Agar and notes that the asterisk marks Nissui
+    Pharmaceutical Co. Ltd.; this commercial BL Agar product is retained as an opaque
+    base/solidifying component.
+- preferred_term: Defibrinated horse blood
+  concentration:
+    value: '50.0'
+    unit: ML_PER_L
+  source: TOGO M1645 / NBRC Medium 848
+  notes: NBRC Medium 848 lists 50 ml/L sterile defibrinated horse blood added aseptically
+    to a final 5% v/v.
+  term:
+    id: UBERON:0000178
+    label: blood
 - preferred_term: Distilled water
   concentration:
-    value: '950'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '950.0'
+    unit: ML_PER_L
+  source: TOGO M1645 / NBRC Medium 848
+  notes: NBRC Medium 848 lists 950 ml/L distilled water.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: Defibrinated horse blood
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
 media_term:
   preferred_term: TOGO Medium M1645
   term:
     id: TOGO:M1645
     label: BL Agar
-notes: 'Source: https://togomedium.org/medium/M1645
-
-  Original source: NBRC - NBRC_M848
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=848'
+notes: TOGO M1645 imports NBRC Medium 848 as BL Agar. NBRC 848 lists 58 g BL Agar
+  from Nissui Pharmaceutical, 50 ml defibrinated horse blood, 950 ml distilled water,
+  and no pH. NBRC 848 instructs autoclaving the base without horse blood, cooling
+  to about 50 C, aseptically adding sterile defibrinated horse blood to 5% final,
+  then quickly dispensing into sterile test tubes or Petri dishes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,11 +87,35 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-solutions:
-- preferred_term: BL Agar*
-  composition: []
-  concentration:
-    value: '58'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component; Properties: Undefined component, Complex component'
-  name: Unknown solution
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m1645_bl_agar_score15.py
+  action: RESOLVED_TOGO_M1645_SCORE15
+  source: https://togomedium.org/medium/M1645; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=848
+  notes: TOGO M1645 imports NBRC Medium 848 as BL Agar. NBRC 848 lists 58 g BL Agar
+    from Nissui Pharmaceutical, 50 ml defibrinated horse blood, 950 ml distilled water,
+    and no pH. NBRC 848 instructs autoclaving the base without horse blood, cooling
+    to about 50 C, aseptically adding sterile defibrinated horse blood to 5% final,
+    then quickly dispensing into sterile test tubes or Petri dishes. Moved the Nissui
+    BL Agar product out of an empty solution wrapper, corrected water and horse blood
+    liquid units, and marked the NBRC formula as curated.
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave the BL Agar base without horse blood.
+- step_number: 2
+  action: COOL
+  description: Cool to about 50 C.
+- step_number: 3
+  action: MIX
+  description: Aseptically add sterile defibrinated horse blood to 5% v/v final and
+    mix.
+- step_number: 4
+  action: POUR_PLATES
+  description: Quickly dispense into sterile test tubes or Petri dishes.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1645
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=848

@@ -212,6 +212,12 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_archaea_ph_wrappers_score20.py
+  action: LINKED_ARCHAEA_PH_WRAPPER_SCORE20_CHILDREN
+  changes: Linked archaeal pH child variant to its base parent
+  source: https://togomedium.org/medium/M165
+  notes: Added or refreshed reciprocal pH-variant link for archaea/TOGO_M165_Sulfolobus_Medium_B.yaml.
 solutions:
 - preferred_term: Modified Brock's salt base solution (see below)
   composition: []
@@ -219,3 +225,9 @@ solutions:
     value: '1'
     unit: G_PER_L
   name: Unknown solution
+variant_children:
+- path: data/normalized_yaml/archaea/TOGO_M165_Sulfolobus_Medium_B.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:008217
+  name: sulfolobus_medium_b
+  notes: Adjusts TOGO M156 Sulfolobus Medium to pH 3.5 with 10 N H2SO4.

@@ -4,17 +4,30 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: Spring sampling GW821 filtered with 0.2uM filter
-  concentration:
-    value: '1.00'
-    unit: FOLD_DILUTION
-- preferred_term: 'Cell lysate '
+- preferred_term: Cell lysate
   concentration:
     value: '0.004'
     unit: FOLD_DILUTION
+  notes: CultureBotHT lists Cell lysate at a 1/250 fold dilution.
+  nutritional_roles:
+  - CARBON_SOURCE
+solutions:
+- preferred_term: FilteredGW noC
+  concentration:
+    value: '1.00'
+    unit: FOLD_DILUTION
+  culturemech_term:
+    id: CultureMech:015526
+    label: FilteredGW noC
+  notes: CultureBotHT uses the filtered GW821 no-carbon recipe as the base.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add Cell lysate to filtered GW821 groundwater.
 description: Incubation medium for isolation using ground water as base and Cell lysate
   as additional carbon source
-notes: 'Source: FEBA media definitions'
+notes: CultureBotHT imports this variant as filtered GW821 groundwater supplemented
+  with Cell lysate at a 1/250 dilution.
 category: specialized
 sources:
 - database: CultureBotHT
@@ -33,5 +46,37 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_culturebotht_specialized_score50.py
+  action: RESOLVED_CULTUREBOTHT_SPECIALIZED_SCORE50_GRAPH
+  changes: Resolved score-50 CultureBotHT specialized recipe graph
+  source: CultureBotHT:FilteredGW Cell lysate 1/250; https://github.com/CultureBotAI/CultureBotHT
+  notes: CultureBotHT imports this variant as filtered GW821 groundwater supplemented
+    with Cell lysate at a 1/250 dilution.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_culturebotht_specialized_score50.py
+  action: LINKED_CULTUREBOTHT_SPECIALIZED_SCORE50_CHILDREN
+  changes: Linked score-50 CultureBotHT specialized child media
+  notes: Added or refreshed reciprocal parent-child link for specialized/filteredgw_cell_lysate_1_2500.yaml.
 data_quality_flags:
 - has_unmapped_ingredients
+- has_ontology_mappings
+- ingredients_curated
+parent_media:
+  path: data/normalized_yaml/specialized/filteredgw_noc.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:015526
+  name: FilteredGW noC
+  notes: Adds 0.004 fold Cell lysate to FilteredGW noC.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adds 0.004 fold Cell lysate to FilteredGW noC.
+references:
+- reference: CultureBotHT:FilteredGW Cell lysate 1/250
+- reference: https://github.com/CultureBotAI/CultureBotHT
+variant_children:
+- path: data/normalized_yaml/specialized/filteredgw_cell_lysate_1_2500.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:015525
+  name: FilteredGW Cell lysate 1/2500
+  notes: Uses 0.0004 instead of 0.004 fold Cell lysate in filtered GW821 groundwater.

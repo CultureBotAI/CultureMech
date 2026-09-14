@@ -6,6 +6,11 @@ description: 1118. NBRC 1117.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: NBRC Medium 1117
+  term:
+    id: nbrc.medium:1117
+    label: NBRC Medium 1117
 ingredients:
 - preferred_term: KH2PO4
   concentration:
@@ -40,6 +45,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:50144
+    label: Na-pyruvate
 - preferred_term: Sodium succinate
   concentration:
     value: '0.5'
@@ -58,6 +66,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Ferric citrate solution* (0.1%)
   concentration:
     value: '5'
@@ -94,14 +105,21 @@ ingredients:
     label: water
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  action: MIX
+  description: Mix ingredients except vitamin B12, NaHCO3, and Na2S·9H2O.
 - step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
+  action: AUTOCLAVE
+  description: Autoclave under a N2 atmosphere.
 - step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: AUTOCLAVE
+  description: Separately autoclave Na2S·9H2O solution under N2.
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Filter-sterilize vitamin B12 and NaHCO3 solutions.
+- step_number: 5
+  action: MIX
+  description: Before inoculation, aseptically and anaerobically add vitamin B12,
+    NaHCO3, and Na2S·9H2O.
 curation_history:
 - timestamp: '2026-02-20T00:22:36.024227Z'
   curator: nbrc-import
@@ -139,6 +157,12 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 10 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1117
+  notes: Preserved the recovered NBRC Medium 1117 composition table.
 solutions:
 - preferred_term: Trace element solution SL7
   composition:
@@ -192,8 +216,14 @@ solutions:
       id: CHEBI:15377
       label: water
   name: Trace element solution SL7
-notes: pH 6.6 - 7.4 Mix ingredients except for vitamin B12, NaHCO3 and Na2S·9H2O,
-  and autoclave under a N2 atmosphere. Separately autoclave Na2S·9H2O solution under
-  a N2 atmosphere. Sterilize vitamin B12 and NaHCO3 solutions by filtration. Prior
-  to inoculation, aseptically and anaerobically add them. Soluble in hot water. Initially,
-  dissolve FeCl2·4H2O in 25% HCl, then add distilled water followed by the other components.
+notes: 'Source: NBRC Medium 1117 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1117
+
+
+  The NBRC Medium for strain JA480 table lists a pH range of 6.6 to 7.4 and a nested
+  Trace element solution SL7 recipe.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1117

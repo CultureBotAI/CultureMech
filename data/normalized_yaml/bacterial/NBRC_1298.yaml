@@ -1,138 +1,69 @@
 id: CultureMech:007470
-name: '1298'
-original_name: '1298'
+name: NBRC Medium 1296
+original_name: NBRC Medium 1296
 category: bacterial
 description: 1298. NBRC 1296.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: NBRC Medium 1296
+  term:
+    id: nbrc.medium:1296
+    label: NBRC Medium 1296
+ph_value: 7.0
 ingredients:
-- preferred_term: Peptone
-  term:
-    id: MICRO:0000178
-    label: peptone
+- preferred_term: Nutrient Broth Powder (Kyokuto*)
   concentration:
-    value: '17.0'
+    value: '6'
     unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo) MacConkey
-      Agar
-    catalog_number: BD 212123, Sigma 05465
-    product_url: https://microbenotes.com/macconkey-agar/
-  notes: Pancreatic digest of gelatin, provides nitrogen and amino acids; Constituent
-    of MacConkey Agar commercial product
-  synonyms:
-  - synonym_text: pancreatic gelatin digest
-    synonym_type: EXACT
-- preferred_term: Proteose peptone
-  term:
-    id: MICRO:0000180
-    label: proteose peptone
+  source: NBRC Medium 1296
+  notes: NBRC Medium 1296 lists 6 g Nutrient Broth Powder from Kyokuto Pharmaceutical
+    Industrial Co., LTD., Code 551-02480-7.
+- preferred_term: Pyruvic acid sodium salt
   concentration:
-    value: '3.0'
+    value: '1'
     unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo) MacConkey
-      Agar
-    catalog_number: BD 212123, Sigma 05465
-    product_url: https://microbenotes.com/macconkey-agar/
-  notes: Meat and casein digest, provides additional nutrients; Constituent of MacConkey
-    Agar commercial product
-- preferred_term: Lactose monohydrate
+  source: NBRC Medium 1296
+  notes: NBRC Medium 1296 lists 1 g pyruvic acid sodium salt.
   term:
-    id: CHEBI:17716
-    label: lactose
+    id: CHEBI:50144
+    label: sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+- preferred_term: Distilled water
   concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo) MacConkey
-      Agar
-    catalog_number: BD 212123, Sigma 05465
-    product_url: https://microbenotes.com/macconkey-agar/
-  notes: Fermentable carbohydrate for differentiation. Fermentation produces acid
-    causing pH drop and color change; Constituent of MacConkey Agar commercial product
-  synonyms:
-  - synonym_text: lactose
-    synonym_type: EXACT
-- preferred_term: Bile salts
+    value: '1'
+    unit: L
+  source: NBRC Medium 1296
+  notes: NBRC Medium 1296 lists 1 L distilled water.
   term:
-    id: CHEBI:22868
-    label: bile salt
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Agar (if needed)
   concentration:
-    value: '1.5'
+    value: '15'
     unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo) MacConkey
-      Agar
-    catalog_number: BD 212123, Sigma 05465
-    product_url: https://microbenotes.com/macconkey-agar/
-  notes: Selective agent - inhibits gram-positive bacteria; Constituent of MacConkey
-    Agar commercial product
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo) MacConkey
-      Agar
-    catalog_number: BD 212123, Sigma 05465
-    product_url: https://microbenotes.com/macconkey-agar/
-  notes: Maintains osmotic equilibrium; Constituent of MacConkey Agar commercial product
-- preferred_term: Neutral red
-  term:
-    id: CHEBI:86370
-    label: neutral red
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo) MacConkey
-      Agar
-    catalog_number: BD 212123, Sigma 05465
-    product_url: https://microbenotes.com/macconkey-agar/
-  notes: pH indicator - turns red/pink below pH 6.8, absorbed by colonies of lactose
-    fermenters; Constituent of MacConkey Agar commercial product
-- preferred_term: Crystal violet
-  term:
-    id: CHEBI:41688
-    label: crystal violet
-  concentration:
-    value: '0.001'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo) MacConkey
-      Agar
-    catalog_number: BD 212123, Sigma 05465
-    product_url: https://microbenotes.com/macconkey-agar/
-  notes: Selective agent - inhibits gram-positive bacteria; Constituent of MacConkey
-    Agar commercial product
-- preferred_term: Agar
+  source: NBRC Medium 1296
+  notes: NBRC Medium 1296 lists 15 g agar if needed.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '13.5'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo) MacConkey
-      Agar
-    catalog_number: BD 212123, Sigma 05465
-    product_url: https://microbenotes.com/macconkey-agar/
-  notes: Solidifying agent; Constituent of MacConkey Agar commercial product
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  description: Dissolve Nutrient Broth Powder, pyruvic acid sodium salt, and agar
+    if needed in 1 L distilled water.
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH if needed
-- step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  description: Adjust pH to 7.0.
 curation_history:
 - timestamp: '2026-02-20T00:22:36.053461Z'
   curator: nbrc-import
@@ -167,15 +98,22 @@ curation_history:
   notes: Record already held a grounded ingredient list, so the NBRC medium 1296 page
     was NOT used — it lists only the commercial premix. Dropped the empty-name row
     and 0 unparsed solution blob(s) (#299).
-notes: 'Commercial Product: MacConkey Agar
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_nbrc_1298_score15.py
+  action: RESOLVED_NBRC_1298_SCORE15
+  changes: Replaced misidentified MacConkey expansion with NBRC 1296
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1296
+  notes: Replaced MacConkey Agar constituent rows with NBRC Medium 1296's Nutrient
+    Broth Powder, pyruvic acid sodium salt, water, optional agar, and pH 7.0 formula.
+notes: 'Source: NBRC Medium 1296 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1296
 
-  Supplier: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo)
 
-  Catalog: BD 212123, Sigma 05465
-
-  Source: https://microbenotes.com/macconkey-agar/
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
+  NBRC lists 6 g Nutrient Broth Powder from Kyokuto Pharmaceutical Industrial Co.,
+  LTD. (Code 551-02480-7), 1 g pyruvic acid sodium salt, 1 L distilled water, optional
+  agar, and pH 7.0.'
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1296

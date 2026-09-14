@@ -10,28 +10,37 @@ media_term:
   term:
     id: mediadive.medium:J410
     label: GLYCEROL-ASPARAGINE AGAR (ISP-5) WITH 10% NaCl
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=410'
+notes: JCM Medium 410 defines Glycerol-Asparagine Agar (ISP-5) with 10% NaCl as 1
+  L of JCM Medium 60 Glycerol-Asparagine Agar (ISP-5) plus 100 g/L NaCl.
 ingredients:
-- preferred_term: Glycerol-asparagine agar
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
 - preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
   concentration:
     value: '100'
     unit: G_PER_L
+  source: JCM Medium 410
+  notes: Adds 100 g/L NaCl to JCM Medium 60 Glycerol-Asparagine Agar (ISP-5).
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+solutions:
+- preferred_term: Glycerol-Asparagine Agar (ISP-5)
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  notes: Adds 100 g/L NaCl to JCM Medium 60 Glycerol-Asparagine Agar (ISP-5).
+  culturemech_term:
+    id: CultureMech:002957
+    label: Glycerol-Asparagine Agar (ISP-5)
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adds 100 g/L NaCl to JCM Medium 60 Glycerol-Asparagine Agar (ISP-5).
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,4 +67,25 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_isp5_salinity_score20.py
+  action: RESOLVED_JCM_ISP5_SALINITY_SCORE20
+  changes: Resolved JCM ISP-5 10% NaCl salinity variant
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=410; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=60
+  notes: Adds 100 g/L NaCl to JCM Medium 60 Glycerol-Asparagine Agar (ISP-5).
 kg_microbe_match: mediadive.medium:101
+parent_media:
+  path: data/normalized_yaml/bacterial/glycerol_asparagine_agar_isp_5.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:002957
+  name: glycerol_asparagine_agar_isp_5
+  notes: Adds 100 g/L NaCl to JCM Medium 60 Glycerol-Asparagine Agar (ISP-5).
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- Adds 100 g/L NaCl to JCM Medium 60 Glycerol-Asparagine Agar (ISP-5).
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=410
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=60

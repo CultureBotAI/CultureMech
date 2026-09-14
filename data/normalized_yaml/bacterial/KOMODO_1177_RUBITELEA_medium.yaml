@@ -14,35 +14,50 @@ notes: 'Source: KOMODO ModelSEED | ID: 1177 | DSMZ Medium: 1177 (mediadive.mediu
   | Aerobic: No'
 ingredients:
 - preferred_term: Starch
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: DSMZ Medium 1177
+  notes: DSMZ Medium 1177 lists 10.0 g starch.
   term:
     id: CHEBI:28017
     label: starch
-  concentration:
-    value: '10'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
     label: starch
 - preferred_term: Yeast extract
   concentration:
-    value: '4'
+    value: '4.0'
     unit: G_PER_L
+  source: DSMZ Medium 1177
+  notes: DSMZ Medium 1177 lists 4.0 g yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Peptone
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
+  source: DSMZ Medium 1177
+  notes: DSMZ Medium 1177 lists 2.0 g peptone.
+  term:
+    id: MICRO:0000178
+    label: peptone
 - preferred_term: Sea water
   concentration:
-    value: '1000'
-    unit: G_PER_L
+    value: '1000.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 1177
+  notes: DSMZ Medium 1177 lists 1000.0 ml sea water.
 - preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: DSMZ Medium 1177
+  notes: DSMZ Medium 1177 says agar may be added at 15 g/L to solidify the medium.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: ' (for solid medium)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
@@ -76,6 +91,12 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_dsmz_1177_rubitelea_score15.py
+  action: RESOLVED_DSMZ_1177_RUBITELEA_SCORE15
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1177.pdf
+  notes: DSMZ Medium 1177 lists starch, yeast extract, peptone, and sea water; agar
+    is optional at 15 g/L to solidify the medium.
 parent_media:
   path: data/normalized_yaml/bacterial/rubitelea_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -88,3 +109,13 @@ variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - KOMODO record is an exact source duplicate of DSMZ Medium 1177; local ingredient
   and concentration signatures match.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add 15 g/L agar to solidify DSMZ Medium 1177 when needed.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1177.pdf

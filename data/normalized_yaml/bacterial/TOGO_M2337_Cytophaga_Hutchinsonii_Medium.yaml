@@ -5,54 +5,71 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.2
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Casitone
   concentration:
-    value: '1000'
+    value: '3.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M2337 / DSMZ Medium 160 / DSMZ Medium 67
+  notes: DSMZ Medium 67 lists 3 g/L Casitone; this casein digest is retained as an
+    opaque complex component.
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '1.36'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  source: TOGO M2337 / DSMZ Medium 160 / DSMZ Medium 67
+  notes: TOGO M2337 / DSMZ Medium 160 / DSMZ Medium 67 lists 1.36 g/L CaCl2 x 2 H2O.
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-- preferred_term: cellobiose (filter-sterilized)
+- preferred_term: Yeast extract
   concentration:
-    value: '0.5'
-    unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Solution, Organic compound, Defined component'
-- preferred_term: Casitone
-  concentration:
-    value: '3'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2337 / DSMZ Medium 160 / DSMZ Medium 67
+  notes: TOGO M2337 / DSMZ Medium 160 / DSMZ Medium 67 lists 1.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Cellobiose
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: TOGO M2337 / DSMZ Medium 160 / DSMZ Medium 67
+  notes: DSMZ Medium 160 adds 0.5% w/v filter-sterilized Cellobiose to DSMZ Medium
+    67, equivalent to 5 g/L.
+  term:
+    id: CHEBI:17057
+    label: cellobiose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17057
+    label: cellobiose
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: TOGO M2337 / DSMZ Medium 160 / DSMZ Medium 67
+  notes: DSMZ Medium 67 lists 1000 ml Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M2337
   term:
     id: TOGO:M2337
     label: Cytophaga Hutchinsonii Medium
-notes: 'Source: https://togomedium.org/medium/M2337
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium160.pdf'
+notes: TOGO M2337 imports DSMZ Medium 160 as Cytophaga Hutchinsonii Medium. DSMZ Medium
+  160 adds 0.5% filter-sterilized cellobiose to DSMZ Medium 67. DSMZ Medium 67 lists,
+  per liter, 3 g Casitone, 1.36 g CaCl2 x 2 H2O, 1 g Yeast extract, and 1000 ml Distilled
+  water; the imported M2337 branch is represented without the 15 g agar from DSMZ
+  Medium 67 and with 0.5% w/v Cellobiose converted to 5 g/L. Adjust pH to 7.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -83,3 +100,31 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2337_score15.py
+  action: RESOLVED_TOGO_M2337_SCORE15
+  source: https://togomedium.org/medium/M2337; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium160.pdf;
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf
+  notes: TOGO M2337 imports DSMZ Medium 160 as Cytophaga Hutchinsonii Medium. DSMZ
+    Medium 160 adds 0.5% filter-sterilized cellobiose to DSMZ Medium 67. DSMZ Medium
+    67 lists, per liter, 3 g Casitone, 1.36 g CaCl2 x 2 H2O, 1 g Yeast extract, and
+    1000 ml Distilled water; the imported M2337 branch is represented without the
+    15 g agar from DSMZ Medium 67 and with 0.5% w/v Cellobiose converted to 5 g/L.
+    Adjust pH to 7.2. Corrected the imported water g/L artifact, converted cellobiose
+    from 0.5% w/v to 5 g/L, added the DSMZ pH and filter-sterilized cellobiose steps,
+    and marked the liquid cellobiose formula as curated.
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Add 0.5% filter-sterilized cellobiose to DSMZ Medium 67.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2337
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium160.pdf
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf

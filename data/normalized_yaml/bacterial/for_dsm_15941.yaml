@@ -369,15 +369,22 @@ curation_history:
     b12. Each moved component matched the MediaDive stock by name AND value; bulk
     ingredients sharing a name were left in place (#150).'
   changes: Nested 6 ingredient(s) under 3 solution(s); ingredients 38 -> 32
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_732_dehalobacter_topology_score10.py
+  action: RESOLVED_KOMODO_732_DEHALOBACTER_TOPOLOGY
+  changes: Linked under DEHALOBACTER RESTRICTUS MEDIUM
+  source: KOMODO Medium 732.2
+  notes: KOMODO Medium 732.2 applies DEHALOBACTER RESTRICTUS MEDIUM at pH 7.2 for
+    DSM 15941.
 parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_13726.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006375
-  name: for_dsm_13726
-variant_relationship: SOURCE_DUPLICATE
+  path: data/normalized_yaml/bacterial/dehalobacter_restrictus_medium.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006377
+  name: dehalobacter_restrictus_medium
+  notes: KOMODO Medium 732 is the pH 7.2 DEHALOBACTER RESTRICTUS MEDIUM base.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 732.2 applies DEHALOBACTER RESTRICTUS MEDIUM at pH 7.2 for DSM 15941.
 solutions:
 - preferred_term: Trace element solution
   composition:
@@ -535,3 +542,5 @@ solutions:
   preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
     asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
     (#150).'
+data_quality_flags:
+- ingredients_curated

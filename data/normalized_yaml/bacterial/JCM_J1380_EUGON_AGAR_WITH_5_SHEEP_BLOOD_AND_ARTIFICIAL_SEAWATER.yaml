@@ -11,27 +11,29 @@ media_term:
   term:
     id: jcm.grmd:1380
     label: EUGON AGAR WITH 5% SHEEP BLOOD AND ARTIFICIAL SEAWATER
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1380'
+notes: JCM Medium 1380 combines Eugon agar, sheep blood, and artificial seawater prepared
+  from the salts printed in JCM Medium 736.
 ingredients:
 - preferred_term: Eugon agar (BD-Difco)
   concentration:
     value: '45.4'
     unit: G_PER_L
+  source: JCM Medium 1380
+  notes: JCM Medium 1380 lists 45.4 g Eugon agar (BD-Difco).
 - preferred_term: Sheep blood
   concentration:
     value: '50.0'
     unit: ML_PER_L
-- preferred_term: Artificial seawater (see Medium No. 736 )
-  concentration:
-    value: '950.0'
-    unit: ML_PER_L
+  source: JCM Medium 1380
+  notes: JCM Medium 1380 lists 50.0 ml sheep blood.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Mix ingredients except sheep blood, autoclave and cool to about 45C.
+  description: Mix Eugon agar with artificial seawater, autoclave, and cool to about
+    45 C.
 - step_number: 2
   action: MIX
-  description: Aseptically add 5% (final) sterile defibrinated sheep blood.
+  description: Aseptically add 5% final sterile defibrinated sheep blood.
 - step_number: 3
   action: MIX
   description: Mix and quickly dispense into sterile petri dishes.
@@ -41,5 +43,171 @@ curation_history:
 - timestamp: '2026-06-02T07:08:56.123574+00:00'
   curator: jcm-grmd-import
   action: Scraped from JCM GRMD database
-  notes: Direct import from JCM GRMD=1380. Ingredients captured verbatim; CHEBI/MediaIngredientMech enrichment
-    and category (bacterial/archaea) review are downstream steps.
+  notes: Direct import from JCM GRMD=1380. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_cross_reference_score25.py
+  action: RESOLVED_SCORE25_CROSS_REFERENCE
+  changes: Resolved score-25 source cross-references
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1380; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=736
+  notes: JCM Medium 1380 combines Eugon agar, sheep blood, and artificial seawater
+    prepared from the salts printed in JCM Medium 736.
+solutions:
+- preferred_term: Artificial seawater
+  concentration:
+    value: '950.0'
+    unit: ML_PER_L
+  notes: JCM Medium 1380 adds 950.0 ml artificial seawater from JCM Medium 736.
+  composition:
+  - preferred_term: NaCl
+    concentration:
+      value: '23.5'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 1380.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: MgCl2 x 6 H2O
+    concentration:
+      value: '4.9'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 1380.
+    term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+  - preferred_term: Na2SO4
+    concentration:
+      value: '3.9'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 1380.
+    term:
+      id: CHEBI:32149
+      label: sodium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32149
+      label: sodium sulfate
+  - preferred_term: CaCl2 x 2 H2O
+    concentration:
+      value: '1.1'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 1380.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: KCl
+    concentration:
+      value: '0.66'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 1380.
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+  - preferred_term: NaHCO3
+    concentration:
+      value: '0.19'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 1380.
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+  - preferred_term: KBr
+    concentration:
+      value: '0.096'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 1380.
+    term:
+      id: CHEBI:32030
+      label: potassium bromide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32030
+      label: potassium bromide
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.026'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 1380.
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: SrCl2 x 6 H2O
+    concentration:
+      value: '0.024'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 1380.
+    term:
+      id: CHEBI:36385
+      label: strontium dichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:36385
+      label: strontium dichloride hexahydrate
+  - preferred_term: NaF
+    concentration:
+      value: '0.003'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 1380.
+    term:
+      id: CHEBI:28741
+      label: sodium fluoride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:28741
+      label: sodium fluoride
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 736
+    notes: JCM Medium 736 lists 1.0 L distilled water for the Artificial seawater
+      subrecipe.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+sterilization:
+  method: AUTOCLAVE
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1380
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=736
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients

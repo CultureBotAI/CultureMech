@@ -2,32 +2,13 @@ id: CultureMech:009343
 name: mrs_supplemented_with_0_05_cysteine
 original_name: MRS supplemented with 0.05% cysteine
 category: bacterial
-medium_type: COMPLEX
-composition_type: UNDEFINED
-physical_state: LIQUID
-ingredients:
-- preferred_term: Cysteine
-  concentration:
-    value: '0.05'
-    unit: PERCENT_W_V
-  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
-    Simple component'
-  term:
-    id: CHEBI:15356
-    label: cysteine
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15356
-    label: cysteine
-- preferred_term: MRS broth
-  concentration:
-    value: '1'
-    unit: G_PER_L
 media_term:
   preferred_term: TOGO Medium M2795
   term:
     id: TOGO:M2795
     label: MRS supplemented with 0.05% cysteine
-notes: 'Source: https://togomedium.org/medium/M2795'
+notes: TOGO M2795 lists MRS broth supplemented with 0.05% cysteine and anaerobic propagation
+  at 37 C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,3 +39,46 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_condition_wrappers_score20.py
+  action: RESOLVED_TOGO_CONDITION_WRAPPERS_SCORE20
+  changes: Resolved score-20 TOGO product and condition wrapper
+  source: https://togomedium.org/medium/M2795
+  notes: TOGO M2795 lists MRS broth supplemented with 0.05% cysteine and anaerobic
+    propagation at 37 C.
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+temperature_value: 37.0
+ingredients:
+- preferred_term: Cysteine
+  concentration:
+    value: '0.05'
+    unit: PERCENT_W_V
+  source: TOGO M2795
+  notes: TOGO M2795 lists cysteine at 0.05%.
+  term:
+    id: CHEBI:15356
+    label: cysteine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15356
+    label: cysteine
+- preferred_term: MRS broth
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2795
+  notes: TOGO M2795 lists 1000 ML_PER_L of MRS broth.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Supplement one liter of MRS broth with 0.05% cysteine.
+- step_number: 2
+  action: MIX
+  description: Cultivate anaerobically at 37 C.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2795

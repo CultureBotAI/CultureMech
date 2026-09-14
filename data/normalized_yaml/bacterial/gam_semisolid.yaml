@@ -4,28 +4,45 @@ original_name: GAM SEMISOLID
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: SOLID_AGAR
+physical_state: SEMISOLID
 media_term:
   preferred_term: JCM Medium J84
   term:
     id: mediadive.medium:J84
     label: GAM SEMISOLID
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=84'
+notes: JCM Medium 84 contains 59.0 g GAM broth (Nissui), 2.0 g agar, and 1.0 L distilled
+  water.
 ingredients:
-- preferred_term: GAM broth
+- preferred_term: GAM broth (Nissui)
   concentration:
-    value: '59'
+    value: '59.0'
     unit: G_PER_L
+  source: JCM Medium 84
+  notes: JCM Medium 84 lists 59.0 g GAM broth (Nissui).
 - preferred_term: Agar
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: JCM Medium 84
+  notes: JCM Medium 84 lists 2.0 g agar.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '2'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: JCM Medium 84
+  notes: JCM Medium 84 lists 1000 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -51,4 +68,26 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_official_simple_score20.py
+  action: RESOLVED_OFFICIAL_SIMPLE_SCORE20
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=84
+  notes: JCM Medium 84 contains 59.0 g GAM broth (Nissui), 2.0 g agar, and 1.0 L distilled
+    water.
 kg_microbe_match: mediadive.medium:12
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Suspend 59.0 g GAM broth (Nissui) and 2.0 g agar in 1.0 L distilled
+    water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min unless otherwise stated.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=84

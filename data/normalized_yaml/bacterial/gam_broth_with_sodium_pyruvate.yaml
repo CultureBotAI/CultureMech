@@ -11,26 +11,60 @@ media_term:
   term:
     id: mediadive.medium:J1314
     label: GAM BROTH WITH SODIUM PYRUVATE
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1314'
+notes: JCM Medium 1314 lists 59.0 g GAM broth from Nissui, 10.0 g sodium pyruvate,
+  and 1.0 L distilled water; it adjusts pH to 7.0 and uses JCM's default autoclaving
+  at 121 C for 15 min.
 ingredients:
-- preferred_term: GAM broth
+- preferred_term: GAM broth (Nissui)
   concentration:
-    value: '59'
+    value: '59.0'
     unit: G_PER_L
+  source: JCM Medium 1314
+  notes: JCM Medium 1314 lists 59.0 g/L GAM broth from Nissui without disclosing the
+    product composition.
 - preferred_term: Sodium pyruvate
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: JCM Medium 1314
+  notes: JCM Medium 1314 lists 10.0 g/L sodium pyruvate.
   term:
     id: CHEBI:50144
     label: sodium pyruvate
-  concentration:
-    value: '10'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
     label: sodium pyruvate
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: JCM Medium 1314
+  notes: JCM Medium 1314 lists 1.0 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Mix 59.0 g GAM broth from Nissui and 10.0 g sodium pyruvate with 1.0
+    L distilled water.
+- step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Sterilize by autoclaving at 121 C for 15 min.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: JCM states to sterilize media by autoclaving at 121 C for 15 min unless otherwise
+    stated.
 applications:
 - Microbial cultivation
 curation_history:
@@ -57,4 +91,16 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-kg_microbe_match: mediadive.medium:J1244
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_jcm_1314_gam_pyruvate_score15.py
+  action: RESOLVED_JCM_1314_GAM_PYRUVATE_SCORE15
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1314
+  notes: JCM Medium 1314 lists 59.0 g GAM broth from Nissui, 10.0 g sodium pyruvate,
+    and 1.0 L distilled water; it adjusts pH to 7.0 and uses JCM's default autoclaving
+    at 121 C for 15 min.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1314

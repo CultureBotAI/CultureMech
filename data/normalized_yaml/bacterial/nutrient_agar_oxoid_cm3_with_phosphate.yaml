@@ -11,65 +11,101 @@ media_term:
   term:
     id: mediadive.medium:605a
     label: NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium605a.pdf'
+notes: DSMZ Medium 605a supplements DSMZ Medium 605 with 0.45 g/L KH2PO4 and 2.39
+  g/L Na2HPO4 x 12 H2O; the final pH is 6.8.
 ingredients:
 - preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
   concentration:
     value: '0.45'
     unit: G_PER_L
+  source: DSMZ Medium 605a
+  notes: DSMZ Medium 605a adds 0.45 g/L KH2PO4 to DSMZ Medium 605.
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
 - preferred_term: Na2HPO4 x 12 H2O
-  term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
   concentration:
     value: '2.39'
     unit: G_PER_L
+  source: DSMZ Medium 605a
+  notes: DSMZ Medium 605a adds 2.39 g/L Na2HPO4 x 12 H2O to DSMZ Medium 605.
+  term:
+    id: CHEBI:91259
+    label: disodium hydrogenphosphate dodecahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
+    id: CHEBI:91259
+    label: disodium hydrogenphosphate dodecahydrate
 - preferred_term: Lab-Lemco beef extract
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
+  source: DSMZ Medium 605
+  notes: DSMZ Medium 605 lists 1.0 g/L Lab-Lemco beef extract.
+  term:
+    id: FOODON:03302088
+    label: Beef extract
 - preferred_term: Yeast extract
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
+  source: DSMZ Medium 605
+  notes: DSMZ Medium 605 lists 2.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Peptone
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
+  source: DSMZ Medium 605
+  notes: DSMZ Medium 605 lists 5.0 g/L Peptone.
+  term:
+    id: MICRO:0000178
+    label: Peptone
 - preferred_term: NaCl
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: DSMZ Medium 605
+  notes: DSMZ Medium 605 lists 5.0 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
-  concentration:
-    value: '5'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
 - preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: DSMZ Medium 605
+  notes: DSMZ Medium 605 lists 15.0 g/L Agar.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: DSMZ Medium 605
+  notes: DSMZ Medium 605 lists 1000.0 ml Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
-  action: FILTER_STERILIZE
-  description: To medium 605 add 0.45 g/l KH2PO4 and 2.39 g/l of Na2HPO4 x 12 H2O.
-    Final pH of the medium should be 6.8.
+  action: MIX
+  description: Add 0.45 g/L KH2PO4 and 2.39 g/L Na2HPO4 x 12 H2O to DSMZ Medium 605;
+    final pH is 6.8.
 applications:
 - Microbial cultivation
 curation_history:
@@ -100,6 +136,12 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nutrient_ncg_nssm_score15.py
+  action: RESOLVED_DSMZ_605A_SCORE15
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium605a.pdf; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium605.pdf
+  notes: DSMZ Medium 605a supplements DSMZ Medium 605 with 0.45 g/L KH2PO4 and 2.39
+    g/L Na2HPO4 x 12 H2O; the final pH is 6.8.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_605a_NUTRIENT_AGAR_OXOID_CM3_WITH_PHOSPHATE.yaml
   relationship: SOURCE_DUPLICATE
@@ -107,3 +149,20 @@ variant_children:
   name: nutrient_agar_oxoid_cm3_with_phosphate
   notes: Same ingredient and concentration signature; KOMODO record copied from the
     matching DSMZ medium source.
+parent_media:
+  path: data/normalized_yaml/bacterial/nutrient_agar_oxoid_cm3.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:001732
+  name: nutrient_agar_oxoid_cm3
+  notes: DSMZ Medium 605a adds KH2PO4 and Na2HPO4 x 12 H2O to DSMZ Medium 605 and
+    sets the final pH to 6.8.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Add 0.45 g/L KH2PO4 and 2.39 g/L Na2HPO4 x 12 H2O to DSMZ Medium 605; final pH is
+  6.8.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium605a.pdf
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium605.pdf

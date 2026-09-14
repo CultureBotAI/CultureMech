@@ -11,44 +11,83 @@ media_term:
   term:
     id: mediadive.medium:J43
     label: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2)
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=43'
+notes: JCM Medium 43 defines Yeast extract-malt extract agar (ISP-2) with 4.0 g yeast
+  extract, 10.0 g malt extract, 4.0 g glucose, 20.0 g agar, and 1.0 L distilled water,
+  adjusted to pH 7.3.
 ingredients:
-- preferred_term: Yeast extract
+- preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: '4'
+    value: '4.0'
     unit: G_PER_L
-- preferred_term: Malt extract
+  source: JCM Medium 43
+  notes: JCM Medium 43 prints this component.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Malt extract (BD-Difco)
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
+  source: JCM Medium 43
+  notes: JCM Medium 43 prints this component.
+  term:
+    id: FOODON:03301056
+    label: malt extract
+  nutritional_roles:
+  - CARBON_SOURCE
+  - NITROGEN_SOURCE
 - preferred_term: Glucose
+  concentration:
+    value: '4.0'
+    unit: G_PER_L
+  source: JCM Medium 43
+  notes: JCM Medium 43 prints this component.
   term:
     id: CHEBI:17234
     label: glucose
-  concentration:
-    value: '4'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  nutritional_roles:
+  - CARBON_SOURCE
 - preferred_term: Agar
+  concentration:
+    value: '20.0'
+    unit: G_PER_L
+  source: JCM Medium 43
+  notes: JCM Medium 43 prints this component.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '20'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: JCM Medium 43
+  notes: JCM Medium 43 lists 1.0 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Prepare Yeast extract-malt extract agar (ISP-2).
+- step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.3.
-- step_number: 2
-  action: MIX
-  description: 'Comment: The premixed powder is available from Becton Dickinson &
-    Co. as ISP Medium 2.'
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -75,3 +114,51 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_isp2_salinity_score20.py
+  action: RESOLVED_JCM_ISP2_SALINITY_SCORE20
+  changes: Resolved JCM Medium 43 ISP-2 base composition
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=43
+  notes: Rebuilt the JCM Medium 43 ISP-2 base from the JCM table.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_isp2_salinity_score20.py
+  action: LINKED_JCM_ISP2_SALINITY_SCORE20_CHILDREN
+  changes: Linked score-20 JCM ISP-2 salinity variants
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1152; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=43
+  notes: Added or refreshed reciprocal salinity-variant link for fungal/yeast_extract_malt_extract_agar_isp_2_with_2_nacl.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_isp2_salinity_score20.py
+  action: LINKED_JCM_ISP2_SALINITY_SCORE20_CHILDREN
+  changes: Linked score-20 JCM ISP-2 salinity variants
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=207; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=43
+  notes: Added or refreshed reciprocal salinity-variant link for fungal/yeast_extract_malt_extract_agar_isp_2_with_5_nacl.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_isp2_salinity_score20.py
+  action: LINKED_JCM_ISP2_SALINITY_SCORE20_CHILDREN
+  changes: Linked score-20 JCM ISP-2 salinity variants
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=527; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=43
+  notes: Added or refreshed reciprocal salinity-variant link for fungal/yeast_extract_malt_extract_agar_isp_2_with_5_nacl_ph_9_0.yaml.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=43
+variant_children:
+- path: data/normalized_yaml/fungal/yeast_extract_malt_extract_agar_isp_2_with_2_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:010493
+  name: yeast_extract_malt_extract_agar_isp_2_with_2_nacl
+  notes: Adds 20 g/L NaCl to JCM Medium 43 ISP-2.
+- path: data/normalized_yaml/fungal/yeast_extract_malt_extract_agar_isp_2_with_5_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:010509
+  name: yeast_extract_malt_extract_agar_isp_2_with_5_nacl
+  notes: Adds 50 g/L NaCl to JCM Medium 43 ISP-2.
+- path: data/normalized_yaml/fungal/yeast_extract_malt_extract_agar_isp_2_with_5_nacl_ph_9_0.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:010532
+  name: yeast_extract_malt_extract_agar_isp_2_with_5_nacl_ph_9_0
+  notes: Adds 50 g/L NaCl to JCM Medium 43 ISP-2 and adjusts the medium to pH 9.0
+    with sterilized 10% Na2CO3 solution.

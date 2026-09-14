@@ -10,27 +10,41 @@ media_term:
   term:
     id: mediadive.medium:584
     label: BRUCELLA AGAR
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium584.pdf'
+notes: DSMZ Medium 584 directs preparing Brucella agar, cooling it to 50 C after autoclaving,
+  and adding 100 ml/L sheep blood.
 ingredients:
 - preferred_term: Brucella agar
-  term:
-    id: CHEBI:2509
-    label: agar
   concentration:
     value: '1000'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
+    unit: ML_PER_L
+  source: DSMZ Medium 584
+  notes: DSMZ Medium 584 says to prepare Brucella agar, e.g. from Merck, before adding
+    sheep blood.
+  term:
+    id: MICRO:0000595
+    label: Brucella agar
 - preferred_term: Sheep blood
   concentration:
     value: '100'
-    unit: G_PER_L
+    unit: ML_PER_L
+  source: DSMZ Medium 584
+  notes: DSMZ Medium 584 adds 100 ml/L sheep blood.
+  term:
+    id: UBERON:0000178
+    label: blood
 preparation_steps:
 - step_number: 1
-  action: HEAT
-  description: Prepare Brucella agar (e.g. Merck). Cool to 50°C after autoclaving,
-    then add 100 ml/l sheep blood.
+  action: MIX
+  description: Prepare Brucella agar according to the manufacturer's directions.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the Brucella agar.
+- step_number: 3
+  action: COOL
+  description: Cool the autoclaved Brucella agar to 50 C.
+- step_number: 4
+  action: MIX
+  description: Add 100 ml/L sheep blood.
 applications:
 - Microbial cultivation
 curation_history:
@@ -56,4 +70,17 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_official_simple_score20.py
+  action: RESOLVED_OFFICIAL_SIMPLE_SCORE20
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium584.pdf
+  notes: DSMZ Medium 584 directs preparing Brucella agar, cooling it to 50 C after
+    autoclaving, and adding 100 ml/L sheep blood.
 kg_microbe_match: mediadive.medium:12
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium584.pdf

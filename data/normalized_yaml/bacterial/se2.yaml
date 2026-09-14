@@ -12,37 +12,46 @@ media_term:
     label: SE2
 notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf
 
-  Composition verified against https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf
-  on 2026-08-25.'
+
+  CCAP prepares SE2 by twice autoclaving dried calcareous garden loam with twice its
+  volume of deionized water, settling it for 2-3 weeks, decanting the supernatant,
+  and autoclaving the final extract.'
 ingredients:
-- preferred_term: Prepared dried soil
+- preferred_term: Prepared dried calcareous garden loam
   concentration:
     value: variable
     unit: VARIABLE
-  notes: Use air-dried, sieved calcareous garden loam.
+  term:
+    id: ENVO:00001998
+    label: soil
+  notes: CCAP specifies air-dried and sieved calcareous garden loam.
 - preferred_term: Deionized water
   concentration:
-    value: variable
+    value: 2 volumes per 1 volume dried soil
     unit: VARIABLE
-  notes: Use twice the volume of water relative to dried soil.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: CCAP mixes dried soil with twice its volume of deionized water.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Remove stones, roots, and large invertebrates; air-dry and sieve the
-    soil.
+  description: Air-dry calcareous garden loam, remove debris, and sieve it.
 - step_number: 2
   action: MIX
-  description: Combine dried soil with twice its volume of supernatant deionized water.
+  description: Combine dried soil with twice its volume of deionized water.
 - step_number: 3
   action: AUTOCLAVE
-  description: Autoclave at 15 psi and 126 C for 20 minutes; cool and repeat once.
+  description: Autoclave at 15 psi and 126 C for 20 minutes, cool, and repeat once.
 - step_number: 4
   action: STORE
-  description: Seal and leave undisturbed for 2-3 weeks so sediment settles.
+  description: Seal and leave undisturbed for 2-3 weeks to settle.
 - step_number: 5
   action: ALIQUOT
-  description: Aseptically decant the supernatant into sterile containers without
-    disturbing sediment.
+  description: Aseptically decant the supernatant into sterile containers.
 - step_number: 6
   action: AUTOCLAVE
   description: Autoclave the final soil extract at 15 psi and 121 C for 15 minutes.
@@ -70,6 +79,21 @@ curation_history:
   changes: ingredients 1 -> 2; solutions 0 -> 0
   notes: Rebuilt se2 from the reviewed CCAP PDF. Preserved stock boundaries and per-vessel
     quantities; ingredient identities follow the MediaIngredientMech SSSOM.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_bacterial_se2_score35.py
+  action: GROUNDED_BACTERIAL_CCAP_SE2_SCORE35
+  changes: Grounded bacterial CCAP SE2 duplicate
+  source: https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf
+  notes: Aligned the bacterial CCAP SE2 duplicate with the reviewed two-component
+    SE2 source recipe.
 ph_value: 7.1
 sterilization:
   method: AUTOCLAVE
+  pressure: 15
+  duration: 20 minutes, repeated once, then 15 minutes
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: CCAP:SE2_Freshwater
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf

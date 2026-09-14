@@ -122,3 +122,25 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_r2a_score40.py
+  action: LINKED_R2A_SCORE40_CHILDREN
+  changes: Linked score-40 JCM/TOGO R2A variants
+  notes: Added or refreshed bacterial/1_10_r2a_broth.yaml as a child of bacterial/r2a_broth.yaml.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2125_r2a_daigo_score15.py
+  action: LINKED_TOGO_M2125_R2A_DAIGO_SCORE15_CHILD
+  source: https://togomedium.org/medium/M2125; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1455
+  notes: Added or refreshed bacterial/r2a_medium_daigo.yaml as a physical-state child
+    of bacterial/r2a_broth.yaml.
+variant_children:
+- path: data/normalized_yaml/bacterial/1_10_r2a_broth.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:003150
+  name: 1_10_r2a_broth
+  notes: JCM Medium 805 dilutes the R2A Broth DAIGO premix to 0.32 g/L.
+- path: data/normalized_yaml/bacterial/r2a_medium_daigo.yaml
+  relationship: PHYSICAL_STATE_VARIANT
+  id: CultureMech:008718
+  name: r2a_medium_daigo
+  notes: Adds 15 g/L agar if needed to 3.2 g/L R2A Broth "DAIGO" premix.

@@ -394,6 +394,20 @@ curation_history:
     duplicate values written by cleanup_media_quality.py. Every merged part was the
     same value, so the pre-merge value is unambiguous and no source lookup was needed.
     Rows whose merged parts differ were left untouched.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_829_desulfurobacterium_ph_score10.py
+  action: RESOLVED_KOMODO_829_DESULFUROBACTERIUM_PH_VARIANT
+  changes: Linked a DESULFUROBACTERIUM MEDIUM pH variant child
+  source: KOMODO Medium 829.1
+  notes: Changed DSM 14290 from SOURCE_DUPLICATE to PH_VARIANT under KOMODO Medium
+    829.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_829_desulfurobacterium_ph_score10.py
+  action: RESOLVED_KOMODO_829_DESULFUROBACTERIUM_STRAIN_VARIANT
+  changes: Linked Desulfurobacterium strain-specific children
+  source: KOMODO Medium 829.3
+  notes: Changed DSM 21157 from SOURCE_DUPLICATE to a STRAIN_SPECIFIC_VARIANT child
+    of DESULFUROBACTERIUM MEDIUM.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_829a_DESULFUROBACTERIUM_ATLANTICUM_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
@@ -402,11 +416,10 @@ variant_children:
   notes: Same ingredient and concentration signature; review as possible duplicate
     source record.
 - path: data/normalized_yaml/bacterial/for_dsm_14290.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: PH_VARIANT
   id: CultureMech:006561
   name: for_dsm_14290
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 829.1 applies DESULFUROBACTERIUM MEDIUM at pH 6.5 for DSM 14290.
 - path: data/normalized_yaml/bacterial/for_dsm_15218_dsm_15521_dsm_15522_dsm_16304.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006562
@@ -414,11 +427,10 @@ variant_children:
   notes: Same ingredient and concentration signature; review as possible duplicate
     source record.
 - path: data/normalized_yaml/bacterial/for_dsm_21157.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006563
   name: for_dsm_21157
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 829.3 applies DESULFUROBACTERIUM MEDIUM at pH 6 for DSM 21157.
 - path: data/normalized_yaml/bacterial/medium_829_modified_for_dsm_16661.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006560

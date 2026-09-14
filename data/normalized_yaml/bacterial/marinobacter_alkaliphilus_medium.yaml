@@ -10,32 +10,73 @@ media_term:
   term:
     id: mediadive.medium:J392
     label: MARINOBACTER ALKALIPHILUS MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=392'
+notes: JCM Medium 392 Marinobacter alkaliphilus medium lists 37.4 g Marine broth 2216
+  (BD-Difco), 0.05 g Na2SiO3, 1.0 g Na2CO3, and 1.0 L distilled water. JCM dissolves
+  Marine broth 2216 in 900 ml water, autoclaves that base, separately dissolves Na2SiO3
+  and Na2CO3 in 100 ml water, autoclaves the carbonate/silicate solution, and adds
+  it to the medium.
 ingredients:
-- preferred_term: Marine broth 2216
+- preferred_term: Marine broth 2216 (BD-Difco)
   concentration:
     value: '37.4'
     unit: G_PER_L
+  source: JCM Medium 392
+  notes: JCM Medium 392 lists 37.4 g/L Marine broth 2216 (BD-Difco).
 - preferred_term: Na2SiO3
   concentration:
     value: '0.05'
     unit: G_PER_L
+  source: JCM Medium 392
+  notes: JCM Medium 392 lists 0.05 g/L Na2SiO3.
+  term:
+    id: CHEBI:60720
+    label: sodium silicate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:60720
+    label: sodium silicate
 - preferred_term: Na2CO3
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 392
+  notes: JCM Medium 392 lists 1.0 g/L Na2CO3.
   term:
     id: CHEBI:29377
     label: sodium carbonate
-  concentration:
-    value: '1'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
     label: sodium carbonate
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: JCM Medium 392
+  notes: JCM Medium 392 lists 1000 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Dissolve 37.4 g Marine broth 2216 (BD-Difco) in 900 ml distilled water.
+- step_number: 2
   action: AUTOCLAVE
-  description: Dissolve Marine broth 2216 in 900 ml distilled water and autoclave.
-    Separately dissolve Na2SiO3 and Na2CO3 in 100 ml distilled water, autoclave, and
-    add to the medium.
+  description: Autoclave the Marine broth 2216 base.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Dissolve 0.05 g Na2SiO3 and 1.0 g Na2CO3 in 100 ml distilled water
+    and autoclave.
+- step_number: 4
+  action: MIX
+  description: Aseptically add the autoclaved Na2SiO3/Na2CO3 solution to the Marine
+    broth 2216 base.
+sterilization:
+  method: AUTOCLAVE
+  notes: JCM Medium 392 autoclaves the Marine broth 2216 base and carbonate/silicate
+    solution separately.
 applications:
 - Microbial cultivation
 curation_history:
@@ -71,4 +112,21 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_jcm_j392_marinobacter_score15.py
+  action: RESOLVED_JCM_J392_MARINOBACTER_SCORE15
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=392
+  notes: JCM Medium 392 Marinobacter alkaliphilus medium lists 37.4 g Marine broth
+    2216 (BD-Difco), 0.05 g Na2SiO3, 1.0 g Na2CO3, and 1.0 L distilled water. JCM
+    dissolves Marine broth 2216 in 900 ml water, autoclaves that base, separately
+    dissolves Na2SiO3 and Na2CO3 in 100 ml water, autoclaves the carbonate/silicate
+    solution, and adds it to the medium. Restored the JCM distilled-water row, grounded
+    Na2SiO3 and Na2CO3, and retained Marine broth 2216 (BD-Difco) as an opaque commercial
+    product.
 kg_microbe_match: mediadive.medium:634c
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=392

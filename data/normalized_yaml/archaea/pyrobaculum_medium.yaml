@@ -208,8 +208,14 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_390_pyrobaculum_score10.py
+  action: RESOLVED_KOMODO_390_PYROBACULUM_STRAIN_VARIANTS
+  changes: Corrected KOMODO Medium 390 source-duplicate path
+  source: MediaDive Medium 390 and KOMODO Medium 390
+  notes: Pointed the DSMZ parent at the actual archaeal KOMODO Medium 390 file.
 variant_children:
-- path: data/normalized_yaml/bacterial/KOMODO_390_PYROBACULUM_MEDIUM.yaml
+- path: data/normalized_yaml/archaea/KOMODO_390_PYROBACULUM_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005172
   name: pyrobaculum_medium

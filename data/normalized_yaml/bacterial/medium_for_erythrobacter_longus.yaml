@@ -17,18 +17,30 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: MICRO:0000178
+    label: Peptone
 - preferred_term: Soytone
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: FOODON:03315720
+    label: Soy peptone
 - preferred_term: Yeast extract
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Proteose peptone no. 3
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: MICRO:0000180
+    label: Proteose Peptone
 - preferred_term: Fe(III) citrate
   term:
     id: CHEBI:144421
@@ -53,7 +65,8 @@ curation_history:
 - timestamp: '2026-06-14T05:58:58.561437+00:00'
   curator: idnf-grounding-fix-v1.0
   action: Fixed ID_NOT_FOUND term groundings
-  notes: 'Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI, 1 de-grounded (mixture or unverifiable).'
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-26T17:53:11.952946Z'
   curator: mediadive-import
   action: Imported from MediaDive
@@ -81,6 +94,18 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2354_score15.py
+  action: LINKED_TOGO_M2354_SOURCE_DUPLICATE
+  source: https://togomedium.org/medium/M2354; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium695.pdf
+  notes: Linked TOGO M2354 as a source duplicate of DSMZ Medium 695.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_bacterial_score10_exact_terms_batch5.py
+  action: GROUNDED_BACTERIAL_SCORE10_EXACT_TERMS_BATCH5
+  changes: Grounded bacterial score-10 exact ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Peptone, Proteose peptone no. 3, Soytone, Yeast
+    extract.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_695_medium_FOR_ERYTHROBACTER_LONGUS.yaml
   relationship: SOURCE_DUPLICATE
@@ -88,3 +113,9 @@ variant_children:
   name: medium_for_erythrobacter_longus
   notes: Same ingredient and concentration signature; KOMODO record copied from the
     matching DSMZ medium source.
+- path: data/normalized_yaml/bacterial/TOGO_M2354_Medium_For_Erythrobacter_Longus.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008939
+  name: medium_for_erythrobacter_longus
+  notes: TOGO M2354 imports DSMZ Medium 695 and exactly matches this parent formula,
+    with source solution-volume rows retained.

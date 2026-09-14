@@ -76,16 +76,25 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Beef extract (BD-Difco)
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
+  term:
+    id: FOODON:03302088
+    label: Beef extract
 - preferred_term: Casein peptone, tryptic digest
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
+  term:
+    id: FOODON:03315719
+    label: Casein peptone
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -138,3 +147,10 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 3 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_bacterial_score10_exact_terms_batch2.py
+  action: GROUNDED_BACTERIAL_SCORE10_EXACT_TERMS_BATCH2
+  changes: Grounded exact bacterial score-10 ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Beef extract (BD-Difco), Casein peptone, tryptic
+    digest, Yeast extract (BD-Difco).

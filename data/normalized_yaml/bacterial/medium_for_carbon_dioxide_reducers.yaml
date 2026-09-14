@@ -404,13 +404,21 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-ph_value: 7.0
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_915_blautia_score10.py
+  action: RESOLVED_KOMODO_915_BLAUTIA_TOPOLOGY
+  changes: Linked under DSMZ Medium 915 as SOURCE_DUPLICATE
+  source: KOMODO Medium 915
+  notes: KOMODO Medium 915 has the same 35-ingredient signature as DSMZ Medium 915.
 parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_14469.yaml
+  path: data/normalized_yaml/bacterial/blautia_medium.yaml
   relationship: SOURCE_DUPLICATE
-  id: CultureMech:006791
-  name: for_dsm_14469
+  id: CultureMech:002083
+  name: blautia_medium
+  notes: KOMODO Medium 915 has the same 35-ingredient signature as DSMZ Medium 915.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 915 has the same 35-ingredient signature as DSMZ Medium 915.
+ph_value: 7.0
+data_quality_flags:
+- ingredients_curated

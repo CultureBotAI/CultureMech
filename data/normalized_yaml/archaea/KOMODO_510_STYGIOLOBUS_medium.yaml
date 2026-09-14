@@ -13,9 +13,249 @@ media_term:
   term:
     id: komodo.medium:510
     label: STYGIOLOBUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 510 | DSMZ Medium: 510 (mediadive.medium:510)
-  | Aerobic: Yes'
-ingredients: []
+notes: Archived DSMZ Medium 510 defines STYGIOLOBUS MEDIUM as the anaerobic branch
+  of DSMZ Medium 358, inheriting the DSMZ Medium 88 salt base, with final 0.2 g/L
+  yeast extract, 5 g/L sulfur, 0.5 mg/L resazurin, pH 2.5-3.0, and 200 kPa 80:20 H2/CO2
+  overpressure.
+ingredients:
+- preferred_term: (NH4)2SO4
+  source: Archived DSMZ Medium 88
+  notes: Archived DSMZ Medium 88 lists 1.30 g/L (NH4)2SO4 per liter in the salt base.
+  concentration:
+    value: '1.300000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: KH2PO4
+  source: Archived DSMZ Medium 88
+  notes: Archived DSMZ Medium 88 lists 0.28 g/L KH2PO4 per liter in the salt base.
+  concentration:
+    value: '0.280000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: MgSO4 x 7 H2O
+  source: Archived DSMZ Medium 88
+  notes: Archived DSMZ Medium 88 lists 0.25 g/L MgSO4 x 7 H2O per liter in the salt
+    base.
+  concentration:
+    value: '0.250000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: CaCl2 x 2 H2O
+  source: Archived DSMZ Medium 88
+  notes: Archived DSMZ Medium 88 lists 0.07 g/L CaCl2 x 2 H2O per liter in the salt
+    base.
+  concentration:
+    value: '0.070000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: FeCl3 x 6 H2O
+  source: Archived DSMZ Medium 88
+  notes: Archived DSMZ Medium 88 lists 0.02 g/L FeCl3 x 6 H2O per liter in the salt
+    base.
+  concentration:
+    value: '0.020000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+- preferred_term: MnCl2 x 4 H2O
+  source: Archived DSMZ Medium 88
+  notes: Archived DSMZ Medium 88 lists 1.80 mg/L MnCl2 x 4 H2O per liter in the salt
+    base.
+  concentration:
+    value: '0.001800'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+- preferred_term: Na2B4O7 x 10 H2O
+  source: Archived DSMZ Medium 88
+  notes: Archived DSMZ Medium 88 lists 4.50 mg/L Na2B4O7 x 10 H2O per liter in the
+    salt base.
+  concentration:
+    value: '0.004500'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131366
+    label: disodium tetraborate decahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131366
+    label: disodium tetraborate decahydrate
+- preferred_term: ZnSO4 x 7 H2O
+  source: Archived DSMZ Medium 88
+  notes: Archived DSMZ Medium 88 lists 0.22 mg/L ZnSO4 x 7 H2O per liter in the salt
+    base.
+  concentration:
+    value: '0.000220'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: CuCl2 x 2 H2O
+  source: Archived DSMZ Medium 88
+  notes: Archived DSMZ Medium 88 lists 0.05 mg/L CuCl2 x 2 H2O per liter in the salt
+    base.
+  concentration:
+    value: '0.000050'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+- preferred_term: Na2MoO4 x 2 H2O
+  source: Archived DSMZ Medium 88
+  notes: Archived DSMZ Medium 88 lists 0.03 mg/L Na2MoO4 x 2 H2O per liter in the
+    salt base.
+  concentration:
+    value: '0.000030'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: VOSO4 x 2 H2O
+  source: Archived DSMZ Medium 88
+  notes: Archived DSMZ Medium 88 lists 0.03 mg/L VOSO4 x 2 H2O per liter in the salt
+    base.
+  concentration:
+    value: '0.000030'
+    unit: G_PER_L
+  term:
+    id: CHEBI:87009
+    label: vanadyl sulfate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:87009
+    label: vanadyl sulfate dihydrate
+- preferred_term: CoSO4
+  source: Archived DSMZ Medium 88
+  notes: Archived DSMZ Medium 88 lists 0.01 mg/L CoSO4 per liter in the salt base.
+  concentration:
+    value: '0.000010'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53470
+    label: cobalt(II) sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53470
+    label: cobalt(II) sulfate
+- preferred_term: Yeast extract
+  source: Archived DSMZ Medium 510
+  notes: Archived DSMZ Medium 510 sets the final STYGIOLOBUS medium to 0.2 g/L Yeast
+    extract.
+  concentration:
+    value: '0.200000'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Sulfur (powder)
+  source: Archived DSMZ Medium 510
+  notes: Archived DSMZ Medium 510 sets the final STYGIOLOBUS medium to 5 g/L Sulfur
+    (powder).
+  concentration:
+    value: '5.000000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33403
+    label: elemental sulfur
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33403
+    label: elemental sulfur
+- preferred_term: Resazurin
+  source: Archived DSMZ Medium 510
+  notes: Archived DSMZ Medium 510 sets the final STYGIOLOBUS medium to 0.5 mg/L Resazurin.
+  concentration:
+    value: '0.000500'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: H2SO4
+  source: Archived DSMZ Medium 510
+  notes: Archived DSMZ Medium 510 adjusts the final medium to pH 2.5-3.0.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
+- preferred_term: H2
+  source: Archived DSMZ Medium 510
+  notes: Archived DSMZ Medium 510 pressurizes inoculated bottles with 80% H2 and 20%
+    CO2.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:18276
+    label: dihydrogen
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18276
+    label: dihydrogen
+- preferred_term: CO2
+  source: Archived DSMZ Medium 510
+  notes: Archived DSMZ Medium 510 pressurizes inoculated bottles with 80% H2 and 20%
+    CO2.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
+- preferred_term: Demineralized water
+  source: Archived DSMZ Medium 88
+  notes: Archived DSMZ Medium 88 lists 1000 mL demineralized water per liter.
+  concentration:
+    value: '1000.000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -42,5 +282,19 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_510_score30.py
+  action: RESOLVED_KOMODO_510_SCORE30
+  source: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium510.pdf
+  notes: Archived DSMZ Medium 510 defines STYGIOLOBUS MEDIUM as the anaerobic branch
+    of DSMZ Medium 358, inheriting the DSMZ Medium 88 salt base, with final 0.2 g/L
+    yeast extract, 5 g/L sulfur, 0.5 mg/L resazurin, pH 2.5-3.0, and 200 kPa 80:20
+    H2/CO2 overpressure.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=510
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium510.pdf
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium358.pdf
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium88.pdf

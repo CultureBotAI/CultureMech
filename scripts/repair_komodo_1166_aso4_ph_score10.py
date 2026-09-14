@@ -1,0 +1,365 @@
+#!/usr/bin/env python3
+"""Repair KOMODO 1166 ASO4 strain and pH child links."""
+
+from __future__ import annotations
+
+import argparse
+import copy
+import sys
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any
+
+import yaml
+
+REPO = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO / "scripts"))
+from record_io import dump_record, write_record  # noqa: E402
+
+NORMALIZED = REPO / "data" / "normalized_yaml"
+YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
+
+PARENT = Path("bacterial/aso4_medium.yaml")
+PARENT_ID = "CultureMech:003884"
+PARENT_NAME = "aso4_medium"
+PARENT_SOURCE_TERM = "komodo.medium:1166"
+PARENT_PH = 10.0
+PH_RELATIONSHIP = "PH_VARIANT"
+STRAIN_RELATIONSHIP = "STRAIN_SPECIFIC_VARIANT"
+
+INGREDIENT_SIGNATURE = (
+    ("NaCl", "5.98205", "G_PER_L"),
+    ("K2HPO4", "0.997009", "G_PER_L"),
+    ("Na2SO4", "2.79163", "G_PER_L"),
+    ("NaHCO3", "7.97607", "G_PER_L"),
+    ("Na2CO3", "21.9342", "G_PER_L"),
+    ("NH4Cl", "0.199402", "G_PER_L"),
+    ("MgCl2 x 6 H2O", "0.199402", "G_PER_L"),
+    ("Yeast extract", "0.0498504", "G_PER_L"),
+    ("Na-pyruvate", "2.19342", "G_PER_L"),
+    ("Na2HAsO4 x 7 H2O", "6.18146", "G_PER_L"),
+    ("Na2S x 9 H2O", "0.239282", "G_PER_L"),
+    ("EDTA", "5", "G_PER_L"),
+    ("FeSO4 x 7 H2O", "2.2", "G_PER_L"),
+    ("ZnSO4 x 7 H2O", "0.1", "G_PER_L"),
+    ("MnCl2 x 4 H2O", "0.03", "G_PER_L"),
+    ("H3BO3", "0.03", "G_PER_L"),
+    ("CoCl2 x 6 H2O", "0.2", "G_PER_L"),
+    ("CuCl2 x 2 H2O", "0.03", "G_PER_L"),
+    ("NiCl2 x 6 H2O", "0.03", "G_PER_L"),
+    ("Na2MoO4 x 2 H2O", "0.03", "G_PER_L"),
+    ("NaOH", "0.5", "G_PER_L"),
+    ("Na2SeO3 x 5 H2O", "0.003", "G_PER_L"),
+    ("Na2WO4 x 2 H2O", "0.004", "G_PER_L"),
+    ("Biotin", "0.02", "G_PER_L"),
+    ("Folic acid", "0.02", "G_PER_L"),
+    ("Pyridoxine hydrochloride", "0.1", "G_PER_L"),
+    ("Thiamine HCl", "0.05", "G_PER_L"),
+    ("Riboflavin", "0.05", "G_PER_L"),
+    ("Nicotinic acid", "0.05", "G_PER_L"),
+    ("Calcium D-(+)-pantothenate", "0.05", "G_PER_L"),
+    ("Vitamin B12", "0.001", "G_PER_L"),
+    ("p-Aminobenzoic acid", "0.05", "G_PER_L"),
+    ("(DL)-alpha-Lipoic acid", "0.05", "G_PER_L"),
+)
+
+CURATOR = "repair_komodo_1166_aso4_ph_score10.py"
+ACTION = "RESOLVED_KOMODO_1166_ASO4_TOPOLOGY"
+LEGACY_ACTIONS = frozenset({ACTION, "RESOLVED_KOMODO_1166_ASO4_PH_VARIANT"})
+TIMESTAMP = "2026-09-13T00:00:00-07:00"
+
+
+@dataclass(frozen=True)
+class Child:
+    path: Path
+    record_id: str
+    name: str
+    source_term: str
+    ph_value: float
+    dsm: str
+    relationship: str
+
+    @property
+    def source_label(self) -> str:
+        return f"KOMODO Medium {self.source_term.removeprefix('komodo.medium:')}"
+
+    @property
+    def modification(self) -> str:
+        if self.relationship == STRAIN_RELATIONSHIP:
+            return (
+                f"{self.source_label} applies ASO4 medium to {self.dsm} "
+                f"at the pH {PARENT_PH:g} base condition."
+            )
+        return (
+            f"{self.source_label} preserves ASO4 medium components and "
+            f"concentrations but records pH {self.ph_value:g} for {self.dsm}."
+        )
+
+    @property
+    def notes(self) -> str:
+        if self.relationship == STRAIN_RELATIONSHIP:
+            return f"{self.source_label} applies ASO4 medium to {self.dsm}."
+        return (
+            f"{self.source_label} applies ASO4 medium at pH {self.ph_value:g} "
+            f"for {self.dsm}."
+        )
+
+
+CHILDREN = (
+    Child(
+        path=Path("bacterial/for_dsm_22071.yaml"),
+        record_id="CultureMech:003879",
+        name="for_dsm_22071",
+        source_term="komodo.medium:1166.1",
+        ph_value=10.0,
+        dsm="DSM 22071",
+        relationship=STRAIN_RELATIONSHIP,
+    ),
+    Child(
+        path=Path("bacterial/for_dsm_22410.yaml"),
+        record_id="CultureMech:003881",
+        name="for_dsm_22410",
+        source_term="komodo.medium:1166.3",
+        ph_value=9.5,
+        dsm="DSM 22410",
+        relationship=PH_RELATIONSHIP,
+    ),
+    Child(
+        path=Path("bacterial/for_dsm_24176_and_dsm_24629.yaml"),
+        record_id="CultureMech:003882",
+        name="for_dsm_24176_and_dsm_24629",
+        source_term="komodo.medium:1166.4",
+        ph_value=10.0,
+        dsm="DSM 24176 and DSM 24629",
+        relationship=STRAIN_RELATIONSHIP,
+    ),
+    Child(
+        path=Path("bacterial/for_dsm_24179.yaml"),
+        record_id="CultureMech:003883",
+        name="for_dsm_24179",
+        source_term="komodo.medium:1166.5",
+        ph_value=10.0,
+        dsm="DSM 24179",
+        relationship=STRAIN_RELATIONSHIP,
+    ),
+    Child(
+        path=Path("bacterial/for_dsm_24400.yaml"),
+        record_id="CultureMech:003880",
+        name="for_dsm_24400",
+        source_term="komodo.medium:1166.2",
+        ph_value=10.0,
+        dsm="DSM 24400",
+        relationship=STRAIN_RELATIONSHIP,
+    ),
+)
+CHILD_BY_PATH = {child.path: child for child in CHILDREN}
+
+
+def _load(path: Path) -> dict[str, Any]:
+    doc = yaml.load(path.read_text(encoding="utf-8"), Loader=YAML_LOADER)
+    if not isinstance(doc, dict):
+        raise ValueError(f"{path}: expected a YAML mapping")
+    return doc
+
+
+def _source_term_id(doc: dict[str, Any]) -> str:
+    media_term = doc.get("media_term") or {}
+    term = media_term.get("term") if isinstance(media_term, dict) else {}
+    return str(term.get("id") or "") if isinstance(term, dict) else ""
+
+
+def _ingredient_signature(doc: dict[str, Any]) -> tuple[tuple[str, str, str], ...]:
+    ingredients = doc.get("ingredients") or []
+    if not isinstance(ingredients, list):
+        raise ValueError("ingredients is not a list")
+
+    signature: list[tuple[str, str, str]] = []
+    for row in ingredients:
+        if not isinstance(row, dict):
+            continue
+        concentration = row.get("concentration") or {}
+        if not isinstance(concentration, dict):
+            concentration = {}
+        signature.append(
+            (
+                str(row.get("preferred_term") or ""),
+                str(concentration.get("value") or ""),
+                str(concentration.get("unit") or ""),
+            )
+        )
+    return tuple(signature)
+
+
+def _put_after(doc: dict[str, Any], key: str, value: Any, after: str) -> None:
+    updated: dict[str, Any] = {}
+    inserted = False
+    for existing_key, existing_value in doc.items():
+        if existing_key == key:
+            continue
+        updated[existing_key] = existing_value
+        if existing_key == after:
+            updated[key] = value
+            inserted = True
+    if not inserted:
+        updated[key] = value
+    doc.clear()
+    doc.update(updated)
+
+
+def _upsert_event(doc: dict[str, Any], event: dict[str, Any]) -> None:
+    history = doc.setdefault("curation_history", [])
+    if not isinstance(history, list):
+        raise ValueError("curation_history is not a list")
+
+    for index, existing in enumerate(history):
+        if (
+            isinstance(existing, dict)
+            and existing.get("curator") == event["curator"]
+            and existing.get("action") in LEGACY_ACTIONS
+        ):
+            history[index] = event
+            return
+    history.append(event)
+
+
+def _ensure_ingredients_curated(doc: dict[str, Any]) -> None:
+    flags = doc.setdefault("data_quality_flags", [])
+    if not isinstance(flags, list):
+        raise ValueError("data_quality_flags is not a list")
+    if "ingredients_curated" not in flags:
+        flags.append("ingredients_curated")
+
+
+def _child_entry(child: Child) -> dict[str, str]:
+    return {
+        "path": f"data/normalized_yaml/{child.path}",
+        "relationship": child.relationship,
+        "id": child.record_id,
+        "name": child.name,
+        "notes": child.notes,
+    }
+
+
+def _parent_ref(child: Child) -> dict[str, str]:
+    return {
+        "path": f"data/normalized_yaml/{PARENT}",
+        "relationship": child.relationship,
+        "id": PARENT_ID,
+        "name": PARENT_NAME,
+        "notes": f"KOMODO Medium 1166 is the pH {PARENT_PH:g} ASO4 medium base.",
+    }
+
+
+def _upsert_child_entry(children: list[Any], child: Child) -> None:
+    path = f"data/normalized_yaml/{child.path}"
+    for index, existing in enumerate(children):
+        if isinstance(existing, dict) and existing.get("path") == path:
+            children[index] = _child_entry(child)
+            return
+    raise ValueError(f"{PARENT}: missing variant child {path}")
+
+
+def _require_aso4_record(
+    doc: dict[str, Any],
+    relative_path: Path,
+    record_id: str,
+    source_term: str,
+    ph_value: float,
+) -> None:
+    if doc.get("id") != record_id:
+        raise ValueError(f"{relative_path}: expected {record_id}, found {doc.get('id')!r}")
+    if _source_term_id(doc) != source_term:
+        raise ValueError(f"{relative_path}: expected {source_term}")
+    if doc.get("ph_value") != ph_value:
+        raise ValueError(f"{relative_path}: expected pH {ph_value:g}")
+    if _ingredient_signature(doc) != INGREDIENT_SIGNATURE:
+        raise ValueError(f"{relative_path}: ingredient signature drifted")
+
+
+def repair_parent(doc: dict[str, Any]) -> dict[str, Any]:
+    _require_aso4_record(doc, PARENT, PARENT_ID, PARENT_SOURCE_TERM, PARENT_PH)
+    children = doc.get("variant_children") or []
+    if not isinstance(children, list):
+        raise ValueError(f"{PARENT}: variant_children is not a list")
+
+    repaired = copy.deepcopy(doc)
+    variant_children = repaired["variant_children"]
+    for child in CHILDREN:
+        _upsert_child_entry(variant_children, child)
+
+    _upsert_event(
+        repaired,
+        {
+            "timestamp": TIMESTAMP,
+            "curator": CURATOR,
+            "action": ACTION,
+            "changes": "Reclassified KOMODO Medium 1166 children",
+            "source": "KOMODO Medium 1166 and 1166.1-1166.5",
+            "notes": (
+                "Linked the KOMODO 1166 same-pH strain wrappers and the pH "
+                "9.5 DSM 22410 child under the KOMODO Medium 1166 ASO4 base."
+            ),
+        },
+    )
+    return repaired
+
+
+def repair_child(doc: dict[str, Any], child: Child) -> dict[str, Any]:
+    _require_aso4_record(
+        doc,
+        child.path,
+        child.record_id,
+        child.source_term,
+        child.ph_value,
+    )
+
+    repaired = copy.deepcopy(doc)
+    _ensure_ingredients_curated(repaired)
+    _put_after(repaired, "parent_media", _parent_ref(child), "curation_history")
+    _put_after(repaired, "variant_relationship", child.relationship, "parent_media")
+    _put_after(repaired, "variant_modifications", [child.modification], "variant_relationship")
+    _upsert_event(
+        repaired,
+        {
+            "timestamp": TIMESTAMP,
+            "curator": CURATOR,
+            "action": ACTION,
+            "changes": "Linked under KOMODO Medium 1166",
+            "source": child.source_label,
+            "notes": child.modification,
+        },
+    )
+    return repaired
+
+
+def plan_repairs(normalized: Path = NORMALIZED) -> dict[Path, dict[str, Any]]:
+    repairs = {normalized / PARENT: repair_parent(_load(normalized / PARENT))}
+    for child in CHILDREN:
+        repairs[normalized / child.path] = repair_child(_load(normalized / child.path), child)
+    return repairs
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--normalized-dir", type=Path, default=NORMALIZED)
+    parser.add_argument("--apply", action="store_true")
+    args = parser.parse_args(argv)
+
+    plans = plan_repairs(args.normalized_dir)
+    changed_count = 0
+    for path, doc in plans.items():
+        if args.apply:
+            changed = write_record(path, doc)
+        else:
+            changed = path.read_bytes() != dump_record(doc).encode("utf-8")
+        changed_count += int(changed)
+        status = "wrote" if args.apply and changed else "would" if changed else "skip"
+        print(f"{status:5s} {path.relative_to(args.normalized_dir)}")
+
+    verb = "wrote" if args.apply else "would write"
+    print(f"\n{verb} {changed_count} record(s)")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

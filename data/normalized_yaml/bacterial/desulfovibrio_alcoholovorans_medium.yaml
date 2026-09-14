@@ -5,14 +5,208 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.8
 media_term:
   preferred_term: KOMODO Medium 488
   term:
     id: komodo.medium:488
     label: DESULFOVIBRIO ALCOHOLOVORANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 488 | DSMZ Medium: 488 (mediadive.medium:488)
-  | Aerobic: No'
-ingredients: []
+notes: Archived DSMZ Medium 488 defines DESULFOVIBRIO ALCOHOLOVORANS MEDIUM as DSMZ
+  Medium 63 or 194 with 1.5 g/L 1,2-propanediol as substrate and 3 micrograms/L Na2SeO3
+  x 5 H2O; KOMODO Medium 488 expands the DSMZ Medium 63 branch, so this record expands
+  archived DSMZ Media 488 and 63 into final per-liter components.
+ingredients:
+- preferred_term: K2HPO4
+  source: Archived DSMZ Medium 63
+  notes: Archived DSMZ Medium 63 lists 0.50 g K2HPO4 in the final 1000 mL medium.
+  concentration:
+    value: '0.50'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: NH4Cl
+  source: Archived DSMZ Medium 63
+  notes: Archived DSMZ Medium 63 lists 1.00 g NH4Cl in the final 1000 mL medium.
+  concentration:
+    value: '1.00'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Na2SO4
+  source: Archived DSMZ Medium 63
+  notes: Archived DSMZ Medium 63 lists 1.00 g Na2SO4 in the final 1000 mL medium.
+  concentration:
+    value: '1.00'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: CaCl2 x 2 H2O
+  source: Archived DSMZ Medium 63
+  notes: Archived DSMZ Medium 63 lists 0.10 g CaCl2 x 2 H2O in the final 1000 mL medium.
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: MgSO4 x 7 H2O
+  source: Archived DSMZ Medium 63
+  notes: Archived DSMZ Medium 63 lists 2.00 g MgSO4 x 7 H2O in the final 1000 mL medium.
+  concentration:
+    value: '2.00'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: DL-Na-lactate
+  source: Archived DSMZ Medium 63
+  notes: Archived DSMZ Medium 63 lists 2.00 g DL-Na-lactate in the final 1000 mL medium.
+  concentration:
+    value: '2.00'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75228
+    label: sodium lactate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+- preferred_term: Yeast extract
+  source: Archived DSMZ Medium 63
+  notes: Archived DSMZ Medium 63 lists 1.00 g Yeast extract in the final 1000 mL medium.
+  concentration:
+    value: '1.00'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Resazurin
+  source: Archived DSMZ Medium 63
+  notes: Archived DSMZ Medium 63 lists 1.00 mg Resazurin in the final 1000 mL medium.
+  concentration:
+    value: '0.001000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: FeSO4 x 7 H2O
+  source: Archived DSMZ Medium 63
+  notes: Archived DSMZ Medium 63 lists 0.50 g FeSO4 x 7 H2O in the final 1000 mL medium.
+  concentration:
+    value: '0.50'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+- preferred_term: Na-thioglycolate
+  source: Archived DSMZ Medium 63
+  notes: Archived DSMZ Medium 63 lists 0.10 g Na-thioglycolate in the final 1000 mL
+    medium.
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+- preferred_term: Ascorbic acid
+  source: Archived DSMZ Medium 63
+  notes: Archived DSMZ Medium 63 lists 0.10 g Ascorbic acid in the final 1000 mL medium.
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  term:
+    id: CHEBI:22652
+    label: ascorbic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:22652
+    label: ascorbic acid
+- preferred_term: 1,2-propanediol
+  source: Archived DSMZ Medium 488
+  notes: Archived DSMZ Medium 488 adds 1.5 g/L 1,2-propanediol as the substrate.
+  concentration:
+    value: '1.50'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16997
+    label: propane-1,2-diol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16997
+    label: propane-1,2-diol
+- preferred_term: Na2SeO3 x 5 H2O
+  source: Archived DSMZ Medium 488
+  notes: Archived DSMZ Medium 488 adds 3 micrograms/L Na2SeO3 x 5 H2O.
+  concentration:
+    value: '3.0'
+    unit: MICROG_PER_L
+  term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+- preferred_term: NaOH
+  source: Archived DSMZ Medium 63
+  notes: Archived DSMZ Medium 63 adjusts the final pH to 7.8 with NaOH.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+- preferred_term: N2
+  source: Archived DSMZ Medium 63
+  notes: Archived DSMZ Medium 63 gasses the medium with oxygen-free N2.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: dinitrogen
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17997
+    label: dinitrogen
+- preferred_term: Distilled water
+  source: Archived DSMZ Medium 63
+  notes: Archived DSMZ Medium 63 combines 980 mL distilled water in Solution A, 10
+    mL in Solution B, and 10 mL in Solution C.
+  concentration:
+    value: '1000.000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -35,5 +229,19 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_488_score35.py
+  action: RESOLVED_KOMODO_488_SCORE35
+  changes: Replaced empty KOMODO 488 composition with archived DSMZ data
+  source: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium488.pdf
+  notes: Archived DSMZ Medium 488 defines DESULFOVIBRIO ALCOHOLOVORANS MEDIUM as DSMZ
+    Medium 63 or 194 with 1.5 g/L 1,2-propanediol as substrate and 3 micrograms/L
+    Na2SeO3 x 5 H2O; KOMODO Medium 488 expands the DSMZ Medium 63 branch, so this
+    record expands archived DSMZ Media 488 and 63 into final per-liter components.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=488
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium488.pdf
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium63.pdf

@@ -11,22 +11,40 @@ media_term:
   term:
     id: mediadive.medium:J38
     label: 2% MALT AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=38'
+notes: MediaDive JCM Medium J38 lists 20 g/L Malt extract (BD-Difco), 20 g/L Agar,
+  1000 mL/L Distilled water, and pH 6.5.
 ingredients:
-- preferred_term: Malt extract
+- preferred_term: Malt extract (BD-Difco)
   concentration:
     value: '20'
     unit: G_PER_L
+  source: MediaDive JCM Medium J38
+  notes: MediaDive JCM Medium J38 lists 20 g/L Malt extract with the BD-Difco attribute;
+    left ungrounded as an undefined commercial extract.
 - preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  source: MediaDive JCM Medium J38
+  notes: MediaDive JCM Medium J38 lists 20 g/L Agar.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '20'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: MediaDive JCM Medium J38
+  notes: MediaDive JCM Medium J38 lists 1000 mL distilled water per 1 L medium.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -56,4 +74,18 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-kg_microbe_match: mediadive.medium:12
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_jcm_malt_agar_score15.py
+  action: RESOLVED_JCM_MALT_AGAR_SCORE15
+  source: https://mediadive.dsmz.de/rest/medium/J38
+  notes: Added the missing 1000 mL/L distilled water row from MediaDive JCM Medium
+    J38; preserved malt extract as an intentionally ungrounded BD-Difco commercial
+    extract; and removed the stale mediadive.medium:12 fallback match.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://mediadive.dsmz.de/medium/J38
+- reference: https://mediadive.dsmz.de/rest/medium/J38
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=38

@@ -5,13 +5,14 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+temperature_value: 30.0
 ingredients:
 - preferred_term: glycerol
   concentration:
-    value: '2'
+    value: '2.0'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  source: TOGO M2842
+  notes: TOGO M2842 lists 2% glycerol.
   term:
     id: CHEBI:17754
     label: glycerol
@@ -22,18 +23,24 @@ ingredients:
   concentration:
     value: '0.5'
     unit: PERCENT_W_V
-  notes: 'Properties: Defined component, Complex component'
+  source: TOGO M2842
+  notes: TOGO M2842 lists 0.5% yeast nitrogen base from BD Difco; the commercial mixture
+    is retained without an ontology grounding.
 - preferred_term: casamino acid (BD Difco)
   concentration:
     value: '0.5'
     unit: PERCENT_W_V
-  notes: 'Properties: Undefined component'
+  source: TOGO M2842
+  notes: TOGO M2842 lists 0.5% casamino acid from BD Difco; the source-specific product
+    is retained without an ontology grounding.
 media_term:
   preferred_term: TOGO Medium M2842
   term:
     id: TOGO:M2842
     label: NCG (minimum medium)
-notes: 'Source: https://togomedium.org/medium/M2842'
+notes: TOGO M2842 NCG minimum medium lists 2% glycerol, 0.5% yeast nitrogen base from
+  BD Difco, and 0.5% casamino acid from BD Difco; the TOGO comment states that the
+  culture was routinely grown at 30 C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -70,4 +77,16 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
-kg_microbe_match: mediadive.medium:780
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nutrient_ncg_nssm_score15.py
+  action: RESOLVED_TOGO_M2842_SCORE15
+  source: https://togomedium.org/medium/M2842
+  notes: TOGO M2842 NCG minimum medium lists 2% glycerol, 0.5% yeast nitrogen base
+    from BD Difco, and 0.5% casamino acid from BD Difco; the TOGO comment states that
+    the culture was routinely grown at 30 C.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2842

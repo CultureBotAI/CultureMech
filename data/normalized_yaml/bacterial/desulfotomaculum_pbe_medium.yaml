@@ -10,94 +10,194 @@ media_term:
   term:
     id: mediadive.medium:J547
     label: DESULFOTOMACULUM PBE MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=547'
+notes: JCM Medium 547 Desulfotomaculum PBE Medium prepares Solution A from 2 g peptone,
+  1 g beef extract, 2 g MgSO4 x 7H2O, 1.5 g Na2SO4, 0.1 g CaCl2, and 900 ml distilled
+  water, then autoclaves it under an N2 gas atmosphere. To complete the medium, 10
+  ml of autoclaved 5% K2HPO4, 70 ml of autoclaved 5% sodium lactate, 10 ml of filter-sterilized
+  4% Fe(NH4)2(SO4)2 x 6H2O, and 10 ml of filter-sterilized 1% sodium ascorbate are
+  added aseptically and anaerobically per liter. JCM, TOGO, and MediaDive do not report
+  a final pH.
 ingredients:
 - preferred_term: Peptone
   concentration:
-    value: '2.0202'
+    value: '2.0'
     unit: G_PER_L
+  source: MediaDive J547 / JCM Medium 547
+  notes: MediaDive J547 / JCM Medium 547 lists 2.0 g/L peptone.
+  term:
+    id: MICRO:0000178
+    label: Peptone
 - preferred_term: Beef extract
   concentration:
-    value: '1.0101'
+    value: '1.0'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
+  source: MediaDive J547 / JCM Medium 547
+  notes: MediaDive J547 / JCM Medium 547 lists 1.0 g/L beef extract.
+  term:
+    id: FOODON:03302088
+    label: Beef extract
+- preferred_term: MgSO4 x 7H2O
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: MediaDive J547 / JCM Medium 547
+  notes: MediaDive J547 / JCM Medium 547 lists 2.0 g/L MgSO4 x 7H2O.
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-  concentration:
-    value: '2.0202'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
 - preferred_term: Na2SO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  source: MediaDive J547 / JCM Medium 547
+  notes: MediaDive J547 / JCM Medium 547 lists 1.5 g/L Na2SO4.
   term:
     id: CHEBI:32149
     label: sodium sulfate
-  concentration:
-    value: '1.51515'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
     label: sodium sulfate
 - preferred_term: CaCl2
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: MediaDive J547 / JCM Medium 547
+  notes: MediaDive J547 / JCM Medium 547 lists 0.1 g/L CaCl2.
   term:
     id: CHEBI:3312
     label: calcium dichloride
-  concentration:
-    value: '0.10101'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3312
     label: calcium dichloride
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
+- preferred_term: Distilled water
   concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: Sodium lactate
+    value: '900.0'
+    unit: ML_PER_L
+  source: MediaDive J547 / JCM Medium 547
+  notes: MediaDive J547 / JCM Medium 547 lists 900.0 ml/L Distilled water.
   term:
-    id: CHEBI:75228
-    label: sodium lactate
-  concentration:
-    value: '70'
-    unit: G_PER_L
+    id: CHEBI:15377
+    label: water
   mediaingredientmech_chebi_term:
-    id: CHEBI:75228
-    label: sodium lactate
-- preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
+    id: CHEBI:15377
+    label: water
+- preferred_term: N2
   concentration:
-    value: '10'
-    unit: G_PER_L
+    value: variable
+    unit: VARIABLE
+  source: MediaDive J547 / JCM Medium 547
+  notes: MediaDive J547 / JCM Medium 547 uses N2 as the gas atmosphere for autoclaving.
   term:
-    id: CHEBI:76181
-    label: ferrous ammonium sulfate hexahydrate
+    id: CHEBI:17997
+    label: dinitrogen
   mediaingredientmech_chebi_term:
-    id: CHEBI:76181
-    label: ferrous ammonium sulfate hexahydrate
-- preferred_term: Sodium ascorbate
-  term:
-    id: CHEBI:113451
-    label: sodium ascorbate
+    id: CHEBI:17997
+    label: dinitrogen
+solutions:
+- preferred_term: 5% K2HPO4 solution
   concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:113451
-    label: sodium ascorbate
+    value: '10.0'
+    unit: ML_PER_L
+  source: MediaDive J547 / JCM Medium 547
+  notes: MediaDive J547 / JCM Medium 547 adds 10.0 ml/L 5% K2HPO4 solution.
+  composition:
+  - preferred_term: K2HPO4
+    concentration:
+      value: '5.0'
+      unit: PERCENT_W_V
+    source: MediaDive J547 / JCM Medium 547
+    notes: MediaDive J547 / JCM Medium 547 specifies 5% K2HPO4 solution as 5.0% w/v.
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+  preparation_notes: Autoclave before anaerobic addition.
+- preferred_term: 5% Sodium lactate solution
+  concentration:
+    value: '70.0'
+    unit: ML_PER_L
+  source: MediaDive J547 / JCM Medium 547
+  notes: MediaDive J547 / JCM Medium 547 adds 70.0 ml/L 5% Sodium lactate solution.
+  composition:
+  - preferred_term: Sodium lactate
+    concentration:
+      value: '5.0'
+      unit: PERCENT_W_V
+    source: MediaDive J547 / JCM Medium 547
+    notes: MediaDive J547 / JCM Medium 547 specifies 5% Sodium lactate solution as
+      5.0% w/v.
+    term:
+      id: CHEBI:75228
+      label: sodium lactate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75228
+      label: sodium lactate
+  preparation_notes: Autoclave before anaerobic addition.
+- preferred_term: 4% Fe(NH4)2(SO4)2 x 6H2O solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: MediaDive J547 / JCM Medium 547
+  notes: MediaDive J547 / JCM Medium 547 adds 10.0 ml/L 4% Fe(NH4)2(SO4)2 x 6H2O solution.
+  composition:
+  - preferred_term: Fe(NH4)2(SO4)2 x 6H2O
+    concentration:
+      value: '4.0'
+      unit: PERCENT_W_V
+    source: MediaDive J547 / JCM Medium 547
+    notes: MediaDive J547 / JCM Medium 547 specifies 4% Fe(NH4)2(SO4)2 x 6H2O solution
+      as 4.0% w/v.
+    term:
+      id: CHEBI:76181
+      label: ferrous ammonium sulfate hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76181
+      label: ferrous ammonium sulfate hexahydrate
+  preparation_notes: Filter-sterilize before anaerobic addition.
+- preferred_term: 1% Sodium ascorbate solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: MediaDive J547 / JCM Medium 547
+  notes: MediaDive J547 / JCM Medium 547 adds 10.0 ml/L 1% Sodium ascorbate solution.
+  composition:
+  - preferred_term: Sodium ascorbate
+    concentration:
+      value: '1.0'
+      unit: PERCENT_W_V
+    source: MediaDive J547 / JCM Medium 547
+    notes: MediaDive J547 / JCM Medium 547 specifies 1% Sodium ascorbate solution
+      as 1.0% w/v.
+    term:
+      id: CHEBI:113451
+      label: sodium ascorbate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:113451
+      label: sodium ascorbate
+  preparation_notes: Filter-sterilize before anaerobic addition.
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components and autoclave under a N2 gas atmosphere.
+  description: Mix Solution A components and autoclave under an N2 gas atmosphere.
 - step_number: 2
   action: MIX
-  description: 'To complete the medium, aseptically and anaerobically add the following
-    solutions to the medium:'
+  description: Aseptically and anaerobically add 10 ml/L autoclaved 5% K2HPO4 solution,
+    70 ml/L autoclaved 5% sodium lactate solution, 10 ml/L filter-sterilized 4% Fe(NH4)2(SO4)2
+    x 6H2O solution, and 10 ml/L filter-sterilized 1% sodium ascorbate solution.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: Autoclave the Solution A base under N2. Separately autoclave the 5% K2HPO4
+    and 5% sodium lactate stocks, and filter-sterilize the 4% Fe(NH4)2(SO4)2 x 6H2O
+    and 1% sodium ascorbate stocks.
 applications:
 - Microbial cultivation
 curation_history:
@@ -132,3 +232,29 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m549_score15.py
+  action: RESOLVED_JCM_547_DESULFOTOMACULUM_PBE
+  source: https://togomedium.org/medium/M549; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=547;
+    https://mediadive.dsmz.de/medium/J547
+  notes: JCM Medium 547 Desulfotomaculum PBE Medium prepares Solution A from 2 g peptone,
+    1 g beef extract, 2 g MgSO4 x 7H2O, 1.5 g Na2SO4, 0.1 g CaCl2, and 900 ml distilled
+    water, then autoclaves it under an N2 gas atmosphere. To complete the medium,
+    10 ml of autoclaved 5% K2HPO4, 70 ml of autoclaved 5% sodium lactate, 10 ml of
+    filter-sterilized 4% Fe(NH4)2(SO4)2 x 6H2O, and 10 ml of filter-sterilized 1%
+    sodium ascorbate are added aseptically and anaerobically per liter. JCM, TOGO,
+    and MediaDive do not report a final pH.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M549
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=547
+- reference: https://mediadive.dsmz.de/medium/J547
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009942
+  name: desulfotomaculum_pbe_medium
+  notes: TOGO M549 imports the same JCM Medium 547 Desulfotomaculum PBE Medium formulation
+    represented by MediaDive J547.

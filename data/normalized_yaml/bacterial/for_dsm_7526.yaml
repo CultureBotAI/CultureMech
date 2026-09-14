@@ -3,30 +3,27 @@ name: for_dsm_7526
 original_name: For DSM 7526
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
-physical_state: SOLID_AGAR
+composition_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.9
 media_term:
   preferred_term: KOMODO Medium 457b.1
   term:
     id: komodo.medium:457b.1
     label: For DSM 7526
 notes: 'Source: KOMODO ModelSEED | ID: 457b.1 | DSMZ Medium: 457b (mediadive.medium:457b)
-  | Aerobic: No
-
-
-  Commercial Product: Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
-
-  Supplier: Multiple suppliers (BD, Sigma, Neogen)
-
-  Catalog: Multiple (22092 Sigma, 211825 BD)
-
-  Source: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
+  | Aerobic: No'
 ingredients:
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
+    label: polysorbate 80
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
@@ -77,175 +74,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-- preferred_term: Dibenzofuran
-  concentration:
-    value: '8.4'
-    unit: G_PER_L
-  term:
-    id: CHEBI:28145
-    label: dibenzofuran
-- preferred_term: Dimethyl sulfoxide
-  term:
-    id: CHEBI:28262
-    label: dimethyl sulfoxide
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:28262
-    label: dimethyl sulfoxide
-- preferred_term: Peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Meat extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '50.0'
-    unit: G_PER_L
-  notes: ' (for solid medium) [Merged 3 duplicates: 15.0, 15.0, 20.0]'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Casein peptone
-  concentration:
-    value: '15'
-    unit: G_PER_L
-- preferred_term: Soy peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: Pancreatic digest of casein
-  term:
-    id: MICRO:0000182
-    label: tryptone
-  concentration:
-    value: '17.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
-      / Tryptic Soy Agar (TSA)
-    catalog_number: Multiple (22092 Sigma, 211825 BD)
-    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Pancreatic enzymatic digest of casein providing amino acids and peptides;
-    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
-  synonyms:
-  - synonym_text: tryptone
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
-  - synonym_text: Bacto Tryptone
-    synonym_type: EXACT
-- preferred_term: Peptic digest of soybean meal
-  term:
-    id: FOODON:03315720
-    label: vegetable protein, hydrolyzed
-  concentration:
-    value: '3.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
-      / Tryptic Soy Agar (TSA)
-    catalog_number: Multiple (22092 Sigma, 211825 BD)
-    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Peptic digest of soybean meal providing additional peptides and carbohydrates;
-    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
-  synonyms:
-  - synonym_text: soytone
-    synonym_type: EXACT
-  - synonym_text: soy peptone
-    synonym_type: EXACT
-  - synonym_text: Bacto Soytone
-    synonym_type: EXACT
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: glucose
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
-      / Tryptic Soy Agar (TSA)
-    catalog_number: Multiple (22092 Sigma, 211825 BD)
-    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Carbon/energy source; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy
-    Agar (TSA) commercial product
-  synonyms:
-  - synonym_text: dextrose
-    synonym_type: EXACT
-  - synonym_text: D-glucose
-    synonym_type: EXACT
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
-      / Tryptic Soy Agar (TSA)
-    catalog_number: Multiple (22092 Sigma, 211825 BD)
-    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Maintains osmotic equilibrium; Constituent of Tryptic Soy Broth (TSB) / Tryptic
-    Soy Agar (TSA) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
-- preferred_term: Dipotassium phosphate
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
-      / Tryptic Soy Agar (TSA)
-    catalog_number: Multiple (22092 Sigma, 211825 BD)
-    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: pH buffer; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
-    commercial product
-  synonyms:
-  - synonym_text: K2HPO4
-    synonym_type: EXACT
-  - synonym_text: potassium phosphate dibasic
-    synonym_type: EXACT
-  - synonym_text: dipotassium hydrogen phosphate
-    synonym_type: EXACT
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '15.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
-      / Tryptic Soy Agar (TSA)
-    catalog_number: Multiple (22092 Sigma, 211825 BD)
-    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic Soy
-    Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
 - preferred_term: EDTA
   term:
     id: CHEBI:4735
@@ -336,6 +164,55 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
     label: sodium molybdate dihydrate
+- preferred_term: Fluoranthene
+  term:
+    id: CHEBI:33083
+    label: fluoranthene
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33083
+    label: fluoranthene
+  source: KOMODO Medium 457b.1
+  notes: KOMODO Medium 457b.1 lists 0.10 g/L fluoranthene for DSM 7526.
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: DSMZ Medium 457b prepares a 2 g/L fluoranthene stock in acetone and
+    filter-sterilizes it with a cellulose filter membrane.
+- step_number: 2
+  action: MIX
+  description: DSMZ Medium 457b adds 1 mL of the fluoranthene stock to a sterile culture
+    flask, lets the acetone evaporate, and adds 20 mL of medium; direct addition of
+    about 1-2 mg fluoranthene is also possible.
+- step_number: 3
+  action: ADJUST_PH
+  description: DSMZ Medium 457 adjusts the mineral base to pH 6.9.
+- step_number: 4
+  action: AUTOCLAVE
+  description: DSMZ Medium 457 autoclaves the phosphate solution separately and combines
+    it with the rest of the medium after cooling.
+- step_number: 5
+  action: MIX
+  description: DSMZ Medium 457b reactivates lyophilized cells in a complex medium
+    before transferring them to mineral medium 457 with the appropriate carbon source.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=457b.1
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium457b.pdf
+- reference: https://mediadive.dsmz.de/rest/medium/457b
+parent_media:
+  path: data/normalized_yaml/bacterial/medium_with_fluoranthene.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:001569
+  name: medium_with_fluoranthene
+  notes: DSMZ Medium 457b is the official mineral medium with Tween 80 parent.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
+variant_modifications:
+- Adds fluoranthene as the aromatic carbon source for DSM 7526.
 applications:
 - Microbial cultivation
 curation_history:
@@ -373,3 +250,10 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_dsmz_457b_score15.py
+  action: RESOLVED_DSMZ_KOMODO_457B_SCORE15
+  changes: Resolved DSMZ/KOMODO Medium 457b variant metadata and stale ingredients
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=457b.1
+  notes: KOMODO Medium 457b.1 records the DSM 7526 formulation with fluoranthene substrate
+    and Tween 80.

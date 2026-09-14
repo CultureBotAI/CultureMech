@@ -3,58 +3,69 @@ name: lb_50_ug_ml_kanamycin_medium
 original_name: LB + 50 ug/ml Kanamycin medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Yeast extract
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: Agar (if needed)
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
 - preferred_term: Bacto Tyrptone (Difco)
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2099 / NBRC Medium 1415
+  notes: NBRC Medium 1415 lists Bacto Tyrptone (Difco) as a source-disclosed digest
+    product not reducible to one ChEBI molecule.
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  source: TOGO M2099 / NBRC Medium 1415
+  notes: TOGO M2099 / NBRC Medium 1415 lists 5 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  source: TOGO M2099 / NBRC Medium 1415
+  notes: TOGO M2099 / NBRC Medium 1415 lists 5 g/L NaCl.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2099 / NBRC Medium 1415
+  notes: TOGO M2099 / NBRC Medium 1415 lists 1000 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  source: TOGO M2099 / NBRC Medium 1415
+  notes: TOGO M2099 / NBRC Medium 1415 lists 15 g/L agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M2099
   term:
     id: TOGO:M2099
     label: LB + 50 ug/ml Kanamycin medium
-notes: 'Source: https://togomedium.org/medium/M2099
-
-  Original source: NBRC - NBRC_M1415
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1415'
+notes: TOGO M2099 imports NBRC Medium 1415 LB + 50 ug/ml Kanamycin medium. NBRC 1415
+  lists the LB base with 1.0 ml/L Kanamycin sulfate solution (50 mg/ml), 15 g/L agar
+  if needed, and pH 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -97,21 +108,60 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2099_lb_kanamycin_score15.py
+  action: RESOLVED_TOGO_M2099_LB_KANAMYCIN_SCORE15
+  source: https://togomedium.org/medium/M2099; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1415
+  notes: TOGO M2099 imports NBRC Medium 1415 LB + 50 ug/ml Kanamycin medium. NBRC
+    1415 lists the LB base with 1.0 ml/L Kanamycin sulfate solution (50 mg/ml), 15
+    g/L agar if needed, and pH 7.0. Corrected the imported distilled-water row from
+    a g/L artifact to an ml/L volume, nested the 50 mg/ml kanamycin sulfate stock,
+    and changed the stale LB + Kanamycin source-duplicate link to an LB supplemented-variant
+    relationship.
 solutions:
-- preferred_term: Kanamycin sulfate solution (50 mg/ml)*
-  composition: []
+- preferred_term: Kanamycin sulfate solution (50 mg/ml)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Solution, Organic compound, Defined
-    component'
-  name: Unknown solution
+    value: '1.0'
+    unit: ML_PER_L
+  source: TOGO M2099 / NBRC Medium 1415
+  notes: TOGO M2099 / NBRC Medium 1415 lists 1 ml/L Kanamycin sulfate solution (50
+    mg/ml).
+  term:
+    id: CHEBI:6109
+    label: kanamycin A sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6109
+    label: kanamycin A sulfate
+  composition:
+  - preferred_term: Kanamycin sulfate
+    concentration:
+      value: '50.0'
+      unit: MG_PER_ML
+    source: TOGO M2099 / NBRC Medium 1415
+    notes: NBRC Medium 1415 specifies this stock as 50 mg/ml Kanamycin sulfate.
+    term:
+      id: CHEBI:6109
+      label: kanamycin A sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:6109
+      label: kanamycin A sulfate
+  name: Kanamycin sulfate solution (50 mg/ml)
+  preparation_notes: Sterilize separately by filtration.
 parent_media:
-  path: data/normalized_yaml/bacterial/lb_kanamycin_medium.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:008515
-  name: lb_kanamycin_medium
-variant_relationship: SOURCE_DUPLICATE
+  path: data/normalized_yaml/bacterial/lb_medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:008037
+  name: lb_medium
+  notes: NBRC Medium 1415 supplements LB Medium with 1.0 ml/L separately filter-sterilized
+    Kanamycin sulfate solution (50 mg/ml).
+variant_relationship: SUPPLEMENTED_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- Adds 1.0 ml/L Kanamycin sulfate solution (50 mg/ml) after separate filter sterilization.
+ph_value: 7.0
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2099
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1415

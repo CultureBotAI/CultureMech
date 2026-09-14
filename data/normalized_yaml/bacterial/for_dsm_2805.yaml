@@ -5,14 +5,490 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.2
+temperature_value: 35.0
 media_term:
   preferred_term: KOMODO Medium 307.1
   term:
     id: komodo.medium:307.1
     label: For DSM 2805
-notes: 'Source: KOMODO ModelSEED | ID: 307.1 | DSMZ Medium: 307 (mediadive.medium:307)
-  | Aerobic: No'
-ingredients: []
+notes: BacDive curates DSM 2805 as SYNTHROPHOMONAS MEDIUM, DSMZ Medium 212 with strain-specific
+  modifications, and lists the flattened final DSM 2805 composition with Na-propionate
+  and D-Glucose.
+ingredients:
+- preferred_term: Na2SO4
+  concentration:
+    value: '2.79163'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  nutritional_roles:
+  - SULFUR_SOURCE
+- preferred_term: Na-propionate
+  concentration:
+    value: '1.49551'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:132106
+    label: sodium propionate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132106
+    label: sodium propionate
+  nutritional_roles:
+  - CARBON_SOURCE
+  - ENERGY_SOURCE
+- preferred_term: Na2CO3
+  concentration:
+    value: '1.49551'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: D-Glucose
+  concentration:
+    value: '0.997009'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:17634
+    label: D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
+    label: D-glucose
+  nutritional_roles:
+  - CARBON_SOURCE
+  - ENERGY_SOURCE
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '0.997008'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+  - PROTEIN_SOURCE
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.498505'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+- preferred_term: NaCl
+  concentration:
+    value: '0.398803'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+  physicochemical_roles:
+  - OSMOTIC_AGENT
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.398803'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '0.329013'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '0.299103'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  nutritional_roles:
+  - SULFUR_SOURCE
+  physicochemical_roles:
+  - REDUCING_AGENT
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.299103'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+  nutritional_roles:
+  - AMINO_ACID_SOURCE
+  - SULFUR_SOURCE
+  physicochemical_roles:
+  - REDUCING_AGENT
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0498505'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: HCl
+  concentration:
+    value: '0.00249252'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: FeCl2 x 4 H2O
+  concentration:
+    value: '0.00149551'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+  nutritional_roles:
+  - IRON_SOURCE
+  - TRACE_ELEMENT
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000498505'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+  physicochemical_roles:
+  - REDOX_INDICATOR
+- preferred_term: NaOH
+  concentration:
+    value: '0.000498504'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: Pyridoxine hydrochloride
+  concentration:
+    value: '0.000299103'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
+  nutritional_roles:
+  - VITAMIN_SOURCE
+- preferred_term: Nicotinic acid
+  concentration:
+    value: '0.000199402'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  nutritional_roles:
+  - VITAMIN_SOURCE
+- preferred_term: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.000199402'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:132751
+    label: thiamine hydrochloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
+    label: thiamine hydrochloride dihydrate
+  nutritional_roles:
+  - VITAMIN_SOURCE
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '0.000189432'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: Calcium pantothenate
+  concentration:
+    value: '9.97009e-05'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  nutritional_roles:
+  - VITAMIN_SOURCE
+- preferred_term: Vitamin B12
+  concentration:
+    value: '9.97009e-05'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+  mediaingredientmech_chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+  nutritional_roles:
+  - VITAMIN_SOURCE
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '9.97009e-05'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: p-Aminobenzoic acid
+  concentration:
+    value: '7.97607e-05'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+  nutritional_roles:
+  - VITAMIN_SOURCE
+- preferred_term: ZnCl2
+  concentration:
+    value: '6.97906e-05'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:49976
+    label: zinc dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '3.58923e-05'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: NiCl2 x 6 H2O
+  concentration:
+    value: '2.39282e-05'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:34887
+    label: nickel dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: D-(+)-biotin
+  concentration:
+    value: '1.99402e-05'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:15956
+    label: biotin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: biotin
+  nutritional_roles:
+  - VITAMIN_SOURCE
+- preferred_term: H3BO3
+  concentration:
+    value: '5.98205e-06'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: Na2WO4 x 2 H2O
+  concentration:
+    value: '3.98804e-06'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:63939
+    label: sodium tungstate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
+    label: sodium tungstate dihydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: Na2SeO3 x 5 H2O
+  concentration:
+    value: '2.99103e-06'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: CuCl2 x 2 H2O
+  concentration:
+    value: '1.99402e-06'
+    unit: G_PER_L
+  notes: BacDive lists this final concentration for the DSM 2805 strain-specific DSMZ
+    Medium 212 formulation.
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Prepare the anaerobic DSMZ Medium 212 formulation with the DSM 2805
+    final carbon sources, Na-propionate and D-Glucose, under an 80% N2 and 20% CO2
+    atmosphere.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Dispense the basal solution under 80% N2 and 20% CO2 into anoxic Hungate-type
+    tubes and autoclave; autoclave carbonate, carbon-source, cysteine, and sulfide
+    solutions separately under anoxic gas.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Prepare the seven-vitamins solution under 100% N2 and sterilize it
+    by filtration.
+- step_number: 4
+  action: MIX
+  description: Add the sterile supplement solutions to sterile anoxic basal medium
+    after autoclaving.
+- step_number: 5
+  action: ADJUST_PH
+  description: Adjust the complete medium to pH 7.2 if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -34,5 +510,52 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_bacterial_strain_specific_score45.py
+  action: RESOLVED_STRAIN_SPECIFIC_SCORE45_GRAPH
+  changes: Resolved score-45 DSMZ strain-specific bacterial recipe graph
+  source: https://bacdive.dsmz.de/strain/16667; https://www.dsmz.de/collection/catalogue/details/culture/DSM-2805;
+    https://mediadive.dsmz.de/rest/medium/212
+  notes: BacDive curates DSM 2805 as SYNTHROPHOMONAS MEDIUM, DSMZ Medium 212 with
+    strain-specific modifications, and lists the flattened final DSM 2805 composition
+    with Na-propionate and D-Glucose.
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: Syntrophobacter wolinii DSM 2805
+  term:
+    id: NCBITaxon:29527
+    label: Syntrophobacter wolinii
+  strain: DB; DSM 2805
+  evidence:
+  - reference: https://bacdive.dsmz.de/strain/16667
+    supports: SUPPORT
+    explanation: BacDive lists Syntrophobacter wolinii DSM 2805 as cultivated on SYNTHROPHOMONAS
+      MEDIUM, DSMZ Medium 212 with strain-specific modifications, at 35 C under anaerobic
+      conditions.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+incubation_atmosphere: ANAEROBIC
+parent_media:
+  path: data/normalized_yaml/bacterial/synthrophomonas_medium.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:001310
+  name: synthrophomonas_medium
+  notes: Substitutes Na-propionate for DSMZ Medium 212 Na-butyrate. Adds D-Glucose
+    to the DSM 2805 strain-specific formulation.
+  evidence:
+  - reference: https://bacdive.dsmz.de/strain/16667
+    supports: SUPPORT
+    explanation: BacDive lists Syntrophobacter wolinii DSM 2805 as cultivated on SYNTHROPHOMONAS
+      MEDIUM, DSMZ Medium 212 with strain-specific modifications, at 35 C under anaerobic
+      conditions.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
+variant_modifications:
+- Substitutes Na-propionate for DSMZ Medium 212 Na-butyrate.
+- Adds D-Glucose to the DSM 2805 strain-specific formulation.
+references:
+- reference: https://bacdive.dsmz.de/strain/16667
+- reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-2805
+- reference: https://mediadive.dsmz.de/medium/212
+- reference: https://mediadive.dsmz.de/rest/medium/212

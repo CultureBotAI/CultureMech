@@ -17,10 +17,16 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Tryptone
   concentration:
     value: '1.25'
     unit: G_PER_L
+  term:
+    id: MICRO:0000182
+    label: Tryptone
 - preferred_term: Sea Salt
   concentration:
     value: '20'
@@ -69,6 +75,12 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_bacterial_score10_extracts.py
+  action: GROUNDED_BACTERIAL_EXTRACTS_SCORE10
+  changes: Grounded exact bacterial extract mappings
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied exact MediaIngredientMech mappings for Tryptone, Yeast extract.
 kg_microbe_match: mediadive.medium:12
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_974_1_2_YTSS_medium.yaml

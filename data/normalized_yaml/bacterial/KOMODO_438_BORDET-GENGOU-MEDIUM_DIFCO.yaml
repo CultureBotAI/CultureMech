@@ -16,48 +16,19 @@ ingredients:
 - preferred_term: Bordet-Gengou-Agar-Base
   concentration:
     value: '1000'
-    unit: G_PER_L
+    unit: ML_PER_L
+  source: DSMZ Medium 438
+  notes: DSMZ Medium 438 lists Bordet-Gengou-Agar-Base but does not spell out the
+    commercial agar base composition.
 - preferred_term: Horse blood
   concentration:
-    value: '150'
-    unit: G_PER_L
-- preferred_term: Peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Meat extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '15.0'
-    unit: G_PER_L
-  notes: '(for solid medium) [Collapsed 2 identical duplicates: 15.0, 15.0]'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Casein peptone
-  concentration:
     value: '15'
-    unit: G_PER_L
-- preferred_term: Soy peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: NaCl
+    unit: PERCENT_V_V
+  source: DSMZ Medium 438
+  notes: DSMZ Medium 438 supplements Bordet-Gengou-Agar-Base with 15% horse blood.
   term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
+    id: UBERON:0000178
+    label: blood
 applications:
 - Microbial cultivation
 curation_history:
@@ -99,6 +70,12 @@ curation_history:
     duplicate values written by cleanup_media_quality.py. Every merged part was the
     same value, so the pre-merge value is unambiguous and no source lookup was needed.
     Rows whose merged parts differ were left untouched.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_dsmz_438_bordet_score15.py
+  action: RESOLVED_DSMZ_438_BORDET_SCORE15
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium438.pdf
+  notes: DSMZ Medium 438 specifies Bordet-Gengou-Agar-Base supplemented with 15% horse
+    blood; the source does not spell out the commercial agar base composition.
 kg_microbe_match: mediadive.medium:101
 parent_media:
   path: data/normalized_yaml/bacterial/bordet_gengou_medium_difco.yaml
@@ -111,3 +88,13 @@ variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same ingredient and concentration signature; KOMODO record copied from the matching
   DSMZ medium source.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Supplement Bordet-Gengou-Agar-Base with 15% horse blood.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium438.pdf

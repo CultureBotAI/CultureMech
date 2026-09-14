@@ -2,31 +2,199 @@ id: CultureMech:004981
 name: vr_salts_b
 original_name: VR salts B
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
-ph_value: 7.0
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 3133 | DSMZ Medium: 3133
-  (mediadive.medium:3133) | Aerobic: No | SubMedium: Yes'
+notes: Rogosa 1969 defines VR salts solution B as a one-liter stock made from magnesium,
+  calcium, iron, zinc, manganese, cobalt, vanadium, molybdate, and copper salts, HCl,
+  nitrilotriacetic acid, distilled water, and 10 N NaOH to dissolve the NTA. KOMODO
+  imported only the NaOH pH-buffer note for this submedium.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve the magnesium, calcium, iron, zinc, manganese, cobalt, vanadium,
+    molybdate, and copper salts in about 700 ml water by applying heat and adding
+    2 ml HCl.
+- step_number: 2
+  action: ADJUST_PH
+  description: Separately add nitrilotriacetic acid to 300 ml distilled water with
+    stirring and add 10 N NaOH until the pH tends to stabilize at 7.0 to 7.4 and the
+    NTA dissolves.
+- step_number: 3
+  action: MIX
+  description: Slowly add the NTA solution to the stirred mixed-salts solution until
+    the stock becomes fairly clear.
+- step_number: 4
+  action: MIX
+  description: Adjust the volume of VR salts solution B to 1 liter.
+- step_number: 5
+  action: FILTER
+  description: Filter VR salts solution B through paper.
+- step_number: 6
+  action: STORE
+  description: Refrigerate the filtered VR salts solution B stock.
 media_term:
   preferred_term: KOMODO Medium 3133
   term:
     id: komodo.medium:3133
     label: VR salts B
 ingredients:
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '24.0'
+    unit: G_PER_L
+  source: Rogosa 1969 VR salts solution B
+  notes: Rogosa 1969 VR salts solution B lists 24.0 g/L MgSO4 x 7 H2O.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: Rogosa 1969 VR salts solution B
+  notes: Rogosa 1969 VR salts solution B lists 0.5 g/L CaCl2 x 2 H2O.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: Rogosa 1969 VR salts solution B
+  notes: Rogosa 1969 VR salts solution B lists 0.5 g/L FeSO4 x 7 H2O.
+  term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+- preferred_term: ZnSO4
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  source: Rogosa 1969 VR salts solution B
+  notes: Rogosa 1969 VR salts solution B lists anhydrous ZnSO4 at 0.25 g/L.
+  term:
+    id: CHEBI:35176
+    label: zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: zinc sulfate
+- preferred_term: MnSO4 x H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  source: Rogosa 1969 VR salts solution B
+  notes: Rogosa 1969 VR salts solution B lists 0.25 g/L MnSO4 x H2O.
+  term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  source: Rogosa 1969 VR salts solution B
+  notes: Rogosa 1969 VR salts solution B lists 0.25 g/L CoCl2 x 6 H2O and allows Co(C2H3O2)2
+    x 4 H2O as an alternative cobalt source.
+  term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+- preferred_term: VSO4 x 7 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  source: Rogosa 1969 VR salts solution B
+  notes: Rogosa 1969 VR salts solution B lists 0.25 g/L VSO4 x 7 H2O and allows NH4VO3
+    as an alternative vanadium source.
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  source: Rogosa 1969 VR salts solution B
+  notes: Rogosa 1969 VR salts solution B lists 0.25 g/L Na2MoO4 x 2 H2O.
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: CuSO4 x 5 H2O
+  concentration:
+    value: '0.125'
+    unit: G_PER_L
+  source: Rogosa 1969 VR salts solution B
+  notes: Rogosa 1969 VR salts solution B lists 0.125 g/L CuSO4 x 5 H2O.
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+- preferred_term: HCl
+  concentration:
+    value: '2.0'
+    unit: ML_PER_L
+  source: Rogosa 1969 VR salts solution B
+  notes: Rogosa 1969 VR salts solution B adds 2 ml HCl while heating the salts; the
+    HCl concentration is not stated.
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+- preferred_term: Nitrilotriacetic acid
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: Rogosa 1969 VR salts solution B
+  notes: Rogosa 1969 VR salts solution B lists 5.0 g/L Nitrilotriacetic acid.
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
 - preferred_term: NaOH
-  notes: Extracted from recipe notes (pH buffer)
-  data_quality_flags:
-  - extracted_from_notes
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32145
-    label: sodium hydroxide
+  source: Rogosa 1969 VR salts solution B
+  notes: Rogosa 1969 VR salts solution B adds 10 N NaOH until the NTA solution tends
+    to stabilize at pH 7.0 to 7.4.
   term:
     id: CHEBI:32145
     label: sodium hydroxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: Rogosa 1969 VR salts solution B
+  notes: Rogosa 1969 VR salts solution B makes the stock up to one liter after dissolving
+    salts in about 700 ml water and NTA in 300 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -60,3 +228,17 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_3133_vr_salts_b_score15.py
+  action: RESOLVED_KOMODO_3133_VR_SALTS_B_SCORE15
+  source: https://pmc.ncbi.nlm.nih.gov/articles/PMC284882/
+  notes: Replaced the NaOH-only pH-buffer import with Rogosa's VR salts solution B
+    stock recipe, choosing the first listed cobalt and vanadium source alternatives
+    and leaving VSO4 x 7 H2O ungrounded.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC284882/
+- reference: https://doi.org/10.1128/jb.98.2.756-766.1969

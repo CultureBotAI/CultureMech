@@ -4,59 +4,77 @@ term:
   id: mediadive.solution:4751
   label: Main sol. J802
 composition:
-- preferred_term: Casitone
+- preferred_term: Casitone (BD-Difco)
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  term:
-    id: mediadive.compound:84
-    label: Casitone
-- preferred_term: Phytone peptone
+  source: MediaDive solution 4751 / JCM Medium 802
+  notes: MediaDive solution 4751 / JCM Medium 802 lists 1.0 g/L Casitone (BD-Difco).
+  nutritional_roles:
+  - PROTEIN_SOURCE
+- preferred_term: Phytone peptone (BD-BBL)
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
+  source: MediaDive solution 4751 / JCM Medium 802
+  notes: MediaDive solution 4751 / JCM Medium 802 lists 1.0 g/L Phytone peptone (BD-BBL).
   term:
-    id: mediadive.compound:125
-    label: Phytone peptone
-- preferred_term: Yeast extract
+    id: FOODON:03315720
+    label: Soy peptone
+  nutritional_roles:
+  - PROTEIN_SOURCE
+- preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
+  source: MediaDive solution 4751 / JCM Medium 802
+  notes: MediaDive solution 4751 / JCM Medium 802 lists 1.0 g/L Yeast extract (BD-Difco).
   term:
-    id: mediadive.compound:16
+    id: FOODON:03315426
     label: Yeast extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
+  - VITAMIN_SOURCE
 - preferred_term: Ferric ammonium citrate
   concentration:
     value: '0.4'
     unit: G_PER_L
+  source: MediaDive solution 4751 / JCM Medium 802
+  notes: MediaDive solution 4751 / JCM Medium 802 lists 0.4 g/L Ferric ammonium citrate.
   term:
-    id: mediadive.compound:97
-    label: Ferric ammonium citrate
-  chebi_term:
     id: CHEBI:31604
     label: ferric ammonium citrate
-    confidence: 1.0
-    match_type: exact_match
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+  nutritional_roles:
+  - IRON_SOURCE
 - preferred_term: Agar
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
+  source: MediaDive solution 4751 / JCM Medium 802
+  notes: MediaDive solution 4751 / JCM Medium 802 lists 15.0 g/L Agar.
   term:
-    id: mediadive.compound:3
-    label: Agar
-  chebi_term:
     id: CHEBI:2509
     label: agar
-    confidence: 0.7
-    match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 - preferred_term: Sea water
   concentration:
-    value: '1000'
-    unit: PERCENT_V_V
+    value: '1000.0'
+    unit: ML_PER_L
+  source: MediaDive solution 4751 / JCM Medium 802
+  notes: MediaDive solution 4751 / JCM Medium 802 lists 1000.0 ml/L Sea water.
   term:
-    id: mediadive.compound:286
-    label: Sea water
+    id: ENVO:00002149
+    label: sea water
 preparation_notes: Adjust pH to 7.5.
+notes: MediaDive solution 4751 is the main solution for JCM Medium 802 Modified CSY-3
+  Agar.
 curation_history:
 - timestamp: '2026-03-13T06:20:32.921624Z'
   curator: culturemech-id-assigner-v1.0
@@ -95,11 +113,17 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m837_modified_csy3_score15.py
+  action: RESOLVED_MEDIADIVE_4751_MAIN_SOL_J802
+  source: https://mediadive.dsmz.de/medium/J802
+  notes: Corrected the sea-water quantity from 1000% v/v to 1000.0 ml/L, restored
+    the same source-level component names as JCM Medium 802, and removed the placeholder
+    top-level ingredient.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/medium/J802

@@ -2,8 +2,8 @@ id: CultureMech:010435
 name: rs_medium_nutrient_medium_nm_component
 original_name: RS Medium - Nutrient Medium (NM) Component
 category: bacterial
-medium_type: COMPLEX
-composition_type: UNDEFINED
+medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -11,7 +11,10 @@ media_term:
   term:
     id: mediadive.medium:P5
     label: RS Medium - Nutrient Medium (NM) Component
-notes: 'Source: public'
+notes: MediaDive public Medium P5 provides the RS Medium Nutrient Medium 1.0 component
+  as a 150 ml defined recipe at pH 7 with 3.3% salinity. The five 50 ml mix solutions
+  and the final 150 ml assembly were curated separately so the printed single-stock
+  concentrations are not mistaken for final medium concentrations.
 ingredients: []
 applications:
 - Microbial cultivation
@@ -39,5 +42,679 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_mediadive_rs_nm_score30.py
+  action: RESOLVED_MEDIADIVE_RS_NM_SCORE30
+  changes: Resolved score-30 RS NM MediaDive placeholder graph
+  source: https://www.bacmedia.dsmz.de/medium/P5
+  notes: MediaDive public Medium P5 provides the RS Medium Nutrient Medium 1.0 component
+    as a 150 ml defined recipe at pH 7 with 3.3% salinity. The five 50 ml mix solutions
+    and the final 150 ml assembly were curated separately so the printed single-stock
+    concentrations are not mistaken for final medium concentrations.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+salinity: 3.3%
+solutions:
+- preferred_term: Mix solution 1 (Si and Fe+EDTA)
+  concentration:
+    value: '26.667'
+    unit: ML_PER_L
+  notes: P5 combines 2.27 ml each of the Na2SiO3 x 5 H2O, FeCl3 x 6 H2O, and Na2EDTA
+    x 2H2O single stocks and fills to 50 ml with NNM.
+  composition:
+  - preferred_term: Na2SiO3 x 5 H2O
+    concentration:
+      value: '0.4086'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+  - preferred_term: FeCl3 x 6 H2O
+    concentration:
+      value: '0.05448'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:86254
+      label: FeCl3 x 6 H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: FeCl3 x 6 H2O
+  - preferred_term: Na2EDTA x 2H2O
+    concentration:
+      value: '0.08172'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+  - preferred_term: RS Medium - Non-Nutrient Medium (NNM) Component
+    concentration:
+      value: '863.8'
+      unit: ML_PER_L
+    source: MediaDive public Medium P5
+    notes: P5 fills Mix solution 1 to 50 ml with NNM after adding 6.81 ml total single
+      stocks.
+    culturemech_term:
+      id: CultureMech:010434
+      label: RS Medium - Non-Nutrient Medium (NNM) Component
+- preferred_term: Mix solution 2 (NO3-PO4)
+  concentration:
+    value: '200'
+    unit: ML_PER_L
+  notes: P5 combines 2.27 ml each of the NaNO3, NaH2PO4 x H2O, K2HPO4, and NH4Cl single
+    stocks and fills to 50 ml with NNM.
+  composition:
+  - preferred_term: NaNO3
+    concentration:
+      value: '1.362'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:63005
+      label: sodium nitrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63005
+      label: sodium nitrate
+  - preferred_term: NaH2PO4 x H2O
+    concentration:
+      value: '0.908'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+  - preferred_term: K2HPO4
+    concentration:
+      value: '1.816'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+  - preferred_term: NH4Cl
+    concentration:
+      value: '0.0454'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:31206
+      label: ammonium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31206
+      label: ammonium chloride
+  - preferred_term: RS Medium - Non-Nutrient Medium (NNM) Component
+    concentration:
+      value: '818.4'
+      unit: ML_PER_L
+    source: MediaDive public Medium P5
+    notes: P5 fills Mix solution 2 to 50 ml with NNM after adding 9.08 ml total single
+      stocks.
+    culturemech_term:
+      id: CultureMech:010434
+      label: RS Medium - Non-Nutrient Medium (NNM) Component
+- preferred_term: Mix solution 3 (Vitamins)
+  concentration:
+    value: '71.333'
+    unit: ML_PER_L
+  notes: P5 adds 4.5 ul each from the listed vitamin single stocks and fills to 50
+    ml with NNM.
+  composition:
+  - preferred_term: Thiamine HCl (B1)
+    concentration:
+      value: '0.0045'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+  - preferred_term: Biotin (B8)
+    concentration:
+      value: '0.000009'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+  - preferred_term: Cyanocobalamin (B12)
+    concentration:
+      value: '0.00009'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+  - preferred_term: Folic acid (B9)
+    concentration:
+      value: '0.00009'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+  - preferred_term: Pyridoxine (B6)
+    concentration:
+      value: '0.00009'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+  - preferred_term: Riboflavin (B2)
+    concentration:
+      value: '0.00009'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+  - preferred_term: Niacin (B3)
+    concentration:
+      value: '0.00009'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+  - preferred_term: D-pantothenate acid hemicalcium salt (B5)
+    concentration:
+      value: '0.00009'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+  - preferred_term: Myo-Inositol (B7)
+    concentration:
+      value: '0.00009'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+  - preferred_term: 4-Aminobenzoic Acid
+    concentration:
+      value: '0.00009'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+  - preferred_term: RS Medium - Non-Nutrient Medium (NNM) Component
+    concentration:
+      value: '999.1'
+      unit: ML_PER_L
+    source: MediaDive public Medium P5
+    notes: P5 fills Mix solution 3 to 50 ml with NNM after adding 45 ul total vitamin
+      stocks.
+    culturemech_term:
+      id: CultureMech:010434
+      label: RS Medium - Non-Nutrient Medium (NNM) Component
+- preferred_term: Mix solution 4 (Amino Acids)
+  concentration:
+    value: '72.667'
+    unit: ML_PER_L
+  notes: P5 adds 2.25 ml Sigma MEM 50X Amino Acids solution, 2.27 ml Sigma MEM 100X
+    Amino Acids solution, and 2.27 ml L-Glutamine single stock, then fills to 50 ml
+    with NNM; MEM amino-acid contents were flattened from the official P5 notes.
+  composition:
+  - preferred_term: Arginine
+    concentration:
+      value: '0.2844'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:29016
+      label: arginine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:29016
+      label: arginine
+  - preferred_term: Cysteine HCl
+    concentration:
+      value: '0.0702'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:91247
+      label: L-cysteine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91247
+      label: L-cysteine hydrochloride
+  - preferred_term: Histidine
+    concentration:
+      value: '0.0945'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:27570
+      label: histidine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27570
+      label: histidine
+  - preferred_term: L-Isoleucine
+    concentration:
+      value: '0.11835'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:17191
+      label: L-isoleucine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17191
+      label: L-isoleucine
+  - preferred_term: L-Leucine
+    concentration:
+      value: '0.1179'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:15603
+      label: L-leucine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15603
+      label: L-leucine
+  - preferred_term: Lysine HCl
+    concentration:
+      value: '0.16335'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+  - preferred_term: L-Methionine
+    concentration:
+      value: '0.0342'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:16643
+      label: L-methionine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16643
+      label: L-methionine
+  - preferred_term: L-Phenylalanine
+    concentration:
+      value: '0.07425'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:17295
+      label: L-phenylalanine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17295
+      label: L-phenylalanine
+  - preferred_term: L-Threonine
+    concentration:
+      value: '0.1071'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:16857
+      label: L-threonine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16857
+      label: L-threonine
+  - preferred_term: L-Tryptophan
+    concentration:
+      value: '0.02295'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:16828
+      label: L-tryptophan
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16828
+      label: L-tryptophan
+  - preferred_term: L-Tyrosine
+    concentration:
+      value: '0.081'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:17895
+      label: L-tyrosine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17895
+      label: L-tyrosine
+  - preferred_term: L-Valine
+    concentration:
+      value: '0.1053'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:16414
+      label: L-valine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16414
+      label: L-valine
+  - preferred_term: L-Alanine
+    concentration:
+      value: '0.040406'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:16977
+      label: L-alanine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16977
+      label: L-alanine
+  - preferred_term: Glycine
+    concentration:
+      value: '0.03405'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:15428
+      label: glycine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15428
+      label: glycine
+  - preferred_term: L-Proline
+    concentration:
+      value: '0.05221'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:17203
+      label: L-proline
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17203
+      label: L-proline
+  - preferred_term: L-Asparagine*H2O
+    concentration:
+      value: '0.0681'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+  - preferred_term: Aspartate
+    concentration:
+      value: '0.060382'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:29995
+      label: aspartate(2-)
+    mediaingredientmech_chebi_term:
+      id: CHEBI:29995
+      label: aspartate(2-)
+  - preferred_term: Glutamate
+    concentration:
+      value: '0.066738'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+  - preferred_term: Serine
+    concentration:
+      value: '0.04767'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:17822
+      label: serine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17822
+      label: serine
+  - preferred_term: L-Glutamine
+    concentration:
+      value: '0.5448'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:18050
+      label: L-glutamine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:18050
+      label: L-glutamine
+  - preferred_term: RS Medium - Non-Nutrient Medium (NNM) Component
+    concentration:
+      value: '864.2'
+      unit: ML_PER_L
+    source: MediaDive public Medium P5
+    notes: P5 fills Mix solution 4 to 50 ml with NNM after adding MEM and glutamine
+      stocks.
+    culturemech_term:
+      id: CultureMech:010434
+      label: RS Medium - Non-Nutrient Medium (NNM) Component
+- preferred_term: Mix solution 5 (Carbon Sources)
+  concentration:
+    value: '71.333'
+    unit: ML_PER_L
+  notes: P5 adds glycerol directly plus 2.27 ml of each listed carbon-source single
+    stock and fills to 50 ml with NNM; the viscous solution is vacuum-filtered through
+    a 0.22 um filter.
+  composition:
+  - preferred_term: Glycerol
+    concentration:
+      value: '1.134'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    notes: P5 adds 45 ul glycerol from Sigma at 1.26 g/ml to 50 ml Mix solution 5.
+    term:
+      id: CHEBI:17754
+      label: glycerol
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17754
+      label: glycerol
+  - preferred_term: Sodium pyruvate
+    concentration:
+      value: '1.79784'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:50144
+      label: sodium pyruvate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:50144
+      label: sodium pyruvate
+  - preferred_term: D-Glucose
+    concentration:
+      value: '1.79784'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:17634
+      label: D-glucose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17634
+      label: D-glucose
+  - preferred_term: N-acetyl-D-glucosamine
+    concentration:
+      value: '1.44372'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+  - preferred_term: D-Ribose
+    concentration:
+      value: '1.816'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:16988
+      label: D-ribose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16988
+      label: D-ribose
+  - preferred_term: Sodium succinate
+    concentration:
+      value: '2.46976'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:63675
+      label: sodium succinate (anhydrous)
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63675
+      label: sodium succinate (anhydrous)
+  - preferred_term: y-aminobutyric acid
+    concentration:
+      value: '1.4074'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+  - preferred_term: Sodium acetate
+    concentration:
+      value: '1.11684'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:32954
+      label: sodium acetate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32954
+      label: sodium acetate
+  - preferred_term: Decanoic acid
+    concentration:
+      value: '0.006356'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+  - preferred_term: L-Arabinose
+    concentration:
+      value: '1.19856'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:30849
+      label: L-arabinose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30849
+      label: L-arabinose
+  - preferred_term: L-Rhamnose
+    concentration:
+      value: '1.64348'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:62345
+      label: L-rhamnose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:62345
+      label: L-rhamnose
+  - preferred_term: Fucose
+    concentration:
+      value: '3.27788'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:33984
+      label: fucose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33984
+      label: fucose
+  - preferred_term: D-Mannose
+    concentration:
+      value: '3.59568'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:16024
+      label: D-mannose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16024
+      label: D-mannose
+  - preferred_term: Galactose
+    concentration:
+      value: '1.79784'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:28260
+      label: galactose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:28260
+      label: galactose
+  - preferred_term: D-Xylose
+    concentration:
+      value: '7.264'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    notes: The official ingredient table names D-Xylose; a later P5 instruction says
+      Xylan.
+    term:
+      id: CHEBI:65327
+      label: D-xylose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:65327
+      label: D-xylose
+  - preferred_term: Sodium alginate
+    concentration:
+      value: '0.08172'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:53311
+      label: sodium alginate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53311
+      label: sodium alginate
+  - preferred_term: Methyl-cellulose
+    concentration:
+      value: '0.92616'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+  - preferred_term: Pectin
+    concentration:
+      value: '1.816'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:17309
+      label: pectin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17309
+      label: pectin
+  - preferred_term: Guanosine
+    concentration:
+      value: '0.02724'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:16750
+      label: guanosine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16750
+      label: guanosine
+  - preferred_term: Uracil
+    concentration:
+      value: '0.14528'
+      unit: G_PER_L
+    source: MediaDive public Medium P5
+    term:
+      id: CHEBI:17568
+      label: uracil
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17568
+      label: uracil
+  - preferred_term: RS Medium - Non-Nutrient Medium (NNM) Component
+    concentration:
+      value: '136.5'
+      unit: ML_PER_L
+    source: MediaDive public Medium P5
+    notes: P5 fills Mix solution 5 to 50 ml with NNM after adding glycerol and carbon-source
+      stocks.
+    culturemech_term:
+      id: CultureMech:010434
+      label: RS Medium - Non-Nutrient Medium (NNM) Component
+- preferred_term: RS Medium - Non-Nutrient Medium (NNM) Component
+  concentration:
+    value: '558'
+    unit: ML_PER_L
+  notes: P5 fills the 150 ml final Nutrient Medium 1.0 component to volume with the
+    RS Medium Non-Nutrient Medium component after adding the five mix solutions.
+  culturemech_term:
+    id: CultureMech:010434
+    label: RS Medium - Non-Nutrient Medium (NNM) Component
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the printed single stocks in purified H2O or NNM and sterilize
+    each stock by autoclaving or 0.22 um filtration as specified.
+- step_number: 2
+  action: MIX
+  description: Prepare the methyl-cellulose stock in cold H2O overnight before autoclaving;
+    prepare the pectin stock in H2O with hot-plate stirring for 20 min before autoclaving.
+- step_number: 3
+  action: MIX
+  description: Prepare 50 ml Mix solution 1 from the Si and Fe/EDTA stocks, fill with
+    NNM, syringe-filter through 0.22 um, and store at 4 C.
+- step_number: 4
+  action: MIX
+  description: Prepare 50 ml Mix solution 2 from the nitrate-phosphate stocks, fill
+    with NNM, syringe-filter through 0.22 um, and prepare fresh each time.
+- step_number: 5
+  action: MIX
+  description: Prepare 50 ml Mix solution 3 from the vitamin stocks, fill with NNM,
+    syringe-filter through 0.22 um, and store at 4 C.
+- step_number: 6
+  action: MIX
+  description: Prepare 50 ml Mix solution 4 from MEM 50X amino acids, MEM 100X amino
+    acids, and the glutamine stock; fill with NNM, syringe-filter through 0.22 um,
+    and store at 4 C.
+- step_number: 7
+  action: MIX
+  description: Prepare 50 ml Mix solution 5 from glycerol and the carbon-source stocks,
+    fill with NNM, vacuum-filter through 0.22 um, and store at 4 C.
+- step_number: 8
+  action: FILTER
+  description: Combine 4 ml Mix solution 1, 30 ml Mix solution 2, 10.7 ml Mix solution
+    3, 10.9 ml Mix solution 4, and 10.7 ml Mix solution 5; fill to 150 ml with NNM,
+    vacuum-filter through 0.22 um, and store Nutrient Medium 1.0 at 4 C.
+references:
+- reference: https://www.bacmedia.dsmz.de/medium/P5

@@ -5,61 +5,92 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.6
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '250'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '4'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Seawater
+  source: NBRC Medium 244
+  notes: NBRC Medium 244 lists 4 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+- preferred_term: Malt extract
   concentration:
-    value: '750'
+    value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source, Solvating media; Properties: Undefined component'
+  source: NBRC Medium 244
+  notes: NBRC Medium 244 lists 10 g/L Malt extract.
+  term:
+    id: FOODON:03301056
+    label: Malt extract
 - preferred_term: Glucose
   concentration:
     value: '4'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  source: NBRC Medium 244
+  notes: NBRC Medium 244 lists 4 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+- preferred_term: Seawater
+  concentration:
+    value: '750'
+    unit: ML_PER_L
+  source: NBRC Medium 244
+  notes: NBRC Medium 244 lists 750 ml/L Seawater.
+  term:
+    id: ENVO:00002149
+    label: Seawater
+- preferred_term: Distilled water
+  concentration:
+    value: '250'
+    unit: ML_PER_L
+  source: NBRC Medium 244
+  notes: NBRC Medium 244 lists 250 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar (if needed)
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Malt extract
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: NBRC Medium 244
+  notes: NBRC Medium 244 lists 20 g/L agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 media_term:
   preferred_term: TOGO Medium M1466
   term:
     id: TOGO:M1466
     label: TOGO Medium M1466
-notes: 'Source: https://togomedium.org/medium/M1466
-
-  Original source: NBRC - NBRC_M244
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=244'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Combine 4 g/L Yeast extract, 10 g/L Malt extract, 4 g/L Glucose, 750
+    ml/L Seawater, and 250 ml/L Distilled water.
+- step_number: 2
+  action: MIX
+  description: Add 20 g/L agar when solid NBRC Medium 244 is needed.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 7.6.
+notes: TOGO M1466 imports NBRC Medium 244, which lists 4 g/L Yeast extract, 10 g/L
+  Malt extract, 4 g/L Glucose, 750 ml/L Seawater, 250 ml/L Distilled water, and 20
+  g/L Agar if needed. The final pH is 7.6.
 applications:
 - Microbial cultivation
 curation_history:
@@ -90,3 +121,27 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nbrc_244_score15.py
+  action: RESOLVED_TOGO_M1466_NBRC_244_SCORE15
+  source: https://togomedium.org/medium/M1466; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=244
+  notes: Curated TOGO:M1466 from TOGO and NBRC Medium 244; corrected Seawater and
+    Distilled water from mass-like imports to 750 ml/L and 250 ml/L volume additions,
+    added pH 7.6, grounded all formula components, and linked the existing recovered
+    NBRC Medium 244 record as the source duplicate parent.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1466
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=244
+parent_media:
+  path: data/normalized_yaml/bacterial/NBRC_245.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:007480
+  name: '245'
+  notes: TOGO M1466 imports the same NBRC Medium 244 formulation represented by the
+    recovered NBRC Medium 244 source record.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same NBRC Medium 244 formulation as the recovered NBRC Medium 244 source record.

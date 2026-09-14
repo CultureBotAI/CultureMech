@@ -61,3 +61,25 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_219_score35.py
+  action: RESOLVED_NBRC_219_SCORE35_METADATA
+  changes: Added source metadata to recovered NBRC skim-milk record
+  source: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=214
+  notes: Preserved the recovered NBRC Medium 214 two-ingredient formula and added
+    the missing source term, reference, and curation flags.
+notes: 'Source: NBRC Medium 214 | Link: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=214
+
+
+  The recovered NBRC table lists 100 g skim milk brought to 1 L with distilled water.'
+media_term:
+  preferred_term: NBRC Medium 214
+  term:
+    id: nbrc.medium:214
+    label: NBRC Medium 214
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=214

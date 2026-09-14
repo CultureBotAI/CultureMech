@@ -5,56 +5,75 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.8
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: Sodium glutamate・H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined
-    component'
 - preferred_term: Peptone
   concentration:
-    value: '3'
+    value: '3.0'
     unit: G_PER_L
+  source: TOGO M634 / JCM Medium 624
+  notes: TOGO M634 / JCM Medium 624 lists 3.0 g/L Peptone.
+  term:
+    id: MICRO:0000178
+    label: peptone
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: TOGO M634 / JCM Medium 624
+  notes: TOGO M634 / JCM Medium 624 lists 1.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Sodium glutamate x H2O
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: TOGO M634 / JCM Medium 624
+  notes: TOGO M634 / JCM Medium 624 lists 1.0 g/L Sodium glutamate x H2O.
+  term:
+    id: CHEBI:232425
+    label: monosodium L-glutamate hydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:232425
+    label: monosodium L-glutamate hydrate
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: NaCl
+  concentration:
+    value: '30.0'
+    unit: G_PER_L
+  source: TOGO M634 / JCM Medium 624
+  notes: TOGO M634 / JCM Medium 624 lists 30.0 g/L NaCl.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: TOGO M634 / JCM Medium 624
+  notes: TOGO M634 / JCM Medium 624 lists 1.0 L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M634
   term:
     id: TOGO:M634
     label: Modified Thermus Medium With 3% NaCl
-notes: 'Source: https://togomedium.org/medium/M634
-
-  Original source: JCM - JCM_M624
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=624'
+notes: JCM Medium 624 Modified Thermus Medium with 3% NaCl lists 3.0 g Peptone, 1.0
+  g Yeast extract, 1.0 g Sodium glutamate-H2O, 30.0 g NaCl, 10.0 ml Castenholz basal
+  salt solution from JCM Medium 273, and 1.0 L Distilled water, then adjusts pH to
+  7.8.
 applications:
 - Microbial cultivation
 curation_history:
@@ -97,11 +116,176 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m634_m635_score15.py
+  action: RESOLVED_TOGO_M634_SCORE15
+  source: https://togomedium.org/medium/M634; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=624;
+    https://mediadive.dsmz.de/medium/J624; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=273;
+    https://mediadive.dsmz.de/medium/J273
+  notes: Corrected the imported distilled-water and Castenholz-stock units, added
+    pH 7.8, grounded Peptone, Yeast extract, and Sodium glutamate-H2O, linked the
+    JCM 624 source duplicate, and added the existing TOGO M636 supplemented child
+    backlink.
 solutions:
-- preferred_term: Castenholz basal salt solution (see Medium [M266])
-  composition: []
-  notes: Cross-reference to Medium M266
+- preferred_term: Castenholz basal salt solution (see Medium No. 273)
   concentration:
-    value: '10'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '10.0'
+    unit: ML_PER_L
+  source: TOGO M634 / JCM Medium 624
+  notes: JCM Medium 624 adds 10.0 ml/L Castenholz basal salt solution from JCM Medium
+    273.
+  culturemech_term:
+    id: CultureMech:013022
+    label: Castenholz basal salt solution
+  composition:
+  - preferred_term: Nitrilotriacetic acid
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: JCM Medium 273
+    notes: JCM Medium 273 lists 1.0 g/L Nitrilotriacetic acid.
+    term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+  - preferred_term: CaSO4 x 2 H2O
+    concentration:
+      value: '0.6'
+      unit: G_PER_L
+    source: JCM Medium 273
+    notes: JCM Medium 273 lists 0.6 g/L CaSO4 x 2 H2O.
+    term:
+      id: CHEBI:32583
+      label: calcium sulfate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32583
+      label: calcium sulfate dihydrate
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: JCM Medium 273
+    notes: JCM Medium 273 lists 1.0 g/L MgSO4 x 7 H2O.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: NaCl
+    concentration:
+      value: '0.08'
+      unit: G_PER_L
+    source: JCM Medium 273
+    notes: JCM Medium 273 lists 0.08 g/L NaCl.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: KNO3
+    concentration:
+      value: '1.03'
+      unit: G_PER_L
+    source: JCM Medium 273
+    notes: JCM Medium 273 lists 1.03 g/L KNO3.
+    term:
+      id: CHEBI:63043
+      label: potassium nitrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63043
+      label: potassium nitrate
+  - preferred_term: NaNO3
+    concentration:
+      value: '6.89'
+      unit: G_PER_L
+    source: JCM Medium 273
+    notes: JCM Medium 273 lists 6.89 g/L NaNO3.
+    term:
+      id: CHEBI:63005
+      label: sodium nitrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63005
+      label: sodium nitrate
+  - preferred_term: Na2HPO4
+    concentration:
+      value: '1.11'
+      unit: G_PER_L
+    source: JCM Medium 273
+    notes: JCM Medium 273 lists 1.11 g/L Na2HPO4.
+    term:
+      id: CHEBI:34683
+      label: disodium hydrogenphosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:34683
+      label: disodium hydrogenphosphate
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: FeCl3 x 6 H2O solution (0.03%)
+    concentration:
+      value: '10.0'
+      unit: ML_PER_L
+    source: JCM Medium 273
+    notes: JCM Medium 273 adds 10.0 ml/L FeCl3 x 6 H2O solution (0.03%).
+  - preferred_term: Nitsch's trace elements
+    concentration:
+      value: '10.0'
+      unit: ML_PER_L
+    source: JCM Medium 273
+    notes: JCM Medium 273 adds 10.0 ml/L Nitsch's trace elements.
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 273
+    notes: JCM Medium 273 lists 1.0 L Distilled water in the stock solution.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  preparation_notes: Adjust pH to 8.2.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add the base components and 10.0 ml Castenholz basal salt solution
+    to 1.0 L distilled water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.8.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: JCM's default instruction is to autoclave media at 121 C for 15 min.
+parent_media:
+  path: data/normalized_yaml/bacterial/modified_thermus_medium_with_3_nacl.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002970
+  name: modified_thermus_medium_with_3_nacl
+  notes: TOGO M634 imports the same JCM Medium 624 liquid formulation.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same JCM Medium 624 Modified Thermus Medium with 3% NaCl formulation.
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M636_Modified_Thermus_SV_Medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:010036
+  name: modified_thermus_sv_medium
+  notes: JCM Medium 625 supplements JCM Medium 624 with 3.0 g/L L-proline.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M634
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=624
+- reference: https://mediadive.dsmz.de/medium/J624
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=273
+- reference: https://mediadive.dsmz.de/medium/J273

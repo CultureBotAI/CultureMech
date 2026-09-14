@@ -198,6 +198,12 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_archaeoglobus_mcr_score20.py
+  action: LINKED_ARCHAEOGLOBUS_MCR_SCORE20_CHILDREN
+  changes: Linked Archaeoglobus MCR child variant to its HHB base parent
+  source: https://togomedium.org/medium/M1280
+  notes: Added or refreshed reciprocal supplemented-variant link for archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml.
 solutions:
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
@@ -235,3 +241,9 @@ solutions:
   notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
     compound'
   name: Unknown solution
+variant_children:
+- path: data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:007814
+  name: archaeoglobus_mcr_medium
+  notes: Supplements TOGO M1279 Methanothermococcus HHB Medium with 2.8 g/L Na2SO4.

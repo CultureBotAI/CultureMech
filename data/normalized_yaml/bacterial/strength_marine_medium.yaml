@@ -6,36 +6,54 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: DI Water
+- preferred_term: Marine Broth 2216 (BD 279110)
   concentration:
-    value: '1000'
+    value: '18.7'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO M2255 / ATCC Medium 2515
+  notes: TOGO M2255 / ATCC Medium 2515 lists 18.7 g/L Marine Broth 2216 from BD 279110;
+    this commercial marine broth is retained as an opaque complex component.
 - preferred_term: Agar
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M2255 / ATCC Medium 2515
+  notes: TOGO M2255 / ATCC Medium 2515 lists 15.0 g/L Agar if solid medium is needed.
   term:
     id: CHEBI:2509
     label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
-- preferred_term: Marine Broth 2216 (BD 279110)
+- preferred_term: DI Water
   concentration:
-    value: '18.7'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+    value: '1000.0'
+    unit: ML_PER_L
+  source: TOGO M2255 / ATCC Medium 2515
+  notes: TOGO M2255 / ATCC Medium 2515 lists 1000.0 ml/L DI Water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Suspend Marine Broth 2216 and Agar, if needed, in 1000 ml DI Water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C and keep the medium spinning while dispensing so
+    precipitate is evenly distributed.
 media_term:
   preferred_term: TOGO Medium M2255
   term:
     id: TOGO:M2255
     label: ½ Strength Marine Medium
-notes: 'Source: https://togomedium.org/medium/M2255
-
-  Original URL: https://www.atcc.org/~/media/C64DF5CA9E954F51A0B94D9B6BABAB21.ashx'
+notes: TOGO M2255 cites ATCC Medium 2515 1/2 Strength Marine Medium, which lists 18.7
+  g Marine Broth 2216 from BD 279110, optional 15.0 g Agar, and 1000.0 ml DI Water.
+  The source autoclaves the medium at 121 C and keeps it spinning while dispensing
+  so that precipitate is evenly distributed.
 applications:
 - Microbial cultivation
 curation_history:
@@ -66,4 +84,33 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-kg_microbe_match: mediadive.medium:12
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2255_half_marine_score15.py
+  action: RESOLVED_TOGO_M2255_HALF_MARINE_SCORE15
+  source: https://togomedium.org/medium/M2255; https://www.atcc.org/~/media/C64DF5CA9E954F51A0B94D9B6BABAB21.ashx
+  notes: TOGO M2255 cites ATCC Medium 2515 1/2 Strength Marine Medium, which lists
+    18.7 g Marine Broth 2216 from BD 279110, optional 15.0 g Agar, and 1000.0 ml DI
+    Water. The source autoclaves the medium at 121 C and keeps it spinning while dispensing
+    so that precipitate is evenly distributed. Corrected the DI Water unit to ml/L,
+    removed the false kg_microbe_match to DSMZ Soil Extract Medium, and linked this
+    recipe to Marine Broth 2216 as a half-strength concentration variant.
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M33_Marine_Broth_2216.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:009718
+  name: marine_broth_2216
+  notes: Uses one-half-strength Marine Broth 2216 at 18.7 g/L instead of the full
+    37.4 g/L.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Uses 18.7 g/L Marine Broth 2216 (BD 279110).
+- Adds 15.0 g/L Agar if solid medium is needed.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2255
+- reference: https://www.atcc.org/~/media/C64DF5CA9E954F51A0B94D9B6BABAB21.ashx

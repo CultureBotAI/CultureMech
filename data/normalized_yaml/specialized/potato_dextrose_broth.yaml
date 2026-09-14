@@ -3,6 +3,8 @@ name: Potato Dextrose Broth
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: Potato Dextrose Broth
 ingredients:
 - preferred_term: Infusion from Potatoes
   concentration:
@@ -20,7 +22,8 @@ ingredients:
     label: D-glucose
   notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 50-99-7; MW: 180.16'
 description: Growth media for for yeasts, for bacteria, for molds
-notes: 'Source: FEBA media definitions'
+notes: CultureBotHT imports Potato Dextrose Broth as 4 g/L infusion from potatoes
+  plus 20 g/L D-glucose.
 category: specialized
 sources:
 - database: CultureBotHT
@@ -39,5 +42,17 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
-data_quality_flags: []
-kg_microbe_match: mediadive.medium:21
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_exact_score30.py
+  action: MARKED_CULTUREBOTHT_EXACT_SCORE30
+  changes: Marked exact sparse CultureBotHT formula as curated
+  source: CultureBotHT:Potato Dextrose Broth; https://github.com/CultureBotAI/CultureBotHT
+  notes: CultureBotHT imports Potato Dextrose Broth as 4 g/L infusion from potatoes
+    plus 20 g/L D-glucose.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: CultureBotHT:Potato Dextrose Broth
+- reference: https://github.com/CultureBotAI/CultureBotHT

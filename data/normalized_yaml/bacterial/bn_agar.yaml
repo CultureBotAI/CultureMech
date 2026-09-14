@@ -4,14 +4,49 @@ original_name: BN agar
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
+functional_role:
+- SELECTIVE
 physical_state: SOLID_AGAR
 ingredients:
+- preferred_term: Nutrient Broth (OXOID)
+  concentration:
+    value: '13.0'
+    unit: G_PER_L
+  source: TOGO M1959 / NBRC Medium 1236
+  notes: TOGO M1959 / NBRC Medium 1236 lists 13.0 g/L Nutrient Broth (OXOID); retained
+    as an intentionally opaque commercial product.
+- preferred_term: Sodium benzoate
+  concentration:
+    value: '1.44'
+    unit: G_PER_L
+  source: TOGO M1959 / NBRC Medium 1236
+  notes: TOGO M1959 / NBRC Medium 1236 lists 1.44 g/L Sodium benzoate; the NBRC footnote
+    marks it for separate filter sterilization.
+  term:
+    id: CHEBI:113455
+    label: sodium benzoate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:113455
+    label: sodium benzoate
+- preferred_term: Kanamycin
+  concentration:
+    value: '250.0'
+    unit: MG_PER_L
+  source: TOGO M1959 / NBRC Medium 1236
+  notes: TOGO M1959 / NBRC Medium 1236 lists 250.0 mg/L Kanamycin; the NBRC footnote
+    marks it for separate filter sterilization.
+  term:
+    id: CHEBI:6104
+    label: kanamycin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6104
+    label: kanamycin
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1000.0'
+    unit: ML_PER_L
+  source: TOGO M1959 / NBRC Medium 1236
+  notes: TOGO M1959 / NBRC Medium 1236 lists 1000.0 ml/L Distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -20,24 +55,60 @@ ingredients:
     label: water
 - preferred_term: Agar (if needed)
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Nutrient Broth (OXOID)
-  concentration:
-    value: '13'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  source: TOGO M1959 / NBRC Medium 1236
+  notes: TOGO M1959 / NBRC Medium 1236 lists 15.0 g/L agar if needed for solid medium.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 media_term:
   preferred_term: TOGO Medium M1959
   term:
     id: TOGO:M1959
     label: BN agar
-notes: 'Source: https://togomedium.org/medium/M1959
-
-  Original source: NBRC - NBRC_M1236
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1236'
+notes: TOGO M1959 / NBRC Medium 1236 lists 13 g Nutrient Broth (OXOID), 1.44 g sodium
+  benzoate, 250 mg kanamycin, 1 L distilled water, and 15 g agar if needed per liter;
+  pH is unadjusted. The NBRC footnote marks the starred sodium benzoate and kanamycin
+  rows for separate filter sterilization before addition to the autoclaved base.
+references:
+- reference: https://togomedium.org/medium/M1959
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1236
+parent_media:
+  path: data/normalized_yaml/bacterial/nutrient_agar_broth.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:008307
+  name: nutrient_agar_broth
+  notes: TOGO M1959 / NBRC Medium 1236 supplements the 13 g/L OXOID Nutrient Agar/Broth
+    base with filter-sterilized sodium benzoate and kanamycin.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adds 1.44 g/L sodium benzoate.
+- Adds 250 mg/L kanamycin.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Suspend Nutrient Broth (OXOID) and optional agar in distilled water;
+    the source records pH as unadjusted.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Sterilize the OXOID Nutrient Agar/Broth base by autoclaving.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize sodium benzoate and kanamycin separately by filtration.
+- step_number: 4
+  action: MIX
+  description: Aseptically add filter-sterilized sodium benzoate and kanamycin to
+    the autoclaved base.
+sterilization:
+  method: AUTOCLAVE
+  notes: Autoclave the OXOID Nutrient Agar/Broth base and filter-sterilize sodium
+    benzoate and kanamycin separately before aseptic addition.
 applications:
 - Microbial cultivation
 curation_history:
@@ -75,27 +146,15 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-solutions:
-- preferred_term: Kanamycin*
-  composition: []
-  concentration:
-    value: '250'
-    unit: G_PER_L
-- preferred_term: Sodium benzoate*
-  composition: []
-  concentration:
-    value: '1.44'
-    unit: G_PER_L
-variant_children:
-- path: data/normalized_yaml/bacterial/nutrient_agar_broth.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:008307
-  name: nutrient_agar_broth
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/togo_medium_m1570.yaml
-  relationship: CONCENTRATION_VARIANT
-  id: CultureMech:008119
-  name: togo_medium_m1570
-  notes: Nutrient Broth (OXOID) decreases from 13 g/L to 6.5 g/L; agar remains 15
-    g/L and the parsed ingredient set otherwise matches.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m1959_bn_agar_score15.py
+  action: RESOLVED_TOGO_M1959_BN_AGAR_SCORE15
+  source: https://togomedium.org/medium/M1959; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1236
+  notes: Verified TOGO M1959 against NBRC Medium 1236, converted the imported sodium
+    benzoate and kanamycin solution wrappers into direct filter-sterilized ingredients,
+    grounded those selective agents, recorded the pH as unadjusted, and repaired the
+    Nutrient Agar/Broth supplemented-variant relationship.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients

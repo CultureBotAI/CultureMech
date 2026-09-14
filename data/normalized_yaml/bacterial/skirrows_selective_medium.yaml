@@ -4,24 +4,42 @@ original_name: Skirrow's selective medium
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: sheep blood
+- preferred_term: Columbia Agar Base (Oxoid CM0331)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: TOGO M2935
+  notes: TOGO M2935 names Columbia Agar Base, Oxoid CM0331, but does not spell out
+    the amount or base composition.
+  culturemech_term:
+    id: CultureMech:005649
+    label: Columbia agar base
+- preferred_term: Sheep blood
   concentration:
     value: '5'
-    unit: PERCENT_W_V
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Skirrow's selective medium (Oxoid)
+    unit: PERCENT_V_V
+  source: TOGO M2935
+  notes: TOGO M2935 supplements Columbia Agar Base with 5% sheep blood.
+  term:
+    id: UBERON:0000178
+    label: blood
+- preferred_term: Campylobacter selective supplement (Oxoid SR0117)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent'
+    value: variable
+    unit: VARIABLE
+  source: TOGO M2935
+  notes: TOGO M2935 adds Campylobacter selective supplement, Oxoid SR0117, but does
+    not state the amount.
 media_term:
   preferred_term: TOGO Medium M2935
   term:
     id: TOGO:M2935
     label: Skirrow's selective medium
-notes: 'Source: https://togomedium.org/medium/M2935'
+notes: TOGO M2935 records Skirrow's selective agar as Columbia Agar Base Oxoid CM0331
+  supplemented with 5% sheep blood and Campylobacter selective supplement Oxoid SR0117,
+  incubated at 42 C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -38,3 +56,18 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Skirrow's selective medium" to "skirrows_selective_medium"
     for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_literal_products_score40.py
+  action: RESOLVED_TOGO_LITERAL_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO literal product/additive graph
+  source: https://togomedium.org/medium/M2935
+  notes: TOGO M2935 records Skirrow's selective agar as Columbia Agar Base Oxoid CM0331
+    supplemented with 5% sheep blood and Campylobacter selective supplement Oxoid
+    SR0117, incubated at 42 C.
+temperature_value: 42.0
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2935

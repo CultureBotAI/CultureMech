@@ -4,17 +4,33 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: Dv_base_medium
-  concentration:
-    value: '1'
-    unit: FOLD_DILUTION
 - preferred_term: Yeast extract
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+  notes: CultureBotHT lists 1 g/L Yeast extract.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+solutions:
+- preferred_term: Dv base medium
+  concentration:
+    value: '1'
+    unit: FOLD_DILUTION
+  culturemech_term:
+    id: CultureMech:015516
+    label: Dv base medium
+  notes: CultureBotHT lists Dv_base_medium at one-fold final strength.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add Yeast extract to Dv base medium.
 description: Rich base medium for cultivating Desulfovibrio (with no carbon source,
   electron donor, or electron acceptor)
-notes: 'Source: FEBA media definitions'
+notes: CultureBotHT imports this variant as Dv base medium supplemented with 1 g/L
+  yeast extract.
 category: specialized
 sources:
 - database: CultureBotHT
@@ -33,5 +49,36 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_culturebotht_specialized_score50.py
+  action: RESOLVED_CULTUREBOTHT_SPECIALIZED_SCORE50_GRAPH
+  changes: Resolved score-50 CultureBotHT specialized recipe graph
+  source: CultureBotHT:Dv base Y medium; https://github.com/CultureBotAI/CultureBotHT
+  notes: CultureBotHT imports this variant as Dv base medium supplemented with 1 g/L
+    yeast extract.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/dv_base_y_medium_no_fe.yaml.
 data_quality_flags:
-- has_unmapped_ingredients
+- has_ontology_mappings
+- ingredients_curated
+parent_media:
+  path: data/normalized_yaml/specialized/dv_base_medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:015516
+  name: Dv base medium
+  notes: Adds 1 g/L Yeast extract to Dv base medium.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adds 1 g/L Yeast extract to Dv base medium.
+references:
+- reference: CultureBotHT:Dv base Y medium
+- reference: https://github.com/CultureBotAI/CultureBotHT
+variant_children:
+- path: data/normalized_yaml/specialized/dv_base_y_medium_no_fe.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015521
+  name: Dv base Y medium no Fe
+  notes: Omits Iron (II) chloride tetrahydrate from Dv base Y medium.

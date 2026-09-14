@@ -342,13 +342,19 @@ curation_history:
     vitamin b12. Each moved component matched the MediaDive stock by name AND value;
     bulk ingredients sharing a name were left in place (#150).'
   changes: Nested 6 ingredient(s) under 3 solution(s); ingredients 33 -> 27
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_818_chrysiogenes_score10.py
+  action: RESOLVED_KOMODO_818_CHRYSIOGENES_STRAIN_VARIANT
+  changes: Linked a CHRYSIOGENES MEDIUM strain-specific child
+  source: KOMODO Medium 818.1
+  notes: Changed DSM 16346 from SOURCE_DUPLICATE to a STRAIN_SPECIFIC_VARIANT child
+    of KOMODO Medium 818.
 variant_children:
 - path: data/normalized_yaml/bacterial/for_dsm_16346.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006542
   name: for_dsm_16346
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 818.1 applies CHRYSIOGENES MEDIUM at pH 7.4-7.8 for DSM 16346.
 parent_media:
   path: data/normalized_yaml/bacterial/chrysiogenes_medium.yaml
   relationship: SOURCE_DUPLICATE

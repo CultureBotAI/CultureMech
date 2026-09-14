@@ -4,57 +4,43 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: Bold 1NV:Erdschreiber's (1:1) Medium
+  term:
+    id: UTEX:bold-1nv-erdschreibers-one-to-one-medium
+    label: Bold 1NV:Erdschreiber's (1:1) Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
-ingredients:
+notes: UTEX prepares this blend by mixing equal volumes of prepared Bold 1NV Medium
+  and Erdschreiber's Medium.
+ingredients: []
+solutions:
 - preferred_term: Bold 1NV Medium
   concentration:
     value: '500'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 500 mL/L'
+  culturemech_term:
+    id: CultureMech:000032
+    label: Bold 1NV Medium
+  notes: UTEX lists 500 mL prepared Bold 1NV Medium per 1 L final medium.
 - preferred_term: Erdschreiber's Medium
   concentration:
     value: '500'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 500 mL/L'
+  culturemech_term:
+    id: CultureMech:000167
+    label: Erdschreiber's Medium
+  notes: UTEX lists 500 mL prepared Erdschreiber's Medium per 1 L final medium.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: Prepare Bold 1NV Medium and Erdschreiber's Medium.
 - step_number: 2
   action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  description: Combine the prepared component media.
 - step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
-- step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
-- step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
+  action: STORE
+  description: Store at refrigerator temperature.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -93,7 +79,26 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_algal_blends.py
+  action: RESOLVED_UTEX_ALGAL_BLEND_GRAPH
+  changes: Grounded UTEX algal prepared-media and stock-solution components
+  source: https://utex.org/products/bold-1nv-erdschreibers-one-to-one-medium
+  notes: UTEX prepares this blend by mixing equal volumes of prepared Bold 1NV Medium
+    and Erdschreiber's Medium.
 references:
 - reference: UTEX:bold-1nv-erdschreibers-one-to-one-medium
 - reference: https://utex.org/products/bold-1nv-erdschreibers-one-to-one-medium
 original_name: Bold 1NV:Erdshreiber (1:1) Medium
+parent_media:
+  path: data/normalized_yaml/algae/Bold_1NV_Medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:000032
+  name: bold_1nv_medium
+  notes: Blends 500 mL Bold 1NV Medium with 500 mL Erdschreiber's Medium per liter.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Blends 500 mL Bold 1NV Medium with 500 mL Erdschreiber's Medium per liter.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

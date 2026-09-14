@@ -8,20 +8,34 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: MRS broth (Difco)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2803
+  notes: TOGO M2803 lists one liter of MRS broth from Difco; TOGO M2489 represents
+    the same opaque product.
+  culturemech_term:
+    id: CultureMech:009062
+    label: MRS broth
 - preferred_term: L-cysteine · HCl
   concentration:
     value: '0.05'
     unit: PERCENT_W_V
-  notes: 'Properties: Defined component, Simple component, Organic compound'
+  source: TOGO M2803
+  notes: TOGO M2803 lists L-cysteine HCl from Sigma at a 0.05% final concentration.
+  term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
 media_term:
   preferred_term: TOGO Medium M2803
   term:
     id: TOGO:M2803
     label: de Man-Rogosa-Sharpe broths supplemented with 0.05% l-cysteine · HCl
-notes: 'Source: https://togomedium.org/medium/M2803'
+notes: TOGO M2803 records Difco MRS broth supplemented to a final 0.05% L-cysteine
+  HCl concentration and cultivated at 37 C under anaerobic BBL Anaerobic system conditions;
+  the source does not disclose the MRS product's internal formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -39,3 +53,36 @@ curation_history:
   notes: Normalized name from "de Man-Rogosa-Sharpe broths supplemented with 0.05%
     l-cysteine · HCl" to "de_man_rogosa_sharpe_broths_supplemented_with_0_05_l_cysteine_hcl"
     for consistent matching
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_togo_mrs_marine_urine_score40.py
+  action: RESOLVED_TOGO_MRS_MARINE_URINE_SCORE40
+  changes: Resolved cached score-40 TOGO MRS, marine, or urine graph
+  source: https://togomedium.org/medium/M2803
+  notes: TOGO M2803 records Difco MRS broth supplemented to a final 0.05% L-cysteine
+    HCl concentration and cultivated at 37 C under anaerobic BBL Anaerobic system
+    conditions; the source does not disclose the MRS product's internal formulation.
+temperature_value: 37.0
+incubation_atmosphere: ANAEROBIC
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Supplement one liter of MRS broth from Difco with L-cysteine HCl to
+    a 0.05% final concentration.
+- step_number: 2
+  action: MIX
+  description: Cultivate under anaerobic BBL Anaerobic system conditions at 37 C.
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M2489_MRS_broth.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:009062
+  name: mrs_broth
+  notes: TOGO M2803 supplements the same Difco MRS broth product with 0.05% L-cysteine
+    HCl.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adds 0.05% L-cysteine HCl to one liter of MRS broth from Difco.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M2803

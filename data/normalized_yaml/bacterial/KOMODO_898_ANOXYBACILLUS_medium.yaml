@@ -380,3 +380,39 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_898_anoxybacillus_score10.py
+  action: RESOLVED_KOMODO_898_ANOXYBACILLUS_TOPOLOGY
+  changes: Reclassified KOMODO Medium 898.1, 898.2, 898.3, and 898.4 variants
+  source: KOMODO Medium 898, 898.1, 898.2, 898.3, and 898.4
+  notes: Linked the KOMODO Medium 898.1, 898.2, 898.3, and 898.4 records under the
+    KOMODO Medium 898 ANOXYBACILLUS base and preserved DSMZ Medium 898b as a duplicate
+    source child.
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_16504.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006754
+  name: for_dsm_16504
+  notes: KOMODO Medium 898.1 applies ANOXYBACILLUS medium to DSM 16504.
+- path: data/normalized_yaml/bacterial/for_dsm_17722.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006755
+  name: for_dsm_17722
+  notes: KOMODO Medium 898.2 applies ANOXYBACILLUS medium to DSM 17722.
+- path: data/normalized_yaml/bacterial/for_dsm_18346_and_dsm_18979.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:006756
+  name: for_dsm_18346_and_dsm_18979
+  notes: KOMODO Medium 898.3 applies ANOXYBACILLUS medium at pH 8.5 to DSM 18346 and
+    DSM 18979.
+- path: data/normalized_yaml/bacterial/for_dsm_18978.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:006757
+  name: for_dsm_18978
+  notes: KOMODO Medium 898.4 applies ANOXYBACILLUS medium at pH 9 to DSM 18978.
+- path: data/normalized_yaml/bacterial/serpentinicella_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002063
+  name: serpentinicella_medium
+  notes: DSMZ Medium 898b preserves the same crotonate/thiosulfate formulation as
+    the KOMODO Medium 898 record.

@@ -8,10 +8,10 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M74/JCM Medium 83 snapshot
+  notes: TOGO M74 lists 1.0 L distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -22,17 +22,15 @@ ingredients:
   concentration:
     value: '74'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M74/JCM Medium 83 snapshot
+  notes: TOGO M74 lists 74 g/L GAM agar from Nissui.
 media_term:
   preferred_term: TOGO Medium M74
   term:
     id: TOGO:M74
     label: GAM Agar
-notes: 'Source: https://togomedium.org/medium/M74
-
-  Original source: JCM - JCM_M83
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=83'
+notes: TOGO M74 records 74 g/L GAM agar from Nissui in 1.0 L distilled water; this
+  repair normalizes the imported water amount.
 applications:
 - Microbial cultivation
 curation_history:
@@ -62,3 +60,15 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_m74_gam_agar_score20.py
+  action: RESOLVED_TOGO_M74_GAM_AGAR_SCORE20
+  source: https://togomedium.org/medium/M74
+  notes: TOGO M74 records 74 g/L GAM agar from Nissui in 1.0 L distilled water; this
+    repair normalizes the imported water amount.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M74

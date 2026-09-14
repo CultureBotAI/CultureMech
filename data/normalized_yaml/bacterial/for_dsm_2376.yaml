@@ -234,3 +234,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_293_propionigenium_score10.py
+  action: RESOLVED_KOMODO_293_PROPIONIGENIUM_TOPOLOGY
+  changes: Linked under KOMODO Medium 293
+  source: KOMODO Medium 293.1
+  notes: KOMODO Medium 293.1 applies PROPIONIGENIUM MODESTUM MEDIUM to DSM 2376.
+parent_media:
+  path: data/normalized_yaml/bacterial/propionigenium_modestum_medium.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004756
+  name: propionigenium_modestum_medium
+  notes: KOMODO Medium 293 is the PROPIONIGENIUM MODESTUM MEDIUM base.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
+variant_modifications:
+- KOMODO Medium 293.1 applies PROPIONIGENIUM MODESTUM MEDIUM to DSM 2376.
+data_quality_flags:
+- ingredients_curated

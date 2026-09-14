@@ -113,12 +113,35 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_612.yaml
-  relationship: SOURCE_DUPLICATE
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_35_thiobacillus_topology_score10.py
+  action: RESOLVED_KOMODO_35_THIOBACILLUS_TOPOLOGY
+  changes: Promoted KOMODO Medium 35 to the 35/35a family parent
+  source: KOMODO Medium 35, 35.1, 35a, 35a.1; MediaDive Medium 35a
+  notes: Moved the family root from strain-specific KOMODO Medium 35.1 to base KOMODO
+    Medium 35 and reclassified pH 6.0 35a records as PH_VARIANT children.
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_612.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:005064
   name: for_dsm_612
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+  notes: KOMODO Medium 35.1 applies the pH 4.2 THIOBACILLUS THIOOXIDANS MEDIUM formulation
+    for DSM 612.
+- path: data/normalized_yaml/bacterial/for_dsm_22701.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:005080
+  name: for_dsm_22701
+  notes: KOMODO Medium 35a.1 applies THIOBACILLUS THIOOXIDANS MEDIUM at pH 6 for DSM
+    22701.
+- path: data/normalized_yaml/bacterial/thiomonas_intermedia_medium.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:005081
+  name: thiomonas_intermedia_medium
+  notes: KOMODO Medium 35a applies THIOBACILLUS THIOOXIDANS MEDIUM at pH 6 for Thiomonas
+    intermedia.
+- path: data/normalized_yaml/bacterial/thiomonas_medium.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:001460
+  name: thiomonas_medium
+  notes: MediaDive Medium 35a applies THIOBACILLUS THIOOXIDANS MEDIUM at pH 6 for
+    Thiomonas medium.

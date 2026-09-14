@@ -202,19 +202,24 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1197_rhodobacter_score10.py
+  action: RESOLVED_KOMODO_1197_RHODOBACTER_THIOCAPSA_TOPOLOGY
+  changes: Reclassified KOMODO Medium 1197.1 and 1197.2 as strain variants
+  source: KOMODO Medium 1197, 1197.1, and 1197.2
+  notes: Linked the strain-specific KOMODO Medium 1197.1 and 1197.2 records under
+    the KOMODO Medium 1197 RHODOBACTER/THIOCAPSA base.
 variant_children:
 - path: data/normalized_yaml/bacterial/for_dsm_18774.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003933
   name: for_dsm_18774
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 1197.1 applies RHODOBACTER/THIOCAPSA medium to DSM 18774.
 - path: data/normalized_yaml/bacterial/for_dsm_19780.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003934
   name: for_dsm_19780
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 1197.2 applies RHODOBACTER/THIOCAPSA medium to DSM 19780.
 parent_media:
   path: data/normalized_yaml/bacterial/rhodobacter_thiocapsa_medium.yaml
   relationship: SOURCE_DUPLICATE

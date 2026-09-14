@@ -4,7 +4,7 @@ original_name: TCG medium
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: SOLID_AGAR
+physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 1009
   term:
@@ -17,34 +17,35 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  source: KOMODO Medium 1009 / DSMZ Medium 1009
+  notes: KOMODO Medium 1009 / DSMZ Medium 1009 lists tryptone as an undefined digest;
+    it is not reducible to one ChEBI molecule.
 - preferred_term: Casitone
   concentration:
     value: '5'
     unit: G_PER_L
+  source: KOMODO Medium 1009 / DSMZ Medium 1009
+  notes: KOMODO Medium 1009 / DSMZ Medium 1009 lists Casitone as an undefined digest;
+    it is not reducible to one ChEBI molecule.
 - preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: glucose
   concentration:
     value: '4'
     unit: G_PER_L
+  source: KOMODO Medium 1009 / DSMZ Medium 1009
+  notes: KOMODO Medium 1009 / DSMZ Medium 1009 lists 4 g glucose.
+  term:
+    id: CHEBI:17234
+    label: glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
-- preferred_term: Sea water
+- preferred_term: Seawater (see below)
   concentration:
     value: '1000'
-    unit: G_PER_L
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
+    unit: ML_PER_L
+  source: KOMODO Medium 1009 / DSMZ Medium 1009
+  notes: KOMODO Medium 1009 / DSMZ Medium 1009 lists 1.0 L seawater and defines artificial
+    seawater as 32 g sea salt in 1000 mL distilled water.
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,11 +75,28 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_tcg_a1_seawater_score15.py
+  action: RESOLVED_TCG_A1_SEAWATER_SCORE15
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1009;
+    http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1009.pdf
+  notes: KOMODO Medium 1009 points to DSMZ Medium 1009. Both list tryptone, Casitone,
+    glucose, and seawater as the recipe components; neither source lists the imported
+    20 g/L agar row.
 parent_media:
-  path: data/normalized_yaml/bacterial/JCM_J720_TCG_MEDIUM.yaml
-  relationship: CONCENTRATION_VARIANT
-  id: CultureMech:003065
+  path: data/normalized_yaml/bacterial/tcg_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000425
   name: tcg_medium
-variant_relationship: CONCENTRATION_VARIANT
+  notes: KOMODO Medium 1009 points to the same DSMZ Medium 1009 formulation.
+variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient identity signature but concentration signature differs from parent.
+- Source-catalogue duplicate of DSMZ Medium 1009; KOMODO Medium 1009 preserves the
+  same formulation.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1009
+- reference: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1009.pdf

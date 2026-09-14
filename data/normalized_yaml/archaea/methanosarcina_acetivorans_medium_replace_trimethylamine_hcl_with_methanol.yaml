@@ -11,9 +11,386 @@ media_term:
   term:
     id: komodo.medium:304_replace_Trimethylamine-HCl_with_Methanol
     label: METHANOSARCINA ACETIVORANS medium_replace_Trimethylamine-HCl_with_Methanol
-notes: 'Source: KOMODO ModelSEED | ID: 304_replace_Trimethylamine-HCl_with_Methanol
-  | DSMZ Medium: 304 (mediadive.medium:304) | Aerobic: Yes'
-ingredients: []
+notes: Archived DSMZ Medium 304 defines METHANOSARCINA ACETIVORANS MEDIUM with base
+  salts, yeast extract, 10 mL DSMZ Medium 141 trace element solution, resazurin, trimethylamine
+  hydrochloride or methanol, cysteine hydrochloride hydrate, sodium sulfide nonahydrate,
+  80:20 N2/CO2, and pH 7.0; the live KOMODO replacement table selects the methanol
+  branch.
+ingredients:
+- preferred_term: NaCl
+  source: Archived DSMZ Medium 304
+  notes: Archived DSMZ Medium 304 lists 23.40 g NaCl and adds 10 mL of the Archived
+    DSMZ Medium 141 trace element solution containing 1.00 g/L NaCl to 1000 mL water,
+    yielding 23.178218 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '23.178218'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: MgSO4 x 7 H2O
+  source: Archived DSMZ Medium 304
+  notes: Archived DSMZ Medium 304 lists 9.45 g MgSO4 x 7 H2O and adds 10 mL of the
+    Archived DSMZ Medium 141 trace element solution containing 3.00 g/L MgSO4 x 7
+    H2O to 1000 mL water, yielding 9.386139 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '9.386139'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: Na2CO3
+  source: Archived DSMZ Medium 304
+  notes: Archived DSMZ Medium 304 lists 5.00 g Na2CO3 and 10 mL of trace element solution
+    in 1000 mL water, yielding 4.950495 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '4.950495'
+    unit: G_PER_L
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+- preferred_term: Yeast extract
+  source: Archived DSMZ Medium 304
+  notes: Archived DSMZ Medium 304 lists 1.00 g Yeast extract and 10 mL of trace element
+    solution in 1000 mL water, yielding 0.990099 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '0.990099'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: NH4Cl
+  source: Archived DSMZ Medium 304
+  notes: Archived DSMZ Medium 304 lists 1.00 g NH4Cl and 10 mL of trace element solution
+    in 1000 mL water, yielding 0.990099 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '0.990099'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: KCl
+  source: Archived DSMZ Medium 304
+  notes: Archived DSMZ Medium 304 lists 0.80 g KCl and 10 mL of trace element solution
+    in 1000 mL water, yielding 0.792079 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '0.792079'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: CaCl2 x 2 H2O
+  source: Archived DSMZ Medium 304
+  notes: Archived DSMZ Medium 304 lists 0.14 g CaCl2 x 2 H2O and adds 10 mL of the
+    Archived DSMZ Medium 141 trace element solution containing 0.10 g/L CaCl2 x 2
+    H2O to 1000 mL water, yielding 0.139604 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '0.139604'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Na2HPO4
+  source: Archived DSMZ Medium 304
+  notes: Archived DSMZ Medium 304 lists 0.60 g Na2HPO4 and 10 mL of trace element
+    solution in 1000 mL water, yielding 0.594059 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '0.594059'
+    unit: G_PER_L
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+- preferred_term: Nitrilotriacetic acid
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 304 adds 10 mL of the Archived DSMZ Medium 141 trace
+    element solution to 1000 mL water; the stock contains 1.50 g/L Nitrilotriacetic
+    acid, yielding 0.014851 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '0.014851'
+    unit: G_PER_L
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+- preferred_term: MnSO4 x H2O
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 304 adds 10 mL of the Archived DSMZ Medium 141 trace
+    element solution to 1000 mL water; the stock contains 0.50 g/L MnSO4 x H2O, yielding
+    0.004950 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '0.004950'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+- preferred_term: FeSO4 x 7 H2O
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 304 adds 10 mL of the Archived DSMZ Medium 141 trace
+    element solution to 1000 mL water; the stock contains 0.10 g/L FeSO4 x 7 H2O,
+    yielding 0.000990 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '0.000990'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+- preferred_term: CoSO4 x 7 H2O
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 304 adds 10 mL of the Archived DSMZ Medium 141 trace
+    element solution to 1000 mL water; the stock contains 0.18 g/L CoSO4 x 7 H2O,
+    yielding 0.001782 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '0.001782'
+    unit: G_PER_L
+  term:
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
+- preferred_term: ZnSO4 x 7 H2O
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 304 adds 10 mL of the Archived DSMZ Medium 141 trace
+    element solution to 1000 mL water; the stock contains 0.18 g/L ZnSO4 x 7 H2O,
+    yielding 0.001782 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '0.001782'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: CuSO4 x 5 H2O
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 304 adds 10 mL of the Archived DSMZ Medium 141 trace
+    element solution to 1000 mL water; the stock contains 0.01 g/L CuSO4 x 5 H2O,
+    yielding 0.0000990 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '0.0000990'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+- preferred_term: KAl(SO4)2 x 12 H2O
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 304 adds 10 mL of the Archived DSMZ Medium 141 trace
+    element solution to 1000 mL water; the stock contains 0.02 g/L KAl(SO4)2 x 12
+    H2O, yielding 0.000198 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '0.000198'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+- preferred_term: H3BO3
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 304 adds 10 mL of the Archived DSMZ Medium 141 trace
+    element solution to 1000 mL water; the stock contains 0.01 g/L H3BO3, yielding
+    0.0000990 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '0.0000990'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: Na2MoO4 x 2 H2O
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 304 adds 10 mL of the Archived DSMZ Medium 141 trace
+    element solution to 1000 mL water; the stock contains 0.01 g/L Na2MoO4 x 2 H2O,
+    yielding 0.0000990 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '0.0000990'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: NiCl2 x 6 H2O
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 304 adds 10 mL of the Archived DSMZ Medium 141 trace
+    element solution to 1000 mL water; the stock contains 0.03 g/L NiCl2 x 6 H2O,
+    yielding 0.000297 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '0.000297'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+- preferred_term: Na2SeO3 x 5 H2O
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 304 adds 10 mL of the Archived DSMZ Medium 141 trace
+    element solution to 1000 mL water; the stock contains 0.30 mg/L Na2SeO3 x 5 H2O,
+    yielding 0.000002970 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '0.000002970'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+- preferred_term: Resazurin
+  source: Archived DSMZ Medium 304
+  notes: Archived DSMZ Medium 304 lists 1.00 mg Resazurin and 10 mL of trace element
+    solution in 1000 mL water, yielding 0.000990 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '0.000990'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Cysteine-HCl x H2O
+  source: Archived DSMZ Medium 304
+  notes: Archived DSMZ Medium 304 lists 0.25 g Cysteine-HCl x H2O and 10 mL of trace
+    element solution in 1000 mL water, yielding 0.247525 g/L in the 1010 mL final
+    formulation.
+  concentration:
+    value: '0.247525'
+    unit: G_PER_L
+  term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+- preferred_term: Na2S x 9 H2O
+  source: Archived DSMZ Medium 304
+  notes: Archived DSMZ Medium 304 lists 0.25 g Na2S x 9 H2O and 10 mL of trace element
+    solution in 1000 mL water, yielding 0.247525 g/L in the 1010 mL final formulation.
+  concentration:
+    value: '0.247525'
+    unit: G_PER_L
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+- preferred_term: Methanol
+  source: Archived DSMZ Medium 304
+  notes: Archived DSMZ Medium 304 lists Methanol as an alternative substrate for the
+    medium and live KOMODO selects this branch, yielding 4.950495 g/L in the 1010
+    mL final formulation.
+  concentration:
+    value: '4.950495'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17790
+    label: methanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
+    label: methanol
+- preferred_term: HCl
+  source: Archived DSMZ Medium 304
+  notes: Archived DSMZ Medium 304 adjusts the final medium to pH 7.0 with hydrochloric
+    acid.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+- preferred_term: KOH
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 141 trace element solution adjusts the trace element
+    solution with KOH.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+- preferred_term: N2
+  source: Archived DSMZ Medium 304
+  notes: Archived DSMZ Medium 304 prepares the medium under 80% N2 and 20% CO2.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: dinitrogen
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17997
+    label: dinitrogen
+- preferred_term: CO2
+  source: Archived DSMZ Medium 304
+  notes: Archived DSMZ Medium 304 prepares the medium under 80% N2 and 20% CO2.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
+- preferred_term: Distilled water
+  source: Archived DSMZ Medium 304
+  notes: Archived DSMZ Medium 304 lists 1000 mL distilled water before the trace addition.
+  concentration:
+    value: '1000.000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -37,5 +414,19 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_304_score30.py
+  action: RESOLVED_KOMODO_304_SCORE30
+  source: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium304.pdf
+  notes: Archived DSMZ Medium 304 defines METHANOSARCINA ACETIVORANS MEDIUM with base
+    salts, yeast extract, 10 mL DSMZ Medium 141 trace element solution, resazurin,
+    trimethylamine hydrochloride or methanol, cysteine hydrochloride hydrate, sodium
+    sulfide nonahydrate, 80:20 N2/CO2, and pH 7.0; the live KOMODO replacement table
+    selects the methanol branch.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=304_replace_Trimethylamine-HCl_with_Methanol
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium304.pdf
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf

@@ -3,42 +3,61 @@ name: low_salt_luria_broth_lslb
 original_name: Low-Salt Luria-Broth (LSLB)
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
+temperature_value: 28.0
+aeration: rotational shaking at 225 rpm
 ingredients:
+- preferred_term: Tryptone (VWR, J859-500G)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  source: TOGO M2900
+  notes: TOGO M2900 lists 10 g/L Tryptone (VWR, J859-500G), a source-disclosed digest
+    product not reducible to one ChEBI molecule.
+- preferred_term: Yeast extract (BD, 212750)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  source: TOGO M2900
+  notes: TOGO M2900 lists 5 g/L Yeast Extract (BD, 212750), a source-disclosed yeast
+    extract product.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  source: TOGO M2900
+  notes: TOGO M2900 lists 5 g/L NaCl (VWR, X190-1KG).
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2900
+  notes: TOGO M2900 lists 1 L distilled water.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: NaCl (VWR, X190-1KG)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component'
-- preferred_term: Yeast Extract (BD, 212750)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Tryptone (VWR, J859-500G)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Simple component'
 media_term:
   preferred_term: TOGO Medium M2900
   term:
     id: TOGO:M2900
     label: Low-Salt Luria-Broth (LSLB)
-notes: 'Source: https://togomedium.org/medium/M2900'
+notes: TOGO M2900 lists Low-Salt Luria-Broth (LSLB) prepared with 10 g Tryptone (VWR,
+  J859-500G), 5 g Yeast Extract (BD, 212750), and 5 g NaCl (VWR, X190-1KG) per liter
+  of water. TOGO also states that liquid LSLB cultures were incubated at 28 C with
+  rotational shaking at 225 rpm.
 applications:
 - Microbial cultivation
 curation_history:
@@ -69,3 +88,26 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2900_lslb_score15.py
+  action: RESOLVED_TOGO_M2900_LSLB_SCORE15
+  source: https://togomedium.org/medium/M2900; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2900
+  notes: TOGO M2900 lists Low-Salt Luria-Broth (LSLB) prepared with 10 g Tryptone
+    (VWR, J859-500G), 5 g Yeast Extract (BD, 212750), and 5 g NaCl (VWR, X190-1KG)
+    per liter of water. TOGO also states that liquid LSLB cultures were incubated
+    at 28 C with rotational shaking at 225 rpm. Corrected the imported distilled-water
+    row from a g/L artifact to 1000 ml/L, normalized NaCl to sodium chloride, grounded
+    water, NaCl, and yeast extract, and recorded the TOGO liquid-culture incubation
+    condition.
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve 10 g tryptone, 5 g yeast extract, and 5 g NaCl in 1 L distilled
+    water.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2900
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2900

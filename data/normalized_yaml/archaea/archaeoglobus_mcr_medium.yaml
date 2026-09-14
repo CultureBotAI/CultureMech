@@ -10,18 +10,23 @@ media_term:
   term:
     id: mediadive.medium:J1195
     label: ARCHAEOGLOBUS MCR MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1195
-
-  Composition recovery source: https://togomedium.org/medium/M1280 (TOGO snapshot
-  of JCM medium J1195).'
+notes: 'JCM Medium J1195 is a supplemented parent-medium cross-reference: one liter
+  of JCM Medium J1194 Methanothermococcus HHB Medium supplemented with 2.8 g/L Na2SO4.
+  CultureMech recovered the J1195 row from the source-equivalent TOGO M1280 snapshot
+  and keeps the J1194 base as a CultureMech parent-media link instead of flattening
+  it into this record.'
 ingredients:
 - preferred_term: Na2SO4
   concentration:
     value: '2.8'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO Medium M1280
+  notes: TOGO M1280 supplements one liter of Methanothermococcus HHB Medium with 2.8
+    g/L Na2SO4.
   term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32149
     label: sodium sulfate
 preparation_steps:
@@ -76,10 +81,38 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_archaeoglobus_mcr_score20.py
+  action: RESOLVED_ARCHAEOGLOBUS_MCR_SCORE20
+  changes: Resolved Archaeoglobus MCR parent-medium cross-reference
+  source: https://togomedium.org/medium/M1280
+  notes: Grounded the Methanothermococcus HHB parent-medium wrapper and preserved
+    the sparse supplemented-variant graph.
 solutions:
 - preferred_term: METHANOTHERMOCOCCUS HHB MEDIUM (see Medium [M1279])
   composition: []
   concentration:
     value: '1'
     unit: L
-  notes: Defined in TOGO medium M1279.
+  notes: JCM Medium J1195 uses one liter of JCM Medium J1194 Methanothermococcus HHB
+    Medium as the base medium; CultureMech recovered this J1195 row from the source-equivalent
+    TOGO M1280 snapshot.
+  culturemech_term:
+    id: CultureMech:002361
+    label: METHANOTHERMOCOCCUS HHB MEDIUM
+parent_media:
+  path: data/normalized_yaml/archaea/methanothermococcus_hhb_medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:002361
+  name: methanothermococcus_hhb_medium
+  notes: JCM Medium J1195 uses JCM Medium J1194 Methanothermococcus HHB Medium and
+    supplements it with 2.8 g/L Na2SO4; CultureMech recovered the J1195 row from the
+    source-equivalent TOGO M1280 snapshot.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Supplements JCM Medium J1194 Methanothermococcus HHB Medium with 2.8 g/L Na2SO4.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M1280

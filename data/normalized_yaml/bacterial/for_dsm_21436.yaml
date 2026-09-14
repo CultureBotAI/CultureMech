@@ -251,15 +251,21 @@ curation_history:
     MediaDive stock by name AND value; bulk ingredients sharing a name were left in
     place (#150).'
   changes: Nested 4 ingredient(s) under 1 solution(s); ingredients 23 -> 19
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_81_heterotrophic_score10.py
+  action: RESOLVED_KOMODO_81_DSM_21436_STRAIN_VARIANT
+  changes: Linked under KOMODO Medium 81.3 For heterotrophic growth
+  source: KOMODO Medium 81.4
+  notes: KOMODO Medium 81.4 applies For heterotrophic growth for DSM 21436.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_81-3_For_heterotrophic_growth.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006531
   name: for_heterotrophic_growth
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 81.3 is the For heterotrophic growth parent.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 81.4 applies For heterotrophic growth for DSM 21436.
 solutions:
 - preferred_term: Standard vitamin solution
   composition:
@@ -317,3 +323,5 @@ solutions:
   preparation_notes: 'Stock prepared in 100 ml. Composition and addition volume NOT
     asserted: proposed as 5 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
     (#150).'
+data_quality_flags:
+- ingredients_curated

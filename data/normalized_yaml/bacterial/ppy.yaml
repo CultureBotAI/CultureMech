@@ -10,24 +10,52 @@ media_term:
   term:
     id: mediadive.medium:C81
     label: PPY
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_PPY.pdf'
+notes: CCAP prepares PPY from 20 g/L proteose peptone and 2.5 g/L yeast extract made
+  up to 1 L with deionized water and autoclaved.
 ingredients:
 - preferred_term: Proteose peptone
   concentration:
     value: '20'
     unit: G_PER_L
+  term:
+    id: MICRO:0000180
+    label: Proteose peptone
+  notes: CCAP lists 20.0 g/L Proteose peptone.
+  nutritional_roles:
+  - CARBON_SOURCE
+  - NITROGEN_SOURCE
 - preferred_term: Yeast extract
   concentration:
     value: '2.5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  notes: CCAP lists 2.5 g/L Yeast extract.
+  nutritional_roles:
+  - CARBON_SOURCE
+  - NITROGEN_SOURCE
+  - VITAMIN_SOURCE
+- preferred_term: Deionized water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: CCAP makes the final medium up to 1 litre with deionized water.
+solutions: []
 preparation_steps:
 - step_number: 1
-  action: AUTOCLAVE
-  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
-    minutes.
-- step_number: 2
   action: MIX
-  description: Note. For test tubes, only use paper or pink silicone bungs.
+  description: Dissolve proteose peptone and yeast extract in deionized water and
+    make up to 1 L.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 15 psi for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -43,3 +71,20 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PPY" to "ppy" for consistent matching
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_ccap_bacterial_score40.py
+  action: RESOLVED_SCORE40_BACTERIAL_CCAP_GRAPH
+  changes: Resolved score-40 bacterial CCAP recipe graph
+  source: https://www.ccap.ac.uk/wp-content/uploads/MR_PPY.pdf
+  notes: CCAP prepares PPY from 20 g/L proteose peptone and 2.5 g/L yeast extract
+    made up to 1 L with deionized water and autoclaved.
+sterilization:
+  method: AUTOCLAVE
+  pressure: 15
+  duration: 15 minutes
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: CCAP:PPY
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_PPY.pdf

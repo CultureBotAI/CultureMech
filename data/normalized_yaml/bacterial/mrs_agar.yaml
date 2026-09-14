@@ -8,14 +8,17 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: MRS agar (Oxoid)
   concentration:
-    value: '1'
-    unit: G_PER_L
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2940
+  notes: TOGO M2940 lists one liter of MRS agar from Oxoid.
 media_term:
   preferred_term: TOGO Medium M2940
   term:
     id: TOGO:M2940
     label: MRS agar
-notes: 'Source: https://togomedium.org/medium/M2940'
+notes: TOGO M2940 records routine growth at 37 C on one liter of MRS agar from Oxoid;
+  the source does not disclose the product's internal formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -31,3 +34,16 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MRS agar" to "mrs_agar" for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_products_more_score40.py
+  action: RESOLVED_TOGO_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO product graph
+  source: https://togomedium.org/medium/M2940
+  notes: TOGO M2940 records routine growth at 37 C on one liter of MRS agar from Oxoid;
+    the source does not disclose the product's internal formulation.
+temperature_value: 37.0
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2940

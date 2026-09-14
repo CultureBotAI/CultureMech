@@ -214,12 +214,22 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1129_phototrophic_topology_score10.py
+  action: RESOLVED_KOMODO_1129_PHOTOTROPHIC_TOPOLOGY
+  changes: Linked under PHOTOTROPHIC MEDIUM
+  source: MediaDive Medium 1129
+  notes: MediaDive Medium 1129 exactly matches the KOMODO Medium 1129 PHOTOTROPHIC
+    MEDIUM base.
 parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_17935.yaml
+  path: data/normalized_yaml/bacterial/phototrophic_medium.yaml
   relationship: SOURCE_DUPLICATE
-  id: CultureMech:003833
-  name: for_dsm_17935
+  id: CultureMech:003838
+  name: phototrophic_medium
+  notes: KOMODO Medium 1129 is the PHOTOTROPHIC MEDIUM base.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; reviewed as duplicate phototrophic
-  medium source record.
+- MediaDive Medium 1129 exactly matches the KOMODO Medium 1129 PHOTOTROPHIC MEDIUM
+  base.
+data_quality_flags:
+- ingredients_curated

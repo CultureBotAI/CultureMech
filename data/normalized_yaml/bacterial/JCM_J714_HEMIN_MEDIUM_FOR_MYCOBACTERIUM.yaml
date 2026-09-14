@@ -4,41 +4,80 @@ original_name: HEMIN MEDIUM FOR MYCOBACTERIUM
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J714
   term:
     id: mediadive.medium:J714
     label: HEMIN MEDIUM FOR MYCOBACTERIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=714'
+notes: 'Source: JCM Medium 714 | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=714
+
+
+  JCM Medium 714 supplements JCM Medium 386 with 60 micromol/L hemin solubilized in
+  1 N NaOH.'
 ingredients:
-- preferred_term: Middlebrook 7H10 agar
-  term:
-    id: CHEBI:2509
-    label: agar
+- preferred_term: Middlebrook 7H10 agar (BD-Difco)
   concentration:
-    value: '21.1111'
+    value: '19'
     unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
-  notes: Copied from referenced JCM Medium 386
+  notes: JCM Medium 386 lists this commercial BD-Difco medium base as supplied.
 - preferred_term: Glycerol
-  term:
-    id: CHEBI:17754
-    label: glycerol
   concentration:
     value: '5'
-    unit: G_PER_L
+    unit: ML_PER_L
+  term:
+    id: CHEBI:17754
+    label: glycerol
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
     label: glycerol
-  notes: Copied from referenced JCM Medium 386
+  notes: JCM Medium 386 lists glycerol as 5 ml/L.
+- preferred_term: Distilled water
+  concentration:
+    value: '895'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: JCM Medium 386 uses 895 ml/L distilled water before OADC addition.
+- preferred_term: Middlebrook OADC Enrichment (BD-BBL)
+  concentration:
+    value: '100'
+    unit: ML_PER_L
+  notes: JCM Medium 386 aseptically adds this commercial BD-BBL enrichment.
+- preferred_term: Hemin
+  concentration:
+    value: '60'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:50385
+    label: hemin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
+    label: hemin
+  notes: JCM Medium 714 adds 60 micromol/L hemin solubilized with 1 N NaOH.
 preparation_steps:
 - step_number: 1
+  action: AUTOCLAVE
+  description: Sterilize the Middlebrook 7H10 agar, glycerol, and distilled water
+    at 121 C for 10 min.
+- step_number: 2
+  action: COOL
+  description: Cool to 50-55 C.
+- step_number: 3
   action: MIX
-  description: Middlebrook 7H10 agar with OADC enrichment (see Medium No. 386) with
-    60 ï¿½mol/L of hemin. Hemin is solubilized with 1 N NaOH.
+  description: Aseptically add 100 ml/L Middlebrook OADC Enrichment (BD-BBL), add
+    hemin to 60 micromol/L after solubilizing it with 1 N NaOH, and mix thoroughly.
+parent_media:
+  path: data/normalized_yaml/bacterial/middlebrook_7h10_agar_with_oadc_enrichment.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:002743
+  name: middlebrook_7h10_agar_with_oadc_enrichment
+  notes: Parent JCM Medium 386 for the hemin-supplemented JCM Medium 714 recipe.
+variant_relationship: SUPPLEMENTED_VARIANT
 applications:
 - Microbial cultivation
 curation_history:
@@ -83,5 +122,17 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_middlebrook_hemin_score20.py
+  action: RESOLVED_JCM_MIDDLEBROOK_HEMIN_SCORE20
+  changes: Resolved JCM Medium 386/714 Middlebrook-hemin composition
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=714; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=386
+  notes: Rebuilt the recipe from live JCM Medium 386 and 714 pages.
 data_quality_flags:
 - resolved_reference
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=714
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=386

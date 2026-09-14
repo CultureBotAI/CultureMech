@@ -232,3 +232,36 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_950_onr7a_score10.py
+  action: RESOLVED_KOMODO_950_ONR7A_TOPOLOGY
+  changes: Resolved KOMODO Medium 950 ONR7a child topology
+  source: KOMODO Medium 950.1, 950.2, 950.2_replace_Sodium acetate_with_tetradecane,
+    and 950.2_replace_Sodium acetate_with_Tween 80
+  notes: Moved exact-signature DSM-specific KOMODO 950 ONR7a wrappers and source-token
+    sodium acetate replacement variants under the KOMODO Medium 950 ONR7a base.
+variant_children:
+- path: data/normalized_yaml/bacterial/dsm_13489.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006889
+  name: dsm_13489
+  notes: KOMODO Medium 950.1 applies ONR7a medium to DSM 13489.
+- path: data/normalized_yaml/bacterial/dsm_14919.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006892
+  name: dsm_14919
+  notes: KOMODO Medium 950.2 applies ONR7a medium to DSM 14919.
+- path: data/normalized_yaml/bacterial/dsm_14919_replace_sodium_acetate_with_tetradecane.yaml
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  id: CultureMech:006891
+  name: dsm_14919_replace_sodium_acetate_with_tetradecane
+  notes: KOMODO Medium 950.2_replace_Sodium acetate_with_tetradecane records a DSM
+    14919 ONR7a derivative with Sodium acetate replaced by tetradecane.
+- path: data/normalized_yaml/bacterial/dsm_14919_replace_sodium_acetate_with_tween_80.yaml
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  id: CultureMech:006890
+  name: dsm_14919_replace_sodium_acetate_with_tween_80
+  notes: KOMODO Medium 950.2_replace_Sodium acetate_with_Tween 80 records a DSM 14919
+    ONR7a derivative with Sodium acetate replaced by Tween 80.
+data_quality_flags:
+- ingredients_curated

@@ -5,13 +5,15 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.4
 ingredients:
 - preferred_term: distilled water
   concentration:
-    value: '126'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '630.0'
+    unit: ML_PER_L
+  source: TOGO M2452 / DSMZ Medium 1076b
+  notes: DSMZ Medium 1076b lists 126 ml distilled water per 200 ml for this SP4-Z
+    branch.
   term:
     id: CHEBI:15377
     label: water
@@ -20,9 +22,11 @@ ingredients:
     label: water
 - preferred_term: agar
   concentration:
-    value: '2'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M2452 / DSMZ Medium 1076b
+  notes: DSMZ Medium 1076b lists 2 g agar per 200 ml for agar plates; normalized to
+    10.0 g/L.
   term:
     id: CHEBI:2509
     label: agar
@@ -31,52 +35,99 @@ ingredients:
     label: agar
 - preferred_term: DNA (fish sperm; SERVA)
   concentration:
-    value: '0.04'
+    value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Growth factor'
+  source: TOGO M2452 / DSMZ Medium 1076b
+  notes: DSMZ Medium 1076b lists 0.04 g DNA from fish sperm per 200 ml; normalized
+    to 0.2 g/L.
+  term:
+    id: CHEBI:16991
+    label: deoxyribonucleic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16991
+    label: deoxyribonucleic acid
 - preferred_term: Bacto-Peptone (BD)
   concentration:
-    value: '1'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2452 / DSMZ Medium 1076b
+  notes: DSMZ Medium 1076b lists 1.00 g Bacto-Peptone per 200 ml; normalized to 5.0
+    g/L.
+  term:
+    id: MICRO:0000178
+    label: Peptone
 - preferred_term: Tryptone
   concentration:
-    value: '2'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2452 / DSMZ Medium 1076b
+  notes: DSMZ Medium 1076b lists 2.00 g Tryptone per 200 ml; normalized to 10.0 g/L.
+  term:
+    id: MICRO:0000182
+    label: tryptone
 - preferred_term: PPLO broth
   concentration:
-    value: '0.7'
+    value: '3.5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  source: TOGO M2452 / DSMZ Medium 1076b
+  notes: DSMZ Medium 1076b lists 0.70 g PPLO broth per 200 ml; normalized to 3.5 g/L
+    and retained without an ontology grounding as an opaque complex broth product.
 - preferred_term: Fetal bovine serum (heat-inactivated)
   concentration:
-    value: '17'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+    value: '85.0'
+    unit: ML_PER_L
+  source: TOGO M2452 / DSMZ Medium 1076b
+  notes: DSMZ Medium 1076b lists 17 ml heat-inactivated fetal bovine serum per 200
+    ml; normalized to 85.0 ml/L and retained without an ontology grounding.
 - preferred_term: Yeastolate (BD; 2%, autoclaved)
   concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+    value: '100.0'
+    unit: ML_PER_L
+  source: TOGO M2452 / DSMZ Medium 1076b
+  notes: DSMZ Medium 1076b lists 20 ml 2% autoclaved Yeastolate per 200 ml; normalized
+    to 100.0 ml/L and retained without an ontology grounding as a commercial yeastolate
+    solution.
 - preferred_term: Swine serum (heat-inactivated)
   concentration:
-    value: '17'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source'
+    value: '85.0'
+    unit: ML_PER_L
+  source: TOGO M2452 / DSMZ Medium 1076b
+  notes: DSMZ Medium 1076b lists 17 ml heat-inactivated swine serum per 200 ml; normalized
+    to 85.0 ml/L and retained without an ontology grounding.
 - preferred_term: CMRL-1066 medium (10x concentrated; GIBCO)
   concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Complex component, Defined component'
+    value: '50.0'
+    unit: ML_PER_L
+  source: TOGO M2452 / DSMZ Medium 1076b
+  notes: DSMZ Medium 1076b lists 10 ml 10x CMRL-1066 per 200 ml; normalized to 50.0
+    ml/L and retained without an ontology grounding as an opaque commercial basal
+    medium.
+- preferred_term: Glucose (50% aqueous solution)
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: TOGO M2452 / DSMZ Medium 1076b
+  notes: DSMZ Medium 1076b lists 2 ml of the selected 50% glucose solution per 200
+    ml; normalized to 10.0 ml/L.
+  term:
+    id: CHEBI:17234
+    label: glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: glucose
 media_term:
   preferred_term: TOGO Medium M2452
   term:
     id: TOGO:M2452
     label: SP4-Z Medium
-notes: 'Source: https://togomedium.org/medium/M2452
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1076b.pdf'
+notes: TOGO M2452 / DSMZ Medium 1076b records the DSMZ Medium 1076b SP4-Z branch using
+  glucose as its energy source. DSMZ Medium 1076b is a 200 ml formula that replaces
+  yeast extract from normal SP4 with fish-sperm DNA, adjusts pH to 7.4, autoclaves
+  at 121 degrees C for 15 minutes, aseptically adds CMRL-1066, autoclaved Yeastolate,
+  heat-inactivated fetal bovine serum, and heat-inactivated swine serum, and then
+  adds either glucose or arginine HCl; the two energy sources should not be combined.
+  This agar-plate branch uses 126 ml distilled water per 200 ml, adds 2 g agar, and
+  is held at 55 degrees C before supplements are added.
 applications:
 - Microbial cultivation
 curation_history:
@@ -118,11 +169,50 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-solutions:
-- preferred_term: Glucose (50% aqueous solution)
-  composition: []
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
-  name: Unknown solution
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2450_m2453_sp4z_score15.py
+  action: RESOLVED_TOGO_M2450_M2453_SP4Z_SCORE15
+  source: https://togomedium.org/medium/M2452; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1076b.pdf
+  notes: TOGO M2452 / DSMZ Medium 1076b records the DSMZ Medium 1076b SP4-Z branch
+    using glucose as its energy source. DSMZ Medium 1076b is a 200 ml formula that
+    replaces yeast extract from normal SP4 with fish-sperm DNA, adjusts pH to 7.4,
+    autoclaves at 121 degrees C for 15 minutes, aseptically adds CMRL-1066, autoclaved
+    Yeastolate, heat-inactivated fetal bovine serum, and heat-inactivated swine serum,
+    and then adds either glucose or arginine HCl; the two energy sources should not
+    be combined. This agar-plate branch uses 126 ml distilled water per 200 ml, adds
+    2 g agar, and is held at 55 degrees C before supplements are added. Corrected
+    TOGO's 200 ml source amounts that had been imported as per-liter concentrations,
+    moved the energy-source solution into the ingredient list as a 10.0 ml/L addition,
+    grounded disclosed simple components and protein hydrolysates, kept opaque product
+    and serum additions intentionally unmapped, and linked the record to DSMZ Medium
+    1076b SP4-Z.
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.4.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 degrees C for 15 minutes.
+- step_number: 3
+  action: HEAT
+  description: Hold agar medium at 55 degrees C before adding supplements.
+- step_number: 4
+  action: MIX
+  description: Add CMRL-1066 medium, autoclaved Yeastolate, heat-inactivated fetal
+    bovine serum, heat-inactivated swine serum, and the glucose energy source aseptically.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2452
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1076b.pdf
+parent_media:
+  path: data/normalized_yaml/bacterial/sp4_z_medium.yaml
+  relationship: DERIVED_FROM
+  id: CultureMech:000510
+  name: sp4_z_medium
+  notes: TOGO M2452 records the glucose agar-plate branch of DSMZ SP4-Z.
+variant_relationship: DERIVED_FROM
+variant_modifications:
+- Selects the glucose energy-source and agar-plate branches.

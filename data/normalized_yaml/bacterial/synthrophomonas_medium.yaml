@@ -332,6 +332,11 @@ curation_history:
     @ 1 ml/l. Each moved component matched the MediaDive stock by name AND value;
     bulk ingredients sharing a name were left in place (#150).'
   changes: Nested 5 ingredient(s) under 2 solution(s); ingredients 31 -> 26
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_bacterial_strain_specific_score45.py
+  action: LINKED_STRAIN_SPECIFIC_SCORE45_CHILDREN
+  changes: Linked score-45 strain-specific child media to source parents
+  notes: Added or refreshed reciprocal parent-child link for bacterial/for_dsm_2805.yaml.
 high_metal: true
 solutions:
 - preferred_term: Trace element solution SL-10
@@ -398,3 +403,16 @@ solutions:
     unit: ML_PER_L
   preparation_notes: Stock prepared in 1000 ml; added at 1 ml per litre of medium.
     Composition and volume from MediaDive (#150).
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_2805.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004855
+  name: for_dsm_2805
+  notes: Substitutes Na-propionate for DSMZ Medium 212 Na-butyrate. Adds D-Glucose
+    to the DSM 2805 strain-specific formulation.
+  evidence:
+  - reference: https://bacdive.dsmz.de/strain/16667
+    supports: SUPPORT
+    explanation: BacDive lists Syntrophobacter wolinii DSM 2805 as cultivated on SYNTHROPHOMONAS
+      MEDIUM, DSMZ Medium 212 with strain-specific modifications, at 35 C under anaerobic
+      conditions.

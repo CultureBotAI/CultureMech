@@ -1,54 +1,136 @@
 id: CultureMech:007449
-name: '1003'
-original_name: '1003'
+name: Acidimicrobium Medium
+original_name: Acidimicrobium Medium
 category: bacterial
 description: 1003. NBRC 1002.
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: NBRC Medium 1002
+  term:
+    id: nbrc.medium:1002
+    label: NBRC Medium 1002
+ph_value: 2.0
 ingredients:
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
+  source: NBRC Medium 1002
+  notes: NBRC Medium 1002 lists 0.5 g MgSO4·7H2O.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.4'
     unit: G_PER_L
+  source: NBRC Medium 1002
+  notes: NBRC Medium 1002 lists 0.4 g (NH4)2SO4.
   term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term:
     id: CHEBI:62946
     label: ammonium sulfate
 - preferred_term: K2HPO4
   concentration:
     value: '0.2'
     unit: G_PER_L
+  source: NBRC Medium 1002
+  notes: NBRC Medium 1002 lists 0.2 g K2HPO4.
   term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
 - preferred_term: KCl
   concentration:
     value: '0.1'
     unit: G_PER_L
+  source: NBRC Medium 1002
+  notes: NBRC Medium 1002 lists 0.1 g KCl.
   term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
     id: CHEBI:32588
     label: potassium chloride
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: L
+  source: NBRC Medium 1002
+  notes: NBRC Medium 1002 lists 1 L distilled water.
   term:
     id: CHEBI:15377
     label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: H2SO4
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: NBRC Medium 1002
+  notes: NBRC Medium 1002 adjusts the base medium to pH 2.0 with H2SO4 and the autotrophic
+    ferrous sulfate variant to pH 1.7 with H2SO4.
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
+- preferred_term: FeSO4·7H2O
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: NBRC Medium 1002
+  notes: NBRC Medium 1002 lists 10 mg/L FeSO4·7H2O for heterotrophic growth on yeast
+    extract and 13.9 g/L FeSO4·7H2O for autotrophic growth on ferrous sulfate.
+  term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  source: NBRC Medium 1002
+  notes: NBRC Medium 1002 adds yeast extract from a sterile stock solution to 0.25
+    g/L final concentration for heterotrophic growth.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  description: Dissolve MgSO4·7H2O, (NH4)2SO4, K2HPO4, and KCl in 1 L distilled water.
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH if needed
+  description: Adjust the base medium to pH 2.0 with H2SO4.
 - step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: MIX
+  description: For heterotrophic growth on yeast extract, add 10 mg/L FeSO4·7H2O to
+    the medium.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave the medium before adding sterile yeast extract.
+- step_number: 5
+  action: MIX
+  description: For heterotrophic growth on yeast extract, add sterile yeast extract
+    stock solution after autoclaving to 0.25 g/L final concentration.
+- step_number: 6
+  action: ADJUST_PH
+  description: For autotrophic growth on ferrous sulfate, add 13.9 g/L FeSO4·7H2O
+    and adjust medium pH to 1.7 with H2SO4 prior to autoclaving.
 curation_history:
 - timestamp: '2026-02-20T00:22:36.004823Z'
   curator: nbrc-import
@@ -86,8 +168,52 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 4 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
-notes: Adjust pH to 2.0 with H2SO4. Heterotrophic growth on yeast extract Add 10 mg/l
-  of FeSO4·7H2O to the medium. After autoclaving, add yeast extract from sterile stock
-  solution to final concentration of 0.25 g/l. Autotrophic growth on ferrous sulfate
-  Add 13.9 g/l of FeSO4·7H2O to the medium, and adjust medium pH to 1.7 with H2SO4
-  prior to autoclaving.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_nbrc_1003_score15.py
+  action: RESOLVED_NBRC_1003_SCORE15
+  changes: Grounded recovered NBRC Medium 1002 Acidimicrobium formula
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002
+  notes: Added the NBRC Medium 1002 source term, grounded the recovered Acidimicrobium
+    Medium formula, and converted its pH, heterotrophic, and autotrophic source prose
+    into structured preparation and variant fields.
+notes: 'Source: NBRC Medium 1002 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002
+
+
+  NBRC lists Acidimicrobium Medium with MgSO4·7H2O, (NH4)2SO4, K2HPO4, KCl, and distilled
+  water, adjusts the base medium to pH 2.0 with H2SO4, and provides heterotrophic
+  yeast-extract and autotrophic ferrous-sulfate growth modes.'
+sterilization:
+  method: AUTOCLAVE
+variants:
+- name: nbrc_1002_heterotrophic_yeast_extract
+  relationship: SUPPLEMENTED_VARIANT
+  description: Heterotrophic NBRC Medium 1002 condition supplemented with ferrous
+    sulfate heptahydrate and post-autoclave yeast extract.
+  modifications:
+  - Add 10 mg/L FeSO4·7H2O to the medium.
+  - After autoclaving, add yeast extract from a sterile stock solution to 0.25 g/L
+    final concentration.
+  purpose: Heterotrophic growth on yeast extract.
+  evidence:
+  - reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002
+    supports: SUPPORT
+    explanation: The NBRC Medium 1002 catalogue entry lists this separate heterotrophic
+      growth condition.
+- name: nbrc_1002_autotrophic_ferrous_sulfate
+  relationship: SUPPLEMENTED_VARIANT
+  description: Autotrophic NBRC Medium 1002 condition supplemented with a high ferrous
+    sulfate heptahydrate concentration and acidified to pH 1.7.
+  modifications:
+  - Add 13.9 g/L FeSO4·7H2O to the medium.
+  - Adjust medium pH to 1.7 with H2SO4 prior to autoclaving.
+  purpose: Autotrophic growth on ferrous sulfate.
+  evidence:
+  - reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002
+    supports: SUPPORT
+    explanation: The NBRC Medium 1002 catalogue entry lists this separate autotrophic
+      growth condition.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002

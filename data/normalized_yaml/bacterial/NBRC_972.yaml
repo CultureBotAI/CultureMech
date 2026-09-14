@@ -1,17 +1,25 @@
 id: CultureMech:007509
-name: '972'
-original_name: '972'
+name: Pseudomonas saccharophila medium
+original_name: Pseudomonas saccharophila medium
 category: bacterial
 description: 972. NBRC 971.
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: NBRC Medium 971
+  term:
+    id: nbrc.medium:971
+    label: NBRC Medium 971
 ingredients:
 - preferred_term: KH2PO4
   concentration:
     value: '4.4'
     unit: G_PER_L
   term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
 - preferred_term: Na2HPO4
@@ -21,6 +29,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -28,10 +39,19 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: Solution A*
   concentration:
     value: '10'
@@ -47,20 +67,34 @@ ingredients:
   term:
     id: CHEBI:15377
     label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar (if needed)
   concentration:
     value: '20'
     unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  action: MIX
+  description: Prepare the basal ingredients with KH2PO4, Na2HPO4, NH4Cl, MgSO4·7H2O,
+    distilled water, and agar if needed; leave pH unadjusted.
 - step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
+  action: AUTOCLAVE
+  description: Autoclave the basal ingredients.
 - step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: AUTOCLAVE
+  description: Autoclave Solution A and Solution B separately.
+- step_number: 4
+  action: MIX
+  description: After cooling, add Solution A and Solution B to the other autoclaved
+    ingredients.
 curation_history:
 - timestamp: '2026-02-20T00:22:35.999312Z'
   curator: nbrc-import
@@ -98,6 +132,14 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 8 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_nbrc_972_score15.py
+  action: RESOLVED_NBRC_972_SCORE15
+  changes: Grounded recovered NBRC Medium 971 formula
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=971
+  notes: Added the NBRC Medium 971 source term and official title, grounded the recovered
+    formula and stocks, replaced generic preparation instructions with the source-specific
+    separate autoclaving workflow, and added the official NBRC reference.
 solutions:
 - preferred_term: Solution A.
   composition:
@@ -108,15 +150,27 @@ solutions:
     term:
       id: CHEBI:31604
       label: ferric ammonium citrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31604
+      label: ferric ammonium citrate
   - preferred_term: CaCl2
     concentration:
       value: '0.5'
       unit: G_PER_L
+    term:
+      id: CHEBI:3312
+      label: calcium dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:3312
+      label: calcium dichloride
   - preferred_term: Distilled water
     concentration:
       value: '1'
       unit: L
     term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
       id: CHEBI:15377
       label: water
   name: Solution A.
@@ -129,6 +183,9 @@ solutions:
     term:
       id: CHEBI:17992
       label: sucrose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17992
+      label: sucrose
   - preferred_term: Distilled water
     concentration:
       value: '1'
@@ -136,6 +193,20 @@ solutions:
     term:
       id: CHEBI:15377
       label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
   name: Solution B.
-notes: pH unadjusted Solution A and B are autoclaved separately and add to other autoclaved
-  ingredients after cooling.
+notes: 'Source: NBRC Medium 971 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=971
+
+
+  NBRC lists Pseudomonas saccharophila medium with KH2PO4, Na2HPO4, NH4Cl, MgSO4·7H2O,
+  Solution A, Solution B, distilled water, and agar if needed. NBRC marks the pH as
+  unadjusted and instructs separately autoclaving Solution A and Solution B before
+  adding them to other autoclaved ingredients after cooling.'
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=971

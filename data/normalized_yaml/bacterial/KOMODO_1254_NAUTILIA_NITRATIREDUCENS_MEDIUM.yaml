@@ -11,9 +11,426 @@ media_term:
   term:
     id: komodo.medium:1254
     label: NAUTILIA NITRATIREDUCENS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1254 | DSMZ Medium: 1254 (mediadive.medium:1254)
-  | Aerobic: Yes'
-ingredients: []
+notes: Archived DSMZ Medium 1254 defines NAUTILIA NITRATIREDUCENS MEDIUM as a defined
+  seawater salts formulation with 10 mL DSMZ Medium 141 trace elements, resazurin,
+  KNO3, PIPES, and Na2S under 80:20 H2/CO2 at pH 7.0; this record expands the trace
+  stock into final per-liter components after the 1.010 L trace-adjusted formulation.
+ingredients:
+- preferred_term: NaCl
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 lists 20.00 g NaCl in the main recipe and adds
+    10 mL of Archived DSMZ Medium 141 trace elements containing 1.00 g/L NaCl, yielding
+    19.811881 g/L in the 1010 mL trace-adjusted formulation.
+  concentration:
+    value: '19.811881'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: MgSO4 x 7 H2O
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 lists 3.50 g MgSO4 x 7 H2O in the main recipe and
+    adds 10 mL of Archived DSMZ Medium 141 trace elements containing 3.00 g/L MgSO4
+    x 7 H2O, yielding 3.495050 g/L in the 1010 mL trace-adjusted formulation.
+  concentration:
+    value: '3.495050'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: MgCl2 x 6 H2O
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 lists 2.75 g MgCl2 x 6 H2O with 1000 mL water and
+    10 mL DSMZ Medium 141 trace elements, yielding 2.722772 g/L in the 1010 mL trace-adjusted
+    formulation.
+  concentration:
+    value: '2.722772'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: KCl
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 lists 0.33 g KCl with 1000 mL water and 10 mL DSMZ
+    Medium 141 trace elements, yielding 0.326733 g/L in the 1010 mL trace-adjusted
+    formulation.
+  concentration:
+    value: '0.326733'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: NaBr
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 lists 0.05 g NaBr with 1000 mL water and 10 mL
+    DSMZ Medium 141 trace elements, yielding 0.049505 g/L in the 1010 mL trace-adjusted
+    formulation.
+  concentration:
+    value: '0.049505'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63004
+    label: sodium bromide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63004
+    label: sodium bromide
+- preferred_term: H3BO3
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 lists 0.02 g H3BO3 in the main recipe and adds
+    10 mL of Archived DSMZ Medium 141 trace elements containing 0.01 g/L H3BO3, yielding
+    0.019901 g/L in the 1010 mL trace-adjusted formulation.
+  concentration:
+    value: '0.019901'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: SrCl2 x 6 H2O
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 lists 7.50 mg SrCl2 x 6 H2O with 1000 mL water
+    and 10 mL DSMZ Medium 141 trace elements, yielding 0.007426 g/L in the 1010 mL
+    trace-adjusted formulation.
+  concentration:
+    value: '0.007426'
+    unit: G_PER_L
+  term:
+    id: CHEBI:36385
+    label: strontium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36385
+    label: strontium dichloride hexahydrate
+- preferred_term: (NH4)2SO4
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 lists 0.01 g (NH4)2SO4 with 1000 mL water and 10
+    mL DSMZ Medium 141 trace elements, yielding 0.009901 g/L in the 1010 mL trace-adjusted
+    formulation.
+  concentration:
+    value: '0.009901'
+    unit: G_PER_L
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: KI
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 lists 0.05 mg KI with 1000 mL water and 10 mL DSMZ
+    Medium 141 trace elements, yielding 0.000049505 g/L in the 1010 mL trace-adjusted
+    formulation.
+  concentration:
+    value: '0.000049505'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8346
+    label: potassium iodide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8346
+    label: potassium iodide
+- preferred_term: Na2WO4 x 2 H2O
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 lists 0.10 mg Na2WO4 x 2 H2O with 1000 mL water
+    and 10 mL DSMZ Medium 141 trace elements, yielding 0.000099 g/L in the 1010 mL
+    trace-adjusted formulation.
+  concentration:
+    value: '0.000099'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63939
+    label: sodium tungstate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
+    label: sodium tungstate dihydrate
+- preferred_term: CaCl2 x 2 H2O
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 lists 0.75 g CaCl2 x 2 H2O in the main recipe and
+    adds 10 mL of Archived DSMZ Medium 141 trace elements containing 0.10 g/L CaCl2
+    x 2 H2O, yielding 0.743564 g/L in the 1010 mL trace-adjusted formulation.
+  concentration:
+    value: '0.743564'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: KH2PO4
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 lists 0.50 g KH2PO4 with 1000 mL water and 10 mL
+    DSMZ Medium 141 trace elements, yielding 0.495050 g/L in the 1010 mL trace-adjusted
+    formulation.
+  concentration:
+    value: '0.495050'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: NiCl2 x 6 H2O
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 lists 2.00 mg NiCl2 x 6 H2O in the main recipe
+    and adds 10 mL of Archived DSMZ Medium 141 trace elements containing 0.03 g/L
+    NiCl2 x 6 H2O, yielding 0.002277 g/L in the 1010 mL trace-adjusted formulation.
+  concentration:
+    value: '0.002277'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+- preferred_term: Nitrilotriacetic acid
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 1254 adds 10 mL of Archived DSMZ Medium 141 trace elements
+    containing 1.50 g/L Nitrilotriacetic acid, yielding 0.014851 g/L in the 1010 mL
+    trace-adjusted formulation.
+  concentration:
+    value: '0.014851'
+    unit: G_PER_L
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+- preferred_term: MnSO4 x H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 1254 adds 10 mL of Archived DSMZ Medium 141 trace elements
+    containing 0.50 g/L MnSO4 x H2O, yielding 0.004950 g/L in the 1010 mL trace-adjusted
+    formulation.
+  concentration:
+    value: '0.004950'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+- preferred_term: FeSO4 x 7 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 1254 adds 10 mL of Archived DSMZ Medium 141 trace elements
+    containing 0.10 g/L FeSO4 x 7 H2O, yielding 0.000990 g/L in the 1010 mL trace-adjusted
+    formulation.
+  concentration:
+    value: '0.000990'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+- preferred_term: CoSO4 x 7 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 1254 adds 10 mL of Archived DSMZ Medium 141 trace elements
+    containing 0.18 g/L CoSO4 x 7 H2O, yielding 0.001782 g/L in the 1010 mL trace-adjusted
+    formulation.
+  concentration:
+    value: '0.001782'
+    unit: G_PER_L
+  term:
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
+- preferred_term: ZnSO4 x 7 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 1254 adds 10 mL of Archived DSMZ Medium 141 trace elements
+    containing 0.18 g/L ZnSO4 x 7 H2O, yielding 0.001782 g/L in the 1010 mL trace-adjusted
+    formulation.
+  concentration:
+    value: '0.001782'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: CuSO4 x 5 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 1254 adds 10 mL of Archived DSMZ Medium 141 trace elements
+    containing 0.01 g/L CuSO4 x 5 H2O, yielding 0.000099 g/L in the 1010 mL trace-adjusted
+    formulation.
+  concentration:
+    value: '0.000099'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+- preferred_term: KAl(SO4)2 x 12 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 1254 adds 10 mL of Archived DSMZ Medium 141 trace elements
+    containing 0.02 g/L KAl(SO4)2 x 12 H2O, yielding 0.000198 g/L in the 1010 mL trace-adjusted
+    formulation.
+  concentration:
+    value: '0.000198'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+- preferred_term: Na2MoO4 x 2 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 1254 adds 10 mL of Archived DSMZ Medium 141 trace elements
+    containing 0.01 g/L Na2MoO4 x 2 H2O, yielding 0.000099 g/L in the 1010 mL trace-adjusted
+    formulation.
+  concentration:
+    value: '0.000099'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: Na2SeO3 x 5 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 1254 adds 10 mL of Archived DSMZ Medium 141 trace elements
+    containing 0.30 mg/L Na2SeO3 x 5 H2O, yielding 0.000002970 g/L in the 1010 mL
+    trace-adjusted formulation.
+  concentration:
+    value: '0.000002970'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+- preferred_term: KOH
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adjusts the trace element solution with KOH; Archived
+    DSMZ Medium 1254 adds 10 mL of that trace solution.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+- preferred_term: Resazurin
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 lists 0.50 mg Resazurin with 1000 mL water and
+    10 mL DSMZ Medium 141 trace elements, yielding 0.000495 g/L in the 1010 mL trace-adjusted
+    formulation.
+  concentration:
+    value: '0.000495'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: KNO3
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 lists 1.00 g KNO3 with 1000 mL water and 10 mL
+    DSMZ Medium 141 trace elements, yielding 0.990099 g/L in the 1010 mL trace-adjusted
+    formulation.
+  concentration:
+    value: '0.990099'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63043
+    label: potassium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63043
+    label: potassium nitrate
+- preferred_term: PIPES
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 lists 3.80 g PIPES with 1000 mL water and 10 mL
+    DSMZ Medium 141 trace elements, yielding 3.762376 g/L in the 1010 mL trace-adjusted
+    formulation.
+  concentration:
+    value: '3.762376'
+    unit: G_PER_L
+  term:
+    id: CHEBI:39033
+    label: PIPES
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39033
+    label: PIPES
+- preferred_term: Na2S x 9 H2O
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 lists 0.50 g Na2S x 9 H2O with 1000 mL water and
+    10 mL DSMZ Medium 141 trace elements, yielding 0.495050 g/L in the 1010 mL trace-adjusted
+    formulation.
+  concentration:
+    value: '0.495050'
+    unit: G_PER_L
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+- preferred_term: H2
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 cools and dispenses the medium under 80% H2 plus
+    20% CO2.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:18276
+    label: dihydrogen
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18276
+    label: dihydrogen
+- preferred_term: CO2
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 cools and dispenses the medium under 80% H2 plus
+    20% CO2.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
+- preferred_term: Distilled water
+  source: Archived DSMZ Medium 1254
+  notes: Archived DSMZ Medium 1254 lists 1000 mL distilled water before stock additions.
+  concentration:
+    value: '1000.000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -36,5 +453,18 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_1254_score30.py
+  action: RESOLVED_KOMODO_1254_SCORE30
+  source: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1254.pdf
+  notes: Archived DSMZ Medium 1254 defines NAUTILIA NITRATIREDUCENS MEDIUM as a defined
+    seawater salts formulation with 10 mL DSMZ Medium 141 trace elements, resazurin,
+    KNO3, PIPES, and Na2S under 80:20 H2/CO2 at pH 7.0; this record expands the trace
+    stock into final per-liter components after the 1.010 L trace-adjusted formulation.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1254
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1254.pdf
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf

@@ -5,78 +5,139 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+temperature_value: 85.0
+aeration: N2/CO2 (80:20) bubbled at 20 ml/min
 ingredients:
-- preferred_term: Na2MoO4 x2H2O (1 mg/ml)
+- preferred_term: Na2MoO4 x 2 H2O
   concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: MnCl2 x4H2O (10 mg/ml)
+    value: '0.03'
+    unit: MG_PER_L
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 adds 30 uL of 1 mg/ml Na2MoO4 x 2 H2O per liter, equivalent to
+    0.03 mg/L.
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: MnCl2 x 4 H2O
   concentration:
-    value: '180'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: ZnSO4 x7H2O (10 mg/ml)
+    value: '1.8'
+    unit: MG_PER_L
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 adds 180 uL of 10 mg/ml MnCl2 x 4 H2O per liter, equivalent to
+    1.8 mg/L.
+  term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+- preferred_term: ZnSO4 x 7 H2O
   concentration:
-    value: '22'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: CuCl2 x2H2O (10 mg/ml)
+    value: '0.22'
+    unit: MG_PER_L
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 adds 22 uL of 10 mg/ml ZnSO4 x 7 H2O per liter, equivalent to
+    0.22 mg/L.
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: CuCl2 x 2 H2O
   concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-- preferred_term: CoSO4 x7H2O (1 mg/ml)
+    value: '0.05'
+    unit: MG_PER_L
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 adds 5 uL of 10 mg/ml CuCl2 x 2 H2O per liter, equivalent to 0.05
+    mg/L.
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+- preferred_term: CoSO4 x 7 H2O
   concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: Na2B4O7 x 10 H2O (25 mg/ml)
+    value: '0.01'
+    unit: MG_PER_L
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 adds 10 uL of 1 mg/ml CoSO4 x 7 H2O per liter, equivalent to 0.01
+    mg/L.
+  term:
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
+- preferred_term: Na2B4O7 x 10 H2O
   concentration:
-    value: '180'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-- preferred_term: VOSO4 x5H2O (1 mg/ml)
+    value: '4.5'
+    unit: MG_PER_L
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 adds 180 uL of 25 mg/ml Na2B4O7 x 10 H2O per liter, equivalent
+    to 4.5 mg/L.
+  term:
+    id: CHEBI:131366
+    label: disodium tetraborate decahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131366
+    label: disodium tetraborate decahydrate
+- preferred_term: VOSO4 x 5 H2O
   concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-- preferred_term: Distilled H2O
+    value: '0.03'
+    unit: MG_PER_L
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 adds 30 uL of 1 mg/ml VOSO4 x 5 H2O per liter, equivalent to 0.03
+    mg/L.
+  term:
+    id: CHEBI:132758
+    label: vanadyl sulfate pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132758
+    label: vanadyl sulfate pentahydrate
+- preferred_term: Distilled water
   concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    value: '1000.0'
+    unit: ML_PER_L
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 makes the final medium with 1000 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 lists 0.25 g MgSO4 x 7 H2O in the final liter.
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
 - preferred_term: Yeast Extract
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 lists 0.1 g Yeast Extract in the final liter.
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.07'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 lists 0.07 g CaCl2 x 2 H2O in the final liter.
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -87,26 +148,32 @@ ingredients:
   concentration:
     value: '0.28'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 lists 0.28 g KH2PO4 in the final liter.
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
-- preferred_term: Na2Sx6H2O
+- preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.13'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
-    Simple component'
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 lists 0.13 g Na2S x 9 H2O in the final liter.
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1.3'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 lists 1.3 g (NH4)2SO4 in the final liter.
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -117,17 +184,20 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 lists 0.02 g FeCl3 x 6 H2O in the final liter.
   term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:86254
     label: iron trichloride hexahydrate
 - preferred_term: Na2SO4
   concentration:
     value: '0.07'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 lists 0.07 g Na2SO4 in the final liter.
   term:
     id: CHEBI:32149
     label: sodium sulfate
@@ -138,113 +208,83 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 lists 0.1 g KNO3 in the final liter.
   term:
     id: CHEBI:63043
     label: potassium nitrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000170
-    label: KNO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63043
+    label: potassium nitrate
 - preferred_term: CaSO4 x 2 H2O
   concentration:
     value: '0.17'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 lists 0.17 g CaSO4 x 2 H2O in the final liter.
   term:
+    id: CHEBI:32583
+    label: calcium sulfate dihydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32583
     label: calcium sulfate dihydrate
 - preferred_term: Na2S2O3
   concentration:
     value: '0.78'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Simple component'
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 lists 0.78 g Na2S2O3 in the final liter.
   term:
-    id: CHEBI:32150
-    label: sodium thiosulfate pentahydrate
+    id: CHEBI:132112
+    label: sodium thiosulfate
   mediaingredientmech_chebi_term:
-    id: CHEBI:32150
-    label: sodium thiosulfate pentahydrate
+    id: CHEBI:132112
+    label: sodium thiosulfate
 - preferred_term: Peptone
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: LiCl/Na2WO4/NaSeO3/Ni(NH4)2(SO4) (1 mg/ml each)
-  concentration:
-    value: '10'
-    unit: G_PER_L
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 lists 0.5 g Peptone in the final liter.
+  term:
+    id: MICRO:0000178
+    label: Peptone
 - preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 lists CO2 gas; source comments specify N2/CO2 (80:20) bubbling.
   term:
     id: CHEBI:16526
     label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 lists N2 gas; source comments specify N2/CO2 (80:20) bubbling.
   term:
     id: CHEBI:17997
     label: dinitrogen
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
   mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Na2WO4
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:63940
-    label: sodium tungstate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63940
-    label: sodium tungstate
-- preferred_term: NaSeO3
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: LiCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:48607
-    label: lithium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:48607
-    label: lithium chloride
-- preferred_term: Ni(NH4)2(SO4)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component'
+    id: CHEBI:17997
+    label: dinitrogen
 media_term:
   preferred_term: TOGO Medium M2682
   term:
     id: TOGO:M2682
     label: Obsidian Pool fermentor (OPF) medium (modified from M. B. Allen, 1959)
-notes: 'Source: https://togomedium.org/medium/M2682'
+notes: TOGO M2682 imports the Obsidian Pool fermentor medium from Elkins et al. 2008.
+  The source lists 1000 ml distilled water, modified Allen salts and organics, 1 ml
+  Wolfe's Vitamin Solution (1000X), 10 uL/L LiCl/Na2WO4/NaSeO3/Ni(NH4)2(SO4) stock,
+  and N2/CO2 (80:20) gas bubbling at 85 C.
 applications:
 - Microbial cultivation
+incubation_atmosphere: ANAEROBIC
 curation_history:
 - timestamp: '2026-01-27T06:35:57.051406Z'
   curator: togo-import
@@ -301,12 +341,79 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-high_metal: true
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2682_obsidian_pool_score15.py
+  action: RESOLVED_TOGO_M2682_OBSIDIAN_POOL_SCORE15
+  source: https://togomedium.org/medium/M2682; https://doi.org/10.1073/pnas.0801980105
+  notes: Corrected microliter stock additions from g/L to mg/L final concentrations,
+    moved the LiCl/Na2WO4/NaSeO3/Ni stock solutes under an inline stock solution,
+    fixed Na2S2O3 and hydrated salt groundings, and added the 85 C N2/CO2 incubation
+    conditions.
 solutions:
-- preferred_term: Wolfe's Vitamin Solution (1,000X_x0008_)
-  composition: []
+- preferred_term: Wolfe's Vitamin Solution (1000X)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Complex component'
-  name: Unknown solution
+    value: '1.0'
+    unit: ML_PER_L
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 adds 1.0 ml/L Wolfe's Vitamin Solution (1000X); this source does
+    not disclose its composition.
+  composition: []
+- preferred_term: LiCl/Na2WO4/NaSeO3/Ni(NH4)2(SO4) stock
+  concentration:
+    value: '0.01'
+    unit: ML_PER_L
+  source: TOGO M2682 / Elkins et al. 2008
+  notes: TOGO M2682 adds 10 uL/L of a stock containing 1 mg/ml each LiCl, Na2WO4,
+    NaSeO3, and Ni(NH4)2(SO4).
+  composition:
+  - preferred_term: Na2WO4
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: TOGO M2682 / Elkins et al. 2008
+    notes: TOGO M2682 defines the Li/W/Se/Ni stock with 1 mg/ml Na2WO4.
+    term:
+      id: CHEBI:63940
+      label: sodium tungstate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63940
+      label: sodium tungstate
+  - preferred_term: Na2SeO3
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: TOGO M2682 / Elkins et al. 2008
+    notes: TOGO M2682 defines the Li/W/Se/Ni stock with 1 mg/ml Na2SeO3.
+    term:
+      id: CHEBI:48843
+      label: disodium selenite
+    mediaingredientmech_chebi_term:
+      id: CHEBI:48843
+      label: disodium selenite
+  - preferred_term: LiCl
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: TOGO M2682 / Elkins et al. 2008
+    notes: TOGO M2682 defines the Li/W/Se/Ni stock with 1 mg/ml LiCl.
+    term:
+      id: CHEBI:48607
+      label: lithium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:48607
+      label: lithium chloride
+  - preferred_term: Ni(NH4)2(SO4)
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: TOGO M2682 / Elkins et al. 2008
+    notes: TOGO M2682 defines the Li/W/Se/Ni stock with 1 mg/ml Ni(NH4)2(SO4). This
+      source formula is retained ungrounded because it does not specify nickel sulfate
+      stoichiometry or hydrate state.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2682
+- reference: https://doi.org/10.1073/pnas.0801980105

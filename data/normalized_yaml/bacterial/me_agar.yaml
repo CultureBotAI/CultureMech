@@ -10,22 +10,31 @@ media_term:
   term:
     id: mediadive.medium:J258
     label: ME AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=258'
+notes: TOGO M250 is a snapshot of JCM_M258 and records 50 g/L Malt extract agar from
+  Oxoid in distilled water with autoclaving at 115 C for 10 min.
 ingredients:
-- preferred_term: Malt extract agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M250/JCM Medium 258 snapshot
+  notes: TOGO M250 snapshots JCM_M258 and lists 1.0 L distilled water.
   term:
-    id: CHEBI:2509
-    label: agar
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Malt extract agar (Oxoid)
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
+  source: TOGO M250/JCM Medium 258 snapshot
+  notes: TOGO M250 snapshots JCM_M258 and lists 50 g/L Malt extract agar from Oxoid.
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave at 115C for 10 min.
+  description: Autoclave at 115 C for 10 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -51,4 +60,16 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_sparse_siblings_score20.py
+  action: RESOLVED_JCM_SPARSE_SIBLINGS_SCORE20
+  source: https://togomedium.org/medium/M250
+  notes: TOGO M250 is a snapshot of JCM_M258 and records 50 g/L Malt extract agar
+    from Oxoid in distilled water with autoclaving at 115 C for 10 min.
 kg_microbe_match: mediadive.medium:12
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M250

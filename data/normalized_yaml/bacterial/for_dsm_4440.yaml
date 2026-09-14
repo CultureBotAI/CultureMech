@@ -394,3 +394,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_311_sporomusa_score10.py
+  action: RESOLVED_KOMODO_311_SPOROMUSA_TOPOLOGY
+  changes: Linked under KOMODO Medium 311 as STRAIN_SPECIFIC_VARIANT
+  source: KOMODO Medium 311.2
+  notes: KOMODO Medium 311.2 applies KOMODO Medium 311 to DSM 4440.
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_311_SPOROMUSA_medium.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004964
+  name: sporomusa_medium
+  notes: KOMODO Medium 311.2 applies KOMODO Medium 311 to DSM 4440.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
+variant_modifications:
+- KOMODO Medium 311.2 applies KOMODO Medium 311 to DSM 4440.
+data_quality_flags:
+- ingredients_curated

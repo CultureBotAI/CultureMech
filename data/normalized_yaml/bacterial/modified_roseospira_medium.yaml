@@ -10,101 +10,147 @@ media_term:
   term:
     id: mediadive.medium:J1145
     label: MODIFIED ROSEOSPIRA MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1145
-
-  Composition recovery source: https://togomedium.org/medium/M1227 (TOGO snapshot
-  of JCM medium J1145).'
+notes: JCM Medium 1145 / TOGO M1227 records Modified Roseospira Medium as JCM Medium
+  568 Roseospira Medium adjusted to pH 6.8, supplemented with 5.0 ml/L Ferric citrate
+  (0.1%, w/v), 1.0 ml/L vitamin B12 solution at 2 mg/ml, 1.0 ml/L micronutrient solution
+  SL7 from TOGO M572, and 0.1% final NaHCO3; the modified formula uses 1.0 mM final
+  Na2S x 9H2O instead of the 2.0 mM final Na2S2O3 in the base medium.
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
+    value: '1.0'
     unit: L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: JCM Medium 1145 / TOGO M1227
+  notes: JCM Medium 1145 / TOGO M1227 lists 1.0 L Distilled water.
   term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '1.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: JCM Medium 1145 / TOGO M1227
+  notes: JCM Medium 1145 / TOGO M1227 lists 1.5 g/L MgSO4 x 7H2O.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
     value: '0.4'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: JCM Medium 1145 / TOGO M1227
+  notes: JCM Medium 1145 / TOGO M1227 lists 0.4 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: NaCl
   concentration:
-    value: '20'
+    value: '20.0'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  source: JCM Medium 1145 / TOGO M1227
+  notes: JCM Medium 1145 / TOGO M1227 lists 20.0 g/L NaCl.
   term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.15'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  source: JCM Medium 1145 / TOGO M1227
+  notes: JCM Medium 1145 / TOGO M1227 lists 0.15 g/L CaCl2 x 2H2O.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
+  source: JCM Medium 1145 / TOGO M1227
+  notes: JCM Medium 1145 / TOGO M1227 lists 0.5 g/L KH2PO4.
   term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '0.6'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  source: JCM Medium 1145 / TOGO M1227
+  notes: JCM Medium 1145 / TOGO M1227 lists 0.6 g/L NH4Cl.
   term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
     id: CHEBI:31206
     label: ammonium chloride
 - preferred_term: Sodium pyruvate
   concentration:
-    value: '3'
+    value: '3.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  source: JCM Medium 1145 / TOGO M1227
+  notes: JCM Medium 1145 / TOGO M1227 lists 3.0 g/L Sodium pyruvate.
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
 - preferred_term: NaHCO3
   concentration:
     value: '0.1'
     unit: PERCENT_W_V
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  source: JCM Medium 1145 / TOGO M1227
+  notes: JCM Medium 1145 / TOGO M1227 lists a final 0.1% NaHCO3 addition.
   term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
 - preferred_term: Na2S・9H2O
   concentration:
-    value: '1'
+    value: '1.0'
     unit: MILLIMOLAR
-  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
-    compound'
-- preferred_term: Na2S2O3
-  concentration:
-    value: '2'
-    unit: MILLIMOLAR
-  notes: 'Properties: Defined component, Inorganic compound, Simple component'
+  source: JCM Medium 1145 / TOGO M1227
+  notes: JCM Medium 1145 / TOGO M1227 lists 1.0 mM final Na2S x 9H2O as the Modified
+    Roseospira reductant instead of the base-medium Na2S2O3.
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Prepare the base with distilled water, Ferric citrate, MgSO4 x 7H2O,
+    yeast extract, NaCl, CaCl2 x 2H2O, KH2PO4, NH4Cl, sodium pyruvate, and micronutrient
+    solution SL7.
+- step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.8.
-- step_number: 2
-  action: MIX
-  description: After autoclaving, add 1.0 ml of vitamin B12 solution (2 mg/ml), 0.1%
-    (final) of NaHCO3 and 2.0 mM (final) of Na2S2O3.
 - step_number: 3
   action: MIX
-  description: Use Medium No. [568] with 1.0 mM (final) Na2S・9H2O instead of 2.0 mM
-    (final) Na2S2O3・5H2O.
+  description: After autoclaving, add 1.0 ml/L vitamin B12 solution at 2 mg/ml and
+    NaHCO3 to 0.1% final.
+- step_number: 4
+  action: MIX
+  description: Use 1.0 mM final Na2S x 9H2O instead of the 2.0 mM final Na2S2O3 in
+    Roseospira Medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -153,22 +199,58 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 5 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_jcm_j1145_togo_m1227_roseospira_score15.py
+  action: RESOLVED_JCM_J1145_ROSEOSPIRA_SCORE15
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1145; https://togomedium.org/medium/M1227;
+    https://togomedium.org/medium/M572
+  notes: JCM Medium 1145 / TOGO M1227 records Modified Roseospira Medium as JCM Medium
+    568 Roseospira Medium adjusted to pH 6.8, supplemented with 5.0 ml/L Ferric citrate
+    (0.1%, w/v), 1.0 ml/L vitamin B12 solution at 2 mg/ml, 1.0 ml/L micronutrient
+    solution SL7 from TOGO M572, and 0.1% final NaHCO3; the modified formula uses
+    1.0 mM final Na2S x 9H2O instead of the 2.0 mM final Na2S2O3 in the base medium.
+    Removed the base-medium Na2S2O3 row, corrected stock solution volumes, grounded
+    the remaining defined salts, and linked the JCM/TOGO source duplicate.
 solutions:
 - preferred_term: Ferric citrate (0.1%, w/v)
   composition: []
   concentration:
-    value: '5'
+    value: '5.0'
     unit: ML_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Solution'
+  source: JCM Medium 1145 / TOGO M1227
+  notes: JCM Medium 1145 / TOGO M1227 lists 5.0 ml/L Ferric citrate (0.1%, w/v).
 - preferred_term: vitamin B12 solution
   composition: []
   concentration:
-    value: '1'
+    value: '1.0'
     unit: ML_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Solution, Organic compound'
+  source: JCM Medium 1145 / TOGO M1227
+  notes: JCM Medium 1145 / TOGO M1227 lists 1.0 ml/L vitamin B12 solution at 2 mg/ml.
 - preferred_term: Micronutrient solution (SL7) (see Medium [M572])
   composition: []
   concentration:
-    value: '1'
+    value: '1.0'
     unit: ML_PER_L
-  notes: Defined in TOGO medium M572.
+  source: JCM Medium 1145 / TOGO M1227
+  notes: JCM Medium 1145 / TOGO M1227 lists 1.0 ml/L micronutrient solution SL7; TOGO
+    M572 defines that referenced stock.
+ph_value: 6.8
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M1227_Modified_Roseospira_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:007755
+  name: modified_roseospira_medium
+  notes: TOGO M1227 is a snapshot of the same JCM Medium 1145 Modified Roseospira
+    Medium formulation represented by MediaDive J1145.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- TOGO M1227 is a snapshot of the same JCM Medium 1145 Modified Roseospira Medium
+  formulation represented by MediaDive J1145.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1145
+- reference: https://togomedium.org/medium/M1227
+- reference: https://togomedium.org/medium/M572

@@ -346,13 +346,21 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-high_metal: true
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_505_formivibrio_score10.py
+  action: RESOLVED_KOMODO_505_FORMIVIBRIO_TOPOLOGY
+  changes: Linked under MediaDive Medium 505
+  source: KOMODO Medium 505
+  notes: KOMODO Medium 505 exactly mirrors DSMZ Medium 505.
 parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_5885.yaml
+  path: data/normalized_yaml/bacterial/formivibrio_medium.yaml
   relationship: SOURCE_DUPLICATE
-  id: CultureMech:005694
-  name: for_dsm_5885
+  id: CultureMech:001637
+  name: formivibrio_medium
+  notes: MediaDive Medium 505 is the DSMZ FORMIVIBRIO MEDIUM base.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 505 exactly mirrors DSMZ Medium 505.
+high_metal: true
+data_quality_flags:
+- ingredients_curated

@@ -8,20 +8,28 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: CrystalSea Marine Mix (Marine Enterprises International, Inc.)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source'
-- preferred_term: tryptone
+    value: '3'
+    unit: PERCENT_W_V
+  source: TOGO M2315
+  notes: TOGO M2315 lists 3% CrystalSea Marine Mix in the seawater medium.
+- preferred_term: Tryptone
   concentration:
     value: '0.5'
     unit: PERCENT_W_V
-  notes: 'Properties: Undefined component'
+  source: TOGO M2315
+  notes: TOGO M2315 supplements the seawater medium with 0.5% tryptone.
+  term:
+    id: MICRO:0000182
+    label: Tryptone
+  nutritional_roles:
+  - NITROGEN_SOURCE
 media_term:
   preferred_term: TOGO Medium M2315
   term:
     id: TOGO:M2315
     label: seawater medium (with 0.5% tryptone)
-notes: 'Source: https://togomedium.org/medium/M2315'
+notes: TOGO M2315 preserves a literature formulation of 3% CrystalSea Marine Mix plus
+  0.5% tryptone, incubated at 30 C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -38,3 +46,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "seawater medium (with 0.5% tryptone)" to "seawater_medium_with_0_5_tryptone"
     for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_literal_products_score40.py
+  action: RESOLVED_TOGO_LITERAL_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO literal product/additive graph
+  source: https://togomedium.org/medium/M2315
+  notes: TOGO M2315 preserves a literature formulation of 3% CrystalSea Marine Mix
+    plus 0.5% tryptone, incubated at 30 C.
+temperature_value: 30.0
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2315

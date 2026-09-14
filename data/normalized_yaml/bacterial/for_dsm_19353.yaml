@@ -435,14 +435,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1053_sulfurimonas_score10.py
+  action: RESOLVED_KOMODO_1053_SULFURIMONAS_TOPOLOGY
+  changes: Linked under KOMODO Medium 1053
+  source: KOMODO Medium 1053.1
+  notes: KOMODO Medium 1053.1 applies SULFURIMONAS PARALVINELLA medium to DSM 19353.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_1053_SULFURIMONAS_PARALVINELLA_MEDIUM.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003629
   name: sulfurimonas_paralvinella_medium
-  notes: Manual review found matching DSMZ Medium 1053 source, liquid state, pH, ingredient
-    identity, and concentration signature.
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 1053 is the SULFURIMONAS PARALVINELLA base for this record.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same DSMZ/KOMODO Medium 1053 ingredient and concentration signature; reviewed as
-  duplicate DSM 19353 source record.
+- KOMODO Medium 1053.1 applies SULFURIMONAS PARALVINELLA medium to DSM 19353.
+data_quality_flags:
+- ingredients_curated

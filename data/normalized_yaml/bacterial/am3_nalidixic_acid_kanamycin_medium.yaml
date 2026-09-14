@@ -4,97 +4,157 @@ original_name: AM3 + Nalidixic acid, Kanamycin medium
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
+functional_role:
+- SELECTIVE
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Yeast extract
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '3.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: KH2PO4
-  concentration:
-    value: '1.32'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
-  term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-- preferred_term: K2HPO4
-  concentration:
-    value: '3.68'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: Glucose
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
-  term:
-    id: CHEBI:17234
-    label: glucose
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17234
-    label: glucose
-- preferred_term: Agar (if needed)
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
 - preferred_term: Beef extract
   concentration:
     value: '1.5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2023 / NBRC Medium 1314
+  notes: TOGO M2023 / NBRC Medium 1314 lists 1.5 g/L Beef extract.
+  term:
+    id: FOODON:03302088
+    label: Beef extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  source: TOGO M2023 / NBRC Medium 1314
+  notes: TOGO M2023 / NBRC Medium 1314 lists 1.5 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - NITROGEN_SOURCE
 - preferred_term: Peptone
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
+  source: TOGO M2023 / NBRC Medium 1314
+  notes: TOGO M2023 / NBRC Medium 1314 lists 5 g/L Peptone.
+  term:
+    id: MICRO:0000178
+    label: Peptone
+  nutritional_roles:
+  - PROTEIN_SOURCE
+- preferred_term: Glucose
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: TOGO M2023 / NBRC Medium 1314
+  notes: TOGO M2023 / NBRC Medium 1314 lists 1 g/L Glucose.
+  term:
+    id: CHEBI:17234
+    label: glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: glucose
+  nutritional_roles:
+  - CARBON_SOURCE
+- preferred_term: NaCl
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+  source: TOGO M2023 / NBRC Medium 1314
+  notes: TOGO M2023 / NBRC Medium 1314 lists 3.5 g/L NaCl.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: K2HPO4
+  concentration:
+    value: '3.68'
+    unit: G_PER_L
+  source: TOGO M2023 / NBRC Medium 1314
+  notes: TOGO M2023 / NBRC Medium 1314 lists 3.68 g/L K2HPO4.
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: KH2PO4
+  concentration:
+    value: '1.32'
+    unit: G_PER_L
+  source: TOGO M2023 / NBRC Medium 1314
+  notes: TOGO M2023 / NBRC Medium 1314 lists 1.32 g/L KH2PO4.
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: TOGO M2023 / NBRC Medium 1314
+  notes: TOGO M2023 / NBRC Medium 1314 lists 15 g/L Agar if needed; retained for the
+    solid agar preparation.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: TOGO M2023 / NBRC Medium 1314
+  notes: TOGO M2023 / NBRC Medium 1314 lists 1 L Distilled water per liter.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M2023
   term:
     id: TOGO:M2023
     label: AM3 + Nalidixic acid, Kanamycin medium
-notes: 'Source: https://togomedium.org/medium/M2023
-
-  Original source: NBRC - NBRC_M1314
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1314'
+notes: NBRC Medium 1314 defines AM3 + Nalidixic acid, Kanamycin medium with 1.5 g
+  beef extract, 1.5 g yeast extract, 5 g peptone, 1 g glucose, 3.5 g NaCl, 3.68 g
+  K2HPO4, 1.32 g KH2PO4, 15 g agar if needed, 1 L distilled water, 1 ml Nalidixic
+  acid solution (100 mg/ml), and 1 ml Kanamycin solution (25 mg/ml) per liter. The
+  pH is unadjusted; the antibiotic solutions are sterilized separately by filtration.
+references:
+- reference: https://togomedium.org/medium/M2023
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1314
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix beef extract, yeast extract, peptone, glucose, NaCl, K2HPO4, KH2PO4,
+    and agar in distilled water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the basal AM3 medium.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Filter-sterilize the Nalidixic acid solution (100 mg/ml) and Kanamycin
+    solution (25 mg/ml) separately.
+- step_number: 4
+  action: MIX
+  description: Aseptically add 1.0 ml/L Nalidixic acid solution and 1.0 ml/L Kanamycin
+    solution to the autoclaved basal medium.
+sterilization:
+  method: AUTOCLAVE
+  notes: Autoclave the basal AM3 medium and filter-sterilize the nalidixic acid and
+    kanamycin stock solutions separately before aseptic addition.
 applications:
 - Microbial cultivation
 curation_history:
@@ -141,28 +201,79 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2023_am3_antibiotics_score15.py
+  action: RESOLVED_TOGO_M2023_AM3_ANTIBIOTICS
+  source: https://togomedium.org/medium/M2023; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1314
+  notes: Verified TOGO M2023 against NBRC Medium 1314, corrected distilled water to
+    1000 ml/L, converted the nalidixic acid and kanamycin imports to separately filter-sterilized
+    1 ml/L stock solutions, grounded the AM3 base and antibiotic rows, recorded the
+    pH as unadjusted, and changed the AM3 relationship from source duplicate to supplemented
+    variant.
 solutions:
-- preferred_term: Kanamycin solution (25 mg/ml)*
-  composition: []
+- preferred_term: Nalidixic acid solution (100 mg/ml)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Solution, Defined
-    component'
-  name: Unknown solution
-- preferred_term: Nalidixic acid solution (100 mg/ml)*
-  composition: []
+    value: '1.0'
+    unit: ML_PER_L
+  source: TOGO M2023 / NBRC Medium 1314
+  notes: TOGO M2023 / NBRC Medium 1314 lists 1 ml/L Nalidixic acid solution (100 mg/ml).
+  term:
+    id: CHEBI:100147
+    label: nalidixic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:100147
+    label: nalidixic acid
+  composition:
+  - preferred_term: Nalidixic acid
+    concentration:
+      value: '100.0'
+      unit: MG_PER_ML
+    source: TOGO M2023 / NBRC Medium 1314
+    notes: NBRC Medium 1314 specifies this stock as 100.0 mg/ml Nalidixic acid.
+    term:
+      id: CHEBI:100147
+      label: nalidixic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:100147
+      label: nalidixic acid
+  preparation_notes: Sterilize separately by filtration.
+- preferred_term: Kanamycin solution (25 mg/ml)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Solution, Defined component, Complex component'
-  name: Unknown solution
+    value: '1.0'
+    unit: ML_PER_L
+  source: TOGO M2023 / NBRC Medium 1314
+  notes: TOGO M2023 / NBRC Medium 1314 lists 1 ml/L Kanamycin solution (25 mg/ml).
+  term:
+    id: CHEBI:6104
+    label: kanamycin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6104
+    label: kanamycin
+  composition:
+  - preferred_term: Kanamycin
+    concentration:
+      value: '25.0'
+      unit: MG_PER_ML
+    source: TOGO M2023 / NBRC Medium 1314
+    notes: NBRC Medium 1314 specifies this stock as 25.0 mg/ml kanamycin.
+    term:
+      id: CHEBI:6104
+      label: kanamycin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:6104
+      label: kanamycin
+  preparation_notes: Sterilize separately by filtration.
 parent_media:
   path: data/normalized_yaml/bacterial/am3_medium.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: SUPPLEMENTED_VARIANT
   id: CultureMech:008609
   name: am3_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: TOGO M2023 / NBRC Medium 1314 supplements AM3 medium with 1 ml/L Nalidixic
+    acid solution (100 mg/ml) and 1 ml/L Kanamycin solution (25 mg/ml).
+variant_relationship: SUPPLEMENTED_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- Adds 1 ml/L Nalidixic acid solution (100 mg/ml).
+- Adds 1 ml/L Kanamycin solution (25 mg/ml).
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

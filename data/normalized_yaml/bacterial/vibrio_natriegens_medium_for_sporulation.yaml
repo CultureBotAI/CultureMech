@@ -5,25 +5,30 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Peptone
   concentration:
-    value: '1000'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO M2286 / DSMZ Medium 115
+  notes: DSMZ Medium 1 lists 5 g/L Peptone.
   term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
+    id: MICRO:0000178
+    label: Peptone
+- preferred_term: Meat extract
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  source: TOGO M2286 / DSMZ Medium 115
+  notes: DSMZ Medium 1 lists 3 g/L Meat extract; this generic complex extract is retained
+    without an ontology grounding.
 - preferred_term: NaCl
   concentration:
     value: '1.5'
     unit: PERCENT_W_V
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO M2286 / DSMZ Medium 115
+  notes: DSMZ Medium 115 lists DSMZ Medium 1 with 1.5% NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -32,10 +37,10 @@ ingredients:
     label: sodium chloride
 - preferred_term: MnSO4 x H2O
   concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+    value: '10.0'
+    unit: MG_PER_L
+  source: TOGO M2286 / DSMZ Medium 115
+  notes: DSMZ Medium 1 recommends adding 10 mg/L MnSO4 x H2O for Bacillus-strain sporulation.
   term:
     id: CHEBI:86364
     label: manganese(II) sulfate monohydrate
@@ -44,26 +49,37 @@ ingredients:
     label: manganese(II) sulfate monohydrate
 - preferred_term: Agar, if necessary
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Meat extract
+  source: TOGO M2286 / DSMZ Medium 115
+  notes: DSMZ Medium 1 lists 15 g/L Agar, if necessary.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Distilled water
   concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
+    value: '1.0'
+    unit: L
+  source: TOGO M2286 / DSMZ Medium 115
+  notes: DSMZ Medium 1 lists 1000 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M2286
   term:
     id: TOGO:M2286
     label: Vibrio Natriegens Medium (For sporulation)
-notes: 'Source: https://togomedium.org/medium/M2286
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium115.pdf'
+notes: DSMZ Medium 115 defines Vibrio Natriegens Medium as DSMZ Medium 1 with 1.5%
+  NaCl. DSMZ Medium 1 lists, per liter, 5 g Peptone, 3 g Meat extract, 15 g Agar if
+  necessary, and 1000 ml distilled water, with pH adjusted to 7.0. The TOGO M2286
+  sporulation variant also adds 10 mg/L MnSO4 x H2O.
 applications:
 - Microbial cultivation
 curation_history:
@@ -100,3 +116,26 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2285_m2286_score15.py
+  action: RESOLVED_TOGO_M2285_M2286_SCORE15
+  source: https://togomedium.org/medium/M2286; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium115.pdf;
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf
+  notes: DSMZ Medium 115 defines Vibrio Natriegens Medium as DSMZ Medium 1 with 1.5%
+    NaCl. DSMZ Medium 1 lists, per liter, 5 g Peptone, 3 g Meat extract, 15 g Agar
+    if necessary, and 1000 ml distilled water, with pH adjusted to 7.0. The TOGO M2286
+    sporulation variant also adds 10 mg/L MnSO4 x H2O. Corrected distilled water and
+    sporulation MnSO4 x H2O unit artifacts, grounded the disclosed simple and protein-hydrolysate
+    components, and kept Meat extract intentionally unmapped.
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2286
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium115.pdf
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf

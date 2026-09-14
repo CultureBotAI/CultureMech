@@ -10,17 +10,36 @@ media_term:
   term:
     id: mediadive.medium:1471
     label: PEPTONE BROTH
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1471.pdf'
+notes: DSMZ Medium 1471 prepares PEPTONE BROTH from 5 g peptone and 1000 mL distilled
+  water, then places a 3 inch Whatman no. 1 filter-paper strip in each tube with the
+  peptone solution.
 ingredients:
 - preferred_term: Peptone
   concentration:
     value: '5'
     unit: G_PER_L
+  notes: DSMZ Medium 1471 lists 5.0 g peptone per 1000 mL distilled water.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: DSMZ Medium 1471 lists 1000.0 mL distilled water.
 preparation_steps:
 - step_number: 1
-  action: FILTER_STERILIZE
+  action: DISSOLVE
+  description: Dissolve 5 g peptone in 1000 mL distilled water.
+- step_number: 2
+  action: ALIQUOT
   description: Put a 3 inch strip of Whatman no. 1 filter paper into each test tube
-    with the above solution to cover approximately 2/3 the length of the paper.
+    with the peptone solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -36,3 +55,18 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PEPTONE BROTH" to "peptone_broth" for consistent matching
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_dsmz_peptone_broth_score40.py
+  action: RESOLVED_DSMZ_PEPTONE_BROTH_SCORE40
+  changes: Resolved score-40 DSMZ PEPTONE BROTH recipe graph
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1471.pdf
+  notes: DSMZ Medium 1471 prepares PEPTONE BROTH from 5 g peptone and 1000 mL distilled
+    water, then places a 3 inch Whatman no. 1 filter-paper strip in each tube with
+    the peptone solution.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: DSMZ:1471
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1471.pdf

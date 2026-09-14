@@ -6,6 +6,12 @@ description: 904. NBRC 903.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: NBRC Medium 903
+  term:
+    id: nbrc.medium:903
+    label: NBRC Medium 903
 ingredients:
 - preferred_term: NaCl
   concentration:
@@ -32,6 +38,9 @@ ingredients:
   concentration:
     value: '2.8'
     unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '3.4'
@@ -40,6 +49,9 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
 - preferred_term: K2HPO4
   concentration:
     value: '0.3'
@@ -66,10 +78,16 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Bacto Tryptone (Difco)
   concentration:
     value: '3'
     unit: G_PER_L
+  term:
+    id: MICRO:0000182
+    label: Tryptone
 - preferred_term: PIPES
   concentration:
     value: '6'
@@ -81,6 +99,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  term:
+    id: CHEBI:33403
+    label: elemental sulfur
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -92,6 +113,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -101,14 +125,28 @@ ingredients:
     label: water
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  action: MIX
+  description: Mix ingredients except vitamin solution, sulfur, and Na2S·9H2O.
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH if needed
+  description: Adjust pH to 7.0.
 - step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: AUTOCLAVE
+  description: Autoclave under a N2 atmosphere.
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Filter-sterilize the vitamin solution.
+- step_number: 5
+  action: AUTOCLAVE
+  description: Sterilize sulfur by autoclaving for 60 minutes at 105 C on each of
+    3 successive days.
+- step_number: 6
+  action: AUTOCLAVE
+  description: Neutralize Na2S·9H2O as a 5% solution and autoclave under N2.
+- step_number: 7
+  action: MIX
+  description: Before inoculation, aseptically and anaerobically add vitamin, sulfur,
+    and Na2S·9H2O.
 curation_history:
 - timestamp: '2026-02-20T00:22:35.983280Z'
   curator: nbrc-import
@@ -151,6 +189,12 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=903
+  notes: Preserved the recovered NBRC Medium 903 composition table.
 solutions:
 - preferred_term: Trace minerals
   composition:
@@ -180,6 +224,9 @@ solutions:
     concentration:
       value: '0.1'
       unit: G_PER_L
+    term:
+      id: CHEBI:75836
+      label: FeSO4 x 7 H2O
   - preferred_term: CoSO4·7H2O
     concentration:
       value: '0.1'
@@ -188,14 +235,23 @@ solutions:
     concentration:
       value: '0.1'
       unit: G_PER_L
+    term:
+      id: CHEBI:86158
+      label: CaCl2 x 2 H2O
   - preferred_term: ZnSO4·7H2O
     concentration:
       value: '0.1'
       unit: G_PER_L
+    term:
+      id: CHEBI:32312
+      label: ZnSO4 x 7 H2O
   - preferred_term: CuSO4·5H2O
     concentration:
       value: '0.01'
       unit: G_PER_L
+    term:
+      id: CHEBI:31440
+      label: CuSO4 x 5 H2O
   - preferred_term: AlK(SO4)2
     concentration:
       value: '0.01'
@@ -211,6 +267,9 @@ solutions:
     concentration:
       value: '0.01'
       unit: G_PER_L
+    term:
+      id: CHEBI:75213
+      label: Na2MoO4 x 2 H2O
   - preferred_term: Distilled water
     concentration:
       value: '1'
@@ -239,6 +298,9 @@ solutions:
     concentration:
       value: '10'
       unit: MG_PER_L
+    term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
   - preferred_term: Thiamine-HCl
     concentration:
       value: '5'
@@ -264,6 +326,9 @@ solutions:
     concentration:
       value: '5'
       unit: MG_PER_L
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
   - preferred_term: Vitamin B12
     concentration:
       value: '0.1'
@@ -282,6 +347,9 @@ solutions:
     concentration:
       value: '5'
       unit: MG_PER_L
+    term:
+      id: CHEBI:16494
+      label: (DL)-alpha-Lipoic acid
   - preferred_term: Distilled water
     concentration:
       value: '1'
@@ -290,10 +358,15 @@ solutions:
       id: CHEBI:15377
       label: water
   name: Vitamin solution
-notes: Mix ingredients except vitamin solution, sulfur and Na2S·9H2O, and adjust pH
-  to 7. Autoclave under a N2 atmosphere. Filter-sterilize vitamin solution. Sulfur
-  is sterilized separately by autoclaving for 60 min at 105℃ on each of 3 successive
-  days. Neutralize Na2S·9H2O as 5% solution and autoclave under a N2 atmosphere. Prior
-  to inoculation, aseptically and anaerobically add vitamin, sulfur and Na2S·9H2O.
-  Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed
-  to add minerals. Adjust final pH to 7.0.
+notes: 'Source: NBRC Medium 903 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=903
+
+
+  The NBRC TcP Medium table lists trace-mineral and vitamin stock solutions, pH adjustment
+  to 7.0 before N2 autoclaving, separate sterilization of the vitamin, sulfur, and
+  sulfide additions, and aseptic anaerobic addition before inoculation.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=903

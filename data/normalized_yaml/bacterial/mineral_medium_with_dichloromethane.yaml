@@ -5,6 +5,7 @@ category: bacterial
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
+ph_value: 7.25
 media_term:
   preferred_term: DSMZ Medium 465c
   term:
@@ -67,7 +68,7 @@ ingredients:
     id: CHEBI:64734
     label: EDTA disodium salt (anhydrous)
   concentration:
-    value: '0.5'
+    value: '0.0005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:64734
@@ -77,7 +78,7 @@ ingredients:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
   concentration:
-    value: '0.2'
+    value: '0.0002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
@@ -87,7 +88,7 @@ ingredients:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
   concentration:
-    value: '0.1'
+    value: '0.0001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
@@ -97,7 +98,7 @@ ingredients:
     id: CHEBI:86368
     label: manganese(II) chloride tetrahydrate
   concentration:
-    value: '0.03'
+    value: '0.00003'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
@@ -107,7 +108,7 @@ ingredients:
     id: CHEBI:33118
     label: boric acid
   concentration:
-    value: '0.3'
+    value: '0.0003'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
@@ -117,7 +118,7 @@ ingredients:
     id: CHEBI:53503
     label: cobalt chloride hexahydrate
   concentration:
-    value: '0.2'
+    value: '0.0002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53503
@@ -127,7 +128,7 @@ ingredients:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
   concentration:
-    value: '0.01'
+    value: '0.00001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86318
@@ -137,7 +138,7 @@ ingredients:
     id: CHEBI:34887
     label: nickel dichloride
   concentration:
-    value: '0.02'
+    value: '0.00002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34887
@@ -147,7 +148,7 @@ ingredients:
     id: CHEBI:75213
     label: sodium molybdate dihydrate
   concentration:
-    value: '0.03'
+    value: '0.00003'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
@@ -155,24 +156,45 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare medium 465 (addition of 50 mg/l bromothymol blue as pH-indicator
-    is recommended) and autoclave. Grow the cells in medium 465 with methanol supplied
-    via incubation atmosphere (up to 10 ml methanol per liter medium). Incubate these
-    adapted cells in medium 465 and consecutively feed small amounts of dichloromethane
-    (toxic! 2 mmol per liter or less) via incubation atmosphere. Readjust pH of the
-    culture with sterile 1 M NaOH if necessary.
+  description: Prepare medium 465 with optional 50 mg/l bromothymol blue as pH indicator
+    and autoclave. For DSM 6813, add 10 ml/l instead of 1 ml/l trace element solution
+    SL-4.
 - step_number: 2
   action: MIX
-  description: pH 7.25
+  description: Grow cells in medium 465 with methanol supplied via incubation atmosphere
+    up to 10 ml methanol per liter medium, then feed dichloromethane via the incubation
+    atmosphere at 2 mmol/l or less.
 - step_number: 3
-  action: MIX
-  description: Rehydrate and cultivate lyophilized cells in the complex medium recommended
-    for the specific strain (e.g. medium 1, 220, 535 or 830). After this reactivation,
-    cultivate on mineral medium with the appropriate carbon source.
-- step_number: 4
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
-    N NaOH; then add other compounds.
+  description: Maintain pH 7.25 and readjust the culture with sterile 1 M NaOH if
+    necessary.
+- step_number: 4
+  action: MIX
+  description: Rehydrate lyophilized cells in the appropriate complex medium and then
+    cultivate on mineral medium with the appropriate carbon source.
+- step_number: 5
+  action: ADJUST_PH
+  description: For trace element solution SL-4, first dissolve EDTA in distilled water
+    and adjust to pH 7.0 with 2 N NaOH, then add the other compounds.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/465c
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium465c.pdf
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_465c_MINERAL_MEDIUM_WITH_DICHLOROMETHANE.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:005571
+  name: KOMODO_465c_MINERAL_MEDIUM_WITH_DICHLOROMETHANE
+  notes: KOMODO Medium 465c follows DSMZ Medium 465c and includes the recommended
+    0.05 g/L Bromothymol blue pH indicator.
+- path: data/normalized_yaml/bacterial/for_dsm_6813.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005570
+  name: for_dsm_6813
+  notes: KOMODO Medium 465c.1 applies DSMZ Medium 465c for DSM 6813 with 10 ml/L trace
+    element solution SL-4.
 applications:
 - Microbial cultivation
 curation_history:
@@ -203,3 +225,10 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_dsmz_465c_dichloromethane_score15.py
+  action: RESOLVED_DSMZ_KOMODO_465C_SCORE15
+  changes: Resolved DSMZ/KOMODO Medium 465c ingredient and variant metadata
+  source: https://mediadive.dsmz.de/rest/medium/465c
+  notes: Resolved final DSMZ Medium 465c concentrations after 1:1000 dilution of trace
+    element solution SL-4.

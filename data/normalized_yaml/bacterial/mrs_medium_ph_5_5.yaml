@@ -11,16 +11,142 @@ media_term:
   term:
     id: mediadive.medium:J111
     label: MRS MEDIUM (pH 5.5)
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=111'
+notes: JCM Medium 111 prepares MRS Medium from JCM Medium 1 and adjusts the complete
+  medium to pH 5.5.
 ingredients:
-- preferred_term: MRS medium
+- preferred_term: Casein peptone, tryptic digest
   concentration:
-    value: '1000'
+    value: '10'
     unit: G_PER_L
+  notes: TOGO M1 and JCM Medium 1 list this component for MRS Medium; TOGO M103/JCM
+    Medium 111 adjust the complete medium to pH 5.5.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Beef extract (BD-Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: TOGO M1 and JCM Medium 1 list this component for MRS Medium; TOGO M103/JCM
+    Medium 111 adjust the complete medium to pH 5.5.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: TOGO M1 and JCM Medium 1 list this component for MRS Medium; TOGO M103/JCM
+    Medium 111 adjust the complete medium to pH 5.5.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: TOGO M1 and JCM Medium 1 list this component for MRS Medium; TOGO M103/JCM
+    Medium 111 adjust the complete medium to pH 5.5.
+  term:
+    id: CHEBI:17234
+    label: glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: glucose
+  nutritional_roles:
+  - CARBON_SOURCE
+- preferred_term: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: TOGO M1 and JCM Medium 1 list this component for MRS Medium; TOGO M103/JCM
+    Medium 111 adjust the complete medium to pH 5.5.
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
+    label: polysorbate 80
+- preferred_term: K2HPO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: TOGO M1 and JCM Medium 1 list this component for MRS Medium; TOGO M103/JCM
+    Medium 111 adjust the complete medium to pH 5.5.
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: Sodium acetate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: TOGO M1 and JCM Medium 1 list this component for MRS Medium; TOGO M103/JCM
+    Medium 111 adjust the complete medium to pH 5.5.
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: Diammonium citrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: TOGO M1 and JCM Medium 1 list this component for MRS Medium; TOGO M103/JCM
+    Medium 111 adjust the complete medium to pH 5.5.
+  term:
+    id: CHEBI:63076
+    label: diammonium citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63076
+    label: diammonium citrate
+  nutritional_roles:
+  - NITROGEN_SOURCE
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: TOGO M1 and JCM Medium 1 list this component for MRS Medium; TOGO M103/JCM
+    Medium 111 adjust the complete medium to pH 5.5.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+  - SULFUR_SOURCE
+- preferred_term: MnSO4 x n H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: TOGO M1 and JCM Medium 1 list this component for MRS Medium; TOGO M103/JCM
+    Medium 111 adjust the complete medium to pH 5.5.
+  term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
+  nutritional_roles:
+  - TRACE_ELEMENT
 preparation_steps:
 - step_number: 1
+  action: DISSOLVE
+  description: Dissolve the JCM Medium 1 MRS Medium components in distilled water
+    and bring the volume to 1 L.
+- step_number: 2
   action: ADJUST_PH
-  description: Adjust pH to 5.5.
+  description: Adjust the complete medium to pH 5.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -37,3 +163,28 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MRS MEDIUM (pH 5.5)" to "mrs_medium_ph_5_5" for consistent
     matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_bacterial_togo_score40.py
+  action: RESOLVED_BACTERIAL_JCM_SCORE35_GRAPH
+  changes: Resolved score-35 JCM MRS pH variant graph
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=111; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1;
+    https://togomedium.org/medium/M1
+  notes: JCM Medium 111 prepares MRS Medium from JCM Medium 1 and adjusts the complete
+    medium to pH 5.5.
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M1_MRS_Medium.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:008586
+  name: mrs_medium
+  notes: Adjusts JCM Medium 1 MRS Medium to pH 5.5.
+variant_relationship: PH_VARIANT
+variant_modifications:
+- Adjusts JCM Medium 1 MRS Medium to pH 5.5.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=111
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1
+- reference: https://togomedium.org/medium/M1

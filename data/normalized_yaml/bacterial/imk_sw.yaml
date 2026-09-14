@@ -6,26 +6,41 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Seawater
+- preferred_term: Daigo's IMK Medium
   concentration:
-    value: '1'
+    value: '0.253'
     unit: G_PER_L
-  notes: 'Role: Mineral source, Solvating media; Properties: Undefined component'
+  source: NBRC IMK medium
+  notes: NBRC lists 0.253 g Daigo's IMK Medium from Wako Pure Chemical Industries,
+    Ltd., Product Code 398-01333.
 - preferred_term: Agar (if needed)
   concentration:
     value: '12'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: NBRC IMK medium
+  notes: NBRC lists 12 g agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Seawater
+  concentration:
+    value: '1'
+    unit: L
+  source: NBRC IMK medium
+  notes: NBRC lists 1 L Seawater.
+  term:
+    id: ENVO:00002149
+    label: sea water
 media_term:
   preferred_term: TOGO Medium M1752
   term:
     id: TOGO:M1752
     label: IMK (SW)
-notes: 'Source: https://togomedium.org/medium/M1752
-
-  Original source: NBRC - NBRC_M963
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=963'
+notes: TOGO M1752 cites NBRC Medium 963; NBRC Medium 963 lists Daigo's IMK Medium,
+  optional agar, and seawater.
 applications:
 - Microbial cultivation
 curation_history:
@@ -53,11 +68,22 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
-solutions:
-- preferred_term: Daigo's IMK Medium*
-  composition: []
-  concentration:
-    value: '0.253'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Complex component'
-  name: Unknown solution
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_exact_score25.py
+  action: RESOLVED_TOGO_EXACT_SCORE25_GRAPH
+  changes: Resolved score-25 TOGO exact recipe graph
+  source: https://togomedium.org/medium/M1752; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=963
+  notes: TOGO M1752 cites NBRC Medium 963; NBRC Medium 963 lists Daigo's IMK Medium,
+    optional agar, and seawater.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve 0.253 g Daigo's IMK Medium and 12 g agar, if needed, in 1
+    L Seawater.
+references:
+- reference: https://togomedium.org/medium/M1752
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=963
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients

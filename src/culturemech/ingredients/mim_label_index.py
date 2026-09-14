@@ -432,12 +432,15 @@ def _is_source_compound(identifier: str) -> bool:
 def _local_identifiers(ingredient: Mapping[str, Any]) -> tuple[str | None, str | None]:
     term_id = _nested_identifier(ingredient.get("term"))
     chebi_term_id = _nested_identifier(ingredient.get("chebi_term"))
+    culturemech_term_id = _nested_identifier(ingredient.get("culturemech_term"))
     source_compound_id = term_id if term_id and _is_source_compound(term_id) else None
 
     if chebi_term_id and not _is_source_compound(chebi_term_id):
         return chebi_term_id, source_compound_id
     if term_id and not _is_source_compound(term_id):
         return term_id, source_compound_id
+    if culturemech_term_id:
+        return culturemech_term_id, source_compound_id
     return None, source_compound_id
 
 

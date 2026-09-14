@@ -218,10 +218,23 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_541_sulfurospirillum_score10.py
+  action: RESOLVED_KOMODO_541_SULFUROSPIRILLUM_TOPOLOGY
+  changes: Re-rooted KOMODO Medium 541 Sulfurospirillum exact topology
+  source: DSMZ Medium 541; KOMODO Medium 541 and 541.1
+  notes: Moved exact KOMODO Medium 541 plus its DSM 18149 wrapper under DSMZ Medium
+    541.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_541_SULFUROSPIRILLUM_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005970
-  name: sulfurospirillum_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from the
-    matching DSMZ medium source.
+  name: KOMODO_541_SULFUROSPIRILLUM_MEDIUM
+  notes: KOMODO Medium 541 has the same 16-ingredient signature as DSMZ Medium 541.
+- path: data/normalized_yaml/bacterial/for_dsm_18149.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005969
+  name: for_dsm_18149
+  notes: KOMODO Medium 541.1 applies DSMZ Medium 541 to DSM 18149.
+data_quality_flags:
+- ingredients_curated

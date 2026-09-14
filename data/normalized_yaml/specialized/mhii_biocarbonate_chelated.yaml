@@ -3,6 +3,8 @@ name: MHII biocarbonate Chelated
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: MHII biocarbonate Chelated
 ingredients:
 - preferred_term: Pancreatic digest of casein
   concentration:
@@ -12,6 +14,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  term:
+    id: FOODON:03302088
+    label: Beef extract
 - preferred_term: Starch
   concentration:
     value: '1.5'
@@ -30,7 +35,8 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
 description: Mueller Hinton II Broth for cultivation and antimicrobial susceptibility
   testing; with bicarbonate; Chelated with a resin, and then the resin is removed
-notes: 'Source: FEBA media definitions'
+notes: CultureBotHT imports MHII biocarbonate Chelated as MHII plus sodium bicarbonate,
+  chelated with resin.
 category: specialized
 sources:
 - database: CultureBotHT
@@ -49,8 +55,17 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_exact_score25.py
+  action: MARKED_CULTUREBOTHT_EXACT_SCORE25
+  changes: Marked exact sparse CultureBotHT formula as curated
+  source: CultureBotHT:MHII biocarbonate Chelated; https://github.com/CultureBotAI/CultureBotHT
+  notes: CultureBotHT imports MHII biocarbonate Chelated as MHII plus sodium bicarbonate,
+    chelated with resin.
 data_quality_flags:
 - has_unmapped_ingredients
+- ingredients_curated
+- has_ontology_mappings
 parent_media:
   path: data/normalized_yaml/specialized/mhii_biocarbonate.yaml
   relationship: SOURCE_DUPLICATE
@@ -60,3 +75,6 @@ variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same ingredient and concentration signature; review as possible duplicate source
   record.
+references:
+- reference: CultureBotHT:MHII biocarbonate Chelated
+- reference: https://github.com/CultureBotAI/CultureBotHT

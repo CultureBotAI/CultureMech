@@ -6,15 +6,27 @@ description: 245. NBRC 244.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.6
+media_term:
+  preferred_term: NBRC Medium 244
+  term:
+    id: nbrc.medium:244
+    label: NBRC Medium 244
 ingredients:
 - preferred_term: Yeast extract
   concentration:
     value: '4'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Malt extract
   concentration:
     value: '10'
     unit: G_PER_L
+  term:
+    id: FOODON:03301056
+    label: Malt extract
 - preferred_term: Glucose
   concentration:
     value: '4'
@@ -26,6 +38,9 @@ ingredients:
   concentration:
     value: '750'
     unit: ML_PER_L
+  term:
+    id: ENVO:00002149
+    label: Seawater
 - preferred_term: Distilled water
   concentration:
     value: '250'
@@ -37,16 +52,10 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
-- step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  term:
+    id: CHEBI:2509
+    label: Agar
+preparation_steps: []
 curation_history:
 - timestamp: '2026-02-20T00:22:35.941875Z'
   curator: nbrc-import
@@ -81,4 +90,31 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 2 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
-notes: pH 7.6
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=244
+  notes: Preserved the recovered NBRC Medium 244 composition table.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nbrc_244_score15.py
+  action: LINKED_TOGO_M1466_SOURCE_DUPLICATE
+  source: https://togomedium.org/medium/M1466; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=244
+  notes: Linked TOGO M1466 as a source duplicate of NBRC Medium 244.
+notes: 'Source: NBRC Medium 244 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=244
+
+
+  The NBRC table lists yeast extract, malt extract, glucose, seawater, distilled water,
+  optional agar, and final pH 7.6.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=244
+variant_children:
+- path: data/normalized_yaml/bacterial/togo_medium_m1466.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008008
+  name: togo_medium_m1466
+  notes: TOGO M1466 imports the same NBRC Medium 244 formulation represented by the
+    recovered NBRC Medium 244 source record.

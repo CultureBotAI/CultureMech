@@ -167,7 +167,19 @@ curation_history:
   curator: cleanup_residual_errors.py
   action: CLEANUP_RESIDUAL_ERRORS
   notes: R03_fill_missing_concentration=1
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_reference_wrappers_score40.py
+  action: LINKED_JCM_REFERENCE_WRAPPER_CHILD
+  changes: Linked JCM reference-wrapper child media to source parents
+  notes: Added or refreshed reciprocal parent-child link for bacterial/TOGO_M735_Lowenstein-Jensen_Medium.yaml.
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
 - commercial_product
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M735_Lowenstein-Jensen_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010144
+  name: lowenstein_jensen_medium
+  notes: Source-equivalent TOGO M735 duplicate of JCM Medium 712, which uses commercial
+    BD 220908 Lowenstein-Jensen medium slants.

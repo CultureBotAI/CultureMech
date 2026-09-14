@@ -13,89 +13,154 @@ media_term:
     id: jcm.grmd:1334
     label: NATRONOARCHAEA MEDIUM II
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1334'
-ingredients:
-- preferred_term: Neutral base salt medium (see below)
+ingredients: []
+solutions:
+- preferred_term: Neutral base salt medium
   concentration:
     value: '750.0'
     unit: ML_PER_L
-- preferred_term: Base soda medium (see Medium No. 1207 )
+  source: JCM Medium 1334
+  notes: JCM Medium 1334 adds 750.0 ml/L Neutral base salt medium prepared from the
+    salts listed below the main recipe.
+  composition:
+  - preferred_term: NaCl
+    concentration:
+      value: '240.0'
+      unit: G_PER_L
+    source: JCM Medium 1334
+    notes: JCM Medium 1334 lists 240.0 g/L NaCl.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: KCl
+    concentration:
+      value: '5.0'
+      unit: G_PER_L
+    source: JCM Medium 1334
+    notes: JCM Medium 1334 lists 5.0 g/L KCl.
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+  - preferred_term: K2HPO4
+    concentration:
+      value: '2.5'
+      unit: G_PER_L
+    source: JCM Medium 1334
+    notes: JCM Medium 1334 lists 2.5 g/L K2HPO4.
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+  - preferred_term: NH4Cl
+    concentration:
+      value: '0.4'
+      unit: G_PER_L
+    source: JCM Medium 1334
+    notes: JCM Medium 1334 lists 0.4 g/L NH4Cl.
+    term:
+      id: CHEBI:31206
+      label: ammonium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31206
+      label: ammonium chloride
+  - preferred_term: (NH4)2SO4
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: JCM Medium 1334
+    notes: JCM Medium 1334 lists 0.1 g/L (NH4)2SO4.
+    term:
+      id: CHEBI:62946
+      label: ammonium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:62946
+      label: ammonium sulfate
+- preferred_term: Base soda medium (JCM Medium 1207)
   concentration:
     value: '250.0'
     unit: ML_PER_L
+  source: JCM Medium 1334 / JCM Medium 1207
+  notes: JCM Medium 1334 mixes 250.0 ml/L Base soda medium.
 - preferred_term: 1 M MgCl2 solution
   concentration:
     value: '1.0'
     unit: ML_PER_L
-- preferred_term: Trace vitamins* (see Medium No. 197 )
+  source: JCM Medium 1334
+  notes: JCM Medium 1334 adds 1.0 ml/L 1 M MgCl2 solution.
+  composition:
+  - preferred_term: MgCl2
+    concentration:
+      value: '1.0'
+      unit: MOLAR
+    source: JCM Medium 1334
+    notes: JCM Medium 1334 lists 1.0 M MgCl2.
+    term:
+      id: CHEBI:6636
+      label: magnesium dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:6636
+      label: magnesium dichloride
+- preferred_term: Trace vitamins (JCM Medium 197)
   concentration:
     value: '5.0'
     unit: ML_PER_L
-- preferred_term: Trace element solution (see Medium No. 1079 )
+  source: JCM Medium 1334 / JCM Medium 197
+  notes: JCM Medium 1334 adds 5.0 ml/L filter-sterilized Trace vitamins.
+- preferred_term: Trace element solution (JCM Medium 1079)
   concentration:
     value: '1.0'
     unit: ML_PER_L
-- preferred_term: Se/W solution (see Medium No. 852 )
+  source: JCM Medium 1334 / JCM Medium 1079
+  notes: JCM Medium 1334 adds 1.0 ml/L Trace element solution.
+- preferred_term: Se/W solution (JCM Medium 852)
   concentration:
     value: '0.5'
     unit: ML_PER_L
+  source: JCM Medium 1334 / JCM Medium 852
+  notes: JCM Medium 1334 adds 0.5 ml/L Se/W solution.
 - preferred_term: 10% Yeast extract solution
   concentration:
     value: '0.2'
     unit: ML_PER_L
+  source: JCM Medium 1334
+  notes: JCM Medium 1334 adds 0.2 ml/L autoclaved 10% Yeast extract solution.
+  composition:
+  - preferred_term: Yeast extract
+    concentration:
+      value: '100.0'
+      unit: G_PER_L
+    source: JCM Medium 1334
+    notes: JCM Medium 1334 lists 100.0 g/L Yeast extract.
+    term:
+      id: FOODON:03315426
+      label: Yeast extract
 - preferred_term: 10% Soluble starch solution
   concentration:
     value: '10.0'
     unit: ML_PER_L
-- preferred_term: NaCl
-  concentration:
-    value: '240.0'
-    unit: G_PER_L
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: KCl
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: K2HPO4
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: NH4Cl
-  concentration:
-    value: '0.4'
-    unit: G_PER_L
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: (NH4)2SO4
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:62946
-    label: ammonium sulfate
+  source: JCM Medium 1334
+  notes: JCM Medium 1334 adds 10.0 ml/L autoclaved 10% Soluble starch solution.
+  composition:
+  - preferred_term: Soluble starch
+    concentration:
+      value: '100.0'
+      unit: G_PER_L
+    source: JCM Medium 1334
+    notes: JCM Medium 1334 lists 100.0 g/L Soluble starch.
+    term:
+      id: CHEBI:28017
+      label: starch
+    mediaingredientmech_chebi_term:
+      id: CHEBI:28017
+      label: starch
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -124,3 +189,17 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_jcm_score10_stock_solutions.py
+  action: RESOLVED_JCM_SCORE10_STOCK_SOLUTIONS
+  changes: Moved flat JCM stock additions into solutions
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1334
+  notes: Resolved JCM Medium 1334's inline Neutral base salt medium and simple MgCl2,
+    yeast extract, and soluble starch stocks; kept JCM 1207, JCM 197, JCM 1079, and
+    JCM 852 stocks as sourced opaque cross-references.
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1334
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1207
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1079
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852

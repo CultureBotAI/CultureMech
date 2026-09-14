@@ -8,10 +8,10 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Glycerol
   concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+    value: '10.0'
+    unit: ML_PER_L
+  source: ATCC Medium 35
+  notes: ATCC Medium 35 lists 10.0 ml/L glycerol.
   term:
     id: CHEBI:17754
     label: glycerol
@@ -20,49 +20,31 @@ ingredients:
     label: glycerol
 - preferred_term: Proteose Peptone
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Bordet-Gengou Broth Base (see below)
-  concentration:
-    value: '840'
-    unit: G_PER_L
+  source: ATCC Medium 35
+  notes: ATCC Medium 35 lists 10.0 g/L Proteose Peptone.
+  term:
+    id: MICRO:0000180
+    label: Proteose Peptone
 - preferred_term: Sterile Defibrinated Rabbit Blood
   concentration:
-    value: '150'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '5.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '15'
+    unit: PERCENT_V_V
+  source: ATCC Medium 35
+  notes: ATCC Medium 35 lists 150 ml sterile defibrinated rabbit blood per liter.
   term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: DI Water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: Potato
-  concentration:
-    value: '125'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+    id: UBERON:0000178
+    label: blood
 media_term:
   preferred_term: TOGO Medium M2308
   term:
     id: TOGO:M2308
     label: Bordet Gengou Broth Medium
-notes: 'Source: https://togomedium.org/medium/M2308
-
-  Original URL: https://www.atcc.org/~/media/4A3EC418D3294A4E9678D5BFA6473F4A.ashx'
+notes: TOGO M2308 imports ATCC Medium 35 Bordet Gengou Broth Medium. ATCC Medium 35
+  prepares the broth from 10.0 ml glycerol, 10.0 g Proteose Peptone, 840 ml Bordet-Gengou
+  Broth Base, and 150 ml sterile defibrinated rabbit blood. The broth base is prepared
+  from 125 g potato, 5.5 g NaCl, and DI Water brought back to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -99,3 +81,78 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2307_m2308_bordet_atcc_score15.py
+  action: RESOLVED_TOGO_M2307_M2308_BORDET_ATCC_SCORE15
+  source: https://togomedium.org/medium/M2308; https://www.atcc.org/~/media/4A3EC418D3294A4E9678D5BFA6473F4A.ashx
+  notes: TOGO M2308 imports ATCC Medium 35 Bordet Gengou Broth Medium. ATCC Medium
+    35 prepares the broth from 10.0 ml glycerol, 10.0 g Proteose Peptone, 840 ml Bordet-Gengou
+    Broth Base, and 150 ml sterile defibrinated rabbit blood. The broth base is prepared
+    from 125 g potato, 5.5 g NaCl, and DI Water brought back to 1000 ml.
+ph_value: 6.7
+solutions:
+- preferred_term: Bordet-Gengou Broth Base
+  concentration:
+    value: '840.0'
+    unit: ML_PER_L
+  source: ATCC Medium 35
+  notes: ATCC Medium 35 adds 840 ml/L prepared Bordet-Gengou Broth Base.
+  composition:
+  - preferred_term: Potato
+    concentration:
+      value: '125.0'
+      unit: G_PER_L
+    source: ATCC Medium 35
+    notes: ATCC Medium 35 boils 125 g potato while preparing Bordet-Gengou Broth Base.
+  - preferred_term: NaCl
+    concentration:
+      value: '5.5'
+      unit: G_PER_L
+    source: ATCC Medium 35
+    notes: ATCC Medium 35 lists 5.5 g/L NaCl in Bordet-Gengou Broth Base.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: DI Water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    source: ATCC Medium 35
+    notes: ATCC Medium 35 brings Bordet-Gengou Broth Base back to 1000 ml.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  preparation_notes: Cut and boil 125 g of potato, filter the potato broth through
+    cheesecloth, filter again, and bring the volume back to 1000 ml.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix glycerol and Proteose Peptone into 840 ml prepared Bordet-Gengou
+    Broth Base.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust to pH 6.7 +/- 0.2.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave the base at 121 C.
+- step_number: 4
+  action: COOL
+  description: Cool the base to 45-50 C and add 150 ml sterile defibrinated rabbit
+    blood.
+sterilization:
+  method: AUTOCLAVE
+  notes: ATCC Medium 35 autoclaves the base at 121 C, then cools it to 45-50 C before
+    adding sterile defibrinated rabbit blood.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2308
+- reference: https://www.atcc.org/~/media/4A3EC418D3294A4E9678D5BFA6473F4A.ashx

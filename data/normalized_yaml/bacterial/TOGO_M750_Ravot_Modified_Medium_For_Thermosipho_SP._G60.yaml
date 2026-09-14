@@ -8,10 +8,10 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: NaCl
   concentration:
-    value: '20'
+    value: '20.0'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: JCM Medium 727
+  notes: JCM Medium 727 uses Medium 725 with 20.0 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -23,11 +23,8 @@ media_term:
   term:
     id: TOGO:M750
     label: Ravot Modified Medium For Thermosipho SP. G60
-notes: 'Source: https://togomedium.org/medium/M750
-
-  Original source: JCM - JCM_M727
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=727'
+notes: 'TOGO M750 mirrors JCM Medium 727: Medium 725 with 20.0 g/L NaCl and pH adjusted
+  to 7.0.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -70,13 +67,46 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_wrappers_direct_score20.py
+  action: RESOLVED_JCM_WRAPPERS_DIRECT_SCORE20
+  source: https://togomedium.org/medium/M750; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=727;
+    https://togomedium.org/medium/M748; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=725
+  notes: 'TOGO M750 mirrors JCM Medium 727: Medium 725 with 20.0 g/L NaCl and pH adjusted
+    to 7.0.'
 solutions:
-- preferred_term: RAVOT MODIFIED MEDIUM FOR THERMOANAEROVIBRIO SP. R101 (see Medium
-    [M748])
-  composition: []
-  notes: Cross-reference to Medium M748
+- preferred_term: Ravot Modified Medium For Thermoanaerovibrio SP. R101
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '1000'
+    unit: ML_PER_L
+  notes: JCM Medium 727 uses Medium 725 as the prepared base.
+  culturemech_term:
+    id: CultureMech:010153
+    label: Ravot Modified Medium For Thermoanaerovibrio Sp. R101
 kg_microbe_match: mediadive.medium:74
+ph_value: 7.0
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 725 with 20.0 g/L NaCl.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M748_Ravot_Modified_Medium_For_Thermoanaerovibrio_SP._R101.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:010153
+  name: ravot_modified_medium_for_thermoanaerovibrio_sp_r101
+  notes: Uses Medium 725 with 20.0 g/L NaCl and pH adjusted to 7.0.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- Uses Medium 725 with 20.0 g/L NaCl.
+- Adjusts pH to 7.0.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M750
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=727
+- reference: https://togomedium.org/medium/M748
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=725

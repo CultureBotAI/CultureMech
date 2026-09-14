@@ -377,15 +377,23 @@ curation_history:
     vitamin b12. Each moved component matched the MediaDive stock by name AND value;
     bulk ingredients sharing a name were left in place (#150).'
   changes: Nested 6 ingredient(s) under 3 solution(s); ingredients 37 -> 31
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1010_artificial_seawater_score10.py
+  action: RESOLVED_KOMODO_1010_ARTIFICIAL_SEAWATER_STRAIN_VARIANT
+  changes: Linked as an ARTIFICIAL SEAWATER MEDIUM strain-specific variant
+  source: KOMODO Medium 1010.1
+  notes: KOMODO Medium 1010.1 preserves ARTIFICIAL SEAWATER MEDIUM components and
+    pH 7.2-7.5 but applies the recipe for DSM 15769.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003516
   name: artificial_seawater_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 1010 is the pH 7.2-7.5 ARTIFICIAL SEAWATER MEDIUM base.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 1010.1 preserves ARTIFICIAL SEAWATER MEDIUM components and pH 7.2-7.5
+  but applies the recipe for DSM 15769.
 solutions:
 - preferred_term: Trace element solution SL-10
   composition:
@@ -543,3 +551,5 @@ solutions:
   preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
     asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
     (#150).'
+data_quality_flags:
+- ingredients_curated

@@ -332,12 +332,41 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_19918.yaml
-  relationship: SOURCE_DUPLICATE
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_377_pyrococcus_score10.py
+  action: RESOLVED_KOMODO_377_PYROCOCCUS_TOPOLOGY
+  changes: Promoted KOMODO Medium 377 to the Pyrococcus family parent
+  source: KOMODO Medium 377-377.1, 377 DSM modifiers, and MediaDive Medium 377b
+  notes: Moved the family root from strain-specific KOMODO Medium 377.1 to base KOMODO
+    Medium 377 and reclassified exact-formula records with pH shifts as pH variants.
+variant_children:
+- path: data/normalized_yaml/archaea/pyrococcus_st04_medium.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:001480
+  name: pyrococcus_st04_medium
+  notes: MediaDive Medium 377b applies PYROCOCCUS / STAPHYLOTHERMUS medium at pH 6.8
+    for MediaDive Medium 377b.
+- path: data/normalized_yaml/bacterial/for_dsm_19918.yaml
+  relationship: PH_VARIANT
   id: CultureMech:005112
   name: for_dsm_19918
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+  notes: KOMODO Medium 377.1 applies PYROCOCCUS / STAPHYLOTHERMUS medium at pH 7 for
+    DSM 19918.
+- path: data/normalized_yaml/bacterial/medium_377_modified_for_dsm_12428.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:005109
+  name: medium_377_modified_for_dsm_12428
+  notes: KOMODO Medium 377_12428 applies PYROCOCCUS / STAPHYLOTHERMUS medium at pH
+    6.8 for DSM 12428.
+- path: data/normalized_yaml/bacterial/medium_377_modified_for_dsm_13482.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:005110
+  name: medium_377_modified_for_dsm_13482
+  notes: KOMODO Medium 377_13482 applies PYROCOCCUS / STAPHYLOTHERMUS medium at pH
+    6.8 for DSM 13482.
+- path: data/normalized_yaml/bacterial/medium_377_modified_for_dsm_15127.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:005111
+  name: medium_377_modified_for_dsm_15127
+  notes: KOMODO Medium 377_15127 applies PYROCOCCUS / STAPHYLOTHERMUS medium at pH
+    6.8 for DSM 15127.

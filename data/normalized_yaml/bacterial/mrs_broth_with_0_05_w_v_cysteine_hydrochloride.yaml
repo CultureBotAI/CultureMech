@@ -9,24 +9,27 @@ ingredients:
 - preferred_term: Cysteine hydrochloride
   concentration:
     value: '0.05'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
+    unit: PERCENT_W_V
+  source: TOGO M2804
+  notes: TOGO M2804 lists 0.05 % w/v Cysteine hydrochloride.
   term:
     id: CHEBI:91248
     label: L-cysteine hydrochloride hydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
     label: L-cysteine hydrochloride hydrate
-- preferred_term: MRS broth (Oxoid)
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  nutritional_roles:
+  - AMINO_ACID_SOURCE
+  - NITROGEN_SOURCE
+  - SULFUR_SOURCE
+  physicochemical_roles:
+  - REDUCING_AGENT
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+    value: '1.0'
+    unit: L
+  source: TOGO M2804
+  notes: TOGO M2804 lists 1.0 L Distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -37,78 +40,142 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  source: TOGO M2804
+  notes: TOGO M2804 lists 0.2 g/L Magnesium sulphate 7H2O.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
 - preferred_term: Yeast extract
   concentration:
-    value: '4'
+    value: '4.0'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M2804
+  notes: TOGO M2804 lists 4.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
 - preferred_term: Dipotassium hydrogen phosphate
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
+  source: TOGO M2804
+  notes: TOGO M2804 lists 2.0 g/L Dipotassium hydrogen phosphate.
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
 - preferred_term: Manganese sulphate 4H2O
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  source: TOGO M2804
+  notes: TOGO M2804 lists 0.05 g/L Manganese sulphate 4H2O.
+  term:
+    id: CHEBI:86358
+    label: manganese(II) sulfate tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86358
+    label: manganese(II) sulfate tetrahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
 - preferred_term: Sorbitan mono-oleate
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
+    value: '1.0'
+    unit: ML_PER_L
+  source: TOGO M2804
+  notes: TOGO M2804 lists 1.0 ml/L Sorbitan mono-oleate.
+  nutritional_roles:
+  - CARBON_SOURCE
+  physicochemical_roles:
+  - SURFACTANT
 - preferred_term: Triammonium citrate
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
-    Simple component'
+  source: TOGO M2804
+  notes: TOGO M2804 lists 2.0 g/L Triammonium citrate.
   term:
     id: CHEBI:63037
     label: triammonium citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63037
+    label: triammonium citrate
+  nutritional_roles:
+  - NITROGEN_SOURCE
+  physicochemical_roles:
+  - BUFFER
 - preferred_term: Sodium acetate 3H2O
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  source: TOGO M2804
+  notes: TOGO M2804 lists 5.0 g/L Sodium acetate 3H2O.
+  term:
+    id: CHEBI:32138
+    label: sodium acetate trihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32138
+    label: sodium acetate trihydrate
+  physicochemical_roles:
+  - BUFFER
 - preferred_term: Glucose
   concentration:
-    value: '20'
+    value: '20.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
+  source: TOGO M2804
+  notes: TOGO M2804 lists 20.0 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
-- preferred_term: '`Lab-Lemco’ powder'
+  nutritional_roles:
+  - CARBON_SOURCE
+- preferred_term: Lab-Lemco powder (Oxoid)
   concentration:
-    value: '8'
+    value: '8.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2804
+  notes: TOGO M2804 lists 8.0 g/L Lab-Lemco powder (Oxoid).
+  nutritional_roles:
+  - PROTEIN_SOURCE
 - preferred_term: Peptone
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
+  source: TOGO M2804
+  notes: TOGO M2804 lists 10.0 g/L Peptone.
+  term:
+    id: MICRO:0000178
+    label: Peptone
+  nutritional_roles:
+  - PROTEIN_SOURCE
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the MRS broth (Oxoid) components, add 0.05% w/v cysteine hydrochloride,
+    and adjust pH to 6.2 +/- 0.2 at 25 C.
 media_term:
   preferred_term: TOGO Medium M2804
   term:
     id: TOGO:M2804
     label: MRS broth with 0.05% (w/v) cysteine hydrochloride
-notes: 'Source: https://togomedium.org/medium/M2804'
+notes: TOGO M2804 lists the TOGO M2242 MRS broth (Oxoid) formula supplemented with
+  0.05% w/v cysteine hydrochloride at pH 6.2 +/- 0.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -139,3 +206,31 @@ curation_history:
   notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2242_m2796_m2804_mrs_broths_score15.py
+  action: RESOLVED_TOGO_M2804_MRS_CYSTEINE_SCORE15
+  source: https://togomedium.org/medium/M2804; https://togomedium.org/medium/M2242
+  notes: TOGO M2804 lists the TOGO M2242 MRS broth (Oxoid) formula supplemented with
+    0.05% w/v cysteine hydrochloride at pH 6.2 +/- 0.2. Corrected imported one-liter
+    water units, normalized source gram and milliliter quantities, added the source
+    pH range, and grounded unambiguous components.
+ph_range:
+  min: 6.0
+  max: 6.4
+parent_media:
+  path: data/normalized_yaml/bacterial/mrs_broth_oxoid.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:008831
+  name: mrs_broth_oxoid
+  notes: TOGO M2804 supplements the TOGO M2242 MRS broth (Oxoid) formulation with
+    0.05% w/v cysteine hydrochloride.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Add 0.05% w/v cysteine hydrochloride.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2804
+- reference: https://togomedium.org/medium/M2242

@@ -4,127 +4,378 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: Artificial Seawater Medium
+  term:
+    id: UTEX:artificial-seawater-medium
+    label: Artificial Seawater Medium
+ph_value: 8.1
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
+notes: UTEX prepares Artificial Seawater Medium from dH2O, salts, Tricine buffer,
+  P-II Metal Solution, Chelated Iron Solution, NH4Cl, and Vitamin B12 adjusted to
+  pH 8.1 and 18 ppt salinity.
 ingredients:
+- preferred_term: dH2O
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: UTEX starts the 1 L Artificial Seawater recipe with approximately 850 mL
+    dH2O.
 - preferred_term: NaCl
   concentration:
     value: '0.31'
     unit: MOLAR
-  notes: 'UTEX lists: amount 18 g/L; final 0.31 M'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: S271-500
-- preferred_term: MgSO4•7H2O
+  notes: UTEX lists 18 g/L NaCl, for 0.31 M final.
+  physicochemical_roles:
+  - OSMOTIC_AGENT
+- preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '10.5'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 26 g/100 mL dH20; final 10.5 mM'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: '230391'
+  notes: UTEX adds 10 mL/L of a 26 g/100 mL dH2O stock.
+  nutritional_roles:
+  - SULFUR_SOURCE
+  - TRACE_ELEMENT
 - preferred_term: KCl
   concentration:
     value: '8'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 6 g/100 mL dH20; final 8 mM'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: P 217
+  notes: UTEX adds 10 mL/L of a 6 g/100 mL dH2O stock.
 - preferred_term: NaNO3
   concentration:
     value: '11.8'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 10 g/100 mL dH20; final 11.8 mM'
+  term:
+    id: CHEBI:63005
+    label: sodium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: BP360-500
-- preferred_term: CaCl2•2H2O
+  notes: UTEX adds 10 mL/L of a 10 g/100 mL dH2O stock.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '2'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 3 g/100 mL dH20; final 2 mM'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: C-3881
+  notes: UTEX adds 10 mL/L of a 3 g/100 mL dH2O stock.
 - preferred_term: KH2PO4
   concentration:
     value: '0.37'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 0.5 g/100 mL dH20; final 0.37 mM'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: P 0662
-- preferred_term: Tricine (adjust to pH 8)
+  notes: UTEX adds 10 mL/L of a 0.5 g/100 mL dH2O stock.
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: Tricine
   concentration:
     value: '25'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 20 mL/L; stock 22.4 g/100 mL dH20; final 25 mM'
+  term:
+    id: CHEBI:46760
+    label: Tricine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:46760
+    label: Tricine
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: T-5816-256
-- preferred_term: P-II Metal Solution
-  concentration:
-    value: '10'
-    unit: ML_PER_L
-  notes: 'UTEX lists: amount 10 mL/L'
-- preferred_term: Chelated Iron Solution
-  concentration:
-    value: '1'
-    unit: ML_PER_L
-  notes: 'UTEX lists: amount 1 mL/L'
+  notes: UTEX adds 20 mL/L of a 22.4 g/100 mL stock adjusted to pH 8.
+  physicochemical_roles:
+  - BUFFER
 - preferred_term: NH4Cl
   concentration:
     value: '0.5'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 2.7 g/100 mL dH20; final 0.5 mM'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: A 649-500
+  notes: UTEX adds 1 mL/L of a 2.7 g/100 mL dH2O stock.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+solutions:
+- preferred_term: P-II Metal Solution
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX brings P-II Metal Solution to 100 mL with dH2O.
+  - preferred_term: Na2EDTA x 2 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    notes: Converted from 0.1 g/100 mL in the UTEX P-II Metal Solution recipe.
+    physicochemical_roles:
+    - CHELATOR
+  - preferred_term: H3BO3
+    concentration:
+      value: '1.14'
+      unit: G_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+    notes: Converted from 0.114 g/100 mL in the UTEX P-II Metal Solution recipe.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: FeCl3 x 6 H2O
+    concentration:
+      value: '0.049'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    notes: Converted from 4.9 mg/100 mL in the UTEX P-II Metal Solution recipe.
+    nutritional_roles:
+    - IRON_SOURCE
+    - TRACE_ELEMENT
+  - preferred_term: MnSO4 x H2O
+    concentration:
+      value: '0.164'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86364
+      label: manganese(II) sulfate monohydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86364
+      label: manganese(II) sulfate monohydrate
+    notes: Converted from 16.4 mg/100 mL in the UTEX P-II Metal Solution recipe.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.022'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    notes: Converted from 2.2 mg/100 mL in the UTEX P-II Metal Solution recipe.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.0048'
+      unit: G_PER_L
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    notes: Converted from 0.48 mg/100 mL in the UTEX P-II Metal Solution recipe; UTEX
+      notes CoCl2 and CoSO4 are interchangeable.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  notes: UTEX adds 10 mL P-II Metal Solution per liter of Artificial Seawater Medium.
+- preferred_term: Chelated Iron Solution
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX separately prepares 500 mL EDTA and FeCl3/HCl solutions before combining
+      them.
+  - preferred_term: Na2EDTA x 2 H2O
+    concentration:
+      value: '10'
+      unit: G_PER_L
+    term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    notes: UTEX dissolves 10 g Na2EDTA x 2 H2O in a 500 mL component that is later
+      combined into 1 L Chelated Iron Solution.
+    physicochemical_roles:
+    - CHELATOR
+  - preferred_term: HCl
+    concentration:
+      value: '45'
+      unit: MILLIMOLAR
+    term:
+      id: CHEBI:17883
+      label: hydrogen chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17883
+      label: hydrogen chloride
+    notes: Converted from 450 mL of 0.1 M HCl in a 1 L final Chelated Iron Solution
+      stock.
+  - preferred_term: FeCl3 x 6 H2O
+    concentration:
+      value: '0.81'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    notes: UTEX dissolves 0.81 g FeCl3 x 6 H2O in a 500 mL component that is later
+      combined into 1 L Chelated Iron Solution.
+    nutritional_roles:
+    - IRON_SOURCE
+    - TRACE_ELEMENT
+  notes: UTEX adds 1 mL Chelated Iron Solution per liter of Artificial Seawater Medium.
 - preferred_term: Vitamin B12
   concentration:
     value: '1'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 1 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX prepares the Vitamin B12 stock in 200 mL HEPES buffer.
+  - preferred_term: HEPES buffer pH 7.8
+    concentration:
+      value: '12'
+      unit: G_PER_L
+    term:
+      id: CHEBI:42334
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:42334
+      label: HEPES
+    notes: Converted from 2.4 g/200 mL in the UTEX Vitamin B12 stock.
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.135'
+      unit: G_PER_L
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+    notes: Converted from 0.027 g/200 mL in the UTEX Vitamin B12 stock.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  notes: UTEX adds 1 mL Vitamin B12 stock per liter.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: To approximately 850 mL dH2O, add the salts, Tricine, P-II Metal Solution,
+    Chelated Iron Solution, and NH4Cl.
 - step_number: 2
-  action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  action: ADJUST_PH
+  description: Adjust the medium to pH 8.1.
 - step_number: 3
   action: MIX
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
+  description: Bring the total volume to 1 L with dH2O.
 - step_number: 4
-  action: MIX
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
+  action: AUTOCLAVE
+  description: Cover and autoclave the medium.
 - step_number: 5
   action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
+  description: Add sterile Vitamin B12 after the medium cools.
 - step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: MIX
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
-salinity: marine (natural seawater or artificial seawater)
+  action: STORE
+  description: Store at refrigerator temperature.
+salinity: 18 ppt
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -159,9 +410,20 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_bristol_bold_score35.py
+  action: RESOLVED_UTEX_BRISTOL_BOLD_SCORE35
+  changes: Grounded UTEX score-35 Bristol/Bold/Erdschreiber components
+  source: https://utex.org/products/artificial-seawater-medium
+  notes: UTEX prepares Artificial Seawater Medium from dH2O, salts, Tricine buffer,
+    P-II Metal Solution, Chelated Iron Solution, NH4Cl, and Vitamin B12 adjusted to
+    pH 8.1 and 18 ppt salinity.
 references:
 - reference: UTEX:artificial-seawater-medium
 - reference: https://utex.org/products/artificial-seawater-medium
+- reference: https://utex.org/products/p-ii-metal-solution
+- reference: https://utex.org/products/chelated-iron-solution
+- reference: https://utex.org/products/vitamin-b-12
 original_name: Artificial Seawater Medium
 variants:
 - name: modified_artificial_seawater_hemiaulus_richelia_symbiosis
@@ -242,3 +504,6 @@ target_organisms:
       explanation: Literature evidence directly reports growth of Synechocystis sp.
         PCC 6803 in supplemented artificial seawater medium.
     is_max_attainment: false
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

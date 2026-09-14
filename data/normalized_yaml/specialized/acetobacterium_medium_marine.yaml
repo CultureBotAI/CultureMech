@@ -406,3 +406,43 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_135_acetobacterium_score10.py
+  action: RESOLVED_KOMODO_135_ACETOBACTERIUM_PH_TOPOLOGY
+  changes: Promoted DSMZ Medium 135a to the KOMODO 135 pH parent
+  source: DSMZ Medium 135a; KOMODO Medium 135, 135.1, 135.2, 135.3
+  notes: Grouped the KOMODO 135 pH 6.5 and pH 8.2 wrappers under the marine Acetobacterium
+    base.
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_135_ACETOBACTERIUM_medium.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:004107
+  name: KOMODO_135_ACETOBACTERIUM_medium
+  notes: KOMODO Medium 135 applies the marine Acetobacterium signature and adds variable
+    sodium carbonate for pH adjustment at pH 8.2 for ACETOBACTERIUM medium.
+- path: data/normalized_yaml/bacterial/for_autotrophic_growth.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:004102
+  name: for_autotrophic_growth
+  notes: KOMODO Medium 135.1 applies the marine Acetobacterium signature and adds
+    variable sodium carbonate for pH adjustment at pH 8.2 for autotrophic growth.
+- path: data/normalized_yaml/bacterial/for_dsm_1974.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:004103
+  name: for_dsm_1974
+  notes: KOMODO Medium 135.2 applies the marine Acetobacterium signature at pH 6.5
+    for DSM 1974.
+- path: data/normalized_yaml/bacterial/for_dsm_4132.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:004104
+  name: for_dsm_4132
+  notes: KOMODO Medium 135.3 applies the marine Acetobacterium signature and adds
+    variable sodium carbonate for pH adjustment at pH 8.2 for DSM 4132.
+- path: data/normalized_yaml/bacterial/medium_135_modified_for_dsm_7417.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:004105
+  name: medium_135_modified_for_dsm_7417
+  notes: KOMODO Medium 135_7417 applies the marine Acetobacterium signature at pH
+    6.5 for DSM 7417.
+data_quality_flags:
+- ingredients_curated

@@ -338,27 +338,28 @@ curation_history:
 - timestamp: '2026-06-08T23:19:27.990819+00:00'
   curator: chebi-regrounding-v1.0
   action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
-  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
 - timestamp: '2026-06-10T07:46:44.770789+00:00'
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-variant_children:
-- path: data/normalized_yaml/bacterial/for_strain_dsm_4310.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005174
-  name: for_strain_dsm_4310
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/methanococcus_voltae_medium.yaml
-  relationship: SOURCE_DUPLICATE
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_391_wmc_score10.py
+  action: RESOLVED_KOMODO_391_WMC_TOPOLOGY
+  changes: Linked as a KOMODO Medium 391 strain-specific variant
+  source: KOMODO Medium 391.1
+  notes: KOMODO Medium 391.1 applies WMC medium to DSM 4254.
+parent_media:
+  path: data/normalized_yaml/archaea/methanococcus_voltae_medium.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:001498
   name: methanococcus_voltae_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/wmc_medium.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005175
-  name: wmc_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 391.1 applies WMC medium to DSM 4254.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
+variant_modifications:
+- KOMODO Medium 391.1 applies WMC medium to DSM 4254.
+data_quality_flags:
+- ingredients_curated

@@ -2,6 +2,7 @@ id: CultureMech:005653
 name: pennassay_broth
 original_name: Pennassay Broth
 category: bacterial
+record_kind: SOLUTION
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID

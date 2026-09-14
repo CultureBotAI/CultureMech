@@ -27,6 +27,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Meat extract
   concentration:
     value: '1'
@@ -74,6 +77,12 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_bacterial_score10_extracts.py
+  action: GROUNDED_BACTERIAL_EXTRACTS_SCORE10
+  changes: Grounded exact bacterial extract mappings
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied exact MediaIngredientMech mappings for Yeast extract.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml
   relationship: CONCENTRATION_VARIANT

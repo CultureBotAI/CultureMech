@@ -6,65 +6,79 @@ term:
 composition:
 - preferred_term: NaCl
   concentration:
-    value: '240'
+    value: '240.0'
     unit: G_PER_L
+  source: TOGO M578 / JCM Medium 574
+  notes: JCM Medium 574 lists 240.0 g NaCl in MDS salt water.
   term:
-    id: mediadive.compound:43
-    label: NaCl
-  chebi_term:
     id: CHEBI:26710
     label: sodium chloride
-    confidence: 1.0
-    match_type: exact_match
-- preferred_term: MgCl2 x 6 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: MgCl2 x 6H2O
   concentration:
-    value: '30'
+    value: '30.0'
     unit: G_PER_L
+  source: TOGO M578 / JCM Medium 574
+  notes: JCM Medium 574 lists 30.0 g MgCl2 x 6H2O in MDS salt water.
   term:
-    id: mediadive.compound:79
-    label: MgCl2 x 6 H2O
-  chebi_term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-    match_type: corpus_consensus
-- preferred_term: MgSO4 x 7 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: MgSO4 x 7H2O
   concentration:
-    value: '35'
+    value: '35.0'
     unit: G_PER_L
+  source: TOGO M578 / JCM Medium 574
+  notes: JCM Medium 574 lists 35.0 g MgSO4 x 7H2O in MDS salt water.
   term:
-    id: mediadive.compound:8
-    label: MgSO4 x 7 H2O
-  chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-    confidence: 0.7
-    match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: KCl
   concentration:
-    value: '7'
+    value: '7.0'
     unit: G_PER_L
+  source: TOGO M578 / JCM Medium 574
+  notes: JCM Medium 574 lists 7.0 g KCl in MDS salt water.
   term:
-    id: mediadive.compound:61
-    label: KCl
-  chebi_term:
     id: CHEBI:32588
     label: potassium chloride
-    confidence: 1.0
-    match_type: exact_match
-- preferred_term: CaCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: 1 M CaCl2 solution
   concentration:
-    value: '0.5549'
-    unit: G_PER_L
+    value: '5.0'
+    unit: ML_PER_L
+  source: TOGO M578 / JCM Medium 574
+  notes: JCM Medium 574 adds 5 ml 1 M CaCl2 solution to MDS salt water.
   term:
-    id: mediadive.compound:81
-    label: CaCl2
-  chebi_term:
     id: CHEBI:3312
     label: calcium dichloride
-    confidence: 1.0
-    match_type: exact_match
-preparation_notes: Add components to distilled water and bring volume to 1.0 L. Adjust
-  pH to 7.5 with 1 M Tris base.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: TOGO M578 / JCM Medium 574
+  notes: JCM Medium 574 lists 1.0 L Distilled water in MDS salt water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+preparation_notes: Add NaCl, MgCl2 x 6H2O, MgSO4 x 7H2O, KCl, and 5.0 ml/L 1 M CaCl2
+  solution to distilled water, bring to 1.0 L, and adjust to pH 7.5 with 1 M Tris
+  base.
 curation_history:
 - timestamp: '2026-03-13T06:20:31.090891Z'
   curator: culturemech-id-assigner-v1.0
@@ -98,11 +112,18 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m938_score15.py
+  action: RESOLVED_MEDIADIVE_4404_MDS_SALT_WATER
+  source: https://togomedium.org/medium/M578; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=574
+  notes: Replaced the placeholder top-level ingredient and flattened CaCl2 mass row
+    with the JCM Medium 574 MDS stock formula.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
 category: bacterial
+notes: MediaDive solution 4404 is the MDS salt-water stock from TOGO M578/JCM Medium
+  574, used by 5% Salt Water Growth Medium and other salt-water media.
+references:
+- reference: https://togomedium.org/medium/M578
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=574

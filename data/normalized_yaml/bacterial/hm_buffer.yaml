@@ -2,37 +2,52 @@ id: CultureMech:009705
 name: hm_buffer
 original_name: HM Buffer
 category: bacterial
-medium_type: COMPLEX
-composition_type: UNDEFINED
+medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
+ph_value: 7.4
 ingredients:
-- preferred_term: HEPES
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
-  term:
-    id: CHEBI:46756
-    label: HEPES
-  mediaingredientmech_chebi_term:
-    id: CHEBI:46756
-    label: HEPES
 - preferred_term: UPW
   concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1000.0'
+    unit: ML_PER_L
+  source: NBRC Medium 1663
+  notes: NBRC Medium 1663 fills the 0.5 M HEPES dilution to 100 ml with UPW, normalized
+    here as q.s. to 1000.0 ml/L.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M3294
   term:
     id: TOGO:M3294
     label: HM Buffer
-notes: 'Source: https://togomedium.org/medium/M3294
-
-  Original source: NBRC - NBRC_M1663
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1663'
+notes: TOGO M3294 imports NBRC Medium 1663 HM Buffer. NBRC 1663 prepares the buffer
+  from 5 ml 0.5 M HEPES filled to 100 ml with UPW, adjusted to pH 7.4, autoclaved,
+  then supplemented with 600 ul 0.5 M CaCl2 and 333 ul 0.6 M MgCl2. Volumes are normalized
+  10x from the 100 ml source recipe.
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Prepare filter-sterilized 0.5 M CaCl2 and 0.6 M MgCl2 stocks.
+- step_number: 2
+  action: MIX
+  description: Dilute 50.0 ml/L 0.5 M HEPES to 1000.0 ml/L with UPW.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 7.4.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Sterilize the HEPES/UPW base by autoclaving.
+- step_number: 5
+  action: MIX
+  description: After autoclaving, add 6.0 ml/L 0.5 M CaCl2 stock and 3.33 ml/L 0.6
+    M MgCl2 stock.
+sterilization:
+  method: AUTOCLAVE
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,19 +89,85 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m3294_hm_buffer_score15.py
+  action: RESOLVED_TOGO_M3294_HM_BUFFER_SCORE15
+  source: https://togomedium.org/medium/M3294; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1663
+  notes: TOGO M3294 imports NBRC Medium 1663 HM Buffer. NBRC 1663 prepares the buffer
+    from 5 ml 0.5 M HEPES filled to 100 ml with UPW, adjusted to pH 7.4, autoclaved,
+    then supplemented with 600 ul 0.5 M CaCl2 and 333 ul 0.6 M MgCl2. Volumes are
+    normalized 10x from the 100 ml source recipe. Converted the imported HEPES, UPW,
+    CaCl2, and MgCl2 g/L artifacts to source volumes; expanded the salt stock solutions;
+    added pH 7.4 and preparation steps; and grounded all disclosed chemical components.
 solutions:
-- preferred_term: CaCl2 solution
-  composition: []
+- preferred_term: 0.5 M HEPES
   concentration:
-    value: '600'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
-    component'
-  name: Unknown solution
-- preferred_term: MgCl2 solution
-  composition: []
+    value: '50.0'
+    unit: ML_PER_L
+  source: NBRC Medium 1663
+  notes: NBRC Medium 1663 dilutes 5 ml 0.5 M HEPES to 100 ml before pH adjustment
+    and autoclaving.
+  composition:
+  - preferred_term: HEPES
+    concentration:
+      value: '0.5'
+      unit: MOLAR
+    source: NBRC Medium 1663
+    notes: NBRC Medium 1663 uses a 0.5 M HEPES stock.
+    term:
+      id: CHEBI:46756
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:46756
+      label: HEPES
+  name: 0.5 M HEPES
+- preferred_term: 0.5 M CaCl2 solution
   concentration:
-    value: '333'
-    unit: G_PER_L
-  notes: 'Role: Mineral source'
-  name: Unknown solution
+    value: '6.0'
+    unit: ML_PER_L
+  source: NBRC Medium 1663
+  notes: NBRC Medium 1663 adds 600 ul 0.5 M CaCl2 solution to the 100 ml autoclaved
+    HEPES base.
+  composition:
+  - preferred_term: CaCl2
+    concentration:
+      value: '0.5'
+      unit: MOLAR
+    source: NBRC Medium 1663
+    notes: NBRC Medium 1663 uses a 0.5 M CaCl2 stock.
+    term:
+      id: CHEBI:3312
+      label: calcium dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:3312
+      label: calcium dichloride
+  name: 0.5 M CaCl2 solution
+  preparation_notes: Filter-sterilize before post-autoclave addition.
+- preferred_term: 0.6 M MgCl2 solution
+  concentration:
+    value: '3.33'
+    unit: ML_PER_L
+  source: NBRC Medium 1663
+  notes: NBRC Medium 1663 adds 333 ul 0.6 M MgCl2 solution to the 100 ml autoclaved
+    HEPES base.
+  composition:
+  - preferred_term: MgCl2
+    concentration:
+      value: '0.6'
+      unit: MOLAR
+    source: NBRC Medium 1663
+    notes: NBRC Medium 1663 uses a 0.6 M MgCl2 stock.
+    term:
+      id: CHEBI:6636
+      label: magnesium dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:6636
+      label: magnesium dichloride
+  name: 0.6 M MgCl2 solution
+  preparation_notes: Filter-sterilize before post-autoclave addition.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M3294
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1663

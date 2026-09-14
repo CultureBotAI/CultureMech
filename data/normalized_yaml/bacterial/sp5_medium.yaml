@@ -5,32 +5,64 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.2
 ingredients:
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Agar (if needed)
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
 - preferred_term: Bacto Casitone (Difco)
   concentration:
-    value: '9'
+    value: '9.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M1539 / NBRC Medium 331
+  notes: TOGO M1539 / NBRC Medium 331 lists 9 g/L Bacto Casitone from Difco; this
+    commercial casein digest is retained as an opaque complex component.
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: TOGO M1539 / NBRC Medium 331
+  notes: TOGO M1539 / NBRC Medium 331 lists 1 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: TOGO M1539 / NBRC Medium 331
+  notes: TOGO M1539 / NBRC Medium 331 lists 15 g/L Agar as an optional solidifying
+    agent.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Seawater
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: TOGO M1539 / NBRC Medium 331
+  notes: TOGO M1539 / NBRC Medium 331 lists 1 L/L Seawater and allows either filtered,
+    aged seawater or Daigo's Artificial Seawater SP; the exact salt composition is
+    source-variable.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve Bacto Casitone and Yeast extract in Seawater.
+- step_number: 2
+  action: MIX
+  description: Add Agar when a solid SP5 medium is needed.
+- step_number: 3
+  action: ADJUST_PH
+  description: Bring SP5 Medium to pH 7.2.
 media_term:
   preferred_term: TOGO Medium M1539
   term:
     id: TOGO:M1539
     label: SP5 Medium
-notes: 'Source: https://togomedium.org/medium/M1539
-
-  Original source: NBRC - NBRC_M331
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=331'
+notes: TOGO M1539 imports SP5 Medium from NBRC Medium 331. NBRC Medium 331 lists 9
+  g Bacto Casitone from Difco, 1 g Yeast extract, optional 15 g Agar, and 1 L Seawater
+  per liter, with the final pH at 7.2. The NBRC footnote defines the seawater as filtered,
+  aged seawater or artificial seawater from Daigo's Artificial Seawater SP.
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,13 +90,22 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
-solutions:
-- preferred_term: Seawater*
-  term:
-    id: mediadive.solution:1801
-    label: Seawater
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: See mediadive_1801_Seawater.yaml for composition
-  name: Unknown solution
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m1539_sp5_score15.py
+  action: RESOLVED_TOGO_M1539_SP5_SCORE15
+  source: https://togomedium.org/medium/M1539; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=331
+  notes: TOGO M1539 imports SP5 Medium from NBRC Medium 331. NBRC Medium 331 lists
+    9 g Bacto Casitone from Difco, 1 g Yeast extract, optional 15 g Agar, and 1 L
+    Seawater per liter, with the final pH at 7.2. The NBRC footnote defines the seawater
+    as filtered, aged seawater or artificial seawater from Daigo's Artificial Seawater
+    SP. Corrected the imported seawater unit, replaced the MediaDive seawater stock
+    reference with the official NBRC source-level seawater input, grounded yeast extract
+    and optional agar, and kept Bacto Casitone and seawater as sourced unmapped complex
+    inputs.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1539
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=331

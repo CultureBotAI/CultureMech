@@ -14,9 +14,450 @@ media_term:
       119)
     label: METHANOSARCINA (thermophilic) medium_replace_Rumen fluid, clarified_with_Sludge
       fluid (medium 119)
-notes: 'Source: KOMODO ModelSEED | ID: 164_replace_Rumen fluid, clarified_with_Sludge
-  fluid (medium 119) | DSMZ Medium: 164 (mediadive.medium:164) | Aerobic: No'
-ingredients: []
+notes: Archived DSMZ Medium 164 defines METHANOSARCINA (thermophilic) MEDIUM as DSMZ
+  Medium 120 supplemented with 5% (v/v) clarified rumen fluid or sludge fluid from
+  DSMZ Medium 119 and with NaHCO3 increased to 2 g/L; this KOMODO replacement record
+  uses sludge fluid from DSMZ Medium 119.
+ingredients:
+- preferred_term: K2HPO4
+  source: Archived DSMZ Medium 120
+  notes: DSMZ/KOMODO Medium 164 sludge variant derives 0.348 G_PER_L K2HPO4 from Archived
+    DSMZ Medium 120.
+  concentration:
+    value: '0.348'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: KH2PO4
+  source: Archived DSMZ Medium 120
+  notes: DSMZ/KOMODO Medium 164 sludge variant derives 0.227 G_PER_L KH2PO4 from Archived
+    DSMZ Medium 120.
+  concentration:
+    value: '0.227'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: NH4Cl
+  source: Archived DSMZ Medium 120
+  notes: DSMZ/KOMODO Medium 164 sludge variant derives 0.500 G_PER_L NH4Cl from Archived
+    DSMZ Medium 120.
+  concentration:
+    value: '0.500'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: MgSO4 x 7 H2O
+  source: Archived DSMZ Medium 120
+  notes: DSMZ/KOMODO Medium 164 sludge variant derives 0.500 G_PER_L MgSO4 x 7 H2O
+    from Archived DSMZ Medium 120.
+  concentration:
+    value: '0.500'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: CaCl2 x 2 H2O
+  source: Archived DSMZ Medium 120
+  notes: DSMZ/KOMODO Medium 164 sludge variant derives 0.250 G_PER_L CaCl2 x 2 H2O
+    from Archived DSMZ Medium 120.
+  concentration:
+    value: '0.250'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: NaCl
+  source: Archived DSMZ Medium 120
+  notes: DSMZ/KOMODO Medium 164 sludge variant derives 2.250 G_PER_L NaCl from Archived
+    DSMZ Medium 120.
+  concentration:
+    value: '2.250'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: FeSO4 x 7 H2O
+  source: Archived DSMZ Medium 120
+  notes: DSMZ/KOMODO Medium 164 sludge variant derives 0.002 G_PER_L FeSO4 x 7 H2O
+    from Archived DSMZ Medium 120.
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+- preferred_term: Biotin
+  source: Archived DSMZ Medium 141
+  notes: DSMZ/KOMODO Medium 164 sludge variant adds 10 mL/L of the Archived DSMZ Medium
+    141 vitamin stock, yielding 0.00002 g/L Biotin.
+  concentration:
+    value: '0.00002'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: biotin
+- preferred_term: Folic acid
+  source: Archived DSMZ Medium 141
+  notes: DSMZ/KOMODO Medium 164 sludge variant adds 10 mL/L of the Archived DSMZ Medium
+    141 vitamin stock, yielding 0.00002 g/L Folic acid.
+  concentration:
+    value: '0.00002'
+    unit: G_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
+    label: folic acid
+- preferred_term: Pyridoxine-HCl
+  source: Archived DSMZ Medium 141
+  notes: DSMZ/KOMODO Medium 164 sludge variant adds 10 mL/L of the Archived DSMZ Medium
+    141 vitamin stock, yielding 0.0001 g/L Pyridoxine-HCl.
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
+- preferred_term: Thiamine-HCl x 2 H2O
+  source: Archived DSMZ Medium 141
+  notes: DSMZ/KOMODO Medium 164 sludge variant adds 10 mL/L of the Archived DSMZ Medium
+    141 vitamin stock, yielding 0.00005 g/L Thiamine-HCl x 2 H2O.
+  concentration:
+    value: '0.00005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+- preferred_term: Riboflavin
+  source: Archived DSMZ Medium 141
+  notes: DSMZ/KOMODO Medium 164 sludge variant adds 10 mL/L of the Archived DSMZ Medium
+    141 vitamin stock, yielding 0.00005 g/L Riboflavin.
+  concentration:
+    value: '0.00005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
+- preferred_term: Nicotinic acid
+  source: Archived DSMZ Medium 141
+  notes: DSMZ/KOMODO Medium 164 sludge variant adds 10 mL/L of the Archived DSMZ Medium
+    141 vitamin stock, yielding 0.00005 g/L Nicotinic acid.
+  concentration:
+    value: '0.00005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
+- preferred_term: D-Ca-pantothenate
+  source: Archived DSMZ Medium 141
+  notes: DSMZ/KOMODO Medium 164 sludge variant adds 10 mL/L of the Archived DSMZ Medium
+    141 vitamin stock, yielding 0.00005 g/L D-Ca-pantothenate.
+  concentration:
+    value: '0.00005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+- preferred_term: Vitamin B12
+  source: Archived DSMZ Medium 141
+  notes: DSMZ/KOMODO Medium 164 sludge variant adds 10 mL/L of the Archived DSMZ Medium
+    141 vitamin stock, yielding 0.000001 g/L Vitamin B12.
+  concentration:
+    value: '0.000001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+  mediaingredientmech_chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+- preferred_term: p-Aminobenzoic acid
+  source: Archived DSMZ Medium 141
+  notes: DSMZ/KOMODO Medium 164 sludge variant adds 10 mL/L of the Archived DSMZ Medium
+    141 vitamin stock, yielding 0.00005 g/L p-Aminobenzoic acid.
+  concentration:
+    value: '0.00005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+- preferred_term: Lipoic acid
+  source: Archived DSMZ Medium 141
+  notes: DSMZ/KOMODO Medium 164 sludge variant adds 10 mL/L of the Archived DSMZ Medium
+    141 vitamin stock, yielding 0.00005 g/L Lipoic acid.
+  concentration:
+    value: '0.00005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16494
+    label: lipoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
+    label: lipoic acid
+- preferred_term: HCl
+  source: Archived DSMZ Medium 320
+  notes: DSMZ/KOMODO Medium 164 sludge variant adds 1 mL/L of the Archived DSMZ Medium
+    320 SL-10 stock, yielding 0.0025 g/L HCl.
+  concentration:
+    value: '0.0025'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+- preferred_term: FeCl2 x 4 H2O
+  source: Archived DSMZ Medium 320
+  notes: DSMZ/KOMODO Medium 164 sludge variant adds 1 mL/L of the Archived DSMZ Medium
+    320 SL-10 stock, yielding 0.0015 g/L FeCl2 x 4 H2O.
+  concentration:
+    value: '0.0015'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+- preferred_term: ZnCl2
+  source: Archived DSMZ Medium 320
+  notes: DSMZ/KOMODO Medium 164 sludge variant adds 1 mL/L of the Archived DSMZ Medium
+    320 SL-10 stock, yielding 0.00007 g/L ZnCl2.
+  concentration:
+    value: '0.00007'
+    unit: G_PER_L
+  term:
+    id: CHEBI:49976
+    label: zinc dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
+- preferred_term: MnCl2 x 4 H2O
+  source: Archived DSMZ Medium 320
+  notes: DSMZ/KOMODO Medium 164 sludge variant adds 1 mL/L of the Archived DSMZ Medium
+    320 SL-10 stock, yielding 0.0001 g/L MnCl2 x 4 H2O.
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+- preferred_term: H3BO3
+  source: Archived DSMZ Medium 320
+  notes: DSMZ/KOMODO Medium 164 sludge variant adds 1 mL/L of the Archived DSMZ Medium
+    320 SL-10 stock, yielding 0.000006 g/L H3BO3.
+  concentration:
+    value: '0.000006'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: CoCl2 x 6 H2O
+  source: Archived DSMZ Medium 320
+  notes: DSMZ/KOMODO Medium 164 sludge variant adds 1 mL/L of the Archived DSMZ Medium
+    320 SL-10 stock, yielding 0.00019 g/L CoCl2 x 6 H2O.
+  concentration:
+    value: '0.00019'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+- preferred_term: CuCl2 x 2 H2O
+  source: Archived DSMZ Medium 320
+  notes: DSMZ/KOMODO Medium 164 sludge variant adds 1 mL/L of the Archived DSMZ Medium
+    320 SL-10 stock, yielding 0.000002 g/L CuCl2 x 2 H2O.
+  concentration:
+    value: '0.000002'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+- preferred_term: NiCl2 x 6 H2O
+  source: Archived DSMZ Medium 320
+  notes: DSMZ/KOMODO Medium 164 sludge variant adds 1 mL/L of the Archived DSMZ Medium
+    320 SL-10 stock, yielding 0.000024 g/L NiCl2 x 6 H2O.
+  concentration:
+    value: '0.000024'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+- preferred_term: Na2MoO4 x 2 H2O
+  source: Archived DSMZ Medium 320
+  notes: DSMZ/KOMODO Medium 164 sludge variant adds 1 mL/L of the Archived DSMZ Medium
+    320 SL-10 stock, yielding 0.000036 g/L Na2MoO4 x 2 H2O.
+  concentration:
+    value: '0.000036'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: Yeast extract
+  source: Archived DSMZ Medium 120
+  notes: DSMZ/KOMODO Medium 164 sludge variant derives 2.000 G_PER_L Yeast extract
+    from Archived DSMZ Medium 120.
+  concentration:
+    value: '2.000'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Casitone
+  source: Archived DSMZ Medium 120
+  notes: DSMZ/KOMODO Medium 164 sludge variant derives 2.000 G_PER_L Casitone from
+    Archived DSMZ Medium 120.
+  concentration:
+    value: '2.000'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  source: Archived DSMZ Medium 120
+  notes: DSMZ/KOMODO Medium 164 sludge variant derives 0.001 G_PER_L Resazurin from
+    Archived DSMZ Medium 120.
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: NaHCO3
+  source: Archived DSMZ Medium 164
+  notes: DSMZ/KOMODO Medium 164 sludge variant applies 2.000 G_PER_L NaHCO3.
+  concentration:
+    value: '2.000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Methanol
+  source: Archived DSMZ Medium 120
+  notes: DSMZ/KOMODO Medium 164 sludge variant derives 10.000 ML_PER_L Methanol from
+    Archived DSMZ Medium 120.
+  concentration:
+    value: '10.000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:17790
+    label: methanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
+    label: methanol
+- preferred_term: Cysteine-HCl x H2O
+  source: Archived DSMZ Medium 120
+  notes: DSMZ/KOMODO Medium 164 sludge variant derives 0.300 G_PER_L Cysteine-HCl
+    x H2O from Archived DSMZ Medium 120.
+  concentration:
+    value: '0.300'
+    unit: G_PER_L
+  term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+- preferred_term: Na2S x 9 H2O
+  source: Archived DSMZ Medium 120
+  notes: DSMZ/KOMODO Medium 164 sludge variant derives 0.300 G_PER_L Na2S x 9 H2O
+    from Archived DSMZ Medium 120.
+  concentration:
+    value: '0.300'
+    unit: G_PER_L
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+- preferred_term: Distilled water
+  source: Archived DSMZ Medium 120
+  notes: DSMZ/KOMODO Medium 164 sludge variant derives 1000.000 ML_PER_L Distilled
+    water from Archived DSMZ Medium 120.
+  concentration:
+    value: '1000.000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Sludge fluid (medium 119)
+  source: Archived DSMZ Medium 164
+  notes: DSMZ/KOMODO Medium 164 sludge variant applies 50.000 ML_PER_L Sludge fluid
+    (medium 119).
+  concentration:
+    value: '50.000'
+    unit: ML_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -41,5 +482,23 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_164_score35.py
+  action: RESOLVED_KOMODO_164_SLUDGE_SCORE35
+  changes: Replaced empty KOMODO 164 sludge-fluid replacement composition with archived
+    DSMZ data
+  source: https://web.archive.org/web/20121030075644id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium164.pdf
+  notes: Archived DSMZ Medium 164 defines METHANOSARCINA (thermophilic) MEDIUM as
+    DSMZ Medium 120 supplemented with 5% (v/v) clarified rumen fluid or sludge fluid
+    from DSMZ Medium 119 and with NaHCO3 increased to 2 g/L; this KOMODO replacement
+    record uses sludge fluid from DSMZ Medium 119.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://web.archive.org/web/20121030075644id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium164.pdf
+- reference: https://web.archive.org/web/20121030062128id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium120.pdf
+- reference: https://web.archive.org/web/20121030075431id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf
+- reference: https://web.archive.org/web/20121030075431id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium320.pdf
+- reference: https://web.archive.org/web/20121030071037id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf

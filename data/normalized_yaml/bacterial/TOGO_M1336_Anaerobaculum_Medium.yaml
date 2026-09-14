@@ -3,32 +3,41 @@ name: anaerobaculum_medium
 original_name: Anaerobaculum Medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
+ph_value: 7.0
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Trypticase peptone
   concentration:
-    value: '960'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+  source: TOGO M1336 / JCM Medium 1242
+  notes: JCM Medium 1242 lists 5.0 g/L Trypticase peptone; the product is source-disclosed
+    but not reducible to one ChEBI molecule.
+- preferred_term: Peptone
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: TOGO M1336 / JCM Medium 1242
+  notes: TOGO M1336 / JCM Medium 1242 lists 5.0 g/L Peptone.
   term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
+    id: MICRO:0000178
+    label: peptone
 - preferred_term: Yeast extract
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M1336 / JCM Medium 1242
+  notes: TOGO M1336 / JCM Medium 1242 lists 10.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: NaCl
   concentration:
-    value: '8'
+    value: '8.0'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  source: TOGO M1336 / JCM Medium 1242
+  notes: TOGO M1336 / JCM Medium 1242 lists 8.0 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -38,30 +47,38 @@ ingredients:
 - preferred_term: Resazurin
   concentration:
     value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
-    compound, Defined component'
+    unit: MG_PER_L
+  source: TOGO M1336 / JCM Medium 1242
+  notes: TOGO M1336 / JCM Medium 1242 lists 0.5 mg/L Resazurin.
   term:
     id: CHEBI:8806
     label: Resazurin
   mediaingredientmech_chebi_term:
     id: CHEBI:8806
     label: Resazurin
-- preferred_term: Trypticase peptone
+- preferred_term: Distilled water
   concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
+    value: '960.0'
+    unit: ML_PER_L
+  source: TOGO M1336 / JCM Medium 1242
+  notes: TOGO M1336 / JCM Medium 1242 lists 960.0 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: N2
-  notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M1336 / JCM Medium 1242
+  notes: JCM Medium 1242 cools the boiled medium under N2, adjusts pH while gassing,
+    and distributes the medium into culture vessels under N2.
   term:
+    id: CHEBI:17997
+    label: dinitrogen
+  mediaingredientmech_chebi_term:
     id: CHEBI:17997
     label: dinitrogen
 media_term:
@@ -69,11 +86,11 @@ media_term:
   term:
     id: TOGO:M1336
     label: Anaerobaculum Medium
-notes: 'Source: https://togomedium.org/medium/M1336
-
-  Original source: JCM - JCM_M1242
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242'
+notes: TOGO M1336 records JCM Medium 1242 with trypticase peptone, peptone, yeast
+  extract, NaCl, Salt solution from JCM Medium 676, resazurin, distilled water, and
+  an N2 gas atmosphere. JCM 1242 cools the boiled base under N2, adds 5% L-cysteine
+  HCl H2O and adjusts pH to 7.0, autoclaves under N2, then adds autoclaved 1 M glucose
+  and 1 M Na2S2O3 stocks stored under N2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -126,32 +143,210 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m1336_score15.py
+  action: RESOLVED_TOGO_M1336_SCORE15
+  source: https://togomedium.org/medium/M1336; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676; https://mediadive.dsmz.de/rest/medium/J1242
+  notes: TOGO M1336 records JCM Medium 1242 with trypticase peptone, peptone, yeast
+    extract, NaCl, Salt solution from JCM Medium 676, resazurin, distilled water,
+    and an N2 gas atmosphere. JCM 1242 cools the boiled base under N2, adds 5% L-cysteine
+    HCl H2O and adjusts pH to 7.0, autoclaves under N2, then adds autoclaved 1 M glucose
+    and 1 M Na2S2O3 stocks stored under N2. Used the JCM Medium 676 salt solution
+    linked from JCM 1242; the imported TOGO wrapper labeled the same stock as Medium
+    M695.
 solutions:
-- preferred_term: Salt solution (see Medium [M695])
-  composition: []
-  notes: Cross-reference to Medium M695
+- preferred_term: Salt solution
   concentration:
-    value: '40'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: 5% L-Cysteine・HCl・H2O solution
-  composition: []
+    value: '40.0'
+    unit: ML_PER_L
+  source: TOGO M1336 / JCM Medium 1242 / JCM Medium 676
+  notes: JCM Medium 1242 adds 40.0 ml/L Salt solution and links this stock to the
+    Salt solution printed in JCM Medium 676.
+  composition:
+  - preferred_term: CaCl2 x 2H2O
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    source: JCM Medium 676
+    notes: JCM Medium 676 lists 0.25 g/L CaCl2 x 2H2O.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: MgSO4 x 7H2O
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    source: JCM Medium 676
+    notes: JCM Medium 676 lists 0.5 g/L MgSO4 x 7H2O.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: K2HPO4
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: JCM Medium 676
+    notes: JCM Medium 676 lists 1.0 g/L K2HPO4.
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+  - preferred_term: KH2PO4
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: JCM Medium 676
+    notes: JCM Medium 676 lists 1.0 g/L KH2PO4.
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+  - preferred_term: NaHCO3
+    concentration:
+      value: '10.0'
+      unit: G_PER_L
+    source: JCM Medium 676
+    notes: JCM Medium 676 lists 10.0 g/L NaHCO3.
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+  - preferred_term: NaCl
+    concentration:
+      value: '2.0'
+      unit: G_PER_L
+    source: JCM Medium 676
+    notes: JCM Medium 676 lists 2.0 g/L NaCl.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 676
+    notes: JCM Medium 676 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: 5% L-Cysteine HCl H2O solution
   concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Solution, Organic compound'
-  name: Unknown solution
+    value: '10.0'
+    unit: ML_PER_L
+  source: TOGO M1336 / JCM Medium 1242
+  notes: JCM Medium 1242 adds 10.0 ml/L 5% L-Cysteine HCl H2O solution while gassing,
+    before pH 7.0 adjustment.
+  composition:
+  - preferred_term: L-Cysteine HCl H2O
+    concentration:
+      value: '5.0'
+      unit: PERCENT_W_V
+    source: TOGO M1336 / JCM Medium 1242
+    notes: 5% L-Cysteine HCl H2O solution is represented from the stock label as 5.0
+      % w/v L-Cysteine HCl H2O.
+    term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
 - preferred_term: 1 M Glucose solution
-  composition: []
   concentration:
-    value: '6'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
-  name: Unknown solution
+    value: '6.0'
+    unit: ML_PER_L
+  source: TOGO M1336 / JCM Medium 1242
+  notes: JCM Medium 1242 adds 6.0 ml/L 1 M Glucose solution per liter after autoclaving
+    and cooling.
+  composition:
+  - preferred_term: Glucose
+    concentration:
+      value: '1.0'
+      unit: MOLAR
+    source: TOGO M1336 / JCM Medium 1242
+    notes: 1 M Glucose solution is represented from the stock label as 1.0 M Glucose.
+    term:
+      id: CHEBI:17234
+      label: glucose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17234
+      label: glucose
+  preparation_notes: Autoclave and store under an N2 gas atmosphere.
 - preferred_term: 1 M Na2S2O3 solution
-  composition: []
   concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-  name: Unknown solution
+    value: '10.0'
+    unit: ML_PER_L
+  source: TOGO M1336 / JCM Medium 1242
+  notes: JCM Medium 1242 adds 10.0 ml/L 1 M Na2S2O3 solution per liter after autoclaving
+    and cooling.
+  composition:
+  - preferred_term: Na2S2O3
+    concentration:
+      value: '1.0'
+      unit: MOLAR
+    source: TOGO M1336 / JCM Medium 1242
+    notes: 1 M Na2S2O3 solution is represented from the stock label as 1.0 M Na2S2O3.
+    term:
+      id: CHEBI:132112
+      label: sodium thiosulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:132112
+      label: sodium thiosulfate
+  preparation_notes: Autoclave and store under an N2 gas atmosphere.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix the base components with Salt solution, bring to a boil, and cool
+    down under an N2 stream.
+- step_number: 2
+  action: ADJUST_PH
+  description: While gassing, add 5% L-Cysteine HCl H2O solution and adjust to pH
+    7.0.
+- step_number: 3
+  action: ALIQUOT
+  description: Distribute the medium into culture vessels under N2 and seal with butyl
+    rubber stoppers.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave at 121 degrees C for 15 min.
+- step_number: 5
+  action: COOL
+  description: Cool after autoclaving.
+- step_number: 6
+  action: MIX
+  description: Add autoclaved and N2-stored glucose and Na2S2O3 stock solutions aseptically.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: Autoclave the medium under N2. Autoclave the glucose and Na2S2O3 stocks separately
+    and store them under N2.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1336
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676
+- reference: https://mediadive.dsmz.de/rest/medium/J1242

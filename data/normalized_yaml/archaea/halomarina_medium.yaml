@@ -6,55 +6,63 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: NaCl
-  concentration:
-    value: '150'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: Artificial seawater
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source, Solvating media; Properties: Complex component, Defined
-    component, Solution'
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Bacto Yeast Extract (Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Casamino acids
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: NBRC Medium 1214
+  notes: NBRC Medium 1214 lists 1.0 g/L Casamino acids.
+  term:
+    id: FOODON:03315719
+    label: mammalian milk protein (hydrolyzed)
+- preferred_term: Bacto Yeast Extract (Difco)
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: NBRC Medium 1214
+  notes: NBRC Medium 1214 lists 1.0 g/L Bacto Yeast Extract (Difco).
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: NaCl
+  concentration:
+    value: '150.0'
+    unit: G_PER_L
+  source: NBRC Medium 1214
+  notes: NBRC Medium 1214 lists 150.0 g/L NaCl.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: NBRC Medium 1214
+  notes: NBRC Medium 1214 lists 15.0 g/L Agar.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Artificial seawater
+  concentration:
+    value: '1.0'
+    unit: L
+  source: NBRC Medium 1214
+  notes: NBRC Medium 1214 lists artificial seawater as the solvating medium for the
+    Halomarina medium recipe.
 media_term:
   preferred_term: TOGO Medium M1943
   term:
     id: TOGO:M1943
     label: Halomarina medium
-notes: 'Source: https://togomedium.org/medium/M1943
-
-  Original source: NBRC - NBRC_M1214
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1214'
+notes: NBRC Medium 1214 records Halomarina medium as 1 g Casamino acids, 1 g Bacto
+  Yeast Extract (Difco), 150 g NaCl, 15 g agar, and 1 L artificial seawater adjusted
+  to pH 7.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -91,4 +99,27 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_halomarina_jcm703_score15.py
+  action: RESOLVED_HALOMARINA_JCM703_SCORE15
+  source: https://togomedium.org/medium/M1943; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1214
+  notes: NBRC Medium 1214 records Halomarina medium as 1 g Casamino acids, 1 g Bacto
+    Yeast Extract (Difco), 150 g NaCl, 15 g agar, and 1 L artificial seawater adjusted
+    to pH 7.5.
 kg_microbe_match: mediadive.medium:1393
+ph_value: 7.5
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the medium from 1 g Casamino acids, 1 g Bacto Yeast Extract,
+    150 g NaCl, 15 g agar, and 1 L artificial seawater.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.5.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1943
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1214

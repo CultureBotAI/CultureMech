@@ -4,131 +4,439 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: Modified COMBO Medium
+  term:
+    id: UTEX:modified-combo-medium
+    label: Modified COMBO Medium
+ph_value: 7.8
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
+notes: UTEX prepares Modified COMBO Medium at pH 7.8 with nitrate, calcium, magnesium,
+  bicarbonate, silicate, phosphate, borate, chloride, Algal Trace Elements Solution,
+  and B12, biotin, and thiamine stocks.
 ingredients:
+- preferred_term: dH2O
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: UTEX starts the 1 L Modified COMBO recipe with approximately 900 mL dH2O
+    and brings the final volume to 1 L.
 - preferred_term: NaNO3
   concentration:
     value: '10'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 85.01 g/L; final 10 mM'
+  term:
+    id: CHEBI:63005
+    label: sodium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: BP360-500
-- preferred_term: CaCl2•2H2O
+  notes: UTEX adds 10 mL/L of an 85.01 g/L NaNO3 stock, for 10 mM final.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '2.5'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 36.76 g/L; final 2.5 mM'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: C-3881
-- preferred_term: MgSO4•7H2O
+  notes: UTEX adds 10 mL/L of a 36.76 g/L CaCl2 x 2 H2O stock, for 2.5 mM final.
+- preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '1.5'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 36.97 g/L; final 1.5 mM'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: '230391'
+  notes: UTEX adds 10 mL/L of a 36.97 g/L MgSO4 x 7 H2O stock, for 1.5 mM final.
+  nutritional_roles:
+  - SULFUR_SOURCE
+  - TRACE_ELEMENT
 - preferred_term: NaHCO3
   concentration:
     value: '1.5'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 12.6 g/L; final 1.5 mM'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: S 233
-- preferred_term: Na2SiO3•9H2O
+  notes: UTEX adds 10 mL/L of a 12.6 g/L NaHCO3 stock, for 1.5 mM final.
+  nutritional_roles:
+  - CARBON_SOURCE
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: Na2SiO3 x 9 H2O
   concentration:
     value: '1'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 28.42 g/L; final 1 mM'
+  term:
+    id: CHEBI:132108
+    label: sodium silicate nonahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132108
+    label: sodium silicate nonahydrate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: '307815'
+  notes: UTEX adds 10 mL/L of a 28.42 g/L Na2SiO3 x 9 H2O stock, for 1 mM final.
+  nutritional_roles:
+  - TRACE_ELEMENT
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 8.71 g/L; final 0.5 mM'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: P 3786
+  notes: UTEX adds 1 mL/L of an 8.71 g/L K2HPO4 stock, for 0.5 mM final.
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
 - preferred_term: H3BO3
   concentration:
     value: '3.9'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 24 g/L; final 3.9 mM'
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
   supplier_catalog:
     supplier_name: Baker
     catalog_number: 0084
+  notes: UTEX adds 10 mL/L of a 24 g/L H3BO3 stock, for 3.9 mM final.
+  nutritional_roles:
+  - TRACE_ELEMENT
 - preferred_term: KCl
   concentration:
     value: '1'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 7.45 g/L; final 1 mM'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: P 217
+  notes: UTEX adds 10 mL/L of a 7.45 g/L KCl stock, for 1 mM final.
+solutions:
 - preferred_term: Algal Trace Elements Solution
   concentration:
     value: '10'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 10 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX brings Algal Trace Elements Solution to 1 L with dH2O.
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.023'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: Z 0251
+    notes: Converted from 23 mg/L in the UTEX Algal Trace Elements Solution recipe.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: MnSO4 x H2O
+    concentration:
+      value: '0.152'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86364
+      label: manganese(II) sulfate monohydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86364
+      label: manganese(II) sulfate monohydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: M8179
+    notes: Converted from 152 mg/L in the UTEX Algal Trace Elements Solution recipe.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.0073'
+      unit: G_PER_L
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    supplier_catalog:
+      supplier_name: J.T. Baker
+      catalog_number: '3764'
+    notes: Converted from 7.3 mg/L in the UTEX Algal Trace Elements Solution recipe.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CoSO4 x 7 H2O
+    concentration:
+      value: '0.014'
+      unit: G_PER_L
+    term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+    supplier_catalog:
+      supplier_name: Baker
+      catalog_number: '1696'
+    notes: Converted from 14 mg/L in the UTEX Algal Trace Elements Solution recipe.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CuCl2 x 2 H2O
+    concentration:
+      value: '0.0068'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+    supplier_catalog:
+      supplier_name: Fisher
+      catalog_number: C-455
+    notes: Converted from 6.8 mg/L in the UTEX Algal Trace Elements Solution recipe.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
+    concentration:
+      value: '4.6'
+      unit: G_PER_L
+    term:
+      id: CHEBI:76181
+      label: ferrous ammonium sulfate hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76181
+      label: ferrous ammonium sulfate hexahydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: F-1513
+    notes: UTEX lists 4.6 g/L in the Algal Trace Elements Solution recipe.
+    nutritional_roles:
+    - IRON_SOURCE
+    - TRACE_ELEMENT
+  - preferred_term: Na2EDTA x 2 H2O
+    concentration:
+      value: '4.4'
+      unit: G_PER_L
+    term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: ED255
+    notes: UTEX lists 4.4 g/L in the Algal Trace Elements Solution recipe.
+    physicochemical_roles:
+    - CHELATOR
+  notes: UTEX adds 10 mL Algal Trace Elements Solution per liter of Modified COMBO.
 - preferred_term: Vitamin B12
   concentration:
     value: '1'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 1 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX prepares the Vitamin B12 stock in 200 mL HEPES buffer.
+  - preferred_term: HEPES buffer pH 7.8
+    concentration:
+      value: '12'
+      unit: G_PER_L
+    term:
+      id: CHEBI:42334
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:42334
+      label: HEPES
+    notes: Converted from 2.4 g/200 mL in the UTEX Vitamin B12 stock.
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.135'
+      unit: G_PER_L
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+    notes: Converted from 0.027 g/200 mL in the UTEX Vitamin B12 stock.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  notes: UTEX adds 1 mL Vitamin B12 stock per liter of Modified COMBO.
 - preferred_term: Biotin Vitamin Solution
   concentration:
     value: '1'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 1 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX prepares the biotin stock in 200 mL HEPES buffer.
+  - preferred_term: HEPES buffer pH 7.8
+    concentration:
+      value: '12'
+      unit: G_PER_L
+    term:
+      id: CHEBI:42334
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:42334
+      label: HEPES
+    notes: Converted from 2.4 g/200 mL in the UTEX biotin stock.
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Biotin
+    concentration:
+      value: '0.025'
+      unit: G_PER_L
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+    notes: Converted from 0.005 g/200 mL in the UTEX biotin stock.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  notes: UTEX adds 1 mL Biotin Vitamin Solution per liter of Modified COMBO.
 - preferred_term: Thiamine Vitamin Solution
   concentration:
     value: '1'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 1 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX prepares the thiamine stock in 200 mL HEPES buffer.
+  - preferred_term: HEPES buffer pH 7.8
+    concentration:
+      value: '12'
+      unit: G_PER_L
+    term:
+      id: CHEBI:42334
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:42334
+      label: HEPES
+    notes: Converted from 2.4 g/200 mL in the UTEX thiamine stock.
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Thiamine
+    concentration:
+      value: '0.335'
+      unit: G_PER_L
+    term:
+      id: CHEBI:18385
+      label: thiamine(1+)
+    mediaingredientmech_chebi_term:
+      id: CHEBI:18385
+      label: thiamine(1+)
+    notes: Converted from 0.067 g/200 mL in the UTEX thiamine stock.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  notes: UTEX adds 1 mL Thiamine Vitamin Solution per liter of Modified COMBO.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: To approximately 900 mL dH2O, add all non-vitamin components in the
+    listed order while stirring continuously.
 - step_number: 2
-  action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
-- step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
-- step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
-- step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
   action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
+  description: Adjust the medium to pH 7.8.
+- step_number: 3
   action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
+  description: Bring the total volume to 1 L with dH2O.
+- step_number: 4
+  action: MIX
+  description: Add the sterile vitamin stocks to the flask.
+- step_number: 5
+  action: FILTER_STERILIZE
+  description: Filter-sterilize the medium; UTEX notes not to autoclave it.
+- step_number: 6
+  action: STORE
+  description: Store at refrigerator temperature.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -167,7 +475,33 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_combo_diatom_score35.py
+  action: RESOLVED_UTEX_COMBO_DIATOM_SCORE35
+  changes: Grounded UTEX score-35 COMBO diatom components
+  source: https://utex.org/products/modified-combo-medium
+  notes: UTEX prepares Modified COMBO Medium at pH 7.8 with nitrate, calcium, magnesium,
+    bicarbonate, silicate, phosphate, borate, chloride, Algal Trace Elements Solution,
+    and B12, biotin, and thiamine stocks.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_combo_diatom_score35.py
+  action: LINKED_UTEX_COMBO_DIATOM_VARIANTS
+  changes: Linked UTEX COMBO Diatom and Modified COMBO variants
+  notes: Added or refreshed reciprocal parent-child link for algae/Combo_Diatom_Medium.yaml.
 references:
 - reference: UTEX:modified-combo-medium
 - reference: https://utex.org/products/modified-combo-medium
+- reference: https://utex.org/products/algal-trace-elements-solution
+- reference: https://utex.org/products/vitamin-b-12
+- reference: https://utex.org/products/biotin-vitamin-solution
+- reference: https://utex.org/products/thiamine-vitamin-solution
 original_name: Modified COMBO Medium
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+variant_children:
+- path: data/normalized_yaml/algae/Combo_Diatom_Medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:000156
+  name: combo_diatom_medium
+  notes: Adds 1 cc CR1 Soil and 0.5 mg/12 mL MgCO3 to Modified COMBO Medium.

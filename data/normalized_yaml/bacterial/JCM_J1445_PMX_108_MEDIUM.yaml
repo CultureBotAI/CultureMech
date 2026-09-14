@@ -6,6 +6,8 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+aeration: N2-CO2 (4:1, v/v) gas atmosphere with H2 injected after sealing
+culture_vessel: 20 ml medium in 60 ml serum bottles with butyl rubber stoppers
 media_term:
   preferred_term: JCM Medium J1445
   term:
@@ -17,6 +19,8 @@ ingredients:
   concentration:
     value: '0.54'
     unit: G_PER_L
+  source: JCM Medium 1445
+  notes: JCM Medium 1445 lists 0.54 g NH4Cl.
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -27,55 +31,68 @@ ingredients:
   concentration:
     value: '0.14'
     unit: G_PER_L
+  source: JCM Medium 1445
+  notes: JCM Medium 1445 lists 0.14 g KH2PO4.
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
-- preferred_term: MgCl2•6H2O
+- preferred_term: MgCl2 x 6H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
-- preferred_term: CaCl2•2H2O
+  source: JCM Medium 1445
+  notes: JCM Medium 1445 lists 0.2 g MgCl2 x 6H2O.
+- preferred_term: CaCl2 x 2H2O
   concentration:
     value: '0.15'
     unit: G_PER_L
+  source: JCM Medium 1445
+  notes: JCM Medium 1445 lists 0.15 g CaCl2 x 2H2O.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-- preferred_term: Sodium aceate•3H2O
+- preferred_term: Sodium acetate x 3H2O
   concentration:
     value: '1.36'
     unit: G_PER_L
+  source: JCM Medium 1445
+  notes: JCM Medium 1445 lists 1.36 g sodium acetate trihydrate.
+  term:
+    id: CHEBI:32138
+    label: sodium acetate trihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32138
+    label: sodium acetate trihydrate
 - preferred_term: Yeast extract
   concentration:
     value: '0.09'
     unit: G_PER_L
+  source: JCM Medium 1445
+  notes: JCM Medium 1445 lists 0.09 g yeast extract.
 - preferred_term: Casamino acids (BD-Difico)
   concentration:
     value: '0.5'
     unit: G_PER_L
+  source: JCM Medium 1445
+  notes: JCM Medium 1445 lists 0.5 g Casamino acids.
 - preferred_term: Tryptone (BD-Difico)
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: Trace mineral solution (see Medium No. 852 )
-  concentration:
-    value: '1.0'
-    unit: ML_PER_L
-- preferred_term: Se/W solution (see below)
-  concentration:
-    value: '1.0'
-    unit: ML_PER_L
-- preferred_term: Trace vitamins solution (see Medium No. 284 )
-  concentration:
-    value: '2.0'
-    unit: ML_PER_L
+  source: JCM Medium 1445
+  notes: JCM Medium 1445 lists 1.5 g tryptone.
 - preferred_term: Resazurin
   concentration:
     value: '1.0'
     unit: MG_PER_L
+  source: JCM Medium 1445
+  notes: JCM Medium 1445 lists 1.0 mg resazurin.
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -86,60 +103,137 @@ ingredients:
   concentration:
     value: '970.0'
     unit: ML_PER_L
+  source: JCM Medium 1445
+  notes: JCM Medium 1445 lists 970.0 ml distilled water in the base.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: 8% NaHCO3 solution*
+solutions:
+- preferred_term: Trace mineral solution (JCM Medium 852)
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  source: JCM Medium 1445 / JCM Medium 852
+  notes: JCM Medium 1445 adds 1.0 ml/L Trace mineral solution from JCM 852.
+- preferred_term: Se/W solution
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  source: JCM Medium 1445
+  notes: JCM Medium 1445 adds 1.0 ml/L of the Se/W solution listed below it.
+  composition:
+  - preferred_term: Na2SeO3
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: JCM Medium 1445
+    notes: JCM Medium 1445 Se/W stock lists 2.0 mg Na2SeO3 per liter.
+    term:
+      id: CHEBI:48843
+      label: disodium selenite
+    mediaingredientmech_chebi_term:
+      id: CHEBI:48843
+      label: disodium selenite
+  - preferred_term: Na2WO4 x 2H2O
+    concentration:
+      value: '1.0'
+      unit: MG_PER_L
+    source: JCM Medium 1445
+    notes: JCM Medium 1445 Se/W stock lists 1.0 mg Na2WO4 x 2H2O per liter.
+    term:
+      id: CHEBI:63939
+      label: sodium tungstate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63939
+      label: sodium tungstate dihydrate
+- preferred_term: Trace vitamins solution (JCM Medium 284)
+  concentration:
+    value: '2.0'
+    unit: ML_PER_L
+  source: JCM Medium 1445 / JCM Medium 284
+  notes: JCM Medium 1445 adds 2.0 ml/L Trace vitamins solution from JCM 284.
+- preferred_term: 8% NaHCO3 solution
   concentration:
     value: '30.0'
     unit: ML_PER_L
-- preferred_term: 5% L-Cysteine•HCl•H2O solution
+  source: JCM Medium 1445
+  notes: JCM Medium 1445 adds 30.0 ml/L filter-sterilized 8% NaHCO3 solution.
+  composition:
+  - preferred_term: NaHCO3
+    concentration:
+      value: '80.0'
+      unit: G_PER_L
+    source: JCM Medium 1445
+    notes: Solute of the 8% NaHCO3 stock added by JCM Medium 1445.
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+- preferred_term: 5% L-Cysteine HCl H2O solution
   concentration:
     value: '4.0'
     unit: ML_PER_L
-- preferred_term: 5% Na2S•9H2O solution
+  source: JCM Medium 1445
+  notes: JCM Medium 1445 adds 4.0 ml/L autoclaved 5% L-Cysteine HCl H2O solution.
+  composition:
+  - preferred_term: L-Cysteine HCl H2O
+    concentration:
+      value: '50.0'
+      unit: G_PER_L
+    source: JCM Medium 1445
+    notes: Solute of the 5% L-Cysteine HCl H2O stock added by JCM Medium 1445.
+    term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+- preferred_term: 5% Na2S x 9H2O solution
   concentration:
     value: '4.0'
     unit: ML_PER_L
-- preferred_term: Na2SeO3
-  concentration:
-    value: '2.0'
-    unit: MG_PER_L
-  term:
-    id: CHEBI:48843
-    label: disodium selenite
-  mediaingredientmech_chebi_term:
-    id: CHEBI:48843
-    label: disodium selenite
-- preferred_term: Na2WO4•2H2O
-  concentration:
-    value: '1.0'
-    unit: MG_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '1.0'
-    unit: ML_PER_L
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
+  source: JCM Medium 1445
+  notes: JCM Medium 1445 adds 4.0 ml/L autoclaved 5% Na2S x 9H2O solution.
+  composition:
+  - preferred_term: Na2S x 9H2O
+    concentration:
+      value: '50.0'
+      unit: G_PER_L
+    source: JCM Medium 1445
+    notes: Solute of the 5% Na2S x 9H2O stock added by JCM Medium 1445.
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Mix components thoroughly, bring to a boil, and cool down under a N2-CO2
-    (4:1, v/v) gas stream.
+  description: Mix NH4Cl, KH2PO4, MgCl2 x 6H2O, CaCl2 x 2H2O, sodium acetate trihydrate,
+    yeast extract, Casamino acids, tryptone, Trace mineral solution, Se/W solution,
+    Trace vitamins solution, resazurin, and distilled water.
 - step_number: 2
+  action: HEAT
+  description: Bring the mixed base to a boil and cool it under N2-CO2 (4:1, v/v)
+    gas.
+- step_number: 3
+  action: ALIQUOT
+  description: Distribute the medium under the same gas mixture, for example 20 ml
+    medium into 60 ml serum bottles, seal with butyl rubber stoppers, inject 10-20%
+    gas-phase volume of H2, and autoclave.
+- step_number: 4
   action: MIX
-  description: Distribute the medium into culture vessels under the same gas mixture
-    (e. g., 20 ml medium in 60 ml serum bottles), seal with butyl rubber stoppers
-    and inject 10-20% gas-phase volume of H2, and autoclave.
+  description: After cooling, aseptically and anaerobically add 8% NaHCO3, 5% L-Cysteine
+    HCl H2O, and 5% Na2S x 9H2O solutions at the JCM Medium 1445 per-liter ratios.
 applications:
 - Microbial cultivation
+incubation_atmosphere: ANAEROBIC
 curation_history:
 - timestamp: '2026-06-02T07:09:20.624232+00:00'
   curator: jcm-grmd-import
@@ -154,3 +248,20 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_jcm_1445_pmx108_score15.py
+  action: RESOLVED_JCM_1445_PMX108_SCORE15
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1445
+  notes: JCM Medium 1445 base salts, organic supplements, resazurin, and distilled
+    water are direct components; before autoclaving, the base also receives JCM 852
+    Trace mineral solution, the local Se/W solution, and JCM 284 Trace vitamins solution
+    under N2-CO2 (4:1, v/v). After autoclaving, add the bicarbonate, cysteine, and
+    sulfide stocks.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1445
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=284

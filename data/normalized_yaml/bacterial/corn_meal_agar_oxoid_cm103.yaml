@@ -2,6 +2,7 @@ id: CultureMech:005651
 name: corn_meal_agar_oxoid_cm103
 original_name: Corn meal Agar (Oxoid CM103)
 category: bacterial
+record_kind: SOLUTION
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID

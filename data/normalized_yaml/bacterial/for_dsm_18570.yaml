@@ -116,12 +116,22 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1037_thiomonas_delicata_score10.py
+  action: RESOLVED_KOMODO_1037_THIOMONAS_DELICATA_STRAIN_VARIANT
+  changes: Linked as a THIOMONAS DELICATA MEDIUM strain-specific variant
+  source: KOMODO Medium 1037.1
+  notes: KOMODO Medium 1037.1 preserves THIOMONAS DELICATA MEDIUM components and pH
+    6 but applies the recipe for DSM 18570.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_1037_THIOMONAS_DELICATA_medium.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003551
   name: thiomonas_delicata_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 1037 is the pH 6 THIOMONAS DELICATA MEDIUM base.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 1037.1 preserves THIOMONAS DELICATA MEDIUM components and pH 6 but
+  applies the recipe for DSM 18570.
+data_quality_flags:
+- ingredients_curated

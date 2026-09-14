@@ -252,6 +252,12 @@ curation_history:
     MediaDive stock by name AND value; bulk ingredients sharing a name were left in
     place (#150).'
   changes: Nested 4 ingredient(s) under 1 solution(s); ingredients 23 -> 19
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_81_heterotrophic_score10.py
+  action: RESOLVED_KOMODO_81_DSM_21436_STRAIN_VARIANT
+  changes: Reclassified KOMODO Medium 81.4 as a strain-specific variant
+  source: KOMODO Medium 81.3-81.4
+  notes: Kept DSM 21436 beneath the KOMODO 81.3 heterotrophic-growth parent.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_81_MINERAL_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_H-3.yaml
   relationship: SOURCE_DUPLICATE
@@ -260,11 +266,10 @@ variant_children:
   notes: Same ingredient and concentration signature; review as possible duplicate
     source record.
 - path: data/normalized_yaml/bacterial/for_dsm_21436.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006532
   name: for_dsm_21436
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 81.4 applies For heterotrophic growth for DSM 21436.
 - path: data/normalized_yaml/bacterial/for_growth_on_nitrogen_free_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006530

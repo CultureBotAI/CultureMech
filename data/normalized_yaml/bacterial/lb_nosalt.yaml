@@ -3,6 +3,8 @@ name: LB_noSalt
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: LB_noSalt
 ingredients:
 - preferred_term: Tryptone
   concentration:
@@ -21,7 +23,7 @@ ingredients:
     label: yeast extract
   notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
 description: Luria-Bertani broth without salt
-notes: 'Source: FEBA media definitions'
+notes: CultureBotHT imports LB_noSalt as 10 g/L tryptone plus 5 g/L yeast extract.
 category: bacterial
 sources:
 - database: CultureBotHT
@@ -40,4 +42,15 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
-data_quality_flags: []
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_exact_score30.py
+  action: MARKED_CULTUREBOTHT_EXACT_SCORE30
+  changes: Marked exact sparse CultureBotHT formula as curated
+  source: CultureBotHT:LB_noSalt; https://github.com/CultureBotAI/CultureBotHT
+  notes: CultureBotHT imports LB_noSalt as 10 g/L tryptone plus 5 g/L yeast extract.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: CultureBotHT:LB_noSalt
+- reference: https://github.com/CultureBotAI/CultureBotHT

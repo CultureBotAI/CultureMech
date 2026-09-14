@@ -1,20 +1,36 @@
 id: CultureMech:007475
-name: '1379'
-original_name: '1379'
+name: MY50G
+original_name: MY50G
 category: bacterial
 description: 1379. NBRC 1376.
+notes: 'Source: NBRC Medium 1376 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1376
+
+
+  The NBRC MY50G table lists malt extract, yeast extract, sucrose, distilled water,
+  and agar.'
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: NBRC Medium 1376
+  term:
+    id: nbrc.medium:1376
+    label: NBRC Medium 1376
 ingredients:
 - preferred_term: Malt extract
   concentration:
     value: '20'
     unit: G_PER_L
+  term:
+    id: FOODON:03301056
+    label: Malt extract
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Sucrose
   concentration:
     value: '500'
@@ -36,16 +52,7 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-preparation_steps:
-- step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
-- step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+preparation_steps: []
 curation_history:
 - timestamp: '2026-02-20T00:22:36.070809Z'
   curator: nbrc-import
@@ -80,3 +87,14 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 3 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_nbrc_exact_score20.py
+  action: RESOLVED_NBRC_EXACT_SCORE20
+  changes: Added source metadata to recovered NBRC score-20 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1376
+  notes: Resolved the recovered NBRC Medium 1376 table as MY50G.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1376

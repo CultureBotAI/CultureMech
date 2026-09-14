@@ -8,14 +8,17 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: API 50 CHB/E Medium
   concentration:
-    value: '1'
-    unit: G_PER_L
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2832
+  notes: TOGO M2832 lists one liter of API 50 CHB/E Medium.
 media_term:
   preferred_term: TOGO Medium M2832
   term:
     id: TOGO:M2832
     label: API 50 CHB/E Medium
-notes: 'Source: https://togomedium.org/medium/M2832'
+notes: TOGO M2832 records one liter of API 50 CHB/E Medium incubated at 28 C for 24-48
+  h; the source does not disclose the product's internal formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -32,3 +35,16 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "API 50 CHB/E Medium" to "api_50_chb_e_medium" for consistent
     matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_products_more_score40.py
+  action: RESOLVED_TOGO_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO product graph
+  source: https://togomedium.org/medium/M2832
+  notes: TOGO M2832 records one liter of API 50 CHB/E Medium incubated at 28 C for
+    24-48 h; the source does not disclose the product's internal formulation.
+temperature_value: 28.0
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2832

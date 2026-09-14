@@ -5,12 +5,21 @@ category: bacterial
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
+ph_value: 7.0
+temperature_value: 25.0
 ingredients:
 - preferred_term: Orthophosphate
+  term:
+    id: CHEBI:18367
+    label: phosphate(3-)
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:pi'
+  source: MediaDB Medium 36 TAP (hetero/mixo)
+  notes: MediaDB Medium 36 TAP (hetero/mixo) lists 1.0 mM Orthophosphate.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18367
+    label: phosphate(3-)
 - preferred_term: Acetate
   term:
     id: CHEBI:30089
@@ -18,52 +27,107 @@ ingredients:
   concentration:
     value: '17.4'
     unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:ac'
+  source: MediaDB Medium 36 TAP (hetero/mixo)
+  notes: MediaDB Medium 36 TAP (hetero/mixo) lists 17.4 mM Acetate.
   mediaingredientmech_chebi_term:
     id: CHEBI:30089
     label: acetate
 - preferred_term: Manganese
+  term:
+    id: CHEBI:29035
+    label: manganese(2+)
   concentration:
     value: '0.0256'
     unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:mn2'
+  source: MediaDB Medium 36 TAP (hetero/mixo)
+  notes: MediaDB Medium 36 TAP (hetero/mixo) lists 0.0256 mM Manganese.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29035
+    label: manganese(2+)
 - preferred_term: Zinc
+  term:
+    id: CHEBI:29105
+    label: zinc(2+)
   concentration:
     value: '0.0765'
     unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:zn2'
+  source: MediaDB Medium 36 TAP (hetero/mixo)
+  notes: MediaDB Medium 36 TAP (hetero/mixo) lists 0.0765 mM Zinc.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29105
+    label: zinc(2+)
 - preferred_term: Sulfate
-  concentration:
-    value: '0.51'
-    unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:so4'
   term:
     id: CHEBI:16189
     label: sulfate
+  concentration:
+    value: '0.51'
+    unit: MILLIMOLAR
+  source: MediaDB Medium 36 TAP (hetero/mixo)
+  notes: MediaDB Medium 36 TAP (hetero/mixo) lists 0.51 mM Sulfate.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16189
+    label: sulfate
 - preferred_term: Copper
+  term:
+    id: CHEBI:29036
+    label: copper(2+)
   concentration:
     value: '0.0063'
     unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:cu'
+  source: MediaDB Medium 36 TAP (hetero/mixo)
+  notes: MediaDB Medium 36 TAP (hetero/mixo) lists 0.0063 mM Copper.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29036
+    label: copper(2+)
 - preferred_term: Calcium
+  term:
+    id: CHEBI:29108
+    label: calcium(2+)
   concentration:
     value: '0.34'
     unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:ca2'
+  source: MediaDB Medium 36 TAP (hetero/mixo)
+  notes: MediaDB Medium 36 TAP (hetero/mixo) lists 0.34 mM Calcium.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29108
+    label: calcium(2+)
 - preferred_term: Molybdenum
+  term:
+    id: CHEBI:28685
+    label: molybdenum atom
   concentration:
     value: '0.0062'
     unit: MILLIMOLAR
+  source: MediaDB Medium 36 TAP (hetero/mixo)
+  notes: MediaDB Medium 36 TAP (hetero/mixo) lists 0.0062 mM Molybdenum.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28685
+    label: molybdenum atom
 - preferred_term: Cobalt ion
+  term:
+    id: CHEBI:48828
+    label: cobalt(2+)
   concentration:
     value: '0.0068'
     unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:cobalt2'
+  source: MediaDB Medium 36 TAP (hetero/mixo)
+  notes: MediaDB Medium 36 TAP (hetero/mixo) lists 0.0068 mM Cobalt ion.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:48828
+    label: cobalt(2+)
 - preferred_term: Potassium
+  term:
+    id: CHEBI:29103
+    label: potassium(1+)
   concentration:
     value: '1.94'
     unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:k'
+  source: MediaDB Medium 36 TAP (hetero/mixo)
+  notes: MediaDB Medium 36 TAP (hetero/mixo) lists 1.94 mM Potassium.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29103
+    label: potassium(1+)
 - preferred_term: EDTA
   term:
     id: CHEBI:4735
@@ -71,54 +135,95 @@ ingredients:
   concentration:
     value: '0.134'
     unit: MILLIMOLAR
+  source: MediaDB Medium 36 TAP (hetero/mixo)
+  notes: MediaDB Medium 36 TAP (hetero/mixo) lists 0.134 mM EDTA.
   mediaingredientmech_chebi_term:
     id: CHEBI:4735
     label: ethylenediaminetetraacetic acid
 - preferred_term: Magnesium
+  term:
+    id: CHEBI:18420
+    label: magnesium(2+)
   concentration:
     value: '0.041'
     unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:mg2'
+  source: MediaDB Medium 36 TAP (hetero/mixo)
+  notes: MediaDB Medium 36 TAP (hetero/mixo) lists 0.041 mM Magnesium.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18420
+    label: magnesium(2+)
 - preferred_term: Cl-
+  term:
+    id: CHEBI:17996
+    label: chloride
   concentration:
     value: '8.22'
     unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:cl'
+  source: MediaDB Medium 36 TAP (hetero/mixo)
+  notes: MediaDB Medium 36 TAP (hetero/mixo) lists 8.22 mM Cl-.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17996
+    label: chloride
 - preferred_term: Sodium
+  term:
+    id: CHEBI:29101
+    label: sodium(1+)
   concentration:
     value: '0.27'
     unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:na1'
+  source: MediaDB Medium 36 TAP (hetero/mixo)
+  notes: MediaDB Medium 36 TAP (hetero/mixo) lists 0.27 mM Sodium.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29101
+    label: sodium(1+)
 - preferred_term: NH4+
+  term:
+    id: CHEBI:28938
+    label: ammonium
   concentration:
     value: '7.48'
     unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:nh4'
+  source: MediaDB Medium 36 TAP (hetero/mixo)
+  notes: MediaDB Medium 36 TAP (hetero/mixo) lists 7.48 mM NH4+.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28938
+    label: ammonium
 - preferred_term: Tromethamine
-  concentration:
-    value: '20.0'
-    unit: MILLIMOLAR
   term:
     id: CHEBI:9754
     label: tris
+  concentration:
+    value: '20.0'
+    unit: MILLIMOLAR
+  source: MediaDB Medium 36 TAP (hetero/mixo)
+  notes: MediaDB Medium 36 TAP (hetero/mixo) lists 20.0 mM Tromethamine.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
+    label: tris
 - preferred_term: Fe2+
+  term:
+    id: CHEBI:29033
+    label: iron(2+)
   concentration:
     value: '0.0179'
     unit: MILLIMOLAR
+  source: MediaDB Medium 36 TAP (hetero/mixo)
+  notes: MediaDB Medium 36 TAP (hetero/mixo) lists 0.0179 mM Fe2+.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29033
+    label: iron(2+)
 - preferred_term: Borate
+  term:
+    id: CHEBI:22908
+    label: borate
   concentration:
     value: '0.184'
     unit: MILLIMOLAR
-preparation_steps:
-- step_number: 1
-  action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified concentrations
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if specified in original formulation
-- step_number: 3
-  action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+  source: MediaDB Medium 36 TAP (hetero/mixo)
+  notes: MediaDB Medium 36 TAP (hetero/mixo) lists 0.184 mM Borate.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:22908
+    label: borate
 curation_history:
 - timestamp: '2026-01-27T07:21:42.841232Z'
   curator: mediadb-import
@@ -155,14 +260,75 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_mediadb_tap_score15.py
+  action: RESOLVED_MEDIADB_TAP_SCORE15
+  source: https://mediadb.systemsbiology.net/defined_media/media/36/; https://mediadb.systemsbiology.net/defined_media/sources/15/;
+    https://mediadb.systemsbiology.net/defined_media/growthdata/85/; https://mediadb.systemsbiology.net/defined_media/growthdata/87/;
+    DOI:10.1186/1752-0509-3-4
+  notes: Grounded all 18 mM components from MediaDB Medium 36 TAP (hetero/mixo), added
+    MediaDB pH 7.0 and 25 C growth conditions, and curated Chlamydomonas reinhardtii
+    growth metrics from the linked MediaDB growth-data records.
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: Chlamydomonas reinhardtii
+  term:
+    id: NCBITaxon:3055
+    label: Chlamydomonas reinhardtii
+  growth_metrics:
+  - measurement_conditions: MediaDB heterotrophic TAP growth-data record 85 with acetate
+      uptake at 12.06 mmol/gDW/h.
+    growth_rate_per_hour: 0.035
+    temperature_celsius: 25.0
+    ph_at_measurement: 7.0
+    evidence:
+    - reference: https://mediadb.systemsbiology.net/defined_media/growthdata/85/
+      supports: SUPPORT
+      explanation: MediaDB growth-data record 85 reports heterotrophic Chlamydomonas
+        reinhardtii growth on TAP (hetero/mixo) at pH 7.0 and 25 C.
+    is_max_attainment: false
+  - measurement_conditions: MediaDB mixotrophic TAP growth-data record 87.
+    growth_rate_per_hour: 0.066
+    temperature_celsius: 25.0
+    ph_at_measurement: 7.0
+    evidence:
+    - reference: https://mediadb.systemsbiology.net/defined_media/growthdata/87/
+      supports: SUPPORT
+      explanation: MediaDB growth-data record 87 reports mixotrophic Chlamydomonas
+        reinhardtii growth on TAP (hetero/mixo) at pH 7.0 and 25 C.
+    is_max_attainment: false
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/36/
+    supports: SUPPORT
+    explanation: MediaDB Medium 36 TAP (hetero/mixo) lists Chlamydomonas reinhardtii
+      as an organism for this formulation and links Boyle et al. 2009 as the source.
 media_term:
   preferred_term: MediaDB Medium 36
   term:
     id: MEDIADB:36
     label: TAP (hetero/mixo)
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
-  Reference: https://mediadb.systemsbiology.net/'
+notes: MediaDB Medium 36 lists TAP (hetero/mixo) as the MediaDB TAP base formulation
+  supplemented with 17.4 mM acetate for Chlamydomonas reinhardtii heterotrophic and
+  mixotrophic growth at pH 7.0 and 25 C.
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: https://mediadb.systemsbiology.net/defined_media/media/36/
+- reference: https://mediadb.systemsbiology.net/defined_media/sources/15/
+- reference: https://mediadb.systemsbiology.net/defined_media/growthdata/85/
+- reference: https://mediadb.systemsbiology.net/defined_media/growthdata/87/
+- reference: DOI:10.1186/1752-0509-3-4
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+parent_media:
+  path: data/normalized_yaml/bacterial/tap_auto.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:007283
+  name: tap_auto
+  notes: The hetero/mixo formulation adds 17.4 mM acetate to MediaDB TAP (auto).
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adds 17.4 mM acetate to MediaDB TAP (auto).

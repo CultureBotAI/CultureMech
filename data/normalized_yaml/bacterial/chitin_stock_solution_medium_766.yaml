@@ -6,25 +6,65 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
-notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 2003 | DSMZ Medium: 2003 (mediadive.medium:2003)
-  | Aerobic: No | SubMedium: Yes'
+notes: DSMZ Medium 766 prepares its chitin stock solution by acid-treating 20 g practical-grade
+  crab-shell chitin with 200 ml 37% HCl at 4 C, pouring the suspension into 1 L cold
+  distilled water, filtering and washing the residue, resuspending it in 1 L water,
+  neutralising it with 10 ml 5 M KOH to pH 6.5, and washing with 3 L water to remove
+  KCl.
 media_term:
   preferred_term: KOMODO Medium 2003
   term:
     id: komodo.medium:2003
     label: Chitin stock solution (medium 766)
 ingredients:
-- preferred_term: KOH
-  notes: Extracted from recipe notes (pH buffer)
-  data_quality_flags:
-  - extracted_from_notes
+- preferred_term: Chitin
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '16.6667'
+    unit: G_PER_L
+  source: DSMZ Medium 766
+  notes: DSMZ Medium 766 mixes 20 g practical-grade crab-shell chitin in the 1.2 L
+    acidified starting suspension.
+  term:
+    id: CHEBI:17029
+    label: chitin
   mediaingredientmech_chebi_term:
+    id: CHEBI:17029
+    label: chitin
+- preferred_term: Hydrochloric acid, 37%
+  concentration:
+    value: '166.6667'
+    unit: ML_PER_L
+  source: DSMZ Medium 766
+  notes: DSMZ Medium 766 mixes 200 ml of 37% HCl in the 1.2 L acidified starting suspension.
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+- preferred_term: Distilled water
+  concentration:
+    value: '833.3333'
+    unit: ML_PER_L
+  source: DSMZ Medium 766
+  notes: DSMZ Medium 766 pours the acidified chitin suspension into 1 L pre-cooled
+    distilled water before filtration.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Potassium hydroxide, 5 M
+  concentration:
+    value: '8.3333'
+    unit: ML_PER_L
+  source: DSMZ Medium 766
+  notes: DSMZ Medium 766 neutralises the resuspended chitin with 10 ml of 5 M KOH.
+  term:
     id: CHEBI:32035
     label: potassium hydroxide
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:32035
     label: potassium hydroxide
 applications:
@@ -61,3 +101,39 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_komodo_2003_chitin_stock_score15.py
+  action: RESOLVED_KOMODO_2003_CHITIN_STOCK_SCORE15
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium766.pdf
+  notes: DSMZ Medium 766 prepares its chitin stock solution by acid-treating 20 g
+    practical-grade crab-shell chitin with 200 ml 37% HCl at 4 C, pouring the suspension
+    into 1 L cold distilled water, filtering and washing the residue, resuspending
+    it in 1 L water, neutralising it with 10 ml 5 M KOH to pH 6.5, and washing with
+    3 L water to remove KCl.
+preparation_steps:
+- step_number: 1
+  action: COOL
+  description: Pre-cool the 37% HCl and distilled water to 4 C.
+- step_number: 2
+  action: MIX
+  description: Mix 20 g practical-grade chitin from crab shells with 200 ml 37% HCl
+    and stir for 1 h at 4 C.
+- step_number: 3
+  action: FILTER
+  description: Pour the suspension into 1 L distilled water pre-cooled to 4 C and
+    filter through filter paper.
+- step_number: 4
+  action: MIX
+  description: Wash the residue five times with 500 ml distilled water and resuspend
+    it in 1 L distilled water.
+- step_number: 5
+  action: ADJUST_PH
+  description: Neutralise the suspension to pH 6.5 with 10 ml of 5 M KOH.
+- step_number: 6
+  action: FILTER
+  description: Filter and wash with 3 L distilled water to remove KCl.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium766.pdf

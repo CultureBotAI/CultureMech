@@ -10,12 +10,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Mapping: curated_dict (confidence: 0.98); FOODON:03302071 Peptone; CAS:
     51142-18-8'
+  term:
+    id: MICRO:0000178
+    label: Bacto peptone
 - preferred_term: Yeast Extract
   concentration:
     value: '3'
     unit: G_PER_L
   notes: 'Mapping: curated_dict (confidence: 0.98); FOODON:03315426 Yeast extract;
     CAS: 232-387-9'
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: D-Glucose
   concentration:
     value: '1'
@@ -33,8 +39,14 @@ ingredients:
     label: sodium chloride
   notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7647-14-5; MW: 58.44'
 description: Nutrient broth medium
-notes: 'Source: FEBA media definitions'
+notes: 'Source: FEBA media definitions via CultureBotHT. CultureBotHT imports nutrient
+  broth as 15 g/L Bacto Peptone, 3 g/L yeast extract, 1 g/L D-glucose, and 6 g/L sodium
+  chloride.'
 category: bacterial
+sources:
+- database: CultureBotHT
+  database_id: nutrient broth
+  url: https://github.com/CultureBotAI/CultureBotHT
 source_data:
   origin: CultureBotHT
   notes: 'database_id: nutrient broth; url: https://github.com/CultureBotAI/CultureBotHT'
@@ -72,8 +84,16 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
-data_quality_flags: []
-kg_microbe_match: mediadive.medium:681
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_culturebotht_nutrient_broth_score15.py
+  action: MARKED_CULTUREBOTHT_NUTRIENT_BROTH_SCORE15
+  changes: Marked CultureBotHT nutrient broth formula as curated
+  source: CultureBotHT:nutrient broth; https://github.com/CultureBotAI/CultureBotHT
+  notes: Grounded Bacto Peptone and Yeast Extract with exact MediaIngredientMech label-index
+    mappings. Removed stale KG-Microbe match to MediaDive 681.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Mycolicibacterium cosmeticum
@@ -90,3 +110,6 @@ target_organisms:
       explanation: 'Auto-applied from literature query: "nutrient broth"[All Fields]
         AND doubling time[All Fields]'
     is_max_attainment: true
+references:
+- reference: CultureBotHT:nutrient broth
+- reference: https://github.com/CultureBotAI/CultureBotHT

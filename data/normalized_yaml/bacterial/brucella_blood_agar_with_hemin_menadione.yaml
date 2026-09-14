@@ -10,27 +10,44 @@ media_term:
   term:
     id: mediadive.medium:J677
     label: BRUCELLA BLOOD AGAR WITH HEMIN MENADIONE
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=677'
+notes: JCM Medium 677 contains 43.0 g Brucella agar (BD-BBL), 50.0 ml horse blood,
+  10.0 ml hemin solution, 10.0 ml menadione solution, and 1.0 L distilled water.
 ingredients:
-- preferred_term: Brucella agar
-  term:
-    id: CHEBI:2509
-    label: agar
+- preferred_term: Brucella agar (BD-BBL)
   concentration:
-    value: '40.1869'
+    value: '43.0'
     unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
+  source: JCM Medium 677
+  notes: JCM Medium 677 lists 43.0 g Brucella agar (BD-BBL).
 - preferred_term: Horse blood
   concentration:
-    value: '50'
-    unit: G_PER_L
+    value: '50.0'
+    unit: ML_PER_L
+  source: JCM Medium 677
+  notes: JCM Medium 677 lists 50.0 ml horse blood.
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: JCM Medium 677
+  notes: JCM Medium 677 lists 1000 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve 50 mg hemin first in 1 ml of 1 N NaOH. Then adjust volume
-    to 100 ml.
+  action: MIX
+  description: Suspend 43.0 g Brucella agar (BD-BBL) in 1.0 L distilled water.
+- step_number: 2
+  action: MIX
+  description: Add 50.0 ml/L horse blood, 10.0 ml/L hemin solution, and 10.0 ml/L
+    menadione solution.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min unless otherwise stated.
 applications:
 - Microbial cultivation
 curation_history:
@@ -57,4 +74,72 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_official_simple_score20.py
+  action: RESOLVED_OFFICIAL_SIMPLE_SCORE20
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=677; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=469
+  notes: JCM Medium 677 contains 43.0 g Brucella agar (BD-BBL), 50.0 ml horse blood,
+    10.0 ml hemin solution, 10.0 ml menadione solution, and 1.0 L distilled water.
 kg_microbe_match: mediadive.medium:12
+solutions:
+- preferred_term: Hemin solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  notes: JCM Medium 677 lists 10.0 ml/L Hemin solution from JCM Medium 469.
+  composition:
+  - preferred_term: Hemin
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    term:
+      id: CHEBI:50385
+      label: hemin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:50385
+      label: hemin
+  - preferred_term: 1 N NaOH
+    concentration:
+      value: '10.0'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+- preferred_term: Menadione solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  notes: JCM Medium 677 lists 10.0 ml/L Menadione solution from JCM Medium 469.
+  composition:
+  - preferred_term: Menadione
+    concentration:
+      value: '0.05'
+      unit: G_PER_L
+    term:
+      id: CHEBI:28869
+      label: menadione
+    mediaingredientmech_chebi_term:
+      id: CHEBI:28869
+      label: menadione
+  - preferred_term: Ethanol
+    concentration:
+      value: '10.0'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:16236
+      label: ethanol
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16236
+      label: ethanol
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=677
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=469

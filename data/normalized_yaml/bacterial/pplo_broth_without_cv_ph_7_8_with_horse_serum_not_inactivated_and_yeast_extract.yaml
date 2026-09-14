@@ -6,43 +6,60 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.8
 ingredients:
+- preferred_term: PPLO broth
+  concentration:
+    value: '21.0'
+    unit: G_PER_L
+  source: TOGO M2226 / ATCC Medium 247
+  notes: ATCC Medium 247 lists 21.0 g PPLO Broth w/o CV from BD catalog 255420, with
+    the commercial product itself specified at pH 7.8; this catalog broth is retained
+    as an opaque complex component.
 - preferred_term: Distilled water
   concentration:
-    value: '700'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '700.0'
+    unit: ML_PER_L
+  source: TOGO M2226 / ATCC Medium 247
+  notes: ATCC Medium 247 lists 700.0 ml distilled water.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: Horse Serum (not inactivated)
+- preferred_term: Horse serum
   concentration:
-    value: '200'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: PPLO Broth w/o CV
+    value: '200.0'
+    unit: ML_PER_L
+  source: TOGO M2226 / ATCC Medium 247
+  notes: ATCC Medium 247 lists 200.0 ml horse serum and specifies that it is not inactivated;
+    this serum is retained as an opaque complex component.
+  term:
+    id: MICRO:0001235
+    label: Horse serum
+- preferred_term: Fresh Baker’s Yeast Extract (GIBCO 18180)
   concentration:
-    value: '21'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-- preferred_term: Fresh Baker’s Yeast Extract
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+    value: '100.0'
+    unit: ML_PER_L
+  source: TOGO M2226 / ATCC Medium 247
+  notes: ATCC Medium 247 lists 100.0 ml Fresh Baker’s Yeast Extract from GIBCO 18180;
+    the broad FOODON Yeast extract term captures the disclosed extract class, and
+    the source does not disclose the stock concentration.
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 media_term:
   preferred_term: TOGO Medium M2226
   term:
     id: TOGO:M2226
     label: PPLO broth without CV (pH 7.8) with horse serum (not inactivated) and yeast
       extract
-notes: 'Source: https://togomedium.org/medium/M2226
-
-  Original URL: https://www.atcc.org/~/media/AD2BC56A0BA94572A40803C02D24D35A.ashx'
+notes: TOGO M2226 cites ATCC Medium 247. ATCC Medium 247 lists PPLO broth without
+  CV at pH 7.8 as 21.0 g PPLO Broth w/o CV from BD catalog 255420, 200.0 ml non-inactivated
+  horse serum, 100.0 ml Fresh Baker’s Yeast Extract from GIBCO 18180, and 700.0 ml
+  distilled water. The horse serum and yeast extract are added aseptically to a sterile
+  PPLO broth and water basal medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,3 +91,32 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2226_pplo_horse_yeast_score15.py
+  action: RESOLVED_TOGO_M2226_PPLO_HORSE_YEAST_SCORE15
+  source: https://togomedium.org/medium/M2226; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2226;
+    https://www.atcc.org/~/media/AD2BC56A0BA94572A40803C02D24D35A.ashx
+  notes: TOGO M2226 cites ATCC Medium 247. ATCC Medium 247 lists PPLO broth without
+    CV at pH 7.8 as 21.0 g PPLO Broth w/o CV from BD catalog 255420, 200.0 ml non-inactivated
+    horse serum, 100.0 ml Fresh Baker’s Yeast Extract from GIBCO 18180, and 700.0
+    ml distilled water. The horse serum and yeast extract are added aseptically to
+    a sterile PPLO broth and water basal medium. Corrected the imported ml/L rows,
+    added the source pH, grounded water, horse serum, and yeast extract, and kept
+    the ATCC PPLO broth unmapped as an opaque complex input.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare sterile basal medium containing PPLO Broth w/o CV and distilled
+    water.
+- step_number: 2
+  action: MIX
+  description: Aseptically add horse serum and Fresh Baker’s Yeast Extract (GIBCO
+    18180).
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2226
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2226
+- reference: https://www.atcc.org/~/media/AD2BC56A0BA94572A40803C02D24D35A.ashx

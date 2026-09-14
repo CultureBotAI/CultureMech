@@ -4,91 +4,355 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: F/2 Medium
+  term:
+    id: UTEX:f-2-medium
+    label: F/2 Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
+notes: UTEX prepares F/2 Medium from non-pasteurized seawater at 30 ppt supplemented
+  with nitrate, phosphate, silicate, Trace Metals Solution, and three sterile vitamin
+  stocks.
 ingredients:
+- preferred_term: Seawater(non-sterilized)
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: ENVO:00002149
+    label: sea water
+  notes: UTEX brings the 1 L recipe to volume with non-pasteurized seawater at 30
+    ppt.
+  physicochemical_roles:
+  - OSMOTIC_AGENT
 - preferred_term: NaNO3
   concentration:
     value: '880'
     unit: MICROMOLAR
-  notes: 'UTEX lists: amount 1 mL; stock 7.5 g/100 mL d-H2O; final 880 µM'
+  term:
+    id: CHEBI:63005
+    label: sodium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: BP360-500
+  notes: UTEX adds 1 mL per liter of a 7.5 g/100 mL dH2O stock.
+  nutritional_roles:
+  - NITROGEN_SOURCE
 - preferred_term: NaH2PO4•H2O
   concentration:
     value: '36'
     unit: MICROMOLAR
-  notes: 'UTEX lists: amount 1 mL; stock 0.5 g/100 mL d-H2O; final 36 µM'
+  term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
   supplier_catalog:
     supplier_name: MCIB
     catalog_number: '742'
+  notes: UTEX adds 1 mL per liter of a 0.5 g/100 mL dH2O stock.
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
 - preferred_term: Na2SiO3•9H2O
   concentration:
     value: '106'
     unit: MICROMOLAR
-  notes: 'UTEX lists: amount 1 mL; stock 3 g/100 mL d-H2O; final 106 µM'
+  term:
+    id: CHEBI:132108
+    label: sodium silicate nonahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132108
+    label: sodium silicate nonahydrate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: '307815'
+  notes: UTEX adds 1 mL per liter of a 3 g/100 mL dH2O stock, for 106 uM final.
+  nutritional_roles:
+  - TRACE_ELEMENT
+solutions:
 - preferred_term: Trace Metals Solution
   concentration:
     value: '1'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 1 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX brings Trace Metals Solution to 1 L with dH2O.
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.023'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: Z 0251
+    notes: Converted from 23 mg/L in the UTEX Trace Metals Solution recipe.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: MnSO4 x H2O
+    concentration:
+      value: '0.152'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86364
+      label: manganese(II) sulfate monohydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86364
+      label: manganese(II) sulfate monohydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: M8179
+    notes: Converted from 152 mg/L in the UTEX Trace Metals Solution recipe.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.0073'
+      unit: G_PER_L
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    supplier_catalog:
+      supplier_name: J.T. Baker
+      catalog_number: '3764'
+    notes: Converted from 7.3 mg/L in the UTEX Trace Metals Solution recipe.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CoSO4 x 7 H2O
+    concentration:
+      value: '0.014'
+      unit: G_PER_L
+    term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+    supplier_catalog:
+      supplier_name: Baker
+      catalog_number: '1696'
+    notes: Converted from 14 mg/L in the UTEX Trace Metals Solution recipe.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CuCl2 x 2 H2O
+    concentration:
+      value: '0.0068'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+    supplier_catalog:
+      supplier_name: Fisher
+      catalog_number: C-455
+    notes: Converted from 6.8 mg/L in the UTEX Trace Metals Solution recipe.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
+    concentration:
+      value: '4.6'
+      unit: G_PER_L
+    term:
+      id: CHEBI:76181
+      label: ferrous ammonium sulfate hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76181
+      label: ferrous ammonium sulfate hexahydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: F-1513
+    notes: UTEX lists 4.6 g/L in the Trace Metals Solution recipe.
+    nutritional_roles:
+    - IRON_SOURCE
+    - TRACE_ELEMENT
+  - preferred_term: Na2EDTA x 2 H2O
+    concentration:
+      value: '4.4'
+      unit: G_PER_L
+    term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: ED255
+    notes: UTEX lists 4.4 g/L in the Trace Metals Solution recipe.
+    physicochemical_roles:
+    - CHELATOR
+  notes: UTEX adds 1 mL Trace Metals Solution per liter of F/2-family medium.
 - preferred_term: Vitamin B12
   concentration:
     value: '1'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 1 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX prepares the Vitamin B12 stock in 200 mL HEPES buffer.
+  - preferred_term: HEPES buffer pH 7.8
+    concentration:
+      value: '12'
+      unit: G_PER_L
+    term:
+      id: CHEBI:42334
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:42334
+      label: HEPES
+    notes: Converted from 2.4 g/200 mL in the UTEX Vitamin B12 stock.
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.135'
+      unit: G_PER_L
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+    notes: Converted from 0.027 g/200 mL in the UTEX Vitamin B12 stock.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  notes: UTEX adds 1 mL Vitamin B12 stock per liter of F/2-family medium.
 - preferred_term: Biotin Vitamin Solution
   concentration:
     value: '1'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 1 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX prepares the biotin stock in 200 mL HEPES buffer.
+  - preferred_term: HEPES buffer pH 7.8
+    concentration:
+      value: '12'
+      unit: G_PER_L
+    term:
+      id: CHEBI:42334
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:42334
+      label: HEPES
+    notes: Converted from 2.4 g/200 mL in the UTEX biotin stock.
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Biotin
+    concentration:
+      value: '0.025'
+      unit: G_PER_L
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+    notes: Converted from 0.005 g/200 mL in the UTEX biotin stock.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  notes: UTEX adds 1 mL biotin stock per liter of F/2-family medium.
 - preferred_term: Thiamine Vitamin Solution
   concentration:
     value: '1'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 1 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX prepares the thiamine stock in 200 mL HEPES buffer.
+  - preferred_term: HEPES buffer pH 7.8
+    concentration:
+      value: '12'
+      unit: G_PER_L
+    term:
+      id: CHEBI:42334
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:42334
+      label: HEPES
+    notes: Converted from 2.4 g/200 mL in the UTEX thiamine stock.
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Thiamine
+    concentration:
+      value: '0.335'
+      unit: G_PER_L
+    term:
+      id: CHEBI:18385
+      label: thiamine(1+)
+    mediaingredientmech_chebi_term:
+      id: CHEBI:18385
+      label: thiamine(1+)
+    notes: Converted from 0.067 g/200 mL in the UTEX thiamine stock.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  notes: UTEX adds 1 mL thiamine stock per liter of F/2-family medium.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: To approximately 950 mL non-pasteurized seawater at 30 ppt, add the
+    F/2 nutrient stocks and Trace Metals Solution while stirring.
 - step_number: 2
   action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  description: Bring the total volume to 1 L with non-pasteurized seawater at 30 ppt.
 - step_number: 3
-  action: MIX
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
+  action: AUTOCLAVE
+  description: Cover and autoclave the medium or filter-sterilize it.
 - step_number: 4
   action: MIX
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
+  description: When cooled, add the sterile vitamin stocks.
 - step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: MIX
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
+  action: STORE
+  description: Store at refrigerator temperature.
 salinity: marine (natural seawater or artificial seawater)
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
@@ -128,6 +392,39 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_remaining_score50.py
+  action: LINKED_UTEX_SCORE50_ALGAE_CHILDREN
+  changes: Linked score-50 UTEX algae child media to prepared-media parents
+  notes: Added or refreshed reciprocal parent-child link for algae/Modified_2X_CHEV_Medium.yaml.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_remaining_score50.py
+  action: LINKED_UTEX_SCORE50_ALGAE_CHILDREN
+  changes: Linked score-50 UTEX algae child media to prepared-media parents
+  notes: Added or refreshed reciprocal parent-child link for algae/f_2_nh4_medium.yaml.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_f2_score35.py
+  action: RESOLVED_UTEX_F2_SCORE35
+  changes: Grounded UTEX score-35 F/2 family components
+  source: https://utex.org/products/f-2-medium
+  notes: UTEX prepares F/2 Medium from non-pasteurized seawater at 30 ppt supplemented
+    with nitrate, phosphate, silicate, Trace Metals Solution, and three sterile vitamin
+    stocks.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_f2_score35.py
+  action: LINKED_UTEX_F2_VARIANTS
+  changes: Linked UTEX F/2 concentration variants to F/2 Medium
+  notes: Added or refreshed reciprocal parent-child link for algae/1_F_2_Medium.yaml.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_f2_score35.py
+  action: LINKED_UTEX_F2_VARIANTS
+  changes: Linked UTEX F/2 concentration variants to F/2 Medium
+  notes: Added or refreshed reciprocal parent-child link for algae/5_F_2_Medium.yaml.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_f2_score35.py
+  action: LINKED_UTEX_F2_VARIANTS
+  changes: Linked UTEX F/2 concentration variants to F/2 Medium
+  notes: Added or refreshed reciprocal parent-child link for algae/8_ppt_F_2_Medium.yaml.
 references:
 - reference: UTEX:f-2-medium
 - reference: https://utex.org/products/f-2-medium
@@ -146,6 +443,10 @@ references:
   year: 2021
   notes: PubMed PMID 34109463; source reports Chaetoceros gracilis UTEX LB2658 growth
     experiments in modified F/2ASW.
+- reference: https://utex.org/products/trace-metals-solution
+- reference: https://utex.org/products/vitamin-b-12
+- reference: https://utex.org/products/biotin-vitamin-solution
+- reference: https://utex.org/products/thiamine-vitamin-solution
 original_name: F/2 Medium
 variants:
 - name: n_replete_second_stage_tetraselmis_marina
@@ -280,3 +581,34 @@ target_organisms:
     explanation: The study identifies the UTEX LB2658 strain and modified F/2ASW growth
       conditions; the UTEX strain page separately lists this strain as a liquid-culture
       Chaetoceros gracilis accession.
+variant_children:
+- path: data/normalized_yaml/algae/1_F_2_Medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000012
+  name: 1_f_2_medium
+  notes: Dilutes the seawater base with dH2O and uses a lower-concentration 2 g/100
+    mL Na2SiO3 x 9 H2O stock.
+- path: data/normalized_yaml/algae/5_F_2_Medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000020
+  name: 5_f_2_medium
+  notes: Raises salinity with 15 g/L natural sea-salt and uses a lower-concentration
+    2 g/100 mL Na2SiO3 x 9 H2O stock.
+- path: data/normalized_yaml/algae/8_ppt_F_2_Medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000021
+  name: 8_ppt_f_2_medium
+  notes: Dilutes the seawater base to 8 ppt before adding the standard F/2 stocks.
+- path: data/normalized_yaml/algae/Modified_2X_CHEV_Medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000177
+  name: modified_2x_chev_medium
+  notes: Dilutes 200 mL prepared F/2 Medium with 800 mL sterile dH2O.
+- path: data/normalized_yaml/algae/f_2_nh4_medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:000169
+  name: f_2_nh4_medium
+  notes: Adds a pinch of NH4MgPO4 to each 175 mL flask of prepared F/2 Medium.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

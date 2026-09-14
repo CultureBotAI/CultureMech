@@ -399,27 +399,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-variant_children:
-- path: data/normalized_yaml/bacterial/for_dsm_14826.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006748
-  name: for_dsm_14826
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_14828.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006749
-  name: for_dsm_14828
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_895_anaerobranca_score10.py
+  action: RESOLVED_KOMODO_895_ANAEROBRANCA_TOPOLOGY
+  changes: Linked under DSMZ Medium 895 as SOURCE_DUPLICATE
+  source: KOMODO Medium 895
+  notes: KOMODO Medium 895 has the same 35-ingredient signature as DSMZ Medium 895.
 parent_media:
   path: data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002058
   name: anaerobranca_gottschalkii_medium
-  notes: KOMODO record states DSMZ Medium 895 provenance and exactly matches the single
-    same-category DSMZ parent signature.
+  notes: KOMODO Medium 895 has the same 35-ingredient signature as DSMZ Medium 895.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the matching
-  DSMZ medium source.
+- KOMODO Medium 895 has the same 35-ingredient signature as DSMZ Medium 895.
+data_quality_flags:
+- ingredients_curated

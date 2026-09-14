@@ -8,33 +8,49 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Yeast extract
   concentration:
-    value: '10'
+    value: '10.0'
     unit: PERCENT_W_V
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M2887
+  notes: TOGO M2887 lists 10% Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Inactivated horse serum (Hyclone)
   concentration:
-    value: '20'
-    unit: PERCENT_W_V
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+    value: '20.0'
+    unit: PERCENT_V_V
+  source: TOGO M2887
+  notes: TOGO M2887 lists 20% Inactivated horse serum from Hyclone; this serum product
+    is retained as an opaque component.
 - preferred_term: Thallium acetate
   concentration:
     value: '0.125'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Simple component'
+  source: TOGO M2887
+  notes: TOGO M2887 lists 0.125 mg/ml Thallium acetate, equivalent to 0.125 g/L.
+  term:
+    id: CHEBI:75192
+    label: thallium(I) acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75192
+    label: thallium(I) acetate
 - preferred_term: PPLO medium
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+    value: '1.0'
+    unit: L
+  source: TOGO M2887
+  notes: TOGO M2887 lists 1 L PPLO medium; this undefined complex medium base is retained
+    as an opaque component.
 - preferred_term: Penicillin
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
-    Simple component'
-  term:
-    id: CHEBI:17334
-    label: penicillin
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M2887
+  notes: TOGO M2887 lists 200 IU/ml Penicillin, which is retained as a variable concentration
+    because the schema has no unit for activity units.
+  term:
+    id: CHEBI:17334
+    label: penicillin
   mediaingredientmech_chebi_term:
     id: CHEBI:17334
     label: penicillin
@@ -43,7 +59,9 @@ media_term:
   term:
     id: TOGO:M2887
     label: Modified pleuropneumonia-like organism (PPLO) medium
-notes: 'Source: https://togomedium.org/medium/M2887'
+notes: TOGO M2887 reports that Mycoplasma was cultured in modified pleuropneumonia-like
+  organism medium supplemented with 20% inactivated horse serum from Hyclone, 10%
+  yeast extract, thallium acetate at 0.125 mg/ml, and penicillin at 200 IU/ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -82,3 +100,18 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2887_modified_pplo_score15.py
+  action: RESOLVED_TOGO_M2887_SCORE15
+  source: https://togomedium.org/medium/M2887
+  notes: TOGO M2887 reports that Mycoplasma was cultured in modified pleuropneumonia-like
+    organism medium supplemented with 20% inactivated horse serum from Hyclone, 10%
+    yeast extract, thallium acetate at 0.125 mg/ml, and penicillin at 200 IU/ml. Corrected
+    the imported 1 L PPLO medium unit, normalized the horse serum concentration as
+    v/v, grounded thallium acetate, and retained Penicillin as an activity-unit amount.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2887

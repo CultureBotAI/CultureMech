@@ -96,3 +96,15 @@ curation_history:
   notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m3283_score15.py
+  action: LINKED_TOGO_M3283_DERIVED_FROM
+  source: https://togomedium.org/medium/M3283; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1453
+  notes: Linked TOGO M3283 as a derived variant of DSMZ Medium 1855.
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M3283_Pectin_Medium.yaml
+  relationship: DERIVED_FROM
+  id: CultureMech:009697
+  name: pectin_medium
+  notes: TOGO M3283 imports JCM Medium 1453, a pectin medium formulation derived from
+    the DSMZ Medium 1855 component set with different yeast-extract and pH conditions.

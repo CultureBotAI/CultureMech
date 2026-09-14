@@ -3,67 +3,82 @@ name: nas_02_medium
 original_name: NAS-02 Medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: KH2PO4
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
-  term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
 - preferred_term: (NH4)2SO4
   concentration:
-    value: '0.2'
+    value: '0.190295'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  source: JCM Medium 1162 / MediaDive J1162
+  notes: JCM Medium 1162 lists 0.2 g (NH4)2SO4; MediaDive J1162 normalizes this to
+    0.190295 g/L.
   term:
     id: CHEBI:62946
     label: ammonium sulfate
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
     label: ammonium sulfate
-- preferred_term: Na2S2O3・5H2O
+- preferred_term: KH2PO4
   concentration:
-    value: '2.5'
+    value: '2.85442'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Simple component'
+  source: JCM Medium 1162 / MediaDive J1162
+  notes: JCM Medium 1162 lists 3.0 g KH2PO4; MediaDive J1162 normalizes this to 2.85442
+    g/L.
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: Na2S2O3 x 5H2O
+  concentration:
+    value: '2.37869'
+    unit: G_PER_L
+  source: JCM Medium 1162 / MediaDive J1162
+  notes: JCM Medium 1162 lists 2.5 g Na2S2O3 x 5H2O; MediaDive J1162 normalizes this
+    to 2.37869 g/L.
   term:
     id: CHEBI:32150
     label: sodium thiosulfate pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
+    label: sodium thiosulfate pentahydrate
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: JCM Medium 1162
+  notes: JCM Medium 1162 lists 1.0 L distilled water before stock additions.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  source: JCM Medium 1162
+  notes: JCM Medium 1162 autoclaves NAS-02 medium under N2-CO2 (4:1, v/v).
   term:
     id: CHEBI:16526
     label: carbon dioxide
-- preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
+- preferred_term: N2
   concentration:
     value: variable
     unit: VARIABLE
+  source: JCM Medium 1162
+  notes: JCM Medium 1162 autoclaves NAS-02 medium under N2-CO2 (4:1, v/v).
   term:
+    id: CHEBI:17997
+    label: dinitrogen
+  mediaingredientmech_chebi_term:
     id: CHEBI:17997
     label: dinitrogen
 media_term:
@@ -71,11 +86,10 @@ media_term:
   term:
     id: TOGO:M1244
     label: NAS-02 Medium
-notes: 'Source: https://togomedium.org/medium/M1244
-
-  Original source: JCM - JCM_M1162
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1162'
+notes: JCM Medium 1162 defines NAS-02 Medium with thiosulfate, Modified Allen's trace
+  metal solution from JCM Medium 1014, N2-CO2 autoclaving at pH 5.2, and anaerobic
+  post-autoclave additions of calcium, magnesium, trace vitamins, yeast extract, cysteine,
+  and ferrous chloride stocks.
 applications:
 - Microbial cultivation
 curation_history:
@@ -128,55 +142,380 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m1244_score15.py
+  action: RESOLVED_TOGO_M1244_SCORE15
+  source: https://togomedium.org/medium/M1244; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1162;
+    https://mediadive.dsmz.de/rest/medium/J1162; https://togomedium.org/medium/M1072;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1014; https://togomedium.org/medium/M190;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+  notes: JCM Medium 1162 defines NAS-02 Medium with thiosulfate, Modified Allen's
+    trace metal solution from JCM Medium 1014, N2-CO2 autoclaving at pH 5.2, and anaerobic
+    post-autoclave additions of calcium, magnesium, trace vitamins, yeast extract,
+    cysteine, and ferrous chloride stocks.
 solutions:
-- preferred_term: Modified Allen's trace metal solution (see Medium [M1072])
-  composition: []
-  notes: Cross-reference to Medium M1072
+- preferred_term: Modified Allen's trace metal solution
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: 5% (w/v) CaCl2・2H2O solution
-  composition: []
+    value: '1.0'
+    unit: ML_PER_L
+  source: JCM Medium 1162
+  notes: JCM Medium 1162 adds 1.0 ml/L Modified Allen's trace metal solution from
+    JCM Medium 1014.
+  composition:
+  - preferred_term: MnCl2 x 4H2O
+    concentration:
+      value: '1.8'
+      unit: G_PER_L
+    source: JCM Medium 1014
+    notes: JCM Medium 1014 lists 1.8 g/L MnCl2 x 4H2O.
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+  - preferred_term: Na2B4O7 x 10H2O
+    concentration:
+      value: '4.5'
+      unit: G_PER_L
+    source: JCM Medium 1014
+    notes: JCM Medium 1014 lists 4.5 g/L Na2B4O7 x 10H2O.
+    term:
+      id: CHEBI:131366
+      label: disodium tetraborate decahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131366
+      label: disodium tetraborate decahydrate
+  - preferred_term: ZnSO4 x 7H2O
+    concentration:
+      value: '0.22'
+      unit: G_PER_L
+    source: JCM Medium 1014
+    notes: JCM Medium 1014 lists 0.22 g/L ZnSO4 x 7H2O.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+  - preferred_term: CuCl2 x 2H2O
+    concentration:
+      value: '0.05'
+      unit: G_PER_L
+    source: JCM Medium 1014
+    notes: JCM Medium 1014 lists 0.05 g/L CuCl2 x 2H2O.
+    term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+  - preferred_term: Na2MoO4 x 2H2O
+    concentration:
+      value: '0.03'
+      unit: G_PER_L
+    source: JCM Medium 1014
+    notes: JCM Medium 1014 lists 0.03 g/L Na2MoO4 x 2H2O.
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+  - preferred_term: VOSO4 x nH2O
+    concentration:
+      value: '0.03'
+      unit: G_PER_L
+    source: JCM Medium 1014
+    notes: JCM Medium 1014 lists 0.03 g/L VOSO4 x nH2O.
+    term:
+      id: CHEBI:87020
+      label: vanadyl sulfate hydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:87020
+      label: vanadyl sulfate hydrate
+  - preferred_term: CoSO4 x 7H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: JCM Medium 1014
+    notes: JCM Medium 1014 lists 0.01 g/L CoSO4 x 7H2O.
+    term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 1014
+    notes: JCM Medium 1014 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: 5% (w/v) MgSO4 x 7H2O solution
   concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
-    compound'
-  name: Unknown solution
+    value: '10.0'
+    unit: ML_PER_L
+  source: JCM Medium 1162
+  notes: JCM Medium 1162 adds 10.0 ml/L 5% (w/v) MgSO4 x 7H2O solution.
+  composition:
+  - preferred_term: MgSO4 x 7H2O
+    concentration:
+      value: '50.0'
+      unit: G_PER_L
+    source: JCM Medium 1162
+    notes: JCM Medium 1162 lists 5% (w/v) MgSO4 x 7H2O solution; this records the
+      stock as 50.0 g/L MgSO4 x 7H2O.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+- preferred_term: 5% (w/v) CaCl2 x 2H2O solution
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+  source: JCM Medium 1162
+  notes: JCM Medium 1162 adds 5.0 ml/L 5% (w/v) CaCl2 x 2H2O solution.
+  composition:
+  - preferred_term: CaCl2 x 2H2O
+    concentration:
+      value: '50.0'
+      unit: G_PER_L
+    source: JCM Medium 1162
+    notes: JCM Medium 1162 lists 5% (w/v) CaCl2 x 2H2O solution; this records the
+      stock as 50.0 g/L CaCl2 x 2H2O.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+- preferred_term: Trace vitamins
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: JCM Medium 197
+  notes: JCM Medium 1162 adds 10.0 ml/L filter-sterilized Trace vitamins from JCM
+    Medium 197.
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 2.0 mg/L Biotin.
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+  - preferred_term: Folic acid
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 2.0 mg/L Folic acid.
+    term:
+      id: CHEBI:27470
+      label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
+  - preferred_term: Pyridoxine HCl
+    concentration:
+      value: '10.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 10.0 mg/L Pyridoxine HCl.
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+  - preferred_term: Thiamine HCl
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 5.0 mg/L Thiamine HCl.
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+  - preferred_term: Riboflavin
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 5.0 mg/L Riboflavin.
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 5.0 mg/L Nicotinic acid.
+    term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: nicotinic acid
+  - preferred_term: Calcium pantothenate
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 5.0 mg/L Calcium pantothenate.
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.1'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 0.1 mg/L Vitamin B12.
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 5.0 mg/L p-Aminobenzoic acid.
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+  - preferred_term: Lipoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 5.0 mg/L Lipoic acid.
+    term:
+      id: CHEBI:16494
+      label: lipoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16494
+      label: lipoic acid
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
 - preferred_term: 10% (w/v) Yeast extract solution
-  composition: []
   concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-  name: Unknown solution
-- preferred_term: 5% (w/v) MgSO4・7H2O solution
-  composition: []
+    value: '5.0'
+    unit: ML_PER_L
+  source: JCM Medium 1162
+  notes: JCM Medium 1162 adds 5.0 ml/L 10% (w/v) Yeast extract solution.
+  composition:
+  - preferred_term: Yeast extract
+    concentration:
+      value: '100.0'
+      unit: G_PER_L
+    source: JCM Medium 1162
+    notes: JCM Medium 1162 lists 10% (w/v) Yeast extract solution; this records the
+      stock as 100.0 g/L Yeast extract.
+    term:
+      id: FOODON:03315426
+      label: yeast extract
+- preferred_term: 25 mM L-Cysteine HCl solution
   concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
-    compound'
-  name: Unknown solution
+    value: '10.0'
+    unit: ML_PER_L
+  source: JCM Medium 1162
+  notes: JCM Medium 1162 adds 10.0 ml/L 25 mM L-Cysteine HCl solution.
+  composition:
+  - preferred_term: L-Cysteine HCl
+    concentration:
+      value: '25.0'
+      unit: MILLIMOLAR
+    source: JCM Medium 1162
+    notes: JCM Medium 1162 lists 25 mM L-Cysteine HCl solution; this records the stock
+      as 25.0 mM L-Cysteine HCl.
+    term:
+      id: CHEBI:91247
+      label: L-cysteine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91247
+      label: L-cysteine hydrochloride
 - preferred_term: 130 mM FeCl2 solution
-  composition: []
   concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Solution, Inorganic compound, Defined
-    component'
-  name: Unknown solution
-- preferred_term: 25 mM L-Cysteine・HCl solution
-  composition: []
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Trace vitamins (see Medium [M190])
-  composition: []
-  notes: Cross-reference to Medium M190
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '10.0'
+    unit: ML_PER_L
+  source: JCM Medium 1162
+  notes: JCM Medium 1162 adds 10.0 ml/L 130 mM FeCl2 solution.
+  composition:
+  - preferred_term: FeCl2
+    concentration:
+      value: '130.0'
+      unit: MILLIMOLAR
+    source: JCM Medium 1162
+    notes: JCM Medium 1162 lists 130 mM FeCl2 solution; this records the stock as
+      130.0 mM FeCl2.
+    term:
+      id: CHEBI:30812
+      label: iron dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30812
+      label: iron dichloride
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix the main salts, Modified Allen's trace metal solution, sodium thiosulfate,
+    and distilled water thoroughly and adjust pH to 5.2.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the base medium under an N2-CO2 (4:1, v/v) gas mixture.
+- step_number: 3
+  action: MIX
+  description: After cooling, anaerobically and aseptically add the MgSO4, CaCl2,
+    Trace vitamins, yeast extract, L-cysteine HCl, and FeCl2 solutions.
+ph_value: 5.2
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1244
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1162
+- reference: https://mediadive.dsmz.de/rest/medium/J1162
+- reference: https://togomedium.org/medium/M1072
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1014
+- reference: https://togomedium.org/medium/M190
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197

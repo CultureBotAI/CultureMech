@@ -66,6 +66,12 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_remaining_score10_grounding_batch9.py
+  action: RESOLVED_REMAINING_SCORE10_GROUNDING_BATCH9
+  changes: marked reviewed opaque ingredients
+  source: official catalogue recipe and local exact label index
+  notes: 'Reviewed remaining score-10 grounding rows: Oat flakes, Oatmeal.'
 kg_microbe_match: mediadive.medium:12
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_425_OATMEAL_AGAR.yaml
@@ -74,3 +80,6 @@ variant_children:
   name: oatmeal_agar
   notes: Same ingredient and concentration signature; KOMODO record copied from the
     matching DSMZ medium source.
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients

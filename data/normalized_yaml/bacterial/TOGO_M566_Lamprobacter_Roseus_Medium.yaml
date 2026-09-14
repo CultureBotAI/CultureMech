@@ -11,11 +11,8 @@ media_term:
   term:
     id: TOGO:M566
     label: Lamprobacter Roseus Medium
-notes: 'Source: https://togomedium.org/medium/M566
-
-  Original source: JCM - JCM_M562
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=562'
+notes: 'TOGO M566 mirrors JCM Medium 562: Medium 561 supplemented with 1.0 ml/L vitamin
+  B12 solution at 2 mg/100 ml.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -44,20 +41,49 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_parent_wrappers_score20.py
+  action: RESOLVED_JCM_PARENT_WRAPPER_SCORE20
+  source: https://togomedium.org/medium/M566; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=562;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=561
+  notes: 'TOGO M566 mirrors JCM Medium 562: Medium 561 supplemented with 1.0 ml/L
+    vitamin B12 solution at 2 mg/100 ml.'
 solutions:
-- preferred_term: vitamin B12 solution
+- preferred_term: Vitamin B12 solution
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  notes: JCM Medium 562 supplements Medium 561 with 1.0 ml/L vitamin B12 solution
+    (2 mg/100 ml).
   term:
     id: mediadive.solution:6105
     label: Vitamin B12 solution
+- preferred_term: Thiorhodococcus Bheemlicum Medium
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: See mediadive_6105_Vitamin_B12_solution.yaml for composition
-  name: Unknown solution
-- preferred_term: THIORHODOCOCCUS BHEEMLICUM MEDIUM (see Medium [M565])
-  composition: []
-  notes: Cross-reference to Medium M565
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '1000'
+    unit: ML_PER_L
+  notes: JCM Medium 562 uses Medium 561 as the prepared base.
+  culturemech_term:
+    id: CultureMech:009960
+    label: Thiorhodococcus Bheemlicum Medium
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 561 supplemented with 1.0 ml/L vitamin B12 solution
+    (2 mg/100 ml).
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M565_Thiorhodococcus_Bheemlicum_Medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:009960
+  name: thiorhodococcus_bheemlicum_medium
+  notes: Supplements Medium 561 with 1.0 ml/L vitamin B12 solution (2 mg/100 ml).
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Supplements Medium 561 with 1.0 ml/L vitamin B12 solution (2 mg/100 ml).
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M566
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=562
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=561

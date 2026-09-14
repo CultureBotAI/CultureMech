@@ -21,10 +21,16 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  term:
+    id: MICRO:0000182
+    label: Tryptone
 - preferred_term: Bacto peptone
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: MICRO:0000178
+    label: Bacto peptone
 - preferred_term: DNA
   term:
     id: CHEBI:16991
@@ -43,6 +49,9 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Fetal bovine serum
   concentration:
     value: '17'
@@ -131,3 +140,37 @@ curation_history:
   notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2450_m2453_sp4z_score15.py
+  action: LINKED_TOGO_M2450_M2453_SP4Z_VARIANTS
+  source: https://togomedium.org/medium/M2450; https://togomedium.org/medium/M2451;
+    https://togomedium.org/medium/M2452; https://togomedium.org/medium/M2453; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1076b.pdf
+  notes: Linked TOGO M2450-M2453 as source-derived glucose/arginine and liquid/agar
+    branches of DSMZ Medium 1076b SP4-Z.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_bacterial_score10_exact_terms_batch7.py
+  action: GROUNDED_BACTERIAL_SCORE10_EXACT_TERMS_BATCH7
+  changes: Grounded bacterial score-10 exact ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Bacto peptone, Tryptone, Yeast extract.
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M2450_SP4-Z_Medium.yaml
+  relationship: DERIVED_FROM
+  id: CultureMech:009030
+  name: sp4_z_medium
+  notes: TOGO M2450 imports the DSMZ Medium 1076b glucose liquid branch.
+- path: data/normalized_yaml/bacterial/TOGO_M2451_SP4-Z_Medium.yaml
+  relationship: DERIVED_FROM
+  id: CultureMech:009031
+  name: sp4_z_medium
+  notes: TOGO M2451 imports the DSMZ Medium 1076b arginine liquid branch.
+- path: data/normalized_yaml/bacterial/TOGO_M2452_SP4-Z_Medium.yaml
+  relationship: DERIVED_FROM
+  id: CultureMech:009032
+  name: sp4_z_medium
+  notes: TOGO M2452 imports the DSMZ Medium 1076b glucose agar-plate branch.
+- path: data/normalized_yaml/bacterial/TOGO_M2453_SP4-Z_Medium.yaml
+  relationship: DERIVED_FROM
+  id: CultureMech:009033
+  name: sp4_z_medium
+  notes: TOGO M2453 imports the DSMZ Medium 1076b arginine agar-plate branch.

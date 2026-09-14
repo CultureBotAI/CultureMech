@@ -6,16 +6,19 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: 'de Man–Rogosa–Sharpe (MRS) broth (LabM) '
+- preferred_term: de Man-Rogosa-Sharpe (MRS) broth (LabM)
   concentration:
-    value: '1'
-    unit: G_PER_L
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2944
+  notes: TOGO M2944 lists 1 L de Man-Rogosa-Sharpe broth from LabM.
 media_term:
   preferred_term: TOGO Medium M2944
   term:
     id: TOGO:M2944
     label: de Man–Rogosa–Sharpe (MRS) broth
-notes: 'Source: https://togomedium.org/medium/M2944'
+notes: TOGO M2944 records propagation at 37 C in one liter of de Man-Rogosa-Sharpe
+  broth from LabM; the source does not spell out the product's internal composition.
 applications:
 - Microbial cultivation
 curation_history:
@@ -32,3 +35,16 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "de Man–Rogosa–Sharpe (MRS) broth" to "de_man_rogosa_sharpe_mrs_broth"
     for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_literal_products_score40.py
+  action: RESOLVED_TOGO_LITERAL_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO literal product/additive graph
+  source: https://togomedium.org/medium/M2944
+  notes: TOGO M2944 records propagation at 37 C in one liter of de Man-Rogosa-Sharpe
+    broth from LabM; the source does not spell out the product's internal composition.
+temperature_value: 37.0
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2944

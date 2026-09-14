@@ -11,9 +11,231 @@ media_term:
   term:
     id: komodo.medium:820_16960
     label: MEDIUM 820 MODIFIED FOR DSM 16960
-notes: 'Source: KOMODO ModelSEED | ID: 820_16960 | DSMZ Medium: 820 (mediadive.medium:820)
-  | Aerobic: No'
-ingredients: []
+notes: KOMODO 820_16960 defines MEDIUM 820 MODIFIED FOR DSM 16960 as the archived
+  DSMZ Medium 820 formulation adjusted to pH 7.8; this record expands the archived
+  DSMZ Media 820 and 514 components shared with AEROPYRUM-JXT MEDIUM.
+ingredients:
+- preferred_term: Bacto peptone
+  source: Archived DSMZ Medium 514
+  notes: Archived DSMZ Medium 514 lists 5.00 g Bacto peptone in 1000 mL distilled
+    water.
+  concentration:
+    value: '5.000000'
+    unit: G_PER_L
+  term:
+    id: MICRO:0000178
+    label: Bacto peptone
+- preferred_term: Yeast extract
+  source: Archived DSMZ Medium 514
+  notes: Archived DSMZ Medium 514 lists 1.00 g Bacto yeast extract in 1000 mL distilled
+    water.
+  concentration:
+    value: '1.000000'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Fe(III) citrate
+  source: Archived DSMZ Medium 514
+  notes: Archived DSMZ Medium 514 lists 0.10 g Fe(III) citrate in 1000 mL distilled
+    water.
+  concentration:
+    value: '0.100000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:144421
+    label: iron(III) citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
+    label: iron(III) citrate
+- preferred_term: NaCl
+  source: Archived DSMZ Medium 514
+  notes: Archived DSMZ Medium 514 lists 19.45 g NaCl in 1000 mL distilled water.
+  concentration:
+    value: '19.450000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: MgCl2
+  source: Archived DSMZ Medium 514
+  notes: Archived DSMZ Medium 514 lists 5.90 g MgCl2 (anhydrous) in 1000 mL distilled
+    water.
+  concentration:
+    value: '5.900000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+- preferred_term: Na2SO4
+  source: Archived DSMZ Medium 514
+  notes: Archived DSMZ Medium 514 lists 3.24 g Na2SO4 in 1000 mL distilled water.
+  concentration:
+    value: '3.240000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: CaCl2
+  source: Archived DSMZ Medium 514
+  notes: Archived DSMZ Medium 514 lists 1.80 g CaCl2 in 1000 mL distilled water.
+  concentration:
+    value: '1.800000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
+- preferred_term: KCl
+  source: Archived DSMZ Medium 514
+  notes: Archived DSMZ Medium 514 lists 0.55 g KCl in 1000 mL distilled water.
+  concentration:
+    value: '0.550000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: NaHCO3
+  source: Archived DSMZ Medium 514
+  notes: Archived DSMZ Medium 514 lists 0.16 g NaHCO3 in 1000 mL distilled water.
+  concentration:
+    value: '0.160000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: KBr
+  source: Archived DSMZ Medium 514
+  notes: Archived DSMZ Medium 514 lists 0.08 g KBr in 1000 mL distilled water.
+  concentration:
+    value: '0.080000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32030
+    label: potassium bromide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
+    label: potassium bromide
+- preferred_term: SrCl2
+  source: Archived DSMZ Medium 514
+  notes: Archived DSMZ Medium 514 lists 34.00 mg SrCl2 in 1000 mL distilled water,
+    converted to 0.034000 g/L.
+  concentration:
+    value: '0.034000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:36383
+    label: strontium dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36383
+    label: strontium dichloride
+- preferred_term: H3BO3
+  source: Archived DSMZ Medium 514
+  notes: Archived DSMZ Medium 514 lists 22.00 mg H3BO3 in 1000 mL distilled water,
+    converted to 0.022000 g/L.
+  concentration:
+    value: '0.022000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: Na-silicate
+  source: Archived DSMZ Medium 514
+  notes: Archived DSMZ Medium 514 lists 4.00 mg Na-silicate in 1000 mL distilled water,
+    converted to 0.004000 g/L.
+  concentration:
+    value: '0.004000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:60720
+    label: sodium silicate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:60720
+    label: sodium silicate
+- preferred_term: NaF
+  source: Archived DSMZ Medium 514
+  notes: Archived DSMZ Medium 514 lists 2.40 mg NaF in 1000 mL distilled water, converted
+    to 0.002400 g/L.
+  concentration:
+    value: '0.002400'
+    unit: G_PER_L
+  term:
+    id: CHEBI:28741
+    label: sodium fluoride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28741
+    label: sodium fluoride
+- preferred_term: (NH4)NO3
+  source: Archived DSMZ Medium 514
+  notes: Archived DSMZ Medium 514 lists 1.60 mg (NH4)NO3 in 1000 mL distilled water,
+    converted to 0.001600 g/L.
+  concentration:
+    value: '0.001600'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63038
+    label: ammonium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
+    label: ammonium nitrate
+- preferred_term: Na2HPO4
+  source: Archived DSMZ Medium 514
+  notes: Archived DSMZ Medium 514 lists 8.00 mg Na2HPO4 in 1000 mL distilled water,
+    converted to 0.008000 g/L.
+  concentration:
+    value: '0.008000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+- preferred_term: Na2S2O3 x 5 H2O
+  source: Archived DSMZ Medium 820
+  notes: Archived DSMZ Medium 820 adds 1.0 g/L Na2S2O3 x 5 H2O from a filter-sterilized
+    stock after autoclaving DSMZ Medium 514.
+  concentration:
+    value: '1.000000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32150
+    label: sodium thiosulfate pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
+    label: sodium thiosulfate pentahydrate
+- preferred_term: Distilled water
+  source: Archived DSMZ Medium 514
+  notes: Archived DSMZ Medium 514 lists 1000 mL distilled water.
+  concentration:
+    value: '1000.000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -36,5 +258,17 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_820_16960_score30.py
+  action: RESOLVED_KOMODO_820_16960_SCORE30
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=820_16960
+  notes: KOMODO 820_16960 defines MEDIUM 820 MODIFIED FOR DSM 16960 as the archived
+    DSMZ Medium 820 formulation adjusted to pH 7.8; this record expands the archived
+    DSMZ Media 820 and 514 components shared with AEROPYRUM-JXT MEDIUM.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=820_16960
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium820.pdf
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium514.pdf

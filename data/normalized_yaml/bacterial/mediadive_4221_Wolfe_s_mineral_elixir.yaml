@@ -6,185 +6,211 @@ term:
 composition:
 - preferred_term: MgSO4 x 7 H2O
   concentration:
-    value: '30'
+    value: '30.0'
     unit: G_PER_L
+  source: MediaDive solution 4221 / JCM Medium 470
+  notes: MediaDive solution 4221 / JCM Medium 470 lists 30.0 g/L MgSO4 x 7 H2O.
   term:
-    id: mediadive.compound:8
-    label: MgSO4 x 7 H2O
-  chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-    confidence: 0.7
-    match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: MnSO4 x n H2O
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
+  source: MediaDive solution 4221 / JCM Medium 470
+  notes: MediaDive solution 4221 / JCM Medium 470 lists 5.0 g/L MnSO4 x n H2O.
   term:
-    id: mediadive.compound:1000
-    label: MnSO4 x n H2O
-  chebi_term:
     id: CHEBI:86360
     label: manganese(II) sulfate
-    confidence: 0.7
-    match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
+  nutritional_roles:
+  - TRACE_ELEMENT
 - preferred_term: NaCl
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
+  source: MediaDive solution 4221 / JCM Medium 470
+  notes: MediaDive solution 4221 / JCM Medium 470 lists 10.0 g/L NaCl.
   term:
-    id: mediadive.compound:43
-    label: NaCl
-  chebi_term:
     id: CHEBI:26710
     label: sodium chloride
-    confidence: 1.0
-    match_type: exact_match
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: FeSO4 x 7 H2O
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
+  source: MediaDive solution 4221 / JCM Medium 470
+  notes: MediaDive solution 4221 / JCM Medium 470 lists 1.0 g/L FeSO4 x 7 H2O.
   term:
-    id: mediadive.compound:12
-    label: FeSO4 x 7 H2O
-  chebi_term:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
-    confidence: 0.7
-    match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  nutritional_roles:
+  - IRON_SOURCE
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '1.8'
     unit: G_PER_L
+  source: MediaDive solution 4221 / JCM Medium 470
+  notes: MediaDive solution 4221 / JCM Medium 470 lists 1.8 g/L CoCl2 x 6 H2O.
   term:
-    id: mediadive.compound:38
-    label: CoCl2 x 6 H2O
-  chebi_term:
     id: CHEBI:53503
     label: cobalt chloride hexahydrate
-    confidence: 0.7
-    match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
 - preferred_term: CaCl2 x 2 H2O
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
+  source: MediaDive solution 4221 / JCM Medium 470
+  notes: MediaDive solution 4221 / JCM Medium 470 lists 1.0 g/L CaCl2 x 2 H2O.
   term:
-    id: mediadive.compound:7
-    label: CaCl2 x 2 H2O
-  chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '1.8'
     unit: G_PER_L
+  source: MediaDive solution 4221 / JCM Medium 470
+  notes: MediaDive solution 4221 / JCM Medium 470 lists 1.8 g/L ZnSO4 x 7 H2O.
   term:
-    id: mediadive.compound:35
-    label: ZnSO4 x 7 H2O
-  chebi_term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
-    confidence: 0.7
-    match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
 - preferred_term: CuSO4 x 5 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
+  source: MediaDive solution 4221 / JCM Medium 470
+  notes: MediaDive solution 4221 / JCM Medium 470 lists 0.1 g/L CuSO4 x 5 H2O.
   term:
-    id: mediadive.compound:121
-    label: CuSO4 x 5 H2O
-  chebi_term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
-    confidence: 0.7
-    match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
 - preferred_term: AlK(SO4)2 x 12 H2O
   concentration:
     value: '0.18'
     unit: G_PER_L
+  source: MediaDive solution 4221 / JCM Medium 470
+  notes: MediaDive solution 4221 / JCM Medium 470 lists 0.18 g/L AlK(SO4)2 x 12 H2O.
   term:
-    id: mediadive.compound:908
-    label: AlK(SO4)2 x 12 H2O
-  chebi_term:
     id: CHEBI:86465
     label: potassium aluminium sulfate dodecahydrate
-    confidence: 0.7
-    match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
 - preferred_term: H3BO3
   concentration:
     value: '0.1'
     unit: G_PER_L
+  source: MediaDive solution 4221 / JCM Medium 470
+  notes: MediaDive solution 4221 / JCM Medium 470 lists 0.1 g/L H3BO3.
   term:
-    id: mediadive.compound:37
-    label: H3BO3
-  chebi_term:
     id: CHEBI:33118
     label: boric acid
-    confidence: 1.0
-    match_type: exact_match
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+  nutritional_roles:
+  - TRACE_ELEMENT
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
+  source: MediaDive solution 4221 / JCM Medium 470
+  notes: MediaDive solution 4221 / JCM Medium 470 lists 0.1 g/L Na2MoO4 x 2 H2O.
   term:
-    id: mediadive.compound:9
-    label: Na2MoO4 x 2 H2O
-  chebi_term:
     id: CHEBI:75213
     label: sodium molybdate dihydrate
-    confidence: 0.7
-    match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
 - preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
   concentration:
     value: '2.8'
     unit: G_PER_L
+  source: MediaDive solution 4221 / JCM Medium 470
+  notes: MediaDive solution 4221 / JCM Medium 470 lists 2.8 g/L (NH4)2Ni(SO4)2 x 6
+    H2O.
   term:
-    id: mediadive.compound:739
-    label: (NH4)2Ni(SO4)2 x 6 H2O
-  chebi_term:
     id: CHEBI:86149
     label: ammonium nickel sulfate hexahydrate
-    confidence: 0.7
-    match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86149
+    label: ammonium nickel sulfate hexahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
 - preferred_term: Na2WO4 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
+  source: MediaDive solution 4221 / JCM Medium 470
+  notes: MediaDive solution 4221 / JCM Medium 470 lists 0.1 g/L Na2WO4 x 2 H2O.
   term:
-    id: mediadive.compound:249
-    label: Na2WO4 x 2 H2O
-  chebi_term:
     id: CHEBI:63939
     label: sodium tungstate dihydrate
-    confidence: 0.7
-    match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
+    label: sodium tungstate dihydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
 - preferred_term: Na2SeO4
   concentration:
     value: '0.1'
     unit: G_PER_L
+  source: MediaDive solution 4221 / JCM Medium 470
+  notes: MediaDive solution 4221 / JCM Medium 470 lists 0.1 g/L Na2SeO4.
   term:
-    id: mediadive.compound:375
-    label: Na2SeO4
-  chebi_term:
     id: CHEBI:77775
     label: sodium selenate
-    confidence: 0.7
-    match_type: exact_match
+  mediaingredientmech_chebi_term:
+    id: CHEBI:77775
+    label: sodium selenate
+  nutritional_roles:
+  - TRACE_ELEMENT
 - preferred_term: Distilled water
   concentration:
-    value: '1000'
-    unit: PERCENT_V_V
+    value: '1000.0'
+    unit: ML_PER_L
+  source: MediaDive solution 4221 / JCM Medium 470
+  notes: MediaDive solution 4221 / JCM Medium 470 lists 1000.0 ml/L Distilled water.
   term:
-    id: mediadive.compound:4
-    label: Distilled water
-  chebi_term:
     id: CHEBI:15377
     label: water
-    confidence: 0.7
-    match_type: corpus_consensus
-preparation_notes: First adjust pH to 1.0 with diluted H2SO4, then dissolve the salts.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+preparation_notes: Adjust the Wolfe's mineral elixir stock to pH 1.0 with diluted
+  H2SO4, then dissolve the salts.
+notes: MediaDive solution 4221 is the Wolfe's mineral elixir stock used by JCM Medium
+  837 / SYFAC Medium at 1.0 ml/L.
 curation_history:
 - timestamp: '2026-03-13T06:20:30.266055Z'
   curator: culturemech-id-assigner-v1.0
@@ -218,11 +244,17 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '3 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m873_syfac_score15.py
+  action: RESOLVED_MEDIADIVE_4221_WOLFES_MINERAL_ELIXIR
+  source: https://mediadive.dsmz.de/medium/J837; https://togomedium.org/medium/M471
+  notes: Corrected the Wolfe's mineral elixir water row from a false percent-volume
+    value to 1000.0 ml/L and replaced upstream mediadive.compound groundings with
+    direct ontology mappings.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/medium/J837
+- reference: https://togomedium.org/medium/M471

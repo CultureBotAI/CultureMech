@@ -10,12 +10,30 @@ media_term:
   term:
     id: mediadive.medium:J805
     label: 1/10 R2A BROTH
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=805'
+notes: JCM Medium 805 lists 0.32 g R2A broth DAIGO per 1.0 L distilled water; this
+  is a 1:10 dilution of the JCM Medium 839 R2A Broth DAIGO premix.
 ingredients:
-- preferred_term: R2A Broth
+- preferred_term: R2A broth (DAIGO) (Nihon Pharm. Co.)
   concentration:
     value: '0.32'
     unit: G_PER_L
+  source: JCM Medium 805
+  notes: JCM Medium 805 lists 0.32 g R2A broth DAIGO in 1.0 L distilled water.
+  culturemech_term:
+    id: CultureMech:003183
+    label: R2A Broth
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: JCM Medium 805
+  notes: JCM Medium 805 lists 1.0 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -32,3 +50,46 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "1/10 R2A BROTH" to "1_10_r2a_broth" for consistent
     matching
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_r2a_score40.py
+  action: RESOLVED_R2A_SCORE40_GRAPH
+  changes: Resolved score-40 JCM/TOGO R2A recipe graph
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=805; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=839
+  notes: JCM Medium 805 lists 0.32 g R2A broth DAIGO per 1.0 L distilled water; this
+    is a 1:10 dilution of the JCM Medium 839 R2A Broth DAIGO premix.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_r2a_score40.py
+  action: LINKED_R2A_SCORE40_CHILDREN
+  changes: Linked score-40 JCM/TOGO R2A variants
+  notes: Added or refreshed bacterial/TOGO_M840_1_10_R2A_Broth.yaml as a child of
+    bacterial/1_10_r2a_broth.yaml.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve 0.32 g R2A broth (DAIGO) in 1.0 L distilled water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=805
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=839
+parent_media:
+  path: data/normalized_yaml/bacterial/r2a_broth.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:003183
+  name: r2a_broth
+  notes: JCM Medium 805 uses 0.32 g/L R2A Broth DAIGO, a 1:10 dilution of R2A Broth.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Dilutes the R2A Broth DAIGO powder to 0.32 g/L in distilled water.
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M840_1_10_R2A_Broth.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010255
+  name: 1_10_r2a_broth
+  notes: TOGO M840 imports the same JCM Medium 805 formulation.

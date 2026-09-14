@@ -15,22 +15,41 @@ notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_
 ingredients:
 - preferred_term: Yeast extract
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-- preferred_term: Hexachlorocyclo-hexane
+  source: DSMZ Medium 138
+  notes: DSMZ Medium 138 lists 5.0 g yeast extract.
   term:
-    id: CHEBI:24536
-    label: hexachlorocyclohexane
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Hexachlorocyclo-hexane
   concentration:
     value: '0.1'
     unit: G_PER_L
+  source: DSMZ Medium 138
+  notes: DSMZ Medium 138 lists 0.1 g hexachlorocyclo-hexane (lindane).
+  term:
+    id: CHEBI:24536
+    label: hexachlorocyclohexane
   mediaingredientmech_chebi_term:
     id: CHEBI:24536
     label: hexachlorocyclohexane
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 138
+  notes: DSMZ Medium 138 lists 1000.0 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.0.
+  description: Adjust DSMZ Medium 138 to pH 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -57,6 +76,12 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_dsmz_138_lindane_score15.py
+  action: RESOLVED_DSMZ_138_LINDANE_SCORE15
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium138.pdf
+  notes: DSMZ Medium 138 lists yeast extract, hexachlorocyclo-hexane (lindane), distilled
+    water, and pH 7.0.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_138_LINDANE_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -64,3 +89,8 @@ variant_children:
   name: lindane_medium
   notes: KOMODO record is an exact source duplicate of DSMZ Medium 138; local ingredient
     and concentration signatures match.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium138.pdf

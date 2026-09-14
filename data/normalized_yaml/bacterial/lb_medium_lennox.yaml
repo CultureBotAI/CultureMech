@@ -3,20 +3,24 @@ name: lb_medium_lennox
 original_name: LB medium (Lennox)
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M2910
+  notes: TOGO M2910 lists 5 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: NaCl
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  source: TOGO M2910
+  notes: TOGO M2910 lists 5 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -27,13 +31,16 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2910
+  notes: TOGO M2910 lists Tryptone as a digest product not reducible to one ChEBI
+    molecule.
 media_term:
   preferred_term: TOGO Medium M2910
   term:
     id: TOGO:M2910
     label: LB medium (Lennox)
-notes: 'Source: https://togomedium.org/medium/M2910'
+notes: TOGO M2910 reports LB medium (Lennox) with 5 g/L Yeast extract, 5 g/L NaCl,
+  and 10 g/L Tryptone.
 applications:
 - Microbial cultivation
 curation_history:
@@ -64,4 +71,17 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2270_m2910_lb_difco_lennox_score15.py
+  action: RESOLVED_TOGO_M2270_M2910_LB_DIFCO_LENNOX_SCORE15
+  source: https://togomedium.org/medium/M2910
+  notes: TOGO M2910 reports LB medium (Lennox) with 5 g/L Yeast extract, 5 g/L NaCl,
+    and 10 g/L Tryptone. Added explicit FoodOn/ChEBI grounding for the two mappable
+    components while leaving tryptone ungrounded as an undefined digest product.
 kg_microbe_match: mediadive.medium:74
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2910

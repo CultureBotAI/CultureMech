@@ -6,22 +6,27 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: bovine blood
+- preferred_term: Bovine blood
   concentration:
     value: '10'
-    unit: PERCENT_W_V
-  notes: 'Role: Nutrient source'
+    unit: PERCENT_V_V
+  source: TOGO M2973
+  notes: TOGO M2973 lists 10% bovine blood.
+  term:
+    id: UBERON:0000178
+    label: blood
 - preferred_term: Columbia blood agar (Difco Laboratories, Detroit, Mich.)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2973
+  notes: TOGO M2973 lists one liter of Columbia blood agar from Difco Laboratories.
 media_term:
   preferred_term: TOGO Medium M2973
   term:
     id: TOGO:M2973
     label: Columbia blood agar (containing 10% bovine blood)
-notes: 'Source: https://togomedium.org/medium/M2973'
+notes: TOGO M2973 records Columbia blood agar containing 10% bovine blood.
 applications:
 - Microbial cultivation
 curation_history:
@@ -38,3 +43,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Columbia blood agar (containing 10% bovine blood)"
     to "columbia_blood_agar_containing_10_bovine_blood" for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_products_more_score40.py
+  action: RESOLVED_TOGO_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO product graph
+  source: https://togomedium.org/medium/M2973
+  notes: TOGO M2973 records Columbia blood agar containing 10% bovine blood.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2973

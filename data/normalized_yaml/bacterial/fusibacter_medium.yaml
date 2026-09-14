@@ -342,3 +342,23 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_853_fusibacter_score10.py
+  action: RESOLVED_KOMODO_853_FUSIBACTER_TOPOLOGY
+  changes: Linked under KOMODO Medium 853
+  source: DSMZ Medium 853
+  notes: DSMZ Medium 853 shares the KOMODO Medium 853 ingredient set with 30.703 g/L
+    NaCl instead of 70.3069 g/L.
+parent_media:
+  path: data/normalized_yaml/bacterial/fusibacter_paucivorans_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:006670
+  name: fusibacter_paucivorans_medium
+  notes: DSMZ Medium 853 shares the KOMODO Medium 853 ingredient set with 30.703 g/L
+    NaCl instead of 70.3069 g/L.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- DSMZ Medium 853 shares the KOMODO Medium 853 ingredient set with 30.703 g/L NaCl
+  instead of 70.3069 g/L.
+data_quality_flags:
+- ingredients_curated

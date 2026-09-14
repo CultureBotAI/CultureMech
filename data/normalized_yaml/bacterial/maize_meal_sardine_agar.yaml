@@ -3,38 +3,79 @@ name: maize_meal_sardine_agar
 original_name: MAIZE MEAL-SARDINE AGAR
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J1054
   term:
     id: mediadive.medium:J1054
     label: MAIZE MEAL-SARDINE AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1054'
+notes: JCM Medium J1054 Maize Meal-Sardine Agar lists 20 g maize meal, 20 g small
+  dried sardine, 20 g agar, and 1 L distilled water. JCM instructs boiling the maize
+  meal and sardine with 500 ml distilled water for 20 min, filtering through cloth,
+  bringing the filtrate to 1 L, adding agar, and boiling until dissolved; JCM's standing
+  instruction is to autoclave media at 121 C for 15 min unless otherwise stated.
 ingredients:
 - preferred_term: Maize meal
   concentration:
     value: '20'
     unit: G_PER_L
+  source: JCM Medium J1054
+  notes: JCM Medium 1054 lists 20 g/L maize meal, extracted by boiling with small
+    dried sardine in 500 ml of the final distilled-water volume.
 - preferred_term: Small dried sardine
   concentration:
     value: '20'
     unit: G_PER_L
+  source: JCM Medium J1054
+  notes: JCM Medium 1054 lists 20 g/L small dried sardine, extracted by boiling with
+    maize meal in 500 ml of the final distilled-water volume.
 - preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
   concentration:
     value: '20'
     unit: G_PER_L
+  source: JCM Medium J1054
+  notes: JCM Medium 1054 lists 20 g/L agar.
+  term:
+    id: CHEBI:2509
+    label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: JCM Medium J1054
+  notes: JCM Medium 1054 lists 1 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
-  action: FILTER_STERILIZE
-  description: Boil maize meal and dried sardine with 500 ml of distilled water for
-    20 min. Filtered through cloth, make up to 1 L, add agar, and boil till dissolved.
+  action: HEAT
+  description: Boil 20 g maize meal and 20 g small dried sardine with 500 ml distilled
+    water for 20 min.
+  duration: 20 min
+- step_number: 2
+  action: FILTER
+  description: Filter the maize-sardine extract through cloth.
+- step_number: 3
+  action: MIX
+  description: Bring the filtrate to 1 L with distilled water.
+- step_number: 4
+  action: HEAT
+  description: Add 20 g agar and boil until dissolved.
+- step_number: 5
+  action: AUTOCLAVE
+  description: Autoclave the completed medium at 121 C for 15 min.
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
 applications:
 - Microbial cultivation
 curation_history:
@@ -61,4 +102,28 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_jcm_j1054_maize_sardine_score15.py
+  action: RESOLVED_JCM_J1054_MAIZE_SARDINE_SCORE15
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1054
+  notes: JCM Medium J1054 Maize Meal-Sardine Agar lists 20 g maize meal, 20 g small
+    dried sardine, 20 g agar, and 1 L distilled water. JCM instructs boiling the maize
+    meal and sardine with 500 ml distilled water for 20 min, filtering through cloth,
+    bringing the filtrate to 1 L, adding agar, and boiling until dissolved; JCM's
+    standing instruction is to autoclave media at 121 C for 15 min unless otherwise
+    stated. Restored the 1 L distilled-water row from the source, grounded water and
+    agar, and split the importer's single misclassified preparation note into explicit
+    heat, filter, mix, heat, and autoclave steps.
 kg_microbe_match: mediadive.medium:12
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1054

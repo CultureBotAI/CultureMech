@@ -6,12 +6,19 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
+- preferred_term: Nutrient Broth (OXOID)
+  concentration:
+    value: '13.0'
+    unit: G_PER_L
+  source: TOGO M1744 / NBRC Medium 954
+  notes: TOGO M1744 / NBRC Medium 954 lists 13.0 g/L Nutrient Broth (OXOID); retained
+    as an intentionally opaque commercial product.
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1000.0'
+    unit: ML_PER_L
+  source: TOGO M1744 / NBRC Medium 954
+  notes: TOGO M1744 / NBRC Medium 954 lists 1000.0 ml/L Distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -20,24 +27,34 @@ ingredients:
     label: water
 - preferred_term: Agar (if needed)
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Nutrient Broth (OXOID)
-  concentration:
-    value: '13'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  source: TOGO M1744 / NBRC Medium 954
+  notes: TOGO M1744 / NBRC Medium 954 lists 15.0 g/L agar if needed for solid medium.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 media_term:
   preferred_term: TOGO Medium M1744
   term:
     id: TOGO:M1744
     label: Nutrient Agar/Broth
-notes: 'Source: https://togomedium.org/medium/M1744
-
-  Original source: NBRC - NBRC_M954
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=954'
+notes: TOGO M1744 / NBRC Medium 954 lists 13 g Nutrient Broth (OXOID), 1 L distilled
+  water, and 15 g agar if needed per liter; pH is unadjusted. Nutrient Broth (OXOID)
+  is retained as a commercial complex product.
+references:
+- reference: https://togomedium.org/medium/M1744
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=954
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Suspend Nutrient Broth (OXOID) and optional agar in distilled water;
+    the source records pH as unadjusted.
 applications:
 - Microbial cultivation
 curation_history:
@@ -68,12 +85,28 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-parent_media:
-  path: data/normalized_yaml/bacterial/bn_agar.yaml
-  relationship: SOURCE_DUPLICATE
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m1959_bn_agar_score15.py
+  action: RESOLVED_TOGO_M1959_BN_AGAR_SCORE15
+  source: https://togomedium.org/medium/M1744; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=954
+  notes: Verified TOGO M1744 / NBRC Medium 954, converted the imported 1 L water row
+    to 1000 ml/L, grounded water and agar, retained the OXOID product as an intentionally
+    unmapped commercial ingredient, recorded the pH as unadjusted, and repaired the
+    Nutrient Agar/Broth variant links.
+variant_children:
+- path: data/normalized_yaml/bacterial/bn_agar.yaml
+  relationship: SUPPLEMENTED_VARIANT
   id: CultureMech:008539
   name: bn_agar
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+  notes: TOGO M1959 / NBRC Medium 1236 supplements the 13 g/L OXOID Nutrient Agar/Broth
+    base with 1.44 g/L sodium benzoate and 250 mg/L kanamycin.
+- path: data/normalized_yaml/bacterial/togo_medium_m1570.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008119
+  name: togo_medium_m1570
+  notes: NBRC Medium 373 decreases Nutrient Broth (OXOID) from 13 g/L to 6.5 g/L and
+    keeps 15 g/L agar if needed.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients

@@ -140,3 +140,14 @@ curation_history:
   notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_bacterial_togo_score40.py
+  action: LINKED_BACTERIAL_TOGO_SCORE40_CHILDREN
+  changes: Linked score-40 bacterial TOGO children to source parents
+  notes: Added or refreshed reciprocal parent-child link for bacterial/TOGO_M1372_Modified_Reinforced_Clostridial_Medium_AT_pH_8.0.yaml.
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M1372_Modified_Reinforced_Clostridial_Medium_AT_pH_8.0.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:007911
+  name: modified_reinforced_clostridial_medium_at_ph_8_0
+  notes: Adjusts TOGO M1305 Modified Reinforced Clostridial Medium to pH 8.0.

@@ -6,21 +6,32 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: sheep blood
+- preferred_term: Sheep blood
   concentration:
     value: '5'
-    unit: PERCENT_W_V
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+    unit: PERCENT_V_V
+  source: TOGO M2836
+  notes: TOGO M2836 lists 5% sheep blood.
+  term:
+    id: UBERON:0000178
+    label: blood
 - preferred_term: Columbia agar
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M2836
+  notes: TOGO M2836 lists Columbia agar; the source does not spell out the agar base
+    composition.
+  culturemech_term:
+    id: CultureMech:005649
+    label: Columbia agar base
 media_term:
   preferred_term: TOGO Medium M2836
   term:
     id: TOGO:M2836
     label: Columbia agar (supplemented with 5% sheep blood)
-notes: 'Source: https://togomedium.org/medium/M2836'
+notes: TOGO M2836 records Columbia agar supplemented with 5% sheep blood and incubation
+  at 37 C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -45,3 +56,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_literal_products_score40.py
+  action: RESOLVED_TOGO_LITERAL_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO literal product/additive graph
+  source: https://togomedium.org/medium/M2836
+  notes: TOGO M2836 records Columbia agar supplemented with 5% sheep blood and incubation
+    at 37 C.
+temperature_value: 37.0
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M2836

@@ -10,19 +10,18 @@ media_term:
   term:
     id: mediadive.medium:J207
     label: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 5% NaCl
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=207'
+notes: JCM Medium 207 defines Yeast extract-malt extract agar (ISP-2) with 5% NaCl
+  as 1 L of JCM Medium 43 ISP-2 plus 50 g/L NaCl.
 ingredients:
-- preferred_term: Yeast extract-malt extract agar
-  concentration:
-    value: '1000'
-    unit: G_PER_L
 - preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
   concentration:
     value: '50'
     unit: G_PER_L
+  source: JCM Medium 207
+  notes: Adds 50 g/L NaCl to JCM Medium 43 ISP-2.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
@@ -52,15 +51,41 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_isp2_salinity_score20.py
+  action: RESOLVED_JCM_ISP2_SALINITY_SCORE20
+  changes: Resolved score-20 JCM ISP-2 salinity variant
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=207; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=43
+  notes: Adds 50 g/L NaCl to JCM Medium 43 ISP-2.
 kg_microbe_match: mediadive.medium:74
 parent_media:
-  path: data/normalized_yaml/fungal/yeast_extract_malt_extract_agar_isp_2_with_2_nacl.yaml
+  path: data/normalized_yaml/fungal/yeast_extract_malt_extract_agar_isp_2.yaml
   relationship: SALINITY_VARIANT
-  id: CultureMech:010493
-  name: yeast_extract_malt_extract_agar_isp_2_with_2_nacl
-  notes: Reviewed JCM fungal ISP-2 agar salinity pair; 2% NaCl parent and 5% NaCl
-    child share the same base formulation.
+  id: CultureMech:010528
+  name: yeast_extract_malt_extract_agar_isp_2
+  notes: Adds 50 g/L NaCl to JCM Medium 43 ISP-2.
 variant_relationship: SALINITY_VARIANT
 variant_modifications:
-- NaCl increased from 20 g/L to 50 g/L while the yeast extract-malt extract agar ISP-2
-  base remains unchanged.
+- Adds 50 g/L NaCl to JCM Medium 43 ISP-2.
+solutions:
+- preferred_term: Yeast extract-malt extract agar (ISP-2)
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  notes: Adds 50 g/L NaCl to JCM Medium 43 ISP-2.
+  culturemech_term:
+    id: CultureMech:010528
+    label: Yeast extract-malt extract agar (ISP-2)
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adds 50 g/L NaCl to JCM Medium 43 ISP-2.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=207
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=43

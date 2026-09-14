@@ -6,21 +6,29 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: sheep’s blood
+- preferred_term: Sheep blood
   concentration:
     value: '15'
-    unit: PERCENT_W_V
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+    unit: PERCENT_V_V
+  source: TOGO M2850
+  notes: TOGO M2850 lists 15% sheep blood.
+  term:
+    id: UBERON:0000178
+    label: blood
 - preferred_term: Bordet-Gengou agar
   concentration:
-    value: '1'
-    unit: G_PER_L
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2850
+  notes: TOGO M2850 lists 1 L Bordet-Gengou agar; the source does not spell out the
+    agar base composition.
 media_term:
   preferred_term: TOGO Medium M2850
   term:
     id: TOGO:M2850
     label: Bordet-Gengou agar (supplemented with 15% sheep’s blood)
-notes: 'Source: https://togomedium.org/medium/M2850'
+notes: TOGO M2850 records Bordet-Gengou agar supplemented with 15% sheep blood and
+  incubation at 35 C for 3 d.
 applications:
 - Microbial cultivation
 curation_history:
@@ -37,3 +45,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Bordet-Gengou agar (supplemented with 15% sheep’s blood)"
     to "bordet_gengou_agar_supplemented_with_15_sheep_s_blood" for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_literal_products_score40.py
+  action: RESOLVED_TOGO_LITERAL_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO literal product/additive graph
+  source: https://togomedium.org/medium/M2850
+  notes: TOGO M2850 records Bordet-Gengou agar supplemented with 15% sheep blood and
+    incubation at 35 C for 3 d.
+temperature_value: 35.0
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2850

@@ -2,6 +2,7 @@ id: CultureMech:006086
 name: blood_agar_no_2_oxoid
 original_name: blood agar No 2 (Oxoid)
 category: bacterial
+record_kind: SOLUTION
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID

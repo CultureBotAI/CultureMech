@@ -230,10 +230,23 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1264_spirochaeta_score10.py
+  action: RESOLVED_KOMODO_1264_SPIROCHAETA_TOPOLOGY
+  changes: Re-rooted KOMODO Medium 1264 Spirochaeta exact topology
+  source: DSMZ Medium 1264; KOMODO Medium 1264 and 1264.1
+  notes: Moved exact KOMODO Medium 1264 plus its DSM 14994 wrapper under DSMZ Medium
+    1264.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1264_SPIROCHAETA_SP._medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004021
-  name: spirochaeta_sp_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1264; local ingredient
-    and concentration signatures match.
+  name: KOMODO_1264_SPIROCHAETA_SP._medium
+  notes: KOMODO Medium 1264 has the same 20-ingredient signature as DSMZ Medium 1264.
+- path: data/normalized_yaml/bacterial/for_dsm_14994.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004020
+  name: for_dsm_14994
+  notes: KOMODO Medium 1264.1 applies DSMZ Medium 1264 to DSM 14994.
+data_quality_flags:
+- ingredients_curated

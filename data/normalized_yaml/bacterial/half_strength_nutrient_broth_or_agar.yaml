@@ -10,16 +10,18 @@ media_term:
   term:
     id: mediadive.medium:672
     label: HALF STRENGTH NUTRIENT BROTH OR AGAR
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium672.pdf'
+notes: DSMZ Medium 672 specifies alternative commercial Difco products, Difco 0003
+  or Difco 0001, without printing a dehydrated-medium mass or separate broth/agar
+  formulation.
 ingredients:
-- preferred_term: Difco 0001
+- preferred_term: Difco 0003 or Difco 0001
   concentration:
-    value: '1000'
-    unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: Difco 0003 or Difco 0001
+    value: variable
+    unit: VARIABLE
+  source: DSMZ Medium 672
+  notes: DSMZ Medium 672 specifies alternative commercial Difco products, Difco 0003
+    or Difco 0001, without printing a dehydrated-medium mass or separate broth/agar
+    formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -34,13 +36,30 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.714997+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALF STRENGTH NUTRIENT BROTH OR AGAR" to
-    "half_strength_nutrient_broth_or_agar" for consistent matching
+  notes: Normalized name from "HALF STRENGTH NUTRIENT BROTH OR AGAR" to "half_strength_nutrient_broth_or_agar"
+    for consistent matching
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_dsmz_672_score40.py
+  action: RESOLVED_DSMZ_672_SCORE40_GRAPH
+  changes: Resolved DSMZ Medium 672 opaque commercial product row
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium672.pdf
+  notes: DSMZ Medium 672 specifies alternative commercial Difco products, Difco 0003
+    or Difco 0001, without printing a dehydrated-medium mass or separate broth/agar
+    formulation.
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_dsmz_672_score40.py
+  action: LINKED_DSMZ_672_SOURCE_DUPLICATE
+  changes: Linked KOMODO Medium 672 to DSMZ Medium 672
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium672.pdf
+  notes: Added or refreshed reciprocal SOURCE_DUPLICATE link for bacterial/KOMODO_672_HALF_STRENGTH_NUTRIENT_BROTH_OR_AGAR.yaml.
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium672.pdf
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_672_HALF_STRENGTH_NUTRIENT_BROTH_OR_AGAR.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_672_HALF_STRENGTH_NUTRIENT_BROTH_OR_AGAR.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006268
   name: half_strength_nutrient_broth_or_agar
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: KOMODO Medium 672 is a source-catalogue duplicate of DSMZ Medium 672.

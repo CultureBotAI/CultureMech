@@ -65,8 +65,9 @@ def test_a_real_composition_is_not_reported(tmc):
 
 
 def test_solution_named_records_are_flagged_as_mis_typed(tmc):
-    """202 were stock solutions imported as media, now carrying
-    `record_kind: SOLUTION` so `is_solution_record()` excludes them. They
+    """Stock solutions imported as media now carry `record_kind: SOLUTION`.
+
+    That lets `is_solution_record()` exclude them from media-level reports. They
     are not media missing a recipe, and counting them as such overstates the
     data-quality problem."""
     rows = tmc.triage_parsed([_rec(
@@ -106,7 +107,7 @@ def test_corpus_baseline(tmc, corpus):
     assert len(rows) <= 226, (
         f"{len(rows)} records lack a composition, above the documented baseline of "
         "226 — a new import dropped one, or the detector widened. The figure was "
-        "428 before #175 re-typed 202 mis-imported stock solutions.")
+        "428 before #175 re-typed mis-imported stock solutions.")
 
 
 def test_the_solution_classifier_does_not_enumerate_reagents(tmc):

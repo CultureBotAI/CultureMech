@@ -1,11 +1,22 @@
 id: CultureMech:007504
-name: '915'
-original_name: '915'
+name: Casamino acids-peptone-Czapek's agar
+original_name: Casamino acids-peptone-Czapek's agar
 category: bacterial
 description: 915. NBRC 913.
+notes: 'Source: NBRC Medium 913 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=913
+
+
+  The NBRC Casamino acids-peptone-Czapek''s agar table lists Casamino Acids, Bacto
+  Peptone, phosphate and chloride salts, magnesium and iron sulfate heptahydrates,
+  sucrose, agar, and distilled water.'
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: NBRC Medium 913
+  term:
+    id: nbrc.medium:913
+    label: NBRC Medium 913
 ingredients:
 - preferred_term: Casamino Acids (Difco)
   concentration:
@@ -15,6 +26,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: MICRO:0000178
+    label: Bacto peptone
 - preferred_term: K2HPO4
   concentration:
     value: '1'
@@ -33,10 +47,16 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '10'
     unit: MG_PER_L
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
 - preferred_term: Sucrose
   concentration:
     value: '30'
@@ -58,16 +78,7 @@ ingredients:
   term:
     id: CHEBI:15377
     label: water
-preparation_steps:
-- step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
-- step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+preparation_steps: []
 curation_history:
 - timestamp: '2026-02-20T00:22:35.987896Z'
   curator: nbrc-import
@@ -103,3 +114,16 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 5 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_nbrc_exact_score20.py
+  action: RESOLVED_NBRC_EXACT_SCORE20
+  changes: Added source metadata to recovered NBRC score-20 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=913
+  notes: Resolved the recovered NBRC Medium 913 table as Casamino acids-peptone-Czapek's
+    agar.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=913

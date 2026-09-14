@@ -3,65 +3,97 @@ name: basal_medium_acetaldehyde
 original_name: Basal medium + Acetaldehyde
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Yeast extract
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
 - preferred_term: K2HPO4
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
+  source: TOGO M2025 / NBRC Medium 1316
+  notes: NBRC Medium 1316 lists 1.0 g/L K2HPO4.
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+- preferred_term: Hipolypepton*
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: TOGO M2025 / NBRC Medium 1316
+  notes: NBRC Medium 1316 lists 10 g/L Hipolypepton and notes that the asterisk marks
+    Wako Pure Chemical Industries; this peptone product is retained as an opaque complex
+    component.
+- preferred_term: Yeast extract
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: TOGO M2025 / NBRC Medium 1316
+  notes: NBRC Medium 1316 lists 5.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: NaCl
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: TOGO M2025 / NBRC Medium 1316
+  notes: NBRC Medium 1316 lists 5.0 g/L NaCl.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Acetaldehyde**
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  source: TOGO M2025 / NBRC Medium 1316
+  notes: NBRC Medium 1316 lists 1.0 ml/L Acetaldehyde and notes that the double asterisk
+    marks separate filter sterilization.
+  term:
+    id: CHEBI:15343
+    label: acetaldehyde
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15343
+    label: acetaldehyde
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: TOGO M2025 / NBRC Medium 1316
+  notes: NBRC Medium 1316 lists 1 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar (if needed)
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M2025 / NBRC Medium 1316
+  notes: NBRC Medium 1316 lists 15.0 g/L Agar (if needed).
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M2025
   term:
     id: TOGO:M2025
     label: Basal medium + Acetaldehyde
-notes: 'Source: https://togomedium.org/medium/M2025
-
-  Original source: NBRC - NBRC_M1316
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1316'
+notes: TOGO M2025 imports NBRC Medium 1316 as Basal medium + Acetaldehyde. NBRC 1316
+  lists 1 g K2HPO4, 10 g Hipolypepton from Wako Pure Chemical Industries, 5 g yeast
+  extract, 5 g NaCl, 1 ml Acetaldehyde, 1 L distilled water, optional 15 g agar, and
+  pH 7.0, and states that Acetaldehyde is sterilized separately by filtration.
 applications:
 - Microbial cultivation
 curation_history:
@@ -108,32 +140,24 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-solutions:
-- preferred_term: Acetaldehyde**
-  composition: []
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
-  name: Unknown solution
-- preferred_term: Hipolypepton*
-  composition: []
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-  name: Unknown solution
-variant_children:
-- path: data/normalized_yaml/bacterial/basal_medium_benzaldehyde.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:008614
-  name: basal_medium_benzaldehyde
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/basal_medium_formaldehyde.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:008615
-  name: basal_medium_formaldehyde
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2025_m2027_aldehyde_basal_score15.py
+  action: RESOLVED_TOGO_M2025_M2027_SCORE15
+  source: https://togomedium.org/medium/M2025; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1316
+  notes: TOGO M2025 imports NBRC Medium 1316 as Basal medium + Acetaldehyde. NBRC
+    1316 lists 1 g K2HPO4, 10 g Hipolypepton from Wako Pure Chemical Industries, 5
+    g yeast extract, 5 g NaCl, 1 ml Acetaldehyde, 1 L distilled water, optional 15
+    g agar, and pH 7.0, and states that Acetaldehyde is sterilized separately by filtration.
+    Moved Acetaldehyde and Hipolypepton out of empty solution wrappers, corrected
+    liquid quantities, and marked the NBRC formula as curated.
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Sterilize Acetaldehyde separately by filtration.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2025
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1316

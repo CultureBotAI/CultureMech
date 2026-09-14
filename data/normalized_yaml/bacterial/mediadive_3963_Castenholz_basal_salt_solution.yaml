@@ -4,117 +4,263 @@ term:
   id: mediadive.solution:3963
   label: Castenholz basal salt solution
 composition:
-- preferred_term: Nitrilotriacetic acid
-  concentration:
-    value: '0.980392'
-    unit: G_PER_L
-  term:
-    id: mediadive.compound:189
-    label: Nitrilotriacetic acid
-  chebi_term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
-    confidence: 1.0
-    match_type: exact_match
-- preferred_term: CaSO4 x 2 H2O
-  concentration:
-    value: '0.588235'
-    unit: G_PER_L
-  term:
-    id: mediadive.compound:190
-    label: CaSO4 x 2 H2O
-  chebi_term:
-    id: CHEBI:32583
-    label: calcium sulfate dihydrate
-    confidence: 0.7
-    match_type: corpus_consensus
-- preferred_term: MgSO4 x 7 H2O
-  concentration:
-    value: '0.980392'
-    unit: G_PER_L
-  term:
-    id: mediadive.compound:8
-    label: MgSO4 x 7 H2O
-  chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-    confidence: 0.7
-    match_type: corpus_consensus
-- preferred_term: NaCl
-  concentration:
-    value: '0.0784314'
-    unit: G_PER_L
-  term:
-    id: mediadive.compound:43
-    label: NaCl
-  chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-    confidence: 1.0
-    match_type: exact_match
-- preferred_term: KNO3
-  concentration:
-    value: '1.0098'
-    unit: G_PER_L
-  term:
-    id: mediadive.compound:191
-    label: KNO3
-  chebi_term:
-    id: CHEBI:63043
-    label: potassium nitrate
-    confidence: 0.7
-    match_type: exact_match
-- preferred_term: NaNO3
-  concentration:
-    value: '6.7549'
-    unit: G_PER_L
-  term:
-    id: mediadive.compound:187
-    label: NaNO3
-  chebi_term:
-    id: CHEBI:63005
-    label: sodium nitrate
-    match_type: manual_curated
-- preferred_term: Na2HPO4
-  concentration:
-    value: '1.08824'
-    unit: G_PER_L
-  term:
-    id: mediadive.compound:233
-    label: Na2HPO4
-  chebi_term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-    confidence: 1.0
-    match_type: exact_match
-- preferred_term: FeCl3 x 6 H2O
-  concentration:
-    value: '9.80392156862745'
-    unit: PERCENT_V_V
-  term:
-    id: mediadive.compound:82
-    label: FeCl3 x 6 H2O
-  chebi_term:
-    id: CHEBI:86254
-    label: iron trichloride hexahydrate
-    confidence: 0.7
-    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
-    value: '980.3921568627451'
-    unit: PERCENT_V_V
+    value: '1000.0'
+    unit: ML_PER_L
+  source: MediaDive solution 3963 / JCM Medium 273
+  notes: MediaDive solution 3963 / JCM Medium 273 lists 1000.0 ml/L Distilled water.
   term:
-    id: mediadive.compound:4
-    label: Distilled water
-  chebi_term:
     id: CHEBI:15377
     label: water
-    confidence: 0.7
-    match_type: corpus_consensus
-preparation_notes: 'Adjust pH to 8.2.
-
-
-  Original volume: 1020 mL'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: MediaDive solution 3963 / JCM Medium 273
+  notes: MediaDive solution 3963 / JCM Medium 273 lists 1.0 g/L MgSO4 x 7 H2O.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: NaCl
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  source: MediaDive solution 3963 / JCM Medium 273
+  notes: MediaDive solution 3963 / JCM Medium 273 lists 0.08 g/L NaCl.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: NaNO3
+  concentration:
+    value: '6.89'
+    unit: G_PER_L
+  source: MediaDive solution 3963 / JCM Medium 273
+  notes: MediaDive solution 3963 / JCM Medium 273 lists 6.89 g/L NaNO3.
+  term:
+    id: CHEBI:63005
+    label: sodium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Nitrilotriacetic acid
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: MediaDive solution 3963 / JCM Medium 273
+  notes: MediaDive solution 3963 / JCM Medium 273 lists 1.0 g/L Nitrilotriacetic acid.
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+- preferred_term: KNO3
+  concentration:
+    value: '1.03'
+    unit: G_PER_L
+  source: MediaDive solution 3963 / JCM Medium 273
+  notes: MediaDive solution 3963 / JCM Medium 273 lists 1.03 g/L KNO3.
+  term:
+    id: CHEBI:63043
+    label: potassium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63043
+    label: potassium nitrate
+- preferred_term: Na2HPO4
+  concentration:
+    value: '1.11'
+    unit: G_PER_L
+  source: MediaDive solution 3963 / JCM Medium 273
+  notes: MediaDive solution 3963 / JCM Medium 273 lists 1.11 g/L Na2HPO4.
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: CaSO4 x 2 H2O
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  source: MediaDive solution 3963 / JCM Medium 273
+  notes: MediaDive solution 3963 / JCM Medium 273 lists 0.6 g/L CaSO4 x 2 H2O.
+  term:
+    id: CHEBI:32583
+    label: calcium sulfate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32583
+    label: calcium sulfate dihydrate
+solutions:
+- preferred_term: FeCl3 x 6 H2O solution (0.03%)
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: MediaDive solution 3963 / JCM Medium 273
+  notes: MediaDive solution 3963 / JCM Medium 273 adds 10.0 ml/L FeCl3 x 6 H2O solution
+    at 0.03% w/v.
+  term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+  composition:
+  - preferred_term: FeCl3 x 6 H2O
+    concentration:
+      value: '0.03'
+      unit: PERCENT_W_V
+    source: MediaDive solution 3963 / JCM Medium 273
+    notes: MediaDive solution 3963 / JCM Medium 273 lists 0.03 % w/v FeCl3 x 6 H2O.
+    term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    nutritional_roles:
+    - IRON_SOURCE
+- preferred_term: Nitsch's trace elements
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: MediaDive solution 3963 / JCM Medium 273
+  notes: MediaDive solution 3963 / JCM Medium 273 adds 10.0 ml/L Nitsch's trace elements.
+  term:
+    id: mediadive.solution:3964
+    label: Nitsch's trace elements
+  culturemech_term:
+    id: CultureMech:013023
+    label: Nitsch's trace elements
+  composition:
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    source: MediaDive solution 3963 / JCM Medium 273
+    notes: MediaDive solution 3963 / JCM Medium 273 lists 1000.0 ml/L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.025'
+      unit: G_PER_L
+    source: MediaDive solution 3963 / JCM Medium 273
+    notes: MediaDive solution 3963 / JCM Medium 273 lists 0.025 g/L Na2MoO4 x 2 H2O.
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    source: MediaDive solution 3963 / JCM Medium 273
+    notes: MediaDive solution 3963 / JCM Medium 273 lists 0.5 g/L H3BO3.
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.046'
+      unit: G_PER_L
+    source: MediaDive solution 3963 / JCM Medium 273
+    notes: MediaDive solution 3963 / JCM Medium 273 lists 0.046 g/L CoCl2 x 6 H2O.
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    source: MediaDive solution 3963 / JCM Medium 273
+    notes: MediaDive solution 3963 / JCM Medium 273 lists 0.5 g/L ZnSO4 x 7 H2O.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CuSO4 x 5 H2O
+    concentration:
+      value: '0.016'
+      unit: G_PER_L
+    source: MediaDive solution 3963 / JCM Medium 273
+    notes: MediaDive solution 3963 / JCM Medium 273 lists 0.016 g/L CuSO4 x 5 H2O.
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: MnSO4 x n H2O
+    concentration:
+      value: '2.2'
+      unit: G_PER_L
+    source: MediaDive solution 3963 / JCM Medium 273
+    notes: MediaDive solution 3963 / JCM Medium 273 lists 2.2 g/L MnSO4 x n H2O.
+    term:
+      id: CHEBI:86360
+      label: manganese(II) sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86360
+      label: manganese(II) sulfate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: H2SO4
+    concentration:
+      value: '0.5'
+      unit: ML_PER_L
+    source: MediaDive solution 3963 / JCM Medium 273
+    notes: MediaDive solution 3963 / JCM Medium 273 lists 0.5 ml/L H2SO4.
+    term:
+      id: CHEBI:26836
+      label: sulfuric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26836
+      label: sulfuric acid
+  preparation_notes: Prepare the Nitsch trace-elements stock with 1.0 L distilled
+    water, mineral salts, and 0.5 ml/L H2SO4.
+preparation_notes: Mix 1.0 L distilled water, the Castenholz salts, 10.0 ml/L 0.03%
+  FeCl3 x 6 H2O solution, and 10.0 ml/L Nitsch's trace elements; adjust the stock
+  to pH 8.2.
+notes: MediaDive solution 3963 is the Castenholz basal salt solution from JCM Medium
+  273 used by JCM Medium 276 at 100.0 ml/L.
 curation_history:
 - timestamp: '2026-03-13T06:20:28.949424Z'
   curator: culturemech-id-assigner-v1.0
@@ -153,11 +299,20 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m935_microaerophilic_thermus_score15.py
+  action: RESOLVED_MEDIADIVE_3963_CASTENHOLZ_BASAL_SALT
+  source: https://mediadive.dsmz.de/medium/J276; https://togomedium.org/medium/M266;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=273
+  notes: Restored the JCM Medium 273 Castenholz stock concentrations, corrected false
+    percent-volume FeCl3 and water rows to the source FeCl3 stock addition plus 1000.0
+    ml/L water, restored the missing Nitsch's trace-elements addition, and removed
+    the placeholder top-level ingredient.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/medium/J276
+- reference: https://togomedium.org/medium/M266
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=273

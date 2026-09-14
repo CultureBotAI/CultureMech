@@ -17,6 +17,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: MICRO:0000178
+    label: Peptone
 - preferred_term: Meat extract
   concentration:
     value: '1'
@@ -25,6 +28,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -78,6 +84,12 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_bacterial_score10_exact_terms_batch6.py
+  action: GROUNDED_BACTERIAL_SCORE10_EXACT_TERMS_BATCH6
+  changes: Grounded bacterial score-10 exact ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Peptone, Yeast extract.
 kg_microbe_match: mediadive.medium:101
 parent_media:
   path: data/normalized_yaml/bacterial/nutriment_agar.yaml

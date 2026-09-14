@@ -67,6 +67,10 @@ category: specialized
 source_data:
   origin: CultureBotHT
   notes: 'database_id: M9; url: https://github.com/CultureBotAI/CultureBotHT'
+sources:
+- database: CultureBotHT
+  database_id: M9
+  url: https://github.com/CultureBotAI/CultureBotHT
 variants:
 - name: modified_m9_high_density_e_coli_expression
   description: Modified M9 condition for high-density Escherichia coli protein expression
@@ -104,6 +108,13 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_culturebotht_m9_score15.py
+  action: NORMALIZED_CULTUREBOTHT_M9_SOURCE
+  changes: Normalized M9 CultureBotHT provenance
+  source: CultureBotHT:M9; https://github.com/CultureBotAI/CultureBotHT
+  notes: Copied the CultureBotHT M9 source identity from source_data into the structured
+    sources slot recognized by review scoring.
 data_quality_flags:
 - has_unmapped_ingredients
 organism_culture_type: isolate
@@ -122,3 +133,6 @@ target_organisms:
       explanation: 'Auto-applied from literature query: "M9"[All Fields] AND OD600[All
         Fields]'
     is_max_attainment: true
+references:
+- reference: CultureBotHT:M9
+- reference: https://github.com/CultureBotAI/CultureBotHT

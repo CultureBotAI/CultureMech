@@ -65,6 +65,7 @@ from record_kinds import is_solution_record  # noqa: E402
 NORMALIZED = REPO_ROOT / "data" / "normalized_yaml"
 DEFAULT_OUT = REPO_ROOT / "data" / "import_tracking" / "reports" / "concentration_plausibility.tsv"
 CATEGORIES = ("bacterial", "archaea", "algae", "fungal", "specialized")
+YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 WATER_IDS = {"CHEBI:15377"}
 WATER_RE = re.compile(r"\b(distilled\s+water|deionized\s+water|water|h2o|aqua)\b", re.I)
@@ -148,7 +149,7 @@ def iter_media(normalized_dir: Path) -> Iterator[tuple[Path, dict[str, Any]]]:
             continue
         for path in sorted(d.glob("*.yaml")):
             try:
-                doc = yaml.safe_load(path.read_text())
+                doc = yaml.load(path.read_text(), Loader=YAML_LOADER)
             except (yaml.YAMLError, OSError):
                 continue
             if not isinstance(doc, dict):
@@ -231,7 +232,7 @@ def summarize_records(rows: list[dict[str, str]],
         for r in found:
             counts[r["finding"]] += 1
         try:
-            doc = yaml.safe_load((normalized_dir / file_path).read_text()) or {}
+            doc = yaml.load((normalized_dir / file_path).read_text(), Loader=YAML_LOADER) or {}
         except (yaml.YAMLError, OSError):
             doc = {}
         has_solutions = bool(doc.get("solutions"))

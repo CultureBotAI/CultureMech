@@ -10,134 +10,289 @@ media_term:
   term:
     id: mediadive.medium:J740
     label: MVL MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=740'
+notes: JCM Medium 740, MediaDive J740, and TOGO M765 describe MVL Medium as a 1.221
+  L main solution containing 1.0 L distilled water, 75.0 ml each of Mineral solution
+  1 and Mineral solution 2, 1.0 ml of 0.1% resazurin, 50.0 ml of 8% Na2CO3, 10.0 ml
+  each of 0.07% hemin and 3% L-Cysteine HCl x H2O stocks, Trypticase peptone, yeast
+  extract, beef extract, glucose, and agar.
 ingredients:
-- preferred_term: Resazurin
-  term:
-    id: CHEBI:8806
-    label: Resazurin
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:8806
-    label: Resazurin
 - preferred_term: Trypticase peptone
   concentration:
     value: '8.19001'
     unit: G_PER_L
+  source: MediaDive J740 / JCM Medium 740
+  notes: MediaDive J740 / JCM Medium 740 lists 8.19001 g/L Trypticase peptone.
 - preferred_term: Yeast extract
   concentration:
     value: '4.095'
     unit: G_PER_L
+  source: MediaDive J740 / JCM Medium 740
+  notes: MediaDive J740 / JCM Medium 740 lists 4.095 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - NITROGEN_SOURCE
 - preferred_term: Beef extract
   concentration:
     value: '1.638'
     unit: G_PER_L
+  source: MediaDive J740 / JCM Medium 740
+  notes: MediaDive J740 / JCM Medium 740 lists 1.638 g/L Beef extract.
 - preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
   concentration:
     value: '12.285'
     unit: G_PER_L
+  source: MediaDive J740 / JCM Medium 740
+  notes: MediaDive J740 / JCM Medium 740 lists 12.285 g/L Agar.
+  term:
+    id: CHEBI:2509
+    label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 - preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: glucose
   concentration:
     value: '1.638'
     unit: G_PER_L
+  source: MediaDive J740 / JCM Medium 740
+  notes: MediaDive J740 / JCM Medium 740 lists 1.638 g/L Glucose.
+  term:
+    id: CHEBI:17234
+    label: glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
-- preferred_term: Hemin
-  term:
-    id: CHEBI:50385
-    label: hemin
+  nutritional_roles:
+  - CARBON_SOURCE
+- preferred_term: Distilled water
   concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:50385
-    label: hemin
-- preferred_term: Na2CO3
+    value: '819.001'
+    unit: ML_PER_L
+  source: MediaDive J740 / JCM Medium 740
+  notes: MediaDive J740 / JCM Medium 740 contributes 819.001 ml/L distilled water.
   term:
-    id: CHEBI:29377
-    label: sodium carbonate
-  concentration:
-    value: '50'
-    unit: G_PER_L
+    id: CHEBI:15377
+    label: water
   mediaingredientmech_chebi_term:
-    id: CHEBI:29377
-    label: sodium carbonate
-- preferred_term: L-Cysteine HCl x H2O
-  term:
-    id: CHEBI:91248
-    label: L-cysteine hydrochloride hydrate
+    id: CHEBI:15377
+    label: water
+solutions:
+- preferred_term: Mineral solution 1
   concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:91248
-    label: L-cysteine hydrochloride hydrate
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
+    value: '61.4251'
+    unit: ML_PER_L
+  source: MediaDive J740 / JCM Medium 740
+  notes: MediaDive J740 / JCM Medium 740 adds 61.4251 ml/L Mineral solution 1.
+  composition:
+  - preferred_term: KH2PO4
+    concentration:
+      value: '0.6'
+      unit: PERCENT_W_V
+    source: MediaDive J740 / JCM Medium 740
+    notes: MediaDive J740 / JCM Medium 740 describes Mineral solution 1 as 0.6% KH2PO4.
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    physicochemical_roles:
+    - BUFFER
+- preferred_term: Mineral solution 2
   concentration:
-    value: '6'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: (NH4)2SO4
-  term:
-    id: CHEBI:62946
-    label: ammonium sulfate
+    value: '61.4251'
+    unit: ML_PER_L
+  source: MediaDive J740 / JCM Medium 740
+  notes: MediaDive J740 / JCM Medium 740 adds 61.4251 ml/L Mineral solution 2.
+  composition:
+  - preferred_term: K2HPO4
+    concentration:
+      value: '6.0'
+      unit: G_PER_L
+    source: MediaDive J740 / JCM Medium 740
+    notes: MediaDive J740 / JCM Medium 740 lists 6.0 g/L K2HPO4.
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: (NH4)2SO4
+    concentration:
+      value: '12.0'
+      unit: G_PER_L
+    source: MediaDive J740 / JCM Medium 740
+    notes: MediaDive J740 / JCM Medium 740 lists 12.0 g/L (NH4)2SO4.
+    term:
+      id: CHEBI:62946
+      label: ammonium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:62946
+      label: ammonium sulfate
+    nutritional_roles:
+    - NITROGEN_SOURCE
+    - SULFUR_SOURCE
+  - preferred_term: NaCl
+    concentration:
+      value: '12.0'
+      unit: G_PER_L
+    source: MediaDive J740 / JCM Medium 740
+    notes: MediaDive J740 / JCM Medium 740 lists 12.0 g/L NaCl.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '1.2'
+      unit: G_PER_L
+    source: MediaDive J740 / JCM Medium 740
+    notes: MediaDive J740 / JCM Medium 740 lists 1.2 g/L MgSO4 x 7 H2O.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    nutritional_roles:
+    - SULFUR_SOURCE
+    - TRACE_ELEMENT
+  - preferred_term: CaCl2 x 2 H2O
+    concentration:
+      value: '1.2'
+      unit: G_PER_L
+    source: MediaDive J740 / JCM Medium 740
+    notes: MediaDive J740 / JCM Medium 740 lists 1.2 g/L CaCl2 x 2 H2O.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    source: MediaDive J740 / JCM Medium 740
+    notes: MediaDive J740 / JCM Medium 740 makes Mineral solution 2 up with 100.0
+      ml water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: 0.1% Resazurin solution
   concentration:
-    value: '12'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
+    value: '0.819001'
+    unit: ML_PER_L
+  source: MediaDive J740 / JCM Medium 740
+  notes: MediaDive J740 / JCM Medium 740 adds 0.819001 ml/L 0.1% Resazurin solution.
+  composition:
+  - preferred_term: Resazurin
+    concentration:
+      value: '0.1'
+      unit: PERCENT_W_V
+    source: MediaDive J740 / JCM Medium 740
+    notes: MediaDive J740 / JCM Medium 740 specifies 0.1% Resazurin solution as 0.1%
+      w/v.
+    term:
+      id: CHEBI:8806
+      label: Resazurin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:8806
+      label: Resazurin
+    physicochemical_roles:
+    - REDOX_INDICATOR
+- preferred_term: 0.07% Hemin solution
   concentration:
-    value: '12'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
+    value: '8.19001'
+    unit: ML_PER_L
+  source: MediaDive J740 / JCM Medium 740
+  notes: MediaDive J740 / JCM Medium 740 adds 8.19001 ml/L 0.07% Hemin solution.
+  composition:
+  - preferred_term: Hemin
+    concentration:
+      value: '0.07'
+      unit: PERCENT_W_V
+    source: MediaDive J740 / JCM Medium 740
+    notes: MediaDive J740 / JCM Medium 740 specifies 0.07% Hemin solution as 0.07%
+      w/v.
+    term:
+      id: CHEBI:50385
+      label: hemin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:50385
+      label: hemin
+- preferred_term: 8% Na2CO3 solution
   concentration:
-    value: '1.2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
+    value: '40.95'
+    unit: ML_PER_L
+  source: MediaDive J740 / JCM Medium 740
+  notes: MediaDive J740 / JCM Medium 740 adds 40.95 ml/L 8% Na2CO3 solution.
+  composition:
+  - preferred_term: Na2CO3
+    concentration:
+      value: '8.0'
+      unit: PERCENT_W_V
+    source: MediaDive J740 / JCM Medium 740
+    notes: MediaDive J740 / JCM Medium 740 specifies 8% Na2CO3 solution as 8.0% w/v.
+    term:
+      id: CHEBI:29377
+      label: sodium carbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:29377
+      label: sodium carbonate
+    physicochemical_roles:
+    - BUFFER
+- preferred_term: 3% L-Cysteine HCl x H2O solution
   concentration:
-    value: '1.2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
+    value: '8.19001'
+    unit: ML_PER_L
+  source: MediaDive J740 / JCM Medium 740
+  notes: MediaDive J740 / JCM Medium 740 adds 8.19001 ml/L 3% L-Cysteine HCl x H2O
+    solution.
+  composition:
+  - preferred_term: L-Cysteine HCl x H2O
+    concentration:
+      value: '3.0'
+      unit: PERCENT_W_V
+    source: MediaDive J740 / JCM Medium 740
+    notes: MediaDive J740 / JCM Medium 740 specifies 3% L-Cysteine HCl x H2O solution
+      as 3.0% w/v.
+    term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+    physicochemical_roles:
+    - REDUCING_AGENT
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 0.6% KH2PO4 solution.
+  description: Prepare the main MVL Medium from 819.001 ml/L distilled water, 61.4251
+    ml/L each of Mineral solution 1 and Mineral solution 2, 0.819001 ml/L 0.1% Resazurin
+    solution, 40.95 ml/L 8% Na2CO3 solution, 8.19001 ml/L each of 0.07% Hemin solution
+    and 3% L-Cysteine HCl x H2O solution, Trypticase peptone, yeast extract, beef
+    extract, glucose, and agar.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min unless otherwise stated.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: JCM's default instruction is to autoclave media at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -167,3 +322,24 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m765_mvl_score15.py
+  action: RESOLVED_JCM_740_MVL_MEDIUM
+  source: https://mediadive.dsmz.de/medium/J740; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=740
+  notes: Moved Mineral solution 1, Mineral solution 2, 0.1% Resazurin, 0.07% Hemin,
+    8% Na2CO3, and 3% L-Cysteine HCl x H2O stocks into nested solution entries, restored
+    main distilled water, and linked the TOGO M765 source duplicate.
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M765_MVL_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010172
+  name: mvl_medium
+  notes: TOGO M765 imports the same JCM Medium 740 MVL Medium formulation represented
+    by MediaDive J740.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://mediadive.dsmz.de/medium/J740
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=740

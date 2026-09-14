@@ -5,18 +5,25 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.8
 ingredients:
 - preferred_term: yeast extract
   concentration:
     value: '0.05'
     unit: PERCENT_W_V
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M2313
+  notes: TOGO M2313 lists 0.05% w/v yeast extract in the shared sea-salts/Tris minimal-media
+    base.
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: NH4Cl
   concentration:
     value: '0.05'
     unit: PERCENT_W_V
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  source: TOGO M2313
+  notes: TOGO M2313 lists 0.05% w/v NH4Cl in the shared sea-salts/Tris minimal-media
+    base.
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -27,8 +34,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  source: TOGO M2313
+  notes: TOGO M2313 lists D-glucose as one of the alternative carbon sources tested
+    at a final concentration of 0.2% w/v.
   term:
     id: CHEBI:17634
     label: D-glucose
@@ -39,8 +47,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  source: TOGO M2313
+  notes: TOGO M2313 lists N-acetyl-D-glucosamine as one of the alternative carbon
+    sources tested at a final concentration of 0.2% w/v.
   term:
     id: CHEBI:8006
     label: Peptidoglycan(N-acetyl-D-glucosamine)
@@ -49,15 +58,19 @@ ingredients:
     label: Peptidoglycan(N-acetyl-D-glucosamine)
 - preferred_term: Tris-HCl
   concentration:
-    value: '50'
+    value: '50.0'
     unit: MILLIMOLAR
-  notes: 'Role: Buffer; Properties: Defined component, Complex component, Solution'
+  source: TOGO M2313
+  notes: TOGO M2313 lists 50 mM Tris-HCl at pH 7.8 in the shared minimal-media base;
+    this pH-specific buffer is retained without a single-molecule ontology grounding
+    and remains intentionally unmapped.
 - preferred_term: D-galactose
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  source: TOGO M2313
+  notes: TOGO M2313 lists D-galactose as one of the alternative carbon sources tested
+    at a final concentration of 0.2% w/v.
   term:
     id: CHEBI:12936
     label: D-galactose
@@ -68,8 +81,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  source: TOGO M2313
+  notes: TOGO M2313 lists D-xylose as one of the alternative carbon sources tested
+    at a final concentration of 0.2% w/v.
   term:
     id: CHEBI:65327
     label: D-xylose
@@ -80,8 +94,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  source: TOGO M2313
+  notes: TOGO M2313 lists D-galacturonic acid as one of the alternative carbon sources
+    tested at a final concentration of 0.2% w/v.
   term:
     id: CHEBI:18024
     label: D-galacturonic acid
@@ -92,8 +107,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  source: TOGO M2313
+  notes: TOGO M2313 lists L-arabinose as one of the alternative carbon sources tested
+    at a final concentration of 0.2% w/v.
   term:
     id: CHEBI:30849
     label: L-arabinose
@@ -101,8 +117,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  source: TOGO M2313
+  notes: TOGO M2313 lists L-rhamnose as one of the alternative carbon sources tested
+    at a final concentration of 0.2% w/v.
   term:
     id: CHEBI:62345
     label: L-rhamnose
@@ -113,8 +130,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  source: TOGO M2313
+  notes: TOGO M2313 lists D-mannose as one of the alternative carbon sources tested
+    at a final concentration of 0.2% w/v.
   term:
     id: CHEBI:16024
     label: D-mannose
@@ -125,8 +143,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  source: TOGO M2313
+  notes: TOGO M2313 lists D-trehalose as one of the alternative carbon sources tested
+    at a final concentration of 0.2% w/v.
   term:
     id: CHEBI:27082
     label: trehalose
@@ -137,65 +156,87 @@ ingredients:
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Undefined component'
+  source: TOGO M2313
+  notes: TOGO M2313 lists xylan from oat spelts as an alternative carbon source; this
+    source-qualified polysaccharide remains intentionally unmapped.
 - preferred_term: pectin (apple)
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  source: TOGO M2313
+  notes: TOGO M2313 lists pectin from apple as an alternative carbon source; this
+    source-qualified polysaccharide remains intentionally unmapped.
 - preferred_term: pectin (citrus peel)
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  source: TOGO M2313
+  notes: TOGO M2313 lists pectin from citrus peel as an alternative carbon source;
+    this source-qualified polysaccharide remains intentionally unmapped.
 - preferred_term: galatcomannan (Ceratonia siliqua)
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source, Thickening agent'
+  source: TOGO M2313
+  notes: TOGO M2313 lists galatcomannan from Ceratonia siliqua as an alternative carbon
+    source; this source-qualified locust-bean gum remains intentionally unmapped.
 - preferred_term: mannan (Saccharomyces cerevisiae)
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source'
+  source: TOGO M2313
+  notes: TOGO M2313 lists mannan from Saccharomyces cerevisiae as an alternative carbon
+    source; this source-qualified yeast mannan remains intentionally unmapped.
 - preferred_term: arabinan (sugar beet)
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source'
+  source: TOGO M2313
+  notes: TOGO M2313 lists arabinan from sugar beet as an alternative carbon source;
+    this source-qualified polysaccharide remains intentionally unmapped.
 - preferred_term: arabinogalactan (larch)
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source'
+  source: TOGO M2313
+  notes: TOGO M2313 lists arabinogalactan from larch as an alternative carbon source;
+    this source-qualified polysaccharide remains intentionally unmapped.
 - preferred_term: laminarin (brown algae)
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Growth factor'
+  source: TOGO M2313
+  notes: TOGO M2313 lists laminarin from brown algae at 0.2% w/v; this source-qualified
+    polysaccharide remains intentionally unmapped.
 - preferred_term: chitin (shrimp shells)
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source'
+  source: TOGO M2313
+  notes: TOGO M2313 lists chitin from shrimp shells as an alternative carbon source;
+    this source-qualified chitin remains intentionally unmapped.
 - preferred_term: sea salts
   concentration:
     value: '2.3'
     unit: PERCENT_W_V
-  notes: 'Role: Mineral source'
+  source: TOGO M2313
+  notes: TOGO M2313 lists 2.3% w/v sea salts; this heterogeneous salt mixture remains
+    intentionally unmapped.
 - preferred_term: alginate (brown algae)
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source'
+  source: TOGO M2313
+  notes: TOGO M2313 lists alginate from brown algae as an alternative carbon source;
+    this source-qualified polysaccharide remains intentionally unmapped.
 media_term:
   preferred_term: TOGO Medium M2313
   term:
     id: TOGO:M2313
     label: minimal media
-notes: 'Source: https://togomedium.org/medium/M2313'
+notes: TOGO M2313 describes minimal media containing 2.3% w/v sea salts, 0.05% w/v
+  yeast extract, 0.05% w/v NH4Cl, and 50 mM Tris-HCl at pH 7.8, with a final concentration
+  of 0.2% w/v of one listed carbon source.
 applications:
 - Microbial cultivation
 curation_history:
@@ -239,3 +280,18 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2313_minimal_media_score15.py
+  action: RESOLVED_TOGO_M2313_SCORE15
+  source: https://togomedium.org/medium/M2313
+  notes: TOGO M2313 describes minimal media containing 2.3% w/v sea salts, 0.05% w/v
+    yeast extract, 0.05% w/v NH4Cl, and 50 mM Tris-HCl at pH 7.8, with a final concentration
+    of 0.2% w/v of one listed carbon source. Added the source pH, grounded yeast extract,
+    and kept the disclosed source-qualified polysaccharides, Tris-HCl, and sea salts
+    intentionally unmapped.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2313

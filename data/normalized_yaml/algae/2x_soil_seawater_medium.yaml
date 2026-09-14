@@ -4,66 +4,120 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: 2X Soil+Seawater Medium
+  term:
+    id: UTEX:2x-soil-plus-seawater-medium
+    label: 2X Soil+Seawater Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
+notes: UTEX prepares 2X Soil+Seawater Medium for 60 ppt marine cultures by combining
+  Green House Soil, CaCO3, and Supplemented Seawater before steam pasteurization.
 ingredients:
 - preferred_term: Green House Soil
   concentration:
     value: '25'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 5 mL/200 mL of Supplemented Seawater'
+  notes: Converted from 5 mL Green House Soil per 200 mL Supplemented Seawater.
 - preferred_term: CaCO3
   concentration:
     value: '0.05'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mg/200 mL of Supplemented Seawater; final 0.05 mM'
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: C 64
+  notes: UTEX lists 1 mg CaCO3 per 200 mL Supplemented Seawater, for 0.05 mM final.
+  physicochemical_roles:
+  - BUFFER
+solutions:
 - preferred_term: Supplemented Seawater
   concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'UTEX lists: amount 200 mL'
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: kgmicrobe.ingredient:supplemented_seawater
+    label: Supplemented Seawater
+  composition:
+  - preferred_term: Pasteurized Seawater
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: ENVO:00002149
+      label: sea water
+    notes: UTEX starts the 1 L Supplemented Seawater stock with approximately 900
+      mL Pasteurized Seawater and brings the final volume to 1 L.
+    physicochemical_roles:
+    - OSMOTIC_AGENT
+  - preferred_term: NaCl
+    concentration:
+      value: '23'
+      unit: G_PER_L
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+    supplier_catalog:
+      supplier_name: Fisher
+      catalog_number: S271-500
+    notes: UTEX lists 23 g/L NaCl, for 393.8 mM final in the stock.
+    physicochemical_roles:
+    - OSMOTIC_AGENT
+  - preferred_term: MgCl2 x 6 H2O
+    concentration:
+      value: '5'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86345
+      label: MgCl2 x 6 H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86345
+      label: MgCl2 x 6 H2O
+    supplier_catalog:
+      supplier_name: Fisher
+      catalog_number: M 33
+    notes: UTEX lists 5 g/L MgCl2 x 6 H2O, for 24.6 mM final in the stock.
+    nutritional_roles:
+    - TRACE_ELEMENT
+    physicochemical_roles:
+    - OSMOTIC_AGENT
+  - preferred_term: Na2SO4
+    concentration:
+      value: '4'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32149
+      label: Na2SO4
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32149
+      label: Na2SO4
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: S 6264
+    notes: UTEX lists 4 g/L Na2SO4, for 28.2 mM final in the stock.
+    nutritional_roles:
+    - SULFUR_SOURCE
+  notes: UTEX lists 200 mL Supplemented Seawater per 200 mL 2X recipe.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: Combine Green House Soil, CaCO3, and Supplemented Seawater.
 - step_number: 2
-  action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  action: HEAT
+  description: Steam the covered medium for 2 consecutive days, 3 hours on each day.
 - step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
-- step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
-- step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
-salinity: marine (natural seawater or artificial seawater)
+  action: STORE
+  description: Refrigerate for at least 24 hours, then bring to room temperature before
+    use.
+salinity: 60 ppt
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -102,7 +156,18 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_2x_soil_seawater_score35.py
+  action: RESOLVED_UTEX_2X_SOIL_SEAWATER_SCORE35
+  changes: Grounded UTEX 2X Soil+Seawater components
+  source: https://utex.org/products/2x-soil-plus-seawater-medium
+  notes: UTEX prepares 2X Soil+Seawater Medium for 60 ppt marine cultures by combining
+    Green House Soil, CaCO3, and Supplemented Seawater before steam pasteurization.
 references:
 - reference: UTEX:2x-soil-plus-seawater-medium
 - reference: https://utex.org/products/2x-soil-plus-seawater-medium
+- reference: https://utex.org/products/supplemented-seawater
 original_name: 2X Soil + Seawater Medium
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

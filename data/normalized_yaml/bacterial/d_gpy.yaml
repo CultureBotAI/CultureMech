@@ -6,54 +6,60 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
+- preferred_term: Polypeptone
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: TOGO M2106 / NBRC Medium 1429
+  notes: NBRC Medium 1429 lists 1 g/L Polypeptone; this peptone product is retained
+    as an opaque complex component.
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Seawater (1.75 % salinity)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source, Solvating media; Properties: Undefined component'
+  source: TOGO M2106 / NBRC Medium 1429
+  notes: NBRC Medium 1429 lists 0.5 g/L yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Glucose
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  source: TOGO M2106 / NBRC Medium 1429
+  notes: NBRC Medium 1429 lists 2 g/L glucose.
   term:
     id: CHEBI:17234
     label: glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+- preferred_term: Seawater (1.75 % salinity)
+  concentration:
+    value: '1.0'
+    unit: L
+  source: TOGO M2106 / NBRC Medium 1429
+  notes: NBRC Medium 1429 lists 1 L Seawater at 1.75% salinity without disclosing
+    the seawater composition.
 - preferred_term: Agar
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M2106 / NBRC Medium 1429
+  notes: NBRC Medium 1429 lists 15 g/L agar.
   term:
     id: CHEBI:2509
     label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
-- preferred_term: Polypeptone
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 media_term:
   preferred_term: TOGO Medium M2106
   term:
     id: TOGO:M2106
     label: d-GPY
-notes: 'Source: https://togomedium.org/medium/M2106
-
-  Original source: NBRC - NBRC_M1429
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1429'
+notes: TOGO M2106 imports NBRC Medium 1429 as d-GPY. NBRC 1429 lists 1 g Polypeptone,
+  0.5 g yeast extract, 2 g glucose, 1 L seawater at 1.75% salinity, and 15 g agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -83,4 +89,18 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2106_d_gpy_score15.py
+  action: RESOLVED_TOGO_M2106_D_GPY_SCORE15
+  source: https://togomedium.org/medium/M2106; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1429
+  notes: TOGO M2106 imports NBRC Medium 1429 as d-GPY. NBRC 1429 lists 1 g Polypeptone,
+    0.5 g yeast extract, 2 g glucose, 1 L seawater at 1.75% salinity, and 15 g agar.
+    Corrected the imported seawater g/L artifact and marked the NBRC formula as curated.
 kg_microbe_match: mediadive.medium:7
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2106
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1429

@@ -5,13 +5,21 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
+- preferred_term: Nutrient Broth (Difco)
+  concentration:
+    value: '8.0'
+    unit: G_PER_L
+  source: TOGO M2015 / NBRC Medium 1304
+  notes: NBRC Medium 1304 lists 8.0 g/L Nutrient Broth (Difco). This commercial BD-Difco
+    base is retained as a source-disclosed opaque component.
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1.0'
+    unit: L
+  source: TOGO M2015 / NBRC Medium 1304
+  notes: NBRC Medium 1304 lists 1.0 L distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -20,24 +28,25 @@ ingredients:
     label: water
 - preferred_term: Agar (if needed)
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Nutrient Broth (Difco)
-  concentration:
-    value: '8'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  source: TOGO M2015 / NBRC Medium 1304
+  notes: NBRC Medium 1304 lists 15.0 g/L agar for solid medium when needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M2015
   term:
     id: TOGO:M2015
     label: Difco Nutrient Agar/Broth
-notes: 'Source: https://togomedium.org/medium/M2015
-
-  Original source: NBRC - NBRC_M1304
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1304'
+notes: TOGO M2015 imports NBRC Medium 1304, which defines Difco Nutrient Agar/Broth
+  per liter as 8.0 g Nutrient Broth (Difco), 1.0 L Distilled water, 15.0 g Agar if
+  needed, and pH 7.0. BD catalog 234000 identifies Nutrient Broth as a BD Difco dehydrated
+  culture medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -68,3 +77,30 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2015_difco_nutrient_score15.py
+  action: RESOLVED_TOGO_M2015_DIFCO_NUTRIENT_SCORE15
+  source: https://togomedium.org/medium/M2015; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1304;
+    https://www.bd.com/en-us/products-and-solutions/products/product-page.234000
+  notes: TOGO M2015 imports NBRC Medium 1304, which defines Difco Nutrient Agar/Broth
+    per liter as 8.0 g Nutrient Broth (Difco), 1.0 L Distilled water, 15.0 g Agar
+    if needed, and pH 7.0. BD catalog 234000 identifies Nutrient Broth as a BD Difco
+    dehydrated culture medium. Corrected the imported water unit artifact, added the
+    NBRC pH, grounded water and optional agar, and kept Nutrient Broth (Difco) intentionally
+    unmapped as a source-disclosed commercial base.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix 8.0 g/L Nutrient Broth (Difco) with 1.0 L distilled water; add
+    15.0 g/L agar when preparing solid medium.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2015
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1304
+- reference: https://www.bd.com/en-us/products-and-solutions/products/product-page.234000

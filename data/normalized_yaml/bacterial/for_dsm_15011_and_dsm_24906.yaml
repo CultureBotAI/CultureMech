@@ -394,13 +394,21 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-ph_value: 7.5
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1163_oceanotoga_score10.py
+  action: RESOLVED_KOMODO_1163_OCEANOTOGA_TOPOLOGY
+  changes: Linked under DSMZ Medium 1163a
+  source: KOMODO Medium 1163.1
+  notes: KOMODO Medium 1163.1 applies OCEANOTOGA MEDIUM to DSM 15011 and DSM 24906.
 parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_24739.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:003875
-  name: for_dsm_24739
-variant_relationship: SOURCE_DUPLICATE
+  path: data/normalized_yaml/bacterial/oceanotoga_medium.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:000604
+  name: oceanotoga_medium
+  notes: KOMODO Medium 1163.1 applies OCEANOTOGA MEDIUM to DSM 15011 and DSM 24906.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 1163.1 applies OCEANOTOGA MEDIUM to DSM 15011 and DSM 24906.
+ph_value: 7.5
+data_quality_flags:
+- ingredients_curated

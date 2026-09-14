@@ -11,26 +11,54 @@ media_term:
   term:
     id: mediadive.medium:353
     label: TOMATO JUICE MILK Medium
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium353.pdf'
+notes: DSMZ Medium 353 contains 100.0 g skim milk, 100.0 ml tomato juice, 5.0 g yeast
+  extract, and 1000.0 ml distilled water, adjusted to pH 7.0.
 ingredients:
 - preferred_term: Skim milk
   concentration:
-    value: '100'
+    value: '100.0'
     unit: G_PER_L
+  source: DSMZ Medium 353
+  notes: DSMZ Medium 353 lists 100.0 g skim milk.
 - preferred_term: Tomato juice
   concentration:
-    value: '100'
-    unit: G_PER_L
+    value: '100.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 353
+  notes: DSMZ Medium 353 lists 100.0 ml tomato juice.
+  term:
+    id: FOODON:03301454
+    label: Tomato juice
 - preferred_term: Yeast extract
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
+  source: DSMZ Medium 353
+  notes: DSMZ Medium 353 lists 5.0 g yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 353
+  notes: DSMZ Medium 353 lists 1000.0 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
-  action: FILTER_STERILIZE
-  description: Filter canned tomatoes through paper. Leave over night at 10°C. Dissolve
-    remaining components and bring to 1L.
+  action: FILTER
+  description: Filter canned tomatoes through paper and leave overnight at 10 C.
 - step_number: 2
+  action: MIX
+  description: Mix 100.0 g skim milk, 100.0 ml tomato juice, 5.0 g yeast extract,
+    and 1000.0 ml distilled water.
+- step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 7.0.
 applications:
@@ -49,3 +77,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOMATO JUICE MILK Medium" to "tomato_juice_milk_medium"
     for consistent matching
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_official_simple_score20.py
+  action: RESOLVED_OFFICIAL_SIMPLE_SCORE20
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium353.pdf
+  notes: DSMZ Medium 353 contains 100.0 g skim milk, 100.0 ml tomato juice, 5.0 g
+    yeast extract, and 1000.0 ml distilled water, adjusted to pH 7.0.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium353.pdf

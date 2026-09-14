@@ -13,118 +13,185 @@ media_term:
   term:
     id: mediadive.medium:63c
     label: DESULFOVIBRIO MEDIUM (CHOLINE)
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium63c.pdf'
+notes: DSMZ Medium 63c prepares DESULFOVIBRIO MEDIUM (CHOLINE) as 980 ml Solution
+  A plus 10 ml Solution B and 10 ml Solution C, then adjusts the combined medium to
+  pH 7.8, distributes it under 100% N2, autoclaves it for 15 minutes at 121 C, and
+  checks for a final pH of 6.8-7.0.
 ingredients:
 - preferred_term: K2HPO4
+  concentration:
+    value: '0.50'
+    unit: G_PER_L
+  source: DSMZ Medium 63c
+  notes: DSMZ Medium 63c lists 0.50 g K2HPO4 in the final 1000 ml medium.
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  concentration:
-    value: '0.510204'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
 - preferred_term: NH4Cl
+  concentration:
+    value: '1.00'
+    unit: G_PER_L
+  source: DSMZ Medium 63c
+  notes: DSMZ Medium 63c lists 1.00 g NH4Cl in the final 1000 ml medium.
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  concentration:
-    value: '1.02041'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
     label: ammonium chloride
 - preferred_term: Na2SO4
+  concentration:
+    value: '1.00'
+    unit: G_PER_L
+  source: DSMZ Medium 63c
+  notes: DSMZ Medium 63c lists 1.00 g Na2SO4 in the final 1000 ml medium.
   term:
     id: CHEBI:32149
     label: sodium sulfate
-  concentration:
-    value: '1.02041'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
     label: sodium sulfate
 - preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: DSMZ Medium 63c
+  notes: DSMZ Medium 63c lists 0.10 g CaCl2 x 2 H2O in the final medium.
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  concentration:
-    value: '0.102041'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
 - preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '2.00'
+    unit: G_PER_L
+  source: DSMZ Medium 63c
+  notes: DSMZ Medium 63c lists 2.00 g MgSO4 x 7 H2O in the final medium.
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-  concentration:
-    value: '2.04082'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-- preferred_term: Choline chloride
+- preferred_term: Choline chloride (SIGMA)
+  concentration:
+    value: '5.00'
+    unit: G_PER_L
+  source: DSMZ Medium 63c
+  notes: DSMZ Medium 63c lists 5.00 g Choline chloride (SIGMA) in the final medium.
   term:
     id: CHEBI:133341
     label: choline chloride
-  concentration:
-    value: '5.10204'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:133341
     label: choline chloride
 - preferred_term: Yeast extract
   concentration:
-    value: '1.02041'
+    value: '1.00'
     unit: G_PER_L
+  source: DSMZ Medium 63c
+  notes: DSMZ Medium 63c lists 1.00 g yeast extract in the final medium.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  source: DSMZ Medium 63c
+  notes: DSMZ Medium 63c adds 0.50 ml of 0.1% w/v sodium resazurin, equivalent to
+    0.0005 g/L in the final medium.
   term:
     id: CHEBI:8806
     label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: DSMZ Medium 63c
+  notes: DSMZ Medium 63c combines 980 ml distilled water in Solution A, 10 ml in Solution
+    B, and 10 ml in Solution C.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.50'
+    unit: G_PER_L
+  source: DSMZ Medium 63c
+  notes: DSMZ Medium 63c lists 0.50 g FeSO4 x 7 H2O in Solution B.
   term:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
-  concentration:
-    value: '50'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
 - preferred_term: Na-thioglycolate
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: DSMZ Medium 63c
+  notes: DSMZ Medium 63c lists 0.10 g Na-thioglycolate in Solution C.
   term:
     id: CHEBI:86481
     label: sodium thioglycolate
-  concentration:
-    value: '10'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86481
     label: sodium thioglycolate
 - preferred_term: Ascorbic acid
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: DSMZ Medium 63c
+  notes: DSMZ Medium 63c lists 0.10 g ascorbic acid in Solution C.
   term:
     id: CHEBI:22652
     label: ascorbic acid
-  concentration:
-    value: '10'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:22652
     label: ascorbic acid
 preparation_steps:
 - step_number: 1
+  action: DISSOLVE
+  description: Dissolve the Solution A ingredients in 980 ml distilled water.
+- step_number: 2
+  action: HEAT
+  description: Bring Solution A to the boil, then cool to room temperature while sparging
+    with 100% N2 gas.
+- step_number: 3
+  action: MIX
+  description: Add Solution B, containing FeSO4 x 7 H2O in 10 ml distilled water,
+    and Solution C, containing Na-thioglycolate and ascorbic acid in 10 ml distilled
+    water.
+- step_number: 4
+  action: ADJUST_PH
+  description: Adjust pH to 7.8 with NaOH.
+- step_number: 5
+  action: ALIQUOT
+  description: Distribute under 100% N2 gas in anoxic Hungate-type tubes while continuously
+    swirling the medium to keep the grey precipitate suspended.
+- step_number: 6
   action: AUTOCLAVE
-  description: Dissolve ingredients of solution A, bring to the boil, then cool to
-    room temperature while sparging with 100% N2 gas. Add solutions B and C, adjust
-    pH to 7.8 with NaOH, and distribute under 100% N2 gas in anoxic Hungate-type tubes.
-    During distribution continuously swirl the medium to keep the grey precipitate
-    suspended. Autoclave 15 min at 121°C. Check medium pH after autoclaving and adjust
-    to 6.8 - 7.0, if necessary.
+  description: Autoclave for 15 minutes at 121 C.
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 minutes
+- step_number: 7
+  action: ADJUST_PH
+  description: After autoclaving, check the medium pH and adjust to pH 6.8-7.0 if
+    necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -159,3 +226,33 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_komodo_272_score35.py
+  action: RESOLVED_KOMODO_272_SCORE35
+  changes: Corrected DSMZ 63c final concentrations and preparation metadata
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium63c.pdf
+  notes: DSMZ Medium 63c explicitly lists Solution A at 980 ml, Solution B at 10 ml,
+    and Solution C at 10 ml, making the corrected FeSO4 x 7 H2O, Na-thioglycolate,
+    and ascorbic acid amounts final-medium rather than stock-strength concentrations.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_komodo_272_score35.py
+  action: LINKED_KOMODO_272_SCORE35_CHILD
+  changes: Linked KOMODO 272 as a DSMZ 63c source duplicate
+  source: data/normalized_yaml/bacterial/KOMODO_272_DESULFOVIBRIO_medium_choline.yaml
+  notes: Added or refreshed reciprocal parent-child link for data/normalized_yaml/bacterial/KOMODO_272_DESULFOVIBRIO_medium_choline.yaml.
+incubation_atmosphere: ANAEROBIC
+sterilization:
+  method: AUTOCLAVE
+  duration: 15 minutes
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium63c.pdf
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_272_DESULFOVIBRIO_medium_choline.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004700
+  name: desulfovibrio_medium_choline
+  notes: KOMODO Medium 272 is a stale DSMZ-source duplicate of the same named Desulfovibrio
+    Medium (Choline) formulation curated as DSMZ Medium 63c.

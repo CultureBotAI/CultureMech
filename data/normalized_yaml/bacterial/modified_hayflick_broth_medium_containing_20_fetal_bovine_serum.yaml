@@ -5,18 +5,21 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.8
+temperature_value: 37.0
 ingredients:
 - preferred_term: 0.5% phenol red (Flow)
   concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: pH indicator; Properties: Defined component, Organic compound, Solution'
+    value: '4.0'
+    unit: ML_PER_L
+  source: TOGO M2888
+  notes: TOGO M2888 lists 4 ml/L of 0.5% Phenol red solution from Flow.
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+    value: '1.0'
+    unit: L
+  source: TOGO M2888
+  notes: TOGO M2888 lists 1 L Distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -25,10 +28,10 @@ ingredients:
     label: water
 - preferred_term: D-glucose
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
+  source: TOGO M2888
+  notes: TOGO M2888 lists 5 g/L D-glucose.
   term:
     id: CHEBI:17634
     label: D-glucose
@@ -37,30 +40,48 @@ ingredients:
     label: D-glucose
 - preferred_term: Liquid yeast extract (Flow)
   concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+    value: '100.0'
+    unit: ML_PER_L
+  source: TOGO M2888
+  notes: TOGO M2888 lists 100 ml/L Liquid yeast extract from Flow.
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Fetal bovine serum (Flow), heat-inactivated
   concentration:
-    value: '200'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+    value: '200.0'
+    unit: ML_PER_L
+  source: TOGO M2888
+  notes: TOGO M2888 lists 200 ml/L heat-inactivated fetal bovine serum from Flow;
+    MIM resolves fetal bovine serum to NCIT:C113696, but NCIT is not an allowed ingredient
+    prefix in the CultureMech schema, so this serum remains intentionally unmapped.
 - preferred_term: PPLO broth base without crystal violet (Difco)
   concentration:
-    value: '21'
+    value: '21.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  source: TOGO M2888
+  notes: TOGO M2888 lists 21 g/L PPLO broth base without crystal violet from Difco;
+    this catalog broth is retained as an opaque component.
 - preferred_term: Penicillin G (Parke, Davis & Co)
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Simple component'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M2888
+  notes: TOGO M2888 lists Penicillin G without a schema-compatible mass concentration;
+    the antibiotic identity is grounded but its amount is retained as variable.
+  term:
+    id: CHEBI:51765
+    label: benzylpenicillin sodium
 media_term:
   preferred_term: TOGO Medium M2888
   term:
     id: TOGO:M2888
     label: Modified Hayflick broth medium containing 20% fetal bovine serum
-notes: 'Source: https://togomedium.org/medium/M2888'
+notes: TOGO M2888 records Modified Hayflick broth medium containing 20% fetal bovine
+  serum as 4 ml/L 0.5% phenol red, 1 L distilled water, 5 g/L D-glucose, 100 ml/L
+  Liquid yeast extract (Flow), 200 ml/L heat-inactivated fetal bovine serum from Flow,
+  21 g/L PPLO broth base without crystal violet from Difco, 5 x 10^5 U/L Penicillin
+  G, pH 7.8, and growth at 37 C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -101,3 +122,21 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2223_m2888_hayflick_broths_score15.py
+  action: RESOLVED_TOGO_M2223_M2888_SCORE15
+  source: https://togomedium.org/medium/M2888
+  notes: TOGO M2888 records Modified Hayflick broth medium containing 20% fetal bovine
+    serum as 4 ml/L 0.5% phenol red, 1 L distilled water, 5 g/L D-glucose, 100 ml/L
+    Liquid yeast extract (Flow), 200 ml/L heat-inactivated fetal bovine serum from
+    Flow, 21 g/L PPLO broth base without crystal violet from Difco, 5 x 10^5 U/L Penicillin
+    G, pH 7.8, and growth at 37 C. Corrected the imported ml/L and water units, added
+    pH 7.8 and 37 C, grounded the serum, Liquid yeast extract, D-glucose, and Penicillin
+    G, and retained the PPLO broth product and phenol-red stock solution as intentionally
+    unmapped.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2888

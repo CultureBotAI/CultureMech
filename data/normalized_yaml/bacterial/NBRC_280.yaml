@@ -1,11 +1,17 @@
 id: CultureMech:007484
-name: '280'
-original_name: '280'
+name: Tryptone Yeast Extract Agar (TYG)
+original_name: Tryptone Yeast Extract Agar (TYG)
 category: bacterial
 description: 280. NBRC 279.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: NBRC Medium 279
+  term:
+    id: nbrc.medium:279
+    label: NBRC Medium 279
+ph_value: 7.0
 ingredients:
 - preferred_term: Bacto Tryptone (Difco)
   concentration:
@@ -22,6 +28,9 @@ ingredients:
   term:
     id: CHEBI:17234
     label: glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: glucose
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -29,11 +38,17 @@ ingredients:
   term:
     id: CHEBI:15377
     label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar
   concentration:
     value: '20'
     unit: G_PER_L
   term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
 preparation_steps:
@@ -80,4 +95,22 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 3 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
-notes: pH 7.0
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_nbrc_280_score15.py
+  action: RESOLVED_NBRC_280_SCORE15
+  changes: Grounded recovered NBRC Medium 279 TYG formula
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=279
+  notes: Added the NBRC Medium 279 source term and official title, structured the
+    final pH, added the official NBRC reference, and mirrored CHEBI terms for glucose,
+    distilled water, and agar into MediaIngredientMech mappings.
+notes: 'Source: NBRC Medium 279 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=279
+
+
+  NBRC lists Tryptone Yeast Extract Agar (TYG) with Bacto Tryptone (Difco), yeast
+  extract, glucose, distilled water, and agar at final pH 7.0.'
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=279

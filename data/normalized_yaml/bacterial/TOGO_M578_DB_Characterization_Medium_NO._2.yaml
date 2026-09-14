@@ -282,6 +282,11 @@ curation_history:
   notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
     magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
     labels untouched.
+- timestamp: '2026-09-05T00:00:00-07:00'
+  curator: repair_togo_jcm_cross_references.py
+  action: LINKED_JCM_CROSS_REFERENCE_CHILDREN
+  changes: Linked TOGO/JCM cross-reference child media to source parents
+  notes: Added or refreshed reciprocal parent-child link for bacterial/TOGO_M1125_DB_Characterization_Medium_NO.2_With_1_Sea_Salts.yaml.
 high_metal: true
 solutions:
 - preferred_term: FeCl2 solution (see Medium [M180])
@@ -326,3 +331,9 @@ solutions:
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
   name: Unknown solution
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M1125_DB_Characterization_Medium_NO.2_With_1_Sea_Salts.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:007646
+  name: db_characterization_medium_no_2_with_1_sea_salts
+  notes: Supplements JCM Medium 574 with 10 g/L sea salts (Sigma).

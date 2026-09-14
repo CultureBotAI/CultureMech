@@ -6,24 +6,32 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: DI Water
+- preferred_term: DI water
   concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: Lactobacilli MRS Agar (BD288210)
+    value: '1.0'
+    unit: L
+  source: TOGO M2434
+  notes: TOGO M2434 lists 1000 ml deionized water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Lactobacilli MRS Agar (BD 288210)
   concentration:
     value: '70'
     unit: G_PER_L
+  source: TOGO M2434
+  notes: TOGO M2434 lists 70 g Lactobacilli MRS Agar (BD 288210) per liter.
 media_term:
   preferred_term: TOGO Medium M2434
   term:
     id: TOGO:M2434
     label: Lactobacilli MRS Agar
-notes: 'Source: https://togomedium.org/medium/M2434
-
-  Original URL: https://www.atcc.org/~/media/39839AC0CB884212A57DBF6936371D91.ashx'
+notes: 'TOGO M2434 lists the ATCC Lactobacilli MRS agar recipe: 70 g Lactobacilli
+  MRS Agar (BD 288210) in 1000 ml DI water, boiled to dissolve agar, then autoclaved
+  at 121 C.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -40,3 +48,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Lactobacilli MRS Agar" to "lactobacilli_mrs_agar" for
     consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_literal_products_score40.py
+  action: RESOLVED_TOGO_LITERAL_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO literal product/additive graph
+  source: https://togomedium.org/medium/M2434; https://www.atcc.org/~/media/39839AC0CB884212A57DBF6936371D91.ashx
+  notes: 'TOGO M2434 lists the ATCC Lactobacilli MRS agar recipe: 70 g Lactobacilli
+    MRS Agar (BD 288210) in 1000 ml DI water, boiled to dissolve agar, then autoclaved
+    at 121 C.'
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Boil the medium to dissolve the agar.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the dissolved agar medium at 121 C.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2434
+- reference: https://www.atcc.org/~/media/39839AC0CB884212A57DBF6936371D91.ashx

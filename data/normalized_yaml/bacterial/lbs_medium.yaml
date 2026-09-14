@@ -3,15 +3,15 @@ name: lbs_medium
 original_name: LBS medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2922
+  notes: TOGO M2922 lists 1000 ml/L Distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -22,13 +22,17 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M2922
+  notes: TOGO M2922 lists 1.5 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: NaCl
   concentration:
     value: '342'
     unit: MILLIMOLAR
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  source: TOGO M2922
+  notes: TOGO M2922 lists 342 mM NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -39,18 +43,28 @@ ingredients:
   concentration:
     value: '20'
     unit: MILLIMOLAR
-  notes: 'Role: Buffer; Properties: Complex component, Defined component, Solution'
+  source: TOGO M2922
+  notes: TOGO M2922 lists 20 mM Tris, pH 7.5.
+  term:
+    id: CHEBI:9754
+    label: tris
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
+    label: tris
 - preferred_term: Tryptone
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2922
+  notes: TOGO M2922 lists 10 g/L Tryptone as a digest product not reducible to one
+    ChEBI molecule.
 media_term:
   preferred_term: TOGO Medium M2922
   term:
     id: TOGO:M2922
     label: LBS medium
-notes: 'Source: https://togomedium.org/medium/M2922'
+notes: TOGO M2922 reports LBS medium with 1000 ml/L Distilled water, 1.5 g/L Yeast
+  extract, 342 mM NaCl, 20 mM Tris at pH 7.5, and 10 g/L Tryptone.
 applications:
 - Microbial cultivation
 curation_history:
@@ -80,4 +94,20 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2922_lbs_score15.py
+  action: RESOLVED_TOGO_M2922_LBS_SCORE15
+  source: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2922
+  notes: TOGO M2922 reports LBS medium with 1000 ml/L Distilled water, 1.5 g/L Yeast
+    extract, 342 mM NaCl, 20 mM Tris at pH 7.5, and 10 g/L Tryptone. Corrected the
+    imported distilled-water row from a g/L artifact to 1000 ml/L and added explicit
+    FoodOn/ChEBI grounding for the four mappable components.
 high_metal: true
+ph_value: 7.5
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2922
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2922

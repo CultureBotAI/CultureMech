@@ -2,6 +2,7 @@ id: CultureMech:005654
 name: pplo_broth
 original_name: PPLO broth
 category: bacterial
+record_kind: SOLUTION
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID

@@ -5,13 +5,27 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 10.0
 ingredients:
+- preferred_term: Na2CO3 solution
+  concentration:
+    value: '100.0'
+    unit: ML_PER_L
+  source: TOGO M1733 / NBRC Medium 942
+  notes: TOGO M1733 / NBRC Medium 942 lists 100 ml/L of 10% Na2CO3 solution, added
+    aseptically after autoclaving.
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
 - preferred_term: Distilled water
   concentration:
-    value: '900'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '900.0'
+    unit: ML_PER_L
+  source: TOGO M1733 / NBRC Medium 942
+  notes: TOGO M1733 / NBRC Medium 942 lists 900 ml/L Distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -20,10 +34,10 @@ ingredients:
     label: water
 - preferred_term: MgSO4·7H2O
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  source: TOGO M1733 / NBRC Medium 942
+  notes: TOGO M1733 / NBRC Medium 942 lists 1 g/L MgSO4 x 7H2O.
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
@@ -32,15 +46,19 @@ ingredients:
     label: magnesium sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M1733 / NBRC Medium 942
+  notes: TOGO M1733 / NBRC Medium 942 lists 2 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: K2HPO4
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
+  source: TOGO M1733 / NBRC Medium 942
+  notes: TOGO M1733 / NBRC Medium 942 lists 1 g/L K2HPO4.
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -49,19 +67,35 @@ ingredients:
     label: dipotassium hydrogen phosphate
 - preferred_term: Agar (if needed)
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M1733 / NBRC Medium 942
+  notes: TOGO M1733 / NBRC Medium 942 lists 15 g/L Agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Hipolypepton*
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: TOGO M1733 / NBRC Medium 942
+  notes: TOGO M1733 / NBRC Medium 942 lists 10 g/L Hipolypepton with an asterisked
+    Wako Pure Chemical Industries note.
+  term:
+    id: FOODON:03315306
+    label: Polypeptone
 media_term:
   preferred_term: TOGO Medium M1733
   term:
     id: TOGO:M1733
     label: Modified 802 (pH 10.0)
-notes: 'Source: https://togomedium.org/medium/M1733
-
-  Original source: NBRC - NBRC_M942
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=942'
+notes: TOGO M1733 imports NBRC Medium 942 as Modified 802 (pH 10.0). The NBRC formula
+  lists 100 ml of 10% Na2CO3 solution, 900 ml distilled water, 1 g MgSO4 x 7H2O, 2
+  g yeast extract, 1 g K2HPO4, 15 g agar if needed, 10 g Hipolypepton, and a final
+  pH near 10.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -114,18 +148,19 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-solutions:
-- preferred_term: Na2CO3 solution
-  composition: []
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-  name: Unknown solution
-- preferred_term: Hipolypepton*
-  composition: []
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-  name: Unknown solution
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m1733_modified_802_score15.py
+  action: RESOLVED_TOGO_M1733_SCORE15
+  source: https://togomedium.org/medium/M1733; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=942
+  notes: TOGO M1733 imports NBRC Medium 942 as Modified 802 (pH 10.0). The NBRC formula
+    lists 100 ml of 10% Na2CO3 solution, 900 ml distilled water, 1 g MgSO4 x 7H2O,
+    2 g yeast extract, 1 g K2HPO4, 15 g agar if needed, 10 g Hipolypepton, and a final
+    pH near 10.0. Corrected the imported water and Na2CO3 solution units, restored
+    Hipolypepton as an ingredient, removed empty solution stubs, added the source
+    pH, and grounded every ingredient.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1733
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=942

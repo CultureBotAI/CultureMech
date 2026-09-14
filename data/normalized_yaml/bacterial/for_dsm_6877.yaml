@@ -385,12 +385,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_557_tissierella_score10.py
+  action: RESOLVED_KOMODO_557_TISSIERELLA_TOPOLOGY
+  changes: Linked under MediaDive Medium 557
+  source: KOMODO Medium 557.2
+  notes: KOMODO Medium 557.2 applies TISSIERELLA SP. MEDIUM for DSM 6877.
 parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_6876.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006005
-  name: for_dsm_6876
-variant_relationship: SOURCE_DUPLICATE
+  path: data/normalized_yaml/bacterial/tissierella_sp_medium_creatinine.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:001691
+  name: tissierella_sp_medium_creatinine
+  notes: MediaDive Medium 557 is the DSMZ TISSIERELLA SP. MEDIUM (CREATININE) base.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 557.2 applies TISSIERELLA SP. MEDIUM for DSM 6877.
+data_quality_flags:
+- ingredients_curated

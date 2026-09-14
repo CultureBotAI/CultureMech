@@ -4,28 +4,43 @@ original_name: HORIKOSHI-I MEDIUM WITH 2% NaCl
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J409
   term:
     id: mediadive.medium:J409
     label: HORIKOSHI-I MEDIUM WITH 2% NaCl
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=409'
+notes: JCM Medium 409 defines Horikoshi-I Medium with 2% NaCl as 1 L of JCM Medium
+  181 Horikoshi-I medium plus 20 g/L NaCl.
 ingredients:
-- preferred_term: Horikoshi-I medium
-  concentration:
-    value: '1000'
-    unit: G_PER_L
 - preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
   concentration:
     value: '20'
     unit: G_PER_L
+  source: JCM Medium 181 Horikoshi-I medium
+  notes: Adds 20 g/L NaCl to JCM Medium 181 Horikoshi-I medium.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+solutions:
+- preferred_term: Horikoshi-I medium
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  notes: Adds 20 g/L NaCl to JCM Medium 181 Horikoshi-I medium.
+  culturemech_term:
+    id: CultureMech:002542
+    label: Horikoshi-I medium
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adds 20 g/L NaCl to JCM Medium 181 Horikoshi-I medium.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,20 +67,25 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_salinity_score20.py
+  action: RESOLVED_JCM_SALINITY_SCORE20
+  changes: Resolved score-20 salinity variant
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=409; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=181
+  notes: Adds 20 g/L NaCl to JCM Medium 181 Horikoshi-I medium.
 kg_microbe_match: mediadive.medium:74
-variant_children:
-- path: data/normalized_yaml/bacterial/horikoshi_i_medium_with_3_5_nacl.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/horikoshi_i_medium.yaml
   relationship: SALINITY_VARIANT
-  id: CultureMech:002211
-  name: horikoshi_i_medium_with_3_5_nacl
-  notes: NaCl increased from 20 g/L to 35 g/L while Horikoshi-I medium remains unchanged.
-- path: data/normalized_yaml/bacterial/horikoshi_i_medium_with_5_nacl.yaml
-  relationship: SALINITY_VARIANT
-  id: CultureMech:002762
-  name: horikoshi_i_medium_with_5_nacl
-  notes: NaCl increased from 20 g/L to 50 g/L while Horikoshi-I medium remains unchanged.
-- path: data/normalized_yaml/bacterial/JCM_J345_HORIKOSHI-1_MEDIUM_WITH_10_NaCl.yaml
-  relationship: SALINITY_VARIANT
-  id: CultureMech:002705
-  name: horikoshi_1_medium_with_10_nacl
-  notes: NaCl increased from 20 g/L to 100 g/L while Horikoshi-I medium remains unchanged.
+  id: CultureMech:002542
+  name: horikoshi_i_medium
+  notes: Adds 20 g/L NaCl to JCM Medium 181 Horikoshi-I medium.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- Adds 20 g/L NaCl to JCM Medium 181 Horikoshi-I medium.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=409
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=181

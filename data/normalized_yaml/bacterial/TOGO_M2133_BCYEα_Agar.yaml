@@ -6,84 +6,112 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
 - preferred_term: Yeast extract
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Charcoal activated
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  notes: 'Role: Protective agent; Properties: Undefined component'
-- preferred_term: L-Cysteine
-  concentration:
-    value: '0.4'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Organic compound'
+  source: TOGO M2133 / NBRC Medium 1469
+  notes: NBRC Medium 1469 lists 10.0 g/L Yeast extract.
   term:
-    id: CHEBI:17561
-    label: L-cysteine
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17561
-    label: L-cysteine
-- preferred_term: ACES buffer
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Ferric pyrophosphate
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Mineral source'
+  source: TOGO M2133 / NBRC Medium 1469
+  notes: NBRC Medium 1469 lists 0.25 g/L Ferric pyrophosphate.
   term:
     id: CHEBI:132767
     label: ferric pyrophosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132767
+    label: ferric pyrophosphate
+- preferred_term: Charcoal activated
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  source: TOGO M2133 / NBRC Medium 1469
+  notes: NBRC Medium 1469 lists 1.5 g/L activated charcoal; this material is retained
+    as an opaque protective component.
+- preferred_term: ACES buffer
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: TOGO M2133 / NBRC Medium 1469
+  notes: NBRC Medium 1469 lists 10.0 g/L ACES buffer.
+  term:
+    id: CHEBI:39061
+    label: ACES
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39061
+    label: ACES
 - preferred_term: α-Ketoglutarate
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Role: Growth factor'
+  source: TOGO M2133 / NBRC Medium 1469
+  notes: NBRC Medium 1469 lists 1 g/L alpha-Ketoglutarate; this row is left ungrounded
+    because the source does not specify the acid or salt form.
+- preferred_term: L-Cysteine
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  source: TOGO M2133 / NBRC Medium 1469
+  notes: NBRC Medium 1469 lists 0.4 g/L L-Cysteine.
+  term:
+    id: CHEBI:17561
+    label: L-cysteine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17561
+    label: L-cysteine
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: TOGO M2133 / NBRC Medium 1469
+  notes: NBRC Medium 1469 lists 1 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: TOGO M2133 / NBRC Medium 1469
+  notes: NBRC Medium 1469 lists 15.0 g/L Agar.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: CO2 gas
-  notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M2133 / NBRC Medium 1469
+  notes: NBRC Medium 1469 notes microaerobic growth in an anaerobic jar equipped with
+    a CO2 gas pack.
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
 media_term:
   preferred_term: TOGO Medium M2133
   term:
     id: TOGO:M2133
     label: BCYEα Agar
-notes: 'Source: https://togomedium.org/medium/M2133
-
-  Original source: NBRC - NBRC_M1469
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1469'
+notes: TOGO M2133 imports NBRC Medium 1469 as BCYE alpha Agar. NBRC 1469 lists 10
+  g yeast extract, 0.25 g ferric pyrophosphate, 1.5 g activated charcoal, 10 g ACES
+  buffer, 1 g alpha-Ketoglutarate, 0.4 g L-Cysteine, 1 L distilled water, 15 g agar,
+  and pH 7.0. NBRC 1469 also notes microaerobic growth in an anaerobic jar equipped
+  with a CO2 gas pack.
 applications:
 - Microbial cultivation
 curation_history:
@@ -121,3 +149,25 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2133_score15.py
+  action: RESOLVED_TOGO_M2133_SCORE15
+  source: https://togomedium.org/medium/M2133; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1469
+  notes: TOGO M2133 imports NBRC Medium 1469 as BCYE alpha Agar. NBRC 1469 lists 10
+    g yeast extract, 0.25 g ferric pyrophosphate, 1.5 g activated charcoal, 10 g ACES
+    buffer, 1 g alpha-Ketoglutarate, 0.4 g L-Cysteine, 1 L distilled water, 15 g agar,
+    and pH 7.0. NBRC 1469 also notes microaerobic growth in an anaerobic jar equipped
+    with a CO2 gas pack. Corrected the imported water g/L artifact, added the NBRC
+    pH, and marked the NBRC formula as curated.
+ph_value: 7.0
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2133
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1469

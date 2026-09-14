@@ -5,17 +5,23 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_range:
+  min: 7.0
+  max: 7.5
 ingredients:
 - preferred_term: Seawater (2% Salinity)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source, Solvating media; Properties: Undefined component'
+    value: '1.0'
+    unit: L
+  source: TOGO M1419 / NBRC Medium 16
+  notes: NBRC Medium 16 lists 1 L Seawater at 2% Salinity without disclosing the seawater
+    composition.
 - preferred_term: Agar
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M1419 / NBRC Medium 16
+  notes: NBRC Medium 16 lists 15.0 g/L agar.
   term:
     id: CHEBI:2509
     label: agar
@@ -24,19 +30,18 @@ ingredients:
     label: agar
 - preferred_term: Cornmeal extract
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M1419 / NBRC Medium 16
+  notes: NBRC Medium 16 lists 2 g/L cornmeal extract without disclosing the extract
+    composition.
 media_term:
   preferred_term: TOGO Medium M1419
   term:
     id: TOGO:M1419
     label: Cornmeal Seawater Agar (CMSWA)
-notes: 'Source: https://togomedium.org/medium/M1419
-
-  Original source: NBRC - NBRC_M16
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=16'
+notes: TOGO M1419 imports NBRC Medium 16 as Cornmeal Seawater Agar (CMSWA). NBRC 16
+  lists 2 g cornmeal extract, 1 L seawater at 2% salinity, and 15 g agar at pH 7.0-7.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -67,4 +72,18 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m1419_cmswa_score15.py
+  action: RESOLVED_TOGO_M1419_CMSWA_SCORE15
+  source: https://togomedium.org/medium/M1419; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=16
+  notes: TOGO M1419 imports NBRC Medium 16 as Cornmeal Seawater Agar (CMSWA). NBRC
+    16 lists 2 g cornmeal extract, 1 L seawater at 2% salinity, and 15 g agar at pH
+    7.0-7.5.
 kg_microbe_match: mediadive.medium:12
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M1419
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=16

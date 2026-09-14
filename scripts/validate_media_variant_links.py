@@ -16,6 +16,7 @@ YAML_ROOT = REPO_ROOT / "data" / "normalized_yaml"
 REPORTS_DIR = REPO_ROOT / "reports"
 OUT_TSV = REPORTS_DIR / "media_variant_link_validation.tsv"
 OUT_MD = REPORTS_DIR / "media_variant_link_validation.md"
+YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 
 @dataclass
@@ -39,7 +40,7 @@ def load_recipes(yaml_root: Path) -> RecipeIndex:
     for path in sorted(yaml_root.rglob("*.yaml")):
         rel = str(path.relative_to(REPO_ROOT))
         try:
-            recipe = yaml.safe_load(path.read_text()) or {}
+            recipe = yaml.load(path.read_text(), Loader=YAML_LOADER) or {}
         except Exception as exc:  # noqa: BLE001 - validator reports bad YAMLs.
             path_to_recipe[rel] = {"_load_error": str(exc)}
             continue

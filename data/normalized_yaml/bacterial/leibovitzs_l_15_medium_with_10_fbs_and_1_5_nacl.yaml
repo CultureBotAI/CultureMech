@@ -10,30 +10,49 @@ media_term:
   term:
     id: mediadive.medium:J930
     label: LEIBOVITZ'S L-15 MEDIUM WITH 10% FBS AND 1.5% NaCl
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=930'
+notes: JCM Medium 930 lists 1.0 L Leibovitz's L-15 medium, 100.0 ml Fetal bovine serum,
+  and 15.0 g NaCl; filter-sterilize with a 0.22 um PES filter.
 ingredients:
 - preferred_term: Leibovitz's L-15 medium
   concentration:
-    value: '1000'
-    unit: G_PER_L
+    value: '1.0'
+    unit: L
+  source: MediaDive J930 / JCM Medium 930
+  notes: MediaDive J930 / JCM Medium 930 lists 1.0 L Leibovitz's L-15 medium.
+  term:
+    id: mediadive.compound:1941
+    label: Leibovitz's L-15 medium
 - preferred_term: Fetal bovine serum
   concentration:
-    value: '100'
-    unit: G_PER_L
+    value: '100.0'
+    unit: ML_PER_L
+  source: MediaDive J930 / JCM Medium 930
+  notes: MediaDive J930 / JCM Medium 930 lists 100.0 ml/L Fetal bovine serum.
+  term:
+    id: mediadive.compound:954
+    label: Fetal bovine serum
 - preferred_term: NaCl
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: MediaDive J930 / JCM Medium 930
+  notes: MediaDive J930 / JCM Medium 930 lists 15.0 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
-  concentration:
-    value: '13.6364'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  physicochemical_roles:
+  - OSMOTIC_AGENT
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Combine the JCM Medium 930 Leibovitz L-15, fetal bovine serum, and
+    NaCl components.
+- step_number: 2
   action: FILTER_STERILIZE
-  description: Filter-sterilize with 0.22 ï¿½m PES filter.
+  description: Filter-sterilize with a 0.22 um PES filter.
 applications:
 - Microbial cultivation
 curation_history:
@@ -60,4 +79,27 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-kg_microbe_match: mediadive.medium:74
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m976_leibovitz_score15.py
+  action: RESOLVED_MEDIADIVE_J930_LEIBOVITZ_FBS
+  source: https://mediadive.dsmz.de/medium/J930; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=930
+  notes: Corrected MediaDive J930 volume scaling, grounded NaCl to CHEBI, linked the
+    disclosed L-15 and FBS products to MediaDive compound IDs, removed the stale MediaDive
+    74 KG match, and linked TOGO M976 as a source duplicate.
+sterilization:
+  method: FILTER
+  notes: 0.22 um PES filter
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M976_Leibovitz_s_L-15_Medium_With_10_FBS_And_1.5_NaCl.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010402
+  name: leibovitzs_l_15_medium_with_10_fbs_and_1_5_nacl
+  notes: TOGO M976 imports the same JCM Medium 930 Leibovitz L-15 with 10% FBS and
+    1.5% NaCl formulation represented by MediaDive J930.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://mediadive.dsmz.de/medium/J930
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=930

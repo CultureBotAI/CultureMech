@@ -5,39 +5,47 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 2.0
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
-    Defined component'
+    value: '1.0'
+    unit: L
+  source: TOGO M1869 / NBRC Medium 1114
+  notes: NBRC Medium 1114 lists 1 L distilled water.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: Gellangum
+- preferred_term: Gellan gum
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component; Properties: Undefined component, Organic compound'
+  source: TOGO M1869 / NBRC Medium 1114
+  notes: NBRC Medium 1114 lists 10 g Gellangum; TOGO maps this component to GMO Gellan
+    gum.
+  term:
+    id: CHEBI:85248
+    label: gellan gum
+  mediaingredientmech_chebi_term:
+    id: CHEBI:85248
+    label: gellan gum
 - preferred_term: Cornmeal extract
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M1869 / NBRC Medium 1114
+  notes: NBRC Medium 1114 lists 2 g cornmeal extract without disclosing the extract
+    composition.
 media_term:
   preferred_term: TOGO Medium M1869
   term:
     id: TOGO:M1869
     label: CM+1%Gellangum (pH 2.0)
-notes: 'Source: https://togomedium.org/medium/M1869
-
-  Original source: NBRC - NBRC_M1114
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1114'
+notes: TOGO M1869 imports NBRC Medium 1114 as CM+1%Gellangum (pH 2.0). NBRC 1114 lists
+  2 g cornmeal extract, 1 L distilled water, and 10 g Gellangum at pH 2.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -68,3 +76,16 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m1869_cm_gellangum_score15.py
+  action: RESOLVED_TOGO_M1869_CM_GELLANGUM_SCORE15
+  source: https://togomedium.org/medium/M1869; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1114
+  notes: TOGO M1869 imports NBRC Medium 1114 as CM+1%Gellangum (pH 2.0). NBRC 1114
+    lists 2 g cornmeal extract, 1 L distilled water, and 10 g Gellangum at pH 2.0.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M1869
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1114

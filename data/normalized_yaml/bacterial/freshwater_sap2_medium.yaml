@@ -10,20 +10,36 @@ media_term:
   term:
     id: mediadive.medium:J1018
     label: FRESHWATER SAP2 MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1018'
+notes: MediaDive J1018 and TOGO M1078 are source-equivalent snapshots of JCM Medium
+  1018. The TOGO snapshot lists 1 L distilled water, 1 g yeast extract, and 1 g tryptone
+  for Freshwater SAP2 Medium.
 ingredients:
-- preferred_term: Tryptone
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  notes: TOGO M1078/M1079 list 1 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: Yeast extract
+  notes: TOGO M1078/M1079 list 1 g yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Tryptone (BD-Difco)
   concentration:
     value: '1'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: For preparation of solid medium, add 15.0 g/L agar.
+  notes: TOGO M1078/M1079 list 1 g tryptone.
+  nutritional_roles:
+  - NITROGEN_SOURCE
 applications:
 - Microbial cultivation
 curation_history:
@@ -40,3 +56,28 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "FRESHWATER SAP2 MEDIUM" to "freshwater_sap2_medium"
     for consistent matching
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_freshwater_sap2_score40.py
+  action: RESOLVED_FRESHWATER_SAP2_SCORE40
+  changes: Resolved Freshwater SAP2 score-40 recipe graph
+  source: https://togomedium.org/medium/M1078
+  notes: MediaDive J1018 and TOGO M1078 are source-equivalent snapshots of JCM Medium
+    1018. The TOGO snapshot lists 1 L distilled water, 1 g yeast extract, and 1 g
+    tryptone for Freshwater SAP2 Medium.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: TOGO:M1078
+- reference: https://togomedium.org/medium/M1078
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1018
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M1078_Freshwater_SAP2_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:007593
+  name: freshwater_sap2_medium
+  notes: MediaDive J1018 and TOGO M1078 are snapshots of JCM Medium 1018.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same Freshwater SAP2 Medium broth formulation as TOGO M1078.

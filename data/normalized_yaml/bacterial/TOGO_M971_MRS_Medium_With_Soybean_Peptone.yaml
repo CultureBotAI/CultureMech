@@ -6,43 +6,73 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
+- preferred_term: Lactobacilli MRS broth (BD-Difco)
+  concentration:
+    value: '55.0'
+    unit: G_PER_L
+  source: TOGO M971 / JCM Medium 925
+  notes: TOGO M971 / JCM Medium 925 lists 55.0 g/L Lactobacilli MRS broth (BD-Difco).
+- preferred_term: Phytone peptone (BD-BBL)
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: TOGO M971 / JCM Medium 925
+  notes: TOGO M971 / JCM Medium 925 lists 5.0 g/L Phytone peptone (BD-BBL).
+  term:
+    id: FOODON:03315720
+    label: Soy peptone
+  nutritional_roles:
+  - PROTEIN_SOURCE
+- preferred_term: Bacto agar (BD-Difco)
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: TOGO M971 / JCM Medium 925
+  notes: TOGO M971 / JCM Medium 925 lists 15.0 g/L Bacto agar (BD-Difco).
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1.0'
+    unit: L
+  source: TOGO M971 / JCM Medium 925
+  notes: TOGO M971 / JCM Medium 925 lists 1.0 L Distilled water.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: Bacto agar (BD-Difco)
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Lactobacilli MRS broth (BD-Difco)
-  concentration:
-    value: '55'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Phytone peptone (BD-BBL)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Combine the MRS Medium With Soybean Peptone components listed by JCM
+    Medium 925.
+- step_number: 2
+  action: AUTOCLAVE
+  duration: 15 min
+  description: Autoclave at 121 C for 15 min unless otherwise stated.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: JCM's default instruction is to autoclave media at 121 C for 15 min.
 media_term:
   preferred_term: TOGO Medium M971
   term:
     id: TOGO:M971
     label: MRS Medium With Soybean Peptone
-notes: 'Source: https://togomedium.org/medium/M971
-
-  Original source: JCM - JCM_M925
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=925'
+notes: JCM Medium 925 MRS Medium With Soybean Peptone lists 55.0 g/L Lactobacilli
+  MRS broth, 5.0 g/L Phytone peptone, 15.0 g/L Bacto agar, and 1.0 L Distilled water;
+  the JCM page applies default autoclaving at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -73,3 +103,25 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m971_mrs_soybean_score15.py
+  action: RESOLVED_TOGO_M971_MRS_SOYBEAN
+  source: https://togomedium.org/medium/M971; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=925
+  notes: Corrected the JCM Medium 925 water unit, grounded Bacto agar and Phytone
+    peptone, retained Lactobacilli MRS broth as a source-listed unmapped commercial
+    product, added the JCM default autoclaving condition, and linked the MediaDive
+    J925 source duplicate.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M971
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=925
+variant_children:
+- path: data/normalized_yaml/bacterial/mrs_medium_with_soybean_peptone.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003272
+  name: mrs_medium_with_soybean_peptone
+  notes: TOGO M971 imports the same JCM Medium 925 MRS Medium With Soybean Peptone
+    formulation represented by MediaDive J925.

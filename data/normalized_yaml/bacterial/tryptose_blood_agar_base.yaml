@@ -10,12 +10,16 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M2512
+  notes: TOGO M2512 names Tryptose blood agar base from Difco Laboratories without
+    stating an amount.
 media_term:
   preferred_term: TOGO Medium M2512
   term:
     id: TOGO:M2512
     label: Tryptose blood agar base
-notes: 'Source: https://togomedium.org/medium/M2512'
+notes: TOGO M2512 records Tryptose blood agar base from Difco Laboratories without
+  a disclosed amount or internal formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -41,3 +45,15 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_products_more_score40.py
+  action: RESOLVED_TOGO_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO product graph
+  source: https://togomedium.org/medium/M2512
+  notes: TOGO M2512 records Tryptose blood agar base from Difco Laboratories without
+    a disclosed amount or internal formulation.
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2512

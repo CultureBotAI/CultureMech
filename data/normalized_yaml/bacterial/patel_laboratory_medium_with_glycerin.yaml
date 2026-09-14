@@ -2,26 +2,136 @@ id: CultureMech:003123
 name: patel_laboratory_medium_with_glycerin
 original_name: PATEL LABORATORY MEDIUM WITH GLYCERIN
 category: bacterial
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J780
   term:
     id: mediadive.medium:J780
     label: PATEL LABORATORY MEDIUM WITH GLYCERIN
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=780'
+notes: JCM Medium 780 contains mineral salts, HEPES, 1.0 ml/L Trace vitamins from
+  JCM Medium 197, 1.0 ml/L Trace mineral solution from JCM Medium 684, 0.2 g/L yeast
+  extract, 2.84 g/L sodium sulfate, 1.0 L distilled water, and 10.0 ml/L 20% glycerin
+  solution; the pH is adjusted to 7.0.
 ingredients:
 - preferred_term: NH4Cl
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 780
+  notes: JCM Medium 780 lists 1.0 g/L.
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  concentration:
-    value: '1'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
     label: ammonium chloride
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  source: JCM Medium 780
+  notes: JCM Medium 780 lists 0.6 g/L.
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  source: JCM Medium 780
+  notes: JCM Medium 780 lists 0.3 g/L.
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: JCM Medium 780
+  notes: JCM Medium 780 lists 0.1 g/L.
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: JCM Medium 780
+  notes: JCM Medium 780 lists 0.1 g/L.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: NaCl
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 780
+  notes: JCM Medium 780 lists 1.0 g/L.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: HEPES
+  concentration:
+    value: '12.0'
+    unit: G_PER_L
+  source: JCM Medium 780
+  notes: JCM Medium 780 lists 12.0 g/L.
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  mediaingredientmech_chebi_term:
+    id: CHEBI:46756
+    label: HEPES
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  source: JCM Medium 780
+  notes: JCM Medium 780 lists 0.2 g/L.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Na2SO4
+  concentration:
+    value: '2.84'
+    unit: G_PER_L
+  source: JCM Medium 780
+  notes: JCM Medium 780 lists 2.84 g/L.
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: JCM Medium 780
+  notes: JCM Medium 780 lists 1000 ml/L.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,4 +162,68 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_780_score20.py
+  action: RESOLVED_JCM_780_SCORE20_GRAPH
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=780; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=684
+  notes: JCM Medium 780 contains mineral salts, HEPES, 1.0 ml/L Trace vitamins from
+    JCM Medium 197, 1.0 ml/L Trace mineral solution from JCM Medium 684, 0.2 g/L yeast
+    extract, 2.84 g/L sodium sulfate, 1.0 L distilled water, and 10.0 ml/L 20% glycerin
+    solution; the pH is adjusted to 7.0.
 kg_microbe_match: mediadive.medium:J780
+ph_value: 7.0
+solutions:
+- preferred_term: Trace vitamins
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  notes: JCM Medium 780 lists 1.0 ml/L Trace vitamins from JCM Medium 197.
+- preferred_term: Trace mineral solution
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  notes: JCM Medium 780 lists 1.0 ml/L Trace mineral solution from JCM Medium 684.
+- preferred_term: 20% (w/v) Glycerin solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  notes: JCM Medium 780 adds 10.0 ml/L 20% (w/v) Glycerin solution.
+  composition:
+  - preferred_term: Glycerol
+    concentration:
+      value: '200.0'
+      unit: G_PER_L
+    term:
+      id: CHEBI:17754
+      label: glycerol
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17754
+      label: glycerol
+  preparation_notes: JCM Medium 780 uses a 20% (w/v) stock; the composition is normalized
+    to g/L of stock.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix the salts, HEPES, trace solutions, yeast extract, sodium sulfate,
+    and distilled water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave under a N2 atmosphere.
+- step_number: 4
+  action: MIX
+  description: After cooling, aseptically and anaerobically add 10.0 ml/L 20% glycerin
+    solution.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=780
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=684

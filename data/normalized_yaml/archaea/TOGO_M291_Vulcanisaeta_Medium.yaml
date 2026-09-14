@@ -80,7 +80,8 @@ curation_history:
 - timestamp: '2026-06-14T05:58:58.561437+00:00'
   curator: idnf-grounding-fix-v1.0
   action: Fixed ID_NOT_FOUND term groundings
-  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
+  notes: Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI,
+    0 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-27T06:35:54.778116Z'
   curator: togo-import
   action: Imported from TOGO Medium
@@ -125,6 +126,16 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_archaea_togo_score40.py
+  action: LINKED_ARCHAEA_TOGO_SCORE40_CHILDREN
+  changes: Linked score-40 archaeal TOGO children to source parents
+  notes: Added or refreshed reciprocal parent-child link for archaea/TOGO_M583_Thermoproteus_Medium_B.yaml.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_archaea_togo_score40.py
+  action: LINKED_ARCHAEA_TOGO_SCORE40_CHILDREN
+  changes: Linked score-40 archaeal TOGO children to source parents
+  notes: Added or refreshed reciprocal parent-child link for archaea/TOGO_M643_Thermoproteus_Medium_C.yaml.
 solutions:
 - preferred_term: Modified Brock's salt base solution (see Medium [M156])
   composition: []
@@ -133,3 +144,14 @@ solutions:
     value: '1'
     unit: G_PER_L
   name: Unknown solution
+variant_children:
+- path: data/normalized_yaml/archaea/TOGO_M583_Thermoproteus_Medium_B.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:009979
+  name: thermoproteus_medium_b
+  notes: Adjusts TOGO M291 Vulcanisaeta Medium to pH 5.5.
+- path: data/normalized_yaml/archaea/TOGO_M643_Thermoproteus_Medium_C.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:010044
+  name: thermoproteus_medium_c
+  notes: Adjusts TOGO M291 Vulcanisaeta Medium to pH 7.0.

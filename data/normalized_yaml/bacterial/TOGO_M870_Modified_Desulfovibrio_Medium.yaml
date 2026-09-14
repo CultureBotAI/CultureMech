@@ -6,21 +6,163 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: NH4Cl
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Na2SO4
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Sodium lactate
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
+  term:
+    id: CHEBI:75228
+    label: sodium lactate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
+  term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+- preferred_term: Sodium thioglycolate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
+  term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+- preferred_term: Ascorbic acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
+  term:
+    id: CHEBI:22652
+    label: ascorbic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:22652
+    label: ascorbic acid
+- preferred_term: Resazurin
+  concentration:
+    value: '0.5'
+    unit: MG_PER_L
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: JCM Medium 389
+  notes: JCM Medium 389 lists 1.0 l distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Beef extract (BD-Difco)
   concentration:
-    value: '3'
+    value: '3.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: JCM Medium 834
+  notes: JCM Medium 834 supplements JCM Medium 389 with 3.0 g/L Beef extract (BD-Difco).
+  term:
+    id: FOODON:03302088
+    label: beef extract
 media_term:
   preferred_term: TOGO Medium M870
   term:
     id: TOGO:M870
     label: Modified Desulfovibrio Medium
-notes: 'Source: https://togomedium.org/medium/M870
-
-  Original source: JCM - JCM_M834
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=834'
+notes: 'TOGO M870 mirrors JCM Medium 834: Modified Desulfovibrio Medium uses JCM Medium
+  389 supplemented with 3.0 g/L Beef extract (BD-Difco).'
 applications:
 - Microbial cultivation
 curation_history:
@@ -49,11 +191,56 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
-solutions:
-- preferred_term: DESULFOVIBRIO MEDIUM (see Medium [M384])
-  composition: []
-  notes: Cross-reference to Medium M384
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_more_wrappers_score40.py
+  action: RESOLVED_JCM_MORE_SCORE40_GRAPH
+  changes: Resolved additional score-40 JCM wrapper recipe graph
+  source: https://togomedium.org/medium/M870; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=834;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=389
+  notes: 'TOGO M870 mirrors JCM Medium 834: Modified Desulfovibrio Medium uses JCM
+    Medium 389 supplemented with 3.0 g/L Beef extract (BD-Difco).'
+ph_range:
+  min: 6.8
+  max: 7.0
+  notes: JCM Medium 389 says adjust pH to 6.8-7.0, if necessary.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix ingredients except FeSO4 x 7 H2O, sodium thioglycolate, and ascorbic
+    acid.
+- step_number: 2
+  action: HEAT
+  description: Bring the medium to a boil and cool to room temperature under an N2
+    gas stream.
+- step_number: 3
+  action: MIX
+  description: Add FeSO4 x 7 H2O in 10 mL distilled water plus sodium thioglycolate
+    and ascorbic acid in 10 mL distilled water.
+- step_number: 4
+  action: ADJUST_PH
+  description: Adjust pH to 7.8 with NaOH; adjust to pH 6.8-7.0 if necessary.
+- step_number: 5
+  action: ALIQUOT
+  description: While swirling under an N2 gas stream, dispense into culture vessels
+    and seal with butyl rubber stoppers.
+- step_number: 6
+  action: AUTOCLAVE
+  description: Autoclave the sealed medium.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M870
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=834
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=389
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M384_Desulfovibrio_Medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:009765
+  name: desulfovibrio_medium
+  notes: JCM Medium 834 supplements JCM Medium 389 with Beef extract.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Supplemented JCM Medium 389 with 3.0 g/L Beef extract (BD-Difco).

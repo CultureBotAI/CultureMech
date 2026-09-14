@@ -59,9 +59,27 @@ def test_a_named_solution_WITH_a_composition_is_left_alone(rt, tmp_path):
     assert rt.candidates(tmp_path) == []
 
 
-def test_an_empty_record_that_is_NOT_named_like_a_solution_is_left_alone(rt, tmp_path):
-    """The 126 genuinely-empty media. They are the real #175 gap and must stay
-    visible in the triage report."""
+def test_an_empty_submedium_with_a_base_name_is_a_candidate(rt, tmp_path):
+    """Stock/base rows like Artificial sea water lacked name-based solution cues."""
+    _write(tmp_path / "bacterial", "c.yaml", {
+        "id": "CultureMech:3", "name": "z",
+        "original_name": "Artificial sea water (medium 600)", "category": "bacterial",
+        "notes": "Source: KOMODO ModelSEED | ID: 400 | SubMedium: Yes",
+        "ingredients": []})
+    assert len(rt.candidates(tmp_path)) == 1
+
+
+def test_a_submedium_WITH_a_composition_is_left_alone(rt, tmp_path):
+    _write(tmp_path / "bacterial", "c.yaml", {
+        "id": "CultureMech:3", "name": "z",
+        "original_name": "Artificial sea water (medium 600)", "category": "bacterial",
+        "notes": "Source: KOMODO ModelSEED | ID: 400 | SubMedium: Yes",
+        "ingredients": [{"preferred_term": "NaCl"}, {"preferred_term": "MgCl2"}]})
+    assert rt.candidates(tmp_path) == []
+
+
+def test_an_empty_record_that_is_NOT_a_solution_stub_is_left_alone(rt, tmp_path):
+    """Genuinely empty media are the real #175 gap and must stay visible."""
     _write(tmp_path / "bacterial", "c.yaml", {
         "id": "CultureMech:3", "name": "z",
         "original_name": "DESULFOBACTERIUM ANILINI MEDIUM", "category": "bacterial",
@@ -106,8 +124,7 @@ def test_record_kind_makes_is_solution_record_true(rk):
 
 
 def test_the_term_id_rule_still_works(rk):
-    """The curated assertion is additional, not a replacement — 4,784 records still
-    rely on the upstream prefix."""
+    """The curated assertion is additional, not a replacement."""
     assert rk.is_solution_record({"term": {"id": "mediadive.solution:4367"}})
     assert rk.is_solution_record({"term": {"id": "MediaIngredientMech:1"}})
 
@@ -129,9 +146,9 @@ def test_a_curated_solution_does_not_have_solution_SHAPE(rk):
     """`is_solution_record` answers "should media audits skip this?".
     `has_solution_shape` answers "which schema class does this match?".
 
-    Conflating them routed 202 MediaRecipe-shaped records to SolutionRecipe and
-    produced 606 validation errors. A curatorial assertion about what a record
-    MEANS cannot change what it structurally IS.
+    Conflating them routed MediaRecipe-shaped records to SolutionRecipe and
+    produced hundreds of validation errors. A curatorial assertion about what a
+    record MEANS cannot change what it structurally IS.
     """
     stub = {"record_kind": "SOLUTION", "name": "x", "ingredients": []}
     assert rk.is_solution_record(stub)

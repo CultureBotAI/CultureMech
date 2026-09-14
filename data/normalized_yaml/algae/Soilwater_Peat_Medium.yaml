@@ -4,62 +4,52 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: 'Soilwater: Peat Medium'
+  term:
+    id: UTEX:soilwater-peat-medium
+    label: 'Soilwater: Peat Medium'
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
+notes: 'UTEX prepares Soilwater: Peat Medium by steaming Organic Peat, Green House
+  Soil, and dH2O.'
 ingredients:
 - preferred_term: Organic Peat
   concentration:
-    value: variable
+    value: 0.5 tsp per 200 mL
     unit: VARIABLE
-  notes: 'UTEX lists: amount 0.5 tsp'
+  notes: UTEX lists 0.5 tsp Organic Peat per 200 mL final medium.
 - preferred_term: Green House Soil
   concentration:
-    value: variable
+    value: 1.5 tsp per 200 mL
     unit: VARIABLE
-  notes: 'UTEX lists: amount 1.5 tsp'
+  notes: UTEX lists 1.5 tsp per 200 mL Green House Soil.
+  term:
+    id: ENVO:00001998
+    label: soil
 - preferred_term: dH2O
   concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'UTEX lists: amount 200 mL'
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: Converted from 200 mL dH2O per 200 mL final medium.
+solutions: []
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: Combine Organic Peat, Green House Soil, and dH2O.
 - step_number: 2
-  action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  action: HEAT
+  description: Cover and steam for 2 consecutive days, 3 hours on each day.
 - step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
-- step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
-- step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
+  action: STORE
+  description: Refrigerate for at least 24 hours, then bring to room temperature before
+    use.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -98,7 +88,24 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_soilwater_score35.py
+  action: RESOLVED_UTEX_SOILWATER_SCORE35
+  changes: Grounded score-35 UTEX Soilwater BAR/PEA/Peat components
+  source: https://utex.org/products/soilwater-peat-medium
+  notes: 'UTEX prepares Soilwater: Peat Medium by steaming Organic Peat, Green House
+    Soil, and dH2O.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_utex_algae_score10.py
+  action: GROUNDED_UTEX_SOILWATER_PEAT_SCORE10
+  changes: Grounded UTEX Soilwater Peat Green House Soil
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied the existing MediaIngredientMech mapping from Green House Soil to
+    ENVO:00001998 soil.
 references:
 - reference: UTEX:soilwater-peat-medium
 - reference: https://utex.org/products/soilwater-peat-medium
 original_name: 'Soilwater: Peat Medium'
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

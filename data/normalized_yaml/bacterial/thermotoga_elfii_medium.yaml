@@ -322,12 +322,20 @@ curation_history:
     duplicate values written by cleanup_media_quality.py. Every merged part was the
     same value, so the pre-merge value is unambiguous and no source lookup was needed.
     Rows whose merged parts differ were left untouched.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_dsmz_664a_pseudothermotoga_score10.py
+  action: RESOLVED_DSMZ_KOMODO_664A_TOPOLOGY
+  changes: Linked under DSMZ Medium 664a
+  source: KOMODO Medium 664
+  notes: KOMODO Medium 664 has the same formulation as DSMZ Medium 664a.
 parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_14385.yaml
+  path: data/normalized_yaml/bacterial/pseudothermotoga_lettingae_medium.yaml
   relationship: SOURCE_DUPLICATE
-  id: CultureMech:006246
-  name: for_dsm_14385
+  id: CultureMech:001803
+  name: pseudothermotoga_lettingae_medium
+  notes: KOMODO Medium 664 has the same formulation as DSMZ Medium 664a.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 664 has the same formulation as DSMZ Medium 664a.
+data_quality_flags:
+- ingredients_curated

@@ -391,3 +391,22 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_509_spirochaeta_score10.py
+  action: RESOLVED_KOMODO_509_SPIROCHAETA_TOPOLOGY
+  changes: Promoted MediaDive Medium 509 to the Spirochaeta thermophila family parent
+  source: MediaDive Medium 509 and KOMODO Medium 509-509.1
+  notes: Linked the exact KOMODO 509 imports under the DSMZ/MediaDive SPIROCHAETA
+    THERMOPHILA MEDIUM record.
+variant_children:
+- path: data/normalized_yaml/bacterial/spirochete_thermophile_medium.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:005711
+  name: spirochete_thermophile_medium
+  notes: KOMODO Medium 509 applies SPIROCHAETA THERMOPHILA MEDIUM at pH 6.9-7.0.
+- path: data/normalized_yaml/bacterial/for_dsm_6578.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:005710
+  name: for_dsm_6578
+  notes: KOMODO Medium 509.1 applies SPIROCHAETA THERMOPHILA MEDIUM at pH 6.9-7.0
+    for DSM 6578.

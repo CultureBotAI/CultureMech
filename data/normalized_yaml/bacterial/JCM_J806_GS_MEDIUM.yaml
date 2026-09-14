@@ -5,6 +5,8 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+aeration: H2-CO2 (80:20, v/v) during preparation; N2-CO2 (80:20, v/v) for cultivation
+culture_vessel: 5 ml medium in Hungate tubes with butyl rubber stoppers
 media_term:
   preferred_term: JCM Medium J806
   term:
@@ -15,152 +17,189 @@ notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=8
   Composition recovery source: https://togomedium.org/medium/M841 (TOGO snapshot of
   JCM medium J806).'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '980'
-    unit: ML_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '3.45'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: NaCl
-  concentration:
-    value: '6'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.14'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: KH2PO4
-  concentration:
-    value: '0.14'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-- preferred_term: NH4Cl
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: Resazurin
-  concentration:
-    value: '1'
-    unit: MG_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
-    compound, Defined component'
-  term:
-    id: CHEBI:8806
-    label: Resazurin
-- preferred_term: MgCl2・6H2O
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
 - preferred_term: KCl
   concentration:
     value: '0.355'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: JCM Medium 806 / 262 / 265
+  notes: JCM Medium 265 lists 0.355 g KCl.
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: MgCl2 x 6H2O
+  concentration:
+    value: '4.0'
+    unit: G_PER_L
+  source: JCM Medium 806 / 262 / 265
+  notes: JCM Medium 265 lists 4.0 g MgCl2 x 6H2O.
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: MgSO4 x 7H2O
+  concentration:
+    value: '3.45'
+    unit: G_PER_L
+  source: JCM Medium 806 / 262 / 265
+  notes: JCM Medium 265 lists 3.45 g MgSO4 x 7H2O.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  source: JCM Medium 806 / 262 / 265
+  notes: JCM Medium 265 lists 0.25 g NH4Cl.
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: CaCl2 x 2H2O
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  source: JCM Medium 806 / 262 / 265
+  notes: JCM Medium 265 lists 0.14 g CaCl2 x 2H2O.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  source: JCM Medium 806 / 262 / 265
+  notes: JCM Medium 265 lists 0.14 g KH2PO4.
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: NaCl
+  concentration:
+    value: '6.0'
+    unit: G_PER_L
+  source: JCM Medium 806 / 262 / 265
+  notes: JCM Medium 262 uses JCM 265 with 6.0 g/L final NaCl.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Fe(NH4)2(SO4)2 x 6H2O
+  concentration:
+    value: '2.0'
+    unit: MG_PER_L
+  source: JCM Medium 806 / 262 / 265
+  notes: JCM Medium 265 lists 2.0 mg Fe(NH4)2(SO4)2 x 6H2O.
+  term:
+    id: CHEBI:76181
+    label: ferrous ammonium sulfate hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76181
+    label: ferrous ammonium sulfate hexahydrate
 - preferred_term: NaHCO3
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
-    compound'
+  source: JCM Medium 806 / 262 / 265
+  notes: JCM Medium 265 lists 5.0 g NaHCO3.
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-- preferred_term: Fe(NH4)2(SO4)2・6H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Glucose
   concentration:
-    value: '2'
-    unit: MG_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-- preferred_term: glucose
-  concentration:
-    value: '1'
+    value: '1.8'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
+  source: JCM Medium 806 / 262 / 265
+  notes: JCM Medium 806 replaces JCM 265 sodium acetate with 1.8 g/L glucose.
   term:
+    id: CHEBI:17234
+    label: glucose
+  mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: JCM Medium 806 / 262 / 265
+  notes: JCM Medium 265 lists 2.0 g yeast extract.
 - preferred_term: Trypticase peptone (BD-BBL)
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Carbon dioxide gas
+  source: JCM Medium 806 / 262 / 265
+  notes: JCM Medium 265 lists 2.0 g Trypticase peptone.
+- preferred_term: Resazurin
   concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'Properties: ガス'
+    value: '1.0'
+    unit: MG_PER_L
+  source: JCM Medium 806 / 262 / 265
+  notes: JCM Medium 265 lists 1.0 mg resazurin.
   term:
-    id: CHEBI:16526
-    label: carbon dioxide
-- preferred_term: N2
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled water
   concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'Properties: ガス'
-- preferred_term: Hydrogen gas
-  concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'Properties: ガス'
+    value: '980.0'
+    unit: ML_PER_L
+  source: JCM Medium 806 / 262 / 265
+  notes: JCM Medium 265 lists 980.0 ml distilled water.
   term:
-    id: CHEBI:18276
-    label: dihydrogen
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
-  action: AUTOCLAVE
-  description: 'Mix components thoroughly, except NaHCO3, and adjust pH to 6.5. Bring
-    to a boil for 5-10 sec, then, cool down under a stream of H2--CO2 (80:20, v/v)
-    and add NaHCO3 to the medium. Dispense the medium into suitable culture vessels
-    (e.g., 5 ml medium in Hungate tubes) under the same gas mixture and seal with
-    butyl rubber stoppers. After autoclaving, stand the medium overnight. Aseptically
-    and anaerobically add per liter the following solutions (autoclaved and stored
-    under a N2 atmosphere):'
+  action: MIX
+  description: Mix JCM Medium 265 base components except NaHCO3, with 6.0 g/L final
+    NaCl from JCM Medium 262 and 1.8 g/L glucose replacing sodium acetate for JCM
+    Medium 806.
 - step_number: 2
-  action: MIX
-  description: Pressurize the inoculated bottles to 200 kPa H2:CO2 (80:20, v/v).
+  action: ADJUST_PH
+  description: Adjust to pH 6.5 before adding NaHCO3.
 - step_number: 3
+  action: HEAT
+  description: Bring the medium to a boil for 5-10 sec, cool under H2-CO2 (80:20,
+    v/v), and add NaHCO3.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Dispense the medium into Hungate tubes under H2-CO2 (80:20, v/v), seal
+    with butyl rubber stoppers, autoclave, and stand overnight.
+- step_number: 5
   action: MIX
-  description: Use Medium No. [262], replacing sodium acetate with 1.8 g/L glucose.
-    Cultivate under a N2--CO2 (80:20, v/v) gas mixture.
+  description: Aseptically and anaerobically add 5% L-Cysteine HCl H2O and 5% Na2S
+    x 9H2O solutions stored under N2 at the JCM Medium 265 per-liter ratios.
+- step_number: 6
+  action: MIX
+  description: Cultivate JCM Medium 806 under an N2-CO2 (80:20, v/v) gas mixture.
 applications:
 - Microbial cultivation
+incubation_atmosphere: ANAEROBIC
 curation_history:
 - timestamp: '2026-01-26T17:53:17.650773Z'
   curator: mediadive-import
@@ -207,31 +246,111 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 10 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_jcm_806_gs_score15.py
+  action: RESOLVED_JCM_806_GS_SCORE15
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=806
+  notes: JCM Medium 806 wraps JCM Medium 262, which wraps JCM Medium 265. This record
+    uses the JCM 265 base with 6.0 g/L final NaCl from JCM 262, replaces sodium acetate
+    with 1.8 g/L glucose for JCM 806, moves gas-phase H2, CO2, and N2 out of the ingredient
+    list, and restores Wolfe's mineral, JCM 197 Trace vitamins, cysteine, and sulfide
+    as stock solutions.
 data_quality_flags:
 - resolved_reference
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
 solutions:
-- preferred_term: Wolfe's mineral solution (see Medium [M257])
-  composition: []
+- preferred_term: Wolfe's mineral solution
   concentration:
-    value: '10'
+    value: '10.0'
     unit: ML_PER_L
-  notes: Defined in TOGO medium M257.
-- preferred_term: Trace vitamins (see Medium [M190])
-  composition: []
+  source: JCM Medium 806 / 262 / 265
+  notes: JCM Medium 265 adds 10.0 ml/L of its Wolfe's mineral solution.
+  composition:
+  - preferred_term: Trace minerals (JCM Medium 151)
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    source: JCM Medium 806 / 262 / 265 / JCM Medium 151
+    notes: JCM Medium 265 Wolfe's mineral solution uses 1.0 L trace minerals.
+  - preferred_term: NiCl2 x 6H2O
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    source: JCM Medium 806 / 262 / 265
+    notes: JCM Medium 265 Wolfe's mineral solution lists 0.02 g NiCl2 x 6H2O.
+  - preferred_term: Na2SeO3
+    concentration:
+      value: '0.001'
+      unit: G_PER_L
+    source: JCM Medium 806 / 262 / 265
+    notes: JCM Medium 265 Wolfe's mineral solution lists 0.001 g Na2SeO3.
+    term:
+      id: CHEBI:48843
+      label: disodium selenite
+    mediaingredientmech_chebi_term:
+      id: CHEBI:48843
+      label: disodium selenite
+  - preferred_term: Na2WO4 x 2H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: JCM Medium 806 / 262 / 265
+    notes: JCM Medium 265 Wolfe's mineral solution lists 0.01 g Na2WO4 x 2H2O.
+    term:
+      id: CHEBI:63939
+      label: sodium tungstate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63939
+      label: sodium tungstate dihydrate
+- preferred_term: Trace vitamins (JCM Medium 197)
   concentration:
-    value: '10'
+    value: '10.0'
     unit: ML_PER_L
-  notes: Defined in TOGO medium M190.
-- preferred_term: 5% Na2S・9H2O solution
-  composition: []
+  source: JCM Medium 806 / 262 / 265 / JCM Medium 197
+  notes: JCM Medium 265 adds 10.0 ml/L Trace vitamins from JCM 197.
+- preferred_term: 5% L-Cysteine HCl H2O solution
   concentration:
-    value: '10'
+    value: '10.0'
     unit: ML_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
-    Solution'
-- preferred_term: 5% L-Cysteine・HCl・H2O solution
-  composition: []
+  source: JCM Medium 806 / 262 / 265
+  notes: JCM Medium 265 adds 10.0 ml/L autoclaved 5% L-Cysteine HCl H2O solution.
+  composition:
+  - preferred_term: L-Cysteine HCl H2O
+    concentration:
+      value: '50.0'
+      unit: G_PER_L
+    source: JCM Medium 806 / 262 / 265
+    notes: Solute of the 5% L-Cysteine HCl H2O stock added by JCM Medium 265.
+    term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+- preferred_term: 5% Na2S x 9H2O solution
   concentration:
-    value: '10'
+    value: '10.0'
     unit: ML_PER_L
-  notes: 'Properties: Defined component, Organic compound, Solution'
+  source: JCM Medium 806 / 262 / 265
+  notes: JCM Medium 265 adds 10.0 ml/L autoclaved 5% Na2S x 9H2O solution.
+  composition:
+  - preferred_term: Na2S x 9H2O
+    concentration:
+      value: '50.0'
+      unit: G_PER_L
+    source: JCM Medium 806 / 262 / 265
+    notes: Solute of the 5% Na2S x 9H2O stock added by JCM Medium 265.
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=806
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=262
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=265
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197

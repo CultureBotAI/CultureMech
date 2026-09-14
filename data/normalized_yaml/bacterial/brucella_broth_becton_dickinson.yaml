@@ -2,6 +2,7 @@ id: CultureMech:005646
 name: brucella_broth_becton_dickinson
 original_name: Brucella Broth (Becton Dickinson)
 category: bacterial
+record_kind: SOLUTION
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID

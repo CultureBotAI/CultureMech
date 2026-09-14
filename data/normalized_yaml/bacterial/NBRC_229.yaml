@@ -1,11 +1,17 @@
 id: CultureMech:007479
-name: '229'
-original_name: '229'
+name: Bennett's Agar
+original_name: Bennett's Agar
 category: bacterial
 description: 229. NBRC 228.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: NBRC Medium 228
+  term:
+    id: nbrc.medium:228
+    label: NBRC Medium 228
+ph_value: 7.3
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -26,6 +32,9 @@ ingredients:
   term:
     id: CHEBI:17234
     label: glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: glucose
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -33,11 +42,17 @@ ingredients:
   term:
     id: CHEBI:15377
     label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar
   concentration:
     value: '20'
     unit: G_PER_L
   term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
 preparation_steps:
@@ -84,4 +99,22 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 3 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
-notes: pH 7.3
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_nbrc_229_score15.py
+  action: RESOLVED_NBRC_229_SCORE15
+  changes: Grounded recovered NBRC Medium 228 Bennett's Agar formula
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=228
+  notes: Added the NBRC Medium 228 source term and official title, structured the
+    final pH, added the official NBRC reference, and mirrored CHEBI terms for glucose,
+    distilled water, and agar into MediaIngredientMech mappings.
+notes: 'Source: NBRC Medium 228 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=228
+
+
+  NBRC lists Bennett''s Agar with yeast extract, beef extract, N-Z-Amine A, glucose,
+  distilled water, and agar at final pH 7.3.'
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=228

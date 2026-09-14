@@ -11,52 +11,97 @@ media_term:
   term:
     id: mediadive.medium:J60
     label: GLYCEROL-ASPARAGINE AGAR (ISP-5)
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=60'
+notes: 'Source: JCM Medium 60 | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=60
+
+
+  JCM Medium 60 Glycerol-Asparagine Agar (ISP-5) combines L-asparagine, glycerol,
+  K2HPO4, 1 mL/L Trace salts solution, agar, and distilled water, adjusts the complete
+  medium to pH 7.4, and autoclaves it.'
+sterilization:
+  method: AUTOCLAVE
 ingredients:
 - preferred_term: L-Asparagine
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 60
+  notes: JCM Medium 60 lists this component for Glycerol-Asparagine Agar (ISP-5).
   term:
     id: CHEBI:17196
     label: L-asparagine
-  concentration:
-    value: '0.999001'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17196
     label: L-asparagine
+  nutritional_roles:
+  - NITROGEN_SOURCE
+  - AMINO_ACID_SOURCE
 - preferred_term: Glycerol
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: JCM Medium 60
+  notes: JCM Medium 60 lists this component for Glycerol-Asparagine Agar (ISP-5).
   term:
     id: CHEBI:17754
     label: glycerol
-  concentration:
-    value: '9.99001'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
     label: glycerol
+  nutritional_roles:
+  - CARBON_SOURCE
 - preferred_term: K2HPO4
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 60
+  notes: JCM Medium 60 lists this component for Glycerol-Asparagine Agar (ISP-5).
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  concentration:
-    value: '0.999001'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
 - preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: JCM Medium 60
+  notes: JCM Medium 60 lists this component for Glycerol-Asparagine Agar (ISP-5).
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '14.985'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: JCM Medium 60
+  notes: JCM Medium 60 lists this distilled-water volume.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
+  action: DISSOLVE
+  description: Dissolve the Glycerol-Asparagine Agar components in distilled water,
+    add 1 mL Trace salts solution, and bring the final volume to 1 L.
+- step_number: 2
   action: ADJUST_PH
-  description: Adjust pH to 7.4.
+  description: Adjust the complete medium to pH 7.4.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -94,6 +139,18 @@ curation_history:
     3 -> ''Trace salt solution'' @ 1 ml/l. Each moved component matched the MediaDive
     stock by name AND value; bulk ingredients sharing a name were left in place (#150).'
   changes: Nested 3 ingredient(s) under 1 solution(s); ingredients 7 -> 4
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_isp5_salinity_score20.py
+  action: RESOLVED_JCM_ISP5_SALINITY_SCORE20
+  changes: Resolved JCM Medium 60 ISP-5 recipe
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=60
+  notes: Rebuilt the JCM Medium 60 Glycerol-Asparagine Agar (ISP-5) recipe.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_isp5_salinity_score20.py
+  action: LINKED_JCM_ISP5_SALINITY_SCORE20_CHILDREN
+  changes: Linked JCM ISP-5 salinity variants to their base parents
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=410; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=60
+  notes: Added or refreshed reciprocal salinity-variant link for bacterial/glycerol_asparagine_agar_isp_5_with_10_nacl.yaml.
 parent_media:
   path: data/normalized_yaml/bacterial/isp_5_medium.yaml
   relationship: CONCENTRATION_VARIANT
@@ -106,41 +163,69 @@ variant_modifications:
 - Glycerol-asparagine agar ISP-5 keeps the ISP-5 defined ingredient set with near-identical
   rounded concentrations and lowers agar from 20 g/L to about 15 g/L.
 solutions:
-- preferred_term: Trace salt solution
-  composition:
-  - preferred_term: FeSO4 x 7 H2O
-    term:
-      id: CHEBI:75836
-      label: iron(2+) sulfate heptahydrate
-    concentration:
-      value: '1'
-      unit: G_PER_L
-    mediaingredientmech_chebi_term:
-      id: CHEBI:75836
-      label: iron(2+) sulfate heptahydrate
-  - preferred_term: MnCl2 x 4 H2O
-    term:
-      id: CHEBI:86368
-      label: manganese(II) chloride tetrahydrate
-    concentration:
-      value: '1'
-      unit: G_PER_L
-    mediaingredientmech_chebi_term:
-      id: CHEBI:86368
-      label: manganese(II) chloride tetrahydrate
-  - preferred_term: ZnSO4 x 7 H2O
-    term:
-      id: CHEBI:32312
-      label: zinc sulfate heptahydrate
-    concentration:
-      value: '1'
-      unit: G_PER_L
-    mediaingredientmech_chebi_term:
-      id: CHEBI:32312
-      label: zinc sulfate heptahydrate
+- preferred_term: Trace salts solution
   concentration:
     value: '1'
     unit: ML_PER_L
-  preparation_notes: Stock prepared in 100 ml; added at 1 ml per litre of medium.
-    Composition and volume read from https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium84.pdf
-    (#150).
+  notes: JCM Medium 60 prepares Trace salts solution from 0.1 g each FeSO4 x 7 H2O,
+    MnCl2 x 4 H2O, and ZnSO4 x 7 H2O in 100 mL distilled water, then adds 1 mL stock
+    per final liter.
+  composition:
+  - preferred_term: FeSO4 x 7 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    source: JCM Medium 60
+    notes: JCM Medium 60 lists this trace-salt stock component.
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    nutritional_roles:
+    - IRON_SOURCE
+    - SULFUR_SOURCE
+    - TRACE_ELEMENT
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    source: JCM Medium 60
+    notes: JCM Medium 60 lists this trace-salt stock component.
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    source: JCM Medium 60
+    notes: JCM Medium 60 lists this trace-salt stock component.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    nutritional_roles:
+    - SULFUR_SOURCE
+    - TRACE_ELEMENT
+  preparation_notes: Prepare the trace-salt stock in 100 mL distilled water; the composition
+    concentrations are normalized to g/L of stock.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=60
+variant_children:
+- path: data/normalized_yaml/bacterial/glycerol_asparagine_agar_isp_5_with_10_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:002767
+  name: glycerol_asparagine_agar_isp_5_with_10_nacl
+  notes: Adds 100 g/L NaCl to JCM Medium 60 Glycerol-Asparagine Agar (ISP-5).

@@ -5,15 +5,30 @@ from __future__ import annotations
 
 import argparse
 import csv
+import io
 import json
 import re
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
 
+import yaml
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 REPORTS_DIR = REPO_ROOT / "reports"
 DEFAULT_MANIFEST = REPORTS_DIR / "media_content_review_manifest.tsv"
+YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
+
+IGNORED_RECIPE_PAIRS: frozenset[frozenset[str]] = frozenset(
+    {
+        frozenset(
+            {
+                "CultureMech:001732",  # DSMZ Medium 605, Nutrient Agar (Oxoid CM3)
+                "CultureMech:008124",  # TOGO M1575 / NBRC Medium 380, NA + 0.5% Yeast Extract
+            }
+        ),
+    }
+)
 
 PROPOSAL_COLUMNS = [
     "ingredient_identity_signature",
@@ -280,9 +295,75 @@ def read_manifest(path: Path) -> list[dict[str, str]]:
         return [row for row in reader if not row.get("load_error")]
 
 
+def existing_link_key(left: str, right: str) -> frozenset[str]:
+    return frozenset((left, right))
+
+
+def ignored_recipe_pair(left: dict[str, str], right: dict[str, str]) -> bool:
+    return frozenset((left.get("id", ""), right.get("id", ""))) in IGNORED_RECIPE_PAIRS
+
+
+def resolve_recipe_ref(ref: Any, id_to_path: dict[str, str]) -> str:
+    if not isinstance(ref, dict):
+        return ""
+
+    path = ref.get("path")
+    if isinstance(path, str) and path:
+        return path
+
+    identifier = ref.get("id")
+    if isinstance(identifier, str):
+        return id_to_path.get(identifier, "")
+    return ""
+
+
+def collect_existing_links(
+    rows: list[dict[str, str]],
+    *,
+    repo_root: Path = REPO_ROOT,
+) -> set[frozenset[str]]:
+    yaml_paths = {
+        row["yaml_path"] for row in rows if row.get("record_kind") != "SOLUTION"
+    }
+    recipes: dict[str, dict[str, Any]] = {}
+    id_to_path: dict[str, str] = {}
+
+    for yaml_path in yaml_paths:
+        path = repo_root / yaml_path
+        if not path.exists():
+            continue
+
+        recipe = yaml.load(path.read_text(encoding="utf-8"), Loader=YAML_LOADER)
+        if not isinstance(recipe, dict):
+            continue
+
+        recipes[yaml_path] = recipe
+        identifier = recipe.get("id")
+        if isinstance(identifier, str) and identifier:
+            id_to_path[identifier] = yaml_path
+
+    existing_links: set[frozenset[str]] = set()
+    for yaml_path, recipe in recipes.items():
+        parent_path = resolve_recipe_ref(recipe.get("parent_media"), id_to_path)
+        if parent_path:
+            existing_links.add(existing_link_key(parent_path, yaml_path))
+
+        variant_children = recipe.get("variant_children") or []
+        if not isinstance(variant_children, list):
+            continue
+        for child_ref in variant_children:
+            child_path = resolve_recipe_ref(child_ref, id_to_path)
+            if child_path:
+                existing_links.add(existing_link_key(yaml_path, child_path))
+
+    return existing_links
+
+
 def build_proposals(
     rows: list[dict[str, str]],
+    existing_links: set[frozenset[str]] | None = None,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    existing_links = existing_links or set()
     grouped: dict[str, list[dict[str, str]]] = defaultdict(list)
     for row in rows:
         # The content manifest also covers standalone stock-solution records.
@@ -307,13 +388,19 @@ def build_proposals(
         physical_states = {m["physical_state"] for m in members if m.get("physical_state")}
         categories = {m["category_dir"] for m in members if m.get("category_dir")}
         relationship_counter: Counter[str] = Counter()
+        proposal_rows: list[dict[str, Any]] = []
 
         for child in members:
             if child["yaml_path"] == parent["yaml_path"]:
                 continue
+            if existing_link_key(parent["yaml_path"], child["yaml_path"]) in existing_links:
+                continue
+            if ignored_recipe_pair(parent, child):
+                continue
+
             relationship = infer_relationship(parent, child)
             relationship_counter[relationship] += 1
-            proposals.append(
+            proposal_rows.append(
                 {
                     "ingredient_identity_signature": ident_sig,
                     "status": status,
@@ -335,6 +422,10 @@ def build_proposals(
                 }
             )
 
+        if not proposal_rows:
+            continue
+
+        proposals.extend(proposal_rows)
         group_rows.append(
             {
                 "ingredient_identity_signature": ident_sig,
@@ -344,7 +435,7 @@ def build_proposals(
                 "parent_id": parent.get("id", ""),
                 "parent_name": parent.get("name", ""),
                 "group_size": len(members),
-                "child_count": len(members) - 1,
+                "child_count": len(proposal_rows),
                 "relationship_counts": ";".join(
                     f"{rel}:{count}" for rel, count in sorted(relationship_counter.items())
                 ),
@@ -375,10 +466,23 @@ def build_proposals(
 
 
 def write_tsv(path: Path, rows: list[dict[str, Any]], columns: list[str]) -> None:
+    buffer = io.StringIO()
+    writer = csv.DictWriter(
+        buffer,
+        fieldnames=columns,
+        delimiter="\t",
+        lineterminator="\n",
+    )
+
     with path.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=columns, delimiter="\t")
         writer.writeheader()
-        writer.writerows(rows)
+        handle.write(buffer.getvalue())
+
+        for row in rows:
+            buffer.seek(0)
+            buffer.truncate(0)
+            writer.writerow(row)
+            handle.write(buffer.getvalue().rstrip("\n").rstrip("\t") + "\n")
 
 
 def write_summary(proposals: list[dict[str, Any]], groups: list[dict[str, Any]], out: Path) -> None:
@@ -437,7 +541,8 @@ def main() -> int:
 
     args.reports_dir.mkdir(parents=True, exist_ok=True)
     rows = read_manifest(args.manifest)
-    proposals, group_rows = build_proposals(rows)
+    existing_links = collect_existing_links(rows)
+    proposals, group_rows = build_proposals(rows, existing_links=existing_links)
 
     proposal_tsv = args.reports_dir / "media_variant_link_proposals.tsv"
     proposal_json = args.reports_dir / "media_variant_link_proposals.json"

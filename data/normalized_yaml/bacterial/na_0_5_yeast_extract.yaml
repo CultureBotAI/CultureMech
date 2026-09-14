@@ -5,30 +5,48 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Pepton
   concentration:
-    value: '1'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO M1575 / NBRC Medium 380
+  notes: TOGO M1575 / NBRC Medium 380 lists 5.0 g/L Pepton.
   term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
+    id: MICRO:0000178
+    label: Peptone
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Beef extract
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  source: TOGO M1575 / NBRC Medium 380
+  notes: TOGO M1575 / NBRC Medium 380 lists 3.0 g/L Beef extract.
+  term:
+    id: FOODON:03302088
+    label: Beef extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
 - preferred_term: Yeast extract
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M1575 / NBRC Medium 380
+  notes: TOGO M1575 / NBRC Medium 380 lists 5.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
+  - VITAMIN_SOURCE
 - preferred_term: NaCl
   concentration:
-    value: '3'
+    value: '3.0'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO M1575 / NBRC Medium 380
+  notes: TOGO M1575 / NBRC Medium 380 lists 3.0 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -37,28 +55,46 @@ ingredients:
     label: sodium chloride
 - preferred_term: Agar (if needed)
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Beef extract
+  source: TOGO M1575 / NBRC Medium 380
+  notes: TOGO M1575 / NBRC Medium 380 lists 15.0 g/L Agar (if needed).
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
   concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Pepton
-  concentration:
-    value: '5'
-    unit: G_PER_L
+    value: '1.0'
+    unit: L
+  source: TOGO M1575 / NBRC Medium 380
+  notes: NBRC Medium 380 lists 1 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M1575
   term:
     id: TOGO:M1575
     label: NA + 0.5% Yeast Extract
-notes: 'Source: https://togomedium.org/medium/M1575
-
-  Original source: NBRC - NBRC_M380
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=380'
+notes: TOGO M1575 imports NBRC Medium 380, NA + 0.5% Yeast Extract. NBRC 380 lists,
+  per liter, 5 g Pepton, 3 g Beef extract, 5 g Yeast extract, 3 g NaCl, 15 g optional
+  Agar, 1 L Distilled water, and pH 7.0.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve Pepton, Beef extract, Yeast extract, NaCl, and optional Agar
+    in 1.0 L distilled water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -89,3 +125,16 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_top_causal_graph_score15.py
+  action: RESOLVED_TOGO_M1575_NBRC_380_SCORE15
+  source: https://togomedium.org/medium/M1575; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=380
+  notes: TOGO M1575 imports NBRC Medium 380, NA + 0.5% Yeast Extract. NBRC 380 lists,
+    per liter, 5 g Pepton, 3 g Beef extract, 5 g Yeast extract, 3 g NaCl, 15 g optional
+    Agar, 1 L Distilled water, and pH 7.0.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1575
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=380

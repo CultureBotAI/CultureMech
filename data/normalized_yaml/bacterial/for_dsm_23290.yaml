@@ -376,12 +376,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1011_mj_medium_score10.py
+  action: RESOLVED_KOMODO_1011_MJ_MEDIUM_TOPOLOGY
+  changes: Linked under KOMODO Medium 1011
+  source: KOMODO Medium 1011.3
+  notes: KOMODO Medium 1011.3 applies MJ MEDIUM to DSM 23290.
 parent_media:
   path: data/normalized_yaml/bacterial/mj_medium.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003521
   name: mj_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 1011 is the MJ MEDIUM base for this record.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 1011.3 applies MJ MEDIUM to DSM 23290.
+data_quality_flags:
+- ingredients_curated

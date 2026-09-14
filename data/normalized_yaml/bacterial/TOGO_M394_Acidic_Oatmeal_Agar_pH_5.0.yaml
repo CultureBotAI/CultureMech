@@ -5,17 +5,50 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ingredients: []
+ph_value: 5.0
+ingredients:
+- preferred_term: Oatmeal (Quaker White Oats)
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: TOGO M42 and JCM Medium 50 list this component for Oatmeal Agar (ISP-3);
+    JCM pH variants reuse the same formulation with different final pH values.
+  nutritional_roles:
+  - CARBON_SOURCE
+  - NITROGEN_SOURCE
+- preferred_term: Agar
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  notes: TOGO M42 and JCM Medium 50 list this component for Oatmeal Agar (ISP-3);
+    JCM pH variants reuse the same formulation with different final pH values.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  notes: TOGO M42 and JCM Medium 50 list this component for Oatmeal Agar (ISP-3);
+    JCM pH variants reuse the same formulation with different final pH values.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M394
   term:
     id: TOGO:M394
     label: Acidic Oatmeal Agar (pH 5.0)
-notes: 'Source: https://togomedium.org/medium/M394
-
-  Original source: JCM - JCM_M398
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=398'
+notes: TOGO M394/JCM Medium 398 prepares Oatmeal Agar (ISP-3) from TOGO M42/JCM Medium
+  50 and adjusts the complete medium to pH 5.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -44,11 +77,103 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_ph_score40.py
+  action: RESOLVED_JCM_PH_SCORE40_GRAPH
+  changes: Resolved score-40 JCM pH-variant recipe graph
+  source: https://togomedium.org/medium/M394; https://togomedium.org/medium/M42; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=398;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=50
+  notes: TOGO M394/JCM Medium 398 prepares Oatmeal Agar (ISP-3) from TOGO M42/JCM
+    Medium 50 and adjusts the complete medium to pH 5.0.
 solutions:
-- preferred_term: Oatmeal agar (ISP-3) (see Medium [M42])
-  composition: []
-  notes: Cross-reference to Medium M42
+- preferred_term: Trace salts solution
   concentration:
     value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    unit: ML_PER_L
+  notes: JCM Medium 50 prepares Trace salts solution from 0.1 g each FeSO4 x 7 H2O,
+    MnCl2 x 4 H2O, and ZnSO4 x 7 H2O in 100 mL distilled water, then adds 1 mL stock
+    per final liter.
+  composition:
+  - preferred_term: FeSO4 x 7 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    notes: JCM Medium 50 prepares Trace salts solution from 0.1 g each FeSO4 x 7 H2O,
+      MnCl2 x 4 H2O, and ZnSO4 x 7 H2O in 100 mL distilled water, then adds 1 mL stock
+      per final liter.
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    nutritional_roles:
+    - IRON_SOURCE
+    - SULFUR_SOURCE
+    - TRACE_ELEMENT
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    notes: JCM Medium 50 prepares Trace salts solution from 0.1 g each FeSO4 x 7 H2O,
+      MnCl2 x 4 H2O, and ZnSO4 x 7 H2O in 100 mL distilled water, then adds 1 mL stock
+      per final liter.
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    notes: JCM Medium 50 prepares Trace salts solution from 0.1 g each FeSO4 x 7 H2O,
+      MnCl2 x 4 H2O, and ZnSO4 x 7 H2O in 100 mL distilled water, then adds 1 mL stock
+      per final liter.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    nutritional_roles:
+    - SULFUR_SOURCE
+    - TRACE_ELEMENT
+  preparation_notes: Prepare the trace-salt stock in 100 mL distilled water; the composition
+    concentrations are normalized to g/L of stock.
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Cook or steam 20 g oatmeal in 1 L distilled water for 20 min, then
+    filter through cheesecloth.
+- step_number: 2
+  action: MIX
+  description: Bring the filtrate back to 1 L with distilled water, then add 1 mL
+    Trace salts solution and 18 g agar.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust the complete medium to pH 5.0.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M42_Oatmeal_Agar_ISP-3.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:009815
+  name: oatmeal_agar_isp_3
+  notes: Adjusts TOGO M42 Oatmeal Agar (ISP-3) to pH 5.0.
+variant_relationship: PH_VARIANT
+variant_modifications:
+- Adjusts TOGO M42 Oatmeal Agar (ISP-3) to pH 5.0.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M394
+- reference: https://togomedium.org/medium/M42
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=398
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=50

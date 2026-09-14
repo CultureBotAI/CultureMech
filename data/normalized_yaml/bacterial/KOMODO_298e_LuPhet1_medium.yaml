@@ -345,6 +345,12 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_298b1_luphet1_score10.py
+  action: RESOLVED_KOMODO_298B1_LUPHET1_STRAIN_VARIANT
+  changes: Reclassified KOMODO 298b.1 as strain-specific
+  source: KOMODO Medium 298b.1
+  notes: KOMODO Medium 298b.1 applies the reviewed LuPhet1 signature to DSM 8271.
 variant_children:
 - path: data/normalized_yaml/bacterial/16av_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -365,11 +371,10 @@ variant_children:
   notes: Same ingredient and concentration signature; review as possible duplicate
     source record.
 - path: data/normalized_yaml/bacterial/for_dsm_8271.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:004764
   name: for_dsm_8271
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 298b.1 applies the reviewed LuPhet1 signature to DSM 8271.
 - path: data/normalized_yaml/bacterial/gol_chi1_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004766

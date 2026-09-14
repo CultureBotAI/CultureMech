@@ -7,14 +7,14 @@ composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Na2S
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
-    Solution'
+  concentration:
+    value: 0.5-1.0
+    unit: MILLIMOLAR
+  source: JCM Medium 517
+  notes: JCM Medium 517 supplements Rhodobium gokurnum medium with 0.5 to 1.0 mM Na2S.
   term:
     id: CHEBI:76208
     label: sodium sulfide (anhydrous)
-  concentration:
-    value: variable
-    unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:76208
     label: sodium sulfide (anhydrous)
@@ -23,11 +23,8 @@ media_term:
   term:
     id: TOGO:M518
     label: Marichromatium Imhoffii Medium
-notes: 'Source: https://togomedium.org/medium/M518
-
-  Original source: JCM - JCM_M517
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=517'
+notes: 'TOGO M518 mirrors JCM Medium 517: Rhodobium gokurnum medium supplemented with
+  0.5 to 1.0 mM Na2S.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,11 +71,39 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_parent_wrappers_score20.py
+  action: RESOLVED_JCM_PARENT_WRAPPER_SCORE20
+  source: https://togomedium.org/medium/M518; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=517;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=516
+  notes: 'TOGO M518 mirrors JCM Medium 517: Rhodobium gokurnum medium supplemented
+    with 0.5 to 1.0 mM Na2S.'
 solutions:
-- preferred_term: Rhodobium gokurnum medium (see Medium [M517])
-  composition: []
-  notes: Cross-reference to Medium M517
+- preferred_term: Rhodobium Gokurnum Medium
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '1000'
+    unit: ML_PER_L
+  notes: JCM Medium 517 uses Rhodobium gokurnum medium as the prepared base.
+  culturemech_term:
+    id: CultureMech:009908
+    label: Rhodobium Gokurnum Medium
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Rhodobium gokurnum medium with 0.5 to 1.0 mM Na2S.
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M517_Rhodobium_Gokurnum_Medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:009908
+  name: rhodobium_gokurnum_medium
+  notes: Supplements Rhodobium gokurnum medium with 0.5 to 1.0 mM Na2S.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Supplements Rhodobium gokurnum medium with 0.5 to 1.0 mM Na2S.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M518
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=517
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=516

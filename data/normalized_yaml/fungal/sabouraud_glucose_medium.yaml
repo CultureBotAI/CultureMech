@@ -10,22 +10,39 @@ media_term:
   term:
     id: mediadive.medium:1429
     label: SABOURAUD GLUCOSE MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1429.pdf'
+notes: DSMZ Medium 1429 contains 30.0 g SABOURAUD-2% Glucose-Bouillon (Merck 108339),
+  15.0 g agar, and 1000.0 ml distilled water.
 ingredients:
-- preferred_term: SABOURAUD- Glucose-Bouillon
+- preferred_term: SABOURAUD-2% Glucose-Bouillon (Merck 108339)
   concentration:
-    value: '30'
+    value: '30.0'
     unit: G_PER_L
+  source: DSMZ Medium 1429
+  notes: DSMZ Medium 1429 lists 30.0 g SABOURAUD-2% Glucose-Bouillon (Merck 108339).
 - preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: DSMZ Medium 1429
+  notes: DSMZ Medium 1429 lists 15.0 g agar.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 1429
+  notes: DSMZ Medium 1429 lists 1000.0 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,4 +69,21 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_official_simple_score20.py
+  action: RESOLVED_OFFICIAL_SIMPLE_SCORE20
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1429.pdf
+  notes: DSMZ Medium 1429 contains 30.0 g SABOURAUD-2% Glucose-Bouillon (Merck 108339),
+    15.0 g agar, and 1000.0 ml distilled water.
 kg_microbe_match: mediadive.medium:12
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Suspend 30.0 g SABOURAUD-2% Glucose-Bouillon (Merck 108339) and 15.0
+    g agar in 1000.0 ml distilled water.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1429.pdf

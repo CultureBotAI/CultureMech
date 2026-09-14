@@ -1,17 +1,26 @@
 id: CultureMech:007501
-name: '882'
-original_name: '882'
+name: GYP medium (pH 6)
+original_name: GYP medium (pH 6)
 category: bacterial
 description: 882. NBRC 881.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: NBRC Medium 881
+  term:
+    id: nbrc.medium:881
+    label: NBRC Medium 881
+ph_value: 6.0
 ingredients:
 - preferred_term: Glucose
   concentration:
     value: '10'
     unit: G_PER_L
   term:
+    id: CHEBI:17234
+    label: glucose
+  mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
 - preferred_term: Bacto Yeast Extract (Difco)
@@ -29,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Tween 80 solution**
   concentration:
     value: '10'
@@ -44,16 +56,47 @@ ingredients:
   term:
     id: CHEBI:15377
     label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: CaCO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  source: NBRC Medium 881
+  notes: NBRC Medium 881 adds 5 g/L CaCO3 after pH adjustment for the solid medium.
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  source: NBRC Medium 881
+  notes: NBRC Medium 881 adds 15 g/L agar after pH adjustment for the solid medium.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
-- step_number: 2
   action: ADJUST_PH
-  description: Adjust pH if needed
+  description: Prepare the basal GYP medium with Tween 80 solution and Salts solution,
+    then adjust the medium to pH 6.0.
+- step_number: 2
+  action: MIX
+  description: For the solid medium, add 5 g/L CaCO3 and 15 g/L agar after the pH
+    is adjusted.
 - step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: MIX
+  description: Prepare the Salts solution with MgSO4·7H2O, MnSO4·4H2O, FeSO4·7H2O,
+    NaCl, and distilled water, then add one drop of 12 N HCl to each 500 ml of the
+    salts stock.
 curation_history:
 - timestamp: '2026-02-20T00:22:35.980773Z'
   curator: nbrc-import
@@ -91,6 +134,15 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 7 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_nbrc_882_score15.py
+  action: RESOLVED_NBRC_882_SCORE15
+  changes: Grounded recovered NBRC Medium 881 GYP solid-medium formula
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=881
+  notes: Added the NBRC Medium 881 source term and official title, structured the
+    pH, added the missing source-listed CaCO3 and agar rows for the solid medium,
+    grounded the recovered formula and nested stock solutions, converted preparation
+    instructions into ordered steps, and added the official NBRC reference.
 solutions:
 - preferred_term: Tween 80 solution
   composition:
@@ -101,11 +153,17 @@ solutions:
     term:
       id: CHEBI:53426
       label: polysorbate 80
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53426
+      label: polysorbate 80
   - preferred_term: Distilled water
     concentration:
       value: '1'
       unit: L
     term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
       id: CHEBI:15377
       label: water
   name: Tween 80 solution
@@ -115,19 +173,40 @@ solutions:
     concentration:
       value: '40'
       unit: G_PER_L
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
   - preferred_term: MnSO4·4H2O
     concentration:
       value: '2'
       unit: G_PER_L
+    term:
+      id: CHEBI:86358
+      label: manganese(II) sulfate tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86358
+      label: manganese(II) sulfate tetrahydrate
   - preferred_term: FeSO4·7H2O
     concentration:
       value: '2'
       unit: G_PER_L
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
   - preferred_term: NaCl
     concentration:
       value: '2'
       unit: G_PER_L
     term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
       id: CHEBI:26710
       label: sodium chloride
   - preferred_term: Distilled water
@@ -137,7 +216,19 @@ solutions:
     term:
       id: CHEBI:15377
       label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
   name: Salts solution
-notes: pH 6.0 Add 5 g/L CaCO3 and 15 g/L agar after the pH is adjusted for the solid
-  medium. Wako Pure Chemical Ind., Ltd., Osaka, Japan. Add a drop of 12 N HCl to 500
-  ml of the salts solution.
+notes: 'Source: NBRC Medium 881 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=881
+
+
+  NBRC lists GYP medium (pH 6) with glucose, Bacto Yeast Extract (Difco), Hipolypepton,
+  sodium acetate, Tween 80 solution, Salts solution, and distilled water at pH 6.0.
+  The solid medium receives 5 g/L CaCO3 and 15 g/L agar after pH adjustment.'
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=881

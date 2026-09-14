@@ -6,25 +6,43 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: add deionized water to
+- preferred_term: DI water
   concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: Fastidious Anaerobe Agar (acumedia)
+    value: '1.0'
+    unit: L
+  source: TOGO M2521
+  notes: TOGO M2521 lists 1000 ml deionized water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Fastidious Anaerobe Agar (Acumedia)
   concentration:
     value: '45.7'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  source: TOGO M2521
+  notes: TOGO M2521 lists 45.7 g Fastidious Anaerobe Agar (Acumedia) per liter.
+- preferred_term: Sterile defibrinated horse blood
+  concentration:
+    value: 5-10
+    unit: PERCENT_V_V
+  source: TOGO M2521
+  notes: TOGO M2521 instructs adding 5-10% sterile defibrinated horse blood after
+    autoclaving and cooling to 47 C.
+  term:
+    id: UBERON:0000178
+    label: blood
 media_term:
   preferred_term: TOGO Medium M2521
   term:
     id: TOGO:M2521
     label: Astidious Anaerobe Agar
-notes: 'Source: https://togomedium.org/medium/M2521
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1203.pdf'
+notes: 'TOGO M2521 lists the DSMZ Medium 1203 Fastidious Anaerobe Agar formulation:
+  45.7 g Acumedia Fastidious Anaerobe Agar brought to one liter with deionized water,
+  soaked, autoclaved at 121 C, cooled to 47 C, and supplemented with 5-10% sterile
+  defibrinated horse blood.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -41,3 +59,42 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Astidious Anaerobe Agar" to "astidious_anaerobe_agar"
     for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_literal_products_score40.py
+  action: RESOLVED_TOGO_LITERAL_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO literal product/additive graph
+  source: https://togomedium.org/medium/M2521; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1203.pdf
+  notes: 'TOGO M2521 lists the DSMZ Medium 1203 Fastidious Anaerobe Agar formulation:
+    45.7 g Acumedia Fastidious Anaerobe Agar brought to one liter with deionized water,
+    soaked, autoclaved at 121 C, cooled to 47 C, and supplemented with 5-10% sterile
+    defibrinated horse blood.'
+ph_range:
+  min: 7.0
+  max: 7.4
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Allow the agar powder to soak for 10 min, then swirl to mix.
+  duration: 10 minutes
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the mixed medium at 121 C for 15 min.
+- step_number: 3
+  action: COOL
+  description: Cool the sterilized medium to 47 C.
+  temperature:
+    value: 47.0
+    unit: CELSIUS
+- step_number: 4
+  action: MIX
+  description: Aseptically add 5-10% sterile defibrinated horse blood, mix well, and
+    pour plates.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2521
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1203.pdf

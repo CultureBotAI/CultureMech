@@ -221,6 +221,11 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_columbia_blood_score40.py
+  action: LINKED_COLUMBIA_BLOOD_SCORE40_SOURCE_DUPLICATE
+  changes: Linked score-40 Columbia/Blood Agar TOGO source duplicate
+  notes: Added or refreshed reciprocal source-duplicate link for bacterial/TOGO_M2362_Columbia_Blood_Agar.yaml.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_429_COLUMBIA_BLOOD_AGAR.yaml
   relationship: SOURCE_DUPLICATE
@@ -228,3 +233,8 @@ variant_children:
   name: columbia_blood_agar
   notes: Same ingredient and concentration signature; KOMODO record copied from the
     matching DSMZ medium source.
+- path: data/normalized_yaml/bacterial/TOGO_M2362_Columbia_Blood_Agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008948
+  name: columbia_blood_agar
+  notes: TOGO import of the same source-catalogue formulation.

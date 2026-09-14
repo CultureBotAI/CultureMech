@@ -22,6 +22,9 @@ ingredients:
     value: '9.52381'
     unit: G_PER_L
   notes: '[Collapsed 2 identical duplicates: 9.52381, 9.52381]'
+  term:
+    id: MICRO:0000178
+    label: Bacto peptone
 - preferred_term: Tryptic Digest of beef heart
   concentration:
     value: '2.85714'
@@ -61,10 +64,16 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  term:
+    id: FOODON:03315719
+    label: Casein peptone
 - preferred_term: Soy peptone
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315720
+    label: Soy peptone
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -125,4 +134,10 @@ curation_history:
     duplicate values written by cleanup_media_quality.py. Every merged part was the
     same value, so the pre-merge value is unambiguous and no source lookup was needed.
     Rows whose merged parts differ were left untouched.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_bacterial_score10_exact_terms_batch2.py
+  action: GROUNDED_BACTERIAL_SCORE10_EXACT_TERMS_BATCH2
+  changes: Grounded exact bacterial score-10 ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Bacto peptone, Casein peptone, Soy peptone.
 kg_microbe_match: mediadive.medium:687

@@ -92,10 +92,16 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315719
+    label: Casamino acids
 - preferred_term: Yeast extract (Oxoid)
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: FeCl2 solution (see Medium No. 187 )
   concentration:
     value: '1.0'
@@ -181,3 +187,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_jcm_score10_exact_terms.py
+  action: GROUNDED_JCM_SCORE10_EXACT_TERMS
+  changes: Grounded direct JCM score-10 ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Casamino acids (BD Difco), Yeast extract (Oxoid).

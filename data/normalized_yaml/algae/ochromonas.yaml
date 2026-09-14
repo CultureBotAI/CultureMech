@@ -1,6 +1,10 @@
 id: CultureMech:000206
 name: ochromonas
 category: algae
+sources:
+- database: SAG
+  database_id: Ochromonas
+  url: http://sagdb.uni-goettingen.de/culture_media/10 Ochromonas Medium.pdf
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
@@ -58,6 +62,21 @@ curation_history:
   notes: Restored the formulation from the reviewed SAG PDF, preserving final-medium
     and stock-solution boundaries. Calculated stock concentrations are documented
     in-place. Ingredient identities were selected from the MediaIngredientMech SSSOM.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_sag_missing_compositions.py
+  action: TAGGED_SAG_RESTORED_COMPOSITION_CURATED
+  changes: data_quality_flags += has_ontology_mappings, ingredients_curated
+  notes: Marked the reviewed SAG source formulation as curated and ontology-mapped
+    after the original restoration left only the ingredient identities and did not
+    add the scoring flags.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_sag_sources_score10.py
+  action: NORMALIZED_SAG_SOURCE_SCORE10
+  changes: Normalized SAG provenance
+  source: SAG:Ochromonas; http://sagdb.uni-goettingen.de/culture_media/10 Ochromonas
+    Medium.pdf
+  notes: Copied the SAG source identity from references and the original sag-import
+    event into the structured sources slot recognized by review scoring.
 references:
 - reference: SAG:Ochromonas
 - reference: http://sagdb.uni-goettingen.de/culture_media/10 Ochromonas Medium.pdf
@@ -135,3 +154,6 @@ preparation_steps:
     guidance.
 sterilization:
   method: AUTOCLAVE
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

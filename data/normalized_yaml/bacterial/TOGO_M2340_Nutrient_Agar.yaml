@@ -5,53 +5,69 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: MnSO4
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:86360
-    label: manganese(II) sulfate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86360
-    label: manganese(II) sulfate
-- preferred_term: Agar, if necessary
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Meat extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Peptone
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
+  source: TOGO M2340 / DSMZ Medium 1
+  notes: DSMZ Medium 1 lists 5 g/L Peptone.
+  term:
+    id: MICRO:0000178
+    label: Peptone
+- preferred_term: Meat extract
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  source: TOGO M2340 / DSMZ Medium 1
+  notes: DSMZ Medium 1 lists 3 g/L Meat extract; this generic complex extract is retained
+    without an ontology grounding.
+- preferred_term: MnSO4 x H2O
+  concentration:
+    value: '10.0'
+    unit: MG_PER_L
+  source: TOGO M2340 / DSMZ Medium 1
+  notes: DSMZ Medium 1 recommends adding 10 mg/L MnSO4 x H2O for Bacillus-strain sporulation.
+  term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+- preferred_term: Agar, if necessary
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: TOGO M2340 / DSMZ Medium 1
+  notes: DSMZ Medium 1 lists 15 g/L Agar, if necessary.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: TOGO M2340 / DSMZ Medium 1
+  notes: DSMZ Medium 1 lists 1000 ml Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M2340
   term:
     id: TOGO:M2340
     label: Nutrient Agar
-notes: 'Source: https://togomedium.org/medium/M2340
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf'
+notes: TOGO M2340 / DSMZ Medium 1 defines Nutrient Agar using DSMZ Medium 1. DSMZ
+  Medium 1 lists, per liter, 5 g Peptone, 3 g Meat extract, 15 g Agar if necessary,
+  and 1000 ml Distilled water. Adjust pH to 7.0. TOGO M2340 represents the source-recommended
+  Bacillus sporulation addition as 10 mg/L MnSO4 x H2O.
 applications:
 - Microbial cultivation
 curation_history:
@@ -85,3 +101,51 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2339_m2340_score15.py
+  action: RESOLVED_TOGO_M2339_M2340_SCORE15
+  source: https://togomedium.org/medium/M2340; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf
+  notes: TOGO M2340 / DSMZ Medium 1 defines Nutrient Agar using DSMZ Medium 1. DSMZ
+    Medium 1 lists, per liter, 5 g Peptone, 3 g Meat extract, 15 g Agar if necessary,
+    and 1000 ml Distilled water. Adjust pH to 7.0. TOGO M2340 represents the source-recommended
+    Bacillus sporulation addition as 10 mg/L MnSO4 x H2O. Corrected the imported water
+    and manganese unit artifacts, grounded the disclosed simple and protein-hydrolysate
+    components, kept Meat extract intentionally unmapped, and linked the record to
+    DSMZ Medium 1.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nutrient_ncg_nssm_score15.py
+  action: LINKED_TOGO_M2341_SOURCE_DUPLICATE
+  source: https://togomedium.org/medium/M2341; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf
+  notes: Linked TOGO M2341 as a source duplicate of the TOGO M2340 Bacillus-sporulation
+    Nutrient Agar formulation.
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 2
+  action: MIX
+  description: Add 10 mg/L MnSO4 x H2O for Bacillus-strain sporulation.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2340
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf
+parent_media:
+  path: data/normalized_yaml/bacterial/nutrient_agar.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:001297
+  name: nutrient_agar
+  notes: TOGO M2340 imports DSMZ Medium 1 with the source-recommended 10 mg/L MnSO4
+    x H2O addition for Bacillus-strain sporulation.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adds 10 mg/L MnSO4 x H2O for Bacillus-strain sporulation.
+variant_children:
+- path: data/normalized_yaml/bacterial/nutrient_agar_for_sporulation.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008929
+  name: nutrient_agar_for_sporulation
+  notes: TOGO M2341 and TOGO M2340 both represent the DSMZ Medium 1 Bacillus-sporulation
+    Nutrient Agar formulation with 10 mg/L MnSO4 x H2O.

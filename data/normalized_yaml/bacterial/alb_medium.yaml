@@ -5,64 +5,123 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_range:
+  min: 8.0
+  max: 9.0
+  notes: NBRC Medium 1063 lists pH 8-9.
+aeration: air containing 5% CO2
+incubation_atmosphere: AEROBIC
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Yeast extract
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: Agar (if needed)
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
 - preferred_term: Tryptone
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: CO2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
+  source: NBRC Medium 1063
+  notes: NBRC Medium 1063 lists 10.0 g/L tryptone.
   term:
-    id: CHEBI:16526
-    label: carbon dioxide
+    id: MICRO:0000182
+    label: tryptone
+  nutritional_roles:
+  - PROTEIN_SOURCE
+- preferred_term: Yeast extract
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: NBRC Medium 1063
+  notes: NBRC Medium 1063 lists 5.0 g/L yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
+  - VITAMIN_SOURCE
+- preferred_term: NaCl
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: NBRC Medium 1063
+  notes: NBRC Medium 1063 lists 5.0 g/L NaCl.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Na2CO3
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: NBRC Medium 1063
+  notes: NBRC Medium 1063 lists 2.0 g/L Na2CO3, sterilized separately by autoclaving
+    and added to the other ingredients.
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: NBRC Medium 1063
+  notes: NBRC Medium 1063 lists 1 L distilled water as 1000.0 ml/L.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: NBRC Medium 1063
+  notes: NBRC Medium 1063 lists 15.0 g/L agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve 10.0 g/L tryptone, 5.0 g/L yeast extract, 5.0 g/L NaCl, and
+    15.0 g/L agar if needed in 1000.0 ml/L distilled water.
+- step_number: 2
+  action: DISSOLVE
+  description: Dissolve 2.0 g/L Na2CO3 separately.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust the final ALB Medium to pH 8-9.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave the basal medium and the Na2CO3 solution separately.
+- step_number: 5
+  action: MIX
+  description: Aseptically add sterile Na2CO3 to the autoclaved basal medium.
+- step_number: 6
+  action: MIX
+  description: Use ALB Medium under air containing 5% CO2.
+sterilization:
+  method: AUTOCLAVE
+  notes: The basal medium and Na2CO3 solution are autoclaved separately.
 media_term:
   preferred_term: TOGO Medium M1830
   term:
     id: TOGO:M1830
     label: ALB Medium
-notes: 'Source: https://togomedium.org/medium/M1830
-
-  Original source: NBRC - NBRC_M1063
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1063'
+notes: 'TOGO M1830 imports NBRC Medium 1063 ALB Medium: 10.0 g/L tryptone, 5.0 g/L
+  yeast extract, 5.0 g/L NaCl, 2.0 g/L separately autoclaved Na2CO3, 1000.0 ml/L distilled
+  water, and 15.0 g/L agar if needed, with final pH 8-9 under air containing 5% CO2.'
+references:
+- reference: https://togomedium.org/medium/M1830
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1063
 applications:
 - Microbial cultivation
 curation_history:
@@ -108,12 +167,14 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-solutions:
-- preferred_term: Na2CO3*
-  composition: []
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
-  name: Unknown solution
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m1830_alb_score15.py
+  action: RESOLVED_TOGO_M1830_ALB_MEDIUM
+  source: https://togomedium.org/medium/M1830; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1063
+  notes: Verified TOGO M1830 against NBRC Medium 1063, grounded all direct components,
+    corrected distilled water to 1000.0 ml/L, converted the sodium carbonate solution
+    stub into separately autoclaved 2.0 g/L sodium carbonate, and moved the 5% CO2
+    gas phase out of the ingredient list.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

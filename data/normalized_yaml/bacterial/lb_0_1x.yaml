@@ -3,17 +3,25 @@ name: LB_0.1x
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: LB_0.1x
 ingredients:
 - preferred_term: Tryptone
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'CAS: 91079-40-2'
+  term:
+    id: MICRO:0000182
+    label: Tryptone
 - preferred_term: Yeast Extract
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'CAS: 232-387-9'
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Sodium Chloride
   concentration:
     value: '0.5'
@@ -23,7 +31,8 @@ ingredients:
     label: sodium chloride
   notes: 'CAS: 7647-14-5; MW: 58.44'
 description: 10x diluted Luria-Bertani broth
-notes: 'Source: FEBA media definitions'
+notes: CultureBotHT imports LB_0.1x as 1 g/L tryptone, 0.5 g/L yeast extract, and
+  0.5 g/L sodium chloride.
 category: bacterial
 sources:
 - database: CultureBotHT
@@ -42,8 +51,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_culturebotht_exact_score25.py
+  action: MARKED_CULTUREBOTHT_EXACT_SCORE25
+  changes: Marked exact sparse CultureBotHT formula as curated
+  source: CultureBotHT:LB_0.1x; https://github.com/CultureBotAI/CultureBotHT
+  notes: CultureBotHT imports LB_0.1x as 1 g/L tryptone, 0.5 g/L yeast extract, and
+    0.5 g/L sodium chloride.
 data_quality_flags:
-- has_unmapped_ingredients
+- ingredients_curated
+- has_ontology_mappings
 kg_microbe_match: mediadive.medium:74
 parent_media:
   path: data/normalized_yaml/bacterial/TOGO_M2314_LB_medium.yaml
@@ -56,3 +73,6 @@ variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
 - LB 0.1x decreases tryptone from 10 g/L to 1 g/L, yeast extract from 5 g/L to 0.5
   g/L, and sodium chloride from 10 g/L to 0.5 g/L.
+references:
+- reference: CultureBotHT:LB_0.1x
+- reference: https://github.com/CultureBotAI/CultureBotHT

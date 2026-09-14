@@ -3,33 +3,55 @@ name: k7_medium
 original_name: K7 MEDIUM
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1199
   term:
     id: mediadive.medium:1199
     label: K7 MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1199.pdf'
+notes: DSMZ Medium 1199 K7 MEDIUM lists 1.0 g/L each of glucose, yeast extract, and
+  peptone dissolved in 1000.0 ml/L distilled water.
 ingredients:
 - preferred_term: Glucose
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: DSMZ Medium 1199 K7 MEDIUM
+  notes: DSMZ Medium 1199 K7 MEDIUM lists 1.0 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
-  concentration:
-    value: '1'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
 - preferred_term: Yeast extract
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
+  source: DSMZ Medium 1199 K7 MEDIUM
+  notes: DSMZ Medium 1199 K7 MEDIUM lists 1.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Peptone
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
+  source: DSMZ Medium 1199 K7 MEDIUM
+  notes: DSMZ Medium 1199 K7 MEDIUM lists 1.0 g/L Peptone.
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 1199 K7 MEDIUM
+  notes: DSMZ Medium 1199 K7 MEDIUM lists 1000.0 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -55,10 +77,24 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_dsmz_1199_k7_score15.py
+  action: RESOLVED_DSMZ_1199_K7_SCORE15
+  source: https://mediadive.dsmz.de/medium/1199; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1199.pdf
+  notes: DSMZ Medium 1199 K7 MEDIUM lists 1.0 g/L each of glucose, yeast extract,
+    and peptone dissolved in 1000.0 ml/L distilled water. Added DSMZ's explicit distilled-water
+    volume and grounded yeast extract while leaving generic peptone ungrounded.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1199_K7_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003938
   name: k7_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1199; local ingredient
-    and concentration signatures match.
+  notes: KOMODO Medium 1199 explicitly cites DSMZ Medium 1199; its imported water
+    row is represented as variable because KOMODO reports null gram and molar amounts
+    for water.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://mediadive.dsmz.de/medium/1199
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1199.pdf

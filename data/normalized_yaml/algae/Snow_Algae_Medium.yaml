@@ -4,118 +4,380 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: Snow Algae Medium
+  term:
+    id: UTEX:snow-algae-medium
+    label: Snow Algae Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
+notes: UTEX prepares Snow Algae Medium at pH 5.1-5.3 from a defined freshwater salt
+  base with FE EDTA and Minor Nutrients added at source-stated volumes.
+ph_range:
+  min: 5.1
+  max: 5.3
 ingredients:
-- preferred_term: CaCl2•2H2O
+- preferred_term: dH2O
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: UTEX starts Snow Algae Medium with approximately 500 mL dH2O.
+- preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.03'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 0.5 g/100 mL dH2O; final 0.03 mM'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: C-3881
+  notes: UTEX adds 1 mL/L of a 0.5 g/100 mL dH2O stock, for 0.03 mM final.
 - preferred_term: NaNO3
   concentration:
     value: '0.29'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 2.5 g/100 mL dH2O; final 0.29 mM'
+  term:
+    id: CHEBI:63005
+    label: sodium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: BP360-500
+  notes: UTEX adds 1 mL/L of a 2.5 g/100 mL dH2O stock, for 0.29 mM final.
+  nutritional_roles:
+  - NITROGEN_SOURCE
 - preferred_term: NH4Cl
   concentration:
     value: '0.093'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 0.5 g/100 mL dH2O; final 0.093 mM'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: A 649-500
-- preferred_term: CaSO4•2H2O(Mallinckroft 4300)
+  notes: UTEX adds 1 mL/L of a 0.5 g/100 mL dH2O stock, for 0.093 mM final.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: CaSO4 x 2 H2O
   concentration:
     value: '0.023'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 0.4 g/100 mL dH2O; final 0.023 mM'
-- preferred_term: MgSO4•7H2O
+  term:
+    id: CHEBI:32583
+    label: calcium sulfate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32583
+    label: calcium sulfate dihydrate
+  supplier_catalog:
+    supplier_name: Mallinckroft
+    catalog_number: '4300'
+  notes: UTEX adds 1 mL/L of a 0.4 g/100 mL dH2O stock, for 0.023 mM final.
+- preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.02'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 0.5 g/100 mL dH2O; final 0.02 mM'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: '230391'
-- preferred_term: Na2SiO3•9H2O
+  notes: UTEX adds 1 mL/L of a 0.5 g/100 mL dH2O stock, for 0.02 mM final.
+  nutritional_roles:
+  - SULFUR_SOURCE
+  - TRACE_ELEMENT
+- preferred_term: Na2SiO3 x 9 H2O
   concentration:
     value: '0.007'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 0.2 g/100 mL dH2O; final 0.007 mM'
+  term:
+    id: CHEBI:132108
+    label: sodium silicate nonahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132108
+    label: sodium silicate nonahydrate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: '307815'
-- preferred_term: FE EDTA
-  concentration:
-    value: '250'
-    unit: ML_PER_L
-  notes: 'UTEX lists: amount 250 mL/L'
-- preferred_term: Minor Nutrients
-  concentration:
-    value: '10'
-    unit: ML_PER_L
-  notes: 'UTEX lists: amount 10 mL/L'
+  notes: UTEX adds 1 mL/L of a 0.2 g/100 mL dH2O stock, for 0.007 mM final.
+  nutritional_roles:
+  - TRACE_ELEMENT
 - preferred_term: K2HPO4
   concentration:
     value: '0.4'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 2 mL; stock 3.48 g/100 mL dH2O; final 0.4 mM'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: P 3786
+  notes: UTEX adds 2 mL of a 3.48 g/100 mL dH2O stock per liter, for 0.4 mM final.
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
 - preferred_term: KH2PO4
   concentration:
     value: '0.02'
     unit: MOLAR
-  notes: 'UTEX lists: amount 98 mL; stock 2.72 g/100 mL dH2O; final 0.02 M'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: P 0662
+  notes: UTEX adds 98 mL of a 2.72 g/100 mL dH2O stock per liter, for 0.02 M final.
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
+solutions:
+- preferred_term: FE EDTA
+  concentration:
+    value: '250'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX brings the combined Na2EDTA and iron solution to 1 L with dH2O.
+  - preferred_term: Na2EDTA x 2 H2O
+    concentration:
+      value: '0.66'
+      unit: G_PER_L
+    term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: ED255
+    notes: UTEX lists 0.66 g/L Na2EDTA x 2 H2O, for 1.7 mM final in the stock.
+    physicochemical_roles:
+    - CHELATOR
+  - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
+    concentration:
+      value: '0.7'
+      unit: G_PER_L
+    term:
+      id: CHEBI:76181
+      label: ferrous ammonium sulfate hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76181
+      label: ferrous ammonium sulfate hexahydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: F 1513
+    notes: UTEX lists 0.7 g/L Fe(NH4)2(SO4)2 x 6 H2O, for 1.7 mM final in the stock.
+    nutritional_roles:
+    - IRON_SOURCE
+    - TRACE_ELEMENT
+  notes: UTEX adds 250 mL FE EDTA per liter of Snow Algae Medium; final concentrations
+    are listed for the FE EDTA stock.
+- preferred_term: Minor Nutrients
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX starts Minor Nutrients with approximately 950 mL dH2O.
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.248'
+      unit: G_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+    supplier_catalog:
+      supplier_name: Baker
+      catalog_number: 0084
+    notes: UTEX lists 0.248 g/L H3BO3, for 1.01 mM final in the stock.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: MnSO4 x H2O
+    concentration:
+      value: '0.184'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86364
+      label: manganese(II) sulfate monohydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86364
+      label: manganese(II) sulfate monohydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: M8179
+    notes: UTEX lists 0.184 g/L MnSO4 x H2O, for 1.01 mM final in the stock.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.023'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: Z 0251
+    notes: UTEX lists 0.023 g/L ZnSO4 x 7 H2O, for 0.08 mM final in the stock.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: (NH4)6Mo7O24 x 4 H2O
+    concentration:
+      value: '0.007'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86244
+      label: hexaammonium heptamolybdate tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86244
+      label: hexaammonium heptamolybdate tetrahydrate
+    supplier_catalog:
+      supplier_name: Mallinckrodt
+      catalog_number: '3420'
+    notes: UTEX lists 0.007 g/L (NH4)6Mo7O24 x 4 H2O, for 0.01 mM final in the stock.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Co(NO3)2 x 6 H2O
+    concentration:
+      value: '0.012'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86214
+      label: cobalt(II) nitrate hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86214
+      label: cobalt(II) nitrate hexahydrate
+    supplier_catalog:
+      supplier_name: ACROS
+      catalog_number: 10026-22-9
+    notes: UTEX lists 0.012 g/L Co(NO3)2 x 6 H2O, for 0.04 mM final in the stock.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: KBr
+    concentration:
+      value: '0.015'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32030
+      label: potassium bromide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32030
+      label: potassium bromide
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: '449962'
+    notes: UTEX lists 0.015 g/L KBr, for 0.13 mM final in the stock.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: NiSO4(NH4)SO4 x 6 H2O
+    concentration:
+      value: '0.016'
+      unit: G_PER_L
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: '574988'
+    notes: UTEX lists 0.016 g/L NiSO4(NH4)SO4 x 6 H2O, for 0.09 mM final in the stock;
+      no exact CHEBI grounding is asserted for the source formula.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: VOSO4 x 2 H2O
+    concentration:
+      value: '0.0016'
+      unit: G_PER_L
+    term:
+      id: CHEBI:87009
+      label: vanadyl sulfate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:87009
+      label: vanadyl sulfate dihydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: '204862'
+    notes: UTEX lists 0.0016 g/L VOSO4 x 2 H2O, for 0.01 mM final in the stock.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Al2(SO4)3K2SO4 x 24 H2O
+    concentration:
+      value: '0.0376'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86465
+      label: potassium aluminium sulfate dodecahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86465
+      label: potassium aluminium sulfate dodecahydrate
+    notes: UTEX lists 0.0376 g/L Al2(SO4)3.K2SO4.24H2O, for 0.04 mM final in the stock.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  notes: UTEX adds 10 mL Minor Nutrients per liter of Snow Algae Medium; final concentrations
+    are listed for the Minor Nutrients stock.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: To approximately 500 mL dH2O, add each component in the UTEX order
+    while stirring continuously.
 - step_number: 2
   action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  description: Bring the total volume to 1 L with dH2O; pH is 5.1-5.3.
+  notes: UTEX lists optional solid Snow Algae Medium as 15 g agar per liter.
 - step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
+  action: AUTOCLAVE
+  description: Cover and autoclave medium.
 - step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
-- step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
+  action: STORE
+  description: Store at refrigerator temperature.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -154,7 +416,19 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_n20_snow_score35.py
+  action: RESOLVED_UTEX_N20_SNOW_SCORE35
+  changes: Grounded score-35 UTEX N/20 and Snow Algae components
+  source: https://utex.org/products/snow-algae-medium
+  notes: UTEX prepares Snow Algae Medium at pH 5.1-5.3 from a defined freshwater salt
+    base with FE EDTA and Minor Nutrients added at source-stated volumes.
 references:
 - reference: UTEX:snow-algae-medium
 - reference: https://utex.org/products/snow-algae-medium
+- reference: https://utex.org/products/fe-edta
+- reference: https://utex.org/products/minor-nutrients
 original_name: Snow Algae Medium
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

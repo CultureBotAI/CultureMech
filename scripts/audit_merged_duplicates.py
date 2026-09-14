@@ -59,6 +59,7 @@ MERGE_NOTE = re.compile(r"\[(?:Merged|Collapsed) (\d+) (?:identical )?duplicates
 
 FINDINGS = ("IDENTICAL_PARTS", "DIFFERING_PARTS", "COEXISTING_ROW", "REPEATED_INGREDIENT")
 HEADER = ["finding", "file_path", "record_id", "ingredient", "value", "unit", "parts", "detail"]
+IngredientKey = tuple[str, str]
 
 
 def merged_parts(notes: Any) -> list[Decimal] | None:
@@ -104,20 +105,21 @@ def classify(ingredient: dict[str, Any]) -> tuple[str, list[Decimal]] | None:
 
 def _collect(
     items: Any,
-    by_name: dict[tuple[str, str], list[dict[str, Any]]],
-    merged_names: set[tuple[str, str]],
     rows: list[dict[str, str]],
     stats: Counter,
     relative: str,
     identifier: str,
 ) -> None:
-    """Walk one record's ingredient tree, accumulating findings.
+    """Walk one sibling ingredient list, accumulating findings.
 
     Module-level and explicitly parameterised rather than a closure inside
     `scan`'s loop: a closure over the loop variables is correct only while the
     call stays inside the same iteration, which is precisely the property that
     quietly stops holding when someone defers or parallelises it later.
     """
+    by_name: dict[IngredientKey, list[dict[str, Any]]] = defaultdict(list)
+    merged_names: set[IngredientKey] = set()
+
     for ingredient in items or []:
         if not isinstance(ingredient, dict):
             continue
@@ -147,9 +149,81 @@ def _collect(
                     ),
                 }
             )
-        _collect(
-            ingredient.get("composition"), by_name, merged_names, rows, stats, relative, identifier
+        _collect(ingredient.get("composition"), rows, stats, relative, identifier)
+
+    _append_repeated_findings(by_name, merged_names, rows, stats, relative, identifier)
+
+
+def _append_repeated_findings(
+    by_name: dict[IngredientKey, list[dict[str, Any]]],
+    merged_names: set[IngredientKey],
+    rows: list[dict[str, str]],
+    stats: Counter,
+    relative: str,
+    identifier: str,
+) -> None:
+    """Report duplicate component names within one sibling list."""
+
+    # Repeated rows that carry NO merge note. `ucm.yaml` (#283) lists eight
+    # ingredients twice at 1000x/100x apart — stock strength beside final
+    # concentration — and never went through the merge, so COEXISTING_ROW
+    # cannot see it. Reported whatever the ratio: two rows for one
+    # ingredient in one recipe is a question either way.
+    for key in sorted(by_name):
+        if key in merged_names or len(by_name[key]) < 2:
+            continue
+        values = [_decimal((i.get("concentration") or {}).get("value")) for i in by_name[key]]
+        numeric = [v for v in values if v is not None and v > 0]
+        if len(numeric) < 2:
+            continue
+        stats["REPEATED_INGREDIENT"] += 1
+        ratio = max(numeric) / min(numeric)
+        rows.append(
+            {
+                "finding": "REPEATED_INGREDIENT",
+                "file_path": relative,
+                "record_id": identifier,
+                "ingredient": key[0],
+                "value": ";".join(str(v) for v in values),
+                "unit": key[1],
+                "parts": "",
+                "detail": (
+                    f"{len(by_name[key])} rows name this ingredient in one record, "
+                    f"ratio {ratio:g}x"
+                    + (
+                        " — same value listed twice"
+                        if ratio == 1
+                        else (
+                            " — a power of ten suggests stock strength beside a final "
+                            "concentration"
+                            if ratio in (Decimal(10), Decimal(100), Decimal(1000))
+                            else ""
+                        )
+                    )
+                ),
+            }
         )
+
+    for key in sorted(merged_names):
+        if len(by_name[key]) > 1:
+            stats["COEXISTING_ROW"] += 1
+            rows.append(
+                {
+                    "finding": "COEXISTING_ROW",
+                    "file_path": relative,
+                    "record_id": identifier,
+                    "ingredient": key[0],
+                    "value": ";".join(
+                        str((i.get("concentration") or {}).get("value")) for i in by_name[key]
+                    ),
+                    "unit": key[1],
+                    "parts": "",
+                    "detail": (
+                        f"{len(by_name[key])} rows name this ingredient in one record, "
+                        f"one of them a merge survivor — a consumer double-counts"
+                    ),
+                }
+            )
 
 
 def scan(records_dir: Path) -> tuple[list[dict[str, str]], Counter]:
@@ -164,71 +238,8 @@ def scan(records_dir: Path) -> tuple[list[dict[str, str]], Counter]:
         relative = str(path.relative_to(REPO_ROOT))
         identifier = str(record.get("id") or "")
 
-        by_name: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
-        merged_names: set[tuple[str, str]] = set()
         for section in ("ingredients", "solutions"):
-            _collect(record.get(section), by_name, merged_names, rows, stats, relative, identifier)
-
-        # Repeated rows that carry NO merge note. `ucm.yaml` (#283) lists eight
-        # ingredients twice at 1000x/100x apart — stock strength beside final
-        # concentration — and never went through the merge, so COEXISTING_ROW
-        # cannot see it. Reported whatever the ratio: two rows for one
-        # ingredient in one recipe is a question either way.
-        for key in sorted(by_name):
-            if key in merged_names or len(by_name[key]) < 2:
-                continue
-            values = [_decimal((i.get("concentration") or {}).get("value")) for i in by_name[key]]
-            numeric = [v for v in values if v is not None and v > 0]
-            if len(numeric) < 2:
-                continue
-            stats["REPEATED_INGREDIENT"] += 1
-            ratio = max(numeric) / min(numeric)
-            rows.append(
-                {
-                    "finding": "REPEATED_INGREDIENT",
-                    "file_path": relative,
-                    "record_id": identifier,
-                    "ingredient": key[0],
-                    "value": ";".join(str(v) for v in values),
-                    "unit": key[1],
-                    "parts": "",
-                    "detail": (
-                        f"{len(by_name[key])} rows name this ingredient in one record, "
-                        f"ratio {ratio:g}x"
-                        + (
-                            " — same value listed twice"
-                            if ratio == 1
-                            else (
-                                " — a power of ten suggests stock strength beside a final "
-                                "concentration"
-                                if ratio in (Decimal(10), Decimal(100), Decimal(1000))
-                                else ""
-                            )
-                        )
-                    ),
-                }
-            )
-
-        for key in sorted(merged_names):
-            if len(by_name[key]) > 1:
-                stats["COEXISTING_ROW"] += 1
-                rows.append(
-                    {
-                        "finding": "COEXISTING_ROW",
-                        "file_path": relative,
-                        "record_id": identifier,
-                        "ingredient": key[0],
-                        "value": ";".join(
-                            str((i.get("concentration") or {}).get("value")) for i in by_name[key]
-                        ),
-                        "unit": key[1],
-                        "parts": "",
-                        "detail": (
-                            f"{len(by_name[key])} rows name this ingredient in one record, "
-                            f"one of them a merge survivor — a consumer double-counts"
-                        ),
-                    }
-                )
+            _collect(record.get(section), rows, stats, relative, identifier)
     return rows, stats
 
 

@@ -264,46 +264,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-variant_children:
-- path: data/normalized_yaml/bacterial/anaerocolumna_medium.yaml
-  relationship: SOURCE_DUPLICATE
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_860_anaerocolumna_score10.py
+  action: RESOLVED_KOMODO_860_ANAEROCOLUMNA_TOPOLOGY
+  changes: Linked under DSMZ Medium 860 as STRAIN_SPECIFIC_VARIANT
+  source: KOMODO Medium 860.1
+  notes: KOMODO Medium 860.1 applies Anaerocolumna medium to DSM 12503.
+parent_media:
+  path: data/normalized_yaml/bacterial/anaerocolumna_medium.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:002019
   name: anaerocolumna_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_12504.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006682
-  name: for_dsm_12504
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_12505.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006683
-  name: for_dsm_12505
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_13105.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006684
-  name: for_dsm_13105
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_13106_and_dsm_23801.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006685
-  name: for_dsm_13106_and_dsm_23801
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_13116.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006686
-  name: for_dsm_13116
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/hesp1_sr1_tmc4_lup_medium.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006687
-  name: hesp1_sr1_tmc4_lup_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 860.1 applies Anaerocolumna medium to DSM 12503.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
+variant_modifications:
+- KOMODO Medium 860.1 applies Anaerocolumna medium to DSM 12503.
+data_quality_flags:
+- ingredients_curated

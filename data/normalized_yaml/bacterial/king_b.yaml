@@ -4,15 +4,68 @@ original_name: King B
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: public Medium P3
   term:
     id: mediadive.medium:P3
     label: King B
-notes: 'Source: public'
-ingredients: []
+notes: MediaDive public Medium P3 provides King B as a 1 L solid agar recipe at pH
+  7.2.
+ingredients:
+- preferred_term: K2HPO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  source: MediaDive public Medium P3
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  source: MediaDive public Medium P3
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: Proteose peptone no. 3
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  source: MediaDive public Medium P3
+  term:
+    id: MICRO:0000180
+    label: proteose peptone
+- preferred_term: Glycerol
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  source: MediaDive public Medium P3
+  term:
+    id: CHEBI:17754
+    label: glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
+    label: glycerol
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  source: MediaDive public Medium P3
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 applications:
 - Microbial cultivation
 curation_history:
@@ -38,5 +91,15 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_mediadive_public_score30.py
+  action: RESOLVED_MEDIADIVE_PUBLIC_SCORE30
+  changes: Resolved score-30 public MediaDive placeholder graph
+  source: https://www.bacmedia.dsmz.de/medium/P3
+  notes: MediaDive public Medium P3 provides King B as a 1 L solid agar recipe at
+    pH 7.2.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.bacmedia.dsmz.de/medium/P3

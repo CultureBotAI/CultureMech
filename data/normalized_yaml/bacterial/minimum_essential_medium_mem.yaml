@@ -10,16 +10,15 @@ media_term:
   term:
     id: mediadive.medium:1638
     label: Minimum Essential Medium (MEM)
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1638.pdf'
+notes: DSMZ Medium 1638 lists MEM (1x), Gibco 31095-029, without a disclosed amount
+  or internal formulation.
 ingredients:
-- preferred_term: MEM-Medium
+- preferred_term: MEM (1x) Gibco 31095-029
   concentration:
-    value: '1'
-    unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: Cultivation of cell lines like DH82 (canine macrophage; ATCC CRL-10389)
+    value: variable
+    unit: VARIABLE
+  source: DSMZ Medium 1638
+  notes: DSMZ Medium 1638 lists MEM (1x), Gibco 31095-029, without stating an amount.
 applications:
 - Microbial cultivation
 curation_history:
@@ -36,3 +35,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Minimum Essential Medium (MEM)" to "minimum_essential_medium_mem"
     for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_dsmz_products_score40.py
+  action: RESOLVED_DSMZ_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 DSMZ product graph
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1638.pdf
+  notes: DSMZ Medium 1638 lists MEM (1x), Gibco 31095-029, without a disclosed amount
+    or internal formulation.
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1638.pdf

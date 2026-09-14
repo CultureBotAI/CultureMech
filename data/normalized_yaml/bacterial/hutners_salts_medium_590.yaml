@@ -6,27 +6,212 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2110 | DSMZ Medium: 2110
-  (mediadive.medium:2110) | Aerobic: No | SubMedium: Yes'
+notes: KOMODO 2110 records the Hutner's salts stock from DSMZ/MediaDive Medium 590.
+  DSMZ Medium 590 defines Hutner's salts as 10.0 g/L nitrilotriacetic acid, 29.7 g/L
+  MgSO4 x 7 H2O, 3.335 g/L CaCl2 x 2 H2O, 9.25 mg/L (NH4)6Mo7O24 x 4 H2O, 99.0 mg/L
+  FeSO4 x 7 H2O, 50.0 ml/L Metals 44, and 950.0 ml/L distilled water adjusted to pH
+  6.8.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve nitrilotriacetic acid.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 with about 7.3 g KOH.
+- step_number: 3
+  action: MIX
+  description: Dissolve MgSO4, CaCl2, ammonium molybdate, and FeSO4 separately.
+- step_number: 4
+  action: MIX
+  description: Combine the dissolved salts with 50.0 ml/L Metals 44.
+- step_number: 5
+  action: ADJUST_PH
+  description: Adjust the final Hutner's salts stock to pH 6.8 with NaOH or H2SO4.
+solutions:
+- preferred_term: '"Metals 44"'
+  concentration:
+    value: '50.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 590 Hutner's salts
+  notes: DSMZ Medium 590 Hutner's salts adds 50.0 ml/L Metals 44.
+  composition:
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    source: DSMZ Medium 590 Metals 44
+    notes: DSMZ Medium 590 Metals 44 lists 1000.0 ml/L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: Na-EDTA
+    concentration:
+      value: '250.0'
+      unit: MG_PER_L
+    source: DSMZ Medium 590 Metals 44
+    notes: DSMZ Medium 590 Metals 44 lists 250.0 mg/L Na-EDTA.
+    term:
+      id: CHEBI:64734
+      label: EDTA disodium salt (anhydrous)
+    mediaingredientmech_chebi_term:
+      id: CHEBI:64734
+      label: EDTA disodium salt (anhydrous)
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '1095.0'
+      unit: MG_PER_L
+    source: DSMZ Medium 590 Metals 44
+    notes: DSMZ Medium 590 Metals 44 lists 1095.0 mg/L ZnSO4 x 7 H2O.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+  - preferred_term: FeSO4 x 7 H2O
+    concentration:
+      value: '500.0'
+      unit: MG_PER_L
+    source: DSMZ Medium 590 Metals 44
+    notes: DSMZ Medium 590 Metals 44 lists 500.0 mg/L FeSO4 x 7 H2O.
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+  - preferred_term: MnSO4 x H2O
+    concentration:
+      value: '154.0'
+      unit: MG_PER_L
+    source: DSMZ Medium 590 Metals 44
+    notes: DSMZ Medium 590 Metals 44 lists 154.0 mg/L MnSO4 x H2O.
+    term:
+      id: CHEBI:86364
+      label: manganese(II) sulfate monohydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86364
+      label: manganese(II) sulfate monohydrate
+  - preferred_term: CuSO4 x 5 H2O
+    concentration:
+      value: '39.2'
+      unit: MG_PER_L
+    source: DSMZ Medium 590 Metals 44
+    notes: DSMZ Medium 590 Metals 44 lists 39.2 mg/L CuSO4 x 5 H2O.
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+  - preferred_term: Co(NO3)2 x 6 H2O
+    concentration:
+      value: '24.8'
+      unit: MG_PER_L
+    source: DSMZ Medium 590 Metals 44
+    notes: DSMZ Medium 590 Metals 44 lists 24.8 mg/L Co(NO3)2 x 6 H2O.
+    term:
+      id: CHEBI:86214
+      label: cobalt dinitrate hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86214
+      label: cobalt dinitrate hexahydrate
+  - preferred_term: Na2B4O7 x 10 H2O
+    concentration:
+      value: '17.7'
+      unit: MG_PER_L
+    source: DSMZ Medium 590 Metals 44
+    notes: DSMZ Medium 590 Metals 44 lists 17.7 mg/L Na2B4O7 x 10 H2O.
+    term:
+      id: CHEBI:131366
+      label: disodium tetraborate decahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131366
+      label: disodium tetraborate decahydrate
+  name: '"Metals 44"'
+  preparation_notes: Dissolve EDTA and add a few drops of concentrated H2SO4 to retard
+    precipitation of the heavy metal ions.
 media_term:
   preferred_term: KOMODO Medium 2110
   term:
     id: komodo.medium:2110
     label: Hutner's salts (medium 590)
 ingredients:
-- preferred_term: NaOH
-  notes: Extracted from recipe notes (pH buffer)
-  data_quality_flags:
-  - extracted_from_notes
+- preferred_term: Distilled water
   concentration:
-    value: variable
-    unit: VARIABLE
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32145
-    label: sodium hydroxide
+    value: '950.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 590 Hutner's salts
+  notes: DSMZ Medium 590 Hutner's salts lists 950.0 ml/L Distilled water.
   term:
-    id: CHEBI:32145
-    label: sodium hydroxide
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Nitrilotriacetic acid
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: DSMZ Medium 590 Hutner's salts
+  notes: DSMZ Medium 590 Hutner's salts lists 10.0 g/L Nitrilotriacetic acid.
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '29.7'
+    unit: G_PER_L
+  source: DSMZ Medium 590 Hutner's salts
+  notes: DSMZ Medium 590 Hutner's salts lists 29.7 g/L MgSO4 x 7 H2O.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '3.335'
+    unit: G_PER_L
+  source: DSMZ Medium 590 Hutner's salts
+  notes: DSMZ Medium 590 Hutner's salts lists 3.335 g/L CaCl2 x 2 H2O.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '9.25'
+    unit: MG_PER_L
+  source: DSMZ Medium 590 Hutner's salts
+  notes: DSMZ Medium 590 Hutner's salts lists 9.25 mg/L (NH4)6Mo7O24 x 4 H2O.
+  term:
+    id: CHEBI:91249
+    label: ammonium molybdate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91249
+    label: ammonium molybdate
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '99.0'
+    unit: MG_PER_L
+  source: DSMZ Medium 590 Hutner's salts
+  notes: DSMZ Medium 590 Hutner's salts lists 99.0 mg/L FeSO4 x 7 H2O.
+  term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
 applications:
 - Microbial cultivation
 curation_history:
@@ -61,3 +246,20 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_komodo_2110_hutners_salts_score15.py
+  action: RESOLVED_KOMODO_2110_HUTNERS_SALTS_SCORE15
+  source: https://mediadive.dsmz.de/medium/590; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium590.pdf
+  notes: KOMODO 2110 records the Hutner's salts stock from DSMZ/MediaDive Medium 590.
+    DSMZ Medium 590 defines Hutner's salts as 10.0 g/L nitrilotriacetic acid, 29.7
+    g/L MgSO4 x 7 H2O, 3.335 g/L CaCl2 x 2 H2O, 9.25 mg/L (NH4)6Mo7O24 x 4 H2O, 99.0
+    mg/L FeSO4 x 7 H2O, 50.0 ml/L Metals 44, and 950.0 ml/L distilled water adjusted
+    to pH 6.8. Replaced the NaOH-only KOMODO note extraction with the complete DSMZ
+    Hutner's salts stock, nested the Metals 44 stock, and grounded all quantified
+    chemical components.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://mediadive.dsmz.de/medium/590
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium590.pdf

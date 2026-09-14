@@ -7,14 +7,15 @@ composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+  concentration:
+    value: 1 N
+    unit: VARIABLE
+  source: TOGO Medium M345
+  notes: TOGO lists 1 N H2SO4 for final pH adjustment. Normality is retained verbatim
+    because the schema has no normality unit.
   term:
     id: CHEBI:26836
     label: sulfuric acid
-  concentration:
-    value: variable
-    unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:26836
     label: sulfuric acid
@@ -23,11 +24,8 @@ media_term:
   term:
     id: TOGO:M345
     label: Thermococcus Medium (pH 6.0)
-notes: 'Source: https://togomedium.org/medium/M345
-
-  Original source: JCM - JCM_M350
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=350'
+notes: TOGO M345 uses one liter of TOGO M273 Thermococcus Medium and readjusts the
+  reduced medium to pH 6.0 with 1.0 N H2SO4.
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,11 +72,42 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_archaea_ph_wrappers_score20.py
+  action: RESOLVED_ARCHAEA_PH_WRAPPER_SCORE20
+  changes: Resolved archaeal pH parent-medium wrapper
+  source: https://togomedium.org/medium/M345
+  notes: Readjusts TOGO M273 Thermococcus Medium to pH 6.0 with 1.0 N H2SO4 after
+    reduction.
 solutions:
 - preferred_term: Thermococcus medium (see Medium [M273])
   composition: []
-  notes: Cross-reference to Medium M273
   concentration:
     value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    unit: L
+  notes: TOGO M345 uses one liter of TOGO M273 Thermococcus Medium as the base medium.
+  culturemech_term:
+    id: CultureMech:009290
+    label: Thermococcus Medium
+ph_value: 6.0
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use one liter of Thermococcus Medium from TOGO M273 and, after reduction,
+    readjust to pH 6.0 with 1.0 N H2SO4.
+parent_media:
+  path: data/normalized_yaml/archaea/TOGO_M273_Thermococcus_Medium.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:009290
+  name: thermococcus_medium
+  notes: TOGO M345 uses TOGO M273 Thermococcus Medium and readjusts the reduced medium
+    to pH 6.0 with 1.0 N H2SO4.
+variant_relationship: PH_VARIANT
+variant_modifications:
+- Readjusts TOGO M273 Thermococcus Medium to pH 6.0 with 1.0 N H2SO4 after reduction.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M345
+- reference: https://togomedium.org/medium/M273

@@ -5,13 +5,14 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
 - preferred_term: Distilled water
   concentration:
     value: '233'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    unit: ML_PER_L
+  source: TOGO M1005
+  notes: TOGO M1005 lists 233 ml/L Distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -22,12 +23,17 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: agar
+  source: TOGO M1005
+  notes: TOGO M1005 lists 2 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Agar
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M1005
+  notes: TOGO M1005 lists 20 g/L Agar.
   term:
     id: CHEBI:2509
     label: agar
@@ -38,17 +44,21 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M1005
+  notes: TOGO M1005 lists 10 g/L Peptone (Oxoid).
+  term:
+    id: MICRO:0000178
+    label: peptone
 media_term:
   preferred_term: TOGO Medium M1005
   term:
     id: TOGO:M1005
     label: Modified Growth Medium With 23% Total Salt Concentration
-notes: 'Source: https://togomedium.org/medium/M1005
-
-  Original source: JCM - JCM_M956-2
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=956'
+notes: TOGO M1005 records JCM_M956-2 Modified Growth Medium With 23% Total Salt Concentration
+  with 233 ml/L distilled water, 2 g/L yeast extract, 10 g/L Peptone (Oxoid), 767
+  ml/L MDS salt water from TOGO M578, 20 g/L agar, and final adjustment to pH 7.0.
+  JCM Medium 574 defines MDS salt water as NaCl, MgCl2 x 6H2O, MgSO4 x 7H2O, KCl,
+  and 1 M CaCl2 solution brought to 1 L and adjusted to pH 7.5 with 1 M Tris base.
 applications:
 - Microbial cultivation
 curation_history:
@@ -91,11 +101,112 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m1004_m1005_score15.py
+  action: RESOLVED_TOGO_M1004_M1005_SCORE15
+  source: https://togomedium.org/medium/M1005; https://togomedium.org/medium/M578;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=956; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=574
+  notes: TOGO M1005 records JCM_M956-2 Modified Growth Medium With 23% Total Salt
+    Concentration with 233 ml/L distilled water, 2 g/L yeast extract, 10 g/L Peptone
+    (Oxoid), 767 ml/L MDS salt water from TOGO M578, 20 g/L agar, and final adjustment
+    to pH 7.0. JCM Medium 574 defines MDS salt water as NaCl, MgCl2 x 6H2O, MgSO4
+    x 7H2O, KCl, and 1 M CaCl2 solution brought to 1 L and adjusted to pH 7.5 with
+    1 M Tris base.
 solutions:
-- preferred_term: MDS salt water (see Medium [M578])
-  composition: []
-  notes: Cross-reference to Medium M578
+- preferred_term: MDS salt water
   concentration:
     value: '767'
-    unit: G_PER_L
-  name: Unknown solution
+    unit: ML_PER_L
+  source: TOGO M1005
+  notes: TOGO M1005 adds 767 ml/L MDS salt water from TOGO M578/JCM 574.
+  composition:
+  - preferred_term: NaCl
+    concentration:
+      value: '240.0'
+      unit: G_PER_L
+    source: JCM Medium 574
+    notes: JCM Medium 574 prints this component in its MDS salt-water stock.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: MgCl2 x 6H2O
+    concentration:
+      value: '30.0'
+      unit: G_PER_L
+    source: JCM Medium 574
+    notes: JCM Medium 574 prints this component in its MDS salt-water stock.
+    term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+  - preferred_term: MgSO4 x 7H2O
+    concentration:
+      value: '35.0'
+      unit: G_PER_L
+    source: JCM Medium 574
+    notes: JCM Medium 574 prints this component in its MDS salt-water stock.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: KCl
+    concentration:
+      value: '7.0'
+      unit: G_PER_L
+    source: JCM Medium 574
+    notes: JCM Medium 574 prints this component in its MDS salt-water stock.
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+  - preferred_term: 1 M CaCl2 solution
+    concentration:
+      value: '5.0'
+      unit: ML_PER_L
+    source: JCM Medium 574
+    notes: JCM Medium 574 adds 5 ml/L 1 M CaCl2 solution to MDS salt water.
+    term:
+      id: CHEBI:3312
+      label: calcium dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:3312
+      label: calcium dichloride
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 574
+    notes: JCM Medium 574 prints this component in its MDS salt-water stock.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  preparation_notes: JCM Medium 574 brings the MDS salt water stock to 1.0 L with
+    distilled water and adjusts it to pH 7.5 with 1 M Tris base.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix distilled water, yeast extract, agar, Peptone (Oxoid), and MDS
+    salt water thoroughly.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust TOGO M1005 to pH 7.0.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1005
+- reference: https://togomedium.org/medium/M578
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=956
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=574

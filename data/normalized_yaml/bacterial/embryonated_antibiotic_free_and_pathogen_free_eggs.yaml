@@ -7,16 +7,20 @@ composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Whole egg
-  notes: 'Role: Nutrient source; Properties: Undefined component'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M2275
+  notes: TOGO M2275 lists whole egg as the cultivation substrate without a per-liter
+    amount.
 media_term:
   preferred_term: TOGO Medium M2275
   term:
     id: TOGO:M2275
     label: Embryonated, antibiotic-free, and pathogen-free eggs
-notes: 'Source: https://togomedium.org/medium/M2275'
+notes: TOGO M2275 records C. burnetii propagated in embryonated, antibiotic-free,
+  pathogen-free eggs incubated for 9 days at 37 C and 98% humidity with continuous
+  rocking.
 applications:
 - Microbial cultivation
 curation_history:
@@ -41,3 +45,24 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_togo_eggs_blood_yem_score40.py
+  action: RESOLVED_TOGO_EGGS_BLOOD_YEM_SCORE40
+  changes: Resolved cached score-40 TOGO egg, blood agar, or YEM row
+  source: https://togomedium.org/medium/M2275
+  notes: TOGO M2275 records C. burnetii propagated in embryonated, antibiotic-free,
+    pathogen-free eggs incubated for 9 days at 37 C and 98% humidity with continuous
+    rocking.
+temperature_value: 37.0
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Inoculate embryonated, antibiotic-free, pathogen-free eggs.
+- step_number: 2
+  action: MIX
+  description: Incubate for 9 days at 37 C and 98% humidity with continuous rocking.
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2275

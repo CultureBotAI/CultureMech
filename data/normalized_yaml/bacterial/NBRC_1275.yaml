@@ -6,6 +6,12 @@ description: 1275. NBRC 1274.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: NBRC Medium 1274
+  term:
+    id: nbrc.medium:1274
+    label: NBRC Medium 1274
 ingredients:
 - preferred_term: NaCl
   concentration:
@@ -25,6 +31,9 @@ ingredients:
   concentration:
     value: '0.14'
     unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -40,6 +49,9 @@ ingredients:
   concentration:
     value: '4.2'
     unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
 - preferred_term: KCl
   concentration:
     value: '0.33'
@@ -51,10 +63,16 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  term:
+    id: CHEBI:76181
+    label: Fe(NH4)2(SO4)2 x 6 H2O
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Trace elements solution*
   concentration:
     value: '10'
@@ -74,6 +92,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  term:
+    id: CHEBI:33403
+    label: elemental sulfur
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -85,6 +106,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -94,14 +118,30 @@ ingredients:
     label: water
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  action: MIX
+  description: Mix ingredients except for vitamin solution, sulfur, and Na2S·9H2O.
 - step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
+  action: ALIQUOT
+  description: Dispense the medium into culture vessels under a stream of N2/CO2 (80/20)
+    and seal with butyl rubber stoppers.
 - step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 minutes.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Separately neutralize and autoclave Na2S·9H2O as a 5% solution under
+    N2.
+- step_number: 5
+  action: FILTER_STERILIZE
+  description: Filter-sterilize the vitamin solution.
+- step_number: 6
+  action: AUTOCLAVE
+  description: Sterilize sulfur by autoclaving for 60 minutes at 105 C on each of
+    3 successive days.
+- step_number: 7
+  action: MIX
+  description: Before inoculation, aseptically and anaerobically add vitamin solution,
+    sulfur, and Na2S·9H2O.
 curation_history:
 - timestamp: '2026-02-20T00:22:36.048069Z'
   curator: nbrc-import
@@ -144,6 +184,12 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1274
+  notes: Preserved the recovered NBRC Medium 1274 composition table.
 solutions:
 - preferred_term: Trace elements solution
   composition:
@@ -167,6 +213,9 @@ solutions:
     concentration:
       value: '0.1'
       unit: G_PER_L
+    term:
+      id: CHEBI:86158
+      label: CaCl2 x 2 H2O
   - preferred_term: ZnCl2
     concentration:
       value: '0.1'
@@ -290,11 +339,15 @@ solutions:
       id: CHEBI:15377
       label: water
   name: Vitamin solution
-notes: Mix ingredients except for vitamin solution, sulfur, and Na2S·9H2O. Dispense
-  the medium into suitable culture vessels under a stream of N2/CO2 (80/20), seal
-  with butyl rubber stoppers, and autoclave at 121°C for 15 min. Separately neutralize
-  and autoclave Na2S·9H2O (5% solution) under N2 atmosphere. Sterilize vitamin solution
-  by filtration. Sulfur is sterilized separately by autoclaving for 60 min at 105°C
-  on each of 3 successive days. Prior to inoculation, aseptically and anaerobically
-  add vitamin, sulfur, and Na2S·9H2O. Final pH is 6.8. First dissolve nitrilotriacetic
-  acid and adjust pH to 6.5 with NaOH, and then add minerals. Final pH is 7.0.
+notes: 'Source: NBRC Medium 1274 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1274
+
+
+  The NBRC Modified MJYS medium table lists final pH 6.8, two nested stock solutions,
+  separate filtration of the vitamin solution, separate neutralization and autoclaving
+  of Na2S, and tyndallization of sulfur before inoculation.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1274

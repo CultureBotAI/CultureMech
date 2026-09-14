@@ -4,106 +4,112 @@ term:
   id: mediadive.solution:4801
   label: Main sol. J837
 composition:
-- preferred_term: Sea Salt
+- preferred_term: Sea salts (Sigma)
   concentration:
-    value: '34.7567'
+    value: '35.0'
     unit: G_PER_L
-  term:
-    id: mediadive.compound:423
-    label: Sea Salt
-- preferred_term: Yeast extract
+  source: MediaDive solution 4801 / JCM Medium 837
+  notes: MediaDive solution 4801 / JCM Medium 837 lists 35.0 g/L Sea salts (Sigma).
+- preferred_term: Wolfe's mineral elixir
   concentration:
-    value: '0.993049'
+    value: '1.0'
+    unit: ML_PER_L
+  source: MediaDive solution 4801 / JCM Medium 837
+  notes: MediaDive solution 4801 / JCM Medium 837 lists 1.0 ml/L Wolfe's mineral elixir.
+  culturemech_term:
+    id: CultureMech:013242
+    label: Wolfe's mineral elixir
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '1.0'
     unit: G_PER_L
+  source: MediaDive solution 4801 / JCM Medium 837
+  notes: MediaDive solution 4801 / JCM Medium 837 lists 1.0 g/L Yeast extract (BD-Difco).
   term:
-    id: mediadive.compound:16
+    id: FOODON:03315426
     label: Yeast extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
+  - VITAMIN_SOURCE
 - preferred_term: Resazurin
   concentration:
-    value: '0.000496524'
-    unit: G_PER_L
+    value: '0.5'
+    unit: MG_PER_L
+  source: MediaDive solution 4801 / JCM Medium 837
+  notes: MediaDive solution 4801 / JCM Medium 837 lists 0.5 mg/L Resazurin.
   term:
-    id: mediadive.compound:25
-    label: Resazurin
-  chebi_term:
     id: CHEBI:8806
     label: Resazurin
-    confidence: 1.0
-    match_type: exact_match
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+  physicochemical_roles:
+  - REDOX_INDICATOR
 - preferred_term: Distilled water
   concentration:
-    value: '918.5700099304867'
-    unit: PERCENT_V_V
+    value: '925.0'
+    unit: ML_PER_L
+  source: MediaDive solution 4801 / JCM Medium 837
+  notes: MediaDive solution 4801 / JCM Medium 837 lists 925.0 ml/L Distilled water.
   term:
-    id: mediadive.compound:4
-    label: Distilled water
-  chebi_term:
     id: CHEBI:15377
     label: water
-    confidence: 0.7
-    match_type: corpus_consensus
-- preferred_term: Sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: 1 M Sodium acetate solution
   concentration:
-    value: '19.8609731876862'
-    unit: PERCENT_V_V
+    value: '20.0'
+    unit: ML_PER_L
+  source: MediaDive solution 4801 / JCM Medium 837
+  notes: MediaDive solution 4801 / JCM Medium 837 lists 20.0 ml/L 1 M Sodium acetate
+    solution.
   term:
-    id: mediadive.compound:731
-    label: Sodium acetate
-  chebi_term:
     id: CHEBI:32954
     label: sodium acetate
-    confidence: 0.9
-    match_type: corpus_consensus
-- preferred_term: Sodium fumarate
+- preferred_term: 1 M Sodium fumarate solution
   concentration:
-    value: '19.8609731876862'
-    unit: PERCENT_V_V
+    value: '20.0'
+    unit: ML_PER_L
+  source: MediaDive solution 4801 / JCM Medium 837
+  notes: MediaDive solution 4801 / JCM Medium 837 lists 20.0 ml/L 1 M Sodium fumarate
+    solution.
   term:
-    id: mediadive.compound:1752
-    label: Sodium fumarate
-  chebi_term:
     id: CHEBI:115156
     label: disodium fumarate
-    confidence: 1.0
-    match_type: exact_match
-- preferred_term: Trace vitamins (see Medium No. 197)
+- preferred_term: Trace vitamins
   concentration:
-    value: '9.9304865938431'
-    unit: PERCENT_V_V
-  term:
-    id: mediadive.compound:1784
-    label: Trace vitamins (see Medium No. 197)
-- preferred_term: NaHCO3
+    value: '10.0'
+    unit: ML_PER_L
+  source: MediaDive solution 4801 / JCM Medium 837
+  notes: MediaDive solution 4801 / JCM Medium 837 lists 10.0 ml/L Trace vitamins.
+  culturemech_term:
+    id: CultureMech:012935
+    label: Trace vitamins
+- preferred_term: 8% NaHCO3 solution
   concentration:
-    value: '24.826216484607748'
-    unit: PERCENT_V_V
+    value: '25.0'
+    unit: ML_PER_L
+  source: MediaDive solution 4801 / JCM Medium 837
+  notes: MediaDive solution 4801 / JCM Medium 837 lists 25.0 ml/L 8% NaHCO3 solution.
   term:
-    id: mediadive.compound:55
-    label: NaHCO3
-  chebi_term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-    confidence: 1.0
-    match_type: exact_match
-- preferred_term: Na2S x 9 H2O
+- preferred_term: 5% Na2S x 9 H2O solution
   concentration:
-    value: '5.958291956305859'
-    unit: PERCENT_V_V
+    value: '6.0'
+    unit: ML_PER_L
+  source: MediaDive solution 4801 / JCM Medium 837
+  notes: MediaDive solution 4801 / JCM Medium 837 lists 6.0 ml/L 5% Na2S x 9 H2O solution.
   term:
-    id: mediadive.compound:54
-    label: Na2S x 9 H2O
-  chebi_term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
-    confidence: 0.7
-    match_type: corpus_consensus
-preparation_notes: "Mix components thoroughly and autoclave under a N2 atmosphere.\
-  \ Aseptically and anaerobically add the following solutions from sterile anaerobic\
-  \ stock solutions (autoclaved or *filter-sterilized): \nDistribute the medium into\
-  \ culture vessels (e.g., 20 ml of the medium in 120 ml serum bottles) under a stream\
-  \ of N2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers. Finally\
-  \ add per liter the following solution (autoclaved and stored under a N2 atmosphere):\
-  \ \n\nOriginal volume: 1007 mL"
+preparation_notes: Mix components thoroughly and autoclave under an N2 atmosphere.
+  Add the sodium acetate, sodium fumarate, Trace vitamins, NaHCO3, and Na2S x 9 H2O
+  solutions from sterile anaerobic stocks.
+notes: MediaDive solution 4801 represents the main solution for JCM Medium 837. Stock-solution
+  additions are kept as asserted ml/L solution rows because this SolutionRecipe record
+  cannot nest the source stock compositions inline.
 curation_history:
 - timestamp: '2026-03-13T06:20:33.208820Z'
   curator: culturemech-id-assigner-v1.0
@@ -142,11 +148,18 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m873_syfac_score15.py
+  action: RESOLVED_MEDIADIVE_4801_MAIN_SOL_J837
+  source: https://mediadive.dsmz.de/medium/J837
+  notes: Restored the MediaDive J837 source-level direct component and stock-solution
+    additions, corrected water and stock additions from false percent-volume values
+    to ml/L, corrected resazurin to 0.5 mg/L, and removed the placeholder top-level
+    ingredient.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/medium/J837

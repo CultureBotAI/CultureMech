@@ -314,53 +314,61 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-ph_value: 6.9
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_507_carboxydothermus_score10.py
+  action: RESOLVED_KOMODO_507_CARBOXYDOTHERMUS_TOPOLOGY
+  changes: Curated KOMODO Medium 507 child variant topology
+  source: KOMODO Medium 507.1-507.7, 507_7242; DSMZ Medium 507a
+  notes: Kept exact DSMZ 507a as a source duplicate and resolved DSM wrappers as strain
+    or pH variants.
 variant_children:
 - path: data/normalized_yaml/bacterial/carboxydothermus_siderophilus_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001640
   name: carboxydothermus_siderophilus_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_12326.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005701
-  name: for_dsm_12326
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_18923.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005702
-  name: for_dsm_18923
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_21278.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005703
-  name: for_dsm_21278
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_21830.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005704
-  name: for_dsm_21830
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_23698.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005707
-  name: for_dsm_23698
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/medium_507_modified_for_dsm_7242.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005706
-  name: medium_507_modified_for_dsm_7242
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: DSMZ Medium 507a has the same 27-ingredient signature as KOMODO Medium 507.
 - path: data/normalized_yaml/bacterial/pyruvate_as_an_alternative_substrate_for_dsm_6008_dsm_14886_and_dsm_16521.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:005700
   name: pyruvate_as_an_alternative_substrate_for_dsm_6008_dsm_14886_and_dsm_16521
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 507.1 applies KOMODO Medium 507 to DSM 6008, DSM 14886 and
+    DSM 16521.
+- path: data/normalized_yaml/bacterial/for_dsm_12326.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005701
+  name: for_dsm_12326
+  notes: KOMODO Medium 507.2 applies KOMODO Medium 507 to DSM 12326.
+- path: data/normalized_yaml/bacterial/for_dsm_18923.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005702
+  name: for_dsm_18923
+  notes: KOMODO Medium 507.3 applies KOMODO Medium 507 to DSM 18923.
+- path: data/normalized_yaml/bacterial/for_dsm_21278.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005703
+  name: for_dsm_21278
+  notes: KOMODO Medium 507.4 applies KOMODO Medium 507 to DSM 21278.
+- path: data/normalized_yaml/bacterial/for_dsm_21830.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005704
+  name: for_dsm_21830
+  notes: KOMODO Medium 507.5 applies KOMODO Medium 507 to DSM 21830.
+- path: data/normalized_yaml/bacterial/for_dsm_23132.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:005705
+  name: for_dsm_23132
+  notes: KOMODO Medium 507.6 applies KOMODO Medium 507 with NaOH pH adjustment to
+    DSM 23132.
+- path: data/normalized_yaml/bacterial/medium_507_modified_for_dsm_7242.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005706
+  name: medium_507_modified_for_dsm_7242
+  notes: KOMODO Medium 507_7242 applies KOMODO Medium 507 to DSM 7242.
+- path: data/normalized_yaml/bacterial/for_dsm_23698.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005707
+  name: for_dsm_23698
+  notes: KOMODO Medium 507.7 applies KOMODO Medium 507 to DSM 23698.
+ph_value: 6.9
+data_quality_flags:
+- ingredients_curated

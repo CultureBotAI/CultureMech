@@ -8,10 +8,10 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1.0'
+    unit: L
+  source: TOGO M2796
+  notes: TOGO M2796 lists 1.0 L Distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -22,18 +22,38 @@ ingredients:
   concentration:
     value: '0.5'
     unit: PERCENT_W_V
-  notes: 'Role: Nitrogen source'
+  source: TOGO M2796
+  notes: TOGO M2796 lists 0.5 % w/v L-cysteine (Sigma).
+  term:
+    id: CHEBI:17561
+    label: L-cysteine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17561
+    label: L-cysteine
+  nutritional_roles:
+  - AMINO_ACID_SOURCE
+  - NITROGEN_SOURCE
+  - SULFUR_SOURCE
+  physicochemical_roles:
+  - REDUCING_AGENT
 - preferred_term: MRS broth (Criterion)
   concentration:
-    value: '55'
+    value: '55.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  source: TOGO M2796
+  notes: TOGO M2796 lists 55.0 g/L MRS broth (Criterion).
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve 55.0 g MRS broth (Criterion) and 0.5% w/v L-cysteine in 1.0
+    L distilled water, then adjust pH to 6.5 +/- 0.2.
 media_term:
   preferred_term: TOGO Medium M2796
   term:
     id: TOGO:M2796
     label: MRS broth (Criterion, USA) containing 0.5%L-cysteine (Sigma, USA)
-notes: 'Source: https://togomedium.org/medium/M2796'
+notes: TOGO M2796 lists 55.0 g/L MRS broth from Criterion with 0.5% w/v L-cysteine
+  from Sigma in 1.0 L distilled water at pH 6.5 +/- 0.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -65,3 +85,20 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2242_m2796_m2804_mrs_broths_score15.py
+  action: RESOLVED_TOGO_M2796_MRS_CRITERION_SCORE15
+  source: https://togomedium.org/medium/M2796
+  notes: TOGO M2796 lists 55.0 g/L MRS broth from Criterion with 0.5% w/v L-cysteine
+    from Sigma in 1.0 L distilled water at pH 6.5 +/- 0.2. Corrected imported one-liter
+    water units, normalized source gram and milliliter quantities, added the source
+    pH range, and grounded unambiguous components.
+ph_range:
+  min: 6.3
+  max: 6.7
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2796

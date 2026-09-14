@@ -5,22 +5,34 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: NBRC Medium 893
+  notes: NBRC Medium 893 lists 15 g agar as the optional solidifying component.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Bacto Yeast  Extract (Difco)
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: NBRC Medium 893
+  notes: NBRC Medium 893 lists the Bacto Yeast Extract Difco product; the product
+    is source-disclosed but not reducible to one ChEBI molecule.
 - preferred_term: Bacto Tryptone (Difco)
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: NBRC Medium 893
+  notes: NBRC Medium 893 lists the Bacto Tryptone Difco product; the product is source-disclosed
+    but not reducible to one ChEBI molecule.
 media_term:
   preferred_term: TOGO Medium M1688
   term:
@@ -59,6 +71,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_sparse_top_score15.py
+  action: RESOLVED_SPARSE_TOP_SCORE15
+  source: https://togomedium.org/medium/M1688; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=893
+  notes: 'TOGO M1688 mirrors NBRC Medium 893: 1 L seawater, 15 g optional agar, 1
+    g Bacto Yeast Extract, 2 g Bacto Tryptone, and pH 7.0.'
 solutions:
 - preferred_term: Seawater*
   term:
@@ -69,3 +87,10 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_1801_Seawater.yaml for composition
   name: Unknown solution
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1688
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=893

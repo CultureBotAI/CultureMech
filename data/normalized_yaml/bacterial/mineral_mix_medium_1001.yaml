@@ -2,6 +2,7 @@ id: CultureMech:004277
 name: mineral_mix_medium_1001
 original_name: Mineral Mix (medium 1001)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

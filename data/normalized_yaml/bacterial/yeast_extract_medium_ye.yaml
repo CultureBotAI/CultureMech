@@ -42,5 +42,15 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_unavailable_empty_score35.py
+  action: MARKED_SOURCE_UNAVAILABLE_EMPTY
+  source: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M241
+  notes: TOGO M241's live gmdb_medium_by_gmid payload has no components and only preserves
+    JCM Medium 249's unavailable 'Not yet' comment.
 data_quality_flags:
 - incomplete_composition
+- source_information_unavailable
+references:
+- reference: https://togomedium.org/medium/M241
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=249

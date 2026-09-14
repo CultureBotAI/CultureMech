@@ -255,3 +255,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_bacterial_strain_specific_score45.py
+  action: LINKED_STRAIN_SPECIFIC_SCORE45_CHILDREN
+  changes: Linked score-45 strain-specific child media to source parents
+  notes: Added or refreshed reciprocal parent-child link for bacterial/for_dsm_3246.yaml.
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_3246.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005056
+  name: for_dsm_3246
+  notes: Substitutes 1 g/L Acetoin for DSMZ Medium 298 2,3-butanediol.
+  evidence:
+  - reference: https://bacdive.dsmz.de/strain/4213
+    supports: SUPPORT
+    explanation: BacDive lists Syntrophotalea acetylenica DSM 3246 as cultivated on
+      PELOBACTER PROPIONICUS MEDIUM (FRESHWATER), DSMZ Medium 298, and MediaDive lists
+      the 1 g/L Acetoin strain modification at 30 C under anaerobic conditions.

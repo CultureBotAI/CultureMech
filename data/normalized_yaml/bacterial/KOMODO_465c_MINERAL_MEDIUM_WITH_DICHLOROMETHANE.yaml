@@ -2,35 +2,18 @@ id: CultureMech:005571
 name: mineral_medium_with_dichloromethane
 original_name: MINERAL MEDIUM WITH DICHLOROMETHANE
 category: bacterial
-medium_type: COMPLEX
-composition_type: UNDEFINED
-physical_state: SOLID_AGAR
+medium_type: DEFINED
+composition_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.25
 media_term:
   preferred_term: KOMODO Medium 465c
   term:
     id: komodo.medium:465c
     label: MINERAL MEDIUM WITH DICHLOROMETHANE
 notes: 'Source: KOMODO ModelSEED | ID: 465c | DSMZ Medium: 465c (mediadive.medium:465c)
-  | Aerobic: No
-
-
-  Commercial Product: Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
-
-  Supplier: Multiple suppliers (BD, Sigma, Neogen)
-
-  Catalog: Multiple (22092 Sigma, 211825 BD)
-
-  Source: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
+  | Aerobic: No'
 ingredients:
-- preferred_term: '[1,1′-Biphenyl]-2-ol'
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
 - preferred_term: Na2HPO4 x 2 H2O
   term:
     id: CHEBI:91258
@@ -81,12 +64,22 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86159
     label: calcium nitrate tetrahydrate
+- preferred_term: Bromothymol blue
+  term:
+    id: CHEBI:86155
+    label: bromothymol blue
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86155
+    label: bromothymol blue
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
     label: EDTA disodium salt (anhydrous)
   concentration:
-    value: '0.5'
+    value: '0.0005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:64734
@@ -96,7 +89,7 @@ ingredients:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
   concentration:
-    value: '0.2'
+    value: '0.0002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
@@ -106,7 +99,7 @@ ingredients:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
   concentration:
-    value: '0.1'
+    value: '0.0001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
@@ -116,7 +109,7 @@ ingredients:
     id: CHEBI:86368
     label: manganese(II) chloride tetrahydrate
   concentration:
-    value: '0.03'
+    value: '0.00003'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
@@ -126,7 +119,7 @@ ingredients:
     id: CHEBI:33118
     label: boric acid
   concentration:
-    value: '0.3'
+    value: '0.0003'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
@@ -136,7 +129,7 @@ ingredients:
     id: CHEBI:53503
     label: cobalt chloride hexahydrate
   concentration:
-    value: '0.2'
+    value: '0.0002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53503
@@ -146,7 +139,7 @@ ingredients:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
   concentration:
-    value: '0.01'
+    value: '0.00001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86318
@@ -156,7 +149,7 @@ ingredients:
     id: CHEBI:34887
     label: nickel dichloride
   concentration:
-    value: '0.02'
+    value: '0.00002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34887
@@ -166,225 +159,51 @@ ingredients:
     id: CHEBI:75213
     label: sodium molybdate dihydrate
   concentration:
-    value: '0.03'
+    value: '0.00003'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
     label: sodium molybdate dihydrate
-- preferred_term: Peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Meat extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '65.0'
-    unit: G_PER_L
-  notes: ' (for solid medium) [Merged 4 duplicates: 15.0, 15.0, 20.0, 15.0]'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Casein peptone
-  concentration:
-    value: '15'
-    unit: G_PER_L
-- preferred_term: Soy peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: Pancreatic digest of casein
-  term:
-    id: MICRO:0000182
-    label: tryptone
-  concentration:
-    value: '17.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
-      / Tryptic Soy Agar (TSA)
-    catalog_number: Multiple (22092 Sigma, 211825 BD)
-    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Pancreatic enzymatic digest of casein providing amino acids and peptides;
-    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
-  synonyms:
-  - synonym_text: tryptone
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
-  - synonym_text: Bacto Tryptone
-    synonym_type: EXACT
-- preferred_term: Peptic digest of soybean meal
-  term:
-    id: FOODON:03315720
-    label: vegetable protein, hydrolyzed
-  concentration:
-    value: '3.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
-      / Tryptic Soy Agar (TSA)
-    catalog_number: Multiple (22092 Sigma, 211825 BD)
-    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Peptic digest of soybean meal providing additional peptides and carbohydrates;
-    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
-  synonyms:
-  - synonym_text: soytone
-    synonym_type: EXACT
-  - synonym_text: soy peptone
-    synonym_type: EXACT
-  - synonym_text: Bacto Soytone
-    synonym_type: EXACT
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: glucose
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
-      / Tryptic Soy Agar (TSA)
-    catalog_number: Multiple (22092 Sigma, 211825 BD)
-    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Carbon/energy source; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy
-    Agar (TSA) commercial product
-  synonyms:
-  - synonym_text: dextrose
-    synonym_type: EXACT
-  - synonym_text: D-glucose
-    synonym_type: EXACT
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
-      / Tryptic Soy Agar (TSA)
-    catalog_number: Multiple (22092 Sigma, 211825 BD)
-    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Maintains osmotic equilibrium; Constituent of Tryptic Soy Broth (TSB) / Tryptic
-    Soy Agar (TSA) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
-- preferred_term: Dipotassium phosphate
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
-      / Tryptic Soy Agar (TSA)
-    catalog_number: Multiple (22092 Sigma, 211825 BD)
-    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: pH buffer; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
-    commercial product
-  synonyms:
-  - synonym_text: K2HPO4
-    synonym_type: EXACT
-  - synonym_text: potassium phosphate dibasic
-    synonym_type: EXACT
-  - synonym_text: dipotassium hydrogen phosphate
-    synonym_type: EXACT
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '15.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
-      / Tryptic Soy Agar (TSA)
-    catalog_number: Multiple (22092 Sigma, 211825 BD)
-    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic Soy
-    Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: Proteose peptone
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: Casamino acids
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: glucose
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17234
-    label: glucose
-- preferred_term: Starch
-  term:
-    id: CHEBI:28017
-    label: starch
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:28017
-    label: starch
-- preferred_term: Na-pyruvate
-  term:
-    id: CHEBI:50144
-    label: sodium pyruvate
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:50144
-    label: sodium pyruvate
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Prepare medium 465 with optional 50 mg/l bromothymol blue as pH indicator
+    and autoclave. For DSM 6813, add 10 ml/l instead of 1 ml/l trace element solution
+    SL-4.
+- step_number: 2
+  action: MIX
+  description: Grow cells in medium 465 with methanol supplied via incubation atmosphere
+    up to 10 ml methanol per liter medium, then feed dichloromethane via the incubation
+    atmosphere at 2 mmol/l or less.
+- step_number: 3
+  action: ADJUST_PH
+  description: Maintain pH 7.25 and readjust the culture with sterile 1 M NaOH if
+    necessary.
+- step_number: 4
+  action: MIX
+  description: Rehydrate lyophilized cells in the appropriate complex medium and then
+    cultivate on mineral medium with the appropriate carbon source.
+- step_number: 5
+  action: ADJUST_PH
+  description: For trace element solution SL-4, first dissolve EDTA in distilled water
+    and adjust to pH 7.0 with 2 N NaOH, then add the other compounds.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=465c
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium465c.pdf
+- reference: https://mediadive.dsmz.de/rest/medium/465c
+parent_media:
+  path: data/normalized_yaml/bacterial/mineral_medium_with_dichloromethane.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:001588
+  name: mineral_medium_with_dichloromethane
+  notes: KOMODO Medium 465c follows DSMZ Medium 465c and includes the recommended
+    0.05 g/L Bromothymol blue pH indicator.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adds 0.05 g/L Bromothymol blue pH indicator recommended by DSMZ Medium 465c.
 applications:
 - Microbial cultivation
 curation_history:
@@ -422,8 +241,18 @@ curation_history:
 - timestamp: '2026-06-08T23:19:28.118946+00:00'
   curator: chebi-regrounding-v1.0
   action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
-  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
 - timestamp: '2026-06-10T07:46:45.026590+00:00'
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_dsmz_465c_dichloromethane_score15.py
+  action: RESOLVED_DSMZ_KOMODO_465C_SCORE15
+  changes: Resolved DSMZ/KOMODO Medium 465c ingredient and variant metadata
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=465c
+  notes: Removed non-source complex-medium contaminant rows and resolved standard
+    DSMZ Medium 465c trace element solution SL-4 dilution.

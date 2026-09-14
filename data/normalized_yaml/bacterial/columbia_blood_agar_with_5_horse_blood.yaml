@@ -162,8 +162,19 @@ curation_history:
   curator: migrate_data_quality_flags.py
   action: MIGRATED_DATA_QUALITY_FLAGS
   notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_columbia_blood_score40.py
+  action: LINKED_COLUMBIA_BLOOD_SCORE40_SOURCE_DUPLICATE
+  changes: Linked score-40 Columbia/Blood Agar TOGO source duplicate
+  notes: Added or refreshed reciprocal source-duplicate link for bacterial/TOGO_M276_Columbia_Blood_Agar_With_5_Horse_Blood.yaml.
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
 - commercial_product
 kg_microbe_match: mediadive.medium:687
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M276_Columbia_Blood_Agar_With_5_Horse_Blood.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009317
+  name: columbia_blood_agar_with_5_horse_blood
+  notes: TOGO import of the same source-catalogue formulation.

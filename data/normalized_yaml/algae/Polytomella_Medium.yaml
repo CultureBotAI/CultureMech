@@ -4,71 +4,81 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: Polytomella Medium
+  term:
+    id: UTEX:polytomella-medium
+    label: Polytomella Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
+notes: UTEX prepares Polytomella Medium from dH2O, yeast extract, tryptone, and sodium
+  acetate.
 ingredients:
+- preferred_term: dH2O
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: UTEX starts the 1 L Polytomella Medium recipe with approximately 950 mL dH2O.
 - preferred_term: Yeast extract
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'UTEX lists: amount 1 g/L'
-  supplier_catalog:
-    supplier_name: Bacto
-    catalog_number: ', Difco'
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+  notes: UTEX lists 1 g/L Yeast extract, Bacto/Difco.
+  nutritional_roles:
+  - NITROGEN_SOURCE
 - preferred_term: Tryptone
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'UTEX lists: amount 1 g/L'
+  term:
+    id: MICRO:0000182
+    label: Tryptone
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: T 9410
+  notes: UTEX lists 1 g/L Tryptone, Sigma T 9410.
+  nutritional_roles:
+  - NITROGEN_SOURCE
 - preferred_term: Sodium acetate
   concentration:
     value: '24.4'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 2 g/L; final 24.4 mM'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: BP 333
+  notes: UTEX lists 2 g/L Sodium acetate, for 24.4 mM final.
+  nutritional_roles:
+  - CARBON_SOURCE
+solutions: []
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: To approximately 950 mL dH2O, add each component in the order specified
+    while stirring continuously.
 - step_number: 2
   action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  description: Bring the total volume to 1 L with dH2O.
 - step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
+  action: AUTOCLAVE
+  description: Cover and autoclave the medium.
 - step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
-- step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
+  action: STORE
+  description: Store at refrigerator temperature.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -107,7 +117,17 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_organic_score35.py
+  action: RESOLVED_UTEX_ORGANIC_SCORE35
+  changes: Grounded UTEX score-35 organic and Volvox components
+  source: https://utex.org/products/polytomella-medium
+  notes: UTEX prepares Polytomella Medium from dH2O, yeast extract, tryptone, and
+    sodium acetate.
 references:
 - reference: UTEX:polytomella-medium
 - reference: https://utex.org/products/polytomella-medium
 original_name: Polytomella Medium
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

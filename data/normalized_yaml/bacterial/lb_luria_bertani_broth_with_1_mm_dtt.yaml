@@ -5,39 +5,94 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.0
+ph_range:
+  min: 7.0
+  max: 7.0
 media_term:
   preferred_term: JCM Medium J813
   term:
     id: mediadive.medium:J813
     label: LB (LURIA-BERTANI) BROTH WITH 1 mM DTT
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=813'
+notes: MediaDive J813 describes JCM Medium 813 LB (Luria-Bertani) Broth with 1 mM
+  DTT as 10.0 g/L BD-Difco tryptone, 5.0 g/L BD-Difco yeast extract, 10.0 g/L NaCl,
+  and 1.0 mM final 1,4-dithiothreitol in 1000.0 ml/L distilled water, adjusted to
+  pH 7.0.
 ingredients:
-- preferred_term: Tryptone
+- preferred_term: Tryptone (BD-Difco)
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
-- preferred_term: Yeast extract
+  source: MediaDive J813 / JCM Medium 813
+  notes: MediaDive J813 / JCM Medium 813 lists 10.0 g/L Tryptone (BD-Difco).
+  term:
+    id: MICRO:0000182
+    label: Tryptone
+  nutritional_roles:
+  - PROTEIN_SOURCE
+- preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
+  source: MediaDive J813 / JCM Medium 813
+  notes: MediaDive J813 / JCM Medium 813 lists 5.0 g/L Yeast extract (BD-Difco).
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
+  - VITAMIN_SOURCE
 - preferred_term: NaCl
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: MediaDive J813 / JCM Medium 813
+  notes: MediaDive J813 / JCM Medium 813 lists 10.0 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
-  concentration:
-    value: '10'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: MediaDive J813 / JCM Medium 813
+  notes: MediaDive J813 / JCM Medium 813 lists 1000.0 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: 1,4-dithiothreitol (DTT)
+  concentration:
+    value: '1.0'
+    unit: MILLIMOLAR
+  source: MediaDive J813 / JCM Medium 813
+  notes: MediaDive J813 / JCM Medium 813 lists 1.0 mM 1,4-dithiothreitol (DTT).
+  term:
+    id: CHEBI:18320
+    label: 1,4-dithiothreitol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18320
+    label: 1,4-dithiothreitol
+  physicochemical_roles:
+  - REDUCING_AGENT
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Dissolve 10.0 g/L BD-Difco tryptone, 5.0 g/L BD-Difco yeast extract,
+    and 10.0 g/L NaCl in 1000.0 ml/L distilled water.
+- step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0.
-- step_number: 2
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave the pH-adjusted basal LB broth.
+- step_number: 4
   action: MIX
-  description: After autoclaving, aseptically add 1 mM (final conc.) 1,4-dithiothreitol
+  description: After autoclaving, aseptically add 1.0 mM final 1,4-dithiothreitol
     (DTT).
 applications:
 - Microbial cultivation
@@ -65,4 +120,25 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m848_lb_dtt_score15.py
+  action: RESOLVED_JCM_813_LB_DTT
+  source: https://mediadive.dsmz.de/medium/J813; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=813
+  notes: Restored the MediaDive J813 source-level BD-Difco tryptone, BD-Difco yeast
+    extract, NaCl, distilled water, and 1 mM final dithiothreitol formulation; added
+    the missing distilled water and post-autoclave dithiothreitol; and linked the
+    TOGO M848 source duplicate.
 kg_microbe_match: mediadive.medium:74
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M848_LB_Luria-Bertani_Broth_With_1_mM_DTT.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010263
+  name: lb_luria_bertani_broth_with_1_mm_dtt
+  notes: TOGO M848 imports the same JCM Medium 813 LB broth with 1 mM dithiothreitol
+    formulation represented by MediaDive J813.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://mediadive.dsmz.de/medium/J813
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=813

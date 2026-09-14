@@ -8,24 +8,46 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Columbia blood agar base (Oxoid CM331)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-- preferred_term: sterile defibrinated rabbit blood
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+    value: '1000'
+    unit: ML_PER_L
+  source: JCM Medium 586
+  notes: TOGO and JCM Medium 586 list one liter of Columbia blood agar base (Oxoid
+    CM331) prepared according to the manufacturer's directions.
+- preferred_term: Defibrinated rabbit blood
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '5'
+    unit: PERCENT_V_V
+  source: JCM Medium 586
+  notes: JCM Medium 586 adds sterile defibrinated rabbit blood to 5% final concentration
+    after sterilization and cooling.
+  term:
+    id: UBERON:0000178
+    label: blood
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare 1 L Columbia blood agar base (Oxoid CM331) according to the
+    manufacturer's directions.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Sterilize the base at 121 C for 15 min.
+- step_number: 3
+  action: COOL
+  description: Cool the sterilized base to about 45 C.
+- step_number: 4
+  action: MIX
+  description: Aseptically add 5% (final) sterile defibrinated rabbit blood.
+- step_number: 5
+  action: POUR_PLATES
+  description: Mix and quickly dispense into sterile test tubes or petri dishes.
 media_term:
   preferred_term: TOGO Medium M591
   term:
     id: TOGO:M591
     label: Columbia Blood Agar With 5% Rabbit Blood
-notes: 'Source: https://togomedium.org/medium/M591
-
-  Original source: JCM - JCM_M586
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=586'
+notes: 'TOGO M591 mirrors JCM Medium 586: prepare Columbia blood agar base (Oxoid
+  CM331), sterilize and cool it to about 45 C, add sterile defibrinated rabbit blood
+  to 5% final, then dispense into sterile tubes or petri dishes.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -51,3 +73,27 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_columbia_blood_score40.py
+  action: RESOLVED_COLUMBIA_BLOOD_SCORE40_GRAPH
+  changes: Resolved score-40 Columbia/Blood Agar TOGO source duplicate
+  source: https://togomedium.org/medium/M591; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=586
+  notes: 'TOGO M591 mirrors JCM Medium 586: prepare Columbia blood agar base (Oxoid
+    CM331), sterilize and cool it to about 45 C, add sterile defibrinated rabbit blood
+    to 5% final, then dispense into sterile tubes or petri dishes.'
+parent_media:
+  path: data/normalized_yaml/bacterial/columbia_blood_agar_with_5_rabbit_blood.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002933
+  name: columbia_blood_agar_with_5_rabbit_blood
+  notes: Existing MediaDive record for the same source-catalogue formulation.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Source-catalogue duplicate of JCM Medium 586; TOGO M591 preserves the same formulation.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M591
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=586

@@ -3,53 +3,74 @@ name: togo_medium_m1638
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Hipolypepton*
   concentration:
-    value: '900'
+    value: '10'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: MgSO4·7H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
+  source: NBRC Medium 841
+  notes: NBRC Medium 841 lists 10 g/L Hipolypepton and notes that the asterisk marks
+    Wako Pure Chemical Industries; this peptone product is retained as an opaque complex
+    component.
 - preferred_term: Yeast extract
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: NBRC Medium 841
+  notes: NBRC Medium 841 lists 2 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  source: NBRC Medium 841
+  notes: NBRC Medium 841 lists 1 g/L MgSO4·7H2O.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: ML_PER_L
+  source: NBRC Medium 841
+  notes: NBRC Medium 841 lists 900 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: NBRC Medium 841
+  notes: NBRC Medium 841 lists 15 g/L agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 media_term:
   preferred_term: TOGO Medium M1638
   term:
     id: TOGO:M1638
     label: TOGO Medium M1638
-notes: 'Source: https://togomedium.org/medium/M1638
-
-  Original source: NBRC - NBRC_M841
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=841'
+notes: TOGO M1638 imports NBRC Medium 841, which lists 10 g/L Hipolypepton from Wako
+  Pure Chemical Industries, 2 g/L Yeast extract, 1 g/L MgSO4·7H2O, 100 ml/L Kanamycin
+  sulfate solution (250 ug/ml), 900 ml/L Distilled water, and 15 g/L Agar if needed
+  at pH 7.0. The kanamycin stock is sterilized separately by filtration.
 applications:
 - Microbial cultivation
 curation_history:
@@ -98,19 +119,76 @@ curation_history:
   notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
     magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
     labels untouched.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nbrc_841_score15.py
+  action: RESOLVED_NBRC_841_SCORE15
+  source: https://togomedium.org/medium/M1638; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=841
+  notes: Curated TOGO:M1638 from TOGO and NBRC Medium 841; corrected Distilled water
+    from a mass-like 900 g/L import to 900 ml/L, moved Hipolypepton and Kanamycin
+    sulfate solution from migrated empty solutions to the formula, nested the 250
+    ug/ml kanamycin stock, added pH 7.0, grounded yeast extract, magnesium sulfate
+    heptahydrate, kanamycin sulfate, water, and agar, retained Hipolypepton as a sourced
+    opaque component, and linked M1638 to M1553 as a substituted-component variant.
 solutions:
-- preferred_term: Kanamycin sulfate solution (250 μg/ml)**
-  composition: []
+- preferred_term: Kanamycin sulfate solution (250 ug/ml)
   concentration:
     value: '100'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Solution, Defined
-    component'
-  name: Unknown solution
-- preferred_term: Hipolypepton*
-  composition: []
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-  name: Unknown solution
+    unit: ML_PER_L
+  source: NBRC Medium 841
+  notes: NBRC Medium 841 lists 100 ml/L Kanamycin sulfate solution (250 ug/ml).
+  term:
+    id: CHEBI:6109
+    label: kanamycin A sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6109
+    label: kanamycin A sulfate
+  composition:
+  - preferred_term: Kanamycin sulfate
+    concentration:
+      value: '0.25'
+      unit: MG_PER_ML
+    source: NBRC Medium 841
+    notes: NBRC Medium 841 specifies this stock as 250 ug/ml Kanamycin sulfate.
+    term:
+      id: CHEBI:6109
+      label: kanamycin A sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:6109
+      label: kanamycin A sulfate
+  name: Kanamycin sulfate solution (250 ug/ml)
+  preparation_notes: Sterilize separately by filtration.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Combine 10 g/L Hipolypepton, 2 g/L Yeast extract, 1 g/L MgSO4·7H2O,
+    and 900 ml/L Distilled water.
+- step_number: 2
+  action: MIX
+  description: Add 15 g/L agar when solid NBRC Medium 841 is needed.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize Kanamycin sulfate solution (250 ug/ml) by filtration.
+- step_number: 4
+  action: MIX
+  description: Add 100 ml/L filter-sterilized Kanamycin sulfate solution.
+- step_number: 5
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1638
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=841
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M1553_Methylobacterium_Medium.yaml
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  id: CultureMech:008102
+  name: methylobacterium_medium
+  notes: Substitutes 100 ml/L filter-sterilized 250 ug/ml Kanamycin sulfate solution
+    for methanol and 100 ml/L water.
+variant_relationship: SUBSTITUTED_COMPONENT_VARIANT
+variant_modifications:
+- Substitutes 100 ml/L filter-sterilized 250 ug/ml Kanamycin sulfate solution for
+  the 5 ml/L methanol supplement and 100 ml/L of the water in TOGO M1553.

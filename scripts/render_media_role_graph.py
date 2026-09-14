@@ -36,13 +36,12 @@ Extends beyond kgx_export.py by:
 from __future__ import annotations
 
 import argparse
-import json
 import logging
 import re
 import sys
-from collections import Counter, defaultdict
+from collections import Counter
+from collections.abc import Iterator
 from pathlib import Path
-from typing import Iterable, Iterator, Optional
 
 import yaml
 
@@ -88,7 +87,7 @@ def _label(s: str, max_len: int = 70) -> str:
     return s
 
 
-def _get_nested(record: dict, path: tuple[str, ...]) -> Optional[str]:
+def _get_nested(record: dict, path: tuple[str, ...]) -> str | None:
     current: object = record
     for key in path:
         if not isinstance(current, dict):
@@ -97,7 +96,7 @@ def _get_nested(record: dict, path: tuple[str, ...]) -> Optional[str]:
     return current if isinstance(current, str) else None
 
 
-def ingredient_chebi_id(ing: dict) -> Optional[str]:
+def ingredient_chebi_id(ing: dict) -> str | None:
     for path in CHEBI_ID_PATHS:
         value = _get_nested(ing, path)
         if value and value.startswith("CHEBI:"):
@@ -106,16 +105,43 @@ def ingredient_chebi_id(ing: dict) -> Optional[str]:
 
 
 def ingredient_display_id(ing: dict) -> str:
-    """Return a graph-node id for an ingredient. Prefers CHEBI, then any term id, then preferred_term."""
+    """Return a graph-node id for an ingredient.
+
+    Prefers CHEBI, then a linked CultureMech recipe, then any term id, then
+    preferred_term.
+    """
     chebi = ingredient_chebi_id(ing)
     if chebi:
         return chebi
-    for path in [("term", "id"), ("chebi_term", "id"), ("mediaingredientmech_chebi_term", "id")]:
+    for path in [
+        ("culturemech_term", "id"),
+        ("term", "id"),
+        ("chebi_term", "id"),
+        ("mediaingredientmech_chebi_term", "id"),
+    ]:
         v = _get_nested(ing, path)
         if v:
             return v
     pt = (ing.get("preferred_term") or "").strip()
     return f"ing:{pt}" if pt else "ing:unnamed"
+
+
+def solution_display_id(solution: dict) -> str:
+    """Return a graph-node id for a solution. Prefers external terms, then linked media, then text."""
+    for path in [("term", "id"), ("culturemech_term", "id")]:
+        value = _get_nested(solution, path)
+        if value:
+            return value
+    pt = (solution.get("preferred_term") or "").strip()
+    return f"sol:{pt}" if pt else "sol:unnamed"
+
+
+def solution_display_label(solution: dict) -> str:
+    solution_id = solution_display_id(solution)
+    term = (solution.get("preferred_term") or "").strip()
+    if term and solution_id != f"sol:{term}":
+        return f"{term}\\n({solution_id})"
+    return solution_id
 
 
 def _emit_style(lines: list[str]) -> None:
@@ -141,7 +167,7 @@ def _iter_recipe_ingredients(recipe: dict) -> Iterator[tuple[str, dict, str]]:
     for sol in (recipe.get("solutions") or []):
         if not isinstance(sol, dict):
             continue
-        sol_id = _get_nested(sol, ("term", "id")) or f"sol:{(sol.get('preferred_term') or '').strip()}"
+        sol_id = solution_display_id(sol)
         for ing in (sol.get("composition") or []):
             if isinstance(ing, dict):
                 yield f"solution:{sol_id}", ing, sol_id
@@ -165,8 +191,6 @@ def render_single_recipe(
         return ""
 
     medium_label = (doc.get("preferred_term") or recipe_path.stem).strip()
-    medium_id = _get_nested(doc, ("media_term", "term", "id")) or f"media:{recipe_path.stem}"
-
     lines: list[str] = ["flowchart LR"]
     lines.append(f'MEDIUM["`**{_label(medium_label)}**`"]:::medium')
 
@@ -176,8 +200,19 @@ def render_single_recipe(
     role_value_nodes: dict[tuple[str, str], str] = {}  # (facet, value) → node_id
     solution_nodes: set[str] = set()
 
+    for sol in (doc.get("solutions") or []):
+        if not isinstance(sol, dict):
+            continue
+        sol_id = solution_display_id(sol)
+        sol_node = _sanitize_id(sol_id)
+        if sol_node in solution_nodes:
+            continue
+        solution_nodes.add(sol_node)
+        lines.append(f'{sol_node}(["`{_label(solution_display_label(sol))}`"]):::solution')
+        lines.append(f"MEDIUM -.-> {sol_node}")
+
     # --- ingredients (direct + solution.composition) ---
-    for source, ing, parent_id in _iter_recipe_ingredients(doc):
+    for source, ing, _parent_id in _iter_recipe_ingredients(doc):
         if ingredients_seen >= max_ingredients:
             dropped_ingredient_count += 1
             continue
@@ -197,10 +232,6 @@ def render_single_recipe(
         else:
             sol_id = source.split(":", 1)[1]
             sol_node = _sanitize_id(sol_id)
-            if sol_node not in solution_nodes:
-                solution_nodes.add(sol_node)
-                lines.append(f'{sol_node}(["`{_label(sol_id)}`"]):::solution')
-                lines.append(f"MEDIUM -.-> {sol_node}")
             lines.append(f"{sol_node} --> {node_id}")
 
         # facet role edges — one per (facet, value)
@@ -232,7 +263,7 @@ def render_single_recipe(
         lines.append(
             f'MORE["`...{dropped_ingredient_count} more ingredients (cap: {max_ingredients})`"]:::truncated'
         )
-        lines.append(f"MEDIUM --> MORE")
+        lines.append("MEDIUM --> MORE")
 
     # --- target organisms ---
     for org in (doc.get("target_organisms") or []):
@@ -279,7 +310,7 @@ def render_single_recipe(
     return "\n".join(lines) + "\n"
 
 
-def render_rollup(yaml_root: Path, limit: Optional[int] = None) -> str:
+def render_rollup(yaml_root: Path, limit: int | None = None) -> str:
     """Render a cross-corpus roll-up: which (facet, role) pairs co-occur on which CHEBI ids.
 
     Each edge weight = number of recipes / ingredients where that pairing appears.
@@ -343,7 +374,7 @@ def _slug_for(path: Path) -> str:
     return path.stem
 
 
-def main(argv: Optional[list[str]] = None) -> int:
+def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     group = parser.add_mutually_exclusive_group()
     group.add_argument("--target", type=Path, help="Path to a single MediaRecipe YAML.")

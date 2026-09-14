@@ -11,24 +11,41 @@ media_term:
   term:
     id: mediadive.medium:1752
     label: SEAWATER MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1752.pdf'
+notes: DSMZ Medium 1752 contains 2.5 g Bacto Peptone, 0.5 g Bacto Yeast extract, and
+  1000.0 ml Biomaris Seawater, adjusted to pH 7.5.
 ingredients:
-- preferred_term: Bacto peptone
+- preferred_term: Bacto Peptone
   concentration:
     value: '2.5'
     unit: G_PER_L
-- preferred_term: Yeast extract
+  source: DSMZ Medium 1752
+  notes: DSMZ Medium 1752 lists 2.5 g Bacto Peptone.
+  term:
+    id: MICRO:0000178
+    label: Bacto peptone
+- preferred_term: Bacto Yeast extract
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: Sea water
+  source: DSMZ Medium 1752
+  notes: DSMZ Medium 1752 lists 0.5 g Bacto Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Biomaris Seawater
   concentration:
-    value: '1000'
-    unit: G_PER_L
+    value: '1000.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 1752
+  notes: DSMZ Medium 1752 lists 1000.0 ml Biomaris Seawater.
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Mix 2.5 g Bacto Peptone, 0.5 g Bacto Yeast extract, and 1000.0 ml Biomaris
+    Seawater.
+- step_number: 2
   action: ADJUST_PH
-  description: Adjust pH to 7.5
+  description: Adjust pH to 7.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -45,3 +62,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SEAWATER MEDIUM" to "seawater_medium" for consistent
     matching
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_official_simple_score20.py
+  action: RESOLVED_OFFICIAL_SIMPLE_SCORE20
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1752.pdf
+  notes: DSMZ Medium 1752 contains 2.5 g Bacto Peptone, 0.5 g Bacto Yeast extract,
+    and 1000.0 ml Biomaris Seawater, adjusted to pH 7.5.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1752.pdf

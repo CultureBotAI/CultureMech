@@ -5,322 +5,623 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.0
+ph_range:
+  min: 7.0
+  max: 7.0
 media_term:
   preferred_term: JCM Medium J825
   term:
     id: mediadive.medium:J825
     label: KOKO MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=825'
+notes: JCM Medium 825 / KOKO Medium lists 930.0 ml/L distilled water, 0.16 g/L MgSO4
+  x 7 H2O, 1.0 g/L yeast extract, 0.06 g/L CaCl2 x 2 H2O, 0.5 g/L NH4Cl, 1.6 g/L K2HPO4,
+  0.5 mg/L resazurin, 1.0 g/L NaH2PO4 x 2 H2O, 1.0 g/L BD-Difco tryptone, 1.0 g/L
+  peptone, 10.0 ml/L SL-4 trace element solution, 10.0 ml/L Trace vitamins, N2 gas,
+  and sterile anaerobic 8% NaHCO3, 10% glucose, 3% Na2S x 9 H2O, and 3% L-cysteine
+  HCl x H2O stocks; MediaDive J825 reports the same recipe at pH 7.0.
 ingredients:
-- preferred_term: Tryptone
+- preferred_term: Distilled water
   concentration:
-    value: '0.979432'
-    unit: G_PER_L
-- preferred_term: Peptone
+    value: '930.0'
+    unit: ML_PER_L
+  source: MediaDive J825 / JCM Medium 825
+  notes: MediaDive J825 / JCM Medium 825 lists 930.0 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: MgSO4 x 7 H2O
   concentration:
-    value: '0.979432'
+    value: '0.16'
     unit: G_PER_L
+  source: MediaDive J825 / JCM Medium 825
+  notes: MediaDive J825 / JCM Medium 825 lists 0.16 g/L MgSO4 x 7 H2O.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
-    value: '0.979432'
+    value: '1.0'
     unit: G_PER_L
-- preferred_term: K2HPO4
+  source: MediaDive J825 / JCM Medium 825
+  notes: MediaDive J825 / JCM Medium 825 lists 1.0 g/L Yeast extract.
   term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-  concentration:
-    value: '1.56709'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: NaH2PO4 x 2 H2O
-  term:
-    id: CHEBI:37585
-    label: sodium dihydrogenphosphate
-  concentration:
-    value: '0.979432'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:37585
-    label: sodium dihydrogenphosphate
-- preferred_term: NH4Cl
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
-  concentration:
-    value: '0.489716'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  concentration:
-    value: '0.156709'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
+    id: FOODON:03315426
+    label: Yeast extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
+  - VITAMIN_SOURCE
 - preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+  source: MediaDive J825 / JCM Medium 825
+  notes: MediaDive J825 / JCM Medium 825 lists 0.06 g/L CaCl2 x 2 H2O.
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  concentration:
-    value: '0.0587659'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-- preferred_term: Resazurin
-  term:
-    id: CHEBI:8806
-    label: Resazurin
-  concentration:
-    value: '0.000489716'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:8806
-    label: Resazurin
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: glucose
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17234
-    label: glucose
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-  concentration:
-    value: '1.25'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-- preferred_term: L-Cysteine HCl x H2O
-  term:
-    id: CHEBI:91248
-    label: L-cysteine hydrochloride hydrate
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:91248
-    label: L-cysteine hydrochloride hydrate
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
-- preferred_term: EDTA
-  term:
-    id: CHEBI:4735
-    label: ethylenediaminetetraacetic acid
+- preferred_term: NH4Cl
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:4735
-    label: ethylenediaminetetraacetic acid
-- preferred_term: FeSO4 x 7 H2O
+  source: MediaDive J825 / JCM Medium 825
+  notes: MediaDive J825 / JCM Medium 825 lists 0.5 g/L NH4Cl.
   term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
+    id: CHEBI:31206
+    label: ammonium chloride
   mediaingredientmech_chebi_term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
-- preferred_term: Biotin
+    id: CHEBI:31206
+    label: ammonium chloride
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: K2HPO4
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+  source: MediaDive J825 / JCM Medium 825
+  notes: MediaDive J825 / JCM Medium 825 lists 1.6 g/L K2HPO4.
   term:
-    id: CHEBI:15956
-    label: biotin
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
   mediaingredientmech_chebi_term:
-    id: CHEBI:15956
-    label: biotin
-- preferred_term: Folic acid
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: Resazurin
+  concentration:
+    value: '0.5'
+    unit: MG_PER_L
+  source: MediaDive J825 / JCM Medium 825
+  notes: MediaDive J825 / JCM Medium 825 lists 0.5 mg/L Resazurin.
   term:
-    id: CHEBI:27470
-    label: folic acid
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
+    id: CHEBI:8806
+    label: Resazurin
   mediaingredientmech_chebi_term:
-    id: CHEBI:27470
-    label: folic acid
-- preferred_term: Pyridoxine hydrochloride
+    id: CHEBI:8806
+    label: Resazurin
+  physicochemical_roles:
+  - REDOX_INDICATOR
+- preferred_term: NaH2PO4 x 2 H2O
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: MediaDive J825 / JCM Medium 825
+  notes: MediaDive J825 / JCM Medium 825 lists 1.0 g/L NaH2PO4 x 2 H2O.
   term:
-    id: CHEBI:30961
-    label: pyridoxine hydrochloride
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
   mediaingredientmech_chebi_term:
-    id: CHEBI:30961
-    label: pyridoxine hydrochloride
-- preferred_term: Thiamine HCl
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: MediaDive J825 / JCM Medium 825
+  notes: MediaDive J825 / JCM Medium 825 lists 1.0 g/L Tryptone (BD-Difco).
   term:
-    id: CHEBI:49105
-    label: thiamine hydrochloride
+    id: MICRO:0000182
+    label: Tryptone
+  nutritional_roles:
+  - PROTEIN_SOURCE
+- preferred_term: Peptone
   concentration:
-    value: '0.005'
+    value: '1.0'
     unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:49105
-    label: thiamine hydrochloride
-- preferred_term: Riboflavin
+  source: MediaDive J825 / JCM Medium 825
+  notes: MediaDive J825 / JCM Medium 825 lists 1.0 g/L Peptone.
   term:
-    id: CHEBI:17015
-    label: riboflavin
+    id: MICRO:0000178
+    label: Peptone
+  nutritional_roles:
+  - PROTEIN_SOURCE
+- preferred_term: N2
   concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17015
-    label: riboflavin
-- preferred_term: Nicotinic acid
+    value: variable
+    unit: VARIABLE
+  source: MediaDive J825 / JCM Medium 825
+  notes: MediaDive J825 / JCM Medium 825 lists N2 as an atmosphere component with
+    no fixed liquid-phase concentration.
   term:
-    id: CHEBI:15940
-    label: nicotinic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
+    id: CHEBI:17997
+    label: dinitrogen
   mediaingredientmech_chebi_term:
-    id: CHEBI:15940
-    label: nicotinic acid
-- preferred_term: Calcium pantothenate
+    id: CHEBI:17997
+    label: dinitrogen
+solutions:
+- preferred_term: Trace element solution SL-4
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: MediaDive J825 / JCM Medium 825
+  notes: MediaDive J825 / JCM Medium 825 adds 10.0 ml/L Trace element solution SL-4.
+    The inline stock composition expands the SL-6 trace-element stock that SL-4 contains.
+  composition:
+  - preferred_term: EDTA
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 lists 0.5 g/L EDTA.
+    term:
+      id: CHEBI:4735
+      label: ethylenediaminetetraacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:4735
+      label: ethylenediaminetetraacetic acid
+    physicochemical_roles:
+    - CHELATOR
+  - preferred_term: FeSO4 x 7 H2O
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 lists 0.2 g/L FeSO4 x 7 H2O.
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    nutritional_roles:
+    - IRON_SOURCE
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 expands 100.0 ml/L Trace element solution
+      SL-6 into Trace element solution SL-4; 0.1 g/L ZnSO4 x 7 H2O in SL-6 contributes
+      0.01 g/L in SL-4.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '0.003'
+      unit: G_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 expands 100.0 ml/L Trace element solution
+      SL-6 into Trace element solution SL-4; 0.03 g/L MnCl2 x 4 H2O in SL-6 contributes
+      0.003 g/L in SL-4.
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.03'
+      unit: G_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 expands 100.0 ml/L Trace element solution
+      SL-6 into Trace element solution SL-4; 0.3 g/L H3BO3 in SL-6 contributes 0.03
+      g/L in SL-4.
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 expands 100.0 ml/L Trace element solution
+      SL-6 into Trace element solution SL-4; 0.2 g/L CoCl2 x 6 H2O in SL-6 contributes
+      0.02 g/L in SL-4.
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CuCl2 x 2 H2O
+    concentration:
+      value: '0.001'
+      unit: G_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 expands 100.0 ml/L Trace element solution
+      SL-6 into Trace element solution SL-4; 0.01 g/L CuCl2 x 2 H2O in SL-6 contributes
+      0.001 g/L in SL-4.
+    term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: NiCl2 x 6 H2O
+    concentration:
+      value: '0.002'
+      unit: G_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 expands 100.0 ml/L Trace element solution
+      SL-6 into Trace element solution SL-4; 0.02 g/L NiCl2 x 6 H2O in SL-6 contributes
+      0.002 g/L in SL-4.
+    term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.003'
+      unit: G_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 expands 100.0 ml/L Trace element solution
+      SL-6 into Trace element solution SL-4; 0.03 g/L Na2MoO4 x 2 H2O in SL-6 contributes
+      0.003 g/L in SL-4.
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Distilled water
+    concentration:
+      value: '900.0'
+      unit: ML_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 lists 900.0 ml/L direct distilled water
+      before adding 100.0 ml/L Trace element solution SL-6.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
   term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
+    id: mediadive.solution:4059
+    label: Trace element solution SL-4
+  culturemech_term:
+    id: CultureMech:013111
+    label: Trace element solution SL-4
+- preferred_term: Trace vitamins
   concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-- preferred_term: Vitamin B12
+    value: '10.0'
+    unit: ML_PER_L
+  source: MediaDive J825 / JCM Medium 825
+  notes: MediaDive J825 / JCM Medium 825 adds 10.0 ml/L Trace vitamins from JCM Medium
+    197.
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 lists 2.0 mg/L Biotin.
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Folic acid
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 lists 2.0 mg/L Folic acid.
+    term:
+      id: CHEBI:27470
+      label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Pyridoxine hydrochloride
+    concentration:
+      value: '10.0'
+      unit: MG_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 lists 10.0 mg/L Pyridoxine hydrochloride.
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Thiamine HCl
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 lists 5.0 mg/L Thiamine HCl.
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Riboflavin
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 lists 5.0 mg/L Riboflavin.
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 lists 5.0 mg/L Nicotinic acid.
+    term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Calcium pantothenate
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 lists 5.0 mg/L Calcium pantothenate.
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.1'
+      unit: MG_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 lists 0.1 mg/L Vitamin B12.
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+    nutritional_roles:
+    - VITAMIN_SOURCE
+    - COFACTOR_PROVIDER
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 lists 5.0 mg/L p-Aminobenzoic acid.
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Lipoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 lists 5.0 mg/L Lipoic acid.
+    term:
+      id: CHEBI:16494
+      label: lipoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16494
+      label: lipoic acid
+    nutritional_roles:
+    - VITAMIN_SOURCE
+    - COFACTOR_PROVIDER
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 lists 1000.0 ml/L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
   term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: mediadive.solution:3861
+    label: Trace vitamins
+  culturemech_term:
+    id: CultureMech:012935
+    label: Trace vitamins
+- preferred_term: 8% NaHCO3 solution
   concentration:
-    value: '0.0001'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
-- preferred_term: p-Aminobenzoic acid
+    value: '1.25'
+    unit: ML_PER_L
+  source: MediaDive J825 / JCM Medium 825
+  notes: MediaDive J825 / JCM Medium 825 adds 1.25 ml/L sterile anaerobic 8% NaHCO3
+    stock.
+  composition:
+  - preferred_term: NaHCO3
+    concentration:
+      value: '80.0'
+      unit: G_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 lists 80.0 g/L NaHCO3.
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    physicochemical_roles:
+    - BUFFER
   term:
-    id: CHEBI:30753
-    label: 4-aminobenzoic acid
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: 10% Glucose solution
   concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30753
-    label: 4-aminobenzoic acid
-- preferred_term: Lipoic acid
+    value: '50.0'
+    unit: ML_PER_L
+  source: MediaDive J825 / JCM Medium 825
+  notes: MediaDive J825 / JCM Medium 825 adds 50.0 ml/L sterile anaerobic 10% glucose
+    stock.
+  composition:
+  - preferred_term: Glucose
+    concentration:
+      value: '100.0'
+      unit: G_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 lists 100.0 g/L Glucose.
+    term:
+      id: CHEBI:17234
+      label: glucose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17234
+      label: glucose
+    nutritional_roles:
+    - CARBON_SOURCE
+    - ENERGY_SOURCE
   term:
-    id: CHEBI:16494
-    label: lipoic acid
+    id: CHEBI:17234
+    label: glucose
+- preferred_term: 3% Na2S x 9 H2O solution
   concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:16494
-    label: lipoic acid
-- preferred_term: ZnSO4 x 7 H2O
+    value: '10.0'
+    unit: ML_PER_L
+  source: MediaDive J825 / JCM Medium 825
+  notes: MediaDive J825 / JCM Medium 825 adds 10.0 ml/L sterile anaerobic 3% Na2S
+    x 9 H2O stock.
+  composition:
+  - preferred_term: Na2S x 9 H2O
+    concentration:
+      value: '30.0'
+      unit: G_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 lists 30.0 g/L Na2S x 9 H2O.
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    nutritional_roles:
+    - SULFUR_SOURCE
+    physicochemical_roles:
+    - REDUCING_AGENT
   term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+- preferred_term: 3% L-Cysteine HCl x H2O solution
   concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-- preferred_term: MnCl2 x 4 H2O
+    value: '10.0'
+    unit: ML_PER_L
+  source: MediaDive J825 / JCM Medium 825
+  notes: MediaDive J825 / JCM Medium 825 adds 10.0 ml/L sterile anaerobic 3% L-cysteine
+    HCl x H2O stock.
+  composition:
+  - preferred_term: L-Cysteine HCl x H2O
+    concentration:
+      value: '30.0'
+      unit: G_PER_L
+    source: MediaDive J825 / JCM Medium 825
+    notes: MediaDive J825 / JCM Medium 825 lists 30.0 g/L L-Cysteine HCl x H2O.
+    term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+    nutritional_roles:
+    - AMINO_ACID_SOURCE
+    - SULFUR_SOURCE
+    physicochemical_roles:
+    - REDUCING_AGENT
   term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: boric acid
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:33118
-    label: boric acid
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:53503
-    label: cobalt chloride hexahydrate
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:53503
-    label: cobalt chloride hexahydrate
-- preferred_term: CuCl2 x 2 H2O
-  term:
-    id: CHEBI:86318
-    label: copper(II) chloride dihydrate
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86318
-    label: copper(II) chloride dihydrate
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: nickel dichloride
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:34887
-    label: nickel dichloride
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Mix the basal salts, yeast extract, BD-Difco tryptone, peptone, resazurin,
+    10.0 ml/L Trace element solution SL-4, 10.0 ml/L Trace vitamins, and 930.0 ml/L
+    distilled water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust the medium to pH 7.0.
+- step_number: 3
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.0. Autoclave the medium
-    under a N2 atmosphere. Add the following solutions from sterile anaerobic stocks
-    (autoclaved or *filter-sterilized):'
+  description: Autoclave the medium under an N2 atmosphere.
+- step_number: 4
+  action: MIX
+  description: After autoclaving, add 1.25 ml/L sterile anaerobic 8% NaHCO3 solution,
+    50.0 ml/L 10% glucose solution, 10.0 ml/L 3% Na2S x 9 H2O solution, and 10.0 ml/L
+    3% L-cysteine HCl x H2O solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -350,3 +651,24 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m860_koko_score15.py
+  action: RESOLVED_JCM_825_KOKO_MEDIUM
+  source: https://mediadive.dsmz.de/medium/J825; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=825
+  notes: Replaced the previously flattened stock constituents with the source-level
+    KOKO Medium recipe, corrected the water and resazurin units, restored the SL-4,
+    Trace vitamins, glucose, NaHCO3, Na2S, and L-cysteine stock additions, and linked
+    the TOGO M860 source duplicate.
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M860_KOKO_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010277
+  name: koko_medium
+  notes: TOGO M860 imports the same JCM Medium 825 KOKO Medium formulation represented
+    by MediaDive J825.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://mediadive.dsmz.de/medium/J825
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=825

@@ -4,47 +4,57 @@ term:
   id: mediadive.solution:4761
   label: Main sol. J813
 composition:
-- preferred_term: Tryptone
+- preferred_term: Tryptone (BD-Difco)
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
+  source: MediaDive solution 4761 / JCM Medium 813
+  notes: MediaDive solution 4761 / JCM Medium 813 lists 10.0 g/L Tryptone (BD-Difco).
   term:
-    id: mediadive.compound:71
+    id: MICRO:0000182
     label: Tryptone
-- preferred_term: Yeast extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
+- preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
+  source: MediaDive solution 4761 / JCM Medium 813
+  notes: MediaDive solution 4761 / JCM Medium 813 lists 5.0 g/L Yeast extract (BD-Difco).
   term:
-    id: mediadive.compound:16
+    id: FOODON:03315426
     label: Yeast extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
+  - VITAMIN_SOURCE
 - preferred_term: NaCl
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
+  source: MediaDive solution 4761 / JCM Medium 813
+  notes: MediaDive solution 4761 / JCM Medium 813 lists 10.0 g/L NaCl.
   term:
-    id: mediadive.compound:43
-    label: NaCl
-  chebi_term:
     id: CHEBI:26710
     label: sodium chloride
-    confidence: 1.0
-    match_type: exact_match
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Distilled water
   concentration:
-    value: '1000'
-    unit: PERCENT_V_V
+    value: '1000.0'
+    unit: ML_PER_L
+  source: MediaDive solution 4761 / JCM Medium 813
+  notes: MediaDive solution 4761 / JCM Medium 813 lists 1000.0 ml/L Distilled water.
   term:
-    id: mediadive.compound:4
-    label: Distilled water
-  chebi_term:
     id: CHEBI:15377
     label: water
-    confidence: 0.7
-    match_type: corpus_consensus
-preparation_notes: 'Adjust pH to 7.0.
-
-  After autoclaving, aseptically add 1 mM (final conc.) 1,4-dithiothreitol (DTT).'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+preparation_notes: Adjust pH to 7.0.
+notes: MediaDive solution 4761 is the pH-adjusted basal LB solution for JCM Medium
+  813; 1,4-dithiothreitol is added separately after autoclaving to a 1.0 mM final
+  concentration.
 curation_history:
 - timestamp: '2026-03-13T06:20:32.974734Z'
   curator: culturemech-id-assigner-v1.0
@@ -83,11 +93,16 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m848_lb_dtt_score15.py
+  action: RESOLVED_MEDIADIVE_4761_MAIN_SOL_J813
+  source: https://mediadive.dsmz.de/medium/J813
+  notes: Corrected the distilled-water quantity from 1000% v/v to 1000.0 ml/L, restored
+    the BD-Difco basal LB component names from JCM Medium 813, and removed the placeholder
+    top-level ingredient.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/medium/J813

@@ -5,72 +5,52 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.2
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '101.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
-    Defined component [Merged 2 duplicates: 1.0, 100.0]'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Agar
-  concentration:
-    value: '18'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
 - preferred_term: Oatmeal (Quaker White Oats)
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Nutrient source'
-- preferred_term: FeSO4・7H2O
+  notes: TOGO M42 and JCM Medium 50 list this component for Oatmeal Agar (ISP-3);
+    JCM pH variants reuse the same formulation with different final pH values.
+  nutritional_roles:
+  - CARBON_SOURCE
+  - NITROGEN_SOURCE
+- preferred_term: Agar
   concentration:
-    value: '0.1'
+    value: '18'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: TOGO M42 and JCM Medium 50 list this component for Oatmeal Agar (ISP-3);
+    JCM pH variants reuse the same formulation with different final pH values.
   term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
-- preferred_term: MnCl2・4H2O
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
   concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+    value: '1000'
+    unit: ML_PER_L
+  notes: TOGO M42 and JCM Medium 50 list this component for Oatmeal Agar (ISP-3);
+    JCM pH variants reuse the same formulation with different final pH values.
   term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-- preferred_term: ZnSO4・7H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M42
   term:
     id: TOGO:M42
     label: Oatmeal Agar (ISP-3)
-notes: 'Source: https://togomedium.org/medium/M42
-
-  Original source: JCM - JCM_M50
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=50'
+notes: 'TOGO M42 mirrors JCM Medium 50: oatmeal is cooked or steamed in distilled
+  water, filtered through cheesecloth, restored to 1 L, supplemented with 1 mL Trace
+  salts solution and agar, adjusted to pH 7.2, and autoclaved. The Trace salts solution
+  stock is modeled as a solution rather than as undiluted final-liter ingredients.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -117,10 +97,138 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_ph_score40.py
+  action: RESOLVED_JCM_PH_SCORE40_GRAPH
+  changes: Resolved score-40 JCM pH-variant recipe graph
+  source: https://togomedium.org/medium/M42; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=50
+  notes: 'TOGO M42 mirrors JCM Medium 50: oatmeal is cooked or steamed in distilled
+    water, filtered through cheesecloth, restored to 1 L, supplemented with 1 mL Trace
+    salts solution and agar, adjusted to pH 7.2, and autoclaved. The Trace salts solution
+    stock is modeled as a solution rather than as undiluted final-liter ingredients.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_ph_score40.py
+  action: LINKED_JCM_PH_SCORE40_CHILDREN
+  changes: Linked score-40 JCM pH variants to source parents
+  notes: Added or refreshed reciprocal parent-child link for bacterial/TOGO_M394_Acidic_Oatmeal_Agar_pH_5.0.yaml.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_ph_score40.py
+  action: LINKED_JCM_PH_SCORE40_CHILDREN
+  changes: Linked score-40 JCM pH variants to source parents
+  notes: Added or refreshed reciprocal parent-child link for bacterial/TOGO_M709_Oatmeal_Agar_pH_6.0.yaml.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_isp_supplements_score40.py
+  action: LINKED_JCM_ISP_SUPPLEMENTS_SCORE40_CHILDREN
+  changes: Linked score-40 JCM ISP supplement child
+  source: bacterial/TOGO_M42_Oatmeal_Agar_ISP-3.yaml; bacterial/oatmeal_agar_isp_3_with_0_1_yeast_extract.yaml
+  notes: JCM Medium 51 supplements JCM Medium 50 Oatmeal Agar (ISP-3) with 1.0 g/L
+    Yeast extract (BD-Difco).
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_official_simple_backlinks.py
+  action: ADDED_OFFICIAL_SIMPLE_BACKLINKS
+  changes: Added reciprocal variant_children links
+  source: TOGO:M42
+  notes: Mirrored curated official-simple parent_media links on the parent record.
 solutions:
-- preferred_term: Trace salts solution (see below)
-  composition: []
+- preferred_term: Trace salts solution
   concentration:
     value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    unit: ML_PER_L
+  notes: JCM Medium 50 prepares Trace salts solution from 0.1 g each FeSO4 x 7 H2O,
+    MnCl2 x 4 H2O, and ZnSO4 x 7 H2O in 100 mL distilled water, then adds 1 mL stock
+    per final liter.
+  composition:
+  - preferred_term: FeSO4 x 7 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    notes: JCM Medium 50 prepares Trace salts solution from 0.1 g each FeSO4 x 7 H2O,
+      MnCl2 x 4 H2O, and ZnSO4 x 7 H2O in 100 mL distilled water, then adds 1 mL stock
+      per final liter.
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    nutritional_roles:
+    - IRON_SOURCE
+    - SULFUR_SOURCE
+    - TRACE_ELEMENT
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    notes: JCM Medium 50 prepares Trace salts solution from 0.1 g each FeSO4 x 7 H2O,
+      MnCl2 x 4 H2O, and ZnSO4 x 7 H2O in 100 mL distilled water, then adds 1 mL stock
+      per final liter.
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    notes: JCM Medium 50 prepares Trace salts solution from 0.1 g each FeSO4 x 7 H2O,
+      MnCl2 x 4 H2O, and ZnSO4 x 7 H2O in 100 mL distilled water, then adds 1 mL stock
+      per final liter.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    nutritional_roles:
+    - SULFUR_SOURCE
+    - TRACE_ELEMENT
+  preparation_notes: Prepare the trace-salt stock in 100 mL distilled water; the composition
+    concentrations are normalized to g/L of stock.
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Cook or steam 20 g oatmeal in 1 L distilled water for 20 min, then
+    filter through cheesecloth.
+- step_number: 2
+  action: MIX
+  description: Bring the filtrate back to 1 L with distilled water, then add 1 mL
+    Trace salts solution and 18 g agar.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust the complete medium to pH 7.2.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M42
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=50
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M394_Acidic_Oatmeal_Agar_pH_5.0.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:009776
+  name: acidic_oatmeal_agar_ph_5_0
+  notes: Adjusts TOGO M42 Oatmeal Agar (ISP-3) to pH 5.0.
+- path: data/normalized_yaml/bacterial/TOGO_M709_Oatmeal_Agar_pH_6.0.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:010116
+  name: oatmeal_agar_ph_6_0
+  notes: Adjusts TOGO M42 Oatmeal Agar (ISP-3) to pH 6.0.
+- path: data/normalized_yaml/bacterial/oatmeal_agar_isp_3_with_0_1_yeast_extract.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:009825
+  name: oatmeal_agar_isp_3_with_0_1_yeast_extract
+  notes: JCM Medium 51 supplements JCM Medium 50 Oatmeal Agar (ISP-3) with 1.0 g/L
+    Yeast extract (BD-Difco).
+- path: data/normalized_yaml/fungal/oatmeal_agar_isp_3_with_0_1_yeast_extract.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:010531
+  name: oatmeal_agar_isp_3_with_0_1_yeast_extract
+  notes: Supplements 1.0 L Oatmeal agar (ISP-3) with 1.0 g/L Yeast extract (BD-Difco).

@@ -10,28 +10,23 @@ media_term:
   term:
     id: mediadive.medium:J1164
     label: MARINE AGAR 2216 WITH 1% STARCH
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1164'
+notes: JCM Medium 1164 defines Marine Agar 2216 with 1% starch as 1 L of JCM Medium
+  118 Marine Agar 2216 plus 10 g/L soluble starch.
 ingredients:
-- preferred_term: Marine agar 2216
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Starch
-  term:
-    id: CHEBI:28017
-    label: starch
+- preferred_term: Soluble starch
   concentration:
     value: '10'
     unit: G_PER_L
+  source: JCM Medium 1164
+  notes: Adds 10 g/L soluble starch to JCM Medium 118 Marine Agar 2216.
+  term:
+    id: CHEBI:28017
+    label: starch
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
     label: starch
+  nutritional_roles:
+  - CARBON_SOURCE
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,3 +53,40 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_marine_agar_score20.py
+  action: RESOLVED_JCM_MARINE_AGAR_SCORE20
+  changes: Resolved score-20 JCM Marine Agar 2216 additive wrapper
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1164; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=118
+  notes: Adds 10 g/L soluble starch to JCM Medium 118 Marine Agar 2216.
+solutions:
+- preferred_term: Marine agar 2216
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  notes: Adds 10 g/L soluble starch to JCM Medium 118 Marine Agar 2216.
+  culturemech_term:
+    id: CultureMech:015393
+    label: Marine Agar 2216
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adds 10 g/L soluble starch to JCM Medium 118 Marine Agar 2216.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+parent_media:
+  path: data/normalized_yaml/specialized/marine_agar_2216.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:015393
+  name: marine_agar_2216
+  notes: Adds 10 g/L soluble starch to JCM Medium 118 Marine Agar 2216.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adds 10 g/L soluble starch to JCM Medium 118 Marine Agar 2216.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1164
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=118

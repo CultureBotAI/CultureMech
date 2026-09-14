@@ -11,23 +11,68 @@ media_term:
   term:
     id: mediadive.medium:J455
     label: ALKALI-REINFORCED CLOSTRIDIAL AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=455'
+notes: JCM Medium 455 Alkali-Reinforced Clostridial Agar lists 51 g Reinforced clostridial
+  agar (Sigma) in 900 ml distilled water per liter. After autoclaving at 121 C for
+  15 min, 100 ml of sterile 10% Na2CO3 solution is added aseptically and the final
+  pH is checked to be about 10.0.
 ingredients:
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
+- preferred_term: Reinforced clostridial agar (Sigma)
   concentration:
-    value: '56.6667'
+    value: '51.0'
     unit: G_PER_L
+  source: MediaDive J455 / JCM Medium 455
+  notes: MediaDive J455 / JCM Medium 455 lists 51.0 g/L Reinforced clostridial agar
+    (Sigma); this dehydrated commercial mixture is retained as an opaque complex component.
+- preferred_term: Distilled water
+  concentration:
+    value: '900.0'
+    unit: ML_PER_L
+  source: MediaDive J455 / JCM Medium 455
+  notes: MediaDive J455 / JCM Medium 455 lists 900.0 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
   mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
+    id: CHEBI:15377
+    label: water
+solutions:
+- preferred_term: 10% Na2CO3 solution
+  concentration:
+    value: '100.0'
+    unit: ML_PER_L
+  source: MediaDive J455 / JCM Medium 455
+  notes: MediaDive J455 / JCM Medium 455 adds 100.0 ml/L sterile 10% Na2CO3 solution.
+  composition:
+  - preferred_term: Na2CO3
+    concentration:
+      value: '10.0'
+      unit: PERCENT_W_V
+    source: MediaDive J455 / JCM Medium 455
+    notes: JCM Medium 455 specifies a 10% Na2CO3 solution.
+    term:
+      id: CHEBI:29377
+      label: sodium carbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:29377
+      label: sodium carbonate
+  preparation_notes: Sterilize the 10% Na2CO3 solution before aseptic addition.
 preparation_steps:
 - step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave the reinforced clostridial agar base at 121 C for 15 min.
+- step_number: 2
+  action: MIX
+  description: Aseptically add 100 ml/L sterile 10% Na2CO3 solution after autoclaving.
+- step_number: 3
   action: ADJUST_PH
-  description: After autoclaving, aseptically add 100 ml of a 10% Na2CO3 solution
-    to the medium. Check final pH to be about 10.0.
+  description: Check final pH to be about 10.0.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: Sterilize the 10% Na2CO3 solution separately before aseptic addition.
 applications:
 - Microbial cultivation
 curation_history:
@@ -54,4 +99,27 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-kg_microbe_match: mediadive.medium:12
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m455_score15.py
+  action: RESOLVED_JCM_455_ALKALI_REINFORCED_CLOSTRIDIAL_AGAR
+  source: https://togomedium.org/medium/M455; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=455;
+    https://mediadive.dsmz.de/medium/J455
+  notes: JCM Medium 455 Alkali-Reinforced Clostridial Agar lists 51 g Reinforced clostridial
+    agar (Sigma) in 900 ml distilled water per liter. After autoclaving at 121 C for
+    15 min, 100 ml of sterile 10% Na2CO3 solution is added aseptically and the final
+    pH is checked to be about 10.0.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M455
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=455
+- reference: https://mediadive.dsmz.de/medium/J455
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M455_Alkali-Reinforced_Clostridial_Agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009842
+  name: alkali_reinforced_clostridial_agar
+  notes: TOGO M455 imports the same JCM Medium 455 Alkali-Reinforced Clostridial Agar
+    formulation represented by MediaDive J455.

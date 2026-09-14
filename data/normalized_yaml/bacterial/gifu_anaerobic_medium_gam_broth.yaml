@@ -8,10 +8,10 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2684
+  notes: TOGO M2684 lists 1.0 L distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -22,13 +22,15 @@ ingredients:
   concentration:
     value: '59'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2684
+  notes: TOGO M2684 lists 59 g/L GAM broth from Nissui.
 media_term:
   preferred_term: TOGO Medium M2684
   term:
     id: TOGO:M2684
     label: Gifu anaerobic medium (GAM) broth
-notes: 'Source: https://togomedium.org/medium/M2684'
+notes: TOGO M2684 records 59 g/L GAM broth from Nissui in distilled water with anaerobic
+  growth at 37 C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -59,3 +61,17 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_sparse_score20.py
+  action: RESOLVED_TOGO_SPARSE_SCORE20
+  changes: Resolved sparse score-20 TOGO product record
+  source: https://togomedium.org/medium/M2684
+  notes: TOGO M2684 records 59 g/L GAM broth from Nissui in distilled water with anaerobic
+    growth at 37 C.
+temperature_value: 37.0
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2684

@@ -161,12 +161,22 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_104b_pyx_ph_score10.py
+  action: RESOLVED_KOMODO_104B_PYX_STRAIN_VARIANTS
+  changes: Linked as a PYX-MEDIUM strain-specific variant
+  source: KOMODO Medium 104b.2
+  notes: KOMODO Medium 104b.2 preserves PYX-MEDIUM components and pH 7 but applies
+    the recipe for DSM 753.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_104b_PYX-MEDIUM.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003622
   name: pyx_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 104b is the pH 7 PYX-MEDIUM base.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 104b.2 preserves PYX-MEDIUM components and pH 7 but applies the recipe
+  for DSM 753.
+data_quality_flags:
+- ingredients_curated

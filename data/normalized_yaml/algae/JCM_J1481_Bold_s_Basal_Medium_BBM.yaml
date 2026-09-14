@@ -3,36 +3,63 @@ id_lineage_token: legacy:3f3c608ec49092c7f74774bb653ad791d1cd571799ba35dc9473f24
 name: bold_s_basal_medium_bbm
 original_name: Bold's Basal Medium (BBM)
 category: algae
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J1481
   term:
     id: jcm.grmd:1481
     label: Bold's Basal Medium (BBM)
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1481'
+notes: JCM Medium 1481 lists 20 g agar and 980 ml distilled water for one liter of
+  Bold's Basal Medium (BBM) and instructs adding 20 ml Sigma-Aldrich Bold Modified
+  Basal Freshwater Nutrient Solution, 50x, after autoclaving.
 ingredients:
 - preferred_term: Agar
   concentration:
     value: '20'
     unit: G_PER_L
+  source: JCM Medium 1481
   term:
     id: CHEBI:2509
     label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  notes: JCM Medium 1481 lists 20 g agar per liter.
 - preferred_term: Distilled water
   concentration:
     value: '980'
     unit: ML_PER_L
+  source: JCM Medium 1481
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
+  notes: JCM Medium 1481 lists 980 ml distilled water per liter.
+- preferred_term: Sigma-Aldrich Bold Modified Basal Freshwater Nutrient Solution,
+    50x
+  concentration:
+    value: '20'
+    unit: ML_PER_L
+  source: JCM Medium 1481
+  notes: JCM Medium 1481 says to add 20 ml of this 50x commercial BBM stock after
+    autoclaving.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix 20 g agar into 980 ml distilled water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+- step_number: 3
+  action: MIX
+  description: After autoclaving, aseptically add 20 ml Sigma-Aldrich Bold Modified
+    Basal Freshwater Nutrient Solution, 50x.
+sterilization:
+  method: AUTOCLAVE
 applications:
 - Microbial cultivation
 curation_history:
@@ -49,3 +76,17 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_1481_bbm_score20.py
+  action: RESOLVED_JCM_1481_BBM_SCORE20
+  changes: Added omitted 50x BBM stock to JCM Medium 1481
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1481
+  notes: JCM Medium 1481 lists 20 g agar and 980 ml distilled water for one liter
+    of Bold's Basal Medium (BBM) and instructs adding 20 ml Sigma-Aldrich Bold Modified
+    Basal Freshwater Nutrient Solution, 50x, after autoclaving.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1481

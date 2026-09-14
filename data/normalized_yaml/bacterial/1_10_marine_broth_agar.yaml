@@ -22,7 +22,15 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M1774
+  notes: 'Role: Solidifying component; TOGO M1774 lists agar only as an optional solidifying
+    agent.'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Bacto Marine Broth 2216 (Difco)
   concentration:
     value: '3.7'
@@ -68,6 +76,13 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_marine_broth_dilutions_score15.py
+  action: RESOLVED_TOGO_MARINE_BROTH_DILUTION_SCORE15
+  source: https://togomedium.org/medium/M1774; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=990
+  notes: TOGO M1774 mirrors NBRC Medium 990 and lists agar only as the optional solidifying
+    agent; Bacto Marine Broth 2216 remains a source-disclosed opaque Difco product.
+    TOGO states pH unadjusted.
 parent_media:
   path: data/normalized_yaml/bacterial/1_2_marine_broth_agar.yaml
   relationship: CONCENTRATION_VARIANT
@@ -79,3 +94,10 @@ variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
 - 1/10 Marine Broth (Agar) decreases Bacto Marine Broth 2216 from 18.7 g/L to 3.7
   g/L while agar remains 15 g/L.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1774
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=990

@@ -6,73 +6,100 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
 - preferred_term: Yeast extract
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Activated carbon
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Protective agent; Properties: Undefined component'
-- preferred_term: ACES (N-(2-Acetamido)-2-aminoethanesulfonic acid)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
-- preferred_term: Soluble iron pyrophosphate
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component'
-- preferred_term: α-Ketoglutarate potassium
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Simple component, Organic compound, Defined
-    component'
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M2056 / NBRC Medium 1357
+  notes: NBRC Medium 1357 lists 10.0 g/L Yeast extract.
   term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: L-Cysteine hydrochloride
   concentration:
     value: '0.4'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000459
-    label: L-Cysteine hydrochloride
+  source: TOGO M2056 / NBRC Medium 1357
+  notes: NBRC Medium 1357 lists 0.4 g/L L-Cysteine hydrochloride.
+  term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+- preferred_term: Soluble iron pyrophosphate
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  source: TOGO M2056 / NBRC Medium 1357
+  notes: NBRC Medium 1357 lists 0.25 g/L Soluble iron pyrophosphate.
+  term:
+    id: CHEBI:132767
+    label: ferric pyrophosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132767
+    label: ferric pyrophosphate
+- preferred_term: Activated carbon
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: TOGO M2056 / NBRC Medium 1357
+  notes: NBRC Medium 1357 lists 2 g/L activated carbon; this adsorbent material is
+    retained as an opaque protective component.
+- preferred_term: ACES (N-(2-Acetamido)-2-aminoethanesulfonic acid)
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: TOGO M2056 / NBRC Medium 1357
+  notes: NBRC Medium 1357 lists 10.0 g/L ACES (N-(2-Acetamido)-2-aminoethanesulfonic
+    acid).
+  term:
+    id: CHEBI:39061
+    label: ACES
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39061
+    label: ACES
+- preferred_term: α-Ketoglutarate potassium
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: TOGO M2056 / NBRC Medium 1357
+  notes: NBRC Medium 1357 lists 1 g/L alpha-Ketoglutarate potassium; this row is left
+    ungrounded because ChEBI has no exact term for the potassium salt.
+- preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: TOGO M2056 / NBRC Medium 1357
+  notes: NBRC Medium 1357 lists 15.0 g/L Agar.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: TOGO M2056 / NBRC Medium 1357
+  notes: NBRC Medium 1357 lists 1 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M2056
   term:
     id: TOGO:M2056
     label: B-CYEα agar medium
-notes: 'Source: https://togomedium.org/medium/M2056
-
-  Original source: NBRC - NBRC_M1357
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1357'
+notes: TOGO M2056 imports NBRC Medium 1357 as B-CYE alpha agar medium. NBRC 1357 lists
+  10 g yeast extract, 0.4 g L-Cysteine hydrochloride, 0.25 g soluble iron pyrophosphate,
+  2 g activated carbon, 10 g ACES, 1 g alpha-Ketoglutarate potassium, 15 g agar, 1
+  L distilled water, and pH 6.9. NBRC 1357 notes that the prepared E-MP96 medium is
+  available from Eiken Chemical Co., Ltd.
 applications:
 - Microbial cultivation
 curation_history:
@@ -103,3 +130,25 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2056_bcye_score15.py
+  action: RESOLVED_TOGO_M2056_SCORE15
+  source: https://togomedium.org/medium/M2056; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1357
+  notes: TOGO M2056 imports NBRC Medium 1357 as B-CYE alpha agar medium. NBRC 1357
+    lists 10 g yeast extract, 0.4 g L-Cysteine hydrochloride, 0.25 g soluble iron
+    pyrophosphate, 2 g activated carbon, 10 g ACES, 1 g alpha-Ketoglutarate potassium,
+    15 g agar, 1 L distilled water, and pH 6.9. NBRC 1357 notes that the prepared
+    E-MP96 medium is available from Eiken Chemical Co., Ltd. Corrected the imported
+    water g/L artifact, added the NBRC pH, and marked the NBRC formula as curated.
+ph_value: 6.9
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.9.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2056
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1357

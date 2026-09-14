@@ -14,15 +14,20 @@ notes: 'Source: CCAP | Link: https://www-cyanosite.bio.purdue.edu/media/table/SN
 
   Composition verified against https://www-cyanosite.bio.purdue.edu/media/table/SNA.html
   on 2026-08-25.'
+salinity: marine (natural seawater or artificial seawater)
 ingredients:
 - preferred_term: Nutrient agar (Oxoid CM3)
   concentration:
     value: '28.0'
     unit: G_PER_L
+  source: CCAP 2SNA
+  notes: CCAP 2SNA lists 28.0 g Nutrient agar (Oxoid CM3).
 - preferred_term: NaCl
   concentration:
     value: '35.0'
     unit: G_PER_L
+  source: CCAP 2SNA
+  notes: CCAP 2SNA lists 35.0 g NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -31,10 +36,11 @@ ingredients:
     label: sodium chloride
 - preferred_term: Filtered natural seawater
   concentration:
-    value: '1'
-    unit: L
-  notes: Natural-seawater formulation. The source also permits 35 g/L synthetic sea
-    salts in distilled water.
+    value: '1000'
+    unit: ML_PER_L
+  source: CCAP 2SNA
+  notes: CCAP 2SNA lists 1000 mL filtered natural seawater. The source also permits
+    35 g/L synthetic sea salts in distilled water.
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -83,5 +89,17 @@ curation_history:
   notes: Restored 2sna from the reviewed authoritative source. Preserved stock boundaries
     and source alternatives; removed the incomplete flag where present. Ingredient
     identities follow the MediaIngredientMech SSSOM.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_ccap_2sna_score15.py
+  action: RESOLVED_CCAP_2SNA_SCORE15
+  source: https://www-cyanosite.bio.purdue.edu/media/table/SNA.html
+  notes: CCAP 2SNA lists 28.0 g Nutrient agar (Oxoid CM3), 35.0 g NaCl, and 1000 mL
+    filtered natural seawater.
 sterilization:
   method: AUTOCLAVE
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www-cyanosite.bio.purdue.edu/media/table/SNA.html

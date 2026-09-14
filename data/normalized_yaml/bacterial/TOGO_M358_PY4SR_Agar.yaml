@@ -5,38 +5,17 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ingredients:
-- preferred_term: plant residue extract (see below)
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: water
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  concentration:
-    value: variable
-    unit: VARIABLE
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: rice straw
-  notes: 'Role: Nutrient source'
-  concentration:
-    value: variable
-    unit: VARIABLE
+ingredients: []
+ph_value: 6.7
 media_term:
   preferred_term: TOGO Medium M358
   term:
     id: TOGO:M358
     label: PY4SR Agar
-notes: 'Source: https://togomedium.org/medium/M358
-
-  Original source: JCM - JCM_M364
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=364'
+notes: TOGO M358 imports JCM Medium 364 PY4SR Agar. JCM Medium 364 uses JCM Medium
+  363 PY4S Agar supplemented with 50 ml/L plant residue extract prepared by autoclaving
+  rice straw in water at a 1:5 ratio for 20 min at 120 C and using the supernatant
+  after centrifugation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -83,11 +62,72 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m358_score15.py
+  action: RESOLVED_TOGO_M358_SCORE15
+  source: https://togomedium.org/medium/M358; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=364;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=363
+  notes: TOGO M358 imports JCM Medium 364 PY4SR Agar. JCM Medium 364 uses JCM Medium
+    363 PY4S Agar supplemented with 50 ml/L plant residue extract prepared by autoclaving
+    rice straw in water at a 1:5 ratio for 20 min at 120 C and using the supernatant
+    after centrifugation. Corrected the imported stock-reference unit artifact, represented
+    the plant residue extract as a 50 ml/L supplement, and linked the record to JCM
+    Medium 363 PY4S Agar.
 solutions:
-- preferred_term: PY4S AGAR (see Medium [M357])
-  composition: []
-  notes: Cross-reference to Medium M357
+- preferred_term: Plant residue extract
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '50.0'
+    unit: ML_PER_L
+  source: TOGO M358 / JCM Medium 364
+  notes: JCM Medium 364 adds 50 ml/L Plant residue extract to PY4S Agar.
+  composition:
+  - preferred_term: Rice straw
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: TOGO M358 / JCM Medium 364
+    notes: JCM Medium 364 prepares Plant residue extract by autoclaving rice straw
+      in water at a 1:5 ratio; the final soluble rice-straw concentration is not specified.
+  - preferred_term: Distilled water
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: TOGO M358 / JCM Medium 364
+    notes: JCM Medium 364 prepares Plant residue extract by autoclaving rice straw
+      in water at a 1:5 ratio.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  preparation_notes: Autoclave rice straw in water (1:5) at 120 C for 20 min and use
+    the supernatant after centrifugation.
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave rice straw in water at a 1:5 ratio at 120 C for 20 min to
+    prepare Plant residue extract.
+- step_number: 2
+  action: MIX
+  description: After centrifugation, use the supernatant to supplement PY4S Agar with
+    50 ml/L Plant residue extract.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M358
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=364
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=363
+parent_media:
+  path: data/normalized_yaml/bacterial/py4s_agar.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:002722
+  name: py4s_agar
+  notes: JCM Medium 364 PY4SR Agar uses JCM Medium 363 PY4S Agar supplemented with
+    50 ml/L plant residue extract.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adds 50 ml/L plant residue extract prepared by autoclaving rice straw in water at
+  a 1:5 ratio and using the supernatant after centrifugation.

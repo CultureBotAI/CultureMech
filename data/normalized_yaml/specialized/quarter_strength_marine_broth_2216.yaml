@@ -10,12 +10,27 @@ media_term:
   term:
     id: mediadive.medium:J1049
     label: QUARTER STRENGTH MARINE BROTH 2216
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1049'
+notes: JCM Medium 1049 prepares Quarter Strength Marine Broth 2216 from 9.35 g Marine
+  broth 2216 (BD-Difco) and 1.0 L distilled water.
 ingredients:
-- preferred_term: Marine broth 2216
+- preferred_term: Marine broth 2216 (BD-Difco)
   concentration:
     value: '9.35'
     unit: G_PER_L
+  source: JCM Medium 1049
+  notes: JCM Medium 1049 lists this commercial broth powder.
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: JCM Medium 1049
+  notes: JCM Medium 1049 lists 1.0 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -32,3 +47,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "QUARTER STRENGTH MARINE BROTH 2216" to "quarter_strength_marine_broth_2216"
     for consistent matching
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_commercial_broths_score40.py
+  action: RESOLVED_JCM_COMMERCIAL_BROTH_SCORE40_GRAPH
+  changes: Resolved score-40 JCM commercial-broth recipe graph
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1049
+  notes: JCM Medium 1049 prepares Quarter Strength Marine Broth 2216 from 9.35 g Marine
+    broth 2216 (BD-Difco) and 1.0 L distilled water.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix the JCM Medium 1049 Marine broth 2216 (BD-Difco) and distilled
+    water components.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1049

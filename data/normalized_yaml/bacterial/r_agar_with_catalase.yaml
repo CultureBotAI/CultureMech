@@ -10,33 +10,33 @@ media_term:
   term:
     id: mediadive.medium:J117
     label: R AGAR WITH CATALASE
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=117'
+notes: TOGO M109 records the same JCM Medium 117 wrapper as 1 L of R Agar plus 60
+  mg/L filter-sterilized Catalase.
 ingredients:
-- preferred_term: R agar
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Catalase
+- preferred_term: Catalase (Sigma C-10)
   concentration:
     value: '0.06'
     unit: G_PER_L
+  notes: TOGO M109 maps JCM Medium 117 to 60 mg/L Catalase (Sigma C-10) added to 1
+    L of R Agar.
 preparation_steps:
 - step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave the JCM Medium 26 R Agar base.
+- step_number: 2
+  action: FILTER
+  description: Sterilize catalase separately by filtration.
+- step_number: 3
   action: MIX
-  description: Separately sterilize catalase by filtration.
+  description: Add 60 mg/L sterile catalase to the R Agar base.
 applications:
 - Microbial cultivation
 curation_history:
 - timestamp: '2026-06-14T05:58:58.561437+00:00'
   curator: idnf-grounding-fix-v1.0
   action: Fixed ID_NOT_FOUND term groundings
-  notes: 'Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI, 1 de-grounded (mixture or unverifiable).'
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-26T17:53:15.758453Z'
   curator: mediadive-import
   action: Imported from MediaDive
@@ -60,3 +60,35 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_117_863_score20.py
+  action: RESOLVED_JCM_117_863_SCORE20
+  source: https://togomedium.org/medium/M109; https://togomedium.org/medium/M19
+  notes: TOGO M109 records the same JCM Medium 117 wrapper as 1 L of R Agar plus 60
+    mg/L filter-sterilized Catalase.
+ph_value: 7.2
+solutions:
+- preferred_term: R agar
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  notes: TOGO M109 maps JCM Medium 117 to 1 L of JCM Medium 26 R Agar.
+  culturemech_term:
+    id: CultureMech:002627
+    label: R Agar
+parent_media:
+  path: data/normalized_yaml/bacterial/r_agar.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:002627
+  name: r_agar
+  notes: Supplements JCM Medium 26 R Agar with 60 mg/L filter-sterilized catalase.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Supplements JCM Medium 26 R Agar with 60 mg/L filter-sterilized catalase.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M109
+- reference: https://togomedium.org/medium/M19

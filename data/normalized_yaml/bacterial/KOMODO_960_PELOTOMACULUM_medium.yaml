@@ -366,67 +366,63 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_960_pelotomaculum_score10.py
+  action: RESOLVED_KOMODO_960_PELOTOMACULUM_TOPOLOGY
+  changes: Changed KOMODO Medium 960 child wrappers from duplicates to strain variants
+  source: KOMODO Medium 960.1-960.9 and 960.11
+  notes: Kept KOMODO Medium 960 as the DSMZ Medium 960 source duplicate parent.
 variant_children:
 - path: data/normalized_yaml/bacterial/for_dsm_13752_and_dsm_21041.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006907
   name: for_dsm_13752_and_dsm_21041
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 960.1 applies KOMODO Medium 960 to DSM 13752 and DSM 21041.
 - path: data/normalized_yaml/bacterial/for_dsm_14795.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006908
   name: for_dsm_14795
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 960.2 applies KOMODO Medium 960 to DSM 14795.
 - path: data/normalized_yaml/bacterial/for_dsm_14947.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006909
   name: for_dsm_14947
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 960.3 applies KOMODO Medium 960 to DSM 14947.
 - path: data/normalized_yaml/bacterial/for_dsm_15200_and_dsm_15578.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006910
   name: for_dsm_15200_and_dsm_15578
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 960.4 applies KOMODO Medium 960 to DSM 15200 and DSM 15578.
 - path: data/normalized_yaml/bacterial/for_dsm_16121.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006911
   name: for_dsm_16121
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 960.5 applies KOMODO Medium 960 to DSM 16121.
 - path: data/normalized_yaml/bacterial/for_dsm_16145.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006912
   name: for_dsm_16145
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 960.6 applies KOMODO Medium 960 to DSM 16145.
 - path: data/normalized_yaml/bacterial/for_dsm_16494_and_dsm_22288.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006913
   name: for_dsm_16494_and_dsm_22288
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 960.7 applies KOMODO Medium 960 to DSM 16494 and DSM 22288.
 - path: data/normalized_yaml/bacterial/for_dsm_17711_and_dsm_23604.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006914
   name: for_dsm_17711_and_dsm_23604
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 960.8 applies KOMODO Medium 960 to DSM 17711 and DSM 23604.
 - path: data/normalized_yaml/bacterial/for_dsm_17771.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006915
   name: for_dsm_17771
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 960.9 applies KOMODO Medium 960 to DSM 17771.
 - path: data/normalized_yaml/bacterial/for_dsm_18709.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006906
   name: for_dsm_18709
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 960.11 applies KOMODO Medium 960 to DSM 18709.
 parent_media:
   path: data/normalized_yaml/bacterial/pelotomaculum_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -438,3 +434,5 @@ variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same ingredient and concentration signature; KOMODO record copied from the matching
   DSMZ medium source.
+data_quality_flags:
+- ingredients_curated

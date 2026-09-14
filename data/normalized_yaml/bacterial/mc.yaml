@@ -17,6 +17,9 @@ ingredients:
   concentration:
     value: '11.1111'
     unit: G_PER_L
+  term:
+    id: FOODON:03420180
+    label: Casein
 - preferred_term: Na2HPO4 x 7 H2O
   term:
     id: CHEBI:34683
@@ -41,6 +44,9 @@ ingredients:
   concentration:
     value: '5.55556'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -81,7 +87,8 @@ curation_history:
 - timestamp: '2026-06-14T05:58:58.561437+00:00'
   curator: idnf-grounding-fix-v1.0
   action: Fixed ID_NOT_FOUND term groundings
-  notes: 'Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI, 1 de-grounded (mixture or unverifiable).'
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-26T17:53:19.644606Z'
   curator: mediadive-import
   action: Imported from MediaDive
@@ -108,3 +115,9 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_mixed_score10_exact_terms_batch8.py
+  action: GROUNDED_MIXED_SCORE10_EXACT_TERMS_BATCH8
+  changes: Grounded exact score-10 ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Casein, Yeast extract.

@@ -3,27 +3,30 @@ name: lb_luria_bertani_agar_with_kanamycin_and_rifampicin
 original_name: LB (Luria-Bertani) Agar With Kanamycin And Rifampicin
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Tryptone (BD-Difco)
   concentration:
-    value: '1'
+    value: '10'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
+  source: MediaDive J1168
+  notes: MediaDive J1168 lists 10 g/L Tryptone with the BD-Difco attribute; the product
+    is source-disclosed but not reducible to one ChEBI molecule.
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  source: MediaDive J1168
+  notes: MediaDive J1168 lists 5 g/L Yeast extract with the BD-Difco attribute; the
+    product is source-disclosed but not reducible to one ChEBI molecule.
 - preferred_term: NaCl
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: MediaDive J1168
+  notes: MediaDive J1168 lists 10 g/L sodium chloride.
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -34,35 +37,61 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: MediaDive J1168
+  notes: MediaDive J1168 lists 15 g/L agar as the solidifying component.
   term:
     id: CHEBI:2509
     label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
-- preferred_term: Yeast extract (BD-Difco)
+- preferred_term: Distilled water
   concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Tryptone (BD-Difco)
+    value: '1000'
+    unit: ML_PER_L
+  source: MediaDive J1168
+  notes: MediaDive J1168 lists 1000 ml distilled water in the 1 L main solution.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Kanamycin sulfate
   concentration:
-    value: '10'
+    value: '0.05'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Kanamycin sulfate (dissolved in distilled water)
+  source: MediaDive J1168
+  notes: MediaDive J1168 lists 50 mg Kanamycin sulfate, dissolved in distilled water
+    and filter-sterilized before aseptic post-autoclave addition; 50 mg/L equals 0.05
+    g/L.
+  term:
+    id: CHEBI:6109
+    label: kanamycin A sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6109
+    label: kanamycin A sulfate
+- preferred_term: Rifampicin
   concentration:
-    value: '50'
+    value: '0.025'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Solution, Organic compound, Defined
-    component'
-- preferred_term: Rifampicin (dissolved in methanol)
-  concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
-    Simple component'
+  source: MediaDive J1168
+  notes: MediaDive J1168 lists 25 mg Rifampicin, dissolved in methanol and filter-sterilized
+    before aseptic post-autoclave addition; 25 mg/L equals 0.025 g/L.
+  term:
+    id: CHEBI:28077
+    label: rifampicin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28077
+    label: rifampicin
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust the LB agar base to pH 7.0 before autoclaving.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: After autoclaving, aseptically add the kanamycin sulfate and rifampicin
+    antibiotics as filter-sterilized stocks.
 media_term:
   preferred_term: TOGO Medium M1250
   term:
@@ -103,3 +132,17 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m1250_score15.py
+  action: RESOLVED_TOGO_M1250_SCORE15
+  source: https://togomedium.org/medium/M1250; https://mediadive.dsmz.de/rest/medium/J1168
+  notes: MediaDive J1168 records pH 7.0 LB agar with 10 g/L Tryptone (BD-Difco), 5
+    g/L Yeast extract (BD-Difco), 10 g/L NaCl, 15 g/L agar, and filter-sterilized
+    post-autoclave additions of 50 mg/L kanamycin sulfate and 25 mg/L rifampicin.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1250
+- reference: https://mediadive.dsmz.de/rest/medium/J1168

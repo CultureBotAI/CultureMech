@@ -386,13 +386,21 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-high_metal: true
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_193a_desulfobacter_score10.py
+  action: RESOLVED_KOMODO_193A_DESULFOBACTER_TOPOLOGY
+  changes: Linked under KOMODO Medium 193a as STRAIN_SPECIFIC_VARIANT
+  source: KOMODO Medium 193.1
+  notes: KOMODO Medium 193.1 applies KOMODO Medium 193a to DSM 14956.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_193a_PHB_PYRUVATE_MEDIUM.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:004228
   name: phb_pyruvate_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 193.1 applies KOMODO Medium 193a to DSM 14956.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 193.1 applies KOMODO Medium 193a to DSM 14956.
+high_metal: true
+data_quality_flags:
+- ingredients_curated

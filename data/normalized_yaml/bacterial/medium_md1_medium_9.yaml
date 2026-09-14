@@ -2,6 +2,7 @@ id: CultureMech:004986
 name: medium_md1_medium_9
 original_name: medium MD1 (medium 9)
 category: bacterial
+record_kind: SOLUTION
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID

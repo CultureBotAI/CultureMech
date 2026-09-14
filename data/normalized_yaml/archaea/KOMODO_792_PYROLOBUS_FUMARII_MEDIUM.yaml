@@ -254,25 +254,36 @@ curation_history:
     4 -> "Wolfe''s mineral elixir" @ 1 ml/l. Each moved component matched the MediaDive
     stock by name AND value; bulk ingredients sharing a name were left in place (#150).'
   changes: Nested 4 ingredient(s) under 1 solution(s); ingredients 23 -> 19
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_792_pyrolobus_score10.py
+  action: RESOLVED_KOMODO_792_PYROLOBUS_TOPOLOGY
+  changes: Resolved KOMODO Medium 792 Pyrolobus child topology
+  source: DSMZ Medium 792a, 792b; KOMODO Medium 792.1 and 792.2
+  notes: Moved exact DSMZ 792b and KOMODO strain wrappers plus the DSMZ 792a NaCl/pH
+    concentration variant under the KOMODO Medium 792 Pyrolobus base.
 variant_children:
 - path: data/normalized_yaml/bacterial/caminibacter_mediatlanticus_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001934
   name: caminibacter_mediatlanticus_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: DSMZ Medium 792b has the same 19-ingredient signature as KOMODO Medium 792.
 - path: data/normalized_yaml/bacterial/dsm_16658.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006500
   name: dsm_16658
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 792.2 applies Pyrolobus fumarii medium to DSM 16658.
 - path: data/normalized_yaml/bacterial/for_dsm_15698_and_dsm_24425.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006499
   name: for_dsm_15698_and_dsm_24425
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 792.1 applies Pyrolobus fumarii medium to DSM 15698 and DSM
+    24425.
+- path: data/normalized_yaml/bacterial/thermovibrio_ammonificans_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:001933
+  name: thermovibrio_ammonificans_medium
+  notes: DSMZ Medium 792a shares the KOMODO Medium 792 ingredient identity signature
+    with lower NaCl and pH 5.8.
 solutions:
 - preferred_term: Wolfe's mineral elixir
   composition:
@@ -321,3 +332,5 @@ solutions:
     unit: ML_PER_L
   preparation_notes: Stock prepared in 1000 ml; added at 1 ml per litre of medium.
     Composition and volume from MediaDive (#150).
+data_quality_flags:
+- ingredients_curated

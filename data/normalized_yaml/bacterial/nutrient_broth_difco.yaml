@@ -2,6 +2,7 @@ id: CultureMech:005652
 name: nutrient_broth_difco
 original_name: Nutrient broth (Difco)
 category: bacterial
+record_kind: SOLUTION
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID

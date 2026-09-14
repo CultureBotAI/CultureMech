@@ -337,27 +337,33 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_516_anaerocellum_score10.py
+  action: RESOLVED_KOMODO_516_ANAEROCELLUM_TOPOLOGY
+  changes: Finalized KOMODO Medium 516 as the duplicate child hub
+  source: MediaDive Medium 516 and KOMODO Medium 516
+  notes: Kept KOMODO Medium 516 under the DSMZ/MediaDive parent and finalized its
+    two DSM-specific exact-copy children.
 variant_children:
 - path: data/normalized_yaml/bacterial/for_dsm_6724.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:005872
   name: for_dsm_6724
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 516.1 applies ANAEROCELLUM MEDIUM for DSM 6724.
 - path: data/normalized_yaml/bacterial/medium_516_modified_for_dsm_9003.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:005873
   name: medium_516_modified_for_dsm_9003
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 516_9003 applies ANAEROCELLUM MEDIUM for DSM 9003.
 parent_media:
   path: data/normalized_yaml/bacterial/anaerocellum_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001648
   name: anaerocellum_medium
-  notes: KOMODO record states DSMZ Medium 516 provenance and exactly matches the single
-    same-category DSMZ parent signature.
+  notes: KOMODO Medium 516 exactly mirrors the DSMZ/MediaDive ANAEROCELLUM MEDIUM
+    record.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the matching
-  DSMZ medium source.
+- KOMODO Medium 516 exactly mirrors DSMZ ANAEROCELLUM MEDIUM.
+data_quality_flags:
+- ingredients_curated

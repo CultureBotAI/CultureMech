@@ -407,22 +407,35 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_825_methanobacterium_score10.py
+  action: RESOLVED_KOMODO_825_METHANOBACTERIUM_TOPOLOGY
+  changes: Resolved KOMODO Medium 825 strain wrappers
+  source: KOMODO Medium 825.1, 825.2, 825.3; DSMZ Medium 825
+  notes: Kept KOMODO Medium 825 as the Methanobacterium II base and moved exact-signature
+    DSMZ Medium 825 and DSM-specific KOMODO wrappers under it.
 variant_children:
-- path: data/normalized_yaml/bacterial/dsm_10111.yaml
+- path: data/normalized_yaml/archaea/methanobacterium_ii_medium.yaml
   relationship: SOURCE_DUPLICATE
-  id: CultureMech:006553
-  name: dsm_10111
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  id: CultureMech:001973
+  name: methanobacterium_ii_medium
+  notes: DSMZ Medium 825 has the same 36-component Methanobacterium II signature as
+    KOMODO Medium 825.
 - path: data/normalized_yaml/bacterial/dsm_10131_and_dsm_10132.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006552
   name: dsm_10131_and_dsm_10132
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 825.1 applies METHANOBACTERIUM II medium to DSM 10131 and DSM
+    10132.
+- path: data/normalized_yaml/bacterial/dsm_10111.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006553
+  name: dsm_10111
+  notes: KOMODO Medium 825.2 applies METHANOBACTERIUM II medium to DSM 10111.
 - path: data/normalized_yaml/bacterial/dsm_11106.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006554
   name: dsm_11106
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 825.3 applies METHANOBACTERIUM II medium to DSM 11106.
+data_quality_flags:
+- ingredients_curated

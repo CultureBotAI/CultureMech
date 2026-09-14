@@ -5,40 +5,58 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_range:
+  min: 7.0
+  max: 7.2
 ingredients:
-- preferred_term: Seawater
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media, Mineral source; Properties: Undefined component'
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Na2S2O3・5H2O
+  source: TOGO M217 / JCM Medium 224
+  notes: JCM Medium 224 lists 1 g/L Yeast extract from BD-Difco.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Trypticase peptone (BD-BBL)
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Properties: Inorganic compound, Simple component, Defined component'
+  source: TOGO M217 / JCM Medium 224
+  notes: JCM Medium 224 lists 1 g/L Trypticase peptone from BD-BBL.
+  term:
+    id: MICRO:0000175
+    label: Trypticase peptone
+- preferred_term: Na2S2O3·5H2O
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: TOGO M217 / JCM Medium 224
+  notes: JCM Medium 224 lists 1.0 g/L Na2S2O3·5H2O.
   term:
     id: CHEBI:32150
     label: sodium thiosulfate pentahydrate
-- preferred_term: Trypticase peptone (BD-BBL)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
+    label: sodium thiosulfate pentahydrate
+- preferred_term: Seawater
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+    value: '1.0'
+    unit: L
+  source: TOGO M217 / JCM Medium 224
+  notes: JCM Medium 224 lists 1 L seawater and allows filtrated natural seawater or
+    artificial seawater such as Jamarin S from Jamarin Laboratory; the seawater input
+    is retained as an opaque complex component.
 media_term:
   preferred_term: TOGO Medium M217
   term:
     id: TOGO:M217
     label: JXT Medium
-notes: 'Source: https://togomedium.org/medium/M217
-
-  Original source: JCM - JCM_M224
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=224'
+notes: TOGO M217 imports JCM Medium 224 as JXT Medium. JCM 224 lists 1 g Yeast extract
+  from BD-Difco, 1 g Trypticase peptone from BD-BBL, 1 g Na2S2O3·5H2O, and 1 L seawater
+  at pH 7.0-7.2. The source says to use filtrated natural seawater or artificial seawater
+  such as Jamarin S from Jamarin Laboratory, and to autoclave media at 121 C for 15
+  min unless otherwise stated.
 applications:
 - Microbial cultivation
 curation_history:
@@ -54,4 +72,30 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "JXT Medium" to "jxt_medium" for consistent matching
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m217_score15.py
+  action: RESOLVED_TOGO_M217_SCORE15
+  source: https://togomedium.org/medium/M217; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=224
+  notes: TOGO M217 imports JCM Medium 224 as JXT Medium. JCM 224 lists 1 g Yeast extract
+    from BD-Difco, 1 g Trypticase peptone from BD-BBL, 1 g Na2S2O3·5H2O, and 1 L seawater
+    at pH 7.0-7.2. The source says to use filtrated natural seawater or artificial
+    seawater such as Jamarin S from Jamarin Laboratory, and to autoclave media at
+    121 C for 15 min unless otherwise stated. Corrected the seawater unit, added the
+    JCM pH range and default autoclave step, and marked the JCM formula as curated.
 kg_microbe_match: mediadive.medium:1090
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0-7.2.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M217
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=224

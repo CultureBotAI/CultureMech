@@ -10,8 +10,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  source: TOGO Medium M2273
+  notes: TOGO M2273 lists 0.5 g/L NH4Cl in the autoclaved base.
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -22,53 +22,31 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Complex component'
+  source: TOGO Medium M2273
+  notes: TOGO M2273 lists 30 g/L Sea salts from Sigma without disclosing the product
+    composition.
 - preferred_term: Deionized water
   concentration:
-    value: '12.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component [Merged 3 duplicates: 1.0, 1.0, 10.0]'
-- preferred_term: Glucose (50%)
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
-- preferred_term: 50xPYE
-  concentration:
-    value: '20'
-    unit: G_PER_L
-- preferred_term: Riboflavin (0.2 mg/ml)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Peptone
-  concentration:
-    value: '100'
-    unit: G_PER_L
-- preferred_term: Riboflavin
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
-    compound'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO Medium M2273
+  notes: TOGO M2273 lists 1 L deionized water in the autoclaved base.
   term:
-    id: CHEBI:17015
-    label: riboflavin
+    id: CHEBI:15377
+    label: water
   mediaingredientmech_chebi_term:
-    id: CHEBI:17015
-    label: riboflavin
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M2273
   term:
     id: TOGO:M2273
     label: Marine-Caulobacter medium SPYEM containing sea salts and NH4Cl
-notes: 'Source: https://togomedium.org/medium/M2273'
+notes: TOGO Medium M2273 lists an autoclaved base of 0.5 g NH4Cl, 30 g Sea salts (Sigma),
+  and 1 L deionized water. After autoclaving and cooling, TOGO adds 2 ml sterile 50%
+  glucose, 20 ml 50xPYE, and 5 ml filter-sterilized 0.2 mg/ml riboflavin per liter
+  of medium; 50xPYE contains 100 g peptone and 50 g yeast extract in 1 L deionized
+  water and is autoclaved.
 applications:
 - Microbial cultivation
 curation_history:
@@ -108,3 +86,109 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2273_marine_caulobacter_score15.py
+  action: RESOLVED_TOGO_M2273_MARINE_CAULOBACTER_SCORE15
+  source: https://togomedium.org/medium/M2273
+  notes: TOGO Medium M2273 lists an autoclaved base of 0.5 g NH4Cl, 30 g Sea salts
+    (Sigma), and 1 L deionized water. After autoclaving and cooling, TOGO adds 2 ml
+    sterile 50% glucose, 20 ml 50xPYE, and 5 ml filter-sterilized 0.2 mg/ml riboflavin
+    per liter of medium; 50xPYE contains 100 g peptone and 50 g yeast extract in 1
+    L deionized water and is autoclaved. Restored top-level deionized water to 1 L,
+    converted glucose, 50xPYE, and riboflavin from g/L ingredient rows to ml/L stock-solution
+    additions, and moved stock-only peptone, yeast extract, riboflavin, and deionized-water
+    rows into nested stock compositions.
+solutions:
+- preferred_term: Glucose (50%)
+  concentration:
+    value: '2'
+    unit: ML_PER_L
+  notes: TOGO M2273 adds 2 ml/L sterile 50% glucose after cooling.
+  composition:
+  - preferred_term: Glucose
+    concentration:
+      value: '50'
+      unit: PERCENT_W_V
+    term:
+      id: CHEBI:17234
+      label: glucose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17234
+      label: glucose
+- preferred_term: 50xPYE
+  concentration:
+    value: '20'
+    unit: ML_PER_L
+  notes: TOGO M2273 adds 20 ml/L autoclaved 50xPYE containing 100 g/L peptone and
+    50 g/L yeast extract.
+  composition:
+  - preferred_term: Peptone
+    concentration:
+      value: '100'
+      unit: G_PER_L
+  - preferred_term: Yeast extract
+    concentration:
+      value: '50'
+      unit: G_PER_L
+  - preferred_term: Deionized water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: Riboflavin (0.2 mg/ml)
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+  notes: TOGO M2273 adds 5 ml/L filter-sterilized 0.2 mg/ml riboflavin solution after
+    cooling.
+  composition:
+  - preferred_term: Riboflavin
+    concentration:
+      value: '0.2'
+      unit: MG_PER_ML
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
+  - preferred_term: Deionized water
+    concentration:
+      value: '10'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix 0.5 g NH4Cl and 30 g Sea salts (Sigma) in 1 L deionized water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the base medium and cool it.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave 50xPYE before use.
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Filter-sterilize the 0.2 mg/ml riboflavin solution.
+- step_number: 5
+  action: MIX
+  description: Aseptically add 20 ml 50xPYE, 2 ml sterile 50% glucose, and 5 ml filter-sterilized
+    0.2 mg/ml riboflavin per liter.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2273

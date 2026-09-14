@@ -7,11 +7,19 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
+- preferred_term: brain-heart infusion broth (Difco Laboratories)
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: TOGO M2974
+  notes: TOGO M2974 lists 1 L prepared brain-heart infusion broth from Difco Laboratories;
+    the source does not spell out the commercial broth composition.
 - preferred_term: Tris
   concentration:
     value: '0.1'
     unit: PERCENT_W_V
-  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  source: TOGO M2974
+  notes: TOGO M2974 supplements BHI broth with 0.1% Tris base.
   term:
     id: CHEBI:9754
     label: tris
@@ -22,20 +30,23 @@ ingredients:
   concentration:
     value: '0.001'
     unit: PERCENT_W_V
-  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
-    compound'
-- preferred_term: brain-heart infusion broth (Difco Laboratories)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  source: TOGO M2974
+  notes: TOGO M2974 supplements BHI broth with 0.001% thiamine monophosphate.
+  term:
+    id: CHEBI:9533
+    label: thiamine(1+) monophosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9533
+    label: thiamine(1+) monophosphate
 media_term:
   preferred_term: TOGO Medium M2974
   term:
     id: TOGO:M2974
     label: brain-heart infusion broth (supplemented with 0.1% Tris base and 0.001%
       thiamine monophosphate)
-notes: 'Source: https://togomedium.org/medium/M2974'
+notes: TOGO M2974 records BHI-TT as 1 L brain-heart infusion broth from Difco Laboratories
+  supplemented with 0.1% Tris base and 0.001% thiamine monophosphate; the source does
+  not spell out the commercial broth composition.
 applications:
 - Microbial cultivation
 curation_history:
@@ -67,3 +78,21 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2974_bhi_tt_score15.py
+  action: RESOLVED_TOGO_M2974_BHI_TT_SCORE15
+  source: https://togomedium.org/medium/M2974
+  notes: TOGO M2974 records BHI-TT as 1 L brain-heart infusion broth from Difco Laboratories
+    supplemented with 0.1% Tris base and 0.001% thiamine monophosphate; the source
+    does not spell out the commercial broth composition.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Supplement 1 L prepared brain-heart infusion broth with 0.1% Tris base
+    and 0.001% thiamine monophosphate.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2974

@@ -18,26 +18,41 @@ ingredients:
     value: '10'
     unit: G_PER_L
   notes: Copied from referenced JCM Medium 26
+  term:
+    id: MICRO:0000178
+    label: Bacto peptone
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
   notes: Copied from referenced JCM Medium 26
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Malt extract
   concentration:
     value: '5'
     unit: G_PER_L
   notes: Copied from referenced JCM Medium 26
+  term:
+    id: FOODON:03301056
+    label: Malt extract
 - preferred_term: Casamino acids
   concentration:
     value: '5'
     unit: G_PER_L
   notes: Copied from referenced JCM Medium 26
+  term:
+    id: FOODON:03315719
+    label: Casamino acids
 - preferred_term: Beef extract
   concentration:
     value: '2'
     unit: G_PER_L
   notes: Copied from referenced JCM Medium 26
+  term:
+    id: FOODON:03302088
+    label: Beef extract
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
@@ -141,5 +156,12 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_bacterial_score10_exact_terms_batch6.py
+  action: GROUNDED_BACTERIAL_SCORE10_EXACT_TERMS_BATCH6
+  changes: Grounded bacterial score-10 exact ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Bacto peptone, Beef extract, Casamino acids, Malt
+    extract, Yeast extract.
 data_quality_flags:
 - resolved_reference

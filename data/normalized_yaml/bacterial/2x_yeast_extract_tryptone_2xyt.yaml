@@ -8,15 +8,18 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: 2x Yeast Extract Tryptone (2xYT)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2919
+  notes: TOGO M2919 records one liter of 2x Yeast Extract Tryptone (2xYT) as an opaque
+    product.
 media_term:
   preferred_term: TOGO Medium M2919
   term:
     id: TOGO:M2919
     label: 2x Yeast Extract Tryptone (2xYT)
-notes: 'Source: https://togomedium.org/medium/M2919'
+notes: TOGO M2919 records a 20 mL overnight culture seeded in one liter of 2x Yeast
+  Extract Tryptone (2xYT); the source does not disclose the product's internal formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -33,3 +36,19 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "2x Yeast Extract Tryptone (2xYT)" to "2x_yeast_extract_tryptone_2xyt"
     for consistent matching
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_togo_mrs_2xyt_score40.py
+  action: RESOLVED_TOGO_MRS_2XYT_SCORE40
+  changes: Resolved score-40 TOGO MRS/2xYT one-liter product row
+  source: https://togomedium.org/medium/M2919
+  notes: TOGO M2919 records a 20 mL overnight culture seeded in one liter of 2x Yeast
+    Extract Tryptone (2xYT); the source does not disclose the product's internal formulation.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use one liter of 2x Yeast Extract Tryptone (2xYT).
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2919

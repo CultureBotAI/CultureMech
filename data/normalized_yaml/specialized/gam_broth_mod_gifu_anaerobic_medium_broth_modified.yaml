@@ -10,17 +10,36 @@ media_term:
   term:
     id: mediadive.medium:1715
     label: GAM Broth, mod. (Gifu Anaerobic Medium Broth, modified)
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1715.pdf'
+notes: DSMZ Medium 1715 lists 41.7 g GAM Broth mod. powder from HyServe brought to
+  one liter with deionized water, heated to dissolve, and autoclaved at 115 C for
+  15 minutes.
 ingredients:
-- preferred_term: GAM Broth mod. powder
+- preferred_term: DI water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: DSMZ Medium 1715
+  notes: DSMZ Medium 1715 brings the formulation to 1000.0 ml with deionized water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: GAM Broth mod. powder (HyServe)
   concentration:
     value: '41.7'
     unit: G_PER_L
+  source: DSMZ Medium 1715
+  notes: DSMZ Medium 1715 lists 41.7 g GAM Broth mod. powder per liter.
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Suspend the dehydrated medium in deionized water, and heat do dissolve
-    the medium, sterilize by autoclaving at 115 °C for 15 minutes.
+  action: HEAT
+  description: Suspend the dehydrated medium in deionized water and heat to dissolve
+    it.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 115 C for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -37,3 +56,20 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "GAM Broth, mod. (Gifu Anaerobic Medium Broth, modified)"
     to "gam_broth_mod_gifu_anaerobic_medium_broth_modified" for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_dsmz_products_score40.py
+  action: RESOLVED_DSMZ_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 DSMZ product graph
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1715.pdf
+  notes: DSMZ Medium 1715 lists 41.7 g GAM Broth mod. powder from HyServe brought
+    to one liter with deionized water, heated to dissolve, and autoclaved at 115 C
+    for 15 minutes.
+sterilization:
+  method: AUTOCLAVE
+  duration: 15 minutes
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1715.pdf
