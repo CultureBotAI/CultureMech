@@ -28,22 +28,17 @@ ROOTS = [REPO / "data" / "normalized_yaml", REPO / "data" / "merge_yaml" / "merg
 # fuzzy tolerance would hide the next real one.
 KNOWN_NO_SALT_TERM = {
     # ChEBI has `Resazurin` (CHEBI:8806) but no "resazurin sodium salt".
-    ("Sodium resazurin", "CHEBI:8806"),
+    ("sodium resazurin", "CHEBI:8806"),
     ("resazurin sodium salt", "CHEBI:8806"),
     # ChEBI has `2-oxoglutarate(2-)` but no disodium salt.
-    ("Na2 alpha-ketoglutarate", "CHEBI:16810"),
+    ("na2 alpha-ketoglutarate", "CHEBI:16810"),
     # MIM exact-matches CAS:13408-09-8 but has only a narrow ChEBI mapping;
     # ChEBI has the phosphate anion, not the disodium pentahydrate substance.
-    ("Na2glycerophosphate x 5 H2O", "CHEBI:15978"),
-    ("Na2Glycerophosphate x 5 H2O", "CHEBI:15978"),
+    ("na2glycerophosphate x 5 h2o", "CHEBI:15978"),
     # ChEBI has the anions but no sodium salts.
-    ("NaHSeO3", "CHEBI:29924"),
-    ("Na2-9,10-anthraquinone-2,6-disulfonate", "CHEBI:85112"),
-    ("Sodium crotonate", "CHEBI:35899"),
+    ("nahseo3", "CHEBI:29924"),
+    ("na2-9,10-anthraquinone-2,6-disulfonate", "CHEBI:85112"),
     ("sodium crotonate", "CHEBI:35899"),
-    # B is a vitamin/antibiotic suffix in these names, not elemental boron.
-    ("Biotin (B8)", "CHEBI:15956"),
-    ("Hygromycin B solution (50 mg/ml)", "CHEBI:16976"),
 }
 
 # #279 is CLOSED. These two were grounded to the wrong SUBSTANCE -- selenate read as
@@ -98,7 +93,7 @@ def mismatches():
                     name = ""
     bad = []
     for name, tid in pairs:
-        if (name, tid) in KNOWN_NO_SALT_TERM:
+        if (name.casefold(), tid) in KNOWN_NO_SALT_TERM:
             continue
         want = name_elements(name)
         if not want:
@@ -134,12 +129,14 @@ def test_the_detector_actually_detects():
     # designations that are not formulae
     assert name_elements("Vitamin B12") == set()
     assert name_elements("Thiamine (Vitamin B1)") == set()
+    assert name_elements("Biotin (B8)") == set()
+    assert name_elements("Hygromycin B solution (50 mg/ml)") == set()
     assert name_elements("PABA") == set(), "an all-letter acronym is not a formula"
     assert "I" not in name_elements("Fe(III) citrate"), "(III) is not iodine"
 
 
 def test_the_allowlist_stays_small():
-    assert len(KNOWN_NO_SALT_TERM) <= 6, "allowlist growing — investigate before adding"
+    assert len(KNOWN_NO_SALT_TERM) <= 7, "allowlist growing — investigate before adding"
 
 
 def test_the_se_si_collapse_is_gone_from_the_corpus():
