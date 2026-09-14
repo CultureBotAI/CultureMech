@@ -35,9 +35,15 @@ KNOWN_NO_SALT_TERM = {
     # MIM exact-matches CAS:13408-09-8 but has only a narrow ChEBI mapping;
     # ChEBI has the phosphate anion, not the disodium pentahydrate substance.
     ("Na2glycerophosphate x 5 H2O", "CHEBI:15978"),
+    ("Na2Glycerophosphate x 5 H2O", "CHEBI:15978"),
     # ChEBI has the anions but no sodium salts.
+    ("NaHSeO3", "CHEBI:29924"),
     ("Na2-9,10-anthraquinone-2,6-disulfonate", "CHEBI:85112"),
     ("Sodium crotonate", "CHEBI:35899"),
+    ("sodium crotonate", "CHEBI:35899"),
+    # B is a vitamin/antibiotic suffix in these names, not elemental boron.
+    ("Biotin (B8)", "CHEBI:15956"),
+    ("Hygromycin B solution (50 mg/ml)", "CHEBI:16976"),
 }
 
 # #279 is CLOSED. These two were grounded to the wrong SUBSTANCE -- selenate read as

@@ -18,8 +18,8 @@ notes: 'Source: KOMODO ModelSEED | ID: 1203 | DSMZ Medium: 1203 (mediadive.mediu
 ingredients:
 - preferred_term: Fastidious Anaerobe Agar
   term:
-    id: CHEBI:2509
-    label: agar
+    id: mediadive.compound:1077
+    label: Fastidious Anaerobe Agar
   concentration:
     value: '45.7'
     unit: G_PER_L

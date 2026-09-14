@@ -411,9 +411,6 @@ solutions:
     unit: ML_PER_L
   source: KOMODO Medium 861.1
   notes: KOMODO Medium 861.1 adds 0.996016 ml/L Solution D.
-  term:
-    id: mediadive.solution:1775
-    label: Solution D
   solutions:
   - preferred_term: Wolin's vitamin solution (10x)
     concentration:
@@ -597,9 +594,6 @@ solutions:
     unit: ML_PER_L
   source: KOMODO Medium 861.1
   notes: KOMODO Medium 861.1 adds 0.996016 ml/L Solution F.
-  term:
-    id: mediadive.solution:1778
-    label: Solution F
   solutions:
   - preferred_term: Na-dithionite solution (5% w/v)
     concentration:

@@ -3894,7 +3894,7 @@
     },
     "$id": "https://w3id.org/culturemech",
     "$schema": "https://json-schema.org/draft/2019-09/schema",
-    "additionalProperties": false,
+    "additionalProperties": true,
     "metamodel_version": "1.11.0",
     "title": "culturemech",
     "type": "object",

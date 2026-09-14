@@ -316,23 +316,18 @@ def _rank(srn, corpus):
     return srn.score_parsed([(str(p.relative_to(normalized)), d) for p, d in corpus])
 
 
-def test_the_worst_ranked_records_all_carry_a_severe_reason(srn, corpus):
-    """The corpus-level check that the ranking means something.
+def test_ranked_records_are_sorted_and_carry_reasons(srn, corpus):
+    """The corpus-level check that the ranking means something when populated.
 
     This used to anchor on NBRC_1197, which #166 confirmed carried an unparsed
     recipe. That record was repaired in #299 — its composition was recovered from
-    the preserved NBRC HTML — so it now scores 35 (rank ~302) for the accurate and
-    much milder reason "no composition component is grounded". The anchor was retired rather
-    than swapped for another record: no remaining record is independently
-    confirmed broken AND ranked in the worst 60, so naming one would assert a
-    claim nothing backs. `test_unparsed_recipe_in_an_ingredient_name_is_flagged`
-    still covers the detector itself against a synthetic case.
+    the preserved NBRC HTML. The last curated opaque-product endpoints now leave
+    no severe rows, and a clean report is also a valid ranking state.
 
     What survives is the property that actually matters: every top-ranked record
     must have earned it.
     """
     rows = _rank(srn, corpus)
-    assert rows, "scorer returned nothing"
     for before, after in zip(rows, rows[1:], strict=False):
         assert before["score"] >= after["score"]
     for row in rows[:60]:

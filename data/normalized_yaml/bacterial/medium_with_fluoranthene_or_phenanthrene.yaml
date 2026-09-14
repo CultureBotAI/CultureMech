@@ -2,7 +2,7 @@ id: CultureMech:005459
 name: medium_with_fluoranthene_or_phenanthrene
 original_name: MEDIUM WITH FLUORANTHENE OR PHENANTHRENE
 category: bacterial
-medium_type: COMPLEX
+medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.9

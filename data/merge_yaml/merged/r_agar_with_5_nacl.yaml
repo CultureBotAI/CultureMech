@@ -14,8 +14,8 @@ notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=7
 ingredients:
 - preferred_term: Glycerol-asparagine agar
   term:
-    id: CHEBI:2509
-    label: agar
+    id: mediadive.compound:1754
+    label: Glycerol-asparagine agar
   concentration:
     value: '1000'
     unit: G_PER_L

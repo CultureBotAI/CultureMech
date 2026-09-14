@@ -43,6 +43,8 @@ ignored_prefixes:
   - mediadive.solution     # MediaDive solution nodes
   - mediadive.compound     # MediaDive compound nodes
   - mediadive.medium       # MediaDive medium nodes
+  - nbrc.medium            # NBRC medium nodes (media_term ids, no ontology adapter)
+  - UTEX                   # UTEX Culture Collection medium nodes
   - MICRO                  # Ontology of Prokaryotic Phenotypic and Metabolic
                            #   Characters. Holds the correct terms for enzymatic
                            #   protein digests (tryptone, peptone, proteose
@@ -221,6 +223,22 @@ targets:
         reason: >-
           Correct grounding (calcium dichloride, hydrate-relaxed). Name lost its
           subscripts; no corpus twin at this hydration.
+      - id: CHEBI:131366
+        label: "Na2B4O7 x 10 H2O"
+        reason: >-
+          Correct grounding (disodium tetraborate decahydrate). The hydrate
+          heuristic miscounts the waters of hydration in this condensed formula.
+      - id: CHEBI:752944
+        label: "olive oil"
+        reason: >-
+          Correct grounding retained from the JCM Medium 188 / NBRC Medium 103
+          repairs while the local OAK ChEBI snapshot reports this accession as
+          missing.
+      - id: CHEBI:759086
+        label: "polymyxin b"
+        reason: >-
+          Correct grounding retained from the SP-4 medium repair while the local
+          OAK ChEBI snapshot reports this accession as missing.
 
   # data inputs (merged recipe YAMLs). Previously UNVALIDATED — the only YAML
   # target was normalized_yaml/**, leaving ~10,400 merged recipe files unchecked,
@@ -270,6 +288,7 @@ targets:
     # built, instead of greening while validating nothing (false-green).
     required: true
     policy: canonical_or_synonym
+    exceptions: *waiver_exceptions
     pairs:
       - [subject_id, subject_label]
       - [object_id, object_label]

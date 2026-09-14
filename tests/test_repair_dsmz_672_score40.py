@@ -101,11 +101,8 @@ def test_repair_record_replaces_1000_g_per_l_artifact(
     ]
     assert repaired["references"] == [{"reference": repair_module.DSMZ_672_URL}]
     assert scorer_module.score_record(repaired) == (
-        25,
-        [
-            "no composition component is grounded",
-            "no pH and no temperature",
-        ],
+        5,
+        ["no pH and no temperature"],
     )
 
 

@@ -2,7 +2,7 @@ id: CultureMech:004232
 name: for_dsm_21556
 original_name: For DSM 21556
 category: bacterial
-medium_type: COMPLEX
+medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ph_range:

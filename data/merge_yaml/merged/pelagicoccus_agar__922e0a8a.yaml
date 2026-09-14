@@ -25,8 +25,8 @@ ingredients:
     label: agar
 - preferred_term: R2A agar
   term:
-    id: CHEBI:2509
-    label: agar
+    id: mediadive.compound:1844
+    label: R2A agar
   concentration:
     value: '9.1'
     unit: G_PER_L

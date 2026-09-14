@@ -28,12 +28,6 @@ ingredients:
     unit: G_PER_L
   source: NBRC Medium 225
   notes: NBRC Medium 225 lists 10 g/L Calcium lactate.
-  term:
-    id: CHEBI:3315
-    label: calcium lactate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:3315
-    label: calcium lactate
 - preferred_term: CaCO3
   concentration:
     value: '20'
@@ -127,8 +121,8 @@ curation_history:
   source: https://togomedium.org/medium/M1453; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=225
   notes: Curated TOGO:M1453 from TOGO and NBRC Medium 225; corrected Table wine and
     Distilled water from mass-like imports to 500 ml/L volume additions, added pH
-    6.6 to 6.8, grounded Calcium lactate and agar, and retained Table wine as a sourced
-    unmapped component.
+    6.6 to 6.8, grounded agar, retained Calcium lactate without a current ChEBI
+    term, and retained Table wine as a sourced unmapped component.
 data_quality_flags:
 - has_ontology_mappings
 - has_unmapped_ingredients

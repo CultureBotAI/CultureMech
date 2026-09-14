@@ -1,9 +1,10 @@
 {
   "source": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms",
   "ontology": "chebi",
-  "fetched": "2026-08-30T01:38:51.012310+00:00",
-  "row_count": 640,
-  "ids_requested": 640,
+  "fetched": "2026-09-14T19:30:57.824243+00:00",
+  "row_count": 686,
+  "ids_requested": 686,
+  "failed_lookups": 0,
   "fields": [
     "chebi_id",
     "label",

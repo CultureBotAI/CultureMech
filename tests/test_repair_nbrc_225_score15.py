@@ -98,10 +98,8 @@ def test_repair_grounds_defined_components_and_keeps_table_wine_local(
     repaired = repair_module.repair_record(_doc(repair_module))
     ingredients = _by_name(repaired["ingredients"])
 
-    assert ingredients["Calcium lactate"]["term"] == {
-        "id": "CHEBI:3315",
-        "label": "calcium lactate",
-    }
+    assert "term" not in ingredients["Calcium lactate"]
+    assert "mediaingredientmech_chebi_term" not in ingredients["Calcium lactate"]
     assert ingredients["CaCO3"]["term"] == {
         "id": "CHEBI:3311",
         "label": "calcium carbonate",
@@ -152,8 +150,9 @@ def test_repair_adds_preparation_references_flags_and_event_once(
                 "Curated TOGO:M1453 from TOGO and NBRC Medium 225; "
                 "corrected Table wine and Distilled water from mass-like "
                 "imports to 500 ml/L volume additions, added pH 6.6 to "
-                "6.8, grounded Calcium lactate and agar, and retained "
-                "Table wine as a sourced unmapped component."
+                "6.8, grounded agar, retained Calcium lactate without a "
+                "current ChEBI term, and retained Table wine as a sourced "
+                "unmapped component."
             ),
         }
     ]

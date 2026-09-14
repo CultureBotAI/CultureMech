@@ -14,8 +14,8 @@ notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1
 ingredients:
 - preferred_term: R agar
   term:
-    id: CHEBI:2509
-    label: agar
+    id: mediadive.compound:1619
+    label: R agar
   concentration:
     value: '1000'
     unit: G_PER_L

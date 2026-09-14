@@ -60,7 +60,6 @@ FINAL_INGREDIENTS: tuple[Component, ...] = (
 GROUNDINGS: dict[str, tuple[str, str]] = {
     AGAR_IF_NEEDED: ("CHEBI:2509", "agar"),
     CALCIUM_CARBONATE: ("CHEBI:3311", "calcium carbonate"),
-    CALCIUM_LACTATE: ("CHEBI:3315", "calcium lactate"),
     DISTILLED_WATER: ("CHEBI:15377", "water"),
 }
 PHYSICOCHEMICAL_ROLES: dict[str, tuple[str, ...]] = {
@@ -242,8 +241,9 @@ def _ensure_event(doc: dict[str, Any]) -> None:
         "notes": (
             "Curated TOGO:M1453 from TOGO and NBRC Medium 225; corrected "
             "Table wine and Distilled water from mass-like imports to 500 ml/L "
-            "volume additions, added pH 6.6 to 6.8, grounded Calcium lactate "
-            "and agar, and retained Table wine as a sourced unmapped component."
+            "volume additions, added pH 6.6 to 6.8, grounded agar, retained "
+            "Calcium lactate without a current ChEBI term, and retained Table "
+            "wine as a sourced unmapped component."
         ),
     }
 

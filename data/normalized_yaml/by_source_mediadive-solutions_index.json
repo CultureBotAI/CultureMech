@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T10:16:30.400864+00:00",
+  "generated": "2026-09-14T19:00:04.526328+00:00",
   "source": "MediaDive-Solutions",
   "count": 4775,
   "recipes": {
@@ -24402,10 +24402,11 @@
     "CultureMech:012590": {
       "name": "Main sol. 1670",
       "filename": "mediadive_3465_Main_sol_1670.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 3,
       "id": "CultureMech:012590",
       "source_id": "mediadive.solution:3465",
       "source": "MediaDive-Solutions",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -29586,10 +29587,11 @@
     "CultureMech:013022": {
       "name": "Castenholz basal salt solution",
       "filename": "mediadive_3963_Castenholz_basal_salt_solution.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 8,
       "id": "CultureMech:013022",
       "source_id": "mediadive.solution:3963",
       "source": "MediaDive-Solutions",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -34038,7 +34040,7 @@
     "CultureMech:013393": {
       "name": "MDS salt water",
       "filename": "mediadive_4404_MDS_salt_water.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 6,
       "id": "CultureMech:013393",
       "source_id": "mediadive.solution:4404",
       "source": "MediaDive-Solutions",
@@ -38034,7 +38036,7 @@
     "CultureMech:013726": {
       "name": "Main sol. J825",
       "filename": "mediadive_4784_Main_sol_J825.yaml",
-      "ingredient_count": 14,
+      "ingredient_count": 16,
       "id": "CultureMech:013726",
       "source_id": "mediadive.solution:4784",
       "source": "MediaDive-Solutions",
@@ -38226,7 +38228,7 @@
     "CultureMech:013742": {
       "name": "Main sol. J837",
       "filename": "mediadive_4801_Main_sol_J837.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 10,
       "id": "CultureMech:013742",
       "source_id": "mediadive.solution:4801",
       "source": "MediaDive-Solutions",
@@ -39282,10 +39284,11 @@
     "CultureMech:013830": {
       "name": "Main sol. J902",
       "filename": "mediadive_4901_Main_sol_J902.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 1,
       "id": "CultureMech:013830",
       "source_id": "mediadive.solution:4901",
       "source": "MediaDive-Solutions",
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
@@ -39754,6 +39757,7 @@
       "id": "CultureMech:013869",
       "source_id": "mediadive.solution:4943",
       "source": "MediaDive-Solutions",
+      "solution_count": 3,
       "categories": [
         "bacterial"
       ],
