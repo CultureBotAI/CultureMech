@@ -2,9 +2,10 @@ id: CultureMech:001569
 name: medium_with_fluoranthene
 original_name: MEDIUM WITH FLUORANTHENE
 category: bacterial
-medium_type: COMPLEX
-composition_type: UNDEFINED
+medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
+ph_value: 6.9
 media_term:
   preferred_term: DSMZ Medium 457b
   term:
@@ -165,23 +166,46 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: "For DSM 7526, prepare medium 457 with 200 mg/l Tween 80. Prepare a\
-    \ solution of 2 g/l\r\nfluoranthene in acetone and filter sterilize using a cellulose\
-    \ filter membrane. Add 1 ml of\r\nthis stock solution to the sterilized culture\
-    \ flask. Let acetone evaporate. Add 20 ml\r\nmedium to the flask. Alternatively,\
-    \ the direct addition of about 1-2 mg fluoranthene to\r\nthe medium is possible."
+  description: DSMZ Medium 457b prepares a 2 g/L fluoranthene stock in acetone and
+    filter-sterilizes it with a cellulose filter membrane.
 - step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH to 6.9.
-- step_number: 3
-  action: AUTOCLAVE
-  description: Prepare a separate solution of the phosphates and autoclave separately.
-    Combine the two solutions after cooling.
-- step_number: 4
   action: MIX
-  description: Rehydrate and cultivate lyophilized cells in complex medium (e.g. medium
-    1, 220 or 535). After this reactivation, cultivate in mineral medium 457 with
-    the appropriate carbon source.
+  description: DSMZ Medium 457b adds 1 mL of the fluoranthene stock to a sterile culture
+    flask, lets the acetone evaporate, and adds 20 mL of medium; direct addition of
+    about 1-2 mg fluoranthene is also possible.
+- step_number: 3
+  action: ADJUST_PH
+  description: DSMZ Medium 457 adjusts the mineral base to pH 6.9.
+- step_number: 4
+  action: AUTOCLAVE
+  description: DSMZ Medium 457 autoclaves the phosphate solution separately and combines
+    it with the rest of the medium after cooling.
+- step_number: 5
+  action: MIX
+  description: DSMZ Medium 457b reactivates lyophilized cells in a complex medium
+    before transferring them to mineral medium 457 with the appropriate carbon source.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/457b
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium457b.pdf
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_with_fluoranthene_or_phenanthrene.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005459
+  name: medium_with_fluoranthene_or_phenanthrene
+  notes: KOMODO Medium 457b is a source-catalogue duplicate of DSMZ Medium 457b.
+- path: data/normalized_yaml/bacterial/for_dsm_7526.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005457
+  name: for_dsm_7526
+  notes: KOMODO Medium 457b.1 applies DSMZ Medium 457b to DSM 7526.
+- path: data/normalized_yaml/bacterial/for_dsm_13022.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005458
+  name: for_dsm_13022
+  notes: KOMODO Medium 457b.2 applies DSMZ Medium 457b to DSM 13022.
 applications:
 - Microbial cultivation
 curation_history:
@@ -212,3 +236,10 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_dsmz_457b_score15.py
+  action: RESOLVED_DSMZ_KOMODO_457B_SCORE15
+  changes: Resolved DSMZ/KOMODO Medium 457b variant metadata and stale ingredients
+  source: https://mediadive.dsmz.de/rest/medium/457b
+  notes: MediaDive and DSMZ Medium 457b define MEDIUM WITH FLUORANTHENE as DSMZ Medium
+    457 with 200 mg/L Tween 80.

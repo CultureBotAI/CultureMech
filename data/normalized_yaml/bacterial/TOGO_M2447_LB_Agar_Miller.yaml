@@ -5,54 +5,73 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_range:
+  min: 6.8
+  max: 7.2
 ingredients:
-- preferred_term: Yeast Extract
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Sodium Chloride
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: DI Water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
 - preferred_term: Tryptone
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2447 / ATCC Medium 1065
+  notes: ATCC Medium 1065 lists 10.0 g/L Tryptone.
+  term:
+    id: MICRO:0000182
+    label: tryptone
+- preferred_term: Yeast Extract
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: TOGO M2447 / ATCC Medium 1065
+  notes: ATCC Medium 1065 lists 5.0 g/L Yeast Extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: TOGO M2447 / ATCC Medium 1065
+  notes: ATCC Medium 1065 lists 10 g/L Sodium Chloride.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: TOGO M2447 / ATCC Medium 1065
+  notes: ATCC Medium 1065 lists 15.0 g/L Agar.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: DI Water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: TOGO M2447 / ATCC Medium 1065
+  notes: TOGO M2447 lists 1000 ml DI Water for the ATCC LB Agar, Miller formula.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M2447
   term:
     id: TOGO:M2447
     label: LB Agar, Miller
-notes: 'Source: https://togomedium.org/medium/M2447
-
-  Original URL: https://www.atcc.org/~/media/6F57EBDFF28049EE85F7C697DAFB2592.ashx'
+notes: TOGO M2447 imports the scratch LB Agar, Miller formulation from ATCC Medium
+  1065. ATCC lists 10.0 g Tryptone, 5.0 g Yeast Extract, 10 g Sodium Chloride, and
+  15.0 g Agar; TOGO M2447 retains the one-liter DI Water row. Final pH is 7.0 +/-
+  0.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -83,4 +102,23 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2447_score15.py
+  action: RESOLVED_TOGO_M2447_SCORE15
+  source: https://togomedium.org/medium/M2447; https://www.atcc.org/~/media/6F57EBDFF28049EE85F7C697DAFB2592.ashx
+  notes: TOGO M2447 imports the scratch LB Agar, Miller formulation from ATCC Medium
+    1065. ATCC lists 10.0 g Tryptone, 5.0 g Yeast Extract, 10 g Sodium Chloride, and
+    15.0 g Agar; TOGO M2447 retains the one-liter DI Water row. Final pH is 7.0 +/-
+    0.2. Corrected the imported water unit artifact, grounded all disclosed components,
+    recorded final pH 7.0 +/- 0.2 and the 121 degrees C autoclave instruction.
 kg_microbe_match: mediadive.medium:101
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave at 121 degrees C.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2447
+- reference: https://www.atcc.org/~/media/6F57EBDFF28049EE85F7C697DAFB2592.ashx

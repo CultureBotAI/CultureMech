@@ -10,16 +10,32 @@ media_term:
   term:
     id: mediadive.medium:J795
     label: m TGE BROTH MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=795'
+notes: JCM Medium 795 prepares m TGE Broth Medium from 18.0 g Bacto m TGE broth (BD-Difco)
+  and 1.0 L distilled water.
 ingredients:
-- preferred_term: Bacto m TGE broth
+- preferred_term: Bacto m TGE broth (BD-Difco)
   concentration:
-    value: '18'
+    value: '18.0'
     unit: G_PER_L
+  source: JCM Medium 795
+  notes: JCM Medium 795 lists this commercial broth powder.
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: JCM Medium 795
+  notes: JCM Medium 795 lists 1.0 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: For preparation of solid medium, add 15.0 g/L agar.
+  description: Mix the JCM Medium 795 Bacto m TGE broth (BD-Difco) and distilled water
+    components.
 applications:
 - Microbial cultivation
 curation_history:
@@ -34,14 +50,32 @@ curation_history:
 - timestamp: '2026-03-17T19:45:31.911883+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "m TGE BROTH MEDIUM" to "m_tge_broth_medium" for
-    consistent matching
-parent_media:
-  path: data/normalized_yaml/bacterial/m_tge_gp_medium.yaml
-  relationship: SOURCE_DUPLICATE
+  notes: Normalized name from "m TGE BROTH MEDIUM" to "m_tge_broth_medium" for consistent
+    matching
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_commercial_broths_score40.py
+  action: RESOLVED_JCM_COMMERCIAL_BROTH_SCORE40_GRAPH
+  changes: Resolved score-40 JCM commercial-broth recipe graph
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=795
+  notes: JCM Medium 795 prepares m TGE Broth Medium from 18.0 g Bacto m TGE broth
+    (BD-Difco) and 1.0 L distilled water.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_commercial_broths_score40.py
+  action: LINKED_JCM_COMMERCIAL_BROTH_SCORE40_CHILDREN
+  changes: Linked score-40 JCM commercial-broth child
+  source: bacterial/m_tge_broth_medium.yaml; bacterial/m_tge_gp_medium.yaml
+  notes: JCM Medium 851 supplements JCM Medium 795 with 5.0 g/L glycerol and 0.1 mM
+    KH2PO4.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=795
+variant_children:
+- path: data/normalized_yaml/bacterial/m_tge_gp_medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
   id: CultureMech:003197
   name: m_tge_gp_medium
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+  notes: JCM Medium 851 supplements JCM Medium 795 with 5.0 g/L glycerol and 0.1 mM
+    KH2PO4.

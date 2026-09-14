@@ -3,57 +3,69 @@ name: eubacterium_medium
 original_name: Eubacterium Medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Yeast extract
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Sodium thioglycolate
-  concentration:
-    value: '1.3'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
-  term:
-    id: CHEBI:86481
-    label: sodium thioglycolate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86481
-    label: sodium thioglycolate
 - preferred_term: Beef brain powder
   concentration:
     value: '0.3'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M148 / MediaDive J157
+  notes: TOGO M148 and MediaDive J157 list 0.3 g/L Beef brain powder; this undefined
+    biological powder is retained as an opaque complex component.
+- preferred_term: Sodium thioglycolate
+  concentration:
+    value: '1.3'
+    unit: G_PER_L
+  source: TOGO M148 / MediaDive J157
+  notes: TOGO M148 / MediaDive J157 lists 1.3 g/L Sodium thioglycolate.
+  term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+- preferred_term: Yeast extract
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: TOGO M148 / MediaDive J157
+  notes: TOGO M148 / MediaDive J157 lists 10.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Fluid thioglycolate (BD-BBL)
   concentration:
     value: '29.5'
     unit: G_PER_L
-  notes: 'Properties: Complex component, Undefined component'
+  source: TOGO M148 / MediaDive J157
+  notes: TOGO M148 lists 29.5 g/L Fluid thioglycolate (BD-BBL), corresponding to MediaDive
+    J157's BD-BBL fluid Thioglycolate row; this is a commercial medium product, not
+    a single thioglycolate ion.
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: TOGO M148 / MediaDive J157
+  notes: TOGO M148 lists 1 L distilled water, matching MediaDive J157's 1000 ml water
+    basis.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M148
   term:
     id: TOGO:M148
     label: Eubacterium Medium
-notes: 'Source: https://togomedium.org/medium/M148
-
-  Original source: JCM - JCM_M157
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=157'
+notes: TOGO M148 imports JCM_M157 as Eubacterium Medium and lists 1 L distilled water,
+  10 g yeast extract, 1.3 g sodium thioglycolate, 0.3 g beef brain powder, and 29.5
+  g Fluid thioglycolate (BD-BBL). MediaDive J157 preserves the same JCM formula as
+  1000 ml water with the same four dry-component amounts. The JCM GRMD=157 URL named
+  by TOGO and MediaDive no longer returns the recipe; no pH, incubation condition,
+  or preparation steps are available from these accessible source records.
 applications:
 - Microbial cultivation
 curation_history:
@@ -84,3 +96,22 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m148_score15.py
+  action: RESOLVED_TOGO_M148_SCORE15
+  source: https://togomedium.org/medium/M148; https://mediadive.dsmz.de/rest/medium/J157
+  notes: TOGO M148 imports JCM_M157 as Eubacterium Medium and lists 1 L distilled
+    water, 10 g yeast extract, 1.3 g sodium thioglycolate, 0.3 g beef brain powder,
+    and 29.5 g Fluid thioglycolate (BD-BBL). MediaDive J157 preserves the same JCM
+    formula as 1000 ml water with the same four dry-component amounts. The JCM GRMD=157
+    URL named by TOGO and MediaDive no longer returns the recipe; no pH, incubation
+    condition, or preparation steps are available from these accessible source records.
+    Corrected the imported water g/L artifact and marked the accessible JCM-derived
+    formula as curated.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M148
+- reference: https://mediadive.dsmz.de/rest/medium/J157

@@ -8,15 +8,17 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Middlebrook 7H9 broth (Difco)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Complex component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2406
+  notes: TOGO M2406 lists one liter of Middlebrook 7H9 broth from Difco.
 media_term:
   preferred_term: TOGO Medium M2406
   term:
     id: TOGO:M2406
     label: Middlebrook 7H9 broth (Difco)
-notes: 'Source: https://togomedium.org/medium/M2406'
+notes: TOGO M2406 records one liter of Middlebrook 7H9 broth from Difco with cultivation
+  at 32 C; the source does not disclose the product's internal formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -33,3 +35,16 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Middlebrook 7H9 broth (Difco)" to "middlebrook_7h9_broth_difco"
     for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_products_more_score40.py
+  action: RESOLVED_TOGO_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO product graph
+  source: https://togomedium.org/medium/M2406
+  notes: TOGO M2406 records one liter of Middlebrook 7H9 broth from Difco with cultivation
+    at 32 C; the source does not disclose the product's internal formulation.
+temperature_value: 32.0
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2406

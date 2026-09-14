@@ -11,22 +11,40 @@ media_term:
   term:
     id: mediadive.medium:J293
     label: MRS MALTOSE MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=293'
+notes: MediaDive JCM Medium J293 lists 55 g/L Lactobacilli MRS broth (BD-Difco), 10
+  g/L Maltose, 1000 mL/L Distilled water, and pH 6.5.
 ingredients:
-- preferred_term: Lactobacilli MRS broth
+- preferred_term: Lactobacilli MRS broth (BD-Difco)
   concentration:
     value: '55'
     unit: G_PER_L
+  source: MediaDive JCM Medium J293
+  notes: MediaDive JCM Medium J293 lists 55 g/L Lactobacilli MRS broth with the BD-Difco
+    attribute; left ungrounded as an undefined commercial broth.
 - preferred_term: Maltose
-  term:
-    id: CHEBI:17306
-    label: maltose
   concentration:
     value: '10'
     unit: G_PER_L
+  source: MediaDive JCM Medium J293
+  notes: MediaDive JCM Medium J293 lists 10 g/L Maltose.
+  term:
+    id: CHEBI:17306
+    label: maltose
   mediaingredientmech_chebi_term:
     id: CHEBI:17306
     label: maltose
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: MediaDive JCM Medium J293
+  notes: MediaDive JCM Medium J293 lists 1000 mL distilled water per 1 L medium.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -57,3 +75,18 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_jcm_j293_mrs_maltose_score15.py
+  action: RESOLVED_JCM_J293_SCORE15
+  source: https://mediadive.dsmz.de/rest/medium/J293
+  notes: Added the missing 1000 mL/L distilled water row from MediaDive JCM Medium
+    J293 and preserved Lactobacilli MRS broth as an intentionally ungrounded BD-Difco
+    commercial broth.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://mediadive.dsmz.de/medium/J293
+- reference: https://mediadive.dsmz.de/rest/medium/J293
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=293

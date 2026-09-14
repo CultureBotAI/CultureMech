@@ -6,24 +6,33 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: Deionized water
-  concentration:
-    value: '865'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
-    Defined component'
 - preferred_term: PPLO Broth Base w/o CV (Mycoplasma Broth Base) (BD 211458)
   concentration:
-    value: '21'
+    value: '21.0'
     unit: G_PER_L
+  source: ATCC Medium 1106
+  notes: ATCC Medium 1106 lists 21.0 g PPLO Broth Base w/o CV (Mycoplasma Broth Base)
+    from BD.
+- preferred_term: DI Water
+  concentration:
+    value: '865.0'
+    unit: ML_PER_L
+  source: ATCC Medium 1106
+  notes: ATCC Medium 1106 lists 865.0 mL deionized water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M2473
   term:
     id: TOGO:M2473
     label: PPLO broth with bovine serum
-notes: 'Source: https://togomedium.org/medium/M2473
-
-  Original URL: https://www.atcc.org/~/media/ED4787F5B1F547798D9ADD912ADFEED1.ashx'
+notes: TOGO M2473 cites ATCC Medium 1106; ATCC Medium 1106 defines PPLO broth with
+  bovine serum as PPLO Broth Base w/o CV, phenol red solution, and deionized water
+  adjusted to pH 7.5, then supplemented with glucose, bovine serum, and yeast extract.
 applications:
 - Microbial cultivation
 curation_history:
@@ -53,31 +62,83 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_exact_score25.py
+  action: RESOLVED_TOGO_EXACT_SCORE25_GRAPH
+  changes: Resolved score-25 TOGO exact recipe graph
+  source: https://togomedium.org/medium/M2473; https://www.atcc.org/~/media/ED4787F5B1F547798D9ADD912ADFEED1.ashx
+  notes: TOGO M2473 cites ATCC Medium 1106; ATCC Medium 1106 defines PPLO broth with
+    bovine serum as PPLO Broth Base w/o CV, phenol red solution, and deionized water
+    adjusted to pH 7.5, then supplemented with glucose, bovine serum, and yeast extract.
 solutions:
 - preferred_term: Phenol red solution, 1% stock solution
-  composition: []
   concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: pH indicator; Properties: Defined component, Solution, Organic compound'
-  name: Unknown solution
-- preferred_term: Glucose (20% solution)*
-  composition: []
+    value: '2.0'
+    unit: ML_PER_L
+  notes: ATCC Medium 1106 lists 2.0 mL 1% phenol red solution.
+  composition:
+  - preferred_term: Phenol red
+    concentration:
+      value: '1'
+      unit: PERCENT_W_V
+    source: ATCC Medium 1106
+    notes: ATCC Medium 1106 identifies this as a 1% stock solution.
+    term:
+      id: CHEBI:31991
+      label: Phenol red
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31991
+      label: Phenol red
+- preferred_term: Glucose (20% solution)
   concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Solution, Organic compound'
-  name: Unknown solution
-- preferred_term: Bovine serum*
-  composition: []
+    value: '25.0'
+    unit: ML_PER_L
+  notes: ATCC Medium 1106 aseptically adds 25.0 mL 20% glucose solution.
+  composition:
+  - preferred_term: Glucose
+    concentration:
+      value: '20'
+      unit: PERCENT_W_V
+    source: ATCC Medium 1106
+    notes: ATCC Medium 1106 identifies this as a 20% stock solution.
+    term:
+      id: CHEBI:17234
+      label: glucose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17234
+      label: glucose
+- preferred_term: Bovine serum
   concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source'
-  name: Unknown solution
+    value: '10.0'
+    unit: ML_PER_L
+  notes: ATCC Medium 1106 aseptically adds 10.0 mL filter-sterilized bovine serum.
 - preferred_term: Yeast Extract Solution (GIBCO 18180)
-  composition: []
   concentration:
-    value: '100'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '100.0'
+    unit: ML_PER_L
+  notes: ATCC Medium 1106 aseptically adds 100.0 mL Yeast Extract Solution.
+ph_value: 7.5
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve PPLO Broth Base w/o CV, 1% phenol red solution, and deionized
+    water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.5.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave the base medium.
+- step_number: 4
+  action: MIX
+  description: Aseptically add filter-sterilized 20% glucose solution, bovine serum,
+    and Yeast Extract Solution.
+sterilization:
+  method: AUTOCLAVE
+references:
+- reference: https://togomedium.org/medium/M2473
+- reference: https://www.atcc.org/~/media/ED4787F5B1F547798D9ADD912ADFEED1.ashx
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients

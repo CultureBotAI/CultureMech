@@ -28,10 +28,16 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: MICRO:0000178
+    label: Peptone
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 applications:
 - Microbial cultivation
 curation_history:
@@ -62,6 +68,12 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_jcm_score10_exact_terms.py
+  action: GROUNDED_KOMODO_JCM_SCORE10_EXACT_TERMS
+  changes: Grounded exact KOMODO/JCM score-10 ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Peptone, Yeast extract.
 parent_media:
   path: data/normalized_yaml/bacterial/sarcina_medium.yaml
   relationship: SOURCE_DUPLICATE

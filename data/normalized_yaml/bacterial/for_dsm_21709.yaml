@@ -169,12 +169,22 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_959_sl_ph_score10.py
+  action: RESOLVED_KOMODO_959_SL_PH_VARIANTS
+  changes: Linked as an SL medium pH variant
+  source: KOMODO Medium 959.1
+  notes: KOMODO Medium 959.1 preserves SL medium components and concentrations but
+    records pH 6 for DSM 21709.
 parent_media:
   path: data/normalized_yaml/bacterial/sl_medium.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: PH_VARIANT
   id: CultureMech:006904
   name: sl_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 959 is the pH 7.5 SL medium base.
+variant_relationship: PH_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 959.1 preserves SL medium components and concentrations but records
+  pH 6 for DSM 21709.
+data_quality_flags:
+- ingredients_curated

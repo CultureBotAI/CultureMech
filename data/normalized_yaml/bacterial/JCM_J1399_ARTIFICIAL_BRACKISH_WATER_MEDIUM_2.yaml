@@ -6,6 +6,8 @@ category: bacterial
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
+aeration: N2-CO2 (4:1, v/v) gas atmosphere
+culture_vessel: 20 ml medium in 60 ml serum bottles with butyl rubber stoppers
 media_term:
   preferred_term: JCM Medium J1399
   term:
@@ -17,6 +19,8 @@ ingredients:
   concentration:
     value: '13.2'
     unit: G_PER_L
+  source: JCM Medium 1399
+  notes: JCM Medium 1399 lists 13.2 g NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -27,6 +31,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  source: JCM Medium 1399
+  notes: JCM Medium 1399 lists 0.2 g KH2PO4.
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
@@ -37,6 +43,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  source: JCM Medium 1399
+  notes: JCM Medium 1399 lists 0.25 g NH4Cl.
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -47,6 +55,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  source: JCM Medium 1399
+  notes: JCM Medium 1399 lists 0.5 g KCl.
   term:
     id: CHEBI:32588
     label: potassium chloride
@@ -57,24 +67,20 @@ ingredients:
   concentration:
     value: '4.0'
     unit: G_PER_L
+  source: JCM Medium 1399
+  notes: JCM Medium 1399 lists 4.0 g Na2SO4.
   term:
     id: CHEBI:32149
     label: sodium sulfate
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
     label: sodium sulfate
-- preferred_term: Trace element solution (see Medium No. 439 )
-  concentration:
-    value: '1.0'
-    unit: ML_PER_L
-- preferred_term: Selenite tungstate solution (see Medium No. 431 )
-  concentration:
-    value: '1.0'
-    unit: ML_PER_L
 - preferred_term: Resazurin
   concentration:
     value: '1.0'
     unit: MG_PER_L
+  source: JCM Medium 1399
+  notes: JCM Medium 1399 lists 1.0 mg resazurin.
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -85,61 +91,132 @@ ingredients:
   concentration:
     value: '940.0'
     unit: ML_PER_L
+  source: JCM Medium 1399
+  notes: JCM Medium 1399 lists 940.0 ml distilled water in the base.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: 8% NaHCO3 solution*
+solutions:
+- preferred_term: Trace element solution (JCM Medium 439)
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  source: JCM Medium 1399 / JCM Medium 439
+  notes: JCM Medium 1399 adds 1.0 ml/L Trace element solution from JCM 439.
+- preferred_term: Selenite-tungstate solution (JCM Medium 431)
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  source: JCM Medium 1399 / JCM Medium 431
+  notes: JCM Medium 1399 adds 1.0 ml/L Selenite-tungstate solution from JCM 431.
+- preferred_term: 8% NaHCO3 solution
   concentration:
     value: '30.0'
     unit: ML_PER_L
-- preferred_term: 1 M MgCl2·6H2O solution
+  source: JCM Medium 1399
+  notes: JCM Medium 1399 adds 30.0 ml/L filter-sterilized 8% NaHCO3 solution.
+  composition:
+  - preferred_term: NaHCO3
+    concentration:
+      value: '80.0'
+      unit: G_PER_L
+    source: JCM Medium 1399
+    notes: Solute of the 8% NaHCO3 stock added by JCM Medium 1399.
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+- preferred_term: 1 M MgCl2 x 6H2O solution
   concentration:
     value: '17.0'
     unit: ML_PER_L
-- preferred_term: 1 M CaCl2·2H2O solution
+  source: JCM Medium 1399
+  notes: JCM Medium 1399 adds 17.0 ml/L anaerobic 1 M MgCl2 x 6H2O solution.
+- preferred_term: 1 M CaCl2 x 2H2O solution
   concentration:
     value: '1.0'
     unit: ML_PER_L
-- preferred_term: Vitamin solution (see Medium No. 403 )*
+  source: JCM Medium 1399
+  notes: JCM Medium 1399 adds 1.0 ml/L anaerobic 1 M CaCl2 x 2H2O solution.
+- preferred_term: Vitamin solution (JCM Medium 403)
   concentration:
     value: '1.0'
     unit: ML_PER_L
-- preferred_term: Thiamine solution (see Medium No. 403 )*
+  source: JCM Medium 1399 / JCM Medium 403
+  notes: JCM Medium 1399 adds 1.0 ml/L filter-sterilized Vitamin solution.
+- preferred_term: Thiamine solution (JCM Medium 403)
   concentration:
     value: '1.0'
     unit: ML_PER_L
-- preferred_term: Vitamin B12 solution (see Medium No. 403 )*
+  source: JCM Medium 1399 / JCM Medium 403
+  notes: JCM Medium 1399 adds 1.0 ml/L filter-sterilized Thiamine solution.
+- preferred_term: Vitamin B12 solution (JCM Medium 403)
   concentration:
     value: '1.0'
     unit: ML_PER_L
+  source: JCM Medium 1399 / JCM Medium 403
+  notes: JCM Medium 1399 adds 1.0 ml/L filter-sterilized Vitamin B12 solution.
 - preferred_term: 1 M Sodium formate solution
   concentration:
     value: '5.0'
     unit: ML_PER_L
+  source: JCM Medium 1399
+  notes: JCM Medium 1399 adds 5.0 ml/L anaerobic 1 M Sodium formate solution.
 - preferred_term: 1 M Sodium acetate solution
   concentration:
     value: '2.0'
     unit: ML_PER_L
-- preferred_term: 5% Na2S·9H2O solution
+  source: JCM Medium 1399
+  notes: JCM Medium 1399 adds 2.0 ml/L anaerobic 1 M Sodium acetate solution.
+- preferred_term: 5% Na2S x 9H2O solution
   concentration:
     value: '6.0'
     unit: ML_PER_L
+  source: JCM Medium 1399
+  notes: JCM Medium 1399 adds 6.0 ml/L autoclaved 5% Na2S x 9H2O solution before use
+    to reduce the medium.
+  composition:
+  - preferred_term: Na2S x 9H2O
+    concentration:
+      value: '50.0'
+      unit: G_PER_L
+    source: JCM Medium 1399
+    notes: Solute of the 5% Na2S x 9H2O stock added by JCM Medium 1399.
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v) gas
-    atmosphere.
+  description: Mix NaCl, KH2PO4, NH4Cl, KCl, Na2SO4, Trace element solution, Selenite-tungstate
+    solution, resazurin, and distilled water.
 - step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the base under an N2-CO2 (4:1, v/v) gas atmosphere.
+- step_number: 3
   action: MIX
-  description: 'After cooling, add the following solutions from anaerobic stocks (autoclaved
-    or *filtersterilized): Aseptically and anaerobically, distribute the medium into
-    culture vessels under the same gas mixture (e.g., 20 ml in 60 ml-serum bottles)
-    and seal with butyl rubber stoppers.'
+  description: After cooling, add bicarbonate, MgCl2 x 6H2O, CaCl2 x 2H2O, vitamin,
+    thiamine, vitamin B12, sodium formate, and sodium acetate stocks at the JCM Medium
+    1399 per-liter ratios.
+- step_number: 4
+  action: ALIQUOT
+  description: Aseptically and anaerobically distribute 20 ml medium into 60 ml serum
+    bottles under the same N2-CO2 gas mixture and seal with butyl rubber stoppers.
+- step_number: 5
+  action: MIX
+  description: Prior to use, add 6.0 ml/L autoclaved 5% Na2S x 9H2O solution stored
+    under N2 to reduce the medium.
 applications:
 - Microbial cultivation
+incubation_atmosphere: ANAEROBIC
 curation_history:
 - timestamp: '2026-06-02T07:09:03.047606+00:00'
   curator: jcm-grmd-import
@@ -154,3 +231,21 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_jcm_1399_brackish_score15.py
+  action: RESOLVED_JCM_1399_BRACKISH_SCORE15
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1399
+  notes: JCM Medium 1399 base salts, resazurin, and distilled water are direct components;
+    after autoclaving the base under N2-CO2 (4:1, v/v), add JCM 439 Trace element,
+    JCM 431 Selenite-tungstate, JCM 403 vitamin, thiamine, and vitamin B12 stocks
+    plus bicarbonate, magnesium chloride, calcium chloride, sodium formate, sodium
+    acetate, and sulfide stocks.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1399
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=403

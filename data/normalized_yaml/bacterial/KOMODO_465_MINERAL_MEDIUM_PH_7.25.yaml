@@ -423,18 +423,21 @@ curation_history:
 - timestamp: '2026-06-08T23:19:28.053866+00:00'
   curator: chebi-regrounding-v1.0
   action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
-  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
 - timestamp: '2026-06-10T07:46:44.996670+00:00'
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_dsmz_465c_dichloromethane_score15.py
+  action: RESOLVED_DSMZ_KOMODO_465C_SCORE15
+  changes: Resolved DSMZ/KOMODO Medium 465c ingredient and variant metadata
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=465
+  notes: Moved KOMODO Medium 465c.1 from KOMODO Medium 465 to DSMZ Medium 465c.
 variant_children:
-- path: data/normalized_yaml/bacterial/for_dsm_6813.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005570
-  name: for_dsm_6813
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
 - path: data/normalized_yaml/bacterial/for_dsm_9675_and_dsm_9685.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005572

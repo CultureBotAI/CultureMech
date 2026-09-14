@@ -8,15 +8,17 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Heart infusion broth (Eiken)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2213
+  notes: TOGO M2213 lists one liter of Heart infusion broth from Eiken.
 media_term:
   preferred_term: TOGO Medium M2213
   term:
     id: TOGO:M2213
     label: Heart infusion broth
-notes: 'Source: https://togomedium.org/medium/M2213'
+notes: TOGO M2213 records one liter of Heart infusion broth from Eiken; the source
+  does not disclose the product's internal formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -33,3 +35,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Heart infusion broth" to "heart_infusion_broth" for
     consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_products_more_score40.py
+  action: RESOLVED_TOGO_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO product graph
+  source: https://togomedium.org/medium/M2213
+  notes: TOGO M2213 records one liter of Heart infusion broth from Eiken; the source
+    does not disclose the product's internal formulation.
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2213

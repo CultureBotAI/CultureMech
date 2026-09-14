@@ -6,23 +6,37 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
+- preferred_term: Columbia agar base
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: DSMZ Medium 693
+  notes: DSMZ Medium 693 specifies Columbia agar base supplemented with 5% sheep blood.
+  term:
+    id: MICRO:0000536
+    label: Columbia agar base
 - preferred_term: Defibrinated sheep blood
   concentration:
     value: '5'
-    unit: PERCENT_W_V
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Columbia agar base
-  concentration:
-    value: '1'
-    unit: G_PER_L
+    unit: PERCENT_V_V
+  source: DSMZ Medium 693
+  notes: DSMZ Medium 693 specifies 5% sheep blood added to Columbia agar base.
+  term:
+    id: UBERON:0000178
+    label: blood
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Supplement Columbia agar base with 5% defibrinated sheep blood.
 media_term:
   preferred_term: TOGO Medium M2582
   term:
     id: TOGO:M2582
     label: Columbia Blood Medium
-notes: 'Source: https://togomedium.org/medium/M2582
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium693.pdf'
+notes: 'TOGO M2582 mirrors DSMZ Medium 693: Columbia agar base supplemented with 5%
+  defibrinated sheep blood. DSMZ''s liquid media 545, 215, and 1 are only freeze-dried
+  pellet rehydration alternatives; DSMZ warns that strains listing only M 693 do not
+  grow in those liquid rehydration media.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -39,3 +53,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Columbia Blood Medium" to "columbia_blood_medium" for
     consistent matching
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_columbia_blood_score40.py
+  action: RESOLVED_COLUMBIA_BLOOD_SCORE40_GRAPH
+  changes: Resolved score-40 Columbia/Blood Agar TOGO source duplicate
+  source: https://togomedium.org/medium/M2582; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium693.pdf
+  notes: 'TOGO M2582 mirrors DSMZ Medium 693: Columbia agar base supplemented with
+    5% defibrinated sheep blood. DSMZ''s liquid media 545, 215, and 1 are only freeze-dried
+    pellet rehydration alternatives; DSMZ warns that strains listing only M 693 do
+    not grow in those liquid rehydration media.'
+parent_media:
+  path: data/normalized_yaml/bacterial/columbia_blood_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001830
+  name: columbia_blood_medium
+  notes: Existing MediaDive record for the same source-catalogue formulation.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Source-catalogue duplicate of DSMZ Medium 693; TOGO M2582 preserves the same formulation.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M2582
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium693.pdf

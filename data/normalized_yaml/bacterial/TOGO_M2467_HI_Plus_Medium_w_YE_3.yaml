@@ -6,43 +6,51 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Agar Noble (if required)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component; Properties: Defined component'
-- preferred_term: DI Water
-  concentration:
-    value: '1700.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component [Merged 2 duplicates: 700.0, 1000.0]'
 - preferred_term: Heart Infusion Broth
   concentration:
-    value: '17.5'
+    value: '25.0'
     unit: G_PER_L
+  source: ATCC Medium 243
+  notes: ATCC Medium 243 lists 25.0 g Heart Infusion Broth in the base medium.
+- preferred_term: Agar Noble (if required)
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: ATCC Medium 243
+  notes: ATCC Medium 243 lists 15.0 g Agar Noble if a solid medium is required.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: DI Water
+  concentration:
+    value: '700.0'
+    unit: ML_PER_L
+  source: ATCC Medium 243
+  notes: ATCC Medium 243 lists 700.0 mL deionized water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Horse serum (heat-inactivated)
   concentration:
-    value: '200'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: 'Yeast Extract #3 (ATCC 9678, see below)'
-  concentration:
-    value: '100'
-    unit: G_PER_L
-- preferred_term: Yeast (Store bought Fleischmann’s yeast)
-  concentration:
-    value: '150'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source'
+    value: '200.0'
+    unit: ML_PER_L
+  source: ATCC Medium 243
+  notes: ATCC Medium 243 adds 200.0 mL heat-inactivated horse serum after the base
+    medium cools to 55 C.
 media_term:
   preferred_term: TOGO Medium M2467
   term:
     id: TOGO:M2467
     label: 'HI Plus Medium w/ YE #3'
-notes: 'Source: https://togomedium.org/medium/M2467
-
-  Original URL: https://www.atcc.org/~/media/98B9A2419DDE432EBF35ED01CD98A88E.ashx'
+notes: 'TOGO M2467 cites ATCC Medium 243; ATCC Medium 243 defines HI Plus Medium w/
+  YE #3 as Heart Infusion Broth base supplemented with heat-inactivated horse serum
+  and Yeast Extract #3.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -63,3 +71,62 @@ curation_history:
   action: NAME_NORMALIZED
   notes: 'Normalized name from "HI Plus Medium w/ YE #3" to "hi_plus_medium_w_ye_3"
     for consistent matching'
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_exact_score25.py
+  action: RESOLVED_TOGO_EXACT_SCORE25_GRAPH
+  changes: Resolved score-25 TOGO exact recipe graph
+  source: https://togomedium.org/medium/M2467; https://www.atcc.org/~/media/98B9A2419DDE432EBF35ED01CD98A88E.ashx
+  notes: 'TOGO M2467 cites ATCC Medium 243; ATCC Medium 243 defines HI Plus Medium
+    w/ YE #3 as Heart Infusion Broth base supplemented with heat-inactivated horse
+    serum and Yeast Extract #3.'
+ph_value: 7.4
+solutions:
+- preferred_term: 'Yeast Extract #3'
+  concentration:
+    value: '100.0'
+    unit: ML_PER_L
+  notes: 'ATCC Medium 243 adds 100.0 mL Yeast Extract #3 per liter.'
+  composition:
+  - preferred_term: Yeast
+    concentration:
+      value: '150.0'
+      unit: G_PER_L
+    source: 'ATCC Medium 243 Yeast Extract #3'
+    notes: 'ATCC Medium 243 prepares Yeast Extract #3 from 150.0 g store-bought Fleischmann''s
+      yeast per 1000.0 mL DI water.'
+  - preferred_term: DI Water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    source: 'ATCC Medium 243 Yeast Extract #3'
+    notes: 'ATCC Medium 243 Yeast Extract #3 lists 1000.0 mL deionized water.'
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the base from Heart Infusion Broth, optional Agar Noble, and
+    700 mL DI water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the base medium at 121 C and cool to 55 C.
+- step_number: 3
+  action: HEAT
+  description: Heat-inactivate horse serum at 56 C for 30 minutes.
+- step_number: 4
+  action: MIX
+  description: 'Warm the serum and Yeast Extract #3 to 55 C, then aseptically add
+    them to the basal medium.'
+sterilization:
+  method: AUTOCLAVE
+references:
+- reference: https://togomedium.org/medium/M2467
+- reference: https://www.atcc.org/~/media/98B9A2419DDE432EBF35ED01CD98A88E.ashx
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients

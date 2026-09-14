@@ -90,6 +90,7 @@ def _walk(items: Any, section: str, sink: list[tuple[str, str, dict[str, Any]]])
         name = str(ingredient.get("preferred_term") or "").strip()
         sink.append((name, section, ingredient))
         _walk(ingredient.get("composition"), f"{section}.composition", sink)
+        _walk(ingredient.get("solutions"), f"{section}.solutions", sink)
 
 
 def scan(records_dir: Path) -> tuple[list[dict[str, Any]], Counter]:

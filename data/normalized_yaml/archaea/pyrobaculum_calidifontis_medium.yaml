@@ -17,10 +17,16 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  term:
+    id: MICRO:0000182
+    label: Tryptone
 - preferred_term: Yeast extract
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Na2S2O3 x 5 H2O
   term:
     id: CHEBI:32150
@@ -61,4 +67,11 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_pyrobaculum_score10.py
+  action: GROUNDED_PYROBACULUM_SCORE10
+  changes: Grounded Pyrobaculum Tryptone and Yeast extract
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: 'Applied exact MediaIngredientMech mappings: Tryptone to MICRO:0000182 and
+    Yeast extract to FOODON:03315426.'
 kg_microbe_match: mediadive.medium:1090

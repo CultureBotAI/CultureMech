@@ -5,17 +5,27 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
-ingredients: []
+ingredients:
+- preferred_term: Na2SeO3 x 5 H2O
+  concentration:
+    value: '3.0'
+    unit: MICROG_PER_L
+  source: TOGO M904
+  notes: TOGO M904 specifies 3.0 micrograms/L Na2SeO3 x 5 H2O in place of yeast extract.
+  term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
 media_term:
   preferred_term: TOGO Medium M904
   term:
     id: TOGO:M904
     label: Bs 107 Medium
-notes: 'Source: https://togomedium.org/medium/M904
-
-  Original source: JCM - JCM_M867
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=867'
+notes: 'TOGO M904 preserves JCM Medium 867 as Bs 107 Medium: use JCM Medium 866, replacing
+  yeast extract with 3.0 micrograms/L Na2SeO3 x 5 H2O. JCM Medium 867 now returns
+  no formulation; current JCM Medium 866 still provides the base medium.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -41,5 +51,59 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_bs107_score35.py
+  action: RESOLVED_BS107_SCORE35
+  changes: Resolved Bs 107 as a JCM Medium 866 substituted-component variant
+  source: https://togomedium.org/medium/M904; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=866;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=867
+  notes: TOGO M904 preserves stale JCM Medium 867 as JCM Medium 866 with yeast extract
+    replaced by 3.0 micrograms/L Na2SeO3 x 5 H2O; the current JCM Medium 867 URL returns
+    no formulation.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_bs107_score35.py
+  action: LINKED_BS107_SCORE35_CHILDREN
+  changes: Linked Bs 107 score-35 child media
+  source: data/normalized_yaml/bacterial/bs_107_medium.yaml
+  notes: Added or refreshed reciprocal parent-child link for data/normalized_yaml/bacterial/bs_107_medium.yaml.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
+ph_value: 7.2
+incubation_atmosphere: ANAEROBIC
+solutions:
+- preferred_term: Desulfotomaculum BS Medium
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  culturemech_term:
+    id: CultureMech:003212
+    label: Desulfotomaculum BS Medium
+  notes: TOGO M904 states to use JCM Medium 866 as the base Bs 107 medium; current
+    JCM Medium 866 adjusts the prepared medium to pH 7.2 under N2-CO2.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use JCM Medium 866, replacing yeast extract with 3.0 micrograms/L Na2SeO3
+    x 5 H2O.
+parent_media:
+  path: data/normalized_yaml/bacterial/desulfotomaculum_bs_medium.yaml
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  id: CultureMech:003212
+  name: desulfotomaculum_bs_medium
+  notes: TOGO M904 preserves JCM Medium 867 as a Bs 107 variant of JCM Medium 866
+    with yeast extract replaced by 3.0 micrograms/L Na2SeO3 x 5 H2O.
+variant_relationship: SUBSTITUTED_COMPONENT_VARIANT
+variant_modifications:
+- Replaces yeast extract in JCM Medium 866 with 3.0 micrograms/L Na2SeO3 x 5 H2O.
+references:
+- reference: https://togomedium.org/medium/M904
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=866
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=867
+variant_children:
+- path: data/normalized_yaml/bacterial/bs_107_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003213
+  name: bs_107_medium
+  notes: The stale JCM J867 import represents the same Bs 107 formulation preserved
+    by TOGO M904.

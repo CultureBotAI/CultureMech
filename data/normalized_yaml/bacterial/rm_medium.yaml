@@ -3,57 +3,84 @@ name: rm_medium
 original_name: RM Medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
+ph_value: 6.0
 ingredients:
-- preferred_term: Yeast Extract
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: K2HPO4
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
-    compound'
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: DI water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
 - preferred_term: Glucose
   concentration:
-    value: '20'
+    value: '20.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  source: ATCC Medium 1341 / TOGO M2458
+  notes: ATCC Medium 1341 / TOGO M2458 lists 20.0 g/L glucose.
   term:
     id: CHEBI:17234
     label: glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  nutritional_roles:
+  - CARBON_SOURCE
+- preferred_term: Yeast extract
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: ATCC Medium 1341 / TOGO M2458
+  notes: ATCC Medium 1341 / TOGO M2458 lists 10.0 g/L yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: K2HPO4
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: ATCC Medium 1341 / TOGO M2458
+  notes: ATCC Medium 1341 / TOGO M2458 lists 2.0 g/L K2HPO4.
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
 - preferred_term: Agar (if needed)
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: ATCC Medium 1341 / TOGO M2458
+  notes: ATCC Medium 1341 / TOGO M2458 lists 15.0 g/L agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: DI water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: ATCC Medium 1341 / TOGO M2458
+  notes: ATCC Medium 1341 / TOGO M2458 lists 1000.0 ml DI water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M2458
   term:
     id: TOGO:M2458
     label: RM Medium
-notes: 'Source: https://togomedium.org/medium/M2458
-
-  Original URL: https://www.atcc.org/~/media/C3C9EB3F405C4C4E96F1D44126D4F514.ashx'
+notes: ATCC Medium 1341, mirrored by TOGO M2458, lists RM Medium with 20.0 g glucose,
+  10.0 g yeast extract, 2.0 g K2HPO4, 15.0 g agar if needed, and 1000.0 ml DI water.
+  ATCC directs separately autoclaving each component, combining the sterile components,
+  and adjusting pH to 6.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -87,3 +114,29 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2458_rm_score15.py
+  action: RESOLVED_TOGO_M2458_RM_SCORE15
+  source: https://togomedium.org/medium/M2458; https://www.atcc.org/~/media/C3C9EB3F405C4C4E96F1D44126D4F514.ashx;
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2458
+  notes: Corrected the imported DI-water row from a g/L artifact to 1000.0 ml/L, grounded
+    all five components, added ATCC's pH 6.0 and separate-autoclaving instructions,
+    and marked the formula as curated.
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave glucose, yeast extract, K2HPO4, agar if needed, and DI water
+    as separate components.
+- step_number: 2
+  action: MIX
+  description: Combine the separately autoclaved components.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 6.0.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2458
+- reference: https://www.atcc.org/~/media/C3C9EB3F405C4C4E96F1D44126D4F514.ashx
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2458

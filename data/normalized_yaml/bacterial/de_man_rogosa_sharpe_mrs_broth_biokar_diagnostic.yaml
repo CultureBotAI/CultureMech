@@ -2,32 +2,13 @@ id: CultureMech:008813
 name: de_man_rogosa_sharpe_mrs_broth_biokar_diagnostic
 original_name: De Man-Rogosa-Sharpe (MRS) broth (Biokar Diagnostic)
 category: bacterial
-medium_type: COMPLEX
-composition_type: UNDEFINED
-physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: De Man-Rogosa-Sharpe (MRS) broth (Biokar Diagnostic)
-  concentration:
-    value: '55.3'
-    unit: G_PER_L
 media_term:
   preferred_term: TOGO Medium M2225
   term:
     id: TOGO:M2225
     label: De Man-Rogosa-Sharpe (MRS) broth (Biokar Diagnostic)
-notes: 'Source: https://togomedium.org/medium/M2225'
+notes: TOGO M2225 lists 55.3 g De Man-Rogosa-Sharpe broth from Biokar Diagnostic in
+  one liter of distilled water at pH 6.4 +/- 0.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,3 +39,51 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_condition_wrappers_score20.py
+  action: RESOLVED_TOGO_CONDITION_WRAPPERS_SCORE20
+  changes: Resolved score-20 TOGO product and condition wrapper
+  source: https://togomedium.org/medium/M2225
+  notes: TOGO M2225 lists 55.3 g De Man-Rogosa-Sharpe broth from Biokar Diagnostic
+    in one liter of distilled water at pH 6.4 +/- 0.2.
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_range:
+  min: 6.2
+  max: 6.6
+temperature_value: 37.0
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2225
+  notes: TOGO M2225 lists one liter of distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: De Man-Rogosa-Sharpe (MRS) broth (Biokar Diagnostic)
+  concentration:
+    value: '55.3'
+    unit: G_PER_L
+  source: TOGO M2225
+  notes: TOGO M2225 lists 55.3 G_PER_L of De Man-Rogosa-Sharpe (MRS) broth (Biokar
+    Diagnostic).
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve 55.3 g De Man-Rogosa-Sharpe broth in one liter of distilled
+    water.
+- step_number: 2
+  action: MIX
+  description: Cultivate anaerobically for 24 h at 37 C.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2225

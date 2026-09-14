@@ -5,49 +5,100 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 10.0
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1.0'
+    unit: L
+  source: TOGO M92 / JCM Medium 100
+  notes: TOGO M92 / JCM Medium 100 lists 1.0 L Distilled water.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Beef extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Peptone
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
+  source: TOGO M92 / JCM Medium 100
+  notes: TOGO M92 / JCM Medium 100 lists 5.0 g/L Peptone.
+  term:
+    id: MICRO:0000178
+    label: Peptone
+  nutritional_roles:
+  - PROTEIN_SOURCE
+- preferred_term: Beef extract
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  source: TOGO M92 / JCM Medium 100
+  notes: TOGO M92 / JCM Medium 100 lists 3.0 g/L Beef extract.
+  term:
+    id: FOODON:03302088
+    label: Beef extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
+- preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: TOGO M92 / JCM Medium 100
+  notes: TOGO M92 / JCM Medium 100 lists 15.0 g/L Agar.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+solutions:
+- preferred_term: 10% Na2CO3 solution
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: TOGO M92 / JCM Medium 100
+  notes: TOGO M92 / JCM Medium 100 uses sterile 10% Na2CO3 solution to adjust the
+    final medium to pH 10.0; the source does not specify a fixed addition volume.
+  composition:
+  - preferred_term: Na2CO3
+    concentration:
+      value: '10.0'
+      unit: PERCENT_W_V
+    source: TOGO M92 / JCM Medium 100
+    notes: TOGO M92 / JCM Medium 100 specifies the pH-adjusting sodium carbonate solution
+      as 10.0% w/v.
+    term:
+      id: CHEBI:29377
+      label: sodium carbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:29377
+      label: sodium carbonate
+    physicochemical_roles:
+    - BUFFER
+  preparation_notes: Sterilize before adjusting the basal medium to pH 10.0.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve 5.0 g/L peptone, 3.0 g/L beef extract, and 15.0 g/L agar in
+    1.0 L distilled water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the basal nutrient agar.
+- step_number: 3
+  action: ADJUST_PH
+  description: After autoclaving, adjust pH to 10.0 with sterile 10% Na2CO3 solution.
 media_term:
   preferred_term: TOGO Medium M92
   term:
     id: TOGO:M92
     label: Alkaline Nutrient Agar
-notes: 'Source: https://togomedium.org/medium/M92
-
-  Original source: JCM - JCM_M100
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=100'
+notes: JCM Medium 100 / Alkaline Nutrient Agar uses the same Nutrient Agar basal formulation
+  as JCM Medium 74, then after autoclaving adjusts the final medium to pH 10.0 with
+  sterile 10% Na2CO3 solution. TOGO M92 and MediaDive J100 report the same JCM recipe.
 applications:
 - Microbial cultivation
 curation_history:
@@ -94,20 +145,29 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-solutions:
-- preferred_term: Na2CO3 solution
-  composition: []
-  concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-  name: Unknown solution
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m92_alkaline_nutrient_score15.py
+  action: RESOLVED_TOGO_M92_ALKALINE_NUTRIENT_AGAR
+  source: https://togomedium.org/medium/M92; https://mediadive.dsmz.de/medium/J100;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=100
+  notes: Corrected water from 1 g/L to 1.0 L, grounded peptone and beef extract, replaced
+    the empty Na2CO3 solution stub with a sterile 10% variable pH-adjuster stock,
+    and linked the MediaDive J100 source duplicate.
+references:
+- reference: https://togomedium.org/medium/M92
+- reference: https://mediadive.dsmz.de/medium/J100
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=100
 parent_media:
-  path: data/normalized_yaml/bacterial/TOGO_M65_Nutrient_Agar.yaml
+  path: data/normalized_yaml/bacterial/JCM_J100_ALKALINE_NUTRIENT_AGAR.yaml
   relationship: SOURCE_DUPLICATE
-  id: CultureMech:010062
-  name: nutrient_agar
+  id: CultureMech:002194
+  name: alkaline_nutrient_agar
+  notes: TOGO M92 imports the same JCM Medium 100 Alkaline Nutrient Agar formulation
+    represented by MediaDive J100.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- TOGO M92 imports the same JCM Medium 100 Alkaline Nutrient Agar formulation represented
+  by MediaDive J100.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings

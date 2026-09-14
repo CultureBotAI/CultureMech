@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T10:16:30.433037+00:00",
+  "generated": "2026-09-14T19:00:04.592907+00:00",
   "source": "TOGO",
   "count": 2917,
   "recipes": {
@@ -250,11 +250,11 @@
     "CultureMech:007674": {
       "name": "natranaeroarchaeum_medium",
       "filename": "TOGO_M1150_Natranaeroarchaeum_Medium.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 0,
       "id": "CultureMech:007674",
       "source_id": "TOGO:M1150",
       "source": "TOGO",
-      "solution_count": 8,
+      "solution_count": 5,
       "categories": [
         "archaea"
       ],
@@ -276,11 +276,11 @@
     "CultureMech:007686": {
       "name": "natronolimnobius_aht32_medium_b",
       "filename": "TOGO_M1162_Natronolimnobius_AHT32_Medium_B.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 2,
       "id": "CultureMech:007686",
       "source_id": "TOGO:M1162",
       "source": "TOGO",
-      "solution_count": 3,
+      "solution_count": 5,
       "categories": [
         "archaea"
       ],
@@ -328,11 +328,10 @@
     "CultureMech:007740": {
       "name": "halobacteria_medium_ph_8_0",
       "filename": "TOGO_M1212_Halobacteria_Medium_pH_8.0.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 9,
       "id": "CultureMech:007740",
       "source_id": "TOGO:M1212",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "archaea"
       ],
@@ -432,11 +431,11 @@
     "CultureMech:007797": {
       "name": "modified_cellulolytic_haloarchaea_medium",
       "filename": "TOGO_M1265_Modified_Cellulolytic_Haloarchaea_Medium.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 2,
       "id": "CultureMech:007797",
       "source_id": "TOGO:M1265",
       "source": "TOGO",
-      "solution_count": 6,
+      "solution_count": 7,
       "categories": [
         "archaea"
       ],
@@ -445,11 +444,11 @@
     "CultureMech:007798": {
       "name": "modified_cellulolytic_haloarchaea_medium",
       "filename": "TOGO_M1266_Modified_Cellulolytic_Haloarchaea_Medium.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 3,
       "id": "CultureMech:007798",
       "source_id": "TOGO:M1266",
       "source": "TOGO",
-      "solution_count": 6,
+      "solution_count": 7,
       "categories": [
         "archaea"
       ],
@@ -2229,7 +2228,7 @@
     "CultureMech:009347": {
       "name": "methanosaeta_thermophila_medium",
       "filename": "TOGO_M279_Methanosaeta_Thermophila_Medium.yaml",
-      "ingredient_count": 8,
+      "ingredient_count": 7,
       "id": "CultureMech:009347",
       "source_id": "TOGO:M279",
       "source": "TOGO",
@@ -2576,7 +2575,7 @@
     "CultureMech:009979": {
       "name": "thermoproteus_medium_b",
       "filename": "TOGO_M583_Thermoproteus_Medium_B.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 5,
       "id": "CultureMech:009979",
       "source_id": "TOGO:M583",
       "source": "TOGO",
@@ -2602,7 +2601,7 @@
     "CultureMech:010044": {
       "name": "thermoproteus_medium_c",
       "filename": "TOGO_M643_Thermoproteus_Medium_C.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 5,
       "id": "CultureMech:010044",
       "source_id": "TOGO:M643",
       "source": "TOGO",
@@ -2692,11 +2691,10 @@
     "CultureMech:010120": {
       "name": "aerobic_sulfolobales_medium_without_sulfur",
       "filename": "TOGO_M713_Aerobic_Sulfolobales_Medium_Without_Sulfur.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 13,
       "id": "CultureMech:010120",
       "source_id": "TOGO:M713",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "archaea"
       ],
@@ -3005,7 +3003,7 @@
     "CultureMech:010396": {
       "name": "peat_medium_2_for_methanobacteria",
       "filename": "TOGO_M970_Peat_Medium_2_For_Methanobacteria.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 4,
       "id": "CultureMech:010396",
       "source_id": "TOGO:M970",
       "source": "TOGO",
@@ -4374,7 +4372,7 @@
     "CultureMech:009318": {
       "name": "4_yaco_media",
       "filename": "4_yaco_media.yaml",
-      "ingredient_count": 16,
+      "ingredient_count": 8,
       "id": "CultureMech:009318",
       "source_id": "TOGO:M2770",
       "source": "TOGO",
@@ -4887,11 +4885,10 @@
     "CultureMech:007555": {
       "name": "mrs_medium_ph_5_5",
       "filename": "TOGO_M103_MRS_Medium_pH_5.5.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 10,
       "id": "CultureMech:007555",
       "source_id": "TOGO:M103",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -5031,11 +5028,11 @@
     "CultureMech:007567": {
       "name": "m30",
       "filename": "TOGO_M1050_M30.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 0,
       "id": "CultureMech:007567",
       "source_id": "TOGO:M1050",
       "source": "TOGO",
-      "solution_count": 4,
+      "solution_count": 5,
       "categories": [
         "bacterial"
       ],
@@ -5173,11 +5170,11 @@
     "CultureMech:007583": {
       "name": "clostridium_swellfunianum_medium",
       "filename": "TOGO_M1066_Clostridium_Swellfunianum_Medium.yaml",
-      "ingredient_count": 11,
+      "ingredient_count": 0,
       "id": "CultureMech:007583",
       "source_id": "TOGO:M1066",
       "source": "TOGO",
-      "solution_count": 8,
+      "solution_count": 10,
       "categories": [
         "bacterial"
       ],
@@ -5524,11 +5521,10 @@
     "CultureMech:007617": {
       "name": "r_agar_with_catalase",
       "filename": "TOGO_M109_R_Agar_With_Catalase.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 10,
       "id": "CultureMech:007617",
       "source_id": "TOGO:M109",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -5567,7 +5563,7 @@
       "id": "CultureMech:007620",
       "source_id": "TOGO:M1101",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
@@ -5580,7 +5576,7 @@
       "id": "CultureMech:007621",
       "source_id": "TOGO:M1102",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
@@ -5857,7 +5853,7 @@
     "CultureMech:007658": {
       "name": "freshwater_iron_oxidizing_bacteria_medium_ii",
       "filename": "TOGO_M1136_Freshwater_Iron-Oxidizing_Bacteria_Medium-II.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 3,
       "id": "CultureMech:007658",
       "source_id": "TOGO:M1136",
       "source": "TOGO",
@@ -6104,11 +6100,11 @@
     "CultureMech:007682": {
       "name": "r_agar_ph_9_0",
       "filename": "TOGO_M1159_R_Agar_pH_9.0.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 9,
       "id": "CultureMech:007682",
       "source_id": "TOGO:M1159",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -6173,7 +6169,7 @@
       "id": "CultureMech:007689",
       "source_id": "TOGO:M1165",
       "source": "TOGO",
-      "solution_count": 10,
+      "solution_count": 9,
       "categories": [
         "bacterial"
       ],
@@ -6186,7 +6182,7 @@
       "id": "CultureMech:007690",
       "source_id": "TOGO:M1166",
       "source": "TOGO",
-      "solution_count": 10,
+      "solution_count": 9,
       "categories": [
         "bacterial"
       ],
@@ -6199,7 +6195,7 @@
       "id": "CultureMech:007691",
       "source_id": "TOGO:M1167",
       "source": "TOGO",
-      "solution_count": 10,
+      "solution_count": 9,
       "categories": [
         "bacterial"
       ],
@@ -6212,7 +6208,7 @@
       "id": "CultureMech:007692",
       "source_id": "TOGO:M1168",
       "source": "TOGO",
-      "solution_count": 10,
+      "solution_count": 9,
       "categories": [
         "bacterial"
       ],
@@ -6494,7 +6490,7 @@
     "CultureMech:007723": {
       "name": "ethane_c_medium",
       "filename": "TOGO_M1198_Ethane-C_Medium.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 5,
       "id": "CultureMech:007723",
       "source_id": "TOGO:M1198",
       "source": "TOGO",
@@ -6546,7 +6542,7 @@
     "CultureMech:007727": {
       "name": "artficial_brackish_water_medium",
       "filename": "TOGO_M1200_Artficial_Brackish_Water_Medium.yaml",
-      "ingredient_count": 10,
+      "ingredient_count": 9,
       "id": "CultureMech:007727",
       "source_id": "TOGO:M1200",
       "source": "TOGO",
@@ -6559,7 +6555,7 @@
     "CultureMech:007729": {
       "name": "artficial_freshwater_medium_i",
       "filename": "TOGO_M1202_Artficial_Freshwater_Medium_I.yaml",
-      "ingredient_count": 10,
+      "ingredient_count": 9,
       "id": "CultureMech:007729",
       "source_id": "TOGO:M1202",
       "source": "TOGO",
@@ -6572,7 +6568,7 @@
     "CultureMech:007730": {
       "name": "artficial_freshwater_medium_ii",
       "filename": "TOGO_M1203_Artficial_Freshwater_Medium_II.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 8,
       "id": "CultureMech:007730",
       "source_id": "TOGO:M1203",
       "source": "TOGO",
@@ -6585,7 +6581,7 @@
     "CultureMech:007731": {
       "name": "artficial_freshwater_medium_ii",
       "filename": "TOGO_M1204_Artficial_Freshwater_Medium_II.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 8,
       "id": "CultureMech:007731",
       "source_id": "TOGO:M1204",
       "source": "TOGO",
@@ -6740,11 +6736,11 @@
     "CultureMech:007748": {
       "name": "natronospira_proteinivora_medium",
       "filename": "TOGO_M1220_Natronospira_Proteinivora_Medium.yaml",
-      "ingredient_count": 10,
+      "ingredient_count": 0,
       "id": "CultureMech:007748",
       "source_id": "TOGO:M1220",
       "source": "TOGO",
-      "solution_count": 8,
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
@@ -6817,11 +6813,11 @@
     "CultureMech:007755": {
       "name": "modified_roseospira_medium",
       "filename": "TOGO_M1227_Modified_Roseospira_Medium.yaml",
-      "ingredient_count": 12,
+      "ingredient_count": 10,
       "id": "CultureMech:007755",
       "source_id": "TOGO:M1227",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 3,
       "categories": [
         "bacterial"
       ],
@@ -7780,7 +7776,7 @@
     "CultureMech:007861": {
       "name": "cm_ye_medium_ph_9",
       "filename": "TOGO_M1326_CM_YE_Medium_pH_9.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 7,
       "id": "CultureMech:007861",
       "source_id": "TOGO:M1326",
       "source": "TOGO",
@@ -8222,11 +8218,10 @@
     "CultureMech:007911": {
       "name": "modified_reinforced_clostridial_medium_at_ph_8_0",
       "filename": "TOGO_M1372_Modified_Reinforced_Clostridial_Medium_AT_pH_8.0.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 9,
       "id": "CultureMech:007911",
       "source_id": "TOGO:M1372",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -8325,7 +8320,7 @@
     "CultureMech:007919": {
       "name": "natroniella_medium_for_anb_phb2",
       "filename": "TOGO_M1385_Natroniella_Medium_For_ANB-PHB2.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 7,
       "id": "CultureMech:007919",
       "source_id": "TOGO:M1385",
       "source": "TOGO",
@@ -8543,11 +8538,11 @@
     "CultureMech:007937": {
       "name": "ureaplasma_medium",
       "filename": "TOGO_M1400_Ureaplasma_Medium.yaml",
-      "ingredient_count": 8,
+      "ingredient_count": 3,
       "id": "CultureMech:007937",
       "source_id": "TOGO:M1400",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 3,
       "categories": [
         "bacterial"
       ],
@@ -8569,7 +8564,7 @@
     "CultureMech:007939": {
       "name": "helicobacter_medium",
       "filename": "TOGO_M1402_Helicobacter_Medium.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 7,
       "id": "CultureMech:007939",
       "source_id": "TOGO:M1402",
       "source": "TOGO",
@@ -8727,10 +8722,11 @@
     "CultureMech:008017": {
       "name": "blood_agar",
       "filename": "TOGO_M1474_Blood_Agar.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 2,
       "id": "CultureMech:008017",
       "source_id": "TOGO:M1474",
       "source": "TOGO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -8836,11 +8832,10 @@
     "CultureMech:008071": {
       "name": "gam_medium",
       "filename": "TOGO_M1525_GAM_Medium.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:008071",
       "source_id": "TOGO:M1525",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -8873,11 +8868,10 @@
     "CultureMech:008092": {
       "name": "cytophaga_marine_medium",
       "filename": "TOGO_M1544_Cytophaga_Marine_Medium.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:008092",
       "source_id": "TOGO:M1544",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -8898,7 +8892,7 @@
     "CultureMech:008095": {
       "name": "marine_agar_2216",
       "filename": "TOGO_M1547_Marine_Agar_2216.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 18,
       "id": "CultureMech:008095",
       "source_id": "TOGO:M1547",
       "source": "TOGO",
@@ -8936,11 +8930,10 @@
     "CultureMech:008102": {
       "name": "methylobacterium_medium",
       "filename": "TOGO_M1553_Methylobacterium_Medium.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 6,
       "id": "CultureMech:008102",
       "source_id": "TOGO:M1553",
       "source": "TOGO",
-      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -10455,11 +10448,10 @@
     "CultureMech:008723": {
       "name": "cyc_agar_ph_8_0",
       "filename": "TOGO_M212_CYC_Agar_pH_8.0.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 5,
       "id": "CultureMech:008723",
       "source_id": "TOGO:M212",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -10681,7 +10673,7 @@
     "CultureMech:008786": {
       "name": "nutrient_agar_broth",
       "filename": "TOGO_M2193_Nutrient_Agar_Broth.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 3,
       "id": "CultureMech:008786",
       "source_id": "TOGO:M2193",
       "source": "TOGO",
@@ -10730,11 +10722,11 @@
     "CultureMech:008805": {
       "name": "pplo_broth",
       "filename": "TOGO_M2215_PPLO_broth.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 5,
       "id": "CultureMech:008805",
       "source_id": "TOGO:M2215",
       "source": "TOGO",
-      "solution_count": 1,
+      "solution_count": 3,
       "categories": [
         "bacterial"
       ],
@@ -10806,7 +10798,7 @@
     "CultureMech:008839": {
       "name": "lactobacilli_mrs_agar_broth",
       "filename": "TOGO_M2250_Lactobacilli_MRS_Agar_Broth.yaml",
-      "ingredient_count": 11,
+      "ingredient_count": 10,
       "id": "CultureMech:008839",
       "source_id": "TOGO:M2250",
       "source": "TOGO",
@@ -11434,10 +11426,11 @@
     "CultureMech:008939": {
       "name": "medium_for_erythrobacter_longus",
       "filename": "TOGO_M2354_Medium_For_Erythrobacter_Longus.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 6,
       "id": "CultureMech:008939",
       "source_id": "TOGO:M2354",
       "source": "TOGO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -11680,7 +11673,7 @@
     "CultureMech:009000": {
       "name": "nutrient_broth",
       "filename": "TOGO_M2418_Nutrient_Broth.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:009000",
       "source_id": "TOGO:M2418",
       "source": "TOGO",
@@ -11791,11 +11784,10 @@
     "CultureMech:009030": {
       "name": "sp4_z_medium",
       "filename": "TOGO_M2450_SP4-Z_Medium.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 10,
       "id": "CultureMech:009030",
       "source_id": "TOGO:M2450",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -11804,11 +11796,10 @@
     "CultureMech:009031": {
       "name": "sp4_z_medium",
       "filename": "TOGO_M2451_SP4-Z_Medium.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 10,
       "id": "CultureMech:009031",
       "source_id": "TOGO:M2451",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -11817,11 +11808,10 @@
     "CultureMech:009032": {
       "name": "sp4_z_medium",
       "filename": "TOGO_M2452_SP4-Z_Medium.yaml",
-      "ingredient_count": 10,
+      "ingredient_count": 11,
       "id": "CultureMech:009032",
       "source_id": "TOGO:M2452",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -11830,11 +11820,10 @@
     "CultureMech:009033": {
       "name": "sp4_z_medium",
       "filename": "TOGO_M2453_SP4-Z_Medium.yaml",
-      "ingredient_count": 10,
+      "ingredient_count": 11,
       "id": "CultureMech:009033",
       "source_id": "TOGO:M2453",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -11882,10 +11871,11 @@
     "CultureMech:009044": {
       "name": "hi_plus_medium_w_ye_3",
       "filename": "TOGO_M2467_HI_Plus_Medium_w_YE_3.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 4,
       "id": "CultureMech:009044",
       "source_id": "TOGO:M2467",
       "source": "TOGO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -11971,7 +11961,7 @@
     "CultureMech:009055": {
       "name": "marine_broth_2216",
       "filename": "TOGO_M2481_Marine_Broth_2216.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 17,
       "id": "CultureMech:009055",
       "source_id": "TOGO:M2481",
       "source": "TOGO",
@@ -12961,7 +12951,7 @@
     "CultureMech:009252": {
       "name": "castenholz_medium",
       "filename": "TOGO_M269_Castenholz_Medium.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 3,
       "id": "CultureMech:009252",
       "source_id": "TOGO:M269",
       "source": "TOGO",
@@ -13040,11 +13030,11 @@
     "CultureMech:009262": {
       "name": "chopped_meat_medium",
       "filename": "TOGO_M2710_Chopped_meat_medium.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 8,
       "id": "CultureMech:009262",
       "source_id": "TOGO:M2710",
       "source": "TOGO",
-      "solution_count": 1,
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -13599,10 +13589,11 @@
     "CultureMech:009332": {
       "name": "nutrient_broth",
       "filename": "TOGO_M2783_Nutrient_broth.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 5,
       "id": "CultureMech:009332",
       "source_id": "TOGO:M2783",
       "source": "TOGO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -13959,7 +13950,7 @@
     "CultureMech:009500": {
       "name": "chocolate_agar",
       "filename": "TOGO_M2977_chocolate_agar.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:009500",
       "source_id": "TOGO:M2977",
       "source": "TOGO",
@@ -13996,7 +13987,7 @@
     "CultureMech:009509": {
       "name": "pe_medium",
       "filename": "TOGO_M298_PE_Medium.yaml",
-      "ingredient_count": 29,
+      "ingredient_count": 8,
       "id": "CultureMech:009509",
       "source_id": "TOGO:M298",
       "source": "TOGO",
@@ -14244,7 +14235,6 @@
       "id": "CultureMech:009553",
       "source_id": "TOGO:M3040",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -14866,11 +14856,11 @@
     "CultureMech:009690": {
       "name": "tmbs4_medium",
       "filename": "TOGO_M3270_Tmbs4_Medium.yaml",
-      "ingredient_count": 11,
+      "ingredient_count": 10,
       "id": "CultureMech:009690",
       "source_id": "TOGO:M3270",
       "source": "TOGO",
-      "solution_count": 12,
+      "solution_count": 11,
       "categories": [
         "bacterial"
       ],
@@ -14968,11 +14958,11 @@
     "CultureMech:009709": {
       "name": "pe_medium_ph_6_8",
       "filename": "TOGO_M331_PE_Medium_pH_6.8.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 8,
       "id": "CultureMech:009709",
       "source_id": "TOGO:M331",
       "source": "TOGO",
-      "solution_count": 1,
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
@@ -14981,11 +14971,11 @@
     "CultureMech:009710": {
       "name": "pe_medium_ph_7_2",
       "filename": "TOGO_M332_PE_Medium_pH_7.2.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 8,
       "id": "CultureMech:009710",
       "source_id": "TOGO:M332",
       "source": "TOGO",
-      "solution_count": 1,
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
@@ -15070,7 +15060,7 @@
     "CultureMech:009718": {
       "name": "marine_broth_2216",
       "filename": "TOGO_M33_Marine_Broth_2216.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 17,
       "id": "CultureMech:009718",
       "source_id": "TOGO:M33",
       "source": "TOGO",
@@ -15261,7 +15251,7 @@
     "CultureMech:009738": {
       "name": "py4sr_agar",
       "filename": "TOGO_M358_PY4SR_Agar.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 0,
       "id": "CultureMech:009738",
       "source_id": "TOGO:M358",
       "source": "TOGO",
@@ -15505,10 +15495,11 @@
     "CultureMech:009760": {
       "name": "glycerol_soil_medium",
       "filename": "TOGO_M379_Glycerol-Soil_Medium.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 5,
       "id": "CultureMech:009760",
       "source_id": "TOGO:M379",
       "source": "TOGO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -15555,7 +15546,7 @@
     "CultureMech:009765": {
       "name": "desulfovibrio_medium",
       "filename": "TOGO_M384_Desulfovibrio_Medium.yaml",
-      "ingredient_count": 14,
+      "ingredient_count": 12,
       "id": "CultureMech:009765",
       "source_id": "TOGO:M384",
       "source": "TOGO",
@@ -15682,7 +15673,7 @@
     "CultureMech:009776": {
       "name": "acidic_oatmeal_agar_ph_5_0",
       "filename": "TOGO_M394_Acidic_Oatmeal_Agar_pH_5.0.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 3,
       "id": "CultureMech:009776",
       "source_id": "TOGO:M394",
       "source": "TOGO",
@@ -15784,11 +15775,11 @@
     "CultureMech:009787": {
       "name": "modified_hnw_medium",
       "filename": "TOGO_M403_Modified_HNW_Medium.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 4,
       "id": "CultureMech:009787",
       "source_id": "TOGO:M403",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
@@ -16007,7 +15998,7 @@
     "CultureMech:009808": {
       "name": "acidic_glycerol_asparagine_agar_ph_5_0",
       "filename": "TOGO_M422_Acidic_Glycerol-Asparagine_Agar_pH_5.0.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 5,
       "id": "CultureMech:009808",
       "source_id": "TOGO:M422",
       "source": "TOGO",
@@ -16081,7 +16072,7 @@
     "CultureMech:009815": {
       "name": "oatmeal_agar_isp_3",
       "filename": "TOGO_M42_Oatmeal_Agar_ISP-3.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 3,
       "id": "CultureMech:009815",
       "source_id": "TOGO:M42",
       "source": "TOGO",
@@ -17008,7 +16999,7 @@
     "CultureMech:009900": {
       "name": "inorganic_salts_starch_agar_isp_4",
       "filename": "TOGO_M50_Inorganic_Salts-Starch_Agar_ISP-4.yaml",
-      "ingredient_count": 11,
+      "ingredient_count": 8,
       "id": "CultureMech:009900",
       "source_id": "TOGO:M50",
       "source": "TOGO",
@@ -17230,7 +17221,7 @@
     "CultureMech:009922": {
       "name": "glycerol_asparagine_agar_isp_5",
       "filename": "TOGO_M52_Glycerol-Asparagine_Agar_ISP-5.yaml",
-      "ingredient_count": 8,
+      "ingredient_count": 5,
       "id": "CultureMech:009922",
       "source_id": "TOGO:M52",
       "source": "TOGO",
@@ -17448,11 +17439,11 @@
     "CultureMech:009942": {
       "name": "desulfotomaculum_pbe_medium",
       "filename": "TOGO_M549_Desulfotomaculum_PBE_Medium.yaml",
-      "ingredient_count": 8,
+      "ingredient_count": 7,
       "id": "CultureMech:009942",
       "source_id": "TOGO:M549",
       "source": "TOGO",
-      "solution_count": 3,
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
@@ -18395,10 +18386,11 @@
     "CultureMech:010027": {
       "name": "cys_medium",
       "filename": "TOGO_M627_CYS_Medium.yaml",
-      "ingredient_count": 15,
+      "ingredient_count": 8,
       "id": "CultureMech:010027",
       "source_id": "TOGO:M627",
       "source": "TOGO",
+      "solution_count": 7,
       "categories": [
         "bacterial"
       ],
@@ -18407,10 +18399,11 @@
     "CultureMech:010028": {
       "name": "cys_medium_for_ymo722",
       "filename": "TOGO_M628_CYS_Medium_For_YMO722.yaml",
-      "ingredient_count": 15,
+      "ingredient_count": 8,
       "id": "CultureMech:010028",
       "source_id": "TOGO:M628",
       "source": "TOGO",
+      "solution_count": 7,
       "categories": [
         "bacterial"
       ],
@@ -18507,11 +18500,11 @@
     "CultureMech:010037": {
       "name": "modified_thermus_sv_medium",
       "filename": "TOGO_M637_Modified_Thermus_SV_Medium.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 6,
       "id": "CultureMech:010037",
       "source_id": "TOGO:M637",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -18943,10 +18936,11 @@
     "CultureMech:010079": {
       "name": "pelagicoccus_agar",
       "filename": "TOGO_M675_Pelagicoccus_Agar.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 3,
       "id": "CultureMech:010079",
       "source_id": "TOGO:M675",
       "source": "TOGO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -19264,11 +19258,11 @@
     "CultureMech:010107": {
       "name": "bl_agar_glucose_blood_liver_agar",
       "filename": "TOGO_M6_BL_Agar_Glucose_Blood_Liver_Agar.yaml",
-      "ingredient_count": 20,
+      "ingredient_count": 11,
       "id": "CultureMech:010107",
       "source_id": "TOGO:M6",
       "source": "TOGO",
-      "solution_count": 3,
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
@@ -19355,7 +19349,7 @@
     "CultureMech:010116": {
       "name": "oatmeal_agar_ph_6_0",
       "filename": "TOGO_M709_Oatmeal_Agar_pH_6.0.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 3,
       "id": "CultureMech:010116",
       "source_id": "TOGO:M709",
       "source": "TOGO",
@@ -19483,7 +19477,7 @@
     "CultureMech:010129": {
       "name": "mjy_medium_for_pyrolinea_marinus",
       "filename": "TOGO_M721_MJY_Medium_For_Pyrolinea_Marinus.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 3,
       "id": "CultureMech:010129",
       "source_id": "TOGO:M721",
       "source": "TOGO",
@@ -19496,7 +19490,7 @@
     "CultureMech:010130": {
       "name": "mjy_medium_for_pyrolinea_marinus",
       "filename": "TOGO_M722_MJY_Medium_For_Pyrolinea_Marinus.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 3,
       "id": "CultureMech:010130",
       "source_id": "TOGO:M722",
       "source": "TOGO",
@@ -19650,10 +19644,11 @@
     "CultureMech:010144": {
       "name": "lowenstein_jensen_medium",
       "filename": "TOGO_M735_Lowenstein-Jensen_Medium.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 0,
       "id": "CultureMech:010144",
       "source_id": "TOGO:M735",
       "source": "TOGO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -19676,11 +19671,11 @@
     "CultureMech:010146": {
       "name": "alkaline_yeast_extract_malt_extract_agar",
       "filename": "TOGO_M73_Alkaline_Yeast_Extract-Malt_Extract_Agar.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 5,
       "id": "CultureMech:010146",
       "source_id": "TOGO:M73",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -19807,10 +19802,11 @@
     "CultureMech:010159": {
       "name": "rye_bran_mrs",
       "filename": "TOGO_M753_RYE-Bran_MRS.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 2,
       "id": "CultureMech:010159",
       "source_id": "TOGO:M753",
       "source": "TOGO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -19942,11 +19938,11 @@
     "CultureMech:010172": {
       "name": "mvl_medium",
       "filename": "TOGO_M765_MVL_Medium.yaml",
-      "ingredient_count": 11,
+      "ingredient_count": 6,
       "id": "CultureMech:010172",
       "source_id": "TOGO:M765",
       "source": "TOGO",
-      "solution_count": 7,
+      "solution_count": 6,
       "categories": [
         "bacterial"
       ],
@@ -20187,7 +20183,7 @@
     "CultureMech:010192": {
       "name": "dethiosulfovibrio_ii_medium",
       "filename": "TOGO_M783_Dethiosulfovibrio_II_Medium.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 8,
       "id": "CultureMech:010192",
       "source_id": "TOGO:M783",
       "source": "TOGO",
@@ -20441,11 +20437,11 @@
     "CultureMech:010215": {
       "name": "mineral_medium_for_hydrogenophilus_islandicum",
       "filename": "TOGO_M803_Mineral_Medium_For_Hydrogenophilus_Islandicum.yaml",
-      "ingredient_count": 11,
+      "ingredient_count": 6,
       "id": "CultureMech:010215",
       "source_id": "TOGO:M803",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 3,
       "categories": [
         "bacterial"
       ],
@@ -20454,11 +20450,11 @@
     "CultureMech:010216": {
       "name": "mineral_medium_for_thiomonas_islandicum",
       "filename": "TOGO_M804_Mineral_Medium_For_Thiomonas_Islandicum.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 6,
       "id": "CultureMech:010216",
       "source_id": "TOGO:M804",
       "source": "TOGO",
-      "solution_count": 1,
+      "solution_count": 3,
       "categories": [
         "bacterial"
       ],
@@ -21210,11 +21206,10 @@
     "CultureMech:010288": {
       "name": "modified_desulfovibrio_medium",
       "filename": "TOGO_M870_Modified_Desulfovibrio_Medium.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 13,
       "id": "CultureMech:010288",
       "source_id": "TOGO:M870",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -21645,10 +21640,11 @@
     "CultureMech:010323": {
       "name": "bs_107_medium",
       "filename": "TOGO_M904_Bs_107_Medium.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 1,
       "id": "CultureMech:010323",
       "source_id": "TOGO:M904",
       "source": "TOGO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -22027,7 +22023,7 @@
     "CultureMech:010357": {
       "name": "microaerophilic_thermus_medium",
       "filename": "TOGO_M935_Microaerophilic_Thermus_Medium.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 5,
       "id": "CultureMech:010357",
       "source_id": "TOGO:M935",
       "source": "TOGO",
@@ -22052,7 +22048,7 @@
     "CultureMech:010360": {
       "name": "5_salt_water_growth_medium",
       "filename": "TOGO_M938_5_Salt_Water_Growth_Medium.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 3,
       "id": "CultureMech:010360",
       "source_id": "TOGO:M938",
       "source": "TOGO",
@@ -22194,10 +22190,11 @@
     "CultureMech:010373": {
       "name": "nutrient_agar_with_25_soil_extract",
       "filename": "TOGO_M94_Nutrient_Agar_With_25_Soil_Extract.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 4,
       "id": "CultureMech:010373",
       "source_id": "TOGO:M94",
       "source": "TOGO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -22472,7 +22469,7 @@
     "CultureMech:010404": {
       "name": "oscillibacter_gh_medium",
       "filename": "TOGO_M978_Oscillibacter_GH_Medium.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 4,
       "id": "CultureMech:010404",
       "source_id": "TOGO:M978",
       "source": "TOGO",
@@ -22601,7 +22598,7 @@
     "CultureMech:010424": {
       "name": "gauzes_synthetic_medium_no_1_ph_5_3",
       "filename": "TOGO_M996_Gauze_s_Synthetic_Medium_NO._1_pH_5.3.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 7,
       "id": "CultureMech:010424",
       "source_id": "TOGO:M996",
       "source": "TOGO",
@@ -22767,11 +22764,10 @@
     "CultureMech:009798": {
       "name": "acidic_yeast_extract_malt_extract_agar_ph_5_0",
       "filename": "acidic_yeast_extract_malt_extract_agar_ph_5_0.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 5,
       "id": "CultureMech:009798",
       "source_id": "TOGO:M413",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -22780,11 +22776,10 @@
     "CultureMech:010249": {
       "name": "acidic_yeast_starch_agar_ph_5_0",
       "filename": "acidic_yeast_starch_agar_ph_5_0.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 4,
       "id": "CultureMech:010249",
       "source_id": "TOGO:M835",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -22885,7 +22880,6 @@
       "id": "CultureMech:008403",
       "source_id": "TOGO:M1830",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -22957,11 +22951,11 @@
     "CultureMech:009693": {
       "name": "alkaline_diluted_ams_medium",
       "filename": "alkaline_diluted_ams_medium.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 4,
       "id": "CultureMech:009693",
       "source_id": "TOGO:M3279",
       "source": "TOGO",
-      "solution_count": 4,
+      "solution_count": 3,
       "categories": [
         "bacterial"
       ],
@@ -23279,7 +23273,7 @@
     "CultureMech:007728": {
       "name": "artficial_marine_water_medium",
       "filename": "artficial_marine_water_medium.yaml",
-      "ingredient_count": 10,
+      "ingredient_count": 9,
       "id": "CultureMech:007728",
       "source_id": "TOGO:M1201",
       "source": "TOGO",
@@ -23380,7 +23374,7 @@
     "CultureMech:009091": {
       "name": "astidious_anaerobe_agar",
       "filename": "astidious_anaerobe_agar.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:009091",
       "source_id": "TOGO:M2521",
       "source": "TOGO",
@@ -23392,11 +23386,11 @@
     "CultureMech:008854": {
       "name": "autoinducer_bioassay_ab_medium",
       "filename": "autoinducer_bioassay_ab_medium.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 4,
       "id": "CultureMech:008854",
       "source_id": "TOGO:M2267",
       "source": "TOGO",
-      "solution_count": 1,
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
@@ -23437,7 +23431,6 @@
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:009007": {
@@ -23482,11 +23475,10 @@
     "CultureMech:008613": {
       "name": "basal_medium_acetaldehyde",
       "filename": "basal_medium_acetaldehyde.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 7,
       "id": "CultureMech:008613",
       "source_id": "TOGO:M2025",
       "source": "TOGO",
-      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -23495,11 +23487,10 @@
     "CultureMech:008614": {
       "name": "basal_medium_benzaldehyde",
       "filename": "basal_medium_benzaldehyde.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 7,
       "id": "CultureMech:008614",
       "source_id": "TOGO:M2026",
       "source": "TOGO",
-      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -23508,11 +23499,10 @@
     "CultureMech:008615": {
       "name": "basal_medium_formaldehyde",
       "filename": "basal_medium_formaldehyde.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 7,
       "id": "CultureMech:008615",
       "source_id": "TOGO:M2027",
       "source": "TOGO",
-      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -23706,11 +23696,10 @@
     "CultureMech:008201": {
       "name": "bl_agar",
       "filename": "bl_agar.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:008201",
       "source_id": "TOGO:M1645",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -23768,11 +23757,10 @@
     "CultureMech:008539": {
       "name": "bn_agar",
       "filename": "bn_agar.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 5,
       "id": "CultureMech:008539",
       "source_id": "TOGO:M1959",
       "source": "TOGO",
-      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -23817,10 +23805,11 @@
     "CultureMech:008894": {
       "name": "bordet_gengou_broth_medium",
       "filename": "bordet_gengou_broth_medium.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 3,
       "id": "CultureMech:008894",
       "source_id": "TOGO:M2308",
       "source": "TOGO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -24430,7 +24419,7 @@
     "CultureMech:009498": {
       "name": "chocolate_agar_plates_supplemented_with_1_isovitalex",
       "filename": "chocolate_agar_plates_supplemented_with_1_isovitalex.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 2,
       "id": "CultureMech:009498",
       "source_id": "TOGO:M2975",
       "source": "TOGO",
@@ -24575,11 +24564,11 @@
     "CultureMech:009305": {
       "name": "chopped_meat_medium_with_1_glucose",
       "filename": "chopped_meat_medium_with_1_glucose.yaml",
-      "ingredient_count": 10,
+      "ingredient_count": 9,
       "id": "CultureMech:009305",
       "source_id": "TOGO:M2754",
       "source": "TOGO",
-      "solution_count": 1,
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -24588,11 +24577,10 @@
     "CultureMech:008463": {
       "name": "chromagertm_malassezia_candida",
       "filename": "chromagertm_malassezia_candida.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 1,
       "id": "CultureMech:008463",
       "source_id": "TOGO:M1889",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -25721,11 +25709,10 @@
     "CultureMech:009577": {
       "name": "gyp_for_acetic_acid_bacteria_ph_6_0_glucose_30g",
       "filename": "gyp_for_acetic_acid_bacteria_ph_6_0_glucose_30g.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 5,
       "id": "CultureMech:009577",
       "source_id": "TOGO:M3062",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -25986,7 +25973,7 @@
     "CultureMech:008877": {
       "name": "heart_infusion_agar_supplemented_with_5_sheep_blood",
       "filename": "heart_infusion_agar_supplemented_with_5_sheep_blood.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 2,
       "id": "CultureMech:008877",
       "source_id": "TOGO:M2291",
       "source": "TOGO",
@@ -26036,11 +26023,10 @@
     "CultureMech:009551": {
       "name": "hgam",
       "filename": "hgam.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:009551",
       "source_id": "TOGO:M3039",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -26049,10 +26035,11 @@
     "CultureMech:008771": {
       "name": "hi_plus_medium_w_ye_3",
       "filename": "hi_plus_medium_w_ye_3.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 4,
       "id": "CultureMech:008771",
       "source_id": "TOGO:M2177",
       "source": "TOGO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -26109,11 +26096,11 @@
     "CultureMech:009705": {
       "name": "hm_buffer",
       "filename": "hm_buffer.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:009705",
       "source_id": "TOGO:M3294",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 3,
       "categories": [
         "bacterial"
       ],
@@ -26289,11 +26276,10 @@
     "CultureMech:008569": {
       "name": "imk_asw",
       "filename": "imk_asw.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:008569",
       "source_id": "TOGO:M1986",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -26302,11 +26288,10 @@
     "CultureMech:008316": {
       "name": "imk_sw",
       "filename": "imk_sw.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:008316",
       "source_id": "TOGO:M1752",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -26315,7 +26300,7 @@
     "CultureMech:008334": {
       "name": "imk_with_porphyra",
       "filename": "imk_with_porphyra.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 1,
       "id": "CultureMech:008334",
       "source_id": "TOGO:M1769",
       "source": "TOGO",
@@ -26340,7 +26325,7 @@
     "CultureMech:008702": {
       "name": "inorganic_salts_starch_agar_isp_4_with_0_05_yeast_extract",
       "filename": "inorganic_salts_starch_agar_isp_4_with_0_05_yeast_extract.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 9,
       "id": "CultureMech:008702",
       "source_id": "TOGO:M210",
       "source": "TOGO",
@@ -26379,11 +26364,11 @@
     "CultureMech:010411": {
       "name": "ird_marine_clostridia_medium_2",
       "filename": "ird_marine_clostridia_medium_2.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 12,
       "id": "CultureMech:010411",
       "source_id": "TOGO:M984",
       "source": "TOGO",
-      "solution_count": 1,
+      "solution_count": 5,
       "categories": [
         "bacterial"
       ],
@@ -26595,7 +26580,7 @@
     "CultureMech:008837": {
       "name": "lactobacilli_mrs_agar_broth",
       "filename": "lactobacilli_mrs_agar_broth.yaml",
-      "ingredient_count": 12,
+      "ingredient_count": 11,
       "id": "CultureMech:008837",
       "source_id": "TOGO:M2249",
       "source": "TOGO",
@@ -27104,11 +27089,10 @@
     "CultureMech:008429": {
       "name": "lmg_157_medium",
       "filename": "lmg_157_medium.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 7,
       "id": "CultureMech:008429",
       "source_id": "TOGO:M1854",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -27325,11 +27309,10 @@
     "CultureMech:008342": {
       "name": "m1_medium",
       "filename": "m1_medium.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 5,
       "id": "CultureMech:008342",
       "source_id": "TOGO:M1776",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -27424,11 +27407,11 @@
     "CultureMech:008631": {
       "name": "m9_phenanthrene",
       "filename": "m9_phenanthrene.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 5,
       "id": "CultureMech:008631",
       "source_id": "TOGO:M2041",
       "source": "TOGO",
-      "solution_count": 6,
+      "solution_count": 5,
       "categories": [
         "bacterial"
       ],
@@ -27736,11 +27719,11 @@
     "CultureMech:007573": {
       "name": "marine_agar_2216_ph_8_5",
       "filename": "marine_agar_2216_ph_8_5.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 2,
       "id": "CultureMech:007573",
       "source_id": "TOGO:M1057",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -27749,11 +27732,11 @@
     "CultureMech:007592": {
       "name": "marine_agar_2216_ph_9_0",
       "filename": "marine_agar_2216_ph_9_0.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 2,
       "id": "CultureMech:007592",
       "source_id": "TOGO:M1074",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -27897,7 +27880,6 @@
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:007643": {
@@ -28002,11 +27984,10 @@
     "CultureMech:008300": {
       "name": "marine_broth_with_0_5_methanol",
       "filename": "marine_broth_with_0_5_methanol.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:008300",
       "source_id": "TOGO:M1738",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -28015,10 +27996,11 @@
     "CultureMech:008859": {
       "name": "marine_caulobacter_medium_spyem_containing_sea_salts_and_nh4cl",
       "filename": "marine_caulobacter_medium_spyem_containing_sea_salts_and_nh4cl.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 3,
       "id": "CultureMech:008859",
       "source_id": "TOGO:M2273",
       "source": "TOGO",
+      "solution_count": 3,
       "categories": [
         "bacterial"
       ],
@@ -28027,11 +28009,11 @@
     "CultureMech:007806": {
       "name": "marine_chloroflexi_medium",
       "filename": "marine_chloroflexi_medium.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 8,
       "id": "CultureMech:007806",
       "source_id": "TOGO:M1273",
       "source": "TOGO",
-      "solution_count": 1,
+      "solution_count": 7,
       "categories": [
         "bacterial"
       ],
@@ -28053,11 +28035,10 @@
     "CultureMech:008089": {
       "name": "marine_cytophaga_agar",
       "filename": "marine_cytophaga_agar.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 6,
       "id": "CultureMech:008089",
       "source_id": "TOGO:M1541",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -28079,7 +28060,7 @@
     "CultureMech:009535": {
       "name": "marine_desulfovibrio_complex_medium",
       "filename": "marine_desulfovibrio_complex_medium.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 4,
       "id": "CultureMech:009535",
       "source_id": "TOGO:M3024",
       "source": "TOGO",
@@ -29536,11 +29517,10 @@
     "CultureMech:008297": {
       "name": "modified_802_ph_10_0",
       "filename": "modified_802_ph_10_0.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 7,
       "id": "CultureMech:008297",
       "source_id": "TOGO:M1733",
       "source": "TOGO",
-      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -29825,7 +29805,7 @@
     "CultureMech:008029": {
       "name": "modified_hayflick_medium",
       "filename": "modified_hayflick_medium.yaml",
-      "ingredient_count": 8,
+      "ingredient_count": 7,
       "id": "CultureMech:008029",
       "source_id": "TOGO:M1485",
       "source": "TOGO",
@@ -29862,7 +29842,7 @@
     "CultureMech:008991": {
       "name": "modified_leptospira_medium",
       "filename": "modified_leptospira_medium.yaml",
-      "ingredient_count": 10,
+      "ingredient_count": 5,
       "id": "CultureMech:008991",
       "source_id": "TOGO:M2408",
       "source": "TOGO",
@@ -29887,10 +29867,11 @@
     "CultureMech:008804": {
       "name": "modified_m17_medium",
       "filename": "modified_m17_medium.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 8,
       "id": "CultureMech:008804",
       "source_id": "TOGO:M2214",
       "source": "TOGO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -30538,7 +30519,7 @@
     "CultureMech:009352": {
       "name": "mrs_broth_with_0_05_w_v_cysteine_hydrochloride",
       "filename": "mrs_broth_with_0_05_w_v_cysteine_hydrochloride.yaml",
-      "ingredient_count": 13,
+      "ingredient_count": 12,
       "id": "CultureMech:009352",
       "source_id": "TOGO:M2804",
       "source": "TOGO",
@@ -30796,11 +30777,11 @@
     "CultureMech:008815": {
       "name": "mycoplasma_medium_atcc_243_with_sucrose",
       "filename": "mycoplasma_medium_atcc_243_with_sucrose.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 4,
       "id": "CultureMech:008815",
       "source_id": "TOGO:M2227",
       "source": "TOGO",
-      "solution_count": 1,
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -31121,11 +31102,10 @@
     "CultureMech:008239": {
       "name": "nutrient_broth_0_5_w_v_na2co3",
       "filename": "nutrient_broth_0_5_w_v_na2co3.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:008239",
       "source_id": "TOGO:M1680",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -31138,7 +31118,6 @@
       "id": "CultureMech:008325",
       "source_id": "TOGO:M1760",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -31282,7 +31261,7 @@
     "CultureMech:009825": {
       "name": "oatmeal_agar_isp_3_with_0_1_yeast_extract",
       "filename": "oatmeal_agar_isp_3_with_0_1_yeast_extract.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 4,
       "id": "CultureMech:009825",
       "source_id": "TOGO:M43",
       "source": "TOGO",
@@ -31321,15 +31300,14 @@
     "CultureMech:009237": {
       "name": "obsidian_pool_fermentor_opf_medium_modified_from_m_b_allen_1959",
       "filename": "obsidian_pool_fermentor_opf_medium_modified_from_m_b_allen_1959.yaml",
-      "ingredient_count": 28,
+      "ingredient_count": 22,
       "id": "CultureMech:009237",
       "source_id": "TOGO:M2682",
       "source": "TOGO",
-      "solution_count": 1,
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:009661": {
@@ -31661,10 +31639,11 @@
     "CultureMech:009043": {
       "name": "potato_extract_broth",
       "filename": "potato_extract_broth.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 2,
       "id": "CultureMech:009043",
       "source_id": "TOGO:M2466",
       "source": "TOGO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -31734,7 +31713,7 @@
     "CultureMech:009512": {
       "name": "pplo_pleuropneumonia_like_organism_medium",
       "filename": "pplo_pleuropneumonia_like_organism_medium.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:009512",
       "source_id": "TOGO:M2996",
       "source": "TOGO",
@@ -32007,11 +31986,10 @@
     "CultureMech:008718": {
       "name": "r2a_medium_daigo",
       "filename": "r2a_medium_daigo.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:008718",
       "source_id": "TOGO:M2125",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -32143,11 +32121,10 @@
     "CultureMech:009180": {
       "name": "reinforced_clostridial_medium_oxoid_cm149_with_sodium_lactate_60_solution_at_a_concentration_of_1_5",
       "filename": "reinforced_clostridial_medium_oxoid_cm149_with_sodium_lactate_60_solution_at_a_concentration_of_1_5.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:009180",
       "source_id": "TOGO:M2613",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -32281,11 +32258,10 @@
     "CultureMech:007960": {
       "name": "rust_fungi_medium",
       "filename": "rust_fungi_medium.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 6,
       "id": "CultureMech:007960",
       "source_id": "TOGO:M1422",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -32442,7 +32418,7 @@
     "CultureMech:008336": {
       "name": "seawater_with_porphyra",
       "filename": "seawater_with_porphyra.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 2,
       "id": "CultureMech:008336",
       "source_id": "TOGO:M1770",
       "source": "TOGO",
@@ -32514,7 +32490,7 @@
     "CultureMech:009467": {
       "name": "skirrows_selective_medium",
       "filename": "skirrows_selective_medium.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:009467",
       "source_id": "TOGO:M2935",
       "source": "TOGO",
@@ -32550,11 +32526,11 @@
     "CultureMech:008776": {
       "name": "smc_medium",
       "filename": "smc_medium.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 5,
       "id": "CultureMech:008776",
       "source_id": "TOGO:M2181",
       "source": "TOGO",
-      "solution_count": 5,
+      "solution_count": 6,
       "categories": [
         "bacterial"
       ],
@@ -32612,11 +32588,10 @@
     "CultureMech:008086": {
       "name": "sp5_medium",
       "filename": "sp5_medium.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:008086",
       "source_id": "TOGO:M1539",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -32625,11 +32600,11 @@
     "CultureMech:009489": {
       "name": "sp_4_medium",
       "filename": "sp_4_medium.yaml",
-      "ingredient_count": 10,
+      "ingredient_count": 7,
       "id": "CultureMech:009489",
       "source_id": "TOGO:M2964",
       "source": "TOGO",
-      "solution_count": 3,
+      "solution_count": 6,
       "categories": [
         "bacterial"
       ],
@@ -32638,11 +32613,11 @@
     "CultureMech:009147": {
       "name": "spiroplasma_medium",
       "filename": "spiroplasma_medium.yaml",
-      "ingredient_count": 12,
+      "ingredient_count": 6,
       "id": "CultureMech:009147",
       "source_id": "TOGO:M2578",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
@@ -33135,6 +33110,7 @@
       "categories": [
         "bacterial"
       ],
+      "organism_culture_type": "isolate",
       "category_dir": "bacterial"
     },
     "CultureMech:008847": {
@@ -33159,6 +33135,7 @@
       "categories": [
         "bacterial"
       ],
+      "organism_culture_type": "isolate",
       "category_dir": "bacterial"
     },
     "CultureMech:007606": {
@@ -33372,11 +33349,10 @@
     "CultureMech:007981": {
       "name": "togo_medium_m1441",
       "filename": "togo_medium_m1441.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 9,
       "id": "CultureMech:007981",
       "source_id": "TOGO:M1441",
       "source": "TOGO",
-      "solution_count": 3,
       "categories": [
         "bacterial"
       ],
@@ -33385,11 +33361,10 @@
     "CultureMech:007982": {
       "name": "togo_medium_m1442",
       "filename": "togo_medium_m1442.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 10,
       "id": "CultureMech:007982",
       "source_id": "TOGO:M1442",
       "source": "TOGO",
-      "solution_count": 3,
       "categories": [
         "bacterial"
       ],
@@ -33410,11 +33385,10 @@
     "CultureMech:007984": {
       "name": "togo_medium_m1444",
       "filename": "togo_medium_m1444.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 3,
       "id": "CultureMech:007984",
       "source_id": "TOGO:M1444",
       "source": "TOGO",
-      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -33460,7 +33434,7 @@
     "CultureMech:007988": {
       "name": "togo_medium_m1448",
       "filename": "togo_medium_m1448.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 5,
       "id": "CultureMech:007988",
       "source_id": "TOGO:M1448",
       "source": "TOGO",
@@ -33649,7 +33623,7 @@
     "CultureMech:008010": {
       "name": "togo_medium_m1468",
       "filename": "togo_medium_m1468.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 3,
       "id": "CultureMech:008010",
       "source_id": "TOGO:M1468",
       "source": "TOGO",
@@ -33662,11 +33636,10 @@
     "CultureMech:008011": {
       "name": "togo_medium_m1469",
       "filename": "togo_medium_m1469.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 6,
       "id": "CultureMech:008011",
       "source_id": "TOGO:M1469",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -34119,11 +34092,10 @@
     "CultureMech:008074": {
       "name": "togo_medium_m1528",
       "filename": "togo_medium_m1528.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:008074",
       "source_id": "TOGO:M1528",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -34132,11 +34104,10 @@
     "CultureMech:008075": {
       "name": "togo_medium_m1529",
       "filename": "togo_medium_m1529.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 6,
       "id": "CultureMech:008075",
       "source_id": "TOGO:M1529",
       "source": "TOGO",
-      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -34246,11 +34217,10 @@
     "CultureMech:008101": {
       "name": "togo_medium_m1552",
       "filename": "togo_medium_m1552.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 6,
       "id": "CultureMech:008101",
       "source_id": "TOGO:M1552",
       "source": "TOGO",
-      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -34476,11 +34446,10 @@
     "CultureMech:008156": {
       "name": "togo_medium_m1603",
       "filename": "togo_medium_m1603.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 5,
       "id": "CultureMech:008156",
       "source_id": "TOGO:M1603",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -34604,11 +34573,11 @@
     "CultureMech:008193": {
       "name": "togo_medium_m1638",
       "filename": "togo_medium_m1638.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 5,
       "id": "CultureMech:008193",
       "source_id": "TOGO:M1638",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -35065,11 +35034,10 @@
     "CultureMech:008532": {
       "name": "togo_medium_m1952",
       "filename": "togo_medium_m1952.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 7,
       "id": "CultureMech:008532",
       "source_id": "TOGO:M1952",
       "source": "TOGO",
-      "solution_count": 3,
       "categories": [
         "bacterial"
       ],
@@ -35532,10 +35500,11 @@
     "CultureMech:009566": {
       "name": "togo_medium_m3052",
       "filename": "togo_medium_m3052.yaml",
-      "ingredient_count": 21,
+      "ingredient_count": 12,
       "id": "CultureMech:009566",
       "source_id": "TOGO:M3052",
       "source": "TOGO",
+      "solution_count": 9,
       "categories": [
         "bacterial"
       ],
@@ -35824,7 +35793,7 @@
     "CultureMech:010392": {
       "name": "togo_medium_m967",
       "filename": "togo_medium_m967.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 3,
       "id": "CultureMech:010392",
       "source_id": "TOGO:M967",
       "source": "TOGO",
@@ -36285,11 +36254,10 @@
     "CultureMech:007962": {
       "name": "trypticase_yeast_extract_agar_tys",
       "filename": "trypticase_yeast_extract_agar_tys.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:007962",
       "source_id": "TOGO:M1424",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -36418,11 +36386,10 @@
     "CultureMech:008236": {
       "name": "tsb_0_2_w_v_na2co3",
       "filename": "tsb_0_2_w_v_na2co3.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 4,
       "id": "CultureMech:008236",
       "source_id": "TOGO:M1678",
       "source": "TOGO",
-      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -36508,11 +36475,11 @@
     "CultureMech:008773": {
       "name": "ureaplasma_medium_special_modified_formulation",
       "filename": "ureaplasma_medium_special_modified_formulation.yaml",
-      "ingredient_count": 13,
+      "ingredient_count": 8,
       "id": "CultureMech:008773",
       "source_id": "TOGO:M2179",
       "source": "TOGO",
-      "solution_count": 4,
+      "solution_count": 3,
       "categories": [
         "bacterial"
       ],
@@ -36559,11 +36526,10 @@
     "CultureMech:007955": {
       "name": "vegetable_juice_seawater_agar_v_8_swa",
       "filename": "vegetable_juice_seawater_agar_v_8_swa.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 4,
       "id": "CultureMech:007955",
       "source_id": "TOGO:M1418",
       "source": "TOGO",
-      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -36631,6 +36597,7 @@
       "categories": [
         "bacterial"
       ],
+      "organism_culture_type": "isolate",
       "category_dir": "bacterial"
     },
     "CultureMech:009286": {
@@ -36734,11 +36701,11 @@
     "CultureMech:010358": {
       "name": "yeast_extract_malt_extract_agar_isp_2_ph_8_5",
       "filename": "yeast_extract_malt_extract_agar_isp_2_ph_8_5.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 5,
       "id": "CultureMech:010358",
       "source_id": "TOGO:M936",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -36858,11 +36825,10 @@
     "CultureMech:007789": {
       "name": "yeast_extract_malt_extract_agar_ph_5_5",
       "filename": "yeast_extract_malt_extract_agar_ph_5_5.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 5,
       "id": "CultureMech:007789",
       "source_id": "TOGO:M1258",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -36871,11 +36837,10 @@
     "CultureMech:010021": {
       "name": "yeast_extract_malt_extract_agar_ph_6_0",
       "filename": "yeast_extract_malt_extract_agar_ph_6_0.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 5,
       "id": "CultureMech:010021",
       "source_id": "TOGO:M621",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -36884,11 +36849,11 @@
     "CultureMech:009921": {
       "name": "yeast_extract_malt_extract_agar_ph_9_0",
       "filename": "yeast_extract_malt_extract_agar_ph_9_0.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 5,
       "id": "CultureMech:009921",
       "source_id": "TOGO:M529",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],

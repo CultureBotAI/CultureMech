@@ -6,33 +6,241 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: MICRO:0000178
+    label: peptone
+- preferred_term: Yeast Extract
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Ferric Citrate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:144421
+    label: iron(III) citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
+    label: iron(III) citrate
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '19.45'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Magnesium Chloride
+  concentration:
+    value: '8.8'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+- preferred_term: Sodium Sulfate
+  concentration:
+    value: '3.24'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: Calcium Chloride
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
+- preferred_term: Potassium Chloride
+  concentration:
+    value: '0.55'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Sodium Bicarbonate
+  concentration:
+    value: '0.16'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Potassium Bromide
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:32030
+    label: potassium bromide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
+    label: potassium bromide
+- preferred_term: Strontium Chloride
+  concentration:
+    value: '0.034'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:36383
+    label: strontium dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36383
+    label: strontium dichloride
+- preferred_term: Boric Acid
+  concentration:
+    value: '0.022'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: Sodium Silicate
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:60720
+    label: sodium silicate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:60720
+    label: sodium silicate
+- preferred_term: Sodium Fluoride
+  concentration:
+    value: '0.0024'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:28741
+    label: sodium fluoride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28741
+    label: sodium fluoride
+- preferred_term: Ammonium Nitrate
+  concentration:
+    value: '0.0016'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:63038
+    label: ammonium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
+    label: ammonium nitrate
+- preferred_term: Disodium Phosphate
+  concentration:
+    value: '0.008'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+- preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints 15.0 g agar in the Difco Marine Agar 2216 scratch formulation.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1000.0'
+    unit: ML_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints 1000.0 mL distilled water in the scratch formulation.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: Bacto Marine Agar 2216 (Difco)
-  concentration:
-    value: '55.1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 media_term:
   preferred_term: TOGO Medium M1547
   term:
     id: TOGO:M1547
     label: Marine Agar 2216
-notes: 'Source: https://togomedium.org/medium/M1547
-
-  Original source: NBRC - NBRC_M340
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=340'
+notes: TOGO M1547 mirrors NBRC Medium 340, which lists 55.1 g Bacto Marine Agar 2216
+  (Difco) in 1 L distilled water and states pH unadjusted; ATCC Medium 2 confirms
+  the same 55.1 g Marine Agar 2216 commercial product and prints the scratch Difco
+  Marine Agar/Broth 2216 formulation with agar.
 applications:
 - Microbial cultivation
 references:
@@ -46,6 +254,9 @@ references:
 - reference: BacDive:134304
   notes: BacDive type-strain record linking MKT133 / IAM 15419 / KCTC 12842 / JCM
     23214 to NCBI Taxonomy ID 1236958 and genome assembly GCA_000616095.
+- reference: https://togomedium.org/medium/M1547
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=340
+- reference: https://www.atcc.org/~/media/B5025AB990724A91B4491C391E054448.ashx
 curation_history:
 - timestamp: '2026-01-27T06:35:57.821757Z'
   curator: togo-import
@@ -84,6 +295,15 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_commercial_score20.py
+  action: RESOLVED_TOGO_COMMERCIAL_SCORE20_GRAPH
+  source: https://togomedium.org/medium/M1547; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=340;
+    https://www.atcc.org/~/media/B5025AB990724A91B4491C391E054448.ashx
+  notes: TOGO M1547 mirrors NBRC Medium 340, which lists 55.1 g Bacto Marine Agar
+    2216 (Difco) in 1 L distilled water and states pH unadjusted; ATCC Medium 2 confirms
+    the same 55.1 g Marine Agar 2216 commercial product and prints the scratch Difco
+    Marine Agar/Broth 2216 formulation with agar.
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Sneathiella glossodoripedis
@@ -115,3 +335,16 @@ target_organisms:
     supports: SUPPORT
     explanation: NCBI Datasets lists the genome assembly for Sneathiella glossodoripedis
       JCM 23214, an equivalent type-strain deposit.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare Marine Agar 2216 from the Difco Marine Agar/Broth 2216 scratch
+    formulation in 1000 mL distilled water, including 15.0 g agar.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings

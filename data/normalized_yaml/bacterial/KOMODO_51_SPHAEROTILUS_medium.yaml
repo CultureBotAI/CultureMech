@@ -14,21 +14,39 @@ media_term:
 notes: 'Source: KOMODO ModelSEED | ID: 51 | DSMZ Medium: 51 (mediadive.medium:51)
   | Aerobic: No'
 ingredients:
-- preferred_term: Beef extract
+- preferred_term: Beef extract (Lab Lemco, Oxoid)
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
+  source: DSMZ Medium 51
+  notes: DSMZ Medium 51 lists 5.0 g beef extract (Lab Lemco, Oxoid).
+  term:
+    id: FOODON:03302088
+    label: beef extract
 - preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: DSMZ Medium 51
+  notes: DSMZ Medium 51 lists 15.0 g agar if necessary.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: ' (if necessary)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 51
+  notes: DSMZ Medium 51 lists 1000.0 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -59,6 +77,12 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_dsmz_51_sphaerotilus_score15.py
+  action: RESOLVED_DSMZ_51_SPHAEROTILUS_SCORE15
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium51.pdf
+  notes: DSMZ Medium 51 lists beef extract, optional agar, and distilled water, then
+    prepares pH 7.0 sterile agar slants covered with sterile tap water.
 kg_microbe_match: mediadive.medium:12
 parent_media:
   path: data/normalized_yaml/bacterial/sphaerotilus_medium.yaml
@@ -71,3 +95,24 @@ variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same ingredient and concentration signature; KOMODO record copied from the matching
   DSMZ medium source.
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Prepare sterile agar slants by autoclaving.
+- step_number: 3
+  action: COOL
+  description: Cool the slants in a sloping position.
+- step_number: 4
+  action: MIX
+  description: Cover solid slants with 2 ml sterile tap water, inoculate into the
+    covering tap water, and incubate at 20 to 25 C for at least 48 h.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium51.pdf

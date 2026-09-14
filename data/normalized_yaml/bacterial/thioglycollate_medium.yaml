@@ -2,31 +2,36 @@ id: CultureMech:002878
 name: thioglycollate_medium
 original_name: THIOGLYCOLLATE MEDIUM
 category: bacterial
-medium_type: DEFINED
-composition_type: DEFINED
-physical_state: LIQUID
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SEMISOLID
 media_term:
   preferred_term: JCM Medium J529
   term:
     id: mediadive.medium:J529
     label: THIOGLYCOLLATE MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=529'
+notes: TOGO M530 is a snapshot of JCM_M529 and records 29.8 g/L Thioglycollate medium
+  from Sigma in distilled water; the TOGO snapshot describes the medium as semisolid.
 ingredients:
-- preferred_term: Thioglycolate
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M530/JCM Medium 529 snapshot
+  notes: TOGO M530 snapshots JCM_M529 and lists 1.0 L distilled water.
   term:
-    id: CHEBI:30066
-    label: thioglycolate(1-)
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Thioglycollate medium (Sigma)
   concentration:
     value: '29.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000649
-    label: Thioglycolate
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: 'Comment: The medium is semisolid. For strain JCM 13596, prepare the
-    medium anaerobically (under N2).'
+  source: TOGO M530/JCM Medium 529 snapshot
+  notes: TOGO M530 snapshots JCM_M529 and lists 29.8 g/L Thioglycollate medium from
+    Sigma.
 applications:
 - Microbial cultivation
 curation_history:
@@ -47,3 +52,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THIOGLYCOLLATE MEDIUM" to "thioglycollate_medium" for
     consistent matching
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_sparse_siblings_score20.py
+  action: RESOLVED_JCM_SPARSE_SIBLINGS_SCORE20
+  source: https://togomedium.org/medium/M530
+  notes: TOGO M530 is a snapshot of JCM_M529 and records 29.8 g/L Thioglycollate medium
+    from Sigma in distilled water; the TOGO snapshot describes the medium as semisolid.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M530

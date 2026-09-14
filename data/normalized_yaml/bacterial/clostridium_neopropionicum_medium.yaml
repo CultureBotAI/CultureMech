@@ -11,9 +11,499 @@ media_term:
   term:
     id: komodo.medium:522
     label: CLOSTRIDIUM NEOPROPIONICUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 522 | DSMZ Medium: 522 (mediadive.medium:522)
-  | Aerobic: No'
-ingredients: []
+notes: DSMZ Medium 522 defines CLOSTRIDIUM NEOPROPIONICUM MEDIUM as DSMZ Medium 318
+  with 4.0 g/L KHCO3 for pH 7.0 and 1.0 g/L ethanol replacing methanol; this record
+  expands the DSMZ Medium 318 trace element stock and the DSMZ Medium 141 vitamin
+  stock into final per-liter components.
+ingredients:
+- preferred_term: KH2PO4
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 lists 0.300 g KH2PO4 in 1000 mL water and adds 10 mL trace
+    element solution plus 10 mL vitamin solution; after omitting methanol this yields
+    0.294118 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.294118'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: NaCl
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 lists 0.600 g NaCl in the main recipe and 10 mL of a trace
+    solution containing 1.000 g/L NaCl in 1000 mL water plus 10 mL vitamin solution,
+    yielding 0.598039 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.598039'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: MgCl2 x 6 H2O
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 lists 0.100 g MgCl2 x 6 H2O in 1000 mL water and adds 10
+    mL trace element solution plus 10 mL vitamin solution; after omitting methanol
+    this yields 0.098039 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.098039'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: CaCl2 x 2 H2O
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 lists 0.080 g CaCl2 x 2 H2O in the main recipe and 10 mL
+    of a trace solution containing 0.100 g/L CaCl2 x 2 H2O in 1000 mL water plus 10
+    mL vitamin solution, yielding 0.079412 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.079412'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: NH4Cl
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 lists 1.000 g NH4Cl in 1000 mL water and adds 10 mL trace
+    element solution plus 10 mL vitamin solution; after omitting methanol this yields
+    0.980392 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.980392'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Yeast extract
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 lists 0.500 g Yeast extract in 1000 mL water and adds 10
+    mL trace element solution plus 10 mL vitamin solution; after omitting methanol
+    this yields 0.490196 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.490196'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Trypticase
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 lists 0.500 g Trypticase in 1000 mL water and adds 10 mL
+    trace element solution plus 10 mL vitamin solution; after omitting methanol this
+    yields 0.490196 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.490196'
+    unit: G_PER_L
+  term:
+    id: MICRO:0000175
+    label: Trypticase
+- preferred_term: Resazurin
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 lists 1.000 mg Resazurin in 1000 mL water and adds 10 mL
+    trace element solution plus 10 mL vitamin solution; after omitting methanol this
+    yields 0.000980 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.000980'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: KHCO3
+  source: DSMZ Medium 522
+  notes: DSMZ Medium 522 sets KHCO3 to 4.000000 g/L.
+  concentration:
+    value: '4.000000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:81862
+    label: potassium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:81862
+    label: potassium hydrogencarbonate
+- preferred_term: Cysteine-HCl x H2O
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 lists 0.300 g Cysteine-HCl x H2O in 1000 mL water and adds
+    10 mL trace element solution plus 10 mL vitamin solution; after omitting methanol
+    this yields 0.294118 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.294118'
+    unit: G_PER_L
+  term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+- preferred_term: Na2S x 9 H2O
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 lists 0.300 g Na2S x 9 H2O in 1000 mL water and adds 10 mL
+    trace element solution plus 10 mL vitamin solution; after omitting methanol this
+    yields 0.294118 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.294118'
+    unit: G_PER_L
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+- preferred_term: Nitrilotriacetic acid (NTA)
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 adds 10 mL of a trace element solution containing 12.800
+    g/L Nitrilotriacetic acid to 1000 mL water plus 10 mL vitamin solution, yielding
+    0.125490 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.125490'
+    unit: G_PER_L
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+- preferred_term: FeCl3 x 6 H2O
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 adds 10 mL of a trace element solution containing 1.350 g/L
+    FeCl3 x 6 H2O to 1000 mL water plus 10 mL vitamin solution, yielding 0.013235
+    g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.013235'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+- preferred_term: MnCl2 x 4 H2O
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 adds 10 mL of a trace element solution containing 0.100 g/L
+    MnCl2 x 4 H2O to 1000 mL water plus 10 mL vitamin solution, yielding 0.000980
+    g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.000980'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+- preferred_term: CoCl2 x 6 H2O
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 adds 10 mL of a trace element solution containing 0.024 g/L
+    CoCl2 x 6 H2O to 1000 mL water plus 10 mL vitamin solution, yielding 0.000235
+    g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.000235'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+- preferred_term: ZnCl2
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 adds 10 mL of a trace element solution containing 0.100 g/L
+    ZnCl2 to 1000 mL water plus 10 mL vitamin solution, yielding 0.000980 g/L in the
+    1020 mL formulation.
+  concentration:
+    value: '0.000980'
+    unit: G_PER_L
+  term:
+    id: CHEBI:49976
+    label: zinc dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
+- preferred_term: CuCl2 x 2 H2O
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 adds 10 mL of a trace element solution containing 0.025 g/L
+    CuCl2 x 2 H2O to 1000 mL water plus 10 mL vitamin solution, yielding 0.000245
+    g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.000245'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+- preferred_term: H3BO3
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 adds 10 mL of a trace element solution containing 0.010 g/L
+    H3BO3 to 1000 mL water plus 10 mL vitamin solution, yielding 0.000098 g/L in the
+    1020 mL formulation.
+  concentration:
+    value: '0.000098'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: Na2MoO4 x 2 H2O
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 adds 10 mL of a trace element solution containing 0.024 g/L
+    Na2MoO4 x 2 H2O to 1000 mL water plus 10 mL vitamin solution, yielding 0.000235
+    g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.000235'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: NiCl2 x 6 H2O
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 adds 10 mL of a trace element solution containing 0.120 g/L
+    NiCl2 x 6 H2O to 1000 mL water plus 10 mL vitamin solution, yielding 0.001176
+    g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.001176'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+- preferred_term: Na2SeO3 x 5 H2O
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 adds 10 mL of a trace element solution containing 0.026 g/L
+    Na2SeO3 x 5 H2O to 1000 mL water plus 10 mL vitamin solution, yielding 0.000255
+    g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.000255'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+- preferred_term: Biotin
+  source: DSMZ Medium 141 vitamin solution
+  notes: DSMZ Medium 318 adds 10 mL of the DSMZ Medium 141 vitamin solution to 1000
+    mL water plus 10 mL trace element solution; the vitamin stock contains 2.00 mg/L
+    Biotin, yielding 0.000019608 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.000019608'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: Biotin
+- preferred_term: Folic acid
+  source: DSMZ Medium 141 vitamin solution
+  notes: DSMZ Medium 318 adds 10 mL of the DSMZ Medium 141 vitamin solution to 1000
+    mL water plus 10 mL trace element solution; the vitamin stock contains 2.00 mg/L
+    Folic acid, yielding 0.000019608 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.000019608'
+    unit: G_PER_L
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
+    label: Folic acid
+- preferred_term: Pyridoxine-HCl
+  source: DSMZ Medium 141 vitamin solution
+  notes: DSMZ Medium 318 adds 10 mL of the DSMZ Medium 141 vitamin solution to 1000
+    mL water plus 10 mL trace element solution; the vitamin stock contains 10.00 mg/L
+    Pyridoxine-HCl, yielding 0.000098 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.000098'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+- preferred_term: Thiamine-HCl x 2 H2O
+  source: DSMZ Medium 141 vitamin solution
+  notes: DSMZ Medium 318 adds 10 mL of the DSMZ Medium 141 vitamin solution to 1000
+    mL water plus 10 mL trace element solution; the vitamin stock contains 5.00 mg/L
+    Thiamine-HCl x 2 H2O, yielding 0.000049 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.000049'
+    unit: G_PER_L
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+- preferred_term: Riboflavin
+  source: DSMZ Medium 141 vitamin solution
+  notes: DSMZ Medium 318 adds 10 mL of the DSMZ Medium 141 vitamin solution to 1000
+    mL water plus 10 mL trace element solution; the vitamin stock contains 5.00 mg/L
+    Riboflavin, yielding 0.000049 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.000049'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: Riboflavin
+- preferred_term: Nicotinic acid
+  source: DSMZ Medium 141 vitamin solution
+  notes: DSMZ Medium 318 adds 10 mL of the DSMZ Medium 141 vitamin solution to 1000
+    mL water plus 10 mL trace element solution; the vitamin stock contains 5.00 mg/L
+    Nicotinic acid, yielding 0.000049 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.000049'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+- preferred_term: Calcium pantothenate
+  source: DSMZ Medium 141 vitamin solution
+  notes: DSMZ Medium 318 adds 10 mL of the DSMZ Medium 141 vitamin solution to 1000
+    mL water plus 10 mL trace element solution; the vitamin stock contains 5.00 mg/L
+    D-Ca-pantothenate, yielding 0.000049 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.000049'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+- preferred_term: Vitamin B12
+  source: DSMZ Medium 141 vitamin solution
+  notes: DSMZ Medium 318 adds 10 mL of the DSMZ Medium 141 vitamin solution to 1000
+    mL water plus 10 mL trace element solution; the vitamin stock contains 0.10 mg/L
+    Vitamin B12, yielding 0.000000980 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.000000980'
+    unit: G_PER_L
+  term:
+    id: CHEBI:176843
+    label: Vitamin B12
+  mediaingredientmech_chebi_term:
+    id: CHEBI:176843
+    label: Vitamin B12
+- preferred_term: p-Aminobenzoic acid
+  source: DSMZ Medium 141 vitamin solution
+  notes: DSMZ Medium 318 adds 10 mL of the DSMZ Medium 141 vitamin solution to 1000
+    mL water plus 10 mL trace element solution; the vitamin stock contains 5.00 mg/L
+    p-Aminobenzoic acid, yielding 0.000049 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.000049'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+- preferred_term: (DL)-alpha-Lipoic acid
+  source: DSMZ Medium 141 vitamin solution
+  notes: DSMZ Medium 318 adds 10 mL of the DSMZ Medium 141 vitamin solution to 1000
+    mL water plus 10 mL trace element solution; the vitamin stock contains 5.00 mg/L
+    Lipoic acid, yielding 0.000049 g/L in the 1020 mL formulation.
+  concentration:
+    value: '0.000049'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16494
+    label: (DL)-alpha-Lipoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
+    label: (DL)-alpha-Lipoic acid
+- preferred_term: KOH
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 adjusts the trace element solution to pH 6.5 with KOH.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+- preferred_term: N2
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 uses an 80% N2 and 20% CO2 gas phase.
+  concentration:
+    value: '80'
+    unit: PERCENT_V_V
+  term:
+    id: CHEBI:17997
+    label: dinitrogen
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17997
+    label: dinitrogen
+- preferred_term: CO2
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 uses an 80% N2 and 20% CO2 gas phase.
+  concentration:
+    value: '20'
+    unit: PERCENT_V_V
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
+- preferred_term: Distilled water
+  source: DSMZ Medium 318
+  notes: DSMZ Medium 318 lists 1000 mL water before 10 mL trace and 10 mL vitamin
+    stock additions, yielding 980.392157 mL/L in the 1020 mL formulation after omitting
+    methanol.
+  concentration:
+    value: '980.392157'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Ethanol
+  source: DSMZ Medium 522
+  notes: DSMZ Medium 522 replaces methanol with 1.0 g/L ethanol.
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16236
+    label: ethanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
+    label: ethanol
 applications:
 - Microbial cultivation
 curation_history:
@@ -36,5 +526,35 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_418_522_score30.py
+  action: RESOLVED_KOMODO_418_522_SCORE30
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium522.pdf
+  notes: DSMZ Medium 522 defines CLOSTRIDIUM NEOPROPIONICUM MEDIUM as DSMZ Medium
+    318 with 4.0 g/L KHCO3 for pH 7.0 and 1.0 g/L ethanol replacing methanol; this
+    record expands the DSMZ Medium 318 trace element stock and the DSMZ Medium 141
+    vitamin stock into final per-liter components.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare DSMZ Medium 318 without methanol and with KHCO3 at 4.0 g/L.
+- step_number: 2
+  action: MIX
+  description: Add ethanol to 1.0 g/L.
+- step_number: 3
+  action: MIX
+  description: Prepare the medium under an 80% N2 and 20% CO2 gas phase.
+- step_number: 4
+  action: MIX
+  description: Sterilize vitamins, cysteine-HCl, and sulfide separately.
+- step_number: 5
+  action: MIX
+  description: Adjust final pH to 7.0.
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=522
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium522.pdf
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium318.pdf
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf

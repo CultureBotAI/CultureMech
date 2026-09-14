@@ -6,6 +6,11 @@ description: 1227. NBRC 1226.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: NBRC Medium 1226
+  term:
+    id: nbrc.medium:1226
+    label: NBRC Medium 1226
 ingredients:
 - preferred_term: NH4Cl
   concentration:
@@ -29,6 +34,9 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
 - preferred_term: NaHCO3
   concentration:
     value: '2.5'
@@ -47,14 +55,23 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Na2S·9H2O
   concentration:
     value: '30'
     unit: G_PER_L
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
 - preferred_term: Cysteine-HCl
   concentration:
     value: '30'
     unit: G_PER_L
+  term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -79,14 +96,23 @@ ingredients:
     label: water
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  action: MIX
+  description: Mix ingredients except vitamin, bicarbonate, cysteine, and sulfide
+    solutions.
 - step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
+  action: ALIQUOT
+  description: Dispense the medium into culture vessels under a stream of N2/CO2 (80/20)
+    and seal with butyl rubber stoppers.
 - step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 minutes.
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Filter-sterilize the bicarbonate and vitamin solutions.
+- step_number: 5
+  action: MIX
+  description: Aseptically and anaerobically add vitamin solution, bicarbonate solution,
+    and cysteine and sulfide solutions using sterile syringes.
 curation_history:
 - timestamp: '2026-02-20T00:22:36.038693Z'
   curator: nbrc-import
@@ -129,6 +155,12 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1226
+  notes: Preserved the recovered NBRC Medium 1226 composition table.
 solutions:
 - preferred_term: Trace element solution
   composition:
@@ -268,10 +300,15 @@ solutions:
       id: CHEBI:15377
       label: water
   name: Vitamin solution
-notes: pH unajusted Mix ingredients except vitamin, bicarbonate, cysteine and sulfide,
-  and dispense the medium into suitable culture vessels under a stream of N2/CO2 (80/20)
-  and seal with butyl rubber stoppers. After autoclaving (121°C, 15 min), aseptically
-  and anaerobically add vitamin solution, bicarbonate solution, and cysteine and sulfide
-  solutions using sterile syringes. The bicarbonate and vitamin solutions should be
-  sterilized by filtration. First dissolve NTA in 200 ml of water and adjust the pH
-  to 6.5 with KOH.
+notes: 'Source: NBRC Medium 1226 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1226
+
+
+  The NBRC Medium for Strain GK12 table lists pH as unadjusted, two nested stock solutions,
+  and aseptic anaerobic addition of the filter-sterilized bicarbonate and vitamin
+  solutions plus sterile cysteine and sulfide solutions.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1226

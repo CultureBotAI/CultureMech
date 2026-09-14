@@ -4,60 +4,53 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: F/2 + NH4 Medium
+  term:
+    id: UTEX:f-2-nh4-medium
+    label: F/2 + NH4 Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
+notes: UTEX prepares F/2 + NH4 Medium by dispensing prepared F/2 Medium into 175 mL
+  portions and adding a pinch of NH4MgPO4 to each flask.
 ingredients:
-- preferred_term: F/2 Medium
-  concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'UTEX lists: amount 1 L'
 - preferred_term: NH4MgPO4
   concentration:
-    value: variable
+    value: pinch per 175 mL flask
     unit: VARIABLE
+  term:
+    id: CHEBI:149425
+    label: ammonium magnesium phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:149425
+    label: ammonium magnesium phosphate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: '529354'
+  notes: UTEX adds a pinch of NH4MgPO4 to each 175 mL flask.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+  - PHOSPHATE_SOURCE
+solutions:
+- preferred_term: F/2 Medium
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  culturemech_term:
+    id: CultureMech:000170
+    label: F/2 Medium
+  notes: UTEX starts from prepared F/2 Medium.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: Prepare F/2 Medium.
 - step_number: 2
-  action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  action: ALIQUOT
+  description: Dispense 175 mL into 250 mL flasks.
 - step_number: 3
   action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
-- step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
-- step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
-salinity: marine (natural seawater or artificial seawater)
+  description: Add a pinch of NH4MgPO4 to each flask.
+salinity: saltwater
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -96,7 +89,26 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_remaining_score50.py
+  action: RESOLVED_UTEX_SCORE50_ALGAE_GRAPH
+  changes: Grounded remaining score-50 UTEX algae recipe components
+  source: https://utex.org/products/f-2-nh4-medium
+  notes: UTEX prepares F/2 + NH4 Medium by dispensing prepared F/2 Medium into 175
+    mL portions and adding a pinch of NH4MgPO4 to each flask.
 references:
 - reference: UTEX:f-2-nh4-medium
 - reference: https://utex.org/products/f-2-nh4-medium
 original_name: F/2 + NH4 Medium
+parent_media:
+  path: data/normalized_yaml/algae/F_2_Medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:000170
+  name: f_2_medium
+  notes: Adds a pinch of NH4MgPO4 to each 175 mL flask of prepared F/2 Medium.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adds a pinch of NH4MgPO4 to each 175 mL flask of prepared F/2 Medium.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

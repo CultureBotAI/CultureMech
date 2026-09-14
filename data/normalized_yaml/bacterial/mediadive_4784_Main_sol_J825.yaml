@@ -4,162 +4,199 @@ term:
   id: mediadive.solution:4784
   label: Main sol. J825
 composition:
-- preferred_term: Tryptone
+- preferred_term: Tryptone (BD-Difco)
   concentration:
-    value: '0.979432'
+    value: '1.0'
     unit: G_PER_L
+  source: MediaDive solution 4784 / JCM Medium 825
+  notes: MediaDive solution 4784 / JCM Medium 825 lists 1.0 g/L Tryptone (BD-Difco).
   term:
-    id: mediadive.compound:71
+    id: MICRO:0000182
     label: Tryptone
+  nutritional_roles:
+  - PROTEIN_SOURCE
 - preferred_term: Peptone
   concentration:
-    value: '0.979432'
+    value: '1.0'
     unit: G_PER_L
+  source: MediaDive solution 4784 / JCM Medium 825
+  notes: MediaDive solution 4784 / JCM Medium 825 lists 1.0 g/L Peptone.
   term:
-    id: mediadive.compound:1
+    id: MICRO:0000178
     label: Peptone
+  nutritional_roles:
+  - PROTEIN_SOURCE
 - preferred_term: Yeast extract
   concentration:
-    value: '0.979432'
+    value: '1.0'
     unit: G_PER_L
+  source: MediaDive solution 4784 / JCM Medium 825
+  notes: MediaDive solution 4784 / JCM Medium 825 lists 1.0 g/L Yeast extract.
   term:
-    id: mediadive.compound:16
+    id: FOODON:03315426
     label: Yeast extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
+  - VITAMIN_SOURCE
 - preferred_term: K2HPO4
   concentration:
-    value: '1.56709'
+    value: '1.6'
     unit: G_PER_L
+  source: MediaDive solution 4784 / JCM Medium 825
+  notes: MediaDive solution 4784 / JCM Medium 825 lists 1.6 g/L K2HPO4.
   term:
-    id: mediadive.compound:10
-    label: K2HPO4
-  chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-    confidence: 1.0
-    match_type: exact_match
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
 - preferred_term: NaH2PO4 x 2 H2O
   concentration:
-    value: '0.979432'
+    value: '1.0'
     unit: G_PER_L
+  source: MediaDive solution 4784 / JCM Medium 825
+  notes: MediaDive solution 4784 / JCM Medium 825 lists 1.0 g/L NaH2PO4 x 2 H2O.
   term:
-    id: mediadive.compound:678
-    label: NaH2PO4 x 2 H2O
-  chebi_term:
     id: CHEBI:37585
     label: sodium dihydrogenphosphate
-    confidence: 0.7
-    match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
 - preferred_term: NH4Cl
   concentration:
-    value: '0.489716'
+    value: '0.5'
     unit: G_PER_L
+  source: MediaDive solution 4784 / JCM Medium 825
+  notes: MediaDive solution 4784 / JCM Medium 825 lists 0.5 g/L NH4Cl.
   term:
-    id: mediadive.compound:42
-    label: NH4Cl
-  chebi_term:
     id: CHEBI:31206
     label: ammonium chloride
-    confidence: 1.0
-    match_type: exact_match
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  nutritional_roles:
+  - NITROGEN_SOURCE
 - preferred_term: MgSO4 x 7 H2O
   concentration:
-    value: '0.156709'
+    value: '0.16'
     unit: G_PER_L
+  source: MediaDive solution 4784 / JCM Medium 825
+  notes: MediaDive solution 4784 / JCM Medium 825 lists 0.16 g/L MgSO4 x 7 H2O.
   term:
-    id: mediadive.compound:8
-    label: MgSO4 x 7 H2O
-  chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-    confidence: 0.7
-    match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: CaCl2 x 2 H2O
   concentration:
-    value: '0.0587659'
+    value: '0.06'
     unit: G_PER_L
+  source: MediaDive solution 4784 / JCM Medium 825
+  notes: MediaDive solution 4784 / JCM Medium 825 lists 0.06 g/L CaCl2 x 2 H2O.
   term:
-    id: mediadive.compound:7
-    label: CaCl2 x 2 H2O
-  chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Trace element solution SL-4
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: MediaDive solution 4784 / JCM Medium 825
+  notes: MediaDive solution 4784 / JCM Medium 825 lists 10.0 ml/L Trace element solution
+    SL-4.
+  culturemech_term:
+    id: CultureMech:013111
+    label: Trace element solution SL-4
+- preferred_term: Trace vitamins
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: MediaDive solution 4784 / JCM Medium 825
+  notes: MediaDive solution 4784 / JCM Medium 825 lists 10.0 ml/L Trace vitamins.
+  culturemech_term:
+    id: CultureMech:012935
+    label: Trace vitamins
 - preferred_term: Resazurin
   concentration:
-    value: '0.000489716'
-    unit: G_PER_L
+    value: '0.5'
+    unit: MG_PER_L
+  source: MediaDive solution 4784 / JCM Medium 825
+  notes: MediaDive solution 4784 / JCM Medium 825 lists 0.5 mg/L Resazurin.
   term:
-    id: mediadive.compound:25
-    label: Resazurin
-  chebi_term:
     id: CHEBI:8806
     label: Resazurin
-    confidence: 1.0
-    match_type: exact_match
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+  physicochemical_roles:
+  - REDOX_INDICATOR
 - preferred_term: Distilled water
   concentration:
-    value: '910.871694417238'
-    unit: PERCENT_V_V
+    value: '930.0'
+    unit: ML_PER_L
+  source: MediaDive solution 4784 / JCM Medium 825
+  notes: MediaDive solution 4784 / JCM Medium 825 lists 930.0 ml/L Distilled water.
   term:
-    id: mediadive.compound:4
-    label: Distilled water
-  chebi_term:
     id: CHEBI:15377
     label: water
-    confidence: 0.7
-    match_type: corpus_consensus
-- preferred_term: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: 10% Glucose solution
   concentration:
-    value: '48.97159647404506'
-    unit: PERCENT_V_V
+    value: '50.0'
+    unit: ML_PER_L
+  source: MediaDive solution 4784 / JCM Medium 825
+  notes: MediaDive solution 4784 / JCM Medium 825 lists 50.0 ml/L 10% Glucose solution.
   term:
-    id: mediadive.compound:5
-    label: Glucose
-  chebi_term:
     id: CHEBI:17234
     label: glucose
-    confidence: 0.9
-    match_type: manual_curated
-- preferred_term: NaHCO3
+- preferred_term: 8% NaHCO3 solution
   concentration:
-    value: '1.2242899118511263'
-    unit: PERCENT_V_V
+    value: '1.25'
+    unit: ML_PER_L
+  source: MediaDive solution 4784 / JCM Medium 825
+  notes: MediaDive solution 4784 / JCM Medium 825 lists 1.25 ml/L 8% NaHCO3 solution.
   term:
-    id: mediadive.compound:55
-    label: NaHCO3
-  chebi_term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-    confidence: 1.0
-    match_type: exact_match
-- preferred_term: L-Cysteine HCl x H2O
+- preferred_term: 3% L-Cysteine HCl x H2O solution
   concentration:
-    value: '9.79431929480901'
-    unit: PERCENT_V_V
+    value: '10.0'
+    unit: ML_PER_L
+  source: MediaDive solution 4784 / JCM Medium 825
+  notes: MediaDive solution 4784 / JCM Medium 825 lists 10.0 ml/L 3% L-Cysteine HCl
+    x H2O solution.
   term:
-    id: mediadive.compound:770
-    label: L-Cysteine HCl x H2O
-  chebi_term:
     id: CHEBI:91248
     label: L-cysteine hydrochloride hydrate
-    confidence: 0.7
-    match_type: corpus_consensus
-- preferred_term: Na2S x 9 H2O
+- preferred_term: 3% Na2S x 9 H2O solution
   concentration:
-    value: '9.79431929480901'
-    unit: PERCENT_V_V
+    value: '10.0'
+    unit: ML_PER_L
+  source: MediaDive solution 4784 / JCM Medium 825
+  notes: MediaDive solution 4784 / JCM Medium 825 lists 10.0 ml/L 3% Na2S x 9 H2O
+    solution.
   term:
-    id: mediadive.compound:54
-    label: Na2S x 9 H2O
-  chebi_term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
-    confidence: 0.7
-    match_type: corpus_consensus
-preparation_notes: "Mix components thoroughly and adjust pH to 7.0. Autoclave the\
-  \ medium under a N2 atmosphere. Add the following solutions from sterile anaerobic\
-  \ stocks (autoclaved or *filter-sterilized): \n\nOriginal volume: 1021 mL"
+preparation_notes: Mix components thoroughly and adjust pH to 7.0. Autoclave the medium
+  under an N2 atmosphere. Add the glucose, NaHCO3, Na2S x 9 H2O, and L-cysteine HCl
+  x H2O solutions from sterile anaerobic stocks.
+notes: MediaDive solution 4784 represents the main solution for JCM Medium 825. Stock-solution
+  additions are kept as asserted ml/L solution rows because this SolutionRecipe record
+  cannot nest the source stock compositions inline.
 curation_history:
 - timestamp: '2026-03-13T06:20:33.103935Z'
   curator: culturemech-id-assigner-v1.0
@@ -198,11 +235,17 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m860_koko_score15.py
+  action: RESOLVED_MEDIADIVE_4784_MAIN_SOL_J825
+  source: https://mediadive.dsmz.de/medium/J825
+  notes: Restored the MediaDive J825 source-level direct component and stock-solution
+    additions, corrected water and stock additions from false percent-volume values
+    to ml/L, corrected resazurin to 0.5 mg/L, and removed the placeholder top-level
+    ingredient.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/medium/J825

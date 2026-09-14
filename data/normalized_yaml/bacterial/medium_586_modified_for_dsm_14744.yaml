@@ -319,12 +319,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_586_thauera_score10.py
+  action: RESOLVED_KOMODO_586_THAUERA_TOPOLOGY
+  changes: Linked as a strain-specific variant under KOMODO Medium 586
+  source: KOMODO Medium 586_14744
+  notes: KOMODO Medium 586_14744 applies THAUERA AROMATICA MEDIUM for DSM 14744.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_586_THAUERA_AROMATICA_MEDIUM.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006064
   name: thauera_aromatica_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 586 exactly mirrors DSMZ THAUERA AROMATICA MEDIUM.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 586_14744 applies THAUERA AROMATICA MEDIUM for DSM 14744.
+data_quality_flags:
+- ingredients_curated

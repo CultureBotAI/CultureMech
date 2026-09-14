@@ -11,9 +11,215 @@ media_term:
   term:
     id: komodo.medium:2076
     label: Trace mineral solution (medium 1121)
-notes: 'Source: KOMODO ModelSEED | ID: 2076 | DSMZ Medium: 2076 (mediadive.medium:2076)
-  | Aerobic: No | SubMedium: Yes'
-ingredients: []
+notes: KOMODO 2076 lists Trace mineral solution (medium 1121) as a defined submedium.
+  Its metabolite table contains 1.50 g/L nitrilotriacetic acid, 1.00 g/L Fe2(SO4)3
+  x xH2O, 0.50 g/L MnSO4 x X H2O, 0.50 g/L CoSO4 x 7 H2O, 0.18 g/L ZnSO4 x 7 H2O,
+  0.10 g/L H2WO4, 0.10 g/L Na2SeO3 x 5 H2O, 0.10 g/L NiCl2 x 6 H2O, 0.02 g/L KAI(SO4)2
+  x 12 H2O, 0.01 g/L NaBr, 0.01 g/L CuSO4 x 5 H2O, 0.01 g/L SrCl2 x 6 H2O, 0.01 g/L
+  H3BO3, 1.00E-3 g/L Na2MoO4 x 2 H2O, 0.01 g/L KI, and H2O.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the medium 1121 trace mineral stock from H2O, nitrilotriacetic
+    acid, and the bromide, copper, strontium, tungstate, selenite, cobalt, borate,
+    molybdate, manganese, nickel, ferric sulfate, zinc, and iodide salts listed by
+    KOMODO.
+ingredients:
+- preferred_term: KAl(SO4)2 x 12 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  source: KOMODO Medium 2076
+  notes: KOMODO Medium 2076 lists 0.02 g/L KAI(SO4)2 x 12 H2O; normalized here as
+    KAl(SO4)2 x 12 H2O.
+  term:
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+- preferred_term: NaBr
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: KOMODO Medium 2076
+  notes: KOMODO Medium 2076 lists 0.01 g/L NaBr.
+  term:
+    id: CHEBI:63004
+    label: sodium bromide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63004
+    label: sodium bromide
+- preferred_term: CuSO4 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: KOMODO Medium 2076
+  notes: KOMODO Medium 2076 lists 0.01 g/L CuSO4 x 5 H2O.
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+- preferred_term: SrCl2 x 6 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: KOMODO Medium 2076
+  notes: KOMODO Medium 2076 lists 0.01 g/L SrCl2 x 6 H2O.
+  term:
+    id: CHEBI:36385
+    label: strontium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36385
+    label: strontium dichloride hexahydrate
+- preferred_term: Nitrilotriacetic acid
+  concentration:
+    value: '1.50'
+    unit: G_PER_L
+  source: KOMODO Medium 2076
+  notes: KOMODO Medium 2076 lists 1.50 g/L Nitrilotriacetic acid.
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+- preferred_term: H2WO4
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: KOMODO Medium 2076
+  notes: KOMODO Medium 2076 lists 0.10 g/L H2WO4.
+  term:
+    id: CHEBI:36272
+    label: tungstic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36272
+    label: tungstic acid
+- preferred_term: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: KOMODO Medium 2076
+  notes: KOMODO Medium 2076 lists 0.10 g/L Na2SeO3 x 5 H2O.
+  term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+- preferred_term: CoSO4 x 7 H2O
+  concentration:
+    value: '0.50'
+    unit: G_PER_L
+  source: KOMODO Medium 2076
+  notes: KOMODO Medium 2076 lists 0.50 g/L CoSO4 x 7 H2O.
+  term:
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
+- preferred_term: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: KOMODO Medium 2076
+  notes: KOMODO Medium 2076 lists 0.01 g/L H3BO3.
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '1.00E-3'
+    unit: G_PER_L
+  source: KOMODO Medium 2076
+  notes: KOMODO Medium 2076 lists 1.00E-3 g/L Na2MoO4 x 2 H2O.
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: MnSO4 x 2 H2O
+  concentration:
+    value: '0.50'
+    unit: G_PER_L
+  source: KOMODO Medium 2076
+  notes: KOMODO Medium 2076 lists 0.50 g/L MnSO4 x X H2O; normalized here as MnSO4
+    x 2 H2O.
+  term:
+    id: CHEBI:86356
+    label: manganese(II) sulfate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86356
+    label: manganese(II) sulfate dihydrate
+- preferred_term: NiCl2 x 6 H2O
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: KOMODO Medium 2076
+  notes: KOMODO Medium 2076 lists 0.10 g/L NiCl2 x 6 H2O.
+  term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+- preferred_term: Fe2(SO4)3 x n H2O
+  concentration:
+    value: '1.00'
+    unit: G_PER_L
+  source: KOMODO Medium 2076
+  notes: KOMODO Medium 2076 lists 1.00 g/L Fe2(SO4)3 x xH2O; normalized here as Fe2(SO4)3
+    x n H2O.
+  term:
+    id: CHEBI:53438
+    label: iron(3+) sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53438
+    label: iron(3+) sulfate
+- preferred_term: H2O
+  concentration:
+    value: '1.0'
+    unit: L
+  source: KOMODO Medium 2076
+  notes: KOMODO Medium 2076 lists H2O without a gram amount; normalized as stock solvent.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+  source: KOMODO Medium 2076
+  notes: KOMODO Medium 2076 lists 0.18 g/L ZnSO4 x 7 H2O.
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: KI
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: KOMODO Medium 2076
+  notes: KOMODO Medium 2076 lists 0.01 g/L KI.
+  term:
+    id: CHEBI:8346
+    label: potassium iodide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8346
+    label: potassium iodide
 applications:
 - Microbial cultivation
 curation_history:
@@ -30,3 +236,14 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Trace mineral solution (medium 1121)" to "trace_mineral_solution_medium_1121"
     for consistent matching
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_komodo_2076_2077_score15.py
+  action: RESOLVED_KOMODO_2076_2077_SCORE15
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2076
+  notes: Replaced the incomplete KOMODO Medium 2076 import with the complete KOMODO
+    metabolite table and grounded disclosed components through MediaIngredientMech.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2076

@@ -6,33 +6,57 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.0
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1.0'
+    unit: L
+  source: TOGO M2613 / ATCC Medium 1252
+  notes: TOGO M2613 lists 1000 ml distilled water; the import unit is corrected to
+    1 L.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
+- preferred_term: Sodium lactate (60% solution)
+  concentration:
+    value: '1.5'
+    unit: PERCENT_W_V
+  source: TOGO M2613 / ATCC Medium 1252
+  notes: ATCC Medium 1252 lists sodium lactate 60% solution at 1.5%.
+  term:
+    id: CHEBI:75228
+    label: sodium lactate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+  nutritional_roles:
+  - CARBON_SOURCE
 - preferred_term: Reinforced Clostridial medium (Oxoid CM149)
   concentration:
-    value: '38'
+    value: '38.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  source: TOGO M2613 / ATCC Medium 1252
+  notes: TOGO M2613 lists 38 g/L commercial Oxoid CM149 Reinforced Clostridial Medium;
+    ATCC 1252 names the same commercial base but does not disclose its component recipe.
 media_term:
   preferred_term: TOGO Medium M2613
   term:
     id: TOGO:M2613
     label: Reinforced Clostridial medium (Oxoid CM149) with sodium lactate (60% solution)
       at a concentration of 1.5%
-notes: 'Source: https://togomedium.org/medium/M2613
-
-  Original URL: https://www.atcc.org/~/media/CCB197296D624B1DA0BBFA3C2EB8632B.ashx'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust final pH to 7.0.
+notes: TOGO M2613 imports ATCC Medium 1252 Reinforced Clostridial medium (Oxoid CM149)
+  with sodium lactate. ATCC 1252 discloses 1.5% sodium lactate 60% solution and a
+  final pH of 7.0; TOGO additionally lists 1000 ml distilled water and 38 g/L Reinforced
+  Clostridial medium (Oxoid CM149). The commercial Oxoid base is retained as an opaque
+  unmapped component because the source does not expand its composition.
 applications:
 - Microbial cultivation
 curation_history:
@@ -76,11 +100,17 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-solutions:
-- preferred_term: Sodium lactate (60% solution)
-  composition: []
-  concentration:
-    value: '1.5'
-    unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Defined component, Solution, Organic compound'
-  name: Unknown solution
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2613_rcm_lactate_score15.py
+  action: RESOLVED_TOGO_M2613_RCM_LACTATE_SCORE15
+  source: https://togomedium.org/medium/M2613; https://www.atcc.org/~/media/CCB197296D624B1DA0BBFA3C2EB8632B.ashx
+  notes: Corrected the TOGO M2613 water unit, flattened the sodium lactate solution
+    into a grounded ingredient, added pH 7.0, and marked the commercial Oxoid CM149
+    base as an opaque unmapped component.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2613
+- reference: https://www.atcc.org/~/media/CCB197296D624B1DA0BBFA3C2EB8632B.ashx

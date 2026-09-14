@@ -10,9 +10,462 @@ media_term:
   term:
     id: komodo.medium:349
     label: ACETOBACTERIUM 2 medium
-notes: 'Source: KOMODO ModelSEED | ID: 349 | DSMZ Medium: 349 (mediadive.medium:349)
-  | Aerobic: No'
-ingredients: []
+notes: Archived DSMZ Medium 349 defines ACETOBACTERIUM 2 MEDIUM as DSMZ Medium 135
+  supplemented with 20 g/L NaCl and with 1.25 g/L ethylene glycol replacing fructose;
+  this record expands the archived DSMZ Medium 135 base and Medium 141 trace and vitamin
+  stocks into final per-liter components.
+ingredients:
+- preferred_term: NH4Cl
+  source: Archived DSMZ Medium 135
+  notes: Archived DSMZ Medium 135 contributes 0.961538 g/L NH4Cl after scaling the
+    1040 mL final formulation to one liter.
+  concentration:
+    value: '0.961538'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: KH2PO4
+  source: Archived DSMZ Medium 135
+  notes: Archived DSMZ Medium 135 contributes 0.317308 g/L KH2PO4 after scaling the
+    1040 mL final formulation to one liter.
+  concentration:
+    value: '0.317308'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: K2HPO4
+  source: Archived DSMZ Medium 135
+  notes: Archived DSMZ Medium 135 contributes 0.432692 g/L K2HPO4 after scaling the
+    1040 mL final formulation to one liter.
+  concentration:
+    value: '0.432692'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: MgSO4 x 7 H2O
+  source: Archived DSMZ 349 and KOMODO MediaInfo 349
+  notes: Archived DSMZ Medium 349 inherits 0.10 g MgSO4 x 7 H2O from Medium 135 and
+    20 mL of a 3.00 g/L Medium 141 trace stock per 1040 mL final formulation, yielding
+    0.153846 g/L total.
+  concentration:
+    value: '0.153846'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: Nitrilotriacetic acid
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 trace
+    element solution per 1040 mL final formulation, yielding 0.028846 g/L Nitrilotriacetic
+    acid.
+  concentration:
+    value: '0.028846'
+    unit: G_PER_L
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+- preferred_term: MnSO4 x H2O
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 trace
+    element solution per 1040 mL final formulation, yielding 0.009615 g/L MnSO4 x
+    H2O.
+  concentration:
+    value: '0.009615'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+- preferred_term: NaCl
+  source: Archived DSMZ 349 and KOMODO MediaInfo 349
+  notes: Archived DSMZ Medium 349 adds 20 g/L NaCl and Archived DSMZ Medium 135 adds
+    20 mL of a 1.00 g/L Medium 141 trace stock per 1040 mL final formulation, yielding
+    20.019231 g/L total.
+  concentration:
+    value: '20.019231'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: FeSO4 x 7 H2O
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 trace
+    element solution per 1040 mL final formulation, yielding 0.001923 g/L FeSO4 x
+    7 H2O.
+  concentration:
+    value: '0.001923'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+- preferred_term: CoSO4 x 7 H2O
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 trace
+    element solution per 1040 mL final formulation, yielding 0.003462 g/L CoSO4 x
+    7 H2O.
+  concentration:
+    value: '0.003462'
+    unit: G_PER_L
+  term:
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
+- preferred_term: CaCl2 x 2 H2O
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 trace
+    element solution per 1040 mL final formulation, yielding 0.001923 g/L CaCl2 x
+    2 H2O.
+  concentration:
+    value: '0.001923'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: ZnSO4 x 7 H2O
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 trace
+    element solution per 1040 mL final formulation, yielding 0.003462 g/L ZnSO4 x
+    7 H2O.
+  concentration:
+    value: '0.003462'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: CuSO4 x 5 H2O
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 trace
+    element solution per 1040 mL final formulation, yielding 0.000192 g/L CuSO4 x
+    5 H2O.
+  concentration:
+    value: '0.000192'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+- preferred_term: KAl(SO4)2 x 12 H2O
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 trace
+    element solution per 1040 mL final formulation, yielding 0.000385 g/L KAl(SO4)2
+    x 12 H2O.
+  concentration:
+    value: '0.000385'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+- preferred_term: H3BO3
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 trace
+    element solution per 1040 mL final formulation, yielding 0.000192 g/L H3BO3.
+  concentration:
+    value: '0.000192'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: Na2MoO4 x 2 H2O
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 trace
+    element solution per 1040 mL final formulation, yielding 0.000192 g/L Na2MoO4
+    x 2 H2O.
+  concentration:
+    value: '0.000192'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: NiCl2 x 6 H2O
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 trace
+    element solution per 1040 mL final formulation, yielding 0.000577 g/L NiCl2 x
+    6 H2O.
+  concentration:
+    value: '0.000577'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+- preferred_term: Na2SeO3 x 5 H2O
+  source: Archived DSMZ Medium 141 trace element solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 trace
+    element solution per 1040 mL final formulation, yielding 0.00000577 g/L Na2SeO3
+    x 5 H2O.
+  concentration:
+    value: '0.00000577'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+- preferred_term: Biotin
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 vitamin
+    solution per 1040 mL final formulation, yielding 0.000038 g/L Biotin.
+  concentration:
+    value: '0.000038'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: biotin
+- preferred_term: Folic acid
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 vitamin
+    solution per 1040 mL final formulation, yielding 0.000038 g/L Folic acid.
+  concentration:
+    value: '0.000038'
+    unit: G_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
+    label: folic acid
+- preferred_term: Pyridoxine-HCl
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 vitamin
+    solution per 1040 mL final formulation, yielding 0.000192 g/L Pyridoxine-HCl.
+  concentration:
+    value: '0.000192'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
+- preferred_term: Thiamine-HCl x 2 H2O
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 vitamin
+    solution per 1040 mL final formulation, yielding 0.000096 g/L Thiamine-HCl x 2
+    H2O.
+  concentration:
+    value: '0.000096'
+    unit: G_PER_L
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+- preferred_term: Riboflavin
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 vitamin
+    solution per 1040 mL final formulation, yielding 0.000096 g/L Riboflavin.
+  concentration:
+    value: '0.000096'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
+- preferred_term: Nicotinic acid
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 vitamin
+    solution per 1040 mL final formulation, yielding 0.000096 g/L Nicotinic acid.
+  concentration:
+    value: '0.000096'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
+- preferred_term: D-Ca-pantothenate
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 vitamin
+    solution per 1040 mL final formulation, yielding 0.000096 g/L D-Ca-pantothenate.
+  concentration:
+    value: '0.000096'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+- preferred_term: Vitamin B12
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 vitamin
+    solution per 1040 mL final formulation, yielding 0.00000192 g/L Vitamin B12.
+  concentration:
+    value: '0.00000192'
+    unit: G_PER_L
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+  mediaingredientmech_chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+- preferred_term: p-Aminobenzoic acid
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 vitamin
+    solution per 1040 mL final formulation, yielding 0.000096 g/L p-Aminobenzoic acid.
+  concentration:
+    value: '0.000096'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+- preferred_term: Lipoic acid
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 135 adds 20 mL of the Archived DSMZ Medium 141 vitamin
+    solution per 1040 mL final formulation, yielding 0.000096 g/L Lipoic acid.
+  concentration:
+    value: '0.000096'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16494
+    label: lipoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
+    label: lipoic acid
+- preferred_term: Yeast extract
+  source: Archived DSMZ Medium 135
+  notes: Archived DSMZ Medium 135 contributes 1.923077 g/L Yeast extract after scaling
+    the 1040 mL final formulation to one liter.
+  concentration:
+    value: '1.923077'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Resazurin
+  source: Archived DSMZ Medium 135
+  notes: Archived DSMZ Medium 135 contributes 0.000962 g/L Resazurin after scaling
+    the 1040 mL final formulation to one liter.
+  concentration:
+    value: '0.000962'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: NaHCO3
+  source: Archived DSMZ Medium 135
+  notes: Archived DSMZ Medium 135 contributes 9.615385 g/L NaHCO3 after scaling the
+    1040 mL final formulation to one liter.
+  concentration:
+    value: '9.615385'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Ethylene glycol
+  source: Archived DSMZ Medium 349
+  notes: Archived DSMZ Medium 349 replaces fructose with 1.25 g/L ethylene glycol.
+  concentration:
+    value: '1.250000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30742
+    label: ethylene glycol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30742
+    label: ethylene glycol
+- preferred_term: Cysteine-HCl x H2O
+  source: Archived DSMZ Medium 135
+  notes: Archived DSMZ Medium 135 contributes 0.480769 g/L Cysteine-HCl x H2O after
+    scaling the 1040 mL final formulation to one liter.
+  concentration:
+    value: '0.480769'
+    unit: G_PER_L
+  term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+- preferred_term: Na2S x 9 H2O
+  source: Archived DSMZ Medium 135
+  notes: Archived DSMZ Medium 135 contributes 0.480769 g/L Na2S x 9 H2O after scaling
+    the 1040 mL final formulation to one liter.
+  concentration:
+    value: '0.480769'
+    unit: G_PER_L
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+- preferred_term: Distilled water
+  source: Archived DSMZ Medium 135
+  notes: Archived DSMZ Medium 135 lists 1000 mL distilled water.
+  concentration:
+    value: '1000.000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -35,5 +488,20 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_349_score35.py
+  action: RESOLVED_KOMODO_349_SCORE35
+  changes: Replaced empty KOMODO 349 composition with archived DSMZ data
+  source: https://web.archive.org/web/20121030084419id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium349.pdf
+  notes: Archived DSMZ Medium 349 defines ACETOBACTERIUM 2 MEDIUM as DSMZ Medium 135
+    supplemented with 20 g/L NaCl and with 1.25 g/L ethylene glycol replacing fructose;
+    this record expands the archived DSMZ Medium 135 base and Medium 141 trace and
+    vitamin stocks into final per-liter components.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=349
+- reference: https://web.archive.org/web/20121030084419id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium349.pdf
+- reference: https://web.archive.org/web/20121030072436id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium135.pdf
+- reference: https://web.archive.org/web/20121030075431id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf

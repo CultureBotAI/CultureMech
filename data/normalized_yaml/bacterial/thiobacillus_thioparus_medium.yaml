@@ -139,12 +139,23 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_18181.yaml
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_36_thiobacillus_score10.py
+  action: RESOLVED_KOMODO_36_THIOBACILLUS_TOPOLOGY
+  changes: Promoted KOMODO Medium 36 to the Thiobacillus family parent
+  source: KOMODO Medium 36-36.1 and MediaDive Medium 36
+  notes: Moved the family root from strain-specific KOMODO Medium 36.1 to base KOMODO
+    Medium 36 and reclassified DSM 18181 as a pH variant.
+variant_children:
+- path: data/normalized_yaml/bacterial/thiobacillus_medium.yaml
   relationship: SOURCE_DUPLICATE
+  id: CultureMech:001471
+  name: thiobacillus_medium
+  notes: MediaDive Medium 36 exactly matches the KOMODO Medium 36 THIOBACILLUS THIOPARUS
+    MEDIUM base.
+- path: data/normalized_yaml/bacterial/for_dsm_18181.yaml
+  relationship: PH_VARIANT
   id: CultureMech:005082
   name: for_dsm_18181
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+  notes: KOMODO Medium 36.1 applies THIOBACILLUS THIOPARUS MEDIUM at pH 7.5 for DSM
+    18181.

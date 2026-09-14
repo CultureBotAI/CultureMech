@@ -5,13 +5,15 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1.0'
+    unit: L
+  source: TOGO M2310 / DSMZ Medium 464a
+  notes: TOGO M2310 / DSMZ Medium 464a lists 1000 ml distilled water as the Plate
+    Count Agar solvent; the TOGO import unit is corrected to 1 L.
   term:
     id: CHEBI:15377
     label: water
@@ -22,37 +24,71 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M2310 / DSMZ Medium 464a
+  notes: TOGO M2310 / DSMZ Medium 464a lists 2.5 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+  nutritional_roles:
+  - NITROGEN_SOURCE
 - preferred_term: Dextrose
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
+  source: TOGO M2310 / DSMZ Medium 464a
+  notes: TOGO M2310 / DSMZ Medium 464a lists 1 g/L Dextrose.
   term:
     id: CHEBI:17634
     label: D-glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
     label: D-glucose
+  nutritional_roles:
+  - CARBON_SOURCE
 - preferred_term: Agar, if required
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M2310 / DSMZ Medium 464a
+  notes: TOGO M2310 / DSMZ Medium 464a lists 15 g/L Agar, if required.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 - preferred_term: Tryptone
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2310 / DSMZ Medium 464a
+  notes: TOGO M2310 / DSMZ Medium 464a lists 5 g/L Tryptone.
+  term:
+    id: MICRO:0000182
+    label: tryptone
+  nutritional_roles:
+  - NITROGEN_SOURCE
+  - AMINO_ACID_SOURCE
 media_term:
   preferred_term: TOGO Medium M2310
   term:
     id: TOGO:M2310
     label: Reactivation With Liquid Medium 464 (Plate Count Agar)
-notes: 'Source: https://togomedium.org/medium/M2310
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium464a.pdf'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Rehydrate and grow lyophilized cells from the ampoule in liquid medium
+    464; subsequent subculturing may be carried out in liquid medium or an agar medium.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+notes: TOGO M2310 imports DSMZ Medium 464a Reactivation With Liquid Medium 464, which
+  uses DSMZ Medium 464 Plate Count Agar with 5 g tryptone, 2.5 g yeast extract, 1
+  g dextrose, 15 g agar if required, 1000 ml distilled water, pH 7.0, and rehydration
+  of lyophilized cells from the ampoule in liquid medium 464 before subsequent subculture
+  in liquid or agar medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -83,3 +119,27 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2310_reactivation_464a_score15.py
+  action: RESOLVED_TOGO_M2310_REACTIVATION_464A_SCORE15
+  source: https://togomedium.org/medium/M2310; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium464a.pdf
+  notes: Corrected the TOGO M2310 distilled-water unit to 1 L, added pH 7.0, grounded
+    every DSMZ Medium 464a component, and linked the record as a DSMZ Medium 464a
+    source duplicate.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2310
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium464a.pdf
+parent_media:
+  path: data/normalized_yaml/bacterial/reactivation_with_liquid_medium_464.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001584
+  name: reactivation_with_liquid_medium_464
+  notes: TOGO M2310 imports the same DSMZ Medium 464a reactivation formula represented
+    by the MediaDive parent record.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- TOGO M2310 is the TOGO import of DSMZ Medium 464a and explicitly retains the distilled-water
+  solvent listed in the source PDF.

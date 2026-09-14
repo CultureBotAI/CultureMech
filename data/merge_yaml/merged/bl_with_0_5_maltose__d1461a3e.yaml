@@ -14,8 +14,8 @@ notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=4
 ingredients:
 - preferred_term: BL Agar
   term:
-    id: CHEBI:2509
-    label: agar
+    id: mediadive.compound:1757
+    label: BL Agar
   concentration:
     value: '1000'
     unit: G_PER_L

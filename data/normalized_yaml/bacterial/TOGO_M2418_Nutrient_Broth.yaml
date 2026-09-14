@@ -6,25 +6,46 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
+- preferred_term: Beef Extract
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  source: ATCC Medium 3
+  notes: ATCC Medium 3 lists 3.0 g beef extract in the Nutrient Agar scratch recipe
+    and omits agar for Nutrient Broth.
+  term:
+    id: FOODON:03302088
+    label: beef extract
+- preferred_term: Peptone
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: ATCC Medium 3
+  notes: ATCC Medium 3 lists 5.0 g peptone in the Nutrient Agar scratch recipe and
+    omits agar for Nutrient Broth.
+  term:
+    id: MICRO:0000178
+    label: peptone
 - preferred_term: DI Water
   concentration:
     value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: Nutrient Broth (BD cat 234000)
-  concentration:
-    value: '8'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+    unit: ML_PER_L
+  source: ATCC Medium 3
+  notes: ATCC Medium 3 lists 1000 mL DI water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M2418
   term:
     id: TOGO:M2418
     label: Nutrient Broth
-notes: 'Source: https://togomedium.org/medium/M2418
-
-  Original URL: https://www.atcc.org/~/media/E6FA2163B72E4DCD880719A2612F2C92.ashx'
+notes: TOGO M2418 cites ATCC Medium 3; ATCC Medium 3 lists 8.0 g Nutrient Broth (BD
+  cat 234000) per 1000 mL DI water and prints a scratch broth formulation with agar
+  omitted.
 applications:
 - Microbial cultivation
 curation_history:
@@ -41,3 +62,28 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Nutrient Broth" to "nutrient_broth" for consistent
     matching
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_atcc_score40.py
+  action: RESOLVED_ATCC_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO/ATCC recipe graph
+  source: https://togomedium.org/medium/M2418; https://www.atcc.org/~/media/E6FA2163B72E4DCD880719A2612F2C92.ashx
+  notes: TOGO M2418 cites ATCC Medium 3; ATCC Medium 3 lists 8.0 g Nutrient Broth
+    (BD cat 234000) per 1000 mL DI water and prints a scratch broth formulation with
+    agar omitted.
+ph_value: 6.8
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare Nutrient Broth with 3.0 g beef extract and 5.0 g peptone in
+    1000 mL DI water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M2418
+- reference: https://www.atcc.org/~/media/E6FA2163B72E4DCD880719A2612F2C92.ashx

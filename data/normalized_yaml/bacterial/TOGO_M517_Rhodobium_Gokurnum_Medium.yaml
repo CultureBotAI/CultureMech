@@ -243,6 +243,12 @@ curation_history:
     duplicate values written by cleanup_media_quality.py. Every merged part was the
     same value, so the pre-merge value is unambiguous and no source lookup was needed.
     Rows whose merged parts differ were left untouched.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_jcm_parent_wrapper_backlinks.py
+  action: ADDED_JCM_PARENT_WRAPPER_BACKLINKS
+  changes: Added reciprocal variant_children links
+  source: TOGO:M517
+  notes: Mirrored curated JCM wrapper parent_media links on the parent record.
 high_metal: true
 solutions:
 - preferred_term: Ferric citrate solution (0.1%)
@@ -273,3 +279,8 @@ variant_children:
   notes: Reviewed TOGO Rhodobium/modified Rhodobacter source-local pair; child shares
     the parsed base formulation but lowers NaCl, CaCl2, MgCl2, and NH4Cl and raises
     yeast extract from 0.4 to 0.6 g/L.
+- path: data/normalized_yaml/bacterial/TOGO_M518_Marichromatium_Imhoffii_Medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:009909
+  name: marichromatium_imhoffii_medium
+  notes: Supplements Rhodobium gokurnum medium with 0.5 to 1.0 mM Na2S.

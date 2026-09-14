@@ -5,17 +5,68 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ingredients: []
+ingredients:
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '4.0'
+    unit: G_PER_L
+  source: JCM Medium 43
+  notes: JCM Medium 43 prints this component.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Malt extract (BD-Difco)
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: JCM Medium 43
+  notes: JCM Medium 43 prints this component.
+  term:
+    id: FOODON:03301056
+    label: malt extract
+- preferred_term: Glucose
+  concentration:
+    value: '4.0'
+    unit: G_PER_L
+  source: JCM Medium 43
+  notes: JCM Medium 43 prints this component.
+  term:
+    id: CHEBI:17234
+    label: glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: glucose
+- preferred_term: Agar
+  concentration:
+    value: '20.0'
+    unit: G_PER_L
+  source: JCM Medium 43
+  notes: JCM Medium 43 prints this component.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: JCM Medium 43
+  notes: JCM Medium 43 lists 1.0 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M413
   term:
     id: TOGO:M413
     label: Acidic Yeast Extract-Malt Extract Agar (pH 5.0)
-notes: 'Source: https://togomedium.org/medium/M413
-
-  Original source: JCM - JCM_M415
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=415'
+notes: 'TOGO M413 mirrors JCM Medium 415: Acidic Yeast Extract-Malt Extract Agar uses
+  JCM Medium 43 ISP-2 agar adjusted to pH 5.0.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -44,11 +95,40 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
-solutions:
-- preferred_term: Yeast extract--malt extract agar (ISP--2) (see Medium [M35])
-  composition: []
-  notes: Cross-reference to Medium M35
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_acidic_yeast_score40.py
+  action: RESOLVED_JCM_ACIDIC_YEAST_SCORE40_GRAPH
+  changes: Resolved score-40 acidic JCM yeast-medium recipe graph
+  source: https://togomedium.org/medium/M413; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=415;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=43
+  notes: 'TOGO M413 mirrors JCM Medium 415: Acidic Yeast Extract-Malt Extract Agar
+    uses JCM Medium 43 ISP-2 agar adjusted to pH 5.0.'
+ph_value: 5.0
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare Yeast extract-malt extract agar (ISP-2).
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 5.0.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M413
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=415
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=43
+parent_media:
+  path: data/normalized_yaml/bacterial/yeast_extract_malt_extract_agar_isp_2.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:009740
+  name: yeast_extract_malt_extract_agar_isp_2
+  notes: JCM Medium 415 adjusts JCM Medium 43 ISP-2 agar to pH 5.0.
+variant_relationship: PH_VARIANT
+variant_modifications:
+- Adjusted JCM Medium 43 ISP-2 agar to pH 5.0.

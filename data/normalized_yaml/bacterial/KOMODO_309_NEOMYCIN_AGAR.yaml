@@ -18,14 +18,23 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  term:
+    id: FOODON:03302088
+    label: Beef extract
 - preferred_term: Yeast extract
   concentration:
     value: '3'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Peptone
   concentration:
     value: '6'
     unit: G_PER_L
+  term:
+    id: MICRO:0000178
+    label: Peptone
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -40,6 +49,9 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
+  term:
+    id: MICRO:0000606
+    label: Casitone
 - preferred_term: Neomycin
   concentration:
     value: '1.0'
@@ -89,6 +101,12 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_jcm_score10_exact_terms.py
+  action: GROUNDED_KOMODO_JCM_SCORE10_EXACT_TERMS
+  changes: Grounded exact KOMODO/JCM score-10 ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Beef extract, Casitone, Peptone, Yeast extract.
 parent_media:
   path: data/normalized_yaml/bacterial/neomycin_agar.yaml
   relationship: SOURCE_DUPLICATE

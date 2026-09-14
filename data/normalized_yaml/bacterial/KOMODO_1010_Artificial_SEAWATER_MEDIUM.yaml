@@ -393,6 +393,13 @@ curation_history:
     main solution. That is short of the exact agreement required to assert the volume,
     so it stays a candidate (#262).
   changes: 0 volume(s) promoted to concentration; 3 candidate(s) re-evidenced
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1010_artificial_seawater_score10.py
+  action: RESOLVED_KOMODO_1010_ARTIFICIAL_SEAWATER_STRAIN_VARIANT
+  changes: Linked an ARTIFICIAL SEAWATER MEDIUM strain-specific child
+  source: KOMODO Medium 1010.1
+  notes: Changed DSM 15769 from SOURCE_DUPLICATE to a STRAIN_SPECIFIC_VARIANT child
+    of KOMODO Medium 1010.
 variant_children:
 - path: data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -401,11 +408,11 @@ variant_children:
   notes: Same ingredient and concentration signature; review as possible duplicate
     source record.
 - path: data/normalized_yaml/bacterial/for_dsm_15769.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003515
   name: for_dsm_15769
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 1010.1 applies ARTIFICIAL SEAWATER MEDIUM at pH 7.2-7.5 for
+    DSM 15769.
 solutions:
 - preferred_term: Trace element solution SL-10
   composition:

@@ -2,31 +2,203 @@ id: CultureMech:004982
 name: zeikus_trace_elements_solution_medium_1343
 original_name: Zeikus trace elements solution (medium 1343)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
-notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 3134 | DSMZ Medium: 3134 (mediadive.medium:3134)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'KOMODO 3134 lists Zeikus trace elements solution (medium 1343) as a defined
+  submedium at pH 6.5. DSMZ Medium 1343 and MediaDive solution 2698 provide the complete
+  stock composition: 12.5 g/L Nitrilotriacetic acid, 0.2 g/L FeCl3 x 4 H2O, 0.1 g/L
+  ZnCl2, 0.1 g/L MnCl2 x 4 H2O, 0.01 g/L H3BO3, 0.017 g/L CoCl2 x 6 H2O, 0.02 g/L
+  CuCl2 x 2 H2O, 0.1 g/L CaCl2 x 2 H2O, 0.01 g/L Na2MoO4 x 2 H2O, 1.0 g/L NaCl, 0.02
+  g/L Na2SeO3, distilled water to 1000 mL, and KOH to neutralise the nitrilotriacetic
+  acid to pH 6.5 before adding the other trace elements. The DSMZ PDF and KOMODO page
+  abbreviate the borate row as H3BO; MediaDive identifies the same DSMZ compound row
+  as H3BO3.'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Neutralise the nitrilotriacetic acid to pH 6.5 with KOH before adding
+    the other trace elements.
+- step_number: 2
+  action: MIX
+  description: Add the iron, zinc, manganese, borate, cobalt, copper, calcium, molybdate,
+    sodium chloride, and selenite trace elements, then bring the Zeikus trace elements
+    solution stock to 1 L with distilled water.
 media_term:
   preferred_term: KOMODO Medium 3134
   term:
     id: komodo.medium:3134
     label: Zeikus trace elements solution (medium 1343)
 ingredients:
+- preferred_term: Nitrilotriacetic acid
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+  source: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134
+  notes: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134 lists 12.5 g/L Nitrilotriacetic
+    acid.
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
 - preferred_term: KOH
-  notes: Extracted from recipe notes (pH buffer)
-  data_quality_flags:
-  - extracted_from_notes
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32035
-    label: potassium hydroxide
+  source: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134
+  notes: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134 lists KOH as needed
+    to neutralise nitrilotriacetic acid to pH 6.5 before adding the other trace elements.
   term:
     id: CHEBI:32035
     label: potassium hydroxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+- preferred_term: FeCl3 x 4 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  source: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134
+  notes: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134 lists 0.2 g/L FeCl3
+    x 4 H2O.
+  term:
+    id: CHEBI:30808
+    label: iron trichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30808
+    label: iron trichloride
+- preferred_term: ZnCl2
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134
+  notes: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134 lists 0.1 g/L ZnCl2.
+  term:
+    id: CHEBI:49976
+    label: zinc dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134
+  notes: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134 lists 0.1 g/L MnCl2
+    x 4 H2O.
+  term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+- preferred_term: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134
+  notes: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134 identifies the 0.01
+    g/L borate row as H3BO3; the DSMZ PDF and KOMODO page abbreviate the label as
+    H3BO.
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '0.017'
+    unit: G_PER_L
+  source: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134
+  notes: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134 lists 0.017 g/L
+    CoCl2 x 6 H2O.
+  term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+- preferred_term: CuCl2 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  source: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134
+  notes: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134 lists 0.02 g/L CuCl2
+    x 2 H2O.
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134
+  notes: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134 lists 0.1 g/L CaCl2
+    x 2 H2O.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134
+  notes: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134 lists 0.01 g/L Na2MoO4
+    x 2 H2O.
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: NaCl
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134
+  notes: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134 lists 1.0 g/L NaCl.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Na2SeO3
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  source: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134
+  notes: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134 lists 0.02 g/L Na2SeO3.
+  term:
+    id: CHEBI:48843
+    label: disodium selenite
+  mediaingredientmech_chebi_term:
+    id: CHEBI:48843
+    label: disodium selenite
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134
+  notes: DSMZ Medium 1343 / MediaDive solution 2698 / KOMODO 3134 lists 1000 mL distilled
+    water per 1 L Zeikus trace elements solution stock.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -61,3 +233,20 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_3134_zeikus_trace_elements_score15.py
+  action: RESOLVED_KOMODO_3134_SCORE15
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3134
+  notes: Replaced the KOH-only pH-buffer import with the complete Zeikus trace elements
+    solution composition from DSMZ Medium 1343 and MediaDive solution 2698; preserved
+    KOH as the variable pH adjuster; and grounded all disclosed components through
+    MediaIngredientMech.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1343.pdf
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3134
+- reference: https://mediadive.dsmz.de/medium/1343
+- reference: https://mediadive.dsmz.de/rest/medium/1343
+- reference: https://mediadive.dsmz.de/rest/solution/2698

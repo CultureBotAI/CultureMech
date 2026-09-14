@@ -10,86 +10,137 @@ media_term:
   term:
     id: mediadive.medium:J58
     label: INORGANIC SALTS-STARCH AGAR (ISP-4)
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=58'
+notes: 'Source: JCM Medium 58 | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=58
+
+
+  JCM Medium 58 Inorganic Salts-Starch Agar (ISP-4) combines soluble starch, inorganic
+  salts, 1 mL/L Trace salts solution, agar, and distilled water; its unadjusted pH
+  is 7.0-7.4.'
+sterilization:
+  method: AUTOCLAVE
+ph_range:
+  min: 7.0
+  max: 7.4
+  notes: JCM Medium 58 says the unadjusted pH will be 7.0-7.4.
 ingredients:
-- preferred_term: Starch
+- preferred_term: Soluble starch
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: JCM Medium 58
+  notes: JCM Medium 58 lists this component for ISP-4.
   term:
     id: CHEBI:28017
     label: starch
-  concentration:
-    value: '9.99001'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
     label: starch
+  nutritional_roles:
+  - CARBON_SOURCE
 - preferred_term: K2HPO4
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 58
+  notes: JCM Medium 58 lists this component for ISP-4.
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  concentration:
-    value: '0.999001'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
 - preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 58
+  notes: JCM Medium 58 lists this component for ISP-4.
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-  concentration:
-    value: '0.999001'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  nutritional_roles:
+  - SULFUR_SOURCE
 - preferred_term: NaCl
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 58
+  notes: JCM Medium 58 lists this component for ISP-4.
   term:
     id: CHEBI:26710
     label: sodium chloride
-  concentration:
-    value: '0.999001'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
 - preferred_term: (NH4)2SO4
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: JCM Medium 58
+  notes: JCM Medium 58 lists this component for ISP-4.
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  concentration:
-    value: '1.998'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
     label: ammonium sulfate
+  nutritional_roles:
+  - NITROGEN_SOURCE
+  - SULFUR_SOURCE
 - preferred_term: CaCO3
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: JCM Medium 58
+  notes: JCM Medium 58 lists this component for ISP-4.
   term:
     id: CHEBI:3311
     label: calcium carbonate
-  concentration:
-    value: '1.998'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3311
     label: calcium carbonate
+  physicochemical_roles:
+  - BUFFER
 - preferred_term: Agar
+  concentration:
+    value: '20.0'
+    unit: G_PER_L
+  source: JCM Medium 58
+  notes: JCM Medium 58 lists this component for ISP-4.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '19.98'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: JCM Medium 58
+  notes: JCM Medium 58 lists this distilled-water volume.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Unadjusted pH will be 7.0-7.4.
+  description: Mix the JCM Medium 58 ISP-4 ingredients with 1 mL/L Trace salts solution.
 - step_number: 2
-  action: MIX
-  description: 'Comment: The premixed powder is available from Becton Dickinson &
-    Co. as ISP Medium 4.'
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -127,42 +178,94 @@ curation_history:
     3 -> ''Trace salt solution'' @ 1 ml/l. Each moved component matched the MediaDive
     stock by name AND value; bulk ingredients sharing a name were left in place (#150).'
   changes: Nested 3 ingredient(s) under 1 solution(s); ingredients 10 -> 7
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_salinity_score20.py
+  action: RESOLVED_JCM_SALINITY_SCORE20
+  changes: Resolved JCM parent salinity recipe
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=58
+  notes: Rebuilt the JCM Medium 58 ISP-4 recipe.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_salinity_score20.py
+  action: LINKED_JCM_SALINITY_SCORE20_CHILDREN
+  changes: Linked score-20 salinity variants to their base parents
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1156; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=58
+  notes: Added or refreshed reciprocal salinity-variant link for bacterial/inorganic_salts_starch_agar_isp_4_with_5_nacl.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_salinity_score20.py
+  action: LINKED_JCM_SALINITY_SCORE20_CHILDREN
+  changes: Linked score-20 salinity variants to their base parents
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=351; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=58
+  notes: Added or refreshed reciprocal salinity-variant link for bacterial/inorganic_salts_starch_agar_isp_4_with_10_nacl.yaml.
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_117_863_score20.py
+  action: LINKED_JCM_117_863_SCORE20_CHILD
+  source: https://togomedium.org/medium/M900; https://togomedium.org/medium/M50
+  notes: Added or refreshed reciprocal link for bacterial/inorganic_salts_starch_agar_isp_4_with_15_nacl.yaml.
 solutions:
-- preferred_term: Trace salt solution
+- preferred_term: Trace salts solution
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  notes: JCM Medium 58 prepares Trace salts solution from 0.1 g each FeSO4 x 7 H2O,
+    MnCl2 x 4 H2O, and ZnSO4 x 7 H2O in 100 mL distilled water, then adds 1 mL stock
+    per final liter.
   composition:
   - preferred_term: FeSO4 x 7 H2O
-    term:
-      id: CHEBI:75836
-      label: iron(2+) sulfate heptahydrate
     concentration:
       value: '1'
       unit: G_PER_L
+    source: JCM Medium 58
+    notes: JCM Medium 58 lists this trace-salt stock component.
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
     mediaingredientmech_chebi_term:
       id: CHEBI:75836
       label: iron(2+) sulfate heptahydrate
   - preferred_term: MnCl2 x 4 H2O
-    term:
-      id: CHEBI:86368
-      label: manganese(II) chloride tetrahydrate
     concentration:
       value: '1'
       unit: G_PER_L
+    source: JCM Medium 58
+    notes: JCM Medium 58 lists this trace-salt stock component.
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
     mediaingredientmech_chebi_term:
       id: CHEBI:86368
       label: manganese(II) chloride tetrahydrate
   - preferred_term: ZnSO4 x 7 H2O
-    term:
-      id: CHEBI:32312
-      label: zinc sulfate heptahydrate
     concentration:
       value: '1'
       unit: G_PER_L
+    source: JCM Medium 58
+    notes: JCM Medium 58 lists this trace-salt stock component.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
     mediaingredientmech_chebi_term:
       id: CHEBI:32312
       label: zinc sulfate heptahydrate
-  concentration:
-    value: '1'
-    unit: ML_PER_L
-  preparation_notes: Stock prepared in 100 ml; added at 1 ml per litre of medium.
-    Composition and volume read from https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium84.pdf
-    (#150).
+  preparation_notes: Prepare the trace-salt stock in 100 mL distilled water; the composition
+    concentrations are normalized to g/L of stock.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=58
+variant_children:
+- path: data/normalized_yaml/bacterial/inorganic_salts_starch_agar_isp_4_with_10_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:002712
+  name: inorganic_salts_starch_agar_isp_4_with_10_nacl
+  notes: Adds 100 g/L NaCl to JCM Medium 58 ISP-4.
+- path: data/normalized_yaml/bacterial/inorganic_salts_starch_agar_isp_4_with_15_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:003209
+  name: inorganic_salts_starch_agar_isp_4_with_15_nacl
+  notes: Adds 150 g/L NaCl to JCM Medium 58 ISP-4.
+- path: data/normalized_yaml/bacterial/inorganic_salts_starch_agar_isp_4_with_5_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:002328
+  name: inorganic_salts_starch_agar_isp_4_with_5_nacl
+  notes: Adds 50 g/L NaCl to JCM Medium 58 ISP-4.

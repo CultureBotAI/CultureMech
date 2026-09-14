@@ -2,33 +2,168 @@ id: CultureMech:004339
 name: trace_element_solution_sl_4_medium_457
 original_name: Trace element solution SL-4 (medium 457)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0
   max: 8.0
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2065 | DSMZ Medium: 2065
-  (mediadive.medium:2065) | Aerobic: No | SubMedium: Yes'
+notes: KOMODO 2065 lists Trace element solution SL-4 (medium 457) as a defined submedium
+  at pH 7.0-8.0. Its metabolite table contains 0.50 g/L EDTA, 0.20 g/L FeSO4 x 7 H2O,
+  0.03 g/L H3BO3, 0.02 g/L CoCl2 x 6 H2O, 0.01 g/L ZnSO4 x 7 H2O, 3.00E-3 g/L MnCl2
+  x 4 H2O, 3.00E-3 g/L Na2MoO4 x 2 H2O, 2.00E-3 g/L NiCl2 x 6 H2O, 1.00E-3 g/L CuCl2
+  x 2 H2O, variable NaOH, and H2O.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the 1 L Trace element solution SL-4 stock from H2O, EDTA, NaOH,
+    and the cobalt, nickel, zinc, manganese, iron, copper, molybdate, and borate salts
+    listed by KOMODO 2065.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust the Trace element solution SL-4 stock to pH 7.0-8.0 with NaOH
+    as needed.
 media_term:
   preferred_term: KOMODO Medium 2065
   term:
     id: komodo.medium:2065
     label: Trace element solution SL-4 (medium 457)
 ingredients:
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  source: KOMODO Medium 2065
+  notes: KOMODO Medium 2065 lists 0.02 g/L CoCl2 x 6 H2O.
+  term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+- preferred_term: NiCl2 x 6 H2O
+  concentration:
+    value: '2.00E-3'
+    unit: G_PER_L
+  source: KOMODO Medium 2065
+  notes: KOMODO Medium 2065 lists 2.00E-3 g/L NiCl2 x 6 H2O.
+  term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+- preferred_term: H2O
+  concentration:
+    value: '1.0'
+    unit: L
+  source: KOMODO Medium 2065
+  notes: KOMODO Medium 2065 lists H2O without a gram amount; normalized here as the
+    solvent for 1 L of Trace element solution SL-4 (medium 457).
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: EDTA
+  concentration:
+    value: '0.50'
+    unit: G_PER_L
+  source: KOMODO Medium 2065
+  notes: KOMODO Medium 2065 lists 0.50 g/L EDTA.
+  term:
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
+- preferred_term: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: KOMODO Medium 2065
+  notes: KOMODO Medium 2065 lists 0.01 g/L ZnSO4 x 7 H2O.
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '3.00E-3'
+    unit: G_PER_L
+  source: KOMODO Medium 2065
+  notes: KOMODO Medium 2065 lists 3.00E-3 g/L MnCl2 x 4 H2O.
+  term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.20'
+    unit: G_PER_L
+  source: KOMODO Medium 2065
+  notes: KOMODO Medium 2065 lists 0.20 g/L FeSO4 x 7 H2O.
+  term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+- preferred_term: CuCl2 x 2 H2O
+  concentration:
+    value: '1.00E-3'
+    unit: G_PER_L
+  source: KOMODO Medium 2065
+  notes: KOMODO Medium 2065 lists 1.00E-3 g/L CuCl2 x 2 H2O.
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
 - preferred_term: NaOH
-  notes: Extracted from recipe notes (pH buffer)
-  data_quality_flags:
-  - extracted_from_notes
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32145
-    label: sodium hydroxide
+  source: KOMODO Medium 2065
+  notes: KOMODO Medium 2065 lists NaOH without a gram amount and also identifies NaOH
+    as the pH adjuster for pH 7.0-8.0.
   term:
     id: CHEBI:32145
     label: sodium hydroxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '3.00E-3'
+    unit: G_PER_L
+  source: KOMODO Medium 2065
+  notes: KOMODO Medium 2065 lists 3.00E-3 g/L Na2MoO4 x 2 H2O.
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: H3BO3
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  source: KOMODO Medium 2065
+  notes: KOMODO Medium 2065 lists 0.03 g/L H3BO3.
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 applications:
 - Microbial cultivation
 curation_history:
@@ -67,3 +202,15 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_komodo_2065_score15.py
+  action: RESOLVED_KOMODO_2065_SCORE15
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2065
+  notes: Replaced the NaOH-only pH-buffer import with the complete KOMODO 2065 metabolite
+    table; preserved NaOH as a variable listed component and pH adjuster; and grounded
+    all disclosed components through MediaIngredientMech.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2065

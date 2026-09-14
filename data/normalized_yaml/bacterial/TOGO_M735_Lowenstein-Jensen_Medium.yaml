@@ -5,21 +5,28 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: Lowenstein--Jensen medium slants (BD 220908)
+ingredients: []
+solutions:
+- preferred_term: Lowenstein-Jensen Medium
   concentration:
-    value: '1'
-    unit: G_PER_L
+    value: '1000'
+    unit: ML_PER_L
+  culturemech_term:
+    id: CultureMech:003059
+    label: Lowenstein-Jensen Medium
+  notes: TOGO M735 and JCM Medium 712 both specify commercially available Lowenstein-Jensen
+    medium slants (BD 220908).
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use commercially available Lowenstein-Jensen medium slants (BD 220908).
 media_term:
   preferred_term: TOGO Medium M735
   term:
     id: TOGO:M735
     label: Lowenstein-Jensen Medium
-notes: 'Source: https://togomedium.org/medium/M735
-
-  Original source: JCM - JCM_M712
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=712'
+notes: TOGO M735 and JCM Medium 712 both specify commercially available Lowenstein-Jensen
+  medium slants (BD 220908).
 applications:
 - Microbial cultivation
 curation_history:
@@ -36,3 +43,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Lowenstein-Jensen Medium" to "lowenstein_jensen_medium"
     for consistent matching
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_reference_wrappers_score40.py
+  action: RESOLVED_JCM_REFERENCE_WRAPPER_SCORE40
+  changes: Resolved a JCM/TOGO reference wrapper as a typed prepared-parent medium
+  source: https://togomedium.org/medium/M735; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=712
+  notes: TOGO M735 and JCM Medium 712 both specify commercially available Lowenstein-Jensen
+    medium slants (BD 220908).
+parent_media:
+  path: data/normalized_yaml/bacterial/lowenstein_jensen_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003059
+  name: lowenstein_jensen_medium
+  notes: Source-equivalent TOGO M735 duplicate of JCM Medium 712, which uses commercial
+    BD 220908 Lowenstein-Jensen medium slants.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Source-equivalent TOGO M735 duplicate of JCM Medium 712, which uses commercial BD
+  220908 Lowenstein-Jensen medium slants.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M735
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=712

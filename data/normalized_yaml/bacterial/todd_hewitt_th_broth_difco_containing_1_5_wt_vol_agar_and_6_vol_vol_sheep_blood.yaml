@@ -6,17 +6,23 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+temperature_value: 37.0
 ingredients:
 - preferred_term: Sheep blood
   concentration:
     value: '6'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+    unit: PERCENT_V_V
+  source: TOGO M2909
+  notes: TOGO M2909 lists 6% v/v sheep blood.
+  term:
+    id: UBERON:0000178
+    label: blood
 - preferred_term: Agar
   concentration:
     value: '1.5'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
+    unit: PERCENT_W_V
+  source: TOGO M2909
+  notes: TOGO M2909 lists 1.5% w/v agar.
   term:
     id: CHEBI:2509
     label: agar
@@ -25,16 +31,22 @@ ingredients:
     label: agar
 - preferred_term: Todd–Hewitt (TH) broth (Difco)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2909
+  notes: TOGO M2909 lists the opaque Todd Hewitt broth base for this formulation.
+  culturemech_term:
+    id: CultureMech:008070
+    label: Todd Hewitt Medium
 media_term:
   preferred_term: TOGO Medium M2909
   term:
     id: TOGO:M2909
     label: Todd–Hewitt (TH) broth (Difco) containing 1.5% (wt/vol) agar and 6% (vol/vol)
       sheep blood
-notes: 'Source: https://togomedium.org/medium/M2909'
+notes: TOGO M2909 lists Todd-Hewitt broth with 1.5% w/v agar and 6% v/v sheep blood.
+  Zhang et al. cultured Streptococcus suis strains at 37 C on this Todd-Hewitt sheep-blood
+  agar formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -66,4 +78,35 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-kg_microbe_match: mediadive.medium:12
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_todd_hewitt_score15.py
+  action: RESOLVED_TOGO_TODD_HEWITT_SCORE15
+  source: https://togomedium.org/medium/M2909; DOI:10.1016/j.micres.2013.09.007
+  notes: Curated TOGO:M2909 from TOGO and Zhang et al. 2014; corrected imported percentage
+    units, added 37 C cultivation evidence, and linked opaque Todd Hewitt broth to
+    a curated CultureMech recipe.
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: Streptococcus suis
+  term:
+    id: NCBITaxon:1307
+    label: Streptococcus suis
+  evidence:
+  - reference: DOI:10.1016/j.micres.2013.09.007
+    supports: SUPPORT
+    explanation: Zhang et al. report that Streptococcus suis strains were cultured
+      at 37 C in Todd-Hewitt broth or on Todd-Hewitt broth containing 1.5% w/v agar
+      and 6% v/v sheep blood.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Supplement Todd-Hewitt broth with 1.5% w/v agar and 6% v/v sheep blood.
+- step_number: 2
+  action: MIX
+  description: Cultivate Streptococcus suis strains at 37 C.
+references:
+- reference: https://togomedium.org/medium/M2909
+- reference: DOI:10.1016/j.micres.2013.09.007
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

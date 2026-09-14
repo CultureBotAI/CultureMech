@@ -10,22 +10,39 @@ media_term:
   term:
     id: mediadive.medium:J697
     label: GAM BROTH WITH 1% LACTOSE
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=697'
+notes: JCM Medium 697 contains 59.0 g GAM broth (Nissui), 10.0 g lactose, and 1.0
+  L distilled water.
 ingredients:
-- preferred_term: GAM broth
+- preferred_term: GAM broth (Nissui)
   concentration:
-    value: '59'
+    value: '59.0'
     unit: G_PER_L
+  source: JCM Medium 697
+  notes: JCM Medium 697 lists 59.0 g GAM broth (Nissui).
 - preferred_term: Lactose
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: JCM Medium 697
+  notes: JCM Medium 697 lists 10.0 g lactose.
   term:
     id: CHEBI:17716
     label: lactose
-  concentration:
-    value: '10'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17716
     label: lactose
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: JCM Medium 697
+  notes: JCM Medium 697 lists 1000 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,3 +69,25 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_official_simple_score20.py
+  action: RESOLVED_OFFICIAL_SIMPLE_SCORE20
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=697
+  notes: JCM Medium 697 contains 59.0 g GAM broth (Nissui), 10.0 g lactose, and 1.0
+    L distilled water.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Suspend 59.0 g GAM broth (Nissui) and 10.0 g lactose in 1.0 L distilled
+    water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min unless otherwise stated.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=697

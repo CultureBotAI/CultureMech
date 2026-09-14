@@ -21,14 +21,23 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: MICRO:0000182
+    label: Tryptone
 - preferred_term: Soy peptone
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: FOODON:03315720
+    label: Soy peptone
 - preferred_term: Malt extract
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: FOODON:03301056
+    label: Malt extract
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -69,4 +78,11 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_bacterial_score10_exact_terms_batch5.py
+  action: GROUNDED_BACTERIAL_SCORE10_EXACT_TERMS_BATCH5
+  changes: Grounded bacterial score-10 exact ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Malt extract, Pancreatic digest of casein, Soy
+    peptone.
 kg_microbe_match: mediadive.medium:12

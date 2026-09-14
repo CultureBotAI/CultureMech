@@ -326,12 +326,28 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_24436.yaml
-  relationship: SOURCE_DUPLICATE
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_853_fusibacter_score10.py
+  action: RESOLVED_KOMODO_853_FUSIBACTER_TOPOLOGY
+  changes: Promoted KOMODO Medium 853 as the Fusibacter parent
+  source: KOMODO Medium 853 and 853.1; DSMZ Media 853 and 853a
+  notes: Moved KOMODO Medium 853.1 and DSMZ Medium 853a under the KOMODO Medium 853
+    Fusibacter base and kept DSMZ Medium 853 as a lower-NaCl concentration variant.
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_24436.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006669
   name: for_dsm_24436
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+  notes: KOMODO Medium 853.1 applies FUSIBACTER PAUCIVORANS medium to DSM 24436.
+- path: data/normalized_yaml/bacterial/fusibacter_tunisiensis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002011
+  name: fusibacter_tunisiensis_medium
+  notes: DSMZ Medium 853a has the same high-salt 29-component Fusibacter signature
+    as KOMODO Medium 853.
+- path: data/normalized_yaml/bacterial/fusibacter_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002010
+  name: fusibacter_medium
+  notes: DSMZ Medium 853 shares the KOMODO Medium 853 ingredient set with 30.703 g/L
+    NaCl instead of 70.3069 g/L.

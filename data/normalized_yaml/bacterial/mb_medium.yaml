@@ -416,35 +416,21 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-ph_value: 7.2
-variant_children:
-- path: data/normalized_yaml/bacterial/for_dsm_14539_dsm_14646_and_dsm_14648.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006831
-  name: for_dsm_14539_dsm_14646_and_dsm_14648
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_14661.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006830
-  name: for_dsm_14661
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_14663_and_dsm_15483.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006832
-  name: for_dsm_14663_and_dsm_15483
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_14888.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006833
-  name: for_dsm_14888
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/methanocalculus_mb_medium.yaml
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_924_methanocalculus_score10.py
+  action: RESOLVED_KOMODO_924_METHANOCALCULUS_TOPOLOGY
+  changes: Linked under DSMZ Medium 924 as SOURCE_DUPLICATE
+  source: KOMODO Medium 924
+  notes: KOMODO Medium 924 has the same 37-ingredient signature as DSMZ Medium 924.
+parent_media:
+  path: data/normalized_yaml/archaea/methanocalculus_mb_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002094
   name: methanocalculus_mb_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 924 has the same 37-ingredient signature as DSMZ Medium 924.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO Medium 924 has the same 37-ingredient signature as DSMZ Medium 924.
+ph_value: 7.2
+data_quality_flags:
+- ingredients_curated

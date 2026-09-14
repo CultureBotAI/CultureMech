@@ -366,12 +366,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_960_pelotomaculum_score10.py
+  action: RESOLVED_KOMODO_960_PELOTOMACULUM_TOPOLOGY
+  changes: Changed KOMODO Medium 960 child link to STRAIN_SPECIFIC_VARIANT
+  source: KOMODO Medium 960.7
+  notes: KOMODO Medium 960.7 applies KOMODO Medium 960 to DSM 16494 and DSM 22288.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_960_PELOTOMACULUM_medium.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006916
   name: pelotomaculum_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 960.7 applies KOMODO Medium 960 to DSM 16494 and DSM 22288.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 960.7 applies KOMODO Medium 960 to DSM 16494 and DSM 22288.
+data_quality_flags:
+- ingredients_curated

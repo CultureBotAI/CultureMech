@@ -377,6 +377,13 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1055_desulfohalobium_score10.py
+  action: RESOLVED_KOMODO_1055_DESULFOHALOBIUM_TOPOLOGY
+  changes: Reclassified KOMODO Medium 1055.1, 1055.2, and 1055.3 as strain variants
+  source: KOMODO Medium 1055, 1055.1, 1055.2, and 1055.3
+  notes: Linked the strain-specific KOMODO Medium 1055.1, 1055.2, and 1055.3 records
+    under the KOMODO Medium 1055 DESULFOHALOBIUM UTAHENSE base.
 variant_children:
 - path: data/normalized_yaml/bacterial/desulfovermiculus_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -385,20 +392,17 @@ variant_children:
   notes: Same ingredient and concentration signature; review as possible duplicate
     source record.
 - path: data/normalized_yaml/bacterial/for_dsm_17721.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003631
   name: for_dsm_17721
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 1055.1 applies DESULFOHALOBIUM UTAHENSE medium to DSM 17721.
 - path: data/normalized_yaml/bacterial/for_dsm_18834.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003632
   name: for_dsm_18834
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 1055.2 applies DESULFOHALOBIUM UTAHENSE medium to DSM 18834.
 - path: data/normalized_yaml/bacterial/for_dsm_24312.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003633
   name: for_dsm_24312
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 1055.3 applies DESULFOHALOBIUM UTAHENSE medium to DSM 24312.

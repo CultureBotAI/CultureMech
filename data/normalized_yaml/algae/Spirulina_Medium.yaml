@@ -4,57 +4,421 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: Spirulina Medium
+  term:
+    id: UTEX:spirulina-medium
+    label: Spirulina Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
-ingredients:
+notes: UTEX lists Spirulina Medium as an alkaline modification of SAG medium prepared
+  by sterilizing separate carbonate/phosphate and nitrate/salt solutions before mixing.
+ingredients: []
+solutions:
 - preferred_term: Spir solution 1
   concentration:
     value: '500'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 500 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX brings Spir solution 1 to 500 mL with dH2O.
+  - preferred_term: NaHCO3
+    concentration:
+      value: '27.22'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    notes: Converted from 13.61 g/500 mL in the UTEX Spir solution 1 recipe.
+    nutritional_roles:
+    - CARBON_SOURCE
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Na2CO3
+    concentration:
+      value: '8.06'
+      unit: G_PER_L
+    term:
+      id: CHEBI:29377
+      label: sodium carbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:29377
+      label: sodium carbonate
+    notes: Converted from 4.03 g/500 mL in the UTEX Spir solution 1 recipe.
+    nutritional_roles:
+    - CARBON_SOURCE
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: K2HPO4
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    notes: Converted from 0.5 g/500 mL in the UTEX Spir solution 1 recipe.
+    nutritional_roles:
+    - PHOSPHATE_SOURCE
+    physicochemical_roles:
+    - BUFFER
+  notes: UTEX adds 500 mL Spir solution 1 per 1 L liquid Spirulina Medium.
 - preferred_term: Spir solution 2
   concentration:
     value: '500'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 500 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX brings Spir solution 2 to 500 mL with dH2O.
+  - preferred_term: NaNO3
+    concentration:
+      value: '5'
+      unit: G_PER_L
+    term:
+      id: CHEBI:63005
+      label: sodium nitrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63005
+      label: sodium nitrate
+    notes: Converted from 2.5 g/500 mL in the UTEX Spir solution 2 recipe.
+    nutritional_roles:
+    - NITROGEN_SOURCE
+  - preferred_term: K2SO4
+    concentration:
+      value: '2'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32036
+      label: potassium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32036
+      label: potassium sulfate
+    notes: Converted from 1 g/500 mL in the UTEX Spir solution 2 recipe.
+    nutritional_roles:
+    - SULFUR_SOURCE
+  - preferred_term: NaCl
+    concentration:
+      value: '2'
+      unit: G_PER_L
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+    notes: Converted from 1 g/500 mL in the UTEX Spir solution 2 recipe.
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '0.4'
+      unit: G_PER_L
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    notes: Converted from 0.2 g/500 mL in the UTEX Spir solution 2 recipe.
+    nutritional_roles:
+    - SULFUR_SOURCE
+    - TRACE_ELEMENT
+  - preferred_term: CaCl2 x 2 H2O
+    concentration:
+      value: '0.08'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    notes: Converted from 0.04 g/500 mL in the UTEX Spir solution 2 recipe.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  notes: UTEX adds 500 mL Spir solution 2 per 1 L liquid Spirulina Medium.
+- preferred_term: P-IV Metal Solution
+  concentration:
+    value: '6'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX brings P-IV Metal Solution to 1 L with dH2O.
+  - preferred_term: Na2EDTA x 2 H2O
+    concentration:
+      value: '0.75'
+      unit: G_PER_L
+    term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    physicochemical_roles:
+    - CHELATOR
+  - preferred_term: FeCl3 x 6 H2O
+    concentration:
+      value: '0.097'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    nutritional_roles:
+    - IRON_SOURCE
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '0.041'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: ZnCl2
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    term:
+      id: CHEBI:49976
+      label: zinc dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49976
+      label: zinc dichloride
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.002'
+      unit: G_PER_L
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.004'
+      unit: G_PER_L
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  notes: UTEX adds 6 mL P-IV Metal Solution to the 500 mL Spir solution 2 stock.
+- preferred_term: Chu Micronutrient Solution
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX brings Chu Micronutrient Solution to 1 L with dH2O.
+  - preferred_term: CuSO4 x 5 H2O
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.044'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '0.012'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.012'
+      unit: G_PER_L
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.62'
+      unit: G_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Na2EDTA x 2 H2O
+    concentration:
+      value: '0.05'
+      unit: G_PER_L
+    term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    physicochemical_roles:
+    - CHELATOR
+  notes: UTEX adds 1 mL Chu Micronutrient Solution to the 500 mL Spir solution 2 stock.
+- preferred_term: Vitamin B12
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX prepares the Vitamin B12 stock in 200 mL HEPES buffer.
+  - preferred_term: HEPES buffer pH 7.8
+    concentration:
+      value: '12'
+      unit: G_PER_L
+    term:
+      id: CHEBI:42334
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:42334
+      label: HEPES
+    notes: Converted from 2.4 g/200 mL in the UTEX Vitamin B12 stock.
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.135'
+      unit: G_PER_L
+    term:
+      id: CHEBI:176843
+      label: Vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: Vitamin B12
+    notes: Converted from 0.027 g/200 mL in the UTEX Vitamin B12 stock.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  notes: UTEX adds 1 mL Vitamin B12 stock to the 500 mL Spir solution 2 stock.
 preparation_steps:
 - step_number: 1
-  action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  action: DISSOLVE
+  description: Prepare Spir solution 1 by adding NaHCO3, Na2CO3, and K2HPO4 to approximately
+    450 mL dH2O while stirring.
 - step_number: 2
   action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  description: Bring Spir solution 1 to 500 mL with dH2O.
 - step_number: 3
-  action: MIX
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
+  action: AUTOCLAVE
+  description: Autoclave Spir solution 1.
 - step_number: 4
-  action: MIX
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
+  action: DISSOLVE
+  description: Prepare Spir solution 2 by adding NaNO3, K2SO4, NaCl, MgSO4 x 7 H2O,
+    CaCl2 x 2 H2O, P-IV Metal Solution, Chu Micronutrient Solution, and Vitamin B12
+    to approximately 450 mL dH2O while stirring.
 - step_number: 5
   action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
+  description: Bring Spir solution 2 to 500 mL with dH2O.
 - step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
   action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
+  description: Autoclave Spir solution 2.
+- step_number: 7
+  action: MIX
+  description: Transfer Spir solution 2 into Spir solution 1 and swirl thoroughly.
 - step_number: 8
-  action: MIX
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
+  action: STORE
+  description: Store at refrigerator temperature.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -89,9 +453,24 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-05T00:00:00-07:00'
+  curator: repair_utex_bg11_spirulina.py
+  action: RESOLVED_UTEX_BG11_SPIRULINA_GRAPH
+  changes: Grounded UTEX Spirulina/BG-11 stock and parent-medium components
+  source: https://utex.org/products/spirulina-medium; https://utex.org/products/spir-solution-1;
+    https://utex.org/products/spir-solution-2; https://utex.org/products/p-iv-metal-solution;
+    https://utex.org/products/chu-micronutrient-solution; https://utex.org/products/vitamin-b-12
+  notes: UTEX lists Spirulina Medium as an alkaline modification of SAG medium prepared
+    by sterilizing separate carbonate/phosphate and nitrate/salt solutions before
+    mixing.
 references:
 - reference: UTEX:spirulina-medium
 - reference: https://utex.org/products/spirulina-medium
+- reference: https://utex.org/products/spir-solution-1
+- reference: https://utex.org/products/spir-solution-2
+- reference: https://utex.org/products/p-iv-metal-solution
+- reference: https://utex.org/products/chu-micronutrient-solution
+- reference: https://utex.org/products/vitamin-b-12
 original_name: Spirulina Medium
 variants:
 - name: biogas_effluent_based_arthrospira_platensis
@@ -129,3 +508,6 @@ target_organisms:
       explanation: Literature evidence reports biomass production for Arthrospira
         platensis in conventional Spirulina medium and effluent-based medium.
     is_max_attainment: false
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

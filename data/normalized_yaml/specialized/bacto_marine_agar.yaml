@@ -10,22 +10,22 @@ media_term:
   term:
     id: mediadive.medium:604
     label: BACTO MARINE AGAR
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium604.pdf'
+notes: DSMZ Medium 604 records BACTO MARINE AGAR as Marine Agar 2216 (Difco 0979).
 ingredients:
-- preferred_term: Marine agar 2216
-  term:
-    id: CHEBI:2509
-    label: agar
+- preferred_term: Marine agar 2216 (Difco 0979)
   concentration:
-    value: '1000'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
+    value: variable
+    unit: VARIABLE
+  source: DSMZ Medium 604
+  notes: DSMZ Medium 604 names Marine Agar 2216 (Difco 0979) as the only component
+    but does not state an amount.
+  culturemech_term:
+    id: CultureMech:015393
+    label: Marine Agar 2216
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: MARINE AGAR 2216 (Difco 0979).
+  description: Prepare the Marine Agar 2216 (Difco 0979) product.
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,4 +52,16 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_dsmz_604_bacto_marine_score20.py
+  action: RESOLVED_DSMZ_604_BACTO_MARINE_SCORE20
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium604.pdf
+  notes: DSMZ Medium 604 defines BACTO MARINE AGAR as the opaque commercial Marine
+    Agar 2216 (Difco 0979) product and does not state a product mass; this repair
+    removes the false agar grounding and the imported 1000 g/L placeholder amount.
 kg_microbe_match: mediadive.medium:12
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium604.pdf

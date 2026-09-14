@@ -212,3 +212,15 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_88_sulfolobus_ph_score10.py
+  action: RESOLVED_KOMODO_88_SULFOLOBUS_PH_VARIANT
+  changes: Added KOMODO 88.2 pH variant child
+  source: KOMODO Medium 88.2
+  notes: Linked the reviewed pH 0.8 DSM 18786 variant.
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_88-2_For_DSM_18786.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:006726
+  name: for_dsm_18786
+  notes: KOMODO Medium 88.2 applies SULFOLOBUS medium at pH 0.8.

@@ -6,21 +6,36 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: 'Skim milk '
+- preferred_term: Skim milk
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Sodium formate (Wako)
+    value: '10'
+    unit: PERCENT_W_W
+  source: TOGO M2916
+  notes: TOGO M2916 lists 10% (wt/wt) skim milk and prepares it by heating to 95 C
+    for 2 min followed by immediate cooling to 43 C.
+  term:
+    id: FOODON:03301484
+    label: Skimmed milk
+- preferred_term: Sodium formate
   concentration:
     value: '1'
     unit: MILLIMOLAR
+  source: TOGO M2916
+  notes: TOGO M2916 adds 1 mM sodium formate to the prepared skim milk for the L.
+    bulgaricus 2038 monoculture medium.
+  term:
+    id: CHEBI:62965
+    label: sodium formate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
+    label: sodium formate
 media_term:
   preferred_term: TOGO Medium M2916
   term:
     id: TOGO:M2916
     label: 10% (wt/wt) skim milk supplemented with 1 mM sodium formate
-notes: 'Source: https://togomedium.org/medium/M2916'
+notes: TOGO M2916 prepares 10% (wt/wt) skim milk by heating it to 95 C for 2 min,
+  cooling it to 43 C, and supplementing it with 1 mM sodium formate.
 applications:
 - Microbial cultivation
 curation_history:
@@ -38,3 +53,32 @@ curation_history:
   notes: Normalized name from "10% (wt/wt) skim milk supplemented with 1 mM sodium
     formate" to "10_wt_wt_skim_milk_supplemented_with_1_mm_sodium_formate" for consistent
     matching
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_togo_skim_milk_formate_score40.py
+  action: RESOLVED_TOGO_SKIM_MILK_FORMATE_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO skim-milk formate recipe graph
+  source: https://togomedium.org/medium/M2916
+  notes: TOGO M2916 provides 10% (wt/wt) skim milk preparation steps and adds 1 mM
+    sodium formate for the monoculture medium.
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Heat 10% (wt/wt) skim milk to 95 C.
+  temperature:
+    value: 95.0
+    unit: CELSIUS
+  duration: 2 minutes
+- step_number: 2
+  action: COOL
+  description: Immediately cool the skim milk to 43 C.
+  temperature:
+    value: 43.0
+    unit: CELSIUS
+- step_number: 3
+  action: MIX
+  description: Add sodium formate to 1 mM final concentration.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M2916

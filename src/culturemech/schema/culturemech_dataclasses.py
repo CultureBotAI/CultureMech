@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-08-27T12:35:42
+# Generation date: 2026-09-14T12:08:25
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -448,6 +448,7 @@ class SolutionRecipe(YAMLRoot):
     mediaingredientmech_chebi_term: Optional[Union[dict, "MediaIngredientMechChebiTerm"]] = None
     culturemech_term: Optional[Union[dict, "CultureMechTerm"]] = None
     category: Optional[Union[str, "CategoryEnum"]] = None
+    solutions: Optional[Union[Union[dict, "SolutionDescriptor"], list[Union[dict, "SolutionDescriptor"]]]] = empty_list()
     ingredients: Optional[Union[Union[dict, "IngredientDescriptor"], list[Union[dict, "IngredientDescriptor"]]]] = empty_list()
     concentration: Optional[Union[dict, "ConcentrationValue"]] = None
     preparation_notes: Optional[str] = None
@@ -492,6 +493,8 @@ class SolutionRecipe(YAMLRoot):
 
         if self.category is not None and not isinstance(self.category, CategoryEnum):
             self.category = CategoryEnum(self.category)
+
+        self._normalize_inlined_as_list(slot_name="solutions", slot_type=SolutionDescriptor, key_name="preferred_term", keyed=False)
 
         self._normalize_inlined_as_list(slot_name="ingredients", slot_type=IngredientDescriptor, key_name="preferred_term", keyed=False)
 
@@ -811,11 +814,13 @@ class SolutionDescriptor(Descriptor):
     preferred_term: str = None
     name: Optional[str] = None
     notes: Optional[str] = None
+    source: Optional[str] = None
     term: Optional[Union[dict, Term]] = None
     mediaingredientmech_term: Optional[Union[dict, "MediaIngredientMechTerm"]] = None
     mediaingredientmech_chebi_term: Optional[Union[dict, "MediaIngredientMechChebiTerm"]] = None
     culturemech_term: Optional[Union[dict, "CultureMechTerm"]] = None
     composition: Optional[Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]]] = empty_list()
+    solutions: Optional[Union[Union[dict, "SolutionDescriptor"], list[Union[dict, "SolutionDescriptor"]]]] = empty_list()
     concentration: Optional[Union[dict, "ConcentrationValue"]] = None
     concentration_candidates: Optional[Union[Union[dict, "ConcentrationCandidate"], list[Union[dict, "ConcentrationCandidate"]]]] = empty_list()
     preparation_notes: Optional[str] = None
@@ -834,6 +839,9 @@ class SolutionDescriptor(Descriptor):
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
 
+        if self.source is not None and not isinstance(self.source, str):
+            self.source = str(self.source)
+
         if self.term is not None and not isinstance(self.term, Term):
             self.term = Term(**as_dict(self.term))
 
@@ -847,6 +855,8 @@ class SolutionDescriptor(Descriptor):
             self.culturemech_term = CultureMechTerm(**as_dict(self.culturemech_term))
 
         self._normalize_inlined_as_list(slot_name="composition", slot_type=IngredientDescriptor, key_name="preferred_term", keyed=False)
+
+        self._normalize_inlined_as_list(slot_name="solutions", slot_type=SolutionDescriptor, key_name="preferred_term", keyed=False)
 
         if self.concentration is not None and not isinstance(self.concentration, ConcentrationValue):
             self.concentration = ConcentrationValue(**as_dict(self.concentration))
@@ -2814,6 +2824,9 @@ class ConcentrationUnitEnum(EnumDefinitionImpl):
     PERCENT_W_V = PermissibleValue(
         text="PERCENT_W_V",
         description="percent weight per volume")
+    PERCENT_W_W = PermissibleValue(
+        text="PERCENT_W_W",
+        description="percent weight per weight")
     PERCENT_V_V = PermissibleValue(
         text="PERCENT_V_V",
         description="percent volume per volume")
@@ -2897,6 +2910,9 @@ class PreparationActionEnum(EnumDefinitionImpl):
     AUTOCLAVE = PermissibleValue(
         text="AUTOCLAVE",
         description="Steam sterilization under pressure")
+    FILTER = PermissibleValue(
+        text="FILTER",
+        description="Remove solids or particles by filtration")
     FILTER_STERILIZE = PermissibleValue(
         text="FILTER_STERILIZE",
         description="Filter through 0.22 μm membrane")
@@ -4159,6 +4175,9 @@ slots.solutionRecipe__category = Slot(uri=CULTUREMECH.category, name="solutionRe
 slots.solutionRecipe__composition = Slot(uri=CULTUREMECH.composition, name="solutionRecipe__composition", curie=CULTUREMECH.curie('composition'),
                    model_uri=CULTUREMECH.solutionRecipe__composition, domain=None, range=Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]])
 
+slots.solutionRecipe__solutions = Slot(uri=CULTUREMECH.solutions, name="solutionRecipe__solutions", curie=CULTUREMECH.curie('solutions'),
+                   model_uri=CULTUREMECH.solutionRecipe__solutions, domain=None, range=Optional[Union[Union[dict, SolutionDescriptor], list[Union[dict, SolutionDescriptor]]]])
+
 slots.solutionRecipe__ingredients = Slot(uri=CULTUREMECH.ingredients, name="solutionRecipe__ingredients", curie=CULTUREMECH.curie('ingredients'),
                    model_uri=CULTUREMECH.solutionRecipe__ingredients, domain=None, range=Optional[Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]]])
 
@@ -4321,6 +4340,9 @@ slots.solutionDescriptor__name = Slot(uri=CULTUREMECH.name, name="solutionDescri
 slots.solutionDescriptor__notes = Slot(uri=CULTUREMECH.notes, name="solutionDescriptor__notes", curie=CULTUREMECH.curie('notes'),
                    model_uri=CULTUREMECH.solutionDescriptor__notes, domain=None, range=Optional[str])
 
+slots.solutionDescriptor__source = Slot(uri=CULTUREMECH.source, name="solutionDescriptor__source", curie=CULTUREMECH.curie('source'),
+                   model_uri=CULTUREMECH.solutionDescriptor__source, domain=None, range=Optional[str])
+
 slots.solutionDescriptor__term = Slot(uri=CULTUREMECH.term, name="solutionDescriptor__term", curie=CULTUREMECH.curie('term'),
                    model_uri=CULTUREMECH.solutionDescriptor__term, domain=None, range=Optional[Union[dict, Term]])
 
@@ -4335,6 +4357,9 @@ slots.solutionDescriptor__culturemech_term = Slot(uri=CULTUREMECH.culturemech_te
 
 slots.solutionDescriptor__composition = Slot(uri=CULTUREMECH.composition, name="solutionDescriptor__composition", curie=CULTUREMECH.curie('composition'),
                    model_uri=CULTUREMECH.solutionDescriptor__composition, domain=None, range=Optional[Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]]])
+
+slots.solutionDescriptor__solutions = Slot(uri=CULTUREMECH.solutions, name="solutionDescriptor__solutions", curie=CULTUREMECH.curie('solutions'),
+                   model_uri=CULTUREMECH.solutionDescriptor__solutions, domain=None, range=Optional[Union[Union[dict, SolutionDescriptor], list[Union[dict, SolutionDescriptor]]]])
 
 slots.solutionDescriptor__concentration = Slot(uri=CULTUREMECH.concentration, name="solutionDescriptor__concentration", curie=CULTUREMECH.curie('concentration'),
                    model_uri=CULTUREMECH.solutionDescriptor__concentration, domain=None, range=Optional[Union[dict, ConcentrationValue]])

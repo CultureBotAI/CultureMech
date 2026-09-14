@@ -18,6 +18,8 @@ ingredients:
   concentration:
     value: '62.0'
     unit: G_PER_L
+  source: JCM Medium 1359
+  notes: JCM Medium 1359 lists 62.0 g/L Na2CO3.
   term:
     id: CHEBI:29377
     label: sodium carbonate
@@ -28,6 +30,8 @@ ingredients:
   concentration:
     value: '46.0'
     unit: G_PER_L
+  source: JCM Medium 1359
+  notes: JCM Medium 1359 lists 46.0 g/L NaHCO3.
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -38,6 +42,8 @@ ingredients:
   concentration:
     value: '18.0'
     unit: G_PER_L
+  source: JCM Medium 1359
+  notes: JCM Medium 1359 lists 18.0 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -48,6 +54,8 @@ ingredients:
   concentration:
     value: '1.0'
     unit: G_PER_L
+  source: JCM Medium 1359
+  notes: JCM Medium 1359 lists 1.0 g/L K2HPO4.
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -58,30 +66,84 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-- preferred_term: 1 M MgSO4solution
+  source: JCM Medium 1359
+  notes: JCM Medium 1359 lists 0.2 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+solutions:
+- preferred_term: 1 M MgSO4 solution
   concentration:
     value: '1.0'
     unit: ML_PER_L
+  source: JCM Medium 1359
+  notes: JCM Medium 1359 adds 1.0 ml/L 1 M MgSO4 solution.
+  composition:
+  - preferred_term: MgSO4
+    concentration:
+      value: '1.0'
+      unit: MOLAR
+    source: JCM Medium 1359
+    notes: JCM Medium 1359 lists 1.0 M MgSO4.
+    term:
+      id: CHEBI:32599
+      label: magnesium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32599
+      label: magnesium sulfate
 - preferred_term: 1 M NH4Cl solution
   concentration:
     value: '4.0'
     unit: ML_PER_L
-- preferred_term: Trace element solution (see Medium No. 1079 )
+  source: JCM Medium 1359
+  notes: JCM Medium 1359 adds 4.0 ml/L 1 M NH4Cl solution.
+  composition:
+  - preferred_term: NH4Cl
+    concentration:
+      value: '1.0'
+      unit: MOLAR
+    source: JCM Medium 1359
+    notes: JCM Medium 1359 lists 1.0 M NH4Cl.
+    term:
+      id: CHEBI:31206
+      label: ammonium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31206
+      label: ammonium chloride
+- preferred_term: Trace element solution (JCM Medium 1079)
   concentration:
     value: '1.0'
     unit: ML_PER_L
-- preferred_term: Se/W solution* (see Medium No. 852 )
+  source: JCM Medium 1359 / JCM Medium 1079
+  notes: JCM Medium 1359 adds 1.0 ml/L Trace element solution.
+- preferred_term: Se/W solution (JCM Medium 852)
   concentration:
     value: '1.0'
     unit: ML_PER_L
-- preferred_term: Trace vitamins* (see Medium No. 197 )
+  source: JCM Medium 1359 / JCM Medium 852
+  notes: JCM Medium 1359 adds 1.0 ml/L Se/W solution.
+- preferred_term: Trace vitamins (JCM Medium 197)
   concentration:
     value: '1.0'
     unit: ML_PER_L
+  source: JCM Medium 1359 / JCM Medium 197
+  notes: JCM Medium 1359 adds 1.0 ml/L filter-sterilized Trace vitamins.
 - preferred_term: 10% Casein peptone solution
   concentration:
     value: '10.0'
     unit: ML_PER_L
+  source: JCM Medium 1359
+  notes: JCM Medium 1359 adds 10.0 ml/L filter-sterilized 10% Casein peptone solution.
+  composition:
+  - preferred_term: Casein peptone
+    concentration:
+      value: '100.0'
+      unit: G_PER_L
+    source: JCM Medium 1359
+    notes: JCM Medium 1359 lists 100.0 g/L Casein peptone.
+    term:
+      id: FOODON:03315719
+      label: Casein peptone
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -108,3 +170,15 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_jcm_score10_stock_solutions.py
+  action: RESOLVED_JCM_SCORE10_STOCK_SOLUTIONS
+  changes: Moved flat JCM stock additions into solutions
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1359
+  notes: Moved JCM Medium 1359 MgSO4, NH4Cl, and casein peptone stocks into solutions
+    and grounded the direct yeast extract row.
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1359
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1079
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197

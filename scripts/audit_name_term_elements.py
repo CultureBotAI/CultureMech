@@ -54,28 +54,113 @@ DEFAULT_OUT = REPO / "data" / "import_tracking" / "reports" / "name_term_element
 # another. Anions (sulfate, chloride, nitrate) are shared across unrelated compounds and
 # are exactly what made word-overlap useless here.
 ELEMENT_WORDS = {
-    "sodium": "Na", "potassium": "K", "magnesium": "Mg", "calcium": "Ca",
-    "iron": "Fe", "ferric": "Fe", "ferrous": "Fe", "zinc": "Zn", "copper": "Cu",
-    "cupric": "Cu", "cuprous": "Cu", "manganese": "Mn", "manganous": "Mn",
-    "cobalt": "Co", "cobaltous": "Co", "nickel": "Ni", "molybdenum": "Mo",
-    "molybdate": "Mo", "tungsten": "W", "tungstate": "W", "selenium": "Se",
-    "selenite": "Se", "selenate": "Se", "aluminium": "Al", "aluminum": "Al",
-    "lithium": "Li", "barium": "Ba", "strontium": "Sr", "silver": "Ag",
-    "boron": "B", "borate": "B", "boric": "B", "vanadium": "V", "vanadyl": "V",
-    "titanium": "Ti", "chromium": "Cr", "cadmium": "Cd", "mercury": "Hg",
-    "lead": "Pb", "tin": "Sn", "arsenic": "As", "arsenate": "As", "arsenite": "As",
-    "tellurium": "Te", "tellurite": "Te", "bismuth": "Bi", "caesium": "Cs",
-    "cesium": "Cs", "rubidium": "Rb", "ammonium": "N", "phosphate": "P",
-    "phosphorus": "P", "sulfide": "S", "sulphide": "S", "sulfate": "S",
-    "sulphate": "S", "thiosulfate": "S", "chloride": "Cl", "fluoride": "F",
-    "bromide": "Br", "iodide": "I", "iodate": "I",
+    "sodium": "Na",
+    "potassium": "K",
+    "magnesium": "Mg",
+    "calcium": "Ca",
+    "iron": "Fe",
+    "ferric": "Fe",
+    "ferrous": "Fe",
+    "zinc": "Zn",
+    "copper": "Cu",
+    "cupric": "Cu",
+    "cuprous": "Cu",
+    "manganese": "Mn",
+    "manganous": "Mn",
+    "cobalt": "Co",
+    "cobaltous": "Co",
+    "nickel": "Ni",
+    "molybdenum": "Mo",
+    "molybdate": "Mo",
+    "tungsten": "W",
+    "tungstate": "W",
+    "selenium": "Se",
+    "selenite": "Se",
+    "selenate": "Se",
+    "aluminium": "Al",
+    "aluminum": "Al",
+    "lithium": "Li",
+    "barium": "Ba",
+    "strontium": "Sr",
+    "silver": "Ag",
+    "boron": "B",
+    "borate": "B",
+    "boric": "B",
+    "vanadium": "V",
+    "vanadyl": "V",
+    "titanium": "Ti",
+    "chromium": "Cr",
+    "cadmium": "Cd",
+    "mercury": "Hg",
+    "lead": "Pb",
+    "tin": "Sn",
+    "arsenic": "As",
+    "arsenate": "As",
+    "arsenite": "As",
+    "tellurium": "Te",
+    "tellurite": "Te",
+    "bismuth": "Bi",
+    "caesium": "Cs",
+    "cesium": "Cs",
+    "rubidium": "Rb",
+    "ammonium": "N",
+    "phosphate": "P",
+    "phosphorus": "P",
+    "sulfide": "S",
+    "sulphide": "S",
+    "sulfate": "S",
+    "sulphate": "S",
+    "thiosulfate": "S",
+    "chloride": "Cl",
+    "fluoride": "F",
+    "bromide": "Br",
+    "iodide": "I",
+    "iodate": "I",
 }
 
 # Symbols we trust when parsed out of a formula-looking name. Two-letter first so `Na`
 # is not read as N + a.
-SYMBOLS = ["Na", "Mg", "Al", "Si", "Cl", "Ca", "Ti", "Cr", "Mn", "Fe", "Co", "Ni",
-           "Cu", "Zn", "As", "Se", "Br", "Rb", "Sr", "Mo", "Ag", "Cd", "Sn", "Te",
-           "Ba", "Cs", "Hg", "Pb", "Bi", "Li", "Be", "K", "V", "W", "B", "F", "I", "P", "S"]
+SYMBOLS = [
+    "Na",
+    "Mg",
+    "Al",
+    "Si",
+    "Cl",
+    "Ca",
+    "Ti",
+    "Cr",
+    "Mn",
+    "Fe",
+    "Co",
+    "Ni",
+    "Cu",
+    "Zn",
+    "As",
+    "Se",
+    "Br",
+    "Rb",
+    "Sr",
+    "Mo",
+    "Ag",
+    "Cd",
+    "Sn",
+    "Te",
+    "Ba",
+    "Cs",
+    "Hg",
+    "Pb",
+    "Bi",
+    "Li",
+    "Be",
+    "K",
+    "V",
+    "W",
+    "B",
+    "F",
+    "I",
+    "P",
+    "S",
+]
 
 # Elements that carry no signal: they are in almost every organic and in water.
 UNINFORMATIVE = {"C", "H", "O", "N"}
@@ -88,7 +173,11 @@ FORMULAISH = re.compile(r"^[A-Za-z0-9()\[\]·.\s×x*+,'\-/%]+$")
 # `Fe(III) citrate` read (III) as iodine, `Vitamin B12` read B as boron, `PABA` read P
 # as phosphorus. A detector whose output is mostly noise does not get read.
 ROMAN = re.compile(r"\(\s*[IVX]+\s*\)")
-VITAMIN = re.compile(r"(vitamin\s*[A-K]\s*\d*|^\s*[B-K]\d{1,2}\s*$)", re.I)  # incl. bare "B12"
+VITAMIN = re.compile(
+    r"(vitamin\s*[A-K]\s*\d*|\([A-K]\d{1,2}\)|^\s*[B-K]\d{1,2}\s*$)",
+    re.I,
+)  # incl. bare "B12" and aliases like "Biotin (B8)"
+LETTERED_ANTIBIOTIC = re.compile(r"\b(?:amphotericin|hygromycin|polymyxin)\s+B\b", re.I)
 
 
 def elements_from_formula(text: str) -> set[str]:
@@ -101,29 +190,29 @@ def elements_from_formula(text: str) -> set[str]:
     raw = str(text or "")
     if not re.search(r"\d", raw):
         return set()
-    s = ROMAN.sub(" ", raw)                                        # (II) is not iodine
-    s = re.sub(r"\b\d+\s*H2O\b", "", s, flags=re.I)                 # drop waters
+    s = ROMAN.sub(" ", raw)  # (II) is not iodine
+    s = LETTERED_ANTIBIOTIC.sub(" ", s)  # B is not boron
+    s = re.sub(r"\b\d+\s*H2O\b", "", s, flags=re.I)  # drop waters
     s = re.sub(r"[·.]\s*\d*\s*H2O", "", s, flags=re.I)
     found = set()
     rest = s
     for sym in SYMBOLS:
         # A symbol counts only when the next character is not a lower-case letter, so
         # `Se` in `Selenite` is not read as the element inside a word.
-        for m in re.finditer(rf"(?<![A-Za-z]){sym}(?![a-z])", rest):
+        if re.search(rf"(?<![A-Za-z]){sym}(?![a-z])", rest):
             found.add(sym)
     return found
 
 
 def elements_from_words(text: str) -> set[str]:
     lowered = str(text or "").lower()
-    return {sym for word, sym in ELEMENT_WORDS.items()
-            if re.search(rf"\b{word}\b", lowered)}
+    return {sym for word, sym in ELEMENT_WORDS.items() if re.search(rf"\b{word}\b", lowered)}
 
 
 def name_elements(name: str) -> set[str]:
     """Elements the ingredient name unambiguously demands."""
     if VITAMIN.search(str(name or "")):
-        return set()               # `Vitamin B12` / `K1` are designations, not formulae
+        return set()  # `Vitamin B12` / `K1` are designations, not formulae
     words = elements_from_words(ROMAN.sub(" ", str(name or "")))
     formula = elements_from_formula(name) if FORMULAISH.match(str(name or "")) else set()
     return (words | formula) - UNINFORMATIVE
@@ -148,7 +237,7 @@ def formula_elements(formula: str) -> set[str]:
         if not ch.isalpha():
             i += 1
             continue
-        two = text[i:i + 2]
+        two = text[i : i + 2]
         if len(two) == 2 and two[1].islower() and two.capitalize() in ALL_SYMBOLS:
             found.add(two.capitalize())
             i += 2
@@ -160,8 +249,9 @@ def formula_elements(formula: str) -> set[str]:
 
 
 def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description=__doc__,
-                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     ap.add_argument("--yaml-dir", type=Path, default=NORMALIZED)
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
     args = ap.parse_args(argv)
@@ -175,7 +265,8 @@ def main(argv: list[str] | None = None) -> int:
         if not isinstance(doc, dict):
             continue
         groups = [doc.get("ingredients"), doc.get("composition")] + [
-            s.get("composition") for s in (doc.get("solutions") or []) if isinstance(s, dict)]
+            s.get("composition") for s in (doc.get("solutions") or []) if isinstance(s, dict)
+        ]
         for items in groups:
             for ing in items or []:
                 if not isinstance(ing, dict):
@@ -186,6 +277,7 @@ def main(argv: list[str] | None = None) -> int:
                     seen[(str(ing.get("preferred_term") or ""), tid)] += 1
 
     from oaklib import get_adapter
+
     adapter = get_adapter("sqlite:obo:chebi")
     formulas: dict[str, str] = {}
 
@@ -195,7 +287,7 @@ def main(argv: list[str] | None = None) -> int:
                 meta = adapter.entity_metadata_map(term_id) or {}
                 vals = meta.get("chemrof:generalized_empirical_formula") or [""]
                 formulas[term_id] = vals[0] if vals else ""
-            except Exception:                                        # noqa: BLE001
+            except Exception:  # noqa: BLE001
                 formulas[term_id] = ""
         return formulas[term_id]
 
@@ -210,27 +302,39 @@ def main(argv: list[str] | None = None) -> int:
         have = formula_elements(formula)
         missing = want - have
         if missing:
-            rows.append({"ingredient": name, "term_id": tid,
-                         "term_label": adapter.label(tid) or "",
-                         "term_formula": formula,
-                         "name_demands": " ".join(sorted(want)),
-                         "term_lacks": " ".join(sorted(missing)),
-                         "rows": count})
+            rows.append(
+                {
+                    "ingredient": name,
+                    "term_id": tid,
+                    "term_label": adapter.label(tid) or "",
+                    "term_formula": formula,
+                    "name_demands": " ".join(sorted(want)),
+                    "term_lacks": " ".join(sorted(missing)),
+                    "rows": count,
+                }
+            )
     rows.sort(key=lambda r: -r["rows"])
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with args.out.open("w", newline="", encoding="utf-8") as fh:
-        w = csv.DictWriter(fh, delimiter="\t", fieldnames=list(rows[0]) if rows else
-                           ["ingredient", "term_id", "term_lacks"])
+        w = csv.DictWriter(
+            fh,
+            delimiter="\t",
+            fieldnames=list(rows[0]) if rows else ["ingredient", "term_id", "term_lacks"],
+        )
         w.writeheader()
         w.writerows(rows)
 
     print(f"(name, CHEBI id) pairs checked: {len(seen)}")
-    print(f"pairs where the term's formula LACKS an element the name demands: {len(rows)} "
-          f"({sum(r['rows'] for r in rows)} ingredient rows)\n")
+    print(
+        f"pairs where the term's formula LACKS an element the name demands: {len(rows)} "
+        f"({sum(r['rows'] for r in rows)} ingredient rows)\n"
+    )
     for r in rows[:25]:
-        print(f"  {r['rows']:5d}x  {r['ingredient'][:28]:30s} -> {r['term_id']:14s} "
-              f"{r['term_label'][:26]:28s} lacks {r['term_lacks']}")
+        print(
+            f"  {r['rows']:5d}x  {r['ingredient'][:28]:30s} -> {r['term_id']:14s} "
+            f"{r['term_label'][:26]:28s} lacks {r['term_lacks']}"
+        )
     try:
         shown = args.out.relative_to(REPO)
     except ValueError:

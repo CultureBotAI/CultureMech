@@ -18,14 +18,23 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  term:
+    id: MICRO:0000182
+    label: Tryptone
 - preferred_term: Peptone
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: MICRO:0000178
+    label: Peptone
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -50,6 +59,9 @@ ingredients:
   concentration:
     value: '250'
     unit: G_PER_L
+  term:
+    id: FOODON:03301454
+    label: Tomato juice
 applications:
 - Microbial cultivation
 curation_history:
@@ -79,6 +91,12 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_score10_exact_terms_batch2.py
+  action: GROUNDED_KOMODO_SCORE10_EXACT_TERMS_BATCH2
+  changes: Grounded exact KOMODO score-10 ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Peptone, Tomato juice, Tryptone, Yeast extract.
 parent_media:
   path: data/normalized_yaml/bacterial/kunkee_medium.yaml
   relationship: SOURCE_DUPLICATE

@@ -3,6 +3,9 @@ name: BG11
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: BG11
 ingredients:
 - preferred_term: Sodium nitrate
   concentration:
@@ -189,8 +192,16 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 3 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_culturebotht_bg11_score15.py
+  action: MARKED_CULTUREBOTHT_BG11_SCORE15
+  changes: Marked exact CultureBotHT BG11-family formula as curated
+  source: CultureBotHT:BG11; https://github.com/CultureBotAI/CultureBotHT
+  notes: CultureBotHT imports BG11 as a BG11-family formula.
 data_quality_flags:
+- has_ontology_mappings
 - has_unmapped_ingredients
+- ingredients_curated
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Nostoc linckia
@@ -259,3 +270,6 @@ target_organisms:
       explanation: Literature evidence reports cell concentrations for the BG-11 plus
         CO2 condition relative to YM medium.
     is_max_attainment: false
+references:
+- reference: CultureBotHT:BG11
+- reference: https://github.com/CultureBotAI/CultureBotHT

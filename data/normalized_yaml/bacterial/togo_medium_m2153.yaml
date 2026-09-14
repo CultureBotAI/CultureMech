@@ -8,40 +8,62 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Yeast extract
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: NBRC Medium 1508
+  notes: NBRC Medium 1508 lists 2.0 g yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Malt extract
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: NBRC Medium 1508
+  notes: NBRC Medium 1508 lists 2.0 g malt extract.
+  term:
+    id: FOODON:03301056
+    label: malt extract
+- preferred_term: D-(+)-Glucose anhydrous
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: NBRC Medium 1508
+  notes: NBRC Medium 1508 lists 2.0 g D-(+)-glucose anhydrous.
+  term:
+    id: CHEBI:17234
+    label: glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: glucose
 - preferred_term: Seawater
   concentration:
     value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source, Solvating media; Properties: Undefined component'
-- preferred_term: D-(+)-Glucose anhydrous
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+    unit: L
+  source: NBRC Medium 1508
+  notes: NBRC Medium 1508 lists 1 L seawater.
+  term:
+    id: ENVO:00002149
+    label: sea water
 - preferred_term: Agar powder
   concentration:
     value: '14'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Malt extract
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: NBRC Medium 1508
+  notes: NBRC Medium 1508 lists 14 g agar powder.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M2153
   term:
     id: TOGO:M2153
     label: TOGO Medium M2153
-notes: 'Source: https://togomedium.org/medium/M2153
-
-  Original source: NBRC - NBRC_M1508
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1508'
+notes: TOGO M2153 cites NBRC Medium 1508; NBRC Medium 1508 lists yeast extract, malt
+  extract, D-(+)-glucose anhydrous, seawater, agar powder, and pH 7.0-7.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,3 +80,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M2153" to "togo_medium_m2153" for consistent
     matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_exact_score25.py
+  action: RESOLVED_TOGO_EXACT_SCORE25_GRAPH
+  changes: Resolved score-25 TOGO exact recipe graph
+  source: https://togomedium.org/medium/M2153; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1508
+  notes: TOGO M2153 cites NBRC Medium 1508; NBRC Medium 1508 lists yeast extract,
+    malt extract, D-(+)-glucose anhydrous, seawater, agar powder, and pH 7.0-7.2.
+ph_range:
+  min: 7.0
+  max: 7.2
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve yeast extract, malt extract, glucose, and agar powder in 1
+    L seawater.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.0-7.2.
+references:
+- reference: https://togomedium.org/medium/M2153
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1508
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings

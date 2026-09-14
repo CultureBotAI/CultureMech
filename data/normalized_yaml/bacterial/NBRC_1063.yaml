@@ -1,55 +1,107 @@
 id: CultureMech:007453
-name: '1063'
-original_name: '1063'
+name: Pae I Medium + 0.1% (w/v) Urea
+original_name: Pae I Medium + 0.1% (w/v) Urea
 category: bacterial
 description: 1063. NBRC 1062.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: NBRC Medium 1062
+  term:
+    id: nbrc.medium:1062
+    label: NBRC Medium 1062
+ph_value: 8.5
 ingredients:
 - preferred_term: Tryptone
   concentration:
     value: '5'
     unit: G_PER_L
+  source: NBRC Medium 1062
+  notes: NBRC Medium 1062 lists 5 g tryptone.
+  term:
+    id: MICRO:0000182
+    label: tryptone
 - preferred_term: Yeast extract
   concentration:
     value: '3'
     unit: G_PER_L
+  source: NBRC Medium 1062
+  notes: NBRC Medium 1062 lists 3 g yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: NaCl
   concentration:
     value: '10'
     unit: G_PER_L
+  source: NBRC Medium 1062
+  notes: NBRC Medium 1062 lists 10 g NaCl.
   term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
 - preferred_term: Urea
   concentration:
     value: '1'
     unit: G_PER_L
+  source: NBRC Medium 1062
+  notes: NBRC Medium 1062 lists 1 g urea.
   term:
+    id: CHEBI:16199
+    label: urea
+  mediaingredientmech_chebi_term:
     id: CHEBI:16199
     label: urea
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: L
+  source: NBRC Medium 1062
+  notes: NBRC Medium 1062 lists 1 L distilled water.
   term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
     unit: G_PER_L
+  source: NBRC Medium 1062
+  notes: NBRC Medium 1062 lists 15 g agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Tris-HCl buffer
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: NBRC Medium 1062
+  notes: NBRC Medium 1062 adjusts the medium to pH 8.5 with 50 mM Tris-HCl buffer.
+  term:
+    id: CHEBI:9754
+    label: tris
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
+    label: tris
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  description: Dissolve tryptone, yeast extract, NaCl, urea, and agar if needed in
+    1 L distilled water.
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH if needed
+  description: Adjust pH to 8.5 with 50 mM Tris-HCl buffer.
 - step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: AUTOCLAVE
+  description: Sterilize by autoclaving.
 curation_history:
 - timestamp: '2026-02-20T00:22:36.015984Z'
   curator: nbrc-import
@@ -84,4 +136,22 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 3 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
-notes: Adjust pH to 8.5 with 50 mM Tris-HCl buffer.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_nbrc_1063_score15.py
+  action: RESOLVED_NBRC_1063_SCORE15
+  changes: Curated NBRC Medium 1062 identity, pH, buffer, and reference
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1062
+  notes: Added the NBRC Medium 1062 source term and official title, grounded tryptone,
+    yeast extract, agar, and Tris-HCl buffer, and recorded pH 8.5.
+notes: 'Source: NBRC Medium 1062 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1062
+
+
+  NBRC lists Pae I Medium with 0.1% (w/v) urea, tryptone, yeast extract, NaCl, optional
+  agar, and adjustment to pH 8.5 with 50 mM Tris-HCl buffer.'
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1062

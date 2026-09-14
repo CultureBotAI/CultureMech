@@ -293,5 +293,177 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/mols4_no_ammonium.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/mols4_no_ammonium_no_mo.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/mols4_no_ammonium_no_mo_no_w.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/mols4_no_ammonium_no_w.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/mols4_no_b12.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/mols4_no_biotin.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/mols4_no_choline_chloride.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/mols4_no_folic_acid.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/mols4_no_lipoic_acid.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/mols4_no_mo.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/mols4_no_mo_no_w.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/mols4_no_nicotinic_acid.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/mols4_no_pantothenic_acid.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/mols4_no_pyridoxine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/mols4_no_sulfide.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/mols4_no_thiamine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/mols4_no_w.yaml.
 data_quality_flags:
 - has_unmapped_ingredients
+variant_children:
+- path: data/normalized_yaml/specialized/mols4_no_ammonium.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015609
+  name: MoLS4 no ammonium
+  notes: Omits Ammonium chloride from MoLS4.
+- path: data/normalized_yaml/specialized/mols4_no_ammonium_no_mo.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015610
+  name: MoLS4 no ammonium no Mo
+  notes: Omits Ammonium chloride and Sodium molybdate from MoLS4.
+- path: data/normalized_yaml/specialized/mols4_no_ammonium_no_mo_no_w.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015611
+  name: MoLS4 no ammonium no Mo no W
+  notes: Omits Ammonium chloride, Sodium molybdate, and Sodium tungstate dihydrate
+    from MoLS4.
+- path: data/normalized_yaml/specialized/mols4_no_ammonium_no_w.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015612
+  name: MoLS4 no ammonium no W
+  notes: Omits Ammonium chloride and Sodium tungstate dihydrate from MoLS4.
+- path: data/normalized_yaml/specialized/mols4_no_b12.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015614
+  name: MoLS4 no B12
+  notes: Omits Cyanocobalamin from MoLS4.
+- path: data/normalized_yaml/specialized/mols4_no_biotin.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015615
+  name: MoLS4 no Biotin
+  notes: Omits biotin from MoLS4.
+- path: data/normalized_yaml/specialized/mols4_no_choline_chloride.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015616
+  name: MoLS4 no Choline chloride
+  notes: Omits Choline chloride from MoLS4.
+- path: data/normalized_yaml/specialized/mols4_no_folic_acid.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015617
+  name: MoLS4 no Folic acid
+  notes: Omits Folic Acid from MoLS4.
+- path: data/normalized_yaml/specialized/mols4_no_lipoic_acid.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015619
+  name: MoLS4 no lipoic acid
+  notes: Omits Lipoic acid from MoLS4.
+- path: data/normalized_yaml/specialized/mols4_no_mo.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015620
+  name: MoLS4 no Mo
+  notes: Omits Sodium molybdate from MoLS4.
+- path: data/normalized_yaml/specialized/mols4_no_mo_no_w.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015621
+  name: MoLS4 no Mo no W
+  notes: Omits Sodium molybdate and Sodium tungstate dihydrate from MoLS4.
+- path: data/normalized_yaml/specialized/mols4_no_nicotinic_acid.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015622
+  name: MoLS4 no nicotinic acid
+  notes: Omits Nicotinic Acid from MoLS4.
+- path: data/normalized_yaml/specialized/mols4_no_pantothenic_acid.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015623
+  name: MoLS4 no Pantothenic acid
+  notes: Omits calcium pantothenate from MoLS4.
+- path: data/normalized_yaml/specialized/mols4_no_pyridoxine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015624
+  name: MoLS4 no Pyridoxine
+  notes: Omits pyridoxine HCl from MoLS4.
+- path: data/normalized_yaml/specialized/mols4_no_sulfide.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015625
+  name: MoLS4 no sulfide
+  notes: Omits Sodium sulfide nonahydrate from MoLS4.
+- path: data/normalized_yaml/specialized/mols4_no_thiamine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015626
+  name: MoLS4 no thiamine
+  notes: Omits thiamine HCl from MoLS4.
+- path: data/normalized_yaml/specialized/mols4_no_w.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015628
+  name: MoLS4 no W
+  notes: Omits Sodium tungstate dihydrate from MoLS4.

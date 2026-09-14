@@ -6,49 +6,57 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '950'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Horse blood
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
 - preferred_term: Heart infusion broth (BD-Difco)
   concentration:
-    value: '25'
+    value: '25.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  source: JCM Medium 1099
+  notes: JCM Medium 1099 lists 25.0 g/L Heart infusion broth from BD-Difco; this commercial
+    base is retained as an opaque component.
+- preferred_term: Horse blood
+  concentration:
+    value: '50.0'
+    unit: ML_PER_L
+  source: JCM Medium 1099
+  notes: JCM Medium 1099 lists 50.0 ml/L Horse blood and instructs aseptic addition
+    of sterile defibrinated horse blood as the final 5% supplement.
+  term:
+    id: UBERON:0000178
+    label: blood
+- preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: JCM Medium 1099
+  notes: JCM Medium 1099 lists 15.0 g/L Agar.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '950.0'
+    unit: ML_PER_L
+  source: JCM Medium 1099
+  notes: JCM Medium 1099 lists 950.0 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M1172
   term:
     id: TOGO:M1172
     label: Heart Infusion Agar With 5% Horse Blood
-notes: 'Source: https://togomedium.org/medium/M1172
-
-  Original source: JCM - JCM_M1099
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1099'
+notes: TOGO M1172 imports JCM_M1099. JCM Medium 1099 lists Heart Infusion Agar with
+  5% horse blood per liter as 25.0 g Heart infusion broth (BD-Difco), 50.0 ml Horse
+  blood, 15.0 g Agar, and 950.0 ml Distilled water. The source uses JCM's default
+  autoclaving at 121 C for 15 min and aseptically adds sterile defibrinated horse
+  blood after the base cools to about 50 C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -79,3 +87,55 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_jcm_1099_heart_infusion_horse_score15.py
+  action: RESOLVED_JCM_1099_HEART_INFUSION_HORSE_SCORE15
+  source: https://togomedium.org/medium/M1172; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1172;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1099
+  notes: TOGO M1172 imports JCM_M1099. JCM Medium 1099 lists Heart Infusion Agar with
+    5% horse blood per liter as 25.0 g Heart infusion broth (BD-Difco), 50.0 ml Horse
+    blood, 15.0 g Agar, and 950.0 ml Distilled water. The source uses JCM's default
+    autoclaving at 121 C for 15 min and aseptically adds sterile defibrinated horse
+    blood after the base cools to about 50 C. Corrected the imported ml/L unit artifacts,
+    grounded water, agar, and horse blood, and kept Heart infusion broth (BD-Difco)
+    intentionally unmapped as a source-disclosed commercial base.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix 25.0 g Heart infusion broth (BD-Difco) and 15.0 g Agar with 950.0
+    ml Distilled water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the base at 121 C for 15 min and cool to about 50 C.
+- step_number: 3
+  action: MIX
+  description: Aseptically add 50.0 ml sterile defibrinated horse blood.
+- step_number: 4
+  action: POUR_PLATES
+  description: Mix and quickly dispense into sterile petri dishes.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: JCM states to sterilize media by autoclaving at 121 C for 15 min unless otherwise
+    stated; in Medium 1099, the horse blood is added aseptically after the autoclaved
+    base cools.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M1172
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1172
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1099
+parent_media:
+  path: data/normalized_yaml/bacterial/heart_infusion_agar_with_5_horse_blood.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002278
+  name: heart_infusion_agar_with_5_horse_blood
+  notes: JCM Medium 1099 authoritative formulation.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- TOGO source-catalogue duplicate of JCM Medium 1099.

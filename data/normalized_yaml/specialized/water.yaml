@@ -2,6 +2,8 @@ id: CultureMech:015786
 name: Water
 medium_type: NEGATIVE_CONTROL
 physical_state: LIQUID
+media_term:
+  preferred_term: Water
 description: Sterile water negative control - no growth expected, used for contamination
   detection
 ingredients:
@@ -12,7 +14,7 @@ ingredients:
   term:
     id: CHEBI:15377
     label: water
-notes: Negative control medium
+notes: CultureBotHT imports sterile water as a negative-control medium.
 category: specialized
 sources:
 - database: CultureBotHT
@@ -31,4 +33,15 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
-data_quality_flags: []
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_exact_score30.py
+  action: MARKED_CULTUREBOTHT_EXACT_SCORE30
+  changes: Marked exact sparse CultureBotHT formula as curated
+  source: CultureBotHT:Water; https://github.com/CultureBotAI/CultureBotHT
+  notes: CultureBotHT imports sterile water as a negative-control medium.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: CultureBotHT:Water
+- reference: https://github.com/CultureBotAI/CultureBotHT

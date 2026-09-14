@@ -118,13 +118,23 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-ph_value: 6.0
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_35_thiobacillus_topology_score10.py
+  action: RESOLVED_KOMODO_35_THIOBACILLUS_TOPOLOGY
+  changes: Linked under THIOBACILLUS THIOOXIDANS MEDIUM
+  source: KOMODO Medium 35a.1
+  notes: KOMODO Medium 35a.1 preserves THIOBACILLUS THIOOXIDANS MEDIUM components
+    and concentrations but records pH 6 for DSM 22701.
 parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_612.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005064
-  name: for_dsm_612
-variant_relationship: SOURCE_DUPLICATE
+  path: data/normalized_yaml/bacterial/thiobacillus_thiooxidans_medium.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:005079
+  name: thiobacillus_thiooxidans_medium
+  notes: KOMODO Medium 35 is the pH 4.2 THIOBACILLUS THIOOXIDANS MEDIUM base.
+variant_relationship: PH_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 35a.1 preserves THIOBACILLUS THIOOXIDANS MEDIUM components and concentrations
+  but records pH 6 for DSM 22701.
+ph_value: 6.0
+data_quality_flags:
+- ingredients_curated

@@ -6,60 +6,73 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: Glucose
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
+  source: TOGO M2107 / NBRC Medium 1430
+  notes: NBRC Medium 1430 lists 10 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
-- preferred_term: Agar (if needed)
+- preferred_term: Yeast extract
   concentration:
-    value: '20'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M2107 / NBRC Medium 1430
+  notes: NBRC Medium 1430 lists 1.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Meat Extract
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2107 / NBRC Medium 1430
+  notes: NBRC Medium 1430 lists 1 g/L Meat Extract; this complex digest is retained
+    as an opaque component.
 - preferred_term: Casitone
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2107 / NBRC Medium 1430
+  notes: NBRC Medium 1430 lists 2 g/L Casitone; this casein digest is retained as
+    an opaque complex component.
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: TOGO M2107 / NBRC Medium 1430
+  notes: NBRC Medium 1430 lists 1 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '20.0'
+    unit: G_PER_L
+  source: TOGO M2107 / NBRC Medium 1430
+  notes: NBRC Medium 1430 lists 20.0 g/L Agar (if needed).
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M2107
   term:
     id: TOGO:M2107
     label: BTT medium
-notes: 'Source: https://togomedium.org/medium/M2107
-
-  Original source: NBRC - NBRC_M1430
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1430'
+notes: TOGO M2107 imports NBRC Medium 1430 as BTT medium. NBRC 1430 lists 10 g glucose,
+  1 g yeast extract, 1 g Meat Extract, 2 g Casitone, 1 L distilled water, optional
+  20 g agar, and pH 5.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -89,3 +102,23 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2107_score15.py
+  action: RESOLVED_TOGO_M2107_SCORE15
+  source: https://togomedium.org/medium/M2107; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1430
+  notes: TOGO M2107 imports NBRC Medium 1430 as BTT medium. NBRC 1430 lists 10 g glucose,
+    1 g yeast extract, 1 g Meat Extract, 2 g Casitone, 1 L distilled water, optional
+    20 g agar, and pH 5.5. Corrected the imported water g/L artifact, added the NBRC
+    pH, and marked the NBRC formula as curated.
+ph_value: 5.5
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 5.5.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2107
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1430

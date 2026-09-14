@@ -8,19 +8,18 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Columbia Agar with 5% Sheep Blood (BD-BBL)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2062
+  notes: TOGO M2062 lists one liter of a ready-to-use Columbia Agar with 5% Sheep
+    Blood product from BD-BBL.
 media_term:
   preferred_term: TOGO Medium M2062
   term:
     id: TOGO:M2062
     label: Columbia agar with sheep blood
-notes: 'Source: https://togomedium.org/medium/M2062
-
-  Original source: NBRC - NBRC_M1365
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1365'
+notes: TOGO M2062 records a ready-to-use Columbia Agar with 5% Sheep Blood product
+  from BD-BBL.
 applications:
 - Microbial cultivation
 curation_history:
@@ -37,3 +36,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Columbia agar with sheep blood" to "columbia_agar_with_sheep_blood"
     for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_products_more_score40.py
+  action: RESOLVED_TOGO_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO product graph
+  source: https://togomedium.org/medium/M2062; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1365
+  notes: TOGO M2062 records a ready-to-use Columbia Agar with 5% Sheep Blood product
+    from BD-BBL.
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2062
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1365
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M2772_Serpulina_Murdochii_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009320
+  name: serpulina_murdochii_medium
+  notes: TOGO M2772 names Columbia Agar Plates with 5% sheep blood, BBL 4354005, matching
+    the BD-BBL Columbia Agar with 5% Sheep Blood product.

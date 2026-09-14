@@ -1,15 +1,17 @@
 id: CultureMech:000138
 name: s_w
 category: algae
+sources:
+- database: CCAP
+  database_id: SW
+  url: https://www.ccap.ac.uk/wp-content/uploads/MR_SW.pdf
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: BIPHASIC
 description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
   algae cultivation. Recipe available in PDF format.
-notes: 'Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_SW.pdf
-
-  Composition verified against https://www.ccap.ac.uk/wp-content/uploads/MR_SW.pdf
-  on 2026-08-25.'
+notes: CCAP prepares S/W as a biphasic soil/water medium with a 1 cm layer of air-dried
+  sieved calcareous soil and 7-10 cm deionized water.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -55,6 +57,20 @@ curation_history:
   changes: ingredients 0 -> 2; solutions 0 -> 0
   notes: Rebuilt sw from the reviewed CCAP PDF. Preserved stock boundaries and per-vessel
     quantities; ingredient identities follow the MediaIngredientMech SSSOM.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_algae_score45_blends_soils.py
+  action: RESOLVED_SCORE45_ALGAE_GRAPH
+  changes: Resolved score-45 algae recipe graph
+  source: https://www.ccap.ac.uk/wp-content/uploads/MR_SW.pdf
+  notes: CCAP prepares S/W as a biphasic soil/water medium with a 1 cm layer of air-dried
+    sieved calcareous soil and 7-10 cm deionized water.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_ccap_sources_score10.py
+  action: NORMALIZED_CCAP_SOURCE_SCORE10
+  changes: Normalized CCAP provenance
+  source: CCAP:SW; https://www.ccap.ac.uk/wp-content/uploads/MR_SW.pdf
+  notes: Copied the CCAP source identity from references and the original ccap-import
+    event into the structured sources slot recognized by review scoring.
 references:
 - reference: CCAP:SW
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_SW.pdf
@@ -63,28 +79,43 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  notes: Add a layer approximately 1 cm deep to each vessel.
+  term:
+    id: ENVO:00001998
+    label: soil
+  notes: CCAP adds a 1 cm layer of air-dried, sieved calcareous soil.
 - preferred_term: Deionized water
   concentration:
-    value: variable
+    value: 7-10 cm above the soil layer
     unit: VARIABLE
-  notes: Add carefully to a depth of 7-10 cm above the soil layer.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: CCAP adds deionized water to a depth of 7-10 cm above the soil.
+solutions: []
 original_name: S/W
 preparation_steps:
 - step_number: 1
   action: ALIQUOT
-  description: Place a 1 cm layer of air-dried, sieved calcareous soil in each vessel.
+  description: Place a 1 cm layer of air-dried, sieved calcareous soil in the vessel.
 - step_number: 2
   action: MIX
-  description: Optionally add one grain for organisms that benefit from it.
+  description: Optionally add a grain for organisms that benefit from it.
 - step_number: 3
   action: ALIQUOT
-  description: Add deionized water carefully to a depth of 7-10 cm, then plug or cover.
+  description: Carefully add deionized water to a depth of 7-10 cm above the soil.
 - step_number: 4
   action: AUTOCLAVE
   description: Autoclave at 15 psi for 15 minutes on each of two consecutive days.
 - step_number: 5
   action: STORE
-  description: Let stand for at least one further day before inoculation.
+  description: Allow to stand for at least one further day before inoculation.
 sterilization:
   method: AUTOCLAVE
+  pressure: 15
+  duration: 15 minutes on each of two consecutive days
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

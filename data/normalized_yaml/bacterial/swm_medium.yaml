@@ -5,6 +5,9 @@ category: bacterial
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 504
   term:
@@ -291,6 +294,12 @@ curation_history:
     @ 1 ml/l. Each moved component matched the MediaDive stock by name AND value;
     bulk ingredients sharing a name were left in place (#150).'
   changes: Nested 5 ingredient(s) under 2 solution(s); ingredients 29 -> 24
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_dsmz_504_swm_score15.py
+  action: RESOLVED_DSMZ_KOMODO_504_SWM_SCORE15
+  changes: Resolved DSMZ/KOMODO Medium 504 SWM strain-variant metadata
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=504
+  notes: KOMODO Medium 504 cites the DSMZ Medium 504 SWM formulation.
 solutions:
 - preferred_term: Trace element solution SL-10
   composition:
@@ -356,3 +365,33 @@ solutions:
     unit: ML_PER_L
   preparation_notes: Stock prepared in 1000 ml; added at 1 ml per litre of medium.
     Composition and volume from MediaDive (#150).
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: KOMODO Medium 504 sparges Solution A with an 80% N2 and 20% CO2 gas
+    mixture, distributes it under the same gas atmosphere, and autoclaves it; Solution
+    B is autoclaved separately under 80% N2 and 20% CO2, and Solution E is autoclaved
+    under 100% N2.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: KOMODO Medium 504 prepares Solutions C and D under 100% N2 and sterilizes
+    them by filtration before adding Solutions B to E to sterile Solution A in sequence.
+- step_number: 3
+  action: ADJUST_PH
+  description: KOMODO Medium 504 adjusts the complete medium to pH 7.2-7.4 if necessary.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=504
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium504.pdf
+- reference: https://mediadive.dsmz.de/rest/medium/504
+parent_media:
+  path: data/normalized_yaml/specialized/anaerobic_seawater_swm_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:015356
+  name: anaerobic_seawater_swm_medium
+  notes: DSMZ Medium 504 is the official ANAEROBIC SEAWATER (SWM) formulation.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO source-catalogue duplicate of DSMZ Medium 504.

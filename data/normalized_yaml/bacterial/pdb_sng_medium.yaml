@@ -4,19 +4,66 @@ original_name: PDB-SNG medium
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: LIQUID
-ph_value: 7.2
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: public Medium P9
   term:
     id: mediadive.medium:P9
     label: PDB-SNG medium
-notes: 'Source: public'
-ingredients: []
+notes: MediaDive public Medium P9 currently downloads as Modified Medio Azunol and
+  provides a 1 L agar recipe for methane-oxidizing cultivation with SL-10 and SL-6
+  trace element solutions. The legacy imported CultureMech label for P9 was PDB-SNG
+  medium, but the DOI and current official public P9 recipe are retained here.
+ingredients:
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  source: MediaDive public Medium P9
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: Fe(III) citrate
+  concentration:
+    value: '1'
+    unit: MICROG_PER_L
+  source: MediaDive public Medium P9
+  term:
+    id: CHEBI:144421
+    label: Fe(III) citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
+    label: Fe(III) citrate
+- preferred_term: CuSO4
+  concentration:
+    value: '1'
+    unit: MICROG_PER_L
+  source: MediaDive public Medium P9
+  term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  source: MediaDive public Medium P9
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 applications:
 - Microbial cultivation
 references:
 - reference: 10.1007/s11104-022-05822-6
+- reference: https://www.bacmedia.dsmz.de/medium/P9
 curation_history:
 - timestamp: '2026-01-26T17:53:19.848406Z'
   curator: mediadive-import
@@ -41,5 +88,167 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_mediadive_public_score30.py
+  action: RESOLVED_MEDIADIVE_PUBLIC_SCORE30
+  changes: Resolved score-30 public MediaDive placeholder graph
+  source: 10.1007/s11104-022-05822-6; https://www.bacmedia.dsmz.de/medium/P9
+  notes: MediaDive public Medium P9 currently downloads as Modified Medio Azunol and
+    provides a 1 L agar recipe for methane-oxidizing cultivation with SL-10 and SL-6
+    trace element solutions. The legacy imported CultureMech label for P9 was PDB-SNG
+    medium, but the DOI and current official public P9 recipe are retained here.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+ph_range:
+  min: 6.8
+  max: 8.0
+solutions:
+- preferred_term: Trace element solution SL-10
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  notes: MediaDive public Medium P9 adds 1 ml Trace element solution SL-10 per 1 L
+    medium.
+  composition:
+  - preferred_term: HCl
+    concentration:
+      value: '2.5'
+      unit: G_PER_L
+    source: MediaDive public Medium P9
+    term:
+      id: CHEBI:17883
+      label: hydrogen chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17883
+      label: hydrogen chloride
+  - preferred_term: FeCl2 x 4 H2O
+    concentration:
+      value: '1.5'
+      unit: G_PER_L
+    source: MediaDive public Medium P9
+  - preferred_term: ZnCl2
+    concentration:
+      value: '0.07'
+      unit: G_PER_L
+    source: MediaDive public Medium P9
+    term:
+      id: CHEBI:49976
+      label: zinc dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49976
+      label: zinc dichloride
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: MediaDive public Medium P9
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.006'
+      unit: G_PER_L
+    source: MediaDive public Medium P9
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.19'
+      unit: G_PER_L
+    source: MediaDive public Medium P9
+  - preferred_term: CuCl2 x 2 H2O
+    concentration:
+      value: '0.002'
+      unit: G_PER_L
+    source: MediaDive public Medium P9
+  - preferred_term: NiCl2 x 6 H2O
+    concentration:
+      value: '0.024'
+      unit: G_PER_L
+    source: MediaDive public Medium P9
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.036'
+      unit: G_PER_L
+    source: MediaDive public Medium P9
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+- preferred_term: Trace element solution SL-6
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  notes: MediaDive public Medium P9 adds 1 ml Trace element solution SL-6 per 1 L
+    medium.
+  composition:
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: MediaDive public Medium P9
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '0.03'
+      unit: G_PER_L
+    source: MediaDive public Medium P9
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.3'
+      unit: G_PER_L
+    source: MediaDive public Medium P9
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    source: MediaDive public Medium P9
+  - preferred_term: CuCl2 x 2 H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: MediaDive public Medium P9
+  - preferred_term: NiCl2 x 6 H2O
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    source: MediaDive public Medium P9
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.03'
+      unit: G_PER_L
+    source: MediaDive public Medium P9
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve ingredients in distilled water and bring the medium to 1 L.
+- step_number: 2
+  action: MIX
+  description: Add 1-2 ml of the selected SL-10 or SL-6 trace element solution; the
+    official component table lists each stock at 1 ml/L.
+- step_number: 3
+  action: MIX
+  description: Mix well and adjust pH with base or acid if necessary.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+- step_number: 5
+  action: MIX
+  description: Use 10% CH4 gas as the methane source.

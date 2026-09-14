@@ -13,378 +13,681 @@ media_term:
   term:
     id: mediadive.medium:861a
     label: DESULFOTALEA PSYCHROPHILA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium861a.pdf'
-ingredients:
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
+notes: MediaDive and DSMZ Medium 861a define Desulfotalea psychrophila Medium as the
+  lower-NaCl Desulfofrigus 861 stock-solution recipe.
+ingredients: []
+solutions:
+- preferred_term: Solution A
   concentration:
-    value: '10.6157'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: Na2SO4
+    value: '948.207'
+    unit: ML_PER_L
+  source: DSMZ Medium 861a
+  notes: DSMZ Medium 861a adds 952 ml/L Solution A to the completed 861-family medium.
   term:
-    id: CHEBI:32149
-    label: sodium sulfate
+    id: mediadive.solution:1771
+    label: Solution A
+  composition:
+  - preferred_term: NaCl
+    concentration:
+      value: '10.6157'
+      unit: G_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a lists 10.6157 G_PER_L NaCl.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+    term:
+      id: mediadive.compound:43
+      label: NaCl
+  - preferred_term: Na2SO4
+    concentration:
+      value: '4.24628'
+      unit: G_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a lists 4.24628 G_PER_L Na2SO4.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32149
+      label: sodium sulfate
+    term:
+      id: mediadive.compound:110
+      label: Na2SO4
+  - preferred_term: KH2PO4
+    concentration:
+      value: '0.212314'
+      unit: G_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a lists 0.212314 G_PER_L KH2PO4.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    term:
+      id: mediadive.compound:11
+      label: KH2PO4
+  - preferred_term: NH4Cl
+    concentration:
+      value: '0.265393'
+      unit: G_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a lists 0.265393 G_PER_L NH4Cl.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31206
+      label: ammonium chloride
+    term:
+      id: mediadive.compound:42
+      label: NH4Cl
+  - preferred_term: MgCl2 x 6 H2O
+    concentration:
+      value: '3.18471'
+      unit: G_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a lists 3.18471 G_PER_L MgCl2 x 6 H2O.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    term:
+      id: mediadive.compound:79
+      label: MgCl2 x 6 H2O
+  - preferred_term: CaCl2 x 2 H2O
+    concentration:
+      value: '0.159236'
+      unit: G_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a lists 0.159236 G_PER_L CaCl2 x 2 H2O.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    term:
+      id: mediadive.compound:7
+      label: CaCl2 x 2 H2O
+  - preferred_term: KBr
+    concentration:
+      value: '0.0955414'
+      unit: G_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a lists 0.0955414 G_PER_L KBr.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32030
+      label: potassium bromide
+    term:
+      id: mediadive.compound:174
+      label: KBr
+  - preferred_term: KCl
+    concentration:
+      value: '0.530786'
+      unit: G_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a lists 0.530786 G_PER_L KCl.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+    term:
+      id: mediadive.compound:61
+      label: KCl
+  - preferred_term: Sodium resazurin
+    concentration:
+      value: '0.000530786'
+      unit: G_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a lists 0.000530786 G_PER_L Sodium resazurin.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:8806
+      label: Resazurin
+    term:
+      id: mediadive.compound:1852
+      label: Sodium resazurin
+  - preferred_term: Distilled water
+    concentration:
+      value: '997.877'
+      unit: ML_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a lists 997.877 ML_PER_L Distilled water.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    term:
+      id: mediadive.compound:4
+      label: Distilled water
+  solutions:
+  - preferred_term: Trace element solution SL-10
+    concentration:
+      value: '1.06157'
+      unit: ML_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a Solution A adds 1 ml/L Trace element solution SL-10.
+    term:
+      id: mediadive.solution:595
+      label: Trace element solution SL-10
+    composition:
+    - preferred_term: HCl
+      concentration:
+        value: '2.5'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 2.5 G_PER_L HCl.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:17883
+        label: hydrogen chloride
+      term:
+        id: mediadive.compound:68
+        label: HCl
+    - preferred_term: FeCl2 x 4 H2O
+      concentration:
+        value: '1.5'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 1.5 G_PER_L FeCl2 x 4 H2O.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:86249
+        label: iron dichloride tetrahydrate
+      term:
+        id: mediadive.compound:260
+        label: FeCl2 x 4 H2O
+    - preferred_term: ZnCl2
+      concentration:
+        value: '0.07'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.07 G_PER_L ZnCl2.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:49976
+        label: zinc dichloride
+      term:
+        id: mediadive.compound:64
+        label: ZnCl2
+    - preferred_term: MnCl2 x 4 H2O
+      concentration:
+        value: '0.1'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.1 G_PER_L MnCl2 x 4 H2O.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:86368
+        label: manganese(II) chloride tetrahydrate
+      term:
+        id: mediadive.compound:36
+        label: MnCl2 x 4 H2O
+    - preferred_term: H3BO3
+      concentration:
+        value: '0.006'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.006 G_PER_L H3BO3.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:33118
+        label: boric acid
+      term:
+        id: mediadive.compound:37
+        label: H3BO3
+    - preferred_term: CoCl2 x 6 H2O
+      concentration:
+        value: '0.19'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.19 G_PER_L CoCl2 x 6 H2O.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:53503
+        label: cobalt chloride hexahydrate
+      term:
+        id: mediadive.compound:38
+        label: CoCl2 x 6 H2O
+    - preferred_term: CuCl2 x 2 H2O
+      concentration:
+        value: '0.002'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.002 G_PER_L CuCl2 x 2 H2O.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:86318
+        label: copper(II) chloride dihydrate
+      term:
+        id: mediadive.compound:39
+        label: CuCl2 x 2 H2O
+    - preferred_term: NiCl2 x 6 H2O
+      concentration:
+        value: '0.024'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.024 G_PER_L NiCl2 x 6 H2O.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:34887
+        label: nickel dichloride
+      term:
+        id: mediadive.compound:40
+        label: NiCl2 x 6 H2O
+    - preferred_term: Na2MoO4 x 2 H2O
+      concentration:
+        value: '0.036'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.036 G_PER_L Na2MoO4 x 2 H2O.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:75213
+        label: sodium molybdate dihydrate
+      term:
+        id: mediadive.compound:9
+        label: Na2MoO4 x 2 H2O
+    - preferred_term: Distilled water
+      concentration:
+        value: '990'
+        unit: ML_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 990 ML_PER_L Distilled water.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:15377
+        label: water
+      term:
+        id: mediadive.compound:4
+        label: Distilled water
+  - preferred_term: Selenite-tungstate solution
+    concentration:
+      value: '1.06157'
+      unit: ML_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a Solution A adds 1 ml/L Selenite-tungstate solution.
+    term:
+      id: mediadive.solution:777
+      label: Selenite-tungstate solution
+    composition:
+    - preferred_term: NaOH
+      concentration:
+        value: '0.5'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.5 G_PER_L NaOH.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:32145
+        label: sodium hydroxide
+      term:
+        id: mediadive.compound:256
+        label: NaOH
+    - preferred_term: Na2SeO3 x 5 H2O
+      concentration:
+        value: '0.003'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.003 G_PER_L Na2SeO3 x 5 H2O.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:131361
+        label: disodium selenite pentahydrate
+      term:
+        id: mediadive.compound:107
+        label: Na2SeO3 x 5 H2O
+    - preferred_term: Na2WO4 x 2 H2O
+      concentration:
+        value: '0.004'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.004 G_PER_L Na2WO4 x 2 H2O.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:63939
+        label: sodium tungstate dihydrate
+      term:
+        id: mediadive.compound:249
+        label: Na2WO4 x 2 H2O
+    - preferred_term: Distilled water
+      concentration:
+        value: '1000'
+        unit: ML_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 1000 ML_PER_L Distilled water.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:15377
+        label: water
+      term:
+        id: mediadive.compound:4
+        label: Distilled water
+- preferred_term: Solution B
   concentration:
-    value: '4.24628'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32149
-    label: sodium sulfate
-- preferred_term: KH2PO4
+    value: '29.8805'
+    unit: ML_PER_L
+  source: DSMZ Medium 861a
+  notes: DSMZ Medium 861a adds 29.8805 ml/L Solution B.
   term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
+    id: mediadive.solution:1774
+    label: Solution B
+  composition:
+  - preferred_term: Na2CO3
+    concentration:
+      value: '50'
+      unit: G_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a lists 50 G_PER_L Na2CO3.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:29377
+      label: sodium carbonate
+    term:
+      id: mediadive.compound:32
+      label: Na2CO3
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a lists 1000 ML_PER_L Distilled water.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    term:
+      id: mediadive.compound:4
+      label: Distilled water
+- preferred_term: Solution C
   concentration:
-    value: '0.212314'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-- preferred_term: NH4Cl
+    value: '9.96016'
+    unit: ML_PER_L
+  source: DSMZ Medium 861a
+  notes: DSMZ Medium 861a adds 9.96016 ml/L Solution C.
   term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: mediadive.solution:1776
+    label: Solution C
+  composition:
+  - preferred_term: Na-DL-lactate
+    concentration:
+      value: '250'
+      unit: G_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a lists 250 G_PER_L Na-DL-lactate.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75228
+      label: sodium lactate
+    term:
+      id: mediadive.compound:111
+      label: Na-DL-lactate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a lists 1000 ML_PER_L Distilled water.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    term:
+      id: mediadive.compound:4
+      label: Distilled water
+- preferred_term: Solution D
   concentration:
-    value: '0.265393'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: MgCl2 x 6 H2O
+    value: '0.996016'
+    unit: ML_PER_L
+  source: DSMZ Medium 861a
+  notes: DSMZ Medium 861a adds 0.996016 ml/L Solution D.
+  solutions:
+  - preferred_term: Wolin's vitamin solution (10x)
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a Solution D consists of Wolin's vitamin solution.
+    term:
+      id: mediadive.solution:5980
+      label: Wolin's vitamin solution (10x)
+    composition:
+    - preferred_term: Biotin
+      concentration:
+        value: '0.02'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.02 G_PER_L Biotin.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:15956
+        label: biotin
+      term:
+        id: mediadive.compound:46
+        label: Biotin
+    - preferred_term: Folic acid
+      concentration:
+        value: '0.02'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.02 G_PER_L Folic acid.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:27470
+        label: folic acid
+      term:
+        id: mediadive.compound:138
+        label: Folic acid
+    - preferred_term: Pyridoxine hydrochloride
+      concentration:
+        value: '0.1'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.1 G_PER_L Pyridoxine hydrochloride.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:30961
+        label: pyridoxine hydrochloride
+      term:
+        id: mediadive.compound:519
+        label: Pyridoxine hydrochloride
+    - preferred_term: Thiamine HCl
+      concentration:
+        value: '0.05'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.05 G_PER_L Thiamine HCl.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:49105
+        label: thiamine hydrochloride
+      term:
+        id: mediadive.compound:1207
+        label: Thiamine HCl
+    - preferred_term: Riboflavin
+      concentration:
+        value: '0.05'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.05 G_PER_L Riboflavin.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:17015
+        label: riboflavin
+      term:
+        id: mediadive.compound:136
+        label: Riboflavin
+    - preferred_term: Nicotinic acid
+      concentration:
+        value: '0.05'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.05 G_PER_L Nicotinic acid.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:15940
+        label: nicotinic acid
+      term:
+        id: mediadive.compound:139
+        label: Nicotinic acid
+    - preferred_term: Calcium D-(+)-pantothenate
+      concentration:
+        value: '0.05'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.05 G_PER_L Calcium D-(+)-pantothenate.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:31345
+        label: Calcium pantothenate
+      term:
+        id: mediadive.compound:1512
+        label: Calcium D-(+)-pantothenate
+    - preferred_term: Vitamin B12
+      concentration:
+        value: '0.001'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.001 G_PER_L Vitamin B12.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:176843
+        label: vitamin B12
+      term:
+        id: mediadive.compound:18
+        label: Vitamin B12
+    - preferred_term: p-Aminobenzoic acid
+      concentration:
+        value: '0.05'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.05 G_PER_L p-Aminobenzoic acid.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:30753
+        label: 4-aminobenzoic acid
+      term:
+        id: mediadive.compound:47
+        label: p-Aminobenzoic acid
+    - preferred_term: (DL)-alpha-Lipoic acid
+      concentration:
+        value: '0.05'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 0.05 G_PER_L (DL)-alpha-Lipoic acid.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:16494
+        label: lipoic acid
+      term:
+        id: mediadive.compound:252
+        label: (DL)-alpha-Lipoic acid
+    - preferred_term: Distilled water
+      concentration:
+        value: '1000'
+        unit: ML_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 1000 ML_PER_L Distilled water.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:15377
+        label: water
+      term:
+        id: mediadive.compound:4
+        label: Distilled water
+- preferred_term: Solution E
+  concentration:
+    value: '9.96016'
+    unit: ML_PER_L
+  source: DSMZ Medium 861a
+  notes: DSMZ Medium 861a adds 9.96016 ml/L Solution E.
   term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
+    id: mediadive.solution:1777
+    label: Solution E
+  composition:
+  - preferred_term: Na2S x 9 H2O
+    concentration:
+      value: '30'
+      unit: G_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a lists 30 G_PER_L Na2S x 9 H2O.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    term:
+      id: mediadive.compound:54
+      label: Na2S x 9 H2O
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a lists 1000 ML_PER_L Distilled water.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    term:
+      id: mediadive.compound:4
+      label: Distilled water
+- preferred_term: Solution F
   concentration:
-    value: '3.18471'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  concentration:
-    value: '0.159236'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: KBr
-  term:
-    id: CHEBI:32030
-    label: potassium bromide
-  concentration:
-    value: '0.0955414'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32030
-    label: potassium bromide
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-  concentration:
-    value: '0.530786'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: Sodium resazurin
-  concentration:
-    value: '0.000530786'
-    unit: G_PER_L
-  term:
-    id: CHEBI:8806
-    label: Resazurin
-- preferred_term: Na2CO3
-  term:
-    id: CHEBI:29377
-    label: sodium carbonate
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:29377
-    label: sodium carbonate
-- preferred_term: Na-DL-lactate
-  term:
-    id: CHEBI:75228
-    label: sodium lactate
-  concentration:
-    value: '250'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75228
-    label: sodium lactate
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
-- preferred_term: HCl
-  term:
-    id: CHEBI:17883
-    label: hydrogen chloride
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17883
-    label: hydrogen chloride
-- preferred_term: FeCl2 x 4 H2O
-  term:
-    id: CHEBI:86249
-    label: iron dichloride tetrahydrate
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86249
-    label: iron dichloride tetrahydrate
-- preferred_term: ZnCl2
-  term:
-    id: CHEBI:49976
-    label: zinc dichloride
-  concentration:
-    value: '0.07'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:49976
-    label: zinc dichloride
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: boric acid
-  concentration:
-    value: '0.006'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:33118
-    label: boric acid
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:53503
-    label: cobalt chloride hexahydrate
-  concentration:
-    value: '0.19'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:53503
-    label: cobalt chloride hexahydrate
-- preferred_term: CuCl2 x 2 H2O
-  term:
-    id: CHEBI:86318
-    label: copper(II) chloride dihydrate
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86318
-    label: copper(II) chloride dihydrate
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: nickel dichloride
-  concentration:
-    value: '0.024'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:34887
-    label: nickel dichloride
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
-  concentration:
-    value: '0.036'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: sodium hydroxide
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: '[Collapsed 2 identical duplicates: 0.5, 0.5]'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32145
-    label: sodium hydroxide
-- preferred_term: Na2SeO3 x 5 H2O
-  term:
-    id: CHEBI:131361
-    label: disodium selenite pentahydrate
-  concentration:
-    value: '0.003'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:131361
-    label: disodium selenite pentahydrate
-- preferred_term: Na2WO4 x 2 H2O
-  term:
-    id: CHEBI:63939
-    label: sodium tungstate dihydrate
-  concentration:
-    value: '0.004'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63939
-    label: sodium tungstate dihydrate
-- preferred_term: Biotin
-  term:
-    id: CHEBI:15956
-    label: biotin
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15956
-    label: biotin
-- preferred_term: Folic acid
-  term:
-    id: CHEBI:27470
-    label: folic acid
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:27470
-    label: folic acid
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: pyridoxine hydrochloride
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30961
-    label: pyridoxine hydrochloride
-- preferred_term: Thiamine HCl
-  term:
-    id: CHEBI:49105
-    label: thiamine hydrochloride
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:49105
-    label: thiamine hydrochloride
-- preferred_term: Riboflavin
-  term:
-    id: CHEBI:17015
-    label: riboflavin
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17015
-    label: riboflavin
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: nicotinic acid
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15940
-    label: nicotinic acid
-- preferred_term: Calcium D-(+)-pantothenate
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:176843
-    label: vitamin B12
-  concentration:
-    value: '0.001'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
-- preferred_term: p-Aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: 4-aminobenzoic acid
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30753
-    label: 4-aminobenzoic acid
-- preferred_term: (DL)-alpha-Lipoic acid
-  term:
-    id: CHEBI:16494
-    label: lipoic acid
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:16494
-    label: lipoic acid
-- preferred_term: Na2S2O4
-  term:
-    id: CHEBI:66870
-    label: sodium dithionite
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:66870
-    label: sodium dithionite
+    value: '0.996016'
+    unit: ML_PER_L
+  source: DSMZ Medium 861a
+  notes: DSMZ Medium 861a adds 0.996016 ml/L Solution F.
+  solutions:
+  - preferred_term: Na-dithionite solution (5% w/v)
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    source: DSMZ Medium 861a
+    notes: DSMZ Medium 861a Solution F consists of 5% w/v Na-dithionite solution.
+    term:
+      id: mediadive.solution:6262
+      label: Na-dithionite solution (5% w/v)
+    composition:
+    - preferred_term: NaOH
+      concentration:
+        value: '50'
+        unit: ML_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 50 ML_PER_L NaOH.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:32145
+        label: sodium hydroxide
+      term:
+        id: mediadive.compound:256
+        label: NaOH
+    - preferred_term: Na2S2O4
+      concentration:
+        value: '50'
+        unit: G_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 50 G_PER_L Na2S2O4.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:66870
+        label: sodium dithionite
+      term:
+        id: mediadive.compound:653
+        label: Na2S2O4
+    - preferred_term: Distilled water
+      concentration:
+        value: '950'
+        unit: ML_PER_L
+      source: DSMZ Medium 861a
+      notes: DSMZ Medium 861a lists 950 ML_PER_L Distilled water.
+      mediaingredientmech_chebi_term:
+        id: CHEBI:15377
+        label: water
+      term:
+        id: mediadive.compound:4
+        label: Distilled water
 preparation_steps:
 - step_number: 1
-  action: AUTOCLAVE
-  description: Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach
-    a pH below 6 (at least 30 – 45 min), then dispensed under the same gas atmosphere
-    into serum vials (use at least bottles of 50 ml volume filled with 30 ml medium)
-    and autoclaved. Solutions B and F are prepared under 80% N2 and 20% CO2 gas atmosphere
-    and sterilized. Sterile solutions C, D and E are prepared under 100% N2 gas. Solutions
-    D and F are sterilized by filtration. To complete the medium appropriate amounts
-    of solutions B to F are added to the sterile solution A in the sequence as indicated.
-    Final pH of the medium should be 7.0 - 7.2.
-- step_number: 2
   action: MIX
-  description: 'Note: For transfer of cultures use at least 10% (v/v) inoculum.'
-- step_number: 3
-  action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
-- step_number: 4
+  description: DSMZ Medium 861a sparges Solution A with an 80% N2 and 20% CO2 gas
+    mixture to pH below 6, dispenses it under the same gas atmosphere into serum vials,
+    and autoclaves it.
+- step_number: 2
   action: FILTER_STERILIZE
-  description: Add 1 N NaOH to distilled water and make the solution anoxic by sparging
-    with 100% N2 gas. Then dissolve the Na-dithionite and filter-sterilize the solution
-    into anoxic Hungate tubes. The final pH of the solution should be between 9 and
-    10. Store the prepared solution in a dark and cool place. Prepare only small amounts
-    of stock solution, as Na-dithionite decomposes rapidly.
+  description: DSMZ Medium 861a prepares Solutions B and F under 80% N2 and 20% CO2
+    and prepares sterile Solutions C, D, and E under 100% N2; Solutions D and F are
+    sterilized by filtration.
+- step_number: 3
+  action: MIX
+  description: DSMZ Medium 861a completes the medium by adding appropriate amounts
+    of Solutions B to F to sterile Solution A in sequence.
+- step_number: 4
+  action: ADJUST_PH
+  description: DSMZ Medium 861a final pH should be 7.0-7.2.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/861a
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium861a.pdf
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_12341.yaml
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  id: CultureMech:006689
+  name: for_dsm_12341
+  notes: KOMODO Medium 861.2 applies the Desulfotalea base to DSM 12341 with acetate
+    as the substrate.
+- path: data/normalized_yaml/bacterial/for_dsm_12342_dsm_12343_and_dsm_12345.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006690
+  name: for_dsm_12342_dsm_12343_and_dsm_12345
+  notes: KOMODO Medium 861.3 applies the Desulfotalea base to DSM 12342, DSM 12343,
+    and DSM 12345.
+- path: data/normalized_yaml/bacterial/for_dsm_12343.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:006688
+  name: for_dsm_12343
+  notes: KOMODO Medium 861.1 applies the Desulfotalea base to DSM 12343 at pH 7.1-7.3.
+- path: data/normalized_yaml/bacterial/for_dsm_12344.yaml
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  id: CultureMech:006691
+  name: for_dsm_12344
+  notes: KOMODO Medium 861.4 applies the Desulfotalea base to DSM 12344 with propionate
+    as the substrate.
 applications:
 - Microbial cultivation
 curation_history:
@@ -435,13 +738,11 @@ curation_history:
     duplicate values written by cleanup_media_quality.py. Every merged part was the
     same value, so the pre-merge value is unambiguous and no source lookup was needed.
     Rows whose merged parts differ were left untouched.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_dsmz_861_desulfotalea_score15.py
+  action: RESOLVED_DSMZ_KOMODO_861_DESULFOTALEA_SCORE15
+  changes: Resolved DSMZ/KOMODO Medium 861 Desulfotalea stock-solution structure
+  source: https://mediadive.dsmz.de/rest/medium/861a
+  notes: MediaDive and DSMZ Medium 861a define Desulfotalea psychrophila Medium as
+    the lower-NaCl Desulfofrigus 861 stock-solution recipe.
 high_metal: true
-parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_12341.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006689
-  name: for_dsm_12341
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.

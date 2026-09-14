@@ -4,62 +4,53 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: CR1-S Diatom Medium
+  term:
+    id: UTEX:cr1-s-diatom-medium
+    label: CR1-S Diatom Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
+notes: UTEX prepares CR1-S Diatom Medium tube-by-tube from 1 cc CR1 Soil, 11 mL dH2O,
+  and 1 mL Sphagnum extract.
 ingredients:
 - preferred_term: CR1 Soil
   concentration:
-    value: variable
+    value: 1 cc per 15 mL tube
     unit: VARIABLE
-  notes: 'UTEX lists: amount 1 cc'
+  term:
+    id: ENVO:00001998
+    label: soil
+  notes: UTEX lists 1 cc CR1 Soil per 15 mL glass tube.
 - preferred_term: dH2O
   concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'UTEX lists: amount 11 mL'
+    value: '916.667'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: Converted from 11 mL dH2O per 12 mL liquid fill.
 - preferred_term: Sphagnum extract
   concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'UTEX lists: amount 1 mL'
+    value: '83.333'
+    unit: ML_PER_L
+  notes: Converted from 1 mL Sphagnum extract per 12 mL liquid fill.
+solutions: []
 preparation_steps:
 - step_number: 1
-  action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  action: ALIQUOT
+  description: Add CR1 Soil, dH2O, and Sphagnum extract in order to 15 mL glass tubes.
 - step_number: 2
-  action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  action: AUTOCLAVE
+  description: Process the soil and liquid mixture within 6 hours; autoclave for 15
+    minutes for routine maintenance, or pasteurize just above 98 C for 2 hours on
+    three successive days.
 - step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
-- step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
-- step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
+  action: STORE
+  description: Allow tubes to gas-equilibrate for 2 days before use.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -98,7 +89,28 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_cr1_s_modified_2x_score35.py
+  action: RESOLVED_UTEX_CR1_S_MODIFIED_2X_SCORE35
+  changes: Grounded score-35 UTEX CR1-S and Modified 2X CHEV+Soil components
+  source: https://utex.org/products/cr1-s-diatom-medium
+  notes: UTEX prepares CR1-S Diatom Medium tube-by-tube from 1 cc CR1 Soil, 11 mL
+    dH2O, and 1 mL Sphagnum extract.
 references:
 - reference: UTEX:cr1-s-diatom-medium
 - reference: https://utex.org/products/cr1-s-diatom-medium
 original_name: CR1-S Diatom Medium
+parent_media:
+  path: data/normalized_yaml/algae/CR1_Diatom_Medium.yaml
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  id: CultureMech:000154
+  name: cr1_diatom_medium
+  notes: Uses 11 mL dH2O and 1 mL Sphagnum extract per 12 mL liquid fill instead of
+    12 mL dH2O and 0.5 mg MgCO3.
+variant_relationship: SUBSTITUTED_COMPONENT_VARIANT
+variant_modifications:
+- Uses 11 mL dH2O and 1 mL Sphagnum extract per 12 mL liquid fill instead of 12 mL
+  dH2O and 0.5 mg MgCO3.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

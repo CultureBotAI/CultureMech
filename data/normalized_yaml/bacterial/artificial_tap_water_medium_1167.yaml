@@ -2,6 +2,7 @@ id: CultureMech:004789
 name: artificial_tap_water_medium_1167
 original_name: Artificial tap water (medium 1167)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

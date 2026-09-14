@@ -4,70 +4,79 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: Trebouxia Medium
+  term:
+    id: UTEX:trebouxia-medium
+    label: Trebouxia Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
+notes: 'UTEX prepares Trebouxia Medium by supplementing Bristol Medium with prepared
+  Soilwater: GR+ Medium, Proteose Peptone, and glucose before autoclaving.'
 ingredients:
-- preferred_term: Bristol Medium
-  concentration:
-    value: '825'
-    unit: ML_PER_L
-  notes: 'UTEX lists: amount 825 mL/L'
-- preferred_term: 'Soilwater: GR+ Medium'
-  concentration:
-    value: '140'
-    unit: ML_PER_L
-  notes: 'UTEX lists: amount 140 mL/L'
-- preferred_term: Proteose Peptone(BD 211684)
+- preferred_term: Proteose Peptone
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'UTEX lists: amount 10 g/L'
+  term:
+    id: MICRO:0000180
+    label: Proteose Peptone
+  supplier_catalog:
+    supplier_name: BD
+    catalog_number: '211684'
+  notes: UTEX lists 10 g/L Proteose Peptone, BD 211684.
+  nutritional_roles:
+  - NITROGEN_SOURCE
 - preferred_term: Glucose
   concentration:
     value: '0.11'
     unit: MOLAR
-  notes: 'UTEX lists: amount 20 g/L; final 0.11 M'
-  supplier_catalog:
-    supplier_name: Bacto
-    catalog_number: -dextrose or Sigma D 9634
+  term:
+    id: CHEBI:17234
+    label: glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: glucose
+  notes: UTEX lists 20 g/L Glucose, with BACTO-dextrose or Sigma D 9634 as the source
+    for 0.11 M final.
+  nutritional_roles:
+  - CARBON_SOURCE
+solutions:
+- preferred_term: Bristol Medium
+  concentration:
+    value: '825'
+    unit: ML_PER_L
+  culturemech_term:
+    id: CultureMech:000037
+    label: Bristol Medium
+  notes: UTEX lists 825 mL prepared Bristol Medium per liter before using reserved
+    Bristol Medium to bring the final recipe to 1 L.
+- preferred_term: 'Soilwater: GR+ Medium'
+  concentration:
+    value: '140'
+    unit: ML_PER_L
+  culturemech_term:
+    id: CultureMech:000225
+    label: 'Soilwater: GR+ Medium'
+  notes: 'UTEX lists 140 mL prepared Soilwater: GR+ Medium per liter.'
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: Prepare 1 L of Bristol Medium, transfer approximately 825 mL to a 2
+    L Erlenmeyer flask, and save the remaining Bristol Medium.
 - step_number: 2
   action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  description: To the approximately 825 mL Bristol Medium, add the listed components
+    in order while stirring continuously.
 - step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
+  action: MIX
+  description: Bring the total volume to 1 L with the reserved Bristol Medium.
 - step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
+  action: AUTOCLAVE
+  description: Cover and autoclave the medium.
 - step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
+  action: STORE
+  description: Store at refrigerator temperature.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -106,7 +115,19 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_organic_score35.py
+  action: RESOLVED_UTEX_ORGANIC_SCORE35
+  changes: Grounded UTEX score-35 organic and Volvox components
+  source: https://utex.org/products/trebouxia-medium
+  notes: 'UTEX prepares Trebouxia Medium by supplementing Bristol Medium with prepared
+    Soilwater: GR+ Medium, Proteose Peptone, and glucose before autoclaving.'
 references:
 - reference: UTEX:trebouxia-medium
 - reference: https://utex.org/products/trebouxia-medium
+- reference: https://utex.org/products/bristol-medium
+- reference: https://utex.org/products/soilwater-gr-plus-medium
 original_name: Trebouxia Medium
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

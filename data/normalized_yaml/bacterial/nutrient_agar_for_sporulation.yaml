@@ -5,13 +5,14 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1.0'
+    unit: L
+  source: TOGO M2341 / DSMZ Medium 1
+  notes: TOGO M2341 and DSMZ Medium 1 list 1000 ml Distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -20,10 +21,11 @@ ingredients:
     label: water
 - preferred_term: MnSO4 x H2O
   concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+    value: '10.0'
+    unit: MG_PER_L
+  source: TOGO M2341 / DSMZ Medium 1
+  notes: TOGO M2341 and DSMZ Medium 1 recommend adding 10 mg/L MnSO4 x H2O for sporulation
+    of Bacillus strains.
   term:
     id: CHEBI:86364
     label: manganese(II) sulfate monohydrate
@@ -32,26 +34,40 @@ ingredients:
     label: manganese(II) sulfate monohydrate
 - preferred_term: Agar, if necessary
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M2341 / DSMZ Medium 1
+  notes: TOGO M2341 and DSMZ Medium 1 list 15.0 g/L Agar if necessary.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Meat extract
   concentration:
-    value: '3'
+    value: '3.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2341 / DSMZ Medium 1
+  notes: TOGO M2341 and DSMZ Medium 1 list 3.0 g/L Meat extract; this generic complex
+    extract is retained without an ontology grounding.
 - preferred_term: Peptone
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
+  source: TOGO M2341 / DSMZ Medium 1
+  notes: TOGO M2341 and DSMZ Medium 1 list 5.0 g/L Peptone.
+  term:
+    id: MICRO:0000178
+    label: Peptone
 media_term:
   preferred_term: TOGO Medium M2341
   term:
     id: TOGO:M2341
     label: Nutrient Agar (For sporulation)
-notes: 'Source: https://togomedium.org/medium/M2341
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf'
+notes: 'TOGO M2341 reports the DSMZ Medium 1 sporulation variant for Bacillus strains:
+  1000 ml distilled water, 5 g peptone, 3 g Meat extract, 15 g agar if necessary,
+  and 10 mg MnSO4 x H2O, adjusted to pH 7.0.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -88,3 +104,31 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nutrient_ncg_nssm_score15.py
+  action: RESOLVED_TOGO_M2341_SCORE15
+  source: https://togomedium.org/medium/M2341; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf
+  notes: 'TOGO M2341 reports the DSMZ Medium 1 sporulation variant for Bacillus strains:
+    1000 ml distilled water, 5 g peptone, 3 g Meat extract, 15 g agar if necessary,
+    and 10 mg MnSO4 x H2O, adjusted to pH 7.0.'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2341
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M2340_Nutrient_Agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008928
+  name: nutrient_agar
+  notes: TOGO M2341 and TOGO M2340 both represent the DSMZ Medium 1 Bacillus-sporulation
+    Nutrient Agar formulation with 10 mg/L MnSO4 x H2O.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature as TOGO M2340 Nutrient Agar.

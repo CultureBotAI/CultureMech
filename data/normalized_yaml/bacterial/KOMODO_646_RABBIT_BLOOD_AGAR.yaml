@@ -10,17 +10,30 @@ media_term:
   term:
     id: komodo.medium:646
     label: RABBIT BLOOD AGAR
-notes: 'Source: KOMODO ModelSEED | ID: 646 | DSMZ Medium: 646 (mediadive.medium:646)
-  | Aerobic: No'
+notes: KOMODO Medium 646 states DSMZ Medium 646 provenance; DSMZ Medium 646 prepares
+  Blood Agar Base from Difco 0045 at 40.0 g/L, sterilizes and cools it to 45 C, and
+  aseptically adds 5% sterile defibrinated rabbit blood.
 ingredients:
-- preferred_term: Blood Agar Base
+- preferred_term: Blood Agar Base from Difco 0045
   concentration:
-    value: '1000'
+    value: '40.0'
     unit: G_PER_L
-- preferred_term: Rabbit blood
+  source: DSMZ Medium 646
+  notes: DSMZ Medium 646 directs preparation of Difco 0045 Blood Agar Base at 40.0
+    g/L.
+  culturemech_term:
+    id: CultureMech:006515
+    label: Blood Agar Base from Difco 0045
+- preferred_term: Sterile defibrinated rabbit blood
   concentration:
-    value: '50'
-    unit: G_PER_L
+    value: '5'
+    unit: PERCENT_V_V
+  source: DSMZ Medium 646
+  notes: DSMZ Medium 646 adds 5% sterile defibrinated rabbit blood after sterilization
+    and cooling to 45 C.
+  term:
+    id: UBERON:0000178
+    label: blood
 applications:
 - Microbial cultivation
 curation_history:
@@ -39,16 +52,41 @@ curation_history:
 - timestamp: '2026-03-17T19:45:56.023587+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RABBIT BLOOD AGAR" to "rabbit_blood_agar" for
-    consistent matching
+  notes: Normalized name from "RABBIT BLOOD AGAR" to "rabbit_blood_agar" for consistent
+    matching
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_dsmz_blood_score40.py
+  action: RESOLVED_DSMZ_BLOOD_SCORE40_GRAPH
+  changes: Resolved score-40 DSMZ/KOMODO blood-base source duplicate
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium646.pdf
+  notes: KOMODO Medium 646 states DSMZ Medium 646 provenance; DSMZ Medium 646 prepares
+    Blood Agar Base from Difco 0045 at 40.0 g/L, sterilizes and cools it to 45 C,
+    and aseptically adds 5% sterile defibrinated rabbit blood.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare Blood Agar Base from Difco 0045 at 40.0 g/L.
+- step_number: 2
+  action: HEAT
+  description: Sterilize the Blood Agar Base.
+- step_number: 3
+  action: COOL
+  description: Cool the sterile base to 45 C.
+- step_number: 4
+  action: MIX
+  description: Aseptically add 5% sterile defibrinated rabbit blood and mix well.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium646.pdf
 parent_media:
   path: data/normalized_yaml/bacterial/rabbit_blood_agar.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001784
   name: rabbit_blood_agar
-  notes: KOMODO record states DSMZ Medium 646 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 646 provenance and mirrors the same rabbit
+    blood agar formulation.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- KOMODO source-catalogue duplicate of DSMZ Medium 646.

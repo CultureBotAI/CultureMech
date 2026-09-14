@@ -378,13 +378,21 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-ph_value: 7.0
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_962_thermincola_score10.py
+  action: RESOLVED_KOMODO_962_THERMINCOLA_TOPOLOGY
+  changes: Linked under DSMZ Medium 962 as STRAIN_SPECIFIC_VARIANT
+  source: KOMODO Medium 962.1
+  notes: KOMODO Medium 962.1 applies Thermincola ferriacetica medium to DSM 14005.
 parent_media:
-  path: data/normalized_yaml/bacterial/KOMODO_962_THERMOVENABULUM_medium.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006919
-  name: thermovenabulum_medium
-variant_relationship: SOURCE_DUPLICATE
+  path: data/normalized_yaml/bacterial/thermincola_ferriacetica_medium.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:002142
+  name: thermincola_ferriacetica_medium
+  notes: KOMODO Medium 962.1 applies Thermincola ferriacetica medium to DSM 14005.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 962.1 applies Thermincola ferriacetica medium to DSM 14005.
+ph_value: 7.0
+data_quality_flags:
+- ingredients_curated

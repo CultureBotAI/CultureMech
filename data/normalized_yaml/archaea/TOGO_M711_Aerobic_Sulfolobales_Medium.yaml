@@ -165,7 +165,8 @@ curation_history:
 - timestamp: '2026-06-14T05:58:58.561437+00:00'
   curator: idnf-grounding-fix-v1.0
   action: Fixed ID_NOT_FOUND term groundings
-  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
+  notes: Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI,
+    0 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-27T06:35:55.579760Z'
   curator: togo-import
   action: Imported from TOGO Medium
@@ -219,6 +220,11 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_archaea_togo_score40.py
+  action: LINKED_ARCHAEA_TOGO_SCORE40_CHILDREN
+  changes: Linked score-40 archaeal TOGO children to source parents
+  notes: Added or refreshed reciprocal parent-child link for archaea/TOGO_M713_Aerobic_Sulfolobales_Medium_Without_Sulfur.yaml.
 solutions:
 - preferred_term: Salt base solution (see below)
   composition: []
@@ -226,3 +232,9 @@ solutions:
     value: '1'
     unit: G_PER_L
   name: Unknown solution
+variant_children:
+- path: data/normalized_yaml/archaea/TOGO_M713_Aerobic_Sulfolobales_Medium_Without_Sulfur.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:010120
+  name: aerobic_sulfolobales_medium_without_sulfur
+  notes: Omits sulfur from TOGO M711 Aerobic Sulfolobales Medium.

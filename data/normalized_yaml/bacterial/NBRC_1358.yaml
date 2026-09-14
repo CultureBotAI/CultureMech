@@ -1,11 +1,17 @@
 id: CultureMech:007474
-name: '1358'
-original_name: '1358'
+name: Medium for haloalkaliphilic methanogen
+original_name: Medium for haloalkaliphilic methanogen
 category: bacterial
 description: 1358. NBRC 1356.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: NBRC Medium 1356
+  term:
+    id: nbrc.medium:1356
+    label: NBRC Medium 1356
+ph_value: 9.0
 ingredients:
 - preferred_term: Mineral base 1*
   concentration:
@@ -19,6 +25,12 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '0.02'
@@ -27,6 +39,12 @@ ingredients:
   concentration:
     value: '0.014'
     unit: G_PER_L
+  term:
+    id: CHEBI:17905
+    label: coenzyme M
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17905
+    label: coenzyme M
 - preferred_term: Vitamin solution***
   concentration:
     value: '5'
@@ -42,15 +60,27 @@ ingredients:
   term:
     id: CHEBI:17790
     label: methanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
+    label: methanol
 - preferred_term: Sodium formate
   concentration:
     value: '3.4'
     unit: G_PER_L
+  term:
+    id: CHEBI:62965
+    label: sodium formate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
+    label: sodium formate
 - preferred_term: Sodium acetate
   concentration:
     value: '0.16'
     unit: G_PER_L
   term:
+    id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32954
     label: sodium acetate
 - preferred_term: FeS slurry solution*****
@@ -61,16 +91,55 @@ ingredients:
   concentration:
     value: '0.12'
     unit: G_PER_L
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+- preferred_term: Sodium dithionite solution in 1 M NaHCO3
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: NBRC Medium 1356
+  notes: NBRC Medium 1356 adds one drop of filter-sterile 10% sodium dithionite solution
+    in 1 M NaHCO3 by syringe.
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  action: AUTOCLAVE
+  description: Mix Mineral base 1 ingredients and autoclave under an N2 atmosphere;
+    after 1 day, use only the supernatant. Final pH should be 10.
 - step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
+  action: AUTOCLAVE
+  description: Mix Mineral base 2 ingredients and autoclave under an N2 atmosphere.
+    Final pH should be 7.3.
 - step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: ADJUST_PH
+  description: For the trace elements solution, first dissolve NTA, adjust pH to 6.5
+    with NaOH, then add minerals; final pH is 7.0.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Prepare the FeS slurry from 0.5 M FeSO4·7H2O and 0.5 M Na2S·9H2O, wash
+    with pure water, resuspend the FeS precipitate as a 20% solution, and autoclave
+    at 110 C for 30 min under N2.
+- step_number: 5
+  action: MIX
+  description: Mix Mineral base 1 and Mineral base 2 in a 1:1 proportion in tightly
+    closed vessels under an N2 atmosphere.
+- step_number: 6
+  action: AUTOCLAVE
+  description: Separately autoclave concentrated Bacto Yeast Extract, coenzyme M,
+    sodium acetate, Na2S·9H2O, and FeS slurry under an N2 atmosphere in tightly closed
+    vessels.
+- step_number: 7
+  action: FILTER_STERILIZE
+  description: Filter-sterilize concentrated MgCl2·6H2O, vitamin solution, trace element
+    solution, methanol, and sodium formate solution.
+- step_number: 8
+  action: MIX
+  description: After re-exchanging with N2, add one drop of filter-sterile 10% sodium
+    dithionite in 1 M NaHCO3 by syringe. Final pH of the complete medium should be
+    9.
 curation_history:
 - timestamp: '2026-02-20T00:22:36.066067Z'
   curator: nbrc-import
@@ -113,6 +182,14 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_nbrc_1358_score15.py
+  action: RESOLVED_NBRC_1358_SCORE15
+  changes: Grounded recovered NBRC Medium 1356 haloalkaliphilic methanogen formula
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1356
+  notes: Added the NBRC Medium 1356 source term and official title, grounded the recovered
+    formula and stocks, structured the FeS and sodium dithionite solutions, and converted
+    anaerobic preparation instructions into ordered steps.
 solutions:
 - preferred_term: Mineral base 1
   composition:
@@ -123,11 +200,17 @@ solutions:
     term:
       id: CHEBI:29377
       label: sodium carbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:29377
+      label: sodium carbonate
   - preferred_term: NaHCO3
     concentration:
       value: '35'
       unit: G_PER_L
     term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
       id: CHEBI:32139
       label: sodium hydrogencarbonate
   - preferred_term: NaCl
@@ -137,6 +220,9 @@ solutions:
     term:
       id: CHEBI:26710
       label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
   - preferred_term: K2HPO4
     concentration:
       value: '1'
@@ -144,11 +230,17 @@ solutions:
     term:
       id: CHEBI:131527
       label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
   - preferred_term: Distilled water
     concentration:
       value: '1'
       unit: L
     term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
       id: CHEBI:15377
       label: water
   name: Mineral base 1
@@ -161,11 +253,17 @@ solutions:
     term:
       id: CHEBI:26710
       label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
   - preferred_term: NH4Cl
     concentration:
       value: '0.5'
       unit: G_PER_L
     term:
+      id: CHEBI:31206
+      label: ammonium chloride
+    mediaingredientmech_chebi_term:
       id: CHEBI:31206
       label: ammonium chloride
   - preferred_term: K2HPO4
@@ -175,6 +273,9 @@ solutions:
     term:
       id: CHEBI:131527
       label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
   - preferred_term: KCl
     concentration:
       value: '5'
@@ -182,11 +283,17 @@ solutions:
     term:
       id: CHEBI:32588
       label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
   - preferred_term: Distilled water
     concentration:
       value: '1'
       unit: L
     term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
       id: CHEBI:15377
       label: water
   name: Mineral base 2
@@ -199,6 +306,9 @@ solutions:
     term:
       id: CHEBI:15956
       label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
   - preferred_term: Folic acid
     concentration:
       value: '2'
@@ -206,15 +316,27 @@ solutions:
     term:
       id: CHEBI:27470
       label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
   - preferred_term: Pyridoxine-HCl
     concentration:
       value: '10'
       unit: MG_PER_L
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
   - preferred_term: Thiamine-HCl
     concentration:
       value: '5'
       unit: MG_PER_L
     term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
       id: CHEBI:49105
       label: thiamine hydrochloride
   - preferred_term: Riboflavin
@@ -224,6 +346,9 @@ solutions:
     term:
       id: CHEBI:17015
       label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
   - preferred_term: Nicotinic acid
     concentration:
       value: '5'
@@ -231,15 +356,27 @@ solutions:
     term:
       id: CHEBI:15940
       label: nicotinic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: nicotinic acid
   - preferred_term: Ca-pantothenate
     concentration:
       value: '5'
       unit: MG_PER_L
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
   - preferred_term: p-Aminobenzoic acid
     concentration:
       value: '1'
       unit: MG_PER_L
     term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
       id: CHEBI:30753
       label: 4-aminobenzoic acid
   - preferred_term: Vitamin B12
@@ -249,11 +386,17 @@ solutions:
     term:
       id: CHEBI:176843
       label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
   - preferred_term: Distilled water
     concentration:
       value: '1'
       unit: L
     term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
       id: CHEBI:15377
       label: water
   name: Vitamin solution
@@ -263,22 +406,52 @@ solutions:
     concentration:
       value: '12.8'
       unit: G_PER_L
+    term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
   - preferred_term: FeCl3·6H2O
     concentration:
       value: '1.35'
       unit: G_PER_L
+    term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
   - preferred_term: MnCl2·4H2O
     concentration:
       value: '0.1'
       unit: G_PER_L
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
   - preferred_term: CoCl2·6H2O
     concentration:
       value: '0.024'
       unit: G_PER_L
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
   - preferred_term: CaCl2·2H2O
     concentration:
       value: '0.1'
       unit: G_PER_L
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
   - preferred_term: ZnCl2
     concentration:
       value: '0.1'
@@ -286,10 +459,19 @@ solutions:
     term:
       id: CHEBI:49976
       label: zinc dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49976
+      label: zinc dichloride
   - preferred_term: CuCl2·2H2O
     concentration:
       value: '0.025'
       unit: G_PER_L
+    term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
   - preferred_term: H3BO3
     concentration:
       value: '0.01'
@@ -297,10 +479,19 @@ solutions:
     term:
       id: CHEBI:33118
       label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
   - preferred_term: Na2MoO4·2H2O
     concentration:
       value: '0.024'
       unit: G_PER_L
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
   - preferred_term: NaCl
     concentration:
       value: '1'
@@ -308,10 +499,19 @@ solutions:
     term:
       id: CHEBI:26710
       label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
   - preferred_term: NiCl2·6H2O
     concentration:
       value: '0.12'
       unit: G_PER_L
+    term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
   - preferred_term: Na2SeO4
     concentration:
       value: '0.004'
@@ -319,10 +519,19 @@ solutions:
     term:
       id: CHEBI:77775
       label: sodium selenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:77775
+      label: sodium selenate
   - preferred_term: Na2WO4
     concentration:
       value: '0.004'
       unit: G_PER_L
+    term:
+      id: CHEBI:63940
+      label: sodium tungstate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63940
+      label: sodium tungstate
   - preferred_term: Distilled water
     concentration:
       value: '1'
@@ -330,19 +539,94 @@ solutions:
     term:
       id: CHEBI:15377
       label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: NaOH
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: NBRC Medium 1356
+    notes: NBRC Medium 1356 uses NaOH to adjust the trace elements solution to pH
+      6.5 before mineral addition.
+    term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32145
+      label: sodium hydroxide
   name: Trace elements solution
-notes: Mix mineral base 1 with mineral base 2 in 1:1 proportion in tightly closed
-  vessels under a N2 atmosphere. Separately autoclave concentrated Bacto Yeast Extract,
-  coenzyme M, sodium acetate, Na2S·9H2O and FeS solution under a N2 atmosphere in
-  tightly closed vessels. Add the autoclaved concentrated solutions, and filter-sterile
-  concentrated MgCl2·6H2O, vitamin solution, trace element solution, methanol and
-  sodium formate solution. After re-exchanging with N2, add 1 drop of filter-sterile
-  10% sodium dithionaite solution in 1 M NaHCO3 by syringe. Final pH of the complete
-  medium should be 9. Mix ingredients and autoclave under a N2 atmosphere. Because
-  some precipitate appears on the bottom for 1 day after autoclaving, use only supernatant
-  for making the medium. Final pH should be 10. Mix ingredients and autoclave under
-  a N2 atmosphere. Final pH should be 7.3. First dissolve nitrilotriacetic acid and
-  adjust pH to 6.5 with NaOH, and then add minerals. Final pH 7.0. FeS slurry solution
-  Mix 0.5 M FeSO4·7H2O and 0.5 M Na2S·9H2O solutions, wash with pure water several
-  times, finally resuspend the FeS precipitate as 20% solution and autoclave (110°C,
-  30 min) under a N2 atmosphere.
+- preferred_term: FeS slurry solution
+  composition:
+  - preferred_term: FeSO4·7H2O
+    concentration:
+      value: '0.5'
+      unit: MOLAR
+    source: NBRC Medium 1356
+    notes: NBRC Medium 1356 prepares FeS slurry by mixing 0.5 M FeSO4·7H2O and 0.5
+      M Na2S·9H2O solutions.
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+  - preferred_term: Na2S·9H2O
+    concentration:
+      value: '0.5'
+      unit: MOLAR
+    source: NBRC Medium 1356
+    notes: NBRC Medium 1356 prepares FeS slurry by mixing 0.5 M FeSO4·7H2O and 0.5
+      M Na2S·9H2O solutions.
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+  name: FeS slurry solution
+- preferred_term: Sodium dithionite solution
+  composition:
+  - preferred_term: Sodium dithionite
+    concentration:
+      value: '10'
+      unit: PERCENT_W_V
+    source: NBRC Medium 1356
+    notes: NBRC Medium 1356 adds one drop of filter-sterile 10% sodium dithionite
+      solution in 1 M NaHCO3.
+    term:
+      id: CHEBI:66870
+      label: sodium dithionite
+    mediaingredientmech_chebi_term:
+      id: CHEBI:66870
+      label: sodium dithionite
+  - preferred_term: NaHCO3
+    concentration:
+      value: '1'
+      unit: MOLAR
+    source: NBRC Medium 1356
+    notes: NBRC Medium 1356 uses 1 M NaHCO3 as the solvent for the 10% sodium dithionite
+      solution.
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+  name: Sodium dithionite solution
+notes: 'Source: NBRC Medium 1356 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1356
+
+
+  NBRC lists Medium for haloalkaliphilic methanogen as a 1:1 mix of two N2-autoclaved
+  mineral bases with MgCl2, Bacto Yeast Extract, coenzyme M, vitamin and trace-element
+  stocks, methanol, formate, acetate, FeS slurry, Na2S, and a 10% sodium dithionite
+  solution in 1 M NaHCO3. The complete medium is adjusted anaerobically and has final
+  pH 9.'
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1356

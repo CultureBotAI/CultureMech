@@ -11,16 +11,37 @@ media_term:
   term:
     id: mediadive.medium:577
     label: VY MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium577.pdf'
+notes: DSMZ Medium 577 lists 25.0 g veal infusion broth from Difco and 5.0 g yeast
+  extract from Difco brought to one liter with distilled water, with pH adjusted to
+  7.2.
 ingredients:
-- preferred_term: Veal infusion broth
+- preferred_term: Distilled water
   concentration:
-    value: '25'
-    unit: G_PER_L
-- preferred_term: Yeast extract
+    value: '1.0'
+    unit: L
+  source: DSMZ Medium 577
+  notes: DSMZ Medium 577 brings the formulation to 1000.0 ml with distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Veal infusion broth (Difco 0344)
   concentration:
-    value: '5'
+    value: '25.0'
     unit: G_PER_L
+  source: DSMZ Medium 577
+  notes: DSMZ Medium 577 lists 25.0 g Veal infusion broth (Difco 0344) per liter.
+- preferred_term: Yeast extract (Difco)
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: DSMZ Medium 577
+  notes: DSMZ Medium 577 lists 5.0 g yeast extract from Difco per liter.
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -40,3 +61,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "VY MEDIUM" to "vy_medium" for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_dsmz_score35.py
+  action: RESOLVED_DSMZ_SCORE35_GRAPH
+  changes: Resolved DSMZ-backed score-35 graph
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium577.pdf
+  notes: DSMZ Medium 577 lists 25.0 g veal infusion broth from Difco and 5.0 g yeast
+    extract from Difco brought to one liter with distilled water, with pH adjusted
+    to 7.2.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium577.pdf

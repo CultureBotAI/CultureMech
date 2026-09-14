@@ -4,6 +4,7 @@ The dangerous direction here is over-reach: re-typing a genuine medium removes i
 from every media-level audit, silently. Most of these pin what must NOT be
 re-typed.
 """
+
 from __future__ import annotations
 
 import importlib.util
@@ -41,10 +42,17 @@ def _write(d: Path, name: str, doc: dict):
 
 
 def test_a_named_solution_with_no_composition_is_a_candidate(rt, tmp_path):
-    _write(tmp_path / "bacterial", "a.yaml", {
-        "id": "CultureMech:1", "name": "x",
-        "original_name": "Trace element solution (medium 929)",
-        "category": "bacterial", "ingredients": []})
+    _write(
+        tmp_path / "bacterial",
+        "a.yaml",
+        {
+            "id": "CultureMech:1",
+            "name": "x",
+            "original_name": "Trace element solution (medium 929)",
+            "category": "bacterial",
+            "ingredients": [],
+        },
+    )
     assert len(rt.candidates(tmp_path)) == 1
 
 
@@ -52,36 +60,97 @@ def test_a_named_solution_WITH_a_composition_is_left_alone(rt, tmp_path):
     """Ringer's and Hank's BSS are solutions by name but usable media by content.
     Re-typing them would drop them from audits that should still see them — so the
     name alone is never sufficient."""
-    _write(tmp_path / "bacterial", "b.yaml", {
-        "id": "CultureMech:2", "name": "y",
-        "original_name": "Hank's balanced salt solution", "category": "bacterial",
-        "ingredients": [{"preferred_term": "NaCl"}, {"preferred_term": "KCl"}]})
+    _write(
+        tmp_path / "bacterial",
+        "b.yaml",
+        {
+            "id": "CultureMech:2",
+            "name": "y",
+            "original_name": "Hank's balanced salt solution",
+            "category": "bacterial",
+            "ingredients": [{"preferred_term": "NaCl"}, {"preferred_term": "KCl"}],
+        },
+    )
     assert rt.candidates(tmp_path) == []
 
 
-def test_an_empty_record_that_is_NOT_named_like_a_solution_is_left_alone(rt, tmp_path):
-    """The 126 genuinely-empty media. They are the real #175 gap and must stay
-    visible in the triage report."""
-    _write(tmp_path / "bacterial", "c.yaml", {
-        "id": "CultureMech:3", "name": "z",
-        "original_name": "DESULFOBACTERIUM ANILINI MEDIUM", "category": "bacterial",
-        "ingredients": []})
+def test_an_empty_submedium_with_a_base_name_is_a_candidate(rt, tmp_path):
+    """Stock/base rows like Artificial sea water lacked name-based solution cues."""
+    _write(
+        tmp_path / "bacterial",
+        "c.yaml",
+        {
+            "id": "CultureMech:3",
+            "name": "z",
+            "original_name": "Artificial sea water (medium 600)",
+            "category": "bacterial",
+            "notes": "Source: KOMODO ModelSEED | ID: 400 | SubMedium: Yes",
+            "ingredients": [],
+        },
+    )
+    assert len(rt.candidates(tmp_path)) == 1
+
+
+def test_a_submedium_WITH_a_composition_is_left_alone(rt, tmp_path):
+    _write(
+        tmp_path / "bacterial",
+        "c.yaml",
+        {
+            "id": "CultureMech:3",
+            "name": "z",
+            "original_name": "Artificial sea water (medium 600)",
+            "category": "bacterial",
+            "notes": "Source: KOMODO ModelSEED | ID: 400 | SubMedium: Yes",
+            "ingredients": [{"preferred_term": "NaCl"}, {"preferred_term": "MgCl2"}],
+        },
+    )
+    assert rt.candidates(tmp_path) == []
+
+
+def test_an_empty_record_that_is_NOT_a_solution_stub_is_left_alone(rt, tmp_path):
+    """Genuinely empty media are the real #175 gap and must stay visible."""
+    _write(
+        tmp_path / "bacterial",
+        "c.yaml",
+        {
+            "id": "CultureMech:3",
+            "name": "z",
+            "original_name": "DESULFOBACTERIUM ANILINI MEDIUM",
+            "category": "bacterial",
+            "ingredients": [],
+        },
+    )
     assert rt.candidates(tmp_path) == []
 
 
 def test_an_already_typed_solution_is_not_reprocessed(rt, tmp_path):
-    _write(tmp_path / "bacterial", "d.yaml", {
-        "id": "CultureMech:4", "record_kind": "SOLUTION",
-        "original_name": "Trace element solution (medium 929)",
-        "category": "bacterial", "ingredients": []})
+    _write(
+        tmp_path / "bacterial",
+        "d.yaml",
+        {
+            "id": "CultureMech:4",
+            "record_kind": "SOLUTION",
+            "original_name": "Trace element solution (medium 929)",
+            "category": "bacterial",
+            "ingredients": [],
+        },
+    )
     assert rt.candidates(tmp_path) == []
 
 
 def test_stamping_is_idempotent(rt, tmp_path):
     d = tmp_path / "bacterial"
-    _write(d, "e.yaml", {"id": "CultureMech:5", "name": "e",
-                         "original_name": "Vitamin solution (medium 951)",
-                         "category": "bacterial", "ingredients": []})
+    _write(
+        d,
+        "e.yaml",
+        {
+            "id": "CultureMech:5",
+            "name": "e",
+            "original_name": "Vitamin solution (medium 951)",
+            "category": "bacterial",
+            "ingredients": [],
+        },
+    )
     assert rt.main(["--normalized-dir", str(tmp_path), "--apply"]) == 0
     once = (d / "e.yaml").read_text()
     assert rt.main(["--normalized-dir", str(tmp_path), "--apply"]) == 0
@@ -91,9 +160,17 @@ def test_stamping_is_idempotent(rt, tmp_path):
 
 def test_report_only_by_default(rt, tmp_path):
     d = tmp_path / "bacterial"
-    _write(d, "f.yaml", {"id": "CultureMech:6", "name": "f",
-                         "original_name": "Trace element solution (medium 84)",
-                         "category": "bacterial", "ingredients": []})
+    _write(
+        d,
+        "f.yaml",
+        {
+            "id": "CultureMech:6",
+            "name": "f",
+            "original_name": "Trace element solution (medium 84)",
+            "category": "bacterial",
+            "ingredients": [],
+        },
+    )
     before = (d / "f.yaml").read_text()
     assert rt.main(["--normalized-dir", str(tmp_path)]) == 0
     assert (d / "f.yaml").read_text() == before
@@ -106,8 +183,7 @@ def test_record_kind_makes_is_solution_record_true(rk):
 
 
 def test_the_term_id_rule_still_works(rk):
-    """The curated assertion is additional, not a replacement — 4,784 records still
-    rely on the upstream prefix."""
+    """The curated assertion is additional, not a replacement."""
     assert rk.is_solution_record({"term": {"id": "mediadive.solution:4367"}})
     assert rk.is_solution_record({"term": {"id": "MediaIngredientMech:1"}})
 
@@ -129,9 +205,9 @@ def test_a_curated_solution_does_not_have_solution_SHAPE(rk):
     """`is_solution_record` answers "should media audits skip this?".
     `has_solution_shape` answers "which schema class does this match?".
 
-    Conflating them routed 202 MediaRecipe-shaped records to SolutionRecipe and
-    produced 606 validation errors. A curatorial assertion about what a record
-    MEANS cannot change what it structurally IS.
+    Conflating them routed MediaRecipe-shaped records to SolutionRecipe and
+    produced hundreds of validation errors. A curatorial assertion about what a
+    record MEANS cannot change what it structurally IS.
     """
     stub = {"record_kind": "SOLUTION", "name": "x", "ingredients": []}
     assert rk.is_solution_record(stub)
@@ -148,5 +224,6 @@ def test_validate_strict_routes_on_shape_not_meaning():
     what broke validation."""
     src = (REPO_ROOT / "scripts" / "validate_strict.py").read_text()
     assert "has_solution_shape" in src
-    assert "is_solution_record(instance)" not in src, (
-        "validate_strict routes on meaning again; it must route on shape")
+    assert (
+        "is_solution_record(instance)" not in src
+    ), "validate_strict routes on meaning again; it must route on shape"

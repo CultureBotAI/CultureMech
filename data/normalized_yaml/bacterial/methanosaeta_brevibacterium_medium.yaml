@@ -30,6 +30,9 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: NaCl
   concentration:
     value: '0.6'
@@ -103,6 +106,9 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
+  term:
+    id: MICRO:0000182
+    label: Tryptone
 - preferred_term: L--Cysteine・HCl・H2O
   concentration:
     value: '0.5'
@@ -197,6 +203,12 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 8 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_mixed_score10_exact_terms_batch8.py
+  action: GROUNDED_MIXED_SCORE10_EXACT_TERMS_BATCH8
+  changes: Grounded exact score-10 ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for tryptone (BD-Difco), yeast extract.
 solutions:
 - preferred_term: Trace element solution (see Medium [M235])
   composition: []

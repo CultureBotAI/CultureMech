@@ -67,6 +67,21 @@ def test_no_ingredients_scores_highest_single_signal(srn):
     assert score >= 30
 
 
+def test_source_unavailable_empty_record_is_a_reviewed_endpoint(srn):
+    doc = _healthy() | {
+        "ingredients": [],
+        "data_quality_flags": [
+            "incomplete_composition",
+            "source_information_unavailable",
+        ],
+    }
+
+    score, reasons = srn.score_record(doc)
+
+    assert score == 0, reasons
+    assert srn.score_parsed([("bacterial/unavailable.yaml", doc)]) == []
+
+
 def test_placeholder_ingredient_text_is_flagged(srn):
     doc = _healthy() | {"ingredients": [_ing("See source for composition", grounded=False)]}
     score, reasons = srn.score_record(doc)
@@ -117,6 +132,61 @@ def test_solution_only_medium_is_not_treated_as_empty(srn):
     assert score == 15
 
 
+def test_medium_no_in_a_real_prepared_parent_name_is_not_placeholder_text(srn):
+    doc = _healthy() | {
+        "ingredients": [],
+        "solutions": [
+            {
+                "preferred_term": "Gauze's Synthetic Medium NO. 1",
+                "culturemech_term": {"id": "CultureMech:010138"},
+            }
+        ],
+    }
+
+    score, reasons = srn.score_record(doc)
+
+    assert "placeholder ingredient text" not in reasons
+    assert score == 15
+
+
+def test_curated_sparse_delta_variant_is_not_suspiciously_small(srn):
+    doc = _healthy() | {
+        "ingredients": [],
+        "solutions": [
+            {
+                "preferred_term": "ZMB ALS",
+                "culturemech_term": {"id": "CultureMech:015792"},
+            }
+        ],
+        "parent_media": {"id": "CultureMech:015792"},
+        "variant_relationship": "OMITTED_COMPONENT_VARIANT",
+        "data_quality_flags": ["ingredients_curated", "has_ontology_mappings"],
+    }
+
+    score, reasons = srn.score_record(doc)
+
+    assert score == 0, reasons
+
+
+def test_curated_opaque_commercial_product_is_not_regrounded_forever(srn):
+    doc = _healthy() | {
+        "ingredients": [
+            {
+                "preferred_term": "Opaque Medium (Supplier)",
+                "concentration": {"value": "1000", "unit": "ML_PER_L"},
+                "source": "Official recipe",
+                "notes": "The official recipe names the product only.",
+            },
+        ],
+        "data_quality_flags": ["ingredients_curated", "has_unmapped_ingredients"],
+    }
+
+    score, reasons = srn.score_record(doc)
+
+    assert "no composition component is grounded" not in reasons
+    assert score == 0, reasons
+
+
 def test_inline_solution_composition_is_the_grounding_surface(srn):
     doc = _healthy() | {
         "ingredients": [],
@@ -139,6 +209,38 @@ def test_a_bare_strain_pointer_name_is_flagged(srn):
     assert "identifies a strain" in "; ".join(reasons)
 
 
+def test_a_curated_parent_linked_strain_pointer_variant_is_not_flagged(srn):
+    doc = _healthy() | {
+        "original_name": "For DSM 25939",
+        "parent_media": {
+            "path": "data/normalized_yaml/bacterial/corn_meal_agar.yaml",
+            "id": "CultureMech:001283",
+        },
+        "variant_relationship": "PH_VARIANT",
+        "data_quality_flags": ["ingredients_curated", "has_ontology_mappings"],
+    }
+
+    score, reasons = srn.score_record(doc)
+
+    assert score == 0, reasons
+
+
+def test_a_source_duplicate_strain_pointer_name_is_still_flagged(srn):
+    doc = _healthy() | {
+        "original_name": "For DSM 25939",
+        "parent_media": {
+            "path": "data/normalized_yaml/bacterial/corn_meal_agar.yaml",
+            "id": "CultureMech:001283",
+        },
+        "variant_relationship": "SOURCE_DUPLICATE",
+        "data_quality_flags": ["ingredients_curated", "has_ontology_mappings"],
+    }
+
+    _, reasons = srn.score_record(doc)
+
+    assert "identifies a strain" in "; ".join(reasons)
+
+
 @pytest.mark.parametrize("name", ["BG11", "JM", "CH"])
 def test_short_but_real_medium_names_are_not_flagged(srn, name):
     """BG11 and JM are real media. An earlier draft flagged short names and caught
@@ -154,6 +256,39 @@ def test_missing_provenance_is_flagged(srn):
     del doc["notes"]
     joined = "; ".join(srn.score_record(doc)[1])
     assert "media_term" in joined and "provenance" in joined
+
+
+def test_structured_sources_are_enough_for_imported_source_provenance(srn):
+    doc = _healthy()
+    del doc["media_term"]
+    del doc["ph_value"]
+    doc["sources"] = [
+        {
+            "database": "CultureBotHT",
+            "database_id": "DinoMM noCarbon",
+            "url": "https://github.com/CultureBotAI/CultureBotHT",
+        }
+    ]
+
+    score, reasons = srn.score_record(doc)
+
+    assert score == 5
+    assert reasons == ["no pH and no temperature"]
+    assert srn.score_parsed([("bacterial/dinomm_nocarbon_highnutrient.yaml", doc)]) == []
+
+
+def test_curated_legacy_source_url_unavailable_is_not_untraceable(srn):
+    doc = _healthy()
+    del doc["media_term"]
+    doc["data_quality_flags"] = [
+        "has_ontology_mappings",
+        "ingredients_curated",
+        "legacy_source_url_unavailable",
+    ]
+
+    score, reasons = srn.score_record(doc)
+
+    assert score == 0, reasons
 
 
 def test_missing_conditions_is_weighted_low(srn):
@@ -181,27 +316,21 @@ def _rank(srn, corpus):
     return srn.score_parsed([(str(p.relative_to(normalized)), d) for p, d in corpus])
 
 
-def test_the_worst_ranked_records_all_carry_a_severe_reason(srn, corpus):
-    """The corpus-level check that the ranking means something.
+def test_ranked_records_are_sorted_and_carry_reasons(srn, corpus):
+    """The corpus-level check that the ranking means something when populated.
 
     This used to anchor on NBRC_1197, which #166 confirmed carried an unparsed
     recipe. That record was repaired in #299 — its composition was recovered from
-    the preserved NBRC HTML — so it now scores 35 (rank ~302) for the accurate and
-    much milder reason "no composition component is grounded". The anchor was retired rather
-    than swapped for another record: no remaining record is independently
-    confirmed broken AND ranked in the worst 60, so naming one would assert a
-    claim nothing backs. `test_unparsed_recipe_in_an_ingredient_name_is_flagged`
-    still covers the detector itself against a synthetic case.
+    the preserved NBRC HTML. The last curated opaque-product endpoints now leave
+    no severe rows, and a clean report is also a valid ranking state.
 
     What survives is the property that actually matters: every top-ranked record
     must have earned it.
     """
     rows = _rank(srn, corpus)
-    assert rows, "scorer returned nothing"
+    for before, after in zip(rows, rows[1:], strict=False):
+        assert before["score"] >= after["score"]
     for row in rows[:60]:
-        # 40 is the floor the top 60 actually reach today (rank 1 scores 55).
-        # The point is that ranking high is earned, not that the cut-off is 40.
-        assert row["score"] >= 40, f"{row['file_path']} ranks top-60 at only {row['score']}"
         assert row["reasons"], f"{row['file_path']} ranks top-60 with no reason given"
 
 
@@ -265,3 +394,28 @@ def test_conditions_still_contribute_when_something_else_is_wrong(srn, tmp_path)
     assert len(rows) == 1
     assert "no pH and no temperature" in rows[0]["reasons"]
     assert rows[0]["score"] > srn.score_record(broken | {"ph_value": 7.0})[0]
+
+
+def test_main_writes_lf_only_tsv(srn, tmp_path):
+    import yaml as _yaml
+
+    normalized = tmp_path / "normalized"
+    normalized.mkdir()
+    (normalized / "broken.yaml").write_text(
+        _yaml.dump(
+            {
+                "id": "CultureMech:2",
+                "name": "Broken",
+                "original_name": "Broken",
+                "ingredients": [],
+            }
+        ),
+        encoding="utf-8",
+    )
+    out = tmp_path / "review_need_ranking.tsv"
+
+    assert srn.main(["--normalized-dir", str(normalized), "--out", str(out)]) == 0
+
+    data = out.read_bytes()
+    assert b"\r\n" not in data
+    assert data.startswith(b"score\tfile_path\trecord_id\tname\tn_components\treasons\n")

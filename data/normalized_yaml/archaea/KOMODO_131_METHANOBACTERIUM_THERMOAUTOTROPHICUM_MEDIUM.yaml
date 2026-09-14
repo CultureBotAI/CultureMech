@@ -11,9 +11,375 @@ media_term:
   term:
     id: komodo.medium:131
     label: METHANOBACTERIUM THERMOAUTOTROPHICUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 131 | DSMZ Medium: 131 (mediadive.medium:131)
-  | Aerobic: Yes'
-ingredients: []
+notes: Archived DSMZ Medium 131 defines METHANOBACTERIUM THERMOAUTOTROPHICUM MEDIUM
+  with base mineral salts, 10 mL/L vitamin solution, 10 mL/L trace element solution,
+  resazurin, cysteine hydrochloride hydrate, sodium sulfide nonahydrate, pH 7.2, an
+  80:20 H2/CO2 anaerobic atmosphere, and N2-sterilized reducing solutions; this record
+  expands those stock solutions into final per-liter components.
+ingredients:
+- preferred_term: KH2PO4
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 lists 0.300 g/L KH2PO4 per liter in the main recipe.
+  concentration:
+    value: '0.300000'
+    unit: G_PER_L
+  term: &id001
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term: *id001
+- preferred_term: (NH4)2SO4
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 lists 1.500 g/L (NH4)2SO4 per liter in the main
+    recipe.
+  concentration:
+    value: '1.500000'
+    unit: G_PER_L
+  term: &id002
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term: *id002
+- preferred_term: NaCl
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 lists 0.600 g/L NaCl per liter in the main recipe
+    and adds 10 mL/L of a trace element solution containing 1.000 g/L NaCl, yielding
+    0.610000 g/L total.
+  concentration:
+    value: '0.610000'
+    unit: G_PER_L
+  term: &id003
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term: *id003
+- preferred_term: MgSO4 x 7 H2O
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 lists 0.120 g/L MgSO4 x 7 H2O per liter in the main
+    recipe and adds 10 mL/L of a trace element solution containing 6.200 g/L MgSO4
+    x 7 H2O, yielding 0.182000 g/L total.
+  concentration:
+    value: '0.182000'
+    unit: G_PER_L
+  term: &id004
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term: *id004
+- preferred_term: CaCl2 x 2 H2O
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 lists 0.080 g/L CaCl2 x 2 H2O per liter in the main
+    recipe and adds 10 mL/L of a trace element solution containing 0.130 g/L CaCl2
+    x 2 H2O, yielding 0.081300 g/L total.
+  concentration:
+    value: '0.081300'
+    unit: G_PER_L
+  term: &id005
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term: *id005
+- preferred_term: FeSO4 x 7 H2O
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 lists 4.000 mg/L FeSO4 x 7 H2O per liter in the
+    main recipe and adds 10 mL/L of a trace element solution containing 0.100 g/L
+    FeSO4 x 7 H2O, yielding 0.005000 g/L total.
+  concentration:
+    value: '0.005000'
+    unit: G_PER_L
+  term: &id006
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term: *id006
+- preferred_term: K2HPO4
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 lists 0.150 g/L K2HPO4 per liter in the main recipe.
+  concentration:
+    value: '0.150000'
+    unit: G_PER_L
+  term: &id007
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term: *id007
+- preferred_term: Na2CO3
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 lists 4.000 g/L Na2CO3 per liter in the main recipe.
+  concentration:
+    value: '4.000000'
+    unit: G_PER_L
+  term: &id008
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term: *id008
+- preferred_term: Na2-EDTA
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 adds 10 mL/L of a trace element solution containing
+    0.640 g/L Na2-EDTA, yielding 0.006400 g/L.
+  concentration:
+    value: '0.006400'
+    unit: G_PER_L
+  term: &id009
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
+  mediaingredientmech_chebi_term: *id009
+- preferred_term: MnSO4 x 4 H2O
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 adds 10 mL/L of a trace element solution containing
+    0.550 g/L MnSO4 x 4 H2O, yielding 0.005500 g/L.
+  concentration:
+    value: '0.005500'
+    unit: G_PER_L
+  term: &id010
+    id: CHEBI:86358
+    label: manganese(II) sulfate tetrahydrate
+  mediaingredientmech_chebi_term: *id010
+- preferred_term: CoCl2 x 6 H2O
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 adds 10 mL/L of a trace element solution containing
+    0.170 g/L CoCl2 x 6 H2O, yielding 0.001700 g/L.
+  concentration:
+    value: '0.001700'
+    unit: G_PER_L
+  term: &id011
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  mediaingredientmech_chebi_term: *id011
+- preferred_term: ZnSO4 x 7 H2O
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 adds 10 mL/L of a trace element solution containing
+    0.180 g/L ZnSO4 x 7 H2O, yielding 0.001800 g/L.
+  concentration:
+    value: '0.001800'
+    unit: G_PER_L
+  term: &id012
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term: *id012
+- preferred_term: CuSO4
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 adds 10 mL/L of a trace element solution containing
+    0.050 g/L CuSO4, yielding 0.000500 g/L.
+  concentration:
+    value: '0.000500'
+    unit: G_PER_L
+  term: &id013
+    id: CHEBI:23414
+    label: copper(II) sulfate
+  mediaingredientmech_chebi_term: *id013
+- preferred_term: KAl(SO4)2 x 12 H2O
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 adds 10 mL/L of a trace element solution containing
+    0.018 g/L KAl(SO4)2 x 12 H2O, yielding 0.000180 g/L.
+  concentration:
+    value: '0.000180'
+    unit: G_PER_L
+  term: &id014
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+  mediaingredientmech_chebi_term: *id014
+- preferred_term: H3BO3
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 adds 10 mL/L of a trace element solution containing
+    0.010 g/L H3BO3, yielding 0.000100 g/L.
+  concentration:
+    value: '0.000100'
+    unit: G_PER_L
+  term: &id015
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term: *id015
+- preferred_term: Na2MoO4 x 2 H2O
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 adds 10 mL/L of a trace element solution containing
+    0.011 g/L Na2MoO4 x 2 H2O, yielding 0.000110 g/L.
+  concentration:
+    value: '0.000110'
+    unit: G_PER_L
+  term: &id016
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term: *id016
+- preferred_term: NiCl2 x 6 H2O
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 adds 10 mL/L of a trace element solution containing
+    0.025 g/L NiCl2 x 6 H2O, yielding 0.000250 g/L.
+  concentration:
+    value: '0.000250'
+    unit: G_PER_L
+  term: &id017
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+  mediaingredientmech_chebi_term: *id017
+- preferred_term: Biotin
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 adds 10 mL/L of a vitamin solution containing 2.000
+    mg/L Biotin, yielding 0.000020 g/L.
+  concentration:
+    value: '0.000020'
+    unit: G_PER_L
+  term: &id018
+    id: CHEBI:15956
+    label: biotin
+  mediaingredientmech_chebi_term: *id018
+- preferred_term: Folic acid
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 adds 10 mL/L of a vitamin solution containing 2.000
+    mg/L Folic acid, yielding 0.000020 g/L.
+  concentration:
+    value: '0.000020'
+    unit: G_PER_L
+  term: &id019
+    id: CHEBI:27470
+    label: folic acid
+  mediaingredientmech_chebi_term: *id019
+- preferred_term: Pyridoxine-HCl
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 adds 10 mL/L of a vitamin solution containing 10.000
+    mg/L Pyridoxine-HCl, yielding 0.000100 g/L.
+  concentration:
+    value: '0.000100'
+    unit: G_PER_L
+  term: &id020
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
+  mediaingredientmech_chebi_term: *id020
+- preferred_term: Thiamine-HCl x 2 H2O
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 adds 10 mL/L of a vitamin solution containing 5.000
+    mg/L Thiamine-HCl x 2 H2O, yielding 0.000050 g/L.
+  concentration:
+    value: '0.000050'
+    unit: G_PER_L
+  term: &id021
+    id: CHEBI:132751
+    label: thiamine hydrochloride dihydrate
+  mediaingredientmech_chebi_term: *id021
+- preferred_term: Riboflavine
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 adds 10 mL/L of a vitamin solution containing 5.000
+    mg/L Riboflavine, yielding 0.000050 g/L.
+  concentration:
+    value: '0.000050'
+    unit: G_PER_L
+  term: &id022
+    id: CHEBI:17015
+    label: riboflavin
+  mediaingredientmech_chebi_term: *id022
+- preferred_term: Nicotinic acid
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 adds 10 mL/L of a vitamin solution containing 5.000
+    mg/L Nicotinic acid, yielding 0.000050 g/L.
+  concentration:
+    value: '0.000050'
+    unit: G_PER_L
+  term: &id023
+    id: CHEBI:15940
+    label: nicotinic acid
+  mediaingredientmech_chebi_term: *id023
+- preferred_term: Ca-pantothenate
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 adds 10 mL/L of a vitamin solution containing 5.000
+    mg/L Ca-pantothenate, yielding 0.000050 g/L.
+  concentration:
+    value: '0.000050'
+    unit: G_PER_L
+  term: &id024
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  mediaingredientmech_chebi_term: *id024
+- preferred_term: p-Aminobenzoic acid
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 adds 10 mL/L of a vitamin solution containing 1.000
+    mg/L p-Aminobenzoic acid, yielding 0.000010 g/L.
+  concentration:
+    value: '0.000010'
+    unit: G_PER_L
+  term: &id025
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+  mediaingredientmech_chebi_term: *id025
+- preferred_term: Vitamin B12
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 adds 10 mL/L of a vitamin solution containing 0.010
+    mg/L Vitamin B12, yielding 0.000000100 g/L.
+  concentration:
+    value: '0.000000100'
+    unit: G_PER_L
+  term: &id026
+    id: CHEBI:176843
+    label: vitamin B12
+  mediaingredientmech_chebi_term: *id026
+- preferred_term: Resazurin
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 lists 1.000 mg/L Resazurin per liter in the main
+    recipe.
+  concentration:
+    value: '0.001000'
+    unit: G_PER_L
+  term: &id027
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term: *id027
+- preferred_term: Cysteine-HCl x H2O
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 lists 1.500 g/L Cysteine-HCl x H2O per liter in
+    the main recipe.
+  concentration:
+    value: '1.500000'
+    unit: G_PER_L
+  term: &id028
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+  mediaingredientmech_chebi_term: *id028
+- preferred_term: Na2S x 9 H2O
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 lists 1.500 g/L Na2S x 9 H2O per liter in the main
+    recipe.
+  concentration:
+    value: '1.500000'
+    unit: G_PER_L
+  term: &id029
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  mediaingredientmech_chebi_term: *id029
+- preferred_term: H2
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 prepares and sterilizes the medium under 80% H2
+    and 20% CO2.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term: &id030
+    id: CHEBI:18276
+    label: dihydrogen
+  mediaingredientmech_chebi_term: *id030
+- preferred_term: CO2
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 prepares and sterilizes the medium under 80% H2
+    and 20% CO2.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term: &id031
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term: *id031
+- preferred_term: N2
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 sterilizes the cysteine and sulfide solutions under
+    N2.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term: &id032
+    id: CHEBI:17997
+    label: dinitrogen
+  mediaingredientmech_chebi_term: *id032
+- preferred_term: Distilled water
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 lists 1000 mL distilled water in the main recipe.
+  concentration:
+    value: '1000.000'
+    unit: ML_PER_L
+  term: &id033
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term: *id033
 applications:
 - Microbial cultivation
 curation_history:
@@ -36,5 +402,29 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_131_score30.py
+  action: RESOLVED_KOMODO_131_SCORE30
+  source: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium131.pdf
+  notes: Archived DSMZ Medium 131 defines METHANOBACTERIUM THERMOAUTOTROPHICUM MEDIUM
+    with base mineral salts, 10 mL/L vitamin solution, 10 mL/L trace element solution,
+    resazurin, cysteine hydrochloride hydrate, sodium sulfide nonahydrate, pH 7.2,
+    an 80:20 H2/CO2 anaerobic atmosphere, and N2-sterilized reducing solutions; this
+    record expands those stock solutions into final per-liter components.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_strain_backlinks.py
+  action: ADDED_KOMODO_STRAIN_BACKLINKS
+  changes: Added reciprocal variant_children links
+  source: komodo.medium:131
+  notes: Mirrored curated KOMODO parent_media links on the parent record.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=131
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium131.pdf
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_131_modified_for_dsm_6216.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004066
+  name: medium_131_modified_for_dsm_6216

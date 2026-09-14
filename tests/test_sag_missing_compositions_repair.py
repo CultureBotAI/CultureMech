@@ -170,8 +170,39 @@ def test_repair_is_guarded_and_idempotent(repair_module) -> None:
     assert changed
     assert not changed_again
     assert second == repaired
-    assert "data_quality_flags" not in repaired
+    assert repaired["data_quality_flags"] == [
+        "has_ontology_mappings",
+        "ingredients_curated",
+    ]
     assert repaired["curation_history"][-1]["action"] == repair_module.ACTION
+
+
+def test_repair_backfills_flags_on_already_restored_records(repair_module) -> None:
+    target = next(target for target in repair_module.TARGETS if target.recipe_key == "soil_water")
+    doc = {
+        "id": target.record_id,
+        "notes": repair_module.source_note(target),
+        "curation_history": [
+            {
+                "timestamp": repair_module.TIMESTAMP,
+                "curator": "repair_sag_missing_compositions.py",
+                "action": repair_module.ACTION,
+            }
+        ],
+        **copy.deepcopy(repair_module.RECIPES[target.recipe_key]),
+    }
+
+    repaired, changed = repair_module.repair_document(doc, target)
+    second, changed_again = repair_module.repair_document(repaired, target)
+
+    assert changed
+    assert not changed_again
+    assert second == repaired
+    assert repaired["data_quality_flags"] == [
+        "has_ontology_mappings",
+        "ingredients_curated",
+    ]
+    assert repaired["curation_history"][-1]["action"] == repair_module.FLAG_ACTION
 
 
 def test_precondition_drift_is_rejected(repair_module) -> None:

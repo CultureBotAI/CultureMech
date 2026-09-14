@@ -200,40 +200,42 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-variant_children:
-- path: data/normalized_yaml/bacterial/for_dsm_13380.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005170
-  name: for_dsm_13380
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_13514.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005171
-  name: for_dsm_13514
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_4184.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005168
-  name: for_dsm_4184
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_4185.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005169
-  name: for_dsm_4185
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_390_pyrobaculum_score10.py
+  action: RESOLVED_KOMODO_390_PYROBACULUM_STRAIN_VARIANTS
+  changes: Reclassified KOMODO Medium 390 DSM children as strain variants
+  source: KOMODO Medium 390-390.4
+  notes: Corrected the parent path to the archaeal KOMODO base and kept the four DSM-specific
+    suffixes beneath that base.
 parent_media:
-  path: data/normalized_yaml/bacterial/pyrobaculum_medium.yaml
+  path: data/normalized_yaml/archaea/pyrobaculum_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001497
   name: pyrobaculum_medium
-  notes: KOMODO record explicitly cites DSMZ Medium 390; one unlinked DSMZ parent
-    record exists and the local physical state, pH, ingredient, and concentration
-    signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 390; local physical state, pH,
+    ingredient, and concentration signatures match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - KOMODO record is an exact source duplicate of DSMZ Medium 390; local ingredient
   and concentration signatures match.
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_4184.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005168
+  name: for_dsm_4184
+  notes: KOMODO Medium 390.1 applies PYROBACULUM MEDIUM for DSM 4184.
+- path: data/normalized_yaml/bacterial/for_dsm_4185.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005169
+  name: for_dsm_4185
+  notes: KOMODO Medium 390.2 applies PYROBACULUM MEDIUM for DSM 4185.
+- path: data/normalized_yaml/bacterial/for_dsm_13380.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005170
+  name: for_dsm_13380
+  notes: KOMODO Medium 390.3 applies PYROBACULUM MEDIUM for DSM 13380.
+- path: data/normalized_yaml/bacterial/for_dsm_13514.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005171
+  name: for_dsm_13514
+  notes: KOMODO Medium 390.4 applies PYROBACULUM MEDIUM for DSM 13514.

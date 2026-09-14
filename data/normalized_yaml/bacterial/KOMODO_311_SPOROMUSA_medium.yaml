@@ -395,3 +395,38 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_311_sporomusa_score10.py
+  action: RESOLVED_KOMODO_311_SPOROMUSA_TOPOLOGY
+  changes: Linked exact KOMODO Medium 311 DSM strain wrappers
+  source: KOMODO Medium 311 and exact 311 strain wrapper records
+  notes: Left KOMODO 311a and MediaDive 311/311b records out because this pass only
+    links exact KOMODO Medium 311 source terms.
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_3132.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004949
+  name: for_dsm_3132
+  notes: KOMODO Medium 311.1 applies KOMODO Medium 311 to DSM 3132.
+- path: data/normalized_yaml/bacterial/for_dsm_4440.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004951
+  name: for_dsm_4440
+  notes: KOMODO Medium 311.2 applies KOMODO Medium 311 to DSM 4440.
+- path: data/normalized_yaml/bacterial/for_dsm_16652.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004952
+  name: for_dsm_16652
+  notes: KOMODO Medium 311.3 applies KOMODO Medium 311 to DSM 16652.
+- path: data/normalized_yaml/bacterial/medium_311_modified_for_dsm_2767.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004950
+  name: medium_311_modified_for_dsm_2767
+  notes: KOMODO Medium 311_2767 applies KOMODO Medium 311 to DSM 2767.
+- path: data/normalized_yaml/bacterial/medium_311_modified_for_dsm_5090.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004953
+  name: medium_311_modified_for_dsm_5090
+  notes: KOMODO Medium 311_5090 applies KOMODO Medium 311 to DSM 5090.
+data_quality_flags:
+- ingredients_curated

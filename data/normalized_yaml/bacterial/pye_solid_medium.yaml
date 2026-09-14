@@ -6,51 +6,69 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: yeast extract
-  concentration:
-    value: '0.1'
-    unit: PERCENT_W_V
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: CaCl2
-  concentration:
-    value: '0.5'
-    unit: MILLIMOLAR
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
-  term:
-    id: CHEBI:3312
-    label: calcium dichloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:3312
-    label: calcium dichloride
-- preferred_term: MgSO4
-  concentration:
-    value: '1'
-    unit: MILLIMOLAR
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: Bacto agar
-  concentration:
-    value: '1.5'
-    unit: PERCENT_W_V
-  notes: 'Role: Solidifying component'
 - preferred_term: Bacto peptone
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Properties: Undefined component'
+  source: TOGO M2872 / Marks et al. 2010
+  notes: Marks et al. 2010 lists 0.2% Bacto peptone in rich PYE.
+  term:
+    id: MICRO:0000178
+    label: Bacto peptone
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: PERCENT_W_V
+  source: TOGO M2872 / Marks et al. 2010
+  notes: Marks et al. 2010 lists 0.1% yeast extract in rich PYE.
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+- preferred_term: MgSO4
+  concentration:
+    value: '1'
+    unit: MILLIMOLAR
+  source: TOGO M2872 / Marks et al. 2010
+  notes: Marks et al. 2010 lists 1 mM MgSO4 in rich PYE.
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: CaCl2
+  concentration:
+    value: '0.5'
+    unit: MILLIMOLAR
+  source: TOGO M2872 / Marks et al. 2010
+  notes: Marks et al. 2010 lists 0.5 mM CaCl2 in rich PYE.
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
+- preferred_term: Agar
+  concentration:
+    value: '1.5'
+    unit: PERCENT_W_V
+  source: TOGO M2872 / Marks et al. 2010
+  notes: Marks et al. 2010 lists PYE solid medium as PYE with 1.5% Bacto agar; the
+    source-disclosed agar solidifier is grounded to agar.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M2872
   term:
     id: TOGO:M2872
     label: PYE Solid medium
-notes: 'Source: https://togomedium.org/medium/M2872'
+notes: TOGO M2872 imports PYE Solid medium from Marks et al. 2010. The article defines
+  rich PYE as 0.2% Bacto peptone, 0.1% yeast extract, 1 mM MgSO4, and 0.5 mM CaCl2,
+  then defines solid medium as PYE with 1.5% Bacto agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -85,3 +103,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2872_pye_solid_score15.py
+  action: RESOLVED_TOGO_M2872_PYE_SOLID_SCORE15
+  source: https://togomedium.org/medium/M2872; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2872;
+    https://doi.org/10.1128/JB.00255-10; https://pmc.ncbi.nlm.nih.gov/articles/PMC2897358/
+  notes: Grounded all five source-listed PYE Solid components to MediaIngredientMech,
+    FoodOn, or ChEBI terms using TOGO M2872 and Marks et al. 2010. Left pH and recipe
+    temperature unset because the source does not report a formulation pH and reports
+    30 C as a study incubation condition.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2872
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2872
+- reference: https://doi.org/10.1128/JB.00255-10
+- reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC2897358/

@@ -2,29 +2,235 @@ id: CultureMech:004386
 name: wolfes_mineral_elixir_medium_792
 original_name: Wolfes Mineral Elixir (medium 792)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 1.0
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 2106 | DSMZ Medium: 2106
-  (mediadive.medium:2106) | Aerobic: No | SubMedium: Yes'
+notes: KOMODO Medium 2106 is a SubMedium import for the Wolfe's mineral elixir printed
+  inside DSMZ Medium 792. DSMZ Medium 792 / MediaDive solution 1605 lists fourteen
+  salt rows, 1000.00 ml distilled water, and a pH 1.0 adjustment with diluted H2SO4
+  for this stock.
 media_term:
   preferred_term: KOMODO Medium 2106
   term:
     id: komodo.medium:2106
     label: Wolfes Mineral Elixir (medium 792)
 ingredients:
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '30.00'
+    unit: G_PER_L
+  source: DSMZ Medium 792 Wolfe's mineral elixir
+  notes: DSMZ Medium 792 Wolfe's mineral elixir lists 30.00 g MgSO4 x 7 H2O.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: MnSO4 x H2O
+  concentration:
+    value: '5.00'
+    unit: G_PER_L
+  source: DSMZ Medium 792 Wolfe's mineral elixir
+  notes: DSMZ Medium 792 Wolfe's mineral elixir lists 5.00 g MnSO4 x H2O.
+  term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: NaCl
+  concentration:
+    value: '10.00'
+    unit: G_PER_L
+  source: DSMZ Medium 792 Wolfe's mineral elixir
+  notes: DSMZ Medium 792 Wolfe's mineral elixir lists 10.00 g NaCl.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '1.00'
+    unit: G_PER_L
+  source: DSMZ Medium 792 Wolfe's mineral elixir
+  notes: DSMZ Medium 792 Wolfe's mineral elixir lists 1.00 g FeSO4 x 7 H2O.
+  term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  nutritional_roles:
+  - IRON_SOURCE
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '1.80'
+    unit: G_PER_L
+  source: DSMZ Medium 792 Wolfe's mineral elixir
+  notes: DSMZ Medium 792 Wolfe's mineral elixir lists 1.80 g CoCl2 x 6 H2O.
+  term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '1.00'
+    unit: G_PER_L
+  source: DSMZ Medium 792 Wolfe's mineral elixir
+  notes: DSMZ Medium 792 Wolfe's mineral elixir lists 1.00 g CaCl2 x 2 H2O.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: ZnSO4 x 7 H2O
+  concentration:
+    value: '1.80'
+    unit: G_PER_L
+  source: DSMZ Medium 792 Wolfe's mineral elixir
+  notes: DSMZ Medium 792 Wolfe's mineral elixir lists 1.80 g ZnSO4 x 7 H2O.
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: CuSO4 x 5 H2O
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: DSMZ Medium 792 Wolfe's mineral elixir
+  notes: DSMZ Medium 792 Wolfe's mineral elixir lists 0.10 g CuSO4 x 5 H2O.
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: AlK(SO4)2 x 12 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+  source: DSMZ Medium 792 Wolfe's mineral elixir
+  notes: DSMZ Medium 792 Wolfe's mineral elixir lists 0.18 g AlK(SO4)2 x 12 H2O.
+  term:
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: H3BO3
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: DSMZ Medium 792 Wolfe's mineral elixir
+  notes: DSMZ Medium 792 Wolfe's mineral elixir lists 0.10 g H3BO3.
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: DSMZ Medium 792 Wolfe's mineral elixir
+  notes: DSMZ Medium 792 Wolfe's mineral elixir lists 0.10 g Na2MoO4 x 2 H2O.
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
+  concentration:
+    value: '2.80'
+    unit: G_PER_L
+  source: DSMZ Medium 792 Wolfe's mineral elixir
+  notes: DSMZ Medium 792 Wolfe's mineral elixir lists 2.80 g (NH4)2Ni(SO4)2 x 6 H2O.
+  term:
+    id: CHEBI:86149
+    label: ammonium nickel sulfate hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86149
+    label: ammonium nickel sulfate hexahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: DSMZ Medium 792 Wolfe's mineral elixir
+  notes: DSMZ Medium 792 Wolfe's mineral elixir lists 0.10 g Na2WO4 x 2 H2O.
+  term:
+    id: CHEBI:63939
+    label: sodium tungstate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
+    label: sodium tungstate dihydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: Na2SeO4
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: DSMZ Medium 792 Wolfe's mineral elixir
+  notes: DSMZ Medium 792 Wolfe's mineral elixir lists 0.10 g Na2SeO4.
+  term:
+    id: CHEBI:77775
+    label: sodium selenate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:77775
+    label: sodium selenate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 792 Wolfe's mineral elixir
+  notes: DSMZ Medium 792 Wolfe's mineral elixir lists 1000.00 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: H2SO4
-  notes: Extracted from recipe notes (pH buffer)
-  data_quality_flags:
-  - extracted_from_notes
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_chebi_term:
+  source: DSMZ Medium 792 Wolfe's mineral elixir
+  notes: DSMZ Medium 792 instructs first adjusting Wolfe's mineral elixir to pH 1.0
+    with diluted H2SO4; the amount is retained as variable because it is titrated
+    to pH.
+  term:
     id: CHEBI:26836
     label: sulfuric acid
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:26836
     label: sulfuric acid
 applications:
@@ -61,3 +267,30 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_2106_wolfes_mineral_elixir_score15.py
+  action: RESOLVED_KOMODO_2106_WOLFES_MINERAL_ELIXIR_SCORE15
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792.pdf; https://mediadive.dsmz.de/medium/792;
+    https://mediadive.dsmz.de/rest/medium/792
+  notes: KOMODO Medium 2106 is a SubMedium import for the Wolfe's mineral elixir printed
+    inside DSMZ Medium 792. DSMZ Medium 792 / MediaDive solution 1605 lists fourteen
+    salt rows, 1000.00 ml distilled water, and a pH 1.0 adjustment with diluted H2SO4
+    for this stock. Replaced the imported H2SO4-only pH-buffer stub with the complete
+    DSMZ Wolfe's mineral elixir formula, corrected water to 1000.0 ml/L, and grounded
+    the pH-adjustment row.
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: First adjust the Wolfe's mineral elixir stock to pH 1.0 with diluted
+    H2SO4.
+- step_number: 2
+  action: MIX
+  description: Add and dissolve the Wolfe's mineral elixir salts in 1000.0 ml distilled
+    water.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792.pdf
+- reference: https://mediadive.dsmz.de/medium/792
+- reference: https://mediadive.dsmz.de/rest/medium/792

@@ -3,15 +3,16 @@ name: glucose_streptococcal_broth_medium
 original_name: Glucose streptococcal broth medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
+temperature_value: 30.0
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+    value: '1.0'
+    unit: L
+  source: TOGO M2884
+  notes: TOGO M2884 lists 1 L distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -20,21 +21,31 @@ ingredients:
     label: water
 - preferred_term: Yeast extract
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Sodium-β-glycerophosphate
+  source: TOGO M2884
+  notes: TOGO M2884 lists 5 g/L yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Sodium beta-glycerophosphate
   concentration:
     value: '7.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Organic
-    compound'
+  source: TOGO M2884
+  notes: TOGO M2884 lists 7.2 g/L Sodium-beta-glycerophosphate.
+  term:
+    id: CHEBI:132089
+    label: sodium glycerol 2-phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132089
+    label: sodium glycerol 2-phosphate
 - preferred_term: Glucose
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
+  source: TOGO M2884
+  notes: TOGO M2884 lists 10 g/L glucose.
   term:
     id: CHEBI:17234
     label: glucose
@@ -43,25 +54,43 @@ ingredients:
     label: glucose
 - preferred_term: Meat extract
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2884
+  notes: TOGO M2884 lists 10 g/L meat extract; this biological extract is retained
+    as an opaque complex component.
 - preferred_term: Tryptose
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2884
+  notes: TOGO M2884 lists 5 g/L tryptose; this Bacto Tryptose-like peptone product
+    is retained as an opaque complex component.
 - preferred_term: Tryptone
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2884
+  notes: TOGO M2884 lists 5 g/L tryptone.
+  term:
+    id: MICRO:0000182
+    label: tryptone
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve 5.0 g yeast extract, 7.2 g sodium beta-glycerophosphate, 10.0
+    g glucose, 10.0 g meat extract, 5.0 g tryptose, and 5.0 g tryptone in 1.0 L distilled
+    water.
 media_term:
   preferred_term: TOGO Medium M2884
   term:
     id: TOGO:M2884
     label: Glucose streptococcal broth medium
-notes: 'Source: https://togomedium.org/medium/M2884'
+notes: TOGO M2884 lists glucose streptococcal broth as 1 L distilled water, 5 g yeast
+  extract, 7.2 g Sodium-beta-glycerophosphate, 10 g glucose, 10 g meat extract, 5
+  g tryptose, and 5 g tryptone. TOGO cites Arendt et al. 1994 for Lactococcus lactis
+  strains grown at 30 C in M17 medium supplemented with glucose or glucose streptococcal
+  broth.
 applications:
 - Microbial cultivation
 curation_history:
@@ -92,3 +121,22 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2884_score15.py
+  action: RESOLVED_TOGO_M2884_SCORE15
+  source: https://togomedium.org/medium/M2884; PMID:8031083; doi:10.1128/aem.60.6.1875-1883.1994
+  notes: TOGO M2884 lists glucose streptococcal broth as 1 L distilled water, 5 g
+    yeast extract, 7.2 g Sodium-beta-glycerophosphate, 10 g glucose, 10 g meat extract,
+    5 g tryptose, and 5 g tryptone. TOGO cites Arendt et al. 1994 for Lactococcus
+    lactis strains grown at 30 C in M17 medium supplemented with glucose or glucose
+    streptococcal broth. Corrected the imported distilled-water unit from g/L to 1
+    L and grounded water, yeast extract, sodium beta-glycerophosphate, glucose, and
+    tryptone.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2884
+- reference: PMID:8031083
+- reference: doi:10.1128/aem.60.6.1875-1883.1994

@@ -389,3 +389,22 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_135_acetobacterium_score10.py
+  action: RESOLVED_KOMODO_135_ACETOBACTERIUM_PH_TOPOLOGY
+  changes: Linked under DSMZ Medium 135a as a pH variant
+  source: KOMODO Medium 135.2
+  notes: KOMODO Medium 135.2 applies the marine Acetobacterium signature at pH 6.5
+    for DSM 1974.
+parent_media:
+  path: data/normalized_yaml/specialized/acetobacterium_medium_marine.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:015340
+  name: acetobacterium_medium_marine
+  notes: DSMZ Medium 135a is the pH 7.0-7.2 marine Acetobacterium base.
+variant_relationship: PH_VARIANT
+variant_modifications:
+- KOMODO Medium 135.2 applies the marine Acetobacterium signature at pH 6.5 for DSM
+  1974.
+data_quality_flags:
+- ingredients_curated

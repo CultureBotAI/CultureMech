@@ -3,16 +3,24 @@ name: PYE_noCalcium
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: PYE_noCalcium
 ingredients:
 - preferred_term: Peptone
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: MICRO:0000178
+    label: Peptone
 - preferred_term: Yeast Extract
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'CAS: 232-387-9'
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Magnesium sulfate
   concentration:
     value: '0.8'
@@ -23,7 +31,8 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7487-88-9; MW:
     120.37'
 description: Rich media for Caulobacter without calcium
-notes: 'Source: FEBA media definitions'
+notes: CultureBotHT imports PYE_noCalcium as peptone, yeast extract, and magnesium
+  sulfate.
 category: specialized
 sources:
 - database: CultureBotHT
@@ -42,6 +51,17 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_exact_score25.py
+  action: MARKED_CULTUREBOTHT_EXACT_SCORE25
+  changes: Marked exact sparse CultureBotHT formula as curated
+  source: CultureBotHT:PYE_noCalcium; https://github.com/CultureBotAI/CultureBotHT
+  notes: CultureBotHT imports PYE_noCalcium as peptone, yeast extract, and magnesium
+    sulfate.
 data_quality_flags:
-- has_unmapped_ingredients
+- ingredients_curated
+- has_ontology_mappings
 kg_microbe_match: mediadive.medium:790
+references:
+- reference: CultureBotHT:PYE_noCalcium
+- reference: https://github.com/CultureBotAI/CultureBotHT

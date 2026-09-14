@@ -10,12 +10,74 @@ media_term:
   term:
     id: mediadive.medium:1850
     label: Cultivation Medium for Sf1Ep cells for Treponema pallidum
-notes: 'Source: DSMZ'
-ingredients: []
+notes: DSMZ Medium 1850 records a Sf1Ep cottontail rabbit epithelial cell medium prepared
+  from Eagle's MEM, MEM Non-Essential Amino Acids, L-glutamine, sodium pyruvate, and
+  heat-inactivated fetal bovine serum, then filter-sterilized and stored at 4 C.
+ingredients:
+- preferred_term: Eagle's MEM
+  concentration:
+    value: '884.956'
+    unit: ML_PER_L
+  source: DSMZ Medium 1850
+  notes: DSMZ Medium 1850 lists 500 ml Eagle's MEM (Sigma M4655) in a 565 ml Sf1Ep
+    medium batch.
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: M4655
+- preferred_term: MEM Non-Essential Amino Acids
+  concentration:
+    value: '8.84956'
+    unit: ML_PER_L
+  source: DSMZ Medium 1850
+  notes: DSMZ Medium 1850 lists 5 ml MEM Non-Essential Amino Acids (Gibco 11140-050)
+    in a 565 ml Sf1Ep medium batch.
+  supplier_catalog:
+    supplier_name: Gibco
+    catalog_number: 11140-050
+- preferred_term: L-glutamine solution
+  concentration:
+    value: '8.84956'
+    unit: ML_PER_L
+  source: DSMZ Medium 1850
+  notes: DSMZ Medium 1850 lists 5 ml L-glutamine (Sigma G7513) in a 565 ml Sf1Ep medium
+    batch; the stock concentration is not disclosed.
+  term:
+    id: CHEBI:18050
+    label: L-glutamine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: G7513
+- preferred_term: Sodium pyruvate solution
+  concentration:
+    value: '8.84956'
+    unit: ML_PER_L
+  source: DSMZ Medium 1850
+  notes: DSMZ Medium 1850 lists 5 ml sodium pyruvate (Sigma S8636) in a 565 ml Sf1Ep
+    medium batch; the stock concentration is not disclosed.
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: S8636
+- preferred_term: Fetal bovine serum, heat inactivated
+  concentration:
+    value: '88.4956'
+    unit: ML_PER_L
+  source: DSMZ Medium 1850
+  notes: DSMZ Medium 1850 lists 50 ml heat-inactivated fetal bovine serum in a 565
+    ml Sf1Ep medium batch.
 applications:
 - Microbial cultivation
 references:
 - reference: 'doi: 10.1002/cpz1.44'
+- reference: https://mediadive.dsmz.de/medium/1850
 curation_history:
 - timestamp: '2026-01-26T17:53:15.549179Z'
   curator: mediadive-import
@@ -41,5 +103,31 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_dsmz_1850_score35.py
+  action: RESOLVED_DSMZ_1850_SCORE35_GRAPH
+  changes: Resolved empty DSMZ 1850 Sf1Ep medium recipe
+  source: https://mediadive.dsmz.de/medium/1850
+  notes: 'MediaDive''s structured DSMZ Medium 1850 main solution is empty, but its
+    DSMZ description explicitly lists a 565 ml Sf1Ep medium batch: 500 ml Eagle''s
+    MEM, 5 ml MEM Non-Essential Amino Acids, 5 ml L-glutamine, 5 ml sodium pyruvate,
+    and 50 ml heat-inactivated fetal bovine serum.'
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+temperature_value: 37.0
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Combine Eagle's MEM, MEM Non-Essential Amino Acids, L-glutamine, sodium
+    pyruvate, and heat-inactivated fetal bovine serum at the DSMZ Medium 1850 Sf1Ep
+    medium ratios.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Filter sterilize the Sf1Ep medium.
+- step_number: 3
+  action: STORE
+  description: Store the filter-sterilized Sf1Ep medium at 4 C.
+sterilization:
+  method: FILTER

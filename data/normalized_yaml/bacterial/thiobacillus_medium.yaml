@@ -140,12 +140,22 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_36_thiobacillus_score10.py
+  action: RESOLVED_KOMODO_36_THIOBACILLUS_TOPOLOGY
+  changes: Linked under THIOBACILLUS THIOPARUS MEDIUM
+  source: MediaDive Medium 36
+  notes: MediaDive Medium 36 exactly matches the KOMODO Medium 36 THIOBACILLUS THIOPARUS
+    MEDIUM base.
 parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_18181.yaml
+  path: data/normalized_yaml/bacterial/thiobacillus_thioparus_medium.yaml
   relationship: SOURCE_DUPLICATE
-  id: CultureMech:005082
-  name: for_dsm_18181
+  id: CultureMech:005091
+  name: thiobacillus_thioparus_medium
+  notes: KOMODO Medium 36 is the THIOBACILLUS THIOPARUS MEDIUM base.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- MediaDive Medium 36 exactly matches the KOMODO Medium 36 THIOBACILLUS THIOPARUS
+  MEDIUM base.
+data_quality_flags:
+- ingredients_curated

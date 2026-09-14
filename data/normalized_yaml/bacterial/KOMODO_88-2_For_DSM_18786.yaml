@@ -188,6 +188,12 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_88_sulfolobus_ph_score10.py
+  action: RESOLVED_KOMODO_88_SULFOLOBUS_PH_VARIANT
+  changes: Linked as a KOMODO 88 pH variant
+  source: KOMODO Medium 88.2
+  notes: Marked DSM 18786 as a pH 0.8 SULFOLOBUS variant.
 variant_children:
 - path: data/normalized_yaml/bacterial/medium_88_modified_for_dsm_10039.yaml
   relationship: SOURCE_DUPLICATE
@@ -231,3 +237,14 @@ variant_children:
   name: sulfolobus_medium_anaerobic
   notes: Same ingredient and concentration signature; reviewed as duplicate Medium
     88/Sulfolobus source record.
+data_quality_flags:
+- ingredients_curated
+parent_media:
+  path: data/normalized_yaml/archaea/KOMODO_88_SULFOLOBUS_medium.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:006740
+  name: sulfolobus_medium
+  notes: KOMODO Medium 88 is the pH 2.0 SULFOLOBUS base.
+variant_relationship: PH_VARIANT
+variant_modifications:
+- KOMODO Medium 88.2 specifies pH 0.8 for DSM 18786.

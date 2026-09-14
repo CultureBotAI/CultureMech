@@ -1,12 +1,19 @@
 id: CultureMech:000086
 name: mc
 category: algae
+sources:
+- database: CCAP
+  database_id: MC
+  url: https://www.ccap.ac.uk/wp-content/uploads/MR_MC.pdf
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
   algae cultivation. Recipe available in PDF format.
-notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_MC.pdf
+notes: CCAP MC lists casein digest, Na2HPO4.7H2O, KH2PO4, Oxoid yeast extract, D-glucose,
+  and Oxoid liver digest in 900 ml deionised water; after pH adjustment to 6.9 and
+  10 psi pressure cooking, it adds sterile foetal calf serum to a final concentration
+  of 10% and stores the medium at 4 C.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -49,40 +56,129 @@ curation_history:
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
     category->lowercase=1; concentration.unit aliases=1
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_ccap_mc_score20.py
+  action: RESOLVED_CCAP_MC_SCORE20
+  changes: Replaced malformed CCAP MC ingredients with the official PDF recipe
+  source: https://www.ccap.ac.uk/wp-content/uploads/MR_MC.pdf
+  notes: CCAP MC lists casein digest, Na2HPO4.7H2O, KH2PO4, Oxoid yeast extract, D-glucose,
+    and Oxoid liver digest in 900 ml deionised water; after pH adjustment to 6.9 and
+    10 psi pressure cooking, it adds sterile foetal calf serum to a final concentration
+    of 10% and stores the medium at 4 C.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_ccap_sources_score10.py
+  action: NORMALIZED_CCAP_SOURCE_SCORE10
+  changes: Normalized CCAP provenance
+  source: CCAP:MC; https://www.ccap.ac.uk/wp-content/uploads/MR_MC.pdf
+  notes: Copied the CCAP source identity from references and the original ccap-import
+    event into the structured sources slot recognized by review scoring.
 references:
 - reference: CCAP:MC
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_MC.pdf
 ingredients:
-- preferred_term: Na HPO .7H O
-  notes: Ontology mapping not yet available; From CCAP Medium MR_MC.pdf; Curated from
-    CCAP Medium MR_MC.pdf specification
+- preferred_term: Deionized water
+  concentration:
+    value: '900'
+    unit: ML_PER_L
+  source: CCAP Medium MR_MC.pdf
+  notes: CCAP instructs adding the first six constituents to 900 ml water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Casein digest (Casitone, cat. no. 225930)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  source: CCAP Medium MR_MC.pdf
+  notes: CCAP lists 10.0 g Casitone per liter.
+- preferred_term: Na2HPO4.7H2O
   concentration:
     value: '2.5'
     unit: G_PER_L
   source: CCAP Medium MR_MC.pdf
-- preferred_term: KH PO
-  term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 1.0
-    curation_date: '2026-04-04T12:54:55.149972'
-    ontology_source: CHEBI
+  notes: CCAP lists 2.5 g sodium phosphate heptahydrate per liter.
+- preferred_term: KH2PO4
   concentration:
     value: '0.8'
     unit: G_PER_L
   source: CCAP Medium MR_MC.pdf
-  notes: From CCAP Medium MR_MC.pdf; Curated from CCAP Medium MR_MC.pdf specification
-- preferred_term: Aseptically add the foetal calf serum to a final concentration of
-  notes: Ontology mapping not yet available; From CCAP Medium MR_MC.pdf; Curated from
-    CCAP Medium MR_MC.pdf specification
+  notes: CCAP lists 0.8 g KH2PO4 per liter.
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: Yeast extract (Oxoid LP0021)
   concentration:
-    value: '10'
-    unit: PERCENT_W_V
+    value: '5.0'
+    unit: G_PER_L
   source: CCAP Medium MR_MC.pdf
+  notes: CCAP lists 5.0 g Oxoid LP0021 yeast extract per liter.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: D-glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  source: CCAP Medium MR_MC.pdf
+  notes: CCAP lists 2.5 g D-glucose per liter.
+  term:
+    id: CHEBI:17634
+    label: D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
+    label: D-glucose
+- preferred_term: Liver digest (Oxoid LP0027)
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  source: CCAP Medium MR_MC.pdf
+  notes: CCAP lists 2.5 g Oxoid LP0027 liver digest per liter.
+- preferred_term: Sterile foetal calf serum (Gamma-Irradiated, cat. no. 10109-155)
+  concentration:
+    value: '100'
+    unit: ML_PER_L
+  source: CCAP Medium MR_MC.pdf
+  notes: CCAP adds 5 x 20 ml sterile foetal calf serum after sterilization.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add casein digest, Na2HPO4.7H2O, KH2PO4, yeast extract, D-glucose,
+    and liver digest in the order shown to 900 ml deionized water, allowing each to
+    dissolve completely before adding the next.
+- step_number: 2
+  action: MIX
+  description: Adjust to pH 6.9.
+- step_number: 3
+  action: ALIQUOT
+  description: Dispense into 5 x 180 ml aliquots.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Sterilize by pressure cooking at 10 psi for 15 minutes.
+- step_number: 5
+  action: MIX
+  description: Aseptically add 20 ml sterile foetal calf serum to each aliquot, giving
+    a final concentration of 10%.
+- step_number: 6
+  action: STORE
+  description: Store at 4 C.
+ph_value: 6.9
+sterilization:
+  method: AUTOCLAVE
+  pressure: 10.0
+  duration: 15 minutes
+  notes: CCAP instructs pressure cooking at 10 psi for 15 minutes.
+storage:
+  temperature:
+    value: 4.0
+    unit: CELSIUS
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
-- curation_method:automated_expert_mapping
+- has_unmapped_ingredients
 original_name: MC

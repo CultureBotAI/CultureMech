@@ -2,29 +2,13 @@ id: CultureMech:009427
 name: complete_pleuropneumonia_like_organism_pplo_medium
 original_name: Complete pleuropneumonia-like organism (PPLO) medium
 category: bacterial
-medium_type: COMPLEX
-composition_type: UNDEFINED
-physical_state: LIQUID
-ingredients:
-- preferred_term: PPLO medium
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-- preferred_term: CO2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-  term:
-    id: CHEBI:16526
-    label: carbon dioxide
 media_term:
   preferred_term: TOGO Medium M2891
   term:
     id: TOGO:M2891
     label: Complete pleuropneumonia-like organism (PPLO) medium
-notes: 'Source: https://togomedium.org/medium/M2891'
+notes: TOGO M2891 lists one liter of PPLO medium and approximately 48 h cultivation
+  at 37 C in 5% CO2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -49,3 +33,46 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_condition_wrappers_score20.py
+  action: RESOLVED_TOGO_CONDITION_WRAPPERS_SCORE20
+  changes: Resolved score-20 TOGO product and condition wrapper
+  source: https://togomedium.org/medium/M2891
+  notes: TOGO M2891 lists one liter of PPLO medium and approximately 48 h cultivation
+    at 37 C in 5% CO2.
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+temperature_value: 37.0
+ingredients:
+- preferred_term: PPLO medium
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2891
+  notes: TOGO M2891 lists 1000 ML_PER_L of PPLO medium.
+- preferred_term: CO2
+  concentration:
+    value: '5'
+    unit: PERCENT_V_V
+  source: TOGO M2891
+  notes: TOGO M2891 lists 5% CO2 as the incubation atmosphere.
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use one liter of PPLO medium.
+- step_number: 2
+  action: MIX
+  description: Cultivate for approximately 48 h at 37 C in 5% CO2.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2891

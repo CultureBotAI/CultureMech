@@ -3,7 +3,7 @@ name: pygv_agar
 original_name: PYGV AGAR
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:
@@ -11,188 +11,89 @@ media_term:
   term:
     id: mediadive.medium:J387
     label: PYGV AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=387'
+notes: JCM Medium 387 PYGV Agar lists, per liter, 0.25 g Peptone, 0.25 g Yeast extract,
+  20 ml Mineral salt solution from JCM Medium 304, 10 ml 2.5% Glucose solution, 10
+  ml Vitamin solution from JCM Medium 304, 15 g Agar, and 960 ml Distilled water.
+  The final pH is 7.5. The base medium is mixed, gently heated to a boil, autoclaved,
+  cooled to 45-50 degrees C, supplemented aseptically with filter-sterilized glucose
+  and vitamin solutions, and adjusted to pH 7.5 with sterile KOH if necessary.
 ingredients:
 - preferred_term: Peptone
   concentration:
     value: '0.25'
     unit: G_PER_L
+  source: MediaDive J387 / JCM Medium 387
+  notes: MediaDive J387 / JCM Medium 387 lists 0.25 g/L Peptone.
 - preferred_term: Yeast extract
   concentration:
     value: '0.25'
     unit: G_PER_L
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: glucose
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17234
-    label: glucose
+  source: MediaDive J387 / JCM Medium 387
+  notes: MediaDive J387 / JCM Medium 387 lists 0.25 g/L Yeast extract.
 - preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: MediaDive J387 / JCM Medium 387
+  notes: MediaDive J387 / JCM Medium 387 lists 15.0 g/L Agar.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
+- preferred_term: Distilled water
   concentration:
-    value: '29.7'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-- preferred_term: Nitrilotriacetic acid
+    value: '960.0'
+    unit: ML_PER_L
+  source: MediaDive J387 / JCM Medium 387
+  notes: MediaDive J387 / JCM Medium 387 lists 960.0 ml/L Distilled water.
   term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
-  concentration:
-    value: '10'
-    unit: G_PER_L
+    id: CHEBI:15377
+    label: water
   mediaingredientmech_chebi_term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
-- preferred_term: CaCl2 x 2 H2O
+    id: CHEBI:15377
+    label: water
+- preferred_term: KOH
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: MediaDive J387 / JCM Medium 387
+  notes: JCM Medium 387 adjusts the medium to pH 7.5 with sterile KOH, if necessary.
   term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  concentration:
-    value: '3.34'
-    unit: G_PER_L
+    id: CHEBI:32035
+    label: potassium hydroxide
   mediaingredientmech_chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
-  concentration:
-    value: '0.099'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
-  concentration:
-    value: '0.013'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
-- preferred_term: Biotin
-  term:
-    id: CHEBI:15956
-    label: biotin
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15956
-    label: biotin
-- preferred_term: Folic acid
-  term:
-    id: CHEBI:27470
-    label: folic acid
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:27470
-    label: folic acid
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: pyridoxine hydrochloride
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30961
-    label: pyridoxine hydrochloride
-- preferred_term: Riboflavin
-  term:
-    id: CHEBI:17015
-    label: riboflavin
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17015
-    label: riboflavin
-- preferred_term: Thiamine HCl
-  term:
-    id: CHEBI:49105
-    label: thiamine hydrochloride
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:49105
-    label: thiamine hydrochloride
-- preferred_term: Nicotinamide
-  term:
-    id: CHEBI:17154
-    label: nicotinamide
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17154
-    label: nicotinamide
-- preferred_term: Calcium pantothenate
-  term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:176843
-    label: vitamin B12
-  concentration:
-    value: '0.0001'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
-- preferred_term: p-Aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: 4-aminobenzoic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30753
-    label: 4-aminobenzoic acid
+    id: CHEBI:32035
+    label: potassium hydroxide
 preparation_steps:
 - step_number: 1
-  action: AUTOCLAVE
-  description: Add components, except Glucose solution and Vitamin solution, to distilled
-    water and mix thoroughly. Gently heat and bring to a boil. Autoclave and then
-    cool to 45 - 50C. Aseptically add the filter-sterilized Glucose solution and Vitamin
-    solution. Adjust pH to 7.5 with sterile KOH, if necessary.
+  action: MIX
+  description: Mix peptone, yeast extract, mineral salt solution, agar, and distilled
+    water.
 - step_number: 2
+  action: HEAT
+  description: Gently heat and bring to a boil.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 degrees C for 15 min.
+- step_number: 4
+  action: COOL
+  description: Cool to 45-50 degrees C.
+- step_number: 5
+  action: MIX
+  description: Aseptically add the filter-sterilized glucose solution and vitamin
+    solution.
+- step_number: 6
   action: ADJUST_PH
-  description: Add nitrilotriacetic acid to 500 ml of distilled water. Dissolve by
-    adjusting pH to 6.5 with KOH. Add the remaining components and distilled water.
-    Readjust pH to 7.2.
+  description: Adjust to pH 7.5 with sterile KOH, if necessary.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: Filter-sterilize glucose and vitamin solutions separately.
 applications:
 - Microbial cultivation
 curation_history:
@@ -218,3 +119,264 @@ curation_history:
   notes: 'Replaced 16 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m382_score15.py
+  action: RESOLVED_JCM_387_PYGV_AGAR
+  source: https://mediadive.dsmz.de/medium/J387; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=387;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=304; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=149
+  notes: JCM Medium 387 PYGV Agar lists, per liter, 0.25 g Peptone, 0.25 g Yeast extract,
+    20 ml Mineral salt solution from JCM Medium 304, 10 ml 2.5% Glucose solution,
+    10 ml Vitamin solution from JCM Medium 304, 15 g Agar, and 960 ml Distilled water.
+    The final pH is 7.5. The base medium is mixed, gently heated to a boil, autoclaved,
+    cooled to 45-50 degrees C, supplemented aseptically with filter-sterilized glucose
+    and vitamin solutions, and adjusted to pH 7.5 with sterile KOH if necessary.
+solutions:
+- preferred_term: Mineral salt solution
+  concentration:
+    value: '20.0'
+    unit: ML_PER_L
+  source: MediaDive J387 / JCM Medium 387
+  notes: MediaDive J387 / JCM Medium 387 adds 20.0 ml/L Mineral salt solution.
+  composition:
+  - preferred_term: MgSO4 x 7H2O
+    concentration:
+      value: '29.7'
+      unit: G_PER_L
+    source: MediaDive J387 / JCM Medium 304
+    notes: MediaDive J387 / JCM Medium 304 lists 29.7 g/L MgSO4 x 7H2O.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: Nitrilotriacetic acid
+    concentration:
+      value: '10.0'
+      unit: G_PER_L
+    source: MediaDive J387 / JCM Medium 304
+    notes: MediaDive J387 / JCM Medium 304 lists 10.0 g/L Nitrilotriacetic acid.
+    term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+  - preferred_term: CaCl2 x 2H2O
+    concentration:
+      value: '3.34'
+      unit: G_PER_L
+    source: MediaDive J387 / JCM Medium 304
+    notes: MediaDive J387 / JCM Medium 304 lists 3.34 g/L CaCl2 x 2H2O.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: FeSO4 x 7H2O
+    concentration:
+      value: '99.0'
+      unit: MG_PER_L
+    source: MediaDive J387 / JCM Medium 304
+    notes: MediaDive J387 / JCM Medium 304 lists 99.0 mg/L FeSO4 x 7H2O.
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+  - preferred_term: Na2MoO4 x 2H2O
+    concentration:
+      value: '13.0'
+      unit: MG_PER_L
+    source: MediaDive J387 / JCM Medium 304
+    notes: MediaDive J387 / JCM Medium 304 lists 13.0 mg/L Na2MoO4 x 2H2O.
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+  - preferred_term: Metals 44
+    concentration:
+      value: '50.0'
+      unit: ML_PER_L
+    source: MediaDive J387 / JCM Medium 304
+    notes: JCM Medium 304 adds 50.0 ml/L Metals 44 from JCM Medium 149.
+  - preferred_term: Distilled water
+    concentration:
+      value: '950.0'
+      unit: ML_PER_L
+    source: MediaDive J387 / JCM Medium 304
+    notes: MediaDive J387 / JCM Medium 304 lists 950.0 ml/L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: 2.5% Glucose solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: MediaDive J387 / JCM Medium 387
+  notes: MediaDive J387 / JCM Medium 387 adds 10.0 ml/L 2.5% Glucose solution.
+  composition:
+  - preferred_term: Glucose
+    concentration:
+      value: '2.5'
+      unit: PERCENT_W_V
+    source: MediaDive J387 / JCM Medium 387
+    notes: MediaDive J387 / JCM Medium 387 lists 2.5 % w/v Glucose.
+    term:
+      id: CHEBI:17234
+      label: glucose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17234
+      label: glucose
+  preparation_notes: Filter-sterilize before aseptic addition.
+- preferred_term: Vitamin solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: MediaDive J387 / JCM Medium 387
+  notes: MediaDive J387 / JCM Medium 387 adds 10.0 ml/L Vitamin solution.
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: MediaDive J387 / JCM Medium 304
+    notes: MediaDive J387 / JCM Medium 304 lists 2.0 mg/L Biotin.
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+  - preferred_term: Folic acid
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: MediaDive J387 / JCM Medium 304
+    notes: MediaDive J387 / JCM Medium 304 lists 2.0 mg/L Folic acid.
+    term:
+      id: CHEBI:27470
+      label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
+  - preferred_term: Pyridoxine HCl
+    concentration:
+      value: '10.0'
+      unit: MG_PER_L
+    source: MediaDive J387 / JCM Medium 304
+    notes: MediaDive J387 / JCM Medium 304 lists 10.0 mg/L Pyridoxine HCl.
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+  - preferred_term: Riboflavin
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: MediaDive J387 / JCM Medium 304
+    notes: MediaDive J387 / JCM Medium 304 lists 5.0 mg/L Riboflavin.
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
+  - preferred_term: Thiamine HCl
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: MediaDive J387 / JCM Medium 304
+    notes: MediaDive J387 / JCM Medium 304 lists 5.0 mg/L Thiamine HCl.
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+  - preferred_term: Nicotinamide
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: MediaDive J387 / JCM Medium 304
+    notes: MediaDive J387 / JCM Medium 304 lists 5.0 mg/L Nicotinamide.
+    term:
+      id: CHEBI:17154
+      label: nicotinamide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17154
+      label: nicotinamide
+  - preferred_term: Calcium pantothenate
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: MediaDive J387 / JCM Medium 304
+    notes: MediaDive J387 / JCM Medium 304 lists 5.0 mg/L Calcium pantothenate.
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.1'
+      unit: MG_PER_L
+    source: MediaDive J387 / JCM Medium 304
+    notes: MediaDive J387 / JCM Medium 304 lists 0.1 mg/L Vitamin B12.
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: MediaDive J387 / JCM Medium 304
+    notes: MediaDive J387 / JCM Medium 304 lists 5.0 mg/L p-Aminobenzoic acid.
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: MediaDive J387 / JCM Medium 304
+    notes: MediaDive J387 / JCM Medium 304 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  preparation_notes: Filter-sterilize before aseptic addition.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://mediadive.dsmz.de/medium/J387
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=387
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=304
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=149
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M382_PYGV_Agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009763
+  name: pygv_agar
+  notes: TOGO M382 imports the same JCM Medium 387 PYGV Agar formulation represented
+    by MediaDive J387.

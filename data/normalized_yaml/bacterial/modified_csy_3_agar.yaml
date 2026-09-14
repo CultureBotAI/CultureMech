@@ -5,52 +5,94 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 7.5
+ph_range:
+  min: 7.5
+  max: 7.5
 media_term:
   preferred_term: JCM Medium J802
   term:
     id: mediadive.medium:J802
     label: MODIFIED CSY-3 AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=802'
+notes: MediaDive J802 describes JCM Medium 802 Modified CSY-3 Agar as 1.0 g/L BD-Difco
+  Casitone, 1.0 g/L BD-BBL Phytone peptone, 1.0 g/L BD-Difco yeast extract, 0.4 g/L
+  ferric ammonium citrate, and 15.0 g/L agar in 1000.0 ml/L sea water, adjusted to
+  pH 7.5.
 ingredients:
-- preferred_term: Casitone
+- preferred_term: Casitone (BD-Difco)
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-- preferred_term: Phytone peptone
+  source: MediaDive J802 / JCM Medium 802
+  notes: MediaDive J802 / JCM Medium 802 lists 1.0 g/L Casitone (BD-Difco).
+  nutritional_roles:
+  - PROTEIN_SOURCE
+- preferred_term: Phytone peptone (BD-BBL)
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Ferric ammonium citrate
+  source: MediaDive J802 / JCM Medium 802
+  notes: MediaDive J802 / JCM Medium 802 lists 1.0 g/L Phytone peptone (BD-BBL).
   term:
-    id: CHEBI:31604
-    label: ferric ammonium citrate
+    id: FOODON:03315720
+    label: Soy peptone
+  nutritional_roles:
+  - PROTEIN_SOURCE
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: MediaDive J802 / JCM Medium 802
+  notes: MediaDive J802 / JCM Medium 802 lists 1.0 g/L Yeast extract (BD-Difco).
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
+  - VITAMIN_SOURCE
+- preferred_term: Ferric ammonium citrate
   concentration:
     value: '0.4'
     unit: G_PER_L
+  source: MediaDive J802 / JCM Medium 802
+  notes: MediaDive J802 / JCM Medium 802 lists 0.4 g/L Ferric ammonium citrate.
+  term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
   mediaingredientmech_chebi_term:
     id: CHEBI:31604
     label: ferric ammonium citrate
+  nutritional_roles:
+  - IRON_SOURCE
 - preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: MediaDive J802 / JCM Medium 802
+  notes: MediaDive J802 / JCM Medium 802 lists 15.0 g/L Agar.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 - preferred_term: Sea water
   concentration:
-    value: '1000'
-    unit: G_PER_L
+    value: '1000.0'
+    unit: ML_PER_L
+  source: MediaDive J802 / JCM Medium 802
+  notes: MediaDive J802 / JCM Medium 802 lists 1000.0 ml/L Sea water.
+  term:
+    id: ENVO:00002149
+    label: sea water
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Dissolve 1.0 g/L BD-Difco Casitone, 1.0 g/L BD-BBL Phytone peptone,
+    1.0 g/L BD-Difco yeast extract, 0.4 g/L ferric ammonium citrate, and 15.0 g/L
+    agar in 1000.0 ml/L sea water.
+- step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.5.
 applications:
@@ -79,4 +121,26 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m837_modified_csy3_score15.py
+  action: RESOLVED_JCM_802_MODIFIED_CSY3_AGAR
+  source: https://mediadive.dsmz.de/medium/J802; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=802
+  notes: Restored the MediaDive J802 source-level BD-Difco Casitone, BD-BBL Phytone
+    peptone, BD-Difco yeast extract, ferric ammonium citrate, agar, and sea-water
+    formulation; corrected sea water from a mass concentration to 1000.0 ml/L; and
+    linked the TOGO M837 source duplicate.
 kg_microbe_match: mediadive.medium:J802
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M837_Modified_CSY-3_Agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010251
+  name: modified_csy_3_agar
+  notes: TOGO M837 imports the same JCM Medium 802 Modified CSY-3 Agar formulation
+    represented by MediaDive J802.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://mediadive.dsmz.de/medium/J802
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=802

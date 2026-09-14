@@ -11,31 +11,66 @@ media_term:
   term:
     id: mediadive.medium:J1244
     label: MARINE BROTH 2216 WITH PYRUVATE
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1244'
+notes: MediaDive JCM Medium J1244 lists 37.4 g Marine broth 2216 (BD-Difco), 1000
+  mL distilled water, and pH 8.0, then adds 10 mL autoclaved 1.0 M sodium pyruvate
+  solution after cooling.
 ingredients:
-- preferred_term: Marine broth 2216
+- preferred_term: Marine broth 2216 (BD-Difco)
   concentration:
-    value: '37.0297'
+    value: '37.4'
     unit: G_PER_L
-- preferred_term: Sodium pyruvate
+  source: MediaDive JCM Medium J1244
+  notes: MediaDive JCM Medium J1244 lists 37.4 g Marine broth 2216 with the BD-Difco
+    attribute; left ungrounded as an undefined commercial broth.
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: MediaDive JCM Medium J1244
+  notes: MediaDive JCM Medium J1244 lists 1000 mL distilled water.
   term:
-    id: CHEBI:50144
-    label: sodium pyruvate
-  concentration:
-    value: '10'
-    unit: G_PER_L
+    id: CHEBI:15377
+    label: water
   mediaingredientmech_chebi_term:
-    id: CHEBI:50144
-    label: sodium pyruvate
+    id: CHEBI:15377
+    label: water
+solutions:
+- preferred_term: 1.0 M Sodium pyruvate solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  notes: MediaDive JCM Medium J1244 adds 10 mL autoclaved 1.0 M Sodium pyruvate solution
+    after cooling the autoclaved Marine broth 2216 base.
+  composition:
+  - preferred_term: Sodium pyruvate
+    concentration:
+      value: '1.0'
+      unit: MOLAR
+    term:
+      id: CHEBI:50144
+      label: sodium pyruvate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:50144
+      label: sodium pyruvate
 preparation_steps:
 - step_number: 1
-  action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 8.0. Autoclave. After cooling, add
-    the following solution (autoclaved):'
-- step_number: 2
   action: MIX
-  description: 'Comments: Remove precipitate yielded after autoclaving by filtration,
-    if necessary.'
+  description: Suspend 37.4 g Marine broth 2216 (BD-Difco) in 1000 mL water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 8.0.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave the base.
+- step_number: 4
+  action: MIX
+  description: After cooling, add 10 mL autoclaved 1.0 M sodium pyruvate solution.
+- step_number: 5
+  action: FILTER
+  description: Remove any precipitate yielded after autoclaving by filtration, if
+    necessary.
+sterilization:
+  method: AUTOCLAVE
 applications:
 - Microbial cultivation
 curation_history:
@@ -62,4 +97,18 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_jcm_j1244_marine_pyruvate_score15.py
+  action: RESOLVED_JCM_J1244_MARINE_PYRUVATE_SCORE15
+  source: https://mediadive.dsmz.de/rest/medium/J1244
+  notes: Rebuilt J1244 from MediaDive's JCM payload by restoring the 1000 mL distilled
+    water row and modeling 10 mL of 1.0 M sodium pyruvate as an autoclaved stock solution
+    added after cooling.
 kg_microbe_match: mediadive.medium:J1244
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://mediadive.dsmz.de/medium/J1244
+- reference: https://mediadive.dsmz.de/rest/medium/J1244

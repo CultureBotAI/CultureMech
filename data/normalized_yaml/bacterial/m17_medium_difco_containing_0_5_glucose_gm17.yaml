@@ -2,32 +2,13 @@ id: CultureMech:009417
 name: m17_medium_difco_containing_0_5_glucose_gm17
 original_name: M17 medium (Difco) containing 0.5% glucose (GM17)
 category: bacterial
-medium_type: COMPLEX
-composition_type: UNDEFINED
-physical_state: LIQUID
-ingredients:
-- preferred_term: Glucose
-  concentration:
-    value: '0.5'
-    unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
-  term:
-    id: CHEBI:17234
-    label: glucose
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17234
-    label: glucose
-- preferred_term: M17 broth (Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
 media_term:
   preferred_term: TOGO Medium M2882
   term:
     id: TOGO:M2882
     label: M17 medium (Difco) containing 0.5% glucose (GM17)
-notes: 'Source: https://togomedium.org/medium/M2882'
+notes: TOGO M2882 lists M17 broth from Difco containing 0.5% glucose and static cultivation
+  at 30 C for 18 h.
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,4 +39,48 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_m17_bhi_score20.py
+  action: RESOLVED_TOGO_M17_BHI_SCORE20
+  changes: Resolved score-20 TOGO M17/BHI sugar-supplement wrapper
+  source: https://togomedium.org/medium/M2882
+  notes: TOGO M2882 lists M17 broth from Difco containing 0.5% glucose and static
+    cultivation at 30 C for 18 h.
 kg_microbe_match: mediadive.medium:21
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+temperature_value: 30.0
+ingredients:
+- preferred_term: Glucose
+  concentration:
+    value: '0.5'
+    unit: PERCENT_W_V
+  source: TOGO M2882
+  notes: TOGO M2882 lists 0.5% glucose.
+  term:
+    id: CHEBI:17234
+    label: glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: glucose
+- preferred_term: M17 broth (Difco)
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2882
+  notes: TOGO M2882 lists one liter of M17 broth (Difco) without disclosing the internal
+    formulation.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Supplement one liter of M17 broth (Difco) with glucose to 0.5%.
+- step_number: 2
+  action: MIX
+  description: Cultivate without agitation at 30 C for 18 h.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2882

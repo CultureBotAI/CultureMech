@@ -14,8 +14,8 @@ notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=5
 ingredients:
 - preferred_term: Inorganic salts-starch agar
   term:
-    id: CHEBI:2509
-    label: agar
+    id: mediadive.compound:1692
+    label: Inorganic salts-starch agar
   concentration:
     value: '1000'
     unit: G_PER_L

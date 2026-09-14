@@ -5,6 +5,7 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.6
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -28,7 +29,15 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M2017
+  notes: 'Role: Solidifying component; TOGO M2017 lists agar only as an optional solidifying
+    agent.'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Bacto Marine Broth 2216 (Difco)
   concentration:
     value: '3.74'
@@ -73,3 +82,17 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_marine_broth_dilutions_score15.py
+  action: RESOLVED_TOGO_MARINE_BROTH_DILUTION_SCORE15
+  source: https://togomedium.org/medium/M2017; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1306
+  notes: TOGO M2017 mirrors NBRC Medium 1306 and lists agar only as the optional solidifying
+    agent. TOGO reports pH 7.6; Artificial seawater and Bacto Marine Broth 2216 remain
+    source-disclosed opaque components.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2017
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1306

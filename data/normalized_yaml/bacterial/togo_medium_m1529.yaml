@@ -3,53 +3,105 @@ name: togo_medium_m1529
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
+ph_range:
+  min: 9.0
+  max: 10.0
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Hipolypepton*
   concentration:
-    value: '1'
+    value: '10'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: MgSO4·7H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
+  source: NBRC Medium 316
+  notes: NBRC Medium 316 lists 10 g/L Hipolypepton and notes that the asterisk marks
+    Wako Pure Chemical Industries; this peptone product is retained as an opaque complex
+    component.
 - preferred_term: Yeast extract
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: NBRC Medium 316
+  notes: NBRC Medium 316 lists 2 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: NBRC Medium 316
+  notes: NBRC Medium 316 lists 0.5 g/L MgSO4·7H2O.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: Na2CO3**
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  source: NBRC Medium 316
+  notes: NBRC Medium 316 lists 10 g/L Na2CO3, sterilized separately by autoclaving
+    before addition.
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: NBRC Medium 316
+  notes: NBRC Medium 316 lists 1.0 L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: NBRC Medium 316
+  notes: NBRC Medium 316 lists 15 g/L agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 media_term:
   preferred_term: TOGO Medium M1529
   term:
     id: TOGO:M1529
     label: TOGO Medium M1529
-notes: 'Source: https://togomedium.org/medium/M1529
-
-  Original source: NBRC - NBRC_M316
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=316'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Combine 10 g/L Hipolypepton, 2 g/L Yeast extract, 0.5 g/L MgSO4·7H2O,
+    and 1 L Distilled water.
+- step_number: 2
+  action: MIX
+  description: Add 15 g/L agar when solid NBRC Medium 316 is needed.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Sterilize Na2CO3 separately by autoclaving.
+- step_number: 4
+  action: MIX
+  description: Add 10 g/L separately autoclaved Na2CO3 to the other ingredients; the
+    final pH is between 9.0 and 10.0.
+notes: TOGO M1529 imports NBRC Medium 316, which lists 10 g/L Hipolypepton from Wako
+  Pure Chemical Industries, 2 g/L Yeast extract, 0.5 g/L MgSO4·7H2O, 10 g/L Na2CO3,
+  1 L Distilled water, and 15 g/L Agar if needed. The Na2CO3 is sterilized separately
+  by autoclaving and added to the other ingredients, giving a final pH between 9.0
+  and 10.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -98,30 +150,32 @@ curation_history:
   notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
     magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
     labels untouched.
-solutions:
-- preferred_term: Na2CO3**
-  composition: []
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
-  name: Unknown solution
-- preferred_term: Hipolypepton*
-  composition: []
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-  name: Unknown solution
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nbrc_316_score15.py
+  action: RESOLVED_NBRC_316_SCORE15
+  source: https://togomedium.org/medium/M1529; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=316
+  notes: Curated TOGO:M1529 from TOGO and NBRC Medium 316; corrected Distilled water
+    from a mass-like 1 g/L import to 1 L, moved Hipolypepton and Na2CO3 from migrated
+    empty G_PER_L solutions to sourced formula ingredients, added the final pH 9.0-10.0
+    range, grounded yeast extract, magnesium sulfate heptahydrate, sodium carbonate,
+    water, and agar, retained Hipolypepton as a sourced opaque component, and linked
+    M1529 to M1553 as a substituted-component variant.
 parent_media:
   path: data/normalized_yaml/bacterial/TOGO_M1553_Methylobacterium_Medium.yaml
-  relationship: CONCENTRATION_VARIANT
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
   id: CultureMech:008102
   name: methylobacterium_medium
-  notes: Reviewed TOGO Methylobacterium medium pair; M1529 differs only in MgSO4·7H2O
-    concentration.
-variant_relationship: CONCENTRATION_VARIANT
+  notes: Substitutes 10 g/L separately autoclaved Na2CO3 for methanol and decreases
+    MgSO4·7H2O from 1 g/L to 0.5 g/L.
+variant_relationship: SUBSTITUTED_COMPONENT_VARIANT
 variant_modifications:
-- MgSO4·7H2O decreased from 1 g/L to 0.5 g/L while the TOGO Methylobacterium medium
-  formulation remains unchanged.
+- Substitutes 10 g/L separately autoclaved Na2CO3 for the 5 ml/L methanol supplement
+  in TOGO M1553.
+- Decreases MgSO4·7H2O from 1 g/L to 0.5 g/L.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1529
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=316

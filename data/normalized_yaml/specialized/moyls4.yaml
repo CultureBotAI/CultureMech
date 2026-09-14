@@ -293,5 +293,16 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/moyls4_no_iron.yaml.
 data_quality_flags:
 - has_unmapped_ingredients
+variant_children:
+- path: data/normalized_yaml/specialized/moyls4_no_iron.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015635
+  name: MoYLS4 no iron
+  notes: Omits Iron (II) chloride tetrahydrate from MoYLS4.

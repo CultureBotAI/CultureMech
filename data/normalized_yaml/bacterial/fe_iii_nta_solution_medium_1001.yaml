@@ -2,31 +2,20 @@ id: CultureMech:004271
 name: fe_iii_nta_solution_medium_1001
 original_name: Fe(III)NTA solution (medium 1001)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
-ph_value: 6.5
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2005 | DSMZ Medium: 2005
-  (mediadive.medium:2005) | Aerobic: No | SubMedium: Yes'
+notes: KOMODO imported this entry as a SubMedium named Fe(III)NTA solution from DSMZ
+  Medium 1001, but the live DSMZ Medium 1001 recipe contains Mineral mixture, Wolin's
+  vitamin solution, and FeCl3 x 6 H2O stock, with no Fe(III)NTA stock. The imported
+  NaOH row was a pH-buffer note rather than a disclosed stock-solution component.
 media_term:
   preferred_term: KOMODO Medium 2005
   term:
     id: komodo.medium:2005
     label: Fe(III)NTA solution (medium 1001)
-ingredients:
-- preferred_term: NaOH
-  notes: Extracted from recipe notes (pH buffer)
-  data_quality_flags:
-  - extracted_from_notes
-  concentration:
-    value: variable
-    unit: VARIABLE
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32145
-    label: sodium hydroxide
-  term:
-    id: CHEBI:32145
-    label: sodium hydroxide
+ingredients: []
 applications:
 - Microbial cultivation
 curation_history:
@@ -61,3 +50,19 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_komodo_2005_fe_iii_nta_stub_score15.py
+  action: RETYPE_ORPHANED_FE_III_NTA_STUB
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf
+  notes: KOMODO imported this entry as a SubMedium named Fe(III)NTA solution from
+    DSMZ Medium 1001, but the live DSMZ Medium 1001 recipe contains Mineral mixture,
+    Wolin's vitamin solution, and FeCl3 x 6 H2O stock, with no Fe(III)NTA stock. The
+    imported NaOH row was a pH-buffer note rather than a disclosed stock-solution
+    component.
+  changes: Retyped orphaned Fe(III)NTA stock as a solution stub and removed the imported
+    NaOH pH-buffer pseudo-ingredient.
+data_quality_flags:
+- source_information_unavailable
+references:
+- reference: https://mediadive.dsmz.de/medium/1001
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf

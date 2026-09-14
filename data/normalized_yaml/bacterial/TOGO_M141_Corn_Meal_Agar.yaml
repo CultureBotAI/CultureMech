@@ -6,33 +6,32 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
+- preferred_term: Corn meal agar (BD-Difco)
+  concentration:
+    value: '17.0'
+    unit: G_PER_L
+  source: JCM Medium 150
+  notes: JCM Medium 150 lists 17.0 g/L Corn meal agar (BD-Difco); this is a commercial
+    dehydrated medium and is intentionally left ungrounded.
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1.0'
+    unit: L
+  source: JCM Medium 150
+  notes: JCM Medium 150 lists 1.0 L distilled water.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: Corn meal agar (BD-Difco)
-  concentration:
-    value: '17'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
 media_term:
   preferred_term: TOGO Medium M141
   term:
     id: TOGO:M141
     label: Corn Meal Agar
-notes: 'Source: https://togomedium.org/medium/M141
-
-  Original source: JCM - JCM_M150
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=150'
+notes: JCM Medium 150 defines CORN MEAL AGAR as 17.0 g/L Corn meal agar (BD-Difco)
+  in 1.0 L distilled water, with default JCM autoclaving at 121 C for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -63,3 +62,36 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_corn_meal_score20.py
+  action: RESOLVED_JCM_CORN_MEAL_SCORE20_GRAPH
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=150
+  notes: JCM Medium 150 defines CORN MEAL AGAR as 17.0 g/L Corn meal agar (BD-Difco)
+    in 1.0 L distilled water, with default JCM autoclaving at 121 C for 15 minutes.
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_corn_meal_score20.py
+  action: LINKED_JCM_CORN_MEAL_SCORE20_DUPLICATE
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=150
+  notes: Linked to bacterial/JCM_J150_CORN_MEAL_AGAR.yaml as a JCM SOURCE_DUPLICATE.
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 minutes.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=150
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J150_CORN_MEAL_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002509
+  name: corn_meal_agar
+  notes: TOGO imported the same Corn Meal Agar formula from the reviewed JCM Medium
+    J150 source.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- TOGO source-catalogue duplicate of JCM Medium J150.

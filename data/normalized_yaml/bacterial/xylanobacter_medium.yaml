@@ -4,22 +4,23 @@ original_name: XYLANOBACTER MEDIUM
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.0
 media_term:
   preferred_term: JCM Medium J522
   term:
     id: mediadive.medium:J522
     label: XYLANOBACTER MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=522
-
-  Composition recovery source: https://togomedium.org/medium/M523 (TOGO snapshot of
-  JCM medium J522).'
+notes: 'JCM Medium 522 was recovered from the source-equivalent TOGO M523 snapshot:
+  prepare PY4S Agar from JCM Medium 363 and adjust pH to 6.0.'
 ingredients: []
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Prepare PY4S Agar from JCM Medium 363.
+- step_number: 2
   action: ADJUST_PH
-  description: Prepare PY4S agar (see Medium No. [363]) and adjust pH to 6.0.
+  description: Adjust pH to 6.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -63,10 +64,38 @@ curation_history:
     obsolete composition/source flags
   notes: Recovered JCM J522 from source-equivalent TOGO M523. Preserved final ingredients
     and stock-solution boundaries; did not flatten referenced media or stocks.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_reference_wrappers_score40.py
+  action: RESOLVED_JCM_REFERENCE_WRAPPER_SCORE40
+  changes: Resolved a JCM/TOGO reference wrapper as a typed prepared-parent medium
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=522; https://togomedium.org/medium/M523;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=363; https://togomedium.org/medium/M357
+  notes: 'JCM Medium 522 was recovered from the source-equivalent TOGO M523 snapshot:
+    prepare PY4S Agar from JCM Medium 363 and adjust pH to 6.0.'
 solutions:
-- preferred_term: PY4S agar (see Medium [M357])
-  composition: []
+- preferred_term: PY4S Agar
   concentration:
-    value: '1'
-    unit: L
-  notes: Defined in TOGO medium M357.
+    value: '1000'
+    unit: ML_PER_L
+  culturemech_term:
+    id: CultureMech:002722
+    label: PY4S Agar
+  notes: 'JCM Medium 522 was recovered from the source-equivalent TOGO M523 snapshot:
+    prepare PY4S Agar from JCM Medium 363 and adjust pH to 6.0.'
+parent_media:
+  path: data/normalized_yaml/bacterial/py4s_agar.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:002722
+  name: py4s_agar
+  notes: Adjusts PY4S Agar from JCM Medium 363 to pH 6.0.
+variant_relationship: PH_VARIANT
+variant_modifications:
+- Adjusts PY4S Agar from JCM Medium 363 to pH 6.0.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=522
+- reference: https://togomedium.org/medium/M523
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=363
+- reference: https://togomedium.org/medium/M357

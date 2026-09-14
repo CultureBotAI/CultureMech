@@ -8,10 +8,10 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2318
+  notes: TOGO M2318 lists 1.0 L distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -22,17 +22,23 @@ ingredients:
   concentration:
     value: '0.4'
     unit: PERCENT_W_V
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M2318
+  notes: TOGO M2318 lists 0.4% yeast extract in 1/10-strength YTSS.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: sea salts
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Mineral source'
+  source: TOGO M2318
+  notes: TOGO M2318 lists sea salts as a mineral source.
 - preferred_term: tryptone
   concentration:
     value: '0.25'
     unit: PERCENT_W_V
-  notes: 'Properties: Undefined component'
+  source: TOGO M2318
+  notes: TOGO M2318 lists this as tryptone.
 media_term:
   preferred_term: TOGO Medium M2318
   term:
@@ -69,3 +75,15 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_sparse_top_score15.py
+  action: RESOLVED_SPARSE_TOP_SCORE15
+  source: https://togomedium.org/medium/M2318
+  notes: TOGO M2318 lists 1 L distilled water, 0.4% yeast extract, 20 g/L sea salts,
+    and 0.25% tryptone.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2318

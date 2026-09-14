@@ -398,4 +398,50 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_dsmz_194_desulfobulbus_score15.py
+  action: RESOLVED_DSMZ_KOMODO_194_SCORE15
+  changes: Resolved DSMZ/KOMODO Medium 194 chemistry and variant metadata
+  source: https://mediadive.dsmz.de/rest/medium/194
+  notes: Added resolved KOMODO Medium 194 source duplicate and strain variants as
+    children of the official DSMZ Medium 194 record.
 high_metal: true
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/194
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium194.pdf
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_194_DESULFOBULBUS_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004235
+  name: KOMODO_194_DESULFOBULBUS_MEDIUM
+  notes: KOMODO Medium 194 is a source-catalogue duplicate of DSMZ Medium 194.
+- path: data/normalized_yaml/bacterial/for_dsm_1744.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004230
+  name: for_dsm_1744
+  notes: KOMODO Medium 194.1 applies a DSM 1744-specific final-component table.
+- path: data/normalized_yaml/bacterial/for_dsm_14880.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004231
+  name: for_dsm_14880
+  notes: KOMODO Medium 194.2 applies the DSMZ Medium 194 DSM 14880 substitution.
+- path: data/normalized_yaml/bacterial/for_dsm_21556.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004232
+  name: for_dsm_21556
+  notes: KOMODO Medium 194.3 applies the DSMZ Medium 194 DSM 21556 substitution.
+- path: data/normalized_yaml/bacterial/medium_194_modified_for_dsm_13527.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004229
+  name: medium_194_modified_for_dsm_13527
+  notes: KOMODO Medium 194_13527 applies the DSMZ Medium 194 DSM 13527 substitution.
+- path: data/normalized_yaml/bacterial/medium_194_modified_for_dsm_5092.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004233
+  name: medium_194_modified_for_dsm_5092
+  notes: KOMODO Medium 194_5092 applies the DSMZ Medium 194 DSM 5092 substitution.
+- path: data/normalized_yaml/bacterial/medium_194_modified_for_dsm_6523.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004234
+  name: medium_194_modified_for_dsm_6523
+  notes: KOMODO Medium 194_6523 applies the explicit KOMODO DSM 6523 table.

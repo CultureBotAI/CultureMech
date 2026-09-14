@@ -3,57 +3,65 @@ name: lactobacillus_sakei_medium
 original_name: Lactobacillus Sakei Medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
 - preferred_term: Sake
   concentration:
-    value: '700'
+    value: '875.0'
+    unit: ML_PER_L
+  source: TOGO M13 / JCM Medium 20
+  notes: JCM Medium 20 lists 700 ml sake in an 800 ml recipe; MediaDive J20 records
+    the same original 800 ml main-solution volume.
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '6.25'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M13 / JCM Medium 20
+  notes: TOGO M13 / JCM Medium 20 lists 6.25 g/L Yeast extract (BD-Difco).
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Agar
   concentration:
-    value: '13'
+    value: '16.25'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M13 / JCM Medium 20
+  notes: TOGO M13 / JCM Medium 20 lists 16.25 g/L Agar.
   term:
     id: CHEBI:2509
     label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Liver extract concentrate (NBCo)
   concentration:
-    value: '0.2'
+    value: '0.25'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M13 / JCM Medium 20
+  notes: JCM Medium 20 lists 0.2 g Liver extract concentrate (NBCo) in an 800 ml recipe;
+    the product is source-disclosed but not reducible to one ChEBI molecule.
+- preferred_term: Distilled water
+  concentration:
+    value: '125.0'
+    unit: ML_PER_L
+  source: TOGO M13 / JCM Medium 20
+  notes: JCM Medium 20 lists 100 ml distilled water in an 800 ml recipe; MediaDive
+    J20 records this as the original 800 ml main-solution volume.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M13
   term:
     id: TOGO:M13
     label: Lactobacillus Sakei Medium
-notes: 'Source: https://togomedium.org/medium/M13
-
-  Original source: JCM - JCM_M20
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=20'
+notes: TOGO M13 imports JCM Medium 20. JCM 20 records Lactobacillus Sakei Medium as
+  an 800 ml sake-water agar recipe with yeast extract and liver extract concentrate
+  and does not state a pH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -84,3 +92,36 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m13_score15.py
+  action: RESOLVED_TOGO_M13_SCORE15
+  source: https://togomedium.org/medium/M13; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=20;
+    https://mediadive.dsmz.de/rest/medium/J20
+  notes: TOGO M13 imports JCM Medium 20. JCM 20 records Lactobacillus Sakei Medium
+    as an 800 ml sake-water agar recipe with yeast extract and liver extract concentrate
+    and does not state a pH. Corrected the imported sake and distilled-water rows
+    from g/L artifacts to ml/L volumes and normalized the 800 ml recipe to per-liter
+    concentrations.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix 700 ml sake, 100 ml distilled water, 5.0 g yeast extract (BD-Difco),
+    13.0 g agar, and 0.2 g Liver extract concentrate (NBCo).
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 degrees C for 15 min.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: Autoclave the complete agar medium at the JCM default settings.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M13
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=20
+- reference: https://mediadive.dsmz.de/rest/medium/J20

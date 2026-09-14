@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Mark stock solutions that were imported as media records (#175).
 
-202 records under `data/normalized_yaml/` are stock solutions, not media: "Trace
-element solution (medium 929)", "Solution C, medium 1275", "10 x M9 salts",
-"Vitamin mixture (medium 1001)". They came in through the KOMODO ModelSEED import,
-which **flattened** each solution's contents into its parent medium's ingredient
-list and left the solution itself as an empty stub — `KOMODO_1072_PSEUDO...` has no
-`solutions:` at all but lists `MnCl2 x 4 H2O`, `FeSO4 x 7 H2O` and `Biotin`
-directly, which is what upstream cites as "Trace element solution (see below)".
+Some records under `data/normalized_yaml/` are stock/base solutions, not media:
+"Trace element solution (medium 929)", "Artificial sea water (medium 600)",
+"Solution C, medium 1275", "10 x M9 salts", "Vitamin mixture (medium 1001)".
+They came in through the KOMODO ModelSEED import, which **flattened** each
+solution's contents into its parent medium's ingredient list and left the solution
+itself as an empty stub — `KOMODO_1072_PSEUDO...` has no `solutions:` at all but
+lists `MnCl2 x 4 H2O`, `FeSO4 x 7 H2O` and `Biotin` directly, which is what
+upstream cites as "Trace element solution (see below)".
 
 So their composition is not missing from the corpus. It has been absorbed into the
 parent, and these are leftover stubs. They are not media with an absent recipe,
@@ -19,9 +20,9 @@ and counting them as such overstated #175 by nearly half.
 assertion. These records have none, and the id they DO carry cannot be borrowed:
 their `mediadive.medium:N` values collide coincidentally with unrelated entries in
 the solutions namespace. `100x Vitamin solution` carries `mediadive.medium:3145`,
-and solution 3145 is "SODIUM CHLORIDE". Measured across all 202: **3** have a
-name-agreeing solution id, **170** would assert a false identity, 29 do not resolve
-at all.
+and solution 3145 is "SODIUM CHLORIDE". Measured across the first 202
+name-obvious stubs: **3** have a name-agreeing solution id, **170** would assert a
+false identity, 29 do not resolve at all.
 
 Writing `mediadive.solution:3145` onto a vitamin solution would be false chemistry
 of the #166 kind — plausible, well-formed, and wrong. So the kind is asserted
@@ -65,6 +66,15 @@ from triage_missing_compositions import (  # noqa: E402
 )
 
 NORMALIZED = REPO / "data" / "normalized_yaml"
+YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
+SUBMEDIUM = re.compile(r"\bSubMedium:\s*Yes\b")
+
+
+def looks_like_solution_stub(doc: dict[str, Any]) -> bool:
+    """True if provenance identifies an empty record as a stock/base solution."""
+    name = str(doc.get("original_name") or doc.get("name") or "")
+    notes = str(doc.get("notes") or "")
+    return bool(SOLUTION_NAMED.search(name) or SUBMEDIUM.search(notes))
 
 
 def candidates_from(records) -> list[tuple[Path, dict[str, Any]]]:
@@ -85,8 +95,7 @@ def candidates_from(records) -> list[tuple[Path, dict[str, Any]]]:
             continue
         if not has_no_usable_composition(doc):
             continue
-        name = str(doc.get("original_name") or doc.get("name") or "")
-        if SOLUTION_NAMED.search(name):
+        if looks_like_solution_stub(doc):
             out.append((path, doc))
     return out
 
@@ -96,7 +105,7 @@ def candidates(normalized: Path = NORMALIZED) -> list[tuple[Path, dict[str, Any]
     records = []
     for path in sorted(normalized.rglob("*.yaml")):
         try:
-            doc = yaml.safe_load(path.read_text(errors="replace"))
+            doc = yaml.load(path.read_text(errors="replace"), Loader=YAML_LOADER)
         except (yaml.YAMLError, OSError):
             continue
         records.append((path, doc))
@@ -109,11 +118,13 @@ def stamp(path: Path, doc: dict[str, Any]) -> bool:
     if re.search(r"^record_kind:", text, re.M):
         return False
     # After `category:` when present, else at the top — the id must stay first.
-    new, n = re.subn(r"^(category:.*)$", rf"\1\nrecord_kind: {RECORD_KIND_SOLUTION}",
-                     text, count=1, flags=re.M)
+    new, n = re.subn(
+        r"^(category:.*)$", rf"\1\nrecord_kind: {RECORD_KIND_SOLUTION}", text, count=1, flags=re.M
+    )
     if not n:
-        new, n = re.subn(r"^(id:.*)$", rf"\1\nrecord_kind: {RECORD_KIND_SOLUTION}",
-                         text, count=1, flags=re.M)
+        new, n = re.subn(
+            r"^(id:.*)$", rf"\1\nrecord_kind: {RECORD_KIND_SOLUTION}", text, count=1, flags=re.M
+        )
     if not n:
         return False
     path.write_text(new)
@@ -121,18 +132,22 @@ def stamp(path: Path, doc: dict[str, Any]) -> bool:
 
 
 def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description=__doc__,
-                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     ap.add_argument("--normalized-dir", type=Path, default=NORMALIZED)
-    ap.add_argument("--apply", action="store_true",
-                    help="Write record_kind: SOLUTION. Default is report-only.")
+    ap.add_argument(
+        "--apply", action="store_true", help="Write record_kind: SOLUTION. Default is report-only."
+    )
     args = ap.parse_args(argv)
 
     found = candidates(args.normalized_dir)
     print(f"Stock solutions imported as media records: {len(found)}\n")
     for path, doc in found[:25]:
-        print(f"  {str(path.relative_to(args.normalized_dir))[:50]:52s} "
-              f"{str(doc.get('original_name') or '')[:40]}")
+        print(
+            f"  {str(path.relative_to(args.normalized_dir))[:50]:52s} "
+            f"{str(doc.get('original_name') or '')[:40]}"
+        )
     if len(found) > 25:
         print(f"  ... and {len(found) - 25} more")
 

@@ -5,50 +5,46 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 8.2
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '900'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Tryptone (BD-Difco)
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: NaOH
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  source: TOGO M269 / JCM Medium 276
+  notes: JCM Medium 276 lists 1.0 g/L Tryptone from BD-Difco.
   term:
-    id: CHEBI:32145
-    label: sodium hydroxide
+    id: MICRO:0000182
+    label: tryptone
+- preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '1.0'
+    unit: G_PER_L
+  source: TOGO M269 / JCM Medium 276
+  notes: JCM Medium 276 lists 1.0 g/L Yeast extract from BD-Difco.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Distilled water
+  concentration:
+    value: '900.0'
+    unit: ML_PER_L
+  source: TOGO M269 / JCM Medium 276
+  notes: JCM Medium 276 lists 900.0 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
   mediaingredientmech_chebi_term:
-    id: CHEBI:32145
-    label: sodium hydroxide
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M269
   term:
     id: TOGO:M269
     label: Castenholz Medium
-notes: 'Source: https://togomedium.org/medium/M269
-
-  Original source: JCM - JCM_M276
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=276'
+notes: TOGO M269 imports JCM Medium 276 Castenholz Medium. JCM Medium 276 lists 1.0
+  g Tryptone, 1.0 g Yeast extract, 100.0 ml Castenholz basal salt solution from JCM
+  Medium 273, and 900.0 ml Distilled water, then adjusts pH to 8.2 with NaOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -95,11 +91,49 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m269_castenholz_score15.py
+  action: RESOLVED_TOGO_M269_CASTENHOLZ_SCORE15
+  source: https://togomedium.org/medium/M269; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=276;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=273
+  notes: TOGO M269 imports JCM Medium 276 Castenholz Medium. JCM Medium 276 lists
+    1.0 g Tryptone, 1.0 g Yeast extract, 100.0 ml Castenholz basal salt solution from
+    JCM Medium 273, and 900.0 ml Distilled water, then adjusts pH to 8.2 with NaOH.
+    Corrected the imported water and basal-salt solution unit artifacts, removed NaOH
+    from the ingredient list because it is only the pH titrant, grounded yeast extract
+    and tryptone, and linked the record to its existing JCM Medium 276 source duplicate.
 solutions:
-- preferred_term: Castenholz basal salt solution (see Medium [M266])
-  composition: []
-  notes: Cross-reference to Medium M266
+- preferred_term: Castenholz basal salt solution (see Medium No. 273)
   concentration:
-    value: '100'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '100.0'
+    unit: ML_PER_L
+  source: TOGO M269 / JCM Medium 276
+  notes: JCM Medium 276 adds 100.0 ml/L Castenholz basal salt solution from JCM Medium
+    273.
+  culturemech_term:
+    id: CultureMech:013022
+    label: Castenholz basal salt solution
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 8.2 with NaOH.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 degrees C for 15 minutes.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M269
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=276
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=273
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J276_CASTENHOLZ_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002633
+  name: castenholz_medium
+  notes: TOGO M269 imports JCM Medium 276 and retains its basal-salt stock reference.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same JCM Medium 276 formulation, with the basal-salt stock retained as a linked
+  solution.

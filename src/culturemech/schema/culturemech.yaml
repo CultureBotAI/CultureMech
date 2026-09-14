@@ -163,7 +163,7 @@ classes:
         multivalued: true
         comments:
           - List of recipe file IDs that were consolidated into this canonical record
-          - Format: source_id_sanitized_name (e.g., TOGO_M3236_Luria_Bertani_LB_medium)
+          - "Format: source_id_sanitized_name (e.g., TOGO_M3236_Luria_Bertani_LB_medium)"
 
       merge_fingerprint:
         description: SHA256 hash of ingredient set for deduplication tracking
@@ -329,14 +329,14 @@ classes:
         range: string
         comments:
           - For algae and cyanobacteria cultures
-          - Common units: µE/m²/s, µmol photons m⁻² s⁻¹, lux, or foot-candles
+          - "Common units: µE/m²/s, µmol photons m⁻² s⁻¹, lux, or foot-candles"
 
       light_cycle:
         description: Photoperiod light:dark cycle (e.g., "16:8", "continuous light", "24:0")
         range: string
         comments:
           - For algae and cyanobacteria cultures
-          - Format: hours_light:hours_dark
+          - "Format: hours_light:hours_dark"
 
       light_quality:
         description: Light spectrum or wavelength (e.g., "cool white fluorescent", "red LED 660nm")
@@ -492,7 +492,7 @@ classes:
         multivalued: true
         comments:
           - Used to mark recipes with known quality issues
-          - Common values: incomplete_composition, pending_curation, low_confidence
+          - "Common values: incomplete_composition, pending_curation, low_confidence"
 
       sources:
         description: >-
@@ -581,6 +581,12 @@ classes:
         range: IngredientDescriptor
         multivalued: true
         required: true
+        inlined_as_list: true
+
+      solutions:
+        description: Nested stock solutions added while preparing this stock solution
+        range: SolutionDescriptor
+        multivalued: true
         inlined_as_list: true
 
       ingredients:
@@ -960,6 +966,10 @@ classes:
         description: Free-text notes about this solution as used in the parent recipe.
         range: string
 
+      source:
+        description: Provenance attribution for this solution entry.
+        range: string
+
       term:
         description: Ontology term if available
         range: Term
@@ -991,6 +1001,12 @@ classes:
           Ingredients in the stock solution. Optional when the solution is
           referenced by name only (no inline composition copied from the source).
         range: IngredientDescriptor
+        multivalued: true
+        inlined_as_list: true
+
+      solutions:
+        description: Nested stock solutions added while preparing this stock solution
+        range: SolutionDescriptor
         multivalued: true
         inlined_as_list: true
 
@@ -2407,6 +2423,8 @@ enums:
         description: micromoles per liter
       PERCENT_W_V:
         description: percent weight per volume
+      PERCENT_W_W:
+        description: percent weight per weight
       PERCENT_V_V:
         description: percent volume per volume
       ML_PER_L:
@@ -2455,6 +2473,8 @@ enums:
         description: Cool to specified temperature
       AUTOCLAVE:
         description: Steam sterilization under pressure
+      FILTER:
+        description: Remove solids or particles by filtration
       FILTER_STERILIZE:
         description: Filter through 0.22 μm membrane
       ADJUST_PH:

@@ -385,10 +385,21 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-variant_children:
-- path: data/normalized_yaml/bacterial/acetobacterium_fimetarium_medium.yaml
-  relationship: SOURCE_DUPLICATE
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_614_acetobacterium_score10.py
+  action: RESOLVED_KOMODO_614_ACETOBACTERIUM_TOPOLOGY
+  changes: Linked under MediaDive Medium 614
+  source: KOMODO Medium 614.1
+  notes: KOMODO Medium 614.1 applies ACETOBACTERIUM FIMETARIUM MEDIUM at pH 7.5 for
+    DSM 8238.
+parent_media:
+  path: data/normalized_yaml/bacterial/acetobacterium_fimetarium_medium.yaml
+  relationship: PH_VARIANT
   id: CultureMech:001743
   name: acetobacterium_fimetarium_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: MediaDive Medium 614 is the DSMZ ACETOBACTERIUM FIMETARIUM MEDIUM base.
+variant_relationship: PH_VARIANT
+variant_modifications:
+- KOMODO Medium 614.1 applies ACETOBACTERIUM FIMETARIUM MEDIUM at pH 7.5 for DSM 8238.
+data_quality_flags:
+- ingredients_curated

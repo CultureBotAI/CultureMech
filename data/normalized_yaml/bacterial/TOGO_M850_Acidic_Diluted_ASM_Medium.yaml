@@ -244,6 +244,11 @@ curation_history:
     duplicate values written by cleanup_media_quality.py. Every merged part was the
     same value, so the pre-merge value is unambiguous and no source lookup was needed.
     Rows whose merged parts differ were left untouched.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_reference_wrappers_score40.py
+  action: LINKED_JCM_REFERENCE_WRAPPER_CHILD
+  changes: Linked JCM reference-wrapper child media to source parents
+  notes: Added or refreshed reciprocal parent-child link for bacterial/TOGO_M851_Diluted_ASM_Medium.yaml.
 solutions:
 - preferred_term: Trace element solution (see below)
   composition: []
@@ -266,3 +271,9 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_4768_Phosphate_buffer_stock_solution.yaml for composition
   name: Unknown solution
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M851_Diluted_ASM_Medium.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:010267
+  name: diluted_asm_medium
+  notes: Adjusts Acidic Diluted ASM Medium from JCM Medium 815 to pH 6.7.

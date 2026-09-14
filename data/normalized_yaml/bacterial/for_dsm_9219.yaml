@@ -277,12 +277,22 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_678_cp_score10.py
+  action: RESOLVED_KOMODO_678_CP_STRAIN_VARIANT
+  changes: Linked as a CP-MEDIUM strain-specific variant
+  source: KOMODO Medium 678.1
+  notes: KOMODO Medium 678.1 preserves CP-MEDIUM components and pH 7.0 but applies
+    the recipe for DSM 9219.
 parent_media:
   path: data/normalized_yaml/bacterial/cp_medium.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006275
   name: cp_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 678 is the pH 7.0 CP-MEDIUM base.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 678.1 preserves CP-MEDIUM components and pH 7.0 but applies the recipe
+  for DSM 9219.
+data_quality_flags:
+- ingredients_curated

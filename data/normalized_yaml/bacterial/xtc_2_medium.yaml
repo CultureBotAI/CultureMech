@@ -10,52 +10,24 @@ media_term:
   term:
     id: mediadive.medium:1311
     label: XTC-2 MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1311.pdf'
-ingredients:
-- preferred_term: Leibovitz's L-15 medium
-  concentration:
-    value: '189.0'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 93.0, 96.0]'
-- preferred_term: Fetal bovine serum
-  concentration:
-    value: '7.0'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 5.0, 2.0]'
-- preferred_term: Tryptose-phosphate
-  concentration:
-    value: '2.0'
-    unit: G_PER_L
-  notes: '[Collapsed 2 identical duplicates: 2.0, 2.0]'
-- preferred_term: Glutamine
-  concentration:
-    value: '2.0'
-    unit: MILLIMOLAR
-  notes: '[Collapsed 2 identical duplicates: 2.0, 2.0]'
+notes: DSMZ Medium 1311 defines separate 100 ml XTC-2 culture and Diplorickettsia
+  infection media; both use Leibovitz 15 medium, fetal bovine serum, tryptose-phosphate,
+  and 2 mM final glutamine, with lower serum and higher Leibovitz 15 in the infection
+  medium.
+ingredients: []
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Cultivation of XTC-2 (from Xenopus laevis) cells
+  description: Prepare the XTC-2 cell culture medium with 93.0 ml Leibovitz 15-Medium,
+    5.0 ml fetal bovine serum, 2.0 ml tryptose-phosphate, and 2.0 mM glutamine.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Filter-sterilize (0.2 µm) and keep no longer than 4 weeks. Store at
-    room temperature to facilitate detection of contamination.
+  description: Filter sterilize through a 0.2 um membrane.
 - step_number: 3
-  action: HEAT
-  description: Prepare a 25 cm<sup>2</sup> flask and seed cells according to standard
-    protocols. Incubate at 28 - 32°C in hermetic flasks. Cells are easily detached
-    mechanically, no enzyme is necessary. Medium should be changed once a week. When
-    a confluent layer has formed, infection can be carried out.
-- step_number: 4
-  action: HEAT
-  description: 'Infect cells with 1 ml of Diplorickettsia stock solution (thawed quickly
-    to 37°C). Incubate for 1 h at room temperature. Cultivation temperature: 28°C.'
-- step_number: 5
   action: MIX
-  description: Up to 100% of the cells should be infected after several days. The
-    infection level is evaluated after 3 days by Cytospin and Gimenez staining. Cytopathic
-    effects may be visible after 3-5 days. Specific PCRs can be performed to verify
-    the presence of diplorickettsiae.
+  description: Exchange to the XTC-2 infection medium made with 96.0 ml Leibovitz
+    15-Medium, 2.0 ml fetal bovine serum, 2.0 ml tryptose-phosphate, and 2.0 mM glutamine
+    for Diplorickettsia cultivation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -82,3 +54,105 @@ curation_history:
     duplicate values written by cleanup_media_quality.py. Every merged part was the
     same value, so the pre-merge value is unambiguous and no source lookup was needed.
     Rows whose merged parts differ were left untouched.
+- timestamp: '2026-09-09T00:00:00-07:00'
+  curator: repair_dsmz_host_cell_score25.py
+  action: RESOLVED_DSMZ_HOST_CELL_SCORE25_GRAPH
+  changes: Resolved DSMZ Medium 1311 host-cell recipe
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1311.pdf
+  notes: DSMZ Medium 1311 defines separate 100 ml XTC-2 culture and Diplorickettsia
+    infection media; both use Leibovitz 15 medium, fetal bovine serum, tryptose-phosphate,
+    and 2 mM final glutamine, with lower serum and higher Leibovitz 15 in the infection
+    medium.
+temperature_value: 28.0
+solutions:
+- preferred_term: XTC-2 cell culture medium
+  notes: DSMZ Medium 1311 lists this as a 100 ml xtc-2 cell culture medium formulation.
+  composition:
+  - preferred_term: Leibovitz's L-15 medium
+    concentration:
+      value: '930.0'
+      unit: ML_PER_L
+    source: DSMZ Medium 1311
+    notes: DSMZ Medium 1311 lists 93 ml Leibovitz 15-Medium.
+    term:
+      id: mediadive.compound:1941
+      label: Leibovitz's L-15 medium
+  - preferred_term: Fetal bovine serum
+    concentration:
+      value: '50.0'
+      unit: ML_PER_L
+    source: DSMZ Medium 1311
+    notes: DSMZ Medium 1311 lists 5 ml fetal bovine serum.
+    term:
+      id: mediadive.compound:954
+      label: Fetal bovine serum
+  - preferred_term: Tryptose-phosphate
+    concentration:
+      value: '20.0'
+      unit: ML_PER_L
+    source: DSMZ Medium 1311
+    notes: DSMZ Medium 1311 lists 2.0 ml tryptose-phosphate.
+    term:
+      id: mediadive.compound:1165
+      label: Tryptose-phosphate
+  - preferred_term: Glutamine
+    concentration:
+      value: '2.0'
+      unit: MILLIMOLAR
+    source: DSMZ Medium 1311
+    notes: DSMZ Medium 1311 lists 2.0 mM final-concentration glutamine.
+    term:
+      id: mediadive.compound:2161
+      label: Glutamine
+    chebi_term:
+      id: CHEBI:18050
+      label: L-glutamine
+- preferred_term: XTC-2 infection medium
+  notes: DSMZ Medium 1311 lists this as a 100 ml xtc-2 infection medium formulation.
+  composition:
+  - preferred_term: Leibovitz's L-15 medium
+    concentration:
+      value: '960.0'
+      unit: ML_PER_L
+    source: DSMZ Medium 1311
+    notes: DSMZ Medium 1311 lists 96 ml Leibovitz 15-Medium.
+    term:
+      id: mediadive.compound:1941
+      label: Leibovitz's L-15 medium
+  - preferred_term: Fetal bovine serum
+    concentration:
+      value: '20.0'
+      unit: ML_PER_L
+    source: DSMZ Medium 1311
+    notes: DSMZ Medium 1311 lists 2 ml fetal bovine serum.
+    term:
+      id: mediadive.compound:954
+      label: Fetal bovine serum
+  - preferred_term: Tryptose-phosphate
+    concentration:
+      value: '20.0'
+      unit: ML_PER_L
+    source: DSMZ Medium 1311
+    notes: DSMZ Medium 1311 lists 2.0 ml tryptose-phosphate.
+    term:
+      id: mediadive.compound:1165
+      label: Tryptose-phosphate
+  - preferred_term: Glutamine
+    concentration:
+      value: '2.0'
+      unit: MILLIMOLAR
+    source: DSMZ Medium 1311
+    notes: DSMZ Medium 1311 lists 2.0 mM final-concentration glutamine.
+    term:
+      id: mediadive.compound:2161
+      label: Glutamine
+    chebi_term:
+      id: CHEBI:18050
+      label: L-glutamine
+sterilization:
+  method: FILTER
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1311.pdf

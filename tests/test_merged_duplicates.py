@@ -193,31 +193,15 @@ def test_a_collapse_the_mutator_writes_is_not_a_finding():
 
 def _scan_one(record: dict) -> dict:
     """Findings for a single in-memory record, keyed by finding name."""
-    from collections import Counter, defaultdict
+    from collections import Counter
 
     from audit_merged_duplicates import _collect
 
     rows: list[dict] = []
     stats: Counter = Counter()
-    by_name: dict = defaultdict(list)
-    merged: set = set()
     for section in ("ingredients", "solutions"):
-        _collect(record.get(section), by_name, merged, rows, stats, "x.yaml", "CultureMech:1")
-    # mirror scan()'s per-record pass
-    from audit_merged_duplicates import _decimal
-
-    out = Counter(stats)
-    for key in sorted(by_name):
-        if key in merged or len(by_name[key]) < 2:
-            continue
-        numeric = [
-            v
-            for v in (_decimal((i.get("concentration") or {}).get("value")) for i in by_name[key])
-            if v is not None and v > 0
-        ]
-        if len(numeric) >= 2:
-            out["REPEATED_INGREDIENT"] += 1
-    return out
+        _collect(record.get(section), rows, stats, "x.yaml", "CultureMech:1")
+    return Counter(stats)
 
 
 def test_the_ucm_shape_is_caught_without_a_merge_note():
@@ -271,3 +255,50 @@ def test_a_merged_row_is_not_double_reported():
         ]
     }
     assert _scan_one(record)["REPEATED_INGREDIENT"] == 0
+
+
+def test_same_component_in_separate_solution_stocks_is_not_a_repeat():
+    record = {
+        "solutions": [
+            {
+                "preferred_term": "Solution 1",
+                "composition": [
+                    {
+                        "preferred_term": "Distilled water",
+                        "concentration": {"value": "1000.0", "unit": "ML_PER_L"},
+                    },
+                ],
+            },
+            {
+                "preferred_term": "Solution 2",
+                "composition": [
+                    {
+                        "preferred_term": "Distilled water",
+                        "concentration": {"value": "9.35", "unit": "ML_PER_L"},
+                    },
+                ],
+            },
+        ],
+    }
+    assert _scan_one(record)["REPEATED_INGREDIENT"] == 0
+
+
+def test_same_component_in_one_solution_stock_is_still_a_repeat():
+    record = {
+        "solutions": [
+            {
+                "preferred_term": "Solution 1",
+                "composition": [
+                    {
+                        "preferred_term": "Distilled water",
+                        "concentration": {"value": "1000.0", "unit": "ML_PER_L"},
+                    },
+                    {
+                        "preferred_term": "Distilled water",
+                        "concentration": {"value": "9.35", "unit": "ML_PER_L"},
+                    },
+                ],
+            },
+        ],
+    }
+    assert _scan_one(record)["REPEATED_INGREDIENT"] == 1

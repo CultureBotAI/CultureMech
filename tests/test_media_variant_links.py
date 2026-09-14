@@ -12,9 +12,12 @@ from scripts import apply_media_variant_links
 from scripts.propose_media_variant_links import (
     build_proposals,
     choose_parent,
+    collect_existing_links,
     confidence_for_group,
+    existing_link_key,
     infer_relationship,
     status_for_group,
+    write_tsv,
 )
 from scripts.validate_media_variant_links import RecipeIndex, validate_links
 
@@ -87,6 +90,21 @@ def test_dataclasses_accept_parent_child_variant_links():
     assert MediaVariantRelationshipEnum.SALINITY_VARIANT.text == "SALINITY_VARIANT"
     assert isinstance(parent.variant_children[0], MediaRecipeReference)
     assert str(parent.variant_children[0].relationship) == "SALINITY_VARIANT"
+
+
+def test_write_tsv_uses_lf_and_trims_only_trailing_empty_cells(tmp_path):
+    out = tmp_path / "proposals.tsv"
+
+    write_tsv(
+        out,
+        [
+            {"left": "alpha", "middle": "", "right": ""},
+            {"left": "beta", "middle": "", "right": "kept"},
+        ],
+        ["left", "middle", "right"],
+    )
+
+    assert out.read_bytes() == b"left\tmiddle\tright\nalpha\nbeta\t\tkept\n"
 
 
 def test_variant_link_validator_checks_bidirectional_links():
@@ -235,6 +253,148 @@ def test_variant_proposals_exclude_standalone_solution_records():
     }
 
     proposals, groups = build_proposals([media, solution])
+
+    assert proposals == []
+    assert groups == []
+
+
+def test_variant_proposals_exclude_existing_parent_child_links(tmp_path):
+    parent_path = "data/normalized_yaml/bacterial/lb_medium.yaml"
+    child_path = "data/normalized_yaml/bacterial/lb_low_salt_variant.yaml"
+    (tmp_path / "data/normalized_yaml/bacterial").mkdir(parents=True)
+    (tmp_path / parent_path).write_text(
+        yaml.safe_dump(
+            {
+                "id": "CultureMech:000001",
+                "variant_children": [
+                    {
+                        "id": "CultureMech:000002",
+                        "path": child_path,
+                        "relationship": "SALINITY_VARIANT",
+                    }
+                ],
+            }
+        )
+    )
+    (tmp_path / child_path).write_text(
+        yaml.safe_dump(
+            {
+                "id": "CultureMech:000002",
+                "parent_media": {
+                    "id": "CultureMech:000001",
+                    "path": parent_path,
+                    "relationship": "SALINITY_VARIANT",
+                },
+            }
+        )
+    )
+    rows = [
+        {
+            "yaml_path": parent_path,
+            "record_kind": "MEDIA",
+            "ingredient_identity_signature": "same",
+            "ingredient_concentration_signature": "same",
+            "name": "lb_medium",
+            "total_component_count": "1",
+        },
+        {
+            "yaml_path": child_path,
+            "record_kind": "MEDIA",
+            "ingredient_identity_signature": "same",
+            "ingredient_concentration_signature": "same",
+            "name": "lb_low_salt_variant",
+            "total_component_count": "1",
+        },
+    ]
+
+    existing_links = collect_existing_links(rows, repo_root=tmp_path)
+    proposals, groups = build_proposals(
+        rows,
+        existing_links={existing_link_key(child_path, parent_path)},
+    )
+
+    assert existing_links == {existing_link_key(parent_path, child_path)}
+    assert proposals == []
+    assert groups == []
+
+
+def test_existing_links_fall_back_from_stale_paths_to_stable_ids(tmp_path):
+    parent_path = "data/normalized_yaml/bacterial/base.yaml"
+    child_path = "data/normalized_yaml/bacterial/current_child.yaml"
+    (tmp_path / "data/normalized_yaml/bacterial").mkdir(parents=True)
+    (tmp_path / parent_path).write_text(
+        yaml.safe_dump(
+            {
+                "id": "CultureMech:000001",
+                "variant_children": [
+                    {
+                        "id": "CultureMech:000002",
+                        "path": "data/normalized_yaml/bacterial/stale_child.yaml",
+                        "relationship": "SALINITY_VARIANT",
+                    }
+                ],
+            }
+        )
+    )
+    (tmp_path / child_path).write_text(
+        yaml.safe_dump(
+            {
+                "id": "CultureMech:000002",
+                "parent_media": {
+                    "id": "CultureMech:000001",
+                    "path": "data/normalized_yaml/bacterial/stale_base.yaml",
+                    "relationship": "SALINITY_VARIANT",
+                },
+            }
+        )
+    )
+    rows = [
+        {
+            "yaml_path": parent_path,
+            "record_kind": "MEDIA",
+            "ingredient_identity_signature": "same",
+            "ingredient_concentration_signature": "same",
+            "name": "base",
+            "total_component_count": "1",
+        },
+        {
+            "yaml_path": child_path,
+            "record_kind": "MEDIA",
+            "ingredient_identity_signature": "same",
+            "ingredient_concentration_signature": "same",
+            "name": "current_child",
+            "total_component_count": "1",
+        },
+    ]
+
+    existing_links = collect_existing_links(rows, repo_root=tmp_path)
+    proposals, groups = build_proposals(rows, existing_links=existing_links)
+
+    assert existing_links == {existing_link_key(parent_path, child_path)}
+    assert proposals == []
+    assert groups == []
+
+
+def test_variant_proposals_exclude_curated_false_positive_pairs():
+    dsmz_605 = {
+        "yaml_path": "data/normalized_yaml/bacterial/nutrient_agar_oxoid_cm3.yaml",
+        "record_kind": "MEDIA",
+        "id": "CultureMech:001732",
+        "name": "nutrient_agar_oxoid_cm3",
+        "ingredient_identity_signature": "same",
+        "ingredient_concentration_signature": "one",
+        "physical_state": "SOLID_AGAR",
+        "total_component_count": "6",
+    }
+    na_yeast = {
+        **dsmz_605,
+        "yaml_path": "data/normalized_yaml/bacterial/na_0_5_yeast_extract.yaml",
+        "id": "CultureMech:008124",
+        "name": "na_0_5_yeast_extract",
+        "ingredient_concentration_signature": "two",
+    }
+
+    proposals, groups = build_proposals([dsmz_605, na_yeast])
 
     assert proposals == []
     assert groups == []

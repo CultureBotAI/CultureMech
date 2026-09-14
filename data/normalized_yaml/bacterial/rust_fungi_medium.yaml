@@ -5,50 +5,79 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 5.8
 ingredients:
-- preferred_term: Distilled water make up to
+- preferred_term: Murashige and Skoog plant salt mixture (Wako)
   concentration:
-    value: '1'
+    value: '1.15'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: NBRC Medium 19 / TOGO M1422
+  notes: NBRC Medium 19 lists 1.15 g/L Murashige & Skoog's plant salt mixture, with
+    a source footnote naming Wako Pure Chemicals; this commercial blend is retained
+    as an opaque complex component.
+- preferred_term: Peptic Pepton (USB)
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: NBRC Medium 19 / TOGO M1422
+  notes: NBRC Medium 19 lists 2.0 g/L Peptic Pepton from USB; this brand-specific
+    peptone is retained as an opaque complex component.
+- preferred_term: Lab-Lemco Broth (Oxoid)
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: NBRC Medium 19 / TOGO M1422
+  notes: NBRC Medium 19 lists 2.0 g/L Lab-Lemco Broth from Oxoid; this brand-specific
+    broth powder is retained as an opaque complex component.
 - preferred_term: Sucrose
   concentration:
-    value: '40'
+    value: '40.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
+  source: NBRC Medium 19 / TOGO M1422
+  notes: NBRC Medium 19 lists 40.0 g/L Sucrose.
   term:
     id: CHEBI:17992
     label: sucrose
   mediaingredientmech_chebi_term:
     id: CHEBI:17992
     label: sucrose
+  nutritional_roles:
+  - CARBON_SOURCE
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: NBRC Medium 19 / TOGO M1422
+  notes: NBRC Medium 19 lists Distilled water to 1 L.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Bacto Agar (Difco)
   concentration:
-    value: '20'
+    value: '20.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Peptic Pepton (USB)
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Lab-Lemco Broth (OXOID)
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: NBRC Medium 19 / TOGO M1422
+  notes: NBRC Medium 19 lists 20.0 g/L Bacto Agar from Difco.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 media_term:
   preferred_term: TOGO Medium M1422
   term:
     id: TOGO:M1422
     label: Rust fungi Medium
-notes: 'Source: https://togomedium.org/medium/M1422
-
-  Original source: NBRC - NBRC_M19
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=19'
+notes: TOGO M1422 imports NBRC Medium 19 as Rust fungi Medium. NBRC Medium 19 lists
+  1.15 g Murashige & Skoog's plant salt mixture from Wako Pure Chemicals, 2 g Peptic
+  Pepton from USB, 2 g Lab-Lemco Broth from Oxoid, 40 g sucrose, distilled water to
+  1 L, and 20 g Bacto Agar from Difco at pH 5.8.
 applications:
 - Microbial cultivation
 curation_history:
@@ -91,12 +120,24 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-solutions:
-- preferred_term: Murashige & Skoog's plant salt mixture*
-  composition: []
-  concentration:
-    value: '1.15'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Complex component, Defined component'
-  name: Unknown solution
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m1422_rust_fungi_score15.py
+  action: RESOLVED_TOGO_M1422_RUST_FUNGI_SCORE15
+  source: https://togomedium.org/medium/M1422; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1422;
+    https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=19
+  notes: TOGO M1422 imports NBRC Medium 19 as Rust fungi Medium. NBRC Medium 19 lists
+    1.15 g Murashige & Skoog's plant salt mixture from Wako Pure Chemicals, 2 g Peptic
+    Pepton from USB, 2 g Lab-Lemco Broth from Oxoid, 40 g sucrose, distilled water
+    to 1 L, and 20 g Bacto Agar from Difco at pH 5.8. Corrected the imported water
+    unit, set pH 5.8, moved Murashige and Skoog plant salt mixture back from an empty
+    solution to the ingredient list, grounded exact water, sucrose, and agar components,
+    and retained the brand-specific complex powders as unmapped ingredients.
 kg_microbe_match: mediadive.medium:263
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1422
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1422
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=19

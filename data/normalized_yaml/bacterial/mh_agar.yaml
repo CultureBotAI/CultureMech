@@ -6,22 +6,34 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: ciprofloxacin (if needed)
+- preferred_term: Ciprofloxacin
   concentration:
     value: '4'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Simple component'
+    unit: MG_PER_L
+  source: TOGO M2938
+  notes: TOGO M2938 lists optional ciprofloxacin at 4 ug/ml; this is stored as the
+    equivalent 4 mg/L.
+  term:
+    id: CHEBI:100241
+    label: ciprofloxacin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:100241
+    label: ciprofloxacin
+  cellular_metabolic_roles:
+  - INHIBITOR
 - preferred_term: MH agar
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2938
+  notes: TOGO M2938 lists 1 L of MH agar.
 media_term:
   preferred_term: TOGO Medium M2938
   term:
     id: TOGO:M2938
     label: MH agar
-notes: 'Source: https://togomedium.org/medium/M2938'
+notes: TOGO M2938 records Mueller-Hinton agar plates at 42 C, optionally supplemented
+  with ciprofloxacin at 4 ug/ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -37,3 +49,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MH agar" to "mh_agar" for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_literal_products_score40.py
+  action: RESOLVED_TOGO_LITERAL_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO literal product/additive graph
+  source: https://togomedium.org/medium/M2938
+  notes: TOGO M2938 records Mueller-Hinton agar plates at 42 C, optionally supplemented
+    with ciprofloxacin at 4 ug/ml.
+temperature_value: 42.0
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2938

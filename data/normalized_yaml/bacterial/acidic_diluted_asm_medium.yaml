@@ -206,6 +206,11 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_reference_wrappers_score40.py
+  action: LINKED_JCM_REFERENCE_WRAPPER_CHILD
+  changes: Linked JCM reference-wrapper child media to source parents
+  notes: Added or refreshed reciprocal parent-child link for bacterial/diluted_asm_medium.yaml.
 solutions:
 - preferred_term: Phosphate buffer stock solution
   term:
@@ -216,3 +221,9 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_4768_Phosphate_buffer_stock_solution.yaml for composition
   name: Unknown solution
+variant_children:
+- path: data/normalized_yaml/bacterial/diluted_asm_medium.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:003160
+  name: diluted_asm_medium
+  notes: Adjusts Acidic Diluted ASM Medium from JCM Medium 815 to pH 6.7.

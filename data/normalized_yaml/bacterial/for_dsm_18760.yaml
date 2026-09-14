@@ -327,13 +327,23 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-high_metal: true
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1095_natranaerobius_ph_score10.py
+  action: RESOLVED_KOMODO_1095_NATRANAEROBIUS_PH_VARIANTS
+  changes: Linked as a NATRANAEROBIUS medium pH variant
+  source: KOMODO Medium 1095.1
+  notes: KOMODO Medium 1095.1 preserves NATRANAEROBIUS medium components and concentrations
+    but records pH 9.5 for DSM 18760.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_1095_NATRANAEROBIUS_medium.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: PH_VARIANT
   id: CultureMech:003747
   name: natranaerobius_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 1095 is the pH 8.5 NATRANAEROBIUS medium base.
+variant_relationship: PH_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 1095.1 preserves NATRANAEROBIUS medium components and concentrations
+  but records pH 9.5 for DSM 18760.
+high_metal: true
+data_quality_flags:
+- ingredients_curated

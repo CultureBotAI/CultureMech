@@ -1,11 +1,16 @@
 id: CultureMech:007473
-name: '1340'
-original_name: '1340'
+name: M9-Phenanthrene
+original_name: M9-Phenanthrene
 category: bacterial
 description: 1340. NBRC 1339.
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: NBRC Medium 1339
+  term:
+    id: nbrc.medium:1339
+    label: NBRC Medium 1339
 ingredients:
 - preferred_term: Agar solution*
   concentration:
@@ -30,13 +35,28 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  description: Dissolve 15 g agar in 900 ml distilled water.
 - step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
+  action: AUTOCLAVE
+  description: Autoclave the agar solution.
 - step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: AUTOCLAVE
+  description: Sterilize the 10xM9 solution separately by autoclaving.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Dissolve MgSO4 and CaCl2 stocks in distilled water and sterilize by
+    autoclaving.
+- step_number: 5
+  action: FILTER_STERILIZE
+  description: Filter-sterilize the 250 mM phenanthrene solution in DMSO using DMSO-safe
+    filters.
+- step_number: 6
+  action: MIX
+  description: Aseptically mix autoclaved agar, 10xM9, MgSO4, and CaCl2 solutions.
+- step_number: 7
+  action: MIX
+  description: After cooling to 65 C, aseptically add phenanthrene solution, sonicate
+    for approximately 30 seconds, and pour into plates.
 curation_history:
 - timestamp: '2026-02-20T00:22:36.064419Z'
   curator: nbrc-import
@@ -74,48 +94,175 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 5 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_nbrc_1340_score15.py
+  action: RESOLVED_NBRC_1340_SCORE15
+  changes: Grounded recovered NBRC Medium 1339 M9-Phenanthrene formula
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1339
+  notes: Added the NBRC Medium 1339 source term and official title, expanded missing
+    agar, MgSO4, CaCl2, and phenanthrene stock solutions, and converted M9-Phenanthrene
+    sterilization instructions into structured steps.
 solutions:
+- preferred_term: Agar solution
+  composition:
+  - preferred_term: Agar
+    concentration:
+      value: '15'
+      unit: G_PER_L
+    source: NBRC Medium 1339
+    notes: NBRC Medium 1339 dissolves 15 g agar in the 900 ml agar solution.
+    term:
+      id: CHEBI:2509
+      label: agar
+    mediaingredientmech_chebi_term:
+      id: CHEBI:2509
+      label: agar
+  - preferred_term: Distilled water
+    concentration:
+      value: '900'
+      unit: ML_PER_L
+    source: NBRC Medium 1339
+    notes: NBRC Medium 1339 prepares the agar solution in 900 ml distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  name: Agar solution
 - preferred_term: 10xM9 solution
   composition:
   - preferred_term: KH2PO4
     concentration:
       value: '30'
       unit: G_PER_L
+    source: NBRC Medium 1339
+    notes: NBRC Medium 1339 lists 30 G_PER_L KH2PO4 in 10xM9 solution.
     term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    mediaingredientmech_chebi_term:
       id: CHEBI:63036
       label: potassium dihydrogen phosphate
   - preferred_term: Na2HPO4
     concentration:
       value: '60'
       unit: G_PER_L
+    source: NBRC Medium 1339
+    notes: NBRC Medium 1339 lists 60 G_PER_L Na2HPO4 in 10xM9 solution.
     term:
+      id: CHEBI:34683
+      label: disodium hydrogenphosphate
+    mediaingredientmech_chebi_term:
       id: CHEBI:34683
       label: disodium hydrogenphosphate
   - preferred_term: NH4Cl
     concentration:
       value: '10'
       unit: G_PER_L
+    source: NBRC Medium 1339
+    notes: NBRC Medium 1339 lists 10 G_PER_L NH4Cl in 10xM9 solution.
     term:
+      id: CHEBI:31206
+      label: ammonium chloride
+    mediaingredientmech_chebi_term:
       id: CHEBI:31206
       label: ammonium chloride
   - preferred_term: NaCl
     concentration:
       value: '5'
       unit: G_PER_L
+    source: NBRC Medium 1339
+    notes: NBRC Medium 1339 lists 5 G_PER_L NaCl in 10xM9 solution.
     term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
       id: CHEBI:26710
       label: sodium chloride
   - preferred_term: Distilled water
     concentration:
       value: '1'
       unit: L
+    source: NBRC Medium 1339
+    notes: NBRC Medium 1339 lists 1 L Distilled water in 10xM9 solution.
     term:
       id: CHEBI:15377
       label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
   name: 10xM9 solution
-notes: After autoclaving of agar solution, aseptically mix 10xM9, MgSO4 and CaCl2
-  solutions. After cooling to 65°C, aseptically add phenanthrene solution, mix by
-  sonication for approximately 30 seconds and pour into the plates. Agar solution
-  Dissolve 15 g of agar in 900 ml of distilled water and sterilize by autoclaving.
-  Sterilize separately by autoclaving. Dissolve in distilled water and sterilize by
-  autoclaving. Sterilized by filtration. The use of DMSO-safe filters is recommended.
+- preferred_term: MgSO4 solution
+  composition:
+  - preferred_term: MgSO4
+    concentration:
+      value: '1'
+      unit: MOLAR
+    source: NBRC Medium 1339
+    notes: NBRC Medium 1339 adds 2.1 ml/L of 1 M MgSO4 solution.
+    term:
+      id: CHEBI:32599
+      label: magnesium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32599
+      label: magnesium sulfate
+  name: MgSO4 solution
+- preferred_term: CaCl2 solution
+  composition:
+  - preferred_term: CaCl2
+    concentration:
+      value: '0.1'
+      unit: MOLAR
+    source: NBRC Medium 1339
+    notes: NBRC Medium 1339 adds 1 ml/L of 0.1 M CaCl2 solution.
+    term:
+      id: CHEBI:3312
+      label: calcium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:3312
+      label: calcium chloride
+  name: CaCl2 solution
+- preferred_term: Phenanthrene solution
+  composition:
+  - preferred_term: Phenanthrene
+    concentration:
+      value: '250'
+      unit: MILLIMOLAR
+    source: NBRC Medium 1339
+    notes: NBRC Medium 1339 adds 10 ml/L of 250 mM phenanthrene solution in DMSO.
+    term:
+      id: CHEBI:28851
+      label: phenanthrene
+    mediaingredientmech_chebi_term:
+      id: CHEBI:28851
+      label: phenanthrene
+  - preferred_term: Dimethyl sulfoxide (DMSO)
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: NBRC Medium 1339
+    notes: NBRC Medium 1339 uses dimethyl sulfoxide as the solvent for the 250 mM
+      phenanthrene stock.
+    term:
+      id: CHEBI:28262
+      label: dimethyl sulfoxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:28262
+      label: dimethyl sulfoxide
+  name: Phenanthrene solution
+notes: 'Source: NBRC Medium 1339 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1339
+
+
+  NBRC lists M9-Phenanthrene as an agar medium prepared from autoclaved agar, 10xM9,
+  1 M MgSO4, and 0.1 M CaCl2 solutions plus filter-sterilized 250 mM phenanthrene
+  in dimethyl sulfoxide. Phenanthrene is added after cooling to 65 C, mixed by sonication,
+  and poured into plates.'
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1339

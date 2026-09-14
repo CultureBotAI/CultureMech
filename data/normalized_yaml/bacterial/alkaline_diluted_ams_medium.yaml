@@ -2,78 +2,80 @@ id: CultureMech:009693
 name: alkaline_diluted_ams_medium
 original_name: Alkaline Diluted AMS Medium
 category: bacterial
-medium_type: COMPLEX
-composition_type: UNDEFINED
+medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
+ph_value: 8.0
+aeration: methane-air (80:20, v/v)
+incubation_atmosphere: MICROAEROPHILIC
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: MgSO4·7H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-- preferred_term: CaCl2·2H2O
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
 - preferred_term: NH4Cl
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: JCM Medium 815 / JCM Medium 1428
+  notes: JCM Medium 1428 uses the JCM Medium 815 basal component NH4Cl at 0.1 g/L.
   term:
     id: CHEBI:31206
     label: ammonium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
     label: ammonium chloride
-- preferred_term: Methane gas
-  notes: 'Properties: ガス'
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: MgSO4 x 7 H2O
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Air
-  notes: 'Properties: ガス'
+    value: '0.1'
+    unit: G_PER_L
+  source: JCM Medium 815 / JCM Medium 1428
+  notes: JCM Medium 1428 uses the JCM Medium 815 basal component MgSO4 x 7 H2O at
+    0.1 g/L.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: CaCl2 x 2 H2O
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '0.02'
+    unit: G_PER_L
+  source: JCM Medium 815 / JCM Medium 1428
+  notes: JCM Medium 1428 uses the JCM Medium 815 basal component CaCl2 x 2 H2O at
+    0.02 g/L.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: JCM Medium 815 / JCM Medium 1428
+  notes: JCM Medium 1428 uses the JCM Medium 815 basal component Distilled water at
+    1000.0 ml/L.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M3279
   term:
     id: TOGO:M3279
     label: Alkaline Diluted AMS Medium
-notes: 'Source: https://togomedium.org/medium/M3279
-
-  Original source: JCM - JCM_M1428
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1428'
+notes: TOGO M3279 records JCM Medium 1428, which uses JCM Medium 815 with the final
+  pH adjusted to 8.0, the phosphate buffer stock reduced to 1.0 ml/L, and the gas
+  phase replaced by methane-air (80:20, v/v). JCM Medium 815 supplies the basal NH4Cl,
+  MgSO4 x 7 H2O, CaCl2 x 2 H2O, Trace element solution, Iron stock solution, and Phosphate
+  buffer stock solution formulas.
+references:
+- reference: https://togomedium.org/medium/M3279
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1428
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=815
 applications:
 - Microbial cultivation
 curation_history:
@@ -133,33 +135,245 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m3279_alkaline_diluted_ams_score15.py
+  action: RESOLVED_TOGO_M3279_ALKALINE_DILUTED_AMS
+  source: https://togomedium.org/medium/M3279; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1428;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=815
+  notes: Verified TOGO M3279 against JCM Medium 1428 and its JCM Medium 815 parent,
+    corrected water to 1000.0 ml/L, converted imported JCM 815 stock references to
+    0.1 ml/L Trace element solution, 0.1 ml/L Iron stock solution, and 1.0 ml/L Phosphate
+    buffer stock solution, moved the methane-air gas phase out of ingredients, and
+    removed the JCM 815 pH 3.0 HCl adjustment.
 solutions:
-- preferred_term: Trace element solution (see Medium [M850])
-  composition: []
-  notes: Cross-reference to Medium M850
+- preferred_term: Trace element solution
   concentration:
     value: '0.1'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Iron stock solution (see Medium [M850])
-  composition: []
-  notes: Cross-reference to Medium M850
+    unit: ML_PER_L
+  source: JCM Medium 815 / JCM Medium 1428
+  notes: JCM Medium 1428 uses the JCM Medium 815 0.1 ml/L Trace element solution without
+    modifying its composition.
+  composition:
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.4'
+      unit: G_PER_L
+    source: JCM Medium 815
+    notes: JCM Medium 815 lists 0.4 g/L ZnSO4 x 7 H2O in this stock solution.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+  - preferred_term: EDTA x 2Na
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    source: JCM Medium 815
+    notes: JCM Medium 815 lists 0.25 g/L EDTA x 2Na in this stock solution.
+    term:
+      id: CHEBI:64734
+      label: EDTA disodium salt (anhydrous)
+    mediaingredientmech_chebi_term:
+      id: CHEBI:64734
+      label: EDTA disodium salt (anhydrous)
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    source: JCM Medium 815
+    notes: JCM Medium 815 lists 0.02 g/L MnCl2 x 4 H2O in this stock solution.
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.015'
+      unit: G_PER_L
+    source: JCM Medium 815
+    notes: JCM Medium 815 lists 0.015 g/L H3BO3 in this stock solution.
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.04'
+      unit: G_PER_L
+    source: JCM Medium 815
+    notes: JCM Medium 815 lists 0.04 g/L Na2MoO4 x 2 H2O in this stock solution.
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+  - preferred_term: NiCl2 x 6 H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: JCM Medium 815
+    notes: JCM Medium 815 lists 0.01 g/L NiCl2 x 6 H2O in this stock solution.
+    term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+  - preferred_term: CuSO4 x 5 H2O
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    source: JCM Medium 815
+    notes: JCM Medium 815 lists 0.2 g/L CuSO4 x 5 H2O in this stock solution.
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.05'
+      unit: G_PER_L
+    source: JCM Medium 815
+    notes: JCM Medium 815 lists 0.05 g/L CoCl2 x 6 H2O in this stock solution.
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 815
+    notes: JCM Medium 815 lists 1.0 L Distilled water in this stock solution.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: Iron stock solution
   concentration:
     value: '0.1'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Phosphate buffer stock solution (see Medium [M850])
-  composition: []
-  notes: Cross-reference to Medium M850
+    unit: ML_PER_L
+  source: JCM Medium 815 / JCM Medium 1428
+  notes: JCM Medium 1428 uses the JCM Medium 815 0.1 ml/L Iron stock solution without
+    modifying its composition.
+  term:
+    id: mediadive.solution:4767
+    label: Iron stock solution 4.5 g/L
+  composition:
+  - preferred_term: EDTA x Fe(III)
+    concentration:
+      value: '4.5'
+      unit: G_PER_L
+    source: JCM Medium 815
+    notes: JCM Medium 815 lists 4.5 g/L EDTA x Fe(III) in this stock solution.
+    term:
+      id: CHEBI:30729
+      label: ethylenediaminetetraacetatoferrate(1-)
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30729
+      label: ethylenediaminetetraacetatoferrate(1-)
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 815
+    notes: JCM Medium 815 lists 1.0 L Distilled water in this stock solution.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: Phosphate buffer stock solution
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: 1 N HCl solution
-  composition: []
-  concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Solution'
-  name: Unknown solution
+    value: '1.0'
+    unit: ML_PER_L
+  source: JCM Medium 815 / JCM Medium 1428
+  notes: JCM Medium 1428 reduces the JCM Medium 815 Phosphate buffer stock solution
+    addition to 1.0 ml/L.
+  composition:
+  - preferred_term: KH2PO4
+    concentration:
+      value: '37.425'
+      unit: G_PER_L
+    source: JCM Medium 815
+    notes: JCM Medium 815 lists 37.425 g/L KH2PO4 in this stock solution.
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Na2HPO4 x 2 H2O
+    concentration:
+      value: '48.950'
+      unit: G_PER_L
+    source: JCM Medium 815
+    notes: JCM Medium 815 lists 48.950 g/L Na2HPO4 x 2 H2O in this stock solution.
+    term:
+      id: CHEBI:91258
+      label: disodium hydrogenphosphate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91258
+      label: disodium hydrogenphosphate dihydrate
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 815
+    notes: JCM Medium 815 lists 1.0 L Distilled water in this stock solution.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve NH4Cl, MgSO4 x 7 H2O, and CaCl2 x 2 H2O in distilled water
+    with 0.1 ml/L Trace element solution and 0.1 ml/L Iron stock solution.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the basal medium.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave the Phosphate buffer stock solution separately.
+- step_number: 4
+  action: MIX
+  description: After cooling, add 1.0 ml/L sterile Phosphate buffer stock solution
+    to the basal medium.
+- step_number: 5
+  action: ADJUST_PH
+  description: Adjust the medium to pH 8.0.
+- step_number: 6
+  action: ALIQUOT
+  description: Distribute 20 ml aliquots into sterile 120 ml serum bottles and seal
+    with butyl rubber stoppers.
+- step_number: 7
+  action: FILTER_STERILIZE
+  description: Replace the gas phase with filter-sterilized methane-air (80:20, v/v).
+sterilization:
+  method: AUTOCLAVE
+  notes: Autoclave the basal medium and Phosphate buffer stock solution separately;
+    filter-sterilize the methane-air gas phase.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

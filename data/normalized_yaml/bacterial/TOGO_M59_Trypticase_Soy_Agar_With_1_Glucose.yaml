@@ -10,24 +10,24 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  source: TOGO Medium M59
+  notes: Adds 10 g/L glucose to TOGO M66 Trypticase Soy Agar.
   term:
     id: CHEBI:17234
     label: glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  nutritional_roles:
+  - CARBON_SOURCE
 media_term:
   preferred_term: TOGO Medium M59
   term:
     id: TOGO:M59
     label: Trypticase Soy Agar With 1% Glucose
-notes: 'Source: https://togomedium.org/medium/M59
-
-  Original source: JCM - JCM_M67
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=67'
+notes: TOGO Medium M59 explicitly records Trypticase Soy Agar with 1% glucose as 1
+  L of TOGO Medium M66 Trypticase Soy Agar plus 10 g/L glucose. The original JCM Medium
+  67 URL now returns `Nothing found`, so this repair uses the TOGO M59 and M66 formulas.
 applications:
 - Microbial cultivation
 curation_history:
@@ -70,12 +70,34 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_togo_tsa_glucose_score20.py
+  action: RESOLVED_TOGO_TSA_GLUCOSE_SCORE20
+  changes: Resolved TOGO M59 Trypticase Soy Agar glucose variant
+  source: https://togomedium.org/medium/M59; https://togomedium.org/medium/M66
+  notes: Adds 10 g/L glucose to TOGO M66 Trypticase Soy Agar.
 solutions:
-- preferred_term: Trypticase soy agar (see Medium [M66])
-  composition: []
-  notes: Cross-reference to Medium M66
+- preferred_term: Trypticase Soy Agar
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '1000'
+    unit: ML_PER_L
+  notes: Adds 10 g/L glucose to TOGO M66 Trypticase Soy Agar.
+  culturemech_term:
+    id: CultureMech:010073
+    label: Trypticase Soy Agar
 kg_microbe_match: mediadive.medium:21
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M66_Trypticase_Soy_Agar.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:010073
+  name: trypticase_soy_agar
+  notes: Adds 10 g/L glucose to TOGO M66 Trypticase Soy Agar.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adds 10 g/L glucose to TOGO M66 Trypticase Soy Agar.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M59
+- reference: https://togomedium.org/medium/M66

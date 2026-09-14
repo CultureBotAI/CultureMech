@@ -7,14 +7,15 @@ composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+  concentration:
+    value: 10 N
+    unit: VARIABLE
+  source: TOGO Medium M165
+  notes: TOGO lists 10 N H2SO4 for final pH adjustment. Normality is retained verbatim
+    because the schema has no normality unit.
   term:
     id: CHEBI:26836
     label: sulfuric acid
-  concentration:
-    value: variable
-    unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:26836
     label: sulfuric acid
@@ -23,11 +24,8 @@ media_term:
   term:
     id: TOGO:M165
     label: Sulfolobus Medium (B)
-notes: 'Source: https://togomedium.org/medium/M165
-
-  Original source: JCM - JCM_M172
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=172'
+notes: TOGO M165 uses one liter of TOGO M156 Sulfolobus Medium and adjusts it to pH
+  3.5 with 10 N H2SO4.
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,11 +72,41 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_archaea_ph_wrappers_score20.py
+  action: RESOLVED_ARCHAEA_PH_WRAPPER_SCORE20
+  changes: Resolved archaeal pH parent-medium wrapper
+  source: https://togomedium.org/medium/M165
+  notes: Adjusts TOGO M156 Sulfolobus Medium to pH 3.5 with 10 N H2SO4.
 solutions:
 - preferred_term: Sulfolobus medium (see Medium [M156])
   composition: []
-  notes: Cross-reference to Medium M156
   concentration:
     value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    unit: L
+  notes: TOGO M165 uses one liter of TOGO M156 Sulfolobus Medium as the base medium.
+  culturemech_term:
+    id: CultureMech:008118
+    label: Sulfolobus Medium
+ph_value: 3.5
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use one liter of Sulfolobus Medium from TOGO M156 and adjust to pH
+    3.5 with 10 N H2SO4.
+parent_media:
+  path: data/normalized_yaml/archaea/TOGO_M156_Sulfolobus_Medium.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:008118
+  name: sulfolobus_medium
+  notes: TOGO M165 uses TOGO M156 Sulfolobus Medium and adjusts it to pH 3.5 with
+    10 N H2SO4.
+variant_relationship: PH_VARIANT
+variant_modifications:
+- Adjusts TOGO M156 Sulfolobus Medium to pH 3.5 with 10 N H2SO4.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M165
+- reference: https://togomedium.org/medium/M156

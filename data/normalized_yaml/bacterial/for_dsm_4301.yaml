@@ -118,10 +118,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-variant_children:
-- path: data/normalized_yaml/bacterial/thermoplasma_volcanium_medium.yaml
-  relationship: SOURCE_DUPLICATE
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_398_thermoplasma_score10.py
+  action: RESOLVED_KOMODO_398_THERMOPLASMA_TOPOLOGY
+  changes: Linked under MediaDive Medium 398
+  source: KOMODO Medium 398.1
+  notes: KOMODO Medium 398.1 applies THERMOPLASMA VOLCANIUM MEDIUM for DSM 4301.
+parent_media:
+  path: data/normalized_yaml/archaea/thermoplasma_volcanium_medium.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:001507
   name: thermoplasma_volcanium_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: MediaDive Medium 398 is the DSMZ THERMOPLASMA VOLCANIUM MEDIUM base.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
+variant_modifications:
+- KOMODO Medium 398.1 applies THERMOPLASMA VOLCANIUM MEDIUM for DSM 4301.
+data_quality_flags:
+- ingredients_curated

@@ -6,18 +6,21 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.6
 ingredients:
 - preferred_term: Tris-HC1 (pH 7.6)
   concentration:
-    value: '50'
+    value: '50.0'
     unit: MILLIMOLAR
-  notes: 'Role: Buffer; Properties: Complex component, Defined component, Solution'
+  source: TOGO M2240
+  notes: TOGO M2240 lists 50 mM Tris-HC1 (pH 7.6); this pH-specific buffer is retained
+    without a single-molecule ontology grounding.
 - preferred_term: Glucose
   concentration:
     value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+    unit: PERCENT_W_V
+  source: TOGO M2240
+  notes: TOGO M2240 lists 0.2% w/v Glucose.
   term:
     id: CHEBI:17234
     label: glucose
@@ -26,19 +29,25 @@ ingredients:
     label: glucose
 - preferred_term: Calf serum (Gibco)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+    value: '1.0'
+    unit: PERCENT_V_V
+  source: TOGO M2240
+  notes: TOGO M2240 lists 1% v/v Calf serum from Gibco; this liquid serum is retained
+    as an opaque complex component.
 - preferred_term: PPLO broth (Difco)
   concentration:
     value: '2.2'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+    unit: PERCENT_W_V
+  source: TOGO M2240
+  notes: TOGO M2240 lists 2.2% w/v PPLO broth from Difco; the commercial broth is
+    not reducible to one ChEBI molecule.
 - preferred_term: Penicillin G
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Simple component'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M2240
+  notes: TOGO M2240 lists 400 units(U)/ml Penicillin G, which is retained as a variable
+    concentration because the schema has no unit for activity units.
   term:
     id: CHEBI:51765
     label: benzylpenicillin sodium
@@ -47,7 +56,10 @@ media_term:
   term:
     id: TOGO:M2240
     label: Medium containing PPLO broth, calf serum, glucose, penicillin G, and Tris-HC1
-notes: 'Source: https://togomedium.org/medium/M2240'
+notes: TOGO M2240 reports a 24 h, 37 C Mycoplasma capricolum ATCC 27343 growth medium
+  containing 2.2% w/v PPLO broth from Difco, 1% v/v calf serum from Gibco, 0.2% w/v
+  glucose, 400 units(U)/ml Penicillin G, and 50 mM Tris-HC1 at pH 7.6. The TOGO metadata
+  also records pH 7.6.
 applications:
 - Microbial cultivation
 curation_history:
@@ -92,4 +104,20 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
-kg_microbe_match: mediadive.medium:21
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2240_pplo_calf_serum_score15.py
+  action: RESOLVED_TOGO_M2240_SCORE15
+  source: https://togomedium.org/medium/M2240
+  notes: TOGO M2240 reports a 24 h, 37 C Mycoplasma capricolum ATCC 27343 growth medium
+    containing 2.2% w/v PPLO broth from Difco, 1% v/v calf serum from Gibco, 0.2%
+    w/v glucose, 400 units(U)/ml Penicillin G, and 50 mM Tris-HC1 at pH 7.6. The TOGO
+    metadata also records pH 7.6. Corrected the imported percent-concentration units,
+    added the source pH, kept the disclosed opaque products unmapped, retained Penicillin
+    G as an activity-unit amount, and removed kg_microbe_match mediadive.medium:21
+    because MediaDive medium 21 is Sarcina Medium.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2240

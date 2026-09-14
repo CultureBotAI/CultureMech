@@ -254,3 +254,40 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_bacterial_strain_specific_score45.py
+  action: LINKED_STRAIN_SPECIFIC_SCORE45_CHILDREN
+  changes: Linked score-45 strain-specific child media to source parents
+  notes: Added or refreshed reciprocal parent-child link for bacterial/for_dsm_3247.yaml.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_293_propionigenium_score10.py
+  action: RESOLVED_KOMODO_293_PROPIONIGENIUM_TOPOLOGY
+  changes: Documented as a KOMODO Medium 293 duplicate
+  source: DSMZ Medium 293
+  notes: DSMZ Medium 293 has the same 19-component Propionigenium modestum medium
+    signature as KOMODO Medium 293.
+parent_media:
+  path: data/normalized_yaml/bacterial/propionigenium_modestum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004756
+  name: propionigenium_modestum_medium
+  notes: DSMZ Medium 293 has the same 19-component Propionigenium modestum medium
+    signature as KOMODO Medium 293.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- DSMZ Medium 293 has the same 19-component Propionigenium modestum medium signature
+  as KOMODO Medium 293.
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_3247.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005055
+  name: for_dsm_3247
+  notes: Substitutes 1 g/L Acetoin for DSMZ Medium 293 disodium succinate.
+  evidence:
+  - reference: https://bacdive.dsmz.de/strain/4214
+    supports: SUPPORT
+    explanation: BacDive lists Syntrophotalea acetylenica DSM 3247 as cultivated on
+      PROPIONIGENIUM MODESTUM MEDIUM (MARINE), DSMZ Medium 293, and MediaDive lists
+      the 1 g/L Acetoin strain modification at 30 C under anaerobic conditions.
+data_quality_flags:
+- ingredients_curated

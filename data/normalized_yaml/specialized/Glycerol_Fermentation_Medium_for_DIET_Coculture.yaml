@@ -136,6 +136,9 @@ source_data:
     snippet: Using this mechanism could be an efficient and cost-effective way to
       directly control redox balances in co-culture fermentation
     explanation: Establishes anaerobic requirement maintained using Hungate technique
+sources:
+- database: CommunityMech
+  database_id: CommunityMech:000031
 curation_history:
 - timestamp: '2026-03-15T00:15:00.375852Z'
   curator: communitymech-importer-v1.0
@@ -167,6 +170,13 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_communitymech_sources_score10_batch10.py
+  action: ADDED_COMMUNITYMECH_STRUCTURED_SOURCES_BATCH10
+  changes: Added structured CommunityMech sources
+  source: source_data.community_ids
+  notes: Promoted CommunityMech upstream IDs into sources[] for source-provenance
+    scoring.
 source_environment:
 - preferred_term: laboratory culture
   term:

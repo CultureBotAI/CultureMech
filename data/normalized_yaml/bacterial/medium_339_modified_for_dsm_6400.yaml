@@ -56,14 +56,24 @@ curation_history:
 - timestamp: '2026-03-17T19:45:45.388368+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 339 MODIFIED FOR DSM 6400" to
-    "medium_339_modified_for_dsm_6400" for consistent matching
+  notes: Normalized name from "MEDIUM 339 MODIFIED FOR DSM 6400" to "medium_339_modified_for_dsm_6400"
+    for consistent matching
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_339_wilkins_topology_score10.py
+  action: RESOLVED_KOMODO_339_WILKINS_TOPOLOGY
+  changes: Linked under WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643)
+  source: KOMODO Medium 339_6400
+  notes: KOMODO Medium 339_6400 applies WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM
+    643) for DSM 6400.
 parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_14428.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005041
-  name: for_dsm_14428
-variant_relationship: SOURCE_DUPLICATE
+  path: data/normalized_yaml/bacterial/wilkins_chalgren_anaerobe_broth_oxoid_cm_643.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005046
+  name: wilkins_chalgren_anaerobe_broth_oxoid_cm_643
+  notes: KOMODO Medium 339 is the WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643) base.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- KOMODO Medium 339_6400 applies WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643) for
+  DSM 6400.
+data_quality_flags:
+- ingredients_curated

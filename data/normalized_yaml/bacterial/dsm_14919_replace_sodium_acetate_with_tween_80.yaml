@@ -233,3 +233,23 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_950_onr7a_score10.py
+  action: RESOLVED_KOMODO_950_ONR7A_TOPOLOGY
+  changes: Linked as a KOMODO Medium 950 source-token substitution variant
+  source: KOMODO Medium 950.2_replace_Sodium acetate_with_Tween 80
+  notes: KOMODO Medium 950.2_replace_Sodium acetate_with_Tween 80 records a DSM 14919
+    ONR7a derivative with Sodium acetate replaced by Tween 80.
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_950_ONR7a_MEDIUM.yaml
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  id: CultureMech:006893
+  name: onr7a_medium
+  notes: KOMODO Medium 950.2_replace_Sodium acetate_with_Tween 80 records a DSM 14919
+    ONR7a derivative with Sodium acetate replaced by Tween 80.
+variant_relationship: SUBSTITUTED_COMPONENT_VARIANT
+variant_modifications:
+- KOMODO Medium 950.2_replace_Sodium acetate_with_Tween 80 records a DSM 14919 ONR7a
+  derivative with Sodium acetate replaced by Tween 80.
+data_quality_flags:
+- ingredients_curated

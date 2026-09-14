@@ -4,61 +4,55 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: Bristol-NaCl Medium
+  term:
+    id: UTEX:bristol-nacl-medium
+    label: Bristol-NaCl Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
+notes: UTEX prepares Bristol-NaCl Medium by adding 3.6 g/L NaCl to prepared Bristol
+  Medium and bringing the total volume to 1 L.
 ingredients:
-- preferred_term: Bristol Medium
-  concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'UTEX lists: amount 1 L'
 - preferred_term: NaCl
   concentration:
     value: '0.062'
     unit: MOLAR
-  notes: 'UTEX lists: amount 3.6 g/L; final 0.062 M'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: S271-500
+  notes: UTEX lists 3.6 g/L NaCl, equivalent to 0.062 M.
+  physicochemical_roles:
+  - OSMOTIC_AGENT
+solutions:
+- preferred_term: Bristol Medium
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  culturemech_term:
+    id: CultureMech:000037
+    label: Bristol Medium
+  notes: UTEX lists 1 L prepared Bristol Medium per 1 L final medium.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: Prepare Bristol Medium through step one.
 - step_number: 2
-  action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  action: DISSOLVE
+  description: Add NaCl and bring the total volume to 1 L with dH2O.
 - step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
+  action: AUTOCLAVE
+  description: Cover and autoclave the medium.
 - step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
-- step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
-salinity: marine (natural seawater or artificial seawater)
+  action: STORE
+  description: Store at refrigerator temperature.
+salinity: saltwater
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -97,7 +91,26 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_remaining_score50.py
+  action: RESOLVED_UTEX_SCORE50_ALGAE_GRAPH
+  changes: Grounded remaining score-50 UTEX algae recipe components
+  source: https://utex.org/products/bristol-nacl-medium
+  notes: UTEX prepares Bristol-NaCl Medium by adding 3.6 g/L NaCl to prepared Bristol
+    Medium and bringing the total volume to 1 L.
 references:
 - reference: UTEX:bristol-nacl-medium
 - reference: https://utex.org/products/bristol-nacl-medium
 original_name: Bristol-NaCl Medium
+parent_media:
+  path: data/normalized_yaml/algae/Bristol_Medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:000037
+  name: bristol_medium
+  notes: Adds 3.6 g/L NaCl to prepared Bristol Medium.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adds 3.6 g/L NaCl to prepared Bristol Medium.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

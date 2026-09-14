@@ -3,30 +3,57 @@ name: lactobacillus_sakei_medium
 original_name: LACTOBACILLUS SAKEI MEDIUM
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J20
   term:
     id: mediadive.medium:J20
     label: LACTOBACILLUS SAKEI MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=20'
+notes: MediaDive J20 imports JCM Medium 20. JCM 20 records Lactobacillus Sakei Medium
+  as an 800 ml sake-water agar recipe with yeast extract and liver extract concentrate
+  and does not state a pH.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix 700 ml sake, 100 ml distilled water, 5.0 g yeast extract, 13.0
+    g agar, and 0.2 g Liver extract concentrate.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 degrees C for 15 min.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: Autoclave the complete agar medium at the JCM default settings.
 ingredients:
 - preferred_term: Sake
   concentration:
-    value: '700'
-    unit: G_PER_L
+    value: '875.0'
+    unit: ML_PER_L
+  source: MediaDive J20 / JCM Medium 20
+  notes: JCM Medium 20 lists 700 ml sake in an 800 ml recipe; MediaDive J20 records
+    the same original 800 ml main-solution volume.
 - preferred_term: Yeast extract
   concentration:
     value: '6.25'
     unit: G_PER_L
-- preferred_term: Agar
+  source: MediaDive J20 / JCM Medium 20
+  notes: MediaDive J20 / JCM Medium 20 lists 6.25 g/L Yeast extract.
   term:
-    id: CHEBI:2509
-    label: agar
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Agar
   concentration:
     value: '16.25'
     unit: G_PER_L
+  source: MediaDive J20 / JCM Medium 20
+  notes: MediaDive J20 / JCM Medium 20 lists 16.25 g/L Agar.
+  term:
+    id: CHEBI:2509
+    label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
@@ -34,6 +61,22 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  source: MediaDive J20 / JCM Medium 20
+  notes: JCM Medium 20 lists 0.2 g Liver extract concentrate in an 800 ml recipe;
+    the product is source-disclosed but not reducible to one ChEBI molecule.
+- preferred_term: Distilled water
+  concentration:
+    value: '125.0'
+    unit: ML_PER_L
+  source: MediaDive J20 / JCM Medium 20
+  notes: JCM Medium 20 lists 100 ml distilled water in an 800 ml recipe; MediaDive
+    J20 records this as the original 800 ml main-solution volume.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -60,4 +103,20 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_jcm_j20_lactobacillus_sakei_score15.py
+  action: RESOLVED_JCM_J20_LACTOBACILLUS_SAKEI_SCORE15
+  source: https://mediadive.dsmz.de/rest/medium/J20; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=20
+  notes: MediaDive J20 imports JCM Medium 20. JCM 20 records Lactobacillus Sakei Medium
+    as an 800 ml sake-water agar recipe with yeast extract and liver extract concentrate
+    and does not state a pH. Corrected the imported sake row from a g/L artifact to
+    an ml/L volume, restored the distilled-water row, and normalized the 800 ml recipe
+    to per-liter concentrations.
 kg_microbe_match: mediadive.medium:12
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/J20
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=20

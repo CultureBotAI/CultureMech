@@ -40,6 +40,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.2'
@@ -73,6 +76,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: KCl
   concentration:
     value: '0.5'
@@ -161,6 +167,12 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 7 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_remaining_score10_grounding_batch9.py
+  action: RESOLVED_REMAINING_SCORE10_GROUNDING_BATCH9
+  changes: grounded exact hydrate terms
+  source: official catalogue recipe and local exact label index
+  notes: 'Reviewed remaining score-10 grounding rows: CaCl2・2H2O, MgCl2・6H2O.'
 solutions:
 - preferred_term: sodium pyruvate solution
   composition: []

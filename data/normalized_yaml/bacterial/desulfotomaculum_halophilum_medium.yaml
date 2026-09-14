@@ -292,3 +292,16 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_815_desulfotomaculum_score10.py
+  action: RESOLVED_KOMODO_815_DESULFOTOMACULUM_TOPOLOGY
+  changes: Promoted KOMODO Medium 815 to the Desulfotomaculum parent
+  source: KOMODO Medium 815 and KOMODO Medium 815.1
+  notes: Linked the strain-specific KOMODO Medium 815.1 record under the KOMODO Medium
+    815 DESULFOTOMACULUM HALOPHILUM base.
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_11763.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006538
+  name: for_dsm_11763
+  notes: KOMODO Medium 815.1 applies DESULFOTOMACULUM HALOPHILUM medium to DSM 11763.

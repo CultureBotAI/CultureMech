@@ -14,26 +14,48 @@ notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_
 ingredients:
 - preferred_term: Casitone
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
+  source: DSMZ Medium 1550
+  notes: DSMZ Medium 1550 lists 5.0 g/L Casitone; this casein digest is retained as
+    an opaque complex component.
 - preferred_term: Yeast extract
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
+  source: DSMZ Medium 1550
+  notes: DSMZ Medium 1550 lists 5.0 g/L yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: DSMZ Medium 1550
+  notes: DSMZ Medium 1550 lists 2.0 g/L MgSO4 x 7 H2O.
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-  concentration:
-    value: '2'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 1550
+  notes: DSMZ Medium 1550 makes the recipe with 1000.0 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: pH needs no adjustment
+  description: pH needs no adjustment.
 applications:
 - Microbial cultivation
 curation_history:
@@ -59,3 +81,16 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_dsmz_1550_ex_lm_score15.py
+  action: RESOLVED_DSMZ_1550_EX_LM_SCORE15
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1550.pdf
+  notes: DSMZ Medium 1550 defines EX-LM Medium as 5.0 g/L Casitone, 5.0 g/L yeast
+    extract, 2.0 g/L MgSO4 x 7 H2O, and 1000.0 ml distilled water, with no pH adjustment.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://mediadive.dsmz.de/medium/1550
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1550.pdf

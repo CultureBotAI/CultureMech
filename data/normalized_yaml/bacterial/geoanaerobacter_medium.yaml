@@ -260,12 +260,36 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_9736.yaml
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_dsmz_838_geobacter_score10.py
+  action: RESOLVED_DSMZ_KOMODO_838_TOPOLOGY
+  changes: Promoted DSMZ Medium 838 to the Geobacter parent
+  source: DSMZ Medium 838 and KOMODO Medium 838-838.4
+  notes: Moved the exact-signature KOMODO 838 records under the DSMZ/MediaDive GEOANAEROBACTER
+    MEDIUM base.
+variant_children:
+- path: data/normalized_yaml/bacterial/geobacter_dfr2_medium.yaml
   relationship: SOURCE_DUPLICATE
+  id: CultureMech:006635
+  name: geobacter_dfr2_medium
+  notes: KOMODO Medium 838 has the same formulation as DSMZ Medium 838.
+- path: data/normalized_yaml/bacterial/for_dsm_9736.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006631
   name: for_dsm_9736
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+  notes: KOMODO Medium 838.1 applies DSMZ Medium 838 to DSM 9736.
+- path: data/normalized_yaml/bacterial/for_dsm_15288_and_dsm_16228.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006632
+  name: for_dsm_15288_and_dsm_16228
+  notes: KOMODO Medium 838.2 applies DSMZ Medium 838 to DSM 15288 and DSM 16228.
+- path: data/normalized_yaml/bacterial/for_dsm_16401.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006633
+  name: for_dsm_16401
+  notes: KOMODO Medium 838.3 applies DSMZ Medium 838 to DSM 16401.
+- path: data/normalized_yaml/bacterial/for_dsm_19350_and_dsm_22248.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006634
+  name: for_dsm_19350_and_dsm_22248
+  notes: KOMODO Medium 838.4 applies DSMZ Medium 838 to DSM 19350 and DSM 22248.

@@ -2,6 +2,7 @@ id: CultureMech:004822
 name: nutrient_broth_oxoid_medium_948
 original_name: Nutrient broth (Oxoid) (medium 948)
 category: bacterial
+record_kind: SOLUTION
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID

@@ -76,6 +76,11 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2310_reactivation_464a_score15.py
+  action: LINKED_TOGO_M2310_SOURCE_DUPLICATE
+  source: https://togomedium.org/medium/M2310; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium464a.pdf
+  notes: Linked TOGO M2310 as a source duplicate of DSMZ Medium 464a.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_464a_REACTIVATION_WITH_LIQUID_medium_464.yaml
   relationship: SOURCE_DUPLICATE
@@ -83,3 +88,9 @@ variant_children:
   name: reactivation_with_liquid_medium_464
   notes: Same ingredient and concentration signature; KOMODO record copied from the
     matching DSMZ medium source.
+- path: data/normalized_yaml/bacterial/reactivation_with_liquid_medium_464_plate_count_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008897
+  name: reactivation_with_liquid_medium_464_plate_count_agar
+  notes: TOGO M2310 imports the DSMZ Medium 464a reactivation formula from the same
+    DSMZ PDF as the MediaDive parent record.

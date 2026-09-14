@@ -161,6 +161,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_104b_pyx_ph_score10.py
+  action: RESOLVED_KOMODO_104B_PYX_PH_VARIANTS
+  changes: Linked PYX-MEDIUM pH variant children
+  source: KOMODO Medium 104b.3 and KOMODO Medium 104b.12
+  notes: Changed DSM 7320 and DSM 21650 from SOURCE_DUPLICATE to PH_VARIANT children
+    of PYX-MEDIUM.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_104b_pyx_ph_score10.py
+  action: RESOLVED_KOMODO_104B_PYX_STRAIN_VARIANTS
+  changes: Linked PYX-MEDIUM strain-specific children
+  source: KOMODO Medium 104b.2, 104b.4, 104b.6, 104b.8, 104b.9, and 104b.11
+  notes: Changed DSM 753, DSM 5387, DSM 13181, DSM 19022, DSM 21120, and DSM 21761
+    from SOURCE_DUPLICATE to STRAIN_SPECIFIC_VARIANT children of PYX-MEDIUM.
 variant_children:
 - path: data/normalized_yaml/bacterial/anaerobaculum_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -181,11 +195,10 @@ variant_children:
   notes: Same ingredient and concentration signature; review as possible duplicate
     source record.
 - path: data/normalized_yaml/bacterial/for_dsm_13181.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003618
   name: for_dsm_13181
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 104b.6 applies pH 7 PYX-MEDIUM for DSM 13181.
 - path: data/normalized_yaml/bacterial/for_dsm_14760_dsm_14761_and_dsm_14762.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003619
@@ -193,47 +206,40 @@ variant_children:
   notes: Same ingredient and concentration signature; review as possible duplicate
     source record.
 - path: data/normalized_yaml/bacterial/for_dsm_19022.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003620
   name: for_dsm_19022
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 104b.8 applies pH 7 PYX-MEDIUM for DSM 19022.
 - path: data/normalized_yaml/bacterial/for_dsm_21120.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003621
   name: for_dsm_21120
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 104b.9 applies pH 7 PYX-MEDIUM for DSM 21120.
 - path: data/normalized_yaml/bacterial/for_dsm_21650.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: PH_VARIANT
   id: CultureMech:003611
   name: for_dsm_21650
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 104b.12 applies PYX-MEDIUM at pH 8.5 for DSM 21650.
 - path: data/normalized_yaml/bacterial/for_dsm_21761.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003610
   name: for_dsm_21761
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 104b.11 applies pH 7 PYX-MEDIUM for DSM 21761.
 - path: data/normalized_yaml/bacterial/for_dsm_5387.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003616
   name: for_dsm_5387
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 104b.4 applies pH 7 PYX-MEDIUM for DSM 5387.
 - path: data/normalized_yaml/bacterial/for_dsm_7320.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: PH_VARIANT
   id: CultureMech:003615
   name: for_dsm_7320
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 104b.3 applies PYX-MEDIUM at pH 6.3 for DSM 7320.
 - path: data/normalized_yaml/bacterial/for_dsm_753.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003614
   name: for_dsm_753
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 104b.2 applies pH 7 PYX-MEDIUM for DSM 753.
 - path: data/normalized_yaml/bacterial/for_dsm_753_dsm_6589_dsm_7320_dsm_15930_dsm_17592_dsm_19522_dsm_22681_dsm_23576_and_dsm_24553.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003613

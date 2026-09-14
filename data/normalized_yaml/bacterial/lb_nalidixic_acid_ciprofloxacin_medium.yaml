@@ -3,58 +3,69 @@ name: lb_nalidixic_acid_ciprofloxacin_medium
 original_name: LB + Nalidixic acid, Ciprofloxacin medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Yeast extract
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: Agar (if needed)
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
 - preferred_term: Bacto Tryptone (Difco)
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2013 / NBRC Medium 1301
+  notes: NBRC Medium 1301 lists Bacto Tryptone (Difco) as a source-disclosed digest
+    product not reducible to one ChEBI molecule.
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  source: TOGO M2013 / NBRC Medium 1301
+  notes: TOGO M2013 / NBRC Medium 1301 lists 5 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  source: TOGO M2013 / NBRC Medium 1301
+  notes: TOGO M2013 / NBRC Medium 1301 lists 5 g/L NaCl.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2013 / NBRC Medium 1301
+  notes: TOGO M2013 / NBRC Medium 1301 lists 1000 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  source: TOGO M2013 / NBRC Medium 1301
+  notes: TOGO M2013 / NBRC Medium 1301 lists 15 g/L agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M2013
   term:
     id: TOGO:M2013
     label: LB + Nalidixic acid, Ciprofloxacin medium
-notes: 'Source: https://togomedium.org/medium/M2013
-
-  Original source: NBRC - NBRC_M1301
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1301'
+notes: TOGO M2013 imports NBRC Medium 1301 LB + Nalidixic acid, Ciprofloxacin medium.
+  NBRC 1301 lists the LB base with 1.0 ml/L Nalidixic acid solution (30 mg/ml), 1.0
+  ml/L Ciprofloxacin solution (5 mg/ml), 15 g/L agar if needed, and pH 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -97,19 +108,100 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2013_lb_nalidixic_ciprofloxacin_score15.py
+  action: RESOLVED_TOGO_M2013_LB_NALIDIXIC_CIPROFLOXACIN_SCORE15
+  source: https://togomedium.org/medium/M2013; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1301
+  notes: TOGO M2013 imports NBRC Medium 1301 LB + Nalidixic acid, Ciprofloxacin medium.
+    NBRC 1301 lists the LB base with 1.0 ml/L Nalidixic acid solution (30 mg/ml),
+    1.0 ml/L Ciprofloxacin solution (5 mg/ml), 15 g/L agar if needed, and pH 7.0.
+    Corrected the imported distilled-water row from a g/L artifact to an ml/L volume
+    and nested the separately filter-sterilized 30 mg/ml nalidixic acid and 5 mg/ml
+    ciprofloxacin stocks.
 solutions:
-- preferred_term: Ciprofloxacin solution (5 mg/ml)*
-  composition: []
+- preferred_term: Nalidixic acid solution (30 mg/ml)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Complex component, Defined component,
-    Solution'
-  name: Unknown solution
-- preferred_term: Nalidixic acid solution (30 mg/ml)*
-  composition: []
+    value: '1.0'
+    unit: ML_PER_L
+  source: TOGO M2013 / NBRC Medium 1301
+  notes: TOGO M2013 / NBRC Medium 1301 lists 1 ml/L Nalidixic acid solution (30 mg/ml).
+  term:
+    id: CHEBI:100147
+    label: nalidixic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:100147
+    label: nalidixic acid
+  composition:
+  - preferred_term: Nalidixic acid
+    concentration:
+      value: '30.0'
+      unit: MG_PER_ML
+    source: TOGO M2013 / NBRC Medium 1301
+    notes: NBRC Medium 1301 specifies this stock as 30 mg/ml Nalidixic acid.
+    term:
+      id: CHEBI:100147
+      label: nalidixic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:100147
+      label: nalidixic acid
+  name: Nalidixic acid solution (30 mg/ml)
+  preparation_notes: Sterilize separately by filtration.
+- preferred_term: Ciprofloxacin solution (5 mg/ml)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Solution, Defined component, Complex component'
-  name: Unknown solution
+    value: '1.0'
+    unit: ML_PER_L
+  source: TOGO M2013 / NBRC Medium 1301
+  notes: TOGO M2013 / NBRC Medium 1301 lists 1 ml/L Ciprofloxacin solution (5 mg/ml).
+  term:
+    id: CHEBI:100241
+    label: ciprofloxacin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:100241
+    label: ciprofloxacin
+  composition:
+  - preferred_term: Ciprofloxacin
+    concentration:
+      value: '5.0'
+      unit: MG_PER_ML
+    source: TOGO M2013 / NBRC Medium 1301
+    notes: NBRC Medium 1301 specifies this stock as 5 mg/ml Ciprofloxacin.
+    term:
+      id: CHEBI:100241
+      label: ciprofloxacin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:100241
+      label: ciprofloxacin
+  name: Ciprofloxacin solution (5 mg/ml)
+  preparation_notes: Sterilize separately by filtration.
+ph_value: 7.0
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the LB base from 10 g/L Bacto Tryptone (Difco), 5 g/L yeast
+    extract, 5 g/L NaCl, 1000 ml/L distilled water, and 15 g/L agar if needed.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Sterilize the 30 mg/ml nalidixic acid and 5 mg/ml ciprofloxacin stocks
+    separately by filtration.
+- step_number: 3
+  action: MIX
+  description: Add 1.0 ml/L filter-sterilized Nalidixic acid solution (30 mg/ml) and
+    1.0 ml/L filter-sterilized Ciprofloxacin solution (5 mg/ml) to the LB base.
+parent_media:
+  path: data/normalized_yaml/bacterial/lb_medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:008037
+  name: lb_medium
+  notes: NBRC Medium 1301 supplements LB Medium with 1.0 ml/L Nalidixic acid solution
+    (30 mg/ml) and 1.0 ml/L Ciprofloxacin solution (5 mg/ml), each separately filter-sterilized.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adds 1.0 ml/L Nalidixic acid solution (30 mg/ml) and 1.0 ml/L Ciprofloxacin solution
+  (5 mg/ml) after separate filter sterilization.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2013
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1301

@@ -3,58 +3,74 @@ name: togo_medium_m1708
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '800'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Yeast extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: CaCl2·2H2O
-  concentration:
-    value: '0.87'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: Agar (if needed)
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
 - preferred_term: Bacto Tryptone (Difco)
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M1708 / NBRC Medium 915
+  notes: TOGO M1708 / NBRC Medium 915 lists 5 g/L Bacto Tryptone (Difco); this commercial
+    peptone is retained as a source-disclosed complex digest.
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  source: TOGO M1708 / NBRC Medium 915
+  notes: TOGO M1708 / NBRC Medium 915 lists 3 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.87'
+    unit: G_PER_L
+  source: TOGO M1708 / NBRC Medium 915
+  notes: TOGO M1708 / NBRC Medium 915 lists 0.87 g/L CaCl2·2H2O.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Distilled water
+  concentration:
+    value: '800'
+    unit: ML_PER_L
+  source: TOGO M1708 / NBRC Medium 915
+  notes: TOGO M1708 / NBRC Medium 915 lists 800 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  source: TOGO M1708 / NBRC Medium 915
+  notes: TOGO M1708 / NBRC Medium 915 lists 15 g/L agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 media_term:
   preferred_term: TOGO Medium M1708
   term:
     id: TOGO:M1708
     label: TOGO Medium M1708
-notes: 'Source: https://togomedium.org/medium/M1708
-
-  Original source: NBRC - NBRC_M915
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=915'
+notes: TOGO M1708 imports NBRC Medium 915, which lists 5 g/L Bacto Tryptone (Difco),
+  3 g/L Yeast extract, 0.87 g/L CaCl2·2H2O, 100 ml/L Rifampicin solution (500 ug/ml),
+  and 100 ml/L Spectinomycin solution (500 ug/ml), 800 ml/L Distilled water, and 15
+  g/L Agar if needed at pH 7.0. The antibiotic stock solution(s) are sterilized separately
+  by filtration.
 applications:
 - Microbial cultivation
 curation_history:
@@ -97,27 +113,131 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nbrc_915_920_score15.py
+  action: RESOLVED_NBRC_915_920_SCORE15
+  source: https://togomedium.org/medium/M1708; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=915
+  notes: Curated TOGO:M1708 from TOGO and NBRC Medium 915; corrected Distilled water
+    from a mass-like 800 g/L import to 800 ml/L, nested 500 ug/ml antibiotic stocks
+    with their active components, added pH 7.0, grounded yeast extract, calcium chloride
+    dihydrate, antibiotic components, water, and agar, and retained Bacto Tryptone
+    as a sourced opaque component.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nbrc_915_920_score15.py
+  action: LINKED_NBRC_915_920_VARIANTS
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=915; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=916;
+    https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=917; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=918;
+    https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=919; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=920
+  notes: Linked NBRC Media 916-920 as antibiotic-stock variants of NBRC Medium 915.
 solutions:
-- preferred_term: Rifampicin solution (500 μg/ml)*
-  composition: []
+- preferred_term: Rifampicin solution (500 ug/ml)
   concentration:
     value: '100'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Solution, Defined
-    component'
-  name: Unknown solution
-- preferred_term: Spectinomycin solution (500 μg/ml)*
-  composition: []
+    unit: ML_PER_L
+  source: TOGO M1708 / NBRC Medium 915
+  notes: TOGO M1708 / NBRC Medium 915 lists 100 ml/L Rifampicin solution (500 ug/ml).
+  term:
+    id: CHEBI:28077
+    label: rifampicin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28077
+    label: rifampicin
+  composition:
+  - preferred_term: Rifampicin
+    concentration:
+      value: '0.5'
+      unit: MG_PER_ML
+    source: TOGO M1708 / NBRC Medium 915
+    notes: NBRC Medium 915 specifies this stock as 500 ug/ml Rifampicin.
+    term:
+      id: CHEBI:28077
+      label: rifampicin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:28077
+      label: rifampicin
+  name: Rifampicin solution (500 ug/ml)
+  preparation_notes: Sterilize separately by filtration.
+- preferred_term: Spectinomycin solution (500 ug/ml)
   concentration:
     value: '100'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Solution, Defined component, Complex
-    component'
-  name: Unknown solution
+    unit: ML_PER_L
+  source: TOGO M1708 / NBRC Medium 915
+  notes: TOGO M1708 / NBRC Medium 915 lists 100 ml/L Spectinomycin solution (500 ug/ml).
+  term:
+    id: CHEBI:9215
+    label: spectinomycin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9215
+    label: spectinomycin
+  composition:
+  - preferred_term: Spectinomycin
+    concentration:
+      value: '0.5'
+      unit: MG_PER_ML
+    source: TOGO M1708 / NBRC Medium 915
+    notes: NBRC Medium 915 specifies this stock as 500 ug/ml Spectinomycin.
+    term:
+      id: CHEBI:9215
+      label: spectinomycin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:9215
+      label: spectinomycin
+  name: Spectinomycin solution (500 ug/ml)
+  preparation_notes: Sterilize separately by filtration.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Combine 5 g/L Bacto Tryptone (Difco), 3 g/L Yeast extract, 0.87 g/L
+    CaCl2·2H2O, and 800 ml/L Distilled water.
+- step_number: 2
+  action: MIX
+  description: Add 15 g/L agar when solid NBRC Medium 915 is needed.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize Rifampicin solution (500 ug/ml), and Spectinomycin solution
+    (500 ug/ml) separately by filtration.
+- step_number: 4
+  action: MIX
+  description: Add 100 ml/L filter-sterilized Rifampicin solution (500 ug/ml), and
+    100 ml/L filter-sterilized Spectinomycin solution (500 ug/ml).
+- step_number: 5
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
 variant_children:
+- path: data/normalized_yaml/bacterial/togo_medium_m1709.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:008271
+  name: togo_medium_m1709
+  notes: Omits the 100 ml/L Rifampicin solution from TOGO M1708 and increases water
+    from 800 to 900 ml/L.
 - path: data/normalized_yaml/bacterial/togo_medium_m1710.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
   id: CultureMech:008273
   name: togo_medium_m1710
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: Substitutes 100 ml/L Kanamycin solution for the 100 ml/L Spectinomycin solution
+    in TOGO M1708.
+- path: data/normalized_yaml/bacterial/togo_medium_m1711.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:008274
+  name: togo_medium_m1711
+  notes: Adds 100 ml/L Kanamycin solution to TOGO M1708 and decreases water from 800
+    to 700 ml/L.
+- path: data/normalized_yaml/bacterial/togo_medium_m1712.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:008275
+  name: togo_medium_m1712
+  notes: Omits the 100 ml/L Spectinomycin solution from TOGO M1708 and increases water
+    from 800 to 900 ml/L.
+- path: data/normalized_yaml/bacterial/togo_medium_m1713.yaml
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  id: CultureMech:008276
+  name: togo_medium_m1713
+  notes: Substitutes 100 ml/L Kanamycin solution for the rifampicin and spectinomycin
+    stock pair in TOGO M1708 and increases water from 800 to 900 ml/L.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1708
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=915

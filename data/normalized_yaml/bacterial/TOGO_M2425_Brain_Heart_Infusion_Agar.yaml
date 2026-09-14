@@ -6,25 +6,35 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: DI Water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: Heart Infusion Agar (BD 211065)
+- preferred_term: Brain Heart Infusion Agar (BD 211065)
   concentration:
     value: '52'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  source: ATCC Medium 44
+  notes: ATCC Medium 44 lists 52 g Brain Heart Infusion Agar (BD 211065) per 1000
+    mL DI water.
+  culturemech_term:
+    id: CultureMech:008793
+    label: Brain Heart Infusion Agar
+- preferred_term: DI Water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: ATCC Medium 44
+  notes: ATCC Medium 44 lists 1000 mL DI water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M2425
   term:
     id: TOGO:M2425
     label: Brain Heart Infusion Agar
-notes: 'Source: https://togomedium.org/medium/M2425
-
-  Original URL: https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx'
+notes: TOGO M2425 cites ATCC Medium 44; ATCC Medium 44 lists 52 g Brain Heart Infusion
+  Agar (BD 211065) per 1000 mL DI water.
 applications:
 - Microbial cultivation
 curation_history:
@@ -41,3 +51,36 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Brain Heart Infusion Agar" to "brain_heart_infusion_agar"
     for consistent matching
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_atcc_score40.py
+  action: RESOLVED_ATCC_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO/ATCC recipe graph
+  source: https://togomedium.org/medium/M2425; https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx
+  notes: TOGO M2425 cites ATCC Medium 44; ATCC Medium 44 lists 52 g Brain Heart Infusion
+    Agar (BD 211065) per 1000 mL DI water.
+ph_value: 7.4
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve 52 g Brain Heart Infusion Agar (BD 211065) in 1000 mL DI water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M2425
+- reference: https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008793
+  name: brain_heart_infusion_agar
+  notes: TOGO M2425 cites ATCC Medium 44 and uses the same Brain Heart Infusion Agar
+    formulation as TOGO M21.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- ATCC source-catalogue duplicate of Brain Heart Infusion Agar.

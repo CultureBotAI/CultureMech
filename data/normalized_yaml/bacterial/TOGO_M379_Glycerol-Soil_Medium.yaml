@@ -5,13 +5,26 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
+- preferred_term: Bacto peptone (BD-Difco)
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: TOGO M379 / JCM Medium 384
+  notes: TOGO M379 / JCM Medium 384 lists 5.0 g/L Bacto peptone (BD-Difco).
+- preferred_term: Beef extract (BD-Difco)
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  source: TOGO M379 / JCM Medium 384
+  notes: TOGO M379 / JCM Medium 384 lists 3.0 g/L Beef extract (BD-Difco).
 - preferred_term: Glycerol
   concentration:
-    value: '20'
+    value: '20.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  source: TOGO M379 / JCM Medium 384
+  notes: TOGO M379 / JCM Medium 384 lists 20.0 g/L Glycerol.
   term:
     id: CHEBI:17754
     label: glycerol
@@ -20,10 +33,10 @@ ingredients:
     label: glycerol
 - preferred_term: Tap water
   concentration:
-    value: '1810.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Undefined component [Merged 2 duplicates:
-    850.0, 960.0]'
+    value: '850.0'
+    unit: ML_PER_L
+  source: TOGO M379 / JCM Medium 384
+  notes: TOGO M379 / JCM Medium 384 lists 850.0 ml/L Tap water.
   term:
     id: CHEBI:15377
     label: water
@@ -32,44 +45,27 @@ ingredients:
     label: water
 - preferred_term: Agar
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M379 / JCM Medium 384
+  notes: TOGO M379 / JCM Medium 384 lists 15.0 g/L Agar.
   term:
     id: CHEBI:2509
     label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
-- preferred_term: Bacto peptone (BD-Difco)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Beef extract (BD-Difco)
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Soil extract (See below)
-  concentration:
-    value: '150'
-    unit: G_PER_L
-- preferred_term: air--dried garden soil
-  concentration:
-    value: '400'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Undefined component'
 media_term:
   preferred_term: TOGO Medium M379
   term:
     id: TOGO:M379
     label: Glycerol-Soil Medium
-notes: 'Source: https://togomedium.org/medium/M379
-
-  Original source: JCM - JCM_M384
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=384'
+notes: JCM Medium 384 Glycerol-Soil Medium lists, per liter, 5.0 g Bacto peptone (BD-Difco),
+  3.0 g Beef extract (BD-Difco), 20.0 g Glycerol, 150 ml Soil extract, 850 ml Tap
+  water, and 15.0 g Agar. The final pH is 7.0. Soil extract is prepared by autoclaving
+  400 g air-dried garden soil in 960 ml tap water at 121 C for 1 hr, cooling and settling
+  the slurry, decanting and paper-filtering the supernatant, then autoclaving and
+  storing it at room temperature until cleared by sedimentation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -110,3 +106,93 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m379_score15.py
+  action: RESOLVED_TOGO_M379_SCORE15
+  source: https://togomedium.org/medium/M379; https://mediadive.dsmz.de/medium/J384
+  notes: JCM Medium 384 Glycerol-Soil Medium lists, per liter, 5.0 g Bacto peptone
+    (BD-Difco), 3.0 g Beef extract (BD-Difco), 20.0 g Glycerol, 150 ml Soil extract,
+    850 ml Tap water, and 15.0 g Agar. The final pH is 7.0. Soil extract is prepared
+    by autoclaving 400 g air-dried garden soil in 960 ml tap water at 121 C for 1
+    hr, cooling and settling the slurry, decanting and paper-filtering the supernatant,
+    then autoclaving and storing it at room temperature until cleared by sedimentation.
+    Corrected the imported water merge and ml-to-g/L artifacts, moved Soil extract
+    to a 150 ml/L nested solution, and retained source-disclosed Bacto peptone and
+    Beef extract as intentionally ungrounded products.
+solutions:
+- preferred_term: Soil extract
+  concentration:
+    value: '150.0'
+    unit: ML_PER_L
+  source: TOGO M379 / JCM Medium 384
+  notes: TOGO M379 / JCM Medium 384 adds 150 ml/L Soil extract to the main liter.
+  preparation_notes: Suspend 400 g air-dried garden soil in 960 ml tap water and autoclave
+    at 121 C for 1 hr. Cool, settle, decant the supernatant, filter it through paper,
+    autoclave it again, and store it at room temperature until cleared by sedimentation.
+  composition:
+  - preferred_term: Tap water
+    concentration:
+      value: '960.0'
+      unit: ML_PER_L
+    source: TOGO M379 / JCM Medium 384
+    notes: TOGO M379 / JCM Medium 384 prepares Soil extract from 960 ml Tap water
+      with 400 g air-dried garden soil.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: Air-dried garden soil
+    concentration:
+      value: '400.0'
+      unit: G_PER_L
+    source: TOGO M379 / JCM Medium 384
+    notes: TOGO M379 / JCM Medium 384 prepares Soil extract from 400 g air-dried garden
+      soil in 960 ml Tap water.
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Suspend 400 g air-dried garden soil in 960 ml tap water and autoclave
+    at 121 C for 1 hr to prepare Soil extract.
+- step_number: 2
+  action: FILTER
+  description: After the soil slurry is cooled and settled, decant the supernatant
+    and filter it through paper.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave the filtered Soil extract and store it at room temperature
+    until cleared by sedimentation.
+- step_number: 4
+  action: MIX
+  description: Prepare the main liter with Bacto peptone, Beef extract, Glycerol,
+    150 ml Soil extract, 850 ml Tap water, and Agar.
+- step_number: 5
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 1 hr
+  notes: The soil slurry is autoclaved at 121 C for 1 hr; the decanted and paper-filtered
+    supernatant is autoclaved again before room-temperature storage.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M379
+- reference: https://mediadive.dsmz.de/medium/J384
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J384_GLYCEROL-SOIL_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002741
+  name: glycerol_soil_medium
+  notes: TOGO M379 imports the same JCM Medium 384 Glycerol-Soil Medium formulation
+    represented by MediaDive J384.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same JCM Medium 384 Glycerol-Soil Medium formulation as the MediaDive J384 source
+  record.

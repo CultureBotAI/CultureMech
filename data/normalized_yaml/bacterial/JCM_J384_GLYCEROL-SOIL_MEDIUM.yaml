@@ -11,60 +11,89 @@ media_term:
   term:
     id: mediadive.medium:J384
     label: GLYCEROL-SOIL MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=384'
+notes: JCM Medium 384 Glycerol-Soil Medium lists, per liter, 5.0 g Bacto peptone (BD-Difco),
+  3.0 g Beef extract (BD-Difco), 20.0 g Glycerol, 150 ml Soil extract, 850 ml Tap
+  water, and 15.0 g Agar. The final pH is 7.0. Soil extract is prepared by autoclaving
+  400 g air-dried garden soil in 960 ml tap water at 121 C for 1 hr, cooling and settling
+  the slurry, decanting and paper-filtering the supernatant, then autoclaving and
+  storing it at room temperature until cleared by sedimentation.
 ingredients:
-- preferred_term: Bacto peptone
+- preferred_term: Bacto peptone (BD-Difco)
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-- preferred_term: Beef extract
+  source: MediaDive J384 / JCM Medium 384
+  notes: MediaDive J384 / JCM Medium 384 lists 5.0 g/L Bacto peptone (BD-Difco).
+- preferred_term: Beef extract (BD-Difco)
   concentration:
-    value: '3'
+    value: '3.0'
     unit: G_PER_L
+  source: MediaDive J384 / JCM Medium 384
+  notes: MediaDive J384 / JCM Medium 384 lists 3.0 g/L Beef extract (BD-Difco).
 - preferred_term: Glycerol
+  concentration:
+    value: '20.0'
+    unit: G_PER_L
+  source: MediaDive J384 / JCM Medium 384
+  notes: MediaDive J384 / JCM Medium 384 lists 20.0 g/L Glycerol.
   term:
     id: CHEBI:17754
     label: glycerol
-  concentration:
-    value: '20'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
     label: glycerol
-- preferred_term: Soil extract
-  concentration:
-    value: '150'
-    unit: G_PER_L
 - preferred_term: Tap water
+  concentration:
+    value: '850.0'
+    unit: ML_PER_L
+  source: MediaDive J384 / JCM Medium 384
+  notes: MediaDive J384 / JCM Medium 384 lists 850.0 ml/L Tap water.
   term:
     id: CHEBI:15377
     label: water
-  concentration:
-    value: '850'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
 - preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: MediaDive J384 / JCM Medium 384
+  notes: MediaDive J384 / JCM Medium 384 lists 15.0 g/L Agar.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
 preparation_steps:
 - step_number: 1
+  action: AUTOCLAVE
+  description: Suspend 400 g air-dried garden soil in 960 ml tap water and autoclave
+    at 121 C for 1 hr to prepare Soil extract.
+- step_number: 2
+  action: FILTER
+  description: After the soil slurry is cooled and settled, decant the supernatant
+    and filter it through paper.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave the filtered Soil extract and store it at room temperature
+    until cleared by sedimentation.
+- step_number: 4
+  action: MIX
+  description: Prepare the main liter with Bacto peptone, Beef extract, Glycerol,
+    150 ml Soil extract, 850 ml Tap water, and Agar.
+- step_number: 5
   action: ADJUST_PH
   description: Adjust pH to 7.0.
-- step_number: 2
-  action: AUTOCLAVE
-  description: Suspend 400 g of air-dried garden soil in 960 ml of tap water and autoclave
-    at 121C for 1 hr. After the mixture is cooled and settled, the supernatant is
-    decanted, filtered through paper, autoclaved, and stored at room temperature until
-    cleared by sedimentation.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 1 hr
+  notes: The soil slurry is autoclaved at 121 C for 1 hr; the decanted and paper-filtered
+    supernatant is autoclaved again before room-temperature storage.
 applications:
 - Microbial cultivation
 curation_history:
@@ -91,3 +120,66 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m379_score15.py
+  action: RESOLVED_JCM_384_SOIL_EXTRACT
+  source: https://mediadive.dsmz.de/medium/J384; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=384
+  notes: JCM Medium 384 Glycerol-Soil Medium lists, per liter, 5.0 g Bacto peptone
+    (BD-Difco), 3.0 g Beef extract (BD-Difco), 20.0 g Glycerol, 150 ml Soil extract,
+    850 ml Tap water, and 15.0 g Agar. The final pH is 7.0. Soil extract is prepared
+    by autoclaving 400 g air-dried garden soil in 960 ml tap water at 121 C for 1
+    hr, cooling and settling the slurry, decanting and paper-filtering the supernatant,
+    then autoclaving and storing it at room temperature until cleared by sedimentation.
+    Corrected the imported water merge and ml-to-g/L artifacts, moved Soil extract
+    to a 150 ml/L nested solution, and retained source-disclosed Bacto peptone and
+    Beef extract as intentionally ungrounded products.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m379_score15.py
+  action: LINKED_TOGO_M379_SOURCE_DUPLICATE
+  source: https://togomedium.org/medium/M379; https://mediadive.dsmz.de/medium/J384
+  notes: Linked TOGO M379 as a same-source duplicate of MediaDive J384.
+solutions:
+- preferred_term: Soil extract
+  concentration:
+    value: '150.0'
+    unit: ML_PER_L
+  source: MediaDive J384 / JCM Medium 384
+  notes: MediaDive J384 / JCM Medium 384 adds 150 ml/L Soil extract to the main liter.
+  preparation_notes: Suspend 400 g air-dried garden soil in 960 ml tap water and autoclave
+    at 121 C for 1 hr. Cool, settle, decant the supernatant, filter it through paper,
+    autoclave it again, and store it at room temperature until cleared by sedimentation.
+  composition:
+  - preferred_term: Tap water
+    concentration:
+      value: '960.0'
+      unit: ML_PER_L
+    source: MediaDive J384 / JCM Medium 384
+    notes: MediaDive J384 / JCM Medium 384 prepares Soil extract from 960 ml Tap water
+      with 400 g air-dried garden soil.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: Air-dried garden soil
+    concentration:
+      value: '400.0'
+      unit: G_PER_L
+    source: MediaDive J384 / JCM Medium 384
+    notes: MediaDive J384 / JCM Medium 384 prepares Soil extract from 400 g air-dried
+      garden soil in 960 ml Tap water.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://mediadive.dsmz.de/medium/J384
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=384
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M379_Glycerol-Soil_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009760
+  name: glycerol_soil_medium
+  notes: TOGO M379 imports the same JCM Medium 384 Glycerol-Soil Medium formulation
+    represented by MediaDive J384.

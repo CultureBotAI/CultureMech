@@ -5,13 +5,21 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.3
 ingredients:
+- preferred_term: Nissui Modified GAM Broth
+  concentration:
+    value: '41.7'
+    unit: G_PER_L
+  source: TOGO M3039 / NBRC Medium 1509
+  notes: TOGO M3039 / NBRC Medium 1509 lists 41.7 g/L Nissui Modified GAM Broth; this
+    commercial medium product is retained as an opaque complex component.
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1000.0'
+    unit: ML_PER_L
+  source: TOGO M3039 / NBRC Medium 1509
+  notes: TOGO M3039 / NBRC Medium 1509 lists 1.0 L distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -20,19 +28,32 @@ ingredients:
     label: water
 - preferred_term: Agar (if needed)
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M3039 / NBRC Medium 1509
+  notes: TOGO M3039 / NBRC Medium 1509 lists 15.0 g/L agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M3039
   term:
     id: TOGO:M3039
     label: HGAM
-notes: 'Source: https://togomedium.org/medium/M3039
-
-  Original source: NBRC - NBRC_M1509-1
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1509'
+notes: NBRC Medium 1509 HGAM lists 41.7 g Nissui Modified GAM Broth, 15 g agar if
+  needed, 1.0 L distilled water, and pH 7.3. TOGO M3039 imports the solid agar form
+  from NBRC M1509-1.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Suspend 41.7 g Nissui Modified GAM Broth and 15.0 g agar, if a solid
+    medium is needed, in 1.0 L distilled water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.3.
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,24 +95,24 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-solutions:
-- preferred_term: Nissui Modified GAM Broth*
-  composition: []
-  concentration:
-    value: '41.7'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-  name: Unknown solution
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m3039_m3040_hgam_score15.py
+  action: RESOLVED_TOGO_M3039_HGAM_SCORE15
+  source: https://togomedium.org/medium/M3039; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1509
+  notes: Restored the opaque Nissui Modified GAM Broth component from NBRC Medium
+    1509, corrected the imported water unit to 1.0 L, grounded optional agar, added
+    pH 7.3, and replaced unrelated sparse-signature SOURCE_DUPLICATE children with
+    the true TOGO M3040 anaerobic liquid variant.
 variant_children:
-- path: data/normalized_yaml/bacterial/r2a_medium_daigo.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:008718
-  name: r2a_medium_daigo
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/tsb_0_2_w_v_na2co3.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:008236
-  name: tsb_0_2_w_v_na2co3
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+- path: data/normalized_yaml/bacterial/TOGO_M3040_HGAM.yaml
+  relationship: PHYSICAL_STATE_VARIANT
+  id: CultureMech:009553
+  name: hgam
+  notes: TOGO M3040 is the anaerobic liquid form of NBRC Medium 1509 HGAM.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M3039
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1509

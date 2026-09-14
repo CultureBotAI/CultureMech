@@ -32,14 +32,23 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Beef extract
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: FOODON:03302088
+    label: Beef extract
 - preferred_term: Casein peptone
   concentration:
     value: '3'
     unit: G_PER_L
+  term:
+    id: FOODON:03315719
+    label: Casein peptone
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -90,6 +99,12 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_score10_exact_terms_batch2.py
+  action: GROUNDED_KOMODO_SCORE10_EXACT_TERMS_BATCH2
+  changes: Grounded exact KOMODO score-10 ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Beef extract, Casein peptone, Yeast extract.
 parent_media:
   path: data/normalized_yaml/bacterial/glycerol_cornsteep_agar.yaml
   relationship: SOURCE_DUPLICATE

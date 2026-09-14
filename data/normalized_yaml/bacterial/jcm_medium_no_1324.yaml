@@ -2,16 +2,115 @@ id: CultureMech:002488
 name: jcm_medium_no_1324
 original_name: JCM MEDIUM No. 1324
 category: bacterial
-medium_type: COMPLEX
-composition_type: UNDEFINED
+medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J1324
   term:
     id: mediadive.medium:J1324
     label: JCM MEDIUM No. 1324
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1324'
-ingredients: []
+notes: 'JCM Medium 1324 was repaired from its imported Main sol. 1324 fragment: defined
+  salts in 1 L distilled water, 0.5% sterile methanol added after sterilization, and
+  pH 6.8.'
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: JCM Medium 1324 / Main sol. 1324
+  notes: JCM Medium 1324 / Main sol. 1324 lists 1.0 L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: JCM Medium 1324 / Main sol. 1324
+  notes: JCM Medium 1324 / Main sol. 1324 lists 0.5 g/L NH4Cl.
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  source: JCM Medium 1324 / Main sol. 1324
+  notes: JCM Medium 1324 / Main sol. 1324 lists 0.7 g/L K2HPO4.
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.54'
+    unit: G_PER_L
+  source: JCM Medium 1324 / Main sol. 1324
+  notes: JCM Medium 1324 / Main sol. 1324 lists 0.54 g/L KH2PO4.
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: MgSO4 x 6 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  source: JCM Medium 1324 / Main sol. 1324
+  notes: JCM Medium 1324 / Main sol. 1324 lists 1 g/L MgSO4 x 6 H2O.
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  source: JCM Medium 1324 / Main sol. 1324
+  notes: JCM Medium 1324 / Main sol. 1324 lists 0.2 g/L CaCl2 x 2 H2O.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  source: JCM Medium 1324 / Main sol. 1324
+  notes: JCM Medium 1324 / Main sol. 1324 lists 0.004 g/L FeSO4 x 7 H2O.
+  term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+- preferred_term: Methanol
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+  source: JCM Medium 1324 / Main sol. 1324
+  notes: JCM Medium 1324 / Main sol. 1324 adds sterile methanol to a 0.5% final concentration
+    in the sterile medium.
+  term:
+    id: CHEBI:17790
+    label: methanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
+    label: methanol
 applications:
 - Microbial cultivation
 curation_history:
@@ -48,6 +147,31 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_1324_score35.py
+  action: RESOLVED_JCM_1324_SCORE35
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1324
+  notes: 'JCM Medium 1324 was repaired from its imported Main sol. 1324 fragment:
+    defined salts in 1 L distilled water, 0.5% sterile methanol added after sterilization,
+    and pH 6.8.'
 data_quality_flags:
-- incomplete_composition
-- source_information_unavailable
+- has_ontology_mappings
+- ingredients_curated
+ph_value: 6.8
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix the salts in distilled water for the main solution; withhold methanol
+    until after sterilization.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 6.8.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Sterilize the main solution.
+- step_number: 4
+  action: MIX
+  description: Add sterile methanol to a final concentration of 0.5% in the sterile
+    medium.
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1324

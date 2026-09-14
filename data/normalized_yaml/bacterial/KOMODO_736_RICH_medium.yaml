@@ -18,14 +18,23 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  term:
+    id: MICRO:0000178
+    label: Bacto peptone
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Casamino acids
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315719
+    label: Casamino acids
 - preferred_term: Meat extract
   concentration:
     value: '2'
@@ -34,6 +43,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: FOODON:03301056
+    label: Malt extract
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
@@ -109,6 +121,13 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_score10_exact_terms_batch2.py
+  action: GROUNDED_KOMODO_SCORE10_EXACT_TERMS_BATCH2
+  changes: Grounded exact KOMODO score-10 ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Bacto peptone, Casamino acids, Malt extract, Yeast
+    extract.
 variant_children:
 - path: data/normalized_yaml/bacterial/medium_736_modified_for_dsm_22413.yaml
   relationship: SOURCE_DUPLICATE

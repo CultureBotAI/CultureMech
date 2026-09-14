@@ -14,8 +14,8 @@ notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1
 ingredients:
 - preferred_term: Brucella agar
   term:
-    id: CHEBI:2509
-    label: agar
+    id: MICRO:0000595
+    label: Brucella agar
   concentration:
     value: '1000'
     unit: G_PER_L

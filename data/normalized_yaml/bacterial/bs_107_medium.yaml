@@ -10,13 +10,14 @@ media_term:
   term:
     id: mediadive.medium:J867
     label: Bs 107 MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=867'
+notes: JCM Medium 867 now returns no formulation. TOGO M904 preserves this Bs 107
+  formulation as JCM Medium 866 with yeast extract replaced by 3.0 micrograms/L Na2SeO3
+  x 5 H2O.
 ingredients: []
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 866, replacing yeast extract with 3.0 &mu;g/L Na2SeO3
-    x 5H2O.
+  description: Use the Bs 107 formulation preserved by TOGO M904.
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,6 +53,34 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_bs107_score35.py
+  action: RESOLVED_BS107_SCORE35
+  changes: Linked stale JCM Medium 867 Bs 107 to source-equivalent TOGO M904
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=867; https://togomedium.org/medium/M904
+  notes: The current JCM Medium 867 URL returns no formulation, but TOGO M904 preserves
+    the same Bs 107 comment imported from JCM_M867.
 data_quality_flags:
-- incomplete_composition
-- source_information_unavailable
+- ingredients_curated
+solutions:
+- preferred_term: Bs 107 Medium
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  culturemech_term:
+    id: CultureMech:010323
+    label: Bs 107 Medium
+  notes: TOGO M904 preserves the same stale JCM Medium 867 Bs 107 formulation.
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M904_Bs_107_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010323
+  name: bs_107_medium
+  notes: The stale JCM J867 import represents the same Bs 107 formulation preserved
+    by TOGO M904.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same stale JCM Medium 867 Bs 107 formulation preserved by TOGO M904.
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=867
+- reference: https://togomedium.org/medium/M904

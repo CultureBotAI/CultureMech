@@ -475,5 +475,336 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_culturebotht_specialized_score50.py
+  action: LINKED_CULTUREBOTHT_SPECIALIZED_SCORE50_CHILDREN
+  changes: Linked score-50 CultureBotHT specialized child media
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_noglutamate.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_noadenine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_noalanine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_noarginine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_noasparagine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_noasparticacid.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_nobiotin.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_nocyanocobalamin.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_nocysteine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_nocytosine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_noglutamine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_noglutathione.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_noglycine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_noguanine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_nohistidine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_noisoleucine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_noleucine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_nolipoicacid.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_nolysine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_nomethionine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_nonicotinicacic.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_nopantothenate.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_nophenylalanine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_noproline.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_nopyridoxamine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_noriboflavin.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_noserine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_nothiamine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_nothreonine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_notryptophan.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_notyrosine.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_nouracil.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: LINKED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Linked CultureBotHT omitted-component child medium
+  notes: Added or refreshed reciprocal parent-child link for specialized/zmb_als_novaline.yaml.
 data_quality_flags:
 - has_unmapped_ingredients
+variant_children:
+- path: data/normalized_yaml/specialized/zmb_als_noadenine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015795
+  name: ZMB ALS noAdenine
+  notes: Omits Adenine hydrochloride hydrate from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_noalanine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015796
+  name: ZMB ALS noAlanine
+  notes: Omits L-Alanine from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_noarginine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015797
+  name: ZMB ALS noArginine
+  notes: Omits L-Arginine from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_noasparagine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015798
+  name: ZMB ALS noAsparagine
+  notes: Omits L-Asparagine from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_noasparticacid.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015799
+  name: ZMB ALS noAsparticAcid
+  notes: Omits L-Aspartic Acid from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_nobiotin.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015800
+  name: ZMB ALS noBiotin
+  notes: Omits biotin from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_nocyanocobalamin.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015801
+  name: ZMB ALS noCyanocobalamin
+  notes: Omits Cyanocobalamin from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_nocysteine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015802
+  name: ZMB ALS noCysteine
+  notes: Omits L-Cysteine hydrochloride monohydrate from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_nocytosine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015803
+  name: ZMB ALS noCytosine
+  notes: Omits Cytosine from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_noglutamate.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015804
+  name: ZMB ALS noGlutamate
+  notes: Omits L-Glutamic acid monopotassium salt monohydrate from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_noglutamine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015805
+  name: ZMB ALS noGlutamine
+  notes: Omits L-Glutamine from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_noglutathione.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015806
+  name: ZMB ALS noGlutathione
+  notes: Omits L-glutathione reduced from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_noglycine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015807
+  name: ZMB ALS noGlycine
+  notes: Omits Glycine from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_noguanine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015808
+  name: ZMB ALS noGuanine
+  notes: Omits Guanine from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_nohistidine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015809
+  name: ZMB ALS noHistidine
+  notes: Omits L-Histidine from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_noisoleucine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015810
+  name: ZMB ALS noIsoleucine
+  notes: Omits L-Isoleucine from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_noleucine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015811
+  name: ZMB ALS noLeucine
+  notes: Omits L-Leucine from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_nolipoicacid.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015812
+  name: ZMB ALS noLipoicAcid
+  notes: Omits Lipoic acid from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_nolysine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015813
+  name: ZMB ALS noLysine
+  notes: Omits L-Lysine from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_nomethionine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015814
+  name: ZMB ALS noMethionine
+  notes: Omits L-Methionine from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_nonicotinicacic.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015815
+  name: ZMB ALS noNicotinicAcic
+  notes: Omits Nicotinic Acid from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_nopantothenate.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015816
+  name: ZMB ALS noPantothenate
+  notes: Omits calcium pantothenate from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_nophenylalanine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015817
+  name: ZMB ALS noPhenylalanine
+  notes: Omits L-Phenylalanine from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_noproline.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015818
+  name: ZMB ALS noProline
+  notes: Omits L-Proline from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_nopyridoxamine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015819
+  name: ZMB ALS noPyridoxamine
+  notes: Omits Pyridoxamine dihydrochloride from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_noriboflavin.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015820
+  name: ZMB ALS noRiboflavin
+  notes: Omits Riboflavin from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_noserine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015821
+  name: ZMB ALS noSerine
+  notes: Omits L-Serine from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_nothiamine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015822
+  name: ZMB ALS noThiamine
+  notes: Omits Thiamine HCl from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_nothreonine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015823
+  name: ZMB ALS noThreonine
+  notes: Omits L-Threonine from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_notryptophan.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015824
+  name: ZMB ALS noTryptophan
+  notes: Omits L-Tryptophan from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_notyrosine.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015825
+  name: ZMB ALS noTyrosine
+  notes: Omits L-tyrosine from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_nouracil.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015826
+  name: ZMB ALS noUracil
+  notes: Omits Uracil from ZMB ALS.
+- path: data/normalized_yaml/specialized/zmb_als_novaline.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015827
+  name: ZMB ALS noValine
+  notes: Omits L-Valine from ZMB ALS.

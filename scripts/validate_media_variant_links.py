@@ -16,6 +16,7 @@ YAML_ROOT = REPO_ROOT / "data" / "normalized_yaml"
 REPORTS_DIR = REPO_ROOT / "reports"
 OUT_TSV = REPORTS_DIR / "media_variant_link_validation.tsv"
 OUT_MD = REPORTS_DIR / "media_variant_link_validation.md"
+YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 
 @dataclass
@@ -39,7 +40,7 @@ def load_recipes(yaml_root: Path) -> RecipeIndex:
     for path in sorted(yaml_root.rglob("*.yaml")):
         rel = str(path.relative_to(REPO_ROOT))
         try:
-            recipe = yaml.safe_load(path.read_text()) or {}
+            recipe = yaml.load(path.read_text(), Loader=YAML_LOADER) or {}
         except Exception as exc:  # noqa: BLE001 - validator reports bad YAMLs.
             path_to_recipe[rel] = {"_load_error": str(exc)}
             continue
@@ -105,7 +106,9 @@ def validate_links(index: RecipeIndex) -> list[Finding]:
             reference = ref_key(parent_media)
             if not resolved_parent:
                 findings.append(
-                    Finding("ERROR", path, "parent_media", reference, "parent_media does not resolve")
+                    Finding(
+                        "ERROR", path, "parent_media", reference, "parent_media does not resolve"
+                    )
                 )
             elif not parent_links_child(resolved_parent, path, index):
                 findings.append(
@@ -137,7 +140,9 @@ def validate_links(index: RecipeIndex) -> list[Finding]:
         for child_ref in variant_children:
             if not isinstance(child_ref, dict):
                 findings.append(
-                    Finding("ERROR", path, "variant_children", "", "variant child must be a mapping")
+                    Finding(
+                        "ERROR", path, "variant_children", "", "variant child must be a mapping"
+                    )
                 )
                 continue
             resolved_child = resolve_ref(child_ref, index)

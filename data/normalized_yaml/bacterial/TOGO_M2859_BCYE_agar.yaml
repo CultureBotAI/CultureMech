@@ -8,21 +8,18 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: BCYE agar
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2859
+  notes: TOGO M2859 lists one liter of BCYE agar without spelling out the commercial
+    product or formulation.
 media_term:
   preferred_term: TOGO Medium M2859
   term:
     id: TOGO:M2859
     label: BCYE agar
-notes: 'Source: https://togomedium.org/medium/M2859'
+notes: TOGO M2859 records L. pneumophila strains Paris and Lens grown on one liter
+  of BCYE agar at 37 C for 3 d; the source does not disclose the BCYE agar formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,4 +49,17 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_sparse_score20.py
+  action: RESOLVED_TOGO_SPARSE_SCORE20
+  changes: Resolved sparse score-20 TOGO product record
+  source: https://togomedium.org/medium/M2859
+  notes: TOGO M2859 records L. pneumophila strains Paris and Lens grown on one liter
+    of BCYE agar at 37 C for 3 d; the source does not disclose the BCYE agar formulation.
 kg_microbe_match: mediadive.medium:12
+temperature_value: 37.0
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2859

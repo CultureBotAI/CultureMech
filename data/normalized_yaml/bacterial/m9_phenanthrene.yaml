@@ -2,97 +2,51 @@ id: CultureMech:008631
 name: m9_phenanthrene
 original_name: M9-Phenanthrene
 category: bacterial
-medium_type: COMPLEX
-composition_type: UNDEFINED
+medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: distilled water
+- preferred_term: Agar solution
   concentration:
-    value: '901.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Defined component,
-    Inorganic compound [Merged 2 duplicates: 900.0, 1.0]'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: agar
+    value: '900'
+    unit: ML_PER_L
+  source: TOGO M2041 / NBRC Medium 1339
+  notes: TOGO M2041 / NBRC Medium 1339 adds 900 ml/L autoclaved agar solution.
+- preferred_term: 10xM9 solution
   concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: NaCl
+    value: '100'
+    unit: ML_PER_L
+  source: TOGO M2041 / NBRC Medium 1339
+  notes: TOGO M2041 / NBRC Medium 1339 adds 100 ml/L separately autoclaved 10xM9 solution.
+- preferred_term: MgSO4 solution
   concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: KH2PO4
+    value: '2.1'
+    unit: ML_PER_L
+  source: TOGO M2041 / NBRC Medium 1339
+  notes: TOGO M2041 / NBRC Medium 1339 adds 2.1 ml/L 1 M MgSO4 stock.
+- preferred_term: CaCl2 solution
   concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
-  term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-- preferred_term: NH4Cl
+    value: '1'
+    unit: ML_PER_L
+  source: TOGO M2041 / NBRC Medium 1339
+  notes: TOGO M2041 / NBRC Medium 1339 adds 1 ml/L 0.1 M CaCl2 stock.
+- preferred_term: Phenanthrene solution
   concentration:
     value: '10'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: Na2HPO4
-  concentration:
-    value: '60'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-- preferred_term: dimethyl sulfoxide (DMSO)
-  notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
-    Simple component'
-  concentration:
-    value: variable
-    unit: VARIABLE
+    unit: ML_PER_L
+  source: TOGO M2041 / NBRC Medium 1339
+  notes: TOGO M2041 / NBRC Medium 1339 adds 10 ml/L 250 mM phenanthrene solution in
+    DMSO.
 media_term:
   preferred_term: TOGO Medium M2041
   term:
     id: TOGO:M2041
     label: M9-Phenanthrene
-notes: 'Source: https://togomedium.org/medium/M2041
-
-  Original source: NBRC - NBRC_M1339
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1339'
+notes: TOGO M2041 imports NBRC Medium 1339 M9-Phenanthrene. NBRC 1339 lists 900 ml
+  agar solution, 100 ml 10xM9 solution, 2.1 ml 1 M MgSO4, 1 ml 0.1 M CaCl2, and 10
+  ml 250 mM phenanthrene in DMSO per liter. Agar, 10xM9, MgSO4, and CaCl2 are autoclaved;
+  the phenanthrene stock is filter-sterilized, added after cooling to 65 C, sonicated
+  for about 30 seconds, and poured into plates.
 applications:
 - Microbial cultivation
 curation_history:
@@ -150,44 +104,212 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2041_m9_phenanthrene_score15.py
+  action: RESOLVED_TOGO_M2041_M9_PHENANTHRENE_SCORE15
+  source: https://togomedium.org/medium/M2041; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1339;
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2041
+  notes: TOGO M2041 imports NBRC Medium 1339 M9-Phenanthrene. NBRC 1339 lists 900
+    ml agar solution, 100 ml 10xM9 solution, 2.1 ml 1 M MgSO4, 1 ml 0.1 M CaCl2, and
+    10 ml 250 mM phenanthrene in DMSO per liter. Agar, 10xM9, MgSO4, and CaCl2 are
+    autoclaved; the phenanthrene stock is filter-sterilized, added after cooling to
+    65 C, sonicated for about 30 seconds, and poured into plates. Removed the flattening
+    artifact that merged agar water with 10xM9 water, restored five stock additions
+    in ml/L, and expanded their nested compositions.
 solutions:
-- preferred_term: CaCl2 solution (0.1 M)***
-  composition: []
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
-    compound'
-  name: Unknown solution
-- preferred_term: MgSO4 solution (1 M)***
-  composition: []
-  concentration:
-    value: '2.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound'
-  name: Unknown solution
-- preferred_term: Agar solution*
-  composition: []
+- preferred_term: Agar solution
   concentration:
     value: '900'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: 10xM9 solution**
-  composition: []
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Agar
+    concentration:
+      value: '15'
+      unit: G_PER_L
+    source: TOGO M2041 / NBRC Medium 1339
+    notes: NBRC Medium 1339 dissolves 15 g agar in 900 ml distilled water.
+    term:
+      id: CHEBI:2509
+      label: agar
+    mediaingredientmech_chebi_term:
+      id: CHEBI:2509
+      label: agar
+  - preferred_term: Distilled water
+    concentration:
+      value: '900'
+      unit: ML_PER_L
+    source: TOGO M2041 / NBRC Medium 1339
+    notes: NBRC Medium 1339 prepares the agar solution in 900 ml water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  name: Agar solution
+- preferred_term: 10xM9 solution
   concentration:
     value: '100'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Phenanthrene solution (250 mM) in dimethyl sulfoxide (DMSO)****
-  composition: []
+    unit: ML_PER_L
+  composition:
+  - preferred_term: KH2PO4
+    concentration:
+      value: '30'
+      unit: G_PER_L
+    source: TOGO M2041 / NBRC Medium 1339
+    notes: NBRC Medium 1339 lists 30 G_PER_L KH2PO4 in 10xM9 solution.
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+  - preferred_term: Na2HPO4
+    concentration:
+      value: '60'
+      unit: G_PER_L
+    source: TOGO M2041 / NBRC Medium 1339
+    notes: NBRC Medium 1339 lists 60 G_PER_L Na2HPO4 in 10xM9 solution.
+    term:
+      id: CHEBI:34683
+      label: disodium hydrogenphosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:34683
+      label: disodium hydrogenphosphate
+  - preferred_term: NH4Cl
+    concentration:
+      value: '10'
+      unit: G_PER_L
+    source: TOGO M2041 / NBRC Medium 1339
+    notes: NBRC Medium 1339 lists 10 G_PER_L NH4Cl in 10xM9 solution.
+    term:
+      id: CHEBI:31206
+      label: ammonium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31206
+      label: ammonium chloride
+  - preferred_term: NaCl
+    concentration:
+      value: '5'
+      unit: G_PER_L
+    source: TOGO M2041 / NBRC Medium 1339
+    notes: NBRC Medium 1339 lists 5 G_PER_L NaCl in 10xM9 solution.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+    source: TOGO M2041 / NBRC Medium 1339
+    notes: NBRC Medium 1339 lists 1 L Distilled water in 10xM9 solution.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  name: 10xM9 solution
+- preferred_term: MgSO4 solution
+  concentration:
+    value: '2.1'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: MgSO4
+    concentration:
+      value: '1'
+      unit: MOLAR
+    source: TOGO M2041 / NBRC Medium 1339
+    notes: NBRC Medium 1339 adds 2.1 ml/L of 1 M MgSO4 solution.
+    term:
+      id: CHEBI:32599
+      label: magnesium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32599
+      label: magnesium sulfate
+  name: MgSO4 solution
+- preferred_term: CaCl2 solution
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: CaCl2
+    concentration:
+      value: '0.1'
+      unit: MOLAR
+    source: TOGO M2041 / NBRC Medium 1339
+    notes: NBRC Medium 1339 adds 1 ml/L of 0.1 M CaCl2 solution.
+    term:
+      id: CHEBI:3312
+      label: calcium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:3312
+      label: calcium chloride
+  name: CaCl2 solution
+- preferred_term: Phenanthrene solution
   concentration:
     value: '10'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Phenanthrene solution
-  composition: []
-  concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'Role: Carbon source'
-  name: Unknown solution
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Phenanthrene
+    concentration:
+      value: '250'
+      unit: MILLIMOLAR
+    source: TOGO M2041 / NBRC Medium 1339
+    notes: NBRC Medium 1339 adds 10 ml/L of 250 mM phenanthrene solution.
+    term:
+      id: CHEBI:28851
+      label: phenanthrene
+    mediaingredientmech_chebi_term:
+      id: CHEBI:28851
+      label: phenanthrene
+  - preferred_term: Dimethyl sulfoxide (DMSO)
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: TOGO M2041 / NBRC Medium 1339
+    notes: NBRC Medium 1339 uses DMSO as the phenanthrene stock solvent.
+    term:
+      id: CHEBI:28262
+      label: dimethyl sulfoxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:28262
+      label: dimethyl sulfoxide
+  name: Phenanthrene solution
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve 15 g agar in 900 ml distilled water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the agar solution.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Sterilize the 10xM9 solution separately by autoclaving.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Dissolve MgSO4 and CaCl2 stocks in distilled water and sterilize by
+    autoclaving.
+- step_number: 5
+  action: FILTER_STERILIZE
+  description: Filter-sterilize the 250 mM phenanthrene solution in DMSO using DMSO-safe
+    filters.
+- step_number: 6
+  action: MIX
+  description: Aseptically mix autoclaved agar, 10xM9, MgSO4, and CaCl2 solutions.
+- step_number: 7
+  action: MIX
+  description: After cooling to 65 C, aseptically add phenanthrene solution, sonicate
+    for approximately 30 seconds, and pour into plates.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2041
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1339
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2041

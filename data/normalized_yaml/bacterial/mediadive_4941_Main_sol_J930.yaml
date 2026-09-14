@@ -6,34 +6,35 @@ term:
 composition:
 - preferred_term: Leibovitz's L-15 medium
   concentration:
-    value: '909.090909090909'
-    unit: PERCENT_V_V
+    value: '1.0'
+    unit: L
+  source: MediaDive J930 / JCM Medium 930
+  notes: MediaDive J930 / JCM Medium 930 lists 1.0 L Leibovitz's L-15 medium.
   term:
     id: mediadive.compound:1941
     label: Leibovitz's L-15 medium
 - preferred_term: Fetal bovine serum
   concentration:
-    value: '90.9090909090909'
-    unit: PERCENT_V_V
+    value: '100.0'
+    unit: ML_PER_L
+  source: MediaDive J930 / JCM Medium 930
+  notes: MediaDive J930 / JCM Medium 930 lists 100.0 ml/L Fetal bovine serum.
   term:
     id: mediadive.compound:954
     label: Fetal bovine serum
 - preferred_term: NaCl
   concentration:
-    value: '13.6364'
+    value: '15.0'
     unit: G_PER_L
+  source: MediaDive J930 / JCM Medium 930
+  notes: MediaDive J930 / JCM Medium 930 lists 15.0 g/L NaCl.
   term:
     id: mediadive.compound:43
     label: NaCl
   chebi_term:
     id: CHEBI:26710
     label: sodium chloride
-    confidence: 1.0
-    match_type: exact_match
-preparation_notes: 'Filter-sterilize with 0.22 ï¿½m PES filter.
-
-
-  Original volume: 1100 mL'
+preparation_notes: Filter-sterilize with a 0.22 um PES filter.
 curation_history:
 - timestamp: '2026-03-13T06:20:33.981500Z'
   curator: culturemech-id-assigner-v1.0
@@ -67,11 +68,15 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
-data_quality_flags:
-- incomplete_composition
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m976_leibovitz_score15.py
+  action: RESOLVED_MEDIADIVE_4941_LEIBOVITZ_FBS
+  source: https://mediadive.dsmz.de/medium/J930; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=930
+  notes: Replaced the rescaled PERCENT_V_V MediaDive J930 stock import and stale placeholder
+    ingredient with the official JCM Medium 930 quantities.
 category: bacterial
+notes: MediaDive solution 4941 is the JCM Medium 930 main-solution import for Leibovitz's
+  L-15 Medium With 10% FBS And 1.5% NaCl.
+references:
+- reference: https://mediadive.dsmz.de/medium/J930
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=930

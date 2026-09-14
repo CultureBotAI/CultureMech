@@ -6,16 +6,19 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: tryptone yeast extract salt (TYES) broth
+- preferred_term: Tryptone yeast extract salt broth
   concentration:
-    value: '1'
-    unit: G_PER_L
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2821
+  notes: TOGO M2821 lists 1 L tryptone yeast extract salt broth.
 media_term:
   preferred_term: TOGO Medium M2821
   term:
     id: TOGO:M2821
     label: tryptone yeast extract salt (TYES) broth
-notes: 'Source: https://togomedium.org/medium/M2821'
+notes: TOGO M2821 records one liter of tryptone yeast extract salt broth; the source
+  does not spell out the broth's internal composition.
 applications:
 - Microbial cultivation
 curation_history:
@@ -32,3 +35,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "tryptone yeast extract salt (TYES) broth" to "tryptone_yeast_extract_salt_tyes_broth"
     for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_literal_products_score40.py
+  action: RESOLVED_TOGO_LITERAL_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO literal product/additive graph
+  source: https://togomedium.org/medium/M2821
+  notes: TOGO M2821 records one liter of tryptone yeast extract salt broth; the source
+    does not spell out the broth's internal composition.
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2821

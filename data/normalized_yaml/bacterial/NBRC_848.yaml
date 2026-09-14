@@ -6,6 +6,14 @@ description: 848. NBRC 847.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_range:
+  min: 4.5
+  max: 5.0
+media_term:
+  preferred_term: NBRC Medium 847
+  term:
+    id: nbrc.medium:847
+    label: NBRC Medium 847
 ingredients:
 - preferred_term: (NH4)2SO4
   concentration:
@@ -29,10 +37,16 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
 - preferred_term: FeCl3·6H2O
   concentration:
     value: '0.02'
     unit: G_PER_L
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '1.8'
@@ -41,18 +55,30 @@ ingredients:
   concentration:
     value: '4.5'
     unit: MG_PER_L
+  term:
+    id: CHEBI:131366
+    label: Na2B4O7 x 10 H2O
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '0.22'
     unit: MG_PER_L
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
 - preferred_term: CuCl2·2H2O
   concentration:
     value: '0.05'
     unit: MG_PER_L
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '0.03'
     unit: MG_PER_L
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
 - preferred_term: VOSO4·nH2O
   concentration:
     value: '0.03'
@@ -65,14 +91,23 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Sulfur (powder)
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: CHEBI:33403
+    label: elemental sulfur
 - preferred_term: Na2S·9H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -89,14 +124,26 @@ ingredients:
     label: water
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  action: MIX
+  description: Mix ingredients except yeast extract, sulfur, and Na2S·9H2O.
 - step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
+  action: AUTOCLAVE
+  description: Autoclave under a N2 atmosphere.
 - step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: AUTOCLAVE
+  description: Separately autoclave yeast extract as a 10% solution and Na2S·9H2O
+    as a 5% solution under N2.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Sterilize sulfur by autoclaving for 60 minutes at 105 C on each of
+    3 successive days.
+- step_number: 5
+  action: MIX
+  description: Aseptically and anaerobically add yeast extract and sulfur to the medium.
+- step_number: 6
+  action: ADJUST_PH
+  description: Before inoculation, add sterile Na2S·9H2O solution and adjust pH to
+    4.5-5.0 with sterile 1 N H2SO4.
 curation_history:
 - timestamp: '2026-02-20T00:22:35.972225Z'
   curator: nbrc-import
@@ -134,9 +181,21 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 4 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
-notes: Mix ingredients except yeast extract, sulfur and Na2S·9H2O, and autoclave under
-  a N2 atmosphere. Separately autoclave yeast extract as a 10% solution and Na2S·9H2O
-  as a 5% solution under a N2 atmosphere. Sulfur is autoclaved for 60 min at 105℃
-  on each of 3 successive days. Aseptically and anaerobically add yeast extract and
-  sulfur to the medium. Prior to inoculation, add sterile Na2S·9H2O solution, and
-  adjust pH to 4.5-5.0 with sterile 1 N H2SO4.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=847
+  notes: Preserved the recovered NBRC Medium 847 composition table.
+notes: 'Source: NBRC Medium 847 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=847
+
+
+  The NBRC Thermoproteus and Vulcanisaeta medium table lists separate autoclaving
+  of yeast extract, sulfide, and sulfur before aseptic anaerobic addition and final
+  pH adjustment to 4.5 to 5.0.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=847

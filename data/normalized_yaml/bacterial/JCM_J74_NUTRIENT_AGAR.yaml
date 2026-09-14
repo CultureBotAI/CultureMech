@@ -11,28 +11,64 @@ media_term:
   term:
     id: mediadive.medium:J74
     label: NUTRIENT AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=74'
+notes: JCM Medium 74 / Nutrient Agar lists 1.0 L distilled water, 5.0 g/L peptone,
+  3.0 g/L beef extract, and 15.0 g/L agar, adjusted to pH 7.0; TOGO M65 and MediaDive
+  J74 report the same JCM recipe.
 ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: MediaDive J74 / JCM Medium 74
+  notes: MediaDive J74 / JCM Medium 74 lists 1.0 L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Peptone
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
+  source: MediaDive J74 / JCM Medium 74
+  notes: MediaDive J74 / JCM Medium 74 lists 5.0 g/L Peptone.
+  term:
+    id: MICRO:0000178
+    label: Peptone
+  nutritional_roles:
+  - PROTEIN_SOURCE
 - preferred_term: Beef extract
   concentration:
-    value: '3'
+    value: '3.0'
     unit: G_PER_L
+  source: MediaDive J74 / JCM Medium 74
+  notes: MediaDive J74 / JCM Medium 74 lists 3.0 g/L Beef extract.
+  term:
+    id: FOODON:03302088
+    label: Beef extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
 - preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: MediaDive J74 / JCM Medium 74
+  notes: MediaDive J74 / JCM Medium 74 lists 15.0 g/L Agar.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Dissolve 5.0 g/L peptone, 3.0 g/L beef extract, and 15.0 g/L agar in
+    1.0 L distilled water.
+- step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0.
 applications:
@@ -60,14 +96,34 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-kg_microbe_match: mediadive.medium:12
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m92_alkaline_nutrient_score15.py
+  action: RESOLVED_MEDIADIVE_J74_NUTRIENT_AGAR
+  source: https://mediadive.dsmz.de/medium/J74; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=74;
+    https://togomedium.org/medium/M65; https://mediadive.dsmz.de/medium/J100; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=100
+  notes: Added source 1.0 L distilled water, grounded peptone and beef extract, retained
+    the pH 7.0 adjustment, and linked the TOGO M65 source duplicate plus JCM Medium
+    100 alkaline variant.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nutrient_ncg_nssm_score15.py
+  action: LINKED_JCM_1109_SUPPLEMENTED_VARIANT
+  source: https://togomedium.org/medium/M1186; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1109
+  notes: Linked JCM Medium 1109 / TOGO M1186 as the NaCl and yeast-extract supplemented
+    variant of JCM Medium 74 Nutrient Agar.
 variant_children:
-- path: data/normalized_yaml/bacterial/JCM_J100_ALKALINE_NUTRIENT_AGAR.yaml
+- path: data/normalized_yaml/bacterial/TOGO_M65_Nutrient_Agar.yaml
   relationship: SOURCE_DUPLICATE
+  id: CultureMech:010062
+  name: nutrient_agar
+  notes: TOGO M65 imports the same JCM Medium 74 Nutrient Agar formulation represented
+    by MediaDive J74.
+- path: data/normalized_yaml/bacterial/JCM_J100_ALKALINE_NUTRIENT_AGAR.yaml
+  relationship: SUPPLEMENTED_VARIANT
   id: CultureMech:002194
   name: alkaline_nutrient_agar
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: JCM Medium 100 starts from the JCM Medium 74 Nutrient Agar basal formulation
+    and adjusts the final medium to pH 10.0 with sterile 10% Na2CO3 solution after
+    autoclaving.
 - path: data/normalized_yaml/bacterial/NBRC_NUTRIENT_AGAR.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:007511
@@ -75,3 +131,18 @@ variant_children:
   notes: Reviewed JCM/NBRC Nutrient Agar records; both parsed formulations contain
     beef extract 3 g/L, peptone 5 g/L, and agar 15 g/L, with the JCM parent carrying
     pH 7.0 and the NBRC record not specifying pH.
+- path: data/normalized_yaml/bacterial/nutrient_agar_with_0_05_yeast_extract_and_3_nacl.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:007712
+  name: nutrient_agar_with_0_05_yeast_extract_and_3_nacl
+  notes: JCM Medium 1109 starts from JCM Medium 74 Nutrient Agar and adds 0.5 g/L
+    Yeast extract plus 30.0 g/L NaCl.
+references:
+- reference: https://mediadive.dsmz.de/medium/J74
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=74
+- reference: https://togomedium.org/medium/M65
+- reference: https://mediadive.dsmz.de/medium/J100
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=100
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings

@@ -11,33 +11,77 @@ media_term:
   term:
     id: mediadive.medium:J15
     label: TOMATO JUICE AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=15'
+notes: JCM Medium 15 / Tomato Juice Agar lists 800.0 ml/L distilled water, 200.0 ml/L
+  filtered tomato juice at pH 7.0, 11.0 g/L agar, 10.0 g/L BD-Difco yeast extract,
+  and 10.0 g/L BD-Difco tryptone, adjusted to final pH 7.2; TOGO M8 and MediaDive
+  J15 report the same JCM recipe.
 ingredients:
-- preferred_term: Tryptone
+- preferred_term: Distilled water
   concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '10'
-    unit: G_PER_L
+    value: '800.0'
+    unit: ML_PER_L
+  source: MediaDive J15 / JCM Medium 15
+  notes: MediaDive J15 / JCM Medium 15 lists 800.0 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Tomato juice
   concentration:
-    value: '200'
-    unit: G_PER_L
-  notes: ' ( filtered, pH 7.0)'
+    value: '200.0'
+    unit: ML_PER_L
+  source: MediaDive J15 / JCM Medium 15
+  notes: MediaDive J15 / JCM Medium 15 lists 200.0 ml/L filtered tomato juice that
+    was adjusted to pH 7.0 before addition.
+  term:
+    id: FOODON:03301454
+    label: Tomato juice
 - preferred_term: Agar
+  concentration:
+    value: '11.0'
+    unit: G_PER_L
+  source: MediaDive J15 / JCM Medium 15
+  notes: MediaDive J15 / JCM Medium 15 lists 11.0 g/L Agar.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '11'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: MediaDive J15 / JCM Medium 15
+  notes: MediaDive J15 / JCM Medium 15 lists 10.0 g/L Yeast extract (BD-Difco).
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
+  - VITAMIN_SOURCE
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: MediaDive J15 / JCM Medium 15
+  notes: MediaDive J15 / JCM Medium 15 lists 10.0 g/L Tryptone (BD-Difco).
+  term:
+    id: MICRO:0000182
+    label: Tryptone
+  nutritional_roles:
+  - PROTEIN_SOURCE
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Mix 800.0 ml/L distilled water, 200.0 ml/L filtered tomato juice at
+    pH 7.0, 11.0 g/L agar, 10.0 g/L BD-Difco yeast extract, and 10.0 g/L BD-Difco
+    tryptone.
+- step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.2.
 applications:
@@ -66,4 +110,25 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-kg_microbe_match: mediadive.medium:12
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m8_tomato_juice_score15.py
+  action: RESOLVED_MEDIADIVE_J15_TOMATO_JUICE_AGAR
+  source: https://mediadive.dsmz.de/medium/J15; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=15;
+    https://togomedium.org/medium/M8
+  notes: Corrected tomato juice from 200 g/L to 200.0 ml/L, added 800.0 ml/L distilled
+    water, restored BD-Difco tryptone and yeast extract names, and linked the TOGO
+    M8 source duplicate.
+references:
+- reference: https://mediadive.dsmz.de/medium/J15
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=15
+- reference: https://togomedium.org/medium/M8
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M8_Tomato_Juice_Agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010318
+  name: tomato_juice_agar
+  notes: TOGO M8 imports the same JCM Medium 15 Tomato Juice Agar formulation represented
+    by MediaDive J15.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings

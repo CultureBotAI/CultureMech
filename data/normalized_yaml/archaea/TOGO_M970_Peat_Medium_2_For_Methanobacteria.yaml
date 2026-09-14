@@ -8,74 +8,60 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1.0'
+    unit: L
+  source: JCM Medium 924
+  notes: JCM Medium 924 lists 1.0 L Distilled water.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: Gas'
+- preferred_term: N2
   concentration:
     value: variable
     unit: VARIABLE
-  term:
-    id: CHEBI:16526
-    label: carbon dioxide
-- preferred_term: Nitrogen gas
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
+  source: JCM Medium 924
+  notes: JCM Medium 924 uses N2-CO2 (80:20, v/v) during cooling and dispensing.
   term:
     id: CHEBI:17997
     label: dinitrogen
-- preferred_term: 10 mM Sodium acetate
-  concentration:
-    value: '0.015'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Solution'
-- preferred_term: Hydrogen gas
-  notes: 'Properties: ガス'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17997
+    label: dinitrogen
+- preferred_term: CO2
   concentration:
     value: variable
     unit: VARIABLE
+  source: JCM Medium 924
+  notes: JCM Medium 924 uses N2-CO2 during cooling and H2-CO2 during pressurization.
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
+- preferred_term: H2
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: JCM Medium 924
+  notes: JCM Medium 924 pressurizes the tubes to 70 kPa H2-CO2 (80:20, v/v).
   term:
     id: CHEBI:18276
     label: dihydrogen
-- preferred_term: EDTA・2Na
-  concentration:
-    value: '37.23'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
-  term:
-    id: CHEBI:64734
-    label: EDTA disodium salt (anhydrous)
-- preferred_term: NaOH
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-  term:
-    id: CHEBI:32145
-    label: sodium hydroxide
-  concentration:
-    value: variable
-    unit: VARIABLE
   mediaingredientmech_chebi_term:
-    id: CHEBI:32145
-    label: sodium hydroxide
+    id: CHEBI:18276
+    label: dihydrogen
 media_term:
   preferred_term: TOGO Medium M970
   term:
     id: TOGO:M970
     label: Peat Medium 2 For Methanobacteria
-notes: 'Source: https://togomedium.org/medium/M970
-
-  Original source: JCM - JCM_M924
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=924'
+notes: JCM Medium 924 prepares Peat Medium 2 For Methanobacteria from Major metals
+  and TiNTA/Vitamin subrecipes in JCM 923 plus a JCM 924 Trace metal 2 stock; the
+  culture-tube additions are scaled from per-5-ml additions to ml/L.
 applications:
 - Microbial cultivation
 curation_history:
@@ -132,67 +118,544 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_jcm_archaea_score15.py
+  action: RESOLVED_TOGO_JCM_ARCHAEA_SCORE15
+  source: https://togomedium.org/medium/M970; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=924;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=923
+  notes: JCM Medium 924 prepares Peat Medium 2 For Methanobacteria from Major metals
+    and TiNTA/Vitamin subrecipes in JCM 923 plus a JCM 924 Trace metal 2 stock; the
+    culture-tube additions are scaled from per-5-ml additions to ml/L.
 solutions:
-- preferred_term: Major metals (see Medium [M969])
-  composition: []
-  notes: Cross-reference to Medium M969
+- preferred_term: Major metals
   concentration:
-    value: '10'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Trace metal 2 solution (see below)
-  composition: []
+    value: '10.0'
+    unit: ML_PER_L
+  source: JCM Medium 924
+  notes: JCM Medium 924 adds 10.0 ml/L Major metals from JCM Medium 923.
+  composition:
+  - preferred_term: KCl
+    concentration:
+      value: '0.15'
+      unit: G_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+  - preferred_term: KH2PO4
+    concentration:
+      value: '1.36'
+      unit: G_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+  - preferred_term: NH4Cl
+    concentration:
+      value: '2.68'
+      unit: G_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:31206
+      label: ammonium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31206
+      label: ammonium chloride
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: Trace metal 2 solution
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '1.0'
+    unit: ML_PER_L
+  source: JCM Medium 924
+  notes: JCM Medium 924 adds 1.0 ml/L Trace metal 2 solution.
+  composition:
+  - preferred_term: CoCl2 x 6H2O
+    concentration:
+      value: '24.0'
+      unit: MG_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+  - preferred_term: ZnCl2
+    concentration:
+      value: '75.0'
+      unit: MG_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:49976
+      label: zinc dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49976
+      label: zinc dichloride
+  - preferred_term: H3BO3
+    concentration:
+      value: '19.0'
+      unit: MG_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: NiCl2 x 6H2O
+    concentration:
+      value: '24.0'
+      unit: MG_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+  - preferred_term: Na2MoO4 x 2H2O
+    concentration:
+      value: '24.0'
+      unit: MG_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+  - preferred_term: FeCl2 x 4H2O
+    concentration:
+      value: '1.344'
+      unit: G_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:86249
+      label: iron dichloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86249
+      label: iron dichloride tetrahydrate
+  - preferred_term: MnSO4 x H2O
+    concentration:
+      value: '26.0'
+      unit: MG_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:86360
+      label: manganese(II) sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86360
+      label: manganese(II) sulfate
+  - preferred_term: MgSO4 x 7H2O
+    concentration:
+      value: '1.556'
+      unit: G_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: CaCl2 x 2H2O
+    concentration:
+      value: '2.336'
+      unit: G_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: CuSO4 x 5H2O
+    concentration:
+      value: '9.0'
+      unit: MG_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+  - preferred_term: AlK(SO4)2 x 12H2O
+    concentration:
+      value: '3.446'
+      unit: G_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:86465
+      label: potassium aluminium sulfate dodecahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86465
+      label: potassium aluminium sulfate dodecahydrate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: EDTA x 2Na
+    concentration:
+      value: '37.23'
+      unit: G_PER_L
+    source: JCM Medium 924
+    notes: JCM Medium 924 prints this component in its stock solution.
+    term:
+      id: CHEBI:64734
+      label: EDTA disodium salt (anhydrous)
+    mediaingredientmech_chebi_term:
+      id: CHEBI:64734
+      label: EDTA disodium salt (anhydrous)
+  - preferred_term: NaOH
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: JCM Medium 924
+    notes: JCM Medium 924 adjusts Trace metal 2 solution to pH 7.0 with NaOH.
+    term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+  preparation_notes: Adjust pH to 7.0 with NaOH.
+- preferred_term: 83 mM TiNTA solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: JCM Medium 924
+  notes: JCM Medium 924 adds 0.05 ml 83 mM TiNTA solution to each 5 ml tube; this
+    is 10 ml/L.
+  composition:
+  - preferred_term: 1 M Tris base (pH 8)
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints 7.2 ml 1 M Tris base (pH 8) in its 83 mM TiNTA stock;
+      no final stock volume is stated.
+    term:
+      id: CHEBI:9754
+      label: tris
+    mediaingredientmech_chebi_term:
+      id: CHEBI:9754
+      label: tris
+  - preferred_term: 0.5 M Nitrilotriacetic acid, disodium salt
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints 4.8 ml 0.5 M Nitrilotriacetic acid, disodium salt
+      in its 83 mM TiNTA stock; no final stock volume is stated.
+    term:
+      id: CHEBI:132766
+      label: sodium nitrilotriacetate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:132766
+      label: sodium nitrilotriacetate
+  - preferred_term: 15% TiCl3 solution
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints 0.55 ml 15% TiCl3 solution in its 83 mM TiNTA stock;
+      no final stock volume is stated.
+- preferred_term: 1.0 M MES solution
+  concentration:
+    value: '20.0'
+    unit: ML_PER_L
+  source: JCM Medium 924
+  notes: JCM Medium 924 adds 0.10 ml 1.0 M MES solution to each 5 ml tube; this is
+    20 ml/L.
+  composition:
+  - preferred_term: MES
+    concentration:
+      value: '1.0'
+      unit: MOLAR
+    source: JCM Medium 924
+    notes: JCM Medium 924 identifies this as a 1.0 M stock solution.
+    term:
+      id: CHEBI:39010
+      label: MES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:39010
+      label: MES
+- preferred_term: Vitamin solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: JCM Medium 924
+  notes: JCM Medium 924 adds 0.05 ml Vitamin solution from JCM Medium 923 to each
+    5 ml tube; this is 10 ml/L.
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '20.0'
+      unit: MG_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+  - preferred_term: Folic acid
+    concentration:
+      value: '20.0'
+      unit: MG_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:27470
+      label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
+  - preferred_term: Pyridoxine HCl
+    concentration:
+      value: '100.0'
+      unit: MG_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+  - preferred_term: Thiamine HCl
+    concentration:
+      value: '50.0'
+      unit: MG_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+  - preferred_term: Riboflavin
+    concentration:
+      value: '50.0'
+      unit: MG_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '50.0'
+      unit: MG_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: nicotinic acid
+  - preferred_term: DL-Calcium pantothenate
+    concentration:
+      value: '50.0'
+      unit: MG_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '1.0'
+      unit: MG_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '50.0'
+      unit: MG_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+  - preferred_term: Lipoic acid
+    concentration:
+      value: '50.0'
+      unit: MG_PER_L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:16494
+      label: lipoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16494
+      label: lipoic acid
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 923
+    notes: JCM Medium 923 prints this component in its stock solution.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  preparation_notes: Filter-sterilize and store under N2 at 4C in the dark.
 - preferred_term: 1% Yeast extract solution
-  composition: []
   concentration:
-    value: '0.01'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-  name: Unknown solution
+    value: '2.0'
+    unit: ML_PER_L
+  source: JCM Medium 924
+  notes: JCM Medium 924 adds 0.01 ml 1% Yeast extract solution to each 5 ml tube;
+    this is 2 ml/L.
+  composition:
+  - preferred_term: Yeast extract
+    concentration:
+      value: '1'
+      unit: PERCENT_W_V
+    source: JCM Medium 924
+    notes: JCM Medium 924 identifies this as a 1% w/v stock solution.
 - preferred_term: 50 mM Coenzyme M solution
-  composition: []
   concentration:
-    value: '0.025'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Solution'
-  name: Unknown solution
-- preferred_term: 4 mM Na2S・9H2O solution*
-  composition: []
+    value: '5.0'
+    unit: ML_PER_L
+  source: JCM Medium 924
+  notes: JCM Medium 924 adds 0.025 ml 50 mM Coenzyme M solution to each 5 ml tube;
+    this is 5 ml/L.
+  composition:
+  - preferred_term: Coenzyme M
+    concentration:
+      value: '0.05'
+      unit: MOLAR
+    source: JCM Medium 924
+    notes: JCM Medium 924 identifies this as a 0.05 M stock solution.
+    term:
+      id: CHEBI:17905
+      label: coenzyme M
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17905
+      label: coenzyme M
+- preferred_term: 10 mM Sodium acetate
   concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined
-    component'
-  name: Unknown solution
-- preferred_term: 1.0 M MES solution* (pH 7.45)
-  composition: []
+    value: '3.0'
+    unit: ML_PER_L
+  source: JCM Medium 924
+  notes: JCM Medium 924 adds 0.015 ml 10 mM Sodium acetate to each 5 ml tube; this
+    is 3 ml/L.
+  composition:
+  - preferred_term: Sodium acetate
+    concentration:
+      value: '10'
+      unit: MILLIMOLAR
+    source: JCM Medium 924
+    notes: JCM Medium 924 identifies this as a 10 mM stock solution.
+    term:
+      id: CHEBI:32954
+      label: sodium acetate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32954
+      label: sodium acetate
+- preferred_term: 4 mM Na2S x 9H2O solution
   concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Organic compound, Solution, Defined component'
-  name: Unknown solution
-- preferred_term: 83 mM TiNTA solution (see Medium [M969])
-  composition: []
-  notes: Cross-reference to Medium M969
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Vitamin solution (see Medium [M969])
-  composition: []
-  notes: Cross-reference to Medium M969
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Trace metal 1 solution (see Medium [M969])
-  composition: []
-  notes: Cross-reference to Medium M969
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '10.0'
+    unit: ML_PER_L
+  source: JCM Medium 924
+  notes: JCM Medium 924 adds 0.05 ml 4 mM Na2S x 9H2O solution to each 5 ml tube;
+    this is 10 ml/L.
+  composition:
+  - preferred_term: Na2S x 9H2O
+    concentration:
+      value: '4'
+      unit: MILLIMOLAR
+    source: JCM Medium 924
+    notes: JCM Medium 924 identifies this as a 4 mM stock solution.
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+ph_value: 5.7
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix Major metals, Trace metal 2 solution, and distilled water thoroughly.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Boil for 5 minutes, cool under N2-CO2, dispense under the same gas
+    mixture, seal, and autoclave.
+- step_number: 3
+  action: MIX
+  description: For each 5 ml tube, add sterile anaerobic TiNTA, MES, vitamin, yeast
+    extract, Coenzyme M, sodium acetate, and Na2S stocks.
+- step_number: 4
+  action: ADJUST_PH
+  description: Pressurize tubes to 70 kPa H2-CO2 (80:20, v/v), stand at least 7 hr,
+    and check final pH at about 5.7.
+references:
+- reference: https://togomedium.org/medium/M970
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=924
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=923
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated

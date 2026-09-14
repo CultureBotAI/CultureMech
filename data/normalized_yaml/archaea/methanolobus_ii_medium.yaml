@@ -13,9 +13,571 @@ media_term:
   term:
     id: komodo.medium:324
     label: METHANOLOBUS II medium
-notes: 'Source: KOMODO ModelSEED | ID: 324 | DSMZ Medium: 324 (mediadive.medium:324)
-  | Aerobic: Yes'
-ingredients: []
+notes: Archived DSMZ Medium 324 defines METHANOLOBUS II MEDIUM as DSMZ Medium 141
+  prepared under 80:20 N2/CO2, with methanol added to 0.5% (v/v) after anaerobic sterilization
+  under N2 and final pH 6.8-7.0; this record expands DSMZ Medium 141 trace and vitamin
+  stocks into final per-liter components.
+ingredients:
+- preferred_term: KCl
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 lists 0.34 g KCl and adds 10 mL trace solution and
+    10 mL vitamin solution to 1000 mL water, yielding 0.333333 g/L in the 1020 mL
+    aqueous formulation.
+  concentration:
+    value: '0.333333'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: MgCl2 x 6 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 lists 4.00 g MgCl2 x 6 H2O and adds 10 mL trace
+    solution and 10 mL vitamin solution to 1000 mL water, yielding 3.921569 g/L in
+    the 1020 mL aqueous formulation.
+  concentration:
+    value: '3.921569'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: MgSO4 x 7 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 lists 3.45 g MgSO4 x 7 H2O in the main recipe and
+    adds 10 mL of a trace solution containing 3.00 g/L MgSO4 x 7 H2O to 1000 mL water
+    plus 10 mL vitamin solution, yielding 3.411765 g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '3.411765'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: NH4Cl
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 lists 0.25 g NH4Cl and adds 10 mL trace solution
+    and 10 mL vitamin solution to 1000 mL water, yielding 0.245098 g/L in the 1020
+    mL aqueous formulation.
+  concentration:
+    value: '0.245098'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: CaCl2 x 2 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 lists 0.14 g CaCl2 x 2 H2O in the main recipe and
+    adds 10 mL of a trace solution containing 0.10 g/L CaCl2 x 2 H2O to 1000 mL water
+    plus 10 mL vitamin solution, yielding 0.138235 g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.138235'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: K2HPO4
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 lists 0.14 g K2HPO4 and adds 10 mL trace solution
+    and 10 mL vitamin solution to 1000 mL water, yielding 0.137255 g/L in the 1020
+    mL aqueous formulation.
+  concentration:
+    value: '0.137255'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: NaCl
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 lists 18.00 g NaCl in the main recipe and adds 10
+    mL of a trace solution containing 1.00 g/L NaCl to 1000 mL water plus 10 mL vitamin
+    solution, yielding 17.656863 g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '17.656863'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Fe(NH4)2(SO4)2 x 7 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 lists 2.00 mg Fe(NH4)2(SO4)2 x 7 H2O and adds 10
+    mL trace solution and 10 mL vitamin solution to 1000 mL water, yielding 0.001961
+    g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.001961'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131378
+    label: Fe(NH4)2(SO4)2 x 7 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131378
+    label: Fe(NH4)2(SO4)2 x 7 H2O
+- preferred_term: NaHCO3
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 lists 5.00 g NaHCO3 and adds 10 mL trace solution
+    and 10 mL vitamin solution to 1000 mL water, yielding 4.901961 g/L in the 1020
+    mL aqueous formulation.
+  concentration:
+    value: '4.901961'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Na-acetate
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 lists 1.00 g Na-acetate and adds 10 mL trace solution
+    and 10 mL vitamin solution to 1000 mL water, yielding 0.980392 g/L in the 1020
+    mL aqueous formulation.
+  concentration:
+    value: '0.980392'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: Na-acetate
+- preferred_term: Yeast extract
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 lists 2.00 g Yeast extract and adds 10 mL trace
+    solution and 10 mL vitamin solution to 1000 mL water, yielding 1.960784 g/L in
+    the 1020 mL aqueous formulation.
+  concentration:
+    value: '1.960784'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Trypticase
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 lists 2.00 g Trypticase and adds 10 mL trace solution
+    and 10 mL vitamin solution to 1000 mL water, yielding 1.960784 g/L in the 1020
+    mL aqueous formulation.
+  concentration:
+    value: '1.960784'
+    unit: G_PER_L
+  term:
+    id: MICRO:0000175
+    label: Trypticase
+- preferred_term: Resazurin
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 lists 1.00 mg Resazurin and adds 10 mL trace solution
+    and 10 mL vitamin solution to 1000 mL water, yielding 0.000980 g/L in the 1020
+    mL aqueous formulation.
+  concentration:
+    value: '0.000980'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Cysteine-HCl x H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 lists 0.50 g Cysteine-HCl x H2O and adds 10 mL trace
+    solution and 10 mL vitamin solution to 1000 mL water, yielding 0.490196 g/L in
+    the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.490196'
+    unit: G_PER_L
+  term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+- preferred_term: Na2S x 9 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 lists 0.50 g Na2S x 9 H2O and adds 10 mL trace solution
+    and 10 mL vitamin solution to 1000 mL water, yielding 0.490196 g/L in the 1020
+    mL aqueous formulation.
+  concentration:
+    value: '0.490196'
+    unit: G_PER_L
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+- preferred_term: Nitrilotriacetic acid
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a trace solution containing 1.50 g/L
+    Nitrilotriacetic acid to 1000 mL water plus 10 mL vitamin solution, yielding 0.014706
+    g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.014706'
+    unit: G_PER_L
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+- preferred_term: MnSO4 x H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a trace solution containing 0.50 g/L
+    MnSO4 x H2O to 1000 mL water plus 10 mL vitamin solution, yielding 0.004902 g/L
+    in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.004902'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+- preferred_term: FeSO4 x 7 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a trace solution containing 0.10 g/L
+    FeSO4 x 7 H2O to 1000 mL water plus 10 mL vitamin solution, yielding 0.000980
+    g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.000980'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+- preferred_term: CoSO4 x 7 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a trace solution containing 0.18 g/L
+    CoSO4 x 7 H2O to 1000 mL water plus 10 mL vitamin solution, yielding 0.001765
+    g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.001765'
+    unit: G_PER_L
+  term:
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
+- preferred_term: ZnSO4 x 7 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a trace solution containing 0.18 g/L
+    ZnSO4 x 7 H2O to 1000 mL water plus 10 mL vitamin solution, yielding 0.001765
+    g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.001765'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: CuSO4 x 5 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a trace solution containing 0.01 g/L
+    CuSO4 x 5 H2O to 1000 mL water plus 10 mL vitamin solution, yielding 0.000098
+    g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.000098'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+- preferred_term: KAl(SO4)2 x 12 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a trace solution containing 0.02 g/L
+    KAl(SO4)2 x 12 H2O to 1000 mL water plus 10 mL vitamin solution, yielding 0.000196
+    g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.000196'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+- preferred_term: H3BO3
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a trace solution containing 0.01 g/L
+    H3BO3 to 1000 mL water plus 10 mL vitamin solution, yielding 0.000098 g/L in the
+    1020 mL aqueous formulation.
+  concentration:
+    value: '0.000098'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: Na2MoO4 x 2 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a trace solution containing 0.01 g/L
+    Na2MoO4 x 2 H2O to 1000 mL water plus 10 mL vitamin solution, yielding 0.000098
+    g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.000098'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: NiCl2 x 6 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a trace solution containing 0.03 g/L
+    NiCl2 x 6 H2O to 1000 mL water plus 10 mL vitamin solution, yielding 0.000294
+    g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.000294'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+- preferred_term: Na2SeO3 x 5 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a trace solution containing 0.30 mg/L
+    Na2SeO3 x 5 H2O to 1000 mL water plus 10 mL vitamin solution, yielding 0.000002941
+    g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.000002941'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+- preferred_term: Biotin
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a vitamin solution containing 2.00
+    mg/L Biotin to 1000 mL water plus 10 mL trace solution, yielding 0.000019608 g/L
+    in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.000019608'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: Biotin
+- preferred_term: Folic acid
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a vitamin solution containing 2.00
+    mg/L Folic acid to 1000 mL water plus 10 mL trace solution, yielding 0.000019608
+    g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.000019608'
+    unit: G_PER_L
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
+    label: Folic acid
+- preferred_term: Pyridoxine-HCl
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a vitamin solution containing 10.00
+    mg/L Pyridoxine-HCl to 1000 mL water plus 10 mL trace solution, yielding 0.000098
+    g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.000098'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+- preferred_term: Thiamine-HCl x 2 H2O
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a vitamin solution containing 5.00
+    mg/L Thiamine-HCl x 2 H2O to 1000 mL water plus 10 mL trace solution, yielding
+    0.000049 g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.000049'
+    unit: G_PER_L
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+- preferred_term: Riboflavin
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a vitamin solution containing 5.00
+    mg/L Riboflavin to 1000 mL water plus 10 mL trace solution, yielding 0.000049
+    g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.000049'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: Riboflavin
+- preferred_term: Nicotinic acid
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a vitamin solution containing 5.00
+    mg/L Nicotinic acid to 1000 mL water plus 10 mL trace solution, yielding 0.000049
+    g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.000049'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+- preferred_term: Calcium pantothenate
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a vitamin solution containing 5.00
+    mg/L D-Ca-pantothenate to 1000 mL water plus 10 mL trace solution, yielding 0.000049
+    g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.000049'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+- preferred_term: Vitamin B12
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a vitamin solution containing 0.10
+    mg/L Vitamin B12 to 1000 mL water plus 10 mL trace solution, yielding 0.000000980
+    g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.000000980'
+    unit: G_PER_L
+  term:
+    id: CHEBI:176843
+    label: Vitamin B12
+  mediaingredientmech_chebi_term:
+    id: CHEBI:176843
+    label: Vitamin B12
+- preferred_term: p-Aminobenzoic acid
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a vitamin solution containing 5.00
+    mg/L p-Aminobenzoic acid to 1000 mL water plus 10 mL trace solution, yielding
+    0.000049 g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.000049'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+- preferred_term: (DL)-alpha-Lipoic acid
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adds 10 mL of a vitamin solution containing 5.00
+    mg/L Lipoic acid to 1000 mL water plus 10 mL trace solution, yielding 0.000049
+    g/L in the 1020 mL aqueous formulation.
+  concentration:
+    value: '0.000049'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16494
+    label: (DL)-alpha-Lipoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
+    label: (DL)-alpha-Lipoic acid
+- preferred_term: KOH
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 adjusts the trace element solution with KOH.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+- preferred_term: N2
+  source: Archived DSMZ Medium 324
+  notes: Archived DSMZ Medium 324 prepares DSMZ Medium 141 under 80% N2 plus 20% CO2
+    and sterilizes methanol anaerobically under 100% N2.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: dinitrogen
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17997
+    label: dinitrogen
+- preferred_term: CO2
+  source: Archived DSMZ Medium 324
+  notes: Archived DSMZ Medium 324 prepares DSMZ Medium 141 under 80% N2 plus 20% CO2.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
+- preferred_term: Methanol
+  source: Archived DSMZ Medium 324
+  notes: Archived DSMZ Medium 324 adds anaerobically sterilized methanol to the medium
+    to a final concentration of 0.5% v/v.
+  concentration:
+    value: '0.500000'
+    unit: PERCENT_V_V
+  term:
+    id: CHEBI:17790
+    label: methanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
+    label: methanol
+- preferred_term: Distilled water
+  source: Archived DSMZ Medium 141
+  notes: Archived DSMZ Medium 141 lists 1000 mL distilled water before stock additions.
+  concentration:
+    value: '1000.000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -42,5 +604,18 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_324_score30.py
+  action: RESOLVED_KOMODO_324_SCORE30
+  source: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium324.pdf
+  notes: Archived DSMZ Medium 324 defines METHANOLOBUS II MEDIUM as DSMZ Medium 141
+    prepared under 80:20 N2/CO2, with methanol added to 0.5% (v/v) after anaerobic
+    sterilization under N2 and final pH 6.8-7.0; this record expands DSMZ Medium 141
+    trace and vitamin stocks into final per-liter components.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=324
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium324.pdf
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf

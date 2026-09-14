@@ -6,12 +6,23 @@ description: 404. NBRC 403.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: NBRC Medium 403
+  term:
+    id: nbrc.medium:403
+    label: NBRC Medium 403
+ph_range:
+  min: 6.5
+  max: 6.9
 ingredients:
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
     unit: G_PER_L
   term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
 - preferred_term: KH2PO4
@@ -21,10 +32,19 @@ ingredients:
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '0.1'
@@ -32,11 +52,17 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCO3
   concentration:
     value: '3'
     unit: G_PER_L
   term:
+    id: CHEBI:3311
+    label: calcium carbonate
+  mediaingredientmech_chebi_term:
     id: CHEBI:3311
     label: calcium carbonate
 - preferred_term: Yeast extract
@@ -50,19 +76,37 @@ ingredients:
   term:
     id: CHEBI:22599
     label: arabinose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:22599
+    label: arabinose
 - preferred_term: Sodium glutamate
   concentration:
     value: '6'
     unit: G_PER_L
+  term:
+    id: CHEBI:64220
+    label: monosodium glutamate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64220
+    label: monosodium glutamate
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
     unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: L
   term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
 preparation_steps:
@@ -110,4 +154,21 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 6 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
-notes: pH 6.7±0.2
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_nbrc_404_score15.py
+  action: RESOLVED_NBRC_404_SCORE15
+  changes: Grounded recovered NBRC Medium 403 formula
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=403
+  notes: Added the NBRC Medium 403 source term, structured the final pH range, grounded
+    the defined formula rows, and added the official NBRC reference.
+notes: 'Source: NBRC Medium 403 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=403
+
+
+  NBRC lists Medium 403 with K2HPO4, KH2PO4, MgSO4·7H2O, NaCl, CaCO3, yeast extract,
+  arabinose, sodium glutamate, optional agar, and distilled water at pH 6.7 +/- 0.2.'
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=403

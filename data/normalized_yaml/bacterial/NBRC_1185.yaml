@@ -6,6 +6,12 @@ description: 1185. NBRC 1183.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: NBRC Medium 1183
+  term:
+    id: nbrc.medium:1183
+    label: NBRC Medium 1183
 ingredients:
 - preferred_term: KNO3
   concentration:
@@ -26,10 +32,16 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: MICRO:0000182
+    label: Tryptone
 - preferred_term: Yeast extract
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Trace elements (see below)
   concentration:
     value: '1'
@@ -38,16 +50,7 @@ ingredients:
   concentration:
     value: '999'
     unit: ML_PER_L
-preparation_steps:
-- step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
-- step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+preparation_steps: []
 curation_history:
 - timestamp: '2026-02-20T00:22:36.033903Z'
   curator: nbrc-import
@@ -85,6 +88,12 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 4 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1183
+  notes: Preserved the recovered NBRC Medium 1183 composition table.
 solutions:
 - preferred_term: Trace elements
   composition:
@@ -134,4 +143,14 @@ solutions:
       id: CHEBI:15377
       label: water
   name: Trace elements
-notes: pH 7.0 Artificial sea water is prepared from a marine aquarium salts mixture.
+notes: 'Source: NBRC Medium 1183 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1183
+
+
+  The NBRC table lists pH 7.0, says artificial sea water is prepared from a marine
+  aquarium salts mixture, and gives the nested trace elements recipe.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1183

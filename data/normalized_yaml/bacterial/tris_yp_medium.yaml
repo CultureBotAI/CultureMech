@@ -17,10 +17,16 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Peptone
   concentration:
     value: '0.6'
     unit: G_PER_L
+  term:
+    id: MICRO:0000178
+    label: Peptone
 - preferred_term: Tris-HCl buffer
   concentration:
     value: '1000'
@@ -46,13 +52,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:43.234507+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TRIS - YP medium" to "tris_yp_medium" for
-    consistent matching
+  notes: Normalized name from "TRIS - YP medium" to "tris_yp_medium" for consistent
+    matching
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_bacterial_score10_exact_terms_batch6.py
+  action: GROUNDED_BACTERIAL_SCORE10_EXACT_TERMS_BATCH6
+  changes: Grounded bacterial score-10 exact ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Peptone, Yeast extract.
 ph_value: 7.5
 variant_children:
 - path: data/normalized_yaml/bacterial/bdellovibrio_yp_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001356
   name: bdellovibrio_yp_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

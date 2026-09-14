@@ -11,8 +11,99 @@ media_term:
   term:
     id: mediadive.medium:P7
     label: N27 RHODOSPIRILLACEAE MEDIUM (modified)
-notes: 'Source: public'
-ingredients: []
+notes: MediaDive public Medium P7 provides the current N27 Rhodospirillaceae 1 L recipe
+  with Fe(III) citrate, Vitamin B12, and Trace element solution SL-6 stocks.
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  source: MediaDive public Medium P7
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Disodium succinate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  source: MediaDive public Medium P7
+- preferred_term: Ammonium acetate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: MediaDive public Medium P7
+  term:
+    id: CHEBI:62947
+    label: ammonium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62947
+    label: ammonium acetate
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: MediaDive public Medium P7
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  source: MediaDive public Medium P7
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: NaCl
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  source: MediaDive public Medium P7
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  source: MediaDive public Medium P7
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  source: MediaDive public Medium P7
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Ethanol
+  concentration:
+    value: '0.5'
+    unit: ML_PER_L
+  source: MediaDive public Medium P7
+  term:
+    id: CHEBI:16236
+    label: ethanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
+    label: ethanol
 applications:
 - Microbial cultivation
 curation_history:
@@ -39,5 +130,116 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_mediadive_public_score30.py
+  action: RESOLVED_MEDIADIVE_PUBLIC_SCORE30
+  changes: Resolved score-30 public MediaDive placeholder graph
+  source: https://www.bacmedia.dsmz.de/medium/P7
+  notes: MediaDive public Medium P7 provides the current N27 Rhodospirillaceae 1 L
+    recipe with Fe(III) citrate, Vitamin B12, and Trace element solution SL-6 stocks.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+solutions:
+- preferred_term: Fe(III) citrate stock
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+  notes: P7 adds 5 ml of a 0.1% Fe(III) citrate stock in H2O.
+  composition:
+  - preferred_term: Fe(III) citrate
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    source: MediaDive public Medium P7
+    term:
+      id: CHEBI:144421
+      label: Fe(III) citrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:144421
+      label: Fe(III) citrate
+- preferred_term: Vitamin B12 stock
+  concentration:
+    value: '0.4'
+    unit: ML_PER_L
+  notes: P7 adds 0.4 ml of a 10 mg Vitamin B12 per 100 ml H2O stock.
+  composition:
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: MediaDive public Medium P7
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+- preferred_term: Trace element solution SL-6
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  notes: MediaDive public Medium P7 adds 1 ml Trace element solution SL-6 per 1 L
+    medium.
+  composition:
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: MediaDive public Medium P7
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '0.03'
+      unit: G_PER_L
+    source: MediaDive public Medium P7
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.3'
+      unit: G_PER_L
+    source: MediaDive public Medium P7
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    source: MediaDive public Medium P7
+  - preferred_term: CuCl2 x 2 H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: MediaDive public Medium P7
+  - preferred_term: NiCl2 x 6 H2O
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    source: MediaDive public Medium P7
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.03'
+      unit: G_PER_L
+    source: MediaDive public Medium P7
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix the main solution, Fe(III) citrate stock, Vitamin B12 stock, and
+    Trace element solution SL-6.
+- step_number: 2
+  action: MIX
+  description: Adjust pH to 6.8.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+references:
+- reference: https://www.bacmedia.dsmz.de/medium/P7

@@ -223,13 +223,19 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_769_clostridium_score10.py
+  action: RESOLVED_KOMODO_769_CLOSTRIDIUM_TOPOLOGY
+  changes: Resolved KOMODO Medium 769 DSM 5262 topology
+  source: KOMODO Medium 769.2
+  notes: Kept KOMODO Medium 769 linked under DSMZ Medium 769 and retyped KOMODO Medium
+    769.2 as its DSM 5262 strain wrapper.
 variant_children:
 - path: data/normalized_yaml/bacterial/dsm_5262.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006424
   name: dsm_5262
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 769.2 applies Clostridium vincentii medium to DSM 5262.
 parent_media:
   path: data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -241,3 +247,5 @@ variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same ingredient and concentration signature; KOMODO record copied from the matching
   DSMZ medium source.
+data_quality_flags:
+- ingredients_curated

@@ -10,25 +10,18 @@ media_term:
   term:
     id: mediadive.medium:J732
     label: MARINE AGAR 2216 with 5% NaCl
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=732'
+notes: JCM Medium 732 defines Marine Agar 2216 with 5% NaCl as 1 L of JCM Medium 118
+  Marine Agar 2216 plus 50 g/L NaCl.
 ingredients:
-- preferred_term: Marine agar 2216
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
 - preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
   concentration:
     value: '50'
     unit: G_PER_L
+  source: JCM Medium 732
+  notes: Adds 50 g/L NaCl to JCM Medium 118 Marine Agar 2216.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
@@ -58,4 +51,41 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_marine_agar_score20.py
+  action: RESOLVED_JCM_MARINE_AGAR_SCORE20
+  changes: Resolved score-20 JCM Marine Agar 2216 additive wrapper
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=732; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=118
+  notes: Adds 50 g/L NaCl to JCM Medium 118 Marine Agar 2216.
 kg_microbe_match: mediadive.medium:101
+solutions:
+- preferred_term: Marine agar 2216
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  notes: Adds 50 g/L NaCl to JCM Medium 118 Marine Agar 2216.
+  culturemech_term:
+    id: CultureMech:015393
+    label: Marine Agar 2216
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adds 50 g/L NaCl to JCM Medium 118 Marine Agar 2216.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+parent_media:
+  path: data/normalized_yaml/specialized/marine_agar_2216.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:015393
+  name: marine_agar_2216
+  notes: Adds 50 g/L NaCl to JCM Medium 118 Marine Agar 2216.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- Adds 50 g/L NaCl to JCM Medium 118 Marine Agar 2216.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=732
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=118

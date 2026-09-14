@@ -242,6 +242,44 @@ curation_history:
     solution'' @ 1 ml/l. Each moved component matched the MediaDive stock by name
     AND value; bulk ingredients sharing a name were left in place (#150).'
   changes: Nested 5 ingredient(s) under 2 solution(s); ingredients 23 -> 18
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1058_thiohalophilus_score10.py
+  action: RESOLVED_KOMODO_1058_THIOHALOPHILUS_TOPOLOGY
+  changes: Re-rooted KOMODO Medium 1058 strain-wrapper topology
+  source: KOMODO Medium 1058 and 1058.1-1058.5
+  notes: Kept the KOMODO-derived 1058 strain wrappers under the local KOMODO Medium
+    1058 formulation.
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_15070_and_dsm_15071.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:003636
+  name: for_dsm_15070_and_dsm_15071
+  notes: KOMODO Medium 1058.1 applies the KOMODO Medium 1058 bulk ingredients and
+    stock compositions to DSM 15070 and DSM 15071 with recorded pH 7.2.
+- path: data/normalized_yaml/bacterial/for_dsm_15074.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:003637
+  name: for_dsm_15074
+  notes: KOMODO Medium 1058.2 applies the KOMODO Medium 1058 bulk ingredients and
+    stock compositions to DSM 15074.
+- path: data/normalized_yaml/bacterial/for_dsm_15699.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:003638
+  name: for_dsm_15699
+  notes: KOMODO Medium 1058.3 applies the KOMODO Medium 1058 bulk ingredients and
+    stock compositions to DSM 15699.
+- path: data/normalized_yaml/bacterial/for_dsm_15841_and_dsm_16925.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:003639
+  name: for_dsm_15841_and_dsm_16925
+  notes: KOMODO Medium 1058.4 applies the KOMODO Medium 1058 bulk ingredients and
+    stock compositions to DSM 15841 and DSM 16925.
+- path: data/normalized_yaml/bacterial/for_dsm_21152.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:003640
+  name: for_dsm_21152
+  notes: KOMODO Medium 1058.5 applies the KOMODO Medium 1058 bulk ingredients and
+    stock compositions to DSM 21152.
 high_metal: true
 solutions:
 - preferred_term: Trace elements solution (Pfennig, 1965)
@@ -308,3 +346,5 @@ solutions:
     unit: ML_PER_L
   preparation_notes: Stock prepared in 1000 ml; added at 1 ml per litre of medium.
     Composition and volume from MediaDive (#150).
+data_quality_flags:
+- ingredients_curated

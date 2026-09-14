@@ -20,14 +20,15 @@ STRUCTURAL — the composition is absent or unusable:
   no ingredients or solutions  30   no structured composition
   placeholder component text   25   "not specified", "see source", etc.
   mangled component name       25   a whole recipe in one field (#166)
-  only 1-2 components          15   suspiciously small composition
+  only 1-2 components          15   suspiciously small composition unless curated
 
 GROUNDING — present but not machine-usable:
   no component grounded        20
   under half grounded          10
+  EXCEPT: curated opaque products that intentionally remain unmapped
 
 IDENTITY / PROVENANCE — cannot be traced to a source:
-  no media_term                10
+  no media_term or sources     10
   name is a bare strain pointer 10   "For DSM 13514" names a strain
   no notes / provenance         5
 
@@ -64,10 +65,11 @@ from record_kinds import is_solution_record  # noqa: E402
 
 NORMALIZED = REPO / "data" / "normalized_yaml"
 DEFAULT_OUT = REPO / "data" / "import_tracking" / "reports" / "review_need_ranking.tsv"
+YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 PLACEHOLDER = re.compile(
     r"see\s+source|refer\s+to|available\s+at|contact\s+source|not\s+specified|"
-    r"\bunknown\b|medium\s+no\.|composition\s+not\s+available|proprietary",
+    r"\bunknown\b|composition\s+not\s+available|proprietary",
     re.I,
 )
 # Two or more embedded quantity+unit pairs means a composition block was flattened
@@ -86,6 +88,18 @@ MANGLED = re.compile(_QTY_UNIT + r".*?" + _QTY_UNIT)
 # its own. NOT the same as a short name: BG11 and JM are real media.
 STRAIN_POINTER = re.compile(r"\s*(?:for\s+)?(?:dsm|atcc|jcm|nbrc|ncimb)\s*[\s:_-]*\d+\s*", re.I)
 CONDITION_SLOTS = ("ph_value", "ph_range", "temperature_value", "temperature_range")
+CURATED_STRAIN_POINTER_VARIANT_RELATIONSHIPS = frozenset(
+    {
+        "CONCENTRATION_VARIANT",
+        "PHYSICAL_STATE_VARIANT",
+        "SUPPLEMENTED_VARIANT",
+        "OMITTED_COMPONENT_VARIANT",
+        "SUBSTITUTED_COMPONENT_VARIANT",
+        "PH_VARIANT",
+        "SALINITY_VARIANT",
+        "STRAIN_SPECIFIC_VARIANT",
+    }
+)
 
 # Signals common enough to be the corpus norm rather than a defect. They refine the
 # ranking among records that are ALREADY suspect, but must not qualify a record on
@@ -118,14 +132,99 @@ def composition_components(doc: dict[str, Any]) -> list[dict[str, Any]]:
     for solution in doc.get("solutions") or []:
         if not isinstance(solution, dict):
             continue
-        composition = solution.get("composition")
-        legacy_ingredients = solution.get("ingredients")
-        nested = composition or legacy_ingredients or []
-        nested_components = (
-            [i for i in nested if isinstance(i, dict)] if isinstance(nested, list) else []
-        )
+        nested_components = solution_components(solution)
         components.extend(nested_components or [solution])
     return components
+
+
+def solution_components(solution: dict[str, Any]) -> list[dict[str, Any]]:
+    components: list[dict[str, Any]] = []
+
+    composition = solution.get("composition")
+    legacy_ingredients = solution.get("ingredients")
+    nested = composition or legacy_ingredients or []
+    if isinstance(nested, list):
+        components.extend(i for i in nested if isinstance(i, dict))
+
+    child_solutions = solution.get("solutions") or []
+    if isinstance(child_solutions, list):
+        for child in child_solutions:
+            if isinstance(child, dict):
+                components.extend(solution_components(child) or [child])
+
+    return components
+
+
+def _curated_strain_pointer_variant(doc: dict[str, Any]) -> bool:
+    data_quality_flags = doc.get("data_quality_flags") or []
+    parent_media = doc.get("parent_media") or {}
+    return (
+        isinstance(data_quality_flags, list)
+        and "ingredients_curated" in data_quality_flags
+        and isinstance(parent_media, dict)
+        and bool(parent_media.get("id") or parent_media.get("path"))
+        and doc.get("variant_relationship") in CURATED_STRAIN_POINTER_VARIANT_RELATIONSHIPS
+    )
+
+
+def _curated_known_unmapped_components(
+    doc: dict[str, Any],
+    components: list[dict[str, Any]],
+) -> bool:
+    """Return whether ungrounded components are a deliberate curated endpoint.
+
+    Official sources sometimes disclose only a commercial product, host-cell
+    supernatant, or other opaque input. The curation endpoint for those records
+    is an explicit sourced component that cannot honestly get a CHEBI term.
+    Keep accidental ungrounded imports in the ranking, but stop re-emitting
+    these already-reviewed wrappers.
+    """
+    data_quality_flags = doc.get("data_quality_flags") or []
+    return (
+        bool(components)
+        and isinstance(data_quality_flags, list)
+        and "ingredients_curated" in data_quality_flags
+        and "has_unmapped_ingredients" in data_quality_flags
+    )
+
+
+def _source_unavailable_empty_record(
+    doc: dict[str, Any],
+    components: list[dict[str, Any]],
+) -> bool:
+    """Return whether an empty recipe was reviewed and has no available source data."""
+    data_quality_flags = doc.get("data_quality_flags") or []
+    return (
+        not components
+        and isinstance(data_quality_flags, list)
+        and "source_information_unavailable" in data_quality_flags
+    )
+
+
+def _curated_legacy_source_url_unavailable(doc: dict[str, Any]) -> bool:
+    """Return whether a legacy source URL was reviewed and no longer resolves."""
+    data_quality_flags = doc.get("data_quality_flags") or []
+    return (
+        isinstance(data_quality_flags, list)
+        and "ingredients_curated" in data_quality_flags
+        and "legacy_source_url_unavailable" in data_quality_flags
+    )
+
+
+def _has_source_provenance(doc: dict[str, Any]) -> bool:
+    """Return whether a recipe points to any structured source identity."""
+    if doc.get("media_term"):
+        return True
+
+    sources = doc.get("sources")
+    if not isinstance(sources, list):
+        return False
+
+    return any(
+        isinstance(source, dict)
+        and bool(source.get("database") or source.get("database_id") or source.get("url"))
+        for source in sources
+    )
 
 
 def score_record(doc: dict[str, Any]) -> tuple[int, list[str]]:
@@ -142,9 +241,14 @@ def score_record(doc: dict[str, Any]) -> tuple[int, list[str]]:
     names = [str(component.get("preferred_term") or "") for component in components]
 
     # --- structural
-    if not components:
+    data_quality_flags = doc.get("data_quality_flags") or []
+    curated_components = (
+        isinstance(data_quality_flags, list) and "ingredients_curated" in data_quality_flags
+    )
+
+    if not components and not _source_unavailable_empty_record(doc, components):
         hit(30, "no ingredients or solutions")
-    elif len(components) <= 2:
+    elif components and len(components) <= 2 and not curated_components:
         hit(15, f"only {len(components)} composition component(s)")
     if any(PLACEHOLDER.search(n) for n in names):
         hit(25, "placeholder ingredient text")
@@ -152,7 +256,7 @@ def score_record(doc: dict[str, Any]) -> tuple[int, list[str]]:
         hit(25, "ingredient name contains an unparsed recipe")
 
     # --- grounding
-    if components:
+    if components and not _curated_known_unmapped_components(doc, components):
         n_grounded = sum(1 for component in components if _grounded(component))
         if n_grounded == 0:
             hit(20, "no composition component is grounded")
@@ -160,10 +264,10 @@ def score_record(doc: dict[str, Any]) -> tuple[int, list[str]]:
             hit(10, f"only {n_grounded}/{len(components)} composition components grounded")
 
     # --- identity / provenance
-    if not doc.get("media_term"):
+    if not _has_source_provenance(doc) and not _curated_legacy_source_url_unavailable(doc):
         hit(10, "no media_term (untraceable to a source catalogue)")
     display_name = str(doc.get("original_name") or doc.get("name") or "")
-    if STRAIN_POINTER.fullmatch(display_name):
+    if STRAIN_POINTER.fullmatch(display_name) and not _curated_strain_pointer_variant(doc):
         hit(10, f"name {display_name!r} identifies a strain, not a medium")
     if not doc.get("notes"):
         hit(5, "no notes/provenance")
@@ -210,7 +314,7 @@ def collect(normalized: Path = NORMALIZED) -> list[dict[str, Any]]:
     records: list[tuple[str, dict[str, Any]]] = []
     for path in sorted(normalized.rglob("*.yaml")):
         try:
-            doc = yaml.safe_load(path.read_text(errors="replace"))
+            doc = yaml.load(path.read_text(errors="replace"), Loader=YAML_LOADER)
         except (yaml.YAMLError, OSError):
             continue
         records.append((str(path.relative_to(normalized)), doc))
@@ -232,6 +336,7 @@ def main(argv: list[str] | None = None) -> int:
         w = csv.DictWriter(
             fh,
             delimiter="\t",
+            lineterminator="\n",
             fieldnames=["score", "file_path", "record_id", "name", "n_components", "reasons"],
         )
         w.writeheader()

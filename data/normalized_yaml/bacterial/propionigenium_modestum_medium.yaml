@@ -235,3 +235,28 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_293_propionigenium_score10.py
+  action: RESOLVED_KOMODO_293_PROPIONIGENIUM_TOPOLOGY
+  changes: Linked KOMODO Medium 293 child and duplicate records
+  source: KOMODO Medium 293, 293.1, and 293a; DSMZ Medium 293
+  notes: Linked KOMODO Medium 293.1 under the KOMODO Medium 293 Propionigenium modestum
+    base and documented the exact-signature KOMODO 293a and DSMZ 293 duplicate records.
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_2376.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004755
+  name: for_dsm_2376
+  notes: KOMODO Medium 293.1 applies PROPIONIGENIUM MODESTUM MEDIUM to DSM 2376.
+- path: data/normalized_yaml/bacterial/ven_chi2_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004757
+  name: ven_chi2_medium
+  notes: KOMODO Medium 293a has the same 19-component Propionigenium modestum medium
+    signature as KOMODO Medium 293.
+- path: data/normalized_yaml/specialized/propionigenium_modestum_medium_marine.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:015351
+  name: propionigenium_modestum_medium_marine
+  notes: DSMZ Medium 293 has the same 19-component Propionigenium modestum medium
+    signature as KOMODO Medium 293.

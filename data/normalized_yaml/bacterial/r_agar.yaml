@@ -11,72 +11,138 @@ media_term:
   term:
     id: mediadive.medium:J26
     label: R AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=26'
+notes: 'Source: JCM Medium 26 | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=26
+
+
+  The JCM R Agar table lists Bacto peptone, yeast extract, malt extract, casamino
+  acids, beef extract, glycerol, Tween 80, magnesium sulfate heptahydrate, agar, and
+  distilled water, with a final pH of 7.2.'
 ingredients:
-- preferred_term: Bacto peptone
+- preferred_term: Bacto peptone (BD-Difco)
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: Yeast extract
+  notes: JCM Medium 26 lists this component for R Agar; the salinity variants reuse
+    the same agar base.
+  term:
+    id: MICRO:0000178
+    label: Bacto peptone
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '5'
     unit: G_PER_L
-- preferred_term: Malt extract
+  notes: JCM Medium 26 lists this component for R Agar; the salinity variants reuse
+    the same agar base.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Malt extract (BD-Difco)
   concentration:
     value: '5'
     unit: G_PER_L
-- preferred_term: Casamino acids
+  notes: JCM Medium 26 lists this component for R Agar; the salinity variants reuse
+    the same agar base.
+  term:
+    id: FOODON:03301056
+    label: malt extract
+  nutritional_roles:
+  - CARBON_SOURCE
+  - NITROGEN_SOURCE
+- preferred_term: Casamino acids (BD-Difco)
   concentration:
     value: '5'
     unit: G_PER_L
-- preferred_term: Beef extract
+  notes: JCM Medium 26 lists this component for R Agar; the salinity variants reuse
+    the same agar base.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Beef extract (BD-Difco)
   concentration:
     value: '2'
     unit: G_PER_L
+  notes: JCM Medium 26 lists this component for R Agar; the salinity variants reuse
+    the same agar base.
+  term:
+    id: FOODON:03302088
+    label: beef extract
+  nutritional_roles:
+  - NITROGEN_SOURCE
 - preferred_term: Glycerol
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: JCM Medium 26 lists this component for R Agar; the salinity variants reuse
+    the same agar base.
   term:
     id: CHEBI:17754
     label: glycerol
-  concentration:
-    value: '2'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
     label: glycerol
+  nutritional_roles:
+  - CARBON_SOURCE
 - preferred_term: Tween 80
-  term:
-    id: CHEBI:53426
-    label: polysorbate 80
   concentration:
     value: '0.05'
     unit: G_PER_L
+  notes: JCM Medium 26 lists 50 mg/L Tween 80.
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
   mediaingredientmech_chebi_term:
     id: CHEBI:53426
     label: polysorbate 80
 - preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
   concentration:
     value: '1'
     unit: G_PER_L
+  notes: JCM Medium 26 lists this component for R Agar; the salinity variants reuse
+    the same agar base.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+  - SULFUR_SOURCE
 - preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
+  notes: JCM Medium 26 lists this component for R Agar; the salinity variants reuse
+    the same agar base.
+  term:
+    id: CHEBI:2509
+    label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  notes: JCM Medium 26 brings the R Agar recipe to 1 L with distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
   description: Adjust pH to 7.2.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -112,3 +178,71 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_r_agar_salinity_score20.py
+  action: RESOLVED_R_AGAR_SALINITY_SCORE20
+  changes: Resolved JCM Medium 26 R Agar base composition
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=26
+  notes: Rebuilt the R Agar base from the JCM Medium 26 table.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_r_agar_salinity_score20.py
+  action: LINKED_R_AGAR_SALINITY_SCORE20_CHILDREN
+  changes: Linked score-20 R Agar salinity variants to their base parents
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=113; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=26
+  notes: Added or refreshed reciprocal salinity-variant link for bacterial/r_agar_with_3_nacl.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_r_agar_salinity_score20.py
+  action: LINKED_R_AGAR_SALINITY_SCORE20_CHILDREN
+  changes: Linked score-20 R Agar salinity variants to their base parents
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=76; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=26
+  notes: Added or refreshed reciprocal salinity-variant link for bacterial/r_agar_with_5_nacl.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_r_agar_salinity_score20.py
+  action: LINKED_R_AGAR_SALINITY_SCORE20_CHILDREN
+  changes: Linked score-20 R Agar salinity variants to their base parents
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=302; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=26
+  notes: Added or refreshed reciprocal supplemented-variant link for bacterial/r_agar_with_0_5_tween_80.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_r_agar_salinity_score20.py
+  action: LINKED_R_AGAR_SALINITY_SCORE20_CHILDREN
+  changes: Linked score-20 R Agar salinity variants to their base parents
+  source: https://togomedium.org/medium/M916; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=877;
+    https://togomedium.org/medium/M19; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=26
+  notes: Added or refreshed reciprocal salinity-variant link for bacterial/r_agar_with_10_nacl.yaml.
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_117_863_score20.py
+  action: LINKED_JCM_117_863_SCORE20_CHILD
+  source: https://togomedium.org/medium/M109; https://togomedium.org/medium/M19
+  notes: Added or refreshed reciprocal link for bacterial/r_agar_with_catalase.yaml.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=26
+variant_children:
+- path: data/normalized_yaml/bacterial/r_agar_with_0_5_tween_80.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:002660
+  name: r_agar_with_0_5_tween_80
+  notes: Adds 5 g/L Tween 80 to JCM Medium 26 R Agar.
+- path: data/normalized_yaml/bacterial/r_agar_with_10_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:003224
+  name: r_agar_with_10_nacl
+  notes: Adds 100 g/L NaCl to JCM Medium 26 R Agar.
+- path: data/normalized_yaml/bacterial/r_agar_with_3_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:002313
+  name: r_agar_with_3_nacl
+  notes: Adds 30 g/L NaCl to JCM Medium 26 R Agar.
+- path: data/normalized_yaml/bacterial/r_agar_with_5_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:003111
+  name: r_agar_with_5_nacl
+  notes: Adds 50 g/L NaCl to JCM Medium 26 R Agar.
+- path: data/normalized_yaml/bacterial/r_agar_with_catalase.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:002351
+  name: r_agar_with_catalase
+  notes: Supplements JCM Medium 26 R Agar with 60 mg/L filter-sterilized catalase.

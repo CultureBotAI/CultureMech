@@ -10,28 +10,51 @@ media_term:
   term:
     id: mediadive.medium:J148
     label: OATMEAL AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=148'
+notes: 'Source: JCM Medium 148 | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=148
+
+
+  The JCM Oatmeal Agar table lists oatmeal, agar, and distilled water; the oatmeal
+  is boiled in distilled water, filtered through cloth, restored to 1 L, and boiled
+  again after agar addition.'
 ingredients:
-- preferred_term: Oatmeal
+- preferred_term: Oatmeal (Quaker White Oats)
   concentration:
     value: '30'
     unit: G_PER_L
+  notes: JCM Medium 148 lists this brand-specific oatmeal as supplied.
 - preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
   concentration:
     value: '20'
     unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  notes: JCM Medium 148 uses agar to solidify the oatmeal infusion.
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: JCM Medium 148 brings the oatmeal filtrate back to 1 L.
 preparation_steps:
 - step_number: 1
-  action: FILTER_STERILIZE
-  description: Boil 30.0 g of oatmeal with 1.0 L of distilled water over water bath,
-    stirring occasionally, for 1 hr. Filter through cloth, make up to 1.0 L, add agar
-    and boil till dissolved.
+  action: HEAT
+  description: Boil 30 g oatmeal with 1 L distilled water over a water bath for 1
+    hr, stirring occasionally; filter through cloth, bring the filtrate back to 1
+    L, add agar, and boil until dissolved.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -57,4 +80,22 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_oatmeal_score20.py
+  action: RESOLVED_JCM_J148_OATMEAL_AGAR
+  changes: Resolved JCM Medium 148 Oatmeal Agar composition
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=148
+  notes: Rebuilt the Oatmeal Agar ingredients from the JCM Medium 148 table.
 kg_microbe_match: mediadive.medium:12
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M139_Oatmeal_Agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:007935
+  name: oatmeal_agar
+  notes: TOGO Medium M139 points to the same JCM Medium 148 recipe.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=148

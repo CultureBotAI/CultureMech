@@ -10,26 +10,53 @@ media_term:
   term:
     id: mediadive.medium:J247
     label: JCM MEDIUM No. 247
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=247'
+notes: JCM Medium 247 contains 5.0 g yeast extract, 20.0 g glucose, and 1.0 L distilled
+  water, with pH 6.8-7.0.
 ingredients:
 - preferred_term: Yeast extract
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
+  source: JCM Medium 247
+  notes: JCM Medium 247 lists 5.0 g yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Glucose
+  concentration:
+    value: '20.0'
+    unit: G_PER_L
+  source: JCM Medium 247
+  notes: JCM Medium 247 lists 20.0 g glucose.
   term:
     id: CHEBI:17234
     label: glucose
-  concentration:
-    value: '20'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: JCM Medium 247
+  notes: JCM Medium 247 lists 1000 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: pH 6.8-7.0.
+  description: Dissolve 5.0 g yeast extract and 20.0 g glucose in 1.0 L distilled
+    water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 6.8-7.0.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min unless otherwise stated.
 applications:
 - Microbial cultivation
 curation_history:
@@ -56,3 +83,20 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_official_simple_score20.py
+  action: RESOLVED_OFFICIAL_SIMPLE_SCORE20
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=247
+  notes: JCM Medium 247 contains 5.0 g yeast extract, 20.0 g glucose, and 1.0 L distilled
+    water, with pH 6.8-7.0.
+ph_range:
+  min: 6.8
+  max: 7.0
+  notes: JCM Medium 247 states pH 6.8-7.0.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=247

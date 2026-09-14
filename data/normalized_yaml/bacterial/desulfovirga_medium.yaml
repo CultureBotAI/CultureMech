@@ -395,12 +395,13 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-parent_media:
-  path: data/normalized_yaml/bacterial/KOMODO_194_DESULFOBULBUS_MEDIUM.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:004235
-  name: desulfobulbus_medium
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_dsmz_194_desulfobulbus_score15.py
+  action: RESOLVED_DSMZ_KOMODO_194_SCORE15
+  changes: Resolved DSMZ/KOMODO Medium 194 chemistry and variant metadata
+  source: https://mediadive.dsmz.de/rest/medium/194a
+  notes: Removed erroneous SOURCE_DUPLICATE variant metadata that linked DSMZ Medium
+    194a Desulfovirga Medium to KOMODO Medium 194.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/194a
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium194a.pdf

@@ -6,33 +6,31 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
+- preferred_term: Nissui Potato Dextrose Agar
+  concentration:
+    value: '39'
+    unit: G_PER_L
+  source: NBRC Medium 930
+  notes: NBRC Medium 930 lists 39 g Nissui Potato Dextrose Agar.
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1000'
+    unit: ML_PER_L
+  source: NBRC Medium 930
+  notes: NBRC Medium 930 lists 1.0 L distilled water.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: Nissui Potato Dextrose Agar
-  concentration:
-    value: '39'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 media_term:
   preferred_term: TOGO Medium M1721
   term:
     id: TOGO:M1721
     label: Potato Dextrose Agar
-notes: 'Source: https://togomedium.org/medium/M1721
-
-  Original source: NBRC - NBRC_M930
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=930'
+notes: 'TOGO M1721 mirrors NBRC Medium 930: 39 g Nissui Potato Dextrose Agar in 1
+  L distilled water.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -63,3 +61,20 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_commercial_score20.py
+  action: RESOLVED_TOGO_COMMERCIAL_SCORE20_GRAPH
+  source: https://togomedium.org/medium/M1721; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=930
+  notes: 'TOGO M1721 mirrors NBRC Medium 930: 39 g Nissui Potato Dextrose Agar in
+    1 L distilled water.'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Suspend 39 g Nissui Potato Dextrose Agar in 1 L distilled water.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M1721
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=930

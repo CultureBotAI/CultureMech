@@ -17,20 +17,41 @@ ingredients:
   concentration:
     value: '150'
     unit: G_PER_L
+  source: MediaDive Medium 1765
+  notes: MediaDive Medium 1765 lists this ingredient in the potato-carrot decoction
+    before the boil, cheesecloth filtration, volume adjustment, and agar addition.
 - preferred_term: Carrot
   concentration:
     value: '30'
     unit: G_PER_L
+  source: MediaDive Medium 1765
+  notes: MediaDive Medium 1765 lists this ingredient in the potato-carrot decoction
+    before the boil, cheesecloth filtration, volume adjustment, and agar addition.
 - preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
   concentration:
     value: '20'
     unit: G_PER_L
+  source: MediaDive Medium 1765
+  notes: MediaDive Medium 1765 lists agar as the solidifying component.
+  term:
+    id: CHEBI:2509
+    label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: MediaDive Medium 1765
+  notes: MediaDive Medium 1765 lists 1.0 L distilled water to bring the recipe to
+    volume.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
@@ -63,6 +84,12 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_potato_carrot_agar_family_score15.py
+  action: RESOLVED_POTATO_CARROT_AGAR_FAMILY
+  source: https://www.bacmedia.dsmz.de/medium/1765
+  notes: MediaDive Medium 1765 lists 150 g potato, 30 g carrot, 20 g agar, 1000 mL
+    distilled water, and final pH 7.0.
 kg_microbe_match: mediadive.medium:12
 parent_media:
   path: data/normalized_yaml/bacterial/JCM_J54_POTATO-CARROT_AGAR.yaml
@@ -72,3 +99,9 @@ parent_media:
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
 - Same ingredient identity signature but concentration signature differs from parent.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.bacmedia.dsmz.de/medium/1765

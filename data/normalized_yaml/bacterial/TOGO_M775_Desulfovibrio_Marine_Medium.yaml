@@ -8,10 +8,10 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: NaCl
   concentration:
-    value: '25'
+    value: '25.0'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: JCM Medium 750
+  notes: JCM Medium 750 supplements Medium 389 with 25.0 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -23,11 +23,7 @@ media_term:
   term:
     id: TOGO:M775
     label: Desulfovibrio Marine Medium
-notes: 'Source: https://togomedium.org/medium/M775
-
-  Original source: JCM - JCM_M750
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=750'
+notes: 'TOGO M775 mirrors JCM Medium 750: Medium 389 supplemented with 25.0 g/L NaCl.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -70,12 +66,41 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_wrappers_direct_score20.py
+  action: RESOLVED_JCM_WRAPPERS_DIRECT_SCORE20
+  source: https://togomedium.org/medium/M775; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=750;
+    https://togomedium.org/medium/M384; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=389
+  notes: 'TOGO M775 mirrors JCM Medium 750: Medium 389 supplemented with 25.0 g/L
+    NaCl.'
 solutions:
-- preferred_term: DESULFOVIBRIO MEDIUM (see Medium [M384])
-  composition: []
-  notes: Cross-reference to Medium M384
+- preferred_term: Desulfovibrio Medium
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '1000'
+    unit: ML_PER_L
+  notes: JCM Medium 750 uses Medium 389 as the prepared base.
+  culturemech_term:
+    id: CultureMech:009765
+    label: Desulfovibrio Medium
 kg_microbe_match: mediadive.medium:74
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 389 supplemented with 25.0 g/L NaCl.
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M384_Desulfovibrio_Medium.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:009765
+  name: desulfovibrio_medium
+  notes: Supplements Medium 389 with 25.0 g/L NaCl.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- Supplements Medium 389 with 25.0 g/L NaCl.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M775
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=750
+- reference: https://togomedium.org/medium/M384
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=389

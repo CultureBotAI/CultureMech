@@ -426,3 +426,23 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_825_methanobacterium_score10.py
+  action: RESOLVED_KOMODO_825_METHANOBACTERIUM_TOPOLOGY
+  changes: Linked under KOMODO Medium 825
+  source: DSMZ Medium 825
+  notes: DSMZ Medium 825 has the same 36-component Methanobacterium II signature as
+    KOMODO Medium 825.
+parent_media:
+  path: data/normalized_yaml/archaea/KOMODO_825_METHANOBACTERIUM_II_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006555
+  name: methanobacterium_ii_medium
+  notes: DSMZ Medium 825 has the same 36-component Methanobacterium II signature as
+    KOMODO Medium 825.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- DSMZ Medium 825 has the same 36-component Methanobacterium II signature as KOMODO
+  Medium 825.
+data_quality_flags:
+- ingredients_curated

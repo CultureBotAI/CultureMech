@@ -6,15 +6,27 @@ description: 990. NBRC 989.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: NBRC Medium 989
+  term:
+    id: nbrc.medium:989
+    label: NBRC Medium 989
 ingredients:
 - preferred_term: Trypticase Peptone (BBL)
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: MICRO:0000175
+    label: Trypticase peptone
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: 50% Sodium lactate
   concentration:
     value: '25'
@@ -50,6 +62,9 @@ ingredients:
   concentration:
     value: '0.75'
     unit: G_PER_L
+  term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -59,14 +74,25 @@ ingredients:
     label: water
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  action: MIX
+  description: Mix ingredients except for Na2CO3 and cysteine-HCl.
 - step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
+  action: ALIQUOT
+  description: Dispense under N2/CO2 (80/20) into culture vessels and seal with butyl
+    rubber stoppers.
 - step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: AUTOCLAVE
+  description: Autoclave at 115 C for 25 minutes.
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Filter-sterilize Na2CO3 and cysteine-HCl solutions.
+- step_number: 5
+  action: MIX
+  description: Aseptically and anaerobically add filter-sterile Na2CO3 and cysteine-HCl
+    solutions.
+- step_number: 6
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 with 3 N HCl.
 curation_history:
 - timestamp: '2026-02-20T00:22:36.001571Z'
   curator: nbrc-import
@@ -104,6 +130,12 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 10 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=989
+  notes: Preserved the recovered NBRC Medium 989 composition table.
 solutions:
 - preferred_term: Biotin solution
   composition:
@@ -177,6 +209,9 @@ solutions:
     concentration:
       value: '10.6'
       unit: G_PER_L
+    term:
+      id: CHEBI:86158
+      label: CaCl2 x 2 H2O
   - preferred_term: Distilled water
     concentration:
       value: '1'
@@ -185,8 +220,15 @@ solutions:
       id: CHEBI:15377
       label: water
   name: C solution
-notes: pH 7 Mix ingredients except for Na2CO3 and cysteine-HCl, dispense the medium
-  into suitable culture vessels under a stream of N2/CO2 (80/20), seal with butyl
-  rubber stoppers, and autoclave at 115℃ for 25 min. Aseptically and anaerobically
-  add filter-sterile Na2CO3 and cysteine-HCl solutions, and adjust pH to 7.0 with
-  3 N HCl.
+notes: 'Source: NBRC Medium 989 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=989
+
+
+  The NBRC TYL medium table lists biotin, K, M, and C stock solutions, final pH 7.0,
+  115 C autoclaving for 25 minutes, and aseptic anaerobic addition of filter-sterile
+  carbonate and cysteine solutions.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=989

@@ -183,7 +183,8 @@ curation_history:
 - timestamp: '2026-06-14T05:58:58.561437+00:00'
   curator: idnf-grounding-fix-v1.0
   action: Fixed ID_NOT_FOUND term groundings
-  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
+  notes: Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI,
+    0 de-grounded (mixture or unverifiable).
 - timestamp: 2026-01-27T01:15:01.fZ
   curator: komodo-web-import
   action: Imported from KOMODO web table
@@ -218,13 +219,21 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-ph_value: 6.8
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1132_lc2_score10.py
+  action: RESOLVED_KOMODO_1132_LC2_TOPOLOGY
+  changes: Linked under KOMODO Medium 1132
+  source: KOMODO Medium 1132.1
+  notes: KOMODO Medium 1132.1 applies LC 2 to DSM 22980.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_1132_LC_2.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003842
   name: lc_2
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 1132 is the LC 2 base for KOMODO Medium 1132.1.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 1132.1 applies LC 2 to DSM 22980.
+ph_value: 6.8
+data_quality_flags:
+- ingredients_curated

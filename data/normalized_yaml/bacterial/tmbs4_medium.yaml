@@ -416,6 +416,15 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m3270_score15.py
+  action: LINKED_TOGO_M3270_SOURCE_DUPLICATE
+  source: https://togomedium.org/medium/M3270; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1408;
+    https://togomedium.org/medium/M180; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187;
+    https://togomedium.org/medium/M190; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197;
+    https://togomedium.org/medium/M401; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=403;
+    https://togomedium.org/medium/M431; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431
+  notes: Linked TOGO M3270 as a source duplicate of DSMZ Medium 559.
 high_metal: true
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_559_TMBS4_medium.yaml
@@ -424,3 +433,9 @@ variant_children:
   name: tmbs4_medium
   notes: Same ingredient and concentration signature; KOMODO record copied from the
     matching DSMZ medium source.
+- path: data/normalized_yaml/bacterial/TOGO_M3270_Tmbs4_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009690
+  name: tmbs4_medium
+  notes: TOGO M3270 imports JCM Medium 1408, a source duplicate of DSMZ Medium 559
+    TMBS4.

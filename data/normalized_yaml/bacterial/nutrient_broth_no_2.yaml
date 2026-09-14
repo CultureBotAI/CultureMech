@@ -5,25 +5,34 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_range:
+  min: 7.3
+  max: 7.7
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Lab-Lemco powder
   concentration:
-    value: '1'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO M2170 / NBRC Medium 1559
+  notes: TOGO M2170 and NBRC Medium 1559 list 10.0 g/L Lab-Lemco powder.
   term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
+    id: FOODON:03302088
+    label: Beef extract
+- preferred_term: Peptone
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: TOGO M2170 / NBRC Medium 1559
+  notes: TOGO M2170 and NBRC Medium 1559 list 10.0 g/L Peptone.
+  term:
+    id: MICRO:0000178
+    label: Peptone
 - preferred_term: Sodium chloride
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  source: TOGO M2170 / NBRC Medium 1559
+  notes: TOGO M2170 and NBRC Medium 1559 list 5.0 g/L Sodium chloride.
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -32,28 +41,42 @@ ingredients:
     label: sodium chloride
 - preferred_term: Agar (if needed)
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Lab-Lemco powder
+  source: TOGO M2170 / NBRC Medium 1559
+  notes: TOGO M2170 and NBRC Medium 1559 list 15.0 g/L Agar if needed for solid medium.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
   concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Peptone
-  concentration:
-    value: '10'
-    unit: G_PER_L
+    value: '1000.0'
+    unit: ML_PER_L
+  source: TOGO M2170 / NBRC Medium 1559
+  notes: TOGO M2170 and NBRC Medium 1559 list 1 L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M2170
   term:
     id: TOGO:M2170
     label: Nutrient broth No.2
-notes: 'Source: https://togomedium.org/medium/M2170
-
-  Original source: NBRC - NBRC_M1559
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1559'
+notes: 'TOGO M2170 imports NBRC Medium 1559 Nutrient broth No. 2: 10 g Lab-Lemco powder,
+  10 g peptone, 5 g sodium chloride, 15 g agar if needed, and 1 L distilled water;
+  pH is 7.5 +/- 0.2.'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.5 +/- 0.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -84,3 +107,16 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nutrient_broths_score15.py
+  action: RESOLVED_TOGO_M2170_NBRC_1559
+  source: https://togomedium.org/medium/M2170; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1559
+  notes: 'TOGO M2170 imports NBRC Medium 1559 Nutrient broth No. 2: 10 g Lab-Lemco
+    powder, 10 g peptone, 5 g sodium chloride, 15 g agar if needed, and 1 L distilled
+    water; pH is 7.5 +/- 0.2.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M2170
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1559

@@ -6,6 +6,11 @@ description: 324. NBRC 323.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: NBRC Medium 323
+  term:
+    id: nbrc.medium:323
+    label: NBRC Medium 323
 ingredients:
 - preferred_term: Solution A*
   concentration:
@@ -17,14 +22,11 @@ ingredients:
     unit: ML_PER_L
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  action: AUTOCLAVE
+  description: Sterilize Solutions A and B separately by autoclaving.
 - step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
-- step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: MIX
+  description: Mix Solution A and Solution B after separate autoclaving.
 curation_history:
 - timestamp: '2026-02-20T00:22:35.949973Z'
   curator: nbrc-import
@@ -62,6 +64,12 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 5 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=323
+  notes: Preserved the recovered NBRC Medium 323 composition table.
 solutions:
 - preferred_term: Solution A
   composition:
@@ -69,6 +77,9 @@ solutions:
     concentration:
       value: '1'
       unit: G_PER_L
+    term:
+      id: FOODON:03315426
+      label: Yeast extract
   - preferred_term: (NH4)2SO4
     concentration:
       value: '0.2'
@@ -84,6 +95,9 @@ solutions:
     concentration:
       value: '0.25'
       unit: G_PER_L
+    term:
+      id: CHEBI:86158
+      label: CaCl2 x 2 H2O
   - preferred_term: KH2PO4
     concentration:
       value: '0.6'
@@ -112,6 +126,9 @@ solutions:
     concentration:
       value: '20'
       unit: G_PER_L
+    term:
+      id: CHEBI:2509
+      label: Agar
   - preferred_term: Distilled water
     concentration:
       value: '500'
@@ -120,5 +137,14 @@ solutions:
       id: CHEBI:15377
       label: water
   name: Solution B
-notes: pH 3.0 - 4.0 Solutions A and B are separately sterilized by autoclaving and
-  mixed.
+notes: 'Source: NBRC Medium 323 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=323
+
+
+  The NBRC table lists equal volumes of Solution A and Solution B, Solution A pH 3.0
+  to 4.0, and separate autoclaving of both solutions before mixing.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=323

@@ -10,22 +10,40 @@ media_term:
   term:
     id: mediadive.medium:J105
     label: HALF STRENGTH HEART INFUSION AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=105'
+notes: TOGO M97 is a snapshot of JCM_M105 and records 1.0 L distilled water, 12.5
+  g/L Heart infusion broth from BD-Difco, and 15 g/L agar.
 ingredients:
-- preferred_term: Heart Infusion Broth
+- preferred_term: Distilled water
   concentration:
-    value: '12.5'
-    unit: G_PER_L
-- preferred_term: Agar
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M97/JCM Medium 105 snapshot
+  notes: TOGO M97/JCM Medium 105 snapshot lists 1.0 L distilled water.
   term:
-    id: CHEBI:2509
-    label: agar
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
+  source: TOGO M97/JCM Medium 105 snapshot
+  notes: TOGO M97/JCM Medium 105 snapshot lists 15 g/L agar.
+  term:
+    id: CHEBI:2509
+    label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+- preferred_term: Heart infusion broth (BD-Difco)
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+  source: TOGO M97/JCM Medium 105 snapshot
+  notes: TOGO M97/JCM Medium 105 snapshot lists 12.5 g/L Heart infusion broth from
+    BD-Difco.
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,4 +70,16 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_togo_water_products_score20.py
+  action: RESOLVED_JCM_TOGO_WATER_PRODUCTS_SCORE20
+  source: https://togomedium.org/medium/M97
+  notes: TOGO M97 is a snapshot of JCM_M105 and records 1.0 L distilled water, 12.5
+    g/L Heart infusion broth from BD-Difco, and 15 g/L agar.
 kg_microbe_match: mediadive.medium:12
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M97

@@ -10,9 +10,186 @@ media_term:
   term:
     id: komodo.medium:485
     label: METALLOSPHAERA medium
-notes: 'Source: KOMODO ModelSEED | ID: 485 | DSMZ Medium: 485 (mediadive.medium:485)
-  | Aerobic: No'
-ingredients: []
+notes: KOMODO MediaInfo 485 lists 14 quantified g/L components for METALLOSPHAERA
+  medium and also lists H2O and H2SO4 without gram or mol amounts.
+ingredients:
+- preferred_term: KH2PO4
+  source: KOMODO MediaInfo 485
+  notes: KOMODO MediaInfo 485 lists 0.28 g/L KH2PO4.
+  concentration:
+    value: '0.28'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: VOSO4 x 2 H2O
+  source: KOMODO MediaInfo 485
+  notes: KOMODO MediaInfo 485 lists 3.00E-5 g/L VOSO4 x 2 H2O.
+  concentration:
+    value: '3.00E-5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:87009
+    label: vanadyl sulfate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:87009
+    label: vanadyl sulfate dihydrate
+- preferred_term: sulfitic ore (e.g. pyrite)
+  source: KOMODO MediaInfo 485
+  notes: KOMODO MediaInfo 485 lists 20.00 g/L sulfitic ore, e.g. pyrite.
+  concentration:
+    value: '20.00'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  source: KOMODO MediaInfo 485
+  notes: KOMODO MediaInfo 485 lists 0.07 g/L CaCl2 x 2 H2O.
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Yeast extract
+  source: KOMODO MediaInfo 485
+  notes: KOMODO MediaInfo 485 lists 1.00 g/L yeast extract.
+  concentration:
+    value: '1.00'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: MnCl2 x 4 H2O
+  source: KOMODO MediaInfo 485
+  notes: KOMODO MediaInfo 485 lists 1.80E-3 g/L MnCl2 x 4 H2O.
+  concentration:
+    value: '1.80E-3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+- preferred_term: CuCl2 x 2 H2O
+  source: KOMODO MediaInfo 485
+  notes: KOMODO MediaInfo 485 lists 5.00E-5 g/L CuCl2 x 2 H2O.
+  concentration:
+    value: '5.00E-5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+- preferred_term: (NH4)2SO4
+  source: KOMODO MediaInfo 485
+  notes: KOMODO MediaInfo 485 lists 1.30 g/L (NH4)2SO4.
+  concentration:
+    value: '1.30'
+    unit: G_PER_L
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: Na2MoO4 x 2 H2O
+  source: KOMODO MediaInfo 485
+  notes: KOMODO MediaInfo 485 lists 3.00E-5 g/L Na2MoO4 x 2 H2O.
+  concentration:
+    value: '3.00E-5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: FeCl3 x 6 H2O
+  source: KOMODO MediaInfo 485
+  notes: KOMODO MediaInfo 485 lists 0.02 g/L FeCl3 x 6 H2O.
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+- preferred_term: MgSO4 x 7 H2O
+  source: KOMODO MediaInfo 485
+  notes: KOMODO MediaInfo 485 lists 0.25 g/L MgSO4 x 7 H2O.
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: H2O
+  source: KOMODO MediaInfo 485
+  notes: KOMODO MediaInfo 485 lists H2O without a gram or mol amount.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: ZnSO4 x 7 H2O
+  source: KOMODO MediaInfo 485
+  notes: KOMODO MediaInfo 485 lists 2.20E-4 g/L ZnSO4 x 7 H2O.
+  concentration:
+    value: '2.20E-4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: Na2B4O7 x 10 H2O
+  source: KOMODO MediaInfo 485
+  notes: KOMODO MediaInfo 485 lists 4.50E-3 g/L Na2B4O7 x 10 H2O.
+  concentration:
+    value: '4.50E-3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131366
+    label: disodium tetraborate decahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131366
+    label: disodium tetraborate decahydrate
+- preferred_term: CoSO4
+  source: KOMODO MediaInfo 485
+  notes: KOMODO MediaInfo 485 lists 1.00E-5 g/L CoSO4.
+  concentration:
+    value: '1.00E-5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53470
+    label: cobalt(2+) sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53470
+    label: cobalt(2+) sulfate
+- preferred_term: H2SO4
+  source: KOMODO MediaInfo 485
+  notes: KOMODO MediaInfo 485 lists H2SO4 without a gram or mol amount.
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
 applications:
 - Microbial cultivation
 curation_history:
@@ -35,5 +212,16 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_485_score35.py
+  action: RESOLVED_KOMODO_485_SCORE35
+  changes: Replaced empty KOMODO 485 composition with live KOMODO MediaInfo data
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=485
+  notes: KOMODO MediaInfo 485 lists 14 quantified g/L components for METALLOSPHAERA
+    medium and also lists H2O and H2SO4 without gram or mol amounts.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=485

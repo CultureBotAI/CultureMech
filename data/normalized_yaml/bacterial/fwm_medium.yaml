@@ -298,6 +298,115 @@ curation_history:
     @ 1 ml/l. Each moved component matched the MediaDive stock by name AND value;
     bulk ingredients sharing a name were left in place (#150).'
   changes: Nested 5 ingredient(s) under 2 solution(s); ingredients 29 -> 24
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_503_fwm_score10.py
+  action: RESOLVED_KOMODO_503_FWM_TOPOLOGY
+  changes: Linked KOMODO Medium 503 exact and H2SO4-adjusted DSM strain wrappers
+  source: KOMODO Medium 503, exact 503 strain wrappers, and KOMODO Medium 503.14
+  notes: Included KOMODO Medium 503.14 as a supplemented pH-adjustment variant because
+    its post-nesting signature is the base FWM signature plus variable H2SO4.
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_5847.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005669
+  name: for_dsm_5847
+  notes: KOMODO Medium 503.1 applies KOMODO Medium 503 to DSM 5847.
+- path: data/normalized_yaml/bacterial/for_dsm_5849.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005670
+  name: for_dsm_5849
+  notes: KOMODO Medium 503.2 applies KOMODO Medium 503 to DSM 5849.
+- path: data/normalized_yaml/bacterial/for_dsm_5651.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005671
+  name: for_dsm_5651
+  notes: KOMODO Medium 503.3 applies KOMODO Medium 503 to DSM 5651.
+- path: data/normalized_yaml/bacterial/for_dsm_6779.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005672
+  name: for_dsm_6779
+  notes: KOMODO Medium 503.4 applies KOMODO Medium 503 to DSM 6779.
+- path: data/normalized_yaml/bacterial/for_dsm_11046.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005673
+  name: for_dsm_11046
+  notes: KOMODO Medium 503.5 applies KOMODO Medium 503 to DSM 11046.
+- path: data/normalized_yaml/bacterial/for_dsm_11261.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005674
+  name: for_dsm_11261
+  notes: KOMODO Medium 503.6 applies KOMODO Medium 503 to DSM 11261.
+- path: data/normalized_yaml/bacterial/for_dsm_11262.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005675
+  name: for_dsm_11262
+  notes: KOMODO Medium 503.7 applies KOMODO Medium 503 to DSM 11262.
+- path: data/normalized_yaml/bacterial/for_dsm_11263_and_dsm_11489.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005676
+  name: for_dsm_11263_and_dsm_11489
+  notes: KOMODO Medium 503.8 applies KOMODO Medium 503 to DSM 11263 and DSM 11489.
+- path: data/normalized_yaml/bacterial/for_dsm_14424.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005677
+  name: for_dsm_14424
+  notes: KOMODO Medium 503.9 applies KOMODO Medium 503 to DSM 14424.
+- path: data/normalized_yaml/bacterial/for_dsm_15206.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005661
+  name: for_dsm_15206
+  notes: KOMODO Medium 503.11 applies KOMODO Medium 503 to DSM 15206.
+- path: data/normalized_yaml/bacterial/for_dsm_15970.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005663
+  name: for_dsm_15970
+  notes: KOMODO Medium 503.12 applies KOMODO Medium 503 to DSM 15970.
+- path: data/normalized_yaml/bacterial/for_dsm_15978.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005664
+  name: for_dsm_15978
+  notes: KOMODO Medium 503.13 applies KOMODO Medium 503 to DSM 15978.
+- path: data/normalized_yaml/bacterial/for_dsm_16082.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:005665
+  name: for_dsm_16082
+  notes: KOMODO Medium 503.14 applies KOMODO Medium 503 to DSM 16082 with variable
+    H2SO4 pH adjustment.
+- path: data/normalized_yaml/bacterial/for_dsm_19636.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005666
+  name: for_dsm_19636
+  notes: KOMODO Medium 503.15 applies KOMODO Medium 503 to DSM 19636.
+- path: data/normalized_yaml/bacterial/for_dsm_21662.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005667
+  name: for_dsm_21662
+  notes: KOMODO Medium 503.16 applies KOMODO Medium 503 to DSM 21662.
+- path: data/normalized_yaml/bacterial/for_dsm_14691.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005668
+  name: for_dsm_14691
+  notes: KOMODO Medium 503.17 applies KOMODO Medium 503 to DSM 14691.
+- path: data/normalized_yaml/bacterial/medium_503_modified_for_dsm_11045.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005658
+  name: medium_503_modified_for_dsm_11045
+  notes: KOMODO Medium 503_11045 applies KOMODO Medium 503 to DSM 11045.
+- path: data/normalized_yaml/bacterial/medium_503_modified_for_dsm_11480.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005659
+  name: medium_503_modified_for_dsm_11480
+  notes: KOMODO Medium 503_11480 applies KOMODO Medium 503 to DSM 11480.
+- path: data/normalized_yaml/bacterial/medium_503_modified_for_dsm_11493.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005660
+  name: medium_503_modified_for_dsm_11493
+  notes: KOMODO Medium 503_11493 applies KOMODO Medium 503 to DSM 11493.
+- path: data/normalized_yaml/bacterial/medium_503_modified_for_dsm_12018.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005662
+  name: medium_503_modified_for_dsm_12018
+  notes: KOMODO Medium 503_12018 applies KOMODO Medium 503 to DSM 12018.
 solutions:
 - preferred_term: Trace element solution SL-10
   composition:
@@ -363,3 +472,5 @@ solutions:
     unit: ML_PER_L
   preparation_notes: Stock prepared in 1000 ml; added at 1 ml per litre of medium.
     Composition and volume from MediaDive (#150).
+data_quality_flags:
+- ingredients_curated

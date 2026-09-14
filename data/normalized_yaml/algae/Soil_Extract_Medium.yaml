@@ -1,68 +1,51 @@
 id: CultureMech:000223
 name: soil_extract_medium
 category: algae
+sources:
+- database: UTEX
+  database_id: soil-extract-medium
+  url: https://utex.org/products/soil-extract-medium
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
-ingredients:
+ingredients: []
+solutions:
 - preferred_term: Bristol Medium
   concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'UTEX lists: amount 960 mL'
+    value: '960'
+    unit: ML_PER_L
+  culturemech_term:
+    id: CultureMech:000037
+    label: Bristol Medium
+  notes: UTEX lists 960 mL prepared Bristol Medium per 1 L final medium.
 - preferred_term: 'Soilwater: GR+ Medium'
   concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'UTEX lists: amount 40 mL of supernatant'
+    value: '40'
+    unit: ML_PER_L
+  culturemech_term:
+    id: CultureMech:000225
+    label: 'Soilwater: GR+ Medium'
+  notes: 'UTEX lists 40 mL filtered Soilwater: GR+ Medium supernatant.'
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: Prepare 1 L of Bristol Medium and discard 40 mL.
 - step_number: 2
-  action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  action: FILTER
+  description: 'Filter prepared Soilwater: GR+ Medium to remove soil particles.'
 - step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
+  action: MIX
+  description: 'Add 40 mL of Soilwater: GR+ Medium supernatant to Bristol Medium.'
 - step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
+  action: AUTOCLAVE
+  description: Cover and autoclave the medium.
 - step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
-notes: 'Soil Extract MediumGeneral purpose freshwater medium suitable for axenic and
-  xenic cultures. Modification of Bristol medium.DirectionsFor 1 L TotalPrepare 1
-  L ofBristol Mediumand thoroughly mix.Discard 40 mL of the Bristol Medium.Add 40
-  mL of previously preparedSoilwater: GR+ Medium(Note: The GR+ should be filtered
-  to remove soil particles].For 1.5% (w/v) agar medium: add 15 g of agar into the
-  flask; do not mix.Cover and autoclave medium.Store at refrigerator temperature.#ComponentAmountStock
-  Solution ConcentrationFinal Concentration1Bristol Medium960 mL2Soilwater: GR+ Medium40
-  mL of supernatant'
+  action: STORE
+  description: Store at refrigerator temperature.
+notes: 'UTEX prepares Soil Extract Medium by replacing 40 mL of a 1 L Bristol Medium
+  batch with 40 mL filtered Soilwater: GR+ Medium supernatant.'
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -101,7 +84,48 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_algae_score45_blends_soils.py
+  action: RESOLVED_SCORE45_ALGAE_GRAPH
+  changes: Resolved score-45 algae recipe graph
+  source: https://utex.org/products/soil-extract-medium
+  notes: 'UTEX prepares Soil Extract Medium by replacing 40 mL of a 1 L Bristol Medium
+    batch with 40 mL filtered Soilwater: GR+ Medium supernatant.'
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_utex_a_bg11_score30.py
+  action: LINKED_UTEX_A_BG11_SCORE30
+  changes: Linked score-30 UTEX Soil Extract + Sodium Metasilicate child
+  notes: Added or refreshed reciprocal parent-child link for algae/soil_extract_sodium_metasilicate_medium.yaml.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_utex_algae_score10.py
+  action: NORMALIZED_UTEX_SOIL_EXTRACT_SOURCE_SCORE10
+  changes: Normalized UTEX Soil Extract Medium provenance
+  source: UTEX:soil-extract-medium; https://utex.org/products/soil-extract-medium
+  notes: Copied the UTEX source identity from references and the original utex-import
+    event into the structured sources slot recognized by review scoring.
 references:
 - reference: UTEX:soil-extract-medium
 - reference: https://utex.org/products/soil-extract-medium
 original_name: Soil Extract Medium
+sterilization:
+  method: AUTOCLAVE
+  pressure: 15
+  duration: 15 minutes
+parent_media:
+  path: data/normalized_yaml/algae/Bristol_Medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:000037
+  name: bristol_medium
+  notes: 'Replaces 40 mL per liter of Bristol Medium with Soilwater: GR+ Medium supernatant.'
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- 'Replaces 40 mL per liter of Bristol Medium with Soilwater: GR+ Medium supernatant.'
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+variant_children:
+- path: data/normalized_yaml/algae/soil_extract_sodium_metasilicate_medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:000222
+  name: soil_extract_sodium_metasilicate_medium
+  notes: Adds 200 uM sodium metasilicate to prepared Soil Extract Medium.

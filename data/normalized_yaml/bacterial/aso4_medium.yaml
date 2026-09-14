@@ -373,6 +373,13 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1166_aso4_ph_score10.py
+  action: RESOLVED_KOMODO_1166_ASO4_TOPOLOGY
+  changes: Reclassified KOMODO Medium 1166 children
+  source: KOMODO Medium 1166 and 1166.1-1166.5
+  notes: Linked the KOMODO 1166 same-pH strain wrappers and the pH 9.5 DSM 22410 child
+    under the KOMODO Medium 1166 ASO4 base.
 variant_children:
 - path: data/normalized_yaml/bacterial/desulfuribacillus_medium_arsenate.yaml
   relationship: SOURCE_DUPLICATE
@@ -381,32 +388,27 @@ variant_children:
   notes: Same ingredient and concentration signature; review as possible duplicate
     source record.
 - path: data/normalized_yaml/bacterial/for_dsm_22071.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003879
   name: for_dsm_22071
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 1166.1 applies ASO4 medium to DSM 22071.
 - path: data/normalized_yaml/bacterial/for_dsm_22410.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: PH_VARIANT
   id: CultureMech:003881
   name: for_dsm_22410
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 1166.3 applies ASO4 medium at pH 9.5 for DSM 22410.
 - path: data/normalized_yaml/bacterial/for_dsm_24176_and_dsm_24629.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003882
   name: for_dsm_24176_and_dsm_24629
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 1166.4 applies ASO4 medium to DSM 24176 and DSM 24629.
 - path: data/normalized_yaml/bacterial/for_dsm_24179.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003883
   name: for_dsm_24179
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 1166.5 applies ASO4 medium to DSM 24179.
 - path: data/normalized_yaml/bacterial/for_dsm_24400.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003880
   name: for_dsm_24400
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 1166.2 applies ASO4 medium to DSM 24400.

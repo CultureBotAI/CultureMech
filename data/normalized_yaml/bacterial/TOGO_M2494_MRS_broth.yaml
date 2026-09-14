@@ -8,14 +8,17 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: MRS broth (Oxoid)
   concentration:
-    value: '1'
-    unit: G_PER_L
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2494
+  notes: TOGO M2494 records one liter of MRS broth (Oxoid) as an opaque product.
 media_term:
   preferred_term: TOGO Medium M2494
   term:
     id: TOGO:M2494
     label: MRS broth
-notes: 'Source: https://togomedium.org/medium/M2494'
+notes: TOGO M2494 records MRS broth from Oxoid cultured at 37 C for 18 h; the source
+  does not disclose the product's internal formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -31,3 +34,20 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MRS broth" to "mrs_broth" for consistent matching
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_togo_mrs_2xyt_score40.py
+  action: RESOLVED_TOGO_MRS_2XYT_SCORE40
+  changes: Resolved score-40 TOGO MRS/2xYT one-liter product row
+  source: https://togomedium.org/medium/M2494
+  notes: TOGO M2494 records MRS broth from Oxoid cultured at 37 C for 18 h; the source
+    does not disclose the product's internal formulation.
+temperature_value: 37.0
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use one liter of MRS broth (Oxoid).
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2494

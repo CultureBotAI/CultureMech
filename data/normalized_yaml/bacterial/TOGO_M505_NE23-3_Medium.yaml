@@ -195,6 +195,12 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_jcm_direct_wrapper_backlinks.py
+  action: ADDED_JCM_DIRECT_WRAPPER_BACKLINKS
+  changes: Added reciprocal variant_children links
+  source: TOGO:M505
+  notes: Mirrored curated JCM direct-wrapper parent_media links on the parent record.
 solutions:
 - preferred_term: Na2S・9H2O solutions
   composition: []
@@ -243,3 +249,9 @@ solutions:
     value: '1'
     unit: G_PER_L
   name: Unknown solution
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M777_Opitutus_Terrae_Medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:010185
+  name: opitutus_terrae_medium
+  notes: Supplements Medium 504 with 0.72 g/L glucose.

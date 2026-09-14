@@ -6,21 +6,20 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: sea salts (Sigma)
+- preferred_term: Sea salts (Sigma)
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Complex component'
+  source: JCM Medium 1058
+  notes: JCM Medium 1058 supplements Medium 574 with 10.0 g/L sea salts (Sigma).
 media_term:
   preferred_term: TOGO Medium M1125
   term:
     id: TOGO:M1125
     label: DB Characterization Medium NO.2 With 1% Sea Salts
-notes: 'Source: https://togomedium.org/medium/M1125
-
-  Original source: JCM - JCM_M1058
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1058'
+notes: 'TOGO M1125 mirrors JCM Medium 1058: use JCM Medium 574 DB Characterization
+  Medium No. 2 supplemented with 10.0 g/L sea salts (Sigma).'
+salinity: saltwater
 applications:
 - Microbial cultivation
 curation_history:
@@ -49,11 +48,49 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-05T00:00:00-07:00'
+  curator: repair_togo_jcm_cross_references.py
+  action: RESOLVED_JCM_CROSS_REFERENCE
+  changes: Resolved imported JCM cross-reference as a typed parent-medium variant
+  source: https://togomedium.org/medium/M1125; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1058;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=574
+  notes: JCM Medium 1058 prepares DB Characterization Medium No. 2 with 1% sea salts
+    by supplementing JCM Medium 574 with 10 g/L Sigma sea salts.
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_commercial_score20.py
+  action: RESOLVED_TOGO_COMMERCIAL_SCORE20_GRAPH
+  source: https://togomedium.org/medium/M1125; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1058;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=574
+  notes: 'TOGO M1125 mirrors JCM Medium 1058: use JCM Medium 574 DB Characterization
+    Medium No. 2 supplemented with 10.0 g/L sea salts (Sigma).'
 solutions:
-- preferred_term: DB CHARACTERIZATION MEDIUM NO. 2 (see Medium [M578])
-  composition: []
-  notes: Cross-reference to Medium M578
+- preferred_term: DB Characterization Medium NO. 2
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '1000'
+    unit: ML_PER_L
+  notes: JCM Medium 1058 uses JCM Medium 574 as the prepared base medium.
+  culturemech_term:
+    id: CultureMech:009974
+    label: DB Characterization Medium NO. 2
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare DB Characterization Medium No. 2 from JCM Medium 574 and supplement
+    it with 10.0 g/L sea salts (Sigma).
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M578_DB_Characterization_Medium_NO._2.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:009974
+  name: db_characterization_medium_no_2
+  notes: Supplements JCM Medium 574 with 10.0 g/L sea salts (Sigma).
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Supplements JCM Medium 574 with 10.0 g/L sea salts (Sigma).
+references:
+- reference: https://togomedium.org/medium/M1125
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1058
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=574
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients

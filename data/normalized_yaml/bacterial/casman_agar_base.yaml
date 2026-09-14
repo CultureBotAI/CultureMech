@@ -2,6 +2,7 @@ id: CultureMech:005647
 name: casman_agar_base
 original_name: Casman-Agar-Base
 category: bacterial
+record_kind: SOLUTION
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID

@@ -201,12 +201,42 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_17935.yaml
-  relationship: SOURCE_DUPLICATE
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1129_phototrophic_topology_score10.py
+  action: RESOLVED_KOMODO_1129_PHOTOTROPHIC_TOPOLOGY
+  changes: Promoted KOMODO Medium 1129 to the phototrophic family parent
+  source: KOMODO Medium 1129.1-1129.5 and MediaDive Medium 1129
+  notes: Moved the family root from strain-specific KOMODO Medium 1129.1 to base KOMODO
+    Medium 1129 and reclassified DSM-specific submedia as strain-specific variants.
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_17935.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003833
   name: for_dsm_17935
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; reviewed as duplicate phototrophic
-  medium source record.
+  notes: KOMODO Medium 1129.1 applies PHOTOTROPHIC MEDIUM at pH 6.5 for DSM 17935.
+- path: data/normalized_yaml/bacterial/for_dsm_17936.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:003834
+  name: for_dsm_17936
+  notes: KOMODO Medium 1129.2 applies PHOTOTROPHIC MEDIUM at pH 6.8 for DSM 17936.
+- path: data/normalized_yaml/bacterial/for_dsm_18632.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:003835
+  name: for_dsm_18632
+  notes: KOMODO Medium 1129.3 applies PHOTOTROPHIC MEDIUM at pH 7.2 for DSM 18632.
+- path: data/normalized_yaml/bacterial/for_dsm_18805.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:003836
+  name: for_dsm_18805
+  notes: KOMODO Medium 1129.4 applies PHOTOTROPHIC MEDIUM at pH 7.2 for DSM 18805.
+- path: data/normalized_yaml/bacterial/for_dsm_18858.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:003837
+  name: for_dsm_18858
+  notes: KOMODO Medium 1129.5 applies PHOTOTROPHIC MEDIUM at pH 6.8 for DSM 18858.
+- path: data/normalized_yaml/specialized/phototrophic_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:015333
+  name: phototrophic_medium
+  notes: MediaDive Medium 1129 exactly matches the KOMODO Medium 1129 PHOTOTROPHIC
+    MEDIUM base.

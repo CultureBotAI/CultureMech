@@ -11,34 +11,87 @@ media_term:
   term:
     id: mediadive.medium:J666
     label: YM BROTH
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=666'
+notes: JCM Medium 666 YM Broth lists 10.0 g Glucose, 5.0 g Peptone, 3.0 g Yeast extract,
+  3.0 g Malt extract, and 1.0 L Distilled water, then adjusts pH to 6.2.
 ingredients:
 - preferred_term: Glucose
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: MediaDive J666 / JCM Medium 666
+  notes: MediaDive J666 / JCM Medium 666 lists 10.0 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
-  concentration:
-    value: '10'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  nutritional_roles:
+  - CARBON_SOURCE
 - preferred_term: Peptone
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
+  source: MediaDive J666 / JCM Medium 666
+  notes: MediaDive J666 / JCM Medium 666 lists 5.0 g/L Peptone.
+  term:
+    id: MICRO:0000178
+    label: peptone
+  nutritional_roles:
+  - NITROGEN_SOURCE
 - preferred_term: Yeast extract
   concentration:
-    value: '3'
+    value: '3.0'
     unit: G_PER_L
+  source: MediaDive J666 / JCM Medium 666
+  notes: MediaDive J666 / JCM Medium 666 lists 3.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - NITROGEN_SOURCE
 - preferred_term: Malt extract
   concentration:
-    value: '3'
+    value: '3.0'
     unit: G_PER_L
+  source: MediaDive J666 / JCM Medium 666
+  notes: MediaDive J666 / JCM Medium 666 lists 3.0 g/L Malt extract.
+  term:
+    id: FOODON:03301056
+    label: malt extract
+  nutritional_roles:
+  - CARBON_SOURCE
+  - NITROGEN_SOURCE
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: MediaDive J666 / JCM Medium 666
+  notes: MediaDive J666 / JCM Medium 666 lists 1.0 L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Dissolve 10.0 g Glucose, 5.0 g Peptone, 3.0 g Yeast extract, and 3.0
+    g Malt extract in 1.0 L distilled water.
+- step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.2.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: JCM's default instruction is to autoclave media at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -64,3 +117,22 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m684_score15.py
+  action: RESOLVED_JCM_666_YM_BROTH
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=666; https://mediadive.dsmz.de/medium/J666
+  notes: Restored the JCM Medium 666 recipe with 1.0 L Distilled water, grounded the
+    disclosed ingredients, added JCM's default autoclaving instruction, and linked
+    TOGO M684 as a JCM source duplicate.
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M684_YM_Broth.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010089
+  name: ym_broth
+  notes: TOGO M684 imports the same JCM Medium 666 YM Broth formulation.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=666
+- reference: https://mediadive.dsmz.de/medium/J666

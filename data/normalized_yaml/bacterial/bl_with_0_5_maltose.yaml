@@ -8,10 +8,10 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Maltose
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  source: JCM Medium 418
+  notes: JCM Medium 418 adds 5.0 g maltose to 1.0 L BL Agar.
   term:
     id: CHEBI:18167
     label: alpha-maltose
@@ -23,11 +23,7 @@ media_term:
   term:
     id: TOGO:M416
     label: BL With 0.5% Maltose
-notes: 'Source: https://togomedium.org/medium/M416
-
-  Original source: JCM - JCM_M418
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=418'
+notes: 'TOGO M416 mirrors JCM Medium 418: 1.0 L BL Agar with 5.0 g/L maltose.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -70,12 +66,47 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_official_simple_score20.py
+  action: RESOLVED_OFFICIAL_SIMPLE_SCORE20
+  source: https://togomedium.org/medium/M416; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=418;
+    https://togomedium.org/medium/M6; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=13
+  notes: 'TOGO M416 mirrors JCM Medium 418: 1.0 L BL Agar with 5.0 g/L maltose.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m6_score15.py
+  action: RELINKED_TOGO_M416_TO_JCM_13
+  source: https://togomedium.org/medium/M416; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=418;
+    https://togomedium.org/medium/M6; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=13
+  notes: Relinked this BL With 0.5% Maltose wrapper to the canonical JCM J13 BL Agar
+    parent.
 solutions:
-- preferred_term: BL AGAR (GLUCOSE BLOOD LIVER AGAR) (see Medium [M6])
-  composition: []
-  notes: Cross-reference to Medium M6
+- preferred_term: BL Agar
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '1000'
+    unit: ML_PER_L
+  notes: JCM Medium 418 uses 1.0 L BL Agar from JCM Medium 13.
+  culturemech_term:
+    id: CultureMech:002499
+    label: BL Agar (Glucose Blood Liver Agar)
 kg_microbe_match: mediadive.medium:J293
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use 1.0 L BL Agar with 5.0 g/L maltose.
+parent_media:
+  path: data/normalized_yaml/bacterial/bl_agar_glucose_blood_liver_agar.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:002499
+  name: bl_agar_glucose_blood_liver_agar
+  notes: Supplements 1.0 L BL Agar with 5.0 g/L maltose.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Supplements 1.0 L BL Agar with 5.0 g/L maltose.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M416
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=418
+- reference: https://togomedium.org/medium/M6
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=13

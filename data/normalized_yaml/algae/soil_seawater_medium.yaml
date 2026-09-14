@@ -4,58 +4,61 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: Soil+Seawater Medium
+  term:
+    id: UTEX:soil-plus-seawater-medium
+    label: Soil+Seawater Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
+notes: UTEX prepares this 30 ppt marine soil medium by steaming Green House Soil with
+  Pasteurized Seawater.
 ingredients:
 - preferred_term: Green House Soil
   concentration:
     value: variable
     unit: VARIABLE
-  notes: 'UTEX lists: amount 1 tsp/200 mL of Seawater'
+  notes: UTEX lists 1 tsp Green House Soil per 200 mL seawater.
 - preferred_term: Pasteurized Seawater
   concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'UTEX lists: amount 200 mL'
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: ENVO:00002149
+    label: sea water
+  notes: Converted from 200 mL Pasteurized Seawater per 200 mL final medium.
+  physicochemical_roles:
+  - OSMOTIC_AGENT
+- preferred_term: CaCO3
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
+  supplier_catalog:
+    supplier_name: Fisher
+    catalog_number: C 64
+  notes: Optional in the UTEX Soil+Seawater Medium recipe; converted from 1 mg/200
+    mL.
+  physicochemical_roles:
+  - BUFFER
+solutions: []
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: Combine Green House Soil and Pasteurized Seawater.
 - step_number: 2
-  action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  action: HEAT
+  description: Cover and steam for two consecutive days for 3 hours on each day.
 - step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
-- step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
-- step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
-salinity: marine (natural seawater or artificial seawater)
+  action: STORE
+  description: Refrigerate for at least 24 hours, then bring to room temperature before
+    use.
+salinity: saltwater
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -98,7 +101,68 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_algal_blends.py
+  action: RESOLVED_UTEX_ALGAL_BLEND_GRAPH
+  changes: Grounded UTEX algal prepared-media and stock-solution components
+  source: https://utex.org/products/soil-plus-seawater-medium
+  notes: UTEX prepares this 30 ppt marine soil medium by steaming Green House Soil
+    with Pasteurized Seawater.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_algal_blends.py
+  action: LINKED_UTEX_ALGAL_BLEND_CHILDREN
+  changes: Linked UTEX algal child media to prepared-media parents
+  notes: Added or refreshed reciprocal parent-child link for algae/5_3_soil_seawater_agar_medium.yaml.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_chev_soil_variants_score35.py
+  action: LINKED_UTEX_CHEV_SOIL_VARIANTS
+  changes: Linked UTEX score-35 CHEV and Soil+Seawater child media
+  notes: Added or refreshed reciprocal parent-child link for algae/1_2_soil_seawater_medium.yaml.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_chev_soil_variants_score35.py
+  action: LINKED_UTEX_CHEV_SOIL_VARIANTS
+  changes: Linked UTEX score-35 CHEV and Soil+Seawater child media
+  notes: Added or refreshed reciprocal parent-child link for algae/1_3_soil_seawater_medium.yaml.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_chev_soil_variants_score35.py
+  action: LINKED_UTEX_CHEV_SOIL_VARIANTS
+  changes: Linked UTEX score-35 CHEV and Soil+Seawater child media
+  notes: Added or refreshed reciprocal parent-child link for algae/1_4_soil_seawater_medium.yaml.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_chev_soil_variants_score35.py
+  action: LINKED_UTEX_CHEV_SOIL_VARIANTS
+  changes: Linked UTEX score-35 CHEV and Soil+Seawater child media
+  notes: Added or refreshed reciprocal parent-child link for algae/1_5_soil_seawater_medium.yaml.
 references:
 - reference: UTEX:soil-plus-seawater-medium
 - reference: https://utex.org/products/soil-plus-seawater-medium
 original_name: Soil + Seawater Medium
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+variant_children:
+- path: data/normalized_yaml/algae/1_2_soil_seawater_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000005
+  name: 1_2_soil_seawater_medium
+  notes: Dilutes the seawater phase 1:1 with dH2O for 15 ppt salinity.
+- path: data/normalized_yaml/algae/1_3_soil_seawater_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000007
+  name: 1_3_soil_seawater_medium
+  notes: Dilutes the seawater phase 1:2 with dH2O for 10 ppt salinity.
+- path: data/normalized_yaml/algae/1_4_soil_seawater_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000009
+  name: 1_4_soil_seawater_medium
+  notes: Dilutes the seawater phase 1:3 with dH2O for 7.5 ppt salinity.
+- path: data/normalized_yaml/algae/1_5_soil_seawater_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000011
+  name: 1_5_soil_seawater_medium
+  notes: Dilutes the seawater phase 1:4 with dH2O for 6 ppt salinity.
+- path: data/normalized_yaml/algae/5_3_soil_seawater_agar_medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:000019
+  name: 5_3_soil_seawater_agar_medium
+  notes: Adds 15 g/L natural sea-salt and 15 g/L agar to prepared Soil+Seawater Medium.

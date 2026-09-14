@@ -4,70 +4,140 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: Volvox-Dextrose Medium
+  term:
+    id: UTEX:volvox-dextrose-medium
+    label: Volvox-Dextrose Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
+notes: UTEX prepares Volvox-Dextrose Medium as a glucose-amended Volvox Medium recipe
+  with Vitamin B12 and Biotin Vitamin Solution added after autoclaving.
 ingredients:
-- preferred_term: Volvox Medium
-  concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'UTEX lists: amount 1 L'
 - preferred_term: Glucose
   concentration:
     value: '0.06'
     unit: MOLAR
-  notes: 'UTEX lists: amount 10 g/L; final 0.06 M'
-  supplier_catalog:
-    supplier_name: Bacto
-    catalog_number: -dextrose or Sigma D 9634
+  term:
+    id: CHEBI:17234
+    label: glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: glucose
+  notes: UTEX adds 10 g/L glucose after all other Volvox Medium stock solutions, with
+    BACTO-dextrose or Sigma D 9634 as the source.
+  nutritional_roles:
+  - CARBON_SOURCE
+solutions:
+- preferred_term: Volvox Medium
+  concentration:
+    value: 1 L per 1 L final
+    unit: VARIABLE
+  culturemech_term:
+    id: CultureMech:000238
+    label: Volvox Medium
+  notes: UTEX prepares the recipe as Volvox Medium modified with 10 g/L glucose added
+    after all other stock solutions.
 - preferred_term: Vitamin B12
   concentration:
     value: '1'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 1 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX prepares the Vitamin B12 stock in 200 mL HEPES buffer.
+  - preferred_term: HEPES buffer pH 7.8
+    concentration:
+      value: '12'
+      unit: G_PER_L
+    term:
+      id: CHEBI:42334
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:42334
+      label: HEPES
+    notes: Converted from 2.4 g/200 mL in the UTEX Vitamin B12 stock.
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.135'
+      unit: G_PER_L
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+    notes: Converted from 0.027 g/200 mL in the UTEX Vitamin B12 stock.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  notes: UTEX adds 1 mL Vitamin B12 stock per liter.
 - preferred_term: Biotin Vitamin Solution
   concentration:
     value: '1'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 1 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX prepares the biotin stock in 200 mL HEPES buffer.
+  - preferred_term: HEPES buffer pH 7.8
+    concentration:
+      value: '12'
+      unit: G_PER_L
+    term:
+      id: CHEBI:42334
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:42334
+      label: HEPES
+    notes: Converted from 2.4 g/200 mL in the UTEX biotin stock.
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Biotin
+    concentration:
+      value: '0.025'
+      unit: G_PER_L
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+    notes: Converted from 0.005 g/200 mL in the UTEX biotin stock.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  notes: UTEX adds 1 mL Biotin Vitamin Solution per liter.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: Prepare Volvox Medium, but add 10 g glucose after all other stock solutions
+    have been added.
 - step_number: 2
   action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  description: Bring the total volume to 1 L with dH2O.
 - step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
+  action: AUTOCLAVE
+  description: Cover and autoclave the medium.
 - step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
-- step_number: 5
   action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
+  description: Allow the medium to cool, then add sterile vitamins.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -106,7 +176,20 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_volvox_p49_score35.py
+  action: RESOLVED_UTEX_VOLVOX_P49_SCORE35
+  changes: Grounded score-35 UTEX Volvox and P49-family components
+  source: https://utex.org/products/volvox-dextrose-medium
+  notes: UTEX prepares Volvox-Dextrose Medium as a glucose-amended Volvox Medium recipe
+    with Vitamin B12 and Biotin Vitamin Solution added after autoclaving.
 references:
 - reference: UTEX:volvox-dextrose-medium
 - reference: https://utex.org/products/volvox-dextrose-medium
+- reference: https://utex.org/products/volvox-medium
+- reference: https://utex.org/products/vitamin-b-12
+- reference: https://utex.org/products/biotin-vitamin-solution
 original_name: Volvox-Dextrose Medium
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

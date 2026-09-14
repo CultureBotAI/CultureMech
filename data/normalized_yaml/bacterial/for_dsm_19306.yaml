@@ -400,16 +400,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-variant_children:
-- path: data/normalized_yaml/bacterial/deferribacter_autotrophicus_medium.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:002167
-  name: deferribacter_autotrophicus_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/tepidibacter_medium.yaml
-  relationship: SOURCE_DUPLICATE
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_985_tepidibacter_score10.py
+  action: RESOLVED_KOMODO_985_TEPIDIBACTER_TOPOLOGY
+  changes: Linked under KOMODO Medium 985
+  source: KOMODO Medium 985.1
+  notes: KOMODO Medium 985.1 applies TEPIDIBACTER medium to DSM 19306.
+parent_media:
+  path: data/normalized_yaml/bacterial/tepidibacter_medium.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006947
   name: tepidibacter_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 985 is the TEPIDIBACTER base for this record.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
+variant_modifications:
+- KOMODO Medium 985.1 applies TEPIDIBACTER medium to DSM 19306.
+data_quality_flags:
+- ingredients_curated

@@ -6,43 +6,57 @@ term:
 composition:
 - preferred_term: Peptone
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
+  source: MediaDive solution 3730 / JCM Medium 100
+  notes: MediaDive solution 3730 / JCM Medium 100 lists 5.0 g/L Peptone.
   term:
-    id: mediadive.compound:1
+    id: MICRO:0000178
     label: Peptone
+  nutritional_roles:
+  - PROTEIN_SOURCE
 - preferred_term: Beef extract
   concentration:
-    value: '3'
+    value: '3.0'
     unit: G_PER_L
+  source: MediaDive solution 3730 / JCM Medium 100
+  notes: MediaDive solution 3730 / JCM Medium 100 lists 3.0 g/L Beef extract.
   term:
-    id: mediadive.compound:85
+    id: FOODON:03302088
     label: Beef extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
 - preferred_term: Agar
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
+  source: MediaDive solution 3730 / JCM Medium 100
+  notes: MediaDive solution 3730 / JCM Medium 100 lists 15.0 g/L Agar.
   term:
-    id: mediadive.compound:3
-    label: Agar
-  chebi_term:
     id: CHEBI:2509
     label: agar
-    confidence: 0.7
-    match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 - preferred_term: Distilled water
   concentration:
-    value: '1000'
-    unit: PERCENT_V_V
+    value: '1000.0'
+    unit: ML_PER_L
+  source: MediaDive solution 3730 / JCM Medium 100
+  notes: MediaDive solution 3730 / JCM Medium 100 lists 1000.0 ml/L Distilled water.
   term:
-    id: mediadive.compound:4
-    label: Distilled water
-  chebi_term:
     id: CHEBI:15377
     label: water
-    confidence: 0.7
-    match_type: corpus_consensus
-preparation_notes: After autoclaving, adjust pH to 10.0 with sterile 10% Na2CO3 solution.
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+preparation_notes: Mix peptone, beef extract, agar, and water, autoclave, then adjust
+  pH to 10.0 with sterile 10% Na2CO3 solution.
+notes: MediaDive solution 3730 is the complete basal main solution for JCM Medium
+  100 / Alkaline Nutrient Agar; its MediaDive step describes the final sterile Na2CO3
+  pH adjustment.
 curation_history:
 - timestamp: '2026-03-13T06:20:27.777271Z'
   curator: culturemech-id-assigner-v1.0
@@ -76,11 +90,16 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '2 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m92_alkaline_nutrient_score15.py
+  action: RESOLVED_MEDIADIVE_3730_MAIN_SOL_J100
+  source: https://mediadive.dsmz.de/medium/J100
+  notes: Corrected the Distilled water row from a false percent-volume value to source
+    ml/L units, grounded peptone and beef extract, and removed the placeholder top-level
+    ingredient.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/medium/J100

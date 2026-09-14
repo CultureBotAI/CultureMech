@@ -179,3 +179,16 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_atcc_score40.py
+  action: LINKED_ATCC_SCORE40_DUPLICATES
+  changes: Linked score-40 TOGO/ATCC source duplicates
+  notes: Added or refreshed bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml as
+    a child of bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml.
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009008
+  name: brain_heart_infusion_agar
+  notes: TOGO M2425 cites ATCC Medium 44 and uses the same Brain Heart Infusion Agar
+    formulation as TOGO M21.

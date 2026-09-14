@@ -120,3 +120,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_670_ms_ph_score10.py
+  action: RESOLVED_KOMODO_670_MS_PH_VARIANTS
+  changes: Linked as a KOMODO 670 pH variant
+  source: KOMODO Medium 670.4
+  notes: Marked KOMODO Medium 670.4 as a pH 3 strain-specific MS-MEDIUM variant.
+data_quality_flags:
+- ingredients_curated
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:006265
+  name: ms_medium
+  notes: KOMODO Medium 670 is the pH 2.2 MS-MEDIUM base for KOMODO Medium 670.4.
+variant_relationship: PH_VARIANT
+variant_modifications:
+- KOMODO Medium 670.4 specifies pH 3 for this DSM-specific MS-MEDIUM variant.

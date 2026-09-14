@@ -10,28 +10,37 @@ media_term:
   term:
     id: mediadive.medium:J877
     label: R AGAR WITH 10% NaCl
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=877'
+notes: TOGO Medium M916 is a source-equivalent JCM Medium 877 snapshot that defines
+  R Agar with 10% NaCl as 1 L of JCM Medium 26 R Agar plus 100 g/L NaCl; the original
+  JCM Medium 877 endpoint now returns Nothing found.
 ingredients:
-- preferred_term: R agar
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
 - preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
   concentration:
     value: '100'
     unit: G_PER_L
+  notes: Adds 100 g/L NaCl to JCM Medium 26 R Agar.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+solutions:
+- preferred_term: R agar
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  notes: Adds 100 g/L NaCl to JCM Medium 26 R Agar.
+  culturemech_term:
+    id: CultureMech:002627
+    label: R Agar
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adds 100 g/L NaCl to JCM Medium 26 R Agar.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,4 +67,28 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_r_agar_salinity_score20.py
+  action: RESOLVED_R_AGAR_SALINITY_SCORE20
+  changes: Resolved score-20 R Agar salinity variant
+  source: https://togomedium.org/medium/M916; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=877;
+    https://togomedium.org/medium/M19; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=26
+  notes: Adds 100 g/L NaCl to JCM Medium 26 R Agar.
 kg_microbe_match: mediadive.medium:101
+parent_media:
+  path: data/normalized_yaml/bacterial/r_agar.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:002627
+  name: r_agar
+  notes: Adds 100 g/L NaCl to JCM Medium 26 R Agar.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- Adds 100 g/L NaCl to JCM Medium 26 R Agar.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M916
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=877
+- reference: https://togomedium.org/medium/M19
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=26

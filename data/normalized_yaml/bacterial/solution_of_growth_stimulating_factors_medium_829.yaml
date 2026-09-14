@@ -6,27 +6,126 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.0
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2027 | DSMZ Medium: 2027
-  (mediadive.medium:2027) | Aerobic: No | SubMedium: Yes'
 media_term:
   preferred_term: KOMODO Medium 2027
   term:
     id: komodo.medium:2027
     label: Solution of growth-stimulating factors (medium 829)
+notes: KOMODO Medium 2027 is the Growth-stimulating factors stock from DSMZ Medium
+  829. DSMZ Medium 829 defines the stock with 5.00 g each of Isobutyric acid, Valeric
+  acid, 2-Methylbutyric acid, and 3-Methylbutyric acid, 2.00 g Caproic acid, 6.00
+  g Succinic acid, and 1000.00 ml Distilled water, adjusted to pH 9.0 with NaOH and
+  autoclaved under 100% N2 gas. MediaDive imports the same stock as mediadive.solution:1680.
 ingredients:
+- preferred_term: Isobutyric acid
+  concentration:
+    value: '5.00'
+    unit: G_PER_L
+  source: DSMZ Medium 829 Growth-stimulating factors
+  notes: DSMZ Medium 829 Growth-stimulating factors lists 5.00 g/L Isobutyric acid.
+  term:
+    id: CHEBI:16135
+    label: isobutyric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16135
+    label: isobutyric acid
+- preferred_term: Valeric acid
+  concentration:
+    value: '5.00'
+    unit: G_PER_L
+  source: DSMZ Medium 829 Growth-stimulating factors
+  notes: DSMZ Medium 829 Growth-stimulating factors lists 5.00 g/L Valeric acid.
+  term:
+    id: CHEBI:17418
+    label: valeric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17418
+    label: valeric acid
+- preferred_term: 2-Methylbutyric acid
+  concentration:
+    value: '5.00'
+    unit: G_PER_L
+  source: DSMZ Medium 829 Growth-stimulating factors
+  notes: DSMZ Medium 829 Growth-stimulating factors lists 5.00 g/L 2-Methylbutyric
+    acid.
+  term:
+    id: CHEBI:37070
+    label: 2-methylbutyric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37070
+    label: 2-methylbutyric acid
+- preferred_term: 3-Methylbutyric acid
+  concentration:
+    value: '5.00'
+    unit: G_PER_L
+  source: DSMZ Medium 829 Growth-stimulating factors
+  notes: DSMZ Medium 829 Growth-stimulating factors lists 5.00 g/L 3-Methylbutyric
+    acid.
+  term:
+    id: CHEBI:28484
+    label: isovaleric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28484
+    label: isovaleric acid
+- preferred_term: Caproic acid
+  concentration:
+    value: '2.00'
+    unit: G_PER_L
+  source: DSMZ Medium 829 Growth-stimulating factors
+  notes: DSMZ Medium 829 Growth-stimulating factors lists 2.00 g/L Caproic acid.
+  term:
+    id: CHEBI:30776
+    label: hexanoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30776
+    label: hexanoic acid
+- preferred_term: Succinic acid
+  concentration:
+    value: '6.00'
+    unit: G_PER_L
+  source: DSMZ Medium 829 Growth-stimulating factors
+  notes: DSMZ Medium 829 Growth-stimulating factors lists 6.00 g/L Succinic acid.
+  term:
+    id: CHEBI:15741
+    label: succinic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15741
+    label: succinic acid
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.00'
+    unit: ML_PER_L
+  source: DSMZ Medium 829 Growth-stimulating factors
+  notes: DSMZ Medium 829 Growth-stimulating factors lists 1000.00 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: NaOH
-  notes: Extracted from recipe notes (pH buffer)
-  data_quality_flags:
-  - extracted_from_notes
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32145
-    label: sodium hydroxide
+  source: DSMZ Medium 829 Growth-stimulating factors
+  notes: DSMZ Medium 829 Growth-stimulating factors adjusts the stock to pH 9 with
+    NaOH; the exact amount is variable.
   term:
     id: CHEBI:32145
     label: sodium hydroxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve the organic acids in distilled water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust the growth-stimulating factors stock to pH 9.0 with NaOH.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave the pH-adjusted stock under 100% N2 gas.
 applications:
 - Microbial cultivation
 curation_history:
@@ -61,3 +160,20 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_komodo_dsmz_submedia_score15.py
+  action: RESOLVED_KOMODO_DSMZ_SUBMEDIA_SCORE15
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf; https://mediadive.dsmz.de/medium/829
+  notes: KOMODO Medium 2027 is the Growth-stimulating factors stock from DSMZ Medium
+    829. DSMZ Medium 829 defines the stock with 5.00 g each of Isobutyric acid, Valeric
+    acid, 2-Methylbutyric acid, and 3-Methylbutyric acid, 2.00 g Caproic acid, 6.00
+    g Succinic acid, and 1000.00 ml Distilled water, adjusted to pH 9.0 with NaOH
+    and autoclaved under 100% N2 gas. MediaDive imports the same stock as mediadive.solution:1680.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf
+- reference: https://mediadive.dsmz.de/medium/829

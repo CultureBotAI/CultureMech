@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T10:14:59.023843+00:00",
+  "generated": "2026-09-14T18:56:20.443250+00:00",
   "category": "archaea",
   "count": 743,
   "recipes": {
@@ -61,10 +61,11 @@
     "CultureMech:015832": {
       "name": "natronoarchaea_medium_ii",
       "filename": "JCM_J1334_NATRONOARCHAEA_MEDIUM_II.yaml",
-      "ingredient_count": 13,
+      "ingredient_count": 0,
       "id": "CultureMech:015832",
       "source_id": "jcm.grmd:1334",
       "source": "unknown",
+      "solution_count": 8,
       "categories": [
         "archaea"
       ]
@@ -116,10 +117,11 @@
     "CultureMech:015863": {
       "name": "modified_methanobacterium_medium",
       "filename": "JCM_J1427_MODIFIED_METHANOBACTERIUM_MEDIUM.yaml",
-      "ingredient_count": 19,
+      "ingredient_count": 12,
       "id": "CultureMech:015863",
       "source_id": "jcm.grmd:1427",
       "source": "unknown",
+      "solution_count": 7,
       "categories": [
         "archaea"
       ]
@@ -607,7 +609,7 @@
     "CultureMech:004074": {
       "name": "methanobacterium_thermoautotrophicum_medium",
       "filename": "KOMODO_131_METHANOBACTERIUM_THERMOAUTOTROPHICUM_MEDIUM.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 33,
       "id": "CultureMech:004074",
       "source_id": "komodo.medium:131",
       "source": "KOMODO",
@@ -708,7 +710,7 @@
     "CultureMech:004208": {
       "name": "desulfurococcus_medium",
       "filename": "KOMODO_184_DESULFUROCOCCUS_medium.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 20,
       "id": "CultureMech:004208",
       "source_id": "komodo.medium:184",
       "source": "KOMODO",
@@ -808,7 +810,7 @@
     "CultureMech:004832": {
       "name": "methanosarcina_acetivorans_medium",
       "filename": "KOMODO_304_METHANOSARCINA_ACETIVORANS_medium.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 28,
       "id": "CultureMech:004832",
       "source_id": "komodo.medium:304",
       "source": "KOMODO",
@@ -985,7 +987,7 @@
     "CultureMech:005712": {
       "name": "stygiolobus_medium",
       "filename": "KOMODO_510_STYGIOLOBUS_medium.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 19,
       "id": "CultureMech:005712",
       "source_id": "komodo.medium:510",
       "source": "KOMODO",
@@ -1065,7 +1067,7 @@
     "CultureMech:006366": {
       "name": "picrophilus_medium",
       "filename": "KOMODO_723_PICROPHILUS_medium.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 15,
       "id": "CultureMech:006366",
       "source_id": "komodo.medium:723",
       "source": "KOMODO",
@@ -1564,11 +1566,11 @@
     "CultureMech:007674": {
       "name": "natranaeroarchaeum_medium",
       "filename": "TOGO_M1150_Natranaeroarchaeum_Medium.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 0,
       "id": "CultureMech:007674",
       "source_id": "TOGO:M1150",
       "source": "TOGO",
-      "solution_count": 8,
+      "solution_count": 5,
       "categories": [
         "archaea"
       ]
@@ -1588,11 +1590,11 @@
     "CultureMech:007686": {
       "name": "natronolimnobius_aht32_medium_b",
       "filename": "TOGO_M1162_Natronolimnobius_AHT32_Medium_B.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 2,
       "id": "CultureMech:007686",
       "source_id": "TOGO:M1162",
       "source": "TOGO",
-      "solution_count": 3,
+      "solution_count": 5,
       "categories": [
         "archaea"
       ]
@@ -1636,11 +1638,10 @@
     "CultureMech:007740": {
       "name": "halobacteria_medium_ph_8_0",
       "filename": "TOGO_M1212_Halobacteria_Medium_pH_8.0.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 9,
       "id": "CultureMech:007740",
       "source_id": "TOGO:M1212",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "archaea"
       ]
@@ -1732,11 +1733,11 @@
     "CultureMech:007797": {
       "name": "modified_cellulolytic_haloarchaea_medium",
       "filename": "TOGO_M1265_Modified_Cellulolytic_Haloarchaea_Medium.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 2,
       "id": "CultureMech:007797",
       "source_id": "TOGO:M1265",
       "source": "TOGO",
-      "solution_count": 6,
+      "solution_count": 7,
       "categories": [
         "archaea"
       ]
@@ -1744,11 +1745,11 @@
     "CultureMech:007798": {
       "name": "modified_cellulolytic_haloarchaea_medium",
       "filename": "TOGO_M1266_Modified_Cellulolytic_Haloarchaea_Medium.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 3,
       "id": "CultureMech:007798",
       "source_id": "TOGO:M1266",
       "source": "TOGO",
-      "solution_count": 6,
+      "solution_count": 7,
       "categories": [
         "archaea"
       ]
@@ -3394,7 +3395,7 @@
     "CultureMech:009347": {
       "name": "methanosaeta_thermophila_medium",
       "filename": "TOGO_M279_Methanosaeta_Thermophila_Medium.yaml",
-      "ingredient_count": 8,
+      "ingredient_count": 7,
       "id": "CultureMech:009347",
       "source_id": "TOGO:M279",
       "source": "TOGO",
@@ -3714,7 +3715,7 @@
     "CultureMech:009979": {
       "name": "thermoproteus_medium_b",
       "filename": "TOGO_M583_Thermoproteus_Medium_B.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 5,
       "id": "CultureMech:009979",
       "source_id": "TOGO:M583",
       "source": "TOGO",
@@ -3738,7 +3739,7 @@
     "CultureMech:010044": {
       "name": "thermoproteus_medium_c",
       "filename": "TOGO_M643_Thermoproteus_Medium_C.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 5,
       "id": "CultureMech:010044",
       "source_id": "TOGO:M643",
       "source": "TOGO",
@@ -3821,11 +3822,10 @@
     "CultureMech:010120": {
       "name": "aerobic_sulfolobales_medium_without_sulfur",
       "filename": "TOGO_M713_Aerobic_Sulfolobales_Medium_Without_Sulfur.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 13,
       "id": "CultureMech:010120",
       "source_id": "TOGO:M713",
       "source": "TOGO",
-      "solution_count": 1,
       "categories": [
         "archaea"
       ]
@@ -4109,7 +4109,7 @@
     "CultureMech:010396": {
       "name": "peat_medium_2_for_methanobacteria",
       "filename": "TOGO_M970_Peat_Medium_2_For_Methanobacteria.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 4,
       "id": "CultureMech:010396",
       "source_id": "TOGO:M970",
       "source": "TOGO",
@@ -4399,7 +4399,7 @@
     "CultureMech:006547": {
       "name": "aeropyrum_jxt_medium",
       "filename": "aeropyrum_jxt_medium.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 18,
       "id": "CultureMech:006547",
       "source_id": "komodo.medium:820",
       "source": "KOMODO",
@@ -5645,7 +5645,7 @@
     "CultureMech:005608": {
       "name": "metallosphaera_medium",
       "filename": "metallosphaera_medium.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 16,
       "id": "CultureMech:005608",
       "source_id": "komodo.medium:485",
       "source": "KOMODO",
@@ -6150,7 +6150,7 @@
     "CultureMech:004706": {
       "name": "methanocorpusculum_medium",
       "filename": "methanocorpusculum_medium.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 32,
       "id": "CultureMech:004706",
       "source_id": "komodo.medium:279",
       "source": "KOMODO",
@@ -6363,7 +6363,7 @@
     "CultureMech:005910": {
       "name": "methanogenium_sp_medium",
       "filename": "methanogenium_sp_medium.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 32,
       "id": "CultureMech:005910",
       "source_id": "komodo.medium:532",
       "source": "KOMODO",
@@ -6541,7 +6541,7 @@
     "CultureMech:005015": {
       "name": "methanolobus_ii_medium",
       "filename": "methanolobus_ii_medium.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 41,
       "id": "CultureMech:005015",
       "source_id": "komodo.medium:324",
       "source": "KOMODO",
@@ -6868,7 +6868,7 @@
     "CultureMech:004821": {
       "name": "methanosarcina_acetivorans_medium_replace_trimethylamine_hcl_with_methanol",
       "filename": "methanosarcina_acetivorans_medium_replace_trimethylamine_hcl_with_methanol.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 28,
       "id": "CultureMech:004821",
       "source_id": "komodo.medium:304_replace_Trimethylamine-HCl_with_Methanol",
       "source": "KOMODO",
@@ -6912,7 +6912,7 @@
     "CultureMech:005072": {
       "name": "methanosarcina_frisia_medium",
       "filename": "methanosarcina_frisia_medium.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 41,
       "id": "CultureMech:005072",
       "source_id": "komodo.medium:355",
       "source": "KOMODO",
@@ -7024,7 +7024,7 @@
     "CultureMech:004191": {
       "name": "methanosarcina_thermophilic_medium",
       "filename": "methanosarcina_thermophilic_medium.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 35,
       "id": "CultureMech:004191",
       "source_id": "komodo.medium:164",
       "source": "KOMODO",
@@ -7035,7 +7035,7 @@
     "CultureMech:004190": {
       "name": "methanosarcina_thermophilic_medium_replace_rumen_fluid_clarified_with_sludge_fluid_medium_119",
       "filename": "methanosarcina_thermophilic_medium_replace_rumen_fluid_clarified_with_sludge_fluid_medium_119.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 35,
       "id": "CultureMech:004190",
       "source_id": "komodo.medium:164_replace_Rumen fluid, clarified_with_Sludge fluid (medium 119)",
       "source": "KOMODO",
@@ -8418,7 +8418,7 @@
     "CultureMech:005164": {
       "name": "thermophilic_methanosaeta_medium",
       "filename": "thermophilic_methanosaeta_medium.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 36,
       "id": "CultureMech:005164",
       "source_id": "komodo.medium:387",
       "source": "KOMODO",

@@ -3,31 +3,41 @@ name: enriched_cytophaga_agar
 original_name: Enriched Cytophaga Agar
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
+ph_range:
+  min: 7.2
+  max: 7.4
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Bacto Tryptone (Difco)
   concentration:
-    value: '1'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
+  source: TOGO M1540 / NBRC Medium 332
+  notes: NBRC Medium 332 lists 2 g/L Bacto Tryptone (Difco); this commercial peptone
+    product is retained as an opaque complex component.
+- preferred_term: Beef extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: TOGO M1540 / NBRC Medium 332
+  notes: NBRC Medium 332 lists 0.5 g/L Beef extract; this biological extract is retained
+    as an opaque complex component.
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M1540 / NBRC Medium 332
+  notes: TOGO M1540 / NBRC Medium 332 lists 0.5 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Sodium acetate
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Defined component, Organic compound'
+  source: TOGO M1540 / NBRC Medium 332
+  notes: TOGO M1540 / NBRC Medium 332 lists 0.2 g/L Sodium acetate.
   term:
     id: CHEBI:32954
     label: sodium acetate
@@ -36,29 +46,37 @@ ingredients:
     label: sodium acetate
 - preferred_term: Agar (if needed)
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Bacto Tryptone (Difco)
+  source: TOGO M1540 / NBRC Medium 332
+  notes: TOGO M1540 / NBRC Medium 332 lists 15.0 g/L Agar (if needed).
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Distilled water
   concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Beef extract
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+    value: '1.0'
+    unit: L
+  source: TOGO M1540 / NBRC Medium 332
+  notes: NBRC Medium 332 lists 1 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M1540
   term:
     id: TOGO:M1540
     label: Enriched Cytophaga Agar
-notes: 'Source: https://togomedium.org/medium/M1540
-
-  Original source: NBRC - NBRC_M332
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=332'
+notes: TOGO M1540 imports NBRC Medium 332 as Enriched Cytophaga Agar. NBRC 332 lists
+  2 g Bacto Tryptone (Difco), 0.5 g beef extract, 0.5 g yeast extract, 0.2 g sodium
+  acetate, optional 15 g agar, and 1 L distilled water at pH 7.2-7.4. The source does
+  not state sterilization, incubation temperature, or other preparation steps.
 applications:
 - Microbial cultivation
 curation_history:
@@ -89,6 +107,16 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m1540_score15.py
+  action: RESOLVED_TOGO_M1540_SCORE15
+  source: https://togomedium.org/medium/M1540; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=332
+  notes: TOGO M1540 imports NBRC Medium 332 as Enriched Cytophaga Agar. NBRC 332 lists
+    2 g Bacto Tryptone (Difco), 0.5 g beef extract, 0.5 g yeast extract, 0.2 g sodium
+    acetate, optional 15 g agar, and 1 L distilled water at pH 7.2-7.4. The source
+    does not state sterilization, incubation temperature, or other preparation steps.
+    Corrected the imported water g/L artifact, added the NBRC pH range, and marked
+    the NBRC formula as curated.
 variant_children:
 - path: data/normalized_yaml/bacterial/flavobacterium_columnare_agar.yaml
   relationship: CONCENTRATION_VARIANT
@@ -103,3 +131,10 @@ variant_children:
   notes: Reviewed TOGO Enriched Cytophaga Agar source-local pair; child keeps water,
     yeast extract, sodium acetate, and agar unchanged but lowers Bacto Tryptone from
     2.0 to 0.5 g/L and beef extract from 0.5 to 0.2 g/L.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1540
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=332

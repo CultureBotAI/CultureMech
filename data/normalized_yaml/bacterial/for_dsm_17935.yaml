@@ -201,40 +201,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-variant_children:
-- path: data/normalized_yaml/bacterial/for_dsm_17936.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:003834
-  name: for_dsm_17936
-  notes: Same ingredient and concentration signature; reviewed as duplicate phototrophic
-    medium source record.
-- path: data/normalized_yaml/bacterial/for_dsm_18632.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:003835
-  name: for_dsm_18632
-  notes: Same ingredient and concentration signature; reviewed as duplicate phototrophic
-    medium source record.
-- path: data/normalized_yaml/bacterial/for_dsm_18805.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:003836
-  name: for_dsm_18805
-  notes: Same ingredient and concentration signature; reviewed as duplicate phototrophic
-    medium source record.
-- path: data/normalized_yaml/bacterial/for_dsm_18858.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:003837
-  name: for_dsm_18858
-  notes: Same ingredient and concentration signature; reviewed as duplicate phototrophic
-    medium source record.
-- path: data/normalized_yaml/bacterial/phototrophic_medium.yaml
-  relationship: SOURCE_DUPLICATE
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1129_phototrophic_topology_score10.py
+  action: RESOLVED_KOMODO_1129_PHOTOTROPHIC_TOPOLOGY
+  changes: Linked under PHOTOTROPHIC MEDIUM
+  source: KOMODO Medium 1129.1
+  notes: KOMODO Medium 1129.1 applies PHOTOTROPHIC MEDIUM at pH 6.5 for DSM 17935.
+parent_media:
+  path: data/normalized_yaml/bacterial/phototrophic_medium.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003838
   name: phototrophic_medium
-  notes: Same ingredient and concentration signature; reviewed as duplicate phototrophic
-    medium source record.
-- path: data/normalized_yaml/specialized/phototrophic_medium.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:015333
-  name: phototrophic_medium
-  notes: Same ingredient and concentration signature; reviewed as duplicate phototrophic
-    medium source record.
+  notes: KOMODO Medium 1129 is the PHOTOTROPHIC MEDIUM base.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
+variant_modifications:
+- KOMODO Medium 1129.1 applies PHOTOTROPHIC MEDIUM at pH 6.5 for DSM 17935.
+data_quality_flags:
+- ingredients_curated

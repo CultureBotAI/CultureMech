@@ -350,6 +350,14 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_480_desulfurella_score10.py
+  action: RESOLVED_KOMODO_480_DESULFURELLA_TOPOLOGY
+  changes: Moved KOMODO Medium 480.1 out of the 480b duplicate set
+  source: KOMODO Medium 480, 480.1, and 480b
+  notes: KOMODO Medium 480.1 points to DSMZ Medium 480, so its strain-specific wrapper
+    belongs under KOMODO Medium 480 instead of the KOMODO Medium 480b exact-duplicate
+    parent.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_480_DESULFURELLA_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -373,11 +381,5 @@ variant_children:
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005597
   name: desulfurella_multipotens_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_11321.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005595
-  name: for_dsm_11321
   notes: Same ingredient and concentration signature; review as possible duplicate
     source record.

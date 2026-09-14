@@ -11,11 +11,9 @@ media_term:
   term:
     id: TOGO:M1151
     label: Halalkaliarchaeum Medium
-notes: 'Source: https://togomedium.org/medium/M1151
-
-  Original source: JCM - JCM_M1082
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1082'
+notes: JCM Medium 1082 defines Halalkaliarchaeum Medium as sterilized JCM Medium 1079
+  Basal mineral NaCl medium plus JCM Medium 1081 Soda based mineral medium, 2 M sodium
+  pyruvate, Trace vitamins from JCM Medium 197, and 10% yeast extract solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -45,40 +43,195 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_cross_reference_score25.py
+  action: RESOLVED_SCORE25_CROSS_REFERENCE
+  changes: Resolved score-25 source cross-references
+  source: https://togomedium.org/medium/M1151; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1082;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1079; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1081;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+  notes: JCM Medium 1082 defines Halalkaliarchaeum Medium as sterilized JCM Medium
+    1079 Basal mineral NaCl medium plus JCM Medium 1081 Soda based mineral medium,
+    2 M sodium pyruvate, Trace vitamins from JCM Medium 197, and 10% yeast extract
+    solution.
 high_metal: true
 solutions:
-- preferred_term: Basal mineral NaCl medium (see Medium [M1148])
-  composition: []
-  notes: Cross-reference to Medium M1148
+- preferred_term: Basal mineral NaCl medium
   concentration:
     value: '937.5'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Soda based mineral medium (see Medium [M1150])
-  composition: []
-  notes: Cross-reference to Medium M1150
+    unit: ML_PER_L
+  notes: JCM Medium 1082 lists 937.5 ml/L sterilized Basal mineral NaCl medium from
+    JCM Medium 1079.
+  culturemech_term:
+    id: CultureMech:007671
+    label: Halanaeroarchaeum Medium
+- preferred_term: Soda based mineral medium
   concentration:
     value: '62.5'
-    unit: G_PER_L
-  name: Unknown solution
+    unit: ML_PER_L
+  notes: JCM Medium 1082 lists 62.5 ml/L sterilized Soda based mineral medium from
+    JCM Medium 1081.
+  culturemech_term:
+    id: CultureMech:007674
+    label: Natranaeroarchaeum Medium
 - preferred_term: 10% Yeast extract solution
-  composition: []
   concentration:
     value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-  name: Unknown solution
-- preferred_term: 2 M Sodium pyruvate solution*
-  composition: []
+    unit: ML_PER_L
+  notes: JCM Medium 1082 adds 0.2 ml/L 10% yeast extract solution after the basal
+    media are sterilized.
+- preferred_term: 2 M Sodium pyruvate solution
   concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Solution, Organic compound'
-  name: Unknown solution
-- preferred_term: Trace vitamins (see Medium [M190])
-  composition: []
-  notes: Cross-reference to Medium M190
+    value: '5.0'
+    unit: ML_PER_L
+  notes: JCM Medium 1082 adds 5.0 ml/L 2 M sodium pyruvate solution after the basal
+    media are sterilized.
+- preferred_term: Trace vitamins
   concentration:
-    value: '10'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '10.0'
+    unit: ML_PER_L
+  notes: JCM Medium 1082 adds 10.0 ml/L Trace vitamins from JCM Medium 197.
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in the Trace vitamins subrecipe.
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+  - preferred_term: Folic acid
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in the Trace vitamins subrecipe.
+    term:
+      id: CHEBI:27470
+      label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
+  - preferred_term: Pyridoxine HCl
+    concentration:
+      value: '10.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in the Trace vitamins subrecipe.
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+  - preferred_term: Thiamine HCl
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in the Trace vitamins subrecipe.
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+  - preferred_term: Riboflavin
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in the Trace vitamins subrecipe.
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in the Trace vitamins subrecipe.
+    term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: nicotinic acid
+  - preferred_term: Calcium pantothenate
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in the Trace vitamins subrecipe.
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.1'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in the Trace vitamins subrecipe.
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in the Trace vitamins subrecipe.
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+  - preferred_term: Lipoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in the Trace vitamins subrecipe.
+    term:
+      id: CHEBI:16494
+      label: lipoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16494
+      label: lipoic acid
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare and sterilize the JCM Medium 1079 basal mineral NaCl medium
+    and JCM Medium 1081 soda based mineral medium.
+- step_number: 2
+  action: MIX
+  description: Mix 937.5 ml basal mineral NaCl medium with 62.5 ml soda based mineral
+    medium per liter.
+- step_number: 3
+  action: MIX
+  description: Aseptically add the sodium pyruvate, Trace vitamins, and yeast extract
+    solutions after autoclaving or filter sterilization.
+references:
+- reference: https://togomedium.org/medium/M1151
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1082
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1079
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1081
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients

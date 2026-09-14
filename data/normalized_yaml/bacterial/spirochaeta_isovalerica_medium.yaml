@@ -11,9 +11,67 @@ media_term:
   term:
     id: komodo.medium:273
     label: SPIROCHAETA ISOVALERICA medium
-notes: 'Source: KOMODO ModelSEED | ID: 273 | DSMZ Medium: 273 (mediadive.medium:273)
-  | Aerobic: Yes'
-ingredients: []
+notes: DSMZ Medium 273 provides the Spirochaeta isovalerica liquid recipe with glucose,
+  Trypticase, yeast extract, Tris-HCl buffer, seawater, cysteine-HCl, resazurin, pH
+  7.5, and anaerobic N2 preparation.
+ingredients:
+- preferred_term: Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  source: DSMZ Medium 273 PDF
+  term:
+    id: CHEBI:17234
+    label: glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: glucose
+- preferred_term: Trypticase (BBL)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  source: DSMZ Medium 273 PDF
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: DSMZ Medium 273 PDF
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Tris-HCl-buffer (0.2 M; pH 7.5)
+  concentration:
+    value: '250'
+    unit: ML_PER_L
+  source: DSMZ Medium 273 PDF
+  notes: DSMZ 273 lists 250 ml of Tris-HCl-buffer (0.2 M; pH 7.5).
+- preferred_term: Sea water
+  concentration:
+    value: '750'
+    unit: ML_PER_L
+  source: DSMZ Medium 273 PDF
+- preferred_term: Cysteine-HCl x H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  source: DSMZ Medium 273 PDF
+  term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+- preferred_term: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  source: DSMZ Medium 273 PDF
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
 applications:
 - Microbial cultivation
 curation_history:
@@ -36,5 +94,25 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_dsmz_spirochaeta_score30.py
+  action: RESOLVED_DSMZ_LEGACY_SCORE30
+  changes: Resolved score-30 DSMZ legacy placeholder graph
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium273.pdf
+  notes: DSMZ Medium 273 provides the Spirochaeta isovalerica liquid recipe with glucose,
+    Trypticase, yeast extract, Tris-HCl buffer, seawater, cysteine-HCl, resazurin,
+    pH 7.5, and anaerobic N2 preparation.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+incubation_atmosphere: ANAEROBIC
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix the medium components and adjust pH to 7.5.
+- step_number: 2
+  action: MIX
+  description: Prepare the medium anaerobically under a 100% nitrogen atmosphere.
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium273.pdf

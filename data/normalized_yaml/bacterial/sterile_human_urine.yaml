@@ -8,15 +8,19 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Sterile human urine
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2920
+  notes: TOGO M2920 lists one liter of pooled sterile human urine as the nutrient
+    source.
 media_term:
   preferred_term: TOGO Medium M2920
   term:
     id: TOGO:M2920
     label: Sterile human urine
-notes: 'Source: https://togomedium.org/medium/M2920'
+notes: TOGO M2920 records E. coli strain 83972 grown in pooled sterile human urine
+  at 37 C without agitation; the source does not disclose the pooled urine's internal
+  composition.
 applications:
 - Microbial cultivation
 curation_history:
@@ -33,3 +37,24 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Sterile human urine" to "sterile_human_urine" for consistent
     matching
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_togo_mrs_marine_urine_score40.py
+  action: RESOLVED_TOGO_MRS_MARINE_URINE_SCORE40
+  changes: Resolved cached score-40 TOGO MRS, marine, or urine graph
+  source: https://togomedium.org/medium/M2920
+  notes: TOGO M2920 records E. coli strain 83972 grown in pooled sterile human urine
+    at 37 C without agitation; the source does not disclose the pooled urine's internal
+    composition.
+temperature_value: 37.0
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use one liter of pooled sterile human urine.
+- step_number: 2
+  action: MIX
+  description: Cultivate without agitation at 37 C.
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2920

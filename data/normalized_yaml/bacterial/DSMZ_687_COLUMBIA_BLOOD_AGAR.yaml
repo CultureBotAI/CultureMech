@@ -12,26 +12,33 @@ media_term:
     label: COLUMBIA BLOOD AGAR
 notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium687.pdf'
 ingredients:
-- preferred_term: Defibrinated Blood
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: Bacto Panton
+- preferred_term: Bacto Panton (Peptone)
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: Bacto Bitone
+  source: DSMZ Medium 687
+  notes: DSMZ Medium 687 lists Bacto Panton as a peptone in the Columbia Blood Agar
+    Base; the BD product is not reducible to one ChEBI molecule.
+- preferred_term: Bacto Bitone (Peptone)
   concentration:
     value: '10'
     unit: G_PER_L
+  source: DSMZ Medium 687
+  notes: DSMZ Medium 687 lists Bacto Bitone as a peptone in the Columbia Blood Agar
+    Base; the BD product is not reducible to one ChEBI molecule.
 - preferred_term: Tryptic Digest of beef heart
   concentration:
     value: '3'
     unit: G_PER_L
+  source: DSMZ Medium 687
+  notes: DSMZ Medium 687 lists tryptic digest of beef heart as part of the Columbia
+    Blood Agar Base.
 - preferred_term: Corn starch
   concentration:
     value: '1'
     unit: G_PER_L
+  source: DSMZ Medium 687
+  notes: DSMZ Medium 687 lists 1 g corn starch.
   term:
     id: CHEBI:28017
     label: starch
@@ -39,36 +46,62 @@ ingredients:
     id: CHEBI:28017
     label: starch
 - preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
   concentration:
     value: '5'
     unit: G_PER_L
+  source: DSMZ Medium 687
+  notes: DSMZ Medium 687 lists 5 g NaCl.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
 - preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
+  source: DSMZ Medium 687
+  notes: DSMZ Medium 687 lists 15 g agar.
+  term:
+    id: CHEBI:2509
+    label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+- preferred_term: Deionized water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: DSMZ Medium 687
+  notes: DSMZ Medium 687 instructs suspending Columbia Blood Agar Base in 1 L deionized
+    water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Sterile defibrinated blood
+  concentration:
+    value: '5'
+    unit: PERCENT_V_V
+  source: DSMZ Medium 687
+  notes: DSMZ Medium 687 instructs adding 5% sterile defibrinated blood after cooling.
+  term:
+    id: UBERON:0000178
+    label: blood
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Suspend 44 g Columbia Blood Agar Base in 1l deionized water. Heat to
-    boiling to dissolve completely.
+  description: Suspend 44 g Columbia Blood Agar Base in 1 L deionized water and heat
+    to boiling.
 - step_number: 2
   action: AUTOCLAVE
-  description: Sterilize in autoclave for 15 min at 121°C.
+  description: Sterilize in an autoclave for 15 min at 121 C.
 - step_number: 3
-  action: HEAT
-  description: Cool to 45°C. Add 5% sterile defibrinated blood and mix well.
+  action: COOL
+  description: Cool to 45 C, add 5% sterile defibrinated blood, and mix well.
 applications:
 - Microbial cultivation
 curation_history:
@@ -99,4 +132,17 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_dsmz_1551_687_score15.py
+  action: RESOLVED_DSMZ_1551_687_SCORE15
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium687.pdf
+  notes: DSMZ Medium 687 lists Columbia Blood Agar Base as Bacto Panton, Bacto Bitone,
+    tryptic digest of beef heart, corn starch, NaCl, and agar suspended in 1 L deionized
+    water; after sterilization and cooling it adds 5% sterile defibrinated blood.
 kg_microbe_match: mediadive.medium:687
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium687.pdf

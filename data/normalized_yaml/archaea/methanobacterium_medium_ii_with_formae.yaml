@@ -10,138 +10,209 @@ media_term:
   term:
     id: mediadive.medium:J703
     label: METHANOBACTERIUM MEDIUM (II) WITH FORMAE
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=703
-
-  Composition recovery source: https://togomedium.org/medium/M725 (TOGO snapshot of
-  JCM medium J703).'
+notes: JCM Medium 703 was recovered from source-equivalent TOGO M725; the recipe uses
+  JCM Medium 702 supplemented with 0.3% final sodium formate and 10 ml/L Trace minerals
+  from M142, 10 ml/L Trace vitamins from M190, 25 ml/L 8% NaHCO3, and 10 ml/L 3% Na2S
+  x 9H2O.
 ingredients:
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: JCM Medium 703 / TOGO M725
+  notes: JCM Medium 703 / TOGO M725 lists 1 L Distilled water.
   term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: JCM Medium 703 / TOGO M725
+  notes: JCM Medium 703 / TOGO M725 lists 0.5 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: NaCl
   concentration:
     value: '0.6'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  source: JCM Medium 703 / TOGO M725
+  notes: JCM Medium 703 / TOGO M725 lists 0.6 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
-- preferred_term: CaCl2・2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2 x 2H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: JCM Medium 703 / TOGO M725
+  notes: JCM Medium 703 / TOGO M725 lists 0.1 g/L CaCl2 x 2H2O.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.3'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
+  source: JCM Medium 703 / TOGO M725
+  notes: JCM Medium 703 / TOGO M725 lists 0.3 g/L KH2PO4.
   term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
+  source: JCM Medium 703 / TOGO M725
+  notes: JCM Medium 703 / TOGO M725 lists 1 g/L NH4Cl.
   term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
     id: CHEBI:31206
     label: ammonium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '0.3'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
+  source: JCM Medium 703 / TOGO M725
+  notes: JCM Medium 703 / TOGO M725 lists 0.3 g/L K2HPO4.
   term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
 - preferred_term: Resazurin
   concentration:
     value: '0.5'
     unit: MG_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
-    compound, Simple component'
+  source: JCM Medium 703 / TOGO M725
+  notes: JCM Medium 703 / TOGO M725 lists 0.5 mg/L Resazurin.
   term:
     id: CHEBI:8806
     label: Resazurin
-- preferred_term: MgCl2・6H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: MgCl2 x 6H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  source: JCM Medium 703 / TOGO M725
+  notes: JCM Medium 703 / TOGO M725 lists 0.2 g/L MgCl2 x 6H2O.
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: KCl
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  source: JCM Medium 703 / TOGO M725
+  notes: JCM Medium 703 / TOGO M725 lists 0.1 g/L KCl.
   term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
     id: CHEBI:32588
     label: potassium chloride
 - preferred_term: Sodium acetate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
-- preferred_term: L-Cysteine・HCl・H2O
+  source: JCM Medium 703 / TOGO M725
+  notes: JCM Medium 703 / TOGO M725 lists 0.5 g/L Sodium acetate.
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: L-Cysteine x HCl x H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
-- preferred_term: sodium formate
+  source: JCM Medium 703 / TOGO M725
+  notes: JCM Medium 703 / TOGO M725 lists 0.5 g/L L-Cysteine x HCl x H2O.
+  term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+- preferred_term: Sodium formate
   concentration:
     value: '0.3'
     unit: PERCENT_W_V
-  notes: 'Properties: Defined component, Organic compound, Solution'
-- preferred_term: Carbon dioxide gas
+  source: JCM Medium 703 / TOGO M725
+  notes: JCM Medium 703 supplements JCM Medium 702 with 0.3% final sodium formate.
+  term:
+    id: CHEBI:62965
+    label: sodium formate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
+    label: sodium formate
+- preferred_term: CO2
   concentration:
     value: variable
     unit: VARIABLE
-  notes: 'Properties: ガス'
+  source: JCM Medium 703 / TOGO M725
+  notes: JCM Medium 703 uses an N2-CO2 gas phase at 80:20 by volume.
   term:
     id: CHEBI:16526
     label: carbon dioxide
-- preferred_term: Nitrogen gas
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
+- preferred_term: N2
   concentration:
     value: variable
     unit: VARIABLE
-  notes: 'Properties: ガス'
+  source: JCM Medium 703 / TOGO M725
+  notes: JCM Medium 703 uses an N2-CO2 gas phase at 80:20 by volume.
   term:
+    id: CHEBI:17997
+    label: dinitrogen
+  mediaingredientmech_chebi_term:
     id: CHEBI:17997
     label: dinitrogen
 preparation_steps:
 - step_number: 1
-  action: AUTOCLAVE
-  description: 'Mix components, bring to a boil for several seconds and cool down
-    undera stream of N2-CO2 (80:20, v/v). Distribute the medium into culture vessels
-    (e.g., 5 ml in the Hungate tube) under the same gas mixture, seal with butyl rubber
-    stoppers and autoclave. Add per liter the following sterile solutions from anaerobic
-    stocks (autoclaved or *filter--sterilized):'
+  action: MIX
+  description: Mix the base components except NaHCO3, Na2S x 9H2O, and trace vitamins.
 - step_number: 2
-  action: MIX
-  description: Check pH of the medium to be about 7.0. Pressurize the inoculated bottles
-    to 200 kPa N2--CO2 (80:20, v/v).
+  action: HEAT
+  description: Bring the medium to a boil for several seconds and cool under N2-CO2
+    (80:20, v/v).
 - step_number: 3
+  action: AUTOCLAVE
+  description: Distribute under N2-CO2, seal with butyl rubber stoppers, and autoclave.
+- step_number: 4
   action: MIX
-  description: Use Medium No. [702] supplemented with 0.3% (final) sodium formate.
-    Replacethe gas phase with a N2--CO2 (80:20, v/v, at normal pressure) gas mixture.
+  description: Add the sterile NaHCO3, Na2S x 9H2O, and trace vitamin solutions per
+    liter.
+- step_number: 5
+  action: ADJUST_PH
+  description: Check pH of the medium to be about 7.0.
+- step_number: 6
+  action: MIX
+  description: Pressurize inoculated bottles to 200 kPa with N2-CO2 (80:20, v/v).
 applications:
 - Microbial cultivation
 curation_history:
@@ -190,29 +261,350 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 9 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_halomarina_jcm703_score15.py
+  action: RESOLVED_HALOMARINA_JCM703_SCORE15
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=703; https://togomedium.org/medium/M725;
+    https://togomedium.org/medium/M142; https://togomedium.org/medium/M190
+  notes: JCM Medium 703 was recovered from source-equivalent TOGO M725; the recipe
+    uses JCM Medium 702 supplemented with 0.3% final sodium formate and 10 ml/L Trace
+    minerals from M142, 10 ml/L Trace vitamins from M190, 25 ml/L 8% NaHCO3, and 10
+    ml/L 3% Na2S x 9H2O.
 solutions:
-- preferred_term: Trace minerals (see Medium [M142])
-  composition: []
+- preferred_term: Trace minerals (TOGO Medium M142)
   concentration:
     value: '10'
     unit: ML_PER_L
-  notes: Defined in TOGO medium M142.
-- preferred_term: Trace vitamins (see Medium [M190])
-  composition: []
+  source: JCM Medium 703 / TOGO M725
+  notes: JCM Medium 703 / TOGO M725 adds 10 ml/L Trace minerals from TOGO M142.
+  composition:
+  - preferred_term: MgSO4 x 7H2O
+    concentration:
+      value: '3'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: TOGO M142 trace minerals prints this component in its stock solution.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: NaCl
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: TOGO M142 trace minerals prints this component in its stock solution.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: CaCl2 x 2H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: TOGO M142 trace minerals prints this component in its stock solution.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: Na2MoO4 x 2H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: TOGO M142 trace minerals prints this component in its stock solution.
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: TOGO M142 trace minerals prints this component in its stock solution.
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: FeSO4 x 7H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: TOGO M142 trace minerals prints this component in its stock solution.
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+  - preferred_term: ZnSO4 x 7H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: TOGO M142 trace minerals prints this component in its stock solution.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+  - preferred_term: CuSO4 x 5H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: TOGO M142 trace minerals prints this component in its stock solution.
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+  - preferred_term: CoSO4 x 7H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: TOGO M142 trace minerals prints this component in its stock solution.
+    term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+  - preferred_term: Nitrilotriacetic acid
+    concentration:
+      value: '1.5'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: TOGO M142 trace minerals prints this component in its stock solution.
+    term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+  - preferred_term: MnSO4 x n H2O
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: TOGO M142 trace minerals prints this component in its stock solution.
+    term:
+      id: CHEBI:86360
+      label: manganese(II) sulfate hydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86360
+      label: manganese(II) sulfate hydrate
+  - preferred_term: AlK(SO4)2
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: TOGO M142 trace minerals
+    notes: TOGO M142 trace minerals prints this component in its stock solution.
+    term:
+      id: CHEBI:86463
+      label: potassium aluminium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86463
+      label: potassium aluminium sulfate
+  - preferred_term: KOH solution
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: TOGO M142 trace minerals
+    notes: TOGO M142 trace minerals prints this component in its stock solution.
+    term:
+      id: CHEBI:32035
+      label: potassium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32035
+      label: potassium hydroxide
+- preferred_term: Trace vitamins (TOGO Medium M190)
   concentration:
     value: '10'
     unit: ML_PER_L
-  notes: Defined in TOGO medium M190.
-- preferred_term: 8% NaHCO3 solution*
-  composition: []
+  source: JCM Medium 703 / TOGO M725
+  notes: JCM Medium 703 / TOGO M725 adds 10 ml/L Trace vitamins from TOGO M190.
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '0.002'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: TOGO M190 trace vitamins prints this component in its stock solution.
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: TOGO M190 trace vitamins prints this component in its stock solution.
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+  - preferred_term: Thiamine-HCl
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: TOGO M190 trace vitamins prints this component in its stock solution.
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+  - preferred_term: Calcium pantothenate
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: TOGO M190 trace vitamins prints this component in its stock solution.
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+  - preferred_term: Pyridoxine-HCl
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: TOGO M190 trace vitamins prints this component in its stock solution.
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+  - preferred_term: Folic acid
+    concentration:
+      value: '0.002'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: TOGO M190 trace vitamins prints this component in its stock solution.
+    term:
+      id: CHEBI:27470
+      label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.0001'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: TOGO M190 trace vitamins prints this component in its stock solution.
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+  - preferred_term: Riboflavin
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: TOGO M190 trace vitamins prints this component in its stock solution.
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: TOGO M190 trace vitamins prints this component in its stock solution.
+    term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: nicotinic acid
+  - preferred_term: Lipoic acid
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    source: TOGO M190 trace vitamins
+    notes: TOGO M190 trace vitamins prints this component in its stock solution.
+    term:
+      id: CHEBI:16494
+      label: lipoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16494
+      label: lipoic acid
+- preferred_term: 8% NaHCO3 solution
   concentration:
     value: '25'
     unit: ML_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: 3% Na2S・9H2O solution
-  composition: []
+  source: JCM Medium 703 / TOGO M725
+  notes: JCM Medium 703 / TOGO M725 adds 25 ml/L 8% NaHCO3 solution.
+  composition:
+  - preferred_term: NaHCO3
+    concentration:
+      value: '80'
+      unit: G_PER_L
+    source: JCM Medium 703 / TOGO M725
+    notes: JCM Medium 703 / TOGO M725 prints this component in its stock solution.
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+- preferred_term: 3% Na2S x 9H2O solution
   concentration:
     value: '10'
     unit: ML_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
-    compound'
+  source: JCM Medium 703 / TOGO M725
+  notes: JCM Medium 703 / TOGO M725 adds 10 ml/L 3% Na2S x 9H2O solution.
+  composition:
+  - preferred_term: Na2S x 9H2O
+    concentration:
+      value: '30'
+      unit: G_PER_L
+    source: JCM Medium 703 / TOGO M725
+    notes: JCM Medium 703 / TOGO M725 prints this component in its stock solution.
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+ph_value: 7.0
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=703
+- reference: https://togomedium.org/medium/M725
+- reference: https://togomedium.org/medium/M142
+- reference: https://togomedium.org/medium/M190

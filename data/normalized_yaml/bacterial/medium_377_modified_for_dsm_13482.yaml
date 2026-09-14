@@ -338,13 +338,23 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-ph_value: 6.8
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_377_pyrococcus_score10.py
+  action: RESOLVED_KOMODO_377_PYROCOCCUS_TOPOLOGY
+  changes: Linked under KOMODO Medium 377
+  source: KOMODO Medium 377_13482
+  notes: KOMODO Medium 377_13482 applies PYROCOCCUS / STAPHYLOTHERMUS medium at pH
+    6.8 for DSM 13482.
 parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_19918.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005112
-  name: for_dsm_19918
-variant_relationship: SOURCE_DUPLICATE
+  path: data/normalized_yaml/archaea/pyrococcus_staphylothermus_medium.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:005113
+  name: pyrococcus_staphylothermus_medium
+  notes: KOMODO Medium 377 is the pH 6.5 PYROCOCCUS / STAPHYLOTHERMUS medium base.
+variant_relationship: PH_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 377_13482 applies PYROCOCCUS / STAPHYLOTHERMUS medium at pH 6.8 for
+  DSM 13482.
+ph_value: 6.8
+data_quality_flags:
+- ingredients_curated

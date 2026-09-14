@@ -8,10 +8,10 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M240/JCM Medium 248 snapshot
+  notes: TOGO M240/JCM Medium 248 snapshot lists 1.0 L distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -22,12 +22,14 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M240/JCM Medium 248 snapshot
+  notes: TOGO M240/JCM Medium 248 snapshot lists 50 g/L dry cow manure.
 - preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M240/JCM Medium 248 snapshot
+  notes: TOGO M240/JCM Medium 248 snapshot lists 15 g/L agar.
   term:
     id: CHEBI:2509
     label: agar
@@ -39,11 +41,8 @@ media_term:
   term:
     id: TOGO:M240
     label: TOGO Medium M240
-notes: 'Source: https://togomedium.org/medium/M240
-
-  Original source: JCM - JCM_M248
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=248'
+notes: TOGO M240 records 1.0 L distilled water, 50 g/L dry cow manure, and 15 g/L
+  agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,3 +73,21 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_togo_water_products_score20.py
+  action: RESOLVED_JCM_TOGO_WATER_PRODUCTS_SCORE20
+  source: https://togomedium.org/medium/M240
+  notes: TOGO M240 records 1.0 L distilled water, 50 g/L dry cow manure, and 15 g/L
+    agar.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Suspend 50.0 g of dry cow manure in 1.0 L distilled water, boil for
+    1 hr, filter first through cheesecloth and then paper, and make up the volume
+    to 1.0 L.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M240

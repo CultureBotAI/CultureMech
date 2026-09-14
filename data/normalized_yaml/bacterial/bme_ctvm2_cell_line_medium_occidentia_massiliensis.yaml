@@ -10,69 +10,76 @@ media_term:
   term:
     id: mediadive.medium:1670
     label: BME/CTVM2 cell line medium (Occidentia massiliensis)
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1670.pdf'
+notes: DSMZ Medium 1670 prepares a 101 ml BME/CTVM2 tick-cell medium for Occidentia
+  massiliensis cultivation from 70 ml L-15 (Leibovitz) medium, 10 ml tryptose phosphate
+  broth, 20 ml foetal calf serum, and 1 ml 200 mM L-glutamine stock.
 ingredients:
-- preferred_term: L-15 medium
+- preferred_term: L-15 (Leibovitz) medium
   concentration:
-    value: '70'
-    unit: G_PER_L
-- preferred_term: Tryptose-phosphate
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Fetal bovine serum
-  concentration:
-    value: '20'
-    unit: G_PER_L
-- preferred_term: L-Glutamine
+    value: '693.069307'
+    unit: ML_PER_L
+  source: DSMZ Medium 1670
+  notes: DSMZ Medium 1670 lists 70 ml L-15 (Leibovitz) medium in a 101 ml BME/CTVM2
+    cell-culture medium batch.
   term:
-    id: CHEBI:18050
-    label: L-glutamine
+    id: mediadive.compound:1504
+    label: L-15 medium
+- preferred_term: Tryptose phosphate broth
   concentration:
-    value: '0.029228'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:18050
-    label: L-glutamine
+    value: '99.009901'
+    unit: ML_PER_L
+  source: DSMZ Medium 1670
+  notes: DSMZ Medium 1670 lists 10 ml tryptose phosphate broth in a 101 ml BME/CTVM2
+    cell-culture medium batch.
+  term:
+    id: mediadive.compound:1165
+    label: Tryptose-phosphate
+- preferred_term: Foetal calf serum
+  concentration:
+    value: '198.019802'
+    unit: ML_PER_L
+  source: DSMZ Medium 1670
+  notes: DSMZ Medium 1670 lists 20 ml foetal calf serum in a 101 ml BME/CTVM2 cell-culture
+    medium batch.
+  term:
+    id: mediadive.compound:954
+    label: Fetal bovine serum
+solutions:
+- preferred_term: 200 mM L-glutamine stock
+  concentration:
+    value: '9.90099'
+    unit: ML_PER_L
+  source: DSMZ Medium 1670
+  notes: DSMZ Medium 1670 lists 1 ml 200 mM L-glutamine stock in a 101 ml BME/CTVM2
+    cell-culture medium batch.
+  composition:
+  - preferred_term: L-Glutamine
+    concentration:
+      value: '200.0'
+      unit: MILLIMOLAR
+    source: DSMZ Medium 1670
+    notes: DSMZ Medium 1670 discloses this stock as 200 mM L-glutamine.
+    term:
+      id: CHEBI:18050
+      label: L-glutamine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:18050
+      label: L-glutamine
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Cultivation of Occidentia massiliensis has to be carried out inBME/CTVM2
-    cells. The cell line is NOT available from DSMZ but has to be obtained from:'
+  description: Prepare the BME/CTVM2 cell-culture medium from 70 ml L-15 (Leibovitz)
+    medium, 10 ml tryptose phosphate broth, 20 ml foetal calf serum, and 1 ml 200
+    mM L-glutamine.
 - step_number: 2
   action: MIX
-  description: <https://www.liverpool.ac.uk/infection-and-global-health/research/tick-cell-biobank/tick-cell-lines/>
+  description: Use the medium for BME/CTVM2 cells incubated in ordinary air in sealed
+    flasks or flat-sided tubes in dry incubators.
 - step_number: 3
   action: MIX
-  description: Cultivation of BME/CTVM2 cells for infection with Occidentia massiliensis
-- step_number: 4
-  action: MIX
-  description: All tick cell lines are incubated in an atmosphere of ordinary air,
-    in sealed flasks or flat-sided tubes (Nunc, product no. 156758) in dry incubators.
-    Medium changing is done once a week by removal and replacement of between 50%
-    and 80% of the medium volume. Tick cells can survive for relatively long periods
-    without attention - up to 3 weeks without a medium change -, and for several months
-    without subculture if necessary. They prefer not to be subcultured too often!
-- step_number: 5
-  action: MIX
-  description: Subculture is done when required, but not usually more often than fortnightly,
-    as follows (method for 25cm2 flasks). On a medium change day, the spent medium
-    from the culture to be passaged is put into the new flask(s) to condition them
-    overnight. Next day the spent medium is discarded from the new flask(s), an appropriate
-    volume of fresh medium (5ml for one new flask, 10ml for 2 new flasks etc) is added
-    to the parent flask, any adherent cells are pipetted off, and the appropriate
-    volume of cell suspension is transferred to the new flask(s), leaving 5ml in the
-    parent flask. The parent flask is always retained, and can be used for subculture
-    repeatedly over several months or years. Trypsin or EDTA are never used, as the
-    tick cells do not like them.
-- step_number: 6
-  action: HEAT
-  description: '<b>Infection with Occidentia massiliensis: </b> From one 25 cm2 flask
-    of well-grown cells the medium is reduced to 5 ml, 3 ml of fresh medium are added
-    and 1 ml of the Occidentia strain (quickly thawed from -80°C ) is used to infect
-    the cells. Incubate at 28°C with closed lid (without CO2) and look for bacteria
-    and destroyed cells after 7-10 days (using Gimenez staining after one week). To
-    obtain more than 90% infected cells takes about 14 - 21 days .'
+  description: For Occidentia massiliensis infection, add 3 ml fresh medium and 1
+    ml thawed Occidentia strain to a 25 cm2 flask with 5 ml residual medium, then
+    incubate at 28 C with the lid closed and without CO2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -99,4 +106,18 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_dsmz_1670_bme_score15.py
+  action: RESOLVED_DSMZ_1670_BME_SCORE15
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1670.pdf; https://mediadive.dsmz.de/medium/1670
+  notes: Corrected DSMZ Medium 1670 liquid batch volumes, retained the opaque L-15,
+    tryptose phosphate, and serum products with MediaDive source identities, and represented
+    the 200 mM L-glutamine stock as a measured stock addition.
 kg_microbe_match: mediadive.medium:1670
+temperature_value: 28.0
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1670.pdf
+- reference: https://mediadive.dsmz.de/medium/1670

@@ -393,3 +393,23 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_383_desulfobacterium_score10.py
+  action: RESOLVED_KOMODO_383_DESULFOBACTERIUM_TOPOLOGY
+  changes: Linked under KOMODO Medium 383
+  source: DSMZ Medium 383b
+  notes: DSMZ Medium 383b has the same 32-component sulfate-reducing seawater mineral
+    signature as KOMODO Medium 383.
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_383_DESULFOBACTERIUM_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005154
+  name: desulfobacterium_medium
+  notes: DSMZ Medium 383b has the same 32-component sulfate-reducing seawater mineral
+    signature as KOMODO Medium 383.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- DSMZ Medium 383b has the same 32-component sulfate-reducing seawater mineral signature
+  as KOMODO Medium 383.
+data_quality_flags:
+- ingredients_curated

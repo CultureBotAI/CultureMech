@@ -10,40 +10,101 @@ media_term:
   term:
     id: mediadive.medium:J32
     label: MY20 AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=32'
+notes: JCM Medium 32 MY20 Agar lists, per liter, 5.0 g Peptone, 3.0 g Yeast extract,
+  3.0 g Malt extract, 200.0 g Glucose, 20.0 g Agar, and 1.0 L Distilled water. MY20
+  is a YM Agar concentration variant that increases glucose from 10.0 g/L to 200.0
+  g/L.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve Peptone, Yeast extract, Malt extract, Glucose, and Agar in
+    1.0 L distilled water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: JCM's default instruction is to autoclave media at 121 C for 15 min.
 ingredients:
 - preferred_term: Peptone
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
+  source: JCM Medium 32
+  notes: JCM Medium 32 lists 5.0 g/L Peptone.
+  term:
+    id: MICRO:0000178
+    label: Peptone
+  nutritional_roles:
+  - NITROGEN_SOURCE
 - preferred_term: Yeast extract
   concentration:
-    value: '3'
+    value: '3.0'
     unit: G_PER_L
+  source: JCM Medium 32
+  notes: JCM Medium 32 lists 3.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
+  - VITAMIN_SOURCE
 - preferred_term: Malt extract
   concentration:
-    value: '3'
+    value: '3.0'
     unit: G_PER_L
+  source: JCM Medium 32
+  notes: JCM Medium 32 lists 3.0 g/L Malt extract.
+  term:
+    id: FOODON:03301056
+    label: malt extract
+  nutritional_roles:
+  - CARBON_SOURCE
+  - NITROGEN_SOURCE
 - preferred_term: Glucose
+  concentration:
+    value: '200.0'
+    unit: G_PER_L
+  source: JCM Medium 32
+  notes: JCM Medium 32 lists 200.0 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
-  concentration:
-    value: '200'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  nutritional_roles:
+  - CARBON_SOURCE
 - preferred_term: Agar
+  concentration:
+    value: '20.0'
+    unit: G_PER_L
+  source: JCM Medium 32
+  notes: JCM Medium 32 lists 20.0 g/L Agar.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '20'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: JCM Medium 32
+  notes: JCM Medium 32 lists 1.0 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -69,6 +130,14 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_top_causal_graph_score15.py
+  action: RESOLVED_JCM_32_MY20_SCORE15
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=32
+  notes: JCM Medium 32 MY20 Agar lists, per liter, 5.0 g Peptone, 3.0 g Yeast extract,
+    3.0 g Malt extract, 200.0 g Glucose, 20.0 g Agar, and 1.0 L Distilled water. MY20
+    is a YM Agar concentration variant that increases glucose from 10.0 g/L to 200.0
+    g/L.
 parent_media:
   path: data/normalized_yaml/bacterial/ym_agar.yaml
   relationship: CONCENTRATION_VARIANT
@@ -80,3 +149,8 @@ variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
 - Reviewed YM Agar/MY20 Agar pair; child keeps peptone, yeast extract, malt extract,
   and agar unchanged but increases glucose from 10 g/L to 200 g/L.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=32

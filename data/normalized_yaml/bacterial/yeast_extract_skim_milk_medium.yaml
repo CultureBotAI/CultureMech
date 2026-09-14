@@ -10,27 +10,53 @@ media_term:
   term:
     id: komodo.medium:170
     label: Yeast extract - SKIM MILK medium
-notes: 'Source: KOMODO ModelSEED | ID: 170 | DSMZ Medium: 170 (mediadive.medium:170)
-  | Aerobic: No'
+notes: DSMZ Medium 170 defines Yeast Extract - Skim Milk Medium as 10.0 g Difco skim
+  milk, 1.0 g yeast extract, 15.0 g agar, and 1000.0 ml distilled water.
 ingredients:
-- preferred_term: Skim milk
+- preferred_term: Skim milk (Difco)
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
+  source: DSMZ Medium 170
+  notes: DSMZ Medium 170 lists 10.0 g/L Skim milk from Difco; the commercial milk
+    product is retained as an opaque component.
 - preferred_term: Yeast extract
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
+  source: DSMZ Medium 170
+  notes: DSMZ Medium 170 lists 1.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
 - preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: DSMZ Medium 170
+  notes: DSMZ Medium 170 lists 15.0 g/L Agar.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 170
+  notes: DSMZ Medium 170 lists 1000.0 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -61,4 +87,26 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-kg_microbe_match: mediadive.medium:12
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_dsmz_170_yeast_extract_skim_milk_score15.py
+  action: RESOLVED_DSMZ_170_YEAST_EXTRACT_SKIM_MILK_SCORE15
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium170.pdf; https://mediadive.dsmz.de/medium/170;
+    https://mediadive.dsmz.de/rest/medium/170
+  notes: DSMZ Medium 170 defines Yeast Extract - Skim Milk Medium as 10.0 g Difco
+    skim milk, 1.0 g yeast extract, 15.0 g agar, and 1000.0 ml distilled water. Added
+    the explicit water row, grounded yeast extract, agar, and water, and retained
+    Difco skim milk as an opaque commercial product. Removed a false kg_microbe_match
+    to DSMZ Medium 12 / Soil Extract Medium.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix 10.0 g Skim milk (Difco), 1.0 g yeast extract, 15.0 g agar, and
+    1000.0 ml distilled water.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium170.pdf
+- reference: https://mediadive.dsmz.de/medium/170
+- reference: https://mediadive.dsmz.de/rest/medium/170

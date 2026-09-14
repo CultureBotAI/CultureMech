@@ -3,21 +3,25 @@ name: Dv base Y medium no Fe
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: Dv_base_Y_medium
+media_term:
+  preferred_term: Dv base Y medium no Fe
+ingredients: []
+solutions:
+- preferred_term: Dv base Y medium
   concentration:
     value: '1'
     unit: FOLD_DILUTION
-- preferred_term: Iron (II) chloride tetrahydrate
-  concentration:
-    value: '-'
-    unit: G_PER_L
-  notes: 'CAS: 13478-10-9; MW: 198.81; Ontology enriched via CAS-RN lookup'
-  term:
-    id: CHEBI:86249
-    label: iron dichloride tetrahydrate
+  culturemech_term:
+    id: CultureMech:015520
+    label: Dv base Y medium
+  notes: CultureBotHT lists Dv_base_Y_medium at one-fold final strength.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare Dv base Y medium without Iron (II) chloride tetrahydrate.
 description: Rich base medium for cultivating Desulfovibrio with no Fe
-notes: 'Source: FEBA media definitions'
+notes: CultureBotHT imports Dv base Y medium no Fe as Dv base Y medium with Iron (II)
+  chloride tetrahydrate omitted.
 category: specialized
 sources:
 - database: CultureBotHT
@@ -36,5 +40,25 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: RESOLVED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Resolved score-30 CultureBotHT omitted-component variant
+  source: CultureBotHT:Dv base Y medium no Fe; https://github.com/CultureBotAI/CultureBotHT
+  notes: CultureBotHT imports Dv base Y medium no Fe as Dv base Y medium with Iron
+    (II) chloride tetrahydrate omitted.
 data_quality_flags:
-- has_unmapped_ingredients
+- has_ontology_mappings
+- ingredients_curated
+parent_media:
+  path: data/normalized_yaml/specialized/dv_base_y_medium.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015520
+  name: Dv base Y medium
+  notes: Omits Iron (II) chloride tetrahydrate from Dv base Y medium.
+variant_relationship: OMITTED_COMPONENT_VARIANT
+variant_modifications:
+- Omits Iron (II) chloride tetrahydrate from Dv base Y medium.
+references:
+- reference: CultureBotHT:Dv base Y medium no Fe
+- reference: https://github.com/CultureBotAI/CultureBotHT

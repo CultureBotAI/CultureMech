@@ -6,6 +6,14 @@ description: 1323. NBRC 1321.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_range:
+  min: 7.0
+  max: 7.3
+media_term:
+  preferred_term: NBRC Medium 1321
+  term:
+    id: nbrc.medium:1321
+    label: NBRC Medium 1321
 ingredients:
 - preferred_term: NaCl
   concentration:
@@ -18,10 +26,16 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.15'
     unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
 - preferred_term: Na2SO4
   concentration:
     value: '4'
@@ -54,10 +68,16 @@ ingredients:
   concentration:
     value: '0.68'
     unit: G_PER_L
+  term:
+    id: CHEBI:62965
+    label: Na-formate
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -102,14 +122,23 @@ ingredients:
     label: water
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  action: MIX
+  description: Mix ingredients except for yeast extract, bicarbonate, vitamin, thiamine,
+    cyanocobalamin, and sulfide solutions.
 - step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
+  action: ALIQUOT
+  description: Dispense the medium into culture vessels under a stream of N2/CO2 (80/20)
+    and seal with butyl rubber stoppers.
 - step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 minutes.
+- step_number: 4
+  action: MIX
+  description: Aseptically and anaerobically add the remaining ingredients using sterile
+    syringes.
+- step_number: 5
+  action: ADJUST_PH
+  description: Adjust pH to 7.0-7.3 using a compact pH meter.
 curation_history:
 - timestamp: '2026-02-20T00:22:36.058509Z'
   curator: nbrc-import
@@ -147,6 +176,12 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 20 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1321
+  notes: Preserved the recovered NBRC Medium 1321 composition table.
 solutions:
 - preferred_term: Trace element mixture
   composition:
@@ -320,12 +355,15 @@ solutions:
       id: CHEBI:15377
       label: water
   name: Sulfide solution (1.0 M)
-notes: pH 7.0-7.3 Mix ingredients except for yeast extract, bicarbonate, vitamin,
-  thiamine, cyanocobalamin and sulfide solutions. Dispense the medium into suitable
-  culture vessels under a stream of the N2/CO2 (80/20) mixed gas, seal with butyl
-  rubber stoppers, and autoclave at 121°C for 15 min. Aseptically and anaerobically
-  add other ingredients using sterile syringes. Adjust pH to 7.0-7.3 using compact
-  pH meter. Sterilized by autoclaving. Sterilized by autoclaving. Saturated with CO2
-  gas. Tightly sealed in bottles filled with CO2 gas and then sterilized by autoclaving.
-  Sterilized by filtration. Sterilized by filtration. Sterilized by filtration. Sterilized
-  by filtration and stored under N2 gas.
+notes: 'Source: NBRC Medium 1321 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1321
+
+
+  The NBRC Medium for Strain Pf12B table lists pH 7.0 to 7.3, seven nested stock solutions,
+  and sealed-vessel N2/CO2 autoclaving before aseptic anaerobic addition of yeast
+  extract, bicarbonate, vitamin, thiamine, cyanocobalamin, and sulfide solutions.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1321

@@ -27,7 +27,7 @@ ingredients:
     id: CHEBI:26710
     label: sodium chloride
   concentration:
-    value: '30'
+    value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
@@ -81,3 +81,24 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_617a_blood_agar_score10.py
+  action: RESOLVED_KOMODO_617A_BLOOD_AGAR_TOPOLOGY
+  changes: Corrected stale DSMZ Medium 617 NaCl concentration and linked under DSMZ
+    Medium 617a as STRAIN_SPECIFIC_VARIANT
+  source: KOMODO Medium 617a.1
+  notes: KOMODO Medium 617a.1 applies DSMZ Medium 617a to DSM 7232 after correcting
+    the stale DSMZ 617 NaCl concentration.
+parent_media:
+  path: data/normalized_yaml/bacterial/blood_agar_base_oxoid_cm55.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:001747
+  name: blood_agar_base_oxoid_cm55
+  notes: KOMODO Medium 617a.1 applies DSMZ Medium 617a to DSM 7232 after correcting
+    the stale DSMZ 617 NaCl concentration.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
+variant_modifications:
+- KOMODO Medium 617a.1 applies DSMZ Medium 617a to DSM 7232 after correcting the stale
+  DSMZ 617 NaCl concentration.
+data_quality_flags:
+- ingredients_curated

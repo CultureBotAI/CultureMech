@@ -11,12 +11,15 @@ media_term:
   term:
     id: mediadive.medium:P8
     label: M9-SNG medium
-notes: 'Source: public'
+notes: MediaDive public Medium P8 provides M9-SNG medium at pH 7.2 with MgSO4, CaCl2,
+  sinigrin, and M9 stock additions. The public JSON assigned the M9 stock the malformed
+  id 'NaN'; this record preserves the named M9 composition and drops that id.
 ingredients: []
 applications:
 - Microbial cultivation
 references:
 - reference: 10.1007/s11104-022-05822-6
+- reference: https://www.bacmedia.dsmz.de/medium/P8
 curation_history:
 - timestamp: '2026-01-26T17:53:19.847041Z'
   curator: mediadive-import
@@ -40,5 +43,119 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_mediadive_public_score30.py
+  action: RESOLVED_MEDIADIVE_PUBLIC_SCORE30
+  changes: Resolved score-30 public MediaDive placeholder graph
+  source: 10.1007/s11104-022-05822-6; https://www.bacmedia.dsmz.de/medium/P8
+  notes: MediaDive public Medium P8 provides M9-SNG medium at pH 7.2 with MgSO4, CaCl2,
+    sinigrin, and M9 stock additions. The public JSON assigned the M9 stock the malformed
+    id 'NaN'; this record preserves the named M9 composition and drops that id.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+solutions:
+- preferred_term: MgSO4 stock
+  concentration:
+    value: '327.8689'
+    unit: ML_PER_L
+  notes: P8 adds 2 ml MgSO4 stock to a 6.1 ml main solution.
+  composition:
+  - preferred_term: MgSO4
+    concentration:
+      value: '24.65'
+      unit: G_PER_L
+    source: MediaDive public Medium P8
+    term:
+      id: CHEBI:32599
+      label: magnesium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32599
+      label: magnesium sulfate
+- preferred_term: CaCl2 stock
+  concentration:
+    value: '1.63934'
+    unit: ML_PER_L
+  notes: P8 adds 10 uL CaCl2 stock to a 6.1 ml main solution.
+  composition:
+  - preferred_term: CaCl2
+    concentration:
+      value: '14.7'
+      unit: G_PER_L
+    source: MediaDive public Medium P8
+    term:
+      id: CHEBI:3312
+      label: calcium dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:3312
+      label: calcium dichloride
+- preferred_term: Sinigrin stock
+  concentration:
+    value: '327.8689'
+    unit: ML_PER_L
+  notes: P8 adds 2 ml of a 10 g/L sinigrin stock filtered at 0.22 um in sterile water
+    at pH 7.2 to a 6.1 ml main solution.
+  composition:
+  - preferred_term: Sinigrin
+    concentration:
+      value: '10'
+      unit: G_PER_L
+    source: MediaDive public Medium P8
+- preferred_term: M9 stock
+  concentration:
+    value: '327.8689'
+    unit: ML_PER_L
+  notes: P8 adds 2 ml M9 stock to a 6.1 ml main solution. The official public JSON
+    represented this stock with a malformed solution id 'NaN'; CultureMech preserves
+    the named stock and drops that id.
+  composition:
+  - preferred_term: Na2HPO4
+    concentration:
+      value: '64'
+      unit: G_PER_L
+    source: MediaDive public Medium P8
+    term:
+      id: CHEBI:34683
+      label: disodium hydrogenphosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:34683
+      label: disodium hydrogenphosphate
+  - preferred_term: KH2PO4
+    concentration:
+      value: '51'
+      unit: G_PER_L
+    source: MediaDive public Medium P8
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+  - preferred_term: NaCl
+    concentration:
+      value: '2.5'
+      unit: G_PER_L
+    source: MediaDive public Medium P8
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: NH4Cl
+    concentration:
+      value: '5'
+      unit: G_PER_L
+    source: MediaDive public Medium P8
+    term:
+      id: CHEBI:31206
+      label: ammonium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31206
+      label: ammonium chloride
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare M9-SNG with MgSO4, CaCl2, sinigrin, and M9 stock additions;
+    use 0.22 um filtered sinigrin stock prepared in sterile water at pH 7.2.

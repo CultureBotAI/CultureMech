@@ -502,22 +502,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-variant_children:
-- path: data/normalized_yaml/bacterial/helmutkoenigia_medium.yaml
-  relationship: SOURCE_DUPLICATE
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_843_helmutkoenigia_score10.py
+  action: RESOLVED_KOMODO_843_HELMUTKOENIGIA_TOPOLOGY
+  changes: Linked under DSMZ Medium 843 as STRAIN_SPECIFIC_VARIANT
+  source: KOMODO Medium 843.1
+  notes: KOMODO Medium 843.1 applies Helmutkoenigia medium to DSM 13862.
+parent_media:
+  path: data/normalized_yaml/bacterial/helmutkoenigia_medium.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:001999
   name: helmutkoenigia_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/medium_843_modified_for_dsm_18056.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006646
-  name: medium_843_modified_for_dsm_18056
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/treponema_zas_medium.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006648
-  name: treponema_zas_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 843.1 applies Helmutkoenigia medium to DSM 13862.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
+variant_modifications:
+- KOMODO Medium 843.1 applies Helmutkoenigia medium to DSM 13862.
+data_quality_flags:
+- ingredients_curated

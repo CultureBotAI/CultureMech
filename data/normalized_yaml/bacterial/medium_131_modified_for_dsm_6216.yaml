@@ -5,14 +5,360 @@ category: bacterial
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
+ph_value: 7.2
 media_term:
   preferred_term: KOMODO Medium 131_6216
   term:
     id: komodo.medium:131_6216
     label: MEDIUM 131 MODIFIED FOR DSM 6216
-notes: 'Source: KOMODO ModelSEED | ID: 131_6216 | DSMZ Medium: 131 (mediadive.medium:131)
-  | Aerobic: No'
-ingredients: []
+notes: KOMODO Medium 131_6216 records MEDIUM 131 MODIFIED FOR DSM 6216 as an anaerobic,
+  defined derivative of DSMZ Medium 131 with an exact KOMODO metabolite table, including
+  3.00 g/L Na-acetate; archived DSMZ Medium 131 provides the pH 7.2 parent instructions
+  and H2/CO2 and N2 gas context.
+ingredients:
+- preferred_term: KH2PO4
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 0.29 g KH2PO4 per liter.
+  concentration:
+    value: '0.29'
+    unit: G_PER_L
+  term: &id001
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term: *id001
+- preferred_term: CoCl2 x 6 H2O
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 1.67E-3 g CoCl2 x 6 H2O per liter.
+  concentration:
+    value: '0.00167'
+    unit: G_PER_L
+  term: &id002
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  mediaingredientmech_chebi_term: *id002
+- preferred_term: CaCl2 x 2 H2O
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 0.08 g CaCl2 x 2 H2O per liter.
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  term: &id003
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term: *id003
+- preferred_term: Na2S x 9 H2O
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 1.47 g Na2S x 9 H2O per liter.
+  concentration:
+    value: '1.47'
+    unit: G_PER_L
+  term: &id004
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  mediaingredientmech_chebi_term: *id004
+- preferred_term: Pyridoxine-HCl
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 9.80E-5 g Pyridoxine-HCl per liter.
+  concentration:
+    value: '0.0000980'
+    unit: G_PER_L
+  term: &id005
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
+  mediaingredientmech_chebi_term: *id005
+- preferred_term: Thiamine-HCl x 2 H2O
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 4.90E-5 g Thiamine-HCl x 2 H2O per liter.
+  concentration:
+    value: '0.0000490'
+    unit: G_PER_L
+  term: &id006
+    id: CHEBI:132751
+    label: thiamine hydrochloride dihydrate
+  mediaingredientmech_chebi_term: *id006
+- preferred_term: H3BO3
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 9.80E-5 g H3BO3 per liter.
+  concentration:
+    value: '0.0000980'
+    unit: G_PER_L
+  term: &id007
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term: *id007
+- preferred_term: Na2MoO4 x 2 H2O
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 1.08E-4 g Na2MoO4 x 2 H2O per liter.
+  concentration:
+    value: '0.000108'
+    unit: G_PER_L
+  term: &id008
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term: *id008
+- preferred_term: NiCl2 x 6 H2O
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 2.45E-4 g NiCl2 x 6 H2O per liter.
+  concentration:
+    value: '0.000245'
+    unit: G_PER_L
+  term: &id009
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+  mediaingredientmech_chebi_term: *id009
+- preferred_term: MgSO4 x 7 H2O
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 0.18 g MgSO4 x 7 H2O per liter.
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+  term: &id010
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term: *id010
+- preferred_term: Distilled water
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists H2O with null gram and molar amounts.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term: &id011
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term: *id011
+- preferred_term: Cysteine-HCl x H2O
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 1.47 g Cysteine-HCl x H2O per liter.
+  concentration:
+    value: '1.47'
+    unit: G_PER_L
+  term: &id012
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+  mediaingredientmech_chebi_term: *id012
+- preferred_term: Resazurin
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 9.80E-4 g Resazurin per liter.
+  concentration:
+    value: '0.000980'
+    unit: G_PER_L
+  term: &id013
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term: *id013
+- preferred_term: Na2CO3
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 3.92 g Na2CO3 per liter.
+  concentration:
+    value: '3.92'
+    unit: G_PER_L
+  term: &id014
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term: *id014
+- preferred_term: Folic acid
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 1.96E-5 g Folic acid per liter.
+  concentration:
+    value: '0.0000196'
+    unit: G_PER_L
+  term: &id015
+    id: CHEBI:27470
+    label: folic acid
+  mediaingredientmech_chebi_term: *id015
+- preferred_term: Biotin
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 1.96E-5 g Biotin per liter.
+  concentration:
+    value: '0.0000196'
+    unit: G_PER_L
+  term: &id016
+    id: CHEBI:15956
+    label: biotin
+  mediaingredientmech_chebi_term: *id016
+- preferred_term: CuSO4
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 4.90E-4 g CuSO4 per liter.
+  concentration:
+    value: '0.000490'
+    unit: G_PER_L
+  term: &id017
+    id: CHEBI:23414
+    label: copper(II) sulfate
+  mediaingredientmech_chebi_term: *id017
+- preferred_term: K2HPO4
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 0.15 g K2HPO4 per liter.
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  term: &id018
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term: *id018
+- preferred_term: Na-acetate
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 3.00 g Na-acetate per liter.
+  concentration:
+    value: '3.00'
+    unit: G_PER_L
+  term: &id019
+    id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_chebi_term: *id019
+- preferred_term: FeSO4 x 7 H2O
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 4.90E-3 g FeSO4 x 7 H2O per liter.
+  concentration:
+    value: '0.00490'
+    unit: G_PER_L
+  term: &id020
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term: *id020
+- preferred_term: Ca-pantothenate
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 4.90E-5 g Ca-pantothenate per liter.
+  concentration:
+    value: '0.0000490'
+    unit: G_PER_L
+  term: &id021
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  mediaingredientmech_chebi_term: *id021
+- preferred_term: Na2-EDTA
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 6.27E-3 g Na2-EDTA per liter.
+  concentration:
+    value: '0.00627'
+    unit: G_PER_L
+  term: &id022
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
+  mediaingredientmech_chebi_term: *id022
+- preferred_term: Nicotinic acid
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 4.90E-5 g Nicotinic acid per liter.
+  concentration:
+    value: '0.0000490'
+    unit: G_PER_L
+  term: &id023
+    id: CHEBI:15940
+    label: nicotinic acid
+  mediaingredientmech_chebi_term: *id023
+- preferred_term: (NH4)2SO4
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 1.47 g (NH4)2SO4 per liter.
+  concentration:
+    value: '1.47'
+    unit: G_PER_L
+  term: &id024
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term: *id024
+- preferred_term: p-Aminobenzoic acid
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 9.80E-6 g p-Aminobenzoic acid per liter.
+  concentration:
+    value: '0.00000980'
+    unit: G_PER_L
+  term: &id025
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+  mediaingredientmech_chebi_term: *id025
+- preferred_term: KAl(SO4)2 x 12 H2O
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 1.76E-4 g KAl(SO4)2 x 12 H2O per liter.
+  concentration:
+    value: '0.000176'
+    unit: G_PER_L
+  term: &id026
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+  mediaingredientmech_chebi_term: *id026
+- preferred_term: MnSO4 x 4 H2O
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 5.39E-3 g MnSO4 x 4 H2O per liter.
+  concentration:
+    value: '0.00539'
+    unit: G_PER_L
+  term: &id027
+    id: CHEBI:86358
+    label: manganese(II) sulfate tetrahydrate
+  mediaingredientmech_chebi_term: *id027
+- preferred_term: Vitamin B12
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 9.80E-8 g Vitamin B12 per liter.
+  concentration:
+    value: '0.0000000980'
+    unit: G_PER_L
+  term: &id028
+    id: CHEBI:176843
+    label: vitamin B12
+  mediaingredientmech_chebi_term: *id028
+- preferred_term: Riboflavin
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 4.90E-5 g Riboflavin per liter.
+  concentration:
+    value: '0.0000490'
+    unit: G_PER_L
+  term: &id029
+    id: CHEBI:17015
+    label: riboflavin
+  mediaingredientmech_chebi_term: *id029
+- preferred_term: ZnSO4 x 7 H2O
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 1.76E-3 g ZnSO4 x 7 H2O per liter.
+  concentration:
+    value: '0.00176'
+    unit: G_PER_L
+  term: &id030
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term: *id030
+- preferred_term: NaCl
+  source: KOMODO Medium 131_6216
+  notes: KOMODO Medium 131_6216 lists 0.60 g NaCl per liter.
+  concentration:
+    value: '0.60'
+    unit: G_PER_L
+  term: &id031
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term: *id031
+- preferred_term: H2
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 applies an 80:20 H2/CO2 anaerobic atmosphere to
+    DSMZ Medium 131 and its KOMODO 131_6216 derivative.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term: &id032
+    id: CHEBI:18276
+    label: dihydrogen
+  mediaingredientmech_chebi_term: *id032
+- preferred_term: CO2
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 applies an 80:20 H2/CO2 anaerobic atmosphere to
+    DSMZ Medium 131 and its KOMODO 131_6216 derivative.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term: &id033
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term: *id033
+- preferred_term: N2
+  source: Archived DSMZ Medium 131
+  notes: Archived DSMZ Medium 131 applies N2-sterilized reducing solutions to DSMZ
+    Medium 131 and its KOMODO 131_6216 derivative.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term: &id034
+    id: CHEBI:17997
+    label: dinitrogen
+  mediaingredientmech_chebi_term: *id034
 applications:
 - Microbial cultivation
 curation_history:
@@ -35,5 +381,27 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_131_6216_score35.py
+  action: RESOLVED_KOMODO_131_6216_SCORE35
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=131_6216
+  notes: KOMODO Medium 131_6216 records MEDIUM 131 MODIFIED FOR DSM 6216 as an anaerobic,
+    defined derivative of DSMZ Medium 131 with an exact KOMODO metabolite table, including
+    3.00 g/L Na-acetate; archived DSMZ Medium 131 provides the pH 7.2 parent instructions
+    and H2/CO2 and N2 gas context.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
+parent_media:
+  path: data/normalized_yaml/archaea/KOMODO_131_METHANOBACTERIUM_THERMOAUTOTROPHICUM_MEDIUM.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:004074
+  name: methanobacterium_thermoautotrophicum_medium
+variant_relationship: STRAIN_SPECIFIC_VARIANT
+variant_modifications:
+- KOMODO Medium 131_6216 provides DSM 6216-specific concentrations relative to DSMZ
+  Medium 131 and adds 3.00 g/L Na-acetate.
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=131_6216
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=131
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium131.pdf

@@ -78,6 +78,13 @@ curation_history:
     FBS. Vero cells remain preparation agents, not final ingredients; the NCIT-backed
     FBS identity was verified in the MIM SSSOM and retained in notes because the schema
     does not admit it.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_curated_sparse_flags_score40.py
+  action: MARKED_CURATED_SPARSE_SCORE40_GRAPH
+  changes: Tagged reviewed sparse formulation for score-40 ranking
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=996
+  notes: Preserved the reviewed CAR bacillus recipe and marked its sparse conditioned-medium
+    composition as manually curated with unmapped product identities.
 solutions:
 - preferred_term: Clarified Vero E6 cell culture supernatant fluid
   composition:
@@ -99,3 +106,6 @@ solutions:
     unit: PERCENT_V_V
   notes: The final CAR bacillus medium consists entirely of the clarified supernatant
     after Vero E6 conditioning.
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients

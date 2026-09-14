@@ -2,6 +2,7 @@ id: CultureMech:004786
 name: artificial_seawater_medium_1231
 original_name: Artificial seawater (medium 1231)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

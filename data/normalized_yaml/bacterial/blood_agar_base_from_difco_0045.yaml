@@ -2,6 +2,7 @@ id: CultureMech:006515
 name: blood_agar_base_from_difco_0045
 original_name: Blood Agar Base from Difco 0045
 category: bacterial
+record_kind: SOLUTION
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID

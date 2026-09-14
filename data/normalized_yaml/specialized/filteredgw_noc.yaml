@@ -8,8 +8,19 @@ ingredients:
   concentration:
     value: '1.00'
     unit: FOLD_DILUTION
+  term:
+    id: ENVO:01001004
+    label: groundwater
+  notes: CultureBotHT lists GW821 groundwater filtered with a 0.2 um filter at 1.00
+    fold dilution.
+solutions: []
+preparation_steps:
+- step_number: 1
+  action: FILTER
+  description: Filter GW821 groundwater through a 0.2 um filter.
 description: Incubation medium for isolation using ground water as base
-notes: 'Source: FEBA media definitions'
+notes: CultureBotHT imports this no-carbon base as GW821 groundwater filtered with
+  a 0.2 um filter.
 category: specialized
 sources:
 - database: CultureBotHT
@@ -28,5 +39,27 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_culturebotht_specialized_score50.py
+  action: RESOLVED_CULTUREBOTHT_SPECIALIZED_SCORE50_GRAPH
+  changes: Resolved score-50 CultureBotHT specialized recipe graph
+  source: CultureBotHT:FilteredGW noC; https://github.com/CultureBotAI/CultureBotHT
+  notes: CultureBotHT imports this no-carbon base as GW821 groundwater filtered with
+    a 0.2 um filter.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_culturebotht_specialized_score50.py
+  action: LINKED_CULTUREBOTHT_SPECIALIZED_SCORE50_CHILDREN
+  changes: Linked score-50 CultureBotHT specialized child media
+  notes: Added or refreshed reciprocal parent-child link for specialized/filteredgw_cell_lysate_1_250.yaml.
 data_quality_flags:
-- has_unmapped_ingredients
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: CultureBotHT:FilteredGW noC
+- reference: https://github.com/CultureBotAI/CultureBotHT
+variant_children:
+- path: data/normalized_yaml/specialized/filteredgw_cell_lysate_1_250.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:015524
+  name: FilteredGW Cell lysate 1/250
+  notes: Adds 0.004 fold Cell lysate to FilteredGW noC.

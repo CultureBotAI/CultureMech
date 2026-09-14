@@ -11,9 +11,149 @@ media_term:
   term:
     id: komodo.medium:642
     label: CLOSTRIDIUM ESTERTHETICUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 642 | DSMZ Medium: 642 (mediadive.medium:642)
-  | Aerobic: Yes'
-ingredients: []
+notes: Archived DSMZ Medium 642 defines CLOSTRIDIUM ESTERTHETICUM MEDIUM as RCM medium
+  prepared under 80% N2 + 20% CO2, with 2 g/L sodium bicarbonate and 1% glucose added
+  before use from anaerobic stock solutions; this record expands the KOMODO Medium
+  642 RCM component table and adds the DSMZ bicarbonate, glucose, and anaerobic gas
+  components.
+ingredients:
+- preferred_term: sodium bicarbonate
+  source: Archived DSMZ Medium 642
+  notes: Archived DSMZ Medium 642 adds 2 g/L sodium bicarbonate before use.
+  concentration:
+    value: '2.000000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Agar
+  source: KOMODO Medium 642
+  notes: KOMODO Medium 642 expands the RCM base and lists 0.50 g/L agar.
+  concentration:
+    value: '0.500000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract
+  source: KOMODO Medium 642
+  notes: KOMODO Medium 642 expands the RCM base and lists 3.00 g/L yeast extract.
+  concentration:
+    value: '3.000000'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Glucose
+  source: KOMODO Medium 642
+  notes: KOMODO Medium 642 expands total glucose to 15 g/L, corresponding to the RCM
+    base glucose plus the 1% anaerobic glucose stock addition specified by Archived
+    DSMZ Medium 642.
+  concentration:
+    value: '15.000000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17634
+    label: D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
+    label: D-glucose
+- preferred_term: CO2
+  source: Archived DSMZ Medium 642
+  notes: Archived DSMZ Medium 642 prepares the RCM base under 80% N2 + 20% CO2 gas.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
+- preferred_term: Sodium acetate
+  source: KOMODO Medium 642
+  notes: KOMODO Medium 642 expands the RCM base and lists 3.00 g/L sodium acetate.
+  concentration:
+    value: '3.000000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: N2
+  source: Archived DSMZ Medium 642
+  notes: Archived DSMZ Medium 642 prepares the RCM base under 80% N2 + 20% CO2 gas.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: dinitrogen
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17997
+    label: dinitrogen
+- preferred_term: Cysteine hydrochloride
+  source: KOMODO Medium 642
+  notes: KOMODO Medium 642 expands the RCM base and lists 0.50 g/L cysteine hydrochloride.
+  concentration:
+    value: '0.500000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+- preferred_term: Lab-Lemco powder
+  source: KOMODO Medium 642
+  notes: KOMODO Medium 642 expands the RCM base and lists 10.00 g/L Lab-Lemco powder.
+  concentration:
+    value: '10.000000'
+    unit: G_PER_L
+  term:
+    id: FOODON:03302088
+    label: beef extract
+- preferred_term: Sodium chloride
+  source: KOMODO Medium 642
+  notes: KOMODO Medium 642 expands the RCM base and lists 5.00 g/L sodium chloride.
+  concentration:
+    value: '5.000000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Soluble starch
+  source: KOMODO Medium 642
+  notes: KOMODO Medium 642 expands the RCM base and lists 1.00 g/L soluble starch.
+  concentration:
+    value: '1.000000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:28017
+    label: starch
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
+    label: starch
+- preferred_term: Peptone
+  source: KOMODO Medium 642
+  notes: KOMODO Medium 642 expands the RCM base and lists 10.00 g/L peptone.
+  concentration:
+    value: '10.000000'
+    unit: G_PER_L
+  term:
+    id: FOODON:03302071
+    label: peptone
 applications:
 - Microbial cultivation
 curation_history:
@@ -36,5 +176,18 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_642_score30.py
+  action: RESOLVED_KOMODO_642_SCORE30
+  source: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium642.pdf
+  notes: Archived DSMZ Medium 642 defines CLOSTRIDIUM ESTERTHETICUM MEDIUM as RCM
+    medium prepared under 80% N2 + 20% CO2, with 2 g/L sodium bicarbonate and 1% glucose
+    added before use from anaerobic stock solutions; this record expands the KOMODO
+    Medium 642 RCM component table and adds the DSMZ bicarbonate, glucose, and anaerobic
+    gas components.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=642
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium642.pdf

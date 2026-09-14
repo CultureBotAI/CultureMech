@@ -6,25 +6,31 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: DI Water
+- preferred_term: DI water
   concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1.0'
+    unit: L
+  source: TOGO M2288
+  notes: TOGO M2288 lists 1000 ml deionized water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Brucella Broth (BD 211088)
   concentration:
     value: '28'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  source: TOGO M2288
+  notes: TOGO M2288 lists 28 g Brucella Broth (BD 211088) per liter.
 media_term:
   preferred_term: TOGO Medium M2288
   term:
     id: TOGO:M2288
     label: Brucella albimi Broth
-notes: 'Source: https://togomedium.org/medium/M2288
-
-  Original URL: https://www.atcc.org/~/media/F163104383194581BB0A1890306A732B.ashx'
+notes: 'TOGO M2288 lists the ATCC Brucella albimi broth recipe: 28 g Brucella Broth
+  (BD 211088) in 1000 ml DI water, sterilized by autoclaving at 121 C.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -41,3 +47,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Brucella albimi Broth" to "brucella_albimi_broth" for
     consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_literal_products_score40.py
+  action: RESOLVED_TOGO_LITERAL_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO literal product/additive graph
+  source: https://togomedium.org/medium/M2288; https://www.atcc.org/~/media/F163104383194581BB0A1890306A732B.ashx
+  notes: 'TOGO M2288 lists the ATCC Brucella albimi broth recipe: 28 g Brucella Broth
+    (BD 211088) in 1000 ml DI water, sterilized by autoclaving at 121 C.'
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave the dissolved medium at 121 C.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2288
+- reference: https://www.atcc.org/~/media/F163104383194581BB0A1890306A732B.ashx

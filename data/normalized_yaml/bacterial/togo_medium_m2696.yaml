@@ -10,23 +10,33 @@ ingredients:
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Properties: Undefined component'
+  source: TOGO M2696
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+  notes: TOGO M2696 lists 0.2% Yeast extract from Difco.
 - preferred_term: Trypticase (BBL)
   concentration:
     value: '1'
     unit: PERCENT_W_V
-  notes: 'Properties: Undefined component'
+  source: TOGO M2696
+  term:
+    id: MICRO:0000175
+    label: Trypticase peptone
+  notes: TOGO M2696 lists 1% Trypticase from BBL.
 - preferred_term: Antifoam (Union Carbide Corp., SAG-471)
-  notes: 'Role: Defoaming agent; Properties: Defined component, Simple component'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M2696
+  notes: TOGO M2696 lists Union Carbide SAG-471 antifoam without stating an amount.
 media_term:
   preferred_term: TOGO Medium M2696
   term:
     id: TOGO:M2696
     label: TOGO Medium M2696
-notes: 'Source: https://togomedium.org/medium/M2696'
+notes: TOGO M2696 records 0.2% Yeast extract from Difco, 1% Trypticase from BBL, and
+  Union Carbide SAG-471 antifoam without disclosing a target antifoam amount.
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,3 +62,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_m2696_score25.py
+  action: RESOLVED_TOGO_M2696_SCORE25
+  changes: Added source metadata and groundings to TOGO M2696
+  source: https://togomedium.org/medium/M2696
+  notes: TOGO M2696 records 0.2% Yeast extract from Difco, 1% Trypticase from BBL,
+    and Union Carbide SAG-471 antifoam without disclosing a target antifoam amount.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2696

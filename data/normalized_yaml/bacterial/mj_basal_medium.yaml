@@ -273,6 +273,13 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m943_microaerophilic_autotrophs_score15.py
+  action: REMOVED_STALE_J902_VARIANT_EDGE
+  source: https://mediadive.dsmz.de/medium/J902; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=902
+  notes: Removed the MJ Medium for Microaerophilic Autotrophs child edge because it
+    was based on MediaDive's flattened bicarbonate and thiosulfate stock volumes,
+    not on the nested JCM Medium 902 source recipe.
 variant_children:
 - path: data/normalized_yaml/bacterial/mj_n_basal_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -280,10 +287,3 @@ variant_children:
   name: mj_n_basal_medium
   notes: Same ingredient and concentration signature; review as possible duplicate
     source record.
-- path: data/normalized_yaml/bacterial/mj_medium_for_microaerophilic_autotrophs.yaml
-  relationship: CONCENTRATION_VARIANT
-  id: CultureMech:003251
-  name: mj_medium_for_microaerophilic_autotrophs
-  notes: Reviewed MJ basal/autotroph pair; child keeps the marine salt, trace metal,
-    and vitamin base unchanged but raises NaHCO3 from 1.4985 to 5 g/L and Na2S2O3
-    x 5 H2O from 1.4985 to 15 g/L, with pH 5.5 recorded in the child.

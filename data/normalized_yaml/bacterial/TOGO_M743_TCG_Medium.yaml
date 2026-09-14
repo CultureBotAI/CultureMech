@@ -6,18 +6,26 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Artificial seawater
+- preferred_term: Tryptone (BD-Difco)
   concentration:
-    value: '1'
+    value: '3'
     unit: G_PER_L
-  notes: 'Role: Mineral source, Solvating media; Properties: Complex component, Defined
-    component, Solution'
+  source: TOGO M743 / JCM Medium 720
+  notes: TOGO M743 / JCM Medium 720 lists the BD-Difco tryptone product; the product
+    is source-disclosed but not reducible to one ChEBI molecule.
+- preferred_term: Casitone (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  source: TOGO M743 / JCM Medium 720
+  notes: TOGO M743 / JCM Medium 720 lists the BD-Difco Casitone product; the product
+    is source-disclosed but not reducible to one ChEBI molecule.
 - preferred_term: Glucose
   concentration:
     value: '4'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  source: TOGO M743 / JCM Medium 720
+  notes: TOGO M743 / JCM Medium 720 lists 4 g glucose.
   term:
     id: CHEBI:17234
     label: glucose
@@ -28,23 +36,21 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M743 / JCM Medium 720
+  notes: TOGO M743 / JCM Medium 720 lists 15 g agar.
   term:
     id: CHEBI:2509
     label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
-- preferred_term: Tryptone (BD-Difco)
+- preferred_term: Artificial seawater
   concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Casitone (BD-Difco)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M743 / JCM Medium 720
+  notes: TOGO M743 / JCM Medium 720 lists 1.0 L artificial seawater; the seawater
+    stock is a source-disclosed mixture, not a single ChEBI molecule.
 media_term:
   preferred_term: TOGO Medium M743
   term:
@@ -84,4 +90,26 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_tcg_a1_seawater_score15.py
+  action: RESOLVED_TCG_A1_SEAWATER_SCORE15
+  source: https://togomedium.org/medium/M743; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=720
+  notes: TOGO M743 mirrors JCM Medium 720 with 3 g Tryptone (BD-Difco), 5 g Casitone
+    (BD-Difco), 4 g glucose, 15 g agar, and 1 L artificial seawater.
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J720_TCG_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003065
+  name: tcg_medium
+  notes: TOGO M743 mirrors JCM Medium 720.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Source-catalogue duplicate of JCM Medium 720; TOGO M743 preserves the same formulation.
 kg_microbe_match: mediadive.medium:7
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M743
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=720

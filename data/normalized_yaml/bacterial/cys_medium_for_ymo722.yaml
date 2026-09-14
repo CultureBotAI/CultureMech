@@ -5,159 +5,287 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.5
 media_term:
   preferred_term: JCM Medium J619
   term:
     id: mediadive.medium:J619
     label: CYS MEDIUM FOR YMO722
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=619'
+notes: JCM Medium 619 CYS Medium for YMO722 uses JCM Medium 618 with 16.0 g/L final
+  NaCl.
+solutions:
+- preferred_term: Na2MoO4 x 2 H2O stock
+  concentration:
+    value: '0.1'
+    unit: ML_PER_L
+  source: MediaDive J619 / JCM Medium 619
+  notes: MediaDive J619 / JCM Medium 619 adds 100 uL of 12.0 g/L Na2MoO4 x 2 H2O.
+  composition:
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '12.0'
+      unit: G_PER_L
+    source: MediaDive J619 / JCM Medium 619
+    notes: Na2MoO4 x 2 H2O stock is represented as a 12.0 g/L Na2MoO4 x 2 H2O stock.
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+- preferred_term: VOSO4 x n H2O stock
+  concentration:
+    value: '0.1'
+    unit: ML_PER_L
+  source: MediaDive J619 / JCM Medium 619
+  notes: MediaDive J619 / JCM Medium 619 adds 100 uL of 1.0 g/L VOSO4 x n H2O.
+  composition:
+  - preferred_term: VOSO4 x n H2O
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: MediaDive J619 / JCM Medium 619
+    notes: VOSO4 x n H2O stock is represented as a 1.0 g/L VOSO4 x n H2O stock.
+    term:
+      id: CHEBI:87020
+      label: vanadyl sulfate hydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:87020
+      label: vanadyl sulfate hydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+- preferred_term: MnCl2 x 4 H2O stock
+  concentration:
+    value: '0.1'
+    unit: ML_PER_L
+  source: MediaDive J619 / JCM Medium 619
+  notes: MediaDive J619 / JCM Medium 619 adds 100 uL of 5.0 g/L MnCl2 x 4 H2O in 0.01
+    N H2SO4.
+  composition:
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '5.0'
+      unit: G_PER_L
+    source: MediaDive J619 / JCM Medium 619
+    notes: MnCl2 x 4 H2O stock is represented as a 5.0 g/L MnCl2 x 4 H2O stock in
+      0.01 N H2SO4.
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+- preferred_term: ZnSO4 x 7 H2O stock
+  concentration:
+    value: '0.1'
+    unit: ML_PER_L
+  source: MediaDive J619 / JCM Medium 619
+  notes: MediaDive J619 / JCM Medium 619 adds 100 uL of 0.6 g/L ZnSO4 x 7 H2O in 0.01
+    N H2SO4.
+  composition:
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.6'
+      unit: G_PER_L
+    source: MediaDive J619 / JCM Medium 619
+    notes: ZnSO4 x 7 H2O stock is represented as a 0.6 g/L ZnSO4 x 7 H2O stock in
+      0.01 N H2SO4.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+- preferred_term: CuSO4 x 5 H2O stock
+  concentration:
+    value: '0.1'
+    unit: ML_PER_L
+  source: MediaDive J619 / JCM Medium 619
+  notes: MediaDive J619 / JCM Medium 619 adds 100 uL of 0.15 g/L CuSO4 x 5 H2O in
+    0.01 N H2SO4.
+  composition:
+  - preferred_term: CuSO4 x 5 H2O
+    concentration:
+      value: '0.15'
+      unit: G_PER_L
+    source: MediaDive J619 / JCM Medium 619
+    notes: CuSO4 x 5 H2O stock is represented as a 0.15 g/L CuSO4 x 5 H2O stock in
+      0.01 N H2SO4.
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+- preferred_term: CoCl2 x 6 H2O stock
+  concentration:
+    value: '0.1'
+    unit: ML_PER_L
+  source: MediaDive J619 / JCM Medium 619
+  notes: MediaDive J619 / JCM Medium 619 adds 100 uL of 8.0 g/L CoCl2 x 6 H2O in 0.01
+    N H2SO4.
+  composition:
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '8.0'
+      unit: G_PER_L
+    source: MediaDive J619 / JCM Medium 619
+    notes: CoCl2 x 6 H2O stock is represented as a 8.0 g/L CoCl2 x 6 H2O stock in
+      0.01 N H2SO4.
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+- preferred_term: NiCl2 x 6 H2O stock
+  concentration:
+    value: '0.1'
+    unit: ML_PER_L
+  source: MediaDive J619 / JCM Medium 619
+  notes: MediaDive J619 / JCM Medium 619 adds 100 uL of 0.2 g/L NiCl2 x 6 H2O in 0.01
+    N H2SO4.
+  composition:
+  - preferred_term: NiCl2 x 6 H2O
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    source: MediaDive J619 / JCM Medium 619
+    notes: NiCl2 x 6 H2O stock is represented as a 0.2 g/L NiCl2 x 6 H2O stock in
+      0.01 N H2SO4.
+    term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
 ingredients:
-- preferred_term: N-Z-Case
+- preferred_term: N-Z-Case (Wako)
   concentration:
-    value: '3.33333'
+    value: '3.0'
     unit: G_PER_L
-  notes: Copied from referenced JCM Medium 618
-- preferred_term: Yeast extract
+  source: MediaDive J619 / JCM Medium 619
+  notes: MediaDive J619 / JCM Medium 619 lists 3.0 g/L N-Z-Case (Wako).
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: '2.22222'
+    value: '2.0'
     unit: G_PER_L
-  notes: Copied from referenced JCM Medium 618
-- preferred_term: Starch
+  source: MediaDive J619 / JCM Medium 619
+  notes: MediaDive J619 / JCM Medium 619 lists 2.0 g/L Yeast extract (BD-Difco).
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Soluble starch (BD-Difco)
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: MediaDive J619 / JCM Medium 619
+  notes: MediaDive J619 / JCM Medium 619 lists 1.0 g/L Soluble starch (BD-Difco).
   term:
     id: CHEBI:28017
     label: starch
-  concentration:
-    value: '1.11111'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
     label: starch
-  notes: Copied from referenced JCM Medium 618
+  nutritional_roles:
+  - CARBON_SOURCE
 - preferred_term: NaCl
+  concentration:
+    value: '16.0'
+    unit: G_PER_L
+  source: MediaDive J619 / JCM Medium 619
+  notes: MediaDive J619 / JCM Medium 619 lists 16.0 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
-  concentration:
-    value: '22.2222'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
-  notes: Copied from referenced JCM Medium 618
 - preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '0.125'
+    unit: G_PER_L
+  source: MediaDive J619 / JCM Medium 619
+  notes: MediaDive J619 / JCM Medium 619 lists 0.125 g/L MgCl2 x 6 H2O.
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  concentration:
-    value: '0.138889'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  notes: Copied from referenced JCM Medium 618
 - preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  source: MediaDive J619 / JCM Medium 619
+  notes: MediaDive J619 / JCM Medium 619 lists 0.025 g/L CaCl2 x 2 H2O.
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  concentration:
-    value: '0.0277778'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  notes: Copied from referenced JCM Medium 618
 - preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: MediaDive J619 / JCM Medium 619
+  notes: MediaDive J619 / JCM Medium 619 lists 0.01 g/L FeSO4 x 7 H2O.
   term:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
-  concentration:
-    value: '0.0111111'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
-  notes: Copied from referenced JCM Medium 618
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
+- preferred_term: Distilled water
   concentration:
-    value: '100'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
-  notes: Copied from referenced JCM Medium 618
-- preferred_term: VOSO4 x n H2O
+    value: '900.0'
+    unit: ML_PER_L
+  source: MediaDive J619 / JCM Medium 619
+  notes: MediaDive J619 / JCM Medium 619 lists 900 ml distilled water before pH adjustment.
   term:
-    id: CHEBI:87020
-    label: vanadyl sulfate hydrate
-  concentration:
-    value: '100'
-    unit: G_PER_L
+    id: CHEBI:15377
+    label: water
   mediaingredientmech_chebi_term:
-    id: CHEBI:87020
-    label: vanadyl sulfate hydrate
-  notes: Copied from referenced JCM Medium 618
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-  notes: Copied from referenced JCM Medium 618
-- preferred_term: ZnSO4 x 7 H2O
-  term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-  notes: Copied from referenced JCM Medium 618
-- preferred_term: CuSO4 x 5 H2O
-  term:
-    id: CHEBI:31440
-    label: copper(II) sulfate pentahydrate
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31440
-    label: copper(II) sulfate pentahydrate
-  notes: Copied from referenced JCM Medium 618
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:53503
-    label: cobalt chloride hexahydrate
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:53503
-    label: cobalt chloride hexahydrate
-  notes: Copied from referenced JCM Medium 618
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: nickel dichloride
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:34887
-    label: nickel dichloride
-  notes: Copied from referenced JCM Medium 618
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 618 with 16.0 g/L (final) NaCl.
+  description: Add the base components to 900 ml distilled water and mix thoroughly.
+- step_number: 2
+  action: MIX
+  description: Add each trace-metal stock solution at 0.1 ml/L in the listed order.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 7.5, bring the volume to 1.0 L with distilled water, and
+    autoclave.
+- step_number: 4
+  action: HEAT
+  description: Inoculate into the medium prewarmed to the optimal growth temperature.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: JCM's default instruction is to autoclave media at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -194,14 +322,34 @@ curation_history:
   notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m627_m628_score15.py
+  action: RESOLVED_JCM_619_CYS_YMO722
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=619; https://mediadive.dsmz.de/medium/J619;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=618
+  notes: Expanded the JCM Medium 619 wrapper into the corrected JCM 618 recipe with
+    16.0 g/L final NaCl, represented the seven 100 uL trace-metal additions as stock
+    solutions, added CHEBI groundings, and linked JCM 618 and TOGO M628.
 data_quality_flags:
-- resolved_reference
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
 parent_media:
   path: data/normalized_yaml/bacterial/JCM_J618_CYS_MEDIUM.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: SALINITY_VARIANT
   id: CultureMech:002965
   name: cys_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: JCM Medium 619 uses JCM Medium 618 with 16.0 g/L final NaCl.
+variant_relationship: SALINITY_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- NaCl decreased from 20.0 g/L to 16.0 g/L final concentration.
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M628_CYS_Medium_For_YMO722.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010028
+  name: cys_medium_for_ymo722
+  notes: TOGO M628 imports the same JCM Medium 619 CYS Medium for YMO722 recipe.
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=619
+- reference: https://mediadive.dsmz.de/medium/J619
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=618

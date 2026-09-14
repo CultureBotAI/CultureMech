@@ -5,74 +5,119 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
-- preferred_term: Distilled water, make up to
+- preferred_term: Potato
   concentration:
-    value: '1'
+    value: '200'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: CaCO3
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Simple
-    component, Inorganic compound'
-  term:
-    id: CHEBI:3311
-    label: calcium carbonate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:3311
-    label: calcium carbonate
-- preferred_term: Glycerol
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:17754
-    label: glycerol
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17754
-    label: glycerol
+  source: NBRC Medium 202
+  notes: NBRC Medium 202 lists 200 g/L potato; the source footnote says to gently
+    boil sliced potatoes in 500 ml water for 30 min and remove solids by filtration
+    through cloth.
 - preferred_term: Press yeast
   concentration:
     value: '30'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: NBRC Medium 202
+  notes: NBRC Medium 202 lists 30 g/L Press yeast.
+- preferred_term: Liver infusion
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  source: NBRC Medium 202
+  notes: NBRC Medium 202 lists liver infusion from 25 g/L liver; the source footnote
+    says to gently boil sliced liver in 150 ml water for 30 min and remove solids
+    by filtration through cloth.
+- preferred_term: Meat extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  source: NBRC Medium 202
+  notes: NBRC Medium 202 lists 5 g/L Meat extract.
+- preferred_term: Thioglycolate Medium Dehydrated
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  source: NBRC Medium 202
+  notes: NBRC Medium 202 lists 10 g/L Thioglycolate Medium Dehydrated from Wako Pure
+    Chemical Industries.
 - preferred_term: Glucose
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  source: NBRC Medium 202
+  notes: NBRC Medium 202 lists 5 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  nutritional_roles:
+  - CARBON_SOURCE
+- preferred_term: Glycerol
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  source: NBRC Medium 202
+  notes: NBRC Medium 202 lists 15 g/L Glycerol.
+  term:
+    id: CHEBI:17754
+    label: glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
+    label: glycerol
+  nutritional_roles:
+  - CARBON_SOURCE
+- preferred_term: CaCO3
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  source: NBRC Medium 202
+  notes: NBRC Medium 202 lists 15 g/L CaCO3.
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: NBRC Medium 202
+  notes: NBRC Medium 202 lists distilled water to 1 L.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Meat extract
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: NBRC Medium 202
+  notes: NBRC Medium 202 lists 15 g/L agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 media_term:
   preferred_term: TOGO Medium M1442
   term:
     id: TOGO:M1442
     label: TOGO Medium M1442
-notes: 'Source: https://togomedium.org/medium/M1442
-
-  Original source: NBRC - NBRC_M202
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=202'
+notes: 'TOGO M1442 imports NBRC Medium 202: NBRC Medium 201 supplemented with 15 g/L
+  CaCO3. The formula lists 200 g/L potato, 30 g/L press yeast, liver infusion from
+  25 g/L liver, 5 g/L meat extract, 10 g/L Thioglycolate Medium Dehydrated from Wako
+  Pure Chemical Industries, 5 g/L glucose, 15 g/L glycerol, distilled water to 1 L,
+  15 g/L agar if needed, and pH 7.0.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -122,25 +167,43 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
-solutions:
-- preferred_term: Potato*
-  composition: []
-  concentration:
-    value: '200'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-  name: Unknown solution
-- preferred_term: Liver infusion from*
-  composition: []
-  concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-  name: Unknown solution
-- preferred_term: Thioglycolate Medium Dehydrated**
-  composition: []
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-  name: Unknown solution
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nbrc201_202_score15.py
+  action: RESOLVED_NBRC201_202_SCORE15
+  source: https://togomedium.org/medium/M1442; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=202
+  notes: Curated TOGO:M1442 from TOGO and NBRC Medium 202; corrected the imported
+    distilled-water unit, moved footnoted potato, liver, and thioglycolate rows out
+    of empty solution wrappers, added pH 7.0, grounded disclosed simple components,
+    and linked the NBRC 202 CaCO3 variant.
+parent_media:
+  path: data/normalized_yaml/bacterial/togo_medium_m1441.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:007981
+  name: togo_medium_m1441
+  notes: NBRC Medium 202 adds 15 g/L CaCO3 to NBRC Medium 201.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Adds 15 g/L CaCO3 to NBRC Medium 201.
+preparation_steps:
+- step_number: 1
+  action: FILTER
+  description: Gently boil sliced potatoes in 500 ml water for 30 min, then remove
+    solids by filtration through cloth.
+- step_number: 2
+  action: FILTER
+  description: Gently boil sliced liver in 150 ml water for 30 min, then remove solids
+    by filtration through cloth.
+- step_number: 3
+  action: MIX
+  description: Mix the potato filtrate, liver infusion, remaining components, and
+    distilled water.
+- step_number: 4
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1442
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=202

@@ -394,34 +394,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-variant_children:
-- path: data/normalized_yaml/bacterial/for_dsm_22612.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:004737
-  name: for_dsm_22612
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/medium_282_modified_for_dsm_16983.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:004735
-  name: medium_282_modified_for_dsm_16983
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/medium_282_modified_for_dsm_5666.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:004738
-  name: medium_282_modified_for_dsm_5666
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/methanocaldococcus_medium.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:001378
-  name: methanocaldococcus_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/methanococcus_jannaschii_medium.yaml
-  relationship: SOURCE_DUPLICATE
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_282_methanococcus_score10.py
+  action: RESOLVED_KOMODO_282_METHANOCOCCUS_TOPOLOGY
+  changes: Linked under KOMODO Medium 282 as STRAIN_SPECIFIC_VARIANT
+  source: KOMODO Medium 282.1
+  notes: KOMODO Medium 282.1 applies KOMODO Medium 282 to DSM 22549.
+parent_media:
+  path: data/normalized_yaml/archaea/methanococcus_jannaschii_medium.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:004739
   name: methanococcus_jannaschii_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 282.1 applies KOMODO Medium 282 to DSM 22549.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
+variant_modifications:
+- KOMODO Medium 282.1 applies KOMODO Medium 282 to DSM 22549.
+data_quality_flags:
+- ingredients_curated

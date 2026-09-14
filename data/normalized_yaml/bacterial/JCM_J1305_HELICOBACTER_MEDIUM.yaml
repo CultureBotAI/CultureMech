@@ -5,6 +5,10 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+temperature_value: 37.0
+incubation_atmosphere: MICROAEROPHILIC
+aeration: 5% O2, 12% CO2, shaking at 50 rpm
+culture_vessel: 25 cm2 polystyrene culture flask
 media_term:
   preferred_term: JCM Medium J1305
   term:
@@ -12,43 +16,82 @@ media_term:
     label: HELICOBACTER MEDIUM
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1305'
 ingredients:
-- preferred_term: Brucella Broth
+- preferred_term: Brucella broth (BD-BBL)
   concentration:
-    value: '27.451'
+    value: '28'
     unit: G_PER_L
-- preferred_term: Fetal bovine serum
+  source: JCM Medium 1305
+  notes: JCM Medium 1305 lists 2.8 g Brucella broth (BD-BBL) in an 80 ml distilled-water
+    base; this row is normalized 10x to one liter and the BD-BBL product is not reducible
+    to one ChEBI molecule.
+- preferred_term: Distilled water
+  concentration:
+    value: '800'
+    unit: ML_PER_L
+  source: JCM Medium 1305
+  notes: JCM Medium 1305 lists 80.0 ml distilled water in the source batch; this row
+    is normalized 10x to one liter.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Conc. HCl
+  concentration:
+    value: '1.35'
+    unit: ML_PER_L
+  source: JCM Medium 1305
+  notes: JCM Medium 1305 adds 135 microliter concentrated HCl after autoclaving; this
+    row is normalized 10x to one liter.
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+- preferred_term: Fetal bovine serum (Biowest; heat inactivated)
+  concentration:
+    value: '200'
+    unit: ML_PER_L
+  source: JCM Medium 1305
+  notes: JCM Medium 1305 aseptically adds 20.0 ml heat-inactivated fetal bovine serum
+    from Biowest; this row is normalized 10x to one liter.
+- preferred_term: Vitox (Oxoid)
   concentration:
     value: '20'
-    unit: G_PER_L
-- preferred_term: Vitox
+    unit: ML_PER_L
+  source: JCM Medium 1305
+  notes: JCM Medium 1305 aseptically adds 2.0 ml Vitox prepared from one Oxoid vial
+    in 10 ml rehydration fluid; this row is normalized 10x to one liter.
+- preferred_term: Skirrow supplement (Oxoid)
   concentration:
-    value: '2'
-    unit: G_PER_L
-- preferred_term: Skirrow supplement
+    value: '4'
+    unit: ML_PER_L
+  source: JCM Medium 1305
+  notes: JCM Medium 1305 aseptically adds 0.4 ml Skirrow supplement prepared from
+    one Oxoid vial in 2 ml sterile purified water; this row is normalized 10x to one
+    liter.
+- preferred_term: Amphotericin B (5 mg/ml DMSO)
   concentration:
-    value: '0.4'
-    unit: G_PER_L
-- preferred_term: Amphotericin B
-  term:
-    id: CHEBI:2682
-    label: amphotericin B
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2682
-    label: amphotericin B
+    value: '1'
+    unit: ML_PER_L
+  source: JCM Medium 1305
+  notes: JCM Medium 1305 aseptically adds 100 microliter of the 5 mg/ml amphotericin
+    B in DMSO stock; this row is normalized 10x to one liter and represents a stock
+    solution, not neat amphotericin B.
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave. After cooling to 50C and add aseptically 135 ï¿½l of conc.
-    HCl (final conc. 0.05%). Then add aseptically the following solutions.
+  description: Autoclave Brucella broth in distilled water and cool to 50 C.
 - step_number: 2
   action: MIX
-  description: 'For stable culture, incubate the microorganisms in 5 ml of above-mentioned
-    broth in a polystyrene culture flask (25 cmz2 flask, canted neck, vent cap, AS
-    ONE: Cat. No. 2-8589-01) at 37C under a 5% O2 and 12% CO2 atmosphere (with shaking
-    at low speed; 50 rpm).'
+  description: Aseptically add concentrated HCl, heat-inactivated fetal bovine serum,
+    Vitox, Skirrow supplement, and amphotericin B in DMSO at the JCM Medium 1305 proportions.
+- step_number: 3
+  action: MIX
+  description: For stable culture, incubate 5 ml broth in a 25 cm2 polystyrene culture
+    flask at 37 C under 5% O2 and 12% CO2 with shaking at 50 rpm.
 applications:
 - Microbial cultivation
 curation_history:
@@ -75,3 +118,23 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_jcm_1305_helicobacter_score15.py
+  action: RESOLVED_JCM_1305_HELICOBACTER_SCORE15
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1305
+  notes: JCM Medium 1305 lists an 80 ml Brucella broth base acidified with 135 microliter
+    concentrated HCl after autoclaving, then aseptic addition of 20 ml heat-inactivated
+    fetal bovine serum, 2 ml Vitox, 0.4 ml Skirrow supplement, and 100 microliter
+    amphotericin B stock; amounts are normalized 10x from the source batch.
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M1402_Helicobacter_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:007939
+  name: helicobacter_medium
+  notes: TOGO M1402 mirrors the same JCM Medium 1305 formula.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1305

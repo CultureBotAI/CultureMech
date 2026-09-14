@@ -8,14 +8,19 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Man-Rogosa-Sharpe (MRS) broth (Biokar Diagnostic, Beauvais, France)
   concentration:
-    value: '1'
-    unit: G_PER_L
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2495
+  notes: TOGO M2495 records one liter of Man-Rogosa-Sharpe (MRS) broth (Biokar Diagnostic,
+    Beauvais, France) as an opaque product.
 media_term:
   preferred_term: TOGO Medium M2495
   term:
     id: TOGO:M2495
     label: Man-Rogosa-Sharpe (MRS) broth
-notes: 'Source: https://togomedium.org/medium/M2495'
+notes: TOGO M2495 records De Man-Rogosa-Sharpe broth from Biokar Diagnostic grown
+  anaerobically under Gaspak H2+CO2 at 37 C for 24 h; the source does not disclose
+  the product's internal formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -32,3 +37,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Man-Rogosa-Sharpe (MRS) broth" to "man_rogosa_sharpe_mrs_broth"
     for consistent matching
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_togo_mrs_2xyt_score40.py
+  action: RESOLVED_TOGO_MRS_2XYT_SCORE40
+  changes: Resolved score-40 TOGO MRS/2xYT one-liter product row
+  source: https://togomedium.org/medium/M2495
+  notes: TOGO M2495 records De Man-Rogosa-Sharpe broth from Biokar Diagnostic grown
+    anaerobically under Gaspak H2+CO2 at 37 C for 24 h; the source does not disclose
+    the product's internal formulation.
+temperature_value: 37.0
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use one liter of Man-Rogosa-Sharpe (MRS) broth (Biokar Diagnostic,
+    Beauvais, France).
+- step_number: 2
+  action: MIX
+  description: Grow under anaerobic Gaspak H2+CO2 conditions for 24 h at 37 C.
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2495

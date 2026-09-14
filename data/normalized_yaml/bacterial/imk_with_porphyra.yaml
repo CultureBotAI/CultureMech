@@ -5,17 +5,21 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
-ingredients: []
+ingredients:
+- preferred_term: Porphyra yezoensis thalli cultivated in IMK medium with seawater
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: NBRC Medium 984
+  notes: NBRC Medium 984 lists the disclosed composition as Thalli of Porphyra yezoensis
+    cultivated in IMK medium (with seawater).
 media_term:
   preferred_term: TOGO Medium M1769
   term:
     id: TOGO:M1769
     label: IMK with Porphyra
-notes: 'Source: https://togomedium.org/medium/M1769
-
-  Original source: NBRC - NBRC_M984
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=984'
+notes: NBRC Medium 984 records IMK with Porphyra as the disclosed opaque composition
+  of Porphyra yezoensis thalli cultivated in IMK medium with seawater.
 applications:
 - Microbial cultivation
 curation_history:
@@ -42,5 +46,15 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_imk_porphyra_score35.py
+  action: RESOLVED_IMK_PORPHYRA_SCORE35
+  source: https://togomedium.org/medium/M1769; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=984
+  notes: NBRC Medium 984 records IMK with Porphyra as the disclosed opaque composition
+    of Porphyra yezoensis thalli cultivated in IMK medium with seawater.
 data_quality_flags:
-- incomplete_composition
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1769
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=984

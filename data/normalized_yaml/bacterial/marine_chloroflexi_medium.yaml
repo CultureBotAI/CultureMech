@@ -6,27 +6,101 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: sodium pyruvate
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
-  term:
-    id: CHEBI:50144
-    label: sodium pyruvate
+- preferred_term: KH2PO4
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '0.1'
+    unit: G_PER_L
+  source: JCM Medium 1188
+  notes: JCM Medium 1188 lists 0.1 g/L.
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
-    id: CHEBI:50144
-    label: sodium pyruvate
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '4.0'
+    unit: G_PER_L
+  source: JCM Medium 1188
+  notes: JCM Medium 1188 lists 4.0 g/L.
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 1188
+  notes: JCM Medium 1188 lists 1.0 g/L.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: JCM Medium 1188
+  notes: JCM Medium 1188 lists 0.5 g/L.
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: NaCl
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: JCM Medium 1188
+  notes: JCM Medium 1188 lists 5.0 g/L.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 1188
+  notes: JCM Medium 1188 lists 1.0 g/L.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Peptone
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 1188
+  notes: JCM Medium 1188 lists 1.0 g/L.
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: JCM Medium 1188
+  notes: JCM Medium 1188 lists 1000 ml/L.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M1273
   term:
     id: TOGO:M1273
     label: Marine Chloroflexi Medium
-notes: 'Source: https://togomedium.org/medium/M1273
-
-  Original source: JCM - JCM_M1188
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1188'
+notes: TOGO M1273 points to JCM Medium 1188; the current JCM Medium 1188 formulation
+  contains mineral salts, yeast extract, peptone, referenced trace vitamin/mineral/Se-W
+  solutions, four post-autoclave anaerobic stocks, distilled water, and pH 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -73,12 +147,123 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_1188_score20.py
+  action: RESOLVED_JCM_1188_SCORE20_GRAPH
+  source: https://togomedium.org/medium/M1273; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1188;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=284; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852
+  notes: TOGO M1273 points to JCM Medium 1188; the current JCM Medium 1188 formulation
+    contains mineral salts, yeast extract, peptone, referenced trace vitamin/mineral/Se-W
+    solutions, four post-autoclave anaerobic stocks, distilled water, and pH 7.0.
 solutions:
-- preferred_term: MARINE CLOSTRIDIUM MEDIUM (see Medium [M1272])
-  composition: []
-  notes: Cross-reference to Medium M1272
+- preferred_term: Trace vitamins solution
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '2.0'
+    unit: ML_PER_L
+  notes: JCM Medium 1188 lists 2.0 ml/L Trace vitamins solution from JCM Medium 284.
+- preferred_term: Trace mineral solution
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  notes: JCM Medium 1188 lists 1.0 ml/L Trace mineral solution from JCM Medium 852.
+- preferred_term: Se/W solution
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  notes: JCM Medium 1188 lists 1.0 ml/L Se/W solution from JCM Medium 852.
+- preferred_term: 1 M Sodium pyruvate
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  notes: JCM Medium 1188 adds 10.0 ml/L filter-sterilized 1 M Sodium pyruvate.
+  composition:
+  - preferred_term: Sodium pyruvate
+    concentration:
+      value: '1.0'
+      unit: MOLAR
+    term:
+      id: CHEBI:50144
+      label: sodium pyruvate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:50144
+      label: sodium pyruvate
+- preferred_term: 8% NaHCO3 solution
+  concentration:
+    value: '25.0'
+    unit: ML_PER_L
+  notes: JCM Medium 1188 adds 25.0 ml/L filter-sterilized 8% NaHCO3 solution.
+  composition:
+  - preferred_term: NaHCO3
+    concentration:
+      value: '80.0'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+- preferred_term: 5% L-Cysteine x HCl x H2O solution
+  concentration:
+    value: '6.0'
+    unit: ML_PER_L
+  notes: JCM Medium 1188 adds 6.0 ml/L 5% L-Cysteine x HCl x H2O solution.
+  composition:
+  - preferred_term: L-Cysteine x HCl x H2O
+    concentration:
+      value: '50.0'
+      unit: G_PER_L
+    term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+- preferred_term: 5% Na2S x 9H2O solution
+  concentration:
+    value: '6.0'
+    unit: ML_PER_L
+  notes: JCM Medium 1188 adds 6.0 ml/L 5% Na2S x 9H2O solution.
+  composition:
+  - preferred_term: Na2S x 9H2O
+    concentration:
+      value: '50.0'
+      unit: G_PER_L
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
 kg_microbe_match: mediadive.medium:J1244
+ph_value: 7.0
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix KH2PO4, MgCl2 x 6 H2O, CaCl2 x 2 H2O, NH4Cl, NaCl, yeast extract,
+    peptone, trace stocks, and distilled water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 3
+  action: HEAT
+  description: Bring to a boil and cool under an N2-CO2 (4:1, v/v) gas stream.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Distribute the medium into culture vessels under the same gas mixture,
+    seal with butyl rubber stoppers, and autoclave.
+- step_number: 5
+  action: MIX
+  description: After cooling, aseptically and anaerobically add sodium pyruvate, NaHCO3,
+    L-cysteine, and Na2S stock solutions.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M1273
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1188
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=284
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852

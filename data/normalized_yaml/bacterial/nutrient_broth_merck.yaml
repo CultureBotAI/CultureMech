@@ -10,18 +10,21 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Defined component'
+  source: TOGO M2911
+  notes: TOGO M2911 lists 5 g/L peptone from meat.
 - preferred_term: Meat extract
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2911
+  notes: TOGO M2911 lists 3 g/L meat extract.
 media_term:
   preferred_term: TOGO Medium M2911
   term:
     id: TOGO:M2911
     label: Nutrient broth (Merck)
-notes: 'Source: https://togomedium.org/medium/M2911'
+notes: TOGO M2911 records nutrient broth (Merck) as 5 g/L peptone from meat plus 3
+  g/L meat extract, incubated at 37 C for 18 h.
 applications:
 - Microbial cultivation
 curation_history:
@@ -38,3 +41,16 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Nutrient broth (Merck)" to "nutrient_broth_merck" for
     consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_literal_products_score40.py
+  action: RESOLVED_TOGO_LITERAL_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO literal product/additive graph
+  source: https://togomedium.org/medium/M2911
+  notes: TOGO M2911 records nutrient broth (Merck) as 5 g/L peptone from meat plus
+    3 g/L meat extract, incubated at 37 C for 18 h.
+temperature_value: 37.0
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2911

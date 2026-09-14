@@ -348,13 +348,23 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-ph_value: 7.2
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_778_thermoterrabacterium_ph_score10.py
+  action: RESOLVED_KOMODO_778_THERMOTERRABACTERIUM_PH_VARIANTS
+  changes: Linked as a THERMOTERRABACTERIUM medium pH variant
+  source: KOMODO Medium 778.2
+  notes: KOMODO Medium 778.2 preserves THERMOTERRABACTERIUM medium components and
+    concentrations but records pH 7.2 for DSM 16624.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_778_THERMOTERRABACTERIUM_medium.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: PH_VARIANT
   id: CultureMech:006439
   name: thermoterrabacterium_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 778 is the pH 6.8 THERMOTERRABACTERIUM medium base.
+variant_relationship: PH_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 778.2 preserves THERMOTERRABACTERIUM medium components and concentrations
+  but records pH 7.2 for DSM 16624.
+ph_value: 7.2
+data_quality_flags:
+- ingredients_curated

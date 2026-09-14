@@ -8,6 +8,8 @@ composition:
   concentration:
     value: '5'
     unit: G_PER_L
+  source: MediaDive solution 3848
+  notes: MediaDive solution 3848 lists 5 g/L Peptone.
   term:
     id: mediadive.compound:1
     label: Peptone
@@ -15,6 +17,8 @@ composition:
   concentration:
     value: '3'
     unit: G_PER_L
+  source: MediaDive solution 3848
+  notes: MediaDive solution 3848 lists 3 g/L Yeast extract.
   term:
     id: mediadive.compound:16
     label: Yeast extract
@@ -22,6 +26,8 @@ composition:
   concentration:
     value: '3'
     unit: G_PER_L
+  source: MediaDive solution 3848
+  notes: MediaDive solution 3848 lists 3 g/L Malt extract.
   term:
     id: mediadive.compound:116
     label: Malt extract
@@ -29,46 +35,54 @@ composition:
   concentration:
     value: '10'
     unit: G_PER_L
+  source: MediaDive solution 3848
+  notes: MediaDive solution 3848 lists 10 g/L Glucose.
   term:
     id: mediadive.compound:5
     label: Glucose
   chebi_term:
     id: CHEBI:17234
     label: glucose
-    confidence: 0.9
-    match_type: manual_curated
 - preferred_term: Olive oil
   concentration:
     value: '10'
     unit: G_PER_L
+  source: MediaDive solution 3848
+  notes: MediaDive solution 3848 lists 10 g/L Olive oil.
   term:
     id: mediadive.compound:1674
     label: Olive oil
+  chebi_term:
+    id: CHEBI:752944
+    label: olive oil
 - preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
+  source: MediaDive solution 3848
+  notes: MediaDive solution 3848 lists 15 g/L Agar.
   term:
     id: mediadive.compound:3
     label: Agar
   chebi_term:
     id: CHEBI:2509
     label: agar
-    confidence: 0.7
-    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '1000'
-    unit: PERCENT_V_V
+    unit: ML_PER_L
+  source: MediaDive solution 3848
+  notes: MediaDive solution 3848 lists 1000 ml/L Distilled water.
   term:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
     label: water
-    confidence: 0.7
-    match_type: corpus_consensus
-preparation_notes: Adjust pH to 6.0.
+preparation_notes: MediaDive solution 3848 records the parsed Main sol. J188 composition.
+notes: JCM Medium 188 contains 5 g/L peptone, 3 g/L yeast extract, 3 g/L malt extract,
+  10 g/L glucose, 10 g/L olive oil, 15 g/L agar, and distilled water, adjusted to
+  pH 6.0.
 curation_history:
 - timestamp: '2026-03-13T06:20:28.326655Z'
   curator: culturemech-id-assigner-v1.0
@@ -107,11 +121,16 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_jcm188_m1428_score15.py
+  action: RESOLVED_JCM188_M1428_SCORE15
+  source: https://mediadive.dsmz.de/medium/J188; https://mediadive.dsmz.de/solutions/3848
+  notes: Restored Main sol. J188 as the parsed MediaDive solution, corrected the distilled-water
+    unit to ml/L, and removed the placeholder ingredient row.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/medium/J188
+- reference: https://mediadive.dsmz.de/solutions/3848

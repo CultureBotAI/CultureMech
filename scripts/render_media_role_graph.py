@@ -36,13 +36,12 @@ Extends beyond kgx_export.py by:
 from __future__ import annotations
 
 import argparse
-import json
 import logging
 import re
 import sys
-from collections import Counter, defaultdict
+from collections import Counter
+from collections.abc import Iterator
 from pathlib import Path
-from typing import Iterable, Iterator, Optional
 
 import yaml
 
@@ -52,9 +51,9 @@ FACET_SLOTS = ("nutritional_roles", "physicochemical_roles", "cellular_metabolic
 
 # Facet display metadata — labels shown on edges + hex colors for edge styling.
 FACET_STYLE = {
-    "nutritional_roles":       {"label": "nut",  "color": "#2ca02c"},  # green
-    "physicochemical_roles":   {"label": "phys", "color": "#1f77b4"},  # blue
-    "cellular_metabolic_roles":{"label": "cell", "color": "#d62728"},  # red
+    "nutritional_roles": {"label": "nut", "color": "#2ca02c"},  # green
+    "physicochemical_roles": {"label": "phys", "color": "#1f77b4"},  # blue
+    "cellular_metabolic_roles": {"label": "cell", "color": "#d62728"},  # red
 }
 
 # CHEBI id lives at any of these paths on an ingredient dict, matching the
@@ -88,7 +87,7 @@ def _label(s: str, max_len: int = 70) -> str:
     return s
 
 
-def _get_nested(record: dict, path: tuple[str, ...]) -> Optional[str]:
+def _get_nested(record: dict, path: tuple[str, ...]) -> str | None:
     current: object = record
     for key in path:
         if not isinstance(current, dict):
@@ -97,7 +96,7 @@ def _get_nested(record: dict, path: tuple[str, ...]) -> Optional[str]:
     return current if isinstance(current, str) else None
 
 
-def ingredient_chebi_id(ing: dict) -> Optional[str]:
+def ingredient_chebi_id(ing: dict) -> str | None:
     for path in CHEBI_ID_PATHS:
         value = _get_nested(ing, path)
         if value and value.startswith("CHEBI:"):
@@ -106,11 +105,20 @@ def ingredient_chebi_id(ing: dict) -> Optional[str]:
 
 
 def ingredient_display_id(ing: dict) -> str:
-    """Return a graph-node id for an ingredient. Prefers CHEBI, then any term id, then preferred_term."""
+    """Return a graph-node id for an ingredient.
+
+    Prefers CHEBI, then a linked CultureMech recipe, then any term id, then
+    preferred_term.
+    """
     chebi = ingredient_chebi_id(ing)
     if chebi:
         return chebi
-    for path in [("term", "id"), ("chebi_term", "id"), ("mediaingredientmech_chebi_term", "id")]:
+    for path in [
+        ("culturemech_term", "id"),
+        ("term", "id"),
+        ("chebi_term", "id"),
+        ("mediaingredientmech_chebi_term", "id"),
+    ]:
         v = _get_nested(ing, path)
         if v:
             return v
@@ -118,11 +126,31 @@ def ingredient_display_id(ing: dict) -> str:
     return f"ing:{pt}" if pt else "ing:unnamed"
 
 
+def solution_display_id(solution: dict) -> str:
+    """Return a graph-node id for a solution. Prefers external terms, then linked media, then text."""
+    for path in [("term", "id"), ("culturemech_term", "id")]:
+        value = _get_nested(solution, path)
+        if value:
+            return value
+    pt = (solution.get("preferred_term") or "").strip()
+    return f"sol:{pt}" if pt else "sol:unnamed"
+
+
+def solution_display_label(solution: dict) -> str:
+    solution_id = solution_display_id(solution)
+    term = (solution.get("preferred_term") or "").strip()
+    if term and solution_id != f"sol:{term}":
+        return f"{term}\\n({solution_id})"
+    return solution_id
+
+
 def _emit_style(lines: list[str]) -> None:
     """Emit mermaid classDef color rules for each facet."""
     lines.append("")
     for slot, style in FACET_STYLE.items():
-        lines.append(f"classDef {slot} stroke:{style['color']},stroke-width:2px,color:{style['color']}")
+        lines.append(
+            f"classDef {slot} stroke:{style['color']},stroke-width:2px,color:{style['color']}"
+        )
 
 
 def _iter_recipe_ingredients(recipe: dict) -> Iterator[tuple[str, dict, str]]:
@@ -135,16 +163,42 @@ def _iter_recipe_ingredients(recipe: dict) -> Iterator[tuple[str, dict, str]]:
     `parent_id` is the graph-node id of the medium (for direct) or the
     solution (for composition).
     """
-    for ing in (recipe.get("ingredients") or []):
+    for ing in recipe.get("ingredients") or []:
         if isinstance(ing, dict):
             yield "direct", ing, "MEDIUM"
-    for sol in (recipe.get("solutions") or []):
+    for sol in recipe.get("solutions") or []:
         if not isinstance(sol, dict):
             continue
-        sol_id = _get_nested(sol, ("term", "id")) or f"sol:{(sol.get('preferred_term') or '').strip()}"
-        for ing in (sol.get("composition") or []):
-            if isinstance(ing, dict):
-                yield f"solution:{sol_id}", ing, sol_id
+        yield from _iter_solution_ingredients(sol)
+
+
+def _iter_solution_ingredients(solution: dict) -> Iterator[tuple[str, dict, str]]:
+    sol_id = solution_display_id(solution)
+    nested = solution.get("composition") or solution.get("ingredients") or []
+    for ing in nested:
+        if isinstance(ing, dict):
+            yield f"solution:{sol_id}", ing, sol_id
+
+    for sol in solution.get("solutions") or []:
+        if isinstance(sol, dict):
+            yield from _iter_solution_ingredients(sol)
+
+
+def _iter_recipe_solutions(recipe: dict) -> Iterator[tuple[str, str, dict]]:
+    yield from _iter_solution_nodes("MEDIUM", recipe.get("solutions"))
+
+
+def _iter_solution_nodes(parent_node: str, solutions: object) -> Iterator[tuple[str, str, dict]]:
+    if not isinstance(solutions, list):
+        return
+
+    for sol in solutions:
+        if not isinstance(sol, dict):
+            continue
+        sol_id = solution_display_id(sol)
+        sol_node = _sanitize_id(sol_id)
+        yield parent_node, sol_node, sol
+        yield from _iter_solution_nodes(sol_node, sol.get("solutions"))
 
 
 def render_single_recipe(
@@ -165,8 +219,6 @@ def render_single_recipe(
         return ""
 
     medium_label = (doc.get("preferred_term") or recipe_path.stem).strip()
-    medium_id = _get_nested(doc, ("media_term", "term", "id")) or f"media:{recipe_path.stem}"
-
     lines: list[str] = ["flowchart LR"]
     lines.append(f'MEDIUM["`**{_label(medium_label)}**`"]:::medium')
 
@@ -176,8 +228,18 @@ def render_single_recipe(
     role_value_nodes: dict[tuple[str, str], str] = {}  # (facet, value) → node_id
     solution_nodes: set[str] = set()
 
+    solution_edges: set[tuple[str, str]] = set()
+    for parent_node, sol_node, sol in _iter_recipe_solutions(doc):
+        if sol_node not in solution_nodes:
+            solution_nodes.add(sol_node)
+            lines.append(f'{sol_node}(["`{_label(solution_display_label(sol))}`"]):::solution')
+        edge = (parent_node, sol_node)
+        if edge not in solution_edges:
+            solution_edges.add(edge)
+            lines.append(f"{parent_node} -.-> {sol_node}")
+
     # --- ingredients (direct + solution.composition) ---
-    for source, ing, parent_id in _iter_recipe_ingredients(doc):
+    for source, ing, _parent_id in _iter_recipe_ingredients(doc):
         if ingredients_seen >= max_ingredients:
             dropped_ingredient_count += 1
             continue
@@ -197,15 +259,11 @@ def render_single_recipe(
         else:
             sol_id = source.split(":", 1)[1]
             sol_node = _sanitize_id(sol_id)
-            if sol_node not in solution_nodes:
-                solution_nodes.add(sol_node)
-                lines.append(f'{sol_node}(["`{_label(sol_id)}`"]):::solution')
-                lines.append(f"MEDIUM -.-> {sol_node}")
             lines.append(f"{sol_node} --> {node_id}")
 
         # facet role edges — one per (facet, value)
         for slot in FACET_SLOTS:
-            for value in (ing.get(slot) or []):
+            for value in ing.get(slot) or []:
                 key = (slot, value)
                 if key not in role_value_nodes:
                     role_value_nodes[key] = _sanitize_id(f"role_{slot}_{value}")
@@ -216,7 +274,7 @@ def render_single_recipe(
                 lines.append(f"{node_id} --|{FACET_STYLE[slot]['label']}|--> {role_id}")
 
         # role_curie escape-hatch — separate node style
-        for curie in (ing.get("role_curie") or []):
+        for curie in ing.get("role_curie") or []:
             key = ("role_curie", curie)
             if key not in role_value_nodes:
                 role_value_nodes[key] = _sanitize_id(f"role_curie_{curie}")
@@ -232,37 +290,43 @@ def render_single_recipe(
         lines.append(
             f'MORE["`...{dropped_ingredient_count} more ingredients (cap: {max_ingredients})`"]:::truncated'
         )
-        lines.append(f"MEDIUM --> MORE")
+        lines.append("MEDIUM --> MORE")
 
     # --- target organisms ---
-    for org in (doc.get("target_organisms") or []):
+    for org in doc.get("target_organisms") or []:
         if not isinstance(org, dict):
             continue
-        org_id = _get_nested(org, ("term", "id")) or f"org:{(org.get('preferred_term') or '').strip()}"
+        org_id = (
+            _get_nested(org, ("term", "id")) or f"org:{(org.get('preferred_term') or '').strip()}"
+        )
         org_node = _sanitize_id(org_id)
         org_label = _label(f"{(org.get('preferred_term') or '').strip()}\\n({org_id})")
         lines.append(f'{org_node}["`{org_label}`"]:::organism')
         lines.append(f"MEDIUM ==> {org_node}")
 
-        for value in (org.get("community_role") or []):
+        for value in org.get("community_role") or []:
             key = ("community_organism_role", value)
             if key not in role_value_nodes:
                 role_value_nodes[key] = _sanitize_id(f"cor_{value}")
-                lines.append(f'{role_value_nodes[key]}(("`{value}\\n[org-role]`")):::community_role')
+                lines.append(
+                    f'{role_value_nodes[key]}(("`{value}\\n[org-role]`")):::community_role'
+                )
             lines.append(f"{org_node} --|community-role|--> {role_value_nodes[key]}")
 
         # nutrient_overrides live on growth_metrics
-        for gm in (org.get("growth_metrics") or []):
+        for gm in org.get("growth_metrics") or []:
             if not isinstance(gm, dict):
                 continue
-            for override in (gm.get("nutrient_overrides") or []):
+            for override in gm.get("nutrient_overrides") or []:
                 if not isinstance(override, dict):
                     continue
                 src = (override.get("source") or "").strip()
                 role = (override.get("role") or "").strip()
                 sole = " (sole)" if override.get("is_sole_source") else ""
                 node_id = _sanitize_id(f"override_{org_id}_{role}_{src}")
-                lines.append(f'{node_id}["`{_label(src)}{sole}\\n[NutOverride: {role}]`"]:::nutrient_override')
+                lines.append(
+                    f'{node_id}["`{_label(src)}{sole}\\n[NutOverride: {role}]`"]:::nutrient_override'
+                )
                 lines.append(f"{org_node} --|nut-override|--> {node_id}")
 
     _emit_style(lines)
@@ -279,7 +343,7 @@ def render_single_recipe(
     return "\n".join(lines) + "\n"
 
 
-def render_rollup(yaml_root: Path, limit: Optional[int] = None) -> str:
+def render_rollup(yaml_root: Path, limit: int | None = None) -> str:
     """Render a cross-corpus roll-up: which (facet, role) pairs co-occur on which CHEBI ids.
 
     Each edge weight = number of recipes / ingredients where that pairing appears.
@@ -306,13 +370,18 @@ def render_rollup(yaml_root: Path, limit: Optional[int] = None) -> str:
                 continue
             ingredient_labels.setdefault(chebi, (ing.get("preferred_term") or "").strip() or chebi)
             for slot in FACET_SLOTS:
-                for value in (ing.get(slot) or []):
+                for value in ing.get(slot) or []:
                     counts[(chebi, slot, value)] += 1
 
-    lines = ["flowchart LR", f'HEADER["`**Corpus role roll-up**\\n{files_scanned} recipes scanned`"]:::header']
+    lines = [
+        "flowchart LR",
+        f'HEADER["`**Corpus role roll-up**\\n{files_scanned} recipes scanned`"]:::header',
+    ]
 
     if not counts:
-        lines.append('EMPTY["`_(No faceted role assignments found yet. Run #95 backfill or Step 7b literature lane to populate.)_`"]:::empty')
+        lines.append(
+            'EMPTY["`_(No faceted role assignments found yet. Run #95 backfill or Step 7b literature lane to populate.)_`"]:::empty'
+        )
         lines.append("HEADER --> EMPTY")
         lines.append("")
         lines.append("classDef header fill:#f5f5f5,stroke:#333,font-weight:bold")
@@ -325,7 +394,9 @@ def render_rollup(yaml_root: Path, limit: Optional[int] = None) -> str:
         ing_node = _sanitize_id(chebi)
         if ing_node not in ing_nodes:
             ing_nodes.add(ing_node)
-            lines.append(f'{ing_node}["`{_label(ingredient_labels[chebi])}\\n({chebi})`"]:::ingredient')
+            lines.append(
+                f'{ing_node}["`{_label(ingredient_labels[chebi])}\\n({chebi})`"]:::ingredient'
+            )
         key = (slot, value)
         if key not in role_value_nodes:
             role_value_nodes[key] = _sanitize_id(f"role_{slot}_{value}")
@@ -343,31 +414,48 @@ def _slug_for(path: Path) -> str:
     return path.stem
 
 
-def main(argv: Optional[list[str]] = None) -> int:
+def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     group = parser.add_mutually_exclusive_group()
     group.add_argument("--target", type=Path, help="Path to a single MediaRecipe YAML.")
-    group.add_argument("--yaml-dir", type=Path, help="Root of the normalized-YAML corpus (for batch or roll-up).")
+    group.add_argument(
+        "--yaml-dir", type=Path, help="Root of the normalized-YAML corpus (for batch or roll-up)."
+    )
     parser.add_argument(
         "--mode",
         choices=("single", "batch", "rollup"),
         default=None,
         help="Explicit mode. Defaults: single if --target, batch if --yaml-dir.",
     )
-    parser.add_argument("--out-dir", type=Path, default=Path("reports/media_role_graphs"),
-                        help="Where to write .mmd files.")
-    parser.add_argument("--max-ingredients", type=int, default=30,
-                        help="Cap on ingredients per single/batch graph (default 30).")
-    parser.add_argument("--limit", type=int, default=None,
-                        help="Batch/rollup only: cap total recipes processed.")
-    parser.add_argument("--include-notes", action="store_true",
-                        help="Attach curator `notes:` free-text as dashed side-nodes on each ingredient.")
-    parser.add_argument("--stdout", action="store_true",
-                        help="Emit to stdout instead of writing .mmd files.")
+    parser.add_argument(
+        "--out-dir",
+        type=Path,
+        default=Path("reports/media_role_graphs"),
+        help="Where to write .mmd files.",
+    )
+    parser.add_argument(
+        "--max-ingredients",
+        type=int,
+        default=30,
+        help="Cap on ingredients per single/batch graph (default 30).",
+    )
+    parser.add_argument(
+        "--limit", type=int, default=None, help="Batch/rollup only: cap total recipes processed."
+    )
+    parser.add_argument(
+        "--include-notes",
+        action="store_true",
+        help="Attach curator `notes:` free-text as dashed side-nodes on each ingredient.",
+    )
+    parser.add_argument(
+        "--stdout", action="store_true", help="Emit to stdout instead of writing .mmd files."
+    )
     parser.add_argument("--verbose", "-v", action="store_true")
     args = parser.parse_args(argv)
 
-    logging.basicConfig(level=logging.INFO if args.verbose else logging.WARNING, format="%(message)s")
+    logging.basicConfig(
+        level=logging.INFO if args.verbose else logging.WARNING, format="%(message)s"
+    )
 
     if args.target is None and args.yaml_dir is None:
         parser.error("one of --target or --yaml-dir is required")

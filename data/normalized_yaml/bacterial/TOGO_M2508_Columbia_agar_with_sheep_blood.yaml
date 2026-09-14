@@ -6,21 +6,31 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: sheep blood
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Sheep blood
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M2508
+  notes: TOGO M2508 lists sheep blood as a component but does not state its amount.
+  term:
+    id: UBERON:0000178
+    label: blood
 - preferred_term: Columbia agar
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M2508
+  notes: TOGO M2508 lists Columbia agar without spelling out the agar base composition.
+  culturemech_term:
+    id: CultureMech:005649
+    label: Columbia agar base
 media_term:
   preferred_term: TOGO Medium M2508
   term:
     id: TOGO:M2508
     label: Columbia agar (with sheep blood)
-notes: 'Source: https://togomedium.org/medium/M2508'
+notes: TOGO M2508 records Columbia agar with sheep blood used at 37 C; the source
+  does not state the sheep blood percentage or the Columbia agar base composition.
 applications:
 - Microbial cultivation
 curation_history:
@@ -46,3 +56,20 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_togo_columbia_tpgy_score40.py
+  action: RESOLVED_TOGO_COLUMBIA_TPGY_SCORE40
+  changes: Resolved cached score-40 TOGO Columbia/Serpulina/TPGY graph
+  source: https://togomedium.org/medium/M2508
+  notes: TOGO M2508 records Columbia agar with sheep blood used at 37 C; the source
+    does not state the sheep blood percentage or the Columbia agar base composition.
+temperature_value: 37.0
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Supplement Columbia agar with sheep blood.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M2508

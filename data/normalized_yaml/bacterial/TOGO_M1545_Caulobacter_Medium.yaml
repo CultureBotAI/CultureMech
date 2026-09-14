@@ -3,57 +3,71 @@ name: caulobacter_medium
 original_name: Caulobacter Medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Peptone
   concentration:
-    value: '1'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO M1545 / NBRC Medium 338
+  notes: NBRC Medium 338 lists 2 g/L Peptone; this hydrolysate mixture is retained
+    as an opaque complex component.
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: TOGO M1545 / NBRC Medium 338
+  notes: TOGO M1545 / NBRC Medium 338 lists 1.0 g/L Yeast extract.
   term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO M1545 / NBRC Medium 338
+  notes: TOGO M1545 / NBRC Medium 338 lists 0.2 g/L MgSO4·7H2O.
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: Agar (if needed)
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Peptone
+  source: TOGO M1545 / NBRC Medium 338
+  notes: TOGO M1545 / NBRC Medium 338 lists 10.0 g/L Agar (if needed).
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Distilled water
   concentration:
-    value: '2'
-    unit: G_PER_L
+    value: '1.0'
+    unit: L
+  source: TOGO M1545 / NBRC Medium 338
+  notes: NBRC Medium 338 lists 1 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M1545
   term:
     id: TOGO:M1545
     label: Caulobacter Medium
-notes: 'Source: https://togomedium.org/medium/M1545
-
-  Original source: NBRC - NBRC_M338
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=338'
+notes: TOGO M1545 imports NBRC Medium 338 as Caulobacter Medium. NBRC 338 lists 2
+  g peptone, 1 g yeast extract, 0.2 g MgSO4·7H2O, optional 10 g agar, and 1 L distilled
+  water at pH 7.0. The source does not state sterilization, incubation temperature,
+  or other preparation steps.
 applications:
 - Microbial cultivation
 curation_history:
@@ -90,3 +104,19 @@ curation_history:
   notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
     magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
     labels untouched.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m1545_score15.py
+  action: RESOLVED_TOGO_M1545_SCORE15
+  source: https://togomedium.org/medium/M1545; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=338
+  notes: TOGO M1545 imports NBRC Medium 338 as Caulobacter Medium. NBRC 338 lists
+    2 g peptone, 1 g yeast extract, 0.2 g MgSO4·7H2O, optional 10 g agar, and 1 L
+    distilled water at pH 7.0. The source does not state sterilization, incubation
+    temperature, or other preparation steps. Corrected the imported water g/L artifact,
+    added the NBRC pH value, and marked the NBRC formula as curated.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1545
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=338

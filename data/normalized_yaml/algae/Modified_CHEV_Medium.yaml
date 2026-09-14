@@ -4,70 +4,70 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: Modified CHEV Medium
+  term:
+    id: UTEX:modified-chev-medium
+    label: Modified CHEV Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
+notes: UTEX prepares Modified CHEV Medium tube-by-tube from CR1 Soil, MgCO3, 11 mL
+  dH2O, and 1 mL prepared F/2 Medium in 15 mL glass tubes.
 ingredients:
 - preferred_term: CR1 Soil
   concentration:
-    value: variable
+    value: 1 cc per 15 mL tube
     unit: VARIABLE
-  notes: 'UTEX lists: amount 1 cc'
+  term:
+    id: ENVO:00001998
+    label: soil
+  notes: UTEX lists 1 cc CR1 Soil per 15 mL glass tube.
 - preferred_term: MgCO3
   concentration:
     value: '0.5'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mg/12 mL; final 0.5 mM'
+  term:
+    id: CHEBI:31793
+    label: magnesium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31793
+    label: magnesium carbonate
   supplier_catalog:
     supplier_name: MCIB
     catalog_number: CB486
+  notes: UTEX lists 1 mg MgCO3 per 12 mL liquid fill, for 0.5 mM final.
 - preferred_term: dH2O
   concentration:
-    value: variable
+    value: 11 mL per 15 mL tube
     unit: VARIABLE
-  notes: 'UTEX lists: amount 11 mL'
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: UTEX lists 11 mL dH2O per 15 mL glass tube.
+solutions:
 - preferred_term: F/2 Medium
   concentration:
-    value: variable
+    value: 1 mL per 15 mL tube
     unit: VARIABLE
-  notes: 'UTEX lists: amount 1 mL'
+  culturemech_term:
+    id: CultureMech:000170
+    label: F/2 Medium
+  notes: UTEX lists 1 mL prepared F/2 Medium per 15 mL glass tube.
 preparation_steps:
 - step_number: 1
-  action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  action: ALIQUOT
+  description: Add CR1 Soil, MgCO3, dH2O, and F/2 Medium to 15 mL glass tubes.
 - step_number: 2
-  action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  action: AUTOCLAVE
+  description: Process the soil and liquid mixture within 6 hours; autoclave for 15
+    minutes for routine maintenance, or pasteurize just above 98 C for 2 hours on
+    three successive days.
 - step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
-- step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
-- step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
+  action: STORE
+  description: Allow tubes to gas-equilibrate for 2 days before use.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -106,7 +106,30 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_modified_ldm_score35.py
+  action: RESOLVED_UTEX_MODIFIED_LDM_SCORE35
+  changes: Grounded score-35 UTEX LDM and modified algal components
+  source: https://utex.org/products/modified-chev-medium
+  notes: UTEX prepares Modified CHEV Medium tube-by-tube from CR1 Soil, MgCO3, 11
+    mL dH2O, and 1 mL prepared F/2 Medium in 15 mL glass tubes.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_cr1_s_modified_2x_score35.py
+  action: LINKED_UTEX_CR1_S_MODIFIED_2X_VARIANTS
+  changes: Linked UTEX CR1-S and Modified 2X CHEV+Soil child media
+  notes: Added or refreshed reciprocal parent-child link for algae/modified_2x_chev_soil_medium.yaml.
 references:
 - reference: UTEX:modified-chev-medium
 - reference: https://utex.org/products/modified-chev-medium
+- reference: https://utex.org/products/f-2-medium
 original_name: Modified CHEV Medium
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+variant_children:
+- path: data/normalized_yaml/algae/modified_2x_chev_soil_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000176
+  name: modified_2x_chev_soil_medium
+  notes: Uses 2 mL F/2 Medium and 10 mL dH2O per 12 mL liquid fill instead of 1 mL
+    F/2 Medium and 11 mL dH2O.

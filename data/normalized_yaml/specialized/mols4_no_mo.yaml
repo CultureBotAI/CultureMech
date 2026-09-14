@@ -3,21 +3,24 @@ name: MoLS4 no Mo
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
-ingredients:
+media_term:
+  preferred_term: MoLS4 no Mo
+ingredients: []
+solutions:
 - preferred_term: MoLS4
   concentration:
     value: '1'
     unit: FOLD_DILUTION
-- preferred_term: Sodium molybdate
-  concentration:
-    value: '-'
-    unit: G_PER_L
-  notes: 'CAS: 7631-95-0; MW: 205.92; Ontology enriched via CAS-RN lookup'
-  term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
+  culturemech_term:
+    id: CultureMech:015607
+    label: MoLS4
+  notes: CultureBotHT lists MoLS4 at one-fold final strength.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare MoLS4 without Sodium molybdate.
 description: Lactate-sulfate media for sulfate-reducing bacteria with no Mo
-notes: 'Source: FEBA media definitions'
+notes: CultureBotHT imports MoLS4 no Mo as MoLS4 with Sodium molybdate omitted.
 category: specialized
 sources:
 - database: CultureBotHT
@@ -36,5 +39,24 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: RESOLVED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Resolved score-30 CultureBotHT omitted-component variant
+  source: CultureBotHT:MoLS4 no Mo; https://github.com/CultureBotAI/CultureBotHT
+  notes: CultureBotHT imports MoLS4 no Mo as MoLS4 with Sodium molybdate omitted.
 data_quality_flags:
-- has_unmapped_ingredients
+- has_ontology_mappings
+- ingredients_curated
+parent_media:
+  path: data/normalized_yaml/specialized/mols4.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015607
+  name: MoLS4
+  notes: Omits Sodium molybdate from MoLS4.
+variant_relationship: OMITTED_COMPONENT_VARIANT
+variant_modifications:
+- Omits Sodium molybdate from MoLS4.
+references:
+- reference: CultureBotHT:MoLS4 no Mo
+- reference: https://github.com/CultureBotAI/CultureBotHT

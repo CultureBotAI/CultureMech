@@ -5,55 +5,81 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: NaCl
-  concentration:
-    value: '60'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: Agar (if needed)
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Meat extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Peptone
   concentration:
     value: '5'
     unit: G_PER_L
+  source: NBRC Medium 273
+  notes: NBRC Medium 273 lists 5 g/L Peptone.
+  term:
+    id: MICRO:0000178
+    label: Peptone
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  source: NBRC Medium 273
+  notes: NBRC Medium 273 lists 3 g/L Meat extract; this generic complex extract is
+    retained without an ontology grounding.
+- preferred_term: NaCl
+  concentration:
+    value: '60'
+    unit: G_PER_L
+  source: NBRC Medium 273
+  notes: NBRC Medium 273 lists 60 g/L NaCl.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: NBRC Medium 273
+  notes: NBRC Medium 273 lists 1000 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  source: NBRC Medium 273
+  notes: NBRC Medium 273 lists 15 g/L agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 media_term:
   preferred_term: TOGO Medium M1490
   term:
     id: TOGO:M1490
     label: TOGO Medium M1490
-notes: 'Source: https://togomedium.org/medium/M1490
-
-  Original source: NBRC - NBRC_M273
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=273'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Combine 5 g/L Peptone, 3 g/L Meat extract, 60 g/L NaCl, and 1000 ml/L
+    Distilled water.
+- step_number: 2
+  action: MIX
+  description: Add 15 g/L agar when solid NBRC Medium 273 is needed.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+notes: TOGO M1490 imports NBRC Medium 273, which lists 5 g/L Peptone, 3 g/L Meat extract,
+  60 g/L NaCl, 1000 ml/L Distilled water, and 15 g/L Agar if needed. The final pH
+  is 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -84,3 +110,17 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nbrc_273_score15.py
+  action: RESOLVED_NBRC_273_SCORE15
+  source: https://togomedium.org/medium/M1490; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=273
+  notes: Curated TOGO:M1490 from TOGO and NBRC Medium 273; corrected Distilled water
+    from a mass-like 1 g/L import to 1000 ml/L, added pH 7.0, grounded peptone, sodium
+    chloride, water, and agar, and retained Meat extract as a sourced unmapped component.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1490
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=273

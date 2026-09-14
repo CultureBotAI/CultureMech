@@ -5,60 +5,69 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.4
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '951.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
-    Defined component [Merged 2 duplicates: 950.0, 1.0]'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: NBRC Medium 220
+  notes: NBRC Medium 220 lists 2 g/L Yeast extract.
+- preferred_term: Bacto Tryptone (Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  source: NBRC Medium 220
+  notes: NBRC Medium 220 lists 1 g/L Bacto Tryptone from Difco; this commercial digest
+    is retained as an opaque complex component.
 - preferred_term: Sodium acetate
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Defined component, Organic compound'
+  source: NBRC Medium 220
+  notes: NBRC Medium 220 lists 1 g/L Sodium acetate.
   term:
     id: CHEBI:32954
     label: sodium acetate
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
     label: sodium acetate
+- preferred_term: Distilled water
+  concentration:
+    value: '950'
+    unit: ML_PER_L
+  source: NBRC Medium 220
+  notes: NBRC Medium 220 lists 950 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Bacto Tryptone (Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: farm soil
-  concentration:
-    value: '400'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Undefined component'
+  source: NBRC Medium 220
+  notes: NBRC Medium 220 lists 15 g/L agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 media_term:
   preferred_term: TOGO Medium M1448
   term:
     id: TOGO:M1448
     label: TOGO Medium M1448
-notes: 'Source: https://togomedium.org/medium/M1448
-
-  Original source: NBRC - NBRC_M220
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=220'
+notes: TOGO M1448 imports NBRC Medium 220, which lists 2 g/L Yeast extract, 1 g/L
+  Bacto Tryptone (Difco), 1 g/L Sodium acetate, 50 ml/L Soil extract, 950 ml/L Distilled
+  water, and 15 g/L Agar if needed. The final pH is 7.4. Soil extract is prepared
+  by autoclaving 400 g farm soil suspended in 1 L distilled water for 30 min, then
+  removing solids by filtration.
 applications:
 - Microbial cultivation
 curation_history:
@@ -105,13 +114,65 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nbrc_220_score15.py
+  action: RESOLVED_NBRC_220_SCORE15
+  source: https://togomedium.org/medium/M1448; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=220
+  notes: Curated TOGO:M1448 from TOGO and NBRC Medium 220; corrected the Distilled
+    water and Soil extract volume units, moved farm soil to the source-specific nested
+    Soil extract, added pH 7.4, grounded Sodium acetate, Distilled water, and agar,
+    and removed the false mediadive.solution:5555 Soil extract link.
 solutions:
-- preferred_term: Soil extract*
-  term:
-    id: mediadive.solution:5555
-    label: Soil extract
+- preferred_term: Soil extract
   concentration:
     value: '50'
-    unit: G_PER_L
-  notes: See mediadive_5555_Soil_extract.yaml for composition
-  name: Unknown solution
+    unit: ML_PER_L
+  source: NBRC Medium 220
+  notes: NBRC Medium 220 adds 50 ml/L Soil extract to the main liter.
+  preparation_notes: Suspend 400 g farm soil in 1 L distilled water, autoclave for
+    30 min, and remove solids by filtration.
+  composition:
+  - preferred_term: Farm soil
+    concentration:
+      value: '400'
+      unit: G_PER_L
+    source: NBRC Medium 220
+    notes: NBRC Medium 220 prepares Soil extract from 400 g farm soil suspended in
+      1 L Distilled water.
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    source: NBRC Medium 220
+    notes: NBRC Medium 220 prepares Soil extract with 1 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Suspend 400 g farm soil in 1 L distilled water and autoclave for 30
+    min to prepare Soil extract.
+- step_number: 2
+  action: FILTER
+  description: Remove solids by filtration to prepare Soil extract.
+- step_number: 3
+  action: MIX
+  description: Combine 2 g/L Yeast extract, 1 g/L Bacto Tryptone (Difco), 1 g/L Sodium
+    acetate, 50 ml/L Soil extract, and 950 ml/L Distilled water.
+- step_number: 4
+  action: MIX
+  description: Add 15 g/L agar when solid NBRC Medium 220 is needed.
+- step_number: 5
+  action: ADJUST_PH
+  description: Adjust pH to 7.4.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1448
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=220

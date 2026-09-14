@@ -2,31 +2,202 @@ id: CultureMech:004861
 name: trace_element_solution_medium_663
 original_name: Trace element solution (medium 663)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
-notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 3075 | DSMZ Medium: 3075 (mediadive.medium:3075)
-  | Aerobic: No | SubMedium: Yes'
+notes: KOMODO 3075 lists Trace element solution (medium 663) as a defined submedium
+  at pH 6.5. Its metabolite table contains 12.80 g/L nitrilotriacetic acid (NTA),
+  1.35 g/L FeCl3 x 6 H2O, 1.00 g/L NaCl, 0.12 g/L NiCl2 x 6 H2O, 0.10 g/L CaCl2 x
+  2 H2O, 0.10 g/L ZnCl2, 0.10 g/L MnCl2 x 4 H2O, 0.03 g/L Na2SeO3 x 5 H2O, 0.02 g/L
+  CoCl2 x 6 H2O, 0.02 g/L CuCl2 x 2 H2O, 0.02 g/L Na2MoO4 x 2 H2O, 0.01 g/L H3BO3,
+  variable KOH, and distilled water.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the 1 L Trace element solution stock from distilled water,
+    KOH, nitrilotriacetic acid, NaCl, the cobalt, calcium, zinc, manganese, copper,
+    borate, molybdate, selenite, iron, and nickel salts listed by KOMODO 3075.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust the Trace element solution stock to pH 6.5 with KOH as needed.
 media_term:
   preferred_term: KOMODO Medium 3075
   term:
     id: komodo.medium:3075
     label: Trace element solution (medium 663)
 ingredients:
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  source: KOMODO Medium 3075
+  notes: KOMODO Medium 3075 lists 0.02 g/L CoCl2 x 6 H2O.
+  term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: KOMODO Medium 3075
+  notes: KOMODO Medium 3075 lists 0.10 g/L CaCl2 x 2 H2O.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: ZnCl2
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: KOMODO Medium 3075
+  notes: KOMODO Medium 3075 lists 0.10 g/L ZnCl2.
+  term:
+    id: CHEBI:49976
+    label: zinc dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
 - preferred_term: KOH
-  notes: Extracted from recipe notes (pH buffer)
-  data_quality_flags:
-  - extracted_from_notes
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32035
-    label: potassium hydroxide
+  source: KOMODO Medium 3075
+  notes: KOMODO Medium 3075 lists KOH without a gram amount and also identifies KOH
+    as the pH adjuster for pH 6.5.
   term:
     id: CHEBI:32035
     label: potassium hydroxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: KOMODO Medium 3075
+  notes: KOMODO Medium 3075 lists 0.10 g/L MnCl2 x 4 H2O.
+  term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+- preferred_term: Nitrilotriacetic acid (NTA)
+  concentration:
+    value: '12.80'
+    unit: G_PER_L
+  source: KOMODO Medium 3075
+  notes: KOMODO Medium 3075 lists 12.80 g/L Nitrilotriacetic acid (NTA).
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+- preferred_term: CuCl2 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  source: KOMODO Medium 3075
+  notes: KOMODO Medium 3075 lists 0.02 g/L CuCl2 x 2 H2O.
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+- preferred_term: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: KOMODO Medium 3075
+  notes: KOMODO Medium 3075 lists 0.01 g/L H3BO3.
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  source: KOMODO Medium 3075
+  notes: KOMODO Medium 3075 lists 0.02 g/L Na2MoO4 x 2 H2O.
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  source: KOMODO Medium 3075
+  notes: KOMODO Medium 3075 lists 0.03 g/L Na2SeO3 x 5 H2O.
+  term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+- preferred_term: FeCl3 x 6 H2O
+  concentration:
+    value: '1.35'
+    unit: G_PER_L
+  source: KOMODO Medium 3075
+  notes: KOMODO Medium 3075 lists 1.35 g/L FeCl3 x 6 H2O.
+  term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+- preferred_term: NiCl2 x 6 H2O
+  concentration:
+    value: '0.12'
+    unit: G_PER_L
+  source: KOMODO Medium 3075
+  notes: KOMODO Medium 3075 lists 0.12 g/L NiCl2 x 6 H2O.
+  term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: KOMODO Medium 3075
+  notes: KOMODO Medium 3075 lists distilled water without a gram amount; normalized
+    here as the solvent for 1 L of Trace element solution (medium 663).
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: NaCl
+  concentration:
+    value: '1.00'
+    unit: G_PER_L
+  source: KOMODO Medium 3075
+  notes: KOMODO Medium 3075 lists 1.00 g/L NaCl.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 applications:
 - Microbial cultivation
 curation_history:
@@ -61,3 +232,15 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_komodo_3075_score15.py
+  action: RESOLVED_KOMODO_3075_SCORE15
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3075
+  notes: Replaced the KOH-only pH-buffer import with the complete KOMODO 3075 metabolite
+    table; preserved KOH as a variable listed component and pH adjuster; and grounded
+    all disclosed components through MediaIngredientMech.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3075

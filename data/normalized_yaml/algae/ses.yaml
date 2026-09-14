@@ -1,6 +1,10 @@
 id: CultureMech:000130
 name: ses
 category: algae
+sources:
+- database: CCAP
+  database_id: SES
+  url: https://www.ccap.ac.uk/wp-content/uploads/MR_SES.pdf
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
@@ -55,6 +59,13 @@ curation_history:
   changes: ingredients 0 -> 1; solutions 0 -> 4
   notes: Rebuilt ses from the reviewed CCAP PDF. Preserved stock boundaries and per-vessel
     quantities; ingredient identities follow the MediaIngredientMech SSSOM.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_ccap_sources_score10.py
+  action: NORMALIZED_CCAP_SOURCE_SCORE10
+  changes: Normalized CCAP provenance
+  source: CCAP:SES; https://www.ccap.ac.uk/wp-content/uploads/MR_SES.pdf
+  notes: Copied the CCAP source identity from references and the original ccap-import
+    event into the structured sources slot recognized by review scoring.
 references:
 - reference: CCAP:SES
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_SES.pdf

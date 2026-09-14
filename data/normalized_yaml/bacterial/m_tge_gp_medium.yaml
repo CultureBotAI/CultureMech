@@ -10,18 +10,61 @@ media_term:
   term:
     id: mediadive.medium:J851
     label: m TGE-GP MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=851'
+notes: JCM Medium 851 prepares m TGE-GP Medium by supplementing JCM Medium 795 with
+  5.0 g/L final glycerol and 0.1 mM final KH2PO4.
 ingredients:
-- preferred_term: Bacto m TGE broth
+- preferred_term: Bacto m TGE broth (BD-Difco)
   concentration:
-    value: '18'
+    value: '18.0'
     unit: G_PER_L
-  notes: Copied from referenced JCM Medium 795
+  source: JCM Medium 795
+  notes: JCM Medium 795 lists this commercial broth powder.
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: JCM Medium 795
+  notes: JCM Medium 795 lists 1.0 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Glycerol
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: JCM Medium 851
+  notes: JCM Medium 851 supplements JCM Medium 795 with 5.0 g/L final glycerol.
+  term:
+    id: CHEBI:17754
+    label: glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
+    label: glycerol
+  nutritional_roles:
+  - CARBON_SOURCE
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.1'
+    unit: MILLIMOLAR
+  source: JCM Medium 851
+  notes: JCM Medium 851 supplements JCM Medium 795 with 0.1 mM final KH2PO4.
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 795 with 5.0 g/L (final) glycerol and 0.1 mM (final)
-    KH2PO4.
+  description: Use JCM Medium 795 with 5.0 g/L final glycerol and 0.1 mM final KH2PO4.
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,12 +95,28 @@ curation_history:
   curator: migrate_data_quality_flags.py
   action: MIGRATED_DATA_QUALITY_FLAGS
   notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_commercial_broths_score40.py
+  action: RESOLVED_JCM_COMMERCIAL_BROTH_SCORE40_GRAPH
+  changes: Resolved score-40 JCM commercial-broth recipe graph
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=851; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=795
+  notes: JCM Medium 851 prepares m TGE-GP Medium by supplementing JCM Medium 795 with
+    5.0 g/L final glycerol and 0.1 mM final KH2PO4.
 data_quality_flags:
 - resolved_reference
-variant_children:
-- path: data/normalized_yaml/bacterial/m_tge_broth_medium.yaml
-  relationship: SOURCE_DUPLICATE
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=851
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=795
+parent_media:
+  path: data/normalized_yaml/bacterial/m_tge_broth_medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
   id: CultureMech:003139
   name: m_tge_broth_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: JCM Medium 851 supplements JCM Medium 795 with 5.0 g/L glycerol and 0.1 mM
+    KH2PO4.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Supplemented JCM Medium 795 m TGE Broth with 5.0 g/L glycerol and 0.1 mM KH2PO4.

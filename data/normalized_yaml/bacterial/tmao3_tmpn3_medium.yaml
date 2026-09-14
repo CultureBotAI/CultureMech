@@ -301,6 +301,24 @@ curation_history:
     despite the name difference, so its stated addition volume is now asserted rather
     than proposed (#262).
   changes: 2 volume(s) promoted to concentration; 0 candidate(s) re-evidenced
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_503d_tmao3_tmpn3_score10.py
+  action: RESOLVED_KOMODO_503D_TMAO3_TOPOLOGY
+  changes: Linked KOMODO Medium 503d DSM strain wrappers to their parent
+  source: KOMODO Medium 503d, 503d.1, 503d.2
+  notes: Kept this 24-ingredient TMAO3/TMPN3 family separate from MediaDive 503d,
+    whose direct recipe includes a different 25-ingredient arsenate/acetate signature.
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_13326.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005684
+  name: for_dsm_13326
+  notes: KOMODO Medium 503d.1 applies KOMODO Medium 503d to DSM 13326.
+- path: data/normalized_yaml/bacterial/for_dsm_13327.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005685
+  name: for_dsm_13327
+  notes: KOMODO Medium 503d.2 applies KOMODO Medium 503d to DSM 13327.
 solutions:
 - preferred_term: Trace element solution SL-10
   composition:
@@ -370,3 +388,5 @@ solutions:
   concentration:
     value: '1'
     unit: ML_PER_L
+data_quality_flags:
+- ingredients_curated

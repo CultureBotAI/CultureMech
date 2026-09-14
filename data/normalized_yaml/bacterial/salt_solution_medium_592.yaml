@@ -6,25 +6,117 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.0
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 4002 | DSMZ Medium: 4002
-  (mediadive.medium:4002) | Aerobic: No | SubMedium: Yes'
+notes: KOMODO Medium 4002 is a SubMedium import labeled Salt solution (medium 592).
+  The DSMZ Medium 592 PDF has one embedded stock adjusted to pH 2.0 with H2SO4, Trace
+  elements, prepared in 100.000 ml distilled water; this repair uses that stock formula.
+  The local unrelated mediadive.solution:4002 Main sol. J298 record was not used.
 media_term:
   preferred_term: KOMODO Medium 4002
   term:
     id: komodo.medium:4002
     label: Salt solution (medium 592)
 ingredients:
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  source: DSMZ Medium 592
+  notes: DSMZ Medium 592 Trace elements lists 1.800 g MnCl2 x 4 H2O per 100.000 ml;
+    concentration scaled to per-litre units.
+  term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '44'
+    unit: G_PER_L
+  source: DSMZ Medium 592
+  notes: DSMZ Medium 592 Trace elements lists 4.400 g Na2B4O7 x 10 H2O per 100.000
+    ml; concentration scaled to per-litre units.
+  term:
+    id: CHEBI:131366
+    label: disodium tetraborate decahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131366
+    label: disodium tetraborate decahydrate
+- preferred_term: ZnSO4 x 7 H2O
+  concentration:
+    value: '2.2'
+    unit: G_PER_L
+  source: DSMZ Medium 592
+  notes: DSMZ Medium 592 Trace elements lists 0.220 g ZnSO4 x 7 H2O per 100.000 ml;
+    concentration scaled to per-litre units.
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: CuCl2 x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: DSMZ Medium 592
+  notes: DSMZ Medium 592 Trace elements lists 0.050 g CuCl2 x H2O per 100.000 ml;
+    concentration scaled to per-litre units.
+  term:
+    id: CHEBI:49553
+    label: copper(II) chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49553
+    label: copper(II) chloride
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  source: DSMZ Medium 592
+  notes: DSMZ Medium 592 Trace elements lists 0.030 g Na2MoO4 x 2 H2O per 100.000
+    ml; concentration scaled to per-litre units.
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: VOSO4 x 2 H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  source: DSMZ Medium 592
+  notes: DSMZ Medium 592 Trace elements lists 0.030 g VOSO4 x 2 H2O per 100.000 ml;
+    concentration scaled to per-litre units.
+  term:
+    id: CHEBI:87009
+    label: vanadyl sulfate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:87009
+    label: vanadyl sulfate dihydrate
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 592
+  notes: DSMZ Medium 592 Trace elements lists distilled water brought to 100.000 ml.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: H2SO4
-  notes: Extracted from recipe notes (pH buffer)
-  data_quality_flags:
-  - extracted_from_notes
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_chebi_term:
+  source: DSMZ Medium 592
+  notes: DSMZ Medium 592 Trace elements instructs adjustment to pH 2.0 with H2SO4
+    and gives no amount.
+  term:
     id: CHEBI:26836
     label: sulfuric acid
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:26836
     label: sulfuric acid
 applications:
@@ -61,3 +153,27 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_komodo_4002_salt_solution_592_score15.py
+  action: RESOLVED_KOMODO_4002_SALT_SOLUTION_592_SCORE15
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium592.pdf
+  notes: KOMODO Medium 4002 is a SubMedium import labeled Salt solution (medium 592).
+    The DSMZ Medium 592 PDF has one embedded stock adjusted to pH 2.0 with H2SO4,
+    Trace elements, prepared in 100.000 ml distilled water; this repair uses that
+    stock formula. The local unrelated mediadive.solution:4002 Main sol. J298 record
+    was not used. Replaced the imported H2SO4-only pH-buffer stub with the complete
+    DSMZ trace-elements stock formula, explicit water, the variable H2SO4 pH-adjustment
+    row, and DSMZ preparation steps.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve the trace-elements stock components in distilled water and
+    bring to 100.000 ml.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust to pH 2.0 with H2SO4.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium592.pdf

@@ -3,21 +3,25 @@ name: MoYLS4 no iron
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
-ingredients:
+media_term:
+  preferred_term: MoYLS4 no iron
+ingredients: []
+solutions:
 - preferred_term: MoYLS4
   concentration:
     value: '1'
     unit: FOLD_DILUTION
-- preferred_term: Iron (II) chloride tetrahydrate
-  concentration:
-    value: '-'
-    unit: G_PER_L
-  notes: 'CAS: 13478-10-9; MW: 198.81; Ontology enriched via CAS-RN lookup'
-  term:
-    id: CHEBI:86249
-    label: iron dichloride tetrahydrate
+  culturemech_term:
+    id: CultureMech:015634
+    label: MoYLS4
+  notes: CultureBotHT lists MoYLS4 at one-fold final strength.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare MoYLS4 without Iron (II) chloride tetrahydrate.
 description: Rich lactate-sulfate media for sulfate-reducing bacteria with no Fe
-notes: 'Source: FEBA media definitions'
+notes: CultureBotHT imports MoYLS4 no iron as MoYLS4 with Iron (II) chloride tetrahydrate
+  omitted.
 category: specialized
 sources:
 - database: CultureBotHT
@@ -36,5 +40,25 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: RESOLVED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Resolved score-30 CultureBotHT omitted-component variant
+  source: CultureBotHT:MoYLS4 no iron; https://github.com/CultureBotAI/CultureBotHT
+  notes: CultureBotHT imports MoYLS4 no iron as MoYLS4 with Iron (II) chloride tetrahydrate
+    omitted.
 data_quality_flags:
-- has_unmapped_ingredients
+- has_ontology_mappings
+- ingredients_curated
+parent_media:
+  path: data/normalized_yaml/specialized/moyls4.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015634
+  name: MoYLS4
+  notes: Omits Iron (II) chloride tetrahydrate from MoYLS4.
+variant_relationship: OMITTED_COMPONENT_VARIANT
+variant_modifications:
+- Omits Iron (II) chloride tetrahydrate from MoYLS4.
+references:
+- reference: CultureBotHT:MoYLS4 no iron
+- reference: https://github.com/CultureBotAI/CultureBotHT

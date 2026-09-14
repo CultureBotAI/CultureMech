@@ -172,7 +172,54 @@ curation_history:
   notes: Restored the reviewed JCM R2A formulation, printed water, default sterilization,
     and reciprocal variant semantics. Identity objects were verified against the MIM
     SSSOM; unspecified carbonate volume remains explicitly variable.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_r2a_score20.py
+  action: LINKED_JCM_R2A_SCORE20_CHILDREN
+  changes: Linked score-20 direct JCM R2A Agar children
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=804; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=346
+  notes: Added or refreshed reciprocal CONCENTRATION_VARIANT link for bacterial/1_10_r2a_agar.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_r2a_score20.py
+  action: LINKED_JCM_R2A_SCORE20_CHILDREN
+  changes: Linked score-20 direct JCM R2A Agar children
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=845; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=346
+  notes: Added or refreshed reciprocal CONCENTRATION_VARIANT link for bacterial/1_2_r2a_agar.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_r2a_score20.py
+  action: LINKED_JCM_R2A_SCORE20_CHILDREN
+  changes: Linked score-20 direct JCM R2A Agar children
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=912; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=346
+  notes: Added or refreshed reciprocal SALINITY_VARIANT link for bacterial/r2a_agar_with_1_nacl.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_r2a_score20.py
+  action: LINKED_JCM_R2A_SCORE20_CHILDREN
+  changes: Linked score-20 direct JCM R2A Agar children
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1153; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=346
+  notes: Added or refreshed reciprocal SALINITY_VARIANT link for bacterial/r2a_agar_with_2_nacl.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_r2a_score20.py
+  action: LINKED_JCM_R2A_SCORE20_CHILDREN
+  changes: Linked score-20 direct JCM R2A Agar children
+  source: https://togomedium.org/medium/M1376; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1280;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=346
+  notes: Added or refreshed reciprocal SALINITY_VARIANT link for bacterial/r2a_agar_with_3_nacl.yaml.
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_r2a_score20.py
+  action: LINKED_JCM_R2A_SCORE20_CHILDREN
+  changes: Linked score-20 direct JCM R2A Agar children
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1235; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=346
+  notes: Added or refreshed reciprocal SUPPLEMENTED_VARIANT link for bacterial/r2a_agar_with_fumarate.yaml.
 variant_children:
+- path: data/normalized_yaml/bacterial/1_10_r2a_agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:003149
+  name: 1_10_r2a_agar
+  notes: Uses 1.82 g/L R2A agar (BD-Difco) with 15 g/L added agar.
+- path: data/normalized_yaml/bacterial/1_2_r2a_agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:003190
+  name: 1_2_r2a_agar
+  notes: Uses 9.1 g/L R2A agar (BD-Difco) with 7.5 g/L added agar.
 - path: data/normalized_yaml/bacterial/5_x_r2a_agar.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:002271
@@ -184,6 +231,26 @@ variant_children:
   id: CultureMech:002475
   name: r2a_agar_ph_9_0
   notes: JCM 1311 delegates to JCM 346 and adjusts the sterilized medium to pH 9.0.
+- path: data/normalized_yaml/bacterial/r2a_agar_with_1_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:003261
+  name: r2a_agar_with_1_nacl
+  notes: Adds 10 g/L NaCl to R2A Agar.
+- path: data/normalized_yaml/bacterial/r2a_agar_with_2_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:002325
+  name: r2a_agar_with_2_nacl
+  notes: Adds 20 g/L NaCl to R2A Agar.
+- path: data/normalized_yaml/bacterial/r2a_agar_with_3_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:002447
+  name: r2a_agar_with_3_nacl
+  notes: Adds 30 g/L NaCl to R2A Agar.
+- path: data/normalized_yaml/bacterial/r2a_agar_with_fumarate.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:002402
+  name: r2a_agar_with_fumarate
+  notes: Adds 3.2 g/L disodium fumarate to R2A Agar.
 source_environment:
 - preferred_term: rhizosphere
   term:

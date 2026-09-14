@@ -11,11 +11,9 @@ media_term:
   term:
     id: TOGO:M1221
     label: Longimonas Haloalkaliphila Medium
-notes: 'Source: https://togomedium.org/medium/M1221
-
-  Original source: JCM - JCM_M1140
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1140'
+notes: JCM Medium 1140 defines Longimonas Haloalkaliphila Medium as Basic mineral
+  salt medium 1 and Basal medium 2 from JCM Medium 1139 plus autoclaved tryptone and
+  yeast extract stock solutions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -45,32 +43,67 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_cross_reference_score25.py
+  action: RESOLVED_SCORE25_CROSS_REFERENCE
+  changes: Resolved score-25 source cross-references
+  source: https://togomedium.org/medium/M1221; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1140;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1139
+  notes: JCM Medium 1140 defines Longimonas Haloalkaliphila Medium as Basic mineral
+    salt medium 1 and Basal medium 2 from JCM Medium 1139 plus autoclaved tryptone
+    and yeast extract stock solutions.
 solutions:
-- preferred_term: 1.0% Yeast extract solution (autoclaved)
-  composition: []
+- preferred_term: Basic mineral salt medium 1
   concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-  name: Unknown solution
-- preferred_term: 10% Tryptone solution (autoclaved)
-  composition: []
+    value: '950.0'
+    unit: ML_PER_L
+  notes: JCM Medium 1140 lists 950.0 ml/L Basic mineral salt medium 1 from JCM Medium
+    1139.
+- preferred_term: Basal medium 2
   concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-  name: Unknown solution
-- preferred_term: Basic mineral salt medium 1 (see Medium [M1220])
-  composition: []
-  notes: Cross-reference to Medium M1220
+    value: '50.0'
+    unit: ML_PER_L
+  notes: JCM Medium 1140 lists 50.0 ml/L Basal medium 2 from JCM Medium 1139.
+- preferred_term: 10% Tryptone solution
   concentration:
-    value: '950'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Basal medium 2 (see Medium [M1220])
-  composition: []
-  notes: Cross-reference to Medium M1220
+    value: '15.0'
+    unit: ML_PER_L
+  notes: JCM Medium 1140 lists 15.0 ml/L 10% Tryptone solution.
+  composition:
+  - preferred_term: Tryptone
+    concentration:
+      value: '10'
+      unit: PERCENT_W_V
+    source: JCM Medium 1140
+    notes: JCM Medium 1140 identifies this as a 10% stock solution.
+    term:
+      id: MICRO:0000182
+      label: Tryptone
+- preferred_term: 1.0% Yeast extract solution
   concentration:
-    value: '50'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '2.0'
+    unit: ML_PER_L
+  notes: JCM Medium 1140 lists 2.0 ml/L 1.0% Yeast extract solution.
+  composition:
+  - preferred_term: Yeast extract
+    concentration:
+      value: '1.0'
+      unit: PERCENT_W_V
+    source: JCM Medium 1140
+    notes: JCM Medium 1140 identifies this as a 1.0% stock solution.
+    term:
+      id: FOODON:03315426
+      label: yeast extract
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Aseptically combine the JCM Medium 1139 Basic mineral salt medium 1
+    and Basal medium 2 with the tryptone and yeast extract stock solutions.
+references:
+- reference: https://togomedium.org/medium/M1221
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1140
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1139
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients

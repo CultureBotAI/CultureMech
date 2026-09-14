@@ -5,13 +5,14 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1.0'
+    unit: L
+  source: TOGO M2140 / NBRC Medium 1481
+  notes: TOGO M2140 / NBRC Medium 1481 lists 1 L Distilled water as the solvent.
   term:
     id: CHEBI:15377
     label: water
@@ -22,35 +23,52 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M2140 / NBRC Medium 1481
+  notes: TOGO M2140 / NBRC Medium 1481 lists 0.5 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: MnCl2·4H2O
   concentration:
-    value: '36'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '36.0'
+    unit: MG_PER_L
+  source: TOGO M2140 / NBRC Medium 1481
+  notes: TOGO M2140 / NBRC Medium 1481 lists 36 mg/L manganese(II) chloride tetrahydrate.
   term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:86368
     label: manganese(II) chloride tetrahydrate
 - preferred_term: Agar (if needed)
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M2140 / NBRC Medium 1481
+  notes: TOGO M2140 / NBRC Medium 1481 lists 15 g/L Agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Peptone
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
+  source: TOGO M2140 / NBRC Medium 1481
+  notes: TOGO M2140 / NBRC Medium 1481 lists 1 g/L Peptone.
+  term:
+    id: MICRO:0000178
+    label: Peptone
 media_term:
   preferred_term: TOGO Medium M2140
   term:
     id: TOGO:M2140
     label: Mn(II) oxidation medium
-notes: 'Source: https://togomedium.org/medium/M2140
-
-  Original source: NBRC - NBRC_M1481
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1481'
+notes: TOGO M2140 imports NBRC Medium 1481 as Mn(II) oxidation medium. The NBRC formula
+  lists 1 L distilled water, 0.5 g yeast extract, 36 mg MnCl2 x 4H2O, 15 g agar if
+  needed, 1 g peptone, and pH 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -81,3 +99,17 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2140_mn_ii_score15.py
+  action: RESOLVED_TOGO_M2140_SCORE15
+  source: https://togomedium.org/medium/M2140; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1481
+  notes: TOGO M2140 imports NBRC Medium 1481 as Mn(II) oxidation medium. The NBRC
+    formula lists 1 L distilled water, 0.5 g yeast extract, 36 mg MnCl2 x 4H2O, 15
+    g agar if needed, 1 g peptone, and pH 7.0. Corrected the imported Distilled water
+    and MnCl2 hydrate units, added the source pH, and grounded every ingredient.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2140
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1481

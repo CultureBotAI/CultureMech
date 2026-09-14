@@ -1,15 +1,18 @@
 id: CultureMech:000128
 name: se1
 category: algae
+sources:
+- database: CCAP
+  database_id: SE1_Marine
+  url: https://www.ccap.ac.uk/wp-content/uploads/MR_SE1_Marine.pdf
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from CCAP Culture Collection. Suitable for saltwater
   algae cultivation. Recipe available in PDF format.
-notes: 'Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_SE1_Marine.pdf
-
-  Composition verified against https://www.ccap.ac.uk/wp-content/uploads/MR_SE1_Marine.pdf
-  on 2026-08-25.'
+notes: CCAP prepares SE1 by twice autoclaving dried deciduous-woodland loam with twice
+  its volume of deionized water, settling it for 2-3 weeks, decanting the supernatant,
+  and autoclaving the final extract.
 salinity: marine (natural seawater or artificial seawater)
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
@@ -56,39 +59,63 @@ curation_history:
   changes: ingredients 0 -> 2; solutions 0 -> 0
   notes: Rebuilt se1 from the reviewed CCAP PDF. Preserved stock boundaries and per-vessel
     quantities; ingredient identities follow the MediaIngredientMech SSSOM.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_algae_score45_blends_soils.py
+  action: RESOLVED_SCORE45_ALGAE_GRAPH
+  changes: Resolved score-45 algae recipe graph
+  source: https://www.ccap.ac.uk/wp-content/uploads/MR_SE1_Marine.pdf
+  notes: CCAP prepares SE1 by twice autoclaving dried deciduous-woodland loam with
+    twice its volume of deionized water, settling it for 2-3 weeks, decanting the
+    supernatant, and autoclaving the final extract.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_ccap_sources_score10.py
+  action: NORMALIZED_CCAP_SOURCE_SCORE10
+  changes: Normalized CCAP provenance
+  source: CCAP:SE1_Marine; https://www.ccap.ac.uk/wp-content/uploads/MR_SE1_Marine.pdf
+  notes: Copied the CCAP source identity from references and the original ccap-import
+    event into the structured sources slot recognized by review scoring.
 references:
 - reference: CCAP:SE1_Marine
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_SE1_Marine.pdf
 ingredients:
-- preferred_term: Prepared dried soil
+- preferred_term: Prepared dried deciduous-woodland loam
   concentration:
     value: variable
     unit: VARIABLE
-  notes: Use air-dried, sieved rich loam from undisturbed deciduous woodland.
+  term:
+    id: ENVO:00001998
+    label: soil
+  notes: CCAP specifies air-dried and sieved rich loam from undisturbed deciduous
+    woodland.
 - preferred_term: Deionized water
   concentration:
-    value: variable
+    value: 2 volumes per 1 volume dried soil
     unit: VARIABLE
-  notes: Use twice the volume of water relative to dried soil.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: CCAP mixes dried soil with twice its volume of deionized water.
+solutions: []
 original_name: SE1
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Remove stones, roots, and large invertebrates; air-dry and sieve the
-    soil.
+  description: Air-dry rich deciduous-woodland loam, remove debris, and sieve it.
 - step_number: 2
   action: MIX
-  description: Combine dried soil with twice its volume of supernatant deionized water.
+  description: Combine dried soil with twice its volume of deionized water.
 - step_number: 3
   action: AUTOCLAVE
-  description: Autoclave at 15 psi and 126 C for 20 minutes; cool and repeat once.
+  description: Autoclave at 15 psi and 126 C for 20 minutes, cool, and repeat once.
 - step_number: 4
   action: STORE
-  description: Seal and leave undisturbed for 2-3 weeks so sediment settles.
+  description: Seal and leave undisturbed for 2-3 weeks to settle.
 - step_number: 5
   action: ALIQUOT
-  description: Aseptically decant the supernatant into sterile containers without
-    disturbing sediment.
+  description: Aseptically decant the supernatant into sterile containers.
 - step_number: 6
   action: AUTOCLAVE
   description: Autoclave the final soil extract at 15 psi and 121 C for 15 minutes.
@@ -97,3 +124,8 @@ preparation_steps:
   description: Cool, seal, and store refrigerated.
 sterilization:
   method: AUTOCLAVE
+  pressure: 15
+  duration: 20 minutes, repeated once, then 15 minutes
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

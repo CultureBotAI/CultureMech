@@ -2,29 +2,150 @@ id: CultureMech:004331
 name: trace_element_solution_medium_939
 original_name: Trace element solution (medium 939)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2058 | DSMZ Medium: 2058
-  (mediadive.medium:2058) | Aerobic: No | SubMedium: Yes'
+notes: KOMODO 2058 lists Trace element solution (medium 939) as a defined submedium
+  at pH 6.0. Its metabolite table contains 50.00 g/L EDTA, 9.00 g/L NaOH, 7.34 g/L
+  CaCl2 x 2 H2O, 5.00 g/L FeSO4 x 7 H2O, 2.50 g/L MnCl2 x 4 H2O, 1.00 g/L ZnSO4 x
+  7 H2O, 0.50 g/L CoCl2 x 6 H2O, 0.50 g/L NH4(MoO4), 0.20 g/L CuSO4 x 5 H2O, and H2O.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the 1 L Trace element solution stock from H2O, EDTA, NaOH,
+    and the cobalt, calcium, zinc, copper, manganese, iron, and molybdate salts listed
+    by KOMODO 2058.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust the Trace element solution stock to pH 6.0 with NaOH.
 media_term:
   preferred_term: KOMODO Medium 2058
   term:
     id: komodo.medium:2058
     label: Trace element solution (medium 939)
 ingredients:
-- preferred_term: NaOH
-  notes: Extracted from recipe notes (pH buffer)
-  data_quality_flags:
-  - extracted_from_notes
+- preferred_term: CoCl2 x 6 H2O
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '0.50'
+    unit: G_PER_L
+  source: KOMODO Medium 2058
+  notes: KOMODO Medium 2058 lists 0.50 g/L CoCl2 x 6 H2O.
+  term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   mediaingredientmech_chebi_term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '7.34'
+    unit: G_PER_L
+  source: KOMODO Medium 2058
+  notes: KOMODO Medium 2058 lists 7.34 g/L CaCl2 x 2 H2O.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: H2O
+  concentration:
+    value: '1.0'
+    unit: L
+  source: KOMODO Medium 2058
+  notes: KOMODO Medium 2058 lists H2O without a gram amount; normalized here as the
+    solvent for 1 L of Trace element solution (medium 939).
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: ZnSO4 x 7 H2O
+  concentration:
+    value: '1.00'
+    unit: G_PER_L
+  source: KOMODO Medium 2058
+  notes: KOMODO Medium 2058 lists 1.00 g/L ZnSO4 x 7 H2O.
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: EDTA
+  concentration:
+    value: '50.00'
+    unit: G_PER_L
+  source: KOMODO Medium 2058
+  notes: KOMODO Medium 2058 lists 50.00 g/L EDTA.
+  term:
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
+- preferred_term: CuSO4 x 5 H2O
+  concentration:
+    value: '0.20'
+    unit: G_PER_L
+  source: KOMODO Medium 2058
+  notes: KOMODO Medium 2058 lists 0.20 g/L CuSO4 x 5 H2O.
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '2.50'
+    unit: G_PER_L
+  source: KOMODO Medium 2058
+  notes: KOMODO Medium 2058 lists 2.50 g/L MnCl2 x 4 H2O.
+  term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '5.00'
+    unit: G_PER_L
+  source: KOMODO Medium 2058
+  notes: KOMODO Medium 2058 lists 5.00 g/L FeSO4 x 7 H2O.
+  term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+- preferred_term: NH4(MoO4)
+  concentration:
+    value: '0.50'
+    unit: G_PER_L
+  source: KOMODO Medium 2058
+  notes: KOMODO Medium 2058 lists 0.50 g/L NH4(MoO4).
+  term:
+    id: CHEBI:91249
+    label: ammonium molybdate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91249
+    label: ammonium molybdate
+- preferred_term: NaOH
+  concentration:
+    value: '9.00'
+    unit: G_PER_L
+  source: KOMODO Medium 2058
+  notes: KOMODO Medium 2058 lists 9.00 g/L NaOH and identifies NaOH as the pH adjuster
+    for pH 6.0.
+  term:
     id: CHEBI:32145
     label: sodium hydroxide
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:32145
     label: sodium hydroxide
 applications:
@@ -61,3 +182,15 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_komodo_2058_score15.py
+  action: RESOLVED_KOMODO_2058_SCORE15
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2058
+  notes: Replaced the NaOH-only pH-buffer import with the complete KOMODO 2058 metabolite
+    table; preserved NaOH as a listed component and pH adjuster; and grounded all
+    disclosed components through MediaIngredientMech.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2058

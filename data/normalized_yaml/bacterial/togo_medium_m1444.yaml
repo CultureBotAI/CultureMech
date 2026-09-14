@@ -6,12 +6,32 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
+- preferred_term: SI Medium Dehydrated
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  source: NBRC Medium 209
+  notes: NBRC Medium 209 lists 50 g/L SI Medium Dehydrated from Nippon Jozo Kyokai,
+    Tokyo; this dehydrated commercial medium is retained as an opaque complex component.
+- preferred_term: Ethyl alcohol
+  concentration:
+    value: '100'
+    unit: ML_PER_L
+  source: NBRC Medium 209
+  notes: NBRC Medium 209 lists 100 ml/L ethyl alcohol; the source footnote says to
+    sterilize it by filtration and add it to SI medium sterilized by autoclaving.
+  term:
+    id: CHEBI:16236
+    label: ethanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
+    label: ethanol
 - preferred_term: Distilled water
   concentration:
     value: '900'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    unit: ML_PER_L
+  source: NBRC Medium 209
+  notes: NBRC Medium 209 lists 900 ml/L distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -23,11 +43,9 @@ media_term:
   term:
     id: TOGO:M1444
     label: TOGO Medium M1444
-notes: 'Source: https://togomedium.org/medium/M1444
-
-  Original source: NBRC - NBRC_M209
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=209'
+notes: 'TOGO M1444 imports NBRC Medium 209: SI Medium Dehydrated from Nippon Jozo
+  Kyokai, ethyl alcohol, and 900 ml distilled water. NBRC footnotes the ethanol addition:
+  sterilize it by filtration and add it to autoclaved SI medium.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -70,19 +88,28 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-solutions:
-- preferred_term: Ethyl alcohol**
-  composition: []
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Organic compound'
-  name: Unknown solution
-- preferred_term: SI Medium Dehydrated*
-  composition: []
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-  name: Unknown solution
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nbrc_209_score15.py
+  action: RESOLVED_NBRC_209_SCORE15
+  source: https://togomedium.org/medium/M1444; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=209
+  notes: Curated TOGO:M1444 from TOGO and NBRC Medium 209; moved the SI Medium Dehydrated
+    and ethyl alcohol rows out of empty solution wrappers, corrected volume rows to
+    ml/L, grounded ethanol and water, and added autoclave and filter-sterilization
+    steps.
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave 50 g/L SI Medium Dehydrated in 900 ml/L distilled water.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Sterilize 100 ml/L ethyl alcohol by filtration.
+- step_number: 3
+  action: MIX
+  description: Add the filter-sterilized ethyl alcohol to the autoclaved SI medium.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1444
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=209

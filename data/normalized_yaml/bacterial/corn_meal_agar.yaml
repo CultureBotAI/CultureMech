@@ -11,29 +11,50 @@ media_term:
   term:
     id: mediadive.medium:191
     label: CORN MEAL AGAR
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium191.pdf'
+notes: DSMZ Medium 191 prepares Corn Meal Agar from 50.0 g/L corn meal and 10.0 g/L
+  agar after extracting the corn meal in distilled water overnight and at 60 C.
 ingredients:
 - preferred_term: Corn meal
   concentration:
-    value: '50'
+    value: '50.0'
     unit: G_PER_L
+  source: DSMZ Medium 191
+  notes: DSMZ Medium 191 blends 50.0 g corn meal in 800 ml distilled water, leaves
+    it overnight in the refrigerator, heats it at 60 C for one hour, filters it, and
+    brings the filtrate to 1 L.
+  term:
+    id: mediadive.compound:2087
+    label: Corn meal
 - preferred_term: Agar
   term:
     id: CHEBI:2509
     label: agar
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
+  source: DSMZ Medium 191
+  notes: DSMZ Medium 191 adds 10.0 g agar after bringing the corn-meal filtrate to
+    1 L and heats to dissolve it before autoclaving.
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Blend 50.0 g corn meal in 800 ml distilled water and leave overnight
+    in the refrigerator.
+- step_number: 2
+  action: HEAT
+  description: Heat at 60 C for one hour.
+- step_number: 3
+  action: FILTER
+  description: Filter and bring the volume to 1 L.
+- step_number: 4
+  action: HEAT
+  description: Add 10.0 g agar and heat to dissolve.
+- step_number: 5
   action: AUTOCLAVE
-  description: Blend 50.0 g corn meal in 800 ml of distilled water. Leave overnight
-    in the refrigerator. Heat at 60°C for one hour. Filter and make up volume to 1
-    l. Add 10.0 g agar and heat to dissolve, then autoclave at 121°C for 15 minutes.
-    pH 6.0.
+  description: Autoclave the completed corn meal agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -60,11 +81,67 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_corn_meal_score25.py
+  action: RESOLVED_KOMODO_CORN_MEAL_SCORE25_GRAPH
+  changes: Resolved DSMZ Medium 191 Corn Meal Agar recipe
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium191.pdf
+  notes: DSMZ Medium 191 prepares Corn Meal Agar from 50.0 g/L corn meal and 10.0
+    g/L agar after extracting the corn meal in distilled water overnight and at 60
+    C.
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_corn_meal_score25.py
+  action: LINKED_KOMODO_CORN_MEAL_SCORE25_CHILDREN
+  changes: Linked KOMODO Medium 191 children to DSMZ Medium 191
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium191.pdf
+  notes: Added or refreshed reciprocal SOURCE_DUPLICATE link for bacterial/KOMODO_191_CORN_MEAL_AGAR.yaml.
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_corn_meal_score25.py
+  action: LINKED_KOMODO_CORN_MEAL_SCORE25_CHILDREN
+  changes: Linked KOMODO Medium 191 children to DSMZ Medium 191
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium191.pdf
+  notes: Added or refreshed reciprocal PH_VARIANT link for bacterial/for_dsm_25939.yaml.
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_corn_meal_score25.py
+  action: LINKED_KOMODO_CORN_MEAL_SCORE25_CHILDREN
+  changes: Linked KOMODO Medium 191 children to DSMZ Medium 191
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium191.pdf
+  notes: Added or refreshed reciprocal PH_VARIANT link for bacterial/for_dsm_25945.yaml.
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_corn_meal_score25.py
+  action: LINKED_KOMODO_CORN_MEAL_SCORE25_CHILDREN
+  changes: Linked KOMODO Medium 191 children to DSMZ Medium 191
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium191.pdf
+  notes: Added or refreshed reciprocal PH_VARIANT link for bacterial/for_dsm_25720.yaml.
 kg_microbe_match: mediadive.medium:12
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium191.pdf
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_191_CORN_MEAL_AGAR.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004218
   name: corn_meal_agar
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 191; local ingredient
-    and concentration signatures match.
+  notes: KOMODO Medium 191 is a source-catalogue duplicate of DSMZ Medium 191.
+- path: data/normalized_yaml/bacterial/for_dsm_25939.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:004217
+  name: for_dsm_25939
+  notes: KOMODO Medium 191.4 preserves DSMZ Medium 191 components and concentrations
+    but records pH 7.2 for DSM 25939.
+- path: data/normalized_yaml/bacterial/for_dsm_25945.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:004216
+  name: for_dsm_25945
+  notes: KOMODO Medium 191.3 preserves DSMZ Medium 191 components and concentrations
+    but records pH 7.4 for DSM 25945.
+- path: data/normalized_yaml/bacterial/for_dsm_25720.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:004215
+  name: for_dsm_25720
+  notes: KOMODO Medium 191.2 preserves DSMZ Medium 191 components and concentrations
+    but records pH 7.5 for DSM 25720.

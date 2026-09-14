@@ -5,13 +5,14 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.8
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '701.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component [Merged 2 duplicates: 700.0, 1.0]'
+    value: '700.0'
+    unit: ML_PER_L
+  source: TOGO M1485 / NBRC Medium 267
+  notes: TOGO M1485 / NBRC Medium 267 lists 700 ml/L Distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -20,52 +21,77 @@ ingredients:
     label: water
 - preferred_term: Bacto Agar (Difco, if needed)
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M1485 / NBRC Medium 267
+  notes: TOGO M1485 / NBRC Medium 267 lists 15 g/L Bacto Agar from Difco if a solid
+    medium is needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Bacto Heart Infusion Broth (Difco)
   concentration:
-    value: '25'
+    value: '25.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  source: TOGO M1485 / NBRC Medium 267
+  notes: TOGO M1485 / NBRC Medium 267 lists 25 g/L Bacto Heart Infusion Broth from
+    Difco; this catalog broth is retained as an opaque component.
 - preferred_term: calf thymus DNA (Sigma, Type I)
   concentration:
-    value: '12'
-    unit: G_PER_L
-  notes: 'Role: Growth factor'
+    value: '12.0'
+    unit: ML_PER_L
+  source: TOGO M1485 / NBRC Medium 267
+  notes: TOGO M1485 / NBRC Medium 267 lists 12 ml/L calf thymus DNA from Sigma Type
+    I as a 0.2% w/v stock; this source-qualified DNA product remains intentionally
+    unmapped.
 - preferred_term: thallium acetate
   concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Simple component'
+    value: '10.0'
+    unit: ML_PER_L
+  source: TOGO M1485 / NBRC Medium 267
+  notes: TOGO M1485 / NBRC Medium 267 lists 10 ml/L thallium acetate as a 1% w/v stock.
+  term:
+    id: CHEBI:75192
+    label: Thallium(I) acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75192
+    label: Thallium(I) acetate
 - preferred_term: horse serum (heat inactivated, 56℃ for 30 minutes)
   concentration:
-    value: '200'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+    value: '200.0'
+    unit: ML_PER_L
+  source: TOGO M1485 / NBRC Medium 267
+  notes: TOGO M1485 / NBRC Medium 267 lists 200 ml/L horse serum heat inactivated
+    at 56 C for 30 minutes.
+  term:
+    id: MICRO:0001235
+    label: Horse serum
 - preferred_term: Penicillin G
   concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Simple component, Defined component'
+    value: '25.0'
+    unit: ML_PER_L
+  source: TOGO M1485 / NBRC Medium 267
+  notes: TOGO M1485 / NBRC Medium 267 lists 25 ml/L Penicillin G as a 20,000 IU/ml
+    stock.
   term:
     id: CHEBI:51765
     label: benzylpenicillin sodium
-- preferred_term: dried baker's yeast
-  concentration:
-    value: '250'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:51765
+    label: benzylpenicillin sodium
 media_term:
   preferred_term: TOGO Medium M1485
   term:
     id: TOGO:M1485
     label: Modified Hayflick Medium
-notes: 'Source: https://togomedium.org/medium/M1485
-
-  Original source: NBRC - NBRC_M267
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=267'
+notes: TOGO M1485 imports NBRC Medium 267 as Modified Hayflick Medium. NBRC 267 lists
+  25 g Bacto Heart Infusion Broth, 700 ml distilled water, 15 g Bacto Agar if needed,
+  pH 7.8, autoclaving at 121 C for 20 min, and aseptic addition of 200 ml heat-inactivated
+  horse serum, 100 ml fresh yeast extract, 12 ml calf thymus DNA, 10 ml thallium acetate,
+  and 25 ml Penicillin G.
 applications:
 - Microbial cultivation
 curation_history:
@@ -117,10 +143,74 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m1485_modified_hayflick_score15.py
+  action: RESOLVED_TOGO_M1485_SCORE15
+  source: https://togomedium.org/medium/M1485; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=267
+  notes: TOGO M1485 imports NBRC Medium 267 as Modified Hayflick Medium. NBRC 267
+    lists 25 g Bacto Heart Infusion Broth, 700 ml distilled water, 15 g Bacto Agar
+    if needed, pH 7.8, autoclaving at 121 C for 20 min, and aseptic addition of 200
+    ml heat-inactivated horse serum, 100 ml fresh yeast extract, 12 ml calf thymus
+    DNA, 10 ml thallium acetate, and 25 ml Penicillin G. Split the merged water row
+    back into the 700 ml/L base water and the 1 L fresh-yeast-extract stock water,
+    restored the fresh yeast extract stock composition, corrected stock addition volumes,
+    added pH 7.8, and grounded machine-usable ingredients.
 solutions:
 - preferred_term: fresh yeast extract (25% solution)
-  composition: []
   concentration:
-    value: '100'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '100.0'
+    unit: ML_PER_L
+  source: TOGO M1485 / NBRC Medium 267
+  notes: TOGO M1485 / NBRC Medium 267 adds 100 ml/L fresh yeast extract prepared as
+    a 25% solution.
+  composition:
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: TOGO M1485 / NBRC Medium 267 fresh yeast extract stock
+    notes: TOGO M1485 / NBRC Medium 267 prepares the 25% fresh yeast extract with
+      1 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: dried baker's yeast
+    concentration:
+      value: '250.0'
+      unit: G_PER_L
+    source: TOGO M1485 / NBRC Medium 267 fresh yeast extract stock
+    notes: TOGO M1485 / NBRC Medium 267 boils 250 g dried baker's yeast per liter
+      to prepare 25% fresh yeast extract.
+    term:
+      id: FOODON:03413797
+      label: Baker's yeast
+  preparation_notes: Boil 250 g of dried baker's yeast suspended in 1 L of distilled
+    water for 30 min, remove yeast cells by centrifugation, and sterilize by filtration.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Combine 25 g Bacto Heart Infusion Broth and 700 ml distilled water;
+    add 15 g Bacto Agar if a solid medium is needed.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust the base to pH 7.8.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 20 min.
+- step_number: 4
+  action: MIX
+  description: Aseptically add heat-inactivated horse serum, fresh yeast extract,
+    calf thymus DNA, thallium acetate, and Penicillin G.
+sterilization:
+  method: AUTOCLAVE
+  notes: NBRC Medium 267 autoclaves the base at 121 C for 20 min.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1485
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=267

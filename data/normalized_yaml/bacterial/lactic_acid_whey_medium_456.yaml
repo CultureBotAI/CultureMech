@@ -2,25 +2,30 @@ id: CultureMech:004985
 name: lactic_acid_whey_medium_456
 original_name: Lactic acid whey (medium 456)
 category: bacterial
+record_kind: SOLUTION
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.5
-notes: 'pH buffer: lactic acid | Source: KOMODO ModelSEED | ID: 3137 | DSMZ Medium:
-  3137 (mediadive.medium:3137) | Aerobic: No | SubMedium: Yes'
+notes: DSMZ Medium 456 defines Lactic acid whey as the stock solution made by adjusting
+  10% skim milk to pH 5.5 with lactic acid, heating, filtering, adjusting the broth
+  filtrate to pH 7.0 with 2 N NaOH, heating and filtering again, then adjusting the
+  filtrate to pH 5.5 with 2 N HCl.
 media_term:
   preferred_term: KOMODO Medium 3137
   term:
     id: komodo.medium:3137
     label: Lactic acid whey (medium 456)
 ingredients:
-- preferred_term: lactic
-  notes: Extracted from recipe notes (pH buffer)
-  data_quality_flags:
-  - extracted_from_notes
+- preferred_term: Skim milk
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '100.0'
+    unit: G_PER_L
+  source: DSMZ Medium 456
+  notes: DSMZ Medium 456 prepares lactic acid whey from 10% skim milk.
+  term:
+    id: FOODON:03301484
+    label: Skimmed milk
 applications:
 - Microbial cultivation
 curation_history:
@@ -45,3 +50,43 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_dsmz_score35.py
+  action: RESOLVED_DSMZ_SCORE35_GRAPH
+  changes: Resolved DSMZ-backed score-35 graph
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium456.pdf
+  notes: DSMZ Medium 456 defines Lactic acid whey as the stock solution made by adjusting
+    10% skim milk to pH 5.5 with lactic acid, heating, filtering, adjusting the broth
+    filtrate to pH 7.0 with 2 N NaOH, heating and filtering again, then adjusting
+    the filtrate to pH 5.5 with 2 N HCl.
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Adjust 10% skim milk to pH 5.5 with lactic acid and heat at 100 C for
+    30 minutes.
+  temperature:
+    value: 100.0
+    unit: CELSIUS
+  duration: 30 minutes
+- step_number: 2
+  action: FILTER
+  description: Remove the precipitate by filtration.
+- step_number: 3
+  action: HEAT
+  description: For broth medium, adjust the filtrate to pH 7.0 with 2 N NaOH and heat
+    at 100 C for 30 minutes.
+  temperature:
+    value: 100.0
+    unit: CELSIUS
+  duration: 30 minutes
+- step_number: 4
+  action: FILTER
+  description: Remove the precipitate by filtration.
+- step_number: 5
+  action: ADJUST_PH
+  description: Adjust the filtrate to pH 5.5 with 2 N HCl.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium456.pdf

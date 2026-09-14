@@ -63,10 +63,29 @@ curation_history:
     obsolete composition/source flags
   notes: Recovered JCM J630 from source-equivalent TOGO M643. Preserved final ingredients
     and stock-solution boundaries; did not flatten referenced media or stocks.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_jcm_thermoproteus_c_score35.py
+  action: GROUNDED_JCM_THERMOPROTEUS_C_CROSS_REFERENCE
+  changes: Grounded recovered JCM cross-reference solution
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=630; https://togomedium.org/medium/M643;
+    https://togomedium.org/medium/M291
+  notes: Linked the recovered JCM J630 Vulcanisaeta Medium wrapper to the source-equivalent
+    TOGO M291 record used by the curated TOGO M643 pH variant.
 solutions:
-- preferred_term: VULCANISAETA MEDIUM (see Medium [M291])
+- preferred_term: Vulcanisaeta Medium
   composition: []
   concentration:
-    value: '1'
-    unit: L
-  notes: Defined in TOGO medium M291.
+    value: '1000'
+    unit: ML_PER_L
+  notes: JCM J630 prepares Vulcanisaeta Medium and adjusts it to pH 7.0; TOGO M291
+    is the source-equivalent Vulcanisaeta Medium.
+  culturemech_term:
+    id: CultureMech:009455
+    label: Vulcanisaeta Medium
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=630
+- reference: https://togomedium.org/medium/M643
+- reference: https://togomedium.org/medium/M291

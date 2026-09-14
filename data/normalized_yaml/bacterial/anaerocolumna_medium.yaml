@@ -274,12 +274,47 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_12503.yaml
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_860_anaerocolumna_score10.py
+  action: RESOLVED_KOMODO_860_ANAEROCOLUMNA_TOPOLOGY
+  changes: Re-rooted KOMODO Medium 860 Anaerocolumna exact topology
+  source: DSMZ Medium 860; KOMODO Medium 860.1-860.6
+  notes: Moved exact KOMODO 860 plus its DSM-specific wrappers under DSMZ Medium 860.
+variant_children:
+- path: data/normalized_yaml/bacterial/hesp1_sr1_tmc4_lup_medium.yaml
   relationship: SOURCE_DUPLICATE
+  id: CultureMech:006687
+  name: hesp1_sr1_tmc4_lup_medium
+  notes: KOMODO Medium 860 has the same 22-ingredient signature as DSMZ Medium 860.
+- path: data/normalized_yaml/bacterial/for_dsm_12503.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006681
   name: for_dsm_12503
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+  notes: KOMODO Medium 860.1 applies Anaerocolumna medium to DSM 12503.
+- path: data/normalized_yaml/bacterial/for_dsm_12504.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006682
+  name: for_dsm_12504
+  notes: KOMODO Medium 860.2 applies Anaerocolumna medium to DSM 12504.
+- path: data/normalized_yaml/bacterial/for_dsm_12505.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006683
+  name: for_dsm_12505
+  notes: KOMODO Medium 860.3 applies Anaerocolumna medium to DSM 12505.
+- path: data/normalized_yaml/bacterial/for_dsm_13105.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006684
+  name: for_dsm_13105
+  notes: KOMODO Medium 860.4 applies Anaerocolumna medium to DSM 13105.
+- path: data/normalized_yaml/bacterial/for_dsm_13106_and_dsm_23801.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006685
+  name: for_dsm_13106_and_dsm_23801
+  notes: KOMODO Medium 860.5 applies Anaerocolumna medium to DSM 13106 and DSM 23801.
+- path: data/normalized_yaml/bacterial/for_dsm_13116.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006686
+  name: for_dsm_13116
+  notes: KOMODO Medium 860.6 applies Anaerocolumna medium to DSM 13116.
+data_quality_flags:
+- ingredients_curated

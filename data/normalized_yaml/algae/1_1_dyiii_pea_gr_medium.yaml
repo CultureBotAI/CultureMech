@@ -4,67 +4,181 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: (1:1) DYIII/PEA + Gr+ Medium
+  term:
+    id: UTEX:one-to-one-dyiii-pea-gr-plus-medium
+    label: (1:1) DYIII/PEA + Gr+ Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
+notes: 'UTEX prepares (1:1) DYIII/PEA + Gr+ Medium by autoclaving one organic dried
+  pea with 90 mL DYIII Medium, then adding 90 mL pasteurized Soilwater: GR+ Medium
+  and DAS Vitamin Cocktail.'
 ingredients:
-- preferred_term: DYIII Medium
-  concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'UTEX lists: amount 90 mL'
 - preferred_term: Pea
   concentration:
-    value: variable
+    value: 1 per 200 mL
     unit: VARIABLE
-  notes: 'UTEX lists: amount 1 per 200 mL'
+  notes: UTEX lists one organic dried pea per 200 mL.
+  nutritional_roles:
+  - CARBON_SOURCE
+  - NITROGEN_SOURCE
+solutions:
+- preferred_term: DYIII Medium
+  concentration:
+    value: '500'
+    unit: ML_PER_L
+  culturemech_term:
+    id: CultureMech:000159
+    label: DYIII Medium
+  notes: Converted from 90 mL prepared DYIII Medium per 180 mL recipe.
 - preferred_term: 'Soilwater: GR+ Medium'
   concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'UTEX lists: amount 90 mL'
+    value: '500'
+    unit: ML_PER_L
+  culturemech_term:
+    id: CultureMech:000225
+    label: 'Soilwater: GR+ Medium'
+  notes: 'Converted from 90 mL pasteurized Soilwater: GR+ Medium per 180 mL recipe.'
 - preferred_term: DAS Vitamin Cocktail
   concentration:
-    value: variable
+    value: 4 drops per 180 mL
     unit: VARIABLE
-  notes: 'UTEX lists: amount 4 drops'
+  term:
+    id: kgmicrobe.ingredient:das_vitamin_cocktail
+    label: DAS Vitamin Cocktail
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX starts the DAS Vitamin Cocktail with approximately 85 mL dH2O and
+      brings the final volume to 100 mL.
+  - preferred_term: Tricine
+    concentration:
+      value: '9'
+      unit: G_PER_L
+    term:
+      id: CHEBI:46760
+      label: Tricine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:46760
+      label: Tricine
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: T 5816-256
+    notes: Converted from 0.9 g Tricine per 100 mL; UTEX adjusts the cocktail to pH
+      8.0.
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Thiamine
+    concentration:
+      value: '0.67'
+      unit: G_PER_L
+    term:
+      id: CHEBI:18385
+      label: thiamine(1+)
+    mediaingredientmech_chebi_term:
+      id: CHEBI:18385
+      label: thiamine(1+)
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: T 1270
+    notes: Converted from 0.067 g/100 mL; UTEX reports 2.0 mM stock and 0.99 uM final
+      in DAS.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Biotin
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: B 4639
+    notes: Converted from 0.001 g/100 mL; UTEX reports 0.041 mM stock and 0.02 uM
+      final in DAS.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.008'
+      unit: G_PER_L
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: V 6629
+    notes: Converted from 0.0008 g/100 mL; UTEX reports adding B12 after autoclaving,
+      0.0059 mM stock, and 0.0029 uM final in DAS.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Pantothenate
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    term:
+      id: CHEBI:7916
+      label: Pantothenic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:7916
+      label: Pantothenic acid
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: P 2250
+    notes: Converted from 0.002 g/100 mL; UTEX reports 0.091 mM stock and 0.046 uM
+      final in DAS.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: PABA
+    concentration:
+      value: '0.04'
+      unit: G_PER_L
+    term:
+      id: CHEBI:30753
+      label: p-Aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: p-Aminobenzoic acid
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: A 1174
+    notes: Converted from 0.004 g/100 mL p-aminobenzoic acid; UTEX reports 0.291 mM
+      stock and 0.15 uM final in DAS.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  notes: UTEX lists 4 drops DAS Vitamin Cocktail per 180 mL recipe.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: Add one organic dried pea to 90 mL of DYIII Medium.
 - step_number: 2
-  action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  action: AUTOCLAVE
+  description: Autoclave the DYIII Medium and pea mixture.
 - step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
+  action: MIX
+  description: 'Add 90 mL of pasteurized Soilwater: GR+ Medium.'
 - step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
+  action: MIX
+  description: Add 4 drops of DAS Vitamin Cocktail.
 - step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
+  action: STORE
+  description: Store at refrigerator temperature.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -103,7 +217,21 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_dasycladales_pea_score35.py
+  action: RESOLVED_UTEX_DASYCLADALES_PEA_SCORE35
+  changes: Grounded UTEX Dasycladales and 1:1 DYIII/PEA+GR components
+  source: https://utex.org/products/one-to-one-dyiii-pea-gr-plus-medium
+  notes: 'UTEX prepares (1:1) DYIII/PEA + Gr+ Medium by autoclaving one organic dried
+    pea with 90 mL DYIII Medium, then adding 90 mL pasteurized Soilwater: GR+ Medium
+    and DAS Vitamin Cocktail.'
 references:
 - reference: UTEX:one-to-one-dyiii-pea-gr-plus-medium
 - reference: https://utex.org/products/one-to-one-dyiii-pea-gr-plus-medium
+- reference: https://utex.org/products/dyiii-medium
+- reference: https://utex.org/products/soilwater-gr-plus-medium
+- reference: https://utex.org/products/das-vitamin-cocktail
 original_name: 1:1 DYIII/PEA + Gr+ Medium
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

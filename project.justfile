@@ -405,7 +405,7 @@ audit-selective-agent-mismatch *args="":
 [group('QC')]
 audit-concentration-plausibility *args="":
     uv run --extra dev python scripts/audit_concentration_plausibility.py \
-        --max-allowed 9664 --max-cocktails 183 {{args}}
+        --max-allowed 9455 --max-cocktails 183 {{args}}
 
 # Rows whose concentration is the SUM of the duplicate values a merge consumed
 # (#394). `cleanup_media_quality.py` used to add duplicates together and record

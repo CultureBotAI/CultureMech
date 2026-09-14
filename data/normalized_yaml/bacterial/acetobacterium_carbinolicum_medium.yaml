@@ -5,14 +5,376 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: KOMODO Medium 313
   term:
     id: komodo.medium:313
     label: ACETOBACTERIUM CARBINOLICUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 313 | DSMZ Medium: 313 (mediadive.medium:313)
-  | Aerobic: No'
-ingredients: []
+notes: Archived DSMZ Medium 313 defines ACETOBACTERIUM CARBINOLICUM MEDIUM as DSMZ
+  Medium 124 with 20 mM ethanol as the substrate; this record expands the archived
+  DSMZ Medium 124 base, Solution B, trace stock, and vitamin stock into final per-liter
+  components.
+ingredients:
+- preferred_term: NaCl
+  source: Archived DSMZ Medium 124
+  notes: Archived DSMZ Medium 124 contributes 1.17 g NaCl in a 1012 mL final formulation,
+    yielding 1.156126 g/L.
+  concentration:
+    value: '1.156126'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: MgCl2 x 6 H2O
+  source: Archived DSMZ Medium 124
+  notes: Archived DSMZ Medium 124 contributes 0.40 g MgCl2 x 6 H2O in a 1012 mL final
+    formulation, yielding 0.395257 g/L.
+  concentration:
+    value: '0.395257'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: KCl
+  source: Archived DSMZ Medium 124
+  notes: Archived DSMZ Medium 124 contributes 0.30 g KCl in a 1012 mL final formulation,
+    yielding 0.296443 g/L.
+  concentration:
+    value: '0.296443'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: CaCl2 x 2 H2O
+  source: Archived DSMZ Medium 124
+  notes: Archived DSMZ Medium 124 contributes 0.15 g CaCl2 x 2 H2O in a 1012 mL final
+    formulation, yielding 0.148221 g/L.
+  concentration:
+    value: '0.148221'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: NH4Cl
+  source: Archived DSMZ Medium 124
+  notes: Archived DSMZ Medium 124 contributes 0.27 g NH4Cl in a 1012 mL final formulation,
+    yielding 0.266798 g/L.
+  concentration:
+    value: '0.266798'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: KH2PO4
+  source: Archived DSMZ Medium 124
+  notes: Archived DSMZ Medium 124 contributes 0.20 g KH2PO4 in a 1012 mL final formulation,
+    yielding 0.197628 g/L.
+  concentration:
+    value: '0.197628'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: Na2SO4
+  source: Archived DSMZ Medium 124
+  notes: Archived DSMZ Medium 124 contributes 2.84 g Na2SO4 in a 1012 mL final formulation,
+    yielding 2.806324 g/L.
+  concentration:
+    value: '2.806324'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: FeCl2 x 4 H2O
+  source: Archived DSMZ Medium 124 trace element solution
+  notes: Archived DSMZ Medium 124 adds 1 mL of the Archived DSMZ Medium 124 trace
+    element solution per 1012 mL final formulation; the trace stock contains 1.50
+    g/L FeCl2 x 4 H2O, yielding 0.001482 g/L.
+  concentration:
+    value: '0.001482'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+- preferred_term: ZnCl2
+  source: Archived DSMZ Medium 124 trace element solution
+  notes: Archived DSMZ Medium 124 adds 1 mL of the Archived DSMZ Medium 124 trace
+    element solution per 1012 mL final formulation; the trace stock contains 0.068
+    g/L ZnCl2, yielding 0.0000672 g/L.
+  concentration:
+    value: '0.0000672'
+    unit: G_PER_L
+  term:
+    id: CHEBI:49976
+    label: zinc dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
+- preferred_term: MnCl2 x 4 H2O
+  source: Archived DSMZ Medium 124 trace element solution
+  notes: Archived DSMZ Medium 124 adds 1 mL of the Archived DSMZ Medium 124 trace
+    element solution per 1012 mL final formulation; the trace stock contains 0.100
+    g/L MnCl2 x 4 H2O, yielding 0.0000988 g/L.
+  concentration:
+    value: '0.0000988'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+- preferred_term: H3BO3
+  source: Archived DSMZ Medium 124 trace element solution
+  notes: Archived DSMZ Medium 124 adds 1 mL of the Archived DSMZ Medium 124 trace
+    element solution per 1012 mL final formulation; the trace stock contains 0.062
+    g/L H3BO3, yielding 0.0000613 g/L.
+  concentration:
+    value: '0.0000613'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: CoCl2 x 6 H2O
+  source: Archived DSMZ Medium 124 trace element solution
+  notes: Archived DSMZ Medium 124 adds 1 mL of the Archived DSMZ Medium 124 trace
+    element solution per 1012 mL final formulation; the trace stock contains 0.120
+    g/L CoCl2 x 6 H2O, yielding 0.000119 g/L.
+  concentration:
+    value: '0.000119'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+- preferred_term: CuCl2 x 2 H2O
+  source: Archived DSMZ Medium 124 trace element solution
+  notes: Archived DSMZ Medium 124 adds 1 mL of the Archived DSMZ Medium 124 trace
+    element solution per 1012 mL final formulation; the trace stock contains 0.017
+    g/L CuCl2 x 2 H2O, yielding 0.0000168 g/L.
+  concentration:
+    value: '0.0000168'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+- preferred_term: NiCl2 x 6 H2O
+  source: Archived DSMZ Medium 124 trace element solution
+  notes: Archived DSMZ Medium 124 adds 1 mL of the Archived DSMZ Medium 124 trace
+    element solution per 1012 mL final formulation; the trace stock contains 0.024
+    g/L NiCl2 x 6 H2O, yielding 0.0000237 g/L.
+  concentration:
+    value: '0.0000237'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+- preferred_term: Na2MoO4 x 2 H2O
+  source: Archived DSMZ Medium 124 trace element solution
+  notes: Archived DSMZ Medium 124 adds 1 mL of the Archived DSMZ Medium 124 trace
+    element solution per 1012 mL final formulation; the trace stock contains 0.024
+    g/L Na2MoO4 x 2 H2O, yielding 0.0000237 g/L.
+  concentration:
+    value: '0.0000237'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: HCl
+  source: Archived DSMZ Medium 124 trace element solution
+  notes: Archived DSMZ Medium 124 adds 1 mL of 0.05 M HCl trace stock per 1012 mL
+    final formulation, yielding 0.049407 mM HCl.
+  concentration:
+    value: '0.049407'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+- preferred_term: Na-acetate
+  source: Archived DSMZ Medium 124
+  notes: Archived DSMZ Medium 124 contributes 1.40 g Na-acetate in a 1012 mL final
+    formulation, yielding 1.383399 g/L.
+  concentration:
+    value: '1.383399'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: Na-butyrate
+  source: Archived DSMZ Medium 124
+  notes: Archived DSMZ Medium 124 contributes 1.40 g Na-butyrate in a 1012 mL final
+    formulation, yielding 1.383399 g/L.
+  concentration:
+    value: '1.383399'
+    unit: G_PER_L
+  term:
+    id: CHEBI:64103
+    label: sodium butyrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64103
+    label: sodium butyrate
+- preferred_term: Yeast extract
+  source: Archived DSMZ Medium 124
+  notes: Archived DSMZ Medium 124 contributes 1.00 g Yeast extract in a 1012 mL final
+    formulation, yielding 0.988142 g/L.
+  concentration:
+    value: '0.988142'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: p-Aminobenzoic acid
+  source: Archived DSMZ Medium 124 vitamin solution
+  notes: Archived DSMZ Medium 124 adds 1 mL of the Archived DSMZ Medium 124 vitamin
+    solution per 1012 mL final formulation; the vitamin stock contains 0.040 g/L p-Aminobenzoic
+    acid, yielding 0.0000395 g/L.
+  concentration:
+    value: '0.0000395'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+- preferred_term: D(+)-Biotin
+  source: Archived DSMZ Medium 124 vitamin solution
+  notes: Archived DSMZ Medium 124 adds 1 mL of the Archived DSMZ Medium 124 vitamin
+    solution per 1012 mL final formulation; the vitamin stock contains 0.010 g/L D(+)-Biotin,
+    yielding 0.00000988 g/L.
+  concentration:
+    value: '0.00000988'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: biotin
+- preferred_term: Thiamine-HCl x 2 H2O
+  source: Archived DSMZ Medium 124 vitamin solution
+  notes: Archived DSMZ Medium 124 adds 1 mL of the Archived DSMZ Medium 124 vitamin
+    solution per 1012 mL final formulation; the vitamin stock contains 0.100 g/L Thiamine-HCl
+    x 2 H2O, yielding 0.0000988 g/L.
+  concentration:
+    value: '0.0000988'
+    unit: G_PER_L
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+- preferred_term: Resazurin
+  source: Archived DSMZ Medium 124
+  notes: Archived DSMZ Medium 124 contributes 0.50 mg Resazurin in a 1012 mL final
+    formulation, yielding 0.000494 g/L.
+  concentration:
+    value: '0.000494'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: NaHCO3
+  source: Archived DSMZ Medium 124
+  notes: Archived DSMZ Medium 124 contributes 4.50 g NaHCO3 in a 1012 mL final formulation,
+    yielding 4.446640 g/L.
+  concentration:
+    value: '4.446640'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Na2S x 9 H2O
+  source: Archived DSMZ Medium 124 Solution B
+  notes: Archived DSMZ Medium 124 adds all 10 mL of Archived DSMZ Medium 124 Solution
+    B per 1012 mL final formulation, yielding 0.355731 g/L Na2S x 9 H2O.
+  concentration:
+    value: '0.355731'
+    unit: G_PER_L
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+- preferred_term: Ethanol
+  source: Archived DSMZ Medium 313
+  notes: Archived DSMZ Medium 313 uses DSMZ Medium 124 with 20 mM ethanol as the substrate.
+  concentration:
+    value: '20.000'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:16236
+    label: ethanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
+    label: ethanol
+- preferred_term: Distilled water
+  source: Archived DSMZ Medium 124
+  notes: Archived DSMZ Medium 124 lists 1000 mL distilled water for Solution A.
+  concentration:
+    value: '1000.000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -35,5 +397,19 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_313_score35.py
+  action: RESOLVED_KOMODO_313_SCORE35
+  changes: Replaced empty KOMODO 313 composition with archived DSMZ data
+  source: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium313.pdf
+  notes: Archived DSMZ Medium 313 defines ACETOBACTERIUM CARBINOLICUM MEDIUM as DSMZ
+    Medium 124 with 20 mM ethanol as the substrate; this record expands the archived
+    DSMZ Medium 124 base, Solution B, trace stock, and vitamin stock into final per-liter
+    components.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=313
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium313.pdf
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium124.pdf

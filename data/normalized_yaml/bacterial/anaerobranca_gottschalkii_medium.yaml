@@ -409,10 +409,28 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_895_anaerobranca_score10.py
+  action: RESOLVED_KOMODO_895_ANAEROBRANCA_TOPOLOGY
+  changes: Re-rooted KOMODO Medium 895 Anaerobranca exact topology
+  source: DSMZ Medium 895; KOMODO Medium 895, 895.1, 895.2
+  notes: Moved exact KOMODO Medium 895 plus its DSM-specific wrappers under DSMZ Medium
+    895.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006750
-  name: anaerobranca_gottschalkii_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from the
-    matching DSMZ medium source.
+  name: KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium
+  notes: KOMODO Medium 895 has the same 35-ingredient signature as DSMZ Medium 895.
+- path: data/normalized_yaml/bacterial/for_dsm_14826.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006748
+  name: for_dsm_14826
+  notes: KOMODO Medium 895.1 applies DSMZ Medium 895 to DSM 14826.
+- path: data/normalized_yaml/bacterial/for_dsm_14828.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006749
+  name: for_dsm_14828
+  notes: KOMODO Medium 895.2 applies DSMZ Medium 895 to DSM 14828.
+data_quality_flags:
+- ingredients_curated

@@ -5,13 +5,16 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_range:
+  min: 7.0
+  max: 7.2
 ingredients:
 - preferred_term: NaCl
   concentration:
-    value: '132'
+    value: '132.0'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO M2040 / NBRC Medium 1338
+  notes: TOGO M2040 and NBRC Medium 1338 list 132 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -22,8 +25,8 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  source: TOGO M2040 / NBRC Medium 1338
+  notes: TOGO M2040 and NBRC Medium 1338 list 0.6 g/L K2HPO4.
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -34,8 +37,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
+  source: TOGO M2040 / NBRC Medium 1338
+  notes: TOGO M2040 and NBRC Medium 1338 list 0.05 g/L Sodium pyruvate.
   term:
     id: CHEBI:50144
     label: sodium pyruvate
@@ -44,52 +47,70 @@ ingredients:
     label: sodium pyruvate
 - preferred_term: Artificial seawater
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source, Solvating media; Properties: Complex component, Defined
-    component, Solution'
+    value: '1.0'
+    unit: L
+  source: TOGO M2040 / NBRC Medium 1338
+  notes: TOGO M2040 and NBRC Medium 1338 list 1 L Artificial seawater as the solvent
+    matrix.
 - preferred_term: Glucose
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  source: TOGO M2040 / NBRC Medium 1338
+  notes: TOGO M2040 and NBRC Medium 1338 list 1.0 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
-- preferred_term: Agar (if needed)
+- preferred_term: Agar
   concentration:
-    value: '20'
+    value: '20.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M2040 / NBRC Medium 1338
+  notes: TOGO M2040 and NBRC Medium 1338 list 20.0 g/L Agar.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2040 / NBRC Medium 1338
+  notes: TOGO M2040 and NBRC Medium 1338 list 1.0 g/L Bacto Yeast Extract from Difco;
+    the commercial product is retained without an ontology grounding.
 - preferred_term: Casamino acids
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2040 / NBRC Medium 1338
+  notes: TOGO M2040 and NBRC Medium 1338 list 1.0 g/L Casamino acids.
+  term:
+    id: FOODON:03315719
+    label: Casamino acids
 - preferred_term: Bacto Proteose Peptone No. 3 (Difco)
   concentration:
-    value: '3'
+    value: '3.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2040 / NBRC Medium 1338
+  notes: TOGO M2040 and NBRC Medium 1338 list 3.0 g/L Bacto Proteose Peptone No. 3
+    from Difco.
+  term:
+    id: MICRO:0000180
+    label: Proteose Peptone
 media_term:
   preferred_term: TOGO Medium M2040
   term:
     id: TOGO:M2040
     label: NSSM medium
-notes: 'Source: https://togomedium.org/medium/M2040
-
-  Original source: NBRC - NBRC_M1338
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1338'
+notes: TOGO M2040 imports NBRC Medium 1338 NSSM medium. The NBRC source lists 132
+  g NaCl, 0.6 g K2HPO4, 0.05 g sodium pyruvate, 1 L artificial seawater, 1 g glucose,
+  20 g agar, 1 g Bacto Yeast Extract, 1 g Casamino acids, and 3 g Bacto Proteose Peptone
+  No. 3; pH is 7.0-7.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -129,3 +150,22 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nutrient_ncg_nssm_score15.py
+  action: RESOLVED_TOGO_M2040_SCORE15
+  source: https://togomedium.org/medium/M2040; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1338
+  notes: TOGO M2040 imports NBRC Medium 1338 NSSM medium. The NBRC source lists 132
+    g NaCl, 0.6 g K2HPO4, 0.05 g sodium pyruvate, 1 L artificial seawater, 1 g glucose,
+    20 g agar, 1 g Bacto Yeast Extract, 1 g Casamino acids, and 3 g Bacto Proteose
+    Peptone No. 3; pH is 7.0-7.2.
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0-7.2.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2040
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1338

@@ -121,12 +121,28 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_4301.yaml
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_398_thermoplasma_score10.py
+  action: RESOLVED_KOMODO_398_THERMOPLASMA_TOPOLOGY
+  changes: Promoted MediaDive Medium 398 to the Thermoplasma family parent
+  source: MediaDive Medium 398 and KOMODO Medium 398-398.2
+  notes: Moved the family root from strain-specific KOMODO Medium 398.1 to the DSMZ/MediaDive
+    THERMOPLASMA VOLCANIUM MEDIUM record.
+variant_children:
+- path: data/normalized_yaml/archaea/KOMODO_398_THERMOPLASMA_VOLCANIUM_medium.yaml
   relationship: SOURCE_DUPLICATE
+  id: CultureMech:005187
+  name: thermoplasma_volcanium_medium
+  notes: KOMODO Medium 398 mirrors DSMZ Medium 398 with sulfuric acid represented
+    as the variable pH-adjustment ingredient.
+- path: data/normalized_yaml/bacterial/aerobic_version.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005186
+  name: aerobic_version
+  notes: KOMODO Medium 398.2 mirrors DSMZ Medium 398 with sulfuric acid represented
+    as the variable pH-adjustment ingredient.
+- path: data/normalized_yaml/bacterial/for_dsm_4301.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:005185
   name: for_dsm_4301
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+  notes: KOMODO Medium 398.1 applies THERMOPLASMA VOLCANIUM MEDIUM for DSM 4301.

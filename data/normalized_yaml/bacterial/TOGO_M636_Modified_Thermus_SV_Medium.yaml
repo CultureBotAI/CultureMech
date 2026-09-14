@@ -6,13 +6,16 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: L--proline
+- preferred_term: L-proline
   concentration:
-    value: '3'
+    value: '3.0'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
-    Simple component'
+  source: JCM Medium 625
+  notes: JCM Medium 625 supplements Medium 624 with 3.0 g/L L-proline.
   term:
+    id: CHEBI:17203
+    label: L-proline
+  mediaingredientmech_chebi_term:
     id: CHEBI:17203
     label: L-proline
 media_term:
@@ -20,11 +23,7 @@ media_term:
   term:
     id: TOGO:M636
     label: Modified Thermus SV Medium
-notes: 'Source: https://togomedium.org/medium/M636
-
-  Original source: JCM - JCM_M625
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=625'
+notes: 'TOGO M636 mirrors JCM Medium 625: Medium 624 supplemented with 3.0 g/L L-proline.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,11 +57,38 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_parent_wrappers_score20.py
+  action: RESOLVED_JCM_PARENT_WRAPPER_SCORE20
+  source: https://togomedium.org/medium/M636; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=625;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=624
+  notes: 'TOGO M636 mirrors JCM Medium 625: Medium 624 supplemented with 3.0 g/L L-proline.'
 solutions:
-- preferred_term: MODIFIED THERMUS MEDIUM WITH 3% NaCl (see Medium [M634])
-  composition: []
-  notes: Cross-reference to Medium M634
+- preferred_term: Modified Thermus Medium With 3% NaCl
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '1000'
+    unit: ML_PER_L
+  notes: JCM Medium 625 uses Medium 624 as the prepared base.
+  culturemech_term:
+    id: CultureMech:010034
+    label: Modified Thermus Medium With 3% NaCl
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 624 supplemented with 3.0 g/L L-proline.
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M634_Modified_Thermus_Medium_With_3_NaCl.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:010034
+  name: modified_thermus_medium_with_3_nacl
+  notes: Supplements Medium 624 with 3.0 g/L L-proline.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Supplements Medium 624 with 3.0 g/L L-proline.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M636
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=625
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=624

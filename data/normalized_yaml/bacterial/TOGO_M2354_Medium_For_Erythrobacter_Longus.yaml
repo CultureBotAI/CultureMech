@@ -5,58 +5,72 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.5
 ingredients:
-- preferred_term: 5% Fe(III) citrate
+- preferred_term: Peptone (BBL 11910)
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Solution'
+  source: TOGO M2354 / DSMZ Medium 695
+  notes: DSMZ Medium 695 lists 2 g/L Peptone (BBL 11910).
+  term:
+    id: MICRO:0000178
+    label: Bacto peptone
+- preferred_term: Soytone (Difco)
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: TOGO M2354 / DSMZ Medium 695
+  notes: DSMZ Medium 695 lists 1 g/L Soytone (Difco).
+  term:
+    id: FOODON:03315720
+    label: Soy peptone
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: TOGO M2354 / DSMZ Medium 695
+  notes: DSMZ Medium 695 lists 1.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Proteose peptone no.3 (Difco)
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: TOGO M2354 / DSMZ Medium 695
+  notes: DSMZ Medium 695 lists 1 g/L Proteose peptone no.3 (Difco).
+  term:
+    id: MICRO:0000180
+    label: Proteose Peptone
+- preferred_term: Artificial seawater
+  concentration:
+    value: '700.0'
+    unit: ML_PER_L
+  source: TOGO M2354 / DSMZ Medium 695
+  notes: DSMZ Medium 695 adds 700 ml/L Artificial seawater; this seawater mixture
+    is retained without a single-compound ontology grounding.
 - preferred_term: Distilled water
   concentration:
-    value: '300'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+    value: '300.0'
+    unit: ML_PER_L
+  source: TOGO M2354 / DSMZ Medium 695
+  notes: DSMZ Medium 695 adds 300 ml/L Distilled water.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Artificial seawater
-  concentration:
-    value: '700'
-    unit: G_PER_L
-  notes: 'Role: Mineral source, Solvating media; Properties: Complex component, Defined
-    component, Solution'
-- preferred_term: Proteose peptone no.3 (Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Soytone (Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Peptone (BBL 11910)
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 media_term:
   preferred_term: TOGO Medium M2354
   term:
     id: TOGO:M2354
     label: Medium For Erythrobacter Longus
-notes: 'Source: https://togomedium.org/medium/M2354
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium695.pdf'
+notes: TOGO M2354 imports DSMZ Medium 695, Medium For Erythrobacter Longus. DSMZ Medium
+  695 lists, per liter, 2 g Peptone (BBL 11910), 1 g Soytone (Difco), 1 g Yeast extract,
+  1 g Proteose peptone no.3 (Difco), 2 ml 5% Fe(III) citrate, 700 ml Artificial seawater,
+  and 300 ml Distilled water. pH is 7.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -87,3 +101,56 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2354_score15.py
+  action: RESOLVED_TOGO_M2354_SCORE15
+  source: https://togomedium.org/medium/M2354; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium695.pdf
+  notes: TOGO M2354 imports DSMZ Medium 695, Medium For Erythrobacter Longus. DSMZ
+    Medium 695 lists, per liter, 2 g Peptone (BBL 11910), 1 g Soytone (Difco), 1 g
+    Yeast extract, 1 g Proteose peptone no.3 (Difco), 2 ml 5% Fe(III) citrate, 700
+    ml Artificial seawater, and 300 ml Distilled water. pH is 7.5. Corrected the imported
+    volume rows, added the DSMZ pH, grounded the disclosed Fe(III) citrate and peptone-like
+    components, kept Artificial seawater intentionally unmapped, and linked the record
+    as a DSMZ Medium 695 source duplicate.
+solutions:
+- preferred_term: 5% Fe(III) citrate
+  concentration:
+    value: '2.0'
+    unit: ML_PER_L
+  source: TOGO M2354 / DSMZ Medium 695
+  notes: DSMZ Medium 695 adds 2 ml/L of a 5% Fe(III) citrate stock.
+  composition:
+  - preferred_term: Fe(III) citrate
+    concentration:
+      value: '50.0'
+      unit: G_PER_L
+    source: TOGO M2354 / DSMZ Medium 695
+    notes: The Fe(III) citrate stock is 5% w/v, equivalent to 50 g/L.
+    term:
+      id: CHEBI:144421
+      label: iron(III) citrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:144421
+      label: iron(III) citrate
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.5.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2354
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium695.pdf
+parent_media:
+  path: data/normalized_yaml/bacterial/medium_for_erythrobacter_longus.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001832
+  name: medium_for_erythrobacter_longus
+  notes: TOGO M2354 imports DSMZ Medium 695 and preserves the source distilled-water,
+    artificial-seawater, and Fe(III) citrate stock rows.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same DSMZ Medium 695 formula; TOGO M2354 explicitly retains distilled water, artificial
+  seawater, and 5% Fe(III) citrate as source volume rows.

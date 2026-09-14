@@ -3,58 +3,83 @@ name: togo_medium_m2079
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: NBRC Medium 1388
+  notes: NBRC Medium 1388 lists 5 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Casamino acids
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  source: NBRC Medium 1388
+  notes: NBRC Medium 1388 lists 1 g/L Casamino acids; this hydrolyzed casein mixture
+    is retained as an opaque complex component.
 - preferred_term: NaCl
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: NBRC Medium 1388
+  notes: NBRC Medium 1388 lists 10 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: NBRC Medium 1388
+  notes: NBRC Medium 1388 lists 1.0 L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Casamino acids
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: NBRC Medium 1388
+  notes: NBRC Medium 1388 lists 15 g/L agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Combine 5 g/L Yeast extract, 1 g/L Casamino acids, 10 g/L NaCl, and
+    1 L Distilled water.
+- step_number: 2
+  action: MIX
+  description: Add 15 g/L agar when solid NBRC Medium 1388 is needed.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
 media_term:
   preferred_term: TOGO Medium M2079
   term:
     id: TOGO:M2079
     label: TOGO Medium M2079
-notes: 'Source: https://togomedium.org/medium/M2079
-
-  Original source: NBRC - NBRC_M1388
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1388'
+notes: TOGO M2079 imports NBRC Medium 1388, which lists 5 g/L Yeast extract, 1 g/L
+  Casamino acids, 10 g/L NaCl, 1 L Distilled water, and 15 g/L Agar if needed at pH
+  7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -91,3 +116,18 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nbrc_1388_score15.py
+  action: RESOLVED_NBRC_1388_SCORE15
+  source: https://togomedium.org/medium/M2079; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1388
+  notes: Curated TOGO:M2079 from TOGO and NBRC Medium 1388; corrected Distilled water
+    from a mass-like 1 g/L import to 1 L, added pH 7.0, grounded yeast extract, sodium
+    chloride, water, and agar, and retained Casamino acids as a sourced opaque hydrolyzed-casein
+    component.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2079
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1388

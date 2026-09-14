@@ -27,14 +27,23 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: MICRO:0000606
+    label: Casitone
 - preferred_term: Soytone
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: FOODON:03315720
+    label: Soy peptone
 - preferred_term: Malt extract
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: FOODON:03301056
+    label: Malt extract
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -45,7 +54,8 @@ curation_history:
 - timestamp: '2026-06-14T05:58:58.561437+00:00'
   curator: idnf-grounding-fix-v1.0
   action: Fixed ID_NOT_FOUND term groundings
-  notes: 'Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI, 1 de-grounded (mixture or unverifiable).'
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-26T17:53:17.988743Z'
   curator: mediadive-import
   action: Imported from MediaDive
@@ -73,3 +83,9 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_mixed_score10_exact_terms_batch8.py
+  action: GROUNDED_MIXED_SCORE10_EXACT_TERMS_BATCH8
+  changes: Grounded exact score-10 ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Casitone, Malt extract, Soytone.

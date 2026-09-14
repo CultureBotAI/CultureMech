@@ -341,10 +341,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-variant_children:
-- path: data/normalized_yaml/bacterial/for_dsm_14708.yaml
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_813_desulfonatronum_score10.py
+  action: RESOLVED_KOMODO_813_DESULFONATRONUM_TOPOLOGY
+  changes: Linked under DSMZ Medium 813 as SOURCE_DUPLICATE
+  source: KOMODO Medium 813
+  notes: KOMODO Medium 813 has the same 30-ingredient signature as DSMZ Medium 813.
+parent_media:
+  path: data/normalized_yaml/bacterial/desulfonatronum_medium.yaml
   relationship: SOURCE_DUPLICATE
-  id: CultureMech:006535
-  name: for_dsm_14708
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  id: CultureMech:001958
+  name: desulfonatronum_medium
+  notes: KOMODO Medium 813 has the same 30-ingredient signature as DSMZ Medium 813.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO Medium 813 has the same 30-ingredient signature as DSMZ Medium 813.
+data_quality_flags:
+- ingredients_curated

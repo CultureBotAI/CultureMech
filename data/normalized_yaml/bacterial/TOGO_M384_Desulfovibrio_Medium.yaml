@@ -6,161 +6,154 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: NH4Cl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-- preferred_term: Resazurin
+- preferred_term: NH4Cl
   concentration:
-    value: '0.5'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
-    component, Organic compound'
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
   term:
-    id: CHEBI:8806
-    label: Resazurin
+    id: CHEBI:31206
+    label: ammonium chloride
   mediaingredientmech_chebi_term:
-    id: CHEBI:8806
-    label: Resazurin
-- preferred_term: FeSO4・7H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Na2SO4
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
   term:
     id: CHEBI:32149
     label: sodium sulfate
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
     label: sodium sulfate
-- preferred_term: Sodium lactate
+- preferred_term: MgSO4 x 7 H2O
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
   term:
-    id: CHEBI:75228
-    label: sodium lactate
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:75228
-    label: sodium lactate
-- preferred_term: Ascorbic acid
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Simple component, Defined component'
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
   term:
-    id: CHEBI:22652
-    label: ascorbic acid
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:22652
-    label: ascorbic acid
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Sodium lactate
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
+  term:
+    id: CHEBI:75228
+    label: sodium lactate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
+  term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: Sodium thioglycolate
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
   term:
     id: CHEBI:86481
     label: sodium thioglycolate
   mediaingredientmech_chebi_term:
     id: CHEBI:86481
     label: sodium thioglycolate
-- preferred_term: NaOH
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-  term:
-    id: CHEBI:32145
-    label: sodium hydroxide
+- preferred_term: Ascorbic acid
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '0.1'
+    unit: G_PER_L
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
+  term:
+    id: CHEBI:22652
+    label: ascorbic acid
   mediaingredientmech_chebi_term:
-    id: CHEBI:32145
-    label: sodium hydroxide
-- preferred_term: N2
-  notes: 'Properties: Gas'
+    id: CHEBI:22652
+    label: ascorbic acid
+- preferred_term: Resazurin
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '0.5'
+    unit: MG_PER_L
+  source: JCM Medium 389
+  notes: JCM Medium 389 prints this component.
   term:
-    id: CHEBI:17997
-    label: dinitrogen
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: JCM Medium 389
+  notes: JCM Medium 389 lists 1.0 l distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M384
   term:
     id: TOGO:M384
     label: Desulfovibrio Medium
-notes: 'Source: https://togomedium.org/medium/M384
-
-  Original source: JCM - JCM_M389
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=389'
+notes: 'TOGO M384 mirrors JCM Medium 389: Desulfovibrio Medium uses sulfate, sodium
+  lactate, yeast extract, reducing agents, resazurin, and anoxic N2 handling.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -210,3 +203,68 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_more_wrappers_score40.py
+  action: RESOLVED_JCM_MORE_SCORE40_GRAPH
+  changes: Resolved additional score-40 JCM wrapper recipe graph
+  source: https://togomedium.org/medium/M384; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=389
+  notes: 'TOGO M384 mirrors JCM Medium 389: Desulfovibrio Medium uses sulfate, sodium
+    lactate, yeast extract, reducing agents, resazurin, and anoxic N2 handling.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_more_wrappers_score40.py
+  action: LINKED_JCM_MORE_SCORE40_CHILDREN
+  changes: Linked additional score-40 JCM wrapper child
+  source: bacterial/TOGO_M384_Desulfovibrio_Medium.yaml; bacterial/TOGO_M870_Modified_Desulfovibrio_Medium.yaml
+  notes: JCM Medium 834 supplements JCM Medium 389 with Beef extract.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_jcm_direct_wrapper_backlinks.py
+  action: ADDED_JCM_DIRECT_WRAPPER_BACKLINKS
+  changes: Added reciprocal variant_children links
+  source: TOGO:M384
+  notes: Mirrored curated JCM direct-wrapper parent_media links on the parent record.
+ph_range:
+  min: 6.8
+  max: 7.0
+  notes: JCM Medium 389 says adjust pH to 6.8-7.0, if necessary.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix ingredients except FeSO4 x 7 H2O, sodium thioglycolate, and ascorbic
+    acid.
+- step_number: 2
+  action: HEAT
+  description: Bring the medium to a boil and cool to room temperature under an N2
+    gas stream.
+- step_number: 3
+  action: MIX
+  description: Add FeSO4 x 7 H2O in 10 mL distilled water plus sodium thioglycolate
+    and ascorbic acid in 10 mL distilled water.
+- step_number: 4
+  action: ADJUST_PH
+  description: Adjust pH to 7.8 with NaOH; adjust to pH 6.8-7.0 if necessary.
+- step_number: 5
+  action: ALIQUOT
+  description: While swirling under an N2 gas stream, dispense into culture vessels
+    and seal with butyl rubber stoppers.
+- step_number: 6
+  action: AUTOCLAVE
+  description: Autoclave the sealed medium.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M384
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=389
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M870_Modified_Desulfovibrio_Medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:010288
+  name: modified_desulfovibrio_medium
+  notes: JCM Medium 834 supplements JCM Medium 389 with Beef extract.
+- path: data/normalized_yaml/bacterial/TOGO_M775_Desulfovibrio_Marine_Medium.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:010183
+  name: desulfovibrio_marine_medium
+  notes: Supplements Medium 389 with 25.0 g/L NaCl.

@@ -65,6 +65,10 @@ category: specialized
 source_data:
   origin: CultureBotHT
   notes: 'database_id: BHIS; url: https://github.com/CultureBotAI/CultureBotHT'
+sources:
+- database: CultureBotHT
+  database_id: BHIS
+  url: https://github.com/CultureBotAI/CultureBotHT
 variants:
 - name: bhis_brachyspira_pilosicoli_p43_growth
   description: BHIS broth condition supporting growth of the Brachyspira pilosicoli
@@ -96,6 +100,13 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_culturebotht_bhis_score15.py
+  action: NORMALIZED_CULTUREBOTHT_BHIS_SOURCE
+  changes: Normalized BHIS CultureBotHT provenance
+  source: CultureBotHT:BHIS; https://github.com/CultureBotAI/CultureBotHT
+  notes: Copied the CultureBotHT BHIS source identity from source_data into the structured
+    sources slot recognized by review scoring.
 data_quality_flags:
 - has_unmapped_ingredients
 organism_culture_type: isolate
@@ -122,3 +133,6 @@ target_organisms:
       explanation: Auto-curated from specialized media review; the source reports
         quantitative growth of Brachyspira pilosicoli P43/6/78T in BHIS broth.
     is_max_attainment: false
+references:
+- reference: CultureBotHT:BHIS
+- reference: https://github.com/CultureBotAI/CultureBotHT

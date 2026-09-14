@@ -11,125 +11,164 @@ media_term:
   term:
     id: mediadive.medium:J79
     label: METHANOL-UTILIZING BACTERIA MEDIUM B
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=79'
+notes: JCM Medium 79 lists 10.0 ml methanol, defined salts, 0.4 mg Thiamine HCl, and
+  distilled water per liter; adjust pH to 7.1.
 ingredients:
 - preferred_term: Methanol
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: JCM Medium 79
+  notes: JCM Medium 79 lists 10.0 ML_PER_L Methanol per liter.
   term:
     id: CHEBI:17790
     label: methanol
-  concentration:
-    value: '10'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17790
     label: methanol
 - preferred_term: (NH4)2SO4
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  source: JCM Medium 79
+  notes: JCM Medium 79 lists 3.0 G_PER_L (NH4)2SO4 per liter.
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  concentration:
-    value: '2.9703'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
     label: ammonium sulfate
 - preferred_term: KH2PO4
+  concentration:
+    value: '1.4'
+    unit: G_PER_L
+  source: JCM Medium 79
+  notes: JCM Medium 79 lists 1.4 G_PER_L KH2PO4 per liter.
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
-  concentration:
-    value: '1.38614'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
 - preferred_term: Na2HPO4
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  source: JCM Medium 79
+  notes: JCM Medium 79 lists 3.0 G_PER_L Na2HPO4 per liter.
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
-  concentration:
-    value: '2.9703'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
 - preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  source: JCM Medium 79
+  notes: JCM Medium 79 lists 0.2 G_PER_L MgSO4 x 7 H2O per liter.
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-  concentration:
-    value: '0.19802'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
 - preferred_term: Ferric citrate
+  concentration:
+    value: '30.0'
+    unit: MG_PER_L
+  source: JCM Medium 79
+  notes: JCM Medium 79 lists 30.0 MG_PER_L Ferric citrate per liter.
   term:
     id: CHEBI:144421
     label: iron(III) citrate
-  concentration:
-    value: '0.029703'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:144421
     label: iron(III) citrate
 - preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '30.0'
+    unit: MG_PER_L
+  source: JCM Medium 79
+  notes: JCM Medium 79 lists 30.0 MG_PER_L CaCl2 x 2 H2O per liter.
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  concentration:
-    value: '0.029703'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
 - preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '5.0'
+    unit: MG_PER_L
+  source: JCM Medium 79
+  notes: JCM Medium 79 lists 5.0 MG_PER_L MnCl2 x 4 H2O per liter.
   term:
     id: CHEBI:86368
     label: manganese(II) chloride tetrahydrate
-  concentration:
-    value: '0.00495049'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
     label: manganese(II) chloride tetrahydrate
 - preferred_term: ZnSO4 x 7 H2O
+  concentration:
+    value: '5.0'
+    unit: MG_PER_L
+  source: JCM Medium 79
+  notes: JCM Medium 79 lists 5.0 MG_PER_L ZnSO4 x 7 H2O per liter.
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
-  concentration:
-    value: '0.00495049'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
 - preferred_term: CuSO4 x 5 H2O
+  concentration:
+    value: '0.5'
+    unit: MG_PER_L
+  source: JCM Medium 79
+  notes: JCM Medium 79 lists 0.5 MG_PER_L CuSO4 x 5 H2O per liter.
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
-  concentration:
-    value: '0.00049505'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
 - preferred_term: Thiamine HCl
+  concentration:
+    value: '0.4'
+    unit: MG_PER_L
+  source: JCM Medium 79
+  notes: JCM Medium 79 lists 0.4 mg/L Thiamine HCl and notes that it can be replaced
+    by 0.2 g yeast extract.
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
-  concentration:
-    value: '0.00039604'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
     label: thiamine hydrochloride
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: JCM Medium 79
+  notes: JCM Medium 79 lists 1.0 L Distilled water per liter.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Thiamine x HCl can be replaced by 0.2 g of yeast extract.
+  description: Dissolve the Medium B components in 1.0 L distilled water.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.1.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -160,3 +199,65 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_methanol_utilizing_score40.py
+  action: RESOLVED_METHANOL_UTILIZING_SCORE40_GRAPH
+  changes: Resolved score-40 JCM/TOGO methanol-utilizing recipe graph
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=79
+  notes: JCM Medium 79 lists 10.0 ml methanol, defined salts, 0.4 mg Thiamine HCl,
+    and distilled water per liter; adjust pH to 7.1.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_methanol_utilizing_score40.py
+  action: LINKED_METHANOL_UTILIZING_SCORE40_CHILDREN
+  changes: Linked score-40 JCM/TOGO methanol-utilizing variants
+  notes: Added or refreshed bacterial/TOGO_M70_Methanol-Utilizing_Bacteria_Medium_B.yaml
+    as a child of bacterial/methanol_utilizing_bacteria_medium_b.yaml.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_methanol_utilizing_score40.py
+  action: LINKED_METHANOL_UTILIZING_SCORE40_CHILDREN
+  changes: Linked score-40 JCM/TOGO methanol-utilizing variants
+  notes: Added or refreshed bacterial/TOGO_M118_Methanol-Utilizing_Bacteria_Medium_D.yaml
+    as a child of bacterial/methanol_utilizing_bacteria_medium_b.yaml.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_methanol_utilizing_score40.py
+  action: LINKED_METHANOL_UTILIZING_SCORE40_CHILDREN
+  changes: Linked score-40 JCM/TOGO methanol-utilizing variants
+  notes: Added or refreshed bacterial/TOGO_M119_Methanol-Utilizing_Bacteria_Medium_E.yaml
+    as a child of bacterial/methanol_utilizing_bacteria_medium_b.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_methanol_utilizing_score40.py
+  action: LINKED_METHANOL_UTILIZING_SCORE40_CHILDREN
+  changes: Linked score-40 JCM/TOGO methanol-utilizing variants
+  notes: Added or refreshed bacterial/methanol_utilizing_bacteria_medium_d.yaml as
+    a child of bacterial/methanol_utilizing_bacteria_medium_b.yaml.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=79
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M118_Methanol-Utilizing_Bacteria_Medium_D.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:007715
+  name: methanol_utilizing_bacteria_medium_d
+  notes: JCM Medium 126 supplements Methanol-Utilizing Bacteria Medium B with filter-sterilized
+    10% NaCO3 solution to adjust pH to 9.0.
+- path: data/normalized_yaml/bacterial/TOGO_M119_Methanol-Utilizing_Bacteria_Medium_E.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:007725
+  name: methanol_utilizing_bacteria_medium_e
+  notes: JCM Medium 127 supplements Methanol-Utilizing Bacteria Medium B with 30.0
+    g/L NaCl and 10.0 micrograms/L Vitamin B12.
+- path: data/normalized_yaml/bacterial/TOGO_M70_Methanol-Utilizing_Bacteria_Medium_B.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010117
+  name: methanol_utilizing_bacteria_medium_b
+  notes: TOGO M70 imports the same JCM Medium 79 formulation.
+- path: data/normalized_yaml/bacterial/methanol_utilizing_bacteria_medium_d.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:002435
+  name: methanol_utilizing_bacteria_medium_d
+  notes: JCM Medium 126 supplements Methanol-Utilizing Bacteria Medium B with filter-sterilized
+    10% NaCO3 solution to adjust pH to 9.0.

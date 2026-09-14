@@ -17,10 +17,16 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: MICRO:0000178
+    label: Bacto peptone
 - preferred_term: Beef extract
   concentration:
     value: '3'
     unit: G_PER_L
+  term:
+    id: FOODON:03302088
+    label: Beef extract
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -61,6 +67,12 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_bacterial_score10_exact_terms_batch6.py
+  action: GROUNDED_BACTERIAL_SCORE10_EXACT_TERMS_BATCH6
+  changes: Grounded bacterial score-10 exact ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Bacto peptone, Beef extract.
 kg_microbe_match: mediadive.medium:74
 parent_media:
   path: data/normalized_yaml/bacterial/nutrient_broth_with_0_5_nacl.yaml

@@ -20,6 +20,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: MICRO:0000178
+    label: Peptone
 - preferred_term: Meat extract
   concentration:
     value: '3'
@@ -72,4 +75,51 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2339_m2340_score15.py
+  action: LINKED_TOGO_M2339_M2340_DSMZ_MEDIUM_1
+  source: https://togomedium.org/medium/M2339; https://togomedium.org/medium/M2340;
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf
+  notes: Linked TOGO M2339 as a source duplicate and TOGO M2340 as a 10 mg/L MnSO4
+    x H2O supplemented variant of DSMZ Medium 1.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m3116_score15.py
+  action: LINKED_TOGO_M3116_SOURCE_DUPLICATE
+  source: https://togomedium.org/medium/M3116; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf
+  notes: Linked TOGO M3116 as a source duplicate of DSMZ Medium 1.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2200_horse_serum_score15.py
+  action: LINKED_TOGO_M2200_HORSE_SERUM_VARIANT
+  source: https://togomedium.org/medium/M2200; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf
+  notes: Linked TOGO M2200 as a 20% horse-serum variant of DSMZ Medium 1.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_bacterial_score10_exact_terms_batch6.py
+  action: GROUNDED_BACTERIAL_SCORE10_EXACT_TERMS_BATCH6
+  changes: Grounded bacterial score-10 exact ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Peptone.
 kg_microbe_match: mediadive.medium:12
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M2339_Nutrient_Agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008926
+  name: nutrient_agar
+  notes: TOGO M2339 imports DSMZ Medium 1 and explicitly retains its distilled-water
+    row.
+- path: data/normalized_yaml/bacterial/TOGO_M2340_Nutrient_Agar.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:008928
+  name: nutrient_agar
+  notes: TOGO M2340 imports DSMZ Medium 1 with the 10 mg/L MnSO4 x H2O Bacillus sporulation
+    supplement.
+- path: data/normalized_yaml/bacterial/TOGO_M3116_Nutrient_Agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009588
+  name: nutrient_agar
+  notes: TOGO M3116 imports DSMZ Medium 1 and explicitly retains its distilled-water
+    row.
+- path: data/normalized_yaml/bacterial/medium_1_liquid_with_20_horse_serum.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:008794
+  name: medium_1_liquid_with_20_horse_serum
+  notes: TOGO M2200 imports DSMZ Medium 1 with a 20% horse-serum supplement.

@@ -5,14 +5,477 @@ category: bacterial
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
+ph_range:
+  min: 7.1
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 406
   term:
     id: komodo.medium:406
     label: DESULFOTOMACULUM GEOTHERMICUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 406 | DSMZ Medium: 406 (mediadive.medium:406)
-  | Aerobic: No'
-ingredients: []
+notes: Archived DSMZ Medium 406 defines DESULFOTOMACULUM GEOTHERMICUM MEDIUM as DSMZ
+  Medium 195 with 2.5 g/L sodium lactate replacing sodium acetate, 50 mg/L Na2S x
+  9 H2O, and 10-20 mg/L sodium dithionite; DSMZ Medium 195 derives from DSMZ Medium
+  193 with elevated NaCl and MgCl2 x 6 H2O, so this record expands archived DSMZ Media
+  193, 195, 320, and 141 into final per-liter components.
+ingredients:
+- preferred_term: Na2SO4
+  source: Archived DSMZ Medium 193
+  notes: Archived DSMZ Medium 193 contributes 3.00 g Na2SO4 to a 1001 mL final formulation,
+    yielding 2.997003 g/L.
+  concentration:
+    value: '2.997003'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: KH2PO4
+  source: Archived DSMZ Medium 193
+  notes: Archived DSMZ Medium 193 contributes 0.20 g KH2PO4 to a 1001 mL final formulation,
+    yielding 0.199800 g/L.
+  concentration:
+    value: '0.199800'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: NH4Cl
+  source: Archived DSMZ Medium 193
+  notes: Archived DSMZ Medium 193 contributes 0.30 g NH4Cl to a 1001 mL final formulation,
+    yielding 0.299700 g/L.
+  concentration:
+    value: '0.299700'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: NaCl
+  source: Archived DSMZ Medium 195
+  notes: Archived DSMZ Medium 195 changes the DSMZ Medium 193 NaCl amount to 21.0
+    g/L.
+  concentration:
+    value: '21.000000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: MgCl2 x 6 H2O
+  source: Archived DSMZ Medium 195
+  notes: Archived DSMZ Medium 195 changes the DSMZ Medium 193 MgCl2 x 6 H2O amount
+    to 3.1 g/L.
+  concentration:
+    value: '3.100000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: KCl
+  source: Archived DSMZ Medium 193
+  notes: Archived DSMZ Medium 193 contributes 0.50 g KCl to a 1001 mL final formulation,
+    yielding 0.499500 g/L.
+  concentration:
+    value: '0.499500'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: CaCl2 x 2 H2O
+  source: Archived DSMZ Medium 193
+  notes: Archived DSMZ Medium 193 contributes 0.15 g CaCl2 x 2 H2O to a 1001 mL final
+    formulation, yielding 0.149850 g/L.
+  concentration:
+    value: '0.149850'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Resazurin
+  source: Archived DSMZ Medium 193
+  notes: Archived DSMZ Medium 193 contributes 1.00 mg Resazurin to a 1001 mL final
+    formulation, yielding 0.000999 g/L.
+  concentration:
+    value: '0.000999'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: HCl
+  source: Archived DSMZ Medium 320 SL-10 trace element solution
+  notes: Archived DSMZ Medium 193 adds 1 mL of the Archived DSMZ Medium 320 SL-10
+    trace element solution to a 1001 mL final formulation; the SL-10 stock contains
+    2.50 g/L HCl, yielding 0.002498 g/L.
+  concentration:
+    value: '0.002498'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+- preferred_term: FeCl2 x 4 H2O
+  source: Archived DSMZ Medium 320 SL-10 trace element solution
+  notes: Archived DSMZ Medium 193 adds 1 mL of the Archived DSMZ Medium 320 SL-10
+    trace element solution to a 1001 mL final formulation; the SL-10 stock contains
+    1.50 g/L FeCl2 x 4 H2O, yielding 0.001499 g/L.
+  concentration:
+    value: '0.001499'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+- preferred_term: ZnCl2
+  source: Archived DSMZ Medium 320 SL-10 trace element solution
+  notes: Archived DSMZ Medium 193 adds 1 mL of the Archived DSMZ Medium 320 SL-10
+    trace element solution to a 1001 mL final formulation; the SL-10 stock contains
+    0.070 g/L ZnCl2, yielding 0.0000699 g/L.
+  concentration:
+    value: '0.0000699'
+    unit: G_PER_L
+  term:
+    id: CHEBI:49976
+    label: zinc dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
+- preferred_term: MnCl2 x 4 H2O
+  source: Archived DSMZ Medium 320 SL-10 trace element solution
+  notes: Archived DSMZ Medium 193 adds 1 mL of the Archived DSMZ Medium 320 SL-10
+    trace element solution to a 1001 mL final formulation; the SL-10 stock contains
+    0.100 g/L MnCl2 x 4 H2O, yielding 0.0000999 g/L.
+  concentration:
+    value: '0.0000999'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+- preferred_term: H3BO3
+  source: Archived DSMZ Medium 320 SL-10 trace element solution
+  notes: Archived DSMZ Medium 193 adds 1 mL of the Archived DSMZ Medium 320 SL-10
+    trace element solution to a 1001 mL final formulation; the SL-10 stock contains
+    0.006 g/L H3BO3, yielding 0.00000599 g/L.
+  concentration:
+    value: '0.00000599'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: CoCl2 x 6 H2O
+  source: Archived DSMZ Medium 320 SL-10 trace element solution
+  notes: Archived DSMZ Medium 193 adds 1 mL of the Archived DSMZ Medium 320 SL-10
+    trace element solution to a 1001 mL final formulation; the SL-10 stock contains
+    0.190 g/L CoCl2 x 6 H2O, yielding 0.000190 g/L.
+  concentration:
+    value: '0.000190'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+- preferred_term: CuCl2 x 2 H2O
+  source: Archived DSMZ Medium 320 SL-10 trace element solution
+  notes: Archived DSMZ Medium 193 adds 1 mL of the Archived DSMZ Medium 320 SL-10
+    trace element solution to a 1001 mL final formulation; the SL-10 stock contains
+    0.002 g/L CuCl2 x 2 H2O, yielding 0.00000200 g/L.
+  concentration:
+    value: '0.00000200'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+- preferred_term: NiCl2 x 6 H2O
+  source: Archived DSMZ Medium 320 SL-10 trace element solution
+  notes: Archived DSMZ Medium 193 adds 1 mL of the Archived DSMZ Medium 320 SL-10
+    trace element solution to a 1001 mL final formulation; the SL-10 stock contains
+    0.024 g/L NiCl2 x 6 H2O, yielding 0.0000240 g/L.
+  concentration:
+    value: '0.0000240'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+- preferred_term: Na2MoO4 x 2 H2O
+  source: Archived DSMZ Medium 320 SL-10 trace element solution
+  notes: Archived DSMZ Medium 193 adds 1 mL of the Archived DSMZ Medium 320 SL-10
+    trace element solution to a 1001 mL final formulation; the SL-10 stock contains
+    0.036 g/L Na2MoO4 x 2 H2O, yielding 0.0000360 g/L.
+  concentration:
+    value: '0.0000360'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: NaHCO3
+  source: Archived DSMZ Medium 193
+  notes: Archived DSMZ Medium 193 contributes 5.00 g NaHCO3 to a 1001 mL final formulation,
+    yielding 4.995005 g/L.
+  concentration:
+    value: '4.995005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Sodium lactate
+  source: Archived DSMZ Medium 406
+  notes: Archived DSMZ Medium 406 replaces sodium acetate with 2.5 g/L sodium lactate.
+  concentration:
+    value: '2.500000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75228
+    label: sodium lactate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+- preferred_term: Biotin
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 193 adds 10 mL of the Archived DSMZ Medium 141 vitamin
+    solution to a 1001 mL final formulation; the vitamin stock contains 0.002 g/L
+    Biotin, yielding 0.0000200 g/L.
+  concentration:
+    value: '0.0000200'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: biotin
+- preferred_term: Folic acid
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 193 adds 10 mL of the Archived DSMZ Medium 141 vitamin
+    solution to a 1001 mL final formulation; the vitamin stock contains 0.002 g/L
+    Folic acid, yielding 0.0000200 g/L.
+  concentration:
+    value: '0.0000200'
+    unit: G_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
+    label: folic acid
+- preferred_term: Pyridoxine-HCl
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 193 adds 10 mL of the Archived DSMZ Medium 141 vitamin
+    solution to a 1001 mL final formulation; the vitamin stock contains 0.010 g/L
+    Pyridoxine-HCl, yielding 0.0000999 g/L.
+  concentration:
+    value: '0.0000999'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
+- preferred_term: Thiamine-HCl x 2 H2O
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 193 adds 10 mL of the Archived DSMZ Medium 141 vitamin
+    solution to a 1001 mL final formulation; the vitamin stock contains 0.005 g/L
+    Thiamine-HCl x 2 H2O, yielding 0.0000500 g/L.
+  concentration:
+    value: '0.0000500'
+    unit: G_PER_L
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+- preferred_term: Riboflavin
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 193 adds 10 mL of the Archived DSMZ Medium 141 vitamin
+    solution to a 1001 mL final formulation; the vitamin stock contains 0.005 g/L
+    Riboflavin, yielding 0.0000500 g/L.
+  concentration:
+    value: '0.0000500'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
+- preferred_term: Nicotinic acid
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 193 adds 10 mL of the Archived DSMZ Medium 141 vitamin
+    solution to a 1001 mL final formulation; the vitamin stock contains 0.005 g/L
+    Nicotinic acid, yielding 0.0000500 g/L.
+  concentration:
+    value: '0.0000500'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
+- preferred_term: D-Ca-pantothenate
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 193 adds 10 mL of the Archived DSMZ Medium 141 vitamin
+    solution to a 1001 mL final formulation; the vitamin stock contains 0.005 g/L
+    D-Ca-pantothenate, yielding 0.0000500 g/L.
+  concentration:
+    value: '0.0000500'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+- preferred_term: Vitamin B12
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 193 adds 10 mL of the Archived DSMZ Medium 141 vitamin
+    solution to a 1001 mL final formulation; the vitamin stock contains 0.0001 g/L
+    Vitamin B12, yielding 0.000000999 g/L.
+  concentration:
+    value: '0.000000999'
+    unit: G_PER_L
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+  mediaingredientmech_chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+- preferred_term: p-Aminobenzoic acid
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 193 adds 10 mL of the Archived DSMZ Medium 141 vitamin
+    solution to a 1001 mL final formulation; the vitamin stock contains 0.005 g/L
+    p-Aminobenzoic acid, yielding 0.0000500 g/L.
+  concentration:
+    value: '0.0000500'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+- preferred_term: Lipoic acid
+  source: Archived DSMZ Medium 141 vitamin solution
+  notes: Archived DSMZ Medium 193 adds 10 mL of the Archived DSMZ Medium 141 vitamin
+    solution to a 1001 mL final formulation; the vitamin stock contains 0.005 g/L
+    Lipoic acid, yielding 0.0000500 g/L.
+  concentration:
+    value: '0.0000500'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16494
+    label: lipoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
+    label: lipoic acid
+- preferred_term: Na2S x 9 H2O
+  source: Archived DSMZ Medium 406
+  notes: Archived DSMZ Medium 406 reduces the Na2S x 9 H2O amount to 50 mg/L medium.
+  concentration:
+    value: '0.050000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+- preferred_term: Na2S2O4
+  source: Archived DSMZ Medium 406
+  notes: Archived DSMZ Medium 406 adds 10-20 mg/L sodium dithionite as reducing agent.
+  concentration:
+    value: 0.010-0.020
+    unit: G_PER_L
+  term:
+    id: CHEBI:66870
+    label: sodium dithionite
+  mediaingredientmech_chebi_term:
+    id: CHEBI:66870
+    label: sodium dithionite
+- preferred_term: CO2
+  source: Archived DSMZ Medium 193
+  notes: Archived DSMZ Medium 193 prepares the medium under 80% N2 and 20% CO2.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
+- preferred_term: N2
+  source: Archived DSMZ Medium 193
+  notes: Archived DSMZ Medium 193 prepares the medium under 80% N2 and 20% CO2.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: dinitrogen
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17997
+    label: dinitrogen
+- preferred_term: Distilled water
+  source: Archived DSMZ Medium 193
+  notes: Archived DSMZ Medium 193 lists 990 mL direct distilled water across solutions
+    A, C, D, and F before stock additions and before Archived DSMZ Medium 406 replaces
+    the acetate and reduces the sulfide.
+  concentration:
+    value: '990.000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -35,5 +498,23 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_406_score35.py
+  action: RESOLVED_KOMODO_406_SCORE35
+  changes: Replaced empty KOMODO 406 composition with archived DSMZ data
+  source: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium406.pdf
+  notes: Archived DSMZ Medium 406 defines DESULFOTOMACULUM GEOTHERMICUM MEDIUM as
+    DSMZ Medium 195 with 2.5 g/L sodium lactate replacing sodium acetate, 50 mg/L
+    Na2S x 9 H2O, and 10-20 mg/L sodium dithionite; DSMZ Medium 195 derives from DSMZ
+    Medium 193 with elevated NaCl and MgCl2 x 6 H2O, so this record expands archived
+    DSMZ Media 193, 195, 320, and 141 into final per-liter components.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=406
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium406.pdf
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium195.pdf
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193.pdf
+- reference: https://web.archive.org/web/20121030075431id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium320.pdf
+- reference: https://web.archive.org/web/20121030075431id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf

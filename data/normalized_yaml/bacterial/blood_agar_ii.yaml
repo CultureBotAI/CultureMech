@@ -21,10 +21,16 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  term:
+    id: FOODON:03315719
+    label: Casein peptone
 - preferred_term: Soy peptone
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315720
+    label: Soy peptone
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -75,6 +81,12 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_bacterial_score10_exact_terms_batch2.py
+  action: GROUNDED_BACTERIAL_SCORE10_EXACT_TERMS_BATCH2
+  changes: Grounded exact bacterial score-10 ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Casein peptone, Soy peptone.
 kg_microbe_match: mediadive.medium:101
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_245_BLOOD_AGAR_II.yaml

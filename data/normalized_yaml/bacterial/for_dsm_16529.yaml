@@ -356,16 +356,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-variant_children:
-- path: data/normalized_yaml/bacterial/desulfofalx_medium.yaml
-  relationship: SOURCE_DUPLICATE
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_866_desulfofalx_score10.py
+  action: RESOLVED_KOMODO_866_DESULFOFALX_TOPOLOGY
+  changes: Linked under DSMZ Medium 866 as STRAIN_SPECIFIC_VARIANT
+  source: KOMODO Medium 866.1
+  notes: KOMODO Medium 866.1 applies DSMZ Medium 866 to DSM 16529.
+parent_media:
+  path: data/normalized_yaml/bacterial/desulfofalx_medium.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:002024
   name: desulfofalx_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/desulfotomaculum_alkaliphilum_medium.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006696
-  name: desulfotomaculum_alkaliphilum_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 866.1 applies DSMZ Medium 866 to DSM 16529.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
+variant_modifications:
+- KOMODO Medium 866.1 applies DSMZ Medium 866 to DSM 16529.
+data_quality_flags:
+- ingredients_curated

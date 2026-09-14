@@ -7,8 +7,9 @@ solutions into final-medium concentrations. It also treats the separately
 imported soil-water note as a source duplicate of SAG medium 3.
 
 Apply mode requires exact local copies of all reviewed PDFs and verifies their
-SHA-256 hashes before validating every target and writing any record. Dry-run is
-the default.
+SHA-256 hashes before writing any newly restored SAG formula. Flag-only backfills
+for already-restored records can run without the PDF copies. Dry-run is the
+default.
 """
 
 from __future__ import annotations
@@ -31,7 +32,11 @@ from record_io import write_record  # noqa: E402
 NORMALIZED = REPO / "data" / "normalized_yaml"
 MIM_SSSOM = REPO.parent / "MediaIngredientMech" / "mappings" / "ingredient_mappings.sssom.tsv"
 ACTION = "RESTORED_SAG_SOURCE_COMPOSITION"
+FLAG_ACTION = "TAGGED_SAG_RESTORED_COMPOSITION_CURATED"
 TIMESTAMP = "2026-08-25T00:00:00-07:00"
+FLAG_TIMESTAMP = "2026-09-07T00:00:00-07:00"
+CURATED_FLAGS = ("has_ontology_mappings", "ingredients_curated")
+OBSOLETE_FLAGS = frozenset({"incomplete_composition", "source_information_unavailable"})
 
 
 @dataclass(frozen=True)
@@ -1671,8 +1676,12 @@ def source_note(target: Target) -> str:
 
 
 def history_has_action(doc: dict[str, Any]) -> bool:
+    return _history_has_action(doc, ACTION)
+
+
+def _history_has_action(doc: dict[str, Any], action: str) -> bool:
     return any(
-        isinstance(row, dict) and row.get("action") == ACTION
+        isinstance(row, dict) and row.get("action") == action
         for row in doc.get("curation_history") or []
     )
 
@@ -1723,10 +1732,51 @@ def _assert_applied(doc: dict[str, Any], target: Target) -> None:
         raise ValueError(f"{target.relative_path}: source verification note is missing")
 
 
+def _ensure_curated_flags(doc: dict[str, Any], target: Target) -> bool:
+    flags = doc.get("data_quality_flags") or []
+    if not isinstance(flags, list):
+        raise ValueError(f"{target.relative_path}: data_quality_flags is not a list")
+
+    original_flags = list(flags)
+    flags = [flag for flag in flags if flag not in OBSOLETE_FLAGS]
+    for flag in CURATED_FLAGS:
+        if flag not in flags:
+            flags.append(flag)
+
+    doc["data_quality_flags"] = flags
+    return flags != original_flags
+
+
+def _append_flag_backfill_history(doc: dict[str, Any], target: Target) -> None:
+    if _history_has_action(doc, FLAG_ACTION):
+        return
+
+    history = doc.setdefault("curation_history", [])
+    if not isinstance(history, list):
+        raise ValueError(f"{target.relative_path}: curation_history is not a list")
+    history.append(
+        {
+            "timestamp": FLAG_TIMESTAMP,
+            "curator": "repair_sag_missing_compositions.py",
+            "action": FLAG_ACTION,
+            "changes": "data_quality_flags += has_ontology_mappings, ingredients_curated",
+            "notes": (
+                "Marked the reviewed SAG source formulation as curated and "
+                "ontology-mapped after the original restoration left only the "
+                "ingredient identities and did not add the scoring flags."
+            ),
+        }
+    )
+
+
 def repair_document(doc: dict[str, Any], target: Target) -> tuple[dict[str, Any], bool]:
     if history_has_action(doc):
-        _assert_applied(doc, target)
-        return doc, False
+        repaired = copy.deepcopy(doc)
+        _assert_applied(repaired, target)
+        changed = _ensure_curated_flags(repaired, target)
+        if changed:
+            _append_flag_backfill_history(repaired, target)
+        return repaired, changed
     _validate_precondition(doc, target)
 
     repaired = copy.deepcopy(doc)
@@ -1737,18 +1787,7 @@ def repair_document(doc: dict[str, Any], target: Target) -> tuple[dict[str, Any]
         else:
             repaired.pop(field, None)
 
-    flags = repaired.get("data_quality_flags") or []
-    if not isinstance(flags, list):
-        raise ValueError(f"{target.relative_path}: data_quality_flags is not a list")
-    kept_flags = [
-        flag
-        for flag in flags
-        if flag not in {"incomplete_composition", "source_information_unavailable"}
-    ]
-    if kept_flags:
-        repaired["data_quality_flags"] = kept_flags
-    else:
-        repaired.pop("data_quality_flags", None)
+    _ensure_curated_flags(repaired, target)
 
     note = source_note(target)
     existing_notes = str(repaired.get("notes") or "").rstrip()
@@ -1818,21 +1857,24 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     _validate_inventory()
-    if args.source_dir is not None:
-        validate_source_files(args.source_dir)
-    elif args.apply:
-        raise ValueError("--apply requires --source-dir with the reviewed SAG PDFs")
     validate_mim_terms(args.sssom)
 
     pending = []
+    has_source_restoration = False
     for target in TARGETS:
         path = args.normalized_dir / target.relative_path
         doc = yaml.safe_load(path.read_text(encoding="utf-8"))
         if not isinstance(doc, dict):
             raise ValueError(f"{path}: expected a YAML mapping")
+        has_source_restoration = has_source_restoration or not history_has_action(doc)
         repaired, changed = repair_document(doc, target)
         pending.append((path, repaired, changed, target))
         print(f"{'fix' if changed else 'skip':4s}  {target.relative_path}: SAG {target.source_key}")
+
+    if args.source_dir is not None:
+        validate_source_files(args.source_dir)
+    elif args.apply and has_source_restoration:
+        raise ValueError("--apply requires --source-dir when restoring SAG source formulas")
 
     changed_count = sum(changed for _, _, changed, _ in pending)
     if args.apply:

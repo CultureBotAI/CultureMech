@@ -137,7 +137,8 @@ curation_history:
 - timestamp: '2026-06-14T05:58:58.561437+00:00'
   curator: idnf-grounding-fix-v1.0
   action: Fixed ID_NOT_FOUND term groundings
-  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
+  notes: Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI,
+    0 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-27T06:35:55.641737Z'
   curator: togo-import
   action: Imported from TOGO Medium
@@ -191,6 +192,12 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_jcm_direct_wrapper_backlinks.py
+  action: ADDED_JCM_DIRECT_WRAPPER_BACKLINKS
+  changes: Added reciprocal variant_children links
+  source: TOGO:M748
+  notes: Mirrored curated JCM direct-wrapper parent_media links on the parent record.
 solutions:
 - preferred_term: 7% K2HPO4 solution
   composition: []
@@ -214,3 +221,14 @@ solutions:
   notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined
     component'
   name: Unknown solution
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M749_Ravot_Modified_Medium_For_Fervidobacterium_SP._R8.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:010154
+  name: ravot_modified_medium_for_fervidobacterium_sp_r8
+  notes: Uses Medium 725 with 5.0 g/L NaCl and pH adjusted to 6.3.
+- path: data/normalized_yaml/bacterial/TOGO_M750_Ravot_Modified_Medium_For_Thermosipho_SP._G60.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:010156
+  name: ravot_modified_medium_for_thermosipho_sp_g60
+  notes: Uses Medium 725 with 20.0 g/L NaCl and pH adjusted to 7.0.

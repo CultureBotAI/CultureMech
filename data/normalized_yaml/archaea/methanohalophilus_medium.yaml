@@ -322,3 +322,22 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_479_methanohalophilus_score10.py
+  action: RESOLVED_KOMODO_479_METHANOHALOPHILUS_TOPOLOGY
+  changes: Promoted MediaDive Medium 479 to the Methanohalophilus family parent
+  source: MediaDive Medium 479 and KOMODO Medium 479-479.1
+  notes: Linked the exact KOMODO Medium 479 source duplicate and reclassified the
+    pH 7.4-7.5 DSM 5219 record as a pH variant.
+variant_children:
+- path: data/normalized_yaml/archaea/KOMODO_479_METHANOHALOPHILUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005594
+  name: methanohalophilus_medium
+  notes: KOMODO Medium 479 exactly mirrors DSMZ Medium 479.
+- path: data/normalized_yaml/bacterial/for_dsm_5219.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:005593
+  name: for_dsm_5219
+  notes: KOMODO Medium 479.1 applies METHANOHALOPHILUS MEDIUM at pH 7.4-7.5 for DSM
+    5219.

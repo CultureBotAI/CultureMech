@@ -16,132 +16,189 @@ media_term:
 notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1007.pdf'
 ingredients:
 - preferred_term: KNO3
-  term:
-    id: CHEBI:63043
-    label: potassium nitrate
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000170
-    label: KNO3
-- preferred_term: KH2PO4
+  source: DSMZ Medium 1007
+  notes: DSMZ Medium 1007 lists 250.0 mg KNO3 in the main 1000 ml solution.
   term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
+    id: CHEBI:63043
+    label: potassium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63043
+    label: potassium nitrate
+- preferred_term: KH2PO4
   concentration:
     value: '0.1'
     unit: G_PER_L
+  source: DSMZ Medium 1007
+  notes: DSMZ Medium 1007 lists 100.0 mg KH2PO4 in the main 1000 ml solution.
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
 - preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.05'
     unit: G_PER_L
+  source: DSMZ Medium 1007
+  notes: DSMZ Medium 1007 lists 50.0 mg MgSO4 x 7 H2O in the main 1000 ml solution.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
 - preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
   concentration:
     value: '0.01'
     unit: G_PER_L
+  source: DSMZ Medium 1007
+  notes: DSMZ Medium 1007 lists 10.0 mg CaCl2 x 2 H2O in the main 1000 ml solution.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-- preferred_term: EDTA
-  term:
-    id: CHEBI:4735
-    label: ethylenediaminetetraacetic acid
+- preferred_term: Distilled water
   concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:4735
-    label: ethylenediaminetetraacetic acid
-- preferred_term: CuCl2 x 5 H2O
+    value: '1000.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 1007
+  notes: DSMZ Medium 1007 makes the main solution with 1000.0 ml distilled water.
   term:
-    id: CHEBI:91245
-    label: copper(II) chloride pentahydrate
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
+    id: CHEBI:15377
+    label: water
   mediaingredientmech_chebi_term:
-    id: CHEBI:91245
-    label: copper(II) chloride pentahydrate
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
+    id: CHEBI:15377
+    label: water
+solutions:
+- preferred_term: Trace elements
   concentration:
-    value: '2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
-- preferred_term: ZnSO4 x 7 H2O
-  term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: nickel dichloride
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:34887
-    label: nickel dichloride
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:53503
-    label: cobalt chloride hexahydrate
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:53503
-    label: cobalt chloride hexahydrate
-- preferred_term: Na2MoO4
-  term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
+    value: '1.0'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: EDTA
+    concentration:
+      value: '5.00'
+      unit: G_PER_L
+    source: DSMZ Medium 1007
+    notes: DSMZ Medium 1007 lists 5.00 g EDTA in the trace elements stock.
+    term:
+      id: CHEBI:4735
+      label: ethylenediaminetetraacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:4735
+      label: ethylenediaminetetraacetic acid
+  - preferred_term: CuCl2 x 5 H2O
+    concentration:
+      value: '0.10'
+      unit: G_PER_L
+    source: DSMZ Medium 1007
+    notes: DSMZ Medium 1007 lists 0.10 g CuCl2 x 5 H2O in the trace elements stock.
+    term:
+      id: CHEBI:91245
+      label: copper(II) chloride pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91245
+      label: copper(II) chloride pentahydrate
+  - preferred_term: FeSO4 x 7 H2O
+    concentration:
+      value: '2.00'
+      unit: G_PER_L
+    source: DSMZ Medium 1007
+    notes: DSMZ Medium 1007 lists 2.00 g FeSO4 x 7 H2O in the trace elements stock.
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.10'
+      unit: G_PER_L
+    source: DSMZ Medium 1007
+    notes: DSMZ Medium 1007 lists 0.10 g ZnSO4 x 7 H2O in the trace elements stock.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+  - preferred_term: NiCl2 x 6 H2O
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    source: DSMZ Medium 1007
+    notes: DSMZ Medium 1007 lists 0.02 g NiCl2 x 6 H2O in the trace elements stock.
+    term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.20'
+      unit: G_PER_L
+    source: DSMZ Medium 1007
+    notes: DSMZ Medium 1007 lists 0.20 g CoCl2 x 6 H2O in the trace elements stock.
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+  - preferred_term: Na2MoO4
+    concentration:
+      value: '0.03'
+      unit: G_PER_L
+    source: DSMZ Medium 1007
+    notes: DSMZ Medium 1007 lists 0.03 g Na2MoO4 in the trace elements stock.
+    term:
+      id: CHEBI:75215
+      label: sodium molybdate (anhydrous)
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75215
+      label: sodium molybdate (anhydrous)
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '0.03'
+      unit: G_PER_L
+    source: DSMZ Medium 1007
+    notes: DSMZ Medium 1007 lists 0.03 g MnCl2 x 4 H2O in the trace elements stock.
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000.00'
+      unit: ML_PER_L
+    source: DSMZ Medium 1007
+    notes: DSMZ Medium 1007 makes the trace elements stock with 1000.00 ml distilled
+      water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  source: DSMZ Medium 1007
+  notes: DSMZ Medium 1007 adds 1.0 ml/L trace elements stock.
 preparation_steps:
 - step_number: 1
-  action: MIX
-  description: Final pH 5.5-6.0.
+  action: ADJUST_PH
+  description: Adjust the final medium to pH 5.5-6.0.
 - step_number: 2
   action: MIX
-  description: Strains should be grown with shaking when grown on methane.
+  description: Use shaking incubation for strains grown on methane.
 applications:
 - Microbial cultivation
 curation_history:
@@ -185,12 +242,21 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_dsmz_1007_trace_stock_score15.py
+  action: RESOLVED_DSMZ_1007_TRACE_STOCK_SCORE15
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1007.pdf
+  notes: DSMZ Medium 1007 defines Mineral Medium with KNO3, KH2PO4, MgSO4 x 7 H2O,
+    CaCl2 x 2 H2O, 1.0 ml/L trace elements, and distilled water at final pH 5.5-6.0.
+    The trace elements stock contains EDTA, CuCl2 x 5 H2O, FeSO4 x 7 H2O, ZnSO4 x
+    7 H2O, NiCl2 x 6 H2O, CoCl2 x 6 H2O, Na2MoO4, MnCl2 x 4 H2O, and distilled water
+    per liter.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1007_MINERAL_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003510
   name: mineral_medium
-  notes: Same source medium number and matching ingredient/concentration signature.
+  notes: KOMODO Medium 1007 resolves to official DSMZ Medium 1007.
 source_environment:
 - preferred_term: sulfate-free anaerobic environment
   notes: 'Grown in continuous culture on lactate without sulfate under strict anaerobic
@@ -224,3 +290,9 @@ source_environment:
     carriers.
 
     '
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://mediadive.dsmz.de/medium/1007
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1007.pdf

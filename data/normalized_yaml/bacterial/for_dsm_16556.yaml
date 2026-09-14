@@ -360,12 +360,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_1004_anaerolinea_score10.py
+  action: RESOLVED_KOMODO_1004_ANAEROLINEA_TOPOLOGY
+  changes: Linked under KOMODO Medium 1004
+  source: KOMODO Medium 1004.2
+  notes: KOMODO Medium 1004.2 applies ANAEROLINEA medium to DSM 16556.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_1004_ANAEROLINEA_medium.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:003504
   name: anaerolinea_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 1004 is the ANAEROLINEA medium base.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 1004.2 applies ANAEROLINEA medium to DSM 16556.
+data_quality_flags:
+- ingredients_curated

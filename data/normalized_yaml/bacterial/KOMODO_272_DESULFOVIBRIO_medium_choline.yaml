@@ -10,8 +10,9 @@ media_term:
   term:
     id: komodo.medium:272
     label: DESULFOVIBRIO medium (choline)
-notes: 'Source: KOMODO ModelSEED | ID: 272 | DSMZ Medium: 272 (mediadive.medium:272)
-  | Aerobic: No'
+notes: KOMODO Medium 272 imported a stale DSMZ Medium 272 pointer for DESULFOVIBRIO
+  medium (choline). The old DSMZ Medium 272 URL is unavailable; DSMZ Medium 63c now
+  provides the same named DESULFOVIBRIO MEDIUM (CHOLINE) formulation.
 ingredients: []
 applications:
 - Microbial cultivation
@@ -35,5 +36,40 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_komodo_272_score35.py
+  action: RESOLVED_KOMODO_272_SCORE35
+  changes: Linked stale KOMODO 272 to source-equivalent DSMZ Medium 63c
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium63c.pdf
+  notes: KOMODO Medium 272 was an empty DSMZ-sourced shell for DESULFOVIBRIO medium
+    (choline); DSMZ Medium 63c carries the same named formulation with an explicit
+    current recipe.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+solutions:
+- preferred_term: DESULFOVIBRIO MEDIUM (CHOLINE)
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  culturemech_term:
+    id: CultureMech:001776
+    label: desulfovibrio_medium_choline
+  notes: KOMODO Medium 272 imported a stale DSMZ Desulfovibrio medium (choline) pointer;
+    DSMZ Medium 63c carries the same named recipe.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use the DSMZ Medium 63c DESULFOVIBRIO MEDIUM (CHOLINE) formulation.
+parent_media:
+  path: data/normalized_yaml/bacterial/desulfovibrio_medium_choline.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001776
+  name: desulfovibrio_medium_choline
+  notes: KOMODO Medium 272 is a stale DSMZ-source duplicate of the same named Desulfovibrio
+    Medium (Choline) formulation curated as DSMZ Medium 63c.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO source-catalogue duplicate of the same named DSMZ Desulfovibrio Medium (Choline)
+  formulation.
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium63c.pdf

@@ -404,12 +404,28 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-parent_media:
-  path: data/normalized_yaml/bacterial/KOMODO_935_DEFERRIBACTER_medium.yaml
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_935_deferribacter_score10.py
+  action: RESOLVED_KOMODO_935_DEFERRIBACTER_TOPOLOGY
+  changes: Re-rooted KOMODO Medium 935 exact topology under DSMZ Medium 935a
+  source: DSMZ Medium 935a; KOMODO Medium 935, 935.1, 935_14783
+  notes: Left DSMZ Medium 935 out because it has a distinct 31-ingredient signature
+    from the 34-ingredient DSMZ Medium 935a group.
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_935_DEFERRIBACTER_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006857
-  name: deferribacter_medium
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+  name: KOMODO_935_DEFERRIBACTER_medium
+  notes: KOMODO Medium 935 has the same 34-ingredient signature as DSMZ Medium 935a.
+- path: data/normalized_yaml/bacterial/for_dsm_14813.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006856
+  name: for_dsm_14813
+  notes: KOMODO Medium 935.1 applies DSMZ Medium 935a to DSM 14813.
+- path: data/normalized_yaml/bacterial/medium_935_modified_for_dsm_14783.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006855
+  name: medium_935_modified_for_dsm_14783
+  notes: KOMODO Medium 935_14783 applies DSMZ Medium 935a to DSM 14783.
+data_quality_flags:
+- ingredients_curated

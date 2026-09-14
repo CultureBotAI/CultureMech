@@ -5,13 +5,14 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: SEMI_DEFINED
 physical_state: LIQUID
+ph_value: 2.5
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1.0'
+    unit: L
+  source: TOGO M1070 / JCM Medium 1012
+  notes: TOGO M1070 / JCM Medium 1012 lists 1.0 L Distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -22,13 +23,14 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M1070 / JCM Medium 1012
+  notes: TOGO M1070 / JCM Medium 1012 lists 0.2 g/L Yeast extract.
 - preferred_term: Glucose
   concentration:
     value: '0.9'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
+  source: TOGO M1070 / JCM Medium 1012
+  notes: TOGO M1070 / JCM Medium 1012 lists 0.9 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
@@ -36,14 +38,14 @@ ingredients:
     id: CHEBI:17234
     label: glucose
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
-  term:
-    id: CHEBI:26836
-    label: sulfuric acid
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M1070 / JCM Medium 1012
+  notes: TOGO M1070 / JCM Medium 1012 adjusts the medium to pH 2.5 with H2SO4.
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
   mediaingredientmech_chebi_term:
     id: CHEBI:26836
     label: sulfuric acid
@@ -52,11 +54,11 @@ media_term:
   term:
     id: TOGO:M1070
     label: Acidithrix Ferrooydans Medium
-notes: 'Source: https://togomedium.org/medium/M1070
-
-  Original source: JCM - JCM_M1012
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1012'
+notes: TOGO M1070 records JCM Medium 1012 with 100 ml/L UBS solution from M752/JCM
+  729, 10 ml/L Trace minerals from M142/JCM 151, 10 ml/L Ni-Se-W solution from M236/JCM
+  244, glucose, yeast extract, and distilled water. JCM 1012 adjusts the base to pH
+  2.5 with H2SO4, autoclaves it, then adds filter-sterilized 1 M FeSO4 solution at
+  pH 2.0 after cooling.
 applications:
 - Microbial cultivation
 curation_history:
@@ -104,33 +106,403 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m1070_score15.py
+  action: RESOLVED_TOGO_M1070_SCORE15
+  source: https://togomedium.org/medium/M1070; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1012;
+    https://togomedium.org/medium/M752; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729;
+    https://togomedium.org/medium/M142; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151;
+    https://togomedium.org/medium/M236; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244
+  notes: TOGO M1070 records JCM Medium 1012 with 100 ml/L UBS solution from M752/JCM
+    729, 10 ml/L Trace minerals from M142/JCM 151, 10 ml/L Ni-Se-W solution from M236/JCM
+    244, glucose, yeast extract, and distilled water. JCM 1012 adjusts the base to
+    pH 2.5 with H2SO4, autoclaves it, then adds filter-sterilized 1 M FeSO4 solution
+    at pH 2.0 after cooling.
 solutions:
-- preferred_term: UBS solution (see Medium [M752])
-  composition: []
-  notes: Cross-reference to Medium M752
+- preferred_term: UBS solution
   concentration:
-    value: '100'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Trace minerals (see Medium [M142])
-  composition: []
-  notes: Cross-reference to Medium M142
+    value: '100.0'
+    unit: ML_PER_L
+  source: TOGO M1070 / JCM Medium 1012
+  notes: TOGO M1070 / JCM Medium 1012 adds 100.0 ml/L UBS solution from M752/JCM 729.
+  composition:
+  - preferred_term: Na2SO4
+    concentration:
+      value: '14.0'
+      unit: G_PER_L
+    source: TOGO M752 / JCM Medium 729
+    notes: TOGO M752 / JCM Medium 729 lists 14.0 g/L Na2SO4.
+    term:
+      id: CHEBI:32149
+      label: sodium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32149
+      label: sodium sulfate
+  - preferred_term: (NH4)2SO4
+    concentration:
+      value: '30.0'
+      unit: G_PER_L
+    source: TOGO M752 / JCM Medium 729
+    notes: TOGO M752 / JCM Medium 729 lists 30.0 g/L (NH4)2SO4.
+    term:
+      id: CHEBI:62946
+      label: ammonium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:62946
+      label: ammonium sulfate
+  - preferred_term: KCl
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: TOGO M752 / JCM Medium 729
+    notes: TOGO M752 / JCM Medium 729 lists 1.0 g/L KCl.
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+  - preferred_term: MgSO4 x 7H2O
+    concentration:
+      value: '5.0'
+      unit: G_PER_L
+    source: TOGO M752 / JCM Medium 729
+    notes: TOGO M752 / JCM Medium 729 lists 5.0 g/L MgSO4 x 7H2O.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: K2HPO4
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    source: TOGO M752 / JCM Medium 729
+    notes: TOGO M752 / JCM Medium 729 lists 0.5 g/L K2HPO4.
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+  - preferred_term: Ca(NO3)2 x 4H2O
+    concentration:
+      value: '0.14'
+      unit: G_PER_L
+    source: TOGO M752 / JCM Medium 729
+    notes: TOGO M752 / JCM Medium 729 lists 0.14 g/L Ca(NO3)2 x 4H2O.
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: TOGO M752 / JCM Medium 729
+    notes: TOGO M752 / JCM Medium 729 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: Trace minerals
   concentration:
-    value: '10'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Ni-Se-W solution (see Medium [M236])
-  composition: []
-  notes: Cross-reference to Medium M236
+    value: '10.0'
+    unit: ML_PER_L
+  source: TOGO M1070 / JCM Medium 1012
+  notes: TOGO M1070 / JCM Medium 1012 adds 10.0 ml/L Trace minerals from M142/JCM
+    151.
+  composition:
+  - preferred_term: Nitrilotriacetic acid
+    concentration:
+      value: '1.5'
+      unit: G_PER_L
+    source: TOGO M142 / JCM Medium 151
+    notes: TOGO M142 / JCM Medium 151 lists 1.5 g/L Nitrilotriacetic acid.
+    term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+  - preferred_term: MgSO4 x 7H2O
+    concentration:
+      value: '3.0'
+      unit: G_PER_L
+    source: TOGO M142 / JCM Medium 151
+    notes: TOGO M142 / JCM Medium 151 lists 3.0 g/L MgSO4 x 7H2O.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: MnSO4 x n H2O
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    source: TOGO M142 / JCM Medium 151
+    notes: TOGO M142 / JCM Medium 151 lists 0.5 g/L MnSO4 x n H2O.
+    term:
+      id: CHEBI:86360
+      label: manganese(II) sulfate hydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86360
+      label: manganese(II) sulfate hydrate
+  - preferred_term: NaCl
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: TOGO M142 / JCM Medium 151
+    notes: TOGO M142 / JCM Medium 151 lists 1.0 g/L NaCl.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: FeSO4 x 7H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: TOGO M142 / JCM Medium 151
+    notes: TOGO M142 / JCM Medium 151 lists 0.1 g/L FeSO4 x 7H2O.
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+  - preferred_term: CoSO4 x 7H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: TOGO M142 / JCM Medium 151
+    notes: TOGO M142 / JCM Medium 151 lists 0.1 g/L CoSO4 x 7H2O.
+    term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+  - preferred_term: CaCl2 x 2H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: TOGO M142 / JCM Medium 151
+    notes: TOGO M142 / JCM Medium 151 lists 0.1 g/L CaCl2 x 2H2O.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: ZnSO4 x 7H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: TOGO M142 / JCM Medium 151
+    notes: TOGO M142 / JCM Medium 151 lists 0.1 g/L ZnSO4 x 7H2O.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+  - preferred_term: CuSO4 x 5H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: TOGO M142 / JCM Medium 151
+    notes: TOGO M142 / JCM Medium 151 lists 0.01 g/L CuSO4 x 5H2O.
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+  - preferred_term: AlK(SO4)2
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: TOGO M142 / JCM Medium 151
+    notes: TOGO M142 / JCM Medium 151 lists 0.01 g/L AlK(SO4)2.
+    term:
+      id: CHEBI:86463
+      label: potassium aluminium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86463
+      label: potassium aluminium sulfate
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: TOGO M142 / JCM Medium 151
+    notes: TOGO M142 / JCM Medium 151 lists 0.01 g/L H3BO3.
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: Na2MoO4 x 2H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: TOGO M142 / JCM Medium 151
+    notes: TOGO M142 / JCM Medium 151 lists 0.01 g/L Na2MoO4 x 2H2O.
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: TOGO M142 / JCM Medium 151
+    notes: TOGO M142 / JCM Medium 151 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: KOH solution
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: TOGO M142 / JCM Medium 151
+    notes: TOGO M142 / JCM Medium 151 adjusts nitrilotriacetic acid to pH 6.5 with
+      KOH solution before adding minerals.
+    term:
+      id: CHEBI:32035
+      label: potassium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32035
+      label: potassium hydroxide
+  preparation_notes: Dissolve nitrilotriacetic acid, adjust pH to 6.5 with KOH solution,
+    add minerals, then adjust final pH to 7.0.
+- preferred_term: Ni-Se-W solution
   concentration:
-    value: '10'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '10.0'
+    unit: ML_PER_L
+  source: TOGO M1070 / JCM Medium 1012
+  notes: TOGO M1070 / JCM Medium 1012 adds 10.0 ml/L Ni-Se-W solution from M236/JCM
+    244.
+  composition:
+  - preferred_term: NiCl2 x 6H2O
+    concentration:
+      value: '25.0'
+      unit: MG_PER_L
+    source: TOGO M236 / JCM Medium 244
+    notes: TOGO M236 / JCM Medium 244 lists 25.0 mg/L NiCl2 x 6H2O.
+    term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+  - preferred_term: (NH4)2Ni(SO4)2 x 6H2O
+    concentration:
+      value: '2.0'
+      unit: G_PER_L
+    source: TOGO M236 / JCM Medium 244
+    notes: TOGO M236 / JCM Medium 244 lists 2.0 g/L (NH4)2Ni(SO4)2 x 6H2O.
+  - preferred_term: Na2SeO3
+    concentration:
+      value: '0.3'
+      unit: MG_PER_L
+    source: TOGO M236 / JCM Medium 244
+    notes: TOGO M236 / JCM Medium 244 lists 0.3 mg/L Na2SeO3.
+  - preferred_term: Na2SeO4
+    concentration:
+      value: '10.0'
+      unit: MG_PER_L
+    source: TOGO M236 / JCM Medium 244
+    notes: TOGO M236 / JCM Medium 244 lists 10.0 mg/L Na2SeO4.
+    term:
+      id: CHEBI:77775
+      label: sodium selenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:77775
+      label: sodium selenate
+  - preferred_term: Na2WO4 x 2H2O
+    concentration:
+      value: '10.0'
+      unit: MG_PER_L
+    source: TOGO M236 / JCM Medium 244
+    notes: TOGO M236 / JCM Medium 244 lists 10.0 mg/L Na2WO4 x 2H2O.
+    term:
+      id: CHEBI:63939
+      label: sodium tungstate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63939
+      label: sodium tungstate dihydrate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: TOGO M236 / JCM Medium 244
+    notes: TOGO M236 / JCM Medium 244 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
 - preferred_term: 1 M FeSO4 solution (pH 2.0)
-  composition: []
   concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
-  name: Unknown solution
+    value: '5.0'
+    unit: ML_PER_L
+  source: TOGO M1070 / JCM Medium 1012
+  notes: TOGO M1070 / JCM Medium 1012 adds 5.0 ml/L filter-sterilized 1 M FeSO4 solution
+    at pH 2.0 after cooling.
+  composition:
+  - preferred_term: FeSO4
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: TOGO M1070 / JCM Medium 1012
+    notes: TOGO M1070 / JCM Medium 1012 lists a 1 M FeSO4 solution at pH 2.0; the
+      molar stock concentration is preserved in this note.
+    term:
+      id: CHEBI:75832
+      label: iron(2+) sulfate (anhydrous)
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75832
+      label: iron(2+) sulfate (anhydrous)
+  preparation_notes: Filter-sterilize.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix UBS solution, Trace minerals, Ni-Se-W solution, glucose, yeast
+    extract, and distilled water thoroughly.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust the medium to pH 2.5 with H2SO4.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave the acidified base medium.
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Filter-sterilize 1 M FeSO4 solution at pH 2.0.
+- step_number: 5
+  action: MIX
+  description: After cooling, add 5.0 ml/L filter-sterilized 1 M FeSO4 solution at
+    pH 2.0.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1070
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1012
+- reference: https://togomedium.org/medium/M752
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729
+- reference: https://togomedium.org/medium/M142
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+- reference: https://togomedium.org/medium/M236
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244

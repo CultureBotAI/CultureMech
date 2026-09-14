@@ -21,6 +21,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -75,4 +78,10 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_bacterial_score10_extracts.py
+  action: GROUNDED_BACTERIAL_EXTRACTS_SCORE10
+  changes: Grounded exact bacterial extract mappings
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied exact MediaIngredientMech mappings for Yeast extract.
 kg_microbe_match: mediadive.medium:73

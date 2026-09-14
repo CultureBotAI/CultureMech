@@ -53,6 +53,21 @@ class TestIngredientToEdge:
         ingredient = {"preferred_term": "CultureMech test-only missing ingredient 260"}
         assert ingredient_to_edge("culturemech:LB", ingredient) is None
 
+    def test_culturemech_term_generates_edge_for_curated_product(self):
+        ingredient = {
+            "preferred_term": "CultureMech test-only missing ingredient 260",
+            "culturemech_term": {
+                "id": "CultureMech:003183",
+                "label": "R2A Broth",
+            },
+            "concentration": {"value": "3.2", "unit": "G_PER_L"},
+        }
+        edge = ingredient_to_edge("culturemech:R2A_Medium_DAIGO", ingredient)
+
+        assert edge is not None
+        assert edge["object"] == "CultureMech:003183"
+        assert edge["predicate"] == "biolink:has_part"
+
     def test_with_evidence(self):
         """Test ingredient with evidence includes publications."""
         medium_id = "culturemech:LB_Broth"

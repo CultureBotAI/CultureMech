@@ -5,17 +5,14 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.5
 ingredients:
-- preferred_term: Base Medium
-  concentration:
-    value: '970'
-    unit: G_PER_L
 - preferred_term: NaCl
   concentration:
     value: '17.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: ATCC Medium 2746
+  notes: ATCC Medium 2746 lists 17.5 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -26,62 +23,45 @@ ingredients:
   concentration:
     value: '12.3'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  source: ATCC Medium 2746
+  notes: ATCC Medium 2746 lists 12.3 g/L MgSO4.
   term:
     id: CHEBI:32599
     label: magnesium sulfate
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-- preferred_term: DI Water
-  concentration:
-    value: '970'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
 - preferred_term: Casamino Acids
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: 3N NaOH
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  source: ATCC Medium 2746
+  notes: ATCC Medium 2746 lists 2.0 g/L Casamino Acids.
+- preferred_term: DI Water
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: 1M Potassium Phosphate (pH 7.0)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
-- preferred_term: 0.1M L-arginine
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Organic compound'
-- preferred_term: Glycerol
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+    value: '970.0'
+    unit: ML_PER_L
+  source: ATCC Medium 2746
+  notes: ATCC Medium 2746 lists 970 ml DI Water in the base.
   term:
-    id: CHEBI:17754
-    label: glycerol
+    id: CHEBI:15377
+    label: water
   mediaingredientmech_chebi_term:
-    id: CHEBI:17754
-    label: glycerol
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M2267
   term:
     id: TOGO:M2267
     label: Autoinducer Bioassay (AB) Medium
-notes: 'Source: https://togomedium.org/medium/M2267
-
-  Original URL: https://www.atcc.org/~/media/F0C5AC9D96C345049F8AA78CCC2AB46A.ashx'
+notes: TOGO M2267 imports ATCC Medium 2746, Autoinducer Bioassay (AB) Medium. ATCC
+  prepares a 970 ml base from NaCl, MgSO4, Casamino Acids, and DI Water, adjusts the
+  pH to 7.5 with 3 N NaOH, autoclaves the base at 121 C, cools it completely, and
+  adds 10 ml each 1 M Potassium Phosphate (pH 7.0), 0.1 M L-arginine, and Glycerol
+  from separate sterile stocks.
+references:
+- reference: https://togomedium.org/medium/M2267
+- reference: https://www.atcc.org/~/media/F0C5AC9D96C345049F8AA78CCC2AB46A.ashx
 applications:
 - Microbial cultivation
 curation_history:
@@ -138,10 +118,103 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2267_autoinducer_bioassay_score15.py
+  action: RESOLVED_TOGO_M2267_AUTOINDUCER_BIOASSAY_SCORE15
+  source: https://togomedium.org/medium/M2267; https://www.atcc.org/~/media/F0C5AC9D96C345049F8AA78CCC2AB46A.ashx
+  notes: Corrected TOGO's imported Base Medium and Stock Solutions wrappers into ATCC's
+    base recipe plus sterile stock additions, fixed ml rows imported as g/L, added
+    pH 7.5 and source preparation steps, grounded NaOH and L-arginine stocks, and
+    kept the pH 7.0 potassium phosphate buffer ratio intentionally unexpanded.
 solutions:
-- preferred_term: Stock Solutions
-  composition: []
+- preferred_term: 3 N NaOH
   concentration:
-    value: '30'
-    unit: G_PER_L
-  name: Unknown solution
+    value: variable
+    unit: VARIABLE
+  source: ATCC Medium 2746
+  notes: ATCC Medium 2746 adjusts the base to pH 7.5 with 3 N NaOH.
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  composition:
+  - preferred_term: NaOH
+    concentration:
+      value: '3.0'
+      unit: MOLAR
+    source: ATCC Medium 2746
+    notes: The source uses 3 N NaOH for pH adjustment; for this monovalent base the
+      stock is represented as 3.0 M NaOH.
+    term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+- preferred_term: Potassium phosphate buffer
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: ATCC Medium 2746
+  notes: ATCC Medium 2746 adds 10 ml/L 1 M Potassium Phosphate (pH 7.0) from a separate
+    sterile stock; the KH2PO4/K2HPO4 ratio is not disclosed.
+- preferred_term: L-Arginine solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: ATCC Medium 2746
+  notes: ATCC Medium 2746 adds 10 ml/L 0.1 M L-arginine.
+  term:
+    id: CHEBI:16467
+    label: L-arginine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16467
+    label: L-arginine
+  composition:
+  - preferred_term: L-Arginine
+    concentration:
+      value: '0.1'
+      unit: MOLAR
+    source: ATCC Medium 2746
+    notes: ATCC Medium 2746 lists 0.1 M L-arginine as a sterile stock.
+    term:
+      id: CHEBI:16467
+      label: L-arginine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16467
+      label: L-arginine
+- preferred_term: Glycerol
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: ATCC Medium 2746
+  notes: ATCC Medium 2746 adds 10 ml/L Glycerol from a separate sterile stock.
+  term:
+    id: CHEBI:17754
+    label: glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
+    label: glycerol
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve NaCl, MgSO4, and Casamino Acids in DI Water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Bring the pH of the base solution to 7.5 with 3 N NaOH.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave the base at 121 C.
+- step_number: 4
+  action: COOL
+  description: Cool the autoclaved base completely.
+- step_number: 5
+  action: MIX
+  description: Add 10.0 ml/L each 1 M Potassium Phosphate (pH 7.0), 0.1 M L-arginine,
+    and Glycerol from separate sterile stocks.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated

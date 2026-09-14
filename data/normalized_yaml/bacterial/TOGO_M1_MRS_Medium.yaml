@@ -159,3 +159,24 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_bacterial_togo_score40.py
+  action: LINKED_BACTERIAL_TOGO_SCORE40_CHILDREN
+  changes: Linked score-40 bacterial TOGO children to source parents
+  notes: Added or refreshed reciprocal parent-child link for bacterial/TOGO_M103_MRS_Medium_pH_5.5.yaml.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_bacterial_togo_score40.py
+  action: LINKED_BACTERIAL_JCM_SCORE35_CHILDREN
+  changes: Linked score-35 bacterial JCM child to source parent
+  notes: Added or refreshed reciprocal parent-child link for bacterial/mrs_medium_ph_5_5.yaml.
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M103_MRS_Medium_pH_5.5.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:007555
+  name: mrs_medium_ph_5_5
+  notes: Adjusts TOGO M1 MRS Medium to pH 5.5.
+- path: data/normalized_yaml/bacterial/mrs_medium_ph_5_5.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:002293
+  name: mrs_medium_ph_5_5
+  notes: Adjusts JCM Medium 1 MRS Medium to pH 5.5.

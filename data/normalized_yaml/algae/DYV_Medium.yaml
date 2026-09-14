@@ -4,112 +4,458 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: DYV Medium
+  term:
+    id: UTEX:dyv-medium
+    label: DYV Medium
+ph_value: 6.7
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
+notes: UTEX prepares DYV Medium as DYIII Medium supplemented with 1 mL/L DYV Metal
+  Solution.
 ingredients:
+- preferred_term: dH2O
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: UTEX starts the 1 L DYV Medium recipe with approximately 950 mL dH2O.
 - preferred_term: MES
   concentration:
     value: '10'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1.95 g/L; final 10 mM; CAS 7365-45-9'
-- preferred_term: MWC Metal Solution
-  concentration:
-    value: '10'
-    unit: ML_PER_L
-  notes: 'UTEX lists: amount 10 mL/L'
-- preferred_term: CaCl2•2H2O
+  term:
+    id: CHEBI:39005
+    label: 2-(N-morpholino)ethanesulfonic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39005
+    label: 2-(N-morpholino)ethanesulfonic acid
+  notes: UTEX lists 1.95 g/L MES, for 10 mM final.
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.14'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 2 g/100 mL; final 0.14 mM; CAS 10035-04-8'
-- preferred_term: MgSO4•7H2O
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: UTEX adds 1 mL/L of a 2 g/100 mL CaCl2 x 2 H2O stock.
+- preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.3'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 7.4 g/100 mL; final 0.3 mM; CAS 10034-99-8'
-- preferred_term: Na2Glycerophosphate•5H2O
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  notes: UTEX adds 1 mL/L of a 7.4 g/100 mL MgSO4 x 7 H2O stock.
+  nutritional_roles:
+  - SULFUR_SOURCE
+  - TRACE_ELEMENT
+- preferred_term: Na2Glycerophosphate x 5 H2O
   concentration:
     value: '0.03'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 1 g/100 mL; final 0.03 mM; CAS 13408-09-8'
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
+  notes: UTEX adds 1 mL/L of a 1 g/100 mL Na2Glycerophosphate x 5 H2O stock.
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
 - preferred_term: NaNO3
   concentration:
     value: '0.24'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 2 g/100 mL; final 0.24 mM; CAS 7631-99-4'
-- preferred_term: Na2SiO3•9H2O
+  term:
+    id: CHEBI:63005
+    label: sodium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+  notes: UTEX adds 1 mL/L of a 2 g/100 mL NaNO3 stock.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Na2SiO3 x 9 H2O
   concentration:
     value: '0.05'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 1.5 g/100 mL; final 0.05 mM; CAS 13517-24-3'
+  term:
+    id: CHEBI:132108
+    label: sodium silicate nonahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132108
+    label: sodium silicate nonahydrate
+  notes: UTEX adds 1 mL/L of a 1.5 g/100 mL Na2SiO3 x 9 H2O stock.
+  nutritional_roles:
+  - TRACE_ELEMENT
 - preferred_term: NH4NO3
   concentration:
     value: '0.12'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 1 g/100 mL; final 0.12 mM; CAS 6484-52-2'
+  term:
+    id: CHEBI:63038
+    label: ammonium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
+    label: ammonium nitrate
+  notes: UTEX adds 1 mL/L of a 1 g/100 mL NH4NO3 stock.
+  nutritional_roles:
+  - NITROGEN_SOURCE
 - preferred_term: KCl
   concentration:
     value: '0.13'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 1 g/100 mL; final 0.13 mM; CAS 7447-40-7'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+  notes: UTEX adds 1 mL/L of a 1 g/100 mL KCl stock.
+solutions:
+- preferred_term: MWC Metal Solution
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX brings MWC Metal Solution to 1 L with dH2O.
+  - preferred_term: Na2EDTA x 2 H2O
+    concentration:
+      value: '0.44'
+      unit: G_PER_L
+    term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: ED255
+    notes: UTEX lists 0.44 g/L Na2EDTA x 2 H2O.
+    physicochemical_roles:
+    - CHELATOR
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.097'
+      unit: G_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+    supplier_catalog:
+      supplier_name: Baker
+      catalog_number: 0084
+    notes: UTEX lists 0.097 g/L H3BO3.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: FeCl3 x 6 H2O
+    concentration:
+      value: '0.315'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: F-1513
+    notes: UTEX lists 0.315 g/L FeCl3 x 6 H2O.
+    nutritional_roles:
+    - IRON_SOURCE
+    - TRACE_ELEMENT
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '0.018'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    supplier_catalog:
+      supplier_name: Baker
+      catalog_number: '2540'
+    notes: UTEX lists 0.018 g/L MnCl2 x 4 H2O.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.002'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: Z 0251
+    notes: UTEX lists 0.002 g/L ZnSO4 x 7 H2O.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.001'
+      unit: G_PER_L
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: C-3169
+    notes: UTEX lists 0.001 g/L CoCl2 x 6 H2O.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.0006'
+      unit: G_PER_L
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    supplier_catalog:
+      supplier_name: J.T. Baker
+      catalog_number: '3764'
+    notes: UTEX lists 0.0006 g/L Na2MoO4 x 2 H2O.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  notes: UTEX adds 10 mL MWC Metal Solution per liter.
 - preferred_term: DYV Metal Solution
   concentration:
     value: '1'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 1 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX brings DYV Metal Solution to 1 L with dH2O.
+  - preferred_term: Na3VO4
+    concentration:
+      value: '0.002'
+      unit: G_PER_L
+    term:
+      id: CHEBI:35607
+      label: Na3VO4
+    mediaingredientmech_chebi_term:
+      id: CHEBI:35607
+      label: Na3VO4
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: S6508
+    notes: UTEX lists 0.002 g/L Na3VO4.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: H2SeO3
+    concentration:
+      value: '0.004'
+      unit: G_PER_L
+    term:
+      id: CHEBI:26642
+      label: selenous acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26642
+      label: selenous acid
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: '211176'
+    notes: UTEX lists 0.004 g/L H2SeO3.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  notes: UTEX adds 1 mL DYV Metal Solution per liter.
 - preferred_term: Vitamin B12
   concentration:
     value: '1'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 1 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX prepares the Vitamin B12 stock in 200 mL HEPES buffer.
+  - preferred_term: HEPES buffer pH 7.8
+    concentration:
+      value: '12'
+      unit: G_PER_L
+    term:
+      id: CHEBI:42334
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:42334
+      label: HEPES
+    notes: Converted from 2.4 g/200 mL in the UTEX Vitamin B12 stock.
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.135'
+      unit: G_PER_L
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+    notes: Converted from 0.027 g/200 mL in the UTEX Vitamin B12 stock.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  notes: UTEX adds 1 mL Vitamin B12 stock per liter.
 - preferred_term: Biotin Vitamin Solution
   concentration:
     value: '1'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 1 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX prepares the biotin stock in 200 mL HEPES buffer.
+  - preferred_term: HEPES buffer pH 7.8
+    concentration:
+      value: '12'
+      unit: G_PER_L
+    term:
+      id: CHEBI:42334
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:42334
+      label: HEPES
+    notes: Converted from 2.4 g/200 mL in the UTEX biotin stock.
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Biotin
+    concentration:
+      value: '0.025'
+      unit: G_PER_L
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+    notes: Converted from 0.005 g/200 mL in the UTEX biotin stock.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  notes: UTEX adds 1 mL Biotin Vitamin Solution per liter.
 - preferred_term: Thiamine Vitamin Solution
   concentration:
     value: '1'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 1 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX prepares the thiamine stock in 200 mL HEPES buffer.
+  - preferred_term: HEPES buffer pH 7.8
+    concentration:
+      value: '12'
+      unit: G_PER_L
+    term:
+      id: CHEBI:42334
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:42334
+      label: HEPES
+    notes: Converted from 2.4 g/200 mL in the UTEX thiamine stock.
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Thiamine
+    concentration:
+      value: '0.335'
+      unit: G_PER_L
+    term:
+      id: CHEBI:18385
+      label: thiamine(1+)
+    mediaingredientmech_chebi_term:
+      id: CHEBI:18385
+      label: thiamine(1+)
+    notes: Converted from 0.067 g/200 mL in the UTEX thiamine stock.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  notes: UTEX adds 1 mL Thiamine Vitamin Solution per liter.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: To approximately 950 mL dH2O, add all non-vitamin components in the
+    listed order while stirring continuously.
 - step_number: 2
-  action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  action: ADJUST_PH
+  description: Adjust the medium to pH 6.7.
 - step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
+  action: MIX
+  description: Bring the total volume to 1 L with dH2O.
 - step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
+  action: AUTOCLAVE
+  description: Cover and autoclave the medium.
 - step_number: 5
   action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
+  description: When cooled, add the sterile vitamin stocks.
 - step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
+  action: STORE
+  description: Store at refrigerator temperature.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -147,7 +493,31 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_dyiii_dyv_score35.py
+  action: RESOLVED_UTEX_DYIII_DYV_SCORE35
+  changes: Grounded UTEX score-35 DYIII/DYV components
+  source: https://utex.org/products/dyv-medium
+  notes: UTEX prepares DYV Medium as DYIII Medium supplemented with 1 mL/L DYV Metal
+    Solution.
 references:
 - reference: UTEX:dyv-medium
 - reference: https://utex.org/products/dyv-medium
+- reference: https://utex.org/products/mwc-metal-solution
+- reference: https://utex.org/products/dyv-metal-solution
+- reference: https://utex.org/products/vitamin-b-12
+- reference: https://utex.org/products/biotin-vitamin-solution
+- reference: https://utex.org/products/thiamine-vitamin-solution
 original_name: DYV Medium
+parent_media:
+  path: data/normalized_yaml/algae/DYIII_Medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:000159
+  name: dyiii_medium
+  notes: DYV Medium adds 1 mL/L DYV Metal Solution to DYIII.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- DYV Medium adds 1 mL/L DYV Metal Solution to DYIII.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

@@ -5,25 +5,30 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Peptone
   concentration:
-    value: '1000'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO M2285 / DSMZ Medium 115
+  notes: DSMZ Medium 1 lists 5 g/L Peptone.
   term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
+    id: MICRO:0000178
+    label: Peptone
+- preferred_term: Meat extract
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  source: TOGO M2285 / DSMZ Medium 115
+  notes: DSMZ Medium 1 lists 3 g/L Meat extract; this generic complex extract is retained
+    without an ontology grounding.
 - preferred_term: NaCl
   concentration:
     value: '1.5'
     unit: PERCENT_W_V
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  source: TOGO M2285 / DSMZ Medium 115
+  notes: DSMZ Medium 115 lists DSMZ Medium 1 with 1.5% NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -32,26 +37,36 @@ ingredients:
     label: sodium chloride
 - preferred_term: Agar, if necessary
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Meat extract
+  source: TOGO M2285 / DSMZ Medium 115
+  notes: DSMZ Medium 1 lists 15 g/L Agar, if necessary.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Distilled water
   concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
+    value: '1.0'
+    unit: L
+  source: TOGO M2285 / DSMZ Medium 115
+  notes: DSMZ Medium 1 lists 1000 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M2285
   term:
     id: TOGO:M2285
     label: Vibrio Natriegens Medium
-notes: 'Source: https://togomedium.org/medium/M2285
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium115.pdf'
+notes: DSMZ Medium 115 defines Vibrio Natriegens Medium as DSMZ Medium 1 with 1.5%
+  NaCl. DSMZ Medium 1 lists, per liter, 5 g Peptone, 3 g Meat extract, 15 g Agar if
+  necessary, and 1000 ml distilled water, with pH adjusted to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -82,3 +97,26 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2285_m2286_score15.py
+  action: RESOLVED_TOGO_M2285_M2286_SCORE15
+  source: https://togomedium.org/medium/M2285; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium115.pdf;
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf
+  notes: DSMZ Medium 115 defines Vibrio Natriegens Medium as DSMZ Medium 1 with 1.5%
+    NaCl. DSMZ Medium 1 lists, per liter, 5 g Peptone, 3 g Meat extract, 15 g Agar
+    if necessary, and 1000 ml distilled water, with pH adjusted to 7.0. Corrected
+    distilled water and sporulation MnSO4 x H2O unit artifacts, grounded the disclosed
+    simple and protein-hydrolysate components, and kept Meat extract intentionally
+    unmapped.
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2285
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium115.pdf
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf

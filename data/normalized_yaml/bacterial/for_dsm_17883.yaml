@@ -380,12 +380,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_740_fervidobacterium_score10.py
+  action: RESOLVED_KOMODO_740_FERVIDOBACTERIUM_TOPOLOGY
+  changes: Linked under DSMZ Medium 740 as STRAIN_SPECIFIC_VARIANT
+  source: KOMODO Medium 740.1
+  notes: KOMODO Medium 740.1 applies DSMZ Medium 740 to DSM 17883.
 parent_media:
-  path: data/normalized_yaml/bacterial/tf_a_medium.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006391
-  name: tf_a_medium
-variant_relationship: SOURCE_DUPLICATE
+  path: data/normalized_yaml/bacterial/fervidobacterium_tf_a_medium.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:001876
+  name: fervidobacterium_tf_a_medium
+  notes: KOMODO Medium 740.1 applies DSMZ Medium 740 to DSM 17883.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 740.1 applies DSMZ Medium 740 to DSM 17883.
+data_quality_flags:
+- ingredients_curated

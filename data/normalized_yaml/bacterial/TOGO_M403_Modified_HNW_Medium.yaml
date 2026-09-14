@@ -5,17 +5,57 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
-ingredients: []
+ingredients:
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  source: JCM Medium 344
+  notes: JCM Medium 344 prints this component in HNW Medium.
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: NaNO3
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 344
+  notes: JCM Medium 344 prints this component in HNW Medium.
+  term:
+    id: CHEBI:63005
+    label: sodium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+- preferred_term: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: MG_PER_L
+  source: JCM Medium 344
+  notes: JCM Medium 344 prints this component in HNW Medium.
+- preferred_term: Distilled water
+  concentration:
+    value: '330.0'
+    unit: ML_PER_L
+  source: JCM Medium 344
+  notes: JCM Medium 344 lists 330.0 ml_per_l distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M403
   term:
     id: TOGO:M403
     label: Modified HNW Medium
-notes: 'Source: https://togomedium.org/medium/M403
-
-  Original source: JCM - JCM_M405
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=405'
+notes: 'TOGO M403 mirrors JCM Medium 405: Modified HNW Medium uses JCM Medium 344
+  HNW Medium and adds 25.0 mL/L freshly prepared, filter-sterilized 0.1% sodium dithionite
+  solution before inoculation.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -44,18 +84,359 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_wrappers_score40.py
+  action: RESOLVED_JCM_WRAPPER_SCORE40_GRAPH
+  changes: Resolved score-40 JCM wrapper recipe graph
+  source: https://togomedium.org/medium/M403; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=405;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=344; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+  notes: 'TOGO M403 mirrors JCM Medium 405: Modified HNW Medium uses JCM Medium 344
+    HNW Medium and adds 25.0 mL/L freshly prepared, filter-sterilized 0.1% sodium
+    dithionite solution before inoculation.'
 solutions:
-- preferred_term: HNW MEDIUM (see Medium [M339])
-  composition: []
-  notes: Cross-reference to Medium M339
+- preferred_term: MJ(-N) synthetic seawater
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '670.0'
+    unit: ML_PER_L
+  notes: JCM Medium 344 adds 670.0 mL MJ(-N) synthetic seawater from JCM Medium 268.
+  composition:
+  - preferred_term: NaCl
+    concentration:
+      value: '30.0'
+      unit: G_PER_L
+    source: JCM Medium 268
+    notes: JCM Medium 268 prints this component in the MJ(-N) synthetic seawater subrecipe
+      used by JCM Medium 344.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: K2HPO4
+    concentration:
+      value: '0.14'
+      unit: G_PER_L
+    source: JCM Medium 268
+    notes: JCM Medium 268 prints this component in the MJ(-N) synthetic seawater subrecipe
+      used by JCM Medium 344.
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+  - preferred_term: CaCl2 x 2 H2O
+    concentration:
+      value: '0.14'
+      unit: G_PER_L
+    source: JCM Medium 268
+    notes: JCM Medium 268 prints this component in the MJ(-N) synthetic seawater subrecipe
+      used by JCM Medium 344.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '3.4'
+      unit: G_PER_L
+    source: JCM Medium 268
+    notes: JCM Medium 268 prints this component in the MJ(-N) synthetic seawater subrecipe
+      used by JCM Medium 344.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: MgCl2 x 6 H2O
+    concentration:
+      value: '4.18'
+      unit: G_PER_L
+    source: JCM Medium 268
+    notes: JCM Medium 268 prints this component in the MJ(-N) synthetic seawater subrecipe
+      used by JCM Medium 344.
+    term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+  - preferred_term: KCl
+    concentration:
+      value: '0.33'
+      unit: G_PER_L
+    source: JCM Medium 268
+    notes: JCM Medium 268 prints this component in the MJ(-N) synthetic seawater subrecipe
+      used by JCM Medium 344.
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+  - preferred_term: NiCl2 x 6 H2O
+    concentration:
+      value: '0.5'
+      unit: MG_PER_L
+    source: JCM Medium 268
+    notes: JCM Medium 268 prints this component in the MJ(-N) synthetic seawater subrecipe
+      used by JCM Medium 344.
+    term:
+      id: CHEBI:34887
+      label: nickel dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:34887
+      label: nickel dichloride
+  - preferred_term: Na2SeO3 x 5 H2O
+    concentration:
+      value: '0.5'
+      unit: MG_PER_L
+    source: JCM Medium 268
+    notes: JCM Medium 268 prints this component in the MJ(-N) synthetic seawater subrecipe
+      used by JCM Medium 344.
+    term:
+      id: CHEBI:131361
+      label: disodium selenite pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131361
+      label: disodium selenite pentahydrate
+  - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: JCM Medium 268
+    notes: JCM Medium 268 prints this component in the MJ(-N) synthetic seawater subrecipe
+      used by JCM Medium 344.
+  - preferred_term: Trace minerals
+    concentration:
+      value: '10.0'
+      unit: ML_PER_L
+    source: JCM Medium 268
+    notes: JCM Medium 268 prints this component in the MJ(-N) synthetic seawater subrecipe
+      used by JCM Medium 344.
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 268
+    notes: JCM Medium 268 lists 1.0 l distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  preparation_notes: Adjust pH to 7.5.
+- preferred_term: 8% NaHCO3 solution
+  concentration:
+    value: '12.5'
+    unit: ML_PER_L
+  notes: JCM Medium 344 adds 12.5 mL filter-sterilized 8% NaHCO3 solution after autoclaving
+    and cooling.
+  composition:
+  - preferred_term: NaHCO3
+    concentration:
+      value: '80.0'
+      unit: G_PER_L
+    source: JCM Medium 344
+    notes: JCM Medium 344 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+  preparation_notes: Filter-sterilize before addition.
+- preferred_term: Trace vitamins
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  notes: JCM Medium 344 adds 10.0 mL/L filter-sterilized Trace vitamins from JCM Medium
+    197.
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+  - preferred_term: Folic acid
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:27470
+      label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
+  - preferred_term: Pyridoxine HCl
+    concentration:
+      value: '10.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+  - preferred_term: Thiamine HCl
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+  - preferred_term: Riboflavin
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: nicotinic acid
+  - preferred_term: Calcium pantothenate
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.1'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:176843
+      label: adenosylcobalamin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: adenosylcobalamin
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+  - preferred_term: Lipoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:16494
+      label: lipoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16494
+      label: lipoic acid
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 197
+    notes: JCM Medium 197 lists 1.0 l distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  preparation_notes: Filter-sterilize before addition.
 - preferred_term: 0.1% Sodium dithionite solution
-  composition: []
   concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-  name: Unknown solution
+    value: '25.0'
+    unit: ML_PER_L
+  notes: JCM Medium 405 adds 25.0 mL freshly prepared, filter-sterilized 0.1% sodium
+    dithionite solution per liter of HNW Medium.
+  composition:
+  - preferred_term: Sodium dithionite
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: JCM Medium 405
+    notes: JCM Medium 405 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:66870
+      label: sodium dithionite
+    mediaingredientmech_chebi_term:
+      id: CHEBI:66870
+      label: sodium dithionite
+  preparation_notes: Prepare fresh and filter-sterilize before inoculation.
+ph_value: 7.0
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare HNW Medium from JCM Medium 344 and adjust pH to 7.0 with NaOH.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the HNW Medium base at 121 C for 15 min.
+- step_number: 3
+  action: MIX
+  description: After cooling, add filter-sterilized 8% NaHCO3 solution and Trace vitamins.
+- step_number: 4
+  action: FILTER
+  description: Freshly prepare and filter-sterilize 0.1% sodium dithionite solution.
+- step_number: 5
+  action: MIX
+  description: Prior to inoculation, add 25.0 mL 0.1% sodium dithionite solution per
+    liter and pressurize inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M403
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=405
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=344
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268

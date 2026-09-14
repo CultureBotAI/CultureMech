@@ -6,56 +6,78 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '80'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Fetal bovine serum
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Agar
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: L-Cysteine . HCl
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
 - preferred_term: Peptone
   concentration:
-    value: '1'
+    value: '10.0'
     unit: G_PER_L
-- preferred_term: NaOH
-  notes: 'Properties: Defined component, Inorganic compound, Simple component'
+  source: ATCC Medium 1108 via TOGO M2176
+  notes: ATCC Medium 1108 lists 1.0% w/v peptone, normalized to 10 g/L.
   term:
-    id: CHEBI:32145
-    label: sodium hydroxide
+    id: MICRO:0000178
+    label: peptone
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: ATCC Medium 1108 via TOGO M2176
+  notes: ATCC Medium 1108 lists 0.05% w/v yeast extract, normalized to 0.5 g/L.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: L-Cysteine . HCl
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: ATCC Medium 1108 via TOGO M2176
+  notes: ATCC Medium 1108 lists 0.1% w/v L-Cysteine . HCl, normalized to 1 g/L.
+  term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+- preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: ATCC Medium 1108 via TOGO M2176
+  notes: ATCC Medium 1108 lists 1.5% w/v agar, normalized to 15 g/L.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '200.0'
+    unit: ML_PER_L
+  source: ATCC Medium 1108 via TOGO M2176
+  notes: ATCC Medium 1108 lists 20.0% fetal bovine serum added at 45 C, normalized
+    to 200 ml/L; this serum is retained as an opaque complex component.
+- preferred_term: Distilled water
+  concentration:
+    value: '800.0'
+    unit: ML_PER_L
+  source: ATCC Medium 1108 via TOGO M2176
+  notes: ATCC Medium 1108 dissolves peptone, yeast extract, and L-Cysteine . HCl in
+    80% final-volume distilled water, normalized to 800 ml/L.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: NaOH
   concentration:
     value: variable
     unit: VARIABLE
+  source: ATCC Medium 1108 via TOGO M2176
+  notes: ATCC Medium 1108 adjusts to pH 6.5 with NaOH but does not state a final NaOH
+    amount.
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
   mediaingredientmech_chebi_term:
     id: CHEBI:32145
     label: sodium hydroxide
@@ -64,9 +86,12 @@ media_term:
   term:
     id: TOGO:M2176
     label: Renibacterium KDM-2 medium
-notes: 'Source: https://togomedium.org/medium/M2176
-
-  Original URL: https://www.atcc.org/~/media/C5DA8BD389F44EC19C8D094B271B63B2.ashx'
+notes: TOGO M2176 imports ATCC Medium 1108 as Renibacterium KDM-2 medium. ATCC 1108
+  lists 1.0% w/v peptone, 0.05% w/v yeast extract, 0.1% w/v L-Cysteine . HCl, 1.5%
+  w/v agar, and 20.0% fetal bovine serum. The ATCC preparation dissolves peptone,
+  yeast extract, and cysteine in 80% final-volume distilled water, adjusts to pH 6.5
+  with NaOH, adds agar with heat, autoclaves for 15 minutes at 121 C, cools to 45
+  C, and adds serum at 45 C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -105,3 +130,48 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2176_score15.py
+  action: RESOLVED_TOGO_M2176_SCORE15
+  source: https://togomedium.org/medium/M2176; https://www.atcc.org/~/media/C5DA8BD389F44EC19C8D094B271B63B2.ashx
+  notes: TOGO M2176 imports ATCC Medium 1108 as Renibacterium KDM-2 medium. ATCC 1108
+    lists 1.0% w/v peptone, 0.05% w/v yeast extract, 0.1% w/v L-Cysteine . HCl, 1.5%
+    w/v agar, and 20.0% fetal bovine serum. The ATCC preparation dissolves peptone,
+    yeast extract, and cysteine in 80% final-volume distilled water, adjusts to pH
+    6.5 with NaOH, adds agar with heat, autoclaves for 15 minutes at 121 C, cools
+    to 45 C, and adds serum at 45 C. Corrected the imported percent/water units, added
+    the ATCC pH and autoclave steps, and marked the ATCC formula as curated.
+ph_value: 6.5
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve peptone, yeast extract, and L-Cysteine . HCl in distilled
+    water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust to pH 6.5 with NaOH.
+- step_number: 3
+  action: HEAT
+  description: Add agar and dissolve by heating.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 minutes.
+- step_number: 5
+  action: COOL
+  description: Cool to 45 C.
+- step_number: 6
+  action: MIX
+  description: Add fetal bovine serum at 45 C.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 minutes
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2176
+- reference: https://www.atcc.org/~/media/C5DA8BD389F44EC19C8D094B271B63B2.ashx

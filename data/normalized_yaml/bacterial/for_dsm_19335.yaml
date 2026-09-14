@@ -5,6 +5,9 @@ category: bacterial
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 504.6
   term:
@@ -291,6 +294,13 @@ curation_history:
     @ 1 ml/l. Each moved component matched the MediaDive stock by name AND value;
     bulk ingredients sharing a name were left in place (#150).'
   changes: Nested 5 ingredient(s) under 2 solution(s); ingredients 29 -> 24
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_dsmz_504_swm_score15.py
+  action: RESOLVED_DSMZ_KOMODO_504_SWM_SCORE15
+  changes: Resolved DSMZ/KOMODO Medium 504 SWM strain-variant metadata
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=504.6
+  notes: KOMODO Medium 504.6 records the DSMZ Medium 504 DSM 19335 variant with maltose
+    and yeast extract substrates.
 solutions:
 - preferred_term: Trace element solution SL-10
   composition:
@@ -304,20 +314,11 @@ solutions:
     mediaingredientmech_chebi_term:
       id: CHEBI:86249
       label: iron dichloride tetrahydrate
-  concentration_candidates:
-  - value: '1'
+  preparation_notes: DSMZ Medium 504 adds 1 mL/L Trace element solution SL-10 for
+    its SWM base formulation.
+  concentration:
+    value: '1'
     unit: ML_PER_L
-    basis: CROSS_MEDIUM_INFERENCE
-    support: This record is a variant of medium 504 (KOMODO key '504.6'); volume read
-      from base medium 504 ('ANAEROBIC SEAWATER (SWM) MEDIUM').
-    counterevidence: 'The variant''s own recipe was never read — only base medium
-      504''s — so the modification may change this volume. A stock''s addition volume
-      varies by citing medium: MediaDive medium 142 adds ''Trace element solution
-      (Vishniac & Santer)'' at 0.2 ml and medium 69 adds the same stock at 5 ml.'
-    proposed_by: apply_cocktail_nesting.py
-  preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
-    asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
-    (#150).'
 - preferred_term: Seven vitamins solution
   composition:
   - preferred_term: Vitamin B12
@@ -360,17 +361,38 @@ solutions:
     mediaingredientmech_chebi_term:
       id: CHEBI:132751
       label: thiamine hydrochloride dihydrate
-  concentration_candidates:
-  - value: '1'
+  preparation_notes: DSMZ Medium 504 adds 1 mL/L Seven vitamins solution to the SWM
+    base formulation.
+  concentration:
+    value: '1'
     unit: ML_PER_L
-    basis: CROSS_MEDIUM_INFERENCE
-    support: This record is a variant of medium 504 (KOMODO key '504.6'); volume read
-      from base medium 504 ('ANAEROBIC SEAWATER (SWM) MEDIUM').
-    counterevidence: 'The variant''s own recipe was never read — only base medium
-      504''s — so the modification may change this volume. A stock''s addition volume
-      varies by citing medium: MediaDive medium 142 adds ''Trace element solution
-      (Vishniac & Santer)'' at 0.2 ml and medium 69 adds the same stock at 5 ml.'
-    proposed_by: apply_cocktail_nesting.py
-  preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
-    asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
-    (#150).'
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: KOMODO Medium 504.6 sparges Solution A with an 80% N2 and 20% CO2 gas
+    mixture, distributes it under the same gas atmosphere, and autoclaves it; Solution
+    B is autoclaved separately under 80% N2 and 20% CO2, and Solution E is autoclaved
+    under 100% N2.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: KOMODO Medium 504.6 prepares Solutions C and D under 100% N2 and sterilizes
+    them by filtration before adding Solutions B to E to sterile Solution A in sequence.
+- step_number: 3
+  action: ADJUST_PH
+  description: KOMODO Medium 504.6 adjusts the complete medium to pH 7.2-7.4 if necessary.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=504.6
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium504.pdf
+- reference: https://mediadive.dsmz.de/rest/medium/504
+parent_media:
+  path: data/normalized_yaml/specialized/anaerobic_seawater_swm_medium.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:015356
+  name: anaerobic_seawater_swm_medium
+  notes: DSMZ Medium 504 is the official ANAEROBIC SEAWATER (SWM) base formulation.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
+variant_modifications:
+- Uses 2.5 g/L maltose and 2.0 g/L yeast extract for DSM 19335.

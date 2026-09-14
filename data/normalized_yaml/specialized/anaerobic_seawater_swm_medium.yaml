@@ -252,21 +252,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
     label: sodium tungstate dihydrate
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 – 45 min
-    to make it anoxic, distribute under the same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Solution B is autoclaved separately under
-    80% N2 and 20% CO2 gas atmosphere. Solutions C and D are prepared under 100% N2
-    gas and sterilized by filtration. Solution E is autoclaved under 100% N2 gas.
-    To complete the medium appropriate amounts of solutions B to E are added to the
-    sterile solution A in the sequence as indicated. Adjust the pH of the complete
-    medium to 7.2  – 7.4, if necessary.
-- step_number: 2
-  action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -309,6 +294,13 @@ curation_history:
     @ 1 ml/l. Each moved component matched the MediaDive stock by name AND value;
     bulk ingredients sharing a name were left in place (#150).'
   changes: Nested 5 ingredient(s) under 2 solution(s); ingredients 29 -> 24
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_dsmz_504_swm_score15.py
+  action: RESOLVED_DSMZ_KOMODO_504_SWM_SCORE15
+  changes: Resolved DSMZ/KOMODO Medium 504 SWM strain-variant metadata
+  source: https://mediadive.dsmz.de/rest/medium/504
+  notes: MediaDive and DSMZ Medium 504 define ANAEROBIC SEAWATER (SWM) MEDIUM as a
+    modified DSMZ Medium 503 formulation with 20 g/L NaCl and 3 g/L MgCl2 x 6 H2O.
 solutions:
 - preferred_term: Trace element solution SL-10
   composition:
@@ -374,3 +366,59 @@ solutions:
     unit: ML_PER_L
   preparation_notes: Stock prepared in 1000 ml; added at 1 ml per litre of medium.
     Composition and volume from MediaDive (#150).
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: DSMZ Medium 504 sparges Solution A with an 80% N2 and 20% CO2 gas mixture,
+    distributes it under the same gas atmosphere, and autoclaves it; Solution B is
+    autoclaved separately under 80% N2 and 20% CO2, and Solution E is autoclaved under
+    100% N2.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: DSMZ Medium 504 prepares Solutions C and D under 100% N2 and sterilizes
+    them by filtration before adding Solutions B to E to sterile Solution A in sequence.
+- step_number: 3
+  action: ADJUST_PH
+  description: DSMZ Medium 504 adjusts the complete medium to pH 7.2-7.4 if necessary.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/504
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium504.pdf
+variant_children:
+- path: data/normalized_yaml/bacterial/swm_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005693
+  name: swm_medium
+  notes: KOMODO Medium 504 is a source-catalogue duplicate of DSMZ Medium 504.
+- path: data/normalized_yaml/bacterial/for_dsm_5848.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005687
+  name: for_dsm_5848
+  notes: KOMODO Medium 504.1 applies DSMZ Medium 504 to DSM 5848.
+- path: data/normalized_yaml/bacterial/for_dsm_6233.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005688
+  name: for_dsm_6233
+  notes: KOMODO Medium 504.2 applies DSMZ Medium 504 to DSM 6233.
+- path: data/normalized_yaml/bacterial/for_dsm_9705.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005689
+  name: for_dsm_9705
+  notes: KOMODO Medium 504.3 applies DSMZ Medium 504 to DSM 9705.
+- path: data/normalized_yaml/bacterial/for_dsm_12881.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005690
+  name: for_dsm_12881
+  notes: KOMODO Medium 504.4 applies DSMZ Medium 504 to DSM 12881.
+- path: data/normalized_yaml/bacterial/for_dsm_13687.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005691
+  name: for_dsm_13687
+  notes: KOMODO Medium 504.5 applies DSMZ Medium 504 to DSM 13687.
+- path: data/normalized_yaml/bacterial/for_dsm_19335.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005692
+  name: for_dsm_19335
+  notes: KOMODO Medium 504.6 applies DSMZ Medium 504 to DSM 19335.

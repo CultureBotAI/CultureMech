@@ -5,82 +5,121 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_range:
+  min: 5.8
+  max: 6.2
 ingredients:
-- preferred_term: Basal Medium
-  concentration:
-    value: '500'
-    unit: G_PER_L
 - preferred_term: DI Water
   concentration:
-    value: '805.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component [Merged 3 duplicates: 500.0, 205.0, 100.0]'
+    value: '705.0'
+    unit: ML_PER_L
+  source: TOGO M2179 / ATCC Medium 2616
+  notes: TOGO M2179 / ATCC Medium 2616 lists 500 ml/L DI Water in the basal medium
+    and 205 ml/L DI Water in the additive solution.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M2179 / ATCC Medium 2616
+  notes: TOGO M2179 / ATCC Medium 2616 lists 15 g/L Agar if desired.
   term:
     id: CHEBI:2509
     label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 - preferred_term: PPLO Broth w/o Crystal Violet (BD 255420)
   concentration:
     value: '3.5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  source: TOGO M2179 / ATCC Medium 2616
+  notes: TOGO M2179 / ATCC Medium 2616 lists 3.5 g/L PPLO Broth w/o Crystal Violet
+    from BD catalog 255420; this commercial broth is retained as an opaque complex
+    component.
 - preferred_term: Pancreatic Digest of Casein (Hardy C6530)
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
+  source: TOGO M2179 / ATCC Medium 2616
+  notes: TOGO M2179 / ATCC Medium 2616 lists 10.0 g/L pancreatic digest of casein
+    from Hardy catalog C6530; the vendor digest is retained as an opaque complex component.
 - preferred_term: Pancreatic Digest of Gelatin (Hardy C6540)
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
+  source: TOGO M2179 / ATCC Medium 2616
+  notes: TOGO M2179 / ATCC Medium 2616 lists 5.0 g/L pancreatic digest of gelatin
+    from Hardy catalog C6540; the vendor digest is retained as an opaque complex component.
 - preferred_term: 10X CMRL 1066 Medium (ATCC 20-2207)
   concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Complex component'
+    value: '50.0'
+    unit: ML_PER_L
+  source: TOGO M2179 / ATCC Medium 2616
+  notes: TOGO M2179 / ATCC Medium 2616 lists 50 ml/L 10X CMRL 1066 Medium from ATCC
+    20-2207; this 10x tissue-culture supplement is retained as an opaque complex component.
 - preferred_term: Urea (Sigma U5218)
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-- preferred_term: Fetal Bovine Serum
-  concentration:
-    value: '170'
-    unit: G_PER_L
-- preferred_term: Yeast Extract (Hardy C7340)
-  concentration:
-    value: '15'
-    unit: G_PER_L
+  source: TOGO M2179 / ATCC Medium 2616
+  notes: TOGO M2179 / ATCC Medium 2616 lists 1.0 g/L urea from Sigma U5218.
+  term:
+    id: CHEBI:16199
+    label: urea
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16199
+    label: urea
 - preferred_term: Fetal Bovine Serum (ATCC 30-2020)
-  notes: 'Role: Nutrient source; Properties: Undefined component'
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: 0.1 N NaOH
-  concentration:
-    value: '99.9'
-    unit: PERCENT_W_V
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: Phenol Red powder
-  concentration:
-    value: '0.1'
-    unit: PERCENT_W_V
-  notes: 'Role: pH indicator; Properties: Defined component, Organic compound, Simple
-    component'
+    value: '170.0'
+    unit: ML_PER_L
+  source: TOGO M2179 / ATCC Medium 2616
+  notes: TOGO M2179 / ATCC Medium 2616 lists 170 ml/L heat-inactivated fetal bovine
+    serum from ATCC 30-2020; this serum is retained as an opaque complex component.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix PPLO Broth w/o Crystal Violet, pancreatic digests of casein and
+    gelatin, optional agar, and DI Water as the basal medium.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust the basal medium to pH 7.4 +/- 0.2.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave the basal medium at 121 C and, if agar is used, cool it to
+    50-55 C in a water bath.
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Combine the additive solution and filter-sterilize it through a 0.22
+    micrometer filter.
+- step_number: 5
+  action: MIX
+  description: Aseptically add the filter-sterilized additive solution to the basal
+    medium.
+- step_number: 6
+  action: ADJUST_PH
+  description: Confirm a final complete-medium pH of 6.0 +/- 0.2 at 25 C.
 media_term:
   preferred_term: TOGO Medium M2179
   term:
     id: TOGO:M2179
     label: Ureaplasma Medium – Special Modified Formulation
-notes: 'Source: https://togomedium.org/medium/M2179
-
-  Original URL: https://www.atcc.org/~/media/C3316A232AD148D5B8FEA1E36C930A1C.ashx'
+notes: TOGO M2179 cites ATCC Medium 2616 Ureaplasma Medium - Special Modified Formulation.
+  ATCC Medium 2616 lists a 500 ml basal recipe with PPLO Broth w/o Crystal Violet,
+  pancreatic digests of casein and gelatin, optional agar, and DI Water, adjusts the
+  basal pH to 7.4 +/- 0.2, and autoclaves it at 121 C. The source then prepares a
+  500 ml additive solution from CMRL 1066, Yeast Extract Solution, 10% TC Yeastolate,
+  heat-inactivated fetal bovine serum, 0.1% Phenol Red Solution, urea, and DI Water;
+  filter-sterilizes the additive; combines it with the basal medium; and records a
+  final pH of 6.0 +/- 0.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -132,30 +171,136 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2179_ureaplasma_special_score15.py
+  action: RESOLVED_TOGO_M2179_UREAPLASMA_SPECIAL_SCORE15
+  source: https://togomedium.org/medium/M2179; https://www.atcc.org/~/media/C3316A232AD148D5B8FEA1E36C930A1C.ashx
+  notes: TOGO M2179 cites ATCC Medium 2616 Ureaplasma Medium - Special Modified Formulation.
+    ATCC Medium 2616 lists a 500 ml basal recipe with PPLO Broth w/o Crystal Violet,
+    pancreatic digests of casein and gelatin, optional agar, and DI Water, adjusts
+    the basal pH to 7.4 +/- 0.2, and autoclaves it at 121 C. The source then prepares
+    a 500 ml additive solution from CMRL 1066, Yeast Extract Solution, 10% TC Yeastolate,
+    heat-inactivated fetal bovine serum, 0.1% Phenol Red Solution, urea, and DI Water;
+    filter-sterilizes the additive; combines it with the basal medium; and records
+    a final pH of 6.0 +/- 0.2. Corrected imported milliliter quantities, split the
+    ATCC stock recipes out of the flattened ingredient list, and added ATCC pH and
+    sterilization instructions.
 solutions:
-- preferred_term: Additive Solution
-  composition: []
-  concentration:
-    value: '500'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: TC Yeastolate 10% solution (BD 255772)
-  composition: []
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-  name: Unknown solution
 - preferred_term: Yeast Extract Solution
-  composition: []
   concentration:
-    value: '35'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Phenol Red Solution
-  composition: []
+    value: '35.0'
+    unit: ML_PER_L
+  source: TOGO M2179 / ATCC Medium 2616
+  notes: TOGO M2179 / ATCC Medium 2616 lists 35 ml/L Yeast Extract Solution.
+  preparation_notes: Dissolve Hardy C7340 yeast extract in DI Water to 15% w/v with
+    constant stirring, then filter once through a crepe fluted filter.
+  composition:
+  - preferred_term: Yeast Extract (Hardy C7340)
+    concentration:
+      value: '15.0'
+      unit: PERCENT_W_V
+    source: TOGO M2179 / ATCC Medium 2616
+    notes: TOGO M2179 / ATCC Medium 2616 identifies Yeast Extract Solution as containing
+      15.0 % w/v Yeast Extract (Hardy C7340).
+    term:
+      id: FOODON:03315426
+      label: yeast extract
+  - preferred_term: DI Water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    source: TOGO M2179 / ATCC Medium 2616
+    notes: TOGO M2179 / ATCC Medium 2616 identifies Yeast Extract Solution as containing
+      1000.0 ml/L DI Water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: TC Yeastolate 10% solution (BD 255772)
   concentration:
-    value: '20'
-    unit: G_PER_L
-  name: Unknown solution
-kg_microbe_match: mediadive.medium:12
+    value: '20.0'
+    unit: ML_PER_L
+  source: TOGO M2179 / ATCC Medium 2616
+  notes: TOGO M2179 / ATCC Medium 2616 lists 20 ml/L 10% TC Yeastolate solution from
+    BD 255772.
+  preparation_notes: Dissolve TC Yeastolate in DI Water to 10% w/v with constant stirring,
+    then filter once through a crepe fluted filter.
+  composition:
+  - preferred_term: TC Yeastolate (BD 255772)
+    concentration:
+      value: '10.0'
+      unit: PERCENT_W_V
+    source: TOGO M2179 / ATCC Medium 2616
+    notes: TOGO M2179 / ATCC Medium 2616 identifies TC Yeastolate 10% solution (BD
+      255772) as containing 10.0 % w/v TC Yeastolate (BD 255772).
+  - preferred_term: DI Water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    source: TOGO M2179 / ATCC Medium 2616
+    notes: TOGO M2179 / ATCC Medium 2616 identifies TC Yeastolate 10% solution (BD
+      255772) as containing 1000.0 ml/L DI Water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: 0.1% Phenol Red Solution
+  concentration:
+    value: '20.0'
+    unit: ML_PER_L
+  source: TOGO M2179 / ATCC Medium 2616
+  notes: TOGO M2179 / ATCC Medium 2616 lists 20 ml/L 0.1% Phenol Red Solution.
+  preparation_notes: Add Phenol Red powder to 0.1 N NaOH to dissolve, then add DI
+    Water to volume; if needed, add 6 N NaOH dropwise until the phenol red dissolves.
+  composition:
+  - preferred_term: Phenol Red
+    concentration:
+      value: '0.1'
+      unit: PERCENT_W_V
+    source: TOGO M2179 / ATCC Medium 2616
+    notes: TOGO M2179 / ATCC Medium 2616 identifies 0.1% Phenol Red Solution as containing
+      0.1 % w/v Phenol Red.
+    term:
+      id: CHEBI:31991
+      label: phenol red
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31991
+      label: phenol red
+  - preferred_term: 0.1 N NaOH
+    concentration:
+      value: '200.0'
+      unit: ML_PER_L
+    source: TOGO M2179 / ATCC Medium 2616
+    notes: TOGO M2179 / ATCC Medium 2616 identifies 0.1% Phenol Red Solution as containing
+      200.0 ml/L 0.1 N NaOH.
+  - preferred_term: DI Water
+    concentration:
+      value: '800.0'
+      unit: ML_PER_L
+    source: TOGO M2179 / ATCC Medium 2616
+    notes: TOGO M2179 / ATCC Medium 2616 identifies 0.1% Phenol Red Solution as containing
+      800.0 ml/L DI Water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  notes: Autoclave the basal medium before adding the separately filter-sterilized
+    additive solution.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2179
+- reference: https://www.atcc.org/~/media/C3316A232AD148D5B8FEA1E36C930A1C.ashx

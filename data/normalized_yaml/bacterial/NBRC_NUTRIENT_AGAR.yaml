@@ -6,25 +6,57 @@ description: Nutrient Agar. NBRC No. 1.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: NBRC Medium 1
+  term:
+    id: nbrc.medium:1
+    label: NBRC Medium 1
+notes: NBRC No. 1 imported Nutrient Agar as 3.0 g/L beef extract, 5.0 g/L peptone,
+  and 15.0 g/L agar; live JCM Medium 74 confirms the same per-liter formulation with
+  distilled water.
 ingredients:
 - preferred_term: Beef extract
   concentration:
     value: '3.0'
     unit: G_PER_L
+  source: NBRC No. 1 import, cross-checked against JCM Medium 74
+  notes: NBRC No. 1 and JCM Medium 74 list 3.0 g/L beef extract.
+  term:
+    id: FOODON:03302088
+    label: beef extract
 - preferred_term: Peptone
   concentration:
     value: '5.0'
     unit: G_PER_L
+  source: NBRC No. 1 import, cross-checked against JCM Medium 74
+  notes: NBRC No. 1 and JCM Medium 74 list 5.0 g/L peptone.
+  term:
+    id: MICRO:0000178
+    label: peptone
 - preferred_term: Agar
   concentration:
     value: '15.0'
     unit: G_PER_L
+  source: NBRC No. 1 import, cross-checked against JCM Medium 74
+  notes: NBRC No. 1 and JCM Medium 74 list 15.0 g/L agar.
   term:
     id: CHEBI:2509
     label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: NBRC No. 1 import, cross-checked against JCM Medium 74
+  notes: NBRC No. 1 and JCM Medium 74 list 1.0 L distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -60,7 +92,13 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-notes: General purpose medium for bacteria
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_nbrc_nutrient_agar_score25.py
+  action: RESOLVED_NBRC_NUTRIENT_AGAR_SCORE25
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=74
+  notes: NBRC No. 1 imported Nutrient Agar as 3.0 g/L beef extract, 5.0 g/L peptone,
+    and 15.0 g/L agar; live JCM Medium 74 confirms the same per-liter formulation
+    with distilled water.
 kg_microbe_match: mediadive.medium:12
 parent_media:
   path: data/normalized_yaml/bacterial/JCM_J74_NUTRIENT_AGAR.yaml
@@ -75,3 +113,8 @@ variant_modifications:
 - Reviewed JCM/NBRC Nutrient Agar records; both parsed formulations contain beef extract
   3 g/L, peptone 5 g/L, and agar 15 g/L, with the JCM parent carrying pH 7.0 and the
   NBRC record not specifying pH.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=74

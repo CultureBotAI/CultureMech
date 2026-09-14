@@ -10,36 +10,30 @@ media_term:
   term:
     id: mediadive.medium:J1232
     label: VIBRIO SEAWATER MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1232'
+notes: JCM Medium 1232 prepares Vibrio Seawater Medium from 10.0 ml Concentrated Vibrio
+  suspension and 100.0 ml autoclaved seawater.
 ingredients:
-- preferred_term: Sea water
+- preferred_term: Seawater (autoclaved)
   concentration:
-    value: '100'
-    unit: G_PER_L
+    value: variable
+    unit: VARIABLE
+  source: JCM Medium 1232
+  notes: JCM Medium 1232 combines 100.0 ml autoclaved seawater with 10.0 ml Concentrated
+    Vibrio suspension.
+  term:
+    id: ENVO:00002149
+    label: sea water
 preparation_steps:
 - step_number: 1
-  action: MIX
-  description: Aseptically combine. Cultivate with shaking (150 - 200 rpm) for 16
-    - 24 hr. Separate from the prey bacteria physically (e.g., centrifugation), if
-    necessary.
-- step_number: 2
-  action: DISSOLVE
-  description: Cultivate <I>Vibrio alginolyticus</I> JCM 32963 (or any <I>Vibrio</I>
-    strain that can be served as prey bacteria) in 100 ml Marine Broth 2216 (Medium
-    No. 41) with shaking at 150 - 200 rpm for 24 hr. Aseptically centrifuge the culture
-    at 8,000 x g for 5 min. Remove the supernatant and suspend precipitated cells
-    in 10 ml sterile seawater (pH 7.6 - 8.0). The cell suspension can be preserved
-    at 4C for a couple of days.
-- step_number: 3
   action: AUTOCLAVE
-  description: 'Comment: For cultivation on solid media, the double-layer agar technique
-    can be used. Typically, pour autoclaved seawater containing 1.5% agar (cool to
-    50 - 60C) to 9 cm petri dishes (15.0 ml per dish) and allow to solidify (bottom
-    agar medium). Autoclave seawater containing 0.7% agar, cool to 60 - 65C and distribute
-    10 ml each of the molten agar solution into tubes kept at 50C (top agar medium).
-    Then, add 1 ml of inoculum (bacterial cell suspension) and 1 ml of the concentrated
-    <I>Vibrio</I> suspension to the top agar medium. Quickly mix the top agar medium
-    and pour onto the bottom agar medium.'
+  description: Autoclave seawater at 121 C for 15 min.
+- step_number: 2
+  action: MIX
+  description: Aseptically combine 10.0 ml Concentrated Vibrio suspension with 100.0
+    ml autoclaved seawater.
+- step_number: 3
+  action: MIX
+  description: Cultivate with shaking at 150-200 rpm for 16-24 hr.
 applications:
 - Microbial cultivation
 curation_history:
@@ -56,3 +50,30 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "VIBRIO SEAWATER MEDIUM" to "vibrio_seawater_medium"
     for consistent matching
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_vibrio_seawater_score40.py
+  action: RESOLVED_JCM_VIBRIO_SEAWATER_SCORE40_GRAPH
+  changes: Resolved score-40 JCM Vibrio Seawater Medium recipe graph
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1232
+  notes: JCM Medium 1232 prepares Vibrio Seawater Medium from 10.0 ml Concentrated
+    Vibrio suspension and 100.0 ml autoclaved seawater; the suspension is prey Vibrio
+    cells grown in Marine Broth 2216, centrifuged, and resuspended in sterile seawater.
+solutions:
+- preferred_term: Concentrated Vibrio suspension
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: JCM Medium 1232 combines 10.0 ml Concentrated Vibrio suspension with 100.0
+    ml autoclaved seawater.
+  preparation_notes: Cultivate Vibrio alginolyticus JCM 32963, or another prey Vibrio
+    strain, in 100 ml Marine Broth 2216 with shaking at 150-200 rpm for 24 hr. Aseptically
+    centrifuge the culture at 8,000 x g for 5 min, remove the supernatant, and suspend
+    precipitated cells in 10 ml sterile seawater at pH 7.6-8.0.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1232

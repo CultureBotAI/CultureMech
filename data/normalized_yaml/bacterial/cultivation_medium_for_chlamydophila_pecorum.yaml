@@ -10,46 +10,51 @@ media_term:
   term:
     id: mediadive.medium:1503
     label: CULTIVATION MEDIUM FOR CHLAMYDOPHILA PECORUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1503.pdf'
+notes: DSMZ Medium 1503 prepares a 50.5 ml CACO-2 cell-culture medium from 45.0 ml
+  MEM, 5.0 ml fetal bovine serum, and 0.5 ml 100x amino-acid stock, then filter-sterilizes
+  it before Chlamydophila pecorum cultivation at 37 C plus 5% CO2.
 ingredients:
 - preferred_term: MEM-Medium
   concentration:
-    value: '45'
-    unit: G_PER_L
+    value: '891.089109'
+    unit: ML_PER_L
+  source: DSMZ Medium 1503
+  notes: DSMZ Medium 1503 lists 45.0 ml MEM-Medium in a 50.5 ml CACO-2 cell-culture
+    medium batch.
+  term:
+    id: mediadive.compound:1377
+    label: MEM-Medium
 - preferred_term: Fetal bovine serum
   concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Aminoacids
+    value: '99.009901'
+    unit: ML_PER_L
+  source: DSMZ Medium 1503
+  notes: DSMZ Medium 1503 lists 5.0 ml fetal bovine serum in a 50.5 ml CACO-2 cell-culture
+    medium batch.
+  term:
+    id: mediadive.compound:954
+    label: Fetal bovine serum
+- preferred_term: Aminoacids (100 x)
   concentration:
-    value: '0.5'
-    unit: G_PER_L
+    value: '9.90099'
+    unit: ML_PER_L
+  source: DSMZ Medium 1503
+  notes: DSMZ Medium 1503 lists 0.5 ml 100x amino-acid stock in a 50.5 ml CACO-2 cell-culture
+    medium batch.
+  term:
+    id: mediadive.compound:1070
+    label: Aminoacids
+  chebi_term:
+    id: CHEBI:33709
+    label: amino acid
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Cultivation of CACO-2 cells (ACC 169)
+  description: Combine 45.0 ml MEM-Medium, 5.0 ml fetal bovine serum, and 0.5 ml 100x
+    amino acids.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Filter-sterilize (0.2 µm) and keep no longer than 4 weeks. Store at
-    room temperature to facilitate detection of contamination.
-- step_number: 3
-  action: HEAT
-  description: Prepare a 25 cm2 flask and seed cells according to standard protocols
-    (see DSMZ catalogue for ACC 169). Incubate at 37°C plus 5% CO2. When a confluent
-    layer has formed, infection can be carried out.
-- step_number: 4
-  action: HEAT
-  description: Exchange medium with 6 ml of Infection Medium (as above with the addition
-    of 1 µg/ml cycloheximide (final concentration)) and add 500 - 1000 µl of EB stock
-    solution (thawed quickly to 37°C).
-- step_number: 5
-  action: HEAT
-  description: Centrifuge for 1 h onto the cell layer at 1600 rpm at 20°C.
-- step_number: 6
-  action: HEAT
-  description: Incubate at 37°C + 5% CO2. Control cells daily and look for inclusions.
-    Not all Chlamydiae form well-visible inclusions, ultimately, immunofluorescence
-    or in situ-hybridization techniques are necessary to visualize inclusions.
+  description: Filter sterilize through a 0.2 um membrane.
 applications:
 - Microbial cultivation
 curation_history:
@@ -66,3 +71,19 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CULTIVATION MEDIUM FOR CHLAMYDOPHILA PECORUM" to "cultivation_medium_for_chlamydophila_pecorum"
     for consistent matching
+- timestamp: '2026-09-09T00:00:00-07:00'
+  curator: repair_dsmz_host_cell_score25.py
+  action: RESOLVED_DSMZ_HOST_CELL_SCORE25_GRAPH
+  changes: Resolved DSMZ Medium 1503 host-cell recipe
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1503.pdf
+  notes: DSMZ Medium 1503 prepares a 50.5 ml CACO-2 cell-culture medium from 45.0
+    ml MEM, 5.0 ml fetal bovine serum, and 0.5 ml 100x amino-acid stock, then filter-sterilizes
+    it before Chlamydophila pecorum cultivation at 37 C plus 5% CO2.
+temperature_value: 37.0
+sterilization:
+  method: FILTER
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1503.pdf

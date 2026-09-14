@@ -11,15 +11,20 @@ media_term:
   term:
     id: mediadive.medium:942
     label: AGAR WITH E. COLI AS FEED
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium942.pdf'
+notes: DSMZ Medium 942 is a CaCl2-agar plate recipe overlaid with autoclaved Escherichia
+  coli feed suspension lines/drops for myxobacteria; DSMZ specifies three separate
+  drops of a thick ready-to-pipet suspension and does not fix an Escherichia coli
+  concentration.
 ingredients:
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
+  source: DSMZ Medium 942
+  notes: DSMZ Medium 942 lists 1.0 g/L CaCl2 x 2 H2O.
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -28,20 +33,45 @@ ingredients:
     id: CHEBI:2509
     label: agar
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
+  source: DSMZ Medium 942
+  notes: DSMZ Medium 942 lists 15.0 g/L Agar.
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Mix 1.0 g/L CaCl2 x 2 H2O with 15.0 g/L agar to prepare the CaCl2-agar
+    base.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust the CaCl2-agar base to pH 7.2.
+- step_number: 3
   action: AUTOCLAVE
-  description: Adjust pH to 7.2, autoclave and pour plates. Grow Escherichia coli
-    (e.g. DSM 498) in liquid culture, collect cells by centrifugation and resuspend
-    them in enough water to receive a thick but ready-to-pipet suspension. Autoclave.
-    Place three separate drops on one CaCl2-agar plate and streak every drop once
-    to receive E. coli lines, about 3 cm long, across the E. coli drops. Inoculate
-    E. coli lines/drops with myxobacteria.
+  description: Autoclave the CaCl2-agar base.
+- step_number: 4
+  action: POUR_PLATES
+  description: Pour the autoclaved CaCl2-agar base into plates.
+- step_number: 5
+  action: MIX
+  description: Grow Escherichia coli in liquid culture, collect the cells by centrifugation,
+    and resuspend the pellet in enough water to produce a thick but ready-to-pipet
+    feed suspension.
+- step_number: 6
+  action: AUTOCLAVE
+  description: Autoclave the Escherichia coli feed suspension separately.
+- step_number: 7
+  action: MIX
+  description: Place three separate feed-suspension drops on each CaCl2-agar plate,
+    streak each drop once into an approximately 3 cm line, and inoculate the Escherichia
+    coli lines/drops with myxobacteria.
+sterilization:
+  method: AUTOCLAVE
+  notes: CaCl2-agar plates and Escherichia coli feed suspension are autoclaved separately.
 applications:
 - Microbial cultivation
 curation_history:
@@ -68,4 +98,16 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-kg_microbe_match: mediadive.medium:49
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_dsmz_942_e_coli_feed_score15.py
+  action: RESOLVED_DSMZ_942_E_COLI_FEED
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium942.pdf
+  notes: Verified DSMZ Medium 942 as a two-component CaCl2-agar plate recipe with
+    an unquantified autoclaved Escherichia coli feed suspension, marked the simple
+    composition as curated, added structured preparation and sterilization steps,
+    and removed a stale KG-Microbe match to DSMZ Medium 49.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium942.pdf

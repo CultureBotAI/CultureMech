@@ -420,12 +420,38 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-parent_media:
-  path: data/normalized_yaml/bacterial/mb_medium.yaml
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_924_methanocalculus_score10.py
+  action: RESOLVED_KOMODO_924_METHANOCALCULUS_TOPOLOGY
+  changes: Re-rooted KOMODO Medium 924 Methanocalculus exact topology
+  source: DSMZ Medium 924; KOMODO Medium 924, 924.1-924.4
+  notes: Moved exact KOMODO Medium 924 plus its DSM-specific wrappers under DSMZ Medium
+    924; left DSMZ 924a and 924b out because their signatures differ.
+variant_children:
+- path: data/normalized_yaml/bacterial/mb_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006834
   name: mb_medium
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+  notes: KOMODO Medium 924 has the same 37-ingredient signature as DSMZ Medium 924.
+- path: data/normalized_yaml/bacterial/for_dsm_14661.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006830
+  name: for_dsm_14661
+  notes: KOMODO Medium 924.1 applies MB medium to DSM 14661.
+- path: data/normalized_yaml/bacterial/for_dsm_14539_dsm_14646_and_dsm_14648.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006831
+  name: for_dsm_14539_dsm_14646_and_dsm_14648
+  notes: KOMODO Medium 924.2 applies MB medium to DSM 14539, DSM 14646 and DSM 14648.
+- path: data/normalized_yaml/bacterial/for_dsm_14663_and_dsm_15483.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006832
+  name: for_dsm_14663_and_dsm_15483
+  notes: KOMODO Medium 924.3 applies MB medium to DSM 14663 and DSM 15483.
+- path: data/normalized_yaml/bacterial/for_dsm_14888.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006833
+  name: for_dsm_14888
+  notes: KOMODO Medium 924.4 applies MB medium to DSM 14888.
+data_quality_flags:
+- ingredients_curated

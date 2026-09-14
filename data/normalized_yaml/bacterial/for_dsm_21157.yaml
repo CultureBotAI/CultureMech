@@ -393,15 +393,23 @@ curation_history:
     duplicate values written by cleanup_media_quality.py. Every merged part was the
     same value, so the pre-merge value is unambiguous and no source lookup was needed.
     Rows whose merged parts differ were left untouched.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_829_desulfurobacterium_ph_score10.py
+  action: RESOLVED_KOMODO_829_DESULFUROBACTERIUM_STRAIN_VARIANT
+  changes: Linked as a Desulfurobacterium strain-specific variant
+  source: KOMODO Medium 829.3
+  notes: KOMODO Medium 829.3 preserves DESULFUROBACTERIUM MEDIUM components and pH
+    6 but applies the recipe for DSM 21157.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_829_DESULFUROBACTERIUM_MEDIUM.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006564
   name: desulfurobacterium_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 829 is the pH 6 DESULFUROBACTERIUM MEDIUM base.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 829.3 preserves DESULFUROBACTERIUM MEDIUM components and pH 6 but
+  applies the recipe for DSM 21157.
 solutions:
 - preferred_term: Trace element solution SL-10
   composition:
@@ -485,3 +493,5 @@ solutions:
   preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
     asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
     (#150).'
+data_quality_flags:
+- ingredients_curated

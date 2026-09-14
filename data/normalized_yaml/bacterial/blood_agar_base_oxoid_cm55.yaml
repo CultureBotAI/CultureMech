@@ -81,3 +81,25 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_617a_blood_agar_score10.py
+  action: RESOLVED_KOMODO_617A_BLOOD_AGAR_TOPOLOGY
+  changes: Re-rooted KOMODO Medium 617a blood agar topology
+  source: DSMZ Medium 617a; KOMODO Medium 617a and 617a.1
+  notes: Moved exact KOMODO Medium 617a plus its DSM 7232 wrapper under DSMZ Medium
+    617a.
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_617a_BLOOD_AGAR_BASE_OXOID_CM55.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006111
+  name: KOMODO_617a_BLOOD_AGAR_BASE_OXOID_CM55
+  notes: KOMODO Medium 617a has the same 5-ingredient signature as DSMZ Medium 617a
+    after correcting the stale DSMZ 617 NaCl concentration.
+- path: data/normalized_yaml/bacterial/for_dsm_7232.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006110
+  name: for_dsm_7232
+  notes: KOMODO Medium 617a.1 applies DSMZ Medium 617a to DSM 7232 after correcting
+    the stale DSMZ 617 NaCl concentration.
+data_quality_flags:
+- ingredients_curated

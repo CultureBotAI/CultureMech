@@ -5,34 +5,75 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 8.5
 ingredients:
+- preferred_term: Bacto Tryptic Soy Broth
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  source: TOGO M1678 / NBRC Medium 883
+  notes: TOGO M1678 / NBRC Medium 883 lists 30 g/L Bacto Tryptic Soy Broth; this commercial
+    powder is retained as a source-disclosed complex component.
+- preferred_term: Na2CO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  source: TOGO M1678 / NBRC Medium 883
+  notes: TOGO M1678 / NBRC Medium 883 lists 2 g/L Na2CO3.
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  source: TOGO M1678 / NBRC Medium 883
+  notes: TOGO M1678 / NBRC Medium 883 lists 15 g/L Agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1.0'
+    unit: L
+  source: TOGO M1678 / NBRC Medium 883
+  notes: TOGO M1678 / NBRC Medium 883 lists 1.0 L Distilled water.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: Agar (if needed)
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
 media_term:
   preferred_term: TOGO Medium M1678
   term:
     id: TOGO:M1678
     label: TSB + 0.2%(w/v) Na2CO3
-notes: 'Source: https://togomedium.org/medium/M1678
-
-  Original source: NBRC - NBRC_M883
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=883'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Suspend 30 g Bacto Tryptic Soy Broth and 15 g agar, if needed, in 1
+    L distilled water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Sterilize 2 g Na2CO3 separately by autoclaving.
+- step_number: 3
+  action: MIX
+  description: Add the separately autoclaved Na2CO3 to the other ingredients; the
+    final pH is around 8.5.
+notes: TOGO M1678 imports NBRC Medium 883 as TSB + 0.2%(w/v) Na2CO3. NBRC 883 lists
+  30 g Bacto Tryptic Soy Broth, 2 g Na2CO3 sterilized separately by autoclaving, 15
+  g Agar if needed, and 1 L Distilled water; the final pH is around 8.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -75,28 +116,26 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-solutions:
-- preferred_term: Na2CO3**
-  composition: []
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
-  name: Unknown solution
-- preferred_term: Bacto Tryptic Soy Broth*
-  composition: []
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-  name: Unknown solution
-parent_media:
-  path: data/normalized_yaml/bacterial/hgam.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:009551
-  name: hgam
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m3039_m3040_hgam_score15.py
+  action: REMOVED_STALE_HGAM_PARENT_FROM_TSB_NA2CO3
+  source: https://togomedium.org/medium/M3039; https://togomedium.org/medium/M3040;
+    https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1509
+  notes: Removed a stale SOURCE_DUPLICATE parent link to HGAM that was created from
+    the old sparse water/agar/empty-solution signature; NBRC Medium 1509 HGAM has
+    a distinct Nissui Modified GAM Broth formula.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_togo_m1418_m1424_m1678_m1896_score15.py
+  action: RESOLVED_TOGO_M1418_M1424_M1678_M1896_SCORE15
+  source: https://togomedium.org/medium/M1678; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=883
+  notes: Flattened the migrated Bacto Tryptic Soy Broth and Na2CO3 solution wrappers,
+    corrected Distilled water from a mass-like 1 g/L import to 1 L, grounded Na2CO3,
+    water, and agar, added the final pH and separate Na2CO3 sterilization, and retained
+    Bacto Tryptic Soy Broth as a sourced opaque component.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1678
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=883

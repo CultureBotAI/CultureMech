@@ -359,3 +359,23 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_827_thermoanaerobacter_score10.py
+  action: RESOLVED_KOMODO_827_THERMOANAEROBACTER_TOPOLOGY
+  changes: Re-rooted KOMODO Medium 827 Thermoanaerobacter exact topology
+  source: DSMZ Medium 827; KOMODO Medium 827 and 827.1
+  notes: Moved exact KOMODO Medium 827 plus its DSM 16547 wrapper under DSMZ Medium
+    827.
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_827_THERMOANAEROBACTER_SULFUROPHILUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006558
+  name: KOMODO_827_THERMOANAEROBACTER_SULFUROPHILUS_medium
+  notes: KOMODO Medium 827 has the same 30-ingredient signature as DSMZ Medium 827.
+- path: data/normalized_yaml/bacterial/for_dsm_16547.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006557
+  name: for_dsm_16547
+  notes: KOMODO Medium 827.1 applies DSMZ Medium 827 to DSM 16547.
+data_quality_flags:
+- ingredients_curated

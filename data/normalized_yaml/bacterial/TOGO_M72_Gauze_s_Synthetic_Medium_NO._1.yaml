@@ -141,6 +141,11 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-05T00:00:00-07:00'
+  curator: repair_togo_jcm_cross_references.py
+  action: LINKED_JCM_CROSS_REFERENCE_CHILDREN
+  changes: Linked TOGO/JCM cross-reference child media to source parents
+  notes: Added or refreshed reciprocal parent-child link for bacterial/TOGO_M996_Gauze_s_Synthetic_Medium_NO._1_pH_5.3.yaml.
 variant_children:
 - path: data/normalized_yaml/bacterial/TOGO_M920_Gauze_s_Synthetic_Medium_NO._1_With_18_NaCl.yaml
   relationship: CONCENTRATION_VARIANT
@@ -149,3 +154,8 @@ variant_children:
   notes: Reviewed TOGO Gauze synthetic medium pair; child keeps water, MgSO4, K2HPO4,
     KNO3, and soluble starch unchanged, increases NaCl from 0.5 to 180 g/L, lowers
     FeSO4 from 10 to 0.01 g/L, and changes agar from 15 to 18 g/L.
+- path: data/normalized_yaml/bacterial/TOGO_M996_Gauze_s_Synthetic_Medium_NO._1_pH_5.3.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:010424
+  name: gauzes_synthetic_medium_no_1_ph_5_3
+  notes: Adjusts JCM Medium 81 to pH 5.3.

@@ -17,6 +17,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: MICRO:0000178
+    label: Peptone
 - preferred_term: Meat extract
   concentration:
     value: '3'
@@ -68,4 +71,30 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m2358_m2359_score15.py
+  action: LINKED_TOGO_M2358_M2359_DSMZ_MEDIUM_1A
+  source: https://togomedium.org/medium/M2358; https://togomedium.org/medium/M2359;
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1a.pdf
+  notes: Linked TOGO M2358 as a source duplicate and TOGO M2359 as a 10 mg/L MnSO4
+    x H2O supplemented variant of DSMZ Medium 1a.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_bacterial_score10_exact_terms_batch7.py
+  action: GROUNDED_BACTERIAL_SCORE10_EXACT_TERMS_BATCH7
+  changes: Grounded bacterial score-10 exact ingredients
+  source: src/culturemech/data/mediaingredientmech/label_index.csv
+  notes: Applied local mappings for Peptone.
 kg_microbe_match: mediadive.medium:12
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M2358_Reactivation_With_Liquid_Medium_1.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008943
+  name: reactivation_with_liquid_medium_1
+  notes: TOGO M2358 imports DSMZ Medium 1a and explicitly retains its distilled-water
+    row.
+- path: data/normalized_yaml/bacterial/reactivation_with_liquid_medium_1_for_sporulation.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:008944
+  name: reactivation_with_liquid_medium_1_for_sporulation
+  notes: TOGO M2359 imports DSMZ Medium 1a with the 10 mg/L MnSO4 x H2O Bacillus sporulation
+    supplement.

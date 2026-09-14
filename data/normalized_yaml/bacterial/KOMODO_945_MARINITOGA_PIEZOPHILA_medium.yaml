@@ -206,3 +206,26 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_945_marinitoga_ph_score10.py
+  action: RESOLVED_KOMODO_945_MARINITOGA_PH_VARIANT
+  changes: Added KOMODO 945.2 pH variant child
+  source: KOMODO Medium 945.2
+  notes: Linked the reviewed pH 5.5 DSM 17373 variant.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_945_marinitoga_strain_score10.py
+  action: RESOLVED_KOMODO_945_MARINITOGA_STRAIN_TOPOLOGY
+  changes: Linked KOMODO Medium 945.1 as a Marinitoga strain variant
+  source: KOMODO Medium 945.1
+  notes: Linked the strain-specific DSM 14283 MARINITOGA PIEZOPHILA record.
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_17373.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:006879
+  name: for_dsm_17373
+  notes: KOMODO Medium 945.2 applies MARINITOGA PIEZOPHILA medium at pH 5.5.
+- path: data/normalized_yaml/bacterial/for_dsm_14283.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006878
+  name: for_dsm_14283
+  notes: KOMODO Medium 945.1 applies MARINITOGA PIEZOPHILA medium to DSM 14283.

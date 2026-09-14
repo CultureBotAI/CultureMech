@@ -8,31 +8,32 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: NaCl
   concentration:
-    value: '30'
+    value: '30.0'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO M1186 / JCM Medium 1109
+  notes: TOGO M1186 and JCM Medium 1109 list 30.0 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
-- preferred_term: Yeast extract (BD--Difco)
+- preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M1186 / JCM Medium 1109
+  notes: TOGO M1186 and JCM Medium 1109 list 0.5 g/L Yeast extract from BD-Difco.
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 media_term:
   preferred_term: TOGO Medium M1186
   term:
     id: TOGO:M1186
     label: Nutrient Agar With 0.05% Yeast Extract And 3% NaCl
-notes: 'Source: https://togomedium.org/medium/M1186
-
-  Original source: JCM - JCM_M1109
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1109'
+notes: TOGO M1186 imports JCM Medium 1109, which adds 0.5 g Yeast extract from BD-Difco
+  and 30 g NaCl to 1 L Nutrient agar from JCM Medium 74.
 applications:
 - Microbial cultivation
 curation_history:
@@ -75,12 +76,35 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nutrient_ncg_nssm_score15.py
+  action: RESOLVED_TOGO_M1186_SCORE15
+  source: https://togomedium.org/medium/M1186; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1109
+  notes: TOGO M1186 imports JCM Medium 1109, which adds 0.5 g Yeast extract from BD-Difco
+    and 30 g NaCl to 1 L Nutrient agar from JCM Medium 74.
 solutions:
-- preferred_term: Nutrient agar (see Medium [M65])
-  composition: []
-  notes: Cross-reference to Medium M65
+- preferred_term: Nutrient agar (JCM Medium 74)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
-kg_microbe_match: mediadive.medium:74
+    value: '1.0'
+    unit: L
+  source: TOGO M1186 / JCM Medium 1109
+  notes: TOGO M1186 and JCM Medium 1109 list 1.0 L Nutrient agar from JCM Medium 74.
+  composition: []
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J74_NUTRIENT_AGAR.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:003093
+  name: nutrient_agar
+  notes: JCM Medium 1109 starts from JCM Medium 74 Nutrient Agar and adds 0.5 g/L
+    Yeast extract plus 30.0 g/L NaCl.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Add 0.5 g/L Yeast extract (BD-Difco) and 30.0 g/L NaCl to 1.0 L JCM Medium 74 Nutrient
+  Agar.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M1186
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1109

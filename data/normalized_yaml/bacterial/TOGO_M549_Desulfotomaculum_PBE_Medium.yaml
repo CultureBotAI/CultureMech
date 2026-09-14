@@ -6,33 +6,42 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Peptone
   concentration:
-    value: '900'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+  source: TOGO M549 / JCM Medium 547
+  notes: TOGO M549 / JCM Medium 547 lists 2.0 g/L peptone.
   term:
-    id: CHEBI:15377
-    label: water
+    id: MICRO:0000178
+    label: Peptone
+- preferred_term: Beef extract
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: TOGO M549 / JCM Medium 547
+  notes: TOGO M549 / JCM Medium 547 lists 1.0 g/L beef extract.
+  term:
+    id: FOODON:03302088
+    label: Beef extract
+- preferred_term: MgSO4 x 7H2O
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: TOGO M549 / JCM Medium 547
+  notes: TOGO M549 / JCM Medium 547 lists 2.0 g/L MgSO4 x 7H2O.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
 - preferred_term: Na2SO4
   concentration:
     value: '1.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  source: TOGO M549 / JCM Medium 547
+  notes: TOGO M549 / JCM Medium 547 lists 1.5 g/L Na2SO4.
   term:
     id: CHEBI:32149
     label: sodium sulfate
@@ -43,46 +52,50 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO M549 / JCM Medium 547
+  notes: TOGO M549 / JCM Medium 547 lists 0.1 g/L CaCl2.
   term:
     id: CHEBI:3312
     label: calcium dichloride
   mediaingredientmech_chebi_term:
     id: CHEBI:3312
     label: calcium dichloride
-- preferred_term: Beef extract
+- preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Peptone
-  concentration:
-    value: '2'
-    unit: G_PER_L
+    value: '900.0'
+    unit: ML_PER_L
+  source: TOGO M549 / JCM Medium 547
+  notes: TOGO M549 / JCM Medium 547 lists 900.0 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: N2
-  notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M549 / JCM Medium 547
+  notes: TOGO M549 / JCM Medium 547 uses N2 as the gas atmosphere for autoclaving.
   term:
     id: CHEBI:17997
     label: dinitrogen
-- preferred_term: 5% Sodium lactate (autoclaved)
-  concentration:
-    value: '70'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17997
+    label: dinitrogen
 media_term:
   preferred_term: TOGO Medium M549
   term:
     id: TOGO:M549
     label: Desulfotomaculum PBE Medium
-notes: 'Source: https://togomedium.org/medium/M549
-
-  Original source: JCM - JCM_M547
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=547'
+notes: JCM Medium 547 Desulfotomaculum PBE Medium prepares Solution A from 2 g peptone,
+  1 g beef extract, 2 g MgSO4 x 7H2O, 1.5 g Na2SO4, 0.1 g CaCl2, and 900 ml distilled
+  water, then autoclaves it under an N2 gas atmosphere. To complete the medium, 10
+  ml of autoclaved 5% K2HPO4, 70 ml of autoclaved 5% sodium lactate, 10 ml of filter-sterilized
+  4% Fe(NH4)2(SO4)2 x 6H2O, and 10 ml of filter-sterilized 1% sodium ascorbate are
+  added aseptically and anaerobically per liter. JCM, TOGO, and MediaDive do not report
+  a final pH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -140,26 +153,135 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m549_score15.py
+  action: RESOLVED_TOGO_M549_SCORE15
+  source: https://togomedium.org/medium/M549; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=547;
+    https://mediadive.dsmz.de/medium/J547
+  notes: JCM Medium 547 Desulfotomaculum PBE Medium prepares Solution A from 2 g peptone,
+    1 g beef extract, 2 g MgSO4 x 7H2O, 1.5 g Na2SO4, 0.1 g CaCl2, and 900 ml distilled
+    water, then autoclaves it under an N2 gas atmosphere. To complete the medium,
+    10 ml of autoclaved 5% K2HPO4, 70 ml of autoclaved 5% sodium lactate, 10 ml of
+    filter-sterilized 4% Fe(NH4)2(SO4)2 x 6H2O, and 10 ml of filter-sterilized 1%
+    sodium ascorbate are added aseptically and anaerobically per liter. JCM, TOGO,
+    and MediaDive do not report a final pH.
 solutions:
-- preferred_term: 4% Fe(NH4)2(SO4)2・6H2O solution (filter--sterilized)
-  composition: []
+- preferred_term: 5% K2HPO4 solution
   concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
-  name: Unknown solution
-- preferred_term: 5% K2HPO4 solution (autoclaved)
-  composition: []
+    value: '10.0'
+    unit: ML_PER_L
+  source: TOGO M549 / JCM Medium 547
+  notes: TOGO M549 / JCM Medium 547 adds 10.0 ml/L 5% K2HPO4 solution.
+  composition:
+  - preferred_term: K2HPO4
+    concentration:
+      value: '5.0'
+      unit: PERCENT_W_V
+    source: TOGO M549 / JCM Medium 547
+    notes: TOGO M549 / JCM Medium 547 specifies 5% K2HPO4 solution as 5.0% w/v.
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+  preparation_notes: Autoclave before anaerobic addition.
+- preferred_term: 5% Sodium lactate solution
   concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Solution, Inorganic compound, Defined component'
-  name: Unknown solution
-- preferred_term: 1% Sodium ascorbate solution (filter--sterilized)
-  composition: []
+    value: '70.0'
+    unit: ML_PER_L
+  source: TOGO M549 / JCM Medium 547
+  notes: TOGO M549 / JCM Medium 547 adds 70.0 ml/L 5% Sodium lactate solution.
+  composition:
+  - preferred_term: Sodium lactate
+    concentration:
+      value: '5.0'
+      unit: PERCENT_W_V
+    source: TOGO M549 / JCM Medium 547
+    notes: TOGO M549 / JCM Medium 547 specifies 5% Sodium lactate solution as 5.0%
+      w/v.
+    term:
+      id: CHEBI:75228
+      label: sodium lactate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75228
+      label: sodium lactate
+  preparation_notes: Autoclave before anaerobic addition.
+- preferred_term: 4% Fe(NH4)2(SO4)2 x 6H2O solution
   concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Solution'
-  name: Unknown solution
+    value: '10.0'
+    unit: ML_PER_L
+  source: TOGO M549 / JCM Medium 547
+  notes: TOGO M549 / JCM Medium 547 adds 10.0 ml/L 4% Fe(NH4)2(SO4)2 x 6H2O solution.
+  composition:
+  - preferred_term: Fe(NH4)2(SO4)2 x 6H2O
+    concentration:
+      value: '4.0'
+      unit: PERCENT_W_V
+    source: TOGO M549 / JCM Medium 547
+    notes: TOGO M549 / JCM Medium 547 specifies 4% Fe(NH4)2(SO4)2 x 6H2O solution
+      as 4.0% w/v.
+    term:
+      id: CHEBI:76181
+      label: ferrous ammonium sulfate hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76181
+      label: ferrous ammonium sulfate hexahydrate
+  preparation_notes: Filter-sterilize before anaerobic addition.
+- preferred_term: 1% Sodium ascorbate solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: TOGO M549 / JCM Medium 547
+  notes: TOGO M549 / JCM Medium 547 adds 10.0 ml/L 1% Sodium ascorbate solution.
+  composition:
+  - preferred_term: Sodium ascorbate
+    concentration:
+      value: '1.0'
+      unit: PERCENT_W_V
+    source: TOGO M549 / JCM Medium 547
+    notes: TOGO M549 / JCM Medium 547 specifies 1% Sodium ascorbate solution as 1.0%
+      w/v.
+    term:
+      id: CHEBI:113451
+      label: sodium ascorbate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:113451
+      label: sodium ascorbate
+  preparation_notes: Filter-sterilize before anaerobic addition.
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix Solution A components and autoclave under an N2 gas atmosphere.
+- step_number: 2
+  action: MIX
+  description: Aseptically and anaerobically add 10 ml/L autoclaved 5% K2HPO4 solution,
+    70 ml/L autoclaved 5% sodium lactate solution, 10 ml/L filter-sterilized 4% Fe(NH4)2(SO4)2
+    x 6H2O solution, and 10 ml/L filter-sterilized 1% sodium ascorbate solution.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: Autoclave the Solution A base under N2. Separately autoclave the 5% K2HPO4
+    and 5% sodium lactate stocks, and filter-sterilize the 4% Fe(NH4)2(SO4)2 x 6H2O
+    and 1% sodium ascorbate stocks.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M549
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=547
+- reference: https://mediadive.dsmz.de/medium/J547
+parent_media:
+  path: data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002894
+  name: desulfotomaculum_pbe_medium
+  notes: TOGO M549 imports the same JCM Medium 547 Desulfotomaculum PBE Medium formulation
+    represented by MediaDive J547.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same JCM Medium 547 Desulfotomaculum PBE Medium formulation as the MediaDive J547
+  source record.

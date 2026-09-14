@@ -4,58 +4,365 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: ES/2 Enriched Seawater Medium
+  term:
+    id: UTEX:es-over-2-enriched-seawater-medium
+    label: ES/2 Enriched Seawater Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
+notes: UTEX prepares this lower-enrichment seawater variant by adding 10 mL sterile
+  ES Enrichment Solution per liter of Pasteurized Seawater.
 ingredients:
 - preferred_term: Pasteurized Seawater
   concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'UTEX lists: amount 1 L'
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: ENVO:00002149
+    label: sea water
+  notes: UTEX lists 1 L Pasteurized Seawater for this recipe.
+  physicochemical_roles:
+  - OSMOTIC_AGENT
+solutions:
 - preferred_term: Enrichment Solution for Seawater Medium
   concentration:
     value: '10'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 10 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX brings ES Enrichment Solution to 2 L with dH2O.
+  - preferred_term: NaNO3
+    concentration:
+      value: '2.35'
+      unit: G_PER_L
+    term:
+      id: CHEBI:63005
+      label: sodium nitrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63005
+      label: sodium nitrate
+    notes: Converted from 4.7 g/2 L in the UTEX Enrichment Solution for Seawater Medium
+      recipe.
+    nutritional_roles:
+    - NITROGEN_SOURCE
+  - preferred_term: Na2glycerophosphate x 5 H2O
+    concentration:
+      value: '0.49'
+      unit: G_PER_L
+    term:
+      id: CHEBI:15978
+      label: sn-glycerol 3-phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15978
+      label: sn-glycerol 3-phosphate
+    notes: Converted from 0.98 g/2 L in the UTEX Enrichment Solution for Seawater
+      Medium recipe.
+    nutritional_roles:
+    - PHOSPHATE_SOURCE
+  - preferred_term: HEPES buffer
+    concentration:
+      value: '3.25'
+      unit: G_PER_L
+    term:
+      id: CHEBI:42334
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:42334
+      label: HEPES
+    notes: Converted from 6.5 g/2 L in the UTEX Enrichment Solution for Seawater Medium
+      recipe.
+    physicochemical_roles:
+    - BUFFER
+  notes: UTEX adds 10 mL sterile ES Enrichment Solution per liter of seawater.
+- preferred_term: ES Fe Solution
+  concentration:
+    value: '162.5'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX brings the ES Fe Solution stock to 2 L with dH2O.
+  - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
+    concentration:
+      value: '0.7'
+      unit: G_PER_L
+    term:
+      id: CHEBI:76181
+      label: ferrous ammonium sulfate hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76181
+      label: ferrous ammonium sulfate hexahydrate
+    notes: Converted from 1.4 g/2 L in the UTEX ES Fe Solution recipe.
+    nutritional_roles:
+    - IRON_SOURCE
+    - NITROGEN_SOURCE
+    - SULFUR_SOURCE
+  - preferred_term: Na2EDTA x 2 H2O
+    concentration:
+      value: '0.6'
+      unit: G_PER_L
+    term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    notes: Converted from 1.2 g/2 L in the UTEX ES Fe Solution recipe.
+    physicochemical_roles:
+    - CHELATOR
+  notes: UTEX adds 325 mL ES Fe Solution per 2 L ES Enrichment Solution.
+- preferred_term: P-II Metal Solution
+  concentration:
+    value: '162.5'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX brings P-II Metal Solution to 100 mL with dH2O.
+  - preferred_term: Na2EDTA x 2 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    notes: Converted from 0.1 g/100 mL in the UTEX P-II Metal Solution recipe.
+    physicochemical_roles:
+    - CHELATOR
+  - preferred_term: H3BO3
+    concentration:
+      value: '1.14'
+      unit: G_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+    notes: Converted from 0.114 g/100 mL in the UTEX P-II Metal Solution recipe.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: FeCl3 x 6 H2O
+    concentration:
+      value: '0.049'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    notes: Converted from 4.9 mg/100 mL in the UTEX P-II Metal Solution recipe.
+    nutritional_roles:
+    - IRON_SOURCE
+    - TRACE_ELEMENT
+  - preferred_term: MnSO4 x H2O
+    concentration:
+      value: '0.164'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86364
+      label: manganese(II) sulfate monohydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86364
+      label: manganese(II) sulfate monohydrate
+    notes: Converted from 16.4 mg/100 mL in the UTEX P-II Metal Solution recipe.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.022'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    notes: Converted from 2.2 mg/100 mL in the UTEX P-II Metal Solution recipe.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.0048'
+      unit: G_PER_L
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    notes: Converted from 0.48 mg/100 mL in the UTEX P-II Metal Solution recipe.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  notes: UTEX adds 325 mL P-II Metal Solution per 2 L ES Enrichment Solution.
+- preferred_term: Vitamin B12
+  concentration:
+    value: '1.5'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX prepares the Vitamin B12 stock in 200 mL HEPES buffer.
+  - preferred_term: HEPES buffer pH 7.8
+    concentration:
+      value: '12'
+      unit: G_PER_L
+    term:
+      id: CHEBI:42334
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:42334
+      label: HEPES
+    notes: Converted from 2.4 g/200 mL in the UTEX Vitamin B12 stock.
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.135'
+      unit: G_PER_L
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+    notes: Converted from 0.027 g/200 mL in the UTEX Vitamin B12 stock.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  notes: UTEX adds 3 mL Vitamin B12 stock per 2 L ES Enrichment Solution.
+- preferred_term: Biotin Vitamin Solution
+  concentration:
+    value: '1.5'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX prepares the biotin stock in 200 mL HEPES buffer.
+  - preferred_term: HEPES buffer pH 7.8
+    concentration:
+      value: '12'
+      unit: G_PER_L
+    term:
+      id: CHEBI:42334
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:42334
+      label: HEPES
+    notes: Converted from 2.4 g/200 mL in the UTEX biotin stock.
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Biotin
+    concentration:
+      value: '0.025'
+      unit: G_PER_L
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+    notes: Converted from 0.005 g/200 mL in the UTEX biotin stock.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  notes: UTEX adds 3 mL biotin stock per 2 L ES Enrichment Solution.
+- preferred_term: Thiamine Vitamin Solution
+  concentration:
+    value: '1.5'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX prepares the thiamine stock in 200 mL HEPES buffer.
+  - preferred_term: HEPES buffer pH 7.8
+    concentration:
+      value: '12'
+      unit: G_PER_L
+    term:
+      id: CHEBI:42334
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:42334
+      label: HEPES
+    notes: Converted from 2.4 g/200 mL in the UTEX thiamine stock.
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Thiamine
+    concentration:
+      value: '0.335'
+      unit: G_PER_L
+    term:
+      id: CHEBI:18385
+      label: thiamine(1+)
+    mediaingredientmech_chebi_term:
+      id: CHEBI:18385
+      label: thiamine(1+)
+    notes: Converted from 0.067 g/200 mL in the UTEX thiamine stock.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  notes: UTEX adds 3 mL thiamine stock per 2 L ES Enrichment Solution.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: Aseptically add 10 mL of sterile ES Enrichment Solution per liter of
+    Pasteurized Seawater.
 - step_number: 2
-  action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
-- step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
-- step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
-- step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
-salinity: marine (natural seawater or artificial seawater)
+  action: STORE
+  description: Store at refrigerator temperature.
+salinity: saltwater
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -94,7 +401,34 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_algal_blends.py
+  action: RESOLVED_UTEX_ALGAL_BLEND_GRAPH
+  changes: Grounded UTEX algal prepared-media and stock-solution components
+  source: https://utex.org/products/enrichment-solution-for-seawater-medium; https://utex.org/products/ES-Fe-solution;
+    https://utex.org/products/p-ii-metal-solution; https://utex.org/products/vitamin-b-12;
+    https://utex.org/products/biotin-vitamin-solution; https://utex.org/products/thiamine-vitamin-solution
+  notes: UTEX prepares this lower-enrichment seawater variant by adding 10 mL sterile
+    ES Enrichment Solution per liter of Pasteurized Seawater.
 references:
 - reference: UTEX:es-over-2-enriched-seawater-medium
 - reference: https://utex.org/products/es-over-2-enriched-seawater-medium
+- reference: https://utex.org/products/enrichment-solution-for-seawater-medium
+- reference: https://utex.org/products/ES-Fe-solution
+- reference: https://utex.org/products/p-ii-metal-solution
+- reference: https://utex.org/products/vitamin-b-12
+- reference: https://utex.org/products/biotin-vitamin-solution
+- reference: https://utex.org/products/thiamine-vitamin-solution
 original_name: ES/2 Enriched Seawater Medium
+parent_media:
+  path: data/normalized_yaml/algae/Enriched_Seawater_Medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000166
+  name: enriched_seawater_medium
+  notes: Uses 10 mL/L ES Enrichment Solution instead of the parent 20 mL/L.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Uses 10 mL/L ES Enrichment Solution instead of the parent 20 mL/L.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

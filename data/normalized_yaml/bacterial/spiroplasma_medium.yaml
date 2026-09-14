@@ -5,18 +5,29 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_range:
+  min: 7.25
+  max: 7.45
 ingredients:
 - preferred_term: DI Water
   concentration:
     value: '700.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component [Merged 2 duplicates: 500.0, 200.0]'
+    unit: ML_PER_L
+  source: TOGO M2578
+  notes: TOGO M2578 lists 500 ml/L DI Water in the basal medium and 200 ml/L DI Water
+    in the additive solution.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M2578
+  notes: TOGO M2578 lists 15 g/L Agar if solid medium is required.
   term:
     id: CHEBI:2509
     label: agar
@@ -25,76 +36,77 @@ ingredients:
     label: agar
 - preferred_term: Tryptone (Difco)
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M2578
+  notes: TOGO M2578 lists 10 g/L Tryptone from Difco.
+  term:
+    id: MICRO:0000182
+    label: Tryptone
 - preferred_term: PPLO Broth w/o  Crystal Violet (Difco)
   concentration:
-    value: '11'
+    value: '11.0'
     unit: G_PER_L
-  notes: 'Properties: Complex component, Undefined component'
+  source: TOGO M2578
+  notes: TOGO M2578 lists 11 g/L PPLO Broth without crystal violet from Difco; this
+    commercial broth is retained as an opaque complex component.
 - preferred_term: Fetal bovine serum (heat-inactivated)
   concentration:
-    value: '170'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: TC Yeastolate (2% soln.) (BD 255772)
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+    value: '170.0'
+    unit: ML_PER_L
+  source: TOGO M2578
+  notes: TOGO M2578 lists 170 ml/L heat-inactivated fetal bovine serum; this serum
+    is retained as an opaque complex component.
+  term:
+    id: mediadive.compound:954
+    label: Fetal bovine serum
 - preferred_term: Glucose
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
+  source: TOGO M2578
+  notes: TOGO M2578 lists 5.0 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
-- preferred_term: Mycoplasma Growth Supplement (CMRL 1066)(10X)
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: CMRL-1066 (ATCC 20-2206)
-  concentration:
-    value: '98'
-    unit: G_PER_L
-  notes: 'Properties: Complex component, Defined component'
-- preferred_term: Distilled deionized water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: Bakers’ yeast (live, pressed, starch-free)
-  concentration:
-    value: '250'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix DI Water, Agar if required, Tryptone, and PPLO Broth without crystal
+    violet as the basal medium.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust the basal medium to pH 7.3-7.4.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave the basal medium at 121 C for 15 minutes, then cool to 50-55
+    C in a water bath if agar is used.
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Prepare the additive solution from heat-inactivated fetal bovine serum,
+    Phenol red solution, TC Yeastolate, DI Water, Glucose, Mycoplasma Growth Supplement,
+    and Yeast Extract Solution, then filter-sterilize it.
+- step_number: 5
+  action: MIX
+  description: Combine the filter-sterilized additive solution with the basal medium
+    and, if needed, readjust the pH to 7.35 +/- 0.1.
 media_term:
   preferred_term: TOGO Medium M2578
   term:
     id: TOGO:M2578
     label: Spiroplasma Medium
-notes: 'Source: https://togomedium.org/medium/M2578
-
-  Original URL: https://www.atcc.org/~/media/D078A95CAFED4ADE877F47632F4E2EB5.ashx'
+notes: TOGO M2578 defines Spiroplasma Medium with a basal medium containing 500 ml
+  DI Water, 15 g optional Agar, 10 g Tryptone, and 11 g PPLO Broth without crystal
+  violet. Its additive solution supplies 170 ml heat-inactivated fetal bovine serum,
+  20 ml 0.1% Phenol red solution, 100 ml 2% TC Yeastolate, 200 ml DI Water, 5 g Glucose,
+  50 ml Mycoplasma Growth Supplement made from 98 g CMRL-1066 in 1.0 L water, and
+  35 ml Yeast Extract Solution made from 250 g baker's yeast in 1.0 L water. The basal
+  medium is adjusted to pH 7.3-7.4, autoclaved at 121 C for 15 minutes, combined with
+  the filter-sterilized additive solution, and readjusted if needed to pH 7.35 +/-
+  0.1.
 applications:
 - Microbial cultivation
 curation_history:
@@ -141,17 +153,129 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2578_spiroplasma_score15.py
+  action: RESOLVED_TOGO_M2578_SPIROPLASMA_SCORE15
+  source: https://togomedium.org/medium/M2578
+  notes: TOGO M2578 defines Spiroplasma Medium with a basal medium containing 500
+    ml DI Water, 15 g optional Agar, 10 g Tryptone, and 11 g PPLO Broth without crystal
+    violet. Its additive solution supplies 170 ml heat-inactivated fetal bovine serum,
+    20 ml 0.1% Phenol red solution, 100 ml 2% TC Yeastolate, 200 ml DI Water, 5 g
+    Glucose, 50 ml Mycoplasma Growth Supplement made from 98 g CMRL-1066 in 1.0 L
+    water, and 35 ml Yeast Extract Solution made from 250 g baker's yeast in 1.0 L
+    water. The basal medium is adjusted to pH 7.3-7.4, autoclaved at 121 C for 15
+    minutes, combined with the filter-sterilized additive solution, and readjusted
+    if needed to pH 7.35 +/- 0.1. Corrected imported milliliter quantities, restored
+    the Mycoplasma Growth Supplement and Yeast Extract Solution stock compositions,
+    moved TC Yeastolate from the ingredient list to a 2% stock solution, and added
+    the TOGO pH and sterilization instructions.
 solutions:
 - preferred_term: Phenol red solution (0.1% soln.)
-  composition: []
   concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: pH indicator; Properties: Organic compound, Solution, Defined component'
-  name: Unknown solution
+    value: '20.0'
+    unit: ML_PER_L
+  source: TOGO M2578
+  notes: TOGO M2578 lists 20 ml/L 0.1% Phenol red solution.
+  composition:
+  - preferred_term: Phenol red
+    concentration:
+      value: '0.1'
+      unit: PERCENT_W_V
+    source: TOGO M2578
+    notes: TOGO M2578 identifies Phenol red solution (0.1% soln.) as containing 0.1
+      % w/v Phenol red.
+    term:
+      id: CHEBI:31991
+      label: phenol red
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31991
+      label: phenol red
+- preferred_term: TC Yeastolate (2% soln.) (BD 255772)
+  concentration:
+    value: '100.0'
+    unit: ML_PER_L
+  source: TOGO M2578
+  notes: TOGO M2578 lists 100 ml/L 2% TC Yeastolate from BD 255772; the yeastolate
+    is retained as an opaque complex component.
+  composition:
+  - preferred_term: TC Yeastolate (BD 255772)
+    concentration:
+      value: '2.0'
+      unit: PERCENT_W_V
+    source: TOGO M2578
+    notes: TOGO M2578 identifies TC Yeastolate (2% soln.) (BD 255772) as containing
+      2.0 % w/v TC Yeastolate (BD 255772).
+- preferred_term: Mycoplasma Growth Supplement (CMRL 1066)(10X)
+  concentration:
+    value: '50.0'
+    unit: ML_PER_L
+  source: TOGO M2578
+  notes: TOGO M2578 lists 50 ml/L Mycoplasma Growth Supplement and directs preparing
+    its 10x stock from 98 g CMRL-1066 powder in 1.0 L water, then filter-sterilizing
+    it.
+  composition:
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    source: TOGO M2578
+    notes: TOGO M2578 identifies Mycoplasma Growth Supplement (CMRL 1066)(10X) as
+      containing 1000.0 ml/L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: CMRL-1066 (ATCC 20-2206)
+    concentration:
+      value: '98.0'
+      unit: G_PER_L
+    source: TOGO M2578
+    notes: TOGO M2578 identifies Mycoplasma Growth Supplement (CMRL 1066)(10X) as
+      containing 98.0 g/L CMRL-1066 (ATCC 20-2206).
+    term:
+      id: mediadive.compound:1680
+      label: CMRL 1066
 - preferred_term: Yeast Extract Solution
-  composition: []
   concentration:
-    value: '35'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '35.0'
+    unit: ML_PER_L
+  source: TOGO M2578
+  notes: TOGO M2578 lists 35 ml/L Yeast Extract Solution prepared from 250 g live
+    baker's yeast in 1.0 L water; the source autoclaves this stock, removes the supernatant,
+    and adjusts the pH to 6.6-6.8.
+  composition:
+  - preferred_term: Distilled deionized water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    source: TOGO M2578
+    notes: TOGO M2578 identifies Yeast Extract Solution as containing 1000.0 ml/L
+      Distilled deionized water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: Bakers’ yeast (live, pressed, starch-free)
+    concentration:
+      value: '250.0'
+      unit: G_PER_L
+    source: TOGO M2578
+    notes: TOGO M2578 identifies Yeast Extract Solution as containing 250.0 g/L Bakers’
+      yeast (live, pressed, starch-free).
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: Autoclave the basal medium before adding the filter-sterilized additive solution.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2578

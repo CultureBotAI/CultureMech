@@ -5,69 +5,108 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 10.0
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
-    Defined component [Merged 2 duplicates: 900.0, 100.0]'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: NaCl
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: Agar (if needed)
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
 - preferred_term: Nutrient Broth (OXOID)
   concentration:
-    value: '13'
+    value: '13.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  source: TOGO M1760 / NBRC Medium 972
+  notes: TOGO M1760 and NBRC Medium 972 list 13.0 g/L Nutrient Broth (OXOID); retained
+    as an intentionally opaque commercial product.
+- preferred_term: NaCl
+  concentration:
+    value: '50.0'
+    unit: G_PER_L
+  source: TOGO M1760 / NBRC Medium 972
+  notes: TOGO M1760 and NBRC Medium 972 list 50.0 g/L NaCl.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: NaHCO3
   concentration:
     value: '4.2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  source: TOGO M1760 / NBRC Medium 972
+  notes: NBRC Medium 972 lists 4.2 g NaHCO3 in the separately sterilized 100 ml sodium-sesquicarbonate
+    stock added per liter.
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-- preferred_term: Na2CO3 (anhydrous)
+- preferred_term: Na2CO3
   concentration:
     value: '5.3'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
+  source: TOGO M1760 / NBRC Medium 972
+  notes: NBRC Medium 972 lists 5.3 g anhydrous Na2CO3 in the separately sterilized
+    100 ml sodium-sesquicarbonate stock added per liter.
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: TOGO M1760 / NBRC Medium 972
+  notes: TOGO M1760 and NBRC Medium 972 list 15.0 g/L Agar if needed for solid medium.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: TOGO M1760 / NBRC Medium 972
+  notes: NBRC Medium 972 uses 900 ml Distilled water in the main base plus 100 ml
+    water in the sodium-sesquicarbonate stock.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M1760
   term:
     id: TOGO:M1760
     label: Nutrient Broth + 5% NaCl (pH 10.0)
-notes: 'Source: https://togomedium.org/medium/M1760
-
-  Original source: NBRC - NBRC_M972
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=972'
+notes: 'TOGO M1760 imports NBRC Medium 972: a 900 ml main base with 13 g Nutrient
+  Broth (OXOID), 50 g NaCl, 15 g agar if needed, and a 100 ml sodium-sesquicarbonate
+  stock containing 4.2 g NaHCO3 and 5.3 g anhydrous Na2CO3; the final pH is 10.0.'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Suspend Nutrient Broth (OXOID), NaCl, and optional agar in 900 ml distilled
+    water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the nutrient-broth NaCl base.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Sterilize the 100 ml NaHCO3 and Na2CO3 sodium-sesquicarbonate stock
+    separately.
+- step_number: 4
+  action: MIX
+  description: Aseptically add the sterile sodium-sesquicarbonate stock to the sterile
+    base.
+sterilization:
+  method: AUTOCLAVE
+  notes: Autoclave the complex nutrient-broth base and sterilize the alkaline carbonate
+    stock separately before aseptic addition.
 applications:
 - Microbial cultivation
 curation_history:
@@ -114,10 +153,17 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-solutions:
-- preferred_term: Sodium-sesquicarbonate solution*
-  composition: []
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  name: Unknown solution
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nutrient_broths_score15.py
+  action: RESOLVED_TOGO_M1760_NBRC_972
+  source: https://togomedium.org/medium/M1760; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=972
+  notes: 'TOGO M1760 imports NBRC Medium 972: a 900 ml main base with 13 g Nutrient
+    Broth (OXOID), 50 g NaCl, 15 g agar if needed, and a 100 ml sodium-sesquicarbonate
+    stock containing 4.2 g NaHCO3 and 5.3 g anhydrous Na2CO3; the final pH is 10.0.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M1760
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=972

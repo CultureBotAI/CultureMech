@@ -5,49 +5,75 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.5
 ingredients:
+- preferred_term: Marine agar 2216 (BD-Difco)
+  concentration:
+    value: '55.1'
+    unit: G_PER_L
+  source: TOGO M1345 / JCM Medium 1251
+  notes: TOGO M1345 / JCM Medium 1251 lists 55.1 g/L Marine agar 2216 (BD-Difco).
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Casitone (BD-Difco)
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: TOGO M1345 / JCM Medium 1251
+  notes: TOGO M1345 / JCM Medium 1251 lists 1.0 g/L Casitone (BD-Difco).
+  nutritional_roles:
+  - PROTEIN_SOURCE
+- preferred_term: Phytone peptone (BD-Difco)
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: TOGO M1345 / JCM Medium 1251
+  notes: TOGO M1345 / JCM Medium 1251 lists 1.0 g/L Phytone peptone (BD-Difco).
+  term:
+    id: FOODON:03315720
+    label: Soy peptone
+  nutritional_roles:
+  - PROTEIN_SOURCE
+- preferred_term: Malt extract (BD-Difco)
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: TOGO M1345 / JCM Medium 1251
+  notes: TOGO M1345 / JCM Medium 1251 lists 1.0 g/L Malt extract (BD-Difco).
+  term:
+    id: FOODON:03301056
+    label: malt extract
+  nutritional_roles:
+  - CARBON_SOURCE
+  - NITROGEN_SOURCE
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '1.0'
+    unit: L
+  source: TOGO M1345 / JCM Medium 1251
+  notes: TOGO M1345 / JCM Medium 1251 lists 1.0 L Distilled water.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: Malt extract (BD-Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Casitone (BD-Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Marine agar 2216 (BD-Difco)
-  concentration:
-    value: '55.1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Phytone peptone (BD-Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Combine the Modified Marine Agar 2216 components listed by TOGO M1345
+    / JCM Medium 1251.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.5.
 media_term:
   preferred_term: TOGO Medium M1345
   term:
     id: TOGO:M1345
     label: Modified Marine Agar 2216
-notes: 'Source: https://togomedium.org/medium/M1345
-
-  Original source: JCM - JCM_M1251
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1251'
+notes: JCM Medium 1251 Modified Marine Agar 2216 lists 55.1 g/L Marine agar 2216,
+  1.0 g/L Casitone, 1.0 g/L Phytone peptone, 1.0 g/L Malt extract, and 1.0 L Distilled
+  water; adjust pH to 7.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -78,3 +104,17 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m958_modified_marine_score15.py
+  action: RESOLVED_TOGO_M1345_MODIFIED_MARINE
+  source: https://togomedium.org/medium/M1345; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1251
+  notes: Corrected JCM Modified Marine Agar 2216 water units, added the source pH,
+    grounded the disclosed complex nutrient products where possible, and marked remaining
+    BD products as intentionally unmapped source components.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1345
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1251

@@ -4,7 +4,7 @@ original_name: BekiSolidMedium (Hydrogenovibrio crunogenus QUIMIOLITOTROFO)
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range:
   min: 6.8
   max: 7.4
@@ -13,8 +13,82 @@ media_term:
   term:
     id: mediadive.medium:P10
     label: BekiSolidMedium (Hydrogenovibrio crunogenus QUIMIOLITOTROFO)
-notes: 'Source: public'
-ingredients: []
+notes: MediaDive public Medium P10 provides the current Modified BekiSolidMedium agar
+  recipe at pH 6.8-7.4. The official JSON lists an Elemento traza row in the main
+  solution with amount 0 and a blank unit, so the trace-element solution composition
+  is preserved with a variable addition volume rather than an invented ml/L dose.
+ingredients:
+- preferred_term: NaCl
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  source: MediaDive public Medium P10
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: MediaDive public Medium P10
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  source: MediaDive public Medium P10
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Phosphate buffer
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  source: MediaDive public Medium P10
+- preferred_term: Na2S2O4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: MediaDive public Medium P10
+  term:
+    id: CHEBI:66870
+    label: sodium dithionite
+  mediaingredientmech_chebi_term:
+    id: CHEBI:66870
+    label: sodium dithionite
+- preferred_term: KNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  source: MediaDive public Medium P10
+  term:
+    id: CHEBI:63043
+    label: potassium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63043
+    label: potassium nitrate
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  source: MediaDive public Medium P10
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 applications:
 - Microbial cultivation
 curation_history:
@@ -46,5 +120,100 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_mediadive_public_score30.py
+  action: RESOLVED_MEDIADIVE_PUBLIC_SCORE30
+  changes: Resolved score-30 public MediaDive placeholder graph
+  source: https://www.bacmedia.dsmz.de/medium/P10
+  notes: MediaDive public Medium P10 provides the current Modified BekiSolidMedium
+    agar recipe at pH 6.8-7.4. The official JSON lists an Elemento traza row in the
+    main solution with amount 0 and a blank unit, so the trace-element solution composition
+    is preserved with a variable addition volume rather than an invented ml/L dose.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+solutions:
+- preferred_term: Elemento traza
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: P10 lists Elemento traza in the main solution with amount 0 and a blank unit;
+    the official recipe does not disclose the stock volume added per liter.
+  composition:
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.05'
+      unit: G_PER_L
+    source: MediaDive public Medium P10
+  - preferred_term: FeSO4 x 7 H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: MediaDive public Medium P10
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '0.05'
+      unit: G_PER_L
+    source: MediaDive public Medium P10
+  - preferred_term: CuSO4 x 5 H2O
+    concentration:
+      value: '0.05'
+      unit: G_PER_L
+    source: MediaDive public Medium P10
+    notes: The P10 stock table omits the unit, but the preparation text specifies
+      0.05 g.
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+  - preferred_term: CuCl2
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: MediaDive public Medium P10
+    term:
+      id: CHEBI:49553
+      label: CuCl2
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49553
+      label: CuCl2
+  - preferred_term: Fe(III)NH4-EDTA
+    concentration:
+      value: '0.05'
+      unit: G_PER_L
+    source: MediaDive public Medium P10
+  - preferred_term: (NH4)2MoO4
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    source: MediaDive public Medium P10
+    term:
+      id: CHEBI:91249
+      label: ammonium molybdate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91249
+      label: ammonium molybdate
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the base in 1 L distilled water with NaCl, CaCl2 x 2 H2O, NaHCO3,
+    and phosphate buffer.
+- step_number: 2
+  action: MIX
+  description: Add Na2S2O4 and prepare the Elemento traza solution from ZnSO4 x 7
+    H2O, FeSO4 x 7 H2O, MnCl2 x 4 H2O, CuSO4 x 5 H2O, CuCl2, Fe(III)NH4-EDTA, and
+    (NH4)2MoO4.
+- step_number: 3
+  action: MIX
+  description: Add KNO3 and agar to complete the solid medium.
+references:
+- reference: https://www.bacmedia.dsmz.de/medium/P10

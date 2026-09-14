@@ -3,39 +3,27 @@ name: MoLS4 no ammonium no Mo no W
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
-ingredients:
+media_term:
+  preferred_term: MoLS4 no ammonium no Mo no W
+ingredients: []
+solutions:
 - preferred_term: MoLS4
   concentration:
     value: '1'
     unit: FOLD_DILUTION
-- preferred_term: Ammonium chloride
-  concentration:
-    value: '-'
-    unit: G_PER_L
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
-  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 12125-02-9; MW:
-    53.49'
-- preferred_term: Sodium molybdate
-  concentration:
-    value: '-'
-    unit: G_PER_L
-  notes: 'CAS: 7631-95-0; MW: 205.92; Ontology enriched via CAS-RN lookup'
-  term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
-- preferred_term: Sodium tungstate dihydrate
-  concentration:
-    value: '-'
-    unit: G_PER_L
-  notes: 'CAS: 10213-10-2; MW: 329.85; Ontology enriched via CAS-RN lookup'
-  term:
-    id: CHEBI:63939
-    label: sodium tungstate dihydrate
+  culturemech_term:
+    id: CultureMech:015607
+    label: MoLS4
+  notes: CultureBotHT lists MoLS4 at one-fold final strength.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare MoLS4 without Ammonium chloride, Sodium molybdate, and Sodium
+    tungstate dihydrate.
 description: Lactate-sulfate media for sulfate-reducing bacteria with no ammonia or
   Mo or W
-notes: 'Source: FEBA media definitions'
+notes: CultureBotHT imports MoLS4 no ammonium no Mo no W as MoLS4 with Ammonium chloride,
+  Sodium molybdate, and Sodium tungstate dihydrate omitted.
 category: specialized
 sources:
 - database: CultureBotHT
@@ -54,5 +42,26 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: RESOLVED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Resolved score-30 CultureBotHT omitted-component variant
+  source: CultureBotHT:MoLS4 no ammonium no Mo no W; https://github.com/CultureBotAI/CultureBotHT
+  notes: CultureBotHT imports MoLS4 no ammonium no Mo no W as MoLS4 with Ammonium
+    chloride, Sodium molybdate, and Sodium tungstate dihydrate omitted.
 data_quality_flags:
-- has_unmapped_ingredients
+- has_ontology_mappings
+- ingredients_curated
+parent_media:
+  path: data/normalized_yaml/specialized/mols4.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015607
+  name: MoLS4
+  notes: Omits Ammonium chloride, Sodium molybdate, and Sodium tungstate dihydrate
+    from MoLS4.
+variant_relationship: OMITTED_COMPONENT_VARIANT
+variant_modifications:
+- Omits Ammonium chloride, Sodium molybdate, and Sodium tungstate dihydrate from MoLS4.
+references:
+- reference: CultureBotHT:MoLS4 no ammonium no Mo no W
+- reference: https://github.com/CultureBotAI/CultureBotHT

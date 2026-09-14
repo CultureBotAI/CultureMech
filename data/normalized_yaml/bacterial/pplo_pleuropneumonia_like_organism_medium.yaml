@@ -2,29 +2,13 @@ id: CultureMech:009512
 name: pplo_pleuropneumonia_like_organism_medium
 original_name: PPLO (pleuropneumonia-like organism) medium
 category: bacterial
-medium_type: COMPLEX
-composition_type: UNDEFINED
-physical_state: LIQUID
-ingredients:
-- preferred_term: PPLO (pleuropneumonia-like organism) medium
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-- preferred_term: CO2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-  term:
-    id: CHEBI:16526
-    label: carbon dioxide
 media_term:
   preferred_term: TOGO Medium M2996
   term:
     id: TOGO:M2996
     label: PPLO (pleuropneumonia-like organism) medium
-notes: 'Source: https://togomedium.org/medium/M2996'
+notes: TOGO M2996 records one liter of PPLO medium with 10 mg/L NAD and growth at
+  37 C in a 5% CO2 atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -49,3 +33,50 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_m1546_m2996_score20.py
+  action: RESOLVED_TOGO_M1546_M2996_SCORE20
+  source: https://togomedium.org/medium/M2996
+  notes: TOGO M2996 records one liter of PPLO medium with 10 mg/L NAD and growth at
+    37 C in a 5% CO2 atmosphere.
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+temperature_value: 37.0
+ingredients:
+- preferred_term: PPLO (pleuropneumonia-like organism) medium
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2996
+  notes: TOGO M2996 lists 1.0 L PPLO medium from Difco.
+- preferred_term: NAD
+  concentration:
+    value: '10'
+    unit: MG_PER_L
+  source: TOGO M2996
+  notes: TOGO M2996 states PPLO medium was supplemented with NAD at 10 ug/mL.
+  term:
+    id: CHEBI:15846
+    label: NAD(+)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15846
+    label: NAD(+)
+- preferred_term: CO2
+  concentration:
+    value: '5'
+    unit: PERCENT_V_V
+  source: TOGO M2996
+  notes: TOGO M2996 records growth in a 5% CO2 atmosphere.
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2996

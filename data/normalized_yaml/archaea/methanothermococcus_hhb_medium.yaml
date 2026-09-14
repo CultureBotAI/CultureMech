@@ -369,6 +369,12 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_archaeoglobus_mcr_score20.py
+  action: LINKED_ARCHAEOGLOBUS_MCR_SCORE20_CHILDREN
+  changes: Linked Archaeoglobus MCR child variant to its HHB base parent
+  source: https://togomedium.org/medium/M1280
+  notes: Added or refreshed reciprocal supplemented-variant link for archaea/archaeoglobus_mcr_medium.yaml.
 solutions:
 - preferred_term: Selenite-tungstate solution
   term:
@@ -379,3 +385,10 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_5543_Selenite-tungstate_solution.yaml for composition
   name: Unknown solution
+variant_children:
+- path: data/normalized_yaml/archaea/archaeoglobus_mcr_medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:002362
+  name: archaeoglobus_mcr_medium
+  notes: Supplements JCM Medium J1194 Methanothermococcus HHB Medium with 2.8 g/L
+    Na2SO4.

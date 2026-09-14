@@ -8,25 +8,33 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Yeast extract
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M1886 / NBRC Medium 1130
+  notes: TOGO M1886 / NBRC Medium 1130 lists 10.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Seawater (3 % salinity)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source, Solvating media; Properties: Undefined component'
+    value: '1.0'
+    unit: L
+  source: TOGO M1886 / NBRC Medium 1130
+  notes: TOGO M1886 / NBRC Medium 1130 lists 1 L Seawater at 3% salinity; this natural
+    seawater is retained as an opaque component.
 - preferred_term: Turban shell (sazae) meat cut
   concentration:
-    value: '75'
+    value: '75.0'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Undefined component'
+  source: TOGO M1886 / NBRC Medium 1130
+  notes: TOGO M1886 / NBRC Medium 1130 lists 75.0 g/L Turban shell (sazae) meat cut;
+    this animal tissue is retained as an opaque component.
 - preferred_term: Glucose
   concentration:
-    value: '30'
+    value: '30.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
+  source: TOGO M1886 / NBRC Medium 1130
+  notes: TOGO M1886 / NBRC Medium 1130 lists 30.0 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
@@ -35,9 +43,10 @@ ingredients:
     label: glucose
 - preferred_term: Agar
   concentration:
-    value: '12'
+    value: '12.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M1886 / NBRC Medium 1130
+  notes: TOGO M1886 / NBRC Medium 1130 lists 12.0 g/L Agar.
   term:
     id: CHEBI:2509
     label: agar
@@ -49,11 +58,10 @@ media_term:
   term:
     id: TOGO:M1886
     label: Sazae YGS
-notes: 'Source: https://togomedium.org/medium/M1886
-
-  Original source: NBRC - NBRC_M1130
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1130'
+notes: TOGO M1886 / NBRC Medium 1130 lists Sazae YGS with 10.0 g/L Yeast extract,
+  1.0 L Seawater at 3% salinity, 75.0 g/L Turban shell (sazae) meat cut, 30.0 g/L
+  Glucose, and 12.0 g/L Agar. Seawater and turban-shell meat are retained as opaque
+  sourced components.
 applications:
 - Microbial cultivation
 curation_history:
@@ -83,4 +91,20 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-kg_microbe_match: mediadive.medium:7
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m1886_sazae_ygs_score15.py
+  action: RESOLVED_TOGO_M1886_SAZAE_YGS_SCORE15
+  source: https://togomedium.org/medium/M1886; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1130
+  notes: TOGO M1886 / NBRC Medium 1130 lists Sazae YGS with 10.0 g/L Yeast extract,
+    1.0 L Seawater at 3% salinity, 75.0 g/L Turban shell (sazae) meat cut, 30.0 g/L
+    Glucose, and 12.0 g/L Agar. Seawater and turban-shell meat are retained as opaque
+    sourced components. Corrected the imported 1 L seawater unit, grounded yeast extract,
+    kept seawater and sazae meat as opaque sourced components, and removed the false
+    MediaDive 7 match.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1886
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1130

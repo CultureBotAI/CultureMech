@@ -6,21 +6,266 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
-notes: 'pH buffer: sodium bicarbonate | Source: KOMODO ModelSEED | ID: 707 | DSMZ
-  Medium: 707 (mediadive.medium:707) | Aerobic: Yes'
+notes: Archived DSMZ Medium 707 defines THERMODESULFORHABDUS MEDIUM with acetate,
+  sulfate, mineral salts, 1 mL/L DSMZ Medium 320 SL-10 trace element solution, sodium
+  bicarbonate for pH 6.8 adjustment, 0.15 g/L sodium sulfide, and 50 mg/L sodium dithionite;
+  this record expands archived DSMZ Media 707 and 320 into final per-liter components.
 media_term:
   preferred_term: KOMODO Medium 707
   term:
     id: komodo.medium:707
     label: THERMODESULFORHABDUS MEDIUM
 ingredients:
-- preferred_term: sodium
-  notes: Extracted from recipe notes (pH buffer)
-  data_quality_flags:
-  - extracted_from_notes
+- preferred_term: Na-acetate x 3 H2O
+  source: Archived DSMZ Medium 707
+  notes: Archived DSMZ Medium 707 lists 6.20 g/L Na-acetate x 3 H2O per liter.
+  concentration:
+    value: '6.200000'
+    unit: G_PER_L
+  term: &id001
+    id: CHEBI:32138
+    label: sodium acetate trihydrate
+  mediaingredientmech_chebi_term: *id001
+- preferred_term: Na2SO4
+  source: Archived DSMZ Medium 707
+  notes: Archived DSMZ Medium 707 lists 7.00 g/L Na2SO4 per liter.
+  concentration:
+    value: '7.000000'
+    unit: G_PER_L
+  term: &id002
+    id: CHEBI:32149
+    label: sodium sulfate
+  mediaingredientmech_chebi_term: *id002
+- preferred_term: NH4Cl
+  source: Archived DSMZ Medium 707
+  notes: Archived DSMZ Medium 707 lists 0.25 g/L NH4Cl per liter.
+  concentration:
+    value: '0.250000'
+    unit: G_PER_L
+  term: &id003
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term: *id003
+- preferred_term: KH2PO4
+  source: Archived DSMZ Medium 707
+  notes: Archived DSMZ Medium 707 lists 1.00 g/L KH2PO4 per liter.
+  concentration:
+    value: '1.000000'
+    unit: G_PER_L
+  term: &id004
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term: *id004
+- preferred_term: NaCl
+  source: Archived DSMZ Medium 707
+  notes: Archived DSMZ Medium 707 lists 10.00 g/L NaCl per liter.
+  concentration:
+    value: '10.000000'
+    unit: G_PER_L
+  term: &id005
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term: *id005
+- preferred_term: MgCl2 x 6 H2O
+  source: Archived DSMZ Medium 707
+  notes: Archived DSMZ Medium 707 lists 3.00 g/L MgCl2 x 6 H2O per liter.
+  concentration:
+    value: '3.000000'
+    unit: G_PER_L
+  term: &id006
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term: *id006
+- preferred_term: CaCl2 x 2 H2O
+  source: Archived DSMZ Medium 707
+  notes: Archived DSMZ Medium 707 lists 0.15 g/L CaCl2 x 2 H2O per liter.
+  concentration:
+    value: '0.150000'
+    unit: G_PER_L
+  term: &id007
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term: *id007
+- preferred_term: HCl
+  source: Archived DSMZ Medium 320 SL-10 trace element solution
+  notes: Archived DSMZ Medium 707 adds 1 mL of the Archived DSMZ Medium 320 SL-10
+    trace element solution; the SL-10 stock contains 2.50 g/L HCl, yielding 0.002498
+    g/L.
+  concentration:
+    value: '0.002498'
+    unit: G_PER_L
+  term: &id008
+    id: CHEBI:17883
+    label: hydrogen chloride
+  mediaingredientmech_chebi_term: *id008
+- preferred_term: FeCl2 x 4 H2O
+  source: Archived DSMZ Medium 320 SL-10 trace element solution
+  notes: Archived DSMZ Medium 707 adds 1 mL of the Archived DSMZ Medium 320 SL-10
+    trace element solution; the SL-10 stock contains 1.50 g/L FeCl2 x 4 H2O, yielding
+    0.001499 g/L.
+  concentration:
+    value: '0.001499'
+    unit: G_PER_L
+  term: &id009
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+  mediaingredientmech_chebi_term: *id009
+- preferred_term: ZnCl2
+  source: Archived DSMZ Medium 320 SL-10 trace element solution
+  notes: Archived DSMZ Medium 707 adds 1 mL of the Archived DSMZ Medium 320 SL-10
+    trace element solution; the SL-10 stock contains 0.070 g/L ZnCl2, yielding 0.0000699
+    g/L.
+  concentration:
+    value: '0.0000699'
+    unit: G_PER_L
+  term: &id010
+    id: CHEBI:49976
+    label: zinc dichloride
+  mediaingredientmech_chebi_term: *id010
+- preferred_term: MnCl2 x 4 H2O
+  source: Archived DSMZ Medium 320 SL-10 trace element solution
+  notes: Archived DSMZ Medium 707 adds 1 mL of the Archived DSMZ Medium 320 SL-10
+    trace element solution; the SL-10 stock contains 0.100 g/L MnCl2 x 4 H2O, yielding
+    0.0000999 g/L.
+  concentration:
+    value: '0.0000999'
+    unit: G_PER_L
+  term: &id011
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  mediaingredientmech_chebi_term: *id011
+- preferred_term: H3BO3
+  source: Archived DSMZ Medium 320 SL-10 trace element solution
+  notes: Archived DSMZ Medium 707 adds 1 mL of the Archived DSMZ Medium 320 SL-10
+    trace element solution; the SL-10 stock contains 0.006 g/L H3BO3, yielding 0.00000599
+    g/L.
+  concentration:
+    value: '0.00000599'
+    unit: G_PER_L
+  term: &id012
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term: *id012
+- preferred_term: CoCl2 x 6 H2O
+  source: Archived DSMZ Medium 320 SL-10 trace element solution
+  notes: Archived DSMZ Medium 707 adds 1 mL of the Archived DSMZ Medium 320 SL-10
+    trace element solution; the SL-10 stock contains 0.190 g/L CoCl2 x 6 H2O, yielding
+    0.000190 g/L.
+  concentration:
+    value: '0.000190'
+    unit: G_PER_L
+  term: &id013
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  mediaingredientmech_chebi_term: *id013
+- preferred_term: CuCl2 x 2 H2O
+  source: Archived DSMZ Medium 320 SL-10 trace element solution
+  notes: Archived DSMZ Medium 707 adds 1 mL of the Archived DSMZ Medium 320 SL-10
+    trace element solution; the SL-10 stock contains 0.002 g/L CuCl2 x 2 H2O, yielding
+    0.00000200 g/L.
+  concentration:
+    value: '0.00000200'
+    unit: G_PER_L
+  term: &id014
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+  mediaingredientmech_chebi_term: *id014
+- preferred_term: NiCl2 x 6 H2O
+  source: Archived DSMZ Medium 320 SL-10 trace element solution
+  notes: Archived DSMZ Medium 707 adds 1 mL of the Archived DSMZ Medium 320 SL-10
+    trace element solution; the SL-10 stock contains 0.024 g/L NiCl2 x 6 H2O, yielding
+    0.0000240 g/L.
+  concentration:
+    value: '0.0000240'
+    unit: G_PER_L
+  term: &id015
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+  mediaingredientmech_chebi_term: *id015
+- preferred_term: Na2MoO4 x 2 H2O
+  source: Archived DSMZ Medium 320 SL-10 trace element solution
+  notes: Archived DSMZ Medium 707 adds 1 mL of the Archived DSMZ Medium 320 SL-10
+    trace element solution; the SL-10 stock contains 0.036 g/L Na2MoO4 x 2 H2O, yielding
+    0.0000360 g/L.
+  concentration:
+    value: '0.0000360'
+    unit: G_PER_L
+  term: &id016
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term: *id016
+- preferred_term: Resazurin
+  source: Archived DSMZ Medium 707
+  notes: Archived DSMZ Medium 707 lists 0.50 mg/L Resazurin per liter.
+  concentration:
+    value: '0.000500'
+    unit: G_PER_L
+  term: &id017
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term: *id017
+- preferred_term: NaHCO3
+  source: Archived DSMZ Medium 707
+  notes: Archived DSMZ Medium 707 adjusts medium pH to 6.8 with sterile 5% sodium
+    bicarbonate.
   concentration:
     value: variable
     unit: VARIABLE
+  term: &id018
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term: *id018
+- preferred_term: sodium sulfide
+  source: Archived DSMZ Medium 707
+  notes: Archived DSMZ Medium 707 reduces the medium with 0.15 g/L sodium sulfide.
+  concentration:
+    value: '0.150000'
+    unit: G_PER_L
+  term: &id019
+    id: CHEBI:76208
+    label: sodium sulfide (anhydrous)
+  mediaingredientmech_chebi_term: *id019
+- preferred_term: Na2S2O4
+  source: Archived DSMZ Medium 707
+  notes: Archived DSMZ Medium 707 reduces the medium with 50 mg/L sodium dithionite.
+  concentration:
+    value: '0.050000'
+    unit: G_PER_L
+  term: &id020
+    id: CHEBI:66870
+    label: sodium dithionite
+  mediaingredientmech_chebi_term: *id020
+- preferred_term: N2
+  source: Archived DSMZ Medium 707
+  notes: Archived DSMZ Medium 707 prepares the medium anaerobically under 100% N2.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term: &id021
+    id: CHEBI:17997
+    label: dinitrogen
+  mediaingredientmech_chebi_term: *id021
+- preferred_term: CO2
+  source: Archived DSMZ Medium 707
+  notes: Archived DSMZ Medium 707 prepares the sodium bicarbonate stock under 80%
+    N2 and 20% CO2.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term: &id022
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term: *id022
+- preferred_term: Distilled water
+  source: Archived DSMZ Medium 707
+  notes: Archived DSMZ Medium 707 lists 1000 mL distilled water.
+  concentration:
+    value: '1000.000'
+    unit: ML_PER_L
+  term: &id023
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term: *id023
 applications:
 - Microbial cultivation
 curation_history:
@@ -45,3 +290,19 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_707_score35.py
+  action: RESOLVED_KOMODO_707_SCORE35
+  source: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium707.pdf
+  notes: Archived DSMZ Medium 707 defines THERMODESULFORHABDUS MEDIUM with acetate,
+    sulfate, mineral salts, 1 mL/L DSMZ Medium 320 SL-10 trace element solution, sodium
+    bicarbonate for pH 6.8 adjustment, 0.15 g/L sodium sulfide, and 50 mg/L sodium
+    dithionite; this record expands archived DSMZ Media 707 and 320 into final per-liter
+    components.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=707
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium707.pdf
+- reference: https://web.archive.org/web/20121030075431id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium320.pdf

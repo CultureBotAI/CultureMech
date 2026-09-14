@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T10:16:30.375941+00:00",
+  "generated": "2026-09-14T19:00:04.480209+00:00",
   "source": "MediaDive",
   "count": 3325,
   "recipes": {
@@ -4019,7 +4019,7 @@
     "CultureMech:002908": {
       "name": "1_10_potato_carrot_agar",
       "filename": "1_10_potato_carrot_agar.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:002908",
       "source_id": "mediadive.medium:J55",
       "source": "MediaDive",
@@ -4045,7 +4045,7 @@
     "CultureMech:003149": {
       "name": "1_10_r2a_agar",
       "filename": "1_10_r2a_agar.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:003149",
       "source_id": "mediadive.medium:J804",
       "source": "MediaDive",
@@ -4057,7 +4057,7 @@
     "CultureMech:003150": {
       "name": "1_10_r2a_broth",
       "filename": "1_10_r2a_broth.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:003150",
       "source_id": "mediadive.medium:J805",
       "source": "MediaDive",
@@ -4117,7 +4117,7 @@
     "CultureMech:003190": {
       "name": "1_2_r2a_agar",
       "filename": "1_2_r2a_agar.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:003190",
       "source_id": "mediadive.medium:J845",
       "source": "MediaDive",
@@ -4179,7 +4179,7 @@
     "CultureMech:003187": {
       "name": "1_3_lb_agar",
       "filename": "1_3_lb_agar.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 5,
       "id": "CultureMech:003187",
       "source_id": "mediadive.medium:J842",
       "source": "MediaDive",
@@ -4215,7 +4215,7 @@
     "CultureMech:002718": {
       "name": "1_tryptone_agar",
       "filename": "1_tryptone_agar.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:002718",
       "source_id": "mediadive.medium:J359",
       "source": "MediaDive",
@@ -4251,7 +4251,7 @@
     "CultureMech:003216": {
       "name": "25_glucose_medium",
       "filename": "25_glucose_medium.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 6,
       "id": "CultureMech:003216",
       "source_id": "mediadive.medium:J86",
       "source": "MediaDive",
@@ -4506,7 +4506,7 @@
     "CultureMech:001029": {
       "name": "948_oxoid_nutrient_broth_with_additonal_salt",
       "filename": "948_oxoid_nutrient_broth_with_additonal_salt.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 7,
       "id": "CultureMech:001029",
       "source_id": "mediadive.medium:1551",
       "source": "MediaDive",
@@ -4961,7 +4961,7 @@
     "CultureMech:001823": {
       "name": "columbia_blood_agar",
       "filename": "DSMZ_687_COLUMBIA_BLOOD_AGAR.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 8,
       "id": "CultureMech:001823",
       "source_id": "mediadive.medium:687",
       "source": "MediaDive",
@@ -5119,10 +5119,11 @@
     "CultureMech:002194": {
       "name": "alkaline_nutrient_agar",
       "filename": "JCM_J100_ALKALINE_NUTRIENT_AGAR.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:002194",
       "source_id": "mediadive.medium:J100",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -5313,7 +5314,7 @@
     "CultureMech:002367": {
       "name": "bcye_agar",
       "filename": "JCM_J119_BCYE_AGAR.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:002367",
       "source_id": "mediadive.medium:J119",
       "source": "MediaDive",
@@ -5435,7 +5436,7 @@
     "CultureMech:002469": {
       "name": "helicobacter_medium",
       "filename": "JCM_J1305_HELICOBACTER_MEDIUM.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 7,
       "id": "CultureMech:002469",
       "source_id": "mediadive.medium:J1305",
       "source": "MediaDive",
@@ -5447,7 +5448,7 @@
     "CultureMech:002492": {
       "name": "corn_meal_agar",
       "filename": "JCM_J1329_CORN_MEAL_AGAR.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:002492",
       "source_id": "mediadive.medium:J1329",
       "source": "MediaDive",
@@ -5471,7 +5472,7 @@
     "CultureMech:002506": {
       "name": "oatmeal_agar",
       "filename": "JCM_J148_OATMEAL_AGAR.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:002506",
       "source_id": "mediadive.medium:J148",
       "source": "MediaDive",
@@ -5483,7 +5484,7 @@
     "CultureMech:002509": {
       "name": "corn_meal_agar",
       "filename": "JCM_J150_CORN_MEAL_AGAR.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:002509",
       "source_id": "mediadive.medium:J150",
       "source": "MediaDive",
@@ -5702,14 +5703,14 @@
     "CultureMech:002633": {
       "name": "castenholz_medium",
       "filename": "JCM_J276_CASTENHOLZ_MEDIUM.yaml",
-      "ingredient_count": 10,
+      "ingredient_count": 3,
       "id": "CultureMech:002633",
       "source_id": "mediadive.medium:J276",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:002652": {
@@ -5777,10 +5778,11 @@
     "CultureMech:002705": {
       "name": "horikoshi_1_medium_with_10_nacl",
       "filename": "JCM_J345_HORIKOSHI-1_MEDIUM_WITH_10_NaCl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:002705",
       "source_id": "mediadive.medium:J345",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -5875,10 +5877,11 @@
     "CultureMech:002741": {
       "name": "glycerol_soil_medium",
       "filename": "JCM_J384_GLYCEROL-SOIL_MEDIUM.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 5,
       "id": "CultureMech:002741",
       "source_id": "mediadive.medium:J384",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -5887,10 +5890,11 @@
     "CultureMech:002744": {
       "name": "pygv_agar",
       "filename": "JCM_J387_PYGV_AGAR.yaml",
-      "ingredient_count": 18,
+      "ingredient_count": 5,
       "id": "CultureMech:002744",
       "source_id": "mediadive.medium:J387",
       "source": "MediaDive",
+      "solution_count": 3,
       "categories": [
         "bacterial"
       ],
@@ -6240,7 +6244,7 @@
     "CultureMech:002897": {
       "name": "potato_carrot_agar",
       "filename": "JCM_J54_POTATO-CARROT_AGAR.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:002897",
       "source_id": "mediadive.medium:J54",
       "source": "MediaDive",
@@ -6324,7 +6328,7 @@
     "CultureMech:002958": {
       "name": "sphaerotilus_medium",
       "filename": "JCM_J610_SPHAEROTILUS_MEDIUM.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 5,
       "id": "CultureMech:002958",
       "source_id": "mediadive.medium:J610",
       "source": "MediaDive",
@@ -6348,10 +6352,11 @@
     "CultureMech:002965": {
       "name": "cys_medium",
       "filename": "JCM_J618_CYS_MEDIUM.yaml",
-      "ingredient_count": 14,
+      "ingredient_count": 8,
       "id": "CultureMech:002965",
       "source_id": "mediadive.medium:J618",
       "source": "MediaDive",
+      "solution_count": 7,
       "categories": [
         "bacterial"
       ],
@@ -6470,7 +6475,7 @@
     "CultureMech:003061": {
       "name": "hemin_medium_for_mycobacterium",
       "filename": "JCM_J714_HEMIN_MEDIUM_FOR_MYCOBACTERIUM.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 5,
       "id": "CultureMech:003061",
       "source_id": "mediadive.medium:J714",
       "source": "MediaDive",
@@ -6531,7 +6536,7 @@
     "CultureMech:003093": {
       "name": "nutrient_agar",
       "filename": "JCM_J74_NUTRIENT_AGAR.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:003093",
       "source_id": "mediadive.medium:J74",
       "source": "MediaDive",
@@ -6592,7 +6597,7 @@
     "CultureMech:003151": {
       "name": "gs_medium",
       "filename": "JCM_J806_GS_MEDIUM.yaml",
-      "ingredient_count": 17,
+      "ingredient_count": 14,
       "id": "CultureMech:003151",
       "source_id": "mediadive.medium:J806",
       "source": "MediaDive",
@@ -7667,7 +7672,7 @@
     "CultureMech:002006": {
       "name": "ae_medium",
       "filename": "ae_medium.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 7,
       "id": "CultureMech:002006",
       "source_id": "mediadive.medium:849",
       "source": "MediaDive",
@@ -7926,10 +7931,11 @@
     "CultureMech:002805": {
       "name": "alkali_reinforced_clostridial_agar",
       "filename": "alkali_reinforced_clostridial_agar.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:002805",
       "source_id": "mediadive.medium:J455",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -8046,10 +8052,11 @@
     "CultureMech:003106": {
       "name": "alkaline_tryptone_soya_broth_medium",
       "filename": "alkaline_tryptone_soya_broth_medium.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 2,
       "id": "CultureMech:003106",
       "source_id": "mediadive.medium:J763",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -9621,7 +9628,7 @@
     "CultureMech:002807": {
       "name": "b_medium",
       "filename": "b_medium.yaml",
-      "ingredient_count": 8,
+      "ingredient_count": 9,
       "id": "CultureMech:002807",
       "source_id": "mediadive.medium:J458",
       "source": "MediaDive",
@@ -10128,10 +10135,11 @@
     "CultureMech:010430": {
       "name": "bekisolidmedium_hydrogenovibrio_crunogenus_quimiolitotrofo",
       "filename": "bekisolidmedium_hydrogenovibrio_crunogenus_quimiolitotrofo.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 7,
       "id": "CultureMech:010430",
       "source_id": "mediadive.medium:P10",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -10288,7 +10296,7 @@
     "CultureMech:001317": {
       "name": "bhi_medium_for_strict_anaerobes",
       "filename": "bhi_medium_for_strict_anaerobes.yaml",
-      "ingredient_count": 8,
+      "ingredient_count": 4,
       "id": "CultureMech:001317",
       "source_id": "mediadive.medium:215c",
       "source": "MediaDive",
@@ -10384,10 +10392,11 @@
     "CultureMech:002499": {
       "name": "bl_agar_glucose_blood_liver_agar",
       "filename": "bl_agar_glucose_blood_liver_agar.yaml",
-      "ingredient_count": 18,
+      "ingredient_count": 11,
       "id": "CultureMech:002499",
       "source_id": "mediadive.medium:J13",
       "source": "MediaDive",
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
@@ -10532,10 +10541,11 @@
     "CultureMech:001155": {
       "name": "bme_ctvm2_cell_line_medium_occidentia_massiliensis",
       "filename": "bme_ctvm2_cell_line_medium_occidentia_massiliensis.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 3,
       "id": "CultureMech:001155",
       "source_id": "mediadive.medium:1670",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -10580,7 +10590,7 @@
     "CultureMech:001546": {
       "name": "bordet_gengou_medium_difco",
       "filename": "bordet_gengou_medium_difco.yaml",
-      "ingredient_count": 8,
+      "ingredient_count": 2,
       "id": "CultureMech:001546",
       "source_id": "mediadive.medium:438",
       "source": "MediaDive",
@@ -10761,10 +10771,11 @@
     "CultureMech:003022": {
       "name": "brucella_blood_agar_with_hemin_menadione",
       "filename": "brucella_blood_agar_with_hemin_menadione.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:003022",
       "source_id": "mediadive.medium:J677",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -10801,6 +10812,7 @@
       "id": "CultureMech:003213",
       "source_id": "mediadive.medium:J867",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -11466,7 +11478,7 @@
     "CultureMech:001547": {
       "name": "casman_medium",
       "filename": "casman_medium.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:001547",
       "source_id": "mediadive.medium:439",
       "source": "MediaDive",
@@ -11703,6 +11715,7 @@
       "id": "CultureMech:001374",
       "source_id": "mediadive.medium:277",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -11810,7 +11823,7 @@
     "CultureMech:000331": {
       "name": "chm",
       "filename": "chm.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:000331",
       "source_id": "mediadive.medium:C23",
       "source": "MediaDive",
@@ -11834,7 +11847,7 @@
     "CultureMech:002436": {
       "name": "chocolate_agar_with_5_sheep_blood",
       "filename": "chocolate_agar_with_5_sheep_blood.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:002436",
       "source_id": "mediadive.medium:J1270",
       "source": "MediaDive",
@@ -11884,7 +11897,7 @@
     "CultureMech:001928": {
       "name": "chopped_meat_medium_n2_co2",
       "filename": "chopped_meat_medium_n2_co2.yaml",
-      "ingredient_count": 11,
+      "ingredient_count": 6,
       "id": "CultureMech:001928",
       "source_id": "mediadive.medium:78b",
       "source": "MediaDive",
@@ -12638,7 +12651,7 @@
     "CultureMech:002953": {
       "name": "cooked_meat_medium",
       "filename": "cooked_meat_medium.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:002953",
       "source_id": "mediadive.medium:J605",
       "source": "MediaDive",
@@ -12820,7 +12833,7 @@
     "CultureMech:001271": {
       "name": "cultivation_medium_for_sf1ep_cells_for_treponema_pallidum",
       "filename": "cultivation_medium_for_sf1ep_cells_for_treponema_pallidum.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 5,
       "id": "CultureMech:001271",
       "source_id": "mediadive.medium:1850",
       "source": "MediaDive",
@@ -13083,10 +13096,11 @@
     "CultureMech:002966": {
       "name": "cys_medium_for_ymo722",
       "filename": "cys_medium_for_ymo722.yaml",
-      "ingredient_count": 14,
+      "ingredient_count": 8,
       "id": "CultureMech:002966",
       "source_id": "mediadive.medium:J619",
       "source": "MediaDive",
+      "solution_count": 7,
       "categories": [
         "bacterial"
       ],
@@ -13846,10 +13860,11 @@
     "CultureMech:002020": {
       "name": "desulfofrigus_medium",
       "filename": "desulfofrigus_medium.yaml",
-      "ingredient_count": 35,
+      "ingredient_count": 0,
       "id": "CultureMech:002020",
       "source_id": "mediadive.medium:861",
       "source": "MediaDive",
+      "solution_count": 6,
       "categories": [
         "bacterial"
       ],
@@ -14324,10 +14339,11 @@
     "CultureMech:002021": {
       "name": "desulfotalea_psychrophila_medium",
       "filename": "desulfotalea_psychrophila_medium.yaml",
-      "ingredient_count": 35,
+      "ingredient_count": 0,
       "id": "CultureMech:002021",
       "source_id": "mediadive.medium:861a",
       "source": "MediaDive",
+      "solution_count": 6,
       "categories": [
         "bacterial"
       ],
@@ -14421,10 +14437,11 @@
     "CultureMech:002894": {
       "name": "desulfotomaculum_pbe_medium",
       "filename": "desulfotomaculum_pbe_medium.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 7,
       "id": "CultureMech:002894",
       "source_id": "mediadive.medium:J547",
       "source": "MediaDive",
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
@@ -14603,7 +14620,7 @@
     "CultureMech:001776": {
       "name": "desulfovibrio_medium_choline",
       "filename": "desulfovibrio_medium_choline.yaml",
-      "ingredient_count": 11,
+      "ingredient_count": 12,
       "id": "CultureMech:001776",
       "source_id": "mediadive.medium:63c",
       "source": "MediaDive",
@@ -14676,7 +14693,7 @@
     "CultureMech:002756": {
       "name": "desulfovibrio_piger_medium",
       "filename": "desulfovibrio_piger_medium.yaml",
-      "ingredient_count": 13,
+      "ingredient_count": 12,
       "id": "CultureMech:002756",
       "source_id": "mediadive.medium:J400",
       "source": "MediaDive",
@@ -15025,14 +15042,14 @@
     "CultureMech:003101": {
       "name": "dethiosulfovibrio_ii_medium",
       "filename": "dethiosulfovibrio_ii_medium.yaml",
-      "ingredient_count": 19,
+      "ingredient_count": 8,
       "id": "CultureMech:003101",
       "source_id": "mediadive.medium:J758",
       "source": "MediaDive",
+      "solution_count": 5,
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:002074": {
@@ -15850,7 +15867,7 @@
     "CultureMech:001028": {
       "name": "ex_lm_medium",
       "filename": "ex_lm_medium.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:001028",
       "source_id": "mediadive.medium:1550",
       "source": "MediaDive",
@@ -16000,7 +16017,7 @@
     "CultureMech:000653": {
       "name": "fastidious_anaerobe_agar",
       "filename": "fastidious_anaerobe_agar.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:000653",
       "source_id": "mediadive.medium:1203",
       "source": "MediaDive",
@@ -16012,7 +16029,7 @@
     "CultureMech:000654": {
       "name": "fastidious_anaerobe_broth",
       "filename": "fastidious_anaerobe_broth.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:000654",
       "source_id": "mediadive.medium:1203a",
       "source": "MediaDive",
@@ -16427,7 +16444,7 @@
     "CultureMech:002201": {
       "name": "freshwater_sap2_medium",
       "filename": "freshwater_sap2_medium.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:002201",
       "source_id": "mediadive.medium:J1018",
       "source": "MediaDive",
@@ -16659,7 +16676,7 @@
     "CultureMech:003042": {
       "name": "gam_broth_with_1_lactose",
       "filename": "gam_broth_with_1_lactose.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:003042",
       "source_id": "mediadive.medium:J697",
       "source": "MediaDive",
@@ -16671,7 +16688,7 @@
     "CultureMech:002478": {
       "name": "gam_broth_with_sodium_pyruvate",
       "filename": "gam_broth_with_sodium_pyruvate.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:002478",
       "source_id": "mediadive.medium:J1314",
       "source": "MediaDive",
@@ -16683,7 +16700,7 @@
     "CultureMech:003184": {
       "name": "gam_medium",
       "filename": "gam_medium.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:003184",
       "source_id": "mediadive.medium:J83",
       "source": "MediaDive",
@@ -16695,7 +16712,7 @@
     "CultureMech:003195": {
       "name": "gam_semisolid",
       "filename": "gam_semisolid.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:003195",
       "source_id": "mediadive.medium:J84",
       "source": "MediaDive",
@@ -17202,7 +17219,7 @@
     "CultureMech:002957": {
       "name": "glycerol_asparagine_agar_isp_5",
       "filename": "glycerol_asparagine_agar_isp_5.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 5,
       "id": "CultureMech:002957",
       "source_id": "mediadive.medium:J60",
       "source": "MediaDive",
@@ -17215,10 +17232,11 @@
     "CultureMech:002767": {
       "name": "glycerol_asparagine_agar_isp_5_with_10_nacl",
       "filename": "glycerol_asparagine_agar_isp_5_with_10_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:002767",
       "source_id": "mediadive.medium:J410",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -17626,10 +17644,11 @@
     "CultureMech:010431": {
       "name": "haha_agar",
       "filename": "haha_agar.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 2,
       "id": "CultureMech:010431",
       "source_id": "mediadive.medium:P1",
       "source": "MediaDive",
+      "solution_count": 12,
       "categories": [
         "bacterial"
       ],
@@ -17750,7 +17769,7 @@
     "CultureMech:002240": {
       "name": "half_strength_heart_infusion_agar",
       "filename": "half_strength_heart_infusion_agar.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:002240",
       "source_id": "mediadive.medium:J105",
       "source": "MediaDive",
@@ -17798,10 +17817,11 @@
     "CultureMech:002250": {
       "name": "half_strength_skim_milk_agar",
       "filename": "half_strength_skim_milk_agar.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 0,
       "id": "CultureMech:002250",
       "source_id": "mediadive.medium:J106",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -18427,7 +18447,7 @@
     "CultureMech:002278": {
       "name": "heart_infusion_agar_with_5_horse_blood",
       "filename": "heart_infusion_agar_with_5_horse_blood.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:002278",
       "source_id": "mediadive.medium:J1099",
       "source": "MediaDive",
@@ -18732,10 +18752,11 @@
     "CultureMech:002542": {
       "name": "horikoshi_i_medium",
       "filename": "horikoshi_i_medium.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 7,
       "id": "CultureMech:002542",
       "source_id": "mediadive.medium:J181",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -18744,10 +18765,11 @@
     "CultureMech:002765": {
       "name": "horikoshi_i_medium_with_2_nacl",
       "filename": "horikoshi_i_medium_with_2_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:002765",
       "source_id": "mediadive.medium:J409",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -18756,10 +18778,11 @@
     "CultureMech:002211": {
       "name": "horikoshi_i_medium_with_3_5_nacl",
       "filename": "horikoshi_i_medium_with_3_5_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:002211",
       "source_id": "mediadive.medium:J1028",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -18768,10 +18791,11 @@
     "CultureMech:002762": {
       "name": "horikoshi_i_medium_with_5_nacl",
       "filename": "horikoshi_i_medium_with_5_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:002762",
       "source_id": "mediadive.medium:J406",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -19066,7 +19090,7 @@
     "CultureMech:002937": {
       "name": "inorganic_salts_starch_agar_isp_4",
       "filename": "inorganic_salts_starch_agar_isp_4.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 8,
       "id": "CultureMech:002937",
       "source_id": "mediadive.medium:J58",
       "source": "MediaDive",
@@ -19079,10 +19103,11 @@
     "CultureMech:002712": {
       "name": "inorganic_salts_starch_agar_isp_4_with_10_nacl",
       "filename": "inorganic_salts_starch_agar_isp_4_with_10_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:002712",
       "source_id": "mediadive.medium:J351",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -19091,10 +19116,11 @@
     "CultureMech:003209": {
       "name": "inorganic_salts_starch_agar_isp_4_with_15_nacl",
       "filename": "inorganic_salts_starch_agar_isp_4_with_15_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:003209",
       "source_id": "mediadive.medium:J863",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -19103,10 +19129,11 @@
     "CultureMech:002328": {
       "name": "inorganic_salts_starch_agar_isp_4_with_5_nacl",
       "filename": "inorganic_salts_starch_agar_isp_4_with_5_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:002328",
       "source_id": "mediadive.medium:J1156",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -19333,7 +19360,7 @@
     "CultureMech:001099": {
       "name": "isp_7_medium",
       "filename": "isp_7_medium.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:001099",
       "source_id": "mediadive.medium:1619",
       "source": "MediaDive",
@@ -19494,7 +19521,7 @@
     "CultureMech:002488": {
       "name": "jcm_medium_no_1324",
       "filename": "jcm_medium_no_1324.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 8,
       "id": "CultureMech:002488",
       "source_id": "mediadive.medium:J1324",
       "source": "MediaDive",
@@ -19566,7 +19593,7 @@
     "CultureMech:002549": {
       "name": "jcm_medium_no_188",
       "filename": "jcm_medium_no_188.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 7,
       "id": "CultureMech:002549",
       "source_id": "mediadive.medium:J188",
       "source": "MediaDive",
@@ -19725,7 +19752,7 @@
     "CultureMech:002608": {
       "name": "jcm_medium_no_247",
       "filename": "jcm_medium_no_247.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:002608",
       "source_id": "mediadive.medium:J247",
       "source": "MediaDive",
@@ -19737,7 +19764,7 @@
     "CultureMech:002609": {
       "name": "jcm_medium_no_248",
       "filename": "jcm_medium_no_248.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:002609",
       "source_id": "mediadive.medium:J248",
       "source": "MediaDive",
@@ -19980,10 +20007,11 @@
     "CultureMech:003045": {
       "name": "jcm_medium_no_69",
       "filename": "jcm_medium_no_69.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:003045",
       "source_id": "mediadive.medium:J69",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -20080,7 +20108,7 @@
     "CultureMech:000642": {
       "name": "k7_medium",
       "filename": "k7_medium.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:000642",
       "source_id": "mediadive.medium:1199",
       "source": "MediaDive",
@@ -20167,7 +20195,7 @@
     "CultureMech:010433": {
       "name": "king_b",
       "filename": "king_b.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 5,
       "id": "CultureMech:010433",
       "source_id": "mediadive.medium:P3",
       "source": "MediaDive",
@@ -20229,10 +20257,11 @@
     "CultureMech:003169": {
       "name": "koko_medium",
       "filename": "koko_medium.yaml",
-      "ingredient_count": 32,
+      "ingredient_count": 11,
       "id": "CultureMech:003169",
       "source_id": "mediadive.medium:J825",
       "source": "MediaDive",
+      "solution_count": 6,
       "categories": [
         "bacterial"
       ],
@@ -20510,7 +20539,7 @@
     "CultureMech:002571": {
       "name": "lactobacillus_sakei_medium",
       "filename": "lactobacillus_sakei_medium.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 5,
       "id": "CultureMech:002571",
       "source_id": "mediadive.medium:J20",
       "source": "MediaDive",
@@ -20630,7 +20659,7 @@
     "CultureMech:003157": {
       "name": "lb_luria_bertani_broth_with_1_mm_dtt",
       "filename": "lb_luria_bertani_broth_with_1_mm_dtt.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 5,
       "id": "CultureMech:003157",
       "source_id": "mediadive.medium:J813",
       "source": "MediaDive",
@@ -20900,7 +20929,7 @@
     "CultureMech:000850": {
       "name": "lindane_medium",
       "filename": "lindane_medium.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:000850",
       "source_id": "mediadive.medium:138",
       "source": "MediaDive",
@@ -20912,7 +20941,7 @@
     "CultureMech:001915": {
       "name": "liver_broth_oxoid_cm_77",
       "filename": "liver_broth_oxoid_cm_77.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 2,
       "id": "CultureMech:001915",
       "source_id": "mediadive.medium:77",
       "source": "MediaDive",
@@ -21322,6 +21351,7 @@
       "id": "CultureMech:010438",
       "source_id": "mediadive.medium:P8",
       "source": "MediaDive",
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
@@ -21330,7 +21360,7 @@
     "CultureMech:000910": {
       "name": "m_05",
       "filename": "m_05.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:000910",
       "source_id": "mediadive.medium:1447",
       "source": "MediaDive",
@@ -21355,7 +21385,7 @@
     "CultureMech:003139": {
       "name": "m_tge_broth_medium",
       "filename": "m_tge_broth_medium.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:003139",
       "source_id": "mediadive.medium:J795",
       "source": "MediaDive",
@@ -21367,7 +21397,7 @@
     "CultureMech:003197": {
       "name": "m_tge_gp_medium",
       "filename": "m_tge_gp_medium.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 4,
       "id": "CultureMech:003197",
       "source_id": "mediadive.medium:J851",
       "source": "MediaDive",
@@ -21495,7 +21525,7 @@
     "CultureMech:002237": {
       "name": "maize_meal_sardine_agar",
       "filename": "maize_meal_sardine_agar.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:002237",
       "source_id": "mediadive.medium:J1054",
       "source": "MediaDive",
@@ -21725,7 +21755,7 @@
     "CultureMech:002748": {
       "name": "marinobacter_alkaliphilus_medium",
       "filename": "marinobacter_alkaliphilus_medium.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:002748",
       "source_id": "mediadive.medium:J392",
       "source": "MediaDive",
@@ -21837,10 +21867,11 @@
     "CultureMech:003033": {
       "name": "mb_medium_with_formate",
       "filename": "mb_medium_with_formate.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 13,
       "id": "CultureMech:003033",
       "source_id": "mediadive.medium:J688",
       "source": "MediaDive",
+      "solution_count": 6,
       "categories": [
         "bacterial"
       ],
@@ -21887,7 +21918,7 @@
     "CultureMech:003008": {
       "name": "mbg_20",
       "filename": "mbg_20.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 5,
       "id": "CultureMech:003008",
       "source_id": "mediadive.medium:J662",
       "source": "MediaDive",
@@ -21972,7 +22003,7 @@
     "CultureMech:001249": {
       "name": "mda",
       "filename": "mda.yaml",
-      "ingredient_count": 8,
+      "ingredient_count": 9,
       "id": "CultureMech:001249",
       "source_id": "mediadive.medium:1816",
       "source": "MediaDive",
@@ -22022,7 +22053,7 @@
     "CultureMech:002616": {
       "name": "me_agar",
       "filename": "me_agar.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:002616",
       "source_id": "mediadive.medium:J258",
       "source": "MediaDive",
@@ -22802,7 +22833,7 @@
     "CultureMech:003144": {
       "name": "methanol_utilizing_bacteria_medium_b",
       "filename": "methanol_utilizing_bacteria_medium_b.yaml",
-      "ingredient_count": 11,
+      "ingredient_count": 12,
       "id": "CultureMech:003144",
       "source_id": "mediadive.medium:J79",
       "source": "MediaDive",
@@ -22814,10 +22845,11 @@
     "CultureMech:002435": {
       "name": "methanol_utilizing_bacteria_medium_d",
       "filename": "methanol_utilizing_bacteria_medium_d.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 0,
       "id": "CultureMech:002435",
       "source_id": "mediadive.medium:J126",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -23472,14 +23504,14 @@
     "CultureMech:003243": {
       "name": "microaerophilic_thermus_medium",
       "filename": "microaerophilic_thermus_medium.yaml",
-      "ingredient_count": 10,
+      "ingredient_count": 5,
       "id": "CultureMech:003243",
       "source_id": "mediadive.medium:J894",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:001048": {
@@ -23607,7 +23639,7 @@
     "CultureMech:002743": {
       "name": "middlebrook_7h10_agar_with_oadc_enrichment",
       "filename": "middlebrook_7h10_agar_with_oadc_enrichment.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 4,
       "id": "CultureMech:002743",
       "source_id": "mediadive.medium:J386",
       "source": "MediaDive",
@@ -23668,14 +23700,14 @@
     "CultureMech:000423": {
       "name": "mineral_medium",
       "filename": "mineral_medium.yaml",
-      "ingredient_count": 12,
+      "ingredient_count": 5,
       "id": "CultureMech:000423",
       "source_id": "mediadive.medium:1007",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:001567": {
@@ -24239,10 +24271,11 @@
     "CultureMech:003251": {
       "name": "mj_medium_for_microaerophilic_autotrophs",
       "filename": "mj_medium_for_microaerophilic_autotrophs.yaml",
-      "ingredient_count": 22,
+      "ingredient_count": 4,
       "id": "CultureMech:003251",
       "source_id": "mediadive.medium:J902",
       "source": "MediaDive",
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
@@ -24338,14 +24371,14 @@
     "CultureMech:003046": {
       "name": "mjy_medium_for_pyrolinea_marinus",
       "filename": "mjy_medium_for_pyrolinea_marinus.yaml",
-      "ingredient_count": 14,
+      "ingredient_count": 3,
       "id": "CultureMech:003046",
       "source_id": "mediadive.medium:J700",
       "source": "MediaDive",
+      "solution_count": 3,
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:003088": {
@@ -25136,7 +25169,7 @@
     "CultureMech:003001": {
       "name": "modified_gam_agar",
       "filename": "modified_gam_agar.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:003001",
       "source_id": "mediadive.medium:J655",
       "source": "MediaDive",
@@ -25480,7 +25513,7 @@
     "CultureMech:002649": {
       "name": "modified_mrs_medium",
       "filename": "modified_mrs_medium.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:002649",
       "source_id": "mediadive.medium:J291",
       "source": "MediaDive",
@@ -25676,7 +25709,7 @@
     "CultureMech:002318": {
       "name": "modified_roseospira_medium",
       "filename": "modified_roseospira_medium.yaml",
-      "ingredient_count": 11,
+      "ingredient_count": 10,
       "id": "CultureMech:002318",
       "source_id": "mediadive.medium:J1145",
       "source": "MediaDive",
@@ -25883,14 +25916,14 @@
     "CultureMech:002970": {
       "name": "modified_thermus_medium_with_3_nacl",
       "filename": "modified_thermus_medium_with_3_nacl.yaml",
-      "ingredient_count": 11,
+      "ingredient_count": 5,
       "id": "CultureMech:002970",
       "source_id": "mediadive.medium:J624",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:002971": {
@@ -26138,7 +26171,7 @@
     "CultureMech:003199": {
       "name": "mrs_fructose_medium",
       "filename": "mrs_fructose_medium.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:003199",
       "source_id": "mediadive.medium:J853",
       "source": "MediaDive",
@@ -26162,7 +26195,7 @@
     "CultureMech:002293": {
       "name": "mrs_medium_ph_5_5",
       "filename": "mrs_medium_ph_5_5.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 10,
       "id": "CultureMech:002293",
       "source_id": "mediadive.medium:J111",
       "source": "MediaDive",
@@ -26258,7 +26291,7 @@
     "CultureMech:003272": {
       "name": "mrs_medium_with_soybean_peptone",
       "filename": "mrs_medium_with_soybean_peptone.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:003272",
       "source_id": "mediadive.medium:J925",
       "source": "MediaDive",
@@ -26356,7 +26389,7 @@
     "CultureMech:010436": {
       "name": "mta10",
       "filename": "mta10.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 6,
       "id": "CultureMech:010436",
       "source_id": "mediadive.medium:P6",
       "source": "MediaDive",
@@ -26429,10 +26462,11 @@
     "CultureMech:003083": {
       "name": "mvl_medium",
       "filename": "mvl_medium.yaml",
-      "ingredient_count": 14,
+      "ingredient_count": 6,
       "id": "CultureMech:003083",
       "source_id": "mediadive.medium:J740",
       "source": "MediaDive",
+      "solution_count": 6,
       "categories": [
         "bacterial"
       ],
@@ -26478,7 +26512,7 @@
     "CultureMech:002688": {
       "name": "my20_agar",
       "filename": "my20_agar.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 6,
       "id": "CultureMech:002688",
       "source_id": "mediadive.medium:J32",
       "source": "MediaDive",
@@ -26490,7 +26524,7 @@
     "CultureMech:000372": {
       "name": "my75s",
       "filename": "my75s.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 5,
       "id": "CultureMech:000372",
       "source_id": "mediadive.medium:C60",
       "source": "MediaDive",
@@ -26566,6 +26600,7 @@
       "id": "CultureMech:003105",
       "source_id": "mediadive.medium:J761",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -26646,10 +26681,11 @@
     "CultureMech:010437": {
       "name": "n27_rhodospirillaceae_medium_modified",
       "filename": "n27_rhodospirillaceae_medium_modified.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 9,
       "id": "CultureMech:010437",
       "source_id": "mediadive.medium:P7",
       "source": "MediaDive",
+      "solution_count": 3,
       "categories": [
         "bacterial"
       ],
@@ -26658,7 +26694,7 @@
     "CultureMech:000373": {
       "name": "n75s",
       "filename": "n75s.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:000373",
       "source_id": "mediadive.medium:C61",
       "source": "MediaDive",
@@ -26670,10 +26706,11 @@
     "CultureMech:000374": {
       "name": "n75s_nsw",
       "filename": "n75s_nsw.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 0,
       "id": "CultureMech:000374",
       "source_id": "mediadive.medium:C62",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -27467,7 +27504,7 @@
     "CultureMech:001732": {
       "name": "nutrient_agar_oxoid_cm3",
       "filename": "nutrient_agar_oxoid_cm3.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 6,
       "id": "CultureMech:001732",
       "source_id": "mediadive.medium:605",
       "source": "MediaDive",
@@ -27479,7 +27516,7 @@
     "CultureMech:001733": {
       "name": "nutrient_agar_oxoid_cm3_with_phosphate",
       "filename": "nutrient_agar_oxoid_cm3_with_phosphate.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 8,
       "id": "CultureMech:001733",
       "source_id": "mediadive.medium:605a",
       "source": "MediaDive",
@@ -27635,7 +27672,7 @@
     "CultureMech:001281": {
       "name": "oat_flake_medium",
       "filename": "oat_flake_medium.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:001281",
       "source_id": "mediadive.medium:189",
       "source": "MediaDive",
@@ -27811,7 +27848,7 @@
     "CultureMech:001248": {
       "name": "omy",
       "filename": "omy.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 5,
       "id": "CultureMech:001248",
       "source_id": "mediadive.medium:1815",
       "source": "MediaDive",
@@ -27910,10 +27947,11 @@
     "CultureMech:003280": {
       "name": "oscillibacter_gh_medium",
       "filename": "oscillibacter_gh_medium.yaml",
-      "ingredient_count": 22,
+      "ingredient_count": 4,
       "id": "CultureMech:003280",
       "source_id": "mediadive.medium:J932",
       "source": "MediaDive",
+      "solution_count": 3,
       "categories": [
         "bacterial"
       ],
@@ -28175,10 +28213,11 @@
     "CultureMech:003123": {
       "name": "patel_laboratory_medium_with_glycerin",
       "filename": "patel_laboratory_medium_with_glycerin.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 10,
       "id": "CultureMech:003123",
       "source_id": "mediadive.medium:J780",
       "source": "MediaDive",
+      "solution_count": 3,
       "categories": [
         "bacterial"
       ],
@@ -28199,7 +28238,7 @@
     "CultureMech:002553": {
       "name": "pby_medium",
       "filename": "pby_medium.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:002553",
       "source_id": "mediadive.medium:J191",
       "source": "MediaDive",
@@ -28223,10 +28262,11 @@
     "CultureMech:010439": {
       "name": "pdb_sng_medium",
       "filename": "pdb_sng_medium.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 4,
       "id": "CultureMech:010439",
       "source_id": "mediadive.medium:P9",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -28334,10 +28374,11 @@
     "CultureMech:003004": {
       "name": "pelagicoccus_agar",
       "filename": "pelagicoccus_agar.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 3,
       "id": "CultureMech:003004",
       "source_id": "mediadive.medium:J659",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -28442,7 +28483,7 @@
     "CultureMech:000938": {
       "name": "peptone_broth",
       "filename": "peptone_broth.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:000938",
       "source_id": "mediadive.medium:1471",
       "source": "MediaDive",
@@ -28712,10 +28753,11 @@
     "CultureMech:000511": {
       "name": "ph_medium",
       "filename": "ph_medium.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 0,
       "id": "CultureMech:000511",
       "source_id": "mediadive.medium:1077",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -29088,7 +29130,7 @@
     "CultureMech:000391": {
       "name": "pm",
       "filename": "pm.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:000391",
       "source_id": "mediadive.medium:C78",
       "source": "MediaDive",
@@ -29149,7 +29191,7 @@
     "CultureMech:002267": {
       "name": "poremedia_b_cye_945_agar_medium",
       "filename": "poremedia_b_cye_945_agar_medium.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 1,
       "id": "CultureMech:002267",
       "source_id": "mediadive.medium:J1087",
       "source": "MediaDive",
@@ -29199,7 +29241,7 @@
     "CultureMech:001233": {
       "name": "potato_carrot_agar",
       "filename": "potato_carrot_agar.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:001233",
       "source_id": "mediadive.medium:1765",
       "source": "MediaDive",
@@ -29308,7 +29350,7 @@
     "CultureMech:000395": {
       "name": "ppy",
       "filename": "ppy.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:000395",
       "source_id": "mediadive.medium:C81",
       "source": "MediaDive",
@@ -29646,11 +29688,11 @@
     "CultureMech:002722": {
       "name": "py4s_agar",
       "filename": "py4s_agar.yaml",
-      "ingredient_count": 10,
+      "ingredient_count": 11,
       "id": "CultureMech:002722",
       "source_id": "mediadive.medium:J363",
       "source": "MediaDive",
-      "solution_count": 2,
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
@@ -30060,10 +30102,11 @@
     "CultureMech:003261": {
       "name": "r2a_agar_with_1_nacl",
       "filename": "r2a_agar_with_1_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:003261",
       "source_id": "mediadive.medium:J912",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -30072,10 +30115,11 @@
     "CultureMech:002325": {
       "name": "r2a_agar_with_2_nacl",
       "filename": "r2a_agar_with_2_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:002325",
       "source_id": "mediadive.medium:J1153",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -30084,10 +30128,11 @@
     "CultureMech:002447": {
       "name": "r2a_agar_with_3_nacl",
       "filename": "r2a_agar_with_3_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:002447",
       "source_id": "mediadive.medium:J1280",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -30096,10 +30141,11 @@
     "CultureMech:003176": {
       "name": "r2a_agar_with_artificial_seawater",
       "filename": "r2a_agar_with_artificial_seawater.yaml",
-      "ingredient_count": 11,
+      "ingredient_count": 1,
       "id": "CultureMech:003176",
       "source_id": "mediadive.medium:J832",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -30108,10 +30154,11 @@
     "CultureMech:002402": {
       "name": "r2a_agar_with_fumarate",
       "filename": "r2a_agar_with_fumarate.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:002402",
       "source_id": "mediadive.medium:J1235",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -30228,7 +30275,7 @@
     "CultureMech:000401": {
       "name": "r75s",
       "filename": "r75s.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:000401",
       "source_id": "mediadive.medium:C87",
       "source": "MediaDive",
@@ -30240,10 +30287,11 @@
     "CultureMech:000402": {
       "name": "r75s_nsw",
       "filename": "r75s_nsw.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 0,
       "id": "CultureMech:000402",
       "source_id": "mediadive.medium:C88",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -30276,7 +30324,7 @@
     "CultureMech:002627": {
       "name": "r_agar",
       "filename": "r_agar.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 10,
       "id": "CultureMech:002627",
       "source_id": "mediadive.medium:J26",
       "source": "MediaDive",
@@ -30300,10 +30348,11 @@
     "CultureMech:002660": {
       "name": "r_agar_with_0_5_tween_80",
       "filename": "r_agar_with_0_5_tween_80.yaml",
-      "ingredient_count": 8,
+      "ingredient_count": 1,
       "id": "CultureMech:002660",
       "source_id": "mediadive.medium:J302",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -30312,10 +30361,11 @@
     "CultureMech:003224": {
       "name": "r_agar_with_10_nacl",
       "filename": "r_agar_with_10_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:003224",
       "source_id": "mediadive.medium:J877",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -30324,10 +30374,11 @@
     "CultureMech:002313": {
       "name": "r_agar_with_3_nacl",
       "filename": "r_agar_with_3_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:002313",
       "source_id": "mediadive.medium:J113",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -30336,10 +30387,11 @@
     "CultureMech:003111": {
       "name": "r_agar_with_5_nacl",
       "filename": "r_agar_with_5_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:003111",
       "source_id": "mediadive.medium:J76",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -30348,10 +30400,11 @@
     "CultureMech:002351": {
       "name": "r_agar_with_catalase",
       "filename": "r_agar_with_catalase.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:002351",
       "source_id": "mediadive.medium:J117",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -30481,7 +30534,7 @@
     "CultureMech:001765": {
       "name": "rcm_medium",
       "filename": "rcm_medium.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:001765",
       "source_id": "mediadive.medium:634",
       "source": "MediaDive",
@@ -30673,7 +30726,7 @@
     "CultureMech:002960": {
       "name": "reinforced_clostridial_medium",
       "filename": "reinforced_clostridial_medium.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:002960",
       "source_id": "mediadive.medium:J612",
       "source": "MediaDive",
@@ -30685,7 +30738,7 @@
     "CultureMech:002831": {
       "name": "reinforced_clostridial_medium_with_3_sea_salt",
       "filename": "reinforced_clostridial_medium_with_3_sea_salt.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:002831",
       "source_id": "mediadive.medium:J481",
       "source": "MediaDive",
@@ -30697,7 +30750,7 @@
     "CultureMech:002832": {
       "name": "reinforced_clostridial_medium_with_4_sea_salt",
       "filename": "reinforced_clostridial_medium_with_4_sea_salt.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:002832",
       "source_id": "mediadive.medium:J482",
       "source": "MediaDive",
@@ -31316,7 +31369,7 @@
     "CultureMech:010434": {
       "name": "rs_medium_non_nutrient_medium_nnm_component",
       "filename": "rs_medium_non_nutrient_medium_nnm_component.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 32,
       "id": "CultureMech:010434",
       "source_id": "mediadive.medium:P4",
       "source": "MediaDive",
@@ -31332,6 +31385,7 @@
       "id": "CultureMech:010435",
       "source_id": "mediadive.medium:P5",
       "source": "MediaDive",
+      "solution_count": 6,
       "categories": [
         "bacterial"
       ],
@@ -31560,10 +31614,11 @@
     "CultureMech:003075": {
       "name": "rye_bran_mrs",
       "filename": "rye_bran_mrs.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 2,
       "id": "CultureMech:003075",
       "source_id": "mediadive.medium:J730",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -32809,7 +32864,7 @@
     "CultureMech:001652": {
       "name": "sphaerotilus_medium",
       "filename": "sphaerotilus_medium.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:001652",
       "source_id": "mediadive.medium:51",
       "source": "MediaDive",
@@ -33947,15 +34002,14 @@
     "CultureMech:003181": {
       "name": "syfac_medium",
       "filename": "syfac_medium.yaml",
-      "ingredient_count": 18,
+      "ingredient_count": 7,
       "id": "CultureMech:003181",
       "source_id": "mediadive.medium:J837",
       "source": "MediaDive",
-      "solution_count": 1,
+      "solution_count": 6,
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:002999": {
@@ -34274,10 +34328,11 @@
     "CultureMech:010432": {
       "name": "taiyang_medium_no_9_prototype",
       "filename": "taiyang_medium_no_9_prototype.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 14,
       "id": "CultureMech:010432",
       "source_id": "mediadive.medium:P2",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -34312,7 +34367,7 @@
     "CultureMech:000425": {
       "name": "tcg_medium",
       "filename": "tcg_medium.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 4,
       "id": "CultureMech:000425",
       "source_id": "mediadive.medium:1009",
       "source": "MediaDive",
@@ -35100,10 +35155,11 @@
     "CultureMech:002828": {
       "name": "thermodesulfovibrio_medium",
       "filename": "thermodesulfovibrio_medium.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 7,
       "id": "CultureMech:002828",
       "source_id": "mediadive.medium:J479",
       "source": "MediaDive",
+      "solution_count": 7,
       "categories": [
         "bacterial"
       ],
@@ -35746,14 +35802,13 @@
     "CultureMech:002878": {
       "name": "thioglycollate_medium",
       "filename": "thioglycollate_medium.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:002878",
       "source_id": "mediadive.medium:J529",
       "source": "MediaDive",
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:001047": {
@@ -36245,7 +36300,7 @@
     "CultureMech:002606": {
       "name": "todd_hewitt_agar",
       "filename": "todd_hewitt_agar.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:002606",
       "source_id": "mediadive.medium:J245",
       "source": "MediaDive",
@@ -36281,7 +36336,7 @@
     "CultureMech:002518": {
       "name": "tomato_juice_agar",
       "filename": "tomato_juice_agar.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 5,
       "id": "CultureMech:002518",
       "source_id": "mediadive.medium:J15",
       "source": "MediaDive",
@@ -36305,7 +36360,7 @@
     "CultureMech:001453": {
       "name": "tomato_juice_milk_medium",
       "filename": "tomato_juice_milk_medium.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:001453",
       "source_id": "mediadive.medium:353",
       "source": "MediaDive",
@@ -36840,7 +36895,7 @@
     "CultureMech:002516": {
       "name": "tryptose_phosphate_agar",
       "filename": "tryptose_phosphate_agar.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:002516",
       "source_id": "mediadive.medium:J158",
       "source": "MediaDive",
@@ -37283,6 +37338,7 @@
       "id": "CultureMech:002399",
       "source_id": "mediadive.medium:J1232",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -37527,7 +37583,7 @@
     "CultureMech:001704": {
       "name": "vy_medium",
       "filename": "vy_medium.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:001704",
       "source_id": "mediadive.medium:577",
       "source": "MediaDive",
@@ -37577,7 +37633,7 @@
     "CultureMech:002371": {
       "name": "weak_oatmeal_agar",
       "filename": "weak_oatmeal_agar.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:002371",
       "source_id": "mediadive.medium:J1202",
       "source": "MediaDive",
@@ -37725,10 +37781,11 @@
     "CultureMech:000773": {
       "name": "xtc_2_medium",
       "filename": "xtc_2_medium.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 0,
       "id": "CultureMech:000773",
       "source_id": "mediadive.medium:1311",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -37921,7 +37978,7 @@
     "CultureMech:003012": {
       "name": "ym_broth",
       "filename": "ym_broth.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 5,
       "id": "CultureMech:003012",
       "source_id": "mediadive.medium:J666",
       "source": "MediaDive",
@@ -38053,7 +38110,7 @@
     "CultureMech:000610": {
       "name": "yps_medium",
       "filename": "yps_medium.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 5,
       "id": "CultureMech:000610",
       "source_id": "mediadive.medium:1168",
       "source": "MediaDive",
@@ -38308,7 +38365,7 @@
     "CultureMech:010523": {
       "name": "2_malt_agar",
       "filename": "2_malt_agar.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:010523",
       "source_id": "mediadive.medium:J38",
       "source": "MediaDive",
@@ -38320,7 +38377,7 @@
     "CultureMech:010514": {
       "name": "4_malt_agar",
       "filename": "4_malt_agar.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:010514",
       "source_id": "mediadive.medium:J253",
       "source": "MediaDive",
@@ -38452,10 +38509,11 @@
     "CultureMech:010526": {
       "name": "bl_with_0_5_maltose",
       "filename": "bl_with_0_5_maltose.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:010526",
       "source_id": "mediadive.medium:J418",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "fungal"
       ],
@@ -38567,7 +38625,7 @@
     "CultureMech:010452": {
       "name": "dilute_filtered_malt_extract_agar",
       "filename": "dilute_filtered_malt_extract_agar.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:010452",
       "source_id": "mediadive.medium:1427",
       "source": "MediaDive",
@@ -38762,10 +38820,11 @@
     "CultureMech:010510": {
       "name": "inorganic_salts_starch_agar_isp_4_with_0_05_yeast_extract",
       "filename": "inorganic_salts_starch_agar_isp_4_with_0_05_yeast_extract.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:010510",
       "source_id": "mediadive.medium:J217",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "fungal"
       ],
@@ -38942,7 +39001,7 @@
     "CultureMech:010518": {
       "name": "mrs_maltose_medium",
       "filename": "mrs_maltose_medium.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:010518",
       "source_id": "mediadive.medium:J293",
       "source": "MediaDive",
@@ -39015,10 +39074,11 @@
     "CultureMech:010531": {
       "name": "oatmeal_agar_isp_3_with_0_1_yeast_extract",
       "filename": "oatmeal_agar_isp_3_with_0_1_yeast_extract.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:010531",
       "source_id": "mediadive.medium:J51",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "fungal"
       ],
@@ -39076,7 +39136,7 @@
     "CultureMech:010453": {
       "name": "sabouraud_glucose_medium",
       "filename": "sabouraud_glucose_medium.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:010453",
       "source_id": "mediadive.medium:1429",
       "source": "MediaDive",
@@ -39317,7 +39377,7 @@
     "CultureMech:010463": {
       "name": "universal_medium_for_yeasts_ym",
       "filename": "universal_medium_for_yeasts_ym.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 6,
       "id": "CultureMech:010463",
       "source_id": "mediadive.medium:186",
       "source": "MediaDive",
@@ -39353,7 +39413,7 @@
     "CultureMech:010528": {
       "name": "yeast_extract_malt_extract_agar_isp_2",
       "filename": "yeast_extract_malt_extract_agar_isp_2.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 5,
       "id": "CultureMech:010528",
       "source_id": "mediadive.medium:J43",
       "source": "MediaDive",
@@ -39377,10 +39437,11 @@
     "CultureMech:010493": {
       "name": "yeast_extract_malt_extract_agar_isp_2_with_2_nacl",
       "filename": "yeast_extract_malt_extract_agar_isp_2_with_2_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:010493",
       "source_id": "mediadive.medium:J1152",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "fungal"
       ],
@@ -39389,10 +39450,11 @@
     "CultureMech:010509": {
       "name": "yeast_extract_malt_extract_agar_isp_2_with_5_nacl",
       "filename": "yeast_extract_malt_extract_agar_isp_2_with_5_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:010509",
       "source_id": "mediadive.medium:J207",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "fungal"
       ],
@@ -39401,10 +39463,11 @@
     "CultureMech:010532": {
       "name": "yeast_extract_malt_extract_agar_isp_2_with_5_nacl_ph_9_0",
       "filename": "yeast_extract_malt_extract_agar_isp_2_with_5_nacl_ph_9_0.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:010532",
       "source_id": "mediadive.medium:J527",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "fungal"
       ],
@@ -39509,7 +39572,7 @@
     "CultureMech:010459": {
       "name": "yeast_extract_skim_milk_medium",
       "filename": "yeast_extract_skim_milk_medium.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:010459",
       "source_id": "mediadive.medium:170",
       "source": "MediaDive",
@@ -39947,7 +40010,7 @@
     "CultureMech:015412": {
       "name": "brewer_anaerobic_agar_with_2_nacl",
       "filename": "brewer_anaerobic_agar_with_2_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:015412",
       "source_id": "mediadive.medium:J667",
       "source": "MediaDive",
@@ -39995,7 +40058,7 @@
     "CultureMech:015411": {
       "name": "diluted_marine_agar",
       "filename": "diluted_marine_agar.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:015411",
       "source_id": "mediadive.medium:J644",
       "source": "MediaDive",
@@ -40020,7 +40083,7 @@
     "CultureMech:015347": {
       "name": "gam_broth_gifu_anaerobic_medium_broth",
       "filename": "gam_broth_gifu_anaerobic_medium_broth.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:015347",
       "source_id": "mediadive.medium:1713",
       "source": "MediaDive",
@@ -40032,7 +40095,7 @@
     "CultureMech:015348": {
       "name": "gam_broth_mod_gifu_anaerobic_medium_broth_modified",
       "filename": "gam_broth_mod_gifu_anaerobic_medium_broth_modified.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:015348",
       "source_id": "mediadive.medium:1715",
       "source": "MediaDive",
@@ -40068,7 +40131,7 @@
     "CultureMech:015425": {
       "name": "half_strength_marine_agar",
       "filename": "half_strength_marine_agar.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:015425",
       "source_id": "mediadive.medium:J916",
       "source": "MediaDive",
@@ -40080,7 +40143,7 @@
     "CultureMech:015420": {
       "name": "half_strength_marine_medium_with_1_0_nacl",
       "filename": "half_strength_marine_medium_with_1_0_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:015420",
       "source_id": "mediadive.medium:J762",
       "source": "MediaDive",
@@ -40164,7 +40227,7 @@
     "CultureMech:015393": {
       "name": "marine_agar_2216",
       "filename": "marine_agar_2216.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:015393",
       "source_id": "mediadive.medium:J118",
       "source": "MediaDive",
@@ -40176,10 +40239,11 @@
     "CultureMech:015371": {
       "name": "marine_agar_2216_ph_8_5",
       "filename": "marine_agar_2216_ph_8_5.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:015371",
       "source_id": "mediadive.medium:J1001",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "specialized"
       ],
@@ -40188,10 +40252,11 @@
     "CultureMech:015373": {
       "name": "marine_agar_2216_ph_9_0",
       "filename": "marine_agar_2216_ph_9_0.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:015373",
       "source_id": "mediadive.medium:J1016",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "specialized"
       ],
@@ -40200,10 +40265,11 @@
     "CultureMech:015418": {
       "name": "marine_agar_2216_with_10_nacl",
       "filename": "marine_agar_2216_with_10_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:015418",
       "source_id": "mediadive.medium:J733",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "specialized"
       ],
@@ -40212,10 +40278,11 @@
     "CultureMech:015426": {
       "name": "marine_agar_2216_with_1_nacl",
       "filename": "marine_agar_2216_with_1_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:015426",
       "source_id": "mediadive.medium:J922",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "specialized"
       ],
@@ -40224,10 +40291,11 @@
     "CultureMech:015387": {
       "name": "marine_agar_2216_with_1_starch",
       "filename": "marine_agar_2216_with_1_starch.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:015387",
       "source_id": "mediadive.medium:J1164",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "specialized"
       ],
@@ -40236,10 +40304,11 @@
     "CultureMech:015400": {
       "name": "marine_agar_2216_with_3_1_nacl",
       "filename": "marine_agar_2216_with_3_1_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:015400",
       "source_id": "mediadive.medium:J357",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "specialized"
       ],
@@ -40248,10 +40317,11 @@
     "CultureMech:015417": {
       "name": "marine_agar_2216_with_5_nacl",
       "filename": "marine_agar_2216_with_5_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:015417",
       "source_id": "mediadive.medium:J732",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "specialized"
       ],
@@ -40260,10 +40330,11 @@
     "CultureMech:015372": {
       "name": "marine_agar_2216_with_8_0_nacl",
       "filename": "marine_agar_2216_with_8_0_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:015372",
       "source_id": "mediadive.medium:J1015",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "specialized"
       ],
@@ -40272,10 +40343,11 @@
     "CultureMech:015410": {
       "name": "marine_agar_2216_with_8_nacl",
       "filename": "marine_agar_2216_with_8_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:015410",
       "source_id": "mediadive.medium:J532",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "specialized"
       ],
@@ -40284,14 +40356,14 @@
     "CultureMech:015421": {
       "name": "marine_agar_with_1_tween_20",
       "filename": "marine_agar_with_1_tween_20.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:015421",
       "source_id": "mediadive.medium:J768",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "specialized"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "specialized"
     },
     "CultureMech:015337": {
@@ -40334,7 +40406,7 @@
     "CultureMech:015385": {
       "name": "marine_broth_2216_with_cellobiose",
       "filename": "marine_broth_2216_with_cellobiose.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:015385",
       "source_id": "mediadive.medium:J1127",
       "source": "MediaDive",
@@ -40350,6 +40422,7 @@
       "id": "CultureMech:015395",
       "source_id": "mediadive.medium:J1244",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "specialized"
       ],
@@ -40723,7 +40796,7 @@
     "CultureMech:015375": {
       "name": "quarter_strength_marine_broth_2216",
       "filename": "quarter_strength_marine_broth_2216.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:015375",
       "source_id": "mediadive.medium:J1049",
       "source": "MediaDive",

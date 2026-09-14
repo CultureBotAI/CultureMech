@@ -5,14 +5,81 @@ category: bacterial
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
+ph_range:
+  min: 4.4
+  max: 4.7
 media_term:
   preferred_term: KOMODO Medium 72
   term:
     id: komodo.medium:72
     label: THIOBACILLUS FERROOXIDANS MEDIUM WITH TETRATHIONATE
-notes: 'Source: KOMODO ModelSEED | ID: 72 | DSMZ Medium: 72 (mediadive.medium:72)
-  | Aerobic: No'
-ingredients: []
+notes: Archived DSMZ Medium 72 defines THIOBACILLUS FERROOXIDANS MEDIUM WITH TETRATHIONATE
+  as DSMZ Medium 71 with K2S4O6 replacing Na2S2O3; archived DSMZ Medium 71 defines
+  the base mineral salts and pH 4.4-4.7, and the live KOMODO Medium 72 table confirms
+  5.00 g/L K2S4O6. This record expands DSMZ Media 71 and 72 into the final tetrathionate
+  formulation.
+ingredients:
+- preferred_term: KH2PO4
+  source: Archived DSMZ Medium 71
+  notes: Archived DSMZ Medium 71 lists 3.00 g/L KH2PO4 per liter.
+  concentration:
+    value: '3.000000'
+    unit: G_PER_L
+  term: &id001
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term: *id001
+- preferred_term: MgSO4 x 7 H2O
+  source: Archived DSMZ Medium 71
+  notes: Archived DSMZ Medium 71 lists 0.50 g/L MgSO4 x 7 H2O per liter.
+  concentration:
+    value: '0.500000'
+    unit: G_PER_L
+  term: &id002
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term: *id002
+- preferred_term: (NH4)2SO4
+  source: Archived DSMZ Medium 71
+  notes: Archived DSMZ Medium 71 lists 3.00 g/L (NH4)2SO4 per liter.
+  concentration:
+    value: '3.000000'
+    unit: G_PER_L
+  term: &id003
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term: *id003
+- preferred_term: CaCl2 x 2 H2O
+  source: Archived DSMZ Medium 71
+  notes: Archived DSMZ Medium 71 lists 0.25 g/L CaCl2 x 2 H2O per liter.
+  concentration:
+    value: '0.250000'
+    unit: G_PER_L
+  term: &id004
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term: *id004
+- preferred_term: K2S4O6
+  source: Archived DSMZ Medium 72 and live KOMODO Medium 72
+  notes: Archived DSMZ Medium 72 substitutes K2S4O6 for DSMZ Medium 71 Na2S2O3, and
+    live KOMODO Medium 72 lists 5.00 g/L K2S4O6.
+  concentration:
+    value: '5.000000'
+    unit: G_PER_L
+  term: &id005
+    id: CHEBI:86466
+    label: potassium tetrathionate
+  mediaingredientmech_chebi_term: *id005
+- preferred_term: Distilled water
+  source: Archived DSMZ Medium 71
+  notes: Archived DSMZ Medium 71 lists 1000 mL distilled water.
+  concentration:
+    value: '1000.000'
+    unit: ML_PER_L
+  term: &id006
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term: *id006
 applications:
 - Microbial cultivation
 curation_history:
@@ -35,5 +102,19 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_72_score35.py
+  action: RESOLVED_KOMODO_72_SCORE35
+  source: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium72.pdf
+  notes: Archived DSMZ Medium 72 defines THIOBACILLUS FERROOXIDANS MEDIUM WITH TETRATHIONATE
+    as DSMZ Medium 71 with K2S4O6 replacing Na2S2O3; archived DSMZ Medium 71 defines
+    the base mineral salts and pH 4.4-4.7, and the live KOMODO Medium 72 table confirms
+    5.00 g/L K2S4O6. This record expands DSMZ Media 71 and 72 into the final tetrathionate
+    formulation.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=72
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium72.pdf
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium71.pdf

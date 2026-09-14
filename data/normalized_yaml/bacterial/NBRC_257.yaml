@@ -6,11 +6,22 @@ description: 257. NBRC 256.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_range:
+  min: 9.0
+  max: 9.5
+media_term:
+  preferred_term: NBRC Medium 256
+  term:
+    id: nbrc.medium:256
+    label: NBRC Medium 256
 ingredients:
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: Bacto Casamino Acids (Difco)
   concentration:
     value: '5'
@@ -44,10 +55,16 @@ ingredients:
   concentration:
     value: '0.17'
     unit: G_PER_L
+  term:
+    id: CHEBI:32583
+    label: CaSO4 x 2 H2O
 - preferred_term: Sodium glutamate
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: CHEBI:64220
+    label: Na glutamate
 - preferred_term: Na2CO3
   concentration:
     value: '5'
@@ -70,16 +87,22 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: Agar
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  action: HEAT
+  description: Dissolve agar by heating before adding NaCl.
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH if needed
+  description: Adjust pH to 6.5 before autoclaving.
 - step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: AUTOCLAVE
+  description: Autoclave the non-Na2CO3 ingredients.
+- step_number: 4
+  action: MIX
+  description: Add separately sterilized Na2CO3 solution to the other autoclaved ingredients.
 curation_history:
 - timestamp: '2026-02-20T00:22:35.943092Z'
   curator: nbrc-import
@@ -117,6 +140,21 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 5 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
-notes: Adjust pH to 6.5 before autoclaving. Sterilize Na2CO3 in solution separately,
-  and add to other autoclaved ingredients. Check the final pH is between 9.0 - 9.5.
-  Dissolve agar by heating before adding NaCl.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=256
+  notes: Preserved the recovered NBRC Medium 256 composition table.
+notes: 'Source: NBRC Medium 256 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=256
+
+
+  The NBRC table instructs pH adjustment to 6.5 before autoclaving, separate Na2CO3
+  solution sterilization before adding it to the other autoclaved ingredients, and
+  a final pH check of 9.0 to 9.5.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=256

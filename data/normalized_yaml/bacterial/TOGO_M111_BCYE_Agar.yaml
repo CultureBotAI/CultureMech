@@ -6,38 +6,48 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
+- preferred_term: BCYE agar (BD-Difco)
+  concentration:
+    value: '37'
+    unit: G_PER_L
+  notes: JCM Medium 119 lists this commercial BD-Difco medium base as supplied.
+- preferred_term: Legionella agar enrichment (BD-Difco)
+  concentration:
+    value: '100'
+    unit: ML_PER_L
+  notes: JCM Medium 119 lists this commercial BD-Difco enrichment as supplied.
 - preferred_term: Distilled water
   concentration:
     value: '900'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    unit: ML_PER_L
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: BCYE agar (BD-Difco)
-  concentration:
-    value: '37'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-- preferred_term: Legionella agar enrichment (BD-Difco)
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Complex component'
+  notes: JCM Medium 119 brings the base plus enrichment to 1 L.
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J119_BCYE_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002367
+  name: bcye_agar
+  notes: MediaDive JCM import for the same JCM Medium 119 recipe.
+variant_relationship: SOURCE_DUPLICATE
 media_term:
   preferred_term: TOGO Medium M111
   term:
     id: TOGO:M111
     label: BCYE Agar
-notes: 'Source: https://togomedium.org/medium/M111
+notes: 'Source: TOGO Medium M111 | Link: https://togomedium.org/medium/M111
 
-  Original source: JCM - JCM_M119
 
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=119'
+  TOGO Medium M111 mirrors JCM Medium 119 BCYE Agar: BCYE agar, Legionella agar enrichment,
+  and distilled water.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -67,3 +77,16 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_bcye_score20.py
+  action: RESOLVED_JCM_J119_BCYE_AGAR
+  changes: Resolved JCM Medium 119 BCYE Agar composition
+  source: https://togomedium.org/medium/M111; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=119
+  notes: Rebuilt the BCYE Agar ingredients from the JCM Medium 119 table.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M111
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=119

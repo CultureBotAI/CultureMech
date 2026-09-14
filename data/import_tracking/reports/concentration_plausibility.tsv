@@ -77,7 +77,6 @@ TRACE_SALT_AS_STOCK	bacterial/JCM_J16_LACTOBACILLUS_MEDIUM_II.yaml	CultureMech:0
 TRACE_SALT_AS_STOCK	bacterial/JCM_J192_PYS_MEDIUM.yaml	CultureMech:002554	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/JCM_J270_GNYS_MEDIUM.yaml	CultureMech:002628	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/JCM_J275_MODIFIED_CM_YE_MEDIUM_B.yaml	CultureMech:002632	FeSO4 x 7 H2O	49.8	G_PER_L	49.8 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/JCM_J276_CASTENHOLZ_MEDIUM.yaml	CultureMech:002633	FeCl3 x 6 H2O	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/JCM_J303_PE_MEDIUM.yaml	CultureMech:002661	FeSO4 x H2O	1.09901	G_PER_L	1.09901 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/JCM_J303_PE_MEDIUM.yaml	CultureMech:002661	Nicotinic acid	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/JCM_J303_PE_MEDIUM.yaml	CultureMech:002661	Thiamine HCl	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -109,18 +108,11 @@ TRACE_SALT_AS_STOCK	bacterial/JCM_J515_RHODOVULUM_VISAKHUM_MEDIUM.yaml	CultureMe
 TRACE_SALT_AS_STOCK	bacterial/JCM_J531_BACILLUS_FILIFORMIS_MEDIUM.yaml	CultureMech:002880	FeSO4 x H2O	50	G_PER_L	50 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/JCM_J59_CM_YE_MEDIUM.yaml	CultureMech:002947	FeSO4 x 7 H2O	49.8	G_PER_L	49.8 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/JCM_J601_ANCALOMICROBIUM_MEDIUM.yaml	CultureMech:002949	ZnSO4 x 7 H2O	1.095	G_PER_L	1.095 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/JCM_J618_CYS_MEDIUM.yaml	CultureMech:002965	Na2MoO4 x 2 H2O	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/JCM_J618_CYS_MEDIUM.yaml	CultureMech:002965	MnCl2 x 4 H2O	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/JCM_J618_CYS_MEDIUM.yaml	CultureMech:002965	ZnSO4 x 7 H2O	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/JCM_J618_CYS_MEDIUM.yaml	CultureMech:002965	CuSO4 x 5 H2O	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/JCM_J618_CYS_MEDIUM.yaml	CultureMech:002965	CoCl2 x 6 H2O	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/JCM_J618_CYS_MEDIUM.yaml	CultureMech:002965	NiCl2 x 6 H2O	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/JCM_J631_MMB_MEDIUM.yaml	CultureMech:002978	ZnSO4 x 7 H2O	1.095	G_PER_L	1.095 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/JCM_J672_FLEXIBACTER_CANADENSIS_MEDIUM.yaml	CultureMech:003017	Vitamin B12	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/JCM_J672_FLEXIBACTER_CANADENSIS_MEDIUM.yaml	CultureMech:003017	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml	CultureMech:003030	FeSO4 x 7 H2O	20	G_PER_L	20 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/JCM_J706_SPOROSALIBACTERIUM_MEDIUM.yaml	CultureMech:003052	FeSO4 x 7 H2O	2.1	G_PER_L	2.1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/JCM_J720_TCG_MEDIUM.yaml	CultureMech:003065	Sea water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml	CultureMech:003073	FeSO4	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/JCM_J753_DEHALOSPIRILLUM_MEDIUM.yaml	CultureMech:003096	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/JCM_J784_DESULFOSPOROSINUS_ACIDOPHILUS_MEDIUM.yaml	CultureMech:003127	FeSO4 x 7 H2O	2.1	G_PER_L	2.1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -144,8 +136,6 @@ TRACE_SALT_AS_STOCK	bacterial/KOMODO_1004_ANAEROLINEA_medium.yaml	CultureMech:00
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_1004_ANAEROLINEA_medium.yaml	CultureMech:003504	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_1005_THERMODESULFOBIUM_MEDIUM.yaml	CultureMech:003505	FeCl2 x 4 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_1005_THERMODESULFOBIUM_MEDIUM.yaml	CultureMech:003505	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/KOMODO_1007_MINERAL_MEDIUM.yaml	CultureMech:003510	FeSO4 x 7 H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/KOMODO_1009_TCG_medium.yaml	CultureMech:003514	Sea water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_1023_MANNING_medium.yaml	CultureMech:003535	FeSO4 x 7 H2O	33.4	G_PER_L	33.4 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_1025_MARICAULIS_medium.yaml	CultureMech:003537	Riboflavin	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_1031_YMA-MEDIUM.yaml	CultureMech:003544	FeCl3 x 6 H2O	6.66	G_PER_L	6.66 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -160,7 +150,6 @@ WATER_AS_VOLUME	bacterial/KOMODO_1046_ANOXYBACILLUS_AMYLOLYTICUS_medium.yaml	Cul
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_1049_SELENATE_REDUCER_MEDIUM.yaml	CultureMech:003607	Na2SeO4	189	G_PER_L	189 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_1049_SELENATE_REDUCER_MEDIUM.yaml	CultureMech:003607	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_1053_SULFURIMONAS_PARALVINELLA_MEDIUM.yaml	CultureMech:003629	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-WATER_AS_VOLUME	bacterial/KOMODO_1054_A1-MEDIUM.yaml	CultureMech:003630	Sea water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_1055_DESULFOHALOBIUM_UTAHENSE_medium.yaml	CultureMech:003634	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_1055_DESULFOHALOBIUM_UTAHENSE_medium.yaml	CultureMech:003634	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_1057_ETHANOLIGENES_medium.yaml	CultureMech:003635	FeCl2 x 4 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -216,7 +205,6 @@ WATER_AS_VOLUME	bacterial/KOMODO_1167_NSY-MEDIUM_FOR_POLYNUCLEOBACTER.yaml	Cultu
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_1170_METHYLONATRUM_MEDIUM.yaml	CultureMech:003889	Vitamin B12	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_1174_NITRINCOLA_medium.yaml	CultureMech:003894	Na2B4O7	4	G_PER_L	4 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_1176_HALOVIBRIO_medium.yaml	CultureMech:003896	FeSO4 x 7 H2O	2.2	G_PER_L	2.2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/KOMODO_1177_RUBITELEA_medium.yaml	CultureMech:003897	Sea water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_1180_METHYLOMICROBIUM_MEDIUM.yaml	CultureMech:003900	FeSO4 x 7 H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_1183_ROSEICYCLUS_medium.yaml	CultureMech:003903	Nicotinic acid	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_1183_ROSEICYCLUS_medium.yaml	CultureMech:003903	Thiamine	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -293,12 +281,6 @@ TRACE_SALT_AS_STOCK	bacterial/KOMODO_165_ACETIVIBRIO_CELLULOLYTICUS_MEDIUM.yaml	
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_165_ACETIVIBRIO_CELLULOLYTICUS_MEDIUM.yaml	CultureMech:004192	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_193a_PHB_PYRUVATE_MEDIUM.yaml	CultureMech:004228	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_193a_PHB_PYRUVATE_MEDIUM.yaml	CultureMech:004228	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/KOMODO_194_DESULFOBULBUS_MEDIUM.yaml	CultureMech:004235	FeSO4 x 7 H2O	80	G_PER_L	80 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/KOMODO_194_DESULFOBULBUS_MEDIUM.yaml	CultureMech:004235	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/KOMODO_194_DESULFOBULBUS_MEDIUM.yaml	CultureMech:004235	Vitamin B12	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/KOMODO_194_DESULFOBULBUS_MEDIUM.yaml	CultureMech:004235	Nicotinic acid	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/KOMODO_194_DESULFOBULBUS_MEDIUM.yaml	CultureMech:004235	Pyridoxine hydrochloride	0.3	G_PER_L	0.3 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/KOMODO_194_DESULFOBULBUS_MEDIUM.yaml	CultureMech:004235	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_202_DESULFONEMA_MAGNUM_MEDIUM.yaml	CultureMech:004297	AlK(SO4)2 x 12 H2O	48	G_PER_L	48 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_202_DESULFONEMA_MAGNUM_MEDIUM.yaml	CultureMech:004297	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_202_DESULFONEMA_MAGNUM_MEDIUM.yaml	CultureMech:004297	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -317,6 +299,7 @@ INDICATOR_UNIT_SLIP	bacterial/KOMODO_29a_MEDIUM_FOR_CHLOROBIUM_FERROOXIDANS.yaml
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_29a_MEDIUM_FOR_CHLOROBIUM_FERROOXIDANS.yaml	CultureMech:004776	FeSO4 x 7 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_300_RUMINOCOCCUS_PASTEURII_MEDIUM.yaml	CultureMech:004788	Biotin	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_300_RUMINOCOCCUS_PASTEURII_MEDIUM.yaml	CultureMech:004788	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
+TRACE_SALT_AS_STOCK	bacterial/KOMODO_3073_Trace_element_solution_medium_318.yaml	CultureMech:004859	FeCl2 x 4 H2O	1.00	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_311_SPOROMUSA_medium.yaml	CultureMech:004964	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_311_SPOROMUSA_medium.yaml	CultureMech:004964	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_314_ILYOBACTER_POLYTROPUS_medium.yaml	CultureMech:004998	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -541,7 +524,6 @@ TRACE_SALT_AS_STOCK	bacterial/KOMODO_999_HALORHODOSPIRA_medium.yaml	CultureMech:
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1000_IRD_Desulfocurvus_Medium.yaml	CultureMech:007513	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1003_Thermodesulfobacterium_Geofontis_Medium.yaml	CultureMech:007516	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1006_Desulfohalobium_Utahense_Medium.yaml	CultureMech:007519	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M1007_Sea_Salts_TYG_Medium.yaml	CultureMech:007520	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1009_Syntrophus_Aciditrophicus_Medium.yaml	CultureMech:007522	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M1010_Modified_HM_Medium.yaml	CultureMech:007524	FeCl3・6H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M1011_Modified_HM_Medium.yaml	CultureMech:007525	FeCl3・6H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -658,7 +640,6 @@ TRACE_SALT_AS_STOCK	bacterial/TOGO_M1094_Dissulfurimicrobium_Hydrothermale_Mediu
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1098_IRD_SM40_Medium.yaml	CultureMech:007615	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M1106_Thiobacillus_Prosperus_FO1_Medium.yaml	CultureMech:007625	FeSO4・7H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M1109_ML-15_Medium.yaml	CultureMech:007628	Na2B4O7・10H2O	3.8	G_PER_L	3.8 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M1112_Marinitoga_Medium.yaml	CultureMech:007632	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1118_Endomicrobium_Proavitum_RSA_Medium.yaml	CultureMech:007638	Resazurin	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1124_Acetomicrobium_Faecale_Medium.yaml	CultureMech:007645	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M1131_Desulfuromonas_Carbonis_Medium.yaml	CultureMech:007653	NiCl2・6H2O	9.3	G_PER_L	9.3 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -679,10 +660,6 @@ INDICATOR_UNIT_SLIP	bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml	Cultur
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml	CultureMech:007681	Vitamin B12	125	G_PER_L	125 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml	CultureMech:007681	Riboflavin	25	G_PER_L	25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml	CultureMech:007681	Pantothenic acid	25	G_PER_L	25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M1165_Bicarbonate_Buffered_Medium.yaml	CultureMech:007689	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M1166_Bicarbonate_Buffered_Medium.yaml	CultureMech:007690	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M1167_Bicarbonate_Buffered_Medium.yaml	CultureMech:007691	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M1168_Bicarbonate_Buffered_Medium.yaml	CultureMech:007692	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	bacterial/TOGO_M1169_PYGA_Medium.yaml	CultureMech:007693	Distilled water	1000.0	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1170_Seawater_Pyruvate_Thiosulfate_Medium.yaml	CultureMech:007695	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1170_Seawater_Pyruvate_Thiosulfate_Medium.yaml	CultureMech:007695	Biotin	2	G_PER_L	2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -712,8 +689,6 @@ INDICATOR_UNIT_SLIP	bacterial/TOGO_M1173_CTM_Medium.yaml	CultureMech:007698	Thia
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1173_CTM_Medium.yaml	CultureMech:007698	Lipoic acid	100	G_PER_L	100 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1173_CTM_Medium.yaml	CultureMech:007698	Vitamin B12	100	G_PER_L	100 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1174_Halolactibacillus_9G_Medium.yaml	CultureMech:007699	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml	CultureMech:007701	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M1178_Anaerobic_Natural_Seawater_Medium.yaml	CultureMech:007703	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml	CultureMech:007704	Distilled water	1001.0	G_PER_L	1001 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml	CultureMech:007704	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml	CultureMech:007704	Na2MoO4・2H2O	36	G_PER_L	36 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -735,11 +710,6 @@ TRACE_SALT_AS_STOCK	bacterial/TOGO_M1199_AZC_1502_Medium.yaml	CultureMech:007724
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M1199_AZC_1502_Medium.yaml	CultureMech:007724	Na2SeO3・5H2O	3	G_PER_L	3 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M1199_AZC_1502_Medium.yaml	CultureMech:007724	Na2WO4・2H2O	38	G_PER_L	38 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M1199_AZC_1502_Medium.yaml	CultureMech:007724	NiSO4・7H2O	1.6	G_PER_L	1.6 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M119_Methanol-Utilizing_Bacteria_Medium_E.yaml	CultureMech:007725	Vitamin B12	10	G_PER_L	10 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M1200_Artficial_Brackish_Water_Medium.yaml	CultureMech:007727	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M1202_Artficial_Freshwater_Medium_I.yaml	CultureMech:007729	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M1203_Artficial_Freshwater_Medium_II.yaml	CultureMech:007730	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M1204_Artficial_Freshwater_Medium_II.yaml	CultureMech:007731	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1205_Sulfate-Free_Metako_Medium.yaml	CultureMech:007732	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M1205_Sulfate-Free_Metako_Medium.yaml	CultureMech:007732	Na2B4O7・10H2O	34	G_PER_L	34 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1206_Sulfate-Free_Metako_Medium.yaml	CultureMech:007733	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -850,7 +820,6 @@ INDICATOR_UNIT_SLIP	bacterial/TOGO_M1295_Marine_Tryptone_Yeast_Extract_Medium.ya
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M1296_Halanaerobium_Hydrogeniformans_Medium.yaml	CultureMech:007829	FeSO4·7H2O	1.8	G_PER_L	1.8 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M1296_Halanaerobium_Hydrogeniformans_Medium.yaml	CultureMech:007829	MnSO4·xH2O	4.5	G_PER_L	4.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1296_Halanaerobium_Hydrogeniformans_Medium.yaml	CultureMech:007829	Methylene blue	4	G_PER_L	4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M1297_Marinitoga_Hydrogenitolerans_Medium.yaml	CultureMech:007830	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1299_Modified_Makkar_s_Medium_C.yaml	CultureMech:007832	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1300_PYG_Medium_J_Modified.yaml	CultureMech:007835	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1312_Modified_Nitrate_Mineral_Salts_Medium-2.yaml	CultureMech:007848	Vitamin B12	20	G_PER_L	20 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -870,7 +839,6 @@ TRACE_SALT_AS_STOCK	bacterial/TOGO_M1332_Tanner_MOD2_Medium.yaml	CultureMech:007
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M1332_Tanner_MOD2_Medium.yaml	CultureMech:007868	Na2WO4・2H2O	20	G_PER_L	20 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M1332_Tanner_MOD2_Medium.yaml	CultureMech:007868	MnSO4・xH2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M1332_Tanner_MOD2_Medium.yaml	CultureMech:007868	Na2SeO4	20	G_PER_L	20 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M1336_Anaerobaculum_Medium.yaml	CultureMech:007872	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	bacterial/TOGO_M1337_Vulcano_Low_Salt_Medium.yaml	CultureMech:007873	Distilled water	1066.0	G_PER_L	1066 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1337_Vulcano_Low_Salt_Medium.yaml	CultureMech:007873	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M1337_Vulcano_Low_Salt_Medium.yaml	CultureMech:007873	NiCl2·6H2O	20	G_PER_L	20 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -904,8 +872,6 @@ INDICATOR_UNIT_SLIP	bacterial/TOGO_M1395_ABSS2.yaml	CultureMech:007930	Nicotinic
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1396_Paenibacillus_DC-8A_Medium.yaml	CultureMech:007931	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1397_Tepidanaerobacter_GT38_Medium.yaml	CultureMech:007932	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1398_Spirochaetea_NS_Medium.yaml	CultureMech:007933	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M1399_Sea_Salts_YTG_Medium.yaml	CultureMech:007934	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M1400_Ureaplasma_Medium.yaml	CultureMech:007937	phenol red	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M1401_Freshwater_Medium_With_Rhamnose.yaml	CultureMech:007938	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M1401_Freshwater_Medium_With_Rhamnose.yaml	CultureMech:007938	Na2MoO4-2H2O	36	G_PER_L	36 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M1401_Freshwater_Medium_With_Rhamnose.yaml	CultureMech:007938	H3BO3	30	G_PER_L	30 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -1319,7 +1285,6 @@ TRACE_SALT_AS_STOCK	bacterial/TOGO_M2186_CENS_medium.yaml	CultureMech:008780	Na2
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2186_CENS_medium.yaml	CultureMech:008780	FeCl2 . 4H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 WATER_AS_VOLUME	bacterial/TOGO_M2191_Trypticase_Soy_Yeast_Extract_Medium.yaml	CultureMech:008784	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2192_Nutrient_Agar_Broth.yaml	CultureMech:008785	DI Water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
-WATER_AS_VOLUME	bacterial/TOGO_M2193_Nutrient_Agar_Broth.yaml	CultureMech:008786	DI Water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2199_LB_Agar_Broth_Miller.yaml	CultureMech:008791	DI Water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2228_Friis_medium.yaml	CultureMech:008816	Water	2900.0	G_PER_L	2900 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2232_Anaerolinea_Medium.yaml	CultureMech:008821	Distilled water	1000.0	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
@@ -1345,7 +1310,6 @@ INDICATOR_UNIT_SLIP	bacterial/TOGO_M2232_Anaerolinea_Medium.yaml	CultureMech:008
 WATER_AS_VOLUME	bacterial/TOGO_M2243_Half_Strength_Bacto_Marine_Broth.yaml	CultureMech:008832	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2243_Half_Strength_Bacto_Marine_Broth.yaml	CultureMech:008832	H3BO3	22	G_PER_L	22 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 WATER_AS_VOLUME	bacterial/TOGO_M2246_Van_Niel_s_Yeast_Agar.yaml	CultureMech:008834	DI Water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
-WATER_AS_VOLUME	bacterial/TOGO_M2250_Lactobacilli_MRS_Agar_Broth.yaml	CultureMech:008839	DI Water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2258_Pfennig_s_Medium_II_With_Salt.yaml	CultureMech:008844	Distilled water	2270.0	G_PER_L	2270 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M2258_Pfennig_s_Medium_II_With_Salt.yaml	CultureMech:008844	Resazurin (0,1%)	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2258_Pfennig_s_Medium_II_With_Salt.yaml	CultureMech:008844	Na2MoO4 x 2 H2O	36	G_PER_L	36 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -1411,7 +1375,6 @@ TRACE_SALT_AS_STOCK	bacterial/TOGO_M2284_Persephonella_Medium.yaml	CultureMech:0
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2284_Persephonella_Medium.yaml	CultureMech:008870	MnCl2 x 4 H2O	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2284_Persephonella_Medium.yaml	CultureMech:008870	CoCl2 x 6 H2O	150	G_PER_L	150 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2284_Persephonella_Medium.yaml	CultureMech:008870	ZnCl2	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/TOGO_M2285_Vibrio_Natriegens_Medium.yaml	CultureMech:008871	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2292_Mineral_Medium_Brunner.yaml	CultureMech:008878	Distilled water	2900.0	G_PER_L	2900 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2293_YED_Medium_salted.yaml	CultureMech:008879	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2295_Marinithermus_Hydrothermalis_Medium.yaml	CultureMech:008881	Distilled water	1990.0	G_PER_L	1990 G_PER_L water — reads as a preparation volume, not a concentration
@@ -1425,11 +1388,9 @@ TRACE_SALT_AS_STOCK	bacterial/TOGO_M229_Thermotoga_Medium.yaml	CultureMech:00888
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M2300_VY_4-SWS_Agar.yaml	CultureMech:008887	Cyanocobalamine (vitamin B12)	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	bacterial/TOGO_M2300_VY_4-SWS_Agar.yaml	CultureMech:008887	Distilled water	2900.0	G_PER_L	2900 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2301_R2A_Medium.yaml	CultureMech:008888	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
-WATER_AS_VOLUME	bacterial/TOGO_M2303_Thermus_Ruber_Medium.yaml	CultureMech:008889	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M230_Artificial_Soil_Agar.yaml	CultureMech:008896	FeCl3・6H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 WATER_AS_VOLUME	bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml	CultureMech:008899	DI Water	3500.0	G_PER_L	3500 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml	CultureMech:008899	MnSO4	2.2	G_PER_L	2.2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/TOGO_M2316_Ottow_Medium.yaml	CultureMech:008903	Tap water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2322_Natronobacteria_Medium.yaml	CultureMech:008910	Distilled water	1990.0	G_PER_L	1990 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2322_Natronobacteria_Medium.yaml	CultureMech:008910	Na2MoO4 x 2 H2O	36	G_PER_L	36 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2322_Natronobacteria_Medium.yaml	CultureMech:008910	H3BO3	6	G_PER_L	6 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -1466,15 +1427,11 @@ INDICATOR_UNIT_SLIP	bacterial/TOGO_M2334_Chthonomonas_Medium.yaml	CultureMech:00
 WATER_AS_VOLUME	bacterial/TOGO_M2335_CY-Agar.yaml	CultureMech:008922	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2336_Bacto_Marine_Broth_Difco_2216.yaml	CultureMech:008923	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2336_Bacto_Marine_Broth_Difco_2216.yaml	CultureMech:008923	H3BO3	22	G_PER_L	22 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/TOGO_M2337_Cytophaga_Hutchinsonii_Medium.yaml	CultureMech:008924	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2338_Thermus_162_Medium.yaml	CultureMech:008925	Distilled water	2900.0	G_PER_L	2900 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2338_Thermus_162_Medium.yaml	CultureMech:008925	Na2MoO4 x 2 H2O	25	G_PER_L	25 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2338_Thermus_162_Medium.yaml	CultureMech:008925	CoCl2 x 6 H2O	45	G_PER_L	45 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2338_Thermus_162_Medium.yaml	CultureMech:008925	CuSO4 x 5 H2O	25	G_PER_L	25 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2338_Thermus_162_Medium.yaml	CultureMech:008925	MnSO4 x H2O	2.28	G_PER_L	2.28 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/TOGO_M2339_Nutrient_Agar.yaml	CultureMech:008926	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
-WATER_AS_VOLUME	bacterial/TOGO_M2340_Nutrient_Agar.yaml	CultureMech:008928	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M2340_Nutrient_Agar.yaml	CultureMech:008928	MnSO4	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 WATER_AS_VOLUME	bacterial/TOGO_M2342_J-Agar.yaml	CultureMech:008930	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2343_Tepidanaerobacter_Acetatoxydans_Medium.yaml	CultureMech:008931	Distilled water	1000.0	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2343_Tepidanaerobacter_Acetatoxydans_Medium.yaml	CultureMech:008931	Na2MoO4 x 2 H2O	36	G_PER_L	36 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -1530,9 +1487,7 @@ WATER_AS_VOLUME	bacterial/TOGO_M2352_CASO_Agar_Merck_105458.yaml	CultureMech:008
 WATER_AS_VOLUME	bacterial/TOGO_M2353_Rhizobium_Medium.yaml	CultureMech:008938	Distilled water	1000.0	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2355_Caulobacter_Medium.yaml	CultureMech:008940	Tap water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2357_Reactivation_With_Liquid_Medium.yaml	CultureMech:008942	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
-WATER_AS_VOLUME	bacterial/TOGO_M2358_Reactivation_With_Liquid_Medium_1.yaml	CultureMech:008943	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2360_BHI_Medium.yaml	CultureMech:008946	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
-WATER_AS_VOLUME	bacterial/TOGO_M2361_YE_10_Ca_Medium.yaml	CultureMech:008947	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2364_Sulfurimonas_MJ_Medium.yaml	CultureMech:008949	Distilled water	1000.0	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M2364_Sulfurimonas_MJ_Medium.yaml	CultureMech:008949	Biotin	2	G_PER_L	2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M2364_Sulfurimonas_MJ_Medium.yaml	CultureMech:008949	p-Aminobenzoic acid	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -1551,11 +1506,9 @@ WATER_AS_VOLUME	bacterial/TOGO_M2390_Alicyclobacillus_Medium.yaml	CultureMech:00
 WATER_AS_VOLUME	bacterial/TOGO_M2391_Alicyclobacillus_Medium.yaml	CultureMech:008974	Distilled water	1500.0	G_PER_L	1500 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2392_Bacillus_Tusciae_Medium.yaml	CultureMech:008975	Distilled water	1000.0	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2417_Nutrient_Agar.yaml	CultureMech:008999	DI Water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
-WATER_AS_VOLUME	bacterial/TOGO_M2418_Nutrient_Broth.yaml	CultureMech:009000	DI Water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2419_CASO_Agar_Merck_105458.yaml	CultureMech:009001	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2419_CASO_Agar_Merck_105458.yaml	CultureMech:009001	MnSO4	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 WATER_AS_VOLUME	bacterial/TOGO_M2420_Alkaline_Nutrient_Agar.yaml	CultureMech:009003	Distilled water	1100.0	G_PER_L	1100 G_PER_L water — reads as a preparation volume, not a concentration
-WATER_AS_VOLUME	bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml	CultureMech:009008	DI Water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2439_MRS_Medium.yaml	CultureMech:009018	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2441_BHI_2_Medium.yaml	CultureMech:009020	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2442_Van_Niel_s_Yeast_Agar.yaml	CultureMech:009021	DI Water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
@@ -1576,7 +1529,6 @@ INDICATOR_UNIT_SLIP	bacterial/TOGO_M2443_Thauera_Aromatica_Medium.yaml	CultureMe
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M2443_Thauera_Aromatica_Medium.yaml	CultureMech:009022	Nicotinic acid	25	G_PER_L	25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M2443_Thauera_Aromatica_Medium.yaml	CultureMech:009022	Thiamine-HCl x 2 H2O	50	G_PER_L	50 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M2443_Thauera_Aromatica_Medium.yaml	CultureMech:009022	Pantothenic acid	50	G_PER_L	50 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-WATER_AS_VOLUME	bacterial/TOGO_M2447_LB_Agar_Miller.yaml	CultureMech:009026	DI Water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml	CultureMech:009037	Distilled water	1000.0	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml	CultureMech:009037	Na2MoO4 x 2 H2O	30	G_PER_L	30 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml	CultureMech:009037	H3BO3	300	G_PER_L	300 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -1606,7 +1558,6 @@ INDICATOR_UNIT_SLIP	bacterial/TOGO_M2464_Anaerolinea_Medium.yaml	CultureMech:009
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M2464_Anaerolinea_Medium.yaml	CultureMech:009042	Riboflavin	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M2464_Anaerolinea_Medium.yaml	CultureMech:009042	Nicotinic acid	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M2464_Anaerolinea_Medium.yaml	CultureMech:009042	Lipoic acid	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-WATER_AS_VOLUME	bacterial/TOGO_M2467_HI_Plus_Medium_w_YE_3.yaml	CultureMech:009044	DI Water	1700.0	G_PER_L	1700 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2471_Modified_Sea_Water_Agar.yaml	CultureMech:009047	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M2474_Medium_Modified_For_Dechloromonas_SPP..yaml	CultureMech:009050	Distilled water	4010.0	G_PER_L	4010 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M2474_Medium_Modified_For_Dechloromonas_SPP..yaml	CultureMech:009050	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -1659,7 +1610,6 @@ TRACE_SALT_AS_STOCK	bacterial/TOGO_M2477_Pfennig_s_Medium_II_With_Salt.yaml	Cult
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2477_Pfennig_s_Medium_II_With_Salt.yaml	CultureMech:009053	NiCl2 x 6 H2O	24	G_PER_L	24 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2477_Pfennig_s_Medium_II_With_Salt.yaml	CultureMech:009053	CuCl2 x 2 H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2477_Pfennig_s_Medium_II_With_Salt.yaml	CultureMech:009053	ZnCl2	70	G_PER_L	70 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/TOGO_M2481_Marine_Broth_2216.yaml	CultureMech:009055	DI Water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2499_BG11.yaml	CultureMech:009072	H3BO3	2.86	G_PER_L	2.86 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2499_BG11.yaml	CultureMech:009072	MnCl2 · 4H2O	1.81	G_PER_L	1.81 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 WATER_AS_VOLUME	bacterial/TOGO_M2520_R2A_Medium.yaml	CultureMech:009090	Distilled water	1000.0	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
@@ -2313,18 +2263,6 @@ INDICATOR_UNIT_SLIP	bacterial/TOGO_M290_EGGC_Medium.yaml	CultureMech:009446	Ribo
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M290_EGGC_Medium.yaml	CultureMech:009446	Nicotinic acid	20	G_PER_L	20 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M294_RC_Medium.yaml	CultureMech:009476	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M296_Thermodesulfobacterium_Hydrogenophilum_Medium.yaml	CultureMech:009492	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M298_PE_Medium.yaml	CultureMech:009509	FeSO4・H2O	1.11	G_PER_L	1.11 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M298_PE_Medium.yaml	CultureMech:009509	Biotin	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M298_PE_Medium.yaml	CultureMech:009509	Thiamine・HCl	100	G_PER_L	100 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M298_PE_Medium.yaml	CultureMech:009509	Pyridoxine・HCl	50	G_PER_L	50 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M298_PE_Medium.yaml	CultureMech:009509	Folic acid	50	G_PER_L	50 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M298_PE_Medium.yaml	CultureMech:009509	Vitamin B12	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M298_PE_Medium.yaml	CultureMech:009509	Nicotinic acid	100	G_PER_L	100 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M298_PE_Medium.yaml	CultureMech:009509	Na2MoO4・2H2O	1.21	G_PER_L	1.21 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M298_PE_Medium.yaml	CultureMech:009509	H3BO3	1.55	G_PER_L	1.55 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M298_PE_Medium.yaml	CultureMech:009509	ZnSO4・7H2O	1.44	G_PER_L	1.44 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M298_PE_Medium.yaml	CultureMech:009509	CuSO4・5H2O	1.26	G_PER_L	1.26 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M298_PE_Medium.yaml	CultureMech:009509	MnSO4・xH2O	5.58	G_PER_L	5.58 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2_Xylose-YP_Broth.yaml	CultureMech:009518	FeSO4・7H2O	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M2_Xylose-YP_Broth.yaml	CultureMech:009518	MnSO4・xH2O	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M3015_Sulfuriflexus_Medium.yaml	CultureMech:009531	Na2SeO3·5H2O	3	G_PER_L	3 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -2355,7 +2293,6 @@ INDICATOR_UNIT_SLIP	bacterial/TOGO_M3038_Modified_YCFA_medium.yaml	CultureMech:0
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M3038_Modified_YCFA_medium.yaml	CultureMech:009550	Riboflavin	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M3038_Modified_YCFA_medium.yaml	CultureMech:009550	Nicotinic acid	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	bacterial/TOGO_M3072_Chopped_Meat_Medium_With_Carbohydrates.yaml	CultureMech:009581	Distilled water	1200.0	G_PER_L	1200 G_PER_L water — reads as a preparation volume, not a concentration
-WATER_AS_VOLUME	bacterial/TOGO_M3116_Nutrient_Agar.yaml	CultureMech:009588	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/TOGO_M3119_Thermodesulfobium_Acidiphilum_Medium.yaml	CultureMech:009590	Distilled water	2990.0	G_PER_L	2990 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M3119_Thermodesulfobium_Acidiphilum_Medium.yaml	CultureMech:009590	Na2MoO4 x 2 H2O	36	G_PER_L	36 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M3119_Thermodesulfobium_Acidiphilum_Medium.yaml	CultureMech:009590	H3BO3	6	G_PER_L	6 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -2498,8 +2435,6 @@ INDICATOR_UNIT_SLIP	bacterial/TOGO_M3254_MB_medium.yaml	CultureMech:009686	Ribof
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M3254_MB_medium.yaml	CultureMech:009686	Nicotinic acid	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	bacterial/TOGO_M325_Sporotomaculum_Medium.yaml	CultureMech:009687	Distilled water	1000.0	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M325_Sporotomaculum_Medium.yaml	CultureMech:009687	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-WATER_AS_VOLUME	bacterial/TOGO_M3270_Tmbs4_Medium.yaml	CultureMech:009690	Distilled water	1030.0	G_PER_L	1030 G_PER_L water — reads as a preparation volume, not a concentration
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M3270_Tmbs4_Medium.yaml	CultureMech:009690	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M3287_MNYP_medium.yaml	CultureMech:009701	FeSO4·7H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M3287_MNYP_medium.yaml	CultureMech:009701	MnSO4·4H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 WATER_AS_VOLUME	bacterial/TOGO_M3290_modified_PYG_Medium.yaml	CultureMech:009703	Distilled water	1051.0	G_PER_L	1051 G_PER_L water — reads as a preparation volume, not a concentration
@@ -2552,9 +2487,7 @@ WATER_AS_VOLUME	bacterial/TOGO_M377_AGC2_Medium.yaml	CultureMech:009758	Distille
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M377_AGC2_Medium.yaml	CultureMech:009758	FeSO4・7H2O	44.2	G_PER_L	44.2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M378_Desulfobacterium_Medium.yaml	CultureMech:009759	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M378_Desulfobacterium_Medium.yaml	CultureMech:009759	Na2SeO3	3	G_PER_L	3 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/TOGO_M379_Glycerol-Soil_Medium.yaml	CultureMech:009760	Tap water	1810.0	G_PER_L	1810 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M383_MV_Lactate_Medium.yaml	CultureMech:009764	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M384_Desulfovibrio_Medium.yaml	CultureMech:009765	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	bacterial/TOGO_M385_JI_Medium.yaml	CultureMech:009766	Distilled water	1000.0	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M385_JI_Medium.yaml	CultureMech:009766	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M387_Marine_Desulfosarcina_Medium.yaml	CultureMech:009768	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -2884,18 +2817,6 @@ INDICATOR_UNIT_SLIP	bacterial/TOGO_M625_Desulfomicrobium_Medium.yaml	CultureMech
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M625_Desulfomicrobium_Medium.yaml	CultureMech:010025	Vitamin B12	100	G_PER_L	100 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M625_Desulfomicrobium_Medium.yaml	CultureMech:010025	Nicotinic acid	200	G_PER_L	200 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M626_Modified_PY4S_Agar.yaml	CultureMech:010026	vitamin B12	10	G_PER_L	10 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M627_CYS_Medium.yaml	CultureMech:010027	MnCl2・4H2O (5.0 g/L in 0.01 N H2SO4)	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M627_CYS_Medium.yaml	CultureMech:010027	ZnSO4・7H2O (0.6 g/L in 0.01 N H2SO4)	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M627_CYS_Medium.yaml	CultureMech:010027	CuSO4・5H2O (0.15 g/L in 0.01 N H2SO4)	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M627_CYS_Medium.yaml	CultureMech:010027	Na2MoO4・2H2O (12 g/L)	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M627_CYS_Medium.yaml	CultureMech:010027	CoCl2・6H2O (8.0 g/L in 0.01 N H2SO4)	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M627_CYS_Medium.yaml	CultureMech:010027	NiCl2・6H2O (0.2 g/L in 0.01 N H2SO4)	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M628_CYS_Medium_For_YMO722.yaml	CultureMech:010028	MnCl2・4H2O (5.0 g/L in 0.01 N H2SO4)	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M628_CYS_Medium_For_YMO722.yaml	CultureMech:010028	ZnSO4・7H2O (0.6 g/L in 0.01 N H2SO4)	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M628_CYS_Medium_For_YMO722.yaml	CultureMech:010028	CuSO4・5H2O (0.15 g/L in 0.01 N H2SO4)	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M628_CYS_Medium_For_YMO722.yaml	CultureMech:010028	Na2MoO4・2H2O (12 g/L)	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M628_CYS_Medium_For_YMO722.yaml	CultureMech:010028	CoCl2・6H2O (8.0 g/L in 0.01 N H2SO4)	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M628_CYS_Medium_For_YMO722.yaml	CultureMech:010028	NiCl2・6H2O (0.2 g/L in 0.01 N H2SO4)	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M631_HYL_Medium.yaml	CultureMech:010032	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M631_HYL_Medium.yaml	CultureMech:010032	CoCl2・6H2O	1.8	G_PER_L	1.8 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M631_HYL_Medium.yaml	CultureMech:010032	ZnSO4・7H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -2939,14 +2860,10 @@ INDICATOR_UNIT_SLIP	bacterial/TOGO_M694_Ruminococcus_Albus_Medium.yaml	CultureMe
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M695_PYG_Medium_G.yaml	CultureMech:010101	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M698_Dehalogenimonas_Medium.yaml	CultureMech:010104	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M699_Desulfovibrio_Tunisiensis_Medium.yaml	CultureMech:010105	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-WATER_AS_VOLUME	bacterial/TOGO_M6_BL_Agar_Glucose_Blood_Liver_Agar.yaml	CultureMech:010107	Distilled water	1025.0	G_PER_L	1025 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M704_Alicyclobacillus_Ferrooxydans_Medium.yaml	CultureMech:010111	FeSO4・7H2O	20	G_PER_L	20 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M705_Alicyclobacillus_Ferrooxydans_Medium.yaml	CultureMech:010112	FeSO4・7H2O	20	G_PER_L	20 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M707_MB_Medium_With_Methanol.yaml	CultureMech:010114	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M708_MB_Medium_With_Formate.yaml	CultureMech:010115	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M70_Methanol-Utilizing_Bacteria_Medium_B.yaml	CultureMech:010117	MnCl2・4H2O	5	G_PER_L	5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M70_Methanol-Utilizing_Bacteria_Medium_B.yaml	CultureMech:010117	ZnSO4・7H2O	5	G_PER_L	5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M70_Methanol-Utilizing_Bacteria_Medium_B.yaml	CultureMech:010117	Thiamine・HCl (see below)	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M714_Spirochaeta_Smaeagdinae_Medium.yaml	CultureMech:010121	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M715_Nautilia_Abyssi_Medium.yaml	CultureMech:010122	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M718_Acidimicrobium_Medium.yaml	CultureMech:010125	FeSO4・7H2O	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -2997,7 +2914,6 @@ INDICATOR_UNIT_SLIP	bacterial/TOGO_M748_Ravot_Modified_Medium_For_Thermoanaerovi
 WATER_AS_VOLUME	bacterial/TOGO_M754_Sporomusa_Medium.yaml	CultureMech:010160	Distilled water	1000.0	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M754_Sporomusa_Medium.yaml	CultureMech:010160	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M762_BM_For_Syntrophicus_Schinkii.yaml	CultureMech:010169	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M763_BM_For_Tepidanaerobacter_Acetoxydans.yaml	CultureMech:010170	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M766_Acetobacterium_Medium.yaml	CultureMech:010173	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M766_Acetobacterium_Medium.yaml	CultureMech:010173	Na2MoO4・2H2O	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M766_Acetobacterium_Medium.yaml	CultureMech:010173	H3BO3	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -3025,7 +2941,6 @@ INDICATOR_UNIT_SLIP	bacterial/TOGO_M780_MMJ-S304_Medium.yaml	CultureMech:010189	
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M781_Geobacter_Daltonii_Medium.yaml	CultureMech:010190	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	bacterial/TOGO_M782_Desulfovibrio_Mexicanus_Medium.yaml	CultureMech:010191	Distilled water	1000.0	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M782_Desulfovibrio_Mexicanus_Medium.yaml	CultureMech:010191	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M783_Dethiosulfovibrio_II_Medium.yaml	CultureMech:010192	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M784_Dethiosulfovibrio_Peptidovorans_Medium.yaml	CultureMech:010193	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M792_Desulfovibrio_Oceani_Medium.yaml	CultureMech:010202	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	bacterial/TOGO_M798_Betaine_bicarbonate_Buffered_Medium.yaml	CultureMech:010208	Distilled water	1078.5	G_PER_L	1078.5 G_PER_L water — reads as a preparation volume, not a concentration
@@ -3035,8 +2950,6 @@ INDICATOR_UNIT_SLIP	bacterial/TOGO_M798_Betaine_bicarbonate_Buffered_Medium.yaml
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M798_Betaine_bicarbonate_Buffered_Medium.yaml	CultureMech:010208	Pyridoxine・HCl	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M798_Betaine_bicarbonate_Buffered_Medium.yaml	CultureMech:010208	Nicotinic acid	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M801_Saltwater_Medium_With_Hydrogen.yaml	CultureMech:010213	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M802_Rumen_Fluid_Medium.yaml	CultureMech:010214	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/TOGO_M802_Rumen_Fluid_Medium.yaml	CultureMech:010214	FeSO4・7H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 WATER_AS_VOLUME	bacterial/TOGO_M806_MH1_Medium_For_Saliarchaeum_Rubrodurum.yaml	CultureMech:010218	Distilled water	1000.0	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M808_Thermoanaeromonas_Medium.yaml	CultureMech:010220	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M80_SM_Medium.yaml	CultureMech:010222	FeSO4・7H2O	4.99	G_PER_L	4.99 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -3085,7 +2998,6 @@ WATER_AS_VOLUME	bacterial/TOGO_M859_Desulfohalobium_Medium.yaml	CultureMech:0102
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M859_Desulfohalobium_Medium.yaml	CultureMech:010275	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M859_Desulfohalobium_Medium.yaml	CultureMech:010275	Na2SeO3・5H2O	3	G_PER_L	3 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M85_W_Medium.yaml	CultureMech:010276	FeSO4・7H2O	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M860_KOKO_Medium.yaml	CultureMech:010277	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M861_Modified_CM3_Medium.yaml	CultureMech:010278	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M861_Modified_CM3_Medium.yaml	CultureMech:010278	FeSO4·7H2O	1.25	G_PER_L	1.25 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M862_Dehalococcoides_Medium.yaml	CultureMech:010279	Resazurin	0.25	G_PER_L	0.25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -3106,7 +3018,6 @@ WATER_AS_VOLUME	bacterial/TOGO_M871_7WAY-8-7_Medium.yaml	CultureMech:010289	Dist
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M871_7WAY-8-7_Medium.yaml	CultureMech:010289	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	bacterial/TOGO_M872_8KG-4_Medium.yaml	CultureMech:010290	Distilled water	1000.0	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M872_8KG-4_Medium.yaml	CultureMech:010290	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/TOGO_M873_Syfac_Medium.yaml	CultureMech:010291	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M877_Propionispora_Medium.yaml	CultureMech:010295	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M879_Lind_BHT_Medium.yaml	CultureMech:010297	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M87_Rhodopseudomonas_Rutila_Medium.yaml	CultureMech:010298	Thiamine・HCl	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -3259,7 +3170,6 @@ INDICATOR_UNIT_SLIP	bacterial/TOGO_M997_NH-JN4_Medium.yaml	CultureMech:010425	Re
 INDICATOR_UNIT_SLIP	bacterial/TOGO_M998_C41_Medium.yaml	CultureMech:010426	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M998_C41_Medium.yaml	CultureMech:010426	FeSO4・7H2O	1.25	G_PER_L	1.25 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/TOGO_M9_Lactobacillus_Medium_II.yaml	CultureMech:010429	MnSO4・xH2O	2.4	G_PER_L	2.4 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/a1_medium.yaml	CultureMech:000483	Sea water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/a2_medium.yaml	CultureMech:001227	FeCl3 x 6 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/a2_medium.yaml	CultureMech:001227	H3BO3	2.5	G_PER_L	2.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/a3.yaml	CultureMech:008520	FeSO4·7H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -3461,7 +3371,6 @@ TRACE_SALT_AS_STOCK	bacterial/anaerobic_freshwater_fwm_medium_for_dsm_15978.yaml
 TRACE_SALT_AS_STOCK	bacterial/anaerobic_freshwater_fwm_medium_for_dsm_15978.yaml	CultureMech:009205	FeSO4 x 7 H2O (0.2% w/v)	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/anaerobic_marine_broth_2216.yaml	CultureMech:010147	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/anaerobic_mineral_medium_with_yeast_extract.yaml	CultureMech:007716	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/anaerobic_natural_seawater_medium.yaml	CultureMech:007700	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/anaerobic_serine_arginine_medium.yaml	CultureMech:006653	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/anaerobic_serine_arginine_medium.yaml	CultureMech:006653	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/anaerobic_thauera_medium.yaml	CultureMech:004072	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -3523,7 +3432,6 @@ WATER_AS_VOLUME	bacterial/aromatoleum_medium.yaml	CultureMech:001192	Double dist
 TRACE_SALT_AS_STOCK	bacterial/artficial_brackish_water_medium.yaml	CultureMech:002296	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/artficial_freshwater_medium_i.yaml	CultureMech:002297	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/artficial_freshwater_medium_ii.yaml	CultureMech:002298	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/artficial_marine_water_medium.yaml	CultureMech:007728	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/artificial_deep_lake_medium.yaml	CultureMech:008960	Biotin	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/artificial_deep_lake_medium.yaml	CultureMech:008960	Thiamine . HCl	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/artificial_deep_lake_medium.yaml	CultureMech:008960	Cyanocobalamin	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -3568,7 +3476,6 @@ TRACE_SALT_AS_STOCK	bacterial/asn_iii.yaml	CultureMech:000317	H3BO3	2.86	G_PER_L
 TRACE_SALT_AS_STOCK	bacterial/asn_iii.yaml	CultureMech:000317	MnCl2 x 4 H2O	1.81	G_PER_L	1.81 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/aso4_medium.yaml	CultureMech:003884	FeSO4 x 7 H2O	2.2	G_PER_L	2.2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/aso4_medium.yaml	CultureMech:003884	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-WATER_AS_VOLUME	bacterial/astidious_anaerobe_agar.yaml	CultureMech:009091	add deionized water to	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/asw.yaml	CultureMech:000360	Thiamine HCl	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	bacterial/asw_barley.yaml	CultureMech:000371	Natural sea water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/asw_barley.yaml	CultureMech:000371	Thiamine HCl	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -3638,20 +3545,16 @@ TRACE_SALT_AS_STOCK	bacterial/bg_11.yaml	CultureMech:008951	H3BO3	2.86	G_PER_L	2
 TRACE_SALT_AS_STOCK	bacterial/bicarbonate_buffered_medium.yaml	CultureMech:002274	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/bicarbonate_buffered_medium_with_acethylene.yaml	CultureMech:002412	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/bifidobacterium_medium.yaml	CultureMech:001717	Resazurin	4	G_PER_L	4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/bl_agar_glucose_blood_liver_agar.yaml	CultureMech:002499	FeSO4 x 7 H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/bl_agar_glucose_blood_liver_agar.yaml	CultureMech:002499	MnSO4 x n H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/blautia_medium.yaml	CultureMech:002083	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	bacterial/blood_agar_base_oxoid_cm55.yaml	CultureMech:001747	Tap water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/bm_for_syntrophicus_schinkii.yaml	CultureMech:003080	FeCl2 x 4 H2O	1.9802	G_PER_L	1.9802 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/bn3_medium.yaml	CultureMech:002783	Vitamin B12	5.0001	G_PER_L	5.0001 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/bn3_medium.yaml	CultureMech:002783	FeSO4 x 7 H2O	2.1	G_PER_L	2.1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/bordet_gengou_broth_medium.yaml	CultureMech:008894	DI Water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/brackish_water_desulfovibrio_postgate_medium.yaml	CultureMech:001519	FeSO4 x 7 H2O	50	G_PER_L	50 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 WATER_AS_VOLUME	bacterial/brain_heart_infusion_broth.yaml	CultureMech:009009	DI Water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/brain_heart_infusion_media_bhi_supplemented_with_0_5_of_tween_80.yaml	CultureMech:009424	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/brockia_medium.yaml	CultureMech:001503	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/brockia_medium.yaml	CultureMech:001503	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-WATER_AS_VOLUME	bacterial/brucella_albimi_broth.yaml	CultureMech:008874	DI Water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/bsk_medium.yaml	CultureMech:001513	Double distilled water	1243.0	G_PER_L	1243 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/bsm_medium.yaml	CultureMech:001146	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/bsm_rc_medium.yaml	CultureMech:002277	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -3937,12 +3840,6 @@ TRACE_SALT_AS_STOCK	bacterial/cys_medium.yaml	CultureMech:000541	Na2MoO4 x 2 H2O
 TRACE_SALT_AS_STOCK	bacterial/cys_medium.yaml	CultureMech:000541	MnCl2 x 4 H2O	5	G_PER_L	5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/cys_medium.yaml	CultureMech:000541	CoCl2 x 6 H2O	8	G_PER_L	8 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/cys_medium_for_strain_ss.yaml	CultureMech:003067	FeSO4 x 7 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/cys_medium_for_ymo722.yaml	CultureMech:002966	Na2MoO4 x 2 H2O	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/cys_medium_for_ymo722.yaml	CultureMech:002966	MnCl2 x 4 H2O	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/cys_medium_for_ymo722.yaml	CultureMech:002966	ZnSO4 x 7 H2O	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/cys_medium_for_ymo722.yaml	CultureMech:002966	CuSO4 x 5 H2O	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/cys_medium_for_ymo722.yaml	CultureMech:002966	CoCl2 x 6 H2O	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/cys_medium_for_ymo722.yaml	CultureMech:002966	NiCl2 x 6 H2O	100	G_PER_L	100 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/cys_medium_with_modified_nacl_concentration.yaml	CultureMech:000542	Na2MoO4 x 2 H2O	12	G_PER_L	12 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/cys_medium_with_modified_nacl_concentration.yaml	CultureMech:000542	MnCl2 x 4 H2O	5	G_PER_L	5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/cys_medium_with_modified_nacl_concentration.yaml	CultureMech:000542	CoCl2 x 6 H2O	8	G_PER_L	8 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -3991,8 +3888,6 @@ TRACE_SALT_AS_STOCK	bacterial/desulfitobacterium_hafniense_medium.yaml	CultureMe
 INDICATOR_UNIT_SLIP	bacterial/desulfitobacterium_hafniense_medium.yaml	CultureMech:001859	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/desulfitobacterium_medium.yaml	CultureMech:001801	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/desulfitobacterium_pcp_1_medium.yaml	CultureMech:001993	FeCl2 x 4 H2O	1.502	G_PER_L	1.502 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/desulfobacter_curvatus_medium.yaml	CultureMech:001291	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/desulfobacter_curvatus_medium.yaml	CultureMech:001291	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/desulfobacter_medium.yaml	CultureMech:001285	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/desulfobacter_medium.yaml	CultureMech:001285	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	bacterial/desulfobacter_medium_for_dsm_10631.yaml	CultureMech:009115	Distilled water	3980.0	G_PER_L	3980 G_PER_L water — reads as a preparation volume, not a concentration
@@ -4018,8 +3913,6 @@ INDICATOR_UNIT_SLIP	bacterial/desulfobacter_medium_for_dsm_10631.yaml	CultureMec
 INDICATOR_UNIT_SLIP	bacterial/desulfobacter_medium_with_lactate.yaml	CultureMech:009539	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/desulfobacter_postgatei_medium.yaml	CultureMech:004227	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/desulfobacter_postgatei_medium.yaml	CultureMech:004227	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/desulfobacter_sp_medium.yaml	CultureMech:004252	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/desulfobacter_sp_medium.yaml	CultureMech:004252	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/desulfobacter_sp_medium_lactate.yaml	CultureMech:001293	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/desulfobacter_sp_medium_lactate.yaml	CultureMech:001293	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/desulfobacterium_catecholicum_medium.yaml	CultureMech:002423	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -4121,8 +4014,6 @@ INDICATOR_UNIT_SLIP	bacterial/desulfofarcimen_medium_for_dsm_7213.yaml	CultureMe
 INDICATOR_UNIT_SLIP	bacterial/desulfofarcimen_medium_for_dsm_7213.yaml	CultureMech:009103	Riboflavin	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/desulfofarcimen_medium_for_dsm_7213.yaml	CultureMech:009103	Nicotinic acid	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/desulfofarcimen_medium_for_dsm_7213.yaml	CultureMech:009103	Lipoic acid	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/desulfofrigus_medium.yaml	CultureMech:002020	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/desulfofrigus_medium.yaml	CultureMech:002020	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/desulfohalobium_medium.yaml	CultureMech:001626	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/desulfohalobium_utahense_medium.yaml	CultureMech:003305	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/desulfohalotomaculum_medium.yaml	CultureMech:001962	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -4178,8 +4069,6 @@ TRACE_SALT_AS_STOCK	bacterial/desulfosporosinus_bsrei1_medium.yaml	CultureMech:0
 INDICATOR_UNIT_SLIP	bacterial/desulfosudis_medium.yaml	CultureMech:001649	Vitamin B12	1.001	G_PER_L	1.001 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/desulfosudis_medium.yaml	CultureMech:001649	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/desulfosudis_medium.yaml	CultureMech:001649	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/desulfotalea_psychrophila_medium.yaml	CultureMech:002021	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/desulfotalea_psychrophila_medium.yaml	CultureMech:002021	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/desulfothermobacter_medium.yaml	CultureMech:001158	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/desulfothermobacter_medium.yaml	CultureMech:001158	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/desulfothermus_mj_medium_h2_co2.yaml	CultureMech:000430	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -4227,7 +4116,6 @@ INDICATOR_UNIT_SLIP	bacterial/desulfovibrio_magnus_medium.yaml	CultureMech:00295
 TRACE_SALT_AS_STOCK	bacterial/desulfovibrio_marine_medium.yaml	CultureMech:004189	FeSO4 x 7 H2O	50	G_PER_L	50 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/desulfovibrio_marinus_medium.yaml	CultureMech:002899	FeSO4 x 7 H2O	2.1	G_PER_L	2.1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/desulfovibrio_medium_brackish.yaml	CultureMech:005232	FeSO4 x 7 H2O	50	G_PER_L	50 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/desulfovibrio_medium_choline.yaml	CultureMech:001776	FeSO4 x 7 H2O	50	G_PER_L	50 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/desulfovibrio_medium_seawater.yaml	CultureMech:001775	FeSO4 x 7 H2O	50	G_PER_L	50 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/desulfovibrio_mexicanus_medium.yaml	CultureMech:003100	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/desulfovibrio_mv_medium.yaml	CultureMech:001779	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -4297,7 +4185,6 @@ TRACE_SALT_AS_STOCK	bacterial/desulfuromusa_medium.yaml	CultureMech:001292	FeCl2
 INDICATOR_UNIT_SLIP	bacterial/desulfuromusa_medium.yaml	CultureMech:001292	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/dethiobacter_medium.yaml	CultureMech:000537	FeSO4 x 7 H2O	2.2	G_PER_L	2.2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/dethiobacter_medium.yaml	CultureMech:000537	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/dethiosulfovibrio_ii_medium.yaml	CultureMech:003101	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/dethiosulfovibrio_medium.yaml	CultureMech:002074	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/dichotomicrobium_thermohalophilum_medium.yaml	CultureMech:006070	ZnSO4 x 7 H2O	1.095	G_PER_L	1.095 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/dictyoglomus_medium.yaml	CultureMech:001494	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -4330,9 +4217,6 @@ TRACE_SALT_AS_STOCK	bacterial/dsm_135_medium.yaml	CultureMech:009613	NiCl2.6H2O	
 TRACE_SALT_AS_STOCK	bacterial/dsm_135_medium.yaml	CultureMech:009613	ZnSO4.7H2O	180	G_PER_L	180 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/dsm_135_medium.yaml	CultureMech:009613	CuSO4.5H2O	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/dsm_135_medium.yaml	CultureMech:009613	CoSO4.7H2O	180	G_PER_L	180 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/dsm_15672.yaml	CultureMech:003507	FeSO4 x 7 H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/dsm_15673.yaml	CultureMech:003508	FeSO4 x 7 H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/dsm_16984_dsm_24478_24479_24480_24481_24492_24493_and_24527.yaml	CultureMech:003509	FeSO4 x 7 H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/dsm_24515.yaml	CultureMech:003961	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/dsm_24515.yaml	CultureMech:003961	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/dsm_5262.yaml	CultureMech:006424	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -4464,14 +4348,6 @@ INDICATOR_UNIT_SLIP	bacterial/for_dsm_12260.yaml	CultureMech:006652	Pyridoxine h
 TRACE_SALT_AS_STOCK	bacterial/for_dsm_12261_and_dsm_12262.yaml	CultureMech:006651	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/for_dsm_12261_and_dsm_12262.yaml	CultureMech:006651	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/for_dsm_12326.yaml	CultureMech:005701	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/for_dsm_12341.yaml	CultureMech:006689	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/for_dsm_12341.yaml	CultureMech:006689	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/for_dsm_12342_dsm_12343_and_dsm_12345.yaml	CultureMech:006690	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/for_dsm_12342_dsm_12343_and_dsm_12345.yaml	CultureMech:006690	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/for_dsm_12343.yaml	CultureMech:006688	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/for_dsm_12343.yaml	CultureMech:006688	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/for_dsm_12344.yaml	CultureMech:006691	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/for_dsm_12344.yaml	CultureMech:006691	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/for_dsm_12503.yaml	CultureMech:006681	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/for_dsm_12504.yaml	CultureMech:006682	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/for_dsm_12505.yaml	CultureMech:006683	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -4520,12 +4396,6 @@ TRACE_SALT_AS_STOCK	bacterial/for_dsm_14823.yaml	CultureMech:006286	FeCl2 x 4 H2
 INDICATOR_UNIT_SLIP	bacterial/for_dsm_14823.yaml	CultureMech:006286	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/for_dsm_14826.yaml	CultureMech:006748	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/for_dsm_14828.yaml	CultureMech:006749	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/for_dsm_14880.yaml	CultureMech:004231	FeSO4 x 7 H2O	80	G_PER_L	80 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/for_dsm_14880.yaml	CultureMech:004231	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/for_dsm_14880.yaml	CultureMech:004231	Vitamin B12	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/for_dsm_14880.yaml	CultureMech:004231	Nicotinic acid	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/for_dsm_14880.yaml	CultureMech:004231	Pyridoxine hydrochloride	0.3	G_PER_L	0.3 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/for_dsm_14880.yaml	CultureMech:004231	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/for_dsm_14888.yaml	CultureMech:006833	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/for_dsm_14947.yaml	CultureMech:006909	FeCl2 x 4 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/for_dsm_14947.yaml	CultureMech:006909	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -4587,12 +4457,6 @@ INDICATOR_UNIT_SLIP	bacterial/for_dsm_17232.yaml	CultureMech:006288	Pyridoxine h
 TRACE_SALT_AS_STOCK	bacterial/for_dsm_17291.yaml	CultureMech:005138	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/for_dsm_17291.yaml	CultureMech:005138	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/for_dsm_17375.yaml	CultureMech:003517	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/for_dsm_1744.yaml	CultureMech:004230	FeSO4 x 7 H2O	80	G_PER_L	80 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/for_dsm_1744.yaml	CultureMech:004230	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/for_dsm_1744.yaml	CultureMech:004230	Vitamin B12	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/for_dsm_1744.yaml	CultureMech:004230	Nicotinic acid	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/for_dsm_1744.yaml	CultureMech:004230	Pyridoxine hydrochloride	0.3	G_PER_L	0.3 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/for_dsm_1744.yaml	CultureMech:004230	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/for_dsm_17477.yaml	CultureMech:005139	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/for_dsm_17477.yaml	CultureMech:005139	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/for_dsm_17711_and_dsm_23604.yaml	CultureMech:006914	FeCl2 x 4 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -4648,12 +4512,6 @@ INDICATOR_UNIT_SLIP	bacterial/for_dsm_1974.yaml	CultureMech:004103	Pyridoxine hy
 INDICATOR_UNIT_SLIP	bacterial/for_dsm_19780.yaml	CultureMech:003934	Vitamin B12	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/for_dsm_19849.yaml	CultureMech:005698	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/for_dsm_21278.yaml	CultureMech:005703	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/for_dsm_21556.yaml	CultureMech:004232	FeSO4 x 7 H2O	80	G_PER_L	80 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/for_dsm_21556.yaml	CultureMech:004232	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/for_dsm_21556.yaml	CultureMech:004232	Vitamin B12	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/for_dsm_21556.yaml	CultureMech:004232	Nicotinic acid	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/for_dsm_21556.yaml	CultureMech:004232	Pyridoxine hydrochloride	0.3	G_PER_L	0.3 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/for_dsm_21556.yaml	CultureMech:004232	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/for_dsm_21571.yaml	CultureMech:003946	FeSO4 x 7 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/for_dsm_21571.yaml	CultureMech:003946	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/for_dsm_21571.yaml	CultureMech:003946	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -4711,8 +4569,6 @@ INDICATOR_UNIT_SLIP	bacterial/for_dsm_4440.yaml	CultureMech:004951	Pyridoxine hy
 TRACE_SALT_AS_STOCK	bacterial/for_dsm_4556_dsm_10334_and_dsm_13486.yaml	CultureMech:003944	FeSO4 x 7 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/for_dsm_4556_dsm_10334_and_dsm_13486.yaml	CultureMech:003944	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/for_dsm_4556_dsm_10334_and_dsm_13486.yaml	CultureMech:003944	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/for_dsm_4661.yaml	CultureMech:004246	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/for_dsm_4661.yaml	CultureMech:004246	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/for_dsm_5388.yaml	CultureMech:005610	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/for_dsm_5388.yaml	CultureMech:005610	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/for_dsm_5671_strain_kn245.yaml	CultureMech:005627	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -4943,7 +4799,6 @@ TRACE_SALT_AS_STOCK	bacterial/halothiobacillus_neapolitanus_medium.yaml	CultureM
 TRACE_SALT_AS_STOCK	bacterial/halothiobacillus_neapolitanus_medium.yaml	CultureMech:001826	CoCl2 x 6 H2O	1.61	G_PER_L	1.61 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/halovibrio_medium.yaml	CultureMech:000618	FeSO4 x 7 H2O	2.2	G_PER_L	2.2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/haroarcula_medium.yaml	CultureMech:008219	FeCl2·4H2O	36	G_PER_L	36 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/hayflick_medium.yaml	CultureMech:009333	Phenol Red	24	G_PER_L	24 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	bacterial/hd_medium_1_10_diluted_modified.yaml	CultureMech:000571	Double distilled water	2000.0	G_PER_L	2000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/heliobacillus_mobilis_medium.yaml	CultureMech:005963	H3BO3	2.86	G_PER_L	2.86 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/heliobacillus_mobilis_medium.yaml	CultureMech:005963	MnCl2 x 4 H2O	1.81	G_PER_L	1.81 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -4957,7 +4812,6 @@ INDICATOR_UNIT_SLIP	bacterial/helmutkoenigia_medium.yaml	CultureMech:001999	Pyri
 INDICATOR_UNIT_SLIP	bacterial/helmutkoenigia_medium.yaml	CultureMech:001999	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/hesp1_medium.yaml	CultureMech:002301	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/hesp1_sr1_tmc4_lup_medium.yaml	CultureMech:006687	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/hi_plus_medium_w_ye_3.yaml	CultureMech:008771	DI Water	1700.0	G_PER_L	1700 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/hippea_jasoniae_medium.yaml	CultureMech:000821	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/hippea_medium.yaml	CultureMech:002013	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/hlh_700_medium.yaml	CultureMech:001086	MnCl2 x 4 H2O	1.81	G_PER_L	1.81 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -5133,9 +4987,6 @@ INDICATOR_UNIT_SLIP	bacterial/lactate_bicarbonate_buffered_medium.yaml	CultureMe
 INDICATOR_UNIT_SLIP	bacterial/lactate_bicarbonate_buffered_medium.yaml	CultureMech:003203	Nicotinic acid	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/lactic_acid_bacteria_broth.yaml	CultureMech:002551	FeSO4 x 7 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/lactic_acid_bacteria_broth.yaml	CultureMech:002551	MnSO4 x n H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/lactobacilli_mrs_agar.yaml	CultureMech:009016	DI Water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
-WATER_AS_VOLUME	bacterial/lactobacilli_mrs_agar_broth.yaml	CultureMech:008837	DI Water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
-WATER_AS_VOLUME	bacterial/lactobacilli_mrs_broth.yaml	CultureMech:009017	DI Water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/lamprobacter_medium.yaml	CultureMech:000849	FeSO4 x 7 H2O	2.2	G_PER_L	2.2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/larkinella_arboricola_medium.yaml	CultureMech:000784	FeSO4 x 7 H2O	1.099	G_PER_L	1.099 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/larkinella_arboricola_medium.yaml	CultureMech:000784	ZnSO4 x 7 H2O	1.095	G_PER_L	1.095 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -5287,12 +5138,8 @@ TRACE_SALT_AS_STOCK	bacterial/marine_aob_medium_b.yaml	CultureMech:007644	MnCl2�
 TRACE_SALT_AS_STOCK	bacterial/marine_aob_medium_b.yaml	CultureMech:007644	CoCl2・6H2O	237.93	G_PER_L	237.93 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/marine_aob_medium_b.yaml	CultureMech:007644	ZnSO4・7H2O	287.56	G_PER_L	287.56 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/marine_aob_medium_b.yaml	CultureMech:007644	CuSO4・5H2O	249.68	G_PER_L	249.68 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/marine_caulobacter_medium.yaml	CultureMech:006089	Sea water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
-INDICATOR_UNIT_SLIP	bacterial/marine_caulobacter_medium_spyem_containing_sea_salts_and_nh4cl.yaml	CultureMech:008859	Riboflavin (0.2 mg/ml)	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/marine_caulobacter_medium_spyem_containing_sea_salts_and_nh4cl.yaml	CultureMech:008859	Riboflavin	2	G_PER_L	2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/marine_clostridium_medium.yaml	CultureMech:007805	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/marine_desulfosarcina_medium.yaml	CultureMech:009767	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/marine_desulfovibrio_complex_medium.yaml	CultureMech:009535	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/marine_srb_medium.yaml	CultureMech:007665	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/marine_srb_medium.yaml	CultureMech:007665	Na2SeO3	3	G_PER_L	3 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/marine_tryptone_yeast_extract_medium.yaml	CultureMech:007827	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -5365,24 +5212,6 @@ TRACE_SALT_AS_STOCK	bacterial/medium_193_modified_for_dsm_6637.yaml	CultureMech:
 INDICATOR_UNIT_SLIP	bacterial/medium_193_modified_for_dsm_6637.yaml	CultureMech:004225	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/medium_193_modified_for_dsm_8775.yaml	CultureMech:004226	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/medium_193_modified_for_dsm_8775.yaml	CultureMech:004226	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/medium_194_modified_for_dsm_13527.yaml	CultureMech:004229	FeSO4 x 7 H2O	80	G_PER_L	80 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/medium_194_modified_for_dsm_13527.yaml	CultureMech:004229	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/medium_194_modified_for_dsm_13527.yaml	CultureMech:004229	Vitamin B12	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/medium_194_modified_for_dsm_13527.yaml	CultureMech:004229	Nicotinic acid	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/medium_194_modified_for_dsm_13527.yaml	CultureMech:004229	Pyridoxine hydrochloride	0.3	G_PER_L	0.3 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/medium_194_modified_for_dsm_13527.yaml	CultureMech:004229	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/medium_194_modified_for_dsm_5092.yaml	CultureMech:004233	FeSO4 x 7 H2O	80	G_PER_L	80 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/medium_194_modified_for_dsm_5092.yaml	CultureMech:004233	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/medium_194_modified_for_dsm_5092.yaml	CultureMech:004233	Vitamin B12	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/medium_194_modified_for_dsm_5092.yaml	CultureMech:004233	Nicotinic acid	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/medium_194_modified_for_dsm_5092.yaml	CultureMech:004233	Pyridoxine hydrochloride	0.3	G_PER_L	0.3 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/medium_194_modified_for_dsm_5092.yaml	CultureMech:004233	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/medium_194_modified_for_dsm_6523.yaml	CultureMech:004234	FeSO4 x 7 H2O	80	G_PER_L	80 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/medium_194_modified_for_dsm_6523.yaml	CultureMech:004234	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/medium_194_modified_for_dsm_6523.yaml	CultureMech:004234	Vitamin B12	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/medium_194_modified_for_dsm_6523.yaml	CultureMech:004234	Nicotinic acid	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/medium_194_modified_for_dsm_6523.yaml	CultureMech:004234	Pyridoxine hydrochloride	0.3	G_PER_L	0.3 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/medium_194_modified_for_dsm_6523.yaml	CultureMech:004234	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/medium_195_modified_for_dsm_12130.yaml	CultureMech:004236	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/medium_195_modified_for_dsm_12130.yaml	CultureMech:004236	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/medium_195_modified_for_dsm_13036.yaml	CultureMech:004237	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -5417,7 +5246,6 @@ TRACE_SALT_AS_STOCK	bacterial/medium_196_modified_for_dsm_13871.yaml	CultureMech
 TRACE_SALT_AS_STOCK	bacterial/medium_196_modified_for_dsm_13871.yaml	CultureMech:004255	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/medium_196_modified_for_dsm_9700.yaml	CultureMech:004256	FeCl3 x 6 H2O	2.80957	G_PER_L	2.80957 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/medium_196_modified_for_dsm_9700.yaml	CultureMech:004256	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/medium_1_liquid_with_20_horse_serum.yaml	CultureMech:008794	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/medium_203_modified_for_dsm_3537.yaml	CultureMech:004299	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/medium_203_modified_for_dsm_3538.yaml	CultureMech:004300	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/medium_233_modified_for_dsm_6564.yaml	CultureMech:004608	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -6287,7 +6115,6 @@ INDICATOR_UNIT_SLIP	bacterial/microaerobic_sulfur_oxidizing_bacteria_medium.yaml
 INDICATOR_UNIT_SLIP	bacterial/microaerobic_sulfur_oxidizing_bacteria_medium.yaml	CultureMech:008292	Folic acid	2	G_PER_L	2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/microaerobic_sulfur_oxidizing_bacteria_medium.yaml	CultureMech:008292	Riboflavin	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/microaerobic_sulfur_oxidizing_bacteria_medium.yaml	CultureMech:008292	Nicotinic acid	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/microaerophilic_thermus_medium.yaml	CultureMech:003243	FeCl3 x 6 H2O	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/microbacter_medium.yaml	CultureMech:001048	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/microbacter_medium.yaml	CultureMech:001048	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 WATER_AS_VOLUME	bacterial/middle_brook_medium.yaml	CultureMech:008914	Distilled water	1000.0	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
@@ -6306,7 +6133,6 @@ INDICATOR_UNIT_SLIP	bacterial/min_e_methyloversatilis_medium.yaml	CultureMech:00
 TRACE_SALT_AS_STOCK	bacterial/min_e_methyloversatilis_medium.yaml	CultureMech:000799	ZnSO4 x 7 H2O	11	G_PER_L	11 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/min_e_methyloversatilis_medium.yaml	CultureMech:000799	MnCl2 x 4 H2O	2.5	G_PER_L	2.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/min_e_methyloversatilis_medium.yaml	CultureMech:000799	FeSO4 x 7 H2O	5	G_PER_L	5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/mineral_medium.yaml	CultureMech:000423	FeSO4 x 7 H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/mineral_medium_jagmann.yaml	CultureMech:001199	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/mineral_medium_m9_for_e_coli_jm_strains.yaml	CultureMech:001488	Thiamine-HCl x 2 H2O	0.373301	G_PER_L	0.373301 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/mineral_medium_nagel_and_andreesen.yaml	CultureMech:001575	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -6347,7 +6173,6 @@ INDICATOR_UNIT_SLIP	bacterial/mmypf_medium.yaml	CultureMech:008593	Resazurin	1	G
 TRACE_SALT_AS_STOCK	bacterial/mmys_i_medium.yaml	CultureMech:002555	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/mmys_ii_medium.yaml	CultureMech:002556	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/mmys_iii_medium.yaml	CultureMech:002561	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/mn_ii_oxidation_medium.yaml	CultureMech:008735	MnCl2·4H2O	36	G_PER_L	36 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/mn_marine_medium_atcc_medium_957_with_20_mcg_l_of_vitamin_b12.yaml	CultureMech:009056	H3BO3	2.86	G_PER_L	2.86 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/mn_marine_medium_atcc_medium_957_with_20_mcg_l_of_vitamin_b12.yaml	CultureMech:009056	MnCl2 · 4H2O	1.81	G_PER_L	1.81 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/mnyp_medium.yaml	CultureMech:009700	FeSO4·7H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -6452,7 +6277,6 @@ INDICATOR_UNIT_SLIP	bacterial/modified_cm3_medium.yaml	CultureMech:003170	Resazu
 TRACE_SALT_AS_STOCK	bacterial/modified_cm3_medium.yaml	CultureMech:003170	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/modified_cm_ye_medium_a.yaml	CultureMech:002332	FeSO4 x 7 H2O	49.8	G_PER_L	49.8 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/modified_cm_ye_medium_b.yaml	CultureMech:002078	FeSO4 x 7 H2O	49.8	G_PER_L	49.8 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/modified_csy_3_agar.yaml	CultureMech:003147	Sea water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/modified_d58_medium.yaml	CultureMech:008587	Distilled water	1000.0	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/modified_d58_medium.yaml	CultureMech:008587	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/modified_d58_medium.yaml	CultureMech:008587	FeSO4·7H2O	1.1	G_PER_L	1.1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -6466,7 +6290,6 @@ INDICATOR_UNIT_SLIP	bacterial/modified_gs_2_medium.yaml	CultureMech:009628	p-Ami
 INDICATOR_UNIT_SLIP	bacterial/modified_gs_2_medium.yaml	CultureMech:009628	Pyridoxine hydrochloride	2	G_PER_L	2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/modified_gs_2_medium.yaml	CultureMech:009628	Vitamin B12	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/modified_m13_verrucomicrobium_medium.yaml	CultureMech:001082	ZnSO4 x 7 H2O	1.095	G_PER_L	1.095 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/modified_m17_medium.yaml	CultureMech:008804	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/modified_m1_agar.yaml	CultureMech:003143	Sea water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/modified_m30_medium.yaml	CultureMech:008747	Distilled water	1172.0	G_PER_L	1172 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/modified_m30_medium.yaml	CultureMech:008747	FeSO4 x 7 H2O	99	G_PER_L	99 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -6591,7 +6414,6 @@ INDICATOR_UNIT_SLIP	bacterial/modified_tc_medium.yaml	CultureMech:008572	Nicotin
 INDICATOR_UNIT_SLIP	bacterial/modified_tc_medium.yaml	CultureMech:008572	Lipoic acid	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/modified_thermus_162_medium.yaml	CultureMech:001761	FeCl2 x 4 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/modified_thermus_medium_878.yaml	CultureMech:001137	MnSO4 x H2O	2.28	G_PER_L	2.28 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/modified_thermus_medium_with_3_nacl.yaml	CultureMech:002970	FeCl3 x 6 H2O	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/modified_thermus_sv_medium.yaml	CultureMech:002971	FeCl3 x 6 H2O	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/modified_thiocapsa_medium.yaml	CultureMech:003044	FeSO4 x 7 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/modified_thiocapsa_medium.yaml	CultureMech:003044	Nicotinic acid	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -6680,7 +6502,6 @@ TRACE_SALT_AS_STOCK	bacterial/mv_lactate_medium.yaml	CultureMech:002745	FeCl2 x 
 TRACE_SALT_AS_STOCK	bacterial/mv_medium.yaml	CultureMech:006181	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/mv_medium.yaml	CultureMech:006181	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/mv_pyruvate_medium.yaml	CultureMech:002890	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/mvl_medium.yaml	CultureMech:003083	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/mwc.yaml	CultureMech:000370	FeCl3 x 6 H2O	31.5	G_PER_L	31.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/mwc.yaml	CultureMech:000370	MnCl2 x 4 H2O	1.8	G_PER_L	1.8 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/mwc.yaml	CultureMech:000370	H3BO3	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -6708,7 +6529,6 @@ INDICATOR_UNIT_SLIP	bacterial/mycoplasma_acholeplasma_medium_cip_medium_88.yaml	
 INDICATOR_UNIT_SLIP	bacterial/mycoplasma_medium_cip_medium_89.yaml	CultureMech:000514	Phenol red	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/mycoplasma_medium_with_sucrose.yaml	CultureMech:008194	Phenol red	40	G_PER_L	40 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/mys_medium.yaml	CultureMech:002563	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/n75s_nsw.yaml	CultureMech:000374	Natural sea water	1750.0	G_PER_L	1750 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/nas_02_medium.yaml	CultureMech:002335	FeCl2	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/nas_02_medium.yaml	CultureMech:002335	MnCl2 x 4 H2O	1.8	G_PER_L	1.8 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/nas_02_medium.yaml	CultureMech:002335	Na2B4O7 x 10 H2O	4.5	G_PER_L	4.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -6766,21 +6586,9 @@ TRACE_SALT_AS_STOCK	bacterial/nms_modified_for_gela4.yaml	CultureMech:008567	FeS
 TRACE_SALT_AS_STOCK	bacterial/nms_modified_for_gela4.yaml	CultureMech:008567	ZnSO4·7H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/nms_modified_for_gela4.yaml	CultureMech:008567	CuSO4·5H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/nrmbb1_medium.yaml	CultureMech:002452	FeCl2 x 4 H2O	1.99	G_PER_L	1.99 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/nsw.yaml	CultureMech:000384	Natural sea water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/nsy_medium_for_polynucleobacter.yaml	CultureMech:000609	Tap water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/nutrient_agar_10mg_l_mnso4.yaml	CultureMech:008850	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/nutrient_agar_10mg_l_mnso4.yaml	CultureMech:008850	MnSO4 x H2O	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/nutrient_agar_for_sporulation.yaml	CultureMech:008929	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
-TRACE_SALT_AS_STOCK	bacterial/nutrient_agar_for_sporulation.yaml	CultureMech:008929	MnSO4 x H2O	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/nutrient_broth_5_nacl_ph_10_0.yaml	CultureMech:008325	Distilled water	1000.0	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
-TRACE_SALT_AS_STOCK	bacterial/obsidian_pool_fermentor_opf_medium_modified_from_m_b_allen_1959.yaml	CultureMech:009237	Na2MoO4 x2H2O (1 mg/ml)	30	G_PER_L	30 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/obsidian_pool_fermentor_opf_medium_modified_from_m_b_allen_1959.yaml	CultureMech:009237	MnCl2 x4H2O (10 mg/ml)	180	G_PER_L	180 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/obsidian_pool_fermentor_opf_medium_modified_from_m_b_allen_1959.yaml	CultureMech:009237	ZnSO4 x7H2O (10 mg/ml)	22	G_PER_L	22 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/obsidian_pool_fermentor_opf_medium_modified_from_m_b_allen_1959.yaml	CultureMech:009237	CuCl2 x2H2O (10 mg/ml)	5	G_PER_L	5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/obsidian_pool_fermentor_opf_medium_modified_from_m_b_allen_1959.yaml	CultureMech:009237	CoSO4 x7H2O (1 mg/ml)	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/obsidian_pool_fermentor_opf_medium_modified_from_m_b_allen_1959.yaml	CultureMech:009237	Na2B4O7 x 10 H2O (25 mg/ml)	180	G_PER_L	180 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/obsidian_pool_fermentor_opf_medium_modified_from_m_b_allen_1959.yaml	CultureMech:009237	Distilled H2O	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
-TRACE_SALT_AS_STOCK	bacterial/obsidian_pool_fermentor_opf_medium_modified_from_m_b_allen_1959.yaml	CultureMech:009237	Na2WO4	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/oceanirhabdus_medium.yaml	CultureMech:000987	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/oceanithermus_medium.yaml	CultureMech:000587	FeCl3 x 6 H2O	1.35	G_PER_L	1.35 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/oceanotoga_medium.yaml	CultureMech:000604	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -6796,7 +6604,6 @@ TRACE_SALT_AS_STOCK	bacterial/opitutus_terrae_medium.yaml	CultureMech:003095	FeC
 INDICATOR_UNIT_SLIP	bacterial/orenia_chitinitropha.yaml	CultureMech:001045	Pyridoxine	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/orenia_chitinitropha.yaml	CultureMech:001045	FeSO4 x 7 H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/orenia_metallireducens_medium.yaml	CultureMech:002316	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/oscillibacter_gh_medium.yaml	CultureMech:003280	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/osu967.yaml	CultureMech:009212	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/osu967.yaml	CultureMech:009212	Na2MoO4 . 2H2O	24	G_PER_L	24 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/osu967.yaml	CultureMech:009212	CoCl2 . 6H2O	24	G_PER_L	24 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -7032,7 +6839,6 @@ WATER_AS_VOLUME	bacterial/py_glucose_atcc_medium_1524_with_10_g_glucose_per_lite
 INDICATOR_UNIT_SLIP	bacterial/pyem_medium.yaml	CultureMech:000595	Riboflavin	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	bacterial/pyg_medium.yaml	CultureMech:008652	Distilled water	1139.0	G_PER_L	1139 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/pyg_medium.yaml	CultureMech:008652	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/pyg_medium_k.yaml	CultureMech:009528	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/pygv_marine_medium_a.yaml	CultureMech:009516	Na2MoO4・2H2O	13	G_PER_L	13 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/pygv_marine_medium_a.yaml	CultureMech:009516	FeSO4・7H2O	99	G_PER_L	99 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/pygv_marine_medium_a.yaml	CultureMech:009516	Biotin	2	G_PER_L	2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -7045,7 +6851,6 @@ TRACE_SALT_AS_STOCK	bacterial/pygv_marine_medium_a.yaml	CultureMech:009516	H3BO3
 INDICATOR_UNIT_SLIP	bacterial/pyruvate_as_an_alternative_substrate_for_dsm_6008_dsm_14886_and_dsm_16521.yaml	CultureMech:005700	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	bacterial/pys_medium.yaml	CultureMech:000553	Tap water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/pyvg_medium.yaml	CultureMech:002187	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-WATER_AS_VOLUME	bacterial/r75s_nsw.yaml	CultureMech:000402	Natural sea water	1750.0	G_PER_L	1750 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/r8_medium.yaml	CultureMech:006787	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/r8_medium.yaml	CultureMech:006787	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/r_8_a_h_medium.yaml	CultureMech:001790	Nicotinic acid	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -7054,10 +6859,6 @@ TRACE_SALT_AS_STOCK	bacterial/raeh_medium.yaml	CultureMech:002480	H3BO3	2.86	G_P
 TRACE_SALT_AS_STOCK	bacterial/raeh_medium.yaml	CultureMech:002480	MnCl2 x 4 H2O	1.81	G_PER_L	1.81 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/rb_1_rb_9_medium.yaml	CultureMech:006009	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/rb_1_rb_9_medium_replace_glucose_with_starch.yaml	CultureMech:006008	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-WATER_AS_VOLUME	bacterial/reactivation_with_liquid_medium_1_for_sporulation.yaml	CultureMech:008944	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
-TRACE_SALT_AS_STOCK	bacterial/reactivation_with_liquid_medium_1_for_sporulation.yaml	CultureMech:008944	MnSO4 x H2O	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/reactivation_with_liquid_medium_464_plate_count_agar.yaml	CultureMech:008897	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
-WATER_AS_VOLUME	bacterial/reinforced_clostridial_medium_oxoid_cm149_with_sodium_lactate_60_solution_at_a_concentration_of_1_5.yaml	CultureMech:009180	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 WATER_AS_VOLUME	bacterial/rgca_medium.yaml	CultureMech:009192	DI Water	1500.0	G_PER_L	1500 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/rhamnose_salt_medium.yaml	CultureMech:008068	FeSO4·7H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/rhodobaca_barguzinensis_medium.yaml	CultureMech:000685	Vitamin B12	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -7086,7 +6887,6 @@ INDICATOR_UNIT_SLIP	bacterial/rhodovulum_visakhum_medium.yaml	CultureMech:000565
 TRACE_SALT_AS_STOCK	bacterial/rhodovulum_visakhum_medium.yaml	CultureMech:000565	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/rich_organic_medium.yaml	CultureMech:000831	Nicotinic acid	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/rich_organic_medium.yaml	CultureMech:000831	Thiamine	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-WATER_AS_VOLUME	bacterial/rm_medium.yaml	CultureMech:009036	DI water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/roseibaca_calidilacus_medium.yaml	CultureMech:002310	H3BO3	2.86	G_PER_L	2.86 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/roseibaca_calidilacus_medium.yaml	CultureMech:002310	MnCl2 x 4 H2O	1.81	G_PER_L	1.81 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/roseicyclus_medium.yaml	CultureMech:000625	Nicotinic acid	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -7097,7 +6897,6 @@ TRACE_SALT_AS_STOCK	bacterial/roseococcus_suduntuyensis_medium.yaml	CultureMech:
 TRACE_SALT_AS_STOCK	bacterial/rpl_medium.yaml	CultureMech:008717	FeCl3·6H2O	1.35	G_PER_L	1.35 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/rsulfac1_medium.yaml	CultureMech:003189	FeSO4 x 7 H2O	2.1	G_PER_L	2.1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/rt2_medium.yaml	CultureMech:002789	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-WATER_AS_VOLUME	bacterial/rubitelea_medium.yaml	CultureMech:000619	Sea water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/rubritalea_medium.yaml	CultureMech:000573	ZnSO4 x 7 H2O	1.095	G_PER_L	1.095 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/rugosibacter_medium.yaml	CultureMech:001103	Vitamin B12	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/rugosibacter_medium.yaml	CultureMech:001103	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -7142,6 +6941,9 @@ INDICATOR_UNIT_SLIP	bacterial/salinispira_l21_ls_medium.yaml	CultureMech:000997	
 TRACE_SALT_AS_STOCK	bacterial/salinivibrio_sharmensis_medium.yaml	CultureMech:000927	MnCl2 x 4 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/salinivibrio_sharmensis_medium.yaml	CultureMech:000927	FeSO4 x 7 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/salinivirga_l21_hs_medium.yaml	CultureMech:001004	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
+TRACE_SALT_AS_STOCK	bacterial/salt_solution_medium_592.yaml	CultureMech:005192	MnCl2 x 4 H2O	18	G_PER_L	18 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
+TRACE_SALT_AS_STOCK	bacterial/salt_solution_medium_592.yaml	CultureMech:005192	Na2B4O7 x 10 H2O	44	G_PER_L	44 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
+TRACE_SALT_AS_STOCK	bacterial/salt_solution_medium_592.yaml	CultureMech:005192	ZnSO4 x 7 H2O	2.2	G_PER_L	2.2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/saltwater_iron_oxidizing_bacteria_medium_ii.yaml	CultureMech:002248	FeCl2	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/saltwater_medium_with_acetate_and_ferric_citrate.yaml	CultureMech:002812	Resazurin	0.166667	G_PER_L	0.166667 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/saltwater_medium_with_acetate_and_ferric_citrate.yaml	CultureMech:002812	FeSO4 x 7 H2O	2.1	G_PER_L	2.1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -7161,7 +6963,6 @@ TRACE_SALT_AS_STOCK	bacterial/sbbm.yaml	CultureMech:000403	H3BO3	2.48	G_PER_L	2.
 TRACE_SALT_AS_STOCK	bacterial/schlesneria_paludicola_medium.yaml	CultureMech:000703	ZnSO4 x 7 H2O	1.095	G_PER_L	1.095 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/sea_salts_yeast_extract_glucose_medium.yaml	CultureMech:007654	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/sea_salts_ytg_medium.yaml	CultureMech:002466	Na2SeO3	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/seawater_medium.yaml	CultureMech:001225	Sea water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/seawater_pyruvate_thiosulfate_medium.yaml	CultureMech:002276	MnSO4 x n H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/sedimentibacter_acidaminivorans_medium.yaml	CultureMech:001097	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/sedimentibacter_acidaminivorans_medium.yaml	CultureMech:001097	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -7194,7 +6995,6 @@ TRACE_SALT_AS_STOCK	bacterial/sot_medium.yaml	CultureMech:009080	ZnSO4 · 7H2O	2
 TRACE_SALT_AS_STOCK	bacterial/sot_medium.yaml	CultureMech:009080	CuSO4 · 5H2O	7.9	G_PER_L	7.9 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/sot_medium.yaml	CultureMech:009080	MnSO4 · 5H2O 1 )	217	G_PER_L	217 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/sp.yaml	CultureMech:000413	Thiamine HCl	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/sp_4_medium.yaml	CultureMech:009489	Phenol red (0.1% aqueous)	20	G_PER_L	20 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	bacterial/sphaerotilus_leptothrix_medium.yaml	CultureMech:001947	Tap water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/sphaerotilus_natans_subspec_sulfidivorans_medium.yaml	CultureMech:001147	Na2MoO4 x 2 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/sphaerotilus_natans_subspec_sulfidivorans_medium.yaml	CultureMech:001147	Riboflavin	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -7232,8 +7032,6 @@ INDICATOR_UNIT_SLIP	bacterial/sporomusa_medium_h2_co2.yaml	CultureMech:001411	Py
 TRACE_SALT_AS_STOCK	bacterial/sporomusa_medium_modified.yaml	CultureMech:004966	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/sporomusa_medium_modified.yaml	CultureMech:004966	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/sporotomaculum_medium.yaml	CultureMech:001963	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/srb_psychrophile_medium.yaml	CultureMech:006692	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/srb_psychrophile_medium.yaml	CultureMech:006692	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/ss1_medium.yaml	CultureMech:001952	FeSO4 x 7 H2O	13.7	G_PER_L	13.7 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/sse_hd_1_10_medium.yaml	CultureMech:000890	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/sse_hd_1_10_medium_hepes.yaml	CultureMech:000889	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -7250,7 +7048,6 @@ INDICATOR_UNIT_SLIP	bacterial/standard_petc_medium.yaml	CultureMech:009621	Nicot
 INDICATOR_UNIT_SLIP	bacterial/standard_petc_medium.yaml	CultureMech:009621	Lipoic acid	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/steroidobacter_medium.yaml	CultureMech:000552	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/steroidobacter_medium_replace_testosterone_with_heptanoate.yaml	CultureMech:003817	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/strength_marine_medium.yaml	CultureMech:008842	DI Water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/substrate_for_dsm_13769.yaml	CultureMech:005640	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/substrate_for_dsm_13769.yaml	CultureMech:005640	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/substrate_for_dsm_2767_dsm_5905_dsm_5906_dsm_5907_and_dsm_9187.yaml	CultureMech:005636	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -7403,7 +7200,6 @@ TRACE_SALT_AS_STOCK	bacterial/t2_medium_for_thiobacillus.yaml	CultureMech:008823
 TRACE_SALT_AS_STOCK	bacterial/t2_medium_for_thiobacillus.yaml	CultureMech:008823	MnCl2	5.06	G_PER_L	5.06 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/t2_medium_for_thiobacillus.yaml	CultureMech:008823	ZnSO4	22	G_PER_L	22 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/tanner_mod2_medium.yaml	CultureMech:002404	MnSO4 x n H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/tcg_medium.yaml	CultureMech:000425	Sea water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	bacterial/tcp_medium.yaml	CultureMech:008257	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/tcp_medium.yaml	CultureMech:008257	Biotin	2	G_PER_L	2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/tcp_medium.yaml	CultureMech:008257	p-Aminobenzoic acid	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -7920,7 +7716,6 @@ TRACE_SALT_AS_STOCK	bacterial/togo_medium_m2562.yaml	CultureMech:009131	MnSO4·H
 INDICATOR_UNIT_SLIP	bacterial/togo_medium_m2562.yaml	CultureMech:009131	Methylene blue	4	G_PER_L	4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/togo_medium_m2562.yaml	CultureMech:009131	CuCl2·2H2O	7	G_PER_L	7 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/togo_medium_m305.yaml	CultureMech:009574	FeSO4・7H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/togo_medium_m3052.yaml	CultureMech:009566	Riboflavin (0.05 μg/mL)	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/togo_medium_m312.yaml	CultureMech:009600	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/togo_medium_m312.yaml	CultureMech:009600	FeCl3・6H2O	1.35	G_PER_L	1.35 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/togo_medium_m312.yaml	CultureMech:009600	Na2WO4・2H2O	4	G_PER_L	4 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -7974,6 +7769,7 @@ TRACE_SALT_AS_STOCK	bacterial/togo_medium_m3252.yaml	CultureMech:009684	FeSO4·7
 TRACE_SALT_AS_STOCK	bacterial/togo_medium_m619.yaml	CultureMech:010018	FeCl2・4H2O	36	G_PER_L	36 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/togo_medium_m706.yaml	CultureMech:010113	FeCl3・6H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/togo_medium_m706.yaml	CultureMech:010113	MnSO4・xH2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
+TRACE_SALT_AS_STOCK	bacterial/trace_element_solution_medium_318.yaml	CultureMech:004400	FeCl2 x 4 H2O	1.00	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/treponema_bryantii_medium.yaml	CultureMech:002370	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	bacterial/treponema_caldarium_medium.yaml	CultureMech:009324	Distilled water	3990.0	G_PER_L	3990 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/treponema_caldarium_medium.yaml	CultureMech:009324	Na2MoO4 x 2 H2O	36.01	G_PER_L	36.01 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -8053,8 +7849,6 @@ TRACE_SALT_AS_STOCK	bacterial/verrucomicrobium_medium.yaml	CultureMech:008333	Zn
 TRACE_SALT_AS_STOCK	bacterial/verrucomicrobium_medium.yaml	CultureMech:008333	CuSO4·5H2O	39.2	G_PER_L	39.2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/verrucomicrobium_medium.yaml	CultureMech:008333	MnSO4·H2O	154	G_PER_L	154 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/verrucomicrobium_medium.yaml	CultureMech:008333	Na2B4O7·10H2O	17.7	G_PER_L	17.7 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-WATER_AS_VOLUME	bacterial/vibrio_natriegens_medium_for_sporulation.yaml	CultureMech:008872	Distilled water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
-TRACE_SALT_AS_STOCK	bacterial/vibrio_natriegens_medium_for_sporulation.yaml	CultureMech:008872	MnSO4 x H2O	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/vl55_gy_agar.yaml	CultureMech:008663	FeCl2·4H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/vl55_medium_modified.yaml	CultureMech:000843	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/vng_medium.yaml	CultureMech:003326	MnSO4 x n H2O	11.4	G_PER_L	11.4 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -8898,7 +8692,6 @@ INDICATOR_UNIT_SLIP	archaea/TOGO_M2683_Pyrolobus_Fumarii_Medium.yaml	CultureMech
 INDICATOR_UNIT_SLIP	archaea/TOGO_M273_Thermococcus_Medium.yaml	CultureMech:009290	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	archaea/TOGO_M274_Thermococcus_Medium.yaml	CultureMech:009300	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	archaea/TOGO_M277_Ferroplasma_Acidiphilum_Medium.yaml	CultureMech:009328	FeSO4・7H2O	25	G_PER_L	25 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	archaea/TOGO_M279_Methanosaeta_Thermophila_Medium.yaml	CultureMech:009347	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	archaea/TOGO_M288_Halorhabdus_Medium.yaml	CultureMech:009425	MnCl2・4H2O	5.1	G_PER_L	5.1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	archaea/TOGO_M288_Halorhabdus_Medium.yaml	CultureMech:009425	FeCl2・4H2O	7.0	G_PER_L	7 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	archaea/TOGO_M291_Vulcanisaeta_Medium.yaml	CultureMech:009455	Resazurin	1	G_PER_L	1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -9609,7 +9402,6 @@ TRACE_SALT_AS_STOCK	fungal/natronoanaeroarchaea_medium_with_yeast_extract_and_gl
 TRACE_SALT_AS_STOCK	fungal/natronoarchaea_media_with_yeast_extract_and_lactate.yaml	CultureMech:010501	FeSO4 x 7 H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	fungal/pfennigs_medium_i_with_yeast_extract.yaml	CultureMech:010468	Vitamin B12	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	fungal/tap_water_yeast_extract_medium_twye.yaml	CultureMech:010456	Tap water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
-WATER_AS_VOLUME	fungal/yeast_extract_malt_extract_agar_isp_2_with_artificial_seawater.yaml	CultureMech:010536	Sea water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 INDICATOR_UNIT_SLIP	specialized/acetobacterium_medium_marine.yaml	CultureMech:015340	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	specialized/anaerobic_alkaline_ye_medium.yaml	CultureMech:015429	FeSO4 x 7 H2O	2.1	G_PER_L	2.1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	specialized/anaerobic_azospirillum_medium.yaml	CultureMech:015346	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -9631,7 +9423,6 @@ TRACE_SALT_AS_STOCK	specialized/ird_marine_desulfovibrio_medium_2.yaml	CultureMe
 TRACE_SALT_AS_STOCK	specialized/ird_marine_desulfovibrio_medium_3.yaml	CultureMech:015383	FeSO4 x 7 H2O	2.1	G_PER_L	2.1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	specialized/marine_aob_medium_a.yaml	CultureMech:015376	Phenol red	2.5	G_PER_L	2.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	specialized/marine_aob_medium_b.yaml	CultureMech:015377	Phenol red	2.5	G_PER_L	2.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-WATER_AS_VOLUME	specialized/marine_caulobacter_medium.yaml	CultureMech:015363	Sea water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	specialized/marine_clostridium_medium.yaml	CultureMech:015390	FeCl2 x 4 H2O	1.99	G_PER_L	1.99 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	specialized/marine_desulfosarcina_medium.yaml	CultureMech:015403	FeSO4 x 7 H2O	2.1	G_PER_L	2.1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	specialized/marine_desulfosarcina_medium.yaml	CultureMech:015403	Nicotinic acid	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip

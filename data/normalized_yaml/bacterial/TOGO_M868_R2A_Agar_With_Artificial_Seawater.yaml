@@ -10,17 +10,18 @@ ingredients:
   concentration:
     value: '18.2'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  source: JCM Medium 832
+  notes: JCM Medium 832 lists 18.2 g R2A agar (BD-Difco) per liter of artificial seawater.
+  culturemech_term:
+    id: CultureMech:002706
+    label: R2A Agar
 media_term:
   preferred_term: TOGO Medium M868
   term:
     id: TOGO:M868
     label: R2A Agar With Artificial Seawater
-notes: 'Source: https://togomedium.org/medium/M868
-
-  Original source: JCM - JCM_M832
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=832'
+notes: 'TOGO M868 mirrors JCM Medium 832: 18.2 g R2A agar (BD-Difco) with 1.0 L artificial
+  seawater from JCM Medium 736.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -49,11 +50,191 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_r2a_score40.py
+  action: RESOLVED_R2A_SCORE40_GRAPH
+  changes: Resolved score-40 JCM/TOGO R2A recipe graph
+  source: https://togomedium.org/medium/M868; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=832;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=736
+  notes: 'TOGO M868 mirrors JCM Medium 832: 18.2 g R2A agar (BD-Difco) with 1.0 L
+    artificial seawater from JCM Medium 736.'
 solutions:
-- preferred_term: Artificial seawater (see Medium [M761])
-  composition: []
-  notes: Cross-reference to Medium M761
+- preferred_term: Artificial seawater
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '1000'
+    unit: ML_PER_L
+  notes: JCM Medium 832 adds 1.0 L artificial seawater per liter of R2A Agar With
+    Artificial Seawater; the salt composition is printed in JCM Medium 736.
+  composition:
+  - preferred_term: NaCl
+    concentration:
+      value: '23.5'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 832.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: MgCl2 x 6 H2O
+    concentration:
+      value: '4.9'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 832.
+    term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+  - preferred_term: Na2SO4
+    concentration:
+      value: '3.9'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 832.
+    term:
+      id: CHEBI:32149
+      label: sodium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32149
+      label: sodium sulfate
+  - preferred_term: CaCl2 x 2 H2O
+    concentration:
+      value: '1.1'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 832.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: KCl
+    concentration:
+      value: '0.66'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 832.
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+  - preferred_term: NaHCO3
+    concentration:
+      value: '0.19'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 832.
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+  - preferred_term: KBr
+    concentration:
+      value: '0.096'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 832.
+    term:
+      id: CHEBI:32030
+      label: potassium bromide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32030
+      label: potassium bromide
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.026'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 832.
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: SrCl2 x 6 H2O
+    concentration:
+      value: '0.024'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 832.
+    term:
+      id: CHEBI:36385
+      label: strontium dichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:36385
+      label: strontium dichloride hexahydrate
+  - preferred_term: NaF
+    concentration:
+      value: '0.003'
+      unit: G_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 prints this component in the Artificial seawater subrecipe
+      used by JCM Medium 832.
+    term:
+      id: CHEBI:28741
+      label: sodium fluoride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:28741
+      label: sodium fluoride
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    source: JCM Medium 736
+    notes: JCM Medium 736 lists 1.0 L distilled water for the Artificial seawater
+      subrecipe.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  preparation_notes: Prepare artificial seawater from the JCM Medium 736 salts.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare artificial seawater from the JCM Medium 736 salts.
+- step_number: 2
+  action: MIX
+  description: Dissolve 18.2 g R2A agar (BD-Difco) in 1.0 L artificial seawater.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M868
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=832
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=736
+parent_media:
+  path: data/normalized_yaml/bacterial/r2a_agar_with_artificial_seawater.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003176
+  name: r2a_agar_with_artificial_seawater
+  notes: TOGO M868 imports the same JCM Medium 832 formulation.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same R2A Agar With Artificial Seawater formulation as JCM Medium 832.

@@ -5,93 +5,15 @@ category: archaea
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: Soda based mineral medium (sterilized, see below)
-  concentration:
-    value: '750'
-    unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: NaCl
-  concentration:
-    value: '16'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: K2HPO4
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: KCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: NaHCO3
-  concentration:
-    value: '35'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
-    compound'
-  term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-- preferred_term: Na2CO3
-  concentration:
-    value: '185'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:29377
-    label: sodium carbonate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:29377
-    label: sodium carbonate
+ingredients: []
 media_term:
   preferred_term: TOGO Medium M1150
   term:
     id: TOGO:M1150
     label: Natranaeroarchaeum Medium
-notes: 'Source: https://togomedium.org/medium/M1150
-
-  Original source: JCM - JCM_M1081
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1081'
+notes: JCM Medium 1081 composes Natranaeroarchaeum Medium from sterilized JCM 1079
+  Basal mineral NaCl medium, JCM 1081 Soda based mineral medium, 2 M sodium pyruvate,
+  Trace vitamins from JCM 197, and 10% yeast extract.
 applications:
 - Microbial cultivation
 curation_history:
@@ -140,62 +62,397 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_jcm_archaea_score15.py
+  action: RESOLVED_TOGO_JCM_ARCHAEA_SCORE15
+  source: https://togomedium.org/medium/M1150; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1081;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1079; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+  notes: JCM Medium 1081 composes Natranaeroarchaeum Medium from sterilized JCM 1079
+    Basal mineral NaCl medium, JCM 1081 Soda based mineral medium, 2 M sodium pyruvate,
+    Trace vitamins from JCM 197, and 10% yeast extract.
 high_metal: true
 solutions:
-- preferred_term: Basal mineral NaCl medium (see Medium [M1148])
-  composition: []
-  notes: Cross-reference to Medium M1148
+- preferred_term: Basal mineral NaCl medium
   concentration:
-    value: '250'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '250.0'
+    unit: ML_PER_L
+  source: JCM Medium 1081
+  notes: JCM Medium 1081 adds 250.0 ml/L sterilized Basal mineral NaCl medium from
+    JCM Medium 1079.
+  composition:
+  - preferred_term: NaCl
+    concentration:
+      value: '240.0'
+      unit: G_PER_L
+    source: JCM Medium 1079
+    notes: JCM Medium 1079 prints this component in its stock solution.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: K2HPO4
+    concentration:
+      value: '2.5'
+      unit: G_PER_L
+    source: JCM Medium 1079
+    notes: JCM Medium 1079 prints this component in its stock solution.
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+  - preferred_term: NH4Cl
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    source: JCM Medium 1079
+    notes: JCM Medium 1079 prints this component in its stock solution.
+    term:
+      id: CHEBI:31206
+      label: ammonium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31206
+      label: ammonium chloride
+  - preferred_term: HEPES
+    concentration:
+      value: '7.0'
+      unit: G_PER_L
+    source: JCM Medium 1079
+    notes: JCM Medium 1079 prints this component in its stock solution.
+    term:
+      id: CHEBI:46756
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:46756
+      label: HEPES
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 1079
+    notes: JCM Medium 1079 prints this component in its stock solution.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: Soda based mineral medium
+  concentration:
+    value: '750.0'
+    unit: ML_PER_L
+  source: JCM Medium 1081
+  notes: JCM Medium 1081 adds 750.0 ml/L sterilized Soda based mineral medium from
+    JCM Medium 1081.
+  composition:
+  - preferred_term: Na2CO3
+    concentration:
+      value: '185.0'
+      unit: G_PER_L
+    source: JCM Medium 1081
+    notes: JCM Medium 1081 prints this component in its stock solution.
+    term:
+      id: CHEBI:29377
+      label: sodium carbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:29377
+      label: sodium carbonate
+  - preferred_term: NaHCO3
+    concentration:
+      value: '35.0'
+      unit: G_PER_L
+    source: JCM Medium 1081
+    notes: JCM Medium 1081 prints this component in its stock solution.
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+  - preferred_term: NaCl
+    concentration:
+      value: '16.0'
+      unit: G_PER_L
+    source: JCM Medium 1081
+    notes: JCM Medium 1081 prints this component in its stock solution.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: K2HPO4
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: JCM Medium 1081
+    notes: JCM Medium 1081 prints this component in its stock solution.
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+  - preferred_term: KCl
+    concentration:
+      value: '5.0'
+      unit: G_PER_L
+    source: JCM Medium 1081
+    notes: JCM Medium 1081 prints this component in its stock solution.
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+  - preferred_term: 4 M NH4Cl solution
+    concentration:
+      value: '1.0'
+      unit: ML_PER_L
+    source: JCM Medium 1081
+    notes: JCM Medium 1081 adds 1.0 ml/L 4 M NH4Cl solution to the soda based mineral
+      medium.
+    term:
+      id: CHEBI:31206
+      label: ammonium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31206
+      label: ammonium chloride
+  - preferred_term: Selenite-tungstate solution
+    concentration:
+      value: '1.0'
+      unit: ML_PER_L
+    source: JCM Medium 1081
+    notes: JCM Medium 1081 adds 1.0 ml/L JCM 431 Selenite-tungstate solution.
+  - preferred_term: Trace element solution
+    concentration:
+      value: '1.0'
+      unit: ML_PER_L
+    source: JCM Medium 1081
+    notes: JCM Medium 1081 adds 1.0 ml/L JCM 1079 Trace element solution.
+  - preferred_term: 1 M MgCl2 solution
+    concentration:
+      value: '1.0'
+      unit: ML_PER_L
+    source: JCM Medium 1081
+    notes: JCM Medium 1081 adds 1.0 ml/L 1 M MgCl2 solution to the soda based mineral
+      medium.
+    term:
+      id: CHEBI:6636
+      label: magnesium dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:6636
+      label: magnesium dichloride
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 1081
+    notes: JCM Medium 1081 prints this component in its stock solution.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  preparation_notes: Autoclave and let stand for three days; decant the clear solution
+    into another empty sterile bottle before adding the stock solutions.
+- preferred_term: 2 M Sodium pyruvate solution
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+  source: JCM Medium 1081
+  notes: JCM Medium 1081 adds 5.0 ml/L filter-sterilized 2 M Sodium pyruvate solution.
+  composition:
+  - preferred_term: Sodium pyruvate
+    concentration:
+      value: '2.0'
+      unit: MOLAR
+    source: JCM Medium 1081
+    notes: JCM Medium 1081 identifies this as a 2.0 M stock solution.
+    term:
+      id: CHEBI:50144
+      label: sodium pyruvate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:50144
+      label: sodium pyruvate
+- preferred_term: Trace vitamins
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: JCM Medium 1081
+  notes: JCM Medium 1081 adds 10.0 ml/L Trace vitamins from JCM Medium 197.
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its stock solution.
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+  - preferred_term: Folic acid
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its stock solution.
+    term:
+      id: CHEBI:27470
+      label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
+  - preferred_term: Pyridoxine HCl
+    concentration:
+      value: '10.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its stock solution.
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+  - preferred_term: Thiamine HCl
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its stock solution.
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+  - preferred_term: Riboflavin
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its stock solution.
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its stock solution.
+    term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: nicotinic acid
+  - preferred_term: Calcium pantothenate
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its stock solution.
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.1'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its stock solution.
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its stock solution.
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+  - preferred_term: Lipoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its stock solution.
+    term:
+      id: CHEBI:16494
+      label: lipoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16494
+      label: lipoic acid
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 197
+    notes: JCM Medium 197 prints this component in its stock solution.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  preparation_notes: JCM Medium 197 prints the Trace vitamins subrecipe per liter.
 - preferred_term: 10% Yeast extract solution
-  composition: []
   concentration:
     value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-  name: Unknown solution
-- preferred_term: 2 M Sodium pyruvate solution*
-  composition: []
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Solution, Organic compound'
-  name: Unknown solution
-- preferred_term: Trace vitamins (see Medium [M190])
-  composition: []
-  notes: Cross-reference to Medium M190
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: 4 M NH4Cl solution
-  composition: []
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Solution, Defined component, Inorganic
-    compound'
-  name: Unknown solution
-- preferred_term: 1 M MgCl2 solution
-  composition: []
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source'
-  name: Unknown solution
-- preferred_term: Selenite--tungstate solution (see Medium [M431])
-  composition: []
-  notes: Cross-reference to Medium M431
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Trace element solution (see Medium [M1148])
-  composition: []
-  notes: Cross-reference to Medium M1148
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    unit: ML_PER_L
+  source: JCM Medium 1081
+  notes: JCM Medium 1081 adds 0.2 ml/L 10% Yeast extract solution.
+  composition:
+  - preferred_term: Yeast extract
+    concentration:
+      value: '10'
+      unit: PERCENT_W_V
+    source: JCM Medium 1081
+    notes: JCM Medium 1081 identifies this as a 10% w/v stock solution.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare and sterilize Basal mineral NaCl medium and Soda based mineral
+    medium.
+- step_number: 2
+  action: MIX
+  description: Mix 250 ml Basal mineral NaCl medium with 750 ml Soda based mineral
+    medium.
+- step_number: 3
+  action: MIX
+  description: Aseptically add sodium pyruvate, Trace vitamins, and yeast extract
+    solutions.
+references:
+- reference: https://togomedium.org/medium/M1150
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1081
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1079
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated

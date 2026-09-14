@@ -4,115 +4,346 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: Bold Basal Medium
+  term:
+    id: UTEX:bold-basal-medium
+    label: Bold Basal Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
+notes: UTEX prepares Bold Basal Medium from the six Bristol mineral stocks plus one
+  drop each of BBM EDTA, Iron, Boron, and Bold Trace stocks.
 ingredients:
+- preferred_term: dH2O
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: UTEX starts the 1 L Bold Basal Medium recipe with approximately 900 mL dH2O.
 - preferred_term: NaNO3
   concentration:
     value: '2.94'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 10 g/400mL dH2O; final 2.94 mM'
+  term:
+    id: CHEBI:63005
+    label: sodium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: BP360-500
-- preferred_term: CaCl2•2H2O
+  notes: UTEX adds 10 mL/L of a 10 g/400 mL dH2O stock, for 2.94 mM final.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.17'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 1 g/400mL dH2O; final 0.17 mM'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: C-3881
-- preferred_term: MgSO4•7H2O
+  notes: UTEX adds 10 mL/L of a 1 g/400 mL dH2O stock, for 0.17 mM final.
+- preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.3'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 3 g/400mL dH2O; final 0.3 mM'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: '230391'
+  notes: UTEX adds 10 mL/L of a 3 g/400 mL dH2O stock, for 0.3 mM final.
+  nutritional_roles:
+  - SULFUR_SOURCE
+  - TRACE_ELEMENT
 - preferred_term: K2HPO4
   concentration:
     value: '0.43'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 3 g/400mL dH2O; final 0.43 mM'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: P 3786
+  notes: UTEX adds 10 mL/L of a 3 g/400 mL dH2O stock, for 0.43 mM final.
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
 - preferred_term: KH2PO4
   concentration:
     value: '1.29'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 7 g/400mL dH2O; final 1.29 mM'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: P 0662
+  notes: UTEX adds 10 mL/L of a 7 g/400 mL dH2O stock, for 1.29 mM final.
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
 - preferred_term: NaCl
   concentration:
     value: '0.43'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 1 g/400mL dH2O; final 0.43 mM'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: S271-500
+  notes: UTEX adds 10 mL/L of a 1 g/400 mL dH2O stock, for 0.43 mM final.
+solutions:
 - preferred_term: EDTA Stock
   concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'UTEX lists: amount 1 drop(0.05 mL)'
+    value: '0.05'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX brings BBM EDTA Stock Solution to 1 L with dH2O.
+  - preferred_term: EDTA
+    concentration:
+      value: '50'
+      unit: G_PER_L
+    term:
+      id: CHEBI:4735
+      label: EDTA
+    mediaingredientmech_chebi_term:
+      id: CHEBI:4735
+      label: EDTA
+    notes: UTEX lists 50 g EDTA acid form per liter.
+    physicochemical_roles:
+    - CHELATOR
+  - preferred_term: KOH
+    concentration:
+      value: '31'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32035
+      label: potassium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32035
+      label: potassium hydroxide
+    notes: UTEX lists 31 g KOH per liter.
+  notes: UTEX adds one approximately 0.05 mL drop per liter of Bold Basal Medium.
 - preferred_term: Iron Stock
   concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'UTEX lists: amount 1 drop(0.05 mL)'
+    value: '0.05'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX brings BBM Iron Stock Solution to 1 L with dH2O.
+  - preferred_term: H2SO4
+    concentration:
+      value: '10'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:26836
+      label: sulfuric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26836
+      label: sulfuric acid
+    notes: UTEX lists 10 mL concentrated H2SO4 per liter.
+  - preferred_term: FeSO4 x 7 H2O
+    concentration:
+      value: '5'
+      unit: G_PER_L
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    notes: UTEX lists 5 g FeSO4 x 7 H2O per liter.
+    nutritional_roles:
+    - IRON_SOURCE
+  notes: UTEX adds one approximately 0.05 mL drop per liter of Bold Basal Medium.
 - preferred_term: Boron Stock
   concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'UTEX lists: amount 1 drop(0.05 mL)'
+    value: '0.05'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX brings BBM Boron Stock Solution to 1 L with dH2O.
+  - preferred_term: H3BO3
+    concentration:
+      value: '11'
+      unit: G_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+    notes: UTEX lists 11 g H3BO3 per liter.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  notes: UTEX adds one approximately 0.05 mL drop per liter of Bold Basal Medium.
 - preferred_term: Bold Trace Stock
   concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'UTEX lists: amount 1 drop(0.05 mL)'
+    value: '0.05'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX brings BBM Bold Trace Stock Solution to 1 L with dH2O.
+  - preferred_term: H2SO4
+    concentration:
+      value: '10'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:26836
+      label: sulfuric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26836
+      label: sulfuric acid
+    notes: UTEX lists 10 mL concentrated H2SO4 per liter.
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '8.82'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    notes: UTEX lists 8.82 g ZnSO4 x 7 H2O per liter.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '1.44'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    notes: UTEX lists 1.44 g/L of the manganese chloride tetrahydrate component in
+      the BBM Bold Trace Stock Solution.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: MoO3
+    concentration:
+      value: '0.71'
+      unit: G_PER_L
+    term:
+      id: CHEBI:30627
+      label: molybdenum trioxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30627
+      label: molybdenum trioxide
+    notes: UTEX lists 0.71 g MoO3 per liter.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CuSO4 x 5 H2O
+    concentration:
+      value: '1.57'
+      unit: G_PER_L
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    notes: UTEX lists 1.57 g CuSO4 x 5 H2O per liter.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Co(NO3)2 x 6 H2O
+    concentration:
+      value: '0.49'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86214
+      label: cobalt(II) nitrate hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86214
+      label: cobalt(II) nitrate hexahydrate
+    notes: UTEX lists 0.49 g Co(NO3)2 x 6 H2O per liter.
+    nutritional_roles:
+    - NITROGEN_SOURCE
+    - TRACE_ELEMENT
+  notes: UTEX adds one approximately 0.05 mL drop per liter of Bold Basal Medium.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: To approximately 900 mL dH2O, add the six Bristol mineral stocks and
+    one drop each of EDTA, Iron, Boron, and Bold Trace stocks.
 - step_number: 2
   action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  description: Bring the total volume to 1 L with dH2O.
 - step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
+  action: ALIQUOT
+  description: Transfer the medium to a 2 L Erlenmeyer flask and cover.
 - step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
-- step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
   action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
+  description: Autoclave the covered Bold Basal Medium.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -160,6 +391,13 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_bristol_bold_score35.py
+  action: RESOLVED_UTEX_BRISTOL_BOLD_SCORE35
+  changes: Grounded UTEX score-35 Bristol/Bold/Erdschreiber components
+  source: https://utex.org/products/bold-basal-medium
+  notes: UTEX prepares Bold Basal Medium from the six Bristol mineral stocks plus
+    one drop each of BBM EDTA, Iron, Boron, and Bold Trace stocks.
 references:
 - reference: UTEX:bold-basal-medium
 - reference: https://utex.org/products/bold-basal-medium
@@ -171,6 +409,10 @@ references:
   year: 2022
   notes: Primary source supporting Scenedesmus quadricauda CPCC-158 cultivation in
     Bold Basal Medium with study-specific pH, aeration, and estradiol treatments.
+- reference: https://utex.org/products/bbm-edta-stock-solution
+- reference: https://utex.org/products/bbm-iron-stock-solution
+- reference: https://utex.org/products/bbm-boron-stock-solution
+- reference: https://utex.org/products/bbm-bold-trace-stock-solution
 original_name: Bold Basal Medium
 variants:
 - name: bbm_estradiol_exposure_assay
@@ -212,3 +454,6 @@ target_organisms:
     snippet: Scenedesmus quadricauda (CPCC-158)
     explanation: Kozlova and Levin used Scenedesmus quadricauda CPCC-158 in BBM and
       measured algal cell-density growth over an 11-day experiment.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

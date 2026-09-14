@@ -4,70 +4,386 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_range:
+  min: 8.3
+  max: 8.5
+media_term:
+  preferred_term: J Medium
+  term:
+    id: UTEX:j-medium
+    label: J Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
+notes: UTEX prepares J Medium as an alkaline freshwater Microcystis recipe at pH 8.3-8.5
+  with two macro-component stocks, a calcium chloride stock, and G9 trace metals.
 ingredients:
+- preferred_term: dH2O
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: UTEX starts the 1 L J Medium recipe with approximately 950 mL dH2O and brings
+    the final volume to 1 L.
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: C-3881
+  notes: UTEX adds 1 mL/L of a 0.29 g/100 mL dH2O stock, for 0.02 mM final.
+solutions:
 - preferred_term: Macro Component 1 for J Medium
   concentration:
     value: '10'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 10 mL/L'
+  term:
+    id: kgmicrobe.ingredient:macro_component_1_for_j_medium
+    label: Macro Component 1 for J Medium
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX starts Macro Component 1 with approximately 900 mL dH2O and brings
+      the stock to 1 L.
+  - preferred_term: NaNO3
+    concentration:
+      value: '67'
+      unit: G_PER_L
+    term:
+      id: CHEBI:63005
+      label: sodium nitrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63005
+      label: sodium nitrate
+    supplier_catalog:
+      supplier_name: Fisher
+      catalog_number: BP360
+    notes: UTEX lists 67 g/L NaNO3 in Macro Component 1; J Medium receives 10 mL/L,
+      for 7.9 mM final.
+    nutritional_roles:
+    - NITROGEN_SOURCE
+  - preferred_term: Na2HPO4
+    concentration:
+      value: '0.67'
+      unit: G_PER_L
+    term:
+      id: CHEBI:34683
+      label: Na2HPO4
+    mediaingredientmech_chebi_term:
+      id: CHEBI:34683
+      label: Na2HPO4
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: S5136
+    notes: UTEX lists 0.67 g/L Na2HPO4 in Macro Component 1; J Medium receives 10
+      mL/L, for 0.05 mM final.
+    nutritional_roles:
+    - PHOSPHATE_SOURCE
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: K2HPO4
+    concentration:
+      value: '3.8'
+      unit: G_PER_L
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: P 3786
+    notes: UTEX lists 3.8 g/L K2HPO4 in Macro Component 1; J Medium receives 10 mL/L,
+      for 0.22 mM final.
+    nutritional_roles:
+    - PHOSPHATE_SOURCE
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Tricine
+    concentration:
+      value: '25'
+      unit: G_PER_L
+    term:
+      id: CHEBI:46760
+      label: Tricine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:46760
+      label: Tricine
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: T-5816-256
+    notes: UTEX lists 25 g/L Tricine in Macro Component 1; J Medium receives 10 mL/L,
+      for 1.4 mM final.
+    physicochemical_roles:
+    - BUFFER
+  notes: UTEX adds 10 mL Macro Component 1 for J Medium per liter; the stock is adjusted
+    to pH 8.5-8.8 before storage.
 - preferred_term: Macro Component 2 for J medium
   concentration:
     value: '10'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 10 mL/L'
-- preferred_term: CaCl2•2H2O
-  concentration:
-    value: '0.02'
-    unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 0.29 g/100 mL dH20; final 0.02 mM'
-  supplier_catalog:
-    supplier_name: Sigma
-    catalog_number: C-3881
+  term:
+    id: kgmicrobe.ingredient:macro_component_2_for_j_medium
+    label: Macro Component 2 for J medium
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX starts Macro Component 2 with approximately 850 mL dH2O and brings
+      the stock to 1 L.
+  - preferred_term: Na2EDTA x 2 H2O
+    concentration:
+      value: '4.4'
+      unit: G_PER_L
+    term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: ED255
+    notes: UTEX lists 4.4 g/L Na2EDTA x 2 H2O in Macro Component 2; J Medium receives
+      10 mL/L, for 0.12 mM final.
+    physicochemical_roles:
+    - CHELATOR
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '10'
+      unit: G_PER_L
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: '230391'
+    notes: UTEX lists 10 g/L MgSO4 x 7 H2O in Macro Component 2; J Medium receives
+      10 mL/L, for 0.41 mM final.
+    nutritional_roles:
+    - SULFUR_SOURCE
+    - TRACE_ELEMENT
+  - preferred_term: MgCl2 x 6 H2O
+    concentration:
+      value: '5'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86345
+      label: MgCl2 x 6 H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86345
+      label: MgCl2 x 6 H2O
+    supplier_catalog:
+      supplier_name: Fisher
+      catalog_number: M 33
+    notes: UTEX lists 5 g/L MgCl2 x 6 H2O in Macro Component 2; J Medium receives
+      10 mL/L, for 0.24 mM final.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: FeCl3 x 6 H2O
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: F 1513
+    notes: UTEX lists 0.5 g/L FeCl3 x 6 H2O in Macro Component 2; J Medium receives
+      10 mL/L, for 0.02 mM final.
+    nutritional_roles:
+    - IRON_SOURCE
+    - TRACE_ELEMENT
+  notes: UTEX adds 10 mL Macro Component 2 for J medium per liter; the stock is adjusted
+    to pH 7.5 before storage.
 - preferred_term: G9 Trace Metals for J medium
   concentration:
     value: '1'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 1 mL/L'
+  term:
+    id: kgmicrobe.ingredient:g9_trace_metals_for_j_medium
+    label: G9 Trace Metals for J medium
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX starts G9 Trace Metals for J medium with approximately 900 mL dH2O
+      and brings the stock to 1 L.
+  - preferred_term: H3BO3
+    concentration:
+      value: '3.25'
+      unit: G_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+    supplier_catalog:
+      supplier_name: Baker
+      catalog_number: 0084
+    notes: UTEX lists 3.25 g/L H3BO3 in G9 Trace Metals; J Medium receives 1 mL/L,
+      for 0.053 mM final.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: MnSO4 x H2O
+    concentration:
+      value: '1.5'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86364
+      label: manganese(II) sulfate monohydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86364
+      label: manganese(II) sulfate monohydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: M8179
+    notes: UTEX lists 1.5 g/L MnSO4 x H2O in G9 Trace Metals; J Medium receives 1
+      mL/L, for 8.6 uM final.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.3'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: Z 0251
+    notes: UTEX lists 0.3 g/L ZnSO4 x 7 H2O in G9 Trace Metals; J Medium receives
+      1 mL/L, for 1 uM final.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: (NH4)6Mo7O24 x 4 H2O
+    concentration:
+      value: '0.08'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86244
+      label: hexaammonium heptamolybdate tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86244
+      label: hexaammonium heptamolybdate tetrahydrate
+    supplier_catalog:
+      supplier_name: Mallinckrodt
+      catalog_number: '3420'
+    notes: UTEX lists 0.08 g/L (NH4)6Mo7O24 x 4 H2O in G9 Trace Metals; J Medium receives
+      1 mL/L, for 0.065 uM final.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CuSO4 x 5 H2O
+    concentration:
+      value: '0.05'
+      unit: G_PER_L
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    supplier_catalog:
+      supplier_name: MCIB
+      catalog_number: 3M11
+    notes: UTEX lists 0.05 g/L CuSO4 x 5 H2O in G9 Trace Metals; J Medium receives
+      1 mL/L, for 0.2 uM final.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Co(NO3)2 x 6 H2O
+    concentration:
+      value: '0.15'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86214
+      label: cobalt(II) nitrate hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86214
+      label: cobalt(II) nitrate hexahydrate
+    supplier_catalog:
+      supplier_name: Mallinckroft
+      catalog_number: '4544'
+    notes: UTEX lists 0.15 g/L Co(NO3)2 x 6 H2O in G9 Trace Metals; J Medium receives
+      1 mL/L, for 0.52 uM final.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: KI
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    term:
+      id: CHEBI:8346
+      label: potassium iodide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:8346
+      label: potassium iodide
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: P 4286
+    notes: UTEX lists 0.01 g/L KI in G9 Trace Metals; J Medium receives 1 mL/L, for
+      0.06 uM final.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  notes: UTEX adds 1 mL G9 Trace Metals for J medium per liter.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: Add all J Medium components to approximately 950 mL dH2O while stirring
+    continuously.
 - step_number: 2
   action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  description: Bring the final volume to 1 L with dH2O.
 - step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
+  action: AUTOCLAVE
+  description: Cover and autoclave the medium.
 - step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
-- step_number: 5
-  action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
+  action: STORE
+  description: Store at refrigerator temperature.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -105,7 +421,21 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_j_medium_score35.py
+  action: RESOLVED_UTEX_J_MEDIUM_SCORE35
+  changes: Grounded UTEX J Medium components
+  source: https://utex.org/products/j-medium
+  notes: UTEX prepares J Medium as an alkaline freshwater Microcystis recipe at pH
+    8.3-8.5 with two macro-component stocks, a calcium chloride stock, and G9 trace
+    metals.
 references:
 - reference: UTEX:j-medium
 - reference: https://utex.org/products/j-medium
+- reference: https://utex.org/products/macro-component-1-for-j-medium
+- reference: https://utex.org/products/macro-component-2-for-j-medium
+- reference: https://utex.org/products/g9-trace-metals-for-j-medium
 original_name: J Medium
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

@@ -4,16 +4,114 @@ original_name: CLOSTRIDIUM LONGISPORUM medium
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
   preferred_term: KOMODO Medium 741
   term:
     id: komodo.medium:741
     label: CLOSTRIDIUM LONGISPORUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 741 | DSMZ Medium: 741 (mediadive.medium:741)
-  | Aerobic: Yes'
-ingredients: []
+notes: Archived DSMZ Medium 741 defines CLOSTRIDIUM LONGISPORUM MEDIUM as Reinforced
+  Clostridial Medium (Oxoid CM 149) prepared under 100% CO2 with final pH 6.8; KOMODO
+  Medium 741 expands the RCM base into final per-liter components.
+ingredients:
+- preferred_term: Agar
+  source: KOMODO Medium 741
+  notes: KOMODO Medium 741 expands the RCM base and lists 15.00 g/L agar.
+  concentration:
+    value: '15.000000'
+    unit: G_PER_L
+  term: &id001
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term: *id001
+- preferred_term: Yeast extract
+  source: KOMODO Medium 741
+  notes: KOMODO Medium 741 expands the RCM base and lists 3.00 g/L yeast extract.
+  concentration:
+    value: '3.000000'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Glucose
+  source: KOMODO Medium 741
+  notes: KOMODO Medium 741 expands the RCM base and lists 5.00 g/L glucose.
+  concentration:
+    value: '5.000000'
+    unit: G_PER_L
+  term: &id002
+    id: CHEBI:17634
+    label: D-glucose
+  mediaingredientmech_chebi_term: *id002
+- preferred_term: CO2
+  source: Archived DSMZ Medium 741
+  notes: Archived DSMZ Medium 741 prepares the medium under 100% CO2.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term: &id003
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term: *id003
+- preferred_term: Sodium acetate
+  source: KOMODO Medium 741
+  notes: KOMODO Medium 741 expands the RCM base and lists 3.00 g/L sodium acetate.
+  concentration:
+    value: '3.000000'
+    unit: G_PER_L
+  term: &id004
+    id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_chebi_term: *id004
+- preferred_term: Cysteine hydrochloride
+  source: KOMODO Medium 741
+  notes: KOMODO Medium 741 expands the RCM base and lists 0.50 g/L cysteine hydrochloride.
+  concentration:
+    value: '0.500000'
+    unit: G_PER_L
+  term: &id005
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+  mediaingredientmech_chebi_term: *id005
+- preferred_term: Lab-Lemco powder
+  source: KOMODO Medium 741
+  notes: KOMODO Medium 741 expands the RCM base and lists 10.00 g/L Lab-Lemco powder.
+  concentration:
+    value: '10.000000'
+    unit: G_PER_L
+  term:
+    id: FOODON:03302088
+    label: beef extract
+- preferred_term: Sodium chloride
+  source: KOMODO Medium 741
+  notes: KOMODO Medium 741 expands the RCM base and lists 5.00 g/L sodium chloride.
+  concentration:
+    value: '5.000000'
+    unit: G_PER_L
+  term: &id006
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term: *id006
+- preferred_term: Soluble starch
+  source: KOMODO Medium 741
+  notes: KOMODO Medium 741 expands the RCM base and lists 1.00 g/L soluble starch.
+  concentration:
+    value: '1.000000'
+    unit: G_PER_L
+  term: &id007
+    id: CHEBI:28017
+    label: starch
+  mediaingredientmech_chebi_term: *id007
+- preferred_term: Peptone
+  source: KOMODO Medium 741
+  notes: KOMODO Medium 741 expands the RCM base and lists 10.00 g/L peptone.
+  concentration:
+    value: '10.000000'
+    unit: G_PER_L
+  term:
+    id: FOODON:03302071
+    label: peptone
 applications:
 - Microbial cultivation
 curation_history:
@@ -36,5 +134,16 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_741_score30.py
+  action: RESOLVED_KOMODO_741_SCORE30
+  source: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium741.pdf
+  notes: Archived DSMZ Medium 741 defines CLOSTRIDIUM LONGISPORUM MEDIUM as Reinforced
+    Clostridial Medium (Oxoid CM 149) prepared under 100% CO2 with final pH 6.8; KOMODO
+    Medium 741 expands the RCM base into final per-liter components.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=741
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium741.pdf

@@ -5,80 +5,265 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_range:
+  min: 7.0
+  max: 7.2
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '940'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Yeast extract
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: KH2PO4
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-- preferred_term: Resazurin
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
-    compound, Defined component'
-  term:
-    id: CHEBI:8806
-    label: Resazurin
-  mediaingredientmech_chebi_term:
-    id: CHEBI:8806
-    label: Resazurin
 - preferred_term: Trypticase peptone
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: L-Cysteine·HCl·H2O
+  source: TOGO M3010 / JCM Medium 1338
+  notes: TOGO M3010 / JCM Medium 1338 lists 5.0 g/L Trypticase peptone.
+  term:
+    id: MICRO:0000175
+    label: Trypticase peptone
+- preferred_term: Peptone
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: TOGO M3010 / JCM Medium 1338
+  notes: TOGO M3010 / JCM Medium 1338 lists 5.0 g/L Peptone.
+  term:
+    id: MICRO:0000178
+    label: Peptone
+- preferred_term: Yeast extract
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: TOGO M3010 / JCM Medium 1338
+  notes: TOGO M3010 / JCM Medium 1338 lists 10.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+- preferred_term: KH2PO4
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: TOGO M3010 / JCM Medium 1338
+  notes: TOGO M3010 / JCM Medium 1338 lists 2.0 g/L KH2PO4.
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: L-Cysteine x HCl x H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Simple component, Organic compound'
-- preferred_term: Peptone
+  source: TOGO M3010 / JCM Medium 1338
+  notes: TOGO M3010 / JCM Medium 1338 lists 0.5 g/L L-Cysteine x HCl x H2O.
+  term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+- preferred_term: Resazurin
   concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: N2
-  notes: 'Properties: Gas'
+    value: '1.0'
+    unit: MG_PER_L
+  source: TOGO M3010 / JCM Medium 1338
+  notes: TOGO M3010 / JCM Medium 1338 lists 1.0 mg/L Resazurin.
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled water
+  concentration:
+    value: '940.0'
+    unit: ML_PER_L
+  source: TOGO M3010 / JCM Medium 1338
+  notes: TOGO M3010 / JCM Medium 1338 lists 940.0 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Nitrogen gas
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M3010 / JCM Medium 1338
+  notes: JCM Medium 1338 instructs autoclaving the basal medium under N2.
   term:
     id: CHEBI:17997
     label: dinitrogen
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17997
+    label: dinitrogen
+solutions:
+- preferred_term: Salt solution
+  concentration:
+    value: '40.0'
+    unit: ML_PER_L
+  source: TOGO M695 / JCM Medium 676
+  notes: JCM Medium 1338 adds 40.0 ml/L salt solution from JCM Medium 676.
+  composition:
+  - preferred_term: CaCl2 x 2H2O
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    source: TOGO M695 / JCM Medium 676
+    notes: TOGO M695 / JCM Medium 676 lists 0.25 g/L CaCl2 x 2H2O.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: MgSO4 x 7H2O
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    source: TOGO M695 / JCM Medium 676
+    notes: TOGO M695 / JCM Medium 676 lists 0.5 g/L MgSO4 x 7H2O.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: K2HPO4
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: TOGO M695 / JCM Medium 676
+    notes: TOGO M695 / JCM Medium 676 lists 1.0 g/L K2HPO4.
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+  - preferred_term: KH2PO4
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: TOGO M695 / JCM Medium 676
+    notes: TOGO M695 / JCM Medium 676 lists 1.0 g/L KH2PO4.
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+  - preferred_term: NaHCO3
+    concentration:
+      value: '10.0'
+      unit: G_PER_L
+    source: TOGO M695 / JCM Medium 676
+    notes: TOGO M695 / JCM Medium 676 lists 10.0 g/L NaHCO3.
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+  - preferred_term: NaCl
+    concentration:
+      value: '2.0'
+      unit: G_PER_L
+    source: TOGO M695 / JCM Medium 676
+    notes: TOGO M695 / JCM Medium 676 lists 2.0 g/L NaCl.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: TOGO M695 / JCM Medium 676
+    notes: TOGO M695 / JCM Medium 676 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: Hemin solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: TOGO M470 / JCM Medium 469
+  notes: JCM Medium 1338 adds 10.0 ml/L hemin solution from JCM Medium 469.
+  composition:
+  - preferred_term: Hemin
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    source: TOGO M470 / JCM Medium 469
+    notes: JCM Medium 469 dissolves 50 mg hemin in 1 ml of 1 N NaOH and adjusts to
+      100 ml.
+    term:
+      id: CHEBI:50385
+      label: hemin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:50385
+      label: hemin
+  - preferred_term: 1 N NaOH
+    concentration:
+      value: '10.0'
+      unit: ML_PER_L
+    source: TOGO M470 / JCM Medium 469
+    notes: JCM Medium 469 dissolves hemin in 1 ml of 1 N NaOH before adjusting the
+      hemin solution to 100 ml.
+    term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+- preferred_term: Menadione solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: TOGO M470 / JCM Medium 469
+  notes: JCM Medium 1338 adds 10.0 ml/L menadione solution from JCM Medium 469.
+  composition:
+  - preferred_term: Menadione
+    concentration:
+      value: '0.05'
+      unit: G_PER_L
+    source: TOGO M470 / JCM Medium 469
+    notes: JCM Medium 469 dissolves 5 mg menadione in 1 ml ethanol and adjusts to
+      100 ml.
+    term:
+      id: CHEBI:28869
+      label: menadione
+    mediaingredientmech_chebi_term:
+      id: CHEBI:28869
+      label: menadione
+  - preferred_term: Ethanol
+    concentration:
+      value: '10.0'
+      unit: ML_PER_L
+    source: TOGO M470 / JCM Medium 469
+    notes: JCM Medium 469 dissolves menadione in 1 ml ethanol before adjusting the
+      menadione solution to 100 ml.
+    term:
+      id: CHEBI:16236
+      label: ethanol
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16236
+      label: ethanol
 media_term:
   preferred_term: TOGO Medium M3010
   term:
     id: TOGO:M3010
     label: PYG Medium (K)
-notes: 'Source: https://togomedium.org/medium/M3010
-
-  Original source: JCM - JCM_M1338
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1338'
+notes: TOGO M3010 imports JCM Medium 1338 PYG Medium (K). JCM Medium 1338 lists 5
+  g trypticase peptone, 5 g peptone, 10 g yeast extract, 2 g KH2PO4, 0.5 g L-Cysteine
+  HCl H2O, 1 mg resazurin, 40 ml salt solution from JCM Medium 676, and 940 ml distilled
+  water, then instructs anaerobic addition of 10 ml hemin solution and 10 ml menadione
+  solution from JCM Medium 469 after autoclaving under N2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -129,25 +314,39 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-solutions:
-- preferred_term: Salt solution (see Medium [M695])
-  composition: []
-  notes: Cross-reference to Medium M695
-  concentration:
-    value: '40'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Hemin solution (see Medium [M470])
-  composition: []
-  notes: Cross-reference to Medium M470
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Menadione solution (see Medium [M470])
-  composition: []
-  notes: Cross-reference to Medium M470
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  name: Unknown solution
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m3010_pyg_medium_k_score15.py
+  action: RESOLVED_TOGO_M3010_PYG_MEDIUM_K_SCORE15
+  source: https://togomedium.org/medium/M3010; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1338;
+    https://togomedium.org/medium/M695; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676;
+    https://togomedium.org/medium/M470; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=469
+  notes: Corrected TOGO M3010 ml and mg imports, added pH 7.0-7.2, expanded the salt,
+    hemin, and menadione stocks from JCM cross-references, and grounded all disclosed
+    PYG Medium (K) ingredients and stock components.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix the basal PYG Medium (K) components thoroughly.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the basal medium under a nitrogen atmosphere.
+- step_number: 3
+  action: COOL
+  description: Cool the autoclaved basal medium.
+- step_number: 4
+  action: MIX
+  description: Aseptically and anaerobically add autoclaved hemin solution and menadione
+    solution.
+- step_number: 5
+  action: ADJUST_PH
+  description: Adjust pH to 7.0-7.2, if necessary.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M3010
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1338
+- reference: https://togomedium.org/medium/M695
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676
+- reference: https://togomedium.org/medium/M470
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=469

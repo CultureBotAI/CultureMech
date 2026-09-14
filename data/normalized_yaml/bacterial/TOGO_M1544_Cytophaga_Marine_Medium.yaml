@@ -3,34 +3,56 @@ name: cytophaga_marine_medium
 original_name: Cytophaga (Marine) Medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.2
 ingredients:
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Agar (if needed)
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
 - preferred_term: Bacto Tryptone (Difco)
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M1544 / NBRC Medium 336
+  notes: NBRC Medium 336 lists 1 g/L Bacto Tryptone (Difco); this commercial peptone
+    product is retained as an opaque complex component.
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: TOGO M1544 / NBRC Medium 336
+  notes: TOGO M1544 / NBRC Medium 336 lists 1.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: TOGO M1544 / NBRC Medium 336
+  notes: TOGO M1544 / NBRC Medium 336 lists 15.0 g/L Agar (if needed).
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Seawater*
+  concentration:
+    value: '1.0'
+    unit: L
+  source: TOGO M1544 / NBRC Medium 336
+  notes: NBRC Medium 336 lists 1 L Seawater and defines the footnote as filtered,
+    aged seawater or artificial seawater using Daigo's Artificial Seawater SP; the
+    seawater is retained as an opaque complex base.
 media_term:
   preferred_term: TOGO Medium M1544
   term:
     id: TOGO:M1544
     label: Cytophaga (Marine) Medium
-notes: 'Source: https://togomedium.org/medium/M1544
-
-  Original source: NBRC - NBRC_M336
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=336'
+notes: TOGO M1544 imports NBRC Medium 336 as Cytophaga (Marine) Medium. NBRC 336 lists
+  1 g Bacto Tryptone (Difco), 1 g yeast extract, optional 15 g agar, and 1 L Seawater
+  at pH 7.2. Its seawater footnote allows filtered aged seawater or artificial seawater
+  using Daigo's Artificial Seawater SP. The source does not state sterilization, incubation
+  temperature, or other preparation steps.
 applications:
 - Microbial cultivation
 curation_history:
@@ -59,13 +81,21 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
-solutions:
-- preferred_term: Seawater*
-  term:
-    id: mediadive.solution:1801
-    label: Seawater
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: See mediadive_1801_Seawater.yaml for composition
-  name: Unknown solution
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m1544_score15.py
+  action: RESOLVED_TOGO_M1544_SCORE15
+  source: https://togomedium.org/medium/M1544; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=336
+  notes: TOGO M1544 imports NBRC Medium 336 as Cytophaga (Marine) Medium. NBRC 336
+    lists 1 g Bacto Tryptone (Difco), 1 g yeast extract, optional 15 g agar, and 1
+    L Seawater at pH 7.2. Its seawater footnote allows filtered aged seawater or artificial
+    seawater using Daigo's Artificial Seawater SP. The source does not state sterilization,
+    incubation temperature, or other preparation steps. Moved the imported Seawater
+    stock solution to the main ingredient list, corrected its unit to liters, added
+    the NBRC pH value, and marked the formula as curated.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1544
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=336

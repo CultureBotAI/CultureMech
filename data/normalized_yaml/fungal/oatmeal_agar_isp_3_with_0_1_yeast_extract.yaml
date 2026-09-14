@@ -10,22 +10,19 @@ media_term:
   term:
     id: mediadive.medium:J51
     label: OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=51'
+notes: JCM Medium 51 contains 1.0 L Oatmeal agar (ISP-3) from JCM Medium 50 plus 1.0
+  g/L Yeast extract (BD-Difco).
 ingredients:
-- preferred_term: Oatmeal agar
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
 - preferred_term: Yeast extract
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
+  source: JCM Medium 51
+  notes: JCM Medium 51 supplements 1.0 L Oatmeal agar (ISP-3) with 1.0 g Yeast extract
+    (BD-Difco).
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,4 +49,38 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_official_simple_score20.py
+  action: RESOLVED_OFFICIAL_SIMPLE_SCORE20
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=51; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=50
+  notes: JCM Medium 51 contains 1.0 L Oatmeal agar (ISP-3) from JCM Medium 50 plus
+    1.0 g/L Yeast extract (BD-Difco).
 kg_microbe_match: mediadive.medium:12
+solutions:
+- preferred_term: Oatmeal agar (ISP-3)
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  notes: JCM Medium 51 uses 1.0 L Oatmeal agar (ISP-3) from JCM Medium 50.
+  culturemech_term:
+    id: CultureMech:009815
+    label: Oatmeal Agar (ISP-3)
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use 1.0 L Oatmeal agar (ISP-3) with 1.0 g/L Yeast extract (BD-Difco).
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M42_Oatmeal_Agar_ISP-3.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:009815
+  name: oatmeal_agar_isp_3
+  notes: Supplements 1.0 L Oatmeal agar (ISP-3) with 1.0 g/L Yeast extract (BD-Difco).
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Supplements 1.0 L Oatmeal agar (ISP-3) with 1.0 g/L Yeast extract (BD-Difco).
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=51
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=50

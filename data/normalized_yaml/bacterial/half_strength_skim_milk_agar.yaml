@@ -11,29 +11,76 @@ media_term:
   term:
     id: mediadive.medium:J106
     label: HALF STRENGTH SKIM MILK AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=106'
-ingredients:
-- preferred_term: Skim milk
+notes: JCM Medium 106 defines Half Strength Skim Milk Agar as Solution A with 25.0
+  g Skim milk (BD-Difco) and 500.0 ml distilled water, adjusted to pH 7.0, plus Solution
+  B with 20.0 g agar and 500.0 ml distilled water. Solutions A and B are autoclaved
+  separately and mixed aseptically.
+ingredients: []
+solutions:
+- preferred_term: Solution A
   concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
+    value: '500.0'
+    unit: ML_PER_L
+  source: JCM Medium 106
+  notes: JCM Medium 106 adds 500.0 ml/L Solution A.
+  composition:
+  - preferred_term: Skim milk (BD-Difco)
+    concentration:
+      value: '50.0'
+      unit: G_PER_L
+    source: JCM Medium 106
+    notes: JCM Medium 106 lists 25.0 g Skim milk (BD-Difco) in the 500 ml Solution
+      A stock; this complex milk product is retained as an opaque component.
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 106
+    notes: JCM Medium 106 lists 500 ml distilled water in this stock.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: Solution B
   concentration:
-    value: '40'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
+    value: '500.0'
+    unit: ML_PER_L
+  source: JCM Medium 106
+  notes: JCM Medium 106 adds 500.0 ml/L Solution B.
+  composition:
+  - preferred_term: Agar
+    concentration:
+      value: '40.0'
+      unit: G_PER_L
+    source: JCM Medium 106
+    notes: JCM Medium 106 lists 20.0 g agar in the 500 ml Solution B stock.
+    term:
+      id: CHEBI:2509
+      label: agar
+    mediaingredientmech_chebi_term:
+      id: CHEBI:2509
+      label: agar
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 106
+    notes: JCM Medium 106 lists 500 ml distilled water in this stock.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.0.
+  description: Adjust Solution A to pH 7.0.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave Solutions A and B separately, and mix aseptically.
+  description: Autoclave Solutions A and B separately and mix aseptically.
 applications:
 - Microbial cultivation
 curation_history:
@@ -60,4 +107,22 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_jcm_j106_skim_milk_agar_score15.py
+  action: RESOLVED_JCM_J106_SCORE15
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=106
+  notes: JCM Medium 106 defines Half Strength Skim Milk Agar as Solution A with 25.0
+    g Skim milk (BD-Difco) and 500.0 ml distilled water, adjusted to pH 7.0, plus
+    Solution B with 20.0 g agar and 500.0 ml distilled water. Solutions A and B are
+    autoclaved separately and mixed aseptically. Replaced the imported stock-solution
+    concentrations with explicit nested Solution A and Solution B recipes.
 kg_microbe_match: mediadive.medium:12
+sterilization:
+  method: AUTOCLAVE
+  notes: JCM Medium 106 autoclaves Solutions A and B separately.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=106

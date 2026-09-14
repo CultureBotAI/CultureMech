@@ -10,8 +10,9 @@ ingredients:
   concentration:
     value: '2.8'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO Medium M1280
+  notes: TOGO M1280 supplements one liter of Methanothermococcus HHB Medium with 2.8
+    g/L Na2SO4.
   term:
     id: CHEBI:32149
     label: sodium sulfate
@@ -23,11 +24,10 @@ media_term:
   term:
     id: TOGO:M1280
     label: Archaeoglobus MCR Medium
-notes: 'Source: https://togomedium.org/medium/M1280
-
-  Original source: JCM - JCM_M1195
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1195'
+notes: 'TOGO M1280 is a supplemented parent-medium cross-reference: one liter of TOGO
+  M1279 Methanothermococcus HHB Medium supplemented with 2.8 g/L Na2SO4. The M1279
+  base remains a CultureMech parent-media link instead of being flattened into this
+  record.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,12 +74,37 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_archaeoglobus_mcr_score20.py
+  action: RESOLVED_ARCHAEOGLOBUS_MCR_SCORE20
+  changes: Resolved Archaeoglobus MCR parent-medium cross-reference
+  source: https://togomedium.org/medium/M1280
+  notes: Grounded the Methanothermococcus HHB parent-medium wrapper and preserved
+    the sparse supplemented-variant graph.
 solutions:
 - preferred_term: METHANOTHERMOCOCCUS HHB MEDIUM (see Medium [M1279])
   composition: []
-  notes: Cross-reference to Medium M1279
   concentration:
     value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    unit: L
+  notes: TOGO M1280 uses one liter of TOGO M1279 Methanothermococcus HHB Medium as
+    the base medium.
+  culturemech_term:
+    id: CultureMech:007812
+    label: Methanothermococcus HHB Medium
 kg_microbe_match: mediadive.medium:J120
+parent_media:
+  path: data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:007812
+  name: methanothermococcus_hhb_medium
+  notes: TOGO M1280 uses TOGO M1279 Methanothermococcus HHB Medium and supplements
+    it with 2.8 g/L Na2SO4.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Supplements TOGO M1279 Methanothermococcus HHB Medium with 2.8 g/L Na2SO4.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M1280

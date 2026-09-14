@@ -4,66 +4,18 @@ original_name: M30
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: LIQUID
-ingredients:
-- preferred_term: 0.1 M Tris--HCl buffer (pH 7.5)
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Complex component, Defined component, Solution'
-- preferred_term: Distilled water
-  concentration:
-    value: '300.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component [Merged 2 duplicates: 260.0, 40.0]'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: gelrite (Gellan Gum)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component; Properties: Organic compound, Undefined component'
-- preferred_term: Aged seawater
-  concentration:
-    value: '700'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Undefined component, Complex component'
-- preferred_term: Ampicillin (50 mg/ml)
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
-    Solution'
-- preferred_term: Na2HPO4・2H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
-  term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-- preferred_term: N--Acetyl--D--glucosamine (Sigma)
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
+physical_state: SOLID_AGAR
+ingredients: []
 media_term:
   preferred_term: TOGO Medium M1050
   term:
     id: TOGO:M1050
     label: M30
-notes: 'Source: https://togomedium.org/medium/M1050
-
-  Original source: JCM - JCM_M995-2
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=995'
+notes: 'TOGO M1050 records the solid JCM Medium 995 M30 variant: 1030 ml Solution
+  1 plus 0.2 ml filter-sterilized Solution 2. Solution 1 contains 5 g/L gelrite, aged
+  seawater, Tris-HCl buffer, distilled water, and Modified Hutner''s basal salts from
+  M941/JCM 900; Solution 2 contains 50 mg/ml Ampicillin, Na2HPO4 x 2H2O, N-Acetyl-D-glucosamine,
+  and Vitamin solution No. 6 from M1049/JCM 995.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -110,36 +62,508 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m1050_score15.py
+  action: RESOLVED_TOGO_M1050_SCORE15
+  source: https://togomedium.org/medium/M1050; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=995;
+    https://togomedium.org/medium/M1049; https://togomedium.org/medium/M941; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=900;
+    https://togomedium.org/medium/M140; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=149
+  notes: 'TOGO M1050 records the solid JCM Medium 995 M30 variant: 1030 ml Solution
+    1 plus 0.2 ml filter-sterilized Solution 2. Solution 1 contains 5 g/L gelrite,
+    aged seawater, Tris-HCl buffer, distilled water, and Modified Hutner''s basal
+    salts from M941/JCM 900; Solution 2 contains 50 mg/ml Ampicillin, Na2HPO4 x 2H2O,
+    N-Acetyl-D-glucosamine, and Vitamin solution No. 6 from M1049/JCM 995.'
 solutions:
 - preferred_term: Solution 1
-  term:
-    id: mediadive.solution:6108
-    label: Solution 1
   concentration:
     value: '1030'
-    unit: G_PER_L
-  notes: See mediadive_6108_Solution_1.yaml for composition
-  name: Unknown solution
+    unit: ML_PER_L
+  source: TOGO M1050 / JCM Medium 995
+  notes: TOGO M1050 / JCM Medium 995 combines 1030 ml Solution 1 with 0.2 ml filter-sterilized
+    Solution 2.
+  composition:
+  - preferred_term: 0.1 M Tris-HCl buffer (pH 7.5)
+    concentration:
+      value: '50.0'
+      unit: ML_PER_L
+    source: TOGO M1050 / JCM Medium 995
+    notes: TOGO M1050 / JCM Medium 995 lists 50.0 ml/L 0.1 M Tris-HCl buffer (pH 7.5).
+  - preferred_term: Distilled water
+    concentration:
+      value: '260.0'
+      unit: ML_PER_L
+    source: TOGO M1050 / JCM Medium 995
+    notes: TOGO M1050 / JCM Medium 995 lists 260.0 ml/L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: gelrite (Gellan Gum)
+    concentration:
+      value: '5.0'
+      unit: G_PER_L
+    source: TOGO M1050 / JCM Medium 995
+    notes: TOGO M1050 / JCM Medium 995 lists 5.0 g/L gelrite (Gellan Gum).
+  - preferred_term: Aged seawater
+    concentration:
+      value: '700.0'
+      unit: ML_PER_L
+    source: TOGO M1050 / JCM Medium 995
+    notes: TOGO M1050 / JCM Medium 995 lists 700.0 ml/L Aged seawater.
+  - preferred_term: Modified Hutner's basal salts
+    concentration:
+      value: '20.0'
+      unit: ML_PER_L
+    source: TOGO M1050 / JCM Medium 995
+    notes: TOGO M1050 / JCM Medium 995 adds 20.0 ml/L Modified Hutner's basal salts
+      from TOGO M941.
 - preferred_term: Solution 2
-  term:
-    id: mediadive.solution:6109
-    label: Solution 2
   concentration:
     value: '0.2'
-    unit: G_PER_L
-  notes: See mediadive_6109_Solution_2.yaml for composition
-  name: Unknown solution
-- preferred_term: Modified Hutner's basal salts (see Medium [M941])
-  composition: []
-  notes: Cross-reference to Medium M941
+    unit: ML_PER_L
+  source: TOGO M1050 / JCM Medium 995
+  notes: TOGO M1050 / JCM Medium 995 adds 0.2 ml filter-sterilized Solution 2 to Solution
+    1.
+  composition:
+  - preferred_term: Ampicillin (50 mg/ml)
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: TOGO M1050 / JCM Medium 995
+    notes: TOGO M1050 / JCM Medium 995 lists 4.0 ml Ampicillin (50 mg/ml) in Solution
+      2.
+    term:
+      id: CHEBI:28971
+      label: ampicillin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:28971
+      label: ampicillin
+  - preferred_term: Distilled water
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: TOGO M1050 / JCM Medium 995
+    notes: TOGO M1050 / JCM Medium 995 lists 40.0 ml Distilled water in Solution 2.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: Na2HPO4 x 2H2O
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: TOGO M1050 / JCM Medium 995
+    notes: TOGO M1050 / JCM Medium 995 lists 0.01 g Na2HPO4 x 2H2O in Solution 2.
+    term:
+      id: CHEBI:91258
+      label: disodium hydrogenphosphate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91258
+      label: disodium hydrogenphosphate dihydrate
+  - preferred_term: N-Acetyl-D-glucosamine (Sigma)
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: TOGO M1050 / JCM Medium 995
+    notes: TOGO M1050 / JCM Medium 995 lists 2.0 g N-Acetyl-D-glucosamine (Sigma)
+      in Solution 2.
+    term:
+      id: CHEBI:506227
+      label: N-acetyl-D-glucosamine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:506227
+      label: N-acetyl-D-glucosamine
+  - preferred_term: Vitamin solution No. 6
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: TOGO M1050 / JCM Medium 995
+    notes: TOGO M1050 / JCM Medium 995 lists 10.0 ml Vitamin solution No. 6 in Solution
+      2.
+  preparation_notes: Filter-sterilize Solution 2 before adding it to Solution 1.
+- preferred_term: Modified Hutner's basal salts
   concentration:
-    value: '20'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Vitamin solution No. 6 (see Medium [M1049])
-  composition: []
-  notes: Cross-reference to Medium M1049
+    value: '20.0'
+    unit: ML_PER_L
+  source: TOGO M1050 / JCM Medium 995
+  notes: TOGO M1050 / JCM Medium 995 adds 20.0 ml/L Modified Hutner's basal salts
+    from TOGO M941.
+  composition:
+  - preferred_term: Distilled water
+    concentration:
+      value: '950.0'
+      unit: ML_PER_L
+    source: TOGO M941 / JCM Medium 900
+    notes: TOGO M941 / JCM Medium 900 lists 950.0 ml/L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: Nitrilotriacetic acid
+    concentration:
+      value: '10.0'
+      unit: G_PER_L
+    source: TOGO M941 / JCM Medium 900
+    notes: TOGO M941 / JCM Medium 900 lists 10.0 g/L Nitrilotriacetic acid.
+    term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+  - preferred_term: MgSO4 x 7H2O
+    concentration:
+      value: '29.7'
+      unit: G_PER_L
+    source: TOGO M941 / JCM Medium 900
+    notes: TOGO M941 / JCM Medium 900 lists 29.7 g/L MgSO4 x 7H2O.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: CaCl2 x 2H2O
+    concentration:
+      value: '3.335'
+      unit: G_PER_L
+    source: TOGO M941 / JCM Medium 900
+    notes: TOGO M941 / JCM Medium 900 lists 3.335 g/L CaCl2 x 2H2O.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: (NH4)6Mo7O24 x 4H2O
+    concentration:
+      value: '9.25'
+      unit: MG_PER_L
+    source: TOGO M941 / JCM Medium 900
+    notes: TOGO M941 / JCM Medium 900 lists 9.25 mg/L (NH4)6Mo7O24 x 4H2O.
+    term:
+      id: CHEBI:86244
+      label: hexaammonium heptamolybdate tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86244
+      label: hexaammonium heptamolybdate tetrahydrate
+  - preferred_term: FeSO4 x 7H2O
+    concentration:
+      value: '99.0'
+      unit: MG_PER_L
+    source: TOGO M941 / JCM Medium 900
+    notes: TOGO M941 / JCM Medium 900 lists 99.0 mg/L FeSO4 x 7H2O.
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+  - preferred_term: Metals "44"
+    concentration:
+      value: '50.0'
+      unit: ML_PER_L
+    source: TOGO M941 / JCM Medium 900
+    notes: TOGO M941 / JCM Medium 900 lists 50.0 ml/L Metals "44".
+  - preferred_term: KOH
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: TOGO M941 / JCM Medium 900
+    notes: TOGO M941 / JCM Medium 900 dissolves nitrilotriacetic acid and adjusts
+      to pH 7.0 with about 7.3 g KOH before adding the remaining salts.
+    term:
+      id: CHEBI:32035
+      label: potassium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32035
+      label: potassium hydroxide
+  - preferred_term: NaOH
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: TOGO M941 / JCM Medium 900
+    notes: TOGO M941 / JCM Medium 900 readjusts Modified Hutner's basal salts to pH
+      6.8 with NaOH or H2SO4 as needed.
+    term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+  - preferred_term: H2SO4
+    concentration:
+      value: variable
+      unit: VARIABLE
+    source: TOGO M941 / JCM Medium 900
+    notes: TOGO M941 / JCM Medium 900 readjusts Modified Hutner's basal salts to pH
+      6.8 with NaOH or H2SO4 as needed.
+    term:
+      id: CHEBI:26836
+      label: sulfuric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26836
+      label: sulfuric acid
+  preparation_notes: Dissolve nitrilotriacetic acid, adjust to pH 7.0 with about 7.3
+    g KOH, add the remaining salts, then readjust to pH 6.8 with NaOH or H2SO4.
+- preferred_term: Metals "44"
   concentration:
-    value: '10'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '50.0'
+    unit: ML_PER_L
+  source: TOGO M941 / JCM Medium 900
+  notes: TOGO M941 / JCM Medium 900 adds 50.0 ml/L Metals 44 from TOGO M140.
+  composition:
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: TOGO M140 / JCM Medium 149
+    notes: TOGO M140 / JCM Medium 149 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: EDTA x 2Na
+    concentration:
+      value: '250.0'
+      unit: MG_PER_L
+    source: TOGO M140 / JCM Medium 149
+    notes: TOGO M140 / JCM Medium 149 lists 250.0 mg/L EDTA x 2Na.
+    term:
+      id: CHEBI:64734
+      label: EDTA disodium salt (anhydrous)
+    mediaingredientmech_chebi_term:
+      id: CHEBI:64734
+      label: EDTA disodium salt (anhydrous)
+  - preferred_term: ZnSO4 x 7H2O
+    concentration:
+      value: '1095.0'
+      unit: MG_PER_L
+    source: TOGO M140 / JCM Medium 149
+    notes: TOGO M140 / JCM Medium 149 lists 1095.0 mg/L ZnSO4 x 7H2O.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+  - preferred_term: FeSO4 x 7H2O
+    concentration:
+      value: '500.0'
+      unit: MG_PER_L
+    source: TOGO M140 / JCM Medium 149
+    notes: TOGO M140 / JCM Medium 149 lists 500.0 mg/L FeSO4 x 7H2O.
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+  - preferred_term: MnSO4 x H2O
+    concentration:
+      value: '154.0'
+      unit: MG_PER_L
+    source: TOGO M140 / JCM Medium 149
+    notes: TOGO M140 / JCM Medium 149 lists 154.0 mg/L MnSO4 x H2O.
+  - preferred_term: CuSO4 x 5H2O
+    concentration:
+      value: '39.2'
+      unit: MG_PER_L
+    source: TOGO M140 / JCM Medium 149
+    notes: TOGO M140 / JCM Medium 149 lists 39.2 mg/L CuSO4 x 5H2O.
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+  - preferred_term: Co(NO3)2 x 6H2O
+    concentration:
+      value: '24.8'
+      unit: MG_PER_L
+    source: TOGO M140 / JCM Medium 149
+    notes: TOGO M140 / JCM Medium 149 lists 24.8 mg/L Co(NO3)2 x 6H2O.
+    term:
+      id: CHEBI:86214
+      label: cobalt dinitrate hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86214
+      label: cobalt dinitrate hexahydrate
+  - preferred_term: Na2B4O7 x 10H2O
+    concentration:
+      value: '17.7'
+      unit: MG_PER_L
+    source: TOGO M140 / JCM Medium 149
+    notes: TOGO M140 / JCM Medium 149 lists 17.7 mg/L Na2B4O7 x 10H2O.
+    term:
+      id: CHEBI:131366
+      label: disodium tetraborate decahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131366
+      label: disodium tetraborate decahydrate
+- preferred_term: Vitamin solution No. 6
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: TOGO M1050 / JCM Medium 995
+  notes: TOGO M1050 / JCM Medium 995 lists 10.0 ml Vitamin solution No. 6 in Solution
+    2.
+  composition:
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: TOGO M1049 / JCM Medium 995
+    notes: TOGO M1049 / JCM Medium 995 lists 1.0 L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: Biotin
+    concentration:
+      value: '4.0'
+      unit: MG_PER_L
+    source: TOGO M1049 / JCM Medium 995
+    notes: TOGO M1049 / JCM Medium 995 lists 4.0 mg/L Biotin.
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+  - preferred_term: Pyridoxine HCl
+    concentration:
+      value: '20.0'
+      unit: MG_PER_L
+    source: TOGO M1049 / JCM Medium 995
+    notes: TOGO M1049 / JCM Medium 995 lists 20.0 mg/L Pyridoxine HCl.
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+  - preferred_term: Thiamine HCl 2H2O
+    concentration:
+      value: '10.0'
+      unit: MG_PER_L
+    source: TOGO M1049 / JCM Medium 995
+    notes: TOGO M1049 / JCM Medium 995 lists 10.0 mg/L Thiamine HCl 2H2O.
+    term:
+      id: CHEBI:132751
+      label: thiamine hydrochloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:132751
+      label: thiamine hydrochloride dihydrate
+  - preferred_term: Calcium pantothenate
+    concentration:
+      value: '10.0'
+      unit: MG_PER_L
+    source: TOGO M1049 / JCM Medium 995
+    notes: TOGO M1049 / JCM Medium 995 lists 10.0 mg/L Calcium pantothenate.
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '10.0'
+      unit: MG_PER_L
+    source: TOGO M1049 / JCM Medium 995
+    notes: TOGO M1049 / JCM Medium 995 lists 10.0 mg/L p-Aminobenzoic acid.
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+  - preferred_term: Folic acid
+    concentration:
+      value: '4.0'
+      unit: MG_PER_L
+    source: TOGO M1049 / JCM Medium 995
+    notes: TOGO M1049 / JCM Medium 995 lists 4.0 mg/L Folic acid.
+    term:
+      id: CHEBI:27470
+      label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
+  - preferred_term: Riboflavin
+    concentration:
+      value: '10.0'
+      unit: MG_PER_L
+    source: TOGO M1049 / JCM Medium 995
+    notes: TOGO M1049 / JCM Medium 995 lists 10.0 mg/L Riboflavin.
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
+  - preferred_term: Nicotinamide
+    concentration:
+      value: '10.0'
+      unit: MG_PER_L
+    source: TOGO M1049 / JCM Medium 995
+    notes: TOGO M1049 / JCM Medium 995 lists 10.0 mg/L Nicotinamide.
+    term:
+      id: CHEBI:17154
+      label: nicotinamide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17154
+      label: nicotinamide
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.2'
+      unit: MG_PER_L
+    source: TOGO M1049 / JCM Medium 995
+    notes: TOGO M1049 / JCM Medium 995 lists 0.2 mg/L Vitamin B12.
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+  preparation_notes: Filter-sterilize.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare Solution 1 from Tris-HCl buffer, distilled water, gelrite,
+    aged seawater, and Modified Hutner's basal salts.
+- step_number: 2
+  action: MIX
+  description: Prepare Solution 2 from 50 mg/ml Ampicillin, distilled water, Na2HPO4
+    x 2H2O, N-Acetyl-D-glucosamine, and Vitamin solution No. 6.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Filter-sterilize Solution 2.
+- step_number: 4
+  action: MIX
+  description: Add 0.2 ml filter-sterilized Solution 2 to Solution 1.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1050
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=995
+- reference: https://togomedium.org/medium/M1049
+- reference: https://togomedium.org/medium/M941
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=900
+- reference: https://togomedium.org/medium/M140
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=149

@@ -11,15 +11,16 @@ media_term:
   term:
     id: mediadive.medium:J816
     label: DILUTED ASM MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=816
-
-  Composition recovery source: https://togomedium.org/medium/M851 (TOGO snapshot of
-  JCM medium J816).'
+notes: 'JCM Medium 816 was recovered from the source-equivalent TOGO M851 snapshot:
+  prepare Acidic Diluted ASM Medium from JCM Medium 815 and adjust pH to 6.7.'
 ingredients: []
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Prepare Acidic Diluted ASM Medium from JCM Medium 815.
+- step_number: 2
   action: ADJUST_PH
-  description: Prepare Medium No. [815] and adjust pH to 6.7.
+  description: Adjust pH to 6.7.
 applications:
 - Microbial cultivation
 curation_history:
@@ -63,10 +64,38 @@ curation_history:
     obsolete composition/source flags
   notes: Recovered JCM J816 from source-equivalent TOGO M851. Preserved final ingredients
     and stock-solution boundaries; did not flatten referenced media or stocks.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_reference_wrappers_score40.py
+  action: RESOLVED_JCM_REFERENCE_WRAPPER_SCORE40
+  changes: Resolved a JCM/TOGO reference wrapper as a typed prepared-parent medium
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=816; https://togomedium.org/medium/M851;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=815; https://togomedium.org/medium/M850
+  notes: 'JCM Medium 816 was recovered from the source-equivalent TOGO M851 snapshot:
+    prepare Acidic Diluted ASM Medium from JCM Medium 815 and adjust pH to 6.7.'
 solutions:
-- preferred_term: ACIDIC DILUTED ASM MEDIUM (see Medium [M850])
-  composition: []
+- preferred_term: Acidic Diluted ASM Medium
   concentration:
-    value: '1'
-    unit: L
-  notes: Defined in TOGO medium M850.
+    value: '1000'
+    unit: ML_PER_L
+  culturemech_term:
+    id: CultureMech:003159
+    label: Acidic Diluted ASM Medium
+  notes: 'JCM Medium 816 was recovered from the source-equivalent TOGO M851 snapshot:
+    prepare Acidic Diluted ASM Medium from JCM Medium 815 and adjust pH to 6.7.'
+parent_media:
+  path: data/normalized_yaml/bacterial/acidic_diluted_asm_medium.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:003159
+  name: acidic_diluted_asm_medium
+  notes: Adjusts Acidic Diluted ASM Medium from JCM Medium 815 to pH 6.7.
+variant_relationship: PH_VARIANT
+variant_modifications:
+- Adjusts Acidic Diluted ASM Medium from JCM Medium 815 to pH 6.7.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=816
+- reference: https://togomedium.org/medium/M851
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=815
+- reference: https://togomedium.org/medium/M850

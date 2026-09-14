@@ -248,12 +248,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_dsmz_838_geobacter_score10.py
+  action: RESOLVED_DSMZ_KOMODO_838_TOPOLOGY
+  changes: Linked under DSMZ Medium 838
+  source: KOMODO Medium 838.4
+  notes: KOMODO Medium 838.4 applies DSMZ Medium 838 to DSM 19350 and DSM 22248.
 parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_9736.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006631
-  name: for_dsm_9736
-variant_relationship: SOURCE_DUPLICATE
+  path: data/normalized_yaml/bacterial/geoanaerobacter_medium.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:001995
+  name: geoanaerobacter_medium
+  notes: KOMODO Medium 838.4 applies DSMZ Medium 838 to DSM 19350 and DSM 22248.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 838.4 applies DSMZ Medium 838 to DSM 19350 and DSM 22248.
+data_quality_flags:
+- ingredients_curated

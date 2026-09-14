@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T10:16:26.746803+00:00",
+  "generated": "2026-09-14T18:59:54.159745+00:00",
   "category": "fungal",
   "count": 126,
   "recipes": {
@@ -73,7 +73,7 @@
     "CultureMech:010523": {
       "name": "2_malt_agar",
       "filename": "2_malt_agar.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:010523",
       "source_id": "mediadive.medium:J38",
       "source": "MediaDive",
@@ -84,7 +84,7 @@
     "CultureMech:010514": {
       "name": "4_malt_agar",
       "filename": "4_malt_agar.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:010514",
       "source_id": "mediadive.medium:J253",
       "source": "MediaDive",
@@ -227,10 +227,11 @@
     "CultureMech:010526": {
       "name": "bl_with_0_5_maltose",
       "filename": "bl_with_0_5_maltose.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:010526",
       "source_id": "mediadive.medium:J418",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "fungal"
       ]
@@ -333,7 +334,7 @@
     "CultureMech:010452": {
       "name": "dilute_filtered_malt_extract_agar",
       "filename": "dilute_filtered_malt_extract_agar.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:010452",
       "source_id": "mediadive.medium:1427",
       "source": "MediaDive",
@@ -552,10 +553,11 @@
     "CultureMech:010510": {
       "name": "inorganic_salts_starch_agar_isp_4_with_0_05_yeast_extract",
       "filename": "inorganic_salts_starch_agar_isp_4_with_0_05_yeast_extract.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:010510",
       "source_id": "mediadive.medium:J217",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "fungal"
       ]
@@ -717,7 +719,7 @@
     "CultureMech:010518": {
       "name": "mrs_maltose_medium",
       "filename": "mrs_maltose_medium.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:010518",
       "source_id": "mediadive.medium:J293",
       "source": "MediaDive",
@@ -784,10 +786,11 @@
     "CultureMech:010531": {
       "name": "oatmeal_agar_isp_3_with_0_1_yeast_extract",
       "filename": "oatmeal_agar_isp_3_with_0_1_yeast_extract.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:010531",
       "source_id": "mediadive.medium:J51",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "fungal"
       ]
@@ -840,7 +843,7 @@
     "CultureMech:010453": {
       "name": "sabouraud_glucose_medium",
       "filename": "sabouraud_glucose_medium.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 3,
       "id": "CultureMech:010453",
       "source_id": "mediadive.medium:1429",
       "source": "MediaDive",
@@ -1061,7 +1064,7 @@
     "CultureMech:010463": {
       "name": "universal_medium_for_yeasts_ym",
       "filename": "universal_medium_for_yeasts_ym.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 6,
       "id": "CultureMech:010463",
       "source_id": "mediadive.medium:186",
       "source": "MediaDive",
@@ -1104,7 +1107,7 @@
     "CultureMech:010528": {
       "name": "yeast_extract_malt_extract_agar_isp_2",
       "filename": "yeast_extract_malt_extract_agar_isp_2.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 5,
       "id": "CultureMech:010528",
       "source_id": "mediadive.medium:J43",
       "source": "MediaDive",
@@ -1126,10 +1129,11 @@
     "CultureMech:010493": {
       "name": "yeast_extract_malt_extract_agar_isp_2_with_2_nacl",
       "filename": "yeast_extract_malt_extract_agar_isp_2_with_2_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:010493",
       "source_id": "mediadive.medium:J1152",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "fungal"
       ]
@@ -1137,10 +1141,11 @@
     "CultureMech:010509": {
       "name": "yeast_extract_malt_extract_agar_isp_2_with_5_nacl",
       "filename": "yeast_extract_malt_extract_agar_isp_2_with_5_nacl.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:010509",
       "source_id": "mediadive.medium:J207",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "fungal"
       ]
@@ -1148,10 +1153,11 @@
     "CultureMech:010532": {
       "name": "yeast_extract_malt_extract_agar_isp_2_with_5_nacl_ph_9_0",
       "filename": "yeast_extract_malt_extract_agar_isp_2_with_5_nacl_ph_9_0.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 1,
       "id": "CultureMech:010532",
       "source_id": "mediadive.medium:J527",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "fungal"
       ]
@@ -1247,7 +1253,7 @@
     "CultureMech:010459": {
       "name": "yeast_extract_skim_milk_medium",
       "filename": "yeast_extract_skim_milk_medium.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 4,
       "id": "CultureMech:010459",
       "source_id": "mediadive.medium:170",
       "source": "MediaDive",

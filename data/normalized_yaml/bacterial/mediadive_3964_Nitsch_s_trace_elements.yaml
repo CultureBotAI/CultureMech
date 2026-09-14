@@ -4,102 +4,114 @@ term:
   id: mediadive.solution:3964
   label: Nitsch's trace elements
 composition:
-- preferred_term: H2SO4
+- preferred_term: Distilled water
   concentration:
-    value: '0.5'
-    unit: PERCENT_V_V
+    value: '1000.0'
+    unit: ML_PER_L
+  source: MediaDive solution 3964 / JCM Medium 273
+  notes: MediaDive solution 3964 / JCM Medium 273 lists 1000.0 ml/L Distilled water.
   term:
-    id: mediadive.compound:122
-    label: H2SO4
-  chebi_term:
-    id: CHEBI:26836
-    label: sulfuric acid
-    confidence: 1.0
-    match_type: exact_match
-- preferred_term: MnSO4 x n H2O
-  concentration:
-    value: '2.2'
-    unit: G_PER_L
-  term:
-    id: mediadive.compound:1000
-    label: MnSO4 x n H2O
-  chebi_term:
-    id: CHEBI:86360
-    label: manganese(II) sulfate
-    confidence: 0.7
-    match_type: corpus_consensus
-- preferred_term: ZnSO4 x 7 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  term:
-    id: mediadive.compound:35
-    label: ZnSO4 x 7 H2O
-  chebi_term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-    confidence: 0.7
-    match_type: corpus_consensus
-- preferred_term: H3BO3
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  term:
-    id: mediadive.compound:37
-    label: H3BO3
-  chebi_term:
-    id: CHEBI:33118
-    label: boric acid
-    confidence: 1.0
-    match_type: exact_match
-- preferred_term: CuSO4 x 5 H2O
-  concentration:
-    value: '0.016'
-    unit: G_PER_L
-  term:
-    id: mediadive.compound:121
-    label: CuSO4 x 5 H2O
-  chebi_term:
-    id: CHEBI:31440
-    label: copper(II) sulfate pentahydrate
-    confidence: 0.7
-    match_type: corpus_consensus
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '0.025'
     unit: G_PER_L
+  source: MediaDive solution 3964 / JCM Medium 273
+  notes: MediaDive solution 3964 / JCM Medium 273 lists 0.025 g/L Na2MoO4 x 2 H2O.
   term:
-    id: mediadive.compound:9
-    label: Na2MoO4 x 2 H2O
-  chebi_term:
     id: CHEBI:75213
     label: sodium molybdate dihydrate
-    confidence: 0.7
-    match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: H3BO3
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: MediaDive solution 3964 / JCM Medium 273
+  notes: MediaDive solution 3964 / JCM Medium 273 lists 0.5 g/L H3BO3.
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+  nutritional_roles:
+  - TRACE_ELEMENT
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '0.046'
     unit: G_PER_L
+  source: MediaDive solution 3964 / JCM Medium 273
+  notes: MediaDive solution 3964 / JCM Medium 273 lists 0.046 g/L CoCl2 x 6 H2O.
   term:
-    id: mediadive.compound:38
-    label: CoCl2 x 6 H2O
-  chebi_term:
     id: CHEBI:53503
     label: cobalt chloride hexahydrate
-    confidence: 0.7
-    match_type: corpus_consensus
-- preferred_term: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: ZnSO4 x 7 H2O
   concentration:
-    value: '1000'
-    unit: PERCENT_V_V
+    value: '0.5'
+    unit: G_PER_L
+  source: MediaDive solution 3964 / JCM Medium 273
+  notes: MediaDive solution 3964 / JCM Medium 273 lists 0.5 g/L ZnSO4 x 7 H2O.
   term:
-    id: mediadive.compound:4
-    label: Distilled water
-  chebi_term:
-    id: CHEBI:15377
-    label: water
-    confidence: 0.7
-    match_type: corpus_consensus
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: CuSO4 x 5 H2O
+  concentration:
+    value: '0.016'
+    unit: G_PER_L
+  source: MediaDive solution 3964 / JCM Medium 273
+  notes: MediaDive solution 3964 / JCM Medium 273 lists 0.016 g/L CuSO4 x 5 H2O.
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: MnSO4 x n H2O
+  concentration:
+    value: '2.2'
+    unit: G_PER_L
+  source: MediaDive solution 3964 / JCM Medium 273
+  notes: MediaDive solution 3964 / JCM Medium 273 lists 2.2 g/L MnSO4 x n H2O.
+  term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
+  nutritional_roles:
+  - TRACE_ELEMENT
+- preferred_term: H2SO4
+  concentration:
+    value: '0.5'
+    unit: ML_PER_L
+  source: MediaDive solution 3964 / JCM Medium 273
+  notes: MediaDive solution 3964 / JCM Medium 273 lists 0.5 ml/L H2SO4.
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
 curation_history:
 - timestamp: '2026-03-13T06:20:28.955511Z'
   curator: culturemech-id-assigner-v1.0
@@ -133,11 +145,24 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m935_microaerophilic_thermus_score15.py
+  action: RESOLVED_MEDIADIVE_3964_NITSCH_TRACE_ELEMENTS
+  source: https://mediadive.dsmz.de/medium/J276; https://togomedium.org/medium/M266;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=273
+  notes: Corrected the Nitsch stock water and H2SO4 rows from false percent-volume
+    units to the source 1000.0 ml/L and 0.5 ml/L amounts, replaced upstream mediadive.compound
+    groundings with direct ontology mappings, and removed the placeholder top-level
+    ingredient.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
 category: bacterial
+preparation_notes: Mix the Nitsch trace-elements salts and 0.5 ml/L H2SO4 in 1.0 L
+  distilled water.
+notes: MediaDive solution 3964 is the Nitsch's trace-elements stock used by Castenholz
+  basal salt solution at 10.0 ml/L.
+references:
+- reference: https://mediadive.dsmz.de/medium/J276
+- reference: https://togomedium.org/medium/M266
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=273

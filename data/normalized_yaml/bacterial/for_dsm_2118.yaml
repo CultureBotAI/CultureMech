@@ -13,16 +13,19 @@ media_term:
 notes: 'Source: KOMODO ModelSEED | ID: 363.1 | DSMZ Medium: 363 (mediadive.medium:363)
   | Aerobic: No'
 ingredients:
-- preferred_term: Antipyrine
+- preferred_term: L-phenylalanine
   term:
-    id: CHEBI:31225
-    label: antipyrine
+    id: CHEBI:17295
+    label: L-phenylalanine
+  source: KOMODO Medium 363.1
+  notes: KOMODO Medium 363.1 lists 1.00 g/L L-phenylalanine in the final-component
+    table.
   concentration:
-    value: '1'
+    value: '1.00'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:31225
-    label: antipyrine
+    id: CHEBI:17295
+    label: L-phenylalanine
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -183,6 +186,24 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:176843
     label: vitamin B12
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=363.1
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium363.pdf
+- reference: https://mediadive.dsmz.de/rest/medium/363
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_363_PHENYLOBACTERIUM_MEDIUM.yaml
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  id: CultureMech:005086
+  name: KOMODO_363_PHENYLOBACTERIUM_MEDIUM
+  notes: KOMODO Medium 363.1 replaces 1.00 g/L Antipyrine from KOMODO Medium 363 with
+    1.00 g/L L-phenylalanine.
+variant_relationship: SUBSTITUTED_COMPONENT_VARIANT
+variant_modifications:
+- KOMODO Medium 363.1 replaces 1.00 g/L Antipyrine from KOMODO Medium 363 with 1.00
+  g/L L-phenylalanine.
 applications:
 - Microbial cultivation
 curation_history:
@@ -220,12 +241,10 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-parent_media:
-  path: data/normalized_yaml/bacterial/KOMODO_363_PHENYLOBACTERIUM_MEDIUM.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005086
-  name: phenylobacterium_medium
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_dsmz_363_phenylobacterium_score15.py
+  action: RESOLVED_DSMZ_KOMODO_363_SCORE15
+  changes: Resolved DSMZ/KOMODO Medium 363 Phenylobacterium variant metadata
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=363.1
+  notes: KOMODO Medium 363.1 replaces 1.00 g/L Antipyrine from KOMODO Medium 363 with
+    1.00 g/L L-phenylalanine.

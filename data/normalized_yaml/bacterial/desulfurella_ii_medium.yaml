@@ -380,3 +380,23 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_480c_desulfurella_score10.py
+  action: RESOLVED_KOMODO_480C_DESULFURELLA_TOPOLOGY
+  changes: Resolved KOMODO Medium 480c strain wrappers
+  source: KOMODO Medium 480c.1 and 480c.2
+  notes: Moved the exact-signature DSM-specific KOMODO Medium 480c wrappers under
+    the KOMODO Medium 480c Desulfurella II base.
+variant_children:
+- path: data/normalized_yaml/bacterial/dsm_10409.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005599
+  name: dsm_10409
+  notes: KOMODO Medium 480c.1 applies DESULFURELLA II medium to DSM 10409.
+- path: data/normalized_yaml/bacterial/dsm_10410.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005600
+  name: dsm_10410
+  notes: KOMODO Medium 480c.2 applies DESULFURELLA II medium to DSM 10410.
+data_quality_flags:
+- ingredients_curated

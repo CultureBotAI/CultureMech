@@ -394,22 +394,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-variant_children:
-- path: data/normalized_yaml/bacterial/deferribacter_desulfuricans_medium.yaml
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_935_deferribacter_score10.py
+  action: RESOLVED_KOMODO_935_DEFERRIBACTER_TOPOLOGY
+  changes: Linked under DSMZ Medium 935a as SOURCE_DUPLICATE
+  source: KOMODO Medium 935
+  notes: KOMODO Medium 935 has the same 34-ingredient signature as DSMZ Medium 935a.
+parent_media:
+  path: data/normalized_yaml/bacterial/deferribacter_desulfuricans_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002109
   name: deferribacter_desulfuricans_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/for_dsm_14813.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006856
-  name: for_dsm_14813
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/medium_935_modified_for_dsm_14783.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006855
-  name: medium_935_modified_for_dsm_14783
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: KOMODO Medium 935 has the same 34-ingredient signature as DSMZ Medium 935a.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO Medium 935 has the same 34-ingredient signature as DSMZ Medium 935a.
+data_quality_flags:
+- ingredients_curated

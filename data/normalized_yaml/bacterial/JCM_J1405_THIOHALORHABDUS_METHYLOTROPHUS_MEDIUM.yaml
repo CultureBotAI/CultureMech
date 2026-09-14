@@ -18,6 +18,8 @@ ingredients:
   concentration:
     value: '180.0'
     unit: G_PER_L
+  source: JCM Medium 1405
+  notes: JCM Medium 1405 lists 180.0 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -28,6 +30,8 @@ ingredients:
   concentration:
     value: '5.0'
     unit: G_PER_L
+  source: JCM Medium 1405
+  notes: JCM Medium 1405 lists 5.0 g/L KCl.
   term:
     id: CHEBI:32588
     label: potassium chloride
@@ -38,6 +42,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  source: JCM Medium 1405
+  notes: JCM Medium 1405 lists 2.5 g/L K2HPO4.
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -48,36 +54,90 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  source: JCM Medium 1405
+  notes: JCM Medium 1405 lists 0.2 g/L NH4Cl.
   term:
     id: CHEBI:31206
     label: ammonium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
     label: ammonium chloride
+solutions:
 - preferred_term: 1 M MgSO4 solution
   concentration:
     value: '1.0'
     unit: ML_PER_L
-- preferred_term: Trace element solution (see Medium No. 1079 )
+  source: JCM Medium 1405
+  notes: JCM Medium 1405 adds 1.0 ml/L 1 M MgSO4 solution.
+  composition:
+  - preferred_term: MgSO4
+    concentration:
+      value: '1.0'
+      unit: MOLAR
+    source: JCM Medium 1405
+    notes: JCM Medium 1405 lists 1.0 M MgSO4.
+    term:
+      id: CHEBI:32599
+      label: magnesium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32599
+      label: magnesium sulfate
+- preferred_term: Trace element solution (JCM Medium 1079)
   concentration:
     value: '1.0'
     unit: ML_PER_L
-- preferred_term: 0.002% CuCl2·2H2O solution
+  source: JCM Medium 1405 / JCM Medium 1079
+  notes: JCM Medium 1405 adds 1.0 ml/L Trace element solution.
+- preferred_term: 0.002% CuCl2 x 2H2O solution
   concentration:
     value: '1.0'
     unit: ML_PER_L
-- preferred_term: Trace vitamins* (see Medium No. 197 )
+  source: JCM Medium 1405
+  notes: JCM Medium 1405 adds 1.0 ml/L 0.002% CuCl2 x 2H2O solution.
+  composition:
+  - preferred_term: CuCl2 x 2H2O
+    concentration:
+      value: '0.002'
+      unit: PERCENT_W_V
+    source: JCM Medium 1405
+    notes: JCM Medium 1405 lists 0.002 % w/v CuCl2 x 2H2O.
+    term:
+      id: CHEBI:86318
+      label: copper dichloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86318
+      label: copper dichloride dihydrate
+- preferred_term: Trace vitamins (JCM Medium 197)
   concentration:
     value: '5.0'
     unit: ML_PER_L
-- preferred_term: 3% Trimethylamine solution*
+  source: JCM Medium 1405 / JCM Medium 197
+  notes: JCM Medium 1405 adds 5.0 ml/L filter-sterilized Trace vitamins.
+- preferred_term: 3% Trimethylamine solution
   concentration:
     value: '20.0'
     unit: ML_PER_L
-- preferred_term: 2 M Sodium thiosulfate solution*
+  source: JCM Medium 1405
+  notes: JCM Medium 1405 adds 20.0 ml/L filter-sterilized 3% Trimethylamine solution.
+- preferred_term: 2 M Sodium thiosulfate solution
   concentration:
     value: '1.0'
     unit: ML_PER_L
+  source: JCM Medium 1405
+  notes: JCM Medium 1405 adds 1.0 ml/L filter-sterilized 2 M Sodium thiosulfate solution.
+  composition:
+  - preferred_term: Sodium thiosulfate
+    concentration:
+      value: '2.0'
+      unit: MOLAR
+    source: JCM Medium 1405
+    notes: JCM Medium 1405 lists 2.0 M Sodium thiosulfate.
+    term:
+      id: CHEBI:132112
+      label: sodium thiosulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:132112
+      label: sodium thiosulfate
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -109,3 +169,14 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_jcm_score10_stock_solutions.py
+  action: RESOLVED_JCM_SCORE10_STOCK_SOLUTIONS
+  changes: Moved flat JCM stock additions into solutions
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1405
+  notes: Moved JCM Medium 1405 MgSO4, CuCl2, trace vitamin, trimethylamine, and sodium
+    thiosulfate stocks into solutions.
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1405
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1079
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197

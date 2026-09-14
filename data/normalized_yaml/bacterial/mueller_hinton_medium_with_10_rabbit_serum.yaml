@@ -9,27 +9,51 @@ ingredients:
 - preferred_term: DI Water
   concentration:
     value: '900'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+    unit: ML_PER_L
+  source: TOGO M2583
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: TOGO M2583 lists 900 ml DI Water.
 - preferred_term: Mueller Hinton Broth (BD 211443)
   concentration:
     value: '22'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  source: TOGO M2583
+  notes: TOGO M2583 lists 22 g Mueller Hinton Broth from BD catalog 211443 without
+    disclosing the broth composition.
 - preferred_term: Rabbit serum
   concentration:
     value: '100'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+    unit: ML_PER_L
+  source: TOGO M2583
+  notes: TOGO M2583 says to aseptically add 100 ml of sterile rabbit serum.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare 900 ml DI Water with 22 g Mueller Hinton Broth (BD 211443).
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C and let cool.
+- step_number: 3
+  action: MIX
+  description: Aseptically add 100 ml sterile rabbit serum.
+- step_number: 4
+  action: ALIQUOT
+  description: Dispense into an appropriate vessel.
+sterilization:
+  method: AUTOCLAVE
 media_term:
   preferred_term: TOGO Medium M2583
   term:
     id: TOGO:M2583
     label: Mueller Hinton Medium with 10% Rabbit Serum
-notes: 'Source: https://togomedium.org/medium/M2583
-
-  Original URL: https://www.atcc.org/~/media/AF84D0BF30B242F386C01A2F7DB295E7.ashx'
+notes: TOGO M2583 records 22 g BD 211443 Mueller Hinton Broth in 900 ml DI Water,
+  autoclaved at 121 C, cooled, and aseptically supplemented with 100 ml sterile rabbit
+  serum.
 applications:
 - Microbial cultivation
 curation_history:
@@ -46,3 +70,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Mueller Hinton Medium with 10% Rabbit Serum" to "mueller_hinton_medium_with_10_rabbit_serum"
     for consistent matching
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_m2583_score25.py
+  action: RESOLVED_TOGO_M2583_SCORE25
+  changes: Corrected units and added source metadata to TOGO M2583
+  source: https://togomedium.org/medium/M2583
+  notes: TOGO M2583 records 22 g BD 211443 Mueller Hinton Broth in 900 ml DI Water,
+    autoclaved at 121 C, cooled, and aseptically supplemented with 100 ml sterile
+    rabbit serum.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2583

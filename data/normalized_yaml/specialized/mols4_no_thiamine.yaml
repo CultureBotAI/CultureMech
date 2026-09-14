@@ -3,21 +3,24 @@ name: MoLS4 no thiamine
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
-ingredients:
+media_term:
+  preferred_term: MoLS4 no thiamine
+ingredients: []
+solutions:
 - preferred_term: MoLS4
   concentration:
     value: '1'
     unit: FOLD_DILUTION
-- preferred_term: thiamine HCl
-  concentration:
-    value: '-'
-    unit: G_PER_L
-  term:
-    id: CHEBI:49105
-    label: thiamine hydrochloride
-  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+  culturemech_term:
+    id: CultureMech:015607
+    label: MoLS4
+  notes: CultureBotHT lists MoLS4 at one-fold final strength.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare MoLS4 without thiamine HCl.
 description: Lactate-sulfate media for sulfate-reducing bacteria with no thiamine
-notes: 'Source: FEBA media definitions'
+notes: CultureBotHT imports MoLS4 no thiamine as MoLS4 with thiamine HCl omitted.
 category: specialized
 sources:
 - database: CultureBotHT
@@ -40,5 +43,24 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_culturebotht_omissions_score30.py
+  action: RESOLVED_CULTUREBOTHT_OMISSION_SCORE30
+  changes: Resolved score-30 CultureBotHT omitted-component variant
+  source: CultureBotHT:MoLS4 no thiamine; https://github.com/CultureBotAI/CultureBotHT
+  notes: CultureBotHT imports MoLS4 no thiamine as MoLS4 with thiamine HCl omitted.
 data_quality_flags:
-- has_unmapped_ingredients
+- has_ontology_mappings
+- ingredients_curated
+parent_media:
+  path: data/normalized_yaml/specialized/mols4.yaml
+  relationship: OMITTED_COMPONENT_VARIANT
+  id: CultureMech:015607
+  name: MoLS4
+  notes: Omits thiamine HCl from MoLS4.
+variant_relationship: OMITTED_COMPONENT_VARIANT
+variant_modifications:
+- Omits thiamine HCl from MoLS4.
+references:
+- reference: CultureBotHT:MoLS4 no thiamine
+- reference: https://github.com/CultureBotAI/CultureBotHT

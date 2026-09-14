@@ -11,40 +11,85 @@ media_term:
   term:
     id: mediadive.medium:J662
     label: MBG-20
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=662'
+notes: JCM Medium 662 MBG-20 lists 16.0 g Peptone, 4.0 g Yeast extract, 5.0 g Glucose,
+  40.0 g Sea salts (Sigma), and 1.0 L Distilled water, then adjusts pH to 7.0.
 ingredients:
 - preferred_term: Peptone
   concentration:
-    value: '16'
+    value: '16.0'
     unit: G_PER_L
+  source: MediaDive J662 / JCM Medium 662
+  notes: MediaDive J662 / JCM Medium 662 lists 16.0 g/L Peptone.
+  term:
+    id: MICRO:0000178
+    label: peptone
+  nutritional_roles:
+  - NITROGEN_SOURCE
 - preferred_term: Yeast extract
   concentration:
-    value: '4'
+    value: '4.0'
     unit: G_PER_L
+  source: MediaDive J662 / JCM Medium 662
+  notes: MediaDive J662 / JCM Medium 662 lists 4.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - NITROGEN_SOURCE
 - preferred_term: Glucose
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: MediaDive J662 / JCM Medium 662
+  notes: MediaDive J662 / JCM Medium 662 lists 5.0 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
-  concentration:
-    value: '5'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
-- preferred_term: Sea Salt
+  nutritional_roles:
+  - CARBON_SOURCE
+- preferred_term: Sea salts (Sigma)
   concentration:
-    value: '40'
+    value: '40.0'
     unit: G_PER_L
+  source: MediaDive J662 / JCM Medium 662
+  notes: MediaDive J662 / JCM Medium 662 lists 40.0 g/L Sea salts (Sigma); this commercial
+    sea-salt mixture is retained as an opaque complex component.
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: MediaDive J662 / JCM Medium 662
+  notes: MediaDive J662 / JCM Medium 662 lists 1.0 L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
   description: Adjust pH to 7.0.
 - step_number: 2
+  action: DISSOLVE
+  description: Dissolve Sea salts (Sigma) in distilled water.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize the Sea salts solution by filtration.
+- step_number: 4
   action: AUTOCLAVE
-  description: Dissolve Sea salts in distilled water and sterilize by filtration.
-    Separately, autoclave peptone, yeast extract and glucose solutions and add to
-    the sterile Sea salts solution. Make the liquid medium anaerobic by repeated cycles
-    (three times) of degassing and charging with argon.
+  description: Separately autoclave Peptone, Yeast extract, and Glucose solutions.
+- step_number: 5
+  action: MIX
+  description: Add the sterile Peptone, Yeast extract, and Glucose solutions to the
+    sterile Sea salts solution.
+- step_number: 6
+  action: MIX
+  description: Make the liquid medium anaerobic by repeated cycles, three times, of
+    degassing and charging with argon.
 applications:
 - Microbial cultivation
 curation_history:
@@ -70,3 +115,24 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m680_score15.py
+  action: RESOLVED_JCM_662_MBG_20
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=662; https://mediadive.dsmz.de/medium/J662
+  notes: Restored the JCM Medium 662 recipe with 1.0 L Distilled water, normalized
+    Sea salts (Sigma), grounded the disclosed reducible nutrients, retained the Sigma
+    sea-salt mixture as an opaque commercial component, and linked TOGO M680.
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M680_MBG-20.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010085
+  name: mbg_20
+  notes: TOGO M680 imports the same JCM Medium 662 MBG-20 formulation represented
+    by MediaDive J662.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=662
+- reference: https://mediadive.dsmz.de/medium/J662

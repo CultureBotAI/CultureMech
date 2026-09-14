@@ -253,15 +253,21 @@ curation_history:
     4 -> "Wolfe''s mineral elixir" @ 1 ml/l. Each moved component matched the MediaDive
     stock by name AND value; bulk ingredients sharing a name were left in place (#150).'
   changes: Nested 4 ingredient(s) under 1 solution(s); ingredients 23 -> 19
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_792_pyrolobus_score10.py
+  action: RESOLVED_KOMODO_792_PYROLOBUS_TOPOLOGY
+  changes: Linked as a KOMODO Medium 792 STRAIN_SPECIFIC_VARIANT
+  source: KOMODO Medium 792.2
+  notes: KOMODO Medium 792.2 applies Pyrolobus fumarii medium to DSM 16658.
 parent_media:
-  path: data/normalized_yaml/bacterial/KOMODO_792_PYROLOBUS_FUMARII_MEDIUM.yaml
-  relationship: SOURCE_DUPLICATE
+  path: data/normalized_yaml/archaea/KOMODO_792_PYROLOBUS_FUMARII_MEDIUM.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006501
   name: pyrolobus_fumarii_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 792.2 applies Pyrolobus fumarii medium to DSM 16658.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 792.2 applies Pyrolobus fumarii medium to DSM 16658.
 solutions:
 - preferred_term: Wolfe's mineral elixir
   composition:
@@ -319,3 +325,5 @@ solutions:
   preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
     asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
     (#150).'
+data_quality_flags:
+- ingredients_curated

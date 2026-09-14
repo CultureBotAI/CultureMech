@@ -65,12 +65,79 @@ curation_history:
   curator: migrate_ph_range.py
   action: MIGRATED_PH_RANGE
   notes: 'ph_range ''6.0-7.4'' -> {''min'': 6.0, ''max'': 7.4}'
-parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_14428.yaml
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_339_wilkins_topology_score10.py
+  action: RESOLVED_KOMODO_339_WILKINS_TOPOLOGY
+  changes: Promoted KOMODO Medium 339 to the Wilkins-Chalgren family parent
+  source: KOMODO Medium 339-339.3, 339 DSM modifiers, and MediaDive Medium 339
+  notes: Moved the family root from strain-specific KOMODO Medium 339.2 to base KOMODO
+    Medium 339 and reclassified DSM-specific submedia as strain-specific variants.
+variant_children:
+- path: data/normalized_yaml/bacterial/wilkins_chalgren_anaerobe_broth.yaml
   relationship: SOURCE_DUPLICATE
+  id: CultureMech:001439
+  name: wilkins_chalgren_anaerobe_broth
+  notes: MediaDive Medium 339 exactly matches the KOMODO Medium 339 WILKINS-CHALGREN
+    ANAEROBE BROTH (Oxoid CM 643) base.
+- path: data/normalized_yaml/bacterial/for_dsm_14204_dsm_14205_dsm_14206_dsm_14207_dsm_14924_dsm_15176_dsm_15243_dsm_15248_dsm_15480_dsm_15481_dsm_15498_dsm_15567_dsm_15692_dsm_17763_and_dsm_22608.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005039
+  name: for_dsm_14204_dsm_14205_dsm_14206_dsm_14207_dsm_14924_dsm_15176_dsm_15243_dsm_15248_dsm_15480_dsm_15481_dsm_15498_dsm_15567_dsm_15692_dsm_17763_and_dsm_22608
+  notes: KOMODO Medium 339.1 applies WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643)
+    for DSM 14204, DSM 14205, DSM 14206, DSM 14207, DSM 14924, DSM 15176, DSM 15243,
+    DSM 15248, DSM 15480, DSM 15481, DSM 15498, DSM 15567, DSM 15692, DSM 17763, and
+    DSM 22608.
+- path: data/normalized_yaml/bacterial/for_dsm_14428.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:005041
   name: for_dsm_14428
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+  notes: KOMODO Medium 339.2 applies WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643)
+    for DSM 14428.
+- path: data/normalized_yaml/bacterial/for_dsm_23669.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005042
+  name: for_dsm_23669
+  notes: KOMODO Medium 339.3 applies WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643)
+    for DSM 23669.
+- path: data/normalized_yaml/bacterial/medium_339_modified_for_dsm_5676.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005043
+  name: medium_339_modified_for_dsm_5676
+  notes: KOMODO Medium 339_5676 applies WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM
+    643) for DSM 5676.
+- path: data/normalized_yaml/bacterial/medium_339_modified_for_dsm_6011.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005044
+  name: medium_339_modified_for_dsm_6011
+  notes: KOMODO Medium 339_6011 applies WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM
+    643) for DSM 6011.
+- path: data/normalized_yaml/bacterial/medium_339_modified_for_dsm_6400.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005045
+  name: medium_339_modified_for_dsm_6400
+  notes: KOMODO Medium 339_6400 applies WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM
+    643) for DSM 6400.
+- path: data/normalized_yaml/bacterial/medium_339_modified_for_dsm_12679.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005036
+  name: medium_339_modified_for_dsm_12679
+  notes: KOMODO Medium 339_12679 applies WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM
+    643) for DSM 12679.
+- path: data/normalized_yaml/bacterial/medium_339_modified_for_dsm_12858.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005037
+  name: medium_339_modified_for_dsm_12858
+  notes: KOMODO Medium 339_12858 applies WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM
+    643) for DSM 12858.
+- path: data/normalized_yaml/bacterial/medium_339_modified_for_dsm_19450.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005038
+  name: medium_339_modified_for_dsm_19450
+  notes: KOMODO Medium 339_19450 applies WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM
+    643) for DSM 19450.
+- path: data/normalized_yaml/bacterial/medium_339_modified_for_dsm_22006.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005040
+  name: medium_339_modified_for_dsm_22006
+  notes: KOMODO Medium 339_22006 applies WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM
+    643) for DSM 22006.

@@ -52,10 +52,32 @@ def test_ingredient_chebi_id_falls_back_to_chebi_term():
     assert _render.ingredient_chebi_id(ing) == "CHEBI:17234"
 
 
-def test_ingredient_display_id_prefers_chebi_then_any_term():
+def test_ingredient_display_id_prefers_chebi_then_culturemech_then_any_term():
     assert _render.ingredient_display_id({"term": {"id": "CHEBI:17234"}}) == "CHEBI:17234"
-    assert _render.ingredient_display_id({"term": {"id": "mediadive.compound:5"}}) == "mediadive.compound:5"
-    assert _render.ingredient_display_id({"preferred_term": "Distilled water"}) == "ing:Distilled water"
+    assert (
+        _render.ingredient_display_id({"culturemech_term": {"id": "CultureMech:003183"}})
+        == "CultureMech:003183"
+    )
+    assert (
+        _render.ingredient_display_id({"term": {"id": "mediadive.compound:5"}})
+        == "mediadive.compound:5"
+    )
+    assert (
+        _render.ingredient_display_id({"preferred_term": "Distilled water"})
+        == "ing:Distilled water"
+    )
+
+
+def test_solution_display_id_prefers_external_then_culturemech_term():
+    assert (
+        _render.solution_display_id({"term": {"id": "mediadive.solution:2227"}})
+        == "mediadive.solution:2227"
+    )
+    assert (
+        _render.solution_display_id({"culturemech_term": {"id": "CultureMech:000037"}})
+        == "CultureMech:000037"
+    )
+    assert _render.solution_display_id({"preferred_term": "Bristol Medium"}) == "sol:Bristol Medium"
 
 
 # ---------------- single-recipe rendering ----------------
@@ -73,13 +95,16 @@ def test_single_recipe_empty_recipe_returns_bare_header(tmp_path):
 
 
 def test_single_recipe_emits_medium_to_ingredient_edges(tmp_path):
-    recipe = _write(tmp_path, {
-        "preferred_term": "Small medium",
-        "ingredients": [
-            {"preferred_term": "Glucose", "term": {"id": "CHEBI:17234"}},
-            {"preferred_term": "Sodium chloride", "term": {"id": "CHEBI:26710"}},
-        ],
-    })
+    recipe = _write(
+        tmp_path,
+        {
+            "preferred_term": "Small medium",
+            "ingredients": [
+                {"preferred_term": "Glucose", "term": {"id": "CHEBI:17234"}},
+                {"preferred_term": "Sodium chloride", "term": {"id": "CHEBI:26710"}},
+            ],
+        },
+    )
     mmd = _render.render_single_recipe(recipe)
     assert "MEDIUM --> CHEBI_17234" in mmd
     assert "MEDIUM --> CHEBI_26710" in mmd
@@ -88,16 +113,21 @@ def test_single_recipe_emits_medium_to_ingredient_edges(tmp_path):
 
 def test_single_recipe_emits_all_three_facet_edges(tmp_path):
     """An ingredient with values in all three facet slots produces one edge per facet."""
-    recipe = _write(tmp_path, {
-        "preferred_term": "Faceted medium",
-        "ingredients": [{
-            "preferred_term": "L-cysteine",
-            "term": {"id": "CHEBI:17561"},
-            "nutritional_roles": ["AMINO_ACID_SOURCE", "SULFUR_SOURCE"],
-            "physicochemical_roles": ["REDUCING_AGENT"],
-            "cellular_metabolic_roles": ["SUBSTRATE"],
-        }],
-    })
+    recipe = _write(
+        tmp_path,
+        {
+            "preferred_term": "Faceted medium",
+            "ingredients": [
+                {
+                    "preferred_term": "L-cysteine",
+                    "term": {"id": "CHEBI:17561"},
+                    "nutritional_roles": ["AMINO_ACID_SOURCE", "SULFUR_SOURCE"],
+                    "physicochemical_roles": ["REDUCING_AGENT"],
+                    "cellular_metabolic_roles": ["SUBSTRATE"],
+                }
+            ],
+        },
+    )
     mmd = _render.render_single_recipe(recipe)
     # Facet-value nodes present.
     assert "AMINO_ACID_SOURCE" in mmd
@@ -112,15 +142,24 @@ def test_single_recipe_emits_all_three_facet_edges(tmp_path):
 
 def test_single_recipe_role_value_nodes_dedup_across_ingredients(tmp_path):
     """Two ingredients sharing a facet value should point at the SAME role-value node."""
-    recipe = _write(tmp_path, {
-        "preferred_term": "Dedup medium",
-        "ingredients": [
-            {"preferred_term": "Glucose", "term": {"id": "CHEBI:17234"},
-             "nutritional_roles": ["CARBON_SOURCE", "ENERGY_SOURCE"]},
-            {"preferred_term": "Methanol", "term": {"id": "CHEBI:17790"},
-             "nutritional_roles": ["CARBON_SOURCE", "ENERGY_SOURCE"]},
-        ],
-    })
+    recipe = _write(
+        tmp_path,
+        {
+            "preferred_term": "Dedup medium",
+            "ingredients": [
+                {
+                    "preferred_term": "Glucose",
+                    "term": {"id": "CHEBI:17234"},
+                    "nutritional_roles": ["CARBON_SOURCE", "ENERGY_SOURCE"],
+                },
+                {
+                    "preferred_term": "Methanol",
+                    "term": {"id": "CHEBI:17790"},
+                    "nutritional_roles": ["CARBON_SOURCE", "ENERGY_SOURCE"],
+                },
+            ],
+        },
+    )
     mmd = _render.render_single_recipe(recipe)
     # Node declaration for CARBON_SOURCE / ENERGY_SOURCE should appear exactly once each.
     assert mmd.count("CARBON_SOURCE\\n[nut]") == 1  # (both an occurrence and a label appearance)
@@ -131,13 +170,19 @@ def test_single_recipe_role_value_nodes_dedup_across_ingredients(tmp_path):
 
 
 def test_single_recipe_role_curie_escape_hatch(tmp_path):
-    recipe = _write(tmp_path, {
-        "preferred_term": "Curie medium",
-        "ingredients": [{
-            "preferred_term": "Something", "term": {"id": "CHEBI:99999"},
-            "role_curie": ["CHEBI:50906", "METPO:2000006"],
-        }],
-    })
+    recipe = _write(
+        tmp_path,
+        {
+            "preferred_term": "Curie medium",
+            "ingredients": [
+                {
+                    "preferred_term": "Something",
+                    "term": {"id": "CHEBI:99999"},
+                    "role_curie": ["CHEBI:50906", "METPO:2000006"],
+                }
+            ],
+        },
+    )
     mmd = _render.render_single_recipe(recipe)
     assert "|curie|" in mmd
     assert "CHEBI:50906" in mmd
@@ -146,15 +191,20 @@ def test_single_recipe_role_curie_escape_hatch(tmp_path):
 
 
 def test_single_recipe_target_organisms_and_community_roles(tmp_path):
-    recipe = _write(tmp_path, {
-        "preferred_term": "Community medium",
-        "ingredients": [{"preferred_term": "Glucose", "term": {"id": "CHEBI:17234"}}],
-        "target_organisms": [{
-            "preferred_term": "E. coli",
-            "term": {"id": "NCBITaxon:562"},
-            "community_role": ["PRIMARY_DEGRADER"],
-        }],
-    })
+    recipe = _write(
+        tmp_path,
+        {
+            "preferred_term": "Community medium",
+            "ingredients": [{"preferred_term": "Glucose", "term": {"id": "CHEBI:17234"}}],
+            "target_organisms": [
+                {
+                    "preferred_term": "E. coli",
+                    "term": {"id": "NCBITaxon:562"},
+                    "community_role": ["PRIMARY_DEGRADER"],
+                }
+            ],
+        },
+    )
     mmd = _render.render_single_recipe(recipe)
     assert "NCBITaxon_562" in mmd
     assert "MEDIUM ==> NCBITaxon_562" in mmd
@@ -163,19 +213,30 @@ def test_single_recipe_target_organisms_and_community_roles(tmp_path):
 
 
 def test_single_recipe_nutrient_overrides(tmp_path):
-    recipe = _write(tmp_path, {
-        "preferred_term": "Override medium",
-        "ingredients": [],
-        "target_organisms": [{
-            "preferred_term": "Test org",
-            "term": {"id": "NCBITaxon:1"},
-            "growth_metrics": [{
-                "nutrient_overrides": [
-                    {"role": "CARBON_SOURCE", "source": "succinate", "is_sole_source": True},
-                ],
-            }],
-        }],
-    })
+    recipe = _write(
+        tmp_path,
+        {
+            "preferred_term": "Override medium",
+            "ingredients": [],
+            "target_organisms": [
+                {
+                    "preferred_term": "Test org",
+                    "term": {"id": "NCBITaxon:1"},
+                    "growth_metrics": [
+                        {
+                            "nutrient_overrides": [
+                                {
+                                    "role": "CARBON_SOURCE",
+                                    "source": "succinate",
+                                    "is_sole_source": True,
+                                },
+                            ],
+                        }
+                    ],
+                }
+            ],
+        },
+    )
     mmd = _render.render_single_recipe(recipe)
     assert "|nut-override|" in mmd
     assert "succinate (sole)" in mmd
@@ -183,18 +244,23 @@ def test_single_recipe_nutrient_overrides(tmp_path):
 
 
 def test_single_recipe_solutions_produce_solution_layer(tmp_path):
-    recipe = _write(tmp_path, {
-        "preferred_term": "Solution medium",
-        "ingredients": [],
-        "solutions": [{
-            "preferred_term": "Vitamin mix",
-            "term": {"id": "mediadive.solution:2227"},
-            "composition": [
-                {"preferred_term": "Biotin", "term": {"id": "CHEBI:15956"}},
-                {"preferred_term": "Folic acid", "term": {"id": "CHEBI:27470"}},
+    recipe = _write(
+        tmp_path,
+        {
+            "preferred_term": "Solution medium",
+            "ingredients": [],
+            "solutions": [
+                {
+                    "preferred_term": "Vitamin mix",
+                    "term": {"id": "mediadive.solution:2227"},
+                    "composition": [
+                        {"preferred_term": "Biotin", "term": {"id": "CHEBI:15956"}},
+                        {"preferred_term": "Folic acid", "term": {"id": "CHEBI:27470"}},
+                    ],
+                }
             ],
-        }],
-    })
+        },
+    )
     mmd = _render.render_single_recipe(recipe)
     # Solution node styling.
     assert ":::solution" in mmd
@@ -204,27 +270,95 @@ def test_single_recipe_solutions_produce_solution_layer(tmp_path):
     assert "mediadive_solution_2227 --> CHEBI_27470" in mmd
 
 
+def test_single_recipe_solutions_recurse_into_nested_solutions(tmp_path):
+    recipe = _write(
+        tmp_path,
+        {
+            "preferred_term": "Nested solution medium",
+            "ingredients": [],
+            "solutions": [
+                {
+                    "preferred_term": "Vitamin mix",
+                    "term": {"id": "mediadive.solution:2227"},
+                    "solutions": [
+                        {
+                            "preferred_term": "Trace mix",
+                            "term": {"id": "mediadive.solution:2228"},
+                            "composition": [
+                                {"preferred_term": "Zinc chloride", "term": {"id": "CHEBI:49976"}},
+                            ],
+                        }
+                    ],
+                }
+            ],
+        },
+    )
+
+    mmd = _render.render_single_recipe(recipe)
+
+    assert "MEDIUM -.-> mediadive_solution_2227" in mmd
+    assert "mediadive_solution_2227 -.-> mediadive_solution_2228" in mmd
+    assert "mediadive_solution_2228 --> CHEBI_49976" in mmd
+
+
+def test_single_recipe_emits_prepared_solution_nodes_without_inline_composition(tmp_path):
+    recipe = _write(
+        tmp_path,
+        {
+            "preferred_term": "Prepared solution medium",
+            "ingredients": [],
+            "solutions": [
+                {
+                    "preferred_term": "Bristol Medium",
+                    "culturemech_term": {"id": "CultureMech:000037", "label": "Bristol Medium"},
+                },
+                {
+                    "preferred_term": "Soilwater: GR+ Medium",
+                    "culturemech_term": {
+                        "id": "CultureMech:000225",
+                        "label": "Soilwater: GR+ Medium",
+                    },
+                },
+            ],
+        },
+    )
+
+    mmd = _render.render_single_recipe(recipe)
+
+    assert 'CultureMech_000037(["`Bristol Medium\\n(CultureMech:000037)`"]):::solution' in mmd
+    assert "MEDIUM -.-> CultureMech_000037" in mmd
+    assert (
+        'CultureMech_000225(["`Soilwater: GR+ Medium\\n(CultureMech:000225)`"]):::solution' in mmd
+    )
+    assert "MEDIUM -.-> CultureMech_000225" in mmd
+
+
 def test_single_recipe_max_ingredients_cap_emits_sentinel(tmp_path):
     ingredients = [
-        {"preferred_term": f"ing_{i}", "term": {"id": f"CHEBI:{100 + i}"}}
-        for i in range(50)
+        {"preferred_term": f"ing_{i}", "term": {"id": f"CHEBI:{100 + i}"}} for i in range(50)
     ]
     recipe = _write(tmp_path, {"preferred_term": "Big medium", "ingredients": ingredients})
     mmd = _render.render_single_recipe(recipe, max_ingredients=10)
     # 10 ingredients rendered, 40 truncated.
     assert mmd.count(":::ingredient") == 10
-    assert '...40 more ingredients (cap: 10)' in mmd
+    assert "...40 more ingredients (cap: 10)" in mmd
     assert ":::truncated" in mmd
 
 
 def test_single_recipe_include_notes_flag(tmp_path):
-    recipe = _write(tmp_path, {
-        "preferred_term": "Noted medium",
-        "ingredients": [{
-            "preferred_term": "X", "term": {"id": "CHEBI:1"},
-            "notes": "Role: Carbon source; From upstream MediaDive record 5",
-        }],
-    })
+    recipe = _write(
+        tmp_path,
+        {
+            "preferred_term": "Noted medium",
+            "ingredients": [
+                {
+                    "preferred_term": "X",
+                    "term": {"id": "CHEBI:1"},
+                    "notes": "Role: Carbon source; From upstream MediaDive record 5",
+                }
+            ],
+        },
+    )
     without = _render.render_single_recipe(recipe, include_notes=False)
     assert "Role: Carbon source" not in without
     with_notes = _render.render_single_recipe(recipe, include_notes=True)
@@ -244,12 +378,16 @@ def test_single_recipe_style_block_always_emitted(tmp_path):
 
 def test_rollup_greenfield_corpus_reports_no_roles(tmp_path):
     """A corpus with no faceted role values renders an empty-state message, not a crash."""
-    (tmp_path / "recipe.yaml").write_text(yaml.safe_dump({
-        "preferred_term": "R",
-        "ingredients": [
-            {"preferred_term": "Glucose", "term": {"id": "CHEBI:17234"}},
-        ],
-    }))
+    (tmp_path / "recipe.yaml").write_text(
+        yaml.safe_dump(
+            {
+                "preferred_term": "R",
+                "ingredients": [
+                    {"preferred_term": "Glucose", "term": {"id": "CHEBI:17234"}},
+                ],
+            }
+        )
+    )
     mmd = _render.render_rollup(tmp_path)
     assert "Corpus role roll-up" in mmd
     assert "No faceted role assignments found yet" in mmd
@@ -257,20 +395,34 @@ def test_rollup_greenfield_corpus_reports_no_roles(tmp_path):
 
 def test_rollup_aggregates_across_recipes(tmp_path):
     """Two recipes sharing CARBON_SOURCE on glucose → count == 2."""
-    (tmp_path / "r1.yaml").write_text(yaml.safe_dump({
-        "preferred_term": "R1",
-        "ingredients": [{
-            "preferred_term": "Glucose", "term": {"id": "CHEBI:17234"},
-            "nutritional_roles": ["CARBON_SOURCE"],
-        }],
-    }))
-    (tmp_path / "r2.yaml").write_text(yaml.safe_dump({
-        "preferred_term": "R2",
-        "ingredients": [{
-            "preferred_term": "Glucose", "term": {"id": "CHEBI:17234"},
-            "nutritional_roles": ["CARBON_SOURCE"],
-        }],
-    }))
+    (tmp_path / "r1.yaml").write_text(
+        yaml.safe_dump(
+            {
+                "preferred_term": "R1",
+                "ingredients": [
+                    {
+                        "preferred_term": "Glucose",
+                        "term": {"id": "CHEBI:17234"},
+                        "nutritional_roles": ["CARBON_SOURCE"],
+                    }
+                ],
+            }
+        )
+    )
+    (tmp_path / "r2.yaml").write_text(
+        yaml.safe_dump(
+            {
+                "preferred_term": "R2",
+                "ingredients": [
+                    {
+                        "preferred_term": "Glucose",
+                        "term": {"id": "CHEBI:17234"},
+                        "nutritional_roles": ["CARBON_SOURCE"],
+                    }
+                ],
+            }
+        )
+    )
     mmd = _render.render_rollup(tmp_path)
     assert "CHEBI:17234" in mmd
     assert "CARBON_SOURCE" in mmd
@@ -288,10 +440,13 @@ def test_cli_requires_target_or_yaml_dir(capsys):
 
 
 def test_cli_single_stdout(tmp_path, capsys):
-    recipe_yaml = _write(tmp_path, {
-        "preferred_term": "CLI medium",
-        "ingredients": [{"preferred_term": "X", "term": {"id": "CHEBI:1"}}],
-    })
+    recipe_yaml = _write(
+        tmp_path,
+        {
+            "preferred_term": "CLI medium",
+            "ingredients": [{"preferred_term": "X", "term": {"id": "CHEBI:1"}}],
+        },
+    )
     rc = _render.main(["--target", str(recipe_yaml), "--stdout"])
     assert rc == 0
     captured = capsys.readouterr()
@@ -300,12 +455,22 @@ def test_cli_single_stdout(tmp_path, capsys):
 
 
 def test_cli_batch_writes_files(tmp_path, capsys):
-    (tmp_path / "a.yaml").write_text(yaml.safe_dump({
-        "preferred_term": "A", "ingredients": [{"preferred_term": "x", "term": {"id": "CHEBI:1"}}],
-    }))
-    (tmp_path / "b.yaml").write_text(yaml.safe_dump({
-        "preferred_term": "B", "ingredients": [{"preferred_term": "y", "term": {"id": "CHEBI:2"}}],
-    }))
+    (tmp_path / "a.yaml").write_text(
+        yaml.safe_dump(
+            {
+                "preferred_term": "A",
+                "ingredients": [{"preferred_term": "x", "term": {"id": "CHEBI:1"}}],
+            }
+        )
+    )
+    (tmp_path / "b.yaml").write_text(
+        yaml.safe_dump(
+            {
+                "preferred_term": "B",
+                "ingredients": [{"preferred_term": "y", "term": {"id": "CHEBI:2"}}],
+            }
+        )
+    )
     out_dir = tmp_path / "out"
     rc = _render.main(["--yaml-dir", str(tmp_path), "--out-dir", str(out_dir), "--mode", "batch"])
     assert rc == 0

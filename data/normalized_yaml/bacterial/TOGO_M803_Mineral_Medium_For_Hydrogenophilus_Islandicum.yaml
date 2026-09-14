@@ -6,53 +6,30 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: Sol. 1
-  concentration:
-    value: '17.6'
-    unit: G_PER_L
-- preferred_term: Sol. 2
-  concentration:
-    value: '2.4'
-    unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '880'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
-    value: '2.3'
+    value: '2.30'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
+  source: JCM Medium 774
+  notes: JCM Medium 774 prints this component.
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+- preferred_term: Na2HPO4 x 6 H2O
+  concentration:
+    value: '2.9'
+    unit: G_PER_L
+  source: JCM Medium 774
+  notes: JCM Medium 774 prints this component.
 - preferred_term: NH4Cl
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: JCM Medium 774
+  notes: JCM Medium 774 prints this component.
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -63,55 +40,46 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
-    compound'
+  source: JCM Medium 774
+  notes: JCM Medium 774 prints this component.
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-- preferred_term: Na2HPO4・6H2O
+- preferred_term: CaCl2 x 2 H2O
   concentration:
-    value: '2.9'
+    value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  source: JCM Medium 774
+  notes: JCM Medium 774 prints this component.
   term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-- preferred_term: 0.1% Fe(NH4) citrate
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Distilled water
   concentration:
-    value: '0.4'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
-    Solution'
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
+    value: '880.0'
+    unit: ML_PER_L
+  source: JCM Medium 774
+  notes: JCM Medium 774 lists 880.0 ml_per_l distilled water.
   term:
-    id: CHEBI:16526
-    label: carbon dioxide
-- preferred_term: Hydrogen gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-  term:
-    id: CHEBI:18276
-    label: dihydrogen
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M803
   term:
     id: TOGO:M803
     label: Mineral Medium For Hydrogenophilus Islandicum
-notes: 'Source: https://togomedium.org/medium/M803
-
-  Original source: JCM - JCM_M774
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=774'
+notes: 'TOGO M803 mirrors JCM Medium 774: Mineral Medium for Hydrogenophilus islandicum
+  combines the basal salts, SL-6 trace elements, autoclaved magnesium sulfate and
+  ferric ammonium citrate stocks, and H2-CO2 pressurization.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -163,19 +131,195 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_more_wrappers_score40.py
+  action: RESOLVED_JCM_MORE_SCORE40_GRAPH
+  changes: Resolved additional score-40 JCM wrapper recipe graph
+  source: https://togomedium.org/medium/M803; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=774;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=167
+  notes: 'TOGO M803 mirrors JCM Medium 774: Mineral Medium for Hydrogenophilus islandicum
+    combines the basal salts, SL-6 trace elements, autoclaved magnesium sulfate and
+    ferric ammonium citrate stocks, and H2-CO2 pressurization.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_more_wrappers_score40.py
+  action: LINKED_JCM_MORE_SCORE40_CHILDREN
+  changes: Linked additional score-40 JCM wrapper child
+  source: bacterial/TOGO_M803_Mineral_Medium_For_Hydrogenophilus_Islandicum.yaml;
+    bacterial/TOGO_M804_Mineral_Medium_For_Thiomonas_Islandicum.yaml
+  notes: JCM Medium 775 adjusts JCM Medium 774 to pH 4.0.
 solutions:
-- preferred_term: SL-6 trace element solution (see Medium [M158])
-  composition: []
-  notes: Cross-reference to Medium M158
+- preferred_term: SL-6 trace element solution
   concentration:
-    value: '5'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: 0.5% MgSO4・7H2O solution
-  composition: []
+    value: '5.0'
+    unit: ML_PER_L
+  notes: JCM Medium 774 adds 5.0 mL/L SL-6 trace element solution from JCM Medium
+    167.
+  composition:
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: JCM Medium 167
+    notes: JCM Medium 167 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '0.03'
+      unit: G_PER_L
+    source: JCM Medium 167
+    notes: JCM Medium 167 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.3'
+      unit: G_PER_L
+    source: JCM Medium 167
+    notes: JCM Medium 167 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    source: JCM Medium 167
+    notes: JCM Medium 167 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+  - preferred_term: CuCl2 x 2 H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: JCM Medium 167
+    notes: JCM Medium 167 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+  - preferred_term: NiCl2 x 6 H2O
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    source: JCM Medium 167
+    notes: JCM Medium 167 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:34887
+      label: nickel dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:34887
+      label: nickel dichloride
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.03'
+      unit: G_PER_L
+    source: JCM Medium 167
+    notes: JCM Medium 167 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    source: JCM Medium 167
+    notes: JCM Medium 167 lists 1.0 l distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  preparation_notes: Adjust pH to 3.6.
+- preferred_term: 0.5% MgSO4 x 7 H2O solution
   concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
-    component'
-  name: Unknown solution
+    value: '100.0'
+    unit: ML_PER_L
+  notes: JCM Medium 774 adds 100.0 mL/L 0.5% MgSO4 x 7 H2O solution.
+  composition:
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '0.5'
+      unit: PERCENT_W_V
+    source: JCM Medium 774
+    notes: JCM Medium 774 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  preparation_notes: Autoclave before addition.
+- preferred_term: 0.1% Fe(NH4) citrate solution
+  concentration:
+    value: '20.0'
+    unit: ML_PER_L
+  notes: JCM Medium 774 adds 20.0 mL/L 0.1% Fe(NH4) citrate solution.
+  composition:
+  - preferred_term: Fe(NH4) citrate
+    concentration:
+      value: '0.1'
+      unit: PERCENT_W_V
+    source: JCM Medium 774
+    notes: JCM Medium 774 prints this component in its solution subrecipe.
+    term:
+      id: CHEBI:31604
+      label: ferric ammonium citrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31604
+      label: ferric ammonium citrate
+  preparation_notes: Autoclave before addition.
+ph_value: 6.8
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix Mineral Medium for Hydrogenophilus islandicum components thoroughly
+    and adjust pH to 6.8.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the basal medium.
+- step_number: 3
+  action: MIX
+  description: After cooling, add autoclaved 0.5% MgSO4 x 7 H2O and 0.1% Fe(NH4) citrate
+    solutions.
+- step_number: 4
+  action: ALIQUOT
+  description: Aseptically distribute the medium into culture vessels, seal with butyl
+    rubber stoppers, and pressurize to 100 kPa with H2-CO2 (4:1, v/v).
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M803
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=774
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=167
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M804_Mineral_Medium_For_Thiomonas_Islandicum.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:010216
+  name: mineral_medium_for_thiomonas_islandicum
+  notes: JCM Medium 775 adjusts JCM Medium 774 to pH 4.0.

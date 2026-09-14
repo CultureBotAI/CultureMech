@@ -14,41 +14,83 @@ notes: 'Source: KOMODO ModelSEED | ID: 849 | DSMZ Medium: 849 (mediadive.medium:
   | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: DSMZ Medium 849
+  notes: DSMZ Medium 849 lists 5.0 g glucose.
   term:
     id: CHEBI:17234
     label: glucose
-  concentration:
-    value: '5'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
 - preferred_term: Yeast extract
   concentration:
-    value: '3'
+    value: '3.0'
     unit: G_PER_L
+  source: DSMZ Medium 849
+  notes: DSMZ Medium 849 lists 3.0 g yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Peptone
   concentration:
-    value: '4'
+    value: '4.0'
     unit: G_PER_L
+  source: DSMZ Medium 849
+  notes: DSMZ Medium 849 lists 4.0 g peptone.
+  term:
+    id: MICRO:0000178
+    label: peptone
 - preferred_term: Absolute ethanol
   concentration:
-    value: '30'
-    unit: G_PER_L
+    value: '30.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 849
+  notes: DSMZ Medium 849 lists 30.0 ml absolute ethanol.
+  term:
+    id: CHEBI:16236
+    label: ethanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
+    label: ethanol
 - preferred_term: Glacial acetic acid
   concentration:
-    value: '30'
-    unit: G_PER_L
+    value: '30.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 849
+  notes: DSMZ Medium 849 lists 30.0 ml glacial acetic acid.
+  term:
+    id: CHEBI:15366
+    label: acetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15366
+    label: acetic acid
 - preferred_term: Agar
+  concentration:
+    value: '9.0'
+    unit: G_PER_L
+  source: DSMZ Medium 849
+  notes: DSMZ Medium 849 lists 9.0 g agar.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '9'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '940.0'
+    unit: ML_PER_L
+  source: DSMZ Medium 849
+  notes: DSMZ Medium 849 lists 940.0 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -78,6 +120,13 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_dsmz_849_ae_score15.py
+  action: RESOLVED_DSMZ_849_AE_SCORE15
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium849.pdf
+  notes: DSMZ Medium 849 lists AE medium with glucose, yeast extract, peptone, 30.0
+    ml absolute ethanol, 30.0 ml glacial acetic acid, agar, and 940.0 ml distilled
+    water.
 parent_media:
   path: data/normalized_yaml/bacterial/ae_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -89,3 +138,26 @@ variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same ingredient and concentration signature; KOMODO record copied from the matching
   DSMZ medium source.
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave the medium without the addition of glacial acetic acid and
+    absolute ethanol.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Sterilize glacial acetic acid and absolute ethanol by filtration through
+    Teflon filters or by autoclaving in completely closed screw-cap glass bottles
+    sealed with Teflon-coated septa.
+- step_number: 3
+  action: MIX
+  description: Add sterile glacial acetic acid and absolute ethanol.
+- step_number: 4
+  action: MIX
+  description: Incubate plates in sealed containers to keep humidity high above 90%.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium849.pdf

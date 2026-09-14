@@ -10,29 +10,45 @@ media_term:
   term:
     id: mediadive.medium:J730
     label: RYE-BRAN MRS
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=730'
+notes: MediaDive JCM J730 and the merged TOGO M753 copy list Rye-Bran MRS as Lactobacilli
+  MRS broth in a medium containing 900 mL/L Rye-bran extract and 100 mL/L distilled
+  water; the Rye-bran extract contains rye-bran, malted wheat meal, trypsin, and distilled
+  water.
 ingredients:
 - preferred_term: Lactobacilli MRS broth
   concentration:
     value: '55'
     unit: G_PER_L
-- preferred_term: Rye-bran
+  source: MediaDive JCM J730 main solution
+  notes: MediaDive solution 4656 lists 55 g/L Lactobacilli MRS broth.
+  culturemech_term:
+    id: CultureMech:009017
+    label: Lactobacilli MRS Broth
+- preferred_term: Distilled water
   concentration:
-    value: '40'
-    unit: G_PER_L
-- preferred_term: Malted wheat meal
-  concentration:
-    value: '2'
-    unit: G_PER_L
-- preferred_term: Trypsin
-  concentration:
-    value: '0.8'
-    unit: G_PER_L
+    value: '100.0'
+    unit: ML_PER_L
+  source: TOGO M753
+  notes: TOGO M753 lists distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Mix components and incubate at 50C for 24 hr. Clarify the resulting
-    turbid liquid by centrifugation (500 x g, 15 min) followed by paper-filtration.
+  description: Prepare Rye-Bran MRS from Lactobacilli MRS broth, 900 mL Rye-bran extract,
+    and 100 mL distilled water.
+- step_number: 2
+  action: HEAT
+  description: For the Rye-bran extract, mix the extract components and incubate at
+    50 C for 24 h.
+- step_number: 3
+  action: FILTER
+  description: Clarify the Rye-bran extract by centrifugation at 500 x g for 15 min
+    followed by paper filtration.
 applications:
 - Microbial cultivation
 curation_history:
@@ -48,3 +64,72 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "RYE-BRAN MRS" to "rye_bran_mrs" for consistent matching
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_jcm_rye_bran_mrs.py
+  action: RESOLVED_JCM_J730_RYE_BRAN_MRS_GRAPH
+  changes: Resolved JCM J730 Rye-Bran MRS solution graph
+  source: mediadive.medium:J730; mediadive.solution:4656; mediadive.solution:4657;
+    TOGO:M753
+  notes: MediaDive JCM J730 and the merged TOGO M753 copy list Rye-Bran MRS as Lactobacilli
+    MRS broth in a medium containing 900 mL/L Rye-bran extract and 100 mL/L distilled
+    water; the Rye-bran extract contains rye-bran, malted wheat meal, trypsin, and
+    distilled water.
+solutions:
+- preferred_term: Rye-bran extract
+  concentration:
+    value: '900.0'
+    unit: ML_PER_L
+  notes: The merged TOGO M753 copy lists 900 mL Rye-bran extract.
+  composition:
+  - preferred_term: Rye-bran
+    concentration:
+      value: '40'
+      unit: G_PER_L
+    source: MediaDive JCM J730 Rye-bran extract
+    notes: MediaDive solution 4657 lists 40 g/L rye-bran.
+  - preferred_term: Malted wheat meal
+    concentration:
+      value: '2'
+      unit: G_PER_L
+    source: MediaDive JCM J730 Rye-bran extract
+    notes: MediaDive solution 4657 lists 2 g/L malted wheat meal.
+  - preferred_term: Trypsin
+    concentration:
+      value: '0.8'
+      unit: G_PER_L
+    source: MediaDive JCM J730 Rye-bran extract
+    notes: MediaDive solution 4657 lists 0.8 g/L trypsin.
+    term:
+      id: CHEBI:9765
+      label: Trypsin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:9765
+      label: Trypsin
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    source: MediaDive JCM J730 Rye-bran extract
+    notes: MediaDive JCM J730 Rye-bran extract lists distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: mediadive.medium:J730
+- reference: mediadive.solution:4656
+- reference: mediadive.solution:4657
+- reference: TOGO:M753
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M753_RYE-Bran_MRS.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010159
+  name: rye_bran_mrs
+  notes: TOGO M753 imports the same JCM Medium 730 Rye-Bran MRS formulation represented
+    by MediaDive J730.

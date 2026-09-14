@@ -30,8 +30,8 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Amphotericin B
   term:
-    id: CHEBI:2682
-    label: amphotericin B
+    id: mediadive.compound:2063
+    label: Amphotericin B
   concentration:
     value: '100'
     unit: G_PER_L

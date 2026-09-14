@@ -11,22 +11,55 @@ media_term:
   term:
     id: mediadive.medium:J191
     label: PBY MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=191'
+notes: JCM Medium 191 contains 5.0 g Bacto peptone (BD-Difco), 3.0 g beef extract
+  (BD-Difco), 1.0 g yeast extract (BD-Difco), and 1.0 L distilled water, adjusted
+  to pH 7.0.
 ingredients:
 - preferred_term: Bacto peptone
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
+  source: JCM Medium 191
+  notes: JCM Medium 191 lists 5.0 g Bacto peptone (BD-Difco).
+  term:
+    id: MICRO:0000178
+    label: Bacto peptone
 - preferred_term: Beef extract
   concentration:
-    value: '3'
+    value: '3.0'
     unit: G_PER_L
+  source: JCM Medium 191
+  notes: JCM Medium 191 lists 3.0 g Beef extract (BD-Difco).
+  term:
+    id: FOODON:03302088
+    label: Beef extract
 - preferred_term: Yeast extract
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
+  source: JCM Medium 191
+  notes: JCM Medium 191 lists 1.0 g Yeast extract (BD-Difco).
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: JCM Medium 191
+  notes: JCM Medium 191 lists 1000 ml distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Mix Bacto peptone, beef extract, yeast extract, and 1.0 L distilled
+    water.
+- step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0.
 applications:
@@ -44,3 +77,15 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PBY MEDIUM" to "pby_medium" for consistent matching
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_official_simple_score20.py
+  action: RESOLVED_OFFICIAL_SIMPLE_SCORE20
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=191
+  notes: JCM Medium 191 contains 5.0 g Bacto peptone (BD-Difco), 3.0 g beef extract
+    (BD-Difco), 1.0 g yeast extract (BD-Difco), and 1.0 L distilled water, adjusted
+    to pH 7.0.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=191

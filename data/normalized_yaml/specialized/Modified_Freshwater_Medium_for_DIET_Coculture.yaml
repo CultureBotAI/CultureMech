@@ -66,6 +66,9 @@ source_data:
       ethanol to methane
     explanation: Describes ethanol conversion to methane in defined coculture using
       specialized medium
+sources:
+- database: CommunityMech
+  database_id: CommunityMech:000032
 curation_history:
 - timestamp: '2026-03-15T00:15:00.415624Z'
   curator: communitymech-importer-v1.0
@@ -91,6 +94,13 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_communitymech_sources_score10_batch10.py
+  action: ADDED_COMMUNITYMECH_STRUCTURED_SOURCES_BATCH10
+  changes: Added structured CommunityMech sources
+  source: source_data.community_ids
+  notes: Promoted CommunityMech upstream IDs into sources[] for source-provenance
+    scoring.
 source_environment:
 - preferred_term: sediment
   term:

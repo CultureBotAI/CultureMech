@@ -313,13 +313,21 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-ph_value: 6.9
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_507_carboxydothermus_score10.py
+  action: RESOLVED_KOMODO_507_CARBOXYDOTHERMUS_TOPOLOGY
+  changes: Linked under KOMODO Medium 507 as STRAIN_SPECIFIC_VARIANT
+  source: KOMODO Medium 507.3
+  notes: KOMODO Medium 507.3 applies KOMODO Medium 507 to DSM 18923.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_507_CARBOXYDOTHERMUS_medium.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:005708
   name: carboxydothermus_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 507.3 applies KOMODO Medium 507 to DSM 18923.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 507.3 applies KOMODO Medium 507 to DSM 18923.
+ph_value: 6.9
+data_quality_flags:
+- ingredients_curated

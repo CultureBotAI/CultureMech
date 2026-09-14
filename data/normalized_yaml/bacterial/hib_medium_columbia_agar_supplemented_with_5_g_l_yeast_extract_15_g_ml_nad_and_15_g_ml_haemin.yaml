@@ -7,40 +7,60 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
+- preferred_term: Columbia agar
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  source: TOGO M2189
+  notes: TOGO M2189 lists 1.0 L Columbia agar; this commercial agar base is retained
+    as an opaque complex component.
 - preferred_term: Yeast extract
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: TOGO M2189
+  notes: TOGO M2189 lists 5.0 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: NAD
+  concentration:
+    value: '15.0'
+    unit: MG_PER_L
+  source: TOGO M2189
+  notes: TOGO M2189 lists 15 ug/ml NAD, equivalent to 15.0 mg/L.
+  term:
+    id: CHEBI:15846
+    label: NAD(+)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15846
+    label: NAD(+)
 - preferred_term: Haemin
   concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Simple component, Defined component, Organic
-    compound'
+    value: '15.0'
+    unit: MG_PER_L
+  source: TOGO M2189
+  notes: TOGO M2189 lists 15 ug/ml haemin, equivalent to 15.0 mg/L.
   term:
     id: CHEBI:50385
     label: hemin
   mediaingredientmech_chebi_term:
     id: CHEBI:50385
     label: hemin
-- preferred_term: NAD
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
-    compound'
-- preferred_term: Columbia agar
-  concentration:
-    value: '1'
-    unit: G_PER_L
 media_term:
   preferred_term: TOGO Medium M2189
   term:
     id: TOGO:M2189
     label: Hib medium (Columbia agar supplemented with 5 g/l yeast extract, 15 μg/ml
       NAD and 15 μg/ml haemin)
-notes: 'Source: https://togomedium.org/medium/M2189'
+notes: TOGO M2189 Hib medium supplements 1.0 L Columbia agar with 5.0 g/L yeast extract,
+  15.0 mg/L NAD, and 15.0 mg/L haemin. The source does not disclose the Columbia agar
+  base formulation.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Supplement 1.0 L Columbia agar with 5.0 g/L yeast extract, 15.0 mg/L
+    NAD, and 15.0 mg/L haemin.
 applications:
 - Microbial cultivation
 curation_history:
@@ -72,3 +92,16 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m2189_hib_score15.py
+  action: RESOLVED_TOGO_M2189_HIB_SCORE15
+  source: https://togomedium.org/medium/M2189
+  notes: Converted 15 ug/ml NAD and haemin to 15.0 mg/L, represented Columbia agar
+    as an opaque 1.0 L commercial base, grounded the disclosed yeast extract/NAD/haemin
+    components, and retained Columbia agar as an intentionally unmapped component.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M2189

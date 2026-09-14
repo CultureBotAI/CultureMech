@@ -18,26 +18,32 @@ ingredients:
   concentration:
     value: '20.0'
     unit: G_PER_L
+  source: JCM Medium 1392
+  notes: JCM Medium 1392 lists 20.0 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
-- preferred_term: MgCl2·6H2O
+- preferred_term: MgCl2 x 6H2O
   concentration:
     value: '3.0'
     unit: G_PER_L
+  source: JCM Medium 1392
+  notes: JCM Medium 1392 lists 3.0 g/L MgCl2 x 6H2O.
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-- preferred_term: CaCl2·2H2O
+- preferred_term: CaCl2 x 2H2O
   concentration:
     value: '0.15'
     unit: G_PER_L
+  source: JCM Medium 1392
+  notes: JCM Medium 1392 lists 0.15 g/L CaCl2 x 2H2O.
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -48,6 +54,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  source: JCM Medium 1392
+  notes: JCM Medium 1392 lists 0.25 g/L NH4Cl.
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -58,20 +66,20 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  source: JCM Medium 1392
+  notes: JCM Medium 1392 lists 0.2 g/L KH2PO4.
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
-- preferred_term: Trace element solution (see Medium No. 439 )
-  concentration:
-    value: '1.0'
-    unit: ML_PER_L
 - preferred_term: Resazurin
   concentration:
     value: '1.0'
     unit: MG_PER_L
+  source: JCM Medium 1392
+  notes: JCM Medium 1392 lists 1.0 mg/L Resazurin.
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -82,40 +90,99 @@ ingredients:
   concentration:
     value: '950.0'
     unit: ML_PER_L
+  source: JCM Medium 1392
+  notes: JCM Medium 1392 lists 950.0 ml/L Distilled water.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: Selenite-tungstate solution (see Medium No. 431 )
+solutions:
+- preferred_term: Trace element solution (JCM Medium 439)
   concentration:
     value: '1.0'
     unit: ML_PER_L
+  source: JCM Medium 1392 / JCM Medium 439
+  notes: JCM Medium 1392 adds 1.0 ml/L Trace element solution.
+- preferred_term: Selenite-tungstate solution (JCM Medium 431)
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  source: JCM Medium 1392 / JCM Medium 431
+  notes: JCM Medium 1392 adds 1.0 ml/L Selenite-tungstate solution.
 - preferred_term: 8% NaHCO3 solution
   concentration:
     value: '50.0'
     unit: ML_PER_L
-- preferred_term: Vitamin solution (see Medium No. 403 )
+  source: JCM Medium 1392
+  notes: JCM Medium 1392 adds 50.0 ml/L 8% NaHCO3 solution.
+  composition:
+  - preferred_term: NaHCO3
+    concentration:
+      value: '80.0'
+      unit: G_PER_L
+    source: JCM Medium 1392
+    notes: JCM Medium 1392 lists 80.0 g/L NaHCO3.
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+- preferred_term: Vitamin solution (JCM Medium 403)
   concentration:
     value: '1.0'
     unit: ML_PER_L
-- preferred_term: Thiamine solution (see Medium No. 403 )
+  source: JCM Medium 1392 / JCM Medium 403
+  notes: JCM Medium 1392 adds 1.0 ml/L Vitamin solution.
+- preferred_term: Thiamine solution (JCM Medium 403)
   concentration:
     value: '1.0'
     unit: ML_PER_L
-- preferred_term: Vitamin B12 solution (see Medium No. 403 )
+  source: JCM Medium 1392 / JCM Medium 403
+  notes: JCM Medium 1392 adds 1.0 ml/L Thiamine solution.
+- preferred_term: Vitamin B12 solution (JCM Medium 403)
   concentration:
     value: '1.0'
     unit: ML_PER_L
+  source: JCM Medium 1392 / JCM Medium 403
+  notes: JCM Medium 1392 adds 1.0 ml/L Vitamin B12 solution.
 - preferred_term: 10% Yeast extract solution
   concentration:
     value: '20.0'
     unit: ML_PER_L
-- preferred_term: 5% Na2S·9H2O solution
+  source: JCM Medium 1392
+  notes: JCM Medium 1392 adds 20.0 ml/L 10% Yeast extract solution.
+  composition:
+  - preferred_term: Yeast extract
+    concentration:
+      value: '100.0'
+      unit: G_PER_L
+    source: JCM Medium 1392
+    notes: JCM Medium 1392 lists 100.0 g/L Yeast extract.
+    term:
+      id: FOODON:03315426
+      label: Yeast extract
+- preferred_term: 5% Na2S x 9H2O solution
   concentration:
     value: '10.0'
     unit: ML_PER_L
+  source: JCM Medium 1392
+  notes: JCM Medium 1392 adds 10.0 ml/L 5% Na2S x 9H2O solution.
+  composition:
+  - preferred_term: Na2S x 9H2O
+    concentration:
+      value: '50.0'
+      unit: G_PER_L
+    source: JCM Medium 1392
+    notes: JCM Medium 1392 lists 50.0 g/L Na2S x 9H2O.
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -154,3 +221,15 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_jcm_score10_stock_solutions.py
+  action: RESOLVED_JCM_SCORE10_STOCK_SOLUTIONS
+  changes: Moved flat JCM stock additions into solutions
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1392
+  notes: Moved JCM Medium 1392 NaHCO3, yeast extract, and sulfide stocks into solutions;
+    kept the JCM 439, JCM 431, and JCM 403 cross-referenced stocks opaque.
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1392
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=403

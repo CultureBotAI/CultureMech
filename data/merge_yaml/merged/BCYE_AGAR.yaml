@@ -14,8 +14,8 @@ notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1
 ingredients:
 - preferred_term: R2A agar
   term:
-    id: CHEBI:2509
-    label: agar
+    id: mediadive.compound:1844
+    label: R2A agar
   concentration:
     value: '1.82'
     unit: G_PER_L

@@ -344,10 +344,17 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_901_acidolobus_score10.py
+  action: RESOLVED_KOMODO_901_ACIDOLOBUS_TOPOLOGY
+  changes: Corrected DSMZ Medium 901 source-duplicate child path
+  source: DSMZ Medium 901; KOMODO Medium 901
+  notes: Pointed the KOMODO Medium 901 child link at the archaeal file.
 variant_children:
-- path: data/normalized_yaml/bacterial/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml
+- path: data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006771
-  name: acidolobus_aceticus_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from the
-    matching DSMZ medium source.
+  name: KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml
+  notes: KOMODO Medium 901 has the same 28-ingredient signature as DSMZ Medium 901.
+data_quality_flags:
+- ingredients_curated

@@ -10,50 +10,116 @@ media_term:
   term:
     id: mediadive.medium:J479
     label: THERMODESULFOVIBRIO MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=479'
+notes: JCM Medium 479 uses JCM Medium 284 Solution A without yeast extract, 0.05 volume
+  each of sodium lactate Solution B and sodium sulfate Solution C, and 0.01 volume
+  each of 3% L-cysteine hydrochloride hydrate and 3% sodium sulfide nonahydrate stocks.
 ingredients:
-- preferred_term: Sodium lactate
-  term:
-    id: CHEBI:75228
-    label: sodium lactate
+- preferred_term: KH2PO4
   concentration:
-    value: '44'
+    value: '0.14'
     unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75228
-    label: sodium lactate
-- preferred_term: Na2SO4
+  source: JCM Medium 284 Solution A
+  notes: JCM Medium 284 Solution A lists 0.14 g/L.
   term:
-    id: CHEBI:32149
-    label: sodium sulfate
-  concentration:
-    value: '56'
-    unit: G_PER_L
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
-    id: CHEBI:32149
-    label: sodium sulfate
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  source: JCM Medium 284 Solution A
+  notes: JCM Medium 284 Solution A lists 0.2 g/L.
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  source: JCM Medium 284 Solution A
+  notes: JCM Medium 284 Solution A lists 0.15 g/L.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.54'
+    unit: G_PER_L
+  source: JCM Medium 284 Solution A
+  notes: JCM Medium 284 Solution A lists 0.54 g/L.
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: NaHCO3
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  source: JCM Medium 284 Solution A
+  notes: JCM Medium 284 Solution A lists 2.5 g/L.
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  source: JCM Medium 284 Solution A
+  notes: JCM Medium 284 Solution A lists 0.001 g/L.
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: ML_PER_L
+  source: JCM Medium 284 Solution A
+  notes: JCM Medium 284 Solution A lists 900 ml/L.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Solution A of Medium No. 284 without yeast extract. Prepare the
-    culture vessels containing the solution as described in the recipe of Medium No.
-    284.
+  description: Prepare JCM Medium 284 Solution A without yeast extract by mixing salts,
+    trace stocks, resazurin, and 900 ml distilled water.
 - step_number: 2
-  action: AUTOCLAVE
-  description: Autoclave and store under a N2 atmosphere.
+  action: ADJUST_PH
+  description: Adjust Solution A to pH 6.5 before bicarbonate addition.
 - step_number: 3
-  action: AUTOCLAVE
-  description: Autoclave and store under a N2 atmosphere.
+  action: HEAT
+  description: Bring Solution A to a boil and cool under N2-CO2 (80:20, v/v).
 - step_number: 4
   action: AUTOCLAVE
-  description: To complete the medium, add 0.05 volume of Solutions B and C to the
-    culture vessels containing Solution A. Prior to inoculation, aseptically and anaerobically
-    add 0.01 volume of L-cysteine x HCl x H2O and Na2S x 9H2O solutions to the medium
-    (3% solutions, autoclaved and stored under a N2 atmosphere).
+  description: Add bicarbonate to Solution A, distribute into culture vessels under
+    N2-CO2, seal with butyl rubber stoppers, autoclave, and stand overnight.
 - step_number: 5
+  action: AUTOCLAVE
+  description: Autoclave Solutions B and C under a N2 atmosphere.
+- step_number: 6
   action: MIX
-  description: 'Comment: For strains JCM 13213, JCM 13214, JCM 13215 and JCM 13216,
-    incubate with a 10% inoculum.'
+  description: Aseptically add Solution B, Solution C, L-cysteine stock, and Na2S
+    stock to the culture vessels under anaerobic conditions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -84,4 +150,412 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_jcm_479_score20.py
+  action: RESOLVED_JCM_479_SCORE20_GRAPH
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=479; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=284
+  notes: JCM Medium 479 uses JCM Medium 284 Solution A without yeast extract, 0.05
+    volume each of sodium lactate Solution B and sodium sulfate Solution C, and 0.01
+    volume each of 3% L-cysteine hydrochloride hydrate and 3% sodium sulfide nonahydrate
+    stocks.
 kg_microbe_match: mediadive.medium:J479
+solutions:
+- preferred_term: Trace vitamins solution
+  concentration:
+    value: '2.0'
+    unit: ML_PER_L
+  notes: JCM Medium 284 Solution A lists 2.0 ml/L Trace vitamins solution.
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '0.0049'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace vitamins solution
+    notes: JCM Medium 284 Trace vitamins solution lists 0.0049 g/L.
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+  - preferred_term: Folic acid
+    concentration:
+      value: '0.0088'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace vitamins solution
+    notes: JCM Medium 284 Trace vitamins solution lists 0.0088 g/L.
+    term:
+      id: CHEBI:27470
+      label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
+  - preferred_term: Pyridoxine x HCl
+    concentration:
+      value: '0.0041'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace vitamins solution
+    notes: JCM Medium 284 Trace vitamins solution lists 0.0041 g/L.
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+  - preferred_term: Thiamine x HCl
+    concentration:
+      value: '0.0067'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace vitamins solution
+    notes: JCM Medium 284 Trace vitamins solution lists 0.0067 g/L.
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+  - preferred_term: Riboflavin
+    concentration:
+      value: '0.0075'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace vitamins solution
+    notes: JCM Medium 284 Trace vitamins solution lists 0.0075 g/L.
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '0.0025'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace vitamins solution
+    notes: JCM Medium 284 Trace vitamins solution lists 0.0025 g/L.
+    term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: nicotinic acid
+  - preferred_term: DL-Calcium pantothenate
+    concentration:
+      value: '0.0095'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace vitamins solution
+    notes: JCM Medium 284 Trace vitamins solution lists 0.0095 g/L.
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.0271'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace vitamins solution
+    notes: JCM Medium 284 Trace vitamins solution lists 0.0271 g/L.
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '0.0027'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace vitamins solution
+    notes: JCM Medium 284 Trace vitamins solution lists 0.0027 g/L.
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+  - preferred_term: Lipoic acid
+    concentration:
+      value: '0.0041'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace vitamins solution
+    notes: JCM Medium 284 Trace vitamins solution lists 0.0041 g/L.
+    term:
+      id: CHEBI:16494
+      label: lipoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16494
+      label: lipoic acid
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    source: JCM Medium 284 Trace vitamins solution
+    notes: JCM Medium 284 Trace vitamins solution lists 1000 ml/L.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: Trace element solution
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  notes: JCM Medium 284 Solution A lists 1.0 ml/L Trace element solution.
+  composition:
+  - preferred_term: Nitrilotriacetic acid
+    concentration:
+      value: '12.8'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace element solution
+    notes: JCM Medium 284 Trace element solution lists 12.8 g/L.
+    term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+  - preferred_term: FeCl3 x 6 H2O
+    concentration:
+      value: '1.35'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace element solution
+    notes: JCM Medium 284 Trace element solution lists 1.35 g/L.
+    term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace element solution
+    notes: JCM Medium 284 Trace element solution lists 0.1 g/L.
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.024'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace element solution
+    notes: JCM Medium 284 Trace element solution lists 0.024 g/L.
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+  - preferred_term: CaCl2 x 2 H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace element solution
+    notes: JCM Medium 284 Trace element solution lists 0.1 g/L.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: ZnCl2
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace element solution
+    notes: JCM Medium 284 Trace element solution lists 0.1 g/L.
+    term:
+      id: CHEBI:49976
+      label: zinc dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49976
+      label: zinc dichloride
+  - preferred_term: CuCl2 x 2 H2O
+    concentration:
+      value: '0.025'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace element solution
+    notes: JCM Medium 284 Trace element solution lists 0.025 g/L.
+    term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace element solution
+    notes: JCM Medium 284 Trace element solution lists 0.01 g/L.
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.024'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace element solution
+    notes: JCM Medium 284 Trace element solution lists 0.024 g/L.
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+  - preferred_term: NiCl2 x 6 H2O
+    concentration:
+      value: '0.12'
+      unit: G_PER_L
+    source: JCM Medium 284 Trace element solution
+    notes: JCM Medium 284 Trace element solution lists 0.12 g/L.
+    term:
+      id: CHEBI:34887
+      label: nickel dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:34887
+      label: nickel dichloride
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    source: JCM Medium 284 Trace element solution
+    notes: JCM Medium 284 Trace element solution lists 1000 ml/L.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: Se/W solution
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  notes: JCM Medium 284 Solution A lists 1.0 ml/L Se/W solution.
+  composition:
+  - preferred_term: Na2SeO3 x 5 H2O
+    concentration:
+      value: '0.004'
+      unit: G_PER_L
+    source: JCM Medium 284 Se/W solution
+    notes: JCM Medium 284 Se/W solution lists 0.004 g/L.
+    term:
+      id: CHEBI:131361
+      label: disodium selenite pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131361
+      label: disodium selenite pentahydrate
+  - preferred_term: Na2WO4 x 2 H2O
+    concentration:
+      value: '0.004'
+      unit: G_PER_L
+    source: JCM Medium 284 Se/W solution
+    notes: JCM Medium 284 Se/W solution lists 0.004 g/L.
+    term:
+      id: CHEBI:63939
+      label: sodium tungstate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63939
+      label: sodium tungstate dihydrate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    source: JCM Medium 284 Se/W solution
+    notes: JCM Medium 284 Se/W solution lists 1000 ml/L.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: Solution B
+  concentration:
+    value: '50.0'
+    unit: ML_PER_L
+  notes: JCM Medium 479 adds 0.05 volume of the 44 g/L sodium lactate Solution B.
+  composition:
+  - preferred_term: Sodium lactate
+    concentration:
+      value: '44.0'
+      unit: G_PER_L
+    source: JCM Medium 479 Solution B
+    notes: JCM Medium 479 Solution B lists 44.0 g/L.
+    term:
+      id: CHEBI:75228
+      label: sodium lactate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75228
+      label: sodium lactate
+- preferred_term: Solution C
+  concentration:
+    value: '50.0'
+    unit: ML_PER_L
+  notes: JCM Medium 479 adds 0.05 volume of the 56 g/L Na2SO4 Solution C.
+  composition:
+  - preferred_term: Na2SO4
+    concentration:
+      value: '56.0'
+      unit: G_PER_L
+    source: JCM Medium 479 Solution C
+    notes: JCM Medium 479 Solution C lists 56.0 g/L.
+    term:
+      id: CHEBI:32149
+      label: sodium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32149
+      label: sodium sulfate
+- preferred_term: 3% L-Cysteine x HCl x H2O solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  notes: JCM Medium 479 adds 0.01 volume of a 3% L-Cysteine x HCl x H2O solution.
+  composition:
+  - preferred_term: L-Cysteine x HCl x H2O
+    concentration:
+      value: '30.0'
+      unit: G_PER_L
+    source: JCM Medium 479 3% reductant stock
+    notes: JCM Medium 479 3% reductant stock lists 30.0 g/L.
+    term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+- preferred_term: 3% Na2S x 9H2O solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  notes: JCM Medium 479 adds 0.01 volume of a 3% Na2S x 9H2O solution.
+  composition:
+  - preferred_term: Na2S x 9H2O
+    concentration:
+      value: '30.0'
+      unit: G_PER_L
+    source: JCM Medium 479 3% reductant stock
+    notes: JCM Medium 479 3% reductant stock lists 30.0 g/L.
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=479
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=284

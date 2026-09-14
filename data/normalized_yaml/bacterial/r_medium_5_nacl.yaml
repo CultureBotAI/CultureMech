@@ -5,106 +5,163 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Peptone
   concentration:
-    value: '1'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO M1968 / NBRC Medium 1246
+  notes: NBRC Medium 1246 lists 10.0 g/L Peptone.
   term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: MgSO4·7H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
+    id: MICRO:0000178
+    label: Peptone
+  nutritional_roles:
+  - NITROGEN_SOURCE
 - preferred_term: Yeast extract
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  source: TOGO M1968 / NBRC Medium 1246
+  notes: NBRC Medium 1246 lists 5.0 g/L Yeast extract.
   term:
-    id: CHEBI:26710
-    label: sodium chloride
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Malt extract
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: TOGO M1968 / NBRC Medium 1246
+  notes: NBRC Medium 1246 lists 5.0 g/L Malt extract.
+  term:
+    id: FOODON:03301056
+    label: malt extract
+  nutritional_roles:
+  - CARBON_SOURCE
+  - NITROGEN_SOURCE
+- preferred_term: Bacto Casamino Acids (Difco)
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: TOGO M1968 / NBRC Medium 1246
+  notes: NBRC Medium 1246 lists 5.0 g/L Bacto Casamino Acids (Difco).
+  term:
+    id: FOODON:03315719
+    label: mammalian milk protein (hydrolyzed)
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Beef extract
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: TOGO M1968 / NBRC Medium 1246
+  notes: NBRC Medium 1246 lists 2.0 g/L Beef extract.
+  term:
+    id: FOODON:03302088
+    label: beef extract
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: Glycerol
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: TOGO M1968 / NBRC Medium 1246
+  notes: NBRC Medium 1246 lists 2.0 g/L Glycerol.
+  term:
+    id: CHEBI:17754
+    label: glycerol
+  nutritional_roles:
+  - CARBON_SOURCE
   mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
+    id: CHEBI:17754
+    label: glycerol
 - preferred_term: Tween 80
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Simple component, Organic compound, Defined
-    component'
+  source: TOGO M1968 / NBRC Medium 1246
+  notes: NBRC Medium 1246 lists 0.05 g/L Tween 80.
   term:
     id: CHEBI:53426
     label: polysorbate 80
+  physicochemical_roles:
+  - SURFACTANT
   mediaingredientmech_chebi_term:
     id: CHEBI:53426
     label: polysorbate 80
-- preferred_term: Glycerol
+- preferred_term: MgSO4 x 7 H2O
   concentration:
-    value: '2'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
+  source: TOGO M1968 / NBRC Medium 1246
+  notes: NBRC Medium 1246 lists 1.0 g/L MgSO4 x 7 H2O.
   term:
-    id: CHEBI:17754
-    label: glycerol
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  nutritional_roles:
+  - TRACE_ELEMENT
+  - SULFUR_SOURCE
   mediaingredientmech_chebi_term:
-    id: CHEBI:17754
-    label: glycerol
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: NaCl
+  concentration:
+    value: '50.0'
+    unit: G_PER_L
+  source: TOGO M1968 / NBRC Medium 1246
+  notes: NBRC Medium 1246 lists 50.0 g/L NaCl.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  physicochemical_roles:
+  - OSMOTIC_AGENT
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: TOGO M1968 / NBRC Medium 1246
+  notes: NBRC Medium 1246 lists 1.0 L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar (if needed)
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Malt extract
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Beef extract
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Bacto Casamino Acids (Difco)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Peptone
-  concentration:
-    value: '10'
-    unit: G_PER_L
+  source: TOGO M1968 / NBRC Medium 1246
+  notes: NBRC Medium 1246 lists 15.0 g/L Agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve peptone, yeast extract, malt extract, Bacto Casamino Acids,
+    beef extract, glycerol, Tween 80, magnesium sulfate heptahydrate, NaCl, and agar
+    if needed in 1.0 L distilled water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
 media_term:
   preferred_term: TOGO Medium M1968
   term:
     id: TOGO:M1968
     label: R medium + 5% NaCl
-notes: 'Source: https://togomedium.org/medium/M1968
-
-  Original source: NBRC - NBRC_M1246
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1246'
+notes: TOGO M1968 imports NBRC Medium 1246 R medium + 5% NaCl, which uses the NBRC
+  R medium formula with 50 g/L NaCl and final pH 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -147,3 +204,25 @@ curation_history:
   notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
     magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
     labels untouched.
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_togo_m1482_m1968_r_medium_score15.py
+  action: RESOLVED_TOGO_M1968_R_MEDIUM_5_NACL_SCORE15
+  source: https://togomedium.org/medium/M1968; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1246
+  notes: Corrected the imported distilled-water unit from g/L to L, added pH 7.0,
+    grounded all eleven disclosed components, and linked this record to NBRC Medium
+    264 R medium as a salinity variant.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1968
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1246
+parent_media:
+  path: data/normalized_yaml/bacterial/r_medium.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:008026
+  name: r_medium
+  notes: Adds 50 g/L NaCl to NBRC Medium 264 R medium.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- Adds 50 g/L NaCl to NBRC Medium 264 R medium.

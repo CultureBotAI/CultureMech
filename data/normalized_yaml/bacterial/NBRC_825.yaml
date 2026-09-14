@@ -6,6 +6,11 @@ description: 825. NBRC 824.
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: NBRC Medium 824
+  term:
+    id: nbrc.medium:824
+    label: NBRC Medium 824
 ingredients:
 - preferred_term: Na-terephthalate
   concentration:
@@ -15,6 +20,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
 - preferred_term: KH2PO4
   concentration:
     value: '0.14'
@@ -30,6 +38,9 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
 - preferred_term: NH4Cl
   concentration:
     value: '0.54'
@@ -64,10 +75,16 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
 - preferred_term: Cysteine-HCl
   concentration:
     value: '0.3'
     unit: G_PER_L
+  term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -77,14 +94,20 @@ ingredients:
     label: water
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients in distilled water
+  action: MIX
+  description: Dissolve all ingredients except Na-terephthalate, Na2S·9H2O, and cysteine-HCl
+    up to 900 ml.
 - step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH if needed
+  action: AUTOCLAVE
+  description: Flush with N2/CO2 (80/20), then autoclave.
 - step_number: 3
-  action: DISSOLVE
-  description: Sterilize by autoclaving
+  action: FILTER_STERILIZE
+  description: Filter-sterilize Na2S·9H2O, cysteine-HCl, and neutralized 0.2 M Na-terephthalate
+    solutions separately.
+- step_number: 4
+  action: MIX
+  description: Add filter-sterile Na2S·9H2O, cysteine-HCl, and neutralized Na-terephthalate
+    solutions to each vial separately.
 curation_history:
 - timestamp: '2026-02-20T00:22:35.963666Z'
   curator: nbrc-import
@@ -127,6 +150,12 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_nbrc_partial_score25.py
+  action: RESOLVED_NBRC_PARTIAL_SCORE25
+  changes: Added source metadata to recovered NBRC score-25 record
+  source: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=824
+  notes: Preserved the recovered NBRC Medium 824 composition table.
 solutions:
 - preferred_term: Vitamin solution
   composition:
@@ -148,6 +177,9 @@ solutions:
     concentration:
       value: '0.4'
       unit: MG_PER_L
+    term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
   - preferred_term: Thiamine-HCl
     concentration:
       value: '0.7'
@@ -173,6 +205,9 @@ solutions:
     concentration:
       value: '0.5'
       unit: MG_PER_L
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
   - preferred_term: Vitamin B12
     concentration:
       value: '2.7'
@@ -191,6 +226,9 @@ solutions:
     concentration:
       value: '0.4'
       unit: MG_PER_L
+    term:
+      id: CHEBI:16494
+      label: (DL)-alpha-Lipoic acid
   - preferred_term: Distilled water
     concentration:
       value: '1'
@@ -209,6 +247,9 @@ solutions:
     concentration:
       value: '1.35'
       unit: G_PER_L
+    term:
+      id: CHEBI:86254
+      label: FeCl3 x 6 H2O
   - preferred_term: MnCl2·4H2O
     concentration:
       value: '0.1'
@@ -221,6 +262,9 @@ solutions:
     concentration:
       value: '0.1'
       unit: G_PER_L
+    term:
+      id: CHEBI:86158
+      label: CaCl2 x 2 H2O
   - preferred_term: ZnCl2
     concentration:
       value: '0.1'
@@ -232,6 +276,9 @@ solutions:
     concentration:
       value: '25'
       unit: MG_PER_L
+    term:
+      id: CHEBI:86318
+      label: CuCl2 x 2 H2O
   - preferred_term: H3BO3
     concentration:
       value: '10'
@@ -243,6 +290,9 @@ solutions:
     concentration:
       value: '24'
       unit: MG_PER_L
+    term:
+      id: CHEBI:75213
+      label: Na2MoO4 x 2 H2O
   - preferred_term: NiCl2·6H2O
     concentration:
       value: '0.12'
@@ -268,6 +318,9 @@ solutions:
     concentration:
       value: '4'
       unit: MG_PER_L
+    term:
+      id: CHEBI:63940
+      label: Na2WO4
   name: Se/W solution
 - preferred_term: Resazurin solution
   composition:
@@ -286,12 +339,16 @@ solutions:
       id: CHEBI:15377
       label: water
   name: Resazurin solution
-notes: This medium is for co-culture of strain JT with Methanospirillum hungatei strain
-  NBRC 100397. For vial cultures, dissolve all ingredients except for Na-terephthalate,
-  Na2S·9H2O and cysteine-HCl (up to 900ml), flush N2/CO2 (80/20), and autoclave. Add
-  0.5 ml of each of filter-sterilized Na2S·9H2O solution (0.6g Na2S·9H2O/50 ml) and
-  cysteine-HCl solution (0.6g cysteine-HCl/ 50ml) per each vial separately. Add 0.2
-  ml of neutralized and filter-sterilized 0.2 M Na-terephthalate solution. Yeast extract
-  is also added at final concentration about 0.02%. Inoculum size 10-20%. Growth was
-  observed after 3-4 weeks of incubation. First dissolve NTA in 200 ml of water and
-  adjust the pH to 6.5 with KOH.
+notes: 'Source: NBRC Medium 824 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=824
+
+
+  The NBRC Medium for Co-culture of Strain JT table lists vitamin, trace element,
+  Se/W, and resazurin stock solutions and a vial culture preparation under N2/CO2
+  with separately filter-sterilized sulfide, cysteine, and neutralized terephthalate
+  solutions.'
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=824

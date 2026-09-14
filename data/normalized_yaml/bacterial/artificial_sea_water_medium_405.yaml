@@ -2,6 +2,7 @@ id: CultureMech:004784
 name: artificial_sea_water_medium_405
 original_name: Artificial sea water (medium 405)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

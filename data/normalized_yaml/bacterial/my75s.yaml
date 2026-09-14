@@ -10,37 +10,85 @@ media_term:
   term:
     id: mediadive.medium:C60
     label: MY75S
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_MY75S.pdf'
+notes: CCAP MR_MY75S lists MY75S as Malt & Yeast Extract - 75% Seawater Agar with
+  750.0 ml natural filtered seawater, 250.0 ml deionised water, 0.1 g Malt extract,
+  0.1 g Yeast extract, and 15.0 g Bacteriological agar per liter.
 ingredients:
-- preferred_term: Natural sea water
+- preferred_term: Natural filtered seawater
   concentration:
-    value: '750'
-    unit: G_PER_L
+    value: '750.0'
+    unit: ML_PER_L
+  source: CCAP MR_MY75S
+  notes: CCAP MR_MY75S lists 750.0 ml natural filtered seawater per liter.
+  term:
+    id: ENVO:00002149
+    label: sea water
+- preferred_term: Deionised water
+  concentration:
+    value: '250.0'
+    unit: ML_PER_L
+  source: CCAP MR_MY75S
+  notes: CCAP MR_MY75S lists 250.0 ml deionised water per liter.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Malt extract
   concentration:
     value: '0.1'
     unit: G_PER_L
+  source: CCAP MR_MY75S
+  notes: CCAP MR_MY75S lists 0.1 g/L Malt extract.
+  term:
+    id: FOODON:03301056
+    label: malt extract
+  nutritional_roles:
+  - CARBON_SOURCE
+  - NITROGEN_SOURCE
 - preferred_term: Yeast extract
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: Agar
+  source: CCAP MR_MY75S
+  notes: CCAP MR_MY75S lists 0.1 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
+  - VITAMIN_SOURCE
+- preferred_term: Bacteriological agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: CCAP MR_MY75S
+  notes: CCAP MR_MY75S lists 15.0 g/L Bacteriological agar.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
 preparation_steps:
 - step_number: 1
+  action: HEAT
+  description: Combine seawater and deionised water and heat without boiling.
+- step_number: 2
+  action: DISSOLVE
+  description: Dissolve the malt extract and yeast extract.
+- step_number: 3
+  action: ADD_AGAR
+  description: Cool slightly, add Bacteriological agar, and shake to disperse.
+- step_number: 4
   action: AUTOCLAVE
-  description: "Make up the 75% seawater, heat, (do not bring to boil) then add and\
-    \ dissolve the malt extract\r\nand yeast extract using a magnetic stirrer. Cool\
-    \ slightly then add the agar and shake to\r\ndisperse. Autoclave at 15 psi for\
-    \ 15 minutes."
+  description: Autoclave at 15 psi for 15 minutes.
+sterilization:
+  method: AUTOCLAVE
+  notes: CCAP MR_MY75S autoclaves the final agar at 15 psi for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -66,4 +114,15 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-kg_microbe_match: mediadive.medium:12
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_top_causal_graph_score15.py
+  action: RESOLVED_CCAP_MY75S_SCORE15
+  source: https://www.ccap.ac.uk/wp-content/uploads/MR_MY75S.pdf
+  notes: CCAP MR_MY75S lists MY75S as Malt & Yeast Extract - 75% Seawater Agar with
+    750.0 ml natural filtered seawater, 250.0 ml deionised water, 0.1 g Malt extract,
+    0.1 g Yeast extract, and 15.0 g Bacteriological agar per liter.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_MY75S.pdf

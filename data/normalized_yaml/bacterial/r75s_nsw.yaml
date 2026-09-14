@@ -10,35 +10,40 @@ media_term:
   term:
     id: mediadive.medium:C88
     label: R75S:NSW
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_R75S_NSW.pdf'
-ingredients:
-- preferred_term: Natural sea water
+notes: CCAP prepares R75S:NSW as a 2:1 mixture of R75S and NSW.
+ingredients: []
+solutions:
+- preferred_term: R75S
   concentration:
-    value: '1750.0'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 750.0, 1000.0]'
-- preferred_term: Rye grass
+    value: '666.7'
+    unit: ML_PER_L
+  culturemech_term:
+    id: CultureMech:000401
+    label: R75S
+  notes: Converted from the CCAP 2:1 R75S:NSW mixture.
+- preferred_term: NSW (Natural Seawater)
   concentration:
-    value: '1'
-    unit: G_PER_L
+    value: '333.3'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Natural filtered seawater
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: ENVO:00002149
+      label: sea water
+    notes: CCAP NSW filters natural seawater through GF/C filters.
+    physicochemical_roles:
+    - OSMOTIC_AGENT
+  notes: Converted from the CCAP 2:1 base-medium:NSW mixture.
 preparation_steps:
 - step_number: 1
-  action: MIX
-  description: 2:1 mixture
+  action: AUTOCLAVE
+  description: Autoclave R75S and NSW separately.
 - step_number: 2
-  action: AUTOCLAVE
-  description: See separate recipes below.  Autoclave separately.  Mix aseptically
-    when cool.
-- step_number: 3
-  action: AUTOCLAVE
-  description: "Bring 75% seawater to the boil, add the powdered rye grass and keep\
-    \ boiling for 5 \r\nminutes.  Allow to cool and  restore volume to 1 litre with\
-    \ deionized water.  Filter \r\nthrough Whatman GF/C paper.  Autoclave at 15 psi\
-    \ for 15 minutes."
-- step_number: 4
-  action: AUTOCLAVE
-  description: Filter natural seawater through GF/C filters and autoclave at 15 psi
-    for 15 minutes.
+  action: MIX
+  description: Aseptically mix two parts R75S with one part NSW when cool.
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,3 +63,29 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "R75S:NSW" to "r75s_nsw" for consistent matching
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_ccap_bacterial_score40.py
+  action: RESOLVED_SCORE40_BACTERIAL_CCAP_GRAPH
+  changes: Resolved score-40 bacterial CCAP recipe graph
+  source: https://www.ccap.ac.uk/wp-content/uploads/MR_R75S_NSW.pdf
+  notes: CCAP prepares R75S:NSW as a 2:1 mixture of R75S and NSW.
+salinity: marine (natural seawater)
+sterilization:
+  method: AUTOCLAVE
+  pressure: 15
+  duration: 15 minutes
+parent_media:
+  path: data/normalized_yaml/bacterial/r75s.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:000401
+  name: r75s
+  notes: Blends two parts prepared R75S with one part prepared NSW.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Blends two parts prepared R75S with one part prepared NSW.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: CCAP:R75S_NSW
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_R75S_NSW.pdf

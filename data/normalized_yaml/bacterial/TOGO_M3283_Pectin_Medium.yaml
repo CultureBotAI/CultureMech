@@ -3,80 +3,104 @@ name: pectin_medium
 original_name: Pectin Medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
+ph_value: 7.5
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Yeast extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: NaCl
   concentration:
-    value: '5'
+    value: '5.0'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  source: TOGO M3283 / JCM Medium 1453
+  notes: JCM Medium 1453 lists 5.0 g/L NaCl.
   term:
     id: CHEBI:26710
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+- preferred_term: Yeast extract
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  source: TOGO M3283 / JCM Medium 1453
+  notes: JCM Medium 1453 lists 3.0 g/L Yeast extract.
+- preferred_term: Hipolypepton
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  source: TOGO M3283 / JCM Medium 1453
+  notes: JCM Medium 1453 lists 3.0 g/L Hipolypepton.
 - preferred_term: Pectin (from citrus)
   concentration:
-    value: '3'
+    value: '3.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
-- preferred_term: L-Cysteine·HCl·H2O
+  source: TOGO M3283 / JCM Medium 1453
+  notes: JCM Medium 1453 lists 3.0 g/L Pectin (from citrus).
+  term:
+    id: CHEBI:17309
+    label: pectin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17309
+    label: pectin
+- preferred_term: L-Cysteine HCl H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
-- preferred_term: Hipolypepton
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
+  source: TOGO M3283 / JCM Medium 1453
+  notes: JCM Medium 1453 lists 0.5 g/L L-Cysteine HCl H2O.
   term:
-    id: CHEBI:16526
-    label: carbon dioxide
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: TOGO M3283 / JCM Medium 1453
+  notes: JCM Medium 1453 lists 1.0 L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M3283 / JCM Medium 1453
+  notes: JCM Medium 1453 autoclaves the medium under an N2-CO2 (1:1, v/v) gas atmosphere.
   term:
     id: CHEBI:17997
     label: dinitrogen
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17997
+    label: dinitrogen
+- preferred_term: Carbon dioxide gas
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: TOGO M3283 / JCM Medium 1453
+  notes: JCM Medium 1453 autoclaves the medium under an N2-CO2 (1:1, v/v) gas atmosphere.
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
 media_term:
   preferred_term: TOGO Medium M3283
   term:
     id: TOGO:M3283
     label: Pectin Medium
-notes: 'Source: https://togomedium.org/medium/M3283
-
-  Original source: JCM - JCM_M1453
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1453'
+notes: TOGO M3283 imports JCM Medium 1453 Pectin Medium. JCM Medium 1453 lists, per
+  liter, 5.0 g NaCl, 3.0 g Yeast extract, 3.0 g Hipolypepton, 3.0 g Pectin from citrus,
+  0.5 g L-Cysteine HCl H2O, 1.0 ml 0.1% Resazurin solution, and 1.0 L Distilled water.
+  Thoroughly mix the components, adjust to pH 7.5, and autoclave under N2-CO2 (1:1,
+  v/v).
 applications:
 - Microbial cultivation
 curation_history:
@@ -123,11 +147,74 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m3283_score15.py
+  action: RESOLVED_TOGO_M3283_SCORE15
+  source: https://togomedium.org/medium/M3283; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1453
+  notes: TOGO M3283 imports JCM Medium 1453 Pectin Medium. JCM Medium 1453 lists,
+    per liter, 5.0 g NaCl, 3.0 g Yeast extract, 3.0 g Hipolypepton, 3.0 g Pectin from
+    citrus, 0.5 g L-Cysteine HCl H2O, 1.0 ml 0.1% Resazurin solution, and 1.0 L Distilled
+    water. Thoroughly mix the components, adjust to pH 7.5, and autoclave under N2-CO2
+    (1:1, v/v). Corrected the imported water and Resazurin stock-addition unit artifacts,
+    expanded the 0.1% Resazurin solution, added the JCM pH and N2-CO2 autoclaving
+    conditions, left Yeast extract and Hipolypepton intentionally unmapped, and linked
+    the record to DSMZ Medium 1855.
 solutions:
 - preferred_term: 0.1% Resazurin solution
-  composition: []
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
-  name: Unknown solution
+    value: '1.0'
+    unit: ML_PER_L
+  source: TOGO M3283 / JCM Medium 1453
+  notes: JCM Medium 1453 adds 1.0 ml/L 0.1% Resazurin solution.
+  composition:
+  - preferred_term: Resazurin
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: TOGO M3283 / JCM Medium 1453
+    notes: A 0.1% w/v Resazurin solution is represented as 1.0 g/L Resazurin.
+    term:
+      id: CHEBI:8806
+      label: Resazurin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:8806
+      label: Resazurin
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Thoroughly mix NaCl, Yeast extract, Hipolypepton, Pectin from citrus,
+    L-Cysteine HCl H2O, 0.1% Resazurin solution, and Distilled water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.5.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave under an N2-CO2 (1:1, v/v) gas atmosphere.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+  notes: Autoclave the fully mixed medium under N2-CO2 (1:1, v/v); JCM defines autoclaving
+    as 121 C for 15 min unless otherwise stated.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M3283
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1453
+parent_media:
+  path: data/normalized_yaml/bacterial/pectin_medium.yaml
+  relationship: DERIVED_FROM
+  id: CultureMech:001273
+  name: pectin_medium
+  notes: TOGO M3283 imports JCM Medium 1453, a recognizable Pectin medium formulation
+    that uses lower Yeast extract, pH 7.5, and N2-CO2 autoclaving relative to DSMZ
+    Medium 1855.
+variant_relationship: DERIVED_FROM
+variant_modifications:
+- Uses the DSMZ Medium 1855 pectin base components with 3.0 g/L instead of 5.0 g/L
+  Yeast extract, pH 7.5 instead of pH 6.5, and JCM Medium 1453 autoclaving under N2-CO2
+  (1:1, v/v).

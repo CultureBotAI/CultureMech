@@ -6,17 +6,21 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: Man-Rogosa-Sharpe (MRS) (Beijing Land Bridge Technology Co., Ltd.
-    CM187)
+- preferred_term: Man-Rogosa-Sharpe (MRS) (Beijing Land Bridge Technology CM187)
   concentration:
-    value: '1'
-    unit: G_PER_L
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2949
+  notes: TOGO M2949 lists 1 L Man-Rogosa-Sharpe MRS from Beijing Land Bridge Technology
+    CM187.
 media_term:
   preferred_term: TOGO Medium M2949
   term:
     id: TOGO:M2949
     label: Man-Rogosa-Sharpe (MRS)
-notes: 'Source: https://togomedium.org/medium/M2949'
+notes: TOGO M2949 records static cultivation at 37 C in one liter of Man-Rogosa-Sharpe
+  MRS from Beijing Land Bridge Technology CM187; the source does not spell out the
+  product's internal composition.
 applications:
 - Microbial cultivation
 curation_history:
@@ -33,3 +37,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Man-Rogosa-Sharpe (MRS)" to "man_rogosa_sharpe_mrs"
     for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_literal_products_score40.py
+  action: RESOLVED_TOGO_LITERAL_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO literal product/additive graph
+  source: https://togomedium.org/medium/M2949
+  notes: TOGO M2949 records static cultivation at 37 C in one liter of Man-Rogosa-Sharpe
+    MRS from Beijing Land Bridge Technology CM187; the source does not spell out the
+    product's internal composition.
+temperature_value: 37.0
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2949

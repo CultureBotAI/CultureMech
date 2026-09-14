@@ -2,31 +2,166 @@ id: CultureMech:004846
 name: trace_element_solution_a_medium_253
 original_name: Trace element solution (A) (medium 253)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 3.0
-notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 3062 | DSMZ Medium: 3062 (mediadive.medium:3062)
-  | Aerobic: No | SubMedium: Yes'
+notes: KOMODO 3062 lists Trace element solution (A) (medium 253) as a defined submedium
+  at pH 3.0. Its metabolite table contains 1.80 g/L FeCl2 x 4 H2O, 0.50 g/L H3BO3,
+  0.25 g/L CoCl2 x 6 H2O, 0.10 g/L ZnCl2, 0.07 g/L MnCl2 x 4 H2O, 0.03 g/L Na2MoO4
+  x 2 H2O, 0.01 g/L NiCl2 x 6 H2O, 0.01 g/L CuCl2 x 2 H2O, 0.01 g/L Na2SeO3 x 5 H2O,
+  variable HCl, and distilled water.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the 1 L Trace element solution (A) stock from distilled water,
+    HCl, and the chloride, borate, molybdate, and selenite salts listed by KOMODO
+    3062.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust the Trace element solution (A) stock to pH 3.0 with 1 N HCl
+    as needed.
 media_term:
   preferred_term: KOMODO Medium 3062
   term:
     id: komodo.medium:3062
     label: Trace element solution (A) (medium 253)
 ingredients:
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  source: KOMODO Medium 3062
+  notes: KOMODO Medium 3062 lists 0.25 g/L CoCl2 x 6 H2O.
+  term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: HCl
-  notes: Extracted from recipe notes (pH buffer)
-  data_quality_flags:
-  - extracted_from_notes
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17883
-    label: hydrogen chloride
+  source: KOMODO Medium 3062
+  notes: KOMODO Medium 3062 lists HCl without a gram amount and also identifies HCl
+    as the pH adjuster for pH 3.0.
   term:
     id: CHEBI:17883
     label: hydrogen chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+- preferred_term: ZnCl2
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: KOMODO Medium 3062
+  notes: KOMODO Medium 3062 lists 0.10 g/L ZnCl2.
+  term:
+    id: CHEBI:49976
+    label: zinc dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
+- preferred_term: NiCl2 x 6 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: KOMODO Medium 3062
+  notes: KOMODO Medium 3062 lists 0.01 g/L NiCl2 x 6 H2O.
+  term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: KOMODO Medium 3062
+  notes: KOMODO Medium 3062 lists Distilled water without a gram amount; normalized
+    here as the solvent for 1 L of Trace element solution (A).
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+  source: KOMODO Medium 3062
+  notes: KOMODO Medium 3062 lists 0.07 g/L MnCl2 x 4 H2O.
+  term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+- preferred_term: CuCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: KOMODO Medium 3062
+  notes: KOMODO Medium 3062 lists 0.01 g/L CuCl2 x 2 H2O.
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+- preferred_term: FeCl2 x 4 H2O
+  concentration:
+    value: '1.80'
+    unit: G_PER_L
+  source: KOMODO Medium 3062
+  notes: KOMODO Medium 3062 lists 1.80 g/L FeCl2 x 4 H2O.
+  term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+- preferred_term: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: KOMODO Medium 3062
+  notes: KOMODO Medium 3062 lists 0.01 g/L Na2SeO3 x 5 H2O.
+  term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  source: KOMODO Medium 3062
+  notes: KOMODO Medium 3062 lists 0.03 g/L Na2MoO4 x 2 H2O.
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: H3BO3
+  concentration:
+    value: '0.50'
+    unit: G_PER_L
+  source: KOMODO Medium 3062
+  notes: KOMODO Medium 3062 lists 0.50 g/L H3BO3.
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 applications:
 - Microbial cultivation
 curation_history:
@@ -61,3 +196,15 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_komodo_3062_score15.py
+  action: RESOLVED_KOMODO_3062_SCORE15
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3062
+  notes: Replaced the HCl-only pH-buffer import with the complete KOMODO 3062 metabolite
+    table; preserved HCl as a variable listed component and pH adjuster; and grounded
+    all disclosed components through MediaIngredientMech.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3062

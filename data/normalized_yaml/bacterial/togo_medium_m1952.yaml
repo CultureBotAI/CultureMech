@@ -3,53 +3,116 @@ name: togo_medium_m1952
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Hipolypepton*
   concentration:
-    value: '1'
+    value: '4'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
+  source: NBRC Medium 1227
+  notes: NBRC Medium 1227 lists 4 g/L Hipolypepton and notes that the asterisk marks
+    Wako Pure Chemical Industries; this peptone product is retained as an opaque complex
+    component.
 - preferred_term: Yeast extract
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: NBRC Medium 1227
+  notes: NBRC Medium 1227 lists 3 g/L Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Glucose
   concentration:
     value: '7.5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
+  source: NBRC Medium 1227
+  notes: NBRC Medium 1227 lists 7.5 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+- preferred_term: Acetic acid**
+  concentration:
+    value: '30'
+    unit: ML_PER_L
+  source: NBRC Medium 1227
+  notes: NBRC Medium 1227 lists 30 ml/L Acetic acid and notes that the double asterisk
+    marks separate filter sterilization.
+  term:
+    id: CHEBI:15366
+    label: acetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15366
+    label: acetic acid
+- preferred_term: Ethanol**
+  concentration:
+    value: '30'
+    unit: ML_PER_L
+  source: NBRC Medium 1227
+  notes: NBRC Medium 1227 lists 30 ml/L Ethanol and notes that the double asterisk
+    marks separate filter sterilization.
+  term:
+    id: CHEBI:16236
+    label: ethanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
+    label: ethanol
 - preferred_term: Agar (if needed)
   concentration:
     value: '8'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: NBRC Medium 1227
+  notes: NBRC Medium 1227 lists 8 g/L agar if needed.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: NBRC Medium 1227
+  notes: NBRC Medium 1227 lists 1.0 L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Combine 4 g/L Hipolypepton, 3 g/L Yeast extract, 7.5 g/L Glucose, and
+    1 L Distilled water.
+- step_number: 2
+  action: MIX
+  description: Add 8 g/L agar when solid NBRC Medium 1227 is needed.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize Acetic acid and Ethanol separately by filtration.
+- step_number: 4
+  action: MIX
+  description: Add 30 ml/L Acetic acid and 30 ml/L Ethanol.
+- step_number: 5
+  action: MIX
+  description: Leave pH unadjusted.
 media_term:
   preferred_term: TOGO Medium M1952
   term:
     id: TOGO:M1952
     label: TOGO Medium M1952
-notes: 'Source: https://togomedium.org/medium/M1952
-
-  Original source: NBRC - NBRC_M1227
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1227'
+notes: TOGO M1952 imports NBRC Medium 1227, which lists 4 g/L Hipolypepton from Wako
+  Pure Chemical Industries, 3 g/L Yeast extract, 7.5 g/L Glucose, 30 ml/L Acetic acid,
+  30 ml/L Ethanol, 8 g/L Agar if needed, and 1 L Distilled water with pH unadjusted.
+  Acetic acid and ethanol are sterilized separately by filtration.
 applications:
 - Microbial cultivation
 curation_history:
@@ -93,27 +156,20 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-solutions:
-- preferred_term: Ethanol**
-  composition: []
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Organic compound, Simple component, Defined
-    component'
-  name: Unknown solution
-- preferred_term: Acetic acid**
-  composition: []
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
-  name: Unknown solution
-- preferred_term: Hipolypepton*
-  composition: []
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-  name: Unknown solution
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_nbrc_1227_score15.py
+  action: RESOLVED_NBRC_1227_SCORE15
+  source: https://togomedium.org/medium/M1952; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1227
+  notes: Curated TOGO:M1952 from TOGO and NBRC Medium 1227; corrected Distilled water
+    from a mass-like 1 g/L import to 1 L, moved Hipolypepton, Acetic acid, and Ethanol
+    from migrated empty solutions to the formula, corrected Acetic acid and Ethanol
+    from g/L to ml/L, added the unadjusted pH endpoint, grounded yeast extract, glucose,
+    acetic acid, ethanol, water, and agar, and retained Hipolypepton as a sourced
+    opaque component.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M1952
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1227

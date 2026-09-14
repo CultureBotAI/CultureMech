@@ -6,25 +6,228 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: MICRO:0000178
+    label: peptone
+- preferred_term: Yeast Extract
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Ferric Citrate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:144421
+    label: iron(III) citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
+    label: iron(III) citrate
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '19.45'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Magnesium Chloride
+  concentration:
+    value: '8.8'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+- preferred_term: Sodium Sulfate
+  concentration:
+    value: '3.24'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: Calcium Chloride
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
+- preferred_term: Potassium Chloride
+  concentration:
+    value: '0.55'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Sodium Bicarbonate
+  concentration:
+    value: '0.16'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Potassium Bromide
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:32030
+    label: potassium bromide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
+    label: potassium bromide
+- preferred_term: Strontium Chloride
+  concentration:
+    value: '0.034'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:36383
+    label: strontium dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36383
+    label: strontium dichloride
+- preferred_term: Boric Acid
+  concentration:
+    value: '0.022'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: Sodium Silicate
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:60720
+    label: sodium silicate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:60720
+    label: sodium silicate
+- preferred_term: Sodium Fluoride
+  concentration:
+    value: '0.0024'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:28741
+    label: sodium fluoride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28741
+    label: sodium fluoride
+- preferred_term: Ammonium Nitrate
+  concentration:
+    value: '0.0016'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:63038
+    label: ammonium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
+    label: ammonium nitrate
+- preferred_term: Disodium Phosphate
+  concentration:
+    value: '0.008'
+    unit: G_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 prints this component in the Difco Marine Agar/Broth 2216 scratch
+    formulation.
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 - preferred_term: DI Water
   concentration:
     value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: Broth Medium Marine Broth 2216 (BD 279110)
-  concentration:
-    value: '37.4'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+    unit: ML_PER_L
+  source: ATCC Medium 2
+  notes: ATCC Medium 2 lists 1000 mL DI water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 media_term:
   preferred_term: TOGO Medium M2481
   term:
     id: TOGO:M2481
     label: Marine Broth 2216
-notes: 'Source: https://togomedium.org/medium/M2481
-
-  Original URL: https://www.atcc.org/~/media/B5025AB990724A91B4491C391E054448.ashx'
+notes: TOGO M2481 cites ATCC Medium 2; ATCC Medium 2 lists 37.4 g Marine Broth 2216
+  (BD 279110) per 1000 mL DI water and prints the Difco Marine Agar/Broth 2216 scratch
+  formulation with agar omitted for broth.
 applications:
 - Microbial cultivation
 curation_history:
@@ -41,3 +244,37 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Marine Broth 2216" to "marine_broth_2216" for consistent
     matching
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_atcc_score40.py
+  action: RESOLVED_ATCC_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO/ATCC recipe graph
+  source: https://togomedium.org/medium/M2481; https://www.atcc.org/~/media/B5025AB990724A91B4491C391E054448.ashx
+  notes: TOGO M2481 cites ATCC Medium 2; ATCC Medium 2 lists 37.4 g Marine Broth 2216
+    (BD 279110) per 1000 mL DI water and prints the Difco Marine Agar/Broth 2216 scratch
+    formulation with agar omitted for broth.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare Difco Marine Broth 2216 from the scratch formulation in 1000
+    mL DI water, omitting agar.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M2481
+- reference: https://www.atcc.org/~/media/B5025AB990724A91B4491C391E054448.ashx
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M33_Marine_Broth_2216.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009718
+  name: marine_broth_2216
+  notes: TOGO M2481 cites ATCC Medium 2 and uses the same 37.4 g/L Marine Broth 2216
+    formulation as TOGO M33.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- ATCC source-catalogue duplicate of Marine Broth 2216.

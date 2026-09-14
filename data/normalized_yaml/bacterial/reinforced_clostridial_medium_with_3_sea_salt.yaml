@@ -10,26 +10,62 @@ media_term:
   term:
     id: mediadive.medium:J481
     label: REINFORCED CLOSTRIDIAL MEDIUM WITH 3%  SEA SALT
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=481'
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+sterilization:
+  method: AUTOCLAVE
+  temperature:
+    value: 121.0
+    unit: CELSIUS
+  duration: 15 min
+notes: JCM Medium 481 records JCM Medium 481 reinforced clostridial medium with 3%
+  sea salt with 38 g/L Reinforced clostridial medium (BD-Difco), 30.0 g/L Sea salts
+  (Sigma), 15 g/L Agar, 1 L distilled water, and the JCM default autoclaving at 121
+  C for 15 min. The commercial BD-Difco base and Sigma sea-salt mixture are retained
+  as opaque unmapped components because JCM does not disclose their subcomposition.
 ingredients:
-- preferred_term: Reinforced clostridial medium
+- preferred_term: Reinforced clostridial medium (BD-Difco)
   concentration:
-    value: '38'
+    value: '38.0'
     unit: G_PER_L
-- preferred_term: Sea Salt
+  source: JCM Medium 481
+  notes: JCM Medium 481 lists 38 g/L commercial BD-Difco Reinforced Clostridial Medium
+    but does not disclose its component recipe.
+- preferred_term: Sea salts (Sigma)
   concentration:
-    value: '30'
+    value: '30.0'
     unit: G_PER_L
+  source: JCM Medium 481
+  notes: JCM Medium 481 lists 30.0 g/L commercial Sigma sea salts; this heterogeneous
+    salt mixture is retained as an opaque source-qualified component.
 - preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: JCM Medium 481
+  notes: JCM Medium 481 lists 15.0 g/L Agar.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: JCM Medium 481
+  notes: JCM Medium 481 lists 1.0 L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -56,7 +92,13 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-kg_microbe_match: mediadive.medium:12
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_jcm_j481_j482_sea_salt_score15.py
+  action: RESOLVED_JCM_481_482_SEA_SALT_SCORE15
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=481
+  notes: Corrected the JCM 481/482 reinforced-clostridial sea-salt formula, grounded
+    water and agar, added JCM default autoclaving, and marked the BD-Difco base and
+    Sigma sea salts as intentionally opaque commercial ingredients.
 variant_children:
 - path: data/normalized_yaml/bacterial/reinforced_clostridial_medium_with_4_sea_salt.yaml
   relationship: SALINITY_VARIANT
@@ -64,3 +106,9 @@ variant_children:
   name: reinforced_clostridial_medium_with_4_sea_salt
   notes: Sea Salt increased from 30 g/L to 40 g/L while reinforced clostridial medium
     and agar remain unchanged.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=481

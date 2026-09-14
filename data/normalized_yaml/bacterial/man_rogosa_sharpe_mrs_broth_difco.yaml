@@ -8,15 +8,17 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: MRS broth (Difco)
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2698
+  notes: TOGO M2698 lists one liter of MRS broth from Difco.
 media_term:
   preferred_term: TOGO Medium M2698
   term:
     id: TOGO:M2698
     label: Man‐Rogosa‐Sharpe (MRS) broth (Difco)
-notes: 'Source: https://togomedium.org/medium/M2698'
+notes: TOGO M2698 records static cultivation at 37 C in one liter of MRS broth from
+  Difco; the source does not disclose the product's internal formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -31,8 +33,21 @@ curation_history:
 - timestamp: '2026-03-17T19:46:23.445676+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Man‐Rogosa‐Sharpe (MRS) broth (Difco)" to
-    "man_rogosa_sharpe_mrs_broth_difco" for consistent matching
+  notes: Normalized name from "Man‐Rogosa‐Sharpe (MRS) broth (Difco)" to "man_rogosa_sharpe_mrs_broth_difco"
+    for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_products_more_score40.py
+  action: RESOLVED_TOGO_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO product graph
+  source: https://togomedium.org/medium/M2698
+  notes: TOGO M2698 records static cultivation at 37 C in one liter of MRS broth from
+    Difco; the source does not disclose the product's internal formulation.
+temperature_value: 37.0
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2698
 parent_media:
   path: data/normalized_yaml/bacterial/TOGO_M2489_MRS_broth.yaml
   relationship: SOURCE_DUPLICATE
@@ -40,5 +55,5 @@ parent_media:
   name: mrs_broth
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

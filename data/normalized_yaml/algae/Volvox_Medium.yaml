@@ -4,87 +4,294 @@ category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: Volvox Medium
+  term:
+    id: UTEX:volvox-medium
+    label: Volvox Medium
+ph_value: 8.0
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
+notes: UTEX prepares Volvox Medium at pH 8.0 from calcium nitrate, magnesium sulfate,
+  sodium glycerophosphate, potassium chloride, glycylglycine, P-IV Metal Solution,
+  Vitamin B12, and Biotin Vitamin Solution.
 ingredients:
-- preferred_term: Ca(NO3)2•4H2O
+- preferred_term: dH2O
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: UTEX starts the 1 L Volvox Medium recipe with approximately 950 mL dH2O.
+- preferred_term: Ca(NO3)2 x 4 H2O
   concentration:
     value: '0.5'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 11.8 g/100 mL dH2O; final 0.5 mM; CAS 13477-34-4'
-- preferred_term: MgSO4•7H2O
+  term:
+    id: CHEBI:86159
+    label: calcium nitrate tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86159
+    label: calcium nitrate tetrahydrate
+  notes: UTEX adds 1 mL/L of an 11.8 g/100 mL dH2O stock, for 0.5 mM final.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.16'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 4 g/100 mL dH2O; final 0.16 mM; CAS 10034-99-8'
-- preferred_term: Na2glycerophosphate•5H2O
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  notes: UTEX adds 1 mL/L of a 4 g/100 mL dH2O stock, for 0.16 mM final.
+  nutritional_roles:
+  - SULFUR_SOURCE
+  - TRACE_ELEMENT
+- preferred_term: Na2glycerophosphate x 5 H2O
   concentration:
     value: '0.16'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 5 g/100 mL dH2O; final 0.16 mM; CAS 13408-09-8'
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
+  notes: UTEX adds 1 mL/L of a 5 g/100 mL dH2O stock, for 0.16 mM final.
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
 - preferred_term: KCl
   concentration:
     value: '0.67'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 1 mL/L; stock 5 g/100 mL dH2O; final 0.67 mM; CAS 7447-40-7'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+  notes: UTEX adds 1 mL/L of a 5 g/100 mL dH2O stock, for 0.67 mM final.
 - preferred_term: Glycylglycine
   concentration:
     value: '3.8'
     unit: MILLIMOLAR
-  notes: 'UTEX lists: amount 10 mL/L; stock 5 g/100 mL dH2O; final 3.8 mM; CAS 556-50-3'
+  term:
+    id: CHEBI:17201
+    label: glycylglycine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17201
+    label: glycylglycine
+  notes: UTEX adds 10 mL/L of a 5 g/100 mL dH2O stock, for 3.8 mM final.
+  physicochemical_roles:
+  - BUFFER
+solutions:
 - preferred_term: P-IV Metal Solution
   concentration:
     value: '6'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 6 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX brings P-IV Metal Solution to 1 L with dH2O.
+  - preferred_term: Na2EDTA x 2 H2O
+    concentration:
+      value: '0.75'
+      unit: G_PER_L
+    term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    notes: UTEX lists 0.75 g/L Na2EDTA x 2 H2O, 2 mM final, and dissolves it fully
+      before the other P-IV components.
+    physicochemical_roles:
+    - CHELATOR
+  - preferred_term: FeCl3 x 6 H2O
+    concentration:
+      value: '0.097'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    notes: UTEX lists 0.097 g/L FeCl3 x 6 H2O, for 0.36 mM final.
+    nutritional_roles:
+    - IRON_SOURCE
+    - TRACE_ELEMENT
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '0.041'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    notes: UTEX lists 0.041 g/L MnCl2 x 4 H2O, for 0.21 mM final.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: ZnCl2
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    term:
+      id: CHEBI:49976
+      label: zinc chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49976
+      label: zinc chloride
+    notes: UTEX lists 0.005 g/L ZnCl2, for 0.037 mM final.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.002'
+      unit: G_PER_L
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    notes: UTEX lists 0.002 g/L CoCl2 x 6 H2O, for 0.0084 mM final.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.004'
+      unit: G_PER_L
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    notes: UTEX lists 0.004 g/L Na2MoO4 x 2 H2O, for 0.017 mM final.
+    nutritional_roles:
+    - TRACE_ELEMENT
+  notes: UTEX adds 6 mL P-IV Metal Solution per liter.
 - preferred_term: Vitamin B12
   concentration:
     value: '1'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 1 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX prepares the Vitamin B12 stock in 200 mL HEPES buffer.
+  - preferred_term: HEPES buffer pH 7.8
+    concentration:
+      value: '12'
+      unit: G_PER_L
+    term:
+      id: CHEBI:42334
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:42334
+      label: HEPES
+    notes: Converted from 2.4 g/200 mL in the UTEX Vitamin B12 stock.
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.135'
+      unit: G_PER_L
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+    notes: Converted from 0.027 g/200 mL in the UTEX Vitamin B12 stock.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  notes: UTEX adds 1 mL Vitamin B12 stock per liter.
 - preferred_term: Biotin Vitamin Solution
   concentration:
     value: '1'
     unit: ML_PER_L
-  notes: 'UTEX lists: amount 1 mL/L'
+  composition:
+  - preferred_term: dH2O
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX prepares the biotin stock in 200 mL HEPES buffer.
+  - preferred_term: HEPES buffer pH 7.8
+    concentration:
+      value: '12'
+      unit: G_PER_L
+    term:
+      id: CHEBI:42334
+      label: HEPES
+    mediaingredientmech_chebi_term:
+      id: CHEBI:42334
+      label: HEPES
+    notes: Converted from 2.4 g/200 mL in the UTEX biotin stock.
+    physicochemical_roles:
+    - BUFFER
+  - preferred_term: Biotin
+    concentration:
+      value: '0.025'
+      unit: G_PER_L
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+    notes: Converted from 0.005 g/200 mL in the UTEX biotin stock.
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  notes: UTEX adds 1 mL Biotin Vitamin Solution per liter.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural
-    seawater, is important.'
+  description: To approximately 950 mL dH2O, add the salts, glycylglycine, and P-IV
+    Metal Solution in order while stirring continuously.
 - step_number: 2
-  action: MIX
-  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
-    water, Milli-Q water (Millipore Corp.), etc.
+  action: ADJUST_PH
+  description: Adjust the medium to pH 8.0.
 - step_number: 3
-  action: DISSOLVE
-  description: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source. When dissolving chemicals, wait for the first component to dissolve before
-    adding the second.
+  action: MIX
+  description: Bring the total volume to 1 L with dH2O.
 - step_number: 4
-  action: DISSOLVE
-  description: Stirring, and sometimes the addition of heat, is often required to
-    dissolve the chemicals efficiently.
+  action: AUTOCLAVE
+  description: Cover and autoclave the medium.
 - step_number: 5
   action: MIX
-  description: Preparation of stock solutions for frequently made algal culture media
-    make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts. Attention should be given to the pH of the final medium.
-- step_number: 6
-  action: ADJUST_PH
-  description: In most cases, if pH adjustment is required, this occurs before sterilization.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Please note that autoclaving removes carbon dioxide from media lacking
-    carbonate stabilizing buffers.
-- step_number: 8
-  action: AUTOCLAVE
-  description: This would make the medium very alkaline soon after removal from the
-    autoclave.
-- step_number: 9
-  action: MIX
-  description: In these cases, you should wait approximately 24 hours for gaseous
-    equilibrium before inoculating the medium.
+  description: Allow the medium to cool, then add Vitamin B12 and Biotin Vitamin Solution.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -122,7 +329,21 @@ curation_history:
     as the ingredient name, the component name as the amount, and the Amount column
     was never read; concentration was then filled in as G_PER_L regardless. Source:
     https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_organic_score35.py
+  action: RESOLVED_UTEX_ORGANIC_SCORE35
+  changes: Grounded UTEX score-35 organic and Volvox components
+  source: https://utex.org/products/volvox-medium
+  notes: UTEX prepares Volvox Medium at pH 8.0 from calcium nitrate, magnesium sulfate,
+    sodium glycerophosphate, potassium chloride, glycylglycine, P-IV Metal Solution,
+    Vitamin B12, and Biotin Vitamin Solution.
 references:
 - reference: UTEX:volvox-medium
 - reference: https://utex.org/products/volvox-medium
+- reference: https://utex.org/products/p-iv-metal-solution
+- reference: https://utex.org/products/vitamin-b-12
+- reference: https://utex.org/products/biotin-vitamin-solution
 original_name: Volvox Medium
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated

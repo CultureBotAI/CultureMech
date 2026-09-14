@@ -5,34 +5,40 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_range:
+  min: 7.5
+  max: 7.8
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '500'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '500.0'
+    unit: ML_PER_L
+  source: TOGO M458 / JCM Medium 458
+  notes: TOGO M458 / JCM Medium 458 lists 500.0 ml/L Distilled water.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-- preferred_term: MgSO4・7H2O
+- preferred_term: MgSO4 x 7H2O
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  source: TOGO M458 / JCM Medium 458
+  notes: TOGO M458 / JCM Medium 458 lists 0.05 g/L MgSO4 x 7H2O.
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  source: TOGO M458 / JCM Medium 458
+  notes: TOGO M458 / JCM Medium 458 lists 0.2 g/L KH2PO4.
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
@@ -41,15 +47,17 @@ ingredients:
     label: potassium dihydrogen phosphate
 - preferred_term: Seawater
   concentration:
-    value: '500'
-    unit: G_PER_L
-  notes: 'Role: Mineral source, Solvating media; Properties: Undefined component'
+    value: '500.0'
+    unit: ML_PER_L
+  source: TOGO M458 / JCM Medium 458
+  notes: TOGO M458 / JCM Medium 458 lists 500 ml/L seawater as an undefined mineral
+    source and solvent.
 - preferred_term: Glucose
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  source: TOGO M458 / JCM Medium 458
+  notes: TOGO M458 / JCM Medium 458 lists 1.0 g/L Glucose.
   term:
     id: CHEBI:17234
     label: glucose
@@ -58,34 +66,51 @@ ingredients:
     label: glucose
 - preferred_term: Bacto agar (BD-Difco)
   concentration:
-    value: '15'
+    value: '15.0'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  source: TOGO M458 / JCM Medium 458
+  notes: TOGO M458 / JCM Medium 458 lists 15.0 g/L Bacto agar from BD-Difco.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M458 / JCM Medium 458
+  notes: TOGO M458 / JCM Medium 458 lists 2.0 g/L yeast extract from BD-Difco; this
+    commercial mixture is retained as an opaque complex component.
 - preferred_term: Bacto peptone (BD-Difco)
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M458 / JCM Medium 458
+  notes: TOGO M458 / JCM Medium 458 lists 2.0 g/L Bacto peptone from BD-Difco; this
+    peptone is retained as an opaque complex component.
 - preferred_term: Casamino acids (BD-Difco)
   concentration:
-    value: '2'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M458 / JCM Medium 458
+  notes: TOGO M458 / JCM Medium 458 lists 2.0 g/L Casamino acids from BD-Difco; this
+    amino-acid mixture is retained as an opaque complex component.
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.5-7.8.
 media_term:
   preferred_term: TOGO Medium M458
   term:
     id: TOGO:M458
     label: B Medium
-notes: 'Source: https://togomedium.org/medium/M458
-
-  Original source: JCM - JCM_M458
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=458'
+notes: JCM Medium 458 B Medium lists, per liter, 500 ml distilled water, 500 ml seawater,
+  1 g glucose, 0.2 g KH2PO4, 0.05 g MgSO4 x 7H2O, 15 g Bacto agar from BD-Difco, and
+  2 g each of Bacto peptone, Casamino acids, and yeast extract from BD-Difco. Adjust
+  pH to 7.5-7.8. The current JCM GRMD=458 page no longer exposes the recipe, but both
+  TOGO M458 and MediaDive J458 preserve the JCM formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -125,3 +150,31 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m458_score15.py
+  action: RESOLVED_TOGO_M458_SCORE15
+  source: https://togomedium.org/medium/M458; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=458;
+    https://mediadive.dsmz.de/rest/medium/J458
+  notes: JCM Medium 458 B Medium lists, per liter, 500 ml distilled water, 500 ml
+    seawater, 1 g glucose, 0.2 g KH2PO4, 0.05 g MgSO4 x 7H2O, 15 g Bacto agar from
+    BD-Difco, and 2 g each of Bacto peptone, Casamino acids, and yeast extract from
+    BD-Difco. Adjust pH to 7.5-7.8. The current JCM GRMD=458 page no longer exposes
+    the recipe, but both TOGO M458 and MediaDive J458 preserve the JCM formulation.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+references:
+- reference: https://togomedium.org/medium/M458
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=458
+- reference: https://mediadive.dsmz.de/rest/medium/J458
+parent_media:
+  path: data/normalized_yaml/bacterial/b_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002807
+  name: b_medium
+  notes: TOGO M458 imports the same JCM Medium 458 B Medium formulation represented
+    by MediaDive J458.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same JCM Medium 458 B Medium formulation as the MediaDive J458 source record.

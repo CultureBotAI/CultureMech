@@ -6,21 +6,135 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
+- preferred_term: Soluble starch
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: JCM Medium 58
+  notes: JCM Medium 58 prints this component for ISP-4.
+  term:
+    id: CHEBI:28017
+    label: starch
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
+    label: starch
+  nutritional_roles:
+  - CARBON_SOURCE
+- preferred_term: K2HPO4
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 58
+  notes: JCM Medium 58 prints this component for ISP-4.
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 58
+  notes: JCM Medium 58 prints this component for ISP-4.
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  nutritional_roles:
+  - SULFUR_SOURCE
+- preferred_term: NaCl
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 58
+  notes: JCM Medium 58 prints this component for ISP-4.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: JCM Medium 58
+  notes: JCM Medium 58 prints this component for ISP-4.
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  nutritional_roles:
+  - NITROGEN_SOURCE
+  - SULFUR_SOURCE
+- preferred_term: CaCO3
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: JCM Medium 58
+  notes: JCM Medium 58 prints this component for ISP-4.
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: Agar
+  concentration:
+    value: '20.0'
+    unit: G_PER_L
+  source: JCM Medium 58
+  notes: JCM Medium 58 prints this component for ISP-4.
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+  physicochemical_roles:
+  - SOLIDIFYING_AGENT
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: JCM Medium 58
+  notes: JCM Medium 58 prints this component for ISP-4.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  source: JCM Medium 217
+  notes: JCM Medium 217 supplements 1 L of JCM Medium 58 ISP-4 with 0.5 g Yeast extract.
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  nutritional_roles:
+  - NITROGEN_SOURCE
 media_term:
   preferred_term: TOGO Medium M210
   term:
     id: TOGO:M210
     label: Inorganic Salts-Starch Agar (ISP-4) With 0.05% Yeast Extract
-notes: 'Source: https://togomedium.org/medium/M210
-
-  Original source: JCM - JCM_M217
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=217'
+notes: 'TOGO M210 mirrors JCM Medium 217: Inorganic Salts-Starch Agar (ISP-4) with
+  0.05% Yeast Extract supplements JCM Medium 58 ISP-4 with 0.5 g/L Yeast extract.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -50,11 +164,102 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_jcm_isp_supplements_score40.py
+  action: RESOLVED_JCM_ISP_SUPPLEMENTS_SCORE40_GRAPH
+  changes: Resolved score-40 JCM ISP supplement recipe graph
+  source: https://togomedium.org/medium/M210; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=217;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=58
+  notes: 'TOGO M210 mirrors JCM Medium 217: Inorganic Salts-Starch Agar (ISP-4) with
+    0.05% Yeast Extract supplements JCM Medium 58 ISP-4 with 0.5 g/L Yeast extract.'
 solutions:
-- preferred_term: Inorganic salts--starch agar (ISP--4) (see Medium [M50])
-  composition: []
-  notes: Cross-reference to Medium M50
+- preferred_term: Trace salts solution
   concentration:
     value: '1'
-    unit: G_PER_L
-  name: Unknown solution
+    unit: ML_PER_L
+  notes: JCM Medium 58 prepares Trace salts solution from 0.1 g each FeSO4 x 7 H2O,
+    MnCl2 x 4 H2O, and ZnSO4 x 7 H2O in 100 mL distilled water, then adds 1 mL stock
+    per final liter.
+  composition:
+  - preferred_term: FeSO4 x 7 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    source: JCM Medium 58
+    notes: JCM Medium 58 prepares Trace salts solution from 0.1 g each FeSO4 x 7 H2O,
+      MnCl2 x 4 H2O, and ZnSO4 x 7 H2O in 100 mL distilled water, then adds 1 mL stock
+      per final liter.
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    nutritional_roles:
+    - IRON_SOURCE
+    - SULFUR_SOURCE
+    - TRACE_ELEMENT
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    source: JCM Medium 58
+    notes: JCM Medium 58 prepares Trace salts solution from 0.1 g each FeSO4 x 7 H2O,
+      MnCl2 x 4 H2O, and ZnSO4 x 7 H2O in 100 mL distilled water, then adds 1 mL stock
+      per final liter.
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    source: JCM Medium 58
+    notes: JCM Medium 58 prepares Trace salts solution from 0.1 g each FeSO4 x 7 H2O,
+      MnCl2 x 4 H2O, and ZnSO4 x 7 H2O in 100 mL distilled water, then adds 1 mL stock
+      per final liter.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    nutritional_roles:
+    - SULFUR_SOURCE
+    - TRACE_ELEMENT
+  preparation_notes: Prepare the trace-salt stock in 100 mL distilled water; the composition
+    concentrations are normalized to g/L of stock.
+ph_range:
+  min: 7.0
+  max: 7.4
+  notes: JCM Medium 58 says the unadjusted pH will be 7.0-7.4.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix the JCM Medium 58 ISP-4 ingredients with 1 mL/L Trace salts solution.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+sterilization:
+  method: AUTOCLAVE
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+references:
+- reference: https://togomedium.org/medium/M210
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=217
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=58
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M50_Inorganic_Salts-Starch_Agar_ISP-4.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:009900
+  name: inorganic_salts_starch_agar_isp_4
+  notes: JCM Medium 217 supplements JCM Medium 58 ISP-4 with 0.5 g/L Yeast extract.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Supplemented JCM Medium 58 ISP-4 with 0.5 g/L Yeast extract.

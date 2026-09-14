@@ -8,14 +8,17 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Man-Rogosa-Sharpe (MRS) broth
   concentration:
-    value: '1'
-    unit: G_PER_L
+    value: '1000'
+    unit: ML_PER_L
+  source: TOGO M2484
+  notes: TOGO M2484 lists one liter of Man-Rogosa-Sharpe broth.
 media_term:
   preferred_term: TOGO Medium M2484
   term:
     id: TOGO:M2484
     label: Man-Rogosa-Sharpe (MRS) broth
-notes: 'Source: https://togomedium.org/medium/M2484'
+notes: TOGO M2484 records one liter of Man-Rogosa-Sharpe broth; the source does not
+  disclose the product's internal formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -32,3 +35,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Man-Rogosa-Sharpe (MRS) broth" to "man_rogosa_sharpe_mrs_broth"
     for consistent matching
+- timestamp: '2026-09-07T00:00:00-07:00'
+  curator: repair_togo_products_more_score40.py
+  action: RESOLVED_TOGO_PRODUCT_SCORE40_GRAPH
+  changes: Resolved score-40 TOGO product graph
+  source: https://togomedium.org/medium/M2484
+  notes: TOGO M2484 records one liter of Man-Rogosa-Sharpe broth; the source does
+    not disclose the product's internal formulation.
+data_quality_flags:
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2484

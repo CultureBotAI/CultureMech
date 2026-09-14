@@ -367,6 +367,7 @@
                 "MILLIMOLAR",
                 "MICROMOLAR",
                 "PERCENT_W_V",
+                "PERCENT_W_W",
                 "PERCENT_V_V",
                 "ML_PER_L",
                 "MG_PER_ML",
@@ -2663,6 +2664,7 @@
                 "HEAT",
                 "COOL",
                 "AUTOCLAVE",
+                "FILTER",
                 "FILTER_STERILIZE",
                 "ADJUST_PH",
                 "ADD_AGAR",
@@ -2998,6 +3000,23 @@
                         "null"
                     ]
                 },
+                "solutions": {
+                    "description": "Nested stock solutions added while preparing this stock solution",
+                    "items": {
+                        "$ref": "#/$defs/SolutionDescriptor"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "source": {
+                    "description": "Provenance attribution for this solution entry.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "storage_conditions": {
                     "anyOf": [
                         {
@@ -3161,6 +3180,16 @@
                     "description": "Stability duration (e.g., \"6 months at 4\u00b0C\")",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "solutions": {
+                    "description": "Nested stock solutions added while preparing this stock solution",
+                    "items": {
+                        "$ref": "#/$defs/SolutionDescriptor"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },

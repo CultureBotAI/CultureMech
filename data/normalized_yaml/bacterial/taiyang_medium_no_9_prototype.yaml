@@ -4,14 +4,151 @@ original_name: Taiyang Medium No.9 (prototype)
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: public Medium P2
   term:
     id: mediadive.medium:P2
     label: Taiyang Medium No.9 (prototype)
-notes: 'Source: public'
-ingredients: []
+notes: MediaDive public Medium P2 provides a user-provided Taiyang Medium No.9 prototype
+  formulation with clarified rumen fluid, sheep blood, carbohydrate polymers, filtered
+  pyruvate, trehalose, L-Cysteine HCl, Haemin solution, and Artifical Sea Water. MediaDive
+  lists this public medium as not curated/tested and with no valid reference, so only
+  formulation and preparation fields visible on the MediaDive page were curated.
+ingredients:
+- preferred_term: Clarified rumen fluid
+  concentration:
+    value: '25'
+    unit: ML_PER_L
+  source: MediaDive public Medium P2
+- preferred_term: Sheep blood
+  concentration:
+    value: '25'
+    unit: ML_PER_L
+  source: MediaDive public Medium P2
+- preferred_term: Peptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  source: MediaDive public Medium P2
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  source: MediaDive public Medium P2
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  source: MediaDive public Medium P2
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Cellulose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: MediaDive public Medium P2
+  term:
+    id: CHEBI:18246
+    label: Cellulose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18246
+    label: Cellulose
+- preferred_term: Pectin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: MediaDive public Medium P2
+  term:
+    id: CHEBI:17309
+    label: Pectin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17309
+    label: Pectin
+- preferred_term: Starch
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: MediaDive public Medium P2
+  term:
+    id: CHEBI:28017
+    label: Starch
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
+    label: Starch
+- preferred_term: Inulin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: MediaDive public Medium P2
+  term:
+    id: CHEBI:15443
+    label: Inulin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15443
+    label: Inulin
+- preferred_term: Trehalose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: MediaDive public Medium P2
+  term:
+    id: CHEBI:27082
+    label: Trehalose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27082
+    label: Trehalose
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  source: MediaDive public Medium P2
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+- preferred_term: dextrin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: MediaDive public Medium P2
+  term:
+    id: CHEBI:28675
+    label: Dextrin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28675
+    label: Dextrin
+- preferred_term: L-Cysteine HCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: MediaDive public Medium P2
+  term:
+    id: CHEBI:91247
+    label: L-Cysteine HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91247
+    label: L-Cysteine HCl
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  source: MediaDive public Medium P2
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 applications:
 - Microbial cultivation
 curation_history:
@@ -38,5 +175,199 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_mediadive_p2_score35.py
+  action: RESOLVED_MEDIADIVE_P2_SCORE35
+  changes: Resolved score-35 MediaDive P2 placeholder graph
+  source: https://www.bacmedia.dsmz.de/medium/P2
+  notes: MediaDive public Medium P2 provides a user-provided Taiyang Medium No.9 prototype
+    formulation with clarified rumen fluid, sheep blood, carbohydrate polymers, filtered
+    pyruvate, trehalose, L-Cysteine HCl, Haemin solution, and Artifical Sea Water.
+    MediaDive lists this public medium as not curated/tested and with no valid reference,
+    so only formulation and preparation fields visible on the MediaDive page were
+    curated.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+solutions:
+- preferred_term: Artifical Sea Water
+  concentration:
+    value: '50'
+    unit: ML_PER_L
+  notes: P2 adds 50 ml Artifical Sea Water to 1 L Taiyang Medium No.9.
+  composition:
+  - preferred_term: NaCl
+    concentration:
+      value: '23.47'
+      unit: G_PER_L
+    source: MediaDive public Medium P2
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: Na2SO4
+    concentration:
+      value: '3.92'
+      unit: G_PER_L
+    source: MediaDive public Medium P2
+    term:
+      id: CHEBI:32149
+      label: sodium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32149
+      label: sodium sulfate
+  - preferred_term: MgCl2 x 6 H2O
+    concentration:
+      value: '10.64'
+      unit: G_PER_L
+    source: MediaDive public Medium P2
+    term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+  - preferred_term: CaCl2
+    concentration:
+      value: '1.10'
+      unit: G_PER_L
+    source: MediaDive public Medium P2
+    term:
+      id: CHEBI:3312
+      label: calcium dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:3312
+      label: calcium dichloride
+  - preferred_term: NaHCO3
+    concentration:
+      value: '0.192'
+      unit: G_PER_L
+    source: MediaDive public Medium P2
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+  - preferred_term: KCl
+    concentration:
+      value: '0.664'
+      unit: G_PER_L
+    source: MediaDive public Medium P2
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+  - preferred_term: KBr
+    concentration:
+      value: '0.096'
+      unit: G_PER_L
+    source: MediaDive public Medium P2
+    term:
+      id: CHEBI:32030
+      label: potassium bromide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32030
+      label: potassium bromide
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.026'
+      unit: G_PER_L
+    source: MediaDive public Medium P2
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: SrCl2
+    concentration:
+      value: '0.024'
+      unit: G_PER_L
+    source: MediaDive public Medium P2
+    term:
+      id: CHEBI:36383
+      label: strontium dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:36383
+      label: strontium dichloride
+  - preferred_term: NaF
+    concentration:
+      value: '0.003'
+      unit: G_PER_L
+    source: MediaDive public Medium P2
+    term:
+      id: CHEBI:28741
+      label: sodium fluoride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:28741
+      label: sodium fluoride
+- preferred_term: Haemin solution
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  notes: P2 adds 10 ml Haemin solution to 1 L Taiyang Medium No.9.
+  composition:
+  - preferred_term: Haemin
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    source: MediaDive public Medium P2
+    term:
+      id: CHEBI:50385
+      label: hemin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:50385
+      label: hemin
+  - preferred_term: NaOH (1 N)
+    concentration:
+      value: '10'
+      unit: ML_PER_L
+    source: MediaDive public Medium P2
+    notes: P2 dissolves 50 mg Haemin in 1 ml 1 N NaOH and fills the stock to 100 ml.
+    term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve all Artifical Sea Water components in water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the Artifical Sea Water at 121 C for 20 min and store at
+    room temperature.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Dissolve 50 mg Haemin in 1 ml 1 N NaOH, make up to 100 ml with distilled
+    water, filter sterilize, and store refrigerated.
+- step_number: 4
+  action: MIX
+  description: Mix clarified rumen fluid, 50 ml Artifical Sea Water, peptone, yeast
+    extract, NaCl, cellulose, pectin, starch, inulin, dextrin, agar, and water; leave
+    out trehalose, sodium pyruvate, L-Cysteine HCl, sheep blood, and Haemin solution
+    until after autoclaving.
+- step_number: 5
+  action: AUTOCLAVE
+  description: Autoclave the main medium at 121 C for 15 min.
+- step_number: 6
+  action: MIX
+  description: Add filter-sterilized trehalose, sodium pyruvate, L-Cysteine HCl, and
+    Haemin solution, then add sheep blood after autoclaving.
+- step_number: 7
+  action: STORE
+  description: Place the completed medium or agar in an anaerobic workstation before
+    use.
+sterilization:
+  method: AUTOCLAVE
+  notes: The main medium is autoclaved; trehalose, sodium pyruvate, L-Cysteine HCl,
+    sheep blood, and Haemin solution are added after autoclaving.
+references:
+- reference: https://www.bacmedia.dsmz.de/medium/P2

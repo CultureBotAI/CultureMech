@@ -106,7 +106,8 @@ curation_history:
 - timestamp: '2026-06-14T05:58:58.561437+00:00'
   curator: idnf-grounding-fix-v1.0
   action: Fixed ID_NOT_FOUND term groundings
-  notes: 'Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI, 1 de-grounded (mixture or unverifiable).'
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-26T17:53:15.680102Z'
   curator: mediadive-import
   action: Imported from MediaDive
@@ -135,8 +136,19 @@ curation_history:
   curator: migrate_data_quality_flags.py
   action: MIGRATED_DATA_QUALITY_FLAGS
   notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_columbia_blood_score40.py
+  action: LINKED_COLUMBIA_BLOOD_SCORE40_SOURCE_DUPLICATE
+  changes: Linked score-40 Columbia/Blood Agar TOGO source duplicate
+  notes: Added or refreshed reciprocal source-duplicate link for bacterial/TOGO_M62_Blood_Agar.yaml.
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
 - commercial_product
 kg_microbe_match: mediadive.medium:101
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M62_Blood_Agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010030
+  name: blood_agar
+  notes: TOGO import of the same source-catalogue formulation.

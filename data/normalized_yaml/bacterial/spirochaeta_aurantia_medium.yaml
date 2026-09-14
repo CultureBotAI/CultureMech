@@ -13,9 +13,35 @@ media_term:
   term:
     id: komodo.medium:168
     label: SPIROCHAETA AURANTIA medium
-notes: 'Source: KOMODO ModelSEED | ID: 168 | DSMZ Medium: 168 (mediadive.medium:168)
-  | Aerobic: No'
-ingredients: []
+notes: DSMZ Medium 168 provides the Spirochaeta aurantia liquid recipe with Solution
+  A, a 1 M K-phosphate buffer stock, final pH 7.0-7.3, and anaerobic N2 handling.
+  The PDF's optional 12 g/L agar addition for solid medium was not imported into this
+  liquid base record.
+ingredients:
+- preferred_term: D-Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  source: DSMZ Medium 168 PDF
+  term:
+    id: CHEBI:17634
+    label: D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
+    label: D-glucose
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  source: DSMZ Medium 168 PDF
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Trypticase peptone (BD BBL)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  source: DSMZ Medium 168 PDF
 applications:
 - Microbial cultivation
 curation_history:
@@ -42,5 +68,66 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-08T00:00:00-07:00'
+  curator: repair_dsmz_spirochaeta_score30.py
+  action: RESOLVED_DSMZ_LEGACY_SCORE30
+  changes: Resolved score-30 DSMZ legacy placeholder graph
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium168.pdf
+  notes: DSMZ Medium 168 provides the Spirochaeta aurantia liquid recipe with Solution
+    A, a 1 M K-phosphate buffer stock, final pH 7.0-7.3, and anaerobic N2 handling.
+    The PDF's optional 12 g/L agar addition for solid medium was not imported into
+    this liquid base record.
 data_quality_flags:
-- incomplete_composition
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+incubation_atmosphere: ANAEROBIC
+solutions:
+- preferred_term: 1 M K-phosphate buffer, pH 7.0
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  notes: DSMZ 168 combines 6.15 ml 1 M K2HPO4 and 3.85 ml 1 M KH2PO4 stock to produce
+    the pH 7.0 buffer, then adds 10 ml of this Solution B to Solution A.
+  composition:
+  - preferred_term: K2HPO4
+    concentration:
+      value: '615'
+      unit: MILLIMOLAR
+    source: DSMZ Medium 168 PDF
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+  - preferred_term: KH2PO4
+    concentration:
+      value: '385'
+      unit: MILLIMOLAR
+    source: DSMZ Medium 168 PDF
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare Solution A and adjust its pH to 7.5 with KOH.
+- step_number: 2
+  action: MIX
+  description: Prepare the 1 M K-phosphate buffer at about pH 7.0 from 1 M K2HPO4
+    and 1 M KH2PO4 stocks.
+- step_number: 3
+  action: MIX
+  description: For anaerobic cultivation, sparge Solutions A and B for 30-45 min with
+    100% N2 gas and distribute Solution A into anoxic Hungate-type tubes or serum
+    vials.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave Solutions A and B separately at 121 C for 15 min and combine
+    them after sterilization.
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium168.pdf

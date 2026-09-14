@@ -112,3 +112,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_official_simple_backlinks.py
+  action: ADDED_OFFICIAL_SIMPLE_BACKLINKS
+  changes: Added reciprocal variant_children links
+  source: JCM Medium 68-69 and TOGO Medium M61
+  notes: Mirrored curated official-simple parent_media links on the parent record.
+variant_children:
+- path: data/normalized_yaml/bacterial/jcm_medium_no_69.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:003045
+  name: jcm_medium_no_69
+  notes: Supplements 1.0 L GYP-sodium acetate-mineral salts broth with 50.0 g/L NaCl.
+- path: data/normalized_yaml/bacterial/togo_medium_m61.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:010019
+  name: togo_medium_m61
+  notes: Supplements 1.0 L GYP-sodium acetate-mineral salts broth with 50.0 g/L NaCl.

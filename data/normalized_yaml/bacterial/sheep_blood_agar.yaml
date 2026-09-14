@@ -6,25 +6,31 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: CO2
-  concentration:
-    value: '5'
-    unit: PERCENT_W_V
-  notes: 'Properties: Gas'
-  term:
-    id: CHEBI:16526
-    label: carbon dioxide
 - preferred_term: sheep blood agar
-  notes: 'Properties: Undefined component, Complex component'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M2510
+  notes: TOGO M2510 names sheep blood agar but does not state an amount.
+- preferred_term: CO2
+  concentration:
+    value: '5'
+    unit: PERCENT_V_V
+  source: TOGO M2510
+  notes: TOGO M2510 records propagation in 5% CO2.
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
 media_term:
   preferred_term: TOGO Medium M2510
   term:
     id: TOGO:M2510
     label: sheep blood agar
-notes: 'Source: https://togomedium.org/medium/M2510'
+notes: TOGO M2510 records overnight growth on sheep blood agar at 37 C in 5% CO2;
+  the source does not disclose the sheep blood agar formulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -49,3 +55,17 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_togo_sparse_score20.py
+  action: RESOLVED_TOGO_SPARSE_SCORE20
+  changes: Resolved sparse score-20 TOGO product record
+  source: https://togomedium.org/medium/M2510
+  notes: TOGO M2510 records overnight growth on sheep blood agar at 37 C in 5% CO2;
+    the source does not disclose the sheep blood agar formulation.
+temperature_value: 37.0
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M2510

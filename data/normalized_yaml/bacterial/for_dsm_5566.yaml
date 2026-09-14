@@ -290,12 +290,20 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_78_dsm_5566_score10.py
+  action: RESOLVED_KOMODO_78_DSM_5566_PH_VARIANT
+  changes: Linked under KOMODO Medium 78 CHOPPED MEAT medium
+  source: KOMODO Medium 78.2
+  notes: KOMODO Medium 78.2 applies CHOPPED MEAT medium at pH 7.2 for DSM 5566.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_78_CHOPPED_MEAT_medium.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: PH_VARIANT
   id: CultureMech:006491
   name: chopped_meat_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: KOMODO Medium 78 is the CHOPPED MEAT medium base.
+variant_relationship: PH_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 78.2 applies CHOPPED MEAT medium at pH 7.2 for DSM 5566.
+data_quality_flags:
+- ingredients_curated

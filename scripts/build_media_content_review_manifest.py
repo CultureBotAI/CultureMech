@@ -24,6 +24,7 @@ from triage_missing_compositions import has_no_usable_composition
 REPO_ROOT = Path(__file__).resolve().parent.parent
 YAML_ROOT = REPO_ROOT / "data" / "normalized_yaml"
 REPORTS_DIR = REPO_ROOT / "reports"
+YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 RECORD_COLUMNS = [
     "yaml_path",
@@ -76,11 +77,11 @@ RECORD_COLUMNS = [
     "has_variant_fingerprint",
     "ingredient_identity_signature",
     "ingredient_concentration_signature",
-    "review_status",
     "issue_count",
     "issue_codes",
     "issue_locations",
     "load_error",
+    "review_status",
 ]
 
 GROUP_COLUMNS = [
@@ -120,7 +121,7 @@ BLOCKING_ISSUES = {
 
 
 def schema_review_config(schema_path: Path) -> tuple[set[str], set[str], set[str]]:
-    schema = yaml.safe_load(schema_path.read_text()) or {}
+    schema = yaml.load(schema_path.read_text(), Loader=YAML_LOADER) or {}
     enum = (schema.get("enums") or {}).get("ConcentrationUnitEnum") or {}
     permissible = enum.get("permissible_values") or {}
     classes = schema.get("classes") or {}
@@ -218,13 +219,24 @@ def iter_components(recipe: dict[str, Any]):
     if not isinstance(solutions, list):
         return
     for si, sol in enumerate(solutions):
-        yield f"solutions[{si}]", sol, "SOLUTION"
-        if not isinstance(sol, dict):
-            continue
-        nested_key, nested = nested_solution_components(sol)
-        if isinstance(nested, list):
-            for ci, component in enumerate(nested):
-                yield f"solutions[{si}].{nested_key}[{ci}]", component, "INGREDIENT"
+        yield from iter_solution_components(sol, f"solutions[{si}]")
+
+
+def iter_solution_components(solution: dict[str, Any], path: str):
+    yield path, solution, "SOLUTION"
+    if not isinstance(solution, dict):
+        return
+
+    nested_key, nested = nested_solution_components(solution)
+    if isinstance(nested, list):
+        for ci, component in enumerate(nested):
+            yield f"{path}.{nested_key}[{ci}]", component, "INGREDIENT"
+
+    child_solutions = solution.get("solutions")
+    if not isinstance(child_solutions, list):
+        return
+    for si, sol in enumerate(child_solutions):
+        yield from iter_solution_components(sol, f"{path}.solutions[{si}]")
 
 
 def signature(parts: list[str]) -> str:
@@ -246,7 +258,7 @@ def summarize_record(
     row["category_dir"] = path.parent.name
 
     try:
-        recipe = yaml.safe_load(path.read_text())
+        recipe = yaml.load(path.read_text(), Loader=YAML_LOADER)
     except Exception as exc:  # noqa: BLE001 - audit should record bad YAMLs.
         row["load_error"] = str(exc)
         row["review_status"] = "BLOCKING"
@@ -881,7 +893,12 @@ def main() -> int:
     if args.out is not None:
         args.out.parent.mkdir(parents=True, exist_ok=True)
         with args.out.open("w", newline="") as handle:
-            writer = csv.DictWriter(handle, fieldnames=RECORD_COLUMNS, delimiter="\t")
+            writer = csv.DictWriter(
+                handle,
+                fieldnames=RECORD_COLUMNS,
+                delimiter="\t",
+                lineterminator="\n",
+            )
             writer.writeheader()
             writer.writerows(rows)
         return 0
@@ -896,13 +913,23 @@ def main() -> int:
     summary_md = args.reports_dir / "media_content_review_manifest_summary.md"
 
     with manifest_tsv.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=RECORD_COLUMNS, delimiter="\t")
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=RECORD_COLUMNS,
+            delimiter="\t",
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(rows)
     manifest_json.write_text(json.dumps(rows, indent=2, sort_keys=True) + "\n")
 
     with groups_tsv.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=GROUP_COLUMNS, delimiter="\t")
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=GROUP_COLUMNS,
+            delimiter="\t",
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(groups)
     groups_json.write_text(json.dumps(groups, indent=2, sort_keys=True) + "\n")

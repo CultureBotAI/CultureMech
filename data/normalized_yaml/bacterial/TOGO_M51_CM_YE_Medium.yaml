@@ -153,6 +153,11 @@ curation_history:
   notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
     magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
     labels untouched.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_bacterial_togo_score40.py
+  action: LINKED_BACTERIAL_TOGO_SCORE40_CHILDREN
+  changes: Linked score-40 bacterial TOGO children to source parents
+  notes: Added or refreshed reciprocal parent-child link for bacterial/TOGO_M1326_CM_YE_Medium_pH_9.yaml.
 high_metal: true
 solutions:
 - preferred_term: Fe(2+) solution (see below)
@@ -168,6 +173,11 @@ variant_children:
   name: modified_cm_ye_medium_a
   notes: NaCl decreased from 200 g/L to 150 g/L while CM+YE medium components remain
     unchanged.
+- path: data/normalized_yaml/bacterial/TOGO_M1326_CM_YE_Medium_pH_9.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:007861
+  name: cm_ye_medium_ph_9
+  notes: Adjusts TOGO M51 CM+YE Medium to pH 9.0 with sterilized 10% Na2CO3 solution.
 - path: data/normalized_yaml/bacterial/TOGO_M268_Modified_CM_YE_Medium_B.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:009242

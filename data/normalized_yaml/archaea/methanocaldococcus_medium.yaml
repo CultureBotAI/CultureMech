@@ -412,12 +412,17 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-parent_media:
-  path: data/normalized_yaml/bacterial/for_dsm_22549.yaml
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_282_methanococcus_score10.py
+  action: RESOLVED_KOMODO_282_METHANOCOCCUS_TOPOLOGY
+  changes: Re-rooted KOMODO Medium 282 exact topology under DSMZ Medium 282
+  source: DSMZ Medium 282; KOMODO Medium 282
+  notes: Pointed the KOMODO Medium 282 child link at the archaeal file.
+variant_children:
+- path: data/normalized_yaml/archaea/methanococcus_jannaschii_medium.yaml
   relationship: SOURCE_DUPLICATE
-  id: CultureMech:004736
-  name: for_dsm_22549
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+  id: CultureMech:004739
+  name: methanococcus_jannaschii_medium
+  notes: KOMODO Medium 282 has the same 34-ingredient signature as DSMZ Medium 282.
+data_quality_flags:
+- ingredients_curated

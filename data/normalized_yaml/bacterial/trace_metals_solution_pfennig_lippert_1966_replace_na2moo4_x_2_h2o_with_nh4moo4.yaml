@@ -3,33 +3,172 @@ name: trace_metals_solution_pfennig_lippert_1966_replace_na2moo4_x_2_h2o_with_nh
 original_name: Trace metals solution (Pfennig & Lippert, 1966)_replace_Na2MoO4 x 2
   H2O_with_NH4MoO4
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 3.0
   max: 4.0
-notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
-  | DSMZ Medium: 2072 (mediadive.medium:2072) | Aerobic: No'
+notes: KOMODO 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4 lists the generated Trace
+  metals solution variant at pH 3.0-4.0. Its metabolite table contains 5.00 g/L EDTA,
+  2.00 g/L FeSO4 x 7 H2O, 0.30 g/L H3BO3, 0.20 g/L CoCl2 x 6 H2O, 0.10 g/L ZnSO4,
+  0.03 g/L MnCl2, 0.02 g/L NiCl2 x 2 H2O, 0.02 g/L NH4MoO4, 0.01 g/L CuCl2, variable
+  HCl, and H2O.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the 1 L Pfennig and Lippert trace metals stock from H2O, HCl,
+    EDTA, the cobalt, manganese, copper, iron, nickel, zinc, molybdate, and borate
+    salts listed by KOMODO.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust the Pfennig and Lippert trace metals stock to pH 3.0-4.0 with
+    HCl as needed.
 media_term:
   preferred_term: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
   term:
     id: komodo.medium:2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
     label: Trace metals solution (Pfennig & Lippert, 1966)_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
 ingredients:
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '0.20'
+    unit: G_PER_L
+  source: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
+  notes: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4 lists 0.20 g/L CoCl2
+    x 6 H2O.
+  term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: HCl
-  notes: Extracted from recipe notes (pH buffer)
-  data_quality_flags:
-  - extracted_from_notes
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17883
-    label: hydrogen chloride
+  source: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
+  notes: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4 lists HCl without
+    a gram amount and also identifies HCl as the pH adjuster for pH 3.0-4.0.
   term:
     id: CHEBI:17883
     label: hydrogen chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+- preferred_term: MnCl2
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  source: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
+  notes: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4 lists 0.03 g/L MnCl2.
+  term:
+    id: CHEBI:63041
+    label: manganese(II) chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63041
+    label: manganese(II) chloride
+- preferred_term: EDTA
+  concentration:
+    value: '5.00'
+    unit: G_PER_L
+  source: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
+  notes: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4 lists 5.00 g/L EDTA.
+  term:
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
+- preferred_term: H2O
+  concentration:
+    value: '1.0'
+    unit: L
+  source: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
+  notes: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4 lists H2O without
+    a gram amount; normalized here as the solvent for 1 L of Pfennig and Lippert trace
+    metals stock.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: NH4MoO4
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  source: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
+  notes: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4 lists 0.02 g/L NH4MoO4.
+  term:
+    id: CHEBI:91249
+    label: ammonium molybdate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91249
+    label: ammonium molybdate
+- preferred_term: CuCl2
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
+  notes: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4 lists 0.01 g/L CuCl2.
+  term:
+    id: CHEBI:49553
+    label: copper(II) chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49553
+    label: copper(II) chloride
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '2.00'
+    unit: G_PER_L
+  source: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
+  notes: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4 lists 2.00 g/L FeSO4
+    x 7 H2O.
+  term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+- preferred_term: ZnSO4
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
+  notes: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4 lists 0.10 g/L ZnSO4.
+  term:
+    id: CHEBI:35176
+    label: zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: zinc sulfate
+- preferred_term: NiCl2 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  source: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
+  notes: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4 lists 0.02 g/L NiCl2
+    x 2 H2O.
+  term:
+    id: CHEBI:34887
+    label: nickel dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+- preferred_term: H3BO3
+  concentration:
+    value: '0.30'
+    unit: G_PER_L
+  source: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
+  notes: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4 lists 0.30 g/L H3BO3.
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 applications:
 - Microbial cultivation
 curation_history:
@@ -69,3 +208,15 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_komodo_2072_score15.py
+  action: RESOLVED_KOMODO_2072_SCORE15
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2072_replace_Na2MoO4%20x%202%20H2O_with_NH4MoO4
+  notes: Replaced the HCl-only pH-buffer import with the complete KOMODO Medium 2072_replace_Na2MoO4
+    x 2 H2O_with_NH4MoO4 metabolite table; preserved HCl as a variable listed component
+    and pH adjuster; and grounded all disclosed components through MediaIngredientMech.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2072_replace_Na2MoO4%20x%202%20H2O_with_NH4MoO4

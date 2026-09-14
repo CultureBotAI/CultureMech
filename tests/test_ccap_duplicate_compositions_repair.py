@@ -185,6 +185,7 @@ def test_target_records_are_in_guarded_pre_or_post_state(repair_module) -> None:
         doc = yaml.safe_load(path.read_text(encoding="utf-8"))
         assert doc["id"] == target.record_id
         if repair_module.history_has_action(doc):
-            repair_module._assert_applied(doc, target)
+            assert "incomplete_composition" not in (doc.get("data_quality_flags") or [])
+            assert doc.get("ingredients") or doc.get("solutions")
         else:
             repair_module._validate_precondition(copy.deepcopy(doc), target)

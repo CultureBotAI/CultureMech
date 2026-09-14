@@ -3,65 +3,109 @@ name: mda
 original_name: MDA
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1816
   term:
     id: mediadive.medium:1816
     label: MDA
-notes: 'Source: DSMZ'
+notes: 'MediaDive DSMZ Medium 1816 records MDA as an official DSMZ medium whose Main
+  sol. 1816 formula is a 500 ml source batch: 18 g malt extract, 5 g Bacto peptone,
+  10 g Desicatted Ox-bile, 5 g Tween 40, 1 ml glycerol, 1 ml olive oil, 0.25 g (-)-Chloramphenicol,
+  7.5 g agar, and 500 ml distilled water. Concentrations are normalized here to one
+  liter. MediaDive reports final pH as n.d.'
 ingredients:
 - preferred_term: Malt extract
   concentration:
-    value: '18'
+    value: '36'
     unit: G_PER_L
+  source: MediaDive DSMZ Medium 1816
+  notes: MediaDive DSMZ Medium 1816 lists 36 g/L Malt extract.
+  term:
+    id: FOODON:03301056
+    label: malt extract
 - preferred_term: Bacto peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Desicatted Ox-bile
   concentration:
     value: '10'
     unit: G_PER_L
+  source: MediaDive DSMZ Medium 1816
+  notes: MediaDive DSMZ Medium 1816 lists 10 g/L Bacto peptone.
+  term:
+    id: MICRO:0000178
+    label: Bacto peptone
+- preferred_term: Desicatted Ox-bile
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  source: MediaDive DSMZ Medium 1816
+  notes: MediaDive DSMZ Medium 1816 lists 20 g/L Desicatted Ox-bile.
 - preferred_term: Tween 40
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  source: MediaDive DSMZ Medium 1816
+  notes: MediaDive DSMZ Medium 1816 lists 10 g/L Tween 40.
   term:
     id: CHEBI:53423
     label: polysorbate 40
-  concentration:
-    value: '5'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53423
     label: polysorbate 40
 - preferred_term: Glycerol
+  concentration:
+    value: '2'
+    unit: ML_PER_L
+  source: MediaDive DSMZ Medium 1816
+  notes: MediaDive DSMZ Medium 1816 lists 2 ml/L Glycerol.
   term:
     id: CHEBI:17754
     label: glycerol
-  concentration:
-    value: '1'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
     label: glycerol
 - preferred_term: Olive oil
   concentration:
-    value: '1'
-    unit: G_PER_L
+    value: '2'
+    unit: ML_PER_L
+  source: MediaDive DSMZ Medium 1816
+  notes: MediaDive DSMZ Medium 1816 lists 2 ml/L Olive oil.
 - preferred_term: (-)-Chloramphenicol
   concentration:
-    value: '0.25'
+    value: '0.5'
     unit: G_PER_L
+  source: MediaDive DSMZ Medium 1816
+  notes: MediaDive DSMZ Medium 1816 lists 0.5 g/L (-)-Chloramphenicol.
+  term:
+    id: CHEBI:17698
+    label: chloramphenicol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17698
+    label: chloramphenicol
 - preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  source: MediaDive DSMZ Medium 1816
+  notes: MediaDive DSMZ Medium 1816 lists 15 g/L Agar.
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '7.5'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  source: MediaDive DSMZ Medium 1816
+  notes: MediaDive DSMZ Medium 1816 lists 1000 ml/L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 applications:
 - Microbial cultivation
 curation_history:
@@ -87,3 +131,18 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-12T00:00:00-07:00'
+  curator: repair_mediadive_1816_mda_score15.py
+  action: RESOLVED_MEDIADIVE_1816_MDA_SCORE15
+  source: https://mediadive.dsmz.de/medium/1816; https://mediadive.dsmz.de/solutions/6326
+  notes: Corrected the MediaDive 500 ml source batch to per-liter concentrations,
+    restored Distilled water as a measured ml/L component, preserved source names
+    for the Desicatted Ox-bile and olive-oil mixture rows, and grounded exact malt
+    extract, Bacto peptone, Tween 40, glycerol, chloramphenicol, agar, and water components.
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: https://mediadive.dsmz.de/medium/1816
+- reference: https://mediadive.dsmz.de/solutions/6326

@@ -8,10 +8,10 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '925'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '925.0'
+    unit: ML_PER_L
+  source: TOGO M873 / JCM Medium 837
+  notes: TOGO M873 / JCM Medium 837 lists 925.0 ml/L Distilled water.
   term:
     id: CHEBI:15377
     label: water
@@ -21,47 +21,70 @@ ingredients:
 - preferred_term: Resazurin
   concentration:
     value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Simple
-    component, Defined component'
+    unit: MG_PER_L
+  source: TOGO M873 / JCM Medium 837
+  notes: TOGO M873 / JCM Medium 837 lists 0.5 mg/L Resazurin.
   term:
     id: CHEBI:8806
     label: Resazurin
   mediaingredientmech_chebi_term:
     id: CHEBI:8806
     label: Resazurin
+  physicochemical_roles:
+  - REDOX_INDICATOR
 - preferred_term: Sea salts (Sigma)
   concentration:
-    value: '35'
+    value: '35.0'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Complex component, Defined component'
+  source: TOGO M873 / JCM Medium 837
+  notes: TOGO M873 / JCM Medium 837 lists 35.0 g/L Sea salts (Sigma).
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  source: TOGO M873 / JCM Medium 837
+  notes: TOGO M873 / JCM Medium 837 lists 1.0 g/L Yeast extract (BD-Difco).
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+  nutritional_roles:
+  - PROTEIN_SOURCE
+  - VITAMIN_SOURCE
 - preferred_term: N2
-  notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M873 / JCM Medium 837
+  notes: TOGO M873 / JCM Medium 837 lists N2 as a gas with no fixed concentration.
   term:
     id: CHEBI:17997
     label: dinitrogen
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17997
+    label: dinitrogen
 - preferred_term: Carbon dioxide gas
-  notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M873 / JCM Medium 837
+  notes: TOGO M873 / JCM Medium 837 lists Carbon dioxide gas as a gas with no fixed
+    concentration.
   term:
     id: CHEBI:16526
     label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  source: TOGO M873 / JCM Medium 837
+  notes: TOGO M873 / JCM Medium 837 lists Nitrogen gas as a gas with no fixed concentration.
   term:
+    id: CHEBI:17997
+    label: dinitrogen
+  mediaingredientmech_chebi_term:
     id: CHEBI:17997
     label: dinitrogen
 media_term:
@@ -69,11 +92,11 @@ media_term:
   term:
     id: TOGO:M873
     label: Syfac Medium
-notes: 'Source: https://togomedium.org/medium/M873
-
-  Original source: JCM - JCM_M837
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=837'
+notes: JCM Medium 837 / SYFAC Medium lists 925.0 ml/L distilled water, 0.5 mg/L resazurin,
+  35.0 g/L Sigma sea salts, 1.0 g/L BD-Difco yeast extract, 1.0 ml/L Wolfe's mineral
+  elixir, N2 gas, and sterile anaerobic 8% NaHCO3, 1 M sodium acetate, 1 M sodium
+  fumarate, Trace vitamins, and 5% Na2S x 9 H2O stock additions; MediaDive J837 reports
+  the same JCM recipe.
 applications:
 - Microbial cultivation
 curation_history:
@@ -123,47 +146,529 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-11T00:00:00-07:00'
+  curator: repair_togo_m873_syfac_score15.py
+  action: RESOLVED_TOGO_M873_SYFAC_MEDIUM
+  source: https://togomedium.org/medium/M873; https://mediadive.dsmz.de/medium/J837;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=837; https://togomedium.org/medium/M471;
+    https://togomedium.org/medium/M190
+  notes: Corrected water from 925 g/L to 925.0 ml/L, corrected resazurin from 0.5
+    g/L to 0.5 mg/L, converted the empty stock-solution placeholders to ml/L stock
+    additions with inline compositions, and linked the MediaDive J837 source duplicate.
 solutions:
-- preferred_term: Wolfe's mineral elixir (see Medium [M471])
-  composition: []
-  notes: Cross-reference to Medium M471
+- preferred_term: Wolfe's mineral elixir
   concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: 8% NaHCO3 solution*
-  composition: []
+    value: '1.0'
+    unit: ML_PER_L
+  source: TOGO M873 / JCM Medium 837
+  notes: TOGO M873 / JCM Medium 837 adds 1.0 ml/L Wolfe's mineral elixir from JCM
+    Medium 470 / TOGO M471.
+  composition:
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '30.0'
+      unit: G_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 30.0 g/L MgSO4 x 7 H2O.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: MnSO4 x n H2O
+    concentration:
+      value: '5.0'
+      unit: G_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 5.0 g/L MnSO4 x n H2O.
+    term:
+      id: CHEBI:86360
+      label: manganese(II) sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86360
+      label: manganese(II) sulfate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: NaCl
+    concentration:
+      value: '10.0'
+      unit: G_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 10.0 g/L NaCl.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: FeSO4 x 7 H2O
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 1.0 g/L FeSO4 x 7 H2O.
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    nutritional_roles:
+    - IRON_SOURCE
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '1.8'
+      unit: G_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 1.8 g/L CoCl2 x 6 H2O.
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CaCl2 x 2 H2O
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 1.0 g/L CaCl2 x 2 H2O.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '1.8'
+      unit: G_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 1.8 g/L ZnSO4 x 7 H2O.
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CuSO4 x 5 H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 0.1 g/L CuSO4 x 5 H2O.
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: AlK(SO4)2 x 12 H2O
+    concentration:
+      value: '0.18'
+      unit: G_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 0.18 g/L AlK(SO4)2 x 12 H2O.
+    term:
+      id: CHEBI:86465
+      label: potassium aluminium sulfate dodecahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86465
+      label: potassium aluminium sulfate dodecahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 0.1 g/L H3BO3.
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 0.1 g/L Na2MoO4 x 2 H2O.
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
+    concentration:
+      value: '2.8'
+      unit: G_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 2.8 g/L (NH4)2Ni(SO4)2 x 6 H2O.
+    term:
+      id: CHEBI:86149
+      label: ammonium nickel sulfate hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86149
+      label: ammonium nickel sulfate hexahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Na2WO4 x 2 H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 0.1 g/L Na2WO4 x 2 H2O.
+    term:
+      id: CHEBI:63939
+      label: sodium tungstate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63939
+      label: sodium tungstate dihydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Na2SeO4
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 0.1 g/L Na2SeO4.
+    term:
+      id: CHEBI:77775
+      label: sodium selenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:77775
+      label: sodium selenate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 1000.0 ml/L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  term:
+    id: mediadive.solution:4221
+    label: Wolfe's mineral elixir
+  culturemech_term:
+    id: CultureMech:013242
+    label: Wolfe's mineral elixir
+- preferred_term: 8% NaHCO3 solution
   concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-  name: Unknown solution
+    value: '25.0'
+    unit: ML_PER_L
+  source: TOGO M873 / JCM Medium 837
+  notes: TOGO M873 / JCM Medium 837 adds 25.0 ml/L sterile anaerobic 8% NaHCO3 stock.
+  composition:
+  - preferred_term: NaHCO3
+    concentration:
+      value: '80.0'
+      unit: G_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 80.0 g/L NaHCO3.
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    physicochemical_roles:
+    - BUFFER
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: 1 M Sodium acetate solution
-  composition: []
   concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Solution'
-  name: Unknown solution
+    value: '20.0'
+    unit: ML_PER_L
+  source: TOGO M873 / JCM Medium 837
+  notes: TOGO M873 / JCM Medium 837 adds 20.0 ml/L 1 M sodium acetate solution.
+  composition:
+  - preferred_term: Sodium acetate
+    concentration:
+      value: '1.0'
+      unit: MOLAR
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 1.0 M Sodium acetate.
+    term:
+      id: CHEBI:32954
+      label: sodium acetate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32954
+      label: sodium acetate
+    physicochemical_roles:
+    - BUFFER
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: 1 M Sodium fumarate solution
-  composition: []
   concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Solution'
-  name: Unknown solution
-- preferred_term: Trace vitamins (see Medium [M190])
-  composition: []
-  notes: Cross-reference to Medium M190
+    value: '20.0'
+    unit: ML_PER_L
+  source: TOGO M873 / JCM Medium 837
+  notes: TOGO M873 / JCM Medium 837 adds 20.0 ml/L 1 M sodium fumarate solution.
+  composition:
+  - preferred_term: Sodium fumarate
+    concentration:
+      value: '1.0'
+      unit: MOLAR
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 1.0 M Sodium fumarate.
+    term:
+      id: CHEBI:115156
+      label: disodium fumarate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:115156
+      label: disodium fumarate
+  term:
+    id: CHEBI:115156
+    label: disodium fumarate
+- preferred_term: Trace vitamins
   concentration:
-    value: '10'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: 5% Na2S・9H2O solution
-  composition: []
+    value: '10.0'
+    unit: ML_PER_L
+  source: TOGO M873 / JCM Medium 837
+  notes: TOGO M873 / JCM Medium 837 adds 10.0 ml/L Trace vitamins from JCM Medium
+    197.
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 2.0 mg/L Biotin.
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Folic acid
+    concentration:
+      value: '2.0'
+      unit: MG_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 2.0 mg/L Folic acid.
+    term:
+      id: CHEBI:27470
+      label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Pyridoxine hydrochloride
+    concentration:
+      value: '10.0'
+      unit: MG_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 10.0 mg/L Pyridoxine hydrochloride.
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Thiamine HCl
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 5.0 mg/L Thiamine HCl.
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Riboflavin
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 5.0 mg/L Riboflavin.
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 5.0 mg/L Nicotinic acid.
+    term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Calcium pantothenate
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 5.0 mg/L Calcium pantothenate.
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.1'
+      unit: MG_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 0.1 mg/L Vitamin B12.
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+    nutritional_roles:
+    - VITAMIN_SOURCE
+    - COFACTOR_PROVIDER
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 5.0 mg/L p-Aminobenzoic acid.
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    nutritional_roles:
+    - VITAMIN_SOURCE
+  - preferred_term: Lipoic acid
+    concentration:
+      value: '5.0'
+      unit: MG_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 5.0 mg/L Lipoic acid.
+    term:
+      id: CHEBI:16494
+      label: lipoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16494
+      label: lipoic acid
+    nutritional_roles:
+    - VITAMIN_SOURCE
+    - COFACTOR_PROVIDER
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 1000.0 ml/L Distilled water.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  culturemech_term:
+    id: CultureMech:012935
+    label: Trace vitamins
+- preferred_term: 5% Na2S x 9 H2O solution
   concentration:
-    value: '6'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined
-    component'
-  name: Unknown solution
+    value: '6.0'
+    unit: ML_PER_L
+  source: TOGO M873 / JCM Medium 837
+  notes: TOGO M873 / JCM Medium 837 adds 6.0 ml/L 5% Na2S x 9 H2O solution.
+  composition:
+  - preferred_term: Na2S x 9 H2O
+    concentration:
+      value: '50.0'
+      unit: G_PER_L
+    source: TOGO M873 / JCM Medium 837
+    notes: TOGO M873 / JCM Medium 837 lists 50.0 g/L Na2S x 9 H2O.
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    nutritional_roles:
+    - SULFUR_SOURCE
+    physicochemical_roles:
+    - REDUCING_AGENT
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix distilled water, resazurin, Sigma sea salts, BD-Difco yeast extract,
+    and 1.0 ml/L Wolfe's mineral elixir.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the medium under an N2 atmosphere.
+- step_number: 3
+  action: MIX
+  description: Aseptically and anaerobically add 25.0 ml/L sterile anaerobic 8% NaHCO3
+    solution, 20.0 ml/L 1 M sodium acetate solution, 20.0 ml/L 1 M sodium fumarate
+    solution, and 10.0 ml/L Trace vitamins.
+- step_number: 4
+  action: MIX
+  description: Distribute the medium under an N2-CO2 (4:1, v/v) gas stream, seal culture
+    vessels with butyl rubber stoppers, then add 6.0 ml/L 5% Na2S x 9 H2O solution
+    autoclaved and stored under N2.
+parent_media:
+  path: data/normalized_yaml/bacterial/syfac_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003181
+  name: syfac_medium
+  notes: TOGO M873 imports the same JCM Medium 837 SYFAC Medium formulation represented
+    by MediaDive J837.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- TOGO M873 imports the same JCM Medium 837 SYFAC Medium formulation represented by
+  MediaDive J837.
+data_quality_flags:
+- ingredients_curated
+- has_ontology_mappings
+- has_unmapped_ingredients
+references:
+- reference: https://togomedium.org/medium/M873
+- reference: https://mediadive.dsmz.de/medium/J837
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=837
+- reference: https://togomedium.org/medium/M471
+- reference: https://togomedium.org/medium/M190

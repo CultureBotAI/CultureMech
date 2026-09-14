@@ -10,9 +10,156 @@ media_term:
   term:
     id: komodo.medium:345
     label: PELOBACTER ACETYLENICUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 345 | DSMZ Medium: 345 (mediadive.medium:345)
-  | Aerobic: No'
-ingredients: []
+notes: NBRC Medium 1016 records Pelobacter acetylenicus Medium as a defined freshwater
+  medium with acetoin, Trace element solution SL-10, a separately autoclaved 3.6%
+  Na2S x 9H2O solution, an 80:20 N2/CO2 gas phase, and pH 7.2.
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: NBRC Medium 1016
+  notes: NBRC Medium 1016 lists 1.0 L Distilled water.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  source: NBRC Medium 1016
+  notes: NBRC Medium 1016 lists 0.2 g/L KH2PO4.
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  source: NBRC Medium 1016
+  notes: NBRC Medium 1016 lists 0.25 g/L NH4Cl.
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: NaCl
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: NBRC Medium 1016
+  notes: NBRC Medium 1016 lists 1.0 g/L NaCl.
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: MgCl2 x 6H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  source: NBRC Medium 1016
+  notes: NBRC Medium 1016 lists 0.4 g/L MgCl2 x 6H2O.
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: NBRC Medium 1016
+  notes: NBRC Medium 1016 lists 0.5 g/L KCl.
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: CaCl2 x 2H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  source: NBRC Medium 1016
+  notes: NBRC Medium 1016 lists 0.15 g/L CaCl2 x 2H2O.
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+  source: NBRC Medium 1016
+  notes: NBRC Medium 1016 lists 1 mg/L Resazurin.
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: NaHCO3
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  source: NBRC Medium 1016
+  notes: NBRC Medium 1016 lists 2.5 g/L NaHCO3.
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Acetoin
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: NBRC Medium 1016
+  notes: NBRC Medium 1016 lists 1.0 g/L Acetoin.
+  term:
+    id: CHEBI:15688
+    label: acetoin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15688
+    label: acetoin
+- preferred_term: CO2
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: NBRC Medium 1016
+  notes: NBRC Medium 1016 dispenses the medium under an N2/CO2 gas stream at 80:20
+    by volume.
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16526
+    label: carbon dioxide
+- preferred_term: N2
+  concentration:
+    value: variable
+    unit: VARIABLE
+  source: NBRC Medium 1016
+  notes: NBRC Medium 1016 dispenses the medium under an N2/CO2 gas stream at 80:20
+    by volume.
+  term:
+    id: CHEBI:17997
+    label: dinitrogen
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17997
+    label: dinitrogen
 applications:
 - Microbial cultivation
 curation_history:
@@ -35,5 +182,191 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_345_pelobacter_score35.py
+  action: RESOLVED_KOMODO_345_PELOBACTER_SCORE35
+  source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=345;
+    https://togomedium.org/medium/M1791; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1016
+  notes: NBRC Medium 1016 records Pelobacter acetylenicus Medium as a defined freshwater
+    medium with acetoin, Trace element solution SL-10, a separately autoclaved 3.6%
+    Na2S x 9H2O solution, an 80:20 N2/CO2 gas phase, and pH 7.2.
 data_quality_flags:
-- incomplete_composition
+- has_ontology_mappings
+- ingredients_curated
+ph_value: 7.2
+incubation_atmosphere: ANAEROBIC
+solutions:
+- preferred_term: Trace element solution SL-10
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  source: NBRC Medium 1016
+  notes: NBRC Medium 1016 adds 1 ml/L Trace element solution SL-10.
+  composition:
+  - preferred_term: HCl (25%; 7.7 M)
+    concentration:
+      value: '10'
+      unit: ML_PER_L
+    source: NBRC Medium 1016
+    notes: NBRC Medium 1016 prints this component in the SL-10 stock.
+    term:
+      id: CHEBI:17883
+      label: hydrogen chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17883
+      label: hydrogen chloride
+  - preferred_term: FeCl2 x 4H2O
+    concentration:
+      value: '1.5'
+      unit: G_PER_L
+    source: NBRC Medium 1016
+    notes: NBRC Medium 1016 prints this component in the SL-10 stock.
+    term:
+      id: CHEBI:86249
+      label: iron dichloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86249
+      label: iron dichloride tetrahydrate
+  - preferred_term: ZnCl2
+    concentration:
+      value: '70'
+      unit: MG_PER_L
+    source: NBRC Medium 1016
+    notes: NBRC Medium 1016 prints this component in the SL-10 stock.
+    term:
+      id: CHEBI:49976
+      label: zinc dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49976
+      label: zinc dichloride
+  - preferred_term: MnCl2 x 4H2O
+    concentration:
+      value: '100'
+      unit: MG_PER_L
+    source: NBRC Medium 1016
+    notes: NBRC Medium 1016 prints this component in the SL-10 stock.
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+  - preferred_term: H3BO3
+    concentration:
+      value: '6'
+      unit: MG_PER_L
+    source: NBRC Medium 1016
+    notes: NBRC Medium 1016 prints this component in the SL-10 stock.
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: CoCl2 x 6H2O
+    concentration:
+      value: '190'
+      unit: MG_PER_L
+    source: NBRC Medium 1016
+    notes: NBRC Medium 1016 prints this component in the SL-10 stock.
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+  - preferred_term: CuCl2 x 2H2O
+    concentration:
+      value: '2'
+      unit: MG_PER_L
+    source: NBRC Medium 1016
+    notes: NBRC Medium 1016 prints this component in the SL-10 stock.
+    term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+  - preferred_term: NiCl2 x 6H2O
+    concentration:
+      value: '24'
+      unit: MG_PER_L
+    source: NBRC Medium 1016
+    notes: NBRC Medium 1016 prints this component in the SL-10 stock.
+    term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+  - preferred_term: Na2MoO4 x 2H2O
+    concentration:
+      value: '36'
+      unit: MG_PER_L
+    source: NBRC Medium 1016
+    notes: NBRC Medium 1016 prints this component in the SL-10 stock.
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+  - preferred_term: Distilled water
+    concentration:
+      value: '990'
+      unit: ML_PER_L
+    source: NBRC Medium 1016
+    notes: NBRC Medium 1016 prints this component in the SL-10 stock.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: 3.6% Na2S x 9H2O solution
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  source: NBRC Medium 1016
+  notes: NBRC Medium 1016 autoclaves Na2S x 9H2O separately as a 3.6% anoxic stock
+    solution for a 0.36 g/L final amount.
+  composition:
+  - preferred_term: Na2S x 9H2O
+    concentration:
+      value: '36'
+      unit: G_PER_L
+    source: NBRC Medium 1016
+    notes: NBRC Medium 1016 lists Na2S x 9H2O as a 3.6% separately autoclaved solution.
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix all ingredients except Acetoin and Na2S x 9H2O, including 1 ml/L
+    Trace element solution SL-10.
+- step_number: 2
+  action: MIX
+  description: Dispense the medium into suitable culture vessels under an N2/CO2 gas
+    stream at 80:20 by volume and seal with butyl rubber stoppers.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave the dispensed medium, and separately autoclave the 3.6% Na2S
+    x 9H2O solution under an N2 atmosphere.
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Prepare a filter-sterile Acetoin solution.
+- step_number: 5
+  action: MIX
+  description: Aseptically and anaerobically add the sterile Na2S x 9H2O solution,
+    and add filter-sterile Acetoin just before inoculation.
+- step_number: 6
+  action: ADJUST_PH
+  description: Adjust the complete medium to pH 7.2.
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=345
+- reference: https://togomedium.org/medium/M1791
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1016

@@ -368,12 +368,23 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-13T00:00:00-07:00'
+  curator: repair_komodo_383_desulfobacterium_score10.py
+  action: RESOLVED_KOMODO_383_DESULFOBACTERIUM_TOPOLOGY
+  changes: Linked as a KOMODO Medium 383 strain-specific variant
+  source: KOMODO Medium 383.9
+  notes: KOMODO Medium 383.9 applies DESULFOBACTERIUM MEDIUM to DSM 14367, DSM 15579,
+    DSM 15816, DSM 19338, and DSM 22027.
 parent_media:
-  path: data/normalized_yaml/bacterial/KOMODO_383d_DESULFONAUTICUS_medium.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005159
-  name: desulfonauticus_medium
-variant_relationship: SOURCE_DUPLICATE
+  path: data/normalized_yaml/bacterial/KOMODO_383_DESULFOBACTERIUM_MEDIUM.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:005154
+  name: desulfobacterium_medium
+  notes: KOMODO Medium 383.9 applies DESULFOBACTERIUM MEDIUM to DSM 14367, DSM 15579,
+    DSM 15816, DSM 19338, and DSM 22027.
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- KOMODO Medium 383.9 applies DESULFOBACTERIUM MEDIUM to DSM 14367, DSM 15579, DSM
+  15816, DSM 19338, and DSM 22027.
+data_quality_flags:
+- ingredients_curated

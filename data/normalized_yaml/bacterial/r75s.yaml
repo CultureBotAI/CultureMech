@@ -10,23 +10,55 @@ media_term:
   term:
     id: mediadive.medium:C87
     label: R75S
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_R75S.pdf'
+notes: CCAP prepares R75S from 750 mL natural filtered seawater, 250 mL deionized
+  water, and 1 g dried milled rye grass per liter.
 ingredients:
-- preferred_term: Natural sea water
+- preferred_term: Natural filtered seawater
   concentration:
     value: '750'
-    unit: G_PER_L
-- preferred_term: Rye grass
+    unit: ML_PER_L
+  term:
+    id: ENVO:00002149
+    label: sea water
+  notes: CCAP lists 750 mL Natural filtered seawater per liter.
+  physicochemical_roles:
+  - OSMOTIC_AGENT
+- preferred_term: Deionized water
+  concentration:
+    value: '250'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: CCAP lists 250 mL Deionized water per liter.
+- preferred_term: Dried milled rye grass
   concentration:
     value: '1'
     unit: G_PER_L
+  notes: CCAP lists 1 g/L dried milled rye grass.
+  nutritional_roles:
+  - CARBON_SOURCE
+solutions: []
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Prepare 75% seawater from natural filtered seawater and deionized water.
+- step_number: 2
+  action: HEAT
+  description: Bring the 75% seawater to the boil, add the powdered rye grass, and
+    boil for 5 minutes.
+- step_number: 3
+  action: MIX
+  description: Cool and restore the final volume to 1 L with deionized water.
+- step_number: 4
+  action: FILTER
+  description: Filter through Whatman GF/C paper.
+- step_number: 5
   action: AUTOCLAVE
-  description: "Bring 75% seawater to the boil, add the powdered rye grass and keep\
-    \ boiling for 5 \r\nminutes.  Allow to cool and  restore volume to 1 litre with\
-    \ deionized water.  Filter \r\nthrough Whatman GF/C paper.  Autoclave at 15 psi\
-    \ for 15 minutes."
+  description: Autoclave at 15 psi for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -42,3 +74,33 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "R75S" to "r75s" for consistent matching
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_ccap_bacterial_score40.py
+  action: RESOLVED_SCORE40_BACTERIAL_CCAP_GRAPH
+  changes: Resolved score-40 bacterial CCAP recipe graph
+  source: https://www.ccap.ac.uk/wp-content/uploads/MR_R75S.pdf
+  notes: CCAP prepares R75S from 750 mL natural filtered seawater, 250 mL deionized
+    water, and 1 g dried milled rye grass per liter.
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_ccap_bacterial_score40.py
+  action: LINKED_SCORE40_BACTERIAL_CCAP_CHILDREN
+  changes: Linked score-40 bacterial CCAP child media to prepared-media parents
+  notes: Added or refreshed reciprocal parent-child link for bacterial/r75s_nsw.yaml.
+salinity: marine (natural seawater)
+sterilization:
+  method: AUTOCLAVE
+  pressure: 15
+  duration: 15 minutes
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- has_unmapped_ingredients
+references:
+- reference: CCAP:R75S
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_R75S.pdf
+variant_children:
+- path: data/normalized_yaml/bacterial/r75s_nsw.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  id: CultureMech:000402
+  name: r75s_nsw
+  notes: Blends two parts prepared R75S with one part prepared NSW.
