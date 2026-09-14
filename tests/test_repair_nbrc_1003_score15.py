@@ -184,6 +184,7 @@ def test_target_record_matches_recovered_nbrc_1002_formula(repair_module) -> Non
         repair_module.FINAL_INGREDIENT_SIGNATURE,
     }
     assert repaired["media_term"]["term"]["id"] == "nbrc.medium:1002"
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )

@@ -44,8 +44,7 @@ def _doc(repair) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "SOLID_AGAR",
         "ingredients": [
-            _component(name, value, unit)
-            for name, value, unit in repair.imported_ingredients
+            _component(name, value, unit) for name, value, unit in repair.imported_ingredients
         ],
         "media_term": {
             "preferred_term": repair.source_term,
@@ -100,9 +99,10 @@ def test_nbrc_carbonate_records_fix_empty_solution_wrappers(
         "id": "CHEBI:29377",
         "label": "sodium carbonate",
     }
-    assert m1680_ingredients["Bacto Nutrient Broth (Difco)"][
-        "concentration"
-    ] == {"value": "8.0", "unit": "G_PER_L"}
+    assert m1680_ingredients["Bacto Nutrient Broth (Difco)"]["concentration"] == {
+        "value": "8.0",
+        "unit": "G_PER_L",
+    }
 
     assert "solutions" not in m1760
     assert m1760["ph_value"] == 10.0

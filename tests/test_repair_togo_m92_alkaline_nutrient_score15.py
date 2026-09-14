@@ -57,8 +57,7 @@ def _medium_doc(target) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "SOLID_AGAR",
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_ingredients
+            _ingredient(name, value, unit) for name, value, unit in target.imported_ingredients
         ],
         "solutions": [_solution(row) for row in target.imported_solutions],
         "media_term": {
@@ -82,14 +81,12 @@ def _solution_doc(target) -> dict:
             "label": "Main sol.",
         },
         "composition": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_composition
+            _ingredient(name, value, unit) for name, value, unit in target.imported_composition
         ],
         "preparation_notes": "Original MediaDive step",
         "curation_history": [],
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in PLACEHOLDER_INGREDIENTS
+            _ingredient(name, value, unit) for name, value, unit in PLACEHOLDER_INGREDIENTS
         ],
         "data_quality_flags": ["incomplete_composition"],
         "category": "bacterial",
@@ -102,9 +99,7 @@ def _repair_medium(repair_module, path: Path) -> dict:
 
 
 def _repair_solution(repair_module, path: Path) -> dict:
-    target = next(
-        target for target in repair_module.SOLUTION_TARGETS if target.path == path
-    )
+    target = next(target for target in repair_module.SOLUTION_TARGETS if target.path == path)
     return repair_module.repair_solution_record(_solution_doc(target), target)
 
 
@@ -118,10 +113,13 @@ def test_jcm_j74_becomes_canonical_nutrient_agar_parent(
 ) -> None:
     repaired = _repair_medium(repair_module, repair_module.JCM_J74_PATH)
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.NUTRIENT_AGAR_COMPOSITION
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.NUTRIENT_AGAR_COMPOSITION
+    )
     assert "solutions" not in repaired
     assert repaired["ph_value"] == 7.0
     assert repaired["variant_children"] == [
@@ -132,9 +130,7 @@ def test_jcm_j74_becomes_canonical_nutrient_agar_parent(
     assert "parent_media" not in repaired
     assert "kg_microbe_match" not in repaired
     assert scorer_module.score_record(repaired) == (0, [])
-    assert scorer_module.score_parsed(
-        [("bacterial/JCM_J74_NUTRIENT_AGAR.yaml", repaired)]
-    ) == []
+    assert scorer_module.score_parsed([("bacterial/JCM_J74_NUTRIENT_AGAR.yaml", repaired)]) == []
 
 
 def test_togo_m65_links_to_j74_source_duplicate(
@@ -148,9 +144,7 @@ def test_togo_m65_links_to_j74_source_duplicate(
     assert repaired["variant_modifications"] == [repair_module.M65_CHILD["notes"]]
     assert "variant_children" not in repaired
     assert scorer_module.score_record(repaired) == (0, [])
-    assert scorer_module.score_parsed(
-        [("bacterial/TOGO_M65_Nutrient_Agar.yaml", repaired)]
-    ) == []
+    assert scorer_module.score_parsed([("bacterial/TOGO_M65_Nutrient_Agar.yaml", repaired)]) == []
 
 
 def test_jcm_j100_links_to_j74_supplemented_parent(
@@ -165,9 +159,10 @@ def test_jcm_j100_links_to_j74_supplemented_parent(
     assert repaired["variant_children"] == [repair_module.M92_CHILD]
     assert scorer_module._grounded(repaired["solutions"][0]["composition"][0])
     assert scorer_module.score_record(repaired) == (0, [])
-    assert scorer_module.score_parsed(
-        [("bacterial/JCM_J100_ALKALINE_NUTRIENT_AGAR.yaml", repaired)]
-    ) == []
+    assert (
+        scorer_module.score_parsed([("bacterial/JCM_J100_ALKALINE_NUTRIENT_AGAR.yaml", repaired)])
+        == []
+    )
 
 
 def test_togo_m92_links_to_j100_source_duplicate(
@@ -181,9 +176,10 @@ def test_togo_m92_links_to_j100_source_duplicate(
     assert repaired["variant_modifications"] == [repair_module.M92_CHILD["notes"]]
     assert "variant_children" not in repaired
     assert scorer_module.score_record(repaired) == (0, [])
-    assert scorer_module.score_parsed(
-        [("bacterial/TOGO_M92_Alkaline_Nutrient_Agar.yaml", repaired)]
-    ) == []
+    assert (
+        scorer_module.score_parsed([("bacterial/TOGO_M92_Alkaline_Nutrient_Agar.yaml", repaired)])
+        == []
+    )
 
 
 def test_repair_corrects_units_groundings_and_roles(repair_module) -> None:
@@ -244,10 +240,13 @@ def test_solution_helpers_correct_false_percent_water(repair_module) -> None:
     composition = _by_name(repaired["composition"])
 
     assert "ingredients" not in repaired
-    assert repair_module._signature(
-        repaired["composition"],
-        "composition",
-    ) == repair_module.MEDIADIVE_MAIN_SOLUTION_COMPOSITION
+    assert (
+        repair_module._signature(
+            repaired["composition"],
+            "composition",
+        )
+        == repair_module.MEDIADIVE_MAIN_SOLUTION_COMPOSITION
+    )
     assert composition["Peptone"]["term"] == {
         "id": "MICRO:0000178",
         "label": "Peptone",
@@ -274,9 +273,7 @@ def test_repair_adds_references_flags_and_event_once(repair_module) -> None:
     twice = repair_module.repair_medium_record(once, target)
 
     assert twice == once
-    assert once["references"] == [
-        {"reference": reference} for reference in target.references
-    ]
+    assert once["references"] == [{"reference": reference} for reference in target.references]
     assert once["data_quality_flags"] == [
         "ingredients_curated",
         "has_ontology_mappings",
@@ -284,8 +281,7 @@ def test_repair_adds_references_flags_and_event_once(repair_module) -> None:
     matching_events = [
         event
         for event in twice["curation_history"]
-        if event.get("curator") == repair_module.CURATOR
-        and event.get("action") == target.action
+        if event.get("curator") == repair_module.CURATOR and event.get("action") == target.action
     ]
     assert len(matching_events) == 1
     assert repair_module.TOGO_M92 in matching_events[0]["source"]

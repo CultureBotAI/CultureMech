@@ -94,9 +94,7 @@ def test_repair_replaces_flat_components_with_jcm_solutions(
     assert repaired["physical_state"] == "SOLID_AGAR"
     assert repaired["ph_value"] == 7.0
     assert repaired["ingredients"] == []
-    assert repair_module._solution_signatures(repaired) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
-    )
+    assert repair_module._solution_signatures(repaired) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     assert scorer_module.score_record(repaired) == (0, [])
     assert scorer_module.score_parsed([(str(repair_module.TARGET), repaired)]) == []
 
@@ -126,9 +124,9 @@ def test_repair_grounds_agar_and_water_inside_solutions(repair_module) -> None:
 
 def test_repair_keeps_bd_difco_skim_milk_opaque(repair_module) -> None:
     repaired = repair_module.repair_record(_doc(repair_module))
-    skim_milk = _by_name(
-        _by_name(repaired["solutions"])["Solution A"]["composition"]
-    )["Skim milk (BD-Difco)"]
+    skim_milk = _by_name(_by_name(repaired["solutions"])["Solution A"]["composition"])[
+        "Skim milk (BD-Difco)"
+    ]
 
     assert skim_milk == {
         "preferred_term": "Skim milk (BD-Difco)",

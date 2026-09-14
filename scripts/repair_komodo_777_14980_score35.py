@@ -83,9 +83,7 @@ VALUE_OVERRIDES = {
     "Lipoic acid": "0.0000495",
 }
 
-BASE_BY_NAME = {
-    component.preferred_term: component for component in KOMODO_777_COMPONENTS
-}
+BASE_BY_NAME = {component.preferred_term: component for component in KOMODO_777_COMPONENTS}
 
 
 def _komodo_note(preferred_term: str, value: str) -> str:
@@ -217,23 +215,19 @@ def _put_after(doc: dict[str, Any], key: str, value: Any, after: str) -> None:
 def _require_target(doc: dict[str, Any]) -> None:
     if doc.get("id") != EXPECTED_ID:
         raise ValueError(
-            f"{TARGET}: expected immutable id {EXPECTED_ID}, "
-            f"found {doc.get('id')!r}"
+            f"{TARGET}: expected immutable id {EXPECTED_ID}, " f"found {doc.get('id')!r}"
         )
 
     source_term = _source_term_id(doc)
     if source_term != EXPECTED_MEDIA_TERM:
         raise ValueError(
-            f"{TARGET}: expected source term {EXPECTED_MEDIA_TERM}, "
-            f"found {source_term!r}"
+            f"{TARGET}: expected source term {EXPECTED_MEDIA_TERM}, " f"found {source_term!r}"
         )
 
     ingredients = doc.get("ingredients") or []
     repaired_names = {component.preferred_term for component in COMPONENTS}
     ingredient_names = {
-        str(row.get("preferred_term") or "")
-        for row in ingredients
-        if isinstance(row, dict)
+        str(row.get("preferred_term") or "") for row in ingredients if isinstance(row, dict)
     }
     if ingredients and ingredient_names != repaired_names:
         raise ValueError(f"{TARGET}: ingredient list drifted")

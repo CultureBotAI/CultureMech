@@ -61,9 +61,7 @@ IMPORTED_SOLUTION_SIGNATURES: tuple[SolutionSignature, ...] = (
     ),
 )
 
-PHENOL_RED_SIGNATURE: tuple[Component, ...] = (
-    ("Phenol red", "0.4", "PERCENT_W_V"),
-)
+PHENOL_RED_SIGNATURE: tuple[Component, ...] = (("Phenol red", "0.4", "PERCENT_W_V"),)
 
 FINAL_SOLUTION_SIGNATURES: tuple[SolutionSignature, ...] = (
     ("0.4% Phenol red solution", "5.0", "ML_PER_L", PHENOL_RED_SIGNATURE),
@@ -114,8 +112,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": SOURCE,
-        "notes": notes
-        or f"{SOURCE} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{SOURCE} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     grounding = GROUNDINGS.get(preferred_term)
     if grounding:
@@ -176,8 +173,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
                 "0.4",
                 "PERCENT_W_V",
                 notes=(
-                    f"{SOURCE} identifies the pH indicator stock as 0.4% "
-                    "Phenol red solution."
+                    f"{SOURCE} identifies the pH indicator stock as 0.4% " "Phenol red solution."
                 ),
             )
         ],
@@ -245,9 +241,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

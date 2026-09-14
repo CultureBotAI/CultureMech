@@ -76,10 +76,13 @@ def test_repair_corrects_units_and_adds_ph(
     ingredients = _by_name(repaired["ingredients"])
 
     assert repaired["ph_value"] == 7.0
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Distilled water"]["concentration"] == {
         "value": "1.0",
         "unit": "L",

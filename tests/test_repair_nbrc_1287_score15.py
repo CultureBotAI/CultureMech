@@ -70,14 +70,13 @@ def test_repair_document_adds_grounded_formula_and_biphenyl(
     repaired = repair_module.repair_document(_minimal_doc(repair_module))
     ingredients = {row["preferred_term"]: row for row in repaired["ingredients"]}
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Bacto tryptone"]["term"]["id"] == "MICRO:0000182"
     assert ingredients["Yeast extract"]["term"]["id"] == "FOODON:03315426"
-    assert ingredients["NaCl"]["mediaingredientmech_chebi_term"]["id"] == (
-        "CHEBI:26710"
-    )
+    assert ingredients["NaCl"]["mediaingredientmech_chebi_term"]["id"] == ("CHEBI:26710")
     assert ingredients["Distilled water"]["term"]["id"] == "CHEBI:15377"
     assert ingredients["Agar"]["term"]["id"] == "CHEBI:2509"
     assert ingredients["Biphenyl crystal"]["concentration"] == {

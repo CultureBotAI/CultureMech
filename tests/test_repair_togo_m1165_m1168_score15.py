@@ -78,10 +78,13 @@ def test_repair_corrects_direct_formula_and_resazurin_unit(repair_module) -> Non
     repaired = repair_module.repair_record(_doc(repair_module, target), target)
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Resazurin"]["concentration"] == {
         "value": "0.5",
         "unit": "MG_PER_L",
@@ -181,9 +184,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module, target), target)
     twice = repair_module.repair_record(once, target)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module._references(target)
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module._references(target)]
     matching_events = [
         event
         for event in twice["curation_history"]

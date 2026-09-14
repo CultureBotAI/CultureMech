@@ -68,10 +68,13 @@ def test_repair_corrects_water_adds_ph_and_grounds_components(
     repaired = repair_module.repair_record(_doc(repair_module))
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert repaired["physical_state"] == "LIQUID"
     assert repaired["ph_value"] == 6.8
     assert "ph_range" not in repaired

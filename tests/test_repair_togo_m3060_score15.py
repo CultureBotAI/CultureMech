@@ -112,10 +112,13 @@ def test_repair_corrects_distilled_water_and_adds_ph_value(repair_module) -> Non
     assert repaired["physical_state"] == "LIQUID"
     assert repaired["ph_value"] == 8.5
     assert "ph_range" not in repaired
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Distilled water"]["concentration"] == {
         "value": "1.0",
         "unit": "L",
@@ -138,9 +141,7 @@ def test_repair_grounds_all_nbrc_ottow_components(repair_module) -> None:
         "id": "CHEBI:15377",
         "label": "water",
     }
-    assert ingredients["Gellan Gum (if needed)"][
-        "mediaingredientmech_chebi_term"
-    ] == {
+    assert ingredients["Gellan Gum (if needed)"]["mediaingredientmech_chebi_term"] == {
         "id": "CHEBI:85248",
         "label": "gellan gum",
     }
@@ -199,9 +200,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_target(_doc(repair_module))
     twice = repair_module.repair_target(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

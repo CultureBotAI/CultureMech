@@ -210,10 +210,7 @@ def _parent_ref(child: Child) -> dict[str, str]:
         "relationship": child.relationship,
         "id": PARENT_ID,
         "name": PARENT_NAME,
-        "notes": (
-            "MediaDive Medium 509 is the DSMZ SPIROCHAETA THERMOPHILA "
-            "MEDIUM base."
-        ),
+        "notes": ("MediaDive Medium 509 is the DSMZ SPIROCHAETA THERMOPHILA " "MEDIUM base."),
     }
 
 
@@ -254,8 +251,7 @@ def repair_parent(doc: dict[str, Any]) -> dict[str, Any]:
             "curator": CURATOR,
             "action": ACTION,
             "changes": (
-                "Promoted MediaDive Medium 509 to the Spirochaeta thermophila "
-                "family parent"
+                "Promoted MediaDive Medium 509 to the Spirochaeta thermophila " "family parent"
             ),
             "source": "MediaDive Medium 509 and KOMODO Medium 509-509.1",
             "notes": (

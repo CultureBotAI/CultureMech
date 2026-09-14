@@ -31,9 +31,7 @@ LINK_ACTION = "LINKED_TOGO_M3060_SUPPLEMENTED_VARIANT"
 TIMESTAMP = "2026-09-11T00:00:00-07:00"
 
 TOGO_M3060 = "https://togomedium.org/medium/M3060"
-NBRC_1631 = (
-    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1631"
-)
+NBRC_1631 = "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1631"
 SOURCE = "TOGO M3060 / NBRC Medium 1631"
 TITLE = "OTTOW MEDIUM"
 
@@ -153,17 +151,14 @@ def _component(preferred_term: str, value: str, unit: str) -> dict[str, Any]:
         "term": _term(*grounding),
     }
     if preferred_term == "Gellan Gum (if needed)":
-        row["notes"] = (
-            "NBRC Medium 1631 lists 7.0 g/L Gellan Gum if needed."
-        )
+        row["notes"] = "NBRC Medium 1631 lists 7.0 g/L Gellan Gum if needed."
     if grounding[0].startswith("CHEBI:"):
         row["mediaingredientmech_chebi_term"] = _term(*grounding)
     return row
 
 
 INGREDIENTS: tuple[dict[str, Any], ...] = tuple(
-    _component(name, value, unit)
-    for name, value, unit in FINAL_INGREDIENT_SIGNATURE
+    _component(name, value, unit) for name, value, unit in FINAL_INGREDIENT_SIGNATURE
 )
 
 
@@ -198,9 +193,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -247,9 +240,7 @@ def _ensure_parent(doc: dict[str, Any]) -> None:
             f"{DSMZ_PARENT}: expected id {EXPECTED_PARENT_ID}, found {doc.get('id')!r}"
         )
     if _source_term_id(doc) != EXPECTED_PARENT_MEDIA_TERM:
-        raise ValueError(
-            f"{DSMZ_PARENT}: expected media term {EXPECTED_PARENT_MEDIA_TERM}"
-        )
+        raise ValueError(f"{DSMZ_PARENT}: expected media term {EXPECTED_PARENT_MEDIA_TERM}")
 
 
 def _ensure_flags(doc: dict[str, Any]) -> None:

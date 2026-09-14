@@ -45,8 +45,7 @@ def _doc(target) -> dict:
         "physical_state": "LIQUID",
         "ph_value": 6.8,
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_ingredients
+            _ingredient(name, value, unit) for name, value, unit in target.imported_ingredients
         ],
         "media_term": {
             "preferred_term": "source medium",
@@ -61,8 +60,7 @@ def _doc(target) -> dict:
             "resolved_reference",
         ],
         "solutions": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_solutions
+            _ingredient(name, value, unit) for name, value, unit in target.imported_solutions
         ],
     }
 
@@ -82,14 +80,20 @@ def test_jcm_j758_becomes_canonical_nested_parent(
 ) -> None:
     repaired = _repair(repair_module, repair_module.JCM_J758_PATH)
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._signature(
-        repaired["solutions"],
-        "solutions",
-    ) == repair_module.FINAL_SOLUTION_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            repaired["solutions"],
+            "solutions",
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURE
+    )
     assert repaired["ph_range"] == {"min": 6.7, "max": 6.8}
     assert "ph_value" not in repaired
     assert repaired["variant_children"] == [repair_module.M783_CHILD]
@@ -186,8 +190,7 @@ def test_repair_scales_main_solution_and_nests_jcm_187_stocks(
         "concentration": {"value": "12.5", "unit": "PERCENT_W_V"},
         "source": "TOGO M783 / JCM Medium 758",
         "notes": (
-            "TOGO M783 / JCM Medium 758 specifies "
-            "12.5% Na2S2O3 x 5 H2O solution as 12.5% w/v."
+            "TOGO M783 / JCM Medium 758 specifies " "12.5% Na2S2O3 x 5 H2O solution as 12.5% w/v."
         ),
         "term": {
             "id": "CHEBI:32150",
@@ -205,17 +208,13 @@ def test_repair_adds_references_flags_sterilization_and_event_once(
     repair_module,
 ) -> None:
     target = next(
-        target
-        for target in repair_module.TARGETS
-        if target.path == repair_module.TOGO_M783_PATH
+        target for target in repair_module.TARGETS if target.path == repair_module.TOGO_M783_PATH
     )
     once = repair_module.repair_record(_doc(target), target)
     twice = repair_module.repair_record(once, target)
 
     assert twice == once
-    assert once["references"] == [
-        {"reference": reference} for reference in target.references
-    ]
+    assert once["references"] == [{"reference": reference} for reference in target.references]
     assert once["data_quality_flags"] == [
         "ingredients_curated",
         "has_ontology_mappings",
@@ -225,8 +224,7 @@ def test_repair_adds_references_flags_sterilization_and_event_once(
     matching_events = [
         event
         for event in twice["curation_history"]
-        if event.get("curator") == repair_module.CURATOR
-        and event.get("action") == target.action
+        if event.get("curator") == repair_module.CURATOR and event.get("action") == target.action
     ]
     assert len(matching_events) == 1
     assert repair_module.JCM_187 in matching_events[0]["source"]
@@ -244,9 +242,7 @@ def test_repair_rejects_wrong_id(repair_module) -> None:
 
 def test_repair_rejects_ingredient_drift(repair_module) -> None:
     target = next(
-        target
-        for target in repair_module.TARGETS
-        if target.path == repair_module.TOGO_M783_PATH
+        target for target in repair_module.TARGETS if target.path == repair_module.TOGO_M783_PATH
     )
     doc = _doc(target)
     doc["ingredients"].pop()
@@ -257,9 +253,7 @@ def test_repair_rejects_ingredient_drift(repair_module) -> None:
 
 def test_repair_rejects_solution_drift(repair_module) -> None:
     target = next(
-        target
-        for target in repair_module.TARGETS
-        if target.path == repair_module.TOGO_M783_PATH
+        target for target in repair_module.TARGETS if target.path == repair_module.TOGO_M783_PATH
     )
     doc = _doc(target)
     doc["solutions"][0]["preferred_term"] = "FeCl3 solution"

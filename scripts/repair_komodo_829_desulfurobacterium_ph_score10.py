@@ -261,10 +261,7 @@ def _parent_ref(child: Child) -> dict[str, str]:
         "relationship": child.relationship,
         "id": PARENT_ID,
         "name": PARENT_NAME,
-        "notes": (
-            f"KOMODO Medium 829 is the pH {PARENT_PH:g} "
-            "DESULFUROBACTERIUM MEDIUM base."
-        ),
+        "notes": (f"KOMODO Medium 829 is the pH {PARENT_PH:g} " "DESULFUROBACTERIUM MEDIUM base."),
     }
 
 
@@ -314,8 +311,7 @@ def repair_parent(doc: dict[str, Any]) -> dict[str, Any]:
             "changes": "Linked a DESULFUROBACTERIUM MEDIUM pH variant child",
             "source": "KOMODO Medium 829.1",
             "notes": (
-                "Changed DSM 14290 from SOURCE_DUPLICATE to PH_VARIANT "
-                "under KOMODO Medium 829."
+                "Changed DSM 14290 from SOURCE_DUPLICATE to PH_VARIANT " "under KOMODO Medium 829."
             ),
         },
     )

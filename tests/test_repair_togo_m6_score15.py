@@ -47,8 +47,7 @@ def _doc_for_agar(repair_module, target) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "SOLID_AGAR",
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_ingredients
+            _ingredient(name, value, unit) for name, value, unit in target.imported_ingredients
         ],
         "media_term": {
             "preferred_term": "source medium",
@@ -58,8 +57,7 @@ def _doc_for_agar(repair_module, target) -> dict:
         "applications": ["Microbial cultivation"],
         "curation_history": [],
         "solutions": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_solutions
+            _ingredient(name, value, unit) for name, value, unit in target.imported_solutions
         ],
         "high_metal": True,
     }
@@ -118,14 +116,20 @@ def test_jcm_parent_restores_bl_agar_recipe_and_variant_children(
 ) -> None:
     repaired = _repair_agar(repair_module, repair_module.JCM_J13_PATH)
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._signature(
-        repaired["solutions"],
-        "solutions",
-    ) == repair_module.FINAL_SOLUTION_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            repaired["solutions"],
+            "solutions",
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURE
+    )
     assert repaired["ph_value"] == 7.2
     assert "parent_media" not in repaired
     assert "high_metal" not in repaired
@@ -143,9 +147,7 @@ def test_togo_m6_links_to_jcm_source_duplicate(repair_module, scorer_module) -> 
     assert repaired["ph_value"] == 7.2
     assert repaired["parent_media"] == repair_module.JCM_PARENT
     assert repaired["variant_relationship"] == "SOURCE_DUPLICATE"
-    assert repaired["variant_modifications"] == [
-        repair_module.M6_VARIANT_MODIFICATION
-    ]
+    assert repaired["variant_modifications"] == [repair_module.M6_VARIANT_MODIFICATION]
     assert "variant_children" not in repaired
     assert scorer_module.score_record(repaired) == (0, [])
 
@@ -166,9 +168,10 @@ def test_repair_moves_flattened_stock_components_to_solutions(repair_module) -> 
         "label": "iron(2+) sulfate heptahydrate",
     }
     assert "term" not in solution_b["MnSO4 x n H2O"]
-    assert solutions["5% L-Cysteine HCl x H2O solution"]["composition"][0][
-        "concentration"
-    ] == {"value": "5.0", "unit": "PERCENT_W_V"}
+    assert solutions["5% L-Cysteine HCl x H2O solution"]["composition"][0]["concentration"] == {
+        "value": "5.0",
+        "unit": "PERCENT_W_V",
+    }
 
 
 def test_repair_grounds_direct_components_and_roles(repair_module) -> None:
@@ -196,25 +199,19 @@ def test_maltose_children_relink_to_canonical_jcm_parent(repair_module) -> None:
     for target in repair_module.MALTOSE_TARGETS:
         repaired = repair_module.repair_maltose_record(_doc_for_maltose(target), target)
 
-        assert repaired["solutions"][0]["culturemech_term"] == (
-            repair_module.BL_AGAR_JCM_TERM
-        )
+        assert repaired["solutions"][0]["culturemech_term"] == (repair_module.BL_AGAR_JCM_TERM)
         assert repaired["parent_media"] == repair_module.JCM_SUPPLEMENT_PARENT
         assert repaired["variant_relationship"] == "SUPPLEMENTED_VARIANT"
 
 
 def test_repair_adds_references_flags_and_event_once(repair_module) -> None:
     target = next(
-        target
-        for target in repair_module.AGAR_TARGETS
-        if target.path == repair_module.JCM_J13_PATH
+        target for target in repair_module.AGAR_TARGETS if target.path == repair_module.JCM_J13_PATH
     )
     once = repair_module.repair_agar_record(_doc_for_agar(repair_module, target), target)
     twice = repair_module.repair_agar_record(once, target)
 
-    assert once["references"] == [
-        {"reference": reference} for reference in target.references
-    ]
+    assert once["references"] == [{"reference": reference} for reference in target.references]
     assert once["data_quality_flags"] == [
         "has_ontology_mappings",
         "has_unmapped_ingredients",
@@ -223,8 +220,7 @@ def test_repair_adds_references_flags_and_event_once(repair_module) -> None:
     matching_events = [
         event
         for event in twice["curation_history"]
-        if event.get("curator") == repair_module.CURATOR
-        and event.get("action") == target.action
+        if event.get("curator") == repair_module.CURATOR and event.get("action") == target.action
     ]
     assert len(matching_events) == 1
     assert "Liver extract" in matching_events[0]["notes"]

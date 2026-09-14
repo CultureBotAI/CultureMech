@@ -288,13 +288,17 @@ TARGETS: tuple[Target, ...] = (
         source_term="mediadive.medium:J720",
         source_label="JCM Medium 720",
         physical_state="SOLID_AGAR",
-        imported_signatures=(((
-            ("Tryptone", "3", "G_PER_L"),
-            ("Casitone", "5", "G_PER_L"),
-            ("Glucose", "4", "G_PER_L"),
-            ("Agar", "15", "G_PER_L"),
-            ("Sea water", "1000", "G_PER_L"),
-        )),),
+        imported_signatures=(
+            (
+                (
+                    ("Tryptone", "3", "G_PER_L"),
+                    ("Casitone", "5", "G_PER_L"),
+                    ("Glucose", "4", "G_PER_L"),
+                    ("Agar", "15", "G_PER_L"),
+                    ("Sea water", "1000", "G_PER_L"),
+                )
+            ),
+        ),
         ingredients=_tcg_jcm_ingredients("JCM Medium 720"),
         reference_urls=(JCM_720,),
         notes=(
@@ -322,13 +326,17 @@ TARGETS: tuple[Target, ...] = (
         source_term="TOGO:M743",
         source_label="TOGO M743 / JCM Medium 720",
         physical_state="SOLID_AGAR",
-        imported_signatures=(((
-            ("Artificial seawater", "1", "G_PER_L"),
-            ("Glucose", "4", "G_PER_L"),
-            ("Agar", "15", "G_PER_L"),
-            ("Tryptone (BD-Difco)", "3", "G_PER_L"),
-            ("Casitone (BD-Difco)", "5", "G_PER_L"),
-        )),),
+        imported_signatures=(
+            (
+                (
+                    ("Artificial seawater", "1", "G_PER_L"),
+                    ("Glucose", "4", "G_PER_L"),
+                    ("Agar", "15", "G_PER_L"),
+                    ("Tryptone (BD-Difco)", "3", "G_PER_L"),
+                    ("Casitone (BD-Difco)", "5", "G_PER_L"),
+                )
+            ),
+        ),
         ingredients=_tcg_jcm_ingredients("TOGO M743 / JCM Medium 720"),
         reference_urls=(TOGO_M743, JCM_720),
         notes=(
@@ -519,9 +527,7 @@ def _recipe_signature(rows: tuple[dict[str, Any], ...]) -> tuple[Component, ...]
 
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}")
 
     source_term = _source_term_id(doc)
     if source_term != target.source_term:

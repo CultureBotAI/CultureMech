@@ -332,8 +332,7 @@ def _ensure_reference(doc: dict[str, Any], target: Target) -> None:
         raise ValueError(f"{target.path}: references is not a list")
 
     if not any(
-        isinstance(row, dict) and row.get("reference") == DSMZ_191_URL
-        for row in references
+        isinstance(row, dict) and row.get("reference") == DSMZ_191_URL for row in references
     ):
         references.append({"reference": DSMZ_191_URL})
 
@@ -356,10 +355,7 @@ def _upsert_history(
             isinstance(existing, dict)
             and existing.get("curator") == CURATOR
             and existing.get("action") == event["action"]
-            and (
-                event["action"] != LINK_ACTION
-                or existing.get("notes") == event["notes"]
-            )
+            and (event["action"] != LINK_ACTION or existing.get("notes") == event["notes"])
         ):
             history[index] = event
             return
@@ -436,10 +432,7 @@ def plan_repairs(normalized: Path = NORMALIZED) -> dict[Path, dict[str, Any]]:
     targets = {target.path: target for target in TARGETS}
     docs = {path: _load(normalized / path) for path in EXPECTED_IDS}
 
-    plans = {
-        normalized / path: repair_record(doc, targets[path])
-        for path, doc in docs.items()
-    }
+    plans = {normalized / path: repair_record(doc, targets[path]) for path, doc in docs.items()}
 
     parent = plans[normalized / DSMZ_PARENT]
     children = parent.setdefault("variant_children", [])

@@ -118,9 +118,7 @@ MEDIADIVE_MAIN_SOLUTION_COMPOSITION: tuple[Component, ...] = (
     ("Distilled water", "1000.0", "ML_PER_L"),
 )
 
-NA2CO3_SOLUTION_COMPOSITION: tuple[Component, ...] = (
-    ("Na2CO3", "10.0", "PERCENT_W_V"),
-)
+NA2CO3_SOLUTION_COMPOSITION: tuple[Component, ...] = (("Na2CO3", "10.0", "PERCENT_W_V"),)
 
 FINAL_NA2CO3_SOLUTION: tuple[SolutionSignature, ...] = (
     ("10% Na2CO3 solution", "variable", "VARIABLE", NA2CO3_SOLUTION_COMPOSITION),
@@ -268,8 +266,7 @@ ALKALINE_PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 3,
         "action": "ADJUST_PH",
         "description": (
-            "After autoclaving, adjust pH to 10.0 with sterile 10% Na2CO3 "
-            "solution."
+            "After autoclaving, adjust pH to 10.0 with sterile 10% Na2CO3 " "solution."
         ),
     },
 )
@@ -298,8 +295,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
         "term": _term(*GROUNDINGS[preferred_term]),
     }
 
@@ -322,10 +318,7 @@ def _composition(
     source: str,
     components: tuple[Component, ...],
 ) -> list[dict[str, Any]]:
-    return [
-        _component(name, value, unit, source=source)
-        for name, value, unit in components
-    ]
+    return [_component(name, value, unit, source=source) for name, value, unit in components]
 
 
 def _solutions(source: str) -> list[dict[str, Any]]:
@@ -351,9 +344,7 @@ def _solutions(source: str) -> list[dict[str, Any]]:
                     ),
                 )
             ],
-            "preparation_notes": (
-                "Sterilize before adjusting the basal medium to pH 10.0."
-            ),
+            "preparation_notes": ("Sterilize before adjusting the basal medium to pH 10.0."),
         }
     ]
 
@@ -370,9 +361,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -395,9 +384,7 @@ def _solution_signature(rows: Any, label: str) -> tuple[SolutionSignature, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -428,9 +415,7 @@ def _term_id(doc: dict[str, Any]) -> str:
 
 def _ensure_medium_target(doc: dict[str, Any], target: MediumTarget) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected {target.record_id}, found {doc.get('id')}"
-        )
+        raise ValueError(f"{target.path}: expected {target.record_id}, found {doc.get('id')}")
     if _media_term_id(doc) != target.source_term:
         raise ValueError(f"{target.path}: expected media term {target.source_term}")
 
@@ -451,9 +436,7 @@ def _ensure_medium_target(doc: dict[str, Any], target: MediumTarget) -> None:
 
 def _ensure_solution_target(doc: dict[str, Any], target: SolutionTarget) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected {target.record_id}, found {doc.get('id')}"
-        )
+        raise ValueError(f"{target.path}: expected {target.record_id}, found {doc.get('id')}")
     if _term_id(doc) != target.solution_term:
         raise ValueError(f"{target.path}: expected solution {target.solution_term}")
 
@@ -503,9 +486,7 @@ def _composition_components(doc: dict[str, Any]) -> list[dict[str, Any]]:
     for solution in doc.get("solutions") or []:
         if not isinstance(solution, dict):
             continue
-        rows.extend(
-            row for row in solution.get("composition") or [] if isinstance(row, dict)
-        )
+        rows.extend(row for row in solution.get("composition") or [] if isinstance(row, dict))
     return rows
 
 
@@ -621,9 +602,7 @@ def repair_medium_record(
         repaired.pop("variant_modifications", None)
 
     if target.variant_children:
-        repaired["variant_children"] = [
-            copy.deepcopy(child) for child in target.variant_children
-        ]
+        repaired["variant_children"] = [copy.deepcopy(child) for child in target.variant_children]
     else:
         repaired.pop("variant_children", None)
 

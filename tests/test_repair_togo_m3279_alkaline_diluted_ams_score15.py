@@ -93,10 +93,13 @@ def test_repair_corrects_base_formula_ph_and_gas_phase(
     assert "ph_range" not in repaired
     assert repaired["aeration"] == "methane-air (80:20, v/v)"
     assert repaired["incubation_atmosphere"] == "MICROAEROPHILIC"
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert "Methane gas" not in ingredients
     assert "Air" not in ingredients
     assert ingredients["NH4Cl"]["nutritional_roles"] == ["NITROGEN_SOURCE"]
@@ -114,9 +117,7 @@ def test_repair_expands_jcm_815_stock_solutions(repair_module) -> None:
     iron = _by_name(solutions["Iron stock solution"]["composition"])
     phosphate = _by_name(solutions["Phosphate buffer stock solution"]["composition"])
 
-    assert repair_module._solution_signatures(repaired) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
-    )
+    assert repair_module._solution_signatures(repaired) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     assert solutions["Trace element solution"]["concentration"] == {
         "value": "0.1",
         "unit": "ML_PER_L",

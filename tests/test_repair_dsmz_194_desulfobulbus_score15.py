@@ -57,10 +57,15 @@ def _doc(repair, target) -> dict:
                 "preferred_term": "2,2,4,4,6,8,8-Heptamethylnonane",
                 "concentration": {"value": "20", "unit": "G_PER_L"},
             },
-            {"preferred_term": "FeSO4 x 7 H2O", "concentration": {"value": "80", "unit": "G_PER_L"}},
+            {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "concentration": {"value": "80", "unit": "G_PER_L"},
+            },
         ],
         "curation_history": [],
-        "parent_media": {"path": "data/normalized_yaml/bacterial/KOMODO_194_DESULFOBULBUS_MEDIUM.yaml"},
+        "parent_media": {
+            "path": "data/normalized_yaml/bacterial/KOMODO_194_DESULFOBULBUS_MEDIUM.yaml"
+        },
         "variant_relationship": "SOURCE_DUPLICATE",
         "variant_children": [
             {
@@ -209,12 +214,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(root)
 
     assert {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(root): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(root): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_source(repair_module) -> None:

@@ -110,7 +110,9 @@ INGREDIENTS = [
         identifier="CHEBI:86158",
         label="calcium chloride dihydrate",
     ),
-    _component("NaHCO3", "0.2", "G_PER_L", identifier="CHEBI:32139", label="sodium hydrogencarbonate"),
+    _component(
+        "NaHCO3", "0.2", "G_PER_L", identifier="CHEBI:32139", label="sodium hydrogencarbonate"
+    ),
     _component("NaBr", "1.05", "MG_PER_L", identifier="CHEBI:63004", label="NaBr"),
     _component("H3BO3", "0.01", "G_PER_L", identifier="CHEBI:33118", label="boric acid"),
     _component("SrCl2 x 6 H2O", "0.03", "G_PER_L", identifier="CHEBI:36383", label="SrCl2"),
@@ -119,13 +121,25 @@ INGREDIENTS = [
     _component("LiCl", "1.2", "MG_PER_L", identifier="CHEBI:48607", label="LiCl"),
     _component("ZnCl2", "5", "MG_PER_L", identifier="CHEBI:49976", label="zinc dichloride"),
     _component("KI", "30", "MG_PER_L", identifier="CHEBI:8346", label="KI"),
-    _component("AlCl3 x 6 H2O", "0.3", "MICROG_PER_L", identifier="CHEBI:30115", label="AlCl3 x 6 H2O"),
+    _component(
+        "AlCl3 x 6 H2O", "0.3", "MICROG_PER_L", identifier="CHEBI:30115", label="AlCl3 x 6 H2O"
+    ),
     _component("Na2SiO3 x 5 H2O", "1.06", "MG_PER_L"),
-    _component("FeCl3 x 6 H2O", "0.02", "MICROG_PER_L", identifier="CHEBI:86254", label="FeCl3 x 6 H2O"),
+    _component(
+        "FeCl3 x 6 H2O", "0.02", "MICROG_PER_L", identifier="CHEBI:86254", label="FeCl3 x 6 H2O"
+    ),
     _component("Na2EDTA x 2 H2O", "0.04", "MICROG_PER_L"),
-    _component("MnCl2 x 4 H2O", "0.2", "MICROG_PER_L", identifier="CHEBI:86368", label="MnCl2 x 4 H2O"),
+    _component(
+        "MnCl2 x 4 H2O", "0.2", "MICROG_PER_L", identifier="CHEBI:86368", label="MnCl2 x 4 H2O"
+    ),
     _component("ZnSO4 x 7 H2O", "20", "MICROG_PER_L"),
-    _component("CoCl2 x 6 H2O", "0.01", "MICROG_PER_L", identifier="CHEBI:53503", label="Cobalt chloride hexahydrate"),
+    _component(
+        "CoCl2 x 6 H2O",
+        "0.01",
+        "MICROG_PER_L",
+        identifier="CHEBI:53503",
+        label="Cobalt chloride hexahydrate",
+    ),
     _component(
         "CuSO4 x 5 H2O",
         "2.6",
@@ -133,7 +147,13 @@ INGREDIENTS = [
         identifier="CHEBI:31440",
         label="copper(II) sulfate pentahydrate",
     ),
-    _component("NiSO4 x 6 H2O", "1", "MICROG_PER_L", identifier="CHEBI:53437", label="Nickel (II) sulfate hexahydrate"),
+    _component(
+        "NiSO4 x 6 H2O",
+        "1",
+        "MICROG_PER_L",
+        identifier="CHEBI:53437",
+        label="Nickel (II) sulfate hexahydrate",
+    ),
     _component(
         "Na2MoO4 x 2 H2O",
         "20",

@@ -99,9 +99,9 @@ def test_repair_restores_stock_solution_structure(
         "preferred_term": "Peptone",
         "concentration": {"value": "100", "unit": "G_PER_L"},
     }
-    assert _by_name(solutions["Riboflavin (0.2 mg/ml)"]["composition"])[
-        "Riboflavin"
-    ]["concentration"] == {"value": "0.2", "unit": "MG_PER_ML"}
+    assert _by_name(solutions["Riboflavin (0.2 mg/ml)"]["composition"])["Riboflavin"][
+        "concentration"
+    ] == {"value": "0.2", "unit": "MG_PER_ML"}
     assert [step["action"] for step in repaired["preparation_steps"]] == [
         "MIX",
         "AUTOCLAVE",

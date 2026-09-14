@@ -214,8 +214,7 @@ def _parent_ref(child: Child) -> dict[str, str]:
         "id": PARENT_ID,
         "name": PARENT_NAME,
         "notes": (
-            "KOMODO Medium 1055 is the DESULFOHALOBIUM UTAHENSE base for "
-            f"{child.source_label}."
+            "KOMODO Medium 1055 is the DESULFOHALOBIUM UTAHENSE base for " f"{child.source_label}."
         ),
     }
 
@@ -253,8 +252,7 @@ def repair_parent(doc: dict[str, Any]) -> dict[str, Any]:
             "curator": CURATOR,
             "action": ACTION,
             "changes": (
-                "Reclassified KOMODO Medium 1055.1, 1055.2, and 1055.3 "
-                "as strain variants"
+                "Reclassified KOMODO Medium 1055.1, 1055.2, and 1055.3 " "as strain variants"
             ),
             "source": "KOMODO Medium 1055, 1055.1, 1055.2, and 1055.3",
             "notes": (

@@ -69,10 +69,13 @@ def test_repair_marks_opaque_base_and_corrects_imported_concentration(
     repaired = repair_module.repair_record(_doc(repair_module))
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["dehydrated RCM medium"]["concentration"] == {
         "value": "variable",
         "unit": "VARIABLE",

@@ -194,8 +194,7 @@ TARGETS = (
             }
         ),
         notes=(
-            "TOGO M240 records 1.0 L distilled water, 50 g/L dry cow manure, "
-            "and 15 g/L agar."
+            "TOGO M240 records 1.0 L distilled water, 50 g/L dry cow manure, " "and 15 g/L agar."
         ),
         reference_url=TOGO_M240,
         recipe=COW_MANURE_RECIPE,
@@ -249,8 +248,7 @@ def _ingredient_names(doc: dict[str, Any]) -> frozenset[str]:
 def _require_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.expected_id:
         raise ValueError(
-            f"{target.path}: found id {doc.get('id')!r}, "
-            f"expected {target.expected_id!r}"
+            f"{target.path}: found id {doc.get('id')!r}, " f"expected {target.expected_id!r}"
         )
 
     source_term = _source_term_id(doc)
@@ -360,7 +358,8 @@ def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
 
 def plan_repairs(normalized: Path = NORMALIZED) -> dict[Path, dict[str, Any]]:
     return {
-        normalized / target.path: repair_record(
+        normalized
+        / target.path: repair_record(
             _load(normalized / target.path),
             target,
         )

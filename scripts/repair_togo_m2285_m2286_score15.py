@@ -149,8 +149,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"DSMZ Medium 115 lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"DSMZ Medium 115 lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     grounding = GROUNDINGS.get(preferred_term)
     if grounding:
@@ -266,9 +265,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -292,13 +289,10 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.expected_id:
         raise ValueError(
-            f"{target.path}: expected id {target.expected_id}, "
-            f"found {doc.get('id')!r}"
+            f"{target.path}: expected id {target.expected_id}, " f"found {doc.get('id')!r}"
         )
     if _source_term_id(doc) != target.expected_media_term:
-        raise ValueError(
-            f"{target.path}: expected media term {target.expected_media_term}"
-        )
+        raise ValueError(f"{target.path}: expected media term {target.expected_media_term}")
 
     ingredient_signature = _signature(doc.get("ingredients"), "ingredients")
     if ingredient_signature not in (

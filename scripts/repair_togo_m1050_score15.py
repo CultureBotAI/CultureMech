@@ -300,10 +300,7 @@ def _modified_hutner() -> dict[str, Any]:
         "preferred_term": "Modified Hutner's basal salts",
         "concentration": {"value": "20.0", "unit": "ML_PER_L"},
         "source": SOURCE,
-        "notes": (
-            f"{SOURCE} adds 20.0 ml/L Modified Hutner's basal salts from TOGO "
-            "M941."
-        ),
+        "notes": (f"{SOURCE} adds 20.0 ml/L Modified Hutner's basal salts from TOGO " "M941."),
         "composition": [
             _listed_component("Distilled water", "950.0", "ML_PER_L", source=HUTNER_SOURCE),
             _listed_component("Nitrilotriacetic acid", "10.0", "G_PER_L", source=HUTNER_SOURCE),
@@ -406,8 +403,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
         "concentration": {"value": "1030", "unit": "ML_PER_L"},
         "source": SOURCE,
         "notes": (
-            f"{SOURCE} combines 1030 ml Solution 1 with 0.2 ml "
-            "filter-sterilized Solution 2."
+            f"{SOURCE} combines 1030 ml Solution 1 with 0.2 ml " "filter-sterilized Solution 2."
         ),
         "composition": [
             _listed_component(
@@ -437,10 +433,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
                 "20.0",
                 "ML_PER_L",
                 source=SOURCE,
-                notes=(
-                    f"{SOURCE} adds 20.0 ml/L Modified Hutner's basal salts "
-                    "from TOGO M941."
-                ),
+                notes=(f"{SOURCE} adds 20.0 ml/L Modified Hutner's basal salts " "from TOGO M941."),
                 term=False,
             ),
         ],
@@ -539,9 +532,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

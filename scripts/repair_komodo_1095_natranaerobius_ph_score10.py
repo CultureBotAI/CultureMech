@@ -201,10 +201,7 @@ def _parent_ref(child: Child) -> dict[str, str]:
         "relationship": "PH_VARIANT",
         "id": PARENT_ID,
         "name": PARENT_NAME,
-        "notes": (
-            f"KOMODO Medium 1095 is the pH {PARENT_PH:g} "
-            "NATRANAEROBIUS medium base."
-        ),
+        "notes": (f"KOMODO Medium 1095 is the pH {PARENT_PH:g} " "NATRANAEROBIUS medium base."),
     }
 
 

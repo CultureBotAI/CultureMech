@@ -173,9 +173,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
     {
         "step_number": 2,
         "action": "AUTOCLAVE",
-        "description": (
-            "Autoclave the base at 121 C for 15 min and cool to about 50 C."
-        ),
+        "description": ("Autoclave the base at 121 C for 15 min and cool to about 50 C."),
     },
     {
         "step_number": 3,
@@ -239,9 +237,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

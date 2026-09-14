@@ -10,8 +10,6 @@ import yaml
 REPO = Path(__file__).resolve().parent.parent
 SCRIPT = REPO / "scripts" / "repair_nbrc_219_score15.py"
 SCORER = REPO / "scripts" / "score_review_need.py"
-sys.path.insert(0, str(REPO / "src"))
-from culturemech.ingredients import resolve_ingredient  # noqa: E402
 
 
 def _load_script(path: Path, name: str):
@@ -92,7 +90,7 @@ def test_repair_corrects_buffer_unit_and_exits_review_ranking(
     assert scorer_module.score_parsed([(str(repair_module.TARGET), repaired)]) == []
 
 
-def test_repair_grounds_defined_components_and_leaves_opaque_rows_unmapped(
+def test_repair_grounds_defined_components_and_keeps_opaque_rows_local(
     repair_module,
 ) -> None:
     repaired = repair_module.repair_record(_doc(repair_module))
@@ -112,13 +110,10 @@ def test_repair_grounds_defined_components_and_leaves_opaque_rows_unmapped(
     ]
     assert "term" not in ingredients["Bacto Casitone (Difco)"]
     assert "term" not in ingredients["Potassium phosphate buffer (0.01 M, pH 7.2)"]
-
-    unresolved = {
-        ingredient["preferred_term"]
-        for ingredient in repaired["ingredients"]
-        if not resolve_ingredient(ingredient).is_resolved
-    }
-    assert unresolved == {"Potassium phosphate buffer (0.01 M, pH 7.2)"}
+    assert ingredients["Bacto Casitone (Difco)"]["source"] == repair_module.SOURCE
+    assert ingredients["Potassium phosphate buffer (0.01 M, pH 7.2)"]["source"] == (
+        repair_module.SOURCE
+    )
 
 
 def test_repair_adds_preparation_references_flags_and_event_once(

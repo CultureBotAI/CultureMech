@@ -192,10 +192,7 @@ def _parent_ref(child: Child) -> dict[str, str]:
         "relationship": "STRAIN_SPECIFIC_VARIANT",
         "id": PARENT_ID,
         "name": PARENT_NAME,
-        "notes": (
-            f"KOMODO Medium 1010 is the pH {PH_LABEL} "
-            "ARTIFICIAL SEAWATER MEDIUM base."
-        ),
+        "notes": (f"KOMODO Medium 1010 is the pH {PH_LABEL} " "ARTIFICIAL SEAWATER MEDIUM base."),
     }
 
 

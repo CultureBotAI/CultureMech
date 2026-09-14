@@ -54,18 +54,10 @@ FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("Xylan", "0.5", "G_PER_L"),
 )
 
-CACL2_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("CaCl2 x 2H2O", "30.0", "MILLIMOLAR"),
-)
-MGCL2_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("MgCl2 x 6H2O", "1.0", "MOLAR"),
-)
-MGSO4_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("MgSO4 x 7H2O", "20.0", "MILLIMOLAR"),
-)
-AMMONIUM_HPO4_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("(NH4)2HPO4", "20.0", "MILLIMOLAR"),
-)
+CACL2_STOCK_SIGNATURE: tuple[Component, ...] = (("CaCl2 x 2H2O", "30.0", "MILLIMOLAR"),)
+MGCL2_STOCK_SIGNATURE: tuple[Component, ...] = (("MgCl2 x 6H2O", "1.0", "MOLAR"),)
+MGSO4_STOCK_SIGNATURE: tuple[Component, ...] = (("MgSO4 x 7H2O", "20.0", "MILLIMOLAR"),)
+AMMONIUM_HPO4_STOCK_SIGNATURE: tuple[Component, ...] = (("(NH4)2HPO4", "20.0", "MILLIMOLAR"),)
 
 SELENITE_TUNGSTATE_SIGNATURE: tuple[Component, ...] = (
     ("NaOH", "0.5", "G_PER_L"),
@@ -233,10 +225,7 @@ def _selenite_tungstate_solution() -> dict[str, Any]:
         "preferred_term": "Selenite-tungstate solution",
         "concentration": {"value": "1.0", "unit": "ML_PER_L"},
         "source": SOURCE,
-        "notes": (
-            f"{SOURCE} adds 1.0 ml/L Selenite-tungstate solution from "
-            "M558/JCM 554."
-        ),
+        "notes": (f"{SOURCE} adds 1.0 ml/L Selenite-tungstate solution from " "M558/JCM 554."),
         "composition": [
             _listed_component("NaOH", "0.5", "G_PER_L", source=SELENITE_SOURCE),
             _listed_component(
@@ -261,10 +250,7 @@ def _trace_element_solution() -> dict[str, Any]:
         "preferred_term": "Trace element solution SL-10",
         "concentration": {"value": "1.0", "unit": "ML_PER_L"},
         "source": SOURCE,
-        "notes": (
-            f"{SOURCE} adds 1.0 ml/L Trace element solution SL-10 from "
-            "M433/JCM 433."
-        ),
+        "notes": (f"{SOURCE} adds 1.0 ml/L Trace element solution SL-10 from " "M433/JCM 433."),
         "composition": [
             _listed_component("HCl (25%, 7.7 M)", "10.0", "ML_PER_L", source=TRACE_SOURCE),
             _listed_component("FeCl2 x 4H2O", "1.5", "G_PER_L", source=TRACE_SOURCE),
@@ -370,9 +356,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

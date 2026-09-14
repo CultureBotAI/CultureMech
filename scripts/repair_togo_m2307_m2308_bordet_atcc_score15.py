@@ -118,10 +118,7 @@ AGAR_INGREDIENTS: tuple[dict[str, Any], ...] = (
         "Bordet-Gengou Agar Base (BD 248200)",
         "30.0",
         "G_PER_L",
-        (
-            "ATCC Medium 35 lists 30.0 g/L commercial Bordet-Gengou Agar Base "
-            "(BD 248200)."
-        ),
+        ("ATCC Medium 35 lists 30.0 g/L commercial Bordet-Gengou Agar Base " "(BD 248200)."),
     ),
     _ingredient(
         "Glycerol",
@@ -206,10 +203,7 @@ AGAR_PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
     _step(
         1,
         "MIX",
-        (
-            "Suspend Bordet-Gengou Agar Base, glycerol, and Proteose Peptone "
-            "in 840 ml DI Water."
-        ),
+        ("Suspend Bordet-Gengou Agar Base, glycerol, and Proteose Peptone " "in 840 ml DI Water."),
     ),
     _step(2, "ADJUST_PH", "Adjust to pH 6.7 +/- 0.2."),
     _step(3, "AUTOCLAVE", "Autoclave the base at 121 C."),
@@ -224,10 +218,7 @@ BROTH_PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
     _step(
         1,
         "MIX",
-        (
-            "Mix glycerol and Proteose Peptone into 840 ml prepared "
-            "Bordet-Gengou Broth Base."
-        ),
+        ("Mix glycerol and Proteose Peptone into 840 ml prepared " "Bordet-Gengou Broth Base."),
     ),
     _step(2, "ADJUST_PH", "Adjust to pH 6.7 +/- 0.2."),
     _step(3, "AUTOCLAVE", "Autoclave the base at 121 C."),
@@ -325,9 +316,7 @@ def _solution_signatures(solutions: Any) -> tuple[SolutionSignature, ...]:
             raise ValueError("solutions contains a non-mapping row")
         concentration = solution.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"solution {solution.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"solution {solution.get('preferred_term')!r} lacks concentration")
         signatures.append(
             (
                 str(solution.get("preferred_term") or ""),
@@ -366,9 +355,7 @@ def _final_ingredient_signature(target: Target) -> tuple[Component, ...]:
 
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}")
     if _source_term_id(doc) != target.media_term:
         raise ValueError(
             f"{target.path}: expected media term {target.media_term}, "

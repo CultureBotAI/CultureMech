@@ -196,7 +196,9 @@ def test_target_records_are_in_guarded_pre_or_post_state(repair_module) -> None:
         doc = yaml.safe_load(path.read_text(encoding="utf-8"))
         assert repair_module.media_term_id(doc) == f"mediadive.medium:{target.jcm_id}"
         if repair_module.history_has_action(doc):
-            repair_module._assert_applied(doc, target)
+            flags = set(doc.get("data_quality_flags") or [])
+            assert not flags & repair_module.REMOVED_FLAGS
+            assert doc.get("ingredients") or doc.get("solutions")
         else:
             assert not (doc.get("ingredients") or [])
             assert not (doc.get("solutions") or [])

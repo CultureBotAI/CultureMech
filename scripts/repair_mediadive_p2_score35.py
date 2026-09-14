@@ -276,9 +276,7 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 
 def _require_target(doc: dict[str, Any], relative_path: str) -> None:
     if doc.get("id") != EXPECTED_ID:
-        raise ValueError(
-            f"{relative_path}: found id {doc.get('id')!r}, expected {EXPECTED_ID!r}"
-        )
+        raise ValueError(f"{relative_path}: found id {doc.get('id')!r}, expected {EXPECTED_ID!r}")
 
     if _source_term_id(doc) != EXPECTED_SOURCE_TERM:
         raise ValueError(
@@ -307,9 +305,7 @@ def _composition_components(doc: dict[str, Any]) -> list[dict[str, Any]]:
             continue
         nested = solution.get("composition") or []
         nested_components = (
-            [i for i in nested if isinstance(i, dict)]
-            if isinstance(nested, list)
-            else []
+            [i for i in nested if isinstance(i, dict)] if isinstance(nested, list) else []
         )
         components.extend(nested_components or [solution])
     return components

@@ -40,7 +40,9 @@ def _doc(target, repair_module) -> dict:
         "id": target.expected_id,
         "name": Path(target.path).stem,
         "original_name": (
-            "DSM 15672" if target.expected_source_term == "komodo.medium:1007.1" else "MINERAL MEDIUM"
+            "DSM 15672"
+            if target.expected_source_term == "komodo.medium:1007.1"
+            else "MINERAL MEDIUM"
         ),
         "category": "bacterial",
         "medium_type": "DEFINED",
@@ -79,12 +81,18 @@ def test_repair_nests_trace_elements_stock_and_exits_ranking(
     repaired = repair_module.repair_record(_doc(target, repair_module), target)
 
     assert repaired["ph_range"] == {"min": 5.5, "max": 6.0}
-    assert repair_module._ingredient_signature(
-        repaired["ingredients"],
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._solution_signatures(
-        repaired["solutions"],
-    ) == repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._ingredient_signature(
+            repaired["ingredients"],
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
+    assert (
+        repair_module._solution_signatures(
+            repaired["solutions"],
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURES
+    )
     assert scorer_module.score_record(repaired) == (0, [])
     assert scorer_module.score_parsed([(target.path, repaired)]) == []
 
@@ -167,7 +175,9 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     for target in repair_module.TARGETS:
         path = root / target.path
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(yaml.safe_dump(_doc(target, repair_module), sort_keys=False), encoding="utf-8")
+        path.write_text(
+            yaml.safe_dump(_doc(target, repair_module), sort_keys=False), encoding="utf-8"
+        )
 
     first = repair_module.plan_repairs(root)
     for repaired_path, doc in first.items():
@@ -176,12 +186,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(root)
 
     assert {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(root): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(root): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:

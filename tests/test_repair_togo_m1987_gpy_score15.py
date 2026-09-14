@@ -75,10 +75,13 @@ def test_repair_corrects_milliliter_units_and_exits_review_ranking(
     assert repaired["medium_type"] == "COMPLEX"
     assert repaired["composition_type"] == "UNDEFINED"
     assert repaired["physical_state"] == "LIQUID"
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Artificial seawater"]["concentration"] == {
         "value": "500.0",
         "unit": "ML_PER_L",

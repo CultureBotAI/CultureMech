@@ -199,9 +199,7 @@ def test_target_records_are_expected_jcm_148_recipes(repair_module) -> None:
     expected_names = [row["preferred_term"] for row in repair_module.INGREDIENTS]
 
     for target in repair_module.TARGETS:
-        doc = yaml.safe_load(
-            (repair_module.NORMALIZED / target.path).read_text(encoding="utf-8")
-        )
+        doc = yaml.safe_load((repair_module.NORMALIZED / target.path).read_text(encoding="utf-8"))
         repaired = repair_module.repair_document(doc, target)
 
         assert doc["id"] == repair_module.EXPECTED_IDS[target.path]

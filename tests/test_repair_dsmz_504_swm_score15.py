@@ -137,9 +137,7 @@ def test_dsm_12881_becomes_curated_strain_variant(repair_module, scorer_module) 
     assert repaired["ingredients"] == original["ingredients"]
     assert repaired["solutions"][0]["concentration"] == {"value": "1", "unit": "ML_PER_L"}
     assert repaired["data_quality_flags"] == ["ingredients_curated", "has_ontology_mappings"]
-    assert repaired["parent_media"]["path"] == (
-        f"data/normalized_yaml/{repair_module.DSMZ_504}"
-    )
+    assert repaired["parent_media"]["path"] == (f"data/normalized_yaml/{repair_module.DSMZ_504}")
     assert repaired["variant_relationship"] == "STRAIN_SPECIFIC_VARIANT"
     assert repaired["variant_modifications"] == [
         "Uses 2 g/L glucose and 0.5 g/L yeast extract for DSM 12881.",
@@ -162,7 +160,10 @@ def test_variant_links_are_directional(repair_module) -> None:
         repair_module.KOMODO_504_5,
         repair_module.KOMODO_504_6,
     ):
-        assert repaired[path]["parent_media"]["path"] == f"data/normalized_yaml/{repair_module.DSMZ_504}"
+        assert (
+            repaired[path]["parent_media"]["path"]
+            == f"data/normalized_yaml/{repair_module.DSMZ_504}"
+        )
 
     for path, doc in repaired.items():
         parent_media = doc.get("parent_media")
@@ -179,8 +180,7 @@ def test_dsm_6233_solution_candidates_are_resolved(repair_module) -> None:
     )
 
     concentrations = {
-        solution["preferred_term"]: solution["concentration"]
-        for solution in repaired["solutions"]
+        solution["preferred_term"]: solution["concentration"] for solution in repaired["solutions"]
     }
     assert concentrations == {
         "Trace element solution SL-10": {"value": "2", "unit": "ML_PER_L"},
@@ -200,12 +200,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(root)
 
     assert {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(root): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(root): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_source(repair_module) -> None:

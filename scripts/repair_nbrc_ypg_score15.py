@@ -26,9 +26,7 @@ TARGET_PATH = "bacterial/NBRC_YPG_MEDIUM.yaml"
 TARGET_ID = "CultureMech:007512"
 TITLE = "YPG Medium"
 LEGACY_NBRC_URL = "https://www.nite.go.jp/en/nbrc/cultures/media/802.html"
-CURRENT_MEDIUM_802_URL = (
-    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=802"
-)
+CURRENT_MEDIUM_802_URL = "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=802"
 
 Component = tuple[str, str, str]
 
@@ -51,8 +49,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 1,
         "action": "DISSOLVE",
         "description": (
-            "Dissolve yeast extract, peptone, glucose, and agar in "
-            "1000 ml distilled water."
+            "Dissolve yeast extract, peptone, glucose, and agar in " "1000 ml distilled water."
         ),
     },
     {
@@ -122,9 +119,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -146,9 +141,7 @@ def _has_nbrc_import(doc: dict[str, Any]) -> bool:
 
 def _ensure_target(doc: dict[str, Any]) -> None:
     if doc.get("id") != TARGET_ID:
-        raise ValueError(
-            f"{TARGET_PATH}: found id {doc.get('id')!r}, expected {TARGET_ID!r}"
-        )
+        raise ValueError(f"{TARGET_PATH}: found id {doc.get('id')!r}, expected {TARGET_ID!r}")
     if not _has_nbrc_import(doc):
         raise ValueError(f"{TARGET_PATH}: missing legacy NBRC 802 import event")
     if doc.get("original_name") != TITLE:

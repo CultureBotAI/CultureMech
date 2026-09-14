@@ -326,9 +326,7 @@ def collect_existing_links(
     *,
     repo_root: Path = REPO_ROOT,
 ) -> set[frozenset[str]]:
-    yaml_paths = {
-        row["yaml_path"] for row in rows if row.get("record_kind") != "SOLUTION"
-    }
+    yaml_paths = {row["yaml_path"] for row in rows if row.get("record_kind") != "SOLUTION"}
     recipes: dict[str, dict[str, Any]] = {}
     id_to_path: dict[str, str] = {}
 

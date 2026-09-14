@@ -71,9 +71,7 @@ INGREDIENT_NOTES = {
         "CCAP PM and MediaDive C78 list 1.0 g/L Tryptone; MediaDive identifies "
         "this as Oxoid L42."
     ),
-    "Deionized water": (
-        "CCAP PM says to make the medium up to 1 litre with deionised water."
-    ),
+    "Deionized water": ("CCAP PM says to make the medium up to 1 litre with deionised water."),
 }
 
 NOTES = (
@@ -90,8 +88,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 1,
         "action": "AUTOCLAVE",
         "description": (
-            "Make up to 1 litre with deionised water. Autoclave at 15 psi for "
-            "15 minutes."
+            "Make up to 1 litre with deionised water. Autoclave at 15 psi for " "15 minutes."
         ),
     },
 )
@@ -138,9 +135,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

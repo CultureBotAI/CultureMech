@@ -66,8 +66,7 @@ INGREDIENTS: tuple[dict[str, Any], ...] = (
         "Hydrochloric acid, 37%",
         "166.6667",
         "ML_PER_L",
-        "DSMZ Medium 766 mixes 200 ml of 37% HCl in the 1.2 L acidified starting "
-        "suspension.",
+        "DSMZ Medium 766 mixes 200 ml of 37% HCl in the 1.2 L acidified starting " "suspension.",
         term=("CHEBI:17883", "hydrogen chloride"),
     ),
     _ingredient(
@@ -190,9 +189,7 @@ def _ensure_target(doc: dict[str, Any]) -> None:
     if doc.get("id") != RECORD_ID:
         raise ValueError(f"expected id {RECORD_ID}, found {doc.get('id')!r}")
     if _source_term_id(doc) != MEDIA_TERM:
-        raise ValueError(
-            f"expected media term {MEDIA_TERM}, found {_source_term_id(doc)!r}"
-        )
+        raise ValueError(f"expected media term {MEDIA_TERM}, found {_source_term_id(doc)!r}")
 
     signature = _signature(doc.get("ingredients"), "ingredients")
     if signature not in {IMPORTED_INGREDIENTS, FINAL_INGREDIENTS}:

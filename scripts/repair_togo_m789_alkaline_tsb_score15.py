@@ -155,10 +155,7 @@ def _source_note(solid: bool) -> str:
     )
     if not solid:
         return base
-    return (
-        f"{base} TOGO M790 additionally applies the 20.0 g/L agar "
-        "solidification step."
-    )
+    return f"{base} TOGO M790 additionally applies the 20.0 g/L agar " "solidification step."
 
 
 def _load(path: Path) -> dict[str, Any]:
@@ -184,8 +181,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
 
     grounding = GROUNDINGS.get(preferred_term)
@@ -259,8 +255,7 @@ def _preparation_steps(solid: bool) -> list[dict[str, Any]]:
     first = "Dissolve 30.0 g/L Oxoid Tryptone soya broth in 1000.0 ml/L water."
     if solid:
         first = (
-            "Dissolve 30.0 g/L Oxoid Tryptone soya broth and 20.0 g/L "
-            "agar in 1000.0 ml/L water."
+            "Dissolve 30.0 g/L Oxoid Tryptone soya broth and 20.0 g/L " "agar in 1000.0 ml/L water."
         )
     return [
         {"step_number": 1, "action": "MIX", "description": first},
@@ -297,9 +292,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -322,9 +315,7 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected {target.record_id}, found {doc.get('id')}"
-        )
+        raise ValueError(f"{target.path}: expected {target.record_id}, found {doc.get('id')}")
     if _source_term_id(doc) != target.source_term:
         raise ValueError(f"{target.path}: expected media term {target.source_term}")
 
@@ -500,9 +491,7 @@ def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
         repaired.pop("variant_modifications", None)
 
     if target.variant_children:
-        repaired["variant_children"] = [
-            copy.deepcopy(child) for child in target.variant_children
-        ]
+        repaired["variant_children"] = [copy.deepcopy(child) for child in target.variant_children]
     else:
         repaired.pop("variant_children", None)
 

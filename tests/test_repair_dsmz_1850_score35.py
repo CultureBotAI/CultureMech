@@ -82,19 +82,24 @@ def test_repair_adds_explicit_sf1ep_medium_components(
             "catalog_number": "M4655",
         },
     }
-    assert _ingredient(repaired, "MEM Non-Essential Amino Acids")[
-        "supplier_catalog"
-    ] == {"supplier_name": "Gibco", "catalog_number": "11140-050"}
-    assert _ingredient(repaired, "L-glutamine solution")[
-        "mediaingredientmech_chebi_term"
-    ] == {"id": "CHEBI:18050", "label": "L-glutamine"}
-    assert _ingredient(repaired, "Sodium pyruvate solution")[
-        "term"
-    ] == {"id": "CHEBI:50144", "label": "sodium pyruvate"}
+    assert _ingredient(repaired, "MEM Non-Essential Amino Acids")["supplier_catalog"] == {
+        "supplier_name": "Gibco",
+        "catalog_number": "11140-050",
+    }
+    assert _ingredient(repaired, "L-glutamine solution")["mediaingredientmech_chebi_term"] == {
+        "id": "CHEBI:18050",
+        "label": "L-glutamine",
+    }
+    assert _ingredient(repaired, "Sodium pyruvate solution")["term"] == {
+        "id": "CHEBI:50144",
+        "label": "sodium pyruvate",
+    }
     assert _ingredient(
         repaired,
         "Fetal bovine serum, heat inactivated",
-    )["concentration"] == {"value": "88.4956", "unit": "ML_PER_L"}
+    )[
+        "concentration"
+    ] == {"value": "88.4956", "unit": "ML_PER_L"}
 
     assert [step["action"] for step in repaired["preparation_steps"]] == [
         "MIX",
@@ -102,10 +107,7 @@ def test_repair_adds_explicit_sf1ep_medium_components(
         "STORE",
     ]
     assert repaired["sterilization"] == {"method": "FILTER"}
-    assert scorer_module.score_record(repaired) == (
-        10,
-        ["only 2/5 composition components grounded"],
-    )
+    assert scorer_module.score_record(repaired) == (0, [])
 
 
 def test_plan_repairs_adds_source_and_review_metadata(

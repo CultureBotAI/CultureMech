@@ -44,8 +44,7 @@ IMPORTED_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     (YEAST_EXTRACT, "5", "G_PER_L"),
     (NACL, "8.5", "G_PER_L"),
     (
-        "N-2-hydroxy- ethylpiperazine-N'-2-ethanesulfonic acid "
-        "[HEPES; pH 7.2])",
+        "N-2-hydroxy- ethylpiperazine-N'-2-ethanesulfonic acid " "[HEPES; pH 7.2])",
         "100",
         "MILLIMOLAR",
     ),
@@ -180,9 +179,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

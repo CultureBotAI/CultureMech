@@ -98,15 +98,9 @@ TRACE_VITAMIN_SIGNATURE: tuple[Component, ...] = (
     ("Lipoic acid", "5.0", "MG_PER_L"),
     ("Distilled water", "1.0", "L"),
 )
-YEAST_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("Yeast extract", "1.0", "PERCENT_W_V"),
-)
-NA2S_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("Na2S x 9H2O", "5.0", "PERCENT_W_V"),
-)
-CROTONATE_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("Sodium crotonate", "2.0", "MOLAR"),
-)
+YEAST_STOCK_SIGNATURE: tuple[Component, ...] = (("Yeast extract", "1.0", "PERCENT_W_V"),)
+NA2S_STOCK_SIGNATURE: tuple[Component, ...] = (("Na2S x 9H2O", "5.0", "PERCENT_W_V"),)
+CROTONATE_STOCK_SIGNATURE: tuple[Component, ...] = (("Sodium crotonate", "2.0", "MOLAR"),)
 DITHIONITE_STOCK_SIGNATURE: tuple[Component, ...] = (
     ("Sodium dithionite", "0.1", "PERCENT_W_V"),
     ("NaHCO3", "1.0", "MOLAR"),
@@ -213,8 +207,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     grounding = GROUNDINGS[preferred_term]
     row["term"] = _term(*grounding)
@@ -337,10 +330,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
         "Selenite-tungstate solution",
         "1.0",
         SELENITE_TUNGSTATE_SIGNATURE,
-        notes=(
-            "MediaDive J1289 adds 1.0 ml/L filter-sterilized "
-            "Selenite-tungstate solution."
-        ),
+        notes=("MediaDive J1289 adds 1.0 ml/L filter-sterilized " "Selenite-tungstate solution."),
         preparation_notes="Filter-sterilize before aseptic addition.",
     ),
     _solution(
@@ -369,8 +359,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
         "10.0",
         CROTONATE_STOCK_SIGNATURE,
         notes=(
-            "MediaDive J1289 adds 10.0 ml/L filter-sterilized 2.0 M "
-            "Sodium crotonate solution."
+            "MediaDive J1289 adds 10.0 ml/L filter-sterilized 2.0 M " "Sodium crotonate solution."
         ),
         preparation_notes="Filter-sterilize before aseptic addition.",
     ),
@@ -409,8 +398,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 4,
         "action": "MIX",
         "description": (
-            "After cooling, aseptically add autoclaved and filter-sterilized "
-            "stock solutions."
+            "After cooling, aseptically add autoclaved and filter-sterilized " "stock solutions."
         ),
     },
     {
@@ -461,9 +449,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

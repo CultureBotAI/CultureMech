@@ -229,8 +229,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
 
     grounding = GROUNDINGS.get(preferred_term)
@@ -353,9 +352,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -532,9 +529,7 @@ def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
         repaired.pop("variant_modifications", None)
 
     if target.variant_children:
-        repaired["variant_children"] = [
-            copy.deepcopy(child) for child in target.variant_children
-        ]
+        repaired["variant_children"] = [copy.deepcopy(child) for child in target.variant_children]
     else:
         repaired.pop("variant_children", None)
 

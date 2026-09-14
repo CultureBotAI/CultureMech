@@ -293,9 +293,7 @@ def _composition(source: str, rows: tuple[Component, ...]) -> list[dict[str, Any
     return [_component(name, value, unit, source) for name, value, unit in rows]
 
 
-INGREDIENTS: tuple[dict[str, Any], ...] = tuple(
-    _composition(SOURCE, FINAL_INGREDIENT_SIGNATURE)
-)
+INGREDIENTS: tuple[dict[str, Any], ...] = tuple(_composition(SOURCE, FINAL_INGREDIENT_SIGNATURE))
 
 
 def _stock_solution(
@@ -344,10 +342,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
         "10.0",
         "JCM Medium 197",
         TRACE_VITAMIN_COMPOSITION,
-        (
-            "JCM Medium 1367 adds 10.0 ml/L filter-sterilized Trace "
-            "vitamins from JCM Medium 197."
-        ),
+        ("JCM Medium 1367 adds 10.0 ml/L filter-sterilized Trace " "vitamins from JCM Medium 197."),
     ),
     _stock_solution(
         "5% Na2S x 9 H2O solution",
@@ -374,9 +369,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -399,9 +392,7 @@ def _solution_signature(rows: Any) -> tuple[SolutionSignature, ...]:
             raise ValueError("solutions contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"solution row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"solution row {row.get('preferred_term')!r} lacks concentration")
         composition = row.get("composition") or []
         signature.append(
             (

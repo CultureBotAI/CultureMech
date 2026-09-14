@@ -146,9 +146,10 @@ def test_repair_preserves_hcl_as_process_context(repair_module) -> None:
     ph_step = repaired["preparation_steps"][1]["description"]
     assert "pH 3.0" in ph_step
     assert "HCl" in ph_step
-    assert ingredients["HCl"]["source"] == repair_module.SOURCE_LABELS[
-        repair_module.MEDIUM_1003_TARGET
-    ]
+    assert (
+        ingredients["HCl"]["source"]
+        == repair_module.SOURCE_LABELS[repair_module.MEDIUM_1003_TARGET]
+    )
     assert "HCl" in repaired["curation_history"][-1]["notes"]
 
 

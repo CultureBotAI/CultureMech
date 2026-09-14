@@ -80,13 +80,14 @@ def test_repair_sets_defined_formula_and_ph(repair_module) -> None:
     assert repaired["composition_type"] == "DEFINED"
     assert repaired["physical_state"] == "LIQUID"
     assert repaired["ph_range"] == {"min": 6.0, "max": 6.5}
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._solution_signatures(repaired) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
     )
+    assert repair_module._solution_signatures(repaired) == (repair_module.FINAL_SOLUTION_SIGNATURES)
 
 
 def test_repair_expands_referenced_standard_solutions(repair_module) -> None:
@@ -146,9 +147,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

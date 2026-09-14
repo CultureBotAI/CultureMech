@@ -65,9 +65,7 @@ def _solution_by_name(doc: dict, name: str) -> dict:
 
 def _ingredient_by_name(doc: dict, name: str) -> dict:
     return next(
-        ingredient
-        for ingredient in doc["ingredients"]
-        if ingredient["preferred_term"] == name
+        ingredient for ingredient in doc["ingredients"] if ingredient["preferred_term"] == name
     )
 
 
@@ -142,9 +140,10 @@ def test_plan_repairs_adds_spirochaeta_isovalerica_recipe(tmp_path: Path):
     assert isovalerica["ph_value"] == 7.5
     assert isovalerica["incubation_atmosphere"] == "ANAEROBIC"
     assert "solutions" not in isovalerica
-    assert _ingredient_by_name(isovalerica, "Tris-HCl-buffer (0.2 M; pH 7.5)")[
-        "concentration"
-    ] == {"value": "250", "unit": "ML_PER_L"}
+    assert _ingredient_by_name(isovalerica, "Tris-HCl-buffer (0.2 M; pH 7.5)")["concentration"] == {
+        "value": "250",
+        "unit": "ML_PER_L",
+    }
     assert _ingredient_by_name(isovalerica, "Sea water")["concentration"] == {
         "value": "750",
         "unit": "ML_PER_L",
@@ -182,10 +181,7 @@ def test_plan_repairs_adds_review_metadata_once(tmp_path: Path):
     matching_events = [
         event
         for event in aurantia["curation_history"]
-        if (
-            event.get("curator") == repair.CURATOR
-            and event.get("action") == repair.ACTION
-        )
+        if (event.get("curator") == repair.CURATOR and event.get("action") == repair.ACTION)
     ]
     assert len(matching_events) == 1
     assert matching_events[0]["source"] == repair.DSMZ_168_PDF

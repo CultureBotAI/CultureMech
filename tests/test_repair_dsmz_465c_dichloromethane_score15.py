@@ -178,9 +178,7 @@ def test_dsm_6813_uses_ten_ml_sl4_and_leaves_ranking(
 def test_repair_removes_only_stale_child_from_komodo_465(repair_module) -> None:
     repaired = repair_module.repair_komodo_465_parent(_komodo_465_doc(repair_module))
 
-    assert [child["id"] for child in repaired["variant_children"]] == [
-        "CultureMech:005572"
-    ]
+    assert [child["id"] for child in repaired["variant_children"]] == ["CultureMech:005572"]
     assert repaired["curation_history"][0]["curator"] == repair_module.CURATOR
 
 
@@ -202,9 +200,7 @@ def test_plan_repairs_is_idempotent(tmp_path: Path, repair_module) -> None:
 
     komodo_465 = root / repair_module.KOMODO_465
     komodo_465.parent.mkdir(parents=True, exist_ok=True)
-    komodo_465.write_text(
-        yaml.safe_dump(_komodo_465_doc(repair_module), sort_keys=False)
-    )
+    komodo_465.write_text(yaml.safe_dump(_komodo_465_doc(repair_module), sort_keys=False))
 
     for path, doc in repair_module.plan_repairs(root).items():
         path.write_bytes(repair_module.dump_record(doc).encode("utf-8"))

@@ -52,8 +52,7 @@ def _doc(repair_module, target) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": target.physical_state,
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_ingredients
+            _ingredient(name, value, unit) for name, value, unit in target.imported_ingredients
         ],
         "media_term": {
             "preferred_term": f"TOGO Medium {target.media_term.removeprefix('TOGO:')}",
@@ -81,10 +80,13 @@ def test_repair_sets_variant_specific_direct_components(repair_module) -> None:
 
     assert repaired_agar["ph_range"] == {"min": 7.6, "max": 7.8}
     assert repaired_agar["physical_state"] == "SOLID_AGAR"
-    assert repair_module._signature(
-        repaired_agar["ingredients"],
-        "ingredients",
-    ) == repair_module.AGAR_FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired_agar["ingredients"],
+            "ingredients",
+        )
+        == repair_module.AGAR_FINAL_INGREDIENT_SIGNATURE
+    )
     assert _by_name(repaired_agar["ingredients"])["Agar (if necessary)"]["term"] == {
         "id": "CHEBI:2509",
         "label": "agar",
@@ -92,10 +94,13 @@ def test_repair_sets_variant_specific_direct_components(repair_module) -> None:
 
     assert repaired_liquid["ph_range"] == {"min": 7.4, "max": 7.6}
     assert repaired_liquid["physical_state"] == "LIQUID"
-    assert repair_module._signature(
-        repaired_liquid["ingredients"],
-        "ingredients",
-    ) == repair_module.LIQUID_FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired_liquid["ingredients"],
+            "ingredients",
+        )
+        == repair_module.LIQUID_FINAL_INGREDIENT_SIGNATURE
+    )
     assert "Agar (if necessary)" not in _by_name(repaired_liquid["ingredients"])
 
 
@@ -111,14 +116,20 @@ def test_repair_expands_m1100_solutions(repair_module) -> None:
         "Vitamins mix solution",
         "FeCl3 solution",
     }
-    assert repair_module._signature(
-        solutions["Solution A"]["composition"],
-        "Solution A",
-    ) == repair_module.SOLUTION_A_SIGNATURE
-    assert repair_module._signature(
-        solutions["Solution B"]["composition"],
-        "Solution B",
-    ) == repair_module.SOLUTION_B_SIGNATURE
+    assert (
+        repair_module._signature(
+            solutions["Solution A"]["composition"],
+            "Solution A",
+        )
+        == repair_module.SOLUTION_A_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            solutions["Solution B"]["composition"],
+            "Solution B",
+        )
+        == repair_module.SOLUTION_B_SIGNATURE
+    )
     assert "term" not in solution_b["0.5 M Na2HPO4-NaH2PO4 buffer (pH 7.3)"]
 
 
@@ -128,14 +139,20 @@ def test_repair_expands_m290_and_fecl3_stocks(repair_module) -> None:
     solutions = _by_name(repaired["solutions"])
     vitamins = _by_name(solutions["Vitamins mix solution"]["composition"])
 
-    assert repair_module._signature(
-        solutions["Vitamins mix solution"]["composition"],
-        "Vitamins mix solution",
-    ) == repair_module.VITAMINS_SIGNATURE
-    assert repair_module._signature(
-        solutions["FeCl3 solution"]["composition"],
-        "FeCl3 solution",
-    ) == repair_module.FECL3_SIGNATURE
+    assert (
+        repair_module._signature(
+            solutions["Vitamins mix solution"]["composition"],
+            "Vitamins mix solution",
+        )
+        == repair_module.VITAMINS_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            solutions["FeCl3 solution"]["composition"],
+            "FeCl3 solution",
+        )
+        == repair_module.FECL3_SIGNATURE
+    )
     assert vitamins["Vitamin B12"]["concentration"] == {
         "value": "1.0",
         "unit": "MG_PER_L",
@@ -185,9 +202,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
         )
     ]
     assert len(matching_events) == 1
-    assert matching_events[0]["source"] == "; ".join(
-        (target.togo_url, *repair_module.REFERENCES)
-    )
+    assert matching_events[0]["source"] == "; ".join((target.togo_url, *repair_module.REFERENCES))
 
 
 def test_repair_record_rejects_wrong_id(repair_module) -> None:

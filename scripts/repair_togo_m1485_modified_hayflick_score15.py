@@ -54,9 +54,7 @@ IMPORTED_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     (BAKERS_YEAST, "250", "G_PER_L"),
 )
 
-IMPORTED_SOLUTION_SIGNATURE: tuple[Component, ...] = (
-    (FRESH_YEAST_EXTRACT, "100", "G_PER_L"),
-)
+IMPORTED_SOLUTION_SIGNATURE: tuple[Component, ...] = ((FRESH_YEAST_EXTRACT, "100", "G_PER_L"),)
 
 FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     (WATER, "700.0", "ML_PER_L"),
@@ -68,9 +66,7 @@ FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     (PENICILLIN_G, "25.0", "ML_PER_L"),
 )
 
-FINAL_SOLUTION_SIGNATURE: tuple[Component, ...] = (
-    (FRESH_YEAST_EXTRACT, "100.0", "ML_PER_L"),
-)
+FINAL_SOLUTION_SIGNATURE: tuple[Component, ...] = ((FRESH_YEAST_EXTRACT, "100.0", "ML_PER_L"),)
 
 YEAST_STOCK_SIGNATURE: tuple[Component, ...] = (
     (WATER, "1.0", "L"),
@@ -122,16 +118,14 @@ INGREDIENT_NOTES = {
         "remains intentionally unmapped."
     ),
     THALLIUM_ACETATE: (
-        "TOGO M1485 / NBRC Medium 267 lists 10 ml/L thallium acetate as a "
-        "1% w/v stock."
+        "TOGO M1485 / NBRC Medium 267 lists 10 ml/L thallium acetate as a " "1% w/v stock."
     ),
     HORSE_SERUM: (
         "TOGO M1485 / NBRC Medium 267 lists 200 ml/L horse serum heat "
         "inactivated at 56 C for 30 minutes."
     ),
     PENICILLIN_G: (
-        "TOGO M1485 / NBRC Medium 267 lists 25 ml/L Penicillin G as a "
-        "20,000 IU/ml stock."
+        "TOGO M1485 / NBRC Medium 267 lists 25 ml/L Penicillin G as a " "20,000 IU/ml stock."
     ),
 }
 
@@ -283,9 +277,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -325,9 +317,7 @@ def _ensure_target(doc: dict[str, Any]) -> None:
 
     ingredient_signature = _signature(doc.get("ingredients"), "ingredients")
     solution_signature = _signature(doc.get("solutions"), "solutions")
-    solution_composition_signature = _solution_composition_signature(
-        doc.get("solutions")
-    )
+    solution_composition_signature = _solution_composition_signature(doc.get("solutions"))
 
     if (
         ingredient_signature == IMPORTED_INGREDIENT_SIGNATURE

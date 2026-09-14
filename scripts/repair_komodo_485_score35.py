@@ -20,8 +20,7 @@ TARGET = "archaea/metallosphaera_medium.yaml"
 EXPECTED_ID = "CultureMech:005608"
 EXPECTED_MEDIA_TERM = "komodo.medium:485"
 SOURCE_URL = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=485"
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=485"
 )
 SOURCE_NAME = "KOMODO MediaInfo 485"
 YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)

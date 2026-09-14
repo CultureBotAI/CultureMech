@@ -84,10 +84,7 @@ class RecordSpec:
 
     @property
     def nbrc_url(self) -> str:
-        return (
-            "https://www.nite.go.jp/nbrc/catalogue/"
-            f"NBRCMediumDetailServlet?NO={self.nbrc_no}"
-        )
+        return "https://www.nite.go.jp/nbrc/catalogue/" f"NBRCMediumDetailServlet?NO={self.nbrc_no}"
 
     @property
     def source(self) -> str:
@@ -164,10 +161,7 @@ class RecordSpec:
 
     @property
     def variant_modifications(self) -> str:
-        return (
-            f"Adds {self.added_solution_text} after separate filter "
-            "sterilization."
-        )
+        return f"Adds {self.added_solution_text} after separate filter " "sterilization."
 
 
 STREPTOMYCIN = AntibioticStock(
@@ -261,8 +255,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     grounding = GROUNDINGS.get(preferred_term)
     if grounding is not None:
@@ -303,9 +296,7 @@ def _solution(stock: AntibioticStock, spec: RecordSpec) -> dict[str, Any]:
         "preferred_term": stock.solution_name,
         "concentration": {"value": stock.addition_ml, "unit": "ML_PER_L"},
         "source": spec.source,
-        "notes": (
-            f"{spec.source} lists {stock.source_ml} ml/L {stock.solution_name}."
-        ),
+        "notes": (f"{spec.source} lists {stock.source_ml} ml/L {stock.solution_name}."),
         "term": _term(*GROUNDINGS[stock.component_name]),
         "mediaingredientmech_chebi_term": _term(*GROUNDINGS[stock.component_name]),
         "composition": [
@@ -333,10 +324,7 @@ def _solutions(spec: RecordSpec) -> tuple[dict[str, Any], ...]:
 def _preparation_steps(spec: RecordSpec) -> tuple[dict[str, Any], ...]:
     stocks = _join_stock_phrases(
         [
-            (
-                f"{stock.component_mg.removesuffix('.0')} mg/ml "
-                f"{stock.component_name.lower()}"
-            )
+            (f"{stock.component_mg.removesuffix('.0')} mg/ml " f"{stock.component_name.lower()}")
             for stock in spec.final_solution_order
         ]
     )
@@ -382,9 +370,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -407,9 +393,7 @@ def _solution_signature(rows: Any, label: str) -> tuple[SolutionSignature, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

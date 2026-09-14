@@ -56,8 +56,7 @@ def _doc(target) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "SOLID_AGAR",
         "ingredients": [
-            _component(name, value, unit)
-            for name, value, unit in target.imported_ingredients
+            _component(name, value, unit) for name, value, unit in target.imported_ingredients
         ],
         "media_term": {
             "preferred_term": target.media_term,
@@ -67,8 +66,7 @@ def _doc(target) -> dict:
         "applications": ["Microbial cultivation"],
         "curation_history": [],
         "solutions": [
-            _solution(name, value, unit)
-            for name, value, unit, _ in target.imported_solutions
+            _solution(name, value, unit) for name, value, unit, _ in target.imported_solutions
         ],
         "parent_media": {
             "path": "data/normalized_yaml/bacterial/bn_agar.yaml",
@@ -99,10 +97,13 @@ def test_repair_bn_converts_selective_additives_to_grounded_direct_rows(
     assert repaired["functional_role"] == ["SELECTIVE"]
     assert "ph_value" not in repaired
     assert "solutions" not in repaired
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_BN
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_BN
+    )
     assert ingredients["Sodium benzoate"]["concentration"] == {
         "value": "1.44",
         "unit": "G_PER_L",
@@ -126,12 +127,8 @@ def test_repair_base_records_fix_water_agar_and_variant_topology(
     repair_module,
     scorer_module,
 ) -> None:
-    nutrient_target = repair_module.TARGET_BY_PATH[
-        Path("bacterial/nutrient_agar_broth.yaml")
-    ]
-    m1570_target = repair_module.TARGET_BY_PATH[
-        Path("bacterial/togo_medium_m1570.yaml")
-    ]
+    nutrient_target = repair_module.TARGET_BY_PATH[Path("bacterial/nutrient_agar_broth.yaml")]
+    m1570_target = repair_module.TARGET_BY_PATH[Path("bacterial/togo_medium_m1570.yaml")]
 
     nutrient = repair_module.repair_record(_doc(nutrient_target), nutrient_target)
     m1570 = repair_module.repair_record(_doc(m1570_target), m1570_target)
@@ -149,15 +146,16 @@ def test_repair_base_records_fix_water_agar_and_variant_topology(
     ]
     assert m1570["parent_media"] == repair_module.NUTRIENT_BASE_PARENT_FOR_M1570
     assert m1570["variant_relationship"] == "CONCENTRATION_VARIANT"
-    assert m1570["variant_modifications"] == (
-        repair_module.M1570_VARIANT_MODIFICATIONS
+    assert m1570["variant_modifications"] == (repair_module.M1570_VARIANT_MODIFICATIONS)
+    assert (
+        scorer_module.score_parsed(
+            [
+                (str(nutrient_target.path), nutrient),
+                (str(m1570_target.path), m1570),
+            ]
+        )
+        == []
     )
-    assert scorer_module.score_parsed(
-        [
-            (str(nutrient_target.path), nutrient),
-            (str(m1570_target.path), m1570),
-        ]
-    ) == []
 
 
 def test_repair_adds_preparation_references_flags_and_event_once(
@@ -177,9 +175,7 @@ def test_repair_adds_preparation_references_flags_and_event_once(
     assert twice["parent_media"] == repair_module.NUTRIENT_BASE_PARENT
     assert twice["variant_relationship"] == "SUPPLEMENTED_VARIANT"
     assert twice["variant_modifications"] == repair_module.BN_VARIANT_MODIFICATIONS
-    assert twice["references"] == [
-        {"reference": reference} for reference in target.references
-    ]
+    assert twice["references"] == [{"reference": reference} for reference in target.references]
     assert twice["data_quality_flags"] == [
         "has_ontology_mappings",
         "ingredients_curated",

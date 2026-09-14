@@ -67,9 +67,7 @@ def _target_doc(repair_module) -> dict:
         "curation_history": [],
         "solutions": [
             _solution(name, value, unit)
-            for name, value, unit, _composition in (
-                repair_module.IMPORTED_SOLUTION_SIGNATURE
-            )
+            for name, value, unit, _composition in (repair_module.IMPORTED_SOLUTION_SIGNATURE)
         ],
     }
 

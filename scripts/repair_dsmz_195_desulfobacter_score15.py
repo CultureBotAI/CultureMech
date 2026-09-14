@@ -38,8 +38,7 @@ EXPECTED_SOURCE_TERMS = {
 DSMZ_195_REST = "https://mediadive.dsmz.de/rest/medium/195"
 DSMZ_195_PDF = "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium195.pdf"
 KOMODO_BASE = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo="
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo="
 )
 
 CURATOR = "repair_dsmz_195_desulfobacter_score15.py"
@@ -258,8 +257,7 @@ TARGETS = (
             ),
         },
         curation_notes=(
-            "Resolved stock dilution and restored the KOMODO Medium 195 NaHCO3 "
-            "and acetate rows."
+            "Resolved stock dilution and restored the KOMODO Medium 195 NaHCO3 " "and acetate rows."
         ),
         parent_media=KOMODO_BASE_PARENT,
         variant_relationship="SUBSTITUTED_COMPONENT_VARIANT",
@@ -338,7 +336,9 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 
 def _require_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != EXPECTED_IDS[target.path]:
-        raise ValueError(f"{target.path}: found id {doc.get('id')!r}, expected {EXPECTED_IDS[target.path]!r}")
+        raise ValueError(
+            f"{target.path}: found id {doc.get('id')!r}, expected {EXPECTED_IDS[target.path]!r}"
+        )
     source_term = _source_term_id(doc)
     if source_term != EXPECTED_SOURCE_TERMS[target.path]:
         raise ValueError(
@@ -355,9 +355,7 @@ def _add_chebi_mirror(row: dict[str, Any]) -> None:
 
 def _repair_ingredients(doc: dict[str, Any], target: Target) -> list[dict[str, Any]]:
     expected_names = set(target.final_concentrations)
-    expected_names.update(
-        str(row["preferred_term"]) for row in target.replacements.values()
-    )
+    expected_names.update(str(row["preferred_term"]) for row in target.replacements.values())
     seen: set[str] = set()
     repaired: list[dict[str, Any]] = []
 
@@ -425,7 +423,12 @@ def _append_curation_event(doc: dict[str, Any], target: Target) -> None:
 
 
 def _set_variant_fields(repaired: dict[str, Any], target: Target) -> None:
-    for field_name in ("parent_media", "variant_relationship", "variant_modifications", "variant_children"):
+    for field_name in (
+        "parent_media",
+        "variant_relationship",
+        "variant_modifications",
+        "variant_children",
+    ):
         repaired.pop(field_name, None)
 
     after = "references"
@@ -439,7 +442,12 @@ def _set_variant_fields(repaired: dict[str, Any], target: Target) -> None:
         _put_after(repaired, "variant_modifications", list(target.variant_modifications), after)
         after = "variant_modifications"
     if target.variant_children:
-        _put_after(repaired, "variant_children", [copy.deepcopy(row) for row in target.variant_children], after)
+        _put_after(
+            repaired,
+            "variant_children",
+            [copy.deepcopy(row) for row in target.variant_children],
+            after,
+        )
 
 
 def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:

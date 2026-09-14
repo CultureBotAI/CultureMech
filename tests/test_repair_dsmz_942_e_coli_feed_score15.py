@@ -56,8 +56,7 @@ def _medium_doc(repair_module) -> dict:
         },
         "notes": "Source: DSMZ",
         "ingredients": [
-            _component(*component)
-            for component in repair_module.IMPORTED_MEDIA_SIGNATURE
+            _component(*component) for component in repair_module.IMPORTED_MEDIA_SIGNATURE
         ],
         "preparation_steps": [
             {
@@ -78,8 +77,7 @@ def _solution_doc(repair_module) -> dict:
         "preferred_term": "Main sol. 942",
         "term": {"id": "mediadive.solution:1939", "label": "Main sol. 942"},
         "composition": [
-            _component(*component)
-            for component in repair_module.IMPORTED_SOLUTION_SIGNATURE
+            _component(*component) for component in repair_module.IMPORTED_SOLUTION_SIGNATURE
         ],
         "preparation_notes": "Adjust pH to 7.2, autoclave and pour plates.",
         "ingredients": [_component("See source for composition", "variable", "VARIABLE")],
@@ -95,9 +93,10 @@ def test_dsmz_942_medium_is_marked_curated_and_kept_two_component(
 ) -> None:
     repaired = repair_module.repair_medium(_medium_doc(repair_module))
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_MEDIA_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_MEDIA_SIGNATURE
+    )
     assert "kg_microbe_match" not in repaired
     assert repaired["data_quality_flags"] == [
         "has_ontology_mappings",
@@ -122,9 +121,10 @@ def test_mediadive_1939_solution_water_and_placeholder_are_repaired(
 ) -> None:
     repaired = repair_module.repair_solution(_solution_doc(repair_module))
 
-    assert repair_module._signature(
-        repaired["composition"], "composition"
-    ) == repair_module.FINAL_SOLUTION_SIGNATURE
+    assert (
+        repair_module._signature(repaired["composition"], "composition")
+        == repair_module.FINAL_SOLUTION_SIGNATURE
+    )
     assert repaired["composition"][2]["concentration"] == {
         "value": "1000.0",
         "unit": "ML_PER_L",

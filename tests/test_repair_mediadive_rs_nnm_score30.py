@@ -55,9 +55,7 @@ def _write_target(repair, root: Path) -> Path:
 
 def _ingredient_by_name(doc: dict, name: str) -> dict:
     return next(
-        ingredient
-        for ingredient in doc["ingredients"]
-        if ingredient["preferred_term"] == name
+        ingredient for ingredient in doc["ingredients"] if ingredient["preferred_term"] == name
     )
 
 
@@ -115,10 +113,7 @@ def test_plan_repairs_adds_review_metadata_once(tmp_path: Path):
     matching_events = [
         event
         for event in nnm["curation_history"]
-        if (
-            event.get("curator") == repair.CURATOR
-            and event.get("action") == repair.ACTION
-        )
+        if (event.get("curator") == repair.CURATOR and event.get("action") == repair.ACTION)
     ]
     assert len(matching_events) == 1
     assert matching_events[0]["source"] == repair.P4_PUBLIC

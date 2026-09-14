@@ -80,10 +80,13 @@ def test_repair_corrects_base_formula_and_conditions(repair_module) -> None:
 
     assert repaired["composition_type"] == "SEMI_DEFINED"
     assert repaired["ph_value"] == 7.0
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Resazurin"]["concentration"] == {
         "value": "0.5",
         "unit": "MG_PER_L",
@@ -118,9 +121,12 @@ def test_repair_expands_cysteine_glucose_and_thiosulfate_stocks(repair_module) -
     repaired = repair_module.repair_record(_doc(repair_module))
     solutions = _by_name(repaired["solutions"])
 
-    assert repair_module._solution_signatures(
-        repaired,
-    ) == repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._solution_signatures(
+            repaired,
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURES
+    )
     assert solutions["5% L-Cysteine HCl H2O solution"]["composition"][0] == {
         "preferred_term": "L-Cysteine HCl H2O",
         "concentration": {"value": "5.0", "unit": "PERCENT_W_V"},
@@ -181,9 +187,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

@@ -157,8 +157,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
         "term": _term(*grounding),
     }
     if grounding[0].startswith("CHEBI:"):
@@ -445,7 +444,9 @@ def _composition_components(doc: dict[str, Any]) -> list[dict[str, Any]]:
         if not isinstance(solution, dict):
             continue
         composition = solution.get("composition") or []
-        nested = [i for i in composition if isinstance(i, dict)] if isinstance(composition, list) else []
+        nested = (
+            [i for i in composition if isinstance(i, dict)] if isinstance(composition, list) else []
+        )
         components.extend(nested or [solution])
     return components
 

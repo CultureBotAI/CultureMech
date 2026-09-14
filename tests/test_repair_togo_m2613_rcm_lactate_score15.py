@@ -85,10 +85,13 @@ def test_repair_flattens_lactate_solution_and_leaves_review_ranking(
 ) -> None:
     repaired = repair_module.repair_record(_doc(repair_module))
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert repaired["ph_value"] == 7.0
     assert repaired["preparation_steps"] == list(repair_module.PREPARATION_STEPS)
     assert "solutions" not in repaired
@@ -103,9 +106,7 @@ def test_repair_grounds_water_and_lactate_only(repair_module) -> None:
         "id": "CHEBI:15377",
         "label": "water",
     }
-    assert ingredients["Sodium lactate (60% solution)"][
-        "mediaingredientmech_chebi_term"
-    ] == {
+    assert ingredients["Sodium lactate (60% solution)"]["mediaingredientmech_chebi_term"] == {
         "id": "CHEBI:75228",
         "label": "sodium lactate",
     }

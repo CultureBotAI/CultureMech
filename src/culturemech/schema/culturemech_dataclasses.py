@@ -11,52 +11,18 @@
 import dataclasses
 import re
 from dataclasses import dataclass
-from datetime import (
-    date,
-    datetime,
-    time
-)
-from typing import (
-    Any,
-    ClassVar,
-    Dict,
-    List,
-    Optional,
-    Union
-)
+from datetime import date, datetime, time
+from typing import Any, ClassVar, Dict, List, Optional, Union
 
-from jsonasobj2 import (
-    JsonObj,
-    as_dict
-)
-from linkml_runtime.linkml_model.meta import (
-    EnumDefinition,
-    PermissibleValue,
-    PvFormulaOptions
-)
+from jsonasobj2 import JsonObj, as_dict
+from linkml_runtime.linkml_model.meta import EnumDefinition, PermissibleValue, PvFormulaOptions
 from linkml_runtime.utils.curienamespace import CurieNamespace
 from linkml_runtime.utils.enumerations import EnumDefinitionImpl
-from linkml_runtime.utils.formatutils import (
-    camelcase,
-    sfx,
-    underscore
-)
-from linkml_runtime.utils.metamodelcore import (
-    bnode,
-    empty_dict,
-    empty_list
-)
+from linkml_runtime.utils.formatutils import camelcase, sfx, underscore
+from linkml_runtime.utils.metamodelcore import bnode, empty_dict, empty_list
 from linkml_runtime.utils.slot import Slot
-from linkml_runtime.utils.yamlutils import (
-    YAMLRoot,
-    extended_float,
-    extended_int,
-    extended_str
-)
-from rdflib import (
-    Namespace,
-    URIRef
-)
+from linkml_runtime.utils.yamlutils import YAMLRoot, extended_float, extended_int, extended_str
+from rdflib import Namespace, URIRef
 
 from linkml_runtime.linkml_model.types import Boolean, Date, Float, Integer, String, Uri, Uriorcurie
 from linkml_runtime.utils.metamodelcore import Bool, URI, URIorCURIE, XSDDate
@@ -65,47 +31,52 @@ metamodel_version = "1.11.0"
 version = None
 
 # Namespaces
-ATCC = CurieNamespace('ATCC', 'https://www.atcc.org/products/')
-BIOSAMPLE = CurieNamespace('BioSample', 'https://www.ncbi.nlm.nih.gov/biosample/')
-CCAP = CurieNamespace('CCAP', 'https://www.ccap.ac.uk/catalogue/strain-')
-CHEBI = CurieNamespace('CHEBI', 'http://purl.obolibrary.org/obo/CHEBI_')
-CULTUREMECH = CurieNamespace('CultureMech', 'https://w3id.org/culturemech/')
-DOI = CurieNamespace('DOI', 'https://doi.org/')
-DSMZ = CurieNamespace('DSMZ', 'https://mediadive.dsmz.de/medium/')
-EC = CurieNamespace('EC', 'https://enzyme.expasy.org/EC/')
-ENVO = CurieNamespace('ENVO', 'http://purl.obolibrary.org/obo/ENVO_')
-FOODON = CurieNamespace('FOODON', 'http://purl.obolibrary.org/obo/FOODON_')
-GTDB = CurieNamespace('GTDB', 'https://gtdb.ecogenomic.org/genome?gid=')
-GENBANK = CurieNamespace('GenBank', 'https://www.ncbi.nlm.nih.gov/assembly/')
-KEGG = CurieNamespace('KEGG', 'https://www.genome.jp/entry/')
-MICRO = CurieNamespace('MICRO', 'http://example.org/UNKNOWN/MICRO/')
-MEDIAINGREDIENTMECH = CurieNamespace('MediaIngredientMech', 'http://example.org/UNKNOWN/MediaIngredientMech/')
-NCBITAXON = CurieNamespace('NCBITaxon', 'http://purl.obolibrary.org/obo/NCBITaxon_')
-NCIT = CurieNamespace('NCIT', 'http://purl.obolibrary.org/obo/NCIT_')
-OBI = CurieNamespace('OBI', 'http://purl.obolibrary.org/obo/OBI_')
-PMID = CurieNamespace('PMID', 'http://www.ncbi.nlm.nih.gov/pubmed/')
-REFSEQ = CurieNamespace('RefSeq', 'https://www.ncbi.nlm.nih.gov/datasets/genome/')
-SAG = CurieNamespace('SAG', 'https://sagdb.uni-goettingen.de/detailedList.php?str_number=')
-TOGO = CurieNamespace('TOGO', 'http://togodb.org/db/medium/')
-UBERON = CurieNamespace('UBERON', 'http://purl.obolibrary.org/obo/UBERON_')
-UO = CurieNamespace('UO', 'http://purl.obolibrary.org/obo/UO_')
-UTEX = CurieNamespace('UTEX', 'https://utex.org/products/')
-BIOLINK = CurieNamespace('biolink', 'https://w3id.org/biolink/vocab/')
-CULTUREMECH = CurieNamespace('culturemech', 'https://w3id.org/culturemech/')
-GEO = CurieNamespace('geo', 'https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=')
-KOMODO_MEDIUM = CurieNamespace('komodo_medium', 'http://example.org/UNKNOWN/komodo.medium/')
-LINKML = CurieNamespace('linkml', 'https://w3id.org/linkml/')
-MECH_SHARED = CurieNamespace('mech_shared', 'https://w3id.org/kg-microbe/mech-shared/')
-MEDIADIVE_COMPOUND = CurieNamespace('mediadive_compound', 'https://mediadive.dsmz.de/compound/')
-MEDIADIVE_MEDIUM = CurieNamespace('mediadive_medium', 'http://example.org/UNKNOWN/mediadive.medium/')
-RDFS = CurieNamespace('rdfs', 'http://www.w3.org/2000/01/rdf-schema#')
-SIGMA = CurieNamespace('sigma', 'https://www.sigmaaldrich.com/catalog/product/')
-SRA = CurieNamespace('sra', 'https://www.ncbi.nlm.nih.gov/sra/')
-THERMOFISHER = CurieNamespace('thermofisher', 'https://www.thermofisher.com/order/catalog/product/')
+ATCC = CurieNamespace("ATCC", "https://www.atcc.org/products/")
+BIOSAMPLE = CurieNamespace("BioSample", "https://www.ncbi.nlm.nih.gov/biosample/")
+CCAP = CurieNamespace("CCAP", "https://www.ccap.ac.uk/catalogue/strain-")
+CHEBI = CurieNamespace("CHEBI", "http://purl.obolibrary.org/obo/CHEBI_")
+CULTUREMECH = CurieNamespace("CultureMech", "https://w3id.org/culturemech/")
+DOI = CurieNamespace("DOI", "https://doi.org/")
+DSMZ = CurieNamespace("DSMZ", "https://mediadive.dsmz.de/medium/")
+EC = CurieNamespace("EC", "https://enzyme.expasy.org/EC/")
+ENVO = CurieNamespace("ENVO", "http://purl.obolibrary.org/obo/ENVO_")
+FOODON = CurieNamespace("FOODON", "http://purl.obolibrary.org/obo/FOODON_")
+GTDB = CurieNamespace("GTDB", "https://gtdb.ecogenomic.org/genome?gid=")
+GENBANK = CurieNamespace("GenBank", "https://www.ncbi.nlm.nih.gov/assembly/")
+KEGG = CurieNamespace("KEGG", "https://www.genome.jp/entry/")
+MICRO = CurieNamespace("MICRO", "http://example.org/UNKNOWN/MICRO/")
+MEDIAINGREDIENTMECH = CurieNamespace(
+    "MediaIngredientMech", "http://example.org/UNKNOWN/MediaIngredientMech/"
+)
+NCBITAXON = CurieNamespace("NCBITaxon", "http://purl.obolibrary.org/obo/NCBITaxon_")
+NCIT = CurieNamespace("NCIT", "http://purl.obolibrary.org/obo/NCIT_")
+OBI = CurieNamespace("OBI", "http://purl.obolibrary.org/obo/OBI_")
+PMID = CurieNamespace("PMID", "http://www.ncbi.nlm.nih.gov/pubmed/")
+REFSEQ = CurieNamespace("RefSeq", "https://www.ncbi.nlm.nih.gov/datasets/genome/")
+SAG = CurieNamespace("SAG", "https://sagdb.uni-goettingen.de/detailedList.php?str_number=")
+TOGO = CurieNamespace("TOGO", "http://togodb.org/db/medium/")
+UBERON = CurieNamespace("UBERON", "http://purl.obolibrary.org/obo/UBERON_")
+UO = CurieNamespace("UO", "http://purl.obolibrary.org/obo/UO_")
+UTEX = CurieNamespace("UTEX", "https://utex.org/products/")
+BIOLINK = CurieNamespace("biolink", "https://w3id.org/biolink/vocab/")
+CULTUREMECH = CurieNamespace("culturemech", "https://w3id.org/culturemech/")
+GEO = CurieNamespace("geo", "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=")
+KOMODO_MEDIUM = CurieNamespace("komodo_medium", "http://example.org/UNKNOWN/komodo.medium/")
+LINKML = CurieNamespace("linkml", "https://w3id.org/linkml/")
+MECH_SHARED = CurieNamespace("mech_shared", "https://w3id.org/kg-microbe/mech-shared/")
+MEDIADIVE_COMPOUND = CurieNamespace("mediadive_compound", "https://mediadive.dsmz.de/compound/")
+MEDIADIVE_MEDIUM = CurieNamespace(
+    "mediadive_medium", "http://example.org/UNKNOWN/mediadive.medium/"
+)
+RDFS = CurieNamespace("rdfs", "http://www.w3.org/2000/01/rdf-schema#")
+SIGMA = CurieNamespace("sigma", "https://www.sigmaaldrich.com/catalog/product/")
+SRA = CurieNamespace("sra", "https://www.ncbi.nlm.nih.gov/sra/")
+THERMOFISHER = CurieNamespace("thermofisher", "https://www.thermofisher.com/order/catalog/product/")
 DEFAULT_ = CULTUREMECH
 
 
 # Types
+
 
 # Class references
 class MediaRecipeId(extended_str):
@@ -173,6 +144,7 @@ class MediaRecipe(YAMLRoot):
     """
     A complete growth medium formulation for culturing microorganisms. This is the root entity - one per YAML file.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["MediaRecipe"]
@@ -183,14 +155,20 @@ class MediaRecipe(YAMLRoot):
     id: Union[str, MediaRecipeId] = None
     name: str = None
     physical_state: Union[str, "PhysicalStateEnum"] = None
-    ingredients: Union[Union[dict, "IngredientDescriptor"], list[Union[dict, "IngredientDescriptor"]]] = None
+    ingredients: Union[
+        Union[dict, "IngredientDescriptor"], list[Union[dict, "IngredientDescriptor"]]
+    ] = None
     id_lineage_token: Optional[str] = None
     original_name: Optional[str] = None
     category: Optional[Union[str, "CategoryEnum"]] = None
-    categories: Optional[Union[Union[str, "CategoryEnum"], list[Union[str, "CategoryEnum"]]]] = empty_list()
+    categories: Optional[Union[Union[str, "CategoryEnum"], list[Union[str, "CategoryEnum"]]]] = (
+        empty_list()
+    )
     high_metal: Optional[Union[bool, Bool]] = None
     high_ree: Optional[Union[bool, Bool]] = None
-    synonyms: Optional[Union[Union[dict, "RecipeSynonym"], list[Union[dict, "RecipeSynonym"]]]] = empty_list()
+    synonyms: Optional[Union[Union[dict, "RecipeSynonym"], list[Union[dict, "RecipeSynonym"]]]] = (
+        empty_list()
+    )
     merged_from: Optional[Union[str, list[str]]] = empty_list()
     merge_fingerprint: Optional[str] = None
     chemical_fingerprint: Optional[str] = None
@@ -200,14 +178,26 @@ class MediaRecipe(YAMLRoot):
     media_term: Optional[Union[dict, "MediaTypeDescriptor"]] = None
     kg_microbe_match: Optional[str] = None
     description: Optional[str] = None
-    target_organisms: Optional[Union[dict[Union[str, OrganismDescriptorPreferredTerm], Union[dict, "OrganismDescriptor"]], list[Union[dict, "OrganismDescriptor"]]]] = empty_dict()
-    source_environment: Optional[Union[Union[dict, "SourceEnvironmentDescriptor"], list[Union[dict, "SourceEnvironmentDescriptor"]]]] = empty_list()
+    target_organisms: Optional[
+        Union[
+            dict[Union[str, OrganismDescriptorPreferredTerm], Union[dict, "OrganismDescriptor"]],
+            list[Union[dict, "OrganismDescriptor"]],
+        ]
+    ] = empty_dict()
+    source_environment: Optional[
+        Union[
+            Union[dict, "SourceEnvironmentDescriptor"],
+            list[Union[dict, "SourceEnvironmentDescriptor"]],
+        ]
+    ] = empty_list()
     organism_culture_type: Optional[Union[str, "OrganismCultureTypeEnum"]] = None
     record_kind: Optional[Union[str, "RecordKindEnum"]] = None
     medium_type: Optional[Union[str, "MediumTypeEnum"]] = None
     composition_type: Optional[Union[str, "MediumCompositionTypeEnum"]] = None
     nutritional_class: Optional[Union[str, "MediumNutritionalClassEnum"]] = None
-    functional_role: Optional[Union[Union[str, "MediumFunctionalRoleEnum"], list[Union[str, "MediumFunctionalRoleEnum"]]]] = empty_list()
+    functional_role: Optional[
+        Union[Union[str, "MediumFunctionalRoleEnum"], list[Union[str, "MediumFunctionalRoleEnum"]]]
+    ] = empty_list()
     ph_value: Optional[float] = None
     ph_range: Optional[Union[dict, "PhRange"]] = None
     light_intensity: Optional[str] = None
@@ -218,25 +208,49 @@ class MediaRecipe(YAMLRoot):
     salinity: Optional[str] = None
     aeration: Optional[str] = None
     culture_vessel: Optional[str] = None
-    solutions: Optional[Union[Union[dict, "SolutionDescriptor"], list[Union[dict, "SolutionDescriptor"]]]] = empty_list()
-    preparation_steps: Optional[Union[Union[dict, "PreparationStep"], list[Union[dict, "PreparationStep"]]]] = empty_list()
+    solutions: Optional[
+        Union[Union[dict, "SolutionDescriptor"], list[Union[dict, "SolutionDescriptor"]]]
+    ] = empty_list()
+    preparation_steps: Optional[
+        Union[Union[dict, "PreparationStep"], list[Union[dict, "PreparationStep"]]]
+    ] = empty_list()
     sterilization: Optional[Union[dict, "SterilizationDescriptor"]] = None
     storage: Optional[Union[dict, "StorageConditions"]] = None
     applications: Optional[Union[str, list[str]]] = empty_list()
-    variants: Optional[Union[dict[Union[str, MediaVariantName], Union[dict, "MediaVariant"]], list[Union[dict, "MediaVariant"]]]] = empty_dict()
+    variants: Optional[
+        Union[
+            dict[Union[str, MediaVariantName], Union[dict, "MediaVariant"]],
+            list[Union[dict, "MediaVariant"]],
+        ]
+    ] = empty_dict()
     parent_media: Optional[Union[dict, "MediaRecipeReference"]] = None
-    variant_children: Optional[Union[Union[dict, "MediaRecipeReference"], list[Union[dict, "MediaRecipeReference"]]]] = empty_list()
+    variant_children: Optional[
+        Union[Union[dict, "MediaRecipeReference"], list[Union[dict, "MediaRecipeReference"]]]
+    ] = empty_list()
     variant_relationship: Optional[Union[str, "MediaVariantRelationshipEnum"]] = None
     variant_modifications: Optional[Union[str, list[str]]] = empty_list()
-    references: Optional[Union[Union[dict, "PublicationReference"], list[Union[dict, "PublicationReference"]]]] = empty_list()
+    references: Optional[
+        Union[Union[dict, "PublicationReference"], list[Union[dict, "PublicationReference"]]]
+    ] = empty_list()
     notes: Optional[str] = None
-    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
+    evidence: Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]],
+            list[Union[dict, "EvidenceItem"]],
+        ]
+    ] = empty_dict()
     datasets: Optional[Union[Union[dict, "Dataset"], list[Union[dict, "Dataset"]]]] = empty_list()
-    discussions: Optional[Union[Union[dict, "Discussion"], list[Union[dict, "Discussion"]]]] = empty_list()
+    discussions: Optional[Union[Union[dict, "Discussion"], list[Union[dict, "Discussion"]]]] = (
+        empty_list()
+    )
     import_metadata: Optional[Union[dict, "ImportMetadata"]] = None
-    curation_history: Optional[Union[Union[dict, "CurationEvent"], list[Union[dict, "CurationEvent"]]]] = empty_list()
+    curation_history: Optional[
+        Union[Union[dict, "CurationEvent"], list[Union[dict, "CurationEvent"]]]
+    ] = empty_list()
     data_quality_flags: Optional[Union[str, list[str]]] = empty_list()
-    sources: Optional[Union[Union[dict, "SourceReference"], list[Union[dict, "SourceReference"]]]] = empty_list()
+    sources: Optional[
+        Union[Union[dict, "SourceReference"], list[Union[dict, "SourceReference"]]]
+    ] = empty_list()
     incubation_atmosphere: Optional[Union[str, "AtmosphereEnum"]] = None
     source_data: Optional[Union[dict, "SourceData"]] = None
 
@@ -258,7 +272,12 @@ class MediaRecipe(YAMLRoot):
 
         if self._is_empty(self.ingredients):
             self.MissingRequiredField("ingredients")
-        self._normalize_inlined_as_list(slot_name="ingredients", slot_type=IngredientDescriptor, key_name="preferred_term", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="ingredients",
+            slot_type=IngredientDescriptor,
+            key_name="preferred_term",
+            keyed=False,
+        )
 
         if self.id_lineage_token is not None and not isinstance(self.id_lineage_token, str):
             self.id_lineage_token = str(self.id_lineage_token)
@@ -271,7 +290,9 @@ class MediaRecipe(YAMLRoot):
 
         if not isinstance(self.categories, list):
             self.categories = [self.categories] if self.categories is not None else []
-        self.categories = [v if isinstance(v, CategoryEnum) else CategoryEnum(v) for v in self.categories]
+        self.categories = [
+            v if isinstance(v, CategoryEnum) else CategoryEnum(v) for v in self.categories
+        ]
 
         if self.high_metal is not None and not isinstance(self.high_metal, Bool):
             self.high_metal = Bool(self.high_metal)
@@ -279,7 +300,9 @@ class MediaRecipe(YAMLRoot):
         if self.high_ree is not None and not isinstance(self.high_ree, Bool):
             self.high_ree = Bool(self.high_ree)
 
-        self._normalize_inlined_as_list(slot_name="synonyms", slot_type=RecipeSynonym, key_name="name", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="synonyms", slot_type=RecipeSynonym, key_name="name", keyed=False
+        )
 
         if not isinstance(self.merged_from, list):
             self.merged_from = [self.merged_from] if self.merged_from is not None else []
@@ -309,11 +332,23 @@ class MediaRecipe(YAMLRoot):
         if self.description is not None and not isinstance(self.description, str):
             self.description = str(self.description)
 
-        self._normalize_inlined_as_list(slot_name="target_organisms", slot_type=OrganismDescriptor, key_name="preferred_term", keyed=True)
+        self._normalize_inlined_as_list(
+            slot_name="target_organisms",
+            slot_type=OrganismDescriptor,
+            key_name="preferred_term",
+            keyed=True,
+        )
 
-        self._normalize_inlined_as_list(slot_name="source_environment", slot_type=SourceEnvironmentDescriptor, key_name="preferred_term", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="source_environment",
+            slot_type=SourceEnvironmentDescriptor,
+            key_name="preferred_term",
+            keyed=False,
+        )
 
-        if self.organism_culture_type is not None and not isinstance(self.organism_culture_type, OrganismCultureTypeEnum):
+        if self.organism_culture_type is not None and not isinstance(
+            self.organism_culture_type, OrganismCultureTypeEnum
+        ):
             self.organism_culture_type = OrganismCultureTypeEnum(self.organism_culture_type)
 
         if self.record_kind is not None and not isinstance(self.record_kind, RecordKindEnum):
@@ -322,15 +357,24 @@ class MediaRecipe(YAMLRoot):
         if self.medium_type is not None and not isinstance(self.medium_type, MediumTypeEnum):
             self.medium_type = MediumTypeEnum(self.medium_type)
 
-        if self.composition_type is not None and not isinstance(self.composition_type, MediumCompositionTypeEnum):
+        if self.composition_type is not None and not isinstance(
+            self.composition_type, MediumCompositionTypeEnum
+        ):
             self.composition_type = MediumCompositionTypeEnum(self.composition_type)
 
-        if self.nutritional_class is not None and not isinstance(self.nutritional_class, MediumNutritionalClassEnum):
+        if self.nutritional_class is not None and not isinstance(
+            self.nutritional_class, MediumNutritionalClassEnum
+        ):
             self.nutritional_class = MediumNutritionalClassEnum(self.nutritional_class)
 
         if not isinstance(self.functional_role, list):
-            self.functional_role = [self.functional_role] if self.functional_role is not None else []
-        self.functional_role = [v if isinstance(v, MediumFunctionalRoleEnum) else MediumFunctionalRoleEnum(v) for v in self.functional_role]
+            self.functional_role = (
+                [self.functional_role] if self.functional_role is not None else []
+            )
+        self.functional_role = [
+            v if isinstance(v, MediumFunctionalRoleEnum) else MediumFunctionalRoleEnum(v)
+            for v in self.functional_role
+        ]
 
         if self.ph_value is not None and not isinstance(self.ph_value, float):
             self.ph_value = float(self.ph_value)
@@ -362,11 +406,23 @@ class MediaRecipe(YAMLRoot):
         if self.culture_vessel is not None and not isinstance(self.culture_vessel, str):
             self.culture_vessel = str(self.culture_vessel)
 
-        self._normalize_inlined_as_list(slot_name="solutions", slot_type=SolutionDescriptor, key_name="preferred_term", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="solutions",
+            slot_type=SolutionDescriptor,
+            key_name="preferred_term",
+            keyed=False,
+        )
 
-        self._normalize_inlined_as_list(slot_name="preparation_steps", slot_type=PreparationStep, key_name="step_number", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="preparation_steps",
+            slot_type=PreparationStep,
+            key_name="step_number",
+            keyed=False,
+        )
 
-        if self.sterilization is not None and not isinstance(self.sterilization, SterilizationDescriptor):
+        if self.sterilization is not None and not isinstance(
+            self.sterilization, SterilizationDescriptor
+        ):
             self.sterilization = SterilizationDescriptor(**as_dict(self.sterilization))
 
         if self.storage is not None and not isinstance(self.storage, StorageConditions):
@@ -376,47 +432,85 @@ class MediaRecipe(YAMLRoot):
             self.applications = [self.applications] if self.applications is not None else []
         self.applications = [v if isinstance(v, str) else str(v) for v in self.applications]
 
-        self._normalize_inlined_as_list(slot_name="variants", slot_type=MediaVariant, key_name="name", keyed=True)
+        self._normalize_inlined_as_list(
+            slot_name="variants", slot_type=MediaVariant, key_name="name", keyed=True
+        )
 
-        if self.parent_media is not None and not isinstance(self.parent_media, MediaRecipeReference):
+        if self.parent_media is not None and not isinstance(
+            self.parent_media, MediaRecipeReference
+        ):
             self.parent_media = MediaRecipeReference(**as_dict(self.parent_media))
 
         if not isinstance(self.variant_children, list):
-            self.variant_children = [self.variant_children] if self.variant_children is not None else []
-        self.variant_children = [v if isinstance(v, MediaRecipeReference) else MediaRecipeReference(**as_dict(v)) for v in self.variant_children]
+            self.variant_children = (
+                [self.variant_children] if self.variant_children is not None else []
+            )
+        self.variant_children = [
+            v if isinstance(v, MediaRecipeReference) else MediaRecipeReference(**as_dict(v))
+            for v in self.variant_children
+        ]
 
-        if self.variant_relationship is not None and not isinstance(self.variant_relationship, MediaVariantRelationshipEnum):
+        if self.variant_relationship is not None and not isinstance(
+            self.variant_relationship, MediaVariantRelationshipEnum
+        ):
             self.variant_relationship = MediaVariantRelationshipEnum(self.variant_relationship)
 
         if not isinstance(self.variant_modifications, list):
-            self.variant_modifications = [self.variant_modifications] if self.variant_modifications is not None else []
-        self.variant_modifications = [v if isinstance(v, str) else str(v) for v in self.variant_modifications]
+            self.variant_modifications = (
+                [self.variant_modifications] if self.variant_modifications is not None else []
+            )
+        self.variant_modifications = [
+            v if isinstance(v, str) else str(v) for v in self.variant_modifications
+        ]
 
-        self._normalize_inlined_as_list(slot_name="references", slot_type=PublicationReference, key_name="reference", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="references",
+            slot_type=PublicationReference,
+            key_name="reference",
+            keyed=False,
+        )
 
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
 
-        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+        self._normalize_inlined_as_list(
+            slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True
+        )
 
         if not isinstance(self.datasets, list):
             self.datasets = [self.datasets] if self.datasets is not None else []
-        self.datasets = [v if isinstance(v, Dataset) else Dataset(**as_dict(v)) for v in self.datasets]
+        self.datasets = [
+            v if isinstance(v, Dataset) else Dataset(**as_dict(v)) for v in self.datasets
+        ]
 
-        self._normalize_inlined_as_list(slot_name="discussions", slot_type=Discussion, key_name="discussion_id", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="discussions", slot_type=Discussion, key_name="discussion_id", keyed=False
+        )
 
-        if self.import_metadata is not None and not isinstance(self.import_metadata, ImportMetadata):
+        if self.import_metadata is not None and not isinstance(
+            self.import_metadata, ImportMetadata
+        ):
             self.import_metadata = ImportMetadata(**as_dict(self.import_metadata))
 
-        self._normalize_inlined_as_list(slot_name="curation_history", slot_type=CurationEvent, key_name="timestamp", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="curation_history", slot_type=CurationEvent, key_name="timestamp", keyed=False
+        )
 
         if not isinstance(self.data_quality_flags, list):
-            self.data_quality_flags = [self.data_quality_flags] if self.data_quality_flags is not None else []
-        self.data_quality_flags = [v if isinstance(v, str) else str(v) for v in self.data_quality_flags]
+            self.data_quality_flags = (
+                [self.data_quality_flags] if self.data_quality_flags is not None else []
+            )
+        self.data_quality_flags = [
+            v if isinstance(v, str) else str(v) for v in self.data_quality_flags
+        ]
 
-        self._normalize_inlined_as_list(slot_name="sources", slot_type=SourceReference, key_name="database", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="sources", slot_type=SourceReference, key_name="database", keyed=False
+        )
 
-        if self.incubation_atmosphere is not None and not isinstance(self.incubation_atmosphere, AtmosphereEnum):
+        if self.incubation_atmosphere is not None and not isinstance(
+            self.incubation_atmosphere, AtmosphereEnum
+        ):
             self.incubation_atmosphere = AtmosphereEnum(self.incubation_atmosphere)
 
         if self.source_data is not None and not isinstance(self.source_data, SourceData):
@@ -432,6 +526,7 @@ class SolutionRecipe(YAMLRoot):
     ingredients by MediaRecipes — e.g. MediaDive's "Main sol." or "Trace metals SL10" records. SolutionDescriptor is
     the inlined-in-recipe form; this is the root form with its own id, curation history, and provenance.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["SolutionRecipe"]
@@ -441,24 +536,36 @@ class SolutionRecipe(YAMLRoot):
 
     id: Union[str, SolutionRecipeId] = None
     preferred_term: str = None
-    composition: Union[Union[dict, "IngredientDescriptor"], list[Union[dict, "IngredientDescriptor"]]] = None
+    composition: Union[
+        Union[dict, "IngredientDescriptor"], list[Union[dict, "IngredientDescriptor"]]
+    ] = None
     id_lineage_token: Optional[str] = None
     term: Optional[Union[dict, "Term"]] = None
     mediaingredientmech_term: Optional[Union[dict, "MediaIngredientMechTerm"]] = None
     mediaingredientmech_chebi_term: Optional[Union[dict, "MediaIngredientMechChebiTerm"]] = None
     culturemech_term: Optional[Union[dict, "CultureMechTerm"]] = None
     category: Optional[Union[str, "CategoryEnum"]] = None
-    solutions: Optional[Union[Union[dict, "SolutionDescriptor"], list[Union[dict, "SolutionDescriptor"]]]] = empty_list()
-    ingredients: Optional[Union[Union[dict, "IngredientDescriptor"], list[Union[dict, "IngredientDescriptor"]]]] = empty_list()
+    solutions: Optional[
+        Union[Union[dict, "SolutionDescriptor"], list[Union[dict, "SolutionDescriptor"]]]
+    ] = empty_list()
+    ingredients: Optional[
+        Union[Union[dict, "IngredientDescriptor"], list[Union[dict, "IngredientDescriptor"]]]
+    ] = empty_list()
     concentration: Optional[Union[dict, "ConcentrationValue"]] = None
     preparation_notes: Optional[str] = None
     storage_conditions: Optional[Union[dict, "StorageConditions"]] = None
     shelf_life: Optional[str] = None
-    references: Optional[Union[Union[dict, "PublicationReference"], list[Union[dict, "PublicationReference"]]]] = empty_list()
+    references: Optional[
+        Union[Union[dict, "PublicationReference"], list[Union[dict, "PublicationReference"]]]
+    ] = empty_list()
     source_data: Optional[Union[dict, "SourceData"]] = None
-    curation_history: Optional[Union[Union[dict, "CurationEvent"], list[Union[dict, "CurationEvent"]]]] = empty_list()
+    curation_history: Optional[
+        Union[Union[dict, "CurationEvent"], list[Union[dict, "CurationEvent"]]]
+    ] = empty_list()
     data_quality_flags: Optional[Union[str, list[str]]] = empty_list()
-    sources: Optional[Union[Union[dict, "SourceReference"], list[Union[dict, "SourceReference"]]]] = empty_list()
+    sources: Optional[
+        Union[Union[dict, "SourceReference"], list[Union[dict, "SourceReference"]]]
+    ] = empty_list()
     notes: Optional[str] = None
 
     def __post_init__(self, *_: str, **kwargs: Any):
@@ -474,7 +581,12 @@ class SolutionRecipe(YAMLRoot):
 
         if self._is_empty(self.composition):
             self.MissingRequiredField("composition")
-        self._normalize_inlined_as_list(slot_name="composition", slot_type=IngredientDescriptor, key_name="preferred_term", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="composition",
+            slot_type=IngredientDescriptor,
+            key_name="preferred_term",
+            keyed=False,
+        )
 
         if self.id_lineage_token is not None and not isinstance(self.id_lineage_token, str):
             self.id_lineage_token = str(self.id_lineage_token)
@@ -482,46 +594,83 @@ class SolutionRecipe(YAMLRoot):
         if self.term is not None and not isinstance(self.term, Term):
             self.term = Term(**as_dict(self.term))
 
-        if self.mediaingredientmech_term is not None and not isinstance(self.mediaingredientmech_term, MediaIngredientMechTerm):
-            self.mediaingredientmech_term = MediaIngredientMechTerm(**as_dict(self.mediaingredientmech_term))
+        if self.mediaingredientmech_term is not None and not isinstance(
+            self.mediaingredientmech_term, MediaIngredientMechTerm
+        ):
+            self.mediaingredientmech_term = MediaIngredientMechTerm(
+                **as_dict(self.mediaingredientmech_term)
+            )
 
-        if self.mediaingredientmech_chebi_term is not None and not isinstance(self.mediaingredientmech_chebi_term, MediaIngredientMechChebiTerm):
-            self.mediaingredientmech_chebi_term = MediaIngredientMechChebiTerm(**as_dict(self.mediaingredientmech_chebi_term))
+        if self.mediaingredientmech_chebi_term is not None and not isinstance(
+            self.mediaingredientmech_chebi_term, MediaIngredientMechChebiTerm
+        ):
+            self.mediaingredientmech_chebi_term = MediaIngredientMechChebiTerm(
+                **as_dict(self.mediaingredientmech_chebi_term)
+            )
 
-        if self.culturemech_term is not None and not isinstance(self.culturemech_term, CultureMechTerm):
+        if self.culturemech_term is not None and not isinstance(
+            self.culturemech_term, CultureMechTerm
+        ):
             self.culturemech_term = CultureMechTerm(**as_dict(self.culturemech_term))
 
         if self.category is not None and not isinstance(self.category, CategoryEnum):
             self.category = CategoryEnum(self.category)
 
-        self._normalize_inlined_as_list(slot_name="solutions", slot_type=SolutionDescriptor, key_name="preferred_term", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="solutions",
+            slot_type=SolutionDescriptor,
+            key_name="preferred_term",
+            keyed=False,
+        )
 
-        self._normalize_inlined_as_list(slot_name="ingredients", slot_type=IngredientDescriptor, key_name="preferred_term", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="ingredients",
+            slot_type=IngredientDescriptor,
+            key_name="preferred_term",
+            keyed=False,
+        )
 
-        if self.concentration is not None and not isinstance(self.concentration, ConcentrationValue):
+        if self.concentration is not None and not isinstance(
+            self.concentration, ConcentrationValue
+        ):
             self.concentration = ConcentrationValue(**as_dict(self.concentration))
 
         if self.preparation_notes is not None and not isinstance(self.preparation_notes, str):
             self.preparation_notes = str(self.preparation_notes)
 
-        if self.storage_conditions is not None and not isinstance(self.storage_conditions, StorageConditions):
+        if self.storage_conditions is not None and not isinstance(
+            self.storage_conditions, StorageConditions
+        ):
             self.storage_conditions = StorageConditions(**as_dict(self.storage_conditions))
 
         if self.shelf_life is not None and not isinstance(self.shelf_life, str):
             self.shelf_life = str(self.shelf_life)
 
-        self._normalize_inlined_as_list(slot_name="references", slot_type=PublicationReference, key_name="reference", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="references",
+            slot_type=PublicationReference,
+            key_name="reference",
+            keyed=False,
+        )
 
         if self.source_data is not None and not isinstance(self.source_data, SourceData):
             self.source_data = SourceData(**as_dict(self.source_data))
 
-        self._normalize_inlined_as_list(slot_name="curation_history", slot_type=CurationEvent, key_name="timestamp", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="curation_history", slot_type=CurationEvent, key_name="timestamp", keyed=False
+        )
 
         if not isinstance(self.data_quality_flags, list):
-            self.data_quality_flags = [self.data_quality_flags] if self.data_quality_flags is not None else []
-        self.data_quality_flags = [v if isinstance(v, str) else str(v) for v in self.data_quality_flags]
+            self.data_quality_flags = (
+                [self.data_quality_flags] if self.data_quality_flags is not None else []
+            )
+        self.data_quality_flags = [
+            v if isinstance(v, str) else str(v) for v in self.data_quality_flags
+        ]
 
-        self._normalize_inlined_as_list(slot_name="sources", slot_type=SourceReference, key_name="database", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="sources", slot_type=SourceReference, key_name="database", keyed=False
+        )
 
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
@@ -534,6 +683,7 @@ class RecipeSynonym(YAMLRoot):
     """
     An alternate name for a recipe from a specific source
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["RecipeSynonym"]
@@ -560,7 +710,9 @@ class RecipeSynonym(YAMLRoot):
         if self.source_id is not None and not isinstance(self.source_id, str):
             self.source_id = str(self.source_id)
 
-        if self.original_category is not None and not isinstance(self.original_category, CategoryEnum):
+        if self.original_category is not None and not isinstance(
+            self.original_category, CategoryEnum
+        ):
             self.original_category = CategoryEnum(self.original_category)
 
         super().__post_init__(**kwargs)
@@ -571,6 +723,7 @@ class MergeMetadata(YAMLRoot):
     """
     Metadata about merge process and quality
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["MergeMetadata"]
@@ -599,10 +752,16 @@ class MergeMetadata(YAMLRoot):
             self.merge_confidence = float(self.merge_confidence)
 
         if not isinstance(self.hierarchy_conflicts, list):
-            self.hierarchy_conflicts = [self.hierarchy_conflicts] if self.hierarchy_conflicts is not None else []
-        self.hierarchy_conflicts = [v if isinstance(v, str) else str(v) for v in self.hierarchy_conflicts]
+            self.hierarchy_conflicts = (
+                [self.hierarchy_conflicts] if self.hierarchy_conflicts is not None else []
+            )
+        self.hierarchy_conflicts = [
+            v if isinstance(v, str) else str(v) for v in self.hierarchy_conflicts
+        ]
 
-        if self.fingerprint_mode is not None and not isinstance(self.fingerprint_mode, FingerprintModeEnum):
+        if self.fingerprint_mode is not None and not isinstance(
+            self.fingerprint_mode, FingerprintModeEnum
+        ):
             self.fingerprint_mode = FingerprintModeEnum(self.fingerprint_mode)
 
         super().__post_init__(**kwargs)
@@ -612,6 +771,7 @@ class Descriptor(YAMLRoot):
     """
     Base class for descriptor pattern. Descriptors have a human-readable preferred_term and optional ontology term.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["Descriptor"]
@@ -625,6 +785,7 @@ class Term(YAMLRoot):
     """
     Base class for ontology term references. Subclasses specify id_prefixes for validation.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["Term"]
@@ -660,6 +821,7 @@ class MediaTypeDescriptor(Descriptor):
     """
     Classification and authoritative database reference for the medium
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["MediaTypeDescriptor"]
@@ -687,6 +849,7 @@ class IngredientDescriptor(Descriptor):
     """
     Chemical or biological ingredient in a medium
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["IngredientDescriptor"]
@@ -705,19 +868,36 @@ class IngredientDescriptor(Descriptor):
     concentration: Optional[Union[dict, "ConcentrationValue"]] = None
     modifier: Optional[Union[str, "ModifierEnum"]] = None
     chemical_formula: Optional[str] = None
-    synonyms: Optional[Union[Union[dict, "IngredientSynonym"], list[Union[dict, "IngredientSynonym"]]]] = empty_list()
+    synonyms: Optional[
+        Union[Union[dict, "IngredientSynonym"], list[Union[dict, "IngredientSynonym"]]]
+    ] = empty_list()
     source: Optional[str] = None
     curation_metadata: Optional[Union[dict, "IngredientCurationMetadata"]] = None
     data_quality_flags: Optional[Union[str, list[str]]] = empty_list()
     molecular_weight: Optional[float] = None
     supplier_catalog: Optional[Union[dict, "SupplierInfo"]] = None
     notes: Optional[str] = None
-    nutritional_roles: Optional[Union[Union[str, "NutritionalRoleEnum"], list[Union[str, "NutritionalRoleEnum"]]]] = empty_list()
-    physicochemical_roles: Optional[Union[Union[str, "PhysicochemicalRoleEnum"], list[Union[str, "PhysicochemicalRoleEnum"]]]] = empty_list()
-    cellular_metabolic_roles: Optional[Union[Union[str, "CellularMetabolicRoleEnum"], list[Union[str, "CellularMetabolicRoleEnum"]]]] = empty_list()
+    nutritional_roles: Optional[
+        Union[Union[str, "NutritionalRoleEnum"], list[Union[str, "NutritionalRoleEnum"]]]
+    ] = empty_list()
+    physicochemical_roles: Optional[
+        Union[Union[str, "PhysicochemicalRoleEnum"], list[Union[str, "PhysicochemicalRoleEnum"]]]
+    ] = empty_list()
+    cellular_metabolic_roles: Optional[
+        Union[
+            Union[str, "CellularMetabolicRoleEnum"], list[Union[str, "CellularMetabolicRoleEnum"]]
+        ]
+    ] = empty_list()
     role_curie: Optional[Union[Union[str, URIorCURIE], list[Union[str, URIorCURIE]]]] = empty_list()
-    cofactors_provided: Optional[Union[Union[dict, "CofactorDescriptor"], list[Union[dict, "CofactorDescriptor"]]]] = empty_list()
-    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
+    cofactors_provided: Optional[
+        Union[Union[dict, "CofactorDescriptor"], list[Union[dict, "CofactorDescriptor"]]]
+    ] = empty_list()
+    evidence: Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]],
+            list[Union[dict, "EvidenceItem"]],
+        ]
+    ] = empty_dict()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.preferred_term):
@@ -731,22 +911,36 @@ class IngredientDescriptor(Descriptor):
         if self.chebi_term is not None and not isinstance(self.chebi_term, ChebiTerm):
             self.chebi_term = ChebiTerm(**as_dict(self.chebi_term))
 
-        if self.mediaingredientmech_term is not None and not isinstance(self.mediaingredientmech_term, MediaIngredientMechTerm):
-            self.mediaingredientmech_term = MediaIngredientMechTerm(**as_dict(self.mediaingredientmech_term))
+        if self.mediaingredientmech_term is not None and not isinstance(
+            self.mediaingredientmech_term, MediaIngredientMechTerm
+        ):
+            self.mediaingredientmech_term = MediaIngredientMechTerm(
+                **as_dict(self.mediaingredientmech_term)
+            )
 
-        if self.mediaingredientmech_chebi_term is not None and not isinstance(self.mediaingredientmech_chebi_term, MediaIngredientMechChebiTerm):
-            self.mediaingredientmech_chebi_term = MediaIngredientMechChebiTerm(**as_dict(self.mediaingredientmech_chebi_term))
+        if self.mediaingredientmech_chebi_term is not None and not isinstance(
+            self.mediaingredientmech_chebi_term, MediaIngredientMechChebiTerm
+        ):
+            self.mediaingredientmech_chebi_term = MediaIngredientMechChebiTerm(
+                **as_dict(self.mediaingredientmech_chebi_term)
+            )
 
-        if self.culturemech_term is not None and not isinstance(self.culturemech_term, CultureMechTerm):
+        if self.culturemech_term is not None and not isinstance(
+            self.culturemech_term, CultureMechTerm
+        ):
             self.culturemech_term = CultureMechTerm(**as_dict(self.culturemech_term))
 
-        if self.parent_ingredient is not None and not isinstance(self.parent_ingredient, IngredientReference):
+        if self.parent_ingredient is not None and not isinstance(
+            self.parent_ingredient, IngredientReference
+        ):
             self.parent_ingredient = IngredientReference(**as_dict(self.parent_ingredient))
 
         if self.variant_type is not None and not isinstance(self.variant_type, VariantTypeEnum):
             self.variant_type = VariantTypeEnum(self.variant_type)
 
-        if self.concentration is not None and not isinstance(self.concentration, ConcentrationValue):
+        if self.concentration is not None and not isinstance(
+            self.concentration, ConcentrationValue
+        ):
             self.concentration = ConcentrationValue(**as_dict(self.concentration))
 
         if self.modifier is not None and not isinstance(self.modifier, ModifierEnum):
@@ -755,46 +949,80 @@ class IngredientDescriptor(Descriptor):
         if self.chemical_formula is not None and not isinstance(self.chemical_formula, str):
             self.chemical_formula = str(self.chemical_formula)
 
-        self._normalize_inlined_as_list(slot_name="synonyms", slot_type=IngredientSynonym, key_name="synonym_text", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="synonyms", slot_type=IngredientSynonym, key_name="synonym_text", keyed=False
+        )
 
         if self.source is not None and not isinstance(self.source, str):
             self.source = str(self.source)
 
-        if self.curation_metadata is not None and not isinstance(self.curation_metadata, IngredientCurationMetadata):
+        if self.curation_metadata is not None and not isinstance(
+            self.curation_metadata, IngredientCurationMetadata
+        ):
             self.curation_metadata = IngredientCurationMetadata(**as_dict(self.curation_metadata))
 
         if not isinstance(self.data_quality_flags, list):
-            self.data_quality_flags = [self.data_quality_flags] if self.data_quality_flags is not None else []
-        self.data_quality_flags = [v if isinstance(v, str) else str(v) for v in self.data_quality_flags]
+            self.data_quality_flags = (
+                [self.data_quality_flags] if self.data_quality_flags is not None else []
+            )
+        self.data_quality_flags = [
+            v if isinstance(v, str) else str(v) for v in self.data_quality_flags
+        ]
 
         if self.molecular_weight is not None and not isinstance(self.molecular_weight, float):
             self.molecular_weight = float(self.molecular_weight)
 
-        if self.supplier_catalog is not None and not isinstance(self.supplier_catalog, SupplierInfo):
+        if self.supplier_catalog is not None and not isinstance(
+            self.supplier_catalog, SupplierInfo
+        ):
             self.supplier_catalog = SupplierInfo(**as_dict(self.supplier_catalog))
 
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
 
         if not isinstance(self.nutritional_roles, list):
-            self.nutritional_roles = [self.nutritional_roles] if self.nutritional_roles is not None else []
-        self.nutritional_roles = [v if isinstance(v, NutritionalRoleEnum) else NutritionalRoleEnum(v) for v in self.nutritional_roles]
+            self.nutritional_roles = (
+                [self.nutritional_roles] if self.nutritional_roles is not None else []
+            )
+        self.nutritional_roles = [
+            v if isinstance(v, NutritionalRoleEnum) else NutritionalRoleEnum(v)
+            for v in self.nutritional_roles
+        ]
 
         if not isinstance(self.physicochemical_roles, list):
-            self.physicochemical_roles = [self.physicochemical_roles] if self.physicochemical_roles is not None else []
-        self.physicochemical_roles = [v if isinstance(v, PhysicochemicalRoleEnum) else PhysicochemicalRoleEnum(v) for v in self.physicochemical_roles]
+            self.physicochemical_roles = (
+                [self.physicochemical_roles] if self.physicochemical_roles is not None else []
+            )
+        self.physicochemical_roles = [
+            v if isinstance(v, PhysicochemicalRoleEnum) else PhysicochemicalRoleEnum(v)
+            for v in self.physicochemical_roles
+        ]
 
         if not isinstance(self.cellular_metabolic_roles, list):
-            self.cellular_metabolic_roles = [self.cellular_metabolic_roles] if self.cellular_metabolic_roles is not None else []
-        self.cellular_metabolic_roles = [v if isinstance(v, CellularMetabolicRoleEnum) else CellularMetabolicRoleEnum(v) for v in self.cellular_metabolic_roles]
+            self.cellular_metabolic_roles = (
+                [self.cellular_metabolic_roles] if self.cellular_metabolic_roles is not None else []
+            )
+        self.cellular_metabolic_roles = [
+            v if isinstance(v, CellularMetabolicRoleEnum) else CellularMetabolicRoleEnum(v)
+            for v in self.cellular_metabolic_roles
+        ]
 
         if not isinstance(self.role_curie, list):
             self.role_curie = [self.role_curie] if self.role_curie is not None else []
-        self.role_curie = [v if isinstance(v, URIorCURIE) else URIorCURIE(v) for v in self.role_curie]
+        self.role_curie = [
+            v if isinstance(v, URIorCURIE) else URIorCURIE(v) for v in self.role_curie
+        ]
 
-        self._normalize_inlined_as_list(slot_name="cofactors_provided", slot_type=CofactorDescriptor, key_name="preferred_term", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="cofactors_provided",
+            slot_type=CofactorDescriptor,
+            key_name="preferred_term",
+            keyed=False,
+        )
 
-        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+        self._normalize_inlined_as_list(
+            slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True
+        )
 
         super().__post_init__(**kwargs)
 
@@ -804,6 +1032,7 @@ class SolutionDescriptor(Descriptor):
     """
     A pre-prepared stock solution used as an ingredient
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["SolutionDescriptor"]
@@ -819,10 +1048,16 @@ class SolutionDescriptor(Descriptor):
     mediaingredientmech_term: Optional[Union[dict, "MediaIngredientMechTerm"]] = None
     mediaingredientmech_chebi_term: Optional[Union[dict, "MediaIngredientMechChebiTerm"]] = None
     culturemech_term: Optional[Union[dict, "CultureMechTerm"]] = None
-    composition: Optional[Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]]] = empty_list()
-    solutions: Optional[Union[Union[dict, "SolutionDescriptor"], list[Union[dict, "SolutionDescriptor"]]]] = empty_list()
+    composition: Optional[
+        Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]]
+    ] = empty_list()
+    solutions: Optional[
+        Union[Union[dict, "SolutionDescriptor"], list[Union[dict, "SolutionDescriptor"]]]
+    ] = empty_list()
     concentration: Optional[Union[dict, "ConcentrationValue"]] = None
-    concentration_candidates: Optional[Union[Union[dict, "ConcentrationCandidate"], list[Union[dict, "ConcentrationCandidate"]]]] = empty_list()
+    concentration_candidates: Optional[
+        Union[Union[dict, "ConcentrationCandidate"], list[Union[dict, "ConcentrationCandidate"]]]
+    ] = empty_list()
     preparation_notes: Optional[str] = None
     storage_conditions: Optional[Union[dict, "StorageConditions"]] = None
     shelf_life: Optional[str] = None
@@ -845,28 +1080,57 @@ class SolutionDescriptor(Descriptor):
         if self.term is not None and not isinstance(self.term, Term):
             self.term = Term(**as_dict(self.term))
 
-        if self.mediaingredientmech_term is not None and not isinstance(self.mediaingredientmech_term, MediaIngredientMechTerm):
-            self.mediaingredientmech_term = MediaIngredientMechTerm(**as_dict(self.mediaingredientmech_term))
+        if self.mediaingredientmech_term is not None and not isinstance(
+            self.mediaingredientmech_term, MediaIngredientMechTerm
+        ):
+            self.mediaingredientmech_term = MediaIngredientMechTerm(
+                **as_dict(self.mediaingredientmech_term)
+            )
 
-        if self.mediaingredientmech_chebi_term is not None and not isinstance(self.mediaingredientmech_chebi_term, MediaIngredientMechChebiTerm):
-            self.mediaingredientmech_chebi_term = MediaIngredientMechChebiTerm(**as_dict(self.mediaingredientmech_chebi_term))
+        if self.mediaingredientmech_chebi_term is not None and not isinstance(
+            self.mediaingredientmech_chebi_term, MediaIngredientMechChebiTerm
+        ):
+            self.mediaingredientmech_chebi_term = MediaIngredientMechChebiTerm(
+                **as_dict(self.mediaingredientmech_chebi_term)
+            )
 
-        if self.culturemech_term is not None and not isinstance(self.culturemech_term, CultureMechTerm):
+        if self.culturemech_term is not None and not isinstance(
+            self.culturemech_term, CultureMechTerm
+        ):
             self.culturemech_term = CultureMechTerm(**as_dict(self.culturemech_term))
 
-        self._normalize_inlined_as_list(slot_name="composition", slot_type=IngredientDescriptor, key_name="preferred_term", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="composition",
+            slot_type=IngredientDescriptor,
+            key_name="preferred_term",
+            keyed=False,
+        )
 
-        self._normalize_inlined_as_list(slot_name="solutions", slot_type=SolutionDescriptor, key_name="preferred_term", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="solutions",
+            slot_type=SolutionDescriptor,
+            key_name="preferred_term",
+            keyed=False,
+        )
 
-        if self.concentration is not None and not isinstance(self.concentration, ConcentrationValue):
+        if self.concentration is not None and not isinstance(
+            self.concentration, ConcentrationValue
+        ):
             self.concentration = ConcentrationValue(**as_dict(self.concentration))
 
-        self._normalize_inlined_as_list(slot_name="concentration_candidates", slot_type=ConcentrationCandidate, key_name="value", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="concentration_candidates",
+            slot_type=ConcentrationCandidate,
+            key_name="value",
+            keyed=False,
+        )
 
         if self.preparation_notes is not None and not isinstance(self.preparation_notes, str):
             self.preparation_notes = str(self.preparation_notes)
 
-        if self.storage_conditions is not None and not isinstance(self.storage_conditions, StorageConditions):
+        if self.storage_conditions is not None and not isinstance(
+            self.storage_conditions, StorageConditions
+        ):
             self.storage_conditions = StorageConditions(**as_dict(self.storage_conditions))
 
         if self.shelf_life is not None and not isinstance(self.shelf_life, str):
@@ -880,6 +1144,7 @@ class OrganismDescriptor(Descriptor):
     """
     Target organism for the medium
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["OrganismDescriptor"]
@@ -894,14 +1159,31 @@ class OrganismDescriptor(Descriptor):
     genome_assembly_id: Optional[Union[str, list[str]]] = empty_list()
     strain: Optional[str] = None
     growth_phase: Optional[Union[str, "GrowthPhaseEnum"]] = None
-    growth_metrics: Optional[Union[Union[dict, "GrowthMetrics"], list[Union[dict, "GrowthMetrics"]]]] = empty_list()
-    community_role: Optional[Union[Union[str, "CommunityOrganismRoleEnum"], list[Union[str, "CommunityOrganismRoleEnum"]]]] = empty_list()
+    growth_metrics: Optional[
+        Union[Union[dict, "GrowthMetrics"], list[Union[dict, "GrowthMetrics"]]]
+    ] = empty_list()
+    community_role: Optional[
+        Union[
+            Union[str, "CommunityOrganismRoleEnum"], list[Union[str, "CommunityOrganismRoleEnum"]]
+        ]
+    ] = empty_list()
     target_abundance: Optional[float] = None
     community_function: Optional[Union[str, list[str]]] = empty_list()
-    cofactor_requirements: Optional[Union[Union[dict, "CofactorRequirement"], list[Union[dict, "CofactorRequirement"]]]] = empty_list()
-    transporters: Optional[Union[Union[dict, "TransporterAnnotation"], list[Union[dict, "TransporterAnnotation"]]]] = empty_list()
-    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
-    strain_modifications: Optional[Union[Union[dict, "StrainModification"], list[Union[dict, "StrainModification"]]]] = empty_list()
+    cofactor_requirements: Optional[
+        Union[Union[dict, "CofactorRequirement"], list[Union[dict, "CofactorRequirement"]]]
+    ] = empty_list()
+    transporters: Optional[
+        Union[Union[dict, "TransporterAnnotation"], list[Union[dict, "TransporterAnnotation"]]]
+    ] = empty_list()
+    evidence: Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]],
+            list[Union[dict, "EvidenceItem"]],
+        ]
+    ] = empty_dict()
+    strain_modifications: Optional[
+        Union[Union[dict, "StrainModification"], list[Union[dict, "StrainModification"]]]
+    ] = empty_list()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.preferred_term):
@@ -919,8 +1201,12 @@ class OrganismDescriptor(Descriptor):
             self.gtdb_term = GTDBTerm(**as_dict(self.gtdb_term))
 
         if not isinstance(self.genome_assembly_id, list):
-            self.genome_assembly_id = [self.genome_assembly_id] if self.genome_assembly_id is not None else []
-        self.genome_assembly_id = [v if isinstance(v, str) else str(v) for v in self.genome_assembly_id]
+            self.genome_assembly_id = (
+                [self.genome_assembly_id] if self.genome_assembly_id is not None else []
+            )
+        self.genome_assembly_id = [
+            v if isinstance(v, str) else str(v) for v in self.genome_assembly_id
+        ]
 
         if self.strain is not None and not isinstance(self.strain, str):
             self.strain = str(self.strain)
@@ -930,26 +1216,50 @@ class OrganismDescriptor(Descriptor):
 
         if not isinstance(self.growth_metrics, list):
             self.growth_metrics = [self.growth_metrics] if self.growth_metrics is not None else []
-        self.growth_metrics = [v if isinstance(v, GrowthMetrics) else GrowthMetrics(**as_dict(v)) for v in self.growth_metrics]
+        self.growth_metrics = [
+            v if isinstance(v, GrowthMetrics) else GrowthMetrics(**as_dict(v))
+            for v in self.growth_metrics
+        ]
 
         if not isinstance(self.community_role, list):
             self.community_role = [self.community_role] if self.community_role is not None else []
-        self.community_role = [v if isinstance(v, CommunityOrganismRoleEnum) else CommunityOrganismRoleEnum(v) for v in self.community_role]
+        self.community_role = [
+            v if isinstance(v, CommunityOrganismRoleEnum) else CommunityOrganismRoleEnum(v)
+            for v in self.community_role
+        ]
 
         if self.target_abundance is not None and not isinstance(self.target_abundance, float):
             self.target_abundance = float(self.target_abundance)
 
         if not isinstance(self.community_function, list):
-            self.community_function = [self.community_function] if self.community_function is not None else []
-        self.community_function = [v if isinstance(v, str) else str(v) for v in self.community_function]
+            self.community_function = (
+                [self.community_function] if self.community_function is not None else []
+            )
+        self.community_function = [
+            v if isinstance(v, str) else str(v) for v in self.community_function
+        ]
 
-        self._normalize_inlined_as_list(slot_name="cofactor_requirements", slot_type=CofactorRequirement, key_name="can_biosynthesize", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="cofactor_requirements",
+            slot_type=CofactorRequirement,
+            key_name="can_biosynthesize",
+            keyed=False,
+        )
 
-        self._normalize_inlined_as_list(slot_name="transporters", slot_type=TransporterAnnotation, key_name="name", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="transporters", slot_type=TransporterAnnotation, key_name="name", keyed=False
+        )
 
-        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+        self._normalize_inlined_as_list(
+            slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True
+        )
 
-        self._normalize_inlined_as_list(slot_name="strain_modifications", slot_type=StrainModification, key_name="modification_type", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="strain_modifications",
+            slot_type=StrainModification,
+            key_name="modification_type",
+            keyed=False,
+        )
 
         super().__post_init__(**kwargs)
 
@@ -960,6 +1270,7 @@ class SourceEnvironmentDescriptor(Descriptor):
     Environment from which target organisms originate or for which the medium is designed. Enables environment-based
     discovery and cross-repository linking with CommunityMech.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["SourceEnvironmentDescriptor"]
@@ -991,6 +1302,7 @@ class CofactorDescriptor(Descriptor):
     """
     A cofactor or coenzyme required for enzymatic activity
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["CofactorDescriptor"]
@@ -1025,11 +1337,15 @@ class CofactorDescriptor(Descriptor):
         if self.precursor is not None and not isinstance(self.precursor, str):
             self.precursor = str(self.precursor)
 
-        if self.precursor_term is not None and not isinstance(self.precursor_term, ChemicalEntityTerm):
+        if self.precursor_term is not None and not isinstance(
+            self.precursor_term, ChemicalEntityTerm
+        ):
             self.precursor_term = ChemicalEntityTerm(**as_dict(self.precursor_term))
 
         if not isinstance(self.ec_associations, list):
-            self.ec_associations = [self.ec_associations] if self.ec_associations is not None else []
+            self.ec_associations = (
+                [self.ec_associations] if self.ec_associations is not None else []
+            )
         self.ec_associations = [v if isinstance(v, str) else str(v) for v in self.ec_associations]
 
         if not isinstance(self.kegg_pathways, list):
@@ -1037,12 +1353,18 @@ class CofactorDescriptor(Descriptor):
         self.kegg_pathways = [v if isinstance(v, str) else str(v) for v in self.kegg_pathways]
 
         if not isinstance(self.enzyme_examples, list):
-            self.enzyme_examples = [self.enzyme_examples] if self.enzyme_examples is not None else []
+            self.enzyme_examples = (
+                [self.enzyme_examples] if self.enzyme_examples is not None else []
+            )
         self.enzyme_examples = [v if isinstance(v, str) else str(v) for v in self.enzyme_examples]
 
         if not isinstance(self.biosynthesis_genes, list):
-            self.biosynthesis_genes = [self.biosynthesis_genes] if self.biosynthesis_genes is not None else []
-        self.biosynthesis_genes = [v if isinstance(v, str) else str(v) for v in self.biosynthesis_genes]
+            self.biosynthesis_genes = (
+                [self.biosynthesis_genes] if self.biosynthesis_genes is not None else []
+            )
+        self.biosynthesis_genes = [
+            v if isinstance(v, str) else str(v) for v in self.biosynthesis_genes
+        ]
 
         if self.bioavailability is not None and not isinstance(self.bioavailability, str):
             self.bioavailability = str(self.bioavailability)
@@ -1059,6 +1381,7 @@ class SourceReference(YAMLRoot):
     Upstream database attribution for a record. Carried alongside curation_history; multivalued because a record can
     have multiple upstream sources (e.g. originally from MediaDive, also catalogued in CultureBotHT).
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["SourceReference"]
@@ -1090,6 +1413,7 @@ class IngredientSynonym(YAMLRoot):
     """
     An alternate name for an ingredient (e.g. brand name, abbreviation).
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["IngredientSynonym"]
@@ -1118,6 +1442,7 @@ class IngredientCurationMetadata(YAMLRoot):
     Structured metadata describing how an ingredient mapping was produced (mapping quality, confidence, source).
     Populated by curation pipelines.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["IngredientCurationMetadata"]
@@ -1151,6 +1476,7 @@ class IngredientReference(YAMLRoot):
     """
     Reference to canonical ingredient
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["IngredientReference"]
@@ -1167,7 +1493,9 @@ class IngredientReference(YAMLRoot):
         if not isinstance(self.preferred_term, str):
             self.preferred_term = str(self.preferred_term)
 
-        if self.mediaingredientmech_id is not None and not isinstance(self.mediaingredientmech_id, str):
+        if self.mediaingredientmech_id is not None and not isinstance(
+            self.mediaingredientmech_id, str
+        ):
             self.mediaingredientmech_id = str(self.mediaingredientmech_id)
 
         super().__post_init__(**kwargs)
@@ -1178,6 +1506,7 @@ class ConcentrationValue(YAMLRoot):
     """
     Quantified concentration with units
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["ConcentrationValue"]
@@ -1214,6 +1543,7 @@ class ConcentrationCandidate(YAMLRoot):
     candidate never overwrites an asserted `concentration`; promoting it is a curation decision, made after checking
     the record's own source.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["ConcentrationCandidate"]
@@ -1271,6 +1601,7 @@ class GrowthMetrics(YAMLRoot):
     doubling time, growth rate) observed under defined conditions. Every non-empty record must cite at least one
     literature reference via the evidence list.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["GrowthMetrics"]
@@ -1278,7 +1609,10 @@ class GrowthMetrics(YAMLRoot):
     class_name: ClassVar[str] = "GrowthMetrics"
     class_model_uri: ClassVar[URIRef] = CULTUREMECH.GrowthMetrics
 
-    evidence: Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]] = empty_dict()
+    evidence: Union[
+        dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]],
+        list[Union[dict, "EvidenceItem"]],
+    ] = empty_dict()
     max_od600: Optional[float] = None
     max_od_wavelength_nm: Optional[int] = 600
     doubling_time_minutes: Optional[float] = None
@@ -1288,13 +1622,19 @@ class GrowthMetrics(YAMLRoot):
     measurement_conditions: Optional[str] = None
     is_max_attainment: Optional[Union[bool, Bool]] = None
     growth_mode: Optional[Union[str, "GrowthModeEnum"]] = None
-    perturbations: Optional[Union[Union[dict, "PerturbationContext"], list[Union[dict, "PerturbationContext"]]]] = empty_list()
-    nutrient_overrides: Optional[Union[Union[dict, "NutrientOverride"], list[Union[dict, "NutrientOverride"]]]] = empty_list()
+    perturbations: Optional[
+        Union[Union[dict, "PerturbationContext"], list[Union[dict, "PerturbationContext"]]]
+    ] = empty_list()
+    nutrient_overrides: Optional[
+        Union[Union[dict, "NutrientOverride"], list[Union[dict, "NutrientOverride"]]]
+    ] = empty_list()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.evidence):
             self.MissingRequiredField("evidence")
-        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+        self._normalize_inlined_as_list(
+            slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True
+        )
 
         if self.max_od600 is not None and not isinstance(self.max_od600, float):
             self.max_od600 = float(self.max_od600)
@@ -1302,10 +1642,14 @@ class GrowthMetrics(YAMLRoot):
         if self.max_od_wavelength_nm is not None and not isinstance(self.max_od_wavelength_nm, int):
             self.max_od_wavelength_nm = int(self.max_od_wavelength_nm)
 
-        if self.doubling_time_minutes is not None and not isinstance(self.doubling_time_minutes, float):
+        if self.doubling_time_minutes is not None and not isinstance(
+            self.doubling_time_minutes, float
+        ):
             self.doubling_time_minutes = float(self.doubling_time_minutes)
 
-        if self.growth_rate_per_hour is not None and not isinstance(self.growth_rate_per_hour, float):
+        if self.growth_rate_per_hour is not None and not isinstance(
+            self.growth_rate_per_hour, float
+        ):
             self.growth_rate_per_hour = float(self.growth_rate_per_hour)
 
         if self.temperature_celsius is not None and not isinstance(self.temperature_celsius, float):
@@ -1314,7 +1658,9 @@ class GrowthMetrics(YAMLRoot):
         if self.ph_at_measurement is not None and not isinstance(self.ph_at_measurement, float):
             self.ph_at_measurement = float(self.ph_at_measurement)
 
-        if self.measurement_conditions is not None and not isinstance(self.measurement_conditions, str):
+        if self.measurement_conditions is not None and not isinstance(
+            self.measurement_conditions, str
+        ):
             self.measurement_conditions = str(self.measurement_conditions)
 
         if self.is_max_attainment is not None and not isinstance(self.is_max_attainment, Bool):
@@ -1323,9 +1669,16 @@ class GrowthMetrics(YAMLRoot):
         if self.growth_mode is not None and not isinstance(self.growth_mode, GrowthModeEnum):
             self.growth_mode = GrowthModeEnum(self.growth_mode)
 
-        self._normalize_inlined_as_list(slot_name="perturbations", slot_type=PerturbationContext, key_name="perturbation_type", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="perturbations",
+            slot_type=PerturbationContext,
+            key_name="perturbation_type",
+            keyed=False,
+        )
 
-        self._normalize_inlined_as_list(slot_name="nutrient_overrides", slot_type=NutrientOverride, key_name="role", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="nutrient_overrides", slot_type=NutrientOverride, key_name="role", keyed=False
+        )
 
         super().__post_init__(**kwargs)
 
@@ -1337,6 +1690,7 @@ class PerturbationContext(YAMLRoot):
     limitation, adaptation, or non-batch culture mode. When PerturbationContext is non-empty,
     GrowthMetrics.is_max_attainment should be FALSE (the metric is conditional, not a max claim).
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["PerturbationContext"]
@@ -1350,7 +1704,12 @@ class PerturbationContext(YAMLRoot):
     level: Optional[float] = None
     level_unit: Optional[str] = None
     ontology_id: Optional[str] = None
-    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
+    evidence: Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]],
+            list[Union[dict, "EvidenceItem"]],
+        ]
+    ] = empty_dict()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.perturbation_type):
@@ -1373,7 +1732,9 @@ class PerturbationContext(YAMLRoot):
         if self.ontology_id is not None and not isinstance(self.ontology_id, str):
             self.ontology_id = str(self.ontology_id)
 
-        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+        self._normalize_inlined_as_list(
+            slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True
+        )
 
         super().__post_init__(**kwargs)
 
@@ -1385,6 +1746,7 @@ class StrainModification(YAMLRoot):
     Applies to the strain itself (carries across all media on which it grows), as distinct from PerturbationContext
     which applies per-observation.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["StrainModification"]
@@ -1396,7 +1758,12 @@ class StrainModification(YAMLRoot):
     target: Optional[str] = None
     description: Optional[str] = None
     ontology_id: Optional[str] = None
-    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
+    evidence: Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]],
+            list[Union[dict, "EvidenceItem"]],
+        ]
+    ] = empty_dict()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.modification_type):
@@ -1413,7 +1780,9 @@ class StrainModification(YAMLRoot):
         if self.ontology_id is not None and not isinstance(self.ontology_id, str):
             self.ontology_id = str(self.ontology_id)
 
-        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+        self._normalize_inlined_as_list(
+            slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True
+        )
 
         super().__post_init__(**kwargs)
 
@@ -1426,6 +1795,7 @@ class NutrientOverride(YAMLRoot):
     enforce. Distinct from the medium's prescribed `ingredients`; represents experimental substitution at observation
     time.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["NutrientOverride"]
@@ -1437,7 +1807,12 @@ class NutrientOverride(YAMLRoot):
     source: str = None
     ontology_id: Optional[str] = None
     is_sole_source: Optional[Union[bool, Bool]] = None
-    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
+    evidence: Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]],
+            list[Union[dict, "EvidenceItem"]],
+        ]
+    ] = empty_dict()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.role):
@@ -1456,7 +1831,9 @@ class NutrientOverride(YAMLRoot):
         if self.is_sole_source is not None and not isinstance(self.is_sole_source, Bool):
             self.is_sole_source = Bool(self.is_sole_source)
 
-        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+        self._normalize_inlined_as_list(
+            slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True
+        )
 
         super().__post_init__(**kwargs)
 
@@ -1466,6 +1843,7 @@ class TemperatureValue(YAMLRoot):
     """
     Temperature with units
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["TemperatureValue"]
@@ -1496,6 +1874,7 @@ class PhRange(YAMLRoot):
     Acceptable pH range for a medium. Use `min` and `max` (floats) for parseable ranges; `notes` preserves the
     original free-text whenever a value can't be parsed cleanly (avoids data loss during migration).
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["PhRange"]
@@ -1525,6 +1904,7 @@ class PreparationStep(YAMLRoot):
     """
     A step in medium preparation
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["PreparationStep"]
@@ -1576,6 +1956,7 @@ class SterilizationDescriptor(YAMLRoot):
     """
     Sterilization method and parameters
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["SterilizationDescriptor"]
@@ -1615,6 +1996,7 @@ class StorageConditions(YAMLRoot):
     """
     Storage requirements for prepared medium
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["StorageConditions"]
@@ -1634,7 +2016,9 @@ class StorageConditions(YAMLRoot):
         if not isinstance(self.temperature, TemperatureValue):
             self.temperature = TemperatureValue(**as_dict(self.temperature))
 
-        if self.light_condition is not None and not isinstance(self.light_condition, LightConditionEnum):
+        if self.light_condition is not None and not isinstance(
+            self.light_condition, LightConditionEnum
+        ):
             self.light_condition = LightConditionEnum(self.light_condition)
 
         if self.shelf_life is not None and not isinstance(self.shelf_life, str):
@@ -1654,6 +2038,7 @@ class MediaVariant(YAMLRoot):
     """
     A variant or modification of the base recipe
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["MediaVariant"]
@@ -1667,7 +2052,12 @@ class MediaVariant(YAMLRoot):
     modifications: Optional[Union[str, list[str]]] = empty_list()
     purpose: Optional[str] = None
     supplier_info: Optional[Union[dict, "SupplierInfo"]] = None
-    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
+    evidence: Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]],
+            list[Union[dict, "EvidenceItem"]],
+        ]
+    ] = empty_dict()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.name):
@@ -1675,7 +2065,9 @@ class MediaVariant(YAMLRoot):
         if not isinstance(self.name, MediaVariantName):
             self.name = MediaVariantName(self.name)
 
-        if self.relationship is not None and not isinstance(self.relationship, MediaVariantRelationshipEnum):
+        if self.relationship is not None and not isinstance(
+            self.relationship, MediaVariantRelationshipEnum
+        ):
             self.relationship = MediaVariantRelationshipEnum(self.relationship)
 
         if self.description is not None and not isinstance(self.description, str):
@@ -1691,7 +2083,9 @@ class MediaVariant(YAMLRoot):
         if self.supplier_info is not None and not isinstance(self.supplier_info, SupplierInfo):
             self.supplier_info = SupplierInfo(**as_dict(self.supplier_info))
 
-        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+        self._normalize_inlined_as_list(
+            slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True
+        )
 
         super().__post_init__(**kwargs)
 
@@ -1701,6 +2095,7 @@ class MediaRecipeReference(YAMLRoot):
     """
     Reference to another CultureMech media recipe record
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["MediaRecipeReference"]
@@ -1713,7 +2108,12 @@ class MediaRecipeReference(YAMLRoot):
     path: Optional[str] = None
     relationship: Optional[Union[str, "MediaVariantRelationshipEnum"]] = None
     notes: Optional[str] = None
-    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
+    evidence: Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]],
+            list[Union[dict, "EvidenceItem"]],
+        ]
+    ] = empty_dict()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self.id is not None and not isinstance(self.id, str):
@@ -1725,13 +2125,17 @@ class MediaRecipeReference(YAMLRoot):
         if self.path is not None and not isinstance(self.path, str):
             self.path = str(self.path)
 
-        if self.relationship is not None and not isinstance(self.relationship, MediaVariantRelationshipEnum):
+        if self.relationship is not None and not isinstance(
+            self.relationship, MediaVariantRelationshipEnum
+        ):
             self.relationship = MediaVariantRelationshipEnum(self.relationship)
 
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
 
-        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+        self._normalize_inlined_as_list(
+            slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True
+        )
 
         super().__post_init__(**kwargs)
 
@@ -1741,6 +2145,7 @@ class SupplierInfo(YAMLRoot):
     """
     Commercial supplier information
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["SupplierInfo"]
@@ -1776,6 +2181,7 @@ class PublicationReference(YAMLRoot):
     """
     Literature reference
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["PublicationReference"]
@@ -1815,6 +2221,7 @@ class EvidenceItem(YAMLRoot):
     """
     Evidence supporting a claim about media formulation or performance
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["EvidenceItem"]
@@ -1854,6 +2261,7 @@ class CurationEvent(YAMLRoot):
     """
     Audit trail entry for curation
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["CurationEvent"]
@@ -1901,6 +2309,7 @@ class SourceData(YAMLRoot):
     """
     Provenance information for imported records
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["SourceData"]
@@ -1911,7 +2320,12 @@ class SourceData(YAMLRoot):
     origin: str = None
     community_ids: Optional[Union[str, list[str]]] = empty_list()
     import_date: Optional[str] = None
-    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]] = empty_dict()
+    evidence: Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]],
+            list[Union[dict, EvidenceItem]],
+        ]
+    ] = empty_dict()
     notes: Optional[str] = None
     mediaingredientmech_id: Optional[str] = None
 
@@ -1928,12 +2342,16 @@ class SourceData(YAMLRoot):
         if self.import_date is not None and not isinstance(self.import_date, str):
             self.import_date = str(self.import_date)
 
-        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+        self._normalize_inlined_as_list(
+            slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True
+        )
 
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
 
-        if self.mediaingredientmech_id is not None and not isinstance(self.mediaingredientmech_id, str):
+        if self.mediaingredientmech_id is not None and not isinstance(
+            self.mediaingredientmech_id, str
+        ):
             self.mediaingredientmech_id = str(self.mediaingredientmech_id)
 
         super().__post_init__(**kwargs)
@@ -1944,6 +2362,7 @@ class CofactorRequirement(YAMLRoot):
     """
     Cofactor requirement for an organism
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["CofactorRequirement"]
@@ -1954,7 +2373,12 @@ class CofactorRequirement(YAMLRoot):
     cofactor: Union[dict, CofactorDescriptor] = None
     can_biosynthesize: Union[bool, Bool] = None
     confidence: Optional[float] = None
-    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]] = empty_dict()
+    evidence: Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]],
+            list[Union[dict, EvidenceItem]],
+        ]
+    ] = empty_dict()
     genes: Optional[Union[str, list[str]]] = empty_list()
 
     def __post_init__(self, *_: str, **kwargs: Any):
@@ -1971,7 +2395,9 @@ class CofactorRequirement(YAMLRoot):
         if self.confidence is not None and not isinstance(self.confidence, float):
             self.confidence = float(self.confidence)
 
-        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+        self._normalize_inlined_as_list(
+            slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True
+        )
 
         if not isinstance(self.genes, list):
             self.genes = [self.genes] if self.genes is not None else []
@@ -1985,6 +2411,7 @@ class TransporterAnnotation(YAMLRoot):
     """
     Annotation of a transporter or transport system
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["TransporterAnnotation"]
@@ -1995,7 +2422,12 @@ class TransporterAnnotation(YAMLRoot):
     name: str = None
     transporter_type: Union[str, "TransporterTypeEnum"] = None
     substrates: Optional[Union[str, list[str]]] = empty_list()
-    substrate_terms: Optional[Union[dict[Union[str, ChemicalEntityTermId], Union[dict, "ChemicalEntityTerm"]], list[Union[dict, "ChemicalEntityTerm"]]]] = empty_dict()
+    substrate_terms: Optional[
+        Union[
+            dict[Union[str, ChemicalEntityTermId], Union[dict, "ChemicalEntityTerm"]],
+            list[Union[dict, "ChemicalEntityTerm"]],
+        ]
+    ] = empty_dict()
     direction: Optional[str] = None
     genes: Optional[Union[str, list[str]]] = empty_list()
     ec_number: Optional[str] = None
@@ -2016,7 +2448,9 @@ class TransporterAnnotation(YAMLRoot):
             self.substrates = [self.substrates] if self.substrates is not None else []
         self.substrates = [v if isinstance(v, str) else str(v) for v in self.substrates]
 
-        self._normalize_inlined_as_list(slot_name="substrate_terms", slot_type=ChemicalEntityTerm, key_name="id", keyed=True)
+        self._normalize_inlined_as_list(
+            slot_name="substrate_terms", slot_type=ChemicalEntityTerm, key_name="id", keyed=True
+        )
 
         if self.direction is not None and not isinstance(self.direction, str):
             self.direction = str(self.direction)
@@ -2044,6 +2478,7 @@ class ChemicalEntityTerm(Term):
     enzymatic protein digests (tryptone, peptone, proteose peptone, soy peptone, casein hydrolysate) which ChEBI
     cannot represent because CHEBI:59999 "chemical substance" requires constant composition.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["ChemicalEntityTerm"]
@@ -2069,6 +2504,7 @@ class ChebiTerm(Term):
     specifically" — distinct from the polymorphic `ChemicalEntityTerm` used by `term` slots that may carry upstream
     non-CHEBI IDs.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["ChebiTerm"]
@@ -2092,6 +2528,7 @@ class OrganismTerm(Term):
     """
     An NCBITaxon term representing an organism
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["OrganismTerm"]
@@ -2116,6 +2553,7 @@ class GTDBTerm(Term):
     A GTDB genome identifier. id = GTDB accession (e.g. GTDB:RS_GCF_000006945.2), label = full GTDB lineage string
     (e.g. d__Bacteria;p__Proteobacteria;...)
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["GTDBTerm"]
@@ -2139,6 +2577,7 @@ class MediaDatabaseTerm(Term):
     """
     Identifier from authoritative media database
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["MediaDatabaseTerm"]
@@ -2164,6 +2603,7 @@ class MediaIngredientMechTerm(Term):
     has since migrated to a CHEBI-keyed schema and no longer mints these IDs; for new linkages use
     `mediaingredientmech_chebi_term` instead. Retained for the existing corpus, which still carries these IDs.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["MediaIngredientMechTerm"]
@@ -2191,6 +2631,7 @@ class MediaIngredientMechChebiTerm(Term):
     `term`/`chebi_term` grounding: it asserts "this ingredient corresponds to a curated MIM ingredient", even though
     the id coincides with the CHEBI grounding.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["MediaIngredientMechChebiTerm"]
@@ -2214,6 +2655,7 @@ class CultureMechTerm(Term):
     """
     A CultureMech identifier for a media recipe used as component
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["CultureMechTerm"]
@@ -2237,6 +2679,7 @@ class EnvironmentTerm(Term):
     """
     An ENVO term representing an environmental system or biome
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["EnvironmentTerm"]
@@ -2260,6 +2703,7 @@ class ImportMetadata(YAMLRoot):
     """
     Tracking information for imported media records. Enables versioning, provenance tracking, and reproducible updates.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["ImportMetadata"]
@@ -2273,7 +2717,9 @@ class ImportMetadata(YAMLRoot):
     import_date: str = None
     import_skill: Optional[str] = None
     last_updated: Optional[str] = None
-    update_history: Optional[Union[Union[dict, "UpdateEvent"], list[Union[dict, "UpdateEvent"]]]] = empty_list()
+    update_history: Optional[
+        Union[Union[dict, "UpdateEvent"], list[Union[dict, "UpdateEvent"]]]
+    ] = empty_list()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.source_database):
@@ -2302,7 +2748,9 @@ class ImportMetadata(YAMLRoot):
         if self.last_updated is not None and not isinstance(self.last_updated, str):
             self.last_updated = str(self.last_updated)
 
-        self._normalize_inlined_as_list(slot_name="update_history", slot_type=UpdateEvent, key_name="timestamp", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="update_history", slot_type=UpdateEvent, key_name="timestamp", keyed=False
+        )
 
         super().__post_init__(**kwargs)
 
@@ -2312,6 +2760,7 @@ class UpdateEvent(YAMLRoot):
     """
     Record of a single update to an imported media recipe. Captures what changed, when, and why.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = CULTUREMECH["UpdateEvent"]
@@ -2358,6 +2807,7 @@ class SupportingReference(YAMLRoot):
     no dependency on each repo's EvidenceItem); carries a verbatim `snippet` so the same anti-hallucination
     snippet-vs-cached-abstract check the Mechs already run can validate it.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MECH_SHARED["SupportingReference"]
@@ -2408,6 +2858,7 @@ class Discussion(YAMLRoot):
     of curation. External thread links (GitHub issues, forum posts) are cited via the `evidence` block, not a separate
     slot.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MECH_SHARED["Discussion"]
@@ -2421,8 +2872,12 @@ class Discussion(YAMLRoot):
     status: Optional[Union[str, "DiscussionStatusEnum"]] = None
     attaches_to: Optional[Union[str, list[str]]] = empty_list()
     rationale: Optional[str] = None
-    proposed_experiments: Optional[Union[Union[dict, "ProposedExperiment"], list[Union[dict, "ProposedExperiment"]]]] = empty_list()
-    evidence: Optional[Union[Union[dict, SupportingReference], list[Union[dict, SupportingReference]]]] = empty_list()
+    proposed_experiments: Optional[
+        Union[Union[dict, "ProposedExperiment"], list[Union[dict, "ProposedExperiment"]]]
+    ] = empty_list()
+    evidence: Optional[
+        Union[Union[dict, SupportingReference], list[Union[dict, SupportingReference]]]
+    ] = empty_list()
     posed_by: Optional[str] = None
     posed_date: Optional[Union[str, XSDDate]] = None
     resolved_date: Optional[Union[str, XSDDate]] = None
@@ -2454,10 +2909,17 @@ class Discussion(YAMLRoot):
             self.rationale = str(self.rationale)
 
         if not isinstance(self.proposed_experiments, list):
-            self.proposed_experiments = [self.proposed_experiments] if self.proposed_experiments is not None else []
-        self.proposed_experiments = [v if isinstance(v, ProposedExperiment) else ProposedExperiment(**as_dict(v)) for v in self.proposed_experiments]
+            self.proposed_experiments = (
+                [self.proposed_experiments] if self.proposed_experiments is not None else []
+            )
+        self.proposed_experiments = [
+            v if isinstance(v, ProposedExperiment) else ProposedExperiment(**as_dict(v))
+            for v in self.proposed_experiments
+        ]
 
-        self._normalize_inlined_as_list(slot_name="evidence", slot_type=SupportingReference, key_name="reference", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="evidence", slot_type=SupportingReference, key_name="reference", keyed=False
+        )
 
         if self.posed_by is not None and not isinstance(self.posed_by, str):
             self.posed_by = str(self.posed_by)
@@ -2483,6 +2945,7 @@ class ProposedExperiment(YAMLRoot):
     A lightweight, domain-neutral sketch of an experiment or analysis that could resolve a knowledge gap. Records the
     idea and how its outcome would decide the gap; intentionally simpler than a full study design.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MECH_SHARED["ProposedExperiment"]
@@ -2544,6 +3007,7 @@ class Dataset(YAMLRoot):
     A reference to a publicly available dataset (omics, sequence, phenotype) relevant to this record. A lightweight
     repository-accession reference, not a full Datasheets-for-Datasets / DCAT description.
     """
+
     _inherited_slots: ClassVar[list[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MECH_SHARED["Dataset"]
@@ -2564,7 +3028,9 @@ class Dataset(YAMLRoot):
     url: Optional[Union[str, URI]] = None
     publication: Optional[str] = None
     findings: Optional[str] = None
-    evidence: Optional[Union[Union[dict, SupportingReference], list[Union[dict, SupportingReference]]]] = empty_list()
+    evidence: Optional[
+        Union[Union[dict, SupportingReference], list[Union[dict, SupportingReference]]]
+    ] = empty_list()
     notes: Optional[str] = None
 
     def __post_init__(self, *_: str, **kwargs: Any):
@@ -2609,7 +3075,9 @@ class Dataset(YAMLRoot):
         if self.findings is not None and not isinstance(self.findings, str):
             self.findings = str(self.findings)
 
-        self._normalize_inlined_as_list(slot_name="evidence", slot_type=SupportingReference, key_name="reference", keyed=False)
+        self._normalize_inlined_as_list(
+            slot_name="evidence", slot_type=SupportingReference, key_name="reference", keyed=False
+        )
 
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
@@ -2623,17 +3091,18 @@ class RecordKindEnum(EnumDefinitionImpl):
     Whether a normalized_yaml record describes a growth medium or a standalone stock solution. See the `record_kind`
     slot: this is stated only where the `term.id` prefix cannot carry the distinction.
     """
-    MEDIUM = PermissibleValue(
-        text="MEDIUM",
-        description="A growth medium.")
+
+    MEDIUM = PermissibleValue(text="MEDIUM", description="A growth medium.")
     SOLUTION = PermissibleValue(
         text="SOLUTION",
-        description="""A standalone stock solution (trace elements, vitamins, buffers). Excluded from media-level audits and from the deep-research ranking.""")
+        description="""A standalone stock solution (trace elements, vitamins, buffers). Excluded from media-level audits and from the deep-research ranking.""",
+    )
 
     _defn = EnumDefinition(
         name="RecordKindEnum",
         description="""Whether a normalized_yaml record describes a growth medium or a standalone stock solution. See the `record_kind` slot: this is stated only where the `term.id` prefix cannot carry the distinction.""",
     )
+
 
 class MediumTypeEnum(EnumDefinitionImpl):
     """
@@ -2645,79 +3114,99 @@ class MediumTypeEnum(EnumDefinitionImpl):
     "Migrates to" notes below define that derivation and are parsed by the consistency guard, so they are load-bearing
     documentation rather than historical commentary.
     """
+
     DEFINED = PermissibleValue(
         text="DEFINED",
         description="Chemically defined medium with known composition. Migrates to composition_type=DEFINED.",
-        meaning=NCIT["C64372"])
+        meaning=NCIT["C64372"],
+    )
     COMPLEX = PermissibleValue(
         text="COMPLEX",
         description="""Medium with undefined components (e.g., yeast extract). Migrates to composition_type=UNDEFINED.""",
-        meaning=NCIT["C64371"])
+        meaning=NCIT["C64371"],
+    )
     SELECTIVE = PermissibleValue(
         text="SELECTIVE",
-        description="Medium that selects for specific organisms. Migrates to functional_role=[SELECTIVE].")
+        description="Medium that selects for specific organisms. Migrates to functional_role=[SELECTIVE].",
+    )
     DIFFERENTIAL = PermissibleValue(
         text="DIFFERENTIAL",
-        description="Medium that differentiates organism types. Migrates to functional_role=[DIFFERENTIAL].")
+        description="Medium that differentiates organism types. Migrates to functional_role=[DIFFERENTIAL].",
+    )
     ENRICHMENT = PermissibleValue(
         text="ENRICHMENT",
-        description="Medium that enriches for specific organisms. Migrates to functional_role=[ENRICHMENT].")
+        description="Medium that enriches for specific organisms. Migrates to functional_role=[ENRICHMENT].",
+    )
     MINIMAL = PermissibleValue(
         text="MINIMAL",
-        description="Medium with minimal nutrients required for growth. Migrates to nutritional_class=MINIMAL.")
+        description="Medium with minimal nutrients required for growth. Migrates to nutritional_class=MINIMAL.",
+    )
     BUFFER = PermissibleValue(
         text="BUFFER",
-        description="""Buffer solution (e.g. PBS) — not a growth medium per se but stored alongside media for context.""")
+        description="""Buffer solution (e.g. PBS) — not a growth medium per se but stored alongside media for context.""",
+    )
     NEGATIVE_CONTROL = PermissibleValue(
         text="NEGATIVE_CONTROL",
-        description="Negative-control \"medium\" used as an experimental baseline (e.g. distilled water).")
+        description='Negative-control "medium" used as an experimental baseline (e.g. distilled water).',
+    )
 
     _defn = EnumDefinition(
         name="MediumTypeEnum",
         description="""Single-axis classification of culture medium, MAINTAINED alongside the three orthogonal axes rather than replaced by them. It conflates composition, nutritional level and functional role into one slot, which is why MediumCompositionTypeEnum (composition_type), MediumNutritionalClassEnum (nutritional_class) and MediumFunctionalRoleEnum (functional_role) exist and are the primary axes for new curation. This enum remains the published single-valued view: populate BOTH, and keep this slot derived from composition_type. The per-value \"Migrates to\" notes below define that derivation and are parsed by the consistency guard, so they are load-bearing documentation rather than historical commentary.""",
     )
 
+
 class MediumCompositionTypeEnum(EnumDefinitionImpl):
     """
     Composition axis: how chemically defined the medium is. Single-valued and orthogonal to nutritional level
     (MediumNutritionalClassEnum) and functional role (MediumFunctionalRoleEnum).
     """
+
     DEFINED = PermissibleValue(
         text="DEFINED",
         description="""Chemically defined (synthetic) medium; every component and its exact quantity is known. Synonyms —synthetic.""",
-        meaning=NCIT["C64372"])
+        meaning=NCIT["C64372"],
+    )
     UNDEFINED = PermissibleValue(
         text="UNDEFINED",
         description="""Medium containing one or more chemically undefined components (e.g. yeast extract, peptone, casamino acids, tissue or plant extracts). Multi-axis counterpart of MediumTypeEnum value COMPLEX, which remains maintained and derived from this slot. Synonyms —complex.""",
-        meaning=NCIT["C64371"])
+        meaning=NCIT["C64371"],
+    )
     SEMI_DEFINED = PermissibleValue(
         text="SEMI_DEFINED",
-        description="""Predominantly defined medium supplemented with a small amount of one or more undefined components (e.g. a defined base plus a trace of yeast extract). Synonyms —semisynthetic.""")
+        description="""Predominantly defined medium supplemented with a small amount of one or more undefined components (e.g. a defined base plus a trace of yeast extract). Synonyms —semisynthetic.""",
+    )
 
     _defn = EnumDefinition(
         name="MediumCompositionTypeEnum",
         description="""Composition axis: how chemically defined the medium is. Single-valued and orthogonal to nutritional level (MediumNutritionalClassEnum) and functional role (MediumFunctionalRoleEnum).""",
     )
 
+
 class MediumNutritionalClassEnum(EnumDefinitionImpl):
     """
     Nutritional-level axis: how nutrient-rich the medium is. Single-valued and orthogonal to composition
     (MediumCompositionTypeEnum) and functional role (MediumFunctionalRoleEnum).
     """
+
     MINIMAL = PermissibleValue(
         text="MINIMAL",
-        description="""Provides only the minimal nutrients required for growth of the target organism — typically a defined medium with a single carbon/energy source plus essential salts (e.g. M9).""")
+        description="""Provides only the minimal nutrients required for growth of the target organism — typically a defined medium with a single carbon/energy source plus essential salts (e.g. M9).""",
+    )
     RICH = PermissibleValue(
         text="RICH",
-        description="""Provides nutrients in excess (abundant amino acids, peptides, vitamins, and carbon sources), supporting rapid growth of fastidious or general organisms (e.g. LB, TSB, BHI).""")
+        description="""Provides nutrients in excess (abundant amino acids, peptides, vitamins, and carbon sources), supporting rapid growth of fastidious or general organisms (e.g. LB, TSB, BHI).""",
+    )
     GENERAL_PURPOSE = PermissibleValue(
         text="GENERAL_PURPOSE",
-        description="""Standard nutrient level for routine cultivation — neither deliberately minimal nor deliberately enriched. Use when a medium is not clearly MINIMAL or RICH.""")
+        description="""Standard nutrient level for routine cultivation — neither deliberately minimal nor deliberately enriched. Use when a medium is not clearly MINIMAL or RICH.""",
+    )
 
     _defn = EnumDefinition(
         name="MediumNutritionalClassEnum",
         description="""Nutritional-level axis: how nutrient-rich the medium is. Single-valued and orthogonal to composition (MediumCompositionTypeEnum) and functional role (MediumFunctionalRoleEnum).""",
     )
+
 
 class MediumFunctionalRoleEnum(EnumDefinitionImpl):
     """
@@ -2725,374 +3214,322 @@ class MediumFunctionalRoleEnum(EnumDefinitionImpl):
     differential, etc. Orthogonal to composition (MediumCompositionTypeEnum) and nutritional level
     (MediumNutritionalClassEnum).
     """
+
     GENERAL_PURPOSE = PermissibleValue(
         text="GENERAL_PURPOSE",
-        description="""Non-selective, non-differential medium for routine growth of a broad range of organisms. Synonyms —non-selective, basal.""")
+        description="""Non-selective, non-differential medium for routine growth of a broad range of organisms. Synonyms —non-selective, basal.""",
+    )
     SELECTIVE = PermissibleValue(
         text="SELECTIVE",
-        description="""Suppresses or prevents growth of unwanted organisms (via antibiotics, dyes, bile salts, NaCl, pH, etc.) to favor a target group.""")
+        description="""Suppresses or prevents growth of unwanted organisms (via antibiotics, dyes, bile salts, NaCl, pH, etc.) to favor a target group.""",
+    )
     DIFFERENTIAL = PermissibleValue(
         text="DIFFERENTIAL",
-        description="""Distinguishes organism types by a visible biochemical reaction (e.g. color change from fermentation, or hemolysis) without necessarily inhibiting growth.""")
+        description="""Distinguishes organism types by a visible biochemical reaction (e.g. color change from fermentation, or hemolysis) without necessarily inhibiting growth.""",
+    )
     ENRICHMENT = PermissibleValue(
         text="ENRICHMENT",
-        description="""Promotes growth of a target organism to detectable numbers from a mixed population, typically prior to isolation.""")
+        description="""Promotes growth of a target organism to detectable numbers from a mixed population, typically prior to isolation.""",
+    )
     TRANSPORT = PermissibleValue(
         text="TRANSPORT",
-        description="Maintains organism viability without significant multiplication during transport or storage.")
+        description="Maintains organism viability without significant multiplication during transport or storage.",
+    )
     ASSAY = PermissibleValue(
         text="ASSAY",
-        description="""Standardized medium for a specific assay (e.g. antibiotic potency, vitamin or growth-factor bioassay).""")
+        description="""Standardized medium for a specific assay (e.g. antibiotic potency, vitamin or growth-factor bioassay).""",
+    )
     ENUMERATION = PermissibleValue(
         text="ENUMERATION",
-        description="Supports viable-count / colony enumeration (e.g. heterotrophic plate count media such as R2A).")
+        description="Supports viable-count / colony enumeration (e.g. heterotrophic plate count media such as R2A).",
+    )
 
     _defn = EnumDefinition(
         name="MediumFunctionalRoleEnum",
         description="""Functional-role axis: what the medium is designed to do. MULTIVALUED — a medium may be both selective and differential, etc. Orthogonal to composition (MediumCompositionTypeEnum) and nutritional level (MediumNutritionalClassEnum).""",
     )
 
+
 class PhysicalStateEnum(EnumDefinitionImpl):
     """
     Physical form of the medium
     """
-    LIQUID = PermissibleValue(
-        text="LIQUID",
-        description="Liquid broth medium")
-    SOLID_AGAR = PermissibleValue(
-        text="SOLID_AGAR",
-        description="Solidified with agar")
+
+    LIQUID = PermissibleValue(text="LIQUID", description="Liquid broth medium")
+    SOLID_AGAR = PermissibleValue(text="SOLID_AGAR", description="Solidified with agar")
     SEMISOLID = PermissibleValue(
-        text="SEMISOLID",
-        description="Reduced agar concentration for motility testing")
-    BIPHASIC = PermissibleValue(
-        text="BIPHASIC",
-        description="Both liquid and solid phases")
+        text="SEMISOLID", description="Reduced agar concentration for motility testing"
+    )
+    BIPHASIC = PermissibleValue(text="BIPHASIC", description="Both liquid and solid phases")
 
     _defn = EnumDefinition(
         name="PhysicalStateEnum",
         description="Physical form of the medium",
     )
 
+
 class ConcentrationBasisEnum(EnumDefinitionImpl):
     """
     How a proposed concentration was arrived at. Ordered from strongest to weakest, because the distinction is the
     whole point of recording a candidate rather than an asserted value.
     """
+
     READ_FROM_THIS_MEDIUM = PermissibleValue(
         text="READ_FROM_THIS_MEDIUM",
-        description="""Printed in this medium's own source. This is an asserted value and belongs in `concentration`, not here; the term exists so a promotion can record what it was promoted on.""")
+        description="""Printed in this medium's own source. This is an asserted value and belongs in `concentration`, not here; the term exists so a promotion can record what it was promoted on.""",
+    )
     READ_FROM_STOCK_DEFINITION = PermissibleValue(
         text="READ_FROM_STOCK_DEFINITION",
-        description="""Read from the cited definition of the stock solution itself (e.g. DSMZ medium 84 defines its trace element solution and the volume it is added at), for a medium that references that stock by name.""")
+        description="""Read from the cited definition of the stock solution itself (e.g. DSMZ medium 84 defines its trace element solution and the volume it is added at), for a medium that references that stock by name.""",
+    )
     CROSS_MEDIUM_INFERENCE = PermissibleValue(
         text="CROSS_MEDIUM_INFERENCE",
-        description="""Taken from OTHER media that use the same named stock, not from this medium's own source. Defensible when the stock's volume is consistent across many media, and wrong whenever a medium departs from the norm — which does happen (SL-10 is 1 ml/L in ten media and 0.05 ml/L in J537).""")
+        description="""Taken from OTHER media that use the same named stock, not from this medium's own source. Defensible when the stock's volume is consistent across many media, and wrong whenever a medium departs from the norm — which does happen (SL-10 is 1 ml/L in ten media and 0.05 ml/L in J537).""",
+    )
     TYPICAL_VALUE = PermissibleValue(
         text="TYPICAL_VALUE",
-        description="""A conventional value for this class of stock, with no per-medium evidence at all. The weakest basis; recorded only to be checked.""")
+        description="""A conventional value for this class of stock, with no per-medium evidence at all. The weakest basis; recorded only to be checked.""",
+    )
 
     _defn = EnumDefinition(
         name="ConcentrationBasisEnum",
         description="""How a proposed concentration was arrived at. Ordered from strongest to weakest, because the distinction is the whole point of recording a candidate rather than an asserted value.""",
     )
 
+
 class ConcentrationUnitEnum(EnumDefinitionImpl):
     """
     Units for concentration
     """
-    G_PER_L = PermissibleValue(
-        text="G_PER_L",
-        description="grams per liter",
-        meaning=UO["0000175"])
-    MG_PER_L = PermissibleValue(
-        text="MG_PER_L",
-        description="milligrams per liter")
-    MICROG_PER_L = PermissibleValue(
-        text="MICROG_PER_L",
-        description="micrograms per liter")
-    MOLAR = PermissibleValue(
-        text="MOLAR",
-        description="moles per liter",
-        meaning=UO["0000062"])
-    MILLIMOLAR = PermissibleValue(
-        text="MILLIMOLAR",
-        description="millimoles per liter")
-    MICROMOLAR = PermissibleValue(
-        text="MICROMOLAR",
-        description="micromoles per liter")
-    PERCENT_W_V = PermissibleValue(
-        text="PERCENT_W_V",
-        description="percent weight per volume")
-    PERCENT_W_W = PermissibleValue(
-        text="PERCENT_W_W",
-        description="percent weight per weight")
-    PERCENT_V_V = PermissibleValue(
-        text="PERCENT_V_V",
-        description="percent volume per volume")
+
+    G_PER_L = PermissibleValue(text="G_PER_L", description="grams per liter", meaning=UO["0000175"])
+    MG_PER_L = PermissibleValue(text="MG_PER_L", description="milligrams per liter")
+    MICROG_PER_L = PermissibleValue(text="MICROG_PER_L", description="micrograms per liter")
+    MOLAR = PermissibleValue(text="MOLAR", description="moles per liter", meaning=UO["0000062"])
+    MILLIMOLAR = PermissibleValue(text="MILLIMOLAR", description="millimoles per liter")
+    MICROMOLAR = PermissibleValue(text="MICROMOLAR", description="micromoles per liter")
+    PERCENT_W_V = PermissibleValue(text="PERCENT_W_V", description="percent weight per volume")
+    PERCENT_W_W = PermissibleValue(text="PERCENT_W_W", description="percent weight per weight")
+    PERCENT_V_V = PermissibleValue(text="PERCENT_V_V", description="percent volume per volume")
     ML_PER_L = PermissibleValue(
-        text="ML_PER_L",
-        description="milliliters per liter (for solution/component additions)")
-    MG_PER_ML = PermissibleValue(
-        text="MG_PER_ML",
-        description="milligrams per milliliter")
+        text="ML_PER_L", description="milliliters per liter (for solution/component additions)"
+    )
+    MG_PER_ML = PermissibleValue(text="MG_PER_ML", description="milligrams per milliliter")
     FOLD_DILUTION = PermissibleValue(
         text="FOLD_DILUTION",
-        description="dilution factor expressed as 1:N (e.g. \"10-fold dilution\")")
+        description='dilution factor expressed as 1:N (e.g. "10-fold dilution")',
+    )
     L = PermissibleValue(
         text="L",
-        description="liters — used for volume-only entries like \"Make up to 1 L\" final-volume markers.")
+        description='liters — used for volume-only entries like "Make up to 1 L" final-volume markers.',
+    )
     VARIABLE = PermissibleValue(
-        text="VARIABLE",
-        description="variable or unspecified concentration")
+        text="VARIABLE", description="variable or unspecified concentration"
+    )
 
     _defn = EnumDefinition(
         name="ConcentrationUnitEnum",
         description="Units for concentration",
     )
 
+
 class TemperatureUnitEnum(EnumDefinitionImpl):
     """
     Units for temperature
     """
-    CELSIUS = PermissibleValue(
-        text="CELSIUS",
-        description="Degrees Celsius",
-        meaning=UO["0000027"])
-    FAHRENHEIT = PermissibleValue(
-        text="FAHRENHEIT",
-        description="Degrees Fahrenheit")
-    KELVIN = PermissibleValue(
-        text="KELVIN",
-        description="Kelvin",
-        meaning=UO["0000012"])
+
+    CELSIUS = PermissibleValue(text="CELSIUS", description="Degrees Celsius", meaning=UO["0000027"])
+    FAHRENHEIT = PermissibleValue(text="FAHRENHEIT", description="Degrees Fahrenheit")
+    KELVIN = PermissibleValue(text="KELVIN", description="Kelvin", meaning=UO["0000012"])
 
     _defn = EnumDefinition(
         name="TemperatureUnitEnum",
         description="Units for temperature",
     )
 
+
 class AtmosphereEnum(EnumDefinitionImpl):
     """
     Atmospheric conditions for incubation
     """
-    AEROBIC = PermissibleValue(
-        text="AEROBIC",
-        description="Oxygen-rich atmosphere")
-    ANAEROBIC = PermissibleValue(
-        text="ANAEROBIC",
-        description="Oxygen-free atmosphere")
+
+    AEROBIC = PermissibleValue(text="AEROBIC", description="Oxygen-rich atmosphere")
+    ANAEROBIC = PermissibleValue(text="ANAEROBIC", description="Oxygen-free atmosphere")
     MICROAEROPHILIC = PermissibleValue(
-        text="MICROAEROPHILIC",
-        description="Low oxygen atmosphere (typically 2-10% O2)")
+        text="MICROAEROPHILIC", description="Low oxygen atmosphere (typically 2-10% O2)"
+    )
 
     _defn = EnumDefinition(
         name="AtmosphereEnum",
         description="Atmospheric conditions for incubation",
     )
 
+
 class PreparationActionEnum(EnumDefinitionImpl):
     """
     Controlled vocabulary for preparation steps
     """
-    DISSOLVE = PermissibleValue(
-        text="DISSOLVE",
-        description="Dissolve ingredients in solvent")
-    MIX = PermissibleValue(
-        text="MIX",
-        description="Mix or stir components")
-    HEAT = PermissibleValue(
-        text="HEAT",
-        description="Apply heat")
-    COOL = PermissibleValue(
-        text="COOL",
-        description="Cool to specified temperature")
-    AUTOCLAVE = PermissibleValue(
-        text="AUTOCLAVE",
-        description="Steam sterilization under pressure")
-    FILTER = PermissibleValue(
-        text="FILTER",
-        description="Remove solids or particles by filtration")
+
+    DISSOLVE = PermissibleValue(text="DISSOLVE", description="Dissolve ingredients in solvent")
+    MIX = PermissibleValue(text="MIX", description="Mix or stir components")
+    HEAT = PermissibleValue(text="HEAT", description="Apply heat")
+    COOL = PermissibleValue(text="COOL", description="Cool to specified temperature")
+    AUTOCLAVE = PermissibleValue(text="AUTOCLAVE", description="Steam sterilization under pressure")
+    FILTER = PermissibleValue(text="FILTER", description="Remove solids or particles by filtration")
     FILTER_STERILIZE = PermissibleValue(
-        text="FILTER_STERILIZE",
-        description="Filter through 0.22 μm membrane")
-    ADJUST_PH = PermissibleValue(
-        text="ADJUST_PH",
-        description="Adjust pH with acid or base")
-    ADD_AGAR = PermissibleValue(
-        text="ADD_AGAR",
-        description="Add agar for solidification")
-    POUR_PLATES = PermissibleValue(
-        text="POUR_PLATES",
-        description="Dispense into petri dishes")
-    ALIQUOT = PermissibleValue(
-        text="ALIQUOT",
-        description="Divide into smaller portions")
-    STORE = PermissibleValue(
-        text="STORE",
-        description="Store under specified conditions")
+        text="FILTER_STERILIZE", description="Filter through 0.22 μm membrane"
+    )
+    ADJUST_PH = PermissibleValue(text="ADJUST_PH", description="Adjust pH with acid or base")
+    ADD_AGAR = PermissibleValue(text="ADD_AGAR", description="Add agar for solidification")
+    POUR_PLATES = PermissibleValue(text="POUR_PLATES", description="Dispense into petri dishes")
+    ALIQUOT = PermissibleValue(text="ALIQUOT", description="Divide into smaller portions")
+    STORE = PermissibleValue(text="STORE", description="Store under specified conditions")
 
     _defn = EnumDefinition(
         name="PreparationActionEnum",
         description="Controlled vocabulary for preparation steps",
     )
 
+
 class SterilizationMethodEnum(EnumDefinitionImpl):
     """
     Sterilization techniques
     """
+
     AUTOCLAVE = PermissibleValue(
         text="AUTOCLAVE",
-        description="Steam sterilization under pressure (121°C, 15 psi, 15-20 min)")
-    FILTER = PermissibleValue(
-        text="FILTER",
-        description="Filtration through 0.22 μm filter")
-    DRY_HEAT = PermissibleValue(
-        text="DRY_HEAT",
-        description="Dry heat sterilization (160-180°C)")
+        description="Steam sterilization under pressure (121°C, 15 psi, 15-20 min)",
+    )
+    FILTER = PermissibleValue(text="FILTER", description="Filtration through 0.22 μm filter")
+    DRY_HEAT = PermissibleValue(text="DRY_HEAT", description="Dry heat sterilization (160-180°C)")
     TYNDALLIZATION = PermissibleValue(
-        text="TYNDALLIZATION",
-        description="Intermittent sterilization for heat-sensitive media")
-    NONE = PermissibleValue(
-        text="NONE",
-        description="No sterilization (non-sterile media)")
+        text="TYNDALLIZATION", description="Intermittent sterilization for heat-sensitive media"
+    )
+    NONE = PermissibleValue(text="NONE", description="No sterilization (non-sterile media)")
 
     _defn = EnumDefinition(
         name="SterilizationMethodEnum",
         description="Sterilization techniques",
     )
 
+
 class LightConditionEnum(EnumDefinitionImpl):
     """
     Light exposure requirements
     """
-    DARK = PermissibleValue(
-        text="DARK",
-        description="Store in complete darkness")
+
+    DARK = PermissibleValue(text="DARK", description="Store in complete darkness")
     LIGHT_PROTECTED = PermissibleValue(
-        text="LIGHT_PROTECTED",
-        description="Protect from light (amber bottle or foil wrap)")
-    AMBIENT = PermissibleValue(
-        text="AMBIENT",
-        description="Normal laboratory lighting")
+        text="LIGHT_PROTECTED", description="Protect from light (amber bottle or foil wrap)"
+    )
+    AMBIENT = PermissibleValue(text="AMBIENT", description="Normal laboratory lighting")
 
     _defn = EnumDefinition(
         name="LightConditionEnum",
         description="Light exposure requirements",
     )
 
+
 class ModifierEnum(EnumDefinitionImpl):
     """
     Modification type for variants
     """
+
     INCREASED = PermissibleValue(
-        text="INCREASED",
-        description="Elevated concentration relative to base recipe")
+        text="INCREASED", description="Elevated concentration relative to base recipe"
+    )
     DECREASED = PermissibleValue(
-        text="DECREASED",
-        description="Reduced concentration relative to base recipe")
-    ABSENT = PermissibleValue(
-        text="ABSENT",
-        description="Ingredient omitted in this variant")
+        text="DECREASED", description="Reduced concentration relative to base recipe"
+    )
+    ABSENT = PermissibleValue(text="ABSENT", description="Ingredient omitted in this variant")
 
     _defn = EnumDefinition(
         name="ModifierEnum",
         description="Modification type for variants",
     )
 
+
 class EvidenceItemSupportEnum(EnumDefinitionImpl):
     """
     Level of evidence support
     """
-    SUPPORT = PermissibleValue(
-        text="SUPPORT",
-        description="Evidence supports the claim")
-    REFUTE = PermissibleValue(
-        text="REFUTE",
-        description="Evidence refutes the claim")
-    PARTIAL = PermissibleValue(
-        text="PARTIAL",
-        description="Evidence partially supports the claim")
-    NO_EVIDENCE = PermissibleValue(
-        text="NO_EVIDENCE",
-        description="No evidence found")
-    WRONG_STATEMENT = PermissibleValue(
-        text="WRONG_STATEMENT",
-        description="Statement is incorrect")
+
+    SUPPORT = PermissibleValue(text="SUPPORT", description="Evidence supports the claim")
+    REFUTE = PermissibleValue(text="REFUTE", description="Evidence refutes the claim")
+    PARTIAL = PermissibleValue(text="PARTIAL", description="Evidence partially supports the claim")
+    NO_EVIDENCE = PermissibleValue(text="NO_EVIDENCE", description="No evidence found")
+    WRONG_STATEMENT = PermissibleValue(text="WRONG_STATEMENT", description="Statement is incorrect")
 
     _defn = EnumDefinition(
         name="EvidenceItemSupportEnum",
         description="Level of evidence support",
     )
 
+
 class CategoryEnum(EnumDefinitionImpl):
     """
     Organizational category for media recipes
     """
-    bacterial = PermissibleValue(
-        text="bacterial",
-        description="Media for bacterial cultivation")
-    fungal = PermissibleValue(
-        text="fungal",
-        description="Media for fungal cultivation")
-    archaea = PermissibleValue(
-        text="archaea",
-        description="Media for archaeal cultivation")
+
+    bacterial = PermissibleValue(text="bacterial", description="Media for bacterial cultivation")
+    fungal = PermissibleValue(text="fungal", description="Media for fungal cultivation")
+    archaea = PermissibleValue(text="archaea", description="Media for archaeal cultivation")
     specialized = PermissibleValue(
-        text="specialized",
-        description="Specialized or multi-domain media")
-    algae = PermissibleValue(
-        text="algae",
-        description="Media for algal cultivation")
+        text="specialized", description="Specialized or multi-domain media"
+    )
+    algae = PermissibleValue(text="algae", description="Media for algal cultivation")
     imported = PermissibleValue(
-        text="imported",
-        description="Imported from external sources (to be recategorized)")
+        text="imported", description="Imported from external sources (to be recategorized)"
+    )
 
     _defn = EnumDefinition(
         name="CategoryEnum",
         description="Organizational category for media recipes",
     )
 
+
 class OrganismCultureTypeEnum(EnumDefinitionImpl):
     """
     Whether the medium targets a pure isolate or a mixed microbial community
     """
+
     isolate = PermissibleValue(
-        text="isolate",
-        description="Pure culture of one or more specific strains")
+        text="isolate", description="Pure culture of one or more specific strains"
+    )
     community = PermissibleValue(
-        text="community",
-        description="Mixed/consortium culture of multiple organisms")
+        text="community", description="Mixed/consortium culture of multiple organisms"
+    )
 
     _defn = EnumDefinition(
         name="OrganismCultureTypeEnum",
         description="Whether the medium targets a pure isolate or a mixed microbial community",
     )
 
+
 class CofactorCategoryEnum(EnumDefinitionImpl):
     """
     High-level classification of cofactor types
     """
+
     VITAMINS = PermissibleValue(
-        text="VITAMINS",
-        description="Vitamins and vitamin-derived cofactors")
+        text="VITAMINS", description="Vitamins and vitamin-derived cofactors"
+    )
     METALS = PermissibleValue(
-        text="METALS",
-        description="Metal ions and metal-containing cofactors")
-    NUCLEOTIDES = PermissibleValue(
-        text="NUCLEOTIDES",
-        description="Nucleotide cofactors")
+        text="METALS", description="Metal ions and metal-containing cofactors"
+    )
+    NUCLEOTIDES = PermissibleValue(text="NUCLEOTIDES", description="Nucleotide cofactors")
     ENERGY_TRANSFER = PermissibleValue(
-        text="ENERGY_TRANSFER",
-        description="Energy transfer and group transfer cofactors")
+        text="ENERGY_TRANSFER", description="Energy transfer and group transfer cofactors"
+    )
     OTHER_SPECIALIZED = PermissibleValue(
-        text="OTHER_SPECIALIZED",
-        description="Specialized cofactors (PQQ, F420, etc.)")
+        text="OTHER_SPECIALIZED", description="Specialized cofactors (PQQ, F420, etc.)"
+    )
 
     _defn = EnumDefinition(
         name="CofactorCategoryEnum",
         description="High-level classification of cofactor types",
     )
+
 
 class CommunityOrganismRoleEnum(EnumDefinitionImpl):
     """
@@ -3100,262 +3537,254 @@ class CommunityOrganismRoleEnum(EnumDefinitionImpl):
     with the MIM #120 rename and to disambiguate from a forthcoming `CellularMetabolicRoleEnum` on ingredient records
     — these values describe organisms, not ingredients).
     """
+
     PRIMARY_DEGRADER = PermissibleValue(
         text="PRIMARY_DEGRADER",
-        description="Primary degrader with direct substrate degradation capability (40-60% abundance)")
+        description="Primary degrader with direct substrate degradation capability (40-60% abundance)",
+    )
     REDUCTIVE_DEGRADER = PermissibleValue(
-        text="REDUCTIVE_DEGRADER",
-        description="Specialized degrader using reductive pathways")
+        text="REDUCTIVE_DEGRADER", description="Specialized degrader using reductive pathways"
+    )
     OXIDATIVE_DEGRADER = PermissibleValue(
-        text="OXIDATIVE_DEGRADER",
-        description="Specialized degrader using oxidative pathways")
+        text="OXIDATIVE_DEGRADER", description="Specialized degrader using oxidative pathways"
+    )
     BIOTRANSFORMER = PermissibleValue(
         text="BIOTRANSFORMER",
-        description="Converts substrates to intermediates without complete degradation")
+        description="Converts substrates to intermediates without complete degradation",
+    )
     SYNERGIST = PermissibleValue(
         text="SYNERGIST",
-        description="Provides complementary metabolic functions (15-30% abundance)")
+        description="Provides complementary metabolic functions (15-30% abundance)",
+    )
     BRIDGE_ORGANISM = PermissibleValue(
         text="BRIDGE_ORGANISM",
-        description="Biosynthesizes and provides essential cofactors to community")
+        description="Biosynthesizes and provides essential cofactors to community",
+    )
     ELECTRON_SHUTTLE = PermissibleValue(
         text="ELECTRON_SHUTTLE",
-        description="Facilitates electron transfer between community members")
+        description="Facilitates electron transfer between community members",
+    )
     DETOXIFIER = PermissibleValue(
-        text="DETOXIFIER",
-        description="Handles and detoxifies metabolic intermediates")
-    COMMENSAL = PermissibleValue(
-        text="COMMENSAL",
-        description="General commensal organism")
-    COMPETITOR = PermissibleValue(
-        text="COMPETITOR",
-        description="Competitive organism")
+        text="DETOXIFIER", description="Handles and detoxifies metabolic intermediates"
+    )
+    COMMENSAL = PermissibleValue(text="COMMENSAL", description="General commensal organism")
+    COMPETITOR = PermissibleValue(text="COMPETITOR", description="Competitive organism")
 
     _defn = EnumDefinition(
         name="CommunityOrganismRoleEnum",
         description="""Role an organism plays in a microbial community (formerly `CellularRoleEnum`; renamed 2026-07-19 for consistency with the MIM #120 rename and to disambiguate from a forthcoming `CellularMetabolicRoleEnum` on ingredient records — these values describe organisms, not ingredients).""",
     )
 
+
 class TransporterTypeEnum(EnumDefinitionImpl):
     """
     Classification of membrane transporter systems
     """
-    ABC = PermissibleValue(
-        text="ABC",
-        description="ATP-binding cassette transporter")
-    MFS = PermissibleValue(
-        text="MFS",
-        description="Major facilitator superfamily transporter")
-    PTS = PermissibleValue(
-        text="PTS",
-        description="Phosphotransferase system")
-    TONB = PermissibleValue(
-        text="TONB",
-        description="TonB-dependent receptor")
-    SYMPORTER = PermissibleValue(
-        text="SYMPORTER",
-        description="Symporter or co-transporter")
-    ANTIPORTER = PermissibleValue(
-        text="ANTIPORTER",
-        description="Antiporter or exchanger")
-    UNIPORTER = PermissibleValue(
-        text="UNIPORTER",
-        description="Uniporter or channel")
-    PORIN = PermissibleValue(
-        text="PORIN",
-        description="Porin or outer membrane protein")
+
+    ABC = PermissibleValue(text="ABC", description="ATP-binding cassette transporter")
+    MFS = PermissibleValue(text="MFS", description="Major facilitator superfamily transporter")
+    PTS = PermissibleValue(text="PTS", description="Phosphotransferase system")
+    TONB = PermissibleValue(text="TONB", description="TonB-dependent receptor")
+    SYMPORTER = PermissibleValue(text="SYMPORTER", description="Symporter or co-transporter")
+    ANTIPORTER = PermissibleValue(text="ANTIPORTER", description="Antiporter or exchanger")
+    UNIPORTER = PermissibleValue(text="UNIPORTER", description="Uniporter or channel")
+    PORIN = PermissibleValue(text="PORIN", description="Porin or outer membrane protein")
     SIDEROPHORE_RECEPTOR = PermissibleValue(
-        text="SIDEROPHORE_RECEPTOR",
-        description="Siderophore receptor for iron uptake")
+        text="SIDEROPHORE_RECEPTOR", description="Siderophore receptor for iron uptake"
+    )
     DEHALOGENASE = PermissibleValue(
-        text="DEHALOGENASE",
-        description="Dehalogenase enzyme for halogenated compounds")
+        text="DEHALOGENASE", description="Dehalogenase enzyme for halogenated compounds"
+    )
     FLUORIDE_EXPORTER = PermissibleValue(
-        text="FLUORIDE_EXPORTER",
-        description="Fluoride-specific exporter")
+        text="FLUORIDE_EXPORTER", description="Fluoride-specific exporter"
+    )
 
     _defn = EnumDefinition(
         name="TransporterTypeEnum",
         description="Classification of membrane transporter systems",
     )
 
+
 class VariantTypeEnum(EnumDefinitionImpl):
     """
     Type of chemical variant relationship to parent
     """
-    HYDRATE = PermissibleValue(
-        text="HYDRATE",
-        description="Hydrated form of parent chemical")
+
+    HYDRATE = PermissibleValue(text="HYDRATE", description="Hydrated form of parent chemical")
     SALT_FORM = PermissibleValue(
-        text="SALT_FORM",
-        description="Different salt form of parent chemical")
-    ANHYDROUS = PermissibleValue(
-        text="ANHYDROUS",
-        description="Anhydrous form of parent chemical")
+        text="SALT_FORM", description="Different salt form of parent chemical"
+    )
+    ANHYDROUS = PermissibleValue(text="ANHYDROUS", description="Anhydrous form of parent chemical")
     NAMED_HYDRATE = PermissibleValue(
-        text="NAMED_HYDRATE",
-        description="Named hydrate (monohydrate, heptahydrate, etc.)")
+        text="NAMED_HYDRATE", description="Named hydrate (monohydrate, heptahydrate, etc.)"
+    )
     CHEMICAL_VARIANT = PermissibleValue(
-        text="CHEMICAL_VARIANT",
-        description="Other chemical variant of parent")
+        text="CHEMICAL_VARIANT", description="Other chemical variant of parent"
+    )
 
     _defn = EnumDefinition(
         name="VariantTypeEnum",
         description="Type of chemical variant relationship to parent",
     )
 
+
 class MediaVariantRelationshipEnum(EnumDefinitionImpl):
     """
     Type of parent-child relationship between media recipes
     """
+
     CONCENTRATION_VARIANT = PermissibleValue(
         text="CONCENTRATION_VARIANT",
-        description="Same recognizable base medium with one or more concentration changes")
+        description="Same recognizable base medium with one or more concentration changes",
+    )
     PHYSICAL_STATE_VARIANT = PermissibleValue(
         text="PHYSICAL_STATE_VARIANT",
-        description="Same recognizable base medium with broth, agar, semisolid, or biphasic state change")
+        description="Same recognizable base medium with broth, agar, semisolid, or biphasic state change",
+    )
     SUPPLEMENTED_VARIANT = PermissibleValue(
         text="SUPPLEMENTED_VARIANT",
-        description="""Parent medium plus added supplement, antibiotic, blood, serum, carbon source, or other component""")
+        description="""Parent medium plus added supplement, antibiotic, blood, serum, carbon source, or other component""",
+    )
     OMITTED_COMPONENT_VARIANT = PermissibleValue(
         text="OMITTED_COMPONENT_VARIANT",
-        description="Parent medium with one or more components omitted")
+        description="Parent medium with one or more components omitted",
+    )
     SUBSTITUTED_COMPONENT_VARIANT = PermissibleValue(
         text="SUBSTITUTED_COMPONENT_VARIANT",
-        description="Parent medium with one or more components substituted")
+        description="Parent medium with one or more components substituted",
+    )
     PH_VARIANT = PermissibleValue(
-        text="PH_VARIANT",
-        description="Parent medium adjusted to a different pH or pH range")
+        text="PH_VARIANT", description="Parent medium adjusted to a different pH or pH range"
+    )
     SALINITY_VARIANT = PermissibleValue(
         text="SALINITY_VARIANT",
-        description="Parent medium adjusted to a different salt or salinity level")
+        description="Parent medium adjusted to a different salt or salinity level",
+    )
     STRAIN_SPECIFIC_VARIANT = PermissibleValue(
         text="STRAIN_SPECIFIC_VARIANT",
-        description="Parent medium modified for a specific organism or strain")
+        description="Parent medium modified for a specific organism or strain",
+    )
     SOURCE_DUPLICATE = PermissibleValue(
         text="SOURCE_DUPLICATE",
-        description="Separate source record for the same formulation as the parent")
+        description="Separate source record for the same formulation as the parent",
+    )
     DERIVED_FROM = PermissibleValue(
         text="DERIVED_FROM",
-        description="Broad parent-child relationship when a more specific relationship is not yet curated")
+        description="Broad parent-child relationship when a more specific relationship is not yet curated",
+    )
     UNCERTAIN = PermissibleValue(
         text="UNCERTAIN",
-        description="Candidate relationship that requires additional source or formulation review")
+        description="Candidate relationship that requires additional source or formulation review",
+    )
 
     _defn = EnumDefinition(
         name="MediaVariantRelationshipEnum",
         description="Type of parent-child relationship between media recipes",
     )
 
+
 class MergeReasonEnum(EnumDefinitionImpl):
     """
     Reason why recipes were merged together
     """
+
     EXPLICIT_MERGE_RULE = PermissibleValue(
         text="EXPLICIT_MERGE_RULE",
-        description="Merged due to explicit rule from MediaIngredientMech")
+        description="Merged due to explicit rule from MediaIngredientMech",
+    )
     IDENTICAL_FINGERPRINT = PermissibleValue(
-        text="IDENTICAL_FINGERPRINT",
-        description="Merged due to identical ingredient fingerprints")
+        text="IDENTICAL_FINGERPRINT", description="Merged due to identical ingredient fingerprints"
+    )
     SAME_PARENT_INGREDIENTS = PermissibleValue(
         text="SAME_PARENT_INGREDIENTS",
-        description="Merged due to same parent ingredients (aggressive mode)")
+        description="Merged due to same parent ingredients (aggressive mode)",
+    )
     HYDRATION_VARIANT_ONLY = PermissibleValue(
         text="HYDRATION_VARIANT_ONLY",
-        description="Merged due to only hydration differences (variant-aware mode)")
+        description="Merged due to only hydration differences (variant-aware mode)",
+    )
     NO_MATCH = PermissibleValue(
-        text="NO_MATCH",
-        description="Not merged - no matching criteria met")
+        text="NO_MATCH", description="Not merged - no matching criteria met"
+    )
 
     _defn = EnumDefinition(
         name="MergeReasonEnum",
         description="Reason why recipes were merged together",
     )
 
+
 class SourceDatabaseEnum(EnumDefinitionImpl):
     """
     External databases from which media recipes are imported
     """
+
     MEDIADIVE = PermissibleValue(
-        text="MEDIADIVE",
-        description="MediaDive (DSMZ) media database",
-        meaning=None)
+        text="MEDIADIVE", description="MediaDive (DSMZ) media database", meaning=None
+    )
     TOGO = PermissibleValue(
-        text="TOGO",
-        description="TOGO Medium database (Japan)",
-        meaning=URIRef(str(TOGO)))
-    KOMODO = PermissibleValue(
-        text="KOMODO",
-        description="KOMODO media database (Korea)")
-    MEDIADB = PermissibleValue(
-        text="MEDIADB",
-        description="MediaDB database")
+        text="TOGO", description="TOGO Medium database (Japan)", meaning=URIRef(str(TOGO))
+    )
+    KOMODO = PermissibleValue(text="KOMODO", description="KOMODO media database (Korea)")
+    MEDIADB = PermissibleValue(text="MEDIADB", description="MediaDB database")
     UTEX = PermissibleValue(
-        text="UTEX",
-        description="UTEX Culture Collection of Algae",
-        meaning=None)
+        text="UTEX", description="UTEX Culture Collection of Algae", meaning=None
+    )
     CCAP = PermissibleValue(
-        text="CCAP",
-        description="Culture Collection of Algae and Protozoa",
-        meaning=None)
+        text="CCAP", description="Culture Collection of Algae and Protozoa", meaning=None
+    )
     SAG = PermissibleValue(
-        text="SAG",
-        description="Culture Collection of Algae at Göttingen University",
-        meaning=None)
-    CULTUREBOTHT = PermissibleValue(
-        text="CULTUREBOTHT",
-        description="CultureBotHT repository")
+        text="SAG", description="Culture Collection of Algae at Göttingen University", meaning=None
+    )
+    CULTUREBOTHT = PermissibleValue(text="CULTUREBOTHT", description="CultureBotHT repository")
     COMMUNITYMECH = PermissibleValue(
-        text="COMMUNITYMECH",
-        description="CommunityMech (X-Mech) integration")
+        text="COMMUNITYMECH", description="CommunityMech (X-Mech) integration"
+    )
     BACDIVE = PermissibleValue(
-        text="BACDIVE",
-        description="BacDive bacterial database",
-        meaning=None)
+        text="BACDIVE", description="BacDive bacterial database", meaning=None
+    )
     NBRC = PermissibleValue(
-        text="NBRC",
-        description="NITE Biological Resource Center",
-        meaning=None)
+        text="NBRC", description="NITE Biological Resource Center", meaning=None
+    )
     ATCC = PermissibleValue(
-        text="ATCC",
-        description="American Type Culture Collection",
-        meaning=None)
+        text="ATCC", description="American Type Culture Collection", meaning=None
+    )
     MANUAL = PermissibleValue(
-        text="MANUAL",
-        description="Manually curated (not imported from external database)")
+        text="MANUAL", description="Manually curated (not imported from external database)"
+    )
 
     _defn = EnumDefinition(
         name="SourceDatabaseEnum",
         description="External databases from which media recipes are imported",
     )
 
+
 class UpdateActionEnum(EnumDefinitionImpl):
     """
     Type of update action applied to an imported record
     """
+
     INITIAL_IMPORT = PermissibleValue(
-        text="INITIAL_IMPORT",
-        description="First import from source database")
+        text="INITIAL_IMPORT", description="First import from source database"
+    )
     ENRICHED = PermissibleValue(
-        text="ENRICHED",
-        description="Additional metadata or enrichment added")
+        text="ENRICHED", description="Additional metadata or enrichment added"
+    )
     CORRECTED = PermissibleValue(
-        text="CORRECTED",
-        description="Errors or inconsistencies corrected")
-    MERGED = PermissibleValue(
-        text="MERGED",
-        description="Merged with duplicate or related records")
+        text="CORRECTED", description="Errors or inconsistencies corrected"
+    )
+    MERGED = PermissibleValue(text="MERGED", description="Merged with duplicate or related records")
     REFRESHED = PermissibleValue(
-        text="REFRESHED",
-        description="Updated from source database refresh")
+        text="REFRESHED", description="Updated from source database refresh"
+    )
     NORMALIZED = PermissibleValue(
-        text="NORMALIZED",
-        description="Format or structure normalized to schema")
+        text="NORMALIZED", description="Format or structure normalized to schema"
+    )
 
     _defn = EnumDefinition(
         name="UpdateActionEnum",
         description="Type of update action applied to an imported record",
     )
+
 
 class PerturbationTypeEnum(EnumDefinitionImpl):
     """
@@ -3363,179 +3792,186 @@ class PerturbationTypeEnum(EnumDefinitionImpl):
     conditional growth claims so downstream consumers can distinguish them from max-attainment / standard-condition
     observations.
     """
+
     GENETIC_MODIFICATION = PermissibleValue(
         text="GENETIC_MODIFICATION",
         description="Knockout, deletion, insertion, or point mutation acting at observation time.",
-        meaning=NCIT["C17026"])
+        meaning=NCIT["C17026"],
+    )
     CHEMICAL_STRESS = PermissibleValue(
         text="CHEMICAL_STRESS",
         description="Heavy metals, antibiotics, oxidative agents, salts at non-default levels.",
-        meaning=NCIT["C25574"])
+        meaning=NCIT["C25574"],
+    )
     TEMPERATURE_STRESS = PermissibleValue(
         text="TEMPERATURE_STRESS",
-        description="Temperature outside the organism's optimum range (heat or cold shock).")
+        description="Temperature outside the organism's optimum range (heat or cold shock).",
+    )
     OXIDATIVE_STRESS = PermissibleValue(
-        text="OXIDATIVE_STRESS",
-        description="Reactive oxygen species, peroxide, paraquat, etc.")
+        text="OXIDATIVE_STRESS", description="Reactive oxygen species, peroxide, paraquat, etc."
+    )
     NUTRIENT_LIMITATION = PermissibleValue(
         text="NUTRIENT_LIMITATION",
-        description="Sole-source / depletion / unusual substrate as growth driver.")
+        description="Sole-source / depletion / unusual substrate as growth driver.",
+    )
     ADAPTATION = PermissibleValue(
         text="ADAPTATION",
-        description="Serial passage / experimental evolution to grow on a substrate or condition.")
+        description="Serial passage / experimental evolution to grow on a substrate or condition.",
+    )
     GROWTH_PHASE = PermissibleValue(
         text="GROWTH_PHASE",
-        description="Slow-growth, lag, or stationary-phase observations distinct from exponential max.")
+        description="Slow-growth, lag, or stationary-phase observations distinct from exponential max.",
+    )
     CULTURE_MODE = PermissibleValue(
-        text="CULTURE_MODE",
-        description="Chemostat, fed-batch, or biofilm vs. standard batch.")
-    PH_STRESS = PermissibleValue(
-        text="PH_STRESS",
-        description="pH outside the organism's optimum.")
+        text="CULTURE_MODE", description="Chemostat, fed-batch, or biofilm vs. standard batch."
+    )
+    PH_STRESS = PermissibleValue(text="PH_STRESS", description="pH outside the organism's optimum.")
     OTHER = PermissibleValue(
-        text="OTHER",
-        description="Use sparingly; prefer a more specific value above.")
+        text="OTHER", description="Use sparingly; prefer a more specific value above."
+    )
 
     _defn = EnumDefinition(
         name="PerturbationTypeEnum",
         description="""Class of perturbation applied during a growth observation. Used by PerturbationContext.perturbation_type to flag conditional growth claims so downstream consumers can distinguish them from max-attainment / standard-condition observations.""",
     )
 
+
 class StrainModificationTypeEnum(EnumDefinitionImpl):
     """
     Class of genetic or selection-derived modification carried by a strain relative to the wild-type or type strain.
     """
+
     KNOCKOUT = PermissibleValue(
         text="KNOCKOUT",
         description="Targeted gene disruption (most commonly via insertion).",
-        meaning=NCIT["C120956"])
-    DELETION = PermissibleValue(
-        text="DELETION",
-        description="Targeted gene or operon deletion.")
-    INSERTION = PermissibleValue(
-        text="INSERTION",
-        description="Targeted gene or marker insertion.")
+        meaning=NCIT["C120956"],
+    )
+    DELETION = PermissibleValue(text="DELETION", description="Targeted gene or operon deletion.")
+    INSERTION = PermissibleValue(text="INSERTION", description="Targeted gene or marker insertion.")
     POINT_MUTATION = PermissibleValue(
-        text="POINT_MUTATION",
-        description="Single-nucleotide or small-residue substitution.")
+        text="POINT_MUTATION", description="Single-nucleotide or small-residue substitution."
+    )
     OVEREXPRESSION = PermissibleValue(
         text="OVEREXPRESSION",
-        description="Gene placed under stronger promoter / on multi-copy vector.")
+        description="Gene placed under stronger promoter / on multi-copy vector.",
+    )
     COMPLEMENTATION = PermissibleValue(
-        text="COMPLEMENTATION",
-        description="Wild-type allele restored on knockout background.")
+        text="COMPLEMENTATION", description="Wild-type allele restored on knockout background."
+    )
     ADAPTATION = PermissibleValue(
         text="ADAPTATION",
-        description="Serial selection / experimental evolution producing a stable phenotype.")
+        description="Serial selection / experimental evolution producing a stable phenotype.",
+    )
     SELECTION = PermissibleValue(
         text="SELECTION",
-        description="Strain isolated by selective pressure (e.g. plate selection, enrichment).")
+        description="Strain isolated by selective pressure (e.g. plate selection, enrichment).",
+    )
     OTHER = PermissibleValue(
-        text="OTHER",
-        description="Use sparingly; prefer a more specific value above.")
+        text="OTHER", description="Use sparingly; prefer a more specific value above."
+    )
 
     _defn = EnumDefinition(
         name="StrainModificationTypeEnum",
         description="""Class of genetic or selection-derived modification carried by a strain relative to the wild-type or type strain.""",
     )
 
+
 class GrowthModeEnum(EnumDefinitionImpl):
     """
     Cultivation mode under which a growth metric was measured. Distinct from MediaRecipe.culture_vessel which
     describes the vessel itself.
     """
-    BATCH = PermissibleValue(
-        text="BATCH",
-        description="Standard closed-system batch culture.")
+
+    BATCH = PermissibleValue(text="BATCH", description="Standard closed-system batch culture.")
     CHEMOSTAT = PermissibleValue(
-        text="CHEMOSTAT",
-        description="Continuous culture with controlled dilution rate.")
+        text="CHEMOSTAT", description="Continuous culture with controlled dilution rate."
+    )
     TURBIDOSTAT = PermissibleValue(
         text="TURBIDOSTAT",
-        description="Continuous culture controlled to maintain a target turbidity.")
+        description="Continuous culture controlled to maintain a target turbidity.",
+    )
     CONTINUOUS_FLOW = PermissibleValue(
-        text="CONTINUOUS_FLOW",
-        description="Other continuous-flow cultivation modes.")
+        text="CONTINUOUS_FLOW", description="Other continuous-flow cultivation modes."
+    )
     FED_BATCH = PermissibleValue(
-        text="FED_BATCH",
-        description="Batch culture with controlled nutrient feed.")
+        text="FED_BATCH", description="Batch culture with controlled nutrient feed."
+    )
     BIOFILM = PermissibleValue(
-        text="BIOFILM",
-        description="Surface-attached / biofilm cultivation.")
+        text="BIOFILM", description="Surface-attached / biofilm cultivation."
+    )
     SOLID_SURFACE = PermissibleValue(
-        text="SOLID_SURFACE",
-        description="Plate / agar / solid-substrate cultivation.")
+        text="SOLID_SURFACE", description="Plate / agar / solid-substrate cultivation."
+    )
     UNSPECIFIED = PermissibleValue(
-        text="UNSPECIFIED",
-        description="Mode not stated in the source paper.")
+        text="UNSPECIFIED", description="Mode not stated in the source paper."
+    )
 
     _defn = EnumDefinition(
         name="GrowthModeEnum",
         description="""Cultivation mode under which a growth metric was measured. Distinct from MediaRecipe.culture_vessel which describes the vessel itself.""",
     )
 
+
 class MergeModeEnum(EnumDefinitionImpl):
     """
     Merge pipeline mode used by `MergeMetadata.merge_mode`.
     """
+
     CONSERVATIVE = PermissibleValue(
-        text="CONSERVATIVE",
-        description="Only merge on identical fingerprints.")
+        text="CONSERVATIVE", description="Only merge on identical fingerprints."
+    )
     AGGRESSIVE = PermissibleValue(
-        text="AGGRESSIVE",
-        description="Merge across hydration / parent-ingredient equivalence.")
+        text="AGGRESSIVE", description="Merge across hydration / parent-ingredient equivalence."
+    )
     VARIANT_AWARE = PermissibleValue(
-        text="VARIANT_AWARE",
-        description="Use the hierarchy-aware variant fingerprint to merge.")
+        text="VARIANT_AWARE", description="Use the hierarchy-aware variant fingerprint to merge."
+    )
 
     _defn = EnumDefinition(
         name="MergeModeEnum",
         description="Merge pipeline mode used by `MergeMetadata.merge_mode`.",
     )
 
+
 class FingerprintModeEnum(EnumDefinitionImpl):
     """
     Algorithm used to compute the ingredient fingerprint.
     """
+
     ORIGINAL = PermissibleValue(
-        text="ORIGINAL",
-        description="Original ingredient set, no hierarchy resolution.")
+        text="ORIGINAL", description="Original ingredient set, no hierarchy resolution."
+    )
     CHEMICAL = PermissibleValue(
-        text="CHEMICAL",
-        description="Parent CHEBI IDs from MediaIngredientMech hierarchy.")
+        text="CHEMICAL", description="Parent CHEBI IDs from MediaIngredientMech hierarchy."
+    )
     VARIANT = PermissibleValue(
-        text="VARIANT",
-        description="Parent CHEBI + variant type (HYDRATE / ANHYDROUS / SALT_FORM).")
+        text="VARIANT", description="Parent CHEBI + variant type (HYDRATE / ANHYDROUS / SALT_FORM)."
+    )
 
     _defn = EnumDefinition(
         name="FingerprintModeEnum",
         description="Algorithm used to compute the ingredient fingerprint.",
     )
 
+
 class GrowthPhaseEnum(EnumDefinitionImpl):
     """
     Target microbial growth phase for a measurement / inoculum.
     """
-    LAG = PermissibleValue(
-        text="LAG",
-        description="Lag phase (no significant net growth).")
-    EXPONENTIAL = PermissibleValue(
-        text="EXPONENTIAL",
-        description="Exponential / log phase.")
-    STATIONARY = PermissibleValue(
-        text="STATIONARY",
-        description="Stationary phase.")
-    DEATH = PermissibleValue(
-        text="DEATH",
-        description="Death / decline phase.")
+
+    LAG = PermissibleValue(text="LAG", description="Lag phase (no significant net growth).")
+    EXPONENTIAL = PermissibleValue(text="EXPONENTIAL", description="Exponential / log phase.")
+    STATIONARY = PermissibleValue(text="STATIONARY", description="Stationary phase.")
+    DEATH = PermissibleValue(text="DEATH", description="Death / decline phase.")
     UNSPECIFIED = PermissibleValue(
-        text="UNSPECIFIED",
-        description="Phase not stated by the source.")
+        text="UNSPECIFIED", description="Phase not stated by the source."
+    )
 
     _defn = EnumDefinition(
         name="GrowthPhaseEnum",
         description="Target microbial growth phase for a measurement / inoculum.",
     )
+
 
 class TermMatchTypeEnum(EnumDefinitionImpl):
     """
@@ -3543,57 +3979,54 @@ class TermMatchTypeEnum(EnumDefinitionImpl):
     upstream grounding pipelines (kg-microbe, manual curation). Three values are observed in the current corpus
     (kg_fallback, exact_match, synonym_match_ambiguous); the others are reserved for explicit curator use.
     """
-    exact_match = PermissibleValue(
-        text="exact_match",
-        description="Exact label / synonym match.")
+
+    exact_match = PermissibleValue(text="exact_match", description="Exact label / synonym match.")
     kg_fallback = PermissibleValue(
         text="kg_fallback",
-        description="Inferred from the kg-microbe ingredient graph as a fallback.")
+        description="Inferred from the kg-microbe ingredient graph as a fallback.",
+    )
     synonym_match_ambiguous = PermissibleValue(
         text="synonym_match_ambiguous",
-        description="Multiple equally-good synonym matches; mapping is uncertain.")
+        description="Multiple equally-good synonym matches; mapping is uncertain.",
+    )
     manual_curated = PermissibleValue(
-        text="manual_curated",
-        description="Human curator selected this term.")
+        text="manual_curated", description="Human curator selected this term."
+    )
     automated_expert_mapping = PermissibleValue(
         text="automated_expert_mapping",
-        description="Produced by an automated expert-mapping pipeline (e.g. LLM-assisted).")
-    fuzzy = PermissibleValue(
-        text="fuzzy",
-        description="Fuzzy / approximate string match.")
+        description="Produced by an automated expert-mapping pipeline (e.g. LLM-assisted).",
+    )
+    fuzzy = PermissibleValue(text="fuzzy", description="Fuzzy / approximate string match.")
     corpus_consensus = PermissibleValue(
         text="corpus_consensus",
-        description="""Borrowed from the unanimous reliable grounding of the same ingredient label elsewhere in the corpus (G25 Phase 1) — used to replace a low-confidence kg_fallback chebi_term without an external lookup.""")
+        description="""Borrowed from the unanimous reliable grounding of the same ingredient label elsewhere in the corpus (G25 Phase 1) — used to replace a low-confidence kg_fallback chebi_term without an external lookup.""",
+    )
 
     _defn = EnumDefinition(
         name="TermMatchTypeEnum",
         description="""Provenance of an ontology-term mapping (`Term.match_type`). Values use the lowercase-snake convention emitted by upstream grounding pipelines (kg-microbe, manual curation). Three values are observed in the current corpus (kg_fallback, exact_match, synonym_match_ambiguous); the others are reserved for explicit curator use.""",
     )
 
+
 class SynonymTypeEnum(EnumDefinitionImpl):
     """
     Type of synonym relationship for an IngredientSynonym.
     """
-    EXACT = PermissibleValue(
-        text="EXACT",
-        description="Exact synonym.")
-    RELATED = PermissibleValue(
-        text="RELATED",
-        description="Related but not interchangeable.")
-    BROAD = PermissibleValue(
-        text="BROAD",
-        description="Broader concept.")
-    NARROW = PermissibleValue(
-        text="NARROW",
-        description="Narrower concept.")
+
+    EXACT = PermissibleValue(text="EXACT", description="Exact synonym.")
+    RELATED = PermissibleValue(text="RELATED", description="Related but not interchangeable.")
+    BROAD = PermissibleValue(text="BROAD", description="Broader concept.")
+    NARROW = PermissibleValue(text="NARROW", description="Narrower concept.")
     ABBREVIATION = PermissibleValue(
         text="ABBREVIATION",
-        description="Abbreviation or shorthand (e.g. \"TSB\" for \"Tryptic Soy Broth\").")
+        description='Abbreviation or shorthand (e.g. "TSB" for "Tryptic Soy Broth").',
+    )
 
     _defn = EnumDefinition(
         name="SynonymTypeEnum",
         description="Type of synonym relationship for an IngredientSynonym.",
     )
+
 
 class DiscussionKindEnum(EnumDefinitionImpl):
     """
@@ -3601,80 +4034,92 @@ class DiscussionKindEnum(EnumDefinitionImpl):
     kind so they reuse the shared pointer, evidence, and lifecycle machinery, while optional proposed experiments
     capture how a gap could be resolved.
     """
+
     OPEN_QUESTION = PermissibleValue(
         text="OPEN_QUESTION",
-        description="An unresolved scientific question posed by curators or experts.")
+        description="An unresolved scientific question posed by curators or experts.",
+    )
     KNOWLEDGE_GAP = PermissibleValue(
         text="KNOWLEDGE_GAP",
-        description="""A missing causal, evidentiary, model-system, or measurement assertion whose resolution would materially improve the record.""")
+        description="""A missing causal, evidentiary, model-system, or measurement assertion whose resolution would materially improve the record.""",
+    )
     CONTROVERSY = PermissibleValue(
         text="CONTROVERSY",
-        description="A live disagreement or competing interpretation between published positions.")
+        description="A live disagreement or competing interpretation between published positions.",
+    )
     CURATION_TODO = PermissibleValue(
         text="CURATION_TODO",
-        description="A curation task captured inline (e.g. \"ingredient needs CHEBI refinement\").")
+        description='A curation task captured inline (e.g. "ingredient needs CHEBI refinement").',
+    )
     EMERGING_HYPOTHESIS = PermissibleValue(
         text="EMERGING_HYPOTHESIS",
-        description="A recently reported hypothesis under active discussion in the community.")
+        description="A recently reported hypothesis under active discussion in the community.",
+    )
     INTERPRETATION = PermissibleValue(
         text="INTERPRETATION",
-        description="A discussion about how to interpret existing evidence or model an edge.")
+        description="A discussion about how to interpret existing evidence or model an edge.",
+    )
     HUMAN_MODEL_MISMATCH = PermissibleValue(
         text="HUMAN_MODEL_MISMATCH",
-        description="""A gap where evidence exists in one system but its fidelity to the target context is uncertain (e.g. an in-vitro/model result whose transfer to the in-situ or host-associated setting is unverified).""")
+        description="""A gap where evidence exists in one system but its fidelity to the target context is uncertain (e.g. an in-vitro/model result whose transfer to the in-situ or host-associated setting is unverified).""",
+    )
 
     _defn = EnumDefinition(
         name="DiscussionKindEnum",
         description="""Kind of unresolved / in-progress item captured by a Discussion. Knowledge gaps are represented as a discussion kind so they reuse the shared pointer, evidence, and lifecycle machinery, while optional proposed experiments capture how a gap could be resolved.""",
     )
 
+
 class DiscussionStatusEnum(EnumDefinitionImpl):
     """
     Lifecycle status for a Discussion.
     """
-    OPEN = PermissibleValue(
-        text="OPEN",
-        description="Posed but not yet under active discussion.")
+
+    OPEN = PermissibleValue(text="OPEN", description="Posed but not yet under active discussion.")
     UNDER_DISCUSSION = PermissibleValue(
         text="UNDER_DISCUSSION",
-        description="Actively being discussed in one or more linked venues.")
+        description="Actively being discussed in one or more linked venues.",
+    )
     RESOLVED = PermissibleValue(
-        text="RESOLVED",
-        description="Closed with a documented resolution; kept for provenance.")
+        text="RESOLVED", description="Closed with a documented resolution; kept for provenance."
+    )
     ARCHIVED = PermissibleValue(
         text="ARCHIVED",
-        description="No longer active and not resolved (deferred, stale, or superseded).")
+        description="No longer active and not resolved (deferred, stale, or superseded).",
+    )
 
     _defn = EnumDefinition(
         name="DiscussionStatusEnum",
         description="Lifecycle status for a Discussion.",
     )
 
+
 class SupportLevelEnum(EnumDefinitionImpl):
     """
     How a SupportingReference bears on the claim it is attached to (mirrors the supports semantics already used in the
     Mech EvidenceItem models).
     """
-    SUPPORT = PermissibleValue(
-        text="SUPPORT",
-        description="The source supports the claim.")
-    REFUTE = PermissibleValue(
-        text="REFUTE",
-        description="The source contradicts the claim.")
+
+    SUPPORT = PermissibleValue(text="SUPPORT", description="The source supports the claim.")
+    REFUTE = PermissibleValue(text="REFUTE", description="The source contradicts the claim.")
     PARTIAL = PermissibleValue(
         text="PARTIAL",
-        description="The source partially supports the claim or supports it with caveats.")
+        description="The source partially supports the claim or supports it with caveats.",
+    )
     NO_EVIDENCE = PermissibleValue(
         text="NO_EVIDENCE",
-        description="The source is relevant context but does not directly bear on the claim.")
+        description="The source is relevant context but does not directly bear on the claim.",
+    )
     WRONG_STATEMENT = PermissibleValue(
         text="WRONG_STATEMENT",
-        description="The cited statement was found to be incorrect (kept for provenance).")
+        description="The cited statement was found to be incorrect (kept for provenance).",
+    )
 
     _defn = EnumDefinition(
         name="SupportLevelEnum",
         description="""How a SupportingReference bears on the claim it is attached to (mirrors the supports semantics already used in the Mech EvidenceItem models).""",
     )
+
 
 class DatasetTypeEnum(EnumDefinitionImpl):
     """
@@ -3683,133 +4128,110 @@ class DatasetTypeEnum(EnumDefinitionImpl):
     METAGENOME→METAGENOMICS, METATRANSCRIPTOME→METATRANSCRIPTOMICS, METAPROTEOME→METAPROTEOMICS (AMPLICON_16S /
     AMPLICON_ITS / METABOLOMICS / PHENOTYPE / MULTI_OMICS / OTHER are unchanged).
     """
+
     GENOMICS = PermissibleValue(
         text="GENOMICS",
-        description="Isolate / single-organism genome data. (CultureMech GENOMICS; CommunityMech GENOME)")
+        description="Isolate / single-organism genome data. (CultureMech GENOMICS; CommunityMech GENOME)",
+    )
     METAGENOMICS = PermissibleValue(
-        text="METAGENOMICS",
-        description="Shotgun metagenome sequencing. (CommunityMech METAGENOME)")
+        text="METAGENOMICS", description="Shotgun metagenome sequencing. (CommunityMech METAGENOME)"
+    )
     AMPLICON_16S = PermissibleValue(
-        text="AMPLICON_16S",
-        description="16S rRNA marker-gene amplicon sequencing.")
+        text="AMPLICON_16S", description="16S rRNA marker-gene amplicon sequencing."
+    )
     AMPLICON_ITS = PermissibleValue(
-        text="AMPLICON_ITS",
-        description="ITS marker-gene amplicon sequencing.")
+        text="AMPLICON_ITS", description="ITS marker-gene amplicon sequencing."
+    )
     AMPLICON_OTHER = PermissibleValue(
         text="AMPLICON_OTHER",
-        description="Marker-gene amplicon sequencing other than 16S/ITS (e.g. 18S, rpoB).")
+        description="Marker-gene amplicon sequencing other than 16S/ITS (e.g. 18S, rpoB).",
+    )
     TRANSCRIPTOMICS = PermissibleValue(
-        text="TRANSCRIPTOMICS",
-        description="Single-organism RNA sequencing / expression.")
+        text="TRANSCRIPTOMICS", description="Single-organism RNA sequencing / expression."
+    )
     METATRANSCRIPTOMICS = PermissibleValue(
         text="METATRANSCRIPTOMICS",
-        description="Community-level RNA sequencing. (CommunityMech METATRANSCRIPTOME)")
+        description="Community-level RNA sequencing. (CommunityMech METATRANSCRIPTOME)",
+    )
     PROTEOMICS = PermissibleValue(
-        text="PROTEOMICS",
-        description="Single-organism protein expression profiling.")
+        text="PROTEOMICS", description="Single-organism protein expression profiling."
+    )
     METAPROTEOMICS = PermissibleValue(
         text="METAPROTEOMICS",
-        description="Community-level proteomics. (CommunityMech METAPROTEOME)")
-    METABOLOMICS = PermissibleValue(
-        text="METABOLOMICS",
-        description="Metabolite profiling.")
-    FLUXOMICS = PermissibleValue(
-        text="FLUXOMICS",
-        description="Metabolic flux profiling.")
+        description="Community-level proteomics. (CommunityMech METAPROTEOME)",
+    )
+    METABOLOMICS = PermissibleValue(text="METABOLOMICS", description="Metabolite profiling.")
+    FLUXOMICS = PermissibleValue(text="FLUXOMICS", description="Metabolic flux profiling.")
     PHENOMICS = PermissibleValue(
-        text="PHENOMICS",
-        description="High-throughput phenotype profiling.")
+        text="PHENOMICS", description="High-throughput phenotype profiling."
+    )
     PHENOTYPE = PermissibleValue(
         text="PHENOTYPE",
-        description="Phenotype / trait measurement collection (e.g. growth, biochemical).")
+        description="Phenotype / trait measurement collection (e.g. growth, biochemical).",
+    )
     MULTI_OMICS = PermissibleValue(
-        text="MULTI_OMICS",
-        description="Integrated multi-omics profiling.")
-    OTHER = PermissibleValue(
-        text="OTHER",
-        description="A dataset type not covered by the above.")
+        text="MULTI_OMICS", description="Integrated multi-omics profiling."
+    )
+    OTHER = PermissibleValue(text="OTHER", description="A dataset type not covered by the above.")
 
     _defn = EnumDefinition(
         name="DatasetTypeEnum",
         description="""Type of dataset or data resource. Canonical UNION of CultureMech's and CommunityMech's enums plus microbial additions. Migration map (old → this): CultureMech values carry over unchanged; CommunityMech GENOME→GENOMICS, METAGENOME→METAGENOMICS, METATRANSCRIPTOME→METATRANSCRIPTOMICS, METAPROTEOME→METAPROTEOMICS (AMPLICON_16S / AMPLICON_ITS / METABOLOMICS / PHENOTYPE / MULTI_OMICS / OTHER are unchanged).""",
     )
 
+
 class DatasetRepositoryEnum(EnumDefinitionImpl):
     """
     Public repository hosting the dataset. Superset of CommunityMech's enum (all values preserved) plus common
     additions; CultureMech datasets have no repository field today and migrate with repository unset / OTHER.
     """
-    NCBI_SRA = PermissibleValue(
-        text="NCBI_SRA",
-        description="NCBI Sequence Read Archive.")
-    NCBI_BIOPROJECT = PermissibleValue(
-        text="NCBI_BIOPROJECT",
-        description="NCBI BioProject.")
-    NCBI_GEO = PermissibleValue(
-        text="NCBI_GEO",
-        description="NCBI Gene Expression Omnibus.")
+
+    NCBI_SRA = PermissibleValue(text="NCBI_SRA", description="NCBI Sequence Read Archive.")
+    NCBI_BIOPROJECT = PermissibleValue(text="NCBI_BIOPROJECT", description="NCBI BioProject.")
+    NCBI_GEO = PermissibleValue(text="NCBI_GEO", description="NCBI Gene Expression Omnibus.")
     NCBI_ASSEMBLY = PermissibleValue(
-        text="NCBI_ASSEMBLY",
-        description="NCBI Assembly (genome assemblies).")
-    ENA = PermissibleValue(
-        text="ENA",
-        description="European Nucleotide Archive.")
+        text="NCBI_ASSEMBLY", description="NCBI Assembly (genome assemblies)."
+    )
+    ENA = PermissibleValue(text="ENA", description="European Nucleotide Archive.")
     ARRAYEXPRESS = PermissibleValue(
-        text="ARRAYEXPRESS",
-        description="EBI ArrayExpress / BioStudies.")
-    MGNIFY = PermissibleValue(
-        text="MGNIFY",
-        description="EBI MGnify metagenomics resource.")
-    JGI_GOLD = PermissibleValue(
-        text="JGI_GOLD",
-        description="JGI Genomes OnLine Database.")
+        text="ARRAYEXPRESS", description="EBI ArrayExpress / BioStudies."
+    )
+    MGNIFY = PermissibleValue(text="MGNIFY", description="EBI MGnify metagenomics resource.")
+    JGI_GOLD = PermissibleValue(text="JGI_GOLD", description="JGI Genomes OnLine Database.")
     JGI_IMG = PermissibleValue(
-        text="JGI_IMG",
-        description="JGI Integrated Microbial Genomes & Microbiomes.")
-    NMDC = PermissibleValue(
-        text="NMDC",
-        description="National Microbiome Data Collaborative.")
+        text="JGI_IMG", description="JGI Integrated Microbial Genomes & Microbiomes."
+    )
+    NMDC = PermissibleValue(text="NMDC", description="National Microbiome Data Collaborative.")
     METABOLOMICS_WORKBENCH = PermissibleValue(
-        text="METABOLOMICS_WORKBENCH",
-        description="NIH Metabolomics Workbench.")
+        text="METABOLOMICS_WORKBENCH", description="NIH Metabolomics Workbench."
+    )
     METABOLIGHTS = PermissibleValue(
-        text="METABOLIGHTS",
-        description="EBI MetaboLights metabolomics repository.")
-    MASSIVE = PermissibleValue(
-        text="MASSIVE",
-        description="MassIVE mass-spectrometry repository.")
+        text="METABOLIGHTS", description="EBI MetaboLights metabolomics repository."
+    )
+    MASSIVE = PermissibleValue(text="MASSIVE", description="MassIVE mass-spectrometry repository.")
     GNPS = PermissibleValue(
-        text="GNPS",
-        description="Global Natural Products Social Molecular Networking.")
-    PRIDE = PermissibleValue(
-        text="PRIDE",
-        description="EBI PRIDE proteomics repository.")
-    DBGAP = PermissibleValue(
-        text="DBGAP",
-        description="NCBI database of Genotypes and Phenotypes.")
-    GTEX = PermissibleValue(
-        text="GTEX",
-        description="Genotype-Tissue Expression project.")
+        text="GNPS", description="Global Natural Products Social Molecular Networking."
+    )
+    PRIDE = PermissibleValue(text="PRIDE", description="EBI PRIDE proteomics repository.")
+    DBGAP = PermissibleValue(text="DBGAP", description="NCBI database of Genotypes and Phenotypes.")
+    GTEX = PermissibleValue(text="GTEX", description="Genotype-Tissue Expression project.")
     FIGSHARE = PermissibleValue(
-        text="FIGSHARE",
-        description="Figshare general-purpose research data archive.")
+        text="FIGSHARE", description="Figshare general-purpose research data archive."
+    )
     ZENODO = PermissibleValue(
-        text="ZENODO",
-        description="Zenodo general-purpose research data archive.")
+        text="ZENODO", description="Zenodo general-purpose research data archive."
+    )
     BIOMODELS = PermissibleValue(
-        text="BIOMODELS",
-        description="EBI BioModels repository of computational models.")
-    KBASE = PermissibleValue(
-        text="KBASE",
-        description="DOE Systems Biology Knowledgebase (KBase).")
-    OTHER = PermissibleValue(
-        text="OTHER",
-        description="A repository not covered by the above.")
+        text="BIOMODELS", description="EBI BioModels repository of computational models."
+    )
+    KBASE = PermissibleValue(text="KBASE", description="DOE Systems Biology Knowledgebase (KBase).")
+    OTHER = PermissibleValue(text="OTHER", description="A repository not covered by the above.")
 
     _defn = EnumDefinition(
         name="DatasetRepositoryEnum",
         description="""Public repository hosting the dataset. Superset of CommunityMech's enum (all values preserved) plus common additions; CultureMech datasets have no repository field today and migrate with repository unset / OTHER.""",
     )
+
 
 class NutritionalRoleEnum(EnumDefinitionImpl):
     """
@@ -3817,102 +4239,128 @@ class NutritionalRoleEnum(EnumDefinitionImpl):
     PhysicochemicalRoleEnum and CellularMetabolicRoleEnum). A single ingredient may carry multiple nutritional roles
     (e.g. L-cysteine supplies both amino-acid and sulfur).
     """
+
     CARBON_SOURCE = PermissibleValue(
-        text="CARBON_SOURCE",
-        description="Provides organic carbon for biosynthesis and energy.")
+        text="CARBON_SOURCE", description="Provides organic carbon for biosynthesis and energy."
+    )
     NITROGEN_SOURCE = PermissibleValue(
         text="NITROGEN_SOURCE",
-        description="Provides nitrogen for amino acids, nucleotides, and other biomass components.")
+        description="Provides nitrogen for amino acids, nucleotides, and other biomass components.",
+    )
     SULFUR_SOURCE = PermissibleValue(
         text="SULFUR_SOURCE",
-        description="Provides sulfur (typically for cysteine, methionine, Fe-S clusters).")
+        description="Provides sulfur (typically for cysteine, methionine, Fe-S clusters).",
+    )
     PHOSPHATE_SOURCE = PermissibleValue(
         text="PHOSPHATE_SOURCE",
-        description="Provides phosphate for nucleotides, phospholipids, and energy carriers.")
+        description="Provides phosphate for nucleotides, phospholipids, and energy carriers.",
+    )
     IRON_SOURCE = PermissibleValue(
         text="IRON_SOURCE",
-        description="Provides iron (typically for cytochromes, Fe-S clusters, and other metalloproteins).")
+        description="Provides iron (typically for cytochromes, Fe-S clusters, and other metalloproteins).",
+    )
     TRACE_ELEMENT = PermissibleValue(
         text="TRACE_ELEMENT",
-        description="""Provides a micronutrient required in trace amounts (e.g., zinc, cobalt, manganese, molybdenum).""")
+        description="""Provides a micronutrient required in trace amounts (e.g., zinc, cobalt, manganese, molybdenum).""",
+    )
     VITAMIN_SOURCE = PermissibleValue(
         text="VITAMIN_SOURCE",
         description="Provides vitamins or vitamin precursors.",
-        meaning=CHEBI["33229"])
+        meaning=CHEBI["33229"],
+    )
     AMINO_ACID_SOURCE = PermissibleValue(
         text="AMINO_ACID_SOURCE",
-        description="Provides one or more specific amino acids as building blocks.")
+        description="Provides one or more specific amino acids as building blocks.",
+    )
     PROTEIN_SOURCE = PermissibleValue(
         text="PROTEIN_SOURCE",
-        description="""Provides peptides, proteins, or complex amino-acid mixtures (e.g., yeast extract, peptone, tryptone).""")
+        description="""Provides peptides, proteins, or complex amino-acid mixtures (e.g., yeast extract, peptone, tryptone).""",
+    )
     COFACTOR_PROVIDER = PermissibleValue(
         text="COFACTOR_PROVIDER",
-        description="""Supplies enzyme cofactors or prosthetic groups to the medium (the compound acts as a source; contrast with CellularMetabolicRoleEnum.COFACTOR, which is the intracellular role).""")
+        description="""Supplies enzyme cofactors or prosthetic groups to the medium (the compound acts as a source; contrast with CellularMetabolicRoleEnum.COFACTOR, which is the intracellular role).""",
+    )
     ENERGY_SOURCE = PermissibleValue(
-        text="ENERGY_SOURCE",
-        description="Primary energy substrate for chemotrophic growth.")
+        text="ENERGY_SOURCE", description="Primary energy substrate for chemotrophic growth."
+    )
     LIGHT_SOURCE = PermissibleValue(
         text="LIGHT_SOURCE",
-        description="""Radiant-energy source for phototrophic growth. No CHEBI or METPO term yet describes a radiant-energy *supply* role (METPO:1000656 is the organism metabolic-mode `photoautotrophic`, not a supply-side role); METPO submission pending.""")
+        description="""Radiant-energy source for phototrophic growth. No CHEBI or METPO term yet describes a radiant-energy *supply* role (METPO:1000656 is the organism metabolic-mode `photoautotrophic`, not a supply-side role); METPO submission pending.""",
+    )
 
     _defn = EnumDefinition(
         name="NutritionalRoleEnum",
         description="""What element or macronutrient an ingredient supplies to the medium. One of three orthogonal role facets (with PhysicochemicalRoleEnum and CellularMetabolicRoleEnum). A single ingredient may carry multiple nutritional roles (e.g. L-cysteine supplies both amino-acid and sulfur).""",
     )
 
+
 class PhysicochemicalRoleEnum(EnumDefinitionImpl):
     """
     Chemical or physical function an ingredient performs in the medium, independent of what element it supplies. One
     of three orthogonal role facets (with NutritionalRoleEnum and CellularMetabolicRoleEnum).
     """
+
     BUFFER = PermissibleValue(
         text="BUFFER",
         description="Maintains stable pH via a conjugate acid–base system.",
-        meaning=CHEBI["35225"])
+        meaning=CHEBI["35225"],
+    )
     SOLIDIFYING_AGENT = PermissibleValue(
         text="SOLIDIFYING_AGENT",
-        description="Gelling agent for solid or semi-solid media (e.g., agar, gellan gum, silica gel).")
+        description="Gelling agent for solid or semi-solid media (e.g., agar, gellan gum, silica gel).",
+    )
     CHELATOR = PermissibleValue(
         text="CHELATOR",
         description="""Sequesters metal ions to control availability, toxicity, or precipitation (e.g., EDTA, NTA, citrate).""",
-        meaning=CHEBI["38161"])
+        meaning=CHEBI["38161"],
+    )
     SURFACTANT = PermissibleValue(
         text="SURFACTANT",
         description="""Reduces surface tension for emulsification, solubilization, or membrane permeabilization (e.g., Tween, Triton X-100).""",
-        meaning=CHEBI["35195"])
+        meaning=CHEBI["35195"],
+    )
     REDUCING_AGENT = PermissibleValue(
         text="REDUCING_AGENT",
         description="""Lowers the redox potential of the medium (e.g., sodium sulfide, cysteine, thioglycolate, dithiothreitol).""",
-        meaning=CHEBI["63247"])
+        meaning=CHEBI["63247"],
+    )
     OXIDIZING_AGENT = PermissibleValue(
         text="OXIDIZING_AGENT",
         description="Raises the redox potential of the medium.",
-        meaning=CHEBI["63248"])
+        meaning=CHEBI["63248"],
+    )
     PH_INDICATOR = PermissibleValue(
         text="PH_INDICATOR",
         description="Colorimetric acid–base indicator dye (e.g., phenol red, bromothymol blue).",
-        meaning=CHEBI["50407"])
+        meaning=CHEBI["50407"],
+    )
     REDOX_INDICATOR = PermissibleValue(
         text="REDOX_INDICATOR",
-        description="""Colorimetric indicator of redox potential (e.g., resazurin turns pink under mildly oxidizing conditions).""")
+        description="""Colorimetric indicator of redox potential (e.g., resazurin turns pink under mildly oxidizing conditions).""",
+    )
     SELECTIVE_AGENT = PermissibleValue(
         text="SELECTIVE_AGENT",
-        description="""Antimicrobial or otherwise selective agent used to enrich for or against particular organisms (e.g., antibiotics, bile salts, high salt, azide).""")
+        description="""Antimicrobial or otherwise selective agent used to enrich for or against particular organisms (e.g., antibiotics, bile salts, high salt, azide).""",
+    )
     ANTIFOAM = PermissibleValue(
         text="ANTIFOAM",
         description="""Suppresses foaming in aerated or vigorously mixed cultures (e.g., silicone antifoam, polypropylene glycol).""",
-        meaning=CHEBI["77973"])
+        meaning=CHEBI["77973"],
+    )
     OSMOTIC_AGENT = PermissibleValue(
         text="OSMOTIC_AGENT",
-        description="""Contributes primarily to the osmotic strength of the medium (e.g., NaCl at high concentration, sucrose, glycerol as osmolyte). NOTE: shares `mappings: CHEBI:25728 (osmolyte)` with CellularMetabolicRoleEnum.OSMOPROTECTANT. Auto-classifiers driven by the SSSOM must NOT fan a single CHEBI:25728 annotation out to both facets — this is a medium-side role, whereas OSMOPROTECTANT is an intracellular, organism-conditional role. Assign OSMOPROTECTANT only when there is organism-context evidence.""")
+        description="""Contributes primarily to the osmotic strength of the medium (e.g., NaCl at high concentration, sucrose, glycerol as osmolyte). NOTE: shares `mappings: CHEBI:25728 (osmolyte)` with CellularMetabolicRoleEnum.OSMOPROTECTANT. Auto-classifiers driven by the SSSOM must NOT fan a single CHEBI:25728 annotation out to both facets — this is a medium-side role, whereas OSMOPROTECTANT is an intracellular, organism-conditional role. Assign OSMOPROTECTANT only when there is organism-context evidence.""",
+    )
     PRECIPITATION_INHIBITOR = PermissibleValue(
         text="PRECIPITATION_INHIBITOR",
-        description="""Prevents precipitation of otherwise poorly-soluble medium components (e.g., citrate keeping iron soluble at neutral pH).""")
+        description="""Prevents precipitation of otherwise poorly-soluble medium components (e.g., citrate keeping iron soluble at neutral pH).""",
+    )
 
     _defn = EnumDefinition(
         name="PhysicochemicalRoleEnum",
         description="""Chemical or physical function an ingredient performs in the medium, independent of what element it supplies. One of three orthogonal role facets (with NutritionalRoleEnum and CellularMetabolicRoleEnum).""",
     )
+
 
 class CellularMetabolicRoleEnum(EnumDefinitionImpl):
     """
@@ -3922,1124 +4370,3348 @@ class CellularMetabolicRoleEnum(EnumDefinitionImpl):
     for organisms that oxidize the compound for energy; methanol is an electron donor for methylotrophs but only a
     carbon source for others).
     """
+
     SUBSTRATE = PermissibleValue(
         text="SUBSTRATE",
-        description="Consumed by the organism for biosynthesis, energy, or both (general-purpose substrate role).")
+        description="Consumed by the organism for biosynthesis, energy, or both (general-purpose substrate role).",
+    )
     ELECTRON_DONOR = PermissibleValue(
         text="ELECTRON_DONOR",
         description="""Electron donor for chemolithotrophic or heterotrophic energy metabolism (organism-conditional).""",
-        meaning=CHEBI["15022"])
+        meaning=CHEBI["15022"],
+    )
     ELECTRON_ACCEPTOR = PermissibleValue(
         text="ELECTRON_ACCEPTOR",
         description="""Terminal electron acceptor for respiration (e.g., nitrate, oxygen, sulfate; organism-conditional).""",
-        meaning=CHEBI["17654"])
+        meaning=CHEBI["17654"],
+    )
     COFACTOR = PermissibleValue(
         text="COFACTOR",
         description="""Acts as an intracellular enzyme cofactor (contrast with NutritionalRoleEnum.COFACTOR_PROVIDER, the supply-side role).""",
-        meaning=CHEBI["23357"])
+        meaning=CHEBI["23357"],
+    )
     PROSTHETIC_GROUP_PRECURSOR = PermissibleValue(
         text="PROSTHETIC_GROUP_PRECURSOR",
-        description="""Precursor for a covalently-bound cofactor / prosthetic group (e.g., δ-aminolevulinate for heme). Note the mapping below points at the parent role `prosthetic group` — CHEBI has no dedicated `prosthetic group precursor` role class, so the mapping is a hierarchy pointer, not identity.""")
+        description="""Precursor for a covalently-bound cofactor / prosthetic group (e.g., δ-aminolevulinate for heme). Note the mapping below points at the parent role `prosthetic group` — CHEBI has no dedicated `prosthetic group precursor` role class, so the mapping is a hierarchy pointer, not identity.""",
+    )
     MEMBRANE_COMPONENT = PermissibleValue(
         text="MEMBRANE_COMPONENT",
-        description="Incorporated into cell membranes (e.g., fatty acids, sterols, isoprenoid lipids).")
+        description="Incorporated into cell membranes (e.g., fatty acids, sterols, isoprenoid lipids).",
+    )
     OSMOPROTECTANT = PermissibleValue(
         text="OSMOPROTECTANT",
-        description="""Accumulated intracellularly to balance external osmotic stress (e.g., glycine betaine, ectoine, trehalose). Organism-conditional — assign only with organism-context evidence (e.g., \"glycine betaine is imported and accumulated as an osmoprotectant by <organism>\"). NOTE: shares `mappings: CHEBI:25728 (osmolyte)` with PhysicochemicalRoleEnum.OSMOTIC_AGENT. See that value's description for cross-facet guidance.""")
+        description="""Accumulated intracellularly to balance external osmotic stress (e.g., glycine betaine, ectoine, trehalose). Organism-conditional — assign only with organism-context evidence (e.g., \"glycine betaine is imported and accumulated as an osmoprotectant by <organism>\"). NOTE: shares `mappings: CHEBI:25728 (osmolyte)` with PhysicochemicalRoleEnum.OSMOTIC_AGENT. See that value's description for cross-facet guidance.""",
+    )
     INDUCER = PermissibleValue(
         text="INDUCER",
-        description="Triggers expression of specific genes or pathways when present (e.g., IPTG, arabinose).")
+        description="Triggers expression of specific genes or pathways when present (e.g., IPTG, arabinose).",
+    )
     INHIBITOR = PermissibleValue(
         text="INHIBITOR",
         description="Suppresses growth or a specific pathway (e.g., antibiotics targeting cellular processes).",
-        meaning=CHEBI["35222"])
+        meaning=CHEBI["35222"],
+    )
     QUENCHER = PermissibleValue(
         text="QUENCHER",
-        description="Absorbs or dissipates a signal (e.g., quenches fluorescence, radicals, or light).")
+        description="Absorbs or dissipates a signal (e.g., quenches fluorescence, radicals, or light).",
+    )
 
     _defn = EnumDefinition(
         name="CellularMetabolicRoleEnum",
         description="""Role of the ingredient inside or on the cultured microbe(s) — the compound's metabolic fate or biochemical function at the cell level. One of three orthogonal role facets (with NutritionalRoleEnum and PhysicochemicalRoleEnum). Values in this facet are often organism-conditional (e.g. ELECTRON_DONOR applies only for organisms that oxidize the compound for energy; methanol is an electron donor for methylotrophs but only a carbon source for others).""",
     )
 
+
 # Slots
 class slots:
     pass
 
-slots.mediaRecipe__id = Slot(uri=CULTUREMECH.id, name="mediaRecipe__id", curie=CULTUREMECH.curie('id'),
-                   model_uri=CULTUREMECH.mediaRecipe__id, domain=None, range=URIRef,
-                   pattern=re.compile(r'^CultureMech:(?!000000)\d{6}$'))
 
-slots.mediaRecipe__id_lineage_token = Slot(uri=CULTUREMECH.id_lineage_token, name="mediaRecipe__id_lineage_token", curie=CULTUREMECH.curie('id_lineage_token'),
-                   model_uri=CULTUREMECH.mediaRecipe__id_lineage_token, domain=None, range=Optional[str],
-                   pattern=re.compile(r'^legacy:[0-9a-f]{64}$'))
-
-slots.mediaRecipe__name = Slot(uri=CULTUREMECH.name, name="mediaRecipe__name", curie=CULTUREMECH.curie('name'),
-                   model_uri=CULTUREMECH.mediaRecipe__name, domain=None, range=str)
-
-slots.mediaRecipe__original_name = Slot(uri=CULTUREMECH.original_name, name="mediaRecipe__original_name", curie=CULTUREMECH.curie('original_name'),
-                   model_uri=CULTUREMECH.mediaRecipe__original_name, domain=None, range=Optional[str])
-
-slots.mediaRecipe__category = Slot(uri=CULTUREMECH.category, name="mediaRecipe__category", curie=CULTUREMECH.curie('category'),
-                   model_uri=CULTUREMECH.mediaRecipe__category, domain=None, range=Optional[Union[str, "CategoryEnum"]])
-
-slots.mediaRecipe__categories = Slot(uri=CULTUREMECH.categories, name="mediaRecipe__categories", curie=CULTUREMECH.curie('categories'),
-                   model_uri=CULTUREMECH.mediaRecipe__categories, domain=None, range=Optional[Union[Union[str, "CategoryEnum"], list[Union[str, "CategoryEnum"]]]])
-
-slots.mediaRecipe__high_metal = Slot(uri=CULTUREMECH.high_metal, name="mediaRecipe__high_metal", curie=CULTUREMECH.curie('high_metal'),
-                   model_uri=CULTUREMECH.mediaRecipe__high_metal, domain=None, range=Optional[Union[bool, Bool]])
-
-slots.mediaRecipe__high_ree = Slot(uri=CULTUREMECH.high_ree, name="mediaRecipe__high_ree", curie=CULTUREMECH.curie('high_ree'),
-                   model_uri=CULTUREMECH.mediaRecipe__high_ree, domain=None, range=Optional[Union[bool, Bool]])
-
-slots.mediaRecipe__synonyms = Slot(uri=CULTUREMECH.synonyms, name="mediaRecipe__synonyms", curie=CULTUREMECH.curie('synonyms'),
-                   model_uri=CULTUREMECH.mediaRecipe__synonyms, domain=None, range=Optional[Union[Union[dict, RecipeSynonym], list[Union[dict, RecipeSynonym]]]])
-
-slots.mediaRecipe__merged_from = Slot(uri=CULTUREMECH.merged_from, name="mediaRecipe__merged_from", curie=CULTUREMECH.curie('merged_from'),
-                   model_uri=CULTUREMECH.mediaRecipe__merged_from, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.mediaRecipe__merge_fingerprint = Slot(uri=CULTUREMECH.merge_fingerprint, name="mediaRecipe__merge_fingerprint", curie=CULTUREMECH.curie('merge_fingerprint'),
-                   model_uri=CULTUREMECH.mediaRecipe__merge_fingerprint, domain=None, range=Optional[str])
-
-slots.mediaRecipe__chemical_fingerprint = Slot(uri=CULTUREMECH.chemical_fingerprint, name="mediaRecipe__chemical_fingerprint", curie=CULTUREMECH.curie('chemical_fingerprint'),
-                   model_uri=CULTUREMECH.mediaRecipe__chemical_fingerprint, domain=None, range=Optional[str])
-
-slots.mediaRecipe__variant_fingerprint = Slot(uri=CULTUREMECH.variant_fingerprint, name="mediaRecipe__variant_fingerprint", curie=CULTUREMECH.curie('variant_fingerprint'),
-                   model_uri=CULTUREMECH.mediaRecipe__variant_fingerprint, domain=None, range=Optional[str])
-
-slots.mediaRecipe__fingerprint_version = Slot(uri=CULTUREMECH.fingerprint_version, name="mediaRecipe__fingerprint_version", curie=CULTUREMECH.curie('fingerprint_version'),
-                   model_uri=CULTUREMECH.mediaRecipe__fingerprint_version, domain=None, range=Optional[str])
-
-slots.mediaRecipe__merge_metadata = Slot(uri=CULTUREMECH.merge_metadata, name="mediaRecipe__merge_metadata", curie=CULTUREMECH.curie('merge_metadata'),
-                   model_uri=CULTUREMECH.mediaRecipe__merge_metadata, domain=None, range=Optional[Union[dict, MergeMetadata]])
-
-slots.mediaRecipe__media_term = Slot(uri=CULTUREMECH.media_term, name="mediaRecipe__media_term", curie=CULTUREMECH.curie('media_term'),
-                   model_uri=CULTUREMECH.mediaRecipe__media_term, domain=None, range=Optional[Union[dict, MediaTypeDescriptor]])
-
-slots.mediaRecipe__kg_microbe_match = Slot(uri=CULTUREMECH.kg_microbe_match, name="mediaRecipe__kg_microbe_match", curie=CULTUREMECH.curie('kg_microbe_match'),
-                   model_uri=CULTUREMECH.mediaRecipe__kg_microbe_match, domain=None, range=Optional[str],
-                   pattern=re.compile(r'^mediadive\.medium:[0-9a-zA-Z_-]+$'))
-
-slots.mediaRecipe__description = Slot(uri=CULTUREMECH.description, name="mediaRecipe__description", curie=CULTUREMECH.curie('description'),
-                   model_uri=CULTUREMECH.mediaRecipe__description, domain=None, range=Optional[str])
-
-slots.mediaRecipe__target_organisms = Slot(uri=CULTUREMECH.target_organisms, name="mediaRecipe__target_organisms", curie=CULTUREMECH.curie('target_organisms'),
-                   model_uri=CULTUREMECH.mediaRecipe__target_organisms, domain=None, range=Optional[Union[dict[Union[str, OrganismDescriptorPreferredTerm], Union[dict, OrganismDescriptor]], list[Union[dict, OrganismDescriptor]]]])
-
-slots.mediaRecipe__source_environment = Slot(uri=CULTUREMECH.source_environment, name="mediaRecipe__source_environment", curie=CULTUREMECH.curie('source_environment'),
-                   model_uri=CULTUREMECH.mediaRecipe__source_environment, domain=None, range=Optional[Union[Union[dict, SourceEnvironmentDescriptor], list[Union[dict, SourceEnvironmentDescriptor]]]])
-
-slots.mediaRecipe__organism_culture_type = Slot(uri=CULTUREMECH.organism_culture_type, name="mediaRecipe__organism_culture_type", curie=CULTUREMECH.curie('organism_culture_type'),
-                   model_uri=CULTUREMECH.mediaRecipe__organism_culture_type, domain=None, range=Optional[Union[str, "OrganismCultureTypeEnum"]])
-
-slots.mediaRecipe__record_kind = Slot(uri=CULTUREMECH.record_kind, name="mediaRecipe__record_kind", curie=CULTUREMECH.curie('record_kind'),
-                   model_uri=CULTUREMECH.mediaRecipe__record_kind, domain=None, range=Optional[Union[str, "RecordKindEnum"]])
-
-slots.mediaRecipe__medium_type = Slot(uri=CULTUREMECH.medium_type, name="mediaRecipe__medium_type", curie=CULTUREMECH.curie('medium_type'),
-                   model_uri=CULTUREMECH.mediaRecipe__medium_type, domain=None, range=Optional[Union[str, "MediumTypeEnum"]])
-
-slots.mediaRecipe__composition_type = Slot(uri=CULTUREMECH.composition_type, name="mediaRecipe__composition_type", curie=CULTUREMECH.curie('composition_type'),
-                   model_uri=CULTUREMECH.mediaRecipe__composition_type, domain=None, range=Optional[Union[str, "MediumCompositionTypeEnum"]])
-
-slots.mediaRecipe__nutritional_class = Slot(uri=CULTUREMECH.nutritional_class, name="mediaRecipe__nutritional_class", curie=CULTUREMECH.curie('nutritional_class'),
-                   model_uri=CULTUREMECH.mediaRecipe__nutritional_class, domain=None, range=Optional[Union[str, "MediumNutritionalClassEnum"]])
-
-slots.mediaRecipe__functional_role = Slot(uri=CULTUREMECH.functional_role, name="mediaRecipe__functional_role", curie=CULTUREMECH.curie('functional_role'),
-                   model_uri=CULTUREMECH.mediaRecipe__functional_role, domain=None, range=Optional[Union[Union[str, "MediumFunctionalRoleEnum"], list[Union[str, "MediumFunctionalRoleEnum"]]]])
-
-slots.mediaRecipe__physical_state = Slot(uri=CULTUREMECH.physical_state, name="mediaRecipe__physical_state", curie=CULTUREMECH.curie('physical_state'),
-                   model_uri=CULTUREMECH.mediaRecipe__physical_state, domain=None, range=Union[str, "PhysicalStateEnum"])
-
-slots.mediaRecipe__ph_value = Slot(uri=CULTUREMECH.ph_value, name="mediaRecipe__ph_value", curie=CULTUREMECH.curie('ph_value'),
-                   model_uri=CULTUREMECH.mediaRecipe__ph_value, domain=None, range=Optional[float])
-
-slots.mediaRecipe__ph_range = Slot(uri=CULTUREMECH.ph_range, name="mediaRecipe__ph_range", curie=CULTUREMECH.curie('ph_range'),
-                   model_uri=CULTUREMECH.mediaRecipe__ph_range, domain=None, range=Optional[Union[dict, PhRange]])
-
-slots.mediaRecipe__light_intensity = Slot(uri=CULTUREMECH.light_intensity, name="mediaRecipe__light_intensity", curie=CULTUREMECH.curie('light_intensity'),
-                   model_uri=CULTUREMECH.mediaRecipe__light_intensity, domain=None, range=Optional[str])
-
-slots.mediaRecipe__light_cycle = Slot(uri=CULTUREMECH.light_cycle, name="mediaRecipe__light_cycle", curie=CULTUREMECH.curie('light_cycle'),
-                   model_uri=CULTUREMECH.mediaRecipe__light_cycle, domain=None, range=Optional[str])
-
-slots.mediaRecipe__light_quality = Slot(uri=CULTUREMECH.light_quality, name="mediaRecipe__light_quality", curie=CULTUREMECH.curie('light_quality'),
-                   model_uri=CULTUREMECH.mediaRecipe__light_quality, domain=None, range=Optional[str])
-
-slots.mediaRecipe__temperature_range = Slot(uri=CULTUREMECH.temperature_range, name="mediaRecipe__temperature_range", curie=CULTUREMECH.curie('temperature_range'),
-                   model_uri=CULTUREMECH.mediaRecipe__temperature_range, domain=None, range=Optional[str])
-
-slots.mediaRecipe__temperature_value = Slot(uri=CULTUREMECH.temperature_value, name="mediaRecipe__temperature_value", curie=CULTUREMECH.curie('temperature_value'),
-                   model_uri=CULTUREMECH.mediaRecipe__temperature_value, domain=None, range=Optional[float])
-
-slots.mediaRecipe__salinity = Slot(uri=CULTUREMECH.salinity, name="mediaRecipe__salinity", curie=CULTUREMECH.curie('salinity'),
-                   model_uri=CULTUREMECH.mediaRecipe__salinity, domain=None, range=Optional[str])
-
-slots.mediaRecipe__aeration = Slot(uri=CULTUREMECH.aeration, name="mediaRecipe__aeration", curie=CULTUREMECH.curie('aeration'),
-                   model_uri=CULTUREMECH.mediaRecipe__aeration, domain=None, range=Optional[str])
-
-slots.mediaRecipe__culture_vessel = Slot(uri=CULTUREMECH.culture_vessel, name="mediaRecipe__culture_vessel", curie=CULTUREMECH.curie('culture_vessel'),
-                   model_uri=CULTUREMECH.mediaRecipe__culture_vessel, domain=None, range=Optional[str])
-
-slots.mediaRecipe__ingredients = Slot(uri=CULTUREMECH.ingredients, name="mediaRecipe__ingredients", curie=CULTUREMECH.curie('ingredients'),
-                   model_uri=CULTUREMECH.mediaRecipe__ingredients, domain=None, range=Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]])
-
-slots.mediaRecipe__solutions = Slot(uri=CULTUREMECH.solutions, name="mediaRecipe__solutions", curie=CULTUREMECH.curie('solutions'),
-                   model_uri=CULTUREMECH.mediaRecipe__solutions, domain=None, range=Optional[Union[Union[dict, SolutionDescriptor], list[Union[dict, SolutionDescriptor]]]])
-
-slots.mediaRecipe__preparation_steps = Slot(uri=CULTUREMECH.preparation_steps, name="mediaRecipe__preparation_steps", curie=CULTUREMECH.curie('preparation_steps'),
-                   model_uri=CULTUREMECH.mediaRecipe__preparation_steps, domain=None, range=Optional[Union[Union[dict, PreparationStep], list[Union[dict, PreparationStep]]]])
-
-slots.mediaRecipe__sterilization = Slot(uri=CULTUREMECH.sterilization, name="mediaRecipe__sterilization", curie=CULTUREMECH.curie('sterilization'),
-                   model_uri=CULTUREMECH.mediaRecipe__sterilization, domain=None, range=Optional[Union[dict, SterilizationDescriptor]])
-
-slots.mediaRecipe__storage = Slot(uri=CULTUREMECH.storage, name="mediaRecipe__storage", curie=CULTUREMECH.curie('storage'),
-                   model_uri=CULTUREMECH.mediaRecipe__storage, domain=None, range=Optional[Union[dict, StorageConditions]])
-
-slots.mediaRecipe__applications = Slot(uri=CULTUREMECH.applications, name="mediaRecipe__applications", curie=CULTUREMECH.curie('applications'),
-                   model_uri=CULTUREMECH.mediaRecipe__applications, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.mediaRecipe__variants = Slot(uri=CULTUREMECH.variants, name="mediaRecipe__variants", curie=CULTUREMECH.curie('variants'),
-                   model_uri=CULTUREMECH.mediaRecipe__variants, domain=None, range=Optional[Union[dict[Union[str, MediaVariantName], Union[dict, MediaVariant]], list[Union[dict, MediaVariant]]]])
-
-slots.mediaRecipe__parent_media = Slot(uri=CULTUREMECH.parent_media, name="mediaRecipe__parent_media", curie=CULTUREMECH.curie('parent_media'),
-                   model_uri=CULTUREMECH.mediaRecipe__parent_media, domain=None, range=Optional[Union[dict, MediaRecipeReference]])
-
-slots.mediaRecipe__variant_children = Slot(uri=CULTUREMECH.variant_children, name="mediaRecipe__variant_children", curie=CULTUREMECH.curie('variant_children'),
-                   model_uri=CULTUREMECH.mediaRecipe__variant_children, domain=None, range=Optional[Union[Union[dict, MediaRecipeReference], list[Union[dict, MediaRecipeReference]]]])
-
-slots.mediaRecipe__variant_relationship = Slot(uri=CULTUREMECH.variant_relationship, name="mediaRecipe__variant_relationship", curie=CULTUREMECH.curie('variant_relationship'),
-                   model_uri=CULTUREMECH.mediaRecipe__variant_relationship, domain=None, range=Optional[Union[str, "MediaVariantRelationshipEnum"]])
-
-slots.mediaRecipe__variant_modifications = Slot(uri=CULTUREMECH.variant_modifications, name="mediaRecipe__variant_modifications", curie=CULTUREMECH.curie('variant_modifications'),
-                   model_uri=CULTUREMECH.mediaRecipe__variant_modifications, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.mediaRecipe__references = Slot(uri=CULTUREMECH.references, name="mediaRecipe__references", curie=CULTUREMECH.curie('references'),
-                   model_uri=CULTUREMECH.mediaRecipe__references, domain=None, range=Optional[Union[Union[dict, PublicationReference], list[Union[dict, PublicationReference]]]])
-
-slots.mediaRecipe__notes = Slot(uri=CULTUREMECH.notes, name="mediaRecipe__notes", curie=CULTUREMECH.curie('notes'),
-                   model_uri=CULTUREMECH.mediaRecipe__notes, domain=None, range=Optional[str])
-
-slots.mediaRecipe__evidence = Slot(uri=CULTUREMECH.evidence, name="mediaRecipe__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.mediaRecipe__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
-
-slots.mediaRecipe__datasets = Slot(uri=CULTUREMECH.datasets, name="mediaRecipe__datasets", curie=CULTUREMECH.curie('datasets'),
-                   model_uri=CULTUREMECH.mediaRecipe__datasets, domain=None, range=Optional[Union[Union[dict, Dataset], list[Union[dict, Dataset]]]])
-
-slots.mediaRecipe__discussions = Slot(uri=CULTUREMECH.discussions, name="mediaRecipe__discussions", curie=CULTUREMECH.curie('discussions'),
-                   model_uri=CULTUREMECH.mediaRecipe__discussions, domain=None, range=Optional[Union[Union[dict, Discussion], list[Union[dict, Discussion]]]])
-
-slots.mediaRecipe__import_metadata = Slot(uri=CULTUREMECH.import_metadata, name="mediaRecipe__import_metadata", curie=CULTUREMECH.curie('import_metadata'),
-                   model_uri=CULTUREMECH.mediaRecipe__import_metadata, domain=None, range=Optional[Union[dict, ImportMetadata]])
-
-slots.mediaRecipe__curation_history = Slot(uri=CULTUREMECH.curation_history, name="mediaRecipe__curation_history", curie=CULTUREMECH.curie('curation_history'),
-                   model_uri=CULTUREMECH.mediaRecipe__curation_history, domain=None, range=Optional[Union[Union[dict, CurationEvent], list[Union[dict, CurationEvent]]]])
-
-slots.mediaRecipe__data_quality_flags = Slot(uri=CULTUREMECH.data_quality_flags, name="mediaRecipe__data_quality_flags", curie=CULTUREMECH.curie('data_quality_flags'),
-                   model_uri=CULTUREMECH.mediaRecipe__data_quality_flags, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.mediaRecipe__sources = Slot(uri=CULTUREMECH.sources, name="mediaRecipe__sources", curie=CULTUREMECH.curie('sources'),
-                   model_uri=CULTUREMECH.mediaRecipe__sources, domain=None, range=Optional[Union[Union[dict, SourceReference], list[Union[dict, SourceReference]]]])
-
-slots.mediaRecipe__incubation_atmosphere = Slot(uri=CULTUREMECH.incubation_atmosphere, name="mediaRecipe__incubation_atmosphere", curie=CULTUREMECH.curie('incubation_atmosphere'),
-                   model_uri=CULTUREMECH.mediaRecipe__incubation_atmosphere, domain=None, range=Optional[Union[str, "AtmosphereEnum"]])
-
-slots.mediaRecipe__source_data = Slot(uri=CULTUREMECH.source_data, name="mediaRecipe__source_data", curie=CULTUREMECH.curie('source_data'),
-                   model_uri=CULTUREMECH.mediaRecipe__source_data, domain=None, range=Optional[Union[dict, SourceData]])
-
-slots.solutionRecipe__id = Slot(uri=CULTUREMECH.id, name="solutionRecipe__id", curie=CULTUREMECH.curie('id'),
-                   model_uri=CULTUREMECH.solutionRecipe__id, domain=None, range=URIRef,
-                   pattern=re.compile(r'^CultureMech:(?!000000)\d{6}$'))
-
-slots.solutionRecipe__id_lineage_token = Slot(uri=CULTUREMECH.id_lineage_token, name="solutionRecipe__id_lineage_token", curie=CULTUREMECH.curie('id_lineage_token'),
-                   model_uri=CULTUREMECH.solutionRecipe__id_lineage_token, domain=None, range=Optional[str],
-                   pattern=re.compile(r'^legacy:[0-9a-f]{64}$'))
-
-slots.solutionRecipe__preferred_term = Slot(uri=CULTUREMECH.preferred_term, name="solutionRecipe__preferred_term", curie=CULTUREMECH.curie('preferred_term'),
-                   model_uri=CULTUREMECH.solutionRecipe__preferred_term, domain=None, range=str)
-
-slots.solutionRecipe__term = Slot(uri=CULTUREMECH.term, name="solutionRecipe__term", curie=CULTUREMECH.curie('term'),
-                   model_uri=CULTUREMECH.solutionRecipe__term, domain=None, range=Optional[Union[dict, Term]])
-
-slots.solutionRecipe__mediaingredientmech_term = Slot(uri=CULTUREMECH.mediaingredientmech_term, name="solutionRecipe__mediaingredientmech_term", curie=CULTUREMECH.curie('mediaingredientmech_term'),
-                   model_uri=CULTUREMECH.solutionRecipe__mediaingredientmech_term, domain=None, range=Optional[Union[dict, MediaIngredientMechTerm]])
-
-slots.solutionRecipe__mediaingredientmech_chebi_term = Slot(uri=CULTUREMECH.mediaingredientmech_chebi_term, name="solutionRecipe__mediaingredientmech_chebi_term", curie=CULTUREMECH.curie('mediaingredientmech_chebi_term'),
-                   model_uri=CULTUREMECH.solutionRecipe__mediaingredientmech_chebi_term, domain=None, range=Optional[Union[dict, MediaIngredientMechChebiTerm]])
-
-slots.solutionRecipe__culturemech_term = Slot(uri=CULTUREMECH.culturemech_term, name="solutionRecipe__culturemech_term", curie=CULTUREMECH.curie('culturemech_term'),
-                   model_uri=CULTUREMECH.solutionRecipe__culturemech_term, domain=None, range=Optional[Union[dict, CultureMechTerm]])
-
-slots.solutionRecipe__category = Slot(uri=CULTUREMECH.category, name="solutionRecipe__category", curie=CULTUREMECH.curie('category'),
-                   model_uri=CULTUREMECH.solutionRecipe__category, domain=None, range=Optional[Union[str, "CategoryEnum"]])
-
-slots.solutionRecipe__composition = Slot(uri=CULTUREMECH.composition, name="solutionRecipe__composition", curie=CULTUREMECH.curie('composition'),
-                   model_uri=CULTUREMECH.solutionRecipe__composition, domain=None, range=Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]])
-
-slots.solutionRecipe__solutions = Slot(uri=CULTUREMECH.solutions, name="solutionRecipe__solutions", curie=CULTUREMECH.curie('solutions'),
-                   model_uri=CULTUREMECH.solutionRecipe__solutions, domain=None, range=Optional[Union[Union[dict, SolutionDescriptor], list[Union[dict, SolutionDescriptor]]]])
-
-slots.solutionRecipe__ingredients = Slot(uri=CULTUREMECH.ingredients, name="solutionRecipe__ingredients", curie=CULTUREMECH.curie('ingredients'),
-                   model_uri=CULTUREMECH.solutionRecipe__ingredients, domain=None, range=Optional[Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]]])
-
-slots.solutionRecipe__concentration = Slot(uri=CULTUREMECH.concentration, name="solutionRecipe__concentration", curie=CULTUREMECH.curie('concentration'),
-                   model_uri=CULTUREMECH.solutionRecipe__concentration, domain=None, range=Optional[Union[dict, ConcentrationValue]])
-
-slots.solutionRecipe__preparation_notes = Slot(uri=CULTUREMECH.preparation_notes, name="solutionRecipe__preparation_notes", curie=CULTUREMECH.curie('preparation_notes'),
-                   model_uri=CULTUREMECH.solutionRecipe__preparation_notes, domain=None, range=Optional[str])
-
-slots.solutionRecipe__storage_conditions = Slot(uri=CULTUREMECH.storage_conditions, name="solutionRecipe__storage_conditions", curie=CULTUREMECH.curie('storage_conditions'),
-                   model_uri=CULTUREMECH.solutionRecipe__storage_conditions, domain=None, range=Optional[Union[dict, StorageConditions]])
-
-slots.solutionRecipe__shelf_life = Slot(uri=CULTUREMECH.shelf_life, name="solutionRecipe__shelf_life", curie=CULTUREMECH.curie('shelf_life'),
-                   model_uri=CULTUREMECH.solutionRecipe__shelf_life, domain=None, range=Optional[str])
-
-slots.solutionRecipe__references = Slot(uri=CULTUREMECH.references, name="solutionRecipe__references", curie=CULTUREMECH.curie('references'),
-                   model_uri=CULTUREMECH.solutionRecipe__references, domain=None, range=Optional[Union[Union[dict, PublicationReference], list[Union[dict, PublicationReference]]]])
-
-slots.solutionRecipe__source_data = Slot(uri=CULTUREMECH.source_data, name="solutionRecipe__source_data", curie=CULTUREMECH.curie('source_data'),
-                   model_uri=CULTUREMECH.solutionRecipe__source_data, domain=None, range=Optional[Union[dict, SourceData]])
-
-slots.solutionRecipe__curation_history = Slot(uri=CULTUREMECH.curation_history, name="solutionRecipe__curation_history", curie=CULTUREMECH.curie('curation_history'),
-                   model_uri=CULTUREMECH.solutionRecipe__curation_history, domain=None, range=Optional[Union[Union[dict, CurationEvent], list[Union[dict, CurationEvent]]]])
-
-slots.solutionRecipe__data_quality_flags = Slot(uri=CULTUREMECH.data_quality_flags, name="solutionRecipe__data_quality_flags", curie=CULTUREMECH.curie('data_quality_flags'),
-                   model_uri=CULTUREMECH.solutionRecipe__data_quality_flags, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.solutionRecipe__sources = Slot(uri=CULTUREMECH.sources, name="solutionRecipe__sources", curie=CULTUREMECH.curie('sources'),
-                   model_uri=CULTUREMECH.solutionRecipe__sources, domain=None, range=Optional[Union[Union[dict, SourceReference], list[Union[dict, SourceReference]]]])
-
-slots.solutionRecipe__notes = Slot(uri=CULTUREMECH.notes, name="solutionRecipe__notes", curie=CULTUREMECH.curie('notes'),
-                   model_uri=CULTUREMECH.solutionRecipe__notes, domain=None, range=Optional[str])
-
-slots.recipeSynonym__name = Slot(uri=CULTUREMECH.name, name="recipeSynonym__name", curie=CULTUREMECH.curie('name'),
-                   model_uri=CULTUREMECH.recipeSynonym__name, domain=None, range=str)
-
-slots.recipeSynonym__source = Slot(uri=CULTUREMECH.source, name="recipeSynonym__source", curie=CULTUREMECH.curie('source'),
-                   model_uri=CULTUREMECH.recipeSynonym__source, domain=None, range=str)
-
-slots.recipeSynonym__source_id = Slot(uri=CULTUREMECH.source_id, name="recipeSynonym__source_id", curie=CULTUREMECH.curie('source_id'),
-                   model_uri=CULTUREMECH.recipeSynonym__source_id, domain=None, range=Optional[str])
-
-slots.recipeSynonym__original_category = Slot(uri=CULTUREMECH.original_category, name="recipeSynonym__original_category", curie=CULTUREMECH.curie('original_category'),
-                   model_uri=CULTUREMECH.recipeSynonym__original_category, domain=None, range=Optional[Union[str, "CategoryEnum"]])
-
-slots.mergeMetadata__merge_version = Slot(uri=CULTUREMECH.merge_version, name="mergeMetadata__merge_version", curie=CULTUREMECH.curie('merge_version'),
-                   model_uri=CULTUREMECH.mergeMetadata__merge_version, domain=None, range=Optional[str])
-
-slots.mergeMetadata__merge_mode = Slot(uri=CULTUREMECH.merge_mode, name="mergeMetadata__merge_mode", curie=CULTUREMECH.curie('merge_mode'),
-                   model_uri=CULTUREMECH.mergeMetadata__merge_mode, domain=None, range=Optional[Union[str, "MergeModeEnum"]])
-
-slots.mergeMetadata__merge_reason = Slot(uri=CULTUREMECH.merge_reason, name="mergeMetadata__merge_reason", curie=CULTUREMECH.curie('merge_reason'),
-                   model_uri=CULTUREMECH.mergeMetadata__merge_reason, domain=None, range=Optional[Union[str, "MergeReasonEnum"]])
-
-slots.mergeMetadata__merge_confidence = Slot(uri=CULTUREMECH.merge_confidence, name="mergeMetadata__merge_confidence", curie=CULTUREMECH.curie('merge_confidence'),
-                   model_uri=CULTUREMECH.mergeMetadata__merge_confidence, domain=None, range=Optional[float])
-
-slots.mergeMetadata__hierarchy_conflicts = Slot(uri=CULTUREMECH.hierarchy_conflicts, name="mergeMetadata__hierarchy_conflicts", curie=CULTUREMECH.curie('hierarchy_conflicts'),
-                   model_uri=CULTUREMECH.mergeMetadata__hierarchy_conflicts, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.mergeMetadata__fingerprint_mode = Slot(uri=CULTUREMECH.fingerprint_mode, name="mergeMetadata__fingerprint_mode", curie=CULTUREMECH.curie('fingerprint_mode'),
-                   model_uri=CULTUREMECH.mergeMetadata__fingerprint_mode, domain=None, range=Optional[Union[str, "FingerprintModeEnum"]])
-
-slots.term__id = Slot(uri=CULTUREMECH.id, name="term__id", curie=CULTUREMECH.curie('id'),
-                   model_uri=CULTUREMECH.term__id, domain=None, range=URIRef)
-
-slots.term__label = Slot(uri=RDFS.label, name="term__label", curie=RDFS.curie('label'),
-                   model_uri=CULTUREMECH.term__label, domain=None, range=Optional[str])
-
-slots.term__confidence = Slot(uri=CULTUREMECH.confidence, name="term__confidence", curie=CULTUREMECH.curie('confidence'),
-                   model_uri=CULTUREMECH.term__confidence, domain=None, range=Optional[float])
-
-slots.term__match_type = Slot(uri=CULTUREMECH.match_type, name="term__match_type", curie=CULTUREMECH.curie('match_type'),
-                   model_uri=CULTUREMECH.term__match_type, domain=None, range=Optional[Union[str, "TermMatchTypeEnum"]])
-
-slots.mediaTypeDescriptor__preferred_term = Slot(uri=CULTUREMECH.preferred_term, name="mediaTypeDescriptor__preferred_term", curie=CULTUREMECH.curie('preferred_term'),
-                   model_uri=CULTUREMECH.mediaTypeDescriptor__preferred_term, domain=None, range=str)
-
-slots.mediaTypeDescriptor__term = Slot(uri=CULTUREMECH.term, name="mediaTypeDescriptor__term", curie=CULTUREMECH.curie('term'),
-                   model_uri=CULTUREMECH.mediaTypeDescriptor__term, domain=None, range=Optional[Union[dict, MediaDatabaseTerm]])
-
-slots.ingredientDescriptor__preferred_term = Slot(uri=CULTUREMECH.preferred_term, name="ingredientDescriptor__preferred_term", curie=CULTUREMECH.curie('preferred_term'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__preferred_term, domain=None, range=str)
-
-slots.ingredientDescriptor__term = Slot(uri=CULTUREMECH.term, name="ingredientDescriptor__term", curie=CULTUREMECH.curie('term'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__term, domain=None, range=Optional[Union[dict, ChemicalEntityTerm]])
-
-slots.ingredientDescriptor__chebi_term = Slot(uri=CULTUREMECH.chebi_term, name="ingredientDescriptor__chebi_term", curie=CULTUREMECH.curie('chebi_term'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__chebi_term, domain=None, range=Optional[Union[dict, ChebiTerm]])
-
-slots.ingredientDescriptor__mediaingredientmech_term = Slot(uri=CULTUREMECH.mediaingredientmech_term, name="ingredientDescriptor__mediaingredientmech_term", curie=CULTUREMECH.curie('mediaingredientmech_term'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__mediaingredientmech_term, domain=None, range=Optional[Union[dict, MediaIngredientMechTerm]])
-
-slots.ingredientDescriptor__mediaingredientmech_chebi_term = Slot(uri=CULTUREMECH.mediaingredientmech_chebi_term, name="ingredientDescriptor__mediaingredientmech_chebi_term", curie=CULTUREMECH.curie('mediaingredientmech_chebi_term'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__mediaingredientmech_chebi_term, domain=None, range=Optional[Union[dict, MediaIngredientMechChebiTerm]])
-
-slots.ingredientDescriptor__culturemech_term = Slot(uri=CULTUREMECH.culturemech_term, name="ingredientDescriptor__culturemech_term", curie=CULTUREMECH.curie('culturemech_term'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__culturemech_term, domain=None, range=Optional[Union[dict, CultureMechTerm]])
-
-slots.ingredientDescriptor__parent_ingredient = Slot(uri=CULTUREMECH.parent_ingredient, name="ingredientDescriptor__parent_ingredient", curie=CULTUREMECH.curie('parent_ingredient'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__parent_ingredient, domain=None, range=Optional[Union[dict, IngredientReference]])
-
-slots.ingredientDescriptor__variant_type = Slot(uri=CULTUREMECH.variant_type, name="ingredientDescriptor__variant_type", curie=CULTUREMECH.curie('variant_type'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__variant_type, domain=None, range=Optional[Union[str, "VariantTypeEnum"]])
-
-slots.ingredientDescriptor__concentration = Slot(uri=CULTUREMECH.concentration, name="ingredientDescriptor__concentration", curie=CULTUREMECH.curie('concentration'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__concentration, domain=None, range=Optional[Union[dict, ConcentrationValue]])
-
-slots.ingredientDescriptor__modifier = Slot(uri=CULTUREMECH.modifier, name="ingredientDescriptor__modifier", curie=CULTUREMECH.curie('modifier'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__modifier, domain=None, range=Optional[Union[str, "ModifierEnum"]])
-
-slots.ingredientDescriptor__chemical_formula = Slot(uri=CULTUREMECH.chemical_formula, name="ingredientDescriptor__chemical_formula", curie=CULTUREMECH.curie('chemical_formula'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__chemical_formula, domain=None, range=Optional[str])
-
-slots.ingredientDescriptor__synonyms = Slot(uri=CULTUREMECH.synonyms, name="ingredientDescriptor__synonyms", curie=CULTUREMECH.curie('synonyms'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__synonyms, domain=None, range=Optional[Union[Union[dict, IngredientSynonym], list[Union[dict, IngredientSynonym]]]])
-
-slots.ingredientDescriptor__source = Slot(uri=CULTUREMECH.source, name="ingredientDescriptor__source", curie=CULTUREMECH.curie('source'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__source, domain=None, range=Optional[str])
-
-slots.ingredientDescriptor__curation_metadata = Slot(uri=CULTUREMECH.curation_metadata, name="ingredientDescriptor__curation_metadata", curie=CULTUREMECH.curie('curation_metadata'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__curation_metadata, domain=None, range=Optional[Union[dict, IngredientCurationMetadata]])
-
-slots.ingredientDescriptor__data_quality_flags = Slot(uri=CULTUREMECH.data_quality_flags, name="ingredientDescriptor__data_quality_flags", curie=CULTUREMECH.curie('data_quality_flags'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__data_quality_flags, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.ingredientDescriptor__molecular_weight = Slot(uri=CULTUREMECH.molecular_weight, name="ingredientDescriptor__molecular_weight", curie=CULTUREMECH.curie('molecular_weight'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__molecular_weight, domain=None, range=Optional[float])
-
-slots.ingredientDescriptor__supplier_catalog = Slot(uri=CULTUREMECH.supplier_catalog, name="ingredientDescriptor__supplier_catalog", curie=CULTUREMECH.curie('supplier_catalog'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__supplier_catalog, domain=None, range=Optional[Union[dict, SupplierInfo]])
-
-slots.ingredientDescriptor__notes = Slot(uri=CULTUREMECH.notes, name="ingredientDescriptor__notes", curie=CULTUREMECH.curie('notes'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__notes, domain=None, range=Optional[str])
-
-slots.ingredientDescriptor__nutritional_roles = Slot(uri=CULTUREMECH.nutritional_roles, name="ingredientDescriptor__nutritional_roles", curie=CULTUREMECH.curie('nutritional_roles'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__nutritional_roles, domain=None, range=Optional[Union[Union[str, "NutritionalRoleEnum"], list[Union[str, "NutritionalRoleEnum"]]]])
-
-slots.ingredientDescriptor__physicochemical_roles = Slot(uri=CULTUREMECH.physicochemical_roles, name="ingredientDescriptor__physicochemical_roles", curie=CULTUREMECH.curie('physicochemical_roles'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__physicochemical_roles, domain=None, range=Optional[Union[Union[str, "PhysicochemicalRoleEnum"], list[Union[str, "PhysicochemicalRoleEnum"]]]])
-
-slots.ingredientDescriptor__cellular_metabolic_roles = Slot(uri=CULTUREMECH.cellular_metabolic_roles, name="ingredientDescriptor__cellular_metabolic_roles", curie=CULTUREMECH.curie('cellular_metabolic_roles'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__cellular_metabolic_roles, domain=None, range=Optional[Union[Union[str, "CellularMetabolicRoleEnum"], list[Union[str, "CellularMetabolicRoleEnum"]]]])
-
-slots.ingredientDescriptor__role_curie = Slot(uri=CULTUREMECH.role_curie, name="ingredientDescriptor__role_curie", curie=CULTUREMECH.curie('role_curie'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__role_curie, domain=None, range=Optional[Union[Union[str, URIorCURIE], list[Union[str, URIorCURIE]]]])
-
-slots.ingredientDescriptor__cofactors_provided = Slot(uri=CULTUREMECH.cofactors_provided, name="ingredientDescriptor__cofactors_provided", curie=CULTUREMECH.curie('cofactors_provided'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__cofactors_provided, domain=None, range=Optional[Union[Union[dict, CofactorDescriptor], list[Union[dict, CofactorDescriptor]]]])
-
-slots.ingredientDescriptor__evidence = Slot(uri=CULTUREMECH.evidence, name="ingredientDescriptor__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
-
-slots.solutionDescriptor__preferred_term = Slot(uri=CULTUREMECH.preferred_term, name="solutionDescriptor__preferred_term", curie=CULTUREMECH.curie('preferred_term'),
-                   model_uri=CULTUREMECH.solutionDescriptor__preferred_term, domain=None, range=str)
-
-slots.solutionDescriptor__name = Slot(uri=CULTUREMECH.name, name="solutionDescriptor__name", curie=CULTUREMECH.curie('name'),
-                   model_uri=CULTUREMECH.solutionDescriptor__name, domain=None, range=Optional[str])
-
-slots.solutionDescriptor__notes = Slot(uri=CULTUREMECH.notes, name="solutionDescriptor__notes", curie=CULTUREMECH.curie('notes'),
-                   model_uri=CULTUREMECH.solutionDescriptor__notes, domain=None, range=Optional[str])
-
-slots.solutionDescriptor__source = Slot(uri=CULTUREMECH.source, name="solutionDescriptor__source", curie=CULTUREMECH.curie('source'),
-                   model_uri=CULTUREMECH.solutionDescriptor__source, domain=None, range=Optional[str])
-
-slots.solutionDescriptor__term = Slot(uri=CULTUREMECH.term, name="solutionDescriptor__term", curie=CULTUREMECH.curie('term'),
-                   model_uri=CULTUREMECH.solutionDescriptor__term, domain=None, range=Optional[Union[dict, Term]])
-
-slots.solutionDescriptor__mediaingredientmech_term = Slot(uri=CULTUREMECH.mediaingredientmech_term, name="solutionDescriptor__mediaingredientmech_term", curie=CULTUREMECH.curie('mediaingredientmech_term'),
-                   model_uri=CULTUREMECH.solutionDescriptor__mediaingredientmech_term, domain=None, range=Optional[Union[dict, MediaIngredientMechTerm]])
-
-slots.solutionDescriptor__mediaingredientmech_chebi_term = Slot(uri=CULTUREMECH.mediaingredientmech_chebi_term, name="solutionDescriptor__mediaingredientmech_chebi_term", curie=CULTUREMECH.curie('mediaingredientmech_chebi_term'),
-                   model_uri=CULTUREMECH.solutionDescriptor__mediaingredientmech_chebi_term, domain=None, range=Optional[Union[dict, MediaIngredientMechChebiTerm]])
-
-slots.solutionDescriptor__culturemech_term = Slot(uri=CULTUREMECH.culturemech_term, name="solutionDescriptor__culturemech_term", curie=CULTUREMECH.curie('culturemech_term'),
-                   model_uri=CULTUREMECH.solutionDescriptor__culturemech_term, domain=None, range=Optional[Union[dict, CultureMechTerm]])
-
-slots.solutionDescriptor__composition = Slot(uri=CULTUREMECH.composition, name="solutionDescriptor__composition", curie=CULTUREMECH.curie('composition'),
-                   model_uri=CULTUREMECH.solutionDescriptor__composition, domain=None, range=Optional[Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]]])
-
-slots.solutionDescriptor__solutions = Slot(uri=CULTUREMECH.solutions, name="solutionDescriptor__solutions", curie=CULTUREMECH.curie('solutions'),
-                   model_uri=CULTUREMECH.solutionDescriptor__solutions, domain=None, range=Optional[Union[Union[dict, SolutionDescriptor], list[Union[dict, SolutionDescriptor]]]])
-
-slots.solutionDescriptor__concentration = Slot(uri=CULTUREMECH.concentration, name="solutionDescriptor__concentration", curie=CULTUREMECH.curie('concentration'),
-                   model_uri=CULTUREMECH.solutionDescriptor__concentration, domain=None, range=Optional[Union[dict, ConcentrationValue]])
-
-slots.solutionDescriptor__concentration_candidates = Slot(uri=CULTUREMECH.concentration_candidates, name="solutionDescriptor__concentration_candidates", curie=CULTUREMECH.curie('concentration_candidates'),
-                   model_uri=CULTUREMECH.solutionDescriptor__concentration_candidates, domain=None, range=Optional[Union[Union[dict, ConcentrationCandidate], list[Union[dict, ConcentrationCandidate]]]])
-
-slots.solutionDescriptor__preparation_notes = Slot(uri=CULTUREMECH.preparation_notes, name="solutionDescriptor__preparation_notes", curie=CULTUREMECH.curie('preparation_notes'),
-                   model_uri=CULTUREMECH.solutionDescriptor__preparation_notes, domain=None, range=Optional[str])
-
-slots.solutionDescriptor__storage_conditions = Slot(uri=CULTUREMECH.storage_conditions, name="solutionDescriptor__storage_conditions", curie=CULTUREMECH.curie('storage_conditions'),
-                   model_uri=CULTUREMECH.solutionDescriptor__storage_conditions, domain=None, range=Optional[Union[dict, StorageConditions]])
-
-slots.solutionDescriptor__shelf_life = Slot(uri=CULTUREMECH.shelf_life, name="solutionDescriptor__shelf_life", curie=CULTUREMECH.curie('shelf_life'),
-                   model_uri=CULTUREMECH.solutionDescriptor__shelf_life, domain=None, range=Optional[str])
-
-slots.organismDescriptor__preferred_term = Slot(uri=CULTUREMECH.preferred_term, name="organismDescriptor__preferred_term", curie=CULTUREMECH.curie('preferred_term'),
-                   model_uri=CULTUREMECH.organismDescriptor__preferred_term, domain=None, range=URIRef)
-
-slots.organismDescriptor__term = Slot(uri=CULTUREMECH.term, name="organismDescriptor__term", curie=CULTUREMECH.curie('term'),
-                   model_uri=CULTUREMECH.organismDescriptor__term, domain=None, range=Optional[Union[dict, OrganismTerm]])
-
-slots.organismDescriptor__scoped_to_variant = Slot(uri=CULTUREMECH.scoped_to_variant, name="organismDescriptor__scoped_to_variant", curie=CULTUREMECH.curie('scoped_to_variant'),
-                   model_uri=CULTUREMECH.organismDescriptor__scoped_to_variant, domain=None, range=Optional[str])
-
-slots.organismDescriptor__gtdb_term = Slot(uri=CULTUREMECH.gtdb_term, name="organismDescriptor__gtdb_term", curie=CULTUREMECH.curie('gtdb_term'),
-                   model_uri=CULTUREMECH.organismDescriptor__gtdb_term, domain=None, range=Optional[Union[dict, GTDBTerm]])
-
-slots.organismDescriptor__genome_assembly_id = Slot(uri=CULTUREMECH.genome_assembly_id, name="organismDescriptor__genome_assembly_id", curie=CULTUREMECH.curie('genome_assembly_id'),
-                   model_uri=CULTUREMECH.organismDescriptor__genome_assembly_id, domain=None, range=Optional[Union[str, list[str]]],
-                   pattern=re.compile(r'^(GCF_|GCA_|SAMN)[0-9.]+$'))
-
-slots.organismDescriptor__strain = Slot(uri=CULTUREMECH.strain, name="organismDescriptor__strain", curie=CULTUREMECH.curie('strain'),
-                   model_uri=CULTUREMECH.organismDescriptor__strain, domain=None, range=Optional[str])
-
-slots.organismDescriptor__growth_phase = Slot(uri=CULTUREMECH.growth_phase, name="organismDescriptor__growth_phase", curie=CULTUREMECH.curie('growth_phase'),
-                   model_uri=CULTUREMECH.organismDescriptor__growth_phase, domain=None, range=Optional[Union[str, "GrowthPhaseEnum"]])
-
-slots.organismDescriptor__growth_metrics = Slot(uri=CULTUREMECH.growth_metrics, name="organismDescriptor__growth_metrics", curie=CULTUREMECH.curie('growth_metrics'),
-                   model_uri=CULTUREMECH.organismDescriptor__growth_metrics, domain=None, range=Optional[Union[Union[dict, GrowthMetrics], list[Union[dict, GrowthMetrics]]]])
-
-slots.organismDescriptor__community_role = Slot(uri=CULTUREMECH.community_role, name="organismDescriptor__community_role", curie=CULTUREMECH.curie('community_role'),
-                   model_uri=CULTUREMECH.organismDescriptor__community_role, domain=None, range=Optional[Union[Union[str, "CommunityOrganismRoleEnum"], list[Union[str, "CommunityOrganismRoleEnum"]]]])
-
-slots.organismDescriptor__target_abundance = Slot(uri=CULTUREMECH.target_abundance, name="organismDescriptor__target_abundance", curie=CULTUREMECH.curie('target_abundance'),
-                   model_uri=CULTUREMECH.organismDescriptor__target_abundance, domain=None, range=Optional[float])
-
-slots.organismDescriptor__community_function = Slot(uri=CULTUREMECH.community_function, name="organismDescriptor__community_function", curie=CULTUREMECH.curie('community_function'),
-                   model_uri=CULTUREMECH.organismDescriptor__community_function, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.organismDescriptor__cofactor_requirements = Slot(uri=CULTUREMECH.cofactor_requirements, name="organismDescriptor__cofactor_requirements", curie=CULTUREMECH.curie('cofactor_requirements'),
-                   model_uri=CULTUREMECH.organismDescriptor__cofactor_requirements, domain=None, range=Optional[Union[Union[dict, CofactorRequirement], list[Union[dict, CofactorRequirement]]]])
-
-slots.organismDescriptor__transporters = Slot(uri=CULTUREMECH.transporters, name="organismDescriptor__transporters", curie=CULTUREMECH.curie('transporters'),
-                   model_uri=CULTUREMECH.organismDescriptor__transporters, domain=None, range=Optional[Union[Union[dict, TransporterAnnotation], list[Union[dict, TransporterAnnotation]]]])
-
-slots.organismDescriptor__evidence = Slot(uri=CULTUREMECH.evidence, name="organismDescriptor__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.organismDescriptor__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
-
-slots.organismDescriptor__strain_modifications = Slot(uri=CULTUREMECH.strain_modifications, name="organismDescriptor__strain_modifications", curie=CULTUREMECH.curie('strain_modifications'),
-                   model_uri=CULTUREMECH.organismDescriptor__strain_modifications, domain=None, range=Optional[Union[Union[dict, StrainModification], list[Union[dict, StrainModification]]]])
-
-slots.sourceEnvironmentDescriptor__preferred_term = Slot(uri=CULTUREMECH.preferred_term, name="sourceEnvironmentDescriptor__preferred_term", curie=CULTUREMECH.curie('preferred_term'),
-                   model_uri=CULTUREMECH.sourceEnvironmentDescriptor__preferred_term, domain=None, range=str)
-
-slots.sourceEnvironmentDescriptor__term = Slot(uri=CULTUREMECH.term, name="sourceEnvironmentDescriptor__term", curie=CULTUREMECH.curie('term'),
-                   model_uri=CULTUREMECH.sourceEnvironmentDescriptor__term, domain=None, range=Optional[Union[dict, EnvironmentTerm]])
-
-slots.sourceEnvironmentDescriptor__notes = Slot(uri=CULTUREMECH.notes, name="sourceEnvironmentDescriptor__notes", curie=CULTUREMECH.curie('notes'),
-                   model_uri=CULTUREMECH.sourceEnvironmentDescriptor__notes, domain=None, range=Optional[str])
-
-slots.cofactorDescriptor__preferred_term = Slot(uri=CULTUREMECH.preferred_term, name="cofactorDescriptor__preferred_term", curie=CULTUREMECH.curie('preferred_term'),
-                   model_uri=CULTUREMECH.cofactorDescriptor__preferred_term, domain=None, range=str)
-
-slots.cofactorDescriptor__term = Slot(uri=CULTUREMECH.term, name="cofactorDescriptor__term", curie=CULTUREMECH.curie('term'),
-                   model_uri=CULTUREMECH.cofactorDescriptor__term, domain=None, range=Optional[Union[dict, ChemicalEntityTerm]])
-
-slots.cofactorDescriptor__category = Slot(uri=CULTUREMECH.category, name="cofactorDescriptor__category", curie=CULTUREMECH.curie('category'),
-                   model_uri=CULTUREMECH.cofactorDescriptor__category, domain=None, range=Optional[Union[str, "CofactorCategoryEnum"]])
-
-slots.cofactorDescriptor__precursor = Slot(uri=CULTUREMECH.precursor, name="cofactorDescriptor__precursor", curie=CULTUREMECH.curie('precursor'),
-                   model_uri=CULTUREMECH.cofactorDescriptor__precursor, domain=None, range=Optional[str])
-
-slots.cofactorDescriptor__precursor_term = Slot(uri=CULTUREMECH.precursor_term, name="cofactorDescriptor__precursor_term", curie=CULTUREMECH.curie('precursor_term'),
-                   model_uri=CULTUREMECH.cofactorDescriptor__precursor_term, domain=None, range=Optional[Union[dict, ChemicalEntityTerm]])
-
-slots.cofactorDescriptor__ec_associations = Slot(uri=CULTUREMECH.ec_associations, name="cofactorDescriptor__ec_associations", curie=CULTUREMECH.curie('ec_associations'),
-                   model_uri=CULTUREMECH.cofactorDescriptor__ec_associations, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.cofactorDescriptor__kegg_pathways = Slot(uri=CULTUREMECH.kegg_pathways, name="cofactorDescriptor__kegg_pathways", curie=CULTUREMECH.curie('kegg_pathways'),
-                   model_uri=CULTUREMECH.cofactorDescriptor__kegg_pathways, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.cofactorDescriptor__enzyme_examples = Slot(uri=CULTUREMECH.enzyme_examples, name="cofactorDescriptor__enzyme_examples", curie=CULTUREMECH.curie('enzyme_examples'),
-                   model_uri=CULTUREMECH.cofactorDescriptor__enzyme_examples, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.cofactorDescriptor__biosynthesis_genes = Slot(uri=CULTUREMECH.biosynthesis_genes, name="cofactorDescriptor__biosynthesis_genes", curie=CULTUREMECH.curie('biosynthesis_genes'),
-                   model_uri=CULTUREMECH.cofactorDescriptor__biosynthesis_genes, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.cofactorDescriptor__bioavailability = Slot(uri=CULTUREMECH.bioavailability, name="cofactorDescriptor__bioavailability", curie=CULTUREMECH.curie('bioavailability'),
-                   model_uri=CULTUREMECH.cofactorDescriptor__bioavailability, domain=None, range=Optional[str])
-
-slots.cofactorDescriptor__notes = Slot(uri=CULTUREMECH.notes, name="cofactorDescriptor__notes", curie=CULTUREMECH.curie('notes'),
-                   model_uri=CULTUREMECH.cofactorDescriptor__notes, domain=None, range=Optional[str])
-
-slots.sourceReference__database = Slot(uri=CULTUREMECH.database, name="sourceReference__database", curie=CULTUREMECH.curie('database'),
-                   model_uri=CULTUREMECH.sourceReference__database, domain=None, range=str)
-
-slots.sourceReference__database_id = Slot(uri=CULTUREMECH.database_id, name="sourceReference__database_id", curie=CULTUREMECH.curie('database_id'),
-                   model_uri=CULTUREMECH.sourceReference__database_id, domain=None, range=Optional[str])
-
-slots.sourceReference__url = Slot(uri=CULTUREMECH.url, name="sourceReference__url", curie=CULTUREMECH.curie('url'),
-                   model_uri=CULTUREMECH.sourceReference__url, domain=None, range=Optional[str])
-
-slots.ingredientSynonym__synonym_text = Slot(uri=CULTUREMECH.synonym_text, name="ingredientSynonym__synonym_text", curie=CULTUREMECH.curie('synonym_text'),
-                   model_uri=CULTUREMECH.ingredientSynonym__synonym_text, domain=None, range=str)
-
-slots.ingredientSynonym__synonym_type = Slot(uri=CULTUREMECH.synonym_type, name="ingredientSynonym__synonym_type", curie=CULTUREMECH.curie('synonym_type'),
-                   model_uri=CULTUREMECH.ingredientSynonym__synonym_type, domain=None, range=Optional[Union[str, "SynonymTypeEnum"]])
-
-slots.ingredientCurationMetadata__mapping_quality = Slot(uri=CULTUREMECH.mapping_quality, name="ingredientCurationMetadata__mapping_quality", curie=CULTUREMECH.curie('mapping_quality'),
-                   model_uri=CULTUREMECH.ingredientCurationMetadata__mapping_quality, domain=None, range=Optional[str])
-
-slots.ingredientCurationMetadata__confidence_score = Slot(uri=CULTUREMECH.confidence_score, name="ingredientCurationMetadata__confidence_score", curie=CULTUREMECH.curie('confidence_score'),
-                   model_uri=CULTUREMECH.ingredientCurationMetadata__confidence_score, domain=None, range=Optional[float])
-
-slots.ingredientCurationMetadata__curation_date = Slot(uri=CULTUREMECH.curation_date, name="ingredientCurationMetadata__curation_date", curie=CULTUREMECH.curie('curation_date'),
-                   model_uri=CULTUREMECH.ingredientCurationMetadata__curation_date, domain=None, range=Optional[str])
-
-slots.ingredientCurationMetadata__ontology_source = Slot(uri=CULTUREMECH.ontology_source, name="ingredientCurationMetadata__ontology_source", curie=CULTUREMECH.curie('ontology_source'),
-                   model_uri=CULTUREMECH.ingredientCurationMetadata__ontology_source, domain=None, range=Optional[str])
-
-slots.ingredientReference__preferred_term = Slot(uri=CULTUREMECH.preferred_term, name="ingredientReference__preferred_term", curie=CULTUREMECH.curie('preferred_term'),
-                   model_uri=CULTUREMECH.ingredientReference__preferred_term, domain=None, range=str)
-
-slots.ingredientReference__mediaingredientmech_id = Slot(uri=CULTUREMECH.mediaingredientmech_id, name="ingredientReference__mediaingredientmech_id", curie=CULTUREMECH.curie('mediaingredientmech_id'),
-                   model_uri=CULTUREMECH.ingredientReference__mediaingredientmech_id, domain=None, range=Optional[str],
-                   pattern=re.compile(r'^MediaIngredientMech:\d{6}$'))
-
-slots.concentrationValue__value = Slot(uri=CULTUREMECH.value, name="concentrationValue__value", curie=CULTUREMECH.curie('value'),
-                   model_uri=CULTUREMECH.concentrationValue__value, domain=None, range=str)
-
-slots.concentrationValue__unit = Slot(uri=CULTUREMECH.unit, name="concentrationValue__unit", curie=CULTUREMECH.curie('unit'),
-                   model_uri=CULTUREMECH.concentrationValue__unit, domain=None, range=Union[str, "ConcentrationUnitEnum"])
-
-slots.concentrationValue__per_volume = Slot(uri=CULTUREMECH.per_volume, name="concentrationValue__per_volume", curie=CULTUREMECH.curie('per_volume'),
-                   model_uri=CULTUREMECH.concentrationValue__per_volume, domain=None, range=Optional[str])
-
-slots.concentrationCandidate__value = Slot(uri=CULTUREMECH.value, name="concentrationCandidate__value", curie=CULTUREMECH.curie('value'),
-                   model_uri=CULTUREMECH.concentrationCandidate__value, domain=None, range=str)
-
-slots.concentrationCandidate__unit = Slot(uri=CULTUREMECH.unit, name="concentrationCandidate__unit", curie=CULTUREMECH.curie('unit'),
-                   model_uri=CULTUREMECH.concentrationCandidate__unit, domain=None, range=Union[str, "ConcentrationUnitEnum"])
-
-slots.concentrationCandidate__basis = Slot(uri=CULTUREMECH.basis, name="concentrationCandidate__basis", curie=CULTUREMECH.curie('basis'),
-                   model_uri=CULTUREMECH.concentrationCandidate__basis, domain=None, range=Union[str, "ConcentrationBasisEnum"])
-
-slots.concentrationCandidate__support = Slot(uri=CULTUREMECH.support, name="concentrationCandidate__support", curie=CULTUREMECH.curie('support'),
-                   model_uri=CULTUREMECH.concentrationCandidate__support, domain=None, range=Optional[str])
-
-slots.concentrationCandidate__counterevidence = Slot(uri=CULTUREMECH.counterevidence, name="concentrationCandidate__counterevidence", curie=CULTUREMECH.curie('counterevidence'),
-                   model_uri=CULTUREMECH.concentrationCandidate__counterevidence, domain=None, range=Optional[str])
-
-slots.concentrationCandidate__source = Slot(uri=CULTUREMECH.source, name="concentrationCandidate__source", curie=CULTUREMECH.curie('source'),
-                   model_uri=CULTUREMECH.concentrationCandidate__source, domain=None, range=Optional[str])
-
-slots.concentrationCandidate__proposed_by = Slot(uri=CULTUREMECH.proposed_by, name="concentrationCandidate__proposed_by", curie=CULTUREMECH.curie('proposed_by'),
-                   model_uri=CULTUREMECH.concentrationCandidate__proposed_by, domain=None, range=Optional[str])
-
-slots.concentrationCandidate__proposed_on = Slot(uri=CULTUREMECH.proposed_on, name="concentrationCandidate__proposed_on", curie=CULTUREMECH.curie('proposed_on'),
-                   model_uri=CULTUREMECH.concentrationCandidate__proposed_on, domain=None, range=Optional[str])
-
-slots.growthMetrics__max_od600 = Slot(uri=CULTUREMECH.max_od600, name="growthMetrics__max_od600", curie=CULTUREMECH.curie('max_od600'),
-                   model_uri=CULTUREMECH.growthMetrics__max_od600, domain=None, range=Optional[float])
-
-slots.growthMetrics__max_od_wavelength_nm = Slot(uri=CULTUREMECH.max_od_wavelength_nm, name="growthMetrics__max_od_wavelength_nm", curie=CULTUREMECH.curie('max_od_wavelength_nm'),
-                   model_uri=CULTUREMECH.growthMetrics__max_od_wavelength_nm, domain=None, range=Optional[int])
-
-slots.growthMetrics__doubling_time_minutes = Slot(uri=CULTUREMECH.doubling_time_minutes, name="growthMetrics__doubling_time_minutes", curie=CULTUREMECH.curie('doubling_time_minutes'),
-                   model_uri=CULTUREMECH.growthMetrics__doubling_time_minutes, domain=None, range=Optional[float])
-
-slots.growthMetrics__growth_rate_per_hour = Slot(uri=CULTUREMECH.growth_rate_per_hour, name="growthMetrics__growth_rate_per_hour", curie=CULTUREMECH.curie('growth_rate_per_hour'),
-                   model_uri=CULTUREMECH.growthMetrics__growth_rate_per_hour, domain=None, range=Optional[float])
-
-slots.growthMetrics__temperature_celsius = Slot(uri=CULTUREMECH.temperature_celsius, name="growthMetrics__temperature_celsius", curie=CULTUREMECH.curie('temperature_celsius'),
-                   model_uri=CULTUREMECH.growthMetrics__temperature_celsius, domain=None, range=Optional[float])
-
-slots.growthMetrics__ph_at_measurement = Slot(uri=CULTUREMECH.ph_at_measurement, name="growthMetrics__ph_at_measurement", curie=CULTUREMECH.curie('ph_at_measurement'),
-                   model_uri=CULTUREMECH.growthMetrics__ph_at_measurement, domain=None, range=Optional[float])
-
-slots.growthMetrics__measurement_conditions = Slot(uri=CULTUREMECH.measurement_conditions, name="growthMetrics__measurement_conditions", curie=CULTUREMECH.curie('measurement_conditions'),
-                   model_uri=CULTUREMECH.growthMetrics__measurement_conditions, domain=None, range=Optional[str])
-
-slots.growthMetrics__evidence = Slot(uri=CULTUREMECH.evidence, name="growthMetrics__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.growthMetrics__evidence, domain=None, range=Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]])
-
-slots.growthMetrics__is_max_attainment = Slot(uri=CULTUREMECH.is_max_attainment, name="growthMetrics__is_max_attainment", curie=CULTUREMECH.curie('is_max_attainment'),
-                   model_uri=CULTUREMECH.growthMetrics__is_max_attainment, domain=None, range=Optional[Union[bool, Bool]])
-
-slots.growthMetrics__growth_mode = Slot(uri=CULTUREMECH.growth_mode, name="growthMetrics__growth_mode", curie=CULTUREMECH.curie('growth_mode'),
-                   model_uri=CULTUREMECH.growthMetrics__growth_mode, domain=None, range=Optional[Union[str, "GrowthModeEnum"]])
-
-slots.growthMetrics__perturbations = Slot(uri=CULTUREMECH.perturbations, name="growthMetrics__perturbations", curie=CULTUREMECH.curie('perturbations'),
-                   model_uri=CULTUREMECH.growthMetrics__perturbations, domain=None, range=Optional[Union[Union[dict, PerturbationContext], list[Union[dict, PerturbationContext]]]])
-
-slots.growthMetrics__nutrient_overrides = Slot(uri=CULTUREMECH.nutrient_overrides, name="growthMetrics__nutrient_overrides", curie=CULTUREMECH.curie('nutrient_overrides'),
-                   model_uri=CULTUREMECH.growthMetrics__nutrient_overrides, domain=None, range=Optional[Union[Union[dict, NutrientOverride], list[Union[dict, NutrientOverride]]]])
-
-slots.perturbationContext__perturbation_type = Slot(uri=CULTUREMECH.perturbation_type, name="perturbationContext__perturbation_type", curie=CULTUREMECH.curie('perturbation_type'),
-                   model_uri=CULTUREMECH.perturbationContext__perturbation_type, domain=None, range=Union[str, "PerturbationTypeEnum"])
-
-slots.perturbationContext__descriptor = Slot(uri=CULTUREMECH.descriptor, name="perturbationContext__descriptor", curie=CULTUREMECH.curie('descriptor'),
-                   model_uri=CULTUREMECH.perturbationContext__descriptor, domain=None, range=Optional[str])
-
-slots.perturbationContext__target = Slot(uri=CULTUREMECH.target, name="perturbationContext__target", curie=CULTUREMECH.curie('target'),
-                   model_uri=CULTUREMECH.perturbationContext__target, domain=None, range=Optional[str])
-
-slots.perturbationContext__level = Slot(uri=CULTUREMECH.level, name="perturbationContext__level", curie=CULTUREMECH.curie('level'),
-                   model_uri=CULTUREMECH.perturbationContext__level, domain=None, range=Optional[float])
-
-slots.perturbationContext__level_unit = Slot(uri=CULTUREMECH.level_unit, name="perturbationContext__level_unit", curie=CULTUREMECH.curie('level_unit'),
-                   model_uri=CULTUREMECH.perturbationContext__level_unit, domain=None, range=Optional[str])
-
-slots.perturbationContext__ontology_id = Slot(uri=CULTUREMECH.ontology_id, name="perturbationContext__ontology_id", curie=CULTUREMECH.curie('ontology_id'),
-                   model_uri=CULTUREMECH.perturbationContext__ontology_id, domain=None, range=Optional[str],
-                   pattern=re.compile(r'^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$'))
-
-slots.perturbationContext__evidence = Slot(uri=CULTUREMECH.evidence, name="perturbationContext__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.perturbationContext__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
-
-slots.strainModification__modification_type = Slot(uri=CULTUREMECH.modification_type, name="strainModification__modification_type", curie=CULTUREMECH.curie('modification_type'),
-                   model_uri=CULTUREMECH.strainModification__modification_type, domain=None, range=Union[str, "StrainModificationTypeEnum"])
-
-slots.strainModification__target = Slot(uri=CULTUREMECH.target, name="strainModification__target", curie=CULTUREMECH.curie('target'),
-                   model_uri=CULTUREMECH.strainModification__target, domain=None, range=Optional[str])
-
-slots.strainModification__description = Slot(uri=CULTUREMECH.description, name="strainModification__description", curie=CULTUREMECH.curie('description'),
-                   model_uri=CULTUREMECH.strainModification__description, domain=None, range=Optional[str])
-
-slots.strainModification__ontology_id = Slot(uri=CULTUREMECH.ontology_id, name="strainModification__ontology_id", curie=CULTUREMECH.curie('ontology_id'),
-                   model_uri=CULTUREMECH.strainModification__ontology_id, domain=None, range=Optional[str],
-                   pattern=re.compile(r'^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$'))
-
-slots.strainModification__evidence = Slot(uri=CULTUREMECH.evidence, name="strainModification__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.strainModification__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
-
-slots.nutrientOverride__role = Slot(uri=CULTUREMECH.role, name="nutrientOverride__role", curie=CULTUREMECH.curie('role'),
-                   model_uri=CULTUREMECH.nutrientOverride__role, domain=None, range=Union[str, "NutritionalRoleEnum"])
-
-slots.nutrientOverride__source = Slot(uri=CULTUREMECH.source, name="nutrientOverride__source", curie=CULTUREMECH.curie('source'),
-                   model_uri=CULTUREMECH.nutrientOverride__source, domain=None, range=str)
-
-slots.nutrientOverride__ontology_id = Slot(uri=CULTUREMECH.ontology_id, name="nutrientOverride__ontology_id", curie=CULTUREMECH.curie('ontology_id'),
-                   model_uri=CULTUREMECH.nutrientOverride__ontology_id, domain=None, range=Optional[str],
-                   pattern=re.compile(r'^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$'))
-
-slots.nutrientOverride__is_sole_source = Slot(uri=CULTUREMECH.is_sole_source, name="nutrientOverride__is_sole_source", curie=CULTUREMECH.curie('is_sole_source'),
-                   model_uri=CULTUREMECH.nutrientOverride__is_sole_source, domain=None, range=Optional[Union[bool, Bool]])
-
-slots.nutrientOverride__evidence = Slot(uri=CULTUREMECH.evidence, name="nutrientOverride__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.nutrientOverride__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
-
-slots.temperatureValue__value = Slot(uri=CULTUREMECH.value, name="temperatureValue__value", curie=CULTUREMECH.curie('value'),
-                   model_uri=CULTUREMECH.temperatureValue__value, domain=None, range=float)
-
-slots.temperatureValue__unit = Slot(uri=CULTUREMECH.unit, name="temperatureValue__unit", curie=CULTUREMECH.curie('unit'),
-                   model_uri=CULTUREMECH.temperatureValue__unit, domain=None, range=Union[str, "TemperatureUnitEnum"])
-
-slots.phRange__min = Slot(uri=CULTUREMECH.min, name="phRange__min", curie=CULTUREMECH.curie('min'),
-                   model_uri=CULTUREMECH.phRange__min, domain=None, range=Optional[float])
-
-slots.phRange__max = Slot(uri=CULTUREMECH.max, name="phRange__max", curie=CULTUREMECH.curie('max'),
-                   model_uri=CULTUREMECH.phRange__max, domain=None, range=Optional[float])
-
-slots.phRange__notes = Slot(uri=CULTUREMECH.notes, name="phRange__notes", curie=CULTUREMECH.curie('notes'),
-                   model_uri=CULTUREMECH.phRange__notes, domain=None, range=Optional[str])
-
-slots.preparationStep__step_number = Slot(uri=CULTUREMECH.step_number, name="preparationStep__step_number", curie=CULTUREMECH.curie('step_number'),
-                   model_uri=CULTUREMECH.preparationStep__step_number, domain=None, range=int)
-
-slots.preparationStep__action = Slot(uri=CULTUREMECH.action, name="preparationStep__action", curie=CULTUREMECH.curie('action'),
-                   model_uri=CULTUREMECH.preparationStep__action, domain=None, range=Union[str, "PreparationActionEnum"])
-
-slots.preparationStep__description = Slot(uri=CULTUREMECH.description, name="preparationStep__description", curie=CULTUREMECH.curie('description'),
-                   model_uri=CULTUREMECH.preparationStep__description, domain=None, range=str)
-
-slots.preparationStep__temperature = Slot(uri=CULTUREMECH.temperature, name="preparationStep__temperature", curie=CULTUREMECH.curie('temperature'),
-                   model_uri=CULTUREMECH.preparationStep__temperature, domain=None, range=Optional[Union[dict, TemperatureValue]])
-
-slots.preparationStep__duration = Slot(uri=CULTUREMECH.duration, name="preparationStep__duration", curie=CULTUREMECH.curie('duration'),
-                   model_uri=CULTUREMECH.preparationStep__duration, domain=None, range=Optional[str])
-
-slots.preparationStep__equipment = Slot(uri=CULTUREMECH.equipment, name="preparationStep__equipment", curie=CULTUREMECH.curie('equipment'),
-                   model_uri=CULTUREMECH.preparationStep__equipment, domain=None, range=Optional[str])
-
-slots.preparationStep__notes = Slot(uri=CULTUREMECH.notes, name="preparationStep__notes", curie=CULTUREMECH.curie('notes'),
-                   model_uri=CULTUREMECH.preparationStep__notes, domain=None, range=Optional[str])
-
-slots.sterilizationDescriptor__method = Slot(uri=CULTUREMECH.method, name="sterilizationDescriptor__method", curie=CULTUREMECH.curie('method'),
-                   model_uri=CULTUREMECH.sterilizationDescriptor__method, domain=None, range=Union[str, "SterilizationMethodEnum"])
-
-slots.sterilizationDescriptor__temperature = Slot(uri=CULTUREMECH.temperature, name="sterilizationDescriptor__temperature", curie=CULTUREMECH.curie('temperature'),
-                   model_uri=CULTUREMECH.sterilizationDescriptor__temperature, domain=None, range=Optional[Union[dict, TemperatureValue]])
-
-slots.sterilizationDescriptor__pressure = Slot(uri=CULTUREMECH.pressure, name="sterilizationDescriptor__pressure", curie=CULTUREMECH.curie('pressure'),
-                   model_uri=CULTUREMECH.sterilizationDescriptor__pressure, domain=None, range=Optional[float])
-
-slots.sterilizationDescriptor__duration = Slot(uri=CULTUREMECH.duration, name="sterilizationDescriptor__duration", curie=CULTUREMECH.curie('duration'),
-                   model_uri=CULTUREMECH.sterilizationDescriptor__duration, domain=None, range=Optional[str])
-
-slots.sterilizationDescriptor__notes = Slot(uri=CULTUREMECH.notes, name="sterilizationDescriptor__notes", curie=CULTUREMECH.curie('notes'),
-                   model_uri=CULTUREMECH.sterilizationDescriptor__notes, domain=None, range=Optional[str])
-
-slots.storageConditions__temperature = Slot(uri=CULTUREMECH.temperature, name="storageConditions__temperature", curie=CULTUREMECH.curie('temperature'),
-                   model_uri=CULTUREMECH.storageConditions__temperature, domain=None, range=Union[dict, TemperatureValue])
-
-slots.storageConditions__light_condition = Slot(uri=CULTUREMECH.light_condition, name="storageConditions__light_condition", curie=CULTUREMECH.curie('light_condition'),
-                   model_uri=CULTUREMECH.storageConditions__light_condition, domain=None, range=Optional[Union[str, "LightConditionEnum"]])
-
-slots.storageConditions__shelf_life = Slot(uri=CULTUREMECH.shelf_life, name="storageConditions__shelf_life", curie=CULTUREMECH.curie('shelf_life'),
-                   model_uri=CULTUREMECH.storageConditions__shelf_life, domain=None, range=Optional[str])
-
-slots.storageConditions__container_type = Slot(uri=CULTUREMECH.container_type, name="storageConditions__container_type", curie=CULTUREMECH.curie('container_type'),
-                   model_uri=CULTUREMECH.storageConditions__container_type, domain=None, range=Optional[str])
-
-slots.storageConditions__notes = Slot(uri=CULTUREMECH.notes, name="storageConditions__notes", curie=CULTUREMECH.curie('notes'),
-                   model_uri=CULTUREMECH.storageConditions__notes, domain=None, range=Optional[str])
-
-slots.mediaVariant__name = Slot(uri=CULTUREMECH.name, name="mediaVariant__name", curie=CULTUREMECH.curie('name'),
-                   model_uri=CULTUREMECH.mediaVariant__name, domain=None, range=URIRef)
-
-slots.mediaVariant__relationship = Slot(uri=CULTUREMECH.relationship, name="mediaVariant__relationship", curie=CULTUREMECH.curie('relationship'),
-                   model_uri=CULTUREMECH.mediaVariant__relationship, domain=None, range=Optional[Union[str, "MediaVariantRelationshipEnum"]])
-
-slots.mediaVariant__description = Slot(uri=CULTUREMECH.description, name="mediaVariant__description", curie=CULTUREMECH.curie('description'),
-                   model_uri=CULTUREMECH.mediaVariant__description, domain=None, range=Optional[str])
-
-slots.mediaVariant__modifications = Slot(uri=CULTUREMECH.modifications, name="mediaVariant__modifications", curie=CULTUREMECH.curie('modifications'),
-                   model_uri=CULTUREMECH.mediaVariant__modifications, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.mediaVariant__purpose = Slot(uri=CULTUREMECH.purpose, name="mediaVariant__purpose", curie=CULTUREMECH.curie('purpose'),
-                   model_uri=CULTUREMECH.mediaVariant__purpose, domain=None, range=Optional[str])
-
-slots.mediaVariant__supplier_info = Slot(uri=CULTUREMECH.supplier_info, name="mediaVariant__supplier_info", curie=CULTUREMECH.curie('supplier_info'),
-                   model_uri=CULTUREMECH.mediaVariant__supplier_info, domain=None, range=Optional[Union[dict, SupplierInfo]])
-
-slots.mediaVariant__evidence = Slot(uri=CULTUREMECH.evidence, name="mediaVariant__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.mediaVariant__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
-
-slots.mediaRecipeReference__id = Slot(uri=CULTUREMECH.id, name="mediaRecipeReference__id", curie=CULTUREMECH.curie('id'),
-                   model_uri=CULTUREMECH.mediaRecipeReference__id, domain=None, range=Optional[str],
-                   pattern=re.compile(r'^CultureMech:\d{6}$'))
-
-slots.mediaRecipeReference__name = Slot(uri=CULTUREMECH.name, name="mediaRecipeReference__name", curie=CULTUREMECH.curie('name'),
-                   model_uri=CULTUREMECH.mediaRecipeReference__name, domain=None, range=Optional[str])
-
-slots.mediaRecipeReference__path = Slot(uri=CULTUREMECH.path, name="mediaRecipeReference__path", curie=CULTUREMECH.curie('path'),
-                   model_uri=CULTUREMECH.mediaRecipeReference__path, domain=None, range=Optional[str],
-                   pattern=re.compile(r'^data/normalized_yaml/.+\.ya?ml$'))
-
-slots.mediaRecipeReference__relationship = Slot(uri=CULTUREMECH.relationship, name="mediaRecipeReference__relationship", curie=CULTUREMECH.curie('relationship'),
-                   model_uri=CULTUREMECH.mediaRecipeReference__relationship, domain=None, range=Optional[Union[str, "MediaVariantRelationshipEnum"]])
-
-slots.mediaRecipeReference__notes = Slot(uri=CULTUREMECH.notes, name="mediaRecipeReference__notes", curie=CULTUREMECH.curie('notes'),
-                   model_uri=CULTUREMECH.mediaRecipeReference__notes, domain=None, range=Optional[str])
-
-slots.mediaRecipeReference__evidence = Slot(uri=CULTUREMECH.evidence, name="mediaRecipeReference__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.mediaRecipeReference__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
-
-slots.supplierInfo__supplier_name = Slot(uri=CULTUREMECH.supplier_name, name="supplierInfo__supplier_name", curie=CULTUREMECH.curie('supplier_name'),
-                   model_uri=CULTUREMECH.supplierInfo__supplier_name, domain=None, range=str)
-
-slots.supplierInfo__catalog_number = Slot(uri=CULTUREMECH.catalog_number, name="supplierInfo__catalog_number", curie=CULTUREMECH.curie('catalog_number'),
-                   model_uri=CULTUREMECH.supplierInfo__catalog_number, domain=None, range=Optional[str])
-
-slots.supplierInfo__product_url = Slot(uri=CULTUREMECH.product_url, name="supplierInfo__product_url", curie=CULTUREMECH.curie('product_url'),
-                   model_uri=CULTUREMECH.supplierInfo__product_url, domain=None, range=Optional[Union[str, URI]])
-
-slots.supplierInfo__notes = Slot(uri=CULTUREMECH.notes, name="supplierInfo__notes", curie=CULTUREMECH.curie('notes'),
-                   model_uri=CULTUREMECH.supplierInfo__notes, domain=None, range=Optional[str])
-
-slots.publicationReference__reference = Slot(uri=CULTUREMECH.reference, name="publicationReference__reference", curie=CULTUREMECH.curie('reference'),
-                   model_uri=CULTUREMECH.publicationReference__reference, domain=None, range=str)
-
-slots.publicationReference__title = Slot(uri=CULTUREMECH.title, name="publicationReference__title", curie=CULTUREMECH.curie('title'),
-                   model_uri=CULTUREMECH.publicationReference__title, domain=None, range=Optional[str])
-
-slots.publicationReference__authors = Slot(uri=CULTUREMECH.authors, name="publicationReference__authors", curie=CULTUREMECH.curie('authors'),
-                   model_uri=CULTUREMECH.publicationReference__authors, domain=None, range=Optional[str])
-
-slots.publicationReference__year = Slot(uri=CULTUREMECH.year, name="publicationReference__year", curie=CULTUREMECH.curie('year'),
-                   model_uri=CULTUREMECH.publicationReference__year, domain=None, range=Optional[int])
-
-slots.publicationReference__notes = Slot(uri=CULTUREMECH.notes, name="publicationReference__notes", curie=CULTUREMECH.curie('notes'),
-                   model_uri=CULTUREMECH.publicationReference__notes, domain=None, range=Optional[str])
-
-slots.evidenceItem__reference = Slot(uri=CULTUREMECH.reference, name="evidenceItem__reference", curie=CULTUREMECH.curie('reference'),
-                   model_uri=CULTUREMECH.evidenceItem__reference, domain=None, range=URIRef)
-
-slots.evidenceItem__supports = Slot(uri=CULTUREMECH.supports, name="evidenceItem__supports", curie=CULTUREMECH.curie('supports'),
-                   model_uri=CULTUREMECH.evidenceItem__supports, domain=None, range=Union[str, "EvidenceItemSupportEnum"])
-
-slots.evidenceItem__snippet = Slot(uri=CULTUREMECH.snippet, name="evidenceItem__snippet", curie=CULTUREMECH.curie('snippet'),
-                   model_uri=CULTUREMECH.evidenceItem__snippet, domain=None, range=Optional[str])
-
-slots.evidenceItem__explanation = Slot(uri=CULTUREMECH.explanation, name="evidenceItem__explanation", curie=CULTUREMECH.curie('explanation'),
-                   model_uri=CULTUREMECH.evidenceItem__explanation, domain=None, range=str)
-
-slots.curationEvent__timestamp = Slot(uri=CULTUREMECH.timestamp, name="curationEvent__timestamp", curie=CULTUREMECH.curie('timestamp'),
-                   model_uri=CULTUREMECH.curationEvent__timestamp, domain=None, range=str,
-                   pattern=re.compile(r'^20[0-9]{2}-'))
-
-slots.curationEvent__curator = Slot(uri=CULTUREMECH.curator, name="curationEvent__curator", curie=CULTUREMECH.curie('curator'),
-                   model_uri=CULTUREMECH.curationEvent__curator, domain=None, range=str)
-
-slots.curationEvent__action = Slot(uri=CULTUREMECH.action, name="curationEvent__action", curie=CULTUREMECH.curie('action'),
-                   model_uri=CULTUREMECH.curationEvent__action, domain=None, range=str)
-
-slots.curationEvent__notes = Slot(uri=CULTUREMECH.notes, name="curationEvent__notes", curie=CULTUREMECH.curie('notes'),
-                   model_uri=CULTUREMECH.curationEvent__notes, domain=None, range=Optional[str])
-
-slots.curationEvent__changes = Slot(uri=CULTUREMECH.changes, name="curationEvent__changes", curie=CULTUREMECH.curie('changes'),
-                   model_uri=CULTUREMECH.curationEvent__changes, domain=None, range=Optional[str])
-
-slots.curationEvent__source = Slot(uri=CULTUREMECH.source, name="curationEvent__source", curie=CULTUREMECH.curie('source'),
-                   model_uri=CULTUREMECH.curationEvent__source, domain=None, range=Optional[str])
-
-slots.sourceData__origin = Slot(uri=CULTUREMECH.origin, name="sourceData__origin", curie=CULTUREMECH.curie('origin'),
-                   model_uri=CULTUREMECH.sourceData__origin, domain=None, range=str)
-
-slots.sourceData__community_ids = Slot(uri=CULTUREMECH.community_ids, name="sourceData__community_ids", curie=CULTUREMECH.curie('community_ids'),
-                   model_uri=CULTUREMECH.sourceData__community_ids, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.sourceData__import_date = Slot(uri=CULTUREMECH.import_date, name="sourceData__import_date", curie=CULTUREMECH.curie('import_date'),
-                   model_uri=CULTUREMECH.sourceData__import_date, domain=None, range=Optional[str])
-
-slots.sourceData__evidence = Slot(uri=CULTUREMECH.evidence, name="sourceData__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.sourceData__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
-
-slots.sourceData__notes = Slot(uri=CULTUREMECH.notes, name="sourceData__notes", curie=CULTUREMECH.curie('notes'),
-                   model_uri=CULTUREMECH.sourceData__notes, domain=None, range=Optional[str])
-
-slots.sourceData__mediaingredientmech_id = Slot(uri=CULTUREMECH.mediaingredientmech_id, name="sourceData__mediaingredientmech_id", curie=CULTUREMECH.curie('mediaingredientmech_id'),
-                   model_uri=CULTUREMECH.sourceData__mediaingredientmech_id, domain=None, range=Optional[str])
-
-slots.cofactorRequirement__cofactor = Slot(uri=CULTUREMECH.cofactor, name="cofactorRequirement__cofactor", curie=CULTUREMECH.curie('cofactor'),
-                   model_uri=CULTUREMECH.cofactorRequirement__cofactor, domain=None, range=Union[dict, CofactorDescriptor])
-
-slots.cofactorRequirement__can_biosynthesize = Slot(uri=CULTUREMECH.can_biosynthesize, name="cofactorRequirement__can_biosynthesize", curie=CULTUREMECH.curie('can_biosynthesize'),
-                   model_uri=CULTUREMECH.cofactorRequirement__can_biosynthesize, domain=None, range=Union[bool, Bool])
-
-slots.cofactorRequirement__confidence = Slot(uri=CULTUREMECH.confidence, name="cofactorRequirement__confidence", curie=CULTUREMECH.curie('confidence'),
-                   model_uri=CULTUREMECH.cofactorRequirement__confidence, domain=None, range=Optional[float])
-
-slots.cofactorRequirement__evidence = Slot(uri=CULTUREMECH.evidence, name="cofactorRequirement__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.cofactorRequirement__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
-
-slots.cofactorRequirement__genes = Slot(uri=CULTUREMECH.genes, name="cofactorRequirement__genes", curie=CULTUREMECH.curie('genes'),
-                   model_uri=CULTUREMECH.cofactorRequirement__genes, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.transporterAnnotation__name = Slot(uri=CULTUREMECH.name, name="transporterAnnotation__name", curie=CULTUREMECH.curie('name'),
-                   model_uri=CULTUREMECH.transporterAnnotation__name, domain=None, range=str)
-
-slots.transporterAnnotation__transporter_type = Slot(uri=CULTUREMECH.transporter_type, name="transporterAnnotation__transporter_type", curie=CULTUREMECH.curie('transporter_type'),
-                   model_uri=CULTUREMECH.transporterAnnotation__transporter_type, domain=None, range=Union[str, "TransporterTypeEnum"])
-
-slots.transporterAnnotation__substrates = Slot(uri=CULTUREMECH.substrates, name="transporterAnnotation__substrates", curie=CULTUREMECH.curie('substrates'),
-                   model_uri=CULTUREMECH.transporterAnnotation__substrates, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.transporterAnnotation__substrate_terms = Slot(uri=CULTUREMECH.substrate_terms, name="transporterAnnotation__substrate_terms", curie=CULTUREMECH.curie('substrate_terms'),
-                   model_uri=CULTUREMECH.transporterAnnotation__substrate_terms, domain=None, range=Optional[Union[dict[Union[str, ChemicalEntityTermId], Union[dict, ChemicalEntityTerm]], list[Union[dict, ChemicalEntityTerm]]]])
-
-slots.transporterAnnotation__direction = Slot(uri=CULTUREMECH.direction, name="transporterAnnotation__direction", curie=CULTUREMECH.curie('direction'),
-                   model_uri=CULTUREMECH.transporterAnnotation__direction, domain=None, range=Optional[str])
-
-slots.transporterAnnotation__genes = Slot(uri=CULTUREMECH.genes, name="transporterAnnotation__genes", curie=CULTUREMECH.curie('genes'),
-                   model_uri=CULTUREMECH.transporterAnnotation__genes, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.transporterAnnotation__ec_number = Slot(uri=CULTUREMECH.ec_number, name="transporterAnnotation__ec_number", curie=CULTUREMECH.curie('ec_number'),
-                   model_uri=CULTUREMECH.transporterAnnotation__ec_number, domain=None, range=Optional[str])
-
-slots.transporterAnnotation__notes = Slot(uri=CULTUREMECH.notes, name="transporterAnnotation__notes", curie=CULTUREMECH.curie('notes'),
-                   model_uri=CULTUREMECH.transporterAnnotation__notes, domain=None, range=Optional[str])
-
-slots.importMetadata__source_database = Slot(uri=CULTUREMECH.source_database, name="importMetadata__source_database", curie=CULTUREMECH.curie('source_database'),
-                   model_uri=CULTUREMECH.importMetadata__source_database, domain=None, range=Union[str, "SourceDatabaseEnum"])
-
-slots.importMetadata__source_id = Slot(uri=CULTUREMECH.source_id, name="importMetadata__source_id", curie=CULTUREMECH.curie('source_id'),
-                   model_uri=CULTUREMECH.importMetadata__source_id, domain=None, range=str)
-
-slots.importMetadata__import_version = Slot(uri=CULTUREMECH.import_version, name="importMetadata__import_version", curie=CULTUREMECH.curie('import_version'),
-                   model_uri=CULTUREMECH.importMetadata__import_version, domain=None, range=str,
-                   pattern=re.compile(r'^v\d+\.\d+\.\d+_\d{4}-\d{2}-\d{2}$'))
-
-slots.importMetadata__import_date = Slot(uri=CULTUREMECH.import_date, name="importMetadata__import_date", curie=CULTUREMECH.curie('import_date'),
-                   model_uri=CULTUREMECH.importMetadata__import_date, domain=None, range=str)
-
-slots.importMetadata__import_skill = Slot(uri=CULTUREMECH.import_skill, name="importMetadata__import_skill", curie=CULTUREMECH.curie('import_skill'),
-                   model_uri=CULTUREMECH.importMetadata__import_skill, domain=None, range=Optional[str])
-
-slots.importMetadata__last_updated = Slot(uri=CULTUREMECH.last_updated, name="importMetadata__last_updated", curie=CULTUREMECH.curie('last_updated'),
-                   model_uri=CULTUREMECH.importMetadata__last_updated, domain=None, range=Optional[str])
-
-slots.importMetadata__update_history = Slot(uri=CULTUREMECH.update_history, name="importMetadata__update_history", curie=CULTUREMECH.curie('update_history'),
-                   model_uri=CULTUREMECH.importMetadata__update_history, domain=None, range=Optional[Union[Union[dict, UpdateEvent], list[Union[dict, UpdateEvent]]]])
-
-slots.updateEvent__timestamp = Slot(uri=CULTUREMECH.timestamp, name="updateEvent__timestamp", curie=CULTUREMECH.curie('timestamp'),
-                   model_uri=CULTUREMECH.updateEvent__timestamp, domain=None, range=str)
-
-slots.updateEvent__import_version = Slot(uri=CULTUREMECH.import_version, name="updateEvent__import_version", curie=CULTUREMECH.curie('import_version'),
-                   model_uri=CULTUREMECH.updateEvent__import_version, domain=None, range=str)
-
-slots.updateEvent__action = Slot(uri=CULTUREMECH.action, name="updateEvent__action", curie=CULTUREMECH.curie('action'),
-                   model_uri=CULTUREMECH.updateEvent__action, domain=None, range=Union[str, "UpdateActionEnum"])
-
-slots.updateEvent__fields_changed = Slot(uri=CULTUREMECH.fields_changed, name="updateEvent__fields_changed", curie=CULTUREMECH.curie('fields_changed'),
-                   model_uri=CULTUREMECH.updateEvent__fields_changed, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.updateEvent__notes = Slot(uri=CULTUREMECH.notes, name="updateEvent__notes", curie=CULTUREMECH.curie('notes'),
-                   model_uri=CULTUREMECH.updateEvent__notes, domain=None, range=Optional[str])
-
-slots.supportingReference__reference = Slot(uri=MECH_SHARED.reference, name="supportingReference__reference", curie=MECH_SHARED.curie('reference'),
-                   model_uri=CULTUREMECH.supportingReference__reference, domain=None, range=str)
-
-slots.supportingReference__reference_title = Slot(uri=MECH_SHARED.reference_title, name="supportingReference__reference_title", curie=MECH_SHARED.curie('reference_title'),
-                   model_uri=CULTUREMECH.supportingReference__reference_title, domain=None, range=Optional[str])
-
-slots.supportingReference__supports = Slot(uri=MECH_SHARED.supports, name="supportingReference__supports", curie=MECH_SHARED.curie('supports'),
-                   model_uri=CULTUREMECH.supportingReference__supports, domain=None, range=Optional[Union[str, "SupportLevelEnum"]])
-
-slots.supportingReference__evidence_source = Slot(uri=MECH_SHARED.evidence_source, name="supportingReference__evidence_source", curie=MECH_SHARED.curie('evidence_source'),
-                   model_uri=CULTUREMECH.supportingReference__evidence_source, domain=None, range=Optional[str])
-
-slots.supportingReference__snippet = Slot(uri=MECH_SHARED.snippet, name="supportingReference__snippet", curie=MECH_SHARED.curie('snippet'),
-                   model_uri=CULTUREMECH.supportingReference__snippet, domain=None, range=Optional[str])
-
-slots.supportingReference__explanation = Slot(uri=MECH_SHARED.explanation, name="supportingReference__explanation", curie=MECH_SHARED.curie('explanation'),
-                   model_uri=CULTUREMECH.supportingReference__explanation, domain=None, range=Optional[str])
-
-slots.supportingReference__notes = Slot(uri=MECH_SHARED.notes, name="supportingReference__notes", curie=MECH_SHARED.curie('notes'),
-                   model_uri=CULTUREMECH.supportingReference__notes, domain=None, range=Optional[str])
-
-slots.discussion__discussion_id = Slot(uri=MECH_SHARED.discussion_id, name="discussion__discussion_id", curie=MECH_SHARED.curie('discussion_id'),
-                   model_uri=CULTUREMECH.discussion__discussion_id, domain=None, range=str)
-
-slots.discussion__prompt = Slot(uri=MECH_SHARED.prompt, name="discussion__prompt", curie=MECH_SHARED.curie('prompt'),
-                   model_uri=CULTUREMECH.discussion__prompt, domain=None, range=str)
-
-slots.discussion__kind = Slot(uri=MECH_SHARED.kind, name="discussion__kind", curie=MECH_SHARED.curie('kind'),
-                   model_uri=CULTUREMECH.discussion__kind, domain=None, range=Optional[Union[str, "DiscussionKindEnum"]])
-
-slots.discussion__status = Slot(uri=MECH_SHARED.status, name="discussion__status", curie=MECH_SHARED.curie('status'),
-                   model_uri=CULTUREMECH.discussion__status, domain=None, range=Optional[Union[str, "DiscussionStatusEnum"]])
-
-slots.discussion__attaches_to = Slot(uri=MECH_SHARED.attaches_to, name="discussion__attaches_to", curie=MECH_SHARED.curie('attaches_to'),
-                   model_uri=CULTUREMECH.discussion__attaches_to, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.discussion__rationale = Slot(uri=MECH_SHARED.rationale, name="discussion__rationale", curie=MECH_SHARED.curie('rationale'),
-                   model_uri=CULTUREMECH.discussion__rationale, domain=None, range=Optional[str])
-
-slots.discussion__proposed_experiments = Slot(uri=MECH_SHARED.proposed_experiments, name="discussion__proposed_experiments", curie=MECH_SHARED.curie('proposed_experiments'),
-                   model_uri=CULTUREMECH.discussion__proposed_experiments, domain=None, range=Optional[Union[Union[dict, ProposedExperiment], list[Union[dict, ProposedExperiment]]]])
-
-slots.discussion__evidence = Slot(uri=MECH_SHARED.evidence, name="discussion__evidence", curie=MECH_SHARED.curie('evidence'),
-                   model_uri=CULTUREMECH.discussion__evidence, domain=None, range=Optional[Union[Union[dict, SupportingReference], list[Union[dict, SupportingReference]]]])
-
-slots.discussion__posed_by = Slot(uri=MECH_SHARED.posed_by, name="discussion__posed_by", curie=MECH_SHARED.curie('posed_by'),
-                   model_uri=CULTUREMECH.discussion__posed_by, domain=None, range=Optional[str])
-
-slots.discussion__posed_date = Slot(uri=MECH_SHARED.posed_date, name="discussion__posed_date", curie=MECH_SHARED.curie('posed_date'),
-                   model_uri=CULTUREMECH.discussion__posed_date, domain=None, range=Optional[Union[str, XSDDate]])
-
-slots.discussion__resolved_date = Slot(uri=MECH_SHARED.resolved_date, name="discussion__resolved_date", curie=MECH_SHARED.curie('resolved_date'),
-                   model_uri=CULTUREMECH.discussion__resolved_date, domain=None, range=Optional[Union[str, XSDDate]])
-
-slots.discussion__resolution_note = Slot(uri=MECH_SHARED.resolution_note, name="discussion__resolution_note", curie=MECH_SHARED.curie('resolution_note'),
-                   model_uri=CULTUREMECH.discussion__resolution_note, domain=None, range=Optional[str])
-
-slots.discussion__notes = Slot(uri=MECH_SHARED.notes, name="discussion__notes", curie=MECH_SHARED.curie('notes'),
-                   model_uri=CULTUREMECH.discussion__notes, domain=None, range=Optional[str])
-
-slots.proposedExperiment__experiment_id = Slot(uri=MECH_SHARED.experiment_id, name="proposedExperiment__experiment_id", curie=MECH_SHARED.curie('experiment_id'),
-                   model_uri=CULTUREMECH.proposedExperiment__experiment_id, domain=None, range=Optional[str])
-
-slots.proposedExperiment__name = Slot(uri=MECH_SHARED.name, name="proposedExperiment__name", curie=MECH_SHARED.curie('name'),
-                   model_uri=CULTUREMECH.proposedExperiment__name, domain=None, range=Optional[str])
-
-slots.proposedExperiment__description = Slot(uri=MECH_SHARED.description, name="proposedExperiment__description", curie=MECH_SHARED.curie('description'),
-                   model_uri=CULTUREMECH.proposedExperiment__description, domain=None, range=Optional[str])
-
-slots.proposedExperiment__approach = Slot(uri=MECH_SHARED.approach, name="proposedExperiment__approach", curie=MECH_SHARED.curie('approach'),
-                   model_uri=CULTUREMECH.proposedExperiment__approach, domain=None, range=Optional[str])
-
-slots.proposedExperiment__model_systems = Slot(uri=MECH_SHARED.model_systems, name="proposedExperiment__model_systems", curie=MECH_SHARED.curie('model_systems'),
-                   model_uri=CULTUREMECH.proposedExperiment__model_systems, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.proposedExperiment__perturbations = Slot(uri=MECH_SHARED.perturbations, name="proposedExperiment__perturbations", curie=MECH_SHARED.curie('perturbations'),
-                   model_uri=CULTUREMECH.proposedExperiment__perturbations, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.proposedExperiment__readouts = Slot(uri=MECH_SHARED.readouts, name="proposedExperiment__readouts", curie=MECH_SHARED.curie('readouts'),
-                   model_uri=CULTUREMECH.proposedExperiment__readouts, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.proposedExperiment__decision_criterion = Slot(uri=MECH_SHARED.decision_criterion, name="proposedExperiment__decision_criterion", curie=MECH_SHARED.curie('decision_criterion'),
-                   model_uri=CULTUREMECH.proposedExperiment__decision_criterion, domain=None, range=Optional[str])
-
-slots.proposedExperiment__would_support = Slot(uri=MECH_SHARED.would_support, name="proposedExperiment__would_support", curie=MECH_SHARED.curie('would_support'),
-                   model_uri=CULTUREMECH.proposedExperiment__would_support, domain=None, range=Optional[str])
-
-slots.proposedExperiment__would_refute = Slot(uri=MECH_SHARED.would_refute, name="proposedExperiment__would_refute", curie=MECH_SHARED.curie('would_refute'),
-                   model_uri=CULTUREMECH.proposedExperiment__would_refute, domain=None, range=Optional[str])
-
-slots.dataset__accession = Slot(uri=MECH_SHARED.accession, name="dataset__accession", curie=MECH_SHARED.curie('accession'),
-                   model_uri=CULTUREMECH.dataset__accession, domain=None, range=Optional[str])
-
-slots.dataset__title = Slot(uri=MECH_SHARED.title, name="dataset__title", curie=MECH_SHARED.curie('title'),
-                   model_uri=CULTUREMECH.dataset__title, domain=None, range=Optional[str])
-
-slots.dataset__description = Slot(uri=MECH_SHARED.description, name="dataset__description", curie=MECH_SHARED.curie('description'),
-                   model_uri=CULTUREMECH.dataset__description, domain=None, range=Optional[str])
-
-slots.dataset__organism = Slot(uri=MECH_SHARED.organism, name="dataset__organism", curie=MECH_SHARED.curie('organism'),
-                   model_uri=CULTUREMECH.dataset__organism, domain=None, range=Optional[str])
-
-slots.dataset__dataset_type = Slot(uri=MECH_SHARED.dataset_type, name="dataset__dataset_type", curie=MECH_SHARED.curie('dataset_type'),
-                   model_uri=CULTUREMECH.dataset__dataset_type, domain=None, range=Optional[Union[str, "DatasetTypeEnum"]])
-
-slots.dataset__repository = Slot(uri=MECH_SHARED.repository, name="dataset__repository", curie=MECH_SHARED.curie('repository'),
-                   model_uri=CULTUREMECH.dataset__repository, domain=None, range=Optional[Union[str, "DatasetRepositoryEnum"]])
-
-slots.dataset__sample_types = Slot(uri=MECH_SHARED.sample_types, name="dataset__sample_types", curie=MECH_SHARED.curie('sample_types'),
-                   model_uri=CULTUREMECH.dataset__sample_types, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.dataset__sample_count = Slot(uri=MECH_SHARED.sample_count, name="dataset__sample_count", curie=MECH_SHARED.curie('sample_count'),
-                   model_uri=CULTUREMECH.dataset__sample_count, domain=None, range=Optional[int])
-
-slots.dataset__conditions = Slot(uri=MECH_SHARED.conditions, name="dataset__conditions", curie=MECH_SHARED.curie('conditions'),
-                   model_uri=CULTUREMECH.dataset__conditions, domain=None, range=Optional[Union[str, list[str]]])
-
-slots.dataset__platform = Slot(uri=MECH_SHARED.platform, name="dataset__platform", curie=MECH_SHARED.curie('platform'),
-                   model_uri=CULTUREMECH.dataset__platform, domain=None, range=Optional[str])
-
-slots.dataset__url = Slot(uri=MECH_SHARED.url, name="dataset__url", curie=MECH_SHARED.curie('url'),
-                   model_uri=CULTUREMECH.dataset__url, domain=None, range=Optional[Union[str, URI]])
-
-slots.dataset__publication = Slot(uri=MECH_SHARED.publication, name="dataset__publication", curie=MECH_SHARED.curie('publication'),
-                   model_uri=CULTUREMECH.dataset__publication, domain=None, range=Optional[str])
-
-slots.dataset__findings = Slot(uri=MECH_SHARED.findings, name="dataset__findings", curie=MECH_SHARED.curie('findings'),
-                   model_uri=CULTUREMECH.dataset__findings, domain=None, range=Optional[str])
-
-slots.dataset__evidence = Slot(uri=MECH_SHARED.evidence, name="dataset__evidence", curie=MECH_SHARED.curie('evidence'),
-                   model_uri=CULTUREMECH.dataset__evidence, domain=None, range=Optional[Union[Union[dict, SupportingReference], list[Union[dict, SupportingReference]]]])
-
-slots.dataset__notes = Slot(uri=MECH_SHARED.notes, name="dataset__notes", curie=MECH_SHARED.curie('notes'),
-                   model_uri=CULTUREMECH.dataset__notes, domain=None, range=Optional[str])
-
-slots.ChemicalEntityTerm_id = Slot(uri=CULTUREMECH.id, name="ChemicalEntityTerm_id", curie=CULTUREMECH.curie('id'),
-                   model_uri=CULTUREMECH.ChemicalEntityTerm_id, domain=ChemicalEntityTerm, range=Union[str, ChemicalEntityTermId],
-                   pattern=re.compile(r'^(CHEBI|FOODON|MICRO|UBERON|ENVO|mediadive\.compound):\w+$'))
-
-slots.ChebiTerm_id = Slot(uri=CULTUREMECH.id, name="ChebiTerm_id", curie=CULTUREMECH.curie('id'),
-                   model_uri=CULTUREMECH.ChebiTerm_id, domain=ChebiTerm, range=Union[str, ChebiTermId],
-                   pattern=re.compile(r'^CHEBI:\d+$'))
-
-slots.OrganismTerm_id = Slot(uri=CULTUREMECH.id, name="OrganismTerm_id", curie=CULTUREMECH.curie('id'),
-                   model_uri=CULTUREMECH.OrganismTerm_id, domain=OrganismTerm, range=Union[str, OrganismTermId],
-                   pattern=re.compile(r'^NCBITaxon:\d+$'))
-
-slots.MediaIngredientMechTerm_id = Slot(uri=CULTUREMECH.id, name="MediaIngredientMechTerm_id", curie=CULTUREMECH.curie('id'),
-                   model_uri=CULTUREMECH.MediaIngredientMechTerm_id, domain=MediaIngredientMechTerm, range=Union[str, MediaIngredientMechTermId],
-                   pattern=re.compile(r'^MediaIngredientMech:\d{6}$'))
-
-slots.MediaIngredientMechChebiTerm_id = Slot(uri=CULTUREMECH.id, name="MediaIngredientMechChebiTerm_id", curie=CULTUREMECH.curie('id'),
-                   model_uri=CULTUREMECH.MediaIngredientMechChebiTerm_id, domain=MediaIngredientMechChebiTerm, range=Union[str, MediaIngredientMechChebiTermId],
-                   pattern=re.compile(r'^CHEBI:\d+$'))
-
-slots.CultureMechTerm_id = Slot(uri=CULTUREMECH.id, name="CultureMechTerm_id", curie=CULTUREMECH.curie('id'),
-                   model_uri=CULTUREMECH.CultureMechTerm_id, domain=CultureMechTerm, range=Union[str, CultureMechTermId],
-                   pattern=re.compile(r'^CultureMech:\d{6}$'))
-
-slots.EnvironmentTerm_id = Slot(uri=CULTUREMECH.id, name="EnvironmentTerm_id", curie=CULTUREMECH.curie('id'),
-                   model_uri=CULTUREMECH.EnvironmentTerm_id, domain=EnvironmentTerm, range=Union[str, EnvironmentTermId],
-                   pattern=re.compile(r'^ENVO:\d{7,8}$'))
-
+slots.mediaRecipe__id = Slot(
+    uri=CULTUREMECH.id,
+    name="mediaRecipe__id",
+    curie=CULTUREMECH.curie("id"),
+    model_uri=CULTUREMECH.mediaRecipe__id,
+    domain=None,
+    range=URIRef,
+    pattern=re.compile(r"^CultureMech:(?!000000)\d{6}$"),
+)
+
+slots.mediaRecipe__id_lineage_token = Slot(
+    uri=CULTUREMECH.id_lineage_token,
+    name="mediaRecipe__id_lineage_token",
+    curie=CULTUREMECH.curie("id_lineage_token"),
+    model_uri=CULTUREMECH.mediaRecipe__id_lineage_token,
+    domain=None,
+    range=Optional[str],
+    pattern=re.compile(r"^legacy:[0-9a-f]{64}$"),
+)
+
+slots.mediaRecipe__name = Slot(
+    uri=CULTUREMECH.name,
+    name="mediaRecipe__name",
+    curie=CULTUREMECH.curie("name"),
+    model_uri=CULTUREMECH.mediaRecipe__name,
+    domain=None,
+    range=str,
+)
+
+slots.mediaRecipe__original_name = Slot(
+    uri=CULTUREMECH.original_name,
+    name="mediaRecipe__original_name",
+    curie=CULTUREMECH.curie("original_name"),
+    model_uri=CULTUREMECH.mediaRecipe__original_name,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mediaRecipe__category = Slot(
+    uri=CULTUREMECH.category,
+    name="mediaRecipe__category",
+    curie=CULTUREMECH.curie("category"),
+    model_uri=CULTUREMECH.mediaRecipe__category,
+    domain=None,
+    range=Optional[Union[str, "CategoryEnum"]],
+)
+
+slots.mediaRecipe__categories = Slot(
+    uri=CULTUREMECH.categories,
+    name="mediaRecipe__categories",
+    curie=CULTUREMECH.curie("categories"),
+    model_uri=CULTUREMECH.mediaRecipe__categories,
+    domain=None,
+    range=Optional[Union[Union[str, "CategoryEnum"], list[Union[str, "CategoryEnum"]]]],
+)
+
+slots.mediaRecipe__high_metal = Slot(
+    uri=CULTUREMECH.high_metal,
+    name="mediaRecipe__high_metal",
+    curie=CULTUREMECH.curie("high_metal"),
+    model_uri=CULTUREMECH.mediaRecipe__high_metal,
+    domain=None,
+    range=Optional[Union[bool, Bool]],
+)
+
+slots.mediaRecipe__high_ree = Slot(
+    uri=CULTUREMECH.high_ree,
+    name="mediaRecipe__high_ree",
+    curie=CULTUREMECH.curie("high_ree"),
+    model_uri=CULTUREMECH.mediaRecipe__high_ree,
+    domain=None,
+    range=Optional[Union[bool, Bool]],
+)
+
+slots.mediaRecipe__synonyms = Slot(
+    uri=CULTUREMECH.synonyms,
+    name="mediaRecipe__synonyms",
+    curie=CULTUREMECH.curie("synonyms"),
+    model_uri=CULTUREMECH.mediaRecipe__synonyms,
+    domain=None,
+    range=Optional[Union[Union[dict, RecipeSynonym], list[Union[dict, RecipeSynonym]]]],
+)
+
+slots.mediaRecipe__merged_from = Slot(
+    uri=CULTUREMECH.merged_from,
+    name="mediaRecipe__merged_from",
+    curie=CULTUREMECH.curie("merged_from"),
+    model_uri=CULTUREMECH.mediaRecipe__merged_from,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.mediaRecipe__merge_fingerprint = Slot(
+    uri=CULTUREMECH.merge_fingerprint,
+    name="mediaRecipe__merge_fingerprint",
+    curie=CULTUREMECH.curie("merge_fingerprint"),
+    model_uri=CULTUREMECH.mediaRecipe__merge_fingerprint,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mediaRecipe__chemical_fingerprint = Slot(
+    uri=CULTUREMECH.chemical_fingerprint,
+    name="mediaRecipe__chemical_fingerprint",
+    curie=CULTUREMECH.curie("chemical_fingerprint"),
+    model_uri=CULTUREMECH.mediaRecipe__chemical_fingerprint,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mediaRecipe__variant_fingerprint = Slot(
+    uri=CULTUREMECH.variant_fingerprint,
+    name="mediaRecipe__variant_fingerprint",
+    curie=CULTUREMECH.curie("variant_fingerprint"),
+    model_uri=CULTUREMECH.mediaRecipe__variant_fingerprint,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mediaRecipe__fingerprint_version = Slot(
+    uri=CULTUREMECH.fingerprint_version,
+    name="mediaRecipe__fingerprint_version",
+    curie=CULTUREMECH.curie("fingerprint_version"),
+    model_uri=CULTUREMECH.mediaRecipe__fingerprint_version,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mediaRecipe__merge_metadata = Slot(
+    uri=CULTUREMECH.merge_metadata,
+    name="mediaRecipe__merge_metadata",
+    curie=CULTUREMECH.curie("merge_metadata"),
+    model_uri=CULTUREMECH.mediaRecipe__merge_metadata,
+    domain=None,
+    range=Optional[Union[dict, MergeMetadata]],
+)
+
+slots.mediaRecipe__media_term = Slot(
+    uri=CULTUREMECH.media_term,
+    name="mediaRecipe__media_term",
+    curie=CULTUREMECH.curie("media_term"),
+    model_uri=CULTUREMECH.mediaRecipe__media_term,
+    domain=None,
+    range=Optional[Union[dict, MediaTypeDescriptor]],
+)
+
+slots.mediaRecipe__kg_microbe_match = Slot(
+    uri=CULTUREMECH.kg_microbe_match,
+    name="mediaRecipe__kg_microbe_match",
+    curie=CULTUREMECH.curie("kg_microbe_match"),
+    model_uri=CULTUREMECH.mediaRecipe__kg_microbe_match,
+    domain=None,
+    range=Optional[str],
+    pattern=re.compile(r"^mediadive\.medium:[0-9a-zA-Z_-]+$"),
+)
+
+slots.mediaRecipe__description = Slot(
+    uri=CULTUREMECH.description,
+    name="mediaRecipe__description",
+    curie=CULTUREMECH.curie("description"),
+    model_uri=CULTUREMECH.mediaRecipe__description,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mediaRecipe__target_organisms = Slot(
+    uri=CULTUREMECH.target_organisms,
+    name="mediaRecipe__target_organisms",
+    curie=CULTUREMECH.curie("target_organisms"),
+    model_uri=CULTUREMECH.mediaRecipe__target_organisms,
+    domain=None,
+    range=Optional[
+        Union[
+            dict[Union[str, OrganismDescriptorPreferredTerm], Union[dict, OrganismDescriptor]],
+            list[Union[dict, OrganismDescriptor]],
+        ]
+    ],
+)
+
+slots.mediaRecipe__source_environment = Slot(
+    uri=CULTUREMECH.source_environment,
+    name="mediaRecipe__source_environment",
+    curie=CULTUREMECH.curie("source_environment"),
+    model_uri=CULTUREMECH.mediaRecipe__source_environment,
+    domain=None,
+    range=Optional[
+        Union[
+            Union[dict, SourceEnvironmentDescriptor], list[Union[dict, SourceEnvironmentDescriptor]]
+        ]
+    ],
+)
+
+slots.mediaRecipe__organism_culture_type = Slot(
+    uri=CULTUREMECH.organism_culture_type,
+    name="mediaRecipe__organism_culture_type",
+    curie=CULTUREMECH.curie("organism_culture_type"),
+    model_uri=CULTUREMECH.mediaRecipe__organism_culture_type,
+    domain=None,
+    range=Optional[Union[str, "OrganismCultureTypeEnum"]],
+)
+
+slots.mediaRecipe__record_kind = Slot(
+    uri=CULTUREMECH.record_kind,
+    name="mediaRecipe__record_kind",
+    curie=CULTUREMECH.curie("record_kind"),
+    model_uri=CULTUREMECH.mediaRecipe__record_kind,
+    domain=None,
+    range=Optional[Union[str, "RecordKindEnum"]],
+)
+
+slots.mediaRecipe__medium_type = Slot(
+    uri=CULTUREMECH.medium_type,
+    name="mediaRecipe__medium_type",
+    curie=CULTUREMECH.curie("medium_type"),
+    model_uri=CULTUREMECH.mediaRecipe__medium_type,
+    domain=None,
+    range=Optional[Union[str, "MediumTypeEnum"]],
+)
+
+slots.mediaRecipe__composition_type = Slot(
+    uri=CULTUREMECH.composition_type,
+    name="mediaRecipe__composition_type",
+    curie=CULTUREMECH.curie("composition_type"),
+    model_uri=CULTUREMECH.mediaRecipe__composition_type,
+    domain=None,
+    range=Optional[Union[str, "MediumCompositionTypeEnum"]],
+)
+
+slots.mediaRecipe__nutritional_class = Slot(
+    uri=CULTUREMECH.nutritional_class,
+    name="mediaRecipe__nutritional_class",
+    curie=CULTUREMECH.curie("nutritional_class"),
+    model_uri=CULTUREMECH.mediaRecipe__nutritional_class,
+    domain=None,
+    range=Optional[Union[str, "MediumNutritionalClassEnum"]],
+)
+
+slots.mediaRecipe__functional_role = Slot(
+    uri=CULTUREMECH.functional_role,
+    name="mediaRecipe__functional_role",
+    curie=CULTUREMECH.curie("functional_role"),
+    model_uri=CULTUREMECH.mediaRecipe__functional_role,
+    domain=None,
+    range=Optional[
+        Union[Union[str, "MediumFunctionalRoleEnum"], list[Union[str, "MediumFunctionalRoleEnum"]]]
+    ],
+)
+
+slots.mediaRecipe__physical_state = Slot(
+    uri=CULTUREMECH.physical_state,
+    name="mediaRecipe__physical_state",
+    curie=CULTUREMECH.curie("physical_state"),
+    model_uri=CULTUREMECH.mediaRecipe__physical_state,
+    domain=None,
+    range=Union[str, "PhysicalStateEnum"],
+)
+
+slots.mediaRecipe__ph_value = Slot(
+    uri=CULTUREMECH.ph_value,
+    name="mediaRecipe__ph_value",
+    curie=CULTUREMECH.curie("ph_value"),
+    model_uri=CULTUREMECH.mediaRecipe__ph_value,
+    domain=None,
+    range=Optional[float],
+)
+
+slots.mediaRecipe__ph_range = Slot(
+    uri=CULTUREMECH.ph_range,
+    name="mediaRecipe__ph_range",
+    curie=CULTUREMECH.curie("ph_range"),
+    model_uri=CULTUREMECH.mediaRecipe__ph_range,
+    domain=None,
+    range=Optional[Union[dict, PhRange]],
+)
+
+slots.mediaRecipe__light_intensity = Slot(
+    uri=CULTUREMECH.light_intensity,
+    name="mediaRecipe__light_intensity",
+    curie=CULTUREMECH.curie("light_intensity"),
+    model_uri=CULTUREMECH.mediaRecipe__light_intensity,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mediaRecipe__light_cycle = Slot(
+    uri=CULTUREMECH.light_cycle,
+    name="mediaRecipe__light_cycle",
+    curie=CULTUREMECH.curie("light_cycle"),
+    model_uri=CULTUREMECH.mediaRecipe__light_cycle,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mediaRecipe__light_quality = Slot(
+    uri=CULTUREMECH.light_quality,
+    name="mediaRecipe__light_quality",
+    curie=CULTUREMECH.curie("light_quality"),
+    model_uri=CULTUREMECH.mediaRecipe__light_quality,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mediaRecipe__temperature_range = Slot(
+    uri=CULTUREMECH.temperature_range,
+    name="mediaRecipe__temperature_range",
+    curie=CULTUREMECH.curie("temperature_range"),
+    model_uri=CULTUREMECH.mediaRecipe__temperature_range,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mediaRecipe__temperature_value = Slot(
+    uri=CULTUREMECH.temperature_value,
+    name="mediaRecipe__temperature_value",
+    curie=CULTUREMECH.curie("temperature_value"),
+    model_uri=CULTUREMECH.mediaRecipe__temperature_value,
+    domain=None,
+    range=Optional[float],
+)
+
+slots.mediaRecipe__salinity = Slot(
+    uri=CULTUREMECH.salinity,
+    name="mediaRecipe__salinity",
+    curie=CULTUREMECH.curie("salinity"),
+    model_uri=CULTUREMECH.mediaRecipe__salinity,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mediaRecipe__aeration = Slot(
+    uri=CULTUREMECH.aeration,
+    name="mediaRecipe__aeration",
+    curie=CULTUREMECH.curie("aeration"),
+    model_uri=CULTUREMECH.mediaRecipe__aeration,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mediaRecipe__culture_vessel = Slot(
+    uri=CULTUREMECH.culture_vessel,
+    name="mediaRecipe__culture_vessel",
+    curie=CULTUREMECH.curie("culture_vessel"),
+    model_uri=CULTUREMECH.mediaRecipe__culture_vessel,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mediaRecipe__ingredients = Slot(
+    uri=CULTUREMECH.ingredients,
+    name="mediaRecipe__ingredients",
+    curie=CULTUREMECH.curie("ingredients"),
+    model_uri=CULTUREMECH.mediaRecipe__ingredients,
+    domain=None,
+    range=Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]],
+)
+
+slots.mediaRecipe__solutions = Slot(
+    uri=CULTUREMECH.solutions,
+    name="mediaRecipe__solutions",
+    curie=CULTUREMECH.curie("solutions"),
+    model_uri=CULTUREMECH.mediaRecipe__solutions,
+    domain=None,
+    range=Optional[Union[Union[dict, SolutionDescriptor], list[Union[dict, SolutionDescriptor]]]],
+)
+
+slots.mediaRecipe__preparation_steps = Slot(
+    uri=CULTUREMECH.preparation_steps,
+    name="mediaRecipe__preparation_steps",
+    curie=CULTUREMECH.curie("preparation_steps"),
+    model_uri=CULTUREMECH.mediaRecipe__preparation_steps,
+    domain=None,
+    range=Optional[Union[Union[dict, PreparationStep], list[Union[dict, PreparationStep]]]],
+)
+
+slots.mediaRecipe__sterilization = Slot(
+    uri=CULTUREMECH.sterilization,
+    name="mediaRecipe__sterilization",
+    curie=CULTUREMECH.curie("sterilization"),
+    model_uri=CULTUREMECH.mediaRecipe__sterilization,
+    domain=None,
+    range=Optional[Union[dict, SterilizationDescriptor]],
+)
+
+slots.mediaRecipe__storage = Slot(
+    uri=CULTUREMECH.storage,
+    name="mediaRecipe__storage",
+    curie=CULTUREMECH.curie("storage"),
+    model_uri=CULTUREMECH.mediaRecipe__storage,
+    domain=None,
+    range=Optional[Union[dict, StorageConditions]],
+)
+
+slots.mediaRecipe__applications = Slot(
+    uri=CULTUREMECH.applications,
+    name="mediaRecipe__applications",
+    curie=CULTUREMECH.curie("applications"),
+    model_uri=CULTUREMECH.mediaRecipe__applications,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.mediaRecipe__variants = Slot(
+    uri=CULTUREMECH.variants,
+    name="mediaRecipe__variants",
+    curie=CULTUREMECH.curie("variants"),
+    model_uri=CULTUREMECH.mediaRecipe__variants,
+    domain=None,
+    range=Optional[
+        Union[
+            dict[Union[str, MediaVariantName], Union[dict, MediaVariant]],
+            list[Union[dict, MediaVariant]],
+        ]
+    ],
+)
+
+slots.mediaRecipe__parent_media = Slot(
+    uri=CULTUREMECH.parent_media,
+    name="mediaRecipe__parent_media",
+    curie=CULTUREMECH.curie("parent_media"),
+    model_uri=CULTUREMECH.mediaRecipe__parent_media,
+    domain=None,
+    range=Optional[Union[dict, MediaRecipeReference]],
+)
+
+slots.mediaRecipe__variant_children = Slot(
+    uri=CULTUREMECH.variant_children,
+    name="mediaRecipe__variant_children",
+    curie=CULTUREMECH.curie("variant_children"),
+    model_uri=CULTUREMECH.mediaRecipe__variant_children,
+    domain=None,
+    range=Optional[
+        Union[Union[dict, MediaRecipeReference], list[Union[dict, MediaRecipeReference]]]
+    ],
+)
+
+slots.mediaRecipe__variant_relationship = Slot(
+    uri=CULTUREMECH.variant_relationship,
+    name="mediaRecipe__variant_relationship",
+    curie=CULTUREMECH.curie("variant_relationship"),
+    model_uri=CULTUREMECH.mediaRecipe__variant_relationship,
+    domain=None,
+    range=Optional[Union[str, "MediaVariantRelationshipEnum"]],
+)
+
+slots.mediaRecipe__variant_modifications = Slot(
+    uri=CULTUREMECH.variant_modifications,
+    name="mediaRecipe__variant_modifications",
+    curie=CULTUREMECH.curie("variant_modifications"),
+    model_uri=CULTUREMECH.mediaRecipe__variant_modifications,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.mediaRecipe__references = Slot(
+    uri=CULTUREMECH.references,
+    name="mediaRecipe__references",
+    curie=CULTUREMECH.curie("references"),
+    model_uri=CULTUREMECH.mediaRecipe__references,
+    domain=None,
+    range=Optional[
+        Union[Union[dict, PublicationReference], list[Union[dict, PublicationReference]]]
+    ],
+)
+
+slots.mediaRecipe__notes = Slot(
+    uri=CULTUREMECH.notes,
+    name="mediaRecipe__notes",
+    curie=CULTUREMECH.curie("notes"),
+    model_uri=CULTUREMECH.mediaRecipe__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mediaRecipe__evidence = Slot(
+    uri=CULTUREMECH.evidence,
+    name="mediaRecipe__evidence",
+    curie=CULTUREMECH.curie("evidence"),
+    model_uri=CULTUREMECH.mediaRecipe__evidence,
+    domain=None,
+    range=Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]],
+            list[Union[dict, EvidenceItem]],
+        ]
+    ],
+)
+
+slots.mediaRecipe__datasets = Slot(
+    uri=CULTUREMECH.datasets,
+    name="mediaRecipe__datasets",
+    curie=CULTUREMECH.curie("datasets"),
+    model_uri=CULTUREMECH.mediaRecipe__datasets,
+    domain=None,
+    range=Optional[Union[Union[dict, Dataset], list[Union[dict, Dataset]]]],
+)
+
+slots.mediaRecipe__discussions = Slot(
+    uri=CULTUREMECH.discussions,
+    name="mediaRecipe__discussions",
+    curie=CULTUREMECH.curie("discussions"),
+    model_uri=CULTUREMECH.mediaRecipe__discussions,
+    domain=None,
+    range=Optional[Union[Union[dict, Discussion], list[Union[dict, Discussion]]]],
+)
+
+slots.mediaRecipe__import_metadata = Slot(
+    uri=CULTUREMECH.import_metadata,
+    name="mediaRecipe__import_metadata",
+    curie=CULTUREMECH.curie("import_metadata"),
+    model_uri=CULTUREMECH.mediaRecipe__import_metadata,
+    domain=None,
+    range=Optional[Union[dict, ImportMetadata]],
+)
+
+slots.mediaRecipe__curation_history = Slot(
+    uri=CULTUREMECH.curation_history,
+    name="mediaRecipe__curation_history",
+    curie=CULTUREMECH.curie("curation_history"),
+    model_uri=CULTUREMECH.mediaRecipe__curation_history,
+    domain=None,
+    range=Optional[Union[Union[dict, CurationEvent], list[Union[dict, CurationEvent]]]],
+)
+
+slots.mediaRecipe__data_quality_flags = Slot(
+    uri=CULTUREMECH.data_quality_flags,
+    name="mediaRecipe__data_quality_flags",
+    curie=CULTUREMECH.curie("data_quality_flags"),
+    model_uri=CULTUREMECH.mediaRecipe__data_quality_flags,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.mediaRecipe__sources = Slot(
+    uri=CULTUREMECH.sources,
+    name="mediaRecipe__sources",
+    curie=CULTUREMECH.curie("sources"),
+    model_uri=CULTUREMECH.mediaRecipe__sources,
+    domain=None,
+    range=Optional[Union[Union[dict, SourceReference], list[Union[dict, SourceReference]]]],
+)
+
+slots.mediaRecipe__incubation_atmosphere = Slot(
+    uri=CULTUREMECH.incubation_atmosphere,
+    name="mediaRecipe__incubation_atmosphere",
+    curie=CULTUREMECH.curie("incubation_atmosphere"),
+    model_uri=CULTUREMECH.mediaRecipe__incubation_atmosphere,
+    domain=None,
+    range=Optional[Union[str, "AtmosphereEnum"]],
+)
+
+slots.mediaRecipe__source_data = Slot(
+    uri=CULTUREMECH.source_data,
+    name="mediaRecipe__source_data",
+    curie=CULTUREMECH.curie("source_data"),
+    model_uri=CULTUREMECH.mediaRecipe__source_data,
+    domain=None,
+    range=Optional[Union[dict, SourceData]],
+)
+
+slots.solutionRecipe__id = Slot(
+    uri=CULTUREMECH.id,
+    name="solutionRecipe__id",
+    curie=CULTUREMECH.curie("id"),
+    model_uri=CULTUREMECH.solutionRecipe__id,
+    domain=None,
+    range=URIRef,
+    pattern=re.compile(r"^CultureMech:(?!000000)\d{6}$"),
+)
+
+slots.solutionRecipe__id_lineage_token = Slot(
+    uri=CULTUREMECH.id_lineage_token,
+    name="solutionRecipe__id_lineage_token",
+    curie=CULTUREMECH.curie("id_lineage_token"),
+    model_uri=CULTUREMECH.solutionRecipe__id_lineage_token,
+    domain=None,
+    range=Optional[str],
+    pattern=re.compile(r"^legacy:[0-9a-f]{64}$"),
+)
+
+slots.solutionRecipe__preferred_term = Slot(
+    uri=CULTUREMECH.preferred_term,
+    name="solutionRecipe__preferred_term",
+    curie=CULTUREMECH.curie("preferred_term"),
+    model_uri=CULTUREMECH.solutionRecipe__preferred_term,
+    domain=None,
+    range=str,
+)
+
+slots.solutionRecipe__term = Slot(
+    uri=CULTUREMECH.term,
+    name="solutionRecipe__term",
+    curie=CULTUREMECH.curie("term"),
+    model_uri=CULTUREMECH.solutionRecipe__term,
+    domain=None,
+    range=Optional[Union[dict, Term]],
+)
+
+slots.solutionRecipe__mediaingredientmech_term = Slot(
+    uri=CULTUREMECH.mediaingredientmech_term,
+    name="solutionRecipe__mediaingredientmech_term",
+    curie=CULTUREMECH.curie("mediaingredientmech_term"),
+    model_uri=CULTUREMECH.solutionRecipe__mediaingredientmech_term,
+    domain=None,
+    range=Optional[Union[dict, MediaIngredientMechTerm]],
+)
+
+slots.solutionRecipe__mediaingredientmech_chebi_term = Slot(
+    uri=CULTUREMECH.mediaingredientmech_chebi_term,
+    name="solutionRecipe__mediaingredientmech_chebi_term",
+    curie=CULTUREMECH.curie("mediaingredientmech_chebi_term"),
+    model_uri=CULTUREMECH.solutionRecipe__mediaingredientmech_chebi_term,
+    domain=None,
+    range=Optional[Union[dict, MediaIngredientMechChebiTerm]],
+)
+
+slots.solutionRecipe__culturemech_term = Slot(
+    uri=CULTUREMECH.culturemech_term,
+    name="solutionRecipe__culturemech_term",
+    curie=CULTUREMECH.curie("culturemech_term"),
+    model_uri=CULTUREMECH.solutionRecipe__culturemech_term,
+    domain=None,
+    range=Optional[Union[dict, CultureMechTerm]],
+)
+
+slots.solutionRecipe__category = Slot(
+    uri=CULTUREMECH.category,
+    name="solutionRecipe__category",
+    curie=CULTUREMECH.curie("category"),
+    model_uri=CULTUREMECH.solutionRecipe__category,
+    domain=None,
+    range=Optional[Union[str, "CategoryEnum"]],
+)
+
+slots.solutionRecipe__composition = Slot(
+    uri=CULTUREMECH.composition,
+    name="solutionRecipe__composition",
+    curie=CULTUREMECH.curie("composition"),
+    model_uri=CULTUREMECH.solutionRecipe__composition,
+    domain=None,
+    range=Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]],
+)
+
+slots.solutionRecipe__solutions = Slot(
+    uri=CULTUREMECH.solutions,
+    name="solutionRecipe__solutions",
+    curie=CULTUREMECH.curie("solutions"),
+    model_uri=CULTUREMECH.solutionRecipe__solutions,
+    domain=None,
+    range=Optional[Union[Union[dict, SolutionDescriptor], list[Union[dict, SolutionDescriptor]]]],
+)
+
+slots.solutionRecipe__ingredients = Slot(
+    uri=CULTUREMECH.ingredients,
+    name="solutionRecipe__ingredients",
+    curie=CULTUREMECH.curie("ingredients"),
+    model_uri=CULTUREMECH.solutionRecipe__ingredients,
+    domain=None,
+    range=Optional[
+        Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]]
+    ],
+)
+
+slots.solutionRecipe__concentration = Slot(
+    uri=CULTUREMECH.concentration,
+    name="solutionRecipe__concentration",
+    curie=CULTUREMECH.curie("concentration"),
+    model_uri=CULTUREMECH.solutionRecipe__concentration,
+    domain=None,
+    range=Optional[Union[dict, ConcentrationValue]],
+)
+
+slots.solutionRecipe__preparation_notes = Slot(
+    uri=CULTUREMECH.preparation_notes,
+    name="solutionRecipe__preparation_notes",
+    curie=CULTUREMECH.curie("preparation_notes"),
+    model_uri=CULTUREMECH.solutionRecipe__preparation_notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.solutionRecipe__storage_conditions = Slot(
+    uri=CULTUREMECH.storage_conditions,
+    name="solutionRecipe__storage_conditions",
+    curie=CULTUREMECH.curie("storage_conditions"),
+    model_uri=CULTUREMECH.solutionRecipe__storage_conditions,
+    domain=None,
+    range=Optional[Union[dict, StorageConditions]],
+)
+
+slots.solutionRecipe__shelf_life = Slot(
+    uri=CULTUREMECH.shelf_life,
+    name="solutionRecipe__shelf_life",
+    curie=CULTUREMECH.curie("shelf_life"),
+    model_uri=CULTUREMECH.solutionRecipe__shelf_life,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.solutionRecipe__references = Slot(
+    uri=CULTUREMECH.references,
+    name="solutionRecipe__references",
+    curie=CULTUREMECH.curie("references"),
+    model_uri=CULTUREMECH.solutionRecipe__references,
+    domain=None,
+    range=Optional[
+        Union[Union[dict, PublicationReference], list[Union[dict, PublicationReference]]]
+    ],
+)
+
+slots.solutionRecipe__source_data = Slot(
+    uri=CULTUREMECH.source_data,
+    name="solutionRecipe__source_data",
+    curie=CULTUREMECH.curie("source_data"),
+    model_uri=CULTUREMECH.solutionRecipe__source_data,
+    domain=None,
+    range=Optional[Union[dict, SourceData]],
+)
+
+slots.solutionRecipe__curation_history = Slot(
+    uri=CULTUREMECH.curation_history,
+    name="solutionRecipe__curation_history",
+    curie=CULTUREMECH.curie("curation_history"),
+    model_uri=CULTUREMECH.solutionRecipe__curation_history,
+    domain=None,
+    range=Optional[Union[Union[dict, CurationEvent], list[Union[dict, CurationEvent]]]],
+)
+
+slots.solutionRecipe__data_quality_flags = Slot(
+    uri=CULTUREMECH.data_quality_flags,
+    name="solutionRecipe__data_quality_flags",
+    curie=CULTUREMECH.curie("data_quality_flags"),
+    model_uri=CULTUREMECH.solutionRecipe__data_quality_flags,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.solutionRecipe__sources = Slot(
+    uri=CULTUREMECH.sources,
+    name="solutionRecipe__sources",
+    curie=CULTUREMECH.curie("sources"),
+    model_uri=CULTUREMECH.solutionRecipe__sources,
+    domain=None,
+    range=Optional[Union[Union[dict, SourceReference], list[Union[dict, SourceReference]]]],
+)
+
+slots.solutionRecipe__notes = Slot(
+    uri=CULTUREMECH.notes,
+    name="solutionRecipe__notes",
+    curie=CULTUREMECH.curie("notes"),
+    model_uri=CULTUREMECH.solutionRecipe__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.recipeSynonym__name = Slot(
+    uri=CULTUREMECH.name,
+    name="recipeSynonym__name",
+    curie=CULTUREMECH.curie("name"),
+    model_uri=CULTUREMECH.recipeSynonym__name,
+    domain=None,
+    range=str,
+)
+
+slots.recipeSynonym__source = Slot(
+    uri=CULTUREMECH.source,
+    name="recipeSynonym__source",
+    curie=CULTUREMECH.curie("source"),
+    model_uri=CULTUREMECH.recipeSynonym__source,
+    domain=None,
+    range=str,
+)
+
+slots.recipeSynonym__source_id = Slot(
+    uri=CULTUREMECH.source_id,
+    name="recipeSynonym__source_id",
+    curie=CULTUREMECH.curie("source_id"),
+    model_uri=CULTUREMECH.recipeSynonym__source_id,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.recipeSynonym__original_category = Slot(
+    uri=CULTUREMECH.original_category,
+    name="recipeSynonym__original_category",
+    curie=CULTUREMECH.curie("original_category"),
+    model_uri=CULTUREMECH.recipeSynonym__original_category,
+    domain=None,
+    range=Optional[Union[str, "CategoryEnum"]],
+)
+
+slots.mergeMetadata__merge_version = Slot(
+    uri=CULTUREMECH.merge_version,
+    name="mergeMetadata__merge_version",
+    curie=CULTUREMECH.curie("merge_version"),
+    model_uri=CULTUREMECH.mergeMetadata__merge_version,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mergeMetadata__merge_mode = Slot(
+    uri=CULTUREMECH.merge_mode,
+    name="mergeMetadata__merge_mode",
+    curie=CULTUREMECH.curie("merge_mode"),
+    model_uri=CULTUREMECH.mergeMetadata__merge_mode,
+    domain=None,
+    range=Optional[Union[str, "MergeModeEnum"]],
+)
+
+slots.mergeMetadata__merge_reason = Slot(
+    uri=CULTUREMECH.merge_reason,
+    name="mergeMetadata__merge_reason",
+    curie=CULTUREMECH.curie("merge_reason"),
+    model_uri=CULTUREMECH.mergeMetadata__merge_reason,
+    domain=None,
+    range=Optional[Union[str, "MergeReasonEnum"]],
+)
+
+slots.mergeMetadata__merge_confidence = Slot(
+    uri=CULTUREMECH.merge_confidence,
+    name="mergeMetadata__merge_confidence",
+    curie=CULTUREMECH.curie("merge_confidence"),
+    model_uri=CULTUREMECH.mergeMetadata__merge_confidence,
+    domain=None,
+    range=Optional[float],
+)
+
+slots.mergeMetadata__hierarchy_conflicts = Slot(
+    uri=CULTUREMECH.hierarchy_conflicts,
+    name="mergeMetadata__hierarchy_conflicts",
+    curie=CULTUREMECH.curie("hierarchy_conflicts"),
+    model_uri=CULTUREMECH.mergeMetadata__hierarchy_conflicts,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.mergeMetadata__fingerprint_mode = Slot(
+    uri=CULTUREMECH.fingerprint_mode,
+    name="mergeMetadata__fingerprint_mode",
+    curie=CULTUREMECH.curie("fingerprint_mode"),
+    model_uri=CULTUREMECH.mergeMetadata__fingerprint_mode,
+    domain=None,
+    range=Optional[Union[str, "FingerprintModeEnum"]],
+)
+
+slots.term__id = Slot(
+    uri=CULTUREMECH.id,
+    name="term__id",
+    curie=CULTUREMECH.curie("id"),
+    model_uri=CULTUREMECH.term__id,
+    domain=None,
+    range=URIRef,
+)
+
+slots.term__label = Slot(
+    uri=RDFS.label,
+    name="term__label",
+    curie=RDFS.curie("label"),
+    model_uri=CULTUREMECH.term__label,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.term__confidence = Slot(
+    uri=CULTUREMECH.confidence,
+    name="term__confidence",
+    curie=CULTUREMECH.curie("confidence"),
+    model_uri=CULTUREMECH.term__confidence,
+    domain=None,
+    range=Optional[float],
+)
+
+slots.term__match_type = Slot(
+    uri=CULTUREMECH.match_type,
+    name="term__match_type",
+    curie=CULTUREMECH.curie("match_type"),
+    model_uri=CULTUREMECH.term__match_type,
+    domain=None,
+    range=Optional[Union[str, "TermMatchTypeEnum"]],
+)
+
+slots.mediaTypeDescriptor__preferred_term = Slot(
+    uri=CULTUREMECH.preferred_term,
+    name="mediaTypeDescriptor__preferred_term",
+    curie=CULTUREMECH.curie("preferred_term"),
+    model_uri=CULTUREMECH.mediaTypeDescriptor__preferred_term,
+    domain=None,
+    range=str,
+)
+
+slots.mediaTypeDescriptor__term = Slot(
+    uri=CULTUREMECH.term,
+    name="mediaTypeDescriptor__term",
+    curie=CULTUREMECH.curie("term"),
+    model_uri=CULTUREMECH.mediaTypeDescriptor__term,
+    domain=None,
+    range=Optional[Union[dict, MediaDatabaseTerm]],
+)
+
+slots.ingredientDescriptor__preferred_term = Slot(
+    uri=CULTUREMECH.preferred_term,
+    name="ingredientDescriptor__preferred_term",
+    curie=CULTUREMECH.curie("preferred_term"),
+    model_uri=CULTUREMECH.ingredientDescriptor__preferred_term,
+    domain=None,
+    range=str,
+)
+
+slots.ingredientDescriptor__term = Slot(
+    uri=CULTUREMECH.term,
+    name="ingredientDescriptor__term",
+    curie=CULTUREMECH.curie("term"),
+    model_uri=CULTUREMECH.ingredientDescriptor__term,
+    domain=None,
+    range=Optional[Union[dict, ChemicalEntityTerm]],
+)
+
+slots.ingredientDescriptor__chebi_term = Slot(
+    uri=CULTUREMECH.chebi_term,
+    name="ingredientDescriptor__chebi_term",
+    curie=CULTUREMECH.curie("chebi_term"),
+    model_uri=CULTUREMECH.ingredientDescriptor__chebi_term,
+    domain=None,
+    range=Optional[Union[dict, ChebiTerm]],
+)
+
+slots.ingredientDescriptor__mediaingredientmech_term = Slot(
+    uri=CULTUREMECH.mediaingredientmech_term,
+    name="ingredientDescriptor__mediaingredientmech_term",
+    curie=CULTUREMECH.curie("mediaingredientmech_term"),
+    model_uri=CULTUREMECH.ingredientDescriptor__mediaingredientmech_term,
+    domain=None,
+    range=Optional[Union[dict, MediaIngredientMechTerm]],
+)
+
+slots.ingredientDescriptor__mediaingredientmech_chebi_term = Slot(
+    uri=CULTUREMECH.mediaingredientmech_chebi_term,
+    name="ingredientDescriptor__mediaingredientmech_chebi_term",
+    curie=CULTUREMECH.curie("mediaingredientmech_chebi_term"),
+    model_uri=CULTUREMECH.ingredientDescriptor__mediaingredientmech_chebi_term,
+    domain=None,
+    range=Optional[Union[dict, MediaIngredientMechChebiTerm]],
+)
+
+slots.ingredientDescriptor__culturemech_term = Slot(
+    uri=CULTUREMECH.culturemech_term,
+    name="ingredientDescriptor__culturemech_term",
+    curie=CULTUREMECH.curie("culturemech_term"),
+    model_uri=CULTUREMECH.ingredientDescriptor__culturemech_term,
+    domain=None,
+    range=Optional[Union[dict, CultureMechTerm]],
+)
+
+slots.ingredientDescriptor__parent_ingredient = Slot(
+    uri=CULTUREMECH.parent_ingredient,
+    name="ingredientDescriptor__parent_ingredient",
+    curie=CULTUREMECH.curie("parent_ingredient"),
+    model_uri=CULTUREMECH.ingredientDescriptor__parent_ingredient,
+    domain=None,
+    range=Optional[Union[dict, IngredientReference]],
+)
+
+slots.ingredientDescriptor__variant_type = Slot(
+    uri=CULTUREMECH.variant_type,
+    name="ingredientDescriptor__variant_type",
+    curie=CULTUREMECH.curie("variant_type"),
+    model_uri=CULTUREMECH.ingredientDescriptor__variant_type,
+    domain=None,
+    range=Optional[Union[str, "VariantTypeEnum"]],
+)
+
+slots.ingredientDescriptor__concentration = Slot(
+    uri=CULTUREMECH.concentration,
+    name="ingredientDescriptor__concentration",
+    curie=CULTUREMECH.curie("concentration"),
+    model_uri=CULTUREMECH.ingredientDescriptor__concentration,
+    domain=None,
+    range=Optional[Union[dict, ConcentrationValue]],
+)
+
+slots.ingredientDescriptor__modifier = Slot(
+    uri=CULTUREMECH.modifier,
+    name="ingredientDescriptor__modifier",
+    curie=CULTUREMECH.curie("modifier"),
+    model_uri=CULTUREMECH.ingredientDescriptor__modifier,
+    domain=None,
+    range=Optional[Union[str, "ModifierEnum"]],
+)
+
+slots.ingredientDescriptor__chemical_formula = Slot(
+    uri=CULTUREMECH.chemical_formula,
+    name="ingredientDescriptor__chemical_formula",
+    curie=CULTUREMECH.curie("chemical_formula"),
+    model_uri=CULTUREMECH.ingredientDescriptor__chemical_formula,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.ingredientDescriptor__synonyms = Slot(
+    uri=CULTUREMECH.synonyms,
+    name="ingredientDescriptor__synonyms",
+    curie=CULTUREMECH.curie("synonyms"),
+    model_uri=CULTUREMECH.ingredientDescriptor__synonyms,
+    domain=None,
+    range=Optional[Union[Union[dict, IngredientSynonym], list[Union[dict, IngredientSynonym]]]],
+)
+
+slots.ingredientDescriptor__source = Slot(
+    uri=CULTUREMECH.source,
+    name="ingredientDescriptor__source",
+    curie=CULTUREMECH.curie("source"),
+    model_uri=CULTUREMECH.ingredientDescriptor__source,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.ingredientDescriptor__curation_metadata = Slot(
+    uri=CULTUREMECH.curation_metadata,
+    name="ingredientDescriptor__curation_metadata",
+    curie=CULTUREMECH.curie("curation_metadata"),
+    model_uri=CULTUREMECH.ingredientDescriptor__curation_metadata,
+    domain=None,
+    range=Optional[Union[dict, IngredientCurationMetadata]],
+)
+
+slots.ingredientDescriptor__data_quality_flags = Slot(
+    uri=CULTUREMECH.data_quality_flags,
+    name="ingredientDescriptor__data_quality_flags",
+    curie=CULTUREMECH.curie("data_quality_flags"),
+    model_uri=CULTUREMECH.ingredientDescriptor__data_quality_flags,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.ingredientDescriptor__molecular_weight = Slot(
+    uri=CULTUREMECH.molecular_weight,
+    name="ingredientDescriptor__molecular_weight",
+    curie=CULTUREMECH.curie("molecular_weight"),
+    model_uri=CULTUREMECH.ingredientDescriptor__molecular_weight,
+    domain=None,
+    range=Optional[float],
+)
+
+slots.ingredientDescriptor__supplier_catalog = Slot(
+    uri=CULTUREMECH.supplier_catalog,
+    name="ingredientDescriptor__supplier_catalog",
+    curie=CULTUREMECH.curie("supplier_catalog"),
+    model_uri=CULTUREMECH.ingredientDescriptor__supplier_catalog,
+    domain=None,
+    range=Optional[Union[dict, SupplierInfo]],
+)
+
+slots.ingredientDescriptor__notes = Slot(
+    uri=CULTUREMECH.notes,
+    name="ingredientDescriptor__notes",
+    curie=CULTUREMECH.curie("notes"),
+    model_uri=CULTUREMECH.ingredientDescriptor__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.ingredientDescriptor__nutritional_roles = Slot(
+    uri=CULTUREMECH.nutritional_roles,
+    name="ingredientDescriptor__nutritional_roles",
+    curie=CULTUREMECH.curie("nutritional_roles"),
+    model_uri=CULTUREMECH.ingredientDescriptor__nutritional_roles,
+    domain=None,
+    range=Optional[
+        Union[Union[str, "NutritionalRoleEnum"], list[Union[str, "NutritionalRoleEnum"]]]
+    ],
+)
+
+slots.ingredientDescriptor__physicochemical_roles = Slot(
+    uri=CULTUREMECH.physicochemical_roles,
+    name="ingredientDescriptor__physicochemical_roles",
+    curie=CULTUREMECH.curie("physicochemical_roles"),
+    model_uri=CULTUREMECH.ingredientDescriptor__physicochemical_roles,
+    domain=None,
+    range=Optional[
+        Union[Union[str, "PhysicochemicalRoleEnum"], list[Union[str, "PhysicochemicalRoleEnum"]]]
+    ],
+)
+
+slots.ingredientDescriptor__cellular_metabolic_roles = Slot(
+    uri=CULTUREMECH.cellular_metabolic_roles,
+    name="ingredientDescriptor__cellular_metabolic_roles",
+    curie=CULTUREMECH.curie("cellular_metabolic_roles"),
+    model_uri=CULTUREMECH.ingredientDescriptor__cellular_metabolic_roles,
+    domain=None,
+    range=Optional[
+        Union[
+            Union[str, "CellularMetabolicRoleEnum"], list[Union[str, "CellularMetabolicRoleEnum"]]
+        ]
+    ],
+)
+
+slots.ingredientDescriptor__role_curie = Slot(
+    uri=CULTUREMECH.role_curie,
+    name="ingredientDescriptor__role_curie",
+    curie=CULTUREMECH.curie("role_curie"),
+    model_uri=CULTUREMECH.ingredientDescriptor__role_curie,
+    domain=None,
+    range=Optional[Union[Union[str, URIorCURIE], list[Union[str, URIorCURIE]]]],
+)
+
+slots.ingredientDescriptor__cofactors_provided = Slot(
+    uri=CULTUREMECH.cofactors_provided,
+    name="ingredientDescriptor__cofactors_provided",
+    curie=CULTUREMECH.curie("cofactors_provided"),
+    model_uri=CULTUREMECH.ingredientDescriptor__cofactors_provided,
+    domain=None,
+    range=Optional[Union[Union[dict, CofactorDescriptor], list[Union[dict, CofactorDescriptor]]]],
+)
+
+slots.ingredientDescriptor__evidence = Slot(
+    uri=CULTUREMECH.evidence,
+    name="ingredientDescriptor__evidence",
+    curie=CULTUREMECH.curie("evidence"),
+    model_uri=CULTUREMECH.ingredientDescriptor__evidence,
+    domain=None,
+    range=Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]],
+            list[Union[dict, EvidenceItem]],
+        ]
+    ],
+)
+
+slots.solutionDescriptor__preferred_term = Slot(
+    uri=CULTUREMECH.preferred_term,
+    name="solutionDescriptor__preferred_term",
+    curie=CULTUREMECH.curie("preferred_term"),
+    model_uri=CULTUREMECH.solutionDescriptor__preferred_term,
+    domain=None,
+    range=str,
+)
+
+slots.solutionDescriptor__name = Slot(
+    uri=CULTUREMECH.name,
+    name="solutionDescriptor__name",
+    curie=CULTUREMECH.curie("name"),
+    model_uri=CULTUREMECH.solutionDescriptor__name,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.solutionDescriptor__notes = Slot(
+    uri=CULTUREMECH.notes,
+    name="solutionDescriptor__notes",
+    curie=CULTUREMECH.curie("notes"),
+    model_uri=CULTUREMECH.solutionDescriptor__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.solutionDescriptor__source = Slot(
+    uri=CULTUREMECH.source,
+    name="solutionDescriptor__source",
+    curie=CULTUREMECH.curie("source"),
+    model_uri=CULTUREMECH.solutionDescriptor__source,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.solutionDescriptor__term = Slot(
+    uri=CULTUREMECH.term,
+    name="solutionDescriptor__term",
+    curie=CULTUREMECH.curie("term"),
+    model_uri=CULTUREMECH.solutionDescriptor__term,
+    domain=None,
+    range=Optional[Union[dict, Term]],
+)
+
+slots.solutionDescriptor__mediaingredientmech_term = Slot(
+    uri=CULTUREMECH.mediaingredientmech_term,
+    name="solutionDescriptor__mediaingredientmech_term",
+    curie=CULTUREMECH.curie("mediaingredientmech_term"),
+    model_uri=CULTUREMECH.solutionDescriptor__mediaingredientmech_term,
+    domain=None,
+    range=Optional[Union[dict, MediaIngredientMechTerm]],
+)
+
+slots.solutionDescriptor__mediaingredientmech_chebi_term = Slot(
+    uri=CULTUREMECH.mediaingredientmech_chebi_term,
+    name="solutionDescriptor__mediaingredientmech_chebi_term",
+    curie=CULTUREMECH.curie("mediaingredientmech_chebi_term"),
+    model_uri=CULTUREMECH.solutionDescriptor__mediaingredientmech_chebi_term,
+    domain=None,
+    range=Optional[Union[dict, MediaIngredientMechChebiTerm]],
+)
+
+slots.solutionDescriptor__culturemech_term = Slot(
+    uri=CULTUREMECH.culturemech_term,
+    name="solutionDescriptor__culturemech_term",
+    curie=CULTUREMECH.curie("culturemech_term"),
+    model_uri=CULTUREMECH.solutionDescriptor__culturemech_term,
+    domain=None,
+    range=Optional[Union[dict, CultureMechTerm]],
+)
+
+slots.solutionDescriptor__composition = Slot(
+    uri=CULTUREMECH.composition,
+    name="solutionDescriptor__composition",
+    curie=CULTUREMECH.curie("composition"),
+    model_uri=CULTUREMECH.solutionDescriptor__composition,
+    domain=None,
+    range=Optional[
+        Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]]
+    ],
+)
+
+slots.solutionDescriptor__solutions = Slot(
+    uri=CULTUREMECH.solutions,
+    name="solutionDescriptor__solutions",
+    curie=CULTUREMECH.curie("solutions"),
+    model_uri=CULTUREMECH.solutionDescriptor__solutions,
+    domain=None,
+    range=Optional[Union[Union[dict, SolutionDescriptor], list[Union[dict, SolutionDescriptor]]]],
+)
+
+slots.solutionDescriptor__concentration = Slot(
+    uri=CULTUREMECH.concentration,
+    name="solutionDescriptor__concentration",
+    curie=CULTUREMECH.curie("concentration"),
+    model_uri=CULTUREMECH.solutionDescriptor__concentration,
+    domain=None,
+    range=Optional[Union[dict, ConcentrationValue]],
+)
+
+slots.solutionDescriptor__concentration_candidates = Slot(
+    uri=CULTUREMECH.concentration_candidates,
+    name="solutionDescriptor__concentration_candidates",
+    curie=CULTUREMECH.curie("concentration_candidates"),
+    model_uri=CULTUREMECH.solutionDescriptor__concentration_candidates,
+    domain=None,
+    range=Optional[
+        Union[Union[dict, ConcentrationCandidate], list[Union[dict, ConcentrationCandidate]]]
+    ],
+)
+
+slots.solutionDescriptor__preparation_notes = Slot(
+    uri=CULTUREMECH.preparation_notes,
+    name="solutionDescriptor__preparation_notes",
+    curie=CULTUREMECH.curie("preparation_notes"),
+    model_uri=CULTUREMECH.solutionDescriptor__preparation_notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.solutionDescriptor__storage_conditions = Slot(
+    uri=CULTUREMECH.storage_conditions,
+    name="solutionDescriptor__storage_conditions",
+    curie=CULTUREMECH.curie("storage_conditions"),
+    model_uri=CULTUREMECH.solutionDescriptor__storage_conditions,
+    domain=None,
+    range=Optional[Union[dict, StorageConditions]],
+)
+
+slots.solutionDescriptor__shelf_life = Slot(
+    uri=CULTUREMECH.shelf_life,
+    name="solutionDescriptor__shelf_life",
+    curie=CULTUREMECH.curie("shelf_life"),
+    model_uri=CULTUREMECH.solutionDescriptor__shelf_life,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.organismDescriptor__preferred_term = Slot(
+    uri=CULTUREMECH.preferred_term,
+    name="organismDescriptor__preferred_term",
+    curie=CULTUREMECH.curie("preferred_term"),
+    model_uri=CULTUREMECH.organismDescriptor__preferred_term,
+    domain=None,
+    range=URIRef,
+)
+
+slots.organismDescriptor__term = Slot(
+    uri=CULTUREMECH.term,
+    name="organismDescriptor__term",
+    curie=CULTUREMECH.curie("term"),
+    model_uri=CULTUREMECH.organismDescriptor__term,
+    domain=None,
+    range=Optional[Union[dict, OrganismTerm]],
+)
+
+slots.organismDescriptor__scoped_to_variant = Slot(
+    uri=CULTUREMECH.scoped_to_variant,
+    name="organismDescriptor__scoped_to_variant",
+    curie=CULTUREMECH.curie("scoped_to_variant"),
+    model_uri=CULTUREMECH.organismDescriptor__scoped_to_variant,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.organismDescriptor__gtdb_term = Slot(
+    uri=CULTUREMECH.gtdb_term,
+    name="organismDescriptor__gtdb_term",
+    curie=CULTUREMECH.curie("gtdb_term"),
+    model_uri=CULTUREMECH.organismDescriptor__gtdb_term,
+    domain=None,
+    range=Optional[Union[dict, GTDBTerm]],
+)
+
+slots.organismDescriptor__genome_assembly_id = Slot(
+    uri=CULTUREMECH.genome_assembly_id,
+    name="organismDescriptor__genome_assembly_id",
+    curie=CULTUREMECH.curie("genome_assembly_id"),
+    model_uri=CULTUREMECH.organismDescriptor__genome_assembly_id,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+    pattern=re.compile(r"^(GCF_|GCA_|SAMN)[0-9.]+$"),
+)
+
+slots.organismDescriptor__strain = Slot(
+    uri=CULTUREMECH.strain,
+    name="organismDescriptor__strain",
+    curie=CULTUREMECH.curie("strain"),
+    model_uri=CULTUREMECH.organismDescriptor__strain,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.organismDescriptor__growth_phase = Slot(
+    uri=CULTUREMECH.growth_phase,
+    name="organismDescriptor__growth_phase",
+    curie=CULTUREMECH.curie("growth_phase"),
+    model_uri=CULTUREMECH.organismDescriptor__growth_phase,
+    domain=None,
+    range=Optional[Union[str, "GrowthPhaseEnum"]],
+)
+
+slots.organismDescriptor__growth_metrics = Slot(
+    uri=CULTUREMECH.growth_metrics,
+    name="organismDescriptor__growth_metrics",
+    curie=CULTUREMECH.curie("growth_metrics"),
+    model_uri=CULTUREMECH.organismDescriptor__growth_metrics,
+    domain=None,
+    range=Optional[Union[Union[dict, GrowthMetrics], list[Union[dict, GrowthMetrics]]]],
+)
+
+slots.organismDescriptor__community_role = Slot(
+    uri=CULTUREMECH.community_role,
+    name="organismDescriptor__community_role",
+    curie=CULTUREMECH.curie("community_role"),
+    model_uri=CULTUREMECH.organismDescriptor__community_role,
+    domain=None,
+    range=Optional[
+        Union[
+            Union[str, "CommunityOrganismRoleEnum"], list[Union[str, "CommunityOrganismRoleEnum"]]
+        ]
+    ],
+)
+
+slots.organismDescriptor__target_abundance = Slot(
+    uri=CULTUREMECH.target_abundance,
+    name="organismDescriptor__target_abundance",
+    curie=CULTUREMECH.curie("target_abundance"),
+    model_uri=CULTUREMECH.organismDescriptor__target_abundance,
+    domain=None,
+    range=Optional[float],
+)
+
+slots.organismDescriptor__community_function = Slot(
+    uri=CULTUREMECH.community_function,
+    name="organismDescriptor__community_function",
+    curie=CULTUREMECH.curie("community_function"),
+    model_uri=CULTUREMECH.organismDescriptor__community_function,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.organismDescriptor__cofactor_requirements = Slot(
+    uri=CULTUREMECH.cofactor_requirements,
+    name="organismDescriptor__cofactor_requirements",
+    curie=CULTUREMECH.curie("cofactor_requirements"),
+    model_uri=CULTUREMECH.organismDescriptor__cofactor_requirements,
+    domain=None,
+    range=Optional[Union[Union[dict, CofactorRequirement], list[Union[dict, CofactorRequirement]]]],
+)
+
+slots.organismDescriptor__transporters = Slot(
+    uri=CULTUREMECH.transporters,
+    name="organismDescriptor__transporters",
+    curie=CULTUREMECH.curie("transporters"),
+    model_uri=CULTUREMECH.organismDescriptor__transporters,
+    domain=None,
+    range=Optional[
+        Union[Union[dict, TransporterAnnotation], list[Union[dict, TransporterAnnotation]]]
+    ],
+)
+
+slots.organismDescriptor__evidence = Slot(
+    uri=CULTUREMECH.evidence,
+    name="organismDescriptor__evidence",
+    curie=CULTUREMECH.curie("evidence"),
+    model_uri=CULTUREMECH.organismDescriptor__evidence,
+    domain=None,
+    range=Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]],
+            list[Union[dict, EvidenceItem]],
+        ]
+    ],
+)
+
+slots.organismDescriptor__strain_modifications = Slot(
+    uri=CULTUREMECH.strain_modifications,
+    name="organismDescriptor__strain_modifications",
+    curie=CULTUREMECH.curie("strain_modifications"),
+    model_uri=CULTUREMECH.organismDescriptor__strain_modifications,
+    domain=None,
+    range=Optional[Union[Union[dict, StrainModification], list[Union[dict, StrainModification]]]],
+)
+
+slots.sourceEnvironmentDescriptor__preferred_term = Slot(
+    uri=CULTUREMECH.preferred_term,
+    name="sourceEnvironmentDescriptor__preferred_term",
+    curie=CULTUREMECH.curie("preferred_term"),
+    model_uri=CULTUREMECH.sourceEnvironmentDescriptor__preferred_term,
+    domain=None,
+    range=str,
+)
+
+slots.sourceEnvironmentDescriptor__term = Slot(
+    uri=CULTUREMECH.term,
+    name="sourceEnvironmentDescriptor__term",
+    curie=CULTUREMECH.curie("term"),
+    model_uri=CULTUREMECH.sourceEnvironmentDescriptor__term,
+    domain=None,
+    range=Optional[Union[dict, EnvironmentTerm]],
+)
+
+slots.sourceEnvironmentDescriptor__notes = Slot(
+    uri=CULTUREMECH.notes,
+    name="sourceEnvironmentDescriptor__notes",
+    curie=CULTUREMECH.curie("notes"),
+    model_uri=CULTUREMECH.sourceEnvironmentDescriptor__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.cofactorDescriptor__preferred_term = Slot(
+    uri=CULTUREMECH.preferred_term,
+    name="cofactorDescriptor__preferred_term",
+    curie=CULTUREMECH.curie("preferred_term"),
+    model_uri=CULTUREMECH.cofactorDescriptor__preferred_term,
+    domain=None,
+    range=str,
+)
+
+slots.cofactorDescriptor__term = Slot(
+    uri=CULTUREMECH.term,
+    name="cofactorDescriptor__term",
+    curie=CULTUREMECH.curie("term"),
+    model_uri=CULTUREMECH.cofactorDescriptor__term,
+    domain=None,
+    range=Optional[Union[dict, ChemicalEntityTerm]],
+)
+
+slots.cofactorDescriptor__category = Slot(
+    uri=CULTUREMECH.category,
+    name="cofactorDescriptor__category",
+    curie=CULTUREMECH.curie("category"),
+    model_uri=CULTUREMECH.cofactorDescriptor__category,
+    domain=None,
+    range=Optional[Union[str, "CofactorCategoryEnum"]],
+)
+
+slots.cofactorDescriptor__precursor = Slot(
+    uri=CULTUREMECH.precursor,
+    name="cofactorDescriptor__precursor",
+    curie=CULTUREMECH.curie("precursor"),
+    model_uri=CULTUREMECH.cofactorDescriptor__precursor,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.cofactorDescriptor__precursor_term = Slot(
+    uri=CULTUREMECH.precursor_term,
+    name="cofactorDescriptor__precursor_term",
+    curie=CULTUREMECH.curie("precursor_term"),
+    model_uri=CULTUREMECH.cofactorDescriptor__precursor_term,
+    domain=None,
+    range=Optional[Union[dict, ChemicalEntityTerm]],
+)
+
+slots.cofactorDescriptor__ec_associations = Slot(
+    uri=CULTUREMECH.ec_associations,
+    name="cofactorDescriptor__ec_associations",
+    curie=CULTUREMECH.curie("ec_associations"),
+    model_uri=CULTUREMECH.cofactorDescriptor__ec_associations,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.cofactorDescriptor__kegg_pathways = Slot(
+    uri=CULTUREMECH.kegg_pathways,
+    name="cofactorDescriptor__kegg_pathways",
+    curie=CULTUREMECH.curie("kegg_pathways"),
+    model_uri=CULTUREMECH.cofactorDescriptor__kegg_pathways,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.cofactorDescriptor__enzyme_examples = Slot(
+    uri=CULTUREMECH.enzyme_examples,
+    name="cofactorDescriptor__enzyme_examples",
+    curie=CULTUREMECH.curie("enzyme_examples"),
+    model_uri=CULTUREMECH.cofactorDescriptor__enzyme_examples,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.cofactorDescriptor__biosynthesis_genes = Slot(
+    uri=CULTUREMECH.biosynthesis_genes,
+    name="cofactorDescriptor__biosynthesis_genes",
+    curie=CULTUREMECH.curie("biosynthesis_genes"),
+    model_uri=CULTUREMECH.cofactorDescriptor__biosynthesis_genes,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.cofactorDescriptor__bioavailability = Slot(
+    uri=CULTUREMECH.bioavailability,
+    name="cofactorDescriptor__bioavailability",
+    curie=CULTUREMECH.curie("bioavailability"),
+    model_uri=CULTUREMECH.cofactorDescriptor__bioavailability,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.cofactorDescriptor__notes = Slot(
+    uri=CULTUREMECH.notes,
+    name="cofactorDescriptor__notes",
+    curie=CULTUREMECH.curie("notes"),
+    model_uri=CULTUREMECH.cofactorDescriptor__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.sourceReference__database = Slot(
+    uri=CULTUREMECH.database,
+    name="sourceReference__database",
+    curie=CULTUREMECH.curie("database"),
+    model_uri=CULTUREMECH.sourceReference__database,
+    domain=None,
+    range=str,
+)
+
+slots.sourceReference__database_id = Slot(
+    uri=CULTUREMECH.database_id,
+    name="sourceReference__database_id",
+    curie=CULTUREMECH.curie("database_id"),
+    model_uri=CULTUREMECH.sourceReference__database_id,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.sourceReference__url = Slot(
+    uri=CULTUREMECH.url,
+    name="sourceReference__url",
+    curie=CULTUREMECH.curie("url"),
+    model_uri=CULTUREMECH.sourceReference__url,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.ingredientSynonym__synonym_text = Slot(
+    uri=CULTUREMECH.synonym_text,
+    name="ingredientSynonym__synonym_text",
+    curie=CULTUREMECH.curie("synonym_text"),
+    model_uri=CULTUREMECH.ingredientSynonym__synonym_text,
+    domain=None,
+    range=str,
+)
+
+slots.ingredientSynonym__synonym_type = Slot(
+    uri=CULTUREMECH.synonym_type,
+    name="ingredientSynonym__synonym_type",
+    curie=CULTUREMECH.curie("synonym_type"),
+    model_uri=CULTUREMECH.ingredientSynonym__synonym_type,
+    domain=None,
+    range=Optional[Union[str, "SynonymTypeEnum"]],
+)
+
+slots.ingredientCurationMetadata__mapping_quality = Slot(
+    uri=CULTUREMECH.mapping_quality,
+    name="ingredientCurationMetadata__mapping_quality",
+    curie=CULTUREMECH.curie("mapping_quality"),
+    model_uri=CULTUREMECH.ingredientCurationMetadata__mapping_quality,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.ingredientCurationMetadata__confidence_score = Slot(
+    uri=CULTUREMECH.confidence_score,
+    name="ingredientCurationMetadata__confidence_score",
+    curie=CULTUREMECH.curie("confidence_score"),
+    model_uri=CULTUREMECH.ingredientCurationMetadata__confidence_score,
+    domain=None,
+    range=Optional[float],
+)
+
+slots.ingredientCurationMetadata__curation_date = Slot(
+    uri=CULTUREMECH.curation_date,
+    name="ingredientCurationMetadata__curation_date",
+    curie=CULTUREMECH.curie("curation_date"),
+    model_uri=CULTUREMECH.ingredientCurationMetadata__curation_date,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.ingredientCurationMetadata__ontology_source = Slot(
+    uri=CULTUREMECH.ontology_source,
+    name="ingredientCurationMetadata__ontology_source",
+    curie=CULTUREMECH.curie("ontology_source"),
+    model_uri=CULTUREMECH.ingredientCurationMetadata__ontology_source,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.ingredientReference__preferred_term = Slot(
+    uri=CULTUREMECH.preferred_term,
+    name="ingredientReference__preferred_term",
+    curie=CULTUREMECH.curie("preferred_term"),
+    model_uri=CULTUREMECH.ingredientReference__preferred_term,
+    domain=None,
+    range=str,
+)
+
+slots.ingredientReference__mediaingredientmech_id = Slot(
+    uri=CULTUREMECH.mediaingredientmech_id,
+    name="ingredientReference__mediaingredientmech_id",
+    curie=CULTUREMECH.curie("mediaingredientmech_id"),
+    model_uri=CULTUREMECH.ingredientReference__mediaingredientmech_id,
+    domain=None,
+    range=Optional[str],
+    pattern=re.compile(r"^MediaIngredientMech:\d{6}$"),
+)
+
+slots.concentrationValue__value = Slot(
+    uri=CULTUREMECH.value,
+    name="concentrationValue__value",
+    curie=CULTUREMECH.curie("value"),
+    model_uri=CULTUREMECH.concentrationValue__value,
+    domain=None,
+    range=str,
+)
+
+slots.concentrationValue__unit = Slot(
+    uri=CULTUREMECH.unit,
+    name="concentrationValue__unit",
+    curie=CULTUREMECH.curie("unit"),
+    model_uri=CULTUREMECH.concentrationValue__unit,
+    domain=None,
+    range=Union[str, "ConcentrationUnitEnum"],
+)
+
+slots.concentrationValue__per_volume = Slot(
+    uri=CULTUREMECH.per_volume,
+    name="concentrationValue__per_volume",
+    curie=CULTUREMECH.curie("per_volume"),
+    model_uri=CULTUREMECH.concentrationValue__per_volume,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.concentrationCandidate__value = Slot(
+    uri=CULTUREMECH.value,
+    name="concentrationCandidate__value",
+    curie=CULTUREMECH.curie("value"),
+    model_uri=CULTUREMECH.concentrationCandidate__value,
+    domain=None,
+    range=str,
+)
+
+slots.concentrationCandidate__unit = Slot(
+    uri=CULTUREMECH.unit,
+    name="concentrationCandidate__unit",
+    curie=CULTUREMECH.curie("unit"),
+    model_uri=CULTUREMECH.concentrationCandidate__unit,
+    domain=None,
+    range=Union[str, "ConcentrationUnitEnum"],
+)
+
+slots.concentrationCandidate__basis = Slot(
+    uri=CULTUREMECH.basis,
+    name="concentrationCandidate__basis",
+    curie=CULTUREMECH.curie("basis"),
+    model_uri=CULTUREMECH.concentrationCandidate__basis,
+    domain=None,
+    range=Union[str, "ConcentrationBasisEnum"],
+)
+
+slots.concentrationCandidate__support = Slot(
+    uri=CULTUREMECH.support,
+    name="concentrationCandidate__support",
+    curie=CULTUREMECH.curie("support"),
+    model_uri=CULTUREMECH.concentrationCandidate__support,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.concentrationCandidate__counterevidence = Slot(
+    uri=CULTUREMECH.counterevidence,
+    name="concentrationCandidate__counterevidence",
+    curie=CULTUREMECH.curie("counterevidence"),
+    model_uri=CULTUREMECH.concentrationCandidate__counterevidence,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.concentrationCandidate__source = Slot(
+    uri=CULTUREMECH.source,
+    name="concentrationCandidate__source",
+    curie=CULTUREMECH.curie("source"),
+    model_uri=CULTUREMECH.concentrationCandidate__source,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.concentrationCandidate__proposed_by = Slot(
+    uri=CULTUREMECH.proposed_by,
+    name="concentrationCandidate__proposed_by",
+    curie=CULTUREMECH.curie("proposed_by"),
+    model_uri=CULTUREMECH.concentrationCandidate__proposed_by,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.concentrationCandidate__proposed_on = Slot(
+    uri=CULTUREMECH.proposed_on,
+    name="concentrationCandidate__proposed_on",
+    curie=CULTUREMECH.curie("proposed_on"),
+    model_uri=CULTUREMECH.concentrationCandidate__proposed_on,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.growthMetrics__max_od600 = Slot(
+    uri=CULTUREMECH.max_od600,
+    name="growthMetrics__max_od600",
+    curie=CULTUREMECH.curie("max_od600"),
+    model_uri=CULTUREMECH.growthMetrics__max_od600,
+    domain=None,
+    range=Optional[float],
+)
+
+slots.growthMetrics__max_od_wavelength_nm = Slot(
+    uri=CULTUREMECH.max_od_wavelength_nm,
+    name="growthMetrics__max_od_wavelength_nm",
+    curie=CULTUREMECH.curie("max_od_wavelength_nm"),
+    model_uri=CULTUREMECH.growthMetrics__max_od_wavelength_nm,
+    domain=None,
+    range=Optional[int],
+)
+
+slots.growthMetrics__doubling_time_minutes = Slot(
+    uri=CULTUREMECH.doubling_time_minutes,
+    name="growthMetrics__doubling_time_minutes",
+    curie=CULTUREMECH.curie("doubling_time_minutes"),
+    model_uri=CULTUREMECH.growthMetrics__doubling_time_minutes,
+    domain=None,
+    range=Optional[float],
+)
+
+slots.growthMetrics__growth_rate_per_hour = Slot(
+    uri=CULTUREMECH.growth_rate_per_hour,
+    name="growthMetrics__growth_rate_per_hour",
+    curie=CULTUREMECH.curie("growth_rate_per_hour"),
+    model_uri=CULTUREMECH.growthMetrics__growth_rate_per_hour,
+    domain=None,
+    range=Optional[float],
+)
+
+slots.growthMetrics__temperature_celsius = Slot(
+    uri=CULTUREMECH.temperature_celsius,
+    name="growthMetrics__temperature_celsius",
+    curie=CULTUREMECH.curie("temperature_celsius"),
+    model_uri=CULTUREMECH.growthMetrics__temperature_celsius,
+    domain=None,
+    range=Optional[float],
+)
+
+slots.growthMetrics__ph_at_measurement = Slot(
+    uri=CULTUREMECH.ph_at_measurement,
+    name="growthMetrics__ph_at_measurement",
+    curie=CULTUREMECH.curie("ph_at_measurement"),
+    model_uri=CULTUREMECH.growthMetrics__ph_at_measurement,
+    domain=None,
+    range=Optional[float],
+)
+
+slots.growthMetrics__measurement_conditions = Slot(
+    uri=CULTUREMECH.measurement_conditions,
+    name="growthMetrics__measurement_conditions",
+    curie=CULTUREMECH.curie("measurement_conditions"),
+    model_uri=CULTUREMECH.growthMetrics__measurement_conditions,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.growthMetrics__evidence = Slot(
+    uri=CULTUREMECH.evidence,
+    name="growthMetrics__evidence",
+    curie=CULTUREMECH.curie("evidence"),
+    model_uri=CULTUREMECH.growthMetrics__evidence,
+    domain=None,
+    range=Union[
+        dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]],
+        list[Union[dict, EvidenceItem]],
+    ],
+)
+
+slots.growthMetrics__is_max_attainment = Slot(
+    uri=CULTUREMECH.is_max_attainment,
+    name="growthMetrics__is_max_attainment",
+    curie=CULTUREMECH.curie("is_max_attainment"),
+    model_uri=CULTUREMECH.growthMetrics__is_max_attainment,
+    domain=None,
+    range=Optional[Union[bool, Bool]],
+)
+
+slots.growthMetrics__growth_mode = Slot(
+    uri=CULTUREMECH.growth_mode,
+    name="growthMetrics__growth_mode",
+    curie=CULTUREMECH.curie("growth_mode"),
+    model_uri=CULTUREMECH.growthMetrics__growth_mode,
+    domain=None,
+    range=Optional[Union[str, "GrowthModeEnum"]],
+)
+
+slots.growthMetrics__perturbations = Slot(
+    uri=CULTUREMECH.perturbations,
+    name="growthMetrics__perturbations",
+    curie=CULTUREMECH.curie("perturbations"),
+    model_uri=CULTUREMECH.growthMetrics__perturbations,
+    domain=None,
+    range=Optional[Union[Union[dict, PerturbationContext], list[Union[dict, PerturbationContext]]]],
+)
+
+slots.growthMetrics__nutrient_overrides = Slot(
+    uri=CULTUREMECH.nutrient_overrides,
+    name="growthMetrics__nutrient_overrides",
+    curie=CULTUREMECH.curie("nutrient_overrides"),
+    model_uri=CULTUREMECH.growthMetrics__nutrient_overrides,
+    domain=None,
+    range=Optional[Union[Union[dict, NutrientOverride], list[Union[dict, NutrientOverride]]]],
+)
+
+slots.perturbationContext__perturbation_type = Slot(
+    uri=CULTUREMECH.perturbation_type,
+    name="perturbationContext__perturbation_type",
+    curie=CULTUREMECH.curie("perturbation_type"),
+    model_uri=CULTUREMECH.perturbationContext__perturbation_type,
+    domain=None,
+    range=Union[str, "PerturbationTypeEnum"],
+)
+
+slots.perturbationContext__descriptor = Slot(
+    uri=CULTUREMECH.descriptor,
+    name="perturbationContext__descriptor",
+    curie=CULTUREMECH.curie("descriptor"),
+    model_uri=CULTUREMECH.perturbationContext__descriptor,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.perturbationContext__target = Slot(
+    uri=CULTUREMECH.target,
+    name="perturbationContext__target",
+    curie=CULTUREMECH.curie("target"),
+    model_uri=CULTUREMECH.perturbationContext__target,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.perturbationContext__level = Slot(
+    uri=CULTUREMECH.level,
+    name="perturbationContext__level",
+    curie=CULTUREMECH.curie("level"),
+    model_uri=CULTUREMECH.perturbationContext__level,
+    domain=None,
+    range=Optional[float],
+)
+
+slots.perturbationContext__level_unit = Slot(
+    uri=CULTUREMECH.level_unit,
+    name="perturbationContext__level_unit",
+    curie=CULTUREMECH.curie("level_unit"),
+    model_uri=CULTUREMECH.perturbationContext__level_unit,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.perturbationContext__ontology_id = Slot(
+    uri=CULTUREMECH.ontology_id,
+    name="perturbationContext__ontology_id",
+    curie=CULTUREMECH.curie("ontology_id"),
+    model_uri=CULTUREMECH.perturbationContext__ontology_id,
+    domain=None,
+    range=Optional[str],
+    pattern=re.compile(r"^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$"),
+)
+
+slots.perturbationContext__evidence = Slot(
+    uri=CULTUREMECH.evidence,
+    name="perturbationContext__evidence",
+    curie=CULTUREMECH.curie("evidence"),
+    model_uri=CULTUREMECH.perturbationContext__evidence,
+    domain=None,
+    range=Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]],
+            list[Union[dict, EvidenceItem]],
+        ]
+    ],
+)
+
+slots.strainModification__modification_type = Slot(
+    uri=CULTUREMECH.modification_type,
+    name="strainModification__modification_type",
+    curie=CULTUREMECH.curie("modification_type"),
+    model_uri=CULTUREMECH.strainModification__modification_type,
+    domain=None,
+    range=Union[str, "StrainModificationTypeEnum"],
+)
+
+slots.strainModification__target = Slot(
+    uri=CULTUREMECH.target,
+    name="strainModification__target",
+    curie=CULTUREMECH.curie("target"),
+    model_uri=CULTUREMECH.strainModification__target,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.strainModification__description = Slot(
+    uri=CULTUREMECH.description,
+    name="strainModification__description",
+    curie=CULTUREMECH.curie("description"),
+    model_uri=CULTUREMECH.strainModification__description,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.strainModification__ontology_id = Slot(
+    uri=CULTUREMECH.ontology_id,
+    name="strainModification__ontology_id",
+    curie=CULTUREMECH.curie("ontology_id"),
+    model_uri=CULTUREMECH.strainModification__ontology_id,
+    domain=None,
+    range=Optional[str],
+    pattern=re.compile(r"^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$"),
+)
+
+slots.strainModification__evidence = Slot(
+    uri=CULTUREMECH.evidence,
+    name="strainModification__evidence",
+    curie=CULTUREMECH.curie("evidence"),
+    model_uri=CULTUREMECH.strainModification__evidence,
+    domain=None,
+    range=Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]],
+            list[Union[dict, EvidenceItem]],
+        ]
+    ],
+)
+
+slots.nutrientOverride__role = Slot(
+    uri=CULTUREMECH.role,
+    name="nutrientOverride__role",
+    curie=CULTUREMECH.curie("role"),
+    model_uri=CULTUREMECH.nutrientOverride__role,
+    domain=None,
+    range=Union[str, "NutritionalRoleEnum"],
+)
+
+slots.nutrientOverride__source = Slot(
+    uri=CULTUREMECH.source,
+    name="nutrientOverride__source",
+    curie=CULTUREMECH.curie("source"),
+    model_uri=CULTUREMECH.nutrientOverride__source,
+    domain=None,
+    range=str,
+)
+
+slots.nutrientOverride__ontology_id = Slot(
+    uri=CULTUREMECH.ontology_id,
+    name="nutrientOverride__ontology_id",
+    curie=CULTUREMECH.curie("ontology_id"),
+    model_uri=CULTUREMECH.nutrientOverride__ontology_id,
+    domain=None,
+    range=Optional[str],
+    pattern=re.compile(r"^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$"),
+)
+
+slots.nutrientOverride__is_sole_source = Slot(
+    uri=CULTUREMECH.is_sole_source,
+    name="nutrientOverride__is_sole_source",
+    curie=CULTUREMECH.curie("is_sole_source"),
+    model_uri=CULTUREMECH.nutrientOverride__is_sole_source,
+    domain=None,
+    range=Optional[Union[bool, Bool]],
+)
+
+slots.nutrientOverride__evidence = Slot(
+    uri=CULTUREMECH.evidence,
+    name="nutrientOverride__evidence",
+    curie=CULTUREMECH.curie("evidence"),
+    model_uri=CULTUREMECH.nutrientOverride__evidence,
+    domain=None,
+    range=Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]],
+            list[Union[dict, EvidenceItem]],
+        ]
+    ],
+)
+
+slots.temperatureValue__value = Slot(
+    uri=CULTUREMECH.value,
+    name="temperatureValue__value",
+    curie=CULTUREMECH.curie("value"),
+    model_uri=CULTUREMECH.temperatureValue__value,
+    domain=None,
+    range=float,
+)
+
+slots.temperatureValue__unit = Slot(
+    uri=CULTUREMECH.unit,
+    name="temperatureValue__unit",
+    curie=CULTUREMECH.curie("unit"),
+    model_uri=CULTUREMECH.temperatureValue__unit,
+    domain=None,
+    range=Union[str, "TemperatureUnitEnum"],
+)
+
+slots.phRange__min = Slot(
+    uri=CULTUREMECH.min,
+    name="phRange__min",
+    curie=CULTUREMECH.curie("min"),
+    model_uri=CULTUREMECH.phRange__min,
+    domain=None,
+    range=Optional[float],
+)
+
+slots.phRange__max = Slot(
+    uri=CULTUREMECH.max,
+    name="phRange__max",
+    curie=CULTUREMECH.curie("max"),
+    model_uri=CULTUREMECH.phRange__max,
+    domain=None,
+    range=Optional[float],
+)
+
+slots.phRange__notes = Slot(
+    uri=CULTUREMECH.notes,
+    name="phRange__notes",
+    curie=CULTUREMECH.curie("notes"),
+    model_uri=CULTUREMECH.phRange__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.preparationStep__step_number = Slot(
+    uri=CULTUREMECH.step_number,
+    name="preparationStep__step_number",
+    curie=CULTUREMECH.curie("step_number"),
+    model_uri=CULTUREMECH.preparationStep__step_number,
+    domain=None,
+    range=int,
+)
+
+slots.preparationStep__action = Slot(
+    uri=CULTUREMECH.action,
+    name="preparationStep__action",
+    curie=CULTUREMECH.curie("action"),
+    model_uri=CULTUREMECH.preparationStep__action,
+    domain=None,
+    range=Union[str, "PreparationActionEnum"],
+)
+
+slots.preparationStep__description = Slot(
+    uri=CULTUREMECH.description,
+    name="preparationStep__description",
+    curie=CULTUREMECH.curie("description"),
+    model_uri=CULTUREMECH.preparationStep__description,
+    domain=None,
+    range=str,
+)
+
+slots.preparationStep__temperature = Slot(
+    uri=CULTUREMECH.temperature,
+    name="preparationStep__temperature",
+    curie=CULTUREMECH.curie("temperature"),
+    model_uri=CULTUREMECH.preparationStep__temperature,
+    domain=None,
+    range=Optional[Union[dict, TemperatureValue]],
+)
+
+slots.preparationStep__duration = Slot(
+    uri=CULTUREMECH.duration,
+    name="preparationStep__duration",
+    curie=CULTUREMECH.curie("duration"),
+    model_uri=CULTUREMECH.preparationStep__duration,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.preparationStep__equipment = Slot(
+    uri=CULTUREMECH.equipment,
+    name="preparationStep__equipment",
+    curie=CULTUREMECH.curie("equipment"),
+    model_uri=CULTUREMECH.preparationStep__equipment,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.preparationStep__notes = Slot(
+    uri=CULTUREMECH.notes,
+    name="preparationStep__notes",
+    curie=CULTUREMECH.curie("notes"),
+    model_uri=CULTUREMECH.preparationStep__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.sterilizationDescriptor__method = Slot(
+    uri=CULTUREMECH.method,
+    name="sterilizationDescriptor__method",
+    curie=CULTUREMECH.curie("method"),
+    model_uri=CULTUREMECH.sterilizationDescriptor__method,
+    domain=None,
+    range=Union[str, "SterilizationMethodEnum"],
+)
+
+slots.sterilizationDescriptor__temperature = Slot(
+    uri=CULTUREMECH.temperature,
+    name="sterilizationDescriptor__temperature",
+    curie=CULTUREMECH.curie("temperature"),
+    model_uri=CULTUREMECH.sterilizationDescriptor__temperature,
+    domain=None,
+    range=Optional[Union[dict, TemperatureValue]],
+)
+
+slots.sterilizationDescriptor__pressure = Slot(
+    uri=CULTUREMECH.pressure,
+    name="sterilizationDescriptor__pressure",
+    curie=CULTUREMECH.curie("pressure"),
+    model_uri=CULTUREMECH.sterilizationDescriptor__pressure,
+    domain=None,
+    range=Optional[float],
+)
+
+slots.sterilizationDescriptor__duration = Slot(
+    uri=CULTUREMECH.duration,
+    name="sterilizationDescriptor__duration",
+    curie=CULTUREMECH.curie("duration"),
+    model_uri=CULTUREMECH.sterilizationDescriptor__duration,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.sterilizationDescriptor__notes = Slot(
+    uri=CULTUREMECH.notes,
+    name="sterilizationDescriptor__notes",
+    curie=CULTUREMECH.curie("notes"),
+    model_uri=CULTUREMECH.sterilizationDescriptor__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.storageConditions__temperature = Slot(
+    uri=CULTUREMECH.temperature,
+    name="storageConditions__temperature",
+    curie=CULTUREMECH.curie("temperature"),
+    model_uri=CULTUREMECH.storageConditions__temperature,
+    domain=None,
+    range=Union[dict, TemperatureValue],
+)
+
+slots.storageConditions__light_condition = Slot(
+    uri=CULTUREMECH.light_condition,
+    name="storageConditions__light_condition",
+    curie=CULTUREMECH.curie("light_condition"),
+    model_uri=CULTUREMECH.storageConditions__light_condition,
+    domain=None,
+    range=Optional[Union[str, "LightConditionEnum"]],
+)
+
+slots.storageConditions__shelf_life = Slot(
+    uri=CULTUREMECH.shelf_life,
+    name="storageConditions__shelf_life",
+    curie=CULTUREMECH.curie("shelf_life"),
+    model_uri=CULTUREMECH.storageConditions__shelf_life,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.storageConditions__container_type = Slot(
+    uri=CULTUREMECH.container_type,
+    name="storageConditions__container_type",
+    curie=CULTUREMECH.curie("container_type"),
+    model_uri=CULTUREMECH.storageConditions__container_type,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.storageConditions__notes = Slot(
+    uri=CULTUREMECH.notes,
+    name="storageConditions__notes",
+    curie=CULTUREMECH.curie("notes"),
+    model_uri=CULTUREMECH.storageConditions__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mediaVariant__name = Slot(
+    uri=CULTUREMECH.name,
+    name="mediaVariant__name",
+    curie=CULTUREMECH.curie("name"),
+    model_uri=CULTUREMECH.mediaVariant__name,
+    domain=None,
+    range=URIRef,
+)
+
+slots.mediaVariant__relationship = Slot(
+    uri=CULTUREMECH.relationship,
+    name="mediaVariant__relationship",
+    curie=CULTUREMECH.curie("relationship"),
+    model_uri=CULTUREMECH.mediaVariant__relationship,
+    domain=None,
+    range=Optional[Union[str, "MediaVariantRelationshipEnum"]],
+)
+
+slots.mediaVariant__description = Slot(
+    uri=CULTUREMECH.description,
+    name="mediaVariant__description",
+    curie=CULTUREMECH.curie("description"),
+    model_uri=CULTUREMECH.mediaVariant__description,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mediaVariant__modifications = Slot(
+    uri=CULTUREMECH.modifications,
+    name="mediaVariant__modifications",
+    curie=CULTUREMECH.curie("modifications"),
+    model_uri=CULTUREMECH.mediaVariant__modifications,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.mediaVariant__purpose = Slot(
+    uri=CULTUREMECH.purpose,
+    name="mediaVariant__purpose",
+    curie=CULTUREMECH.curie("purpose"),
+    model_uri=CULTUREMECH.mediaVariant__purpose,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mediaVariant__supplier_info = Slot(
+    uri=CULTUREMECH.supplier_info,
+    name="mediaVariant__supplier_info",
+    curie=CULTUREMECH.curie("supplier_info"),
+    model_uri=CULTUREMECH.mediaVariant__supplier_info,
+    domain=None,
+    range=Optional[Union[dict, SupplierInfo]],
+)
+
+slots.mediaVariant__evidence = Slot(
+    uri=CULTUREMECH.evidence,
+    name="mediaVariant__evidence",
+    curie=CULTUREMECH.curie("evidence"),
+    model_uri=CULTUREMECH.mediaVariant__evidence,
+    domain=None,
+    range=Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]],
+            list[Union[dict, EvidenceItem]],
+        ]
+    ],
+)
+
+slots.mediaRecipeReference__id = Slot(
+    uri=CULTUREMECH.id,
+    name="mediaRecipeReference__id",
+    curie=CULTUREMECH.curie("id"),
+    model_uri=CULTUREMECH.mediaRecipeReference__id,
+    domain=None,
+    range=Optional[str],
+    pattern=re.compile(r"^CultureMech:\d{6}$"),
+)
+
+slots.mediaRecipeReference__name = Slot(
+    uri=CULTUREMECH.name,
+    name="mediaRecipeReference__name",
+    curie=CULTUREMECH.curie("name"),
+    model_uri=CULTUREMECH.mediaRecipeReference__name,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mediaRecipeReference__path = Slot(
+    uri=CULTUREMECH.path,
+    name="mediaRecipeReference__path",
+    curie=CULTUREMECH.curie("path"),
+    model_uri=CULTUREMECH.mediaRecipeReference__path,
+    domain=None,
+    range=Optional[str],
+    pattern=re.compile(r"^data/normalized_yaml/.+\.ya?ml$"),
+)
+
+slots.mediaRecipeReference__relationship = Slot(
+    uri=CULTUREMECH.relationship,
+    name="mediaRecipeReference__relationship",
+    curie=CULTUREMECH.curie("relationship"),
+    model_uri=CULTUREMECH.mediaRecipeReference__relationship,
+    domain=None,
+    range=Optional[Union[str, "MediaVariantRelationshipEnum"]],
+)
+
+slots.mediaRecipeReference__notes = Slot(
+    uri=CULTUREMECH.notes,
+    name="mediaRecipeReference__notes",
+    curie=CULTUREMECH.curie("notes"),
+    model_uri=CULTUREMECH.mediaRecipeReference__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.mediaRecipeReference__evidence = Slot(
+    uri=CULTUREMECH.evidence,
+    name="mediaRecipeReference__evidence",
+    curie=CULTUREMECH.curie("evidence"),
+    model_uri=CULTUREMECH.mediaRecipeReference__evidence,
+    domain=None,
+    range=Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]],
+            list[Union[dict, EvidenceItem]],
+        ]
+    ],
+)
+
+slots.supplierInfo__supplier_name = Slot(
+    uri=CULTUREMECH.supplier_name,
+    name="supplierInfo__supplier_name",
+    curie=CULTUREMECH.curie("supplier_name"),
+    model_uri=CULTUREMECH.supplierInfo__supplier_name,
+    domain=None,
+    range=str,
+)
+
+slots.supplierInfo__catalog_number = Slot(
+    uri=CULTUREMECH.catalog_number,
+    name="supplierInfo__catalog_number",
+    curie=CULTUREMECH.curie("catalog_number"),
+    model_uri=CULTUREMECH.supplierInfo__catalog_number,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.supplierInfo__product_url = Slot(
+    uri=CULTUREMECH.product_url,
+    name="supplierInfo__product_url",
+    curie=CULTUREMECH.curie("product_url"),
+    model_uri=CULTUREMECH.supplierInfo__product_url,
+    domain=None,
+    range=Optional[Union[str, URI]],
+)
+
+slots.supplierInfo__notes = Slot(
+    uri=CULTUREMECH.notes,
+    name="supplierInfo__notes",
+    curie=CULTUREMECH.curie("notes"),
+    model_uri=CULTUREMECH.supplierInfo__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.publicationReference__reference = Slot(
+    uri=CULTUREMECH.reference,
+    name="publicationReference__reference",
+    curie=CULTUREMECH.curie("reference"),
+    model_uri=CULTUREMECH.publicationReference__reference,
+    domain=None,
+    range=str,
+)
+
+slots.publicationReference__title = Slot(
+    uri=CULTUREMECH.title,
+    name="publicationReference__title",
+    curie=CULTUREMECH.curie("title"),
+    model_uri=CULTUREMECH.publicationReference__title,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.publicationReference__authors = Slot(
+    uri=CULTUREMECH.authors,
+    name="publicationReference__authors",
+    curie=CULTUREMECH.curie("authors"),
+    model_uri=CULTUREMECH.publicationReference__authors,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.publicationReference__year = Slot(
+    uri=CULTUREMECH.year,
+    name="publicationReference__year",
+    curie=CULTUREMECH.curie("year"),
+    model_uri=CULTUREMECH.publicationReference__year,
+    domain=None,
+    range=Optional[int],
+)
+
+slots.publicationReference__notes = Slot(
+    uri=CULTUREMECH.notes,
+    name="publicationReference__notes",
+    curie=CULTUREMECH.curie("notes"),
+    model_uri=CULTUREMECH.publicationReference__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.evidenceItem__reference = Slot(
+    uri=CULTUREMECH.reference,
+    name="evidenceItem__reference",
+    curie=CULTUREMECH.curie("reference"),
+    model_uri=CULTUREMECH.evidenceItem__reference,
+    domain=None,
+    range=URIRef,
+)
+
+slots.evidenceItem__supports = Slot(
+    uri=CULTUREMECH.supports,
+    name="evidenceItem__supports",
+    curie=CULTUREMECH.curie("supports"),
+    model_uri=CULTUREMECH.evidenceItem__supports,
+    domain=None,
+    range=Union[str, "EvidenceItemSupportEnum"],
+)
+
+slots.evidenceItem__snippet = Slot(
+    uri=CULTUREMECH.snippet,
+    name="evidenceItem__snippet",
+    curie=CULTUREMECH.curie("snippet"),
+    model_uri=CULTUREMECH.evidenceItem__snippet,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.evidenceItem__explanation = Slot(
+    uri=CULTUREMECH.explanation,
+    name="evidenceItem__explanation",
+    curie=CULTUREMECH.curie("explanation"),
+    model_uri=CULTUREMECH.evidenceItem__explanation,
+    domain=None,
+    range=str,
+)
+
+slots.curationEvent__timestamp = Slot(
+    uri=CULTUREMECH.timestamp,
+    name="curationEvent__timestamp",
+    curie=CULTUREMECH.curie("timestamp"),
+    model_uri=CULTUREMECH.curationEvent__timestamp,
+    domain=None,
+    range=str,
+    pattern=re.compile(r"^20[0-9]{2}-"),
+)
+
+slots.curationEvent__curator = Slot(
+    uri=CULTUREMECH.curator,
+    name="curationEvent__curator",
+    curie=CULTUREMECH.curie("curator"),
+    model_uri=CULTUREMECH.curationEvent__curator,
+    domain=None,
+    range=str,
+)
+
+slots.curationEvent__action = Slot(
+    uri=CULTUREMECH.action,
+    name="curationEvent__action",
+    curie=CULTUREMECH.curie("action"),
+    model_uri=CULTUREMECH.curationEvent__action,
+    domain=None,
+    range=str,
+)
+
+slots.curationEvent__notes = Slot(
+    uri=CULTUREMECH.notes,
+    name="curationEvent__notes",
+    curie=CULTUREMECH.curie("notes"),
+    model_uri=CULTUREMECH.curationEvent__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.curationEvent__changes = Slot(
+    uri=CULTUREMECH.changes,
+    name="curationEvent__changes",
+    curie=CULTUREMECH.curie("changes"),
+    model_uri=CULTUREMECH.curationEvent__changes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.curationEvent__source = Slot(
+    uri=CULTUREMECH.source,
+    name="curationEvent__source",
+    curie=CULTUREMECH.curie("source"),
+    model_uri=CULTUREMECH.curationEvent__source,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.sourceData__origin = Slot(
+    uri=CULTUREMECH.origin,
+    name="sourceData__origin",
+    curie=CULTUREMECH.curie("origin"),
+    model_uri=CULTUREMECH.sourceData__origin,
+    domain=None,
+    range=str,
+)
+
+slots.sourceData__community_ids = Slot(
+    uri=CULTUREMECH.community_ids,
+    name="sourceData__community_ids",
+    curie=CULTUREMECH.curie("community_ids"),
+    model_uri=CULTUREMECH.sourceData__community_ids,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.sourceData__import_date = Slot(
+    uri=CULTUREMECH.import_date,
+    name="sourceData__import_date",
+    curie=CULTUREMECH.curie("import_date"),
+    model_uri=CULTUREMECH.sourceData__import_date,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.sourceData__evidence = Slot(
+    uri=CULTUREMECH.evidence,
+    name="sourceData__evidence",
+    curie=CULTUREMECH.curie("evidence"),
+    model_uri=CULTUREMECH.sourceData__evidence,
+    domain=None,
+    range=Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]],
+            list[Union[dict, EvidenceItem]],
+        ]
+    ],
+)
+
+slots.sourceData__notes = Slot(
+    uri=CULTUREMECH.notes,
+    name="sourceData__notes",
+    curie=CULTUREMECH.curie("notes"),
+    model_uri=CULTUREMECH.sourceData__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.sourceData__mediaingredientmech_id = Slot(
+    uri=CULTUREMECH.mediaingredientmech_id,
+    name="sourceData__mediaingredientmech_id",
+    curie=CULTUREMECH.curie("mediaingredientmech_id"),
+    model_uri=CULTUREMECH.sourceData__mediaingredientmech_id,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.cofactorRequirement__cofactor = Slot(
+    uri=CULTUREMECH.cofactor,
+    name="cofactorRequirement__cofactor",
+    curie=CULTUREMECH.curie("cofactor"),
+    model_uri=CULTUREMECH.cofactorRequirement__cofactor,
+    domain=None,
+    range=Union[dict, CofactorDescriptor],
+)
+
+slots.cofactorRequirement__can_biosynthesize = Slot(
+    uri=CULTUREMECH.can_biosynthesize,
+    name="cofactorRequirement__can_biosynthesize",
+    curie=CULTUREMECH.curie("can_biosynthesize"),
+    model_uri=CULTUREMECH.cofactorRequirement__can_biosynthesize,
+    domain=None,
+    range=Union[bool, Bool],
+)
+
+slots.cofactorRequirement__confidence = Slot(
+    uri=CULTUREMECH.confidence,
+    name="cofactorRequirement__confidence",
+    curie=CULTUREMECH.curie("confidence"),
+    model_uri=CULTUREMECH.cofactorRequirement__confidence,
+    domain=None,
+    range=Optional[float],
+)
+
+slots.cofactorRequirement__evidence = Slot(
+    uri=CULTUREMECH.evidence,
+    name="cofactorRequirement__evidence",
+    curie=CULTUREMECH.curie("evidence"),
+    model_uri=CULTUREMECH.cofactorRequirement__evidence,
+    domain=None,
+    range=Optional[
+        Union[
+            dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]],
+            list[Union[dict, EvidenceItem]],
+        ]
+    ],
+)
+
+slots.cofactorRequirement__genes = Slot(
+    uri=CULTUREMECH.genes,
+    name="cofactorRequirement__genes",
+    curie=CULTUREMECH.curie("genes"),
+    model_uri=CULTUREMECH.cofactorRequirement__genes,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.transporterAnnotation__name = Slot(
+    uri=CULTUREMECH.name,
+    name="transporterAnnotation__name",
+    curie=CULTUREMECH.curie("name"),
+    model_uri=CULTUREMECH.transporterAnnotation__name,
+    domain=None,
+    range=str,
+)
+
+slots.transporterAnnotation__transporter_type = Slot(
+    uri=CULTUREMECH.transporter_type,
+    name="transporterAnnotation__transporter_type",
+    curie=CULTUREMECH.curie("transporter_type"),
+    model_uri=CULTUREMECH.transporterAnnotation__transporter_type,
+    domain=None,
+    range=Union[str, "TransporterTypeEnum"],
+)
+
+slots.transporterAnnotation__substrates = Slot(
+    uri=CULTUREMECH.substrates,
+    name="transporterAnnotation__substrates",
+    curie=CULTUREMECH.curie("substrates"),
+    model_uri=CULTUREMECH.transporterAnnotation__substrates,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.transporterAnnotation__substrate_terms = Slot(
+    uri=CULTUREMECH.substrate_terms,
+    name="transporterAnnotation__substrate_terms",
+    curie=CULTUREMECH.curie("substrate_terms"),
+    model_uri=CULTUREMECH.transporterAnnotation__substrate_terms,
+    domain=None,
+    range=Optional[
+        Union[
+            dict[Union[str, ChemicalEntityTermId], Union[dict, ChemicalEntityTerm]],
+            list[Union[dict, ChemicalEntityTerm]],
+        ]
+    ],
+)
+
+slots.transporterAnnotation__direction = Slot(
+    uri=CULTUREMECH.direction,
+    name="transporterAnnotation__direction",
+    curie=CULTUREMECH.curie("direction"),
+    model_uri=CULTUREMECH.transporterAnnotation__direction,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.transporterAnnotation__genes = Slot(
+    uri=CULTUREMECH.genes,
+    name="transporterAnnotation__genes",
+    curie=CULTUREMECH.curie("genes"),
+    model_uri=CULTUREMECH.transporterAnnotation__genes,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.transporterAnnotation__ec_number = Slot(
+    uri=CULTUREMECH.ec_number,
+    name="transporterAnnotation__ec_number",
+    curie=CULTUREMECH.curie("ec_number"),
+    model_uri=CULTUREMECH.transporterAnnotation__ec_number,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.transporterAnnotation__notes = Slot(
+    uri=CULTUREMECH.notes,
+    name="transporterAnnotation__notes",
+    curie=CULTUREMECH.curie("notes"),
+    model_uri=CULTUREMECH.transporterAnnotation__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.importMetadata__source_database = Slot(
+    uri=CULTUREMECH.source_database,
+    name="importMetadata__source_database",
+    curie=CULTUREMECH.curie("source_database"),
+    model_uri=CULTUREMECH.importMetadata__source_database,
+    domain=None,
+    range=Union[str, "SourceDatabaseEnum"],
+)
+
+slots.importMetadata__source_id = Slot(
+    uri=CULTUREMECH.source_id,
+    name="importMetadata__source_id",
+    curie=CULTUREMECH.curie("source_id"),
+    model_uri=CULTUREMECH.importMetadata__source_id,
+    domain=None,
+    range=str,
+)
+
+slots.importMetadata__import_version = Slot(
+    uri=CULTUREMECH.import_version,
+    name="importMetadata__import_version",
+    curie=CULTUREMECH.curie("import_version"),
+    model_uri=CULTUREMECH.importMetadata__import_version,
+    domain=None,
+    range=str,
+    pattern=re.compile(r"^v\d+\.\d+\.\d+_\d{4}-\d{2}-\d{2}$"),
+)
+
+slots.importMetadata__import_date = Slot(
+    uri=CULTUREMECH.import_date,
+    name="importMetadata__import_date",
+    curie=CULTUREMECH.curie("import_date"),
+    model_uri=CULTUREMECH.importMetadata__import_date,
+    domain=None,
+    range=str,
+)
+
+slots.importMetadata__import_skill = Slot(
+    uri=CULTUREMECH.import_skill,
+    name="importMetadata__import_skill",
+    curie=CULTUREMECH.curie("import_skill"),
+    model_uri=CULTUREMECH.importMetadata__import_skill,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.importMetadata__last_updated = Slot(
+    uri=CULTUREMECH.last_updated,
+    name="importMetadata__last_updated",
+    curie=CULTUREMECH.curie("last_updated"),
+    model_uri=CULTUREMECH.importMetadata__last_updated,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.importMetadata__update_history = Slot(
+    uri=CULTUREMECH.update_history,
+    name="importMetadata__update_history",
+    curie=CULTUREMECH.curie("update_history"),
+    model_uri=CULTUREMECH.importMetadata__update_history,
+    domain=None,
+    range=Optional[Union[Union[dict, UpdateEvent], list[Union[dict, UpdateEvent]]]],
+)
+
+slots.updateEvent__timestamp = Slot(
+    uri=CULTUREMECH.timestamp,
+    name="updateEvent__timestamp",
+    curie=CULTUREMECH.curie("timestamp"),
+    model_uri=CULTUREMECH.updateEvent__timestamp,
+    domain=None,
+    range=str,
+)
+
+slots.updateEvent__import_version = Slot(
+    uri=CULTUREMECH.import_version,
+    name="updateEvent__import_version",
+    curie=CULTUREMECH.curie("import_version"),
+    model_uri=CULTUREMECH.updateEvent__import_version,
+    domain=None,
+    range=str,
+)
+
+slots.updateEvent__action = Slot(
+    uri=CULTUREMECH.action,
+    name="updateEvent__action",
+    curie=CULTUREMECH.curie("action"),
+    model_uri=CULTUREMECH.updateEvent__action,
+    domain=None,
+    range=Union[str, "UpdateActionEnum"],
+)
+
+slots.updateEvent__fields_changed = Slot(
+    uri=CULTUREMECH.fields_changed,
+    name="updateEvent__fields_changed",
+    curie=CULTUREMECH.curie("fields_changed"),
+    model_uri=CULTUREMECH.updateEvent__fields_changed,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.updateEvent__notes = Slot(
+    uri=CULTUREMECH.notes,
+    name="updateEvent__notes",
+    curie=CULTUREMECH.curie("notes"),
+    model_uri=CULTUREMECH.updateEvent__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.supportingReference__reference = Slot(
+    uri=MECH_SHARED.reference,
+    name="supportingReference__reference",
+    curie=MECH_SHARED.curie("reference"),
+    model_uri=CULTUREMECH.supportingReference__reference,
+    domain=None,
+    range=str,
+)
+
+slots.supportingReference__reference_title = Slot(
+    uri=MECH_SHARED.reference_title,
+    name="supportingReference__reference_title",
+    curie=MECH_SHARED.curie("reference_title"),
+    model_uri=CULTUREMECH.supportingReference__reference_title,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.supportingReference__supports = Slot(
+    uri=MECH_SHARED.supports,
+    name="supportingReference__supports",
+    curie=MECH_SHARED.curie("supports"),
+    model_uri=CULTUREMECH.supportingReference__supports,
+    domain=None,
+    range=Optional[Union[str, "SupportLevelEnum"]],
+)
+
+slots.supportingReference__evidence_source = Slot(
+    uri=MECH_SHARED.evidence_source,
+    name="supportingReference__evidence_source",
+    curie=MECH_SHARED.curie("evidence_source"),
+    model_uri=CULTUREMECH.supportingReference__evidence_source,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.supportingReference__snippet = Slot(
+    uri=MECH_SHARED.snippet,
+    name="supportingReference__snippet",
+    curie=MECH_SHARED.curie("snippet"),
+    model_uri=CULTUREMECH.supportingReference__snippet,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.supportingReference__explanation = Slot(
+    uri=MECH_SHARED.explanation,
+    name="supportingReference__explanation",
+    curie=MECH_SHARED.curie("explanation"),
+    model_uri=CULTUREMECH.supportingReference__explanation,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.supportingReference__notes = Slot(
+    uri=MECH_SHARED.notes,
+    name="supportingReference__notes",
+    curie=MECH_SHARED.curie("notes"),
+    model_uri=CULTUREMECH.supportingReference__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.discussion__discussion_id = Slot(
+    uri=MECH_SHARED.discussion_id,
+    name="discussion__discussion_id",
+    curie=MECH_SHARED.curie("discussion_id"),
+    model_uri=CULTUREMECH.discussion__discussion_id,
+    domain=None,
+    range=str,
+)
+
+slots.discussion__prompt = Slot(
+    uri=MECH_SHARED.prompt,
+    name="discussion__prompt",
+    curie=MECH_SHARED.curie("prompt"),
+    model_uri=CULTUREMECH.discussion__prompt,
+    domain=None,
+    range=str,
+)
+
+slots.discussion__kind = Slot(
+    uri=MECH_SHARED.kind,
+    name="discussion__kind",
+    curie=MECH_SHARED.curie("kind"),
+    model_uri=CULTUREMECH.discussion__kind,
+    domain=None,
+    range=Optional[Union[str, "DiscussionKindEnum"]],
+)
+
+slots.discussion__status = Slot(
+    uri=MECH_SHARED.status,
+    name="discussion__status",
+    curie=MECH_SHARED.curie("status"),
+    model_uri=CULTUREMECH.discussion__status,
+    domain=None,
+    range=Optional[Union[str, "DiscussionStatusEnum"]],
+)
+
+slots.discussion__attaches_to = Slot(
+    uri=MECH_SHARED.attaches_to,
+    name="discussion__attaches_to",
+    curie=MECH_SHARED.curie("attaches_to"),
+    model_uri=CULTUREMECH.discussion__attaches_to,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.discussion__rationale = Slot(
+    uri=MECH_SHARED.rationale,
+    name="discussion__rationale",
+    curie=MECH_SHARED.curie("rationale"),
+    model_uri=CULTUREMECH.discussion__rationale,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.discussion__proposed_experiments = Slot(
+    uri=MECH_SHARED.proposed_experiments,
+    name="discussion__proposed_experiments",
+    curie=MECH_SHARED.curie("proposed_experiments"),
+    model_uri=CULTUREMECH.discussion__proposed_experiments,
+    domain=None,
+    range=Optional[Union[Union[dict, ProposedExperiment], list[Union[dict, ProposedExperiment]]]],
+)
+
+slots.discussion__evidence = Slot(
+    uri=MECH_SHARED.evidence,
+    name="discussion__evidence",
+    curie=MECH_SHARED.curie("evidence"),
+    model_uri=CULTUREMECH.discussion__evidence,
+    domain=None,
+    range=Optional[Union[Union[dict, SupportingReference], list[Union[dict, SupportingReference]]]],
+)
+
+slots.discussion__posed_by = Slot(
+    uri=MECH_SHARED.posed_by,
+    name="discussion__posed_by",
+    curie=MECH_SHARED.curie("posed_by"),
+    model_uri=CULTUREMECH.discussion__posed_by,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.discussion__posed_date = Slot(
+    uri=MECH_SHARED.posed_date,
+    name="discussion__posed_date",
+    curie=MECH_SHARED.curie("posed_date"),
+    model_uri=CULTUREMECH.discussion__posed_date,
+    domain=None,
+    range=Optional[Union[str, XSDDate]],
+)
+
+slots.discussion__resolved_date = Slot(
+    uri=MECH_SHARED.resolved_date,
+    name="discussion__resolved_date",
+    curie=MECH_SHARED.curie("resolved_date"),
+    model_uri=CULTUREMECH.discussion__resolved_date,
+    domain=None,
+    range=Optional[Union[str, XSDDate]],
+)
+
+slots.discussion__resolution_note = Slot(
+    uri=MECH_SHARED.resolution_note,
+    name="discussion__resolution_note",
+    curie=MECH_SHARED.curie("resolution_note"),
+    model_uri=CULTUREMECH.discussion__resolution_note,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.discussion__notes = Slot(
+    uri=MECH_SHARED.notes,
+    name="discussion__notes",
+    curie=MECH_SHARED.curie("notes"),
+    model_uri=CULTUREMECH.discussion__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.proposedExperiment__experiment_id = Slot(
+    uri=MECH_SHARED.experiment_id,
+    name="proposedExperiment__experiment_id",
+    curie=MECH_SHARED.curie("experiment_id"),
+    model_uri=CULTUREMECH.proposedExperiment__experiment_id,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.proposedExperiment__name = Slot(
+    uri=MECH_SHARED.name,
+    name="proposedExperiment__name",
+    curie=MECH_SHARED.curie("name"),
+    model_uri=CULTUREMECH.proposedExperiment__name,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.proposedExperiment__description = Slot(
+    uri=MECH_SHARED.description,
+    name="proposedExperiment__description",
+    curie=MECH_SHARED.curie("description"),
+    model_uri=CULTUREMECH.proposedExperiment__description,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.proposedExperiment__approach = Slot(
+    uri=MECH_SHARED.approach,
+    name="proposedExperiment__approach",
+    curie=MECH_SHARED.curie("approach"),
+    model_uri=CULTUREMECH.proposedExperiment__approach,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.proposedExperiment__model_systems = Slot(
+    uri=MECH_SHARED.model_systems,
+    name="proposedExperiment__model_systems",
+    curie=MECH_SHARED.curie("model_systems"),
+    model_uri=CULTUREMECH.proposedExperiment__model_systems,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.proposedExperiment__perturbations = Slot(
+    uri=MECH_SHARED.perturbations,
+    name="proposedExperiment__perturbations",
+    curie=MECH_SHARED.curie("perturbations"),
+    model_uri=CULTUREMECH.proposedExperiment__perturbations,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.proposedExperiment__readouts = Slot(
+    uri=MECH_SHARED.readouts,
+    name="proposedExperiment__readouts",
+    curie=MECH_SHARED.curie("readouts"),
+    model_uri=CULTUREMECH.proposedExperiment__readouts,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.proposedExperiment__decision_criterion = Slot(
+    uri=MECH_SHARED.decision_criterion,
+    name="proposedExperiment__decision_criterion",
+    curie=MECH_SHARED.curie("decision_criterion"),
+    model_uri=CULTUREMECH.proposedExperiment__decision_criterion,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.proposedExperiment__would_support = Slot(
+    uri=MECH_SHARED.would_support,
+    name="proposedExperiment__would_support",
+    curie=MECH_SHARED.curie("would_support"),
+    model_uri=CULTUREMECH.proposedExperiment__would_support,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.proposedExperiment__would_refute = Slot(
+    uri=MECH_SHARED.would_refute,
+    name="proposedExperiment__would_refute",
+    curie=MECH_SHARED.curie("would_refute"),
+    model_uri=CULTUREMECH.proposedExperiment__would_refute,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.dataset__accession = Slot(
+    uri=MECH_SHARED.accession,
+    name="dataset__accession",
+    curie=MECH_SHARED.curie("accession"),
+    model_uri=CULTUREMECH.dataset__accession,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.dataset__title = Slot(
+    uri=MECH_SHARED.title,
+    name="dataset__title",
+    curie=MECH_SHARED.curie("title"),
+    model_uri=CULTUREMECH.dataset__title,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.dataset__description = Slot(
+    uri=MECH_SHARED.description,
+    name="dataset__description",
+    curie=MECH_SHARED.curie("description"),
+    model_uri=CULTUREMECH.dataset__description,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.dataset__organism = Slot(
+    uri=MECH_SHARED.organism,
+    name="dataset__organism",
+    curie=MECH_SHARED.curie("organism"),
+    model_uri=CULTUREMECH.dataset__organism,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.dataset__dataset_type = Slot(
+    uri=MECH_SHARED.dataset_type,
+    name="dataset__dataset_type",
+    curie=MECH_SHARED.curie("dataset_type"),
+    model_uri=CULTUREMECH.dataset__dataset_type,
+    domain=None,
+    range=Optional[Union[str, "DatasetTypeEnum"]],
+)
+
+slots.dataset__repository = Slot(
+    uri=MECH_SHARED.repository,
+    name="dataset__repository",
+    curie=MECH_SHARED.curie("repository"),
+    model_uri=CULTUREMECH.dataset__repository,
+    domain=None,
+    range=Optional[Union[str, "DatasetRepositoryEnum"]],
+)
+
+slots.dataset__sample_types = Slot(
+    uri=MECH_SHARED.sample_types,
+    name="dataset__sample_types",
+    curie=MECH_SHARED.curie("sample_types"),
+    model_uri=CULTUREMECH.dataset__sample_types,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.dataset__sample_count = Slot(
+    uri=MECH_SHARED.sample_count,
+    name="dataset__sample_count",
+    curie=MECH_SHARED.curie("sample_count"),
+    model_uri=CULTUREMECH.dataset__sample_count,
+    domain=None,
+    range=Optional[int],
+)
+
+slots.dataset__conditions = Slot(
+    uri=MECH_SHARED.conditions,
+    name="dataset__conditions",
+    curie=MECH_SHARED.curie("conditions"),
+    model_uri=CULTUREMECH.dataset__conditions,
+    domain=None,
+    range=Optional[Union[str, list[str]]],
+)
+
+slots.dataset__platform = Slot(
+    uri=MECH_SHARED.platform,
+    name="dataset__platform",
+    curie=MECH_SHARED.curie("platform"),
+    model_uri=CULTUREMECH.dataset__platform,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.dataset__url = Slot(
+    uri=MECH_SHARED.url,
+    name="dataset__url",
+    curie=MECH_SHARED.curie("url"),
+    model_uri=CULTUREMECH.dataset__url,
+    domain=None,
+    range=Optional[Union[str, URI]],
+)
+
+slots.dataset__publication = Slot(
+    uri=MECH_SHARED.publication,
+    name="dataset__publication",
+    curie=MECH_SHARED.curie("publication"),
+    model_uri=CULTUREMECH.dataset__publication,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.dataset__findings = Slot(
+    uri=MECH_SHARED.findings,
+    name="dataset__findings",
+    curie=MECH_SHARED.curie("findings"),
+    model_uri=CULTUREMECH.dataset__findings,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.dataset__evidence = Slot(
+    uri=MECH_SHARED.evidence,
+    name="dataset__evidence",
+    curie=MECH_SHARED.curie("evidence"),
+    model_uri=CULTUREMECH.dataset__evidence,
+    domain=None,
+    range=Optional[Union[Union[dict, SupportingReference], list[Union[dict, SupportingReference]]]],
+)
+
+slots.dataset__notes = Slot(
+    uri=MECH_SHARED.notes,
+    name="dataset__notes",
+    curie=MECH_SHARED.curie("notes"),
+    model_uri=CULTUREMECH.dataset__notes,
+    domain=None,
+    range=Optional[str],
+)
+
+slots.ChemicalEntityTerm_id = Slot(
+    uri=CULTUREMECH.id,
+    name="ChemicalEntityTerm_id",
+    curie=CULTUREMECH.curie("id"),
+    model_uri=CULTUREMECH.ChemicalEntityTerm_id,
+    domain=ChemicalEntityTerm,
+    range=Union[str, ChemicalEntityTermId],
+    pattern=re.compile(r"^(CHEBI|FOODON|MICRO|UBERON|ENVO|mediadive\.compound):\w+$"),
+)
+
+slots.ChebiTerm_id = Slot(
+    uri=CULTUREMECH.id,
+    name="ChebiTerm_id",
+    curie=CULTUREMECH.curie("id"),
+    model_uri=CULTUREMECH.ChebiTerm_id,
+    domain=ChebiTerm,
+    range=Union[str, ChebiTermId],
+    pattern=re.compile(r"^CHEBI:\d+$"),
+)
+
+slots.OrganismTerm_id = Slot(
+    uri=CULTUREMECH.id,
+    name="OrganismTerm_id",
+    curie=CULTUREMECH.curie("id"),
+    model_uri=CULTUREMECH.OrganismTerm_id,
+    domain=OrganismTerm,
+    range=Union[str, OrganismTermId],
+    pattern=re.compile(r"^NCBITaxon:\d+$"),
+)
+
+slots.MediaIngredientMechTerm_id = Slot(
+    uri=CULTUREMECH.id,
+    name="MediaIngredientMechTerm_id",
+    curie=CULTUREMECH.curie("id"),
+    model_uri=CULTUREMECH.MediaIngredientMechTerm_id,
+    domain=MediaIngredientMechTerm,
+    range=Union[str, MediaIngredientMechTermId],
+    pattern=re.compile(r"^MediaIngredientMech:\d{6}$"),
+)
+
+slots.MediaIngredientMechChebiTerm_id = Slot(
+    uri=CULTUREMECH.id,
+    name="MediaIngredientMechChebiTerm_id",
+    curie=CULTUREMECH.curie("id"),
+    model_uri=CULTUREMECH.MediaIngredientMechChebiTerm_id,
+    domain=MediaIngredientMechChebiTerm,
+    range=Union[str, MediaIngredientMechChebiTermId],
+    pattern=re.compile(r"^CHEBI:\d+$"),
+)
+
+slots.CultureMechTerm_id = Slot(
+    uri=CULTUREMECH.id,
+    name="CultureMechTerm_id",
+    curie=CULTUREMECH.curie("id"),
+    model_uri=CULTUREMECH.CultureMechTerm_id,
+    domain=CultureMechTerm,
+    range=Union[str, CultureMechTermId],
+    pattern=re.compile(r"^CultureMech:\d{6}$"),
+)
+
+slots.EnvironmentTerm_id = Slot(
+    uri=CULTUREMECH.id,
+    name="EnvironmentTerm_id",
+    curie=CULTUREMECH.curie("id"),
+    model_uri=CULTUREMECH.EnvironmentTerm_id,
+    domain=EnvironmentTerm,
+    range=Union[str, EnvironmentTermId],
+    pattern=re.compile(r"^ENVO:\d{7,8}$"),
+)

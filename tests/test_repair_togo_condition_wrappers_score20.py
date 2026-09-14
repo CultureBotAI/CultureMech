@@ -103,8 +103,7 @@ def test_mrs_erythromycin_converts_ug_per_ml_to_mg_per_l(repair_module) -> None:
         "concentration": {"value": "5", "unit": "MG_PER_L"},
         "source": "TOGO M2490",
         "notes": (
-            "TOGO M2490 lists erythromycin at 5 ug/ml; this is stored as the "
-            "equivalent 5 mg/L."
+            "TOGO M2490 lists erythromycin at 5 ug/ml; this is stored as the " "equivalent 5 mg/L."
         ),
         "term": {"id": "CHEBI:48923", "label": "erythromycin"},
         "mediaingredientmech_chebi_term": {
@@ -161,12 +160,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(root)
 
     assert {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(root): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(root): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_source(repair_module) -> None:

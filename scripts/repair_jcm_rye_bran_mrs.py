@@ -247,8 +247,7 @@ def _require_target(doc: dict[str, Any]) -> None:
 def _require_togo_source(doc: dict[str, Any]) -> None:
     if doc.get("id") != EXPECTED_TOGO_SOURCE_ID:
         raise ValueError(
-            f"{TOGO_SOURCE}: found id {doc.get('id')!r}, "
-            f"expected {EXPECTED_TOGO_SOURCE_ID!r}"
+            f"{TOGO_SOURCE}: found id {doc.get('id')!r}, " f"expected {EXPECTED_TOGO_SOURCE_ID!r}"
         )
 
     source_term = _source_term_id(doc)

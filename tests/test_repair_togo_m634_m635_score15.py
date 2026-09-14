@@ -44,8 +44,7 @@ def _doc(target) -> dict:
         "physical_state": "LIQUID",
         "ph_value": 7.8,
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_signature
+            _ingredient(name, value, unit) for name, value, unit in target.imported_signature
         ],
         "media_term": {
             "preferred_term": "source medium",
@@ -64,8 +63,7 @@ def _doc(target) -> dict:
 def _togo_doc(repair_module, target) -> dict:
     doc = _doc(target)
     doc["solutions"] = [
-        _ingredient(name, value, unit)
-        for name, value, unit in repair_module.IMPORTED_SOLUTION
+        _ingredient(name, value, unit) for name, value, unit in repair_module.IMPORTED_SOLUTION
     ]
     return doc
 
@@ -135,9 +133,7 @@ def test_repair_togo_m635_becomes_agar_variant(
     assert ingredients["Agar"]["physicochemical_roles"] == ["SOLIDIFYING_AGENT"]
     assert repaired["parent_media"] == repair_module.JCM_J624_AGAR_PARENT
     assert repaired["variant_relationship"] == "PHYSICAL_STATE_VARIANT"
-    assert repaired["variant_modifications"] == [
-        repair_module.AGAR_VARIANT_MODIFICATION
-    ]
+    assert repaired["variant_modifications"] == [repair_module.AGAR_VARIANT_MODIFICATION]
     assert scorer_module.score_record(repaired) == (0, [])
 
 
@@ -163,14 +159,11 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     twice = repair_module.repair_record(once, target)
 
     assert twice == once
-    assert once["references"] == [
-        {"reference": reference} for reference in target.references
-    ]
+    assert once["references"] == [{"reference": reference} for reference in target.references]
     matching_events = [
         event
         for event in once["curation_history"]
-        if event.get("curator") == repair_module.CURATOR
-        and event.get("action") == target.action
+        if event.get("curator") == repair_module.CURATOR and event.get("action") == target.action
     ]
     assert len(matching_events) == 1
     assert "M636 supplemented child backlink" in matching_events[0]["notes"]

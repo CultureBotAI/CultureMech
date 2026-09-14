@@ -53,8 +53,7 @@ def _doc(repair_module, target) -> dict:
         "media_term": _media_term(target.expected_media_term),
         "notes": "Source",
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_signature
+            _ingredient(name, value, unit) for name, value, unit in target.imported_signature
         ],
         "applications": ["Microbial cultivation"],
         "curation_history": [],
@@ -112,9 +111,7 @@ def test_repair_adds_flags_references_and_event_once(repair_module, target) -> N
         "has_unmapped_ingredients",
         "ingredients_curated",
     ]
-    assert twice["references"] == [
-        {"reference": reference} for reference in target.references
-    ]
+    assert twice["references"] == [{"reference": reference} for reference in target.references]
     matching_events = [
         event
         for event in twice["curation_history"]
@@ -163,9 +160,7 @@ def test_repair_rejects_ingredient_drift(repair_module) -> None:
 
 def test_corpus_records_match_repair_contract(repair_module) -> None:
     for target in repair_module.TARGETS:
-        doc = yaml.safe_load(
-            (repair_module.NORMALIZED / target.path).read_text(encoding="utf-8")
-        )
+        doc = yaml.safe_load((repair_module.NORMALIZED / target.path).read_text(encoding="utf-8"))
 
         assert doc["id"] == target.expected_id
         assert repair_module._source_term_id(doc) == target.expected_media_term

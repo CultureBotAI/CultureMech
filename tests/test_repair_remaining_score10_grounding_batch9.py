@@ -53,8 +53,7 @@ def _doc(repair_module, target) -> dict:
         "notes": "Source: DSMZ",
         "ph_value": 7.0,
         "ingredients": [
-            _ingredient(name, grounded=name not in target.exact_terms)
-            for name in target.signature
+            _ingredient(name, grounded=name not in target.exact_terms) for name in target.signature
         ],
         "curation_history": [],
     }
@@ -90,9 +89,7 @@ def test_intentionally_unmapped_names_stay_unmapped(repair_module, target) -> No
     )
     by_name = {row["preferred_term"]: row for row in repaired["ingredients"]}
 
-    assert set(repair_module.CURATED_UNMAPPED_FLAGS) <= set(
-        repaired["data_quality_flags"]
-    )
+    assert set(repair_module.CURATED_UNMAPPED_FLAGS) <= set(repaired["data_quality_flags"])
     for preferred_term in target.reviewed_unmapped_terms:
         assert "term" not in by_name[preferred_term]
 

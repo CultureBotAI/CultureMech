@@ -182,8 +182,7 @@ def _parent_ref(child: Child) -> dict[str, str]:
         "id": PARENT_ID,
         "name": PARENT_NAME,
         "notes": (
-            "KOMODO Medium 1197 is the RHODOBACTER/THIOCAPSA base for "
-            f"{child.source_label}."
+            "KOMODO Medium 1197 is the RHODOBACTER/THIOCAPSA base for " f"{child.source_label}."
         ),
     }
 

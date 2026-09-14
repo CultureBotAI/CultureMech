@@ -91,9 +91,7 @@ def test_dsm_2118_substitutes_l_phenylalanine(
     repair_module,
     scorer_module,
 ) -> None:
-    repaired = repair_module.repair_for_dsm_2118(
-        _doc(repair_module, repair_module.KOMODO_363_1)
-    )
+    repaired = repair_module.repair_for_dsm_2118(_doc(repair_module, repair_module.KOMODO_363_1))
     ingredients = _by_name(repaired)
 
     assert "Antipyrine" not in ingredients
@@ -110,9 +108,7 @@ def test_dsm_2118_substitutes_l_phenylalanine(
     assert repaired["variant_modifications"] == [repair_module.SUBSTITUTION_NOTES]
     assert "ph_value" not in repaired
     assert "preparation_steps" not in repaired
-    assert scorer_module.score_parsed(
-        [(repair_module.KOMODO_363_1, repaired)]
-    ) == []
+    assert scorer_module.score_parsed([(repair_module.KOMODO_363_1, repaired)]) == []
 
 
 def test_komodo_363_parent_links_child_as_substitution(repair_module) -> None:

@@ -7,11 +7,7 @@ from pathlib import Path
 import pytest
 
 REPO = Path(__file__).resolve().parent.parent
-SCRIPT = (
-    REPO
-    / "scripts"
-    / "repair_togo_m1970_m1971_m1972_lb_streptomycin_rifampicin_score15.py"
-)
+SCRIPT = REPO / "scripts" / "repair_togo_m1970_m1971_m1972_lb_streptomycin_rifampicin_score15.py"
 SCORER = REPO / "scripts" / "score_review_need.py"
 
 
@@ -126,9 +122,7 @@ def test_repair_expands_lb_antibiotic_stocks(
                 *repair_module.GROUNDINGS[stock.component_name]
             )
 
-        assert repaired["preparation_steps"] == list(
-            repair_module._preparation_steps(spec)
-        )
+        assert repaired["preparation_steps"] == list(repair_module._preparation_steps(spec))
         assert scorer_module.score_record(repaired) == (0, [])
         assert scorer_module.score_parsed([(str(spec.target), repaired)]) == []
 

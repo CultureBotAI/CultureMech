@@ -178,9 +178,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module._references()
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module._references()]
     matching_events = [
         event
         for event in twice["curation_history"]

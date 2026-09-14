@@ -54,18 +54,12 @@ def _write_target(repair, root: Path) -> Path:
 
 
 def _solution_by_name(doc: dict, name: str) -> dict:
-    return next(
-        solution
-        for solution in doc["solutions"]
-        if solution["preferred_term"] == name
-    )
+    return next(solution for solution in doc["solutions"] if solution["preferred_term"] == name)
 
 
 def _component_by_name(solution: dict, name: str) -> dict:
     return next(
-        component
-        for component in solution["composition"]
-        if component["preferred_term"] == name
+        component for component in solution["composition"] if component["preferred_term"] == name
     )
 
 
@@ -156,10 +150,7 @@ def test_plan_repairs_adds_review_metadata_once(tmp_path: Path):
     matching_events = [
         event
         for event in nm["curation_history"]
-        if (
-            event.get("curator") == repair.CURATOR
-            and event.get("action") == repair.ACTION
-        )
+        if (event.get("curator") == repair.CURATOR and event.get("action") == repair.ACTION)
     ]
     assert len(matching_events) == 1
     assert matching_events[0]["source"] == repair.P5_PUBLIC

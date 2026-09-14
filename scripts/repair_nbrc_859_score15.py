@@ -163,10 +163,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
     {
         "step_number": 3,
         "action": "FILTER_STERILIZE",
-        "description": (
-            "Sterilize Vitamin solution and 10% Na2CO3 solution by "
-            "filtration."
-        ),
+        "description": ("Sterilize Vitamin solution and 10% Na2CO3 solution by " "filtration."),
     },
     {
         "step_number": 4,
@@ -262,9 +259,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -300,9 +295,7 @@ def _has_history_action(doc: dict[str, Any], action: str) -> bool:
 
 def _ensure_target(doc: dict[str, Any]) -> None:
     if doc.get("id") != TARGET_ID:
-        raise ValueError(
-            f"{TARGET_PATH}: found id {doc.get('id')!r}, expected {TARGET_ID!r}"
-        )
+        raise ValueError(f"{TARGET_PATH}: found id {doc.get('id')!r}, expected {TARGET_ID!r}")
     if not _has_history_action(doc, REQUIRED_ACTION):
         raise ValueError(f"{TARGET_PATH}: missing recovery action {REQUIRED_ACTION!r}")
     if doc.get("name") not in {"859", TITLE}:
@@ -347,10 +340,7 @@ def _ensure_trace_naoh(doc: dict[str, Any]) -> None:
     composition = trace.get("composition")
     if not isinstance(composition, list):
         raise ValueError(f"{TARGET_PATH}: Trace elements solution lacks composition")
-    if any(
-        isinstance(row, dict) and row.get("preferred_term") == "NaOH"
-        for row in composition
-    ):
+    if any(isinstance(row, dict) and row.get("preferred_term") == "NaOH" for row in composition):
         return
     composition.append(
         _component(

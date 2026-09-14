@@ -69,9 +69,12 @@ def test_repair_adds_water_and_lowers_review_score(repair_module, scorer_module)
     repaired = repair_module.repair_record(_doc(repair_module))
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._ingredient_signature(
-        repaired["ingredients"],
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._ingredient_signature(
+            repaired["ingredients"],
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Distilled water"]["concentration"] == {
         "value": "1000.0",
         "unit": "ML_PER_L",

@@ -72,9 +72,7 @@ def test_substituted_children_link_to_parent(repair_module, child) -> None:
         repair_module._substitution_notes(child),
     )
     assert repaired["variant_relationship"] == "SUBSTITUTED_COMPONENT_VARIANT"
-    assert repaired["variant_modifications"] == [
-        repair_module._substitution_notes(child)
-    ]
+    assert repaired["variant_modifications"] == [repair_module._substitution_notes(child)]
     assert "ingredients_curated" in repaired["data_quality_flags"]
 
 
@@ -88,40 +86,35 @@ def test_parent_is_promoted_and_lists_onr7a_children(repair_module) -> None:
     assert "variant_modifications" not in repaired
     assert "ingredients_curated" in repaired["data_quality_flags"]
     assert repaired["variant_children"] == [
-        *[
-            repair_module._strain_entry(child)
-            for child in repair_module.STRAIN_CHILDREN
-        ],
-        *[
-            repair_module._substitution_entry(child)
-            for child in repair_module.SUBSTITUTED_CHILDREN
-        ],
+        *[repair_module._strain_entry(child) for child in repair_module.STRAIN_CHILDREN],
+        *[repair_module._substitution_entry(child) for child in repair_module.SUBSTITUTED_CHILDREN],
     ]
 
 
 def test_repair_is_idempotent(repair_module) -> None:
     once = repair_module.plan_repairs()
     twice = {
-        path: repair_module.repair_parent(doc)
-        if path == repair_module.NORMALIZED / repair_module.PARENT
-        else repair_module.repair_strain_child(
-            path.relative_to(repair_module.NORMALIZED),
-            doc,
-        )
-        if path.relative_to(repair_module.NORMALIZED)
-        in repair_module.STRAIN_CHILD_BY_PATH
-        else repair_module.repair_substituted_child(
-            path.relative_to(repair_module.NORMALIZED),
-            doc,
+        path: (
+            repair_module.repair_parent(doc)
+            if path == repair_module.NORMALIZED / repair_module.PARENT
+            else (
+                repair_module.repair_strain_child(
+                    path.relative_to(repair_module.NORMALIZED),
+                    doc,
+                )
+                if path.relative_to(repair_module.NORMALIZED) in repair_module.STRAIN_CHILD_BY_PATH
+                else repair_module.repair_substituted_child(
+                    path.relative_to(repair_module.NORMALIZED),
+                    doc,
+                )
+            )
         )
         for path, doc in once.items()
     }
 
     assert twice == once
     for path in once:
-        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(
-            once[path]
-        )
+        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(once[path])
 
 
 def test_plan_repairs_targets_current_records(repair_module) -> None:

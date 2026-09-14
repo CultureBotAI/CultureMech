@@ -106,7 +106,9 @@ def validate_links(index: RecipeIndex) -> list[Finding]:
             reference = ref_key(parent_media)
             if not resolved_parent:
                 findings.append(
-                    Finding("ERROR", path, "parent_media", reference, "parent_media does not resolve")
+                    Finding(
+                        "ERROR", path, "parent_media", reference, "parent_media does not resolve"
+                    )
                 )
             elif not parent_links_child(resolved_parent, path, index):
                 findings.append(
@@ -138,7 +140,9 @@ def validate_links(index: RecipeIndex) -> list[Finding]:
         for child_ref in variant_children:
             if not isinstance(child_ref, dict):
                 findings.append(
-                    Finding("ERROR", path, "variant_children", "", "variant child must be a mapping")
+                    Finding(
+                        "ERROR", path, "variant_children", "", "variant child must be a mapping"
+                    )
                 )
                 continue
             resolved_child = resolve_ref(child_ref, index)

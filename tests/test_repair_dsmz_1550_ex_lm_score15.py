@@ -75,9 +75,12 @@ def _by_name(rows: list[dict]) -> dict[str, dict]:
 def test_repair_adds_water_and_exits_ranking(repair_module, scorer_module) -> None:
     repaired = repair_module.repair_record(_doc(repair_module))
 
-    assert repair_module._ingredient_signature(
-        repaired["ingredients"],
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._ingredient_signature(
+            repaired["ingredients"],
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert scorer_module.score_record(repaired) == (
         5,
         ["no pH and no temperature"],
@@ -152,12 +155,8 @@ def test_plan_repair_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repair(root)
 
     assert {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(root): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(root): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:

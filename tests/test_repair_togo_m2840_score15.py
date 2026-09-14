@@ -68,10 +68,13 @@ def _by_name(rows: list[dict]) -> dict[str, dict]:
 def test_repair_normalizes_exact_togo_formula(repair_module) -> None:
     repaired = repair_module.repair_target(_doc(repair_module))
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert "ph_value" not in repaired
     assert "ph_range" not in repaired
     assert "temperature_value" not in repaired

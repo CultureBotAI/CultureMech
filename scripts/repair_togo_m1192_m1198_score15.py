@@ -186,8 +186,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     if term:
         grounding = GROUNDINGS[preferred_term]
@@ -276,10 +275,7 @@ def _artificial_seawater() -> dict[str, Any]:
         "1000.0",
         _components(ARTIFICIAL_SEAWATER_SIGNATURE, source=ETHANE_SOURCE),
         source=ETHANE_SOURCE,
-        notes=(
-            "JCM Medium 1120 adds 1000 ml Artificial seawater to the main "
-            "solution."
-        ),
+        notes=("JCM Medium 1120 adds 1000 ml Artificial seawater to the main " "solution."),
         preparation_notes=(
             "Artificial seawater can be replaced with natural seawater that is "
             "filtered and boiled, then filtered again through a 0.45 um filter "

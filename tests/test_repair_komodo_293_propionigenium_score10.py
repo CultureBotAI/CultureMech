@@ -55,10 +55,7 @@ def test_parent_lists_strain_child_and_duplicate_children(repair_module) -> None
 
     assert repaired["variant_children"] == [
         repair_module._child_entry(),
-        *[
-            repair_module._duplicate_entry(duplicate)
-            for duplicate in repair_module.DUPLICATES
-        ],
+        *[repair_module._duplicate_entry(duplicate) for duplicate in repair_module.DUPLICATES],
     ]
 
 
@@ -72,9 +69,7 @@ def test_duplicate_children_link_to_parent(repair_module, duplicate) -> None:
 
     assert repaired["parent_media"]["relationship"] == "SOURCE_DUPLICATE"
     assert repaired["variant_relationship"] == "SOURCE_DUPLICATE"
-    assert repaired["variant_modifications"] == [
-        repair_module._duplicate_notes(duplicate)
-    ]
+    assert repaired["variant_modifications"] == [repair_module._duplicate_notes(duplicate)]
     assert "ingredients_curated" in repaired["data_quality_flags"]
 
 
@@ -100,14 +95,13 @@ def test_repair_is_idempotent(repair_module) -> None:
 
     assert twice == once
     for path in once:
-        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(
-            once[path]
-        )
+        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(once[path])
 
 
 def test_plan_repairs_targets_current_records(repair_module) -> None:
     expected = {
-        repair_module.NORMALIZED / repair_module.PARENT: repair_module.repair_parent(
+        repair_module.NORMALIZED
+        / repair_module.PARENT: repair_module.repair_parent(
             _load_yaml(repair_module.NORMALIZED / repair_module.PARENT)
         ),
         repair_module.NORMALIZED

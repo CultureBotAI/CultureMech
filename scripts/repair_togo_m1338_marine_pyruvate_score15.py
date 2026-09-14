@@ -75,10 +75,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
     {
         "step_number": 1,
         "action": "MIX",
-        "description": (
-            "Suspend 37.4 g Marine Broth 2216 (BD-Difco) in 1 L distilled "
-            "water."
-        ),
+        "description": ("Suspend 37.4 g Marine Broth 2216 (BD-Difco) in 1 L distilled " "water."),
     },
     {
         "step_number": 2,
@@ -94,16 +91,14 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 4,
         "action": "MIX",
         "description": (
-            "After cooling, add 10 ml autoclaved 1.0 M sodium pyruvate "
-            "solution per liter."
+            "After cooling, add 10 ml autoclaved 1.0 M sodium pyruvate " "solution per liter."
         ),
     },
     {
         "step_number": 5,
         "action": "FILTER",
         "description": (
-            "Remove any precipitate yielded after autoclaving by filtration, "
-            "if necessary."
+            "Remove any precipitate yielded after autoclaving by filtration, " "if necessary."
         ),
     },
 )
@@ -177,9 +172,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

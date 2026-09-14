@@ -56,9 +56,7 @@ def _doc(repair_module) -> dict:
             _ingredient(name, value, unit)
             for name, value, unit in repair_module.IMPORTED_INGREDIENT_SIGNATURE
         ],
-        "preparation_steps": [
-            {"step_number": 1, "action": "MIX", "description": "stale"}
-        ],
+        "preparation_steps": [{"step_number": 1, "action": "MIX", "description": "stale"}],
         "applications": ["Microbial cultivation"],
         "curation_history": [],
         "kg_microbe_match": "mediadive.medium:1077",
@@ -79,9 +77,12 @@ def test_repair_restores_source_stock_structure_and_leaves_review_ranking(
     nested_solution_2 = _by_name(solution_2["solutions"])
 
     assert repaired["ingredients"] == []
-    assert repair_module._solution_signatures(
-        repaired["solutions"],
-    ) == repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._solution_signatures(
+            repaired["solutions"],
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURES
+    )
     assert solutions["Solution 1"]["concentration"] == {
         "value": "800.0",
         "unit": "ML_PER_L",
@@ -90,15 +91,11 @@ def test_repair_restores_source_stock_structure_and_leaves_review_ranking(
         "value": "200.0",
         "unit": "ML_PER_L",
     }
-    assert nested_solution_2["Yeast Extract Solution (25%, autoclaved)"][
-        "concentration"
-    ] == {
+    assert nested_solution_2["Yeast Extract Solution (25%, autoclaved)"]["concentration"] == {
         "value": "46.8",
         "unit": "ML_PER_L",
     }
-    assert nested_solution_2["Fish sperm DNA solution (filter-sterilized)"][
-        "concentration"
-    ] == {
+    assert nested_solution_2["Fish sperm DNA solution (filter-sterilized)"]["concentration"] == {
         "value": "9.35",
         "unit": "ML_PER_L",
     }

@@ -45,8 +45,7 @@ def _doc(target) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "SOLID_AGAR",
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_signature
+            _ingredient(name, value, unit) for name, value, unit in target.imported_signature
         ],
         "media_term": {
             "preferred_term": f"TOGO Medium {target.expected_media_term.removeprefix('TOGO:')}",
@@ -84,10 +83,7 @@ def _parent_doc(repair_module) -> dict:
         "curation_history": [],
         "variant_children": [
             {
-                "path": (
-                    "data/normalized_yaml/bacterial/"
-                    "medium_1a_modified_for_dsm_22387.yaml"
-                ),
+                "path": ("data/normalized_yaml/bacterial/" "medium_1a_modified_for_dsm_22387.yaml"),
                 "relationship": "STRAIN_SPECIFIC_VARIANT",
                 "id": "CultureMech:005120",
                 "name": "medium_1a_modified_for_dsm_22387",
@@ -225,20 +221,12 @@ def test_repair_links_targets_to_dsmz_parent(repair_module) -> None:
         repair_module.TARGET_M2359,
     )
 
-    assert m2358["parent_media"] == repair_module._parent_media(
-        repair_module.TARGET_M2358
-    )
+    assert m2358["parent_media"] == repair_module._parent_media(repair_module.TARGET_M2358)
     assert m2358["variant_relationship"] == "SOURCE_DUPLICATE"
-    assert m2358["variant_modifications"] == [
-        repair_module.TARGET_M2358.variant_modification
-    ]
-    assert m2359["parent_media"] == repair_module._parent_media(
-        repair_module.TARGET_M2359
-    )
+    assert m2358["variant_modifications"] == [repair_module.TARGET_M2358.variant_modification]
+    assert m2359["parent_media"] == repair_module._parent_media(repair_module.TARGET_M2359)
     assert m2359["variant_relationship"] == "SUPPLEMENTED_VARIANT"
-    assert m2359["variant_modifications"] == [
-        repair_module.TARGET_M2359.variant_modification
-    ]
+    assert m2359["variant_modifications"] == [repair_module.TARGET_M2359.variant_modification]
 
 
 def test_repair_record_drops_out_of_review_ranking(
@@ -262,9 +250,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_target(_doc(target), target)
     twice = repair_module.repair_target(once, target)
 
-    assert twice["references"] == [
-        {"reference": url} for url in target.reference_urls
-    ]
+    assert twice["references"] == [{"reference": url} for url in target.reference_urls]
     matching_events = [
         event
         for event in twice["curation_history"]
@@ -297,10 +283,7 @@ def test_repair_parent_adds_both_togo_children_once(repair_module) -> None:
 
     assert twice["variant_children"] == [
         {
-            "path": (
-                "data/normalized_yaml/bacterial/"
-                "medium_1a_modified_for_dsm_22387.yaml"
-            ),
+            "path": ("data/normalized_yaml/bacterial/" "medium_1a_modified_for_dsm_22387.yaml"),
             "relationship": "STRAIN_SPECIFIC_VARIANT",
             "id": "CultureMech:005120",
             "name": "medium_1a_modified_for_dsm_22387",

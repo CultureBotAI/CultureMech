@@ -282,8 +282,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
 
     grounding = GROUNDINGS.get(preferred_term)
@@ -317,8 +316,7 @@ def _mj_n_synthetic_seawater(source: str) -> dict[str, Any]:
         "concentration": {"value": "1000.0", "unit": "ML_PER_L"},
         "source": source,
         "notes": (
-            f"{source} adds 1.0 L MJ(-N) synthetic seawater from TOGO M260/"
-            "JCM Medium 268."
+            f"{source} adds 1.0 L MJ(-N) synthetic seawater from TOGO M260/" "JCM Medium 268."
         ),
         "composition": [
             _component("NaCl", "30.0", "G_PER_L", source="TOGO M260 / JCM Medium 268"),
@@ -370,10 +368,7 @@ def _mj_n_synthetic_seawater(source: str) -> dict[str, Any]:
                 "10.0",
                 "ML_PER_L",
                 source="TOGO M260 / JCM Medium 268",
-                notes=(
-                    "TOGO M260/JCM Medium 268 adds 10.0 ml/L Trace minerals "
-                    "from TOGO M142."
-                ),
+                notes=("TOGO M260/JCM Medium 268 adds 10.0 ml/L Trace minerals " "from TOGO M142."),
             ),
             _component(
                 "Distilled water",
@@ -417,10 +412,7 @@ def _base_solutions(source: str) -> list[dict[str, Any]]:
                     "5.0",
                     "PERCENT_W_V",
                     source=source,
-                    notes=(
-                        f"{source} specifies the added Na2S x 9 H2O solution "
-                        "as 5% w/v."
-                    ),
+                    notes=(f"{source} specifies the added Na2S x 9 H2O solution " "as 5% w/v."),
                 )
             ],
             "preparation_notes": "Autoclave and store anaerobically.",
@@ -462,9 +454,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

@@ -100,8 +100,7 @@ TOGO_CHILD = {
 }
 
 VARIANT_MODIFICATIONS = (
-    "Same ingredient and concentration signature; TOGO M2316 imports DSMZ "
-    "Medium 467."
+    "Same ingredient and concentration signature; TOGO M2316 imports DSMZ " "Medium 467."
 )
 
 NOTES = (
@@ -190,9 +189,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -239,9 +236,7 @@ def _ensure_parent(doc: dict[str, Any]) -> None:
             f"{DSMZ_PARENT}: expected id {EXPECTED_PARENT_ID}, found {doc.get('id')!r}"
         )
     if _source_term_id(doc) != EXPECTED_PARENT_MEDIA_TERM:
-        raise ValueError(
-            f"{DSMZ_PARENT}: expected media term {EXPECTED_PARENT_MEDIA_TERM}"
-        )
+        raise ValueError(f"{DSMZ_PARENT}: expected media term {EXPECTED_PARENT_MEDIA_TERM}")
 
 
 def _ensure_flags(doc: dict[str, Any]) -> None:

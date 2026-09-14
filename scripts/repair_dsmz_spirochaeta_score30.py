@@ -131,7 +131,14 @@ UPDATES = (
             "ph_range": {"min": 7.0, "max": 7.3},
             "incubation_atmosphere": "ANAEROBIC",
             "ingredients": [
-                _component("D-Glucose", "2", "G_PER_L", source=SRC_168, identifier="CHEBI:17634", label="D-glucose"),
+                _component(
+                    "D-Glucose",
+                    "2",
+                    "G_PER_L",
+                    source=SRC_168,
+                    identifier="CHEBI:17634",
+                    label="D-glucose",
+                ),
                 _component(
                     "Yeast extract",
                     "2",
@@ -222,7 +229,14 @@ UPDATES = (
             "ph_value": 7.5,
             "incubation_atmosphere": "ANAEROBIC",
             "ingredients": [
-                _component("Glucose", "2", "G_PER_L", source=SRC_273, identifier="CHEBI:17234", label="glucose"),
+                _component(
+                    "Glucose",
+                    "2",
+                    "G_PER_L",
+                    source=SRC_273,
+                    identifier="CHEBI:17234",
+                    label="glucose",
+                ),
                 _component("Trypticase (BBL)", "1", "G_PER_L", source=SRC_273),
                 _component(
                     "Yeast extract",
@@ -248,7 +262,14 @@ UPDATES = (
                     identifier="CHEBI:91248",
                     label="L-cysteine hydrochloride hydrate",
                 ),
-                _component("Resazurin", "0.001", "G_PER_L", source=SRC_273, identifier="CHEBI:8806", label="Resazurin"),
+                _component(
+                    "Resazurin",
+                    "0.001",
+                    "G_PER_L",
+                    source=SRC_273,
+                    identifier="CHEBI:8806",
+                    label="Resazurin",
+                ),
             ],
             "preparation_steps": [
                 {
@@ -288,9 +309,7 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 def _require_target(doc: dict[str, Any], relative_path: str) -> None:
     expected_id = EXPECTED_IDS[relative_path]
     if doc.get("id") != expected_id:
-        raise ValueError(
-            f"{relative_path}: found id {doc.get('id')!r}, expected {expected_id!r}"
-        )
+        raise ValueError(f"{relative_path}: found id {doc.get('id')!r}, expected {expected_id!r}")
 
     expected_source_term = EXPECTED_SOURCE_TERMS[relative_path]
     if _source_term_id(doc) != expected_source_term:
@@ -320,9 +339,7 @@ def _composition_components(doc: dict[str, Any]) -> list[dict[str, Any]]:
             continue
         nested = solution.get("composition") or []
         nested_components = (
-            [i for i in nested if isinstance(i, dict)]
-            if isinstance(nested, list)
-            else []
+            [i for i in nested if isinstance(i, dict)] if isinstance(nested, list) else []
         )
         components.extend(nested_components or [solution])
     return components

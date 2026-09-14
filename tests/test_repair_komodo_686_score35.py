@@ -60,9 +60,7 @@ def scorer():
     return _load_script(SCORER, "score_review_need_for_komodo_686")
 
 
-def test_repair_record_adds_propionigenium_maris_components(
-    repair, scorer
-) -> None:
+def test_repair_record_adds_propionigenium_maris_components(repair, scorer) -> None:
     once = repair.repair_record(_doc(repair))
     twice = repair.repair_record(once)
     names = {ingredient["preferred_term"] for ingredient in once["ingredients"]}

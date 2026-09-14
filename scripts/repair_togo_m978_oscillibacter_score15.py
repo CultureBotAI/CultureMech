@@ -284,8 +284,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
         "term": _term(identifier, label),
     }
     if identifier.startswith("CHEBI:"):
@@ -373,9 +372,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -398,9 +395,7 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 
 def _ensure_media(doc: dict[str, Any], target: MediaTarget) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected {target.record_id}, found {doc.get('id')}"
-        )
+        raise ValueError(f"{target.path}: expected {target.record_id}, found {doc.get('id')}")
     if _source_term_id(doc) != target.source_term:
         raise ValueError(f"{target.path}: expected media term {target.source_term}")
 
@@ -561,9 +556,7 @@ def repair_media_record(doc: dict[str, Any], target: MediaTarget) -> dict[str, A
         repaired.pop("variant_modifications", None)
 
     if target.variant_children:
-        repaired["variant_children"] = [
-            copy.deepcopy(child) for child in target.variant_children
-        ]
+        repaired["variant_children"] = [copy.deepcopy(child) for child in target.variant_children]
     else:
         repaired.pop("variant_children", None)
 

@@ -93,10 +93,13 @@ def test_repair_corrects_nbrc_formula_ph_and_seawater_units(
     assert repaired["composition_type"] == "UNDEFINED"
     assert repaired["ph_value"] == 10.0
     assert "kg_microbe_match" not in repaired
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Artificial seawater"]["concentration"] == {
         "value": "1000.0",
         "unit": "ML_PER_L",
@@ -125,9 +128,7 @@ def test_repair_replaces_blank_na2co3_solution_with_10_percent_stock(
     solutions = _by_name(repaired["solutions"])
     na2co3 = _by_name(solutions["10% Na2CO3 solution"]["composition"])["Na2CO3"]
 
-    assert repair_module._solution_signatures(repaired) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
-    )
+    assert repair_module._solution_signatures(repaired) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     assert solutions["10% Na2CO3 solution"]["concentration"] == {
         "value": "variable",
         "unit": "VARIABLE",

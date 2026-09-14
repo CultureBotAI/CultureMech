@@ -35,9 +35,7 @@ Component = tuple[str, str, str]
 IngredientSpec = tuple[str, str, str, str]
 
 BASE_NOTE_SUFFIX = "in the shared sea-salts/Tris minimal-media base"
-ALTERNATIVE_CARBON_NOTE_SUFFIX = (
-    "as one of the alternative carbon sources"
-)
+ALTERNATIVE_CARBON_NOTE_SUFFIX = "as one of the alternative carbon sources"
 
 IMPORTED_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("yeast extract", "0.05", "PERCENT_W_V"),
@@ -277,9 +275,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

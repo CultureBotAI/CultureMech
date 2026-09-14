@@ -228,8 +228,7 @@ INGREDIENTS: tuple[dict[str, Any], ...] = (
         "VARIABLE",
         source=SOURCE,
         notes=(
-            "JCM Medium 1059 adjusts the medium to pH 7.2-7.4 with sterile KOH, "
-            "if necessary."
+            "JCM Medium 1059 adjusts the medium to pH 7.2-7.4 with sterile KOH, " "if necessary."
         ),
     ),
 )
@@ -296,8 +295,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 5,
         "action": "MIX",
         "description": (
-            "Aseptically add the filter-sterilized glucose solution and vitamin "
-            "solution."
+            "Aseptically add the filter-sterilized glucose solution and vitamin " "solution."
         ),
     },
     {
@@ -349,9 +347,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

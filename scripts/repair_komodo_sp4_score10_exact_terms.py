@@ -130,9 +130,7 @@ def _ingredient_signature(doc: dict[str, Any]) -> tuple[str, ...]:
     if not isinstance(ingredients, list):
         raise ValueError("ingredients is not a list")
     return tuple(
-        str(row.get("preferred_term") or "")
-        for row in ingredients
-        if isinstance(row, dict)
+        str(row.get("preferred_term") or "") for row in ingredients if isinstance(row, dict)
     )
 
 
@@ -169,9 +167,7 @@ def _require_current_sp4_copy(path: Path, doc: dict[str, Any]) -> None:
             f"{path}: expected KOMODO 1076 source term, found {_source_term_id(doc)!r}"
         )
     if _ingredient_signature(doc) != TARGET_SIGNATURE:
-        raise ValueError(
-            f"{path}: ingredient signature drifted: {_ingredient_signature(doc)!r}"
-        )
+        raise ValueError(f"{path}: ingredient signature drifted: {_ingredient_signature(doc)!r}")
 
 
 def repair_record(path: Path, doc: dict[str, Any]) -> dict[str, Any]:

@@ -49,8 +49,7 @@ def _doc(repair_module, path: Path) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "LIQUID",
         "ingredients": [
-            _component(name, value, unit)
-            for name, value, unit in target.imported_ingredients
+            _component(name, value, unit) for name, value, unit in target.imported_ingredients
         ],
         "media_term": {
             "preferred_term": "Modified Roseospira Medium",
@@ -63,8 +62,7 @@ def _doc(repair_module, path: Path) -> dict:
         "applications": ["Microbial cultivation"],
         "curation_history": [],
         "solutions": [
-            _component(name, value, unit)
-            for name, value, unit in target.imported_solutions
+            _component(name, value, unit) for name, value, unit in target.imported_solutions
         ],
         "data_quality_flags": [
             "incomplete_composition",
@@ -97,12 +95,14 @@ def test_repair_restores_modified_roseospira_formula(
     target_path = getattr(repair_module, path_attr)
     repaired = _repair(repair_module, target_path)
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_INGREDIENTS
-    assert repair_module._signature(
-        repaired["solutions"], "solutions"
-    ) == repair_module.FINAL_SOLUTIONS
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_INGREDIENTS
+    )
+    assert (
+        repair_module._signature(repaired["solutions"], "solutions")
+        == repair_module.FINAL_SOLUTIONS
+    )
     assert scorer_module.score_record(repaired) == (0, [])
     assert scorer_module.score_parsed([(str(target_path), repaired)]) == []
 
@@ -140,10 +140,7 @@ def test_repair_grounds_defined_salts_and_keeps_stocks_opaque(
         "id": "FOODON:03315426",
         "label": "yeast extract",
     }
-    assert (
-        "mediaingredientmech_chebi_term"
-        not in ingredients[repair_module.YEAST_EXTRACT]
-    )
+    assert "mediaingredientmech_chebi_term" not in ingredients[repair_module.YEAST_EXTRACT]
 
     for name in (
         repair_module.FERRIC_CITRATE,
@@ -186,9 +183,7 @@ def test_repair_adds_references_ph_and_curation_event(
     assert "temperature_value" not in repaired
     assert "sterilization" not in repaired
     assert repaired["preparation_steps"] == repair_module.PREPARATION_STEPS
-    assert repaired["references"] == [
-        {"reference": reference} for reference in target.references
-    ]
+    assert repaired["references"] == [{"reference": reference} for reference in target.references]
     assert repaired["data_quality_flags"] == [
         "has_ontology_mappings",
         "has_unmapped_ingredients",

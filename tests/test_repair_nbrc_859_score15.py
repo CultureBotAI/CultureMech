@@ -35,8 +35,7 @@ def _minimal_solution(name: str, signature: tuple) -> dict:
     return {
         "preferred_term": name,
         "composition": [
-            _ingredient(ingredient, value, unit)
-            for ingredient, value, unit in signature
+            _ingredient(ingredient, value, unit) for ingredient, value, unit in signature
         ],
     }
 
@@ -95,24 +94,17 @@ def test_repair_document_grounds_nested_stocks(repair_module) -> None:
     repaired = repair_module.repair_document(_minimal_doc(repair_module))
     ingredients = {row["preferred_term"]: row for row in repaired["ingredients"]}
     solutions = {row["preferred_term"]: row for row in repaired["solutions"]}
-    kp_buffer = {
-        row["preferred_term"]: row for row in solutions["KP buffer"]["composition"]
-    }
+    kp_buffer = {row["preferred_term"]: row for row in solutions["KP buffer"]["composition"]}
     trace = {
-        row["preferred_term"]: row
-        for row in solutions["Trace elements solution"]["composition"]
+        row["preferred_term"]: row for row in solutions["Trace elements solution"]["composition"]
     }
-    vitamins = {
-        row["preferred_term"]: row
-        for row in solutions["Vitamin solution"]["composition"]
-    }
+    vitamins = {row["preferred_term"]: row for row in solutions["Vitamin solution"]["composition"]}
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.IMPORTED_INGREDIENT_SIGNATURE
-    assert repair_module._solution_signatures(repaired) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.IMPORTED_INGREDIENT_SIGNATURE
     )
+    assert repair_module._solution_signatures(repaired) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     assert ingredients["Na2S2O3"]["term"]["id"] == "CHEBI:132112"
     assert ingredients["Na2S·9H2O"]["term"]["id"] == "CHEBI:76209"
     assert "term" not in ingredients["KP buffer*"]
@@ -153,9 +145,7 @@ def test_repair_document_adds_reference_and_event_once(repair_module) -> None:
     twice = repair_module.repair_document(once)
 
     assert twice["references"] == [{"reference": repair_module.NBRC_URL}]
-    assert repair_module._solution_signatures(twice) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
-    )
+    assert repair_module._solution_signatures(twice) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     matching_events = [
         event
         for event in twice["curation_history"]
@@ -222,7 +212,5 @@ def test_target_record_matches_nbrc_857_repair_contract(repair_module) -> None:
     assert repair_module._signature(doc["ingredients"], "ingredients") == (
         repair_module.IMPORTED_INGREDIENT_SIGNATURE
     )
-    assert repair_module._solution_signatures(repaired) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
-    )
+    assert repair_module._solution_signatures(repaired) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     assert repaired["media_term"]["term"]["id"] == "nbrc.medium:857"

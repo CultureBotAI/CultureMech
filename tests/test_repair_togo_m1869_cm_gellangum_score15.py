@@ -69,10 +69,13 @@ def test_repair_corrects_water_unit_gellan_name_and_ph(
     repaired = repair_module.repair_record(_doc(repair_module))
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert repaired["ph_value"] == 2.0
     assert "ph_range" not in repaired
     assert "temperature_value" not in repaired
@@ -116,9 +119,7 @@ def test_repair_adds_references_flags_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     assert twice["data_quality_flags"] == [
         "has_ontology_mappings",
         "ingredients_curated",

@@ -152,8 +152,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 2,
         "action": "AUTOCLAVE",
         "description": (
-            "Mix JCM 909 base components and autoclave under an N2-CO2 (4:1, v/v) "
-            "gas mixture."
+            "Mix JCM 909 base components and autoclave under an N2-CO2 (4:1, v/v) " "gas mixture."
         ),
     },
     {
@@ -165,8 +164,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 4,
         "action": "MIX",
         "description": (
-            "After cooling, add anaerobic 8% NaHCO3, 10% MgCl2 x 6 H2O, and "
-            "1 M glucose stocks."
+            "After cooling, add anaerobic 8% NaHCO3, 10% MgCl2 x 6 H2O, and " "1 M glucose stocks."
         ),
     },
     {
@@ -349,9 +347,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -374,9 +370,7 @@ def _solution_signature(rows: Any, label: str) -> tuple[SolutionSignature, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

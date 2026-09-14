@@ -33,9 +33,7 @@ METALS_SOURCE = "DSMZ Medium 590 Metals 44"
 Component = tuple[str, str, str]
 SolutionSignature = tuple[str, str, str, tuple[Component, ...]]
 
-IMPORTED_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
-    ("NaOH", "variable", "VARIABLE"),
-)
+IMPORTED_INGREDIENT_SIGNATURE: tuple[Component, ...] = (("NaOH", "variable", "VARIABLE"),)
 
 FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("Distilled water", "950.0", "ML_PER_L"),
@@ -143,10 +141,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": (
-            notes
-            or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}."
-        ),
+        "notes": (notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}."),
     }
     grounding = GROUNDINGS[preferred_term]
     row["term"] = _term(*grounding)
@@ -198,9 +193,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -223,9 +216,7 @@ def _solution_signature(rows: Any, label: str) -> tuple[SolutionSignature, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

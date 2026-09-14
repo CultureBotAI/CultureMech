@@ -23,12 +23,10 @@ MARINE_TARGET = Path("bacterial/pelobacter_venetianus_marine_medium.yaml")
 FRESHWATER_TARGET = Path("bacterial/pelobacter_venetianus_fresh_water_medium.yaml")
 
 KOMODO_296_URL = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=296"
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=296"
 )
 KOMODO_299_URL = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=299"
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=299"
 )
 DSMZ_296_URL = (
     "https://web.archive.org/web/20121030082653id_/"
@@ -526,8 +524,7 @@ def _check_source(doc: dict[str, Any], recipe: Recipe) -> None:
     term = media_term.get("term")
     if not isinstance(term, dict) or term.get("id") != recipe.expected_media_term:
         raise ValueError(
-            f"{recipe.target}: missing expected media term "
-            f"{recipe.expected_media_term}"
+            f"{recipe.target}: missing expected media term " f"{recipe.expected_media_term}"
         )
 
 
@@ -574,11 +571,7 @@ def _ensure_flags(doc: dict[str, Any], recipe: Recipe) -> None:
 
 def _ensure_references(doc: dict[str, Any], recipe: Recipe) -> None:
     base_sources = sorted(
-        {
-            component.source
-            for component in recipe.components
-            if component.source in BASE_URLS
-        }
+        {component.source for component in recipe.components if component.source in BASE_URLS}
     )
     doc["references"] = [
         {"reference": recipe.komodo_url},
@@ -636,9 +629,7 @@ def repair_record(doc: dict[str, Any], recipe: Recipe) -> dict[str, Any]:
     repaired["composition_type"] = "DEFINED"
     repaired["physical_state"] = "LIQUID"
     _put_after(repaired, "ph_value", 7.2, "physical_state")
-    repaired["ingredients"] = [
-        _ingredient(component) for component in recipe.components
-    ]
+    repaired["ingredients"] = [_ingredient(component) for component in recipe.components]
     _put_after(repaired, "notes", recipe.notes, "media_term")
     _ensure_flags(repaired, recipe)
     _ensure_references(repaired, recipe)
@@ -648,7 +639,8 @@ def repair_record(doc: dict[str, Any], recipe: Recipe) -> dict[str, Any]:
 
 def plan_repairs(normalized: Path = NORMALIZED) -> dict[Path, dict[str, Any]]:
     return {
-        normalized / recipe.target: repair_record(
+        normalized
+        / recipe.target: repair_record(
             _load(normalized / recipe.target),
             recipe,
         )

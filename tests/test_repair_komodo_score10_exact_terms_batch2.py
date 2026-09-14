@@ -67,9 +67,7 @@ def _load_yaml(path: Path) -> dict:
     return yaml.safe_load(path.read_text(encoding="utf-8"))
 
 
-@pytest.mark.parametrize(
-    "target", tuple(_load_script(SCRIPT, "komodo_batch2").TARGET_SIGNATURES)
-)
+@pytest.mark.parametrize("target", tuple(_load_script(SCRIPT, "komodo_batch2").TARGET_SIGNATURES))
 def test_score10_exact_records_exit_review_ranking(
     repair_module,
     scorer_module,

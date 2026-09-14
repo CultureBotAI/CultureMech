@@ -106,10 +106,7 @@ CHILDREN = (
         "PH_VARIANT",
         {"min": 7.4, "max": 7.5},
         NAOH_INGREDIENT_SIGNATURE,
-        (
-            "KOMODO Medium 479.1 applies METHANOHALOPHILUS MEDIUM at pH "
-            "7.4-7.5 for DSM 5219."
-        ),
+        ("KOMODO Medium 479.1 applies METHANOHALOPHILUS MEDIUM at pH " "7.4-7.5 for DSM 5219."),
     ),
 )
 
@@ -258,10 +255,7 @@ def repair_parent(doc: dict[str, Any]) -> dict[str, Any]:
             "timestamp": TIMESTAMP,
             "curator": CURATOR,
             "action": ACTION,
-            "changes": (
-                "Promoted MediaDive Medium 479 to the Methanohalophilus family "
-                "parent"
-            ),
+            "changes": ("Promoted MediaDive Medium 479 to the Methanohalophilus family " "parent"),
             "source": "MediaDive Medium 479 and KOMODO Medium 479-479.1",
             "notes": (
                 "Linked the exact KOMODO Medium 479 source duplicate and "

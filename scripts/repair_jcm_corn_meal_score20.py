@@ -122,8 +122,7 @@ def _check_target(doc: dict[str, Any], target: Target) -> None:
     term = media_term.get("term")
     if not isinstance(term, dict) or term.get("id") != EXPECTED_SOURCE_TERMS[target.path]:
         raise ValueError(
-            f"{target.path}: missing expected media term "
-            f"{EXPECTED_SOURCE_TERMS[target.path]}"
+            f"{target.path}: missing expected media term " f"{EXPECTED_SOURCE_TERMS[target.path]}"
         )
 
     if not doc.get("ingredients"):
@@ -310,7 +309,9 @@ def _relative_path(doc: dict[str, Any]) -> str:
 
 
 def plan_repairs(normalized: Path = NORMALIZED) -> dict[Path, dict[str, Any]]:
-    docs = {target.path: repair_record(_load(normalized / target.path), target) for target in TARGETS}
+    docs = {
+        target.path: repair_record(_load(normalized / target.path), target) for target in TARGETS
+    }
     for target in TARGETS:
         if target.duplicate_of is None:
             continue

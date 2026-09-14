@@ -43,10 +43,7 @@ def _target_doc(spec) -> dict:
         "medium_type": "COMPLEX",
         "composition_type": "UNDEFINED",
         "physical_state": "LIQUID",
-        "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in spec.signature
-        ],
+        "ingredients": [_ingredient(name, value, unit) for name, value, unit in spec.signature],
         "media_term": {
             "preferred_term": f"TOGO Medium {spec.expected_media_term.removeprefix('TOGO:')}",
             "term": {
@@ -71,9 +68,7 @@ def test_repair_lb_base_records_drop_below_queue_threshold(
         repaired = repair_module.repair_target(_target_doc(spec), spec)
         ingredients = _by_name(repaired["ingredients"])
 
-        assert repair_module._signature(repaired["ingredients"], "ingredients") == (
-            spec.signature
-        )
+        assert repair_module._signature(repaired["ingredients"], "ingredients") == (spec.signature)
         assert repaired["composition_type"] == "SEMI_DEFINED"
         assert repaired["physical_state"] == "LIQUID"
         assert "solutions" not in repaired
@@ -85,7 +80,8 @@ def test_repair_lb_base_records_drop_below_queue_threshold(
         }
         assert "term" not in ingredients["Tryptone"]
         assert any(
-            row.get("term") == {
+            row.get("term")
+            == {
                 "id": "FOODON:03315426",
                 "label": "yeast extract",
             }

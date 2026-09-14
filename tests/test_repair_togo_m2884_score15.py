@@ -75,10 +75,13 @@ def test_repair_corrects_water_unit_and_normalizes_formula(
     assert repaired["medium_type"] == "COMPLEX"
     assert repaired["composition_type"] == "SEMI_DEFINED"
     assert repaired["physical_state"] == "LIQUID"
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Distilled water"]["concentration"] == {
         "value": "1.0",
         "unit": "L",
@@ -112,9 +115,7 @@ def test_repair_grounds_discrete_components(repair_module) -> None:
         "id": "CHEBI:17234",
         "label": "glucose",
     }
-    assert ingredients["Sodium beta-glycerophosphate"][
-        "mediaingredientmech_chebi_term"
-    ] == {
+    assert ingredients["Sodium beta-glycerophosphate"]["mediaingredientmech_chebi_term"] == {
         "id": "CHEBI:132089",
         "label": "sodium glycerol 2-phosphate",
     }

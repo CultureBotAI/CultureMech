@@ -45,8 +45,7 @@ def _medium_doc(target) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "SOLID_AGAR",
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_ingredients
+            _ingredient(name, value, unit) for name, value, unit in target.imported_ingredients
         ],
         "media_term": {
             "preferred_term": "source medium",
@@ -68,15 +67,11 @@ def _solution_doc(record_id: str, composition: tuple) -> dict:
             "id": "mediadive.solution:3636",
             "label": "Main sol. J15",
         },
-        "composition": [
-            _ingredient(name, value, unit)
-            for name, value, unit in composition
-        ],
+        "composition": [_ingredient(name, value, unit) for name, value, unit in composition],
         "preparation_notes": "Adjust pH to 7.2.",
         "curation_history": [],
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in PLACEHOLDER_INGREDIENTS
+            _ingredient(name, value, unit) for name, value, unit in PLACEHOLDER_INGREDIENTS
         ],
         "data_quality_flags": ["incomplete_composition"],
         "category": "bacterial",
@@ -98,18 +93,19 @@ def test_mediadive_j15_becomes_canonical_parent(
 ) -> None:
     repaired = _repair_medium(repair_module, repair_module.MEDIADIVE_J15_PATH)
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.DIRECT_COMPOSITION
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.DIRECT_COMPOSITION
+    )
     assert repaired["ph_value"] == 7.2
     assert repaired["variant_children"] == [repair_module.M8_CHILD]
     assert "parent_media" not in repaired
     assert "kg_microbe_match" not in repaired
     assert scorer_module.score_record(repaired) == (0, [])
-    assert scorer_module.score_parsed(
-        [("bacterial/tomato_juice_agar.yaml", repaired)]
-    ) == []
+    assert scorer_module.score_parsed([("bacterial/tomato_juice_agar.yaml", repaired)]) == []
 
 
 def test_togo_m8_links_to_j15_source_duplicate(
@@ -124,9 +120,9 @@ def test_togo_m8_links_to_j15_source_duplicate(
     assert "variant_children" not in repaired
     assert "kg_microbe_match" not in repaired
     assert scorer_module.score_record(repaired) == (0, [])
-    assert scorer_module.score_parsed(
-        [("bacterial/TOGO_M8_Tomato_Juice_Agar.yaml", repaired)]
-    ) == []
+    assert (
+        scorer_module.score_parsed([("bacterial/TOGO_M8_Tomato_Juice_Agar.yaml", repaired)]) == []
+    )
 
 
 def test_repair_corrects_units_and_groundings(repair_module) -> None:
@@ -165,10 +161,13 @@ def test_solution_3636_corrects_false_percent_rows(repair_module) -> None:
     composition = _by_name(repaired["composition"])
 
     assert "ingredients" not in repaired
-    assert repair_module._signature(
-        repaired["composition"],
-        "composition",
-    ) == repair_module.SOLUTION_3636_COMPOSITION
+    assert (
+        repair_module._signature(
+            repaired["composition"],
+            "composition",
+        )
+        == repair_module.SOLUTION_3636_COMPOSITION
+    )
     assert composition["Tryptone (BD-Difco)"]["term"] == {
         "id": "MICRO:0000182",
         "label": "Tryptone",
@@ -195,9 +194,7 @@ def test_repair_adds_references_flags_and_event_once(repair_module) -> None:
     twice = repair_module.repair_medium_record(once, target)
 
     assert twice == once
-    assert once["references"] == [
-        {"reference": reference} for reference in target.references
-    ]
+    assert once["references"] == [{"reference": reference} for reference in target.references]
     assert once["data_quality_flags"] == [
         "ingredients_curated",
         "has_ontology_mappings",
@@ -205,8 +202,7 @@ def test_repair_adds_references_flags_and_event_once(repair_module) -> None:
     matching_events = [
         event
         for event in twice["curation_history"]
-        if event.get("curator") == repair_module.CURATOR
-        and event.get("action") == target.action
+        if event.get("curator") == repair_module.CURATOR and event.get("action") == target.action
     ]
     assert len(matching_events) == 1
     assert repair_module.TOGO_M8 in matching_events[0]["source"]

@@ -314,8 +314,7 @@ def test_plan_repairs_writes_parent_and_children(tmp_path: Path):
 
     assert len(plans) == len(repair.TARGETS) + len(repair.PARENTS)
     assert sorted(
-        child["path"]
-        for child in plans[tmp_path / "specialized/zmb_als.yaml"]["variant_children"]
+        child["path"] for child in plans[tmp_path / "specialized/zmb_als.yaml"]["variant_children"]
     ) == sorted(
         f"data/normalized_yaml/{target.path}"
         for target in repair.TARGETS

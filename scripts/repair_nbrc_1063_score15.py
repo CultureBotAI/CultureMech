@@ -121,10 +121,7 @@ INGREDIENTS: tuple[dict[str, Any], ...] = (
         "Tris-HCl buffer",
         "variable",
         "VARIABLE",
-        notes=(
-            "NBRC Medium 1062 adjusts the medium to pH 8.5 with 50 mM "
-            "Tris-HCl buffer."
-        ),
+        notes=("NBRC Medium 1062 adjusts the medium to pH 8.5 with 50 mM " "Tris-HCl buffer."),
         term=("CHEBI:9754", "tris"),
     ),
 )
@@ -197,9 +194,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -219,9 +214,7 @@ def _has_history_action(doc: dict[str, Any], action: str) -> bool:
 
 def _ensure_target(doc: dict[str, Any]) -> None:
     if doc.get("id") != TARGET_ID:
-        raise ValueError(
-            f"{TARGET_PATH}: found id {doc.get('id')!r}, expected {TARGET_ID!r}"
-        )
+        raise ValueError(f"{TARGET_PATH}: found id {doc.get('id')!r}, expected {TARGET_ID!r}")
     if not _has_history_action(doc, REQUIRED_ACTION):
         raise ValueError(f"{TARGET_PATH}: missing recovery action {REQUIRED_ACTION!r}")
     if doc.get("name") not in {"1063", TITLE}:

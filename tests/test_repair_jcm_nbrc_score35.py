@@ -175,10 +175,7 @@ def test_plan_repairs_adds_review_metadata_once(tmp_path: Path):
     matching_events = [
         event
         for event in seawater["curation_history"]
-        if (
-            event.get("curator") == repair.CURATOR
-            and event.get("action") == repair.ACTION
-        )
+        if (event.get("curator") == repair.CURATOR and event.get("action") == repair.ACTION)
     ]
     assert len(matching_events) == 1
     assert matching_events[0]["source"] == f"{repair.TOGO_M1770}; {repair.NBRC_M985}"

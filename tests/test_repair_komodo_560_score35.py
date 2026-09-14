@@ -117,9 +117,7 @@ def test_repair_record_adds_560_substrates_and_reductants() -> None:
         "value": "20.000-40.000",
         "unit": "ML_PER_L",
     }
-    assert "mediaingredientmech_chebi_term" not in _ingredient(
-        repaired, "Methanethiol"
-    )
+    assert "mediaingredientmech_chebi_term" not in _ingredient(repaired, "Methanethiol")
     assert _ingredient(repaired, "Na2S x 9 H2O")["source"] == repair.SOURCE_560
     assert _ingredient(repaired, "Na2S x 9 H2O")["concentration"] == {
         "value": "0.400000",
@@ -178,8 +176,7 @@ def test_repair_record_scores_as_complete_and_is_idempotent() -> None:
     events = [
         event
         for event in twice["curation_history"]
-        if event.get("curator") == repair.CURATOR
-        and event.get("action") == repair.ACTION
+        if event.get("curator") == repair.CURATOR and event.get("action") == repair.ACTION
     ]
     assert len(events) == 1
 

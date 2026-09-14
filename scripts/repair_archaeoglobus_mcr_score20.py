@@ -44,9 +44,7 @@ EXPECTED_SOURCE_TERMS = {
     JCM_J1194: "mediadive.medium:J1194",
 }
 
-METHANOTHERMOCOCCUS_HHB = (
-    "METHANOTHERMOCOCCUS HHB MEDIUM (see Medium [M1279])"
-)
+METHANOTHERMOCOCCUS_HHB = "METHANOTHERMOCOCCUS HHB MEDIUM (see Medium [M1279])"
 RELATIONSHIP = "SUPPLEMENTED_VARIANT"
 
 
@@ -82,8 +80,7 @@ TARGETS: tuple[ChildTarget, ...] = (
             "supplements it with 2.8 g/L Na2SO4."
         ),
         variant_modification=(
-            "Supplements TOGO M1279 Methanothermococcus HHB Medium with "
-            "2.8 g/L Na2SO4."
+            "Supplements TOGO M1279 Methanothermococcus HHB Medium with " "2.8 g/L Na2SO4."
         ),
     ),
     ChildTarget(
@@ -112,8 +109,7 @@ TARGETS: tuple[ChildTarget, ...] = (
             "snapshot."
         ),
         variant_modification=(
-            "Supplements JCM Medium J1194 Methanothermococcus HHB Medium "
-            "with 2.8 g/L Na2SO4."
+            "Supplements JCM Medium J1194 Methanothermococcus HHB Medium " "with 2.8 g/L Na2SO4."
         ),
     ),
 )
@@ -142,9 +138,7 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 
 def _require_source(doc: dict[str, Any], path: str) -> None:
     if doc.get("id") != EXPECTED_IDS[path]:
-        raise ValueError(
-            f"{path}: found id {doc.get('id')!r}, expected {EXPECTED_IDS[path]!r}"
-        )
+        raise ValueError(f"{path}: found id {doc.get('id')!r}, expected {EXPECTED_IDS[path]!r}")
 
     source_term = _source_term_id(doc)
     if source_term != EXPECTED_SOURCE_TERMS[path]:
@@ -171,9 +165,10 @@ def _require_child(doc: dict[str, Any], target: ChildTarget) -> None:
         raise ValueError(f"{target.path}: Na2SO4 concentration drifted")
 
     parent_media = doc.get("parent_media")
-    if isinstance(parent_media, dict) and parent_media.get("id") == EXPECTED_IDS[
-        target.parent_path
-    ]:
+    if (
+        isinstance(parent_media, dict)
+        and parent_media.get("id") == EXPECTED_IDS[target.parent_path]
+    ):
         return
 
     for solution in doc.get("solutions") or []:
@@ -204,9 +199,7 @@ def _composition_components(doc: dict[str, Any]) -> list[dict[str, Any]]:
             continue
         nested = solution.get("composition") or []
         nested_components = (
-            [row for row in nested if isinstance(row, dict)]
-            if isinstance(nested, list)
-            else []
+            [row for row in nested if isinstance(row, dict)] if isinstance(nested, list) else []
         )
         components.extend(nested_components or [solution])
     return components
@@ -282,9 +275,7 @@ def _ensure_flags(doc: dict[str, Any]) -> None:
         if "has_ontology_mappings" not in flags:
             flags.append("has_ontology_mappings")
 
-    has_unmapped = any(
-        not _grounded(component) for component in _composition_components(doc)
-    )
+    has_unmapped = any(not _grounded(component) for component in _composition_components(doc))
     if has_unmapped:
         if "has_unmapped_ingredients" not in flags:
             flags.append("has_unmapped_ingredients")

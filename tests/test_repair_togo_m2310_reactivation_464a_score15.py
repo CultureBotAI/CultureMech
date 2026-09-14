@@ -112,10 +112,13 @@ def test_repair_restores_dsmz_formula_and_leaves_review_ranking(
 ) -> None:
     repaired = repair_module.repair_target(_target_doc(repair_module))
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert repaired["ph_value"] == 7.0
     assert repaired["preparation_steps"] == list(repair_module.PREPARATION_STEPS)
     assert "solutions" not in repaired
@@ -242,9 +245,7 @@ def test_corpus_records_match_repair_contract(repair_module) -> None:
         repair_module.FINAL_INGREDIENT_SIGNATURE,
     )
     assert parent_doc["id"] == repair_module.EXPECTED_PARENT_ID
-    assert repair_module._source_term_id(parent_doc) == (
-        repair_module.EXPECTED_PARENT_MEDIA_TERM
-    )
+    assert repair_module._source_term_id(parent_doc) == (repair_module.EXPECTED_PARENT_MEDIA_TERM)
     assert repair_module._signature(parent_doc["ingredients"], "ingredients") == (
         repair_module.PARENT_INGREDIENT_SIGNATURE
     )

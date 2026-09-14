@@ -213,8 +213,7 @@ def _hub_parent_ref() -> dict[str, str]:
         "id": PARENT_ID,
         "name": PARENT_NAME,
         "notes": (
-            "KOMODO Medium 516 exactly mirrors the DSMZ/MediaDive "
-            "ANAEROCELLUM MEDIUM record."
+            "KOMODO Medium 516 exactly mirrors the DSMZ/MediaDive " "ANAEROCELLUM MEDIUM record."
         ),
     }
 

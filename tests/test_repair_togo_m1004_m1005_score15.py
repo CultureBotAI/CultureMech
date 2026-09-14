@@ -45,12 +45,9 @@ def _doc(repair_module, target) -> dict:
         "category": "bacterial",
         "medium_type": "COMPLEX",
         "composition_type": "UNDEFINED",
-        "physical_state": "SOLID_AGAR"
-        if target.source_term == "TOGO:M1005"
-        else "LIQUID",
+        "physical_state": "SOLID_AGAR" if target.source_term == "TOGO:M1005" else "LIQUID",
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.ingredient_signature
+            _ingredient(name, value, unit) for name, value, unit in target.ingredient_signature
         ],
         "media_term": {
             "preferred_term": f"TOGO Medium {target.source_term.removeprefix('TOGO:')}",
@@ -77,15 +74,11 @@ def test_repair_records_add_ph_and_expand_mds_stock(repair_module) -> None:
         repaired = repair_module.repair_record(_doc(repair_module, target), target)
 
         assert repaired["ph_value"] == 7.0
-        assert repaired["solutions"] == [
-            repair_module._mds_salt_water(target.source_label)
-        ]
+        assert repaired["solutions"] == [repair_module._mds_salt_water(target.source_label)]
 
         mds = repaired["solutions"][0]
         assert mds["concentration"] == {"value": "767", "unit": "ML_PER_L"}
-        assert repair_module._signature(mds["composition"], "MDS") == (
-            repair_module.MDS_SIGNATURE
-        )
+        assert repair_module._signature(mds["composition"], "MDS") == (repair_module.MDS_SIGNATURE)
 
 
 def test_repair_records_ground_togo_components(repair_module) -> None:
@@ -110,9 +103,7 @@ def test_repair_records_ground_togo_components(repair_module) -> None:
         "id": "MICRO:0000178",
         "label": "peptone",
     }
-    assert "mediaingredientmech_chebi_term" not in liquid_ingredients[
-        "Peptone (Oxoid)"
-    ]
+    assert "mediaingredientmech_chebi_term" not in liquid_ingredients["Peptone (Oxoid)"]
     assert solid_ingredients["Agar"]["mediaingredientmech_chebi_term"] == {
         "id": "CHEBI:2509",
         "label": "agar",
@@ -142,9 +133,7 @@ def test_repair_records_add_references_and_event_once(repair_module) -> None:
         once = repair_module.repair_record(_doc(repair_module, target), target)
         twice = repair_module.repair_record(once, target)
 
-        assert twice["references"] == [
-            {"reference": url} for url in target.references
-        ]
+        assert twice["references"] == [{"reference": url} for url in target.references]
         matching_events = [
             event
             for event in twice["curation_history"]

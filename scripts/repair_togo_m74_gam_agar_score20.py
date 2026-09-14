@@ -97,8 +97,7 @@ def _require_target(doc: dict[str, Any]) -> None:
     source_term = _source_term_id(doc)
     if source_term != EXPECTED_SOURCE_TERM:
         raise ValueError(
-            f"{PATH}: expected source term {EXPECTED_SOURCE_TERM}, "
-            f"found {source_term!r}"
+            f"{PATH}: expected source term {EXPECTED_SOURCE_TERM}, " f"found {source_term!r}"
         )
 
     ingredient_names = {

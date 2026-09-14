@@ -38,8 +38,7 @@ def _doc(repair_module) -> dict:
     return {
         "id": repair_module.EXPECTED_ID,
         "name": (
-            "wilkins_chalgren_agar_plates_supplemented_with_10_human_blood_"
-            "and_antibiotics"
+            "wilkins_chalgren_agar_plates_supplemented_with_10_human_blood_" "and_antibiotics"
         ),
         "original_name": repair_module.TITLE,
         "category": "bacterial",
@@ -77,10 +76,13 @@ def test_repair_restores_wilkins_chalgren_human_blood_and_antibiotics(
     assert repaired["functional_role"] == ["SELECTIVE"]
     assert repaired["temperature_value"] == 37.0
     assert repaired["incubation_atmosphere"] == "MICROAEROPHILIC"
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Vancomycin"]["term"] == {
         "id": "CHEBI:28001",
         "label": "vancomycin",

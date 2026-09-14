@@ -48,9 +48,7 @@ def _ingredient_signature(doc: dict[str, Any]) -> tuple[str, ...]:
     if not isinstance(ingredients, list):
         raise ValueError("ingredients is not a list")
     return tuple(
-        str(row.get("preferred_term") or "")
-        for row in ingredients
-        if isinstance(row, dict)
+        str(row.get("preferred_term") or "") for row in ingredients if isinstance(row, dict)
     )
 
 

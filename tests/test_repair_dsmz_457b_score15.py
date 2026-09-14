@@ -52,10 +52,19 @@ def _doc(repair, target) -> dict:
         },
         "notes": "Stale commercial TSB/TSA note",
         "ingredients": [
-            {"preferred_term": "Dibenzofuran", "concentration": {"value": "8.4", "unit": "G_PER_L"}},
-            {"preferred_term": "Dimethyl sulfoxide", "concentration": {"value": "1000", "unit": "G_PER_L"}},
+            {
+                "preferred_term": "Dibenzofuran",
+                "concentration": {"value": "8.4", "unit": "G_PER_L"},
+            },
+            {
+                "preferred_term": "Dimethyl sulfoxide",
+                "concentration": {"value": "1000", "unit": "G_PER_L"},
+            },
             {"preferred_term": "Agar", "concentration": {"value": "50.0", "unit": "G_PER_L"}},
-            {"preferred_term": "Pancreatic digest of casein", "concentration": {"value": "17", "unit": "G_PER_L"}},
+            {
+                "preferred_term": "Pancreatic digest of casein",
+                "concentration": {"value": "17", "unit": "G_PER_L"},
+            },
         ],
         "curation_history": [],
     }
@@ -148,8 +157,15 @@ def test_variant_links_are_directional(repair_module) -> None:
             repair_module.KOMODO_457B_2,
         )
     ]
-    for path in (repair_module.KOMODO_457B, repair_module.KOMODO_457B_1, repair_module.KOMODO_457B_2):
-        assert repaired[path]["parent_media"]["path"] == f"data/normalized_yaml/{repair_module.DSMZ_457B}"
+    for path in (
+        repair_module.KOMODO_457B,
+        repair_module.KOMODO_457B_1,
+        repair_module.KOMODO_457B_2,
+    ):
+        assert (
+            repaired[path]["parent_media"]["path"]
+            == f"data/normalized_yaml/{repair_module.DSMZ_457B}"
+        )
         assert repaired[path]["parent_media"]["path"] != f"data/normalized_yaml/{path}"
 
 
@@ -164,12 +180,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(root)
 
     assert {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(root): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(root): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_source(repair_module) -> None:

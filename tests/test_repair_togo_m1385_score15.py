@@ -79,10 +79,13 @@ def test_repair_corrects_base_formula_and_conditions(repair_module) -> None:
 
     assert repaired["composition_type"] == "SEMI_DEFINED"
     assert repaired["ph_value"] == 9.6
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert _by_name(repaired["ingredients"])["Ar"]["term"] == {
         "id": "CHEBI:49474",
         "label": "argon(0)",
@@ -114,9 +117,12 @@ def test_repair_expands_trace_vitamins_and_carbon_stocks(repair_module) -> None:
     solutions = _by_name(repaired["solutions"])
     vitamins = _by_name(solutions["Trace vitamins"]["composition"])
 
-    assert repair_module._solution_signatures(
-        repaired,
-    ) == repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._solution_signatures(
+            repaired,
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURES
+    )
     assert vitamins["Vitamin B12"]["concentration"] == {
         "value": "0.1",
         "unit": "MG_PER_L",
@@ -144,17 +150,12 @@ def test_repair_encodes_filter_sterilized_stocks(repair_module) -> None:
     assert solutions["Trace vitamins"]["preparation_notes"] == (
         "Filter-sterilize before aseptic addition."
     )
-    assert solutions["0.1% Sodium dithionite solution (in 1 M NaHCO3)"][
-        "composition"
-    ] == [
+    assert solutions["0.1% Sodium dithionite solution (in 1 M NaHCO3)"]["composition"] == [
         {
             "preferred_term": "Sodium dithionite",
             "concentration": {"value": "0.1", "unit": "PERCENT_W_V"},
             "source": repair_module.SOURCE,
-            "notes": (
-                "TOGO M1385 / MediaDive J1289 lists 0.1 % w/v "
-                "Sodium dithionite."
-            ),
+            "notes": ("TOGO M1385 / MediaDive J1289 lists 0.1 % w/v " "Sodium dithionite."),
             "term": {
                 "id": "CHEBI:66870",
                 "label": "sodium dithionite",
@@ -212,9 +213,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]
@@ -224,9 +223,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
         )
     ]
     assert len(matching_events) == 1
-    assert "stock additions from g/L artifacts to ml/L volumes" in matching_events[0][
-        "notes"
-    ]
+    assert "stock additions from g/L artifacts to ml/L volumes" in matching_events[0]["notes"]
 
 
 def test_repair_record_rejects_wrong_id(repair_module) -> None:

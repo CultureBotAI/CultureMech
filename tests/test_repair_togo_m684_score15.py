@@ -49,8 +49,7 @@ def _doc(
         "composition_type": "UNDEFINED",
         "physical_state": "LIQUID",
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_signature
+            _ingredient(name, value, unit) for name, value, unit in target.imported_signature
         ],
         "media_term": {
             "preferred_term": "source medium",
@@ -93,9 +92,7 @@ def test_togo_m684_links_to_jcm_duplicate(repair_module, scorer_module) -> None:
     assert repaired["ph_value"] == 6.2
     assert repaired["parent_media"] == repair_module.JCM_J666_PARENT
     assert repaired["variant_relationship"] == "SOURCE_DUPLICATE"
-    assert repaired["variant_modifications"] == [
-        repair_module.M684_VARIANT_MODIFICATION
-    ]
+    assert repaired["variant_modifications"] == [repair_module.M684_VARIANT_MODIFICATION]
     assert "variant_children" not in repaired
     assert scorer_module.score_record(repaired) == (0, [])
 
@@ -112,9 +109,7 @@ def test_nbrc_m1599_is_repaired_but_unlinked(repair_module, scorer_module) -> No
     assert "variant_relationship" not in repaired
     assert "variant_modifications" not in repaired
     assert scorer_module.score_record(repaired) == (5, ["no pH and no temperature"])
-    assert scorer_module.score_parsed(
-        [(str(repair_module.TOGO_M1599_PATH), repaired)]
-    ) == []
+    assert scorer_module.score_parsed([(str(repair_module.TOGO_M1599_PATH), repaired)]) == []
 
 
 def test_repair_sets_groundings_roles_and_chebi_mirrors(repair_module) -> None:
@@ -152,17 +147,13 @@ def test_repair_sets_groundings_roles_and_chebi_mirrors(repair_module) -> None:
 
 def test_repair_adds_references_flags_and_event_once(repair_module) -> None:
     target = next(
-        target
-        for target in repair_module.TARGETS
-        if target.path == repair_module.JCM_J666_PATH
+        target for target in repair_module.TARGETS if target.path == repair_module.JCM_J666_PATH
     )
     once = repair_module.repair_target(_doc(target=target), target)
     twice = repair_module.repair_target(once, target)
 
     assert twice == once
-    assert once["references"] == [
-        {"reference": reference} for reference in target.references
-    ]
+    assert once["references"] == [{"reference": reference} for reference in target.references]
     assert once["data_quality_flags"] == [
         "has_ontology_mappings",
         "ingredients_curated",
@@ -170,8 +161,7 @@ def test_repair_adds_references_flags_and_event_once(repair_module) -> None:
     matching_events = [
         event
         for event in once["curation_history"]
-        if event.get("curator") == repair_module.CURATOR
-        and event.get("action") == target.action
+        if event.get("curator") == repair_module.CURATOR and event.get("action") == target.action
     ]
     assert len(matching_events) == 1
     assert "Distilled water" in matching_events[0]["notes"]

@@ -64,9 +64,7 @@ def _load_yaml(path: Path) -> dict:
     return yaml.safe_load(path.read_text(encoding="utf-8"))
 
 
-@pytest.mark.parametrize(
-    "target", tuple(_load_script(SCRIPT, "komodo_sp4_batch").TARGETS)
-)
+@pytest.mark.parametrize("target", tuple(_load_script(SCRIPT, "komodo_sp4_batch").TARGETS))
 def test_score10_sp4_records_exit_review_ranking(
     repair_module,
     scorer_module,
@@ -115,9 +113,7 @@ def test_plan_repairs_targets_current_records(repair_module) -> None:
     plans = repair_module.plan_repairs()
 
     assert len(plans) == repair_module.EXPECTED_TARGET_COUNT
-    assert set(plans) == {
-        repair_module.NORMALIZED / relative for relative in repair_module.TARGETS
-    }
+    assert set(plans) == {repair_module.NORMALIZED / relative for relative in repair_module.TARGETS}
 
 
 def test_repair_rejects_source_drift(repair_module) -> None:

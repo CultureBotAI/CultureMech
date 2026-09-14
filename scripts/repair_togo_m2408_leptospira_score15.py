@@ -70,9 +70,7 @@ FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     (PEPTONE, "0.3", "G_PER_L"),
 )
 
-SUPPLEMENT_A_SIGNATURE: tuple[Component, ...] = (
-    (RABBIT_SERUM, "100.0", "ML_PER_L"),
-)
+SUPPLEMENT_A_SIGNATURE: tuple[Component, ...] = ((RABBIT_SERUM, "100.0", "ML_PER_L"),)
 
 HEMIN_STOCK_SIGNATURE: tuple[Component, ...] = (
     (HEMIN, "0.05", "PERCENT_W_V"),
@@ -151,9 +149,7 @@ PREPARATION_STEPS = [
     {
         "step_number": 4,
         "action": "MIX",
-        "description": (
-            "Cool the base to 50 C and aseptically add sterile Supplement A."
-        ),
+        "description": ("Cool the base to 50 C and aseptically add sterile Supplement A."),
     },
     {
         "step_number": 5,
@@ -219,9 +215,7 @@ HEMIN_STOCK = {
     "preferred_term": HEMIN_SOLUTION,
     "concentration": {"value": "2.5", "unit": "ML_PER_L"},
     "source": SOURCE,
-    "notes": (
-        f"{SOURCE} prepares Supplement A with 2.5 ml of 0.05% Hemin solution."
-    ),
+    "notes": (f"{SOURCE} prepares Supplement A with 2.5 ml of 0.05% Hemin solution."),
     "composition": [
         _component(
             HEMIN,
@@ -242,10 +236,7 @@ HEMIN_STOCK = {
             "990.0",
             "ML_PER_L",
             source=f"{SOURCE} 0.05% Hemin solution",
-            notes=(
-                f"{SOURCE} brings the 0.05% Hemin solution to 100 ml with "
-                "99 ml DI Water."
-            ),
+            notes=(f"{SOURCE} brings the 0.05% Hemin solution to 100 ml with " "99 ml DI Water."),
         ),
     ],
     "preparation_notes": (
@@ -270,8 +261,7 @@ SUPPLEMENT_A_SOLUTION = {
     ],
     "solutions": [HEMIN_STOCK],
     "preparation_notes": (
-        "Mix 100 ml Sterile Rabbit Serum with 2.5 ml 0.05% Hemin solution and "
-        "filter sterilize."
+        "Mix 100 ml Sterile Rabbit Serum with 2.5 ml 0.05% Hemin solution and " "filter sterilize."
     ),
 }
 
@@ -307,9 +297,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -332,9 +320,7 @@ def _solution_signature(rows: Any, label: str) -> tuple[SolutionSignature, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
 
         row_label = f"{label}[{index}]"
         signature.append(

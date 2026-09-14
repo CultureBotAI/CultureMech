@@ -71,9 +71,7 @@ INGREDIENT_NOTES = {
     ),
     "Yeast extract": "TOGO M1930 / NBRC Medium 1197 lists 2.5 g/L Yeast extract.",
     "Glucose": "TOGO M1930 / NBRC Medium 1197 lists 1 g/L Glucose.",
-    "Agar (if needed)": (
-        "TOGO M1930 / NBRC Medium 1197 lists 15 g/L Agar if needed."
-    ),
+    "Agar (if needed)": ("TOGO M1930 / NBRC Medium 1197 lists 15 g/L Agar if needed."),
     "Tryptone": "TOGO M1930 / NBRC Medium 1197 lists 5 g/L Tryptone.",
 }
 
@@ -133,9 +131,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

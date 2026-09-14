@@ -42,9 +42,7 @@ IMPORTED_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("Beef extract", "0.5", "G_PER_L"),
 )
 
-IMPORTED_SOLUTION_SIGNATURE: tuple[SolutionSignature, ...] = (
-    ("Glucose*", "0.25", "G_PER_L", ()),
-)
+IMPORTED_SOLUTION_SIGNATURE: tuple[SolutionSignature, ...] = (("Glucose*", "0.25", "G_PER_L", ()),)
 
 FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("Beef extract", "0.5", "G_PER_L"),
@@ -127,8 +125,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": SOURCE,
-        "notes": notes
-        or f"{SOURCE} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{SOURCE} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     grounding = GROUNDINGS.get(preferred_term)
     if grounding is not None:
@@ -191,9 +188,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -216,9 +211,7 @@ def _solution_signature(rows: Any, label: str) -> tuple[SolutionSignature, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

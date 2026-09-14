@@ -298,12 +298,21 @@ TOGO_TARGET = Target(
     media_term="TOGO:M763",
     imported_ingredients=TOGO_IMPORTED_INGREDIENTS,
     imported_solutions=TOGO_IMPORTED_SOLUTIONS,
-    references=(TOGO_M763, JCM_738, JCM_737, TOGO_M762, JCM_294, TOGO_M288, JCM_431, TOGO_M431, JCM_197, TOGO_M190),
+    references=(
+        TOGO_M763,
+        JCM_738,
+        JCM_737,
+        TOGO_M762,
+        JCM_294,
+        TOGO_M288,
+        JCM_431,
+        TOGO_M431,
+        JCM_197,
+        TOGO_M190,
+    ),
     parent_media=JCM_PARENT,
     variant_relationship="SOURCE_DUPLICATE",
-    variant_modifications=(
-        "Same JCM Medium 738 formulation as the MediaDive J738 source record.",
-    ),
+    variant_modifications=("Same JCM Medium 738 formulation as the MediaDive J738 source record.",),
 )
 
 TARGETS = (JCM_TARGET, TOGO_TARGET)
@@ -359,8 +368,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     grounding = GROUNDINGS[preferred_term]
     row["term"] = _term(*grounding)
@@ -443,10 +451,7 @@ def _solutions() -> list[dict[str, Any]]:
             SELENITE_TUNGSTATE_M431,
             source=SOURCE,
             component_source=SOURCE_M431,
-            notes=(
-                "JCM Medium 738 adds 1.0 ml/L Selenite-tungstate solution "
-                "from TOGO M431."
-            ),
+            notes=("JCM Medium 738 adds 1.0 ml/L Selenite-tungstate solution " "from TOGO M431."),
         ),
         _solution(
             "8% NaHCO3 solution",
@@ -539,9 +544,7 @@ def _solution_signatures(doc: dict[str, Any]) -> tuple[SolutionSignature, ...]:
             raise ValueError("solutions contains a non-mapping row")
         concentration = solution.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"solution {solution.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"solution {solution.get('preferred_term')!r} lacks concentration")
         signatures.append(
             (
                 str(solution.get("preferred_term") or ""),
@@ -565,9 +568,7 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}")
     if _source_term_id(doc) != target.media_term:
         raise ValueError(f"{target.path}: expected media term {target.media_term}")
 
@@ -578,8 +579,7 @@ def _ensure_target(doc: dict[str, Any], target: Target) -> None:
         (FINAL_INGREDIENTS, FINAL_SOLUTIONS),
     ):
         raise ValueError(
-            f"{target.path}: composition signature drifted from importer or "
-            "repaired forms"
+            f"{target.path}: composition signature drifted from importer or " "repaired forms"
         )
 
 

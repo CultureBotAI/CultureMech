@@ -88,9 +88,7 @@ TRACE_MINERALS_SIGNATURE: tuple[Component, ...] = (
     ("Distilled water", "1.0", "L"),
 )
 
-BICARBONATE_SIGNATURE: tuple[Component, ...] = (
-    ("NaHCO3", "8.0", "PERCENT_W_V"),
-)
+BICARBONATE_SIGNATURE: tuple[Component, ...] = (("NaHCO3", "8.0", "PERCENT_W_V"),)
 
 VITAMIN_SIGNATURE: tuple[Component, ...] = (
     ("Biotin", "2.0", "MG_PER_L"),
@@ -268,8 +266,7 @@ def _stock(
         "source": SOURCE,
         "notes": notes,
         "composition": [
-            _listed_component(name, value, unit, source=source)
-            for name, value, unit in composition
+            _listed_component(name, value, unit, source=source) for name, value, unit in composition
         ],
     }
     if preparation_notes:
@@ -381,8 +378,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
                 "PERCENT_W_V",
                 source=SOURCE,
                 notes=(
-                    "8% NaHCO3 solution is represented from the stock label as "
-                    "8.0% w/v NaHCO3."
+                    "8% NaHCO3 solution is represented from the stock label as " "8.0% w/v NaHCO3."
                 ),
             )
         ],
@@ -414,16 +410,13 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 2,
         "action": "MIX",
         "description": (
-            "Prepare the top layer from Modified Wolfe's solution and Trace "
-            "minerals."
+            "Prepare the top layer from Modified Wolfe's solution and Trace " "minerals."
         ),
     },
     {
         "step_number": 3,
         "action": "AUTOCLAVE",
-        "description": (
-            "Autoclave both layer solutions at 121 degrees C for 15 min."
-        ),
+        "description": ("Autoclave both layer solutions at 121 degrees C for 15 min."),
     },
     {
         "step_number": 4,
@@ -516,9 +509,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

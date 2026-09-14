@@ -106,10 +106,13 @@ def test_repair_grounds_all_lb_miller_components(repair_module) -> None:
     repaired = repair_module.repair_record(_doc(repair_module))
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.INGREDIENT_SIGNATURE
+    )
     assert ingredients["Tryptone"]["term"] == {
         "id": "MICRO:0000182",
         "label": "tryptone",

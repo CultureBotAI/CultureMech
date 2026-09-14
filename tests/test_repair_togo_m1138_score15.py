@@ -78,10 +78,13 @@ def test_repair_corrects_direct_formula_and_ph(repair_module) -> None:
     ingredients = _by_name(repaired["ingredients"])
 
     assert repaired["ph_range"] == {"min": 6.2, "max": 6.5}
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["MES"]["term"] == {"id": "CHEBI:39010", "label": "MES"}
     assert "term" not in ingredients["Tryptone (BD-Difco)"]
     assert ingredients["Oxygen gas"]["term"] == {
@@ -97,9 +100,12 @@ def test_repair_expands_stocks(repair_module) -> None:
     wolfe = _by_name(solutions["Wolfe's mineral solution"]["composition"])
     vitamins = _by_name(solutions["Trace vitamins"]["composition"])
 
-    assert repair_module._solution_signatures(
-        repaired,
-    ) == repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._solution_signatures(
+            repaired,
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURES
+    )
     assert solutions["Wolfe's mineral solution"]["concentration"] == {
         "value": "1.0",
         "unit": "ML_PER_L",
@@ -134,9 +140,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

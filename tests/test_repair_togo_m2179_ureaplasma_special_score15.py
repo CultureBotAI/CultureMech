@@ -93,9 +93,7 @@ def test_repair_rebuilds_basal_formula(repair_module) -> None:
         "value": "705.0",
         "unit": "ML_PER_L",
     }
-    assert ingredients[repair_module.AGAR]["physicochemical_roles"] == [
-        "SOLIDIFYING_AGENT"
-    ]
+    assert ingredients[repair_module.AGAR]["physicochemical_roles"] == ["SOLIDIFYING_AGENT"]
     assert ingredients[repair_module.UREA]["term"] == {
         "id": "CHEBI:16199",
         "label": "urea",
@@ -203,12 +201,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(tmp_path)
 
     assert {
-        path.relative_to(tmp_path): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(tmp_path): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(tmp_path): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(tmp_path): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:

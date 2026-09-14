@@ -184,10 +184,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": (
-            notes
-            or f"ATCC Medium 416 lists {value} {UNIT_LABELS[unit]} {preferred_term}."
-        ),
+        "notes": (notes or f"ATCC Medium 416 lists {value} {UNIT_LABELS[unit]} {preferred_term}."),
     }
     grounding = GROUNDINGS.get(preferred_term)
     if grounding:
@@ -254,10 +251,7 @@ def _notes(target: Target) -> str:
         "TOGO M2249 lists the ATCC Medium 416 solid formulation: 15 g/L agar "
         "plus the Lactobacilli MRS Broth scratch formula."
         if target is TARGET_M2249
-        else (
-            "TOGO M2250 lists the ATCC Medium 416 Lactobacilli MRS Broth "
-            "scratch formula."
-        )
+        else ("TOGO M2250 lists the ATCC Medium 416 Lactobacilli MRS Broth " "scratch formula.")
     )
     return (
         f"{formulation} ATCC Medium 416 lists, per liter, 10 g Proteose "
@@ -299,9 +293,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -325,13 +317,10 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.expected_id:
         raise ValueError(
-            f"{target.path}: expected id {target.expected_id}, "
-            f"found {doc.get('id')!r}"
+            f"{target.path}: expected id {target.expected_id}, " f"found {doc.get('id')!r}"
         )
     if _source_term_id(doc) != target.expected_media_term:
-        raise ValueError(
-            f"{target.path}: expected media term {target.expected_media_term}"
-        )
+        raise ValueError(f"{target.path}: expected media term {target.expected_media_term}")
 
     ingredient_signature = _signature(doc.get("ingredients"), "ingredients")
     if ingredient_signature not in (

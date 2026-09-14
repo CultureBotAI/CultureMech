@@ -94,14 +94,20 @@ def test_repair_corrects_units_and_removes_naoh_ingredient(repair_module) -> Non
     repaired = repair_module.repair_target(_doc(repair_module))
 
     assert repaired["ph_value"] == 8.2
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._signature(
-        repaired["solutions"],
-        "solutions",
-    ) == repair_module.FINAL_SOLUTION_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            repaired["solutions"],
+            "solutions",
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURE
+    )
     assert "NaOH" not in _by_name(repaired["ingredients"])
     assert _by_name(repaired["ingredients"])["Distilled water"]["concentration"] == {
         "value": "900.0",
@@ -181,9 +187,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_target(_doc(repair_module))
     twice = repair_module.repair_target(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

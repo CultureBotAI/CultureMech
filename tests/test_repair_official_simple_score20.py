@@ -145,8 +145,7 @@ def test_blood_agar_repairs_keep_official_blood_volumes() -> None:
 
     for repaired in (chocolate, chocolate_togo):
         ingredients = {
-            ingredient["preferred_term"]: ingredient
-            for ingredient in repaired["ingredients"]
+            ingredient["preferred_term"]: ingredient for ingredient in repaired["ingredients"]
         }
 
         assert ingredients["Columbia blood agar base (BD-Difco)"]["concentration"] == {
@@ -167,9 +166,7 @@ def test_blood_agar_repairs_keep_official_blood_volumes() -> None:
 def test_jcm_69_becomes_parent_salt_wrapper() -> None:
     repair = _load_script(SCRIPT, "repair_official_simple_score20_jcm69")
     targets = [
-        target
-        for target in repair.TARGETS
-        if target.path in {repair.JCM_69, repair.JCM_69_TOGO}
+        target for target in repair.TARGETS if target.path in {repair.JCM_69, repair.JCM_69_TOGO}
     ]
 
     assert len(targets) == 2
@@ -411,12 +408,10 @@ def test_dsmz_353_and_1752_keep_ml_base_liquids() -> None:
     )
 
     seawater_ingredients = {
-        ingredient["preferred_term"]: ingredient
-        for ingredient in seawater["ingredients"]
+        ingredient["preferred_term"]: ingredient for ingredient in seawater["ingredients"]
     }
     tomato_ingredients = {
-        ingredient["preferred_term"]: ingredient
-        for ingredient in tomato["ingredients"]
+        ingredient["preferred_term"]: ingredient for ingredient in tomato["ingredients"]
     }
 
     assert seawater_ingredients["Biomaris Seawater"]["concentration"] == {
@@ -457,8 +452,7 @@ def test_dsmz_601_repairs_duplicate_marine_caulobacter_imports() -> None:
 
     for repaired in (bacterial, specialized):
         ingredients = {
-            ingredient["preferred_term"]: ingredient
-            for ingredient in repaired["ingredients"]
+            ingredient["preferred_term"]: ingredient for ingredient in repaired["ingredients"]
         }
 
         assert repaired["ph_range"] == {
@@ -556,8 +550,7 @@ def test_fungal_isp_wrappers_and_sabouraud_use_official_recipes() -> None:
         "id": "CultureMech:009815",
         "name": "oatmeal_agar_isp_3",
         "notes": (
-            "Supplements 1.0 L Oatmeal agar (ISP-3) with 1.0 g/L "
-            "Yeast extract (BD-Difco)."
+            "Supplements 1.0 L Oatmeal agar (ISP-3) with 1.0 g/L " "Yeast extract (BD-Difco)."
         ),
     }
 
@@ -575,8 +568,7 @@ def test_fungal_isp_wrappers_and_sabouraud_use_official_recipes() -> None:
         "id": "CultureMech:009900",
         "name": "inorganic_salts_starch_agar_isp_4",
         "notes": (
-            "Supplements 1.0 L Inorganic salts-starch agar (ISP-4) "
-            "with 0.5 g/L Yeast extract."
+            "Supplements 1.0 L Inorganic salts-starch agar (ISP-4) " "with 0.5 g/L Yeast extract."
         ),
     }
 

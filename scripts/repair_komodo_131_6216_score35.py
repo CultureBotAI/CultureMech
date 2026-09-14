@@ -20,7 +20,9 @@ NORMALIZED = REPO / "data" / "normalized_yaml"
 TARGET = Path("bacterial/medium_131_modified_for_dsm_6216.yaml")
 EXPECTED_ID = "CultureMech:004066"
 EXPECTED_MEDIA_TERM = "komodo.medium:131_6216"
-PARENT_PATH = "data/normalized_yaml/archaea/KOMODO_131_METHANOBACTERIUM_THERMOAUTOTROPHICUM_MEDIUM.yaml"
+PARENT_PATH = (
+    "data/normalized_yaml/archaea/KOMODO_131_METHANOBACTERIUM_THERMOAUTOTROPHICUM_MEDIUM.yaml"
+)
 PARENT_ID = "CultureMech:004074"
 YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
@@ -29,8 +31,7 @@ KOMODO_131_6216_URL = (
     "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=131_6216"
 )
 KOMODO_131_URL = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=131"
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=131"
 )
 DSMZ_131_URL = (
     "https://web.archive.org/web/20121030082653id_/"
@@ -452,9 +453,7 @@ def _ensure_curation_event(doc: dict[str, Any]) -> None:
 
 def _require_target(doc: dict[str, Any]) -> None:
     if doc.get("id") != EXPECTED_ID:
-        raise ValueError(
-            f"{TARGET}: expected immutable id {EXPECTED_ID}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{TARGET}: expected immutable id {EXPECTED_ID}, found {doc.get('id')!r}")
     source_term = _source_term_id(doc)
     if source_term != EXPECTED_MEDIA_TERM:
         raise ValueError(

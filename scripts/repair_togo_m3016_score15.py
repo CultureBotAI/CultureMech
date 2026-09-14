@@ -237,8 +237,7 @@ def _stock(
         "source": SOURCE,
         "notes": notes,
         "composition": [
-            _listed_component(name, value, unit, source=source)
-            for name, value, unit in composition
+            _listed_component(name, value, unit, source=source) for name, value, unit in composition
         ],
     }
     if preparation_notes:
@@ -299,10 +298,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
         "10.0",
         THIOSULFATE_SIGNATURE,
         source=SOURCE,
-        notes=(
-            "JCM Medium 1347 adds 10.0 ml/L filter-sterilized 1 M "
-            "Na2S2O3 x 5H2O solution."
-        ),
+        notes=("JCM Medium 1347 adds 10.0 ml/L filter-sterilized 1 M " "Na2S2O3 x 5H2O solution."),
         preparation_notes="Filter-sterilize before addition to the autoclaved base.",
     ),
 )
@@ -311,9 +307,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
     {
         "step_number": 1,
         "action": "MIX",
-        "description": (
-            "Mix 1 L Modified Wolfe's solution with 10 ml Trace minerals."
-        ),
+        "description": ("Mix 1 L Modified Wolfe's solution with 10 ml Trace minerals."),
     },
     {
         "step_number": 2,
@@ -384,9 +378,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

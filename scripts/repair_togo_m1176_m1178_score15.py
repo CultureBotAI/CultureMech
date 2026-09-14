@@ -83,12 +83,8 @@ TARGETS: tuple[Target, ...] = (
     ),
 )
 
-NA2S_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("Na2S x 9H2O", "5.0", "PERCENT_W_V"),
-)
-CYSTEINE_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("L-Cysteine HCl H2O", "5.0", "PERCENT_W_V"),
-)
+NA2S_STOCK_SIGNATURE: tuple[Component, ...] = (("Na2S x 9H2O", "5.0", "PERCENT_W_V"),)
+CYSTEINE_STOCK_SIGNATURE: tuple[Component, ...] = (("L-Cysteine HCl H2O", "5.0", "PERCENT_W_V"),)
 VITAMIN_SIGNATURE: tuple[Component, ...] = (
     ("Biotin", "2.0", "MG_PER_L"),
     ("Folic acid", "2.0", "MG_PER_L"),
@@ -350,8 +346,7 @@ def _base_preparation_steps(target: Target) -> list[dict[str, Any]]:
     base_components = "tryptone, yeast extract, natural seawater, and distilled water"
     if target.include_resazurin:
         base_components = (
-            "tryptone, yeast extract, resazurin, natural seawater, and "
-            "distilled water"
+            "tryptone, yeast extract, resazurin, natural seawater, and " "distilled water"
         )
 
     steps: list[dict[str, Any]] = [

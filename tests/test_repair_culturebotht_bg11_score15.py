@@ -38,8 +38,7 @@ def _doc(target, *, source_shape: str = "sources") -> dict:
         "composition_type": "DEFINED",
         "physical_state": "LIQUID",
         "ingredients": [
-            {"preferred_term": preferred_term}
-            for preferred_term in target.expected_ingredients
+            {"preferred_term": preferred_term} for preferred_term in target.expected_ingredients
         ],
         "notes": "Source: FEBA media definitions",
         "curation_history": [],

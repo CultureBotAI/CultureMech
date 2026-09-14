@@ -106,8 +106,7 @@ def _require_target(doc: dict[str, Any]) -> None:
     source_term = _source_term_id(doc)
     if source_term != EXPECTED_SOURCE_TERM:
         raise ValueError(
-            f"{PATH}: expected source term {EXPECTED_SOURCE_TERM}, "
-            f"found {source_term!r}"
+            f"{PATH}: expected source term {EXPECTED_SOURCE_TERM}, " f"found {source_term!r}"
         )
 
     ingredient_names = {
@@ -123,10 +122,7 @@ def _ensure_reference(doc: dict[str, Any]) -> None:
     references = doc.setdefault("references", [])
     if not isinstance(references, list):
         raise ValueError("references is not a list")
-    if not any(
-        isinstance(row, dict) and row.get("reference") == TOGO_M149
-        for row in references
-    ):
+    if not any(isinstance(row, dict) and row.get("reference") == TOGO_M149 for row in references):
         references.append({"reference": TOGO_M149})
 
 

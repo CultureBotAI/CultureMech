@@ -82,8 +82,12 @@ def test_all_targets_score_below_review_threshold(repair_module, scorer_module) 
 def test_generic_nbrc_lb_rows_are_grounded(repair_module, scorer_module) -> None:
     by_path = repair_module.TARGET_BY_PATH
 
-    lb = repair_module.repair_record(_doc(by_path["bacterial/lb_medium.yaml"]), by_path["bacterial/lb_medium.yaml"])
-    third = repair_module.repair_record(_doc(by_path["bacterial/1_3_lb.yaml"]), by_path["bacterial/1_3_lb.yaml"])
+    lb = repair_module.repair_record(
+        _doc(by_path["bacterial/lb_medium.yaml"]), by_path["bacterial/lb_medium.yaml"]
+    )
+    third = repair_module.repair_record(
+        _doc(by_path["bacterial/1_3_lb.yaml"]), by_path["bacterial/1_3_lb.yaml"]
+    )
 
     assert _by_name(lb)["Peptone"]["term"] == {"id": "MICRO:0000178", "label": "peptone"}
     assert _by_name(lb)["Yeast extract"]["term"] == {
@@ -116,9 +120,7 @@ def test_repair_adds_flags_references_and_history(repair_module) -> None:
         "has_unmapped_ingredients",
         "ingredients_curated",
     ]
-    assert repaired["references"] == [
-        {"reference": url} for url in target.reference_urls
-    ]
+    assert repaired["references"] == [{"reference": url} for url in target.reference_urls]
     assert repaired["curation_history"] == [
         {
             "timestamp": repair_module.TIMESTAMP,
@@ -143,12 +145,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(tmp_path)
 
     assert {
-        path.relative_to(tmp_path): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(tmp_path): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(tmp_path): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(tmp_path): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:
@@ -180,9 +178,7 @@ def test_repair_rejects_component_drift(repair_module) -> None:
 
 def test_target_records_match_reviewed_inputs(repair_module) -> None:
     for target in repair_module.TARGETS:
-        doc = yaml.safe_load(
-            (repair_module.NORMALIZED / target.path).read_text(encoding="utf-8")
-        )
+        doc = yaml.safe_load((repair_module.NORMALIZED / target.path).read_text(encoding="utf-8"))
 
         assert doc["id"] == target.record_id
         assert repair_module._component_signature(doc["ingredients"]) in {

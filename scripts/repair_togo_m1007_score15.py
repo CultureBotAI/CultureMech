@@ -260,8 +260,7 @@ def _wolfe_solution() -> dict[str, Any]:
             ),
         ],
         "preparation_notes": (
-            "First adjust the stock to pH 1.0 with diluted H2SO4, then "
-            "dissolve the salts."
+            "First adjust the stock to pH 1.0 with diluted H2SO4, then " "dissolve the salts."
         ),
     }
 
@@ -321,8 +320,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
         "concentration": {"value": "variable", "unit": "VARIABLE"},
         "source": SOURCE,
         "notes": (
-            f"{SOURCE} uses 5% Na2CO3 solution to adjust the cooled medium "
-            "to pH 7.2-7.5."
+            f"{SOURCE} uses 5% Na2CO3 solution to adjust the cooled medium " "to pH 7.2-7.5."
         ),
         "composition": [
             _component(
@@ -429,9 +427,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

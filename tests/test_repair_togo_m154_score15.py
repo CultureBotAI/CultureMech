@@ -81,10 +81,13 @@ def test_repair_corrects_liquid_units_and_ph(repair_module) -> None:
     assert repaired["composition_type"] == "UNDEFINED"
     assert repaired["physical_state"] == "LIQUID"
     assert repaired["ph_value"] == 7.6
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
 
     water = _by_name(repaired["ingredients"])["Distilled water"]
     serum = _by_name(repaired["ingredients"])["Sterile horse serum"]
@@ -121,9 +124,7 @@ def test_repair_keeps_pplo_serum_and_yeast_extract_solution_opaque(
     assert "term" not in ingredients["PPLO broth (BD-Difco)"]
     assert "term" not in ingredients["Sterile horse serum"]
     assert (
-        solutions["25% Solution of fresh baker's yeast extract (Gibco 360-8180)"][
-            "composition"
-        ]
+        solutions["25% Solution of fresh baker's yeast extract (Gibco 360-8180)"]["composition"]
         == []
     )
 
@@ -141,9 +142,7 @@ def test_repair_keeps_penicillin_as_variable_activity_amount(
 def test_repair_represents_phenol_red_stock_solution(repair_module) -> None:
     repaired = repair_module.repair_record(_doc(repair_module))
 
-    assert repair_module._solution_signatures(repaired) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
-    )
+    assert repair_module._solution_signatures(repaired) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     phenol_solution = repaired["solutions"][0]
     assert phenol_solution["concentration"] == {
         "value": "5.0",
@@ -191,9 +190,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

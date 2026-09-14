@@ -73,10 +73,13 @@ def test_repair_corrects_seawater_unit_and_adds_ph_range(
     assert repaired["physical_state"] == "SOLID_AGAR"
     assert repaired["ph_range"] == {"min": 7.0, "max": 7.5}
     assert "ph_value" not in repaired
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Seawater (2% salinity)"]["concentration"] == {
         "value": "1.0",
         "unit": "L",
@@ -121,9 +124,7 @@ def test_repair_adds_references_flags_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     assert twice["data_quality_flags"] == [
         "has_ontology_mappings",
         "ingredients_curated",

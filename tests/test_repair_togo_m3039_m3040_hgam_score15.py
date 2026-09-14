@@ -141,9 +141,7 @@ def test_m3040_restores_anaerobic_liquid_hgam_variant(
     assert repaired["preparation_steps"][2]["action"] == "ALIQUOT"
     assert repaired["parent_media"] == repair_module.M3040_PARENT
     assert repaired["variant_relationship"] == "PHYSICAL_STATE_VARIANT"
-    assert repaired["variant_modifications"] == [
-        repair_module.M3040_VARIANT_MODIFICATION
-    ]
+    assert repaired["variant_modifications"] == [repair_module.M3040_VARIANT_MODIFICATION]
     assert scorer_module.score_record(repaired) == (0, [])
 
 
@@ -161,16 +159,11 @@ def test_hgam_repair_adds_flags_references_and_events_once(repair_module) -> Non
         "has_unmapped_ingredients",
         "ingredients_curated",
     ]
-    assert once["references"] == [
-        {"reference": reference} for reference in target.references
-    ]
+    assert once["references"] == [{"reference": reference} for reference in target.references]
     matching_events = [
         event
         for event in once["curation_history"]
-        if (
-            event.get("curator") == repair_module.CURATOR
-            and event.get("action") == target.action
-        )
+        if (event.get("curator") == repair_module.CURATOR and event.get("action") == target.action)
     ]
     assert len(matching_events) == 1
 

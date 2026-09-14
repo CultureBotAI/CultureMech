@@ -118,8 +118,7 @@ def _component(preferred_term: str, value: str, unit: str) -> dict[str, Any]:
         )
     elif preferred_term == "FeSO4 x 7 H2O":
         row["notes"] = (
-            f"{SOURCE} lists 0.10 g/L FeSO4 x 7 H20; normalized here as "
-            "FeSO4 x 7 H2O."
+            f"{SOURCE} lists 0.10 g/L FeSO4 x 7 H20; normalized here as " "FeSO4 x 7 H2O."
         )
     elif preferred_term == "KOH":
         row["notes"] = (

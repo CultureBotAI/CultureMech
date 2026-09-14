@@ -49,8 +49,7 @@ def _doc(repair_module, path: Path) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "LIQUID",
         "ingredients": [
-            _component(name, value, unit)
-            for name, value, unit in target.imported_signature
+            _component(name, value, unit) for name, value, unit in target.imported_signature
         ],
         "media_term": {
             "preferred_term": f"TOGO Medium {target.media_term_id}",
@@ -88,9 +87,9 @@ def test_repairs_fix_units_and_clear_review_score(
     target = _target(repair_module, path)
     repaired = _repair(repair_module, path)
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == target.final_signature
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients") == target.final_signature
+    )
     assert repaired["ph_range"] == {
         "min": target.ph_range[0],
         "max": target.ph_range[1],
@@ -157,9 +156,7 @@ def test_m2242_and_m2804_are_linked_as_variants(repair_module) -> None:
 
     assert m2804["parent_media"] == repair_module.M2242_PARENT
     assert m2804["variant_relationship"] == "SUPPLEMENTED_VARIANT"
-    assert m2804["variant_modifications"] == [
-        "Add 0.05% w/v cysteine hydrochloride."
-    ]
+    assert m2804["variant_modifications"] == ["Add 0.05% w/v cysteine hydrochloride."]
     assert "variant_children" not in m2804
 
 

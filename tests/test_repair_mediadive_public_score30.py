@@ -75,17 +75,13 @@ def _solution_by_name(doc: dict, name: str) -> dict:
 
 def _component_by_name(solution: dict, name: str) -> dict:
     return next(
-        component
-        for component in solution["composition"]
-        if component["preferred_term"] == name
+        component for component in solution["composition"] if component["preferred_term"] == name
     )
 
 
 def _ingredient_by_name(doc: dict, name: str) -> dict:
     return next(
-        ingredient
-        for ingredient in doc["ingredients"]
-        if ingredient["preferred_term"] == name
+        ingredient for ingredient in doc["ingredients"] if ingredient["preferred_term"] == name
     )
 
 
@@ -316,7 +312,9 @@ def test_plan_repairs_adds_p9_current_public_recipe(tmp_path: Path):
     plans = repair.plan_repairs(root)
     p9 = plans[root / repair.P9_PDB_SNG]
 
-    assert p9["notes"].startswith("MediaDive public Medium P9 currently downloads as Modified Medio Azunol")
+    assert p9["notes"].startswith(
+        "MediaDive public Medium P9 currently downloads as Modified Medio Azunol"
+    )
     assert p9["physical_state"] == "SOLID_AGAR"
     assert p9["ph_range"] == {"min": 6.8, "max": 8.0}
     assert _ingredient_by_name(p9, "Fe(III) citrate")["concentration"] == {
@@ -332,7 +330,9 @@ def test_plan_repairs_adds_p9_current_public_recipe(tmp_path: Path):
         "Trace element solution SL-10",
         "Trace element solution SL-6",
     }
-    assert _component_by_name(_solution_by_name(p9, "Trace element solution SL-10"), "HCl")["concentration"] == {
+    assert _component_by_name(_solution_by_name(p9, "Trace element solution SL-10"), "HCl")[
+        "concentration"
+    ] == {
         "value": "2.5",
         "unit": "G_PER_L",
     }
@@ -389,10 +389,7 @@ def test_plan_repairs_adds_review_metadata_once(tmp_path: Path):
     matching_events = [
         event
         for event in p1["curation_history"]
-        if (
-            event.get("curator") == repair.CURATOR
-            and event.get("action") == repair.ACTION
-        )
+        if (event.get("curator") == repair.CURATOR and event.get("action") == repair.ACTION)
     ]
     assert len(matching_events) == 1
     assert matching_events[0]["source"] == f"{repair.P1_DOI}; {repair.P1_PUBLIC}"

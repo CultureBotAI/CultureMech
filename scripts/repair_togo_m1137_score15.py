@@ -92,13 +92,9 @@ WOLFE_SIGNATURE: tuple[Component, ...] = (
     *WOLFE_ADDITION_SIGNATURE,
 )
 
-BICARBONATE_SIGNATURE: tuple[Component, ...] = (
-    ("NaHCO3", "8.0", "PERCENT_W_V"),
-)
+BICARBONATE_SIGNATURE: tuple[Component, ...] = (("NaHCO3", "8.0", "PERCENT_W_V"),)
 
-FECL2_SIGNATURE: tuple[Component, ...] = (
-    ("FeCl2", "0.2", "MOLAR"),
-)
+FECL2_SIGNATURE: tuple[Component, ...] = (("FeCl2", "0.2", "MOLAR"),)
 
 VITAMIN_SIGNATURE: tuple[Component, ...] = (
     ("Biotin", "2.0", "MG_PER_L"),
@@ -265,8 +261,7 @@ def _stock(
         "source": SOURCE,
         "notes": notes,
         "composition": [
-            _listed_component(name, value, unit, source=source)
-            for name, value, unit in composition
+            _listed_component(name, value, unit, source=source) for name, value, unit in composition
         ],
     }
     if preparation_notes:
@@ -326,8 +321,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
                 "PERCENT_W_V",
                 source=SOURCE,
                 notes=(
-                    "8% NaHCO3 solution is represented from the stock label as "
-                    "8.0% w/v NaHCO3."
+                    "8% NaHCO3 solution is represented from the stock label as " "8.0% w/v NaHCO3."
                 ),
             )
         ],
@@ -348,8 +342,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
                 "MOLAR",
                 source=SOURCE,
                 notes=(
-                    "0.2 M FeCl2 solution is represented from the stock label as "
-                    "0.2 M FeCl2."
+                    "0.2 M FeCl2 solution is represented from the stock label as " "0.2 M FeCl2."
                 ),
             )
         ],
@@ -361,8 +354,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
         VITAMIN_SIGNATURE,
         source=VITAMINS_SOURCE,
         notes=(
-            "JCM Medium 1068 adds 10.0 ml/L filter-sterilized Trace vitamins "
-            "after autoclaving."
+            "JCM Medium 1068 adds 10.0 ml/L filter-sterilized Trace vitamins " "after autoclaving."
         ),
         preparation_notes="Filter-sterilize before aseptic addition.",
     ),
@@ -442,9 +434,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

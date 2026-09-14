@@ -240,10 +240,7 @@ def _component(
 def _trace_component(preferred_term: str, value: str, unit: str) -> dict[str, Any]:
     notes = None
     if preferred_term == "NaOH":
-        notes = (
-            f"{SOURCE_M296} uses NaOH to adjust the trace element solution "
-            "to pH 6.5."
-        )
+        notes = f"{SOURCE_M296} uses NaOH to adjust the trace element solution " "to pH 6.5."
     elif preferred_term == "Distilled water":
         notes = (
             f"{SOURCE_M296} dissolves nitrilotriacetic acid in 800 ml "
@@ -691,7 +688,9 @@ def repair_record(doc: dict[str, Any]) -> dict[str, Any]:
     _put_after(repaired, "notes", notes, "media_term")
     _put_after(repaired, "parent_media", copy.deepcopy(PARENT_MEDIA), "notes")
     _put_after(repaired, "variant_relationship", "SUBSTITUTED_COMPONENT_VARIANT", "parent_media")
-    _put_after(repaired, "variant_modifications", list(VARIANT_MODIFICATIONS), "variant_relationship")
+    _put_after(
+        repaired, "variant_modifications", list(VARIANT_MODIFICATIONS), "variant_relationship"
+    )
     _ensure_flags(repaired)
     _ensure_references(repaired)
     _append_event(repaired, notes)

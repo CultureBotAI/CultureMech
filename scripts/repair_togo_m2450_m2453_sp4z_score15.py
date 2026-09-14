@@ -317,8 +317,7 @@ def _ingredients(target: Target) -> tuple[dict[str, Any], ...]:
                 "G_PER_L",
                 source=target.source,
                 notes=(
-                    "DSMZ Medium 1076b lists 2.00 g Tryptone per 200 ml; "
-                    "normalized to 10.0 g/L."
+                    "DSMZ Medium 1076b lists 2.00 g Tryptone per 200 ml; " "normalized to 10.0 g/L."
                 ),
             ),
             _component(
@@ -473,9 +472,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -499,13 +496,10 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.expected_id:
         raise ValueError(
-            f"{target.path}: expected id {target.expected_id}, "
-            f"found {doc.get('id')!r}"
+            f"{target.path}: expected id {target.expected_id}, " f"found {doc.get('id')!r}"
         )
     if _source_term_id(doc) != target.expected_media_term:
-        raise ValueError(
-            f"{target.path}: expected media term {target.expected_media_term}"
-        )
+        raise ValueError(f"{target.path}: expected media term {target.expected_media_term}")
 
     signatures = (
         _signature(doc.get("ingredients"), "ingredients"),
@@ -524,9 +518,7 @@ def _ensure_target(doc: dict[str, Any], target: Target) -> None:
 
 def _ensure_parent(doc: dict[str, Any]) -> None:
     if doc.get("id") != EXPECTED_PARENT_ID:
-        raise ValueError(
-            f"{PARENT}: expected id {EXPECTED_PARENT_ID}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{PARENT}: expected id {EXPECTED_PARENT_ID}, found {doc.get('id')!r}")
     if _source_term_id(doc) != EXPECTED_PARENT_MEDIA_TERM:
         raise ValueError(f"{PARENT}: expected media term {EXPECTED_PARENT_MEDIA_TERM}")
 
@@ -634,9 +626,7 @@ def repair_target(doc: dict[str, Any], target: Target) -> dict[str, Any]:
             {
                 "step_number": 3,
                 "action": "HEAT",
-                "description": (
-                    "Hold agar medium at 55 degrees C before adding supplements."
-                ),
+                "description": ("Hold agar medium at 55 degrees C before adding supplements."),
             }
         )
     repaired["preparation_steps"].append(

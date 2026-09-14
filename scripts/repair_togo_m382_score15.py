@@ -195,8 +195,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 1,
         "action": "MIX",
         "description": (
-            "Mix peptone, yeast extract, mineral salt solution, agar, and "
-            "distilled water."
+            "Mix peptone, yeast extract, mineral salt solution, agar, and " "distilled water."
         ),
     },
     {
@@ -218,8 +217,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 5,
         "action": "MIX",
         "description": (
-            "Aseptically add the filter-sterilized glucose solution and "
-            "vitamin solution."
+            "Aseptically add the filter-sterilized glucose solution and " "vitamin solution."
         ),
     },
     {
@@ -261,8 +259,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     if term:
         grounding = GROUNDINGS[preferred_term]
@@ -281,8 +278,7 @@ def _ingredients(source: str) -> list[dict[str, Any]]:
                 unit,
                 source=source,
                 notes=(
-                    "JCM Medium 387 adjusts the medium to pH 7.5 with sterile "
-                    "KOH, if necessary."
+                    "JCM Medium 387 adjusts the medium to pH 7.5 with sterile " "KOH, if necessary."
                     if preferred_term == "KOH"
                     else None
                 ),
@@ -312,8 +308,7 @@ def _solution(
                 unit,
                 source=stock_source,
                 notes=(
-                    "JCM Medium 304 adds 50.0 ml/L Metals 44 from JCM Medium "
-                    "149."
+                    "JCM Medium 304 adds 50.0 ml/L Metals 44 from JCM Medium " "149."
                     if name == "Metals 44"
                     else None
                 ),
@@ -364,9 +359,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -389,9 +382,7 @@ def _solution_signatures(rows: Any, label: str) -> tuple[SolutionSignature, ...]
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signatures.append(
             (
                 str(row.get("preferred_term") or ""),

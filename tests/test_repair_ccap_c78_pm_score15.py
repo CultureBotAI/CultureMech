@@ -56,9 +56,7 @@ def _doc(repair_module) -> dict:
             _ingredient(name, value, unit)
             for name, value, unit in repair_module.IMPORTED_INGREDIENT_SIGNATURE
         ],
-        "preparation_steps": [
-            {"step_number": 1, "action": "MIX", "description": "stale"}
-        ],
+        "preparation_steps": [{"step_number": 1, "action": "MIX", "description": "stale"}],
         "applications": ["Microbial cultivation"],
         "curation_history": [],
         "kg_microbe_match": "mediadive.medium:C78",
@@ -76,10 +74,13 @@ def test_repair_adds_source_water_and_leaves_review_ranking(
 ) -> None:
     repaired = repair_module.repair_record(_doc(repair_module))
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert "ph_value" not in repaired
     assert "ph_range" not in repaired
     assert "solutions" not in repaired
@@ -119,8 +120,7 @@ def test_repair_preserves_accessible_preparation_step(repair_module) -> None:
             "step_number": 1,
             "action": "AUTOCLAVE",
             "description": (
-                "Make up to 1 litre with deionised water. Autoclave at 15 psi "
-                "for 15 minutes."
+                "Make up to 1 litre with deionised water. Autoclave at 15 psi " "for 15 minutes."
             ),
         }
     ]

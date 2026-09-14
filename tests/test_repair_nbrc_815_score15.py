@@ -75,14 +75,12 @@ def test_repair_document_preserves_expanded_composition(repair_module) -> None:
     repaired = repair_module.repair_document(_minimal_doc(repair_module))
     ingredients = {row["preferred_term"]: row for row in repaired["ingredients"]}
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.CURATED_INGREDIENT_SIGNATURE
-    assert ingredients["Pancreatic digest of casein"]["term"]["id"] == "MICRO:0000182"
     assert (
-        ingredients["Peptic digest of soybean meal"]["term"]["id"]
-        == "FOODON:03315720"
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.CURATED_INGREDIENT_SIGNATURE
     )
+    assert ingredients["Pancreatic digest of casein"]["term"]["id"] == "MICRO:0000182"
+    assert ingredients["Peptic digest of soybean meal"]["term"]["id"] == "FOODON:03315720"
     assert ingredients["Glucose"]["mediaingredientmech_chebi_term"] == {
         "id": "CHEBI:17234",
         "label": "glucose",

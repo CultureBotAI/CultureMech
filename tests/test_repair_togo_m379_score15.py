@@ -108,10 +108,13 @@ def test_repair_corrects_formula_and_water_units(repair_module) -> None:
     assert repaired["composition_type"] == "UNDEFINED"
     assert repaired["physical_state"] == "SOLID_AGAR"
     assert repaired["ph_value"] == 7.0
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Tap water"]["concentration"] == {
         "value": "850.0",
         "unit": "ML_PER_L",
@@ -123,10 +126,13 @@ def test_repair_moves_soil_extract_to_nested_solution(repair_module) -> None:
     soil_extract = repaired["solutions"][0]
     composition = _by_name(soil_extract["composition"])
 
-    assert repair_module._solution_signatures(
-        repaired["solutions"],
-        "solutions",
-    ) == repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._solution_signatures(
+            repaired["solutions"],
+            "solutions",
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURES
+    )
     assert soil_extract["concentration"] == {"value": "150.0", "unit": "ML_PER_L"}
     assert composition["Tap water"]["term"] == {
         "id": "CHEBI:15377",
@@ -170,9 +176,7 @@ def test_repair_adds_preparation_sterilization_references_and_flags(
 
     assert twice["preparation_steps"] == list(repair_module.PREPARATION_STEPS)
     assert twice["sterilization"] == repair_module.STERILIZATION
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.TARGET_REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.TARGET_REFERENCES]
     assert twice["data_quality_flags"] == [
         "has_ontology_mappings",
         "has_unmapped_ingredients",
@@ -200,18 +204,22 @@ def test_repair_parent_updates_formula_and_links_child_once(
     once = repair_module.repair_parent(_parent_doc(repair_module))
     twice = repair_module.repair_parent(once)
 
-    assert repair_module._signature(
-        twice["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._solution_signatures(
-        twice["solutions"],
-        "solutions",
-    ) == repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._signature(
+            twice["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
+    assert (
+        repair_module._solution_signatures(
+            twice["solutions"],
+            "solutions",
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURES
+    )
     assert twice["variant_children"] == [repair_module.TOGO_CHILD]
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.PARENT_REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.PARENT_REFERENCES]
     assert scorer_module.score_record(twice) == (0, [])
 
     matching_events = [

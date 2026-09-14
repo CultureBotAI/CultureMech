@@ -229,19 +229,13 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
     _solution(
         "5% L-Cysteine HCl H2O solution",
         "4.0",
-        notes=(
-            "JCM Medium 1445 adds 4.0 ml/L autoclaved "
-            "5% L-Cysteine HCl H2O solution."
-        ),
+        notes=("JCM Medium 1445 adds 4.0 ml/L autoclaved " "5% L-Cysteine HCl H2O solution."),
         composition=[
             _component(
                 "L-Cysteine HCl H2O",
                 "50.0",
                 "G_PER_L",
-                notes=(
-                    "Solute of the 5% L-Cysteine HCl H2O stock added by "
-                    "JCM Medium 1445."
-                ),
+                notes=("Solute of the 5% L-Cysteine HCl H2O stock added by " "JCM Medium 1445."),
                 term=("CHEBI:91248", "L-cysteine hydrochloride hydrate"),
             )
         ],

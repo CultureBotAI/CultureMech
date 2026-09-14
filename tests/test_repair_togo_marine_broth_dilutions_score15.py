@@ -147,9 +147,7 @@ def test_repair_adds_references_and_history(repair_module) -> None:
     target = repair_module.TARGET_BY_PATH["bacterial/1_10_marine_broth_agar.yaml"]
     repaired = repair_module.repair_record(_doc(target), target)
 
-    assert repaired["references"] == [
-        {"reference": url} for url in target.reference_urls
-    ]
+    assert repaired["references"] == [{"reference": url} for url in target.reference_urls]
     assert repaired["curation_history"] == [
         {
             "timestamp": repair_module.TIMESTAMP,
@@ -174,12 +172,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(tmp_path)
 
     assert {
-        path.relative_to(tmp_path): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(tmp_path): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(tmp_path): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(tmp_path): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:
@@ -211,9 +205,7 @@ def test_repair_rejects_component_drift(repair_module) -> None:
 
 def test_target_records_match_reviewed_inputs(repair_module) -> None:
     for target in repair_module.TARGETS:
-        doc = yaml.safe_load(
-            (repair_module.NORMALIZED / target.path).read_text(encoding="utf-8")
-        )
+        doc = yaml.safe_load((repair_module.NORMALIZED / target.path).read_text(encoding="utf-8"))
 
         assert doc["id"] == target.record_id
         assert (

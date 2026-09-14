@@ -58,8 +58,7 @@ def _medium_doc(target) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "LIQUID",
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_ingredients
+            _ingredient(name, value, unit) for name, value, unit in target.imported_ingredients
         ],
         "solutions": [_solution(row) for row in target.imported_solutions],
         "media_term": {
@@ -80,15 +79,13 @@ def _solution_doc(target) -> dict:
         "preferred_term": "solution",
         "term": {"id": target.solution_term, "label": "solution"},
         "composition": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_composition
+            _ingredient(name, value, unit) for name, value, unit in target.imported_composition
         ],
         "solutions": [_solution(row) for row in target.imported_solutions],
         "preparation_notes": "Original MediaDive step",
         "curation_history": [],
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in PLACEHOLDER_INGREDIENTS
+            _ingredient(name, value, unit) for name, value, unit in PLACEHOLDER_INGREDIENTS
         ],
         "data_quality_flags": ["incomplete_composition"],
         "category": "bacterial",
@@ -101,9 +98,7 @@ def _repair_medium(repair_module, path: Path) -> dict:
 
 
 def _repair_solution(repair_module, path: Path) -> dict:
-    target = next(
-        target for target in repair_module.SOLUTION_TARGETS if target.path == path
-    )
+    target = next(target for target in repair_module.SOLUTION_TARGETS if target.path == path)
     return repair_module.repair_solution_record(_solution_doc(target), target)
 
 
@@ -114,14 +109,20 @@ def _by_name(rows: list[dict]) -> dict[str, dict]:
 def test_j276_becomes_castenholz_parent(repair_module, scorer_module) -> None:
     repaired = _repair_medium(repair_module, repair_module.J276_PATH)
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.CASTENHOLZ_MEDIUM_INGREDIENTS
-    assert repair_module._solution_signature(
-        repaired["solutions"],
-        "solutions",
-    ) == repair_module.FINAL_CASTENHOLZ_SOLUTION
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.CASTENHOLZ_MEDIUM_INGREDIENTS
+    )
+    assert (
+        repair_module._solution_signature(
+            repaired["solutions"],
+            "solutions",
+        )
+        == repair_module.FINAL_CASTENHOLZ_SOLUTION
+    )
     assert repaired["ph_value"] == 8.2
     assert repaired["variant_children"] == [
         repair_module.J894_CHILD,
@@ -188,9 +189,7 @@ def test_castenholz_solution_expands_fecl3_and_nitsch_stocks(repair_module) -> N
     castenholz_components = _by_name(castenholz["composition"])
     castenholz_solutions = _by_name(castenholz["solutions"])
     nitsch = _by_name(castenholz_solutions["Nitsch's trace elements"]["composition"])
-    fecl3 = _by_name(
-        castenholz_solutions["FeCl3 x 6 H2O solution (0.03%)"]["composition"]
-    )
+    fecl3 = _by_name(castenholz_solutions["FeCl3 x 6 H2O solution (0.03%)"]["composition"])
 
     assert castenholz["term"] == {
         "id": "mediadive.solution:3963",
@@ -225,18 +224,27 @@ def test_solution_helpers_correct_false_percent_rows(repair_module) -> None:
 
     assert "ingredients" not in castenholz
     assert "ingredients" not in nitsch
-    assert repair_module._signature(
-        castenholz["composition"],
-        "composition",
-    ) == repair_module.CASTENHOLZ_COMPOSITION
-    assert repair_module._solution_signature(
-        castenholz["solutions"],
-        "solutions",
-    ) == repair_module.CASTENHOLZ_SOLUTIONS
-    assert repair_module._signature(
-        nitsch["composition"],
-        "composition",
-    ) == repair_module.NITSCH_COMPOSITION
+    assert (
+        repair_module._signature(
+            castenholz["composition"],
+            "composition",
+        )
+        == repair_module.CASTENHOLZ_COMPOSITION
+    )
+    assert (
+        repair_module._solution_signature(
+            castenholz["solutions"],
+            "solutions",
+        )
+        == repair_module.CASTENHOLZ_SOLUTIONS
+    )
+    assert (
+        repair_module._signature(
+            nitsch["composition"],
+            "composition",
+        )
+        == repair_module.NITSCH_COMPOSITION
+    )
     assert _by_name(castenholz["composition"])["Distilled water"]["concentration"] == {
         "value": "1000.0",
         "unit": "ML_PER_L",
@@ -255,9 +263,7 @@ def test_repair_adds_references_flags_and_event_once(repair_module) -> None:
     twice = repair_module.repair_medium_record(once, target)
 
     assert twice == once
-    assert once["references"] == [
-        {"reference": reference} for reference in target.references
-    ]
+    assert once["references"] == [{"reference": reference} for reference in target.references]
     assert once["data_quality_flags"] == [
         "ingredients_curated",
         "has_ontology_mappings",
@@ -265,8 +271,7 @@ def test_repair_adds_references_flags_and_event_once(repair_module) -> None:
     matching_events = [
         event
         for event in twice["curation_history"]
-        if event.get("curator") == repair_module.CURATOR
-        and event.get("action") == target.action
+        if event.get("curator") == repair_module.CURATOR and event.get("action") == target.action
     ]
     assert len(matching_events) == 1
     assert "NaOH" in matching_events[0]["notes"]

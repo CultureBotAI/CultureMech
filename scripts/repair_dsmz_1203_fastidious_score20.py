@@ -156,8 +156,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 4,
         "action": "MIX",
         "description": (
-            "Aseptically add 5-10% sterile defibrinated horse blood, mix well, "
-            "and pour plates."
+            "Aseptically add 5-10% sterile defibrinated horse blood, mix well, " "and pour plates."
         ),
     },
 )
@@ -265,9 +264,7 @@ def _ingredients_by_name(doc: dict[str, Any]) -> dict[str, dict[str, Any]]:
 
 def _require_target(doc: dict[str, Any], path: str) -> None:
     if doc.get("id") != EXPECTED_IDS[path]:
-        raise ValueError(
-            f"{path}: found id {doc.get('id')!r}, expected {EXPECTED_IDS[path]!r}"
-        )
+        raise ValueError(f"{path}: found id {doc.get('id')!r}, expected {EXPECTED_IDS[path]!r}")
 
     source_term = _source_term_id(doc)
     if source_term != EXPECTED_SOURCE_TERMS[path]:
@@ -277,9 +274,7 @@ def _require_target(doc: dict[str, Any], path: str) -> None:
         )
 
     ingredients = _ingredients_by_name(doc)
-    if not FASTIDIOUS_NAMES.intersection(ingredients) or not BLOOD_NAMES.intersection(
-        ingredients
-    ):
+    if not FASTIDIOUS_NAMES.intersection(ingredients) or not BLOOD_NAMES.intersection(ingredients):
         raise ValueError(f"{path}: missing Fastidious Anaerobe Agar core ingredient")
     if set(ingredients) - OFFICIAL_NAMES:
         raise ValueError(f"{path}: ingredient list drifted")

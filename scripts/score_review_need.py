@@ -163,8 +163,7 @@ def _curated_strain_pointer_variant(doc: dict[str, Any]) -> bool:
         and "ingredients_curated" in data_quality_flags
         and isinstance(parent_media, dict)
         and bool(parent_media.get("id") or parent_media.get("path"))
-        and doc.get("variant_relationship")
-        in CURATED_STRAIN_POINTER_VARIANT_RELATIONSHIPS
+        and doc.get("variant_relationship") in CURATED_STRAIN_POINTER_VARIANT_RELATIONSHIPS
     )
 
 

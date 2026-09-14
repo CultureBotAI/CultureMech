@@ -105,9 +105,7 @@ GLUCOSE_IMPORTED_INGREDIENTS: tuple[Component, ...] = (
     ("Hydrogen gas", "variable", "VARIABLE"),
 )
 
-IMPORTED_SOLUTIONS: tuple[Component, ...] = (
-    ("0.025% Resazurin solution", "4", "G_PER_L"),
-)
+IMPORTED_SOLUTIONS: tuple[Component, ...] = (("0.025% Resazurin solution", "4", "G_PER_L"),)
 
 BASE_FINAL_INGREDIENTS: tuple[Component, ...] = (
     ("Ground beef (free of fat)", "500.0", "G_PER_L"),
@@ -161,28 +159,18 @@ GROUNDINGS: dict[str, tuple[str, str, bool]] = {
 }
 
 COMPONENT_NOTES: dict[str, str] = {
-    "0.025% Resazurin solution": (
-        "ATCC Medium {m} adds 4.0 ml/L 0.025% resazurin solution."
-    ),
+    "0.025% Resazurin solution": ("ATCC Medium {m} adds 4.0 ml/L 0.025% resazurin solution."),
     "Distilled water": (
         "ATCC Medium {m} starts with 1.0 L distilled water and restores the "
         "filtrate to a final 1.0 L volume."
     ),
     "Glucose": "ATCC Medium {m} adds 10.0 g/L glucose.",
-    "Ground beef (free of fat)": (
-        "ATCC Medium {m} lists 500.0 g/L fat-free ground beef."
-    ),
-    "Hydrogen gas": (
-        "ATCC Medium {m} uses 97% nitrogen / 3% hydrogen while dispensing."
-    ),
+    "Ground beef (free of fat)": ("ATCC Medium {m} lists 500.0 g/L fat-free ground beef."),
+    "Hydrogen gas": ("ATCC Medium {m} uses 97% nitrogen / 3% hydrogen while dispensing."),
     "K2HPO4": "ATCC Medium {m} lists 5.0 g/L K2HPO4.",
     "L-cysteine . HCl": "ATCC Medium {m} adds 0.5 g/L L-cysteine HCl.",
-    "N NaOH": (
-        "ATCC Medium {m} lists 25.0 ml/L N NaOH for the boiled meat extraction."
-    ),
-    "Nitrogen gas": (
-        "ATCC Medium {m} uses 97% nitrogen / 3% hydrogen while dispensing."
-    ),
+    "N NaOH": ("ATCC Medium {m} lists 25.0 ml/L N NaOH for the boiled meat extraction."),
+    "Nitrogen gas": ("ATCC Medium {m} uses 97% nitrogen / 3% hydrogen while dispensing."),
     "Peptone": "ATCC Medium {m} lists 30.0 g/L peptone.",
     "Yeast extract": "ATCC Medium {m} lists 5.0 g/L yeast extract.",
 }
@@ -301,9 +289,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -320,9 +306,7 @@ def _ensure_target(doc: dict[str, Any], target: Target) -> None:
             f"{target.path}: expected id {target.expected_id}, found {doc.get('id')!r}"
         )
     if _source_term_id(doc) != target.expected_media_term:
-        raise ValueError(
-            f"{target.path}: expected media term {target.expected_media_term}"
-        )
+        raise ValueError(f"{target.path}: expected media term {target.expected_media_term}")
 
     signatures = (
         _signature(doc.get("ingredients"), "ingredients"),
@@ -414,17 +398,11 @@ def _append_curation_event(
 
 def _ingredients(target: Target) -> list[dict[str, Any]]:
     rows = GLUCOSE_FINAL_INGREDIENTS if target.has_glucose else BASE_FINAL_INGREDIENTS
-    return [
-        _component(name, value, unit, target)
-        for name, value, unit in rows
-    ]
+    return [_component(name, value, unit, target) for name, value, unit in rows]
 
 
 def _solutions(target: Target) -> list[dict[str, Any]]:
-    return [
-        _component(name, value, unit, target)
-        for name, value, unit in FINAL_SOLUTIONS
-    ]
+    return [_component(name, value, unit, target) for name, value, unit in FINAL_SOLUTIONS]
 
 
 def _variant_child() -> dict[str, str]:

@@ -70,9 +70,10 @@ def test_repair_document_adds_grounded_tris_buffer_and_source_formula(
     repaired = repair_module.repair_document(_minimal_doc(repair_module))
     ingredients = {row["preferred_term"]: row for row in repaired["ingredients"]}
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Tryptone"]["term"]["id"] == "MICRO:0000182"
     assert ingredients["Yeast extract"]["term"]["id"] == "FOODON:03315426"
     assert ingredients["Agar (if needed)"]["term"]["id"] == "CHEBI:2509"

@@ -83,10 +83,13 @@ def test_repair_preserves_main_m1070_components(repair_module) -> None:
     assert repaired["composition_type"] == "SEMI_DEFINED"
     assert repaired["physical_state"] == "LIQUID"
     assert repaired["ph_value"] == 2.5
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Glucose"]["term"] == {
         "id": "CHEBI:17234",
         "label": "glucose",
@@ -104,18 +107,27 @@ def test_repair_expands_ubs_trace_and_nisew_solutions(repair_module) -> None:
         "Ni-Se-W solution",
         "1 M FeSO4 solution (pH 2.0)",
     }
-    assert repair_module._signature(
-        solutions["UBS solution"]["composition"],
-        "UBS solution",
-    ) == repair_module.UBS_SIGNATURE
-    assert repair_module._signature(
-        solutions["Trace minerals"]["composition"],
-        "Trace minerals",
-    ) == repair_module.TRACE_MINERALS_SIGNATURE
-    assert repair_module._signature(
-        solutions["Ni-Se-W solution"]["composition"],
-        "Ni-Se-W solution",
-    ) == repair_module.NISEW_SIGNATURE
+    assert (
+        repair_module._signature(
+            solutions["UBS solution"]["composition"],
+            "UBS solution",
+        )
+        == repair_module.UBS_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            solutions["Trace minerals"]["composition"],
+            "Trace minerals",
+        )
+        == repair_module.TRACE_MINERALS_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            solutions["Ni-Se-W solution"]["composition"],
+            "Ni-Se-W solution",
+        )
+        == repair_module.NISEW_SIGNATURE
+    )
 
 
 def test_repair_adds_expected_stock_groundings(repair_module) -> None:
@@ -150,10 +162,13 @@ def test_repair_models_1_m_feso4_stock(repair_module) -> None:
     stock = _by_name(repaired["solutions"])["1 M FeSO4 solution (pH 2.0)"]
 
     assert stock["concentration"] == {"value": "5.0", "unit": "ML_PER_L"}
-    assert repair_module._signature(
-        stock["composition"],
-        "1 M FeSO4 solution (pH 2.0)",
-    ) == repair_module.FESO4_STOCK_SIGNATURE
+    assert (
+        repair_module._signature(
+            stock["composition"],
+            "1 M FeSO4 solution (pH 2.0)",
+        )
+        == repair_module.FESO4_STOCK_SIGNATURE
+    )
     assert stock["composition"][0]["term"] == {
         "id": "CHEBI:75832",
         "label": "iron(2+) sulfate (anhydrous)",
@@ -184,9 +199,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

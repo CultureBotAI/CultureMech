@@ -425,8 +425,7 @@ def _ensure_reference(doc: dict[str, Any], target: Target) -> None:
         raise ValueError(f"{target.path}: references is not a list")
 
     if not any(
-        isinstance(row, dict) and row.get("reference") == target.source_url
-        for row in references
+        isinstance(row, dict) and row.get("reference") == target.source_url for row in references
     ):
         references.append({"reference": target.source_url})
 
@@ -459,8 +458,7 @@ def _ensure_event(doc: dict[str, Any], target: Target) -> None:
 def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
     if doc.get("id") != target.expected_id:
         raise ValueError(
-            f"{target.path}: found id {doc.get('id')!r}, "
-            f"expected {target.expected_id!r}"
+            f"{target.path}: found id {doc.get('id')!r}, " f"expected {target.expected_id!r}"
         )
 
     source_term = _source_term_id(doc)

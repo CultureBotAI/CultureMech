@@ -39,8 +39,7 @@ def _doc(repair_module) -> dict:
         "id": repair_module.EXPECTED_ID,
         "name": "pplo_broth_without_cv_ph_7_8_with_horse_serum_not_inactivated_and_yeast_extract",
         "original_name": (
-            "PPLO broth without CV (pH 7.8) with horse serum (not inactivated) "
-            "and yeast extract"
+            "PPLO broth without CV (pH 7.8) with horse serum (not inactivated) " "and yeast extract"
         ),
         "category": "bacterial",
         "medium_type": "COMPLEX",
@@ -78,10 +77,13 @@ def test_repair_corrects_ml_units_and_leaves_review_ranking(
     repaired = repair_module.repair_record(_doc(repair_module))
 
     assert repaired["ph_value"] == 7.8
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert "solutions" not in repaired
     assert scorer_module.score_parsed([(str(repair_module.TARGET), repaired)]) == []
 
@@ -126,16 +128,14 @@ def test_repair_adds_aseptic_preparation_steps(repair_module) -> None:
             "step_number": 1,
             "action": "MIX",
             "description": (
-                "Prepare sterile basal medium containing PPLO Broth w/o CV and "
-                "distilled water."
+                "Prepare sterile basal medium containing PPLO Broth w/o CV and " "distilled water."
             ),
         },
         {
             "step_number": 2,
             "action": "MIX",
             "description": (
-                "Aseptically add horse serum and Fresh Baker’s Yeast Extract "
-                "(GIBCO 18180)."
+                "Aseptically add horse serum and Fresh Baker’s Yeast Extract " "(GIBCO 18180)."
             ),
         },
     ]

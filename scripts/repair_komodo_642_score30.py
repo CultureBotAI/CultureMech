@@ -23,8 +23,7 @@ EXPECTED_MEDIA_TERM = "komodo.medium:642"
 YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 KOMODO_642_URL = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=642"
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=642"
 )
 DSMZ_642_URL = (
     "https://web.archive.org/web/20121030082653id_/"
@@ -61,10 +60,7 @@ def _term(identifier: str, label: str) -> dict[str, str]:
 
 
 def _komodo_base_note(name: str, amount: str) -> str:
-    return (
-        f"{SOURCE_KOMODO_642} expands the RCM base and lists {amount} g/L "
-        f"{name}."
-    )
+    return f"{SOURCE_KOMODO_642} expands the RCM base and lists {amount} g/L " f"{name}."
 
 
 def _dsmz_note(name: str, amount: str) -> str:
@@ -286,8 +282,7 @@ def _ingredient(component: Component) -> dict[str, Any]:
 def repair_record(doc: dict[str, Any]) -> dict[str, Any]:
     if doc.get("id") != EXPECTED_ID:
         raise ValueError(
-            f"{TARGET}: expected immutable id {EXPECTED_ID}, "
-            f"found {doc.get('id')!r}"
+            f"{TARGET}: expected immutable id {EXPECTED_ID}, " f"found {doc.get('id')!r}"
         )
     _check_source(doc)
 

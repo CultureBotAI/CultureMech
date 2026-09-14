@@ -39,9 +39,8 @@ IMPORTED_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("Distilled water", "1", "L"),
     ("Agar", "15", "G_PER_L"),
 )
-FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
-    IMPORTED_INGREDIENT_SIGNATURE
-    + (("Biphenyl crystal", "variable", "VARIABLE"),)
+FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = IMPORTED_INGREDIENT_SIGNATURE + (
+    ("Biphenyl crystal", "variable", "VARIABLE"),
 )
 
 GROUNDINGS: dict[str, tuple[str, str]] = {
@@ -114,8 +113,7 @@ INGREDIENTS: tuple[dict[str, Any], ...] = (
         "variable",
         "VARIABLE",
         notes=(
-            "NBRC Medium 1286 supplies biphenyl crystal on a petri-dish lid as "
-            "a vapor phase."
+            "NBRC Medium 1286 supplies biphenyl crystal on a petri-dish lid as " "a vapor phase."
         ),
     ),
 )
@@ -125,8 +123,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 1,
         "action": "DISSOLVE",
         "description": (
-            "Dissolve Bacto tryptone, yeast extract, NaCl, and agar in 1 L "
-            "distilled water."
+            "Dissolve Bacto tryptone, yeast extract, NaCl, and agar in 1 L " "distilled water."
         ),
     },
     {
@@ -137,9 +134,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
     {
         "step_number": 3,
         "action": "MIX",
-        "description": (
-            "Supply biphenyl crystal on a petri-dish lid as a vapor phase."
-        ),
+        "description": ("Supply biphenyl crystal on a petri-dish lid as a vapor phase."),
     },
 )
 
@@ -190,9 +185,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -212,9 +205,7 @@ def _has_history_action(doc: dict[str, Any], action: str) -> bool:
 
 def _ensure_target(doc: dict[str, Any]) -> None:
     if doc.get("id") != TARGET_ID:
-        raise ValueError(
-            f"{TARGET_PATH}: found id {doc.get('id')!r}, expected {TARGET_ID!r}"
-        )
+        raise ValueError(f"{TARGET_PATH}: found id {doc.get('id')!r}, expected {TARGET_ID!r}")
     if not _has_history_action(doc, REQUIRED_ACTION):
         raise ValueError(f"{TARGET_PATH}: missing recovery action {REQUIRED_ACTION!r}")
     if doc.get("name") not in {"1287", TITLE}:

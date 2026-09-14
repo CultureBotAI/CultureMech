@@ -90,9 +90,7 @@ def test_repair_adds_dsmz_766_chitin_stock_reagents_and_scores_clean(
         "id": "CHEBI:32035",
         "label": "potassium hydroxide",
     }
-    assert scorer_module.score_parsed(
-        [(str(repair_module.PATH), repaired)]
-    ) == []
+    assert scorer_module.score_parsed([(str(repair_module.PATH), repaired)]) == []
 
 
 def test_repair_replaces_preparation_steps_and_adds_event_once(

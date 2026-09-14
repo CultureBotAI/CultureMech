@@ -139,8 +139,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
         "concentration": {"value": "100.0", "unit": "ML_PER_L"},
         "source": SOURCE,
         "notes": (
-            "JCM Medium 276 adds 100.0 ml/L Castenholz basal salt solution from "
-            "JCM Medium 273."
+            "JCM Medium 276 adds 100.0 ml/L Castenholz basal salt solution from " "JCM Medium 273."
         ),
         "culturemech_term": {
             "id": "CultureMech:013022",
@@ -172,9 +171,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -208,9 +205,7 @@ def _ensure_target(doc: dict[str, Any]) -> None:
 
 def _ensure_parent(doc: dict[str, Any]) -> None:
     if doc.get("id") != EXPECTED_PARENT_ID:
-        raise ValueError(
-            f"{PARENT}: expected id {EXPECTED_PARENT_ID}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{PARENT}: expected id {EXPECTED_PARENT_ID}, found {doc.get('id')!r}")
     if _source_term_id(doc) != EXPECTED_PARENT_MEDIA_TERM:
         raise ValueError(f"{PARENT}: expected media term {EXPECTED_PARENT_MEDIA_TERM}")
 

@@ -74,10 +74,13 @@ def test_repair_corrects_artificial_seawater_and_o2_rows(
     assert repaired["medium_type"] == "COMPLEX"
     assert repaired["composition_type"] == "SEMI_DEFINED"
     assert repaired["physical_state"] == "LIQUID"
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Artificial seawater"]["concentration"] == {
         "value": "1000.0",
         "unit": "ML_PER_L",
@@ -110,9 +113,7 @@ def test_repair_keeps_artificial_seawater_unmapped(
 
     assert "term" not in artificial_seawater
     assert "mediaingredientmech_chebi_term" not in artificial_seawater
-    assert "retained without a single-compound ontology grounding" in artificial_seawater[
-        "notes"
-    ]
+    assert "retained without a single-compound ontology grounding" in artificial_seawater["notes"]
 
 
 def test_repair_record_drops_out_of_review_ranking(

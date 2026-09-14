@@ -23,12 +23,10 @@ PELOBACTER = "bacterial/pelobacter_medium.yaml"
 CLOSTRIDIUM_NEOPROPIONICUM = "bacterial/clostridium_neopropionicum_medium.yaml"
 
 KOMODO_418_URL = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=418"
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=418"
 )
 KOMODO_522_URL = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=522"
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=522"
 )
 DSMZ_318_URL = "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium318.pdf"
 DSMZ_418_URL = "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium418.pdf"
@@ -348,10 +346,7 @@ COMMON_COMPONENTS: tuple[Component, ...] = (
         "VARIABLE",
         ("CHEBI:32035", "potassium hydroxide"),
         SOURCE_318,
-        (
-            f"{SOURCE_318} adjusts the trace element solution to pH 6.5 "
-            "with KOH."
-        ),
+        (f"{SOURCE_318} adjusts the trace element solution to pH 6.5 " "with KOH."),
     ),
     Component(
         "N2",
@@ -615,12 +610,9 @@ def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
     repaired["physical_state"] = "LIQUID"
     repaired["ph_value"] = target.ph_value
     repaired.pop("ph_range", None)
-    repaired["ingredients"] = [
-        _ingredient(component) for component in components_for(target)
-    ]
+    repaired["ingredients"] = [_ingredient(component) for component in components_for(target)]
     repaired["preparation_steps"] = [
-        _mix_step(index, step)
-        for index, step in enumerate(target.preparation_steps, start=1)
+        _mix_step(index, step) for index, step in enumerate(target.preparation_steps, start=1)
     ]
     _put_after(repaired, "notes", target.notes, "media_term")
     _ensure_flags(repaired, target)

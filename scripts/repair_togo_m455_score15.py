@@ -46,18 +46,14 @@ IMPORTED_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("Reinforced clostridial agar (Sigma)", "51", "G_PER_L"),
 )
 
-IMPORTED_PARENT_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
-    ("Agar", "56.6667", "G_PER_L"),
-)
+IMPORTED_PARENT_INGREDIENT_SIGNATURE: tuple[Component, ...] = (("Agar", "56.6667", "G_PER_L"),)
 
 FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("Reinforced clostridial agar (Sigma)", "51.0", "G_PER_L"),
     ("Distilled water", "900.0", "ML_PER_L"),
 )
 
-SODIUM_CARBONATE_SIGNATURE: tuple[Component, ...] = (
-    ("Na2CO3", "10.0", "PERCENT_W_V"),
-)
+SODIUM_CARBONATE_SIGNATURE: tuple[Component, ...] = (("Na2CO3", "10.0", "PERCENT_W_V"),)
 
 IMPORTED_SOLUTION_SIGNATURES: tuple[SolutionSignature, ...] = (
     ("Na2CO3 solution", "100", "G_PER_L", ()),
@@ -119,16 +115,13 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
     {
         "step_number": 1,
         "action": "AUTOCLAVE",
-        "description": (
-            "Autoclave the reinforced clostridial agar base at 121 C for 15 min."
-        ),
+        "description": ("Autoclave the reinforced clostridial agar base at 121 C for 15 min."),
     },
     {
         "step_number": 2,
         "action": "MIX",
         "description": (
-            "Aseptically add 100 ml/L sterile 10% Na2CO3 solution after "
-            "autoclaving."
+            "Aseptically add 100 ml/L sterile 10% Na2CO3 solution after " "autoclaving."
         ),
     },
     {
@@ -170,8 +163,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     if term:
         grounding = GROUNDINGS[preferred_term]
@@ -215,9 +207,7 @@ def _solutions(source: str) -> list[dict[str, Any]]:
                     notes="JCM Medium 455 specifies a 10% Na2CO3 solution.",
                 )
             ],
-            "preparation_notes": (
-                "Sterilize the 10% Na2CO3 solution before aseptic addition."
-            ),
+            "preparation_notes": ("Sterilize the 10% Na2CO3 solution before aseptic addition."),
         }
     ]
 
@@ -234,9 +224,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -259,9 +247,7 @@ def _solution_signatures(rows: Any, label: str) -> tuple[SolutionSignature, ...]
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signatures.append(
             (
                 str(row.get("preferred_term") or ""),

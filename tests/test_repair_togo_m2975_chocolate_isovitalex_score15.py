@@ -85,9 +85,7 @@ def test_repair_keeps_source_components_and_scores_clean(
         "value": "1.0",
         "unit": "PERCENT_V_V",
     }
-    assert scorer_module.score_parsed(
-        [(str(repair_module.PATH), repaired)]
-    ) == []
+    assert scorer_module.score_parsed([(str(repair_module.PATH), repaired)]) == []
 
 
 def test_repair_adds_flags_reference_and_event_once(

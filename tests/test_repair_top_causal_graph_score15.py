@@ -49,8 +49,7 @@ def _doc(target) -> dict:
         },
         "notes": "Source",
         "ingredients": [
-            _component(name, value, unit)
-            for name, value, unit in target.imported_ingredients
+            _component(name, value, unit) for name, value, unit in target.imported_ingredients
         ],
         "applications": ["Microbial cultivation"],
         "curation_history": [],
@@ -114,10 +113,12 @@ def test_my20_adds_distilled_water_and_keeps_ym_parent(repair_module) -> None:
     assert repair_module._signature(
         repaired["ingredients"],
         "ingredients",
-    ) == repair_module._composition_signature(_target(
-        repair_module,
-        "bacterial/my20_agar.yaml",
-    ).final_ingredients)
+    ) == repair_module._composition_signature(
+        _target(
+            repair_module,
+            "bacterial/my20_agar.yaml",
+        ).final_ingredients
+    )
     assert ingredients["Peptone"]["term"] == {"id": "MICRO:0000178", "label": "Peptone"}
     assert ingredients["Malt extract"]["term"] == {
         "id": "FOODON:03301056",
@@ -177,10 +178,7 @@ def test_m2227_rebuilds_heat_sensitive_solutions(repair_module) -> None:
             "preferred_term": "Yeast extract",
             "concentration": {"value": "15.0", "unit": "PERCENT_W_V"},
             "source": "TOGO M2227 / ATCC Medium 1161",
-            "notes": (
-                "ATCC Medium 1161 specifies the yeast extract solution as "
-                "15.0% w/v."
-            ),
+            "notes": ("ATCC Medium 1161 specifies the yeast extract solution as " "15.0% w/v."),
             "term": {"id": "FOODON:03315426", "label": "yeast extract"},
             "nutritional_roles": ["PROTEIN_SOURCE", "VITAMIN_SOURCE"],
         }
@@ -218,9 +216,7 @@ def test_repair_adds_references_flags_and_history_once(repair_module) -> None:
     twice = repair_module.repair_record(once, target)
 
     assert twice == once
-    assert once["references"] == [
-        {"reference": reference} for reference in target.references
-    ]
+    assert once["references"] == [{"reference": reference} for reference in target.references]
     assert once["data_quality_flags"] == [
         "has_ontology_mappings",
         "ingredients_curated",
@@ -230,8 +226,7 @@ def test_repair_adds_references_flags_and_history_once(repair_module) -> None:
     matching_events = [
         event
         for event in twice["curation_history"]
-        if event.get("curator") == repair_module.CURATOR
-        and event.get("action") == target.action
+        if event.get("curator") == repair_module.CURATOR and event.get("action") == target.action
     ]
     assert len(matching_events) == 1
     assert repair_module.ATCC_1161 in matching_events[0]["source"]

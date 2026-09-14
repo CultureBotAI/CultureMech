@@ -120,9 +120,10 @@ def test_repair_documents_conditional_sulfide_solution(repair_module) -> None:
         "id": "CHEBI:76209",
         "label": "sodium sulfide nonahydrate",
     }
-    assert "If the inoculum does not contain sulfide" in repaired["preparation_steps"][-1][
-        "description"
-    ]
+    assert (
+        "If the inoculum does not contain sulfide"
+        in repaired["preparation_steps"][-1]["description"]
+    )
 
 
 def test_repair_adds_flags_references_and_history(repair_module) -> None:
@@ -162,12 +163,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(tmp_path)
 
     assert {
-        path.relative_to(tmp_path): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(tmp_path): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(tmp_path): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(tmp_path): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:

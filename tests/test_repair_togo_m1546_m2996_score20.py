@@ -42,10 +42,7 @@ def _doc(update) -> dict:
             "term": {"id": update.expected_source_term, "label": "TOGO Medium"},
         },
         "notes": "old notes",
-        "ingredients": [
-            {"preferred_term": name}
-            for name in sorted(update.expected_ingredients)
-        ],
+        "ingredients": [{"preferred_term": name} for name in sorted(update.expected_ingredients)],
         "curation_history": [],
     }
 
@@ -69,17 +66,13 @@ def test_marine_repair_normalizes_water(repair_module, scorer_module) -> None:
     )
 
 
-def test_pplo_repair_adds_nad_and_5_percent_co2(
-    repair_module, scorer_module
-) -> None:
+def test_pplo_repair_adds_nad_and_5_percent_co2(repair_module, scorer_module) -> None:
     update = repair_module.UPDATE_BY_PATH[repair_module.PPLO]
     repaired = repair_module.repair_record(_doc(update), update)
 
     assert repaired["temperature_value"] == 37.0
     assert repaired["ingredients"] == update.recipe["ingredients"]
-    assert {
-        row["preferred_term"]: row["concentration"] for row in repaired["ingredients"]
-    } == {
+    assert {row["preferred_term"]: row["concentration"] for row in repaired["ingredients"]} == {
         "PPLO (pleuropneumonia-like organism) medium": {
             "value": "1000",
             "unit": "ML_PER_L",
@@ -121,12 +114,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(root)
 
     assert {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(root): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(root): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:

@@ -23,8 +23,7 @@ EXPECTED_MEDIA_TERM = "komodo.medium:741"
 YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 KOMODO_741_URL = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=741"
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=741"
 )
 DSMZ_741_URL = (
     "https://web.archive.org/web/20121030082653id_/"
@@ -163,9 +162,7 @@ def _check_source(doc: dict[str, Any]) -> None:
         raise ValueError(f"{TARGET}: missing media_term")
     term = media_term.get("term")
     if not isinstance(term, dict) or term.get("id") != EXPECTED_MEDIA_TERM:
-        raise ValueError(
-            f"{TARGET}: missing expected media term {EXPECTED_MEDIA_TERM}"
-        )
+        raise ValueError(f"{TARGET}: missing expected media term {EXPECTED_MEDIA_TERM}")
 
 
 def _put_after(doc: dict[str, Any], key: str, value: Any, after: str) -> None:

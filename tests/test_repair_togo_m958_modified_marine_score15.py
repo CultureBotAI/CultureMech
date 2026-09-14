@@ -76,9 +76,7 @@ def _medium_doc(repair_module, *, record: str) -> dict:
         "medium_type": "COMPLEX",
         "composition_type": "UNDEFINED",
         "physical_state": "SOLID_AGAR",
-        "ingredients": [
-            _component(name, value, unit) for name, value, unit in ingredients
-        ],
+        "ingredients": [_component(name, value, unit) for name, value, unit in ingredients],
         "solutions": [_solution(signature) for signature in solutions],
         "media_term": {
             "preferred_term": source_id,
@@ -99,9 +97,9 @@ def test_m958_water_unit_and_ph_are_repaired(repair_module, scorer_module) -> No
     ingredients = _by_name(repaired["ingredients"])
 
     assert repaired["ph_value"] == 7.5
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.M958_FINAL
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients") == repair_module.M958_FINAL
+    )
     assert ingredients["Distilled water"]["concentration"] == {
         "value": "1.0",
         "unit": "L",
@@ -122,9 +120,10 @@ def test_m1345_uses_phytone_specific_signature(repair_module, scorer_module) -> 
     ingredients = _by_name(repaired["ingredients"])
 
     assert repaired["ph_value"] == 7.5
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.M1345_FINAL
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.M1345_FINAL
+    )
     assert ingredients["Phytone peptone (BD-Difco)"]["term"] == {
         "id": "FOODON:03315720",
         "label": "Soy peptone",
@@ -140,12 +139,14 @@ def test_m1274_expands_trace_vitamins_and_carbonate_stock(
     solutions = _by_name(repaired["solutions"])
 
     assert repaired["ph_value"] == 9.0
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.M1274_FINAL
-    assert repair_module._solution_signatures(
-        repaired["solutions"], "solutions"
-    ) == repair_module.M1274_FINAL_SOLUTIONS
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.M1274_FINAL
+    )
+    assert (
+        repair_module._solution_signatures(repaired["solutions"], "solutions")
+        == repair_module.M1274_FINAL_SOLUTIONS
+    )
     assert solutions["Trace vitamins"]["concentration"] == {
         "value": "10.0",
         "unit": "ML_PER_L",
@@ -155,12 +156,8 @@ def test_m1274_expands_trace_vitamins_and_carbonate_stock(
         "label": "sodium carbonate",
     }
     assert "physicochemical_roles" not in solutions["10% Na2CO3 solution"]
-    assert solutions["10% Na2CO3 solution"]["composition"][0][
-        "physicochemical_roles"
-    ] == ["BUFFER"]
-    assert _by_name(repaired["ingredients"])["NaCl"]["physicochemical_roles"] == [
-        "OSMOTIC_AGENT"
-    ]
+    assert solutions["10% Na2CO3 solution"]["composition"][0]["physicochemical_roles"] == ["BUFFER"]
+    assert _by_name(repaired["ingredients"])["NaCl"]["physicochemical_roles"] == ["OSMOTIC_AGENT"]
     assert scorer_module.score_record(repaired) == (0, [])
 
 

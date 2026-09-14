@@ -74,10 +74,13 @@ def test_repair_corrects_water_and_blood_concentrations(
     repaired = repair_module.repair_record(_doc(repair_module))
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Distilled water"]["concentration"] == {
         "value": "1.0",
         "unit": "L",
@@ -99,12 +102,8 @@ def test_repair_grounds_blood_and_keeps_gam_agar_unmapped(
         "label": "Defibrinated horse blood",
     }
     assert "term" not in ingredients["GAM agar, modified (Nissui)"]
-    assert "mediaingredientmech_chebi_term" not in ingredients[
-        "GAM agar, modified (Nissui)"
-    ]
-    assert "intentionally unmapped" in ingredients[
-        "GAM agar, modified (Nissui)"
-    ]["notes"]
+    assert "mediaingredientmech_chebi_term" not in ingredients["GAM agar, modified (Nissui)"]
+    assert "intentionally unmapped" in ingredients["GAM agar, modified (Nissui)"]["notes"]
 
 
 def test_repair_adds_preparation_steps(

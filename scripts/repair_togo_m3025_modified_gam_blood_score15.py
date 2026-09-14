@@ -61,9 +61,7 @@ NOTES = (
 )
 
 INGREDIENT_NOTES = {
-    "Distilled water": (
-        "TOGO M3025 / JCM Medium 1370 lists 1 L Distilled water."
-    ),
+    "Distilled water": ("TOGO M3025 / JCM Medium 1370 lists 1 L Distilled water."),
     "GAM agar, modified (Nissui)": (
         "TOGO M3025 / JCM Medium 1370 lists 56.7 g/L GAM agar, modified "
         "(Nissui); this commercial product remains intentionally unmapped."
@@ -78,9 +76,7 @@ PREPARATION_STEPS = [
     {
         "step_number": 1,
         "action": "MIX",
-        "description": (
-            "Suspend 56.7 g GAM agar, modified (Nissui), in 1.0 L distilled water."
-        ),
+        "description": ("Suspend 56.7 g GAM agar, modified (Nissui), in 1.0 L distilled water."),
     },
     {
         "step_number": 2,
@@ -171,9 +167,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

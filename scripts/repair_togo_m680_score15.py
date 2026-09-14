@@ -99,9 +99,7 @@ TOGO_CHILD = {
     ),
 }
 
-VARIANT_MODIFICATION = (
-    "Same JCM Medium 662 MBG-20 formulation as the MediaDive J662 source record."
-)
+VARIANT_MODIFICATION = "Same JCM Medium 662 MBG-20 formulation as the MediaDive J662 source record."
 
 RECIPE_NOTES = (
     "JCM Medium 662 MBG-20 lists 16.0 g Peptone, 4.0 g Yeast extract, "
@@ -173,8 +171,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     grounding = GROUNDINGS.get(preferred_term)
     if grounding:
@@ -241,9 +238,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

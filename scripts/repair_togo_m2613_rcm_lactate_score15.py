@@ -90,8 +90,7 @@ INGREDIENTS: tuple[dict[str, Any], ...] = (
         "concentration": {"value": "1.0", "unit": "L"},
         "source": SOURCE,
         "notes": (
-            "TOGO M2613 lists 1000 ml distilled water; the import unit is "
-            "corrected to 1 L."
+            "TOGO M2613 lists 1000 ml distilled water; the import unit is " "corrected to 1 L."
         ),
         "term": _term(*GROUNDINGS["Distilled water"]),
         "mediaingredientmech_chebi_term": _term(*GROUNDINGS["Distilled water"]),
@@ -102,9 +101,7 @@ INGREDIENTS: tuple[dict[str, Any], ...] = (
         "source": SOURCE,
         "notes": "ATCC Medium 1252 lists sodium lactate 60% solution at 1.5%.",
         "term": _term(*GROUNDINGS["Sodium lactate (60% solution)"]),
-        "mediaingredientmech_chebi_term": _term(
-            *GROUNDINGS["Sodium lactate (60% solution)"]
-        ),
+        "mediaingredientmech_chebi_term": _term(*GROUNDINGS["Sodium lactate (60% solution)"]),
         "nutritional_roles": ["CARBON_SOURCE"],
     },
     {
@@ -132,9 +129,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

@@ -83,10 +83,13 @@ def test_repair_flattens_solutions_and_corrects_units_and_ph(
     assert repaired["composition_type"] == "SEMI_DEFINED"
     assert repaired["physical_state"] == "SOLID_AGAR"
     assert repaired["ph_value"] == 7.0
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert "solutions" not in repaired
 
     ingredients = _by_name(repaired["ingredients"])
@@ -169,9 +172,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

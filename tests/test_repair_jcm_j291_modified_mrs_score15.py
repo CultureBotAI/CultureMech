@@ -50,8 +50,7 @@ def _doc(repair_module, path: Path) -> dict:
         "physical_state": "LIQUID",
         "ph_value": 6.5,
         "ingredients": [
-            _component(name, value, unit)
-            for name, value, unit in target.imported_signature
+            _component(name, value, unit) for name, value, unit in target.imported_signature
         ],
         "media_term": {
             "preferred_term": "JCM Medium J291",
@@ -96,9 +95,10 @@ def test_repair_restores_water_and_scores_cleanly(
     repaired = _repair(repair_module, getattr(repair_module, path))
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients[repair_module.WATER]["concentration"] == {
         "value": "1.0",
         "unit": "L",
@@ -136,9 +136,7 @@ def test_repair_links_source_duplicates(repair_module) -> None:
 
     assert j291["parent_media"] == repair_module.TOGO_M285_PARENT
     assert j291["variant_relationship"] == "SOURCE_DUPLICATE"
-    assert j291["variant_modifications"] == [
-        repair_module.TOGO_M285_PARENT["notes"]
-    ]
+    assert j291["variant_modifications"] == [repair_module.TOGO_M285_PARENT["notes"]]
     assert "variant_children" not in j291
 
     assert m285["variant_children"] == [repair_module.JCM_J291_CHILD]

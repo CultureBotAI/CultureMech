@@ -44,8 +44,7 @@ def _doc(target) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "SOLID_AGAR",
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_signature
+            _ingredient(name, value, unit) for name, value, unit in target.imported_signature
         ],
         "media_term": {
             "preferred_term": f"TOGO Medium {target.media_term.removeprefix('TOGO:')}",
@@ -71,10 +70,13 @@ def test_repair_base_corrects_water_adds_ph_and_grounds_components(
     )
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.BASE_FINAL
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.BASE_FINAL
+    )
     assert repaired["ph_value"] == 7.0
     assert "ph_range" not in repaired
     assert ingredients["Distilled water"]["concentration"] == {
@@ -110,10 +112,13 @@ def test_repair_child_adds_nacl_and_salinity_parent(
     )
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.CHILD_FINAL
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.CHILD_FINAL
+    )
     assert ingredients["NaCl"]["mediaingredientmech_chebi_term"] == {
         "id": "CHEBI:26710",
         "label": "sodium chloride",
@@ -137,8 +142,7 @@ def test_repair_adds_preparation_references_and_events_once(repair_module) -> No
 
     assert twice["preparation_steps"] == list(repair_module.PREPARATION_STEPS)
     assert twice["references"] == [
-        {"reference": reference}
-        for reference in repair_module.BASE_TARGET.references
+        {"reference": reference} for reference in repair_module.BASE_TARGET.references
     ]
     matching_events = [
         event

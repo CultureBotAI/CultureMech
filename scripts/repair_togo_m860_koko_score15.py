@@ -415,8 +415,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
         "term": _term(*GROUNDINGS[preferred_term]),
     }
 
@@ -439,10 +438,7 @@ def _composition(
     source: str,
     components: tuple[Component, ...],
 ) -> list[dict[str, Any]]:
-    return [
-        _component(name, value, unit, source=source)
-        for name, value, unit in components
-    ]
+    return [_component(name, value, unit, source=source) for name, value, unit in components]
 
 
 def _sl4_composition(source: str) -> list[dict[str, Any]]:
@@ -543,20 +539,14 @@ def _solutions(source: str) -> list[dict[str, Any]]:
             "10.0",
             _composition(source, (("Na2S x 9 H2O", "30.0", "G_PER_L"),)),
             source=source,
-            notes=(
-                f"{source} adds 10.0 ml/L sterile anaerobic 3% "
-                "Na2S x 9 H2O stock."
-            ),
+            notes=(f"{source} adds 10.0 ml/L sterile anaerobic 3% " "Na2S x 9 H2O stock."),
         ),
         _stock_solution(
             "3% L-Cysteine HCl x H2O solution",
             "10.0",
             _composition(source, (("L-Cysteine HCl x H2O", "30.0", "G_PER_L"),)),
             source=source,
-            notes=(
-                f"{source} adds 10.0 ml/L sterile anaerobic 3% "
-                "L-cysteine HCl x H2O stock."
-            ),
+            notes=(f"{source} adds 10.0 ml/L sterile anaerobic 3% " "L-cysteine HCl x H2O stock."),
         ),
     ]
 
@@ -607,9 +597,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -632,9 +620,7 @@ def _solution_signature(rows: Any, label: str) -> tuple[SolutionSignature, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -665,9 +651,7 @@ def _term_id(doc: dict[str, Any]) -> str:
 
 def _ensure_medium_target(doc: dict[str, Any], target: MediumTarget) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected {target.record_id}, found {doc.get('id')}"
-        )
+        raise ValueError(f"{target.path}: expected {target.record_id}, found {doc.get('id')}")
     if _media_term_id(doc) != target.source_term:
         raise ValueError(f"{target.path}: expected media term {target.source_term}")
 
@@ -683,8 +667,7 @@ def _ensure_medium_target(doc: dict[str, Any], target: MediumTarget) -> None:
 def _ensure_solution_target(doc: dict[str, Any]) -> None:
     if doc.get("id") != "CultureMech:013726":
         raise ValueError(
-            f"{SOLUTION_4784_PATH}: expected CultureMech:013726, "
-            f"found {doc.get('id')}"
+            f"{SOLUTION_4784_PATH}: expected CultureMech:013726, " f"found {doc.get('id')}"
         )
     if _term_id(doc) != "mediadive.solution:4784":
         raise ValueError(f"{SOLUTION_4784_PATH}: expected MediaDive solution 4784")
@@ -854,9 +837,7 @@ def repair_medium_record(
         repaired.pop("variant_modifications", None)
 
     if target.variant_children:
-        repaired["variant_children"] = [
-            copy.deepcopy(child) for child in target.variant_children
-        ]
+        repaired["variant_children"] = [copy.deepcopy(child) for child in target.variant_children]
     else:
         repaired.pop("variant_children", None)
 

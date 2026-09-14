@@ -99,14 +99,20 @@ def test_repair_moves_flattened_m30_recipe_into_two_solutions(
         "value": "0.2",
         "unit": "ML_PER_L",
     }
-    assert repair_module._signature(
-        solutions["Solution 1"]["composition"],
-        "solution 1",
-    ) == repair_module.SOLUTION_1_SIGNATURE
-    assert repair_module._signature(
-        solutions["Solution 2"]["composition"],
-        "solution 2",
-    ) == repair_module.SOLUTION_2_SIGNATURE
+    assert (
+        repair_module._signature(
+            solutions["Solution 1"]["composition"],
+            "solution 1",
+        )
+        == repair_module.SOLUTION_1_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            solutions["Solution 2"]["composition"],
+            "solution 2",
+        )
+        == repair_module.SOLUTION_2_SIGNATURE
+    )
 
 
 def test_repair_expands_modified_hutner_and_metals_44(
@@ -128,10 +134,13 @@ def test_repair_expands_modified_hutner_and_metals_44(
     }
     assert "composition" not in hutner_reference
     assert hutner["concentration"] == {"value": "20.0", "unit": "ML_PER_L"}
-    assert repair_module._signature(
-        hutner["composition"],
-        "Modified Hutner's basal salts",
-    ) == repair_module.MODIFIED_HUTNER_SIGNATURE
+    assert (
+        repair_module._signature(
+            hutner["composition"],
+            "Modified Hutner's basal salts",
+        )
+        == repair_module.MODIFIED_HUTNER_SIGNATURE
+    )
     assert hutner_components["FeSO4 x 7H2O"]["concentration"] == {
         "value": "99.0",
         "unit": "MG_PER_L",
@@ -173,14 +182,18 @@ def test_repair_expands_solution_2_and_vitamin_solution_no_6(
         "id": "CHEBI:91258",
         "label": "disodium hydrogenphosphate dihydrate",
     }
-    assert solution_2_components["Vitamin solution No. 6"][
-        "concentration"
-    ] == {"value": "variable", "unit": "VARIABLE"}
+    assert solution_2_components["Vitamin solution No. 6"]["concentration"] == {
+        "value": "variable",
+        "unit": "VARIABLE",
+    }
     assert vitamins["concentration"] == {"value": "variable", "unit": "VARIABLE"}
-    assert repair_module._signature(
-        vitamins["composition"],
-        "Vitamin solution No. 6",
-    ) == repair_module.VITAMIN_SOLUTION_SIGNATURE
+    assert (
+        repair_module._signature(
+            vitamins["composition"],
+            "Vitamin solution No. 6",
+        )
+        == repair_module.VITAMIN_SOLUTION_SIGNATURE
+    )
     assert vitamin_components["Pyridoxine HCl"]["concentration"] == {
         "value": "20.0",
         "unit": "MG_PER_L",
@@ -198,12 +211,7 @@ def test_repair_record_drops_out_of_review_ranking(
     repaired = repair_module.repair_record(_doc(repair_module))
 
     assert scorer_module.score_record(repaired) == (5, ["no pH and no temperature"])
-    assert (
-        scorer_module.score_parsed(
-            [("bacterial/TOGO_M1050_M30.yaml", repaired)]
-        )
-        == []
-    )
+    assert scorer_module.score_parsed([("bacterial/TOGO_M1050_M30.yaml", repaired)]) == []
     assert repaired["data_quality_flags"] == [
         "has_ontology_mappings",
         "has_unmapped_ingredients",
@@ -215,9 +223,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

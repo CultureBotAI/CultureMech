@@ -151,8 +151,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 4,
         "action": "MIX",
         "description": (
-            "Aseptically and anaerobically add autoclaved hemin solution and "
-            "menadione solution."
+            "Aseptically and anaerobically add autoclaved hemin solution and " "menadione solution."
         ),
     },
     {
@@ -222,8 +221,7 @@ INGREDIENTS: tuple[dict[str, Any], ...] = (
 )
 
 SALT_SOLUTION: tuple[dict[str, Any], ...] = tuple(
-    _component(*component, source=SALT_SOURCE)
-    for component in SALT_SOLUTION_SIGNATURE
+    _component(*component, source=SALT_SOURCE) for component in SALT_SOLUTION_SIGNATURE
 )
 
 HEMIN_SOLUTION: tuple[dict[str, Any], ...] = (
@@ -233,8 +231,7 @@ HEMIN_SOLUTION: tuple[dict[str, Any], ...] = (
         "G_PER_L",
         source=HM_SOURCE,
         notes=(
-            "JCM Medium 469 dissolves 50 mg hemin in 1 ml of 1 N NaOH and "
-            "adjusts to 100 ml."
+            "JCM Medium 469 dissolves 50 mg hemin in 1 ml of 1 N NaOH and " "adjusts to 100 ml."
         ),
     ),
     _component(
@@ -255,10 +252,7 @@ MENADIONE_SOLUTION: tuple[dict[str, Any], ...] = (
         "0.05",
         "G_PER_L",
         source=HM_SOURCE,
-        notes=(
-            "JCM Medium 469 dissolves 5 mg menadione in 1 ml ethanol and "
-            "adjusts to 100 ml."
-        ),
+        notes=("JCM Medium 469 dissolves 5 mg menadione in 1 ml ethanol and " "adjusts to 100 ml."),
     ),
     _component(
         "Ethanol",
@@ -291,10 +285,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
         "Menadione solution",
         "10.0",
         source=HM_SOURCE,
-        notes=(
-            "JCM Medium 1338 adds 10.0 ml/L menadione solution from JCM "
-            "Medium 469."
-        ),
+        notes=("JCM Medium 1338 adds 10.0 ml/L menadione solution from JCM " "Medium 469."),
         composition=MENADIONE_SOLUTION,
     ),
 )
@@ -319,9 +310,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

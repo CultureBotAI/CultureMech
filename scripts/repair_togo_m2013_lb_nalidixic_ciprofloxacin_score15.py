@@ -47,13 +47,9 @@ IMPORTED_SOLUTION_SIGNATURE: tuple[SolutionSignature, ...] = (
     ("Nalidixic acid solution (30 mg/ml)*", "1", "G_PER_L", ()),
 )
 
-NALIDIXIC_SIGNATURE: tuple[Component, ...] = (
-    ("Nalidixic acid", "30.0", "MG_PER_ML"),
-)
+NALIDIXIC_SIGNATURE: tuple[Component, ...] = (("Nalidixic acid", "30.0", "MG_PER_ML"),)
 
-CIPROFLOXACIN_SIGNATURE: tuple[Component, ...] = (
-    ("Ciprofloxacin", "5.0", "MG_PER_ML"),
-)
+CIPROFLOXACIN_SIGNATURE: tuple[Component, ...] = (("Ciprofloxacin", "5.0", "MG_PER_ML"),)
 
 FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("Bacto Tryptone (Difco)", "10", "G_PER_L"),
@@ -168,8 +164,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     grounding = GROUNDINGS.get(preferred_term)
     if grounding is not None:
@@ -252,9 +247,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -277,9 +270,7 @@ def _solution_signature(rows: Any, label: str) -> tuple[SolutionSignature, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

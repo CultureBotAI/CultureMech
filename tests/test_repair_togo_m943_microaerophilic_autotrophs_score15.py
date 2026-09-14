@@ -61,8 +61,7 @@ def _medium_doc(repair_module, *, togo: bool) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "LIQUID",
         "ingredients": [
-            _component(name, value, unit)
-            for name, value, unit in imported_ingredients
+            _component(name, value, unit) for name, value, unit in imported_ingredients
         ],
         "media_term": {
             "preferred_term": "source medium",
@@ -135,9 +134,9 @@ def test_togo_m943_expands_cross_referenced_stocks(
     assert repaired["incubation_atmosphere"] == "MICROAEROPHILIC"
     assert repaired["aeration"] == "N2-CO2-O2 (76:19:5, v/v) gas atmosphere, 50 kPa"
     assert repair_module._solution_signatures(repaired) == repair_module.FINAL_SOLUTIONS
-    assert _by_name(solutions["MJ(-N) synthetic seawater"]["composition"])[
-        "Na2SeO3 x 5 H2O"
-    ]["concentration"] == {"value": "0.5", "unit": "MG_PER_L"}
+    assert _by_name(solutions["MJ(-N) synthetic seawater"]["composition"])["Na2SeO3 x 5 H2O"][
+        "concentration"
+    ] == {"value": "0.5", "unit": "MG_PER_L"}
     assert solutions["8% NaHCO3 solution"]["composition"][0]["concentration"] == {
         "value": "8.0",
         "unit": "PERCENT_W_V",
@@ -154,9 +153,7 @@ def test_togo_m943_expands_cross_referenced_stocks(
         "id": "CHEBI:32150",
         "label": "sodium thiosulfate pentahydrate",
     }
-    assert solutions["10% Na2S2O3 x 5 H2O solution"][
-        "mediaingredientmech_chebi_term"
-    ] == {
+    assert solutions["10% Na2S2O3 x 5 H2O solution"]["mediaingredientmech_chebi_term"] == {
         "id": "CHEBI:32150",
         "label": "sodium thiosulfate pentahydrate",
     }
@@ -165,8 +162,7 @@ def test_togo_m943_expands_cross_referenced_stocks(
         "concentration": {"value": "10.0", "unit": "PERCENT_W_V"},
         "source": repair_module.SOURCE_TOGO,
         "notes": (
-            "TOGO M943 / JCM Medium 902 specifies the added Na2S2O3 x 5 H2O "
-            "solution as 10% w/v."
+            "TOGO M943 / JCM Medium 902 specifies the added Na2S2O3 x 5 H2O " "solution as 10% w/v."
         ),
         "term": {
             "id": "CHEBI:32150",
@@ -178,9 +174,7 @@ def test_togo_m943_expands_cross_referenced_stocks(
         },
         "nutritional_roles": ["SULFUR_SOURCE"],
     }
-    assert "Trace minerals" in _by_name(
-        solutions["MJ(-N) synthetic seawater"]["composition"]
-    )
+    assert "Trace minerals" in _by_name(solutions["MJ(-N) synthetic seawater"]["composition"])
     assert scorer_module.score_record(repaired) == (0, [])
     assert scorer_module.score_parsed([(str(repair_module.TOGO_M943_PATH), repaired)]) == []
 
@@ -189,14 +183,15 @@ def test_mediadive_j902_becomes_source_duplicate_parent(
     repair_module,
     scorer_module,
 ) -> None:
-    repaired = repair_module.repair_mediadive_parent(
-        _medium_doc(repair_module, togo=False)
-    )
+    repaired = repair_module.repair_mediadive_parent(_medium_doc(repair_module, togo=False))
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENTS
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENTS
+    )
     assert repaired["variant_children"] == [repair_module.M943_CHILD]
     assert "parent_media" not in repaired
     assert scorer_module.score_record(repaired) == (0, [])
@@ -289,8 +284,7 @@ def test_repairs_are_idempotent_and_append_events_once(repair_module) -> None:
         matching_events = [
             event
             for event in twice["curation_history"]
-            if event.get("curator") == repair_module.CURATOR
-            and event.get("action") == action
+            if event.get("curator") == repair_module.CURATOR and event.get("action") == action
         ]
         assert len(matching_events) == 1
 

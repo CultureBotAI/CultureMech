@@ -38,9 +38,7 @@ IMPORTED_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("CO2", "variable", "VARIABLE"),
 )
 
-IMPORTED_SOLUTION_SIGNATURE: tuple[Component, ...] = (
-    ("Na2CO3*", "2", "G_PER_L"),
-)
+IMPORTED_SOLUTION_SIGNATURE: tuple[Component, ...] = (("Na2CO3*", "2", "G_PER_L"),)
 
 FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("Tryptone", "10.0", "G_PER_L"),
@@ -120,16 +118,12 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
     {
         "step_number": 4,
         "action": "AUTOCLAVE",
-        "description": (
-            "Autoclave the basal medium and the Na2CO3 solution separately."
-        ),
+        "description": ("Autoclave the basal medium and the Na2CO3 solution separately."),
     },
     {
         "step_number": 5,
         "action": "MIX",
-        "description": (
-            "Aseptically add sterile Na2CO3 to the autoclaved basal medium."
-        ),
+        "description": ("Aseptically add sterile Na2CO3 to the autoclaved basal medium."),
     },
     {
         "step_number": 6,
@@ -167,9 +161,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

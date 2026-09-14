@@ -292,9 +292,7 @@ def _signature(rows: Any) -> tuple[Component, ...]:
 
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}")
 
     source_term = _source_term_id(doc)
     if source_term != target.source_term:

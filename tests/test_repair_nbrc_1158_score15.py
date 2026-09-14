@@ -66,9 +66,10 @@ def test_repair_document_grounds_source_formula(repair_module) -> None:
     repaired = repair_module.repair_document(_minimal_doc(repair_module))
     ingredients = {row["preferred_term"]: row for row in repaired["ingredients"]}
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Tryptone (Diffico)"]["term"]["id"] == "MICRO:0000182"
     assert ingredients["Glucose"]["term"]["id"] == "CHEBI:17234"
     assert ingredients["Agar"]["term"] == {"id": "CHEBI:2509", "label": "agar"}

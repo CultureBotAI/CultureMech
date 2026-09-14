@@ -74,9 +74,7 @@ def _solution_doc(repair_module) -> dict:
         "id": "CultureMech:013869",
         "preferred_term": "Main sol. J932",
         "term": {"id": "mediadive.solution:4943", "label": "Main sol. J932"},
-        "composition": [
-            _component(*row) for row in repair_module.SOLUTION_4943_IMPORTED
-        ],
+        "composition": [_component(*row) for row in repair_module.SOLUTION_4943_IMPORTED],
         "ingredients": [_component("See source for composition", "variable", "VARIABLE")],
         "data_quality_flags": ["incomplete_composition"],
         "curation_history": [],
@@ -92,30 +90,28 @@ def test_togo_m978_stocks_water_ph_and_n2_are_repaired(
     ingredients = _by_name(repaired["ingredients"])
     solutions = _by_name(repaired["solutions"])
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._signature(
-        repaired["solutions"], "solutions"
-    ) == repair_module.FINAL_SOLUTION_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
+    assert (
+        repair_module._signature(repaired["solutions"], "solutions")
+        == repair_module.FINAL_SOLUTION_SIGNATURE
+    )
     assert ingredients["Distilled water"]["concentration"] == {
         "value": "988.142",
         "unit": "ML_PER_L",
     }
     assert repaired["ph_value"] == 6.0
     assert "N2" not in ingredients
-    assert solutions["Trace vitamins"]["composition"][-1]["preferred_term"] == (
-        "Distilled water"
-    )
+    assert solutions["Trace vitamins"]["composition"][-1]["preferred_term"] == ("Distilled water")
     assert repaired["parent_media"]["relationship"] == "SOURCE_DUPLICATE"
     assert scorer_module.score_parsed([("bacterial/m978.yaml", repaired)]) == []
 
 
 def test_mediadive_j932_flattened_stocks_are_nested(repair_module) -> None:
     target = repair_module.TARGETS[0]
-    repaired = repair_module.repair_media_record(
-        _media_doc(repair_module, togo=False), target
-    )
+    repaired = repair_module.repair_media_record(_media_doc(repair_module, togo=False), target)
     solutions = _by_name(repaired["solutions"])
     trace = _by_name(solutions["Trace element solution"]["composition"])
 
@@ -144,12 +140,14 @@ def test_mediadive_j932_flattened_stocks_are_nested(repair_module) -> None:
 def test_mediadive_4943_main_solution_is_repaired(repair_module) -> None:
     repaired = repair_module.repair_solution_4943(_solution_doc(repair_module))
 
-    assert repair_module._signature(
-        repaired["composition"], "composition"
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._signature(
-        repaired["solutions"], "solutions"
-    ) == repair_module.FINAL_SOLUTION_SIGNATURE
+    assert (
+        repair_module._signature(repaired["composition"], "composition")
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
+    assert (
+        repair_module._signature(repaired["solutions"], "solutions")
+        == repair_module.FINAL_SOLUTION_SIGNATURE
+    )
     assert repaired["composition"][3]["concentration"]["unit"] == "ML_PER_L"
     assert "ingredients" not in repaired
     assert "data_quality_flags" not in repaired
@@ -158,15 +156,11 @@ def test_mediadive_4943_main_solution_is_repaired(repair_module) -> None:
 def test_repairs_are_idempotent(repair_module) -> None:
     for function, doc in (
         (
-            lambda source: repair_module.repair_media_record(
-                source, repair_module.TARGETS[0]
-            ),
+            lambda source: repair_module.repair_media_record(source, repair_module.TARGETS[0]),
             _media_doc(repair_module, togo=False),
         ),
         (
-            lambda source: repair_module.repair_media_record(
-                source, repair_module.TARGETS[1]
-            ),
+            lambda source: repair_module.repair_media_record(source, repair_module.TARGETS[1]),
             _media_doc(repair_module, togo=True),
         ),
         (repair_module.repair_solution_4943, _solution_doc(repair_module)),

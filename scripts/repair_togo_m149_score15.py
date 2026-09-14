@@ -66,8 +66,7 @@ INGREDIENTS: tuple[dict[str, Any], ...] = (
         "concentration": {"value": "1.0", "unit": "L"},
         "source": SOURCE,
         "notes": (
-            "TOGO M149 lists 1 L distilled water, matching MediaDive J158's "
-            "1000 ml water basis."
+            "TOGO M149 lists 1 L distilled water, matching MediaDive J158's " "1000 ml water basis."
         ),
         "term": _term("CHEBI:15377", "water"),
         "mediaingredientmech_chebi_term": _term("CHEBI:15377", "water"),
@@ -136,9 +135,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

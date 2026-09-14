@@ -81,12 +81,14 @@ def test_repair_rebuilds_dsmz_formula(repair_module, scorer_module) -> None:
         repair_module.WATER,
         repair_module.HORSE_BLOOD,
     ]
-    assert _component(repaired["ingredients"], repair_module.WATER)[
-        "concentration"
-    ] == {"value": "1000", "unit": "ML_PER_L"}
-    assert _component(repaired["ingredients"], repair_module.HORSE_BLOOD)[
-        "concentration"
-    ] == {"value": "5-10", "unit": "PERCENT_V_V"}
+    assert _component(repaired["ingredients"], repair_module.WATER)["concentration"] == {
+        "value": "1000",
+        "unit": "ML_PER_L",
+    }
+    assert _component(repaired["ingredients"], repair_module.HORSE_BLOOD)["concentration"] == {
+        "value": "5-10",
+        "unit": "PERCENT_V_V",
+    }
     assert repaired["physical_state"] == "SOLID_AGAR"
     assert repaired["ph_range"] == repair_module.PH_RANGE
     assert repaired["preparation_steps"] == list(repair_module.PREPARATION_STEPS)
@@ -206,9 +208,7 @@ def test_target_records_are_expected_dsmz_1203_recipes(repair_module) -> None:
     expected_names = [row["preferred_term"] for row in repair_module.INGREDIENTS]
 
     for target in repair_module.TARGETS:
-        doc = yaml.safe_load(
-            (repair_module.NORMALIZED / target.path).read_text(encoding="utf-8")
-        )
+        doc = yaml.safe_load((repair_module.NORMALIZED / target.path).read_text(encoding="utf-8"))
         repaired = repair_module.repair_document(doc, target)
 
         assert doc["id"] == repair_module.EXPECTED_IDS[target.path]

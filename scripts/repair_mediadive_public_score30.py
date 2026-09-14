@@ -186,7 +186,14 @@ def _sl6(source: str) -> dict[str, Any]:
         composition=[
             _component("ZnSO4 x 7 H2O", "0.1", "G_PER_L", source=source),
             _component("MnCl2 x 4 H2O", "0.03", "G_PER_L", source=source),
-            _component("H3BO3", "0.3", "G_PER_L", source=source, identifier="CHEBI:33118", label="boric acid"),
+            _component(
+                "H3BO3",
+                "0.3",
+                "G_PER_L",
+                source=source,
+                identifier="CHEBI:33118",
+                label="boric acid",
+            ),
             _component("CoCl2 x 6 H2O", "0.2", "G_PER_L", source=source),
             _component("CuCl2 x 2 H2O", "0.01", "G_PER_L", source=source),
             _component("NiCl2 x 6 H2O", "0.02", "G_PER_L", source=source),
@@ -208,11 +215,32 @@ def _sl10(source: str) -> dict[str, Any]:
         "1",
         notes=f"{source} adds 1 ml Trace element solution SL-10 per 1 L medium.",
         composition=[
-            _component("HCl", "2.5", "G_PER_L", source=source, identifier="CHEBI:17883", label="hydrogen chloride"),
+            _component(
+                "HCl",
+                "2.5",
+                "G_PER_L",
+                source=source,
+                identifier="CHEBI:17883",
+                label="hydrogen chloride",
+            ),
             _component("FeCl2 x 4 H2O", "1.5", "G_PER_L", source=source),
-            _component("ZnCl2", "0.07", "G_PER_L", source=source, identifier="CHEBI:49976", label="zinc dichloride"),
+            _component(
+                "ZnCl2",
+                "0.07",
+                "G_PER_L",
+                source=source,
+                identifier="CHEBI:49976",
+                label="zinc dichloride",
+            ),
             _component("MnCl2 x 4 H2O", "0.1", "G_PER_L", source=source),
-            _component("H3BO3", "0.006", "G_PER_L", source=source, identifier="CHEBI:33118", label="boric acid"),
+            _component(
+                "H3BO3",
+                "0.006",
+                "G_PER_L",
+                source=source,
+                identifier="CHEBI:33118",
+                label="boric acid",
+            ),
             _component("CoCl2 x 6 H2O", "0.19", "G_PER_L", source=source),
             _component("CuCl2 x 2 H2O", "0.002", "G_PER_L", source=source),
             _component("NiCl2 x 6 H2O", "0.024", "G_PER_L", source=source),
@@ -241,7 +269,14 @@ ASW_2X = _solution(
     "500",
     notes="P1 adds 350 ml Artificial sea water (ASW) 2x to a 700 ml main solution.",
     composition=[
-        _component("NaCl", "52.74", "G_PER_L", source=SRC_P1, identifier="CHEBI:26710", label="sodium chloride"),
+        _component(
+            "NaCl",
+            "52.74",
+            "G_PER_L",
+            source=SRC_P1,
+            identifier="CHEBI:26710",
+            label="sodium chloride",
+        ),
         _component(
             "NaHCO3",
             "1000",
@@ -258,11 +293,27 @@ ASW_2X = _solution(
             identifier="CHEBI:86158",
             label="calcium chloride dihydrate",
         ),
-        _component("KCl", "1.44", "G_PER_L", source=SRC_P1, identifier="CHEBI:32588", label="potassium chloride"),
+        _component(
+            "KCl",
+            "1.44",
+            "G_PER_L",
+            source=SRC_P1,
+            identifier="CHEBI:32588",
+            label="potassium chloride",
+        ),
         _component("KBr", "0.20", "G_PER_L", source=SRC_P1),
-        _component("H3BO3", "0.040", "G_PER_L", source=SRC_P1, identifier="CHEBI:33118", label="boric acid"),
+        _component(
+            "H3BO3", "0.040", "G_PER_L", source=SRC_P1, identifier="CHEBI:33118", label="boric acid"
+        ),
         _component("SrCl2", "0.040", "G_PER_L", source=SRC_P1),
-        _component("NaF", "0.006", "G_PER_L", source=SRC_P1, identifier="CHEBI:28741", label="sodium fluoride"),
+        _component(
+            "NaF",
+            "0.006",
+            "G_PER_L",
+            source=SRC_P1,
+            identifier="CHEBI:28741",
+            label="sodium fluoride",
+        ),
     ],
 )
 
@@ -278,7 +329,9 @@ SL8 = _solution(
         _component("ZnSO4 x 7 H2O", "0.150", "G_PER_L", source=SRC_P1),
         _component("NiCl2 x 6 H2O", "0.024", "G_PER_L", source=SRC_P1),
         _component("Na2MoO4 x 2 H2O", "0.036", "G_PER_L", source=SRC_P1),
-        _component("H3BO3", "0.062", "G_PER_L", source=SRC_P1, identifier="CHEBI:33118", label="boric acid"),
+        _component(
+            "H3BO3", "0.062", "G_PER_L", source=SRC_P1, identifier="CHEBI:33118", label="boric acid"
+        ),
         _component("CuCl2 x 2 H2O", "0.017", "G_PER_L", source=SRC_P1),
     ],
 )
@@ -288,7 +341,14 @@ SELENITE_TUNGSTATE = _solution(
     "1",
     notes="P1 adds 0.7 ml Selenite-tungstate solution II to a 700 ml main solution.",
     composition=[
-        _component("NaOH", "0.2", "G_PER_L", source=SRC_P1, identifier="CHEBI:32145", label="sodium hydroxide"),
+        _component(
+            "NaOH",
+            "0.2",
+            "G_PER_L",
+            source=SRC_P1,
+            identifier="CHEBI:32145",
+            label="sodium hydroxide",
+        ),
         _component("Na2SeO3 x 5 H2O", "0.018", "G_PER_L", source=SRC_P1),
         _component("Na2WO4 x 2 H2O", "0.018", "G_PER_L", source=SRC_P1),
     ],
@@ -440,10 +500,38 @@ P8_STOCKS = (
             "'NaN'; CultureMech preserves the named stock and drops that id."
         ),
         composition=[
-            _component("Na2HPO4", "64", "G_PER_L", source=SRC_P8, identifier="CHEBI:34683", label="disodium hydrogenphosphate"),
-            _component("KH2PO4", "51", "G_PER_L", source=SRC_P8, identifier="CHEBI:63036", label="potassium dihydrogen phosphate"),
-            _component("NaCl", "2.5", "G_PER_L", source=SRC_P8, identifier="CHEBI:26710", label="sodium chloride"),
-            _component("NH4Cl", "5", "G_PER_L", source=SRC_P8, identifier="CHEBI:31206", label="ammonium chloride"),
+            _component(
+                "Na2HPO4",
+                "64",
+                "G_PER_L",
+                source=SRC_P8,
+                identifier="CHEBI:34683",
+                label="disodium hydrogenphosphate",
+            ),
+            _component(
+                "KH2PO4",
+                "51",
+                "G_PER_L",
+                source=SRC_P8,
+                identifier="CHEBI:63036",
+                label="potassium dihydrogen phosphate",
+            ),
+            _component(
+                "NaCl",
+                "2.5",
+                "G_PER_L",
+                source=SRC_P8,
+                identifier="CHEBI:26710",
+                label="sodium chloride",
+            ),
+            _component(
+                "NH4Cl",
+                "5",
+                "G_PER_L",
+                source=SRC_P8,
+                identifier="CHEBI:31206",
+                label="ammonium chloride",
+            ),
         ],
     ),
 )
@@ -534,8 +622,7 @@ UPDATES = (
     RecipeUpdate(
         path=P3_KING_B,
         notes=(
-            "MediaDive public Medium P3 provides King B as a 1 L solid agar "
-            "recipe at pH 7.2."
+            "MediaDive public Medium P3 provides King B as a 1 L solid agar " "recipe at pH 7.2."
         ),
         recipe={
             "medium_type": "COMPLEX",
@@ -543,8 +630,22 @@ UPDATES = (
             "physical_state": "SOLID_AGAR",
             "ph_value": 7.2,
             "ingredients": [
-                _component("K2HPO4", "1.5", "G_PER_L", source=SRC_P3, identifier="CHEBI:131527", label="dipotassium hydrogen phosphate"),
-                _component("MgSO4 x 7 H2O", "1.5", "G_PER_L", source=SRC_P3, identifier="CHEBI:31795", label="magnesium sulfate heptahydrate"),
+                _component(
+                    "K2HPO4",
+                    "1.5",
+                    "G_PER_L",
+                    source=SRC_P3,
+                    identifier="CHEBI:131527",
+                    label="dipotassium hydrogen phosphate",
+                ),
+                _component(
+                    "MgSO4 x 7 H2O",
+                    "1.5",
+                    "G_PER_L",
+                    source=SRC_P3,
+                    identifier="CHEBI:31795",
+                    label="magnesium sulfate heptahydrate",
+                ),
                 _component(
                     "Proteose peptone no. 3",
                     "20",
@@ -553,8 +654,17 @@ UPDATES = (
                     identifier="MICRO:0000180",
                     label="proteose peptone",
                 ),
-                _component("Glycerol", "10", "ML_PER_L", source=SRC_P3, identifier="CHEBI:17754", label="glycerol"),
-                _component("Agar", "15", "G_PER_L", source=SRC_P3, identifier="CHEBI:2509", label="agar"),
+                _component(
+                    "Glycerol",
+                    "10",
+                    "ML_PER_L",
+                    source=SRC_P3,
+                    identifier="CHEBI:17754",
+                    label="glycerol",
+                ),
+                _component(
+                    "Agar", "15", "G_PER_L", source=SRC_P3, identifier="CHEBI:2509", label="agar"
+                ),
             ],
         },
         reference_urls=(P3_PUBLIC,),
@@ -581,7 +691,14 @@ UPDATES = (
                     identifier="FOODON:03315426",
                     label="yeast extract",
                 ),
-                _component("NaCl", "5", "G_PER_L", source=SRC_P6, identifier="CHEBI:26710", label="sodium chloride"),
+                _component(
+                    "NaCl",
+                    "5",
+                    "G_PER_L",
+                    source=SRC_P6,
+                    identifier="CHEBI:26710",
+                    label="sodium chloride",
+                ),
                 _component(
                     "KH2PO4",
                     "3.4",
@@ -648,8 +765,22 @@ UPDATES = (
                     identifier="CHEBI:31795",
                     label="magnesium sulfate heptahydrate",
                 ),
-                _component("NaCl", "0.4", "G_PER_L", source=SRC_P7, identifier="CHEBI:26710", label="sodium chloride"),
-                _component("NH4Cl", "0.4", "G_PER_L", source=SRC_P7, identifier="CHEBI:31206", label="ammonium chloride"),
+                _component(
+                    "NaCl",
+                    "0.4",
+                    "G_PER_L",
+                    source=SRC_P7,
+                    identifier="CHEBI:26710",
+                    label="sodium chloride",
+                ),
+                _component(
+                    "NH4Cl",
+                    "0.4",
+                    "G_PER_L",
+                    source=SRC_P7,
+                    identifier="CHEBI:31206",
+                    label="ammonium chloride",
+                ),
                 _component(
                     "CaCl2 x 2 H2O",
                     "0.05",
@@ -658,7 +789,14 @@ UPDATES = (
                     identifier="CHEBI:86158",
                     label="calcium chloride dihydrate",
                 ),
-                _component("Ethanol", "0.5", "ML_PER_L", source=SRC_P7, identifier="CHEBI:16236", label="ethanol"),
+                _component(
+                    "Ethanol",
+                    "0.5",
+                    "ML_PER_L",
+                    source=SRC_P7,
+                    identifier="CHEBI:16236",
+                    label="ethanol",
+                ),
             ],
             "solutions": [
                 _stock(
@@ -773,7 +911,9 @@ UPDATES = (
                     identifier="CHEBI:23414",
                     label="copper(II) sulfate",
                 ),
-                _component("Agar", "20", "G_PER_L", source=SRC_P9, identifier="CHEBI:2509", label="agar"),
+                _component(
+                    "Agar", "20", "G_PER_L", source=SRC_P9, identifier="CHEBI:2509", label="agar"
+                ),
             ],
             "solutions": [_sl10(SRC_P9), _sl6(SRC_P9)],
             "preparation_steps": [
@@ -781,8 +921,7 @@ UPDATES = (
                     "step_number": 1,
                     "action": "MIX",
                     "description": (
-                        "Dissolve ingredients in distilled water and bring the "
-                        "medium to 1 L."
+                        "Dissolve ingredients in distilled water and bring the " "medium to 1 L."
                     ),
                 },
                 {
@@ -829,7 +968,14 @@ UPDATES = (
             "physical_state": "SOLID_AGAR",
             "ph_range": {"min": 6.8, "max": 7.4},
             "ingredients": [
-                _component("NaCl", "25", "G_PER_L", source=SRC_P10, identifier="CHEBI:26710", label="sodium chloride"),
+                _component(
+                    "NaCl",
+                    "25",
+                    "G_PER_L",
+                    source=SRC_P10,
+                    identifier="CHEBI:26710",
+                    label="sodium chloride",
+                ),
                 _component(
                     "CaCl2 x 2 H2O",
                     "0.5",
@@ -838,11 +984,34 @@ UPDATES = (
                     identifier="CHEBI:86158",
                     label="calcium chloride dihydrate",
                 ),
-                _component("NaHCO3", "0.2", "G_PER_L", source=SRC_P10, identifier="CHEBI:32139", label="sodium hydrogencarbonate"),
+                _component(
+                    "NaHCO3",
+                    "0.2",
+                    "G_PER_L",
+                    source=SRC_P10,
+                    identifier="CHEBI:32139",
+                    label="sodium hydrogencarbonate",
+                ),
                 _component("Phosphate buffer", "4", "G_PER_L", source=SRC_P10),
-                _component("Na2S2O4", "0.5", "G_PER_L", source=SRC_P10, identifier="CHEBI:66870", label="sodium dithionite"),
-                _component("KNO3", "1", "G_PER_L", source=SRC_P10, identifier="CHEBI:63043", label="potassium nitrate"),
-                _component("Agar", "15", "G_PER_L", source=SRC_P10, identifier="CHEBI:2509", label="agar"),
+                _component(
+                    "Na2S2O4",
+                    "0.5",
+                    "G_PER_L",
+                    source=SRC_P10,
+                    identifier="CHEBI:66870",
+                    label="sodium dithionite",
+                ),
+                _component(
+                    "KNO3",
+                    "1",
+                    "G_PER_L",
+                    source=SRC_P10,
+                    identifier="CHEBI:63043",
+                    label="potassium nitrate",
+                ),
+                _component(
+                    "Agar", "15", "G_PER_L", source=SRC_P10, identifier="CHEBI:2509", label="agar"
+                ),
             ],
             "solutions": [
                 _variable_solution(
@@ -872,7 +1041,14 @@ UPDATES = (
                             label="copper(II) sulfate pentahydrate",
                             notes="The P10 stock table omits the unit, but the preparation text specifies 0.05 g.",
                         ),
-                        _component("CuCl2", "0.01", "G_PER_L", source=SRC_P10, identifier="CHEBI:49553", label="CuCl2"),
+                        _component(
+                            "CuCl2",
+                            "0.01",
+                            "G_PER_L",
+                            source=SRC_P10,
+                            identifier="CHEBI:49553",
+                            label="CuCl2",
+                        ),
                         _component("Fe(III)NH4-EDTA", "0.05", "G_PER_L", source=SRC_P10),
                         _component(
                             "(NH4)2MoO4",
@@ -936,9 +1112,7 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 def _require_target(doc: dict[str, Any], relative_path: str) -> None:
     expected_id = EXPECTED_IDS[relative_path]
     if doc.get("id") != expected_id:
-        raise ValueError(
-            f"{relative_path}: found id {doc.get('id')!r}, expected {expected_id!r}"
-        )
+        raise ValueError(f"{relative_path}: found id {doc.get('id')!r}, expected {expected_id!r}")
 
     expected_source_term = EXPECTED_SOURCE_TERMS[relative_path]
     if _source_term_id(doc) != expected_source_term:
@@ -968,9 +1142,7 @@ def _composition_components(doc: dict[str, Any]) -> list[dict[str, Any]]:
             continue
         nested = solution.get("composition") or []
         nested_components = (
-            [i for i in nested if isinstance(i, dict)]
-            if isinstance(nested, list)
-            else []
+            [i for i in nested if isinstance(i, dict)] if isinstance(nested, list) else []
         )
         components.extend(nested_components or [solution])
     return components

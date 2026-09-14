@@ -92,10 +92,13 @@ def test_repair_corrects_nbrc_order_units_ph_and_empty_agar_solution(
     assert repaired["physical_state"] == "SOLID_AGAR"
     assert repaired["ph_value"] == 6.0
     assert "ph_range" not in repaired
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert "solutions" not in repaired
     assert scorer_module.score_record(repaired) == (0, [])
     assert scorer_module.score_parsed([(str(repair_module.TARGET), repaired)]) == []

@@ -28,10 +28,7 @@ CHILD_ID = "CultureMech:006538"
 CHILD_NAME = "for_dsm_11763"
 CHILD_SOURCE_TERM = "komodo.medium:815.1"
 RELATIONSHIP = "STRAIN_SPECIFIC_VARIANT"
-CHILD_NOTES = (
-    "KOMODO Medium 815.1 applies DESULFOTOMACULUM HALOPHILUM medium "
-    "to DSM 11763."
-)
+CHILD_NOTES = "KOMODO Medium 815.1 applies DESULFOTOMACULUM HALOPHILUM medium " "to DSM 11763."
 
 PH = 6.0
 INGREDIENT_SIGNATURE = (
@@ -156,10 +153,7 @@ def _parent_ref() -> dict[str, str]:
         "relationship": RELATIONSHIP,
         "id": PARENT_ID,
         "name": PARENT_NAME,
-        "notes": (
-            "KOMODO Medium 815 is the DESULFOTOMACULUM HALOPHILUM "
-            "base for Medium 815.1."
-        ),
+        "notes": ("KOMODO Medium 815 is the DESULFOTOMACULUM HALOPHILUM " "base for Medium 815.1."),
     }
 
 

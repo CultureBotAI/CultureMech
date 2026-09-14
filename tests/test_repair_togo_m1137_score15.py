@@ -79,10 +79,13 @@ def test_repair_corrects_gases_and_medium_types(repair_module) -> None:
 
     assert repaired["medium_type"] == "DEFINED"
     assert repaired["composition_type"] == "DEFINED"
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Oxygen gas"]["term"] == {
         "id": "CHEBI:15379",
         "label": "dioxygen",
@@ -95,9 +98,12 @@ def test_repair_expands_saltwater_and_wolfe_stocks(repair_module) -> None:
     saltwater = _by_name(solutions["Artificial saltwater"]["composition"])
     wolfe = _by_name(solutions["Wolfe's mineral solution"]["composition"])
 
-    assert repair_module._solution_signatures(
-        repaired,
-    ) == repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._solution_signatures(
+            repaired,
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURES
+    )
     assert saltwater["MgCl2 x 6H2O"]["term"] == {
         "id": "CHEBI:86345",
         "label": "magnesium dichloride hexahydrate",
@@ -144,9 +150,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

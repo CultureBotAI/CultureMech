@@ -344,10 +344,7 @@ def _jcm_187_trace_elements() -> dict[str, Any]:
             _listed_component("Na2MoO4 x 2H2O", "36.0", "MG_PER_L", source=source),
             _listed_component("Distilled water", "1.0", "L", source=source),
         ],
-        notes=(
-            "JCM Medium 1095 adds 1.0 ml/L Trace element solution from "
-            "JCM Medium 187."
-        ),
+        notes=("JCM Medium 1095 adds 1.0 ml/L Trace element solution from " "JCM Medium 187."),
     )
 
 
@@ -362,10 +359,7 @@ def _selenite_tungstate() -> dict[str, Any]:
             _listed_component("Na2WO4 x 2H2O", "8.0", "MG_PER_L", source=source),
             _listed_component("Distilled water", "1.0", "L", source=source),
         ],
-        notes=(
-            "JCM Medium 1095 adds 0.5 ml/L Selenite-tungstate solution from "
-            "JCM Medium 431."
-        ),
+        notes=("JCM Medium 1095 adds 0.5 ml/L Selenite-tungstate solution from " "JCM Medium 431."),
     )
 
 
@@ -427,8 +421,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 3,
         "action": "MIX",
         "description": (
-            "After cooling, add MgCl2, CaCl2, Trace vitamins, NaHCO3, and "
-            "Substrate solutions."
+            "After cooling, add MgCl2, CaCl2, Trace vitamins, NaHCO3, and " "Substrate solutions."
         ),
     },
     {
@@ -443,8 +436,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 5,
         "action": "MIX",
         "description": (
-            "Prior to use, add 10.0 ml/L 5% Na2S x 9H2O solution autoclaved "
-            "and stored under N2."
+            "Prior to use, add 10.0 ml/L 5% Na2S x 9H2O solution autoclaved " "and stored under N2."
         ),
     },
 )

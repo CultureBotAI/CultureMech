@@ -696,8 +696,7 @@ def repair_record(
 
 def plan_repairs(normalized: Path) -> dict[Path, dict[str, Any]]:
     parent_by_token = {
-        base_token: _load(normalized / parent.path)
-        for base_token, parent in PARENTS.items()
+        base_token: _load(normalized / parent.path) for base_token, parent in PARENTS.items()
     }
     for base_token, parent in PARENTS.items():
         _require_id(parent_by_token[base_token], parent.expected_id, parent.path)

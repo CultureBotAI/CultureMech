@@ -134,8 +134,7 @@ def _ensure_event(doc: dict[str, Any]) -> None:
 def repair_record(doc: dict[str, Any]) -> dict[str, Any]:
     if doc.get("id") != EXPECTED_ID:
         raise ValueError(
-            f"{TARGET}: expected immutable id {EXPECTED_ID}, "
-            f"found {doc.get('id')!r}"
+            f"{TARGET}: expected immutable id {EXPECTED_ID}, " f"found {doc.get('id')!r}"
         )
     _check_source(doc)
 

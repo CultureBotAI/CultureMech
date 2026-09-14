@@ -91,8 +91,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
 
     if term is not None:
@@ -318,8 +317,7 @@ M2227_INGREDIENTS = (
         "G_PER_L",
         source=M2227_SOURCE,
         notes=(
-            "ATCC Medium 1161 lists 10.0 g/L Agar, Noble (BD 214230) "
-            "in the component table."
+            "ATCC Medium 1161 lists 10.0 g/L Agar, Noble (BD 214230) " "in the component table."
         ),
         term=AGAR,
         physicochemical_roles=("SOLIDIFYING_AGENT",),
@@ -351,10 +349,7 @@ M2227_SOLUTIONS = (
                 "15.0",
                 "PERCENT_W_V",
                 source=M2227_SOURCE,
-                notes=(
-                    "ATCC Medium 1161 specifies the yeast extract solution as "
-                    "15.0% w/v."
-                ),
+                notes=("ATCC Medium 1161 specifies the yeast extract solution as " "15.0% w/v."),
                 term=YEAST_EXTRACT,
                 nutritional_roles=("PROTEIN_SOURCE", "VITAMIN_SOURCE"),
             ),
@@ -611,9 +606,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -641,19 +634,13 @@ def _all_composition_rows(doc: dict[str, Any]) -> list[dict[str, Any]]:
     for solution in doc.get("solutions") or []:
         if not isinstance(solution, dict):
             continue
-        rows.extend(
-            row
-            for row in solution.get("composition") or []
-            if isinstance(row, dict)
-        )
+        rows.extend(row for row in solution.get("composition") or [] if isinstance(row, dict))
     return rows
 
 
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}")
     if _source_term_id(doc) != target.media_term_id:
         raise ValueError(f"{target.path}: expected media term {target.media_term_id}")
 

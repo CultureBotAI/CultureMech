@@ -106,10 +106,7 @@ def test_repair_expands_artificial_marine_water_stocks(repair_module) -> None:
         "id": "CHEBI:76209",
         "label": "sodium sulfide nonahydrate",
     }
-    assert (
-        solutions["1 M Glucose solution"]["preparation_notes"]
-        == "Filter-sterilize separately."
-    )
+    assert solutions["1 M Glucose solution"]["preparation_notes"] == "Filter-sterilize separately."
 
 
 def test_repair_expands_jcm_187_and_431_stocks(repair_module) -> None:
@@ -177,9 +174,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module._references()
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module._references()]
     matching_events = [
         event
         for event in twice["curation_history"]

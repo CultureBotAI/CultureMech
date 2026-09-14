@@ -44,13 +44,10 @@ def _doc(target) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "LIQUID",
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_signature
+            _ingredient(name, value, unit) for name, value, unit in target.imported_signature
         ],
         "media_term": {
-            "preferred_term": (
-                f"TOGO Medium {target.expected_media_term.removeprefix('TOGO:')}"
-            ),
+            "preferred_term": (f"TOGO Medium {target.expected_media_term.removeprefix('TOGO:')}"),
             "term": {"id": target.expected_media_term, "label": target.title},
         },
         "notes": "Source: TOGO",
@@ -72,9 +69,9 @@ def test_repair_normalizes_ml_l_and_condition_slots(
     target = getattr(repair_module, target_name)
     repaired = repair_module.repair_record(_doc(target), target)
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == target.final_signature
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients") == target.final_signature
+    )
     assert repaired["ph_value"] == 7.8
     assert repaired["temperature_value"] == 37.0
     assert scorer_module.score_record(repaired) == (0, [])

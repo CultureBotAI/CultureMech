@@ -141,7 +141,9 @@ def _water(source: str) -> dict[str, Any]:
     )
 
 
-def _parent_media(path: str, relationship: str, term: dict[str, str], name: str, notes: str) -> dict[str, str]:
+def _parent_media(
+    path: str, relationship: str, term: dict[str, str], name: str, notes: str
+) -> dict[str, str]:
     return {
         "path": f"data/normalized_yaml/{path}",
         "relationship": relationship,
@@ -309,8 +311,7 @@ TARGETS: tuple[Target, ...] = (
         expected_id="CultureMech:010036",
         expected_media_term="TOGO:M636",
         notes=(
-            "TOGO M636 mirrors JCM Medium 625: Medium 624 supplemented with "
-            "3.0 g/L L-proline."
+            "TOGO M636 mirrors JCM Medium 625: Medium 624 supplemented with " "3.0 g/L L-proline."
         ),
         recipe={
             "medium_type": "COMPLEX",
@@ -499,7 +500,9 @@ def _ensure_event(doc: dict[str, Any], target: Target) -> None:
 
 def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
     if doc.get("id") != target.expected_id:
-        raise ValueError(f"{target.path}: expected id {target.expected_id}, found {doc.get('id')!r}")
+        raise ValueError(
+            f"{target.path}: expected id {target.expected_id}, found {doc.get('id')!r}"
+        )
     if _source_term_id(doc) != target.expected_media_term:
         raise ValueError(f"{target.path}: expected media term {target.expected_media_term}")
 

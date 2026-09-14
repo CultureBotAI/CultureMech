@@ -78,9 +78,7 @@ def test_named_duplicates_link_to_komodo_383_parent(
         repair_module._duplicate_notes(source_duplicate),
     )
     assert repaired["variant_relationship"] == "SOURCE_DUPLICATE"
-    assert repaired["variant_modifications"] == [
-        repair_module._duplicate_notes(source_duplicate)
-    ]
+    assert repaired["variant_modifications"] == [repair_module._duplicate_notes(source_duplicate)]
     assert "ingredients_curated" in repaired["data_quality_flags"]
     assert "variant_children" not in repaired
 
@@ -99,41 +97,41 @@ def test_parent_is_promoted_and_lists_exact_signature_children(repair_module) ->
             repair_module._source_duplicate_entry(source_duplicate)
             for source_duplicate in repair_module.SOURCE_DUPLICATES
         ],
-        *[
-            repair_module._strain_child_entry(child)
-            for child in repair_module.STRAIN_CHILDREN
-        ],
+        *[repair_module._strain_child_entry(child) for child in repair_module.STRAIN_CHILDREN],
     ]
 
 
 def test_repair_is_idempotent(repair_module) -> None:
     once = repair_module.plan_repairs()
     twice = {
-        path: repair_module.repair_parent(doc)
-        if path == repair_module.NORMALIZED / repair_module.PARENT
-        else repair_module.repair_source_duplicate(
-            path.relative_to(repair_module.NORMALIZED),
-            doc,
-        )
-        if path.relative_to(repair_module.NORMALIZED)
-        in repair_module.SOURCE_DUPLICATE_BY_PATH
-        else repair_module.repair_strain_child(
-            path.relative_to(repair_module.NORMALIZED),
-            doc,
+        path: (
+            repair_module.repair_parent(doc)
+            if path == repair_module.NORMALIZED / repair_module.PARENT
+            else (
+                repair_module.repair_source_duplicate(
+                    path.relative_to(repair_module.NORMALIZED),
+                    doc,
+                )
+                if path.relative_to(repair_module.NORMALIZED)
+                in repair_module.SOURCE_DUPLICATE_BY_PATH
+                else repair_module.repair_strain_child(
+                    path.relative_to(repair_module.NORMALIZED),
+                    doc,
+                )
+            )
         )
         for path, doc in once.items()
     }
 
     assert twice == once
     for path in once:
-        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(
-            once[path]
-        )
+        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(once[path])
 
 
 def test_plan_repairs_targets_current_records(repair_module) -> None:
     expected = {
-        repair_module.NORMALIZED / repair_module.PARENT: repair_module.repair_parent(
+        repair_module.NORMALIZED
+        / repair_module.PARENT: repair_module.repair_parent(
             _load_yaml(repair_module.NORMALIZED / repair_module.PARENT)
         )
     }

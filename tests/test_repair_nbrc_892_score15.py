@@ -86,9 +86,10 @@ def test_repair_document_grounds_source_components(repair_module) -> None:
     repaired = repair_module.repair_document(_minimal_doc(repair_module))
     ingredients = {row["preferred_term"]: row for row in repaired["ingredients"]}
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Casein peptone"]["term"] == {
         "id": "FOODON:03315719",
         "label": "Casein peptone",
@@ -127,9 +128,10 @@ def test_repair_document_adds_reference_and_event_once(repair_module) -> None:
     twice = repair_module.repair_document(once)
 
     assert twice["references"] == [{"reference": repair_module.NBRC_URL}]
-    assert repair_module._signature(
-        twice["ingredients"], "ingredients"
-    ) == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(twice["ingredients"], "ingredients")
+        == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    )
     matching_events = [
         event
         for event in twice["curation_history"]
@@ -181,7 +183,8 @@ def test_target_record_matches_nbrc_891_repair_contract(repair_module) -> None:
 
     assert doc["id"] == repair_module.TARGET_ID
     assert doc["name"] in {"892", repair_module.TITLE}
-    assert repair_module._signature(
-        doc["ingredients"], "ingredients"
-    ) == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(doc["ingredients"], "ingredients")
+        == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    )
     assert repaired["media_term"]["term"]["id"] == "nbrc.medium:891"

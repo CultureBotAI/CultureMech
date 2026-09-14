@@ -93,9 +93,7 @@ NISEW_SIGNATURE: tuple[Component, ...] = (
     ("Distilled water", "1.0", "L"),
 )
 
-FESO4_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("FeSO4", "variable", "VARIABLE"),
-)
+FESO4_STOCK_SIGNATURE: tuple[Component, ...] = (("FeSO4", "variable", "VARIABLE"),)
 
 IMPORTED_SOLUTION_SIGNATURES: tuple[SolutionSignature, ...] = (
     ("UBS solution (see Medium [M752])", "100", "G_PER_L", ()),
@@ -405,8 +403,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 5,
         "action": "MIX",
         "description": (
-            "After cooling, add 5.0 ml/L filter-sterilized 1 M FeSO4 "
-            "solution at pH 2.0."
+            "After cooling, add 5.0 ml/L filter-sterilized 1 M FeSO4 " "solution at pH 2.0."
         ),
     },
 )
@@ -452,9 +449,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

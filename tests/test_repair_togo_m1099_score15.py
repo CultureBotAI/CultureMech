@@ -83,10 +83,13 @@ def test_repair_preserves_main_m1099_components(repair_module) -> None:
     assert repaired["composition_type"] == "SEMI_DEFINED"
     assert repaired["physical_state"] == "LIQUID"
     assert repaired["ph_value"] == 5.5
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Distilled water"]["concentration"] == {
         "value": "960.0",
         "unit": "ML_PER_L",
@@ -109,22 +112,34 @@ def test_repair_expands_molar_salt_stocks(repair_module) -> None:
         "Selenite-tungstate solution",
         "Trace element solution SL-10",
     }
-    assert repair_module._signature(
-        solutions["30 mM CaCl2 x 2H2O solution"]["composition"],
-        "30 mM CaCl2 x 2H2O solution",
-    ) == repair_module.CACL2_STOCK_SIGNATURE
-    assert repair_module._signature(
-        solutions["1 M MgCl2 x 6H2O solution"]["composition"],
-        "1 M MgCl2 x 6H2O solution",
-    ) == repair_module.MGCL2_STOCK_SIGNATURE
-    assert repair_module._signature(
-        solutions["20 mM MgSO4 x 7H2O solution"]["composition"],
-        "20 mM MgSO4 x 7H2O solution",
-    ) == repair_module.MGSO4_STOCK_SIGNATURE
-    assert repair_module._signature(
-        solutions["20 mM (NH4)2HPO4 solution"]["composition"],
-        "20 mM (NH4)2HPO4 solution",
-    ) == repair_module.AMMONIUM_HPO4_STOCK_SIGNATURE
+    assert (
+        repair_module._signature(
+            solutions["30 mM CaCl2 x 2H2O solution"]["composition"],
+            "30 mM CaCl2 x 2H2O solution",
+        )
+        == repair_module.CACL2_STOCK_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            solutions["1 M MgCl2 x 6H2O solution"]["composition"],
+            "1 M MgCl2 x 6H2O solution",
+        )
+        == repair_module.MGCL2_STOCK_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            solutions["20 mM MgSO4 x 7H2O solution"]["composition"],
+            "20 mM MgSO4 x 7H2O solution",
+        )
+        == repair_module.MGSO4_STOCK_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            solutions["20 mM (NH4)2HPO4 solution"]["composition"],
+            "20 mM (NH4)2HPO4 solution",
+        )
+        == repair_module.AMMONIUM_HPO4_STOCK_SIGNATURE
+    )
 
 
 def test_repair_expands_cross_referenced_stocks(repair_module) -> None:
@@ -135,14 +150,20 @@ def test_repair_expands_cross_referenced_stocks(repair_module) -> None:
     selenite_components = _by_name(selenite["composition"])
     trace_components = _by_name(trace_element["composition"])
 
-    assert repair_module._signature(
-        selenite["composition"],
-        "Selenite-tungstate solution",
-    ) == repair_module.SELENITE_TUNGSTATE_SIGNATURE
-    assert repair_module._signature(
-        trace_element["composition"],
-        "Trace element solution SL-10",
-    ) == repair_module.TRACE_ELEMENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            selenite["composition"],
+            "Selenite-tungstate solution",
+        )
+        == repair_module.SELENITE_TUNGSTATE_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            trace_element["composition"],
+            "Trace element solution SL-10",
+        )
+        == repair_module.TRACE_ELEMENT_SIGNATURE
+    )
     assert selenite_components["Na2SeO3 x 5H2O"]["term"] == {
         "id": "CHEBI:131361",
         "label": "disodium selenite pentahydrate",
@@ -164,12 +185,7 @@ def test_repair_record_drops_out_of_review_ranking(
     repaired = repair_module.repair_record(_doc(repair_module))
 
     assert scorer_module.score_record(repaired) == (0, [])
-    assert (
-        scorer_module.score_parsed(
-            [("bacterial/TOGO_M1099_VXG_Gellan.yaml", repaired)]
-        )
-        == []
-    )
+    assert scorer_module.score_parsed([("bacterial/TOGO_M1099_VXG_Gellan.yaml", repaired)]) == []
     assert repaired["data_quality_flags"] == [
         "has_ontology_mappings",
         "ingredients_curated",

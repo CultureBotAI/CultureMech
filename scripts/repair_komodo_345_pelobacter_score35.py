@@ -20,8 +20,7 @@ NORMALIZED = REPO / "data" / "normalized_yaml"
 YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 KOMODO_345 = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=345"
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=345"
 )
 TOGO_M1791 = "https://togomedium.org/medium/M1791"
 NBRC_1016 = "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1016"
@@ -84,8 +83,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
         "term": _term(*term),
         "mediaingredientmech_chebi_term": _term(*term),
     }
@@ -125,15 +123,32 @@ def _stock_component(
 
 def _sl10_trace_elements() -> list[dict[str, Any]]:
     return [
-        _stock_component("HCl (25%; 7.7 M)", "10", "ML_PER_L", term=("CHEBI:17883", "hydrogen chloride")),
-        _stock_component("FeCl2 x 4H2O", "1.5", "G_PER_L", term=("CHEBI:86249", "iron dichloride tetrahydrate")),
+        _stock_component(
+            "HCl (25%; 7.7 M)", "10", "ML_PER_L", term=("CHEBI:17883", "hydrogen chloride")
+        ),
+        _stock_component(
+            "FeCl2 x 4H2O", "1.5", "G_PER_L", term=("CHEBI:86249", "iron dichloride tetrahydrate")
+        ),
         _stock_component("ZnCl2", "70", "MG_PER_L", term=("CHEBI:49976", "zinc dichloride")),
-        _stock_component("MnCl2 x 4H2O", "100", "MG_PER_L", term=("CHEBI:86368", "manganese(II) chloride tetrahydrate")),
+        _stock_component(
+            "MnCl2 x 4H2O",
+            "100",
+            "MG_PER_L",
+            term=("CHEBI:86368", "manganese(II) chloride tetrahydrate"),
+        ),
         _stock_component("H3BO3", "6", "MG_PER_L", term=("CHEBI:33118", "boric acid")),
-        _stock_component("CoCl2 x 6H2O", "190", "MG_PER_L", term=("CHEBI:53503", "cobalt chloride hexahydrate")),
-        _stock_component("CuCl2 x 2H2O", "2", "MG_PER_L", term=("CHEBI:86318", "copper(II) chloride dihydrate")),
-        _stock_component("NiCl2 x 6H2O", "24", "MG_PER_L", term=("CHEBI:53542", "nickel chloride hexahydrate")),
-        _stock_component("Na2MoO4 x 2H2O", "36", "MG_PER_L", term=("CHEBI:75213", "sodium molybdate dihydrate")),
+        _stock_component(
+            "CoCl2 x 6H2O", "190", "MG_PER_L", term=("CHEBI:53503", "cobalt chloride hexahydrate")
+        ),
+        _stock_component(
+            "CuCl2 x 2H2O", "2", "MG_PER_L", term=("CHEBI:86318", "copper(II) chloride dihydrate")
+        ),
+        _stock_component(
+            "NiCl2 x 6H2O", "24", "MG_PER_L", term=("CHEBI:53542", "nickel chloride hexahydrate")
+        ),
+        _stock_component(
+            "Na2MoO4 x 2H2O", "36", "MG_PER_L", term=("CHEBI:75213", "sodium molybdate dihydrate")
+        ),
         _stock_component("Distilled water", "990", "ML_PER_L", term=("CHEBI:15377", "water")),
     ]
 
@@ -337,15 +352,12 @@ def _top_level_signature(doc: dict[str, Any]) -> frozenset[str]:
 
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}")
 
     source_term = _source_term_id(doc)
     if source_term != target.source_term:
         raise ValueError(
-            f"{target.path}: expected source term {target.source_term}, "
-            f"found {source_term!r}"
+            f"{target.path}: expected source term {target.source_term}, " f"found {source_term!r}"
         )
 
     if _top_level_signature(doc) not in target.accepted_signatures:

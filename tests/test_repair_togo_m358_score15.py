@@ -99,8 +99,7 @@ def _parent_doc(repair_module) -> dict:
         "curation_history": [],
         "solutions": [
             _solution(name, value, unit, list(composition))
-            for name, value, unit, composition
-            in repair_module.IMPORTED_PARENT_SOLUTION_SIGNATURES
+            for name, value, unit, composition in repair_module.IMPORTED_PARENT_SOLUTION_SIGNATURES
         ],
         "variant_children": [
             {
@@ -126,10 +125,13 @@ def test_repair_represents_py4sr_as_plant_extract_supplement(repair_module) -> N
     assert repaired["physical_state"] == "SOLID_AGAR"
     assert repaired["ph_value"] == 6.7
     assert repaired["ingredients"] == []
-    assert repair_module._solution_signatures(
-        repaired["solutions"],
-        "solutions",
-    ) == repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._solution_signatures(
+            repaired["solutions"],
+            "solutions",
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURES
+    )
     assert plant_extract["concentration"] == {"value": "50.0", "unit": "ML_PER_L"}
     assert "term" not in components["Rice straw"]
     assert components["Distilled water"]["term"] == {
@@ -155,9 +157,7 @@ def test_repair_py4sr_adds_references_preparation_and_flags(
     once = repair_module.repair_target(_doc(repair_module))
     twice = repair_module.repair_target(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.TARGET_REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.TARGET_REFERENCES]
     assert twice["preparation_steps"] == list(repair_module.TARGET_PREPARATION_STEPS)
     assert twice["data_quality_flags"] == [
         "has_ontology_mappings",
@@ -184,10 +184,13 @@ def test_repair_parent_restores_jcm_363_formula(repair_module) -> None:
 
     assert repaired["physical_state"] == "SOLID_AGAR"
     assert repaired["ph_value"] == 6.7
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_PARENT_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_PARENT_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Trypticase peptone (BD-BBL)"]["concentration"] == {
         "value": "10.0",
         "unit": "G_PER_L",
@@ -210,10 +213,13 @@ def test_repair_parent_expands_stock_solutions(repair_module) -> None:
     resazurin = _by_name(solutions["0.1% (w/v) resazurin-Na"]["composition"])
     carbonate = _by_name(solutions["8% (w/v) Na2CO3"]["composition"])
 
-    assert repair_module._solution_signatures(
-        repaired["solutions"],
-        "solutions",
-    ) == repair_module.FINAL_PARENT_SOLUTION_SIGNATURES
+    assert (
+        repair_module._solution_signatures(
+            repaired["solutions"],
+            "solutions",
+        )
+        == repair_module.FINAL_PARENT_SOLUTION_SIGNATURES
+    )
     assert solutions["Salt Solution I"]["concentration"] == {
         "value": "75.0",
         "unit": "ML_PER_L",
@@ -270,9 +276,7 @@ def test_repair_parent_adds_quality_metadata_and_scores_zero(
 
     assert repaired["preparation_steps"] == list(repair_module.PARENT_PREPARATION_STEPS)
     assert repaired["sterilization"] == repair_module.PARENT_STERILIZATION
-    assert repaired["references"] == [
-        {"reference": url} for url in repair_module.PARENT_REFERENCES
-    ]
+    assert repaired["references"] == [{"reference": url} for url in repair_module.PARENT_REFERENCES]
     assert repaired["data_quality_flags"] == [
         "has_ontology_mappings",
         "has_unmapped_ingredients",

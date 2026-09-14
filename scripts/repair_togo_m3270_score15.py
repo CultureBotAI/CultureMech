@@ -210,8 +210,7 @@ TOGO_CHILD = {
     "id": EXPECTED_ID,
     "name": "tmbs4_medium",
     "notes": (
-        "TOGO M3270 imports JCM Medium 1408, a source duplicate of DSMZ "
-        "Medium 559 TMBS4."
+        "TOGO M3270 imports JCM Medium 1408, a source duplicate of DSMZ " "Medium 559 TMBS4."
     ),
 }
 
@@ -256,8 +255,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     if term:
         grounding = GROUNDINGS[preferred_term]
@@ -369,10 +367,7 @@ def _trace_element_solution() -> dict[str, Any]:
             source=JCM_187_SOURCE,
             ungrounded=frozenset({"NiCl2 x 6H2O"}),
         ),
-        notes=(
-            "JCM Medium 1408 adds 1.0 ml/L Trace element solution from "
-            "JCM Medium 187."
-        ),
+        notes=("JCM Medium 1408 adds 1.0 ml/L Trace element solution from " "JCM Medium 187."),
     )
 
 
@@ -381,10 +376,7 @@ def _selenite_tungstate_solution() -> dict[str, Any]:
         "Selenite-tungstate solution",
         "1.0",
         _components(SELENITE_TUNGSTATE_SIGNATURE, source=JCM_431_SOURCE),
-        notes=(
-            "JCM Medium 1408 adds 1.0 ml/L Selenite-tungstate solution from "
-            "JCM Medium 431."
-        ),
+        notes=("JCM Medium 1408 adds 1.0 ml/L Selenite-tungstate solution from " "JCM Medium 431."),
     )
 
 
@@ -513,8 +505,7 @@ def _solutions() -> list[dict[str, Any]]:
                 )
             ],
             notes=(
-                "JCM Medium 1408 adds 10.0 ml/L filter-sterilized "
-                "0.1 M Dithiothreitol solution."
+                "JCM Medium 1408 adds 10.0 ml/L filter-sterilized " "0.1 M Dithiothreitol solution."
             ),
         ),
         _percent_solution(
@@ -610,9 +601,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -679,9 +668,7 @@ def _ensure_target(doc: dict[str, Any]) -> None:
 
 def _ensure_parent(doc: dict[str, Any]) -> None:
     if doc.get("id") != EXPECTED_PARENT_ID:
-        raise ValueError(
-            f"{PARENT}: expected id {EXPECTED_PARENT_ID}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{PARENT}: expected id {EXPECTED_PARENT_ID}, found {doc.get('id')!r}")
     if _source_term_id(doc) != EXPECTED_PARENT_MEDIA_TERM:
         raise ValueError(f"{PARENT}: expected media term {EXPECTED_PARENT_MEDIA_TERM}")
 

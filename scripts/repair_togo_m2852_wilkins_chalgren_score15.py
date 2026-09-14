@@ -36,10 +36,7 @@ BERNARDE_2010_PMID = "PMID:20610778"
 REFERENCES = (TOGO_M2852, TOGO_M2852_API, BERNARDE_2010_DOI, BERNARDE_2010_PMID)
 
 SOURCE = "TOGO M2852 / Bernarde et al. 2010"
-TITLE = (
-    "Wilkins-Chalgren agar plates (supplemented with 10% human blood "
-    "and antibiotics)"
-)
+TITLE = "Wilkins-Chalgren agar plates (supplemented with 10% human blood " "and antibiotics)"
 
 Component = tuple[str, str, str]
 
@@ -175,10 +172,7 @@ def _ingredient(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": SOURCE,
-        "notes": (
-            notes
-            or f"{SOURCE} lists {value} {UNIT_LABELS[unit]} {preferred_term}."
-        ),
+        "notes": (notes or f"{SOURCE} lists {value} {UNIT_LABELS[unit]} {preferred_term}."),
     }
     if term:
         grounding = GROUNDINGS[preferred_term]
@@ -216,20 +210,14 @@ INGREDIENTS: tuple[dict[str, Any], ...] = (
         "Vancomycin",
         "1.0",
         "MG_PER_ML",
-        notes=(
-            "Bernarde et al. 2010 lists 1 mg/ml vancomycin from "
-            "Lilly France S.A."
-        ),
+        notes=("Bernarde et al. 2010 lists 1 mg/ml vancomycin from " "Lilly France S.A."),
         cellular_metabolic_roles=("INHIBITOR",),
     ),
     _ingredient(
         "Cefsulodin",
         "5.0",
         "MG_PER_ML",
-        notes=(
-            "Bernarde et al. 2010 lists 5 mg/ml cefsulodin from "
-            "Takeda France S.A."
-        ),
+        notes=("Bernarde et al. 2010 lists 5 mg/ml cefsulodin from " "Takeda France S.A."),
         cellular_metabolic_roles=("INHIBITOR",),
     ),
     _ingredient(
@@ -248,10 +236,7 @@ INGREDIENTS: tuple[dict[str, Any], ...] = (
         "Trimethoprim",
         "1.0",
         "MG_PER_ML",
-        notes=(
-            "Bernarde et al. 2010 lists 1 mg/ml trimethoprim from "
-            "GlaxoSmithKline."
-        ),
+        notes=("Bernarde et al. 2010 lists 1 mg/ml trimethoprim from " "GlaxoSmithKline."),
         cellular_metabolic_roles=("INHIBITOR",),
     ),
     _ingredient(
@@ -318,18 +303,14 @@ def _require_target(doc: dict[str, Any]) -> None:
 
     source_term = _source_term_id(doc)
     if source_term != EXPECTED_MEDIA_TERM:
-        raise ValueError(
-            f"expected media term {EXPECTED_MEDIA_TERM}, found {source_term!r}"
-        )
+        raise ValueError(f"expected media term {EXPECTED_MEDIA_TERM}, found {source_term!r}")
 
     ingredient_signature = _signature(doc.get("ingredients") or [], "ingredients")
     if ingredient_signature not in {
         IMPORTED_INGREDIENT_SIGNATURE,
         FINAL_INGREDIENT_SIGNATURE,
     }:
-        raise ValueError(
-            "ingredient signature drifted from the reviewed TOGO M2852 recipe"
-        )
+        raise ValueError("ingredient signature drifted from the reviewed TOGO M2852 recipe")
 
 
 def _put_after(doc: dict[str, Any], key: str, value: Any, after: str) -> None:

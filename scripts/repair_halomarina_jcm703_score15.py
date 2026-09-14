@@ -464,8 +464,7 @@ def _jcm703_recipe() -> dict[str, Any]:
                 "PERCENT_W_V",
                 source=SOURCE_JCM_703,
                 notes=(
-                    "JCM Medium 703 supplements JCM Medium 702 with 0.3% "
-                    "final sodium formate."
+                    "JCM Medium 703 supplements JCM Medium 702 with 0.3% " "final sodium formate."
                 ),
                 term=("CHEBI:62965", "sodium formate"),
             ),
@@ -491,20 +490,14 @@ def _jcm703_recipe() -> dict[str, Any]:
                 "Trace minerals (TOGO Medium M142)",
                 "10",
                 source=SOURCE_JCM_703,
-                notes=(
-                    "JCM Medium 703 / TOGO M725 adds 10 ml/L Trace minerals "
-                    "from TOGO M142."
-                ),
+                notes=("JCM Medium 703 / TOGO M725 adds 10 ml/L Trace minerals " "from TOGO M142."),
                 composition=_m142_trace_minerals(),
             ),
             _solution(
                 "Trace vitamins (TOGO Medium M190)",
                 "10",
                 source=SOURCE_JCM_703,
-                notes=(
-                    "JCM Medium 703 / TOGO M725 adds 10 ml/L Trace vitamins "
-                    "from TOGO M190."
-                ),
+                notes=("JCM Medium 703 / TOGO M725 adds 10 ml/L Trace vitamins " "from TOGO M190."),
                 composition=_m190_trace_vitamins(),
             ),
             _solution(
@@ -526,10 +519,7 @@ def _jcm703_recipe() -> dict[str, Any]:
                 "3% Na2S x 9H2O solution",
                 "10",
                 source=SOURCE_JCM_703,
-                notes=(
-                    "JCM Medium 703 / TOGO M725 adds 10 ml/L 3% Na2S x "
-                    "9H2O solution."
-                ),
+                notes=("JCM Medium 703 / TOGO M725 adds 10 ml/L 3% Na2S x " "9H2O solution."),
                 composition=[
                     _source_component(
                         "Na2S x 9H2O",
@@ -546,8 +536,7 @@ def _jcm703_recipe() -> dict[str, Any]:
                 "step_number": 1,
                 "action": "MIX",
                 "description": (
-                    "Mix the base components except NaHCO3, Na2S x 9H2O, "
-                    "and trace vitamins."
+                    "Mix the base components except NaHCO3, Na2S x 9H2O, " "and trace vitamins."
                 ),
             },
             {
@@ -562,16 +551,14 @@ def _jcm703_recipe() -> dict[str, Any]:
                 "step_number": 3,
                 "action": "AUTOCLAVE",
                 "description": (
-                    "Distribute under N2-CO2, seal with butyl rubber stoppers, "
-                    "and autoclave."
+                    "Distribute under N2-CO2, seal with butyl rubber stoppers, " "and autoclave."
                 ),
             },
             {
                 "step_number": 4,
                 "action": "MIX",
                 "description": (
-                    "Add the sterile NaHCO3, Na2S x 9H2O, and trace vitamin "
-                    "solutions per liter."
+                    "Add the sterile NaHCO3, Na2S x 9H2O, and trace vitamin " "solutions per liter."
                 ),
             },
             {
@@ -583,8 +570,7 @@ def _jcm703_recipe() -> dict[str, Any]:
                 "step_number": 6,
                 "action": "MIX",
                 "description": (
-                    "Pressurize inoculated bottles to 200 kPa with N2-CO2 "
-                    "(80:20, v/v)."
+                    "Pressurize inoculated bottles to 200 kPa with N2-CO2 " "(80:20, v/v)."
                 ),
             },
         ],
@@ -709,15 +695,12 @@ def _top_level_signature(doc: dict[str, Any]) -> frozenset[str]:
 
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}")
 
     source_term = _source_term_id(doc)
     if source_term != target.source_term:
         raise ValueError(
-            f"{target.path}: expected source term {target.source_term}, "
-            f"found {source_term!r}"
+            f"{target.path}: expected source term {target.source_term}, " f"found {source_term!r}"
         )
 
     signature = _top_level_signature(doc)
@@ -729,9 +712,7 @@ def _ensure_references(doc: dict[str, Any], target: Target) -> None:
     references = doc.setdefault("references", [])
     if not isinstance(references, list):
         raise ValueError("references is not a list")
-    existing = {
-        row.get("reference") for row in references if isinstance(row, dict)
-    }
+    existing = {row.get("reference") for row in references if isinstance(row, dict)}
     for url in target.references:
         if url not in existing:
             references.append({"reference": url})

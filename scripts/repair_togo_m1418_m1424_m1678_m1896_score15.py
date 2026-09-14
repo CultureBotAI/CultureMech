@@ -100,8 +100,7 @@ TARGETS: tuple[RepairTarget, ...] = (
                 "step_number": 1,
                 "action": "MIX",
                 "description": (
-                    "Add 3 g CaCO3 to approximately 300 ml V-8 vegetable juice "
-                    "and stir for 2 h."
+                    "Add 3 g CaCO3 to approximately 300 ml V-8 vegetable juice " "and stir for 2 h."
                 ),
                 "duration": "2 h",
             },
@@ -109,8 +108,7 @@ TARGETS: tuple[RepairTarget, ...] = (
                 "step_number": 2,
                 "action": "FILTER",
                 "description": (
-                    "Centrifuge and retain 200 ml of the clarified vegetable "
-                    "juice supernatant."
+                    "Centrifuge and retain 200 ml of the clarified vegetable " "juice supernatant."
                 ),
             },
             {
@@ -318,9 +316,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -392,9 +388,7 @@ def _ingredients(target: RepairTarget) -> list[dict[str, Any]]:
 
 def _ensure_target(doc: dict[str, Any], target: RepairTarget) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}")
     if _source_term_id(doc) != target.source_term:
         raise ValueError(f"{target.path}: expected media term {target.source_term}")
 
@@ -418,9 +412,7 @@ def _ensure_flags(doc: dict[str, Any]) -> None:
         raise ValueError("data_quality_flags is not a list")
 
     flags = [
-        flag
-        for flag in flags
-        if flag not in {"incomplete_composition", "needs_manual_curation"}
+        flag for flag in flags if flag not in {"incomplete_composition", "needs_manual_curation"}
     ]
     flags.extend(
         (

@@ -113,10 +113,13 @@ def test_repair_expands_wolfe_elixir_and_5_percent_stocks(
     solutions = _by_name(repaired["solutions"])
     wolfe_components = _by_name(solutions["Wolfe's mineral elixir"]["composition"])
 
-    assert repair_module._signature(
-        solutions["Wolfe's mineral elixir"]["composition"],
-        "wolfe composition",
-    ) == repair_module.WOLFE_SIGNATURE
+    assert (
+        repair_module._signature(
+            solutions["Wolfe's mineral elixir"]["composition"],
+            "wolfe composition",
+        )
+        == repair_module.WOLFE_SIGNATURE
+    )
     assert "term" not in wolfe_components["MnSO4 x H2O"]
     assert wolfe_components["Na2WO4 x 2H2O"]["term"] == {
         "id": "CHEBI:63939",
@@ -126,9 +129,10 @@ def test_repair_expands_wolfe_elixir_and_5_percent_stocks(
         "value": "variable",
         "unit": "VARIABLE",
     }
-    assert solutions["5% Na2CO3 solution"]["composition"][0][
-        "mediaingredientmech_chebi_term"
-    ] == {"id": "CHEBI:29377", "label": "sodium carbonate"}
+    assert solutions["5% Na2CO3 solution"]["composition"][0]["mediaingredientmech_chebi_term"] == {
+        "id": "CHEBI:29377",
+        "label": "sodium carbonate",
+    }
     assert solutions["5% Na2S x 9H2O solution"]["composition"][0]["term"] == {
         "id": "CHEBI:76209",
         "label": "sodium sulfide nonahydrate",
@@ -168,9 +172,7 @@ def test_repair_adds_preparation_context_references_and_event_once(
     assert twice["incubation_atmosphere"] == "ANAEROBIC"
     assert "N2-CO2" in twice["preparation_steps"][1]["description"]
     assert "pH 7.2-7.5" in twice["preparation_steps"][2]["description"]
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

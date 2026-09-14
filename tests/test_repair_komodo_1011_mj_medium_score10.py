@@ -71,9 +71,7 @@ def test_dsmz_1011a_remains_source_duplicate_child(repair_module) -> None:
 
     assert repaired["parent_media"] == repair_module._source_duplicate_parent_ref()
     assert repaired["variant_relationship"] == "SOURCE_DUPLICATE"
-    assert repaired["variant_modifications"] == [
-        repair_module.SOURCE_DUPLICATE_CHILD["notes"]
-    ]
+    assert repaired["variant_modifications"] == [repair_module.SOURCE_DUPLICATE_CHILD["notes"]]
     assert "ingredients_curated" in repaired["data_quality_flags"]
 
 
@@ -93,14 +91,13 @@ def test_repair_is_idempotent(repair_module) -> None:
 
     assert twice == once
     for path in once:
-        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(
-            once[path]
-        )
+        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(once[path])
 
 
 def test_plan_repairs_targets_current_records(repair_module) -> None:
     expected = {
-        repair_module.NORMALIZED / repair_module.PARENT: repair_module.repair_parent(
+        repair_module.NORMALIZED
+        / repair_module.PARENT: repair_module.repair_parent(
             _load_yaml(repair_module.NORMALIZED / repair_module.PARENT)
         )
     }

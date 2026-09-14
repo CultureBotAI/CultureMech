@@ -323,8 +323,7 @@ def _ingredient_terms(doc: dict[str, Any]) -> set[str]:
 def _require_source_components(doc: dict[str, Any], update: WrapperUpdate) -> None:
     if doc.get("id") != EXPECTED_IDS[update.path]:
         raise ValueError(
-            f"{update.path}: found id {doc.get('id')!r}, "
-            f"expected {EXPECTED_IDS[update.path]!r}"
+            f"{update.path}: found id {doc.get('id')!r}, " f"expected {EXPECTED_IDS[update.path]!r}"
         )
 
     source_term = _source_term_id(doc)

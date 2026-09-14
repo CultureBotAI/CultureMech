@@ -221,7 +221,10 @@ def test_variant_children_are_bidirectional(repair_module) -> None:
         repair_module.KOMODO_141_8,
         repair_module.KOMODO_141_11,
     ):
-        assert repaired[path]["parent_media"]["path"] == f"data/normalized_yaml/{repair_module.DSMZ_141}"
+        assert (
+            repaired[path]["parent_media"]["path"]
+            == f"data/normalized_yaml/{repair_module.DSMZ_141}"
+        )
 
 
 def test_refuses_unexpected_source_term(repair_module) -> None:

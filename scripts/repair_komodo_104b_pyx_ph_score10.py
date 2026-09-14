@@ -77,13 +77,9 @@ class Child:
     def notes(self) -> str:
         if self.relationship == "STRAIN_SPECIFIC_VARIANT":
             return (
-                f"{self.source_label} applies pH {self.ph_value:g} PYX-MEDIUM "
-                f"for {self.dsm}."
+                f"{self.source_label} applies pH {self.ph_value:g} PYX-MEDIUM " f"for {self.dsm}."
             )
-        return (
-            f"{self.source_label} applies PYX-MEDIUM at pH {self.ph_value:g} "
-            f"for {self.dsm}."
-        )
+        return f"{self.source_label} applies PYX-MEDIUM at pH {self.ph_value:g} " f"for {self.dsm}."
 
     @property
     def action(self) -> str:
@@ -327,10 +323,7 @@ def repair_parent(doc: dict[str, Any]) -> dict[str, Any]:
             "curator": CURATOR,
             "action": STRAIN_ACTION,
             "changes": "Linked PYX-MEDIUM strain-specific children",
-            "source": (
-                "KOMODO Medium 104b.2, 104b.4, 104b.6, 104b.8, "
-                "104b.9, and 104b.11"
-            ),
+            "source": ("KOMODO Medium 104b.2, 104b.4, 104b.6, 104b.8, " "104b.9, and 104b.11"),
             "notes": (
                 "Changed DSM 753, DSM 5387, DSM 13181, DSM 19022, "
                 "DSM 21120, and DSM 21761 from SOURCE_DUPLICATE to "

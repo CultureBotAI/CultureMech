@@ -105,7 +105,9 @@ def test_plan_repairs_is_idempotent(tmp_path: Path) -> None:
     for target in repair.TARGETS:
         path = root / target.path
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(yaml.safe_dump(_minimal_doc(repair, target), sort_keys=False), encoding="utf-8")
+        path.write_text(
+            yaml.safe_dump(_minimal_doc(repair, target), sort_keys=False), encoding="utf-8"
+        )
 
     first = repair.plan_repairs(root)
     for path, doc in first.items():

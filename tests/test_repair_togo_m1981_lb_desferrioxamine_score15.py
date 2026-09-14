@@ -118,9 +118,7 @@ def test_repair_updates_variant_relationships_and_is_idempotent(repair_module) -
     assert lb_parent_twice == lb_parent_once
     assert target_once["parent_media"] == repair_module.PARENT_MEDIA
     assert target_once["variant_relationship"] == "SUPPLEMENTED_VARIANT"
-    assert target_once["variant_modifications"] == [
-        repair_module.VARIANT_MODIFICATIONS
-    ]
+    assert target_once["variant_modifications"] == [repair_module.VARIANT_MODIFICATIONS]
     assert repair_module.VARIANT_CHILD in lb_parent_once["variant_children"]
     assert {
         "id": "other",

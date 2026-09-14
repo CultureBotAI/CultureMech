@@ -35,8 +35,7 @@ def _minimal_solution(name: str, signature: tuple) -> dict:
     return {
         "preferred_term": name,
         "composition": [
-            _ingredient(ingredient, value, unit)
-            for ingredient, value, unit in signature
+            _ingredient(ingredient, value, unit) for ingredient, value, unit in signature
         ],
     }
 
@@ -80,29 +79,19 @@ def test_repair_document_expands_and_grounds_stock_solutions(
     repaired = repair_module.repair_document(_minimal_doc(repair_module))
     solutions = {row["preferred_term"]: row for row in repaired["solutions"]}
     phenanthrene = {
-        row["preferred_term"]: row
-        for row in solutions["Phenanthrene solution"]["composition"]
+        row["preferred_term"]: row for row in solutions["Phenanthrene solution"]["composition"]
     }
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.IMPORTED_INGREDIENT_SIGNATURE
-    assert repair_module._solution_signatures(repaired) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.IMPORTED_INGREDIENT_SIGNATURE
     )
+    assert repair_module._solution_signatures(repaired) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     assert solutions["Agar solution"]["composition"][0]["term"]["id"] == "CHEBI:2509"
-    assert (
-        solutions["MgSO4 solution"]["composition"][0]["term"]["id"]
-        == "CHEBI:32599"
-    )
-    assert (
-        solutions["CaCl2 solution"]["composition"][0]["term"]["id"]
-        == "CHEBI:3312"
-    )
+    assert solutions["MgSO4 solution"]["composition"][0]["term"]["id"] == "CHEBI:32599"
+    assert solutions["CaCl2 solution"]["composition"][0]["term"]["id"] == "CHEBI:3312"
     assert phenanthrene["Phenanthrene"]["term"]["id"] == "CHEBI:28851"
-    assert (
-        phenanthrene["Dimethyl sulfoxide (DMSO)"]["term"]["id"] == "CHEBI:28262"
-    )
+    assert phenanthrene["Dimethyl sulfoxide (DMSO)"]["term"]["id"] == "CHEBI:28262"
     assert repaired["data_quality_flags"] == [
         "has_ontology_mappings",
         "has_unmapped_ingredients",
@@ -123,9 +112,7 @@ def test_repair_document_adds_reference_and_event_once(repair_module) -> None:
     twice = repair_module.repair_document(once)
 
     assert twice["references"] == [{"reference": repair_module.NBRC_URL}]
-    assert repair_module._solution_signatures(twice) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
-    )
+    assert repair_module._solution_signatures(twice) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     matching_events = [
         event
         for event in twice["curation_history"]
@@ -188,7 +175,5 @@ def test_target_record_matches_nbrc_1339_repair_contract(repair_module) -> None:
     assert repair_module._signature(doc["ingredients"], "ingredients") == (
         repair_module.IMPORTED_INGREDIENT_SIGNATURE
     )
-    assert repair_module._solution_signatures(repaired) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
-    )
+    assert repair_module._solution_signatures(repaired) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     assert repaired["media_term"]["term"]["id"] == "nbrc.medium:1339"

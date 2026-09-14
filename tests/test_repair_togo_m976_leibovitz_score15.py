@@ -86,9 +86,10 @@ def test_togo_m976_units_groundings_and_parent_are_repaired(
     repaired = repair_module.repair_togo(_media_doc(repair_module, togo=True))
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_SIGNATURE
+    )
     assert ingredients["Leibovitz's L-15 medium"]["concentration"] == {
         "value": "1.0",
         "unit": "L",
@@ -119,9 +120,10 @@ def test_mediadive_j930_units_groundings_and_child_are_repaired(
     repaired = repair_module.repair_j930(_media_doc(repair_module, togo=False))
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_SIGNATURE
+    )
     assert ingredients["NaCl"]["concentration"] == {
         "value": "15.0",
         "unit": "G_PER_L",
@@ -134,9 +136,10 @@ def test_mediadive_4941_solution_is_repaired(repair_module) -> None:
     repaired = repair_module.repair_solution(_solution_doc(repair_module))
     components = _by_name(repaired["composition"])
 
-    assert repair_module._signature(
-        repaired["composition"], "composition"
-    ) == repair_module.FINAL_SIGNATURE
+    assert (
+        repair_module._signature(repaired["composition"], "composition")
+        == repair_module.FINAL_SIGNATURE
+    )
     assert components["NaCl"]["chebi_term"] == {
         "id": "CHEBI:26710",
         "label": "sodium chloride",

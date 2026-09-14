@@ -72,10 +72,13 @@ def test_repair_restores_nbrc_formula_and_leaves_review_ranking(
 ) -> None:
     repaired = repair_module.repair_record(_doc(repair_module))
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert repaired["ph_value"] == 7.2
     assert repaired["preparation_steps"] == [
         {

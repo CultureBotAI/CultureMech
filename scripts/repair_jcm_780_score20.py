@@ -67,9 +67,7 @@ def _ingredient(
         "source": source,
         "notes": f"{source} lists {value} {unit.lower().replace('_per_l', '/L')}.",
         "term": _term(*term),
-        "mediaingredientmech_chebi_term": _term(*term)
-        if term[0].startswith("CHEBI:")
-        else None,
+        "mediaingredientmech_chebi_term": _term(*term) if term[0].startswith("CHEBI:") else None,
     }
 
 
@@ -104,9 +102,7 @@ RECIPE: dict[str, Any] = {
                 ("CHEBI:131527", "dipotassium hydrogen phosphate"),
             )
         ),
-        _drop_none(
-            _ingredient("KH2PO4", "0.3", ("CHEBI:63036", "potassium dihydrogen phosphate"))
-        ),
+        _drop_none(_ingredient("KH2PO4", "0.3", ("CHEBI:63036", "potassium dihydrogen phosphate"))),
         _drop_none(
             _ingredient(
                 "MgCl2 x 6 H2O",
@@ -150,17 +146,14 @@ RECIPE: dict[str, Any] = {
             "preferred_term": "Trace mineral solution",
             "concentration": {"value": "1.0", "unit": "ML_PER_L"},
             "notes": (
-                "JCM Medium 780 lists 1.0 ml/L Trace mineral solution from "
-                "JCM Medium 684."
+                "JCM Medium 780 lists 1.0 ml/L Trace mineral solution from " "JCM Medium 684."
             ),
         },
         {
             "preferred_term": "20% (w/v) Glycerin solution",
             "concentration": {"value": "10.0", "unit": "ML_PER_L"},
             "notes": "JCM Medium 780 adds 10.0 ml/L 20% (w/v) Glycerin solution.",
-            "composition": [
-                _stock_component("Glycerol", "200.0", ("CHEBI:17754", "glycerol"))
-            ],
+            "composition": [_stock_component("Glycerol", "200.0", ("CHEBI:17754", "glycerol"))],
             "preparation_notes": (
                 "JCM Medium 780 uses a 20% (w/v) stock; the composition is "
                 "normalized to g/L of stock."

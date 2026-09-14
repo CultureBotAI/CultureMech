@@ -44,8 +44,7 @@ EXPECTED_SOURCE_TERMS = {
 DSMZ_215C_REST = "https://mediadive.dsmz.de/rest/medium/215c"
 DSMZ_215C_PDF = "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium215c.pdf"
 KOMODO_BASE = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo="
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo="
 )
 
 CURATOR = "repair_komodo_215c_strict_anaerobes_score15.py"
@@ -328,9 +327,7 @@ TARGETS: tuple[Target, ...] = (
         ),
         parent_media=DSMZ_PARENT,
         variant_relationship="SOURCE_DUPLICATE",
-        variant_modifications=(
-            "KOMODO source-catalogue duplicate of DSMZ Medium 215c.",
-        ),
+        variant_modifications=("KOMODO source-catalogue duplicate of DSMZ Medium 215c.",),
         variant_children=(
             KOMODO_10643_CHILD,
             KOMODO_15692_CHILD,
@@ -454,8 +451,7 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 def _require_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != EXPECTED_IDS[target.path]:
         raise ValueError(
-            f"{target.path}: found id {doc.get('id')!r}, "
-            f"expected {EXPECTED_IDS[target.path]!r}"
+            f"{target.path}: found id {doc.get('id')!r}, " f"expected {EXPECTED_IDS[target.path]!r}"
         )
 
     source_term = _source_term_id(doc)

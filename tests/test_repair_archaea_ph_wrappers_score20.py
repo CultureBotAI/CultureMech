@@ -137,8 +137,7 @@ def test_repair_m165_models_sulfolobus_ph_variant(
             "composition": [],
             "concentration": {"value": "1", "unit": "L"},
             "notes": (
-                "TOGO M165 uses one liter of TOGO M156 Sulfolobus Medium as "
-                "the base medium."
+                "TOGO M165 uses one liter of TOGO M156 Sulfolobus Medium as " "the base medium."
             ),
             "culturemech_term": {
                 "id": repair_module.EXPECTED_IDS[repair_module.M156],
@@ -210,12 +209,10 @@ def test_plan_repairs_adds_reciprocal_links_and_preserves_children(
     }
 
     m156_children = {
-        row["path"]
-        for row in plans[tmp_path / repair_module.M156]["variant_children"]
+        row["path"] for row in plans[tmp_path / repair_module.M156]["variant_children"]
     }
     m273_children = {
-        row["path"]
-        for row in plans[tmp_path / repair_module.M273]["variant_children"]
+        row["path"] for row in plans[tmp_path / repair_module.M273]["variant_children"]
     }
 
     assert m156_children == {
@@ -290,12 +287,7 @@ def test_repair_child_rejects_missing_h2so4(repair_module) -> None:
 
 def test_target_records_have_expected_sources(repair_module) -> None:
     for path in repair_module.EXPECTED_IDS:
-        doc = yaml.safe_load(
-            (repair_module.NORMALIZED / path).read_text(encoding="utf-8")
-        )
+        doc = yaml.safe_load((repair_module.NORMALIZED / path).read_text(encoding="utf-8"))
 
         assert doc["id"] == repair_module.EXPECTED_IDS[path]
-        assert (
-            doc["media_term"]["term"]["id"]
-            == repair_module.EXPECTED_SOURCE_TERMS[path]
-        )
+        assert doc["media_term"]["term"]["id"] == repair_module.EXPECTED_SOURCE_TERMS[path]

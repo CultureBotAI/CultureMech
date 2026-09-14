@@ -154,9 +154,7 @@ CASTENHOLZ_COMPOSITION: tuple[Component, ...] = (
     ("CaSO4 x 2 H2O", "0.6", "G_PER_L"),
 )
 
-FECL3_SOLUTION_COMPOSITION: tuple[Component, ...] = (
-    ("FeCl3 x 6 H2O", "0.03", "PERCENT_W_V"),
-)
+FECL3_SOLUTION_COMPOSITION: tuple[Component, ...] = (("FeCl3 x 6 H2O", "0.03", "PERCENT_W_V"),)
 
 NITSCH_COMPOSITION: tuple[Component, ...] = (
     ("Distilled water", "1000.0", "ML_PER_L"),
@@ -349,8 +347,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
         "term": _term(*GROUNDINGS[preferred_term]),
     }
     term_id, term_label = GROUNDINGS[preferred_term]
@@ -369,10 +366,7 @@ def _component(
 
 
 def _composition(source: str, rows: tuple[Component, ...]) -> list[dict[str, Any]]:
-    return [
-        _component(name, value, unit, source=source)
-        for name, value, unit in rows
-    ]
+    return [_component(name, value, unit, source=source) for name, value, unit in rows]
 
 
 def _fecl3_solution(source: str) -> dict[str, Any]:
@@ -410,8 +404,7 @@ def _castenholz_solution(source: str) -> dict[str, Any]:
         "concentration": {"value": "100.0", "unit": "ML_PER_L"},
         "source": source,
         "notes": (
-            f"{source} adds 100.0 ml/L Castenholz basal salt solution "
-            "defined by JCM Medium 273."
+            f"{source} adds 100.0 ml/L Castenholz basal salt solution " "defined by JCM Medium 273."
         ),
         "term": _term("mediadive.solution:3963", "Castenholz basal salt solution"),
         "culturemech_term": _term("CultureMech:013022", "Castenholz basal salt solution"),
@@ -430,7 +423,9 @@ def _ingredients(target: MediumTarget) -> list[dict[str, Any]]:
         return rows
 
     for row in rows[-2:]:
-        row["notes"] = f"{target.source_name} uses {row['preferred_term']} in a 99:1 gas atmosphere."
+        row["notes"] = (
+            f"{target.source_name} uses {row['preferred_term']} in a 99:1 gas atmosphere."
+        )
     return rows
 
 
@@ -569,9 +564,7 @@ def _grounded(component: dict[str, Any]) -> bool:
 
 
 def _solution_components(solution: dict[str, Any]) -> list[dict[str, Any]]:
-    components = [
-        row for row in solution.get("composition") or [] if isinstance(row, dict)
-    ]
+    components = [row for row in solution.get("composition") or [] if isinstance(row, dict)]
     for child in solution.get("solutions") or []:
         if not isinstance(child, dict):
             continue
@@ -687,9 +680,7 @@ def repair_medium_record(doc: dict[str, Any], target: MediumTarget) -> dict[str,
         )
 
     if target.variant_children:
-        repaired["variant_children"] = [
-            copy.deepcopy(child) for child in target.variant_children
-        ]
+        repaired["variant_children"] = [copy.deepcopy(child) for child in target.variant_children]
     else:
         repaired.pop("variant_children", None)
 
@@ -799,7 +790,15 @@ TARGETS: tuple[MediumTarget, ...] = (
             "expanded the Castenholz basal salt stock from JCM Medium 273, "
             "and linked the MediaDive J894 source duplicate."
         ),
-        references=(TOGO_M935, MEDIADIVE_J894, JCM_894, MEDIADIVE_J276, JCM_276, TOGO_M266, JCM_273),
+        references=(
+            TOGO_M935,
+            MEDIADIVE_J894,
+            JCM_894,
+            MEDIADIVE_J276,
+            JCM_276,
+            TOGO_M266,
+            JCM_273,
+        ),
         parent_media=J894_PARENT,
         variant_relationship="SOURCE_DUPLICATE",
         variant_modifications=(M935_CHILD["notes"],),
@@ -846,8 +845,7 @@ SOLUTION_TARGETS: tuple[SolutionTarget, ...] = (
         imported_solutions=(),
         final_solutions=(),
         preparation_notes=(
-            "Mix the Nitsch trace-elements salts and 0.5 ml/L H2SO4 in "
-            "1.0 L distilled water."
+            "Mix the Nitsch trace-elements salts and 0.5 ml/L H2SO4 in " "1.0 L distilled water."
         ),
         notes=(
             "MediaDive solution 3964 is the Nitsch's trace-elements stock "

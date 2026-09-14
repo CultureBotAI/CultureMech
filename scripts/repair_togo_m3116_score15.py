@@ -85,8 +85,7 @@ TOGO_CHILD = {
     "id": EXPECTED_ID,
     "name": "nutrient_agar",
     "notes": (
-        "TOGO M3116 imports DSMZ Medium 1 and explicitly retains its "
-        "distilled-water row."
+        "TOGO M3116 imports DSMZ Medium 1 and explicitly retains its " "distilled-water row."
     ),
 }
 
@@ -196,9 +195,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -241,9 +238,7 @@ def _ensure_target(doc: dict[str, Any]) -> None:
 
 def _ensure_parent(doc: dict[str, Any]) -> None:
     if doc.get("id") != EXPECTED_PARENT_ID:
-        raise ValueError(
-            f"{PARENT}: expected id {EXPECTED_PARENT_ID}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{PARENT}: expected id {EXPECTED_PARENT_ID}, found {doc.get('id')!r}")
     if _source_term_id(doc) != EXPECTED_PARENT_MEDIA_TERM:
         raise ValueError(f"{PARENT}: expected media term {EXPECTED_PARENT_MEDIA_TERM}")
 

@@ -179,8 +179,7 @@ def _component(target: Target, preferred_term: str, value: str, unit: str) -> di
 
 def _ingredients(target: Target) -> tuple[dict[str, Any], ...]:
     return tuple(
-        _component(target, name, value, unit)
-        for name, value, unit in target.final_signature
+        _component(target, name, value, unit) for name, value, unit in target.final_signature
     )
 
 
@@ -215,9 +214,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -240,9 +237,7 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}")
     if _source_term_id(doc) != target.media_term_id:
         raise ValueError(f"{target.path}: expected media term {target.media_term_id}")
 

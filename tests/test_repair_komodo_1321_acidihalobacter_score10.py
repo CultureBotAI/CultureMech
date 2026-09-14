@@ -61,25 +61,27 @@ def test_parent_promotes_acidihalobacter_root(repair_module) -> None:
 def test_repair_is_idempotent(repair_module) -> None:
     once = repair_module.plan_repairs()
     twice = {
-        path: repair_module.repair_parent(doc)
-        if path == repair_module.NORMALIZED / repair_module.PARENT
-        else repair_module.repair_child(doc)
+        path: (
+            repair_module.repair_parent(doc)
+            if path == repair_module.NORMALIZED / repair_module.PARENT
+            else repair_module.repair_child(doc)
+        )
         for path, doc in once.items()
     }
 
     assert twice == once
     for path in once:
-        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(
-            once[path]
-        )
+        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(once[path])
 
 
 def test_plan_repairs_targets_current_records(repair_module) -> None:
     assert repair_module.plan_repairs() == {
-        repair_module.NORMALIZED / repair_module.PARENT: repair_module.repair_parent(
+        repair_module.NORMALIZED
+        / repair_module.PARENT: repair_module.repair_parent(
             _load_yaml(repair_module.NORMALIZED / repair_module.PARENT)
         ),
-        repair_module.NORMALIZED / repair_module.CHILD: repair_module.repair_child(
+        repair_module.NORMALIZED
+        / repair_module.CHILD: repair_module.repair_child(
             _load_yaml(repair_module.NORMALIZED / repair_module.CHILD)
         ),
     }

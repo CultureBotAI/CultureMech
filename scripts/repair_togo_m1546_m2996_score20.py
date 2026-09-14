@@ -165,8 +165,7 @@ UPDATES: tuple[RecipeUpdate, ...] = (
                     "MG_PER_L",
                     source="TOGO M2996",
                     notes=(
-                        "TOGO M2996 states PPLO medium was supplemented "
-                        "with NAD at 10 ug/mL."
+                        "TOGO M2996 states PPLO medium was supplemented " "with NAD at 10 ug/mL."
                     ),
                     term=("CHEBI:15846", "NAD(+)"),
                 ),

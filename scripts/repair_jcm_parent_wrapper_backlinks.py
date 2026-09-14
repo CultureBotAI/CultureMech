@@ -84,9 +84,7 @@ CHILDREN = (
 )
 CHILDREN_BY_PARENT: dict[Path, tuple[Child, ...]] = {
     RHODOBIUM.path: tuple(child for child in CHILDREN if child.parent == RHODOBIUM),
-    THIORHODOCOCCUS.path: tuple(
-        child for child in CHILDREN if child.parent == THIORHODOCOCCUS
-    ),
+    THIORHODOCOCCUS.path: tuple(child for child in CHILDREN if child.parent == THIORHODOCOCCUS),
 }
 PARENTS = (RHODOBIUM, THIORHODOCOCCUS)
 
@@ -188,14 +186,10 @@ def repair_parent(parent: Parent, doc: dict[str, Any]) -> dict[str, Any]:
         by_id[child.record_id] = _child_entry(child)
 
     repaired["variant_children"] = [
-        by_id.pop(child.get("id"), child)
-        for child in existing_children
-        if isinstance(child, dict)
+        by_id.pop(child.get("id"), child) for child in existing_children if isinstance(child, dict)
     ]
     repaired["variant_children"].extend(
-        _child_entry(child)
-        for child in CHILDREN_BY_PARENT[parent.path]
-        if child.record_id in by_id
+        _child_entry(child) for child in CHILDREN_BY_PARENT[parent.path] if child.record_id in by_id
     )
     _upsert_event(repaired, parent)
     return repaired

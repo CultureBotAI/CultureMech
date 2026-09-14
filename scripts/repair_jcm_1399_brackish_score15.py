@@ -171,10 +171,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
     _solution(
         "Selenite-tungstate solution (JCM Medium 431)",
         "1.0",
-        notes=(
-            "JCM Medium 1399 adds 1.0 ml/L Selenite-tungstate solution from "
-            "JCM 431."
-        ),
+        notes=("JCM Medium 1399 adds 1.0 ml/L Selenite-tungstate solution from " "JCM 431."),
         source=f"{SOURCE} / JCM Medium 431",
     ),
     _solution(
@@ -194,18 +191,12 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
     _solution(
         "1 M MgCl2 x 6H2O solution",
         "17.0",
-        notes=(
-            "JCM Medium 1399 adds 17.0 ml/L anaerobic 1 M MgCl2 x 6H2O "
-            "solution."
-        ),
+        notes=("JCM Medium 1399 adds 17.0 ml/L anaerobic 1 M MgCl2 x 6H2O " "solution."),
     ),
     _solution(
         "1 M CaCl2 x 2H2O solution",
         "1.0",
-        notes=(
-            "JCM Medium 1399 adds 1.0 ml/L anaerobic 1 M CaCl2 x 2H2O "
-            "solution."
-        ),
+        notes=("JCM Medium 1399 adds 1.0 ml/L anaerobic 1 M CaCl2 x 2H2O " "solution."),
     ),
     _solution(
         "Vitamin solution (JCM Medium 403)",

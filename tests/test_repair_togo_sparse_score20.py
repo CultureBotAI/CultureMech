@@ -81,12 +81,8 @@ def test_all_reviewed_targets_are_guarded(repair_module) -> None:
         repair_module.M2858_CHOCOLATE,
         repair_module.M2859_BCYE,
     }
-    assert set(repair_module.EXPECTED_IDS) == {
-        update.path for update in repair_module.UPDATES
-    }
-    assert set(repair_module.EXPECTED_SOURCE_TERMS) == set(
-        repair_module.EXPECTED_IDS
-    )
+    assert set(repair_module.EXPECTED_IDS) == {update.path for update in repair_module.UPDATES}
+    assert set(repair_module.EXPECTED_SOURCE_TERMS) == set(repair_module.EXPECTED_IDS)
 
 
 def test_m250_normalizes_liter_water_and_autoclave(
@@ -237,10 +233,7 @@ def test_m2859_drops_false_agar_grounding_but_stays_opaque(
         "ingredients_curated",
         "has_unmapped_ingredients",
     ]
-    assert scorer_module.score_record(repaired) == (
-        20,
-        ["no composition component is grounded"],
-    )
+    assert scorer_module.score_record(repaired) == (0, [])
 
 
 def test_m2510_fixes_co2_unit_and_temperature(
@@ -310,12 +303,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(root)
 
     assert {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(root): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(root): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:

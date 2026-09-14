@@ -59,10 +59,7 @@ def test_repair_record_adds_base_thermophilic_components() -> None:
     assert repaired["ingredients"][-1] == {
         "preferred_term": "Rumen fluid, clarified",
         "source": repair.SOURCE_164,
-        "notes": (
-            "DSMZ/KOMODO Medium 164 applies 50.000 ML_PER_L "
-            "Rumen fluid, clarified."
-        ),
+        "notes": ("DSMZ/KOMODO Medium 164 applies 50.000 ML_PER_L " "Rumen fluid, clarified."),
         "concentration": {"value": "50.000", "unit": "ML_PER_L"},
     }
 

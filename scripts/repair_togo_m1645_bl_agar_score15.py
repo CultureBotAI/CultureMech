@@ -39,9 +39,7 @@ IMPORTED_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("Defibrinated horse blood", "50", "G_PER_L"),
 )
 
-IMPORTED_SOLUTION_SIGNATURE: tuple[SolutionSignature, ...] = (
-    ("BL Agar*", "58", "G_PER_L", ()),
-)
+IMPORTED_SOLUTION_SIGNATURE: tuple[SolutionSignature, ...] = (("BL Agar*", "58", "G_PER_L", ()),)
 
 FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("BL Agar*", "58.0", "G_PER_L"),
@@ -111,8 +109,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 3,
         "action": "MIX",
         "description": (
-            "Aseptically add sterile defibrinated horse blood to 5% v/v final "
-            "and mix."
+            "Aseptically add sterile defibrinated horse blood to 5% v/v final " "and mix."
         ),
     },
     {
@@ -170,9 +167,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

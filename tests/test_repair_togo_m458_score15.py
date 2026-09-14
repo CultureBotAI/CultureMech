@@ -99,10 +99,13 @@ def test_repair_corrects_formula_units_and_ph_range(repair_module) -> None:
 
     assert "ph_value" not in repaired
     assert repaired["ph_range"] == repair_module.PH_RANGE
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Distilled water"]["concentration"] == {
         "value": "500.0",
         "unit": "ML_PER_L",
@@ -148,9 +151,7 @@ def test_repair_adds_preparation_references_flags_and_event_once(
     twice = repair_module.repair_target(once)
 
     assert twice["preparation_steps"] == list(repair_module.PREPARATION_STEPS)
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     assert twice["data_quality_flags"] == [
         "has_ontology_mappings",
         "has_unmapped_ingredients",
@@ -178,10 +179,13 @@ def test_repair_parent_adds_distilled_water_and_links_child_once(
     once = repair_module.repair_parent(_parent_doc(repair_module))
     twice = repair_module.repair_parent(once)
 
-    assert repair_module._signature(
-        twice["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            twice["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert twice["variant_children"] == [repair_module.TOGO_CHILD]
     assert "ph_value" not in twice
     assert twice["ph_range"] == repair_module.PH_RANGE
@@ -249,10 +253,7 @@ def test_target_records_match_repair_contract(repair_module) -> None:
     assert target["id"] == repair_module.EXPECTED_ID
     assert parent["id"] == repair_module.EXPECTED_PARENT_ID
     assert repair_module._source_term_id(target) == repair_module.EXPECTED_MEDIA_TERM
-    assert (
-        repair_module._source_term_id(parent)
-        == repair_module.EXPECTED_PARENT_MEDIA_TERM
-    )
+    assert repair_module._source_term_id(parent) == repair_module.EXPECTED_PARENT_MEDIA_TERM
     assert repair_module._signature(target["ingredients"], "ingredients") in (
         repair_module.IMPORTED_INGREDIENT_SIGNATURE,
         repair_module.FINAL_INGREDIENT_SIGNATURE,

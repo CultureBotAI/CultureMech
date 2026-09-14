@@ -23,8 +23,7 @@ EXPECTED_MEDIA_TERM = "komodo.medium:406"
 YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 KOMODO_406_URL = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=406"
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=406"
 )
 DSMZ_406_URL = (
     "https://web.archive.org/web/20121030082653id_/"
@@ -138,10 +137,7 @@ COMPONENTS: tuple[Component, ...] = (
         "G_PER_L",
         ("CHEBI:86345", "magnesium dichloride hexahydrate"),
         SOURCE_195,
-        (
-            f"{SOURCE_195} changes the DSMZ Medium 193 MgCl2 x 6 H2O "
-            "amount to 3.1 g/L."
-        ),
+        (f"{SOURCE_195} changes the DSMZ Medium 193 MgCl2 x 6 H2O " "amount to 3.1 g/L."),
     ),
     Component(
         "KCl",
@@ -494,9 +490,7 @@ def _ingredient(component: Component) -> dict[str, Any]:
 
 def repair_record(doc: dict[str, Any]) -> dict[str, Any]:
     if doc.get("id") != EXPECTED_ID:
-        raise ValueError(
-            f"{TARGET}: expected immutable id {EXPECTED_ID}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{TARGET}: expected immutable id {EXPECTED_ID}, found {doc.get('id')!r}")
     _check_source(doc)
 
     repaired = copy.deepcopy(doc)

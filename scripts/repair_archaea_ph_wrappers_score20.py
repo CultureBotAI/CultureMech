@@ -82,8 +82,7 @@ TARGETS: tuple[ChildTarget, ...] = (
             "adjusts it to pH 3.5 with 10 N H2SO4."
         ),
         solution_notes=(
-            "TOGO M165 uses one liter of TOGO M156 Sulfolobus Medium as "
-            "the base medium."
+            "TOGO M165 uses one liter of TOGO M156 Sulfolobus Medium as " "the base medium."
         ),
         parent_notes=(
             "TOGO M165 uses TOGO M156 Sulfolobus Medium and adjusts it to "
@@ -93,9 +92,7 @@ TARGETS: tuple[ChildTarget, ...] = (
             "Use one liter of Sulfolobus Medium from TOGO M156 and adjust "
             "to pH 3.5 with 10 N H2SO4."
         ),
-        variant_modification=(
-            "Adjusts TOGO M156 Sulfolobus Medium to pH 3.5 with 10 N H2SO4."
-        ),
+        variant_modification=("Adjusts TOGO M156 Sulfolobus Medium to pH 3.5 with 10 N H2SO4."),
     ),
     ChildTarget(
         path=M345,
@@ -111,8 +108,7 @@ TARGETS: tuple[ChildTarget, ...] = (
             "readjusts the reduced medium to pH 6.0 with 1.0 N H2SO4."
         ),
         solution_notes=(
-            "TOGO M345 uses one liter of TOGO M273 Thermococcus Medium as "
-            "the base medium."
+            "TOGO M345 uses one liter of TOGO M273 Thermococcus Medium as " "the base medium."
         ),
         parent_notes=(
             "TOGO M345 uses TOGO M273 Thermococcus Medium and readjusts the "
@@ -123,8 +119,7 @@ TARGETS: tuple[ChildTarget, ...] = (
             "reduction, readjust to pH 6.0 with 1.0 N H2SO4."
         ),
         variant_modification=(
-            "Readjusts TOGO M273 Thermococcus Medium to pH 6.0 with 1.0 N "
-            "H2SO4 after reduction."
+            "Readjusts TOGO M273 Thermococcus Medium to pH 6.0 with 1.0 N " "H2SO4 after reduction."
         ),
     ),
 )
@@ -153,9 +148,7 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 
 def _require_source(doc: dict[str, Any], path: str) -> None:
     if doc.get("id") != EXPECTED_IDS[path]:
-        raise ValueError(
-            f"{path}: found id {doc.get('id')!r}, expected {EXPECTED_IDS[path]!r}"
-        )
+        raise ValueError(f"{path}: found id {doc.get('id')!r}, expected {EXPECTED_IDS[path]!r}")
 
     source_term = _source_term_id(doc)
     if source_term != EXPECTED_SOURCE_TERMS[path]:
@@ -182,9 +175,10 @@ def _require_child(doc: dict[str, Any], target: ChildTarget) -> None:
         raise ValueError(f"{target.path}: expected exactly one H2SO4 row")
 
     parent_media = doc.get("parent_media")
-    if isinstance(parent_media, dict) and parent_media.get("id") == EXPECTED_IDS[
-        target.parent_path
-    ]:
+    if (
+        isinstance(parent_media, dict)
+        and parent_media.get("id") == EXPECTED_IDS[target.parent_path]
+    ):
         return
 
     if len(_component_rows(doc, target.parent_solution_name)) != 1:
@@ -211,9 +205,7 @@ def _composition_components(doc: dict[str, Any]) -> list[dict[str, Any]]:
             continue
         nested = solution.get("composition") or []
         nested_components = (
-            [row for row in nested if isinstance(row, dict)]
-            if isinstance(nested, list)
-            else []
+            [row for row in nested if isinstance(row, dict)] if isinstance(nested, list) else []
         )
         components.extend(nested_components or [solution])
     return components
@@ -290,9 +282,7 @@ def _ensure_flags(doc: dict[str, Any]) -> None:
         if "has_ontology_mappings" not in flags:
             flags.append("has_ontology_mappings")
 
-    has_unmapped = any(
-        not _grounded(component) for component in _composition_components(doc)
-    )
+    has_unmapped = any(not _grounded(component) for component in _composition_components(doc))
     if has_unmapped:
         if "has_unmapped_ingredients" not in flags:
             flags.append("has_unmapped_ingredients")

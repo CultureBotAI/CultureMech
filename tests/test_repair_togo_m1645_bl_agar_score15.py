@@ -85,10 +85,13 @@ def test_repair_corrects_nbrc_order_and_liquid_units(repair_module) -> None:
     assert "ph_range" not in repaired
     assert "temperature_value" not in repaired
     assert "temperature_range" not in repaired
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert "solutions" not in repaired
 
 
@@ -100,9 +103,7 @@ def test_repair_grounds_blood_and_water_only(repair_module) -> None:
         "id": "UBERON:0000178",
         "label": "blood",
     }
-    assert "mediaingredientmech_chebi_term" not in ingredients[
-        "Defibrinated horse blood"
-    ]
+    assert "mediaingredientmech_chebi_term" not in ingredients["Defibrinated horse blood"]
     assert ingredients["Distilled water"]["mediaingredientmech_chebi_term"] == {
         "id": "CHEBI:15377",
         "label": "water",
@@ -162,9 +163,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]
@@ -174,9 +173,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
         )
     ]
     assert len(matching_events) == 1
-    assert "corrected water and horse blood liquid units" in matching_events[0][
-        "notes"
-    ]
+    assert "corrected water and horse blood liquid units" in matching_events[0]["notes"]
     assert "Nissui" in matching_events[0]["notes"]
 
 

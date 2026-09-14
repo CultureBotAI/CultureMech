@@ -83,10 +83,13 @@ def test_repair_restores_direct_components_and_units(
     repaired = repair_module.repair_target(_doc(repair_module))
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Distilled water"]["concentration"] == {
         "value": "945.0",
         "unit": "ML_PER_L",
@@ -110,9 +113,12 @@ def test_repair_restores_stock_solutions(repair_module) -> None:
     repaired = repair_module.repair_target(_doc(repair_module))
     solutions = _by_name(repaired["solutions"])
 
-    assert repair_module._solution_signature(
-        repaired["solutions"],
-    ) == repair_module.FINAL_SOLUTION_SIGNATURE
+    assert (
+        repair_module._solution_signature(
+            repaired["solutions"],
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURE
+    )
     assert solutions["Wolfe's mineral elixir"]["concentration"] == {
         "value": "1.0",
         "unit": "ML_PER_L",

@@ -75,9 +75,12 @@ def test_repair_reconstructs_archived_dsmz_868_and_exits_ranking(
 
     assert repaired["ph_range"] == {"min": 7.0, "max": 7.2}
     assert repaired["ingredients"] == []
-    assert repair_module._solution_signatures(
-        repaired["solutions"],
-    ) == repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._solution_signatures(
+            repaired["solutions"],
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURES
+    )
     assert scorer_module.score_record(repaired) == (0, [])
     assert scorer_module.score_parsed([(str(repair_module.TARGET), repaired)]) == []
 
@@ -113,14 +116,8 @@ def test_repair_keeps_referenced_dsmz_stocks_opaque(repair_module) -> None:
     repaired = repair_module.repair_record(_doc(repair_module))
     solutions = _solution_by_name(repaired)
 
-    assert (
-        solutions["Trace element solution SL-10 (DSMZ Medium 320)"]["composition"]
-        == []
-    )
-    assert (
-        solutions["Selenite-tungstate solution (DSMZ Medium 385)"]["composition"]
-        == []
-    )
+    assert solutions["Trace element solution SL-10 (DSMZ Medium 320)"]["composition"] == []
+    assert solutions["Selenite-tungstate solution (DSMZ Medium 385)"]["composition"] == []
     assert solutions["Vitamin solution (DSMZ Medium 141)"]["composition"] == []
 
 

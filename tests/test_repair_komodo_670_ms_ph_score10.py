@@ -67,9 +67,11 @@ def test_parent_lists_all_ph_variant_children(repair_module) -> None:
 def test_repair_is_idempotent(repair_module) -> None:
     once = repair_module.plan_repairs()
     twice = {
-        path: repair_module.repair_parent(doc)
-        if path == repair_module.NORMALIZED / repair_module.PARENT
-        else repair_module.repair_child(path.relative_to(repair_module.NORMALIZED), doc)
+        path: (
+            repair_module.repair_parent(doc)
+            if path == repair_module.NORMALIZED / repair_module.PARENT
+            else repair_module.repair_child(path.relative_to(repair_module.NORMALIZED), doc)
+        )
         for path, doc in once.items()
     }
 
@@ -78,7 +80,8 @@ def test_repair_is_idempotent(repair_module) -> None:
 
 def test_plan_repairs_targets_current_records(repair_module) -> None:
     expected = {
-        repair_module.NORMALIZED / repair_module.PARENT: repair_module.repair_parent(
+        repair_module.NORMALIZED
+        / repair_module.PARENT: repair_module.repair_parent(
             _load_yaml(repair_module.NORMALIZED / repair_module.PARENT)
         )
     }

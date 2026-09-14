@@ -102,10 +102,7 @@ def _check_target(doc: dict[str, Any], target: Target) -> None:
     if not isinstance(ingredients, list) or len(ingredients) != 1:
         raise ValueError(f"{target.path}: expected one Marine agar 2216 ingredient")
     ingredient = ingredients[0]
-    if (
-        not isinstance(ingredient, dict)
-        or ingredient.get("preferred_term") not in INGREDIENT_NAMES
-    ):
+    if not isinstance(ingredient, dict) or ingredient.get("preferred_term") not in INGREDIENT_NAMES:
         raise ValueError(f"{target.path}: ingredient list drifted")
 
 
@@ -155,8 +152,7 @@ def _ensure_references(doc: dict[str, Any]) -> None:
         raise ValueError("references is not a list")
 
     if not any(
-        isinstance(row, dict) and row.get("reference") == DSMZ_604_URL
-        for row in references
+        isinstance(row, dict) and row.get("reference") == DSMZ_604_URL for row in references
     ):
         references.append({"reference": DSMZ_604_URL})
 
@@ -194,10 +190,7 @@ def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
     _put_after(
         repaired,
         "notes",
-        (
-            "DSMZ Medium 604 records BACTO MARINE AGAR as Marine Agar 2216 "
-            "(Difco 0979)."
-        ),
+        ("DSMZ Medium 604 records BACTO MARINE AGAR as Marine Agar 2216 " "(Difco 0979)."),
         "media_term",
     )
     repaired["ingredients"] = [
@@ -236,7 +229,8 @@ def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
 
 def plan_repairs(normalized: Path = NORMALIZED) -> dict[Path, dict[str, Any]]:
     return {
-        normalized / target.path: repair_record(
+        normalized
+        / target.path: repair_record(
             _load(normalized / target.path),
             target,
         )

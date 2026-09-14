@@ -140,8 +140,7 @@ def _ensure_reference(doc: dict[str, Any], relative_path: str) -> None:
         raise ValueError(f"{relative_path}: references is not a list")
 
     if not any(
-        isinstance(ref, dict) and ref.get("reference") == DSMZ_672_URL
-        for ref in references
+        isinstance(ref, dict) and ref.get("reference") == DSMZ_672_URL for ref in references
     ):
         references.append({"reference": DSMZ_672_URL})
 
@@ -238,7 +237,8 @@ def repair_record(doc: dict[str, Any], relative_path: str) -> dict[str, Any]:
 
 def plan_repairs(normalized: Path = NORMALIZED) -> dict[Path, dict[str, Any]]:
     plans = {
-        normalized / relative_path: repair_record(
+        normalized
+        / relative_path: repair_record(
             _load(normalized / relative_path),
             relative_path,
         )
@@ -251,9 +251,7 @@ def plan_repairs(normalized: Path = NORMALIZED) -> dict[Path, dict[str, Any]]:
 
     child["parent_media"] = _recipe_ref(DSMZ_PARENT, link_notes)
     child["variant_relationship"] = "SOURCE_DUPLICATE"
-    child["variant_modifications"] = [
-        "KOMODO source-catalogue duplicate of DSMZ Medium 672."
-    ]
+    child["variant_modifications"] = ["KOMODO source-catalogue duplicate of DSMZ Medium 672."]
 
     children = parent.setdefault("variant_children", [])
     if not isinstance(children, list):

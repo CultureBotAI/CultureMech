@@ -108,8 +108,7 @@ INGREDIENTS: tuple[dict[str, Any], ...] = (
         "5.0",
         "G_PER_L",
         notes=(
-            "DSMZ Medium 186 lists 5.0 g peptone from soybeans; normalized "
-            "here to Soy peptone."
+            "DSMZ Medium 186 lists 5.0 g peptone from soybeans; normalized " "here to Soy peptone."
         ),
         term=("FOODON:03315720", "Soy peptone"),
     ),
@@ -218,7 +217,9 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
 
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.expected_id:
-        raise ValueError(f"{target.path}: expected id {target.expected_id}, found {doc.get('id')!r}")
+        raise ValueError(
+            f"{target.path}: expected id {target.expected_id}, found {doc.get('id')!r}"
+        )
 
     source_term = _source_term_id(doc)
     if source_term != target.expected_source_term:

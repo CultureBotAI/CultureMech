@@ -302,8 +302,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
 
     grounding = GROUNDINGS.get(preferred_term)
@@ -357,8 +356,7 @@ def _mj_n_synthetic_seawater(source: str) -> dict[str, Any]:
         "concentration": {"value": "1000.0", "unit": "ML_PER_L"},
         "source": source,
         "notes": (
-            f"{source} adds 1.0 L MJ(-N) synthetic seawater from TOGO M260/"
-            "JCM Medium 268."
+            f"{source} adds 1.0 L MJ(-N) synthetic seawater from TOGO M260/" "JCM Medium 268."
         ),
         "composition": [
             _component("NaCl", "30.0", "G_PER_L", source=SOURCE_MJ_N),
@@ -380,10 +378,7 @@ def _mj_n_synthetic_seawater(source: str) -> dict[str, Any]:
                 "10.0",
                 "ML_PER_L",
                 source=SOURCE_MJ_N,
-                notes=(
-                    "TOGO M260/JCM Medium 268 adds 10.0 ml/L Trace minerals "
-                    "from TOGO M142."
-                ),
+                notes=("TOGO M260/JCM Medium 268 adds 10.0 ml/L Trace minerals " "from TOGO M142."),
             ),
             _component(
                 "Distilled water",
@@ -439,24 +434,16 @@ def _solutions(source: str) -> list[dict[str, Any]]:
             "preferred_term": "10% Na2S2O3 x 5 H2O solution",
             "concentration": {"value": "15.0", "unit": "ML_PER_L"},
             "source": source,
-            "notes": (
-                f"{source} adds 15.0 ml/L 10% Na2S2O3 x 5 H2O solution "
-                "after cooling."
-            ),
+            "notes": (f"{source} adds 15.0 ml/L 10% Na2S2O3 x 5 H2O solution " "after cooling."),
             "term": _term(*GROUNDINGS["Na2S2O3 x 5 H2O"]),
-            "mediaingredientmech_chebi_term": _term(
-                *GROUNDINGS["Na2S2O3 x 5 H2O"]
-            ),
+            "mediaingredientmech_chebi_term": _term(*GROUNDINGS["Na2S2O3 x 5 H2O"]),
             "composition": [
                 _component(
                     "Na2S2O3 x 5 H2O",
                     "10.0",
                     "PERCENT_W_V",
                     source=source,
-                    notes=(
-                        f"{source} specifies the added Na2S2O3 x 5 H2O "
-                        "solution as 10% w/v."
-                    ),
+                    notes=(f"{source} specifies the added Na2S2O3 x 5 H2O " "solution as 10% w/v."),
                 )
             ],
             "preparation_notes": "Filter-sterilize.",
@@ -496,9 +483,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -521,9 +506,7 @@ def _solution_signatures(doc: dict[str, Any]) -> tuple[SolutionSignature, ...]:
             raise ValueError("solutions contains a non-mapping row")
         concentration = solution.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"solution {solution.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"solution {solution.get('preferred_term')!r} lacks concentration")
         signatures.append(
             (
                 str(solution.get("preferred_term") or ""),
@@ -605,8 +588,7 @@ def _append_event(
 def _ensure_mediadive_parent(doc: dict[str, Any]) -> None:
     if doc.get("id") != "CultureMech:003251":
         raise ValueError(
-            f"{MEDIADIVE_J902_PATH}: expected id CultureMech:003251, "
-            f"found {doc.get('id')!r}"
+            f"{MEDIADIVE_J902_PATH}: expected id CultureMech:003251, " f"found {doc.get('id')!r}"
         )
     if _source_term_id(doc) != "mediadive.medium:J902":
         raise ValueError(f"{MEDIADIVE_J902_PATH}: expected media term J902")
@@ -623,8 +605,7 @@ def _ensure_mediadive_parent(doc: dict[str, Any]) -> None:
 def _ensure_togo_m943(doc: dict[str, Any]) -> None:
     if doc.get("id") != "CultureMech:010366":
         raise ValueError(
-            f"{TOGO_M943_PATH}: expected id CultureMech:010366, "
-            f"found {doc.get('id')!r}"
+            f"{TOGO_M943_PATH}: expected id CultureMech:010366, " f"found {doc.get('id')!r}"
         )
     if _source_term_id(doc) != "TOGO:M943":
         raise ValueError(f"{TOGO_M943_PATH}: expected media term TOGO:M943")
@@ -641,8 +622,7 @@ def _ensure_togo_m943(doc: dict[str, Any]) -> None:
 def _ensure_main_helper(doc: dict[str, Any]) -> None:
     if doc.get("id") != "CultureMech:013830":
         raise ValueError(
-            f"{MAIN_HELPER_PATH}: expected id CultureMech:013830, "
-            f"found {doc.get('id')!r}"
+            f"{MAIN_HELPER_PATH}: expected id CultureMech:013830, " f"found {doc.get('id')!r}"
         )
     term = doc.get("term")
     if not isinstance(term, dict) or term.get("id") != "mediadive.solution:4901":
@@ -652,7 +632,10 @@ def _ensure_main_helper(doc: dict[str, Any]) -> None:
         doc.get("composition"),
         "MediaDive 4901 composition",
     )
-    if composition_signature not in (MEDIADIVE_HELPER_IMPORTED_COMPOSITION, (FINAL_INGREDIENTS[0],)):
+    if composition_signature not in (
+        MEDIADIVE_HELPER_IMPORTED_COMPOSITION,
+        (FINAL_INGREDIENTS[0],),
+    ):
         raise ValueError(f"{MAIN_HELPER_PATH}: composition signature drifted")
 
     solution_signatures = _solution_signatures(doc)
@@ -667,8 +650,7 @@ def _ensure_main_helper(doc: dict[str, Any]) -> None:
 def _ensure_mj_basal(doc: dict[str, Any]) -> None:
     if doc.get("id") != "CultureMech:002716":
         raise ValueError(
-            f"{MJ_BASAL_PATH}: expected id CultureMech:002716, "
-            f"found {doc.get('id')!r}"
+            f"{MJ_BASAL_PATH}: expected id CultureMech:002716, " f"found {doc.get('id')!r}"
         )
 
     children = doc.get("variant_children")
@@ -775,9 +757,7 @@ def repair_main_helper(doc: dict[str, Any]) -> dict[str, Any]:
     ]
     repaired["solutions"] = _solutions(SOURCE_MEDIADIVE)
     repaired.pop("ingredients", None)
-    repaired["preparation_notes"] = " ".join(
-        str(step["description"]) for step in PREPARATION_STEPS
-    )
+    repaired["preparation_notes"] = " ".join(str(step["description"]) for step in PREPARATION_STEPS)
     repaired["category"] = "bacterial"
     repaired["notes"] = (
         "MediaDive solution 4901 is the JCM Medium 902 main-solution import "
@@ -804,9 +784,7 @@ def repair_mj_basal(doc: dict[str, Any]) -> dict[str, Any]:
     repaired = copy.deepcopy(doc)
     children = repaired.get("variant_children")
     if isinstance(children, list):
-        repaired["variant_children"] = [
-            child for child in children if child != MJ_MEDIUM_CHILD
-        ]
+        repaired["variant_children"] = [child for child in children if child != MJ_MEDIUM_CHILD]
         if not repaired["variant_children"]:
             repaired.pop("variant_children", None)
 
@@ -826,15 +804,10 @@ def repair_mj_basal(doc: dict[str, Any]) -> dict[str, Any]:
 
 def plan_repairs(normalized: Path = NORMALIZED) -> dict[Path, dict[str, Any]]:
     return {
-        normalized / MEDIADIVE_J902_PATH: repair_mediadive_parent(
-            _load(normalized / MEDIADIVE_J902_PATH)
-        ),
-        normalized / TOGO_M943_PATH: repair_togo_m943(
-            _load(normalized / TOGO_M943_PATH)
-        ),
-        normalized / MAIN_HELPER_PATH: repair_main_helper(
-            _load(normalized / MAIN_HELPER_PATH)
-        ),
+        normalized
+        / MEDIADIVE_J902_PATH: repair_mediadive_parent(_load(normalized / MEDIADIVE_J902_PATH)),
+        normalized / TOGO_M943_PATH: repair_togo_m943(_load(normalized / TOGO_M943_PATH)),
+        normalized / MAIN_HELPER_PATH: repair_main_helper(_load(normalized / MAIN_HELPER_PATH)),
         normalized / MJ_BASAL_PATH: repair_mj_basal(_load(normalized / MJ_BASAL_PATH)),
     }
 

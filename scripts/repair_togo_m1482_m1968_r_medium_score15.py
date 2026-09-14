@@ -320,9 +320,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -346,8 +344,7 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.record_id:
         raise ValueError(
-            f"{target.path}: expected id {target.record_id}, found "
-            f"{doc.get('id')!r}"
+            f"{target.path}: expected id {target.record_id}, found " f"{doc.get('id')!r}"
         )
     if _source_term_id(doc) != target.media_term:
         raise ValueError(f"{target.path}: expected media term {target.media_term}")
@@ -450,13 +447,7 @@ def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
     _put_after(
         repaired,
         "preparation_steps",
-        copy.deepcopy(
-            list(
-                CHILD_PREPARATION_STEPS
-                if target.path == CHILD
-                else PREPARATION_STEPS
-            )
-        ),
+        copy.deepcopy(list(CHILD_PREPARATION_STEPS if target.path == CHILD else PREPARATION_STEPS)),
         "ingredients",
     )
     _put_after(repaired, "notes", target.notes, "media_term")
@@ -487,7 +478,8 @@ def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
 
 def plan_repairs(normalized: Path = NORMALIZED) -> dict[Path, dict[str, Any]]:
     return {
-        normalized / target.path: repair_record(
+        normalized
+        / target.path: repair_record(
             _load(normalized / target.path),
             target,
         )

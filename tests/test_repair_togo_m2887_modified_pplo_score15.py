@@ -74,10 +74,13 @@ def test_repair_restores_pplo_liter_and_horse_serum_percent(
     repaired = repair_module.repair_record(_doc(repair_module))
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients[repair_module.PPLO_MEDIUM]["concentration"] == {
         "value": "1.0",
         "unit": "L",

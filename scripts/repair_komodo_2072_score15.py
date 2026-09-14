@@ -146,8 +146,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 2,
         "action": "ADJUST_PH",
         "description": (
-            "Adjust the Pfennig and Lippert trace metals stock to pH 3.0-4.0 "
-            "with HCl as needed."
+            "Adjust the Pfennig and Lippert trace metals stock to pH 3.0-4.0 " "with HCl as needed."
         ),
     },
 )

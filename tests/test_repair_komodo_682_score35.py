@@ -96,16 +96,12 @@ def test_repair_record_applies_194_and_682_substitutions() -> None:
         "value": "0.400000",
         "unit": "G_PER_L",
     }
-    assert _ingredient(repaired, "3,4,5-trimethoxybenzoate")["source"] == (
-        repair.SOURCE_682
-    )
+    assert _ingredient(repaired, "3,4,5-trimethoxybenzoate")["source"] == (repair.SOURCE_682)
     assert _ingredient(repaired, "3,4,5-trimethoxybenzoate")["term"] == {
         "id": "CHEBI:454991",
         "label": "3,4,5-trimethoxybenzoic acid",
     }
-    assert _ingredient(repaired, "3,4,5-trimethoxybenzoate")[
-        "concentration"
-    ] == {
+    assert _ingredient(repaired, "3,4,5-trimethoxybenzoate")["concentration"] == {
         "value": "2.000",
         "unit": "MILLIMOLAR",
     }
@@ -192,8 +188,7 @@ def test_repair_record_scores_as_complete_and_is_idempotent() -> None:
     events = [
         event
         for event in twice["curation_history"]
-        if event.get("curator") == repair.CURATOR
-        and event.get("action") == repair.ACTION
+        if event.get("curator") == repair.CURATOR and event.get("action") == repair.ACTION
     ]
     assert len(events) == 1
 

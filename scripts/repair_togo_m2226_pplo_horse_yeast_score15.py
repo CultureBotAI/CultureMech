@@ -148,16 +148,14 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 1,
         "action": "MIX",
         "description": (
-            "Prepare sterile basal medium containing PPLO Broth w/o CV and "
-            "distilled water."
+            "Prepare sterile basal medium containing PPLO Broth w/o CV and " "distilled water."
         ),
     },
     {
         "step_number": 2,
         "action": "MIX",
         "description": (
-            "Aseptically add horse serum and Fresh Baker’s Yeast Extract "
-            "(GIBCO 18180)."
+            "Aseptically add horse serum and Fresh Baker’s Yeast Extract " "(GIBCO 18180)."
         ),
     },
 )

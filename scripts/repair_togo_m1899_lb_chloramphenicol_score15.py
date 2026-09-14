@@ -54,9 +54,7 @@ FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("Agar (if needed)", "15", "G_PER_L"),
 )
 
-CHLORAMPHENICOL_SIGNATURE: tuple[Component, ...] = (
-    ("Chloramphenicol", "25.0", "MG_PER_ML"),
-)
+CHLORAMPHENICOL_SIGNATURE: tuple[Component, ...] = (("Chloramphenicol", "25.0", "MG_PER_ML"),)
 
 FINAL_SOLUTION_SIGNATURE: tuple[SolutionSignature, ...] = (
     (
@@ -107,8 +105,7 @@ VARIANT_CHILD = {
 }
 
 VARIANT_MODIFICATIONS = (
-    "Adds 1.0 ml/L Chloramphenicol solution (25 mg/ml) after separate filter "
-    "sterilization."
+    "Adds 1.0 ml/L Chloramphenicol solution (25 mg/ml) after separate filter " "sterilization."
 )
 
 PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
@@ -125,16 +122,14 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 2,
         "action": "FILTER_STERILIZE",
         "description": (
-            "Sterilize the 25 mg/ml chloramphenicol stock separately by "
-            "filtration."
+            "Sterilize the 25 mg/ml chloramphenicol stock separately by " "filtration."
         ),
     },
     {
         "step_number": 3,
         "action": "MIX",
         "description": (
-            "Add 1.0 ml/L filter-sterilized Chloramphenicol solution "
-            "(25 mg/ml) to the LB base."
+            "Add 1.0 ml/L filter-sterilized Chloramphenicol solution " "(25 mg/ml) to the LB base."
         ),
     },
 )
@@ -163,8 +158,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     grounding = GROUNDINGS.get(preferred_term)
     if grounding is not None:
@@ -208,10 +202,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
                 "Chloramphenicol",
                 "25.0",
                 "MG_PER_ML",
-                notes=(
-                    "NBRC Medium 1158 specifies this stock as 25 mg/ml "
-                    "Chloramphenicol."
-                ),
+                notes=("NBRC Medium 1158 specifies this stock as 25 mg/ml " "Chloramphenicol."),
             )
         ],
         "name": "Chloramphenicol solution (25 mg/ml)",
@@ -232,9 +223,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -257,9 +246,7 @@ def _solution_signature(rows: Any, label: str) -> tuple[SolutionSignature, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

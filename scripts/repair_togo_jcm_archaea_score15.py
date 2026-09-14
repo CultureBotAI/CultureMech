@@ -249,16 +249,64 @@ def _trace_vitamins(source: str, value: str) -> dict[str, Any]:
         source=source,
         notes=f"{source} adds {value} ml/L Trace vitamins from JCM Medium 197.",
         composition=[
-            _source_component("Biotin", "2.0", "MG_PER_L", source=jcm_197, term=("CHEBI:15956", "biotin")),
-            _source_component("Folic acid", "2.0", "MG_PER_L", source=jcm_197, term=("CHEBI:27470", "folic acid")),
-            _source_component("Pyridoxine HCl", "10.0", "MG_PER_L", source=jcm_197, term=("CHEBI:30961", "pyridoxine hydrochloride")),
-            _source_component("Thiamine HCl", "5.0", "MG_PER_L", source=jcm_197, term=("CHEBI:49105", "thiamine hydrochloride")),
-            _source_component("Riboflavin", "5.0", "MG_PER_L", source=jcm_197, term=("CHEBI:17015", "riboflavin")),
-            _source_component("Nicotinic acid", "5.0", "MG_PER_L", source=jcm_197, term=("CHEBI:15940", "nicotinic acid")),
-            _source_component("Calcium pantothenate", "5.0", "MG_PER_L", source=jcm_197, term=("CHEBI:31345", "Calcium pantothenate")),
-            _source_component("Vitamin B12", "0.1", "MG_PER_L", source=jcm_197, term=("CHEBI:176843", "vitamin B12")),
-            _source_component("p-Aminobenzoic acid", "5.0", "MG_PER_L", source=jcm_197, term=("CHEBI:30753", "4-aminobenzoic acid")),
-            _source_component("Lipoic acid", "5.0", "MG_PER_L", source=jcm_197, term=("CHEBI:16494", "lipoic acid")),
+            _source_component(
+                "Biotin", "2.0", "MG_PER_L", source=jcm_197, term=("CHEBI:15956", "biotin")
+            ),
+            _source_component(
+                "Folic acid", "2.0", "MG_PER_L", source=jcm_197, term=("CHEBI:27470", "folic acid")
+            ),
+            _source_component(
+                "Pyridoxine HCl",
+                "10.0",
+                "MG_PER_L",
+                source=jcm_197,
+                term=("CHEBI:30961", "pyridoxine hydrochloride"),
+            ),
+            _source_component(
+                "Thiamine HCl",
+                "5.0",
+                "MG_PER_L",
+                source=jcm_197,
+                term=("CHEBI:49105", "thiamine hydrochloride"),
+            ),
+            _source_component(
+                "Riboflavin", "5.0", "MG_PER_L", source=jcm_197, term=("CHEBI:17015", "riboflavin")
+            ),
+            _source_component(
+                "Nicotinic acid",
+                "5.0",
+                "MG_PER_L",
+                source=jcm_197,
+                term=("CHEBI:15940", "nicotinic acid"),
+            ),
+            _source_component(
+                "Calcium pantothenate",
+                "5.0",
+                "MG_PER_L",
+                source=jcm_197,
+                term=("CHEBI:31345", "Calcium pantothenate"),
+            ),
+            _source_component(
+                "Vitamin B12",
+                "0.1",
+                "MG_PER_L",
+                source=jcm_197,
+                term=("CHEBI:176843", "vitamin B12"),
+            ),
+            _source_component(
+                "p-Aminobenzoic acid",
+                "5.0",
+                "MG_PER_L",
+                source=jcm_197,
+                term=("CHEBI:30753", "4-aminobenzoic acid"),
+            ),
+            _source_component(
+                "Lipoic acid",
+                "5.0",
+                "MG_PER_L",
+                source=jcm_197,
+                term=("CHEBI:16494", "lipoic acid"),
+            ),
             _water(jcm_197),
         ],
         preparation_notes="JCM Medium 197 prints the Trace vitamins subrecipe per liter.",
@@ -273,9 +321,23 @@ def _selenite_tungstate(value: str, source: str) -> dict[str, Any]:
         source=source,
         notes=f"{source} adds {value} ml/L Selenite-tungstate solution from JCM Medium 431.",
         composition=[
-            _source_component("NaOH", "0.4", "G_PER_L", source=jcm_431, term=("CHEBI:32145", "sodium hydroxide")),
-            _source_component("Na2SeO3 x 5H2O", "6.0", "MG_PER_L", source=jcm_431, term=("CHEBI:131361", "disodium selenite pentahydrate")),
-            _source_component("Na2WO4 x 2H2O", "8.0", "MG_PER_L", source=jcm_431, term=("CHEBI:63939", "sodium tungstate dihydrate")),
+            _source_component(
+                "NaOH", "0.4", "G_PER_L", source=jcm_431, term=("CHEBI:32145", "sodium hydroxide")
+            ),
+            _source_component(
+                "Na2SeO3 x 5H2O",
+                "6.0",
+                "MG_PER_L",
+                source=jcm_431,
+                term=("CHEBI:131361", "disodium selenite pentahydrate"),
+            ),
+            _source_component(
+                "Na2WO4 x 2H2O",
+                "8.0",
+                "MG_PER_L",
+                source=jcm_431,
+                term=("CHEBI:63939", "sodium tungstate dihydrate"),
+            ),
             _water(jcm_431),
         ],
     )
@@ -284,15 +346,65 @@ def _selenite_tungstate(value: str, source: str) -> dict[str, Any]:
 def _jcm_1079_trace_elements() -> list[dict[str, Any]]:
     source = "JCM Medium 1079"
     return [
-        _source_component("EDTA", "5.0", "G_PER_L", source=source, term=("CHEBI:4735", "ethylenediaminetetraacetic acid")),
-        _source_component("FeSO4 x 7H2O", "2.0", "G_PER_L", source=source, term=("CHEBI:75836", "iron(2+) sulfate heptahydrate")),
-        _source_component("ZnSO4 x 7H2O", "0.10", "G_PER_L", source=source, term=("CHEBI:32312", "zinc sulfate heptahydrate")),
-        _source_component("MnCl2 x 4H2O", "0.03", "G_PER_L", source=source, term=("CHEBI:86368", "manganese(II) chloride tetrahydrate")),
-        _source_component("H3BO3", "0.3", "G_PER_L", source=source, term=("CHEBI:33118", "boric acid")),
-        _source_component("CoCl2 x 6H2O", "0.2", "G_PER_L", source=source, term=("CHEBI:53503", "cobalt chloride hexahydrate")),
-        _source_component("CuCl2 x 2H2O", "0.01", "G_PER_L", source=source, term=("CHEBI:86318", "copper(II) chloride dihydrate")),
-        _source_component("NiCl2 x 6H2O", "0.02", "G_PER_L", source=source, term=("CHEBI:53542", "nickel chloride hexahydrate")),
-        _source_component("Na2MoO4 x 2H2O", "0.03", "G_PER_L", source=source, term=("CHEBI:75213", "sodium molybdate dihydrate")),
+        _source_component(
+            "EDTA",
+            "5.0",
+            "G_PER_L",
+            source=source,
+            term=("CHEBI:4735", "ethylenediaminetetraacetic acid"),
+        ),
+        _source_component(
+            "FeSO4 x 7H2O",
+            "2.0",
+            "G_PER_L",
+            source=source,
+            term=("CHEBI:75836", "iron(2+) sulfate heptahydrate"),
+        ),
+        _source_component(
+            "ZnSO4 x 7H2O",
+            "0.10",
+            "G_PER_L",
+            source=source,
+            term=("CHEBI:32312", "zinc sulfate heptahydrate"),
+        ),
+        _source_component(
+            "MnCl2 x 4H2O",
+            "0.03",
+            "G_PER_L",
+            source=source,
+            term=("CHEBI:86368", "manganese(II) chloride tetrahydrate"),
+        ),
+        _source_component(
+            "H3BO3", "0.3", "G_PER_L", source=source, term=("CHEBI:33118", "boric acid")
+        ),
+        _source_component(
+            "CoCl2 x 6H2O",
+            "0.2",
+            "G_PER_L",
+            source=source,
+            term=("CHEBI:53503", "cobalt chloride hexahydrate"),
+        ),
+        _source_component(
+            "CuCl2 x 2H2O",
+            "0.01",
+            "G_PER_L",
+            source=source,
+            term=("CHEBI:86318", "copper(II) chloride dihydrate"),
+        ),
+        _source_component(
+            "NiCl2 x 6H2O",
+            "0.02",
+            "G_PER_L",
+            source=source,
+            term=("CHEBI:53542", "nickel chloride hexahydrate"),
+        ),
+        _source_component(
+            "Na2MoO4 x 2H2O",
+            "0.03",
+            "G_PER_L",
+            source=source,
+            term=("CHEBI:75213", "sodium molybdate dihydrate"),
+        ),
         _water(source),
     ]
 
@@ -315,11 +427,33 @@ def _soda_based_mineral_medium(source: str, value: str = "750.0") -> dict[str, A
         source=source,
         notes=f"{source} adds {value} ml/L sterilized Soda based mineral medium from JCM Medium 1081.",
         composition=[
-            _source_component("Na2CO3", "185.0", "G_PER_L", source=jcm_1081, term=("CHEBI:29377", "sodium carbonate")),
-            _source_component("NaHCO3", "35.0", "G_PER_L", source=jcm_1081, term=("CHEBI:32139", "sodium hydrogencarbonate")),
-            _source_component("NaCl", "16.0", "G_PER_L", source=jcm_1081, term=("CHEBI:26710", "sodium chloride")),
-            _source_component("K2HPO4", "1.0", "G_PER_L", source=jcm_1081, term=("CHEBI:131527", "dipotassium hydrogen phosphate")),
-            _source_component("KCl", "5.0", "G_PER_L", source=jcm_1081, term=("CHEBI:32588", "potassium chloride")),
+            _source_component(
+                "Na2CO3",
+                "185.0",
+                "G_PER_L",
+                source=jcm_1081,
+                term=("CHEBI:29377", "sodium carbonate"),
+            ),
+            _source_component(
+                "NaHCO3",
+                "35.0",
+                "G_PER_L",
+                source=jcm_1081,
+                term=("CHEBI:32139", "sodium hydrogencarbonate"),
+            ),
+            _source_component(
+                "NaCl", "16.0", "G_PER_L", source=jcm_1081, term=("CHEBI:26710", "sodium chloride")
+            ),
+            _source_component(
+                "K2HPO4",
+                "1.0",
+                "G_PER_L",
+                source=jcm_1081,
+                term=("CHEBI:131527", "dipotassium hydrogen phosphate"),
+            ),
+            _source_component(
+                "KCl", "5.0", "G_PER_L", source=jcm_1081, term=("CHEBI:32588", "potassium chloride")
+            ),
             _stock_addition(
                 "4 M NH4Cl solution",
                 "1.0",
@@ -363,18 +497,84 @@ def _modified_brock_base() -> dict[str, Any]:
         source="JCM Medium 1275",
         notes="JCM Medium 1275 uses 1.0 L Modified Brock's salt base solution from JCM Medium 165.",
         composition=[
-            _source_component("(NH4)2SO4", "1.3", "G_PER_L", source=source, term=("CHEBI:62946", "ammonium sulfate")),
-            _source_component("KH2PO4", "0.28", "G_PER_L", source=source, term=("CHEBI:63036", "potassium dihydrogen phosphate")),
-            _source_component("MgSO4 x 7H2O", "0.25", "G_PER_L", source=source, term=("CHEBI:31795", "magnesium sulfate heptahydrate")),
-            _source_component("CaCl2 x 2H2O", "0.07", "G_PER_L", source=source, term=("CHEBI:86158", "calcium chloride dihydrate")),
-            _source_component("FeCl3 x 6H2O", "2.0", "MG_PER_L", source=source, term=("CHEBI:86254", "iron trichloride hexahydrate")),
-            _source_component("MnCl2 x 4H2O", "1.8", "MG_PER_L", source=source, term=("CHEBI:86368", "manganese(II) chloride tetrahydrate")),
-            _source_component("Na2B4O7 x 10H2O", "4.5", "MG_PER_L", source=source, term=("CHEBI:131366", "disodium tetraborate decahydrate")),
-            _source_component("ZnSO4 x 7H2O", "0.22", "MG_PER_L", source=source, term=("CHEBI:32312", "zinc sulfate heptahydrate")),
-            _source_component("CuCl2 x 2H2O", "0.05", "MG_PER_L", source=source, term=("CHEBI:86318", "copper(II) chloride dihydrate")),
-            _source_component("Na2MoO4 x 2H2O", "0.03", "MG_PER_L", source=source, term=("CHEBI:75213", "sodium molybdate dihydrate")),
+            _source_component(
+                "(NH4)2SO4",
+                "1.3",
+                "G_PER_L",
+                source=source,
+                term=("CHEBI:62946", "ammonium sulfate"),
+            ),
+            _source_component(
+                "KH2PO4",
+                "0.28",
+                "G_PER_L",
+                source=source,
+                term=("CHEBI:63036", "potassium dihydrogen phosphate"),
+            ),
+            _source_component(
+                "MgSO4 x 7H2O",
+                "0.25",
+                "G_PER_L",
+                source=source,
+                term=("CHEBI:31795", "magnesium sulfate heptahydrate"),
+            ),
+            _source_component(
+                "CaCl2 x 2H2O",
+                "0.07",
+                "G_PER_L",
+                source=source,
+                term=("CHEBI:86158", "calcium chloride dihydrate"),
+            ),
+            _source_component(
+                "FeCl3 x 6H2O",
+                "2.0",
+                "MG_PER_L",
+                source=source,
+                term=("CHEBI:86254", "iron trichloride hexahydrate"),
+            ),
+            _source_component(
+                "MnCl2 x 4H2O",
+                "1.8",
+                "MG_PER_L",
+                source=source,
+                term=("CHEBI:86368", "manganese(II) chloride tetrahydrate"),
+            ),
+            _source_component(
+                "Na2B4O7 x 10H2O",
+                "4.5",
+                "MG_PER_L",
+                source=source,
+                term=("CHEBI:131366", "disodium tetraborate decahydrate"),
+            ),
+            _source_component(
+                "ZnSO4 x 7H2O",
+                "0.22",
+                "MG_PER_L",
+                source=source,
+                term=("CHEBI:32312", "zinc sulfate heptahydrate"),
+            ),
+            _source_component(
+                "CuCl2 x 2H2O",
+                "0.05",
+                "MG_PER_L",
+                source=source,
+                term=("CHEBI:86318", "copper(II) chloride dihydrate"),
+            ),
+            _source_component(
+                "Na2MoO4 x 2H2O",
+                "0.03",
+                "MG_PER_L",
+                source=source,
+                term=("CHEBI:75213", "sodium molybdate dihydrate"),
+            ),
             _source_component("VOSO4 x H2O", "0.03", "MG_PER_L", source=source),
-            _source_component("CoSO4 x 7H2O", "0.01", "MG_PER_L", source=source, term=("CHEBI:91244", "cobalt(2+) sulfate heptahydrate")),
+            _source_component(
+                "CoSO4 x 7H2O",
+                "0.01",
+                "MG_PER_L",
+                source=source,
+                term=("CHEBI:91244", "cobalt(2+) sulfate heptahydrate"),
+            ),
             _water(source),
         ],
     )
@@ -388,10 +588,26 @@ def _mds_salt_water() -> dict[str, Any]:
         source="JCM Medium 1181",
         notes="JCM Medium 1181 adds 833.0 ml/L MDS salt water from JCM Medium 574.",
         composition=[
-            _source_component("NaCl", "240.0", "G_PER_L", source=source, term=("CHEBI:26710", "sodium chloride")),
-            _source_component("MgCl2 x 6H2O", "30.0", "G_PER_L", source=source, term=("CHEBI:86345", "magnesium dichloride hexahydrate")),
-            _source_component("MgSO4 x 7H2O", "35.0", "G_PER_L", source=source, term=("CHEBI:31795", "magnesium sulfate heptahydrate")),
-            _source_component("KCl", "7.0", "G_PER_L", source=source, term=("CHEBI:32588", "potassium chloride")),
+            _source_component(
+                "NaCl", "240.0", "G_PER_L", source=source, term=("CHEBI:26710", "sodium chloride")
+            ),
+            _source_component(
+                "MgCl2 x 6H2O",
+                "30.0",
+                "G_PER_L",
+                source=source,
+                term=("CHEBI:86345", "magnesium dichloride hexahydrate"),
+            ),
+            _source_component(
+                "MgSO4 x 7H2O",
+                "35.0",
+                "G_PER_L",
+                source=source,
+                term=("CHEBI:31795", "magnesium sulfate heptahydrate"),
+            ),
+            _source_component(
+                "KCl", "7.0", "G_PER_L", source=source, term=("CHEBI:32588", "potassium chloride")
+            ),
             _stock_addition(
                 "1 M CaCl2 solution",
                 "5.0",
@@ -435,7 +651,9 @@ def _potassium_phosphate_buffer() -> dict[str, Any]:
                 ),
                 term=("CHEBI:63036", "potassium dihydrogen phosphate"),
             ),
-            _source_component("Distilled water", "500.0", "ML_PER_L", source=source, term=("CHEBI:15377", "water")),
+            _source_component(
+                "Distilled water", "500.0", "ML_PER_L", source=source, term=("CHEBI:15377", "water")
+            ),
         ],
         preparation_notes="Combine the two phosphate solutions, check pH near 7.5, and add an equal volume of distilled water.",
     )
@@ -540,18 +758,76 @@ def _jcm_151_trace_minerals() -> dict[str, Any]:
         source="JCM Medium 285",
         notes="JCM Medium 285 adds 10.0 ml/L Trace minerals from JCM Medium 151.",
         composition=[
-            _source_component("Nitrilotriacetic acid", "1.5", "G_PER_L", source=source, term=("CHEBI:44557", "nitrilotriacetic acid")),
-            _source_component("MgSO4 x 7H2O", "3.0", "G_PER_L", source=source, term=("CHEBI:31795", "magnesium sulfate heptahydrate")),
-            _source_component("MnSO4 x H2O", "0.5", "G_PER_L", source=source, term=("CHEBI:86360", "manganese(II) sulfate")),
-            _source_component("NaCl", "1.0", "G_PER_L", source=source, term=("CHEBI:26710", "sodium chloride")),
-            _source_component("FeSO4 x 7H2O", "0.1", "G_PER_L", source=source, term=("CHEBI:75836", "iron(2+) sulfate heptahydrate")),
-            _source_component("CoSO4 x 7H2O", "0.1", "G_PER_L", source=source, term=("CHEBI:91244", "cobalt(2+) sulfate heptahydrate")),
-            _source_component("CaCl2 x 2H2O", "0.1", "G_PER_L", source=source, term=("CHEBI:86158", "calcium chloride dihydrate")),
-            _source_component("ZnSO4 x 7H2O", "0.1", "G_PER_L", source=source, term=("CHEBI:32312", "zinc sulfate heptahydrate")),
-            _source_component("CuSO4 x 5H2O", "0.01", "G_PER_L", source=source, term=("CHEBI:31440", "copper(II) sulfate pentahydrate")),
+            _source_component(
+                "Nitrilotriacetic acid",
+                "1.5",
+                "G_PER_L",
+                source=source,
+                term=("CHEBI:44557", "nitrilotriacetic acid"),
+            ),
+            _source_component(
+                "MgSO4 x 7H2O",
+                "3.0",
+                "G_PER_L",
+                source=source,
+                term=("CHEBI:31795", "magnesium sulfate heptahydrate"),
+            ),
+            _source_component(
+                "MnSO4 x H2O",
+                "0.5",
+                "G_PER_L",
+                source=source,
+                term=("CHEBI:86360", "manganese(II) sulfate"),
+            ),
+            _source_component(
+                "NaCl", "1.0", "G_PER_L", source=source, term=("CHEBI:26710", "sodium chloride")
+            ),
+            _source_component(
+                "FeSO4 x 7H2O",
+                "0.1",
+                "G_PER_L",
+                source=source,
+                term=("CHEBI:75836", "iron(2+) sulfate heptahydrate"),
+            ),
+            _source_component(
+                "CoSO4 x 7H2O",
+                "0.1",
+                "G_PER_L",
+                source=source,
+                term=("CHEBI:91244", "cobalt(2+) sulfate heptahydrate"),
+            ),
+            _source_component(
+                "CaCl2 x 2H2O",
+                "0.1",
+                "G_PER_L",
+                source=source,
+                term=("CHEBI:86158", "calcium chloride dihydrate"),
+            ),
+            _source_component(
+                "ZnSO4 x 7H2O",
+                "0.1",
+                "G_PER_L",
+                source=source,
+                term=("CHEBI:32312", "zinc sulfate heptahydrate"),
+            ),
+            _source_component(
+                "CuSO4 x 5H2O",
+                "0.01",
+                "G_PER_L",
+                source=source,
+                term=("CHEBI:31440", "copper(II) sulfate pentahydrate"),
+            ),
             _source_component("AlK(SO4)2", "0.01", "G_PER_L", source=source),
-            _source_component("H3BO3", "0.01", "G_PER_L", source=source, term=("CHEBI:33118", "boric acid")),
-            _source_component("Na2MoO4 x 2H2O", "0.01", "G_PER_L", source=source, term=("CHEBI:75213", "sodium molybdate dihydrate")),
+            _source_component(
+                "H3BO3", "0.01", "G_PER_L", source=source, term=("CHEBI:33118", "boric acid")
+            ),
+            _source_component(
+                "Na2MoO4 x 2H2O",
+                "0.01",
+                "G_PER_L",
+                source=source,
+                term=("CHEBI:75213", "sodium molybdate dihydrate"),
+            ),
             _water(source),
         ],
         preparation_notes="Dissolve nitrilotriacetic acid, adjust pH to 6.5 with KOH, add minerals, then adjust final pH to 7.0.",
@@ -566,9 +842,23 @@ def _jcm_923_major_metals(source: str = "JCM Medium 924") -> dict[str, Any]:
         source=source,
         notes=f"{source} adds 10.0 ml/L Major metals from JCM Medium 923.",
         composition=[
-            _source_component("KCl", "0.15", "G_PER_L", source=jcm_923, term=("CHEBI:32588", "potassium chloride")),
-            _source_component("KH2PO4", "1.36", "G_PER_L", source=jcm_923, term=("CHEBI:63036", "potassium dihydrogen phosphate")),
-            _source_component("NH4Cl", "2.68", "G_PER_L", source=jcm_923, term=("CHEBI:31206", "ammonium chloride")),
+            _source_component(
+                "KCl", "0.15", "G_PER_L", source=jcm_923, term=("CHEBI:32588", "potassium chloride")
+            ),
+            _source_component(
+                "KH2PO4",
+                "1.36",
+                "G_PER_L",
+                source=jcm_923,
+                term=("CHEBI:63036", "potassium dihydrogen phosphate"),
+            ),
+            _source_component(
+                "NH4Cl",
+                "2.68",
+                "G_PER_L",
+                source=jcm_923,
+                term=("CHEBI:31206", "ammonium chloride"),
+            ),
             _water(jcm_923),
         ],
     )
@@ -577,17 +867,75 @@ def _jcm_923_major_metals(source: str = "JCM Medium 924") -> dict[str, Any]:
 def _jcm_923_trace_metal_1_components() -> list[dict[str, Any]]:
     jcm_923 = "JCM Medium 923"
     return [
-        _source_component("CoCl2 x 6H2O", "24.0", "MG_PER_L", source=jcm_923, term=("CHEBI:53503", "cobalt chloride hexahydrate")),
-        _source_component("ZnCl2", "75.0", "MG_PER_L", source=jcm_923, term=("CHEBI:49976", "zinc dichloride")),
-        _source_component("H3BO3", "19.0", "MG_PER_L", source=jcm_923, term=("CHEBI:33118", "boric acid")),
-        _source_component("NiCl2 x 6H2O", "24.0", "MG_PER_L", source=jcm_923, term=("CHEBI:53542", "nickel chloride hexahydrate")),
-        _source_component("Na2MoO4 x 2H2O", "24.0", "MG_PER_L", source=jcm_923, term=("CHEBI:75213", "sodium molybdate dihydrate")),
-        _source_component("FeCl2 x 4H2O", "1.344", "G_PER_L", source=jcm_923, term=("CHEBI:86249", "iron dichloride tetrahydrate")),
-        _source_component("MnSO4 x H2O", "26.0", "MG_PER_L", source=jcm_923, term=("CHEBI:86360", "manganese(II) sulfate")),
-        _source_component("MgSO4 x 7H2O", "1.556", "G_PER_L", source=jcm_923, term=("CHEBI:31795", "magnesium sulfate heptahydrate")),
-        _source_component("CaCl2 x 2H2O", "2.336", "G_PER_L", source=jcm_923, term=("CHEBI:86158", "calcium chloride dihydrate")),
-        _source_component("CuSO4 x 5H2O", "9.0", "MG_PER_L", source=jcm_923, term=("CHEBI:31440", "copper(II) sulfate pentahydrate")),
-        _source_component("AlK(SO4)2 x 12H2O", "3.446", "G_PER_L", source=jcm_923, term=("CHEBI:86465", "potassium aluminium sulfate dodecahydrate")),
+        _source_component(
+            "CoCl2 x 6H2O",
+            "24.0",
+            "MG_PER_L",
+            source=jcm_923,
+            term=("CHEBI:53503", "cobalt chloride hexahydrate"),
+        ),
+        _source_component(
+            "ZnCl2", "75.0", "MG_PER_L", source=jcm_923, term=("CHEBI:49976", "zinc dichloride")
+        ),
+        _source_component(
+            "H3BO3", "19.0", "MG_PER_L", source=jcm_923, term=("CHEBI:33118", "boric acid")
+        ),
+        _source_component(
+            "NiCl2 x 6H2O",
+            "24.0",
+            "MG_PER_L",
+            source=jcm_923,
+            term=("CHEBI:53542", "nickel chloride hexahydrate"),
+        ),
+        _source_component(
+            "Na2MoO4 x 2H2O",
+            "24.0",
+            "MG_PER_L",
+            source=jcm_923,
+            term=("CHEBI:75213", "sodium molybdate dihydrate"),
+        ),
+        _source_component(
+            "FeCl2 x 4H2O",
+            "1.344",
+            "G_PER_L",
+            source=jcm_923,
+            term=("CHEBI:86249", "iron dichloride tetrahydrate"),
+        ),
+        _source_component(
+            "MnSO4 x H2O",
+            "26.0",
+            "MG_PER_L",
+            source=jcm_923,
+            term=("CHEBI:86360", "manganese(II) sulfate"),
+        ),
+        _source_component(
+            "MgSO4 x 7H2O",
+            "1.556",
+            "G_PER_L",
+            source=jcm_923,
+            term=("CHEBI:31795", "magnesium sulfate heptahydrate"),
+        ),
+        _source_component(
+            "CaCl2 x 2H2O",
+            "2.336",
+            "G_PER_L",
+            source=jcm_923,
+            term=("CHEBI:86158", "calcium chloride dihydrate"),
+        ),
+        _source_component(
+            "CuSO4 x 5H2O",
+            "9.0",
+            "MG_PER_L",
+            source=jcm_923,
+            term=("CHEBI:31440", "copper(II) sulfate pentahydrate"),
+        ),
+        _source_component(
+            "AlK(SO4)2 x 12H2O",
+            "3.446",
+            "G_PER_L",
+            source=jcm_923,
+            term=("CHEBI:86465", "potassium aluminium sulfate dodecahydrate"),
+        ),
         _water(jcm_923),
     ]
 
@@ -610,16 +958,64 @@ def _jcm_923_vitamins() -> dict[str, Any]:
         source="JCM Medium 924",
         notes="JCM Medium 924 adds 0.05 ml Vitamin solution from JCM Medium 923 to each 5 ml tube; this is 10 ml/L.",
         composition=[
-            _source_component("Biotin", "20.0", "MG_PER_L", source=source, term=("CHEBI:15956", "biotin")),
-            _source_component("Folic acid", "20.0", "MG_PER_L", source=source, term=("CHEBI:27470", "folic acid")),
-            _source_component("Pyridoxine HCl", "100.0", "MG_PER_L", source=source, term=("CHEBI:30961", "pyridoxine hydrochloride")),
-            _source_component("Thiamine HCl", "50.0", "MG_PER_L", source=source, term=("CHEBI:49105", "thiamine hydrochloride")),
-            _source_component("Riboflavin", "50.0", "MG_PER_L", source=source, term=("CHEBI:17015", "riboflavin")),
-            _source_component("Nicotinic acid", "50.0", "MG_PER_L", source=source, term=("CHEBI:15940", "nicotinic acid")),
-            _source_component("DL-Calcium pantothenate", "50.0", "MG_PER_L", source=source, term=("CHEBI:31345", "Calcium pantothenate")),
-            _source_component("Vitamin B12", "1.0", "MG_PER_L", source=source, term=("CHEBI:176843", "vitamin B12")),
-            _source_component("p-Aminobenzoic acid", "50.0", "MG_PER_L", source=source, term=("CHEBI:30753", "4-aminobenzoic acid")),
-            _source_component("Lipoic acid", "50.0", "MG_PER_L", source=source, term=("CHEBI:16494", "lipoic acid")),
+            _source_component(
+                "Biotin", "20.0", "MG_PER_L", source=source, term=("CHEBI:15956", "biotin")
+            ),
+            _source_component(
+                "Folic acid", "20.0", "MG_PER_L", source=source, term=("CHEBI:27470", "folic acid")
+            ),
+            _source_component(
+                "Pyridoxine HCl",
+                "100.0",
+                "MG_PER_L",
+                source=source,
+                term=("CHEBI:30961", "pyridoxine hydrochloride"),
+            ),
+            _source_component(
+                "Thiamine HCl",
+                "50.0",
+                "MG_PER_L",
+                source=source,
+                term=("CHEBI:49105", "thiamine hydrochloride"),
+            ),
+            _source_component(
+                "Riboflavin", "50.0", "MG_PER_L", source=source, term=("CHEBI:17015", "riboflavin")
+            ),
+            _source_component(
+                "Nicotinic acid",
+                "50.0",
+                "MG_PER_L",
+                source=source,
+                term=("CHEBI:15940", "nicotinic acid"),
+            ),
+            _source_component(
+                "DL-Calcium pantothenate",
+                "50.0",
+                "MG_PER_L",
+                source=source,
+                term=("CHEBI:31345", "Calcium pantothenate"),
+            ),
+            _source_component(
+                "Vitamin B12",
+                "1.0",
+                "MG_PER_L",
+                source=source,
+                term=("CHEBI:176843", "vitamin B12"),
+            ),
+            _source_component(
+                "p-Aminobenzoic acid",
+                "50.0",
+                "MG_PER_L",
+                source=source,
+                term=("CHEBI:30753", "4-aminobenzoic acid"),
+            ),
+            _source_component(
+                "Lipoic acid",
+                "50.0",
+                "MG_PER_L",
+                source=source,
+                term=("CHEBI:16494", "lipoic acid"),
+            ),
             _water(source),
         ],
         preparation_notes="Filter-sterilize and store under N2 at 4C in the dark.",
@@ -669,10 +1065,34 @@ def _m1150_recipe() -> dict[str, Any]:
                 source=source,
                 notes="JCM Medium 1081 adds 250.0 ml/L sterilized Basal mineral NaCl medium from JCM Medium 1079.",
                 composition=[
-                    _source_component("NaCl", "240.0", "G_PER_L", source="JCM Medium 1079", term=("CHEBI:26710", "sodium chloride")),
-                    _source_component("K2HPO4", "2.5", "G_PER_L", source="JCM Medium 1079", term=("CHEBI:131527", "dipotassium hydrogen phosphate")),
-                    _source_component("NH4Cl", "0.5", "G_PER_L", source="JCM Medium 1079", term=("CHEBI:31206", "ammonium chloride")),
-                    _source_component("HEPES", "7.0", "G_PER_L", source="JCM Medium 1079", term=("CHEBI:46756", "HEPES")),
+                    _source_component(
+                        "NaCl",
+                        "240.0",
+                        "G_PER_L",
+                        source="JCM Medium 1079",
+                        term=("CHEBI:26710", "sodium chloride"),
+                    ),
+                    _source_component(
+                        "K2HPO4",
+                        "2.5",
+                        "G_PER_L",
+                        source="JCM Medium 1079",
+                        term=("CHEBI:131527", "dipotassium hydrogen phosphate"),
+                    ),
+                    _source_component(
+                        "NH4Cl",
+                        "0.5",
+                        "G_PER_L",
+                        source="JCM Medium 1079",
+                        term=("CHEBI:31206", "ammonium chloride"),
+                    ),
+                    _source_component(
+                        "HEPES",
+                        "7.0",
+                        "G_PER_L",
+                        source="JCM Medium 1079",
+                        term=("CHEBI:46756", "HEPES"),
+                    ),
                     _water("JCM Medium 1079"),
                 ],
             ),
@@ -838,10 +1258,26 @@ def _m279_recipe() -> dict[str, Any]:
         "physical_state": "LIQUID",
         "ph_value": 6.5,
         "ingredients": [
-            _component("NH4Cl", "0.5", "G_PER_L", source=source, term=("CHEBI:31206", "ammonium chloride")),
-            _component("K2HPO4", "0.4", "G_PER_L", source=source, term=("CHEBI:131527", "dipotassium hydrogen phosphate")),
-            _component("MgCl2 x 6H2O", "0.1", "G_PER_L", source=source, term=("CHEBI:86345", "magnesium dichloride hexahydrate")),
-            _component("Resazurin", "1.0", "MG_PER_L", source=source, term=("CHEBI:8806", "Resazurin")),
+            _component(
+                "NH4Cl", "0.5", "G_PER_L", source=source, term=("CHEBI:31206", "ammonium chloride")
+            ),
+            _component(
+                "K2HPO4",
+                "0.4",
+                "G_PER_L",
+                source=source,
+                term=("CHEBI:131527", "dipotassium hydrogen phosphate"),
+            ),
+            _component(
+                "MgCl2 x 6H2O",
+                "0.1",
+                "G_PER_L",
+                source=source,
+                term=("CHEBI:86345", "magnesium dichloride hexahydrate"),
+            ),
+            _component(
+                "Resazurin", "1.0", "MG_PER_L", source=source, term=("CHEBI:8806", "Resazurin")
+            ),
             _component("Distilled water", "1.0", "L", source=source, term=("CHEBI:15377", "water")),
             _component(
                 "N2",
@@ -943,7 +1379,13 @@ def _trace_metal_2() -> dict[str, Any]:
         notes="JCM Medium 924 adds 1.0 ml/L Trace metal 2 solution.",
         composition=_jcm_923_trace_metal_1_components()
         + [
-            _source_component("EDTA x 2Na", "37.23", "G_PER_L", source=source, term=("CHEBI:64734", "EDTA disodium salt (anhydrous)")),
+            _source_component(
+                "EDTA x 2Na",
+                "37.23",
+                "G_PER_L",
+                source=source,
+                term=("CHEBI:64734", "EDTA disodium salt (anhydrous)"),
+            ),
             _component(
                 "NaOH",
                 "variable",
@@ -1335,7 +1777,11 @@ def _composition_components(doc: dict[str, Any]) -> list[dict[str, Any]]:
         if not isinstance(solution, dict):
             continue
         composition = solution.get("composition")
-        nested = [row for row in composition if isinstance(row, dict)] if isinstance(composition, list) else []
+        nested = (
+            [row for row in composition if isinstance(row, dict)]
+            if isinstance(composition, list)
+            else []
+        )
         components.extend(nested or [solution])
     return components
 

@@ -166,10 +166,7 @@ def _mds_salt_water(source: str) -> dict[str, Any]:
                 "5.0",
                 "ML_PER_L",
                 source=SOURCE_M578,
-                notes=(
-                    "JCM Medium 574 adds 5 ml/L 1 M CaCl2 solution to "
-                    "MDS salt water."
-                ),
+                notes=("JCM Medium 574 adds 5 ml/L 1 M CaCl2 solution to " "MDS salt water."),
             ),
             _mds_component("Distilled water", "1.0", "L"),
         ],
@@ -181,10 +178,7 @@ def _mds_salt_water(source: str) -> dict[str, Any]:
 
 
 def _preparation_steps(source: str, solid: bool) -> list[dict[str, Any]]:
-    mix = (
-        "Mix distilled water, yeast extract, Peptone (Oxoid), and MDS salt "
-        "water thoroughly."
-    )
+    mix = "Mix distilled water, yeast extract, Peptone (Oxoid), and MDS salt " "water thoroughly."
     if solid:
         mix = (
             "Mix distilled water, yeast extract, agar, Peptone (Oxoid), and "
@@ -296,9 +290,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -345,9 +337,7 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}")
     if _source_term_id(doc) != target.source_term:
         raise ValueError(f"{target.path}: expected media term {target.source_term}")
 

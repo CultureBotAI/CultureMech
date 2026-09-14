@@ -79,10 +79,13 @@ def test_repair_corrects_base_formula_and_conditions(repair_module) -> None:
 
     assert repaired["composition_type"] == "SEMI_DEFINED"
     assert repaired["ph_value"] == 7.0
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert _by_name(repaired["ingredients"])["Sea salts (Sigma-Aldrich)"] == {
         "preferred_term": "Sea salts (Sigma-Aldrich)",
         "concentration": {"value": "30.0", "unit": "G_PER_L"},
@@ -100,9 +103,12 @@ def test_repair_expands_trace_and_selenite_stocks(repair_module) -> None:
     solutions = _by_name(repaired["solutions"])
     trace = _by_name(solutions["Trace minerals"]["composition"])
 
-    assert repair_module._solution_signatures(
-        repaired,
-    ) == repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._solution_signatures(
+            repaired,
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURES
+    )
     assert solutions["Trace minerals"]["concentration"] == {
         "value": "1.0",
         "unit": "ML_PER_L",
@@ -147,10 +153,7 @@ def test_repair_expands_post_autoclave_stocks(repair_module) -> None:
             "preferred_term": "Sodium thiosulfate",
             "concentration": {"value": "1.0", "unit": "MOLAR"},
             "source": repair_module.SOURCE,
-            "notes": (
-                "TOGO M1399 / JCM Medium 1302 lists 1.0 M "
-                "Sodium thiosulfate."
-            ),
+            "notes": ("TOGO M1399 / JCM Medium 1302 lists 1.0 M " "Sodium thiosulfate."),
             "term": {"id": "CHEBI:132112", "label": "sodium thiosulfate"},
             "mediaingredientmech_chebi_term": {
                 "id": "CHEBI:132112",
@@ -202,9 +205,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

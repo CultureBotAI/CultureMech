@@ -45,8 +45,7 @@ def _doc(target) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "SOLID_AGAR",
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_signature
+            _ingredient(name, value, unit) for name, value, unit in target.imported_signature
         ],
         "media_term": {
             "preferred_term": f"TOGO Medium {target.expected_media_term.removeprefix('TOGO:')}",
@@ -186,9 +185,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(target), target)
     twice = repair_module.repair_record(once, target)
 
-    assert twice["references"] == [
-        {"reference": url} for url in target.reference_urls
-    ]
+    assert twice["references"] == [{"reference": url} for url in target.reference_urls]
     matching_events = [
         event
         for event in twice["curation_history"]

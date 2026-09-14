@@ -23,8 +23,7 @@ EXPECTED_MEDIA_TERM = "komodo.medium:297"
 YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 KOMODO_297_URL = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=297"
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=297"
 )
 DSMZ_297_URL = (
     "https://web.archive.org/web/20121030082653id_/"
@@ -279,9 +278,7 @@ def _check_source(doc: dict[str, Any]) -> None:
         raise ValueError(f"{TARGET}: missing media_term")
     term = media_term.get("term")
     if not isinstance(term, dict) or term.get("id") != EXPECTED_MEDIA_TERM:
-        raise ValueError(
-            f"{TARGET}: missing expected media term {EXPECTED_MEDIA_TERM}"
-        )
+        raise ValueError(f"{TARGET}: missing expected media term {EXPECTED_MEDIA_TERM}")
 
 
 def _put_after(doc: dict[str, Any], key: str, value: Any, after: str) -> None:
@@ -372,8 +369,7 @@ def _ingredient(component: Component) -> dict[str, Any]:
 def repair_record(doc: dict[str, Any]) -> dict[str, Any]:
     if doc.get("id") != EXPECTED_ID:
         raise ValueError(
-            f"{TARGET}: expected immutable id {EXPECTED_ID}, "
-            f"found {doc.get('id')!r}"
+            f"{TARGET}: expected immutable id {EXPECTED_ID}, " f"found {doc.get('id')!r}"
         )
     _check_source(doc)
 

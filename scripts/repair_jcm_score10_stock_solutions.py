@@ -197,8 +197,7 @@ def _stock(
     }
     if composition:
         row["composition"] = [
-            _component(component, amount, unit, source)
-            for component, amount, unit in composition
+            _component(component, amount, unit, source) for component, amount, unit in composition
         ]
     return row
 
@@ -222,9 +221,7 @@ def _ingredient_signature(doc: dict[str, Any]) -> tuple[str, ...]:
     if not isinstance(ingredients, list):
         raise ValueError("ingredients is not a list")
     return tuple(
-        str(row.get("preferred_term") or "")
-        for row in ingredients
-        if isinstance(row, dict)
+        str(row.get("preferred_term") or "") for row in ingredients if isinstance(row, dict)
     )
 
 
@@ -232,11 +229,7 @@ def _solution_signature(doc: dict[str, Any]) -> tuple[str, ...]:
     solutions = doc.get("solutions") or []
     if not isinstance(solutions, list):
         raise ValueError("solutions is not a list")
-    return tuple(
-        str(row.get("preferred_term") or "")
-        for row in solutions
-        if isinstance(row, dict)
-    )
+    return tuple(str(row.get("preferred_term") or "") for row in solutions if isinstance(row, dict))
 
 
 def _put_after(doc: dict[str, Any], key: str, value: Any, after: str) -> None:
@@ -351,20 +344,14 @@ def _j1334() -> tuple[list[dict[str, Any]], list[dict[str, Any]], str]:
                 "10% Yeast extract solution",
                 "0.2",
                 source=source,
-                notes=(
-                    "JCM Medium 1334 adds 0.2 ml/L autoclaved 10% Yeast "
-                    "extract solution."
-                ),
+                notes=("JCM Medium 1334 adds 0.2 ml/L autoclaved 10% Yeast " "extract solution."),
                 composition=(("Yeast extract", "100.0", "G_PER_L"),),
             ),
             _stock(
                 "10% Soluble starch solution",
                 "10.0",
                 source=source,
-                notes=(
-                    "JCM Medium 1334 adds 10.0 ml/L autoclaved 10% "
-                    "Soluble starch solution."
-                ),
+                notes=("JCM Medium 1334 adds 10.0 ml/L autoclaved 10% " "Soluble starch solution."),
                 composition=(("Soluble starch", "100.0", "G_PER_L"),),
             ),
         ],
@@ -424,8 +411,7 @@ def _j1359() -> tuple[list[dict[str, Any]], list[dict[str, Any]], str]:
             "10.0",
             source=source,
             notes=(
-                "JCM Medium 1359 adds 10.0 ml/L filter-sterilized 10% "
-                "Casein peptone solution."
+                "JCM Medium 1359 adds 10.0 ml/L filter-sterilized 10% " "Casein peptone solution."
             ),
             composition=(("Casein peptone", "100.0", "G_PER_L"),),
         ),
@@ -555,8 +541,7 @@ def _j1405() -> tuple[list[dict[str, Any]], list[dict[str, Any]], str]:
             "20.0",
             source=source,
             notes=(
-                "JCM Medium 1405 adds 20.0 ml/L filter-sterilized 3% "
-                "Trimethylamine solution."
+                "JCM Medium 1405 adds 20.0 ml/L filter-sterilized 3% " "Trimethylamine solution."
             ),
         ),
         _stock(
@@ -582,20 +567,16 @@ def _j1405() -> tuple[list[dict[str, Any]], list[dict[str, Any]], str]:
 
 REPAIRS = {
     Path("archaea/JCM_J1334_NATRONOARCHAEA_MEDIUM_II.yaml"): _j1334,
-    Path("bacterial/JCM_J1359_MINERAL_CARBONATE_MEDIUM_WITH_CASEIN_PEPTONE.yaml"): (
-        _j1359
-    ),
+    Path("bacterial/JCM_J1359_MINERAL_CARBONATE_MEDIUM_WITH_CASEIN_PEPTONE.yaml"): (_j1359),
     Path("bacterial/JCM_J1392_ATRIBACTEROTA_M15_MEDIUM.yaml"): _j1392,
     Path("bacterial/JCM_J1405_THIOHALORHABDUS_METHYLOTROPHUS_MEDIUM.yaml"): _j1405,
 }
 
 FINAL_SIGNATURES = {
-    path: tuple(row["preferred_term"] for row in builder()[0])
-    for path, builder in REPAIRS.items()
+    path: tuple(row["preferred_term"] for row in builder()[0]) for path, builder in REPAIRS.items()
 }
 FINAL_SOLUTION_SIGNATURES = {
-    path: tuple(row["preferred_term"] for row in builder()[1])
-    for path, builder in REPAIRS.items()
+    path: tuple(row["preferred_term"] for row in builder()[1]) for path, builder in REPAIRS.items()
 }
 
 
@@ -612,9 +593,7 @@ def _ensure_target(path: Path, doc: dict[str, Any]) -> None:
         raise ValueError(f"{path}: expected {target['id']}, found {doc.get('id')!r}")
     source_id = _source_term_id(doc)
     if source_id != target["source_id"]:
-        raise ValueError(
-            f"{path}: expected {target['source_id']}, found {source_id!r}"
-        )
+        raise ValueError(f"{path}: expected {target['source_id']}, found {source_id!r}")
 
     current = (_ingredient_signature(doc), _solution_signature(doc))
     accepted = {

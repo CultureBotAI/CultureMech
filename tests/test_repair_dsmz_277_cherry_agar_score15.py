@@ -86,9 +86,7 @@ def test_repair_nests_cherry_extract_and_scores_clean(
         "value": "200.0",
         "unit": "G_PER_L",
     }
-    assert scorer_module.score_parsed(
-        [(str(repair_module.PATH), repaired)]
-    ) == []
+    assert scorer_module.score_parsed([(str(repair_module.PATH), repaired)]) == []
 
 
 def test_repair_replaces_preparation_steps_and_adds_event_once(

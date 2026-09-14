@@ -37,9 +37,7 @@ IMPORTED_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("UPW", "100", "G_PER_L"),
 )
 
-FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
-    ("UPW", "1000.0", "ML_PER_L"),
-)
+FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (("UPW", "1000.0", "ML_PER_L"),)
 
 IMPORTED_SOLUTION_SIGNATURE: tuple[SolutionSignature, ...] = (
     ("CaCl2 solution", "600", "G_PER_L", ()),
@@ -96,8 +94,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 5,
         "action": "MIX",
         "description": (
-            "After autoclaving, add 6.0 ml/L 0.5 M CaCl2 stock and "
-            "3.33 ml/L 0.6 M MgCl2 stock."
+            "After autoclaving, add 6.0 ml/L 0.5 M CaCl2 stock and " "3.33 ml/L 0.6 M MgCl2 stock."
         ),
     },
 )
@@ -128,10 +125,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": (
-            notes
-            or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}."
-        ),
+        "notes": (notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}."),
     }
     grounding = GROUNDINGS.get(preferred_term)
     if grounding is not None:
@@ -188,8 +182,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
         "HEPES",
         "0.5",
         notes=(
-            f"{SOURCE} dilutes 5 ml 0.5 M HEPES to 100 ml before pH "
-            "adjustment and autoclaving."
+            f"{SOURCE} dilutes 5 ml 0.5 M HEPES to 100 ml before pH " "adjustment and autoclaving."
         ),
     ),
     _stock(
@@ -198,8 +191,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
         "CaCl2",
         "0.5",
         notes=(
-            f"{SOURCE} adds 600 ul 0.5 M CaCl2 solution to the 100 ml "
-            "autoclaved HEPES base."
+            f"{SOURCE} adds 600 ul 0.5 M CaCl2 solution to the 100 ml " "autoclaved HEPES base."
         ),
         preparation_notes="Filter-sterilize before post-autoclave addition.",
     ),
@@ -209,8 +201,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
         "MgCl2",
         "0.6",
         notes=(
-            f"{SOURCE} adds 333 ul 0.6 M MgCl2 solution to the 100 ml "
-            "autoclaved HEPES base."
+            f"{SOURCE} adds 333 ul 0.6 M MgCl2 solution to the 100 ml " "autoclaved HEPES base."
         ),
         preparation_notes="Filter-sterilize before post-autoclave addition.",
     ),
@@ -229,9 +220,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -254,9 +243,7 @@ def _solution_signature(rows: Any, label: str) -> tuple[SolutionSignature, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

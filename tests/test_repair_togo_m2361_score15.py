@@ -94,10 +94,13 @@ def test_repair_corrects_distilled_water_and_adds_ph(repair_module) -> None:
     assert repaired["composition_type"] == "UNDEFINED"
     assert repaired["physical_state"] == "LIQUID"
     assert repaired["ph_value"] == 7.5
-    assert repair_module._component_signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._component_signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Distilled water"]["concentration"] == {
         "value": "1.0",
         "unit": "L",
@@ -162,9 +165,7 @@ def test_repair_links_target_to_dsmz_parent(repair_module) -> None:
 
     assert repaired["parent_media"] == repair_module.PARENT_MEDIA
     assert repaired["variant_relationship"] == "SOURCE_DUPLICATE"
-    assert repaired["variant_modifications"] == [
-        repair_module.VARIANT_MODIFICATION
-    ]
+    assert repaired["variant_modifications"] == [repair_module.VARIANT_MODIFICATION]
 
 
 def test_repair_record_drops_out_of_review_ranking(
@@ -185,9 +186,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_target(_doc(repair_module))
     twice = repair_module.repair_target(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

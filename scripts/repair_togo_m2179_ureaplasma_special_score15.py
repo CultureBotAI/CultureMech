@@ -335,8 +335,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 5,
         "action": "MIX",
         "description": (
-            "Aseptically add the filter-sterilized additive solution to the "
-            "basal medium."
+            "Aseptically add the filter-sterilized additive solution to the " "basal medium."
         ),
     },
     {

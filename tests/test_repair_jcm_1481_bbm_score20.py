@@ -31,10 +31,7 @@ def _minimal_doc() -> dict:
             "preferred_term": "JCM Medium J1481",
             "term": {"id": "jcm.grmd:1481", "label": "Bold's Basal Medium (BBM)"},
         },
-        "notes": (
-            "Source: JCM | Link: "
-            "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1481"
-        ),
+        "notes": ("Source: JCM | Link: " "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1481"),
         "ingredients": [
             {
                 "preferred_term": "Agar",

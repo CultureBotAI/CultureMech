@@ -131,13 +131,19 @@ def test_repair_medium_10_j179_mirrors_togo_m172(
     assert repaired["composition_type"] == "UNDEFINED"
     assert repaired["physical_state"] == "LIQUID"
     assert repaired["ph_range"] == {"min": 6.7, "max": 6.8}
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == target.togo_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._solution_signatures(
-        repaired,
-    ) == target.togo_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == target.togo_module.FINAL_INGREDIENT_SIGNATURE
+    )
+    assert (
+        repair_module._solution_signatures(
+            repaired,
+        )
+        == target.togo_module.FINAL_SOLUTION_SIGNATURES
+    )
     assert scorer_module.score_record(repaired) == (0, [])
 
 
@@ -155,9 +161,10 @@ def test_repair_modified_medium_10_j210_becomes_solid_agar(
         "id": "CHEBI:2509",
         "label": "agar",
     }
-    assert solutions["1.0% Hemin solution"]["composition"][0][
-        "mediaingredientmech_chebi_term"
-    ] == {"id": "CHEBI:50385", "label": "hemin"}
+    assert solutions["1.0% Hemin solution"]["composition"][0]["mediaingredientmech_chebi_term"] == {
+        "id": "CHEBI:50385",
+        "label": "hemin",
+    }
     assert scorer_module.score_record(repaired) == (0, [])
 
 
@@ -182,9 +189,10 @@ def test_repair_grounds_jcm_stock_components(repair_module) -> None:
         assert solutions["4% Na2SO3 solution"]["composition"][0][
             "mediaingredientmech_chebi_term"
         ] == {"id": "CHEBI:86477", "label": "sodium sulfite"}
-        assert solutions["25% L--Ascorbic acid solution"]["composition"][0][
-            "concentration"
-        ] == {"value": "25.0", "unit": "PERCENT_W_V"}
+        assert solutions["25% L--Ascorbic acid solution"]["composition"][0]["concentration"] == {
+            "value": "25.0",
+            "unit": "PERCENT_W_V",
+        }
         assert solutions["VFA solution (see Medium [M124])"]["composition"] == []
 
 
@@ -235,9 +243,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_jcm_record(_jcm_doc(target), target)
     twice = repair_module.repair_jcm_record(once, target)
 
-    assert twice["references"] == [
-        {"reference": url} for url in target.togo_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in target.togo_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

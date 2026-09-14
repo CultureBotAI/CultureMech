@@ -100,9 +100,7 @@ def test_repair_record_normalizes_124_base_and_solution_b() -> None:
         "value": "1.383399",
         "unit": "G_PER_L",
     }
-    assert _ingredient(repaired, "Na2S x 9 H2O")["source"] == (
-        repair.SOURCE_124_SOLUTION_B
-    )
+    assert _ingredient(repaired, "Na2S x 9 H2O")["source"] == (repair.SOURCE_124_SOLUTION_B)
     assert _ingredient(repaired, "Na2S x 9 H2O")["concentration"] == {
         "value": "0.355731",
         "unit": "G_PER_L",
@@ -176,8 +174,7 @@ def test_repair_record_scores_as_complete_and_is_idempotent() -> None:
     events = [
         event
         for event in twice["curation_history"]
-        if event.get("curator") == repair.CURATOR
-        and event.get("action") == repair.ACTION
+        if event.get("curator") == repair.CURATOR and event.get("action") == repair.ACTION
     ]
     assert len(events) == 1
 

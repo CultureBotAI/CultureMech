@@ -51,16 +51,14 @@ NOTES = {
         "addition for DSMZ Medium 1279."
     ),
     "Vitox": (
-        "MediaDive solution 2559 lists Vitox as an aseptic addition for "
-        "DSMZ Medium 1279."
+        "MediaDive solution 2559 lists Vitox as an aseptic addition for " "DSMZ Medium 1279."
     ),
     "Skirrow supplement": (
         "MediaDive solution 2559 lists Skirrow supplement as an aseptic "
         "addition for DSMZ Medium 1279."
     ),
     "Amphotericin": (
-        "MediaDive solution 2559 lists Amphotericin as an aseptic addition "
-        "for DSMZ Medium 1279."
+        "MediaDive solution 2559 lists Amphotericin as an aseptic addition " "for DSMZ Medium 1279."
     ),
 }
 
@@ -81,9 +79,7 @@ def _ingredient_signature(doc: dict[str, Any]) -> tuple[str, ...]:
     if not isinstance(ingredients, list):
         raise ValueError("ingredients is not a list")
     return tuple(
-        str(row.get("preferred_term") or "")
-        for row in ingredients
-        if isinstance(row, dict)
+        str(row.get("preferred_term") or "") for row in ingredients if isinstance(row, dict)
     )
 
 

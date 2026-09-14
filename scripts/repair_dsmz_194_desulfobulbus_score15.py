@@ -58,8 +58,7 @@ DSMZ_194_PDF = "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium194.pdf
 DSMZ_194A_REST = "https://mediadive.dsmz.de/rest/medium/194a"
 DSMZ_194A_PDF = "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium194a.pdf"
 KOMODO_BASE = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo="
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo="
 )
 
 SOURCE_KOMODO_194 = "KOMODO Medium 194"
@@ -167,34 +166,70 @@ def _recipe_ref(path: str, relationship: str, notes: str) -> dict[str, str]:
 def _base_components(source: str = SOURCE_KOMODO_194) -> tuple[Component, ...]:
     return (
         _komodo_component(source, "Na2SO4", "3.00", "CHEBI:32149", "sodium sulfate"),
-        _komodo_component(source, "KH2PO4", "0.20", "CHEBI:63036", "potassium dihydrogen phosphate"),
+        _komodo_component(
+            source, "KH2PO4", "0.20", "CHEBI:63036", "potassium dihydrogen phosphate"
+        ),
         _komodo_component(source, "NH4Cl", "0.30", "CHEBI:31206", "ammonium chloride"),
         _komodo_component(source, "NaCl", "1.00", "CHEBI:26710", "sodium chloride"),
-        _komodo_component(source, "MgCl2 x 6 H2O", "0.40", "CHEBI:86345", "magnesium dichloride hexahydrate"),
+        _komodo_component(
+            source, "MgCl2 x 6 H2O", "0.40", "CHEBI:86345", "magnesium dichloride hexahydrate"
+        ),
         _komodo_component(source, "KCl", "0.50", "CHEBI:32588", "potassium chloride"),
-        _komodo_component(source, "CaCl2 x 2 H2O", "0.15", "CHEBI:86158", "calcium chloride dihydrate"),
+        _komodo_component(
+            source, "CaCl2 x 2 H2O", "0.15", "CHEBI:86158", "calcium chloride dihydrate"
+        ),
         _komodo_component(source, "Resazurin", "0.000999", "CHEBI:8806", "Resazurin"),
         _komodo_component(source, "NaHCO3", "5.00", "CHEBI:32139", "sodium hydrogencarbonate"),
         _komodo_component(source, "Sodium propionate", "1.50", "CHEBI:132106", "sodium propionate"),
-        _komodo_component(source, "Na2S x 9 H2O", "0.40", "CHEBI:76209", "sodium sulfide nonahydrate"),
+        _komodo_component(
+            source, "Na2S x 9 H2O", "0.40", "CHEBI:76209", "sodium sulfide nonahydrate"
+        ),
         _komodo_component(source, "HCl", "0.000671", "CHEBI:17883", "hydrogen chloride"),
-        _komodo_component(source, "FeCl2 x 4 H2O", "0.00149", "CHEBI:86249", "iron dichloride tetrahydrate"),
+        _komodo_component(
+            source, "FeCl2 x 4 H2O", "0.00149", "CHEBI:86249", "iron dichloride tetrahydrate"
+        ),
         _komodo_component(source, "ZnCl2", "0.0000698", "CHEBI:49976", "zinc dichloride"),
-        _komodo_component(source, "MnCl2 x 4 H2O", "0.0000997", "CHEBI:86368", "manganese(II) chloride tetrahydrate"),
+        _komodo_component(
+            source,
+            "MnCl2 x 4 H2O",
+            "0.0000997",
+            "CHEBI:86368",
+            "manganese(II) chloride tetrahydrate",
+        ),
         _komodo_component(source, "H3BO3", "0.00000598", "CHEBI:33118", "boric acid"),
-        _komodo_component(source, "CoCl2 x 6 H2O", "0.000189", "CHEBI:53503", "cobalt chloride hexahydrate"),
-        _komodo_component(source, "CuCl2 x 2 H2O", "0.00000199", "CHEBI:86318", "copper(II) chloride dihydrate"),
-        _komodo_component(source, "NiCl2 x 6 H2O", "0.0000239", "CHEBI:53542", "nickel chloride hexahydrate"),
-        _komodo_component(source, "Na2MoO4 x 2 H2O", "0.0000359", "CHEBI:75213", "sodium molybdate dihydrate"),
+        _komodo_component(
+            source, "CoCl2 x 6 H2O", "0.000189", "CHEBI:53503", "cobalt chloride hexahydrate"
+        ),
+        _komodo_component(
+            source, "CuCl2 x 2 H2O", "0.00000199", "CHEBI:86318", "copper(II) chloride dihydrate"
+        ),
+        _komodo_component(
+            source, "NiCl2 x 6 H2O", "0.0000239", "CHEBI:53542", "nickel chloride hexahydrate"
+        ),
+        _komodo_component(
+            source, "Na2MoO4 x 2 H2O", "0.0000359", "CHEBI:75213", "sodium molybdate dihydrate"
+        ),
         _komodo_component(source, "Folic acid", "0.0000200", "CHEBI:27470", "folic acid"),
         _komodo_component(source, "Biotin", "0.0000200", "CHEBI:15956", "biotin"),
-        _komodo_component(source, "Pyridoxine HCl", "0.0000999", "CHEBI:30961", "pyridoxine hydrochloride"),
-        _komodo_component(source, "Thiamine-HCl x 2 H2O", "0.0000500", "CHEBI:132751", "thiamine hydrochloride dihydrate"),
+        _komodo_component(
+            source, "Pyridoxine HCl", "0.0000999", "CHEBI:30961", "pyridoxine hydrochloride"
+        ),
+        _komodo_component(
+            source,
+            "Thiamine-HCl x 2 H2O",
+            "0.0000500",
+            "CHEBI:132751",
+            "thiamine hydrochloride dihydrate",
+        ),
         _komodo_component(source, "Riboflavin", "0.0000500", "CHEBI:17015", "riboflavin"),
         _komodo_component(source, "Nicotinic acid", "0.0000500", "CHEBI:15940", "nicotinic acid"),
-        _komodo_component(source, "D-Ca-pantothenate", "0.0000500", "CHEBI:31345", "Calcium pantothenate"),
+        _komodo_component(
+            source, "D-Ca-pantothenate", "0.0000500", "CHEBI:31345", "Calcium pantothenate"
+        ),
         _komodo_component(source, "Vitamin B12", "0.000000999", "CHEBI:176843", "vitamin B12"),
-        _komodo_component(source, "p-Aminobenzoic acid", "0.0000500", "CHEBI:30753", "4-aminobenzoic acid"),
+        _komodo_component(
+            source, "p-Aminobenzoic acid", "0.0000500", "CHEBI:30753", "4-aminobenzoic acid"
+        ),
         _komodo_component(source, "Lipoic acid", "0.0000500", "CHEBI:16494", "lipoic acid"),
     )
 
@@ -206,10 +241,18 @@ def _without_propionate(components: tuple[Component, ...]) -> tuple[Component, .
 BASE_COMPONENTS = _base_components()
 
 KOMODO_194_1_COMPONENTS = (
-    *(row for row in _without_propionate(_base_components("KOMODO Medium 194.1")) if row.preferred_term != "NaCl"),
+    *(
+        row
+        for row in _without_propionate(_base_components("KOMODO Medium 194.1"))
+        if row.preferred_term != "NaCl"
+    ),
     _komodo_component("KOMODO Medium 194.1", "NaCl", "11.00", "CHEBI:26710", "sodium chloride"),
-    _komodo_component("KOMODO Medium 194.1", "Yeast extract", "1.00", "FOODON:03315426", "yeast extract"),
-    _komodo_component("KOMODO Medium 194.1", "Sodium lactate", "2.50", "CHEBI:75228", "sodium lactate"),
+    _komodo_component(
+        "KOMODO Medium 194.1", "Yeast extract", "1.00", "FOODON:03315426", "yeast extract"
+    ),
+    _komodo_component(
+        "KOMODO Medium 194.1", "Sodium lactate", "2.50", "CHEBI:75228", "sodium lactate"
+    ),
 )
 
 KOMODO_194_2_COMPONENTS = (
@@ -234,7 +277,14 @@ KOMODO_194_2_COMPONENTS = (
 
 KOMODO_194_3_COMPONENTS = (
     *_without_propionate(_base_components("KOMODO Medium 194.3")),
-    _component("Na-butyrate", "1.00", "CHEBI:64103", "sodium butyrate", SOURCE_DSMZ_194, _dsmz_note("Na-butyrate", "1.00", "DSM 21556")),
+    _component(
+        "Na-butyrate",
+        "1.00",
+        "CHEBI:64103",
+        "sodium butyrate",
+        SOURCE_DSMZ_194,
+        _dsmz_note("Na-butyrate", "1.00", "DSM 21556"),
+    ),
 )
 
 KOMODO_194_13527_COMPONENTS = (
@@ -243,48 +293,176 @@ KOMODO_194_13527_COMPONENTS = (
         for row in _without_propionate(_base_components("KOMODO Medium 194_13527"))
         if row.preferred_term != "NaHCO3"
     ),
-    _komodo_component("KOMODO Medium 194_13527", "NaHCO3", "2.50", "CHEBI:32139", "sodium hydrogencarbonate"),
-    _component("Na-butyrate", "1.00", "CHEBI:64103", "sodium butyrate", SOURCE_DSMZ_194, _dsmz_note("Na-butyrate", "1.00", "DSM 13527")),
+    _komodo_component(
+        "KOMODO Medium 194_13527", "NaHCO3", "2.50", "CHEBI:32139", "sodium hydrogencarbonate"
+    ),
+    _component(
+        "Na-butyrate",
+        "1.00",
+        "CHEBI:64103",
+        "sodium butyrate",
+        SOURCE_DSMZ_194,
+        _dsmz_note("Na-butyrate", "1.00", "DSM 13527"),
+    ),
 )
 
 KOMODO_194_5092_COMPONENTS = (
     *_without_propionate(_base_components("KOMODO Medium 194_5092")),
-    _component("putrescine", "0.90", "CHEBI:17148", "putrescine", SOURCE_DSMZ_194, _dsmz_note("putrescine", "0.90", "DSM 5092")),
+    _component(
+        "putrescine",
+        "0.90",
+        "CHEBI:17148",
+        "putrescine",
+        SOURCE_DSMZ_194,
+        _dsmz_note("putrescine", "0.90", "DSM 5092"),
+    ),
 )
 
 KOMODO_194_6523_COMPONENTS = (
     _komodo_component("KOMODO Medium 194_6523", "Na2SO4", "2.72", "CHEBI:32149", "sodium sulfate"),
-    _komodo_component("KOMODO Medium 194_6523", "KH2PO4", "0.18", "CHEBI:63036", "potassium dihydrogen phosphate"),
-    _komodo_component("KOMODO Medium 194_6523", "NH4Cl", "0.27", "CHEBI:31206", "ammonium chloride"),
+    _komodo_component(
+        "KOMODO Medium 194_6523", "KH2PO4", "0.18", "CHEBI:63036", "potassium dihydrogen phosphate"
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523", "NH4Cl", "0.27", "CHEBI:31206", "ammonium chloride"
+    ),
     _komodo_component("KOMODO Medium 194_6523", "NaCl", "0.91", "CHEBI:26710", "sodium chloride"),
-    _komodo_component("KOMODO Medium 194_6523", "MgCl2 x 6 H2O", "0.36", "CHEBI:86345", "magnesium dichloride hexahydrate"),
+    _komodo_component(
+        "KOMODO Medium 194_6523",
+        "MgCl2 x 6 H2O",
+        "0.36",
+        "CHEBI:86345",
+        "magnesium dichloride hexahydrate",
+    ),
     _komodo_component("KOMODO Medium 194_6523", "KCl", "0.45", "CHEBI:32588", "potassium chloride"),
-    _komodo_component("KOMODO Medium 194_6523", "CaCl2 x 2 H2O", "0.14", "CHEBI:86158", "calcium chloride dihydrate"),
+    _komodo_component(
+        "KOMODO Medium 194_6523",
+        "CaCl2 x 2 H2O",
+        "0.14",
+        "CHEBI:86158",
+        "calcium chloride dihydrate",
+    ),
     _komodo_component("KOMODO Medium 194_6523", "Resazurin", "0.000908", "CHEBI:8806", "Resazurin"),
-    _komodo_component("KOMODO Medium 194_6523", "NaHCO3", "4.54", "CHEBI:32139", "sodium hydrogencarbonate"),
-    _komodo_component("KOMODO Medium 194_6523", "Sodium propionate", "1.36", "CHEBI:132106", "sodium propionate"),
-    _komodo_component("KOMODO Medium 194_6523", "Na2S x 9 H2O", "0.36", "CHEBI:76209", "sodium sulfide nonahydrate"),
-    _komodo_component("KOMODO Medium 194_6523", "HCl", "0.000610", "CHEBI:17883", "hydrogen chloride"),
-    _komodo_component("KOMODO Medium 194_6523", "FeCl2 x 4 H2O", "0.00136", "CHEBI:86249", "iron dichloride tetrahydrate"),
-    _komodo_component("KOMODO Medium 194_6523", "ZnCl2", "0.0000634", "CHEBI:49976", "zinc dichloride"),
-    _komodo_component("KOMODO Medium 194_6523", "MnCl2 x 4 H2O", "0.0000906", "CHEBI:86368", "manganese(II) chloride tetrahydrate"),
+    _komodo_component(
+        "KOMODO Medium 194_6523", "NaHCO3", "4.54", "CHEBI:32139", "sodium hydrogencarbonate"
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523", "Sodium propionate", "1.36", "CHEBI:132106", "sodium propionate"
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523",
+        "Na2S x 9 H2O",
+        "0.36",
+        "CHEBI:76209",
+        "sodium sulfide nonahydrate",
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523", "HCl", "0.000610", "CHEBI:17883", "hydrogen chloride"
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523",
+        "FeCl2 x 4 H2O",
+        "0.00136",
+        "CHEBI:86249",
+        "iron dichloride tetrahydrate",
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523", "ZnCl2", "0.0000634", "CHEBI:49976", "zinc dichloride"
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523",
+        "MnCl2 x 4 H2O",
+        "0.0000906",
+        "CHEBI:86368",
+        "manganese(II) chloride tetrahydrate",
+    ),
     _komodo_component("KOMODO Medium 194_6523", "H3BO3", "0.00000544", "CHEBI:33118", "boric acid"),
-    _komodo_component("KOMODO Medium 194_6523", "CoCl2 x 6 H2O", "0.000172", "CHEBI:53503", "cobalt chloride hexahydrate"),
-    _komodo_component("KOMODO Medium 194_6523", "CuCl2 x 2 H2O", "0.00000181", "CHEBI:86318", "copper(II) chloride dihydrate"),
-    _komodo_component("KOMODO Medium 194_6523", "NiCl2 x 6 H2O", "0.0000217", "CHEBI:53542", "nickel chloride hexahydrate"),
-    _komodo_component("KOMODO Medium 194_6523", "Na2MoO4 x 2 H2O", "0.0000326", "CHEBI:75213", "sodium molybdate dihydrate"),
-    _komodo_component("KOMODO Medium 194_6523", "Folic acid", "0.0000182", "CHEBI:27470", "folic acid"),
+    _komodo_component(
+        "KOMODO Medium 194_6523",
+        "CoCl2 x 6 H2O",
+        "0.000172",
+        "CHEBI:53503",
+        "cobalt chloride hexahydrate",
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523",
+        "CuCl2 x 2 H2O",
+        "0.00000181",
+        "CHEBI:86318",
+        "copper(II) chloride dihydrate",
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523",
+        "NiCl2 x 6 H2O",
+        "0.0000217",
+        "CHEBI:53542",
+        "nickel chloride hexahydrate",
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523",
+        "Na2MoO4 x 2 H2O",
+        "0.0000326",
+        "CHEBI:75213",
+        "sodium molybdate dihydrate",
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523", "Folic acid", "0.0000182", "CHEBI:27470", "folic acid"
+    ),
     _komodo_component("KOMODO Medium 194_6523", "Biotin", "0.0000182", "CHEBI:15956", "biotin"),
-    _komodo_component("KOMODO Medium 194_6523", "Pyridoxine HCl", "0.0000908", "CHEBI:30961", "pyridoxine hydrochloride"),
-    _komodo_component("KOMODO Medium 194_6523", "Thiamine-HCl x 2 H2O", "0.0000454", "CHEBI:132751", "thiamine hydrochloride dihydrate"),
-    _komodo_component("KOMODO Medium 194_6523", "Riboflavin", "0.0000454", "CHEBI:17015", "riboflavin"),
-    _komodo_component("KOMODO Medium 194_6523", "Nicotinic acid", "0.0000454", "CHEBI:15940", "nicotinic acid"),
-    _komodo_component("KOMODO Medium 194_6523", "D-Ca-pantothenate", "0.0000454", "CHEBI:31345", "Calcium pantothenate"),
-    _komodo_component("KOMODO Medium 194_6523", "Vitamin B12", "0.000000908", "CHEBI:176843", "vitamin B12"),
-    _komodo_component("KOMODO Medium 194_6523", "p-Aminobenzoic acid", "0.0000454", "CHEBI:30753", "4-aminobenzoic acid"),
-    _komodo_component("KOMODO Medium 194_6523", "Lipoic acid", "0.0000454", "CHEBI:16494", "lipoic acid"),
-    _komodo_component("KOMODO Medium 194_6523", "Na2WO4 x 2 H2O", "0.000364", "CHEBI:63939", "sodium tungstate dihydrate"),
-    _komodo_component("KOMODO Medium 194_6523", "Na2SeO3 x 5 H2O", "0.000273", "CHEBI:131361", "disodium selenite pentahydrate"),
+    _komodo_component(
+        "KOMODO Medium 194_6523",
+        "Pyridoxine HCl",
+        "0.0000908",
+        "CHEBI:30961",
+        "pyridoxine hydrochloride",
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523",
+        "Thiamine-HCl x 2 H2O",
+        "0.0000454",
+        "CHEBI:132751",
+        "thiamine hydrochloride dihydrate",
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523", "Riboflavin", "0.0000454", "CHEBI:17015", "riboflavin"
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523", "Nicotinic acid", "0.0000454", "CHEBI:15940", "nicotinic acid"
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523",
+        "D-Ca-pantothenate",
+        "0.0000454",
+        "CHEBI:31345",
+        "Calcium pantothenate",
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523", "Vitamin B12", "0.000000908", "CHEBI:176843", "vitamin B12"
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523",
+        "p-Aminobenzoic acid",
+        "0.0000454",
+        "CHEBI:30753",
+        "4-aminobenzoic acid",
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523", "Lipoic acid", "0.0000454", "CHEBI:16494", "lipoic acid"
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523",
+        "Na2WO4 x 2 H2O",
+        "0.000364",
+        "CHEBI:63939",
+        "sodium tungstate dihydrate",
+    ),
+    _komodo_component(
+        "KOMODO Medium 194_6523",
+        "Na2SeO3 x 5 H2O",
+        "0.000273",
+        "CHEBI:131361",
+        "disodium selenite pentahydrate",
+    ),
     _komodo_component("KOMODO Medium 194_6523", "NaOH", "0.05", "CHEBI:32145", "sodium hydroxide"),
 )
 
@@ -500,7 +678,9 @@ KOMODO_TARGETS = (
         components=KOMODO_194_3_COMPONENTS,
         parent_media=DSMZ_194_PARENT,
         variant_relationship="STRAIN_SPECIFIC_VARIANT",
-        variant_modifications=("Replaces sodium propionate with 1.00 g/L Na-butyrate for DSM 21556.",),
+        variant_modifications=(
+            "Replaces sodium propionate with 1.00 g/L Na-butyrate for DSM 21556.",
+        ),
     ),
     Target(
         path=KOMODO_194_13527,
@@ -539,7 +719,9 @@ KOMODO_TARGETS = (
         components=KOMODO_194_5092_COMPONENTS,
         parent_media=DSMZ_194_PARENT,
         variant_relationship="STRAIN_SPECIFIC_VARIANT",
-        variant_modifications=("Replaces sodium propionate with 0.90 g/L putrescine for DSM 5092.",),
+        variant_modifications=(
+            "Replaces sodium propionate with 0.90 g/L putrescine for DSM 5092.",
+        ),
     ),
     Target(
         path=KOMODO_194_6523,
@@ -624,7 +806,9 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 
 def _require_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != EXPECTED_IDS[target.path]:
-        raise ValueError(f"{target.path}: found id {doc.get('id')!r}, expected {EXPECTED_IDS[target.path]!r}")
+        raise ValueError(
+            f"{target.path}: found id {doc.get('id')!r}, expected {EXPECTED_IDS[target.path]!r}"
+        )
 
     source_term = _source_term_id(doc)
     if source_term != EXPECTED_SOURCE_TERMS[target.path]:
@@ -676,7 +860,12 @@ def _append_curation_event(doc: dict[str, Any], target: Target) -> None:
 
 
 def _set_variant_fields(repaired: dict[str, Any], target: Target) -> None:
-    for field in ("parent_media", "variant_relationship", "variant_modifications", "variant_children"):
+    for field in (
+        "parent_media",
+        "variant_relationship",
+        "variant_modifications",
+        "variant_children",
+    ):
         repaired.pop(field, None)
 
     after = "references"
@@ -690,7 +879,12 @@ def _set_variant_fields(repaired: dict[str, Any], target: Target) -> None:
         _put_after(repaired, "variant_modifications", list(target.variant_modifications), after)
         after = "variant_modifications"
     if target.variant_children:
-        _put_after(repaired, "variant_children", [copy.deepcopy(row) for row in target.variant_children], after)
+        _put_after(
+            repaired,
+            "variant_children",
+            [copy.deepcopy(row) for row in target.variant_children],
+            after,
+        )
 
 
 def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
@@ -706,7 +900,9 @@ def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
         repaired["ingredients"] = [_ingredient(component) for component in target.components]
         repaired.pop("ph_value", None)
         _put_after(repaired, "ph_range", copy.deepcopy(PH_RANGE), "physical_state")
-        _put_after(repaired, "preparation_steps", copy.deepcopy(list(PREPARATION_STEPS)), "ingredients")
+        _put_after(
+            repaired, "preparation_steps", copy.deepcopy(list(PREPARATION_STEPS)), "ingredients"
+        )
         if target.path == KOMODO_194_2:
             repaired["preparation_steps"] = copy.deepcopy(list(DSM_14880_STEPS))
         elif target.path == KOMODO_194_3:

@@ -87,10 +87,13 @@ def test_repair_adds_jcm_ph_range_and_exits_review_ranking(
     assert repaired["physical_state"] == "LIQUID"
     assert repaired["ph_range"] == {"min": 7.0, "max": 7.2}
     assert "ph_value" not in repaired
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert scorer_module.score_record(repaired) == (0, [])
     assert scorer_module.score_parsed([(str(repair_module.TARGET), repaired)]) == []
 
@@ -128,9 +131,12 @@ def test_repair_removes_n2_ingredient_and_keeps_referenced_stocks(
     ingredients = _by_name(repaired["ingredients"])
 
     assert "N2" not in ingredients
-    assert repair_module._solution_signature(
-        repaired["solutions"],
-    ) == repair_module.SOLUTION_SIGNATURE
+    assert (
+        repair_module._solution_signature(
+            repaired["solutions"],
+        )
+        == repair_module.SOLUTION_SIGNATURE
+    )
 
 
 def test_repair_adds_references_flags_and_event_once(repair_module) -> None:
@@ -200,6 +206,9 @@ def test_target_record_matches_jcm_j400_repair_contract(
         repair_module.FINAL_INGREDIENT_SIGNATURE,
         repair_module.PREVIOUS_FINAL_INGREDIENT_SIGNATURE,
     )
-    assert repair_module._solution_signature(
-        doc["solutions"],
-    ) == repair_module.SOLUTION_SIGNATURE
+    assert (
+        repair_module._solution_signature(
+            doc["solutions"],
+        )
+        == repair_module.SOLUTION_SIGNATURE
+    )

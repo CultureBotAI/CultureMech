@@ -53,8 +53,7 @@ EXPECTED_SOURCE_TERMS = {
 DSMZ_504_REST = "https://mediadive.dsmz.de/rest/medium/504"
 DSMZ_504_PDF = "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium504.pdf"
 KOMODO_BASE = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo="
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo="
 )
 
 CURATOR = "repair_dsmz_504_swm_score15.py"
@@ -251,7 +250,9 @@ TARGETS: tuple[Target, ...] = (
         ),
         parent_media=DSMZ_504_PARENT,
         variant_relationship="STRAIN_SPECIFIC_VARIANT",
-        variant_modifications=("Adds 1.5 g/L Na2SO4 to Solution A and uses 1.6 g/L Na2-fumarate for DSM 13687.",),
+        variant_modifications=(
+            "Adds 1.5 g/L Na2SO4 to Solution A and uses 1.6 g/L Na2-fumarate for DSM 13687.",
+        ),
     ),
     Target(
         path=KOMODO_504_6,
@@ -301,7 +302,9 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 
 def _require_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != EXPECTED_IDS[target.path]:
-        raise ValueError(f"{target.path}: found id {doc.get('id')!r}, expected {EXPECTED_IDS[target.path]!r}")
+        raise ValueError(
+            f"{target.path}: found id {doc.get('id')!r}, expected {EXPECTED_IDS[target.path]!r}"
+        )
     source_term = _source_term_id(doc)
     if source_term != EXPECTED_SOURCE_TERMS[target.path]:
         raise ValueError(
@@ -390,7 +393,12 @@ def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
     _append_curation_event(repaired, target)
     _put_after(repaired, "references", repaired["references"], "data_quality_flags")
 
-    for field in ("parent_media", "variant_relationship", "variant_modifications", "variant_children"):
+    for field in (
+        "parent_media",
+        "variant_relationship",
+        "variant_modifications",
+        "variant_children",
+    ):
         repaired.pop(field, None)
 
     after = "references"
@@ -404,7 +412,12 @@ def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
         _put_after(repaired, "variant_modifications", list(target.variant_modifications), after)
         after = "variant_modifications"
     if target.variant_children:
-        _put_after(repaired, "variant_children", [copy.deepcopy(row) for row in target.variant_children], after)
+        _put_after(
+            repaired,
+            "variant_children",
+            [copy.deepcopy(row) for row in target.variant_children],
+            after,
+        )
 
     return repaired
 

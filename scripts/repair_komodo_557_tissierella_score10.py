@@ -217,10 +217,7 @@ def _parent_ref(child: Child) -> dict[str, str]:
         "relationship": child.relationship,
         "id": PARENT_ID,
         "name": PARENT_NAME,
-        "notes": (
-            "MediaDive Medium 557 is the DSMZ TISSIERELLA SP. MEDIUM "
-            "(CREATININE) base."
-        ),
+        "notes": ("MediaDive Medium 557 is the DSMZ TISSIERELLA SP. MEDIUM " "(CREATININE) base."),
     }
 
 

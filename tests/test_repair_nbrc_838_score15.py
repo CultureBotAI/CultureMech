@@ -35,8 +35,7 @@ def _minimal_solution(name: str, signature: tuple) -> dict:
     return {
         "preferred_term": name,
         "composition": [
-            _ingredient(ingredient, value, unit)
-            for ingredient, value, unit in signature
+            _ingredient(ingredient, value, unit) for ingredient, value, unit in signature
         ],
     }
 
@@ -89,17 +88,14 @@ def test_repair_document_grounds_nested_stocks(repair_module) -> None:
     ingredients = {row["preferred_term"]: row for row in repaired["ingredients"]}
     solutions = {row["preferred_term"]: row for row in repaired["solutions"]}
     minerals = {
-        row["preferred_term"]: row
-        for row in solutions["Trace mineral solution"]["composition"]
+        row["preferred_term"]: row for row in solutions["Trace mineral solution"]["composition"]
     }
-    vitamins = {
-        row["preferred_term"]: row
-        for row in solutions["Trace vitamins"]["composition"]
-    }
+    vitamins = {row["preferred_term"]: row for row in solutions["Trace vitamins"]["composition"]}
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    )
     assert repair_module._solution_signatures(repaired) == (
         repair_module.IMPORTED_SOLUTION_SIGNATURES
     )
@@ -141,9 +137,7 @@ def test_repair_document_adds_reference_and_event_once(repair_module) -> None:
     twice = repair_module.repair_document(once)
 
     assert twice["references"] == [{"reference": repair_module.NBRC_URL}]
-    assert repair_module._solution_signatures(twice) == (
-        repair_module.IMPORTED_SOLUTION_SIGNATURES
-    )
+    assert repair_module._solution_signatures(twice) == (repair_module.IMPORTED_SOLUTION_SIGNATURES)
     matching_events = [
         event
         for event in twice["curation_history"]

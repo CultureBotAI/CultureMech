@@ -66,8 +66,7 @@ def _doc() -> dict:
         "source_data": {
             "origin": "CultureBotHT",
             "notes": (
-                "database_id: nutrient broth; "
-                "url: https://github.com/CultureBotAI/CultureBotHT"
+                "database_id: nutrient broth; " "url: https://github.com/CultureBotAI/CultureBotHT"
             ),
         },
         "curation_history": [],

@@ -101,10 +101,13 @@ def test_repair_m938_adds_ph_and_expands_mds_stock(repair_module) -> None:
     ]
     assert repaired["solutions"] == [repair_module._mds_salt_water()]
     assert repaired["solutions"][0]["concentration"] == {"value": "100.0", "unit": "ML_PER_L"}
-    assert repair_module._signature(
-        repaired["solutions"][0]["composition"],
-        "MDS",
-    ) == repair_module.M938_FINAL_SOLUTION[3]
+    assert (
+        repair_module._signature(
+            repaired["solutions"][0]["composition"],
+            "MDS",
+        )
+        == repair_module.M938_FINAL_SOLUTION[3]
+    )
 
 
 def test_repair_m938_moves_tris_to_preparation_step(repair_module) -> None:
@@ -160,10 +163,13 @@ def test_repair_mds_helper_removes_placeholder(repair_module) -> None:
         "has_ontology_mappings",
         "ingredients_curated",
     ]
-    assert repair_module._signature(
-        repaired["composition"],
-        "MDS helper composition",
-    ) == repair_module.M938_FINAL_SOLUTION[3]
+    assert (
+        repair_module._signature(
+            repaired["composition"],
+            "MDS helper composition",
+        )
+        == repair_module.M938_FINAL_SOLUTION[3]
+    )
 
 
 def test_repair_m938_drops_out_of_review_ranking(repair_module, scorer_module) -> None:
@@ -258,9 +264,7 @@ def test_target_records_match_togo_repair_contract(repair_module) -> None:
     assert repaired_m938["ph_value"] == 7.5
 
     mds = yaml.safe_load(
-        (repair_module.NORMALIZED / repair_module.MDS_HELPER_PATH).read_text(
-            encoding="utf-8"
-        )
+        (repair_module.NORMALIZED / repair_module.MDS_HELPER_PATH).read_text(encoding="utf-8")
     )
     repaired_mds = repair_module.repair_mds_helper(mds)
 
@@ -273,7 +277,10 @@ def test_target_records_match_togo_repair_contract(repair_module) -> None:
         repair_module.PLACEHOLDER_INGREDIENTS,
         (),
     )
-    assert repair_module._signature(
-        repaired_mds["composition"],
-        "MDS helper composition",
-    ) == repair_module.M938_FINAL_SOLUTION[3]
+    assert (
+        repair_module._signature(
+            repaired_mds["composition"],
+            "MDS helper composition",
+        )
+        == repair_module.M938_FINAL_SOLUTION[3]
+    )

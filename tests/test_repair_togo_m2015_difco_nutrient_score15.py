@@ -76,10 +76,13 @@ def test_repair_corrects_formula_units_and_adds_ph(
     assert repaired["physical_state"] == "SOLID_AGAR"
     assert repaired["ph_value"] == 7.0
     assert "ph_range" not in repaired
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert scorer_module.score_record(repaired) == (0, [])
     assert scorer_module.score_parsed([(str(repair_module.TARGET), repaired)]) == []
 

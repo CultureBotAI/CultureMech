@@ -68,9 +68,7 @@ def test_parent_promotes_mediadive_root(repair_module) -> None:
 
 def test_komodo_base_is_ph_variant(repair_module) -> None:
     child = next(
-        child
-        for child in repair_module.CHILDREN
-        if child.name == "spirochete_thermophile_medium"
+        child for child in repair_module.CHILDREN if child.name == "spirochete_thermophile_medium"
     )
     repaired = repair_module.repair_child(
         _load_yaml(repair_module.NORMALIZED / child.path),
@@ -86,27 +84,28 @@ def test_komodo_base_is_ph_variant(repair_module) -> None:
 def test_repair_is_idempotent(repair_module) -> None:
     once = repair_module.plan_repairs()
     twice = {
-        path: repair_module.repair_parent(doc)
-        if path == repair_module.NORMALIZED / repair_module.PARENT
-        else repair_module.repair_child(
-            doc,
-            _child_by_path(repair_module)[
-                f"data/normalized_yaml/{path.relative_to(repair_module.NORMALIZED)}"
-            ],
+        path: (
+            repair_module.repair_parent(doc)
+            if path == repair_module.NORMALIZED / repair_module.PARENT
+            else repair_module.repair_child(
+                doc,
+                _child_by_path(repair_module)[
+                    f"data/normalized_yaml/{path.relative_to(repair_module.NORMALIZED)}"
+                ],
+            )
         )
         for path, doc in once.items()
     }
 
     assert twice == once
     for path in once:
-        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(
-            once[path]
-        )
+        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(once[path])
 
 
 def test_plan_repairs_targets_current_records(repair_module) -> None:
     expected = {
-        repair_module.NORMALIZED / repair_module.PARENT: repair_module.repair_parent(
+        repair_module.NORMALIZED
+        / repair_module.PARENT: repair_module.repair_parent(
             _load_yaml(repair_module.NORMALIZED / repair_module.PARENT)
         )
     }

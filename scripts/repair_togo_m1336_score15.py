@@ -66,13 +66,9 @@ SALT_SOLUTION_SIGNATURE: tuple[Component, ...] = (
     ("NaCl", "2.0", "G_PER_L"),
     ("Distilled water", "1.0", "L"),
 )
-CYSTEINE_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("L-Cysteine HCl H2O", "5.0", "PERCENT_W_V"),
-)
+CYSTEINE_STOCK_SIGNATURE: tuple[Component, ...] = (("L-Cysteine HCl H2O", "5.0", "PERCENT_W_V"),)
 GLUCOSE_STOCK_SIGNATURE: tuple[Component, ...] = (("Glucose", "1.0", "MOLAR"),)
-THIOSULFATE_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("Na2S2O3", "1.0", "MOLAR"),
-)
+THIOSULFATE_STOCK_SIGNATURE: tuple[Component, ...] = (("Na2S2O3", "1.0", "MOLAR"),)
 
 IMPORTED_SOLUTION_SIGNATURES: tuple[SolutionSignature, ...] = (
     ("Salt solution (see Medium [M695])", "40", "G_PER_L", ()),
@@ -142,8 +138,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     if term:
         grounding = GROUNDINGS[preferred_term]
@@ -300,8 +295,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 6,
         "action": "MIX",
         "description": (
-            "Add autoclaved and N2-stored glucose and Na2S2O3 stock solutions "
-            "aseptically."
+            "Add autoclaved and N2-stored glucose and Na2S2O3 stock solutions " "aseptically."
         ),
     },
 )
@@ -347,9 +341,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

@@ -118,8 +118,7 @@ def _component(preferred_term: str, value: str, unit: str) -> dict[str, Any]:
         )
     elif preferred_term == "NaOH":
         row["notes"] = (
-            f"{SOURCE} lists 9.00 g/L NaOH and identifies NaOH as the "
-            "pH adjuster for pH 6.0."
+            f"{SOURCE} lists 9.00 g/L NaOH and identifies NaOH as the " "pH adjuster for pH 6.0."
         )
 
     grounding = GROUNDINGS[preferred_term]

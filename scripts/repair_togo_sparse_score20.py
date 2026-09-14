@@ -221,10 +221,7 @@ UPDATES: tuple[RecipeUpdate, ...] = (
                     "variable",
                     "VARIABLE",
                     "TOGO M2858",
-                    (
-                        "TOGO M2858 names chocolate agar but does not state "
-                        "an amount."
-                    ),
+                    ("TOGO M2858 names chocolate agar but does not state " "an amount."),
                 ),
                 _co2("TOGO M2858"),
             ],
@@ -300,10 +297,7 @@ UPDATES: tuple[RecipeUpdate, ...] = (
                     "variable",
                     "VARIABLE",
                     "TOGO M2510",
-                    (
-                        "TOGO M2510 names sheep blood agar but does not state "
-                        "an amount."
-                    ),
+                    ("TOGO M2510 names sheep blood agar but does not state " "an amount."),
                 ),
                 _co2("TOGO M2510"),
             ],
@@ -360,8 +354,7 @@ def _ingredient_terms(doc: dict[str, Any]) -> set[str]:
 def _require_target(doc: dict[str, Any], update: RecipeUpdate) -> None:
     if doc.get("id") != EXPECTED_IDS[update.path]:
         raise ValueError(
-            f"{update.path}: found id {doc.get('id')!r}, "
-            f"expected {EXPECTED_IDS[update.path]!r}"
+            f"{update.path}: found id {doc.get('id')!r}, " f"expected {EXPECTED_IDS[update.path]!r}"
         )
 
     source_term = _source_term_id(doc)
@@ -483,7 +476,8 @@ def repair_record(doc: dict[str, Any], update: RecipeUpdate) -> dict[str, Any]:
 
 def plan_repairs(normalized: Path = NORMALIZED) -> dict[Path, dict[str, Any]]:
     return {
-        normalized / update.path: repair_record(
+        normalized
+        / update.path: repair_record(
             _load(normalized / update.path),
             update,
         )

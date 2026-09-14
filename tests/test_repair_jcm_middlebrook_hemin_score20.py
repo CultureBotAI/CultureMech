@@ -89,15 +89,18 @@ def test_repair_jcm386_rebuilds_live_parent_formula(
         repair_module.WATER,
         repair_module.OADC,
     ]
-    assert _component(repaired["ingredients"], repair_module.MIDDLEBROOK)[
-        "concentration"
-    ] == {"value": "19", "unit": "G_PER_L"}
-    assert _component(repaired["ingredients"], repair_module.GLYCEROL)[
-        "concentration"
-    ] == {"value": "5", "unit": "ML_PER_L"}
-    assert _component(repaired["ingredients"], repair_module.OADC)[
-        "concentration"
-    ] == {"value": "100", "unit": "ML_PER_L"}
+    assert _component(repaired["ingredients"], repair_module.MIDDLEBROOK)["concentration"] == {
+        "value": "19",
+        "unit": "G_PER_L",
+    }
+    assert _component(repaired["ingredients"], repair_module.GLYCEROL)["concentration"] == {
+        "value": "5",
+        "unit": "ML_PER_L",
+    }
+    assert _component(repaired["ingredients"], repair_module.OADC)["concentration"] == {
+        "value": "100",
+        "unit": "ML_PER_L",
+    }
     assert repaired["preparation_steps"] == list(repair_module.BASE_PREPARATION_STEPS)
     assert scorer_module.score_record(repaired)[1] == ["no pH and no temperature"]
 
@@ -206,9 +209,7 @@ def test_repair_document_rejects_ingredient_drift(repair_module) -> None:
 
 def test_target_records_are_expected_jcm_386_714_recipes(repair_module) -> None:
     for target in repair_module.TARGETS:
-        doc = yaml.safe_load(
-            (repair_module.NORMALIZED / target.path).read_text(encoding="utf-8")
-        )
+        doc = yaml.safe_load((repair_module.NORMALIZED / target.path).read_text(encoding="utf-8"))
         repaired = repair_module.repair_document(doc, target)
 
         assert doc["id"] == repair_module.EXPECTED_IDS[target.path]

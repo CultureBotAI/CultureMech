@@ -24,6 +24,7 @@ Verdict vocabulary (matches the Phase 1 plan):
 Substring matching is identical to claw's:
   NFKC normalize + lowercase + collapse whitespace + substring match.
 """
+
 from __future__ import annotations
 
 import argparse
@@ -105,50 +106,97 @@ def check_evidence(ev: dict, yaml_path: str, container: str) -> Verdict | None:
     if reference and not pmid and not doi and not snippet:
         # Database/catalog references such as DSMZ:J1219 are useful
         # provenance but cannot be checked against PubMed abstract cache.
-        return Verdict(yaml_path, container, "", "", "",
-                       "NO_EVIDENCE",
-                       f"non-literature reference without snippet: {reference!r}")
+        return Verdict(
+            yaml_path,
+            container,
+            "",
+            "",
+            "",
+            "NO_EVIDENCE",
+            f"non-literature reference without snippet: {reference!r}",
+        )
 
     if reference and not pmid and not doi:
         # Reference present with a snippet but couldn't be parsed as
         # PMID:/DOI:, so the snippet is not independently checkable.
-        return Verdict(yaml_path, container, "", "", snippet,
-                       "MISSING_REFERENCE",
-                       f"unrecognized reference format: {reference!r}")
+        return Verdict(
+            yaml_path,
+            container,
+            "",
+            "",
+            snippet,
+            "MISSING_REFERENCE",
+            f"unrecognized reference format: {reference!r}",
+        )
 
     if snippet and not (pmid or doi):
-        return Verdict(yaml_path, container, pmid, doi, snippet,
-                       "MISSING_REFERENCE",
-                       "snippet provided but no pmid/doi")
+        return Verdict(
+            yaml_path,
+            container,
+            pmid,
+            doi,
+            snippet,
+            "MISSING_REFERENCE",
+            "snippet provided but no pmid/doi",
+        )
 
     if (pmid or doi) and not snippet:
-        return Verdict(yaml_path, container, pmid, doi, "",
-                       "NO_EVIDENCE",
-                       "reference cited without supporting snippet")
+        return Verdict(
+            yaml_path,
+            container,
+            pmid,
+            doi,
+            "",
+            "NO_EVIDENCE",
+            "reference cited without supporting snippet",
+        )
 
     if pmid and not PMID_RE.match(pmid):
-        return Verdict(yaml_path, container, pmid, doi, snippet,
-                       "MISSING_REFERENCE",
-                       f"malformed pmid: {pmid!r}")
+        return Verdict(
+            yaml_path,
+            container,
+            pmid,
+            doi,
+            snippet,
+            "MISSING_REFERENCE",
+            f"malformed pmid: {pmid!r}",
+        )
 
     if pmid:
         cache_text = load_cache(pmid)
         if cache_text is None:
-            return Verdict(yaml_path, container, pmid, doi, snippet,
-                           "MISSING_CACHE",
-                           f"PMID:{pmid} not yet fetched")
+            return Verdict(
+                yaml_path,
+                container,
+                pmid,
+                doi,
+                snippet,
+                "MISSING_CACHE",
+                f"PMID:{pmid} not yet fetched",
+            )
         if normalize(snippet) in normalize(cache_text):
-            return Verdict(yaml_path, container, pmid, doi, snippet,
-                           "OK", "")
-        return Verdict(yaml_path, container, pmid, doi, snippet,
-                       "SNIPPET_NOT_IN_ABSTRACT",
-                       "snippet text does not appear in abstract")
+            return Verdict(yaml_path, container, pmid, doi, snippet, "OK", "")
+        return Verdict(
+            yaml_path,
+            container,
+            pmid,
+            doi,
+            snippet,
+            "SNIPPET_NOT_IN_ABSTRACT",
+            "snippet text does not appear in abstract",
+        )
 
     # DOI-only: no cache layer yet (DOIs are supplementary; PMIDs are
     # primary). Treat as MISSING_CACHE.
-    return Verdict(yaml_path, container, pmid, doi, snippet,
-                   "MISSING_CACHE",
-                   f"DOI:{doi} cache not implemented (PMID preferred)")
+    return Verdict(
+        yaml_path,
+        container,
+        pmid,
+        doi,
+        snippet,
+        "MISSING_CACHE",
+        f"DOI:{doi} cache not implemented (PMID preferred)",
+    )
 
 
 def iter_evidence_containers(y: dict):
@@ -175,8 +223,7 @@ def iter_evidence_containers(y: dict):
             if not isinstance(gm, dict):
                 continue
             if isinstance(gm.get("evidence"), list):
-                yield (f"target_organisms[{j}].growth_metrics[{k}].evidence",
-                       gm["evidence"])
+                yield (f"target_organisms[{j}].growth_metrics[{k}].evidence", gm["evidence"])
 
 
 def walk_yamls() -> Iterable[Verdict]:
@@ -201,9 +248,14 @@ def walk_yamls() -> Iterable[Verdict]:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--strict", action="store_true",
-                    help=("exit 2 if any MISSING_CACHE present (default: "
-                          "only SNIPPET_NOT_IN_ABSTRACT triggers exit 2)"))
+    ap.add_argument(
+        "--strict",
+        action="store_true",
+        help=(
+            "exit 2 if any MISSING_CACHE present (default: "
+            "only SNIPPET_NOT_IN_ABSTRACT triggers exit 2)"
+        ),
+    )
     args = ap.parse_args()
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -214,19 +266,18 @@ def main() -> int:
 
     with open(OUT_TSV, "w", newline="") as f:
         w = csv.writer(f, delimiter="\t")
-        w.writerow(["yaml_path", "container", "verdict", "pmid", "doi",
-                    "snippet", "detail"])
+        w.writerow(["yaml_path", "container", "verdict", "pmid", "doi", "snippet", "detail"])
         for v in verdicts:
-            w.writerow([v.yaml_path, v.container, v.verdict, v.pmid,
-                        v.doi, v.snippet[:200], v.detail])
+            w.writerow(
+                [v.yaml_path, v.container, v.verdict, v.pmid, v.doi, v.snippet[:200], v.detail]
+            )
 
     md: list[str] = []
     md.append("# Evidence reference validation\n")
     md.append(f"Total evidence items checked: **{len(verdicts)}**\n")
     md.append("\n## Verdicts\n")
     md.append("| Verdict | Count |\n|---|---:|")
-    for k in ("OK", "NO_EVIDENCE", "MISSING_CACHE", "MISSING_REFERENCE",
-              "SNIPPET_NOT_IN_ABSTRACT"):
+    for k in ("OK", "NO_EVIDENCE", "MISSING_CACHE", "MISSING_REFERENCE", "SNIPPET_NOT_IN_ABSTRACT"):
         md.append(f"| `{k}` | {bucket.get(k, 0)} |")
     if bucket.get("SNIPPET_NOT_IN_ABSTRACT", 0) > 0:
         md.append("\n## SNIPPET_NOT_IN_ABSTRACT (likely hallucinated)\n")
@@ -235,14 +286,14 @@ def main() -> int:
         for v in verdicts:
             if v.verdict == "SNIPPET_NOT_IN_ABSTRACT":
                 md.append(
-                    f"| `{v.yaml_path}` | `{v.container}` | "
-                    f"`{v.pmid}` | {v.snippet[:80]}... |")
+                    f"| `{v.yaml_path}` | `{v.container}` | " f"`{v.pmid}` | {v.snippet[:80]}... |"
+                )
     if bucket.get("MISSING_CACHE", 0) > 0:
-        md.append(
-            f"\n## MISSING_CACHE: {bucket['MISSING_CACHE']} entries\n")
+        md.append(f"\n## MISSING_CACHE: {bucket['MISSING_CACHE']} entries\n")
         md.append(
             "Run `python3 scripts/fetch_pubmed_abstracts.py` to populate "
-            "the cache, then rerun.\n")
+            "the cache, then rerun.\n"
+        )
 
     with open(OUT_MD, "w") as f:
         f.write("\n".join(md))

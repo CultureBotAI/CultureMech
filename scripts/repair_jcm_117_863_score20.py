@@ -139,9 +139,7 @@ ISP4_15_NACL_REPAIR = ChildRepair(
     path=ISP4_15_NACL,
     parent_path=ISP4_PARENT,
     relationship="SALINITY_VARIANT",
-    ingredients=(
-        _chebi("NaCl", "150", "CHEBI:26710", "sodium chloride"),
-    ),
+    ingredients=(_chebi("NaCl", "150", "CHEBI:26710", "sodium chloride"),),
     solution={
         "preferred_term": "Inorganic Salts-Starch Agar (ISP-4)",
         "concentration": {"value": "1000", "unit": "ML_PER_L"},
@@ -215,8 +213,7 @@ def _require_record(doc: dict[str, Any], path: str) -> None:
     source_term = _source_term_id(doc)
     if source_term != expected_source_term:
         raise ValueError(
-            f"{path}: expected source term {expected_source_term}, "
-            f"found {source_term!r}"
+            f"{path}: expected source term {expected_source_term}, " f"found {source_term!r}"
         )
 
 
@@ -288,9 +285,7 @@ def repair_child(doc: dict[str, Any], repair: ChildRepair) -> dict[str, Any]:
     repaired["ingredients"] = [copy.deepcopy(row) for row in repair.ingredients]
     repaired["solutions"] = [copy.deepcopy(repair.solution)]
     repaired["notes"] = repair.notes
-    repaired["preparation_steps"] = [
-        copy.deepcopy(step) for step in repair.preparation_steps
-    ]
+    repaired["preparation_steps"] = [copy.deepcopy(step) for step in repair.preparation_steps]
     repaired["parent_media"] = {
         "path": f"data/normalized_yaml/{repair.parent_path}",
         "relationship": repair.relationship,
@@ -333,9 +328,7 @@ def repair_parent(doc: dict[str, Any], repair: ChildRepair) -> dict[str, Any]:
 
     entry = _child_entry(repair)
     by_path = {
-        row.get("path"): row
-        for row in children
-        if isinstance(row, dict) and row.get("path")
+        row.get("path"): row for row in children if isinstance(row, dict) and row.get("path")
     }
     by_path[entry["path"]] = entry
     repaired["variant_children"] = [

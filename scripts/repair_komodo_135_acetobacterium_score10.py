@@ -61,9 +61,7 @@ BASE_SIGNATURE = (
     ("p-Aminobenzoic acid", "0.05", "G_PER_L"),
     ("(DL)-alpha-Lipoic acid", "0.05", "G_PER_L"),
 )
-SODIUM_CARBONATE_SIGNATURE = BASE_SIGNATURE + (
-    ("Na2CO3", "variable", "VARIABLE"),
-)
+SODIUM_CARBONATE_SIGNATURE = BASE_SIGNATURE + (("Na2CO3", "variable", "VARIABLE"),)
 
 CURATOR = "repair_komodo_135_acetobacterium_score10.py"
 ACTION = "RESOLVED_KOMODO_135_ACETOBACTERIUM_PH_TOPOLOGY"

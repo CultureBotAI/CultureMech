@@ -75,10 +75,13 @@ def test_repair_adds_ph_and_normalizes_tris_amount(
     ingredients = _by_name(repaired["ingredients"])
 
     assert repaired["ph_value"] == 7.8
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Tris-HCl"]["concentration"] == {
         "value": "50.0",
         "unit": "MILLIMOLAR",

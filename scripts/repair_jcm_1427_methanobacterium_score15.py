@@ -162,10 +162,7 @@ INGREDIENTS: tuple[dict[str, Any], ...] = (
         "Proteose peptone (BD Difico)",
         "6.0",
         "G_PER_L",
-        notes=(
-            "JCM Medium 1427 lists Proteose peptone (BD Difico) as a complex "
-            "peptone input."
-        ),
+        notes=("JCM Medium 1427 lists Proteose peptone (BD Difico) as a complex " "peptone input."),
     ),
     _ingredient(
         "Yeast extract (Oxoid)",
@@ -231,10 +228,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
     _solution(
         "Trace element solution",
         "1.0",
-        notes=(
-            "JCM Medium 1427 adds 1.0 ml/L Trace element solution from "
-            "JCM Medium 187."
-        ),
+        notes=("JCM Medium 1427 adds 1.0 ml/L Trace element solution from " "JCM Medium 187."),
         composition=[
             _stock_component(
                 "ZnCl2",
@@ -305,10 +299,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
     _solution(
         "Vitamin solution",
         "1.0",
-        notes=(
-            "JCM Medium 1427 adds 1.0 ml/L Vitamin solution from "
-            "JCM Medium 898."
-        ),
+        notes=("JCM Medium 1427 adds 1.0 ml/L Vitamin solution from " "JCM Medium 898."),
         composition=[
             _stock_component(
                 "Vitamin B12",
@@ -386,10 +377,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
     _solution(
         "5% Na2S x 9H2O solution",
         "10.0",
-        notes=(
-            "JCM Medium 1427 adds 10.0 ml/L 5% Na2S x 9H2O solution "
-            "before inoculation."
-        ),
+        notes=("JCM Medium 1427 adds 10.0 ml/L 5% Na2S x 9H2O solution " "before inoculation."),
         composition=[
             _stock_component(
                 "Na2S x 9H2O",

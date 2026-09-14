@@ -49,8 +49,7 @@ def _doc(repair_module, path: Path) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "SOLID_AGAR",
         "ingredients": [
-            _component(name, value, unit)
-            for name, value, unit in target.imported_signature
+            _component(name, value, unit) for name, value, unit in target.imported_signature
         ],
         "media_term": {
             "preferred_term": "TOGO Medium",
@@ -87,12 +86,13 @@ def test_repair_restores_source_specific_ingredient_signatures(
     target = _target(repair_module, target_path)
     repaired = _repair(repair_module, target_path)
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == target.final_signature
-    assert _by_name(repaired["ingredients"])[target.final_signature[1][0]][
-        "concentration"
-    ] == {"value": "1.0", "unit": "L"}
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients") == target.final_signature
+    )
+    assert _by_name(repaired["ingredients"])[target.final_signature[1][0]]["concentration"] == {
+        "value": "1.0",
+        "unit": "L",
+    }
 
 
 def test_repair_grounds_defined_ingredients_and_keeps_seawater_opaque(
@@ -110,10 +110,7 @@ def test_repair_grounds_defined_ingredients_and_keeps_seawater_opaque(
             "id": "FOODON:03315426",
             "label": "yeast extract",
         }
-        assert (
-            "mediaingredientmech_chebi_term"
-            not in ingredients[repair_module.YEAST_EXTRACT]
-        )
+        assert "mediaingredientmech_chebi_term" not in ingredients[repair_module.YEAST_EXTRACT]
         assert ingredients[repair_module.PEPTONE]["term"] == {
             "id": "MICRO:0000178",
             "label": "Peptone",

@@ -84,12 +84,10 @@ def test_repair_record_applies_199_component_changes(repair) -> None:
         for ingredient in repaired["ingredients"]
     )
     assert all(
-        ingredient["preferred_term"] != "1,2-propanediol"
-        for ingredient in repaired["ingredients"]
+        ingredient["preferred_term"] != "1,2-propanediol" for ingredient in repaired["ingredients"]
     )
     assert all(
-        ingredient["preferred_term"] != "Na2SeO3 x 5 H2O"
-        for ingredient in repaired["ingredients"]
+        ingredient["preferred_term"] != "Na2SeO3 x 5 H2O" for ingredient in repaired["ingredients"]
     )
     assert _ingredient(repaired, "Sodium butyrate")["concentration"] == {
         "value": "0.700000",

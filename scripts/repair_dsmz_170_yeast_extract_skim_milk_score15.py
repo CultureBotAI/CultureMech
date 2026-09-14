@@ -191,9 +191,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -223,8 +221,7 @@ def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     source_term = _source_term_id(doc)
     if source_term != expected_source:
         raise ValueError(
-            f"{target.path}: expected source term {expected_source}, "
-            f"found {source_term!r}"
+            f"{target.path}: expected source term {expected_source}, " f"found {source_term!r}"
         )
 
     ingredient_signature = _signature(doc.get("ingredients"), "ingredients")

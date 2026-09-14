@@ -49,8 +49,7 @@ def _medium_doc(repair_module, path: Path) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "SOLID_AGAR",
         "ingredients": [
-            _component(name, value, unit)
-            for name, value, unit in target.imported_signature
+            _component(name, value, unit) for name, value, unit in target.imported_signature
         ],
         "media_term": {
             "preferred_term": "JCM Medium J925",
@@ -90,9 +89,10 @@ def test_m971_water_unit_groundings_and_autoclaving_are_repaired(
     repaired = _repair(repair_module, getattr(repair_module, path))
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_SIGNATURE
+    )
     assert ingredients["Distilled water"]["concentration"] == {
         "value": "1.0",
         "unit": "L",
@@ -101,9 +101,7 @@ def test_m971_water_unit_groundings_and_autoclaving_are_repaired(
         "id": "FOODON:03315720",
         "label": "Soy peptone",
     }
-    assert ingredients["Bacto agar (BD-Difco)"]["physicochemical_roles"] == [
-        "SOLIDIFYING_AGENT"
-    ]
+    assert ingredients["Bacto agar (BD-Difco)"]["physicochemical_roles"] == ["SOLIDIFYING_AGENT"]
     assert "term" not in ingredients["Lactobacilli MRS broth (BD-Difco)"]
     assert repaired["data_quality_flags"] == [
         "has_ontology_mappings",
@@ -123,9 +121,7 @@ def test_repair_links_source_duplicates(repair_module) -> None:
 
     assert j925["parent_media"] == repair_module.TOGO_M971_PARENT
     assert j925["variant_relationship"] == "SOURCE_DUPLICATE"
-    assert j925["variant_modifications"] == [
-        repair_module.TOGO_M971_PARENT["notes"]
-    ]
+    assert j925["variant_modifications"] == [repair_module.TOGO_M971_PARENT["notes"]]
     assert "variant_children" not in j925
 
     assert m971["variant_children"] == [repair_module.JCM_J925_CHILD]

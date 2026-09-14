@@ -253,9 +253,9 @@ def test_repair_parent_adds_ph_children_once(repair_module) -> None:
     child_paths = {child["path"] for child in once["variant_children"]}
     assert twice == once
     assert repair_module.dump_record(twice) == repair_module.dump_record(once)
-    assert {
-        f"data/normalized_yaml/{target.path}" for target in repair_module.PH_TARGETS
-    }.issubset(child_paths)
+    assert {f"data/normalized_yaml/{target.path}" for target in repair_module.PH_TARGETS}.issubset(
+        child_paths
+    )
     assert once["variant_children"] == sorted(
         once["variant_children"],
         key=lambda child: child["path"],
@@ -273,7 +273,8 @@ def test_repair_parent_adds_ph_children_once(repair_module) -> None:
 
 def test_plan_repairs_target_records(repair_module) -> None:
     expected = {
-        repair_module.NORMALIZED / repair_module.DILUTED.path: (
+        repair_module.NORMALIZED
+        / repair_module.DILUTED.path: (
             repair_module.repair_diluted_record(
                 yaml.safe_load(
                     (repair_module.NORMALIZED / repair_module.DILUTED.path).read_text(
@@ -282,7 +283,8 @@ def test_plan_repairs_target_records(repair_module) -> None:
                 )
             )
         ),
-        repair_module.NORMALIZED / repair_module.PARENT_PATH: (
+        repair_module.NORMALIZED
+        / repair_module.PARENT_PATH: (
             repair_module.repair_parent(
                 yaml.safe_load(
                     (repair_module.NORMALIZED / repair_module.PARENT_PATH).read_text(

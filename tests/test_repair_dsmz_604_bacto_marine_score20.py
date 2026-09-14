@@ -106,9 +106,7 @@ def test_repair_adds_reference_flags_and_history(repair_module) -> None:
             "description": "Prepare the Marine Agar 2216 (Difco 0979) product.",
         }
     ]
-    assert repaired["references"] == [
-        {"reference": repair_module.DSMZ_604_URL}
-    ]
+    assert repaired["references"] == [{"reference": repair_module.DSMZ_604_URL}]
     assert repaired["data_quality_flags"] == [
         "ingredients_curated",
         "has_ontology_mappings",
@@ -135,12 +133,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(root)
 
     assert {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(root): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(root): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:

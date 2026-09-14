@@ -243,10 +243,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
                 "Na2WO4 x 2H2O",
                 "0.01",
                 "G_PER_L",
-                notes=(
-                    "JCM Medium 265 Wolfe's mineral solution lists 0.01 g "
-                    "Na2WO4 x 2H2O."
-                ),
+                notes=("JCM Medium 265 Wolfe's mineral solution lists 0.01 g " "Na2WO4 x 2H2O."),
                 term=("CHEBI:63939", "sodium tungstate dihydrate"),
             ),
         ],
@@ -260,19 +257,13 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
     _solution(
         "5% L-Cysteine HCl H2O solution",
         "10.0",
-        notes=(
-            "JCM Medium 265 adds 10.0 ml/L autoclaved "
-            "5% L-Cysteine HCl H2O solution."
-        ),
+        notes=("JCM Medium 265 adds 10.0 ml/L autoclaved " "5% L-Cysteine HCl H2O solution."),
         composition=[
             _component(
                 "L-Cysteine HCl H2O",
                 "50.0",
                 "G_PER_L",
-                notes=(
-                    "Solute of the 5% L-Cysteine HCl H2O stock added by "
-                    "JCM Medium 265."
-                ),
+                notes=("Solute of the 5% L-Cysteine HCl H2O stock added by " "JCM Medium 265."),
                 term=("CHEBI:91248", "L-cysteine hydrochloride hydrate"),
             )
         ],

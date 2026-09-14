@@ -217,10 +217,7 @@ def _parent_ref(child: Child) -> dict[str, str]:
         "relationship": child.relationship,
         "id": PARENT_ID,
         "name": PARENT_NAME,
-        "notes": (
-            f"KOMODO Medium 1069 is the pH {PARENT_PH:g} base for "
-            f"{child.source_label}."
-        ),
+        "notes": (f"KOMODO Medium 1069 is the pH {PARENT_PH:g} base for " f"{child.source_label}."),
     }
 
 

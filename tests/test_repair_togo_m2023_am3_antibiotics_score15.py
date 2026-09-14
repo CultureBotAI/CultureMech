@@ -104,8 +104,7 @@ def _parent_doc(repair_module) -> dict:
         "variant_children": [
             {
                 "path": (
-                    "data/normalized_yaml/bacterial/"
-                    "am3_nalidixic_acid_kanamycin_medium.yaml"
+                    "data/normalized_yaml/bacterial/" "am3_nalidixic_acid_kanamycin_medium.yaml"
                 ),
                 "relationship": "SOURCE_DUPLICATE",
                 "id": repair_module.EXPECTED_ID,
@@ -142,10 +141,13 @@ def test_repair_corrects_am3_formula_and_marks_selective(
 
     assert repaired["functional_role"] == ["SELECTIVE"]
     assert "ph_value" not in repaired
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Distilled water"]["concentration"] == {
         "value": "1000.0",
         "unit": "ML_PER_L",
@@ -170,16 +172,12 @@ def test_repair_expands_filter_sterilized_antibiotic_stocks(
 ) -> None:
     repaired = repair_module.repair_record(_doc(repair_module))
     solutions = _by_name(repaired["solutions"])
-    nalidixic = _by_name(
-        solutions["Nalidixic acid solution (100 mg/ml)"]["composition"]
-    )["Nalidixic acid"]
-    kanamycin = _by_name(solutions["Kanamycin solution (25 mg/ml)"]["composition"])[
-        "Kanamycin"
+    nalidixic = _by_name(solutions["Nalidixic acid solution (100 mg/ml)"]["composition"])[
+        "Nalidixic acid"
     ]
+    kanamycin = _by_name(solutions["Kanamycin solution (25 mg/ml)"]["composition"])["Kanamycin"]
 
-    assert repair_module._solution_signatures(repaired) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
-    )
+    assert repair_module._solution_signatures(repaired) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     assert solutions["Nalidixic acid solution (100 mg/ml)"]["concentration"] == {
         "value": "1.0",
         "unit": "ML_PER_L",

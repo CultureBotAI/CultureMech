@@ -45,8 +45,7 @@ def _doc(target) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "SOLID_AGAR",
         "ingredients": [
-            _row(name, value, unit)
-            for name, value, unit in target.imported_ingredient_signature
+            _row(name, value, unit) for name, value, unit in target.imported_ingredient_signature
         ],
         "media_term": {
             "preferred_term": target.source_term.replace(":", " "),
@@ -126,10 +125,7 @@ def test_m1424_flattens_tys_peptone_and_grounds_yeast(repair_module) -> None:
         "label": "yeast extract",
     }
     assert "mediaingredientmech_chebi_term" not in ingredients["Yeast extract"]
-    assert (
-        "term"
-        not in ingredients["Trypticase Peptone (BBL) or Hipolypepton"]
-    )
+    assert "term" not in ingredients["Trypticase Peptone (BBL) or Hipolypepton"]
 
 
 def test_m1678_flattens_tsb_na2co3_and_adds_alkaline_ph(repair_module) -> None:
@@ -166,9 +162,7 @@ def test_m1896_corrects_distilled_water_and_keeps_difco_opaque(
         "value": "1.0",
         "unit": "L",
     }
-    assert ingredients["Agar (if needed)"]["physicochemical_roles"] == [
-        "SOLIDIFYING_AGENT"
-    ]
+    assert ingredients["Agar (if needed)"]["physicochemical_roles"] == ["SOLIDIFYING_AGENT"]
     assert "term" not in ingredients["ISP Medium 1 (Difco)"]
 
 
@@ -183,9 +177,7 @@ def test_repair_adds_flags_references_and_events_once(repair_module) -> None:
         "has_unmapped_ingredients",
         "ingredients_curated",
     ]
-    assert once["references"] == [
-        {"reference": reference} for reference in target.references
-    ]
+    assert once["references"] == [{"reference": reference} for reference in target.references]
     matching_events = [
         event
         for event in once["curation_history"]
@@ -240,8 +232,7 @@ def test_repair_rejects_mixed_final_ingredients_with_stale_solutions(
     target = repair_module.TARGETS[2]
     doc = _doc(target)
     doc["ingredients"] = [
-        _row(name, value, unit)
-        for name, value, unit in target.final_ingredient_signature
+        _row(name, value, unit) for name, value, unit in target.final_ingredient_signature
     ]
 
     with pytest.raises(ValueError, match="component signature drifted"):

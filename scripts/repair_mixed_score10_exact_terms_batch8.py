@@ -245,9 +245,7 @@ def _ingredient_signature(doc: dict[str, Any]) -> tuple[str, ...]:
     if not isinstance(ingredients, list):
         raise ValueError("ingredients is not a list")
     return tuple(
-        str(row.get("preferred_term") or "")
-        for row in ingredients
-        if isinstance(row, dict)
+        str(row.get("preferred_term") or "") for row in ingredients if isinstance(row, dict)
     )
 
 
@@ -284,9 +282,7 @@ def repair_record(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
     if doc.get("id") != target.record_id:
         raise ValueError(f"{path}: expected {target.record_id}, found {doc.get('id')!r}")
     if _ingredient_signature(doc) != target.signature:
-        raise ValueError(
-            f"{path}: ingredient signature drifted: {_ingredient_signature(doc)!r}"
-        )
+        raise ValueError(f"{path}: ingredient signature drifted: {_ingredient_signature(doc)!r}")
 
     expected_terms = set(target.target_terms)
     grounded_terms: set[str] = set()

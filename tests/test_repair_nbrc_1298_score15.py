@@ -70,9 +70,10 @@ def test_repair_document_replaces_macconkey_with_source_formula(
     repaired = repair_module.repair_document(_minimal_doc(repair_module))
     ingredients = {row["preferred_term"]: row for row in repaired["ingredients"]}
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert "Peptone" not in ingredients
     assert "Nutrient Broth Powder (Kyokuto*)" in ingredients
     assert "term" not in ingredients["Nutrient Broth Powder (Kyokuto*)"]

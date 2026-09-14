@@ -107,9 +107,7 @@ def test_repair_adds_prep_references_and_event_once(repair_module) -> None:
             "description": "Adjust BSW3 Agar to pH 7.3.",
         }
     ]
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module._references()
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module._references()]
     matching_events = [
         event
         for event in twice["curation_history"]

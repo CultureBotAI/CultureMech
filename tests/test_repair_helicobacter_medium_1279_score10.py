@@ -57,9 +57,7 @@ def test_commercial_additions_get_exact_mediadive_terms(repair_module) -> None:
 
 
 def test_repair_is_idempotent(repair_module) -> None:
-    once = repair_module.repair_record(
-        _load_yaml(repair_module.NORMALIZED / repair_module.TARGET)
-    )
+    once = repair_module.repair_record(_load_yaml(repair_module.NORMALIZED / repair_module.TARGET))
     twice = repair_module.repair_record(once)
 
     assert twice == once
@@ -68,9 +66,7 @@ def test_repair_is_idempotent(repair_module) -> None:
 
 def test_plan_repairs_targets_current_record(repair_module) -> None:
     path = repair_module.NORMALIZED / repair_module.TARGET
-    assert repair_module.plan_repairs() == {
-        path: repair_module.repair_record(_load_yaml(path))
-    }
+    assert repair_module.plan_repairs() == {path: repair_module.repair_record(_load_yaml(path))}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:

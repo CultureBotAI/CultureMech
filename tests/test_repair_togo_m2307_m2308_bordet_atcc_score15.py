@@ -48,8 +48,7 @@ def _doc(target) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "SOLID_AGAR",
         "ingredients": [
-            _component(name, value, unit)
-            for name, value, unit in target.imported_ingredients
+            _component(name, value, unit) for name, value, unit in target.imported_ingredients
         ],
         "media_term": {
             "preferred_term": target.source,
@@ -66,9 +65,7 @@ def _by_name(rows: list[dict]) -> dict[str, dict]:
 
 
 def test_repair_agar_fixes_atcc_volume_rows_and_ph(repair_module) -> None:
-    target = repair_module.TARGET_BY_PATH[
-        Path("bacterial/bordet_gengou_agar_medium.yaml")
-    ]
+    target = repair_module.TARGET_BY_PATH[Path("bacterial/bordet_gengou_agar_medium.yaml")]
     repaired = repair_module.repair_record(_doc(target), target)
     ingredients = _by_name(repaired["ingredients"])
 
@@ -96,9 +93,7 @@ def test_repair_broth_moves_base_components_to_solution(
     repair_module,
     scorer_module,
 ) -> None:
-    target = repair_module.TARGET_BY_PATH[
-        Path("bacterial/bordet_gengou_broth_medium.yaml")
-    ]
+    target = repair_module.TARGET_BY_PATH[Path("bacterial/bordet_gengou_broth_medium.yaml")]
     repaired = repair_module.repair_record(_doc(target), target)
     ingredients = _by_name(repaired["ingredients"])
     solution = repaired["solutions"][0]
@@ -137,9 +132,7 @@ def test_repair_scores_both_records_clean(repair_module, scorer_module) -> None:
 def test_repair_adds_preparation_sterilization_flags_references_and_event_once(
     repair_module,
 ) -> None:
-    target = repair_module.TARGET_BY_PATH[
-        Path("bacterial/bordet_gengou_agar_medium.yaml")
-    ]
+    target = repair_module.TARGET_BY_PATH[Path("bacterial/bordet_gengou_agar_medium.yaml")]
     once = repair_module.repair_record(_doc(target), target)
     twice = repair_module.repair_record(once, target)
 
@@ -158,15 +151,12 @@ def test_repair_adds_preparation_sterilization_flags_references_and_event_once(
             "step_number": 4,
             "action": "COOL",
             "description": (
-                "Cool the base to 45-50 C and add 150 ml sterile "
-                "defibrinated rabbit blood."
+                "Cool the base to 45-50 C and add 150 ml sterile " "defibrinated rabbit blood."
             ),
         },
     ]
     assert twice["sterilization"] == repair_module.STERILIZATION
-    assert twice["references"] == [
-        {"reference": reference} for reference in target.references
-    ]
+    assert twice["references"] == [{"reference": reference} for reference in target.references]
     assert twice["data_quality_flags"] == [
         "has_ontology_mappings",
         "ingredients_curated",
@@ -185,9 +175,7 @@ def test_repair_adds_preparation_sterilization_flags_references_and_event_once(
 
 
 def test_repair_rejects_wrong_media_term(repair_module) -> None:
-    target = repair_module.TARGET_BY_PATH[
-        Path("bacterial/bordet_gengou_agar_medium.yaml")
-    ]
+    target = repair_module.TARGET_BY_PATH[Path("bacterial/bordet_gengou_agar_medium.yaml")]
     doc = _doc(target)
     doc["media_term"]["term"]["id"] = "TOGO:M2309"
 
@@ -196,9 +184,7 @@ def test_repair_rejects_wrong_media_term(repair_module) -> None:
 
 
 def test_repair_rejects_component_drift(repair_module) -> None:
-    target = repair_module.TARGET_BY_PATH[
-        Path("bacterial/bordet_gengou_broth_medium.yaml")
-    ]
+    target = repair_module.TARGET_BY_PATH[Path("bacterial/bordet_gengou_broth_medium.yaml")]
     doc = _doc(target)
     doc["ingredients"][-1]["concentration"]["value"] = "126"
 

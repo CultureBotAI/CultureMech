@@ -103,16 +103,14 @@ def test_repair_restores_dsmz_wolfes_mineral_elixir(
             "step_number": 1,
             "action": "ADJUST_PH",
             "description": (
-                "First adjust the Wolfe's mineral elixir stock to pH 1.0 "
-                "with diluted H2SO4."
+                "First adjust the Wolfe's mineral elixir stock to pH 1.0 " "with diluted H2SO4."
             ),
         },
         {
             "step_number": 2,
             "action": "MIX",
             "description": (
-                "Add and dissolve the Wolfe's mineral elixir salts in "
-                "1000.0 ml distilled water."
+                "Add and dissolve the Wolfe's mineral elixir salts in " "1000.0 ml distilled water."
             ),
         },
     ]
@@ -234,9 +232,7 @@ def test_plan_repairs_targets_record(repair_module) -> None:
     path = repair_module.NORMALIZED / repair_module.TARGET
 
     assert repair_module.plan_repairs() == {
-        path: repair_module.repair_record(
-            yaml.safe_load(path.read_text(encoding="utf-8"))
-        )
+        path: repair_module.repair_record(yaml.safe_load(path.read_text(encoding="utf-8")))
     }
 
 

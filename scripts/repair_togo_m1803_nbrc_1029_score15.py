@@ -50,9 +50,7 @@ FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("Artificial seawater", "1000.0", "ML_PER_L"),
 )
 
-NA2CO3_SIGNATURE: tuple[Component, ...] = (
-    ("Na2CO3", "10.0", "PERCENT_W_V"),
-)
+NA2CO3_SIGNATURE: tuple[Component, ...] = (("Na2CO3", "10.0", "PERCENT_W_V"),)
 
 IMPORTED_SOLUTION_SIGNATURES: tuple[SolutionSignature, ...] = (
     ("Na2CO3 solution", "variable", "VARIABLE", ()),
@@ -100,8 +98,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 3,
         "action": "ADJUST_PH",
         "description": (
-            "After autoclaving, adjust pH to 10.0 with sterilized 10% "
-            "Na2CO3 solution."
+            "After autoclaving, adjust pH to 10.0 with sterilized 10% " "Na2CO3 solution."
         ),
     },
 )
@@ -222,8 +219,7 @@ def _na2co3_solution() -> dict[str, Any]:
         "10.0",
         "PERCENT_W_V",
         notes=(
-            "NBRC Medium 1029 specifies the pH-adjusting sodium carbonate "
-            "solution as 10% w/v."
+            "NBRC Medium 1029 specifies the pH-adjusting sodium carbonate " "solution as 10% w/v."
         ),
         physicochemical_roles=("BUFFER",),
     )
@@ -260,9 +256,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

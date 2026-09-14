@@ -242,16 +242,13 @@ def repair_record(doc: dict[str, Any]) -> dict[str, Any]:
         {
             "step_number": 4,
             "action": "MIX",
-            "description": (
-                "After cooling, add 10 mL autoclaved 1.0 M sodium pyruvate solution."
-            ),
+            "description": ("After cooling, add 10 mL autoclaved 1.0 M sodium pyruvate solution."),
         },
         {
             "step_number": 5,
             "action": "FILTER",
             "description": (
-                "Remove any precipitate yielded after autoclaving by filtration, "
-                "if necessary."
+                "Remove any precipitate yielded after autoclaving by filtration, " "if necessary."
             ),
         },
     ]

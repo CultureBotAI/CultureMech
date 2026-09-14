@@ -229,8 +229,7 @@ def repair_parent(doc: dict[str, Any]) -> dict[str, Any]:
             "changes": "Re-rooted KOMODO Medium 541 Sulfurospirillum exact topology",
             "source": "DSMZ Medium 541; KOMODO Medium 541 and 541.1",
             "notes": (
-                "Moved exact KOMODO Medium 541 plus its DSM 18149 wrapper "
-                "under DSMZ Medium 541."
+                "Moved exact KOMODO Medium 541 plus its DSM 18149 wrapper " "under DSMZ Medium 541."
             ),
         },
     )

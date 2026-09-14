@@ -83,8 +83,7 @@ def _component(
 
 
 INGREDIENTS: tuple[dict[str, Any], ...] = tuple(
-    _component(preferred_term, value, unit)
-    for preferred_term, value, unit in INGREDIENT_SIGNATURE
+    _component(preferred_term, value, unit) for preferred_term, value, unit in INGREDIENT_SIGNATURE
 )
 
 
@@ -108,9 +107,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

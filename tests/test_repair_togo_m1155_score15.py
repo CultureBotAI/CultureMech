@@ -80,10 +80,13 @@ def test_repair_corrects_direct_formula_without_adding_global_ph(
     ingredients = _by_name(repaired["ingredients"])
 
     assert repaired["composition_type"] == "SEMI_DEFINED"
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert "ph_value" not in repaired
     assert "ph_range" not in repaired
     assert ingredients["Sucrose"]["term"] == {"id": "CHEBI:17992", "label": "sucrose"}
@@ -98,9 +101,7 @@ def test_repair_expands_jcm_923_stocks(repair_module) -> None:
     trace_metal_1 = _by_name(solutions["Trace metal 1 solution"]["composition"])
     mes = _by_name(solutions["0.5 M MES solution (pH 5.7)"]["composition"])
 
-    assert repair_module._solution_signatures(repaired) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
-    )
+    assert repair_module._solution_signatures(repaired) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     assert solutions["Major metals"]["concentration"] == {
         "value": "10.0",
         "unit": "ML_PER_L",
@@ -139,9 +140,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

@@ -137,8 +137,7 @@ INGREDIENTS: tuple[dict[str, Any], ...] = (
         "VARIABLE",
         source=SOURCE,
         notes=(
-            "JCM Medium 1059 adjusts the medium to pH 7.2-7.4 with sterile KOH, "
-            "if necessary."
+            "JCM Medium 1059 adjusts the medium to pH 7.2-7.4 with sterile KOH, " "if necessary."
         ),
     ),
 )
@@ -205,8 +204,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 5,
         "action": "MIX",
         "description": (
-            "Aseptically add the filter-sterilized glucose solution and vitamin "
-            "solution."
+            "Aseptically add the filter-sterilized glucose solution and vitamin " "solution."
         ),
     },
     {

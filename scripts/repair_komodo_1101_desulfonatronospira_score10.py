@@ -27,9 +27,7 @@ CHILD = Path("bacterial/for_dsm_19491.yaml")
 CHILD_ID = "CultureMech:003801"
 CHILD_SOURCE_TERM = "komodo.medium:1101.1"
 RELATIONSHIP = "STRAIN_SPECIFIC_VARIANT"
-CHILD_NOTES = (
-    "KOMODO Medium 1101.1 applies DESULFONATRONOSPIRA medium to DSM 19491."
-)
+CHILD_NOTES = "KOMODO Medium 1101.1 applies DESULFONATRONOSPIRA medium to DSM 19491."
 
 SOURCE_DUPLICATE_PARENT = {
     "path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",

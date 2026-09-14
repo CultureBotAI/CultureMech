@@ -143,10 +143,7 @@ def _gas(preferred_term: str) -> dict[str, Any]:
         "variable",
         "VARIABLE",
         source=SOURCE,
-        notes=(
-            "JCM Medium 1069 replaces the gas phase with "
-            "N2-CO2-O2 (90:10:2, v/v/v)."
-        ),
+        notes=("JCM Medium 1069 replaces the gas phase with " "N2-CO2-O2 (90:10:2, v/v/v)."),
     )
 
 
@@ -174,15 +171,12 @@ ARTIFICIAL_SALTWATER = tuple(
     for name, value, unit in m1137.ARTIFICIAL_SALTWATER_SIGNATURE
 )
 
-WOLFE_COMPOSITION = (
-    tuple(
-        _listed_component(name, value, unit, source=m1137.TRACE_MINERALS_SOURCE)
-        for name, value, unit in m1137.TRACE_MINERALS_SIGNATURE
-    )
-    + tuple(
-        _listed_component(name, value, unit, source=m1137.WOLFE_SOURCE)
-        for name, value, unit in m1137.WOLFE_ADDITION_SIGNATURE
-    )
+WOLFE_COMPOSITION = tuple(
+    _listed_component(name, value, unit, source=m1137.TRACE_MINERALS_SOURCE)
+    for name, value, unit in m1137.TRACE_MINERALS_SIGNATURE
+) + tuple(
+    _listed_component(name, value, unit, source=m1137.WOLFE_SOURCE)
+    for name, value, unit in m1137.WOLFE_ADDITION_SIGNATURE
 )
 
 TRACE_VITAMINS = tuple(
@@ -295,9 +289,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

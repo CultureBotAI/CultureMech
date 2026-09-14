@@ -50,8 +50,7 @@ def _doc(target) -> dict:
         },
         "notes": "Source: imported",
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_signature
+            _ingredient(name, value, unit) for name, value, unit in target.imported_signature
         ],
         "applications": ["Microbial cultivation"],
         "curation_history": [],
@@ -72,10 +71,13 @@ def test_togo_m573_gets_jcm_formula_ph_sterilization_and_parent_link(
     repaired = repair_module.repair_record(doc, target)
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.JCM_FINAL
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.JCM_FINAL
+    )
     assert repaired["ph_value"] == 7.3
     assert repaired["sterilization"] == repair_module.JCM_STERILIZATION
     assert "kg_microbe_match" not in repaired
@@ -106,10 +108,13 @@ def test_nbrc_m1804_keeps_bacto_names_and_removes_stale_match(
     repaired = repair_module.repair_record(doc, target)
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.NBRC_FINAL
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.NBRC_FINAL
+    )
     assert "sterilization" not in repaired
     assert "kg_microbe_match" not in repaired
     assert ingredients["Bacto Yeast Extract (Difco)"]["term"] == {
@@ -139,10 +144,13 @@ def test_jcm_j569_fixes_mediadive_water_units_and_links_both_togo_rows(
     repaired = repair_module.repair_record(_doc(target), target)
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.JCM_FINAL
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.JCM_FINAL
+    )
     assert "Sea water" not in ingredients
     assert repaired["references"] == [
         {"reference": repair_module.JCM_569},
@@ -165,10 +173,7 @@ def test_repair_is_idempotent_and_records_one_event(repair_module) -> None:
     matching_events = [
         event
         for event in twice["curation_history"]
-        if (
-            event.get("curator") == repair_module.CURATOR
-            and event.get("action") == target.action
-        )
+        if (event.get("curator") == repair_module.CURATOR and event.get("action") == target.action)
     ]
     assert len(matching_events) == 1
     assert "removed the stale MediaDive 7 match" in matching_events[0]["notes"]

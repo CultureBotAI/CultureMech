@@ -209,8 +209,7 @@ def _child_notes(child: Child) -> str:
             f"at pH {child.ph_value:g} to {child.strain}."
         )
     return (
-        f"{child.source_label} applies DESULFUROCOCCUS AMYLOLYTICUS medium "
-        f"to {child.strain}."
+        f"{child.source_label} applies DESULFUROCOCCUS AMYLOLYTICUS medium " f"to {child.strain}."
     )
 
 

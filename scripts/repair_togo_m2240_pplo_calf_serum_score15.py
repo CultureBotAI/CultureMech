@@ -17,8 +17,7 @@ from record_io import dump_record, write_record  # noqa: E402
 
 NORMALIZED = REPO / "data" / "normalized_yaml"
 TARGET = Path(
-    "bacterial/"
-    "medium_containing_pplo_broth_calf_serum_glucose_penicillin_g_and_tris_hc1.yaml"
+    "bacterial/" "medium_containing_pplo_broth_calf_serum_glucose_penicillin_g_and_tris_hc1.yaml"
 )
 YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
@@ -177,9 +176,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

@@ -51,12 +51,8 @@ FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("N2", "variable", "VARIABLE"),
 )
 
-NA2S_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("Na2S x 9H2O", "5.0", "PERCENT_W_V"),
-)
-CYSTEINE_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("L-Cysteine HCl H2O", "5.0", "PERCENT_W_V"),
-)
+NA2S_STOCK_SIGNATURE: tuple[Component, ...] = (("Na2S x 9H2O", "5.0", "PERCENT_W_V"),)
+CYSTEINE_STOCK_SIGNATURE: tuple[Component, ...] = (("L-Cysteine HCl H2O", "5.0", "PERCENT_W_V"),)
 
 IMPORTED_SOLUTION_SIGNATURES: tuple[SolutionSignature, ...] = (
     ("5% Na2S\u30fb9H2O solution", "6", "G_PER_L", ()),
@@ -101,8 +97,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 1,
         "action": "MIX",
         "description": (
-            "Mix tryptone, yeast extract, resazurin, natural seawater, and "
-            "distilled water."
+            "Mix tryptone, yeast extract, resazurin, natural seawater, and " "distilled water."
         ),
     },
     {
@@ -254,9 +249,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

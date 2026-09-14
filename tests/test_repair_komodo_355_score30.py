@@ -99,10 +99,13 @@ def test_repair_record_uses_dsmz_355_gas_notes(repair) -> None:
 
     assert _ingredient(repaired, "N2")["source"] == repair.SOURCE_355
     assert _ingredient(repaired, "CO2")["source"] == repair.SOURCE_355
-    assert "sterilizes methanol anaerobically" not in _ingredient(
-        repaired,
-        "N2",
-    )["notes"]
+    assert (
+        "sterilizes methanol anaerobically"
+        not in _ingredient(
+            repaired,
+            "N2",
+        )["notes"]
+    )
 
 
 def test_repair_record_adds_references_and_flags(repair) -> None:

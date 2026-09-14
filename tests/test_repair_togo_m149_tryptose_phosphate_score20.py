@@ -86,13 +86,7 @@ def test_repair_restores_togo_water_and_products(repair_module, scorer_module) -
         },
     ]
     assert repaired["references"] == [{"reference": repair_module.TOGO_M149}]
-    assert scorer_module.score_record(repaired) == (
-        15,
-        [
-            "only 1/3 composition components grounded",
-            "no pH and no temperature",
-        ],
-    )
+    assert scorer_module.score_record(repaired) == (5, ["no pH and no temperature"])
 
 
 def test_repair_adds_history_once(repair_module) -> None:
@@ -124,12 +118,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(root)
 
     assert {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(root): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(root): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:

@@ -377,16 +377,16 @@ def _ensure_ingredients_curated(doc: dict[str, Any]) -> None:
 
 
 def _validate_targets() -> None:
-    if len(SOURCE_DUPLICATES) != EXPECTED_SOURCE_DUPLICATE_COUNT or len(
-        SOURCE_DUPLICATES
-    ) != len(SOURCE_DUPLICATE_BY_PATH):
+    if len(SOURCE_DUPLICATES) != EXPECTED_SOURCE_DUPLICATE_COUNT or len(SOURCE_DUPLICATES) != len(
+        SOURCE_DUPLICATE_BY_PATH
+    ):
         raise ValueError(
             f"expected {EXPECTED_SOURCE_DUPLICATE_COUNT} unique duplicates, found "
             f"{len(SOURCE_DUPLICATES)} total and {len(SOURCE_DUPLICATE_BY_PATH)} unique"
         )
-    if len(STRAIN_CHILDREN) != EXPECTED_STRAIN_CHILD_COUNT or len(
-        STRAIN_CHILDREN
-    ) != len(STRAIN_CHILD_BY_PATH):
+    if len(STRAIN_CHILDREN) != EXPECTED_STRAIN_CHILD_COUNT or len(STRAIN_CHILDREN) != len(
+        STRAIN_CHILD_BY_PATH
+    ):
         raise ValueError(
             f"expected {EXPECTED_STRAIN_CHILD_COUNT} unique strain children, found "
             f"{len(STRAIN_CHILDREN)} total and {len(STRAIN_CHILD_BY_PATH)} unique"
@@ -480,10 +480,7 @@ def repair_parent(doc: dict[str, Any]) -> dict[str, Any]:
         repaired,
         "variant_children",
         [
-            *[
-                _source_duplicate_entry(source_duplicate)
-                for source_duplicate in SOURCE_DUPLICATES
-            ],
+            *[_source_duplicate_entry(source_duplicate) for source_duplicate in SOURCE_DUPLICATES],
             *[_strain_child_entry(child) for child in STRAIN_CHILDREN],
         ],
         "curation_history",

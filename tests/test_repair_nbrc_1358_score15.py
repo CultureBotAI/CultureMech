@@ -35,8 +35,7 @@ def _minimal_solution(name: str, signature: tuple) -> dict:
     return {
         "preferred_term": name,
         "composition": [
-            _ingredient(ingredient, value, unit)
-            for ingredient, value, unit in signature
+            _ingredient(ingredient, value, unit) for ingredient, value, unit in signature
         ],
     }
 
@@ -56,12 +55,8 @@ def _minimal_doc(repair_module) -> dict:
         ],
         "curation_history": [{"action": repair_module.REQUIRED_ACTION}],
         "solutions": [
-            _minimal_solution(
-                "Mineral base 1", repair_module.MINERAL_BASE_1_SIGNATURE
-            ),
-            _minimal_solution(
-                "Mineral base 2", repair_module.MINERAL_BASE_2_SIGNATURE
-            ),
+            _minimal_solution("Mineral base 1", repair_module.MINERAL_BASE_1_SIGNATURE),
+            _minimal_solution("Mineral base 2", repair_module.MINERAL_BASE_2_SIGNATURE),
             _minimal_solution("Vitamin solution", repair_module.VITAMIN_SIGNATURE),
             _minimal_solution(
                 "Trace elements solution",
@@ -94,24 +89,18 @@ def test_repair_document_structures_and_grounds_anaerobic_stocks(
     ingredients = {row["preferred_term"]: row for row in repaired["ingredients"]}
     solutions = {row["preferred_term"]: row for row in repaired["solutions"]}
     trace = {
-        row["preferred_term"]: row
-        for row in solutions["Trace elements solution"]["composition"]
+        row["preferred_term"]: row for row in solutions["Trace elements solution"]["composition"]
     }
-    fes = {
-        row["preferred_term"]: row
-        for row in solutions["FeS slurry solution"]["composition"]
-    }
+    fes = {row["preferred_term"]: row for row in solutions["FeS slurry solution"]["composition"]}
     dithionite = {
-        row["preferred_term"]: row
-        for row in solutions["Sodium dithionite solution"]["composition"]
+        row["preferred_term"]: row for row in solutions["Sodium dithionite solution"]["composition"]
     }
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._solution_signatures(repaired) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
     )
+    assert repair_module._solution_signatures(repaired) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     assert ingredients["Coenzyme M"]["term"]["id"] == "CHEBI:17905"
     assert ingredients["Sodium formate"]["term"]["id"] == "CHEBI:62965"
     assert ingredients["Na2S·9H2O"]["term"]["id"] == "CHEBI:76209"
@@ -153,12 +142,11 @@ def test_repair_document_adds_reference_and_event_once(repair_module) -> None:
     twice = repair_module.repair_document(once)
 
     assert twice["references"] == [{"reference": repair_module.NBRC_URL}]
-    assert repair_module._signature(
-        twice["ingredients"], "ingredients"
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._solution_signatures(twice) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._signature(twice["ingredients"], "ingredients")
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
     )
+    assert repair_module._solution_signatures(twice) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     matching_events = [
         event
         for event in twice["curation_history"]
@@ -205,9 +193,7 @@ def test_repair_document_rejects_ingredient_drift(repair_module) -> None:
 
 def test_repair_document_rejects_solution_drift(repair_module) -> None:
     doc = _minimal_doc(repair_module)
-    doc["solutions"][0]["composition"][0] = _ingredient(
-        "Na2CO3", "180", "G_PER_L"
-    )
+    doc["solutions"][0]["composition"][0] = _ingredient("Na2CO3", "180", "G_PER_L")
 
     with pytest.raises(ValueError, match="nested solution signature drifted"):
         repair_module.repair_document(doc)
@@ -224,7 +210,5 @@ def test_target_record_matches_nbrc_1356_repair_contract(repair_module) -> None:
         repair_module.IMPORTED_INGREDIENT_SIGNATURE,
         repair_module.FINAL_INGREDIENT_SIGNATURE,
     }
-    assert repair_module._solution_signatures(repaired) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
-    )
+    assert repair_module._solution_signatures(repaired) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     assert repaired["media_term"]["term"]["id"] == "nbrc.medium:1356"

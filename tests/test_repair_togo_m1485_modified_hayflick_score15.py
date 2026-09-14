@@ -76,15 +76,20 @@ def test_repair_splits_merged_water_and_stock_solution(
 
     assert repaired["ph_value"] == 7.8
     assert "temperature_value" not in repaired
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._signature(
-        repaired["solutions"], "solutions"
-    ) == repair_module.FINAL_SOLUTION_SIGNATURE
-    assert repair_module._signature(
-        repaired["solutions"][0]["composition"], "solutions[0].composition"
-    ) == repair_module.YEAST_STOCK_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
+    assert (
+        repair_module._signature(repaired["solutions"], "solutions")
+        == repair_module.FINAL_SOLUTION_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            repaired["solutions"][0]["composition"], "solutions[0].composition"
+        )
+        == repair_module.YEAST_STOCK_SIGNATURE
+    )
     assert scorer_module.score_record(repaired) == (0, [])
     assert scorer_module.score_parsed([(str(repair_module.TARGET), repaired)]) == []
 

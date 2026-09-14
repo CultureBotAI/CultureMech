@@ -138,8 +138,7 @@ def test_repair_adds_sulfide_stock_and_source_preparation(repair_module) -> None
             "concentration": {"value": "36", "unit": "G_PER_L"},
             "source": repair_module.SOURCE_NBRC_1016,
             "notes": (
-                "NBRC Medium 1016 lists Na2S x 9H2O as a 3.6% separately "
-                "autoclaved solution."
+                "NBRC Medium 1016 lists Na2S x 9H2O as a 3.6% separately " "autoclaved solution."
             ),
             "term": {
                 "id": "CHEBI:76209",
@@ -211,12 +210,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(tmp_path)
 
     assert {
-        path.relative_to(tmp_path): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(tmp_path): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(tmp_path): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(tmp_path): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:

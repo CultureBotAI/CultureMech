@@ -42,8 +42,7 @@ def _doc(repair, *, record_id: str = "CultureMech:000136") -> dict:
         "ph_range": {"min": 7.0, "max": 8.0},
         "notes": "Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_SW_AMP.pdf",
         "ingredients": [
-            {"preferred_term": name}
-            for name in repair.EXPECTED["algae/s_w_amp.yaml"][1]
+            {"preferred_term": name} for name in repair.EXPECTED["algae/s_w_amp.yaml"][1]
         ],
         "curation_history": [{"action": repair.SOURCE_ACTION}],
     }
@@ -84,9 +83,7 @@ def test_plan_repair_is_idempotent(repair_module, tmp_path: Path) -> None:
         path = root / relative_path
         path.parent.mkdir(parents=True, exist_ok=True)
         doc = _doc(repair_module, record_id=expected_id)
-        doc["ingredients"] = [
-            {"preferred_term": name} for name in expected_ingredients
-        ]
+        doc["ingredients"] = [{"preferred_term": name} for name in expected_ingredients]
         path.write_text(yaml.safe_dump(doc, sort_keys=False), encoding="utf-8")
 
     first = repair_module.plan_repairs(root)
@@ -96,12 +93,8 @@ def test_plan_repair_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(root)
 
     assert {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(root): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(root): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:

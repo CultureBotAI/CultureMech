@@ -150,8 +150,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 3,
         "action": "ADJUST_PH",
         "description": (
-            "Adjust pH to 7.5, bring the volume to 1.0 L with distilled "
-            "water, and autoclave."
+            "Adjust pH to 7.5, bring the volume to 1.0 L with distilled " "water, and autoclave."
         ),
     },
     {
@@ -225,17 +224,14 @@ BASE_NOTES = (
 )
 
 SALINITY_NOTES = (
-    "JCM Medium 619 CYS Medium for YMO722 uses JCM Medium 618 with 16.0 g/L "
-    "final NaCl."
+    "JCM Medium 619 CYS Medium for YMO722 uses JCM Medium 618 with 16.0 g/L " "final NaCl."
 )
 
 BASE_VARIANT_MODIFICATION = (
     "Same JCM Medium 618 CYS Medium formulation represented by MediaDive J618."
 )
 
-SALINITY_VARIANT_MODIFICATION = (
-    "NaCl decreased from 20.0 g/L to 16.0 g/L final concentration."
-)
+SALINITY_VARIANT_MODIFICATION = "NaCl decreased from 20.0 g/L to 16.0 g/L final concentration."
 
 
 TARGETS: tuple[Target, ...] = (
@@ -353,8 +349,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     grounding = GROUNDINGS.get(preferred_term)
     if grounding:
@@ -490,9 +485,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

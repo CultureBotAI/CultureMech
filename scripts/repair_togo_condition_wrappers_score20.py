@@ -355,8 +355,7 @@ def _ingredient_terms(doc: dict[str, Any]) -> set[str]:
 def _require_source_components(doc: dict[str, Any], update: RecipeUpdate) -> None:
     if doc.get("id") != EXPECTED_IDS[update.path]:
         raise ValueError(
-            f"{update.path}: found id {doc.get('id')!r}, "
-            f"expected {EXPECTED_IDS[update.path]!r}"
+            f"{update.path}: found id {doc.get('id')!r}, " f"expected {EXPECTED_IDS[update.path]!r}"
         )
 
     source_term = _source_term_id(doc)
@@ -366,9 +365,7 @@ def _require_source_components(doc: dict[str, Any], update: RecipeUpdate) -> Non
             f"expected {EXPECTED_SOURCE_TERMS[update.path]!r}"
         )
 
-    expected_terms = {
-        row["preferred_term"].lower() for row in update.recipe["ingredients"]
-    }
+    expected_terms = {row["preferred_term"].lower() for row in update.recipe["ingredients"]}
     if _ingredient_terms(doc) != expected_terms:
         raise ValueError(
             f"{update.path}: found ingredient terms {sorted(_ingredient_terms(doc))!r}, "
@@ -471,8 +468,7 @@ def repair_wrapper(doc: dict[str, Any], update: RecipeUpdate) -> dict[str, Any]:
             repaired[field] = [copy.deepcopy(row) for row in value]
         elif field == "preparation_steps":
             repaired[field] = [
-                _mix_step(index, description)
-                for index, description in enumerate(value, start=1)
+                _mix_step(index, description) for index, description in enumerate(value, start=1)
             ]
         else:
             repaired[field] = copy.deepcopy(value)

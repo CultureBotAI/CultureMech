@@ -156,9 +156,7 @@ def repair_parent(doc: dict[str, Any]) -> dict[str, Any]:
     if not isinstance(children, list):
         raise ValueError("variant_children is not a list")
     repaired["variant_children"] = [
-        _child_entry()
-        if isinstance(child, dict) and child.get("id") == CHILD_ID
-        else child
+        _child_entry() if isinstance(child, dict) and child.get("id") == CHILD_ID else child
         for child in children
     ]
     _upsert_event(

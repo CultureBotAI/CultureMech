@@ -145,19 +145,13 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
     _step(
         1,
         "DISSOLVE",
-        (
-            "Dissolve MgSO4·7H2O, (NH4)2SO4, K2HPO4, and KCl in 1 L "
-            "distilled water."
-        ),
+        ("Dissolve MgSO4·7H2O, (NH4)2SO4, K2HPO4, and KCl in 1 L " "distilled water."),
     ),
     _step(2, "ADJUST_PH", "Adjust the base medium to pH 2.0 with H2SO4."),
     _step(
         3,
         "MIX",
-        (
-            "For heterotrophic growth on yeast extract, add 10 mg/L "
-            "FeSO4·7H2O to the medium."
-        ),
+        ("For heterotrophic growth on yeast extract, add 10 mg/L " "FeSO4·7H2O to the medium."),
     ),
     _step(
         4,
@@ -312,9 +306,7 @@ def _has_history_action(doc: dict[str, Any], action: str) -> bool:
 
 def _ensure_target(doc: dict[str, Any]) -> None:
     if doc.get("id") != TARGET_ID:
-        raise ValueError(
-            f"{TARGET_PATH}: found id {doc.get('id')!r}, expected {TARGET_ID!r}"
-        )
+        raise ValueError(f"{TARGET_PATH}: found id {doc.get('id')!r}, expected {TARGET_ID!r}")
     if not _has_history_action(doc, REQUIRED_ACTION):
         raise ValueError(f"{TARGET_PATH}: missing recovery action {REQUIRED_ACTION!r}")
     if doc.get("name") not in {"1003", "Acidimicrobium Medium"}:

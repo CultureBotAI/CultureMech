@@ -66,21 +66,11 @@ IMPORTED_SOLUTION_SIGNATURES: tuple[SolutionSignature, ...] = (
     ("Salt solution No. 2 (see Medium [M124])", "37.5", "G_PER_L", ()),
 )
 
-RESAZURIN_SIGNATURE: tuple[Component, ...] = (
-    ("Resazurin", "0.1", "PERCENT_W_V"),
-)
-HEMIN_SIGNATURE: tuple[Component, ...] = (
-    ("Hemin", "0.2", "PERCENT_W_V"),
-)
-SODIUM_SULFITE_SIGNATURE: tuple[Component, ...] = (
-    ("Na2SO3", "4.0", "PERCENT_W_V"),
-)
-ASCORBIC_ACID_SIGNATURE: tuple[Component, ...] = (
-    ("L-Ascorbic acid", "25.0", "PERCENT_W_V"),
-)
-CYSTEINE_SIGNATURE: tuple[Component, ...] = (
-    ("L-Cysteine HCl H2O", "5.0", "PERCENT_W_V"),
-)
+RESAZURIN_SIGNATURE: tuple[Component, ...] = (("Resazurin", "0.1", "PERCENT_W_V"),)
+HEMIN_SIGNATURE: tuple[Component, ...] = (("Hemin", "0.2", "PERCENT_W_V"),)
+SODIUM_SULFITE_SIGNATURE: tuple[Component, ...] = (("Na2SO3", "4.0", "PERCENT_W_V"),)
+ASCORBIC_ACID_SIGNATURE: tuple[Component, ...] = (("L-Ascorbic acid", "25.0", "PERCENT_W_V"),)
+CYSTEINE_SIGNATURE: tuple[Component, ...] = (("L-Cysteine HCl H2O", "5.0", "PERCENT_W_V"),)
 
 FINAL_SOLUTION_SIGNATURES: tuple[SolutionSignature, ...] = (
     ("0.1% Resazurin solution", "0.5", "ML_PER_L", RESAZURIN_SIGNATURE),
@@ -253,10 +243,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
             "L-Cysteine HCl H2O",
             "5.0",
             "PERCENT_W_V",
-            notes=(
-                f"{SOURCE} identifies the cysteine stock as 5% "
-                "L-Cysteine HCl H2O."
-            ),
+            notes=(f"{SOURCE} identifies the cysteine stock as 5% " "L-Cysteine HCl H2O."),
         ),
     ),
     _stock(
@@ -353,9 +340,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -373,9 +358,7 @@ def _solution_signatures(doc: dict[str, Any]) -> tuple[SolutionSignature, ...]:
             raise ValueError("solutions contains a non-mapping row")
         concentration = solution.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"solution {solution.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"solution {solution.get('preferred_term')!r} lacks concentration")
         signatures.append(
             (
                 str(solution.get("preferred_term") or ""),

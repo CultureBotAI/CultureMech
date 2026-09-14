@@ -177,15 +177,12 @@ def _component_signature(rows: Any, label: str) -> tuple[Component, ...]:
 
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}")
 
     source_term = _source_term_id(doc)
     if source_term != target.source_term:
         raise ValueError(
-            f"{target.path}: expected source term {target.source_term}, "
-            f"found {source_term!r}"
+            f"{target.path}: expected source term {target.source_term}, " f"found {source_term!r}"
         )
 
     signature = _component_signature(doc.get("ingredients"), "ingredients")

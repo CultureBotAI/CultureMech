@@ -73,15 +73,13 @@ def test_repair_document_keeps_bhi_expansion_and_adds_nbrc_rows(
     repaired = repair_module.repair_document(_minimal_doc(repair_module))
     ingredients = {row["preferred_term"]: row for row in repaired["ingredients"]}
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Calf brains"]["term"]["id"] == "UBERON:0000955"
     assert ingredients["Dextrose"]["term"]["id"] == "CHEBI:17634"
-    assert (
-        ingredients["Dextrose"]["mediaingredientmech_chebi_term"]["id"]
-        == "CHEBI:17634"
-    )
+    assert ingredients["Dextrose"]["mediaingredientmech_chebi_term"]["id"] == "CHEBI:17634"
     assert ingredients["NaCl"]["concentration"] == {
         "value": "20",
         "unit": "G_PER_L",

@@ -71,9 +71,10 @@ def test_repair_corrects_source_units_ph_and_temperature(
 ) -> None:
     repaired = repair_module.repair_record(_doc(repair_module))
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert "solutions" not in repaired
     assert repaired["ph_range"] == {"min": 7.6, "max": 8.0}
     assert "ph_value" not in repaired

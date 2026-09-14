@@ -102,9 +102,7 @@ def test_repair_togo_m681_sets_groundings_and_roles(repair_module) -> None:
 def test_repair_togo_m681_adds_default_jcm_autoclaving(repair_module) -> None:
     repaired = repair_module.repair_target(_doc(repair_module))
 
-    assert repaired["preparation_steps"] == [
-        dict(step) for step in repair_module.PREPARATION_STEPS
-    ]
+    assert repaired["preparation_steps"] == [dict(step) for step in repair_module.PREPARATION_STEPS]
     assert repaired["sterilization"] == repair_module.STERILIZATION
     assert [step["action"] for step in repaired["preparation_steps"]] == [
         "MIX",

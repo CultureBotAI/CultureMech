@@ -57,8 +57,7 @@ def _medium_doc(target) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "LIQUID",
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_ingredients
+            _ingredient(name, value, unit) for name, value, unit in target.imported_ingredients
         ],
         "solutions": [_solution(row) for row in target.imported_solutions],
         "media_term": {
@@ -84,15 +83,11 @@ def _solution_doc(record_id: str, composition: tuple) -> dict:
             "id": "mediadive.solution:0000",
             "label": "solution",
         },
-        "composition": [
-            _ingredient(name, value, unit)
-            for name, value, unit in composition
-        ],
+        "composition": [_ingredient(name, value, unit) for name, value, unit in composition],
         "preparation_notes": "Original volume",
         "curation_history": [],
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in PLACEHOLDER_INGREDIENTS
+            _ingredient(name, value, unit) for name, value, unit in PLACEHOLDER_INGREDIENTS
         ],
         "data_quality_flags": ["incomplete_composition"],
         "category": "bacterial",
@@ -114,14 +109,20 @@ def test_jcm_j837_becomes_canonical_parent(
 ) -> None:
     repaired = _repair_medium(repair_module, repair_module.MEDIADIVE_J837_PATH)
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.DIRECT_COMPOSITION
-    assert repair_module._solution_signature(
-        repaired["solutions"],
-        "solutions",
-    ) == repair_module.FINAL_SOLUTIONS
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.DIRECT_COMPOSITION
+    )
+    assert (
+        repair_module._solution_signature(
+            repaired["solutions"],
+            "solutions",
+        )
+        == repair_module.FINAL_SOLUTIONS
+    )
     assert repaired["variant_children"] == [repair_module.M873_CHILD]
     assert "parent_media" not in repaired
     assert "has_unmapped_ingredients" in repaired["data_quality_flags"]
@@ -140,9 +141,7 @@ def test_togo_m873_links_to_jcm_source_duplicate(
     assert repaired["variant_modifications"] == [repair_module.M873_CHILD["notes"]]
     assert "variant_children" not in repaired
     assert scorer_module.score_record(repaired) == (5, ["no pH and no temperature"])
-    assert scorer_module.score_parsed(
-        [("bacterial/TOGO_M873_Syfac_Medium.yaml", repaired)]
-    ) == []
+    assert scorer_module.score_parsed([("bacterial/TOGO_M873_Syfac_Medium.yaml", repaired)]) == []
 
 
 def test_repair_corrects_main_units_and_groundings(repair_module) -> None:
@@ -247,10 +246,13 @@ def test_solution_4801_uses_flat_asserted_additions(repair_module) -> None:
     composition = _by_name(repaired["composition"])
 
     assert "ingredients" not in repaired
-    assert repair_module._signature(
-        repaired["composition"],
-        "composition",
-    ) == repair_module.SOLUTION_4801_COMPOSITION
+    assert (
+        repair_module._signature(
+            repaired["composition"],
+            "composition",
+        )
+        == repair_module.SOLUTION_4801_COMPOSITION
+    )
     assert composition["Sea salts (Sigma)"]["concentration"] == {
         "value": "35.0",
         "unit": "G_PER_L",
@@ -280,10 +282,13 @@ def test_solution_4221_corrects_wolfe_water_unit(repair_module) -> None:
     composition = _by_name(repaired["composition"])
 
     assert "ingredients" not in repaired
-    assert repair_module._signature(
-        repaired["composition"],
-        "composition",
-    ) == repair_module.WOLFE_COMPOSITION
+    assert (
+        repair_module._signature(
+            repaired["composition"],
+            "composition",
+        )
+        == repair_module.WOLFE_COMPOSITION
+    )
     assert composition["Distilled water"]["concentration"] == {
         "value": "1000.0",
         "unit": "ML_PER_L",
@@ -296,17 +301,13 @@ def test_solution_4221_corrects_wolfe_water_unit(repair_module) -> None:
 
 def test_repair_adds_references_flags_and_event_once(repair_module) -> None:
     target = next(
-        target
-        for target in repair_module.TARGETS
-        if target.path == repair_module.TOGO_M873_PATH
+        target for target in repair_module.TARGETS if target.path == repair_module.TOGO_M873_PATH
     )
     once = repair_module.repair_medium_record(_medium_doc(target), target)
     twice = repair_module.repair_medium_record(once, target)
 
     assert twice == once
-    assert once["references"] == [
-        {"reference": reference} for reference in target.references
-    ]
+    assert once["references"] == [{"reference": reference} for reference in target.references]
     assert once["data_quality_flags"] == [
         "ingredients_curated",
         "has_ontology_mappings",
@@ -315,8 +316,7 @@ def test_repair_adds_references_flags_and_event_once(repair_module) -> None:
     matching_events = [
         event
         for event in twice["curation_history"]
-        if event.get("curator") == repair_module.CURATOR
-        and event.get("action") == target.action
+        if event.get("curator") == repair_module.CURATOR and event.get("action") == target.action
     ]
     assert len(matching_events) == 1
     assert repair_module.TOGO_M873 in matching_events[0]["source"]
@@ -334,9 +334,7 @@ def test_repair_rejects_wrong_medium_id(repair_module) -> None:
 
 def test_repair_rejects_medium_solution_drift(repair_module) -> None:
     target = next(
-        target
-        for target in repair_module.TARGETS
-        if target.path == repair_module.TOGO_M873_PATH
+        target for target in repair_module.TARGETS if target.path == repair_module.TOGO_M873_PATH
     )
     doc = _medium_doc(target)
     doc["solutions"].pop()

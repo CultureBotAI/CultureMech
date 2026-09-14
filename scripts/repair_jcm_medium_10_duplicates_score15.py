@@ -105,8 +105,7 @@ TARGETS: tuple[Target, ...] = (
             "for JCM Medium 179 Medium 10 Broth."
         ),
         variant_modification=(
-            "Same JCM Medium 179 Medium 10 Broth formulation as the TOGO M172 "
-            "source record."
+            "Same JCM Medium 179 Medium 10 Broth formulation as the TOGO M172 " "source record."
         ),
     ),
     Target(
@@ -142,8 +141,7 @@ TARGETS: tuple[Target, ...] = (
             "for JCM Medium 210 Modified Medium 10."
         ),
         variant_modification=(
-            "Same JCM Medium 210 Modified Medium 10 formulation as the TOGO M203 "
-            "source record."
+            "Same JCM Medium 210 Modified Medium 10 formulation as the TOGO M203 " "source record."
         ),
     ),
 )
@@ -187,9 +185,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -207,9 +203,7 @@ def _solution_signatures(doc: dict[str, Any]) -> tuple[SolutionSignature, ...]:
             raise ValueError("solutions contains a non-mapping row")
         concentration = solution.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"solution {solution.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"solution {solution.get('preferred_term')!r} lacks concentration")
         signatures.append(
             (
                 str(solution.get("preferred_term") or ""),
@@ -234,13 +228,10 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.expected_id:
         raise ValueError(
-            f"{target.path}: expected id {target.expected_id}, "
-            f"found {doc.get('id')!r}"
+            f"{target.path}: expected id {target.expected_id}, " f"found {doc.get('id')!r}"
         )
     if _source_term_id(doc) != target.expected_media_term:
-        raise ValueError(
-            f"{target.path}: expected media term {target.expected_media_term}"
-        )
+        raise ValueError(f"{target.path}: expected media term {target.expected_media_term}")
 
     ingredient_signature = _signature(doc.get("ingredients"), "ingredients")
     if ingredient_signature not in (
@@ -372,9 +363,7 @@ def repair_jcm_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
     repaired["ingredients"] = copy.deepcopy(list(target.togo_module.INGREDIENTS))
     repaired["solutions"] = copy.deepcopy(list(target.togo_module.SOLUTIONS))
     _put_after(repaired, "notes", target.notes, "media_term")
-    repaired["preparation_steps"] = copy.deepcopy(
-        list(target.togo_module.PREPARATION_STEPS)
-    )
+    repaired["preparation_steps"] = copy.deepcopy(list(target.togo_module.PREPARATION_STEPS))
     repaired.pop("sterilization", None)
     repaired.pop("variant_children", None)
     _ensure_flags(repaired)

@@ -102,9 +102,7 @@ M3040_PARENT = {
     "relationship": "PHYSICAL_STATE_VARIANT",
     "id": "CultureMech:009551",
     "name": "hgam",
-    "notes": (
-        "TOGO M3040 is the anaerobic liquid form of NBRC Medium 1509 HGAM."
-    ),
+    "notes": ("TOGO M3040 is the anaerobic liquid form of NBRC Medium 1509 HGAM."),
 }
 
 M3040_CHILD = {
@@ -112,9 +110,7 @@ M3040_CHILD = {
     "relationship": "PHYSICAL_STATE_VARIANT",
     "id": "CultureMech:009553",
     "name": "hgam",
-    "notes": (
-        "TOGO M3040 is the anaerobic liquid form of NBRC Medium 1509 HGAM."
-    ),
+    "notes": ("TOGO M3040 is the anaerobic liquid form of NBRC Medium 1509 HGAM."),
 }
 
 M3040_VARIANT_MODIFICATION = (
@@ -156,9 +152,7 @@ M3040_PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
     {
         "step_number": 1,
         "action": "MIX",
-        "description": (
-            "Suspend 41.7 g Nissui Modified GAM Broth in 1.0 L distilled water."
-        ),
+        "description": ("Suspend 41.7 g Nissui Modified GAM Broth in 1.0 L distilled water."),
     },
     {
         "step_number": 2,
@@ -249,8 +243,7 @@ STALE_PARENT = {
 }
 
 STALE_VARIANT_MODIFICATIONS = (
-    "Same ingredient and concentration signature; review as possible duplicate "
-    "source record.",
+    "Same ingredient and concentration signature; review as possible duplicate " "source record.",
 )
 
 STALE_LINK_TARGETS: tuple[StaleLinkTarget, ...] = (
@@ -290,8 +283,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     grounding = GROUNDINGS.get(preferred_term)
     if grounding is not None:
@@ -346,9 +338,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -400,10 +390,7 @@ def _ensure_stale_link_target(doc: dict[str, Any], target: StaleLinkTarget) -> N
         raise ValueError(f"{target.path}: variant_relationship drifted")
 
     modifications = doc.get("variant_modifications")
-    if (
-        modifications is not None
-        and tuple(modifications) != STALE_VARIANT_MODIFICATIONS
-    ):
+    if modifications is not None and tuple(modifications) != STALE_VARIANT_MODIFICATIONS:
         raise ValueError(f"{target.path}: variant_modifications drifted")
 
 
@@ -532,9 +519,7 @@ def repair_hgam_record(doc: dict[str, Any], target: HgamTarget) -> dict[str, Any
             "references",
         )
     if target.variant_children:
-        repaired["variant_children"] = [
-            copy.deepcopy(child) for child in target.variant_children
-        ]
+        repaired["variant_children"] = [copy.deepcopy(child) for child in target.variant_children]
     else:
         repaired.pop("variant_children", None)
     if target.variant_relationship is None:

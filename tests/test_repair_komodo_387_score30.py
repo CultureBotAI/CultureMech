@@ -87,10 +87,13 @@ def test_repair_record_scales_base_and_trace_components(repair) -> None:
         "value": "0.000002956",
         "unit": "G_PER_L",
     }
-    assert "1015 mL final formulation" in _ingredient(
-        repaired,
-        "MgSO4 x 7 H2O",
-    )["notes"]
+    assert (
+        "1015 mL final formulation"
+        in _ingredient(
+            repaired,
+            "MgSO4 x 7 H2O",
+        )["notes"]
+    )
 
 
 def test_repair_record_combines_calcium_and_adds_coenzyme_m(repair) -> None:

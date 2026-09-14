@@ -49,10 +49,7 @@ class TargetSpec:
 
     @property
     def nbrc_url(self) -> str:
-        return (
-            "https://www.nite.go.jp/nbrc/catalogue/"
-            f"NBRCMediumDetailServlet?NO={self.nbrc_no}"
-        )
+        return "https://www.nite.go.jp/nbrc/catalogue/" f"NBRCMediumDetailServlet?NO={self.nbrc_no}"
 
     @property
     def references(self) -> tuple[str, str]:
@@ -258,9 +255,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

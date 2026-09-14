@@ -203,10 +203,7 @@ def _parent_ref(child: Child) -> dict[str, str]:
         "relationship": child.relationship,
         "id": PARENT_ID,
         "name": PARENT_NAME,
-        "notes": (
-            "MediaDive Medium 398 is the DSMZ THERMOPLASMA VOLCANIUM MEDIUM "
-            "base."
-        ),
+        "notes": ("MediaDive Medium 398 is the DSMZ THERMOPLASMA VOLCANIUM MEDIUM " "base."),
     }
 
 
@@ -254,9 +251,7 @@ def repair_parent(doc: dict[str, Any]) -> dict[str, Any]:
             "timestamp": TIMESTAMP,
             "curator": CURATOR,
             "action": ACTION,
-            "changes": (
-                "Promoted MediaDive Medium 398 to the Thermoplasma family parent"
-            ),
+            "changes": ("Promoted MediaDive Medium 398 to the Thermoplasma family parent"),
             "source": "MediaDive Medium 398 and KOMODO Medium 398-398.2",
             "notes": (
                 "Moved the family root from strain-specific KOMODO Medium 398.1 "

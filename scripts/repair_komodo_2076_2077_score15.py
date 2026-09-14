@@ -200,7 +200,9 @@ def _term(identifier: str, label: str) -> dict[str, str]:
     return {"id": identifier, "label": label}
 
 
-def _component(target: Path, source: str, preferred_term: str, value: str, unit: str) -> dict[str, Any]:
+def _component(
+    target: Path, source: str, preferred_term: str, value: str, unit: str
+) -> dict[str, Any]:
     source_name = SOURCE_SPELLINGS.get((target, preferred_term), preferred_term)
     row: dict[str, Any] = {
         "preferred_term": preferred_term,
@@ -399,8 +401,7 @@ def repair_record(target: Path, doc: dict[str, Any]) -> dict[str, Any]:
 
 def plan_repairs(normalized: Path = NORMALIZED) -> dict[Path, dict[str, Any]]:
     return {
-        normalized / target: repair_record(target, _load(normalized / target))
-        for target in TARGETS
+        normalized / target: repair_record(target, _load(normalized / target)) for target in TARGETS
     }
 
 

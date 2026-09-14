@@ -35,8 +35,7 @@ def _minimal_solution(name: str, signature: tuple) -> dict:
     return {
         "preferred_term": name,
         "composition": [
-            _ingredient(ingredient, value, unit)
-            for ingredient, value, unit in signature
+            _ingredient(ingredient, value, unit) for ingredient, value, unit in signature
         ],
     }
 
@@ -88,13 +87,9 @@ def test_repair_document_adds_trace_naoh_and_groundings(repair_module) -> None:
         row["preferred_term"]: row for row in repaired["solutions"][1]["composition"]
     }
 
-    assert repair_module._solution_signatures(repaired) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
-    )
+    assert repair_module._solution_signatures(repaired) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     assert ingredients["MgCl2·6H2O"]["term"]["id"] == "CHEBI:86345"
-    assert ingredients["Bacto Yeast Extract (Difco)"]["term"]["id"] == (
-        "FOODON:03315426"
-    )
+    assert ingredients["Bacto Yeast Extract (Difco)"]["term"]["id"] == ("FOODON:03315426")
     assert ingredients["Cysteine-HCl"]["term"]["id"] == "CHEBI:91247"
     assert trace_ingredients["NaOH"]["concentration"] == {
         "value": "variable",
@@ -127,19 +122,20 @@ def test_repair_document_adds_reference_and_event_once(repair_module) -> None:
     twice = repair_module.repair_document(once)
 
     assert twice["references"] == [{"reference": repair_module.NBRC_URL}]
-    assert repair_module._solution_signatures(twice) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
+    assert repair_module._solution_signatures(twice) == (repair_module.FINAL_SOLUTION_SIGNATURES)
+    assert (
+        len(
+            [
+                event
+                for event in twice["curation_history"]
+                if (
+                    event.get("curator") == repair_module.CURATOR
+                    and event.get("action") == repair_module.ACTION
+                )
+            ]
+        )
+        == 1
     )
-    assert len(
-        [
-            event
-            for event in twice["curation_history"]
-            if (
-                event.get("curator") == repair_module.CURATOR
-                and event.get("action") == repair_module.ACTION
-            )
-        ]
-    ) == 1
 
 
 def test_repair_document_rejects_wrong_id(repair_module) -> None:
@@ -191,10 +187,9 @@ def test_target_record_matches_nbrc_1086_repair_contract(repair_module) -> None:
 
     assert doc["id"] == repair_module.TARGET_ID
     assert doc["name"] in {"1091", repair_module.TITLE}
-    assert repair_module._signature(
-        doc["ingredients"], "ingredients"
-    ) == repair_module.IMPORTED_INGREDIENT_SIGNATURE
-    assert repair_module._solution_signatures(repaired) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._signature(doc["ingredients"], "ingredients")
+        == repair_module.IMPORTED_INGREDIENT_SIGNATURE
     )
+    assert repair_module._solution_signatures(repaired) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     assert repaired["media_term"]["term"]["id"] == "nbrc.medium:1086"

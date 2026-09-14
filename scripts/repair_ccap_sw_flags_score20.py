@@ -80,9 +80,7 @@ def _require_reviewed_sw_record(
     expected_ingredients: tuple[str, ...],
 ) -> None:
     if doc.get("id") != expected_id:
-        raise ValueError(
-            f"{relative_path}: expected id {expected_id}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{relative_path}: expected id {expected_id}, found {doc.get('id')!r}")
     if not _has_source_repair(doc):
         raise ValueError(f"{relative_path}: missing reviewed CCAP PDF repair event")
 

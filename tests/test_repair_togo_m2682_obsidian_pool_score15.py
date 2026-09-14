@@ -81,12 +81,18 @@ def test_repair_corrects_stock_units_and_nests_mixed_stock(
     ingredients = _by_name(repaired["ingredients"])
     solutions = _by_name(repaired["solutions"])
 
-    assert repair_module._ingredient_signature(
-        repaired["ingredients"],
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._solution_signatures(
-        repaired["solutions"],
-    ) == repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._ingredient_signature(
+            repaired["ingredients"],
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
+    assert (
+        repair_module._solution_signatures(
+            repaired["solutions"],
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURES
+    )
 
     assert ingredients["Na2MoO4 x 2 H2O"]["concentration"] == {
         "value": "0.03",
@@ -97,15 +103,14 @@ def test_repair_corrects_stock_units_and_nests_mixed_stock(
         "unit": "MG_PER_L",
     }
     assert "LiCl/Na2WO4/NaSeO3/Ni(NH4)2(SO4) (1 mg/ml each)" not in ingredients
-    assert _by_name(
-        solutions["LiCl/Na2WO4/NaSeO3/Ni(NH4)2(SO4) stock"]["composition"]
-    )["LiCl"]["concentration"] == {
+    assert _by_name(solutions["LiCl/Na2WO4/NaSeO3/Ni(NH4)2(SO4) stock"]["composition"])["LiCl"][
+        "concentration"
+    ] == {
         "value": "1.0",
         "unit": "G_PER_L",
     }
-    assert (
-        "Distilled water"
-        not in _by_name(solutions["LiCl/Na2WO4/NaSeO3/Ni(NH4)2(SO4) stock"]["composition"])
+    assert "Distilled water" not in _by_name(
+        solutions["LiCl/Na2WO4/NaSeO3/Ni(NH4)2(SO4) stock"]["composition"]
     )
 
 

@@ -475,7 +475,8 @@ def repair_auto_parent(doc: dict[str, Any]) -> dict[str, Any]:
 def plan_repairs(normalized: Path = NORMALIZED) -> dict[Path, dict[str, Any]]:
     return {
         normalized / TAP_AUTO: repair_auto_parent(_load(normalized / TAP_AUTO)),
-        normalized / TAP_HETERO_MIXO: repair_record(
+        normalized
+        / TAP_HETERO_MIXO: repair_record(
             _load(normalized / TAP_HETERO_MIXO),
             HETERO_SPEC,
         ),

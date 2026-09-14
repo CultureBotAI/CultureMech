@@ -43,8 +43,7 @@ def _doc(target, *, name: str = "cys_medium") -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "LIQUID",
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_signature
+            _ingredient(name, value, unit) for name, value, unit in target.imported_signature
         ],
         "media_term": {
             "preferred_term": "source medium",
@@ -74,10 +73,13 @@ def test_repair_base_togo_record_corrects_stocks_and_parentage(
     ingredients = _by_name(repaired["ingredients"])
     solutions = _by_name(repaired["solutions"])
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.BASE_FINAL
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.BASE_FINAL
+    )
     assert repaired["ph_value"] == 7.5
     assert ingredients["Distilled water"]["concentration"] == {
         "value": "900.0",
@@ -102,10 +104,13 @@ def test_repair_ymo722_togo_record_links_jcm_619_duplicate(
     repaired = repair_module.repair_record(_doc(target, name="cys_medium_for_ymo722"), target)
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.SALINITY_FINAL
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.SALINITY_FINAL
+    )
     assert ingredients["NaCl"]["concentration"]["value"] == "16.0"
     assert repaired["parent_media"] == repair_module.TOGO_M628_PARENT
     assert repaired["variant_relationship"] == "SOURCE_DUPLICATE"
@@ -157,10 +162,7 @@ def test_repair_inlines_trace_stock_compositions(repair_module) -> None:
         "preferred_term": "Na2MoO4 x 2 H2O",
         "concentration": {"value": "12.0", "unit": "G_PER_L"},
         "source": "TOGO M627 / JCM Medium 618",
-        "notes": (
-            "Na2MoO4 x 2 H2O stock is represented as a 12.0 g/L Na2MoO4 x "
-            "2 H2O stock."
-        ),
+        "notes": ("Na2MoO4 x 2 H2O stock is represented as a 12.0 g/L Na2MoO4 x " "2 H2O stock."),
         "term": {"id": "CHEBI:75213", "label": "sodium molybdate dihydrate"},
         "mediaingredientmech_chebi_term": {
             "id": "CHEBI:75213",
@@ -199,10 +201,7 @@ def test_repair_adds_sterilization_references_flags_and_events(
     matching_events = [
         event
         for event in repaired["curation_history"]
-        if (
-            event.get("curator") == repair_module.CURATOR
-            and event.get("action") == target.action
-        )
+        if (event.get("curator") == repair_module.CURATOR and event.get("action") == target.action)
     ]
     assert len(matching_events) == 1
     assert "100 uL trace-metal additions" in matching_events[0]["notes"]

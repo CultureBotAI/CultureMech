@@ -113,10 +113,7 @@ def test_repair_jcm_adds_water_and_autoclave(repair_module, scorer_module) -> No
             "description": "Autoclave at 121 C for 15 min.",
         },
     ]
-    assert scorer_module.score_record(repaired)[1] == [
-        "only 1/3 composition components grounded",
-        "no pH and no temperature",
-    ]
+    assert scorer_module.score_record(repaired)[1] == ["no pH and no temperature"]
 
 
 def test_repair_removes_false_agar_grounding(repair_module) -> None:
@@ -151,10 +148,7 @@ def test_repair_togo_normalizes_water_unit_and_links_parent(
     }
     assert repaired["parent_media"] == repair_module.JCM_PARENT
     assert repaired["variant_relationship"] == "SOURCE_DUPLICATE"
-    assert scorer_module.score_record(repaired)[1] == [
-        "only 1/3 composition components grounded",
-        "no pH and no temperature",
-    ]
+    assert scorer_module.score_record(repaired)[1] == ["no pH and no temperature"]
 
 
 def test_repair_adds_flags_references_history_and_duplicate_child(
@@ -227,9 +221,7 @@ def test_target_records_are_expected_jcm_119_recipes(repair_module) -> None:
     expected_names = [row["preferred_term"] for row in repair_module.INGREDIENTS]
 
     for target in repair_module.TARGETS:
-        doc = yaml.safe_load(
-            (repair_module.NORMALIZED / target.path).read_text(encoding="utf-8")
-        )
+        doc = yaml.safe_load((repair_module.NORMALIZED / target.path).read_text(encoding="utf-8"))
         repaired = repair_module.repair_document(doc, target)
 
         assert doc["id"] == repair_module.EXPECTED_IDS[target.path]

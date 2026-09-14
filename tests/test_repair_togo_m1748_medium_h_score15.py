@@ -70,10 +70,13 @@ def test_repair_corrects_seawater_unit(
     repaired = repair_module.repair_record(_doc(repair_module))
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Seawater"]["concentration"] == {
         "value": "1.0",
         "unit": "L",
@@ -96,9 +99,7 @@ def test_repair_grounds_discrete_components(
         "id": "CHEBI:2509",
         "label": "agar",
     }
-    assert ingredients["Monosodium glutamate"][
-        "mediaingredientmech_chebi_term"
-    ] == {
+    assert ingredients["Monosodium glutamate"]["mediaingredientmech_chebi_term"] == {
         "id": "CHEBI:64220",
         "label": "monosodium glutamate",
     }

@@ -62,13 +62,9 @@ FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("Distilled water", "1000.0", "ML_PER_L"),
 )
 
-NALIDIXIC_SIGNATURE: tuple[Component, ...] = (
-    ("Nalidixic acid", "100.0", "MG_PER_ML"),
-)
+NALIDIXIC_SIGNATURE: tuple[Component, ...] = (("Nalidixic acid", "100.0", "MG_PER_ML"),)
 
-KANAMYCIN_SIGNATURE: tuple[Component, ...] = (
-    ("Kanamycin", "25.0", "MG_PER_ML"),
-)
+KANAMYCIN_SIGNATURE: tuple[Component, ...] = (("Kanamycin", "25.0", "MG_PER_ML"),)
 
 IMPORTED_SOLUTION_SIGNATURES: tuple[SolutionSignature, ...] = (
     ("Kanamycin solution (25 mg/ml)*", "1", "G_PER_L", ()),
@@ -284,8 +280,7 @@ def _ingredients() -> list[dict[str, Any]]:
             "15.0",
             "G_PER_L",
             notes=(
-                f"{SOURCE} lists 15 g/L Agar if needed; retained for the "
-                "solid agar preparation."
+                f"{SOURCE} lists 15 g/L Agar if needed; retained for the " "solid agar preparation."
             ),
             physicochemical_roles=("SOLIDIFYING_AGENT",),
         ),
@@ -317,8 +312,7 @@ def _stock_solution(
                 value,
                 "MG_PER_ML",
                 notes=(
-                    f"NBRC Medium 1314 specifies this stock as {value} mg/ml "
-                    f"{chemical_label}."
+                    f"NBRC Medium 1314 specifies this stock as {value} mg/ml " f"{chemical_label}."
                 ),
             )
         ],
@@ -345,9 +339,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -538,10 +530,7 @@ def repair_parent(doc: dict[str, Any]) -> dict[str, Any]:
     _append_event(
         repaired,
         action=LINK_ACTION,
-        notes=(
-            "Linked TOGO M2023 / NBRC Medium 1314 as a supplemented variant "
-            "of AM3 medium."
-        ),
+        notes=("Linked TOGO M2023 / NBRC Medium 1314 as a supplemented variant " "of AM3 medium."),
     )
     return repaired
 

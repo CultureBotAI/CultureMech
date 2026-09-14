@@ -161,8 +161,7 @@ def test_me_agar_adds_water_and_preserves_opaque_oxoid_product(
             "concentration": {"value": "50", "unit": "G_PER_L"},
             "source": "TOGO M250/JCM Medium 258 snapshot",
             "notes": (
-                "TOGO M250 snapshots JCM_M258 and lists 50 g/L Malt extract "
-                "agar from Oxoid."
+                "TOGO M250 snapshots JCM_M258 and lists 50 g/L Malt extract " "agar from Oxoid."
             ),
         },
     ]
@@ -195,8 +194,7 @@ def test_thioglycollate_restores_undefined_semisolid_product(
         "concentration": {"value": "29.8", "unit": "G_PER_L"},
         "source": "TOGO M530/JCM Medium 529 snapshot",
         "notes": (
-            "TOGO M530 snapshots JCM_M529 and lists 29.8 g/L "
-            "Thioglycollate medium from Sigma."
+            "TOGO M530 snapshots JCM_M529 and lists 29.8 g/L " "Thioglycollate medium from Sigma."
         ),
     }
     assert "preparation_steps" not in repaired
@@ -250,12 +248,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(root)
 
     assert {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(root): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(root): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:

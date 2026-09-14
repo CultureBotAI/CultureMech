@@ -160,19 +160,14 @@ def test_repair_adds_flags_references_and_event_once(repair_module) -> None:
         )
     ]
     assert len(matching_events) == 1
-    assert "Removed a false kg_microbe_match" in (
-        matching_events[0]["notes"]
-    )
+    assert "Removed a false kg_microbe_match" in (matching_events[0]["notes"])
 
 
 def test_plan_repairs_targets_both_records(repair_module) -> None:
     assert repair_module.plan_repairs() == {
-        repair_module.NORMALIZED / target.path: repair_module.repair_record(
-            yaml.safe_load(
-                (repair_module.NORMALIZED / target.path).read_text(
-                    encoding="utf-8"
-                )
-            ),
+        repair_module.NORMALIZED
+        / target.path: repair_module.repair_record(
+            yaml.safe_load((repair_module.NORMALIZED / target.path).read_text(encoding="utf-8")),
             target,
         )
         for target in repair_module.TARGETS

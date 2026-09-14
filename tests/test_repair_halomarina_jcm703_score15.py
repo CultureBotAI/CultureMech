@@ -106,9 +106,7 @@ def test_jcm703_expands_recovered_jcm_stocks(
     repair_module,
     scorer_module,
 ) -> None:
-    target = repair_module.TARGET_BY_PATH[
-        "archaea/methanobacterium_medium_ii_with_formae.yaml"
-    ]
+    target = repair_module.TARGET_BY_PATH["archaea/methanobacterium_medium_ii_with_formae.yaml"]
     repaired = repair_module.repair_record(_doc(target), target)
 
     assert repaired["ph_value"] == 7.0
@@ -130,9 +128,7 @@ def test_jcm703_expands_recovered_jcm_stocks(
 
 
 def test_jcm703_inlines_m142_and_m190_solution_components(repair_module) -> None:
-    target = repair_module.TARGET_BY_PATH[
-        "archaea/methanobacterium_medium_ii_with_formae.yaml"
-    ]
+    target = repair_module.TARGET_BY_PATH["archaea/methanobacterium_medium_ii_with_formae.yaml"]
     repaired = repair_module.repair_record(_doc(target), target)
 
     trace_minerals = _solution(repaired, "Trace minerals (TOGO Medium M142)")
@@ -151,9 +147,7 @@ def test_jcm703_inlines_m142_and_m190_solution_components(repair_module) -> None
 
 
 def test_jcm703_inlines_direct_stock_solution_components(repair_module) -> None:
-    target = repair_module.TARGET_BY_PATH[
-        "archaea/methanobacterium_medium_ii_with_formae.yaml"
-    ]
+    target = repair_module.TARGET_BY_PATH["archaea/methanobacterium_medium_ii_with_formae.yaml"]
     repaired = repair_module.repair_record(_doc(target), target)
 
     bicarbonate = _solution(repaired, "8% NaHCO3 solution")
@@ -163,10 +157,7 @@ def test_jcm703_inlines_direct_stock_solution_components(repair_module) -> None:
             "preferred_term": "NaHCO3",
             "concentration": {"value": "80", "unit": "G_PER_L"},
             "source": repair_module.SOURCE_JCM_703,
-            "notes": (
-                "JCM Medium 703 / TOGO M725 prints this component in its "
-                "stock solution."
-            ),
+            "notes": ("JCM Medium 703 / TOGO M725 prints this component in its " "stock solution."),
             "term": {
                 "id": "CHEBI:32139",
                 "label": "sodium hydrogencarbonate",
@@ -230,12 +221,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(tmp_path)
 
     assert {
-        path.relative_to(tmp_path): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(tmp_path): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(tmp_path): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(tmp_path): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:

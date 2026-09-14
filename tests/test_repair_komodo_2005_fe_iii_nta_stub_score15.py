@@ -68,9 +68,10 @@ def test_repaired_solution_leaves_review_need_ranking(
 ):
     repaired = repair_module.repair_record(original_doc)
 
-    assert scorer_module.score_parsed(
-        [("bacterial/fe_iii_nta_solution_medium_1001.yaml", repaired)]
-    ) == []
+    assert (
+        scorer_module.score_parsed([("bacterial/fe_iii_nta_solution_medium_1001.yaml", repaired)])
+        == []
+    )
 
 
 def test_repair_guards_target_identity(repair_module, original_doc):

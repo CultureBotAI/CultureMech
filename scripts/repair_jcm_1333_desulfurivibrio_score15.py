@@ -182,8 +182,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
         "Se/W solution (JCM Medium 852)",
         "1.0",
         notes=(
-            "JCM Medium 1333 adds 1.0 ml/L filter-sterilized Se/W solution "
-            "from JCM Medium 852."
+            "JCM Medium 1333 adds 1.0 ml/L filter-sterilized Se/W solution " "from JCM Medium 852."
         ),
         source=f"{SOURCE} / JCM Medium 852",
     ),
@@ -191,8 +190,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
         "Trace vitamins (JCM Medium 197)",
         "1.0",
         notes=(
-            "JCM Medium 1333 adds 1.0 ml/L filter-sterilized Trace vitamins "
-            "from JCM Medium 197."
+            "JCM Medium 1333 adds 1.0 ml/L filter-sterilized Trace vitamins " "from JCM Medium 197."
         ),
         source=f"{SOURCE} / JCM Medium 197",
     ),

@@ -37,10 +37,7 @@ def _doc(repair, path: str) -> dict:
         ingredients = [{"preferred_term": "Agar"}]
     else:
         update = repair.CHILD_BY_PATH[path]
-        ingredients = [
-            {"preferred_term": name}
-            for name in update.accepted_signatures[0]
-        ]
+        ingredients = [{"preferred_term": name} for name in update.accepted_signatures[0]]
 
     return {
         "id": repair.EXPECTED_IDS[path],
@@ -77,9 +74,7 @@ def test_repair_j117_models_catalase_as_filtered_supplement(
         {
             "preferred_term": "R agar",
             "concentration": {"value": "1000", "unit": "ML_PER_L"},
-            "notes": (
-                "TOGO M109 maps JCM Medium 117 to 1 L of JCM Medium 26 R Agar."
-            ),
+            "notes": ("TOGO M109 maps JCM Medium 117 to 1 L of JCM Medium 26 R Agar."),
             "culturemech_term": {
                 "id": repair_module.EXPECTED_IDS[repair_module.R_AGAR_PARENT],
                 "label": "R Agar",
@@ -118,9 +113,7 @@ def test_repair_j863_models_isp4_as_salt_variant(
         {
             "preferred_term": "Inorganic Salts-Starch Agar (ISP-4)",
             "concentration": {"value": "1000", "unit": "ML_PER_L"},
-            "notes": (
-                "TOGO M900 maps JCM Medium 863 to 1 L of JCM Medium 58 ISP-4."
-            ),
+            "notes": ("TOGO M900 maps JCM Medium 863 to 1 L of JCM Medium 58 ISP-4."),
             "culturemech_term": {
                 "id": repair_module.EXPECTED_IDS[repair_module.ISP4_PARENT],
                 "label": "Inorganic Salts-Starch Agar (ISP-4)",
@@ -157,13 +150,11 @@ def test_plan_adds_both_parent_links(repair_module, tmp_path: Path) -> None:
 
     assert second == first
     assert {
-        row["path"]
-        for row in first[root / repair_module.R_AGAR_PARENT]["variant_children"]
+        row["path"] for row in first[root / repair_module.R_AGAR_PARENT]["variant_children"]
     } == {f"data/normalized_yaml/{repair_module.R_AGAR_CATALASE}"}
-    assert {
-        row["path"]
-        for row in first[root / repair_module.ISP4_PARENT]["variant_children"]
-    } == {f"data/normalized_yaml/{repair_module.ISP4_15_NACL}"}
+    assert {row["path"] for row in first[root / repair_module.ISP4_PARENT]["variant_children"]} == {
+        f"data/normalized_yaml/{repair_module.ISP4_15_NACL}"
+    }
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:

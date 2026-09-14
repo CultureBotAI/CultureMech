@@ -103,9 +103,9 @@ def test_plan_repairs_finds_current_sag_cohort(repair_module) -> None:
 
 def test_repair_rejects_mismatched_pdf(repair_module) -> None:
     doc = _doc()
-    doc["references"][1]["reference"] = (
-        "http://sagdb.uni-goettingen.de/culture_media/Other Medium.pdf"
-    )
+    doc["references"][1][
+        "reference"
+    ] = "http://sagdb.uni-goettingen.de/culture_media/Other Medium.pdf"
 
     with pytest.raises(ValueError, match="does not match sag-import"):
         repair_module.repair_record(Path("algae/test_medium.yaml"), doc)

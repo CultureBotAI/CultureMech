@@ -117,12 +117,14 @@ def test_repair_corrects_volume_rows_and_adds_fe_citrate_stock(
     assert repaired["composition_type"] == "UNDEFINED"
     assert repaired["physical_state"] == "LIQUID"
     assert repaired["ph_value"] == 7.5
-    assert repair_module._component_signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._solution_signature(
-        repaired["solutions"]
-    ) == repair_module.FINAL_SOLUTION_SIGNATURE
+    assert (
+        repair_module._component_signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
+    assert (
+        repair_module._solution_signature(repaired["solutions"])
+        == repair_module.FINAL_SOLUTION_SIGNATURE
+    )
     assert ingredients["Artificial seawater"]["concentration"] == {
         "value": "700.0",
         "unit": "ML_PER_L",
@@ -176,9 +178,7 @@ def test_repair_keeps_artificial_seawater_unmapped(repair_module) -> None:
 
     assert "term" not in artificial_seawater
     assert "mediaingredientmech_chebi_term" not in artificial_seawater
-    assert "retained without a single-compound ontology grounding" in artificial_seawater[
-        "notes"
-    ]
+    assert "retained without a single-compound ontology grounding" in artificial_seawater["notes"]
 
 
 def test_repair_adds_ph_adjustment_without_inventing_sterilization(
@@ -218,9 +218,12 @@ def test_repair_record_drops_out_of_review_and_concentration_reports(
 
     assert scorer_module.score_record(repaired) == (0, [])
     assert scorer_module.score_parsed([(str(repair_module.TARGET), repaired)]) == []
-    assert concentration_module.audit_parsed(
-        [(repair_module.NORMALIZED / repair_module.TARGET, repaired)]
-    ) == []
+    assert (
+        concentration_module.audit_parsed(
+            [(repair_module.NORMALIZED / repair_module.TARGET, repaired)]
+        )
+        == []
+    )
     assert repaired["data_quality_flags"] == [
         "has_ontology_mappings",
         "has_unmapped_ingredients",
@@ -232,9 +235,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_target(_doc(repair_module))
     twice = repair_module.repair_target(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]
@@ -254,8 +255,7 @@ def test_repair_parent_adds_togo_child_once(repair_module) -> None:
     assert twice["variant_children"] == [
         {
             "path": (
-                "data/normalized_yaml/bacterial/"
-                "KOMODO_695_medium_FOR_ERYTHROBACTER_LONGUS.yaml"
+                "data/normalized_yaml/bacterial/" "KOMODO_695_medium_FOR_ERYTHROBACTER_LONGUS.yaml"
             ),
             "relationship": "SOURCE_DUPLICATE",
             "id": "CultureMech:006313",

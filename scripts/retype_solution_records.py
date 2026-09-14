@@ -118,11 +118,13 @@ def stamp(path: Path, doc: dict[str, Any]) -> bool:
     if re.search(r"^record_kind:", text, re.M):
         return False
     # After `category:` when present, else at the top — the id must stay first.
-    new, n = re.subn(r"^(category:.*)$", rf"\1\nrecord_kind: {RECORD_KIND_SOLUTION}",
-                     text, count=1, flags=re.M)
+    new, n = re.subn(
+        r"^(category:.*)$", rf"\1\nrecord_kind: {RECORD_KIND_SOLUTION}", text, count=1, flags=re.M
+    )
     if not n:
-        new, n = re.subn(r"^(id:.*)$", rf"\1\nrecord_kind: {RECORD_KIND_SOLUTION}",
-                         text, count=1, flags=re.M)
+        new, n = re.subn(
+            r"^(id:.*)$", rf"\1\nrecord_kind: {RECORD_KIND_SOLUTION}", text, count=1, flags=re.M
+        )
     if not n:
         return False
     path.write_text(new)
@@ -130,18 +132,22 @@ def stamp(path: Path, doc: dict[str, Any]) -> bool:
 
 
 def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description=__doc__,
-                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     ap.add_argument("--normalized-dir", type=Path, default=NORMALIZED)
-    ap.add_argument("--apply", action="store_true",
-                    help="Write record_kind: SOLUTION. Default is report-only.")
+    ap.add_argument(
+        "--apply", action="store_true", help="Write record_kind: SOLUTION. Default is report-only."
+    )
     args = ap.parse_args(argv)
 
     found = candidates(args.normalized_dir)
     print(f"Stock solutions imported as media records: {len(found)}\n")
     for path, doc in found[:25]:
-        print(f"  {str(path.relative_to(args.normalized_dir))[:50]:52s} "
-              f"{str(doc.get('original_name') or '')[:40]}")
+        print(
+            f"  {str(path.relative_to(args.normalized_dir))[:50]:52s} "
+            f"{str(doc.get('original_name') or '')[:40]}"
+        )
     if len(found) > 25:
         print(f"  ... and {len(found) - 25} more")
 

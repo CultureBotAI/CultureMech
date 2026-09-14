@@ -181,8 +181,7 @@ def _parent_ref(child: Child) -> dict[str, str]:
         "id": PARENT_ID,
         "name": PARENT_NAME,
         "notes": (
-            "KOMODO Medium 874 is the FERROPLASMA ACIDIPHILUM base for "
-            f"{child.source_label}."
+            "KOMODO Medium 874 is the FERROPLASMA ACIDIPHILUM base for " f"{child.source_label}."
         ),
     }
 

@@ -88,9 +88,7 @@ def _check_target(doc: dict[str, Any], target: Target) -> None:
         raise ValueError(f"{target.path}: missing media_term")
     term = media_term.get("term")
     if not isinstance(term, dict) or term.get("id") != target.expected_media_term:
-        raise ValueError(
-            f"{target.path}: missing expected media term {target.expected_media_term}"
-        )
+        raise ValueError(f"{target.path}: missing expected media term {target.expected_media_term}")
 
     compact_ingredients = [
         {

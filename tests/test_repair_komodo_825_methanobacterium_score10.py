@@ -82,32 +82,31 @@ def test_parent_lists_exact_signature_children(repair_module) -> None:
     assert "ingredients_curated" in repaired["data_quality_flags"]
     assert repaired["variant_children"] == [
         repair_module._source_duplicate_entry(),
-        *[
-            repair_module._strain_child_entry(child)
-            for child in repair_module.STRAIN_CHILDREN
-        ],
+        *[repair_module._strain_child_entry(child) for child in repair_module.STRAIN_CHILDREN],
     ]
 
 
 def test_repair_is_idempotent(repair_module) -> None:
     once = repair_module.plan_repairs()
     twice = {
-        path: repair_module.repair_parent(doc)
-        if path == repair_module.NORMALIZED / repair_module.PARENT
-        else repair_module.repair_source_duplicate(doc)
-        if path == repair_module.NORMALIZED / repair_module.SOURCE_DUPLICATE.path
-        else repair_module.repair_strain_child(
-            path.relative_to(repair_module.NORMALIZED),
-            doc,
+        path: (
+            repair_module.repair_parent(doc)
+            if path == repair_module.NORMALIZED / repair_module.PARENT
+            else (
+                repair_module.repair_source_duplicate(doc)
+                if path == repair_module.NORMALIZED / repair_module.SOURCE_DUPLICATE.path
+                else repair_module.repair_strain_child(
+                    path.relative_to(repair_module.NORMALIZED),
+                    doc,
+                )
+            )
         )
         for path, doc in once.items()
     }
 
     assert twice == once
     for path in once:
-        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(
-            once[path]
-        )
+        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(once[path])
 
 
 def test_plan_repairs_targets_current_records(repair_module) -> None:

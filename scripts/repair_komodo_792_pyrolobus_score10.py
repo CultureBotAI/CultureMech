@@ -90,10 +90,7 @@ CHILDREN = (
         "komodo.medium:792.1",
         "KOMODO Medium 792.1",
         STRAIN_RELATIONSHIP,
-        (
-            "KOMODO Medium 792.1 applies Pyrolobus fumarii medium to DSM 15698 "
-            "and DSM 24425."
-        ),
+        ("KOMODO Medium 792.1 applies Pyrolobus fumarii medium to DSM 15698 " "and DSM 24425."),
         BASE_SIGNATURE,
     ),
     Child(

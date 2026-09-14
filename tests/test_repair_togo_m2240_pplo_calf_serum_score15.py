@@ -76,10 +76,13 @@ def test_repair_corrects_percent_units_and_adds_ph(
     ingredients = _by_name(repaired["ingredients"])
 
     assert repaired["ph_value"] == 7.6
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Glucose"]["concentration"] == {
         "value": "0.2",
         "unit": "PERCENT_W_V",
@@ -124,9 +127,7 @@ def test_repair_grounds_only_defined_simple_components(
         assert "term" not in ingredients[name]
         assert "mediaingredientmech_chebi_term" not in ingredients[name]
 
-    assert "single-molecule ontology grounding" in ingredients[
-        "Tris-HC1 (pH 7.6)"
-    ]["notes"]
+    assert "single-molecule ontology grounding" in ingredients["Tris-HC1 (pH 7.6)"]["notes"]
     assert "opaque complex component" in ingredients["Calf serum (Gibco)"]["notes"]
 
 

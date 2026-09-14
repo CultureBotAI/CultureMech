@@ -76,10 +76,13 @@ def test_repair_inlines_empty_solution_stubs(
 
     assert "solutions" not in repaired
     assert repaired["ph_value"] == 10.0
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Na2CO3 solution"]["concentration"] == {
         "value": "100.0",
         "unit": "ML_PER_L",

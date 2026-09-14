@@ -77,8 +77,12 @@ class Target:
 
 
 COMMON_COMPONENTS: tuple[Component, ...] = (
-    Component("K2HPO4", "0.348", "G_PER_L", ("CHEBI:131527", "dipotassium hydrogen phosphate"), SOURCE_120),
-    Component("KH2PO4", "0.227", "G_PER_L", ("CHEBI:63036", "potassium dihydrogen phosphate"), SOURCE_120),
+    Component(
+        "K2HPO4", "0.348", "G_PER_L", ("CHEBI:131527", "dipotassium hydrogen phosphate"), SOURCE_120
+    ),
+    Component(
+        "KH2PO4", "0.227", "G_PER_L", ("CHEBI:63036", "potassium dihydrogen phosphate"), SOURCE_120
+    ),
     Component("NH4Cl", "0.500", "G_PER_L", ("CHEBI:31206", "ammonium chloride"), SOURCE_120),
     Component(
         "MgSO4 x 7 H2O",
@@ -187,10 +191,14 @@ COMMON_COMPONENTS: tuple[Component, ...] = (
         ("CHEBI:75213", "sodium molybdate dihydrate"),
         SOURCE_320,
     ),
-    Component("Yeast extract", "2.000", "G_PER_L", ("FOODON:03315426", "yeast extract"), SOURCE_120),
+    Component(
+        "Yeast extract", "2.000", "G_PER_L", ("FOODON:03315426", "yeast extract"), SOURCE_120
+    ),
     Component("Casitone", "2.000", "G_PER_L", None, SOURCE_120),
     Component("Resazurin", "0.001", "G_PER_L", ("CHEBI:8806", "Resazurin"), SOURCE_120),
-    Component("NaHCO3", "2.000", "G_PER_L", ("CHEBI:32139", "sodium hydrogencarbonate"), SOURCE_164),
+    Component(
+        "NaHCO3", "2.000", "G_PER_L", ("CHEBI:32139", "sodium hydrogencarbonate"), SOURCE_164
+    ),
     Component("Methanol", "10.000", "ML_PER_L", ("CHEBI:17790", "methanol"), SOURCE_120),
     Component(
         "Cysteine-HCl x H2O",
@@ -233,8 +241,7 @@ TARGETS: tuple[Target, ...] = (
         path=REPLACEMENT_TARGET,
         expected_id="CultureMech:004190",
         expected_media_term=(
-            "komodo.medium:164_replace_Rumen fluid, clarified_with_Sludge "
-            "fluid (medium 119)"
+            "komodo.medium:164_replace_Rumen fluid, clarified_with_Sludge " "fluid (medium 119)"
         ),
         source_name="DSMZ/KOMODO Medium 164 sludge variant",
         action="RESOLVED_KOMODO_164_SLUDGE_SCORE35",
@@ -274,9 +281,7 @@ def _check_source(doc: dict[str, Any], target: Target) -> None:
         raise ValueError(f"{target.path}: missing media_term")
     term = media_term.get("term")
     if not isinstance(term, dict) or term.get("id") != target.expected_media_term:
-        raise ValueError(
-            f"{target.path}: missing expected media term {target.expected_media_term}"
-        )
+        raise ValueError(f"{target.path}: missing expected media term {target.expected_media_term}")
 
 
 def _put_after(doc: dict[str, Any], key: str, value: Any, after: str) -> None:
@@ -400,9 +405,7 @@ def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
     repaired["medium_type"] = "COMPLEX"
     repaired["composition_type"] = "UNDEFINED"
     repaired["physical_state"] = "LIQUID"
-    repaired["ingredients"] = [
-        _ingredient(component, target) for component in target.components
-    ]
+    repaired["ingredients"] = [_ingredient(component, target) for component in target.components]
     _put_after(repaired, "notes", target.notes, "media_term")
     _ensure_flags(repaired)
     _ensure_references(repaired)

@@ -30,9 +30,7 @@ def test_rye_bran_mrs_uses_rye_bran_extract_as_solution() -> None:
     repaired = repair.repair_document(doc, togo_source)
 
     assert len(repaired["ingredients"]) == 2
-    assert _component(repaired["ingredients"], "Lactobacilli MRS broth")[
-        "culturemech_term"
-    ] == {
+    assert _component(repaired["ingredients"], "Lactobacilli MRS broth")["culturemech_term"] == {
         "id": "CultureMech:009017",
         "label": "Lactobacilli MRS Broth",
     }
@@ -53,9 +51,7 @@ def test_rye_bran_mrs_uses_rye_bran_extract_as_solution() -> None:
         "id": "CHEBI:9765",
         "label": "Trypsin",
     }
-    assert _component(rye_bran_extract["composition"], "Distilled water")[
-        "concentration"
-    ] == {
+    assert _component(rye_bran_extract["composition"], "Distilled water")["concentration"] == {
         "value": "1000",
         "unit": "ML_PER_L",
     }
@@ -72,9 +68,7 @@ def test_togo_m753_links_to_jcm_source_duplicate() -> None:
     repaired = repair.repair_togo_source_document(doc)
 
     assert len(repaired["ingredients"]) == 2
-    assert _component(repaired["ingredients"], "Lactobacilli MRS broth")[
-        "culturemech_term"
-    ] == {
+    assert _component(repaired["ingredients"], "Lactobacilli MRS broth")["culturemech_term"] == {
         "id": "CultureMech:009017",
         "label": "Lactobacilli MRS Broth",
     }

@@ -74,10 +74,13 @@ def test_repair_corrects_formula_units_and_ph(
     assert repaired["physical_state"] == "SOLID_AGAR"
     assert repaired["ph_value"] == 8.0
     assert "ph_range" not in repaired
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Distilled water"]["concentration"] == {
         "value": "1.0",
         "unit": "L",
@@ -125,9 +128,7 @@ def test_repair_adds_references_flags_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     assert twice["data_quality_flags"] == [
         "has_ontology_mappings",
         "has_unmapped_ingredients",

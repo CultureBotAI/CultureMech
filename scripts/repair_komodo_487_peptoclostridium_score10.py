@@ -205,10 +205,7 @@ def _parent_ref(child: Child) -> dict[str, str]:
         "relationship": child.relationship,
         "id": PARENT_ID,
         "name": PARENT_NAME,
-        "notes": (
-            "MediaDive Medium 487 is the DSMZ PEPTOCLOSTRIDIUM MEDIUM "
-            "(BETAINE) base."
-        ),
+        "notes": ("MediaDive Medium 487 is the DSMZ PEPTOCLOSTRIDIUM MEDIUM " "(BETAINE) base."),
     }
 
 
@@ -247,10 +244,7 @@ def repair_parent(doc: dict[str, Any]) -> dict[str, Any]:
             "timestamp": TIMESTAMP,
             "curator": CURATOR,
             "action": ACTION,
-            "changes": (
-                "Promoted MediaDive Medium 487 to the Peptoclostridium family "
-                "parent"
-            ),
+            "changes": ("Promoted MediaDive Medium 487 to the Peptoclostridium family " "parent"),
             "source": "MediaDive Medium 487 and KOMODO Medium 487-487.1",
             "notes": (
                 "Moved the family root from strain-specific KOMODO Medium "

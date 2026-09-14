@@ -180,8 +180,7 @@ def _component(target: Target, preferred_term: str, value: str, unit: str) -> di
         )
     else:
         row["notes"] = (
-            f"{target.source} lists {value} {'L' if unit == 'L' else 'g/L'} "
-            f"{preferred_term}."
+            f"{target.source} lists {value} {'L' if unit == 'L' else 'g/L'} " f"{preferred_term}."
         )
         row["term"] = _term(*GROUNDINGS[preferred_term])
         row["mediaingredientmech_chebi_term"] = copy.deepcopy(row["term"])
@@ -206,9 +205,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -235,9 +232,7 @@ def _ensure_target(doc: dict[str, Any], target: Target) -> None:
             f"{target.path}: expected id {target.expected_id}, found {doc.get('id')!r}"
         )
     if _source_term_id(doc) != target.expected_media_term:
-        raise ValueError(
-            f"{target.path}: expected media term {target.expected_media_term}"
-        )
+        raise ValueError(f"{target.path}: expected media term {target.expected_media_term}")
 
     ingredient_signature = _signature(doc.get("ingredients"), "ingredients")
     if ingredient_signature not in (target.imported_signature, target.final_signature):

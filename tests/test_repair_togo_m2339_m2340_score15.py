@@ -45,8 +45,7 @@ def _doc(target) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "SOLID_AGAR",
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_signature
+            _ingredient(name, value, unit) for name, value, unit in target.imported_signature
         ],
         "media_term": {
             "preferred_term": f"TOGO Medium {target.expected_media_term.removeprefix('TOGO:')}",
@@ -219,20 +218,12 @@ def test_repair_links_targets_to_dsmz_parent(repair_module) -> None:
         repair_module.TARGET_M2340,
     )
 
-    assert m2339["parent_media"] == repair_module._parent_media(
-        repair_module.TARGET_M2339
-    )
+    assert m2339["parent_media"] == repair_module._parent_media(repair_module.TARGET_M2339)
     assert m2339["variant_relationship"] == "SOURCE_DUPLICATE"
-    assert m2339["variant_modifications"] == [
-        repair_module.TARGET_M2339.variant_modification
-    ]
-    assert m2340["parent_media"] == repair_module._parent_media(
-        repair_module.TARGET_M2340
-    )
+    assert m2339["variant_modifications"] == [repair_module.TARGET_M2339.variant_modification]
+    assert m2340["parent_media"] == repair_module._parent_media(repair_module.TARGET_M2340)
     assert m2340["variant_relationship"] == "SUPPLEMENTED_VARIANT"
-    assert m2340["variant_modifications"] == [
-        repair_module.TARGET_M2340.variant_modification
-    ]
+    assert m2340["variant_modifications"] == [repair_module.TARGET_M2340.variant_modification]
 
 
 def test_repair_record_drops_out_of_review_ranking(
@@ -256,9 +247,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_target(_doc(target), target)
     twice = repair_module.repair_target(once, target)
 
-    assert twice["references"] == [
-        {"reference": url} for url in target.reference_urls
-    ]
+    assert twice["references"] == [{"reference": url} for url in target.reference_urls]
     matching_events = [
         event
         for event in twice["curation_history"]

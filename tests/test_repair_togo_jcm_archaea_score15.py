@@ -77,11 +77,19 @@ def test_all_targets_score_below_review_threshold(repair_module, scorer_module) 
 
 def test_m1265_and_m1266_share_cellulolytic_stocks(repair_module) -> None:
     liquid = repair_module.repair_document(
-        _doc(repair_module.UPDATES["archaea/TOGO_M1265_Modified_Cellulolytic_Haloarchaea_Medium.yaml"]),
+        _doc(
+            repair_module.UPDATES[
+                "archaea/TOGO_M1265_Modified_Cellulolytic_Haloarchaea_Medium.yaml"
+            ]
+        ),
         repair_module.UPDATES["archaea/TOGO_M1265_Modified_Cellulolytic_Haloarchaea_Medium.yaml"],
     )
     solid = repair_module.repair_document(
-        _doc(repair_module.UPDATES["archaea/TOGO_M1266_Modified_Cellulolytic_Haloarchaea_Medium.yaml"]),
+        _doc(
+            repair_module.UPDATES[
+                "archaea/TOGO_M1266_Modified_Cellulolytic_Haloarchaea_Medium.yaml"
+            ]
+        ),
         repair_module.UPDATES["archaea/TOGO_M1266_Modified_Cellulolytic_Haloarchaea_Medium.yaml"],
     )
 
@@ -185,12 +193,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(tmp_path)
 
     assert {
-        path.relative_to(tmp_path): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(tmp_path): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(tmp_path): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(tmp_path): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:

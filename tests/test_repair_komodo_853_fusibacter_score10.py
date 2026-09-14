@@ -48,9 +48,7 @@ def test_strain_pointer_exits_review_ranking(repair_module, scorer_module) -> No
     ]
     assert "ingredients_curated" in repaired["data_quality_flags"]
     assert scorer_module.score_record(repaired) == (0, [])
-    assert scorer_module.score_parsed(
-        [(str(repair_module.STRAIN_CHILD.path), repaired)]
-    ) == []
+    assert scorer_module.score_parsed([(str(repair_module.STRAIN_CHILD.path), repaired)]) == []
 
 
 def test_parent_is_promoted_and_lists_expected_variants(repair_module) -> None:
@@ -78,34 +76,33 @@ def test_variants_link_to_parent(repair_module, variant) -> None:
 
     assert repaired["parent_media"]["relationship"] == variant.relationship
     assert repaired["variant_relationship"] == variant.relationship
-    assert repaired["variant_modifications"] == [
-        repair_module._variant_notes(variant)
-    ]
+    assert repaired["variant_modifications"] == [repair_module._variant_notes(variant)]
     assert "ingredients_curated" in repaired["data_quality_flags"]
 
 
 def test_repair_is_idempotent(repair_module) -> None:
     once = repair_module.plan_repairs()
     twice = {
-        path: repair_module.repair_parent(doc)
-        if path == repair_module.NORMALIZED / repair_module.PARENT
-        else repair_module.repair_variant(
-            path.relative_to(repair_module.NORMALIZED),
-            doc,
+        path: (
+            repair_module.repair_parent(doc)
+            if path == repair_module.NORMALIZED / repair_module.PARENT
+            else repair_module.repair_variant(
+                path.relative_to(repair_module.NORMALIZED),
+                doc,
+            )
         )
         for path, doc in once.items()
     }
 
     assert twice == once
     for path in once:
-        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(
-            once[path]
-        )
+        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(once[path])
 
 
 def test_plan_repairs_targets_current_records(repair_module) -> None:
     expected = {
-        repair_module.NORMALIZED / repair_module.PARENT: repair_module.repair_parent(
+        repair_module.NORMALIZED
+        / repair_module.PARENT: repair_module.repair_parent(
             _load_yaml(repair_module.NORMALIZED / repair_module.PARENT)
         )
     }

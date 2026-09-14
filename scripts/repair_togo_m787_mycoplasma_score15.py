@@ -59,9 +59,7 @@ TOGO_IMPORTED_INGREDIENTS: tuple[Component, ...] = (
     ("Horse serum (heat--inactivated)", "200", "G_PER_L"),
 )
 
-TOGO_IMPORTED_SOLUTIONS: tuple[Component, ...] = (
-    ("25% Yeast Extract Solution", "100", "G_PER_L"),
-)
+TOGO_IMPORTED_SOLUTIONS: tuple[Component, ...] = (("25% Yeast Extract Solution", "100", "G_PER_L"),)
 
 FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("Distilled water", "700.0", "ML_PER_L"),
@@ -124,10 +122,7 @@ PREPARATION_STEPS = [
     {
         "step_number": 1,
         "action": "MIX",
-        "description": (
-            "Dissolve Heart Infusion Broth and Agar in 700.0 ml/L "
-            "distilled water."
-        ),
+        "description": ("Dissolve Heart Infusion Broth and Agar in 700.0 ml/L " "distilled water."),
     },
     {
         "step_number": 2,
@@ -181,8 +176,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
 
     grounding = GROUNDINGS.get(preferred_term)
@@ -248,10 +242,7 @@ def _solutions(source: str) -> list[dict[str, Any]]:
                     "25.0",
                     "PERCENT_W_V",
                     source=source,
-                    notes=(
-                        f"{source} specifies 25% Yeast Extract Solution as "
-                        "25.0% w/v."
-                    ),
+                    notes=(f"{source} specifies 25% Yeast Extract Solution as " "25.0% w/v."),
                 )
             ],
         }
@@ -270,9 +261,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -295,9 +284,7 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected {target.record_id}, found {doc.get('id')}"
-        )
+        raise ValueError(f"{target.path}: expected {target.record_id}, found {doc.get('id')}")
     if _source_term_id(doc) != target.source_term:
         raise ValueError(f"{target.path}: expected media term {target.source_term}")
 
@@ -465,9 +452,7 @@ def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
         repaired.pop("variant_modifications", None)
 
     if target.variant_children:
-        repaired["variant_children"] = [
-            copy.deepcopy(child) for child in target.variant_children
-        ]
+        repaired["variant_children"] = [copy.deepcopy(child) for child in target.variant_children]
     else:
         repaired.pop("variant_children", None)
 

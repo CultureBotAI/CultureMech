@@ -110,7 +110,11 @@ FINAL_INGREDIENT_SIGNATURES: dict[Path, tuple[Component, ...]] = {
 
 INTERMEDIATE_INGREDIENT_SIGNATURES: dict[Path, tuple[Component, ...]] = {
     MEDIUM_1003_TARGET: tuple(
-        ("Se-acid", value, unit) if preferred_term == "Selenic acid" else (preferred_term, value, unit)
+        (
+            ("Se-acid", value, unit)
+            if preferred_term == "Selenic acid"
+            else (preferred_term, value, unit)
+        )
         for preferred_term, value, unit in FINAL_INGREDIENT_SIGNATURES[MEDIUM_1003_TARGET]
     ),
 }
@@ -248,7 +252,9 @@ def _term(identifier: str, label: str) -> dict[str, str]:
     return {"id": identifier, "label": label}
 
 
-def _component(target: Path, source: str, preferred_term: str, value: str, unit: str) -> dict[str, Any]:
+def _component(
+    target: Path, source: str, preferred_term: str, value: str, unit: str
+) -> dict[str, Any]:
     source_name = SOURCE_SPELLINGS.get((target, preferred_term), preferred_term)
     row: dict[str, Any] = {
         "preferred_term": preferred_term,

@@ -20,8 +20,7 @@ NORMALIZED = REPO / "data" / "normalized_yaml"
 YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 KOMODO_BASE_URL = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo="
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo="
 )
 DSMZ_285_URL = (
     "https://web.archive.org/web/20121030082653id_/"
@@ -437,9 +436,7 @@ def _check_source(doc: dict[str, Any], target: Target) -> None:
         raise ValueError(f"{target.path}: missing media_term")
     term = media_term.get("term")
     if not isinstance(term, dict) or term.get("id") != target.expected_media_term:
-        raise ValueError(
-            f"{target.path}: missing expected media term {target.expected_media_term}"
-        )
+        raise ValueError(f"{target.path}: missing expected media term {target.expected_media_term}")
 
 
 def _put_after(doc: dict[str, Any], key: str, value: Any, after: str) -> None:
@@ -546,9 +543,7 @@ def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
     repaired["composition_type"] = "UNDEFINED"
     repaired["physical_state"] = "LIQUID"
     _put_after(repaired, "ph_value", 7.2, "physical_state")
-    repaired["ingredients"] = [
-        _ingredient(component) for component in _components(target)
-    ]
+    repaired["ingredients"] = [_ingredient(component) for component in _components(target)]
     _put_after(repaired, "notes", target.notes, "media_term")
     _ensure_flags(repaired, target)
     _ensure_references(repaired, target)

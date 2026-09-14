@@ -45,10 +45,7 @@ def _doc(repair_module, target) -> dict:
         "medium_type": "COMPLEX",
         "composition_type": "UNDEFINED",
         "physical_state": "LIQUID",
-        "ingredients": [
-            _component(name, value, unit)
-            for name, value, unit in imported
-        ],
+        "ingredients": [_component(name, value, unit) for name, value, unit in imported],
         "media_term": {
             "preferred_term": f"TOGO Medium {target.expected_media_term[5:]}",
             "term": {
@@ -59,10 +56,7 @@ def _doc(repair_module, target) -> dict:
         "notes": "Source: TOGO",
         "applications": ["Microbial cultivation"],
         "curation_history": [],
-        "solutions": [
-            _component(name, value, unit)
-            for name, value, unit in imported_solutions
-        ],
+        "solutions": [_component(name, value, unit) for name, value, unit in imported_solutions],
     }
 
 
@@ -79,22 +73,29 @@ def test_base_repair_corrects_volume_units_and_moves_solutions(
     )
 
     assert repaired["ph_value"] == 7.0
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.BASE_FINAL_INGREDIENTS
-    assert repair_module._signature(
-        repaired["solutions"],
-        "solutions",
-    ) == repair_module.FINAL_SOLUTIONS
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.BASE_FINAL_INGREDIENTS
+    )
+    assert (
+        repair_module._signature(
+            repaired["solutions"],
+            "solutions",
+        )
+        == repair_module.FINAL_SOLUTIONS
+    )
     assert "N NaOH" not in _by_name(repaired["ingredients"])
     assert _by_name(repaired["solutions"])["N NaOH"]["concentration"] == {
         "value": "25.0",
         "unit": "ML_PER_L",
     }
-    assert _by_name(repaired["solutions"])["0.025% Resazurin solution"][
-        "concentration"
-    ] == {"value": "4.0", "unit": "ML_PER_L"}
+    assert _by_name(repaired["solutions"])["0.025% Resazurin solution"]["concentration"] == {
+        "value": "4.0",
+        "unit": "ML_PER_L",
+    }
 
 
 def test_glucose_repair_keeps_glucose_and_links_parent(repair_module) -> None:
@@ -103,10 +104,13 @@ def test_glucose_repair_keeps_glucose_and_links_parent(repair_module) -> None:
         repair_module.TARGETS[1],
     )
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.GLUCOSE_FINAL_INGREDIENTS
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.GLUCOSE_FINAL_INGREDIENTS
+    )
     assert _by_name(repaired["ingredients"])["Glucose"]["term"] == {
         "id": "CHEBI:17234",
         "label": "glucose",
@@ -188,9 +192,7 @@ def test_repair_adds_references_and_events_once(repair_module) -> None:
     once = repair_module.repair_target(_doc(repair_module, target), target)
     twice = repair_module.repair_target(once, target)
 
-    assert twice["references"] == [
-        {"reference": url} for url in target.references
-    ]
+    assert twice["references"] == [{"reference": url} for url in target.references]
     repair_events = [
         event
         for event in twice["curation_history"]

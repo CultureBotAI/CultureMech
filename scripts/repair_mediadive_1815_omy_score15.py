@@ -231,8 +231,7 @@ def _ensure_references(doc: dict[str, Any]) -> None:
         raise ValueError("references is not a list")
 
     if not any(
-        isinstance(row, dict) and row.get("reference") == MEDIADIVE_1815
-        for row in references
+        isinstance(row, dict) and row.get("reference") == MEDIADIVE_1815 for row in references
     ):
         references.append({"reference": MEDIADIVE_1815})
 

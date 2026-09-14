@@ -52,8 +52,7 @@ def _doc(repair_module, target) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "SOLID_AGAR",
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_signature
+            _ingredient(name, value, unit) for name, value, unit in target.imported_signature
         ],
         "media_term": {
             "preferred_term": str(target.path),
@@ -80,10 +79,13 @@ def test_repair_adds_jcm_water_and_corrects_horse_blood(
     repaired = repair_module.repair_record(_doc(repair_module, target), target)
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Horse blood"]["concentration"] == {
         "value": "50.0",
         "unit": "ML_PER_L",
@@ -185,9 +187,7 @@ def test_repair_adds_references_flags_and_events_once(repair_module) -> None:
         once = repair_module.repair_record(_doc(repair_module, target), target)
         twice = repair_module.repair_record(once, target)
 
-        assert twice["references"] == [
-            {"reference": reference} for reference in target.references
-        ]
+        assert twice["references"] == [{"reference": reference} for reference in target.references]
         assert twice["data_quality_flags"] == [
             "ingredients_curated",
             "has_ontology_mappings",

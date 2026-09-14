@@ -73,10 +73,13 @@ def test_repair_corrects_nbrc_order_units_and_ph(repair_module) -> None:
     assert repaired["physical_state"] == "SOLID_AGAR"
     assert repaired["ph_value"] == 7.0
     assert "ph_range" not in repaired
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
 
 
 def test_repair_grounds_source_stated_discrete_components(repair_module) -> None:
@@ -159,9 +162,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

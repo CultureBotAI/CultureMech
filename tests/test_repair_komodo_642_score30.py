@@ -102,10 +102,7 @@ def test_repair_record_expands_komodo_rcm_base(repair) -> None:
     repaired = repair.repair_record(_doc(repair))
 
     assert _ingredient(repaired, "Agar")["term"]["id"] == "CHEBI:2509"
-    assert (
-        _ingredient(repaired, "Cysteine hydrochloride")["term"]["id"]
-        == "CHEBI:91247"
-    )
+    assert _ingredient(repaired, "Cysteine hydrochloride")["term"]["id"] == "CHEBI:91247"
     assert _ingredient(repaired, "Lab-Lemco powder")["term"] == {
         "id": "FOODON:03302088",
         "label": "beef extract",

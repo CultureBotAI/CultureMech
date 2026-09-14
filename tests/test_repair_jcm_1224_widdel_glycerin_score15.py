@@ -95,7 +95,11 @@ def _parent_doc(repair_module) -> dict:
         "ingredients": [],
         "curation_history": [],
         "variant_children": [
-            {"id": "CultureMech:099999", "name": "unrelated", "path": "data/normalized_yaml/bacterial/x.yaml"}
+            {
+                "id": "CultureMech:099999",
+                "name": "unrelated",
+                "path": "data/normalized_yaml/bacterial/x.yaml",
+            }
         ],
     }
 
@@ -215,7 +219,11 @@ def test_repair_adds_child_reference_to_parent_idempotently(repair_module) -> No
 
     assert twice == once
     assert once["variant_children"] == [
-        {"id": "CultureMech:099999", "name": "unrelated", "path": "data/normalized_yaml/bacterial/x.yaml"},
+        {
+            "id": "CultureMech:099999",
+            "name": "unrelated",
+            "path": "data/normalized_yaml/bacterial/x.yaml",
+        },
         repair_module.CHILD_REFERENCE,
     ]
 

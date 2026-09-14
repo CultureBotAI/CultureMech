@@ -49,17 +49,12 @@ def _doc(target) -> dict:
         "medium_type": "DEFINED",
         "composition_type": "DEFINED",
         "physical_state": "LIQUID",
-        "notes": (
-            "pH buffer: KOH | Source: KOMODO ModelSEED | ID: 3029 | "
-            "SubMedium: Yes"
-        ),
+        "notes": ("pH buffer: KOH | Source: KOMODO ModelSEED | ID: 3029 | " "SubMedium: Yes"),
         "media_term": {
             "preferred_term": "KOMODO Medium",
             "term": {"id": target.media_term, "label": target.path.stem},
         },
-        "ingredients": [
-            _ingredient(name, value, unit) for name, value, unit in target.signature
-        ],
+        "ingredients": [_ingredient(name, value, unit) for name, value, unit in target.signature],
         "applications": ["Microbial cultivation"],
         "curation_history": [],
     }

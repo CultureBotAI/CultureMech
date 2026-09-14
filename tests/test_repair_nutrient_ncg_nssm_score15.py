@@ -185,9 +185,7 @@ def test_sporulation_corrects_water_and_manganese_units(repair_module) -> None:
         "unit": "MG_PER_L",
     }
     assert repaired["parent_media"] == repair_module.M2341_PARENT
-    assert repaired["variant_modifications"] == [
-        repair_module.M2341_MODIFICATION
-    ]
+    assert repaired["variant_modifications"] == [repair_module.M2341_MODIFICATION]
 
 
 def test_dsmz_605_adds_water_and_links_phosphate_variant(repair_module) -> None:
@@ -224,9 +222,7 @@ def test_dsmz_605a_repairs_dodecahydrate_and_keeps_parent_link(
         "unit": "L",
     }
     assert repaired["parent_media"] == repair_module.DSMZ_605A_PARENT
-    assert repaired["variant_modifications"] == [
-        repair_module.DSMZ_605A_MODIFICATION
-    ]
+    assert repaired["variant_modifications"] == [repair_module.DSMZ_605A_MODIFICATION]
 
 
 def test_m1186_repairs_solution_and_links_to_jcm_74(repair_module) -> None:
@@ -240,16 +236,13 @@ def test_m1186_repairs_solution_and_links_to_jcm_74(repair_module) -> None:
             "concentration": {"value": "1.0", "unit": "L"},
             "source": "TOGO M1186 / JCM Medium 1109",
             "notes": (
-                "TOGO M1186 and JCM Medium 1109 list 1.0 L Nutrient agar "
-                "from JCM Medium 74."
+                "TOGO M1186 and JCM Medium 1109 list 1.0 L Nutrient agar " "from JCM Medium 74."
             ),
             "composition": [],
         }
     ]
     assert repaired["parent_media"] == repair_module.JCM_1109_PARENT
-    assert repaired["variant_modifications"] == [
-        repair_module.JCM_1109_MODIFICATION
-    ]
+    assert repaired["variant_modifications"] == [repair_module.JCM_1109_MODIFICATION]
     assert parent["variant_children"][-1] == repair_module.JCM_1109_CHILD
     assert "kg_microbe_match" not in repaired
 
@@ -260,16 +253,11 @@ def test_repair_adds_references_and_events_once(repair_module) -> None:
     once = repair_module.repair_target(repair, _doc(repair))
     twice = repair_module.repair_target(repair, once)
 
-    assert twice["references"] == [
-        {"reference": reference} for reference in repair.references
-    ]
+    assert twice["references"] == [{"reference": reference} for reference in repair.references]
     matching_events = [
         event
         for event in twice["curation_history"]
-        if (
-            event.get("curator") == repair_module.CURATOR
-            and event.get("action") == repair.action
-        )
+        if (event.get("curator") == repair_module.CURATOR and event.get("action") == repair.action)
     ]
     assert len(matching_events) == 1
 
@@ -336,9 +324,7 @@ def test_repair_rejects_solution_drift(repair_module) -> None:
 
 def test_target_records_match_repair_contract(repair_module) -> None:
     for repair in repair_module.REPAIRS:
-        doc = yaml.safe_load(
-            (repair_module.NORMALIZED / repair.path).read_text(encoding="utf-8")
-        )
+        doc = yaml.safe_load((repair_module.NORMALIZED / repair.path).read_text(encoding="utf-8"))
 
         assert doc["id"] == repair.record_id
         assert repair_module._source_term_id(doc) == repair.source_term

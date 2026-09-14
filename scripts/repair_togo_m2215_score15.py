@@ -55,13 +55,9 @@ IMPORTED_SOLUTION_SIGNATURES: tuple[SolutionSignature, ...] = (
     ("IsoVitaleX solution (Becton Dickinson)", "5", "G_PER_L", ()),
 )
 
-PHENOL_RED_SIGNATURE: tuple[Component, ...] = (
-    ("Phenol red", "1.0", "PERCENT_W_V"),
-)
+PHENOL_RED_SIGNATURE: tuple[Component, ...] = (("Phenol red", "1.0", "PERCENT_W_V"),)
 
-GLUCOSE_SIGNATURE: tuple[Component, ...] = (
-    ("Glucose", "25.0", "PERCENT_W_V"),
-)
+GLUCOSE_SIGNATURE: tuple[Component, ...] = (("Glucose", "25.0", "PERCENT_W_V"),)
 
 FINAL_SOLUTION_SIGNATURES: tuple[SolutionSignature, ...] = (
     ("1% (w/v) Phenol red", "4.0", "ML_PER_L", PHENOL_RED_SIGNATURE),
@@ -249,9 +245,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

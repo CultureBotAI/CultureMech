@@ -269,7 +269,10 @@ def _ensure_target(doc: dict[str, Any]) -> None:
     if _source_term_id(doc) != EXPECTED_MEDIA_TERM:
         raise ValueError(f"{TARGET}: expected media term {EXPECTED_MEDIA_TERM}")
 
-    signature = (_component_signature(doc.get("ingredients")), _solution_signatures(doc.get("solutions")))
+    signature = (
+        _component_signature(doc.get("ingredients")),
+        _solution_signatures(doc.get("solutions")),
+    )
     if signature not in {
         (IMPORTED_INGREDIENT_SIGNATURE, ()),
         ((), FINAL_SOLUTION_SIGNATURES),

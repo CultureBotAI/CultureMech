@@ -101,9 +101,7 @@ VITAMINS_SIGNATURE: tuple[Component, ...] = (
     ("Distilled water", "1.0", "L"),
 )
 
-FECL3_SIGNATURE: tuple[Component, ...] = (
-    ("FeCl3 x 6H2O", "0.5", "G_PER_L"),
-)
+FECL3_SIGNATURE: tuple[Component, ...] = (("FeCl3 x 6H2O", "0.5", "G_PER_L"),)
 
 IMPORTED_SOLUTION_SIGNATURES: tuple[SolutionSignature, ...] = (
     ("Solution A (see Medium [M1100])", "5", "G_PER_L", ()),
@@ -250,10 +248,7 @@ def _stock_reference(
         value,
         "ML_PER_L",
         source=SOLUTION_SOURCE,
-        notes=(
-            f"{SOLUTION_SOURCE} lists {exact} {preferred_term} per 8.0 ml "
-            "Solution B."
-        ),
+        notes=(f"{SOLUTION_SOURCE} lists {exact} {preferred_term} per 8.0 ml " "Solution B."),
         term=False,
     )
 
@@ -474,9 +469,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

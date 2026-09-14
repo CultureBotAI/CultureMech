@@ -194,9 +194,7 @@ def _ensure_ingredients_curated(doc: dict[str, Any]) -> None:
 
 
 def _validate_targets() -> None:
-    if len(VARIANTS) != EXPECTED_VARIANT_COUNT or len(VARIANTS) != len(
-        VARIANT_BY_PATH
-    ):
+    if len(VARIANTS) != EXPECTED_VARIANT_COUNT or len(VARIANTS) != len(VARIANT_BY_PATH):
         raise ValueError(
             f"expected {EXPECTED_VARIANT_COUNT} unique variants, found "
             f"{len(VARIANTS)} total and {len(VARIANT_BY_PATH)} unique"

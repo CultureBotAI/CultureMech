@@ -181,7 +181,9 @@ MIX_3 = _solution(
     [
         _component("Thiamine HCl (B1)", "0.0045"),
         _component("Biotin (B8)", "0.000009", identifier="CHEBI:15956", label="biotin"),
-        _component("Cyanocobalamin (B12)", "0.00009", identifier="CHEBI:176843", label="vitamin B12"),
+        _component(
+            "Cyanocobalamin (B12)", "0.00009", identifier="CHEBI:176843", label="vitamin B12"
+        ),
         _component("Folic acid (B9)", "0.00009"),
         _component("Pyridoxine (B6)", "0.00009"),
         _component("Riboflavin (B2)", "0.00009"),
@@ -199,10 +201,7 @@ MIX_3 = _solution(
             "P5 fills Mix solution 3 to 50 ml with NNM after adding 45 ul total vitamin stocks.",
         ),
     ],
-    (
-        "P5 adds 4.5 ul each from the listed vitamin single stocks and fills "
-        "to 50 ml with NNM."
-    ),
+    ("P5 adds 4.5 ul each from the listed vitamin single stocks and fills " "to 50 ml with NNM."),
 )
 
 MIX_4 = _solution(

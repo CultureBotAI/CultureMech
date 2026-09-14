@@ -109,13 +109,9 @@ SALT_II_SIGNATURE: tuple[Component, ...] = (
     ("Distilled water", "1.0", "L"),
 )
 
-RESAZURIN_SIGNATURE: tuple[Component, ...] = (
-    ("Sodium resazurin", "1.0", "G_PER_L"),
-)
+RESAZURIN_SIGNATURE: tuple[Component, ...] = (("Sodium resazurin", "1.0", "G_PER_L"),)
 
-CARBONATE_SIGNATURE: tuple[Component, ...] = (
-    ("Na2CO3", "80.0", "G_PER_L"),
-)
+CARBONATE_SIGNATURE: tuple[Component, ...] = (("Na2CO3", "80.0", "G_PER_L"),)
 
 FINAL_PARENT_SOLUTION_SIGNATURES: tuple[SolutionSignature, ...] = (
     ("Salt Solution I", "75.0", "ML_PER_L", SALT_I_SIGNATURE),
@@ -223,8 +219,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     if term:
         grounding = GROUNDINGS[preferred_term]
@@ -476,9 +471,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -501,9 +494,7 @@ def _solution_signatures(rows: Any, label: str) -> tuple[SolutionSignature, ...]
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signatures.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -545,9 +536,7 @@ def _ensure_target(doc: dict[str, Any]) -> None:
 
 def _ensure_parent(doc: dict[str, Any]) -> None:
     if doc.get("id") != EXPECTED_PARENT_ID:
-        raise ValueError(
-            f"{PARENT}: expected id {EXPECTED_PARENT_ID}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{PARENT}: expected id {EXPECTED_PARENT_ID}, found {doc.get('id')!r}")
     if _source_term_id(doc) != EXPECTED_PARENT_MEDIA_TERM:
         raise ValueError(f"{PARENT}: expected media term {EXPECTED_PARENT_MEDIA_TERM}")
 

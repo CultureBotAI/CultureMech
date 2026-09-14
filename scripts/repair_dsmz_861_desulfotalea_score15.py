@@ -52,8 +52,7 @@ DSMZ_861A_REST = "https://mediadive.dsmz.de/rest/medium/861a"
 DSMZ_861_PDF = "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium861.pdf"
 DSMZ_861A_PDF = "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium861a.pdf"
 KOMODO_BASE = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo="
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo="
 )
 
 CURATOR = "repair_dsmz_861_desulfotalea_score15.py"
@@ -241,7 +240,12 @@ BASE = {
     ),
     "Folic acid": (138, "Folic acid", "CHEBI:27470", "folic acid"),
     "Nicotinic acid": (139, "Nicotinic acid", "CHEBI:15940", "nicotinic acid"),
-    "Pyridoxine hydrochloride": (519, "Pyridoxine hydrochloride", "CHEBI:30961", "pyridoxine hydrochloride"),
+    "Pyridoxine hydrochloride": (
+        519,
+        "Pyridoxine hydrochloride",
+        "CHEBI:30961",
+        "pyridoxine hydrochloride",
+    ),
     "Riboflavin": (136, "Riboflavin", "CHEBI:17015", "riboflavin"),
     "Thiamine HCl": (1207, "Thiamine HCl", "CHEBI:49105", "thiamine hydrochloride"),
     "p-Aminobenzoic acid": (47, "p-Aminobenzoic acid", "CHEBI:30753", "4-aminobenzoic acid"),
@@ -369,7 +373,9 @@ def _stock_solutions(source: str, profile: str, solution_c: str) -> tuple[dict[s
         source,
         mediadive_id=6262,
         composition=(
-            _compound("NaOH", "50", 256, "NaOH", "CHEBI:32145", "sodium hydroxide", source, "ML_PER_L"),
+            _compound(
+                "NaOH", "50", 256, "NaOH", "CHEBI:32145", "sodium hydroxide", source, "ML_PER_L"
+            ),
             _c("Na2S2O4", "50", source),
             _water("950", source),
         ),
@@ -495,7 +501,9 @@ TARGETS: tuple[Target, ...] = (
         solution_c="acetate",
         parent_media=DSMZ_861A_PARENT,
         variant_relationship="SUBSTITUTED_COMPONENT_VARIANT",
-        variant_modifications=("Replaces the 250 g/L Na-DL-lactate Solution C with 150 g/L Na-acetate.",),
+        variant_modifications=(
+            "Replaces the 250 g/L Na-DL-lactate Solution C with 150 g/L Na-acetate.",
+        ),
         extra_references=(DSMZ_861A_REST, DSMZ_861A_PDF),
     ),
     Target(
@@ -539,7 +547,9 @@ TARGETS: tuple[Target, ...] = (
         solution_c="propionate",
         parent_media=DSMZ_861A_PARENT,
         variant_relationship="SUBSTITUTED_COMPONENT_VARIANT",
-        variant_modifications=("Replaces the 250 g/L Na-DL-lactate Solution C with 150 g/L Na-propionate.",),
+        variant_modifications=(
+            "Replaces the 250 g/L Na-DL-lactate Solution C with 150 g/L Na-propionate.",
+        ),
         extra_references=(DSMZ_861A_REST, DSMZ_861A_PDF),
     ),
 )
@@ -578,7 +588,9 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 
 def _require_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != EXPECTED_IDS[target.path]:
-        raise ValueError(f"{target.path}: found id {doc.get('id')!r}, expected {EXPECTED_IDS[target.path]!r}")
+        raise ValueError(
+            f"{target.path}: found id {doc.get('id')!r}, expected {EXPECTED_IDS[target.path]!r}"
+        )
     source_term = _source_term_id(doc)
     if source_term != EXPECTED_SOURCE_TERMS[target.path]:
         raise ValueError(
@@ -639,11 +651,21 @@ def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
     _put_after(
         repaired,
         "solutions",
-        [copy.deepcopy(row) for row in _stock_solutions(target.source_label, target.solution_profile, target.solution_c)],
+        [
+            copy.deepcopy(row)
+            for row in _stock_solutions(
+                target.source_label, target.solution_profile, target.solution_c
+            )
+        ],
         "ingredients",
     )
     _put_after(repaired, "preparation_steps", list(_steps(target.source_label)), "solutions")
-    _put_after(repaired, "data_quality_flags", ["ingredients_curated", "has_ontology_mappings"], "preparation_steps")
+    _put_after(
+        repaired,
+        "data_quality_flags",
+        ["ingredients_curated", "has_ontology_mappings"],
+        "preparation_steps",
+    )
 
     _ensure_references(repaired, target)
     _append_curation_event(repaired, target)
@@ -660,7 +682,12 @@ def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
         _put_after(repaired, "variant_modifications", list(target.variant_modifications), after)
         after = "variant_modifications"
     if target.variant_children:
-        _put_after(repaired, "variant_children", [copy.deepcopy(row) for row in target.variant_children], after)
+        _put_after(
+            repaired,
+            "variant_children",
+            [copy.deepcopy(row) for row in target.variant_children],
+            after,
+        )
 
     return repaired
 

@@ -20,8 +20,7 @@ NORMALIZED = REPO / "data" / "normalized_yaml"
 YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 KOMODO_488_URL = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=488"
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=488"
 )
 KOMODO_488_REPLACE_URL = (
     "https://komodo.modelseed.org/servlet/"
@@ -607,8 +606,7 @@ def _check_source(doc: dict[str, Any], target: Target) -> None:
     term = media_term.get("term")
     if not isinstance(term, dict) or term.get("id") != target.expected_media_term:
         raise ValueError(
-            f"{target.path}: missing expected media term "
-            f"{target.expected_media_term}"
+            f"{target.path}: missing expected media term " f"{target.expected_media_term}"
         )
 
 

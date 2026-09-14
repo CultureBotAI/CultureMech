@@ -31,8 +31,7 @@ CHILD_SOURCE_TERM = "komodo.medium:614.1"
 CHILD_PH = 7.5
 RELATIONSHIP = "PH_VARIANT"
 CHILD_NOTES = (
-    "KOMODO Medium 614.1 applies ACETOBACTERIUM FIMETARIUM MEDIUM "
-    "at pH 7.5 for DSM 8238."
+    "KOMODO Medium 614.1 applies ACETOBACTERIUM FIMETARIUM MEDIUM " "at pH 7.5 for DSM 8238."
 )
 
 INGREDIENT_SIGNATURE = (
@@ -173,10 +172,7 @@ def _parent_ref() -> dict[str, str]:
         "relationship": RELATIONSHIP,
         "id": PARENT_ID,
         "name": PARENT_NAME,
-        "notes": (
-            "MediaDive Medium 614 is the DSMZ ACETOBACTERIUM FIMETARIUM "
-            "MEDIUM base."
-        ),
+        "notes": ("MediaDive Medium 614 is the DSMZ ACETOBACTERIUM FIMETARIUM " "MEDIUM base."),
     }
 
 

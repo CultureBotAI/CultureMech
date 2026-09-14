@@ -36,8 +36,7 @@ EXPECTED_SOURCE_TERMS = {
 DSMZ_363_REST = "https://mediadive.dsmz.de/rest/medium/363"
 DSMZ_363_PDF = "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium363.pdf"
 KOMODO_BASE = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo="
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo="
 )
 KOMODO_363_URL = f"{KOMODO_BASE}363"
 KOMODO_363_1_URL = f"{KOMODO_BASE}363.1"
@@ -204,10 +203,10 @@ def repair_for_dsm_2118(doc: dict[str, Any]) -> dict[str, Any]:
     ingredients = []
     found_substitution_site = False
     for ingredient in repaired.get("ingredients", []):
-        if (
-            isinstance(ingredient, dict)
-            and ingredient.get("preferred_term") in {"Antipyrine", "L-phenylalanine"}
-        ):
+        if isinstance(ingredient, dict) and ingredient.get("preferred_term") in {
+            "Antipyrine",
+            "L-phenylalanine",
+        }:
             ingredients.append(_l_phenylalanine())
             found_substitution_site = True
         else:
@@ -227,7 +226,12 @@ def repair_for_dsm_2118(doc: dict[str, Any]) -> dict[str, Any]:
     )
     _put_after(repaired, "references", repaired["references"], "data_quality_flags")
 
-    for field in ("parent_media", "variant_relationship", "variant_modifications", "variant_children"):
+    for field in (
+        "parent_media",
+        "variant_relationship",
+        "variant_modifications",
+        "variant_children",
+    ):
         repaired.pop(field, None)
     _put_after(repaired, "parent_media", copy.deepcopy(KOMODO_363_PARENT), "references")
     _put_after(

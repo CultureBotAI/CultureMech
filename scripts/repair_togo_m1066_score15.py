@@ -77,24 +77,12 @@ SOLUTION_2_SIGNATURE: tuple[Component, ...] = (
     ("20% (w/v) Glucose solution", "variable", "VARIABLE"),
 )
 
-CACL2_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("CaCl2 x 2H2O", "10.0", "G_PER_L"),
-)
-MGCL2_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("MgCl2 x 6H2O", "20.0", "G_PER_L"),
-)
-RESAZURIN_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("Resazurin", "10.0", "G_PER_L"),
-)
-NAHCO3_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("NaHCO3", "100.0", "G_PER_L"),
-)
-GLUCOSE_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("Glucose", "200.0", "G_PER_L"),
-)
-NA2S_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("Na2S x 9H2O", "30.0", "G_PER_L"),
-)
+CACL2_STOCK_SIGNATURE: tuple[Component, ...] = (("CaCl2 x 2H2O", "10.0", "G_PER_L"),)
+MGCL2_STOCK_SIGNATURE: tuple[Component, ...] = (("MgCl2 x 6H2O", "20.0", "G_PER_L"),)
+RESAZURIN_STOCK_SIGNATURE: tuple[Component, ...] = (("Resazurin", "10.0", "G_PER_L"),)
+NAHCO3_STOCK_SIGNATURE: tuple[Component, ...] = (("NaHCO3", "100.0", "G_PER_L"),)
+GLUCOSE_STOCK_SIGNATURE: tuple[Component, ...] = (("Glucose", "200.0", "G_PER_L"),)
+NA2S_STOCK_SIGNATURE: tuple[Component, ...] = (("Na2S x 9H2O", "30.0", "G_PER_L"),)
 
 TRACE_ELEMENT_SIGNATURE: tuple[Component, ...] = (
     ("HCl (25%, 7.7 M)", "10.0", "ML_PER_L"),
@@ -275,10 +263,7 @@ def _post_autoclave_reference(
         "variable",
         "VARIABLE",
         source=source,
-        notes=(
-            f"{source} adds {amount} {preferred_term} per 5.0 ml medium "
-            "after autoclaving."
-        ),
+        notes=(f"{source} adds {amount} {preferred_term} per 5.0 ml medium " "after autoclaving."),
         term=False,
     )
 
@@ -421,10 +406,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
                 "variable",
                 "VARIABLE",
                 source=SOURCE,
-                notes=(
-                    f"{SOURCE} prepares the medium under an N2-CO2 (4:1, v/v) "
-                    "gas mixture."
-                ),
+                notes=(f"{SOURCE} prepares the medium under an N2-CO2 (4:1, v/v) " "gas mixture."),
             ),
         ],
     },
@@ -576,9 +558,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

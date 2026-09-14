@@ -39,16 +39,11 @@ def test_parents_gain_missing_reciprocal_child_links(repair_module) -> None:
     repaired = repair_module.plan_repairs()
 
     rhodobium = repaired[repair_module.NORMALIZED / repair_module.RHODOBIUM.path]
-    thiorhodococcus = repaired[
-        repair_module.NORMALIZED / repair_module.THIORHODOCOCCUS.path
-    ]
+    thiorhodococcus = repaired[repair_module.NORMALIZED / repair_module.THIORHODOCOCCUS.path]
 
-    assert repair_module._child_entry(repair_module.CHILDREN[0]) in rhodobium[
-        "variant_children"
-    ]
+    assert repair_module._child_entry(repair_module.CHILDREN[0]) in rhodobium["variant_children"]
     assert thiorhodococcus["variant_children"] == [
-        repair_module._child_entry(child)
-        for child in repair_module.CHILDREN[1:]
+        repair_module._child_entry(child) for child in repair_module.CHILDREN[1:]
     ]
 
 
@@ -73,18 +68,14 @@ def test_repaired_links_validate(repair_module, validator_module) -> None:
     }
     path_to_recipe.update(
         {
-            f"data/normalized_yaml/{child.path}": _load_yaml(
-                repair_module.NORMALIZED / child.path
-            )
+            f"data/normalized_yaml/{child.path}": _load_yaml(repair_module.NORMALIZED / child.path)
             for child in repair_module.CHILDREN
         }
     )
     for parent in repair_module.PARENTS:
         for child in plans[repair_module.NORMALIZED / parent.path]["variant_children"]:
             if child["path"] not in path_to_recipe:
-                path_to_recipe[child["path"]] = _load_yaml(
-                    REPO / child["path"]
-                )
+                path_to_recipe[child["path"]] = _load_yaml(REPO / child["path"])
     index = validator_module.RecipeIndex(
         path_to_recipe=path_to_recipe,
         id_to_path={doc["id"]: path for path, doc in path_to_recipe.items()},
@@ -97,9 +88,11 @@ def test_repair_is_idempotent(repair_module) -> None:
     once = repair_module.plan_repairs()
     twice = {
         path: repair_module.repair_parent(
-            repair_module.RHODOBIUM
-            if path == repair_module.NORMALIZED / repair_module.RHODOBIUM.path
-            else repair_module.THIORHODOCOCCUS,
+            (
+                repair_module.RHODOBIUM
+                if path == repair_module.NORMALIZED / repair_module.RHODOBIUM.path
+                else repair_module.THIORHODOCOCCUS
+            ),
             doc,
         )
         for path, doc in once.items()
@@ -107,14 +100,13 @@ def test_repair_is_idempotent(repair_module) -> None:
 
     assert twice == once
     for path in once:
-        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(
-            once[path]
-        )
+        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(once[path])
 
 
 def test_plan_repairs_targets_current_records(repair_module) -> None:
     assert repair_module.plan_repairs() == {
-        repair_module.NORMALIZED / parent.path: repair_module.repair_parent(
+        repair_module.NORMALIZED
+        / parent.path: repair_module.repair_parent(
             parent,
             _load_yaml(repair_module.NORMALIZED / parent.path),
         )

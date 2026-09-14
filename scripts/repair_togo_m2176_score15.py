@@ -115,19 +115,13 @@ INGREDIENTS: tuple[dict[str, Any], ...] = (
         "Yeast extract",
         "0.5",
         "G_PER_L",
-        notes=(
-            "ATCC Medium 1108 lists 0.05% w/v yeast extract, normalized to "
-            "0.5 g/L."
-        ),
+        notes=("ATCC Medium 1108 lists 0.05% w/v yeast extract, normalized to " "0.5 g/L."),
     ),
     _component(
         "L-Cysteine . HCl",
         "1.0",
         "G_PER_L",
-        notes=(
-            "ATCC Medium 1108 lists 0.1% w/v L-Cysteine . HCl, normalized "
-            "to 1 g/L."
-        ),
+        notes=("ATCC Medium 1108 lists 0.1% w/v L-Cysteine . HCl, normalized " "to 1 g/L."),
     ),
     _component(
         "Agar",
@@ -227,9 +221,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

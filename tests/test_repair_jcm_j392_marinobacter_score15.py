@@ -71,10 +71,13 @@ def test_repair_restores_water_and_groundings(
     repaired = repair_module.repair_target(_doc(repair_module))
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Marine broth 2216 (BD-Difco)"] == {
         "preferred_term": "Marine broth 2216 (BD-Difco)",
         "concentration": {"value": "37.4", "unit": "G_PER_L"},

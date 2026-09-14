@@ -76,10 +76,7 @@ PARENT_MEDIA = {
     "relationship": "SUPPLEMENTED_VARIANT",
     "id": LB_PARENT_ID,
     "name": "lb_medium",
-    "notes": (
-        "NBRC Medium 1265 supplements LB Medium with 65 mg/L Deferoxamine "
-        "mesylate salt."
-    ),
+    "notes": ("NBRC Medium 1265 supplements LB Medium with 65 mg/L Deferoxamine " "mesylate salt."),
 }
 
 VARIANT_CHILD = {
@@ -128,8 +125,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     grounding = GROUNDINGS.get(preferred_term)
     if grounding is not None:
@@ -183,9 +179,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

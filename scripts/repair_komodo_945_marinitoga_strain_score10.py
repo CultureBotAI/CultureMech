@@ -131,12 +131,8 @@ def _ensure_ingredients_curated(doc: dict[str, Any]) -> None:
 
 def _upsert_child_entry(children: list[Any], entry: dict[str, str]) -> None:
     for index, existing in enumerate(children):
-        if (
-            isinstance(existing, dict)
-            and (
-                existing.get("id") == entry["id"]
-                or existing.get("path") == entry["path"]
-            )
+        if isinstance(existing, dict) and (
+            existing.get("id") == entry["id"] or existing.get("path") == entry["path"]
         ):
             children[index] = entry
             return

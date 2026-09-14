@@ -67,18 +67,14 @@ def _target_doc(repair_module) -> dict:
         "curation_history": [],
         "solutions": [
             _solution(name, value, unit)
-            for name, value, unit, _composition in (
-                repair_module.IMPORTED_SOLUTION_SIGNATURE
-            )
+            for name, value, unit, _composition in (repair_module.IMPORTED_SOLUTION_SIGNATURE)
         ],
     }
 
 
 def _components_by_solution(repaired: dict) -> dict[str, dict[str, dict]]:
     return {
-        solution["preferred_term"]: {
-            row["preferred_term"]: row for row in solution["composition"]
-        }
+        solution["preferred_term"]: {row["preferred_term"]: row for row in solution["composition"]}
         for solution in repaired["solutions"]
     }
 

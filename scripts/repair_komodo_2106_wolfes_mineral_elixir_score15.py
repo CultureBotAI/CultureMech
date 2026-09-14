@@ -37,9 +37,7 @@ TITLE = "Wolfes Mineral Elixir (medium 792)"
 Component = tuple[str, str, str]
 Term = tuple[str, str]
 
-IMPORTED_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
-    ("H2SO4", "variable", "VARIABLE"),
-)
+IMPORTED_INGREDIENT_SIGNATURE: tuple[Component, ...] = (("H2SO4", "variable", "VARIABLE"),)
 
 FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("MgSO4 x 7 H2O", "30.00", "G_PER_L"),
@@ -230,16 +228,14 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 1,
         "action": "ADJUST_PH",
         "description": (
-            "First adjust the Wolfe's mineral elixir stock to pH 1.0 with "
-            "diluted H2SO4."
+            "First adjust the Wolfe's mineral elixir stock to pH 1.0 with " "diluted H2SO4."
         ),
     },
     {
         "step_number": 2,
         "action": "MIX",
         "description": (
-            "Add and dissolve the Wolfe's mineral elixir salts in 1000.0 ml "
-            "distilled water."
+            "Add and dissolve the Wolfe's mineral elixir salts in 1000.0 ml " "distilled water."
         ),
     },
 )
@@ -283,9 +279,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -313,8 +307,7 @@ def _ensure_target(doc: dict[str, Any]) -> None:
     source_term = _source_term_id(doc)
     if source_term != EXPECTED_MEDIA_TERM:
         raise ValueError(
-            f"{TARGET}: expected media term {EXPECTED_MEDIA_TERM}, "
-            f"found {source_term!r}"
+            f"{TARGET}: expected media term {EXPECTED_MEDIA_TERM}, " f"found {source_term!r}"
         )
 
     ingredient_signature = _signature(doc.get("ingredients"), "ingredients")

@@ -68,8 +68,7 @@ class Child:
     @property
     def notes(self) -> str:
         return (
-            f"{self.source_label} applies SL medium at pH {self.ph_value:g} "
-            f"for {self.subject}."
+            f"{self.source_label} applies SL medium at pH {self.ph_value:g} " f"for {self.subject}."
         )
 
 

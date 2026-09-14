@@ -69,9 +69,10 @@ def test_repair_document_grounds_defined_components(repair_module) -> None:
     repaired = repair_module.repair_document(_minimal_doc(repair_module))
     ingredients = {row["preferred_term"]: row for row in repaired["ingredients"]}
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Glucose"]["term"]["id"] == "CHEBI:17234"
     assert ingredients["Glucose"]["mediaingredientmech_chebi_term"] == {
         "id": "CHEBI:17234",
@@ -94,9 +95,10 @@ def test_repair_document_adds_reference_and_event_once(repair_module) -> None:
     twice = repair_module.repair_document(once)
 
     assert twice["references"] == [{"reference": repair_module.NBRC_URL}]
-    assert repair_module._signature(
-        twice["ingredients"], "ingredients"
-    ) == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(twice["ingredients"], "ingredients")
+        == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    )
     matching_events = [
         event
         for event in twice["curation_history"]

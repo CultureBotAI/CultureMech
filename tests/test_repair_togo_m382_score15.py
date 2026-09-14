@@ -107,10 +107,13 @@ def test_repair_corrects_formula_and_conditions(repair_module) -> None:
 
     assert repaired["composition_type"] == "SEMI_DEFINED"
     assert repaired["ph_value"] == 7.5
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Distilled water"]["concentration"] == {
         "value": "960.0",
         "unit": "ML_PER_L",
@@ -130,10 +133,13 @@ def test_repair_expands_jcm_304_solutions(repair_module) -> None:
     mineral = _by_name(solutions["Mineral salt solution"]["composition"])
     glucose = _by_name(solutions["2.5% Glucose solution"]["composition"])
 
-    assert repair_module._solution_signatures(
-        repaired["solutions"],
-        "solutions",
-    ) == repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._solution_signatures(
+            repaired["solutions"],
+            "solutions",
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURES
+    )
     assert mineral["FeSO4 x 7H2O"]["concentration"] == {
         "value": "99.0",
         "unit": "MG_PER_L",
@@ -179,9 +185,7 @@ def test_repair_adds_preparation_references_flags_and_event_once(
 
     assert twice["preparation_steps"] == list(repair_module.PREPARATION_STEPS)
     assert twice["sterilization"] == repair_module.STERILIZATION
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.TARGET_REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.TARGET_REFERENCES]
     assert twice["data_quality_flags"] == [
         "has_ontology_mappings",
         "has_unmapped_ingredients",
@@ -209,18 +213,22 @@ def test_repair_parent_updates_formula_and_links_child_once(
     once = repair_module.repair_parent(_parent_doc(repair_module))
     twice = repair_module.repair_parent(once)
 
-    assert repair_module._signature(
-        twice["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._solution_signatures(
-        twice["solutions"],
-        "solutions",
-    ) == repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._signature(
+            twice["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
+    assert (
+        repair_module._solution_signatures(
+            twice["solutions"],
+            "solutions",
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURES
+    )
     assert twice["variant_children"] == [repair_module.TOGO_CHILD]
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.PARENT_REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.PARENT_REFERENCES]
     assert scorer_module.score_record(twice) == (0, [])
 
     matching_events = [
@@ -277,10 +285,7 @@ def test_target_records_match_repair_contract(repair_module) -> None:
     assert target["id"] == repair_module.EXPECTED_ID
     assert parent["id"] == repair_module.EXPECTED_PARENT_ID
     assert repair_module._source_term_id(target) == repair_module.EXPECTED_MEDIA_TERM
-    assert (
-        repair_module._source_term_id(parent)
-        == repair_module.EXPECTED_PARENT_MEDIA_TERM
-    )
+    assert repair_module._source_term_id(parent) == repair_module.EXPECTED_PARENT_MEDIA_TERM
     assert repair_module._signature(target["ingredients"], "ingredients") in (
         repair_module.IMPORTED_INGREDIENT_SIGNATURE,
         repair_module.FINAL_INGREDIENT_SIGNATURE,

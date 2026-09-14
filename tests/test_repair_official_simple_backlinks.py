@@ -41,12 +41,14 @@ def test_parents_gain_missing_reciprocal_child_links(repair_module) -> None:
     assert repaired[repair_module.NORMALIZED / repair_module.GYP_SODIUM_ACETATE.path][
         "variant_children"
     ] == [repair_module._child_entry(child) for child in repair_module.CHILDREN[:2]]
-    assert repair_module._child_entry(repair_module.CHILDREN[2]) in repaired[
-        repair_module.NORMALIZED / repair_module.OATMEAL_ISP3.path
-    ]["variant_children"]
-    assert repair_module._child_entry(repair_module.CHILDREN[3]) in repaired[
-        repair_module.NORMALIZED / repair_module.ISP4.path
-    ]["variant_children"]
+    assert (
+        repair_module._child_entry(repair_module.CHILDREN[2])
+        in repaired[repair_module.NORMALIZED / repair_module.OATMEAL_ISP3.path]["variant_children"]
+    )
+    assert (
+        repair_module._child_entry(repair_module.CHILDREN[3])
+        in repaired[repair_module.NORMALIZED / repair_module.ISP4.path]["variant_children"]
+    )
 
 
 def test_existing_official_simple_children_are_preserved(repair_module) -> None:
@@ -58,9 +60,7 @@ def test_existing_official_simple_children_are_preserved(repair_module) -> None:
         after_by_id = {child["id"]: child for child in repaired["variant_children"]}
 
         assert set(after_by_id) == set(before_by_id) | {
-            child.record_id
-            for child in repair_module.CHILDREN
-            if child.parent == parent
+            child.record_id for child in repair_module.CHILDREN if child.parent == parent
         }
         for record_id, child in before_by_id.items():
             assert after_by_id[record_id] == child
@@ -70,16 +70,12 @@ def test_repaired_links_validate(repair_module, validator_module) -> None:
     plans = repair_module.plan_repairs()
 
     path_to_recipe = {
-        f"data/normalized_yaml/{parent.path}": plans[
-            repair_module.NORMALIZED / parent.path
-        ]
+        f"data/normalized_yaml/{parent.path}": plans[repair_module.NORMALIZED / parent.path]
         for parent in repair_module.PARENTS
     }
     path_to_recipe.update(
         {
-            f"data/normalized_yaml/{child.path}": _load_yaml(
-                repair_module.NORMALIZED / child.path
-            )
+            f"data/normalized_yaml/{child.path}": _load_yaml(repair_module.NORMALIZED / child.path)
             for child in repair_module.CHILDREN
         }
     )
@@ -102,20 +98,18 @@ def test_repair_is_idempotent(repair_module) -> None:
     }
     once = repair_module.plan_repairs()
     twice = {
-        path: repair_module.repair_parent(parent_by_path[path], doc)
-        for path, doc in once.items()
+        path: repair_module.repair_parent(parent_by_path[path], doc) for path, doc in once.items()
     }
 
     assert twice == once
     for path in once:
-        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(
-            once[path]
-        )
+        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(once[path])
 
 
 def test_plan_repairs_targets_current_records(repair_module) -> None:
     assert repair_module.plan_repairs() == {
-        repair_module.NORMALIZED / parent.path: repair_module.repair_parent(
+        repair_module.NORMALIZED
+        / parent.path: repair_module.repair_parent(
             parent,
             _load_yaml(repair_module.NORMALIZED / parent.path),
         )

@@ -134,9 +134,7 @@ EXPECTED_IDS = {
         "CultureMech:015854"
     ),
     Path("bacterial/JCM_J1429_M1H_NAG_ASW.yaml"): "CultureMech:015864",
-    Path("bacterial/JCM_J1444_DESULFOSPOROSINUS_SB140_MEDIUM.yaml"): (
-        "CultureMech:015868"
-    ),
+    Path("bacterial/JCM_J1444_DESULFOSPOROSINUS_SB140_MEDIUM.yaml"): ("CultureMech:015868"),
     Path("bacterial/JCM_J1468_FRESHWATER_R2A_MEDIUM.yaml"): "CultureMech:015874",
 }
 
@@ -149,9 +147,7 @@ TARGET_TERMS = {
         "Casamino acids (BD Difco)",
         "Yeast extract (Oxoid)",
     ),
-    Path("bacterial/JCM_J1404_MINERAL_CARBONATE_MEDIUM_WITH_CELLOBIOSE.yaml"): (
-        "Yeast extract",
-    ),
+    Path("bacterial/JCM_J1404_MINERAL_CARBONATE_MEDIUM_WITH_CELLOBIOSE.yaml"): ("Yeast extract",),
     Path("bacterial/JCM_J1429_M1H_NAG_ASW.yaml"): (
         "Peptone",
         "Yeast extract (BD-Difco)",
@@ -218,9 +214,7 @@ def _ingredient_signature(doc: dict[str, Any]) -> tuple[str, ...]:
     if not isinstance(ingredients, list):
         raise ValueError("ingredients is not a list")
     return tuple(
-        str(row.get("preferred_term") or "")
-        for row in ingredients
-        if isinstance(row, dict)
+        str(row.get("preferred_term") or "") for row in ingredients if isinstance(row, dict)
     )
 
 

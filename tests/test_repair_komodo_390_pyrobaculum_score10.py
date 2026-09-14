@@ -65,9 +65,7 @@ def test_dsmz_parent_points_to_archaeal_komodo_record(repair_module) -> None:
     before = _load_yaml(repair_module.NORMALIZED / repair_module.DSMZ_PARENT)
     repaired = repair_module.repair_dsmz_parent(before)
 
-    assert repaired["variant_children"] == [
-        repair_module._komodo_source_child_entry()
-    ]
+    assert repaired["variant_children"] == [repair_module._komodo_source_child_entry()]
 
 
 def test_komodo_parent_points_to_archaeal_dsmz_parent(repair_module) -> None:
@@ -99,9 +97,7 @@ def test_repair_is_idempotent(repair_module) -> None:
 
     assert twice == once
     for path in once:
-        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(
-            once[path]
-        )
+        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(once[path])
 
 
 def test_plan_repairs_targets_current_records(repair_module) -> None:

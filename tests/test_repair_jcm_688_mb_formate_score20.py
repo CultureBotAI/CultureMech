@@ -102,9 +102,10 @@ def test_repair_expands_m708_solution_a_and_stocks(
         "CO2",
         "N2",
     ]
-    assert _by_name(repaired["ingredients"], "Distilled water")[
-        "concentration"
-    ] == {"value": "920", "unit": "ML_PER_L"}
+    assert _by_name(repaired["ingredients"], "Distilled water")["concentration"] == {
+        "value": "920",
+        "unit": "ML_PER_L",
+    }
     assert _by_name(repaired["ingredients"], "Resazurin")["concentration"] == {
         "value": "0.0005",
         "unit": "G_PER_L",
@@ -128,17 +129,19 @@ def test_repair_adds_togo_cross_referenced_stock_compositions(
     assert _by_name(
         solutions["Trace minerals (TOGO Medium M142)"]["composition"],
         "MgSO4 x 7H2O",
-    )["concentration"] == {"value": "3", "unit": "G_PER_L"}
+    )[
+        "concentration"
+    ] == {"value": "3", "unit": "G_PER_L"}
     assert _by_name(
-        solutions["Selenite--tungstate solution (TOGO Medium M431)"][
-            "composition"
-        ],
+        solutions["Selenite--tungstate solution (TOGO Medium M431)"]["composition"],
         "Na2WO4 x 2H2O",
     )["concentration"] == {"value": "0.008", "unit": "G_PER_L"}
     assert _by_name(
         solutions["Trace vitamins (TOGO Medium M190)"]["composition"],
         "Vitamin B12",
-    )["concentration"] == {"value": "0.0001", "unit": "G_PER_L"}
+    )[
+        "concentration"
+    ] == {"value": "0.0001", "unit": "G_PER_L"}
 
 
 def test_repair_preserves_direct_m708_sterile_stock_compositions(
@@ -150,7 +153,9 @@ def test_repair_preserves_direct_m708_sterile_stock_compositions(
     assert _by_name(
         solutions["5% Na2S x 9H2O solution"]["composition"],
         "Na2S x 9H2O",
-    )["concentration"] == {"value": "50", "unit": "G_PER_L"}
+    )[
+        "concentration"
+    ] == {"value": "50", "unit": "G_PER_L"}
     assert _by_name(
         solutions["5% L-Cysteine x HCl x H2O solution"]["composition"],
         "L-Cysteine x HCl x H2O",
@@ -162,7 +167,9 @@ def test_repair_preserves_direct_m708_sterile_stock_compositions(
     assert _by_name(
         solutions["Sodium formate solution"]["composition"],
         "Sodium formate",
-    )["concentration"] == {"value": "136", "unit": "G_PER_L"}
+    )[
+        "concentration"
+    ] == {"value": "136", "unit": "G_PER_L"}
 
 
 def test_repair_adds_references_and_history_once(repair_module) -> None:
@@ -201,12 +208,8 @@ def test_plan_repair_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repair(root)
 
     assert {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(root): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(root): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:

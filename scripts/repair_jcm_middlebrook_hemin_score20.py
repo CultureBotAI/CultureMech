@@ -158,8 +158,7 @@ BASE_PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 3,
         "action": "MIX",
         "description": (
-            "Aseptically add 100 ml/L Middlebrook OADC Enrichment (BD-BBL) and "
-            "mix thoroughly."
+            "Aseptically add 100 ml/L Middlebrook OADC Enrichment (BD-BBL) and " "mix thoroughly."
         ),
     },
 )
@@ -271,9 +270,7 @@ def _ingredients_by_name(doc: dict[str, Any]) -> dict[str, dict[str, Any]]:
 
 def _require_target(doc: dict[str, Any], path: str) -> None:
     if doc.get("id") != EXPECTED_IDS[path]:
-        raise ValueError(
-            f"{path}: found id {doc.get('id')!r}, expected {EXPECTED_IDS[path]!r}"
-        )
+        raise ValueError(f"{path}: found id {doc.get('id')!r}, expected {EXPECTED_IDS[path]!r}")
 
     source_term = _source_term_id(doc)
     if source_term != EXPECTED_SOURCE_TERMS[path]:

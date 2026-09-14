@@ -1,6 +1,6 @@
 # Media Variant Link Validation
 
-- YAML records scanned: 15,877
+- YAML records scanned: 15,878
 - Parent-to-child links: 2,983
 - Child-to-parent links: 2,983
 - Errors: 0

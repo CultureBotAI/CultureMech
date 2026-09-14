@@ -111,7 +111,9 @@ def test_repair_adds_reference_flags_and_event_once(repair_module) -> None:
     twice = repair_module.repair_record(once)
 
     assert twice == once
-    assert once["references"] == [{"reference": reference} for reference in repair_module.REFERENCES]
+    assert once["references"] == [
+        {"reference": reference} for reference in repair_module.REFERENCES
+    ]
     assert once["data_quality_flags"] == [
         "has_ontology_mappings",
         "has_unmapped_ingredients",

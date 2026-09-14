@@ -70,8 +70,7 @@ def test_marine_broth_expands_atcc_scratch_formula_without_agar(repair, scorer) 
 
     assert scorer.score_record(repaired) == (5, ["no pH and no temperature"])
     assert {
-        row["preferred_term"]: row["concentration"]["value"]
-        for row in repaired["ingredients"]
+        row["preferred_term"]: row["concentration"]["value"] for row in repaired["ingredients"]
     } == {
         "Peptone": "5.0",
         "Yeast Extract": "1.0",
@@ -106,8 +105,7 @@ def test_marine_agar_adds_atcc_agar_to_broth_formula(repair) -> None:
         "concentration": {"value": "15.0", "unit": "G_PER_L"},
         "source": "ATCC Medium 2",
         "notes": (
-            "ATCC Medium 2 prints 15.0 g agar in the Difco Marine Agar 2216 "
-            "scratch formulation."
+            "ATCC Medium 2 prints 15.0 g agar in the Difco Marine Agar 2216 " "scratch formulation."
         ),
         "term": {"id": "CHEBI:2509", "label": "agar"},
         "mediaingredientmech_chebi_term": {"id": "CHEBI:2509", "label": "agar"},
@@ -117,7 +115,9 @@ def test_marine_agar_adds_atcc_agar_to_broth_formula(repair) -> None:
 def test_nbrc_commercial_recipes_keep_official_pH(repair, scorer) -> None:
     by_path = {target.path: target for target in repair.TARGETS}
 
-    todd = repair.repair_record(_minimal_doc(by_path[repair.M1524_TODD_HEWITT]), by_path[repair.M1524_TODD_HEWITT])
+    todd = repair.repair_record(
+        _minimal_doc(by_path[repair.M1524_TODD_HEWITT]), by_path[repair.M1524_TODD_HEWITT]
+    )
     gam = repair.repair_record(_minimal_doc(by_path[repair.M1525_GAM]), by_path[repair.M1525_GAM])
 
     assert todd["ph_value"] == 7.3
@@ -153,7 +153,9 @@ def test_db_variant_and_distilled_water_are_curated_sparse_recipes(repair, score
     assert scorer.score_record(distilled_water) == (5, ["no pH and no temperature"])
 
 
-def test_plan_repairs_is_idempotent_and_removes_false_gam_water_links(repair, tmp_path: Path) -> None:
+def test_plan_repairs_is_idempotent_and_removes_false_gam_water_links(
+    repair, tmp_path: Path
+) -> None:
     root = tmp_path / "normalized"
     _write_minimal_tree(repair, root)
 

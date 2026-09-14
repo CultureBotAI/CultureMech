@@ -116,10 +116,13 @@ def test_repair_corrects_base_formula_and_ph_range(repair_module) -> None:
     assert repaired["physical_state"] == "LIQUID"
     assert repaired["ph_range"] == {"min": 7.2, "max": 7.4}
     assert "ph_value" not in repaired
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Distilled water"]["concentration"] == {
         "value": "930.0",
         "unit": "ML_PER_L",
@@ -128,9 +131,7 @@ def test_repair_corrects_base_formula_and_ph_range(repair_module) -> None:
         "value": "0.5",
         "unit": "MG_PER_L",
     }
-    assert ingredients["Nitrogen gas"]["notes"].startswith(
-        "JCM Medium 1408 uses an N2-CO2"
-    )
+    assert ingredients["Nitrogen gas"]["notes"].startswith("JCM Medium 1408 uses an N2-CO2")
     assert "Syringic acid" not in ingredients
 
 
@@ -160,15 +161,11 @@ def test_repair_expands_tmbs4_specific_stocks(repair_module) -> None:
     repaired = repair_module.repair_target(_doc(repair_module))
     solutions = _by_name(repaired["solutions"])
 
-    thiosulfate = _by_name(
-        solutions["5% Sodium thiosulfate solution"]["composition"]
-    )
+    thiosulfate = _by_name(solutions["5% Sodium thiosulfate solution"]["composition"])
     yeast = _by_name(solutions["10% Yeast extract solution"]["composition"])
     syringate = _by_name(solutions["Syringate solution"]["composition"])
     dtt = _by_name(solutions["0.1 M Dithiothreitol solution"]["composition"])
-    dithionite = _by_name(
-        solutions["2.5% Sodium dithionite solution"]["composition"]
-    )
+    dithionite = _by_name(solutions["2.5% Sodium dithionite solution"]["composition"])
 
     assert thiosulfate["Sodium thiosulfate"]["concentration"] == {
         "value": "50.0",
@@ -234,9 +231,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_target(_doc(repair_module))
     twice = repair_module.repair_target(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

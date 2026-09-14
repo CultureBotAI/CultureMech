@@ -72,9 +72,7 @@ def test_parent_is_promoted_and_lists_exact_children(repair_module) -> None:
 
 def test_dsm_8988_uses_strain_specific_relationship(repair_module) -> None:
     repaired = repair_module.plan_repairs()
-    strain_child = repair_module.CHILD_BY_PATH[
-        Path("bacterial/for_dsm_8988.yaml")
-    ]
+    strain_child = repair_module.CHILD_BY_PATH[Path("bacterial/for_dsm_8988.yaml")]
     path = repair_module.NORMALIZED / strain_child.path
 
     assert repaired[path]["parent_media"]["relationship"] == "STRAIN_SPECIFIC_VARIANT"
@@ -84,25 +82,26 @@ def test_dsm_8988_uses_strain_specific_relationship(repair_module) -> None:
 def test_repair_is_idempotent(repair_module) -> None:
     once = repair_module.plan_repairs()
     twice = {
-        path: repair_module.repair_parent(doc)
-        if path == repair_module.NORMALIZED / repair_module.PARENT
-        else repair_module.repair_child(
-            path.relative_to(repair_module.NORMALIZED),
-            doc,
+        path: (
+            repair_module.repair_parent(doc)
+            if path == repair_module.NORMALIZED / repair_module.PARENT
+            else repair_module.repair_child(
+                path.relative_to(repair_module.NORMALIZED),
+                doc,
+            )
         )
         for path, doc in once.items()
     }
 
     assert twice == once
     for path in once:
-        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(
-            once[path]
-        )
+        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(once[path])
 
 
 def test_plan_repairs_targets_current_records(repair_module) -> None:
     expected = {
-        repair_module.NORMALIZED / repair_module.PARENT: repair_module.repair_parent(
+        repair_module.NORMALIZED
+        / repair_module.PARENT: repair_module.repair_parent(
             _load_yaml(repair_module.NORMALIZED / repair_module.PARENT)
         )
     }

@@ -125,10 +125,7 @@ def _has_source(doc: dict[str, Any], source_id: str) -> bool:
     for source in doc.get("sources") or []:
         if not isinstance(source, dict):
             continue
-        if (
-            source.get("database") == "CultureBotHT"
-            and source.get("database_id") == source_id
-        ):
+        if source.get("database") == "CultureBotHT" and source.get("database_id") == source_id:
             return True
 
     source_data = doc.get("source_data")
@@ -145,9 +142,7 @@ def _require_target(doc: dict[str, Any], target: Target) -> None:
             f"{target.path}: expected id {target.expected_id}, found {doc.get('id')!r}"
         )
     if not _has_source(doc, target.source_id):
-        raise ValueError(
-            f"{target.path}: missing CultureBotHT source {target.source_id!r}"
-        )
+        raise ValueError(f"{target.path}: missing CultureBotHT source {target.source_id!r}")
     if _component_names(doc) != target.expected_ingredients:
         raise ValueError(f"{target.path}: BG11 ingredient signature drifted")
 

@@ -98,10 +98,13 @@ def test_repair_corrects_target_formula_and_links_parent(
     repaired = repair_module.repair_target(_doc(repair_module))
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert repaired["ph_value"] == 7.0
     assert ingredients["Distilled water"]["concentration"] == {
         "value": "1.0",
@@ -129,10 +132,13 @@ def test_repair_parent_adds_distilled_water_and_child_link_once(
     ingredients = _by_name(twice["ingredients"])
 
     assert twice == once
-    assert repair_module._signature(
-        twice["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            twice["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Agar (if needed)"]["term"] == {
         "id": "CHEBI:2509",
         "label": "agar",

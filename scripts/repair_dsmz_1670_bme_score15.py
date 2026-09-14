@@ -62,9 +62,7 @@ FINAL_INGREDIENTS: tuple[Component, ...] = (
     ("Foetal calf serum", "198.019802", "ML_PER_L"),
 )
 
-GLUTAMINE_STOCK_COMPOSITION: tuple[Component, ...] = (
-    ("L-Glutamine", "200.0", "MILLIMOLAR"),
-)
+GLUTAMINE_STOCK_COMPOSITION: tuple[Component, ...] = (("L-Glutamine", "200.0", "MILLIMOLAR"),)
 
 FINAL_SOLUTIONS: tuple[SolutionSignature, ...] = (
     (
@@ -164,10 +162,7 @@ def _glutamine_stock() -> dict[str, Any]:
                 "200.0",
                 "MILLIMOLAR",
                 term=GLUTAMINE,
-                notes=(
-                    "DSMZ Medium 1670 discloses this stock as 200 mM "
-                    "L-glutamine."
-                ),
+                notes=("DSMZ Medium 1670 discloses this stock as 200 mM " "L-glutamine."),
             )
         ],
     }
@@ -266,9 +261,7 @@ def _solution_signature(rows: Any) -> tuple[SolutionSignature, ...]:
             raise ValueError("solutions contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"solution {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"solution {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -286,7 +279,10 @@ def _ensure_parent_target(doc: dict[str, Any]) -> None:
     if _source_term_id(doc) != MEDIA_TERM:
         raise ValueError(f"{PARENT_PATH}: expected media term {MEDIA_TERM}")
 
-    signature = (_signature(doc.get("ingredients"), "ingredients"), _solution_signature(doc.get("solutions")))
+    signature = (
+        _signature(doc.get("ingredients"), "ingredients"),
+        _solution_signature(doc.get("solutions")),
+    )
     if signature not in (
         (IMPORTED_PARENT_INGREDIENTS, ()),
         (FINAL_INGREDIENTS, FINAL_SOLUTIONS),
@@ -296,9 +292,7 @@ def _ensure_parent_target(doc: dict[str, Any]) -> None:
 
 def _ensure_solution_target(doc: dict[str, Any]) -> None:
     if doc.get("id") != SOLUTION_ID:
-        raise ValueError(
-            f"{SOLUTION_PATH}: expected id {SOLUTION_ID}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{SOLUTION_PATH}: expected id {SOLUTION_ID}, found {doc.get('id')!r}")
     if _record_term_id(doc) != SOLUTION_TERM:
         raise ValueError(f"{SOLUTION_PATH}: expected solution term {SOLUTION_TERM}")
 
@@ -336,7 +330,11 @@ def _ensure_flags(doc: dict[str, Any], *, no_unmapped: bool = True) -> None:
     if not isinstance(flags, list):
         raise ValueError("data_quality_flags is not a list")
 
-    for obsolete in ("incomplete_composition", "needs_manual_curation", "source_information_unavailable"):
+    for obsolete in (
+        "incomplete_composition",
+        "needs_manual_curation",
+        "source_information_unavailable",
+    ):
         while obsolete in flags:
             flags.remove(obsolete)
     for flag in ("ingredients_curated", "has_ontology_mappings"):

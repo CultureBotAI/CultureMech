@@ -85,13 +85,14 @@ def test_repair_expands_base_and_stock_wrappers(repair_module) -> None:
     assert repaired["medium_type"] == "COMPLEX"
     assert repaired["composition_type"] == "UNDEFINED"
     assert repaired["physical_state"] == "LIQUID"
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._solution_signatures(repaired) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
     )
+    assert repair_module._solution_signatures(repaired) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     assert "Base Medium" not in ingredients
     assert "Stock Solutions" not in solutions
     assert ingredients["DI Water"]["concentration"] == {

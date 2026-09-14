@@ -135,10 +135,7 @@ def test_repair_record_adds_references_and_history_once(repair) -> None:
     matching_events = [
         event
         for event in twice["curation_history"]
-        if (
-            event.get("curator") == repair.CURATOR
-            and event.get("action") == repair.ACTION
-        )
+        if (event.get("curator") == repair.CURATOR and event.get("action") == repair.ACTION)
     ]
     assert len(matching_events) == 1
 

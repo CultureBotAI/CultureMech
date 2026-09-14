@@ -44,8 +44,7 @@ def _doc(target) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": target.physical_state,
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_signature
+            _ingredient(name, value, unit) for name, value, unit in target.imported_signature
         ],
         "media_term": {
             "preferred_term": "source medium",
@@ -60,8 +59,7 @@ def _doc(target) -> dict:
 def _togo_m676_doc(repair_module, target) -> dict:
     doc = _doc(target)
     doc["solutions"] = [
-        _ingredient(name, value, unit)
-        for name, value, unit in repair_module.IMPORTED_M676_SOLUTION
+        _ingredient(name, value, unit) for name, value, unit in repair_module.IMPORTED_M676_SOLUTION
     ]
     return doc
 
@@ -118,9 +116,7 @@ def test_togo_m675_becomes_jcm_659_source_duplicate(
     assert repaired["ph_value"] == 7.5
     assert repaired["parent_media"] == repair_module.JCM_J659_PARENT
     assert repaired["variant_relationship"] == "SOURCE_DUPLICATE"
-    assert repaired["variant_modifications"] == [
-        repair_module.M675_VARIANT_MODIFICATION
-    ]
+    assert repaired["variant_modifications"] == [repair_module.M675_VARIANT_MODIFICATION]
     assert scorer_module.score_record(repaired) == (0, [])
 
 
@@ -143,9 +139,7 @@ def test_togo_m676_becomes_jcm_659_liquid_variant(
     assert repaired["solutions"][0]["composition"][0]["preferred_term"] == "NaCl"
     assert repaired["parent_media"] == repair_module.JCM_J659_LIQUID_PARENT
     assert repaired["variant_relationship"] == "PHYSICAL_STATE_VARIANT"
-    assert repaired["variant_modifications"] == [
-        repair_module.M676_VARIANT_MODIFICATION
-    ]
+    assert repaired["variant_modifications"] == [repair_module.M676_VARIANT_MODIFICATION]
     assert scorer_module.score_record(repaired) == (0, [])
 
 
@@ -170,14 +164,11 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     twice = repair_module.repair_record(once, target)
 
     assert twice == once
-    assert once["references"] == [
-        {"reference": reference} for reference in target.references
-    ]
+    assert once["references"] == [{"reference": reference} for reference in target.references]
     matching_events = [
         event
         for event in once["curation_history"]
-        if event.get("curator") == repair_module.CURATOR
-        and event.get("action") == target.action
+        if event.get("curator") == repair_module.CURATOR and event.get("action") == target.action
     ]
     assert len(matching_events) == 1
     assert "empty Artificial seawater cross-reference" in matching_events[0]["notes"]

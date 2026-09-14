@@ -20,8 +20,7 @@ TARGET = "archaea/methanogenium_sp_medium.yaml"
 EXPECTED_ID = "CultureMech:005910"
 EXPECTED_MEDIA_TERM = "komodo.medium:532"
 SOURCE_URL = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=532"
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=532"
 )
 SOURCE_NAME = "KOMODO MediaInfo 532"
 YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)

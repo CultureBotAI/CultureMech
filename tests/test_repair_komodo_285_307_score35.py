@@ -60,9 +60,7 @@ def scorer():
     return _load_script(SCORER, "score_review_need_for_komodo_285_307")
 
 
-def test_repair_record_adds_sulfate_free_syntrophus_components(
-    repair, scorer
-) -> None:
+def test_repair_record_adds_sulfate_free_syntrophus_components(repair, scorer) -> None:
     target = repair.TARGETS[0]
     once = repair.repair_record(_doc(target), target)
     twice = repair.repair_record(once, target)
@@ -84,9 +82,7 @@ def test_repair_record_adds_sulfate_free_syntrophus_components(
     }
 
 
-def test_repair_record_adds_syntrophobacter_wolinii_components(
-    repair, scorer
-) -> None:
+def test_repair_record_adds_syntrophobacter_wolinii_components(repair, scorer) -> None:
     target = repair.TARGETS[1]
     once = repair.repair_record(_doc(target), target)
     twice = repair.repair_record(once, target)

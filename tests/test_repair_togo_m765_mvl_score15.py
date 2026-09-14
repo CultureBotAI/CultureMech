@@ -44,8 +44,7 @@ def _doc(target) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "SOLID_AGAR",
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_ingredients
+            _ingredient(name, value, unit) for name, value, unit in target.imported_ingredients
         ],
         "media_term": {
             "preferred_term": "source medium",
@@ -55,8 +54,7 @@ def _doc(target) -> dict:
         "applications": ["Microbial cultivation"],
         "curation_history": [],
         "solutions": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_solutions
+            _ingredient(name, value, unit) for name, value, unit in target.imported_solutions
         ],
     }
 
@@ -76,14 +74,20 @@ def test_jcm_j740_becomes_canonical_nested_parent(
 ) -> None:
     repaired = _repair(repair_module, repair_module.JCM_J740_PATH)
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._signature(
-        repaired["solutions"],
-        "solutions",
-    ) == repair_module.FINAL_SOLUTION_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            repaired["solutions"],
+            "solutions",
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURE
+    )
     assert repaired["variant_children"] == [repair_module.M765_CHILD]
     assert "parent_media" not in repaired
     assert scorer_module.score_record(repaired) == (5, ["no pH and no temperature"])
@@ -134,8 +138,7 @@ def test_repair_scales_main_solution_and_nests_percent_stocks(
         "concentration": {"value": "3.0", "unit": "PERCENT_W_V"},
         "source": "TOGO M765 / JCM Medium 740",
         "notes": (
-            "TOGO M765 / JCM Medium 740 specifies "
-            "3% L-Cysteine HCl x H2O solution as 3.0% w/v."
+            "TOGO M765 / JCM Medium 740 specifies " "3% L-Cysteine HCl x H2O solution as 3.0% w/v."
         ),
         "term": {
             "id": "CHEBI:91248",
@@ -151,17 +154,13 @@ def test_repair_scales_main_solution_and_nests_percent_stocks(
 
 def test_repair_adds_references_flags_and_event_once(repair_module) -> None:
     target = next(
-        target
-        for target in repair_module.TARGETS
-        if target.path == repair_module.TOGO_M765_PATH
+        target for target in repair_module.TARGETS if target.path == repair_module.TOGO_M765_PATH
     )
     once = repair_module.repair_record(_doc(target), target)
     twice = repair_module.repair_record(once, target)
 
     assert twice == once
-    assert once["references"] == [
-        {"reference": reference} for reference in target.references
-    ]
+    assert once["references"] == [{"reference": reference} for reference in target.references]
     assert once["data_quality_flags"] == [
         "ingredients_curated",
         "has_ontology_mappings",
@@ -170,8 +169,7 @@ def test_repair_adds_references_flags_and_event_once(repair_module) -> None:
     matching_events = [
         event
         for event in twice["curation_history"]
-        if event.get("curator") == repair_module.CURATOR
-        and event.get("action") == target.action
+        if event.get("curator") == repair_module.CURATOR and event.get("action") == target.action
     ]
     assert len(matching_events) == 1
     assert "MediaDive J740" in matching_events[0]["notes"]
@@ -188,9 +186,7 @@ def test_repair_rejects_wrong_id(repair_module) -> None:
 
 def test_repair_rejects_ingredient_drift(repair_module) -> None:
     target = next(
-        target
-        for target in repair_module.TARGETS
-        if target.path == repair_module.TOGO_M765_PATH
+        target for target in repair_module.TARGETS if target.path == repair_module.TOGO_M765_PATH
     )
     doc = _doc(target)
     doc["ingredients"].pop()
@@ -201,9 +197,7 @@ def test_repair_rejects_ingredient_drift(repair_module) -> None:
 
 def test_repair_rejects_solution_drift(repair_module) -> None:
     target = next(
-        target
-        for target in repair_module.TARGETS
-        if target.path == repair_module.TOGO_M765_PATH
+        target for target in repair_module.TARGETS if target.path == repair_module.TOGO_M765_PATH
     )
     doc = _doc(target)
     doc["solutions"][0]["preferred_term"] = "sodium carbonate"

@@ -79,10 +79,13 @@ def test_repair_promotes_nbrc_formula_to_direct_grounded_components(
 ) -> None:
     repaired = repair_module.repair_record(_doc(repair_module))
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert "solutions" not in repaired
     assert "CO2" not in _by_name(repaired["ingredients"])
     assert repaired["data_quality_flags"] == [
@@ -113,9 +116,7 @@ def test_repair_corrects_water_sodium_carbonate_and_roles(repair_module) -> None
         "label": "sodium carbonate",
     }
     assert ingredients["Na2CO3"]["physicochemical_roles"] == ["BUFFER"]
-    assert ingredients["Agar (if needed)"]["physicochemical_roles"] == [
-        "SOLIDIFYING_AGENT"
-    ]
+    assert ingredients["Agar (if needed)"]["physicochemical_roles"] == ["SOLIDIFYING_AGENT"]
 
 
 def test_repair_adds_ph_atmosphere_preparation_sterilization_and_refs(

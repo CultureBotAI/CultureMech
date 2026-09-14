@@ -76,8 +76,7 @@ INGREDIENT_NOTES = {
         "serum product is retained as an opaque component."
     ),
     THALLIUM_ACETATE: (
-        "TOGO M2887 lists 0.125 mg/ml Thallium acetate, equivalent to "
-        "0.125 g/L."
+        "TOGO M2887 lists 0.125 mg/ml Thallium acetate, equivalent to " "0.125 g/L."
     ),
     PPLO_MEDIUM: (
         "TOGO M2887 lists 1 L PPLO medium; this undefined complex medium "
@@ -120,8 +119,7 @@ def _component(preferred_term: str, value: str, unit: str) -> dict[str, Any]:
 
 
 INGREDIENTS = tuple(
-    _component(name, value, unit)
-    for name, value, unit in FINAL_INGREDIENT_SIGNATURE
+    _component(name, value, unit) for name, value, unit in FINAL_INGREDIENT_SIGNATURE
 )
 
 
@@ -156,9 +154,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

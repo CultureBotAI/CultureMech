@@ -71,9 +71,7 @@ FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     (PHYTONE_PEPTONE, "5.0", "G_PER_L"),
 )
 
-MGSO4_STOCK_SIGNATURE: tuple[Component, ...] = (
-    (MGSO4, "1.0", "MOLAR"),
-)
+MGSO4_STOCK_SIGNATURE: tuple[Component, ...] = ((MGSO4, "1.0", "MOLAR"),)
 
 FINAL_SOLUTION_SIGNATURE: tuple[SolutionSignature, ...] = (
     (MGSO4_STOCK, "1.0", "ML_PER_L", MGSO4_STOCK_SIGNATURE),
@@ -93,9 +91,7 @@ GROUNDINGS: dict[str, tuple[str, str]] = {
     PHYTONE_PEPTONE: ("FOODON:03315720", "Soy peptone"),
 }
 
-MEDIAINGREDIENT_CHEBI = frozenset(
-    {MGSO4, WATER, ASCORBIC_ACID, GLYCEROPHOSPHATE, GLUCOSE}
-)
+MEDIAINGREDIENT_CHEBI = frozenset({MGSO4, WATER, ASCORBIC_ACID, GLYCEROPHOSPHATE, GLUCOSE})
 
 NOTES = (
     "TOGO M2214 describes Modified M17 medium with glucose replacing lactose: "
@@ -107,14 +103,11 @@ NOTES = (
 )
 
 INGREDIENT_NOTES = {
-    MGSO4: (
-        "TOGO M2214 adds 1 ml/L of 1.0 M MgSO4.7H2O from May and Baker."
-    ),
+    MGSO4: ("TOGO M2214 adds 1 ml/L of 1.0 M MgSO4.7H2O from May and Baker."),
     WATER: "TOGO M2214 lists 1000 ml/L Distilled water.",
     ASCORBIC_ACID: "TOGO M2214 lists 0.5 g/L Ascorbic acid from Sigma.",
     GLYCEROPHOSPHATE: (
-        "TOGO M2214 lists 19 g/L beta-Disodium glycerophosphate grade II "
-        "from Sigma."
+        "TOGO M2214 lists 19 g/L beta-Disodium glycerophosphate grade II " "from Sigma."
     ),
     GLUCOSE: "TOGO M2214 lists 5 g/L Glucose.",
     YEAST_EXTRACT: "TOGO M2214 lists 2.5 g/L Yeast extract from BBL.",
@@ -240,9 +233,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -265,9 +256,7 @@ def _solution_signature(rows: Any, label: str) -> tuple[SolutionSignature, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

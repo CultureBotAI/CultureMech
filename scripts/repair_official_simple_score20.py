@@ -448,8 +448,7 @@ def _jcm_69_recipe() -> dict[str, Any]:
                 "step_number": 1,
                 "action": "MIX",
                 "description": (
-                    "Add 50.0 g/L NaCl to 1.0 L GYP-sodium "
-                    "acetate-mineral salts broth."
+                    "Add 50.0 g/L NaCl to 1.0 L GYP-sodium " "acetate-mineral salts broth."
                 ),
             }
         ],
@@ -459,8 +458,7 @@ def _jcm_69_recipe() -> dict[str, Any]:
             "id": GYP_SODIUM_ACETATE["id"],
             "name": "gyp_sodium_acetate_mineral_salts_broth",
             "notes": (
-                "Supplements 1.0 L GYP-sodium acetate-mineral salts broth "
-                "with 50.0 g/L NaCl."
+                "Supplements 1.0 L GYP-sodium acetate-mineral salts broth " "with 50.0 g/L NaCl."
             ),
         },
         "variant_relationship": "SALINITY_VARIANT",
@@ -1137,8 +1135,7 @@ TARGETS: tuple[Target, ...] = (
                     "step_number": 1,
                     "action": "FILTER",
                     "description": (
-                        "Filter canned tomatoes through paper and leave "
-                        "overnight at 10 C."
+                        "Filter canned tomatoes through paper and leave " "overnight at 10 C."
                     ),
                 },
                 {
@@ -1163,8 +1160,7 @@ TARGETS: tuple[Target, ...] = (
         expected_id="CultureMech:000910",
         expected_media_term="mediadive.medium:1447",
         notes=(
-            "DSMZ Medium 1447 contains 5.0 g malt extract powder, 1.0 L water, "
-            "and 15.0 g agar."
+            "DSMZ Medium 1447 contains 5.0 g malt extract powder, 1.0 L water, " "and 15.0 g agar."
         ),
         recipe={
             "medium_type": "COMPLEX",
@@ -1366,8 +1362,7 @@ TARGETS: tuple[Target, ...] = (
                     "G_PER_L",
                     source="JCM Medium 612",
                     notes=(
-                        "JCM Medium 612 lists 38.0 g Reinforced clostridial "
-                        "medium (BD-Difco)."
+                        "JCM Medium 612 lists 38.0 g Reinforced clostridial " "medium (BD-Difco)."
                     ),
                 ),
                 _agar("JCM Medium 612", "15.0"),
@@ -1552,8 +1547,7 @@ TARGETS: tuple[Target, ...] = (
                     "step_number": 1,
                     "action": "MIX",
                     "description": (
-                        "Suspend 9.35 g Marine broth 2216 (BD-Difco) in "
-                        "1.0 L distilled water."
+                        "Suspend 9.35 g Marine broth 2216 (BD-Difco) in " "1.0 L distilled water."
                     ),
                 },
                 {
@@ -1574,9 +1568,7 @@ TARGETS: tuple[Target, ...] = (
                 ),
             },
             "variant_relationship": "CONCENTRATION_VARIANT",
-            "variant_modifications": [
-                "Uses 9.35 g/L Marine broth 2216 (BD-Difco)."
-            ],
+            "variant_modifications": ["Uses 9.35 g/L Marine broth 2216 (BD-Difco)."],
         },
         reference_urls=(TOGO_M1115, JCM_1049),
     ),
@@ -1607,8 +1599,7 @@ TARGETS: tuple[Target, ...] = (
                     "step_number": 1,
                     "action": "MIX",
                     "description": (
-                        "Suspend 41.7 g GAM broth, modified (Nissui) in "
-                        "1.0 L distilled water."
+                        "Suspend 41.7 g GAM broth, modified (Nissui) in " "1.0 L distilled water."
                     ),
                 },
                 {
@@ -1648,8 +1639,7 @@ TARGETS: tuple[Target, ...] = (
                     "step_number": 1,
                     "action": "MIX",
                     "description": (
-                        "Suspend 56.7 g GAM agar, modified (Nissui), in "
-                        "1.0 L distilled water."
+                        "Suspend 56.7 g GAM agar, modified (Nissui), in " "1.0 L distilled water."
                     ),
                 },
                 {
@@ -1791,10 +1781,7 @@ TARGETS: tuple[Target, ...] = (
                 _solution(
                     "Oatmeal agar (ISP-3)",
                     "1000",
-                    notes=(
-                        "JCM Medium 51 uses 1.0 L Oatmeal agar (ISP-3) "
-                        "from JCM Medium 50."
-                    ),
+                    notes=("JCM Medium 51 uses 1.0 L Oatmeal agar (ISP-3) " "from JCM Medium 50."),
                     culturemech_term=OATMEAL_ISP3,
                 )
             ],
@@ -1803,8 +1790,7 @@ TARGETS: tuple[Target, ...] = (
                     "step_number": 1,
                     "action": "MIX",
                     "description": (
-                        "Use 1.0 L Oatmeal agar (ISP-3) with 1.0 g/L "
-                        "Yeast extract (BD-Difco)."
+                        "Use 1.0 L Oatmeal agar (ISP-3) with 1.0 g/L " "Yeast extract (BD-Difco)."
                     ),
                 }
             ],
@@ -1820,10 +1806,7 @@ TARGETS: tuple[Target, ...] = (
             },
             "variant_relationship": "SUPPLEMENTED_VARIANT",
             "variant_modifications": [
-                (
-                    "Supplements 1.0 L Oatmeal agar (ISP-3) with 1.0 g/L "
-                    "Yeast extract (BD-Difco)."
-                )
+                "Supplements 1.0 L Oatmeal agar (ISP-3) with 1.0 g/L " "Yeast extract (BD-Difco)."
             ],
         },
         reference_urls=(JCM_51, JCM_50),
@@ -2241,7 +2224,9 @@ def _ensure_event(doc: dict[str, Any], target: Target) -> None:
 
 def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
     if doc.get("id") != target.expected_id:
-        raise ValueError(f"{target.path}: expected id {target.expected_id}, found {doc.get('id')!r}")
+        raise ValueError(
+            f"{target.path}: expected id {target.expected_id}, found {doc.get('id')!r}"
+        )
     if _source_term_id(doc) != target.expected_media_term:
         raise ValueError(f"{target.path}: expected media term {target.expected_media_term}")
 

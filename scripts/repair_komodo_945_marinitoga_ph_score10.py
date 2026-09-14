@@ -63,9 +63,7 @@ def _ingredient_signature(doc: dict[str, Any]) -> tuple[str, ...]:
     if not isinstance(ingredients, list):
         raise ValueError("ingredients is not a list")
     return tuple(
-        str(row.get("preferred_term") or "")
-        for row in ingredients
-        if isinstance(row, dict)
+        str(row.get("preferred_term") or "") for row in ingredients if isinstance(row, dict)
     )
 
 
@@ -116,12 +114,8 @@ def _ensure_ingredients_curated(doc: dict[str, Any]) -> None:
 
 def _upsert_child_entry(children: list[Any], entry: dict[str, str]) -> None:
     for index, existing in enumerate(children):
-        if (
-            isinstance(existing, dict)
-            and (
-                existing.get("id") == entry["id"]
-                or existing.get("path") == entry["path"]
-            )
+        if isinstance(existing, dict) and (
+            existing.get("id") == entry["id"] or existing.get("path") == entry["path"]
         ):
             children[index] = entry
             return

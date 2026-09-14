@@ -195,9 +195,7 @@ BN_PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
     {
         "step_number": 3,
         "action": "FILTER_STERILIZE",
-        "description": (
-            "Sterilize sodium benzoate and kanamycin separately by filtration."
-        ),
+        "description": ("Sterilize sodium benzoate and kanamycin separately by filtration."),
     },
     {
         "step_number": 4,
@@ -302,8 +300,7 @@ def _component(preferred_term: str, value: str, unit: str, source: str) -> dict[
 
     if preferred_term == "Agar (if needed)":
         row["notes"] = (
-            f"{source} lists {value} {UNIT_LABELS[unit]} agar if needed for "
-            "solid medium."
+            f"{source} lists {value} {UNIT_LABELS[unit]} agar if needed for " "solid medium."
         )
         row["physicochemical_roles"] = ["SOLIDIFYING_AGENT"]
     elif preferred_term in {"Kanamycin", "Sodium benzoate"}:
@@ -334,9 +331,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -382,9 +377,7 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}")
     if _source_term_id(doc) != target.media_term:
         raise ValueError(f"{target.path}: expected media term {target.media_term}")
 

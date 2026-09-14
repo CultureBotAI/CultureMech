@@ -138,17 +138,11 @@ EXPECTED_IDS = {
     Path("bacterial/KOMODO_468_EXIGUOBACTERIUM_MEDIUM.yaml"): "CultureMech:005581",
     Path("bacterial/KOMODO_581_GLYCEROL_CORNSTEEP_AGAR.yaml"): "CultureMech:006052",
     Path("bacterial/KOMODO_627_SEAWATER_LEMCO.yaml"): "CultureMech:006133",
-    Path("bacterial/KOMODO_675_BACILLUS_THERMANTARCTICUS_medium.yaml"): (
-        "CultureMech:006271"
-    ),
-    Path("bacterial/KOMODO_695_medium_FOR_ERYTHROBACTER_LONGUS.yaml"): (
-        "CultureMech:006313"
-    ),
+    Path("bacterial/KOMODO_675_BACILLUS_THERMANTARCTICUS_medium.yaml"): ("CultureMech:006271"),
+    Path("bacterial/KOMODO_695_medium_FOR_ERYTHROBACTER_LONGUS.yaml"): ("CultureMech:006313"),
     Path("bacterial/KOMODO_736_RICH_medium.yaml"): "CultureMech:006384",
     Path("bacterial/KOMODO_80_GLYCEROL-SOIL_medium.yaml"): "CultureMech:006527",
-    Path("bacterial/KOMODO_948_OXOID_NUTRIENT_BROTH.yaml"): (
-        "CultureMech:006886"
-    ),
+    Path("bacterial/KOMODO_948_OXOID_NUTRIENT_BROTH.yaml"): ("CultureMech:006886"),
     Path("bacterial/KOMODO_974_1_2_YTSS_medium.yaml"): "CultureMech:006932",
 }
 
@@ -181,9 +175,7 @@ TARGET_TERMS = {
         "Peptone",
         "Yeast extract",
     ),
-    Path("bacterial/KOMODO_468_EXIGUOBACTERIUM_MEDIUM.yaml"): (
-        "Yeast extract",
-    ),
+    Path("bacterial/KOMODO_468_EXIGUOBACTERIUM_MEDIUM.yaml"): ("Yeast extract",),
     Path("bacterial/KOMODO_581_GLYCEROL_CORNSTEEP_AGAR.yaml"): (
         "Beef extract",
         "Casein peptone",
@@ -262,9 +254,7 @@ def _ingredient_signature(doc: dict[str, Any]) -> tuple[str, ...]:
     if not isinstance(ingredients, list):
         raise ValueError("ingredients is not a list")
     return tuple(
-        str(row.get("preferred_term") or "")
-        for row in ingredients
-        if isinstance(row, dict)
+        str(row.get("preferred_term") or "") for row in ingredients if isinstance(row, dict)
     )
 
 

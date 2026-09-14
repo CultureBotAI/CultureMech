@@ -316,8 +316,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     if term:
         grounding = GROUNDINGS[preferred_term]
@@ -713,11 +712,15 @@ def _preparation_steps(target: Target) -> list[dict[str, Any]]:
     carbon_solution = (
         "glucose"
         if target == M1200
-        else "fructose"
-        if target == M1202
-        else "yeast extract and glycerin"
-        if target == M1203
-        else "yeast extract and sodium lactate"
+        else (
+            "fructose"
+            if target == M1202
+            else (
+                "yeast extract and glycerin"
+                if target == M1203
+                else "yeast extract and sodium lactate"
+            )
+        )
     )
     return [
         {

@@ -185,9 +185,7 @@ def test_plan_repairs_links_komodo_variants_to_dsmz_parent(
         ),
     }
     assert dsm_25720["variant_relationship"] == "PH_VARIANT"
-    assert dsm_25720["references"] == [
-        {"reference": repair_module.DSMZ_191_URL}
-    ]
+    assert dsm_25720["references"] == [{"reference": repair_module.DSMZ_191_URL}]
     assert scorer_module.score_record(dsm_25720) == (0, [])
 
     dsm_25939 = plans[root / repair_module.KOMODO_DSM_25939]
@@ -203,9 +201,7 @@ def test_plan_repairs_links_komodo_variants_to_dsmz_parent(
         ),
     }
     assert dsm_25939["variant_relationship"] == "PH_VARIANT"
-    assert dsm_25939["references"] == [
-        {"reference": repair_module.DSMZ_191_URL}
-    ]
+    assert dsm_25939["references"] == [{"reference": repair_module.DSMZ_191_URL}]
     assert scorer_module.score_record(dsm_25939) == (0, [])
 
 

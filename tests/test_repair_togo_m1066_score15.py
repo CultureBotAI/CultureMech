@@ -105,14 +105,20 @@ def test_repair_moves_clostridium_swellfunianum_medium_into_solutions(
         "value": "0.2",
         "unit": "ML_PER_L",
     }
-    assert repair_module._signature(
-        solutions["Sol. 1"]["composition"],
-        "Sol. 1",
-    ) == repair_module.SOLUTION_1_SIGNATURE
-    assert repair_module._signature(
-        solutions["Sol. 2"]["composition"],
-        "Sol. 2",
-    ) == repair_module.SOLUTION_2_SIGNATURE
+    assert (
+        repair_module._signature(
+            solutions["Sol. 1"]["composition"],
+            "Sol. 1",
+        )
+        == repair_module.SOLUTION_1_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            solutions["Sol. 2"]["composition"],
+            "Sol. 2",
+        )
+        == repair_module.SOLUTION_2_SIGNATURE
+    )
 
 
 def test_repair_expands_m1066_percent_stocks(repair_module) -> None:
@@ -137,30 +143,48 @@ def test_repair_expands_m1066_percent_stocks(repair_module) -> None:
         "unit": "VARIABLE",
     }
     assert "composition" not in sol_2_components["3% (w/v) Na2S x 9H2O solution"]
-    assert repair_module._signature(
-        cacl2["composition"],
-        "1% CaCl2 x 2H2O solution",
-    ) == repair_module.CACL2_STOCK_SIGNATURE
-    assert repair_module._signature(
-        mgcl2["composition"],
-        "2% MgCl2 x 6H2O solution",
-    ) == repair_module.MGCL2_STOCK_SIGNATURE
-    assert repair_module._signature(
-        resazurin["composition"],
-        "1% Resazurin solution",
-    ) == repair_module.RESAZURIN_STOCK_SIGNATURE
-    assert repair_module._signature(
-        nahco3["composition"],
-        "10% (w/v) NaHCO3 solution",
-    ) == repair_module.NAHCO3_STOCK_SIGNATURE
-    assert repair_module._signature(
-        glucose["composition"],
-        "20% (w/v) Glucose solution",
-    ) == repair_module.GLUCOSE_STOCK_SIGNATURE
-    assert repair_module._signature(
-        na2s["composition"],
-        "3% (w/v) Na2S x 9H2O solution",
-    ) == repair_module.NA2S_STOCK_SIGNATURE
+    assert (
+        repair_module._signature(
+            cacl2["composition"],
+            "1% CaCl2 x 2H2O solution",
+        )
+        == repair_module.CACL2_STOCK_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            mgcl2["composition"],
+            "2% MgCl2 x 6H2O solution",
+        )
+        == repair_module.MGCL2_STOCK_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            resazurin["composition"],
+            "1% Resazurin solution",
+        )
+        == repair_module.RESAZURIN_STOCK_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            nahco3["composition"],
+            "10% (w/v) NaHCO3 solution",
+        )
+        == repair_module.NAHCO3_STOCK_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            glucose["composition"],
+            "20% (w/v) Glucose solution",
+        )
+        == repair_module.GLUCOSE_STOCK_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            na2s["composition"],
+            "3% (w/v) Na2S x 9H2O solution",
+        )
+        == repair_module.NA2S_STOCK_SIGNATURE
+    )
     assert na2s["composition"][0]["term"] == {
         "id": "CHEBI:76209",
         "label": "sodium sulfide nonahydrate",
@@ -172,10 +196,13 @@ def test_repair_expands_trace_element_solution_sl10(repair_module) -> None:
     trace_element = _by_name(repaired["solutions"])["Trace element solution SL-10"]
     components = _by_name(trace_element["composition"])
 
-    assert repair_module._signature(
-        trace_element["composition"],
-        "Trace element solution SL-10",
-    ) == repair_module.TRACE_ELEMENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            trace_element["composition"],
+            "Trace element solution SL-10",
+        )
+        == repair_module.TRACE_ELEMENT_SIGNATURE
+    )
     assert trace_element["concentration"] == {
         "value": "1.0",
         "unit": "ML_PER_L",
@@ -199,10 +226,13 @@ def test_repair_expands_m190_trace_vitamins(repair_module) -> None:
     trace_vitamins = _by_name(repaired["solutions"])["Trace vitamins"]
     components = _by_name(trace_vitamins["composition"])
 
-    assert repair_module._signature(
-        trace_vitamins["composition"],
-        "Trace vitamins",
-    ) == repair_module.TRACE_VITAMINS_SIGNATURE
+    assert (
+        repair_module._signature(
+            trace_vitamins["composition"],
+            "Trace vitamins",
+        )
+        == repair_module.TRACE_VITAMINS_SIGNATURE
+    )
     assert components["Vitamin B12"]["concentration"] == {
         "value": "0.1",
         "unit": "MG_PER_L",
@@ -238,9 +268,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

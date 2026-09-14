@@ -77,9 +77,7 @@ TRACE_MINERALS_SIGNATURE: tuple[Component, ...] = (
     ("Distilled water", "1.0", "L"),
     ("KOH", "variable", "VARIABLE"),
 )
-SELENITE_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("Na2SeO3", "0.1", "PERCENT_W_V"),
-)
+SELENITE_STOCK_SIGNATURE: tuple[Component, ...] = (("Na2SeO3", "0.1", "PERCENT_W_V"),)
 TRACE_VITAMIN_SIGNATURE: tuple[Component, ...] = (
     ("Biotin", "2.0", "MG_PER_L"),
     ("Folic acid", "2.0", "MG_PER_L"),
@@ -93,9 +91,7 @@ TRACE_VITAMIN_SIGNATURE: tuple[Component, ...] = (
     ("Lipoic acid", "5.0", "MG_PER_L"),
     ("Distilled water", "1.0", "L"),
 )
-THIOSULFATE_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("Sodium thiosulfate", "1.0", "MOLAR"),
-)
+THIOSULFATE_STOCK_SIGNATURE: tuple[Component, ...] = (("Sodium thiosulfate", "1.0", "MOLAR"),)
 
 IMPORTED_SOLUTION_SIGNATURES: tuple[SolutionSignature, ...] = (
     ("0.1% Na2SeO3 solution", "1", "G_PER_L", ()),
@@ -188,8 +184,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     if term:
         grounding = GROUNDINGS[preferred_term]
@@ -399,9 +394,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

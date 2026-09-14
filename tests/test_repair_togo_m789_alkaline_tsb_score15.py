@@ -45,8 +45,7 @@ def _doc(target) -> dict:
         "physical_state": target.physical_state,
         "ph_value": 8.8,
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_ingredients
+            _ingredient(name, value, unit) for name, value, unit in target.imported_ingredients
         ],
         "media_term": {
             "preferred_term": "source medium",
@@ -61,8 +60,7 @@ def _doc(target) -> dict:
             "resolved_reference",
         ],
         "solutions": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_solutions
+            _ingredient(name, value, unit) for name, value, unit in target.imported_solutions
         ],
     }
 
@@ -83,14 +81,20 @@ def test_jcm_j763_becomes_canonical_liquid_parent(
     repaired = _repair(repair_module, repair_module.JCM_J763_PATH)
 
     assert repaired["physical_state"] == "LIQUID"
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.LIQUID_INGREDIENT_SIGNATURE
-    assert repair_module._signature(
-        repaired["solutions"],
-        "solutions",
-    ) == repair_module.FINAL_SOLUTION_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.LIQUID_INGREDIENT_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            repaired["solutions"],
+            "solutions",
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURE
+    )
     assert repaired["ph_range"] == {"min": 8.5, "max": 9.0}
     assert repaired["variant_children"] == [
         repair_module.M789_CHILD,
@@ -124,10 +128,13 @@ def test_togo_m790_links_to_jcm_as_solid_physical_variant(
     assert repaired["parent_media"] == repair_module.J763_PARENT_SOLID_VARIANT
     assert repaired["variant_relationship"] == "PHYSICAL_STATE_VARIANT"
     assert repaired["variant_modifications"] == [repair_module.SOLID_VARIANT_NOTE]
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.SOLID_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.SOLID_INGREDIENT_SIGNATURE
+    )
     assert scorer_module.score_record(repaired) == (0, [])
 
 
@@ -155,10 +162,7 @@ def test_repair_corrects_water_and_nests_sodium_carbonate(
         "preferred_term": "20% sodium carbonate solution",
         "concentration": {"value": "variable", "unit": "VARIABLE"},
         "source": "TOGO M790 / JCM Medium 763",
-        "notes": (
-            "TOGO M790 / JCM Medium 763 uses sterile 20% sodium carbonate "
-            "to adjust pH."
-        ),
+        "notes": ("TOGO M790 / JCM Medium 763 uses sterile 20% sodium carbonate " "to adjust pH."),
         "composition": [
             {
                 "preferred_term": "Na2CO3",
@@ -184,17 +188,13 @@ def test_repair_adds_references_flags_sterilization_and_event_once(
     repair_module,
 ) -> None:
     target = next(
-        target
-        for target in repair_module.TARGETS
-        if target.path == repair_module.TOGO_M789_PATH
+        target for target in repair_module.TARGETS if target.path == repair_module.TOGO_M789_PATH
     )
     once = repair_module.repair_record(_doc(target), target)
     twice = repair_module.repair_record(once, target)
 
     assert twice == once
-    assert once["references"] == [
-        {"reference": reference} for reference in target.references
-    ]
+    assert once["references"] == [{"reference": reference} for reference in target.references]
     assert once["data_quality_flags"] == [
         "ingredients_curated",
         "has_ontology_mappings",
@@ -204,8 +204,7 @@ def test_repair_adds_references_flags_sterilization_and_event_once(
     matching_events = [
         event
         for event in twice["curation_history"]
-        if event.get("curator") == repair_module.CURATOR
-        and event.get("action") == target.action
+        if event.get("curator") == repair_module.CURATOR and event.get("action") == target.action
     ]
     assert len(matching_events) == 1
     assert repair_module.MEDIADIVE_J763 in matching_events[0]["source"]
@@ -223,9 +222,7 @@ def test_repair_rejects_wrong_id(repair_module) -> None:
 
 def test_repair_rejects_ingredient_drift(repair_module) -> None:
     target = next(
-        target
-        for target in repair_module.TARGETS
-        if target.path == repair_module.TOGO_M789_PATH
+        target for target in repair_module.TARGETS if target.path == repair_module.TOGO_M789_PATH
     )
     doc = _doc(target)
     doc["ingredients"].pop()
@@ -236,9 +233,7 @@ def test_repair_rejects_ingredient_drift(repair_module) -> None:
 
 def test_repair_rejects_solution_drift(repair_module) -> None:
     target = next(
-        target
-        for target in repair_module.TARGETS
-        if target.path == repair_module.TOGO_M789_PATH
+        target for target in repair_module.TARGETS if target.path == repair_module.TOGO_M789_PATH
     )
     doc = _doc(target)
     doc["solutions"][0]["preferred_term"] = "NaHCO3 solution"

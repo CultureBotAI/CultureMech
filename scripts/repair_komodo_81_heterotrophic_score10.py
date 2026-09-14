@@ -95,11 +95,7 @@ def _ingredient_signature(doc: dict[str, Any]) -> tuple[tuple[str, str, str], ..
     ingredients = doc.get("ingredients") or []
     if not isinstance(ingredients, list):
         raise ValueError("ingredients is not a list")
-    return tuple(
-        _concentration_signature(row)
-        for row in ingredients
-        if isinstance(row, dict)
-    )
+    return tuple(_concentration_signature(row) for row in ingredients if isinstance(row, dict))
 
 
 def _solution_signature(
@@ -120,9 +116,7 @@ def _solution_signature(
             (
                 str(solution.get("preferred_term") or ""),
                 tuple(
-                    _concentration_signature(row)
-                    for row in composition
-                    if isinstance(row, dict)
+                    _concentration_signature(row) for row in composition if isinstance(row, dict)
                 ),
             )
         )

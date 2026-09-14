@@ -100,8 +100,7 @@ class Child:
         if self.relationship == STRAIN_RELATIONSHIP:
             return f"{self.source_label} applies ASO4 medium to {self.dsm}."
         return (
-            f"{self.source_label} applies ASO4 medium at pH {self.ph_value:g} "
-            f"for {self.dsm}."
+            f"{self.source_label} applies ASO4 medium at pH {self.ph_value:g} " f"for {self.dsm}."
         )
 
 

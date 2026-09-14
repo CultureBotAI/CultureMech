@@ -80,10 +80,13 @@ def test_repair_corrects_base_formula_and_conditions(repair_module) -> None:
     assert repaired["composition_type"] == "SEMI_DEFINED"
     assert repaired["ph_range"] == {"min": 6.0, "max": 6.2}
     assert repaired["temperature_value"] == 37.0
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
 
     ingredients = _by_name(repaired["ingredients"])
     assert ingredients["PPLO broth w/o Crystal Violet (BD-Difco 255420)"] == {
@@ -107,9 +110,12 @@ def test_repair_expands_phenol_red_stock(repair_module) -> None:
     solutions = _by_name(repaired["solutions"])
     phenol = solutions["1% Phenol red solution"]
 
-    assert repair_module._solution_signatures(
-        repaired,
-    ) == repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._solution_signatures(
+            repaired,
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURES
+    )
     assert phenol["concentration"] == {"value": "2.0", "unit": "ML_PER_L"}
     assert _by_name(phenol["composition"])["Phenol red"] == {
         "preferred_term": "Phenol red",
@@ -194,9 +200,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]
@@ -206,9 +210,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
         )
     ]
     assert len(matching_events) == 1
-    assert "moved the printed stock recipes under solutions" in (
-        matching_events[0]["notes"]
-    )
+    assert "moved the printed stock recipes under solutions" in (matching_events[0]["notes"])
 
 
 def test_repair_record_rejects_wrong_id(repair_module) -> None:

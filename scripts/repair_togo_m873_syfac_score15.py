@@ -438,10 +438,7 @@ def _component(
 
 
 def _composition(source: str, rows: tuple[Component, ...]) -> list[dict[str, Any]]:
-    return [
-        _component(name, value, unit, source=source)
-        for name, value, unit in rows
-    ]
+    return [_component(name, value, unit, source=source) for name, value, unit in rows]
 
 
 def _stock_solution(
@@ -483,8 +480,7 @@ def _solutions(source: str) -> list[dict[str, Any]]:
             _composition(source, WOLFE_COMPOSITION),
             source=source,
             notes=(
-                f"{source} adds 1.0 ml/L Wolfe's mineral elixir from JCM "
-                "Medium 470 / TOGO M471."
+                f"{source} adds 1.0 ml/L Wolfe's mineral elixir from JCM " "Medium 470 / TOGO M471."
             ),
         ),
         _stock_solution(
@@ -552,9 +548,7 @@ def _flat_solution_component(
 def _solution_4801_composition(source: str) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     for name, value, unit in SOLUTION_4801_COMPOSITION:
-        if unit == "ML_PER_L" and (
-            name in CULTUREMECH_SOLUTIONS or name in STOCK_SOLUTION_TERMS
-        ):
+        if unit == "ML_PER_L" and (name in CULTUREMECH_SOLUTIONS or name in STOCK_SOLUTION_TERMS):
             rows.append(_flat_solution_component(name, value, source=source))
         else:
             rows.append(_component(name, value, unit, source=source))

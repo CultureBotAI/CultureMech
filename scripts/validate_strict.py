@@ -25,9 +25,9 @@ import os
 import re
 import subprocess
 import sys
+from collections.abc import Iterable
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
-from typing import Iterable
 
 import yaml
 from linkml.validator import Validator
@@ -37,8 +37,10 @@ from linkml.validator.report import Severity
 _REPO_ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_PATH = _REPO_ROOT / "src" / "culturemech" / "schema" / "culturemech.yaml"
 OAK_CONFIG_PATH = _REPO_ROOT / "conf" / "oak_config.yaml"
-DEFAULT_ROOTS = [_REPO_ROOT / "data" / "normalized_yaml" / sub
-                 for sub in ("algae", "bacterial", "fungal", "archaea", "specialized")]
+DEFAULT_ROOTS = [
+    _REPO_ROOT / "data" / "normalized_yaml" / sub
+    for sub in ("algae", "bacterial", "fungal", "archaea", "specialized")
+]
 
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -62,6 +64,7 @@ def infer_target_class(instance: dict) -> str:
     """
     return "SolutionRecipe" if has_solution_shape(instance) else "MediaRecipe"
 
+
 # Per-worker singleton — built lazily after fork so the schema parses once per
 # worker process, not once per file.
 _VALIDATOR: Validator | None = None
@@ -80,20 +83,18 @@ def _get_validator() -> Validator:
 # Classifier regexes — keep narrow so each category is meaningful and the rest
 # fall into "other" for manual review rather than getting silently bucketed.
 _CATEGORY_RULES: list[tuple[str, re.Pattern[str]]] = [
-    ("unexpected_field",
-     re.compile(r"Additional properties are not allowed \('(?P<key>[^']+)' was unexpected\) in (?P<path>\S+)")),
-    ("missing_required",
-     re.compile(r"'(?P<key>[^']+)' is a required property in (?P<path>\S+)")),
-    ("enum_mismatch",
-     re.compile(r"'(?P<value>[^']+)' is not one of \[(?P<choices>[^\]]+)\]")),
-    ("type_mismatch",
-     re.compile(r"(?P<value>'[^']+'|\S+) is not of type '(?P<type>[^']+)'")),
-    ("pattern_mismatch",
-     re.compile(r"(?P<value>'[^']+'|\S+) does not match (?P<pattern>'[^']+')")),
-    ("format_mismatch",
-     re.compile(r"(?P<value>'[^']+'|\S+) is not a '(?P<format>[^']+)'")),
-    ("range_violation",
-     re.compile(r"(?P<value>\S+) is (less than|greater than) (?P<bound>\S+)")),
+    (
+        "unexpected_field",
+        re.compile(
+            r"Additional properties are not allowed \('(?P<key>[^']+)' was unexpected\) in (?P<path>\S+)"
+        ),
+    ),
+    ("missing_required", re.compile(r"'(?P<key>[^']+)' is a required property in (?P<path>\S+)")),
+    ("enum_mismatch", re.compile(r"'(?P<value>[^']+)' is not one of \[(?P<choices>[^\]]+)\]")),
+    ("type_mismatch", re.compile(r"(?P<value>'[^']+'|\S+) is not of type '(?P<type>[^']+)'")),
+    ("pattern_mismatch", re.compile(r"(?P<value>'[^']+'|\S+) does not match (?P<pattern>'[^']+')")),
+    ("format_mismatch", re.compile(r"(?P<value>'[^']+'|\S+) is not a '(?P<format>[^']+)'")),
+    ("range_violation", re.compile(r"(?P<value>\S+) is (less than|greater than) (?P<bound>\S+)")),
 ]
 
 
@@ -115,50 +116,58 @@ def validate_one(path: Path) -> list[dict]:
         with path.open() as f:
             instance = yaml.safe_load(f)
     except yaml.YAMLError as e:
-        return [{
-            "file": str(path),
-            "layer": "schema",
-            "category": "yaml_parse_error",
-            "detail": "",
-            "path": "",
-            "message": str(e).splitlines()[0][:300],
-        }]
+        return [
+            {
+                "file": str(path),
+                "layer": "schema",
+                "category": "yaml_parse_error",
+                "detail": "",
+                "path": "",
+                "message": str(e).splitlines()[0][:300],
+            }
+        ]
     if instance is None:
-        return [{
-            "file": str(path),
-            "layer": "schema",
-            "category": "empty_file",
-            "detail": "",
-            "path": "",
-            "message": "file parsed as None",
-        }]
+        return [
+            {
+                "file": str(path),
+                "layer": "schema",
+                "category": "empty_file",
+                "detail": "",
+                "path": "",
+                "message": "file parsed as None",
+            }
+        ]
 
     target_class = infer_target_class(instance)
     try:
         report = validator.validate(instance, target_class=target_class)
     except Exception as e:  # noqa: BLE001 — surface anything weird as a row
-        return [{
-            "file": str(path),
-            "layer": "schema",
-            "category": "validator_crash",
-            "detail": type(e).__name__,
-            "path": "",
-            "message": str(e)[:300],
-        }]
+        return [
+            {
+                "file": str(path),
+                "layer": "schema",
+                "category": "validator_crash",
+                "detail": type(e).__name__,
+                "path": "",
+                "message": str(e)[:300],
+            }
+        ]
 
     rows = []
     for result in report.results:
         if result.severity != Severity.ERROR:
             continue
         category, detail = classify(result.message)
-        rows.append({
-            "file": str(path),
-            "layer": "schema",
-            "category": category,
-            "detail": detail,
-            "path": result.instance_index or "",
-            "message": result.message[:300],
-        })
+        rows.append(
+            {
+                "file": str(path),
+                "layer": "schema",
+                "category": category,
+                "detail": detail,
+                "path": result.instance_index or "",
+                "message": result.message[:300],
+            }
+        )
     return rows
 
 
@@ -170,33 +179,52 @@ def _run_external_validator(cmd: list[str], path: Path, layer: str) -> list[dict
     We capture anything matching that and turn it into a row.
     """
     try:
-        proc = subprocess.run(
-            cmd, capture_output=True, text=True, timeout=120, check=False
-        )
+        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=120, check=False)
     except subprocess.TimeoutExpired:
-        return [{
-            "file": str(path), "layer": layer, "category": "validator_timeout",
-            "detail": "", "path": "", "message": f"{layer} validator timed out",
-        }]
+        return [
+            {
+                "file": str(path),
+                "layer": layer,
+                "category": "validator_timeout",
+                "detail": "",
+                "path": "",
+                "message": f"{layer} validator timed out",
+            }
+        ]
     out = (proc.stdout or "") + "\n" + (proc.stderr or "")
     rows: list[dict] = []
     for line in out.splitlines():
         stripped = line.strip()
         if not stripped:
             continue
-        if stripped.startswith("[ERROR]") or stripped.startswith("ERROR:") or "ERROR" in stripped.split()[:2]:
+        if (
+            stripped.startswith("[ERROR]")
+            or stripped.startswith("ERROR:")
+            or "ERROR" in stripped.split()[:2]
+        ):
             msg = stripped[:300]
-            rows.append({
-                "file": str(path), "layer": layer, "category": "external_error",
-                "detail": "", "path": "", "message": msg,
-            })
+            rows.append(
+                {
+                    "file": str(path),
+                    "layer": layer,
+                    "category": "external_error",
+                    "detail": "",
+                    "path": "",
+                    "message": msg,
+                }
+            )
     if proc.returncode != 0 and not rows:
         # Validator exited nonzero but emitted no parseable ERROR line; surface anyway.
-        rows.append({
-            "file": str(path), "layer": layer, "category": "external_error",
-            "detail": f"rc={proc.returncode}", "path": "",
-            "message": (out.strip()[:300] or f"{layer} validator returned {proc.returncode}"),
-        })
+        rows.append(
+            {
+                "file": str(path),
+                "layer": layer,
+                "category": "external_error",
+                "detail": f"rc={proc.returncode}",
+                "path": "",
+                "message": (out.strip()[:300] or f"{layer} validator returned {proc.returncode}"),
+            }
+        )
     return rows
 
 
@@ -216,21 +244,40 @@ def _peek_target_class(path: Path) -> str:
 def validate_terms(path: Path, target_class: str) -> list[dict]:
     return _run_external_validator(
         [
-            "uv", "run", "linkml-term-validator", "validate-data", str(path),
-            "-s", str(SCHEMA_PATH), "-t", target_class,
-            "--labels", "-c", str(OAK_CONFIG_PATH),
+            "uv",
+            "run",
+            "linkml-term-validator",
+            "validate-data",
+            str(path),
+            "-s",
+            str(SCHEMA_PATH),
+            "-t",
+            target_class,
+            "--labels",
+            "-c",
+            str(OAK_CONFIG_PATH),
         ],
-        path, "terms",
+        path,
+        "terms",
     )
 
 
 def validate_references(path: Path, target_class: str) -> list[dict]:
     return _run_external_validator(
         [
-            "uv", "run", "linkml-reference-validator", "validate", "data", str(path),
-            "--schema", str(SCHEMA_PATH), "--target-class", target_class,
+            "uv",
+            "run",
+            "linkml-reference-validator",
+            "validate",
+            "data",
+            str(path),
+            "--schema",
+            str(SCHEMA_PATH),
+            "--target-class",
+            target_class,
         ],
-        path, "references",
+        path,
+        "references",
     )
 
 
@@ -242,7 +289,9 @@ def validate_one_layered(path: Path, layers: tuple[str, ...]) -> list[dict]:
     standalone solution records aren't false-failed against MediaRecipe.
     """
     rows: list[dict] = []
-    target_class = _peek_target_class(path) if {"terms", "references"} & set(layers) else "MediaRecipe"
+    target_class = (
+        _peek_target_class(path) if {"terms", "references"} & set(layers) else "MediaRecipe"
+    )
     if "schema" in layers:
         rows.extend(validate_one(path))
     if "terms" in layers:
@@ -264,31 +313,49 @@ def iter_yaml_files(paths: Iterable[Path]) -> list[Path]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("paths", nargs="*", type=Path,
-                        help="Files or directories. Defaults to standard normalized_yaml subdirs.")
-    parser.add_argument("--out", type=Path, default=Path("reports/instance_validation_failures.tsv"),
-                        help="TSV output path.")
-    parser.add_argument("--sample", type=int, metavar="N",
-                        help="Validate only the first N files (after sorting). Useful for smoke tests.")
-    parser.add_argument("--workers", type=int, default=max(1, (os.cpu_count() or 4) - 1),
-                        help="Process pool size. Default: ncpu - 1.")
-    parser.add_argument("--fail-on", choices=("error", "never"), default="error",
-                        help="Exit non-zero policy. 'error' (default) exits 1 if any ERROR row was emitted.")
-    parser.add_argument("--quiet", action="store_true",
-                        help="Suppress per-file progress dots.")
-    parser.add_argument("--layer", default="schema",
-                        choices=("schema", "terms", "references", "all"),
-                        help="Validation layer(s) to run. 'schema' (default) is the in-process "
-                             "closed-schema check (fast). 'terms' and 'references' shell out to "
-                             "linkml-term-validator / linkml-reference-validator per file and are "
-                             "much slower at corpus scale. 'all' runs all three.")
+    parser.add_argument(
+        "paths",
+        nargs="*",
+        type=Path,
+        help="Files or directories. Defaults to standard normalized_yaml subdirs.",
+    )
+    parser.add_argument(
+        "--out",
+        type=Path,
+        default=Path("reports/instance_validation_failures.tsv"),
+        help="TSV output path.",
+    )
+    parser.add_argument(
+        "--sample",
+        type=int,
+        metavar="N",
+        help="Validate only the first N files (after sorting). Useful for smoke tests.",
+    )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=max(1, (os.cpu_count() or 4) - 1),
+        help="Process pool size. Default: ncpu - 1.",
+    )
+    parser.add_argument(
+        "--fail-on",
+        choices=("error", "never"),
+        default="error",
+        help="Exit non-zero policy. 'error' (default) exits 1 if any ERROR row was emitted.",
+    )
+    parser.add_argument("--quiet", action="store_true", help="Suppress per-file progress dots.")
+    parser.add_argument(
+        "--layer",
+        default="schema",
+        choices=("schema", "terms", "references", "all"),
+        help="Validation layer(s) to run. 'schema' (default) is the in-process "
+        "closed-schema check (fast). 'terms' and 'references' shell out to "
+        "linkml-term-validator / linkml-reference-validator per file and are "
+        "much slower at corpus scale. 'all' runs all three.",
+    )
     args = parser.parse_args()
 
-    layers = (
-        ("schema", "terms", "references")
-        if args.layer == "all"
-        else (args.layer,)
-    )
+    layers = ("schema", "terms", "references") if args.layer == "all" else (args.layer,)
 
     roots = args.paths or DEFAULT_ROOTS
     files = iter_yaml_files(roots)
@@ -300,9 +367,11 @@ def main() -> int:
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
 
-    print(f"Validating {len(files)} files with {args.workers} workers; "
-          f"layers={','.join(layers)}; schema={SCHEMA_PATH}",
-          file=sys.stderr)
+    print(
+        f"Validating {len(files)} files with {args.workers} workers; "
+        f"layers={','.join(layers)}; schema={SCHEMA_PATH}",
+        file=sys.stderr,
+    )
 
     all_rows: list[dict] = []
     with ProcessPoolExecutor(max_workers=args.workers) as pool:
@@ -313,8 +382,10 @@ def main() -> int:
             rows = fut.result()
             all_rows.extend(rows)
             if not args.quiet and done % 250 == 0:
-                print(f"  {done}/{len(files)} files processed, {len(all_rows)} ERROR rows so far",
-                      file=sys.stderr)
+                print(
+                    f"  {done}/{len(files)} files processed, {len(all_rows)} ERROR rows so far",
+                    file=sys.stderr,
+                )
 
     # Sort for deterministic TSV output (avoids noisy diffs from worker scheduling).
     all_rows.sort(key=lambda r: (r["file"], r["layer"], r["path"], r["category"], r["message"]))
@@ -337,14 +408,14 @@ def main() -> int:
         files_with_errors.add(row["file"])
 
     print("", file=sys.stderr)
-    print(f"=== validate-strict summary ===", file=sys.stderr)
+    print("=== validate-strict summary ===", file=sys.stderr)
     print(f"  files scanned:      {len(files)}", file=sys.stderr)
     print(f"  layers:             {','.join(layers)}", file=sys.stderr)
     print(f"  files with ERROR:   {len(files_with_errors)}", file=sys.stderr)
     print(f"  total ERROR rows:   {len(all_rows)}", file=sys.stderr)
     print(f"  TSV:                {args.out}", file=sys.stderr)
     if by_cat:
-        print(f"  by layer/category:", file=sys.stderr)
+        print("  by layer/category:", file=sys.stderr)
         for (layer, cat), count in sorted(by_cat.items(), key=lambda kv: -kv[1]):
             print(f"    {layer:>10s} {cat:24s} {count:>8d}", file=sys.stderr)
 

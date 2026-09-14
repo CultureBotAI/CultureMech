@@ -76,15 +76,10 @@ NOTES = (
 INGREDIENT_NOTES = {
     "NaCl": "TOGO M2205 lists 5 g/L NaCl.",
     "KCl": "TOGO M2205 lists 1.3 g/L KCl.",
-    "NaOAc": (
-        "TOGO M2205 lists 5 g/L NaOAc and identifies the component as "
-        "Sodium acetate."
-    ),
+    "NaOAc": ("TOGO M2205 lists 5 g/L NaOAc and identifies the component as " "Sodium acetate."),
     "Horse serum": "TOGO M2205 lists 6% Horse serum.",
     "Glucose": "TOGO M2205 lists 0.5% Glucose.",
-    "Tryptose": (
-        "TOGO M2205 lists 20 g/L Bacto Tryptose as an undefined component."
-    ),
+    "Tryptose": ("TOGO M2205 lists 20 g/L Bacto Tryptose as an undefined component."),
     "Yeast dialysate": (
         "TOGO M2205 lists 5% Yeast dialysate; this undefined yeast fraction "
         "remains intentionally unmapped."
@@ -158,9 +153,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

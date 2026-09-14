@@ -64,9 +64,7 @@ NOTES = (
     'R2A Broth "DAIGO", 15 g agar if needed, and 1 L distilled water.'
 )
 
-PARENT_NOTES = (
-    'Adds 15 g/L agar if needed to 3.2 g/L R2A Broth "DAIGO" premix.'
-)
+PARENT_NOTES = 'Adds 15 g/L agar if needed to 3.2 g/L R2A Broth "DAIGO" premix.'
 
 PARENT_MEDIA = {
     "path": f"data/normalized_yaml/{PARENT}",
@@ -152,8 +150,7 @@ PREPARATION_STEPS = (
         "step_number": 1,
         "action": "MIX",
         "description": (
-            'Dissolve 3.2 g R2A Broth "DAIGO", and 15 g agar if needed, '
-            "in 1 L distilled water."
+            'Dissolve 3.2 g R2A Broth "DAIGO", and 15 g agar if needed, ' "in 1 L distilled water."
         ),
     },
     {
@@ -195,9 +192,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -267,9 +262,7 @@ def _ensure_target(doc: dict[str, Any]) -> None:
 
 def _ensure_parent(doc: dict[str, Any]) -> None:
     if doc.get("id") != EXPECTED_PARENT_ID:
-        raise ValueError(
-            f"{PARENT}: expected id {EXPECTED_PARENT_ID}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{PARENT}: expected id {EXPECTED_PARENT_ID}, found {doc.get('id')!r}")
 
 
 def _component_rows(doc: dict[str, Any]) -> list[dict[str, Any]]:

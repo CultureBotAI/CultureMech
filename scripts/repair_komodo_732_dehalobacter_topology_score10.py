@@ -223,8 +223,7 @@ def _parent_ref(child: Child) -> dict[str, str]:
         "id": PARENT_ID,
         "name": PARENT_NAME,
         "notes": (
-            f"KOMODO Medium 732 is the pH {PARENT_PH:g} "
-            "DEHALOBACTER RESTRICTUS MEDIUM base."
+            f"KOMODO Medium 732 is the pH {PARENT_PH:g} " "DEHALOBACTER RESTRICTUS MEDIUM base."
         ),
     }
 

@@ -45,9 +45,7 @@ DILUTED_FINAL_SIGNATURE: tuple[Component, ...] = (
     ("Distilled water", "250", "ML_PER_L"),
 )
 
-MARINE_AGAR_IMPORTED_SIGNATURE: tuple[Component, ...] = (
-    ("Marine agar 2216", "55.1", "G_PER_L"),
-)
+MARINE_AGAR_IMPORTED_SIGNATURE: tuple[Component, ...] = (("Marine agar 2216", "55.1", "G_PER_L"),)
 MARINE_AGAR_FINAL_SIGNATURE: tuple[Component, ...] = (
     ("Marine agar 2216 (BD-Difco)", "55.1", "G_PER_L"),
     ("Distilled water", "1.0", "L"),
@@ -514,8 +512,7 @@ def repair_ph_record(target: PhTarget, doc: dict[str, Any]) -> dict[str, Any]:
     _put_after(repaired, "sterilization", {"method": "AUTOCLAVE"}, "preparation_steps")
     repaired["variant_relationship"] = "PH_VARIANT"
     repaired["variant_modifications"] = [
-        f"Adjusted JCM Medium 118 Marine Agar 2216 to pH {target.ph_value:.1f} "
-        "with 10% Na2CO3."
+        f"Adjusted JCM Medium 118 Marine Agar 2216 to pH {target.ph_value:.1f} " "with 10% Na2CO3."
     ]
     repaired.pop("kg_microbe_match", None)
     repaired.pop("ph_range", None)

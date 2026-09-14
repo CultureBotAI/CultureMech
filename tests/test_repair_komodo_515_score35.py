@@ -171,8 +171,7 @@ def test_repair_record_scores_as_complete_and_is_idempotent() -> None:
     events = [
         event
         for event in twice["curation_history"]
-        if event.get("curator") == repair.CURATOR
-        and event.get("action") == repair.ACTION
+        if event.get("curator") == repair.CURATOR and event.get("action") == repair.ACTION
     ]
     assert len(events) == 1
 

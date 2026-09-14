@@ -109,10 +109,7 @@ CHILDREN = (
         "komodo.medium:860.5",
         "KOMODO Medium 860.5",
         STRAIN_RELATIONSHIP,
-        (
-            "KOMODO Medium 860.5 applies Anaerocolumna medium to DSM 13106 "
-            "and DSM 23801."
-        ),
+        ("KOMODO Medium 860.5 applies Anaerocolumna medium to DSM 13106 " "and DSM 23801."),
     ),
     Child(
         Path("bacterial/for_dsm_13116.yaml"),
@@ -278,8 +275,7 @@ def repair_parent(doc: dict[str, Any]) -> dict[str, Any]:
             "changes": "Re-rooted KOMODO Medium 860 Anaerocolumna exact topology",
             "source": "DSMZ Medium 860; KOMODO Medium 860.1-860.6",
             "notes": (
-                "Moved exact KOMODO 860 plus its DSM-specific wrappers under "
-                "DSMZ Medium 860."
+                "Moved exact KOMODO 860 plus its DSM-specific wrappers under " "DSMZ Medium 860."
             ),
         },
     )

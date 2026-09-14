@@ -67,14 +67,20 @@ def _by_name(rows: list[dict]) -> dict[str, dict]:
 def test_repair_corrects_stock_and_water_units(repair_module) -> None:
     repaired = repair_module.repair_target(_doc(repair_module))
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._signature(
-        repaired["solutions"],
-        "solutions",
-    ) == repair_module.FINAL_SOLUTION_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
+    assert (
+        repair_module._signature(
+            repaired["solutions"],
+            "solutions",
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURE
+    )
     assert _by_name(repaired["ingredients"])["Distilled water"]["concentration"] == {
         "value": "1.0",
         "unit": "L",
@@ -162,9 +168,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
         )
     ]
     assert len(matching_events) == 1
-    assert "1 M MgSO4, 20% glucose, and distilled-water units" in matching_events[0][
-        "notes"
-    ]
+    assert "1 M MgSO4, 20% glucose, and distilled-water units" in matching_events[0]["notes"]
 
 
 def test_repair_record_rejects_wrong_id(repair_module) -> None:

@@ -367,9 +367,7 @@ REPAIRS: tuple[Repair, ...] = (
             ),
         ),
         ph_range={"min": 7.3, "max": 7.7},
-        preparation_steps=(
-            _step(1, "ADJUST_PH", "Adjust pH to 7.5 +/- 0.2."),
-        ),
+        preparation_steps=(_step(1, "ADJUST_PH", "Adjust pH to 7.5 +/- 0.2."),),
         notes=(
             "TOGO M2170 imports NBRC Medium 1559 Nutrient broth No. 2: "
             "10 g Lab-Lemco powder, 10 g peptone, 5 g sodium chloride, "
@@ -500,8 +498,7 @@ REPAIRS: tuple[Repair, ...] = (
                 "L",
                 source="TOGO M3207",
                 notes=(
-                    "TOGO M3207 records the nutrient-rich formulation per 1 L "
-                    "Distilled water."
+                    "TOGO M3207 records the nutrient-rich formulation per 1 L " "Distilled water."
                 ),
                 term=WATER,
             ),
@@ -558,9 +555,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -583,9 +578,7 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 
 def _ensure_target(repair: Repair, doc: dict[str, Any]) -> None:
     if doc.get("id") != repair.record_id:
-        raise ValueError(
-            f"{repair.path}: expected id {repair.record_id}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{repair.path}: expected id {repair.record_id}, found {doc.get('id')!r}")
     if _source_term_id(doc) != repair.source_term:
         raise ValueError(f"{repair.path}: expected media term {repair.source_term}")
 
@@ -691,7 +684,9 @@ def repair_target(repair: Repair, doc: dict[str, Any]) -> dict[str, Any]:
     if repair.sterilization is None:
         repaired.pop("sterilization", None)
     else:
-        _put_after(repaired, "sterilization", copy.deepcopy(repair.sterilization), "preparation_steps")
+        _put_after(
+            repaired, "sterilization", copy.deepcopy(repair.sterilization), "preparation_steps"
+        )
 
     _put_after(repaired, "notes", repair.notes, "media_term")
     _ensure_flags(repaired, repair.has_unmapped_ingredients)

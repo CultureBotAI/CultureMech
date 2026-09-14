@@ -44,8 +44,7 @@ def _medium_doc(target) -> dict:
         "composition_type": "UNDEFINED",
         "physical_state": "LIQUID",
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_ingredients
+            _ingredient(name, value, unit) for name, value, unit in target.imported_ingredients
         ],
         "media_term": {
             "preferred_term": "source medium",
@@ -105,10 +104,13 @@ def test_jcm_j813_becomes_canonical_parent(
 
     assert repaired["ph_range"] == {"min": 7.0, "max": 7.0}
     assert "ph_value" not in repaired
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_COMPOSITION
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_COMPOSITION
+    )
     assert repaired["variant_children"] == [repair_module.M848_CHILD]
     assert "parent_media" not in repaired
     assert scorer_module.score_record(repaired) == (0, [])
@@ -164,10 +166,13 @@ def test_solution_helper_lifts_basal_composition_and_drops_placeholder(
     repaired = repair_module.repair_solution_record(_solution_doc(repair_module))
 
     assert "ingredients" not in repaired
-    assert repair_module._signature(
-        repaired["composition"],
-        "composition",
-    ) == repair_module.BASAL_COMPOSITION
+    assert (
+        repair_module._signature(
+            repaired["composition"],
+            "composition",
+        )
+        == repair_module.BASAL_COMPOSITION
+    )
     assert repaired["composition"][-1]["concentration"] == {
         "value": "1000.0",
         "unit": "ML_PER_L",
@@ -183,17 +188,13 @@ def test_repair_adds_references_flags_and_event_once(
     repair_module,
 ) -> None:
     target = next(
-        target
-        for target in repair_module.TARGETS
-        if target.path == repair_module.TOGO_M848_PATH
+        target for target in repair_module.TARGETS if target.path == repair_module.TOGO_M848_PATH
     )
     once = repair_module.repair_medium_record(_medium_doc(target), target)
     twice = repair_module.repair_medium_record(once, target)
 
     assert twice == once
-    assert once["references"] == [
-        {"reference": reference} for reference in target.references
-    ]
+    assert once["references"] == [{"reference": reference} for reference in target.references]
     assert once["data_quality_flags"] == [
         "ingredients_curated",
         "has_ontology_mappings",
@@ -201,8 +202,7 @@ def test_repair_adds_references_flags_and_event_once(
     matching_events = [
         event
         for event in twice["curation_history"]
-        if event.get("curator") == repair_module.CURATOR
-        and event.get("action") == target.action
+        if event.get("curator") == repair_module.CURATOR and event.get("action") == target.action
     ]
     assert len(matching_events) == 1
     assert repair_module.TOGO_M848 in matching_events[0]["source"]
@@ -220,9 +220,7 @@ def test_repair_rejects_wrong_medium_id(repair_module) -> None:
 
 def test_repair_rejects_medium_ingredient_drift(repair_module) -> None:
     target = next(
-        target
-        for target in repair_module.TARGETS
-        if target.path == repair_module.TOGO_M848_PATH
+        target for target in repair_module.TARGETS if target.path == repair_module.TOGO_M848_PATH
     )
     doc = _medium_doc(target)
     doc["ingredients"].pop()

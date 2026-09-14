@@ -80,10 +80,13 @@ def test_repair_corrects_base_formula_and_conditions(repair_module) -> None:
 
     assert repaired["composition_type"] == "SEMI_DEFINED"
     assert repaired["ph_value"] == 6.0
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Resazurin"]["concentration"] == {
         "value": "0.5",
         "unit": "MG_PER_L",
@@ -100,16 +103,18 @@ def test_repair_expands_post_autoclave_stocks(repair_module) -> None:
     repaired = repair_module.repair_record(_doc(repair_module))
     solutions = _by_name(repaired["solutions"])
 
-    assert repair_module._solution_signatures(
-        repaired,
-    ) == repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._solution_signatures(
+            repaired,
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURES
+    )
     assert solutions["1.0 M Glucose solution"]["composition"][0] == {
         "preferred_term": "Glucose",
         "concentration": {"value": "1.0", "unit": "MOLAR"},
         "source": repair_module.SOURCE,
         "notes": (
-            "1.0 M Glucose solution is represented from the stock label as "
-            "1.0 M Glucose."
+            "1.0 M Glucose solution is represented from the stock label as " "1.0 M Glucose."
         ),
         "term": {"id": "CHEBI:17234", "label": "glucose"},
         "mediaingredientmech_chebi_term": {"id": "CHEBI:17234", "label": "glucose"},
@@ -163,9 +168,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

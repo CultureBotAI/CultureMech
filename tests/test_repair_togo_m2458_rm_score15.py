@@ -91,9 +91,7 @@ def test_repair_grounds_every_component(repair_module) -> None:
     assert "mediaingredientmech_chebi_term" not in ingredients["Yeast extract"]
     assert ingredients["K2HPO4"]["physicochemical_roles"] == ["BUFFER"]
     assert ingredients["K2HPO4"]["nutritional_roles"] == ["PHOSPHATE_SOURCE"]
-    assert ingredients["Agar (if needed)"]["physicochemical_roles"] == [
-        "SOLIDIFYING_AGENT"
-    ]
+    assert ingredients["Agar (if needed)"]["physicochemical_roles"] == ["SOLIDIFYING_AGENT"]
     assert ingredients["DI water"]["concentration"] == {
         "value": "1000.0",
         "unit": "ML_PER_L",
@@ -127,9 +125,7 @@ def test_plan_repairs_target_record(repair_module) -> None:
         repair_module.NORMALIZED
         / repair_module.TARGET: repair_module.repair_target(
             yaml.safe_load(
-                (repair_module.NORMALIZED / repair_module.TARGET).read_text(
-                    encoding="utf-8"
-                )
+                (repair_module.NORMALIZED / repair_module.TARGET).read_text(encoding="utf-8")
             )
         )
     }

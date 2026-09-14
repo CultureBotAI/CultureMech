@@ -83,8 +83,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": SOURCE,
-        "notes": notes
-        or f"{SOURCE} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{SOURCE} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     grounding = GROUNDINGS.get(preferred_term)
     if grounding:
@@ -99,17 +98,13 @@ INGREDIENTS: tuple[dict[str, Any], ...] = (
         "Bacto Yeast Extract (Difco)",
         "1.0",
         "G_PER_L",
-        notes=(
-            "NBRC Medium 395 lists 1 g/L Bacto Yeast Extract from Difco."
-        ),
+        notes=("NBRC Medium 395 lists 1 g/L Bacto Yeast Extract from Difco."),
     ),
     _component(
         "Trypticase Peptone (BBL)",
         "1.0",
         "G_PER_L",
-        notes=(
-            "NBRC Medium 395 lists 1 g/L Trypticase Peptone from BBL."
-        ),
+        notes=("NBRC Medium 395 lists 1 g/L Trypticase Peptone from BBL."),
     ),
     _component("Na2S2O3·5H2O", "1.0", "G_PER_L"),
     _component(
@@ -178,9 +173,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

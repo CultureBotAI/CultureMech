@@ -152,9 +152,7 @@ UPDATES = (
                 {
                     "step_number": 1,
                     "action": "MIX",
-                    "description": (
-                        "Use sterilized natural seawater with Porphyra thalli."
-                    ),
+                    "description": ("Use sterilized natural seawater with Porphyra thalli."),
                 },
             ],
         },
@@ -183,9 +181,7 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 def _require_target(doc: dict[str, Any], relative_path: str) -> None:
     expected_id = EXPECTED_IDS[relative_path]
     if doc.get("id") != expected_id:
-        raise ValueError(
-            f"{relative_path}: found id {doc.get('id')!r}, expected {expected_id!r}"
-        )
+        raise ValueError(f"{relative_path}: found id {doc.get('id')!r}, expected {expected_id!r}")
 
     expected_source_term = EXPECTED_SOURCE_TERMS[relative_path]
     if _source_term_id(doc) != expected_source_term:
@@ -215,9 +211,7 @@ def _composition_components(doc: dict[str, Any]) -> list[dict[str, Any]]:
             continue
         nested = solution.get("composition") or []
         nested_components = (
-            [i for i in nested if isinstance(i, dict)]
-            if isinstance(nested, list)
-            else []
+            [i for i in nested if isinstance(i, dict)] if isinstance(nested, list) else []
         )
         components.extend(nested_components or [solution])
     return components

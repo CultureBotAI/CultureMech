@@ -62,8 +62,12 @@ def test_ravot_salt_wrappers_keep_distinct_ph_values() -> None:
     repair = _load_script(SCRIPT, "repair_jcm_wrappers_direct_score20_ravot")
     by_path = {target.path: target for target in repair.TARGETS}
 
-    r8 = repair.repair_record(_minimal_doc(by_path[repair.M749_RAVOT_R8]), by_path[repair.M749_RAVOT_R8])
-    g60 = repair.repair_record(_minimal_doc(by_path[repair.M750_RAVOT_G60]), by_path[repair.M750_RAVOT_G60])
+    r8 = repair.repair_record(
+        _minimal_doc(by_path[repair.M749_RAVOT_R8]), by_path[repair.M749_RAVOT_R8]
+    )
+    g60 = repair.repair_record(
+        _minimal_doc(by_path[repair.M750_RAVOT_G60]), by_path[repair.M750_RAVOT_G60]
+    )
 
     assert r8["ph_value"] == 6.3
     assert g60["ph_value"] == 7.0

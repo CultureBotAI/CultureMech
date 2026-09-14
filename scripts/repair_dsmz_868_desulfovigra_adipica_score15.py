@@ -35,22 +35,14 @@ TITLE = "DESULFOVIGRA ADIPICA"
 Component = tuple[str, str, str]
 SolutionSignature = tuple[str, str, str, tuple[Component, ...]]
 
-IMPORTED_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
-    ("Na2CO3", "variable", "VARIABLE"),
-)
+IMPORTED_INGREDIENT_SIGNATURE: tuple[Component, ...] = (("Na2CO3", "variable", "VARIABLE"),)
 FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = ()
 
 NA2SO4_STOCK_SIGNATURE: tuple[Component, ...] = (("Na2SO4", "100.0", "G_PER_L"),)
-YEAST_EXTRACT_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("Yeast extract", "100.0", "G_PER_L"),
-)
+YEAST_EXTRACT_STOCK_SIGNATURE: tuple[Component, ...] = (("Yeast extract", "100.0", "G_PER_L"),)
 NAHCO3_STOCK_SIGNATURE: tuple[Component, ...] = (("NaHCO3", "50.0", "G_PER_L"),)
-PROPANOL_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("Propanol", "10.0", "PERCENT_V_V"),
-)
-NA2S_STOCK_SIGNATURE: tuple[Component, ...] = (
-    ("Na2S x 9H2O", "30.0", "G_PER_L"),
-)
+PROPANOL_STOCK_SIGNATURE: tuple[Component, ...] = (("Propanol", "10.0", "PERCENT_V_V"),)
+NA2S_STOCK_SIGNATURE: tuple[Component, ...] = (("Na2S x 9H2O", "30.0", "G_PER_L"),)
 
 FINAL_SOLUTION_SIGNATURES: tuple[SolutionSignature, ...] = (
     ("10% (w/v) Na2SO4 solution", "7.0", "ML_PER_L", NA2SO4_STOCK_SIGNATURE),
@@ -245,8 +237,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 2,
         "action": "ADJUST_PH",
         "description": (
-            "After completing the medium, adjust to pH 7.0-7.2 with sterile "
-            "anaerobic 5% Na2CO3."
+            "After completing the medium, adjust to pH 7.0-7.2 with sterile " "anaerobic 5% Na2CO3."
         ),
     },
     {

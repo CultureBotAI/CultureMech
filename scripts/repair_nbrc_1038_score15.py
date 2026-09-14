@@ -80,10 +80,7 @@ INGREDIENTS: tuple[dict[str, Any], ...] = (
         "Bacto Tryptic Soy Broth w/o Dextrose (Difco)",
         "2.75",
         "G_PER_L",
-        notes=(
-            "NBRC Medium 1035 lists 2.75 g Bacto Tryptic Soy Broth without "
-            "dextrose."
-        ),
+        notes=("NBRC Medium 1035 lists 2.75 g Bacto Tryptic Soy Broth without " "dextrose."),
     ),
     _component(
         "NaCl",
@@ -204,9 +201,7 @@ def _has_history_action(doc: dict[str, Any], action: str) -> bool:
 
 def _ensure_target(doc: dict[str, Any]) -> None:
     if doc.get("id") != TARGET_ID:
-        raise ValueError(
-            f"{TARGET_PATH}: found id {doc.get('id')!r}, expected {TARGET_ID!r}"
-        )
+        raise ValueError(f"{TARGET_PATH}: found id {doc.get('id')!r}, expected {TARGET_ID!r}")
     if not _has_history_action(doc, REQUIRED_ACTION):
         raise ValueError(f"{TARGET_PATH}: missing recovery action {REQUIRED_ACTION!r}")
     if doc.get("name") not in {"1038", TITLE}:

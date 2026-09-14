@@ -74,8 +74,7 @@ def test_repair_record_adds_source_notes_groundings_and_flags() -> None:
             "concentration": {"value": "variable", "unit": "VARIABLE"},
             "source": "TOGO M2696",
             "notes": (
-                "TOGO M2696 lists Union Carbide SAG-471 antifoam without stating "
-                "an amount."
+                "TOGO M2696 lists Union Carbide SAG-471 antifoam without stating " "an amount."
             ),
         },
     ]

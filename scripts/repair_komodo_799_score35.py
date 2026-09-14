@@ -20,8 +20,7 @@ NORMALIZED = REPO / "data" / "normalized_yaml"
 YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 KOMODO_799_URL = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=799"
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=799"
 )
 KOMODO_799_REPLACE_URL = (
     "https://komodo.modelseed.org/servlet/"
@@ -647,10 +646,7 @@ MEDIUM_799_REPLACE_COMPONENTS: tuple[Component, ...] = _common_components(
             "MILLIMOLAR",
             ("CHEBI:16971", "benzene-1,2,4-triol"),
             SOURCE_799,
-            (
-                f"{SOURCE_799} replaces acetate with 2 mM "
-                "1,2,4-trihydroxybenzene."
-            ),
+            (f"{SOURCE_799} replaces acetate with 2 mM " "1,2,4-trihydroxybenzene."),
         ),
         Component(
             "Yeast extract",
@@ -720,8 +716,7 @@ def _check_source(doc: dict[str, Any], target: Target) -> None:
     term = media_term.get("term")
     if not isinstance(term, dict) or term.get("id") != target.expected_media_term:
         raise ValueError(
-            f"{target.path}: missing expected media term "
-            f"{target.expected_media_term}"
+            f"{target.path}: missing expected media term " f"{target.expected_media_term}"
         )
 
 

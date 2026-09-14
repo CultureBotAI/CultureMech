@@ -195,7 +195,8 @@ def test_repair_adds_flags_references_and_event_once(repair_module) -> None:
 
 def test_plan_repairs_both_target_records(repair_module) -> None:
     assert repair_module.plan_repairs() == {
-        repair_module.NORMALIZED / target.path: repair_module.repair_record(
+        repair_module.NORMALIZED
+        / target.path: repair_module.repair_record(
             yaml.safe_load((repair_module.NORMALIZED / target.path).read_text(encoding="utf-8")),
             target,
         )

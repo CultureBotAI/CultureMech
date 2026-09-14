@@ -56,9 +56,7 @@ FINAL_INGREDIENT_SIGNATURE: tuple[Component, ...] = (
     ("Agar (if needed)", "15", "G_PER_L"),
 )
 
-SODIUM_AMPICILLIN_SIGNATURE: tuple[Component, ...] = (
-    ("Sodium ampicillin", "50.0", "MG_PER_ML"),
-)
+SODIUM_AMPICILLIN_SIGNATURE: tuple[Component, ...] = (("Sodium ampicillin", "50.0", "MG_PER_ML"),)
 
 FINAL_SOLUTION_SIGNATURE: tuple[SolutionSignature, ...] = (
     (
@@ -109,8 +107,7 @@ VARIANT_CHILD = {
 }
 
 VARIANT_MODIFICATIONS = (
-    "Adds 1.0 ml/L Sodium ampicillin solution (50 mg/ml) after separate "
-    "filter sterilization."
+    "Adds 1.0 ml/L Sodium ampicillin solution (50 mg/ml) after separate " "filter sterilization."
 )
 
 PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
@@ -127,8 +124,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 2,
         "action": "FILTER_STERILIZE",
         "description": (
-            "Sterilize the 50 mg/ml sodium ampicillin stock separately by "
-            "filtration."
+            "Sterilize the 50 mg/ml sodium ampicillin stock separately by " "filtration."
         ),
     },
     {
@@ -165,8 +161,7 @@ def _component(
         "preferred_term": preferred_term,
         "concentration": {"value": value, "unit": unit},
         "source": source,
-        "notes": notes
-        or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
+        "notes": notes or f"{source} lists {value} {UNIT_LABELS[unit]} {preferred_term}.",
     }
     grounding = GROUNDINGS.get(preferred_term)
     if grounding is not None:
@@ -210,10 +205,7 @@ SOLUTIONS: tuple[dict[str, Any], ...] = (
                 "Sodium ampicillin",
                 "50.0",
                 "MG_PER_ML",
-                notes=(
-                    "NBRC Medium 890 specifies this stock as 50 mg/ml "
-                    "Sodium ampicillin."
-                ),
+                notes=("NBRC Medium 890 specifies this stock as 50 mg/ml " "Sodium ampicillin."),
             )
         ],
         "name": "Sodium ampicillin solution (50 mg/ml)",
@@ -234,9 +226,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -259,9 +249,7 @@ def _solution_signature(rows: Any, label: str) -> tuple[SolutionSignature, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

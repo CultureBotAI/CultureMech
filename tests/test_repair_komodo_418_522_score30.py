@@ -38,11 +38,7 @@ def _doc(repair_module, target):
 
 
 def _by_name(repaired: dict, name: str) -> dict:
-    rows = [
-        row
-        for row in repaired["ingredients"]
-        if row["preferred_term"] == name
-    ]
+    rows = [row for row in repaired["ingredients"] if row["preferred_term"] == name]
     assert len(rows) == 1
     return rows[0]
 
@@ -57,10 +53,7 @@ def test_target_inventory(repair_module) -> None:
         repair_module.PELOBACTER,
         repair_module.CLOSTRIDIUM_NEOPROPIONICUM,
     ]
-    assert {
-        target.path: target.expected_media_term
-        for target in repair_module.TARGETS
-    } == {
+    assert {target.path: target.expected_media_term for target in repair_module.TARGETS} == {
         repair_module.PELOBACTER: "komodo.medium:418",
         repair_module.CLOSTRIDIUM_NEOPROPIONICUM: "komodo.medium:522",
     }

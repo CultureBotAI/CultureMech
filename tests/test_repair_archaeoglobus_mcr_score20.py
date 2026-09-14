@@ -149,9 +149,7 @@ def test_repair_togo_child_keeps_m1280_sparse_and_grounded(
         "notes": repair_module.TARGETS[0].parent_notes,
     }
     assert repaired["variant_relationship"] == repair_module.RELATIONSHIP
-    assert repaired["variant_modifications"] == [
-        repair_module.TARGETS[0].variant_modification
-    ]
+    assert repaired["variant_modifications"] == [repair_module.TARGETS[0].variant_modification]
     assert repaired["references"] == [{"reference": repair_module.TOGO_M1280_URL}]
     assert scorer_module.score_record(repaired)[1] == ["no pH and no temperature"]
 
@@ -202,17 +200,11 @@ def test_plan_repairs_adds_reciprocal_links_and_preserves_children(
     togo_children = plans[tmp_path / repair_module.TOGO_M1279]["variant_children"]
     jcm_children = plans[tmp_path / repair_module.JCM_J1194]["variant_children"]
 
-    assert {
-        row["path"]
-        for row in togo_children
-    } == {
+    assert {row["path"] for row in togo_children} == {
         "data/normalized_yaml/archaea/existing_variant.yaml",
         f"data/normalized_yaml/{repair_module.TOGO_M1280}",
     }
-    assert {
-        row["path"]
-        for row in jcm_children
-    } == {
+    assert {row["path"] for row in jcm_children} == {
         "data/normalized_yaml/archaea/existing_variant.yaml",
         f"data/normalized_yaml/{repair_module.JCM_J1195}",
     }
@@ -268,12 +260,7 @@ def test_repair_child_rejects_sulfate_concentration_drift(repair_module) -> None
 
 def test_target_records_have_expected_sources(repair_module) -> None:
     for path in repair_module.EXPECTED_IDS:
-        doc = yaml.safe_load(
-            (repair_module.NORMALIZED / path).read_text(encoding="utf-8")
-        )
+        doc = yaml.safe_load((repair_module.NORMALIZED / path).read_text(encoding="utf-8"))
 
         assert doc["id"] == repair_module.EXPECTED_IDS[path]
-        assert (
-            doc["media_term"]["term"]["id"]
-            == repair_module.EXPECTED_SOURCE_TERMS[path]
-        )
+        assert doc["media_term"]["term"]["id"] == repair_module.EXPECTED_SOURCE_TERMS[path]

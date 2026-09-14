@@ -84,12 +84,10 @@ def test_repair_record_applies_575_substrate_changes(repair) -> None:
         for ingredient in repaired["ingredients"]
     )
     assert all(
-        ingredient["preferred_term"] != "1,2-propanediol"
-        for ingredient in repaired["ingredients"]
+        ingredient["preferred_term"] != "1,2-propanediol" for ingredient in repaired["ingredients"]
     )
     assert all(
-        ingredient["preferred_term"] != "Na2SeO3 x 5 H2O"
-        for ingredient in repaired["ingredients"]
+        ingredient["preferred_term"] != "Na2SeO3 x 5 H2O" for ingredient in repaired["ingredients"]
     )
     assert _ingredient(repaired, "Na-lactate")["concentration"] == {
         "value": "2.500000",

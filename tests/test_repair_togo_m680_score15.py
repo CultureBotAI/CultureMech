@@ -48,9 +48,7 @@ def _doc(
         "medium_type": "COMPLEX",
         "composition_type": "UNDEFINED",
         "physical_state": "LIQUID",
-        "ingredients": [
-            _ingredient(name, value, unit) for name, value, unit in signature
-        ],
+        "ingredients": [_ingredient(name, value, unit) for name, value, unit in signature],
         "media_term": {
             "preferred_term": "source medium",
             "term": {"id": media_term, "label": "MBG-20"},
@@ -131,9 +129,7 @@ def test_repair_keeps_split_sterilization_in_preparation_steps(
 ) -> None:
     repaired = repair_module.repair_togo(_togo_doc(repair_module))
 
-    assert repaired["preparation_steps"] == [
-        dict(step) for step in repair_module.PREPARATION_STEPS
-    ]
+    assert repaired["preparation_steps"] == [dict(step) for step in repair_module.PREPARATION_STEPS]
     assert [step["action"] for step in repaired["preparation_steps"]] == [
         "ADJUST_PH",
         "DISSOLVE",

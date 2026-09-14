@@ -108,10 +108,7 @@ INGREDIENTS: tuple[dict[str, Any], ...] = (
         "Horse blood",
         "15",
         "PERCENT_V_V",
-        notes=(
-            "DSMZ Medium 438 supplements Bordet-Gengou-Agar-Base with 15% horse "
-            "blood."
-        ),
+        notes=("DSMZ Medium 438 supplements Bordet-Gengou-Agar-Base with 15% horse " "blood."),
         term=("UBERON:0000178", "blood"),
     ),
 )
@@ -183,7 +180,9 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
 
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.expected_id:
-        raise ValueError(f"{target.path}: expected id {target.expected_id}, found {doc.get('id')!r}")
+        raise ValueError(
+            f"{target.path}: expected id {target.expected_id}, found {doc.get('id')!r}"
+        )
 
     source_term = _source_term_id(doc)
     if source_term != target.expected_source_term:

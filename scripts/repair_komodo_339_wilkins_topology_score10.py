@@ -233,8 +233,7 @@ def _parent_ref(child: Child) -> dict[str, str]:
         "id": PARENT_ID,
         "name": PARENT_NAME,
         "notes": (
-            "KOMODO Medium 339 is the WILKINS-CHALGREN ANAEROBE BROTH "
-            "(Oxoid CM 643) base."
+            "KOMODO Medium 339 is the WILKINS-CHALGREN ANAEROBE BROTH " "(Oxoid CM 643) base."
         ),
     }
 

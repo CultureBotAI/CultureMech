@@ -84,7 +84,14 @@ def test_dsmz_861a_is_official_stock_solution_recipe(repair_module) -> None:
 
     solutions = _solution_by_name(repaired)
     assert repaired["ingredients"] == []
-    assert list(solutions) == ["Solution A", "Solution B", "Solution C", "Solution D", "Solution E", "Solution F"]
+    assert list(solutions) == [
+        "Solution A",
+        "Solution B",
+        "Solution C",
+        "Solution D",
+        "Solution E",
+        "Solution F",
+    ]
     assert repaired["ph_range"] == {"min": 7.0, "max": 7.2}
     assert repaired["variant_children"] == [
         repair_module.DSMZ_861A_12341_CHILD,
@@ -167,7 +174,10 @@ def test_variant_links_are_directional(repair_module) -> None:
         repair_module.KOMODO_861_3,
         repair_module.KOMODO_861_4,
     ):
-        assert repaired[path]["parent_media"]["path"] == f"data/normalized_yaml/{repair_module.DSMZ_861A}"
+        assert (
+            repaired[path]["parent_media"]["path"]
+            == f"data/normalized_yaml/{repair_module.DSMZ_861A}"
+        )
 
     for path, doc in repaired.items():
         parent_media = doc.get("parent_media")
@@ -186,12 +196,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(root)
 
     assert {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(root): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(root): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_source(repair_module) -> None:

@@ -216,9 +216,7 @@ RECIPE: dict[str, Any] = {
         _solution(
             "Trace minerals (TOGO Medium M142)",
             "10",
-            notes=(
-                f"{SOURCE_M708} adds 10 ml/L Trace minerals from TOGO M142."
-            ),
+            notes=(f"{SOURCE_M708} adds 10 ml/L Trace minerals from TOGO M142."),
             composition=[
                 _stock_component(
                     "MgSO4 x 7H2O",
@@ -316,10 +314,7 @@ RECIPE: dict[str, Any] = {
         _solution(
             "Selenite--tungstate solution (TOGO Medium M431)",
             "1",
-            notes=(
-                f"{SOURCE_M708} adds 1 ml/L Selenite--tungstate solution "
-                "from TOGO M431."
-            ),
+            notes=(f"{SOURCE_M708} adds 1 ml/L Selenite--tungstate solution " "from TOGO M431."),
             composition=[
                 _stock_component(
                     "Na2SeO3 x 5H2O",
@@ -477,8 +472,7 @@ RECIPE: dict[str, Any] = {
             "step_number": 2,
             "action": "HEAT",
             "description": (
-                "Bring to a boil for several seconds and cool under "
-                "N2-CO2 (80:20)."
+                "Bring to a boil for several seconds and cool under " "N2-CO2 (80:20)."
             ),
         },
         {
@@ -511,9 +505,7 @@ RECIPE: dict[str, Any] = {
     ],
 }
 
-REPAIRED_INGREDIENTS = frozenset(
-    row["preferred_term"] for row in RECIPE["ingredients"]
-)
+REPAIRED_INGREDIENTS = frozenset(row["preferred_term"] for row in RECIPE["ingredients"])
 
 
 def _load(path: Path) -> dict[str, Any]:
@@ -540,8 +532,7 @@ def _require_target(doc: dict[str, Any]) -> None:
     source_term = _source_term_id(doc)
     if source_term != EXPECTED_SOURCE_TERM:
         raise ValueError(
-            f"{PATH}: expected source term {EXPECTED_SOURCE_TERM}, "
-            f"found {source_term!r}"
+            f"{PATH}: expected source term {EXPECTED_SOURCE_TERM}, " f"found {source_term!r}"
         )
 
     ingredient_names = {
@@ -557,9 +548,7 @@ def _ensure_references(doc: dict[str, Any]) -> None:
     references = doc.setdefault("references", [])
     if not isinstance(references, list):
         raise ValueError("references is not a list")
-    existing = {
-        row.get("reference") for row in references if isinstance(row, dict)
-    }
+    existing = {row.get("reference") for row in references if isinstance(row, dict)}
     for url in (JCM_688, TOGO_M708, TOGO_M142, TOGO_M190, TOGO_M431):
         if url not in existing:
             references.append({"reference": url})

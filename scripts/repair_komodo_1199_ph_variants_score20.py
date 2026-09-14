@@ -153,14 +153,11 @@ def _component_names(doc: dict[str, Any]) -> tuple[str, ...]:
 
 def _require_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}")
     source_term = _source_term_id(doc)
     if source_term != target.media_term_id:
         raise ValueError(
-            f"{target.path}: expected source term {target.media_term_id}, "
-            f"found {source_term!r}"
+            f"{target.path}: expected source term {target.media_term_id}, " f"found {source_term!r}"
         )
     if _component_names(doc) not in (
         ("Glucose", "Yeast extract", "Peptone"),

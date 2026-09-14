@@ -34,7 +34,9 @@ def _doc(repair, target) -> dict:
     return {
         "id": repair.EXPECTED_IDS[target.path],
         "name": Path(target.path).stem,
-        "original_name": "For DSM 10643" if target.path == repair.KOMODO_215C_1 else target.source_label,
+        "original_name": (
+            "For DSM 10643" if target.path == repair.KOMODO_215C_1 else target.source_label
+        ),
         "category": "bacterial",
         "medium_type": "COMPLEX",
         "composition_type": "UNDEFINED",
@@ -110,7 +112,9 @@ def test_komodo_215c_materializes_n2_and_links_to_dsmz(repair_module) -> None:
     ]
 
 
-def test_for_dsm_10643_gets_glycerol_and_leaves_review_ranking(repair_module, scorer_module) -> None:
+def test_for_dsm_10643_gets_glycerol_and_leaves_review_ranking(
+    repair_module, scorer_module
+) -> None:
     target = _target(repair_module, repair_module.KOMODO_215C_1)
 
     repaired = repair_module.repair_record(_doc(repair_module, target), target)
@@ -191,12 +195,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(root)
 
     assert {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(root): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(root): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:

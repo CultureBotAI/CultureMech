@@ -192,10 +192,7 @@ def _require_record(
 def _require_parent(doc: dict[str, Any]) -> None:
     _require_record(doc, PARENT, PARENT_ID, PARENT_SOURCE_TERM)
     parent_media = doc.get("parent_media") or {}
-    if (
-        not isinstance(parent_media, dict)
-        or parent_media.get("id") != SOURCE_DUPLICATE_PARENT_ID
-    ):
+    if not isinstance(parent_media, dict) or parent_media.get("id") != SOURCE_DUPLICATE_PARENT_ID:
         raise ValueError(f"{PARENT}: expected KOMODO 480b source-duplicate parent")
     if doc.get("variant_relationship") != "SOURCE_DUPLICATE":
         raise ValueError(f"{PARENT}: expected SOURCE_DUPLICATE parent relationship")
@@ -306,7 +303,8 @@ def repair_child(doc: dict[str, Any]) -> dict[str, Any]:
 
 def plan_repairs(normalized: Path = NORMALIZED) -> dict[Path, dict[str, Any]]:
     return {
-        normalized / SOURCE_DUPLICATE_PARENT: repair_source_duplicate_parent(
+        normalized
+        / SOURCE_DUPLICATE_PARENT: repair_source_duplicate_parent(
             _load(normalized / SOURCE_DUPLICATE_PARENT)
         ),
         normalized / PARENT: repair_parent(_load(normalized / PARENT)),

@@ -224,9 +224,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
         )
     ]
     assert len(matching_events) == 1
-    assert matching_events[0]["source"] == "; ".join(
-        repair_module._references(repair_module.M1198)
-    )
+    assert matching_events[0]["source"] == "; ".join(repair_module._references(repair_module.M1198))
 
 
 def test_repair_record_rejects_wrong_id(repair_module) -> None:

@@ -104,8 +104,7 @@ TARGET_M2888 = Target(
 
 TARGET_M2223 = Target(
     path=Path(
-        "bacterial/"
-        "modified_hayflick_medium_containing_20_v_v_heat_inactivated_horse_serum.yaml"
+        "bacterial/" "modified_hayflick_medium_containing_20_v_v_heat_inactivated_horse_serum.yaml"
     ),
     expected_id="CultureMech:008811",
     expected_media_term="TOGO:M2223",
@@ -226,10 +225,7 @@ def _component(
 
 
 def _ingredients(target: Target) -> list[dict[str, Any]]:
-    return [
-        _component(target, name, value, unit)
-        for name, value, unit in target.final_signature
-    ]
+    return [_component(target, name, value, unit) for name, value, unit in target.final_signature]
 
 
 def _put_after(doc: dict[str, Any], key: str, value: Any, after: str) -> None:
@@ -263,9 +259,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -292,9 +286,7 @@ def _ensure_target(doc: dict[str, Any], target: Target) -> None:
             f"{target.path}: expected id {target.expected_id}, found {doc.get('id')!r}"
         )
     if _source_term_id(doc) != target.expected_media_term:
-        raise ValueError(
-            f"{target.path}: expected media term {target.expected_media_term}"
-        )
+        raise ValueError(f"{target.path}: expected media term {target.expected_media_term}")
 
     signature = _signature(doc.get("ingredients"), "ingredients")
     if signature not in (target.imported_signature, target.final_signature):
@@ -326,8 +318,7 @@ def _ensure_references(doc: dict[str, Any], target: Target) -> None:
     if not isinstance(references, list):
         raise ValueError("references is not a list")
     if not any(
-        isinstance(row, dict) and row.get("reference") == target.togo_url
-        for row in references
+        isinstance(row, dict) and row.get("reference") == target.togo_url for row in references
     ):
         references.append({"reference": target.togo_url})
 

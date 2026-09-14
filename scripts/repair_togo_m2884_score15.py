@@ -69,9 +69,7 @@ GROUNDINGS: dict[str, tuple[str, str]] = {
 COMPONENT_NOTES: dict[str, str] = {
     "Distilled water": "TOGO M2884 lists 1 L distilled water.",
     "Yeast extract": "TOGO M2884 lists 5 g/L yeast extract.",
-    "Sodium beta-glycerophosphate": (
-        "TOGO M2884 lists 7.2 g/L Sodium-beta-glycerophosphate."
-    ),
+    "Sodium beta-glycerophosphate": ("TOGO M2884 lists 7.2 g/L Sodium-beta-glycerophosphate."),
     "Glucose": "TOGO M2884 lists 10 g/L glucose.",
     "Meat extract": (
         "TOGO M2884 lists 10 g/L meat extract; this biological extract is "
@@ -133,8 +131,7 @@ def _component(preferred_term: str, value: str, unit: str) -> dict[str, Any]:
 
 
 INGREDIENTS: tuple[dict[str, Any], ...] = tuple(
-    _component(name, value, unit)
-    for name, value, unit in FINAL_INGREDIENT_SIGNATURE
+    _component(name, value, unit) for name, value, unit in FINAL_INGREDIENT_SIGNATURE
 )
 
 
@@ -169,9 +166,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

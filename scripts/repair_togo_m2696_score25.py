@@ -126,8 +126,7 @@ def repair_record(doc: dict[str, Any]) -> dict[str, Any]:
             "concentration": {"value": "variable", "unit": "VARIABLE"},
             "source": "TOGO M2696",
             "notes": (
-                "TOGO M2696 lists Union Carbide SAG-471 antifoam without stating "
-                "an amount."
+                "TOGO M2696 lists Union Carbide SAG-471 antifoam without stating " "an amount."
             ),
         },
     ]

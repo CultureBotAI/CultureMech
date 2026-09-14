@@ -44,8 +44,7 @@ EXPECTED_SOURCE_TERMS = {
 DSMZ_78B_REST = "https://mediadive.dsmz.de/rest/medium/78b"
 DSMZ_78B_PDF = "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium78b.pdf"
 KOMODO_BASE = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo="
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo="
 )
 
 SOURCE_DSMZ_78B = "DSMZ Medium 78b"
@@ -167,8 +166,12 @@ def _komodo_components(
         _component("L-Glutamine", values["L-Glutamine"], source, "CHEBI:18050", "L-glutamine"),
         _component("Na-pyruvate", values["Na-pyruvate"], source, "CHEBI:50144", "sodium pyruvate"),
         _component("Casitone", values["Casitone"], source),
-        _component("K2HPO4", values["K2HPO4"], source, "CHEBI:131527", "dipotassium hydrogen phosphate"),
-        _component("Yeast extract", values["Yeast extract"], source, "FOODON:03315426", "yeast extract"),
+        _component(
+            "K2HPO4", values["K2HPO4"], source, "CHEBI:131527", "dipotassium hydrogen phosphate"
+        ),
+        _component(
+            "Yeast extract", values["Yeast extract"], source, "FOODON:03315426", "yeast extract"
+        ),
         _component(
             "N-acetylglucosamine",
             values["N-acetylglucosamine"],
@@ -179,7 +182,9 @@ def _komodo_components(
         _component("glutathione", values["glutathione"], source, "CHEBI:16856", "glutathione"),
         _tryptone(values["Tryptone Peptone (Difco 0123-17)"], source),
         _component("Fetal or newborn calf serum", values["Fetal or newborn calf serum"], source),
-        _component("Ascorbic acid", values["Ascorbic acid"], source, "CHEBI:22652", "ascorbic acid"),
+        _component(
+            "Ascorbic acid", values["Ascorbic acid"], source, "CHEBI:22652", "ascorbic acid"
+        ),
         _component("hemin", values["hemin"], source, "CHEBI:50385", "hemin"),
         _component("Cysteine", values["Cysteine"], source, "CHEBI:17561", "L-cysteine"),
         _component("Resazurin", values["Resazurin"], source, "CHEBI:8806", "Resazurin"),
@@ -194,7 +199,9 @@ DSMZ_78B_COMPONENTS = (
     _component("Ground beef", "487.805", SOURCE_DSMZ_78B),
     _component("Casitone", "29.2683", SOURCE_DSMZ_78B),
     _component("Yeast extract", "4.87805", SOURCE_DSMZ_78B, "FOODON:03315426", "yeast extract"),
-    _component("K2HPO4", "4.87805", SOURCE_DSMZ_78B, "CHEBI:131527", "dipotassium hydrogen phosphate"),
+    _component(
+        "K2HPO4", "4.87805", SOURCE_DSMZ_78B, "CHEBI:131527", "dipotassium hydrogen phosphate"
+    ),
     _component("Sodium resazurin", "0.000487805", SOURCE_DSMZ_78B, "CHEBI:8806", "Resazurin"),
     _component(
         "L-Cysteine HCl x H2O",
@@ -253,7 +260,9 @@ KOMODO_78B_1_COMPONENTS = _komodo_components(
     },
     extras=(
         _component("Ribose", "1.91", SOURCE_KOMODO_78B_1, "CHEBI:16988", "D-ribose"),
-        _component("Glucuronic acid", "1.91", SOURCE_KOMODO_78B_1, "CHEBI:4178", "D-glucuronic acid"),
+        _component(
+            "Glucuronic acid", "1.91", SOURCE_KOMODO_78B_1, "CHEBI:4178", "D-glucuronic acid"
+        ),
     ),
 )
 
@@ -511,7 +520,12 @@ def repair_target(doc: dict[str, Any], target: Target) -> dict[str, Any]:
     _append_curation_event(repaired, target)
     _put_after(repaired, "references", repaired["references"], "data_quality_flags")
 
-    for field in ("parent_media", "variant_relationship", "variant_modifications", "variant_children"):
+    for field in (
+        "parent_media",
+        "variant_relationship",
+        "variant_modifications",
+        "variant_children",
+    ):
         repaired.pop(field, None)
 
     after = "references"
@@ -525,7 +539,12 @@ def repair_target(doc: dict[str, Any], target: Target) -> dict[str, Any]:
         _put_after(repaired, "variant_modifications", list(target.variant_modifications), after)
         after = "variant_modifications"
     if target.variant_children:
-        _put_after(repaired, "variant_children", [copy.deepcopy(row) for row in target.variant_children], after)
+        _put_after(
+            repaired,
+            "variant_children",
+            [copy.deepcopy(row) for row in target.variant_children],
+            after,
+        )
 
     return repaired
 

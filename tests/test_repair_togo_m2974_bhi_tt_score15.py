@@ -74,9 +74,7 @@ def test_repair_converts_one_liter_bhi_to_volume_and_grounds_thiamine(
     assert repair_module._signature(repaired["ingredients"], "ingredients") == (
         repair_module.FINAL_INGREDIENTS
     )
-    assert ingredients["brain-heart infusion broth (Difco Laboratories)"][
-        "concentration"
-    ] == {
+    assert ingredients["brain-heart infusion broth (Difco Laboratories)"]["concentration"] == {
         "value": "1000.0",
         "unit": "ML_PER_L",
     }
@@ -84,9 +82,7 @@ def test_repair_converts_one_liter_bhi_to_volume_and_grounds_thiamine(
         "id": "CHEBI:9533",
         "label": "thiamine(1+) monophosphate",
     }
-    assert scorer_module.score_parsed(
-        [(str(repair_module.PATH), repaired)]
-    ) == []
+    assert scorer_module.score_parsed([(str(repair_module.PATH), repaired)]) == []
 
 
 def test_repair_adds_provenance_flags_references_and_event_once(

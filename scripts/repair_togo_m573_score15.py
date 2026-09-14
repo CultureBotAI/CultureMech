@@ -23,9 +23,7 @@ TOGO_M573_PATH = Path(
 TOGO_M1804_PATH = Path(
     "bacterial/yeast_extract_malt_extract_agar_isp_2_with_artificial_seawater.yaml"
 )
-JCM_J569_PATH = Path(
-    "fungal/yeast_extract_malt_extract_agar_isp_2_with_artificial_seawater.yaml"
-)
+JCM_J569_PATH = Path("fungal/yeast_extract_malt_extract_agar_isp_2_with_artificial_seawater.yaml")
 YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 CURATOR = "repair_togo_m573_score15.py"
@@ -352,9 +350,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -378,15 +374,13 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.record_id:
         raise ValueError(
-            f"{target.path}: found id {doc.get('id')!r}, expected "
-            f"{target.record_id!r}"
+            f"{target.path}: found id {doc.get('id')!r}, expected " f"{target.record_id!r}"
         )
 
     source_term = _source_term_id(doc)
     if source_term != target.source_term:
         raise ValueError(
-            f"{target.path}: found source term {source_term!r}, "
-            f"expected {target.source_term!r}"
+            f"{target.path}: found source term {source_term!r}, " f"expected {target.source_term!r}"
         )
 
     if _signature(doc.get("ingredients"), "ingredients") not in (
@@ -481,11 +475,7 @@ def _ensure_child_links(doc: dict[str, Any]) -> None:
         child_id = str(child.get("id") or "")
         child_path = str(child.get("path") or "")
         replacement = next(
-            (
-                link
-                for link in CHILD_LINKS
-                if link["id"] == child_id or link["path"] == child_path
-            ),
+            (link for link in CHILD_LINKS if link["id"] == child_id or link["path"] == child_path),
             None,
         )
         if replacement is not None:

@@ -71,10 +71,13 @@ def test_repair_corrects_di_water_and_adds_ph_range(repair_module) -> None:
     assert repaired["physical_state"] == "SOLID_AGAR"
     assert repaired["ph_range"] == {"min": 6.8, "max": 7.2}
     assert "ph_value" not in repaired
-    assert repair_module._component_signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._component_signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["DI Water"]["concentration"] == {
         "value": "1.0",
         "unit": "L",
@@ -140,9 +143,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_target(_doc(repair_module))
     twice = repair_module.repair_target(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

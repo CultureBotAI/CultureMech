@@ -243,8 +243,7 @@ def repair_parent(doc: dict[str, Any]) -> dict[str, Any]:
             "changes": "Re-rooted KOMODO Medium 827 Thermoanaerobacter exact topology",
             "source": "DSMZ Medium 827; KOMODO Medium 827 and 827.1",
             "notes": (
-                "Moved exact KOMODO Medium 827 plus its DSM 16547 wrapper "
-                "under DSMZ Medium 827."
+                "Moved exact KOMODO Medium 827 plus its DSM 16547 wrapper " "under DSMZ Medium 827."
             ),
         },
     )

@@ -83,13 +83,19 @@ def test_repair_corrects_units_and_leaves_review_ranking(
 ) -> None:
     repaired = repair_module.repair_record(_doc(repair_module))
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._solution_signatures(
-        repaired["solutions"],
-    ) == repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
+    assert (
+        repair_module._solution_signatures(
+            repaired["solutions"],
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURES
+    )
     assert repaired["ph_range"] == {"min": 7.0, "max": 7.2}
     assert scorer_module.score_parsed([(str(repair_module.TARGET), repaired)]) == []
 

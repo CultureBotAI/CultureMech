@@ -69,9 +69,10 @@ def test_repair_document_grounds_defined_components(repair_module) -> None:
     repaired = repair_module.repair_document(_minimal_doc(repair_module))
     ingredients = {row["preferred_term"]: row for row in repaired["ingredients"]}
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Glucose"]["term"]["id"] == "CHEBI:17234"
     assert ingredients["Glucose"]["mediaingredientmech_chebi_term"] == {
         "id": "CHEBI:17234",
@@ -93,9 +94,10 @@ def test_repair_document_adds_reference_and_event_once(repair_module) -> None:
     twice = repair_module.repair_document(once)
 
     assert twice["references"] == [{"reference": repair_module.NBRC_URL}]
-    assert repair_module._signature(
-        twice["ingredients"], "ingredients"
-    ) == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(twice["ingredients"], "ingredients")
+        == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    )
     matching_events = [
         event
         for event in twice["curation_history"]
@@ -134,9 +136,7 @@ def test_repair_document_rejects_name_drift(repair_module) -> None:
 
 def test_repair_document_rejects_ingredient_drift(repair_module) -> None:
     doc = _minimal_doc(repair_module)
-    doc["ingredients"][0] = _ingredient(
-        "Bacto Tryptone (Difco)", "4", "G_PER_L"
-    )
+    doc["ingredients"][0] = _ingredient("Bacto Tryptone (Difco)", "4", "G_PER_L")
 
     with pytest.raises(ValueError, match="ingredient signature drifted"):
         repair_module.repair_document(doc)

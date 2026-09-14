@@ -87,9 +87,7 @@ def test_repair_expands_marine_medium_293_variant(repair, scorer) -> None:
         "value": "2.997003",
         "unit": "G_PER_L",
     }
-    assert "Na2-succinate" not in {
-        row["preferred_term"] for row in repaired["ingredients"]
-    }
+    assert "Na2-succinate" not in {row["preferred_term"] for row in repaired["ingredients"]}
 
 
 def test_repair_expands_freshwater_medium_298_variant(repair, scorer) -> None:
@@ -107,9 +105,7 @@ def test_repair_expands_freshwater_medium_298_variant(repair, scorer) -> None:
         "value": "0.399600",
         "unit": "G_PER_L",
     }
-    assert "2,3-butanediol" not in {
-        row["preferred_term"] for row in repaired["ingredients"]
-    }
+    assert "2,3-butanediol" not in {row["preferred_term"] for row in repaired["ingredients"]}
 
 
 def test_repair_adds_polyethylene_glycol_and_anaerobic_gas(repair) -> None:
@@ -170,8 +166,7 @@ def test_plan_repairs_is_idempotent(repair, tmp_path: Path) -> None:
 
     second = repair.plan_repairs(tmp_path)
     assert all(
-        path.read_bytes() == repair.dump_record(doc).encode("utf-8")
-        for path, doc in second.items()
+        path.read_bytes() == repair.dump_record(doc).encode("utf-8") for path, doc in second.items()
     )
 
 

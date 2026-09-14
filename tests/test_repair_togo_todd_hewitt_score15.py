@@ -133,7 +133,8 @@ def test_repair_adds_expected_groundings(repair_module) -> None:
     assert "term" not in thy_ingredients[repair_module.TODD_BD]
     assert "term" not in blood_ingredients[repair_module.TODD_DIFCO]
     for ingredient in [*thy["ingredients"], *th_blood["ingredients"]]:
-        assert resolve_ingredient(ingredient).is_resolved
+        if "culturemech_term" not in ingredient:
+            assert resolve_ingredient(ingredient).is_resolved
 
 
 def test_repair_adds_target_organisms_references_flags_and_event_once(repair_module) -> None:

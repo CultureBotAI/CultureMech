@@ -150,9 +150,7 @@ def test_repair_adds_anaerobic_vessel_conditions(repair_module) -> None:
         "20 ml medium in 60 ml serum bottles with butyl rubber stoppers"
     )
     assert repaired["incubation_atmosphere"] == "ANAEROBIC"
-    assert repaired["preparation_steps"][-1]["description"].startswith(
-        "Prior to use, add 6.0 ml/L"
-    )
+    assert repaired["preparation_steps"][-1]["description"].startswith("Prior to use, add 6.0 ml/L")
 
 
 def test_repair_adds_flags_references_and_history(repair_module) -> None:
@@ -192,12 +190,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(tmp_path)
 
     assert {
-        path.relative_to(tmp_path): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(tmp_path): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(tmp_path): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(tmp_path): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:

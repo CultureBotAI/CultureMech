@@ -114,10 +114,7 @@ TARGETS: tuple[Target, ...] = (
                     "1000",
                     "ML_PER_L",
                     source=M250_SOURCE,
-                    notes=(
-                        "TOGO M250 snapshots JCM_M258 and lists 1.0 L "
-                        "distilled water."
-                    ),
+                    notes=("TOGO M250 snapshots JCM_M258 and lists 1.0 L " "distilled water."),
                     term=("CHEBI:15377", "water"),
                 ),
                 _ingredient(
@@ -166,10 +163,7 @@ TARGETS: tuple[Target, ...] = (
                     "1000",
                     "ML_PER_L",
                     source=M530_SOURCE,
-                    notes=(
-                        "TOGO M530 snapshots JCM_M529 and lists 1.0 L "
-                        "distilled water."
-                    ),
+                    notes=("TOGO M530 snapshots JCM_M529 and lists 1.0 L " "distilled water."),
                     term=("CHEBI:15377", "water"),
                 ),
                 _ingredient(
@@ -311,8 +305,7 @@ def _ensure_reference(doc: dict[str, Any], target: Target) -> None:
         raise ValueError(f"{target.path}: references is not a list")
 
     if not any(
-        isinstance(row, dict) and row.get("reference") == target.reference_url
-        for row in references
+        isinstance(row, dict) and row.get("reference") == target.reference_url for row in references
     ):
         references.append({"reference": target.reference_url})
 
@@ -359,7 +352,8 @@ def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
 
 def plan_repairs(normalized: Path = NORMALIZED) -> dict[Path, dict[str, Any]]:
     return {
-        normalized / target.path: repair_record(
+        normalized
+        / target.path: repair_record(
             _load(normalized / target.path),
             target,
         )

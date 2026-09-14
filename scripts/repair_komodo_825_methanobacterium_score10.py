@@ -196,9 +196,9 @@ def _ensure_ingredients_curated(doc: dict[str, Any]) -> None:
 
 
 def _validate_targets() -> None:
-    if len(STRAIN_CHILDREN) != EXPECTED_STRAIN_CHILD_COUNT or len(
-        STRAIN_CHILDREN
-    ) != len(STRAIN_CHILD_BY_PATH):
+    if len(STRAIN_CHILDREN) != EXPECTED_STRAIN_CHILD_COUNT or len(STRAIN_CHILDREN) != len(
+        STRAIN_CHILD_BY_PATH
+    ):
         raise ValueError(
             f"expected {EXPECTED_STRAIN_CHILD_COUNT} unique strain children, "
             f"found {len(STRAIN_CHILDREN)} total and {len(STRAIN_CHILD_BY_PATH)} unique"

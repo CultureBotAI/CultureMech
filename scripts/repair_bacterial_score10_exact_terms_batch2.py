@@ -131,9 +131,7 @@ EXPECTED_IDS = {
     Path("bacterial/blood_agar_ii.yaml"): "CultureMech:001345",
     Path("bacterial/bsw3_agar.yaml"): "CultureMech:002385",
     Path("bacterial/btt_medium.yaml"): "CultureMech:000543",
-    Path("bacterial/columbia_agar_with_5_sheep_blood.yaml"): (
-        "CultureMech:000788"
-    ),
+    Path("bacterial/columbia_agar_with_5_sheep_blood.yaml"): ("CultureMech:000788"),
     Path("bacterial/cyc_agar.yaml"): "CultureMech:002851",
     Path("bacterial/cyc_agar_ph_8_0.yaml"): "CultureMech:002580",
 }
@@ -250,9 +248,7 @@ def _ingredient_signature(doc: dict[str, Any]) -> tuple[str, ...]:
     if not isinstance(ingredients, list):
         raise ValueError("ingredients is not a list")
     return tuple(
-        str(row.get("preferred_term") or "")
-        for row in ingredients
-        if isinstance(row, dict)
+        str(row.get("preferred_term") or "") for row in ingredients if isinstance(row, dict)
     )
 
 

@@ -68,10 +68,13 @@ def test_repair_corrects_formula_units(repair_module) -> None:
     assert repaired["medium_type"] == "COMPLEX"
     assert repaired["composition_type"] == "SEMI_DEFINED"
     assert repaired["physical_state"] == "SOLID_AGAR"
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
 
     ingredients = _by_name(repaired["ingredients"])
     assert ingredients["Distilled water"] == {
@@ -79,8 +82,7 @@ def test_repair_corrects_formula_units(repair_module) -> None:
         "concentration": {"value": "1.0", "unit": "L"},
         "source": repair_module.SOURCE,
         "notes": (
-            "TOGO M149 lists 1 L distilled water, matching MediaDive J158's "
-            "1000 ml water basis."
+            "TOGO M149 lists 1 L distilled water, matching MediaDive J158's " "1000 ml water basis."
         ),
         "term": {"id": "CHEBI:15377", "label": "water"},
         "mediaingredientmech_chebi_term": {"id": "CHEBI:15377", "label": "water"},
@@ -147,9 +149,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

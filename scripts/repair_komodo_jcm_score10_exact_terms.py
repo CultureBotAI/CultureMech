@@ -132,29 +132,21 @@ TARGET_SIGNATURES = {
 
 EXPECTED_IDS = {
     Path("bacterial/JCM_J44_BENNETT_S_AGAR.yaml"): "CultureMech:002800",
-    Path("bacterial/KOMODO_102_FLAVOBACTERIUM_AQUATILE_medium.yaml"): (
-        "CultureMech:003542"
-    ),
+    Path("bacterial/KOMODO_102_FLAVOBACTERIUM_AQUATILE_medium.yaml"): ("CultureMech:003542"),
     Path("bacterial/KOMODO_1076_SP4_MEDIUM.yaml"): "CultureMech:003664",
     Path("bacterial/KOMODO_1076b_SP4-Z_medium.yaml"): "CultureMech:003729",
     Path("bacterial/KOMODO_1109_BTT_medium.yaml"): "CultureMech:003810",
-    Path("bacterial/KOMODO_1133_ENRICHED_CYTOPHAGA_AGAR_medium.yaml"): (
-        "CultureMech:003843"
-    ),
+    Path("bacterial/KOMODO_1133_ENRICHED_CYTOPHAGA_AGAR_medium.yaml"): ("CultureMech:003843"),
     Path("bacterial/KOMODO_1143_TY_medium.yaml"): "CultureMech:003854",
     Path("bacterial/KOMODO_21_SARCINA_medium.yaml"): "CultureMech:004430",
-    Path("bacterial/KOMODO_238_STREPTOMYCIN_NUTRIENT_AGAR.yaml"): (
-        "CultureMech:004611"
-    ),
+    Path("bacterial/KOMODO_238_STREPTOMYCIN_NUTRIENT_AGAR.yaml"): ("CultureMech:004611"),
     Path("bacterial/KOMODO_245_BLOOD_AGAR_II.yaml"): "CultureMech:004616",
     Path("bacterial/KOMODO_251_Peptone_-_MEAT_EXTRACT_-_SOIL_EXTRACT_AGAR_PFE.yaml"): (
         "CultureMech:004623"
     ),
     Path("bacterial/KOMODO_264_TOMATO_JUICE_medium.yaml"): "CultureMech:004667",
     Path("bacterial/KOMODO_281_HYPHOMONAS_medium.yaml"): "CultureMech:004734",
-    Path("bacterial/KOMODO_302_NUTRIENT_BROTH_WITH_10_HORSE_SERUM.yaml"): (
-        "CultureMech:004809"
-    ),
+    Path("bacterial/KOMODO_302_NUTRIENT_BROTH_WITH_10_HORSE_SERUM.yaml"): ("CultureMech:004809"),
     Path("bacterial/KOMODO_306_NY-AGAR.yaml"): "CultureMech:004854",
     Path("bacterial/KOMODO_309_NEOMYCIN_AGAR.yaml"): "CultureMech:004886",
 }
@@ -264,9 +256,7 @@ def _ingredient_signature(doc: dict[str, Any]) -> tuple[str, ...]:
     if not isinstance(ingredients, list):
         raise ValueError("ingredients is not a list")
     return tuple(
-        str(row.get("preferred_term") or "")
-        for row in ingredients
-        if isinstance(row, dict)
+        str(row.get("preferred_term") or "") for row in ingredients if isinstance(row, dict)
     )
 
 

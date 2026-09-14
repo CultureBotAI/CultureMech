@@ -90,10 +90,13 @@ def test_repair_uses_daigo_premix_agar_and_water(repair_module, scorer_module) -
     ingredients = _by_name(repaired["ingredients"])
 
     assert "solutions" not in repaired
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients['R2A Broth "DAIGO"']["culturemech_term"] == {
         "id": "CultureMech:003183",
         "label": "R2A Broth",

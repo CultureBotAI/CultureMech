@@ -90,10 +90,13 @@ def test_repair_corrects_jcm_1102_base_and_drops_from_review_ranking(
 
     assert repaired["ph_value"] == 7.0
     assert repaired["composition_type"] == "SEMI_DEFINED"
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Distilled water"]["concentration"] == {
         "value": "250.0",
         "unit": "ML_PER_L",
@@ -116,9 +119,7 @@ def test_repair_expands_reducer_stocks(repair_module) -> None:
     repaired = repair_module.repair_record(_doc(repair_module))
     solutions = _by_name(repaired["solutions"])
 
-    assert repair_module._solution_signatures(repaired) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
-    )
+    assert repair_module._solution_signatures(repaired) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     assert solutions["5% L-Cysteine HCl H2O solution"]["concentration"] == {
         "value": "6.0",
         "unit": "ML_PER_L",

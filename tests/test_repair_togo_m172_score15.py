@@ -85,13 +85,19 @@ def test_repair_corrects_units_and_adds_ph_range(repair_module) -> None:
     assert repaired["physical_state"] == "LIQUID"
     assert repaired["ph_range"] == {"min": 6.7, "max": 6.8}
     assert "ph_value" not in repaired
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._solution_signatures(
-        repaired,
-    ) == repair_module.FINAL_SOLUTION_SIGNATURES
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
+    assert (
+        repair_module._solution_signatures(
+            repaired,
+        )
+        == repair_module.FINAL_SOLUTION_SIGNATURES
+    )
 
 
 def test_repair_grounds_main_components(repair_module) -> None:
@@ -124,18 +130,19 @@ def test_repair_represents_simple_stock_solutes(repair_module) -> None:
         "id": "CHEBI:8806",
         "label": "Resazurin",
     }
-    assert solutions["0.2% Hemin solution"]["composition"][0][
-        "mediaingredientmech_chebi_term"
-    ] == {"id": "CHEBI:50385", "label": "hemin"}
-    assert solutions["4% Na2SO3 solution"]["composition"][0][
-        "mediaingredientmech_chebi_term"
-    ] == {"id": "CHEBI:86477", "label": "sodium sulfite"}
-    assert solutions["25% L--Ascorbic acid solution"]["composition"][0][
-        "concentration"
-    ] == {"value": "25.0", "unit": "PERCENT_W_V"}
-    assert solutions["5% L--Cysteine\u30fbHCl\u30fbH2O solution"]["composition"][
-        0
-    ]["term"] == {
+    assert solutions["0.2% Hemin solution"]["composition"][0]["mediaingredientmech_chebi_term"] == {
+        "id": "CHEBI:50385",
+        "label": "hemin",
+    }
+    assert solutions["4% Na2SO3 solution"]["composition"][0]["mediaingredientmech_chebi_term"] == {
+        "id": "CHEBI:86477",
+        "label": "sodium sulfite",
+    }
+    assert solutions["25% L--Ascorbic acid solution"]["composition"][0]["concentration"] == {
+        "value": "25.0",
+        "unit": "PERCENT_W_V",
+    }
+    assert solutions["5% L--Cysteine\u30fbHCl\u30fbH2O solution"]["composition"][0]["term"] == {
         "id": "CHEBI:91248",
         "label": "L-cysteine hydrochloride hydrate",
     }
@@ -202,9 +209,7 @@ def test_repair_adds_references_and_event_once(repair_module) -> None:
     once = repair_module.repair_record(_doc(repair_module))
     twice = repair_module.repair_record(once)
 
-    assert twice["references"] == [
-        {"reference": url} for url in repair_module.REFERENCES
-    ]
+    assert twice["references"] == [{"reference": url} for url in repair_module.REFERENCES]
     matching_events = [
         event
         for event in twice["curation_history"]

@@ -172,9 +172,7 @@ def _require_target(doc: dict[str, Any]) -> None:
 
     source_term = _source_term_id(doc)
     if source_term != TARGET_SOURCE:
-        raise ValueError(
-            f"{TARGET}: found source term {source_term!r}, expected {TARGET_SOURCE!r}"
-        )
+        raise ValueError(f"{TARGET}: found source term {source_term!r}, expected {TARGET_SOURCE!r}")
 
 
 def _put_after(doc: dict[str, Any], key: str, value: Any, after: str) -> None:
@@ -249,10 +247,7 @@ def _ensure_reference(doc: dict[str, Any]) -> None:
     if not isinstance(references, list):
         raise ValueError(f"{TARGET}: references is not a list")
 
-    if not any(
-        isinstance(row, dict) and row.get("reference") == DSMZ_1850
-        for row in references
-    ):
+    if not any(isinstance(row, dict) and row.get("reference") == DSMZ_1850 for row in references):
         references.append({"reference": DSMZ_1850})
 
 

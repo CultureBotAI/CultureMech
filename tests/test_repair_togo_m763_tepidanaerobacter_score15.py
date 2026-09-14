@@ -60,8 +60,7 @@ def _doc(repair_module, target) -> dict:
         "composition_type": "SEMI_DEFINED",
         "physical_state": "LIQUID",
         "ingredients": [
-            _ingredient(name, value, unit)
-            for name, value, unit in target.imported_ingredients
+            _ingredient(name, value, unit) for name, value, unit in target.imported_ingredients
         ],
         "media_term": {
             "preferred_term": target.media_term,
@@ -71,8 +70,7 @@ def _doc(repair_module, target) -> dict:
         "applications": ["Microbial cultivation"],
         "curation_history": [],
         "solutions": [
-            _solution(name, value, unit)
-            for name, value, unit, _ in target.imported_solutions
+            _solution(name, value, unit) for name, value, unit, _ in target.imported_solutions
         ],
     }
 
@@ -125,9 +123,7 @@ def test_repair_expands_togo_m763_solution_wrappers(repair_module) -> None:
     assert all(sol["concentration"]["unit"] == "ML_PER_L" for sol in solutions.values())
 
     trace = _by_name(solutions["Trace metal solution (TOGO Medium M288)"]["composition"])
-    selenite = _by_name(
-        solutions["Selenite-tungstate solution (TOGO Medium M431)"]["composition"]
-    )
+    selenite = _by_name(solutions["Selenite-tungstate solution (TOGO Medium M431)"]["composition"])
 
     assert trace["AlCl3"]["term"] == {
         "id": "CHEBI:30114",
@@ -150,9 +146,7 @@ def test_repair_converts_100_ml_phosphate_stock_to_per_liter(repair_module) -> N
     )
 
     phosphate = _by_name(
-        _by_name(repaired["solutions"])["Phosphate solution (TOGO Medium M762)"][
-            "composition"
-        ]
+        _by_name(repaired["solutions"])["Phosphate solution (TOGO Medium M762)"]["composition"]
     )
     assert phosphate["KH2PO4"]["concentration"] == {
         "value": "4.1",

@@ -76,17 +76,12 @@ NOTES = (
 )
 
 INGREDIENT_NOTES = {
-    "Distilled water": (
-        "TOGO M2140 / NBRC Medium 1481 lists 1 L Distilled water as the solvent."
-    ),
+    "Distilled water": ("TOGO M2140 / NBRC Medium 1481 lists 1 L Distilled water as the solvent."),
     "Yeast extract": "TOGO M2140 / NBRC Medium 1481 lists 0.5 g/L Yeast extract.",
     MNCL2_HYDRATE: (
-        "TOGO M2140 / NBRC Medium 1481 lists 36 mg/L "
-        "manganese(II) chloride tetrahydrate."
+        "TOGO M2140 / NBRC Medium 1481 lists 36 mg/L " "manganese(II) chloride tetrahydrate."
     ),
-    "Agar (if needed)": (
-        "TOGO M2140 / NBRC Medium 1481 lists 15 g/L Agar if needed."
-    ),
+    "Agar (if needed)": ("TOGO M2140 / NBRC Medium 1481 lists 15 g/L Agar if needed."),
     "Peptone": "TOGO M2140 / NBRC Medium 1481 lists 1 g/L Peptone.",
 }
 
@@ -156,9 +151,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

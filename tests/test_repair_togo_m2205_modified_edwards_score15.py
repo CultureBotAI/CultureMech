@@ -75,10 +75,13 @@ def test_repair_adds_source_ph_and_temperature(
 
     assert repaired["ph_value"] == 7.6
     assert repaired["temperature_value"] == 37.0
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
 
 
 def test_repair_grounds_chemicals_and_complex_products(

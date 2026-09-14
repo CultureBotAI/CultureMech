@@ -179,7 +179,8 @@ def test_target_record_matches_nbrc_ypg_repair_contract(repair_module) -> None:
 
     assert doc["id"] == repair_module.TARGET_ID
     assert doc["original_name"] == repair_module.TITLE
-    assert repair_module._signature(
-        doc["ingredients"], "ingredients"
-    ) == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(doc["ingredients"], "ingredients")
+        == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    )
     assert repaired["ph_value"] == 7.0

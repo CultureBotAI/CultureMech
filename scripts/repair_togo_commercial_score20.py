@@ -323,7 +323,9 @@ TARGETS: tuple[Target, ...] = (
                 "notes": "Supplements JCM Medium 574 with 10.0 g/L sea salts (Sigma).",
             },
             "variant_relationship": "SUPPLEMENTED_VARIANT",
-            "variant_modifications": ["Supplements JCM Medium 574 with 10.0 g/L sea salts (Sigma)."],
+            "variant_modifications": [
+                "Supplements JCM Medium 574 with 10.0 g/L sea salts (Sigma)."
+            ],
         },
         reference_urls=(TOGO_M1125, JCM_1058, JCM_574),
     ),

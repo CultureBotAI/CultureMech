@@ -116,14 +116,19 @@ FINAL_INGREDIENTS = tuple(
     for row in INGREDIENTS
 )
 FINAL_SOLUTIONS = (
-    ("Cherry extract", "200.0", "ML_PER_L", tuple(
-        (
-            str(row["preferred_term"]),
-            str(row["concentration"]["value"]),
-            str(row["concentration"]["unit"]),
-        )
-        for row in CHERRY_EXTRACT_COMPOSITION
-    )),
+    (
+        "Cherry extract",
+        "200.0",
+        "ML_PER_L",
+        tuple(
+            (
+                str(row["preferred_term"]),
+                str(row["concentration"]["value"]),
+                str(row["concentration"]["unit"]),
+            )
+            for row in CHERRY_EXTRACT_COMPOSITION
+        ),
+    ),
 )
 
 PREPARATION_STEPS = (
@@ -221,9 +226,7 @@ def _solution_signatures(solutions: Any) -> tuple[tuple[str, str, str, tuple], .
             raise ValueError("solutions contains a non-mapping row")
         concentration = solution.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"solution {solution.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"solution {solution.get('preferred_term')!r} lacks concentration")
         signatures.append(
             (
                 str(solution.get("preferred_term") or ""),
@@ -239,9 +242,7 @@ def _ensure_target(doc: dict[str, Any]) -> None:
     if doc.get("id") != RECORD_ID:
         raise ValueError(f"expected id {RECORD_ID}, found {doc.get('id')!r}")
     if _source_term_id(doc) != MEDIA_TERM:
-        raise ValueError(
-            f"expected media term {MEDIA_TERM}, found {_source_term_id(doc)!r}"
-        )
+        raise ValueError(f"expected media term {MEDIA_TERM}, found {_source_term_id(doc)!r}")
 
     signature = (
         _signature(doc.get("ingredients"), "ingredients"),

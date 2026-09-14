@@ -17,13 +17,9 @@ sys.path.insert(0, str(REPO / "scripts"))
 from record_io import dump_record, write_record  # noqa: E402
 
 NORMALIZED = REPO / "data" / "normalized_yaml"
-CRITERION_PATH = Path(
-    "bacterial/mrs_broth_criterion_usa_containing_0_5_l_cysteine_sigma_usa.yaml"
-)
+CRITERION_PATH = Path("bacterial/mrs_broth_criterion_usa_containing_0_5_l_cysteine_sigma_usa.yaml")
 OXOID_PATH = Path("bacterial/mrs_broth_oxoid.yaml")
-CYSTEINE_OXOID_PATH = Path(
-    "bacterial/mrs_broth_with_0_05_w_v_cysteine_hydrochloride.yaml"
-)
+CYSTEINE_OXOID_PATH = Path("bacterial/mrs_broth_with_0_05_w_v_cysteine_hydrochloride.yaml")
 YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 CURATOR = "repair_togo_m2242_m2796_m2804_mrs_broths_score15.py"
@@ -307,9 +303,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -370,9 +364,7 @@ def _composition(target: Target) -> list[dict[str, Any]]:
 
 def _ensure_target(doc: dict[str, Any], target: Target) -> None:
     if doc.get("id") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{target.path}: expected id {target.record_id}, found {doc.get('id')!r}")
     if _source_term_id(doc) != target.media_term_id:
         raise ValueError(f"{target.path}: expected media term {target.media_term_id}")
 
@@ -489,9 +481,7 @@ def repair_record(doc: dict[str, Any], target: Target) -> dict[str, Any]:
         repaired.pop("variant_modifications", None)
 
     if target.variant_children:
-        repaired["variant_children"] = [
-            copy.deepcopy(child) for child in target.variant_children
-        ]
+        repaired["variant_children"] = [copy.deepcopy(child) for child in target.variant_children]
     else:
         repaired.pop("variant_children", None)
 

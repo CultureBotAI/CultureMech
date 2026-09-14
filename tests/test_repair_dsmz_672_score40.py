@@ -130,17 +130,11 @@ def test_plan_repairs_links_komodo_source_duplicate(
             "relationship": "SOURCE_DUPLICATE",
             "id": "CultureMech:006268",
             "name": "half_strength_nutrient_broth_or_agar",
-            "notes": (
-                "KOMODO Medium 672 is a source-catalogue duplicate of "
-                "DSMZ Medium 672."
-            ),
+            "notes": ("KOMODO Medium 672 is a source-catalogue duplicate of " "DSMZ Medium 672."),
         },
     ]
     assert child["parent_media"] == {
-        "path": (
-            "data/normalized_yaml/bacterial/"
-            "half_strength_nutrient_broth_or_agar.yaml"
-        ),
+        "path": ("data/normalized_yaml/bacterial/" "half_strength_nutrient_broth_or_agar.yaml"),
         "relationship": "SOURCE_DUPLICATE",
         "id": "CultureMech:001813",
         "name": "half_strength_nutrient_broth_or_agar",

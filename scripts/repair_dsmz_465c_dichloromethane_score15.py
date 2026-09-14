@@ -41,8 +41,7 @@ EXPECTED_SOURCE_TERMS = {
 DSMZ_465C_REST = "https://mediadive.dsmz.de/rest/medium/465c"
 DSMZ_465C_PDF = "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium465c.pdf"
 KOMODO_BASE = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo="
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo="
 )
 
 CURATOR = "repair_dsmz_465c_dichloromethane_score15.py"
@@ -129,8 +128,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 3,
         "action": "ADJUST_PH",
         "description": (
-            "Maintain pH 7.25 and readjust the culture with sterile 1 M NaOH "
-            "if necessary."
+            "Maintain pH 7.25 and readjust the culture with sterile 1 M NaOH " "if necessary."
         ),
     },
     {
@@ -319,8 +317,7 @@ def _component(preferred_term: str, value: str) -> dict[str, Any]:
 
 def _build_ingredients(final_concentrations: dict[str, str]) -> list[dict[str, Any]]:
     return [
-        _component(preferred_term, value)
-        for preferred_term, value in final_concentrations.items()
+        _component(preferred_term, value) for preferred_term, value in final_concentrations.items()
     ]
 
 
@@ -361,7 +358,12 @@ def _append_curation_event(doc: dict[str, Any], path: str, source: str, notes: s
 
 
 def _set_variant_fields(repaired: dict[str, Any], target: Target) -> None:
-    for field_name in ("parent_media", "variant_relationship", "variant_modifications", "variant_children"):
+    for field_name in (
+        "parent_media",
+        "variant_relationship",
+        "variant_modifications",
+        "variant_children",
+    ):
         repaired.pop(field_name, None)
 
     after = "references"
@@ -375,7 +377,12 @@ def _set_variant_fields(repaired: dict[str, Any], target: Target) -> None:
         _put_after(repaired, "variant_modifications", list(target.variant_modifications), after)
         after = "variant_modifications"
     if target.variant_children:
-        _put_after(repaired, "variant_children", [copy.deepcopy(row) for row in target.variant_children], after)
+        _put_after(
+            repaired,
+            "variant_children",
+            [copy.deepcopy(row) for row in target.variant_children],
+            after,
+        )
 
 
 def _notes(target: Target) -> str:

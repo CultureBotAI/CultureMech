@@ -71,9 +71,7 @@ def test_parent_lists_all_135_children(repair_module) -> None:
     assert "ingredients_curated" in repaired["data_quality_flags"]
 
 
-@pytest.mark.parametrize(
-    "child", tuple(_load_script(SCRIPT, "komodo_135").CHILDREN)
-)
+@pytest.mark.parametrize("child", tuple(_load_script(SCRIPT, "komodo_135").CHILDREN))
 def test_children_link_to_135a_parent(repair_module, child) -> None:
     repaired = repair_module.repair_child(
         child.path,
@@ -88,25 +86,26 @@ def test_children_link_to_135a_parent(repair_module, child) -> None:
 def test_repair_is_idempotent(repair_module) -> None:
     once = repair_module.plan_repairs()
     twice = {
-        path: repair_module.repair_parent(doc)
-        if path == repair_module.NORMALIZED / repair_module.PARENT
-        else repair_module.repair_child(
-            path.relative_to(repair_module.NORMALIZED),
-            doc,
+        path: (
+            repair_module.repair_parent(doc)
+            if path == repair_module.NORMALIZED / repair_module.PARENT
+            else repair_module.repair_child(
+                path.relative_to(repair_module.NORMALIZED),
+                doc,
+            )
         )
         for path, doc in once.items()
     }
 
     assert twice == once
     for path in once:
-        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(
-            once[path]
-        )
+        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(once[path])
 
 
 def test_plan_repairs_targets_current_records(repair_module) -> None:
     expected = {
-        repair_module.NORMALIZED / repair_module.PARENT: repair_module.repair_parent(
+        repair_module.NORMALIZED
+        / repair_module.PARENT: repair_module.repair_parent(
             _load_yaml(repair_module.NORMALIZED / repair_module.PARENT)
         ),
     }

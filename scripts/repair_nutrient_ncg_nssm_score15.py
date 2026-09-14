@@ -169,13 +169,10 @@ JCM_1109_CHILD = {
 }
 
 DSMZ_605A_MODIFICATION = (
-    "Add 0.45 g/L KH2PO4 and 2.39 g/L Na2HPO4 x 12 H2O to DSMZ "
-    "Medium 605; final pH is 6.8."
+    "Add 0.45 g/L KH2PO4 and 2.39 g/L Na2HPO4 x 12 H2O to DSMZ " "Medium 605; final pH is 6.8."
 )
 
-M2341_MODIFICATION = (
-    "Same ingredient and concentration signature as TOGO M2340 Nutrient Agar."
-)
+M2341_MODIFICATION = "Same ingredient and concentration signature as TOGO M2340 Nutrient Agar."
 
 JCM_1109_MODIFICATION = (
     "Add 0.5 g/L Yeast extract (BD-Difco) and 30.0 g/L NaCl to "
@@ -411,9 +408,7 @@ REPAIRS: tuple[RecipeRepair, ...] = (
         references=(TOGO_M2040, NBRC_1338),
         action="RESOLVED_TOGO_M2040_SCORE15",
         ph_range={"min": 7.0, "max": 7.2},
-        preparation_steps=(
-            _step(1, "ADJUST_PH", "Adjust pH to 7.0-7.2."),
-        ),
+        preparation_steps=(_step(1, "ADJUST_PH", "Adjust pH to 7.0-7.2."),),
         has_unmapped_ingredients=True,
     ),
     RecipeRepair(
@@ -484,9 +479,7 @@ REPAIRS: tuple[RecipeRepair, ...] = (
         references=(TOGO_M2341, DSMZ_1),
         action="RESOLVED_TOGO_M2341_SCORE15",
         ph_value=7.0,
-        preparation_steps=(
-            _step(1, "ADJUST_PH", "Adjust pH to 7.0."),
-        ),
+        preparation_steps=(_step(1, "ADJUST_PH", "Adjust pH to 7.0."),),
         parent_media=M2341_PARENT,
         variant_relationship="SOURCE_DUPLICATE",
         variant_modifications=(M2341_MODIFICATION,),
@@ -534,9 +527,7 @@ REPAIRS: tuple[RecipeRepair, ...] = (
         references=(DSMZ_605A, DSMZ_605),
         action="RESOLVED_DSMZ_605A_SCORE15",
         ph_value=6.8,
-        preparation_steps=(
-            _step(1, "MIX", DSMZ_605A_MODIFICATION),
-        ),
+        preparation_steps=(_step(1, "MIX", DSMZ_605A_MODIFICATION),),
         parent_media=DSMZ_605A_PARENT,
         variant_relationship="SUPPLEMENTED_VARIANT",
         variant_modifications=(DSMZ_605A_MODIFICATION,),
@@ -563,9 +554,7 @@ REPAIRS: tuple[RecipeRepair, ...] = (
         references=(DSMZ_605A, DSMZ_605),
         action="RESOLVED_KOMODO_605A_SOURCE_DUPLICATE",
         ph_value=6.8,
-        preparation_steps=(
-            _step(1, "MIX", DSMZ_605A_MODIFICATION),
-        ),
+        preparation_steps=(_step(1, "MIX", DSMZ_605A_MODIFICATION),),
         parent_media={
             "path": f"data/normalized_yaml/{DSMZ_605A_PATH}",
             "relationship": "SOURCE_DUPLICATE",
@@ -577,9 +566,7 @@ REPAIRS: tuple[RecipeRepair, ...] = (
             ),
         },
         variant_relationship="SOURCE_DUPLICATE",
-        variant_modifications=(
-            "Same ingredient and concentration signature as DSMZ Medium 605a.",
-        ),
+        variant_modifications=("Same ingredient and concentration signature as DSMZ Medium 605a.",),
     ),
     RecipeRepair(
         path=M1186,
@@ -589,9 +576,7 @@ REPAIRS: tuple[RecipeRepair, ...] = (
             ("NaCl", "30", "G_PER_L"),
             ("Yeast extract (BD--Difco)", "0.5", "G_PER_L"),
         ),
-        imported_solution_signature=(
-            ("Nutrient agar (see Medium [M65])", "1", "G_PER_L"),
-        ),
+        imported_solution_signature=(("Nutrient agar (see Medium [M65])", "1", "G_PER_L"),),
         ingredients=(
             _ingredient(
                 "NaCl",
@@ -616,8 +601,7 @@ REPAIRS: tuple[RecipeRepair, ...] = (
                 "concentration": {"value": "1.0", "unit": "L"},
                 "source": "TOGO M1186 / JCM Medium 1109",
                 "notes": (
-                    "TOGO M1186 and JCM Medium 1109 list 1.0 L Nutrient agar "
-                    "from JCM Medium 74."
+                    "TOGO M1186 and JCM Medium 1109 list 1.0 L Nutrient agar " "from JCM Medium 74."
                 ),
                 "composition": [],
             },
@@ -678,9 +662,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -703,9 +685,7 @@ def _source_term_id(doc: dict[str, Any]) -> str:
 
 def _ensure_target(repair: RecipeRepair, doc: dict[str, Any]) -> None:
     if doc.get("id") != repair.record_id:
-        raise ValueError(
-            f"{repair.path}: expected id {repair.record_id}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{repair.path}: expected id {repair.record_id}, found {doc.get('id')!r}")
     if _source_term_id(doc) != repair.source_term:
         raise ValueError(f"{repair.path}: expected media term {repair.source_term}")
 

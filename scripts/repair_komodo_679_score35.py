@@ -20,8 +20,7 @@ NORMALIZED = REPO / "data" / "normalized_yaml"
 YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 KOMODO_679_URL = (
-    "https://komodo.modelseed.org/servlet/"
-    "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=679"
+    "https://komodo.modelseed.org/servlet/" "KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=679"
 )
 KOMODO_679_1_URL = (
     "https://komodo.modelseed.org/servlet/"
@@ -608,18 +607,14 @@ def _target_for(doc: dict[str, Any]) -> Target:
     target = TARGETS_BY_ID.get(doc.get("id"))
     if target is None:
         expected = ", ".join(sorted(TARGETS_BY_ID))
-        raise ValueError(
-            f"expected immutable id in {{{expected}}}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"expected immutable id in {{{expected}}}, found {doc.get('id')!r}")
 
     media_term = doc.get("media_term")
     if not isinstance(media_term, dict):
         raise ValueError(f"{target.path}: missing media_term")
     term = media_term.get("term")
     if not isinstance(term, dict) or term.get("id") != target.media_term:
-        raise ValueError(
-            f"{target.path}: missing expected media term {target.media_term}"
-        )
+        raise ValueError(f"{target.path}: missing expected media term {target.media_term}")
     return target
 
 
@@ -695,9 +690,7 @@ def _ingredient(component: Component) -> dict[str, Any]:
 
 def _components(target: Target) -> list[Component]:
     components = (
-        list(BASE_1011_COMPONENTS)
-        if target.uses_seven_vitamins
-        else list(BASE_1001_COMPONENTS)
+        list(BASE_1011_COMPONENTS) if target.uses_seven_vitamins else list(BASE_1001_COMPONENTS)
     )
     if target.substrate is not None:
         components.append(target.substrate)
@@ -717,9 +710,7 @@ def repair_record(doc: dict[str, Any]) -> dict[str, Any]:
     repaired["composition_type"] = "DEFINED"
     repaired["physical_state"] = "LIQUID"
     _put_after(repaired, "ph_value", 7.2, "physical_state")
-    repaired["ingredients"] = [
-        _ingredient(component) for component in _components(target)
-    ]
+    repaired["ingredients"] = [_ingredient(component) for component in _components(target)]
     _put_after(repaired, "notes", target.notes, "media_term")
     _ensure_flags(repaired)
     _ensure_references(repaired, target)

@@ -35,9 +35,7 @@ def _load_yaml(path: Path) -> dict:
     return yaml.safe_load(path.read_text(encoding="utf-8"))
 
 
-@pytest.mark.parametrize(
-    "child", tuple(_load_script(SCRIPT, "komodo_503d_tmao3_tmpn3").CHILDREN)
-)
+@pytest.mark.parametrize("child", tuple(_load_script(SCRIPT, "komodo_503d_tmao3_tmpn3").CHILDREN))
 def test_children_link_to_komodo_503d_parent(repair_module, child) -> None:
     repaired = repair_module.repair_child(
         child.path,
@@ -50,9 +48,7 @@ def test_children_link_to_komodo_503d_parent(repair_module, child) -> None:
     assert "ingredients_curated" in repaired["data_quality_flags"]
 
 
-@pytest.mark.parametrize(
-    "child", tuple(_load_script(SCRIPT, "komodo_503d_score").CHILDREN)
-)
+@pytest.mark.parametrize("child", tuple(_load_script(SCRIPT, "komodo_503d_score").CHILDREN))
 def test_score_pointer_children_exit_review_ranking(
     repair_module,
     scorer_module,
@@ -83,20 +79,20 @@ def test_parent_lists_komodo_503d_children(repair_module) -> None:
 def test_repair_is_idempotent(repair_module) -> None:
     once = repair_module.plan_repairs()
     twice = {
-        path: repair_module.repair_parent(doc)
-        if path == repair_module.NORMALIZED / repair_module.PARENT
-        else repair_module.repair_child(
-            path.relative_to(repair_module.NORMALIZED),
-            doc,
+        path: (
+            repair_module.repair_parent(doc)
+            if path == repair_module.NORMALIZED / repair_module.PARENT
+            else repair_module.repair_child(
+                path.relative_to(repair_module.NORMALIZED),
+                doc,
+            )
         )
         for path, doc in once.items()
     }
 
     assert twice == once
     for path in once:
-        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(
-            once[path]
-        )
+        assert repair_module.dump_record(twice[path]) == repair_module.dump_record(once[path])
 
 
 def test_plan_repairs_targets_current_records(repair_module) -> None:

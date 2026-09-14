@@ -177,9 +177,7 @@ def _ensure_ingredients_curated(doc: dict[str, Any]) -> None:
 
 
 def _validate_targets() -> None:
-    if len(DUPLICATES) != EXPECTED_DUPLICATE_COUNT or len(DUPLICATES) != len(
-        DUPLICATE_BY_PATH
-    ):
+    if len(DUPLICATES) != EXPECTED_DUPLICATE_COUNT or len(DUPLICATES) != len(DUPLICATE_BY_PATH):
         raise ValueError(
             f"expected {EXPECTED_DUPLICATE_COUNT} unique duplicates, found "
             f"{len(DUPLICATES)} total and {len(DUPLICATE_BY_PATH)} unique"
@@ -268,8 +266,7 @@ def repair_parent(doc: dict[str, Any]) -> dict[str, Any]:
     _put_after(
         repaired,
         "variant_children",
-        [_child_entry()]
-        + [_duplicate_entry(duplicate) for duplicate in DUPLICATES],
+        [_child_entry()] + [_duplicate_entry(duplicate) for duplicate in DUPLICATES],
         "curation_history",
     )
     _upsert_event(

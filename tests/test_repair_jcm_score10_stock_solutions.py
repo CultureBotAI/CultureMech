@@ -52,9 +52,7 @@ def _doc(repair_module, target: Path) -> dict:
         },
         "notes": "Source: JCM",
         "ph_value": 7.0,
-        "ingredients": [
-            _ingredient(name) for name in repair_module.IMPORTED_SIGNATURES[target]
-        ],
+        "ingredients": [_ingredient(name) for name in repair_module.IMPORTED_SIGNATURES[target]],
         "curation_history": [],
     }
 
@@ -89,9 +87,7 @@ def test_j1334_moves_neutral_base_to_nested_solution(repair_module) -> None:
     neutral = _by_name(solutions["Neutral base salt medium"]["composition"])
 
     assert repaired["ingredients"] == []
-    assert solutions["Base soda medium (JCM Medium 1207)"]["source"].endswith(
-        "JCM Medium 1207"
-    )
+    assert solutions["Base soda medium (JCM Medium 1207)"]["source"].endswith("JCM Medium 1207")
     assert "composition" not in solutions["Base soda medium (JCM Medium 1207)"]
     assert neutral["NaCl"]["concentration"] == {"value": "240.0", "unit": "G_PER_L"}
     assert neutral["(NH4)2SO4"]["term"] == {
@@ -133,8 +129,7 @@ def test_repair_adds_references_and_history(repair_module) -> None:
     repaired = repair_module.repair_record(target, _doc(repair_module, target))
 
     assert repaired["references"] == [
-        {"reference": repair_module._jcm_url(number)}
-        for number in repair_module.REFERENCES[target]
+        {"reference": repair_module._jcm_url(number)} for number in repair_module.REFERENCES[target]
     ]
     assert repaired["curation_history"] == [
         {

@@ -93,8 +93,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 2,
         "action": "ADJUST_PH",
         "description": (
-            "Adjust the Trace element solution SL-4 stock to pH 7.0-8.0 "
-            "with NaOH as needed."
+            "Adjust the Trace element solution SL-4 stock to pH 7.0-8.0 " "with NaOH as needed."
         ),
     },
 )

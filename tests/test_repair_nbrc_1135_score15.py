@@ -68,9 +68,10 @@ def test_repair_document_keeps_ebios_unmapped_and_grounds_known_rows(
     repaired = repair_module.repair_document(_minimal_doc(repair_module))
     ingredients = {row["preferred_term"]: row for row in repaired["ingredients"]}
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert ingredients["Malt extract"]["term"] == {
         "id": "FOODON:03301056",
         "label": "malt extract",

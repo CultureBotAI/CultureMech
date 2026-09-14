@@ -172,10 +172,7 @@ def _component(
 
 
 def _ingredients() -> list[dict[str, Any]]:
-    return [
-        _component(name, value, unit)
-        for name, value, unit in FINAL_INGREDIENT_SIGNATURE
-    ]
+    return [_component(name, value, unit) for name, value, unit in FINAL_INGREDIENT_SIGNATURE]
 
 
 def _soil_extract() -> dict[str, Any]:
@@ -222,9 +219,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -247,9 +242,7 @@ def _solution_signatures(rows: Any, label: str) -> tuple[SolutionSignature, ...]
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signatures.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -276,8 +269,7 @@ def _ensure_target(doc: dict[str, Any]) -> None:
         raise ValueError(f"expected {EXPECTED_ID}, found {doc.get('id')}")
     if _source_term_id(doc) != EXPECTED_MEDIA_TERM:
         raise ValueError(
-            f"expected media term {EXPECTED_MEDIA_TERM}, "
-            f"found {_source_term_id(doc)!r}"
+            f"expected media term {EXPECTED_MEDIA_TERM}, " f"found {_source_term_id(doc)!r}"
         )
     if _signature(doc.get("ingredients"), "ingredients") not in (
         IMPORTED_INGREDIENT_SIGNATURE,

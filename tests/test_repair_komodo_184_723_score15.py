@@ -64,9 +64,7 @@ def _ingredient(doc: dict, preferred_term: str) -> dict:
 
 
 def test_repair_expands_desulfurococcus_table(repair_module, scorer_module) -> None:
-    target = repair_module.TARGET_BY_PATH[
-        "archaea/KOMODO_184_DESULFUROCOCCUS_medium.yaml"
-    ]
+    target = repair_module.TARGET_BY_PATH["archaea/KOMODO_184_DESULFUROCOCCUS_medium.yaml"]
 
     repaired = repair_module.repair_record(_doc(target), target)
 
@@ -148,12 +146,8 @@ def test_plan_repairs_is_idempotent(repair_module, tmp_path: Path) -> None:
     second = repair_module.plan_repairs(root)
 
     assert {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in second.items()
-    } == {
-        path.relative_to(root): repair_module.dump_record(doc)
-        for path, doc in first.items()
-    }
+        path.relative_to(root): repair_module.dump_record(doc) for path, doc in second.items()
+    } == {path.relative_to(root): repair_module.dump_record(doc) for path, doc in first.items()}
 
 
 def test_repair_rejects_wrong_id(repair_module) -> None:

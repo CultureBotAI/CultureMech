@@ -85,8 +85,7 @@ def test_repair_adds_jcm_water_row(repair_module, scorer_module, target) -> None
         repair_module.FINAL_INGREDIENT_SIGNATURES[target.path]
     )
     assert set(ingredients) == {
-        name
-        for name, _value, _unit in repair_module.FINAL_INGREDIENT_SIGNATURES[target.path]
+        name for name, _value, _unit in repair_module.FINAL_INGREDIENT_SIGNATURES[target.path]
     }
     assert ingredients["Malt extract (BD-Difco)"]["concentration"] == {
         "value": target.malt_grams,

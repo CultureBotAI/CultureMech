@@ -78,12 +78,14 @@ def test_repair_nests_supplement_and_hemin_stock(
 
     assert repaired["ph_range"] == {"min": 7.2, "max": 7.4}
     assert "ph_value" not in repaired
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
-    assert repair_module._solution_signature(
-        repaired["solutions"], "solutions"
-    ) == repair_module.FINAL_SOLUTION_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
+    assert (
+        repair_module._solution_signature(repaired["solutions"], "solutions")
+        == repair_module.FINAL_SOLUTION_SIGNATURE
+    )
     assert scorer_module.score_record(repaired) == (0, [])
     assert scorer_module.score_parsed([(str(repair_module.TARGET), repaired)]) == []
 

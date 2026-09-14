@@ -247,10 +247,7 @@ def _trace_metal_1_stock() -> dict[str, Any]:
         "preferred_term": "Trace metal 1 solution",
         "concentration": {"value": "0.1", "unit": "ML_PER_L"},
         "source": SOURCE,
-        "notes": (
-            "JCM Medium 1086 adds 0.1 ml/L Trace metal 1 solution from "
-            "JCM Medium 923."
-        ),
+        "notes": ("JCM Medium 1086 adds 0.1 ml/L Trace metal 1 solution from " "JCM Medium 923."),
         "composition": [
             _source_component("CoCl2 x 6H2O", "24.0", "MG_PER_L"),
             _source_component("ZnCl2", "75.0", "MG_PER_L"),
@@ -301,8 +298,7 @@ PREPARATION_STEPS: tuple[dict[str, Any], ...] = (
         "step_number": 3,
         "action": "COOL",
         "description": (
-            "Cool the autoclaved base medium, then add filter-sterilized 0.5 M "
-            "MES solution."
+            "Cool the autoclaved base medium, then add filter-sterilized 0.5 M " "MES solution."
         ),
     },
     {

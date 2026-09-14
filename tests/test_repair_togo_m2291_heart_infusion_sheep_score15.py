@@ -71,10 +71,13 @@ def test_repair_drops_co2_component_and_adds_incubation_context(
 ) -> None:
     repaired = repair_module.repair_record(_doc(repair_module))
 
-    assert repair_module._signature(
-        repaired["ingredients"],
-        "ingredients",
-    ) == repair_module.FINAL_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(
+            repaired["ingredients"],
+            "ingredients",
+        )
+        == repair_module.FINAL_INGREDIENT_SIGNATURE
+    )
     assert "CO2" not in _by_name(repaired["ingredients"])
     assert repaired["temperature_value"] == 37.0
     assert repaired["aeration"] == repair_module.AERATION

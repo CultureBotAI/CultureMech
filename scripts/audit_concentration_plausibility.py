@@ -126,18 +126,23 @@ def check_ingredient(ing: dict[str, Any]) -> tuple[str, str] | None:
     ident = _term_id(ing)
 
     if (ident in WATER_IDS or WATER_RE.search(label)) and value >= WATER_MIN_G_PER_L:
-        return ("WATER_AS_VOLUME",
-                f"{value:g} G_PER_L water — reads as a preparation volume, not a concentration")
+        return (
+            "WATER_AS_VOLUME",
+            f"{value:g} G_PER_L water — reads as a preparation volume, not a concentration",
+        )
 
     if TRACE_ELEMENT_RE.match(label) and value >= TRACE_MIN_G_PER_L:
-        return ("TRACE_SALT_AS_STOCK",
-                f"{value:g} G_PER_L trace-element salt — stock-solution magnitude, "
-                f"final medium is normally mg/L or below")
+        return (
+            "TRACE_SALT_AS_STOCK",
+            f"{value:g} G_PER_L trace-element salt — stock-solution magnitude, "
+            f"final medium is normally mg/L or below",
+        )
 
     if INDICATOR_RE.match(label) and value >= INDICATOR_MIN_G_PER_L:
-        return ("INDICATOR_UNIT_SLIP",
-                f"{value:g} G_PER_L indicator/vitamin — normally mg/L; "
-                f"likely a 1000x unit slip")
+        return (
+            "INDICATOR_UNIT_SLIP",
+            f"{value:g} G_PER_L indicator/vitamin — normally mg/L; " f"likely a 1000x unit slip",
+        )
 
     return None
 
@@ -187,15 +192,17 @@ def audit_parsed(records, normalized_dir: Path = NORMALIZED) -> list[dict[str, s
                 continue
             finding, detail = hit
             conc = ing.get("concentration") or {}
-            rows.append({
-                "finding": finding,
-                "file_path": _rel(path, normalized_dir),
-                "record_id": str(doc.get("id") or ""),
-                "ingredient": str(ing.get("preferred_term") or ""),
-                "value": str(conc.get("value")),
-                "unit": str(conc.get("unit")),
-                "detail": detail,
-            })
+            rows.append(
+                {
+                    "finding": finding,
+                    "file_path": _rel(path, normalized_dir),
+                    "record_id": str(doc.get("id") or ""),
+                    "ingredient": str(ing.get("preferred_term") or ""),
+                    "value": str(conc.get("value")),
+                    "unit": str(conc.get("unit")),
+                    "detail": detail,
+                }
+            )
     return rows
 
 
@@ -207,8 +214,7 @@ def audit(normalized_dir: Path = NORMALIZED) -> list[dict[str, str]]:
 COCKTAIL_MIN_ROWS = 3
 
 
-def summarize_records(rows: list[dict[str, str]],
-                      normalized_dir: Path) -> list[dict[str, str]]:
+def summarize_records(rows: list[dict[str, str]], normalized_dir: Path) -> list[dict[str, str]]:
     """Roll findings up per record and mark flattened stock cocktails.
 
     A record carrying >=3 flagged vitamin/indicator rows, or >=3 flagged
@@ -236,59 +242,88 @@ def summarize_records(rows: list[dict[str, str]],
         except (yaml.YAMLError, OSError):
             doc = {}
         has_solutions = bool(doc.get("solutions"))
-        cocktail = (
-            not has_solutions
-            and (counts["INDICATOR_UNIT_SLIP"] >= COCKTAIL_MIN_ROWS
-                 or counts["TRACE_SALT_AS_STOCK"] >= COCKTAIL_MIN_ROWS)
+        cocktail = not has_solutions and (
+            counts["INDICATOR_UNIT_SLIP"] >= COCKTAIL_MIN_ROWS
+            or counts["TRACE_SALT_AS_STOCK"] >= COCKTAIL_MIN_ROWS
         )
-        out.append({
-            "file_path": file_path,
-            "record_id": found[0]["record_id"],
-            "flagged_rows": str(len(found)),
-            "water_as_volume": str(counts["WATER_AS_VOLUME"]),
-            "trace_salt_as_stock": str(counts["TRACE_SALT_AS_STOCK"]),
-            "indicator_unit_slip": str(counts["INDICATOR_UNIT_SLIP"]),
-            "has_solutions_block": "yes" if has_solutions else "no",
-            "flattened_cocktail": "yes" if cocktail else "no",
-        })
+        out.append(
+            {
+                "file_path": file_path,
+                "record_id": found[0]["record_id"],
+                "flagged_rows": str(len(found)),
+                "water_as_volume": str(counts["WATER_AS_VOLUME"]),
+                "trace_salt_as_stock": str(counts["TRACE_SALT_AS_STOCK"]),
+                "indicator_unit_slip": str(counts["INDICATOR_UNIT_SLIP"]),
+                "has_solutions_block": "yes" if has_solutions else "no",
+                "flattened_cocktail": "yes" if cocktail else "no",
+            }
+        )
     return out
 
 
 def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description=__doc__,
-                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     ap.add_argument("--normalized-dir", type=Path, default=NORMALIZED)
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
-    ap.add_argument("--max-cocktails", type=int, default=None,
-                    help="Exit 1 if more than N records hold a FLATTENED STOCK "
-                         "COCKTAIL. The sharper gate: a raw row count drifts with "
-                         "corpus size, whereas a new cocktail is a specific defect "
-                         "shape a fresh import has reintroduced (#150).")
-    ap.add_argument("--max-allowed", type=int, default=None,
-                    help="Exit non-zero when flagged rows exceed this baseline. Gates "
-                         "NEW defects without blocking on the existing backlog — the "
-                         "same convention as `check-chebi-grounding`. Lower it as the "
-                         "backlog is repaired; never raise it to make a run pass.")
+    ap.add_argument(
+        "--max-cocktails",
+        type=int,
+        default=None,
+        help="Exit 1 if more than N records hold a FLATTENED STOCK "
+        "COCKTAIL. The sharper gate: a raw row count drifts with "
+        "corpus size, whereas a new cocktail is a specific defect "
+        "shape a fresh import has reintroduced (#150).",
+    )
+    ap.add_argument(
+        "--max-allowed",
+        type=int,
+        default=None,
+        help="Exit non-zero when flagged rows exceed this baseline. Gates "
+        "NEW defects without blocking on the existing backlog — the "
+        "same convention as `check-chebi-grounding`. Lower it as the "
+        "backlog is repaired; never raise it to make a run pass.",
+    )
     args = ap.parse_args(argv)
 
     rows = audit(args.normalized_dir)
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with args.out.open("w", newline="", encoding="utf-8") as fh:
-        w = csv.DictWriter(fh, delimiter="\t",
-                           fieldnames=["finding", "file_path", "record_id",
-                                       "ingredient", "value", "unit", "detail"])
+        w = csv.DictWriter(
+            fh,
+            delimiter="\t",
+            fieldnames=[
+                "finding",
+                "file_path",
+                "record_id",
+                "ingredient",
+                "value",
+                "unit",
+                "detail",
+            ],
+        )
         w.writeheader()
         w.writerows(rows)
 
     summary = summarize_records(rows, args.normalized_dir)
     summary_path = args.out.with_name(args.out.stem + "_by_record.tsv")
     with summary_path.open("w", newline="", encoding="utf-8") as fh:
-        w = csv.DictWriter(fh, delimiter="\t",
-                           fieldnames=["file_path", "record_id", "flagged_rows",
-                                       "water_as_volume", "trace_salt_as_stock",
-                                       "indicator_unit_slip", "has_solutions_block",
-                                       "flattened_cocktail"])
+        w = csv.DictWriter(
+            fh,
+            delimiter="\t",
+            fieldnames=[
+                "file_path",
+                "record_id",
+                "flagged_rows",
+                "water_as_volume",
+                "trace_salt_as_stock",
+                "indicator_unit_slip",
+                "has_solutions_block",
+                "flattened_cocktail",
+            ],
+        )
         w.writeheader()
         w.writerows(summary)
 
@@ -303,26 +338,38 @@ def main(argv: list[str] | None = None) -> int:
         if k in tally:
             print(f"  {k:20s} {tally[k]}")
     print(f"\nRecords holding a FLATTENED STOCK COCKTAIL: {cocktails}")
-    print("  (>=3 flagged vitamin or trace rows and no `solutions:` block — "
-          "the actionable subset)")
+    print(
+        "  (>=3 flagged vitamin or trace rows and no `solutions:` block — " "the actionable subset)"
+    )
     rel = args.out.relative_to(REPO_ROOT) if args.out.is_relative_to(REPO_ROOT) else args.out
     print(f"\nWrote {rel}")
-    srel = (summary_path.relative_to(REPO_ROOT)
-            if summary_path.is_relative_to(REPO_ROOT) else summary_path)
+    srel = (
+        summary_path.relative_to(REPO_ROOT)
+        if summary_path.is_relative_to(REPO_ROOT)
+        else summary_path
+    )
     print(f"Wrote {srel}")
-    print("\nRead-only. Repairing the trace-element case means nesting the cocktail "
-          "under a stock `solution` object with an addition volume — per-record curation.")
+    print(
+        "\nRead-only. Repairing the trace-element case means nesting the cocktail "
+        "under a stock `solution` object with an addition volume — per-record curation."
+    )
 
     failed = False
     if args.max_allowed is not None and len(rows) > args.max_allowed:
-        print(f"\nFAIL: {len(rows)} implausible concentration rows > baseline "
-              f"{args.max_allowed}. A new import or edit has introduced rows beyond the "
-              f"known backlog; see the report for which records.", file=sys.stderr)
+        print(
+            f"\nFAIL: {len(rows)} implausible concentration rows > baseline "
+            f"{args.max_allowed}. A new import or edit has introduced rows beyond the "
+            f"known backlog; see the report for which records.",
+            file=sys.stderr,
+        )
         failed = True
     if args.max_cocktails is not None and cocktails > args.max_cocktails:
-        print(f"\nFAIL: {cocktails} records hold a flattened stock cocktail > baseline "
-              f"{args.max_cocktails}. An import has landed a stock solution inline "
-              f"again; see `flattened_cocktail` in the by-record report.", file=sys.stderr)
+        print(
+            f"\nFAIL: {cocktails} records hold a flattened stock cocktail > baseline "
+            f"{args.max_cocktails}. An import has landed a stock solution inline "
+            f"again; see `flattened_cocktail` in the by-record report.",
+            file=sys.stderr,
+        )
         failed = True
     return 1 if failed else 0
 

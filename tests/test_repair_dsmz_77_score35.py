@@ -131,10 +131,7 @@ def test_plan_repairs_adds_source_metadata_once(tmp_path: Path):
     matching_events = [
         event
         for event in repaired["curation_history"]
-        if (
-            event.get("curator") == repair.CURATOR
-            and event.get("action") == repair.ACTION
-        )
+        if (event.get("curator") == repair.CURATOR and event.get("action") == repair.ACTION)
     ]
     assert len(matching_events) == 1
     assert matching_events[0]["source"] == repair.DSMZ_77

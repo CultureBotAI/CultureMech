@@ -34,10 +34,7 @@ def _ingredient(name: str, value: str, unit: str) -> dict:
 def _solution(name: str, signature) -> dict:
     return {
         "preferred_term": name,
-        "composition": [
-            _ingredient(row_name, value, unit)
-            for row_name, value, unit in signature
-        ],
+        "composition": [_ingredient(row_name, value, unit) for row_name, value, unit in signature],
     }
 
 
@@ -131,9 +128,7 @@ def test_repair_document_adds_reference_and_event_once(repair_module) -> None:
     once = repair_module.repair_document(_minimal_doc(repair_module))
     twice = repair_module.repair_document(once)
 
-    assert repair_module._solution_signatures(twice) == (
-        repair_module.FINAL_SOLUTION_SIGNATURES
-    )
+    assert repair_module._solution_signatures(twice) == (repair_module.FINAL_SOLUTION_SIGNATURES)
     assert twice["references"] == [{"reference": repair_module.NBRC_URL}]
     matching_events = [
         event
@@ -186,9 +181,10 @@ def test_target_record_matches_recovered_nbrc_1020_formula(repair_module) -> Non
 
     assert doc["id"] == repair_module.TARGET_ID
     assert doc["name"] in {"1021", "Methanofollis ethanolicus medium"}
-    assert repair_module._signature(
-        doc["ingredients"], "ingredients"
-    ) == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    assert (
+        repair_module._signature(doc["ingredients"], "ingredients")
+        == repair_module.IMPORTED_INGREDIENT_SIGNATURE
+    )
     assert repair_module._solution_signatures(doc) in {
         repair_module.IMPORTED_SOLUTION_SIGNATURES,
         repair_module.FINAL_SOLUTION_SIGNATURES,

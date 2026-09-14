@@ -92,17 +92,11 @@ INGREDIENT_NOTES = {
         "TOGO M1733 / NBRC Medium 942 lists 100 ml/L of 10% Na2CO3 solution, "
         "added aseptically after autoclaving."
     ),
-    "Distilled water": (
-        "TOGO M1733 / NBRC Medium 942 lists 900 ml/L Distilled water."
-    ),
-    MGSO4_HEPTAHYDRATE: (
-        "TOGO M1733 / NBRC Medium 942 lists 1 g/L MgSO4 x 7H2O."
-    ),
+    "Distilled water": ("TOGO M1733 / NBRC Medium 942 lists 900 ml/L Distilled water."),
+    MGSO4_HEPTAHYDRATE: ("TOGO M1733 / NBRC Medium 942 lists 1 g/L MgSO4 x 7H2O."),
     "Yeast extract": "TOGO M1733 / NBRC Medium 942 lists 2 g/L Yeast extract.",
     "K2HPO4": "TOGO M1733 / NBRC Medium 942 lists 1 g/L K2HPO4.",
-    "Agar (if needed)": (
-        "TOGO M1733 / NBRC Medium 942 lists 15 g/L Agar if needed."
-    ),
+    "Agar (if needed)": ("TOGO M1733 / NBRC Medium 942 lists 15 g/L Agar if needed."),
     "Hipolypepton*": (
         "TOGO M1733 / NBRC Medium 942 lists 10 g/L Hipolypepton with an "
         "asterisked Wako Pure Chemical Industries note."
@@ -175,9 +169,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),

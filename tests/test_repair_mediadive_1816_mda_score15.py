@@ -88,9 +88,10 @@ def test_repair_medium_scales_500_ml_source_and_maps_known_terms(
     repaired = repair_module.repair_medium(_medium_doc(repair_module))
     ingredients = _by_name(repaired["ingredients"])
 
-    assert repair_module._signature(
-        repaired["ingredients"], "ingredients"
-    ) == repair_module.FINAL_MEDIUM_SIGNATURE
+    assert (
+        repair_module._signature(repaired["ingredients"], "ingredients")
+        == repair_module.FINAL_MEDIUM_SIGNATURE
+    )
     assert repaired["composition_type"] == "SEMI_DEFINED"
     assert ingredients["Malt extract"]["term"] == {
         "id": "FOODON:03301056",
@@ -123,9 +124,10 @@ def test_repair_solution_fixes_liquid_units_and_drops_placeholder(
     repaired = repair_module.repair_solution(_solution_doc(repair_module))
     composition = _by_name(repaired["composition"])
 
-    assert repair_module._signature(
-        repaired["composition"], "composition"
-    ) == repair_module.FINAL_SOLUTION_SIGNATURE
+    assert (
+        repair_module._signature(repaired["composition"], "composition")
+        == repair_module.FINAL_SOLUTION_SIGNATURE
+    )
     assert composition["Glycerol"]["concentration"] == {
         "value": "2.0",
         "unit": "ML_PER_L",

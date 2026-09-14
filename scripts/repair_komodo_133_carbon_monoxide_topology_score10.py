@@ -297,8 +297,7 @@ def repair_parent(doc: dict[str, Any]) -> dict[str, Any]:
             "curator": CURATOR,
             "action": ACTION,
             "changes": (
-                "Promoted KOMODO Medium 133 to the carbon monoxide oxidizer "
-                "family parent"
+                "Promoted KOMODO Medium 133 to the carbon monoxide oxidizer " "family parent"
             ),
             "source": "KOMODO Medium 133-133.8 and MediaDive Medium 133",
             "notes": (

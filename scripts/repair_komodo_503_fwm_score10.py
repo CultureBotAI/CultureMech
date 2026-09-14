@@ -52,9 +52,7 @@ INGREDIENT_SIGNATURE = (
     ("D-(+)-biotin", "0.02", "G_PER_L"),
     ("Calcium pantothenate", "0.1", "G_PER_L"),
 )
-H2SO4_ADJUSTED_INGREDIENT_SIGNATURE = INGREDIENT_SIGNATURE + (
-    ("H2SO4", "variable", "VARIABLE"),
-)
+H2SO4_ADJUSTED_INGREDIENT_SIGNATURE = INGREDIENT_SIGNATURE + (("H2SO4", "variable", "VARIABLE"),)
 SOLUTION_COMPONENT_SIGNATURE = (
     (
         "Trace element solution SL-10",
@@ -284,9 +282,7 @@ def _ingredient_signature(doc: dict[str, Any]) -> tuple[tuple[str, str, str], ..
     if not isinstance(ingredients, list):
         raise ValueError("ingredients is not a list")
 
-    return tuple(
-        _ingredient_row_signature(row) for row in ingredients if isinstance(row, dict)
-    )
+    return tuple(_ingredient_row_signature(row) for row in ingredients if isinstance(row, dict))
 
 
 def _solution_component_signature(
@@ -307,9 +303,7 @@ def _solution_component_signature(
             (
                 str(solution.get("preferred_term") or ""),
                 tuple(
-                    _ingredient_row_signature(row)
-                    for row in composition
-                    if isinstance(row, dict)
+                    _ingredient_row_signature(row) for row in composition if isinstance(row, dict)
                 ),
             )
         )
@@ -332,9 +326,7 @@ def _solution_volume_signature(
     if not isinstance(solutions, list):
         raise ValueError("solutions is not a list")
 
-    signature: list[
-        tuple[str, tuple[str, str], tuple[tuple[str, str, str, str], ...]]
-    ] = []
+    signature: list[tuple[str, tuple[str, str], tuple[tuple[str, str, str, str], ...]]] = []
     for solution in solutions:
         if not isinstance(solution, dict):
             continue

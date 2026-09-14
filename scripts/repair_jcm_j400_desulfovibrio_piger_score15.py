@@ -244,9 +244,7 @@ def _signature(rows: Any, label: str) -> tuple[Component, ...]:
             raise ValueError(f"{label} contains a non-mapping row")
         concentration = row.get("concentration")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"{label} row {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"{label} row {row.get('preferred_term')!r} lacks concentration")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
@@ -268,13 +266,9 @@ def _solution_signature(rows: Any) -> tuple[Solution, ...]:
         concentration = row.get("concentration")
         composition = row.get("composition")
         if not isinstance(concentration, dict):
-            raise ValueError(
-                f"solution {row.get('preferred_term')!r} lacks concentration"
-            )
+            raise ValueError(f"solution {row.get('preferred_term')!r} lacks concentration")
         if not isinstance(composition, list):
-            raise ValueError(
-                f"solution {row.get('preferred_term')!r} lacks composition"
-            )
+            raise ValueError(f"solution {row.get('preferred_term')!r} lacks composition")
         signature.append(
             (
                 str(row.get("preferred_term") or ""),
