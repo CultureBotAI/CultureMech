@@ -214,6 +214,32 @@ def test_single_recipe_solutions_produce_solution_layer(tmp_path):
     assert "mediadive_solution_2227 --> CHEBI_27470" in mmd
 
 
+def test_single_recipe_solutions_recurse_into_nested_solutions(tmp_path):
+    recipe = _write(tmp_path, {
+        "preferred_term": "Nested solution medium",
+        "ingredients": [],
+        "solutions": [{
+            "preferred_term": "Vitamin mix",
+            "term": {"id": "mediadive.solution:2227"},
+            "solutions": [
+                {
+                    "preferred_term": "Trace mix",
+                    "term": {"id": "mediadive.solution:2228"},
+                    "composition": [
+                        {"preferred_term": "Zinc chloride", "term": {"id": "CHEBI:49976"}},
+                    ],
+                }
+            ],
+        }],
+    })
+
+    mmd = _render.render_single_recipe(recipe)
+
+    assert "MEDIUM -.-> mediadive_solution_2227" in mmd
+    assert "mediadive_solution_2227 -.-> mediadive_solution_2228" in mmd
+    assert "mediadive_solution_2228 --> CHEBI_49976" in mmd
+
+
 def test_single_recipe_emits_prepared_solution_nodes_without_inline_composition(tmp_path):
     recipe = _write(tmp_path, {
         "preferred_term": "Prepared solution medium",

@@ -303,12 +303,16 @@ def ignored_recipe_pair(left: dict[str, str], right: dict[str, str]) -> bool:
     return frozenset((left.get("id", ""), right.get("id", ""))) in IGNORED_RECIPE_PAIRS
 
 
-def resolve_recipe_ref(ref: Any, id_to_path: dict[str, str]) -> str:
+def resolve_recipe_ref(
+    ref: Any,
+    known_paths: set[str],
+    id_to_path: dict[str, str],
+) -> str:
     if not isinstance(ref, dict):
         return ""
 
     path = ref.get("path")
-    if isinstance(path, str) and path:
+    if isinstance(path, str) and path in known_paths:
         return path
 
     identifier = ref.get("id")
@@ -342,9 +346,14 @@ def collect_existing_links(
         if isinstance(identifier, str) and identifier:
             id_to_path[identifier] = yaml_path
 
+    known_paths = set(recipes)
     existing_links: set[frozenset[str]] = set()
     for yaml_path, recipe in recipes.items():
-        parent_path = resolve_recipe_ref(recipe.get("parent_media"), id_to_path)
+        parent_path = resolve_recipe_ref(
+            recipe.get("parent_media"),
+            known_paths,
+            id_to_path,
+        )
         if parent_path:
             existing_links.add(existing_link_key(parent_path, yaml_path))
 
@@ -352,7 +361,7 @@ def collect_existing_links(
         if not isinstance(variant_children, list):
             continue
         for child_ref in variant_children:
-            child_path = resolve_recipe_ref(child_ref, id_to_path)
+            child_path = resolve_recipe_ref(child_ref, known_paths, id_to_path)
             if child_path:
                 existing_links.add(existing_link_key(yaml_path, child_path))
 

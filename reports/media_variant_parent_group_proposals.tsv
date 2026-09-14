@@ -4,7 +4,7 @@ ingredient_identity_signature	status	confidence	parent_path	parent_id	parent_nam
 c10b1945d7d2be7b	PROPOSED	HIGH	data/normalized_yaml/bacterial/JCM_J475_TRYPTICASE_SOY_BROTH_AGAR.yaml	CultureMech:002824	trypticase_soy_broth_agar	54	53	CONCENTRATION_VARIANT:50;SUBSTITUTED_COMPONENT_VARIANT:1;SUPPLEMENTED_VARIANT:2	4	1	1
 efb837d6c1b0a001	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_830_R2A_medium.yaml	CultureMech:006618	r2a_medium	54	1	SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
 a2c0e5eb0320cb58	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_547_ISP_medium_4.yaml	CultureMech:005991	isp_medium_4	35	30	CONCENTRATION_VARIANT:30	2	1	1
-a4c0383e20cc30e4	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_383d_DESULFONAUTICUS_medium.yaml	CultureMech:005159	desulfonauticus_medium	31	1	DERIVED_FROM:1	1	1	1
+a4c0383e20cc30e4	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_383d_DESULFONAUTICUS_medium.yaml	CultureMech:005159	desulfonauticus_medium	31	29	DERIVED_FROM:1;SOURCE_DUPLICATE:28	1	1	1
 563cf81fb580cf1f	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_92a_MODIFIED_medium_92.yaml	CultureMech:006849	modified_medium_92	28	1	SUPPLEMENTED_VARIANT:1	1	1	1
 3672495d6d72e9f5	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_110_CHOPPED_MEAT_medium_WITH_CARBOHYDRATES.yaml	CultureMech:003811	chopped_meat_medium_with_carbohydrates	24	1	SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
 7c0244d28953d65d	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_462a_PLATES_WITH_FLUORANTHENE.yaml	CultureMech:005506	plates_with_fluoranthene	24	1	SUPPLEMENTED_VARIANT:1	1	1	1
@@ -16,18 +16,22 @@ f9e603f7a6a07d7b	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_461a_MINERA
 02e06cfd61424af4	PROPOSED	HIGH	data/normalized_yaml/bacterial/NBRC_815.yaml	CultureMech:007495	Trypticase Soy Yeast Extract Medium	14	13	PHYSICAL_STATE_VARIANT:8;SOURCE_DUPLICATE:5	1	2	1
 9ba0358b5082ac50	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_381_LB_Luria-Bertani_medium.yaml	CultureMech:005128	lb_luria_bertani_medium	13	12	SOURCE_DUPLICATE:12	1	1	1
 a0ea2ea3b47a47c9	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_1272_THIOALKALIVIBRIO_JANNASCHI.yaml	CultureMech:004026	thioalkalivibrio_jannaschi	12	10	CONCENTRATION_VARIANT:10	2	1	1
+38bb3d284c5621b1	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_14428.yaml	CultureMech:005041	for_dsm_14428	12	10	SOURCE_DUPLICATE:10	1	1	1
 f64d7f86458da248	PROPOSED	HIGH	data/normalized_yaml/bacterial/JCM_J101_BACILLUS_ACIDOCALDARIUS_MEDIUM.yaml	CultureMech:002203	bacillus_acidocaldarius_medium	11	3	CONCENTRATION_VARIANT:1;DERIVED_FROM:2	2	1	1
 239e0d5cb9cce670	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_298e_LuPhet1_medium.yaml	CultureMech:004768	luphet1_medium	11	1	SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
 af4d6148c1482bdb	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_952_1_10_NUTRIENT_AGAR_NO.2.yaml	CultureMech:006895	1_10_nutrient_agar_no_2	11	9	CONCENTRATION_VARIANT:6;SALINITY_VARIANT:2;SUPPLEMENTED_VARIANT:1	5	1	1
 ab00a796f70b91e5	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_1153_R3_A_medium.yaml	CultureMech:003863	r3_a_medium	10	8	CONCENTRATION_VARIANT:7;SUPPLEMENTED_VARIANT:1	4	1	1
 464b2277df4e94be	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_9a_VY_2_REDUCED_medium.yaml	CultureMech:006986	vy_2_reduced_medium	10	1	CONCENTRATION_VARIANT:1	2	1	1
+24ef3160af8999f0	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_1083.yaml	CultureMech:004088	for_dsm_1083	10	8	SOURCE_DUPLICATE:8	1	1	1
 3e6bb212e572e1f4	PROPOSED	HIGH	data/normalized_yaml/bacterial/TOGO_M15_Nutrient_Agar_NO._2.yaml	CultureMech:008152	nutrient_agar_no_2	9	7	CONCENTRATION_VARIANT:5;SUPPLEMENTED_VARIANT:2	6	1	1
 94ecc931b1772d69	PROPOSED	HIGH	data/normalized_yaml/bacterial/JCM_J23_1_10_NUTRIENT_AGAR_NO._2.yaml	CultureMech:002600	1_10_nutrient_agar_no_2	8	6	CONCENTRATION_VARIANT:5;SALINITY_VARIANT:1	6	1	1
 577e5afa9a48a876	PROPOSED	HIGH	data/normalized_yaml/bacterial/JCM_J59_CM_YE_MEDIUM.yaml	CultureMech:002947	cm_ye_medium	8	6	CONCENTRATION_VARIANT:4;PHYSICAL_STATE_VARIANT:1;SALINITY_VARIANT:1	5	2	1
 31006b6c091f62e3	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_718_PETROTOGA_medium.yaml	CultureMech:006360	petrotoga_medium	8	7	CONCENTRATION_VARIANT:1;SOURCE_DUPLICATE:6	2	1	1
+ea1ac9472495e0d2	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_12503.yaml	CultureMech:006681	for_dsm_12503	8	6	SOURCE_DUPLICATE:6	1	1	1
 ea57564c0864a437	PROPOSED	HIGH	data/normalized_yaml/bacterial/m9_purvis.yaml	CultureMech:007059	m9_purvis	8	7	CONCENTRATION_VARIANT:3;SUPPLEMENTED_VARIANT:4	8	1	1
 d364bb81eea864f7	PROPOSED	HIGH	data/normalized_yaml/bacterial/medium_993_modified_for_dsm_16375.yaml	CultureMech:006965	medium_993_modified_for_dsm_16375	8	7	SOURCE_DUPLICATE:7	1	1	1
 8a8e63a67ac76f61	PROPOSED	HIGH	data/normalized_yaml/bacterial/mj_medium.yaml	CultureMech:003521	mj_medium	8	1	CONCENTRATION_VARIANT:1	2	1	1
+148e431dba104934	PROPOSED	HIGH	data/normalized_yaml/bacterial/mv_medium.yaml	CultureMech:006181	mv_medium	8	6	SOURCE_DUPLICATE:6	1	1	1
 e7f37af2e9956671	PROPOSED	HIGH	data/normalized_yaml/specialized/uga_defined_4carbonmix_nitrate_anaerobic_ph_5_0.yaml	CultureMech:015753	UGA defined 4CarbonMix Nitrate anaerobic pH 5.0	8	7	CONCENTRATION_VARIANT:7	4	1	1
 8d4312a8a503911e	PROPOSED	HIGH	data/normalized_yaml/specialized/uga_defined_lactate_nitrate_anaerobic_ph_5_0.yaml	CultureMech:015761	UGA defined Lactate Nitrate anaerobic pH 5.0	8	7	CONCENTRATION_VARIANT:7	8	1	1
 c5bd0c9303b38114	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_1044_GLUCONACETOBACTER_RHAETICUS_medium.yaml	CultureMech:003603	gluconacetobacter_rhaeticus_medium	7	5	CONCENTRATION_VARIANT:5	5	1	1
@@ -38,12 +42,14 @@ cee23732ee2646fc	PROPOSED	HIGH	data/normalized_yaml/bacterial/togo_medium_m1414.
 119a17cdc2b54bf5	PROPOSED	HIGH	data/normalized_yaml/bacterial/1_5_yeast_starch_agar.yaml	CultureMech:008540	1_5_yeast_starch_agar	6	5	SUPPLEMENTED_VARIANT:5	4	1	1
 5db3d1827023c35f	PROPOSED	HIGH	data/normalized_yaml/bacterial/2yt_medium.yaml	CultureMech:009457	2yt_medium	6	5	CONCENTRATION_VARIANT:3;SALINITY_VARIANT:2	5	1	1
 94204aef4f9301d6	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_1015_YPGA.yaml	CultureMech:003526	ypga	6	3	CONCENTRATION_VARIANT:3	3	1	1
+c28b8093db8b2b7c	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_684_MPOB_medium.yaml	CultureMech:006289	mpob_medium	6	4	SOURCE_DUPLICATE:4	1	1	1
 23c1bb6017782d4e	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_939_METHYLOTROPHIC_ARTHROBACTER_AND_HYPHOMICROBIUM_MEDIUM.yaml	CultureMech:006866	methylotrophic_arthrobacter_and_hyphomicrobium_medium	6	4	SUBSTITUTED_COMPONENT_VARIANT:4	1	1	1
+2ccf1974c8bae839	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_9736.yaml	CultureMech:006631	for_dsm_9736	6	4	SOURCE_DUPLICATE:4	1	1	1
 dd0e258b8c95a7db	PROPOSED	HIGH	data/normalized_yaml/bacterial/marine_agar_2216_with_1_nacl.yaml	CultureMech:010393	marine_agar_2216_with_1_nacl	6	5	SALINITY_VARIANT:5	5	1	1
 71062e0ab4d2a2ba	PROPOSED	HIGH	data/normalized_yaml/bacterial/medium_84_modified_for_dsm_40886.yaml	CultureMech:006637	medium_84_modified_for_dsm_40886	6	5	SOURCE_DUPLICATE:5	1	1	1
 7f1ff425091adfb0	PROPOSED	HIGH	data/normalized_yaml/bacterial/trypticase_soy_broth_with_nacl.yaml	CultureMech:009028	trypticase_soy_broth_with_nacl	6	3	PHYSICAL_STATE_VARIANT:2;SALINITY_VARIANT:1	5	2	1
 b0360ca6d466df54	PROPOSED	HIGH	data/normalized_yaml/specialized/marine_agar_2216_with_1_nacl.yaml	CultureMech:015426	marine_agar_2216_with_1_nacl	6	5	SALINITY_VARIANT:5	5	1	1
-48a16df64bf7599a	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_479_METHANOHALOPHILUS_medium.yaml	CultureMech:005594	methanohalophilus_medium	5	4	CONCENTRATION_VARIANT:3;DERIVED_FROM:1	2	1	1
+48a16df64bf7599a	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_479_METHANOHALOPHILUS_medium.yaml	CultureMech:005594	methanohalophilus_medium	5	3	CONCENTRATION_VARIANT:3	2	1	1
 efc3d2e6a291468a	PROPOSED	HIGH	data/normalized_yaml/bacterial/JCM_J423_PYG_MEDIUM_B.yaml	CultureMech:002776	pyg_medium_b	5	2	DERIVED_FROM:2	1	1	1
 a33b617f3a08eb29	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_144_THERMOANAEROBIUM_medium.yaml	CultureMech:004164	thermoanaerobium_medium	5	1	SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
 e298b1ec32daaf17	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_246_SEA_WATER_AGAR.yaml	CultureMech:004619	sea_water_agar	5	1	SUPPLEMENTED_VARIANT:1	1	1	1
@@ -57,8 +63,10 @@ f45d71fd027f5467	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_993_ISP_5_M
 6945bf26232cd02f	PROPOSED	HIGH	data/normalized_yaml/bacterial/TOGO_M878_1_3_LB_Agar.yaml	CultureMech:010296	1_3_lb_agar	5	4	CONCENTRATION_VARIANT:2;DERIVED_FROM:1;SALINITY_VARIANT:1	4	1	1
 8090c6ef1dc2152f	PROPOSED	HIGH	data/normalized_yaml/bacterial/anaero_columbia_agar_with_rabbit_blood.yaml	CultureMech:003036	anaero_columbia_agar_with_rabbit_blood	5	4	SUPPLEMENTED_VARIANT:4	2	1	1
 094b49ef9e02baa3	PROPOSED	HIGH	data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_7g_msg.yaml	CultureMech:007237	chemically_defined_fermentation_medium_45g_glucose_7g_msg	5	4	SUPPLEMENTED_VARIANT:4	5	1	1
-91736aaf5bbdc76a	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_12260.yaml	CultureMech:006652	for_dsm_12260	5	1	CONCENTRATION_VARIANT:1	2	1	1
-b3626451617f0879	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_14385.yaml	CultureMech:006246	for_dsm_14385	5	2	CONCENTRATION_VARIANT:2	2	1	1
+91736aaf5bbdc76a	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_12260.yaml	CultureMech:006652	for_dsm_12260	5	3	CONCENTRATION_VARIANT:1;SOURCE_DUPLICATE:2	2	1	1
+b3626451617f0879	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_14385.yaml	CultureMech:006246	for_dsm_14385	5	3	CONCENTRATION_VARIANT:2;SOURCE_DUPLICATE:1	2	1	1
+1ace604225a92d3b	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_5885.yaml	CultureMech:005694	for_dsm_5885	5	3	SOURCE_DUPLICATE:3	1	1	1
+40364b8a44a773b6	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_612.yaml	CultureMech:005064	for_dsm_612	5	3	SOURCE_DUPLICATE:3	1	1	1
 b876e168ac2ce14c	PROPOSED	HIGH	data/normalized_yaml/bacterial/m9_with_0_4_glucose_and_5_emulsion.yaml	CultureMech:007444	m9_with_0_4_glucose_and_5_emulsion	5	4	SUPPLEMENTED_VARIANT:4	5	1	1
 63460fd8b950e650	PROPOSED	HIGH	data/normalized_yaml/archaea/JCM_J986_METHANOCOCCOIDES_MEDIUM.yaml	CultureMech:003335	methanococcoides_medium	4	3	SOURCE_DUPLICATE:3	1	1	1
 e88c8ebae58c240c	PROPOSED	HIGH	data/normalized_yaml/bacterial/JCM_J345_HORIKOSHI-1_MEDIUM_WITH_10_NaCl.yaml	CultureMech:002705	horikoshi_1_medium_with_10_nacl	4	3	SALINITY_VARIANT:3	4	1	1
@@ -82,6 +90,8 @@ d69502ef6b41590b	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_554_N-Z-AMI
 e69d18ea5dff8f4b	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_607_M13_VERRUCOMICROBIUM_medium.yaml	CultureMech:006096	m13_verrucomicrobium_medium	4	1	CONCENTRATION_VARIANT:1	2	1	1
 78c771bd9fe1bff1	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_624_MH_medium.yaml	CultureMech:006130	mh_medium	4	2	CONCENTRATION_VARIANT:2	2	1	1
 b2583af166dbb10b	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml	CultureMech:006146	acetobacter_europaeus_medium	4	2	CONCENTRATION_VARIANT:2	3	1	1
+425cffbeaf8bfe54	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml	CultureMech:006750	anaerobranca_gottschalkii_medium	4	2	SOURCE_DUPLICATE:2	1	1	1
+87b4dfc5ab00c8ef	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_935_DEFERRIBACTER_medium.yaml	CultureMech:006857	deferribacter_medium	4	2	SOURCE_DUPLICATE:2	1	1	1
 16f262a332814fd0	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_982_MY10-12_medium.yaml	CultureMech:006943	my10_12_medium	4	2	CONCENTRATION_VARIANT:1;SALINITY_VARIANT:1	3	1	1
 57dbef8101915a2f	PROPOSED	HIGH	data/normalized_yaml/bacterial/TOGO_M130_PYG_Agar_A.yaml	CultureMech:007845	pyg_agar_a	4	3	CONCENTRATION_VARIANT:2;SUPPLEMENTED_VARIANT:1	4	1	1
 ea8898ae2534c7b9	PROPOSED	HIGH	data/normalized_yaml/bacterial/TOGO_M1646_R2A_Medium.yaml	CultureMech:008202	r2a_medium	4	2	CONCENTRATION_VARIANT:2	3	1	1
@@ -89,8 +99,11 @@ ea8898ae2534c7b9	PROPOSED	HIGH	data/normalized_yaml/bacterial/TOGO_M1646_R2A_Med
 612e9deed6f480bd	PROPOSED	HIGH	data/normalized_yaml/bacterial/TOGO_M2897_LB_medium.yaml	CultureMech:009433	lb_medium	4	2	CONCENTRATION_VARIANT:2	4	1	1
 85d2cd7b99c314c8	PROPOSED	HIGH	data/normalized_yaml/bacterial/TOGO_M404_Horikoshi-I_Medium_With_5_NaCl.yaml	CultureMech:009788	horikoshi_i_medium_with_5_nacl	4	3	SALINITY_VARIANT:3	4	1	1
 6aa34a8a490f4fa6	PROPOSED	HIGH	data/normalized_yaml/bacterial/TOGO_M482_Reinforced_Clostridial_Medium_With_3_Sea_Salt.yaml	CultureMech:009869	reinforced_clostridial_medium_with_3_sea_salt	4	2	SALINITY_VARIANT:2	2	1	1
-67a1700400c926c3	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_16529.yaml	CultureMech:006695	for_dsm_16529	4	1	CONCENTRATION_VARIANT:1	2	1	1
-e8027273628798b1	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_24436.yaml	CultureMech:006669	for_dsm_24436	4	1	CONCENTRATION_VARIANT:1	2	1	1
+653c37f1da3b2ca4	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_13862.yaml	CultureMech:006647	for_dsm_13862	4	2	SOURCE_DUPLICATE:2	1	1	1
+9f6821c641890d8f	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_14469.yaml	CultureMech:006791	for_dsm_14469	4	2	SOURCE_DUPLICATE:2	1	1	1
+67a1700400c926c3	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_16529.yaml	CultureMech:006695	for_dsm_16529	4	2	CONCENTRATION_VARIANT:1;SOURCE_DUPLICATE:1	2	1	1
+e8027273628798b1	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_24436.yaml	CultureMech:006669	for_dsm_24436	4	2	CONCENTRATION_VARIANT:1;SOURCE_DUPLICATE:1	2	1	1
+ecb34dd34a09c414	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_6876.yaml	CultureMech:006005	for_dsm_6876	4	2	SOURCE_DUPLICATE:2	1	1	1
 26048b72646166d9	PROPOSED	HIGH	data/normalized_yaml/bacterial/m9_0_2_glycerol.yaml	CultureMech:007081	m9_0_2_glycerol	4	2	SUPPLEMENTED_VARIANT:2	4	1	1
 712b2137cdff4a52	PROPOSED	HIGH	data/normalized_yaml/bacterial/oatmeal_agar_isp_3.yaml	CultureMech:002860	oatmeal_agar_isp_3	4	3	CONCENTRATION_VARIANT:1;PHYSICAL_STATE_VARIANT:2	2	2	1
 7023a99ccd8efc7a	PROPOSED	HIGH	data/normalized_yaml/bacterial/pseudodesulfovibrio_medium.yaml	CultureMech:001623	pseudodesulfovibrio_medium	4	1	CONCENTRATION_VARIANT:1	2	1	1
@@ -102,13 +115,9 @@ fc945d64d65e248d	PROPOSED	HIGH	data/normalized_yaml/bacterial/yeast_extract_malt
 f041488cd6184d48	PROPOSED	HIGH	data/normalized_yaml/specialized/m9.yaml	CultureMech:015542	M9	4	3	SUPPLEMENTED_VARIANT:3	4	1	1
 d6f6f4a39f583d67	PROPOSED	HIGH	data/normalized_yaml/specialized/nldm_defined_nocarbon.yaml	CultureMech:015657	NLDM_defined_nocarbon	4	3	CONCENTRATION_VARIANT:3	4	1	1
 cfb85894067fd5c9	PROPOSED	HIGH	data/normalized_yaml/specialized/rch2_defined_glucose.yaml	CultureMech:015701	RCH2 defined glucose	4	3	SUPPLEMENTED_VARIANT:3	4	1	1
-a1a0579d73b3ca7b	PROPOSED	HIGH	data/normalized_yaml/archaea/JCM_J161_THERMOCOCCUS_LITORALIS_MEDIUM.yaml	CultureMech:002520	thermococcus_litoralis_medium	3	2	SOURCE_DUPLICATE:2	1	1	1
 aab63035767dbf7b	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_1318_METHANOCELLA_CONRADII_medium.yaml	CultureMech:004073	methanocella_conradii_medium	3	1	DERIVED_FROM:1	1	1	1
-430f0e21feff95b8	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_1396_HALOARCHAEAL_medium_MH-1.yaml	CultureMech:004114	haloarchaeal_medium_mh_1	3	2	DERIVED_FROM:1;SALINITY_VARIANT:1	1	1	1
-f5ec8d9fbc458216	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_334_METHANOTHRIX_medium.yaml	CultureMech:005028	methanothrix_medium	3	2	SOURCE_DUPLICATE:2	1	1	1
-92c1392d03252e3a	PROPOSED	HIGH	data/normalized_yaml/archaea/methanogenium_aggregans_medium.yaml	CultureMech:005012	methanogenium_aggregans_medium	3	2	SOURCE_DUPLICATE:1;SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
-5781ed9d38c82ed1	PROPOSED	HIGH	data/normalized_yaml/archaea/picrophilus_medium.yaml	CultureMech:002594	picrophilus_medium	3	2	SOURCE_DUPLICATE:2	1	1	1
-c176898adfb8f349	PROPOSED	HIGH	data/normalized_yaml/archaea/pyrodictium_abysii_medium.yaml	CultureMech:002567	pyrodictium_abysii_medium	3	2	SOURCE_DUPLICATE:2	1	1	1
+430f0e21feff95b8	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_1396_HALOARCHAEAL_medium_MH-1.yaml	CultureMech:004114	haloarchaeal_medium_mh_1	3	1	SALINITY_VARIANT:1	1	1	1
+92c1392d03252e3a	PROPOSED	HIGH	data/normalized_yaml/archaea/methanogenium_aggregans_medium.yaml	CultureMech:005012	methanogenium_aggregans_medium	3	1	SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
 93292316cf74a785	PROPOSED	HIGH	data/normalized_yaml/bacterial/DSMZ_1058_THIOHALOPHILUS_MEDIUM.yaml	CultureMech:000244	thiohalophilus_medium	3	2	CONCENTRATION_VARIANT:2	3	1	1
 e74f66775d34b5d8	PROPOSED	HIGH	data/normalized_yaml/bacterial/DSMZ_1156_HALOPHILIC_METHANOTROPHIC_BACTERIUM_MEDIUM.yaml	CultureMech:000248	halophilic_methanotrophic_bacterium_medium	3	2	DERIVED_FROM:1;SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
 29488df336f61d7d	PROPOSED	HIGH	data/normalized_yaml/bacterial/DSMZ_1170_METHYLONATRUM_MEDIUM.yaml	CultureMech:000612	methylonatrum_medium	3	1	SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
@@ -132,12 +141,14 @@ be6030fabe73ce03	PROPOSED	HIGH	data/normalized_yaml/bacterial/JCM_J155_DUBOS_SAL
 3630eca60c8769e8	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_1171_METHYLOHALOMONAS_MEDIUM.yaml	CultureMech:003891	methylohalomonas_medium	3	1	SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
 3332ebc508a2aabf	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_1222_RHODOVULUM_MARINUM_MEDIUM.yaml	CultureMech:003976	rhodovulum_marinum_medium	3	1	SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
 efacf727ecd813b8	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_122_CLOSTRIDIUM_THERMOCELLUM_medium.yaml	CultureMech:003985	clostridium_thermocellum_medium	3	1	SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
+8093f1613a391263	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_1264_SPIROCHAETA_SP._medium.yaml	CultureMech:004021	spirochaeta_sp_medium	3	1	SOURCE_DUPLICATE:1	1	1	1
 a2215851badb2db0	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_1334_MODIFIED_YMA_medium.yaml	CultureMech:004097	modified_yma_medium	3	1	CONCENTRATION_VARIANT:1	2	1	1
 c377ca137700d31a	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_27_RHODOSPIRILLACEAE_medium_modified.yaml	CultureMech:004707	rhodospirillaceae_medium_modified	3	1	SOURCE_DUPLICATE:1	1	1	1
 114d5e635c78c63b	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_315_BACTEROIDES_CELLULOSOLVENS_MEDIUM.yaml	CultureMech:005002	bacteroides_cellulosolvens_medium	3	1	SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
 0679427443508e11	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_320_CLOSTRIDIUM_CELLULOVORANS_medium.yaml	CultureMech:005010	clostridium_cellulovorans_medium	3	1	SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
 29d6afbeb6912286	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml	CultureMech:005614	clostridium_aerotolerans_medium	3	1	CONCENTRATION_VARIANT:1	2	1	1
 c4d3c4e820e6dfd8	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml	CultureMech:005623	acetohalobium_medium	3	1	SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
+3e8c38e869311213	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_541_SULFUROSPIRILLUM_MEDIUM.yaml	CultureMech:005970	sulfurospirillum_medium	3	1	SOURCE_DUPLICATE:1	1	1	1
 f0ff1871da884601	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_595_CAULOBACTER_medium.yaml	CultureMech:006076	caulobacter_medium	3	1	SOURCE_DUPLICATE:1	1	1	1
 518c7e3ef6c6cc62	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_701_HALOANAEROBACTER_CHITINOVORANS_medium.yaml	CultureMech:006331	haloanaerobacter_chitinovorans_medium	3	1	SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
 455f4109a035c082	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_702_HALOCELLA_CELLULOLYTICA_medium.yaml	CultureMech:006333	halocella_cellulolytica_medium	3	1	SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
@@ -145,11 +156,12 @@ f0ff1871da884601	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_595_CAULOBA
 06316d510bcaeea7	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_746_RHODOVULUM_STRICTUM_medium.yaml	CultureMech:006397	rhodovulum_strictum_medium	3	1	CONCENTRATION_VARIANT:1	2	1	1
 a19182af1b03d2c2	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_784_NATRONIELLA_medium.yaml	CultureMech:006484	natroniella_medium	3	1	SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
 32d44b14aa969309	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_803_SPHAEROTILUS-LEPTOTHRIX_medium.yaml	CultureMech:006520	sphaerotilus_leptothrix_medium	3	1	CONCENTRATION_VARIANT:1	2	1	1
-229afa408c497e67	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_813_DESULFONATRONUM_medium.yaml	CultureMech:006536	desulfonatronum_medium	3	1	DERIVED_FROM:1	1	1	1
+229afa408c497e67	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_813_DESULFONATRONUM_medium.yaml	CultureMech:006536	desulfonatronum_medium	3	1	SOURCE_DUPLICATE:1	1	1	1
 0a4bffc659336283	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_821_FUNDIBACTER_JADENSIS_medium.yaml	CultureMech:006549	fundibacter_jadensis_medium	3	1	SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
-b4bcc8d5aa25635c	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_827_THERMOANAEROBACTER_SULFUROPHILUS_medium.yaml	CultureMech:006558	thermoanaerobacter_sulfurophilus_medium	3	1	DERIVED_FROM:1	1	1	1
+b4bcc8d5aa25635c	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_827_THERMOANAEROBACTER_SULFUROPHILUS_medium.yaml	CultureMech:006558	thermoanaerobacter_sulfurophilus_medium	3	1	SOURCE_DUPLICATE:1	1	1	1
 a2f0c8a822db0d43	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_85_GLUCOSE_Peptone_medium.yaml	CultureMech:006677	glucose_peptone_medium	3	1	SUPPLEMENTED_VARIANT:1	2	1	1
 c9be285c5760c7ad	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml	CultureMech:006900	medium_for_dsm_14457_and_14458	3	1	SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
+898c873087c94fd9	PROPOSED	HIGH	data/normalized_yaml/bacterial/KOMODO_962_THERMOVENABULUM_medium.yaml	CultureMech:006919	thermovenabulum_medium	3	1	SOURCE_DUPLICATE:1	1	1	1
 0e8f765c5a5414f9	PROPOSED	HIGH	data/normalized_yaml/bacterial/TOGO_M105_R_Agar_With_3_NaCl.yaml	CultureMech:007576	r_agar_with_3_nacl	3	2	SALINITY_VARIANT:2	3	1	1
 367ca7bc0447c179	PROPOSED	HIGH	data/normalized_yaml/bacterial/TOGO_M1238_Inorganic_Salts-Starch_Agar_ISP-4_With_5_NaCl.yaml	CultureMech:007767	inorganic_salts_starch_agar_isp_4_with_5_nacl	3	2	SALINITY_VARIANT:2	3	1	1
 5e3364924bd5eae3	PROPOSED	HIGH	data/normalized_yaml/bacterial/TOGO_M1431_YM_Agar.yaml	CultureMech:007970	ym_agar	3	1	CONCENTRATION_VARIANT:1	3	1	1
@@ -166,7 +178,12 @@ b2315e305958d607	PROPOSED	HIGH	data/normalized_yaml/bacterial/clostridium_papyro
 7d74c60b46d4e2c1	PROPOSED	HIGH	data/normalized_yaml/bacterial/f_2.yaml	CultureMech:000343	f_2	3	1	CONCENTRATION_VARIANT:1	3	1	1
 eb7e35ce0731c8bb	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_12343.yaml	CultureMech:006688	for_dsm_12343	3	1	SOURCE_DUPLICATE:1	1	1	1
 d2e46c23656cd61d	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_14366.yaml	CultureMech:006345	for_dsm_14366	3	1	SUPPLEMENTED_VARIANT:1	1	1	1
-2cd5361e2e624e31	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_6578.yaml	CultureMech:005710	for_dsm_6578	3	2	SOURCE_DUPLICATE:2	1	1	1
+fac46413a34d0987	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_18181.yaml	CultureMech:005082	for_dsm_18181	3	1	SOURCE_DUPLICATE:1	1	1	1
+ded9f7db53e4f1da	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_18978.yaml	CultureMech:006757	for_dsm_18978	3	2	SOURCE_DUPLICATE:2	1	1	1
+fc041f9030b78909	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_19306.yaml	CultureMech:006946	for_dsm_19306	3	1	SOURCE_DUPLICATE:1	1	1	1
+d346c074ab45c0a7	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_24739.yaml	CultureMech:003875	for_dsm_24739	3	1	SOURCE_DUPLICATE:1	1	1	1
+12860ada97cabe62	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_5388.yaml	CultureMech:005610	for_dsm_5388	3	1	SOURCE_DUPLICATE:1	1	1	1
+2cd5361e2e624e31	PROPOSED	HIGH	data/normalized_yaml/bacterial/for_dsm_6578.yaml	CultureMech:005710	for_dsm_6578	3	1	SOURCE_DUPLICATE:1	1	1	1
 0ea9cef1fe67c312	PROPOSED	HIGH	data/normalized_yaml/bacterial/inorganic_salts_starch_agar_isp_4_with_5_nacl.yaml	CultureMech:002328	inorganic_salts_starch_agar_isp_4_with_5_nacl	3	2	SALINITY_VARIANT:2	3	1	1
 9167157439d81239	PROPOSED	HIGH	data/normalized_yaml/bacterial/isp_4_plus_20_nacl.yaml	CultureMech:009704	isp_4_plus_20_nacl	3	1	SALINITY_VARIANT:1	3	1	1
 13fbb12e7b4d29aa	PROPOSED	HIGH	data/normalized_yaml/bacterial/mineral_medium_with_camphor.yaml	CultureMech:001556	mineral_medium_with_camphor	3	2	SUPPLEMENTED_VARIANT:2	1	1	1
@@ -176,6 +193,7 @@ ddc2a1133a7edc20	PROPOSED	HIGH	data/normalized_yaml/bacterial/r2a_agar_with_1_na
 43a9530f7afd70b8	PROPOSED	HIGH	data/normalized_yaml/bacterial/r_agar_with_3_nacl.yaml	CultureMech:002313	r_agar_with_3_nacl	3	2	SALINITY_VARIANT:2	3	1	1
 043bc8f82331ec69	PROPOSED	HIGH	data/normalized_yaml/bacterial/ruminiclostridium_medium.yaml	CultureMech:000871	ruminiclostridium_medium	3	1	SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
 96c4e89030faca9e	PROPOSED	HIGH	data/normalized_yaml/bacterial/sulfate_reducing_bacterium_medium_with_lactate.yaml	CultureMech:002900	sulfate_reducing_bacterium_medium_with_lactate	3	2	SALINITY_VARIANT:1;SUPPLEMENTED_VARIANT:1	1	1	1
+19022eb0359cc79c	PROPOSED	HIGH	data/normalized_yaml/bacterial/tf_a_medium.yaml	CultureMech:006391	tf_a_medium	3	1	SOURCE_DUPLICATE:1	1	1	1
 ea72e8750d5a8230	PROPOSED	HIGH	data/normalized_yaml/bacterial/thermoclostridium_a_g_medium.yaml	CultureMech:001427	thermoclostridium_a_g_medium	3	1	SUBSTITUTED_COMPONENT_VARIANT:1	1	1	1
 070e099db1d1efd9	PROPOSED	HIGH	data/normalized_yaml/bacterial/togo_medium_m181.yaml	CultureMech:008391	togo_medium_m181	3	1	SOURCE_DUPLICATE:1	1	1	1
 2850e81e0e67678c	PROPOSED	HIGH	data/normalized_yaml/bacterial/togo_medium_m307.yaml	CultureMech:009582	togo_medium_m307	3	2	CONCENTRATION_VARIANT:2	3	1	1
@@ -193,63 +211,14 @@ b756a29d9848dbdd	PROPOSED	HIGH	data/normalized_yaml/algae/CCAP_MC II .yaml	Cultu
 367f403f8e293064	PROPOSED	HIGH	data/normalized_yaml/algae/CCAP_NN  Agar.yaml	CultureMech:000106	nn	2	1	DERIVED_FROM:1	1	1	1
 253d582f13cfe308	PROPOSED	HIGH	data/normalized_yaml/algae/asw.yaml	CultureMech:000050	asw	2	1	CONCENTRATION_VARIANT:1	2	1	1
 7de686f7c99e972a	PROPOSED	HIGH	data/normalized_yaml/algae/bg_11_1_nacl_medium.yaml	CultureMech:000027	bg_11_1_nacl_medium	2	1	SALINITY_VARIANT:1	2	1	1
-fe46c701d41cc40b	PROPOSED	HIGH	data/normalized_yaml/archaea/JCM_J184_PYROBACULUM_MEDIUM.yaml	CultureMech:002545	pyrobaculum_medium	2	1	SOURCE_DUPLICATE:1	1	1	1
-10c3462855fd78fa	PROPOSED	HIGH	data/normalized_yaml/archaea/JCM_J230_METHANOSARCINA_MEDIUM.yaml	CultureMech:002591	methanosarcina_medium	2	1	SOURCE_DUPLICATE:1	1	1	1
-1b3f9880abcaf986	PROPOSED	HIGH	data/normalized_yaml/archaea/JCM_J280_THERMOCOCCUS_MEDIUM.yaml	CultureMech:002638	thermococcus_medium	2	1	SOURCE_DUPLICATE:1	1	1	1
 5e6ae28dffa20ec4	PROPOSED	HIGH	data/normalized_yaml/archaea/JCM_J338_PYROBACULUM_CALIDIFONTIS_MEDIUM.yaml	CultureMech:002697	pyrobaculum_calidifontis_medium	2	1	DERIVED_FROM:1	1	1	1
-51620c6351944301	PROPOSED	HIGH	data/normalized_yaml/archaea/JCM_J693_AEROBIC_SULFOLOBALES_MEDIUM_WITHOUT_SULFUR.yaml	CultureMech:003038	aerobic_sulfolobales_medium_without_sulfur	2	1	SOURCE_DUPLICATE:1	1	1	1
-fda9828a88902f86	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_1018_HALOFERAX_SULFURIFONTIS_medium.yaml	CultureMech:003529	haloferax_sulfurifontis_medium	2	1	DERIVED_FROM:1	1	1	1
-12e9c008ea2bf87d	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_1043_IGNISPHAERA_medium.yaml	CultureMech:003602	ignisphaera_medium	2	1	DERIVED_FROM:1	1	1	1
-5af8fb769a86e2f6	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_1083_ACIDULIPROFUNDUM_medium.yaml	CultureMech:003735	aciduliprofundum_medium	2	1	DERIVED_FROM:1	1	1	1
-d2c9afbb12471a09	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_1091_HALOQUADRATUM_WALSBYI_medium.yaml	CultureMech:003742	haloquadratum_walsbyi_medium	2	1	DERIVED_FROM:1	1	1	1
-9a5911123d7137ae	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml	CultureMech:003877	halomicrobium_katesii_medium	2	1	DERIVED_FROM:1	1	1	1
-0ceabc2b47b928dd	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_1189_AEROBIC_SULFOLOBALES_medium_WITHOUT_SULFUR.yaml	CultureMech:003909	aerobic_sulfolobales_medium_without_sulfur	2	1	OMITTED_COMPONENT_VARIANT:1	1	1	1
-ca4b69eb7e3d2d37	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_1214_HALORUBRUM_CHOAVIATOR_medium.yaml	CultureMech:003965	halorubrum_choaviator_medium	2	1	DERIVED_FROM:1	1	1	1
-34cc9a706cee6445	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_1257_METHANOCELLA_medium.yaml	CultureMech:004017	methanocella_medium	2	1	DERIVED_FROM:1	1	1	1
-96ad1b7e3baff3b0	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_1273_METHANOSPIRILLUM_LACUNAE_MEDIUM.yaml	CultureMech:004027	methanospirillum_lacunae_medium	2	1	DERIVED_FROM:1	1	1	1
-73c3b676f71e2fbd	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_1329_METHANOSAETA_PELAGICA_medium.yaml	CultureMech:004085	methanosaeta_pelagica_medium	2	1	DERIVED_FROM:1	1	1	1
-5109bce895f55e33	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_146_HALOCOCCUS_medium.yaml	CultureMech:004167	halococcus_medium	2	1	DERIVED_FROM:1	1	1	1
-2522f701ac583d8c	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml	CultureMech:004186	methanomicrobium_mobile_medium	2	1	SOURCE_DUPLICATE:1	1	1	1
-06dbc2bd0cba24a5	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_265_THERMOFILUM_PENDENS_medium.yaml	CultureMech:004668	thermofilum_pendens_medium	2	1	DERIVED_FROM:1	1	1	1
-9313ed2b7b4e3027	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_266_THERMOCOCCUS_CELER_medium.yaml	CultureMech:004669	thermococcus_celer_medium	2	1	DERIVED_FROM:1	1	1	1
 7a43a5ac50ca5c0f	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_329_METHANOHALOPHILUS_HALOPHILUS_medium.yaml	CultureMech:005022	methanohalophilus_halophilus_medium	2	1	DERIVED_FROM:1	1	1	1
-17aa701f612525f1	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_342_METHANOBACTERIUM_ALCALIPHILUM_medium.yaml	CultureMech:005050	methanobacterium_alcaliphilum_medium	2	1	DERIVED_FROM:1	1	1	1
 92024877ba5143d4	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_373_METHANOGENIUM_CV_medium.yaml	CultureMech:005105	methanogenium_cv_medium	2	1	DERIVED_FROM:1	1	1	1
-d6b142f8e12ba619	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_374_METHANOSPIRILLUM_SK_medium.yaml	CultureMech:005106	methanospirillum_sk_medium	2	1	DERIVED_FROM:1	1	1	1
-53aa3ba48dc2cbff	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_375_METHANOHALOBIUM_medium.yaml	CultureMech:005107	methanohalobium_medium	2	1	DERIVED_FROM:1	1	1	1
-03d81872784d719c	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_399_ARCHAEOGLOBUS_medium.yaml	CultureMech:005188	archaeoglobus_medium	2	1	DERIVED_FROM:1	1	1	1
-1b393b181fffe4ed	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_519_ARCHAEOGLOBUS_PROFUNDUS_medium.yaml	CultureMech:005877	archaeoglobus_profundus_medium	2	1	DERIVED_FROM:1	1	1	1
-bb95160f4f94ddf8	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_589_HALOBACTERIUM_LACUSPROFUNDII_medium.yaml	CultureMech:006068	halobacterium_lacusprofundii_medium	2	1	DERIVED_FROM:1	1	1	1
-af378cc5f57334b4	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_623_THERMOCOCCUS_LITORALIS_medium.yaml	CultureMech:006129	thermococcus_litoralis_medium	2	1	DERIVED_FROM:1	1	1	1
-ed7ab053f19721aa	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_673_THERMOCOCCUS_PROFUNDUS_medium.yaml	CultureMech:006269	thermococcus_profundus_medium	2	1	DERIVED_FROM:1	1	1	1
 3b9cde5d512cea31	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_713_METHANOHALOPHILUS_EUHALOBIUS_medium.yaml	CultureMech:006351	methanohalophilus_euhalobius_medium	2	1	DERIVED_FROM:1	1	1	1
 4f009a416f54aaae	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_730_FERROGLOBUS_PLACIDUS_MEDIUM.yaml	CultureMech:006373	ferroglobus_placidus_medium	2	1	DERIVED_FROM:1	1	1	1
-5ebba0f607d1dbc3	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_766_THERMOCOCCUS_CHITINOPHAGUS_MEDIUM.yaml	CultureMech:006420	thermococcus_chitinophagus_medium	2	1	DERIVED_FROM:1	1	1	1
 dc84df1453683b86	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_770_SULFOPHOBOCOCCUS_ZILLIGII_medium.yaml	CultureMech:006427	sulfophobococcus_zilligii_medium	2	1	DERIVED_FROM:1	1	1	1
-89ccc769f7c8626c	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_806_THERMOCOCCUS_medium.yaml	CultureMech:006524	thermococcus_medium	2	1	DERIVED_FROM:1	1	1	1
-22b7f0726419249c	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_814_METHANOBACTERIUM_SUBTERRANEUM_MEDIUM.yaml	CultureMech:006537	methanobacterium_subterraneum_medium	2	1	DERIVED_FROM:1	1	1	1
-2bc76e6f73aadc91	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_817_THERMOSPHAERA_medium.yaml	CultureMech:006541	thermosphaera_medium	2	1	DERIVED_FROM:1	1	1	1
-a588fca95c4553b6	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_823_HALOBACULUM_GOMORRENSE_medium.yaml	CultureMech:006550	halobaculum_gomorrense_medium	2	1	DERIVED_FROM:1	1	1	1
-b09f8ce1f7128819	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_892_METHANOCALCULUS_PUMILUS_medium.yaml	CultureMech:006745	methanocalculus_pumilus_medium	2	1	DERIVED_FROM:1	1	1	1
-2617c56dd9532f4e	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_926_ALKALIPHILIC_THERMOCOCCUS_medium.yaml	CultureMech:006844	alkaliphilic_thermococcus_medium	2	1	DERIVED_FROM:1	1	1	1
-aec7ff00d65ca159	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_934_THERMOCOCCUS_WAIOTAPUENSE_medium.yaml	CultureMech:006854	thermococcus_waiotapuense_medium	2	1	DERIVED_FROM:1	1	1	1
-f801c9664cbc422c	PROPOSED	HIGH	data/normalized_yaml/archaea/KOMODO_97_HALOBACTERIUM_medium.yaml	CultureMech:006940	halobacterium_medium	2	1	DERIVED_FROM:1	1	1	1
-5e8098f6798b793e	PROPOSED	HIGH	data/normalized_yaml/archaea/TOGO_M293_Halosimplex_Medium.yaml	CultureMech:009470	halosimplex_medium	2	1	CONCENTRATION_VARIANT:1	2	1	1
 1ddb3de968c4fa7d	PROPOSED	HIGH	data/normalized_yaml/archaea/TOGO_M583_Thermoproteus_Medium_B.yaml	CultureMech:009979	thermoproteus_medium_b	2	1	SOURCE_DUPLICATE:1	1	1	1
-43cfe88e9f1e66cd	PROPOSED	HIGH	data/normalized_yaml/archaea/caldivirga_medium.yaml	CultureMech:002043	caldivirga_medium	2	1	SOURCE_DUPLICATE:1	1	1	1
-3cf50c2ac5a17e83	PROPOSED	HIGH	data/normalized_yaml/archaea/halobacteria_hmd_medium.yaml	CultureMech:003225	halobacteria_hmd_medium	2	1	CONCENTRATION_VARIANT:1	2	1	1
-955c8852df28ee53	PROPOSED	HIGH	data/normalized_yaml/archaea/methanobacterium_medium_iv.yaml	CultureMech:003219	methanobacterium_medium_iv	2	1	SOURCE_DUPLICATE:1	1	1	1
-06cb59600eaad978	PROPOSED	HIGH	data/normalized_yaml/archaea/methanococcus_deltae_medium.yaml	CultureMech:004745	methanococcus_deltae_medium	2	1	SOURCE_DUPLICATE:1	1	1	1
-56a0f59799bd2fc0	PROPOSED	HIGH	data/normalized_yaml/archaea/methanogenium_bourgense_medium.yaml	CultureMech:005026	methanogenium_bourgense_medium	2	1	SOURCE_DUPLICATE:1	1	1	1
-527ce86625b3268f	PROPOSED	HIGH	data/normalized_yaml/archaea/methanogenium_olentangyi_medium.yaml	CultureMech:004744	methanogenium_olentangyi_medium	2	1	SOURCE_DUPLICATE:1	1	1	1
-096fa17a659a7f44	PROPOSED	HIGH	data/normalized_yaml/archaea/methanolacinia_medium.yaml	CultureMech:001371	methanolacinia_medium	2	1	SOURCE_DUPLICATE:1	1	1	1
-f5fc8675a1fa8e7c	PROPOSED	HIGH	data/normalized_yaml/archaea/methanoregula_medium.yaml	CultureMech:004033	methanoregula_medium	2	1	SOURCE_DUPLICATE:1	1	1	1
-baa44c1ce3c346ce	PROPOSED	HIGH	data/normalized_yaml/archaea/methanosalsum_wen5_medium.yaml	CultureMech:001829	methanosalsum_wen5_medium	2	1	SOURCE_DUPLICATE:1	1	1	1
-5a7f51bdd85f6c62	PROPOSED	HIGH	data/normalized_yaml/archaea/methanosalsum_zhilinae_medium.yaml	CultureMech:001505	methanosalsum_zhilinae_medium	2	1	SOURCE_DUPLICATE:1	1	1	1
 4211259e81b28f7b	PROPOSED	HIGH	data/normalized_yaml/archaea/methanosarcina_mp_medium.yaml	CultureMech:005004	methanosarcina_mp_medium	2	1	SOURCE_DUPLICATE:1	1	1	1
-ae8c78f23c403681	PROPOSED	HIGH	data/normalized_yaml/archaea/methanosphaera_medium.yaml	CultureMech:001424	methanosphaera_medium	2	1	SOURCE_DUPLICATE:1	1	1	1
-1faa9ed1976a20a4	PROPOSED	HIGH	data/normalized_yaml/archaea/methanosphaera_medium_ii.yaml	CultureMech:005219	methanosphaera_medium_ii	2	1	SOURCE_DUPLICATE:1	1	1	1
-97c7c59640b61ed4	PROPOSED	HIGH	data/normalized_yaml/archaea/methanosphaerula_medium.yaml	CultureMech:003744	methanosphaerula_medium	2	1	SOURCE_DUPLICATE:1	1	1	1
 8431deede66e61b7	PROPOSED	HIGH	data/normalized_yaml/archaea/methermicoccus_medium.yaml	CultureMech:003736	methermicoccus_medium	2	1	SOURCE_DUPLICATE:1	1	1	1
 57d11ce18343eb1b	PROPOSED	HIGH	data/normalized_yaml/bacterial/1_2_r2a_agar.yaml	CultureMech:003190	1_2_r2a_agar	2	1	CONCENTRATION_VARIANT:1	2	1	1
 5b587711ede777f3	PROPOSED	HIGH	data/normalized_yaml/bacterial/DSMZ_1014_THIOALKALIVIBRIO_HALOPHILUS_MEDIUM.yaml	CultureMech:000243	thioalkalivibrio_halophilus_medium	2	1	DERIVED_FROM:1	1	1	1
@@ -389,59 +358,54 @@ da0084034685eb14	PROPOSED	HIGH	data/normalized_yaml/specialized/mmx_dropout.yaml
 54883081162c7921	PROPOSED	HIGH	data/normalized_yaml/specialized/varel_bryant_medium_nonitrogen.yaml	CultureMech:015785	Varel Bryant medium noNitrogen	2	1	SUPPLEMENTED_VARIANT:1	2	1	1
 139c7d158adb4e4e	PROPOSED	MEDIUM	data/normalized_yaml/archaea/KOMODO_141_METHANOGENIUM_medium.yaml	CultureMech:004144	methanogenium_medium	22	20	CONCENTRATION_VARIANT:20	5	1	2	group spans multiple category directories
 7038cdde56360380	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/for_dsm_15576_and_dsm_16219.yaml	CultureMech:004247	for_dsm_15576_and_dsm_16219	17	16	CONCENTRATION_VARIANT:1;SOURCE_DUPLICATE:15	2	1	2	group spans multiple category directories
-a66b53bcfdac9ecf	PROPOSED	MEDIUM	data/normalized_yaml/archaea/KOMODO_119_METHANOBACTERIUM_medium.yaml	CultureMech:003939	methanobacterium_medium	16	1	SOURCE_DUPLICATE:1	1	1	2	group spans multiple category directories
-c3044b75a605c3de	PROPOSED	MEDIUM	data/normalized_yaml/archaea/KOMODO_372_HALOBACTERIA_medium.yaml	CultureMech:005104	halobacteria_medium	11	2	CONCENTRATION_VARIANT:1;DERIVED_FROM:1	2	1	2	group spans multiple category directories
+c3044b75a605c3de	PROPOSED	MEDIUM	data/normalized_yaml/archaea/KOMODO_372_HALOBACTERIA_medium.yaml	CultureMech:005104	halobacteria_medium	11	1	CONCENTRATION_VARIANT:1	2	1	2	group spans multiple category directories
 d76974e22463ae4c	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/DSMZ_1172_YPG_MEDIUM.yaml	CultureMech:000614	ypg_medium	11	9	CONCENTRATION_VARIANT:4;SOURCE_DUPLICATE:4;SUPPLEMENTED_VARIANT:1	5	1	2	group spans multiple category directories
 621e3aa54d2edaff	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/TOGO_M2314_LB_medium.yaml	CultureMech:008901	lb_medium	11	9	CONCENTRATION_VARIANT:2;DERIVED_FROM:1;PHYSICAL_STATE_VARIANT:1;SALINITY_VARIANT:1;SOURCE_DUPLICATE:4	5	2	2	group spans multiple category directories
-8750042532c0b648	PROPOSED	MEDIUM	data/normalized_yaml/archaea/KOMODO_120_METHANOSARCINA_medium.yaml	CultureMech:003958	methanosarcina_medium	10	3	SOURCE_DUPLICATE:3	1	1	2	group spans multiple category directories
-729cd93d1bcefbf2	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/KOMODO_311_SPOROMUSA_medium.yaml	CultureMech:004964	sporomusa_medium	10	9	CONCENTRATION_VARIANT:1;SOURCE_DUPLICATE:8	2	1	2	group spans multiple category directories
+729cd93d1bcefbf2	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/KOMODO_311_SPOROMUSA_medium.yaml	CultureMech:004964	sporomusa_medium	10	4	CONCENTRATION_VARIANT:1;SOURCE_DUPLICATE:3	2	1	2	group spans multiple category directories
 8ad3aa3b26140aa4	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/gyp_glucose_yeast_peptone_medium.yaml	CultureMech:006668	gyp_glucose_yeast_peptone_medium	10	1	SUPPLEMENTED_VARIANT:1	1	1	2	group spans multiple category directories
 6a7a36df8f8e886c	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/JCM_J980_KUSHNERIA_AURANTIA_MEDIUM.yaml	CultureMech:003330	kushneria_aurantia_medium	9	8	CONCENTRATION_VARIANT:6;DERIVED_FROM:2	4	1	2	group spans multiple category directories
 f0c3642afb9b593d	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/KOMODO_1186_GRANULIBACTER_medium.yaml	CultureMech:003906	granulibacter_medium	9	7	CONCENTRATION_VARIANT:5;SUPPLEMENTED_VARIANT:2	4	1	2	group spans multiple category directories
 d59df339beb6e7c2	PROPOSED	MEDIUM	data/normalized_yaml/fungal/JCM_J42_YEAST-STARCH_AGAR_A.yaml	CultureMech:010527	yeast_starch_agar_a	9	8	PHYSICAL_STATE_VARIANT:1;SUPPLEMENTED_VARIANT:7	4	2	2	group spans multiple category directories
-e31aab0723dc8c00	PROPOSED	MEDIUM	data/normalized_yaml/archaea/JCM_J168_HALOBACTERIA_MEDIUM.yaml	CultureMech:002527	halobacteria_medium	8	6	CONCENTRATION_VARIANT:1;SALINITY_VARIANT:1;SOURCE_DUPLICATE:4	3	1	2	group spans multiple category directories
-923bb04d3f17ebf4	PROPOSED	MEDIUM	data/normalized_yaml/archaea/KOMODO_1138_HALOPIGER_medium.yaml	CultureMech:003847	halopiger_medium	8	7	CONCENTRATION_VARIANT:5;DERIVED_FROM:1;SUPPLEMENTED_VARIANT:1	5	1	3	group spans multiple category directories
+e31aab0723dc8c00	PROPOSED	MEDIUM	data/normalized_yaml/archaea/JCM_J168_HALOBACTERIA_MEDIUM.yaml	CultureMech:002527	halobacteria_medium	8	2	CONCENTRATION_VARIANT:1;SALINITY_VARIANT:1	3	1	2	group spans multiple category directories
+923bb04d3f17ebf4	PROPOSED	MEDIUM	data/normalized_yaml/archaea/KOMODO_1138_HALOPIGER_medium.yaml	CultureMech:003847	halopiger_medium	8	6	CONCENTRATION_VARIANT:5;SUPPLEMENTED_VARIANT:1	5	1	3	group spans multiple category directories
 6eceaddeae541ec0	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/JCM_J735_MY_MEDIUM.yaml	CultureMech:003078	my_medium	8	7	PHYSICAL_STATE_VARIANT:6;SUPPLEMENTED_VARIANT:1	2	2	2	group spans multiple category directories
 ab44fce260089bc6	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/KOMODO_1173_MODIFIED_medium_514.yaml	CultureMech:003893	modified_medium_514	7	5	CONCENTRATION_VARIANT:5	2	1	3	group spans multiple category directories
 73eaeaa9a373248e	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/KOMODO_190_YpSs_medium.yaml	CultureMech:004214	ypss_medium	7	5	SOURCE_DUPLICATE:1;SUPPLEMENTED_VARIANT:4	2	1	2	group spans multiple category directories
 3eb1b2ea15e6995c	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/asw_150_barley.yaml	CultureMech:000382	asw_150_barley	7	4	CONCENTRATION_VARIANT:2;DERIVED_FROM:2	4	1	2	group spans multiple category directories
-2d2e478a1df1e27a	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/for_dsm_22549.yaml	CultureMech:004736	for_dsm_22549	7	1	CONCENTRATION_VARIANT:1	2	1	2	group spans multiple category directories
-10054041a1c84324	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/mb_medium.yaml	CultureMech:006834	mb_medium	7	1	SALINITY_VARIANT:1	2	1	2	group spans multiple category directories
+79cec64d62d8448b	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/for_dsm_17935.yaml	CultureMech:003833	for_dsm_17935	7	5	SOURCE_DUPLICATE:5	1	1	2	group spans multiple category directories
+2d2e478a1df1e27a	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/for_dsm_22549.yaml	CultureMech:004736	for_dsm_22549	7	5	CONCENTRATION_VARIANT:1;SOURCE_DUPLICATE:4	2	1	2	group spans multiple category directories
+10054041a1c84324	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/mb_medium.yaml	CultureMech:006834	mb_medium	7	5	SALINITY_VARIANT:1;SOURCE_DUPLICATE:4	2	1	2	group spans multiple category directories
 dd36f6b28db5a841	PROPOSED	MEDIUM	data/normalized_yaml/archaea/JCM_J165_SULFOLOBUS_MEDIUM.yaml	CultureMech:002524	sulfolobus_medium	6	5	SALINITY_VARIANT:3;SOURCE_DUPLICATE:2	2	1	3	group spans multiple category directories
-e20fc9c6cebd8691	PROPOSED	MEDIUM	data/normalized_yaml/archaea/JCM_J183_DESULFUROCOCCUS_MEDIUM.yaml	CultureMech:002544	desulfurococcus_medium	6	5	CONCENTRATION_VARIANT:3;SOURCE_DUPLICATE:2	2	1	2	group spans multiple category directories
-78095b1241aa4bcd	PROPOSED	MEDIUM	data/normalized_yaml/archaea/KOMODO_390_PYROBACULUM_MEDIUM.yaml	CultureMech:005172	pyrobaculum_medium	6	1	DERIVED_FROM:1	1	1	2	group spans multiple category directories
+e20fc9c6cebd8691	PROPOSED	MEDIUM	data/normalized_yaml/archaea/JCM_J183_DESULFUROCOCCUS_MEDIUM.yaml	CultureMech:002544	desulfurococcus_medium	6	3	CONCENTRATION_VARIANT:3	2	1	2	group spans multiple category directories
 d24b6828c2553431	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/JCM_J471_DESULFONAUTICUS_MEDIUM.yaml	CultureMech:002820	desulfonauticus_medium	6	5	CONCENTRATION_VARIANT:1;SOURCE_DUPLICATE:4	2	1	2	group spans multiple category directories
+ea67206be4276933	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/KOMODO_480b_TTD-MEDIUM.yaml	CultureMech:005598	ttd_medium	6	1	SOURCE_DUPLICATE:1	1	1	2	group spans multiple category directories
 2d61fc0be254fa29	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/czapek_dox_agar.yaml	CultureMech:004065	czapek_dox_agar	6	5	CONCENTRATION_VARIANT:3;DERIVED_FROM:1;SUPPLEMENTED_VARIANT:1	4	1	2	group spans multiple category directories
-94f15a7c34867c51	PROPOSED	MEDIUM	data/normalized_yaml/archaea/KOMODO_395_DESULFUROCOCCUS_AMYLOLYTICUS_medium.yaml	CultureMech:005182	desulfurococcus_amylolyticus_medium	5	1	SOURCE_DUPLICATE:1	1	1	2	group spans multiple category directories
-dbba7c3e3eec6cf3	PROPOSED	MEDIUM	data/normalized_yaml/archaea/KOMODO_825_METHANOBACTERIUM_II_medium.yaml	CultureMech:006555	methanobacterium_ii_medium	5	1	DERIVED_FROM:1	1	1	2	group spans multiple category directories
-58533571c6f68ff3	PROPOSED	MEDIUM	data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml	CultureMech:006771	acidolobus_aceticus_medium	5	3	CONCENTRATION_VARIANT:2;DERIVED_FROM:1	2	1	2	group spans multiple category directories
-84a28af3da4fdfb8	PROPOSED	MEDIUM	data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml	CultureMech:008151	halobacteria_medium	5	4	CONCENTRATION_VARIANT:3;SALINITY_VARIANT:1	5	1	2	group spans multiple category directories
+9bb3f5a7183359cd	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/for_dsm_19918.yaml	CultureMech:005112	for_dsm_19918	6	4	SOURCE_DUPLICATE:4	1	1	2	group spans multiple category directories
+58533571c6f68ff3	PROPOSED	MEDIUM	data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml	CultureMech:006771	acidolobus_aceticus_medium	5	2	CONCENTRATION_VARIANT:2	2	1	2	group spans multiple category directories
+84a28af3da4fdfb8	PROPOSED	MEDIUM	data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml	CultureMech:008151	halobacteria_medium	5	2	CONCENTRATION_VARIANT:2	5	1	2	group spans multiple category directories
 119ce848af80b2f3	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/KOMODO_1143_TY_medium.yaml	CultureMech:003854	ty_medium	5	3	CONCENTRATION_VARIANT:2;SOURCE_DUPLICATE:1	3	1	2	group spans multiple category directories
 eec11aa0db5bd173	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/KOMODO_358-1_For_aerobic_growth.yaml	CultureMech:005075	for_aerobic_growth	5	4	CONCENTRATION_VARIANT:1;SOURCE_DUPLICATE:3	2	1	3	group spans multiple category directories
 f3c5cbd1937f63cc	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/ma2.yaml	CultureMech:007977	ma2	5	2	CONCENTRATION_VARIANT:2	3	1	2	group spans multiple category directories
 c3bb7c95e8cc3191	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/yeast_extract_malt_extract_agar_isp_2.yaml	CultureMech:009740	yeast_extract_malt_extract_agar_isp_2	5	1	SUPPLEMENTED_VARIANT:1	1	1	2	group spans multiple category directories
-2bb0b009c6a05a1b	PROPOSED	MEDIUM	data/normalized_yaml/archaea/KOMODO_280_METHANOCOCCOIDES_medium.yaml	CultureMech:004733	methanococcoides_medium	4	2	CONCENTRATION_VARIANT:1;SOURCE_DUPLICATE:1	2	1	2	group spans multiple category directories
-e6cee1689f7db3c6	PROPOSED	MEDIUM	data/normalized_yaml/archaea/KOMODO_874_FERROPLASMA_ACIDIPHILUM_medium.yaml	CultureMech:006711	ferroplasma_acidiphilum_medium	4	1	DERIVED_FROM:1	1	1	2	group spans multiple category directories
-c9cff2ab2c126a0d	PROPOSED	MEDIUM	data/normalized_yaml/archaea/TOGO_M160_Halobacteria_Medium.yaml	CultureMech:008163	halobacteria_medium	4	3	CONCENTRATION_VARIANT:2;SALINITY_VARIANT:1	4	1	2	group spans multiple category directories
+2bb0b009c6a05a1b	PROPOSED	MEDIUM	data/normalized_yaml/archaea/KOMODO_280_METHANOCOCCOIDES_medium.yaml	CultureMech:004733	methanococcoides_medium	4	1	CONCENTRATION_VARIANT:1	2	1	2	group spans multiple category directories
+c9cff2ab2c126a0d	PROPOSED	MEDIUM	data/normalized_yaml/archaea/TOGO_M160_Halobacteria_Medium.yaml	CultureMech:008163	halobacteria_medium	4	2	CONCENTRATION_VARIANT:2	4	1	2	group spans multiple category directories
 087de73c084cc0f4	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/2_malt_agar.yaml	CultureMech:009585	2_malt_agar	4	2	CONCENTRATION_VARIANT:2	4	1	2	group spans multiple category directories
 6d02162796dd3ab0	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/2_x_yt_medium.yaml	CultureMech:002679	2_x_yt_medium	4	3	CONCENTRATION_VARIANT:1;SUPPLEMENTED_VARIANT:2	3	1	2	group spans multiple category directories
 76fdda13a87750e6	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/JCM_J834_MODIFIED_DESULFOVIBRIO_MEDIUM.yaml	CultureMech:003178	modified_desulfovibrio_medium	4	3	CONCENTRATION_VARIANT:1;SOURCE_DUPLICATE:2	2	1	2	group spans multiple category directories
 8aa4b9be2487721b	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/KOMODO_172a_CY_S2_medium.yaml	CultureMech:004201	cy_s2_medium	4	3	SOURCE_DUPLICATE:3	1	1	2	group spans multiple category directories
-06ac4bf3f407103e	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/for_dsm_2376.yaml	CultureMech:004755	for_dsm_2376	4	3	SOURCE_DUPLICATE:3	1	1	2	group spans multiple category directories
+2419db905f0d68f4	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/KOMODO_391-1_For_DSM_4254.yaml	CultureMech:005173	for_dsm_4254	4	2	SOURCE_DUPLICATE:2	1	1	2	group spans multiple category directories
+06ac4bf3f407103e	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/for_dsm_2376.yaml	CultureMech:004755	for_dsm_2376	4	2	SOURCE_DUPLICATE:2	1	1	2	group spans multiple category directories
 39d736ff030cdf6b	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/ird_fusibacter_medium.yaml	CultureMech:003341	ird_fusibacter_medium	4	3	CONCENTRATION_VARIANT:2;SOURCE_DUPLICATE:1	2	1	2	group spans multiple category directories
 cf2daf491f2474de	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/mg_medium.yaml	CultureMech:005888	mg_medium	4	3	CONCENTRATION_VARIANT:1;SALINITY_VARIANT:1;SOURCE_DUPLICATE:1	2	1	2	group spans multiple category directories
 1119f690ec43d7ae	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/yeast_peptone_succinate_medium.yaml	CultureMech:006959	yeast_peptone_succinate_medium	4	1	DERIVED_FROM:1	1	1	2	group spans multiple category directories
-a81e2a7eba0c77f0	PROPOSED	MEDIUM	data/normalized_yaml/archaea/KOMODO_506_METHANOBACTERIUM_ESPANOLAE_MEDIUM.yaml	CultureMech:005699	methanobacterium_espanolae_medium	3	1	DERIVED_FROM:1	1	1	2	group spans multiple category directories
 a174ef2afef4dd8a	PROPOSED	MEDIUM	data/normalized_yaml/archaea/TOGO_M2294_Halopiger_Medium.yaml	CultureMech:008880	halopiger_medium	3	2	CONCENTRATION_VARIANT:2	3	1	2	group spans multiple category directories
-74870748c6433e05	PROPOSED	MEDIUM	data/normalized_yaml/archaea/methanolobus_i_medium.yaml	CultureMech:004609	methanolobus_i_medium	3	1	SOURCE_DUPLICATE:1	1	1	2	group spans multiple category directories
-6c91faa25201305b	PROPOSED	MEDIUM	data/normalized_yaml/archaea/mh1_medium_for_halarchaeum.yaml	CultureMech:003132	mh1_medium_for_halarchaeum	3	1	SOURCE_DUPLICATE:1	1	1	2	group spans multiple category directories
 23e9bae9f6e945f8	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/JCM_J464_HP_101_HALOPHILE_MEDIUM.yaml	CultureMech:000299	hp_101_halophile_medium	3	2	DERIVED_FROM:2	1	1	2	group spans multiple category directories
 013f8655b908ef4f	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/KOMODO_1221_SALISAETA_LONGA_medium.yaml	CultureMech:003974	salisaeta_longa_medium	3	1	CONCENTRATION_VARIANT:1	2	1	2	group spans multiple category directories
 e27dff1913cc36f0	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/KOMODO_129_POTATO_DEXTROSE_AGAR.yaml	CultureMech:004047	potato_dextrose_agar	3	1	CONCENTRATION_VARIANT:1	2	1	2	group spans multiple category directories
 2b846b000675be94	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/TOGO_M573_Yeast_Extract-Malt_Extract_Agar_ISP-2_With_Artificial_Seawater.yaml	CultureMech:009969	yeast_extract_malt_extract_agar_isp_2_with_artificial_seawater	3	1	SUPPLEMENTED_VARIANT:1	1	1	2	group spans multiple category directories
 b1aa4dcc250fa795	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/TOGO_M682_Distilled_Water.yaml	CultureMech:010087	distilled_water	3	2	CONCENTRATION_VARIANT:2	3	1	2	group spans multiple category directories
 c616d180f58274dd	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/anaerobic_thauera_medium.yaml	CultureMech:004072	anaerobic_thauera_medium	3	2	DERIVED_FROM:1;SOURCE_DUPLICATE:1	1	1	2	group spans multiple category directories
-31313daad1766317	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/for_dsm_1974.yaml	CultureMech:004103	for_dsm_1974	3	2	SOURCE_DUPLICATE:2	1	1	2	group spans multiple category directories
+31313daad1766317	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/for_dsm_1974.yaml	CultureMech:004103	for_dsm_1974	3	1	SOURCE_DUPLICATE:1	1	1	2	group spans multiple category directories
 7d50ab3f2152d1a4	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/fuf_medium.yaml	CultureMech:005006	fuf_medium	3	2	SOURCE_DUPLICATE:2	1	1	2	group spans multiple category directories
 1c7724920425ddd2	PROPOSED	MEDIUM	data/normalized_yaml/bacterial/medium_1190_modified_for_dsm_19497.yaml	CultureMech:003925	medium_1190_modified_for_dsm_19497	3	2	SOURCE_DUPLICATE:1;SUPPLEMENTED_VARIANT:1	1	1	2	group spans multiple category directories
 fe4f38daad6286e9	PROPOSED	MEDIUM	data/normalized_yaml/fungal/tryptone_yeast_extract_agar.yaml	CultureMech:010506	tryptone_yeast_extract_agar	3	2	SUPPLEMENTED_VARIANT:2	2	1	2	group spans multiple category directories
@@ -507,22 +471,19 @@ cac133df90b305c6	PROPOSED	MEDIUM	data/normalized_yaml/fungal/malt_extract_agar.y
 c89cc3631428171b	PROPOSED	MEDIUM	data/normalized_yaml/specialized/artficial_marine_water_medium.yaml	CultureMech:015384	artficial_marine_water_medium	2	1	CONCENTRATION_VARIANT:1	2	1	2	group spans multiple category directories
 efd5df0fdc3ffc13	PROPOSED	MEDIUM	data/normalized_yaml/specialized/dinomm_nocarbon.yaml	CultureMech:015512	DinoMM noCarbon	2	1	CONCENTRATION_VARIANT:1	2	1	2	group spans multiple category directories
 118016881c04fe32	PROPOSED	MEDIUM	data/normalized_yaml/specialized/dinomm_nonitrogen.yaml	CultureMech:015513	DinoMM noNitrogen	2	1	CONCENTRATION_VARIANT:1	2	1	2	group spans multiple category directories
-c9763ad3915e4c56	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/fwm_medium.yaml	CultureMech:005678	fwm_medium	33	32	CONCENTRATION_VARIANT:30;SOURCE_DUPLICATE:2	4	1	2	missing concentration objects present; group spans multiple category directories
+c9763ad3915e4c56	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/fwm_medium.yaml	CultureMech:005678	fwm_medium	33	13	CONCENTRATION_VARIANT:11;SOURCE_DUPLICATE:2	4	1	2	missing concentration objects present; group spans multiple category directories
 26443f9ac412d1a8	REVIEW_REQUIRED	LOW	data/normalized_yaml/specialized/zmb_als_nobiotin.yaml	CultureMech:015800	ZMB ALS noBiotin	33	32	SOURCE_DUPLICATE:32	1	1	1	low component-count group
 c51fcdb182d0437e	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_215_BHI_medium.yaml	CultureMech:004418	bhi_medium	27	25	PHYSICAL_STATE_VARIANT:4;SOURCE_DUPLICATE:20;SUPPLEMENTED_VARIANT:1	1	2	1	majority of records use VARIABLE concentrations
 d10d0eb1262915cc	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_429b_CHOCOLATE_AGAR.yaml	CultureMech:005272	chocolate_agar	24	23	SOURCE_DUPLICATE:13;SUBSTITUTED_COMPONENT_VARIANT:3;SUPPLEMENTED_VARIANT:7	2	1	1	majority of records use VARIABLE concentrations
 875374f51dcc7178	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_693_COLUMBIA_BLOOD_medium.yaml	CultureMech:006311	columbia_blood_medium	15	13	SOURCE_DUPLICATE:13	1	1	1	majority of records use VARIABLE concentrations
 8284a6eeb3ff1da7	REVIEW_REQUIRED	LOW	data/normalized_yaml/algae/pj.yaml	CultureMech:000112	pj	13	12	CONCENTRATION_VARIANT:1;SOURCE_DUPLICATE:11	2	1	1	algae source-duplicate candidate has identical parsed ingredients but semantically broad medium names; verify source/formulation before migration
-6599882c9d7839df	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/thiohalophilus_medium.yaml	CultureMech:003641	thiohalophilus_medium	8	7	CONCENTRATION_VARIANT:6;SOURCE_DUPLICATE:1	3	1	1	missing concentration objects present
+6599882c9d7839df	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/thiohalophilus_medium.yaml	CultureMech:003641	thiohalophilus_medium	8	2	CONCENTRATION_VARIANT:1;SOURCE_DUPLICATE:1	3	1	1	missing concentration objects present
 1d4d8371646a173c	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_81_MINERAL_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_H-3.yaml	CultureMech:006545	mineral_medium_for_chemolithotrophic_growth_h_3	7	5	CONCENTRATION_VARIANT:4;DERIVED_FROM:1	2	1	1	missing concentration objects present
 98aea7afa68d4263	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/s_w.yaml	CultureMech:000414	s_w	6	5	DERIVED_FROM:1;PHYSICAL_STATE_VARIANT:4	2	2	2	majority of records use VARIABLE concentrations; group spans multiple category directories
 7a22d72efc0b34a7	REVIEW_REQUIRED	LOW	data/normalized_yaml/algae/mdy_v.yaml	CultureMech:000088	mdy_v	5	4	SOURCE_DUPLICATE:4	1	1	1	algae source-duplicate candidate has identical parsed ingredients but semantically broad medium names; verify source/formulation before migration
-25e84a119865b967	REVIEW_REQUIRED	LOW	data/normalized_yaml/archaea/KOMODO_792_PYROLOBUS_FUMARII_MEDIUM.yaml	CultureMech:006501	pyrolobus_fumarii_medium	5	1	CONCENTRATION_VARIANT:1	3	1	2	missing concentration objects present; group spans multiple category directories
 2b17e67d35b8f3b4	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_1199_K7_medium.yaml	CultureMech:003938	k7_medium	5	2	CONCENTRATION_VARIANT:1;SUPPLEMENTED_VARIANT:1	3	1	1	majority of records use VARIABLE concentrations
-99a55e980b41a510	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_950_ONR7a_MEDIUM.yaml	CultureMech:006893	onr7a_medium	5	4	SOURCE_DUPLICATE:2;SUBSTITUTED_COMPONENT_VARIANT:2	1	1	1	majority of records use VARIABLE concentrations
 b64a1760ba6ad291	REVIEW_REQUIRED	LOW	data/normalized_yaml/algae/1_2_soil_seawater_medium.yaml	CultureMech:000005	1_2_soil_seawater_medium	4	3	CONCENTRATION_VARIANT:3	4	1	1	majority of records use VARIABLE concentrations
-2aa9d01269df63bf	REVIEW_REQUIRED	LOW	data/normalized_yaml/archaea/KOMODO_734_METHANOBREVIBACTER_CURVATUS_medium.yaml	CultureMech:006381	methanobrevibacter_curvatus_medium	4	1	SOURCE_DUPLICATE:1	2	1	2	missing concentration objects present; group spans multiple category directories
-da8d3fb1f14b40fd	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/desulfuromonas_medium_tce.yaml	CultureMech:001868	desulfuromonas_medium_tce	4	2	CONCENTRATION_VARIANT:1;SOURCE_DUPLICATE:1	2	1	1	missing concentration objects present
+da8d3fb1f14b40fd	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/desulfuromonas_medium_tce.yaml	CultureMech:001868	desulfuromonas_medium_tce	4	2	CONCENTRATION_VARIANT:2	2	1	1	missing concentration objects present
 ea823542debf5dd1	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/marine_agar_2216_ph_8_5.yaml	CultureMech:007573	marine_agar_2216_ph_8_5	4	3	DERIVED_FROM:1;SOURCE_DUPLICATE:2	1	1	2	majority of records use VARIABLE concentrations; group spans multiple category directories
 1faefc172624d952	REVIEW_REQUIRED	LOW	data/normalized_yaml/algae/dm.yaml	CultureMech:000063	dm	3	2	SOURCE_DUPLICATE:2	1	1	1	algae source-duplicate candidate has identical parsed ingredients but semantically broad medium names; verify source/formulation before migration
 6485d1fd23c26f00	REVIEW_REQUIRED	LOW	data/normalized_yaml/archaea/TOGO_M151_Thermococcus_Stetteri_Medium.yaml	CultureMech:008065	thermococcus_stetteri_medium	3	2	CONCENTRATION_VARIANT:2	3	1	1	majority of records use VARIABLE concentrations
@@ -536,7 +497,6 @@ d289efc9bb998ce3	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_420_B
 1c21de60528491d9	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_833_DEHALOSPIRILLUM_medium.yaml	CultureMech:006625	dehalospirillum_medium	3	1	DERIVED_FROM:1	1	1	1	majority of records use VARIABLE concentrations
 27bc66502bbb0250	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_87a_CHLOROFLEXUS_AGGREGANS_medium.yaml	CultureMech:006721	chloroflexus_aggregans_medium	3	2	CONCENTRATION_VARIANT:1;DERIVED_FROM:1	2	1	1	missing concentration objects present
 7d8440934ce82588	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_88b_V24N_medium.yaml	CultureMech:006741	v24n_medium	3	2	SOURCE_DUPLICATE:2	1	1	2	majority of records use VARIABLE concentrations; group spans multiple category directories
-90f5a3d58d1df4fe	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_898_ANOXYBACILLUS_medium.yaml	CultureMech:006758	anoxybacillus_medium	3	2	SOURCE_DUPLICATE:2	1	1	1	majority of records use VARIABLE concentrations
 8e9b4bb6d04c450b	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_909_TREPONEMA_DENTICOLA_medium.yaml	CultureMech:006781	treponema_denticola_medium	3	1	SOURCE_DUPLICATE:1	1	1	1	majority of records use VARIABLE concentrations
 aa2e0eb65a9a1b4e	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/TOGO_M347_JT_Medium.yaml	CultureMech:009726	jt_medium	3	2	CONCENTRATION_VARIANT:2	3	1	1	majority of records use VARIABLE concentrations
 6a87f4e61fa3f4fc	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/TOGO_M419_MMJHS_Medium.yaml	CultureMech:009804	mmjhs_medium	3	2	DERIVED_FROM:2	1	1	1	majority of records use VARIABLE concentrations
@@ -546,8 +506,7 @@ aa2e0eb65a9a1b4e	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/TOGO_M347_JT
 ba8acbb26bd78033	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml	CultureMech:000426	desulfopila_corrodens_medium	3	1	CONCENTRATION_VARIANT:1	2	1	1	missing concentration objects present
 6f6024ca70c703f3	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/desulfovibrio_shv_medium.yaml	CultureMech:006368	desulfovibrio_shv_medium	3	2	CONCENTRATION_VARIANT:2	3	1	1	majority of records use VARIABLE concentrations
 a0464f4708c86764	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/desulfovibrio_sp_medium.yaml	CultureMech:004276	desulfovibrio_sp_medium	3	2	CONCENTRATION_VARIANT:2	3	1	1	majority of records use VARIABLE concentrations
-c33385faa7ef18e2	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/desulfuromonas_thiophila_medium.yaml	CultureMech:001785	desulfuromonas_thiophila_medium	3	1	SOURCE_DUPLICATE:1	2	1	1	missing concentration objects present
-d7c3d25f18909602	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/dsm_10409.yaml	CultureMech:005599	dsm_10409	3	2	SOURCE_DUPLICATE:2	1	1	1	majority of records use VARIABLE concentrations
+d7c3d25f18909602	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/dsm_10409.yaml	CultureMech:005599	dsm_10409	3	1	SOURCE_DUPLICATE:1	1	1	1	majority of records use VARIABLE concentrations
 24509a2a6d07630b	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/for_dsm_9463.yaml	CultureMech:006260	for_dsm_9463	3	2	SOURCE_DUPLICATE:2	1	1	1	majority of records use VARIABLE concentrations
 ef787aff6644018a	REVIEW_REQUIRED	LOW	data/normalized_yaml/algae/bg11.yaml	CultureMech:015450	BG11	2	1	SOURCE_DUPLICATE:1	1	1	1	algae source-duplicate candidate has identical parsed ingredients but semantically broad medium names; verify source/formulation before migration
 75e8f7487127aabf	REVIEW_REQUIRED	LOW	data/normalized_yaml/algae/k35.yaml	CultureMech:000078	k35	2	1	SOURCE_DUPLICATE:1	1	1	1	algae source-duplicate candidate has identical parsed ingredients but semantically broad medium names; verify source/formulation before migration
@@ -558,7 +517,6 @@ fdcf38112c226b1f	REVIEW_REQUIRED	LOW	data/normalized_yaml/archaea/KOMODO_182_SUL
 a3cb0716f8ad8fd0	REVIEW_REQUIRED	LOW	data/normalized_yaml/archaea/KOMODO_398_THERMOPLASMA_VOLCANIUM_medium.yaml	CultureMech:005187	thermoplasma_volcanium_medium	2	1	SOURCE_DUPLICATE:1	1	1	2	majority of records use VARIABLE concentrations; group spans multiple category directories
 bb47726309747a27	REVIEW_REQUIRED	LOW	data/normalized_yaml/archaea/KOMODO_795_STETTERIA_medium.yaml	CultureMech:006504	stetteria_medium	2	1	SOURCE_DUPLICATE:1	1	1	2	majority of records use VARIABLE concentrations; group spans multiple category directories
 99e71367bdca6382	REVIEW_REQUIRED	LOW	data/normalized_yaml/archaea/KOMODO_883_CALDIVIRGA_medium.yaml	CultureMech:006733	caldivirga_medium	2	1	SOURCE_DUPLICATE:1	1	1	1	majority of records use VARIABLE concentrations
-bc8d2635ff2d901e	REVIEW_REQUIRED	LOW	data/normalized_yaml/archaea/KOMODO_897_IGNICOCCUS_medium.yaml	CultureMech:006753	ignicoccus_medium	2	1	SOURCE_DUPLICATE:1	1	1	2	majority of records use VARIABLE concentrations; group spans multiple category directories
 425a1798b359a899	REVIEW_REQUIRED	LOW	data/normalized_yaml/archaea/TOGO_M167_Acidianus_Infernus_Medium_A.yaml	CultureMech:008238	acidianus_infernus_medium_a	2	1	CONCENTRATION_VARIANT:1	2	1	2	majority of records use VARIABLE concentrations; group spans multiple category directories
 5207dc918946a5d9	REVIEW_REQUIRED	LOW	data/normalized_yaml/archaea/TOGO_M223_Methanosarcina_Medium.yaml	CultureMech:008828	methanosarcina_medium	2	1	CONCENTRATION_VARIANT:1	2	1	1	majority of records use VARIABLE concentrations
 8257f02c8b9b22df	REVIEW_REQUIRED	LOW	data/normalized_yaml/archaea/TOGO_M226_Picrophilus_Medium.yaml	CultureMech:008856	picrophilus_medium	2	1	CONCENTRATION_VARIANT:1	2	1	1	majority of records use VARIABLE concentrations
@@ -568,14 +526,11 @@ c79fce49cb85dfca	REVIEW_REQUIRED	LOW	data/normalized_yaml/archaea/methanogenium_
 669ca8ef9877a66c	REVIEW_REQUIRED	LOW	data/normalized_yaml/archaea/methanolobus_ii_medium.yaml	CultureMech:005015	methanolobus_ii_medium	2	1	CONCENTRATION_VARIANT:1	2	1	1	majority of records use VARIABLE concentrations
 a5cad7f8b3c3a1aa	REVIEW_REQUIRED	LOW	data/normalized_yaml/archaea/sulfurisphaera_medium_ph_2_5.yaml	CultureMech:008214	sulfurisphaera_medium_ph_2_5	2	1	SOURCE_DUPLICATE:1	1	1	1	majority of records use VARIABLE concentrations
 498122076c07a077	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_104_PYG-MEDIUM_modified.yaml	CultureMech:003608	pyg_medium_modified	2	1	SOURCE_DUPLICATE:1	1	1	1	majority of records use VARIABLE concentrations
-a2dfe91f4f5738b5	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_1321_ACIDIHALOBACTER_medium.yaml	CultureMech:004077	acidihalobacter_medium	2	1	SOURCE_DUPLICATE:1	1	1	1	majority of records use VARIABLE concentrations
 c59e76907ad5bcae	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_3073_Trace_element_solution_medium_318.yaml	CultureMech:004859	trace_element_solution_medium_318	2	1	DERIVED_FROM:1	1	1	1	majority of records use VARIABLE concentrations
 2a963e7d39364f7f	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_350_CELLULOMONAS_FERMENTANS_medium.yaml	CultureMech:005066	cellulomonas_fermentans_medium	2	1	SOURCE_DUPLICATE:1	1	1	1	majority of records use VARIABLE concentrations
 c92b0f612f619306	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_63_DESULFOVIBRIO_medium.yaml	CultureMech:006160	desulfovibrio_medium	2	1	SALINITY_VARIANT:1	1	1	1	majority of records use VARIABLE concentrations
 183aeb22a19bbfce	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_890_VM1_MEDIUM.yaml	CultureMech:006743	vm1_medium	2	1	SOURCE_DUPLICATE:1	1	1	1	majority of records use VARIABLE concentrations
 0f2857ff99c8b3ab	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_891_SME_MEDIUM_MODIFIED_FOR_IS7.yaml	CultureMech:006744	sme_medium_modified_for_is7	2	1	CONCENTRATION_VARIANT:1	2	1	1	majority of records use VARIABLE concentrations
-940aba872ea2df37	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_945_MARINITOGA_PIEZOPHILA_medium.yaml	CultureMech:006880	marinitoga_piezophila_medium	2	1	SOURCE_DUPLICATE:1	1	1	1	majority of records use VARIABLE concentrations
-487793ea03638789	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/KOMODO_9_VY_2_AGAR.yaml	CultureMech:006985	vy_2_agar	2	1	SOURCE_DUPLICATE:1	1	1	1	majority of records use VARIABLE concentrations
 8aecf87fcd330746	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/TOGO_M1044_IRD_Fusibacter_Medium.yaml	CultureMech:007560	ird_fusibacter_medium	2	1	CONCENTRATION_VARIANT:1	2	1	1	majority of records use VARIABLE concentrations
 85e871e644dcfe88	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml	CultureMech:007670	alkaliphilus_3b_medium	2	1	CONCENTRATION_VARIANT:1	2	1	1	majority of records use VARIABLE concentrations
 fc285bcfb68dc643	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/TOGO_M1165_Bicarbonate_Buffered_Medium.yaml	CultureMech:007689	bicarbonate_buffered_medium	2	1	DERIVED_FROM:1	1	1	1	majority of records use VARIABLE concentrations
@@ -602,7 +557,6 @@ b84482f3183f219b	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/TOGO_M434_An
 824ef9c5ac0ec55d	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/bacto_marine_agar.yaml	CultureMech:006092	bacto_marine_agar	2	1	DERIVED_FROM:1	1	1	2	majority of records use VARIABLE concentrations; group spans multiple category directories
 6d6fa906b0a89eae	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/brain_heart_infusion_agar.yaml	CultureMech:002647	brain_heart_infusion_agar	2	1	SUPPLEMENTED_VARIANT:1	1	1	1	majority of records use VARIABLE concentrations
 bc408668a19b3c47	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/e31.yaml	CultureMech:000340	e31	2	1	SOURCE_DUPLICATE:1	1	1	1	majority of records use VARIABLE concentrations
-4ff1a077f3080a31	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/for_dsm_11763.yaml	CultureMech:006538	for_dsm_11763	2	1	SOURCE_DUPLICATE:1	1	1	1	majority of records use VARIABLE concentrations
 2baafe147a65de1c	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/fw_medium.yaml	CultureMech:009633	fw_medium	2	1	SOURCE_DUPLICATE:1	1	1	1	majority of records use VARIABLE concentrations
 b1d339ccadd0f6f4	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/halo_1a.yaml	CultureMech:008665	halo_1a	2	1	CONCENTRATION_VARIANT:1	2	1	1	majority of records use VARIABLE concentrations
 f2c6167a6e5175ec	REVIEW_REQUIRED	LOW	data/normalized_yaml/bacterial/halo_1b.yaml	CultureMech:008666	halo_1b	2	1	CONCENTRATION_VARIANT:1	2	1	1	majority of records use VARIABLE concentrations

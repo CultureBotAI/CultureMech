@@ -318,6 +318,63 @@ def test_variant_proposals_exclude_existing_parent_child_links(tmp_path):
     assert groups == []
 
 
+def test_existing_links_fall_back_from_stale_paths_to_stable_ids(tmp_path):
+    parent_path = "data/normalized_yaml/bacterial/base.yaml"
+    child_path = "data/normalized_yaml/bacterial/current_child.yaml"
+    (tmp_path / "data/normalized_yaml/bacterial").mkdir(parents=True)
+    (tmp_path / parent_path).write_text(
+        yaml.safe_dump(
+            {
+                "id": "CultureMech:000001",
+                "variant_children": [
+                    {
+                        "id": "CultureMech:000002",
+                        "path": "data/normalized_yaml/bacterial/stale_child.yaml",
+                        "relationship": "SALINITY_VARIANT",
+                    }
+                ],
+            }
+        )
+    )
+    (tmp_path / child_path).write_text(
+        yaml.safe_dump(
+            {
+                "id": "CultureMech:000002",
+                "parent_media": {
+                    "id": "CultureMech:000001",
+                    "path": "data/normalized_yaml/bacterial/stale_base.yaml",
+                    "relationship": "SALINITY_VARIANT",
+                },
+            }
+        )
+    )
+    rows = [
+        {
+            "yaml_path": parent_path,
+            "record_kind": "MEDIA",
+            "ingredient_identity_signature": "same",
+            "ingredient_concentration_signature": "same",
+            "name": "base",
+            "total_component_count": "1",
+        },
+        {
+            "yaml_path": child_path,
+            "record_kind": "MEDIA",
+            "ingredient_identity_signature": "same",
+            "ingredient_concentration_signature": "same",
+            "name": "current_child",
+            "total_component_count": "1",
+        },
+    ]
+
+    existing_links = collect_existing_links(rows, repo_root=tmp_path)
+    proposals, groups = build_proposals(rows, existing_links=existing_links)
+
+    assert existing_links == {existing_link_key(parent_path, child_path)}
+    assert proposals == []
+    assert groups == []
+
+
 def test_variant_proposals_exclude_curated_false_positive_pairs():
     dsmz_605 = {
         "yaml_path": "data/normalized_yaml/bacterial/nutrient_agar_oxoid_cm3.yaml",

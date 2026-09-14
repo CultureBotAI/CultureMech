@@ -167,10 +167,36 @@ def _iter_recipe_ingredients(recipe: dict) -> Iterator[tuple[str, dict, str]]:
     for sol in (recipe.get("solutions") or []):
         if not isinstance(sol, dict):
             continue
+        yield from _iter_solution_ingredients(sol)
+
+
+def _iter_solution_ingredients(solution: dict) -> Iterator[tuple[str, dict, str]]:
+    sol_id = solution_display_id(solution)
+    nested = solution.get("composition") or solution.get("ingredients") or []
+    for ing in nested:
+        if isinstance(ing, dict):
+            yield f"solution:{sol_id}", ing, sol_id
+
+    for sol in (solution.get("solutions") or []):
+        if isinstance(sol, dict):
+            yield from _iter_solution_ingredients(sol)
+
+
+def _iter_recipe_solutions(recipe: dict) -> Iterator[tuple[str, str, dict]]:
+    yield from _iter_solution_nodes("MEDIUM", recipe.get("solutions"))
+
+
+def _iter_solution_nodes(parent_node: str, solutions: object) -> Iterator[tuple[str, str, dict]]:
+    if not isinstance(solutions, list):
+        return
+
+    for sol in solutions:
+        if not isinstance(sol, dict):
+            continue
         sol_id = solution_display_id(sol)
-        for ing in (sol.get("composition") or []):
-            if isinstance(ing, dict):
-                yield f"solution:{sol_id}", ing, sol_id
+        sol_node = _sanitize_id(sol_id)
+        yield parent_node, sol_node, sol
+        yield from _iter_solution_nodes(sol_node, sol.get("solutions"))
 
 
 def render_single_recipe(
@@ -200,16 +226,15 @@ def render_single_recipe(
     role_value_nodes: dict[tuple[str, str], str] = {}  # (facet, value) → node_id
     solution_nodes: set[str] = set()
 
-    for sol in (doc.get("solutions") or []):
-        if not isinstance(sol, dict):
-            continue
-        sol_id = solution_display_id(sol)
-        sol_node = _sanitize_id(sol_id)
-        if sol_node in solution_nodes:
-            continue
-        solution_nodes.add(sol_node)
-        lines.append(f'{sol_node}(["`{_label(solution_display_label(sol))}`"]):::solution')
-        lines.append(f"MEDIUM -.-> {sol_node}")
+    solution_edges: set[tuple[str, str]] = set()
+    for parent_node, sol_node, sol in _iter_recipe_solutions(doc):
+        if sol_node not in solution_nodes:
+            solution_nodes.add(sol_node)
+            lines.append(f'{sol_node}(["`{_label(solution_display_label(sol))}`"]):::solution')
+        edge = (parent_node, sol_node)
+        if edge not in solution_edges:
+            solution_edges.add(edge)
+            lines.append(f"{parent_node} -.-> {sol_node}")
 
     # --- ingredients (direct + solution.composition) ---
     for source, ing, _parent_id in _iter_recipe_ingredients(doc):
