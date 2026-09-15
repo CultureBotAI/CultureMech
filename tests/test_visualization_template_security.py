@@ -38,6 +38,12 @@ def test_ingredient_umap_serializes_hostile_values_safely() -> None:
         .get_template("ingredient_umap.html")
         .render(
             ingredient_data=[{"name": payload}],
+            projection={"label": "PaCMAP", "input_dimensions": 512},
+            graph_receipt={
+                "source": {"filename": payload},
+                "coverage": {"projected": 1, "eligible": 1, "unresolved_occurrences": 0},
+            },
+            receipt_filename="ingredient_umap.metadata.json",
             total_count=1,
             tier_counts={"top100": 0, "top500": 0, "other": 1},
         )

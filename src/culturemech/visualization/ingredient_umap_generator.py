@@ -125,11 +125,15 @@ class IngredientUMAPGenerator:
                 match_method = (
                     "unresolved"
                     if not chebi_id
-                    else "direct_term"
-                    if isinstance(direct_term, dict) and direct_term.get("id") == chebi_id
-                    else "chebi_term"
-                    if isinstance(chebi_term, dict) and chebi_term.get("id") == chebi_id
-                    else "name_mapping"
+                    else (
+                        "direct_term"
+                        if isinstance(direct_term, dict) and direct_term.get("id") == chebi_id
+                        else (
+                            "chebi_term"
+                            if isinstance(chebi_term, dict) and chebi_term.get("id") == chebi_id
+                            else "name_mapping"
+                        )
+                    )
                 )
                 self.occurrences.append(
                     {
@@ -327,6 +331,8 @@ class IngredientUMAPGenerator:
         ingredients: dict[str, IngredientInfo],
         output_path: Path,
         templates_dir: Path | None = None,
+        *,
+        graph_receipt: dict | None = None,
     ) -> None:
         """
         Render interactive ingredient UMAP as self-contained HTML.
@@ -378,7 +384,7 @@ class IngredientUMAPGenerator:
             projection=df.attrs.get(
                 "projection", {"label": "Unverified projection", "input_dimensions": "unknown"}
             ),
-            graph_receipt=df.attrs.get("graph_receipt"),
+            graph_receipt=graph_receipt,
             receipt_filename=output_path.with_suffix(".metadata.json").name,
             ingredient_data=points,
             total_count=len(points),
@@ -448,9 +454,7 @@ class IngredientUMAPGenerator:
             status = (
                 "projected"
                 if identifier in embedded
-                else "below_min_count"
-                if identifier not in ingredients
-                else "missing_vector"
+                else "below_min_count" if identifier not in ingredients else "missing_vector"
             )
             ledger.append(
                 {
@@ -483,13 +487,12 @@ class IngredientUMAPGenerator:
         receipt["unresolved_occurrences"] = [
             row for row in self.occurrences if row["chebi_id"] is None
         ]
-        df.attrs["graph_receipt"] = receipt
         output_html.parent.mkdir(parents=True, exist_ok=True)
         with tempfile.TemporaryDirectory(
             prefix=".ingredient-graph-", dir=output_html.parent
         ) as temporary:
             stage = Path(temporary)
-            self.render_html(df, ingredients, stage / output_html.name)
+            self.render_html(df, ingredients, stage / output_html.name, graph_receipt=receipt)
             points = stage / output_html.with_suffix(".points.json").name
             points.write_text(df.to_json(orient="records"))
             if corpus_receipt(sorted(media_dir.rglob("*.yaml")), media_dir) != self.corpus:

@@ -1,4 +1,5 @@
 """Ingredient map labels must describe the algorithm actually invoked."""
+
 import runpy
 import sys
 import types
@@ -27,18 +28,19 @@ def test_projection_dispatch_and_rendered_labels(tmp_path, monkeypatch, method, 
             def fit_transform(self, matrix, **kwargs):
                 calls.append((matrix.copy(), kwargs))
                 return np.arange(len(matrix) * 2).reshape(-1, 2)
+
         return Reducer
 
     monkeypatch.setitem(sys.modules, "pacmap", types.SimpleNamespace(PaCMAP=reducer_for("pacmap")))
     monkeypatch.setitem(sys.modules, "umap", types.SimpleNamespace(UMAP=reducer_for("umap")))
     generator = IngredientUMAPGenerator()
-    vectors = {f"CHEBI:{i}": np.array([i + 1., 2., 3., 4.]) for i in range(5)}
+    vectors = {f"CHEBI:{i}": np.array([i + 1.0, 2.0, 3.0, 4.0]) for i in range(5)}
     frame = generator.reduce(vectors, method=method)
     assert calls[0][0] == method
     assert frame.attrs["projection"]["input_dimensions"] == 4
     assert frame.attrs["projection"]["label"] == label
     if method == "pacmap":
-        np.testing.assert_allclose(np.linalg.norm(calls[1][0], axis=1), 1., atol=1e-6)
+        np.testing.assert_allclose(np.linalg.norm(calls[1][0], axis=1), 1.0, atol=1e-6)
         assert calls[1][1] == {"init": "pca"}
     else:
         assert calls[0][1]["n_neighbors"] == 4
@@ -75,3 +77,51 @@ def test_default_graph_release_is_v3(monkeypatch):
     monkeypatch.delenv("KG_MICROBE_EMBEDDINGS", raising=False)
     values = runpy.run_path(str(script))
     assert "512_v3_2026-06-26_12_55_27" in values["_EMBEDDINGS_FILENAME"]
+
+
+def test_full_generator_never_copies_the_occurrence_receipt_per_point(tmp_path, monkeypatch):
+    import gzip
+
+    import culturemech.visualization.ingredient_umap_generator as module
+    from culturemech.graph_embedding_receipts import load_receipt
+
+    class NoCopyReceipt(dict):
+        def __deepcopy__(self, memo):
+            raise AssertionError("the complete occurrence receipt must not be copied per row")
+
+    original = module.make_receipt
+    monkeypatch.setattr(module, "make_receipt", lambda **values: NoCopyReceipt(original(**values)))
+
+    class Reducer:
+        def __init__(self, **kwargs):
+            self.n_neighbors, self.n_MN, self.n_FP = 2, 1, 1
+
+        def fit_transform(self, matrix, **kwargs):
+            return np.arange(len(matrix) * 2).reshape(-1, 2)
+
+    monkeypatch.setitem(sys.modules, "pacmap", types.SimpleNamespace(PaCMAP=Reducer))
+    corpus = tmp_path / "corpus"
+    corpus.mkdir()
+    (corpus / "medium.yaml").write_text(
+        "name: Fixture medium\ningredients:\n"
+        + "".join(
+            f"  - preferred_term: Ingredient {index}\n    term:\n      id: CHEBI:{index}\n"
+            for index in range(3)
+        )
+    )
+    source = tmp_path / "source.tsv.gz"
+    source.write_bytes(
+        gzip.compress(
+            (
+                "node\td1\td2\td3\n"
+                + "".join(f"CHEBI:{index}\t{index + 1}\t2\t3\n" for index in range(3))
+            ).encode(),
+            mtime=0,
+        )
+    )
+    output = tmp_path / "map.html"
+    module.IngredientUMAPGenerator().generate(corpus, source, output)
+    receipt = load_receipt(output.with_suffix(".metadata.json"))
+    assert receipt["coverage"]["ingredient_occurrences"] == 3
+    assert sum(len(row["occurrences"]) for row in receipt["matching"]["rows"]) == 3
+    assert "Verified source: source.tsv.gz" in output.read_text()
