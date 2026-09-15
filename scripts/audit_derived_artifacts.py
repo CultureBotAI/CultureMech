@@ -111,7 +111,12 @@ CHECKABLE: dict[str, list[str]] = {
 # and source index sat at "no writer found" while recipe_index.json, named
 # literally, was CURRENT_VIEW. Declared by pattern, freshness guarded by
 # tests/test_recipe_indexes.py, which recomputes every entry with the generator.
+TEXT_MAP_WRITER = "scripts/embedding_pipeline.py"
+TEXT_MAP_GENERATION = re.compile(r"^data/text_map/[0-9a-f]{64}/(?:manifest|points)\.json$")
+
 PATTERN_WRITERS: list[tuple[re.Pattern[str], str]] = [
+    (re.compile(r"^data/text_map/current\.json$"), TEXT_MAP_WRITER),
+    (TEXT_MAP_GENERATION, TEXT_MAP_WRITER),
     (
         re.compile(
             r"^data/(?:normalized_yaml|merge_yaml/merged)/(?:[a-z]+|by_source_[a-z0-9-]+)_index\.json$"
@@ -176,6 +181,14 @@ def find_writers(artifact: str) -> list[str]:
 def classify(artifact: str, writer: str | None) -> tuple[str, str]:
     if artifact in AUTHORITATIVE_INPUTS:
         return "AUTHORITATIVE", AUTHORITATIVE_INPUTS[artifact]
+    if writer == TEXT_MAP_WRITER:
+        if artifact == "data/text_map/current.json":
+            return "CURRENT_VIEW", "embedding_pipeline.py (current bundle selection)"
+        if TEXT_MAP_GENERATION.fullmatch(artifact):
+            return (
+                "SNAPSHOT",
+                "immutable embedding generation; selected bundle checked at publication",
+            )
     if artifact.startswith("reports/archive/"):
         return "SNAPSHOT", "archived"
     if DATED.search(os.path.basename(artifact)):
@@ -216,14 +229,17 @@ def inventory() -> list[dict[str, str]]:
         # MINTS ids), refresh_id_registry (which rebuilds it) and id_utils. Taking
         # the alphabetically first made it UNKNOWN and lost a correct answer; the
         # refresher is the one that determines whether the file is current.
-        primary = next(
+        # An explicit path binding is stronger evidence than a generic basename
+        # match, which may name an unrelated manifest.json/points.json writer.
+        primary = declared_by_pattern or next(
             (w for w in writers if GENERATOR.match(os.path.basename(w))),
             writers[0] if writers else None,
         )
         kind, why = classify(art, primary)
         confirmed = [m for m in mentions if classify_file(REPO / m, base) == "yes"]
-        if declared_by_pattern and declared_by_pattern not in confirmed:
-            confirmed = [declared_by_pattern] + confirmed
+        if declared_by_pattern:
+            # Other scripts can write the same basename in unrelated directories.
+            confirmed = [declared_by_pattern]
         rows.append(
             {
                 "artifact": art,
