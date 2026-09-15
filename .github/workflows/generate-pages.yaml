@@ -12,6 +12,11 @@ on:
       - "src/culturemech/templates/**"
       - "src/culturemech/render_media_pages.py"
       - "src/culturemech/web_artifacts.py"
+      - "src/culturemech/text_map_*.py"
+      - "scripts/stage_text_map.py"
+      - "scripts/embedding_pipeline.py"
+      - "conf/text_map.yaml"
+      - "data/text_map/**"
       - "conf/qc_config.yaml"
       - "pyproject.toml"
       - "uv.lock"
@@ -59,6 +64,10 @@ jobs:
       - name: Install locked dependencies
         working-directory: CultureMech
         run: uv sync --frozen
+
+      - name: Stage validated common semantic text map
+        working-directory: CultureMech
+        run: uv run python scripts/stage_text_map.py
 
       - name: Build browser data and normalized pages
         env:

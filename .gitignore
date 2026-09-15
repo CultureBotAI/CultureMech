@@ -220,3 +220,6 @@ data/import_tracking/reports/cocktail_research_targets.json
 
 # Cocktail stock identification report: regenerable diagnostic (#150).
 data/import_tracking/reports/cocktail_stock_identification.tsv
+
+# Generated only after common-map validation during a site build.
+/app/text_map_status.json

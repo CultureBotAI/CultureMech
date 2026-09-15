@@ -17,3 +17,21 @@ The `page` field is relative to the directory containing the published map
 folder: from `text-map/index.html`, the shared renderer uses `../` plus `page`.
 This repository publishes the bundle at `pages/text-map/`, so record links omit
 the deployment wrapper `pages/` and resolve to its sibling record directories.
+
+## Verified site publication
+
+`conf/text_map.yaml` starts disabled. After reviewing a complete input-bound
+shared bundle, `just stage-text-map` validates fresh full normalized YAML inputs,
+the pinned BGE profile and 512-token window, actual PaCMAP and the exact preflight
+generation before staging `pages/text-map/`. Invalid enabled prerequisites fail
+before site writes; a pointer or manifest replacement is refused before promotion.
+`just gen-media-pages` runs this guard first, as does the Pages workflow before
+browser data and both normalized/merged page rendering.
+
+The map belongs directly under `pages/`, whose record links are
+`normalized/<CultureMech ID>.html`; it must not be placed under
+`pages/normalized/text-map/`. The static `app/index.html` card links to
+`../pages/text-map/` and stays hidden until successful staging writes the generated
+`app/text_map_status.json` status. Disabling the setting clears this status.
+Existing derived/direct graph PaCMAP and graph-layout views remain separate.
+No new map is claimed ready while configuration is disabled.
