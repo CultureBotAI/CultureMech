@@ -152,8 +152,10 @@ def test_all_candidate_writers_are_recorded_not_just_the_first(ada):
 
 def test_a_checkable_artifact_uses_its_declared_writer(ada):
     """Re-deriving by grep would be guessing at something already stated."""
+    # #479: one coherent snapshot serves every assertion; do not rescan per row.
+    rows = {row["artifact"]: row for row in ada.inventory()}
     for art, cmd in ada.CHECKABLE.items():
-        row = next(r for r in ada.inventory() if r["artifact"] == art)
+        row = rows[art]
         assert cmd[0] in row["writes"], f"{art}: declared writer {cmd[0]} not confirmed as a writer"
 
 
@@ -216,3 +218,56 @@ def test_indexes_named_by_fstring_are_attributed_to_the_generator(ada):
     # not everything under those directories is an index
     assert ada.pattern_writer("data/normalized_yaml/recipe_statistics.json") is None
     assert ada.pattern_writer("data/import_tracking/reports/foo_index.json") is None
+
+
+# --- #478: content-addressed text maps have exact, path-scoped writers -----
+
+TEXT_MAP_GENERATION = "a" * 64
+TEXT_MAP_ARTIFACTS = [
+    "data/text_map/current.json",
+    f"data/text_map/{TEXT_MAP_GENERATION}/manifest.json",
+    f"data/text_map/{TEXT_MAP_GENERATION}/points.json",
+]
+
+
+@pytest.mark.parametrize("artifact", TEXT_MAP_ARTIFACTS)
+def test_text_map_writer_binding_is_path_scoped(ada, artifact):
+    assert ada.pattern_writer(artifact) == "scripts/embedding_pipeline.py"
+    expected = "CURRENT_VIEW" if artifact.endswith("/current.json") else "SNAPSHOT"
+    assert ada.classify(artifact, ada.pattern_writer(artifact))[0] == expected
+    assert artifact not in ada.CHECKABLE  # auditing must never invoke model inference
+
+
+@pytest.mark.parametrize(
+    "artifact",
+    [
+        "reports/manifest.json",
+        "data/text_maps/current.json",
+        "data/text_map/not-a-generation/points.json",
+        f"data/text_map/{TEXT_MAP_GENERATION}/unrelated.json",
+    ],
+)
+def test_text_map_writer_binding_does_not_claim_unrelated_outputs(ada, artifact):
+    assert ada.pattern_writer(artifact) is None
+    assert ada.classify(artifact, "scripts/embedding_pipeline.py")[0] == "UNKNOWN"
+
+
+def test_text_map_scoped_writer_beats_competing_basename_mentions(ada, monkeypatch):
+    # A generator prefix used to win even after an exact writer was declared;
+    # generic AST basename matches also falsely populated the writes column.
+    monkeypatch.setattr(ada, "tracked_artifacts", lambda: TEXT_MAP_ARTIFACTS)
+    mentions = [
+        "scripts/generate_unrelated_manifest.py",
+        "scripts/embedding_pipeline.py",
+        "scripts/build_unrelated_manifest.py",
+    ]
+    monkeypatch.setattr(ada, "find_writers", lambda artifact: list(mentions))
+    monkeypatch.setattr(ada, "classify_file", lambda *args: "yes")
+    rows = ada.inventory()
+    assert len(rows) == 3
+    for row in rows:
+        assert row["writes"] == "scripts/embedding_pipeline.py"
+        assert row["mentioned_by"].split("; ") == mentions
+        expected = "CURRENT_VIEW" if row["artifact"].endswith("/current.json") else "SNAPSHOT"
+        assert row["kind"] == expected
+        assert row["freshness_checked"] == ""

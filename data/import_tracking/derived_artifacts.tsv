@@ -74,6 +74,9 @@ data/normalized_yaml/specialized_index.json	CURRENT_VIEW	generate_recipe_indexes
 data/raw/microbe-media-param/compound_mappings_strict_final.tsv	UNKNOWN	writer purity unestablished (chemical_mappings.py)		src/culturemech/import/chemical_mappings.py	
 data/raw/microbe-media-param/compound_mappings_strict_final_hydrate.tsv	UNKNOWN	writer purity unestablished (chemical_mappings.py)		src/culturemech/import/chemical_mappings.py	
 data/solution_to_chebi_mapping.json	UNKNOWN	writer purity unestablished (build_compound_to_chebi_mapping.py)		scripts/build_compound_to_chebi_mapping.py; scripts/build_enhanced_compound_mapping.py; scripts/build_fast_compound_mapping.py; src/culturemech/embedding/aggregator.py; src/culturemech/embedding/aggregator_yaml_source.py; src/culturemech/visualization/umap_generator.py	
+data/text_map/869b4223989b36cab7cf4e967a0274b317e51c285a19bbadbba981584f1e6b24/manifest.json	SNAPSHOT	immutable embedding generation; selected bundle checked at publication	scripts/embedding_pipeline.py	scripts/build_media_content_review_manifest.py; scripts/build_media_growth_review_manifest.py; scripts/embedding_pipeline.py	
+data/text_map/869b4223989b36cab7cf4e967a0274b317e51c285a19bbadbba981584f1e6b24/points.json	SNAPSHOT	immutable embedding generation; selected bundle checked at publication	scripts/embedding_pipeline.py	scripts/check_graph_receipts.py; scripts/embedding_pipeline.py; src/culturemech/visualization/ingredient_umap_generator.py	
+data/text_map/current.json	CURRENT_VIEW	embedding_pipeline.py (current bundle selection)	scripts/embedding_pipeline.py	scripts/embedding_pipeline.py; src/culturemech/text_map_site.py	
 reports/archive/mim_algae_enrichment.json	SNAPSHOT	archived			
 reports/archive/mim_archaea_enrichment.json	SNAPSHOT	archived			
 reports/archive/mim_bacterial_dryrun.json	SNAPSHOT	archived			

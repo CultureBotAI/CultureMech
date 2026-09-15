@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CultureMech Ingredient PaCMAP</title>
+    <title>CultureMech Ingredient {{ projection.label }}</title>
     <script src="d3.v7.min.js"></script>
     <style>
         * {
@@ -337,7 +337,7 @@
 </head>
 <body>
     <header>
-        <h1>CultureMech Ingredient PaCMAP</h1>
+        <h1>CultureMech Ingredient {{ projection.label }}</h1>
         <p>
             {{ total_count }} CHEBI ingredients &mdash;
             top100: {{ tier_counts.top100 }} &nbsp;|&nbsp;
@@ -352,10 +352,19 @@
         <div class="plot-panel">
             <h2>Ingredient Embedding Space</h2>
             <p class="subtitle">
-                Each point = one CHEBI ingredient in KG-Microbe (512-dim DeepWalk, PaCMAP 2D).
+                Each point = one CHEBI ingredient in KG-Microbe ({{ projection.input_dimensions }}-dim DeepWalk, {{ projection.label }} 2D).
                 Size = occurrence frequency (log scale). Color = occurrence tier.
                 Scroll to zoom &bull; Drag to pan &bull; Hover for details.
             </p>
+
+{% if graph_receipt %}
+            <p class="subtitle">Verified source: {{ graph_receipt.source.filename }}.
+                {{ graph_receipt.coverage.projected }} of {{ graph_receipt.coverage.eligible }} graph ingredients projected;
+                {{ graph_receipt.coverage.unresolved_occurrences }} ingredient occurrences lack a CHEBI mapping.
+                <a href="{{ receipt_filename }}">Source, matching, coverage and projection receipt</a>.</p>
+{% else %}
+            <p class="subtitle">Source lineage is unverified for these coordinates.</p>
+{% endif %}
 
             <div class="stats-bar">
                 <div class="stat-item">Total: <strong id="total-count">{{ total_count }}</strong></div>

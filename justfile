@@ -47,8 +47,8 @@ vs file:
 # legacy `gen-pages` recipe in project.justfile, which renders from a
 # different YAML source via culturemech.render). See
 # ../culturebotai-claw/docs/proposals/phase2_culturemech_html_pages_and_qc_dashboard.md
-gen-media-pages *args:
-    uv run python src/culturemech/render_media_pages.py {{args}}
+gen-media-pages *args: stage-text-map
+    uv run python src/culturemech/render_media_pages.py "$@"
 
 # Generate the QC dashboard (slot coverage + matplotlib chart) into
 # dashboard/. Driven by conf/qc_config.yaml.
@@ -192,3 +192,15 @@ validate-history target="history":
       uv run linkml-validate \
         --schema src/culturemech/schema/history.yaml --target-class HistoryRecord "$target"
     fi
+
+# Full canonical semantic text by default; --record/--limit are explicit canaries.
+text-map-inputs *args:
+    uv run python scripts/text_map_inputs.py "$@"
+
+# Validate full normalized inputs and stage into the merged pages/ content root.
+stage-text-map *args:
+    uv run python scripts/stage_text_map.py "$@"
+
+# Preview routes by default; publish with --apply after fresh browser/page generation.
+repair-historical-map-links *args:
+    uv run python scripts/repair_historical_map_links.py "$@"

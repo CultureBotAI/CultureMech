@@ -110,11 +110,16 @@
     <div class="stats">
       <div class="stat"><b>10,657</b><span>recipes</span></div>
       <div class="stat"><b>5</b><span>categories</span></div>
-      <div class="stat"><b>512-D</b><span>v3 embeddings</span></div>
+      <div class="stat"><b>512-D</b><span>graph embeddings</span></div>
     </div>
   </header>
   <main class="wrap">
     <div class="cards">
+      <div class="card" data-text-map-link hidden>
+        <div class="actions"><a class="btn" href="../pages/text-map/">Semantic text map &rarr;</a></div>
+        <h2>Semantic text map</h2>
+        <p>Explore recipe descriptions, ingredients and growth conditions with shared BGE text embeddings and PaCMAP.</p>
+      </div>
       <div class="card">
         <div class="actions"><a class="btn" href="browser.html">Browse records &rarr;</a></div>
         <h2>Record browser</h2>
@@ -122,7 +127,7 @@
       </div>
       <div class="card">
         <div class="actions"><a class="btn" href="umap.html#umap-derived">Derived &rarr;</a><a class="btn" href="umap.html#umap-direct">Direct &rarr;</a><a class="btn" href="umap_graph.html">Graph layout &rarr;</a></div>
-        <h2>Embedding browser</h2>
+        <h2>Graph embedding browser</h2>
         <p>Interactive PaCMAP of media similarity from KG-Microbe deepwalk embeddings — derived (aggregated from ingredient embeddings) and direct (the medium's own graph-node embedding).</p>
       </div>
       <div class="card">
@@ -140,6 +145,7 @@
       <a href="https://github.com/Knowledge-Graph-Hub/kg-microbe">kg-microbe</a>&middot;<a href="https://bioportal.bioontology.org/ontologies/METPO">METPO</a>
     </div>
   </footer>
+  <script src="text-map-nav.js"></script>
   <script src="theme-toggle.js"></script>
 </body>
 </html>
