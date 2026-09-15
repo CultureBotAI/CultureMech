@@ -357,6 +357,15 @@
                 Scroll to zoom &bull; Drag to pan &bull; Hover for details.
             </p>
 
+            {% if graph_receipt %}
+            <p class="subtitle">Verified source: {{ graph_receipt.source.filename }}.
+                {{ graph_receipt.coverage.projected }} of {{ graph_receipt.coverage.eligible }} graph ingredients projected;
+                {{ graph_receipt.coverage.unresolved_occurrences }} ingredient occurrences lack a CHEBI mapping.
+                <a href="{{ receipt_filename }}">Source, matching, coverage and projection receipt</a>.</p>
+            {% else %}
+            <p class="subtitle">Source lineage is unverified for these coordinates.</p>
+            {% endif %}
+
             <div class="stats-bar">
                 <div class="stat-item">Total: <strong id="total-count">{{ total_count }}</strong></div>
                 <div class="stat-item">Visible: <strong id="visible-count">{{ total_count }}</strong></div>

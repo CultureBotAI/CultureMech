@@ -21,6 +21,8 @@ def test_projection_dispatch_and_rendered_labels(tmp_path, monkeypatch, method, 
         class Reducer:
             def __init__(self, **kwargs):
                 calls.append((name, kwargs))
+                self.n_neighbors, self.n_MN, self.n_FP = 2, 1, 1
+                self._n_neighbors = kwargs.get("n_neighbors", 2)
 
             def fit_transform(self, matrix, **kwargs):
                 calls.append((matrix.copy(), kwargs))
