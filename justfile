@@ -48,7 +48,7 @@ vs file:
 # different YAML source via culturemech.render). See
 # ../culturebotai-claw/docs/proposals/phase2_culturemech_html_pages_and_qc_dashboard.md
 gen-media-pages *args: stage-text-map
-    uv run python src/culturemech/render_media_pages.py {{args}}
+    uv run python src/culturemech/render_media_pages.py "$@"
 
 # Generate the QC dashboard (slot coverage + matplotlib chart) into
 # dashboard/. Driven by conf/qc_config.yaml.
