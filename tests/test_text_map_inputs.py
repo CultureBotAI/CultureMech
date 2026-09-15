@@ -1,4 +1,5 @@
 """Semantic adapter behavior, corpus boundaries, identity and atomic refusal."""
+
 import copy
 import hashlib
 import json
@@ -9,10 +10,18 @@ import yaml
 
 from culturemech import text_map_inputs as adapter
 
-SOURCE = 'data/normalized_yaml/bacterial/example.yaml'
-RECORD = {'id': 'CultureMech:000001', 'name': 'Example medium', 'category': 'bacterial', 'description': 'Grows anaerobic bacteria', 'ingredients': [{'preferred_term': 'Glucose', 'concentration': {'value': '5', 'unit': 'G_PER_L'}}]}
-LABEL_FIELD = 'name'
-PAGE = 'normalized/000001.html'
+SOURCE = "data/normalized_yaml/bacterial/example.yaml"
+RECORD = {
+    "id": "CultureMech:000001",
+    "name": "Example medium",
+    "category": "bacterial",
+    "description": "Grows anaerobic bacteria",
+    "ingredients": [
+        {"preferred_term": "Glucose", "concentration": {"value": "5", "unit": "G_PER_L"}}
+    ],
+}
+LABEL_FIELD = "name"
+PAGE = "normalized/000001.html"
 
 
 def fixture_tree(root):
@@ -23,23 +32,44 @@ def fixture_tree(root):
     path.write_text(yaml.safe_dump(RECORD))
     if adapter.ADAPTER_VERSION.startswith("traitmech-"):
         parent = path.with_name("parent.yaml")
-        parent.write_text(yaml.safe_dump({"identifier": "METPO:parent", "label": "Resolved parent", "trait_category": "ECOLOGY"}))
+        parent.write_text(
+            yaml.safe_dump(
+                {
+                    "identifier": "METPO:parent",
+                    "label": "Resolved parent",
+                    "trait_category": "ECOLOGY",
+                }
+            )
+        )
     return path
 
 
 def test_exact_contract_and_semantic_digest_ignores_provenance(tmp_path):
     path = fixture_tree(tmp_path)
     row = next(adapter.iter_inputs(tmp_path, records=[SOURCE]))
-    assert set(row) == {"identifier", "label", "category", "page", "source_path", "text", "text_sha256", "adapter_version"}
+    assert set(row) == {
+        "identifier",
+        "label",
+        "category",
+        "page",
+        "source_path",
+        "text",
+        "text_sha256",
+        "adapter_version",
+    }
     assert row["page"] == PAGE
     assert row["source_path"] == SOURCE
     assert row["text_sha256"] == hashlib.sha256(row["text"].encode("utf-8")).hexdigest()
     assert "REJECTED_SENTINEL" not in row["text"]
     record = copy.deepcopy(RECORD)
-    record.update({"curation_history": [{"notes": "PRIVATE_PROVENANCE_SENTINEL"}],
-                   "references": [{"reference": "PMID:999999"}],
-                   "evidence": [{"snippet": "PRIVATE_PROVENANCE_SENTINEL"}],
-                   "notes": "PRIVATE_PROVENANCE_SENTINEL"})
+    record.update(
+        {
+            "curation_history": [{"notes": "PRIVATE_PROVENANCE_SENTINEL"}],
+            "references": [{"reference": "PMID:999999"}],
+            "evidence": [{"snippet": "PRIVATE_PROVENANCE_SENTINEL"}],
+            "notes": "PRIVATE_PROVENANCE_SENTINEL",
+        }
+    )
     path.write_text(yaml.safe_dump(record))
     unchanged = next(adapter.iter_inputs(tmp_path, records=[SOURCE]))
     assert unchanged["text_sha256"] == row["text_sha256"]
@@ -93,7 +123,6 @@ def test_symlinked_yaml_is_refused(tmp_path):
         list(adapter.iter_inputs(tmp_path))
 
 
-
 def test_export_round_trip_and_map_sibling_route(tmp_path):
     from urllib.parse import urljoin
 
@@ -103,16 +132,23 @@ def test_export_round_trip_and_map_sibling_route(tmp_path):
     row = json.loads(output.read_text())
     assert receipt["jsonl_sha256"] == hashlib.sha256(output.read_bytes()).hexdigest()
     assert Path(row["source_path"]).suffix == ".yaml"
-    assert urljoin("https://example.test/deployment/text-map/index.html", "../" + row["page"]) == "https://example.test/deployment/" + PAGE
-
+    assert (
+        urljoin("https://example.test/deployment/text-map/index.html", "../" + row["page"])
+        == "https://example.test/deployment/" + PAGE
+    )
 
 
 def test_solution_components_and_scoped_targets_exclude_range_provenance():
     record = {
-        "id": "CultureMech:123", "media_term": {"preferred_term": "Vitamin solution"},
-        "composition": [{"preferred_term": "Biotin", "concentration": {"value": 1, "unit": "MG_PER_L"}}],
+        "id": "CultureMech:123",
+        "media_term": {"preferred_term": "Vitamin solution"},
+        "composition": [
+            {"preferred_term": "Biotin", "concentration": {"value": 1, "unit": "MG_PER_L"}}
+        ],
         "ph_range": {"min": 6, "max": 7, "notes": "PROVENANCE_SENTINEL", "evidence": ["PMID:1"]},
-        "target_organisms": [{"preferred_term": "Example organism", "scoped_to_variant": "low salt"}],
+        "target_organisms": [
+            {"preferred_term": "Example organism", "scoped_to_variant": "low salt"}
+        ],
     }
     text = adapter.semantic_text(record)
     assert "name: Vitamin solution" in text

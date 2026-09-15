@@ -119,8 +119,12 @@ def main():
         action="store_true",
         help="Collect and count ingredients but skip embedding/UMAP/render",
     )
-    parser.add_argument("--method", choices=["pacmap", "umap"], default="pacmap",
-                        help="Projection algorithm (default: pacmap)")
+    parser.add_argument(
+        "--method",
+        choices=["pacmap", "umap"],
+        default="pacmap",
+        help="Projection algorithm (default: pacmap)",
+    )
     args = parser.parse_args()
     if not args.dry_run and not args.embeddings_path.is_file():
         parser.error(f"Embedding source does not exist: {args.embeddings_path}")
