@@ -1,8 +1,8 @@
 """
-Ingredient-level UMAP visualization generator.
+Ingredient-level graph embedding visualization generator.
 
 Each point in the plot is a unique CHEBI ingredient observed across CultureMech media,
-positioned by its 512-dim KG-Microbe DeepWalk embedding reduced to 2D via UMAP.
+positioned by its KG-Microbe DeepWalk embedding reduced to 2D via PaCMAP by default.
 
 Point size encodes occurrence frequency; color encodes occurrence tier.
 """
@@ -17,7 +17,6 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-import umap
 import yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from tqdm import tqdm
@@ -208,24 +207,37 @@ class IngredientUMAPGenerator:
         n_neighbors: int = 15,
         min_dist: float = 0.1,
         random_state: int = 42,
+        method: str = "pacmap",
     ) -> pd.DataFrame:
-        """Apply UMAP to reduce 512D ingredient embeddings to 2D."""
+        """Project graph vectors with an explicit, accurately reported reducer."""
+        if method not in {"pacmap", "umap"}:
+            raise ValueError(f"Unknown projection method: {method}")
         if not embedded:
-            return pd.DataFrame(columns=["chebi_id", "umap_x", "umap_y"])
-
-        chebi_ids = list(embedded.keys())
+            raise ValueError("No ingredient vectors to project")
+        chebi_ids = sorted(embedded)
         matrix = np.array([embedded[c] for c in chebi_ids], dtype=np.float32)
-        print(f"  Reducing {len(chebi_ids)} ingredients from {matrix.shape[1]}D → 2D...")
+        if len(matrix) < 3 or matrix.shape[1] < 2:
+            raise ValueError("Projection requires at least three vectors and two dimensions")
+        if not np.isfinite(matrix).all():
+            raise ValueError("Ingredient vectors must be finite")
+        if method == "pacmap":
+            import pacmap
+            from sklearn.preprocessing import normalize
 
-        reducer = umap.UMAP(
-            n_neighbors=n_neighbors,
-            min_dist=min_dist,
-            n_components=2,
-            metric="cosine",
-            random_state=random_state,
-            verbose=False,
-        )
-        coords = reducer.fit_transform(matrix)
+            parameters = {"n_components": 2, "random_state": random_state}
+            coords = pacmap.PaCMAP(**parameters).fit_transform(normalize(matrix), init="pca")
+            projection = {"method": method, "label": "PaCMAP", "parameters": parameters,
+                          "initialization": "pca", "normalization": "l2"}
+        else:
+            import umap
+
+            parameters = {"n_neighbors": min(n_neighbors, len(matrix) - 1),
+                          "min_dist": min_dist, "n_components": 2,
+                          "metric": "cosine", "random_state": random_state, "verbose": False}
+            coords = umap.UMAP(**parameters).fit_transform(matrix)
+            projection = {"method": method, "label": "UMAP", "parameters": parameters,
+                          "normalization": "none"}
+        projection["input_dimensions"] = matrix.shape[1]
 
         df = pd.DataFrame(
             {
@@ -234,7 +246,8 @@ class IngredientUMAPGenerator:
                 "umap_y": coords[:, 1],
             }
         )
-        print("  UMAP reduction complete")
+        df.attrs["projection"] = projection
+        print(f"  {projection['label']} reduction complete")
         return df
 
     # ------------------------------------------------------------------
@@ -295,6 +308,7 @@ class IngredientUMAPGenerator:
         template = env.get_template("ingredient_umap.html")
 
         html = template.render(
+            projection=df.attrs.get("projection", {"label": "Unverified projection", "input_dimensions": "unknown"}),
             ingredient_data=points,
             total_count=len(points),
             tier_counts=tier_counts,
@@ -319,6 +333,7 @@ class IngredientUMAPGenerator:
         min_dist: float = 0.1,
         min_count: int = 1,
         dry_run: bool = False,
+        method: str = "pacmap",
     ) -> None:
         """Run the full ingredient UMAP pipeline."""
         print("\n" + "=" * 60)
@@ -343,13 +358,12 @@ class IngredientUMAPGenerator:
         embedded = self.embed(ingredients, embeddings_path, cache_dir, force_reload)
 
         if not embedded:
-            print("ERROR: No embeddings found. Check embeddings file path.")
-            return
+            raise ValueError("No embeddings found. Check embeddings file path.")
 
         print("\n" + "=" * 60)
-        print("STEP 3: UMAP reduction")
+        print(f"STEP 3: {method.upper()} reduction")
         print("=" * 60)
-        df = self.reduce(embedded, n_neighbors=n_neighbors, min_dist=min_dist)
+        df = self.reduce(embedded, n_neighbors=n_neighbors, min_dist=min_dist, method=method)
 
         print("\n" + "=" * 60)
         print("STEP 4: Rendering HTML")

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Generate ingredient-level UMAP visualization for CultureMech.
+Generate ingredient-level PaCMAP visualization for CultureMech.
 
 Each point = one unique CHEBI ingredient observed across CultureMech media,
-positioned by its 512-dim KG-Microbe DeepWalk embedding reduced to 2D via UMAP.
+positioned by its 512-dim KG-Microbe DeepWalk embedding reduced to 2D via PaCMAP.
 
 Usage:
     python scripts/generate_ingredient_umap.py [options]
@@ -29,7 +29,7 @@ from culturemech.visualization.ingredient_umap_generator import IngredientUMAPGe
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 
 _EMBEDDINGS_FILENAME = (
-    "DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_v2_2026-05-26_00_56_15.tsv.gz"
+    "DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_v3_2026-06-26_12_55_27.tsv.gz"
 )
 # Prefer local data/embeddings/; fall back to the CommunityMech checkout,
 # COMMUNITYMECH_ROOT or the sibling directory (CultureMech#430)
@@ -40,7 +40,7 @@ _COMMUNITYMECH_ROOT = Path(
     os.environ.get("COMMUNITYMECH_ROOT") or _REPO_ROOT.parent / "CommunityMech"
 )
 _COMMUNITYMECH_EMBEDDINGS = str(_COMMUNITYMECH_ROOT / "data" / "embeddings" / _EMBEDDINGS_FILENAME)
-KG_MICROBE_EMBEDDINGS = (
+KG_MICROBE_EMBEDDINGS = os.environ.get("KG_MICROBE_EMBEDDINGS") or (
     str(_LOCAL_EMBEDDINGS) if _LOCAL_EMBEDDINGS.exists() else _COMMUNITYMECH_EMBEDDINGS
 )
 
@@ -53,7 +53,7 @@ UNIFIED_MAPPING_PATH = (
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Generate ingredient-level UMAP visualization for CultureMech"
+        description="Generate ingredient-level PaCMAP visualization for CultureMech"
     )
     parser.add_argument(
         "--media-dir",
@@ -119,7 +119,11 @@ def main():
         action="store_true",
         help="Collect and count ingredients but skip embedding/UMAP/render",
     )
+    parser.add_argument("--method", choices=["pacmap", "umap"], default="pacmap",
+                        help="Projection algorithm (default: pacmap)")
     args = parser.parse_args()
+    if not args.dry_run and not args.embeddings_path.is_file():
+        parser.error(f"Embedding source does not exist: {args.embeddings_path}")
 
     # Resolve optional support files
     name_to_chebi = args.name_to_chebi if args.name_to_chebi.exists() else None
@@ -152,6 +156,7 @@ def main():
         min_dist=args.min_dist,
         min_count=args.min_count,
         dry_run=args.dry_run,
+        method=args.method,
     )
 
 
