@@ -20,8 +20,9 @@ the deployment wrapper `pages/` and resolve to its sibling record directories.
 
 ## Verified site publication
 
-`conf/text_map.yaml` starts disabled. After reviewing a complete input-bound
-shared bundle, `just stage-text-map` validates fresh full normalized YAML inputs,
+`conf/text_map.yaml` enables the verified complete input-bound common bundle
+selected by `data/text_map/current.json`. `just stage-text-map` validates fresh
+full normalized YAML inputs,
 the pinned BGE profile and 512-token window, actual PaCMAP and the exact preflight
 generation before staging `pages/text-map/`. Invalid enabled prerequisites fail
 before site writes; a pointer or manifest replacement is refused before promotion.
@@ -34,4 +35,14 @@ The map belongs directly under `pages/`, whose record links are
 `../pages/text-map/` and stays hidden until successful staging writes the generated
 `app/text_map_status.json` status. Disabling the setting clears this status.
 Existing derived/direct graph PaCMAP and graph-layout views remain separate.
-No new map is claimed ready while configuration is disabled.
+The shared semantic text map is the primary text view; the retained specialty
+graph views keep their own source and projection provenance.
+
+The [locked runtime guide](../conf/embedding-runtime/README.md) documents the
+installed Python 3.13 environment and the explicit export, inspect, embed,
+project and check commands. Semantic curation requires a matching local
+cache-backed map refresh before enabled site checks can pass: export the full
+current corpus, update its verified vector cache, rebuild the bundle and run
+its freshness check before rendering. Unchanged records reuse matching cache
+entries. Model inference is not run automatically in CI, and historical caches
+without matching provenance are not silently reused.
