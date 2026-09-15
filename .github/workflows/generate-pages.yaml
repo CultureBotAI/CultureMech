@@ -12,9 +12,13 @@ on:
       - "src/culturemech/templates/**"
       - "src/culturemech/render_media_pages.py"
       - "src/culturemech/web_artifacts.py"
+      - "src/culturemech/historical_map_links.py"
+      - "scripts/repair_historical_map_links.py"
       - "src/culturemech/text_map_*.py"
       - "scripts/stage_text_map.py"
       - "scripts/embedding_pipeline.py"
+      - "scripts/check_graph_receipts.py"
+      - "src/culturemech/graph_embedding_receipts.py"
       - "conf/text_map.yaml"
       - "data/text_map/**"
       - "conf/qc_config.yaml"
@@ -92,6 +96,10 @@ jobs:
             --out-dir pages/media \
             --index-dir pages
 
+      - name: Repair retained historical map links
+        working-directory: CultureMech
+        run: uv run python scripts/repair_historical_map_links.py --apply
+
       - name: Report degraded composition rendering
         if: steps.checkout-claw.outcome != 'success'
         run: |
@@ -116,6 +124,10 @@ jobs:
           uv run python -m kg_microbe_qc \
             --config conf/qc_config.yaml \
             --output dashboard
+
+      - name: Verify specialty graph receipts
+        working-directory: CultureMech
+        run: python scripts/check_graph_receipts.py
 
       - name: Stage site
         run: |

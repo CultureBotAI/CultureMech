@@ -14,7 +14,14 @@ REPO = Path(__file__).resolve().parents[1]
 
 
 @pytest.mark.skipif(shutil.which("just") is None, reason="the just developer tool is required")
-def test_recipe_preserves_quoted_path_arguments(tmp_path):
+@pytest.mark.parametrize(
+    "recipe,script",
+    [
+        ("text-map-inputs", "text_map_inputs.py"),
+        ("repair-historical-map-links", "repair_historical_map_links.py"),
+    ],
+)
+def test_recipe_preserves_quoted_path_arguments(tmp_path, recipe, script):
     tools = tmp_path / "tools"
     tools.mkdir()
     receipt = tmp_path / "argv.json"
@@ -40,14 +47,14 @@ def test_recipe_preserves_quoted_path_arguments(tmp_path):
         TEXT_MAP_ARGV_RECEIPT=str(receipt),
     )
     subprocess.run(
-        ["just", "text-map-inputs", *args],
+        ["just", recipe, *args],
         cwd=REPO,
         env=env,
         check=True,
         capture_output=True,
         text=True,
     )
-    assert json.loads(receipt.read_text()) == ["run", "python", "scripts/text_map_inputs.py", *args]
+    assert json.loads(receipt.read_text()) == ["run", "python", "scripts/" + script, *args]
 
 
 @pytest.mark.skipif(shutil.which("just") is None, reason="the just developer tool is required")

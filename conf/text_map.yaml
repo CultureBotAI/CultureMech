@@ -1,2 +1,2 @@
-# Enable only after a full-input-validated pinned BGE/PaCMAP bundle exists.
-enabled: false
+# Full current normalized inputs and pinned BGE/PaCMAP bundle validated before each site build.
+enabled: true

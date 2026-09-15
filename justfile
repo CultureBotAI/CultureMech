@@ -200,3 +200,7 @@ text-map-inputs *args:
 # Validate full normalized inputs and stage into the merged pages/ content root.
 stage-text-map *args:
     uv run python scripts/stage_text_map.py "$@"
+
+# Preview routes by default; publish with --apply after fresh browser/page generation.
+repair-historical-map-links *args:
+    uv run python scripts/repair_historical_map_links.py "$@"
