@@ -379,6 +379,10 @@ def atomic_json(path: Path, value: dict) -> None:
         temporary.unlink(missing_ok=True)
 
 
+def manifest_identity(manifest: dict) -> str:
+    return hashlib.sha256(canonical(manifest)).hexdigest()
+
+
 def build_map(
     input_path: Path,
     cache_path: Path,
@@ -505,7 +509,7 @@ def build_map(
         }
         (stage / "manifest.json").write_bytes(canonical(manifest) + b"\n")
         validate_bundle(stage, input_path=input_path)
-        bundle = hashlib.sha256(canonical(manifest)).hexdigest()
+        bundle = manifest_identity(manifest)
         destination = output / bundle
         os.rename(stage, destination)
         atomic_json(
@@ -653,12 +657,21 @@ def validate_bundle(
 
 
 def current_bundle(output: Path) -> Path:
-    pointer = json.loads((output / "current.json").read_text())
+    pointer_path = output / "current.json"
+    if pointer_path.is_symlink():
+        raise ContractError("active map pointer must not be a symbolic link")
+    pointer = json.loads(pointer_path.read_text())
     if not re.fullmatch(r"[0-9a-f]{64}", str(pointer.get("bundle", ""))):
         raise ContractError("invalid current bundle identifier")
     bundle = output / pointer["bundle"]
-    if bundle.is_symlink() or digest_file(bundle / "manifest.json") != pointer["manifest_sha256"]:
+    manifest_path = bundle / "manifest.json"
+    if bundle.is_symlink() or manifest_path.is_symlink():
+        raise ContractError("bundle and manifest must not be symbolic links")
+    if digest_file(manifest_path) != pointer["manifest_sha256"]:
         raise ContractError("active manifest checksum mismatch")
+    manifest = json.loads(manifest_path.read_text())
+    if manifest_identity(manifest) != bundle.name:
+        raise ContractError("active manifest checksum does not match its immutable generation")
     return bundle
 
 
@@ -677,7 +690,7 @@ def stage_map(
     if expected_bundle is not None and source.name != expected_bundle:
         raise ContractError("map generation changed after site preflight")
     manifest = validate_bundle(source, input_path=input_path)
-    if hashlib.sha256(canonical(manifest)).hexdigest() != source.name:
+    if manifest_identity(manifest) != source.name:
         raise ContractError("map manifest differs from its immutable generation identity")
     if manifest["projection"]["implementation"] != "pacmap.PaCMAP":
         raise ContractError("site publication requires the actual PaCMAP implementation")
