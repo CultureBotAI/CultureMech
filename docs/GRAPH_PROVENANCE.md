@@ -20,3 +20,7 @@ receipt = load_receipt(Path("path/to/projection.metadata.json"))
 ```
 
 This verifies all sibling artifacts declared by the receipt. It is not a tool for attaching newly guessed provenance to legacy arrays. Full published artifacts must be regenerated from reviewed current inputs before the graph correction is considered complete.
+
+## Deployment gate
+
+`python scripts/check_graph_receipts.py` verifies the complete intended HTML/points/receipt sets against the current corpus before Pages publication. It rejects missing or altered artifacts, wrong output membership or reducer, invalid point identities/coordinates, and changed source YAML. This check uses only the Python standard library and reads no source graph vectors or model. The retained historical media views, where present, do not borrow these verified graph receipts.
