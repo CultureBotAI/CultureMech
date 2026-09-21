@@ -431,7 +431,7 @@ def _plausibility_verdict(
                     f"label states {label_w} water(s) of hydration that "
                     f"'{canonical or formula}' (anhydrous) lacks — ground to a "
                     "hydrate-specific term, or mint cas:<hydrate CAS> with a "
-                    "narrowMatch to this parent (MAPPING_SEMANTICS.md Section 3)")
+                    "broadMatch to this parent (MAPPING_SEMANTICS.md Section 3)")
             if label_w == 0:
                 return "ANHYDROUS_ON_HYDRATE_TERM", (
                     f"term carries {term_w} water(s) of hydration the anhydrous "
