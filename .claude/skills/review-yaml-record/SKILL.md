@@ -126,12 +126,14 @@ search, call the miss provisional.
 ## Output
 
 <!-- canonical:begin output -->
-Write exactly one timestamped Markdown report before the final response:
+After resolving exactly one target and completing a review, write exactly one
+timestamped Markdown report before the final response:
 
 - Name it `reports/yaml_record_review/<YYYYMMDDTHHMMSSZ>-<record-stem>.md`.
   Use `date -u +%Y%m%dT%H%M%SZ` for the UTC timestamp. Preserve the target
   file stem when it is already filename-safe; otherwise slugify the stem to
   lower-case ASCII words joined with `-`.
+- Create `reports/yaml_record_review/` if it does not exist.
 - Do not overwrite or append to a prior review. If a filename already exists,
   regenerate the timestamp.
 - Keep this section order so review reports are easy to diff across the fleet:
@@ -184,6 +186,8 @@ check cannot run; do not delete required headings.
 
 Do not append a curation event, promote a review status, or write a history
 entry from this read-only review. Those belong to a later curation change.
+If the request needs disambiguation before one target is resolved, ask for it
+without creating a report.
 
 In the final response, link the report path and summarize only the verdict,
 finding counts by severity, and any skipped validators or unresolved blockers.
