@@ -172,6 +172,7 @@ reports/label_drift.tsv
 
 # Timestamped YAML record review reports emitted by the local Claude skill.
 reports/yaml_record_review/
+reports/yaml_category_review/
 
 # Regenerable content-review outputs with no reader; only the .tsv is consumed (#168).
 # Regenerate with `just review-media-content`.
