@@ -170,6 +170,9 @@ reports/chebi_consistency.tsv
 # artifact and never commits it (#419).
 reports/label_drift.tsv
 
+# Timestamped YAML record review reports emitted by the local Claude skill.
+reports/yaml_record_review/
+
 # Regenerable content-review outputs with no reader; only the .tsv is consumed (#168).
 # Regenerate with `just review-media-content`.
 reports/media_content_review_manifest.json

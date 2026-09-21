@@ -1,7 +1,7 @@
 ---
 name: review-yaml-record
 description: "Review one CultureMech YAML record without editing it: verify identity, source support, evidence placement, completeness, and the exact changes a curator would need. Use when asked to audit, inspect, spot-check, or review a named record. Not for bulk sampling, curation edits, paid research, or GitHub mutation."
-allowed-tools: Bash, Read, Grep, Glob, WebSearch, WebFetch
+allowed-tools: Bash, Read, Grep, Glob, WebSearch, WebFetch, Write
 metadata:
   category: review
   requires_database: false
@@ -23,10 +23,10 @@ or internally inconsistent, what is materially incomplete, and what bounded
 checks would resolve the remaining uncertainty.
 
 Reviewing is not curation. A review request authorizes reads, validation
-commands, and a written report in the session; it does not authorize editing a
-record, regenerating products, spending provider credits, contacting anyone, or
-creating or mutating GitHub issues, pull requests, comments, labels, or
-settings.
+commands, one new Markdown report under the review-report path named below, and
+a concise final summary; it does not authorize editing a record, regenerating
+products, spending provider credits, contacting anyone, or creating or mutating
+GitHub issues, pull requests, comments, labels, or settings.
 
 Resolve exactly one target before judging anything. If a label, slug, or
 identifier matches several records, stop and disambiguate; a thorough review of
@@ -44,7 +44,8 @@ Review only YAML records from this repository's curated record corpus. If a
 record is generated from a maintained table, overlay, or source transform,
 report the maintained upstream input that owns any future fix. Do not patch
 generated artifacts, generated pages, cache files, reports, or cross-repository
-outputs to make a reviewed record look correct.
+outputs to make a reviewed record look correct, except for the new review
+report this skill writes.
 
 Use the write boundaries, generated-output warnings, and curation ownership
 rules from `.claude/skills/curate-yaml-record/SKILL.md` to decide where a future
@@ -125,19 +126,69 @@ search, call the miss provisional.
 ## Output
 
 <!-- canonical:begin output -->
-Return a concise markdown report with these sections:
+After resolving exactly one target and completing a review, write exactly one
+timestamped Markdown report before the final response:
+
+- Name it `reports/yaml_record_review/<YYYYMMDDTHHMMSSZ>-<record-stem>.md`.
+  Use `date -u +%Y%m%dT%H%M%SZ` for the UTC timestamp. Preserve the target
+  file stem when it is already filename-safe; otherwise slugify the stem to
+  lower-case ASCII words joined with `-`.
+- Create `reports/yaml_record_review/` if it does not exist.
+- Do not overwrite or append to a prior review. If a filename already exists,
+  regenerate the timestamp.
+- Keep this section order so review reports are easy to diff across the fleet:
+
+```markdown
+# YAML Record Review: <record label>
+
+- Repository:
+- Record:
+- Started UTC:
+- Finished UTC:
+- Verdict:
+
+## Target
+## Validation
+## Identity and Grounding
+## Evidence
+## Completeness
+## Findings
+## Recommended Edits
+## Follow-up Checks
+## Additional Notes
+```
+
+Use tables, bullets, or prose inside those headings as the record demands. Put
+repo-specific diagnostics, edge cases, and low-signal observations under
+**Additional Notes** instead of inventing new top-level sections.
+
+The report must cover:
 
 - **Verdict**: pass, pass with minor issues, or needs curation.
-- **Identity**: the record reviewed and whether its ID, label, category, and
-  source identity agree.
+- **Target**: the record reviewed, its path, class, ID, label, and generated or
+  maintained status.
 - **Validation**: each command run and its result, including unavailable checks.
+- **Identity and Grounding**: whether the record's ID, label, category, source
+  identity, and ontology grounding agree.
 - **Evidence**: supported claims, unsupported or over-scoped claims, and any
   citation or snippet mismatch.
 - **Completeness**: consequential gaps, empty optional slots correctly left
   empty, and bounded searches that found nothing.
+- **Findings**: blocker, major, and minor findings, each with evidence and a
+  maintained owner path for any fix.
 - **Recommended Edits**: concrete future curation actions, ordered by severity,
   with the maintained path that owns each fix.
+- **Follow-up Checks**: the narrowest validators or manual checks that would
+  prove each recommended edit.
+
+Use `None found` or `Not checked: <reason>` when a section has no findings or a
+check cannot run; do not delete required headings.
 
 Do not append a curation event, promote a review status, or write a history
 entry from this read-only review. Those belong to a later curation change.
+If the request needs disambiguation before one target is resolved, ask for it
+without creating a report.
+
+In the final response, link the report path and summarize only the verdict,
+finding counts by severity, and any skipped validators or unresolved blockers.
 <!-- canonical:end output -->
