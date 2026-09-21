@@ -4,6 +4,10 @@ Use this file as the repository-level contract. Detailed workflows live in
 `.claude/skills/*/SKILL.md`; follow the relevant skill rather than duplicating
 its procedure here.
 
+Use [review-yaml-category](.claude/skills/review-yaml-category/SKILL.md) when a
+request audits a coherent recipe category or cohort rather than one named YAML
+record.
+
 ## Python runtime
 
 Python 3.13 is the maintained development and GitHub Actions runtime, selected
