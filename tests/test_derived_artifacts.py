@@ -152,8 +152,9 @@ def test_all_candidate_writers_are_recorded_not_just_the_first(ada):
 
 def test_a_checkable_artifact_uses_its_declared_writer(ada):
     """Re-deriving by grep would be guessing at something already stated."""
+    rows = {row["artifact"]: row for row in ada.inventory()}
     for art, cmd in ada.CHECKABLE.items():
-        row = next(r for r in ada.inventory() if r["artifact"] == art)
+        row = rows[art]
         assert cmd[0] in row["writes"], f"{art}: declared writer {cmd[0]} not confirmed as a writer"
 
 

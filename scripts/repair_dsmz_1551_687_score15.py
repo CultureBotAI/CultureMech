@@ -129,7 +129,7 @@ def _dsmz_1551_ingredients() -> tuple[dict[str, Any], ...]:
             "G_PER_L",
             source=product_source,
             notes="Oxoid nutrient broth contributes 5 g/L peptone.",
-            term=("FOODON:03302071", "peptone"),
+            term=("MICRO:0000178", "peptone"),
         ),
         _ingredient(
             "NaCl",

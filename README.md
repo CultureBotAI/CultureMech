@@ -10,7 +10,7 @@ browser exports, and static recipe pages.
 ## Corpus snapshot
 
 <!-- BEGIN GENERATED CORPUS STATS -->
-The tracked corpus currently contains **15,878 normalized records** and **6,286 merged records**.
+The tracked corpus currently contains **15,878 normalized records** and **6,288 merged records**.
 
 | Normalized category | Records |
 | --- | ---: |
@@ -21,7 +21,7 @@ The tracked corpus currently contains **15,878 normalized records** and **6,286 
 | solutions | 0 |
 | specialized | 455 |
 | **Total normalized** | **15,878** |
-| **Total merged** | **6,286** |
+| **Total merged** | **6,288** |
 <!-- END GENERATED CORPUS STATS -->
 
 These are different layers, not competing recipe totals. Normalized records

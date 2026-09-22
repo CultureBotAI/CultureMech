@@ -135,7 +135,7 @@ COMPONENTS: tuple[Component, ...] = (
         "Peptone",
         "10.000000",
         "G_PER_L",
-        ("FOODON:03302071", "peptone"),
+        ("MICRO:0000178", "peptone"),
         SOURCE_KOMODO_741,
         _komodo_note("peptone", "10.00"),
     ),

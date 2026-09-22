@@ -26,8 +26,8 @@ ingredients:
     value: '2'
     unit: G_PER_L
   term:
-    id: CHEBI:78018
-    label: dodecylphosphocholine
+    id: MICRO:0000175
+    label: Trypticase peptone
   mediaingredientmech_term:
     id: MediaIngredientMech:000263
     label: Trypticase
@@ -95,6 +95,13 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-22T00:03:26.686152+00:00'
+  curator: repair_rejected_peptone_groundings.py
+  action: CORRECTED_REJECTED_PEPTONE_GROUNDING
+  notes: 'CultureMech #484. /ingredients/2/term/id: Trypticase CHEBI:78018 -> MICRO:0000175
+    (replace_term). Reviewed identities: https://github.com/CultureBotAI/MediaIngredientMech/tree/24562493919391df4468a4285b7c997960cc8868.
+    Publication resolver: MIM label index 9f09e4fb97fb0e6cbbd6f25baca40b36512adb88.
+    MediaDive source IDs and concentrations preserved.'
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_531_SPORULATION_medium.yaml
   relationship: SOURCE_DUPLICATE

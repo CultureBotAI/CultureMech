@@ -18,11 +18,6 @@ composition:
   term:
     id: mediadive.compound:74
     label: Trypticase
-  chebi_term:
-    id: CHEBI:78018
-    label: dodecylphosphocholine
-    confidence: 0.7
-    match_type: corpus_consensus
 - preferred_term: Yeast extract
   concentration:
     value: '2.5'
@@ -169,6 +164,13 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '3 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-09-22T00:03:26.686152+00:00'
+  curator: repair_rejected_peptone_groundings.py
+  action: CORRECTED_REJECTED_PEPTONE_GROUNDING
+  notes: 'CultureMech #484. /composition/1/chebi_term/id: Trypticase CHEBI:78018 ->
+    MICRO:0000175 (remove_chebi_term). Reviewed identities: https://github.com/CultureBotAI/MediaIngredientMech/tree/24562493919391df4468a4285b7c997960cc8868.
+    Publication resolver: MIM label index 9f09e4fb97fb0e6cbbd6f25baca40b36512adb88.
+    MediaDive source IDs and concentrations preserved.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

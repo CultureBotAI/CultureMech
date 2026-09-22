@@ -152,7 +152,7 @@ ingredients:
     value: '10.000000'
     unit: G_PER_L
   term:
-    id: FOODON:03302071
+    id: MICRO:0000178
     label: peptone
 applications:
 - Microbial cultivation
@@ -185,6 +185,13 @@ curation_history:
     added before use from anaerobic stock solutions; this record expands the KOMODO
     Medium 642 RCM component table and adds the DSMZ bicarbonate, glucose, and anaerobic
     gas components.
+- timestamp: '2026-09-22T00:03:26.686152+00:00'
+  curator: repair_rejected_peptone_groundings.py
+  action: CORRECTED_REJECTED_PEPTONE_GROUNDING
+  notes: 'CultureMech #484. /ingredients/11/term/id: Peptone FOODON:03302071 -> MICRO:0000178
+    (replace_term). Reviewed identities: https://github.com/CultureBotAI/MediaIngredientMech/tree/24562493919391df4468a4285b7c997960cc8868.
+    Publication resolver: MIM label index 9f09e4fb97fb0e6cbbd6f25baca40b36512adb88.
+    MediaDive source IDs and concentrations preserved.'
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated

@@ -18,8 +18,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   term:
-    id: CHEBI:78018
-    label: dodecylphosphocholine
+    id: MICRO:0000175
+    label: Trypticase peptone
   mediaingredientmech_term:
     id: MediaIngredientMech:000263
     label: Trypticase
@@ -126,11 +126,18 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-- timestamp: '2026-08-06T03:05:59.312508+00:00'
+- timestamp: '2026-09-22T00:03:26.686152+00:00'
+  curator: repair_rejected_peptone_groundings.py
+  action: CORRECTED_REJECTED_PEPTONE_GROUNDING
+  notes: 'CultureMech #484. /ingredients/0/term/id: Trypticase CHEBI:78018 -> MICRO:0000175
+    (replace_term). Reviewed identities: https://github.com/CultureBotAI/MediaIngredientMech/tree/24562493919391df4468a4285b7c997960cc8868.
+    Publication resolver: MIM label index 9f09e4fb97fb0e6cbbd6f25baca40b36512adb88.
+    MediaDive source IDs and concentrations preserved.'
+- timestamp: '2026-09-22T00:10:15.729993+00:00'
   curator: merge_recipes.py
   action: MERGED_RECIPES
-  notes: merged 1 source recipe(s) on fingerprint dc130803e5b3d2b936eab06272485f4a1334f2afed6177ee73fc2d6e4bd879bb
+  notes: merged 1 source recipe(s) on fingerprint d23ee27f635b9409206ad7abd70acbc72a9e1a3110d5183661cad0df142dabfe
   source: thioglycolate_medium_merck_108190.yaml
-merge_fingerprint: dc130803e5b3d2b936eab06272485f4a1334f2afed6177ee73fc2d6e4bd879bb
+merge_fingerprint: d23ee27f635b9409206ad7abd70acbc72a9e1a3110d5183661cad0df142dabfe
 merged_from:
 - thioglycolate_medium_merck_108190
