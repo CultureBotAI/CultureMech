@@ -7,12 +7,15 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import Mock
 
 import pandas as pd
+import pytest
 import yaml
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+from scripts import generate_sssom_mappings as generator
 from scripts.extract_unique_ingredients import extract_source_from_path, extract_unique_ingredients
 from scripts.generate_sssom_mappings import (
     create_curie,
@@ -32,49 +35,44 @@ class TestIngredientExtraction(unittest.TestCase):
 
         # Create test recipe
         test_recipe = {
-            'name': 'Test Medium',
-            'category': 'bacterial',
-            'medium_type': 'DEFINED',
-            'physical_state': 'LIQUID',
-            'ingredients': [
+            "name": "Test Medium",
+            "category": "bacterial",
+            "medium_type": "DEFINED",
+            "physical_state": "LIQUID",
+            "ingredients": [
                 {
-                    'preferred_term': 'Glucose',
-                    'term': {
-                        'id': 'CHEBI:17234',
-                        'label': 'D-glucose'
-                    },
-                    'concentration': {'value': '10', 'unit': 'G_PER_L'}
+                    "preferred_term": "Glucose",
+                    "term": {"id": "CHEBI:17234", "label": "D-glucose"},
+                    "concentration": {"value": "10", "unit": "G_PER_L"},
                 },
                 {
-                    'preferred_term': 'Yeast extract',
-                    'concentration': {'value': '5', 'unit': 'G_PER_L'}
+                    "preferred_term": "Yeast extract",
+                    "concentration": {"value": "5", "unit": "G_PER_L"},
+                },
+            ],
+            "solutions": [
+                {
+                    "preferred_term": "Vitamin Solution",
+                    "composition": [
+                        {
+                            "preferred_term": "Thiamine",
+                            "term": {"id": "CHEBI:18385", "label": "thiamine"},
+                            "concentration": {"value": "1", "unit": "MG_PER_L"},
+                        }
+                    ],
                 }
             ],
-            'solutions': [
-                {
-                    'preferred_term': 'Vitamin Solution',
-                    'composition': [
-                        {
-                            'preferred_term': 'Thiamine',
-                            'term': {
-                                'id': 'CHEBI:18385',
-                                'label': 'thiamine'
-                            },
-                            'concentration': {'value': '1', 'unit': 'MG_PER_L'}
-                        }
-                    ]
-                }
-            ]
         }
 
         # Save test recipe
         yaml_file = self.yaml_dir / "TOGO_M1234_Test_Medium.yaml"
-        with open(yaml_file, 'w') as f:
+        with open(yaml_file, "w") as f:
             yaml.dump(test_recipe, f)
 
     def tearDown(self):
         """Clean up temporary directory."""
         import shutil
+
         shutil.rmtree(self.temp_dir, ignore_errors=True)
 
     def test_extract_source_from_path(self):
@@ -96,21 +94,21 @@ class TestIngredientExtraction(unittest.TestCase):
         self.assertEqual(len(df), 3)
 
         # Check ingredient names
-        ingredient_names = set(df['ingredient_name'].values)
-        self.assertIn('Glucose', ingredient_names)
-        self.assertIn('Yeast extract', ingredient_names)
-        self.assertIn('Thiamine', ingredient_names)
+        ingredient_names = set(df["ingredient_name"].values)
+        self.assertIn("Glucose", ingredient_names)
+        self.assertIn("Yeast extract", ingredient_names)
+        self.assertIn("Thiamine", ingredient_names)
 
         # Check CHEBI mappings
-        glucose_row = df[df['ingredient_name'] == 'Glucose'].iloc[0]
-        self.assertTrue(glucose_row['has_chebi_mapping'])
-        self.assertEqual(glucose_row['chebi_id'], 'CHEBI:17234')
+        glucose_row = df[df["ingredient_name"] == "Glucose"].iloc[0]
+        self.assertTrue(glucose_row["has_chebi_mapping"])
+        self.assertEqual(glucose_row["chebi_id"], "CHEBI:17234")
 
-        yeast_row = df[df['ingredient_name'] == 'Yeast extract'].iloc[0]
-        self.assertFalse(yeast_row['has_chebi_mapping'])
+        yeast_row = df[df["ingredient_name"] == "Yeast extract"].iloc[0]
+        self.assertFalse(yeast_row["has_chebi_mapping"])
 
         # Check frequency
-        self.assertEqual(glucose_row['frequency'], 1)
+        self.assertEqual(glucose_row["frequency"], 1)
 
 
 class TestSSSOMGeneration(unittest.TestCase):
@@ -133,27 +131,26 @@ class TestSSSOMGeneration(unittest.TestCase):
     def test_validate_sssom_format(self):
         """Test SSSOM format validation."""
         # Valid DataFrame
-        valid_df = pd.DataFrame([
-            {
-                'subject_id': 'culturemech:Glucose',
-                'subject_label': 'Glucose',
-                'predicate_id': 'skos:exactMatch',
-                'object_id': 'CHEBI:17234',
-                'object_label': 'D-glucose',
-                'mapping_justification': 'semapv:ManualMappingCuration',
-                'confidence': 0.95
-            }
-        ])
+        valid_df = pd.DataFrame(
+            [
+                {
+                    "subject_id": "culturemech:Glucose",
+                    "subject_label": "Glucose",
+                    "predicate_id": "skos:exactMatch",
+                    "object_id": "CHEBI:17234",
+                    "object_label": "D-glucose",
+                    "mapping_justification": "semapv:ManualMappingCuration",
+                    "confidence": 0.95,
+                }
+            ]
+        )
 
         self.assertTrue(validate_sssom_format(valid_df))
 
         # Missing required column
-        invalid_df = pd.DataFrame([
-            {
-                'subject_id': 'culturemech:Glucose',
-                'object_id': 'CHEBI:17234'
-            }
-        ])
+        invalid_df = pd.DataFrame(
+            [{"subject_id": "culturemech:Glucose", "object_id": "CHEBI:17234"}]
+        )
 
         self.assertFalse(validate_sssom_format(invalid_df))
 
@@ -166,30 +163,24 @@ class TestSSSOMGeneration(unittest.TestCase):
 
         # Create test recipe with CHEBI terms
         test_recipe = {
-            'name': 'Test Medium',
-            'category': 'bacterial',
-            'medium_type': 'DEFINED',
-            'physical_state': 'LIQUID',
-            'ingredients': [
+            "name": "Test Medium",
+            "category": "bacterial",
+            "medium_type": "DEFINED",
+            "physical_state": "LIQUID",
+            "ingredients": [
                 {
-                    'preferred_term': 'Glucose',
-                    'term': {
-                        'id': 'CHEBI:17234',
-                        'label': 'D-glucose'
-                    },
-                    'concentration': {'value': '10', 'unit': 'G_PER_L'}
+                    "preferred_term": "Glucose",
+                    "term": {"id": "CHEBI:17234", "label": "D-glucose"},
+                    "concentration": {"value": "10", "unit": "G_PER_L"},
                 }
             ],
-            'curation_history': [
-                {
-                    'curator': 'chebi-enrichment',
-                    'notes': 'Enriched using MicrobeMediaParam'
-                }
-            ]
+            "curation_history": [
+                {"curator": "chebi-enrichment", "notes": "Enriched using MicrobeMediaParam"}
+            ],
         }
 
         yaml_file = yaml_dir / "TEST_001_Medium.yaml"
-        with open(yaml_file, 'w') as f:
+        with open(yaml_file, "w") as f:
             yaml.dump(test_recipe, f)
 
         # Generate SSSOM mappings
@@ -200,18 +191,124 @@ class TestSSSOMGeneration(unittest.TestCase):
 
         # Check mapping content
         mapping = df.iloc[0]
-        self.assertEqual(mapping['subject_label'], 'Glucose')
-        self.assertEqual(mapping['object_id'], 'CHEBI:17234')
-        self.assertEqual(mapping['predicate_id'], 'skos:exactMatch')
-        self.assertEqual(mapping['mapping_tool'], 'MicrobeMediaParam|v1.0')
+        self.assertEqual(mapping["subject_label"], "Glucose")
+        self.assertEqual(mapping["object_id"], "CHEBI:17234")
+        self.assertEqual(mapping["predicate_id"], "skos:exactMatch")
+        self.assertEqual(mapping["mapping_tool"], "MicrobeMediaParam|v1.0")
 
         # Validate format
         self.assertTrue(validate_sssom_format(df))
 
         # Clean up
         import shutil
+
         shutil.rmtree(temp_dir, ignore_errors=True)
 
 
-if __name__ == '__main__':
+@pytest.fixture
+def isolated_label_lookup(monkeypatch):
+    """Each adapter regression starts with empty process-local caches."""
+    monkeypatch.setattr(generator, "_oak_adapters", {})
+    monkeypatch.setattr(generator, "_label_cache", {})
+    monkeypatch.setattr(generator, "_warned_adapter_prefixes", set())
+
+
+@pytest.mark.parametrize("failure_stage", ["initialization", "query"])
+def test_adapter_failure_warns_once_and_memoizes_until_fresh_generation(
+    monkeypatch, caplog, isolated_label_lookup, failure_stage
+):
+    import oaklib
+
+    adapter = Mock()
+    factory = Mock(return_value=adapter)
+    failing_call = factory if failure_stage == "initialization" else adapter.label
+    failing_call.side_effect = RuntimeError("offline ontology adapter")
+    monkeypatch.setattr(oaklib, "get_adapter", factory)
+
+    assert generator.canonical_label("FOODON:03315719", "Casein peptone") == "Casein peptone"
+    assert generator.canonical_label("FOODON:03315306", "Polypeptone") == "Polypeptone"
+    assert generator.canonical_label("FOODON:03315719", "Casamino acids") == "Casamino acids"
+    assert failing_call.call_count == 2
+    assert len(caplog.records) == 1
+    message = caplog.records[0].getMessage()
+    for expected in (
+        "FOODON:03315719",
+        "sqlite:obo:foodon",
+        "RuntimeError",
+        "offline ontology adapter",
+        "regenerate SSSOM",
+        "validate-products",
+    ):
+        assert expected in message
+
+    failing_call.side_effect = None
+    adapter.label.return_value = "mammalian milk protein (hydrolyzed)"
+    # The existing process keeps its cached fallback; starting a new generation
+    # with an empty cache is what retries the previously failed CURIE.
+    assert generator.canonical_label("FOODON:03315719", "Casein peptone") == "Casein peptone"
+    assert failing_call.call_count == 2
+    generator._label_cache.clear()
+    assert (
+        generator.canonical_label("FOODON:03315719", "Casein peptone")
+        == "mammalian milk protein (hydrolyzed)"
+    )
+    adapter.label.reset_mock()
+    assert (
+        generator.canonical_label("FOODON:03315719", "Casamino acids")
+        == "mammalian milk protein (hydrolyzed)"
+    )
+    adapter.label.assert_not_called()
+    assert len(caplog.records) == 1
+
+
+def test_label_misses_and_unconfigured_prefixes_keep_quiet_fallbacks(
+    monkeypatch, caplog, isolated_label_lookup
+):
+    import oaklib
+
+    adapter = Mock()
+    adapter.label.return_value = None
+    factory = Mock(return_value=adapter)
+    monkeypatch.setattr(oaklib, "get_adapter", factory)
+
+    assert generator.canonical_label("FOODON:99999999", "source label") == "source label"
+    assert generator.canonical_label("FOODON:99999999", "another label") == "another label"
+    assert generator.canonical_label("mediadive.compound:74", "Trypticase") == "Trypticase"
+    factory.assert_called_once_with("sqlite:obo:foodon")
+    adapter.label.assert_called_once_with("FOODON:99999999")
+    assert not caplog.records
+
+
+def test_fallback_generation_keeps_mapping_identity_and_format_validation(
+    monkeypatch, tmp_path, caplog, isolated_label_lookup
+):
+    import oaklib
+
+    monkeypatch.setattr(oaklib, "get_adapter", Mock(side_effect=RuntimeError("offline")))
+    (tmp_path / "recipe.yaml").write_text(
+        yaml.safe_dump(
+            {
+                "ingredients": [
+                    {
+                        "preferred_term": "Casein peptone",
+                        "term": {"id": "FOODON:03315719", "label": "Casein peptone"},
+                    }
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+    mappings = generate_sssom_mappings(tmp_path)
+
+    assert len(mappings) == 1
+    row = mappings.iloc[0]
+    assert row["subject_label"] == "Casein peptone"
+    assert row["object_id"] == "FOODON:03315719"
+    assert row["object_label"] == "Casein peptone"
+    assert row["predicate_id"] == "skos:exactMatch"
+    assert validate_sssom_format(mappings)
+    assert len(caplog.records) == 1
+
+
+if __name__ == "__main__":
     unittest.main()
