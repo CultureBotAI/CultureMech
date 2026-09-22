@@ -19,8 +19,8 @@ ingredients:
     value: '5'
     unit: G_PER_L
   term:
-    id: CHEBI:78018
-    label: dodecylphosphocholine
+    id: MICRO:0000175
+    label: Trypticase peptone
   mediaingredientmech_term:
     id: MediaIngredientMech:000263
     label: Trypticase
@@ -129,14 +129,21 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-- timestamp: '2026-08-06T03:04:58.742234+00:00'
+- timestamp: '2026-09-22T00:03:26.686152+00:00'
+  curator: repair_rejected_peptone_groundings.py
+  action: CORRECTED_REJECTED_PEPTONE_GROUNDING
+  notes: 'CultureMech #484. /ingredients/0/term/id: Trypticase CHEBI:78018 -> MICRO:0000175
+    (replace_term). Reviewed identities: https://github.com/CultureBotAI/MediaIngredientMech/tree/24562493919391df4468a4285b7c997960cc8868.
+    Publication resolver: MIM label index 9f09e4fb97fb0e6cbbd6f25baca40b36512adb88.
+    MediaDive source IDs and concentrations preserved.'
+- timestamp: '2026-09-22T00:08:55.300413+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_775_R_-_CW_medium, r_cw_medium'
-- timestamp: '2026-08-06T03:04:58.742265+00:00'
+- timestamp: '2026-09-22T00:08:55.300455+00:00'
   curator: merge_recipes.py
   action: MERGED_RECIPES
-  notes: merged 2 source recipe(s) on fingerprint 181a5438b92ce363c2f927e5dcd5ef0388f31689d0a144d980c14af879f8f108
+  notes: merged 2 source recipe(s) on fingerprint c455547823290ddf2a475fcf4e9303aad1c41d1035c245b48940ba64b8c2dc25
   source: KOMODO_775_R_-_CW_medium.yaml, r_cw_medium.yaml
 parent_media:
   path: data/normalized_yaml/bacterial/r_cw_medium.yaml
@@ -154,4 +161,4 @@ categories:
 merged_from:
 - KOMODO_775_R_-_CW_medium
 - r_cw_medium
-merge_fingerprint: 181a5438b92ce363c2f927e5dcd5ef0388f31689d0a144d980c14af879f8f108
+merge_fingerprint: c455547823290ddf2a475fcf4e9303aad1c41d1035c245b48940ba64b8c2dc25

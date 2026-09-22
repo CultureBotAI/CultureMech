@@ -1,0 +1,164 @@
+id: CultureMech:006392
+name: clostridium_longisporum_medium
+original_name: CLOSTRIDIUM LONGISPORUM medium
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+ph_value: 6.8
+media_term:
+  preferred_term: KOMODO Medium 741
+  term:
+    id: komodo.medium:741
+    label: CLOSTRIDIUM LONGISPORUM medium
+notes: Archived DSMZ Medium 741 defines CLOSTRIDIUM LONGISPORUM MEDIUM as Reinforced
+  Clostridial Medium (Oxoid CM 149) prepared under 100% CO2 with final pH 6.8; KOMODO
+  Medium 741 expands the RCM base into final per-liter components.
+ingredients:
+- preferred_term: Agar
+  source: KOMODO Medium 741
+  notes: KOMODO Medium 741 expands the RCM base and lists 15.00 g/L agar.
+  concentration:
+    value: '15.000000'
+    unit: G_PER_L
+  term: &id001
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term: *id001
+- preferred_term: Yeast extract
+  source: KOMODO Medium 741
+  notes: KOMODO Medium 741 expands the RCM base and lists 3.00 g/L yeast extract.
+  concentration:
+    value: '3.000000'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Glucose
+  source: KOMODO Medium 741
+  notes: KOMODO Medium 741 expands the RCM base and lists 5.00 g/L glucose.
+  concentration:
+    value: '5.000000'
+    unit: G_PER_L
+  term: &id002
+    id: CHEBI:17634
+    label: D-glucose
+  mediaingredientmech_chebi_term: *id002
+- preferred_term: CO2
+  source: Archived DSMZ Medium 741
+  notes: Archived DSMZ Medium 741 prepares the medium under 100% CO2.
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term: &id003
+    id: CHEBI:16526
+    label: carbon dioxide
+  mediaingredientmech_chebi_term: *id003
+- preferred_term: Sodium acetate
+  source: KOMODO Medium 741
+  notes: KOMODO Medium 741 expands the RCM base and lists 3.00 g/L sodium acetate.
+  concentration:
+    value: '3.000000'
+    unit: G_PER_L
+  term: &id004
+    id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_chebi_term: *id004
+- preferred_term: Cysteine hydrochloride
+  source: KOMODO Medium 741
+  notes: KOMODO Medium 741 expands the RCM base and lists 0.50 g/L cysteine hydrochloride.
+  concentration:
+    value: '0.500000'
+    unit: G_PER_L
+  term: &id005
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+  mediaingredientmech_chebi_term: *id005
+- preferred_term: Lab-Lemco powder
+  source: KOMODO Medium 741
+  notes: KOMODO Medium 741 expands the RCM base and lists 10.00 g/L Lab-Lemco powder.
+  concentration:
+    value: '10.000000'
+    unit: G_PER_L
+  term:
+    id: FOODON:03302088
+    label: beef extract
+- preferred_term: Sodium chloride
+  source: KOMODO Medium 741
+  notes: KOMODO Medium 741 expands the RCM base and lists 5.00 g/L sodium chloride.
+  concentration:
+    value: '5.000000'
+    unit: G_PER_L
+  term: &id006
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term: *id006
+- preferred_term: Soluble starch
+  source: KOMODO Medium 741
+  notes: KOMODO Medium 741 expands the RCM base and lists 1.00 g/L soluble starch.
+  concentration:
+    value: '1.000000'
+    unit: G_PER_L
+  term: &id007
+    id: CHEBI:28017
+    label: starch
+  mediaingredientmech_chebi_term: *id007
+- preferred_term: Peptone
+  source: KOMODO Medium 741
+  notes: KOMODO Medium 741 expands the RCM base and lists 10.00 g/L peptone.
+  concentration:
+    value: '10.000000'
+    unit: G_PER_L
+  term:
+    id: MICRO:0000178
+    label: peptone
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 741'
+- timestamp: '2026-03-13T06:19:40.389873Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006392'
+- timestamp: '2026-03-17T19:45:57.682067+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CLOSTRIDIUM LONGISPORUM medium" to "clostridium_longisporum_medium"
+    for consistent matching
+- timestamp: '2026-08-06T08:58:32.408881+00:00'
+  curator: curate_flag_empty_composition.py
+  action: FLAGGED_INCOMPLETE_COMPOSITION
+  notes: Media record has no ingredients and no solutions — no usable composition;
+    flagged so the gap is not silent (#175).
+  changes: 'Added data_quality_flags: incomplete_composition'
+- timestamp: '2026-09-10T00:00:00-07:00'
+  curator: repair_komodo_741_score30.py
+  action: RESOLVED_KOMODO_741_SCORE30
+  source: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium741.pdf
+  notes: Archived DSMZ Medium 741 defines CLOSTRIDIUM LONGISPORUM MEDIUM as Reinforced
+    Clostridial Medium (Oxoid CM 149) prepared under 100% CO2 with final pH 6.8; KOMODO
+    Medium 741 expands the RCM base into final per-liter components.
+- timestamp: '2026-09-22T00:03:26.686152+00:00'
+  curator: repair_rejected_peptone_groundings.py
+  action: CORRECTED_REJECTED_PEPTONE_GROUNDING
+  notes: 'CultureMech #484. /ingredients/9/term/id: Peptone FOODON:03302071 -> MICRO:0000178
+    (replace_term). Reviewed identities: https://github.com/CultureBotAI/MediaIngredientMech/tree/24562493919391df4468a4285b7c997960cc8868.
+    Publication resolver: MIM label index 9f09e4fb97fb0e6cbbd6f25baca40b36512adb88.
+    MediaDive source IDs and concentrations preserved.'
+- timestamp: '2026-09-22T00:09:35.640954+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3b430a0878d75d595a4eb156f7f6325ea212ae912caf7a416f3bfff70e15c496
+  source: clostridium_longisporum_medium.yaml
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+references:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=741
+- reference: https://web.archive.org/web/20121030082653id_/http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium741.pdf
+merge_fingerprint: 3b430a0878d75d595a4eb156f7f6325ea212ae912caf7a416f3bfff70e15c496
+merged_from:
+- clostridium_longisporum_medium

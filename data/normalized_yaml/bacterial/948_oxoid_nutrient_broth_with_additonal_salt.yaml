@@ -69,7 +69,7 @@ ingredients:
   source: DSMZ Medium 1551 / Oxoid nutrient broth
   notes: Oxoid nutrient broth contributes 5 g/L peptone.
   term:
-    id: FOODON:03302071
+    id: MICRO:0000178
     label: peptone
 - preferred_term: NaCl
   concentration:
@@ -128,6 +128,13 @@ curation_history:
   notes: DSMZ Medium 1551 lists 13 g Nutrient broth (Oxoid), 17.5 g additional NaCl,
     1000 mL distilled water, and pH 7.2; the Oxoid product composition contributes
     1 g Lab-Lemco, 2 g yeast extract, 5 g peptone, and 5 g NaCl per liter.
+- timestamp: '2026-09-22T00:03:26.686152+00:00'
+  curator: repair_rejected_peptone_groundings.py
+  action: CORRECTED_REJECTED_PEPTONE_GROUNDING
+  notes: 'CultureMech #484. /ingredients/5/term/id: Peptone FOODON:03302071 -> MICRO:0000178
+    (replace_term). Reviewed identities: https://github.com/CultureBotAI/MediaIngredientMech/tree/24562493919391df4468a4285b7c997960cc8868.
+    Publication resolver: MIM label index 9f09e4fb97fb0e6cbbd6f25baca40b36512adb88.
+    MediaDive source IDs and concentrations preserved.'
 kg_microbe_match: mediadive.medium:74
 data_quality_flags:
 - has_ontology_mappings
