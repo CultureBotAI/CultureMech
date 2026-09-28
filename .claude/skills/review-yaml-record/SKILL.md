@@ -78,6 +78,42 @@ completeness criteria are Mech-specific.
   adjacent term; leave unsupported identity claims flagged as unresolved.
 <!-- canonical:end evidence-rules -->
 
+## Structured Source Cross-Checks
+
+<!-- canonical:begin structured-source-cross-checks -->
+Use structured source adapters before open-ended web search when this record
+names a gene, locus tag, UniProt accession, regulator, pathway, stress response,
+trait, or transcriptomics dataset that may already be represented in a shared
+database.
+
+For iModulonDB candidates, first resolve the runner. In the commands below,
+`<kg-microbe-sources>` means either an installed `kg-microbe-sources` console
+script or `uv run --project <claw-root> kg-microbe-sources` from a local
+`culturebotai-claw` checkout. If neither runner is available, record the
+structured adapter as unavailable and fall back to inspected iModulonDB source
+pages or open web search.
+
+- Run `<kg-microbe-sources> imodulondb datasets` to find covered
+  organism/dataset keys.
+- Run `<kg-microbe-sources> imodulondb search --organism <organism> --dataset
+  <dataset> --query <term>` for a record gene, locus, regulator, protein name,
+  stress-response term, or iModulon name that matches a covered organism.
+- Run `<kg-microbe-sources> imodulondb summarize --organism <organism>
+  --dataset <dataset> --k <component>` for any iModulon hit that would inform
+  the record verdict.
+- Record useful `organism/dataset/component` and `organism/dataset/gene` keys
+  under **Evidence** or **Additional Notes**, and keep any copied summary table
+  small enough to justify why the record is or is not supported.
+
+iModulon membership is computational expression-module evidence. It can support
+a bounded transcriptomic context finding for a covered strain, gene, regulator,
+or protein, but it is not direct proof of a phenotype, MIC, natural-product
+identity, cell-structure localization, habitat assertion, medium recipe, or
+medium-ingredient identity. If no covered organism/dataset matches the target,
+write that iModulonDB was not applicable; absence from iModulonDB is not
+negative evidence.
+<!-- canonical:end structured-source-cross-checks -->
+
 ## Missing Things
 
 <!-- canonical:begin missing-things -->
