@@ -21,6 +21,8 @@ ROOT = Path(__file__).resolve().parents[1]
 # rather than restate it here).
 VENDORED_FROM_CLAW = {
     "scripts/_edison_capture.py",
+    "scripts/auto_merge_ready_prs.py",
+    "scripts/verify_merge_integrity.py",
     "scripts/check_vendored_sync.py",
     "scripts/chem_formula.py",
     "scripts/deep_research_contract.py",

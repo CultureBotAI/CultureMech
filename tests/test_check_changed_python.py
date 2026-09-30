@@ -48,6 +48,8 @@ def test_changed_paths_disables_rename_detection(monkeypatch) -> None:
 # is one that fails when only one side is edited.
 EXPECTED_VENDORED_PYTHON = {
     "scripts/_edison_capture.py",
+    "scripts/auto_merge_ready_prs.py",
+    "scripts/verify_merge_integrity.py",
     "scripts/check_vendored_sync.py",
     "scripts/chem_formula.py",
     "scripts/deep_research_contract.py",
