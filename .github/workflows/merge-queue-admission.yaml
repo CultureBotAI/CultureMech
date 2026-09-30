@@ -1,0 +1,98 @@
+name: Automatic merge queue admission
+
+# Deterministic infrastructure: the model-agent cron profile does not control it.
+# Set the repository variable MERGE_QUEUE_AUTOMATION_PAUSED=true to pause admission.
+on:
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: Enqueue eligible reviewed PRs (false previews only)
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  pull-requests: read
+  checks: read
+  statuses: read
+  actions: read
+
+concurrency:
+  group: merge-queue-admission
+  cancel-in-progress: false
+
+jobs:
+  admission:
+    if: >-
+      github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+      && vars.MERGE_QUEUE_AUTOMATION_PAUSED != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout trusted default branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+
+      - name: Install Python runner
+        uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          version: "0.12.5"
+          python-version: "3.13"
+          enable-cache: false
+
+      # Built-in GITHUB_TOKEN remains read-only. The App token is minted after
+      # setup and passed only to the deterministic controller's write path.
+      - name: Mint repository-scoped admission token
+        if: github.event_name == 'schedule' || inputs.apply
+        id: admission-token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        with:
+          app-id: ${{ secrets.AGENT_APP_ID }}
+          private-key: ${{ secrets.AGENT_APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: ${{ github.event.repository.name }}
+          permission-contents: write
+          permission-pull-requests: write
+
+      - name: Inspect or admit reviewed candidates
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_MERGE_TOKEN: ${{ steps.admission-token.outputs.token }}
+          ADMISSION_APPLY: ${{ github.event_name == 'schedule' || inputs.apply }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          script=scripts/auto_merge_ready_prs.py
+          if [ "$GITHUB_REPOSITORY" = CultureBotAI/culturebotai-claw ]; then
+            script=src/kg_microbe_governance/artifacts/scripts/auto_merge_ready_prs.py
+          fi
+          args=(--repository "$GITHUB_REPOSITORY" --max-admissions 3
+                --report "$RUNNER_TEMP/merge-queue-admission.json")
+          if [ -f conf/merge_queue_automation.json ]; then
+            args+=(--config conf/merge_queue_automation.json)
+          fi
+          if [ "$ADMISSION_APPLY" = true ]; then
+            test -n "$GH_MERGE_TOKEN"
+            args+=(--apply)
+          fi
+          uv run --no-project --python 3.13 python "$script" "${args[@]}"
+
+      - name: Record admission result
+        if: always()
+        shell: bash
+        run: |
+          if [ -f "$RUNNER_TEMP/merge-queue-admission.json" ]; then
+            {
+              echo '## Merge queue admission'
+              echo '<details><summary>Controller report</summary>'
+              echo
+              echo '```json'
+              cat "$RUNNER_TEMP/merge-queue-admission.json"
+              echo '```'
+              echo '</details>'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi

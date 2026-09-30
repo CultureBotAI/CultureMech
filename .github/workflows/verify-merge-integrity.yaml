@@ -1,0 +1,86 @@
+name: Verify merge integrity
+
+# Verify every pushed first-parent range. No path filter or shared concurrency
+# group may discard an intervening main push.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      before:
+        description: First-parent boundary SHA (empty checks the latest commit)
+        type: string
+        default: ""
+      after:
+        description: Dispatched main SHA (empty uses that revision; historical ends rejected)
+        type: string
+        default: ""
+
+permissions:
+  contents: read
+  pull-requests: read
+  issues: write
+
+jobs:
+  merge-integrity:
+    name: merge-integrity
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout published main history
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Install Python runner
+        uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          version: "0.12.5"
+          python-version: "3.13"
+          enable-cache: false
+
+      - name: Reconstruct and verify squash trees
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVENT_BEFORE: ${{ github.event.before }}
+          EVENT_AFTER: ${{ github.event.after }}
+          INPUT_BEFORE: ${{ inputs.before }}
+          INPUT_AFTER: ${{ inputs.after }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          script=scripts/verify_merge_integrity.py
+          if [ "$GITHUB_REPOSITORY" = CultureBotAI/culturebotai-claw ]; then
+            script=src/kg_microbe_governance/artifacts/scripts/verify_merge_integrity.py
+          fi
+          if [ "$GITHUB_EVENT_NAME" = push ]; then
+            before="$EVENT_BEFORE"
+            after="$EVENT_AFTER"
+          else
+            after="${INPUT_AFTER:-$GITHUB_SHA}"
+            [[ "$after" =~ ^[0-9a-f]{40}$ ]] || exit 2
+            before="${INPUT_BEFORE:-$(git rev-parse --verify "$after^")}"
+          fi
+          [ "$after" = "$GITHUB_SHA" ]
+          [ "$before" != "$after" ]
+          [[ "$before" =~ ^[0-9a-f]{40}$ ]] || exit 2
+          [[ "$after" =~ ^[0-9a-f]{40}$ ]] || exit 2
+          uv run --no-project --python 3.13 python "$script" \
+            --repository "$GITHUB_REPOSITORY" --repo-root "$GITHUB_WORKSPACE" \
+            --before "$before" --after "$after" \
+            --report "$RUNNER_TEMP/merge-integrity.json" --report-issues
+
+      - name: Record integrity result
+        if: always()
+        shell: bash
+        run: |
+          if [ -f "$RUNNER_TEMP/merge-integrity.json" ]; then
+            {
+              echo '## Merge integrity'
+              echo '```json'
+              cat "$RUNNER_TEMP/merge-integrity.json"
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
