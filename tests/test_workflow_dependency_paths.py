@@ -100,3 +100,43 @@ def test_path_discovery_handles_yaml_boolean_keys_and_unfiltered_events(on_key):
     paths = ["data/**", "pyproject.toml", "uv.lock"]
     document = {on_key: {"pull_request": None, "push": {"paths": paths}}}
     assert _paths_blocks(document) == [("push", paths)]
+
+
+@pytest.mark.parametrize(
+    "publication_input",
+    [
+        "src/culturemech/ingredients/chebi_structures.py",
+        "src/culturemech/data/chebi/structure_index.csv",
+        "src/culturemech/export/browser_export.py",
+        "src/culturemech/templates/media.html.j2",
+        "pages/media_growth_review.html",
+        "scripts/update_readme_stats.py",
+    ],
+)
+def test_pages_rebuilds_when_publication_inputs_change(publication_input):
+    from fnmatch import fnmatchcase
+
+    document = yaml.safe_load((WORKFLOWS / "generate-pages.yaml").read_text())
+    triggers = document.get(True, document.get("on"))
+    paths = triggers["push"]["paths"]
+    assert any(
+        fnmatchcase(publication_input, pattern) for pattern in paths
+    ), f"Pages stages or reads {publication_input}, but a change cannot trigger its build"
+
+
+def test_pages_refreshes_shared_claw_inputs_and_checks_published_counts():
+    document = yaml.safe_load((WORKFLOWS / "generate-pages.yaml").read_text())
+    triggers = document.get(True, document.get("on"))
+    assert triggers.get("schedule"), "claw changes need a scheduled Pages refresh"
+    steps = document["jobs"]["build"]["steps"]
+    stats_check = next(
+        i
+        for i, step in enumerate(steps)
+        if "scripts/update_readme_stats.py --check" in step.get("run", "")
+    )
+    upload = next(
+        i
+        for i, step in enumerate(steps)
+        if step.get("uses", "").startswith("actions/upload-pages-artifact@")
+    )
+    assert stats_check < upload

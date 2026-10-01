@@ -35,6 +35,24 @@ to require exact source, browser-record, and page coverage. The tracked
 `app/*.html`, JavaScript application code, root `index.html`, and
 `pages/media_growth_review.html` remain publication inputs.
 
+### Publishing and corpus counts
+
+GitHub Pages must use **GitHub Actions** as its publishing source (Settings →
+Pages → Build and deployment). Branch publishing omits the ignored generated
+files and can replace a complete site with an empty recipe browser.
+
+[The Pages workflow](../.github/workflows/generate-pages.yaml) builds and deploys
+the site after publication inputs change on `main`. Its weekly schedule also
+picks up shared browser and QC changes from `culturebotai-claw`. After changing
+the Pages source, run this workflow manually once and verify `app/data.js`,
+`pages/index.html`, `pages/normalized/index.html`, and `dashboard/` on the live
+site. A successful branch build alone does not verify these assets.
+
+`just update-readme-stats` updates the generated counts in both `README.md` and
+`app/index.html` from the normalized and merged corpus directories. Commit
+these small text updates with corpus changes. `just check-readme-stats` checks
+both documents without writing; CI and the Pages build reject stale counts.
+
 ## Pinned external reference data
 
 `data/normalized_yaml/` remains authoritative for recipe content: labels,
