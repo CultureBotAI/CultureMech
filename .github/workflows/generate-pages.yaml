@@ -8,15 +8,17 @@ on:
       - "index.html"
       - "data/normalized_yaml/**.yaml"
       - "data/merge_yaml/merged/**.yaml"
-      - "src/culturemech/export/browser_export.py"
-      - "src/culturemech/templates/**"
-      - "src/culturemech/render_media_pages.py"
-      - "src/culturemech/web_artifacts.py"
+      - "src/culturemech/**"
+      - "pages/**"
+      - "scripts/update_readme_stats.py"
       - "conf/qc_config.yaml"
       - "pyproject.toml"
       - "uv.lock"
       - ".python-version"
       - ".github/workflows/generate-pages.yaml"
+  # Shared browser/QC code comes from claw main; refresh even without local edits.
+  schedule:
+    - cron: "17 6 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -59,6 +61,10 @@ jobs:
       - name: Install locked dependencies
         working-directory: CultureMech
         run: uv sync --frozen
+
+      - name: Verify generated corpus statistics
+        working-directory: CultureMech
+        run: uv run python scripts/update_readme_stats.py --check
 
       - name: Build browser data and normalized pages
         env:

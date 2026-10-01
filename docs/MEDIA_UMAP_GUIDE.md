@@ -21,7 +21,7 @@ UMAP is a dimensionality reduction technique that maps high-dimensional embeddin
 - Weighted mean pooling: `0.6 × ingredient_mean + 0.4 × organism_mean`
 - Only include media with ≥50% component coverage
 
-**Coverage**: ~8,000-9,000 media (out of 10,657 total)
+**Coverage**: The projection includes media with the required embedding coverage. See the [current corpus statistics](../README.md#corpus-snapshot) for normalized and merged record totals.
 
 **Advantages**:
 - Works for any media with ontology-grounded ingredients/organisms
