@@ -1,0 +1,42 @@
+id: CultureMech:015892
+name: lb_luria_bertani_agar_with_2_nacl
+original_name: LB (LURIA-BERTANI) AGAR WITH 2% NaCl
+category: bacterial
+medium_type: DEFINED
+composition_type: DEFINED
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J1500
+  term:
+    id: jcm.grmd:1500
+    label: LB (LURIA-BERTANI) AGAR WITH 2% NaCl
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1500'
+ingredients:
+- preferred_term: LB (Luria-Bertani) agar (see Medium No. 443 )
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+- preferred_term: NaCl
+  concentration:
+    value: '20.0'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-01T01:54:31.686277+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1500. Ingredients captured verbatim. CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-10-01T02:55:00+00:00'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015892'
+- timestamp: '2026-10-01T03:00:54.012976+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 75c25473d42504b86dc2cb7dd0e1bfea92f10b0dc251d25993267ea92e8d07d0
+  source: JCM_J1500_LB_LURIA_BERTANI_AGAR_WITH_2_NaCl.yaml
+merge_fingerprint: 75c25473d42504b86dc2cb7dd0e1bfea92f10b0dc251d25993267ea92e8d07d0
+merged_from:
+- JCM_J1500_LB_LURIA_BERTANI_AGAR_WITH_2_NaCl

@@ -1,0 +1,123 @@
+id: CultureMech:015913
+name: hs_rfb_borrelia_miyamotoi_medium
+original_name: HS-RFB Borrelia miyamotoi Medium
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: MediaDive Medium 1895
+  term:
+    id: mediadive.medium:1895
+    label: HS-RFB Borrelia miyamotoi Medium
+notes: 'Source: MediaDive | Link: https://mediadive.dsmz.de/rest/medium/1895'
+ingredients:
+- preferred_term: MKP medium
+  concentration:
+    value: '485.437'
+    unit: ML_PER_L
+- preferred_term: human serum, heat-inactivated
+  concentration:
+    value: '485.437'
+    unit: ML_PER_L
+- preferred_term: Bovine serum albumin
+  concentration:
+    value: '9.85437'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:705
+    label: Bovine serum albumin
+  notes: 35%
+preparation_steps: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-01T04:00:20.800555+00:00'
+  curator: mediadive-live-gap-import
+  action: Imported from live MediaDive API
+  source: https://mediadive.dsmz.de/rest/medium/1895
+  notes: Direct import from MediaDive medium 1895. Recipe rows captured from the live
+    API detail payload.
+- timestamp: '2026-10-01T04:04:39Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015913'
+- timestamp: '2026-10-01T04:07:27.733455+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2239a6493b3d9413f2762d6db3e3e06849e5de145372a25d97fca5c51aa97aaa
+  source: hs_rfb_borrelia_miyamotoi_medium.yaml
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/1895
+ph_value: 7.6
+solutions:
+- preferred_term: MKP medium
+  source: MediaDive solution 6635
+  concentration:
+    value: '485.437'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: CMRL 1066
+    concentration:
+      value: '100'
+      unit: ML_PER_L
+    term:
+      id: mediadive.compound:1680
+      label: CMRL 1066
+  - preferred_term: Neopeptone
+    concentration:
+      value: '3'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:263
+      label: Neopeptone
+  - preferred_term: HEPES
+    concentration:
+      value: '6'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:371
+      label: HEPES
+  - preferred_term: Sodium citrate
+    concentration:
+      value: '0.7'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:792
+      label: Sodium citrate
+  - preferred_term: Glucose
+    concentration:
+      value: '3'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:5
+      label: Glucose
+  - preferred_term: Sodium pyruvate
+    concentration:
+      value: '0.8'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:438
+      label: Sodium pyruvate
+  - preferred_term: N-Acetylglucosamine
+    concentration:
+      value: '0.4'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:462
+      label: N-Acetylglucosamine
+  - preferred_term: Sodium bicarbonate
+    concentration:
+      value: '2'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:2149
+      label: Sodium bicarbonate
+  preparation_notes: 'Adjust pH to 7.6 with 5 M NaOH.
+
+    Filtrate (0.45 µm).
+
+    Make up to 1000 ml with distilled water.'
+merge_fingerprint: 2239a6493b3d9413f2762d6db3e3e06849e5de145372a25d97fca5c51aa97aaa
+merged_from:
+- hs_rfb_borrelia_miyamotoi_medium

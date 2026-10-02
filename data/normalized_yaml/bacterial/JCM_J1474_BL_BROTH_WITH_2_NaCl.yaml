@@ -1,0 +1,91 @@
+id: CultureMech:015890
+name: bl_broth_with_2_nacl
+original_name: BL BROTH WITH 2% NaCl
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: JCM Medium J1474
+  term:
+    id: jcm.grmd:1474
+    label: BL BROTH WITH 2% NaCl
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1474'
+ingredients:
+- preferred_term: Lab-Lemco powder (Oxoid)
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+- preferred_term: Proteose peptone No. 3 (BD-Difco)
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+- preferred_term: Trypticase peptone (BD-BBL)
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+- preferred_term: Phytone peptone (BD-BBL)
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+- preferred_term: NaCl
+  concentration:
+    value: '20.0'
+    unit: G_PER_L
+- preferred_term: Liver extract (see below)
+  concentration:
+    value: '150.0'
+    unit: ML_PER_L
+- preferred_term: Glucose
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+- preferred_term: Soluble starch
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Solution A (see below)
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+- preferred_term: Solution B (see below)
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+- preferred_term: Tween 80
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+- preferred_term: 5% L-Cysteine·HCl·H2O solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '825.0'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust pH to 7.2.
+- step_number: 2
+  action: MIX
+  description: To prepare liver extract, put 10 g liver powder in 170 ml water, keep
+    at 50 to 60C for 1 hr, boil for 5 min, adjust pH to 7.2 and filter.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-01T01:54:30.313734+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1474. Ingredients captured verbatim. CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-10-01T02:55:00+00:00'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015890'

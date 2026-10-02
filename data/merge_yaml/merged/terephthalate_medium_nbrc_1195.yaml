@@ -1,0 +1,109 @@
+id: CultureMech:015907
+name: terephthalate_medium_nbrc_1195
+original_name: Terephthalate medium
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: NBRC Medium 1195
+  term:
+    id: nbrc.medium:1195
+    label: Terephthalate medium
+notes: 'Source: NBRC | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1195'
+ingredients:
+- preferred_term: Terephthalate
+  concentration:
+    value: '10'
+    unit: MILLIMOLAR
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.85'
+    unit: G_PER_L
+- preferred_term: Na2HPO4·7H2O
+  concentration:
+    value: '4.9'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: FeSO4·7H2O
+  concentration:
+    value: '9.5'
+    unit: MG_PER_L
+- preferred_term: MgO
+  concentration:
+    value: '10.75'
+    unit: MG_PER_L
+- preferred_term: CaCO3
+  concentration:
+    value: '2'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
+- preferred_term: ZnSO4·7H2O
+  concentration:
+    value: '1.44'
+    unit: MG_PER_L
+- preferred_term: MnSO4·4H2O
+  concentration:
+    value: '1.12'
+    unit: MG_PER_L
+- preferred_term: CuSO4·5H2O
+  concentration:
+    value: '0.25'
+    unit: MG_PER_L
+- preferred_term: CoSO4·7H2O
+  concentration:
+    value: '0.28'
+    unit: MG_PER_L
+- preferred_term: H3BO4
+  concentration:
+    value: '0.06'
+    unit: MG_PER_L
+- preferred_term: Concentrated HCl
+  concentration:
+    value: '0.0513'
+    unit: ML_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
+  term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: agar
+  notes: NBRC lists this component as optional when a solid medium is needed.
+preparation_steps: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-02T05:20:01.508978+00:00'
+  curator: nbrc-live-import
+  action: Scraped from NBRC catalogue
+  notes: Direct import from NBRC Medium 1195. Ingredients captured verbatim from the
+    live catalogue.
+- timestamp: '2026-10-01T03:40:36.654536+00:00'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015907'
+- timestamp: '2026-10-02T05:20:01.508978+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c9be88e95ac3624210a94adc6868a8869a7ac8f465c298584a40005357e77c6e
+  source: terephthalate_medium_nbrc_1195.yaml
+merge_fingerprint: c9be88e95ac3624210a94adc6868a8869a7ac8f465c298584a40005357e77c6e
+merged_from:
+- terephthalate_medium_nbrc_1195

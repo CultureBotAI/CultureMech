@@ -1,0 +1,104 @@
+id: CultureMech:015909
+name: pplo_broth_for_mycoplasma_arginini_nbrc_1407
+original_name: PPLO broth for Mycoplasma arginini
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: NBRC Medium 1407
+  term:
+    id: nbrc.medium:1407
+    label: PPLO broth for Mycoplasma arginini
+notes: 'Source: NBRC | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1407'
+ingredients:
+- preferred_term: Bacto PPLO Broth w/o CV (Difco)
+  concentration:
+    value: '14.7'
+    unit: G_PER_L
+- preferred_term: Horse serum
+  concentration:
+    value: '200'
+    unit: ML_PER_L
+- preferred_term: 25% Yeast extract solution
+  concentration:
+    value: '100'
+    unit: ML_PER_L
+- preferred_term: Phenol red
+  concentration:
+    value: '20'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:31991
+    label: phenol red
+- preferred_term: L-Arginine
+  concentration:
+    value: '2.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16467
+    label: L-arginine
+- preferred_term: L-Glutamine
+  concentration:
+    value: '1.46'
+    unit: G_PER_L
+  term:
+    id: CHEBI:18050
+    label: L-glutamine
+- preferred_term: 100X MEM Vitamins (Gibco)
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: agar
+  notes: NBRC lists this component as optional when a solid medium is needed.
+- preferred_term: Distilled water
+  concentration:
+    value: '600'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: '*Sterilize by filtration, and add to another component sterilized
+    by autoclaving.'
+- step_number: 2
+  action: MIX
+  description: '**Boil 250 g of dried baker''s yeast suspended in 1 L of distilled
+    water for 30 min, remove yeast cells by centrifugation, and sterilize by filtration.'
+- step_number: 3
+  action: MIX
+  description: '***Prepare 100 mM solution and sterilize by filtration.'
+- step_number: 4
+  action: MIX
+  description: The anaerobic growth on plates was carried out in an anaerobic jar
+    equipped with a CO2-generating gas pack (Mitsubishi Gas Chemical Company Inc.,
+    Tokyo, Japan).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-02T05:20:01.508978+00:00'
+  curator: nbrc-live-import
+  action: Scraped from NBRC catalogue
+  notes: Direct import from NBRC Medium 1407. Ingredients captured verbatim from the
+    live catalogue.
+- timestamp: '2026-10-02T05:20:01.508978+00:00'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015909'
+- timestamp: '2026-10-02T05:20:01.508978+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 60989300cf8ecf3f8b3cb6ef16c1a9b39c86bbd18f860e64001f248eeadba0cf
+  source: pplo_broth_for_mycoplasma_arginini_nbrc_1407.yaml
+ph_value: 7.1
+merge_fingerprint: 60989300cf8ecf3f8b3cb6ef16c1a9b39c86bbd18f860e64001f248eeadba0cf
+merged_from:
+- pplo_broth_for_mycoplasma_arginini_nbrc_1407

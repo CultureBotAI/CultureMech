@@ -50,6 +50,7 @@ Usage
     # write records + validate against MediaRecipe
     python scripts/import_jcm_grmd.py --grmd 1333 --out-dir data/normalized_yaml/bacterial --validate
 """
+
 from __future__ import annotations
 
 import argparse
@@ -69,6 +70,11 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 NORMALIZED_DIR = REPO_ROOT / "data" / "normalized_yaml"
 GRMD_URL = "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD={}"
 EMPTY_PAGE_MAX_BYTES = 1000  # real media pages are multi-KB; empty slots ~843 B
+SKIP_GRMDS = {
+    # GRMD 1483 starts with a Solution A stock table; the current first-table
+    # parser would publish that stock as the full ammonia-oxidizer medium.
+    1483,
+}
 
 # Unit token (as printed by JCM) -> ConcentrationUnitEnum
 UNIT_MAP = {
@@ -77,15 +83,31 @@ UNIT_MAP = {
     "µg": "MICROG_PER_L",
     "ug": "MICROG_PER_L",
     "ml": "ML_PER_L",
-    "l": "ML_PER_L",        # litres -> mL basis; value scaled ×1000 in _to_concentration
+    "l": "ML_PER_L",  # litres -> mL basis; value scaled ×1000 in _to_concentration
 }
 
 # Components that mark a medium COMPLEX (chemically undefined inputs).
 COMPLEX_MARKERS = (
-    "yeast extract", "peptone", "casamino", "tryptone", "trypticase",
-    "meat extract", "beef extract", "blood", "brain heart", "serum",
-    "casein", "rumen", "tryptose", "proteose", "lab-lemco", "malt extract",
-    "soytone", "gelatin", "digest", "infusion",
+    "yeast extract",
+    "peptone",
+    "casamino",
+    "tryptone",
+    "trypticase",
+    "meat extract",
+    "beef extract",
+    "blood",
+    "brain heart",
+    "serum",
+    "casein",
+    "rumen",
+    "tryptose",
+    "proteose",
+    "lab-lemco",
+    "malt extract",
+    "soytone",
+    "gelatin",
+    "digest",
+    "infusion",
 )
 
 
@@ -94,8 +116,7 @@ def fetch(grmd: int, *, retries: int = 3) -> str | None:
     last = None
     for attempt in range(retries):
         try:
-            req = urllib.request.Request(GRMD_URL.format(grmd),
-                                         headers={"User-Agent": "curl/8"})
+            req = urllib.request.Request(GRMD_URL.format(grmd), headers={"User-Agent": "curl/8"})
             return urllib.request.urlopen(req, timeout=30).read().decode("utf-8", "ignore")
         except Exception as e:  # noqa: BLE001 - network is best-effort
             last = e
@@ -127,8 +148,7 @@ def is_real_medium(page_html: str) -> bool:
 
 
 def parse_name(page_html: str) -> str | None:
-    m = re.search(r"<FONT SIZE=3>\s*(\d+)(?:&nbsp;|\s)+(.*?)</FONT>",
-                  page_html, re.I | re.S)
+    m = re.search(r"<FONT SIZE=3>\s*(\d+)(?:&nbsp;|\s)+(.*?)</FONT>", page_html, re.I | re.S)
     if not m:
         return None
     return _clean(m.group(2))
@@ -170,8 +190,16 @@ def parse_prep_text(page_html: str) -> list[str]:
     # drop boilerplate + trailing navigation
     text = re.sub(r"Unless otherwise stated.*?15 min\.?", "", text, flags=re.I)
     parts = [p.strip() for p in re.split(r"(?<=[.])\s+(?=[A-Z0-9])", text) if p.strip()]
-    skip = ("medium data", "search for medium", "back to", "copyright", "riken",
-            "japan collection", "dataLayer", "gtag")
+    skip = (
+        "medium data",
+        "search for medium",
+        "back to",
+        "copyright",
+        "riken",
+        "japan collection",
+        "dataLayer",
+        "gtag",
+    )
     return [p for p in parts if p and not any(s in p.lower() for s in skip) and len(p) > 4]
 
 
@@ -253,8 +281,11 @@ def build_record(grmd: int, page_html: str, cm_id: str) -> dict | None:
                     table_rows = base_rows
                     inherited_from = base
         if not table_rows:
-            print(f"  ! GRMD={grmd}: derivative medium with no resolvable base "
-                  f"table -> skipped ({name!r})", file=sys.stderr)
+            print(
+                f"  ! GRMD={grmd}: derivative medium with no resolvable base "
+                f"table -> skipped ({name!r})",
+                file=sys.stderr,
+            )
             return None
 
     physical, medium_type = classify(table_rows, name)
@@ -284,9 +315,11 @@ def build_record(grmd: int, page_html: str, cm_id: str) -> dict | None:
     }
     note = f"Source: JCM | Link: {GRMD_URL.format(grmd)}"
     if inherited_from is not None:
-        note += (f" | Derivative medium: ingredients inherited from JCM "
-                 f"GRMD={inherited_from}; apply the stated modification "
-                 f"(see preparation_steps) before use.")
+        note += (
+            f" | Derivative medium: ingredients inherited from JCM "
+            f"GRMD={inherited_from}; apply the stated modification "
+            f"(see preparation_steps) before use."
+        )
     rec["notes"] = note
     if ingredients:
         rec["ingredients"] = ingredients
@@ -296,39 +329,71 @@ def build_record(grmd: int, page_html: str, cm_id: str) -> dict | None:
             for i, s in enumerate(prep_steps)
         ]
     rec["applications"] = ["Microbial cultivation"]
-    rec["curation_history"] = [{
-        "timestamp": datetime.now(timezone.utc).isoformat(),
-        "curator": "jcm-grmd-import",
-        "action": "Scraped from JCM GRMD database",
-        "notes": (f"Direct import from JCM GRMD={grmd}. "
-                  + (f"Derivative of GRMD={inherited_from}: ingredients inherited "
-                     "from the base medium, stated modification preserved in "
-                     "preparation_steps and still to be applied. "
-                     if inherited_from is not None else
-                     "Ingredients captured verbatim. ")
-                  + "CHEBI/MediaIngredientMech enrichment and category "
-                  "(bacterial/archaea) review are downstream steps."),
-    }]
+    rec["curation_history"] = [
+        {
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "curator": "jcm-grmd-import",
+            "action": "Scraped from JCM GRMD database",
+            "notes": (
+                f"Direct import from JCM GRMD={grmd}. "
+                + (
+                    f"Derivative of GRMD={inherited_from}: ingredients inherited "
+                    "from the base medium, stated modification preserved in "
+                    "preparation_steps and still to be applied. "
+                    if inherited_from is not None
+                    else "Ingredients captured verbatim. "
+                )
+                + "CHEBI/MediaIngredientMech enrichment and category "
+                "(bacterial/archaea) review are downstream steps."
+            ),
+        }
+    ]
     return rec
 
 
 def ingested_grmd_numbers() -> set[int]:
-    # Key on the media_term id (`jcm.grmd:NNN`), not `GRMD=NNN`. The latter also
-    # appears in derivative records' notes when they inherit a base recipe
-    # ("inherited from JCM GRMD=1462"), which would mark a base GRMD as already
-    # ingested even when it has no record of its own (a false negative that
-    # hides a genuinely missing medium from --detect-missing).
-    out = subprocess.run(
-        ["grep", "-rhoE", r"jcm\.grmd:[0-9]+", str(NORMALIZED_DIR)],
-        capture_output=True, text=True,
-    ).stdout
-    return {int(x.split(":")[1]) for x in out.split()}
+    """JCM GRMD records already represented by a source medium record.
+
+    Count direct JCM imports, MediaDive's JCM mirrors, and TOGO records whose
+    own upstream medium is a JCM GRMD page. Do not count every bare ``GRMD=N``
+    mention: a derivative record can mention an unimported base recipe, and
+    cured parent/child notes can cite auxiliary stocks from unrelated JCM pages.
+    """
+    represented: set[int] = set()
+    patterns = (
+        re.compile(r"\bjcm\.grmd:(\d+)\b"),
+        re.compile(r"\bmediadive\.medium:J(\d+)\b"),
+        re.compile(r"Original URL:\s*https://www\.jcm\.riken\.jp/cgi-bin/jcm/jcm_grmd\?GRMD=(\d+)"),
+        re.compile(
+            r"Source:\s*JCM[^|\n]*\|\s*Link:\s*https://www\.jcm\.riken\.jp/cgi-bin/jcm/jcm_grmd\?GRMD=(\d+)"
+        ),
+    )
+
+    for recipe_path in NORMALIZED_DIR.glob("*/*.yaml"):
+        text = recipe_path.read_text(encoding="utf-8", errors="ignore")
+        for pattern in patterns:
+            represented.update(int(match) for match in pattern.findall(text))
+    return represented
+
+
+def existing_media_name_keys() -> set[str]:
+    """Normalized current medium names for exact title duplicate detection."""
+    names: set[str] = set()
+    for recipe_path in NORMALIZED_DIR.glob("*/*.yaml"):
+        text = recipe_path.read_text(encoding="utf-8", errors="ignore")
+        for match in re.finditer(r"^(?:name|original_name):\s*(.+?)\s*$", text, re.M):
+            value = match.group(1).strip().strip("'\"")
+            if value:
+                names.add(_snake(value))
+
+    return names
 
 
 def next_id_start() -> int:
     out = subprocess.run(
         ["grep", "-rhoE", r"^id: CultureMech:[0-9]+", str(NORMALIZED_DIR)],
-        capture_output=True, text=True,
+        capture_output=True,
+        text=True,
     ).stdout
     nums = [int(re.search(r"(\d+)", line).group(1)) for line in out.splitlines()]
     return (max(nums) + 1) if nums else 1
@@ -342,11 +407,15 @@ def detect_missing(scan_max: int, delay: float = 0.0) -> dict[int, str]:
     time. Honors ``delay`` (seconds) between network requests for politeness.
     """
     have = ingested_grmd_numbers()
-    missing_candidates = [n for n in range(1, scan_max + 1) if n not in have]
+    existing_names = existing_media_name_keys()
+    missing_candidates = [
+        n for n in range(1, scan_max + 1) if n not in have and n not in SKIP_GRMDS
+    ]
     real: dict[int, str] = {}
     for i, n in enumerate(missing_candidates):
         page = fetch(n)
-        if page and is_real_medium(page):
+        name = parse_name(page) if page else None
+        if name and _snake(name) not in existing_names:
             real[n] = page
         if delay and i < len(missing_candidates) - 1:
             time.sleep(delay)
@@ -354,21 +423,32 @@ def detect_missing(scan_max: int, delay: float = 0.0) -> dict[int, str]:
 
 
 def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description=__doc__,
-                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     src = ap.add_mutually_exclusive_group(required=True)
     src.add_argument("--grmd", type=int, nargs="+", help="Explicit GRMD numbers.")
-    src.add_argument("--detect-missing", action="store_true",
-                     help="Scan for real JCM media absent from the corpus.")
-    ap.add_argument("--scan-max", type=int, default=1500,
-                    help="Upper GRMD bound for --detect-missing (default 1500).")
+    src.add_argument(
+        "--detect-missing",
+        action="store_true",
+        help="Scan for real JCM media absent from the corpus.",
+    )
+    ap.add_argument(
+        "--scan-max",
+        type=int,
+        default=1500,
+        help="Upper GRMD bound for --detect-missing (default 1500).",
+    )
     ap.add_argument("--out-dir", type=Path, default=NORMALIZED_DIR / "bacterial")
-    ap.add_argument("--dry-run", action="store_true",
-                    help="Print parsed records; do not write files.")
-    ap.add_argument("--validate", action="store_true",
-                    help="Run linkml-validate on each written record.")
-    ap.add_argument("--delay", type=float, default=0.5,
-                    help="Seconds between JCM requests (politeness).")
+    ap.add_argument(
+        "--dry-run", action="store_true", help="Print parsed records; do not write files."
+    )
+    ap.add_argument(
+        "--validate", action="store_true", help="Run linkml-validate on each written record."
+    )
+    ap.add_argument(
+        "--delay", type=float, default=0.5, help="Seconds between JCM requests (politeness)."
+    )
     args = ap.parse_args(argv)
 
     page_cache: dict[int, str] = {}
@@ -385,6 +465,10 @@ def main(argv: list[str] | None = None) -> int:
     skipped: list[int] = []
 
     for grmd in grmds:
+        if grmd in SKIP_GRMDS:
+            print(f"  - GRMD={grmd}: known multi-table page -> skipped")
+            skipped.append(grmd)
+            continue
         # Reuse the page already fetched during --detect-missing; only hit the
         # network when we have no cached copy.
         page = page_cache.get(grmd)
@@ -414,10 +498,12 @@ def main(argv: list[str] | None = None) -> int:
         yaml_text = dump_record(rec)
 
         if args.dry_run:
-            print(f"\n[DRY RUN] GRMD={grmd} -> {out_path.relative_to(REPO_ROOT)}  "
-                  f"({cm_id}, {len(rec.get('ingredients', []))} ingredients, "
-                  f"{rec['physical_state']}, {rec['medium_type']}, "
-                  f"pH={rec.get('ph_value', '-')})")
+            print(
+                f"\n[DRY RUN] GRMD={grmd} -> {out_path.relative_to(REPO_ROOT)}  "
+                f"({cm_id}, {len(rec.get('ingredients', []))} ingredients, "
+                f"{rec['physical_state']}, {rec['medium_type']}, "
+                f"pH={rec.get('ph_value', '-')})"
+            )
             print("    name:", rec["original_name"])
             continue
 
@@ -436,19 +522,32 @@ def main(argv: list[str] | None = None) -> int:
         ok = 0
         for p in written:
             r = subprocess.run(
-                ["uv", "run", "--extra", "dev", "linkml-validate",
-                 "-s", str(schema), "-C", "MediaRecipe", str(p)],
-                capture_output=True, text=True, cwd=REPO_ROOT,
+                [
+                    "uv",
+                    "run",
+                    "--extra",
+                    "dev",
+                    "linkml-validate",
+                    "-s",
+                    str(schema),
+                    "-C",
+                    "MediaRecipe",
+                    str(p),
+                ],
+                capture_output=True,
+                text=True,
+                cwd=REPO_ROOT,
             )
-            status = "OK" if r.returncode == 0 else "FAIL"
             if r.returncode == 0:
                 ok += 1
             else:
                 print(f"  [FAIL] {p.name}\n{r.stdout}\n{r.stderr}")
         print(f"  validated {ok}/{len(written)} records")
 
-    print(f"\nDone. written={len(written)} skipped={len(skipped)}"
-          + (f"  skipped GRMD={skipped}" if skipped else ""))
+    print(
+        f"\nDone. written={len(written)} skipped={len(skipped)}"
+        + (f"  skipped GRMD={skipped}" if skipped else "")
+    )
     return 0
 
 

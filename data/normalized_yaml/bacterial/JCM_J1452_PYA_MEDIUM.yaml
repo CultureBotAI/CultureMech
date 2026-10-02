@@ -1,0 +1,55 @@
+id: CultureMech:015887
+name: pya_medium
+original_name: PYA MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 10.0
+media_term:
+  preferred_term: JCM Medium J1452
+  term:
+    id: jcm.grmd:1452
+    label: PYA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1452'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '8.0'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+- preferred_term: 1 M NaHCO3/Na2CO3 buffer (pH 10.0)
+  concentration:
+    value: '100.0'
+    unit: ML_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '900.0'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Separately autoclave 1 M NaHCO3/Na2CO3 buffer (pH 10.0), aseptically
+    add to the medium (final conc.
+- step_number: 2
+  action: MIX
+  description: 100 mM).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-01T01:54:27.077244+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1452. Ingredients captured verbatim. CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-10-01T02:55:00+00:00'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015887'

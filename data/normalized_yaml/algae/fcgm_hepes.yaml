@@ -1,0 +1,111 @@
+id: CultureMech:015894
+name: fcgm_hepes
+original_name: FCGM + HEPES
+category: algae
+sources:
+- database: CCAP
+  database_id: FCGM
+  url: https://www.ccap.ac.uk/wp-content/uploads/MR_FCGM.pdf
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 7.0
+description: HEPES-buffered Freshwater Cereal Grass Medium from the CCAP FCGM medium
+  sheet.
+notes: CCAP prepares this buffered FCGM variant by making 50 mM HEPES in deionised
+  water at pH 7.0, then boiling, steeping, filtering, and autoclaving Ward's cereal
+  grass leaves in that buffer.
+ingredients:
+- preferred_term: Deionised water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: CCAP lists 500 mL deionised water per 500 mL medium.
+- preferred_term: HEPES
+  concentration:
+    value: '11.9'
+    unit: G_PER_L
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  notes: CCAP lists 5.95 g HEPES per 500 mL medium to make a 50 mM HEPES
+    solution.
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: Cereal grass leaves
+  concentration:
+    value: '1.25'
+    unit: G_PER_L
+  source: CCAP Medium MR_FCGM.pdf
+  notes: Ward's cereal grass leaves; CCAP lists 0.625 g per 500 mL medium.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Make a 50 mM HEPES solution with deionised water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust the HEPES solution to pH 7.0 with 1 M NaOH or 1 M HCl.
+- step_number: 3
+  action: HEAT
+  description: Bring the pH-adjusted HEPES solution to the boil.
+- step_number: 4
+  action: MIX
+  description: Add the cereal grass leaves, boil for 5 minutes, then leave to steep
+    for 3 hours.
+- step_number: 5
+  action: FILTER
+  description: Filter through a Buchner funnel.
+- step_number: 6
+  action: AUTOCLAVE
+  description: Autoclave at 15 psi for 15 minutes.
+applications:
+- Protozoa cultivation
+parent_media:
+  id: CultureMech:015893
+  name: fcgm_freshwater_cereal_grass_medium
+  path: data/normalized_yaml/algae/fcgm_freshwater_cereal_grass_medium.yaml
+  relationship: SUPPLEMENTED_VARIANT
+  notes: Adds 50 mM HEPES buffer at pH 7.0 to the FCGM cereal-grass recipe.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Add 11.9 g/L HEPES.
+- Adjust to pH 7.0 with 1 M NaOH or 1 M HCl before boiling the cereal grass leaves.
+sterilization:
+  method: AUTOCLAVE
+  pressure: 15
+  duration: 15 minutes
+curation_history:
+- timestamp: '2026-10-01T02:46:22+00:00'
+  curator: codex-agent
+  action: ADDED_CCAP_MISSING_ALGAE_MEDIUM
+  source: CCAP:FCGM; https://www.ccap.ac.uk/wp-content/uploads/MR_FCGM.pdf
+  changes: Added CCAP FCGM + HEPES recipe from the live CCAP medium sheet
+  notes: Live CCAP index advertised FCGM and the exact CCAP FCGM + HEPES formulation
+    was absent from data/normalized_yaml before this add-only curation pass.
+- timestamp: '2026-10-01T02:55:00+00:00'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015894'
+references:
+- reference: CCAP:FCGM
+  title: FCGM + HEPES
+  authors: Culture Collection of Algae and Protozoa
+  year: 2026
+  notes: HEPES-buffered formulation on CCAP medium sheet MR_FCGM.pdf.
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_FCGM.pdf
+- reference: McFadden and Melkonian 1986
+  title: Use of Hepes buffer for microalgal culture media and fixation for electron
+    microscopy
+  authors: G. I. McFadden; M. Melkonian
+  year: 1986
+  notes: Phycologia 25(4), 551-557; cited by CCAP as adapted for FCGM.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated

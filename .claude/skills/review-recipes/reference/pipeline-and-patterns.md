@@ -49,9 +49,12 @@ just validate-schema data/normalized_yaml/bacterial/LB_Broth.yaml
 # 2. Interactive review
 /review-recipes "LB_Broth"
 
-# 3. Check for duplicates
-PYTHONPATH=src python scripts/detect_duplicate_recipes.py \
-  --target data/normalized_yaml/bacterial/LB_Broth.yaml
+# 3. Refresh exact/close-variant candidates and inspect any LB_Broth hits
+just review-media-content
+just propose-media-variant-links
+rg --no-ignore --hidden -n "LB_Broth|LB Broth|Luria" \
+  reports/media_content_review_manifest.tsv \
+  reports/media_variant_link_proposals.tsv
 
 # 4. Coverage check
 PYTHONPATH=src python scripts/generate_coverage_report.py \
@@ -171,4 +174,3 @@ PYTHONPATH=src python scripts/generate_coverage_report.py \
 ```
 
 ---
-

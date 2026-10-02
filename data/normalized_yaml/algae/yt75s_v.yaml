@@ -1,0 +1,124 @@
+id: CultureMech:015896
+name: yt75s_v
+original_name: YT75S+V
+category: algae
+sources:
+- database: CCAP
+  database_id: YT75S_V
+  url: https://www.ccap.ac.uk/wp-content/uploads/MR_YT75S_V.pdf
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+description: CCAP Yeast Tryptone - 75% Seawater + Vitamins medium for heterotrophic
+  diatoms.
+notes: CCAP prepares YT75S+V from 75% natural filtered seawater with tryptone, yeast
+  extract, and f/2 stock 4 vitamin mix.
+ingredients:
+- preferred_term: Natural filtered seawater
+  concentration:
+    value: '750.0'
+    unit: ML_PER_L
+  term:
+    id: ENVO:00002149
+    label: sea water
+  notes: CCAP lists 750 mL natural filtered seawater per liter.
+  physicochemical_roles:
+  - OSMOTIC_AGENT
+- preferred_term: Deionised water
+  concentration:
+    value: '250.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: CCAP lists 250 mL deionised water per liter.
+- preferred_term: Tryptone
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  source: CCAP Medium MR_YT75S_V.pdf
+  notes: CCAP lists 0.05 g/L tryptone.
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  source: CCAP Medium MR_YT75S_V.pdf
+  notes: CCAP lists 0.01 g/L yeast extract.
+solutions:
+- preferred_term: f/2 stock 4 Vitamin mix
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Cyanocobalamin (Vitamin B12)
+    concentration:
+      value: '0.0005'
+      unit: G_PER_L
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+  - preferred_term: Biotin
+    concentration:
+      value: '0.0005'
+      unit: G_PER_L
+    term:
+      id: CHEBI:15956
+      label: biotin
+  - preferred_term: Thiamine HCl (Vitamin B1)
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+  notes: CCAP adds 1 mL/L f/2 stock 4 Vitamin mix and lists these stock concentrations
+    per liter.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Make up the 75% seawater from natural filtered seawater and deionised
+    water.
+- step_number: 2
+  action: HEAT
+  description: Gently heat the 75% seawater but do not bring it to the boil.
+- step_number: 3
+  action: DISSOLVE
+  description: Add and dissolve the tryptone and yeast extract.
+- step_number: 4
+  action: MIX
+  description: Add the f/2 stock 4 Vitamin mix.
+- step_number: 5
+  action: AUTOCLAVE
+  description: Autoclave at 15 psi for 15 minutes.
+applications:
+- Heterotrophic diatom cultivation
+sterilization:
+  method: AUTOCLAVE
+  pressure: 15
+  duration: 15 minutes
+curation_history:
+- timestamp: '2026-10-01T02:46:22+00:00'
+  curator: codex-agent
+  action: ADDED_CCAP_MISSING_ALGAE_MEDIUM
+  source: CCAP:YT75S_V; https://www.ccap.ac.uk/wp-content/uploads/MR_YT75S_V.pdf
+  changes: Added CCAP YT75S+V recipe from the live CCAP medium sheet
+  notes: Live CCAP index advertised YT75S_V and the exact CCAP:YT75S_V source was
+    absent from data/normalized_yaml before this add-only curation pass.
+- timestamp: '2026-10-01T02:55:00+00:00'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015896'
+references:
+- reference: CCAP:YT75S_V
+  title: YT75S+V (Yeast Tryptone - 75% Seawater + Vitamins)
+  authors: Culture Collection of Algae and Protozoa
+  year: 2026
+  notes: CCAP medium sheet MR_YT75S_V.pdf; recipe devised by CCAP.
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_YT75S_V.pdf
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated

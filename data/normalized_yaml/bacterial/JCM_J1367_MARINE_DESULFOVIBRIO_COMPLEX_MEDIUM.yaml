@@ -1,0 +1,56 @@
+id: CultureMech:015885
+name: marine_desulfovibrio_complex_medium
+original_name: MARINE DESULFOVIBRIO COMPLEX MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1367
+  term:
+    id: jcm.grmd:1367
+    label: MARINE DESULFOVIBRIO COMPLEX MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1367'
+ingredients:
+- preferred_term: Sea salts (Sigma)
+  concentration:
+    value: '35.0'
+    unit: G_PER_L
+- preferred_term: Wolfe's mineral elixir (see Medium No. 470 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '0.5'
+    unit: MG_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '945.0'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix components thoroughly and autoclave under a N2 atmosphere.
+- step_number: 2
+  action: MIX
+  description: 'Aseptically and anaerobically add the following solutions from sterile
+    anaerobic stock solutions (autoclaved or *filter-sterilized): Distribute the medium
+    into culture vessels (e.g., 10 ml in Hungate tubes) under a stream of N2-CO2 (4:1,
+    v/v) gas mixture and seal with butyl rubber stoppers.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-01T01:54:22.709791+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1367. Ingredients captured verbatim. CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-10-01T02:55:00+00:00'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015885'

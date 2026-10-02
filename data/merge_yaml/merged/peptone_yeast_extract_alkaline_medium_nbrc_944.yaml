@@ -1,0 +1,93 @@
+id: CultureMech:015905
+name: peptone_yeast_extract_alkaline_medium_nbrc_944
+original_name: Peptone Yeast Extract Alkaline Medium
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: NBRC Medium 944
+  term:
+    id: nbrc.medium:944
+    label: Peptone Yeast Extract Alkaline Medium
+notes: 'Source: NBRC | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=944'
+ingredients:
+- preferred_term: Bacto Peptone (Difco)
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: EDTA-2Na
+  concentration:
+    value: '3.5'
+    unit: MG_PER_L
+- preferred_term: ZnSO4·7H2O
+  concentration:
+    value: '3'
+    unit: MG_PER_L
+- preferred_term: FeSO4·7H2O
+  concentration:
+    value: '10'
+    unit: MG_PER_L
+- preferred_term: MnSO4·nH2O
+  concentration:
+    value: '2'
+    unit: MG_PER_L
+- preferred_term: CuSO4·5H2O
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+- preferred_term: Co(NO3)2·6H2O
+  concentration:
+    value: '2'
+    unit: MG_PER_L
+- preferred_term: H3BO3
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: agar
+  notes: NBRC lists this component as optional when a solid medium is needed.
+- preferred_term: 100 mM NaHCO3/100 mM Na2CO3 buffer (pH 10)
+  concentration:
+    value: '1'
+    unit: L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH unadjusted
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-02T05:20:01.508978+00:00'
+  curator: nbrc-live-import
+  action: Scraped from NBRC catalogue
+  notes: Direct import from NBRC Medium 944. Ingredients captured verbatim from the
+    live catalogue.
+- timestamp: '2026-10-01T03:40:36.654536+00:00'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015905'
+- timestamp: '2026-10-02T05:20:01.508978+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6ae714006518375cfa45dc62977e7b9b29ee72d462f061db40300100e5682f3e
+  source: peptone_yeast_extract_alkaline_medium_nbrc_944.yaml
+merge_fingerprint: 6ae714006518375cfa45dc62977e7b9b29ee72d462f061db40300100e5682f3e
+merged_from:
+- peptone_yeast_extract_alkaline_medium_nbrc_944

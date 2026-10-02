@@ -5,11 +5,14 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
+ph_range:
+  min: 6.0
+  max: 7.0
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
+    value: '1.0'
+    unit: L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
   term:
@@ -101,7 +104,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Undefined component'
 - preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
+  notes: NBRC Medium 1520 uses an N2/CO2 atmosphere for anaerobic liquid dispensing;
+    retained as a variable gas-phase component.
   concentration:
     value: variable
     unit: VARIABLE
@@ -109,13 +113,26 @@ ingredients:
     id: CHEBI:16526
     label: carbon dioxide
 - preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
+  notes: NBRC Medium 1520 uses an N2/CO2 atmosphere for anaerobic liquid dispensing;
+    retained as a variable gas-phase component.
   concentration:
     value: variable
     unit: VARIABLE
   term:
     id: CHEBI:17997
     label: dinitrogen
+preparation_steps:
+- step_number: 1
+  action: ALIQUOT
+  description: Dispense the liquid medium under an N2/CO2 atmosphere.
+- step_number: 2
+  action: ALIQUOT
+  description: Seal the dispensed medium with butyl rubber stoppers.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 20 min.
+sterilization:
+  method: AUTOCLAVE
 media_term:
   preferred_term: TOGO Medium M3042
   term:
@@ -128,6 +145,9 @@ notes: 'Source: https://togomedium.org/medium/M3042
   Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1520'
 applications:
 - Microbial cultivation
+references:
+- reference: https://togomedium.org/medium/M3042
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1520
 curation_history:
 - timestamp: '2026-01-27T06:35:59.226011Z'
   curator: togo-import
@@ -175,11 +195,30 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-- timestamp: '2026-08-06T03:05:14.437147+00:00'
+- timestamp: '2026-09-30T00:00:00-07:00'
+  curator: repair_togo_nbrc_water_ph_review_batch.py
+  action: RESOLVED_TOGO_M3042_NBRC1520_REVIEW
+  source: https://togomedium.org/medium/M3042; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1520
+  notes: Corrected TOGO/NBRC Distilled water from the imported 1 g/L to the source
+    1 L final-volume row, restored the NBRC 1520 pH 6-7 range, preserved the N2/CO2
+    butyl-stopper autoclave instruction, and linked TOGO M3041 as the solid physical-state
+    variant.
+- timestamp: '2026-09-30T20:37:21.910707+00:00'
   curator: merge_recipes.py
   action: MERGED_RECIPES
-  notes: merged 1 source recipe(s) on fingerprint c1f1d61bb0103e84f68cee0139a8311533add8d85e194d3562532208834f27c4
+  notes: merged 1 source recipe(s) on fingerprint 4622984f1f66edbabae7a0659e3d96c062d9e03e2da9c87ce050cfb74b93d768
   source: TOGO_M3042_R2A_fumarate_anaerobic.yaml
-merge_fingerprint: c1f1d61bb0103e84f68cee0139a8311533add8d85e194d3562532208834f27c4
+parent_media:
+  path: data/normalized_yaml/bacterial/r2a_fumarate_anaerobic.yaml
+  relationship: PHYSICAL_STATE_VARIANT
+  id: CultureMech:009554
+  name: r2a_fumarate_anaerobic
+  notes: TOGO M3041 is the solid agar NBRC Medium 1520 R2A + fumarate projection with
+    the optional 15 g/L agar row.
+variant_relationship: PHYSICAL_STATE_VARIANT
+variant_modifications:
+- Omits the optional 15 g/L agar row from TOGO M3041 and follows NBRC Medium 1520's
+  anaerobic liquid dispensing instruction under an N2/CO2 atmosphere.
+merge_fingerprint: 4622984f1f66edbabae7a0659e3d96c062d9e03e2da9c87ce050cfb74b93d768
 merged_from:
 - TOGO_M3042_R2A_fumarate_anaerobic

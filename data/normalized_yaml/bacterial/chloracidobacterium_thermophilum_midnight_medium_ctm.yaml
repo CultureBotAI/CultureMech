@@ -1,0 +1,588 @@
+id: CultureMech:015911
+name: chloracidobacterium_thermophilum_midnight_medium_ctm
+original_name: Chloracidobacterium thermophilum Midnight Medium (CTM-Medium)
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: MediaDive Medium 1783
+  term:
+    id: mediadive.medium:1783
+    label: Chloracidobacterium thermophilum Midnight Medium (CTM-Medium)
+notes: 'Source: MediaDive | Link: https://mediadive.dsmz.de/rest/medium/1783'
+ingredients:
+- preferred_term: Solution 1
+  concentration:
+    value: '20'
+    unit: ML_PER_L
+- preferred_term: Solution 2
+  concentration:
+    value: '3'
+    unit: ML_PER_L
+- preferred_term: Solution 3
+  concentration:
+    value: '2'
+    unit: ML_PER_L
+- preferred_term: Solution 4
+  concentration:
+    value: '2.5'
+    unit: ML_PER_L
+- preferred_term: HEPES buffer
+  concentration:
+    value: '2.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:461
+    label: HEPES buffer
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.625'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  notes: or 10 mL of a 6.25% solution in water
+- preferred_term: Na-thioglycolate
+  concentration:
+    value: '0.125'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:30
+    label: Na-thioglycolate
+  notes: or use 1 mL of a 12.5% solution in water, autoclaved under a N2 gasphase
+- preferred_term: Solution 5
+  concentration:
+    value: '0.5'
+    unit: ML_PER_L
+- preferred_term: Solution 6
+  concentration:
+    value: '20'
+    unit: ML_PER_L
+- preferred_term: Vitamin solution A (1000 x stock)
+  concentration:
+    value: '0.25'
+    unit: ML_PER_L
+- preferred_term: Vitamin solution B (1000 x stock)
+  concentration:
+    value: '0.25'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: The CTM-Medium consists of two parts. Part one is autoclavable and
+    called CTM-Medium basis. Part two is named mixed solution and contains non-autoclavable
+    components. Solid CTM-Medium contains 1% three times washed Bactoagar and is added
+    to the CTM-Medium basis prior autoclaving.
+- step_number: 2
+  action: MIX
+  description: 'Note: Bacto peptone can be omitted with only using amino acids as
+    carbon source, which will maker it a defined medium. Amount of amino acids will
+    then have to be increased to 100mg/L each.'
+- step_number: 3
+  action: MIX
+  description: Make up to 970 ml with distilled water.
+- step_number: 4
+  action: MIX
+  description: Adjust pH to 7.0 with NaOH (2M).
+- step_number: 5
+  action: MIX
+  description: Autoclave at 121 °C for 20 min.
+- step_number: 6
+  action: MIX
+  description: Seal medium bottle immediately after autoclaving in order to avoid
+    oxygenation.
+- step_number: 7
+  action: MIX
+  description: Cool down to 70 °C (in a water bath).
+- step_number: 8
+  action: MIX
+  description: Add mixed solution to the CTM basis for completing the CTM-Medium (30
+    mL),
+- step_number: 9
+  action: MIX
+  description: 'Note: Always prepare freshly! Mix the following components (e.g.,
+    in a volume of approx. 30 mL) and add the filter sterilized mixture to the autoclaved
+    CTM-Medium basis:'
+- step_number: 10
+  action: MIX
+  description: Keep CTM-Medium tightly sealed and between 50-70˚C prior usage.
+- step_number: 11
+  action: MIX
+  description: It is strongly recommended to use up the CTM-Medium as soon as possible
+    after preparation! Short term storage of CTM-Medium basis possible under strictly
+    anaerobic conditions. Mixed solutions should then be added freshly before use.
+- step_number: 12
+  action: MIX
+  description: Pour CTM-Medium into flasks, bottles or similar and leave a quarter
+    air headspace and seal them.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-01T04:00:20.760278+00:00'
+  curator: mediadive-live-gap-import
+  action: Imported from live MediaDive API
+  source: https://mediadive.dsmz.de/rest/medium/1783
+  notes: Direct import from MediaDive medium 1783. Recipe rows captured from the live
+    API detail payload.
+- timestamp: '2026-10-01T04:04:39Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015911'
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/1783
+ph_value: 7.0
+solutions:
+- preferred_term: Solution 1
+  source: MediaDive solution 5922
+  concentration:
+    value: '20'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '3.75'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:8
+      label: MgSO4 x 7 H2O
+  - preferred_term: CaCl2 x 2 H2O
+    concentration:
+      value: '1.8'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:7
+      label: CaCl2 x 2 H2O
+  - preferred_term: Citric acid
+    concentration:
+      value: '0.3'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:348
+      label: Citric acid
+  - preferred_term: Na-EDTA x 2 H2O
+    concentration:
+      value: '5.04309'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:890
+      label: Na-EDTA x 2 H2O
+    notes: pH 8, 0,25 M
+  solutions:
+  - preferred_term: Trace metal solution
+    source: MediaDive solution 5936
+    concentration:
+      value: '50'
+      unit: ML_PER_L
+    composition:
+    - preferred_term: H3BO3
+      concentration:
+        value: '2.86'
+        unit: G_PER_L
+      term:
+        id: mediadive.compound:37
+        label: H3BO3
+    - preferred_term: MnCl2 x 4 H2O
+      concentration:
+        value: '1.81'
+        unit: G_PER_L
+      term:
+        id: mediadive.compound:36
+        label: MnCl2 x 4 H2O
+    - preferred_term: ZnSO4 x 7 H2O
+      concentration:
+        value: '0.222'
+        unit: G_PER_L
+      term:
+        id: mediadive.compound:35
+        label: ZnSO4 x 7 H2O
+    - preferred_term: Na2MoO4 x 2 H2O
+      concentration:
+        value: '0.39'
+        unit: G_PER_L
+      term:
+        id: mediadive.compound:9
+        label: Na2MoO4 x 2 H2O
+    - preferred_term: CuSO4 x 5 H2O
+      concentration:
+        value: '0.079'
+        unit: G_PER_L
+      term:
+        id: mediadive.compound:121
+        label: CuSO4 x 5 H2O
+    - preferred_term: Co(NO3)2 x 6 H2O
+      concentration:
+        value: '0.049'
+        unit: G_PER_L
+      term:
+        id: mediadive.compound:541
+        label: Co(NO3)2 x 6 H2O
+    - preferred_term: Distilled water
+      concentration:
+        value: '1000'
+        unit: ML_PER_L
+      term:
+        id: mediadive.compound:4
+        label: Distilled water
+  preparation_notes: 'This is a 50x stock stock solution.
+
+    Make up to 1000 ml with distilled water.
+
+    Autoclave at 121 °C for 20 min.'
+- preferred_term: Solution 2
+  source: MediaDive solution 5923
+  concentration:
+    value: '3'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: K2HPO4
+    concentration:
+      value: '15.3'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:10
+      label: K2HPO4
+  preparation_notes: 'Make up to 1000 ml with distilled water.
+
+    Autoclave at 121 °C for 20 min.'
+- preferred_term: Solution 3
+  source: MediaDive solution 5924
+  concentration:
+    value: '2'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Ferric ammonium citrate
+    concentration:
+      value: '11.9522'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:97
+      label: Ferric ammonium citrate
+  preparation_notes: 'Make up to 1000 ml with distilled water.
+
+    Autoclave at 121 °C for 20 min.'
+- preferred_term: Solution 4
+  source: MediaDive solution 5925
+  concentration:
+    value: '2.5'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: 2-Oxoglutarate
+    concentration:
+      value: '14.6'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:1992
+      label: 2-Oxoglutarate
+  preparation_notes: 'Make up to 1000 ml with distilled water.
+
+    Autoclave at 121 °C for 20 min.'
+- preferred_term: Solution 5
+  source: MediaDive solution 5935
+  concentration:
+    value: '0.5'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Bacto peptone
+    concentration:
+      value: '100'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:19
+      label: Bacto peptone
+    notes: BD-Difco
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: mediadive.compound:4
+      label: Distilled water
+  preparation_notes: Autoclave at 121 °C for 20 min.
+- preferred_term: Solution 6
+  source: MediaDive solution 5934
+  concentration:
+    value: '20'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: L-Alanine
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:274
+      label: L-Alanine
+  - preferred_term: L-Arginine
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:1327
+      label: L-Arginine
+  - preferred_term: L-Asparagine
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:829
+      label: L-Asparagine
+  - preferred_term: L-Aspartic acid
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:1328
+      label: L-Aspartic acid
+  - preferred_term: L-Cysteine
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:671
+      label: L-Cysteine
+  - preferred_term: L-Glutamic acid
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:374
+      label: L-Glutamic acid
+  - preferred_term: L-Glutamine
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:134
+      label: L-Glutamine
+  - preferred_term: Glycine
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:358
+      label: Glycine
+  - preferred_term: L-Histidine
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:132
+      label: L-Histidine
+  - preferred_term: L-Isoleucine
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:447
+      label: L-Isoleucine
+  - preferred_term: L-Leucine
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:446
+      label: L-Leucine
+  - preferred_term: L-Lysine
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:1973
+      label: L-Lysine
+  - preferred_term: L-Methionine
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:1330
+      label: L-Methionine
+  - preferred_term: L-Phenylalanine
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:1332
+      label: L-Phenylalanine
+  - preferred_term: L-Proline
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:1130
+      label: L-Proline
+  - preferred_term: L-Serine
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:133
+      label: L-Serine
+  - preferred_term: L-Threonine
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:658
+      label: L-Threonine
+  - preferred_term: L-Tryptophan
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:449
+      label: L-Tryptophan
+  - preferred_term: L-Tyrosine
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:1333
+      label: L-Tyrosine
+  - preferred_term: L-Valine
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:1334
+      label: L-Valine
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: mediadive.compound:4
+      label: Distilled water
+- preferred_term: Vitamin solution A (1000 x stock)
+  source: MediaDive solution 5932
+  concentration:
+    value: '0.25'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:46
+      label: Biotin
+  - preferred_term: Riboflavin
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:136
+      label: Riboflavin
+  - preferred_term: Thiamine HCl
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:1207
+      label: Thiamine HCl
+  - preferred_term: Thiamine pyrophosphate
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:778
+      label: Thiamine pyrophosphate
+  - preferred_term: L-Ascorbic acid
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:701
+      label: L-Ascorbic acid
+  - preferred_term: Calcium pantothenate
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:518
+      label: Calcium pantothenate
+  - preferred_term: Folic acid
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:138
+      label: Folic acid
+  - preferred_term: Nicotinamide
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:337
+      label: Nicotinamide
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:139
+      label: Nicotinic acid
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:47
+      label: p-Aminobenzoic acid
+  - preferred_term: Pyridoxine hydrochloride
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:519
+      label: Pyridoxine hydrochloride
+  - preferred_term: Lipoic acid
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:368
+      label: Lipoic acid
+  - preferred_term: beta-NAD
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:1798
+      label: beta-NAD
+  - preferred_term: Potassium phosphate buffer
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: mediadive.compound:275
+      label: Potassium phosphate buffer
+    notes: pH 7.2, 10 mM
+  preparation_notes: 'Dissolve the vitamins in 10mM phosphate buffer, pH7.2.
+
+    Titrate with NaOH until vitamins are dissolved, filter sterilize afterwards, and
+    freeze in appropriate aliquots until usage.'
+- preferred_term: Vitamin solution B (1000 x stock)
+  source: MediaDive solution 5933
+  concentration:
+    value: '0.25'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    term:
+      id: mediadive.compound:18
+      label: Vitamin B12
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    term:
+      id: mediadive.compound:4
+      label: Distilled water
+  preparation_notes: 'Dissolve the vitamin B12 in water.
+
+    Titrate with HCl until vitamin B12 is dissolved, filter sterilize afterwards,
+    and freeze in appropriate aliquots until usage.'
+description: First described in Tank et al. 2015 for Chloracidobacterium thermophilum

@@ -1,0 +1,225 @@
+id: CultureMech:015908
+name: thermotoga_thermarum_medium_nbrc_1199
+original_name: Thermotoga thermarum Medium
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: NBRC Medium 1199
+  term:
+    id: nbrc.medium:1199
+    label: Thermotoga thermarum Medium
+notes: 'Source: NBRC | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1199'
+ingredients:
+- preferred_term: Soluble starch
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:28017
+    label: Starch
+- preferred_term: Bacto Yeast Extract (Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.88'
+    unit: G_PER_L
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '0.69'
+    unit: G_PER_L
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+- preferred_term: KCl
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Na2-EDTA
+  concentration:
+    value: '0.768'
+    unit: G_PER_L
+- preferred_term: Trace minerals
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+- preferred_term: (NH4)2Ni(SO4)2
+  concentration:
+    value: '3'
+    unit: MG_PER_L
+- preferred_term: NaBr
+  concentration:
+    value: '12.5'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:63004
+    label: sodium bromide
+- preferred_term: H3BO3
+  concentration:
+    value: '3.8'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: SrCl2·6H2O
+  concentration:
+    value: '1.9'
+    unit: MG_PER_L
+- preferred_term: KI
+  concentration:
+    value: '0.006'
+    unit: MG_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Na2S·9H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
+  term:
+    id: CHEBI:15377
+    label: water
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix ingredients except Na2S·9H2O, adjust pH to 7.0 with NaOH and autoclaved
+    under a N2 atmosphere. Separately autoclave and neutralize Na2S·9H2O as 5% solution
+    under a N2 atmosphere. Anaerobically add  Na2S·9H2O solution.
+- step_number: 2
+  action: MIX
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Final pH 7.0 (with KOH).
+- step_number: 3
+  action: MIX
+  description: '**The sulfide is prepared in a vessel sealed with a butyl rubber stopper.
+    Autoclave under a N2 atmosphere. After cooling, the pH is adjusted to about 7.3
+    by adding of sterile 4-0.2 N H2SO4 drop-wise with a syringe without opening the
+    bottle. Appearance of yellow color indicate the pH is about 8. The vessel should
+    be shaken continuously to avoid precipitation of elemental sulfur. The final solution
+    should be transparent yellow.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-02T05:20:01.508978+00:00'
+  curator: nbrc-live-import
+  action: Scraped from NBRC catalogue
+  notes: Direct import from NBRC Medium 1199. Ingredients captured verbatim from the
+    live catalogue.
+- timestamp: '2026-10-02T05:20:01.508978+00:00'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015908'
+- timestamp: '2026-10-02T05:20:01.508978+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b2049dcbb04a5e2a88e112e04053fd84a16ac1a5b766c927af7f871a160ee8e4
+  source: thermotoga_thermarum_medium_nbrc_1199.yaml
+ph_value: 7.0
+solutions:
+- preferred_term: Trace minerals
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Nitrilotriacetic acid
+    concentration:
+      value: '1.5'
+      unit: G_PER_L
+  - preferred_term: MgSO4·7H2O
+    concentration:
+      value: '3'
+      unit: G_PER_L
+  - preferred_term: MnSO4·2H2O
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+  - preferred_term: NaCl
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: FeSO4·7H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+  - preferred_term: CoSO4·7H2O
+    concentration:
+      value: '0.18'
+      unit: G_PER_L
+  - preferred_term: CaCl2·2H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+  - preferred_term: ZnSO4·7H2O
+    concentration:
+      value: '0.18'
+      unit: G_PER_L
+  - preferred_term: CuSO4·5H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: Na2MoO4·2H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+  - preferred_term: NiCl2·6H2O
+    concentration:
+      value: '0.025'
+      unit: G_PER_L
+  - preferred_term: Na2SeO3·5H2O
+    concentration:
+      value: '0.8'
+      unit: MG_PER_L
+  - preferred_term: Na2WO4
+    concentration:
+      value: '0.8'
+      unit: MG_PER_L
+  - preferred_term: KAl(SO4)2·12H2O
+    concentration:
+      value: '4'
+      unit: MG_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+    term:
+      id: CHEBI:15377
+      label: water
+merge_fingerprint: b2049dcbb04a5e2a88e112e04053fd84a16ac1a5b766c927af7f871a160ee8e4
+merged_from:
+- thermotoga_thermarum_medium_nbrc_1199

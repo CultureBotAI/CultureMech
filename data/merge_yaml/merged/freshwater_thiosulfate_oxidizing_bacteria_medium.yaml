@@ -1,0 +1,65 @@
+id: CultureMech:015883
+name: freshwater_thiosulfate_oxidizing_bacteria_medium
+original_name: FRESHWATER THIOSULFATE-OXIDIZING BACTERIA MEDIUM
+category: bacterial
+medium_type: DEFINED
+composition_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: JCM Medium J1347
+  term:
+    id: jcm.grmd:1347
+    label: FRESHWATER THIOSULFATE-OXIDIZING BACTERIA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1347'
+ingredients:
+- preferred_term: Modified Wolfe's solution (see Medium No. 628 )
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+- preferred_term: Trace minerals (see Medium No. 151 )
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix components and autoclave.
+- step_number: 2
+  action: MIX
+  description: 'Aseptically add per liter the following solutions from sterile stocks
+    (autoclaved or *filter-sterilized): Check final pH to be 6.0-6.5.'
+- step_number: 3
+  action: MIX
+  description: Dispense into culture vessels, replace the gas phase with a N2-CO2-O2
+    (79:20:1, v/v/v) gas mixture, and seal with butyl rubber stoppers.
+- step_number: 4
+  action: MIX
+  description: 'Modified Wolfe''s Mineral solution: Trace minerals: Dissolve nitrilotriacetic
+    acid and adjust pH to 6.5 with KOH.'
+- step_number: 5
+  action: MIX
+  description: Then proceed to add minerals.
+- step_number: 6
+  action: MIX
+  description: Adjust final pH to 7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-01T01:54:21.429746+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1347. Ingredients captured verbatim. CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-10-01T02:55:00+00:00'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015883'
+- timestamp: '2026-10-01T03:00:53.919399+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint None
+  source: JCM_J1347_FRESHWATER_THIOSULFATE_OXIDIZING_BACTERIA_MEDIUM.yaml
+merge_fingerprint: null
+merged_from:
+- JCM_J1347_FRESHWATER_THIOSULFATE_OXIDIZING_BACTERIA_MEDIUM

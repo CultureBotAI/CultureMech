@@ -1,0 +1,205 @@
+id: CultureMech:015904
+name: modified_prosthecomicrobium_and_ancalomicrobium_medium_nbrc_943
+original_name: Modified Prosthecomicrobium and Ancalomicrobium Medium
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: NBRC Medium 943
+  term:
+    id: nbrc.medium:943
+    label: Modified Prosthecomicrobium and Ancalomicrobium Medium
+notes: 'Source: NBRC | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=943'
+ingredients:
+- preferred_term: Bacto Peptone (Difco)
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17234
+    label: glucose
+- preferred_term: Vitamin solution
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+- preferred_term: Modified Hutner's solution
+  concentration:
+    value: '20'
+    unit: ML_PER_L
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: agar
+  notes: NBRC lists this component as optional when a solid medium is needed.
+- preferred_term: Distilled water
+  concentration:
+    value: '970'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH unadjusted
+- step_number: 2
+  action: MIX
+  description: Adjust volume to 1 L with distilled water.
+- step_number: 3
+  action: MIX
+  description: Dissolve and neutralize the nitrilotriacetic acid with KOH (7.3 g);
+    add the other ingredients and adjust the pH to 6.6-6.8 before bringing the volume
+    to 1.0 L with distilled water.
+- step_number: 4
+  action: MIX
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
+    precipitation of the heavy metal ions. Store in the dark and cold (5C).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-02T05:20:01.508978+00:00'
+  curator: nbrc-live-import
+  action: Scraped from NBRC catalogue
+  notes: Direct import from NBRC Medium 943. Ingredients captured verbatim from the
+    live catalogue.
+- timestamp: '2026-10-01T03:40:36.654536+00:00'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015904'
+solutions:
+- preferred_term: Vitamin solution
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '2'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:15956
+      label: biotin
+  - preferred_term: Folic acid
+    concentration:
+      value: '2'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:27470
+      label: folic acid
+  - preferred_term: Thiamine-HCl
+    concentration:
+      value: '5'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:49105
+      label: thiamine(1+) chloride
+  - preferred_term: Ca-pantothenate
+    concentration:
+      value: '5'
+      unit: MG_PER_L
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.1'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+  - preferred_term: Riboflavin
+    concentration:
+      value: '5'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+    term:
+      id: CHEBI:15377
+      label: water
+- preferred_term: Modified Hutner's solution
+  concentration:
+    value: '20'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Nitrilotriacetic acid (NTA)
+    concentration:
+      value: '10'
+      unit: G_PER_L
+  - preferred_term: MgSO4·7H2O
+    concentration:
+      value: '29.7'
+      unit: G_PER_L
+  - preferred_term: CaCl2·2H2O
+    concentration:
+      value: '3.34'
+      unit: G_PER_L
+  - preferred_term: (NH4)6Mo7O24·2H2O
+    concentration:
+      value: '9.25'
+      unit: MG_PER_L
+  - preferred_term: FeSO4·7H2O
+    concentration:
+      value: '99'
+      unit: MG_PER_L
+  - preferred_term: Metal salt solution 44
+    concentration:
+      value: '50'
+      unit: ML_PER_L
+- preferred_term: Metal salt solution 44
+  concentration:
+    value: '50'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Na-EDTA
+    concentration:
+      value: '250'
+      unit: MG_PER_L
+  - preferred_term: ZnSO4·7H2O
+    concentration:
+      value: '1095'
+      unit: MG_PER_L
+  - preferred_term: FeSO4·7H2O
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+  - preferred_term: MnSO4·H2O
+    concentration:
+      value: '154'
+      unit: MG_PER_L
+  - preferred_term: CuSO4·5H2O
+    concentration:
+      value: '39.2'
+      unit: MG_PER_L
+  - preferred_term: Co(NO3)2·6H2O
+    concentration:
+      value: '24.8'
+      unit: MG_PER_L
+  - preferred_term: Na2B4O7·10H2O
+    concentration:
+      value: '17.7'
+      unit: MG_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '100'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water

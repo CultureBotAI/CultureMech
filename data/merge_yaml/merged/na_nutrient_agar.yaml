@@ -1,0 +1,70 @@
+id: CultureMech:015895
+name: na_nutrient_agar
+original_name: NA (Nutrient Agar)
+category: algae
+sources:
+- database: CCAP
+  database_id: NA
+  url: https://www.ccap.ac.uk/wp-content/uploads/MR_NA.pdf
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+description: CCAP Nutrient Agar medium sheet recipe.
+notes: CCAP prepares Nutrient Agar by dispersing 28.0 g/L commercial Nutrient Agar
+  in deionised water and autoclaving.
+ingredients:
+- preferred_term: Nutrient agar
+  concentration:
+    value: '28.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_NA.pdf
+  notes: Commercial nutrient agar powder listed as a single CCAP medium component.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Thoroughly disperse the nutrient agar in deionised water in suitable
+    vessels.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 15 psi for 15 minutes.
+applications:
+- Protozoa cultivation
+sterilization:
+  method: AUTOCLAVE
+  pressure: 15
+  duration: 15 minutes
+curation_history:
+- timestamp: '2026-10-01T02:46:22+00:00'
+  curator: codex-agent
+  action: ADDED_CCAP_MISSING_ALGAE_MEDIUM
+  source: CCAP:NA; https://www.ccap.ac.uk/wp-content/uploads/MR_NA.pdf
+  changes: Added CCAP NA recipe from the live CCAP medium sheet
+  notes: Live CCAP index advertised NA and the exact CCAP:NA source was absent from
+    data/normalized_yaml before this add-only curation pass.
+- timestamp: '2026-10-01T02:55:00+00:00'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015895'
+- timestamp: '2026-10-01T03:00:54.049446+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 02126a5c6b76bdd6f304deee86b5691735682d5f30ccdb7080c75641bdef7cb6
+  source: na_nutrient_agar.yaml
+references:
+- reference: CCAP:NA
+  title: NA (Nutrient Agar)
+  authors: Culture Collection of Algae and Protozoa
+  year: 2026
+  notes: CCAP medium sheet MR_NA.pdf.
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_NA.pdf
+- reference: Page 1988
+  title: A New Key to Freshwater and Soil Gymnamoebae
+  authors: F. C. Page
+  year: 1988
+  notes: Cited by CCAP on the NA medium sheet.
+data_quality_flags:
+- has_unmapped_ingredients
+- ingredients_curated
+merge_fingerprint: 02126a5c6b76bdd6f304deee86b5691735682d5f30ccdb7080c75641bdef7cb6
+merged_from:
+- na_nutrient_agar

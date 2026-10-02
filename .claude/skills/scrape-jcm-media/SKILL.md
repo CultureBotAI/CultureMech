@@ -87,8 +87,9 @@ Flags: `--grmd N [N ...]` | `--detect-missing` (+`--scan-max`) | `--out-dir` |
 
 1. **Find the gap.** Either run `--detect-missing` (re-probes JCM 1..scan-max
    and reports real media absent from `data/normalized_yaml/`), or feed an
-   explicit `--grmd` list from a prior audit. Gap detection compares against
-   every `GRMD=<N>` link already present in the corpus.
+   explicit `--grmd` list from a prior audit. Gap detection treats direct
+   `jcm.grmd:<N>` records, MediaDive `mediadive.medium:J<N>` mirrors, and TOGO
+   records whose own original URL is a JCM GRMD page as already represented.
 2. **Dry-run first.** Inspect parsed name, ingredient count, `physical_state`,
    `medium_type`, and pH for sanity. Watch for thin parses (a medium that
    legitimately uses a commercial pre-mix will have few rows + a prep note).

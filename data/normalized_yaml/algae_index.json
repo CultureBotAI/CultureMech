@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-14T18:56:16.551272+00:00",
+  "generated": "2026-10-02T05:32:25.550310+00:00",
   "category": "algae",
-  "count": 249,
+  "count": 254,
   "recipes": {
     "CultureMech:000001": {
       "name": "1_1_dyiii_pea_gr_medium",
@@ -1704,6 +1704,26 @@
         "algae"
       ]
     },
+    "CultureMech:015893": {
+      "name": "fcgm_freshwater_cereal_grass_medium",
+      "filename": "fcgm_freshwater_cereal_grass_medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015893",
+      "source": "unknown",
+      "categories": [
+        "algae"
+      ]
+    },
+    "CultureMech:015894": {
+      "name": "fcgm_hepes",
+      "filename": "fcgm_hepes.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015894",
+      "source": "unknown",
+      "categories": [
+        "algae"
+      ]
+    },
     "CultureMech:000072": {
       "name": "fdmed",
       "filename": "fdmed.yaml",
@@ -1998,6 +2018,16 @@
       "id": "CultureMech:000098",
       "source": "unknown",
       "solution_count": 2,
+      "categories": [
+        "algae"
+      ]
+    },
+    "CultureMech:015895": {
+      "name": "na_nutrient_agar",
+      "filename": "na_nutrient_agar.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015895",
+      "source": "unknown",
       "categories": [
         "algae"
       ]
@@ -2370,6 +2400,17 @@
         "algae"
       ]
     },
+    "CultureMech:015897": {
+      "name": "sag_bg_11_medium",
+      "filename": "sag_bg_11_medium.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015897",
+      "source": "unknown",
+      "solution_count": 1,
+      "categories": [
+        "algae"
+      ]
+    },
     "CultureMech:000127": {
       "name": "sbbm",
       "filename": "sbbm.yaml",
@@ -2688,6 +2729,17 @@
       "ingredient_count": 3,
       "id": "CultureMech:000145",
       "source": "unknown",
+      "categories": [
+        "algae"
+      ]
+    },
+    "CultureMech:015896": {
+      "name": "yt75s_v",
+      "filename": "yt75s_v.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015896",
+      "source": "unknown",
+      "solution_count": 1,
       "categories": [
         "algae"
       ]

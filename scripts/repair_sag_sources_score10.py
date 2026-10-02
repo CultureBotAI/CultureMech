@@ -20,6 +20,7 @@ NORMALIZED = REPO / "data" / "normalized_yaml"
 YAML_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 CURATOR = "repair_sag_sources_score10.py"
+IMPORT_CURATOR = "sag-import"
 ACTION = "NORMALIZED_SAG_SOURCE_SCORE10"
 TIMESTAMP = "2026-09-13T00:00:00-07:00"
 
@@ -95,7 +96,7 @@ def _sag_import(doc: dict[str, Any]) -> tuple[str, str]:
 
     matches: list[tuple[str, str]] = []
     for event in history:
-        if not isinstance(event, dict) or event.get("curator") != "sag-import":
+        if not isinstance(event, dict) or event.get("curator") != IMPORT_CURATOR:
             continue
         match = SAG_IMPORT.search(str(event.get("notes") or ""))
         if match:
@@ -165,17 +166,27 @@ def repair_record(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
     return repaired
 
 
-def find_targets(normalized: Path = NORMALIZED) -> list[Path]:
+def _has_sag_import(doc: dict[str, Any]) -> bool:
+    history = doc.get("curation_history") or []
+    if not isinstance(history, list):
+        raise ValueError("curation_history is not a list")
+    return any(
+        isinstance(event, dict) and event.get("curator") == IMPORT_CURATOR for event in history
+    )
+
+
+def find_targets(
+    normalized: Path = NORMALIZED,
+    expected_count: int | None = EXPECTED_TARGET_COUNT,
+) -> list[Path]:
     targets: list[Path] = []
     for path in sorted((normalized / "algae").glob("*.yaml")):
         doc = _load(path)
         refs = _references(doc)
-        if any(SAG_REFERENCE.fullmatch(reference) for reference in refs):
+        if _has_sag_import(doc) and any(SAG_REFERENCE.fullmatch(reference) for reference in refs):
             targets.append(path)
-    if len(targets) != EXPECTED_TARGET_COUNT:
-        raise ValueError(
-            f"expected {EXPECTED_TARGET_COUNT} SAG algae targets, found {len(targets)}"
-        )
+    if expected_count is not None and len(targets) != expected_count:
+        raise ValueError(f"expected {expected_count} SAG algae targets, found {len(targets)}")
     return targets
 
 
