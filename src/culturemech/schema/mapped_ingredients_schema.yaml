@@ -7,7 +7,7 @@ description: >-
   MediaIngredientMech label index or an explicitly reported local fallback.
   Identities are not CHEBI-only and upstream source identifiers remain separate.
 
-license: MIT
+license: BSD-3-Clause
 see_also:
   - https://github.com/CultureBotAI/CultureMech
 

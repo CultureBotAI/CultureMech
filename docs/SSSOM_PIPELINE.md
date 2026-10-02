@@ -125,7 +125,7 @@ The generated file follows [SSSOM v0.9 specification](https://mapping-commons.gi
 # mapping_set_id: https://w3id.org/culturemech/mappings/chebi/v1.0
 # mapping_set_title: CultureMech to CHEBI Ingredient Mappings
 # mapping_set_description: Mappings between CultureMech culture media ingredients and CHEBI chemical entity ontology terms
-# license: https://creativecommons.org/publicdomain/zero/1.0/
+# license: https://creativecommons.org/licenses/by/4.0/
 # mapping_provider: https://github.com/KG-Hub/KG-Microbe/CultureMech
 # mapping_date: 2026-02-04T12:00:00Z
 ```
@@ -452,4 +452,11 @@ uv pip install requests pandas pyyaml
 
 ## License
 
-CC0 1.0 Universal (Public Domain)
+Project-authored data, records, annotations, mappings, data exports and narrative
+documentation are licensed under [CC BY 4.0](../LICENSE-DATA). Project-authored
+code, scripts, tests, schemas and website templates are licensed under
+[BSD-3-Clause](../LICENSE-CODE). See [LICENSE](../LICENSE) for scope and attribution.
+
+Third-party material retains its own licenses and notices. Preserve upstream
+attribution and source-specific terms when redistributing a record or subset.
+Previously released material remains available under its original license.

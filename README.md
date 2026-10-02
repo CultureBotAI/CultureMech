@@ -4,7 +4,8 @@ CultureMech is a versioned knowledge base of microbial culture-media recipes.
 It combines LinkML validation, ontology grounding, provenance, deduplication,
 browser exports, and static recipe pages.
 
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
+[![Data: CC BY 4.0](https://img.shields.io/badge/Data-CC_BY_4.0-lightgrey.svg)](LICENSE-DATA)
+[![Code: BSD-3-Clause](https://img.shields.io/badge/Code-BSD--3--Clause-blue.svg)](LICENSE-CODE)
 [![Python](https://img.shields.io/badge/python-3.13-blue.svg)](.python-version)
 
 ## Corpus snapshot
@@ -124,5 +125,13 @@ The canonical repository is
 [GitHub Discussions](https://github.com/CultureBotAI/CultureMech/discussions)
 for broader questions.
 
-Citation metadata is provided in [CITATION.cff](CITATION.cff). CultureMech is
-dedicated to the public domain under [CC0 1.0 Universal](LICENSE).
+Citation metadata is provided in [CITATION.cff](CITATION.cff).
+
+Project-authored data, records, annotations, mappings, data exports and narrative
+documentation are licensed under [CC BY 4.0](LICENSE-DATA). Project-authored
+code, scripts, tests, schemas and website templates are licensed under
+[BSD-3-Clause](LICENSE-CODE). See [LICENSE](LICENSE) for scope and attribution.
+
+Third-party material retains its own licenses and notices. Preserve upstream
+attribution and source-specific terms when redistributing a record or subset.
+Previously released material remains available under its original license.
