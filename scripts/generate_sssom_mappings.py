@@ -335,7 +335,7 @@ def generate_sssom_metadata(include_unmapped: bool = False) -> str:
         "mapping_set_id": "https://w3id.org/culturemech/mappings/chebi/v1.0",
         "mapping_set_title": "CultureMech to CHEBI Ingredient Mappings",
         "mapping_set_description": description,
-        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
         "mapping_provider": "https://github.com/KG-Hub/KG-Microbe/CultureMech",
         "mapping_date": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "comment": "Predicates: skos:exactMatch (mapped), semapv:Unmapped (no mapping found). Justifications: semapv:ManualMappingCuration (curated), semapv:Unreviewed (not yet reviewed).",

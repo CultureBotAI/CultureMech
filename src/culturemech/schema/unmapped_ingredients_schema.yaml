@@ -7,7 +7,7 @@ description: >-
   semantic identity. Resolver failures and upstream source identifiers are
   retained explicitly rather than inferred from punctuation or placeholders.
 
-license: MIT
+license: BSD-3-Clause
 see_also:
   - https://github.com/CultureBotAI/CultureMech
 

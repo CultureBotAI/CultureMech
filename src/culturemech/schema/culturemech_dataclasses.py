@@ -6,7 +6,7 @@
 # description: LinkML schema for modeling microbial culture media recipes and formulations.
 #   Follows the dismech architecture pattern with descriptor classes for ontology grounding.
 #
-# license: https://creativecommons.org/publicdomain/zero/1.0/
+# license: BSD-3-Clause
 
 import dataclasses
 import re
