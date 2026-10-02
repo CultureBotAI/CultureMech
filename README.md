@@ -11,18 +11,18 @@ browser exports, and static recipe pages.
 ## Corpus snapshot
 
 <!-- BEGIN GENERATED CORPUS STATS -->
-The tracked corpus currently contains **15,878 normalized records** and **6,288 merged records**.
+The tracked corpus currently contains **15,910 normalized records** and **6,320 merged records**.
 
 | Normalized category | Records |
 | --- | ---: |
-| algae | 249 |
-| archaea | 743 |
-| bacterial | 14,305 |
+| algae | 254 |
+| archaea | 746 |
+| bacterial | 14,329 |
 | fungal | 126 |
 | solutions | 0 |
 | specialized | 455 |
-| **Total normalized** | **15,878** |
-| **Total merged** | **6,288** |
+| **Total normalized** | **15,910** |
+| **Total merged** | **6,320** |
 <!-- END GENERATED CORPUS STATS -->
 
 These are different layers, not competing recipe totals. Normalized records

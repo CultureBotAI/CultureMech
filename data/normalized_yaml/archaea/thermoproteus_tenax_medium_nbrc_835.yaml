@@ -1,0 +1,121 @@
+id: CultureMech:015903
+name: thermoproteus_tenax_medium_nbrc_835
+original_name: Thermoproteus tenax Medium
+category: archaea
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: NBRC Medium 835
+  term:
+    id: nbrc.medium:835
+    label: Thermoproteus tenax Medium
+notes: 'Source: NBRC | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=835'
+ingredients:
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.264'
+    unit: G_PER_L
+- preferred_term: FeSO4·7H2O
+  concentration:
+    value: '0.556'
+    unit: G_PER_L
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.492'
+    unit: G_PER_L
+- preferred_term: CaSO4·2H2O
+  concentration:
+    value: '0.344'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.014'
+    unit: G_PER_L
+- preferred_term: NaF
+  concentration:
+    value: '0.84'
+    unit: MG_PER_L
+- preferred_term: MnCl2·4H2O
+  concentration:
+    value: '0.18'
+    unit: MG_PER_L
+- preferred_term: Na2B4O7·10H2O
+  concentration:
+    value: '0.45'
+    unit: MG_PER_L
+- preferred_term: ZnSO4·7H2O
+  concentration:
+    value: '0.22'
+    unit: MG_PER_L
+- preferred_term: CuCl2·2H2O
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+- preferred_term: Na2MoO7·2H2O
+  concentration:
+    value: '0.03'
+    unit: MG_PER_L
+- preferred_term: CoSO4·7H2O
+  concentration:
+    value: '0.01'
+    unit: MG_PER_L
+- preferred_term: Bacto Yeast Extract (Difco)
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Soluble starch
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:28017
+    label: Starch
+- preferred_term: Sulfur (powder)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26833
+    label: sulfur atom
+- preferred_term: Na2S·9H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
+  term:
+    id: CHEBI:15377
+    label: water
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix ingredients except yeast extract, starch, sulfur and Na2S·9H2O,
+    and filter-sterilize while gassing with N2. Autoclave yeast extract and starch
+    as 10% solutions and Na2S·9H2O as a 5% solution under a N2 atmosphere. Sulfur
+    is sterilized separately by autoclaving for 60 min at 105C on each of 3 successive
+    days. Aseptically and anaerobically add the yeast extract and starch solutions,
+    and sulfur to the medium. Prior to inoculation, add the sterile Na2S·9H2O solution,
+    and adjust pH to 5.5 with sterile 1 N H2SO4.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-02T05:20:01.508978+00:00'
+  curator: nbrc-live-import
+  action: Scraped from NBRC catalogue
+  notes: Direct import from NBRC Medium 835. Ingredients captured verbatim from the
+    live catalogue.
+- timestamp: '2026-10-01T03:40:36.654536+00:00'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015903'
+ph_value: 5.5

@@ -1,0 +1,102 @@
+id: CultureMech:015915
+name: starch_casein_nitrate_agar
+original_name: STARCH CASEIN NITRATE AGAR
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: MediaDive Medium 1897
+  term:
+    id: mediadive.medium:1897
+    label: STARCH CASEIN NITRATE AGAR
+notes: 'Source: MediaDive | Link: https://mediadive.dsmz.de/rest/medium/1897'
+ingredients:
+- preferred_term: Starch
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:199
+    label: Starch
+- preferred_term: K2HPO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+- preferred_term: KNO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:191
+    label: KNO3
+- preferred_term: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+- preferred_term: Casein
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1381
+    label: Casein
+- preferred_term: Mg(SO4) x 7 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2154
+    label: Mg(SO4) x 7 H2O
+- preferred_term: CaCO3
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:13
+    label: CaCO3
+- preferred_term: Fe SO4 x 7 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1418
+    label: Fe SO4 x 7 H2O
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+preparation_steps: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-01T04:00:20.806799+00:00'
+  curator: mediadive-live-gap-import
+  action: Imported from live MediaDive API
+  source: https://mediadive.dsmz.de/rest/medium/1897
+  notes: Direct import from MediaDive medium 1897. Recipe rows captured from the live
+    API detail payload.
+- timestamp: '2026-10-01T04:04:39Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015915'
+- timestamp: '2026-10-01T04:07:27.912651+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e4d64771b46b88e0825fa341deec0e27f4152a7a776d1852ad68496f4b1d322a
+  source: starch_casein_nitrate_agar.yaml
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/1897
+ph_value: 8.5
+merge_fingerprint: e4d64771b46b88e0825fa341deec0e27f4152a7a776d1852ad68496f4b1d322a
+merged_from:
+- starch_casein_nitrate_agar

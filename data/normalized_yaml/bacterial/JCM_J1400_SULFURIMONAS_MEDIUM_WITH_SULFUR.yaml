@@ -1,0 +1,84 @@
+id: CultureMech:015886
+name: sulfurimonas_medium_with_sulfur
+original_name: SULFURIMONAS MEDIUM WITH SULFUR
+category: bacterial
+medium_type: DEFINED
+composition_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1400
+  term:
+    id: jcm.grmd:1400
+    label: SULFURIMONAS MEDIUM WITH SULFUR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1400'
+ingredients:
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: KCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  concentration:
+    value: '0.85'
+    unit: G_PER_L
+- preferred_term: Na2S2O3·5H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Trace element solution (see Medium No. 439 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Selenite tungstate solution (see Medium No. 431 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Sulfur (powder)
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '970.0'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix components thoroughly, except sulfur, and autoclave under a N2-CO2
+    (4:1, v/v) gas atmosphere.
+- step_number: 2
+  action: MIX
+  description: 'After cooling, add the following solutions from anaerobic stocks (autoclaved
+    or *filter-sterilized): Steam sulfur for 3 hr on each of 3 successive days.'
+- step_number: 3
+  action: MIX
+  description: Aseptically and anaerobically, distribute the medium into culture vessels
+    containing appropriate amount of sulfur under the same gas mixture (e.g., 20 ml
+    in 60 ml-serum bottles containing 0.05 g sulfur) and seal with butyl rubber stoppers.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-01T01:54:24.565561+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1400. Ingredients captured verbatim. CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-10-01T02:55:00+00:00'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015886'

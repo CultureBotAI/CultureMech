@@ -4,32 +4,32 @@ Generated from `reports/media_content_review_manifest.tsv`.
 
 ## Scope
 
-- Candidate parent groups: 579
-- Candidate parent-child links: 1,764
-- Proposed links ready for curated migration: 1,057
+- Candidate parent groups: 580
+- Candidate parent-child links: 1,769
+- Proposed links ready for curated migration: 1,062
 - Links requiring review before migration: 707
 
 ## Group Status
 
 | Status | Groups |
 |---|---:|
-| `PROPOSED` | 472 |
+| `PROPOSED` | 473 |
 | `REVIEW_REQUIRED` | 107 |
 
 ## Link Confidence
 
 | Confidence | Links |
 |---|---:|
-| `HIGH` | 787 |
+| `HIGH` | 791 |
 | `LOW` | 251 |
-| `MEDIUM` | 726 |
+| `MEDIUM` | 727 |
 
 ## Relationship Counts
 
 | Relationship | Links |
 |---|---:|
-| `SOURCE_DUPLICATE` | 832 |
-| `CONCENTRATION_VARIANT` | 464 |
+| `SOURCE_DUPLICATE` | 836 |
+| `CONCENTRATION_VARIANT` | 465 |
 | `SUPPLEMENTED_VARIANT` | 160 |
 | `DERIVED_FROM` | 129 |
 | `SALINITY_VARIANT` | 78 |

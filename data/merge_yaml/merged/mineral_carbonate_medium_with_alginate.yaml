@@ -1,0 +1,65 @@
+id: CultureMech:015884
+name: mineral_carbonate_medium_with_alginate
+original_name: MINERAL CARBONATE MEDIUM WITH ALGINATE
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 9.5
+media_term:
+  preferred_term: JCM Medium J1358
+  term:
+    id: jcm.grmd:1358
+    label: MINERAL CARBONATE MEDIUM WITH ALGINATE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1358'
+ingredients:
+- preferred_term: Na2CO3
+  concentration:
+    value: '27.7'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  concentration:
+    value: '30.6'
+    unit: G_PER_L
+- preferred_term: NaCl
+  concentration:
+    value: '7.5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add components to distilled water and bring volume to 1.0 L.
+- step_number: 2
+  action: MIX
+  description: Adjust pH to 9.5-9.6, if necessary.
+- step_number: 3
+  action: MIX
+  description: Autoclave.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-01T01:54:22.069586+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1358. Ingredients captured verbatim. CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-10-01T02:55:00+00:00'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015884'
+- timestamp: '2026-10-01T03:00:53.930083+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ee09e966661ff5e0651b1b7e59c63f47a9fa7fb1a20042a7aa9c9b57d721025c
+  source: JCM_J1358_MINERAL_CARBONATE_MEDIUM_WITH_ALGINATE.yaml
+merge_fingerprint: ee09e966661ff5e0651b1b7e59c63f47a9fa7fb1a20042a7aa9c9b57d721025c
+merged_from:
+- JCM_J1358_MINERAL_CARBONATE_MEDIUM_WITH_ALGINATE

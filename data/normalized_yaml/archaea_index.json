@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-14T18:56:20.443250+00:00",
+  "generated": "2026-10-02T05:32:31.388904+00:00",
   "category": "archaea",
-  "count": 743,
+  "count": 746,
   "recipes": {
     "CultureMech:000252": {
       "name": "halophilic_medium",
@@ -126,6 +126,17 @@
         "archaea"
       ]
     },
+    "CultureMech:015888": {
+      "name": "methanoculleus_7t_medium",
+      "filename": "JCM_J1456_METHANOCULLEUS_7T_MEDIUM.yaml",
+      "ingredient_count": 14,
+      "id": "CultureMech:015888",
+      "source_id": "jcm.grmd:1456",
+      "source": "unknown",
+      "categories": [
+        "archaea"
+      ]
+    },
     "CultureMech:015871": {
       "name": "methanosarcina_t3_medium",
       "filename": "JCM_J1462_METHANOSARCINA_T3_MEDIUM.yaml",
@@ -143,6 +154,17 @@
       "ingredient_count": 17,
       "id": "CultureMech:015881",
       "source_id": "jcm.grmd:1463",
+      "source": "unknown",
+      "categories": [
+        "archaea"
+      ]
+    },
+    "CultureMech:015889": {
+      "name": "methanococcus_cf_medium",
+      "filename": "JCM_J1464_METHANOCOCCUS_CF_MEDIUM.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:015889",
+      "source_id": "jcm.grmd:1464",
       "source": "unknown",
       "categories": [
         "archaea"
@@ -8549,6 +8571,17 @@
         "archaea"
       ],
       "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015903": {
+      "name": "thermoproteus_tenax_medium_nbrc_835",
+      "filename": "thermoproteus_tenax_medium_nbrc_835.yaml",
+      "ingredient_count": 18,
+      "id": "CultureMech:015903",
+      "source_id": "nbrc.medium:835",
+      "source": "unknown",
+      "categories": [
+        "archaea"
+      ]
     },
     "CultureMech:001609": {
       "name": "thermoproteus_uzoniensis_medium",

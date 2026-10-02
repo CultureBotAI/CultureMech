@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-14T18:56:36.544932+00:00",
+  "generated": "2026-10-02T05:32:53.224741+00:00",
   "category": "bacterial",
-  "count": 14305,
+  "count": 14329,
   "recipes": {
     "CultureMech:002439": {
       "name": "0_01_lb_seawater_medium",
@@ -2225,6 +2225,17 @@
         "bacterial"
       ]
     },
+    "CultureMech:015883": {
+      "name": "freshwater_thiosulfate_oxidizing_bacteria_medium",
+      "filename": "JCM_J1347_FRESHWATER_THIOSULFATE_OXIDIZING_BACTERIA_MEDIUM.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015883",
+      "source_id": "jcm.grmd:1347",
+      "source": "unknown",
+      "categories": [
+        "bacterial"
+      ]
+    },
     "CultureMech:015835": {
       "name": "pelosinus_bkl1_medium",
       "filename": "JCM_J1351_PELOSINUS_BKL1_MEDIUM.yaml",
@@ -2264,6 +2275,17 @@
       "ingredient_count": 17,
       "id": "CultureMech:015838",
       "source_id": "jcm.grmd:1357",
+      "source": "unknown",
+      "categories": [
+        "bacterial"
+      ]
+    },
+    "CultureMech:015884": {
+      "name": "mineral_carbonate_medium_with_alginate",
+      "filename": "JCM_J1358_MINERAL_CARBONATE_MEDIUM_WITH_ALGINATE.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:015884",
+      "source_id": "jcm.grmd:1358",
       "source": "unknown",
       "categories": [
         "bacterial"
@@ -2320,6 +2342,17 @@
       "ingredient_count": 11,
       "id": "CultureMech:015844",
       "source_id": "jcm.grmd:1366",
+      "source": "unknown",
+      "categories": [
+        "bacterial"
+      ]
+    },
+    "CultureMech:015885": {
+      "name": "marine_desulfovibrio_complex_medium",
+      "filename": "JCM_J1367_MARINE_DESULFOVIBRIO_COMPLEX_MEDIUM.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:015885",
+      "source_id": "jcm.grmd:1367",
       "source": "unknown",
       "categories": [
         "bacterial"
@@ -2434,6 +2467,17 @@
       "source_id": "jcm.grmd:1399",
       "source": "unknown",
       "solution_count": 11,
+      "categories": [
+        "bacterial"
+      ]
+    },
+    "CultureMech:015886": {
+      "name": "sulfurimonas_medium_with_sulfur",
+      "filename": "JCM_J1400_SULFURIMONAS_MEDIUM_WITH_SULFUR.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:015886",
+      "source_id": "jcm.grmd:1400",
+      "source": "unknown",
       "categories": [
         "bacterial"
       ]
@@ -2594,6 +2638,17 @@
         "bacterial"
       ]
     },
+    "CultureMech:015887": {
+      "name": "pya_medium",
+      "filename": "JCM_J1452_PYA_MEDIUM.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:015887",
+      "source_id": "jcm.grmd:1452",
+      "source": "unknown",
+      "categories": [
+        "bacterial"
+      ]
+    },
     "CultureMech:015872": {
       "name": "modified_nms_medium_4",
       "filename": "JCM_J1465_MODIFIED_NMS_MEDIUM_4.yaml",
@@ -2611,6 +2666,17 @@
       "ingredient_count": 19,
       "id": "CultureMech:015874",
       "source_id": "jcm.grmd:1468",
+      "source": "unknown",
+      "categories": [
+        "bacterial"
+      ]
+    },
+    "CultureMech:015890": {
+      "name": "bl_broth_with_2_nacl",
+      "filename": "JCM_J1474_BL_BROTH_WITH_2_NaCl.yaml",
+      "ingredient_count": 14,
+      "id": "CultureMech:015890",
+      "source_id": "jcm.grmd:1474",
       "source": "unknown",
       "categories": [
         "bacterial"
@@ -2656,6 +2722,17 @@
       "id": "CultureMech:002506",
       "source_id": "mediadive.medium:J148",
       "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ]
+    },
+    "CultureMech:015892": {
+      "name": "lb_luria_bertani_agar_with_2_nacl",
+      "filename": "JCM_J1500_LB_LURIA_BERTANI_AGAR_WITH_2_NaCl.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015892",
+      "source_id": "jcm.grmd:1500",
+      "source": "unknown",
       "categories": [
         "bacterial"
       ]
@@ -32826,6 +32903,17 @@
         "bacterial"
       ]
     },
+    "CultureMech:015910": {
+      "name": "acidithiobacillus_marinus_medium",
+      "filename": "acidithiobacillus_marinus_medium.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015910",
+      "source_id": "mediadive.medium:71a",
+      "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ]
+    },
     "CultureMech:001459": {
       "name": "acidithiobacillus_medium",
       "filename": "acidithiobacillus_medium.yaml",
@@ -39470,6 +39558,18 @@
       "id": "CultureMech:001238",
       "source_id": "mediadive.medium:1793",
       "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ]
+    },
+    "CultureMech:015911": {
+      "name": "chloracidobacterium_thermophilum_midnight_medium_ctm",
+      "filename": "chloracidobacterium_thermophilum_midnight_medium_ctm.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:015911",
+      "source_id": "mediadive.medium:1783",
+      "source": "MediaDive",
+      "solution_count": 8,
       "categories": [
         "bacterial"
       ]
@@ -51423,6 +51523,17 @@
         "bacterial"
       ]
     },
+    "CultureMech:015912": {
+      "name": "glucose_agar_mediadive_1873",
+      "filename": "glucose_agar_mediadive_1873.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:015912",
+      "source_id": "mediadive.medium:1873",
+      "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ]
+    },
     "CultureMech:001231": {
       "name": "glucose_asparagine_agar",
       "filename": "glucose_asparagine_agar.yaml",
@@ -53939,6 +54050,18 @@
       "id": "CultureMech:009200",
       "source_id": "TOGO:M2643",
       "source": "TOGO",
+      "categories": [
+        "bacterial"
+      ]
+    },
+    "CultureMech:015913": {
+      "name": "hs_rfb_borrelia_miyamotoi_medium",
+      "filename": "hs_rfb_borrelia_miyamotoi_medium.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015913",
+      "source_id": "mediadive.medium:1895",
+      "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ]
@@ -59229,6 +59352,17 @@
       "ingredient_count": 5,
       "id": "CultureMech:003089",
       "source_id": "mediadive.medium:J746",
+      "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ]
+    },
+    "CultureMech:015914": {
+      "name": "mannitol_soya_flour_medium",
+      "filename": "mannitol_soya_flour_medium.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015914",
+      "source_id": "mediadive.medium:1894",
       "source": "MediaDive",
       "categories": [
         "bacterial"
@@ -134874,6 +135008,18 @@
       ],
       "has_hierarchy_enrichment": true
     },
+    "CultureMech:015902": {
+      "name": "mjypgs_medium_nbrc_367",
+      "filename": "mjypgs_medium_nbrc_367.yaml",
+      "ingredient_count": 19,
+      "id": "CultureMech:015902",
+      "source_id": "nbrc.medium:367",
+      "source": "unknown",
+      "solution_count": 1,
+      "categories": [
+        "bacterial"
+      ]
+    },
     "CultureMech:002771": {
       "name": "mjytfsh_medium",
       "filename": "mjytfsh_medium.yaml",
@@ -137343,6 +137489,18 @@
         "bacterial"
       ]
     },
+    "CultureMech:015904": {
+      "name": "modified_prosthecomicrobium_and_ancalomicrobium_medium_nbrc_943",
+      "filename": "modified_prosthecomicrobium_and_ancalomicrobium_medium_nbrc_943.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015904",
+      "source_id": "nbrc.medium:943",
+      "source": "unknown",
+      "solution_count": 3,
+      "categories": [
+        "bacterial"
+      ]
+    },
     "CultureMech:000367": {
       "name": "modified_provasoli",
       "filename": "modified_provasoli.yaml",
@@ -139598,6 +139756,39 @@
         "bacterial"
       ]
     },
+    "CultureMech:015898": {
+      "name": "nbrc_medium_219",
+      "filename": "nbrc_medium_219.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015898",
+      "source_id": "nbrc.medium:219",
+      "source": "unknown",
+      "categories": [
+        "bacterial"
+      ]
+    },
+    "CultureMech:015899": {
+      "name": "nbrc_medium_281",
+      "filename": "nbrc_medium_281.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015899",
+      "source_id": "nbrc.medium:281",
+      "source": "unknown",
+      "categories": [
+        "bacterial"
+      ]
+    },
+    "CultureMech:015900": {
+      "name": "nbrc_medium_287",
+      "filename": "nbrc_medium_287.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:015900",
+      "source_id": "nbrc.medium:287",
+      "source": "unknown",
+      "categories": [
+        "bacterial"
+      ]
+    },
     "CultureMech:008643": {
       "name": "nby",
       "filename": "nby.yaml",
@@ -140977,6 +141168,17 @@
         "bacterial"
       ]
     },
+    "CultureMech:015906": {
+      "name": "one_fifth_marine_agar_with_phenanthrene_nbrc_1096",
+      "filename": "one_fifth_marine_agar_with_phenanthrene_nbrc_1096.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015906",
+      "source_id": "nbrc.medium:1096",
+      "source": "unknown",
+      "categories": [
+        "bacterial"
+      ]
+    },
     "CultureMech:002128": {
       "name": "onr7a_medium",
       "filename": "onr7a_medium.yaml",
@@ -141896,6 +142098,17 @@
       "id": "CultureMech:001791",
       "source_id": "mediadive.medium:653",
       "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ]
+    },
+    "CultureMech:015905": {
+      "name": "peptone_yeast_extract_alkaline_medium_nbrc_944",
+      "filename": "peptone_yeast_extract_alkaline_medium_nbrc_944.yaml",
+      "ingredient_count": 12,
+      "id": "CultureMech:015905",
+      "source_id": "nbrc.medium:944",
+      "source": "unknown",
       "categories": [
         "bacterial"
       ]
@@ -143022,6 +143235,17 @@
       "id": "CultureMech:005654",
       "source_id": "komodo.medium:5013",
       "source": "KOMODO",
+      "categories": [
+        "bacterial"
+      ]
+    },
+    "CultureMech:015909": {
+      "name": "pplo_broth_for_mycoplasma_arginini_nbrc_1407",
+      "filename": "pplo_broth_for_mycoplasma_arginini_nbrc_1407.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015909",
+      "source_id": "nbrc.medium:1407",
+      "source": "unknown",
       "categories": [
         "bacterial"
       ]
@@ -144477,6 +144701,17 @@
         "bacterial"
       ],
       "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015901": {
+      "name": "r_cw_medium_nbrc_355",
+      "filename": "r_cw_medium_nbrc_355.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:015901",
+      "source_id": "nbrc.medium:355",
+      "source": "unknown",
+      "categories": [
+        "bacterial"
+      ]
     },
     "CultureMech:008026": {
       "name": "r_medium",
@@ -148555,6 +148790,17 @@
       ],
       "has_hierarchy_enrichment": true
     },
+    "CultureMech:015915": {
+      "name": "starch_casein_nitrate_agar",
+      "filename": "starch_casein_nitrate_agar.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015915",
+      "source_id": "mediadive.medium:1897",
+      "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ]
+    },
     "CultureMech:000699": {
       "name": "starch_mineral_salt_agar_10_nacl",
       "filename": "starch_mineral_salt_agar_10_nacl.yaml",
@@ -150316,6 +150562,17 @@
         "bacterial"
       ]
     },
+    "CultureMech:015907": {
+      "name": "terephthalate_medium_nbrc_1195",
+      "filename": "terephthalate_medium_nbrc_1195.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015907",
+      "source_id": "nbrc.medium:1195",
+      "source": "unknown",
+      "categories": [
+        "bacterial"
+      ]
+    },
     "CultureMech:001180": {
       "name": "teretinema_medium",
       "filename": "teretinema_medium.yaml",
@@ -151526,6 +151783,18 @@
       "id": "CultureMech:000691",
       "source_id": "mediadive.medium:1232",
       "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ]
+    },
+    "CultureMech:015908": {
+      "name": "thermotoga_thermarum_medium_nbrc_1199",
+      "filename": "thermotoga_thermarum_medium_nbrc_1199.yaml",
+      "ingredient_count": 18,
+      "id": "CultureMech:015908",
+      "source_id": "nbrc.medium:1199",
+      "source": "unknown",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ]

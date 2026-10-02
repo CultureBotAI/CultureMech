@@ -1,0 +1,55 @@
+id: CultureMech:015898
+name: nbrc_medium_219
+original_name: NBRC Medium 219
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: NBRC Medium 219
+  term:
+    id: nbrc.medium:219
+    label: NBRC Medium 219
+notes: 'Source: NBRC | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=219'
+ingredients:
+- preferred_term: Bacto Casitone (Difco)
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Potassium phosphate buffer (0.01 M, pH 7.2)
+  concentration:
+    value: '1'
+    unit: L
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: agar
+  notes: NBRC lists this component as optional when a solid medium is needed.
+preparation_steps: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-02T05:20:01.508978+00:00'
+  curator: nbrc-live-import
+  action: Scraped from NBRC catalogue
+  notes: Direct import from NBRC Medium 219. Ingredients captured verbatim from the
+    live catalogue.
+- timestamp: '2026-10-01T03:40:36.654536+00:00'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015898'
+- timestamp: '2026-10-02T05:20:01.508978+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3b7c4493850f9907be85fd127508fe2cb55544096e0f3ea054e0bbc12fc98522
+  source: nbrc_medium_219.yaml
+merge_fingerprint: 3b7c4493850f9907be85fd127508fe2cb55544096e0f3ea054e0bbc12fc98522
+merged_from:
+- nbrc_medium_219

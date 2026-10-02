@@ -353,6 +353,7 @@ def test_tracked_catalog_is_complete_current_and_versioned():
         "CultureMech:000306",
         "CultureMech:003009",
         "CultureMech:015406",
+        "CultureMech:015891",
     }
     assert {row.lifecycle_status for row in rows.values()} == {"ACTIVE", "DELETED"}
     assert all(

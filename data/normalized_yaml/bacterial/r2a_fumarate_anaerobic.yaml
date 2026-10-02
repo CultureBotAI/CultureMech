@@ -5,11 +5,14 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_range:
+  min: 6.0
+  max: 7.0
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
+    value: '1.0'
+    unit: L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
   term:
@@ -117,6 +120,9 @@ notes: 'Source: https://togomedium.org/medium/M3041
   Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1520'
 applications:
 - Microbial cultivation
+references:
+- reference: https://togomedium.org/medium/M3041
+- reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1520
 curation_history:
 - timestamp: '2026-01-27T06:35:59.224429Z'
   curator: togo-import
@@ -155,3 +161,17 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-30T00:00:00-07:00'
+  curator: repair_togo_nbrc_water_ph_review_batch.py
+  action: RESOLVED_TOGO_M3041_NBRC1520_REVIEW
+  source: https://togomedium.org/medium/M3041; https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1520
+  notes: Corrected TOGO/NBRC Distilled water from the imported 1 g/L to the source
+    1 L final-volume row, restored the NBRC 1520 pH 6-7 range, and linked TOGO M3042
+    as the liquid physical-state variant.
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M3042_R2A_fumarate_anaerobic.yaml
+  relationship: PHYSICAL_STATE_VARIANT
+  id: CultureMech:009555
+  name: r2a_fumarate_anaerobic
+  notes: TOGO M3042 is the liquid NBRC Medium 1520 R2A + fumarate projection that
+    omits the optional 15 g/L agar row.

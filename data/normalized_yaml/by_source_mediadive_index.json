@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-14T19:00:04.480209+00:00",
+  "generated": "2026-10-02T05:38:04.083012+00:00",
   "source": "MediaDive",
-  "count": 3325,
+  "count": 3331,
   "recipes": {
     "CultureMech:000252": {
       "name": "halophilic_medium",
@@ -7524,6 +7524,18 @@
       ],
       "category_dir": "bacterial"
     },
+    "CultureMech:015910": {
+      "name": "acidithiobacillus_marinus_medium",
+      "filename": "acidithiobacillus_marinus_medium.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015910",
+      "source_id": "mediadive.medium:71a",
+      "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ],
+      "category_dir": "bacterial"
+    },
     "CultureMech:001459": {
       "name": "acidithiobacillus_medium",
       "filename": "acidithiobacillus_medium.yaml",
@@ -11776,6 +11788,19 @@
       "id": "CultureMech:001238",
       "source_id": "mediadive.medium:1793",
       "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ],
+      "category_dir": "bacterial"
+    },
+    "CultureMech:015911": {
+      "name": "chloracidobacterium_thermophilum_midnight_medium_ctm",
+      "filename": "chloracidobacterium_thermophilum_midnight_medium_ctm.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:015911",
+      "source_id": "mediadive.medium:1783",
+      "source": "MediaDive",
+      "solution_count": 8,
       "categories": [
         "bacterial"
       ],
@@ -17117,6 +17142,18 @@
       ],
       "category_dir": "bacterial"
     },
+    "CultureMech:015912": {
+      "name": "glucose_agar_mediadive_1873",
+      "filename": "glucose_agar_mediadive_1873.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:015912",
+      "source_id": "mediadive.medium:1873",
+      "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ],
+      "category_dir": "bacterial"
+    },
     "CultureMech:001231": {
       "name": "glucose_asparagine_agar",
       "filename": "glucose_asparagine_agar.yaml",
@@ -18808,6 +18845,19 @@
       "id": "CultureMech:000519",
       "source_id": "mediadive.medium:1085",
       "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ],
+      "category_dir": "bacterial"
+    },
+    "CultureMech:015913": {
+      "name": "hs_rfb_borrelia_miyamotoi_medium",
+      "filename": "hs_rfb_borrelia_miyamotoi_medium.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015913",
+      "source_id": "mediadive.medium:1895",
+      "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -21588,6 +21638,18 @@
       "ingredient_count": 5,
       "id": "CultureMech:003089",
       "source_id": "mediadive.medium:J746",
+      "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ],
+      "category_dir": "bacterial"
+    },
+    "CultureMech:015914": {
+      "name": "mannitol_soya_flour_medium",
+      "filename": "mannitol_soya_flour_medium.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015914",
+      "source_id": "mediadive.medium:1894",
       "source": "MediaDive",
       "categories": [
         "bacterial"
@@ -33372,6 +33434,18 @@
       "ingredient_count": 4,
       "id": "CultureMech:001214",
       "source_id": "mediadive.medium:1737",
+      "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ],
+      "category_dir": "bacterial"
+    },
+    "CultureMech:015915": {
+      "name": "starch_casein_nitrate_agar",
+      "filename": "starch_casein_nitrate_agar.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015915",
+      "source_id": "mediadive.medium:1897",
       "source": "MediaDive",
       "categories": [
         "bacterial"

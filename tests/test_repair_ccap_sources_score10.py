@@ -101,6 +101,29 @@ def test_plan_repairs_finds_current_ccap_cohort(repair_module) -> None:
     assert repair_module.NORMALIZED / "algae" / "2asw.yaml" in plans
 
 
+def test_find_targets_skips_non_imported_ccap_references(repair_module, tmp_path) -> None:
+    algae = tmp_path / "algae"
+    algae.mkdir()
+
+    imported = _doc()
+    live = _doc()
+    live["curation_history"] = [
+        {
+            "curator": "codex-agent",
+            "action": "ADDED_CCAP_MISSING_ALGAE_MEDIUM",
+            "source": "CCAP:Test; https://www.ccap.ac.uk/wp-content/uploads/MR_Test.pdf",
+        }
+    ]
+
+    imported_path = algae / "imported.yaml"
+    live_path = algae / "live.yaml"
+    imported_path.write_text(repair_module.dump_record(imported), encoding="utf-8")
+    live_path.write_text(repair_module.dump_record(live), encoding="utf-8")
+
+    assert repair_module.find_targets(tmp_path, expected_count=1) == [imported_path]
+    assert live_path not in repair_module.find_targets(tmp_path, expected_count=None)
+
+
 def test_repair_rejects_mismatched_pdf(repair_module) -> None:
     doc = _doc()
     doc["references"][1]["reference"] = "https://www.ccap.ac.uk/wp-content/uploads/MR_Other.pdf"

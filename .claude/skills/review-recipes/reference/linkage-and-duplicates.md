@@ -79,52 +79,49 @@ for issue in issues:
 
 ## Recipe Fingerprinting
 
-### Detect Duplicates
+### Exact Ingredient-Set Merge Fingerprinting
+
+The maintained exact merge path fingerprints ingredient identity sets with
+`src/culturemech/merge/fingerprint.py` and groups recipes through
+`python -m culturemech.merge.merge_recipes`. The fingerprint is
+concentration-independent: same-ingredient-set recipes group together even when
+pH, concentration, temperature, or preparation differ.
 
 ```bash
-# Find potential duplicate recipes
-PYTHONPATH=src python scripts/detect_duplicate_recipes.py \
-  --threshold 0.95 \
-  --output reports/duplicates_$(date +%Y%m%d).json
+# Preview exact ingredient-set merge groups
+PYTHONPATH=src python -m culturemech.merge.merge_recipes \
+  --dry-run \
+  --min-group-size 2
 
-# Check specific category
-PYTHONPATH=src python scripts/detect_duplicate_recipes.py \
-  --category bacterial \
-  --threshold 0.90
+# Show exact merge stats without rewriting data/merge_yaml
+PYTHONPATH=src python -m culturemech.merge.merge_recipes \
+  --stats-only
 ```
 
-**Fingerprinting Algorithm:**
-1. Extract sorted ingredient list with concentrations
-2. Normalize ingredient names (case-insensitive, whitespace)
-3. Normalize concentration units
-4. Generate hash of normalized composition
-5. Calculate Jaccard similarity between ingredient sets
-6. Flag pairs with similarity > threshold
+**Exact ingredient-set fingerprinting algorithm:**
+1. Extract ingredient identifiers from direct ingredients and solution
+   compositions
+2. Prefer CHEBI IDs, falling back to normalized ingredient names
+3. Ignore concentration amounts and ingredient order
+4. Sort and hash the unique ingredient identifiers
 
-**Output:**
-```json
-{
-  "duplicate_pairs": [
-    {
-      "recipe1": {
-        "id": "CultureMech:001234",
-        "name": "LB Broth",
-        "path": "data/normalized_yaml/bacterial/LB_Broth.yaml"
-      },
-      "recipe2": {
-        "id": "CultureMech:005678",
-        "name": "Luria-Bertani Medium",
-        "path": "data/normalized_yaml/bacterial/Luria_Bertani_Medium.yaml"
-      },
-      "similarity": 0.98,
-      "differences": [
-        "recipe1 has pH 7.0, recipe2 has pH 7.2"
-      ],
-      "recommendation": "MERGE - Near-identical recipes"
-    }
-  ]
-}
+### Close Variant Proposals
+
+Close variants are reviewed through the manifest-driven media variant workflow,
+not through exact merge fingerprints:
+
+```bash
+just review-media-content
+just propose-media-variant-links
+just apply-media-variant-links --limit <n>
+just validate-media-variant-links
 ```
+
+`scripts/propose_media_variant_links.py` groups candidate records by ingredient
+identity signature, compares concentration and physical-state signatures, and
+infers parent/child relationships such as `SOURCE_DUPLICATE`,
+`PHYSICAL_STATE_VARIANT`, `CONCENTRATION_VARIANT`, `PH_VARIANT`,
+`SALINITY_VARIANT`, `SUPPLEMENTED_VARIANT`, `OMITTED_COMPONENT_VARIANT`, and
+`SUBSTITUTED_COMPONENT_VARIANT`.
 
 ---
-

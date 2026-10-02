@@ -1,0 +1,75 @@
+id: CultureMech:015901
+name: r_cw_medium_nbrc_355
+original_name: R-CW medium
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: NBRC Medium 355
+  term:
+    id: nbrc.medium:355
+    label: R-CW medium
+notes: 'Source: NBRC | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=355'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Bacto Tryptone (Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Sodium acetate trihydrate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Diammonium hydrogencitrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MnSO4·nH2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+- preferred_term: Cheese whey
+  concentration:
+    value: '1'
+    unit: L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: '* Add HCl to warmed milk and coagulate. After centrifuging, use the
+    supernatant.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-02T05:20:01.508978+00:00'
+  curator: nbrc-live-import
+  action: Scraped from NBRC catalogue
+  notes: Direct import from NBRC Medium 355. Ingredients captured verbatim from the
+    live catalogue.
+- timestamp: '2026-10-01T03:40:36.654536+00:00'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015901'
+ph_value: 6.0

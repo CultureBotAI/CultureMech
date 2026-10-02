@@ -1,0 +1,96 @@
+id: CultureMech:015914
+name: mannitol_soya_flour_medium
+original_name: Mannitol soya flour medium (MS, SFM, SF&M)
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: MediaDive Medium 1894
+  term:
+    id: mediadive.medium:1894
+    label: Mannitol soya flour medium (MS, SFM, SF&M)
+notes: 'Source: MediaDive | Link: https://mediadive.dsmz.de/rest/medium/1894'
+ingredients:
+- preferred_term: Soya flour
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2443
+    label: Soya flour
+  notes: from supermarket
+- preferred_term: Mannitol
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:6
+    label: Mannitol
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Due to the insolubility of most components, the required amount of
+    each ingredient is added as powder to the final container, and then the necessary
+    volume of water poured into it. Use a container with at least twice the volume
+    capacity than medium. E.g. add 5 g of each soya flour, mannitol and agar to a
+    500 ml Duran bottle and pour 250 ml of tap water.
+- step_number: 2
+  action: MIX
+  description: 'Use tap water, NOT deionised water. It is not necessary to be drinking
+    water. Tip: adding very hot tap-water facilitates initial suspension and partial
+    solution of components.'
+- step_number: 3
+  action: MIX
+  description: The medium must be autoclaved twice. After the first round and while
+    the medium is still quite hot (mind using heat-protection gloves) with the lid
+    still slightly open swirl the bottle while allowing to release the pressure possibly
+    remaining inside the bottle; close well the lid, and mix thoroughly by swirling
+    the bottle; open the lid slightly (mind possible steam coming out) and autoclave
+    again.
+- step_number: 4
+  action: MIX
+  description: 'Relevant references: Original recipe published in "Hobbs, Frazer,
+    Gardner, Cullum, Oliver. “Dispersed Growth of Streptomyces in Liquid Culture.”
+    Applied Microbiology and Biotechnology 31, no. 3 (September 1, 1989): 272–77.
+    https://doi.org/10.1007/BF00258408". Most common recipe and that described here,
+    published in "Kieser, Bibb, Buttner, Chater, Hopwood. Practical Streptomyces Genetics.
+    Norwich: The John Innes Foundation, 2000." https://www.dsmz.de/research/publications/41184'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-01T04:00:20.794363+00:00'
+  curator: mediadive-live-gap-import
+  action: Imported from live MediaDive API
+  source: https://mediadive.dsmz.de/rest/medium/1894
+  notes: Direct import from MediaDive medium 1894. Recipe rows captured from the live
+    API detail payload.
+- timestamp: '2026-10-01T04:04:39Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015914'
+- timestamp: '2026-10-01T04:07:27.826057+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 15380a62031b5939568445aaa119ab727d5d2a810f414d694792714e5d72d8f2
+  source: mannitol_soya_flour_medium.yaml
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/1894
+description: 'General culture medium for growth and sporulation of streptomycetes.
+  Culture medium of choice for intergenic conjugation of plasmids with Escherichia
+  coli as donor. Original recipe published in "Hobbs, Frazer, Gardner, Cullum, Oliver.
+  “Dispersed Growth of Streptomyces in Liquid Culture.” Applied Microbiology and Biotechnology
+  31, no. 3 (September 1, 1989): 272–77. https://doi.org/10.1007/BF00258408". Most
+  common recipe and that described here, published in "Kieser, Bibb, Buttner, Chater,
+  Hopwood. Practical Streptomyces Genetics. Norwich: The John Innes Foundation, 2000."
+  https://www.dsmz.de/research/publications/41184'
+merge_fingerprint: 15380a62031b5939568445aaa119ab727d5d2a810f414d694792714e5d72d8f2
+merged_from:
+- mannitol_soya_flour_medium

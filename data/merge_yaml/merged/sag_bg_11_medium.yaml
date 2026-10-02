@@ -1,0 +1,247 @@
+id: CultureMech:015897
+name: sag_bg_11_medium
+original_name: BG 11 Medium for Cyanobacteria
+category: algae
+sources:
+- database: SAG
+  database_id: BG11
+  url: http://sagdb.uni-goettingen.de/culture_media/20 BG11 Medium.pdf
+medium_type: DEFINED
+composition_type: DEFINED
+physical_state: LIQUID
+description: SAG BG 11 medium for cyanobacteria, after Rippka and Herdman with the
+  SAG 2013 micronutrient solution.
+notes: SAG prepares BG 11 from mineral stocks plus a Kuhl and Lorenzen micronutrient
+  solution containing boric acid, manganese sulfate monohydrate, zinc sulfate heptahydrate,
+  copper sulfate pentahydrate, and ammonium heptamolybdate tetrahydrate.
+ingredients:
+- preferred_term: De-ionized or distilled water
+  concentration:
+    value: '919'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: SAG lists 919 mL/L water after the eight 10 mL mineral-stock additions and
+    1 mL micronutrient solution.
+- preferred_term: NaNO3
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63005
+    label: sodium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+  notes: SAG adds 10 mL/L of a 15 g/100 mL stock.
+  nutritional_roles:
+  - NITROGEN_SOURCE
+- preferred_term: K2HPO4 x 3H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: SAG adds 10 mL/L of a 0.4 g/100 mL stock.
+  nutritional_roles:
+  - PHOSPHATE_SOURCE
+  physicochemical_roles:
+  - BUFFER
+- preferred_term: MgSO4 x 7H2O
+  concentration:
+    value: '0.075'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  notes: SAG adds 10 mL/L of a 0.75 g/100 mL stock.
+  nutritional_roles:
+  - SULFUR_SOURCE
+  - TRACE_ELEMENT
+- preferred_term: CaCl2 x 2H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: SAG adds 10 mL/L of a 0.36 g/100 mL stock.
+- preferred_term: Citric acid
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30769
+    label: citric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30769
+    label: citric acid
+  notes: SAG adds 10 mL/L of a 0.06 g/100 mL stock.
+  physicochemical_roles:
+  - CHELATOR
+- preferred_term: Ferric ammonium citrate
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+  notes: SAG adds 10 mL/L of a 0.06 g/100 mL stock.
+  nutritional_roles:
+  - IRON_SOURCE
+  physicochemical_roles:
+  - CHELATOR
+- preferred_term: EDTA (dinatrium-salt)
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
+  notes: SAG adds 10 mL/L of a 0.01 g/100 mL stock.
+  physicochemical_roles:
+  - CHELATOR
+- preferred_term: Na2CO3
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  notes: SAG adds 10 mL/L of a 0.2 g/100 mL stock.
+  nutritional_roles:
+  - CARBON_SOURCE
+  physicochemical_roles:
+  - BUFFER
+solutions:
+- preferred_term: Micronutrient solution
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: H3BO3
+    concentration:
+      value: '61.0'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: MnSO4 x H2O
+    concentration:
+      value: '169.0'
+      unit: MG_PER_L
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: ZnSO4 x 7H2O
+    concentration:
+      value: '287.0'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: CuSO4 x 5H2O
+    concentration:
+      value: '2.5'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+  - preferred_term: (NH4)6Mo7O24 x 4H2O
+    concentration:
+      value: '12.5'
+      unit: MG_PER_L
+    nutritional_roles:
+    - TRACE_ELEMENT
+  preparation_notes: Add the micronutrient components to 1000 mL de-ionized or distilled
+    water.
+  notes: SAG lists the Kuhl and Lorenzen micronutrient solution at 1 mL/L in final
+    BG 11.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add the NaNO3, K2HPO4 x 3H2O, MgSO4 x 7H2O, CaCl2 x 2H2O, citric acid,
+    ferric ammonium citrate, EDTA, and Na2CO3 stocks to de-ionized or distilled water.
+- step_number: 2
+  action: MIX
+  description: Add 1 mL/L micronutrient solution and bring to the final volume.
+applications:
+- Cyanobacteria cultivation
+curation_history:
+- timestamp: '2026-10-01T02:46:22+00:00'
+  curator: codex-agent
+  action: ADDED_SAG_MISSING_ALGAE_MEDIUM
+  source: SAG:BG11; http://sagdb.uni-goettingen.de/culture_media/20 BG11 Medium.pdf
+  changes: Added SAG BG 11 recipe from the live SAG PDF
+  notes: Live SAG index advertised BG11 and the exact SAG:BG11 source was absent from
+    data/normalized_yaml before this add-only curation pass.
+- timestamp: '2026-10-01T02:55:00+00:00'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015897'
+- timestamp: '2026-10-01T03:00:54.088328+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 73ad192a038122051f6c664fd7780ccd0c427d3d64e92048863a8c7882f285ed
+  source: sag_bg_11_medium.yaml
+references:
+- reference: SAG:BG11
+  title: BG 11 Medium for Cyanobacteria
+  authors: Sammlung von Algenkulturen Goettingen
+  year: 2013
+  notes: SAG medium 20 PDF.
+- reference: http://sagdb.uni-goettingen.de/culture_media/20 BG11 Medium.pdf
+- reference: Kuhl and Lorenzen 1964
+  title: Handling and culturing of Chlorella
+  authors: A. Kuhl; H. Lorenzen
+  year: 1964
+  notes: Cited by SAG as the source of the BG 11 micronutrient solution.
+- reference: Rippka and Herdman 1992
+  title: Pasteur Culture Collection of Cyanobacterial Strains in Axenic Culture, Vol.
+    1, Catalogue of strains
+  authors: R. Rippka; M. Herdman
+  year: 1992
+  notes: Cited by SAG as the source of the modified BG 11 formulation.
+- reference: Stanier et al. 1971
+  title: Purification and properties of unicellular blue-green algae (order Chroococcales)
+  authors: R. Y. Stanier; R. Kunisawa; M. Mandel; G. Cohen-Bazire
+  year: 1971
+  notes: Cited by SAG on the BG 11 medium sheet.
+data_quality_flags:
+- has_ontology_mappings
+- has_unmapped_ingredients
+- ingredients_curated
+merge_fingerprint: 73ad192a038122051f6c664fd7780ccd0c427d3d64e92048863a8c7882f285ed
+merged_from:
+- sag_bg_11_medium

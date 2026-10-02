@@ -3,3 +3,4 @@ CultureMech:000190	UNKNOWN	bg11	DELETED		Legacy SAG BG11 record was overwritten 
 CultureMech:000306	UNKNOWN	test_medium_123	DELETED		Spurious test fixture removed in CultureMech issue 237.
 CultureMech:003009	UNKNOWN	nutrient_broth	DELETED		Legacy JCM J663 record was overwritten by a separately issued CultureBotHT import; identity with the replacement was not established.
 CultureMech:015406	UNKNOWN	marine_broth_2216	DELETED		Legacy JCM J41 record was overwritten by a separately issued CultureBotHT import; identity with the replacement was not established.
+CultureMech:015891	sha256:6e6799c736a571c03100018f7a05b5e696ae5d5110b32d3243450fcfa04aee9a	ammonia_oxidizing_bacteria_medium	DELETED		Incomplete JCM GRMD 1483 stock-solution-only import removed; a complete multi-table parser is required before reimport.
