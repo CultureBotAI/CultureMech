@@ -256,6 +256,49 @@ def test_undecided_row_does_not_borrow_a_live_identifier():
     assert index.resolve_label("Pending").identifier is None
 
 
+def test_undecided_owner_shadows_a_later_mapped_row():
+    """Contract rule 0: the label's owner outranks status, and the first row is
+    the answer. An owner whose curation is unfinished therefore yields no
+    identity even when another record's synonym is MAPPED (#525)."""
+
+    index = MIMLabelIndex.from_csv_text(
+        _csv(
+            _row("Shared", "UNMAPPED_0001", ontology_id="", mapping_status="NEEDS_EXPERT"),
+            _row("Shared", "CHEBI:1", match_type="synonym", preferred_term="Other"),
+        )
+    )
+    decision = index.resolve_label("Shared")
+    assert decision.identifier is None
+    assert decision.resolution_source is ResolutionSource.AMBIGUOUS
+    assert index.semantic_answers()["shared"] == (None, "undecided", "unique")
+
+
+def test_weak_collision_with_undecided_group_reports_the_conflict():
+    """Across several weak-matched groups the reason is the collision, not the
+    status of whichever group happens to be undecided (#522)."""
+
+    index = MIMLabelIndex.from_csv_text(
+        _csv(
+            _row("A-B", "CHEBI:1"),
+            _row("A B", "CHEBI:2"),
+            _row("A_B", "UNMAPPED_0002", ontology_id="", mapping_status="IN_PROGRESS"),
+        )
+    )
+    decision = index.resolve_label("a  b")
+    assert decision.identifier is None
+    assert "incompatible MIM label groups" in decision.reason
+
+    with_unmapped = MIMLabelIndex.from_csv_text(
+        _csv(
+            _row("C-D", "UNMAPPED_0003", ontology_id="", mapping_status="UNMAPPED"),
+            _row("C D", "UNMAPPED_0004", ontology_id="", mapping_status="PENDING_REVIEW"),
+        )
+    )
+    fallback = with_unmapped.resolve_label("c  d", local_identifier="CHEBI:5")
+    assert fallback.identifier == "CHEBI:5"
+    assert fallback.resolution_source is ResolutionSource.AMBIGUOUS_LOCAL_FALLBACK
+
+
 @pytest.mark.parametrize(
     "ambiguity",
     [

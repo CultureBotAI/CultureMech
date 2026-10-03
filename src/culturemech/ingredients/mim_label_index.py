@@ -44,7 +44,9 @@ MATCH_TYPES = frozenset({"preferred_term", "synonym", "ontology_label"})
 # a row asserts neither an identity nor an authoritative absence of one, so it
 # never resolves and never suppresses a labelled local fallback (#520). A value
 # outside this set still fails closed.
-UNDECIDED_MAPPING_STATUSES = frozenset({"PENDING_REVIEW", "IN_PROGRESS", "NEEDS_EXPERT", "AMBIGUOUS"})
+UNDECIDED_MAPPING_STATUSES = frozenset(
+    {"PENDING_REVIEW", "IN_PROGRESS", "NEEDS_EXPERT", "AMBIGUOUS"}
+)
 MAPPING_STATUSES = frozenset({"MAPPED", "UNMAPPED", "REJECTED"}) | UNDECIDED_MAPPING_STATUSES
 SAFE_AMBIGUITIES = frozenset({"unique", "resolved:owned", "agree:same_substance"})
 AMBIGUITIES = SAFE_AMBIGUITIES | frozenset(
@@ -325,9 +327,10 @@ class MIMLabelIndex:
                 "MIM explicitly leaves this label unmapped; local grounding suppressed",
             )
 
-        undecided = sorted({row.mapping_status for state, row in states if state == "undecided"})
-        if undecided:
-            reason = f"MIM curation of this label is unfinished ({', '.join(undecided)})"
+        if len(groups) == 1 and states[0][0] == "undecided":
+            # Name the status only when it is the whole answer; across several
+            # weak-matched groups the conflict between them is the reason (#522).
+            reason = f"MIM curation of this label is unfinished ({representative.mapping_status})"
         elif len(groups) == 1:
             reason = "MIM label is chemically ambiguous"
         else:
