@@ -1845,6 +1845,12 @@ classes:
   EvidenceItem:
     description: Evidence supporting a claim about media formulation or performance
     attributes:
+      evidence_source:
+        description: >-
+          Study or data-source type behind the cited evidence, not the curation
+          method or the location of a quote. Omit when unknown; never infer
+          from a PMID, DOI, or whether an LLM assisted curation.
+        range: EvidenceSourceEnum
       reference:
         description: Citation (PMID, DOI, or historical reference)
         range: string
@@ -2243,6 +2249,39 @@ classes:
 # ================================================================
 
 enums:
+
+  EvidenceSourceEnum:
+    description: >-
+      Study or data-source type providing a claim's evidence. This is independent
+      of supports, citation identifiers, quotation location, and curation method.
+    permissible_values:
+      FIELD_STUDY:
+        description: Observation or measurement made in a natural system.
+      MESOCOSM:
+        description: Experiment in a controlled enclosure representing a natural system.
+      LABORATORY:
+        description: Controlled laboratory study; use IN_VITRO or IN_VIVO when that distinction is known.
+      IN_VITRO:
+        description: Experiment outside an intact organism, such as a culture or biochemical assay.
+      IN_VIVO:
+        description: Experiment or observation in an intact living organism.
+      COMPUTATIONAL:
+        description: Model, simulation, prediction, or computational analysis providing the cited evidence.
+      META_ANALYSIS:
+        description: Systematic synthesis or quantitative analysis of results across studies.
+      REVIEW:
+        description: Narrative review or expert synthesis of published work.
+      REMOTE_SENSING:
+        description: Satellite, aerial, or other remotely sensed observations.
+      LONG_TERM_MONITORING:
+        description: Repeated observations from a long-term monitoring programme.
+      EXPERT_OPINION:
+        description: Expert judgement or consensus rather than a primary experimental result.
+      DATABASE:
+        description: Assertion or observation obtained from a database or curated data resource.
+      OTHER:
+        description: A known study or data-source type outside these categories; explain it in notes or explanation.
+
   RecordKindEnum:
     description: >-
       Whether a normalized_yaml record describes a growth medium or a standalone

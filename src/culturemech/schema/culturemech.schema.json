@@ -816,6 +816,10 @@
             "additionalProperties": false,
             "description": "Evidence supporting a claim about media formulation or performance",
             "properties": {
+                "evidence_source": {
+                    "$ref": "#/$defs/EvidenceSourceEnum",
+                    "description": "Study or data-source type behind the cited evidence, not the curation method or the location of a quote. Omit when unknown; never infer from a PMID, DOI, or whether an LLM assisted curation."
+                },
                 "explanation": {
                     "description": "Why this evidence supports the claim",
                     "type": "string"
@@ -854,6 +858,26 @@
                 "WRONG_STATEMENT"
             ],
             "title": "EvidenceItemSupportEnum",
+            "type": "string"
+        },
+        "EvidenceSourceEnum": {
+            "description": "Study or data-source type providing a claim's evidence. This is independent of supports, citation identifiers, quotation location, and curation method.",
+            "enum": [
+                "FIELD_STUDY",
+                "MESOCOSM",
+                "LABORATORY",
+                "IN_VITRO",
+                "IN_VIVO",
+                "COMPUTATIONAL",
+                "META_ANALYSIS",
+                "REVIEW",
+                "REMOTE_SENSING",
+                "LONG_TERM_MONITORING",
+                "EXPERT_OPINION",
+                "DATABASE",
+                "OTHER"
+            ],
+            "title": "EvidenceSourceEnum",
             "type": "string"
         },
         "FingerprintModeEnum": {

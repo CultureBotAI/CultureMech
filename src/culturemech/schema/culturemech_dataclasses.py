@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-09-14T12:08:25
+# Generation date: 2026-09-17T00:38:22
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -1825,6 +1825,7 @@ class EvidenceItem(YAMLRoot):
     reference: Union[str, EvidenceItemReference] = None
     supports: Union[str, "EvidenceItemSupportEnum"] = None
     explanation: str = None
+    evidence_source: Optional[Union[str, "EvidenceSourceEnum"]] = None
     snippet: Optional[str] = None
 
     def __post_init__(self, *_: str, **kwargs: Any):
@@ -1842,6 +1843,9 @@ class EvidenceItem(YAMLRoot):
             self.MissingRequiredField("explanation")
         if not isinstance(self.explanation, str):
             self.explanation = str(self.explanation)
+
+        if self.evidence_source is not None and not isinstance(self.evidence_source, EvidenceSourceEnum):
+            self.evidence_source = EvidenceSourceEnum(self.evidence_source)
 
         if self.snippet is not None and not isinstance(self.snippet, str):
             self.snippet = str(self.snippet)
@@ -2618,6 +2622,56 @@ class Dataset(YAMLRoot):
 
 
 # Enumerations
+class EvidenceSourceEnum(EnumDefinitionImpl):
+    """
+    Study or data-source type providing a claim's evidence. This is independent of supports, citation identifiers,
+    quotation location, and curation method.
+    """
+    FIELD_STUDY = PermissibleValue(
+        text="FIELD_STUDY",
+        description="Observation or measurement made in a natural system.")
+    MESOCOSM = PermissibleValue(
+        text="MESOCOSM",
+        description="Experiment in a controlled enclosure representing a natural system.")
+    LABORATORY = PermissibleValue(
+        text="LABORATORY",
+        description="Controlled laboratory study; use IN_VITRO or IN_VIVO when that distinction is known.")
+    IN_VITRO = PermissibleValue(
+        text="IN_VITRO",
+        description="Experiment outside an intact organism, such as a culture or biochemical assay.")
+    IN_VIVO = PermissibleValue(
+        text="IN_VIVO",
+        description="Experiment or observation in an intact living organism.")
+    COMPUTATIONAL = PermissibleValue(
+        text="COMPUTATIONAL",
+        description="Model, simulation, prediction, or computational analysis providing the cited evidence.")
+    META_ANALYSIS = PermissibleValue(
+        text="META_ANALYSIS",
+        description="Systematic synthesis or quantitative analysis of results across studies.")
+    REVIEW = PermissibleValue(
+        text="REVIEW",
+        description="Narrative review or expert synthesis of published work.")
+    REMOTE_SENSING = PermissibleValue(
+        text="REMOTE_SENSING",
+        description="Satellite, aerial, or other remotely sensed observations.")
+    LONG_TERM_MONITORING = PermissibleValue(
+        text="LONG_TERM_MONITORING",
+        description="Repeated observations from a long-term monitoring programme.")
+    EXPERT_OPINION = PermissibleValue(
+        text="EXPERT_OPINION",
+        description="Expert judgement or consensus rather than a primary experimental result.")
+    DATABASE = PermissibleValue(
+        text="DATABASE",
+        description="Assertion or observation obtained from a database or curated data resource.")
+    OTHER = PermissibleValue(
+        text="OTHER",
+        description="""A known study or data-source type outside these categories; explain it in notes or explanation.""")
+
+    _defn = EnumDefinition(
+        name="EvidenceSourceEnum",
+        description="""Study or data-source type providing a claim's evidence. This is independent of supports, citation identifiers, quotation location, and curation method.""",
+    )
+
 class RecordKindEnum(EnumDefinitionImpl):
     """
     Whether a normalized_yaml record describes a growth medium or a standalone stock solution. See the `record_kind`
@@ -4754,6 +4808,9 @@ slots.publicationReference__year = Slot(uri=CULTUREMECH.year, name="publicationR
 
 slots.publicationReference__notes = Slot(uri=CULTUREMECH.notes, name="publicationReference__notes", curie=CULTUREMECH.curie('notes'),
                    model_uri=CULTUREMECH.publicationReference__notes, domain=None, range=Optional[str])
+
+slots.evidenceItem__evidence_source = Slot(uri=CULTUREMECH.evidence_source, name="evidenceItem__evidence_source", curie=CULTUREMECH.curie('evidence_source'),
+                   model_uri=CULTUREMECH.evidenceItem__evidence_source, domain=None, range=Optional[Union[str, "EvidenceSourceEnum"]])
 
 slots.evidenceItem__reference = Slot(uri=CULTUREMECH.reference, name="evidenceItem__reference", curie=CULTUREMECH.curie('reference'),
                    model_uri=CULTUREMECH.evidenceItem__reference, domain=None, range=URIRef)
