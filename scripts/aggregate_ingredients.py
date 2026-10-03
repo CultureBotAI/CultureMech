@@ -42,6 +42,12 @@ def build_parser() -> argparse.ArgumentParser:
         help="Machine-readable input error report.",
     )
     parser.add_argument(
+        "--list-output",
+        type=Path,
+        default=Path("output/ingredients_list.tsv"),
+        help="Complete one-row-per-ingredient TSV (not filtered by --min-occurrences).",
+    )
+    parser.add_argument(
         "--min-occurrences",
         type=int,
         default=1,
@@ -59,6 +65,7 @@ def main(argv: list[str] | None = None) -> int:
         mapped_output=args.mapped_output,
         unmapped_output=args.unmapped_output,
         errors_output=args.errors_output,
+        list_output=args.list_output,
         min_occurrences=args.min_occurrences,
         verbose=args.verbose,
     )

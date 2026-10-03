@@ -71,7 +71,7 @@ bump is preview-only by default and requires a full MIM commit plus an explicit
 ## Generated direct ingredient occurrences
 
 `just aggregate-all-ingredients` projects Layer 3 recipe content and the pinned
-MIM identity snapshot into four generated files under `output/`:
+MIM identity snapshot into five generated files under `output/`:
 
 - `ingredient_occurrences.tsv` is the canonical, complete direct-containment
   table.
@@ -79,6 +79,8 @@ MIM identity snapshot into four generated files under `output/`:
   that same table.
 - `ingredient_aggregation_errors.tsv` reports YAML and extraction-blocking
   schema/shape failures.
+- `ingredients_list.tsv` lists each distinct ingredient once, using the same
+  grouping as the two YAML summaries.
 
 The traversal follows root schema shape: MediaRecipe-shaped records contribute
 `ingredients`, while SolutionRecipe-shaped records contribute `composition`.

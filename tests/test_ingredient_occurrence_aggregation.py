@@ -107,6 +107,7 @@ def _output_args(root: Path, stem: str) -> dict[str, Path]:
         "mapped_output": out / "mapped_ingredients.yaml",
         "unmapped_output": out / "unmapped_ingredients.yaml",
         "errors_output": out / "ingredient_occurrence_errors.tsv",
+        "list_output": out / "ingredients_list.tsv",
     }
 
 
@@ -371,6 +372,8 @@ def test_complete_runs_are_byte_identical(cli_module, tmp_path):
                 str(outputs["unmapped_output"]),
                 "--errors-output",
                 str(outputs["errors_output"]),
+                "--list-output",
+                str(outputs["list_output"]),
             ]
         )
 
@@ -410,7 +413,7 @@ def test_fatal_errors_are_reported_without_replacing_success_artifacts(cli_modul
     outputs = _output_args(tmp_path, "out")
     sentinels = {
         name: f"existing {name}\n".encode()
-        for name in ("occurrences_output", "mapped_output", "unmapped_output")
+        for name in ("occurrences_output", "mapped_output", "unmapped_output", "list_output")
     }
     for name, content in sentinels.items():
         outputs[name].write_bytes(content)
@@ -427,6 +430,8 @@ def test_fatal_errors_are_reported_without_replacing_success_artifacts(cli_modul
             str(outputs["unmapped_output"]),
             "--errors-output",
             str(outputs["errors_output"]),
+            "--list-output",
+            str(outputs["list_output"]),
         ]
     )
     assert rc != 0
@@ -630,3 +635,175 @@ def test_output_paths_must_be_distinct_before_publication(occurrence_module, tmp
             errors_output=tmp_path / "errors.tsv",
         )
     assert not shared.exists()
+
+
+def _read_list(path: Path) -> list[dict[str, str]]:
+    with path.open(encoding="utf-8", newline="") as stream:
+        return list(csv.DictReader(stream, delimiter="\t"))
+
+
+def test_ingredient_list_reconciles_with_mapped_and_unmapped_views(occurrence_module, tmp_path):
+    """One list row per view group; counts reconcile with the uncapped table."""
+
+    corpus = tmp_path / "corpus"
+    _write(
+        corpus,
+        "bacterial/one.yaml",
+        {
+            "id": "CultureMech:000051",
+            "name": "List one",
+            "category": "bacterial",
+            "physical_state": "LIQUID",
+            "ingredients": [
+                {"preferred_term": "EDTA"},
+                {"preferred_term": "EDTA"},
+                {"preferred_term": "Calf brains"},
+                {"preferred_term": ""},
+            ],
+        },
+    )
+    _write(
+        corpus,
+        "algae/two.yaml",
+        {
+            "id": "CultureMech:000052",
+            "name": "List two",
+            "category": "algae",
+            "physical_state": "LIQUID",
+            "ingredients": [{"preferred_term": "EDTA"}, {"preferred_term": "Calf brains"}],
+        },
+    )
+
+    outputs = _output_args(tmp_path, "out")
+    assert occurrence_module.run_aggregation(input_dir=corpus, **outputs) == 0
+    rows = _read_list(outputs["list_output"])
+    mapped = yaml.safe_load(outputs["mapped_output"].read_text(encoding="utf-8"))
+    unmapped = yaml.safe_load(outputs["unmapped_output"].read_text(encoding="utf-8"))
+
+    with outputs["occurrences_output"].open(encoding="utf-8", newline="") as stream:
+        occurrence_rows = list(csv.DictReader(stream, delimiter="\t"))
+
+    assert list(rows[0]) == list(occurrence_module.INGREDIENT_LIST_FIELDS)
+    assert len(rows) == mapped["total_mapped_count"] + unmapped["total_unmapped_count"]
+    assert sum(int(row["occurrence_count"]) for row in rows) == len(occurrence_rows)
+    # Same groups as the views, not merely the same number of groups.
+    assert sorted(
+        (row["resolved_identifier"], int(row["occurrence_count"]))
+        for row in rows
+        if row["mapping_status"] == "MAPPED"
+    ) == sorted(
+        (entry["resolved_identifier"], entry["occurrence_count"])
+        for entry in mapped["mapped_ingredients"]
+    )
+    assert sorted(
+        (row["preferred_term"], int(row["occurrence_count"]))
+        for row in rows
+        if row["mapping_status"] != "MAPPED"
+    ) == sorted(
+        (entry["placeholder_id"], entry["occurrence_count"])
+        for entry in unmapped["unmapped_ingredients"]
+    )
+
+    edta = next(row for row in rows if row["resolved_identifier"] == "CHEBI:4735")
+    assert edta["mapping_status"] == "MAPPED"
+    assert edta["identifier_prefix"] == "CHEBI"
+    assert (edta["occurrence_count"], edta["distinct_recipe_count"]) == ("3", "2")
+    assert edta["recipe_categories"] == "ALGAE | BACTERIAL"
+    assert rows[0]["resolved_identifier"] == "CHEBI:4735"
+
+    calf = next(row for row in rows if row["preferred_term"] == "Calf brains")
+    assert calf["resolved_identifier"] == ""
+    assert calf["mapping_status"] == "UNMAPPED"
+
+    blank = next(row for row in rows if row["preferred_term"].startswith("blank:"))
+    assert blank["preferred_term"] == "blank:CultureMech:000051:ingredients:3"
+    assert blank["label_variant_count"] == "0"
+
+
+def test_ingredient_list_ignores_min_occurrences(occurrence_module, tmp_path):
+    corpus = tmp_path / "corpus"
+    _write(
+        corpus,
+        "bacterial/one.yaml",
+        {
+            "id": "CultureMech:000061",
+            "name": "Singletons",
+            "physical_state": "LIQUID",
+            "ingredients": [{"preferred_term": "EDTA"}, {"preferred_term": "Calf brains"}],
+        },
+    )
+    outputs = _output_args(tmp_path, "out")
+    assert occurrence_module.run_aggregation(input_dir=corpus, min_occurrences=2, **outputs) == 0
+    mapped = yaml.safe_load(outputs["mapped_output"].read_text(encoding="utf-8"))
+    assert mapped["total_mapped_count"] == 0
+    assert len(_read_list(outputs["list_output"])) == 2
+
+
+def test_list_output_must_be_distinct(occurrence_module, tmp_path):
+    outputs = _output_args(tmp_path, "out")
+    outputs["list_output"] = outputs["occurrences_output"]
+    with pytest.raises(ValueError, match="output paths must be distinct"):
+        occurrence_module.run_aggregation(input_dir=tmp_path, **outputs)
+
+
+def test_ingredient_list_marks_ambiguous_and_whitespace_labels(occurrence_module, tmp_path):
+    corpus = tmp_path / "corpus"
+    _write(
+        corpus,
+        "bacterial/one.yaml",
+        {
+            "id": "CultureMech:000071",
+            "name": "Ambiguous and blank",
+            "physical_state": "LIQUID",
+            "ingredients": [
+                {"preferred_term": "Sea Salt"},
+                {"preferred_term": "   "},
+                {"preferred_term": "   "},
+            ],
+        },
+    )
+    result = occurrence_module.scan_ingredient_occurrences(corpus)
+    assert not result.errors
+    rows = occurrence_module.build_ingredient_list(result.occurrences)
+
+    sea_salt = next(row for row in rows if row["preferred_term"] == "Sea Salt")
+    assert sea_salt["mapping_status"] == "AMBIGUOUS"
+    assert sea_salt["resolved_identifier"] == ""
+
+    blanks = sorted(
+        row["preferred_term"]
+        for row in rows
+        if row["label_variant_count"] == 1 and row["label_variants"] == "   "
+    )
+    assert blanks == [
+        "blank:CultureMech:000071:ingredients:1",
+        "blank:CultureMech:000071:ingredients:2",
+    ]
+    unmapped = occurrence_module.build_unmapped_output(result.occurrences)
+    assert (
+        sorted(
+            entry["placeholder_id"]
+            for entry in unmapped["unmapped_ingredients"]
+            if entry["placeholder_id"].startswith("blank:")
+        )
+        == blanks
+    )
+
+
+def test_list_output_is_optional_for_library_callers(occurrence_module, tmp_path):
+    corpus = tmp_path / "corpus"
+    _write(
+        corpus,
+        "bacterial/one.yaml",
+        {
+            "id": "CultureMech:000081",
+            "name": "No list",
+            "physical_state": "LIQUID",
+            "ingredients": [{"preferred_term": "EDTA"}],
+        },
+    )
+    outputs = _output_args(tmp_path, "out")
+    list_path = outputs.pop("list_output")
+    assert occurrence_module.run_aggregation(input_dir=corpus, **outputs) == 0
+    assert outputs["occurrences_output"].exists()
+    assert not list_path.exists()

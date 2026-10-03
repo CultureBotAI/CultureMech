@@ -80,12 +80,15 @@ The command invokes `scripts/aggregate_ingredients.py` once and writes:
 - `output/mapped_ingredients.yaml` — identity-first mapped summary.
 - `output/unmapped_ingredients.yaml` — unresolved label summary.
 - `output/ingredient_aggregation_errors.tsv` — machine-readable input failures.
+- `output/ingredients_list.tsv` — one row per distinct ingredient (same grouping
+  as the two YAML views), with mapping status and occurrence/recipe counts.
 
 The standalone mapped and unmapped commands use the same shared scanner; they
 do not maintain separate traversal or grounding rules.
 
 `--min-occurrences` filters only summary groups in the compatibility YAML
-views. It never removes rows from `ingredient_occurrences.tsv`.
+views. It never removes rows from `ingredient_occurrences.tsv` or
+`ingredients_list.tsv`.
 
 `output/` is a generated-data directory. Do not hand-edit or commit these
 artifacts.
