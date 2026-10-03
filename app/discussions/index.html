@@ -11,7 +11,8 @@
   header { padding: 1rem 1.25rem; border-bottom: 1px solid var(--line); }
   h1 { font-size: 1.25rem; margin: 0 0 .25rem; }
   .metrics { color: var(--muted); font-size: .85rem; }
-  .layout { display: grid; grid-template-columns: 240px 1fr; gap: 1.25rem; max-width: 1200px; margin: 1rem auto; padding: 0 1.25rem; }
+  .layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 1.25rem; max-width: 1200px; margin: 1rem auto; padding: 0 1.25rem; }
+  main, .sidebar { min-width: 0; overflow-wrap: anywhere; }
   @media (max-width: 820px) { .layout { grid-template-columns: 1fr; } }
   .sidebar h3 { font-size: .8rem; text-transform: uppercase; color: var(--muted); margin: 1rem 0 .35rem; }
   .facet label { display: block; font-size: .85rem; padding: .1rem 0; cursor: pointer; }
@@ -27,40 +28,75 @@
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
   .empty { color: var(--muted); padding: 2rem; text-align: center; }
+  button { font: inherit; padding: .4rem .6rem; cursor: pointer; }
+  a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid #0969da; outline-offset: 3px; }
+  .skip-link { position: absolute; top: -5rem; left: 1rem; background: var(--bg); padding: .6rem; }
+  .skip-link:focus { top: .5rem; }
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to discussions</a>
 <header>
+  <nav aria-label="Project navigation"><a href="https://culturebotai.github.io/mechs/">All Mech projects</a></nav>
   <h1 id="title">Knowledge gaps &amp; discussions</h1>
   <div class="metrics" id="metrics"></div>
 </header>
 <div class="layout">
   <div class="sidebar">
-    <input id="q" type="search" placeholder="Search prompts, sources, evidence…" autocomplete="off">
+    <label for="q">Search discussions</label>
+    <input id="q" type="search" placeholder="Search prompts, sources, evidence…" autocomplete="off" disabled>
+    <button type="button" id="clear-filters" disabled>Clear search and filters</button>
     <div id="facets"></div>
   </div>
-  <main>
-    <div class="count" id="count"></div>
+  <main id="main-content" tabindex="-1">
+    <noscript>Enable JavaScript to search discussions, or use the project directory to find the source records.</noscript>
+    <div class="count" id="count" role="status" aria-live="polite" aria-atomic="true">Loading discussions…</div>
     <div id="results"></div>
   </main>
 </div>
 <script src="data.js"></script>
 <script>
 (function () {
-  var DATA = window.searchData || [];
-  var METRICS = window.searchMetrics || {};
+  function loadError() {
+    document.getElementById("count").textContent = "Discussions could not be loaded.";
+    document.getElementById("metrics").textContent = "Discussion counts unavailable";
+    document.getElementById("q").disabled = true;
+    document.getElementById("clear-filters").disabled = true;
+    document.getElementById("facets").replaceChildren();
+    var host = document.getElementById("results");
+    host.replaceChildren();
+    var retry = document.createElement("button");
+    retry.type = "button";
+    retry.textContent = "Retry loading discussions";
+    retry.addEventListener("click", function () { window.location.reload(); });
+    host.appendChild(retry);
+  }
+  if (!Array.isArray(window.searchData) || !window.searchData.every(function (row) {
+    return row && typeof row === "object" && !Array.isArray(row) &&
+      ["attaches_to", "evidence_refs"].every(function (field) {
+        return row[field] == null || (Array.isArray(row[field]) && row[field].every(function (value) { return typeof value === "string"; }));
+      });
+  })) { loadError(); return; }
+  var DATA = window.searchData;
+  var METRICS = window.searchMetrics;
+  if (!METRICS || !["total_discussions", "total_knowledge_gaps", "total_source_entries"].every(function (field) {
+    return Number.isInteger(METRICS[field]) && METRICS[field] >= 0;
+  }) || METRICS.total_discussions !== DATA.length ||
+      METRICS.total_knowledge_gaps !== DATA.filter(function (row) { return row.is_gap === "Knowledge gap"; }).length ||
+      METRICS.total_source_entries > DATA.length ||
+      (DATA.length > 0 && METRICS.total_source_entries === 0)) { loadError(); return; }
   var REPO = window.repoName || "";
   var FACETS = ["kind", "status", "is_gap"];
   var active = {}; FACETS.forEach(function (f) { active[f] = new Set(); });
 
   document.getElementById("title").textContent = (REPO ? REPO + " — " : "") + "Knowledge gaps & discussions";
   document.getElementById("metrics").textContent =
-    (METRICS.total_discussions || 0) + " discussions · " +
-    (METRICS.total_knowledge_gaps || 0) + " knowledge gaps · " +
-    (METRICS.total_source_entries || 0) + " records";
+    METRICS.total_discussions + " discussions · " +
+    METRICS.total_knowledge_gaps + " knowledge gaps · " +
+    METRICS.total_source_entries + " records";
 
   function uniqCounts(field) {
-    var m = {}; DATA.forEach(function (r) { var v = r[field] || "—"; m[v] = (m[v] || 0) + 1; });
+    var m = Object.create(null); DATA.forEach(function (r) { var v = r[field] || "—"; m[v] = (m[v] || 0) + 1; });
     return m;
   }
   function renderFacets() {
@@ -70,10 +106,13 @@
       var h = document.createElement("div"); h.className = "facet";
       h.innerHTML = "<h3>" + f.replace("_", " ") + "</h3>";
       Object.keys(counts).sort().forEach(function (val) {
-        var id = f + "::" + val;
         var lbl = document.createElement("label");
-        lbl.innerHTML = '<input type="checkbox" data-f="' + f + '" data-v="' +
-          val.replace(/"/g, "&quot;") + '"> ' + val + " (" + counts[val] + ")";
+        var input = document.createElement("input");
+        input.type = "checkbox";
+        input.setAttribute("data-f", f);
+        input.setAttribute("data-v", val);
+        lbl.appendChild(input);
+        lbl.appendChild(document.createTextNode(" " + val + " (" + counts[val] + ")"));
         h.appendChild(lbl);
       });
       host.appendChild(h);
@@ -94,9 +133,13 @@
       .join(" ").toLowerCase();
     return q.toLowerCase().split(/\s+/).every(function (t) { return hay.indexOf(t) >= 0; });
   }
-  function esc(s) { return (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+  function esc(s) { return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;"); }
+  function safeLink(value) {
+    try { return ["https:", "http:"].includes(new URL(value, document.baseURI).protocol); }
+    catch (error) { return false; }
+  }
   function card(r) {
-    var title = r.page_url ? '<a href="' + esc(r.page_url) + '">' + esc(r.prompt) + "</a>" : esc(r.prompt);
+    var title = r.page_url && safeLink(r.page_url) ? '<a href="' + esc(r.page_url) + '">' + esc(r.prompt) + "</a>" : esc(r.prompt);
     var refs = (r.evidence_refs || []).map(function (ref) {
       var m = /^PMID:(\d+)$/.exec(ref);
       return m ? '<a href="https://pubmed.ncbi.nlm.nih.gov/' + m[1] + '/">' + esc(ref) + "</a>" : esc(ref);
@@ -120,7 +163,18 @@
       hits.length ? hits.map(card).join("") : '<div class="empty">No discussions match.</div>';
   }
   document.getElementById("q").addEventListener("input", render);
-  renderFacets(); render();
+  document.getElementById("clear-filters").addEventListener("click", function () {
+    document.getElementById("q").value = "";
+    FACETS.forEach(function (field) { active[field].clear(); });
+    document.querySelectorAll('#facets input[type="checkbox"]').forEach(function (input) { input.checked = false; });
+    render();
+    document.getElementById("q").focus();
+  });
+  try {
+    renderFacets(); render();
+    document.getElementById("q").disabled = false;
+    document.getElementById("clear-filters").disabled = false;
+  } catch (error) { loadError(); }
 })();
 </script>
 </body>
