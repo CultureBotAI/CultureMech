@@ -91,13 +91,14 @@
         }
 
         .search-input:focus {
-            outline: none;
+            outline: 3px solid #4B9E5F;
+            outline-offset: 2px;
             border-color: #4B9E5F;
         }
 
         .main-content {
             display: grid;
-            grid-template-columns: 280px 1fr;
+            grid-template-columns: 280px minmax(0, 1fr);
             gap: 2rem;
         }
 
@@ -271,6 +272,8 @@
                 grid-template-columns: 1fr;
             }
 
+            .container { padding: 1rem; }
+            .results, .facets { min-width: 0; overflow-wrap: anywhere; }
             .facets {
                 order: 2;
             }
@@ -342,6 +345,7 @@
         <p>Microbial Growth Media Knowledge Base</p>
         <nav class="header-nav">
             <a href="index.html">Home</a>
+            <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
             <a href="umap.html">Media PaCMAP</a>
             <a href="ingredient_umap.html">Ingredient PaCMAP</a>
         </nav>
@@ -349,6 +353,7 @@
 
     <div class="container">
         <div class="search-bar">
+            <label for="searchInput">Search media</label>
             <input
                 type="text"
                 id="searchInput"
@@ -368,7 +373,7 @@
 
             <main class="results">
                 <div class="results-header">
-                    <div class="results-count" id="resultsCount">Loading...</div>
+                    <div class="results-count" id="resultsCount" role="status" aria-live="polite" aria-atomic="true">Loading...</div>
                 </div>
                 <div id="resultsContainer">
                     <div class="loading">Loading recipes...</div>
@@ -380,6 +385,7 @@
     <script src="schema.js"></script>
     <script src="data.js"></script>
     <script>
+        let dataReady = false;
         let allRecipes = [];
         let filteredRecipes = [];
         let selectedFilters = {};
@@ -387,15 +393,27 @@
 
         // Wait for data to load (or use already-loaded data if event already fired)
         function onDataReady() {
-            allRecipes = window.culturemechData || [];
+            dataReady = true;
+            allRecipes = window.culturemechData;
             filteredRecipes = [...allRecipes];
             initializeFacets();
             renderResults();
         }
-        if (window.culturemechData) {
+        // Both classic scripts above execute before this block. Missing or
+        // malformed assets are a failed load, never an empty search result.
+        if (Array.isArray(window.culturemechData) && window.searchSchema &&
+            Array.isArray(window.searchSchema.facets) &&
+            Array.isArray(window.searchSchema.searchableFields)) {
             onDataReady();
         } else {
-            window.addEventListener('culturemechDataReady', onDataReady);
+            document.getElementById('resultsCount').textContent = 'Recipes could not be loaded.';
+            const container = document.getElementById('resultsContainer');
+            container.textContent = 'The catalog is unavailable. ';
+            const retry = document.createElement('button');
+            retry.type = 'button';
+            retry.textContent = 'Retry loading recipes';
+            retry.addEventListener('click', () => window.location.reload());
+            container.appendChild(retry);
         }
 
         // Search functionality
@@ -481,6 +499,7 @@
         }
 
         function clearAllFilters() {
+            if (!dataReady) return;
             selectedFilters = {};
             searchQuery = '';
             document.getElementById('searchInput').value = '';
@@ -489,6 +508,7 @@
         }
 
         function applyFilters() {
+            if (!dataReady) return;
             filteredRecipes = allRecipes.filter(recipe => {
                 // Text search
                 if (searchQuery) {

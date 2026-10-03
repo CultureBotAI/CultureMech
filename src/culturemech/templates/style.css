@@ -126,3 +126,18 @@ table.ingredients .formula + .mass::before { content: " \00B7 "; }
    keep the finished SVG inside the page. */
 pre.mermaid { margin: 1em 0; overflow-x: auto; }
 pre.mermaid svg { max-width: 100%; height: auto; }
+
+/* Keep wide scientific tables scrollable inside a readable mobile viewport. */
+* { box-sizing: border-box; }
+body { overflow-wrap: anywhere; }
+table { display: block; max-width: 100%; overflow-x: auto; }
+dl.kv { grid-template-columns: minmax(0, max-content) minmax(0, 1fr); }
+.skip-link { position: absolute; left: -10000px; }
+.skip-link:focus { left: 1rem; top: 1rem; background: var(--bg-soft); padding: .75rem; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.theme-toggle { position: fixed; bottom: 1rem; right: 1rem; padding: .6rem; border: 1px solid var(--line); border-radius: .5rem; background: var(--bg-soft); color: var(--fg); cursor: pointer; }
+@media (max-width: 600px) {
+  body { margin: 1rem auto; padding: 0 1rem; }
+  dl.kv { grid-template-columns: minmax(0, 1fr); }
+  ul.medium-index { columns: 1; }
+}

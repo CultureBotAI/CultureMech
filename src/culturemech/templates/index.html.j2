@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self'; img-src 'self' data: https:; font-src 'self'; object-src 'none'; base-uri 'none'">
 <title>CultureMech — Media index</title>
 <link rel="stylesheet" href="style.css">
+<script src="record-theme.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to record content</a>
+<nav aria-label="Site navigation"><a href="../app/browser.html">Browse media</a> &middot; <a href="https://culturebotai.github.io/mechs/">All Mech projects</a></nav>
 <header>
 <h1>CultureMech — Media index</h1>
 <p class="muted">{{ "{:,}".format(count) }} media records.</p>
@@ -17,6 +21,7 @@ ingredient composition graphs are unavailable because the optional
 {% endif %}
 <p><a href="media_growth_review.html">Media growth evidence review</a></p>
 </header>
+<main id="main-content">
 {% for category, items in groups %}
 <section>
 <h2>{{ category }} <small class="muted">({{ items|length }})</small></h2>
@@ -28,5 +33,7 @@ ingredient composition graphs are unavailable because the optional
 </ul>
 </section>
 {% endfor %}
+</main>
+<button class="theme-toggle" id="record-theme" type="button" aria-pressed="false">Dark mode</button>
 </body>
 </html>

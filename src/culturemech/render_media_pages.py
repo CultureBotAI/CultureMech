@@ -211,6 +211,8 @@ def render_one(
         source_path=src_display,
         index_href=relative_href(out_path.parent, index_dir / "index.html"),
         style_href=relative_href(out_path.parent, index_dir / "style.css"),
+        theme_href=relative_href(out_path.parent, index_dir / "record-theme.js"),
+        browser_href=relative_href(out_path.parent, index_dir.parent / "app" / "browser.html"),
         mermaid_init_href=relative_href(out_path.parent, index_dir / "mermaid-init.js"),
     )
     out_path.write_text(html + f"\n{_SIG_MARKER.format(build_sig)}\n")
@@ -253,7 +255,7 @@ def write_index(
 
 def copy_assets(templates_dir: Path, index_dir: Path) -> None:
     """Copy renderer-owned static assets beside the generated index."""
-    for name in ("style.css", "mermaid-init.js"):
+    for name in ("style.css", "mermaid-init.js", "record-theme.js"):
         source = templates_dir / name
         if source.is_file():
             (index_dir / name).write_bytes(source.read_bytes())
