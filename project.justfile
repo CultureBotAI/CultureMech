@@ -2772,7 +2772,7 @@ aggregate-unmapped-ingredients output="output/unmapped_ingredients.yaml" min_occ
 
 # Scan once and generate the canonical occurrence table, both compatibility views, and the per-ingredient list
 [group('Ingredients')]
-aggregate-all-ingredients mapped_output="output/mapped_ingredients.yaml" unmapped_output="output/unmapped_ingredients.yaml" occurrences_output="output/ingredient_occurrences.tsv" errors_output="output/ingredient_aggregation_errors.tsv" list_output="output/ingredients_list.tsv" min_occurrences="1":
+aggregate-all-ingredients mapped_output="output/mapped_ingredients.yaml" unmapped_output="output/unmapped_ingredients.yaml" occurrences_output="output/ingredient_occurrences.tsv" errors_output="output/ingredient_aggregation_errors.tsv" min_occurrences="1" list_output="output/ingredients_list.tsv":
     #!/usr/bin/env bash
     set -euo pipefail
     mkdir -p -- \

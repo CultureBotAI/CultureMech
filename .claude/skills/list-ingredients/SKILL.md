@@ -34,14 +34,28 @@ pinned MediaIngredientMech label index. A full run takes several minutes.
 `identifier_prefix`, `mapping_status` (`MAPPED`, `UNMAPPED`, `AMBIGUOUS`),
 `occurrence_count`, `distinct_recipe_count`, `label_variant_count`,
 `label_variants`, `resolution_sources`, `recipe_categories`. Multi-valued cells
-are joined with ` | `.
+are joined with ` | `; a label that itself contains ` | ` cannot be told apart
+from two labels.
+
+Read the TSVs with a CSV parser (`csv.DictReader`, pandas). Cells with quotes
+are CSV-quoted, so `wc -l`, `grep`, `cut`, and `awk` can misread rows.
 
 ## Interpreting the list
 
-- Mapped rows group by resolved identifier; unmapped rows group by exact source
-  label (plus resolution source), so spelling variants of one unmapped material
-  are separate rows.
-- Blank labels are kept as `blank:<recipe_id>:<field>:<index>` rows.
+- Mapped rows group by resolved identifier. Unmapped rows group by exact source
+  label plus resolution source, MIM mapping status, and MIM ambiguity, so
+  spelling variants of one unmapped material are separate rows.
+- For mapped rows, `preferred_term` is the MIM preferred term, which may not
+  be one of the row's own `label_variants` and can drop hydrate detail (#509).
+  Check `resolved_identifier` and `label_variants` before relying on it.
+- `UNMAPPED` and `MAPPED` describe occurrences, not labels. Local fallback
+  depends on each descriptor, so the same label can be a variant of a MAPPED row
+  and also appear as an UNMAPPED row. A MAPPED row whose `resolution_sources`
+  includes `ambiguous_local_fallback` was mapped only by local fallback in some
+  records (#510). Before calling a label unmapped, search `label_variants` of
+  MAPPED rows for it.
+- Blank or whitespace-only labels are kept as
+  `blank:<recipe_id>:<field>:<index>` rows.
 - The list counts direct `ingredients` (media) or `composition` (solutions)
   entries only; ingredients inside referenced stock solutions are not expanded.
 - The list is never filtered by `--min-occurrences`. Its row count equals
@@ -50,6 +64,9 @@ are joined with ` | `.
 
 ## Verification
 
+- Regenerate with `just aggregate-all-ingredients`, not the standalone
+  mapped/unmapped recipes. Those rewrite `ingredient_occurrences.tsv` but not
+  the list, which leaves the list stale (#512).
 - Confirm `ingredient_aggregation_errors.tsv` has only a header row.
 - Report counts from this run, with the commit, rather than from a prior run;
   the corpus changes continuously. See `docs/unmapped_ingredients_guide.md`.

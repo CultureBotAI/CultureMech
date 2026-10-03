@@ -930,7 +930,7 @@ def build_unmapped_output(
         )
         placeholder_id = (
             first.preferred_term
-            if first.preferred_term
+            if first.preferred_term.strip()
             else f"blank:{first.recipe_id}:{first.component_field}:{first.component_index}"
         )
         entries.append(
@@ -990,8 +990,10 @@ def build_ingredient_list(
             term = _canonical_term(rows)
             status = "MAPPED"
         else:
-            term = first.preferred_term or (
+            term = (
                 f"blank:{first.recipe_id}:{first.component_field}:{first.component_index}"
+                if key[0] == "blank"
+                else first.preferred_term
             )
             status = _unmapped_status(rows)
         labels = sorted({row.preferred_term for row in rows if row.preferred_term})
