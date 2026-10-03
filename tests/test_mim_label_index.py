@@ -13,6 +13,7 @@ from culturemech.ingredients.mim_label_index import (
     INDEX_HEADER,
     MAPPING_STATUSES,
     MATCH_TYPES,
+    UNDECIDED_MAPPING_STATUSES,
     LabelIndexError,
     MIMLabelIndex,
     ResolutionSource,
@@ -218,6 +219,43 @@ def test_every_safe_ambiguity_class_is_accepted(ambiguity: str):
     assert index.resolve_label("Safe").identifier == "CHEBI:1"
 
 
+@pytest.mark.parametrize("status", sorted(UNDECIDED_MAPPING_STATUSES))
+def test_undecided_status_neither_resolves_nor_suppresses(status: str):
+    """MIM publishes its whole MappingStatusEnum, and the four undecided values
+    mark curation in progress. Such a row is not "this is X" (mapped) and not
+    "this is nothing" (authoritative unmapped), so it fails closed but keeps a
+    labelled local fallback (#520). The canary is MIM's own row for
+    `CMC + PY + Horse Serum`, which carried AMBIGUOUS and blocked the pin refresh.
+    """
+
+    for identifier in ("UNMAPPED_0740", "CHEBI:1"):
+        index = MIMLabelIndex.from_csv_text(
+            _csv(_row("Undecided", identifier, ontology_id="", mapping_status=status))
+        )
+        refused = index.resolve_label("Undecided")
+        assert refused.identifier is None
+        assert refused.resolution_source is ResolutionSource.AMBIGUOUS
+        assert status in refused.reason
+
+        fallback = index.resolve_label("Undecided", local_identifier="CHEBI:3")
+        assert fallback.identifier == "CHEBI:3"
+        assert fallback.resolution_source is ResolutionSource.AMBIGUOUS_LOCAL_FALLBACK
+
+
+def test_undecided_row_does_not_borrow_a_live_identifier():
+    """A REJECTED tombstone follows its live target; an undecided row must not,
+    even when another label's MAPPED row holds the same identifier."""
+
+    index = MIMLabelIndex.from_csv_text(
+        _csv(
+            _row("Live", "CHEBI:1"),
+            _row("Pending", "CHEBI:1", mapping_status="PENDING_REVIEW"),
+        )
+    )
+    assert index.resolve_label("Live").identifier == "CHEBI:1"
+    assert index.resolve_label("Pending").identifier is None
+
+
 @pytest.mark.parametrize(
     "ambiguity",
     [
@@ -273,7 +311,7 @@ def test_invalid_header_and_noncontiguous_groups_are_rejected():
         )
 
     with pytest.raises(LabelIndexError, match="unknown mapping_status"):
-        MIMLabelIndex.from_csv_text(_csv(_row("A", "CHEBI:1", mapping_status="PENDING_REVIEW")))
+        MIMLabelIndex.from_csv_text(_csv(_row("A", "CHEBI:1", mapping_status="GUESSED")))
 
     with pytest.raises(LabelIndexError, match="inconsistent ambiguity"):
         MIMLabelIndex.from_csv_text(
