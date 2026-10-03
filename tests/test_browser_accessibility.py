@@ -74,3 +74,62 @@ def test_browser_javascript_parses(tmp_path):
         source.write_text(script)
         checked = subprocess.run([node, "--check", str(source)], capture_output=True, text=True)
         assert checked.returncode == 0, checked.stderr
+
+
+def test_actual_loader_distinguishes_failed_initialization_from_empty_data(tmp_path):
+    import json
+    import re
+    import shutil
+    import subprocess
+
+    import pytest
+
+    node = shutil.which("node")
+    if node is None:
+        pytest.skip("Node.js is required for the browser loader runtime check")
+    html = (ROOT / "app/browser.html").read_text()
+    script = next(
+        s
+        for s in re.findall(r"<script(?:\s[^>]*)?>(.*?)</script>", html, re.DOTALL)
+        if "function onDataReady" in s
+    )
+    harness = r"""
+const vm = require('node:vm');
+const source = SOURCE;
+const schema = {facets:[], searchableFields:['name'], colors:{}, linkResolvers:{}};
+const recipe = {name:'Salt medium', html_page:'normalized/1.html', category:'bacteria', medium_type:'defined'};
+const cases = [
+  ['empty', [], schema, false],
+  ['record', [recipe], schema, false],
+  ['missing-data', undefined, schema, true],
+  ['null-row', [null], schema, true],
+  ['missing-colors', [recipe], {facets:[],searchableFields:[]}, true],
+  ['invalid-facet', [recipe], {...schema, facets:[null]}, true],
+  ['render-throws', [{...recipe, target_organism_names:'invalid-array'}], schema, true],
+];
+function element() {return {textContent:'',innerHTML:'',value:'',style:{},dataset:{},children:[],
+  addEventListener(){},appendChild(child){this.children.push(child);}};}
+for (const [name, data, config, failed] of cases) {
+  const elements = new Map();
+  const document = {getElementById(id){if(!elements.has(id))elements.set(id,element());return elements.get(id);},
+    createElement:element,createTextNode:element,querySelectorAll(){return []}};
+  const context = {document,window:{culturemechData:data,searchSchema:config,location:{reload(){}}}};
+  vm.createContext(context);vm.runInContext(source,context);
+  const count=elements.get('resultsCount'), container=elements.get('resultsContainer');
+  if(failed) {
+    if(count.textContent!=='Recipes could not be loaded.')throw Error(name+': missing failure status');
+    if(!container.children.some(child=>child.textContent==='Retry loading recipes'))throw Error(name+': no retry');
+    if(vm.runInContext('dataReady',context))throw Error(name+': falsely ready');
+    context.applyFilters();context.clearAllFilters();
+    if(count.textContent!=='Recipes could not be loaded.')throw Error(name+': failure hidden');
+  } else {
+    if(!vm.runInContext('dataReady',context))throw Error(name+': valid catalog rejected');
+    if(count.textContent!==`${data.length} recipe${data.length===1?'':'s'}`)throw Error(name+': wrong count');
+    context.applyFilters();context.clearAllFilters();
+  }
+}
+""".replace("SOURCE", json.dumps(script))
+    runtime = tmp_path / "loader-contract.cjs"
+    runtime.write_text(harness)
+    checked = subprocess.run([node, str(runtime)], capture_output=True, text=True)
+    assert checked.returncode == 0, checked.stderr

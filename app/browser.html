@@ -391,21 +391,11 @@
         let selectedFilters = {};
         let searchQuery = '';
 
-        // Wait for data to load (or use already-loaded data if event already fired)
-        function onDataReady() {
-            dataReady = true;
-            allRecipes = window.culturemechData;
-            filteredRecipes = [...allRecipes];
-            initializeFacets();
-            renderResults();
-        }
-        // Both classic scripts above execute before this block. Missing or
-        // malformed assets are a failed load, never an empty search result.
-        if (Array.isArray(window.culturemechData) && window.searchSchema &&
-            Array.isArray(window.searchSchema.facets) &&
-            Array.isArray(window.searchSchema.searchableFields)) {
-            onDataReady();
-        } else {
+        function showLoadFailure() {
+            dataReady = false;
+            allRecipes = [];
+            filteredRecipes = [];
+            document.getElementById('facetsList').textContent = '';
             document.getElementById('resultsCount').textContent = 'Recipes could not be loaded.';
             const container = document.getElementById('resultsContainer');
             container.textContent = 'The catalog is unavailable. ';
@@ -415,6 +405,32 @@
             retry.addEventListener('click', () => window.location.reload());
             container.appendChild(retry);
         }
+
+        // Both classic scripts above execute before this block. Initialization
+        // must complete before search/reset can replace a failed-load message.
+        function onDataReady() {
+            try {
+                const schema = window.searchSchema;
+                if (!Array.isArray(window.culturemechData) ||
+                    !window.culturemechData.every(recipe => recipe && typeof recipe === 'object' && !Array.isArray(recipe)) ||
+                    !schema || !Array.isArray(schema.facets) ||
+                    !schema.facets.every(facet => facet && typeof facet.field === 'string' && typeof facet.label === 'string') ||
+                    !Array.isArray(schema.searchableFields) ||
+                    !schema.searchableFields.every(field => typeof field === 'string') ||
+                    !schema.colors || typeof schema.colors !== 'object' || Array.isArray(schema.colors) ||
+                    !schema.linkResolvers || typeof schema.linkResolvers !== 'object' || Array.isArray(schema.linkResolvers)) {
+                    throw new Error('Invalid catalog or browser schema');
+                }
+                allRecipes = window.culturemechData;
+                filteredRecipes = [...allRecipes];
+                initializeFacets();
+                renderResults();
+                dataReady = true;
+            } catch (_error) {
+                showLoadFailure();
+            }
+        }
+        onDataReady();
 
         // Search functionality
         document.getElementById('searchInput').addEventListener('input', (e) => {
