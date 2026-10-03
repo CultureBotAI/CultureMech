@@ -1,6 +1,8 @@
 from html.parser import HTMLParser
 from pathlib import Path
 
+import pytest
+
 
 class Elements(HTMLParser):
     def __init__(self, html):
@@ -31,7 +33,8 @@ def test_browser_names_search_and_announces_result_changes():
     assert dom.find("a", href=DIRECTORY)
 
 
-def test_generated_record_shell_has_mobile_landmarks_and_resolvable_theme(tmp_path):
+@pytest.mark.parametrize("index_suffix", ["", "normalized"])
+def test_generated_record_shell_has_mobile_landmarks_and_resolvable_theme(tmp_path, index_suffix):
     import yaml
 
     from culturemech.render_media_pages import render_pages
@@ -40,7 +43,7 @@ def test_generated_record_shell_has_mobile_landmarks_and_resolvable_theme(tmp_pa
     source.write_text(
         yaml.safe_dump({"id": "CultureMech:123456", "name": "Test", "ingredients": []})
     )
-    index = tmp_path / "site/pages"
+    index = tmp_path / "site/pages" / index_suffix
     output = index / "normalized"
     assert render_pages(source_files=[source], out_dir=output, index_dir=index) == 0
     for page in [index / "index.html", output / "123456.html"]:
@@ -49,6 +52,11 @@ def test_generated_record_shell_has_mobile_landmarks_and_resolvable_theme(tmp_pa
         assert dom.find("main", id="main-content")
         assert dom.find("button", id="record-theme")
         assert dom.find("a", href=DIRECTORY)
+        browser_links = [
+            a["href"] for a in dom.find("a") if a.get("href", "").endswith("app/browser.html")
+        ]
+        assert len(browser_links) == 1
+        assert (page.parent / browser_links[0]).resolve() == tmp_path / "site/app/browser.html"
         theme = [
             a["src"] for a in dom.find("script") if a.get("src", "").endswith("record-theme.js")
         ]

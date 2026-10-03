@@ -166,6 +166,15 @@ def relative_href(from_dir: Path, target: Path) -> str:
     return Path(os.path.relpath(target, start=from_dir)).as_posix()
 
 
+def browser_for_index(index_dir: Path) -> Path:
+    """Locate app/ beside the published pages/ tree, including nested indexes."""
+    pages_root = next(
+        (parent for parent in (index_dir, *index_dir.parents) if parent.name == "pages"),
+        index_dir,
+    )
+    return pages_root.parent / "app" / "browser.html"
+
+
 def render_one(
     env: Environment,
     source_path: Path,
@@ -212,7 +221,7 @@ def render_one(
         index_href=relative_href(out_path.parent, index_dir / "index.html"),
         style_href=relative_href(out_path.parent, index_dir / "style.css"),
         theme_href=relative_href(out_path.parent, index_dir / "record-theme.js"),
-        browser_href=relative_href(out_path.parent, index_dir.parent / "app" / "browser.html"),
+        browser_href=relative_href(out_path.parent, browser_for_index(index_dir)),
         mermaid_init_href=relative_href(out_path.parent, index_dir / "mermaid-init.js"),
     )
     out_path.write_text(html + f"\n{_SIG_MARKER.format(build_sig)}\n")
@@ -248,6 +257,7 @@ def write_index(
         count=sum(len(items) for _, items in groups),
         groups=groups,
         composition_graphs_available=COMPOSITION_GRAPHS_AVAILABLE,
+        browser_href=relative_href(index_dir, browser_for_index(index_dir)),
     )
     index_dir.mkdir(parents=True, exist_ok=True)
     (index_dir / "index.html").write_text(html)
@@ -300,7 +310,9 @@ def render_pages(
     index_dir.mkdir(parents=True, exist_ok=True)
 
     env = make_env(templates_dir)
-    build_sig = build_signature(templates_dir)
+    build_sig = hashlib.sha256(
+        (build_signature(templates_dir) + relative_href(out_dir, index_dir)).encode()
+    ).hexdigest()[:12]
     print(f"Rendering up to {len(files)} medium pages → {out_dir}")
     if not COMPOSITION_GRAPHS_AVAILABLE:
         print(
