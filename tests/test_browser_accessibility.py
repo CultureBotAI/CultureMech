@@ -33,8 +33,12 @@ def test_browser_names_search_and_announces_result_changes():
     assert dom.find("a", href=DIRECTORY)
 
 
-@pytest.mark.parametrize("index_suffix", ["", "normalized"])
-def test_generated_record_shell_has_mobile_landmarks_and_resolvable_theme(tmp_path, index_suffix):
+@pytest.mark.parametrize(
+    "index_suffix,output_suffix", [("", "media"), ("normalized", "normalized")]
+)
+def test_generated_record_shell_has_mobile_landmarks_and_resolvable_theme(
+    tmp_path, index_suffix, output_suffix
+):
     import yaml
 
     from culturemech.render_media_pages import render_pages
@@ -44,7 +48,7 @@ def test_generated_record_shell_has_mobile_landmarks_and_resolvable_theme(tmp_pa
         yaml.safe_dump({"id": "CultureMech:123456", "name": "Test", "ingredients": []})
     )
     index = tmp_path / "site/pages" / index_suffix
-    output = index / "normalized"
+    output = tmp_path / "site/pages" / output_suffix
     assert render_pages(source_files=[source], out_dir=output, index_dir=index) == 0
     for page in [index / "index.html", output / "123456.html"]:
         dom = Elements(page.read_text())
