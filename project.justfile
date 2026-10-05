@@ -2751,6 +2751,7 @@ aggregate-mapped-ingredients output="output/mapped_ingredients.yaml" min_occurre
         --min-occurrences "{{min_occurrences}}" \
         --occurrences-output "output/ingredient_occurrences.tsv" \
         --errors-output "output/ingredient_aggregation_errors.tsv" \
+        --list-output "output/ingredients_list.tsv" \
         --verbose
     echo "✓ Mapped ingredients saved to {{output}}"
 
@@ -2767,6 +2768,7 @@ aggregate-unmapped-ingredients output="output/unmapped_ingredients.yaml" min_occ
         --min-occurrences "{{min_occurrences}}" \
         --occurrences-output "output/ingredient_occurrences.tsv" \
         --errors-output "output/ingredient_aggregation_errors.tsv" \
+        --list-output "output/ingredients_list.tsv" \
         --verbose
     echo "✓ Unmapped ingredients saved to {{output}}"
 

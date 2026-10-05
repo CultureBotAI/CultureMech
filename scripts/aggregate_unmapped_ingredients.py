@@ -36,11 +36,19 @@ def main(argv: list[str] | None = None) -> int:
         type=Path,
         default=Path("output/ingredient_aggregation_errors.tsv"),
     )
+    parser.add_argument(
+        "--list-output",
+        type=Path,
+        default=Path("output/ingredients_list.tsv"),
+        help="Ingredient list, refreshed with the occurrence table it is derived from.",
+    )
     parser.add_argument("--verbose", action="store_true")
     args = parser.parse_args(argv)
     if args.min_occurrences < 1:
         parser.error("--min-occurrences must be at least 1")
-    ensure_distinct_output_paths(args.output, args.occurrences_output, args.errors_output)
+    ensure_distinct_output_paths(
+        args.output, args.occurrences_output, args.errors_output, args.list_output
+    )
 
     result = scan_ingredient_occurrences(args.input_dir)
     write_error_report(args.errors_output, result.errors)
@@ -54,6 +62,7 @@ def main(argv: list[str] | None = None) -> int:
         result.occurrences,
         args.output,
         output,
+        args.list_output,
     )
     if args.verbose:
         print(

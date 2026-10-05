@@ -84,7 +84,15 @@ The command invokes `scripts/aggregate_ingredients.py` once and writes:
   as the two YAML views), with mapping status and occurrence/recipe counts.
 
 The standalone mapped and unmapped commands use the same shared scanner; they
-do not maintain separate traversal or grounding rules.
+do not maintain separate traversal or grounding rules. Each rewrites
+`ingredient_occurrences.tsv` and `ingredients_list.tsv` together, so the list
+never describes a different scan from the occurrence table.
+
+A mapped identity's `preferred_term` (and the list's) is the most frequent MIM
+preferred term among occurrences MIM resolved directly, ties broken
+alphabetically. Fallback occurrences do not contribute MIM terms because their
+MIM match describes the label, not necessarily the resolved identifier. With no
+directly resolved occurrence, the most frequent source label is used.
 
 `--min-occurrences` filters only summary groups in the compatibility YAML
 views. It never removes rows from `ingredient_occurrences.tsv` or

@@ -807,3 +807,118 @@ def test_list_output_is_optional_for_library_callers(occurrence_module, tmp_path
     assert occurrence_module.run_aggregation(input_dir=corpus, **outputs) == 0
     assert outputs["occurrences_output"].exists()
     assert not list_path.exists()
+
+
+def _scanned_rows(occurrence_module, tmp_path, labels: list[str]) -> list[Any]:
+    corpus = tmp_path / "corpus"
+    _write(
+        corpus,
+        "bacterial/terms.yaml",
+        {
+            "id": "CultureMech:000091",
+            "name": "Canonical terms",
+            "physical_state": "LIQUID",
+            "ingredients": [{"preferred_term": label} for label in labels],
+        },
+    )
+    result = occurrence_module.scan_ingredient_occurrences(corpus)
+    assert not result.errors
+    return list(result.occurrences)
+
+
+def test_canonical_term_ignores_fallback_mim_terms(occurrence_module, tmp_path):
+    """#509: a fallback row's MIM term must not rename a trusted identity."""
+
+    from dataclasses import replace
+
+    rows = _scanned_rows(occurrence_module, tmp_path, ["CaCl2 x 2 H2O", "CaCl2 x 2 H2O"])
+    assert {row.resolution_source for row in rows} == {"mim_exact"}
+    identifier = rows[0].resolved_identifier
+    fallback = replace(
+        rows[0],
+        component_index=99,
+        preferred_term="CaCl2",
+        resolution_source="ambiguous_local_fallback",
+        mim_preferred_term="CaCl2",
+    )
+    group = [*rows, fallback]
+
+    assert occurrence_module._canonical_term(group) == "CaCl2 x 2 H2O"
+    mapped = occurrence_module.build_mapped_output(group)
+    entry = next(e for e in mapped["mapped_ingredients"] if e["resolved_identifier"] == identifier)
+    assert entry["preferred_term"] == entry["ontology_label"] == "CaCl2 x 2 H2O"
+    assert entry["synonyms"] == ["CaCl2"]
+    listed = occurrence_module.build_ingredient_list(group)
+    assert listed[0]["preferred_term"] == "CaCl2 x 2 H2O"
+
+
+def test_canonical_term_prefers_dominant_over_alphabetical(occurrence_module, tmp_path):
+    from dataclasses import replace
+
+    rows = _scanned_rows(occurrence_module, tmp_path, ["CaCl2 x 2 H2O"] * 3)
+    minority = replace(rows[0], component_index=99, mim_preferred_term="A minority term")
+    assert occurrence_module._canonical_term([*rows, minority]) == "CaCl2 x 2 H2O"
+    tie = replace(rows[0], component_index=98, mim_preferred_term="A tied term")
+    assert occurrence_module._canonical_term([rows[0], tie]) == "A tied term"
+
+
+def test_canonical_term_falls_back_to_dominant_source_label(occurrence_module, tmp_path):
+    from dataclasses import replace
+
+    base = _scanned_rows(occurrence_module, tmp_path, ["CaCl2 x 2 H2O"])[0]
+    rows = [
+        replace(
+            base,
+            component_index=index,
+            preferred_term=label,
+            resolution_source="local_fallback",
+            mim_preferred_term="Unrelated MIM term",
+        )
+        for index, label in enumerate(["b label", "b label", "a label"])
+    ]
+    assert occurrence_module._canonical_term(rows) == "b label"
+    no_labels = [replace(row, preferred_term="") for row in rows]
+    assert occurrence_module._canonical_term(no_labels) == base.resolved_identifier
+
+
+@pytest.mark.parametrize(
+    "wrapper", ["aggregate_mapped_ingredients", "aggregate_unmapped_ingredients"]
+)
+def test_standalone_wrappers_refresh_ingredient_list(occurrence_module, tmp_path, wrapper):
+    """#512: rewriting the occurrence table also rewrites the list derived from it."""
+
+    corpus = tmp_path / "corpus"
+    _write(
+        corpus,
+        "bacterial/one.yaml",
+        {
+            "id": "CultureMech:000101",
+            "name": "Wrapper",
+            "physical_state": "LIQUID",
+            "ingredients": [{"preferred_term": "EDTA"}, {"preferred_term": "Calf brains"}],
+        },
+    )
+    reference = _output_args(tmp_path, "reference")
+    assert occurrence_module.run_aggregation(input_dir=corpus, **reference) == 0
+
+    out = tmp_path / "wrapper"
+    out.mkdir()
+    list_path = out / "ingredients_list.tsv"
+    list_path.write_text("stale\n", encoding="utf-8")
+    rc = _load_script(wrapper).main(
+        [
+            "--input-dir",
+            str(corpus),
+            "--output",
+            str(out / "view.yaml"),
+            "--occurrences-output",
+            str(out / "occurrences.tsv"),
+            "--errors-output",
+            str(out / "errors.tsv"),
+            "--list-output",
+            str(list_path),
+        ]
+    )
+    assert rc == 0
+    assert list_path.read_bytes() == reference["list_output"].read_bytes()
+    assert (out / "occurrences.tsv").read_bytes() == reference["occurrences_output"].read_bytes()
