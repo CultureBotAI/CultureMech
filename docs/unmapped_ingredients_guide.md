@@ -85,12 +85,14 @@ The command invokes `scripts/aggregate_ingredients.py` once and writes:
 
 The standalone mapped and unmapped commands use the same shared scanner; they
 do not maintain separate traversal or grounding rules. Each rewrites
-`ingredient_occurrences.tsv` and `ingredients_list.tsv` together, so the list
-never describes a different scan from the occurrence table.
+`ingredient_occurrences.tsv` and `ingredients_list.tsv` together. Without
+`--list-output`, the list is written beside `--occurrences-output`, so a custom
+occurrence path does not leave a list from a different scan at the default
+location.
 
 A mapped identity's `preferred_term` (and the list's) is the most frequent MIM
-preferred term among occurrences MIM resolved directly, ties broken
-alphabetically. Fallback occurrences do not contribute MIM terms because their
+preferred term among occurrences MIM resolved directly, preferring terms MIM
+marks `MAPPED` over its `REJECTED` preferred terms; ties break by code point. Fallback occurrences do not contribute MIM terms because their
 MIM match describes the label, not necessarily the resolved identifier. With no
 directly resolved occurrence, the most frequent source label is used.
 

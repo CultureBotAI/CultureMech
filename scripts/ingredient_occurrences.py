@@ -716,6 +716,12 @@ def write_occurrences_and_yaml(
     )
 
 
+def default_list_output(occurrences_output: str | Path) -> Path:
+    """Place the ingredient list beside the occurrence table it is derived from."""
+
+    return Path(occurrences_output).parent / "ingredients_list.tsv"
+
+
 def ensure_distinct_output_paths(*paths: str | Path) -> None:
     """Reject CLI output aliases before any error or success artifact is touched."""
 
@@ -787,27 +793,29 @@ _TRUSTED_MIM_SOURCES = frozenset(
 
 
 def _most_common(values: Sequence[str]) -> str:
-    """Return the most frequent non-empty value; ties break alphabetically."""
+    """Return the most frequent non-empty value; ties break by code point."""
 
     counts = Counter(value for value in values if value)
     return min(counts, key=lambda value: (-counts[value], value)) if counts else ""
 
 
 def _canonical_term(rows: Sequence[IngredientOccurrence]) -> str:
-    """Name one resolved identity (#509).
+    """Name one resolved identity (#509, #529).
 
     Only rows that MIM resolved directly contribute MIM terms: on fallback rows,
     ``mim_preferred_term`` belongs to the label's (possibly ambiguous) MIM match,
-    not necessarily to the resolved identifier.  The dominant term wins rather
-    than the alphabetically first, which kept hydrate-less spellings such as
-    "CaCl2" for CHEBI:86158.
+    not necessarily to the resolved identifier.  Among those, terms MIM marks
+    ``MAPPED`` outrank its ``REJECTED`` preferred terms, so an accepted hydrate
+    spelling is not outvoted by a rejected generic one (CHEBI:32142).  Within a
+    tier the most frequent term wins; ties break by code point.
     """
 
-    trusted = [
-        row.mim_preferred_term for row in rows if row.resolution_source in _TRUSTED_MIM_SOURCES
-    ]
+    trusted = [row for row in rows if row.resolution_source in _TRUSTED_MIM_SOURCES]
     return (
-        _most_common(trusted)
+        _most_common(
+            [row.mim_preferred_term for row in trusted if row.mim_mapping_status == "MAPPED"]
+        )
+        or _most_common([row.mim_preferred_term for row in trusted])
         or _most_common([row.preferred_term for row in rows])
         or rows[0].resolved_identifier
     )

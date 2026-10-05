@@ -852,35 +852,6 @@ def test_canonical_term_ignores_fallback_mim_terms(occurrence_module, tmp_path):
     assert listed[0]["preferred_term"] == "CaCl2 x 2 H2O"
 
 
-def test_canonical_term_prefers_dominant_over_alphabetical(occurrence_module, tmp_path):
-    from dataclasses import replace
-
-    rows = _scanned_rows(occurrence_module, tmp_path, ["CaCl2 x 2 H2O"] * 3)
-    minority = replace(rows[0], component_index=99, mim_preferred_term="A minority term")
-    assert occurrence_module._canonical_term([*rows, minority]) == "CaCl2 x 2 H2O"
-    tie = replace(rows[0], component_index=98, mim_preferred_term="A tied term")
-    assert occurrence_module._canonical_term([rows[0], tie]) == "A tied term"
-
-
-def test_canonical_term_falls_back_to_dominant_source_label(occurrence_module, tmp_path):
-    from dataclasses import replace
-
-    base = _scanned_rows(occurrence_module, tmp_path, ["CaCl2 x 2 H2O"])[0]
-    rows = [
-        replace(
-            base,
-            component_index=index,
-            preferred_term=label,
-            resolution_source="local_fallback",
-            mim_preferred_term="Unrelated MIM term",
-        )
-        for index, label in enumerate(["b label", "b label", "a label"])
-    ]
-    assert occurrence_module._canonical_term(rows) == "b label"
-    no_labels = [replace(row, preferred_term="") for row in rows]
-    assert occurrence_module._canonical_term(no_labels) == base.resolved_identifier
-
-
 @pytest.mark.parametrize(
     "wrapper", ["aggregate_mapped_ingredients", "aggregate_unmapped_ingredients"]
 )
@@ -922,3 +893,186 @@ def test_standalone_wrappers_refresh_ingredient_list(occurrence_module, tmp_path
     assert rc == 0
     assert list_path.read_bytes() == reference["list_output"].read_bytes()
     assert (out / "occurrences.tsv").read_bytes() == reference["occurrences_output"].read_bytes()
+
+
+def test_canonical_term_prefers_dominant_trusted_term_and_breaks_ties_by_code_point(
+    occurrence_module, tmp_path
+):
+    """#509/#533: frequency, not alphabetical order, picks the name."""
+
+    from dataclasses import replace
+
+    rows = _scanned_rows(occurrence_module, tmp_path, ["CaCl2 x 2 H2O"] * 3)
+    minority = replace(rows[0], component_index=99, mim_preferred_term="A minority term")
+    assert occurrence_module._canonical_term([*rows, minority]) == "CaCl2 x 2 H2O"
+
+    # The old rule took the alphabetically first term from any row, including the
+    # fallback row's "A fallback term"; the new rule ignores it and breaks the 1:1
+    # tie between trusted terms by code point (uppercase before lowercase).
+    fallback = replace(
+        rows[0],
+        component_index=97,
+        resolution_source="ambiguous_local_fallback",
+        mim_preferred_term="A fallback term",
+    )
+    upper = replace(rows[0], component_index=98, mim_preferred_term="Z upper")
+    lower = replace(rows[0], component_index=96, mim_preferred_term="b lower")
+    assert occurrence_module._canonical_term([fallback, lower, upper]) == "Z upper"
+
+
+def test_canonical_term_prefers_mim_mapped_over_rejected_terms(occurrence_module, tmp_path):
+    """#529: an accepted hydrate term beats a more frequent REJECTED generic term."""
+
+    from dataclasses import replace
+
+    base = _scanned_rows(occurrence_module, tmp_path, ["CaCl2 x 2 H2O"])[0]
+    assert base.mim_mapping_status == "MAPPED"
+    rejected = [
+        replace(
+            base,
+            component_index=index,
+            mim_preferred_term="Calcium chloride",
+            mim_mapping_status="REJECTED",
+        )
+        for index in range(1, 4)
+    ]
+    assert occurrence_module._canonical_term([base, *rejected]) == "CaCl2 x 2 H2O"
+    # REJECTED trusted terms still outrank source labels when nothing is MAPPED.
+    assert occurrence_module._canonical_term(rejected) == "Calcium chloride"
+
+
+def test_canonical_term_counts_mim_normalized_as_trusted(occurrence_module, tmp_path):
+    from dataclasses import replace
+
+    base = _scanned_rows(occurrence_module, tmp_path, ["CaCl2 x 2 H2O"])[0]
+    normalized = [
+        replace(base, component_index=index, resolution_source="mim_normalized")
+        for index in range(2)
+    ]
+    fallback = replace(
+        base,
+        component_index=5,
+        preferred_term="Other label",
+        resolution_source="ambiguous_local_fallback",
+        mim_preferred_term="Other label",
+    )
+    assert occurrence_module._canonical_term([*normalized, fallback]) == "CaCl2 x 2 H2O"
+
+
+def test_canonical_term_falls_back_to_dominant_source_label(occurrence_module, tmp_path):
+    """Without directly resolved rows, fallback MIM terms are ignored (#534)."""
+
+    from dataclasses import replace
+
+    base = _scanned_rows(occurrence_module, tmp_path, ["CaCl2 x 2 H2O"])[0]
+    rows = [
+        replace(
+            base,
+            component_index=index,
+            preferred_term=label,
+            resolution_source="ambiguous_local_fallback",
+            mim_preferred_term="A different identity's term",
+        )
+        for index, label in enumerate(["b label", "b label", "a label"])
+    ]
+    assert occurrence_module._canonical_term(rows) == "b label"
+    no_labels = [replace(row, preferred_term="") for row in rows]
+    assert occurrence_module._canonical_term(no_labels) == base.resolved_identifier
+
+
+def _wrapper_corpus(tmp_path: Path) -> Path:
+    corpus = tmp_path / "corpus"
+    _write(
+        corpus,
+        "bacterial/one.yaml",
+        {
+            "id": "CultureMech:000111",
+            "name": "Wrapper defaults",
+            "physical_state": "LIQUID",
+            "ingredients": [{"preferred_term": "EDTA"}],
+        },
+    )
+    return corpus
+
+
+@pytest.mark.parametrize(
+    "script",
+    ["aggregate_ingredients", "aggregate_mapped_ingredients", "aggregate_unmapped_ingredients"],
+)
+def test_default_list_output_sits_beside_occurrence_table(tmp_path, script, monkeypatch):
+    """#532: without --list-output, the list follows --occurrences-output."""
+
+    corpus = _wrapper_corpus(tmp_path)
+    monkeypatch.chdir(tmp_path)
+    out = tmp_path / "custom"
+    out.mkdir()
+    view_args = (
+        ["--mapped-output", str(out / "m.yaml"), "--unmapped-output", str(out / "u.yaml")]
+        if script == "aggregate_ingredients"
+        else ["--output", str(out / "view.yaml")]
+    )
+    rc = _load_script(script).main(
+        [
+            "--input-dir",
+            str(corpus),
+            *view_args,
+            "--occurrences-output",
+            str(out / "occurrences.tsv"),
+            "--errors-output",
+            str(out / "errors.tsv"),
+        ]
+    )
+    assert rc == 0
+    assert (out / "ingredients_list.tsv").exists()
+    assert not (tmp_path / "output").exists()
+
+
+@pytest.mark.parametrize(
+    "wrapper", ["aggregate_mapped_ingredients", "aggregate_unmapped_ingredients"]
+)
+def test_wrapper_input_errors_leave_list_untouched(tmp_path, wrapper):
+    corpus = _wrapper_corpus(tmp_path)
+    _write(corpus, "bacterial/bad.yaml", "id: [unclosed\n")
+    out = tmp_path / "out"
+    out.mkdir()
+    list_path = out / "ingredients_list.tsv"
+    list_path.write_text("existing\n", encoding="utf-8")
+    rc = _load_script(wrapper).main(
+        [
+            "--input-dir",
+            str(corpus),
+            "--output",
+            str(out / "view.yaml"),
+            "--occurrences-output",
+            str(out / "occurrences.tsv"),
+            "--errors-output",
+            str(out / "errors.tsv"),
+            "--list-output",
+            str(list_path),
+        ]
+    )
+    assert rc != 0
+    assert list_path.read_text(encoding="utf-8") == "existing\n"
+
+
+@pytest.mark.parametrize(
+    "wrapper", ["aggregate_mapped_ingredients", "aggregate_unmapped_ingredients"]
+)
+def test_wrapper_rejects_aliased_list_output(tmp_path, wrapper):
+    out = tmp_path / "out"
+    out.mkdir()
+    with pytest.raises(ValueError, match="output paths must be distinct"):
+        _load_script(wrapper).main(
+            [
+                "--input-dir",
+                str(_wrapper_corpus(tmp_path)),
+                "--output",
+                str(out / "view.yaml"),
+                "--occurrences-output",
+                str(out / "occurrences.tsv"),
+                "--errors-output",
+                str(out / "errors.tsv"),
+                "--list-output",
+                str(out / "occurrences.tsv"),
+            ]
+        )

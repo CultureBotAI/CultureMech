@@ -6,7 +6,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from ingredient_occurrences import run_aggregation
+from ingredient_occurrences import default_list_output, run_aggregation
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -44,8 +44,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--list-output",
         type=Path,
-        default=Path("output/ingredients_list.tsv"),
-        help="Complete one-row-per-ingredient TSV (not filtered by --min-occurrences).",
+        default=None,
+        help="Ingredient list TSV (default: ingredients_list.tsv beside --occurrences-output).",
     )
     parser.add_argument(
         "--min-occurrences",
@@ -59,6 +59,8 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
+    if args.list_output is None:
+        args.list_output = default_list_output(args.occurrences_output)
     return run_aggregation(
         input_dir=args.input_dir,
         occurrences_output=args.occurrences_output,

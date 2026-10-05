@@ -46,8 +46,10 @@ are CSV-quoted, so `wc -l`, `grep`, `cut`, and `awk` can misread rows.
   label plus resolution source, MIM mapping status, and MIM ambiguity, so
   spelling variants of one unmapped material are separate rows.
 - For mapped rows, `preferred_term` is the most frequent MIM preferred term
-  among occurrences MIM resolved directly (`mim_exact`/`mim_normalized`), ties
-  broken alphabetically; without such rows it is the most frequent source label.
+  among occurrences MIM resolved directly (`mim_exact`/`mim_normalized`),
+  preferring terms MIM marks `MAPPED` over its `REJECTED` ones; ties break by
+  code point (uppercase first). Without directly resolved occurrences it is the
+  most frequent source label.
   It can differ from every entry in `label_variants`. Identity is
   `resolved_identifier`, not the name.
 - `UNMAPPED` and `MAPPED` describe occurrences, not labels. Local fallback
@@ -67,7 +69,8 @@ are CSV-quoted, so `wc -l`, `grep`, `cut`, and `awk` can misread rows.
 ## Verification
 
 - `just aggregate-mapped-ingredients` and `just aggregate-unmapped-ingredients`
-  also refresh the list together with `ingredient_occurrences.tsv`, but
+  also refresh the list together with `ingredient_occurrences.tsv`. Without
+  `--list-output`, every command writes the list beside `--occurrences-output`;
   `aggregate-all-ingredients` is the one command that refreshes every output.
 - Confirm `ingredient_aggregation_errors.tsv` has only a header row.
 - Report counts from this run, with the commit, rather than from a prior run;
