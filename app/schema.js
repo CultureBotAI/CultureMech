@@ -8,6 +8,8 @@ window.searchSchema = {
 
   // Fields to include in full-text search
   "searchableFields": [
+    "id",
+    "media_database_id",
     "name",
     "description",
     "target_organism_names",
@@ -162,8 +164,6 @@ window.searchSchema = {
     "ATCC": (id) => `https://www.atcc.org/products/${id.split(':')[1]}`,
     "JCM": (id) => `https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=${id.split(':')[1]}`,
     "NBRC": (id) => `https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=${id.split(':')[1]}`,
-    "KOMODO": (id) => `https://komodo.modelseed.org/detail?id=${id.split(':')[1]}`,
-    "komodo.medium": (id) => `https://komodo.modelseed.org/detail?id=${id.split(':')[1]}`,
     "NCIT": (id) => `https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=${id.split(':')[1]}`
   }
 };

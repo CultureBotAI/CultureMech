@@ -12,6 +12,7 @@
   function refresh() {
     const dark = root.dataset.theme ? root.dataset.theme === 'dark' : preference.matches;
     button.setAttribute('aria-pressed', String(dark));
+    button.textContent = dark ? 'Light mode' : 'Dark mode';
   }
   button.addEventListener('click', function () {
     const dark = button.getAttribute('aria-pressed') === 'true';

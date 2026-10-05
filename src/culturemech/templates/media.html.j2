@@ -44,7 +44,7 @@
 {% include "_partials/overview.html.j2" %}
 {% if composition_graph %}
 <section id="composition">
-<h2>Composition <small class="muted">(Mermaid)</small></h2>
+<h2>Composition</h2>
 {{ composition_graph|safe_mermaid }}
 </section>
 {% endif %}
@@ -53,6 +53,7 @@
 {% if medium.solutions %}{% include "_partials/solutions.html.j2" %}{% endif %}
 {% if medium.datasets %}{% include "_partials/datasets.html.j2" %}{% endif %}
 {% if medium.discussions %}{% include "_partials/discussions.html.j2" %}{% endif %}
+{% include "_partials/scientific_details.html.j2" %}
 {% include "_partials/provenance.html.j2" %}
 
 </main>

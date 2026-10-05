@@ -65,6 +65,18 @@ curation_history:
   source: CCAP:2ASW; https://www.ccap.ac.uk/wp-content/uploads/MR_2ASW.pdf
   notes: Copied the CCAP source identity from references and the original ccap-import
     event into the structured sources slot recognized by review scoring.
+- timestamp: '2026-10-05T19:29:05+00:00'
+  curator: codex
+  action: CORRECTED_INGREDIENT_IDENTITY
+  notes: Verified current CCAP revision 002 (approved/reviewed 2026-05-29), retrieved 2026-10-05, SHA256
+    d5d658702a3640ed17c4d9d494f198f7122be90cbc81e64ccdc8afad1c4401cc. The April ingredient import predates
+    this revision; the original imported PDF bytes are not retained in the tracked corpus, so historical
+    version equivalence is not asserted. Current recipe explicitly lists sodium nitrate in extra-salts
+    stock. ChEBI:63005 identity and packaged MediaIngredientMech NaNO3 mapping agree. No other ingredient
+    identities or concentrations were changed.
+  source: https://www.ccap.ac.uk/wp-content/uploads/MR_2ASW.pdf; https://www.ebi.ac.uk/chebi/CHEBI:63005
+  changes: NaNO / CHEBI:34545 Azimilide -> NaNO3 / CHEBI:63005 sodium nitrate; concentration retained
+    and stock basis clarified.
 references:
 - reference: CCAP:2ASW
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_2ASW.pdf
@@ -93,14 +105,14 @@ references:
   notes: Source reports Chaetoceros gracilis UTEX LB2658 growth experiments in a modified
     F/2ASW formulation with sodium manipulation.
 ingredients:
-- preferred_term: NaNO
+- preferred_term: NaNO3
   term:
-    id: CHEBI:34545
-    label: Azimilide
+    id: CHEBI:63005
+    label: sodium nitrate
   concentration:
     value: '15.00'
     unit: G_PER_L
-  notes: From CCAP Medium MR_2ASW.pdf; Curated from CCAP Medium MR_2ASW.pdf specification
+  notes: From CCAP Medium MR_2ASW.pdf; Curated from CCAP Medium MR_2ASW.pdf specification; Identity verified against CCAP MR_2ASW.pdf revision 002, approved/reviewed 2026-05-29. The retained 15.00 g/L is the extra-salts stock concentration, not the final medium concentration.
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683

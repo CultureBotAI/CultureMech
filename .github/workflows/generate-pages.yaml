@@ -71,6 +71,7 @@ jobs:
           PYTHONPATH: ${{ github.workspace }}/culturebotai-claw/src
         working-directory: CultureMech
         run: |
+          uv run python scripts/build_map_record_links.py
           uv run python -m culturemech.export.browser_export \
             --input data/normalized_yaml \
             --output app/data.js
@@ -95,6 +96,12 @@ jobs:
           echo "::warning::culturebotai-claw unavailable; generated indexes carry a degraded-build notice"
           echo "### Pages build degraded" >> "$GITHUB_STEP_SUMMARY"
           echo "Ingredient composition graphs were omitted because culturebotai-claw was unavailable." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Refresh growth-review population from this corpus
+        working-directory: CultureMech
+        run: |
+          uv run python scripts/build_media_growth_review_manifest.py
+          uv run python scripts/build_media_growth_review_html.py
 
       - name: Verify complete web coverage
         working-directory: CultureMech

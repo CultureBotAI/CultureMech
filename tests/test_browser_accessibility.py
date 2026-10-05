@@ -125,7 +125,7 @@ for (const [name, data, config, failed] of cases) {
   const elements = new Map();
   const document = {getElementById(id){if(!elements.has(id))elements.set(id,element());return elements.get(id);},
     createElement:element,createTextNode:element,querySelectorAll(){return []}};
-  const context = {document,window:{culturemechData:data,searchSchema:config,location:{reload(){}}}};
+  const context = {document,matchMedia(){return {matches:false}},history:{state:null,replaceState(state){this.state=state}},window:{culturemechData:data,searchSchema:config,location:{reload(){}},addEventListener(){}}};
   vm.createContext(context);vm.runInContext(source,context);
   const count=elements.get('resultsCount'), container=elements.get('resultsContainer');
   if(failed) {

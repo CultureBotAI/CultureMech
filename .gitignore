@@ -61,7 +61,11 @@ pages/index.html
 pages/style.css
 pages/mermaid-init.js
 pages/record-theme.js
+pages/composition-frame.html
+pages/composition-frame.js
+pages/composition-frame.css
 app/data.js
+app/map-record-links.json
 
 # Legacy per-category page output (renderer no longer writes here; the
 # active targets are pages/media/ and pages/normalized/). Block re-add
