@@ -18,7 +18,7 @@ import json
 import os
 import stat
 import tempfile
-from collections import defaultdict
+from collections import Counter, defaultdict
 from collections.abc import Callable, Mapping, Sequence
 from dataclasses import dataclass
 from pathlib import Path
@@ -684,8 +684,13 @@ def write_occurrences_and_yaml(
     occurrences: Sequence[IngredientOccurrence],
     yaml_path: str | Path,
     value: Mapping[str, Any],
+    list_path: str | Path | None = None,
 ) -> None:
-    """Publish a compatibility wrapper's two outputs as one staged set."""
+    """Publish a compatibility wrapper's outputs as one staged set.
+
+    The ingredient list is derived from the same occurrences, so refreshing it
+    here keeps it consistent with the occurrence table (#512).
+    """
 
     _atomic_write_many(
         [
@@ -697,8 +702,24 @@ def write_occurrences_and_yaml(
                 Path(yaml_path),
                 lambda stream: _write_yaml_collection_stream(stream, value),
             ),
+            *(
+                [
+                    (
+                        Path(list_path),
+                        lambda stream: _write_ingredient_list_stream(stream, occurrences),
+                    )
+                ]
+                if list_path is not None
+                else []
+            ),
         ]
     )
+
+
+def default_list_output(occurrences_output: str | Path) -> Path:
+    """Place the ingredient list beside the occurrence table it is derived from."""
+
+    return Path(occurrences_output).parent / "ingredients_list.tsv"
 
 
 def ensure_distinct_output_paths(*paths: str | Path) -> None:
@@ -766,12 +787,38 @@ def _ontology_source(identifier: str) -> str:
     return "OTHER"
 
 
+_TRUSTED_MIM_SOURCES = frozenset(
+    {ResolutionSource.MIM_EXACT.value, ResolutionSource.MIM_NORMALIZED.value}
+)
+
+
+def _most_common(values: Sequence[str]) -> str:
+    """Return the most frequent non-empty value; ties break by code point."""
+
+    counts = Counter(value for value in values if value)
+    return min(counts, key=lambda value: (-counts[value], value)) if counts else ""
+
+
 def _canonical_term(rows: Sequence[IngredientOccurrence]) -> str:
-    mim_terms = sorted({row.mim_preferred_term for row in rows if row.mim_preferred_term})
-    if mim_terms:
-        return mim_terms[0]
-    source_terms = sorted({row.preferred_term for row in rows if row.preferred_term})
-    return source_terms[0] if source_terms else rows[0].resolved_identifier
+    """Name one resolved identity (#509, #529).
+
+    Only rows that MIM resolved directly contribute MIM terms: on fallback rows,
+    ``mim_preferred_term`` belongs to the label's (possibly ambiguous) MIM match,
+    not necessarily to the resolved identifier.  Among those, terms MIM marks
+    ``MAPPED`` outrank its ``REJECTED`` preferred terms, so an accepted hydrate
+    spelling is not outvoted by a rejected generic one (CHEBI:32142).  Within a
+    tier the most frequent term wins; ties break by code point.
+    """
+
+    trusted = [row for row in rows if row.resolution_source in _TRUSTED_MIM_SOURCES]
+    return (
+        _most_common(
+            [row.mim_preferred_term for row in trusted if row.mim_mapping_status == "MAPPED"]
+        )
+        or _most_common([row.mim_preferred_term for row in trusted])
+        or _most_common([row.preferred_term for row in rows])
+        or rows[0].resolved_identifier
+    )
 
 
 def _mapping_quality(rows: Sequence[IngredientOccurrence]) -> str:

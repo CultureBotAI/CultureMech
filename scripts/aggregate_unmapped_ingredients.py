@@ -14,6 +14,7 @@ from pathlib import Path
 
 from ingredient_occurrences import (
     build_unmapped_output,
+    default_list_output,
     ensure_distinct_output_paths,
     scan_ingredient_occurrences,
     write_error_report,
@@ -36,11 +37,21 @@ def main(argv: list[str] | None = None) -> int:
         type=Path,
         default=Path("output/ingredient_aggregation_errors.tsv"),
     )
+    parser.add_argument(
+        "--list-output",
+        type=Path,
+        default=None,
+        help="Ingredient list TSV (default: ingredients_list.tsv beside --occurrences-output).",
+    )
     parser.add_argument("--verbose", action="store_true")
     args = parser.parse_args(argv)
+    if args.list_output is None:
+        args.list_output = default_list_output(args.occurrences_output)
     if args.min_occurrences < 1:
         parser.error("--min-occurrences must be at least 1")
-    ensure_distinct_output_paths(args.output, args.occurrences_output, args.errors_output)
+    ensure_distinct_output_paths(
+        args.output, args.occurrences_output, args.errors_output, args.list_output
+    )
 
     result = scan_ingredient_occurrences(args.input_dir)
     write_error_report(args.errors_output, result.errors)
@@ -54,6 +65,7 @@ def main(argv: list[str] | None = None) -> int:
         result.occurrences,
         args.output,
         output,
+        args.list_output,
     )
     if args.verbose:
         print(
