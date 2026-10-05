@@ -40,7 +40,14 @@ INDEX_HEADER = (
     "ambiguity",
 )
 MATCH_TYPES = frozenset({"preferred_term", "synonym", "ontology_label"})
-MAPPING_STATUSES = frozenset({"MAPPED", "UNMAPPED", "REJECTED"})
+# MIM's MappingStatusEnum. The undecided statuses mark curation in progress: such
+# a row asserts neither an identity nor an authoritative absence of one, so it
+# never resolves and never suppresses a labelled local fallback (#520). A value
+# outside this set still fails closed.
+UNDECIDED_MAPPING_STATUSES = frozenset(
+    {"PENDING_REVIEW", "IN_PROGRESS", "NEEDS_EXPERT", "AMBIGUOUS"}
+)
+MAPPING_STATUSES = frozenset({"MAPPED", "UNMAPPED", "REJECTED"}) | UNDECIDED_MAPPING_STATUSES
 SAFE_AMBIGUITIES = frozenset({"unique", "resolved:owned", "agree:same_substance"})
 AMBIGUITIES = SAFE_AMBIGUITIES | frozenset(
     {
@@ -320,11 +327,14 @@ class MIMLabelIndex:
                 "MIM explicitly leaves this label unmapped; local grounding suppressed",
             )
 
-        reason = (
-            "MIM label is chemically ambiguous"
-            if len(groups) == 1
-            else "weak normalization reaches incompatible MIM label groups"
-        )
+        if len(groups) == 1 and states[0][0] == "undecided":
+            # Name the status only when it is the whole answer; across several
+            # weak-matched groups the conflict between them is the reason (#522).
+            reason = f"MIM curation of this label is unfinished ({representative.mapping_status})"
+        elif len(groups) == 1:
+            reason = "MIM label is chemically ambiguous"
+        else:
+            reason = "weak normalization reaches incompatible MIM label groups"
         if local_identifier:
             decision = _local_decision(
                 query_label,
@@ -360,6 +370,8 @@ class MIMLabelIndex:
             return "mapped", first
         if first.mapping_status == "UNMAPPED":
             return "unmapped", first
+        if first.mapping_status in UNDECIDED_MAPPING_STATUSES:
+            return "undecided", first
         if first.identifier.startswith("UNMAPPED_"):
             return "unmapped", first
         if first.identifier in self._live_identifiers:
