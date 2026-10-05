@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-09-14T12:08:25
+# Generation date: 2026-10-05T10:46:31
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -2347,6 +2347,53 @@ class UpdateEvent(YAMLRoot):
 
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class CrossCorpusLink(YAMLRoot):
+    """
+    A directed link from the containing record or sub-object to a record in another Mech corpus. The five field names
+    preserve NaturalProductMech's existing link shape. Consumers define allowed relations and evidence requirements;
+    this class alone does not verify a target, its version, organism scope, or the scientific basis of the relation.
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = MECH_SHARED["CrossCorpusLink"]
+    class_class_curie: ClassVar[str] = "mech_shared:CrossCorpusLink"
+    class_name: ClassVar[str] = "CrossCorpusLink"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.CrossCorpusLink
+
+    corpus: str = None
+    identifier: str = None
+    relation: str = None
+    basis: str = None
+    source_version: Optional[str] = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.corpus):
+            self.MissingRequiredField("corpus")
+        if not isinstance(self.corpus, str):
+            self.corpus = str(self.corpus)
+
+        if self._is_empty(self.identifier):
+            self.MissingRequiredField("identifier")
+        if not isinstance(self.identifier, str):
+            self.identifier = str(self.identifier)
+
+        if self._is_empty(self.relation):
+            self.MissingRequiredField("relation")
+        if not isinstance(self.relation, str):
+            self.relation = str(self.relation)
+
+        if self._is_empty(self.basis):
+            self.MissingRequiredField("basis")
+        if not isinstance(self.basis, str):
+            self.basis = str(self.basis)
+
+        if self.source_version is not None and not isinstance(self.source_version, str):
+            self.source_version = str(self.source_version)
 
         super().__post_init__(**kwargs)
 
@@ -4879,6 +4926,21 @@ slots.updateEvent__fields_changed = Slot(uri=CULTUREMECH.fields_changed, name="u
 
 slots.updateEvent__notes = Slot(uri=CULTUREMECH.notes, name="updateEvent__notes", curie=CULTUREMECH.curie('notes'),
                    model_uri=CULTUREMECH.updateEvent__notes, domain=None, range=Optional[str])
+
+slots.crossCorpusLink__corpus = Slot(uri=MECH_SHARED.corpus, name="crossCorpusLink__corpus", curie=MECH_SHARED.curie('corpus'),
+                   model_uri=CULTUREMECH.crossCorpusLink__corpus, domain=None, range=str)
+
+slots.crossCorpusLink__identifier = Slot(uri=MECH_SHARED.identifier, name="crossCorpusLink__identifier", curie=MECH_SHARED.curie('identifier'),
+                   model_uri=CULTUREMECH.crossCorpusLink__identifier, domain=None, range=str)
+
+slots.crossCorpusLink__relation = Slot(uri=MECH_SHARED.relation, name="crossCorpusLink__relation", curie=MECH_SHARED.curie('relation'),
+                   model_uri=CULTUREMECH.crossCorpusLink__relation, domain=None, range=str)
+
+slots.crossCorpusLink__basis = Slot(uri=MECH_SHARED.basis, name="crossCorpusLink__basis", curie=MECH_SHARED.curie('basis'),
+                   model_uri=CULTUREMECH.crossCorpusLink__basis, domain=None, range=str)
+
+slots.crossCorpusLink__source_version = Slot(uri=MECH_SHARED.source_version, name="crossCorpusLink__source_version", curie=MECH_SHARED.curie('source_version'),
+                   model_uri=CULTUREMECH.crossCorpusLink__source_version, domain=None, range=Optional[str])
 
 slots.supportingReference__reference = Slot(uri=MECH_SHARED.reference, name="supportingReference__reference", curie=MECH_SHARED.curie('reference'),
                    model_uri=CULTUREMECH.supportingReference__reference, domain=None, range=str)

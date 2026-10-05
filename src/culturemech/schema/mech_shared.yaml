@@ -1,9 +1,9 @@
 id: https://w3id.org/kg-microbe/mech-shared
 name: mech_shared
-title: Mech shared module — Discussions (knowledge gaps) + Datasets
+title: Mech shared module — Discussions, Datasets and cross-corpus links
 description: >-
   Canonical, byte-identical LinkML module shared across the Mech knowledge
-  bases (CultureMech / MIM / CommunityMech / TraitMech). It carries two
+  bases (CultureMech / MIM / CommunityMech / TraitMech). It carries three
   domain-general record sections ported from monarch-initiative/dismech:
 
     * Discussion — the discourse / "knowledge gap" layer. A broad supertype
@@ -17,6 +17,11 @@ description: >-
       phenotype). Its `dataset_type` / `repository` enums are the faithful UNION
       of the existing CultureMech and CommunityMech enums (plus microbial
       additions) so the Phase-2 migration of those two repos is loss-preserving.
+
+    * CrossCorpusLink — a provenance-bearing link to a record in another Mech.
+      The importing schema owns the relation vocabulary and which slots admit
+      links. Sharing a protein or a reaction supplies a curation lead, not an
+      assertion of record equivalence or biological mechanism.
 
   The module is SELF-CONTAINED: it defines its own `SupportingReference`
   evidence class (and `SupportLevelEnum`) rather than referencing each repo's
@@ -191,6 +196,43 @@ enums:
         description: A repository not covered by the above.
 
 classes:
+
+  CrossCorpusLink:
+    description: >-
+      A directed link from the containing record or sub-object to a record in
+      another Mech corpus. The five field names preserve NaturalProductMech's
+      existing link shape. Consumers define allowed relations and evidence
+      requirements; this class alone does not verify a target, its version,
+      organism scope, or the scientific basis of the relation.
+    attributes:
+      corpus:
+        description: Canonical target corpus name, for example PathwayMech or AntibioticMech.
+        range: string
+        required: true
+      identifier:
+        description: Target record identifier, verbatim, in the named corpus.
+        range: string
+        required: true
+      relation:
+        description: >-
+          Directed relation from the containing record or sub-object to the
+          target. Consumers may constrain this string with a local enum through
+          slot_usage on a subclass, without changing the shared module.
+        range: string
+        required: true
+      basis:
+        description: >-
+          How the relation was established, for example SAME_INCHIKEY for an
+          exact chemical-structure join. A match on a protein or reaction must
+          not be presented as sufficient evidence for a stronger relation.
+        range: string
+        required: true
+      source_version:
+        description: >-
+          Pinned commit or release of the target corpus that was checked.
+          Optional for compatibility with existing NaturalProductMech links;
+          consumers should require a full immutable version for newly added links.
+        range: string
 
   SupportingReference:
     description: >-
