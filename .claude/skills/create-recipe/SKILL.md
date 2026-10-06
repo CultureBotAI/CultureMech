@@ -99,6 +99,12 @@ CultureMech `references[]` uses `PublicationReference` entries with a required
 - Prefer the exact recipe/specification source over a secondary page that only
   mentions the medium name.
 
+For every added ingredient concentration, follow
+[review-ingredient-concentrations](../review-ingredient-concentrations/SKILL.md):
+require a verified DOI or persistent source URL and an exact supporting snippet
+attached to the concentration claim. Record any conversion inputs and arithmetic
+separately from the quote. A recipe-level bibliography alone is insufficient.
+
 **Example**:
 ```markdown
 Input: "M9 minimal medium: Na2HPO4 (6 g/L), KH2PO4 (3 g/L), NaCl (0.5 g/L),
@@ -464,7 +470,9 @@ Before saving, verify:
 ### Common Issues
 
 **Issue**: Missing ingredient concentrations
-**Solution**: Mark as approximate or add data quality flag
+**Solution**: Use [review-ingredient-concentrations](../review-ingredient-concentrations/SKILL.md)
+to find DOI/PURL-backed amounts and exact supporting snippets. Leave unsupported
+amounts unresolved; do not invent approximate values.
 
 **Issue**: Unclear medium type
 **Solution**: Use COMPLEX as default, add note

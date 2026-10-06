@@ -1,0 +1,50 @@
+[
+  {
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium962a.pdf",
+    "title": "962a: THERMOVENABULUM MEDIUM",
+    "source_organization": "DSMZ",
+    "authors": null,
+    "year": null,
+    "source_type": "culture_collection_page",
+    "discovery_mode": "existing_record_reference",
+    "accessed_on": "2026-10-05",
+    "inspection": "Read two-page PDF text; screenshot retrieval failed. Stock section and units explicit in extracted text. Copyright year is not treated as publication year.",
+    "status": "inspected"
+  },
+  {
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1255.pdf",
+    "title": "1255: THERMOVENABULUM MEDIUM",
+    "source_organization": "DSMZ",
+    "authors": null,
+    "year": null,
+    "source_type": "culture_collection_page",
+    "discovery_mode": "existing_record_reference",
+    "accessed_on": "2026-10-05",
+    "inspection": "Read two-page PDF text; stock SL-10 section and addition volume inspected. No final-medium volume assumption made.",
+    "status": "inspected"
+  },
+  {
+    "reference": "https://www.bacmedia.dsmz.de/pdf/J805",
+    "title": "805: 1/10 R2A BROTH",
+    "source_organization": "JCM; hosted by DSMZ BacMedia",
+    "authors": null,
+    "year": null,
+    "source_type": "culture_collection_page",
+    "discovery_mode": "manual_web_search",
+    "accessed_on": "2026-10-05",
+    "inspection": "Original JCM CGI retrieval failed; read the JCM-attributed DSMZ-hosted one-page PDF, including explicit final volume.",
+    "status": "inspected"
+  },
+  {
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219",
+    "title": "1219 METHYLOTROPH MEDIUM",
+    "source_organization": "JCM",
+    "authors": null,
+    "year": null,
+    "source_type": "culture_collection_page",
+    "discovery_mode": "existing_record_reference",
+    "accessed_on": "2026-10-05",
+    "inspection": "Read original HTML ingredient table, water row, pH-adjustment instruction, and post-autoclave addition table. Numeric-only excerpts below are exact table-cell snippets; identity and units are provided by the separately inspected row locator, not invented quote text.",
+    "status": "inspected"
+  }
+]

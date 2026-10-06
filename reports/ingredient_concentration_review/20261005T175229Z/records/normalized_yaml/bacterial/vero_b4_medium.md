@@ -1,0 +1,37 @@
+# Ingredient Concentration Review
+
+- Record: data/normalized_yaml/bacterial/vero_b4_medium.yaml
+- ID: CultureMech:000641
+- Reviewed commit: ea4fad40114940af87daf1d56c9cad56beec8cca
+- Record SHA256: 0eb690edff49d2e485044c91bfb3d1877c0c9ff50c0b403223beac57a66b915b
+- Layer: normalized
+- Record kind: MEDIUM
+- Mode: read-only; no recipe edits
+- Source-checked claim rows: 0/3
+- Verdict: source review incomplete
+- Validation: 0 closed-schema errors
+
+## Ownership
+
+Candidate authoritative input paths (ID/name linkage; not proof of source equivalence):
+- data/normalized_yaml/bacterial/vero_b4_medium.yaml
+
+## Concentration Claims
+
+Missing means absent from inspected YAML, not absent from the scientific literature. Plausibility flags are triage leads, not proven errors.
+
+| Field / ingredient | Existing amount | Evidence state / flags | Decision / source check | Proposed amount | Evidence and calculation |
+| --- | --- | --- | --- | --- | --- |
+| ingredients[0].concentration / IMDM-Medium | {"value": "891.089109", "unit": "ML_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[1].concentration / Fetal bovine serum | {"value": "99.009901", "unit": "ML_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[2].concentration / Aminoacids (100 x) | {"value": "9.90099", "unit": "ML_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+
+## Source Leads
+
+These references have not been fetched unless explicitly source-checked above.
+
+- https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1198.pdf
+
+## Follow-up
+
+Inspect the exact source formulation, quote amount/unit/basis, document any calculation, and resolve flags before proposing edits. Stock quantities must remain distinct from final-medium amounts. No findings were applied.

@@ -1,0 +1,51 @@
+# Ingredient Concentration Review
+
+- Record: data/merge_yaml/merged/480G_MEDIUM.yaml
+- ID: CultureMech:003312
+- Reviewed commit: ea4fad40114940af87daf1d56c9cad56beec8cca
+- Record SHA256: f677210fee8b93f60acc07de3d72cc6ba90722f5249f87da1bd671f2d6442d2f
+- Layer: merged
+- Record kind: MEDIUM
+- Mode: read-only; no recipe edits
+- Source-checked claim rows: 0/16
+- Verdict: source review incomplete
+- Validation: 0 closed-schema errors
+
+## Ownership
+
+Candidate authoritative input paths (ID/name linkage; not proof of source equivalence):
+- data/normalized_yaml/bacterial/480g_medium.yaml
+- data/normalized_yaml/bacterial/TOGO_M1014_480G_Medium.yaml
+
+## Concentration Claims
+
+Missing means absent from inspected YAML, not absent from the scientific literature. Plausibility flags are triage leads, not proven errors.
+
+| Field / ingredient | Existing amount | Evidence state / flags | Decision / source check | Proposed amount | Evidence and calculation |
+| --- | --- | --- | --- | --- | --- |
+| ingredients[0].concentration / NaCl | {"value": "0.497512", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[1].concentration / NH4Cl | {"value": "0.328358", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[2].concentration / CaCl2 x 2 H2O | {"value": "0.149254", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[3].concentration / MgCl2 x 6 H2O | {"value": "0.348259", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[4].concentration / KCl | {"value": "0.298507", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[5].concentration / KH2PO4 | {"value": "0.298507", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[6].concentration / Casitone | {"value": "0.995025", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[7].concentration / Yeast extract | {"value": "0.497512", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[8].concentration / Resazurin | {"value": "0.000995025", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[9].concentration / Na2S x 9 H2O | {"value": "5", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[10].concentration / Co(NO3)2 x 6 H2O | {"value": "0.00494", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[11].concentration / CuSO4 x 5 H2O | {"value": "0.0079", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[12].concentration / H3BO3 | {"value": "0.286", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[13].concentration / MnCl2 x 4 H2O | {"value": "0.181", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[14].concentration / Na2MoO4 x 2 H2O | {"value": "0.039", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[15].concentration / ZnSO4 x 7 H2O | {"value": "0.0222", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+
+## Source Leads
+
+These references have not been fetched unless explicitly source-checked above.
+
+- https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=964
+
+## Follow-up
+
+Inspect the exact source formulation, quote amount/unit/basis, document any calculation, and resolve flags before proposing edits. Stock quantities must remain distinct from final-medium amounts. No findings were applied.

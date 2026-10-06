@@ -1,0 +1,65 @@
+# Ingredient Concentration Review
+
+- Record: data/normalized_yaml/archaea/methanobacterium_medium_iii.yaml
+- ID: CultureMech:003138
+- Reviewed commit: ea4fad40114940af87daf1d56c9cad56beec8cca
+- Record SHA256: 6c21d5f6dc2988b5ec8357a26996497282c15a54959b2468e8de9f1bfc091cb1
+- Layer: normalized
+- Record kind: MEDIUM
+- Mode: read-only; no recipe edits
+- Source-checked claim rows: 0/31
+- Verdict: source review incomplete
+- Validation: 0 closed-schema errors
+
+## Ownership
+
+Candidate authoritative input paths (ID/name linkage; not proof of source equivalence):
+- data/normalized_yaml/archaea/methanobacterium_medium_iii.yaml
+
+## Concentration Claims
+
+Missing means absent from inspected YAML, not absent from the scientific literature. Plausibility flags are triage leads, not proven errors.
+
+| Field / ingredient | Existing amount | Evidence state / flags | Decision / source check | Proposed amount | Evidence and calculation |
+| --- | --- | --- | --- | --- | --- |
+| ingredients[0].concentration / KH2PO4 | {"value": "0.130769", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[1].concentration / NH4Cl | {"value": "0.519231", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[2].concentration / MgCl2 x 6 H2O | {"value": "0.192308", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[3].concentration / CaCl2 x 2 H2O | {"value": "0.241346", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[4].concentration / NaHCO3 | {"value": "2.40385", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[5].concentration / Yeast extract | {"value": "0.192308", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[6].concentration / Sodium acetate | {"value": "0.769231", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[7].concentration / Resazurin | {"value": "0.000961538", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[8].concentration / L-Cysteine HCl x H2O | {"value": "10", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[9].concentration / Na2S x 9 H2O | {"value": "10", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[10].concentration / Biotin | {"value": "0.002", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[11].concentration / Folic acid | {"value": "0.002", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[12].concentration / Pyridoxine hydrochloride | {"value": "0.01", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[13].concentration / Thiamine HCl | {"value": "0.005", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[14].concentration / Riboflavin | {"value": "0.005", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[15].concentration / Nicotinic acid | {"value": "0.005", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[16].concentration / Calcium pantothenate | {"value": "0.005", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[17].concentration / Vitamin B12 | {"value": "0.0001", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[18].concentration / p-Aminobenzoic acid | {"value": "0.005", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[19].concentration / Lipoic acid | {"value": "0.005", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[20].concentration / Nitrilotriacetic acid | {"value": "1.5", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[21].concentration / MgSO4 x 7 H2O | {"value": "3", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[22].concentration / MnSO4 x n H2O | {"value": "0.5", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[23].concentration / NaCl | {"value": "1", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[24].concentration / FeSO4 x 7 H2O | {"value": "0.1", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[25].concentration / CoSO4 x 7 H2O | {"value": "0.1", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[26].concentration / ZnSO4 x 7 H2O | {"value": "0.1", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[27].concentration / CuSO4 x 5 H2O | {"value": "0.01", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[28].concentration / AlK(SO4)2 | {"value": "0.01", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[29].concentration / H3BO3 | {"value": "0.01", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[30].concentration / Na2MoO4 x 2 H2O | {"value": "0.01", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+
+## Source Leads
+
+These references have not been fetched unless explicitly source-checked above.
+
+- https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=794
+
+## Follow-up
+
+Inspect the exact source formulation, quote amount/unit/basis, document any calculation, and resolve flags before proposing edits. Stock quantities must remain distinct from final-medium amounts. No findings were applied.

@@ -1,0 +1,23 @@
+{
+  "started_utc": "2026-10-05T17:57:47.127851+00:00",
+  "commit": "ea4fad40114940af87daf1d56c9cad56beec8cca",
+  "records": 22230,
+  "scope": "all tracked normalized and merged YAML paths in this checkout",
+  "upstream_main_observed": "70a34fef7032a8c024fa2bbf721156d94f19f3c0",
+  "record_edits": 0,
+  "finished_inventory_utc": "2026-10-05T17:59:15.755900+00:00",
+  "counts": {
+    "merged/claims": 105321,
+    "merged/missing_attached_evidence": 105281,
+    "merged/records": 6320,
+    "merged/incomplete_or_nonqualifying_attached_evidence": 32,
+    "merged/candidate_needs_source_verification": 9,
+    "merged/unscoped_context_evidence_needs_review": 33,
+    "normalized/claims": 220957,
+    "normalized/missing_attached_evidence": 220916,
+    "normalized/records": 15910,
+    "normalized/incomplete_or_nonqualifying_attached_evidence": 48,
+    "normalized/candidate_needs_source_verification": 9,
+    "normalized/unscoped_context_evidence_needs_review": 37
+  }
+}
