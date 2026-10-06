@@ -177,6 +177,30 @@ establish absence of evidence in the literature or elsewhere on the machine.
 - `review_driver.py` and `verify_coverage.py`: retained report-generation and
   verification drivers; run from the repository root. They do not modify recipes.
 
+### Publication Review
+
+Adversarial self-review for [PR #563](https://github.com/CultureBotAI/CultureMech/pull/563)
+reproduced and addressed three tooling defects:
+
+- [#564](https://github.com/CultureBotAI/CultureMech/issues/564): validation now
+  requires successful status, complete record coverage, and matching inventory,
+  schema, and validation-report hashes. Missing validation remains pending;
+  inconsistent results fail before reports are written. Coverage checks remain
+  active under optimized Python.
+- [#565](https://github.com/CultureBotAI/CultureMech/issues/565): each manual
+  source check is bound to the reviewed record ID/hash, ingredient name/identity,
+  and old concentration. Duplicate, unmatched, or incomplete checks fail before
+  output writes. Existing source conclusions and quotations are unchanged.
+- [#566](https://github.com/CultureBotAI/CultureMech/issues/566): failed scans
+  retain diagnostic rows but exit nonzero. Render rejects failed or incomplete
+  inventories; new scans observe the local `origin/main` ref instead of reusing
+  this run's historical SHA.
+
+The regression fixtures are in `tests/test_concentration_review_reports.py`.
+The retained drivers reproduce this snapshot; they are not a source-research
+engine. Replaying a validated snapshot against a different schema or corpus must
+fail rather than silently relabel its historical results as current.
+
 **Remaining:** source-by-source research for nearly the entire corpus. Only
 twelve structured concentration entries were source-inspected in this run;
 326,266 other structured entries remain without a completed source check,
