@@ -180,7 +180,7 @@ establish absence of evidence in the literature or elsewhere on the machine.
 ### Publication Review
 
 Adversarial self-review for [PR #563](https://github.com/CultureBotAI/CultureMech/pull/563)
-reproduced and addressed three tooling defects:
+and subsequent CI identified and addressed these publication defects:
 
 - [#564](https://github.com/CultureBotAI/CultureMech/issues/564): validation now
   requires successful status, complete record coverage, and matching inventory,
@@ -195,6 +195,10 @@ reproduced and addressed three tooling defects:
   retain diagnostic rows but exit nonzero. Render rejects failed or incomplete
   inventories; new scans observe the local `origin/main` ref instead of reusing
   this run's historical SHA.
+- [#567](https://github.com/CultureBotAI/CultureMech/issues/567): the generated
+  derived-artifact catalog now includes this run's ten JSON/TSV snapshots. The
+  classifier recognizes this review family's timestamped directories without
+  treating undated/current outputs as historical snapshots.
 
 The regression fixtures are in `tests/test_concentration_review_reports.py`.
 The retained drivers reproduce this snapshot; they are not a source-research

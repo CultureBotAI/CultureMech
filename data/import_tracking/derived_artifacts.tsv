@@ -87,6 +87,16 @@ reports/archive/validation_corrected_20260316.tsv	SNAPSHOT	archived
 reports/archive/validation_final_20260316.json	SNAPSHOT	archived			
 reports/archive/validation_final_20260316.tsv	SNAPSHOT	archived			
 reports/gap_fix_backlog.tsv	UNKNOWN	no writer found			
+reports/ingredient_concentration_review/20261005T175229Z/coverage_verification.json	SNAPSHOT	timestamped concentration review			
+reports/ingredient_concentration_review/20261005T175229Z/manifest.tsv	SNAPSHOT	timestamped concentration review			
+reports/ingredient_concentration_review/20261005T175229Z/run.json	SNAPSHOT	timestamped concentration review			
+reports/ingredient_concentration_review/20261005T175229Z/source_checks.json	SNAPSHOT	timestamped concentration review			
+reports/ingredient_concentration_review/20261005T175229Z/source_documents.json	SNAPSHOT	timestamped concentration review			
+reports/ingredient_concentration_review/20261005T175229Z/source_queue.json	SNAPSHOT	timestamped concentration review			
+reports/ingredient_concentration_review/20261005T175229Z/strict_validation.tsv	SNAPSHOT	timestamped concentration review			
+reports/ingredient_concentration_review/20261005T175229Z/summary.json	SNAPSHOT	timestamped concentration review			
+reports/ingredient_concentration_review/20261005T175229Z/unavailable_references.json	SNAPSHOT	timestamped concentration review			
+reports/ingredient_concentration_review/20261005T175229Z/validation_complete.json	SNAPSHOT	timestamped concentration review			
 reports/instance_validation_failures.tsv	UNKNOWN	writer purity unestablished (validate_strict.py)	scripts/validate_strict.py	scripts/validate_strict.py	
 reports/label_plausibility_2026-07-19.tsv	SNAPSHOT	dated filename			
 reports/label_plausibility_after_fixes.tsv	UNKNOWN	no writer found			

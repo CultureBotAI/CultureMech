@@ -70,6 +70,7 @@ ARTIFACT_SUFFIX = re.compile(r"\.(tsv|json|csv)$")
 # Script-name prefixes that mean "regenerates a view of the corpus".
 GENERATOR = re.compile(r"(audit_|score_|triage_|report_|prioritize_|sample_|refresh_|generate_)")
 DATED = re.compile(r"\d{4}-\d{2}-\d{2}|_\d{8}")
+CONCENTRATION_SNAPSHOT = re.compile(r"^reports/ingredient_concentration_review/\d{8}T\d{6}Z/")
 
 # Artifacts whose writer takes `--out` and does not mutate the corpus, so a
 # freshness check can regenerate them to a temp path safely. Explicit, because
@@ -178,6 +179,8 @@ def classify(artifact: str, writer: str | None) -> tuple[str, str]:
         return "AUTHORITATIVE", AUTHORITATIVE_INPUTS[artifact]
     if artifact.startswith("reports/archive/"):
         return "SNAPSHOT", "archived"
+    if CONCENTRATION_SNAPSHOT.match(artifact):
+        return "SNAPSHOT", "timestamped concentration review"
     if DATED.search(os.path.basename(artifact)):
         return "SNAPSHOT", "dated filename"
     if writer is None:
@@ -195,7 +198,8 @@ def classify(artifact: str, writer: str | None) -> tuple[str, str]:
 def inventory() -> list[dict[str, str]]:
     rows = []
     for art in tracked_artifacts():
-        mentions = find_writers(art)
+        # Generic names in a historical run do not identify an unrelated live writer.
+        mentions = [] if CONCENTRATION_SNAPSHOT.match(art) else find_writers(art)
         base = os.path.basename(art)
         declared_by_pattern = pattern_writer(art)
         if declared_by_pattern and declared_by_pattern not in mentions:
