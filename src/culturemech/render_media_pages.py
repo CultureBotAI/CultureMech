@@ -25,7 +25,7 @@ import sys
 from collections.abc import Sequence
 from functools import lru_cache
 from pathlib import Path
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, cast
 from urllib.parse import quote
 
 import yaml
@@ -93,7 +93,7 @@ def community_links() -> dict[str, str]:
     path = Path(__file__).parent / "data/community-record-links.json"
     if not path.is_file():
         return {}
-    return json.loads(path.read_text())["links"]
+    return cast(dict[str, str], json.loads(path.read_text())["links"])
 
 
 def reference_url(value: str) -> str:
