@@ -5,7 +5,7 @@
     <dt>External ontology</dt>
     <dd>
       {% set t = medium.media_term.term %}
-      <a href="{{ curie_to_url(t.id) }}" rel="nofollow noreferrer">{{ t.id }}</a>
+      {{ t.id|identifier_link }}
       &mdash; {{ t.label or '' }}
     </dd>
   {% endif %}

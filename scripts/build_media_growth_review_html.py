@@ -1,15 +1,19 @@
 #!/usr/bin/env python3
 """Render the media growth review manifest as a GitHub Pages report."""
+
 from __future__ import annotations
 
 import argparse
 import csv
 import datetime as dt
+import hashlib
 import json
+import subprocess
 from collections import Counter
 from html import escape
 from pathlib import Path
 
+from culturemech.record_links import normalized_records
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_MANIFEST = REPO_ROOT / "reports" / "media_growth_review_manifest.tsv"
@@ -21,7 +25,7 @@ STATUS_LABELS = {
     "has_supported_growth_candidate": "Supported candidate",
     "has_review_candidates": "Review candidates",
     "reviewed_no_candidates": "Reviewed, no candidates",
-    "not_reviewed": "Not reviewed",
+    "not_reviewed": "No review artifact in this build",
 }
 
 
@@ -43,6 +47,18 @@ def status_class(status: str) -> str:
 
 def build_report(rows: list[dict[str, str]], source_path: Path) -> str:
     total = len(rows)
+    manifest_hash = hashlib.sha256(source_path.read_bytes()).hexdigest()
+    source_revision = subprocess.check_output(
+        ["git", "rev-parse", "HEAD"], cwd=REPO_ROOT, text=True
+    ).strip()
+    if subprocess.run(
+        ["git", "diff", "--quiet", "HEAD", "--", "data/normalized_yaml"],
+        cwd=REPO_ROOT,
+        check=False,
+    ).returncode:
+        source_revision += " (normalized records modified locally)"
+    if len({row.get("id") for row in rows}) != len(rows):
+        raise ValueError("Manifest has duplicate or missing record identifiers")
     by_status = Counter(row["review_status"] for row in rows)
     by_dir = Counter(row["category_dir"] for row in rows)
     applied = sum(1 for row in rows if to_int(row, "growth_metric_count"))
@@ -63,24 +79,33 @@ def build_report(rows: list[dict[str, str]], source_path: Path) -> str:
         for category, count in sorted(by_dir.items())
     )
 
+    identities = normalized_records(REPO_ROOT)
     table_rows = []
     for row in rows:
         if row["review_status"] == "not_reviewed":
             continue
         display_name = row.get("original_name") or row.get("name") or row.get("id")
-        table_rows.append({
-            "yaml_path": row.get("yaml_path", ""),
-            "category": row.get("category_dir", ""),
-            "id": row.get("id", ""),
-            "name": display_name,
-            "status": row.get("review_status", ""),
-            "growth_metrics": to_int(row, "growth_metric_count"),
-            "support_evidence": to_int(row, "supported_growth_evidence_count"),
-            "genome_ids": to_int(row, "genome_id_count"),
-            "variants": to_int(row, "variant_count"),
-            "candidates": to_int(row, "proposal_candidate_count"),
-            "proposal": row.get("proposal_path", ""),
-        })
+        table_rows.append(
+            {
+                "yaml_path": row.get("yaml_path", ""),
+                "category": row.get("category_dir", ""),
+                "id": row.get("id", ""),
+                "record_url": (
+                    ("normalized/" + row["id"].split(":")[1] + ".html")
+                    if row.get("id") in identities
+                    and (not row.get("yaml_path") or row["yaml_path"] == identities[row["id"]])
+                    else ""
+                ),
+                "name": display_name,
+                "status": row.get("review_status", ""),
+                "growth_metrics": to_int(row, "growth_metric_count"),
+                "support_evidence": to_int(row, "supported_growth_evidence_count"),
+                "genome_ids": to_int(row, "genome_id_count"),
+                "variants": to_int(row, "variant_count"),
+                "candidates": to_int(row, "proposal_candidate_count"),
+                "proposal": row.get("proposal_path", ""),
+            }
+        )
 
     rows_json = json.dumps(table_rows, ensure_ascii=False)
     status_options = "\n".join(
@@ -223,6 +248,7 @@ input, select {{
   </nav>
   <h1>CultureMech Media Growth Evidence Review</h1>
   <p class="muted">Coverage report for medium-centered growth-evidence review. Generated {escape(generated_at)} from <code>{escape(str(source_path.relative_to(REPO_ROOT)))}</code>.</p>
+  <p class="muted">Normalized corpus snapshot: <code>{escape(source_revision)}</code>. Manifest SHA256: <code>{manifest_hash}</code>. Includes media and supporting solution records; category and primary-target counts are reported below. Proposal coverage includes only proposal files present at build time; absence is not evidence that a recipe was never researched.</p>
 </header>
 <main class="wrap">
   <div class="metrics">
@@ -305,7 +331,7 @@ function render() {{
   visibleCount.textContent = filtered.length.toLocaleString();
   tbody.innerHTML = filtered.map(row => `
     <tr>
-      <td><strong>${{esc(row.name || row.id)}}</strong><br><span class="muted">${{esc(row.id)}} · ${{esc(row.category)}}</span></td>
+      <td><strong>${{row.record_url ? `<a href="${{esc(row.record_url)}}">${{esc(row.name || row.id)}}</a>` : esc(row.name || row.id) + " (record unresolved)"}}</strong><br><span class="muted">${{esc(row.id)}} · ${{esc(row.category)}}</span></td>
       <td><span class="badge ${{statusClass(row.status)}}">${{esc(labels[row.status] || row.status)}}</span></td>
       <td class="num">${{row.growth_metrics}}</td>
       <td class="num">${{row.support_evidence}}</td>

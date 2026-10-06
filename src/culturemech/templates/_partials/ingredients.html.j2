@@ -43,7 +43,7 @@
   </td>
   <td>
     {% if ing.term and ing.term.id %}
-      <a href="{{ curie_to_url(ing.term.id) }}" rel="nofollow noreferrer">{{ ing.term.id }}</a>
+      {{ ing.term.id|identifier_link }}
       <div class="muted small">{{ ing.term.label or '' }}</div>
     {% endif %}
   </td>

@@ -2,6 +2,7 @@
 <h2>Provenance</h2>
 {% if medium.merged_from %}
   <p class="muted">Merged from {{ medium.merged_from|length }} source record{{ '' if medium.merged_from|length == 1 else 's' }}.</p>
+  <ul>{% for source in medium.merged_from %}<li>{{ source|normalized_source }}</li>{% endfor %}</ul>
 {% endif %}
 {% if medium.curation_history %}
 <table class="curation">
@@ -14,7 +15,7 @@
   <td class="muted small">{{ ev.timestamp }}</td>
   <td>{{ ev.curator }}</td>
   <td>{{ ev.action }}</td>
-  <td class="small prewrap">{{ ev.notes or '' }}</td>
+  <td class="small prewrap">{{ (ev.notes or '')|linked_text }}</td>
 </tr>
 {% endfor %}
 </tbody>

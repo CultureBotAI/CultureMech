@@ -64,7 +64,8 @@ def validate_web_coverage(corpus_dir: Path, data_file: Path, pages_dir: Path) ->
         path.relative_to(pages_dir).as_posix()
         for root in page_roots
         for path in (pages_dir / root).rglob("*.html")
-        if path.name != "index.html"
+        if path != pages_dir / root / "index.html"
+        and path != pages_dir / root / "composition-frame.html"
     }
     missing_pages = sorted(expected_pages - actual_pages)
     stale_pages = sorted(actual_pages - expected_pages)

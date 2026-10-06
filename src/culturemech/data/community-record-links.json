@@ -1,0 +1,16 @@
+{
+  "source_repository": "CultureBotAI/CommunityMech",
+  "source_revision": "42261c6808d6bffba59380b922156fc5c3805871",
+  "scope": "Unambiguous IDs referenced by data/import_tracking/communitymech_imports.json; links target immutable canonical sources.",
+  "links": {
+    "CommunityMech:000003": "https://github.com/CultureBotAI/CommunityMech/blob/42261c6808d6bffba59380b922156fc5c3805871/kb/communities/At_RSPHERE_SynCom.yaml",
+    "CommunityMech:000022": "https://github.com/CultureBotAI/CommunityMech/blob/42261c6808d6bffba59380b922156fc5c3805871/kb/communities/Dangl_SynComm_35.yaml",
+    "CommunityMech:000031": "https://github.com/CultureBotAI/CommunityMech/blob/42261c6808d6bffba59380b922156fc5c3805871/kb/communities/Geobacter_Clostridium_Interspecies_Electron_Transfer_Coculture.yaml",
+    "CommunityMech:000032": "https://github.com/CultureBotAI/CommunityMech/blob/42261c6808d6bffba59380b922156fc5c3805871/kb/communities/Geobacter_Methanosaeta_DIET.yaml",
+    "CommunityMech:000033": "https://github.com/CultureBotAI/CommunityMech/blob/42261c6808d6bffba59380b922156fc5c3805871/kb/communities/Geobacter_Methanosarcina_DIET.yaml",
+    "CommunityMech:000040": "https://github.com/CultureBotAI/CommunityMech/blob/42261c6808d6bffba59380b922156fc5c3805871/kb/communities/Lotus_LjSC3.yaml",
+    "CommunityMech:000059": "https://github.com/CultureBotAI/CommunityMech/blob/42261c6808d6bffba59380b922156fc5c3805871/kb/communities/Richmond_Mine_AMD_Biofilm.yaml",
+    "CommunityMech:000061": "https://github.com/CultureBotAI/CommunityMech/blob/42261c6808d6bffba59380b922156fc5c3805871/kb/communities/SF356_Cellulose_Degrader.yaml",
+    "CommunityMech:000064": "https://github.com/CultureBotAI/CommunityMech/blob/42261c6808d6bffba59380b922156fc5c3805871/kb/communities/Soybean_N_Fixation_sfSynCom.yaml"
+  }
+}

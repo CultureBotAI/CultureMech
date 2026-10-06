@@ -1,0 +1,6 @@
+{% if medium.target_organisms %}
+<section id="target-organisms"><h2>Target organisms and growth evidence</h2>
+<p>These are curated observations and conditions for named organisms; they do not imply universal growth suitability.</p>
+{{ medium.target_organisms|structured }}</section>
+{% else %}<section id="target-organisms"><h2>Target organisms</h2><p class="muted">No target organisms are recorded.</p></section>{% endif %}
+{% if medium.variants %}<section id="variants"><h2>Recipe variants</h2>{{ medium.variants|structured }}</section>{% endif %}

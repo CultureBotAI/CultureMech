@@ -343,12 +343,21 @@
             *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;
                 transition-duration:.01ms!important;scroll-behavior:auto!important;}
         }
+
+        .container { grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; }
+        .plot-panel { min-width: 0; overflow-wrap: anywhere; }
+        .plot-panel svg { width: 100%; height: auto; }
+        .plot-panel input { max-width: 100%; }
+        .filter-container { flex-wrap: wrap; }
+        .snapshot-note { max-width: 65rem; margin: .5rem auto; overflow-wrap: anywhere; }
+        @media (max-width: 1100px) { .container { grid-template-columns: minmax(0, 1fr); } }
+        @media (max-width: 600px) { body { padding: 12px; } .plot-panel { padding: 12px; } header h1 { font-size: 1.6rem; } }
     </style>
 </head>
 <body>
     <header>
         <h1>CultureMech Media Embedding Map</h1>
-        <p>Explore {{ unique_count }} culture media recipes through semantic similarity</p>
+        <p>Retained media and stock-solution maps</p><p class="snapshot-note">Each panel covers only the records with coordinates in its own embedding dataset, not the current browser corpus. The source embedding generation date is not recorded on this page. Missing points do not imply missing recipes or biological similarity. Use the browser for current record coverage.</p>
         <a href="index.html" class="nav-link">Home</a>
         <a href="browser.html" class="nav-link">← Back to Media Browser</a>
     </header>
@@ -357,7 +366,7 @@
         <!-- Left Panel: Derived Embeddings -->
         <div class="plot-panel">
             <h2>Derived Media Embeddings</h2>
-            <p>Aggregated from ingredient and organism embeddings ({{ derived_count }} media)</p>
+            <p>Aggregated from ingredient and organism embeddings; includes media and stock solutions.</p>
 
             <div class="stats">
                 <div class="stat-item">
@@ -380,7 +389,7 @@
                 <button class="filter-btn" data-filter="solution" data-target="derived">Solutions Only</button>
             </div>
 
-            <svg id="umap-derived" width="800" height="600"></svg>
+            <svg id="umap-derived" width="800" height="600" viewBox="0 0 800 600"></svg>
 
             <div class="legend" id="legend-derived"></div>
         </div>
@@ -388,7 +397,7 @@
         <!-- Right Panel: Direct Embeddings -->
         <div class="plot-panel">
             <h2>Direct Media Embeddings</h2>
-            <p>From mediadive.medium nodes in KG-Microbe ({{ direct_count }} media)</p>
+            <p>From mediadive.medium nodes in KG-Microbe; panel scope follows its retained entity types.</p>
 
             <div class="stats">
                 <div class="stat-item">
@@ -411,7 +420,7 @@
                 <button class="filter-btn" data-filter="solution" data-target="direct">Solutions Only</button>
             </div>
 
-            <svg id="umap-direct" width="800" height="600"></svg>
+            <svg id="umap-direct" width="800" height="600" viewBox="0 0 800 600"></svg>
 
             <div class="legend" id="legend-direct"></div>
         </div>
@@ -438,6 +447,7 @@
 
     <div class="tooltip" id="tooltip"></div>
 
+    <script src="map-record-navigation.js"></script>
     <script>
         // Embed JSON data via Jinja2
         const derivedData = {{ derived_data | tojson }};
@@ -464,6 +474,15 @@
         };
 
         // Render UMAP visualization
+        for (const [panel, points] of [['derived', derivedData], ['direct', directData]]) {
+            document.getElementById(panel+'-total').textContent = points.length.toLocaleString();
+            const count = document.createElement('p');
+            const types = new Map();
+            points.forEach(point => types.set(point.entity_type || 'unspecified', (types.get(point.entity_type || 'unspecified') || 0)+1));
+            count.className = 'snapshot-note';
+            count.textContent = points.length.toLocaleString() + ' plotted records: ' + Array.from(types, ([kind,n]) => n.toLocaleString()+' '+kind).join('; ') + '.';
+            document.getElementById('umap-'+panel).before(count);
+        }
         function renderUMAP(data, svgId, searchId, visibleId, legendId) {
             const svg = d3.select(`#${svgId}`);
             const width = +svg.attr("width");
@@ -537,8 +556,12 @@
                 .on("mouseout", function() {
                     tooltip.style("opacity", 0);
                 })
+                .attr("tabindex", 0)
+                .attr("role", "link")
+                .attr("aria-label", d => "Open record: " + d.name)
+                .on("keydown", function(event, d) { if (event.key === "Enter") { event.preventDefault(); window.openMapRecord(d); } })
                 .on("click", function(event, d) {
-                    window.location.href = d.url;
+                    window.openMapRecord(d);
                 });
 
             // Update visible count

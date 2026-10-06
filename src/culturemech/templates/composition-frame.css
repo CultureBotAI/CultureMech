@@ -1,0 +1,4 @@
+body { margin: 0; padding: .5rem; background: #fff; color: #222; font-family: system-ui, sans-serif; }
+body.dark { background: #12160f; color: #eaf0e6; }
+svg { max-width: 100%; height: auto; }
+#status { font-size: .9rem; }

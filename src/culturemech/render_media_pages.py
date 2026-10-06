@@ -18,16 +18,21 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import json
 import os
 import re
 import sys
 from collections.abc import Sequence
+from functools import lru_cache
 from pathlib import Path
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, cast
+from urllib.parse import quote
 
 import yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup, escape
+
+from culturemech.record_links import normalized_records
 
 # Make the shared kg_microbe_browser package importable. PYTHONPATH may
 # already provide it; sibling-dir fallback covers default `python -m` runs.
@@ -75,12 +80,101 @@ _CURIE_RESOLVERS = {
 
 def curie_to_url(curie: str | None) -> str:
     if not curie or ":" not in curie:
-        return "#"
+        return ""
     prefix, local = curie.split(":", 1)
     template = _CURIE_RESOLVERS.get(prefix)
     if not template:
-        return "#"
-    return template.format(local)
+        return ""
+    return template.format(quote(local, safe=""))
+
+
+@lru_cache(maxsize=1)
+def community_links() -> dict[str, str]:
+    path = Path(__file__).parent / "data/community-record-links.json"
+    if not path.is_file():
+        return {}
+    return cast(dict[str, str], json.loads(path.read_text())["links"])
+
+
+def reference_url(value: str) -> str:
+    if re.match(r"https?://[^\s<>]+$", value):
+        return value
+    if re.fullmatch(r"CultureMech:\d{6}", value) and value in normalized_records(REPO_ROOT):
+        return (
+            "https://culturebotai.github.io/CultureMech/pages/normalized/"
+            + value.split(":")[1]
+            + ".html"
+        )
+    if re.fullmatch(r"CommunityMech:\d{6}", value):
+        return community_links().get(value, "")
+    if re.fullmatch(r"PMID:\d+", value):
+        return "https://pubmed.ncbi.nlm.nih.gov/" + value.split(":")[1] + "/"
+    if re.match(r"(?i)doi:10\.\d+/\S+$", value):
+        return "https://doi.org/" + quote(value[4:], safe="/:()")
+    return curie_to_url(value)
+
+
+def identifier_link(value: object) -> Markup:
+    text = "" if value is None else str(value)
+    url = reference_url(text)
+    if url:
+        return Markup('<a href="{}" rel="noreferrer">{}</a>').format(url, text)
+    return Markup('{} <span class="muted">(source link unavailable)</span>').format(text)
+
+
+_TEXT_RE = re.compile(
+    r"https?://[^\s<>]+|(?:CommunityMech|CultureMech|PMID):\d+|DOI:10\.\d+/[^\s<>]+", re.I
+)
+
+
+def linked_text(value: object) -> Markup:
+    text = "" if value is None else str(value)
+    parts = []
+    start = 0
+    for match in _TEXT_RE.finditer(text):
+        parts.extend([escape(text[start : match.start()]), identifier_link(match.group())])
+        start = match.end()
+    parts.append(escape(text[start:]))
+    return Markup("").join(parts)
+
+
+def structured(value: object) -> Markup:
+    if isinstance(value, dict):
+        return Markup('<dl class="kv">{}</dl>').format(
+            Markup("").join(
+                Markup("<dt>{}</dt><dd>{}</dd>").format(
+                    str(k).replace("_", " ").capitalize(), structured(v)
+                )
+                for k, v in value.items()
+                if v is not None and v != [] and v != {}
+            )
+        )
+    if isinstance(value, list):
+        return Markup("<ul>{}</ul>").format(
+            Markup("").join(Markup("<li>{}</li>").format(structured(v)) for v in value)
+        )
+    text = "" if value is None else str(value)
+    if reference_url(text):
+        return identifier_link(text)
+    return linked_text(text)
+
+
+@lru_cache(maxsize=1)
+def normalized_source_index() -> dict[str, str]:
+    candidates: dict[str, set[str]] = {}
+    for identifier, path in normalized_records(REPO_ROOT).items():
+        candidates.setdefault(Path(path).stem, set()).add(identifier)
+    return {stem: next(iter(ids)) for stem, ids in candidates.items() if len(ids) == 1}
+
+
+def normalized_source(value: object) -> Markup:
+    text = str(value)
+    identifier = normalized_source_index().get(text)
+    if identifier:
+        return Markup('<a href="{}">{}</a> <span class="muted">({})</span>').format(
+            reference_url(identifier), text, identifier
+        )
+    return Markup('{} <span class="muted">(normalized source unresolved)</span>').format(text)
 
 
 _SLUG_RE = re.compile(r"[^A-Za-z0-9._-]+")
@@ -121,6 +215,10 @@ def make_env(templates_dir: Path = TEMPLATES_DIR) -> Environment:
     env.globals["curie_to_url"] = curie_to_url
     env.globals["chebi_structure"] = chebi_structure
     env.filters["safe_mermaid"] = safe_mermaid
+    env.filters["identifier_link"] = identifier_link
+    env.filters["linked_text"] = linked_text
+    env.filters["structured"] = structured
+    env.filters["normalized_source"] = normalized_source
     return env
 
 
@@ -157,6 +255,13 @@ def build_signature(templates_dir: Path = TEMPLATES_DIR) -> str:
     for path in sorted(p for p in templates_dir.rglob("*") if p.is_file()):
         h.update(path.relative_to(templates_dir).as_posix().encode())
         h.update(path.read_bytes())
+    for path in (
+        REPO_ROOT / "data/culturemech_id_registry.tsv",
+        Path(__file__).parent / "data/community-record-links.json",
+    ):
+        if path.is_file():
+            h.update(path.read_bytes())
+    h.update(Path(__file__).with_name("record_links.py").read_bytes())
     h.update(Path(__file__).resolve().read_bytes())
     return h.hexdigest()[:12]
 
@@ -257,6 +362,9 @@ def write_index(
         count=sum(len(items) for _, items in groups),
         groups=groups,
         composition_graphs_available=COMPOSITION_GRAPHS_AVAILABLE,
+        growth_review_href=relative_href(
+            index_dir, browser_for_index(index_dir).parent.parent / "pages/media_growth_review.html"
+        ),
         browser_href=relative_href(index_dir, browser_for_index(index_dir)),
     )
     index_dir.mkdir(parents=True, exist_ok=True)
@@ -265,7 +373,14 @@ def write_index(
 
 def copy_assets(templates_dir: Path, index_dir: Path) -> None:
     """Copy renderer-owned static assets beside the generated index."""
-    for name in ("style.css", "mermaid-init.js", "record-theme.js"):
+    for name in (
+        "style.css",
+        "mermaid-init.js",
+        "record-theme.js",
+        "composition-frame.html",
+        "composition-frame.js",
+        "composition-frame.css",
+    ):
         source = templates_dir / name
         if source.is_file():
             (index_dir / name).write_bytes(source.read_bytes())

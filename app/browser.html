@@ -263,6 +263,9 @@
             font-size: 0.9rem;
         }
 
+        .facets > summary { cursor: pointer; font-weight: 700; padding: .5rem 0; }
+        .facet { max-height: 22rem; overflow: auto; padding: .25rem; }
+        .facet-scope { font-size: .85rem; margin: .5rem 0; }
         .clear-filters:hover {
             background: #d3ddcd;
         }
@@ -274,9 +277,8 @@
 
             .container { padding: 1rem; }
             .results, .facets { min-width: 0; overflow-wrap: anywhere; }
-            .facets {
-                order: 2;
-            }
+            .facets { order: 0; }
+            .facets:not([open]) > :not(summary) { display: none; }
         }
 
         /* ---- Dark theme (OS default; superseded by the toggle) ---- */
@@ -363,13 +365,13 @@
         </div>
 
         <div class="main-content">
-            <aside class="facets" id="facetsContainer">
+            <details class="facets" id="facetsContainer" open><summary>Recipe filters</summary><p class="facet-scope">Counts show totals in the complete catalog, before filtering.</p>
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                     <h2 style="font-size: 1.1rem;">Filters</h2>
                     <button class="clear-filters" onclick="clearAllFilters()">Clear All</button>
                 </div>
                 <div id="facetsList"></div>
-            </aside>
+            </details>
 
             <main class="results">
                 <div class="results-header">
@@ -385,6 +387,9 @@
     <script src="schema.js"></script>
     <script src="data.js"></script>
     <script>
+        const facetPanel = document.getElementById('facetsContainer');
+        if (matchMedia('(max-width: 768px)').matches) facetPanel.open = false;
+        function normalizeQuery(value) { return String(value).trim().toLowerCase().replace(/[_\s-]+/g, ' '); }
         let dataReady = false;
         let allRecipes = [];
         let filteredRecipes = [];
@@ -424,17 +429,34 @@
                 allRecipes = window.culturemechData;
                 filteredRecipes = [...allRecipes];
                 initializeFacets();
-                renderResults();
                 dataReady = true;
+                restoreBrowserState();
             } catch (_error) {
                 showLoadFailure();
             }
         }
         onDataReady();
+        // Store state on this history entry so cold Back and BFCache agree.
+        function restoreBrowserState() {
+            const saved = history.state?.culturemechFilters;
+            if (saved) {
+                document.getElementById('searchInput').value = saved.query || '';
+                document.querySelectorAll('#facetsList input').forEach(control => {
+                    control.checked = Array.isArray(saved.filters?.[control.dataset.facet]) && saved.filters[control.dataset.facet].includes(control.dataset.value);
+                });
+            }
+            searchQuery = normalizeQuery(document.getElementById('searchInput').value);
+            selectedFilters = {};
+            document.querySelectorAll('#facetsList input:checked').forEach(control => {
+                (selectedFilters[control.dataset.facet] ||= []).push(control.dataset.value);
+            });
+            applyFilters();
+        }
+        window.addEventListener('pageshow', restoreBrowserState);
 
         // Search functionality
         document.getElementById('searchInput').addEventListener('input', (e) => {
-            searchQuery = e.target.value.toLowerCase();
+            searchQuery = normalizeQuery(e.target.value);
             applyFilters();
         });
 
@@ -525,17 +547,17 @@
 
         function applyFilters() {
             if (!dataReady) return;
+            try { history.replaceState({...history.state, culturemechFilters: {query: document.getElementById('searchInput').value, filters: selectedFilters}}, ''); } catch (_error) { /* Results still work when history storage is restricted. */ }
             filteredRecipes = allRecipes.filter(recipe => {
                 // Text search
                 if (searchQuery) {
-                    const searchableText = window.searchSchema.searchableFields
+                    const searchableText = normalizeQuery(window.searchSchema.searchableFields
                         .map(field => {
                             const value = recipe[field];
                             if (Array.isArray(value)) return value.join(' ');
                             return String(value || '');
                         })
-                        .join(' ')
-                        .toLowerCase();
+                        .join(' '));
 
                     if (!searchableText.includes(searchQuery)) {
                         return false;
@@ -686,7 +708,7 @@
                     link.target = '_blank';
                     item.appendChild(link);
                 } else {
-                    item.appendChild(document.createTextNode(value));
+                    item.appendChild(document.createTextNode(value + (/^(KOMODO|komodo.medium):/.test(value) ? ' (historic source entry unavailable)' : '')));
                 }
             } else {
                 item.appendChild(document.createTextNode(value));
