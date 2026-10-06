@@ -132,7 +132,8 @@ arguments or `CMM_AUTOMATION_DATA_DIR`, `MICROBE_MEDIA_PARAM_DIR`, and
 - Grounding: `id-label-correspondence` and `match-kg-microbe`.
 - Research: `deep-research-medium` and `research-ingredient-roles`.
 - Visualization: `generate-ingredient-umap` and `render-media-role-graph`.
-- Reporting/backlog: `stats-report` and `next-tasks`; full open-issue queue
+- Reporting/backlog: `stats-report`, `list-ingredients` (corpus-wide
+  ingredient list), and `next-tasks`; full open-issue queue
   triage: `review-open-issues`.
 
 Run `uv run python scripts/validate_claude_skills.py` after changing a skill.

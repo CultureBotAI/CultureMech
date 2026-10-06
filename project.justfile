@@ -2751,6 +2751,7 @@ aggregate-mapped-ingredients output="output/mapped_ingredients.yaml" min_occurre
         --min-occurrences "{{min_occurrences}}" \
         --occurrences-output "output/ingredient_occurrences.tsv" \
         --errors-output "output/ingredient_aggregation_errors.tsv" \
+        --list-output "output/ingredients_list.tsv" \
         --verbose
     echo "✓ Mapped ingredients saved to {{output}}"
 
@@ -2767,25 +2768,28 @@ aggregate-unmapped-ingredients output="output/unmapped_ingredients.yaml" min_occ
         --min-occurrences "{{min_occurrences}}" \
         --occurrences-output "output/ingredient_occurrences.tsv" \
         --errors-output "output/ingredient_aggregation_errors.tsv" \
+        --list-output "output/ingredients_list.tsv" \
         --verbose
     echo "✓ Unmapped ingredients saved to {{output}}"
 
-# Scan once and generate the canonical occurrence table plus both compatibility views
+# Scan once and generate the canonical occurrence table, both compatibility views, and the per-ingredient list
 [group('Ingredients')]
-aggregate-all-ingredients mapped_output="output/mapped_ingredients.yaml" unmapped_output="output/unmapped_ingredients.yaml" occurrences_output="output/ingredient_occurrences.tsv" errors_output="output/ingredient_aggregation_errors.tsv" min_occurrences="1":
+aggregate-all-ingredients mapped_output="output/mapped_ingredients.yaml" unmapped_output="output/unmapped_ingredients.yaml" occurrences_output="output/ingredient_occurrences.tsv" errors_output="output/ingredient_aggregation_errors.tsv" min_occurrences="1" list_output="output/ingredients_list.tsv":
     #!/usr/bin/env bash
     set -euo pipefail
     mkdir -p -- \
         "$(dirname -- "{{mapped_output}}")" \
         "$(dirname -- "{{unmapped_output}}")" \
         "$(dirname -- "{{occurrences_output}}")" \
-        "$(dirname -- "{{errors_output}}")"
+        "$(dirname -- "{{errors_output}}")" \
+        "$(dirname -- "{{list_output}}")"
     uv run python scripts/aggregate_ingredients.py \
         --input-dir "{{normalized_yaml_dir}}" \
         --mapped-output "{{mapped_output}}" \
         --unmapped-output "{{unmapped_output}}" \
         --occurrences-output "{{occurrences_output}}" \
         --errors-output "{{errors_output}}" \
+        --list-output "{{list_output}}" \
         --min-occurrences "{{min_occurrences}}" \
         --verbose
     echo "✓ Ingredient aggregation complete!"
@@ -2793,6 +2797,7 @@ aggregate-all-ingredients mapped_output="output/mapped_ingredients.yaml" unmappe
     echo "  Mapped:      {{mapped_output}}"
     echo "  Unmapped:    {{unmapped_output}}"
     echo "  Errors:      {{errors_output}}"
+    echo "  List:        {{list_output}}"
 
 # =============================================================================
 # INGREDIENT UMAP VISUALIZATION

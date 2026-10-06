@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self'; img-src 'self' data: https:; font-src 'self'; object-src 'none'; base-uri 'none'">
 <title>{{ medium.name }} ({{ medium.id }}) — CultureMech</title>
 <link rel="stylesheet" href="{{ style_href }}">
 {% if composition_graph %}
 <script type="module" src="{{ mermaid_init_href }}"></script>
 {% endif %}
+<script src="{{ theme_href }}"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to record content</a>
 
-<nav class="breadcrumb">
+<nav class="breadcrumb" aria-label="Record navigation">
+  <a href="{{ browser_href }}">Browse media</a> &middot;
+  <a href="https://culturebotai.github.io/mechs/">All Mech projects</a> &middot;
   <a href="{{ index_href }}">CultureMech</a> &rsaquo;
   <span>{{ medium.id }}</span>
 </nav>
@@ -35,6 +40,7 @@
   {% endif %}
 </header>
 
+<main id="main-content">
 {% include "_partials/overview.html.j2" %}
 {% if composition_graph %}
 <section id="composition">
@@ -49,6 +55,7 @@
 {% if medium.discussions %}{% include "_partials/discussions.html.j2" %}{% endif %}
 {% include "_partials/provenance.html.j2" %}
 
+</main>
 <footer>
   <small class="muted">
     Generated from
@@ -56,5 +63,6 @@
   </small>
 </footer>
 
+<button class="theme-toggle" id="record-theme" type="button" aria-pressed="false">Dark mode</button>
 </body>
 </html>

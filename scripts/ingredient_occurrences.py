@@ -18,7 +18,7 @@ import json
 import os
 import stat
 import tempfile
-from collections import defaultdict
+from collections import Counter, defaultdict
 from collections.abc import Callable, Mapping, Sequence
 from dataclasses import dataclass
 from pathlib import Path
@@ -61,6 +61,19 @@ OCCURRENCE_FIELDS = (
     "ingredient_json",
 )
 ERROR_FIELDS = ("file", "layer", "category", "detail", "path", "message")
+INGREDIENT_LIST_FIELDS = (
+    "preferred_term",
+    "resolved_identifier",
+    "identifier_prefix",
+    "mapping_status",
+    "occurrence_count",
+    "distinct_recipe_count",
+    "label_variant_count",
+    "label_variants",
+    "resolution_sources",
+    "recipe_categories",
+)
+LIST_SEPARATOR = " | "
 
 
 @dataclass(frozen=True)
@@ -671,8 +684,13 @@ def write_occurrences_and_yaml(
     occurrences: Sequence[IngredientOccurrence],
     yaml_path: str | Path,
     value: Mapping[str, Any],
+    list_path: str | Path | None = None,
 ) -> None:
-    """Publish a compatibility wrapper's two outputs as one staged set."""
+    """Publish a compatibility wrapper's outputs as one staged set.
+
+    The ingredient list is derived from the same occurrences, so refreshing it
+    here keeps it consistent with the occurrence table (#512).
+    """
 
     _atomic_write_many(
         [
@@ -684,8 +702,24 @@ def write_occurrences_and_yaml(
                 Path(yaml_path),
                 lambda stream: _write_yaml_collection_stream(stream, value),
             ),
+            *(
+                [
+                    (
+                        Path(list_path),
+                        lambda stream: _write_ingredient_list_stream(stream, occurrences),
+                    )
+                ]
+                if list_path is not None
+                else []
+            ),
         ]
     )
+
+
+def default_list_output(occurrences_output: str | Path) -> Path:
+    """Place the ingredient list beside the occurrence table it is derived from."""
+
+    return Path(occurrences_output).parent / "ingredients_list.tsv"
 
 
 def ensure_distinct_output_paths(*paths: str | Path) -> None:
@@ -753,12 +787,38 @@ def _ontology_source(identifier: str) -> str:
     return "OTHER"
 
 
+_TRUSTED_MIM_SOURCES = frozenset(
+    {ResolutionSource.MIM_EXACT.value, ResolutionSource.MIM_NORMALIZED.value}
+)
+
+
+def _most_common(values: Sequence[str]) -> str:
+    """Return the most frequent non-empty value; ties break by code point."""
+
+    counts = Counter(value for value in values if value)
+    return min(counts, key=lambda value: (-counts[value], value)) if counts else ""
+
+
 def _canonical_term(rows: Sequence[IngredientOccurrence]) -> str:
-    mim_terms = sorted({row.mim_preferred_term for row in rows if row.mim_preferred_term})
-    if mim_terms:
-        return mim_terms[0]
-    source_terms = sorted({row.preferred_term for row in rows if row.preferred_term})
-    return source_terms[0] if source_terms else rows[0].resolved_identifier
+    """Name one resolved identity (#509, #529).
+
+    Only rows that MIM resolved directly contribute MIM terms: on fallback rows,
+    ``mim_preferred_term`` belongs to the label's (possibly ambiguous) MIM match,
+    not necessarily to the resolved identifier.  Among those, terms MIM marks
+    ``MAPPED`` outrank its ``REJECTED`` preferred terms, so an accepted hydrate
+    spelling is not outvoted by a rejected generic one (CHEBI:32142).  Within a
+    tier the most frequent term wins; ties break by code point.
+    """
+
+    trusted = [row for row in rows if row.resolution_source in _TRUSTED_MIM_SOURCES]
+    return (
+        _most_common(
+            [row.mim_preferred_term for row in trusted if row.mim_mapping_status == "MAPPED"]
+        )
+        or _most_common([row.mim_preferred_term for row in trusted])
+        or _most_common([row.preferred_term for row in rows])
+        or rows[0].resolved_identifier
+    )
 
 
 def _mapping_quality(rows: Sequence[IngredientOccurrence]) -> str:
@@ -917,7 +977,7 @@ def build_unmapped_output(
         )
         placeholder_id = (
             first.preferred_term
-            if first.preferred_term
+            if first.preferred_term.strip()
             else f"blank:{first.recipe_id}:{first.component_field}:{first.component_index}"
         )
         entries.append(
@@ -954,6 +1014,65 @@ def build_unmapped_output(
     }
 
 
+def build_ingredient_list(
+    occurrences: Sequence[IngredientOccurrence],
+) -> list[dict[str, Any]]:
+    """Build the complete one-row-per-ingredient list.
+
+    Groups use the same keys as the mapped and unmapped views, so the row count
+    equals ``total_mapped_count + total_unmapped_count`` when those views are
+    built with ``min_occurrences=1``.  No ``min_occurrences`` filter applies here.
+    """
+
+    groups: dict[tuple[str, ...], list[IngredientOccurrence]] = defaultdict(list)
+    for row in occurrences:
+        key = ("mapped", row.resolved_identifier) if row.is_resolved else _unmapped_group_key(row)
+        groups[key].append(row)
+
+    entries: list[tuple[tuple[Any, ...], dict[str, Any]]] = []
+    for key, rows in groups.items():
+        mapped = key[0] == "mapped"
+        first = rows[0]
+        if mapped:
+            term = _canonical_term(rows)
+            status = "MAPPED"
+        else:
+            term = (
+                f"blank:{first.recipe_id}:{first.component_field}:{first.component_index}"
+                if key[0] == "blank"
+                else first.preferred_term
+            )
+            status = _unmapped_status(rows)
+        labels = sorted({row.preferred_term for row in rows if row.preferred_term})
+        entry = {
+            "preferred_term": term,
+            "resolved_identifier": first.resolved_identifier if mapped else "",
+            "identifier_prefix": first.resolved_identifier.partition(":")[0] if mapped else "",
+            "mapping_status": status,
+            "occurrence_count": len(rows),
+            "distinct_recipe_count": len({row.recipe_id for row in rows}),
+            "label_variant_count": len(labels),
+            "label_variants": LIST_SEPARATOR.join(labels),
+            "resolution_sources": LIST_SEPARATOR.join(
+                sorted({row.resolution_source for row in rows})
+            ),
+            "recipe_categories": LIST_SEPARATOR.join(
+                sorted({row.recipe_category or "UNKNOWN" for row in rows})
+            ),
+        }
+        sort_key = (-entry["distinct_recipe_count"], -entry["occurrence_count"], term, key)
+        entries.append((sort_key, entry))
+    entries.sort(key=lambda item: item[0])
+    return [entry for _, entry in entries]
+
+
+def _write_ingredient_list_stream(
+    stream: TextIO,
+    occurrences: Sequence[IngredientOccurrence],
+) -> None:
+    _write_tsv(stream, INGREDIENT_LIST_FIELDS, build_ingredient_list(occurrences))
+
+
 def run_aggregation(
     input_dir: str | Path,
     occurrences_output: str | Path,
@@ -963,6 +1082,7 @@ def run_aggregation(
     min_occurrences: int = 1,
     verbose: bool = False,
     resolver: Resolver = resolve_ingredient,
+    list_output: str | Path | None = None,
 ) -> int:
     """Scan once and publish all deterministic views, or only the error report."""
 
@@ -973,6 +1093,7 @@ def run_aggregation(
         mapped_output,
         unmapped_output,
         errors_output,
+        *([list_output] if list_output is not None else []),
     )
     result = scan_ingredient_occurrences(input_dir, resolver=resolver)
     write_error_report(errors_output, result.errors)
@@ -1000,6 +1121,16 @@ def run_aggregation(
                 Path(unmapped_output),
                 lambda stream: _write_yaml_collection_stream(stream, unmapped),
             ),
+            *(
+                [
+                    (
+                        Path(list_output),
+                        lambda stream: _write_ingredient_list_stream(stream, result.occurrences),
+                    )
+                ]
+                if list_output is not None
+                else []
+            ),
         ]
     )
     if verbose:
@@ -1008,4 +1139,6 @@ def run_aggregation(
             f"{len(result.occurrences)} occurrences, "
             f"{mapped['total_instances']} mapped, {unmapped['total_instances']} unmapped"
         )
+        if list_output is not None:
+            print(f"Ingredient list: {list_output}")
     return 0

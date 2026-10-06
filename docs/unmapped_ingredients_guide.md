@@ -80,12 +80,25 @@ The command invokes `scripts/aggregate_ingredients.py` once and writes:
 - `output/mapped_ingredients.yaml` — identity-first mapped summary.
 - `output/unmapped_ingredients.yaml` — unresolved label summary.
 - `output/ingredient_aggregation_errors.tsv` — machine-readable input failures.
+- `output/ingredients_list.tsv` — one row per distinct ingredient (same grouping
+  as the two YAML views), with mapping status and occurrence/recipe counts.
 
 The standalone mapped and unmapped commands use the same shared scanner; they
-do not maintain separate traversal or grounding rules.
+do not maintain separate traversal or grounding rules. Each rewrites
+`ingredient_occurrences.tsv` and `ingredients_list.tsv` together. Without
+`--list-output`, the list is written beside `--occurrences-output`, so a custom
+occurrence path does not leave a list from a different scan at the default
+location.
+
+A mapped identity's `preferred_term` (and the list's) is the most frequent MIM
+preferred term among occurrences MIM resolved directly, preferring terms MIM
+marks `MAPPED` over its `REJECTED` preferred terms; ties break by code point. Fallback occurrences do not contribute MIM terms because their
+MIM match describes the label, not necessarily the resolved identifier. With no
+directly resolved occurrence, the most frequent source label is used.
 
 `--min-occurrences` filters only summary groups in the compatibility YAML
-views. It never removes rows from `ingredient_occurrences.tsv`.
+views. It never removes rows from `ingredient_occurrences.tsv` or
+`ingredients_list.tsv`.
 
 `output/` is a generated-data directory. Do not hand-edit or commit these
 artifacts.
