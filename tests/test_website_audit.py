@@ -88,7 +88,9 @@ def test_growth_report_has_typed_links_and_snapshot_identity(tmp_path, monkeypat
     spec.loader.exec_module(report)
     monkeypatch.setattr(report, "REPO_ROOT", tmp_path)
     monkeypatch.setattr(report.subprocess, "check_output", lambda *a, **k: "a" * 40)
-    monkeypatch.setattr(report.subprocess, "run", lambda *a, **k: type("Result", (), {"returncode": 1})())
+    monkeypatch.setattr(
+        report.subprocess, "run", lambda *a, **k: type("Result", (), {"returncode": 1})()
+    )
     source = tmp_path / "data/normalized_yaml/algae/2asw.yaml"
     source.parent.mkdir(parents=True)
     source.write_text("id: CultureMech:000038")

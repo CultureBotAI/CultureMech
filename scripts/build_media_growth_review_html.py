@@ -53,7 +53,8 @@ def build_report(rows: list[dict[str, str]], source_path: Path) -> str:
     ).strip()
     if subprocess.run(
         ["git", "diff", "--quiet", "HEAD", "--", "data/normalized_yaml"],
-        cwd=REPO_ROOT, check=False,
+        cwd=REPO_ROOT,
+        check=False,
     ).returncode:
         source_revision += " (normalized records modified locally)"
     if len({row.get("id") for row in rows}) != len(rows):
