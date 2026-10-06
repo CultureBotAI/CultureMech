@@ -1,0 +1,45 @@
+# Ingredient Concentration Review
+
+- Record: data/merge_yaml/merged/mineral_carbonate_medium_with_casein_peptone.yaml
+- ID: CultureMech:015839
+- Reviewed commit: ea4fad40114940af87daf1d56c9cad56beec8cca
+- Record SHA256: 26145e14ae0518feb2ce85ea13ccb0a0cbe0c7533e906d89b0b3aed49ad23631
+- Layer: merged
+- Record kind: MEDIUM
+- Mode: read-only; no recipe edits
+- Source-checked claim rows: 0/11
+- Verdict: source review incomplete
+- Validation: 0 closed-schema errors
+
+## Ownership
+
+Candidate authoritative input paths (ID/name linkage; not proof of source equivalence):
+- data/normalized_yaml/bacterial/JCM_J1359_MINERAL_CARBONATE_MEDIUM_WITH_CASEIN_PEPTONE.yaml
+
+## Concentration Claims
+
+Missing means absent from inspected YAML, not absent from the scientific literature. Plausibility flags are triage leads, not proven errors.
+
+| Field / ingredient | Existing amount | Evidence state / flags | Decision / source check | Proposed amount | Evidence and calculation |
+| --- | --- | --- | --- | --- | --- |
+| ingredients[0].concentration / Na2CO3 | {"value": "62.0", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[1].concentration / NaHCO3 | {"value": "46.0", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[2].concentration / NaCl | {"value": "18.0", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[3].concentration / K2HPO4 | {"value": "1.0", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[4].concentration / Yeast extract | {"value": "0.2", "unit": "G_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[5].concentration / 1 M MgSO4solution | {"value": "1.0", "unit": "ML_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[6].concentration / 1 M NH4Cl solution | {"value": "4.0", "unit": "ML_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[7].concentration / Trace element solution (see Medium No. 1079 ) | {"value": "1.0", "unit": "ML_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[8].concentration / Se/W solution* (see Medium No. 852 ) | {"value": "1.0", "unit": "ML_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[9].concentration / Trace vitamins* (see Medium No. 197 ) | {"value": "1.0", "unit": "ML_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+| ingredients[10].concentration / 10% Casein peptone solution | {"value": "10.0", "unit": "ML_PER_L"} | missing_attached_evidence;  | unsupported; not_performed | unknown | No scoped concentration evidence attached; source lookup pending |
+
+## Source Leads
+
+These references have not been fetched unless explicitly source-checked above.
+
+- https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1359
+
+## Follow-up
+
+Inspect the exact source formulation, quote amount/unit/basis, document any calculation, and resolve flags before proposing edits. Stock quantities must remain distinct from final-medium amounts. No findings were applied.

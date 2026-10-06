@@ -77,6 +77,12 @@ Do not replace unresolved material with a plausible ChEBI term.
 
 ### 3. Review every scientific and procedural claim
 
+For concentration review or additions, use
+[review-ingredient-concentrations](../review-ingredient-concentrations/SKILL.md).
+Every added/corrected concentration needs a verified DOI or persistent URL and
+an exact supporting snippet linked to that claim, with conversion arithmetic
+kept separate from the quotation.
+
 Check each ingredient, solution reference, amount/unit, pH, temperature,
 salinity, atmosphere, physical state, sterilization step, preparation step,
 storage condition, target-organism assertion, application, and growth-evidence

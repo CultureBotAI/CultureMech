@@ -87,6 +87,33 @@ def test_snapshots_are_never_freshness_checked(ada):
             assert row["artifact"] not in ada.CHECKABLE
 
 
+@pytest.mark.parametrize("basename", ["manifest.tsv", "source_checks.json", "summary.json"])
+def test_timestamped_concentration_reviews_are_historical_snapshots(ada, basename):
+    path = f"reports/ingredient_concentration_review/20261005T175229Z/{basename}"
+    assert ada.classify(path, "scripts/build_media_content_review_manifest.py") == (
+        "SNAPSHOT",
+        "timestamped concentration review",
+    )
+    assert path not in ada.CHECKABLE
+
+
+@pytest.mark.parametrize("directory", ["current", "20261005", "20261005T175229Z_extra"])
+def test_undated_concentration_outputs_are_not_assumed_to_be_snapshots(ada, directory):
+    path = f"reports/ingredient_concentration_review/{directory}/summary.json"
+    assert ada.classify(path, None) == ("UNKNOWN", "no writer found")
+
+
+def test_snapshot_manifest_is_not_attributed_by_generic_basename(ada, monkeypatch):
+    path = "reports/ingredient_concentration_review/20261005T175229Z/manifest.tsv"
+    monkeypatch.setattr(ada, "tracked_artifacts", lambda: [path])
+    monkeypatch.setattr(
+        ada, "find_writers", lambda _: ["scripts/build_media_content_review_manifest.py"]
+    )
+    row = ada.inventory()[0]
+    assert row["kind"] == "SNAPSHOT"
+    assert row["writes"] == row["mentioned_by"] == row["freshness_checked"] == ""
+
+
 def test_the_classification_covers_every_tracked_artifact(ada):
     rows = ada.inventory()
     assert len(rows) == len(ada.tracked_artifacts())

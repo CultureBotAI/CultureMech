@@ -1,0 +1,44 @@
+{
+  "tracked_records": 22230,
+  "manifest_rows": 22230,
+  "per_record_markdown_files": 22230,
+  "unique_exact_record_targets": 22230,
+  "duplicate_targets": 0,
+  "missing_targets": 0,
+  "stale_targets": 0,
+  "reports_with_exactly_one_record_line": 22230,
+  "corpus_files_changed_since_inventory": [],
+  "closed_schema_validation": "passed",
+  "kind_counts": {
+    "merged": {
+      "MEDIUM": 6320
+    },
+    "normalized": {
+      "MEDIUM": 10832,
+      "SOLUTION": 5078
+    }
+  },
+  "flagged_record_counts": {
+    "merged": {
+      "PLAUSIBILITY_INDICATOR_UNIT_SLIP": 1488,
+      "ANY_PLAUSIBILITY_FLAG": 2627,
+      "PLAUSIBILITY_WATER_AS_VOLUME": 518,
+      "VARIABLE_REQUIRES_SOURCE": 1591,
+      "PLAUSIBILITY_TRACE_SALT_AS_STOCK": 1701,
+      "RANGE_OR_NONNUMERIC_REQUIRES_SOURCE": 100,
+      "VARIANT_TEXT_REQUIRES_SOURCE_REVIEW": 24
+    },
+    "normalized": {
+      "VARIABLE_REQUIRES_SOURCE": 6725,
+      "PLAUSIBILITY_INDICATOR_UNIT_SLIP": 1910,
+      "ANY_PLAUSIBILITY_FLAG": 3375,
+      "VARIANT_TEXT_REQUIRES_SOURCE_REVIEW": 36,
+      "PLAUSIBILITY_TRACE_SALT_AS_STOCK": 2246,
+      "PLAUSIBILITY_WATER_AS_VOLUME": 515,
+      "RANGE_OR_NONNUMERIC_REQUIRES_SOURCE": 33,
+      "MISSING_CONCENTRATION": 97,
+      "UNASSERTED_CANDIDATES_NOT_PROMOTED": 66
+    }
+  },
+  "does_not_certify_scientific_correctness": true
+}

@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "command": "uv --no-config run --no-project --python /usr/local/bin/python3.11 --with linkml --with pyyaml python scripts/validate_strict.py data/normalized_yaml data/merge_yaml/merged --workers 4 --out reports/ingredient_concentration_review/20261005T175229Z/strict_validation.tsv",
+  "exit_code": 0,
+  "files_scanned": 22230,
+  "files_with_errors": 0,
+  "error_rows": 0,
+  "snapshot_sha256": "708af480ddc23d05c38791ee2d8455fc57b8e21b0d80754dcb341f4ae2435baa",
+  "schema_sha256": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a",
+  "report_sha256": "4ccba8b77ce80cf210105b5284b5953747729aba576ccdeecb81f7db84eb721b",
+  "scope": "closed-schema validation only; does not verify scientific source evidence",
+  "open_schema": "not separately run; closed-schema validation is the stronger structural check",
+  "reference_validator": "not run corpus-wide; manual source checks are separately recorded",
+  "term_validator": "not run; no identity edits requested",
+  "runtime": "isolated Python 3.11, not the project Python 3.13 environment"
+}
