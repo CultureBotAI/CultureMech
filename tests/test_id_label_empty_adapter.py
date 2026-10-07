@@ -15,7 +15,9 @@ sqlite files (CI-safe, no OAK / network).
 
 import importlib.util
 import sqlite3
+import sys
 from pathlib import Path
+from types import ModuleType
 
 _spec = importlib.util.spec_from_file_location(
     "validate_id_label_correspondence",
@@ -131,12 +133,19 @@ def test_populated_adapter_not_empty():
 def test_pool_get_returns_empty_sentinel(monkeypatch, tmp_path):
     p = tmp_path / "micro.db"
     p.touch()  # 0-byte stub
-    import oaklib
+    selectors = []
 
-    monkeypatch.setattr(oaklib, "get_adapter", lambda sel: _Adapter(exc=_NO_SUCH_TABLE, db=str(p)))
+    def get_adapter(selector):
+        selectors.append(selector)
+        return _Adapter(exc=_NO_SUCH_TABLE, db=str(p))
+
+    oaklib = ModuleType("oaklib")
+    monkeypatch.setattr(oaklib, "get_adapter", get_adapter, raising=False)
+    monkeypatch.setitem(sys.modules, "oaklib", oaklib)
     pool = mod.AdapterPool({"MICRO": "sqlite:obo:micro"})
     assert pool.get("MICRO") is mod.EMPTY_ADAPTER
     assert pool.get("micro") is mod.EMPTY_ADAPTER  # case-insensitive
+    assert selectors == ["sqlite:obo:micro"]
 
 
 def test_empty_adapter_not_an_error_verdict():
