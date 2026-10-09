@@ -28,6 +28,7 @@ concurrency:
 # Keep uv commands on the fleet runtime, including --no-project invocations.
 env:
   UV_PYTHON: "3.13"
+  RECORD_REVIEW_BASE: ${{ github.event.pull_request.base.sha || github.event.merge_group.base_sha || github.event.before || (github.event_name == 'workflow_dispatch' && 'HEAD') || 'INVALID-REVIEW-BASE' }}
 
 jobs:
   changed-python-quality:
@@ -76,6 +77,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.13"
@@ -83,6 +86,9 @@ jobs:
       - uses: extractions/setup-just@v2
       - name: Sync dependencies
         run: uv sync --frozen --extra dev
+      - name: Validate structured record reviews
+        run: just test-record-reviews
+
       - name: Run fast tier
         run: just test-fast
 

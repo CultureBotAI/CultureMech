@@ -23,7 +23,7 @@ or internally inconsistent, what is materially incomplete, and what bounded
 checks would resolve the remaining uncertainty.
 
 Reviewing is not curation. A review request authorizes reads, validation
-commands, one new Markdown report under the review-report path named below, and
+commands, one new structured YAML/Markdown review bundle described below, and
 a concise final summary; it does not authorize editing a record, regenerating
 products, spending provider credits, contacting anyone, or creating or mutating
 GitHub issues, pull requests, comments, labels, or settings.
@@ -40,21 +40,19 @@ cannot support a record-level verdict on their own.
 ## Scope
 
 <!-- canonical:begin scope -->
-Review only YAML records from this repository's curated record corpus. If a
-record is generated from a maintained table, overlay, or source transform,
-report the maintained upstream input that owns any future fix. Do not patch
-generated artifacts, generated pages, cache files, reports, or cross-repository
-outputs to make a reviewed record look correct, except for the new review
-report this skill writes.
+Review records from this repository's declared corpus, including an exact frozen
+snapshot row when the local profile uses that surface. Read
+`docs/record-review-profile.md` for the active native review entrypoints, local
+rubrics, validators, and maintained input ownership. A curation skill is not a
+prerequisite for reviewing a record.
 
-Use the write boundaries, generated-output warnings, and curation ownership
-rules from `.claude/skills/curate-yaml-record/SKILL.md` to decide where a future
-fix would belong. For this skill, report that path; do not make the change.
+For a generated record, identify the maintained table, overlay, source transform
+or seeder that owns a future fix. Do not patch records, generated artifacts,
+pages, caches, or cross-repository outputs. Only the new review bundle is written.
 
-Use `.claude/skills/curate-yaml-record/references/review-checklist.md` as the
-field-by-field rubric for this corpus. The checklist is deliberately local: the
-shared review shape is the same across the fleet, but claim types and
-completeness criteria are Mech-specific.
+Preserve local claim types, priority rules, scoring definitions, and scientific
+status/history gates. The shared shape standardizes observations; it does not
+replace the Mech's field-by-field rubric or authorize status promotion.
 <!-- canonical:end scope -->
 
 ## Evidence Rules
@@ -130,10 +128,9 @@ search, call the miss provisional.
 
 <!-- canonical:begin workflow -->
 1. Read the local guidance that names exact validators and write boundaries:
-   `CLAUDE.md`, `justfile`,
-   `.claude/skills/curate-yaml-record/SKILL.md`, and
-   `.claude/skills/curate-yaml-record/references/review-checklist.md`.
-2. Resolve one YAML file under the curated record globs named above. Confirm
+   `CLAUDE.md`, `justfile`, `docs/record-review-profile.md`, its local rubrics,
+   and `docs/record-reviews.md` for the shared output contract.
+2. Resolve one record under the declared corpus or native frozen-row selector. Confirm
    its class, identifier, label, source provenance, grounding status, evidence
    entries, discussion or quality flags, generated status, and curation history
    shape.
@@ -162,69 +159,36 @@ search, call the miss provisional.
 ## Output
 
 <!-- canonical:begin output -->
-After resolving exactly one target and completing a review, write exactly one
-timestamped Markdown report before the final response:
+Save one immutable structured review bundle for the resolved record
+using the CLAW-governed contract in `docs/record-reviews.md` and
+`schema/record_review.yaml`. Preserve the local rubric identified by
+`docs/record-review-profile.md`.
 
-- Name it `reports/yaml_record_review/<YYYYMMDDTHHMMSSZ>-<record-stem>.md`.
-  Use `date -u +%Y%m%dT%H%M%SZ` for the UTC timestamp. Preserve the target
-  file stem when it is already filename-safe; otherwise slugify the stem to
-  lower-case ASCII words joined with `-`.
-- Create `reports/yaml_record_review/` if it does not exist.
-- Do not overwrite or append to a prior review. If a filename already exists,
-  regenerate the timestamp.
-- Keep this section order so review reports are easy to diff across the fleet:
+- Capture actual UTC start/finish, reviewer identity and independence, exact
+  target IDs/locators, Git base, input hashes, and generated-input owners.
+- Retain every check and its real result, domain assessments, inspected evidence,
+  normalized findings, native rules/severity rationale, proposed actions with
+  acceptance checks, and explicit limitations. Do not equate a deterministic
+  check with scientific review.
+- Use `kind: record`; it identifies exactly one target.
+- Invoke `uv run python scripts/record_review.py inspect --targets <targets.yaml>`
+  before assessment, then `validate <completed-review.yaml>` and
+  `save --content <completed-review.yaml>` with the same script. Recheck changed
+  inputs instead of silently refreshing their hashes.
+- The saver writes
+  `reviews/structured/<YYYYMMDDTHHMMSSZ>-<slug>/review.yaml` plus `review.md`.
+  YAML is authoritative; do not hand-edit the rendered Markdown or overwrite an
+  earlier bundle. Run `uv run python scripts/record_review.py check` afterward.
+- If required checks are unavailable after the target is resolved, save an honest
+  partial/blocked observation. If the shared saver itself cannot run, report
+  that persistence is blocked; session-only prose is not a saved review.
+- Retain stable issue keys and exact `previous_occurrences` when reassessing a
+  finding. A later clean report does not close earlier unresolved findings.
+- Do not append curation/history events or promote native scientific status.
+  Those require a separately authorized curation change and native gates.
 
-```markdown
-# YAML Record Review: <record label>
-
-- Repository:
-- Record:
-- Started UTC:
-- Finished UTC:
-- Verdict:
-
-## Target
-## Validation
-## Identity and Grounding
-## Evidence
-## Completeness
-## Findings
-## Recommended Edits
-## Follow-up Checks
-## Additional Notes
-```
-
-Use tables, bullets, or prose inside those headings as the record demands. Put
-repo-specific diagnostics, edge cases, and low-signal observations under
-**Additional Notes** instead of inventing new top-level sections.
-
-The report must cover:
-
-- **Verdict**: pass, pass with minor issues, or needs curation.
-- **Target**: the record reviewed, its path, class, ID, label, and generated or
-  maintained status.
-- **Validation**: each command run and its result, including unavailable checks.
-- **Identity and Grounding**: whether the record's ID, label, category, source
-  identity, and ontology grounding agree.
-- **Evidence**: supported claims, unsupported or over-scoped claims, and any
-  citation or snippet mismatch.
-- **Completeness**: consequential gaps, empty optional slots correctly left
-  empty, and bounded searches that found nothing.
-- **Findings**: blocker, major, and minor findings, each with evidence and a
-  maintained owner path for any fix.
-- **Recommended Edits**: concrete future curation actions, ordered by severity,
-  with the maintained path that owns each fix.
-- **Follow-up Checks**: the narrowest validators or manual checks that would
-  prove each recommended edit.
-
-Use `None found` or `Not checked: <reason>` when a section has no findings or a
-check cannot run; do not delete required headings.
-
-Do not append a curation event, promote a review status, or write a history
-entry from this read-only review. Those belong to a later curation change.
-If the request needs disambiguation before one target is resolved, ask for it
-without creating a report.
-
-In the final response, link the report path and summarize only the verdict,
-finding counts by severity, and any skipped validators or unresolved blockers.
+Do not create a report for an unresolved ambiguous target. In the final response,
+link both saved files and summarize scope, verdict, findings by severity, and
+unavailable checks. Existing ad hoc Markdown is historical, not the output format
+for new reviews.
 <!-- canonical:end output -->

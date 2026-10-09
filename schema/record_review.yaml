@@ -1,0 +1,347 @@
+id: https://w3id.org/culturebotai/claw/record-review
+name: record_review
+title: Mech Record Review
+description: >-
+  An immutable, scoped review observation, not permission to curate or proof of
+  scientific truth. Shared findings support fleet triage while assessments retain
+  domain-specific questions, evidence, scores, uncertainty, and ownership.
+version: 1.0.0
+prefixes:
+  review: https://w3id.org/culturebotai/claw/record-review/
+  xsd: http://www.w3.org/2001/XMLSchema#
+default_prefix: review
+default_range: string
+types:
+  string:
+    base: str
+    uri: xsd:string
+  integer:
+    base: int
+    uri: xsd:integer
+  boolean:
+    base: Bool
+    uri: xsd:boolean
+  float:
+    base: float
+    uri: xsd:double
+  NonBlank:
+    typeof: string
+    pattern: '\S'
+  Token:
+    typeof: string
+    pattern: '^[A-Za-z0-9][A-Za-z0-9._-]{0,159}(?![\s\S])'
+  SHA256:
+    typeof: string
+    pattern: '^[0-9a-f]{64}(?![\s\S])'
+  GitRevision:
+    typeof: string
+    pattern: '^([0-9a-f]{40}|[0-9a-f]{64})(?![\s\S])'
+  UTCTimestamp:
+    typeof: string
+    pattern: '^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d{1,6})?Z$'
+  Repository:
+    typeof: string
+    pattern: '^[A-Za-z0-9][A-Za-z0-9.-]*/[A-Za-z0-9_.-]+(?![\s\S])'
+enums:
+  ReviewKind:
+    permissible_values: {record: {}, category: {}, batch: {}, repository: {}}
+  Completion:
+    permissible_values: {completed: {}, partial: {}, failed: {}}
+  Verdict:
+    permissible_values:
+      pass: {}
+      pass_with_limitations: {}
+      needs_curation: {}
+      seed_only: {}
+      blocked: {}
+      not_assessed: {}
+  Coverage:
+    permissible_values: {full: {}, sampled: {}, partial: {}}
+  SourceState:
+    permissible_values: {git_commit: {}, working_tree: {}}
+  TargetKind:
+    permissible_values: {maintained: {}, generated: {}, snapshot_row: {}, source: {}}
+  ReviewerKind:
+    permissible_values: {human: {}, agent: {}, deterministic: {}}
+  Independence:
+    permissible_values: {independent: {}, self_review: {}, not_applicable: {}, unknown: {}}
+  CheckStatus:
+    permissible_values: {passed: {}, failed: {}, skipped: {}, unavailable: {}, not_applicable: {}}
+  EvidenceKind:
+    permissible_values:
+      primary_source: {}
+      database: {}
+      authority: {}
+      record_content: {}
+      validation: {}
+      search: {}
+      prior_review: {}
+  Support:
+    permissible_values: {supports: {}, refutes: {}, partial: {}, context_only: {}, unknown: {}}
+  Area:
+    permissible_values:
+      identity: {}
+      grounding: {}
+      evidence: {}
+      completeness: {}
+      schema: {}
+      consistency: {}
+      provenance: {}
+      scope: {}
+      graph: {}
+      nomenclature: {}
+      quantity: {}
+      ownership: {}
+      representation: {}
+      other: {}
+  AssessmentOutcome:
+    permissible_values: {supported: {}, concern: {}, unknown: {}, not_applicable: {}}
+  Severity:
+    permissible_values: {blocker: {}, major: {}, minor: {}, informational: {}}
+  FindingStatus:
+    permissible_values: {open: {}, deferred: {}, resolved: {}, accepted_risk: {}, rejected: {}}
+  Certainty:
+    permissible_values: {confirmed: {}, provisional: {}}
+  BoundaryAction:
+    permissible_values: {lump: {}, split: {}, retain: {}, defer: {}}
+classes:
+  RecordReview:
+    tree_root: true
+    attributes:
+      schema_version: {range: string, required: true, pattern: '^1\.0\.0(?![\s\S])'}
+      review_id: {range: Token, required: true}
+      kind: {range: ReviewKind, required: true}
+      repository: {range: Repository, required: true}
+      title: {range: NonBlank, required: true}
+      started_at: {range: UTCTimestamp, required: true}
+      finished_at: {range: UTCTimestamp, required: true}
+      reviewer: {range: Reviewer, required: true, inlined: true}
+      skill: {range: NonBlank, required: true}
+      completion: {range: Completion, required: true}
+      verdict: {range: Verdict, required: true}
+      native_verdict: {range: NonBlank}
+      scientific_review: {range: boolean, required: true}
+      summary: {range: NonBlank, required: true}
+      source: {range: ReviewSource, required: true, inlined: true}
+      scope: {range: ReviewScope, required: true, inlined: true}
+      targets:
+        range: ReviewTarget
+        required: true
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 1
+      checks:
+        range: ReviewCheck
+        required: true
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 1
+      evidence:
+        range: ReviewEvidence
+        required: true
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 0
+      assessments:
+        range: ReviewAssessment
+        required: true
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 1
+      findings:
+        range: ReviewFinding
+        required: true
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 0
+      actions:
+        range: ReviewAction
+        required: true
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 0
+      boundary_decisions:
+        range: BoundaryDecision
+        multivalued: true
+        inlined_as_list: true
+      limitations: {range: NonBlank, required: true, multivalued: true, minimum_cardinality: 0}
+      notes: {range: NonBlank, multivalued: true}
+      related_reviews: {range: ReviewReference, multivalued: true, inlined_as_list: true}
+      links: {range: NonBlank, multivalued: true}
+      tags: {range: Token, multivalued: true}
+  Reviewer:
+    attributes:
+      identity: {range: NonBlank, required: true}
+      kind: {range: ReviewerKind, required: true}
+      model: {range: NonBlank}
+      independence: {range: Independence, required: true}
+      independence_basis: {range: NonBlank, required: true}
+  ReviewSource:
+    attributes:
+      git_revision: {range: GitRevision, required: true}
+      state: {range: SourceState, required: true}
+      snapshot_id: {range: NonBlank}
+      inputs:
+        range: InputFile
+        required: true
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 1
+  InputFile:
+    attributes:
+      path: {range: NonBlank, required: true}
+      sha256: {range: SHA256, required: true}
+      role: {range: NonBlank, required: true}
+  ReviewTarget:
+    attributes:
+      target_id: {range: NonBlank, required: true}
+      path: {range: NonBlank, required: true}
+      selector:
+        range: NonBlank
+        description: Exact row or claim locator within path; never part of a filesystem path.
+      label: {range: NonBlank, required: true}
+      record_class: {range: NonBlank}
+      kind: {range: TargetKind, required: true}
+      semantic_digest: {range: ContentDigest, inlined: true}
+      owner_paths: {range: OwnedPath, multivalued: true, inlined_as_list: true}
+      ownership_note: {range: NonBlank}
+  ContentDigest:
+    attributes:
+      algorithm: {range: NonBlank, required: true}
+      sha256: {range: SHA256, required: true}
+      description: {range: NonBlank, required: true}
+  OwnedPath:
+    attributes:
+      repository: {range: Repository, required: true}
+      path: {range: NonBlank, required: true}
+      role: {range: NonBlank, required: true}
+  ReviewScope:
+    attributes:
+      description: {range: NonBlank, required: true}
+      selection: {range: NonBlank, required: true}
+      coverage: {range: Coverage, required: true}
+      population_size: {range: integer, required: true, minimum_value: 1}
+      reviewed_target_ids: {range: NonBlank, required: true, multivalued: true, minimum_cardinality: 0}
+      sampling_method: {range: NonBlank}
+      sampling_seed: {range: NonBlank}
+      exclusions: {range: ScopeExclusion, multivalued: true, inlined_as_list: true}
+  ScopeExclusion:
+    attributes:
+      target: {range: NonBlank, required: true}
+      reason: {range: NonBlank, required: true}
+  ReviewCheck:
+    attributes:
+      check_id: {range: Token, required: true}
+      name: {range: NonBlank, required: true}
+      status: {range: CheckStatus, required: true}
+      required: {range: boolean, required: true}
+      summary: {range: NonBlank, required: true}
+      target_ids: {range: NonBlank, required: true, multivalued: true, minimum_cardinality: 1}
+      command:
+        range: NonBlank
+        description: Descriptive command actually run, never executed by a review reader.
+      exit_code: {range: integer}
+      expected_exit_code: {range: integer}
+      evidence_ids: {range: Token, multivalued: true}
+      scope_note: {range: NonBlank}
+  ReviewEvidence:
+    attributes:
+      evidence_id: {range: Token, required: true}
+      kind: {range: EvidenceKind, required: true}
+      reference: {range: NonBlank, required: true}
+      locator: {range: NonBlank}
+      accessed_at: {range: UTCTimestamp, required: true}
+      support: {range: Support, required: true}
+      summary: {range: NonBlank, required: true}
+      quote: {range: NonBlank}
+      snapshot_sha256: {range: SHA256}
+      search_scope:
+        range: NonBlank
+        description: Queries, sources, ignored-file inclusion, bounds, and access limits for a search.
+  ReviewAssessment:
+    attributes:
+      assessment_id: {range: Token, required: true}
+      area: {range: Area, required: true}
+      topic: {range: NonBlank, required: true}
+      outcome: {range: AssessmentOutcome, required: true}
+      summary: {range: NonBlank, required: true}
+      target_ids: {range: NonBlank, required: true, multivalued: true, minimum_cardinality: 1}
+      evidence_ids: {range: Token, required: true, multivalued: true, minimum_cardinality: 0}
+      metrics: {range: ReviewMetric, multivalued: true, inlined_as_list: true}
+      dimensions: {range: ReviewDimension, multivalued: true, inlined_as_list: true}
+      details: {range: NonBlank}
+  ReviewDimension:
+    description: Named, evidence-linked domain context without unconstrained extension keys.
+    attributes:
+      name: {range: Token, required: true}
+      value: {range: NonBlank, required: true}
+      definition: {range: NonBlank, required: true}
+      evidence_ids: {range: Token, required: true, multivalued: true, minimum_cardinality: 0}
+  ReviewMetric:
+    attributes:
+      name: {range: NonBlank, required: true}
+      value: {range: float, required: true}
+      unit: {range: NonBlank, required: true}
+      definition: {range: NonBlank, required: true}
+      denominator: {range: integer, minimum_value: 1}
+      minimum: {range: float}
+      maximum: {range: float}
+  ReviewFinding:
+    attributes:
+      finding_id: {range: Token, required: true}
+      issue_key:
+        range: Token
+        required: true
+        description: Repository-scoped stable issue identity, deliberately reused only for the same issue.
+      category: {range: Area, required: true}
+      severity: {range: Severity, required: true}
+      status: {range: FindingStatus, required: true}
+      certainty: {range: Certainty, required: true}
+      title: {range: NonBlank, required: true}
+      description: {range: NonBlank, required: true}
+      target_ids: {range: NonBlank, required: true, multivalued: true, minimum_cardinality: 1}
+      field_paths: {range: NonBlank, multivalued: true}
+      evidence_ids: {range: Token, required: true, multivalued: true, minimum_cardinality: 1}
+      rule_id: {range: NonBlank}
+      native_severity: {range: NonBlank}
+      normalization_reason: {range: NonBlank}
+      owner_paths: {range: OwnedPath, multivalued: true, inlined_as_list: true}
+      ownership_note: {range: NonBlank}
+      disposition_reason: {range: NonBlank}
+      previous_occurrences: {range: FindingReference, multivalued: true, inlined_as_list: true}
+      related_findings: {range: FindingReference, multivalued: true, inlined_as_list: true}
+      external_issues: {range: NonBlank, multivalued: true}
+      tags: {range: Token, multivalued: true}
+  ReviewAction:
+    attributes:
+      action_id: {range: Token, required: true}
+      description: {range: NonBlank, required: true}
+      finding_ids: {range: Token, required: true, multivalued: true, minimum_cardinality: 0}
+      target_ids: {range: NonBlank, required: true, multivalued: true, minimum_cardinality: 1}
+      owner_paths: {range: OwnedPath, multivalued: true, inlined_as_list: true}
+      ownership_note: {range: NonBlank}
+      acceptance_checks: {range: NonBlank, required: true, multivalued: true, minimum_cardinality: 1}
+      depends_on: {range: Token, multivalued: true}
+      blockers: {range: FindingReference, multivalued: true, inlined_as_list: true}
+      generator: {range: NonBlank}
+  BoundaryDecision:
+    attributes:
+      action: {range: BoundaryAction, required: true}
+      target_ids: {range: NonBlank, required: true, multivalued: true, minimum_cardinality: 1}
+      rationale: {range: NonBlank, required: true}
+      evidence_ids: {range: Token, required: true, multivalued: true, minimum_cardinality: 0}
+      proposed_groups: {range: ProposedGroup, multivalued: true, inlined_as_list: true}
+  ProposedGroup:
+    attributes:
+      label: {range: NonBlank, required: true}
+      target_ids: {range: NonBlank, required: true, multivalued: true, minimum_cardinality: 1}
+  ReviewReference:
+    attributes:
+      repository: {range: Repository, required: true}
+      review_id: {range: Token, required: true}
+      relationship: {range: NonBlank, required: true}
+  FindingReference:
+    attributes:
+      repository: {range: Repository, required: true}
+      review_id: {range: Token, required: true}
+      finding_id: {range: Token, required: true}
