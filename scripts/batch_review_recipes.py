@@ -2,7 +2,9 @@
 """
 Batch review recipes for quality assurance.
 
-Validates all recipes against P1-P4 validation rules and generates reports.
+Runs a subset of deterministic P1-P4 checks and emits diagnostic reports.
+Final assessed reviews use scripts/record_review.py; this scan is not a
+scientific review or a release approval.
 """
 
 import argparse
@@ -415,7 +417,7 @@ def generate_tsv_report(results: list[dict], output_path: Path):
                     "Recipe Name",
                     "Category",
                     "Medium Type",
-                    "Valid",
+                    "Valid (scan only)",
                     "P1 Critical",
                     "P2 High",
                     "P3 Medium",
@@ -503,6 +505,11 @@ def generate_markdown_report(results: list[dict], output_path: Path):
 
     with open(output_path, "w") as f:
         f.write("# CultureMech Recipe Validation Report\n\n")
+        f.write("Deterministic diagnostics only; scientific_review: false.\n\n")
+        f.write(
+            "This scan is not a completed scientific review or export approval. "
+            "Save assessed output with scripts/record_review.py.\n\n"
+        )
         f.write(f"**Date:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
 
         f.write("## Summary Statistics\n\n")
@@ -594,7 +601,10 @@ def generate_markdown_report(results: list[dict], output_path: Path):
                 f"1. **CRITICAL:** Fix {p1_total} P1 errors in {p1_recipes} recipes before KG export\n"
             )
         else:
-            f.write("1. ✅ No P1 critical errors - ready for KG export\n")
+            f.write(
+                "1. No P1 errors detected by this scan; native export gates and "
+                "scientific assessment remain required.\n"
+            )
 
         if p2_total > 0:
             f.write(f"2. **HIGH PRIORITY:** Review {p2_total} P2 issues in {p2_recipes} recipes\n")
@@ -638,6 +648,9 @@ def main():
         recipe_files = recipe_files[: args.limit]
 
     print(f"Found {len(recipe_files)} recipes to validate...")
+    if not recipe_files:
+        print("No targets selected; no review coverage established.", file=sys.stderr)
+        return 1
 
     # Validate recipes
     validator = RecipeValidator(mediaingredientmech_repo=args.mediaingredientmech_repo)
@@ -648,6 +661,8 @@ def main():
             print(f"  Validated {idx}/{len(recipe_files)}...")
 
         result = validator.validate_recipe(recipe_file)
+        result["scientific_review"] = False
+        result["review_status"] = "diagnostic_only"
 
         # Filter by priority if specified
         if args.priority:
@@ -688,9 +703,11 @@ def main():
     if p1_count > 0:
         print(f"⚠️  {p1_count} P1 CRITICAL ERRORS - Must fix before export!")
     else:
-        print("✅ No P1 errors - Ready for KG export")
+        print("No P1 errors in the displayed scan; this is not export approval.")
     print(f"{'='*60}")
+    print("Diagnostic output only; save assessed reviews with scripts/record_review.py.")
+    return 0 if all(result["valid"] for result in results) else 1
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

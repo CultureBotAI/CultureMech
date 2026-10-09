@@ -20,6 +20,8 @@ ROOT = Path(__file__).resolve().parents[1]
 # Source of truth is claw's vendored_artifacts.json (see #437 to derive it
 # rather than restate it here).
 VENDORED_FROM_CLAW = {
+    "scripts/record_review.py",
+    "tests/test_record_review_contract.py",
     "scripts/_edison_capture.py",
     "scripts/auto_merge_ready_prs.py",
     "scripts/verify_merge_integrity.py",
