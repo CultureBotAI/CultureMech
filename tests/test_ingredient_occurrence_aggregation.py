@@ -747,6 +747,17 @@ def test_list_output_must_be_distinct(occurrence_module, tmp_path):
 
 
 def test_ingredient_list_marks_ambiguous_and_whitespace_labels(occurrence_module, tmp_path):
+    # Resolve through a fixed index: which real labels are ambiguous changes with
+    # every MIM pin bump ("Sea Salt" stopped being one at 6643131b).
+    from culturemech.ingredients.mim_label_index import MIMLabelIndex
+
+    index = MIMLabelIndex.from_csv_text(
+        "label,match_type,identifier,preferred_term,ontology_id,mapping_status,ambiguity\n"
+        "Sea Salt,ontology_label,MICRO:0001647,Artificial Sea Salt,MICRO:0001647,MAPPED,"
+        "unresolved:no_chemistry\n"
+        "Sea Salt,ontology_label,NCIT:C75874,Sea salts,NCIT:C75874,MAPPED,"
+        "unresolved:no_chemistry\n"
+    )
     corpus = tmp_path / "corpus"
     _write(
         corpus,
@@ -762,7 +773,7 @@ def test_ingredient_list_marks_ambiguous_and_whitespace_labels(occurrence_module
             ],
         },
     )
-    result = occurrence_module.scan_ingredient_occurrences(corpus)
+    result = occurrence_module.scan_ingredient_occurrences(corpus, resolver=index.resolve)
     assert not result.errors
     rows = occurrence_module.build_ingredient_list(result.occurrences)
 
