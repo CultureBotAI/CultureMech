@@ -1,0 +1,2699 @@
+{
+  "terminal": true,
+  "records_edited": 0,
+  "review_complete": false,
+  "context_sha256": "ce3de6b8865cecf04fcc8c78cbd054ec0254a14eef3dd4cf087344b752d21260",
+  "normalized_sha256": "3e69263bb0c82e782c51c5a994945630fbf3a3b9f685248e16d7daf3367f05fc",
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_212_SYNTHROPHOMONAS_medium.yaml",
+      "id": "CultureMech:004403",
+      "before_sha256": "d47308a1fb57269eba5f2bc77cb711542efe88b8c09804eace4ff2f2709989de",
+      "prior_quantity_count": 51
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_2805.yaml",
+      "id": "CultureMech:004855",
+      "before_sha256": "e37fa78eb5c7e921d6d2e56bc5a49308da61d4cc3ecb9a60787f96ea3c628d2a",
+      "prior_quantity_count": 32
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_1038_Seven_vitamins_solution.yaml",
+      "id": "CultureMech:010579",
+      "before_sha256": "e3c68ea0717bd175d792848c0f7cfa2c3eb6e1f0834247d671be1cd77a211fd7",
+      "prior_quantity_count": 9
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_125_Vitamin_K1_solution.yaml",
+      "id": "CultureMech:010752",
+      "before_sha256": "a3c26a2fc67843af1a5b8bab920fb7d1f65d4666b48faac747946664e511e134",
+      "prior_quantity_count": 3
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_1728_Sugar_mix.yaml",
+      "id": "CultureMech:011178",
+      "before_sha256": "99e38fc9b6e73c1cc136a72b66c9867ff911602a3a8d20c7468301590d81d9a2",
+      "prior_quantity_count": 7
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_446_Solution_A.yaml",
+      "id": "CultureMech:013449",
+      "before_sha256": "cd652d539ba0b6fb0ea319b85ad2d73a06965a500c9940a71d0dc9511010fd36",
+      "prior_quantity_count": 10
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_447_Solution_B.yaml",
+      "id": "CultureMech:013458",
+      "before_sha256": "be20b98b4274b8c21790a525361e1585772654d959892163b76052a13ab99631",
+      "prior_quantity_count": 3
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_448_Solution_C.yaml",
+      "id": "CultureMech:013466",
+      "before_sha256": "d81fa0fe7baf2687699b8a5f39173208285b4a59e8b89fda390a6c930dc5d153",
+      "prior_quantity_count": 3
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_450_Solution_E.yaml",
+      "id": "CultureMech:013481",
+      "before_sha256": "95f87aa37e29918f509b876698156fe29515625938fade2f443b2773278f53b7",
+      "prior_quantity_count": 3
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_451_Solution_F.yaml",
+      "id": "CultureMech:013489",
+      "before_sha256": "040fbdcd85bb2ba898c491c649bffce92a083c1ab0e9f68c01da39c967066dc3",
+      "prior_quantity_count": 3
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_453_Solution_A.yaml",
+      "id": "CultureMech:013506",
+      "before_sha256": "5ebaabb557adaffbe5f364bc5d4e01416ff833454e63ded5bd7ad81f69f21512",
+      "prior_quantity_count": 10
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_454_Solution_B.yaml",
+      "id": "CultureMech:013517",
+      "before_sha256": "95c44d0ace17a8f39ca18a5b4fd1e34df20ef1c5b0b8aa62ae0eaaa134a394e6",
+      "prior_quantity_count": 3
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_455_Solution_C.yaml",
+      "id": "CultureMech:013527",
+      "before_sha256": "08796bb2c7d1b02d1a06dea81164fb394d2f02d106ff6229c790163e0c8da8d8",
+      "prior_quantity_count": 3
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_456_Solution_D.yaml",
+      "id": "CultureMech:013537",
+      "before_sha256": "99c828de9bf60a8ef8a1f04846bd9b50a7e4f1a165ffe335c604b0a925156afc",
+      "prior_quantity_count": 3
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_459_Solution_G.yaml",
+      "id": "CultureMech:013561",
+      "before_sha256": "73affbc0e5d793b2766365e2441384c7dcc09b8cdce09333e2854ca4f883ae30",
+      "prior_quantity_count": 3
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_460_Solution_H.yaml",
+      "id": "CultureMech:013570",
+      "before_sha256": "916742c60972a638f617c593d12da0cd7fee08d87ff89457fc9508c3bf91273c",
+      "prior_quantity_count": 3
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_461_Solution_I.yaml",
+      "id": "CultureMech:013580",
+      "before_sha256": "462473d812aecefa18b221faff094568ac39fcb4ef0debe10314c72ff47d3b0f",
+      "prior_quantity_count": 3
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_595_Trace_element_solution_SL-10.yaml",
+      "id": "CultureMech:014713",
+      "before_sha256": "c61bf656d9de24b59dddd69e523ef943421f7161eae4a00934846c248128e048",
+      "prior_quantity_count": 11
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_608_Volatile_fatty_acid_mixture.yaml",
+      "id": "CultureMech:014795",
+      "before_sha256": "801f8b158c2bfb41cb311dd649f9805e09df4ad1e1e4612b45af70c4b4a6dac7",
+      "prior_quantity_count": 7
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.yaml",
+      "id": "CultureMech:015156",
+      "before_sha256": "23c651e4836173def4c8c44c78e6b9a152437665c7110128ad7b283f254527b1",
+      "prior_quantity_count": 5
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/synthrophomonas_medium.yaml",
+      "id": "CultureMech:001310",
+      "before_sha256": "1758a2c7bd011497a494b2aa456899c14e173dd79906abedbbf06202dda407db",
+      "prior_quantity_count": 33
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_rectale_medium.yaml",
+      "id": "CultureMech:001311",
+      "before_sha256": "3f3632a84e21eaa02c993c12e565b1d2a02f1c69d5395efa4fbbd736480ce442",
+      "prior_quantity_count": 51
+    }
+  ],
+  "stock_comparisons": [
+    {
+      "stock": "S608",
+      "parent": "D212a",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 7,
+      "standalone_rows": 7
+    },
+    {
+      "stock": "S125",
+      "parent": "D212a",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 2,
+      "standalone_rows": 2
+    },
+    {
+      "stock": "S446",
+      "parent": "D212",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 12,
+      "standalone_rows": 12
+    },
+    {
+      "stock": "S447",
+      "parent": "D212",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 2,
+      "standalone_rows": 2
+    },
+    {
+      "stock": "S448",
+      "parent": "D212",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 2,
+      "standalone_rows": 2
+    },
+    {
+      "stock": "S450",
+      "parent": "D212",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 2,
+      "standalone_rows": 2
+    },
+    {
+      "stock": "S451",
+      "parent": "D212",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 2,
+      "standalone_rows": 2
+    },
+    {
+      "stock": "S453",
+      "parent": "D212a",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 14,
+      "standalone_rows": 14
+    },
+    {
+      "stock": "S454",
+      "parent": "D212a",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 2,
+      "standalone_rows": 2
+    },
+    {
+      "stock": "S455",
+      "parent": "D212a",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 2,
+      "standalone_rows": 2
+    },
+    {
+      "stock": "S456",
+      "parent": "D212a",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 2,
+      "standalone_rows": 2
+    },
+    {
+      "stock": "S459",
+      "parent": "D212a",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 2,
+      "standalone_rows": 2
+    },
+    {
+      "stock": "S460",
+      "parent": "D212a",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 2,
+      "standalone_rows": 2
+    },
+    {
+      "stock": "S461",
+      "parent": "D212a",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 2,
+      "standalone_rows": 2
+    },
+    {
+      "stock": "S595",
+      "parent": "D212",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 10,
+      "standalone_rows": 10
+    },
+    {
+      "stock": "S595",
+      "parent": "D212a",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 10,
+      "standalone_rows": 10
+    },
+    {
+      "stock": "S777",
+      "parent": "D212",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 4,
+      "standalone_rows": 4
+    },
+    {
+      "stock": "S777",
+      "parent": "D212a",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 4,
+      "standalone_rows": 4
+    },
+    {
+      "stock": "S1038",
+      "parent": "D212",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 8,
+      "standalone_rows": 8
+    },
+    {
+      "stock": "S1038",
+      "parent": "D212a",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 8,
+      "standalone_rows": 8
+    },
+    {
+      "stock": "S1728",
+      "parent": "D212a",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "parent_rows": 6,
+      "standalone_rows": 6
+    }
+  ],
+  "standalone_rows": [
+    {
+      "source": "S608",
+      "source_pointer": [
+        "data",
+        "recipe",
+        0
+      ],
+      "source_row": {
+        "recipe_order": 1,
+        "compound": "Acetic acid",
+        "compound_id": 380,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 548.5,
+        "unit": "ml",
+        "g_l": 573.182,
+        "mmol_l": 9545.09,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/608",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Acetic acid\",\n                \"compound_id\": 380,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 548.5,\n                \"unit\": \"ml\",\n                \"g_l\": 573.182,\n                \"mmol_l\": 9545.09,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S608",
+      "source_pointer": [
+        "data",
+        "recipe",
+        1
+      ],
+      "source_row": {
+        "recipe_order": 2,
+        "compound": "Propionic acid",
+        "compound_id": 381,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 193.5,
+        "unit": "ml",
+        "g_l": 192.145,
+        "mmol_l": 2593.76,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/608",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Propionic acid\",\n                \"compound_id\": 381,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 193.5,\n                \"unit\": \"ml\",\n                \"g_l\": 192.145,\n                \"mmol_l\": 2593.76,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S608",
+      "source_pointer": [
+        "data",
+        "recipe",
+        2
+      ],
+      "source_row": {
+        "recipe_order": 3,
+        "compound": "Butyric acid",
+        "compound_id": 314,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 129,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/608",
+      "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Butyric acid\",\n                \"compound_id\": 314,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 129,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S608",
+      "source_pointer": [
+        "data",
+        "recipe",
+        3
+      ],
+      "source_row": {
+        "recipe_order": 4,
+        "compound": "n-Valeric acid",
+        "compound_id": 288,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 32.25,
+        "unit": "ml",
+        "g_l": 30.2827,
+        "mmol_l": 296.512,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/608",
+      "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\": \"n-Valeric acid\",\n                \"compound_id\": 288,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\": \"ml\",\n                \"g_l\": 30.2827,\n                \"mmol_l\": 296.512,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S608",
+      "source_pointer": [
+        "data",
+        "recipe",
+        4
+      ],
+      "source_row": {
+        "recipe_order": 5,
+        "compound": "iso-Butyric acid",
+        "compound_id": 377,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 32.25,
+        "unit": "ml",
+        "g_l": 30.6375,
+        "mmol_l": 347.719,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/608",
+      "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\": \"iso-Butyric acid\",\n                \"compound_id\": 377,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\": \"ml\",\n                \"g_l\": 30.6375,\n                \"mmol_l\": 347.719,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S608",
+      "source_pointer": [
+        "data",
+        "recipe",
+        5
+      ],
+      "source_row": {
+        "recipe_order": 6,
+        "compound": "DL-2-Methylbutyric acid",
+        "compound_id": 223,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 32.25,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/608",
+      "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\": \"DL-2-Methylbutyric acid\",\n                \"compound_id\": 223,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S608",
+      "source_pointer": [
+        "data",
+        "recipe",
+        6
+      ],
+      "source_row": {
+        "recipe_order": 7,
+        "compound": "iso-Valeric acid",
+        "compound_id": 378,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 32.25,
+        "unit": "ml",
+        "g_l": 30.0247,
+        "mmol_l": 293.986,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/608",
+      "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\": \"iso-Valeric acid\",\n                \"compound_id\": 378,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\": \"ml\",\n                \"g_l\": 30.0247,\n                \"mmol_l\": 293.986,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S125",
+      "source_pointer": [
+        "data",
+        "recipe",
+        0
+      ],
+      "source_row": {
+        "recipe_order": 1,
+        "compound": "Vitamin K1",
+        "compound_id": 150,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 0.1,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/125",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Vitamin K1\",\n                \"compound_id\": 150,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S125",
+      "source_pointer": [
+        "data",
+        "recipe",
+        1
+      ],
+      "source_row": {
+        "recipe_order": 2,
+        "compound": "Ethanol",
+        "compound_id": 201,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": "95 %",
+        "amount": 20,
+        "unit": "ml",
+        "g_l": 950,
+        "mmol_l": 20620.8,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/125",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Ethanol\",\n                \"compound_id\": 201,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"95 %\",\n                \"amount\": 20,\n                \"unit\": \"ml\",\n                \"g_l\": 950,\n                \"mmol_l\": 20620.8,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S446",
+      "source_pointer": [
+        "data",
+        "recipe",
+        0
+      ],
+      "source_row": {
+        "recipe_order": 1,
+        "compound": "KH2PO4",
+        "compound_id": 11,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 0.5,
+        "unit": "g",
+        "g_l": 0.530786,
+        "mmol_l": 3.9004,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/446",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\": 11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\": \"g\",\n                \"g_l\": 0.530786,\n                \"mmol_l\": 3.9004,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S446",
+      "source_pointer": [
+        "data",
+        "recipe",
+        1
+      ],
+      "source_row": {
+        "recipe_order": 2,
+        "compound": "MgCl2 x 6 H2O",
+        "compound_id": 79,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 0.33,
+        "unit": "g",
+        "g_l": 0.350318,
+        "mmol_l": 1.72313,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/446",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"MgCl2 x 6 H2O\",\n                \"compound_id\": 79,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.33,\n                \"unit\": \"g\",\n                \"g_l\": 0.350318,\n                \"mmol_l\": 1.72313,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S446",
+      "source_pointer": [
+        "data",
+        "recipe",
+        2
+      ],
+      "source_row": {
+        "recipe_order": 3,
+        "compound": "NaCl",
+        "compound_id": 43,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 0.4,
+        "unit": "g",
+        "g_l": 0.424628,
+        "mmol_l": 7.26606,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/446",
+      "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\": \"g\",\n                \"g_l\": 0.424628,\n                \"mmol_l\": 7.26606,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S446",
+      "source_pointer": [
+        "data",
+        "recipe",
+        3
+      ],
+      "source_row": {
+        "recipe_order": 4,
+        "compound": "NH4Cl",
+        "compound_id": 42,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 0.4,
+        "unit": "g",
+        "g_l": 0.424628,
+        "mmol_l": 7.93846,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/446",
+      "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\": \"NH4Cl\",\n                \"compound_id\": 42,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\": \"g\",\n                \"g_l\": 0.424628,\n                \"mmol_l\": 7.93846,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S446",
+      "source_pointer": [
+        "data",
+        "recipe",
+        4
+      ],
+      "source_row": {
+        "recipe_order": 5,
+        "compound": "CaCl2 x 2 H2O",
+        "compound_id": 7,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 0.05,
+        "unit": "g",
+        "g_l": 0.0530786,
+        "mmol_l": 0.361042,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/446",
+      "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\": \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.05,\n                \"unit\": \"g\",\n                \"g_l\": 0.0530786,\n                \"mmol_l\": 0.361042,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S446",
+      "source_pointer": [
+        "data",
+        "recipe",
+        5
+      ],
+      "source_row": {
+        "recipe_order": 6,
+        "compound": null,
+        "compound_id": null,
+        "solution": "Trace element solution SL-10",
+        "solution_id": 595,
+        "condition": null,
+        "attribute": null,
+        "amount": 1,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/446",
+      "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Trace element solution SL-10\",\n                \"solution_id\": 595,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S446",
+      "source_pointer": [
+        "data",
+        "recipe",
+        6
+      ],
+      "source_row": {
+        "recipe_order": 7,
+        "compound": null,
+        "compound_id": null,
+        "solution": "Selenite-tungstate solution",
+        "solution_id": 777,
+        "condition": null,
+        "attribute": null,
+        "amount": 1,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/446",
+      "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Selenite-tungstate solution\",\n                \"solution_id\": 777,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S446",
+      "source_pointer": [
+        "data",
+        "recipe",
+        7
+      ],
+      "source_row": {
+        "recipe_order": 8,
+        "compound": null,
+        "compound_id": null,
+        "solution": "Clarified rumen fluid",
+        "solution_id": 2618,
+        "condition": "",
+        "attribute": null,
+        "amount": 50,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/446",
+      "snippet": "{\n                \"recipe_order\": 8,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Clarified rumen fluid\",\n                \"solution_id\": 2618,\n                \"condition\": \"\",\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S446",
+      "source_pointer": [
+        "data",
+        "recipe",
+        8
+      ],
+      "source_row": {
+        "recipe_order": 9,
+        "compound": "Trypticase peptone",
+        "compound_id": 124,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": "BD BBL",
+        "amount": 1,
+        "unit": "g",
+        "g_l": 1.06157,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/446",
+      "snippet": "{\n                \"recipe_order\": 9,\n                \"compound\": \"Trypticase peptone\",\n                \"compound_id\": 124,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"BD BBL\",\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": 1.06157,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S446",
+      "source_pointer": [
+        "data",
+        "recipe",
+        9
+      ],
+      "source_row": {
+        "recipe_order": 10,
+        "compound": "Na2SO4",
+        "compound_id": 110,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 2.8,
+        "unit": "g",
+        "g_l": 2.9724,
+        "mmol_l": 20.9265,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/446",
+      "snippet": "{\n                \"recipe_order\": 10,\n                \"compound\": \"Na2SO4\",\n                \"compound_id\": 110,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2.8,\n                \"unit\": \"g\",\n                \"g_l\": 2.9724,\n                \"mmol_l\": 20.9265,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S446",
+      "source_pointer": [
+        "data",
+        "recipe",
+        10
+      ],
+      "source_row": {
+        "recipe_order": 11,
+        "compound": "Sodium resazurin",
+        "compound_id": 1852,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": "0.1% w/v",
+        "amount": 0.5,
+        "unit": "ml",
+        "g_l": 0.000530786,
+        "mmol_l": 0.00211325,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/446",
+      "snippet": "{\n                \"recipe_order\": 11,\n                \"compound\": \"Sodium resazurin\",\n                \"compound_id\": 1852,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"0.1% w/v\",\n                \"amount\": 0.5,\n                \"unit\": \"ml\",\n                \"g_l\": 0.000530786,\n                \"mmol_l\": 0.00211325,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S446",
+      "source_pointer": [
+        "data",
+        "recipe",
+        11
+      ],
+      "source_row": {
+        "recipe_order": 12,
+        "compound": "Distilled water",
+        "compound_id": 4,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 890,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/446",
+      "snippet": "{\n                \"recipe_order\": 12,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 890,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S447",
+      "source_pointer": [
+        "data",
+        "recipe",
+        0
+      ],
+      "source_row": {
+        "recipe_order": 1,
+        "compound": "Na2CO3",
+        "compound_id": 32,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 1.5,
+        "unit": "g",
+        "g_l": 50,
+        "mmol_l": 471.752,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/447",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Na2CO3\",\n                \"compound_id\": 32,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.5,\n                \"unit\": \"g\",\n                \"g_l\": 50,\n                \"mmol_l\": 471.752,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S447",
+      "source_pointer": [
+        "data",
+        "recipe",
+        1
+      ],
+      "source_row": {
+        "recipe_order": 2,
+        "compound": "Distilled water",
+        "compound_id": 4,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 30,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/447",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 30,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S448",
+      "source_pointer": [
+        "data",
+        "recipe",
+        0
+      ],
+      "source_row": {
+        "recipe_order": 1,
+        "compound": "Na-butyrate",
+        "compound_id": 232,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 1.7,
+        "unit": "g",
+        "g_l": 170,
+        "mmol_l": 1544.23,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/448",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Na-butyrate\",\n                \"compound_id\": 232,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.7,\n                \"unit\": \"g\",\n                \"g_l\": 170,\n                \"mmol_l\": 1544.23,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S448",
+      "source_pointer": [
+        "data",
+        "recipe",
+        1
+      ],
+      "source_row": {
+        "recipe_order": 2,
+        "compound": "Distilled water",
+        "compound_id": 4,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 10,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/448",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S450",
+      "source_pointer": [
+        "data",
+        "recipe",
+        0
+      ],
+      "source_row": {
+        "recipe_order": 1,
+        "compound": "L-Cysteine HCl x H2O",
+        "compound_id": 770,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 0.3,
+        "unit": "g",
+        "g_l": 30,
+        "mmol_l": 170.808,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/450",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"L-Cysteine HCl x H2O\",\n                \"compound_id\": 770,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\": \"g\",\n                \"g_l\": 30,\n                \"mmol_l\": 170.808,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S450",
+      "source_pointer": [
+        "data",
+        "recipe",
+        1
+      ],
+      "source_row": {
+        "recipe_order": 2,
+        "compound": "Distilled water",
+        "compound_id": 4,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 10,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/450",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S451",
+      "source_pointer": [
+        "data",
+        "recipe",
+        0
+      ],
+      "source_row": {
+        "recipe_order": 1,
+        "compound": "Na2S x 9 H2O",
+        "compound_id": 54,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 0.3,
+        "unit": "g",
+        "g_l": 30,
+        "mmol_l": 124.905,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/451",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Na2S x 9 H2O\",\n                \"compound_id\": 54,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\": \"g\",\n                \"g_l\": 30,\n                \"mmol_l\": 124.905,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S451",
+      "source_pointer": [
+        "data",
+        "recipe",
+        1
+      ],
+      "source_row": {
+        "recipe_order": 2,
+        "compound": "Distilled water",
+        "compound_id": 4,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 10,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/451",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S453",
+      "source_pointer": [
+        "data",
+        "recipe",
+        0
+      ],
+      "source_row": {
+        "recipe_order": 1,
+        "compound": "KH2PO4",
+        "compound_id": 11,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 0.5,
+        "unit": "g",
+        "g_l": 0.545256,
+        "mmol_l": 4.00673,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/453",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\": 11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\": \"g\",\n                \"g_l\": 0.545256,\n                \"mmol_l\": 4.00673,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S453",
+      "source_pointer": [
+        "data",
+        "recipe",
+        1
+      ],
+      "source_row": {
+        "recipe_order": 2,
+        "compound": "MgCl2 x 6 H2O",
+        "compound_id": 79,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 0.33,
+        "unit": "g",
+        "g_l": 0.359869,
+        "mmol_l": 1.77011,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/453",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"MgCl2 x 6 H2O\",\n                \"compound_id\": 79,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.33,\n                \"unit\": \"g\",\n                \"g_l\": 0.359869,\n                \"mmol_l\": 1.77011,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S453",
+      "source_pointer": [
+        "data",
+        "recipe",
+        2
+      ],
+      "source_row": {
+        "recipe_order": 3,
+        "compound": "NaCl",
+        "compound_id": 43,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 0.4,
+        "unit": "g",
+        "g_l": 0.436205,
+        "mmol_l": 7.46415,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/453",
+      "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\": \"g\",\n                \"g_l\": 0.436205,\n                \"mmol_l\": 7.46415,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S453",
+      "source_pointer": [
+        "data",
+        "recipe",
+        3
+      ],
+      "source_row": {
+        "recipe_order": 4,
+        "compound": "NH4Cl",
+        "compound_id": 42,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 0.4,
+        "unit": "g",
+        "g_l": 0.436205,
+        "mmol_l": 8.15489,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/453",
+      "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\": \"NH4Cl\",\n                \"compound_id\": 42,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\": \"g\",\n                \"g_l\": 0.436205,\n                \"mmol_l\": 8.15489,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S453",
+      "source_pointer": [
+        "data",
+        "recipe",
+        4
+      ],
+      "source_row": {
+        "recipe_order": 5,
+        "compound": "CaCl2 x 2 H2O",
+        "compound_id": 7,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 0.05,
+        "unit": "g",
+        "g_l": 0.0545256,
+        "mmol_l": 0.370885,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/453",
+      "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\": \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.05,\n                \"unit\": \"g\",\n                \"g_l\": 0.0545256,\n                \"mmol_l\": 0.370885,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S453",
+      "source_pointer": [
+        "data",
+        "recipe",
+        5
+      ],
+      "source_row": {
+        "recipe_order": 6,
+        "compound": null,
+        "compound_id": null,
+        "solution": "Trace element solution SL-10",
+        "solution_id": 595,
+        "condition": null,
+        "attribute": null,
+        "amount": 1,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/453",
+      "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Trace element solution SL-10\",\n                \"solution_id\": 595,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S453",
+      "source_pointer": [
+        "data",
+        "recipe",
+        6
+      ],
+      "source_row": {
+        "recipe_order": 7,
+        "compound": null,
+        "compound_id": null,
+        "solution": "Selenite-tungstate solution",
+        "solution_id": 777,
+        "condition": null,
+        "attribute": null,
+        "amount": 1,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/453",
+      "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Selenite-tungstate solution\",\n                \"solution_id\": 777,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S453",
+      "source_pointer": [
+        "data",
+        "recipe",
+        7
+      ],
+      "source_row": {
+        "recipe_order": 8,
+        "compound": null,
+        "compound_id": null,
+        "solution": "Clarified rumen fluid",
+        "solution_id": 2618,
+        "condition": "",
+        "attribute": null,
+        "amount": 50,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/453",
+      "snippet": "{\n                \"recipe_order\": 8,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Clarified rumen fluid\",\n                \"solution_id\": 2618,\n                \"condition\": \"\",\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S453",
+      "source_pointer": [
+        "data",
+        "recipe",
+        8
+      ],
+      "source_row": {
+        "recipe_order": 9,
+        "compound": "Trypticase peptone",
+        "compound_id": 124,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": "BD BBL",
+        "amount": 1,
+        "unit": "g",
+        "g_l": 1.09051,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/453",
+      "snippet": "{\n                \"recipe_order\": 9,\n                \"compound\": \"Trypticase peptone\",\n                \"compound_id\": 124,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"BD BBL\",\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": 1.09051,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S453",
+      "source_pointer": [
+        "data",
+        "recipe",
+        9
+      ],
+      "source_row": {
+        "recipe_order": 10,
+        "compound": "Na2SO4",
+        "compound_id": 110,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 2.8,
+        "unit": "g",
+        "g_l": 3.05344,
+        "mmol_l": 21.497,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/453",
+      "snippet": "{\n                \"recipe_order\": 10,\n                \"compound\": \"Na2SO4\",\n                \"compound_id\": 110,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2.8,\n                \"unit\": \"g\",\n                \"g_l\": 3.05344,\n                \"mmol_l\": 21.497,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S453",
+      "source_pointer": [
+        "data",
+        "recipe",
+        10
+      ],
+      "source_row": {
+        "recipe_order": 11,
+        "compound": null,
+        "compound_id": null,
+        "solution": "Vitamin K1 solution",
+        "solution_id": 125,
+        "condition": null,
+        "attribute": null,
+        "amount": 1,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/453",
+      "snippet": "{\n                \"recipe_order\": 11,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Vitamin K1 solution\",\n                \"solution_id\": 125,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S453",
+      "source_pointer": [
+        "data",
+        "recipe",
+        11
+      ],
+      "source_row": {
+        "recipe_order": 12,
+        "compound": null,
+        "compound_id": null,
+        "solution": "Volatile fatty acid mixture",
+        "solution_id": 608,
+        "condition": null,
+        "attribute": null,
+        "amount": 3.1,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/453",
+      "snippet": "{\n                \"recipe_order\": 12,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Volatile fatty acid mixture\",\n                \"solution_id\": 608,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 3.1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S453",
+      "source_pointer": [
+        "data",
+        "recipe",
+        12
+      ],
+      "source_row": {
+        "recipe_order": 13,
+        "compound": "Sodium resazurin",
+        "compound_id": 1852,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": "0.1% w/v",
+        "amount": 0.5,
+        "unit": "ml",
+        "g_l": 0.000545256,
+        "mmol_l": 0.00217087,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/453",
+      "snippet": "{\n                \"recipe_order\": 13,\n                \"compound\": \"Sodium resazurin\",\n                \"compound_id\": 1852,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"0.1% w/v\",\n                \"amount\": 0.5,\n                \"unit\": \"ml\",\n                \"g_l\": 0.000545256,\n                \"mmol_l\": 0.00217087,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S453",
+      "source_pointer": [
+        "data",
+        "recipe",
+        13
+      ],
+      "source_row": {
+        "recipe_order": 14,
+        "compound": "Distilled water",
+        "compound_id": 4,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 860,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/453",
+      "snippet": "{\n                \"recipe_order\": 14,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 860,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S454",
+      "source_pointer": [
+        "data",
+        "recipe",
+        0
+      ],
+      "source_row": {
+        "recipe_order": 1,
+        "compound": "Na2CO3",
+        "compound_id": 32,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 1.5,
+        "unit": "g",
+        "g_l": 50,
+        "mmol_l": 471.752,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/454",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Na2CO3\",\n                \"compound_id\": 32,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.5,\n                \"unit\": \"g\",\n                \"g_l\": 50,\n                \"mmol_l\": 471.752,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S454",
+      "source_pointer": [
+        "data",
+        "recipe",
+        1
+      ],
+      "source_row": {
+        "recipe_order": 2,
+        "compound": "Distilled water",
+        "compound_id": 4,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 30,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/454",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 30,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S455",
+      "source_pointer": [
+        "data",
+        "recipe",
+        0
+      ],
+      "source_row": {
+        "recipe_order": 1,
+        "compound": "Starch",
+        "compound_id": 199,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": "soluble",
+        "amount": 0.4,
+        "unit": "g",
+        "g_l": 100,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/455",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Starch\",\n                \"compound_id\": 199,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"soluble\",\n                \"amount\": 0.4,\n                \"unit\": \"g\",\n                \"g_l\": 100,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S455",
+      "source_pointer": [
+        "data",
+        "recipe",
+        1
+      ],
+      "source_row": {
+        "recipe_order": 2,
+        "compound": "Distilled water",
+        "compound_id": 4,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 4,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/455",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 4,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S456",
+      "source_pointer": [
+        "data",
+        "recipe",
+        0
+      ],
+      "source_row": {
+        "recipe_order": 1,
+        "compound": "D-Glucose",
+        "compound_id": 211,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 0.8,
+        "unit": "g",
+        "g_l": 200,
+        "mmol_l": 1110.12,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/456",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"D-Glucose\",\n                \"compound_id\": 211,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.8,\n                \"unit\": \"g\",\n                \"g_l\": 200,\n                \"mmol_l\": 1110.12,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S456",
+      "source_pointer": [
+        "data",
+        "recipe",
+        1
+      ],
+      "source_row": {
+        "recipe_order": 2,
+        "compound": "Distilled water",
+        "compound_id": 4,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 4,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/456",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 4,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S459",
+      "source_pointer": [
+        "data",
+        "recipe",
+        0
+      ],
+      "source_row": {
+        "recipe_order": 1,
+        "compound": "Na-pyruvate",
+        "compound_id": 113,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 0.5,
+        "unit": "g",
+        "g_l": 250,
+        "mmol_l": 2271.82,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/459",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Na-pyruvate\",\n                \"compound_id\": 113,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\": \"g\",\n                \"g_l\": 250,\n                \"mmol_l\": 2271.82,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S459",
+      "source_pointer": [
+        "data",
+        "recipe",
+        1
+      ],
+      "source_row": {
+        "recipe_order": 2,
+        "compound": "Distilled water",
+        "compound_id": 4,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 2,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/459",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S460",
+      "source_pointer": [
+        "data",
+        "recipe",
+        0
+      ],
+      "source_row": {
+        "recipe_order": 1,
+        "compound": "L-Cysteine HCl x H2O",
+        "compound_id": 770,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 0.3,
+        "unit": "g",
+        "g_l": 30,
+        "mmol_l": 170.808,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/460",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"L-Cysteine HCl x H2O\",\n                \"compound_id\": 770,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\": \"g\",\n                \"g_l\": 30,\n                \"mmol_l\": 170.808,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S460",
+      "source_pointer": [
+        "data",
+        "recipe",
+        1
+      ],
+      "source_row": {
+        "recipe_order": 2,
+        "compound": "Distilled water",
+        "compound_id": 4,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 10,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/460",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S461",
+      "source_pointer": [
+        "data",
+        "recipe",
+        0
+      ],
+      "source_row": {
+        "recipe_order": 1,
+        "compound": "DL-Dithiothreitol",
+        "compound_id": 151,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": "DTT",
+        "amount": 0.4,
+        "unit": "g",
+        "g_l": 40,
+        "mmol_l": 259.235,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/461",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"DL-Dithiothreitol\",\n                \"compound_id\": 151,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"DTT\",\n                \"amount\": 0.4,\n                \"unit\": \"g\",\n                \"g_l\": 40,\n                \"mmol_l\": 259.235,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S461",
+      "source_pointer": [
+        "data",
+        "recipe",
+        1
+      ],
+      "source_row": {
+        "recipe_order": 2,
+        "compound": "Distilled water",
+        "compound_id": 4,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 10,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/461",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S595",
+      "source_pointer": [
+        "data",
+        "recipe",
+        0
+      ],
+      "source_row": {
+        "recipe_order": 1,
+        "compound": "HCl",
+        "compound_id": 68,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": "25%",
+        "amount": 10,
+        "unit": "ml",
+        "g_l": 2.5,
+        "mmol_l": 68.5683,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/595",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"HCl\",\n                \"compound_id\": 68,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"25%\",\n                \"amount\": 10,\n                \"unit\": \"ml\",\n                \"g_l\": 2.5,\n                \"mmol_l\": 68.5683,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S595",
+      "source_pointer": [
+        "data",
+        "recipe",
+        1
+      ],
+      "source_row": {
+        "recipe_order": 2,
+        "compound": "FeCl2 x 4 H2O",
+        "compound_id": 260,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 1.5,
+        "unit": "g",
+        "g_l": 1.5,
+        "mmol_l": 7.54482,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/595",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"FeCl2 x 4 H2O\",\n                \"compound_id\": 260,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.5,\n                \"unit\": \"g\",\n                \"g_l\": 1.5,\n                \"mmol_l\": 7.54482,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S595",
+      "source_pointer": [
+        "data",
+        "recipe",
+        2
+      ],
+      "source_row": {
+        "recipe_order": 3,
+        "compound": "ZnCl2",
+        "compound_id": 64,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 70,
+        "unit": "mg",
+        "g_l": 0.07,
+        "mmol_l": 0.513573,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/595",
+      "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"ZnCl2\",\n                \"compound_id\": 64,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 70,\n                \"unit\": \"mg\",\n                \"g_l\": 0.07,\n                \"mmol_l\": 0.513573,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S595",
+      "source_pointer": [
+        "data",
+        "recipe",
+        3
+      ],
+      "source_row": {
+        "recipe_order": 4,
+        "compound": "MnCl2 x 4 H2O",
+        "compound_id": 36,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 100,
+        "unit": "mg",
+        "g_l": 0.1,
+        "mmol_l": 0.505293,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/595",
+      "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\": \"MnCl2 x 4 H2O\",\n                \"compound_id\": 36,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\": \"mg\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.505293,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S595",
+      "source_pointer": [
+        "data",
+        "recipe",
+        4
+      ],
+      "source_row": {
+        "recipe_order": 5,
+        "compound": "H3BO3",
+        "compound_id": 37,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 6,
+        "unit": "mg",
+        "g_l": 0.006,
+        "mmol_l": 0.0970246,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/595",
+      "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\": \"H3BO3\",\n                \"compound_id\": 37,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 6,\n                \"unit\": \"mg\",\n                \"g_l\": 0.006,\n                \"mmol_l\": 0.0970246,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S595",
+      "source_pointer": [
+        "data",
+        "recipe",
+        5
+      ],
+      "source_row": {
+        "recipe_order": 6,
+        "compound": "CoCl2 x 6 H2O",
+        "compound_id": 38,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 190,
+        "unit": "mg",
+        "g_l": 0.19,
+        "mmol_l": 1.46335,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/595",
+      "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\": \"CoCl2 x 6 H2O\",\n                \"compound_id\": 38,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 190,\n                \"unit\": \"mg\",\n                \"g_l\": 0.19,\n                \"mmol_l\": 1.46335,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S595",
+      "source_pointer": [
+        "data",
+        "recipe",
+        6
+      ],
+      "source_row": {
+        "recipe_order": 7,
+        "compound": "CuCl2 x 2 H2O",
+        "compound_id": 39,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 2,
+        "unit": "mg",
+        "g_l": 0.002,
+        "mmol_l": 0.0117314,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/595",
+      "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\": \"CuCl2 x 2 H2O\",\n                \"compound_id\": 39,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\": \"mg\",\n                \"g_l\": 0.002,\n                \"mmol_l\": 0.0117314,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S595",
+      "source_pointer": [
+        "data",
+        "recipe",
+        7
+      ],
+      "source_row": {
+        "recipe_order": 8,
+        "compound": "NiCl2 x 6 H2O",
+        "compound_id": 40,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 24,
+        "unit": "mg",
+        "g_l": 0.024,
+        "mmol_l": 0.185187,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/595",
+      "snippet": "{\n                \"recipe_order\": 8,\n                \"compound\": \"NiCl2 x 6 H2O\",\n                \"compound_id\": 40,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 24,\n                \"unit\": \"mg\",\n                \"g_l\": 0.024,\n                \"mmol_l\": 0.185187,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S595",
+      "source_pointer": [
+        "data",
+        "recipe",
+        8
+      ],
+      "source_row": {
+        "recipe_order": 9,
+        "compound": "Na2MoO4 x 2 H2O",
+        "compound_id": 9,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 36,
+        "unit": "mg",
+        "g_l": 0.036,
+        "mmol_l": 0.148791,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/595",
+      "snippet": "{\n                \"recipe_order\": 9,\n                \"compound\": \"Na2MoO4 x 2 H2O\",\n                \"compound_id\": 9,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 36,\n                \"unit\": \"mg\",\n                \"g_l\": 0.036,\n                \"mmol_l\": 0.148791,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S595",
+      "source_pointer": [
+        "data",
+        "recipe",
+        9
+      ],
+      "source_row": {
+        "recipe_order": 10,
+        "compound": "Distilled water",
+        "compound_id": 4,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 990,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/595",
+      "snippet": "{\n                \"recipe_order\": 10,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 990,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S777",
+      "source_pointer": [
+        "data",
+        "recipe",
+        0
+      ],
+      "source_row": {
+        "recipe_order": 1,
+        "compound": "NaOH",
+        "compound_id": 256,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 0.5,
+        "unit": "g",
+        "g_l": 0.5,
+        "mmol_l": 12.5009,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/777",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"NaOH\",\n                \"compound_id\": 256,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\": \"g\",\n                \"g_l\": 0.5,\n                \"mmol_l\": 12.5009,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S777",
+      "source_pointer": [
+        "data",
+        "recipe",
+        1
+      ],
+      "source_row": {
+        "recipe_order": 2,
+        "compound": "Na2SeO3 x 5 H2O",
+        "compound_id": 107,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 3,
+        "unit": "mg",
+        "g_l": 0.003,
+        "mmol_l": 0.0114062,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/777",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Na2SeO3 x 5 H2O\",\n                \"compound_id\": 107,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\": \"mg\",\n                \"g_l\": 0.003,\n                \"mmol_l\": 0.0114062,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S777",
+      "source_pointer": [
+        "data",
+        "recipe",
+        2
+      ],
+      "source_row": {
+        "recipe_order": 3,
+        "compound": "Na2WO4 x 2 H2O",
+        "compound_id": 249,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 4,
+        "unit": "mg",
+        "g_l": 0.004,
+        "mmol_l": 0.0121267,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/777",
+      "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Na2WO4 x 2 H2O\",\n                \"compound_id\": 249,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 4,\n                \"unit\": \"mg\",\n                \"g_l\": 0.004,\n                \"mmol_l\": 0.0121267,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S777",
+      "source_pointer": [
+        "data",
+        "recipe",
+        3
+      ],
+      "source_row": {
+        "recipe_order": 4,
+        "compound": "Distilled water",
+        "compound_id": 4,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 1000,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/777",
+      "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S1038",
+      "source_pointer": [
+        "data",
+        "recipe",
+        0
+      ],
+      "source_row": {
+        "recipe_order": 1,
+        "compound": "Vitamin B12",
+        "compound_id": 18,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 100,
+        "unit": "mg",
+        "g_l": 0.1,
+        "mmol_l": 0.073779,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/1038",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Vitamin B12\",\n                \"compound_id\": 18,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\": \"mg\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.073779,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S1038",
+      "source_pointer": [
+        "data",
+        "recipe",
+        1
+      ],
+      "source_row": {
+        "recipe_order": 2,
+        "compound": "p-Aminobenzoic acid",
+        "compound_id": 47,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 80,
+        "unit": "mg",
+        "g_l": 0.08,
+        "mmol_l": 0.583345,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/1038",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"p-Aminobenzoic acid\",\n                \"compound_id\": 47,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 80,\n                \"unit\": \"mg\",\n                \"g_l\": 0.08,\n                \"mmol_l\": 0.583345,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S1038",
+      "source_pointer": [
+        "data",
+        "recipe",
+        2
+      ],
+      "source_row": {
+        "recipe_order": 3,
+        "compound": "D-(+)-biotin",
+        "compound_id": 1359,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 20,
+        "unit": "mg",
+        "g_l": 0.02,
+        "mmol_l": 0.0818632,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/1038",
+      "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"D-(+)-biotin\",\n                \"compound_id\": 1359,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 20,\n                \"unit\": \"mg\",\n                \"g_l\": 0.02,\n                \"mmol_l\": 0.0818632,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S1038",
+      "source_pointer": [
+        "data",
+        "recipe",
+        3
+      ],
+      "source_row": {
+        "recipe_order": 4,
+        "compound": "Nicotinic acid",
+        "compound_id": 139,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 200,
+        "unit": "mg",
+        "g_l": 0.2,
+        "mmol_l": 1.62456,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/1038",
+      "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\": \"Nicotinic acid\",\n                \"compound_id\": 139,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 200,\n                \"unit\": \"mg\",\n                \"g_l\": 0.2,\n                \"mmol_l\": 1.62456,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S1038",
+      "source_pointer": [
+        "data",
+        "recipe",
+        4
+      ],
+      "source_row": {
+        "recipe_order": 5,
+        "compound": "Calcium pantothenate",
+        "compound_id": 518,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 100,
+        "unit": "mg",
+        "g_l": 0.1,
+        "mmol_l": 0.209849,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/1038",
+      "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\": \"Calcium pantothenate\",\n                \"compound_id\": 518,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\": \"mg\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.209849,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S1038",
+      "source_pointer": [
+        "data",
+        "recipe",
+        5
+      ],
+      "source_row": {
+        "recipe_order": 6,
+        "compound": "Pyridoxine hydrochloride",
+        "compound_id": 519,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 300,
+        "unit": "mg",
+        "g_l": 0.3,
+        "mmol_l": 1.45886,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/1038",
+      "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\": \"Pyridoxine hydrochloride\",\n                \"compound_id\": 519,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 300,\n                \"unit\": \"mg\",\n                \"g_l\": 0.3,\n                \"mmol_l\": 1.45886,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S1038",
+      "source_pointer": [
+        "data",
+        "recipe",
+        6
+      ],
+      "source_row": {
+        "recipe_order": 7,
+        "compound": "Thiamine-HCl x 2 H2O",
+        "compound_id": 77,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 200,
+        "unit": "mg",
+        "g_l": 0.2,
+        "mmol_l": 0.535761,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/1038",
+      "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\": \"Thiamine-HCl x 2 H2O\",\n                \"compound_id\": 77,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 200,\n                \"unit\": \"mg\",\n                \"g_l\": 0.2,\n                \"mmol_l\": 0.535761,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S1038",
+      "source_pointer": [
+        "data",
+        "recipe",
+        7
+      ],
+      "source_row": {
+        "recipe_order": 8,
+        "compound": "Distilled water",
+        "compound_id": 4,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 1000,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/1038",
+      "snippet": "{\n                \"recipe_order\": 8,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S1728",
+      "source_pointer": [
+        "data",
+        "recipe",
+        0
+      ],
+      "source_row": {
+        "recipe_order": 1,
+        "compound": "Cellobiose",
+        "compound_id": 214,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 56.7,
+        "unit": "g",
+        "g_l": 56.7,
+        "mmol_l": 165.644,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/1728",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Cellobiose\",\n                \"compound_id\": 214,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 56.7,\n                \"unit\": \"g\",\n                \"g_l\": 56.7,\n                \"mmol_l\": 165.644,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S1728",
+      "source_pointer": [
+        "data",
+        "recipe",
+        1
+      ],
+      "source_row": {
+        "recipe_order": 2,
+        "compound": "Sucrose",
+        "compound_id": 108,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 56.7,
+        "unit": "g",
+        "g_l": 56.7,
+        "mmol_l": 165.644,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/1728",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Sucrose\",\n                \"compound_id\": 108,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 56.7,\n                \"unit\": \"g\",\n                \"g_l\": 56.7,\n                \"mmol_l\": 165.644,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S1728",
+      "source_pointer": [
+        "data",
+        "recipe",
+        2
+      ],
+      "source_row": {
+        "recipe_order": 3,
+        "compound": "Maltose x H2O",
+        "compound_id": 776,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 60,
+        "unit": "g",
+        "g_l": 60,
+        "mmol_l": 175.287,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/1728",
+      "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Maltose x H2O\",\n                \"compound_id\": 776,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 60,\n                \"unit\": \"g\",\n                \"g_l\": 60,\n                \"mmol_l\": 175.287,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S1728",
+      "source_pointer": [
+        "data",
+        "recipe",
+        3
+      ],
+      "source_row": {
+        "recipe_order": 4,
+        "compound": "Trehalose",
+        "compound_id": 777,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 63.3,
+        "unit": "g",
+        "g_l": 63.3,
+        "mmol_l": 184.926,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/1728",
+      "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\": \"Trehalose\",\n                \"compound_id\": 777,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 63.3,\n                \"unit\": \"g\",\n                \"g_l\": 63.3,\n                \"mmol_l\": 184.926,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S1728",
+      "source_pointer": [
+        "data",
+        "recipe",
+        4
+      ],
+      "source_row": {
+        "recipe_order": 5,
+        "compound": "D-Xylose",
+        "compound_id": 422,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 25,
+        "unit": "g",
+        "g_l": 25,
+        "mmol_l": 166.522,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/1728",
+      "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\": \"D-Xylose\",\n                \"compound_id\": 422,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 25,\n                \"unit\": \"g\",\n                \"g_l\": 25,\n                \"mmol_l\": 166.522,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    },
+    {
+      "source": "S1728",
+      "source_pointer": [
+        "data",
+        "recipe",
+        5
+      ],
+      "source_row": {
+        "recipe_order": 6,
+        "compound": "Distilled water",
+        "compound_id": 4,
+        "solution": null,
+        "solution_id": null,
+        "condition": null,
+        "attribute": null,
+        "amount": 1000,
+        "unit": "ml",
+        "g_l": null,
+        "mmol_l": null,
+        "optional": 0
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/1728",
+      "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "source_context": "standalone stock input, not a final-medium rate",
+      "decision": "pending record-specific review"
+    }
+  ],
+  "komodo_rows": [
+    [
+      "Pyridoxine-HCl",
+      "Pyridoxine HCl",
+      "SEED-cpd00099#cpd00263##",
+      "3.08E-5",
+      "1.51E-7"
+    ],
+    [
+      "NaHCO3",
+      "sodium bicarbonate",
+      "SEED-cpd00242#cpd00971#cpd09249#",
+      "3.48",
+      "0.04"
+    ],
+    [
+      "Na2S x 9 H2O",
+      "Sodium sulfide hydrate",
+      "SEED-cpd00239#cpd00971##",
+      "0.30",
+      "0.00"
+    ],
+    [
+      "Cysteine-HCl x H2O",
+      "Cysteine-HCl",
+      "SEED-cpd00084#cpd00099##",
+      "0.30",
+      "0.00"
+    ],
+    [
+      "CO2",
+      "CO2",
+      "SEED-cpd00011###",
+      "null",
+      "null"
+    ],
+    [
+      "Nicotinic acid",
+      "Niacin",
+      "SEED-cpd00218###",
+      "1.24E-5",
+      "1.02E-7"
+    ],
+    [
+      "MgCl2 x 6 H2O",
+      "Magnesium chloride",
+      "SEED-cpd00099#cpd00254#cpd04877#",
+      "0.33",
+      "0.00"
+    ],
+    [
+      "KH2PO4",
+      "Potassium dihydrogen phosphate",
+      "SEED-cpd00009#cpd00205##",
+      "0.50",
+      "0.00"
+    ],
+    [
+      "CoCl2 x 6 H2O",
+      "CoCl2",
+      "SEED-cpd00099#cpd00149##",
+      "1.88E-4",
+      "7.92E-7"
+    ],
+    [
+      "CuCl2 x 2 H2O",
+      "CuCl2",
+      "SEED-cpd00058#cpd00099##",
+      "1.98E-6",
+      "1.17E-8"
+    ],
+    [
+      "FeCl2 x 4 H2O",
+      "Iron chloride",
+      "SEED-cpd00099#cpd10516##",
+      "1.49E-3",
+      "7.49E-6"
+    ],
+    [
+      "Thiamine-HCl x 2 H2O",
+      "Thiamine-HCl",
+      "SEED-cpd00099#cpd00305##",
+      "6.21E-6",
+      "1.85E-8"
+    ],
+    [
+      "Butyric acid",
+      "Butyric acid",
+      "SEED-cpd00211###",
+      "1.69",
+      "0.02"
+    ],
+    [
+      "HCl",
+      "HCl",
+      "SEED-cpd00099###",
+      "6.68E-4",
+      "1.91E-5"
+    ],
+    [
+      "ZnCl2",
+      "ZnCl2",
+      "SEED-cpd00034#cpd00099##",
+      "6.94E-5",
+      "5.14E-7"
+    ],
+    [
+      "MnCl2 x 4 H2O",
+      "MnCl2",
+      "SEED-cpd00030#cpd00099##",
+      "9.92E-5",
+      "5.02E-7"
+    ],
+    [
+      "Na2MoO4 x 2 H2O",
+      "Na2MoO4",
+      "SEED-cpd00971#cpd11145##",
+      "3.57E-5",
+      "1.47E-7"
+    ],
+    [
+      "Resazurin",
+      "Resazurin",
+      "SEED-cpd08053###",
+      "9.94E-4",
+      "4.34E-6"
+    ],
+    [
+      "p-Aminobenzoic acid",
+      "p Aminobenzoic acid (PABA)",
+      "SEED-cpd00443###",
+      "6.21E-6",
+      "4.57E-8"
+    ],
+    [
+      "H2O",
+      "H2O",
+      "SEED-cpd00001###",
+      "null",
+      "null"
+    ],
+    [
+      "N2",
+      "N2",
+      "SEED-cpd00528###",
+      "null",
+      "null"
+    ],
+    [
+      "Distilled water",
+      "H2O",
+      "SEED-cpd00001###",
+      "null",
+      "null"
+    ],
+    [
+      "Biotin",
+      "Biotin",
+      "SEED-cpd00104###",
+      "1.24E-6",
+      "5.11E-9"
+    ],
+    [
+      "NH4Cl",
+      "Ammonium chloride",
+      "SEED-cpd00013#cpd00099##",
+      "0.40",
+      "0.01"
+    ],
+    [
+      "CaCl2 x 2 H2O",
+      "Calcium chloride",
+      "SEED-cpd00063#cpd00099##",
+      "0.05",
+      "0.00"
+    ],
+    [
+      "Na2SO4",
+      "Sodium sulfate",
+      "SEED-cpd00048#cpd00971#cpd09400#",
+      "2.78",
+      "0.02"
+    ],
+    [
+      "NiCl2 x 6 H2O",
+      "NiCl2",
+      "SEED-cpd00099#cpd00244##",
+      "2.38E-5",
+      "1.00E-7"
+    ],
+    [
+      "clarified rumen fluid",
+      "clarified rumen fluid",
+      "rich-rumen#",
+      "49.70",
+      "0.05"
+    ],
+    [
+      "H3BO3",
+      "Boric acid",
+      "SEED-cpd09225###",
+      "5.95E-6",
+      "9.60E-8"
+    ],
+    [
+      "Trypticase",
+      "Trypticase",
+      "rich-peptone#",
+      "0.99",
+      "null"
+    ],
+    [
+      "NaCl",
+      "NaCl",
+      "SEED-cpd00099#cpd00971##",
+      "0.40",
+      "0.01"
+    ],
+    [
+      "Pantothenic acid",
+      "D-Panthothenic acid",
+      "SEED-cpd00644###",
+      "3.08E-6",
+      "1.41E-8"
+    ]
+  ],
+  "komodo_null_count": 4,
+  "remaining": "Read and decide every current record field. Matching source rows establish accession correspondence, not ingredient identity, denominator validity or final-medium concentrations. DSM2805 BacDive verification and complete guarded proposals remain pending."
+}

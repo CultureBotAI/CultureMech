@@ -1,0 +1,124 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "indexes",
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "applied_files": 3,
+  "comparisons": [
+    {
+      "path": "data/normalized_yaml/algae_index.json",
+      "before_sha256": "7dd2d184e5849f1ca50207e4f40b1095de2eb4ae12393341d6138c3473d18ff3",
+      "preview_sha256": "31e09e930fe1c544112d65b737e2a1888ace120f51a7d439e7d9bbc17794dd48",
+      "semantic_equal": false,
+      "solution_count_updates": [
+        "CultureMech:000163",
+        "CultureMech:000164",
+        "CultureMech:000165",
+        "CultureMech:000166"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/archaea_index.json",
+      "before_sha256": "3cb2fe77d926e7ca85d6fcc365266e53a4ac3d3a3bf21f151a27f9dfb1ab1ba4",
+      "preview_sha256": "5d5884c16cdd804aa39d0623eabd55690d22ce42245aae414c8fa7a684bec5f2",
+      "semantic_equal": true,
+      "solution_count_updates": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial_index.json",
+      "before_sha256": "67ab8132ca88518e60e893a778aebe6216114bded8b619e0e357c4fb7463b353",
+      "preview_sha256": "a54f8cbc62012e11851ffab8cdeb8dd4602104554ebf7103e8ad076c667f5b9d",
+      "semantic_equal": true,
+      "solution_count_updates": []
+    },
+    {
+      "path": "data/normalized_yaml/by_source_komodo_index.json",
+      "before_sha256": "cd4ca748c225cbbd81e1a648e7f52de683a614fb04cdcf823890bb208e3347ae",
+      "preview_sha256": "7ebf0250ce90ccbfbac1a47f6438d99a33ee215684ee43a6591b5c7ea1c258c9",
+      "semantic_equal": true,
+      "solution_count_updates": []
+    },
+    {
+      "path": "data/normalized_yaml/by_source_mediadive-solutions_index.json",
+      "before_sha256": "e1d583101c60640eb87ca04a9bed6c93de80432f52496c8218f95e80debb5be1",
+      "preview_sha256": "0cee72be2d9f4b60647ffa5032d9acde7ccea14d49d1b30c62c8a960ecb49694",
+      "semantic_equal": true,
+      "solution_count_updates": []
+    },
+    {
+      "path": "data/normalized_yaml/by_source_mediadive_index.json",
+      "before_sha256": "8a893f0ae083616eccad8d0a73c937cf7b97540ae4f01318c133e0c2a25b217d",
+      "preview_sha256": "effec3e716735bd92491241afc8c3f8ac7b7345c65402f076745aaff7a78d9c3",
+      "semantic_equal": true,
+      "solution_count_updates": []
+    },
+    {
+      "path": "data/normalized_yaml/by_source_mediaingredientmech_index.json",
+      "before_sha256": "552994c956341ad67e99fd6cd19339357f867389a595cac1f732367a53904919",
+      "preview_sha256": "e9b432953371fb517b78fb9a5678f519447f88bce82917951185306e799df36d",
+      "semantic_equal": true,
+      "solution_count_updates": []
+    },
+    {
+      "path": "data/normalized_yaml/by_source_togo_index.json",
+      "before_sha256": "2623dd56533cc40712b92add8bd3d7d3b7735a38de4331d876f2bc7981d33edf",
+      "preview_sha256": "ccfc3033ea310f913332c8ab0b142f11d24ebe3882064f793653735ef5e5f663",
+      "semantic_equal": true,
+      "solution_count_updates": []
+    },
+    {
+      "path": "data/normalized_yaml/by_source_unknown_index.json",
+      "before_sha256": "eb5efd9f7024bb3d989982897cffda65a5c225e0169d2d7e07d0a382a4c30010",
+      "preview_sha256": "0e9d96291e3ee92f2c91c1a7ba577e4e2df93b3f200858a654d2e3ae68d6598e",
+      "semantic_equal": false,
+      "solution_count_updates": [
+        "CultureMech:000163",
+        "CultureMech:000164",
+        "CultureMech:000165",
+        "CultureMech:000166"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/fungal_index.json",
+      "before_sha256": "0e52d59187077819a88a245b087784ced8f7d6e6d652e0db87efb548fb767be4",
+      "preview_sha256": "67757d68cc80e359387de4c724aa7cf49624974dde841630bbe9eb5c82c8caf2",
+      "semantic_equal": true,
+      "solution_count_updates": []
+    },
+    {
+      "path": "data/normalized_yaml/recipe_index.json",
+      "before_sha256": "fcc989b454fbc0fd1c9ac21a0c0d630da947013b2c4a6b675816a67675598e63",
+      "preview_sha256": "3a55ad1c7d3bb4879a3e42e1980a7121c8015b7fd87b98af1650373e60d3fd8b",
+      "semantic_equal": false,
+      "solution_count_updates": [
+        "CultureMech:000163",
+        "CultureMech:000164",
+        "CultureMech:000165",
+        "CultureMech:000166"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/recipe_statistics.json",
+      "before_sha256": "ef2a5de5ef613afd5429a580c725283bca730a1b162bc668472149412e68e69e",
+      "preview_sha256": "2332babab9bb5a4a22a92923f86af5dcbcdbe603933e030b158a03e0001a0f53",
+      "semantic_equal": true,
+      "solution_count_updates": []
+    },
+    {
+      "path": "data/normalized_yaml/solutions_index.json",
+      "before_sha256": "efa6c24cd12cfe56bc84265596dcb4cd93cfc00779106a1694560fae0b1b4dc2",
+      "preview_sha256": "9ac1cf4812fd3f55d54ddef7880f0b10dfacf8f0de4b5c6f20e742275efd1714",
+      "semantic_equal": true,
+      "solution_count_updates": []
+    },
+    {
+      "path": "data/normalized_yaml/specialized_index.json",
+      "before_sha256": "49737534ef40df809592d844ae6b5aa29f492ad49cd45c2ec78b29e4eb8b4e6d",
+      "preview_sha256": "bedaa55fa6d712c7fd503245fadaa88ada9d954da543f549451eb561708b1469",
+      "semantic_equal": true,
+      "solution_count_updates": []
+    }
+  ],
+  "source_inventory_unchanged": true
+}

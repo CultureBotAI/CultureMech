@@ -1,0 +1,9 @@
+{
+  "terminal": false,
+  "phase": "live",
+  "checks": [],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "0e1b0d61826c6c729ca46bd7adb32945695a509d8578fe651f380b9eef3778c7"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "terminal": true,
+  "records_edited": false,
+  "context_sha256": "ef471c66afd7e6bfd16ee8cb3683ccd4978b4b0e5153045a3358538e48a03387",
+  "page_images": [
+    {
+      "source": "DSMZ829c",
+      "page": 1,
+      "pdf_sha256": "cf58d6bfdd1c2d0e40e97e6b82b143f9dab347b3aaa5f6277e1dafe19d5512b5",
+      "image": "/tmp/ingredient-media-20261007/next829-extended-pages/DSMZ829c-1.jpg",
+      "image_sha256": "28474e8b520ea54b94b2d458b20ba3cadd19a56db0fca6aba6722ebef9b05918",
+      "inspection": "Explicit final 1011 ml; main liquids sum 1011.5 ml. pH 6.0-6.5, 1 g NH4Cl, 10 ml modified Wolin mineral stock, 1 ml vitamin stock, 0.50 ml 0.1% w/v indicator. Sulfur 10 g, sulfide nonahydrate 0.50 g. Original-only DSM 16304 pH 5.5 conditional is separate from base. Autoclave 110 C, 20 min, then 1 bar after inoculation. Mineral-stock rows are batch masses."
+    },
+    {
+      "source": "DSMZ829c",
+      "page": 2,
+      "pdf_sha256": "cf58d6bfdd1c2d0e40e97e6b82b143f9dab347b3aaa5f6277e1dafe19d5512b5",
+      "image": "/tmp/ingredient-media-20261007/next829-extended-pages/DSMZ829c-2.jpg",
+      "image_sha256": "6a3c8e3f444d764c5cf8958b2acb698922a2749bbbd2536ee254cc2db3e7ef3e",
+      "inspection": "Mineral table continues across page break; 0.30 mg selenite and 0.40 mg tungstate, 1000 ml water. NTA adjustment pH 6.5 then final stock pH 7 with unquantified KOH, not medium pH. Vitamin 10x title supplies no working-dose inference; source receiving dose is separately 1 ml. B12 is 1 mg, not seven-vitamin stock's 100 mg. Both stocks lack explicit final-volume statements."
+    },
+    {
+      "source": "DSMZ829d",
+      "page": 1,
+      "pdf_sha256": "574d2188e9d63d264ee9d0a5bf081c853daaa5509ef600c5fbaa873cecee6688",
+      "image": "/tmp/ingredient-media-20261007/next829-extended-pages/DSMZ829d-1.jpg",
+      "image_sha256": "844bd41d31d3fa8c9a2dd9fe9ad001e16fd4c6cb26c09f508afa4725694f779a",
+      "inspection": "Explicit final 1020 ml but listed main liquid inputs total 1011.5 ml; retain disagreement without inventing 8.5 ml makeup. NH4Cl 0.30 g and Na-acetate 0.16 g distinguish this source. pH 6.0-6.5, 110 C for 20 min and 1 bar after inoculation; no DSM16304 conditional is printed. Mineral-stock table continues onto page 2."
+    },
+    {
+      "source": "DSMZ829d",
+      "page": 2,
+      "pdf_sha256": "574d2188e9d63d264ee9d0a5bf081c853daaa5509ef600c5fbaa873cecee6688",
+      "image": "/tmp/ingredient-media-20261007/next829-extended-pages/DSMZ829d-2.jpg",
+      "image_sha256": "171db611e6c9c0685fd825a72a073b769f49fd7713170af577868c9f5444c805",
+      "inspection": "Nickel hexahydrate 0.03 g, selenite pentahydrate 0.30 mg and tungstate dihydrate 0.40 mg checked. Mineral KOH adjustment is stock-scoped and unquantified. Vitamin quantities match 829c including B12 1 mg and calcium D-pantothenate. Water inputs do not establish final stock volumes."
+    },
+    {
+      "source": "DSMZ829b",
+      "page": 1,
+      "pdf_sha256": "825651ee6eedacad881fdc2ca5f8cc540b3f01067daca7384d196b089ad38bae",
+      "image": "/tmp/ingredient-media-20261007/next829-extended-pages/DSMZ829b-1.jpg",
+      "image_sha256": "741022b8c620182ade00e456948a8465176d932f55dfe564620dc04e5e2242e6",
+      "inspection": "Final volume 1005 ml, final pH 6.5; six basal masses including genuine 0.50 g yeast, no sulfur. Five 1 ml stock doses and 0.50 ml resazurin 0.1% w/v plus 1000 ml water total 1005.5 ml. Initial pH 6.0 and final 6.5 are distinct; after inoculation 2 bar, no explicit main autoclave temperature. SL-10 table includes 24 mg nickel hexahydrate and 25% HCl without percent basis."
+    },
+    {
+      "source": "DSMZ829b",
+      "page": 2,
+      "pdf_sha256": "825651ee6eedacad881fdc2ca5f8cc540b3f01067daca7384d196b089ad38bae",
+      "image": "/tmp/ingredient-media-20261007/next829-extended-pages/DSMZ829b-2.jpg",
+      "image_sha256": "f89b2a290e5c9a222972ae0a06ba7821286fb2e316f3876adff78f4ceab3cc94",
+      "inspection": "SL-10 explicitly makes up to 1000 ml. Other stock tables list water inputs, not verified final volumes. Growth factors are batch masses; NaOH titration to pH 9 is unquantified. Dithionite heading states 5% w/v, with 0.50 g dithionite, 0.50 ml 1 N NaOH and 9.50 ml water. Do not merge this carrier with the separate selenium-stock 0.50 g NaOH. Vitamin quantities/hydrates and cool dark storage checked."
+    }
+  ],
+  "bibliographic_limits": "2025 PDF footer is copyright, not established publication year. Individual authors and publication years remain unknown."
+}

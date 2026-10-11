@@ -1,0 +1,40 @@
+[
+  {
+    "id": "CultureMech:005582",
+    "medium_id": "469",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/469",
+    "source_sha256": "5ca531fbbc4074a41bcbf759e584098a0a62205ce8cbbc20d1c06801955e2833",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled water each, and sterilize separately by filtration. Cool down autoclaved main solution to 50\u00b0C, and aseptically add catalase and MgSO4 solution.",
+    "reason": "Catalase and MgSO4 are separately filter-sterilized. The API assigns 10 ml water to each stock and 980 ml to the base; the original PDF gives 1000 ml water without stock volumes. The local flat record omits those preparation boundaries. Preserve the source-version and stock/final-volume questions rather than endorsing unqualified main-medium concentrations."
+  },
+  {
+    "id": "CultureMech:005614",
+    "medium_id": "489",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/489",
+    "source_sha256": "5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas.",
+    "reason": "The source adds cysteine and sulfide after sterilization from separate anoxic stocks of unspecified strength and volume, and resazurin is supplied as a 0.1% w/v stock. The local flat record has no corresponding stock boundaries and retains an incompatible aerobic import annotation. Reconcile preparation stages and final-volume basis before endorsing the formulation; do not infer stock strengths or doses."
+  }
+]

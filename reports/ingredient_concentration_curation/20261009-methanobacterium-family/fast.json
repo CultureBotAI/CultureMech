@@ -1,0 +1,30 @@
+{
+  "terminal": true,
+  "phase": "fast",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/fast-0.log",
+      "log_sha256": "27c42f62ad1d967e37fe705f687f5536a7e4e977fef9ad17c487b016fbc40cc5"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "db8f5426f9aade2d77f947de6f5c4a756f3ed214bede448fbb31d273085da30f"
+  },
+  "code_sha256": {
+    "scripts/repair_methanobacterium_family.py": "87a3dec56047f5aeaa394a7c65788ee86c297ab086d142c0597e82983ac1f90f",
+    "tests/test_methanobacterium_family.py": "b402ee4ba9088302faa60da467b2ed06bcab302601174722a33f66436267382e",
+    "reports/ingredient_concentration_curation/20261009-methanobacterium-family/audit.py": "31c3125ed89f27f37c516b13d71636fa3b5ac9ce4ee50820ab0f130e10c0c383"
+  },
+  "plan_sha256": "302bb7c856b8b4b885a35de19edcadc32efc77b115ea3fe23630c288503a775d",
+  "preview_validation_sha256": "783079e989f2aa8effdc09ec9d9e27767df4e01239fa1f20a399565272b3f265",
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "db8f5426f9aade2d77f947de6f5c4a756f3ed214bede448fbb31d273085da30f"
+  }
+}

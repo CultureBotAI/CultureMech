@@ -1,0 +1,13 @@
+{
+  "records": 500,
+  "changed": 46,
+  "concentration_evidence": 220,
+  "mapping_evidence": 46,
+  "new_evidence": 266,
+  "new_references": 92,
+  "new_curation_history": 46,
+  "only_provenance_appended": true,
+  "unsupported_claims_unchanged": true,
+  "quantities_and_formulation_unchanged": true,
+  "stage": "preflight"
+}

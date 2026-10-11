@@ -1,0 +1,270 @@
+{
+  "terminal": true,
+  "normalized_yaml_modified": false,
+  "failed_checks_reproduced": 31,
+  "finding": "Generic URL cache retains raw HTML; table tags prevent contiguous rendered-text quotations from matching. Table-aware extraction matches all 31 unchanged quotes.",
+  "sources": {
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021": {
+      "key": "K1021",
+      "cache_path": "references_cache/url_https___komodo.modelseed.org_komodo_servlet_KomodoTomcatServerSideUtilitiesModelSeed_MediaInfo_1021.md",
+      "cache_sha256": "359ca7b4ba17f4005f33e100b1dec11ec137f76cf2a8f3a3ff2367431782fca7",
+      "source_sha256": "e4a9e272f0b17354335496c754134b228d36dcba6f41b2288e83e584be6cbd16"
+    },
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929": {
+      "key": "K1021_16929",
+      "cache_path": "references_cache/url_https___komodo.modelseed.org_komodo_servlet_KomodoTomcatServerSideUtilitiesModelSeed_MediaInfo_1021_16929.md",
+      "cache_sha256": "553acb34220da6f687348fd2c88a0d4f62f9ed1ad39232041d44fa3f42fd46f2",
+      "source_sha256": "2446cf829f82e9aa7720dcbce9cd38805324f329277d7d25a908b41e2d98492b"
+    }
+  },
+  "checks": [
+    {
+      "record": "K1021",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+      "path": "ingredients[0].evidence[0].snippet",
+      "quote": "Yeast extract Yeast extract rich-peptone# 4.96 null",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+      "path": "ingredients[1].evidence[0].snippet",
+      "quote": "D-Glucose D-Glucose SEED-cpd00027### 4.00 0.02",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+      "path": "ingredients[2].evidence[0].snippet",
+      "quote": "KCl KCl SEED-cpd00099#cpd00205## 0.20 0.00",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+      "path": "ingredients[3].evidence[0].snippet",
+      "quote": "MgCl2 x 6 H2O Magnesium chloride SEED-cpd00099#cpd00254#cpd04877# 0.10 0.00",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+      "path": "ingredients[4].evidence[0].snippet",
+      "quote": "CaCl2 x 2 H2O Calcium chloride SEED-cpd00063#cpd00099## 0.20 0.00",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+      "path": "ingredients[5].evidence[0].snippet",
+      "quote": "NaCl NaCl SEED-cpd00099#cpd00971## 6.96 0.12",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+      "path": "ingredients[6].evidence[0].snippet",
+      "quote": "NaHCO3 sodium bicarbonate SEED-cpd00242#cpd00971#cpd09249# 0.12 0.00",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+      "path": "ingredients[7].evidence[0].snippet",
+      "quote": "Agar Agar SEED-cpd13334### 13.60 null",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+      "path": "ingredients[8].evidence[0].snippet",
+      "quote": "NaH2PO4 x 2 H2O NaH2PO4 SEED-cpd00009#cpd00971## 0.22 0.00",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+      "path": "ingredients[9].evidence[0].snippet",
+      "quote": "casein hydrolysate casein hydrolysate rich-peptone# 6.48 null",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+      "path": "ingredients[10].evidence[0].snippet",
+      "quote": "Distilled water H2O SEED-cpd00001### null null",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+      "path": "ingredients[11].evidence[0].snippet",
+      "quote": "new borne calf serum new borne calf serum rich-serum# 200.00 0.20",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+      "path": "parent_media.evidence[0].snippet",
+      "quote": "casein hydrolysate casein hydrolysate",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+      "path": "evidence[1].snippet",
+      "quote": "PH Info: 8.0",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021_16929",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+      "path": "ingredients[0].evidence[0].snippet",
+      "quote": "Yeast extract Yeast extract rich-peptone# 4.96 null",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021_16929",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+      "path": "ingredients[1].evidence[0].snippet",
+      "quote": "D-Glucose D-Glucose SEED-cpd00027### 4.00 0.02",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021_16929",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+      "path": "ingredients[2].evidence[0].snippet",
+      "quote": "KCl KCl SEED-cpd00099#cpd00205## 0.20 0.00",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021_16929",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+      "path": "ingredients[3].evidence[0].snippet",
+      "quote": "MgCl2 x 6 H2O Magnesium chloride SEED-cpd00099#cpd00254#cpd04877# 0.10 0.00",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021_16929",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+      "path": "ingredients[4].evidence[0].snippet",
+      "quote": "CaCl2 x 2 H2O Calcium chloride SEED-cpd00063#cpd00099## 0.20 0.00",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021_16929",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+      "path": "ingredients[5].evidence[0].snippet",
+      "quote": "NaCl NaCl SEED-cpd00099#cpd00971## 6.96 0.12",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021_16929",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+      "path": "ingredients[6].evidence[0].snippet",
+      "quote": "NaHCO3 sodium bicarbonate SEED-cpd00242#cpd00971#cpd09249# 0.12 0.00",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021_16929",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+      "path": "ingredients[7].evidence[0].snippet",
+      "quote": "Agar Agar SEED-cpd13334### 13.60 null",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021_16929",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+      "path": "ingredients[8].evidence[0].snippet",
+      "quote": "NaH2PO4 x 2 H2O NaH2PO4 SEED-cpd00009#cpd00971## 0.22 0.00",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021_16929",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+      "path": "ingredients[9].evidence[0].snippet",
+      "quote": "casein hydrolysate casein hydrolysate rich-peptone# 6.48 null",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021_16929",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+      "path": "ingredients[10].evidence[0].snippet",
+      "quote": "Distilled water H2O SEED-cpd00001### null null",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021_16929",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+      "path": "ingredients[11].evidence[0].snippet",
+      "quote": "new borne calf serum new borne calf serum rich-serum# 200.00 0.20",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021_16929",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+      "path": "ingredients[12].evidence[0].snippet",
+      "quote": "O2 O2 SEED-cpd00007### null null",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021_16929",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+      "path": "ingredients[13].evidence[0].snippet",
+      "quote": "N2 N2 SEED-cpd00528### null null",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021_16929",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+      "path": "ingredients[14].evidence[0].snippet",
+      "quote": "CO2 CO2 SEED-cpd00011### null null",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "K1021_16929",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+      "path": "evidence[1].snippet",
+      "quote": "PH Info: null",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    },
+    {
+      "record": "D1021",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+      "path": "variant_children[0].evidence[0].snippet",
+      "quote": "casein hydrolysate casein hydrolysate",
+      "raw_html_literal_match": false,
+      "table_aware_literal_match": true
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "terminal": true,
+  "phase": "fast",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/fast-0.log",
+      "log_sha256": "bc76478d7264353cd36f4226344d96ca569f758c32f6acfeff25ac5e969107c6"
+    }
+  ],
+  "code_sha256": {
+    "scripts/repair_linked_middlebrook.py": "b6571c6b97979de2b2ee7b16b4c3bc071d17467ef57fa104e5902d8e1a6658f1",
+    "tests/test_linked_middlebrook.py": "e95182859d2d576c3266645dd2abbbfa34314c4ed9d20de0f4c3ea019a2f6034",
+    "reports/ingredient_concentration_curation/20261009-middlebrook-linked/audit.py": "807c71a2ea7076245bb0ee989868f81ce24a673e53f6c7462daaf2f47396a73b"
+  },
+  "plan_sha256": "8d9b1352d5227111048a31411104b8a6c255819111fd4e1153917b29ea74074a",
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "586888cea49e962e3fe4ccbe021599c5c21ee5f15e4aae265f5bdfe305ce8bb0"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "586888cea49e962e3fe4ccbe021599c5c21ee5f15e4aae265f5bdfe305ce8bb0"
+  }
+}

@@ -1,5 +1,8 @@
 # Concentration Publication Review
 
+Publication: [draft PR 577](https://github.com/CultureBotAI/CultureMech/pull/577).
+Initial curation commit: `06b8c3856f`; main integration: `0c73c10a86`.
+
 Review date: 2026-10-11. Worktree baseline:
 `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`.
 Fetched main: `0e409dd9aecf0f51586d0dd418ba9713dd99d0cb`.
@@ -40,6 +43,15 @@ their pinned inputs, not validation of subsequent code changes.
    exceeds 300 files. Existing
    [issue 277](https://github.com/CultureBotAI/CultureMech/issues/277) must be
    considered when inspecting checks; absent checks are not passing checks.
+6. **P1, packaging: transitive review inputs were omitted.** A clean committed
+   checkout collected 19,269 tests, but a focused run had 339 passes and two
+   failures. The OTEB guard follows a context path stored in JSON; the rumen
+   guard adds `.json` to receipt names stored without the suffix. The first
+   publication selection missed those dependencies, despite passing locally.
+   [Issue 578](https://github.com/CultureBotAI/CultureMech/issues/578) records the
+   exact reproduction. The follow-up selection includes transitive report-local
+   paths and receipt names without changing their pinned contents. Clean runtime
+   verification is required; collection alone is insufficient.
 
 ## Publication Scope
 
@@ -49,6 +61,9 @@ inputs required by those tools/tests. Unselected previews, raw reference caches,
 generated pages, logs and temporary exports remain local. No blanket `git add .`
 or forced cache addition is used. Dependency selection is conservative and must
 be verified from the published tree, not just from this populated workstation.
+The manifest's dependency-closure parent identifies the integration revision;
+its selected-file hashes are refreshed after schema generation and packaging
+corrections. Historical batch checkpoints remain unchanged.
 
 The PR must remain draft while substantive findings or required validation are
 unresolved. The all-record scientific curation objective is still incomplete.

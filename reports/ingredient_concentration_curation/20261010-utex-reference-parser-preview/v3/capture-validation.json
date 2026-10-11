@@ -1,0 +1,1492 @@
+{
+  "created_at": "2026-10-10T22:01:46.216014+00:00",
+  "terminal": true,
+  "passed": true,
+  "state": "offline raw-source and proposal validation, not installed",
+  "parser_sha256": "e80389b175578ba7355bd482b89b016dea13d4268f85a27582c445bfcdfa561e",
+  "source_manifest_sha256": "5eaeda7beb40398b907abc54296e20e19c658648f62bc3be2b5e01f8b14f53d9",
+  "plan_sha256": {
+    "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v2/plan.json": "780bc103ce61d3aa302b1d37c56399144a90570e1fb2a4ada4b816e825e019ac",
+    "reports/ingredient_concentration_curation/20261010-utex-organic-five-preview/mutation-preview-v3/plan.json": "a6f04f14f656cc1b9c8f7d7d65e0f7a30d7b762c6acb09e629c5fc6a25a6dd80",
+    "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/plan.json": "fa277fdced63a14095a72b2f0d24a182239c71a7adca1b2a4b125b36e772c60e"
+  },
+  "sources": [
+    {
+      "reference": "https://utex.org/products/one-to-one-dyiii-pea-gr-plus-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/one-to-one-dyiii-pea-gr-plus-medium.html",
+      "sha256": "ba0e5febd87257359e0fc2f3fd0b37d2029559e93b665dc2b7ade0fbb117c4b5",
+      "accessed_at": "2026-10-10T21:03:07.248064+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/one-to-one-dyiii-pea-gr-plus-medium",
+      "parsed": true,
+      "canonical_text_sha256": "2db336bccab59d964f66f34dfc5497f5aa58416d562a4e8d3ecc71d0069b9982"
+    },
+    {
+      "reference": "https://utex.org/products/one-half-erdschreibers-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/one-half-erdschreibers-medium.html",
+      "sha256": "73ecedd6a490f7f0faa9c0fe46bf2cc4f1fd01d0c7e92cd302542ce4bd5238f2",
+      "accessed_at": "2026-10-10T21:03:08.636385+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/one-half-erdschreibers-medium",
+      "parsed": true,
+      "canonical_text_sha256": "cbf530c512daaebe7ecd63f68b3fc5202b88e72d3244ba3b7d859faed3305616"
+    },
+    {
+      "reference": "https://utex.org/products/one-fourth-erdschreibers-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/one-fourth-erdschreibers-medium.html",
+      "sha256": "9720009cd8b803aca6963f0db82e6abdc903de5e04bab7d09d5fbb1283feca72",
+      "accessed_at": "2026-10-10T21:03:09.982927+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/one-fourth-erdschreibers-medium",
+      "parsed": true,
+      "canonical_text_sha256": "cb98da4df7e02caa6f27ccae04e8c88b57a2b81ca7ffe505bd2fec42954288dd"
+    },
+    {
+      "reference": "https://utex.org/products/20-percent-allen-plus-80-percent-erdschreibers-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/20-percent-allen-plus-80-percent-erdschreibers-medium.html",
+      "sha256": "1e3c5243fd020d45183cd8f9034ad0b8ed6a602fec8a7f8c2a307261d18326cc",
+      "accessed_at": "2026-10-10T21:03:11.282998+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/20-percent-allen-plus-80-percent-erdschreibers-medium",
+      "parsed": true,
+      "canonical_text_sha256": "1f943aa92c53ed5c24199d29d46b0451099c74356a44cca5244fe5724709947d"
+    },
+    {
+      "reference": "https://utex.org/products/2x-erdschreibers-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/2x-erdschreibers-medium.html",
+      "sha256": "06d36c365913f3daf85729d6fbffcd8c2a47a21c273fd161efe669d7dcaf7107",
+      "accessed_at": "2026-10-10T21:03:12.604033+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/2x-erdschreibers-medium",
+      "parsed": true,
+      "canonical_text_sha256": "a61cf25d249bcaf38cb4dd62bcfdc59447298392b3447e4553772182bdc924de"
+    },
+    {
+      "reference": "https://utex.org/products/ag-diatom-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/ag-diatom-medium.html",
+      "sha256": "e0979277258956c4754089b3c354b02d06604be3d68cbcc76cbe8cfab1a316d8",
+      "accessed_at": "2026-10-10T21:03:13.937489+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/ag-diatom-medium",
+      "parsed": true,
+      "canonical_text_sha256": "0e3b98bb0d91b7cdbf1de05de51c9c6ed6d9b3ded48ea238688215e07afe23ce"
+    },
+    {
+      "reference": "https://utex.org/products/allen-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/allen-medium.html",
+      "sha256": "66dd91903a910dab110ca673aac44c6a25fe0b066bfe39d9f7105607d0525223",
+      "accessed_at": "2026-10-10T21:03:15.309719+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/allen-medium",
+      "parsed": true,
+      "canonical_text_sha256": "43c9595cdaf9e36b702f1d9218e42dcd8ada727d6518c8e3db0cc54b17e7b9c3"
+    },
+    {
+      "reference": "https://utex.org/products/artificial-seawater-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/artificial-seawater-medium.html",
+      "sha256": "19fd83b06fc1f88e404f702e8eff94b9d0e71641d04bb2846cdfce71c6c03b94",
+      "accessed_at": "2026-10-10T21:03:16.646806+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/artificial-seawater-medium",
+      "parsed": true,
+      "canonical_text_sha256": "6d8771c4547880ab45335d4642ef79fa4a7becad9fa0ca696a4c17733f299dcc"
+    },
+    {
+      "reference": "https://utex.org/products/bold-1nv-erdschreibers-one-to-one-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/bold-1nv-erdschreibers-one-to-one-medium.html",
+      "sha256": "2500203b2da170db919c392f89bb7f7301168f2684e4c568d27fd726e285653d",
+      "accessed_at": "2026-10-10T21:03:17.998160+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/bold-1nv-erdschreibers-one-to-one-medium",
+      "parsed": true,
+      "canonical_text_sha256": "c539514b3b793f043f72445669dd039fd40fe45e91181643befc5419e6348fb9"
+    },
+    {
+      "reference": "https://utex.org/products/bold-1nv-erdschreibers-four-to-one-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/bold-1nv-erdschreibers-four-to-one-medium.html",
+      "sha256": "fd1dd423e64146cb75b8df0d3fa559e4f5d6d0648512067ba531fafa5bae7b1d",
+      "accessed_at": "2026-10-10T21:03:19.373774+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/bold-1nv-erdschreibers-four-to-one-medium",
+      "parsed": true,
+      "canonical_text_sha256": "4ba0726ae351ea7ecd133441f9f5a991aca4efb759d56d6d50ddb5ae07a8b44d"
+    },
+    {
+      "reference": "https://utex.org/products/bold-1nv-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/bold-1nv-medium.html",
+      "sha256": "b8b070cf1e7e331a669f004a7620fed2ed38dc4f7fcefe08e206a2fc238c8b05",
+      "accessed_at": "2026-10-10T21:03:20.792428+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/bold-1nv-medium",
+      "parsed": true,
+      "canonical_text_sha256": "d9e10af09b74b2a1b27651625f780f07c43db1eb153b5dad9907df7d9fa319e7"
+    },
+    {
+      "reference": "https://utex.org/products/bold-3n-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/bold-3n-medium.html",
+      "sha256": "f46c73db20179ac8cbf51d88db4523f7cb5b51f422bd9fa76271b958215f5f28",
+      "accessed_at": "2026-10-10T21:03:22.214994+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/bold-3n-medium",
+      "parsed": true,
+      "canonical_text_sha256": "d2649f854025f0b42f80d0e60a943df70de5c67288dc536fea2335a81033e08b"
+    },
+    {
+      "reference": "https://utex.org/products/cr1-plus-diatom-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/cr1-plus-diatom-medium.html",
+      "sha256": "53b7a0b9b8be28e89c20713fb202392163dc08c06f24e9b9144f5dde2d7bcf9b",
+      "accessed_at": "2026-10-10T21:03:23.648481+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/cr1-plus-diatom-medium",
+      "parsed": true,
+      "canonical_text_sha256": "b6b16a178bfd3c8141f6d5c75687c38fb5a8afa3f87710d818472c74f50ca72d"
+    },
+    {
+      "reference": "https://utex.org/products/cr1-diatom-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/cr1-diatom-medium.html",
+      "sha256": "48a0bc3fa259d5bd966479f1f7af6c965fb37c84eb3ce602c0443a5d85318ebb",
+      "accessed_at": "2026-10-10T21:03:24.997658+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/cr1-diatom-medium",
+      "parsed": true,
+      "canonical_text_sha256": "b283b0097fcd81bcee82e5cc8b6ee303d9509bce4796650576d0873da45c09d0"
+    },
+    {
+      "reference": "https://utex.org/products/combo-diatom-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/combo-diatom-medium.html",
+      "sha256": "655e8999556b74e4b0d4f74ba2ca175dd18ed6dc4ce4bb94da55dbe28b962d3a",
+      "accessed_at": "2026-10-10T21:03:26.360432+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/combo-diatom-medium",
+      "parsed": true,
+      "canonical_text_sha256": "90cdb892f2754f1203ce7e3be6ddaea418d56e9c4d0fa83c115d489a5fe8bb0b"
+    },
+    {
+      "reference": "https://utex.org/products/cyanidium-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/cyanidium-medium.html",
+      "sha256": "e24c8edfc76da0e0fcf89d463fe0b6bfdefbfc6ab8330272c9dcc883949eb3ea",
+      "accessed_at": "2026-10-10T21:03:27.714403+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/cyanidium-medium",
+      "parsed": true,
+      "canonical_text_sha256": "2563d3f2c5dbc7463c0938f8cecdbb9c2302b33107f7371efe6b328d91a7f721"
+    },
+    {
+      "reference": "https://utex.org/products/cyanophycean-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/cyanophycean-medium.html",
+      "sha256": "ee8b149e44986219a3f2dbc96a95f71c89fd375535111d6c75a6a2699e506f2c",
+      "accessed_at": "2026-10-10T21:03:29.089436+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/cyanophycean-medium",
+      "parsed": true,
+      "canonical_text_sha256": "521c4246c12ac0a6344a857453b23c515c24326a57270b0de9c91c4cb287bcf5"
+    },
+    {
+      "reference": "https://utex.org/products/dyiii-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/dyiii-medium.html",
+      "sha256": "9502b93a37348592cb2f02615292eabe46342efea51b24fc31b4af88e3ac39a6",
+      "accessed_at": "2026-10-10T21:03:30.445666+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/dyiii-medium",
+      "parsed": true,
+      "canonical_text_sha256": "6a39edd6c1970f360a0c5d7c5c5409f0fa3f634ca4c02e3d748ab20bdfb9253b"
+    },
+    {
+      "reference": "https://utex.org/products/dyv-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/dyv-medium.html",
+      "sha256": "a82b564511268593ee7ef7101ed113b5b3abf22e5c6a1e031d4074a304a2f936",
+      "accessed_at": "2026-10-10T21:03:31.798502+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/dyv-medium",
+      "parsed": true,
+      "canonical_text_sha256": "2c835bf7680db703e405e95a00e5a66ecdb8ea41dd245f5876994019b8498895"
+    },
+    {
+      "reference": "https://utex.org/products/desmid-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/desmid-medium.html",
+      "sha256": "46796df0dec4d13f0da418424b276e26c6f267f7b0224305f0fd347fd3018b6a",
+      "accessed_at": "2026-10-10T21:03:33.184305+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/desmid-medium",
+      "parsed": true,
+      "canonical_text_sha256": "1226c9dc30ac2cdb17014b39480d546188ddc3aa44c75004e872341b4ee0333a"
+    },
+    {
+      "reference": "https://utex.org/products/euglena-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/euglena-medium.html",
+      "sha256": "bd2295159cc51160547c5914849f6dd801a200ab4bd0c4f0c4afd66e15d8f6ca",
+      "accessed_at": "2026-10-10T21:03:34.549246+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/euglena-medium",
+      "parsed": true,
+      "canonical_text_sha256": "5fdf37e4d7e7dfef398a30d0ca7c4a94f1bc62f9a4fb5eb934bc02102d2b52e7"
+    },
+    {
+      "reference": "https://utex.org/products/hepes-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/hepes-medium.html",
+      "sha256": "d7c437680dabb9e9486142a1a620f84abdffb7c259f809cc91ae33be817966e5",
+      "accessed_at": "2026-10-10T21:03:35.928588+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/hepes-medium",
+      "parsed": true,
+      "canonical_text_sha256": "2e039e9f7422cb3cefab4ed48d5dac556a5f6c94f9a4af1e632d4d865221e57d"
+    },
+    {
+      "reference": "https://utex.org/products/ldm-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/ldm-medium.html",
+      "sha256": "473e4c74762c2cf2a59495d8955b51339b2b41be01d882c09626e69a7e377e3c",
+      "accessed_at": "2026-10-10T21:03:37.333156+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/ldm-medium",
+      "parsed": true,
+      "canonical_text_sha256": "4c547940892ff456f719bfff43f205e0033dc76ab23dc4809e4d761f85eea86c"
+    },
+    {
+      "reference": "https://utex.org/products/malt-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/malt-medium.html",
+      "sha256": "e40ba271edd55bace8c1e2f53add3b0649205c7c9bf51ec800c79301d01f0174",
+      "accessed_at": "2026-10-10T21:03:38.696968+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/malt-medium",
+      "parsed": true,
+      "canonical_text_sha256": "44a931d06b89e153bf0c0657608d91df082f1e59a8a5360526f7190c53c81020"
+    },
+    {
+      "reference": "https://utex.org/products/modified-artificial-seawater-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/modified-artificial-seawater-medium.html",
+      "sha256": "565d239686fab84906ec6c2cb1d4556b6506e538c38a998fadd324bf8e65c616",
+      "accessed_at": "2026-10-10T21:03:40.051781+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/modified-artificial-seawater-medium",
+      "parsed": true,
+      "canonical_text_sha256": "20e8a56a660d90596f165e549efd110c25eec3c34d98bdb7df211c1a20252451"
+    },
+    {
+      "reference": "https://utex.org/products/modified-bold-3n-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/modified-bold-3n-medium.html",
+      "sha256": "37803c873ce8afbc3a654ed03302f74ac7d7e4340f1dcb62af83f7214c58f96b",
+      "accessed_at": "2026-10-10T21:03:41.472475+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/modified-bold-3n-medium",
+      "parsed": true,
+      "canonical_text_sha256": "3ee190043fda4180f31209b06d288ea62379eab7497cffd3780f0c66dcecb261"
+    },
+    {
+      "reference": "https://utex.org/products/modified-combo-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/modified-combo-medium.html",
+      "sha256": "6a355438f581e08d83e9ed244db0d78dc642a97dfd15a656a584cb6cdf5131ca",
+      "accessed_at": "2026-10-10T21:03:42.865061+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/modified-combo-medium",
+      "parsed": true,
+      "canonical_text_sha256": "31b22258737209a37e9797781b18df0818f483989459f5cdc55bc6f12bc9f590"
+    },
+    {
+      "reference": "https://utex.org/products/modified-desmidiacean-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/modified-desmidiacean-medium.html",
+      "sha256": "2a78459a43328150b7b41b943f6a84c8f8ca6427c6b7054dcb384f2074d3f054",
+      "accessed_at": "2026-10-10T21:03:44.190309+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/modified-desmidiacean-medium",
+      "parsed": true,
+      "canonical_text_sha256": "71ffd87ac1f6cd8d1741fd90307c1ee59addcf005b3113f80dbb069bc6d2f886"
+    },
+    {
+      "reference": "https://utex.org/products/n-over-20-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/n-over-20-medium.html",
+      "sha256": "1559f0234b617c13a530e2d06b7a59b3caf54900c32451294cb75f321290f17c",
+      "accessed_at": "2026-10-10T21:03:45.556932+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/n-over-20-medium",
+      "parsed": true,
+      "canonical_text_sha256": "cbbc46993508ec73667f16b598a35bdec5a0071913375fcb2649bc8a02bba14f"
+    },
+    {
+      "reference": "https://utex.org/products/ochromonas-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/ochromonas-medium.html",
+      "sha256": "1db185de6d9d83535e0ed2cdf4bade79dd355fa96ee9700f5ff90b40b1be0c43",
+      "accessed_at": "2026-10-10T21:03:46.939640+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/ochromonas-medium",
+      "parsed": true,
+      "canonical_text_sha256": "f89b8ae21d3c6e2c4a5425d6114ad5d07643569487b7a79d39b8cc940af8d085"
+    },
+    {
+      "reference": "https://utex.org/products/p49-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/p49-medium.html",
+      "sha256": "56afead1a358b74b12e54c015aa2321d60af7c298bf6ec46b1d2c94017392f87",
+      "accessed_at": "2026-10-10T21:03:48.386702+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/p49-medium",
+      "parsed": true,
+      "canonical_text_sha256": "363d7ff7693857d40a9c8e6d953304e646ec8c2080104a83fa1770ebb4415c3d"
+    },
+    {
+      "reference": "https://utex.org/products/polytomella-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/polytomella-medium.html",
+      "sha256": "0af35cf5d06755043074a8443c210c3fba53eb46223dc8e36837563afe977751",
+      "accessed_at": "2026-10-10T21:03:49.762213+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/polytomella-medium",
+      "parsed": true,
+      "canonical_text_sha256": "063064f11df3643ba9676e76dea62903d2239b4899c7924a6bb8f9ab3a94503b"
+    },
+    {
+      "reference": "https://utex.org/products/porphyridium-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/porphyridium-medium.html",
+      "sha256": "3dde9be7158fc231dbb61aef1614264b7d04a84a3836a172b7670ff7795be9f2",
+      "accessed_at": "2026-10-10T21:03:51.119703+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/porphyridium-medium",
+      "parsed": true,
+      "canonical_text_sha256": "d9a2c1c9d7c48641875c79e29d21f0a71d56af0e6a4dd7b7ea63f0bc51844d5f"
+    },
+    {
+      "reference": "https://utex.org/products/ss-diatom-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/ss-diatom-medium.html",
+      "sha256": "b6e9fb74c5016185a042007827dd1eafd0697b67797932bc12ffa61ff4480a8b",
+      "accessed_at": "2026-10-10T21:03:52.546342+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/ss-diatom-medium",
+      "parsed": true,
+      "canonical_text_sha256": "bd68824a721bb42ce1733b905815ccf38be26d3cf471f3fcf97e900f6f4f8577"
+    },
+    {
+      "reference": "https://utex.org/products/snow-algae-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/snow-algae-medium.html",
+      "sha256": "4ce6b3d4e5ccacbf13a880e6909ab251c5e9051cc2abc9981ffe129002fe7336",
+      "accessed_at": "2026-10-10T21:03:54.018605+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/snow-algae-medium",
+      "parsed": true,
+      "canonical_text_sha256": "eca2b90545b67a210734208f1f51f2c11492a23c8260ff516def4cbb0a0d8fcc"
+    },
+    {
+      "reference": "https://utex.org/products/soilwater-bar-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/soilwater-bar-medium.html",
+      "sha256": "2153ab4f1340719e5bf5b55131138f486634e969136af6e24ba933b27e9d1c00",
+      "accessed_at": "2026-10-10T21:03:55.359524+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/soilwater-bar-medium",
+      "parsed": true,
+      "canonical_text_sha256": "44a50d4af6d8033fc21e2673ad9b54ac94f12e5686cffe59f7694662faa0cc2a"
+    },
+    {
+      "reference": "https://utex.org/products/soilwater-gr-minus-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/soilwater-gr-minus-medium.html",
+      "sha256": "ab1f67ae71319557e0021defed6237f4bd1f864316863b4ec3fc8d9aad1a5b34",
+      "accessed_at": "2026-10-10T21:03:56.691256+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/soilwater-gr-minus-medium",
+      "parsed": true,
+      "canonical_text_sha256": "81777b5aa3d74225eae7835276cf4372b2eb7a0b2b17e90411223756be643d45"
+    },
+    {
+      "reference": "https://utex.org/products/soilwater-gr-minus-nh4-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/soilwater-gr-minus-nh4-medium.html",
+      "sha256": "1c3c1e43a9f6f0ba0ed39f0b624600e98e64ebdc6604c7e37b4814960e91b234",
+      "accessed_at": "2026-10-10T21:03:58.063237+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/soilwater-gr-minus-nh4-medium",
+      "parsed": true,
+      "canonical_text_sha256": "22f7abcb67032b2a7b1cbf1f1b8148e21ee2b2eb3b3fcf4a4cb89792deb00656"
+    },
+    {
+      "reference": "https://utex.org/products/soilwater-pea-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/soilwater-pea-medium.html",
+      "sha256": "945523eb50b5d37dfc06d1c92e63ea61185b4dc441a056e573e3f1d6218275c8",
+      "accessed_at": "2026-10-10T21:03:59.408655+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/soilwater-pea-medium",
+      "parsed": true,
+      "canonical_text_sha256": "0e4a4005e2915a4b49c181e491394e2d65a63b5e92728d9dba5e3e1beb9e43d6"
+    },
+    {
+      "reference": "https://utex.org/products/soilwater-peat-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/soilwater-peat-medium.html",
+      "sha256": "30da3bff32460904424a75e2fbd8a779cbd9158cb214226315d5c9a31417956a",
+      "accessed_at": "2026-10-10T21:04:00.766891+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/soilwater-peat-medium",
+      "parsed": true,
+      "canonical_text_sha256": "dabef689b6b0dae09dd5c71d70031a9af5a2a4f0315ad6ee592c33949a59bd0d"
+    },
+    {
+      "reference": "https://utex.org/products/soilwater-vt-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/soilwater-vt-medium.html",
+      "sha256": "b6848ca7c4027b13a612a71fad0e014917ef71331639d68cf8231d7a78515738",
+      "accessed_at": "2026-10-10T21:04:02.116900+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/soilwater-vt-medium",
+      "parsed": true,
+      "canonical_text_sha256": "2d9da58f8f021a107501601ab56ba23b2c7d7f1e3ce644b6d7a81171b05148fa"
+    },
+    {
+      "reference": "https://utex.org/products/spirulina-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/spirulina-medium.html",
+      "sha256": "6c835dc75b6f7057910af6188915acdd7bab9153c18cffd1fad526d8ba40e8d0",
+      "accessed_at": "2026-10-10T21:04:03.537985+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/spirulina-medium",
+      "parsed": true,
+      "canonical_text_sha256": "85efb9ed2df45dcee29cdf2533aa9df581f32be7c17e30c0a271bc1963cdf0c0"
+    },
+    {
+      "reference": "https://utex.org/products/tap-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/tap-medium.html",
+      "sha256": "18a0a39d745ac2eb9ca9fa530e33c6a0ea301bf054478c4369365ef008ba1811",
+      "accessed_at": "2026-10-10T21:04:05.047480+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/tap-medium",
+      "parsed": true,
+      "canonical_text_sha256": "7e4a6e62b53810f7e94972a01ae4f23722c5aed510cf08b585fa8e3df498ea17"
+    },
+    {
+      "reference": "https://utex.org/products/trebouxia-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/trebouxia-medium.html",
+      "sha256": "9546ce7062d48ea83e0dd079f92d5849d749bb759b998a306a15fbb17b51a59e",
+      "accessed_at": "2026-10-10T21:04:06.469809+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/trebouxia-medium",
+      "parsed": true,
+      "canonical_text_sha256": "7884a8b5b9d36e1f1678bddfd5f04b478d7db17b6e103a449db72021de771fb2"
+    },
+    {
+      "reference": "https://utex.org/products/volvocacean-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/volvocacean-medium.html",
+      "sha256": "6a0e418107e8796a002e43356850232d77df7cde9e005fe73df27511da8f29db",
+      "accessed_at": "2026-10-10T21:04:07.848534+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/volvocacean-medium",
+      "parsed": true,
+      "canonical_text_sha256": "8391bb0bfa29fd3757fa5091e1e949cbc634e133124d4f537588d7765f6fcef9"
+    },
+    {
+      "reference": "https://utex.org/products/volvox-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/volvox-medium.html",
+      "sha256": "48f699db40df91c9aa8292db61b6c58b6f1886a27cba4b737c4c30acb4380f1f",
+      "accessed_at": "2026-10-10T21:04:09.174347+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/volvox-medium",
+      "parsed": true,
+      "canonical_text_sha256": "9f165620bd163d07ef0aad33f38a815c3dac8bcde8b3948eb2a3ee89343715e0"
+    },
+    {
+      "reference": "https://utex.org/products/wc-plus-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/wc-plus-medium.html",
+      "sha256": "b37961b931cc54f20d4014a8b3a90671d089d0e4562a88fedc83db3ca87eddff",
+      "accessed_at": "2026-10-10T21:04:10.566970+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/wc-plus-medium",
+      "parsed": true,
+      "canonical_text_sha256": "643edadb3e1a184251b70bacad0d9cc636c3885372f988254130beb94a867dde"
+    },
+    {
+      "reference": "https://utex.org/products/wc-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/wc-medium.html",
+      "sha256": "55dc2a90c5518237d10bb2aa0ffd2b009098a26dafc8d315a7605160398da4cc",
+      "accessed_at": "2026-10-10T21:04:11.924121+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/wc-medium",
+      "parsed": true,
+      "canonical_text_sha256": "2d7ed4e02ecd5e891b07ac401cee14d1f16929647711375c69e609d379a739b0"
+    },
+    {
+      "reference": "https://utex.org/products/waris-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/waris-medium.html",
+      "sha256": "5546445b354c679a73102648a3e9a7b15f196c9fe60b9c0d5b0f16ff663e96e9",
+      "accessed_at": "2026-10-10T21:04:13.318342+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/waris-medium",
+      "parsed": true,
+      "canonical_text_sha256": "4dff9c0209cf2cb9bf36f5faa747b98895b2bf5b5297ba86efdde73a816162fa"
+    },
+    {
+      "reference": "https://utex.org/products/a-plus-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/a-plus-medium.html",
+      "sha256": "50d479424203da77c0e6252d7842367f8259ebe30ebaeeb9a85b27bfbfcf827f",
+      "accessed_at": "2026-10-10T21:04:14.673738+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/a-plus-medium",
+      "parsed": true,
+      "canonical_text_sha256": "9c435e76a351d5e9abe6bbae9bd885979bcb2454f4ade0f413e07e21f7385ca9"
+    },
+    {
+      "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/bg-11-1-plus-0-point-36-percent-nacl-medium.html",
+      "sha256": "d61ca5180d12faac0db9e872835da75dc209358ad1ba39e1ef41ea51e8adb825",
+      "accessed_at": "2026-10-10T21:04:16.067007+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
+      "parsed": true,
+      "canonical_text_sha256": "bf0292108a4122d812111d35903db97a7675b5bf8ef7bd9d5c4bb0772fd5749f"
+    },
+    {
+      "reference": "https://utex.org/products/bg-11-plus-1-percent-nacl-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/bg-11-plus-1-percent-nacl-medium.html",
+      "sha256": "aad88a80dbabfdfc5ac38395d2aefa37c7a604ce84d5ff3e31329eb2e3a19761",
+      "accessed_at": "2026-10-10T21:04:17.538387+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/bg-11-plus-1-percent-nacl-medium",
+      "parsed": true,
+      "canonical_text_sha256": "b823a72b6919aaefa89b8d3f24e36012904ca2627fa11dbf252192a132e28380"
+    },
+    {
+      "reference": "https://utex.org/products/bg-11-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/bg-11-medium.html",
+      "sha256": "13ee72fab0159d87691535c0bc2bd02b9405f442db74371dc7f665508f39d8a4",
+      "accessed_at": "2026-10-10T21:04:18.917034+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/bg-11-medium",
+      "parsed": true,
+      "canonical_text_sha256": "69b7dee2466a3a5f3b4131d3c6c84e228e99a0c43a2939b8051c7c748257ccb1"
+    },
+    {
+      "reference": "https://utex.org/products/bg-11-n-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/bg-11-n-medium.html",
+      "sha256": "ca382b4841338dcbce8f7cedf643292b641061c70baaa53276c25265c1d863f3",
+      "accessed_at": "2026-10-10T21:04:20.337350+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/bg-11-n-medium",
+      "parsed": true,
+      "canonical_text_sha256": "0aa1a92504e1a682ce530ef58d3dedfb1f55899134e126349732cef613a40b73"
+    },
+    {
+      "reference": "https://utex.org/products/chus-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/chus-medium.html",
+      "sha256": "2750b6de3d565e2aa1af524335f238f9360e825a76c7486d45639c54fc7dc6fa",
+      "accessed_at": "2026-10-10T21:04:21.768215+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/chus-medium",
+      "parsed": true,
+      "canonical_text_sha256": "3f5e02d4e94a47aa6616d87c436952ddfdef24e294a674a099bd9a92fb0975a5"
+    },
+    {
+      "reference": "https://utex.org/products/cr1-s-diatom-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/cr1-s-diatom-medium.html",
+      "sha256": "4512b746ebb5dff2a6961f92263e216b3c2d5d996aa1b228cb1649649b81fde7",
+      "accessed_at": "2026-10-10T21:04:23.167079+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/cr1-s-diatom-medium",
+      "parsed": true,
+      "canonical_text_sha256": "e905e16788883103a413ad27a9a36879e07d805d090393226f04a652186eb0f1"
+    },
+    {
+      "reference": "https://utex.org/products/erdschreibers-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/erdschreibers-medium.html",
+      "sha256": "0e37a7bab8798460285ec97ff96bdc28251528a74a5d3d24511e41467b7dc6b6",
+      "accessed_at": "2026-10-10T21:04:24.530721+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/erdschreibers-medium",
+      "parsed": true,
+      "canonical_text_sha256": "dbf885c655951b3fa8940d421b3f4769ba9f855347250ead2dbafd37525ebb96"
+    },
+    {
+      "reference": "https://utex.org/products/mes-volvox-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/mes-volvox-medium.html",
+      "sha256": "6c4c1ac59ad23d6a3e8b56202bcf3332c010b1286361685d3f7b072c4d7056c4",
+      "accessed_at": "2026-10-10T21:04:25.867179+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/mes-volvox-medium",
+      "parsed": true,
+      "canonical_text_sha256": "4981d7621ff8418df27ab73db1bc0c2635c6c7c2dabc709a8c02820bc575a00a"
+    },
+    {
+      "reference": "https://utex.org/products/soil-extract-plus-sodium-metasilicate-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/soil-extract-plus-sodium-metasilicate-medium.html",
+      "sha256": "0147bcf61edd528e993b6a53b6ffe044b580885bf56f1d3af68dfbc9ab668c0a",
+      "accessed_at": "2026-10-10T21:04:27.252078+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/soil-extract-plus-sodium-metasilicate-medium",
+      "parsed": true,
+      "canonical_text_sha256": "07bb4226f84328189b2b3cbb75b3d5cfe09a23c6ae2c31770b0065d4f7e5619c"
+    },
+    {
+      "reference": "https://utex.org/products/soilwater-gr-plus-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/soilwater-gr-plus-medium.html",
+      "sha256": "99826ace19f6467cb7b8bfc961eecc504bbc729169e12ad4f73025b6214ea5d6",
+      "accessed_at": "2026-10-10T21:04:28.551001+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/soilwater-gr-plus-medium",
+      "parsed": true,
+      "canonical_text_sha256": "667f976719b4e1eb201897e1848b053fb2d730c71190a84c929251c156f50791"
+    },
+    {
+      "reference": "https://utex.org/products/soilwater-gr-plus-nh4-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/soilwater-gr-plus-nh4-medium.html",
+      "sha256": "f66df0cb208b7af4b3a67cf410be028a17738b779b54365a2b577673915b881e",
+      "accessed_at": "2026-10-10T21:04:29.923621+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/soilwater-gr-plus-nh4-medium",
+      "parsed": true,
+      "canonical_text_sha256": "ccbb39001f453ee6c6e8818e83e83ad0713711a5864aa0950902dbf409fbc80d"
+    },
+    {
+      "reference": "https://utex.org/products/volvocacean-3n-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/volvocacean-3n-medium.html",
+      "sha256": "b58a1d2e87eab19cea52d50cf306240fe63ebb001a55448fbd44d66b51a14448",
+      "accessed_at": "2026-10-10T21:04:31.252444+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/volvocacean-3n-medium",
+      "parsed": true,
+      "canonical_text_sha256": "8ef071e7cbd0af89ec2fb37b5d659efc5887ccb5972c59d149b7c28a127a19ad"
+    },
+    {
+      "reference": "https://utex.org/products/volvox-dextrose-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/volvox-dextrose-medium.html",
+      "sha256": "fd9db9141115d32ae12e1a6335cd0767d62f8fdd5c202129e5be992d54964f92",
+      "accessed_at": "2026-10-10T21:04:32.605188+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/volvox-dextrose-medium",
+      "parsed": true,
+      "canonical_text_sha256": "0a1088b4671efdc8da66b4c7b0c94d98cb9c90148003d3e0931bbd214608d4e6"
+    },
+    {
+      "reference": "https://utex.org/products/waris-plus-soil-extract-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/waris-plus-soil-extract-medium.html",
+      "sha256": "23b4006406360154ec4470423d37369fac9f7faa5fd250393c4895e8efa4013c",
+      "accessed_at": "2026-10-10T21:04:33.967158+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/waris-plus-soil-extract-medium",
+      "parsed": true,
+      "canonical_text_sha256": "7f6fc5d0e2c84e221de9fd1e8e66e26e3a1ba7667eccb37d6e56033eda073c28"
+    },
+    {
+      "reference": "https://utex.org/products/one-half-soil-plus-seawater-medium",
+      "capture": "/tmp/utex-soil-seawater-captures-20261010/one-half-soil-plus-seawater-medium.html",
+      "sha256": "63604d4b3d618ca4a433b744cfb1c5cc91c42a7525097551559c31a9478843bf",
+      "accessed_at": "2026-10-10T08:09:59.882459+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/one-half-soil-plus-seawater-medium",
+      "parsed": true,
+      "canonical_text_sha256": "9c6e7adcd254b6e11dca751fa30cb397a7fb215f55388a89b4f7e29b4c74c5ae"
+    },
+    {
+      "reference": "https://utex.org/products/one-third-soil-plus-seawater-medium",
+      "capture": "/tmp/utex-soil-seawater-captures-20261010/one-third-soil-plus-seawater-medium.html",
+      "sha256": "d66543fda595eaae3161e1f42455c3d0ca3ae89ab43b2f81973f8cc845293537",
+      "accessed_at": "2026-10-10T08:10:01.651200+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/one-third-soil-plus-seawater-medium",
+      "parsed": true,
+      "canonical_text_sha256": "3f3de14a5c2cdbb51db5b2b150f858a344474fbcd6fae5789b0f4fe88b5af706"
+    },
+    {
+      "reference": "https://utex.org/products/one-fourth-soil-plus-seawater-medium",
+      "capture": "/tmp/utex-soil-seawater-captures-20261010/one-fourth-soil-plus-seawater-medium.html",
+      "sha256": "ea28d4d3d1716b6916c3bfbd1863dba17b4e0259c3f5f5aaf6668818e95c1658",
+      "accessed_at": "2026-10-10T08:10:03.146081+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/one-fourth-soil-plus-seawater-medium",
+      "parsed": true,
+      "canonical_text_sha256": "d14012292ec27bfbf50157e191e8d75f506797e6a6d149ba195c0ca3d0ff9868"
+    },
+    {
+      "reference": "https://utex.org/products/one-fifth-soil-plus-seawater-medium",
+      "capture": "/tmp/utex-soil-seawater-captures-20261010/one-fifth-soil-plus-seawater-medium.html",
+      "sha256": "ff1f541baf457c7b818b28329516d92879b29a3455103b76e4d09ef875516085",
+      "accessed_at": "2026-10-10T08:10:04.590309+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/one-fifth-soil-plus-seawater-medium",
+      "parsed": true,
+      "canonical_text_sha256": "2aa1431e58964ed2641dcd0d4d36c20e8a0eb663ed90d0cfab6a5048e3ea635a"
+    },
+    {
+      "reference": "https://utex.org/products/2x-soil-plus-seawater-medium",
+      "capture": "/tmp/utex-soil-seawater-captures-20261010/2x-soil-plus-seawater-medium.html",
+      "sha256": "8ea06b4aaf1e1b0ab0bd87fc38cde41457fb2037176199c991021562e3760913",
+      "accessed_at": "2026-10-10T08:10:06.163244+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/2x-soil-plus-seawater-medium",
+      "parsed": true,
+      "canonical_text_sha256": "2bb06e5cbaf6baa6d74b4cec38fb4ced96b949e02ead74a362344c82ee55326b"
+    },
+    {
+      "reference": "https://utex.org/products/five-thirds-soil-plus-seawater-agar-medium",
+      "capture": "/tmp/utex-soil-seawater-captures-20261010/five-thirds-soil-plus-seawater-agar-medium.html",
+      "sha256": "c6b221019c9c6b33ced4084a4c3e6d51f5d119dc3bdf53190625c004251c3142",
+      "accessed_at": "2026-10-10T08:10:07.693839+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/five-thirds-soil-plus-seawater-agar-medium",
+      "parsed": true,
+      "canonical_text_sha256": "20a92ed8df625938712b1309f45f35c0ad97cb38783ef86ce74363622a8939d5"
+    },
+    {
+      "reference": "https://utex.org/products/supplemented-seawater",
+      "capture": "/tmp/utex-soil-seawater-captures-20261010/supplemented-seawater.html",
+      "sha256": "e1a1391798fa14a0afaa7e51a8828b2ecbbcf73327424a7df86d06fa69fb3f45",
+      "accessed_at": "2026-10-10T08:10:09.187198+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/supplemented-seawater",
+      "parsed": true,
+      "canonical_text_sha256": "834bcd25baabda601c409b04cadee5f2d49035b672b305ffa0fc21abffec7b08"
+    },
+    {
+      "reference": "https://utex.org/products/soil-plus-seawater-medium",
+      "capture": "/tmp/utex-j-das-captures-20261010/soil-plus-seawater-medium.html",
+      "sha256": "5d9e44650f1cf5c166142e4cd82950fb27dc0f70a9d805270d7c1e50f05246f4",
+      "accessed_at": "2026-10-10T07:57:41.008002+00:00",
+      "accessed_on": null,
+      "http_status": 200,
+      "effective_url": "https://utex.org/products/soil-plus-seawater-medium",
+      "parsed": true,
+      "canonical_text_sha256": "4fe74b0904db91fcacae2369dd145e6aa96f21b57c01c0ca7151e4851458c058"
+    },
+    {
+      "reference": "https://utex.org/products/liver-extract-infusion",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/liver-extract-infusion.html",
+      "sha256": "ad076fe97ecf004e7331428801679fca9a0f10d4750c0a05ea2d48d741d10d6b",
+      "accessed_at": null,
+      "accessed_on": "2026-10-10",
+      "http_status": null,
+      "effective_url": null,
+      "parsed": true,
+      "canonical_text_sha256": "cc09191da18cd8249dd02700fe12fc99dca32bc3350e9706958eb25b5b6a27b6"
+    }
+  ],
+  "records": [
+    {
+      "path": "data/normalized_yaml/algae/soil_seawater_medium.yaml",
+      "proposal_sha256": "7f96da69c2c4704e84710195d4ebf793ac99c6d7dbc387c09d60994ed7240ed8",
+      "checks": [
+        {
+          "field": "ingredients[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/soil-plus-seawater-medium",
+          "snippet": "1 tsp/200 mL of Seawater",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[1].evidence[0].snippet",
+          "reference": "https://utex.org/products/soil-plus-seawater-medium",
+          "snippet": "200 mL",
+          "literal_match": true
+        },
+        {
+          "field": "variants[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/soil-plus-seawater-medium",
+          "snippet": "1 mg/200 mL of Seawater",
+          "literal_match": true
+        },
+        {
+          "field": "evidence[0].snippet",
+          "reference": "https://utex.org/products/soil-plus-seawater-medium",
+          "snippet": "CaCO3 (optional) (Fisher C 64)",
+          "literal_match": true
+        },
+        {
+          "field": "evidence[1].snippet",
+          "reference": "https://utex.org/products/one-third-soil-plus-seawater-medium",
+          "snippet": "67 mL",
+          "literal_match": true
+        }
+      ],
+      "titles": [
+        {
+          "reference": "https://utex.org/products/soil-plus-seawater-medium",
+          "title": "Soil+Seawater Medium | UTEX Culture Collection of Algae",
+          "exact_match": true
+        },
+        {
+          "reference": "https://utex.org/products/one-third-soil-plus-seawater-medium",
+          "title": "1/3 Soil+Seawater Medium | UTEX Culture Collection of Algae",
+          "exact_match": true
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/1_2_soil_seawater_medium.yaml",
+      "proposal_sha256": "cc315b57b42604dbee66cdcd3c3dff02f6824427a19c7138b06f988425cf496c",
+      "checks": [
+        {
+          "field": "ingredients[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/one-half-soil-plus-seawater-medium",
+          "snippet": "1 tsp",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[1].evidence[0].snippet",
+          "reference": "https://utex.org/products/one-half-soil-plus-seawater-medium",
+          "snippet": "100 mL",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[2].evidence[0].snippet",
+          "reference": "https://utex.org/products/one-half-soil-plus-seawater-medium",
+          "snippet": "100 mL",
+          "literal_match": true
+        },
+        {
+          "field": "variants[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/one-half-soil-plus-seawater-medium",
+          "snippet": "1 mg",
+          "literal_match": true
+        },
+        {
+          "field": "evidence[0].snippet",
+          "reference": "https://utex.org/products/one-half-soil-plus-seawater-medium",
+          "snippet": "CaCO3 (optional) (Fisher C 64)",
+          "literal_match": true
+        }
+      ],
+      "titles": [
+        {
+          "reference": "https://utex.org/products/one-half-soil-plus-seawater-medium",
+          "title": "1/2 Soil+Seawater Medium | UTEX Culture Collection of Algae",
+          "exact_match": true
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/1_3_soil_seawater_medium.yaml",
+      "proposal_sha256": "f45f1bbd7ca69eae0256383db80e00f10e4e110bf36202e5f83369b71090f4d4",
+      "checks": [
+        {
+          "field": "ingredients[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/one-third-soil-plus-seawater-medium",
+          "snippet": "1 tsp",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[1].evidence[0].snippet",
+          "reference": "https://utex.org/products/one-third-soil-plus-seawater-medium",
+          "snippet": "67 mL",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[2].evidence[0].snippet",
+          "reference": "https://utex.org/products/one-third-soil-plus-seawater-medium",
+          "snippet": "133 mL",
+          "literal_match": true
+        },
+        {
+          "field": "variants[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/one-third-soil-plus-seawater-medium",
+          "snippet": "1 mg",
+          "literal_match": true
+        },
+        {
+          "field": "evidence[0].snippet",
+          "reference": "https://utex.org/products/one-third-soil-plus-seawater-medium",
+          "snippet": "CaCO3 (optional) (Fisher C 64)",
+          "literal_match": true
+        }
+      ],
+      "titles": [
+        {
+          "reference": "https://utex.org/products/one-third-soil-plus-seawater-medium",
+          "title": "1/3 Soil+Seawater Medium | UTEX Culture Collection of Algae",
+          "exact_match": true
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/1_4_soil_seawater_medium.yaml",
+      "proposal_sha256": "4aba44da9167a8dda61c42769c84471f67de05bd43ace1ca01be93a453eff6b8",
+      "checks": [
+        {
+          "field": "ingredients[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/one-fourth-soil-plus-seawater-medium",
+          "snippet": "1 tsp",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[1].evidence[0].snippet",
+          "reference": "https://utex.org/products/one-fourth-soil-plus-seawater-medium",
+          "snippet": "50 mL",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[2].evidence[0].snippet",
+          "reference": "https://utex.org/products/one-fourth-soil-plus-seawater-medium",
+          "snippet": "150 mL",
+          "literal_match": true
+        },
+        {
+          "field": "variants[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/one-fourth-soil-plus-seawater-medium",
+          "snippet": "1 mg",
+          "literal_match": true
+        },
+        {
+          "field": "evidence[0].snippet",
+          "reference": "https://utex.org/products/one-fourth-soil-plus-seawater-medium",
+          "snippet": "CaCO3 (optional) (Fisher C 64)",
+          "literal_match": true
+        }
+      ],
+      "titles": [
+        {
+          "reference": "https://utex.org/products/one-fourth-soil-plus-seawater-medium",
+          "title": "1/4 Soil+Seawater Medium | UTEX Culture Collection of Algae",
+          "exact_match": true
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/1_5_soil_seawater_medium.yaml",
+      "proposal_sha256": "6cf1b3611f8f28202f71db13646da805ba8042f6fd140d89037d3836defc3dd9",
+      "checks": [
+        {
+          "field": "ingredients[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/one-fifth-soil-plus-seawater-medium",
+          "snippet": "1 tsp",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[1].evidence[0].snippet",
+          "reference": "https://utex.org/products/one-fifth-soil-plus-seawater-medium",
+          "snippet": "40 mL",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[2].evidence[0].snippet",
+          "reference": "https://utex.org/products/one-fifth-soil-plus-seawater-medium",
+          "snippet": "160 mL",
+          "literal_match": true
+        },
+        {
+          "field": "variants[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/one-fifth-soil-plus-seawater-medium",
+          "snippet": "1 mg",
+          "literal_match": true
+        },
+        {
+          "field": "evidence[0].snippet",
+          "reference": "https://utex.org/products/one-fifth-soil-plus-seawater-medium",
+          "snippet": "CaCO3 (optional) (Fisher C 64)",
+          "literal_match": true
+        }
+      ],
+      "titles": [
+        {
+          "reference": "https://utex.org/products/one-fifth-soil-plus-seawater-medium",
+          "title": "1/5 Soil+Seawater Medium | UTEX Culture Collection of Algae",
+          "exact_match": true
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/2x_soil_seawater_medium.yaml",
+      "proposal_sha256": "43ec2016d58cd4d42d56ff7085963a1df186b1ab9aee264e4cc380a67af298a4",
+      "checks": [
+        {
+          "field": "ingredients[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/2x-soil-plus-seawater-medium",
+          "snippet": "5 mL/200 mL of Supplemented Seawater",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[1].evidence[0].snippet",
+          "reference": "https://utex.org/products/2x-soil-plus-seawater-medium",
+          "snippet": "0.05 mM",
+          "literal_match": true
+        },
+        {
+          "field": "solutions[0].composition[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/supplemented-seawater",
+          "snippet": "900 mL",
+          "literal_match": true
+        },
+        {
+          "field": "solutions[0].composition[1].evidence[0].snippet",
+          "reference": "https://utex.org/products/supplemented-seawater",
+          "snippet": "23 g/L",
+          "literal_match": true
+        },
+        {
+          "field": "solutions[0].composition[2].evidence[0].snippet",
+          "reference": "https://utex.org/products/supplemented-seawater",
+          "snippet": "5 g/L",
+          "literal_match": true
+        },
+        {
+          "field": "solutions[0].composition[3].evidence[0].snippet",
+          "reference": "https://utex.org/products/supplemented-seawater",
+          "snippet": "4 g/L",
+          "literal_match": true
+        },
+        {
+          "field": "evidence[0].snippet",
+          "reference": "https://utex.org/products/2x-soil-plus-seawater-medium",
+          "snippet": "200 mL",
+          "literal_match": true
+        }
+      ],
+      "titles": [
+        {
+          "reference": "https://utex.org/products/2x-soil-plus-seawater-medium",
+          "title": "2X Soil+Seawater Medium | UTEX Culture Collection of Algae",
+          "exact_match": true
+        },
+        {
+          "reference": "https://utex.org/products/supplemented-seawater",
+          "title": "Supplemented Seawater Component Recipe | UTEX Culture Collection of Algae",
+          "exact_match": true
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/5_3_soil_seawater_agar_medium.yaml",
+      "proposal_sha256": "f475c2abb8d6727f39f076ade2f2cd5dfbc0f29f5b9fb6695af000ac9f168e1b",
+      "checks": [
+        {
+          "field": "ingredients[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/five-thirds-soil-plus-seawater-agar-medium",
+          "snippet": "15 g/L",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[1].evidence[0].snippet",
+          "reference": "https://utex.org/products/five-thirds-soil-plus-seawater-agar-medium",
+          "snippet": "Add 15 g of agar into the flask; do not mix.",
+          "literal_match": true
+        },
+        {
+          "field": "evidence[0].snippet",
+          "reference": "https://utex.org/products/five-thirds-soil-plus-seawater-agar-medium",
+          "snippet": "1 L",
+          "literal_match": true
+        }
+      ],
+      "titles": [
+        {
+          "reference": "https://utex.org/products/five-thirds-soil-plus-seawater-agar-medium",
+          "title": "5/3 Soil+Seawater Agar Medium | UTEX Culture Collection of Algae",
+          "exact_match": true
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/Malt_Medium.yaml",
+      "proposal_sha256": "ccd72158dddffb1f292d7cede17497b34ce47c56f4e12a60b981b3b873a55ff6",
+      "checks": [
+        {
+          "field": "ingredients[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/malt-medium",
+          "snippet": "33.6 g/500 mL dH2O",
+          "literal_match": true
+        },
+        {
+          "field": "variants[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/malt-medium",
+          "snippet": "For 1.5% agar medium add 7.5 g of agar into the flask; do not mix.",
+          "literal_match": true
+        }
+      ],
+      "titles": [
+        {
+          "reference": "https://utex.org/products/malt-medium",
+          "title": "Malt Medium | UTEX Culture Collection of Algae",
+          "exact_match": true
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/Euglena_Medium.yaml",
+      "proposal_sha256": "6039deb632108f0a728d85ef06dc94a497bac35c59828425c719d0a0f5e48d05",
+      "checks": [
+        {
+          "field": "ingredients[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/euglena-medium",
+          "snippet": "Bring the total volume to 1 L with dH2O.",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[1].evidence[0].snippet",
+          "reference": "https://utex.org/products/euglena-medium",
+          "snippet": "12.2 mM",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[2].evidence[0].snippet",
+          "reference": "https://utex.org/products/euglena-medium",
+          "snippet": "1 g/L",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[3].evidence[0].snippet",
+          "reference": "https://utex.org/products/euglena-medium",
+          "snippet": "2 g/L",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[4].evidence[0].snippet",
+          "reference": "https://utex.org/products/euglena-medium",
+          "snippet": "2 g/L",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[5].evidence[0].snippet",
+          "reference": "https://utex.org/products/euglena-medium",
+          "snippet": "0.07 mM",
+          "literal_match": true
+        },
+        {
+          "field": "variants[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/euglena-medium",
+          "snippet": "For 1.5% agar medium add 15 g of agar into the flask; do not mix.",
+          "literal_match": true
+        }
+      ],
+      "titles": [
+        {
+          "reference": "https://utex.org/products/euglena-medium",
+          "title": "Euglena Medium | UTEX Culture Collection of Algae",
+          "exact_match": true
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/Polytomella_Medium.yaml",
+      "proposal_sha256": "cd5850bc7d73a9623af6cda491368aaa6a0c823f0d8c44322e465a739436234a",
+      "checks": [
+        {
+          "field": "ingredients[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/polytomella-medium",
+          "snippet": "Bring total volume to 1 L with dH2O.",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[1].evidence[0].snippet",
+          "reference": "https://utex.org/products/polytomella-medium",
+          "snippet": "1 g/L",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[2].evidence[0].snippet",
+          "reference": "https://utex.org/products/polytomella-medium",
+          "snippet": "1 g/L",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[3].evidence[0].snippet",
+          "reference": "https://utex.org/products/polytomella-medium",
+          "snippet": "24.4 mM",
+          "literal_match": true
+        },
+        {
+          "field": "variants[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/polytomella-medium",
+          "snippet": "For 1.5% agar medium add 15 grams of agar into the flask; do not mix.",
+          "literal_match": true
+        }
+      ],
+      "titles": [
+        {
+          "reference": "https://utex.org/products/polytomella-medium",
+          "title": "Polytomella Medium | UTEX Culture Collection of Algae",
+          "exact_match": true
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/Ochromonas_Medium.yaml",
+      "proposal_sha256": "5390b664cd836f885ebe751b9d7e32c26df1b7b28d62737250d6651dfee17b95",
+      "checks": [
+        {
+          "field": "ingredients[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/ochromonas-medium",
+          "snippet": "Bring total volume to 1 L with dH2O.",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[1].evidence[0].snippet",
+          "reference": "https://utex.org/products/ochromonas-medium",
+          "snippet": "5.6 mM",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[2].evidence[0].snippet",
+          "reference": "https://utex.org/products/ochromonas-medium",
+          "snippet": "1 g/L",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[3].evidence[0].snippet",
+          "reference": "https://utex.org/products/ochromonas-medium",
+          "snippet": "1 g/L",
+          "literal_match": true
+        },
+        {
+          "field": "solutions[0].composition[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/liver-extract-infusion",
+          "snippet": "Bring the total volume to 50 mL with dH2O.",
+          "literal_match": true
+        },
+        {
+          "field": "solutions[0].composition[1].evidence[0].snippet",
+          "reference": "https://utex.org/products/liver-extract-infusion",
+          "snippet": "2.5 g/50 mL",
+          "literal_match": true
+        },
+        {
+          "field": "evidence[0].snippet",
+          "reference": "https://utex.org/products/ochromonas-medium",
+          "snippet": "40 mL/L",
+          "literal_match": true
+        },
+        {
+          "field": "evidence[1].snippet",
+          "reference": "https://utex.org/products/liver-extract-infusion",
+          "snippet": "Cover the flask, and place it into a 50 \u00b0C water bath for approximately 1 hour.",
+          "literal_match": true
+        }
+      ],
+      "titles": [
+        {
+          "reference": "https://utex.org/products/ochromonas-medium",
+          "title": "Ochromonas Medium | UTEX Culture Collection of Algae",
+          "exact_match": true
+        },
+        {
+          "reference": "https://utex.org/products/liver-extract-infusion",
+          "title": "Liver Extract Infusion Component Recipe | UTEX Culture Collection of Algae",
+          "exact_match": true
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/Trebouxia_Medium.yaml",
+      "proposal_sha256": "b5d933b4953f956ce390dbebe1991f5e8d4c96032a6a8dfdf2fda2bdc7083efe",
+      "checks": [
+        {
+          "field": "ingredients[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/trebouxia-medium",
+          "snippet": "10 g/L",
+          "literal_match": true
+        },
+        {
+          "field": "ingredients[1].evidence[0].snippet",
+          "reference": "https://utex.org/products/trebouxia-medium",
+          "snippet": "0.11 M",
+          "literal_match": true
+        },
+        {
+          "field": "evidence[0].snippet",
+          "reference": "https://utex.org/products/trebouxia-medium",
+          "snippet": "Bring total volume to 1 L with the Bristol Medium saved from step 1.",
+          "literal_match": true
+        },
+        {
+          "field": "variants[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/trebouxia-medium",
+          "snippet": "For 1.5% (w/v) agar medium: add 15 g of agar into the flask; do not mix.",
+          "literal_match": true
+        }
+      ],
+      "titles": [
+        {
+          "reference": "https://utex.org/products/trebouxia-medium",
+          "title": "Trebouxia Medium | UTEX Culture Collection of Algae",
+          "exact_match": true
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/1_2_Erdschreiber_Medium.yaml",
+      "proposal_sha256": "abace84870a563cff878c5e8c414a5f98442b5bb79620e53f14bd188ac173fb2",
+      "checks": [
+        {
+          "field": "ingredients[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/one-half-erdschreibers-medium",
+          "snippet": "500 mL",
+          "literal_match": true
+        },
+        {
+          "field": "evidence[0].snippet",
+          "reference": "https://utex.org/products/one-half-erdschreibers-medium",
+          "snippet": "500 mL",
+          "literal_match": true
+        }
+      ],
+      "titles": [
+        {
+          "reference": "https://utex.org/products/one-half-erdschreibers-medium",
+          "title": "1/2 Erdschreiber Medium | UTEX Culture Collection of Algae",
+          "exact_match": true
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/1_4_erdschreibers_medium.yaml",
+      "proposal_sha256": "b72e76be2b393f21050d9ec3e7cefb19472e1a1f9c49211d4ce15dc6445375c0",
+      "checks": [
+        {
+          "field": "ingredients[0].evidence[0].snippet",
+          "reference": "https://utex.org/products/one-fourth-erdschreibers-medium",
+          "snippet": "750 mL",
+          "literal_match": true
+        },
+        {
+          "field": "evidence[0].snippet",
+          "reference": "https://utex.org/products/one-fourth-erdschreibers-medium",
+          "snippet": "250 mL",
+          "literal_match": true
+        }
+      ],
+      "titles": [
+        {
+          "reference": "https://utex.org/products/one-fourth-erdschreibers-medium",
+          "title": "1/4 Erdschreiber's Medium | UTEX Culture Collection of Algae",
+          "exact_match": true
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/20_allen_80_erdschreiber_1_4_medium.yaml",
+      "proposal_sha256": "235da515815b371eeb0989fb3a71bf54edf89035eea357889fa2bdca004d68a1",
+      "checks": [
+        {
+          "field": "evidence[0].snippet",
+          "reference": "https://utex.org/products/20-percent-allen-plus-80-percent-erdschreibers-medium",
+          "snippet": "200 mL",
+          "literal_match": true
+        }
+      ],
+      "titles": [
+        {
+          "reference": "https://utex.org/products/20-percent-allen-plus-80-percent-erdschreibers-medium",
+          "title": "20% Allen + 80% Erdschreiber's Medium | UTEX Culture Collection of Algae",
+          "exact_match": true
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/Bold_1NV_Erdshreiber_1_1_Medium.yaml",
+      "proposal_sha256": "522982e4a8cf0b4e46deb93798c72137b225df43c582feb4ad0efd4ddb22fbb9",
+      "checks": [
+        {
+          "field": "evidence[0].snippet",
+          "reference": "https://utex.org/products/bold-1nv-erdschreibers-one-to-one-medium",
+          "snippet": "500 mL/L",
+          "literal_match": true
+        }
+      ],
+      "titles": [
+        {
+          "reference": "https://utex.org/products/bold-1nv-erdschreibers-one-to-one-medium",
+          "title": "Bold 1NV:Erdschreiber's (1:1) Medium | UTEX Culture Collection of Algae",
+          "exact_match": true
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/Bold_1NV_Erdshreiber_4_1_Medium.yaml",
+      "proposal_sha256": "6b3d06728869016dc4f2f8acdfa29b80b54cd6658d625059e44335fd902f927d",
+      "checks": [
+        {
+          "field": "evidence[0].snippet",
+          "reference": "https://utex.org/products/bold-1nv-erdschreibers-four-to-one-medium",
+          "snippet": "800 mL/L",
+          "literal_match": true
+        }
+      ],
+      "titles": [
+        {
+          "reference": "https://utex.org/products/bold-1nv-erdschreibers-four-to-one-medium",
+          "title": "Bold 1NV:Erdschreiber's (4:1) Medium | UTEX Culture Collection of Algae",
+          "exact_match": true
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/waris_soil_extract_medium.yaml",
+      "proposal_sha256": "208d304651dc28b5a4ab7d43d2e45c80b40dabed7e0bceb121dc2cb80a53253b",
+      "checks": [
+        {
+          "field": "evidence[0].snippet",
+          "reference": "https://utex.org/products/waris-plus-soil-extract-medium",
+          "snippet": "960 mL",
+          "literal_match": true
+        }
+      ],
+      "titles": [
+        {
+          "reference": "https://utex.org/products/waris-plus-soil-extract-medium",
+          "title": "Waris + Soil Extract Medium | UTEX Culture Collection of Algae",
+          "exact_match": true
+        }
+      ]
+    }
+  ],
+  "records_edited": 0,
+  "canonical_coverage_increment": 0,
+  "totals": {
+    "snippets": 69,
+    "titles": 21,
+    "records": 18
+  },
+  "unique_captures_checked": 73,
+  "limitation": "Parser acceptance of source layouts is not scientific concentration review or new review coverage. The liver-extract capture lacks recorded HTTP/effective-URL metadata; its canonical HTML identity is checked but live transport verification remains separate. No live requests, installed code changes, or authoritative record edits."
+}

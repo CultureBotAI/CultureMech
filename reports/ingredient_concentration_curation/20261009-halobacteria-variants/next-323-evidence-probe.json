@@ -1,0 +1,16 @@
+{
+  "terminal": true,
+  "records_edited": 0,
+  "status": "schema_gap_confirmed",
+  "target": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+  "target_sha256": "91cdb9a37c2cd48496c6039cbca7912b140c126ebc1f849c1877e52dfcdb212d",
+  "schema_sha256": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a",
+  "finding_sha256": "21eaa64cda0d9ccf63ec4da9bc762acbdb30de317ca95cf4d6e0e159161dff45",
+  "baseline_schema_errors": [],
+  "dose_without_evidence_schema_errors": [],
+  "dose_with_root_evidence_schema_errors": [
+    "Additional properties are not allowed ('evidence' was unexpected) in /"
+  ],
+  "generated_dataclass_error": "SolutionRecipe.__init__() got an unexpected keyword argument 'evidence'",
+  "decision": "Schema-valid quantity alone does not meet the user's evidence requirement. Add legitimate formulation evidence support and regenerate the dataclass/JSON Schema together; do not apply the evidence-free probe."
+}

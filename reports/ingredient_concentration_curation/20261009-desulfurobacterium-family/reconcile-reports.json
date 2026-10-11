@@ -1,0 +1,174 @@
+{
+  "terminal": true,
+  "phase": "reports",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/reconcile-reports-0.log",
+      "log_sha256": "8093a71d03946e2afec2b5291bfd49fffedd2da14c8408d82e71deedf842dac5"
+    }
+  ],
+  "source_sha256": "48c3b9d310293ee12ee7655e555076f7787b0d9f52a88ff0a2f9d27ab98710b9",
+  "plan_sha256": "8452f7a0ffa1de24471cac81be183e7eb5deddfa26c4b03578ada91040181a1f",
+  "normalized_count": 15910,
+  "canonical_reports": {
+    "data/normalized_yaml/bacterial/KOMODO_829_DESULFUROBACTERIUM_MEDIUM.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_829_DESULFUROBACTERIUM_MEDIUM.yaml.md",
+    "data/normalized_yaml/bacterial/KOMODO_829a_DESULFUROBACTERIUM_ATLANTICUM_MEDIUM.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_829a_DESULFUROBACTERIUM_ATLANTICUM_MEDIUM.yaml.md",
+    "data/normalized_yaml/bacterial/desulfurobacterium_atlanticum_medium.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/desulfurobacterium_atlanticum_medium.yaml.md",
+    "data/normalized_yaml/bacterial/desulfurobacterium_crinifex_medium.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/desulfurobacterium_crinifex_medium.yaml.md",
+    "data/normalized_yaml/bacterial/desulfurobacterium_indicum_medium.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/desulfurobacterium_indicum_medium.yaml.md",
+    "data/normalized_yaml/bacterial/desulfurobacterium_medium.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/desulfurobacterium_medium.yaml.md",
+    "data/normalized_yaml/bacterial/for_dsm_14290.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/for_dsm_14290.yaml.md",
+    "data/normalized_yaml/bacterial/for_dsm_15218_dsm_15521_dsm_15522_dsm_16304.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/for_dsm_15218_dsm_15521_dsm_15522_dsm_16304.yaml.md",
+    "data/normalized_yaml/bacterial/for_dsm_21157.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/for_dsm_21157.yaml.md",
+    "data/normalized_yaml/bacterial/medium_829_modified_for_dsm_16661.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/medium_829_modified_for_dsm_16661.yaml.md",
+    "data/normalized_yaml/bacterial/thermodesulfobacterium_hydrogeniphilum_medium.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/thermodesulfobacterium_hydrogeniphilum_medium.yaml.md",
+    "data/normalized_yaml/bacterial/TOGO_M2587_Desulfurobacterium_Medium.yaml": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/M2587.md",
+    "data/normalized_yaml/bacterial/solution_of_growth_stimulating_factors_medium_829.yaml": "reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/solution_of_growth_stimulating_factors_medium_829.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_1680_Growth-stimulating_factors.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-1000-1500/records/bacterial/mediadive_1680_Growth-stimulating_factors.yaml.md"
+  },
+  "updated_canonical_reports": [
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_829_DESULFUROBACTERIUM_MEDIUM.yaml.md",
+      "before_sha256": "1246797e6d3244e3cca332fc8ab4cc82f60a33ca765ee0e7b38c36be54446f3b",
+      "after_sha256": "820d09d379224c370fe0f1b2b2f850d127c0faf0b72971c8659f36ddf7b1a6e0"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_829a_DESULFUROBACTERIUM_ATLANTICUM_MEDIUM.yaml.md",
+      "before_sha256": "c422a8c8e462cc23b2f0834d0e22b5f6ed1be013a2781cd8a0082b141a0a060b",
+      "after_sha256": "08299f5bbff15b5fed4679eafb9c915bb3606b94d3595066d235c2a5db0a5bc9"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/desulfurobacterium_atlanticum_medium.yaml.md",
+      "before_sha256": "8143aa18a04359a58f635b48c5e71f8d3b08c16f33b96995962a8ce4df55b15a",
+      "after_sha256": "625c620671fd79fa1a1ffa71d5f23328d85909ad21911ec33be76ea1fb5392e1"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/desulfurobacterium_crinifex_medium.yaml.md",
+      "before_sha256": "edb24b5fc35c5a2fd0f946b127547040505b56ed4e7adcae36312e686d4a8023",
+      "after_sha256": "b09dd34b83a30078f43e00c96362d7baf5ee2fd744edd92b55d688d52f542c6a"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/desulfurobacterium_indicum_medium.yaml.md",
+      "before_sha256": "4f960f22f2049503fe8ff608d074892a16746611b1003e56a191cadf3ba34eb2",
+      "after_sha256": "183f69219f0c9839a92ce04bc91509b7b83dc2cefb44b003812d874c277591cf"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/desulfurobacterium_medium.yaml.md",
+      "before_sha256": "3359f5f13938236eded0ca45cb5c3d3dae25ec1f59a2aed7cf73f303cd19e200",
+      "after_sha256": "bb31e32ded0da7ce6cee3822cb4340a441e51439b59d38c5463b41234090a016"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/for_dsm_14290.yaml.md",
+      "before_sha256": "d622be3d23bc2e87242f7c4eac3881a70afb56ceef0d2cdd630c3e744893f4a7",
+      "after_sha256": "a63274e9cdfa105236137f29c72397d3cd3a61f755bfa1be39ce847d5f42bad3"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/for_dsm_15218_dsm_15521_dsm_15522_dsm_16304.yaml.md",
+      "before_sha256": "27b222a8f8fe9b3587582de74df7c47814677d2d74486597f6f1b9cfcfc016ad",
+      "after_sha256": "5bc4b6019c07e572e693b9dfdd8e79cd9820d312a6028aa13f4dea9ed14e172c"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/for_dsm_21157.yaml.md",
+      "before_sha256": "34be8eefdf2d12efd8f6a4d8372cda3da881e3bc8131de64834ad43480244c0c",
+      "after_sha256": "3f55bab2a8814cded2a5b397ad19f4449c5798b851e1551d3222a42e7679b6f6"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/medium_829_modified_for_dsm_16661.yaml.md",
+      "before_sha256": "60f970a43bd356991ab37dcddacdbcbd604c07a1cf4adca101a7bddb61a7c0b7",
+      "after_sha256": "a8476f8f4f66d824dd24cd19b6e152102186492494c5442d4530000187c1fe4d"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/thermodesulfobacterium_hydrogeniphilum_medium.yaml.md",
+      "before_sha256": "e3b9734b398f3353abeb74e0af1bf5a3a4cb18c5e8143172c038547ad9d7b507",
+      "after_sha256": "85b83f64b6c1f3f932ddfb1c93eeb6e9ec3050a8627ac96a3f4bf2010fa9a990"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/solution_of_growth_stimulating_factors_medium_829.yaml.md",
+      "before_sha256": "e66c69a9ec08a1ccb073ca91c7028d580f9f8da0c369936045478167ad4d3a3d",
+      "after_sha256": "7f43473f5dbce09b458a5ce451a9f50636ea555776f12d28d7b1c7289d4be293"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-1000-1500/records/bacterial/mediadive_1680_Growth-stimulating_factors.yaml.md",
+      "before_sha256": "dbad35a2af320cbdba92ffe11401df350dabbe956a268198cf2693f2ed035820",
+      "after_sha256": "ee356ecd81219396362f57644f969cfaa86b12319ab0f57f5572dfaecc1ae7b7"
+    }
+  ],
+  "cumulative_audit": {
+    "stock_nodes_relocated": 825,
+    "new_quantity_slots": 364,
+    "unsupported_quantity_slots_removed": 869,
+    "new_evidence": 35128,
+    "new_curation_history": 5437,
+    "new_references": 5770,
+    "stock_stage_concentrations_rebased": 199,
+    "stock_descriptors_added": 241,
+    "quantity_corrections": 1455,
+    "stock_dose_basis_corrections": 128,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 88,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 8,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 1,
+    "child_links_corrected": 7,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 14,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5232
+  },
+  "followup_unique_records": 11799,
+  "outside_this_followup": 4111,
+  "remaining_identity_candidates": {
+    "methylbutyrate_name": 46
+  },
+  "resolved_identity_candidates": [
+    "data/normalized_yaml/bacterial/KOMODO_829_DESULFUROBACTERIUM_MEDIUM.yaml",
+    "data/normalized_yaml/bacterial/KOMODO_829a_DESULFUROBACTERIUM_ATLANTICUM_MEDIUM.yaml",
+    "data/normalized_yaml/bacterial/TOGO_M2587_Desulfurobacterium_Medium.yaml",
+    "data/normalized_yaml/bacterial/desulfurobacterium_medium.yaml",
+    "data/normalized_yaml/bacterial/for_dsm_14290.yaml",
+    "data/normalized_yaml/bacterial/for_dsm_15218_dsm_15521_dsm_15522_dsm_16304.yaml",
+    "data/normalized_yaml/bacterial/for_dsm_21157.yaml",
+    "data/normalized_yaml/bacterial/medium_829_modified_for_dsm_16661.yaml",
+    "data/normalized_yaml/bacterial/thermodesulfobacterium_hydrogeniphilum_medium.yaml"
+  ],
+  "separate_m142_queue": 71
+}

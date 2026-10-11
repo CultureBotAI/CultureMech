@@ -1,0 +1,165 @@
+{
+  "source_sha256": "d99a375e68d2bef008b27eae1eaa6da6fc414a7d67046a15a5d32a2661f813d2",
+  "files": [
+    {
+      "target": "data/normalized_yaml/bacterial_index.json",
+      "preview": "/tmp/ingredient-media-20261007/lactalbumin-formulations-index-preview/bacterial_index.json",
+      "before_sha256": "a7590ba205beb13d43f84a5743db15beb951a04aaf3d784d88c814676afb7786",
+      "after_sha256": "33ac1a0dc50f1717dc8c71acdda434da2eeb565220463137c16f384065b113ee",
+      "changes": [
+        {
+          "key": "CultureMech:003533",
+          "id": "CultureMech:003533",
+          "changes": {
+            "ingredient_count": [
+              12,
+              15
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008873",
+          "id": "CultureMech:008873",
+          "changes": {
+            "solution_count": [
+              null,
+              1
+            ],
+            "ingredient_count": [
+              13,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:000443",
+          "id": "CultureMech:000443",
+          "changes": {
+            "solution_count": [
+              null,
+              2
+            ],
+            "ingredient_count": [
+              12,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_komodo_index.json",
+      "preview": "/tmp/ingredient-media-20261007/lactalbumin-formulations-index-preview/by_source_komodo_index.json",
+      "before_sha256": "3f2763eec721c9375df285b1cc2102a3770a7baec588b9f0581091592b1895a8",
+      "after_sha256": "3c53c62416bd8770ec4a2f214670e48787c917a6facd434ef2c92fd0446a8660",
+      "changes": [
+        {
+          "key": "CultureMech:003533",
+          "id": "CultureMech:003533",
+          "changes": {
+            "ingredient_count": [
+              12,
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_mediadive_index.json",
+      "preview": "/tmp/ingredient-media-20261007/lactalbumin-formulations-index-preview/by_source_mediadive_index.json",
+      "before_sha256": "3f606473b473160d50f960a36a1e3047ddc0a2c401be2f3c3833d71c4ba3f310",
+      "after_sha256": "deb660aecf8daa9762150a9d7e7211ea6cf637818eff4c47793bcc023cfcc110",
+      "changes": [
+        {
+          "key": "CultureMech:000443",
+          "id": "CultureMech:000443",
+          "changes": {
+            "solution_count": [
+              null,
+              2
+            ],
+            "ingredient_count": [
+              12,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_togo_index.json",
+      "preview": "/tmp/ingredient-media-20261007/lactalbumin-formulations-index-preview/by_source_togo_index.json",
+      "before_sha256": "687187166ce0b9a3d4c18e83a54bc4c182af64a8eab0f66bbaa4592bdf76e52c",
+      "after_sha256": "53da94f28705b4b558f925fb6a75c22ea259b9c55ae443553d63b736e1b540f3",
+      "changes": [
+        {
+          "key": "CultureMech:008873",
+          "id": "CultureMech:008873",
+          "changes": {
+            "solution_count": [
+              null,
+              1
+            ],
+            "ingredient_count": [
+              13,
+              1
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_index.json",
+      "preview": "/tmp/ingredient-media-20261007/lactalbumin-formulations-index-preview/recipe_index.json",
+      "before_sha256": "32bd6fe3a06a4e05c0018a0f307ab6b5669adaf499df1d021d89e61e16ee526b",
+      "after_sha256": "6f6ee76527101d614b32d29a8d1cf7ccba401fa81bad6a4407289ad228e30d60",
+      "changes": [
+        {
+          "key": "CultureMech:003533",
+          "id": "CultureMech:003533",
+          "changes": {
+            "ingredient_count": [
+              12,
+              15
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008873",
+          "id": "CultureMech:008873",
+          "changes": {
+            "solution_count": [
+              null,
+              1
+            ],
+            "ingredient_count": [
+              13,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:000443",
+          "id": "CultureMech:000443",
+          "changes": {
+            "solution_count": [
+              null,
+              2
+            ],
+            "ingredient_count": [
+              12,
+              0
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "only_reviewed_sources_changed": true,
+  "metadata_changed_ids": [
+    "CultureMech:000443",
+    "CultureMech:003533",
+    "CultureMech:008873"
+  ]
+}

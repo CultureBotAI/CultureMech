@@ -1,0 +1,624 @@
+{
+  "terminal": true,
+  "records_edited": false,
+  "state": "Structural source coverage with explicit candidate mappings; not proof of chemical equivalence or approval to apply quantities.",
+  "inspection_sha256": "a9061f0c1610393c9a78338952fb31acac5f16d0c769cfd37fea010007d8ab29",
+  "old_slots_sha256": "3d6cea9470d6ed92fffbf910f43967d305549755b01c0cbed10cec5947361e23",
+  "normalized_sha256": "48c3b9d310293ee12ee7655e555076f7787b0d9f52a88ff0a2f9d27ab98710b9",
+  "records": [
+    {
+      "key": "K1245",
+      "path": "data/normalized_yaml/bacterial/KOMODO_1245_OTEB-MEDIUM.yaml",
+      "existing_quantity_fields": 28,
+      "source_rows": 27,
+      "candidate_mapped_source_rows": 25,
+      "unrepresented_source_rows": [
+        {
+          "pointer": [
+            "Metabolites list",
+            1
+          ],
+          "row": [
+            "Distilled Water",
+            "H2O",
+            "SEED-cpd00001###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Distilled Water H2O SEED-cpd00001### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            24
+          ],
+          "row": [
+            "2-Methylbutyric Acid",
+            "2-methylbutyric acid",
+            "2-methylbutyric acid#",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "2-Methylbutyric Acid 2-methylbutyric acid 2-methylbutyric acid# null null",
+          "scientific_review_status": "pending"
+        }
+      ],
+      "old_fields_without_recipe_rows": [
+        {
+          "pointer": [
+            "ingredients",
+            12,
+            "concentration"
+          ],
+          "ingredient": "Tryptone",
+          "old": {
+            "value": "10.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "supplier-tagged LB expansion absent from exact recipe; distinguish source yeast/salt before proposing removal",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            13,
+            "concentration"
+          ],
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "5.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "supplier-tagged LB expansion absent from exact recipe; distinguish source yeast/salt before proposing removal",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            14,
+            "concentration"
+          ],
+          "ingredient": "Sodium chloride",
+          "old": {
+            "value": "10.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "supplier-tagged LB expansion absent from exact recipe; distinguish source yeast/salt before proposing removal",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        }
+      ]
+    },
+    {
+      "key": "S2474",
+      "path": "data/normalized_yaml/bacterial/mediadive_2474_Main_sol_1245.yaml",
+      "existing_quantity_fields": 18,
+      "source_rows": 18,
+      "candidate_mapped_source_rows": 17,
+      "unrepresented_source_rows": [
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            16
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 17,
+            "compound": null,
+            "compound_id": null,
+            "solution": "Sugar Stock Solution",
+            "solution_id": 5688,
+            "condition": null,
+            "attribute": null,
+            "amount": 100,
+            "unit": "ml",
+            "g_l": null,
+            "mmol_l": null,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+          "snippet": "{\n                \"recipe_order\": 17,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Sugar Stock Solution\",\n                \"solution_id\": 5688,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        }
+      ],
+      "old_fields_without_recipe_rows": [
+        {
+          "pointer": [
+            "ingredients",
+            0,
+            "concentration"
+          ],
+          "ingredient": "See source for composition",
+          "old": {
+            "value": "variable",
+            "unit": "VARIABLE"
+          },
+          "old_evidence": [],
+          "mapping_status": "placeholder; source composition exists; no quantitative source claim",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        }
+      ]
+    },
+    {
+      "key": "K1245_18691",
+      "path": "data/normalized_yaml/bacterial/medium_1245_modified_for_dsm_18691.yaml",
+      "existing_quantity_fields": 28,
+      "source_rows": 28,
+      "candidate_mapped_source_rows": 25,
+      "unrepresented_source_rows": [
+        {
+          "pointer": [
+            "Metabolites list",
+            1
+          ],
+          "row": [
+            "Distilled Water",
+            "H2O",
+            "SEED-cpd00001###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Distilled Water H2O SEED-cpd00001### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            7
+          ],
+          "row": [
+            "Calf Serum",
+            "Calf serum",
+            "rich-serum#",
+            "99.70",
+            "0.10"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Calf Serum Calf serum rich-serum# 99.70 0.10",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            25
+          ],
+          "row": [
+            "2-Methylbutyric Acid",
+            "2-methylbutyric acid",
+            "2-methylbutyric acid#",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "2-Methylbutyric Acid 2-methylbutyric acid 2-methylbutyric acid# null null",
+          "scientific_review_status": "pending"
+        }
+      ],
+      "old_fields_without_recipe_rows": [
+        {
+          "pointer": [
+            "ingredients",
+            12,
+            "concentration"
+          ],
+          "ingredient": "Tryptone",
+          "old": {
+            "value": "10.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "supplier-tagged LB expansion absent from exact recipe; distinguish source yeast/salt before proposing removal",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            13,
+            "concentration"
+          ],
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "5.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "supplier-tagged LB expansion absent from exact recipe; distinguish source yeast/salt before proposing removal",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            14,
+            "concentration"
+          ],
+          "ingredient": "Sodium chloride",
+          "old": {
+            "value": "10.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "supplier-tagged LB expansion absent from exact recipe; distinguish source yeast/salt before proposing removal",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        }
+      ]
+    },
+    {
+      "key": "D1245",
+      "path": "data/normalized_yaml/bacterial/oteb_medium.yaml",
+      "existing_quantity_fields": 28,
+      "source_rows": 30,
+      "candidate_mapped_source_rows": 26,
+      "unrepresented_source_rows": [
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            12
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 13,
+            "compound": "2-Methylbutyric acid",
+            "compound_id": 480,
+            "amount": 0.1,
+            "unit": "ml",
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"2-Methylbutyric acid\",\n                        \"compound_id\": 480,\n                        \"amount\": 0.1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            16
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 17,
+            "solution": "Sugar Stock Solution",
+            "solution_id": 5688,
+            "amount": 100,
+            "unit": "ml",
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 17,\n                        \"solution\": \"Sugar Stock Solution\",\n                        \"solution_id\": 5688,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            17
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 18,
+            "compound": "Distilled water",
+            "compound_id": 4,
+            "amount": 800,
+            "unit": "ml",
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 18,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 800,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            11
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 12,
+            "compound": "Distilled water",
+            "compound_id": 4,
+            "amount": 1000,
+            "unit": "ml",
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        }
+      ],
+      "old_fields_without_recipe_rows": [
+        {
+          "pointer": [
+            "ingredients",
+            12,
+            "concentration"
+          ],
+          "ingredient": "Tryptone",
+          "old": {
+            "value": "10.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "supplier-tagged LB expansion absent from exact recipe; distinguish source yeast/salt before proposing removal",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            13,
+            "concentration"
+          ],
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "5.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "supplier-tagged LB expansion absent from exact recipe; distinguish source yeast/salt before proposing removal",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            14,
+            "concentration"
+          ],
+          "ingredient": "Sodium chloride",
+          "old": {
+            "value": "10.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "supplier-tagged LB expansion absent from exact recipe; distinguish source yeast/salt before proposing removal",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        }
+      ]
+    },
+    {
+      "key": "K6000",
+      "path": "data/normalized_yaml/bacterial/sugar_stock_solution_medium_1245.yaml",
+      "existing_quantity_fields": 0,
+      "source_rows": 11,
+      "candidate_mapped_source_rows": 0,
+      "unrepresented_source_rows": [
+        {
+          "pointer": [
+            "Metabolites list",
+            0
+          ],
+          "row": [
+            "Xylose",
+            "xylose",
+            "SEED-cpd00154###",
+            "8.00",
+            "0.05"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Xylose xylose SEED-cpd00154### 8.00 0.05",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            1
+          ],
+          "row": [
+            "Distilled Water",
+            "H2O",
+            "SEED-cpd00001###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Distilled Water H2O SEED-cpd00001### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            2
+          ],
+          "row": [
+            "Thiamine Pyrophosphate",
+            "Thiamine-HCl",
+            "SEED-cpd00099#cpd00305##",
+            "7.50E-4",
+            "2.50E-6"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Thiamine Pyrophosphate Thiamine-HCl SEED-cpd00099#cpd00305## 7.50E-4 2.50E-6",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            3
+          ],
+          "row": [
+            "Sucrose",
+            "Sucrose",
+            "SEED-cpd00076###",
+            "8.00",
+            "0.02"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Sucrose Sucrose SEED-cpd00076### 8.00 0.02",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            4
+          ],
+          "row": [
+            "Ribose",
+            "Ribose",
+            "SEED-cpd05267###",
+            "8.00",
+            "0.05"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Ribose Ribose SEED-cpd05267### 8.00 0.05",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            5
+          ],
+          "row": [
+            "Starch",
+            "Starch",
+            "SEED-cpd11657###",
+            "8.00",
+            "0.01"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Starch Starch SEED-cpd11657### 8.00 0.01",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            6
+          ],
+          "row": [
+            "Pectin",
+            "Pectin",
+            "SEED-cpd11601###",
+            "8.00",
+            "0.01"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Pectin Pectin SEED-cpd11601### 8.00 0.01",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            7
+          ],
+          "row": [
+            "Glucose",
+            "D-Glucose",
+            "SEED-cpd00027###",
+            "8.00",
+            "0.04"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Glucose D-Glucose SEED-cpd00027### 8.00 0.04",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            8
+          ],
+          "row": [
+            "Maltose",
+            "Maltose",
+            "SEED-cpd00179###",
+            "16.00",
+            "0.05"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Maltose Maltose SEED-cpd00179### 16.00 0.05",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            9
+          ],
+          "row": [
+            "Sodium Pyruvate",
+            "Sodium pyruvate",
+            "SEED-cpd00020#cpd00971##",
+            "8.00",
+            "0.07"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Sodium Pyruvate Sodium pyruvate SEED-cpd00020#cpd00971## 8.00 0.07",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            10
+          ],
+          "row": [
+            "Fructose",
+            "D-Fructose",
+            "SEED-cpd00082###",
+            "8.00",
+            "0.04"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Fructose D-Fructose SEED-cpd00082### 8.00 0.04",
+          "scientific_review_status": "pending"
+        }
+      ],
+      "old_fields_without_recipe_rows": []
+    },
+    {
+      "key": "S5688",
+      "path": "data/normalized_yaml/bacterial/mediadive_5688_Sugar_Stock_Solution.yaml",
+      "existing_quantity_fields": 13,
+      "source_rows": 12,
+      "candidate_mapped_source_rows": 12,
+      "unrepresented_source_rows": [],
+      "old_fields_without_recipe_rows": [
+        {
+          "pointer": [
+            "ingredients",
+            0,
+            "concentration"
+          ],
+          "ingredient": "See source for composition",
+          "old": {
+            "value": "variable",
+            "unit": "VARIABLE"
+          },
+          "old_evidence": [],
+          "mapping_status": "placeholder; source composition exists; no quantitative source claim",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        }
+      ]
+    }
+  ],
+  "source_rows": 126,
+  "candidate_mapped_source_rows": 105,
+  "unrepresented_source_rows": 21,
+  "old_fields_without_recipe_rows": 11,
+  "limits": [
+    "Nine source-absent supplier-tagged LB fields and two placeholders require explicitly supported removal decisions.",
+    "One collapsed old maltose field has two distinct original source-row candidates; do not deduplicate or sum from this inventory.",
+    "Serum mappings identify source disagreement, not chemical equivalence."
+  ]
+}

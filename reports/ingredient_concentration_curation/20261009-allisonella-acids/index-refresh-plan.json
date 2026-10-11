@@ -1,0 +1,98 @@
+{
+  "source_sha256": "27d92206953ca936698bfef2073b2c6ca5564b860007d866d29e6f941c3d1419",
+  "files": [
+    {
+      "target": "data/normalized_yaml/bacterial_index.json",
+      "preview": "/tmp/ingredient-media-20261007/allisonella-index-preview/bacterial_index.json",
+      "before_sha256": "d2f6466b8e85823b99703162cab09b3f3aa1247fd9be50c44e4634edde35989d",
+      "after_sha256": "1cc2e37153e1af738097d634646fafa722254131c1fbbad4898751791a566eda",
+      "changes": [
+        {
+          "key": "CultureMech:000422",
+          "id": "CultureMech:000422",
+          "changes": {
+            "ingredient_count": [
+              21,
+              12
+            ],
+            "solution_count": [
+              null,
+              2
+            ],
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_mediadive_index.json",
+      "preview": "/tmp/ingredient-media-20261007/allisonella-index-preview/by_source_mediadive_index.json",
+      "before_sha256": "f1a11a6f658ce5edf4038754dcc1b1e02bd62ec545fab024e11d9951c3163a80",
+      "after_sha256": "386e92d3d8221c02388d01a51d5bdca65d44e3e893fec5f7cd1458c5e0aec650",
+      "changes": [
+        {
+          "key": "CultureMech:000422",
+          "id": "CultureMech:000422",
+          "changes": {
+            "ingredient_count": [
+              21,
+              12
+            ],
+            "solution_count": [
+              null,
+              2
+            ],
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_index.json",
+      "preview": "/tmp/ingredient-media-20261007/allisonella-index-preview/recipe_index.json",
+      "before_sha256": "6b97f942443ae0d0e16b8b7e6c650a6e1159c660ddd3aa2b13b500bbf1af9299",
+      "after_sha256": "dccfe67ae30aea9c5fbb8c0fd65a382a288eb05db5b4b8d8abdbfaaed64f4bb3",
+      "changes": [
+        {
+          "key": "CultureMech:000422",
+          "id": "CultureMech:000422",
+          "changes": {
+            "ingredient_count": [
+              21,
+              12
+            ],
+            "solution_count": [
+              null,
+              2
+            ],
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_statistics.json",
+      "preview": "/tmp/ingredient-media-20261007/allisonella-index-preview/recipe_statistics.json",
+      "before_sha256": "07746b246ec6780c26ae58f9663fc16c5bc7d4e0b8fdb708ba3f92b1c9cc1abd",
+      "after_sha256": "b164287212d417c40b2c4f202f55a72c61ff1d9f1e036670cc19da073220ac3b",
+      "changes": {
+        "with_hierarchy_enrichment": [
+          1470,
+          1469
+        ]
+      }
+    }
+  ],
+  "metadata_changed_ids": [
+    "CultureMech:000422"
+  ]
+}

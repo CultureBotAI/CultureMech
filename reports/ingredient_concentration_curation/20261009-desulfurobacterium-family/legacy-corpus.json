@@ -1,0 +1,44 @@
+{
+  "terminal": true,
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "--collect-only",
+        "-m",
+        "corpus",
+        "tests/test_repair_komodo_dsmz_submedia_score15.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/legacy-corpus-0.log",
+      "log_sha256": "35dfae75b9f5fddc3abc849f68e20d04ab4ee83ac4fd93f63578928c9cdee408"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "-m",
+        "corpus",
+        "tests/test_repair_komodo_dsmz_submedia_score15.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/legacy-corpus-1.log",
+      "log_sha256": "bae35524a4f6c7c5e75645b02043b171c2ade7fecea2f78877f4b539ec2c65ca"
+    }
+  ],
+  "code_sha256": {
+    "tests/conftest.py": "f43cf452431b950a079fcee0a3c7e978067039fba749c956da1c94510c33b68b",
+    "tests/test_repair_komodo_dsmz_submedia_score15.py": "2c50a61595adc051b6858349561af2ceac49bace378193acf2e755de5248888d",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "6df4a23c475c0c5b472a6d18da6e4ea65722f61a4261fa65000cd67504fafec9"
+  },
+  "tier_reason": "Existing pytest_collection_modifyitems classifies the whole module as corpus because its source now contains an explicit data/normalized_yaml path. The classifier was not modified. All fifteen legacy-module tests are additionally executed explicitly; the fast-tier pass is not used as proof of that regression fix."
+}

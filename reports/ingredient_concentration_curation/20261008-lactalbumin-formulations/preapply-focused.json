@@ -1,0 +1,70 @@
+{
+  "terminal": true,
+  "phase": "focused",
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_lactalbumin_formulations.py",
+        "tests/test_lactalbumin_formulations.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-lactalbumin-formulations/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-preapply-focused-0.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_lactalbumin_formulations.py",
+        "tests/test_lactalbumin_formulations.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-lactalbumin-formulations/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-preapply-focused-1.log"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_lactalbumin_formulations.py",
+        "tests/test_bsk_formulations.py",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_recipe_references.py",
+        "tests/test_recipe_pdf_references.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-preapply-focused-2.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-preapply-focused-3.log"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "781b097801c78303aae8b10e0b792993c35bd4c6eb10772559bc804536113b5a"
+  },
+  "code_sha256": {
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "tests/test_lactalbumin_formulations.py": "8ac45859ade31ec7f79ee483d604a21304d492308e0b1af0192765b1cd6ea5f4",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-lactalbumin-formulations/audit.py": "0baeb6dd32f17d485ced736f448745cfcb5285904b8205286f90bcbd4e8aff32",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "f50309edc21ebcd71cc5882b2f5bf33d5efabe7d9b44e2117dd0f5e457fa2290"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "781b097801c78303aae8b10e0b792993c35bd4c6eb10772559bc804536113b5a"
+  }
+}

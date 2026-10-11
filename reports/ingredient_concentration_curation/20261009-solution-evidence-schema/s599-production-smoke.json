@@ -1,0 +1,223 @@
+{
+  "terminal": true,
+  "records_edited": 0,
+  "applied": false,
+  "all_record_goal_complete": false,
+  "review_complete": false,
+  "schema_smoke_only": true,
+  "record": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+  "record_sha256": "91cdb9a37c2cd48496c6039cbca7912b140c126ebc1f849c1877e52dfcdb212d",
+  "schema_sha256": "cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6",
+  "source_sha256": "4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647",
+  "reference": "https://mediadive.dsmz.de/rest/solution/599",
+  "root_evidence": [
+    {
+      "reference": "https://mediadive.dsmz.de/rest/solution/599",
+      "supports": "SUPPORT",
+      "snippet": "{\n                \"recipe_order\": 14,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Fatty acid mixture\",\n                \"solution_id\": 6552,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.4,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "explanation": "Schema smoke only, not applied: solutions[0].concentration is the source-explicit 1.4 ml / 1000 ml per L = 0.0014 L batch addition to solution 599. Not a universal dose of standalone solution 6552 or a final-medium concentration."
+    }
+  ],
+  "nested_dose": [
+    {
+      "preferred_term": "Fatty acid mixture",
+      "term": {
+        "id": "mediadive.solution:6552",
+        "label": "Fatty acid mixture"
+      },
+      "concentration": {
+        "value": "0.0014",
+        "unit": "L"
+      }
+    }
+  ],
+  "title_proposal": {
+    "before": "MediaDive solution 599: Main sol. 323",
+    "after": "Main sol. 323",
+    "snippet": "\"Main sol. 323\""
+  },
+  "prior_composition_and_history_preserved": true,
+  "generated_dataclass_roundtrip": true,
+  "checks": [
+    {
+      "is_valid": true,
+      "reference_id": "https://mediadive.dsmz.de/rest/solution/599",
+      "supporting_text": "{\n                \"recipe_order\": 1,\n                \"compound\": \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.12,\n                \"unit\": \"g\",\n                \"g_l\": 0.11976,\n                \"mmol_l\": 0.814614,\n                \"optional\": 0\n            }",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n                \"recipe_order\": 1,\n                \"compound\": \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.12,\n                \"unit\": \"g\",\n                \"g_l\": 0.11976,\n                \"mmol_l\": 0.814614,\n                \"optional\": 0\n            }",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "composition[0].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://mediadive.dsmz.de/rest/solution/599",
+      "supporting_text": "{\n                \"recipe_order\": 2,\n                \"compound\": \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.19,\n                \"unit\": \"g\",\n                \"g_l\": 0.189621,\n                \"mmol_l\": 0.769327,\n                \"optional\": 0\n            }",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n                \"recipe_order\": 2,\n                \"compound\": \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.19,\n                \"unit\": \"g\",\n                \"g_l\": 0.189621,\n                \"mmol_l\": 0.769327,\n                \"optional\": 0\n            }",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "composition[1].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://mediadive.dsmz.de/rest/solution/599",
+      "supporting_text": "{\n                \"recipe_order\": 3,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\": 11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.45,\n                \"unit\": \"g\",\n                \"g_l\": 0.449102,\n                \"mmol_l\": 3.30016,\n                \"optional\": 0\n            }",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n                \"recipe_order\": 3,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\": 11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.45,\n                \"unit\": \"g\",\n                \"g_l\": 0.449102,\n                \"mmol_l\": 3.30016,\n                \"optional\": 0\n            }",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "composition[2].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://mediadive.dsmz.de/rest/solution/599",
+      "supporting_text": "{\n                \"recipe_order\": 4,\n                \"compound\": \"K2HPO4\",\n                \"compound_id\": 10,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.45,\n                \"unit\": \"g\",\n                \"g_l\": 0.449102,\n                \"mmol_l\": 2.57844,\n                \"optional\": 0\n            }",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n                \"recipe_order\": 4,\n                \"compound\": \"K2HPO4\",\n                \"compound_id\": 10,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.45,\n                \"unit\": \"g\",\n                \"g_l\": 0.449102,\n                \"mmol_l\": 2.57844,\n                \"optional\": 0\n            }",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "composition[3].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://mediadive.dsmz.de/rest/solution/599",
+      "supporting_text": "{\n                \"recipe_order\": 5,\n                \"compound\": \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.9,\n                \"unit\": \"g\",\n                \"g_l\": 0.898204,\n                \"mmol_l\": 15.3697,\n                \"optional\": 0\n            }",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n                \"recipe_order\": 5,\n                \"compound\": \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.9,\n                \"unit\": \"g\",\n                \"g_l\": 0.898204,\n                \"mmol_l\": 15.3697,\n                \"optional\": 0\n            }",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "composition[4].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://mediadive.dsmz.de/rest/solution/599",
+      "supporting_text": "{\n                \"recipe_order\": 6,\n                \"compound\": \"(NH4)2SO4\",\n                \"compound_id\": 27,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.9,\n                \"unit\": \"g\",\n                \"g_l\": 0.898204,\n                \"mmol_l\": 6.79736,\n                \"optional\": 0\n            }",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n                \"recipe_order\": 6,\n                \"compound\": \"(NH4)2SO4\",\n                \"compound_id\": 27,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.9,\n                \"unit\": \"g\",\n                \"g_l\": 0.898204,\n                \"mmol_l\": 6.79736,\n                \"optional\": 0\n            }",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "composition[5].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://mediadive.dsmz.de/rest/solution/599",
+      "supporting_text": "{\n                \"recipe_order\": 16,\n                \"compound\": \"L-Cysteine HCl x H2O\",\n                \"compound_id\": 770,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": 0.998004,\n                \"mmol_l\": 5.68223,\n                \"optional\": 0\n            }",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n                \"recipe_order\": 16,\n                \"compound\": \"L-Cysteine HCl x H2O\",\n                \"compound_id\": 770,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": 0.998004,\n                \"mmol_l\": 5.68223,\n                \"optional\": 0\n            }",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "composition[9].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://mediadive.dsmz.de/rest/solution/599",
+      "supporting_text": "{\n                \"recipe_order\": 17,\n                \"compound\": \"Na2CO3\",\n                \"compound_id\": 32,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2.5,\n                \"unit\": \"g\",\n                \"g_l\": 2.49501,\n                \"mmol_l\": 23.5405,\n                \"optional\": 0\n            }",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n                \"recipe_order\": 17,\n                \"compound\": \"Na2CO3\",\n                \"compound_id\": 32,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2.5,\n                \"unit\": \"g\",\n                \"g_l\": 2.49501,\n                \"mmol_l\": 23.5405,\n                \"optional\": 0\n            }",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "composition[10].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://mediadive.dsmz.de/rest/solution/599",
+      "supporting_text": "{\n                \"recipe_order\": 18,\n                \"compound\": \"D-Glucose\",\n                \"compound_id\": 211,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\": \"g\",\n                \"g_l\": 1.99601,\n                \"mmol_l\": 11.0791,\n                \"optional\": 0\n            }",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n                \"recipe_order\": 18,\n                \"compound\": \"D-Glucose\",\n                \"compound_id\": 211,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\": \"g\",\n                \"g_l\": 1.99601,\n                \"mmol_l\": 11.0791,\n                \"optional\": 0\n            }",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "composition[11].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://mediadive.dsmz.de/rest/solution/599",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[0].title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://mediadive.dsmz.de/rest/solution/599",
+      "supporting_text": "{\n                \"recipe_order\": 14,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Fatty acid mixture\",\n                \"solution_id\": 6552,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.4,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n                \"recipe_order\": 14,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Fatty acid mixture\",\n                \"solution_id\": 6552,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.4,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[0].snippet"
+    }
+  ],
+  "issues": []
+}

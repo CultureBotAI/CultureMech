@@ -1,0 +1,498 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "references-live",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_ethanol_12_5g_msg.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-000.log",
+      "log_sha256": "e1cb656bfc4e107a420ef975c706d5ab42ed95638caffb538d9c563a5aeb65f2"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_12_5g_msg.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-001.log",
+      "log_sha256": "13d81bb4776ab0b3d4cc354399d6caf8bb323af4ae666ad2941bdb6864db51b0"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_20g_lactose_12_5g_msg.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-002.log",
+      "log_sha256": "2aa5d723c8936fba18cbffa5cfd7535146b6be2400b79b0f6d4b9860b590b631"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glycerol_12_5g_msg.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-003.log",
+      "log_sha256": "bb1d6d149ab02228d174e1020899328a5377324349116d25ad3d19b7586b0ee6"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_11g_ammonium_acetate.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-004.log",
+      "log_sha256": "ab382e8cdbae204a3027d5f0199d2a8db6716839bf5ca5ed81f53e0f9faad580"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_arginine.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-005.log",
+      "log_sha256": "7d0c2cfcf5d44c1bd92fda027c45d96f711e393d4a07deced3cea3d74a614635"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_glycine.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-006.log",
+      "log_sha256": "f5675bb1f70adb6873001b96c25cc155b887ffe2dc919d120970ce9cf71bc24b"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_histidine.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-007.log",
+      "log_sha256": "f39db134eee260c546305f93a1e70a8e18ba4660018140bbdb642e529563c23b"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_isoleucine.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-008.log",
+      "log_sha256": "ab869b47d7efc850a1621d8d688632f33b196eea1884a3f861d0f801558bb148"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_msg.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-009.log",
+      "log_sha256": "7b0307a286bae052dd979dbef3d57a1ca19a0673e639c8483abf980e623e63e9"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_13_7g_diammonium_tartrate.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-010.log",
+      "log_sha256": "cbd17fd4d586e60e068c7d4591189f14e6f9363c93e6e81777587879acb5558d"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_18g_msg.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-011.log",
+      "log_sha256": "50ed5ad6015a26f8c2886170408976c1f71ceb0ed2dedbff616943048ef8e5ba"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4_5g_urea.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-012.log",
+      "log_sha256": "6e1572f060c606a89d2b3ff48577ad70e9a8bd0731b90ebc097034de4c7f26be"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4g_ammonium_nitrate.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-013.log",
+      "log_sha256": "6ceb189cdedac7ab9627031e307c58eb80c79555a99a2d0c10bcb098cebfe15b"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4g_sodium_nitrate.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-014.log",
+      "log_sha256": "5895062e0f6daedb04b4ef1790c520016ad38aaf44fe6d2a568d5ca1656d14c7"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_7g_msg.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-015.log",
+      "log_sha256": "84c37bf88d60f0ed67c1550205da50de30ae38e76c4b37c1da9ee7ac807b3fc8"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_lactose_12_5g_msg.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-016.log",
+      "log_sha256": "b73121bc2ea9bb99881846bc75fe586d5413f6e1c5b0819ec5132c31282fe325"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_70g_glucose_12_5g_msg.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-017.log",
+      "log_sha256": "0c037808dbde1aa9a8d90ec8a23de0b6e568aeee0f3c39368109483d3131eabb"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_20g_ethanol_12_5g_msg.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-018.log",
+      "log_sha256": "b83c0cb22132b20aafb686c34f47509b6330e408061fc8ea1a09c8a447003936"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_20g_glycerol_12_5g_msg.yaml",
+        "--cache-dir",
+        "/tmp/hajjaj-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/references-live-019.log",
+      "log_sha256": "316dd39ae1023796e7d3cb1648b6ef49af1c5e7c3b7237ec994f41243d3c57ad"
+    }
+  ],
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "plan_sha256": "44b46346ba0b4dca764d101d6b6590ab0971f5a69be711877ad7ccf0a560c44a",
+  "source_sha256": "c17680f0b36bb27d61ee30662964506f810580e4203ecdacc517ff3f0c1a4b5b",
+  "code_sha256": {
+    "scripts/review_hajjaj_ingredients.py": "f18bf9c504cdd8de32660605fe4bd41125a968b6d9e3f02122a8cf21be4b3185",
+    "tests/test_hajjaj_ingredients.py": "6f5912d6722dbc2353d7b1af907470d81971e991de28d6551b50c9184fa4adfc"
+  },
+  "inventory_before_sha256": "ebf8b59e00cc0cb250352e5c1e69f87288d18bc942db165c2d5673c1b33656f5",
+  "source_checks": [
+    {
+      "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+      "capture_hash_and_snippets_matched": false,
+      "inspection_mode": "manual publisher full-text reading; no downloaded capture",
+      "manual_web_reinspection_this_turn": true,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://www.ebi.ac.uk/chebi/CHEBI:91249",
+      "capture_hash_and_snippets_matched": false,
+      "inspection_mode": "manual official ChEBI page reading; no raw capture",
+      "manual_web_reinspection_this_turn": true,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official SQL export",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://www.ebi.ac.uk/chebi/CHEBI:75836",
+      "capture_hash_and_snippets_matched": false,
+      "inspection_mode": "manual web-tool inspection; no raw capture",
+      "manual_web_reinspection_this_turn": true,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://www.ebi.ac.uk/chebi/CHEBI:86358",
+      "capture_hash_and_snippets_matched": false,
+      "inspection_mode": "manual web-tool inspection; no raw capture",
+      "manual_web_reinspection_this_turn": true,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://www.ebi.ac.uk/chebi/CHEBI:32312",
+      "capture_hash_and_snippets_matched": false,
+      "inspection_mode": "manual web-tool inspection; no raw capture",
+      "manual_web_reinspection_this_turn": true,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://www.ebi.ac.uk/chebi/CHEBI:31795",
+      "capture_hash_and_snippets_matched": false,
+      "inspection_mode": "manual web-tool inspection; no raw capture",
+      "manual_web_reinspection_this_turn": true,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://www.ebi.ac.uk/chebi/CHEBI:86158",
+      "capture_hash_and_snippets_matched": false,
+      "inspection_mode": "manual web-tool inspection; no raw capture",
+      "manual_web_reinspection_this_turn": true,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/328/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/324/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/329/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/327/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/334/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/341/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/340/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/339/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/342/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/318/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/332/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/338/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/336/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/333/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/335/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/337/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/326/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/325/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/330/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    }
+  ],
+  "production_reference_gate_passed": false,
+  "inventory_after_sha256": "ebf8b59e00cc0cb250352e5c1e69f87288d18bc942db165c2d5673c1b33656f5",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

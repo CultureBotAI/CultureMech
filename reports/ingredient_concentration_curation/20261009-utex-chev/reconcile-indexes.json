@@ -1,0 +1,95 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "indexes",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "applied_files": 0,
+  "comparisons": [
+    {
+      "path": "data/normalized_yaml/algae_index.json",
+      "before_sha256": "7dd2d184e5849f1ca50207e4f40b1095de2eb4ae12393341d6138c3473d18ff3",
+      "preview_sha256": "7fac1b67d21ca45e31cf6cadfddc8fb77c1ad686f30d9f67ff2acf5627888865",
+      "semantic_equal": true
+    },
+    {
+      "path": "data/normalized_yaml/archaea_index.json",
+      "before_sha256": "3cb2fe77d926e7ca85d6fcc365266e53a4ac3d3a3bf21f151a27f9dfb1ab1ba4",
+      "preview_sha256": "a38d124fe08515b31b849056a41cfe4b8828ebfd9d7828cde8b0634bf3f20d5c",
+      "semantic_equal": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial_index.json",
+      "before_sha256": "67ab8132ca88518e60e893a778aebe6216114bded8b619e0e357c4fb7463b353",
+      "preview_sha256": "a7336ccdd9b50d806c6ff7abc64ba88645baf6eb66da3c86d41d2bf786c3ea47",
+      "semantic_equal": true
+    },
+    {
+      "path": "data/normalized_yaml/by_source_komodo_index.json",
+      "before_sha256": "cd4ca748c225cbbd81e1a648e7f52de683a614fb04cdcf823890bb208e3347ae",
+      "preview_sha256": "bcff37d5ab4e9163707ba5a91120b33c8f5c14df25aa6d78c3d83b250de7b3e7",
+      "semantic_equal": true
+    },
+    {
+      "path": "data/normalized_yaml/by_source_mediadive-solutions_index.json",
+      "before_sha256": "e1d583101c60640eb87ca04a9bed6c93de80432f52496c8218f95e80debb5be1",
+      "preview_sha256": "c74936b56ae3c47fe3e31a756e87bb41a19ef2e553b4eb55ff17b49ed1deef18",
+      "semantic_equal": true
+    },
+    {
+      "path": "data/normalized_yaml/by_source_mediadive_index.json",
+      "before_sha256": "8a893f0ae083616eccad8d0a73c937cf7b97540ae4f01318c133e0c2a25b217d",
+      "preview_sha256": "8e1774d60c581297002f458b74e9b177c02ecc4495232c58b16cb02aeafc08f2",
+      "semantic_equal": true
+    },
+    {
+      "path": "data/normalized_yaml/by_source_mediaingredientmech_index.json",
+      "before_sha256": "552994c956341ad67e99fd6cd19339357f867389a595cac1f732367a53904919",
+      "preview_sha256": "4abfb777fc91c38dd64a3ba99f1ea9a198a898063a3b1a7c5f5a930ac8129fbe",
+      "semantic_equal": true
+    },
+    {
+      "path": "data/normalized_yaml/by_source_togo_index.json",
+      "before_sha256": "2623dd56533cc40712b92add8bd3d7d3b7735a38de4331d876f2bc7981d33edf",
+      "preview_sha256": "6abc04890ceea3b51f3a9d2a6654212d5060a1b8e6225975c1cb0720a1a39866",
+      "semantic_equal": true
+    },
+    {
+      "path": "data/normalized_yaml/by_source_unknown_index.json",
+      "before_sha256": "eb5efd9f7024bb3d989982897cffda65a5c225e0169d2d7e07d0a382a4c30010",
+      "preview_sha256": "ddbf248d687c29260a4bea96d553c07475612c07cd433491b03f6d2b41834574",
+      "semantic_equal": true
+    },
+    {
+      "path": "data/normalized_yaml/fungal_index.json",
+      "before_sha256": "0e52d59187077819a88a245b087784ced8f7d6e6d652e0db87efb548fb767be4",
+      "preview_sha256": "3804a0e946ff7b3274bcdf88b5c1d8653078f238f267f23b53d1d7b80e5e12a9",
+      "semantic_equal": true
+    },
+    {
+      "path": "data/normalized_yaml/recipe_index.json",
+      "before_sha256": "fcc989b454fbc0fd1c9ac21a0c0d630da947013b2c4a6b675816a67675598e63",
+      "preview_sha256": "edb16a8349b3ebe3f604c1320095005f7295c836ccc901a371d4ea6a1d280f7d",
+      "semantic_equal": true
+    },
+    {
+      "path": "data/normalized_yaml/recipe_statistics.json",
+      "before_sha256": "ef2a5de5ef613afd5429a580c725283bca730a1b162bc668472149412e68e69e",
+      "preview_sha256": "85ab30f5bfa270c74ef8eababeccb0a6bc3b5f5b9c09bbc40e940e8089970cb1",
+      "semantic_equal": true
+    },
+    {
+      "path": "data/normalized_yaml/solutions_index.json",
+      "before_sha256": "efa6c24cd12cfe56bc84265596dcb4cd93cfc00779106a1694560fae0b1b4dc2",
+      "preview_sha256": "31a28d931cacdc9196d88685df916e76142c77ea26d0674e5e06bac0adcba4f3",
+      "semantic_equal": true
+    },
+    {
+      "path": "data/normalized_yaml/specialized_index.json",
+      "before_sha256": "49737534ef40df809592d844ae6b5aa29f492ad49cd45c2ec78b29e4eb8b4e6d",
+      "preview_sha256": "181946a2182055d5775ed69f748ac80a56168b962eeda4b260fb4d276d9d41e6",
+      "semantic_equal": true
+    }
+  ],
+  "source_inventory_unchanged": true
+}

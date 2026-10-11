@@ -1,0 +1,65 @@
+{
+  "terminal": true,
+  "phase": "corpus",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml",
+        "--out",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/strict-errors.tsv"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/corpus-0.log",
+      "log_sha256": "b8e6133fb679c81b4dac0e5605a8600ea0b17b95033e957cda1ba25853a84472"
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/corpus-1.log",
+      "log_sha256": "eb7360e4d6ac289a3c075ae3f26d2a32b53e6b2da8d03073cfda3e697295cbc0"
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/corpus-2.log",
+      "log_sha256": "f945326a4e1a806ce85ea39538accf6fdf5892fb8a5efa308b99ad0aaeedc2f5"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "746bda4b9dd276ab1077245cf751a5c652fd697e6f355cb7183b49f7f93edd71"
+  },
+  "code_sha256": {
+    "scripts/repair_rumen_bacteria_family.py": "d3c23bf4b7141ffcc038f596fc7cad69c19372a5ecedaee21dbf6d99950fdf36",
+    "tests/test_rumen_bacteria_family.py": "4fabfda109e7a4105722e156ff591eb8e8b8b0144ddf3898f9539de75677cb6a",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/audit.py": "8d886bcd4799b6c216b8aaab16f130f126ab253bbc963fdedc4e37f0b22d1890",
+    "scripts/repair_oteb_family.py": "90aa83324ff1b28708921a00c409f50b4c4bd12eb15f09ae8feb0e1010916795",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/repair_mediadive_stock_concentration_evidence.py": "1badfa99205690cf6082d95db7dafbd6d4927b617027bc61fbaaf9dbd597c974",
+    "scripts/review_medium_concentration_evidence.py": "ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a",
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "src/culturemech/validation/write_validated.py": "8e1e2185231caecbe3dc99908c783cd83340b1e93fa9115ff1445d4b3820897e",
+    "src/culturemech/schema/culturemech.yaml": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a"
+  },
+  "plan_sha256": "5940d6a1b64c0f21408a6bde46512049cb4cbfff12cb80ae9061c5c6edfd3a1f",
+  "context_sha256": "97e6cfa229556a5251518fafb27c7506242afb62cb7be79ff7ff985dfb4e6c49",
+  "preview_validation_sha256": "8f9525e7127628bb6c3741f21ddaef5cf0ec3221e275f24293d63ef2d71dba99",
+  "current_focused_sha256": "7054778d36d9cbd854bc24512d8a671f91af8b086b2954d4caaae28b18b252b0",
+  "strict_scanned": 15910,
+  "global_variant_findings": [],
+  "cohort_variant_findings": [],
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "746bda4b9dd276ab1077245cf751a5c652fd697e6f355cb7183b49f7f93edd71"
+  }
+}

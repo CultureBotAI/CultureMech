@@ -1,0 +1,70 @@
+{
+  "terminal": true,
+  "phase": "final",
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_jcm_albumin_inputs.py",
+        "tests/test_jcm_albumin_inputs.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-jcm-albumin-inputs/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-albumin-inputs-final-0.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_jcm_albumin_inputs.py",
+        "tests/test_jcm_albumin_inputs.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-jcm-albumin-inputs/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-albumin-inputs-final-1.log"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_jcm_albumin_inputs.py",
+        "tests/test_jcm_lb_acids.py",
+        "tests/test_m258_m260_stocks.py",
+        "tests/test_filtered_sulfide_media.py",
+        "tests/test_pyrodictium_variants.py",
+        "tests/test_basal_makeup_stages.py",
+        "tests/test_m689_stocks.py",
+        "tests/test_m142_nested_traces.py",
+        "tests/test_jcm_stock_preparations.py",
+        "tests/test_recipe_references.py",
+        "tests/test_medium_concentration_batch.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-albumin-inputs-final-2.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-albumin-inputs-final-3.log"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "cc01a6b89ff98426f13409c5d4a6114691a9a12094c0230b6ed7057aae17f842"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "cc01a6b89ff98426f13409c5d4a6114691a9a12094c0230b6ed7057aae17f842"
+  }
+}

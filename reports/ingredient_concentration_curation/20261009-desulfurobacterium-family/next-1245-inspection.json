@@ -1,0 +1,2640 @@
+{
+  "terminal": true,
+  "state": "Read-only source preparation, not applied curation or a complete scientific review.",
+  "records_edited": false,
+  "context_sha256": "6d9d7e2c9207c8f8cc0b00f4c8d629b164496165784d024e684bcae20e80ebeb",
+  "checks": [],
+  "normalized_sha256": "48c3b9d310293ee12ee7655e555076f7787b0d9f52a88ff0a2f9d27ab98710b9",
+  "normalized_count": 15910,
+  "sources": {
+    "DSMZ1245": {
+      "source_sha256": "8f86c38d0e1c5a8c4b47c062c98ad78892a7d30b6fcf89d42b4b0c9a392e87e2",
+      "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1245.pdf",
+      "rows": [],
+      "source_metadata": "1245. OTEB-MEDIUM\n\n\n\nOTEB-medium is available from Anaerobe Systems (www.anaerobesystems.com)\n\nThe following text was taken from the above page:\n\n\nORAL TREPONEME ENRICHMENT BROTH (OTEB)\nProducts: AS-603 Oral Treponeme Enrichment Broth (OTEB) 10 tubes / pkg\n\n\nIntended Use\nOTEB is an enriched medium for the isolation, cultivation and maintenance of Treponemes found\nas part of the oral flora.\n\n\nSummary\nOTEB is a complex peptone-yeast extract medium containing volatile fatty acids and serum for a\nsource of long chain fatty acids.\nVolatile fatty acids and serum are necessary nutrients for recovery of Treponemes from the oral\nflora. Inoculation of the medium can be done using a gassing cannula or inside an anaerobic\nchamber. This medium is prepared, stored and dispensed under\noxygen-free conditions to prevent the formation of oxidized products prior to use.\n\n\nFormula\nProteose Peptone #2                                                                                                                                                                                                                                                                                                                                                                                                                                    5.0 g\nHeart Infusion Broth                                                                                                                                                                                                                                                                                                                                                                                                                                          5.0 g\nYeast Extract                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        5.0 g\nPotassium Phosphate, dibasic                                                                                                                                                                                                                                                                                                                       2.0 g\nSodium Chloride                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             5.0 g\nMagnesium Sulfate                                                                                                                                                                                                                                                                                                                                                                                                                                                             0.1 g\nAcetic Acid                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      1.6 ml\nPropionic Acid                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             0.6 ml\nN-Butyric Acid                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         0.4 ml\nN-Valeric Acid                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             0.1 ml\nIsovaleric Acid                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       0.1 ml\nIsobutyric Acid                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  0.1 ml\n2-Methylbutyric Acid                                                                                                                                                                                                                                                                                                                                                                                                                                         0.1 ml\nVitamin K1 (1% soln)                                                                                                                                                                                                                                                                                                                                                                                                                           0.1 ml\nL-Cysteine                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         0.5 g\nCalf Serum, inactivated                                                                                                                                                                                                                                                                                                                                                                   100.0 ml\nSugar Stock Soln w/ TPP                                                                                                                                                                                                                                                                                                                                                   100.0 ml\nDistilled Water                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     800.0 ml\n\n\n  Sugar Stock Solution\n                           Glucose                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                8.0 g\n\u00a9 2010 DSMZ GmbH - All rights reserved\n\n                                            Fructose                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        8.0 g\n                                            Sucrose                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               8.0 g\n                                            Maltose                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   8.0 g\n                                            Maltose                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   8.0 g\n                                            Ribose                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                8.0 g\n                                            Xylose                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 8.0 g\n                                            Pectin                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       8.0 g\n                                            Soluble Starch                                                                                                                                                                                                                                                                                                                                                                                                                                                          8.0 g\n                                            Sodium Pyruvate                                                                                                                                                                                                                                                                                                                                                                                                                          8.0 g\n                                            Thiamine Pyrophosphate                                                                                                                                                                                                                                                                                        750.0 \u03bcg\n                                            Distilled Water                                                                                                                                                                                                                                                                                                                                                                                                        1000.0 ml\n\n\nFinal pH 7.0 +/- 0.2 at 25 degrees C.\nFinal volume 7.0 ml +/- 0.7.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u00a9 2010 DSMZ GmbH - All rights reserved"
+    },
+    "K1245": {
+      "source_sha256": "38c6893a52fb53607f12fc0df1a20bfa72051f3fc61209eaa7aabed8d0ed8fa6",
+      "url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+      "rows": [
+        {
+          "pointer": [
+            "Metabolites list",
+            0
+          ],
+          "row": [
+            "Isobutyric Acid",
+            "isobutyric acid",
+            "SEED-cpd01711###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Isobutyric Acid isobutyric acid SEED-cpd01711### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            1
+          ],
+          "row": [
+            "Distilled Water",
+            "H2O",
+            "SEED-cpd00001###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Distilled Water H2O SEED-cpd00001### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            2
+          ],
+          "row": [
+            "Sucrose",
+            "Sucrose",
+            "SEED-cpd00076###",
+            "0.80",
+            "0.00"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Sucrose Sucrose SEED-cpd00076### 0.80 0.00",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            3
+          ],
+          "row": [
+            "Proteose Peptone no. 2",
+            "Proteose Peptone",
+            "rich-peptone#",
+            "4.98",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Proteose Peptone no. 2 Proteose Peptone rich-peptone# 4.98 null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            4
+          ],
+          "row": [
+            "Magnesium Sulfate",
+            "Magnesium sulfate",
+            "SEED-cpd00048#cpd00254##",
+            "0.10",
+            "0.00"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Magnesium Sulfate Magnesium sulfate SEED-cpd00048#cpd00254## 0.10 0.00",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            5
+          ],
+          "row": [
+            "Glucose",
+            "D-Glucose",
+            "SEED-cpd00027###",
+            "0.80",
+            "0.00"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Glucose D-Glucose SEED-cpd00027### 0.80 0.00",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            6
+          ],
+          "row": [
+            "Yeast Extract",
+            "Yeast extract",
+            "rich-peptone#",
+            "4.98",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Yeast Extract Yeast extract rich-peptone# 4.98 null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            7
+          ],
+          "row": [
+            "Calf Serum",
+            "Calf serum",
+            "rich-serum#",
+            "99.70",
+            "0.10"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Calf Serum Calf serum rich-serum# 99.70 0.10",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            8
+          ],
+          "row": [
+            "Heart Infusion Broth",
+            "Heart Infusion Broth",
+            "rich-meat#",
+            "4.98",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Heart Infusion Broth Heart Infusion Broth rich-meat# 4.98 null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            9
+          ],
+          "row": [
+            "Thiamine Pyrophosphate",
+            "Thiamine-HCl",
+            "SEED-cpd00099#cpd00305##",
+            "7.48E-5",
+            "2.49E-7"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Thiamine Pyrophosphate Thiamine-HCl SEED-cpd00099#cpd00305## 7.48E-5 2.49E-7",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            10
+          ],
+          "row": [
+            "Acetic Acid",
+            "Acetic acid",
+            "SEED-cpd00029###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Acetic Acid Acetic acid SEED-cpd00029### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            11
+          ],
+          "row": [
+            "Ribose",
+            "Ribose",
+            "SEED-cpd05267###",
+            "0.80",
+            "0.01"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Ribose Ribose SEED-cpd05267### 0.80 0.01",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            12
+          ],
+          "row": [
+            "L-Cysteine",
+            "L-Cysteine",
+            "SEED-cpd00084###",
+            "0.50",
+            "0.00"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "L-Cysteine L-Cysteine SEED-cpd00084### 0.50 0.00",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            13
+          ],
+          "row": [
+            "Propionic Acid",
+            "Propionic acid",
+            "SEED-cpd00141###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Propionic Acid Propionic acid SEED-cpd00141### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            14
+          ],
+          "row": [
+            "N-Butyric Acid",
+            "n-Butyric acid",
+            "SEED-cpd00211###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "N-Butyric Acid n-Butyric acid SEED-cpd00211### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            15
+          ],
+          "row": [
+            "Sodium Chloride",
+            "Sodium chloride",
+            "SEED-cpd00099#cpd00971##",
+            "4.98",
+            "0.09"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Sodium Chloride Sodium chloride SEED-cpd00099#cpd00971## 4.98 0.09",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            16
+          ],
+          "row": [
+            "Starch",
+            "Starch",
+            "SEED-cpd11657###",
+            "0.80",
+            "0.00"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Starch Starch SEED-cpd11657### 0.80 0.00",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            17
+          ],
+          "row": [
+            "N-Valeric Acid",
+            "n-Valeric acid",
+            "SEED-cpd00597###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "N-Valeric Acid n-Valeric acid SEED-cpd00597### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            18
+          ],
+          "row": [
+            "Vitamin K1",
+            "Vitamin K1",
+            "SEED-cpd01401###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Vitamin K1 Vitamin K1 SEED-cpd01401### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            19
+          ],
+          "row": [
+            "Pectin",
+            "Pectin",
+            "SEED-cpd11601###",
+            "0.80",
+            "0.00"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Pectin Pectin SEED-cpd11601### 0.80 0.00",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            20
+          ],
+          "row": [
+            "Maltose",
+            "Maltose",
+            "SEED-cpd00179###",
+            "1.60",
+            "0.00"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Maltose Maltose SEED-cpd00179### 1.60 0.00",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            21
+          ],
+          "row": [
+            "Fructose",
+            "D-Fructose",
+            "SEED-cpd00082###",
+            "0.80",
+            "0.00"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Fructose D-Fructose SEED-cpd00082### 0.80 0.00",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            22
+          ],
+          "row": [
+            "Xylose",
+            "xylose",
+            "SEED-cpd00154###",
+            "0.80",
+            "0.01"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Xylose xylose SEED-cpd00154### 0.80 0.01",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            23
+          ],
+          "row": [
+            "Isovaleric Acid",
+            "Isovaleric acid",
+            "SEED-cpd05178###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Isovaleric Acid Isovaleric acid SEED-cpd05178### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            24
+          ],
+          "row": [
+            "2-Methylbutyric Acid",
+            "2-methylbutyric acid",
+            "2-methylbutyric acid#",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "2-Methylbutyric Acid 2-methylbutyric acid 2-methylbutyric acid# null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            25
+          ],
+          "row": [
+            "Potassium Phosphate, dibasic",
+            "Potassium Phosphate",
+            "SEED-cpd00009#cpd00205##",
+            "1.99",
+            "0.01"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Potassium Phosphate, dibasic Potassium Phosphate SEED-cpd00009#cpd00205## 1.99 0.01",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            26
+          ],
+          "row": [
+            "Sodium Pyruvate",
+            "Sodium pyruvate",
+            "SEED-cpd00020#cpd00971##",
+            "0.80",
+            "0.01"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+          "snippet": "Sodium Pyruvate Sodium pyruvate SEED-cpd00020#cpd00971## 0.80 0.01",
+          "scientific_review_status": "pending"
+        }
+      ],
+      "source_metadata": "Medium: OTEB-MEDIUM\nID: 1245\nName: OTEB-MEDIUM\nPH Info: 6.8 - 7.2\nIs Complex: true\nIs Aerobic: false\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1245.pdf\n"
+    },
+    "S2474": {
+      "source_sha256": "965e02ea3dbb41667699cb23bfffa807fd755f41c1db183e1f407a11d74c968f",
+      "url": "https://mediadive.dsmz.de/rest/solution/2474",
+      "rows": [
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            0
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 1,
+            "compound": "Proteose peptone no. 2",
+            "compound_id": 458,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 5,
+            "unit": "g",
+            "g_l": 5,
+            "mmol_l": null,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+          "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Proteose peptone no. 2\",\n                \"compound_id\": 458,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            1
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 2,
+            "compound": "Heart Infusion Broth",
+            "compound_id": 1104,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 5,
+            "unit": "g",
+            "g_l": 5,
+            "mmol_l": null,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+          "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Heart Infusion Broth\",\n                \"compound_id\": 1104,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            2
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 3,
+            "compound": "Yeast extract",
+            "compound_id": 16,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 5,
+            "unit": "g",
+            "g_l": 5,
+            "mmol_l": null,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+          "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Yeast extract\",\n                \"compound_id\": 16,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            3
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 4,
+            "compound": "Potassium Phosphate",
+            "compound_id": 928,
+            "solution": null,
+            "solution_id": null,
+            "condition": "dibasic",
+            "attribute": null,
+            "amount": 2,
+            "unit": "g",
+            "g_l": 2,
+            "mmol_l": 14.6967,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+          "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\": \"Potassium Phosphate\",\n                \"compound_id\": 928,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": \"dibasic\",\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\": \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": 14.6967,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            4
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 5,
+            "compound": "Sodium Chloride",
+            "compound_id": 1105,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 5,
+            "unit": "g",
+            "g_l": 5,
+            "mmol_l": 85.5578,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+          "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\": \"Sodium Chloride\",\n                \"compound_id\": 1105,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 85.5578,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            5
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 6,
+            "compound": "Magnesium sulfate",
+            "compound_id": 793,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 0.1,
+            "unit": "g",
+            "g_l": 0.1,
+            "mmol_l": 0.830772,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+          "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\": \"Magnesium sulfate\",\n                \"compound_id\": 793,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.830772,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            6
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 7,
+            "compound": "Acetic acid",
+            "compound_id": 380,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 1.6,
+            "unit": "ml",
+            "g_l": null,
+            "mmol_l": null,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+          "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\": \"Acetic acid\",\n                \"compound_id\": 380,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.6,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            7
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 8,
+            "compound": "Propionic acid",
+            "compound_id": 381,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 0.6,
+            "unit": "ml",
+            "g_l": null,
+            "mmol_l": null,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+          "snippet": "{\n                \"recipe_order\": 8,\n                \"compound\": \"Propionic acid\",\n                \"compound_id\": 381,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.6,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            8
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 9,
+            "compound": "n-Butyric acid",
+            "compound_id": 376,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 0.4,
+            "unit": "ml",
+            "g_l": null,
+            "mmol_l": null,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+          "snippet": "{\n                \"recipe_order\": 9,\n                \"compound\": \"n-Butyric acid\",\n                \"compound_id\": 376,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            9
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 10,
+            "compound": "n-Valeric acid",
+            "compound_id": 288,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 0.1,
+            "unit": "ml",
+            "g_l": null,
+            "mmol_l": null,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+          "snippet": "{\n                \"recipe_order\": 10,\n                \"compound\": \"n-Valeric acid\",\n                \"compound_id\": 288,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            10
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 11,
+            "compound": "Isovaleric acid",
+            "compound_id": 225,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 0.1,
+            "unit": "ml",
+            "g_l": null,
+            "mmol_l": null,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+          "snippet": "{\n                \"recipe_order\": 11,\n                \"compound\": \"Isovaleric acid\",\n                \"compound_id\": 225,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            11
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 12,
+            "compound": "Isobutyric acid",
+            "compound_id": 222,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 0.1,
+            "unit": "ml",
+            "g_l": null,
+            "mmol_l": null,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+          "snippet": "{\n                \"recipe_order\": 12,\n                \"compound\": \"Isobutyric acid\",\n                \"compound_id\": 222,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            12
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 13,
+            "compound": "2-Methylbutyric acid",
+            "compound_id": 480,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 0.1,
+            "unit": "ml",
+            "g_l": null,
+            "mmol_l": null,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+          "snippet": "{\n                \"recipe_order\": 13,\n                \"compound\": \"2-Methylbutyric acid\",\n                \"compound_id\": 480,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            13
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 14,
+            "compound": "Vitamin K1",
+            "compound_id": 150,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": "1% soln",
+            "amount": 0.1,
+            "unit": "ml",
+            "g_l": 0.001,
+            "mmol_l": 0.00221877,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+          "snippet": "{\n                \"recipe_order\": 14,\n                \"compound\": \"Vitamin K1\",\n                \"compound_id\": 150,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"1% soln\",\n                \"amount\": 0.1,\n                \"unit\": \"ml\",\n                \"g_l\": 0.001,\n                \"mmol_l\": 0.00221877,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            14
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 15,
+            "compound": "L-Cysteine",
+            "compound_id": 671,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 0.5,
+            "unit": "g",
+            "g_l": 0.5,
+            "mmol_l": 4.12677,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+          "snippet": "{\n                \"recipe_order\": 15,\n                \"compound\": \"L-Cysteine\",\n                \"compound_id\": 671,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\": \"g\",\n                \"g_l\": 0.5,\n                \"mmol_l\": 4.12677,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            15
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 16,
+            "compound": "Fetal bovine serum",
+            "compound_id": 954,
+            "solution": null,
+            "solution_id": null,
+            "condition": "inactivated",
+            "attribute": null,
+            "amount": 100,
+            "unit": "ml",
+            "g_l": null,
+            "mmol_l": null,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+          "snippet": "{\n                \"recipe_order\": 16,\n                \"compound\": \"Fetal bovine serum\",\n                \"compound_id\": 954,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": \"inactivated\",\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            16
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 17,
+            "compound": null,
+            "compound_id": null,
+            "solution": "Sugar Stock Solution",
+            "solution_id": 5688,
+            "condition": null,
+            "attribute": null,
+            "amount": 100,
+            "unit": "ml",
+            "g_l": null,
+            "mmol_l": null,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+          "snippet": "{\n                \"recipe_order\": 17,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Sugar Stock Solution\",\n                \"solution_id\": 5688,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            17
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 18,
+            "compound": "Distilled water",
+            "compound_id": 4,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 800,
+            "unit": "ml",
+            "g_l": null,
+            "mmol_l": null,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+          "snippet": "{\n                \"recipe_order\": 18,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 800,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        }
+      ],
+      "source_metadata": {
+        "medium": null,
+        "steps": [
+          [
+            {
+              "recipe_order": null,
+              "step": "OTEB-medium is available from Anaerobe Systems (http://www.anaerobesystems.com)"
+            },
+            {
+              "recipe_order": null,
+              "step": "The following text was taken from the above page: \r\n\r\n- ORAL TREPONEME ENRICHMENT BROTH (OTEB)\r\n\r\n- Products: AS-603 Oral Treponeme Enrichment Broth (OTEB) 10 tubes / pkg"
+            },
+            {
+              "recipe_order": null,
+              "step": "Intended Use: OTEB is an enriched medium for the isolation, cultivation and maintenance of Treponemes found as part of the oral flora."
+            },
+            {
+              "recipe_order": null,
+              "step": "OTEB is a complex peptone-yeast extract medium containing volatile fatty acids and serum for a source of long chain fatty acids. Volatile fatty acids and serum are necessary nutrients for recovery of Treponemes from the oral flora. Inoculation of the medium can be done using a gassing cannula or inside an anaerobic chamber. This medium is prepared, stored and dispensed under oxygen-free conditions to prevent the formation of oxidized products prior to use."
+            },
+            {
+              "recipe_order": null,
+              "step": "Final pH 7.0 +/- 0.2 at 25 degrees C."
+            },
+            {
+              "recipe_order": null,
+              "step": "Final volume 7.0 ml +/- 0.7."
+            }
+          ]
+        ]
+      }
+    },
+    "K1245_18691": {
+      "source_sha256": "cba7b78efe4cb52105200d3ab4ddf7cede9d9d981e96b10b59a8923f5f56fd06",
+      "url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+      "rows": [
+        {
+          "pointer": [
+            "Metabolites list",
+            0
+          ],
+          "row": [
+            "Isobutyric Acid",
+            "isobutyric acid",
+            "SEED-cpd01711###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Isobutyric Acid isobutyric acid SEED-cpd01711### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            1
+          ],
+          "row": [
+            "Distilled Water",
+            "H2O",
+            "SEED-cpd00001###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Distilled Water H2O SEED-cpd00001### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            2
+          ],
+          "row": [
+            "Sucrose",
+            "Sucrose",
+            "SEED-cpd00076###",
+            "0.80",
+            "0.00"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Sucrose Sucrose SEED-cpd00076### 0.80 0.00",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            3
+          ],
+          "row": [
+            "Proteose Peptone no. 2",
+            "Proteose Peptone",
+            "rich-peptone#",
+            "4.98",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Proteose Peptone no. 2 Proteose Peptone rich-peptone# 4.98 null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            4
+          ],
+          "row": [
+            "Magnesium Sulfate",
+            "Magnesium sulfate",
+            "SEED-cpd00048#cpd00254##",
+            "0.10",
+            "0.00"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Magnesium Sulfate Magnesium sulfate SEED-cpd00048#cpd00254## 0.10 0.00",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            5
+          ],
+          "row": [
+            "Glucose",
+            "D-Glucose",
+            "SEED-cpd00027###",
+            "0.80",
+            "0.00"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Glucose D-Glucose SEED-cpd00027### 0.80 0.00",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            6
+          ],
+          "row": [
+            "Yeast Extract",
+            "Yeast extract",
+            "rich-peptone#",
+            "4.98",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Yeast Extract Yeast extract rich-peptone# 4.98 null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            7
+          ],
+          "row": [
+            "Calf Serum",
+            "Calf serum",
+            "rich-serum#",
+            "99.70",
+            "0.10"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Calf Serum Calf serum rich-serum# 99.70 0.10",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            8
+          ],
+          "row": [
+            "Heart Infusion Broth",
+            "Heart Infusion Broth",
+            "rich-meat#",
+            "4.98",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Heart Infusion Broth Heart Infusion Broth rich-meat# 4.98 null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            9
+          ],
+          "row": [
+            "Thiamine Pyrophosphate",
+            "Thiamine-HCl",
+            "SEED-cpd00099#cpd00305##",
+            "7.48E-5",
+            "2.49E-7"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Thiamine Pyrophosphate Thiamine-HCl SEED-cpd00099#cpd00305## 7.48E-5 2.49E-7",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            10
+          ],
+          "row": [
+            "Acetic Acid",
+            "Acetic acid",
+            "SEED-cpd00029###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Acetic Acid Acetic acid SEED-cpd00029### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            11
+          ],
+          "row": [
+            "Ribose",
+            "Ribose",
+            "SEED-cpd05267###",
+            "0.80",
+            "0.01"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Ribose Ribose SEED-cpd05267### 0.80 0.01",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            12
+          ],
+          "row": [
+            "L-Cysteine",
+            "L-Cysteine",
+            "SEED-cpd00084###",
+            "0.50",
+            "0.00"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "L-Cysteine L-Cysteine SEED-cpd00084### 0.50 0.00",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            13
+          ],
+          "row": [
+            "Propionic Acid",
+            "Propionic acid",
+            "SEED-cpd00141###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Propionic Acid Propionic acid SEED-cpd00141### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            14
+          ],
+          "row": [
+            "N-Butyric Acid",
+            "n-Butyric acid",
+            "SEED-cpd00211###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "N-Butyric Acid n-Butyric acid SEED-cpd00211### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            15
+          ],
+          "row": [
+            "Sodium Chloride",
+            "Sodium chloride",
+            "SEED-cpd00099#cpd00971##",
+            "4.98",
+            "0.09"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Sodium Chloride Sodium chloride SEED-cpd00099#cpd00971## 4.98 0.09",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            16
+          ],
+          "row": [
+            "Starch",
+            "Starch",
+            "SEED-cpd11657###",
+            "0.80",
+            "0.00"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Starch Starch SEED-cpd11657### 0.80 0.00",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            17
+          ],
+          "row": [
+            "N-Valeric Acid",
+            "n-Valeric acid",
+            "SEED-cpd00597###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "N-Valeric Acid n-Valeric acid SEED-cpd00597### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            18
+          ],
+          "row": [
+            "Vitamin K1",
+            "Vitamin K1",
+            "SEED-cpd01401###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Vitamin K1 Vitamin K1 SEED-cpd01401### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            19
+          ],
+          "row": [
+            "Pectin",
+            "Pectin",
+            "SEED-cpd11601###",
+            "0.80",
+            "0.00"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Pectin Pectin SEED-cpd11601### 0.80 0.00",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            20
+          ],
+          "row": [
+            "Maltose",
+            "Maltose",
+            "SEED-cpd00179###",
+            "1.60",
+            "0.00"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Maltose Maltose SEED-cpd00179### 1.60 0.00",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            21
+          ],
+          "row": [
+            "Fructose",
+            "D-Fructose",
+            "SEED-cpd00082###",
+            "0.80",
+            "0.00"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Fructose D-Fructose SEED-cpd00082### 0.80 0.00",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            22
+          ],
+          "row": [
+            "Xylose",
+            "xylose",
+            "SEED-cpd00154###",
+            "0.80",
+            "0.01"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Xylose xylose SEED-cpd00154### 0.80 0.01",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            23
+          ],
+          "row": [
+            "fetal bovine serum",
+            "Fetal Bovine Serum (heat inactivated)",
+            "rich-serum#",
+            "100.00",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "fetal bovine serum Fetal Bovine Serum (heat inactivated) rich-serum# 100.00 null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            24
+          ],
+          "row": [
+            "Isovaleric Acid",
+            "Isovaleric acid",
+            "SEED-cpd05178###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Isovaleric Acid Isovaleric acid SEED-cpd05178### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            25
+          ],
+          "row": [
+            "2-Methylbutyric Acid",
+            "2-methylbutyric acid",
+            "2-methylbutyric acid#",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "2-Methylbutyric Acid 2-methylbutyric acid 2-methylbutyric acid# null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            26
+          ],
+          "row": [
+            "Potassium Phosphate, dibasic",
+            "Potassium Phosphate",
+            "SEED-cpd00009#cpd00205##",
+            "1.99",
+            "0.01"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Potassium Phosphate, dibasic Potassium Phosphate SEED-cpd00009#cpd00205## 1.99 0.01",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            27
+          ],
+          "row": [
+            "Sodium Pyruvate",
+            "Sodium pyruvate",
+            "SEED-cpd00020#cpd00971##",
+            "0.80",
+            "0.01"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+          "snippet": "Sodium Pyruvate Sodium pyruvate SEED-cpd00020#cpd00971## 0.80 0.01",
+          "scientific_review_status": "pending"
+        }
+      ],
+      "source_metadata": "Medium: MEDIUM 1245 MODIFIED FOR DSM 18691\nID: 1245_18691\nName: MEDIUM 1245 MODIFIED FOR DSM 18691\nPH Info: null\nIs Complex: true\nIs Aerobic: false\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1245.pdf\n"
+    },
+    "D1245": {
+      "source_sha256": "2bcf71383b6fe0d25fa345832072429a262e21c3bf65da59edad55a11163c0d7",
+      "url": "https://mediadive.dsmz.de/rest/medium/1245",
+      "rows": [
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            0
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 1,
+            "compound": "Proteose peptone no. 2",
+            "compound_id": 458,
+            "amount": 5,
+            "unit": "g",
+            "g_l": 5,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Proteose peptone no. 2\",\n                        \"compound_id\": 458,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            1
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 2,
+            "compound": "Heart Infusion Broth",
+            "compound_id": 1104,
+            "amount": 5,
+            "unit": "g",
+            "g_l": 5,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Heart Infusion Broth\",\n                        \"compound_id\": 1104,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            2
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 3,
+            "compound": "Yeast extract",
+            "compound_id": 16,
+            "amount": 5,
+            "unit": "g",
+            "g_l": 5,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            3
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 4,
+            "compound": "Potassium Phosphate",
+            "compound_id": 928,
+            "condition": "dibasic",
+            "amount": 2,
+            "unit": "g",
+            "g_l": 2,
+            "mmol_l": 14.6967,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Potassium Phosphate\",\n                        \"compound_id\": 928,\n                        \"condition\": \"dibasic\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\": 14.6967,\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            4
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 5,
+            "compound": "Sodium Chloride",
+            "compound_id": 1105,
+            "amount": 5,
+            "unit": "g",
+            "g_l": 5,
+            "mmol_l": 85.5578,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Sodium Chloride\",\n                        \"compound_id\": 1105,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 85.5578,\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            5
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 6,
+            "compound": "Magnesium sulfate",
+            "compound_id": 793,
+            "amount": 0.1,
+            "unit": "g",
+            "g_l": 0.1,
+            "mmol_l": 0.830772,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Magnesium sulfate\",\n                        \"compound_id\": 793,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.830772,\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            6
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 7,
+            "compound": "Acetic acid",
+            "compound_id": 380,
+            "amount": 1.6,
+            "unit": "ml",
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Acetic acid\",\n                        \"compound_id\": 380,\n                        \"amount\": 1.6,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            7
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 8,
+            "compound": "Propionic acid",
+            "compound_id": 381,
+            "amount": 0.6,
+            "unit": "ml",
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Propionic acid\",\n                        \"compound_id\": 381,\n                        \"amount\": 0.6,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            8
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 9,
+            "compound": "n-Butyric acid",
+            "compound_id": 376,
+            "amount": 0.4,
+            "unit": "ml",
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"n-Butyric acid\",\n                        \"compound_id\": 376,\n                        \"amount\": 0.4,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            9
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 10,
+            "compound": "n-Valeric acid",
+            "compound_id": 288,
+            "amount": 0.1,
+            "unit": "ml",
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"n-Valeric acid\",\n                        \"compound_id\": 288,\n                        \"amount\": 0.1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            10
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 11,
+            "compound": "Isovaleric acid",
+            "compound_id": 225,
+            "amount": 0.1,
+            "unit": "ml",
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Isovaleric acid\",\n                        \"compound_id\": 225,\n                        \"amount\": 0.1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            11
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 12,
+            "compound": "Isobutyric acid",
+            "compound_id": 222,
+            "amount": 0.1,
+            "unit": "ml",
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Isobutyric acid\",\n                        \"compound_id\": 222,\n                        \"amount\": 0.1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            12
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 13,
+            "compound": "2-Methylbutyric acid",
+            "compound_id": 480,
+            "amount": 0.1,
+            "unit": "ml",
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"2-Methylbutyric acid\",\n                        \"compound_id\": 480,\n                        \"amount\": 0.1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            13
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 14,
+            "compound": "Vitamin K1",
+            "compound_id": 150,
+            "attribute": "1% soln",
+            "amount": 0.1,
+            "unit": "ml",
+            "g_l": 0.001,
+            "mmol_l": 0.00221877,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Vitamin K1\",\n                        \"compound_id\": 150,\n                        \"attribute\": \"1% soln\",\n                        \"amount\": 0.1,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00221877,\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            14
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 15,
+            "compound": "L-Cysteine",
+            "compound_id": 671,
+            "amount": 0.5,
+            "unit": "g",
+            "g_l": 0.5,
+            "mmol_l": 4.12677,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"L-Cysteine\",\n                        \"compound_id\": 671,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 4.12677,\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            15
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 16,
+            "compound": "Fetal bovine serum",
+            "compound_id": 954,
+            "condition": "inactivated",
+            "amount": 100,
+            "unit": "ml",
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 16,\n                        \"compound\": \"Fetal bovine serum\",\n                        \"compound_id\": 954,\n                        \"condition\": \"inactivated\",\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            16
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 17,
+            "solution": "Sugar Stock Solution",
+            "solution_id": 5688,
+            "amount": 100,
+            "unit": "ml",
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 17,\n                        \"solution\": \"Sugar Stock Solution\",\n                        \"solution_id\": 5688,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            17
+          ],
+          "stage_id": 2474,
+          "row": {
+            "recipe_order": 18,
+            "compound": "Distilled water",
+            "compound_id": 4,
+            "amount": 800,
+            "unit": "ml",
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 18,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 800,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            0
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 1,
+            "compound": "Glucose",
+            "compound_id": 5,
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "mmol_l": 44.405,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"mmol_l\": 44.405,\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            1
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 2,
+            "compound": "Fructose",
+            "compound_id": 98,
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "mmol_l": 44.405,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Fructose\",\n                        \"compound_id\": 98,\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"mmol_l\": 44.405,\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            2
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 3,
+            "compound": "Sucrose",
+            "compound_id": 108,
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "mmol_l": 23.3713,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Sucrose\",\n                        \"compound_id\": 108,\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"mmol_l\": 23.3713,\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            3
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 4,
+            "compound": "Maltose",
+            "compound_id": 171,
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "mmol_l": 23.3713,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Maltose\",\n                        \"compound_id\": 171,\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"mmol_l\": 23.3713,\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            4
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 5,
+            "compound": "Maltose",
+            "compound_id": 171,
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "mmol_l": 23.3713,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Maltose\",\n                        \"compound_id\": 171,\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"mmol_l\": 23.3713,\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            5
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 6,
+            "compound": "Ribose",
+            "compound_id": 168,
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "mmol_l": 53.2872,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Ribose\",\n                        \"compound_id\": 168,\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"mmol_l\": 53.2872,\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            6
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 7,
+            "compound": "Xylose",
+            "compound_id": 1107,
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "mmol_l": 53.2872,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Xylose\",\n                        \"compound_id\": 1107,\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"mmol_l\": 53.2872,\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            7
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 8,
+            "compound": "Pectin",
+            "compound_id": 1108,
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "mmol_l": 41.2074,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Pectin\",\n                        \"compound_id\": 1108,\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"mmol_l\": 41.2074,\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            8
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 9,
+            "compound": "Starch",
+            "compound_id": 199,
+            "attribute": "soluble",
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Starch\",\n                        \"compound_id\": 199,\n                        \"attribute\": \"soluble\",\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            9
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 10,
+            "compound": "Sodium pyruvate",
+            "compound_id": 438,
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "mmol_l": 72.7008,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Sodium pyruvate\",\n                        \"compound_id\": 438,\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"mmol_l\": 72.7008,\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            10
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 11,
+            "compound": "Thiamine pyrophosphate",
+            "compound_id": 778,
+            "amount": 750,
+            "unit": "\u00b5g",
+            "g_l": 0.00075,
+            "mmol_l": 0.00162772,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Thiamine pyrophosphate\",\n                        \"compound_id\": 778,\n                        \"amount\": 750,\n                        \"unit\": \"\\u00b5g\",\n                        \"g_l\": 0.00075,\n                        \"mmol_l\": 0.00162772,\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            11
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 12,
+            "compound": "Distilled water",
+            "compound_id": 4,
+            "amount": 1000,
+            "unit": "ml",
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+          "snippet": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "scientific_review_status": "pending"
+        }
+      ],
+      "source_metadata": {
+        "medium": {
+          "id": 1245,
+          "name": "OTEB-MEDIUM",
+          "complex_medium": "yes",
+          "min_pH": 6.8,
+          "max_pH": 7.2,
+          "source": "DSMZ",
+          "link": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1245.pdf"
+        },
+        "steps": [
+          [
+            {
+              "step": "OTEB-medium is available from Anaerobe Systems (http://www.anaerobesystems.com)"
+            },
+            {
+              "step": "The following text was taken from the above page: \r\n\r\n- ORAL TREPONEME ENRICHMENT BROTH (OTEB)\r\n\r\n- Products: AS-603 Oral Treponeme Enrichment Broth (OTEB) 10 tubes / pkg"
+            },
+            {
+              "step": "Intended Use: OTEB is an enriched medium for the isolation, cultivation and maintenance of Treponemes found as part of the oral flora."
+            },
+            {
+              "step": "OTEB is a complex peptone-yeast extract medium containing volatile fatty acids and serum for a source of long chain fatty acids. Volatile fatty acids and serum are necessary nutrients for recovery of Treponemes from the oral flora. Inoculation of the medium can be done using a gassing cannula or inside an anaerobic chamber. This medium is prepared, stored and dispensed under oxygen-free conditions to prevent the formation of oxidized products prior to use."
+            },
+            {
+              "step": "Final pH 7.0 +/- 0.2 at 25 degrees C."
+            },
+            {
+              "step": "Final volume 7.0 ml +/- 0.7."
+            }
+          ],
+          []
+        ]
+      }
+    },
+    "K6000": {
+      "source_sha256": "968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba",
+      "url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+      "rows": [
+        {
+          "pointer": [
+            "Metabolites list",
+            0
+          ],
+          "row": [
+            "Xylose",
+            "xylose",
+            "SEED-cpd00154###",
+            "8.00",
+            "0.05"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Xylose xylose SEED-cpd00154### 8.00 0.05",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            1
+          ],
+          "row": [
+            "Distilled Water",
+            "H2O",
+            "SEED-cpd00001###",
+            "null",
+            "null"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Distilled Water H2O SEED-cpd00001### null null",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            2
+          ],
+          "row": [
+            "Thiamine Pyrophosphate",
+            "Thiamine-HCl",
+            "SEED-cpd00099#cpd00305##",
+            "7.50E-4",
+            "2.50E-6"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Thiamine Pyrophosphate Thiamine-HCl SEED-cpd00099#cpd00305## 7.50E-4 2.50E-6",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            3
+          ],
+          "row": [
+            "Sucrose",
+            "Sucrose",
+            "SEED-cpd00076###",
+            "8.00",
+            "0.02"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Sucrose Sucrose SEED-cpd00076### 8.00 0.02",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            4
+          ],
+          "row": [
+            "Ribose",
+            "Ribose",
+            "SEED-cpd05267###",
+            "8.00",
+            "0.05"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Ribose Ribose SEED-cpd05267### 8.00 0.05",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            5
+          ],
+          "row": [
+            "Starch",
+            "Starch",
+            "SEED-cpd11657###",
+            "8.00",
+            "0.01"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Starch Starch SEED-cpd11657### 8.00 0.01",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            6
+          ],
+          "row": [
+            "Pectin",
+            "Pectin",
+            "SEED-cpd11601###",
+            "8.00",
+            "0.01"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Pectin Pectin SEED-cpd11601### 8.00 0.01",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            7
+          ],
+          "row": [
+            "Glucose",
+            "D-Glucose",
+            "SEED-cpd00027###",
+            "8.00",
+            "0.04"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Glucose D-Glucose SEED-cpd00027### 8.00 0.04",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            8
+          ],
+          "row": [
+            "Maltose",
+            "Maltose",
+            "SEED-cpd00179###",
+            "16.00",
+            "0.05"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Maltose Maltose SEED-cpd00179### 16.00 0.05",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            9
+          ],
+          "row": [
+            "Sodium Pyruvate",
+            "Sodium pyruvate",
+            "SEED-cpd00020#cpd00971##",
+            "8.00",
+            "0.07"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Sodium Pyruvate Sodium pyruvate SEED-cpd00020#cpd00971## 8.00 0.07",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "Metabolites list",
+            10
+          ],
+          "row": [
+            "Fructose",
+            "D-Fructose",
+            "SEED-cpd00082###",
+            "8.00",
+            "0.04"
+          ],
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+          "snippet": "Fructose D-Fructose SEED-cpd00082### 8.00 0.04",
+          "scientific_review_status": "pending"
+        }
+      ],
+      "source_metadata": "Medium: Sugar Stock Solution (medium 1245)\nID: 6000\nName: Sugar Stock Solution (medium 1245)\nPH Info: null\nIs Complex: false\nIs Aerobic: false\nIs SubMedium: true\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium6000.pdf\n"
+    },
+    "S5688": {
+      "source_sha256": "2c318327c05d9c02fcd04f1d14e52fa2c4d4d0e71f54f74ebc9d63049c49ce9d",
+      "url": "https://mediadive.dsmz.de/rest/solution/5688",
+      "rows": [
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            0
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 1,
+            "compound": "Glucose",
+            "compound_id": 5,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "mmol_l": 44.405,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+          "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Glucose\",\n                \"compound_id\": 5,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 44.405,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            1
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 2,
+            "compound": "Fructose",
+            "compound_id": 98,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "mmol_l": 44.405,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+          "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Fructose\",\n                \"compound_id\": 98,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 44.405,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            2
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 3,
+            "compound": "Sucrose",
+            "compound_id": 108,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "mmol_l": 23.3713,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+          "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Sucrose\",\n                \"compound_id\": 108,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 23.3713,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            3
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 4,
+            "compound": "Maltose",
+            "compound_id": 171,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "mmol_l": 23.3713,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+          "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\": \"Maltose\",\n                \"compound_id\": 171,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 23.3713,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            4
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 5,
+            "compound": "Maltose",
+            "compound_id": 171,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "mmol_l": 23.3713,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+          "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\": \"Maltose\",\n                \"compound_id\": 171,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 23.3713,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            5
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 6,
+            "compound": "Ribose",
+            "compound_id": 168,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "mmol_l": 53.2872,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+          "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\": \"Ribose\",\n                \"compound_id\": 168,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 53.2872,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            6
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 7,
+            "compound": "Xylose",
+            "compound_id": 1107,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "mmol_l": 53.2872,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+          "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\": \"Xylose\",\n                \"compound_id\": 1107,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 53.2872,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            7
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 8,
+            "compound": "Pectin",
+            "compound_id": 1108,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "mmol_l": 41.2074,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+          "snippet": "{\n                \"recipe_order\": 8,\n                \"compound\": \"Pectin\",\n                \"compound_id\": 1108,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 41.2074,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            8
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 9,
+            "compound": "Starch",
+            "compound_id": 199,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": "soluble",
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "mmol_l": null,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+          "snippet": "{\n                \"recipe_order\": 9,\n                \"compound\": \"Starch\",\n                \"compound_id\": 199,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"soluble\",\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            9
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 10,
+            "compound": "Sodium pyruvate",
+            "compound_id": 438,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 8,
+            "unit": "g",
+            "g_l": 8,
+            "mmol_l": 72.7008,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+          "snippet": "{\n                \"recipe_order\": 10,\n                \"compound\": \"Sodium pyruvate\",\n                \"compound_id\": 438,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 72.7008,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            10
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 11,
+            "compound": "Thiamine pyrophosphate",
+            "compound_id": 778,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 750,
+            "unit": "\u00b5g",
+            "g_l": 0.00075,
+            "mmol_l": 0.00162772,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+          "snippet": "{\n                \"recipe_order\": 11,\n                \"compound\": \"Thiamine pyrophosphate\",\n                \"compound_id\": 778,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 750,\n                \"unit\": \"\\u00b5g\",\n                \"g_l\": 0.00075,\n                \"mmol_l\": 0.00162772,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        },
+        {
+          "pointer": [
+            "data",
+            "recipe",
+            11
+          ],
+          "stage_id": 5688,
+          "row": {
+            "recipe_order": 12,
+            "compound": "Distilled water",
+            "compound_id": 4,
+            "solution": null,
+            "solution_id": null,
+            "condition": null,
+            "attribute": null,
+            "amount": 1000,
+            "unit": "ml",
+            "g_l": null,
+            "mmol_l": null,
+            "optional": 0
+          },
+          "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+          "snippet": "{\n                \"recipe_order\": 12,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "scientific_review_status": "pending"
+        }
+      ],
+      "source_metadata": {
+        "medium": null,
+        "steps": [
+          []
+        ]
+      }
+    }
+  },
+  "source_row_count": 126,
+  "K1245_variant_comparison": {
+    "unchanged_rows": 27,
+    "extra_row": [
+      "fetal bovine serum",
+      "Fetal Bovine Serum (heat inactivated)",
+      "rich-serum#",
+      "100.00",
+      "null"
+    ],
+    "pH_metadata_differs": true,
+    "exact_duplicate": false
+  },
+  "visual_review": {
+    "page_images": [
+      {
+        "source": "DSMZ1245",
+        "page": 1,
+        "pdf_sha256": "6f58650c6ca9e458921a320d8f0ba9f166e837c771b79a489f10aef2fd3142ae",
+        "image": "/tmp/ingredient-media-20261007/next1245-pages/DSMZ1245-1.jpg",
+        "image_sha256": "059747c1c3d14c6c20dfaa908248ed47875d53d8e57ae4cfb264031b301c6b4c"
+      },
+      {
+        "source": "DSMZ1245",
+        "page": 2,
+        "pdf_sha256": "6f58650c6ca9e458921a320d8f0ba9f166e837c771b79a489f10aef2fd3142ae",
+        "image": "/tmp/ingredient-media-20261007/next1245-pages/DSMZ1245-2.jpg",
+        "image_sha256": "a63b6c66700a94ad112d1e3e6ad237dc45d7601400b19252e4138df0ebf5caa0"
+      }
+    ],
+    "reviewed_by": "codex",
+    "findings": [
+      "Page 1 distinguishes liquid acid inputs, 0.1 ml vitamin K1 solution, 100 ml serum and 100 ml sugar stock from basal masses and 800 ml water.",
+      "Sugar stock begins on page 1 and continues on page 2. Two separate Maltose 8.0 g rows are visibly printed; neither summation nor de-duplication is justified by inspection alone.",
+      "Page 2 gives 750.0 micrograms thiamine pyrophosphate and 1000.0 ml stock water, not an explicit make-up-to-final-volume instruction.",
+      "Page 2 prints pH 7.0 +/- 0.2 at 25 degrees C and final volume 7.0 ml +/- 0.7. Do not apply the latter as a recipe-batch denominator."
+    ]
+  },
+  "records_unchanged": true
+}

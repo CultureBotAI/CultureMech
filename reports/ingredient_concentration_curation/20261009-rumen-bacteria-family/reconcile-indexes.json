@@ -1,0 +1,23 @@
+{
+  "terminal": true,
+  "phase": "indexes",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/generate_recipe_indexes.py",
+        "--recipe-dir",
+        "data/normalized_yaml",
+        "--output-dir",
+        "/tmp/ingredient-media-20261007/330-index-preview"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/reconcile-indexes-0.log",
+      "log_sha256": "6f5ddc1954efc8b0becbf4753f9542672beaab0b6f75c0193072001d035d7367"
+    }
+  ],
+  "source_sha256": "746bda4b9dd276ab1077245cf751a5c652fd697e6f355cb7183b49f7f93edd71",
+  "plan_sha256": "5940d6a1b64c0f21408a6bde46512049cb4cbfff12cb80ae9061c5c6edfd3a1f",
+  "applied_files": 7,
+  "unique_records": 8
+}

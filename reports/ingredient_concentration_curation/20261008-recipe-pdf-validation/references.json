@@ -1,0 +1,54 @@
+{
+  "phase": "references",
+  "terminal": true,
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+        "--json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/recipe-pdf-references-0.log"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml",
+        "--json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/recipe-pdf-references-1.log"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/bsk_medium.yaml",
+        "--json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/recipe-pdf-references-2.log"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/sc_medium.yaml",
+        "--json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/recipe-pdf-references-3.log"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "97b156240849be7bf096a61d00d7a683ff9c8de8922db8585e5e8128ba7eb36c"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "97b156240849be7bf096a61d00d7a683ff9c8de8922db8585e5e8128ba7eb36c"
+  }
+}

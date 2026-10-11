@@ -1,0 +1,71 @@
+{
+  "terminal": true,
+  "phase": "corpus",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/corpus-00.log",
+      "log_sha256": "e7a48e6e8ed0f78d7fc573bee52fa53a11fd99dd36405642430dd11568deb251"
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/corpus-01.log",
+      "log_sha256": "eb7360e4d6ac289a3c075ae3f26d2a32b53e6b2da8d03073cfda3e697295cbc0"
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/corpus-02.log",
+      "log_sha256": "60f2098513dcf4ade1c660d2f7e519fd889cd360c2581687beb263a9afb3ec99"
+    },
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/corpus-03.log",
+      "log_sha256": "09a2922082db841587410042dc33d7d3f72b2601f1d6b6f2b33322471ee47f2c"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/corpus-04.log",
+      "log_sha256": "a7833bb0b51191d531d721012977d32b6a17244642e5218ccfcbc018802f78f6"
+    }
+  ],
+  "records_edited": 0,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "plan_sha256": "fd4e0e684d80ee6d9b93497148c8858f545a6bf6a906c4adb18a66ec08c03db9",
+  "code_sha256": {
+    "scripts/repair_resazurin_stock_identity.py": "30cc133bf2a0da789fdc541d0a131bbb09d269127934bfce350f0d58c2a595fb",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/audit.py": "34bfff226e6aec3f00e7a4c54bbf4118695c7bd0c1553efcc0ec6c607c111393",
+    "tests/test_resazurin_stock_identity.py": "9dd67e689e3b365be7d6b8fafde1ed357e47323f74a665e1615a69d51ca53fa3"
+  },
+  "normalized_count": 15910,
+  "inventory_before_sha256": "a68900ae05b0e2f039f26488b0b6a4d9860219d3ed878d57b7cc8ae562e77320",
+  "passed": true,
+  "inventory_after_sha256": "a68900ae05b0e2f039f26488b0b6a4d9860219d3ed878d57b7cc8ae562e77320",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

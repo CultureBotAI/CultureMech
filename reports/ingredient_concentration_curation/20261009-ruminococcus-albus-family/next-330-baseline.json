@@ -1,0 +1,279 @@
+{
+  "terminal": true,
+  "state": "Read-only preparation, not applied curation or completed scientific review",
+  "records_edited": false,
+  "context_sha256": "97e6cfa229556a5251518fafb27c7506242afb62cb7be79ff7ff985dfb4e6c49",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/JCM_J1029_RUMEN_BACTERIA_MEDIUM.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-0.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/JCM_J1029_RUMEN_BACTERIA_MEDIUM.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-1.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/KOMODO_330_RUMEN_BACTERIA_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-2.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/KOMODO_330_RUMEN_BACTERIA_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-3.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/TOGO_M1093_Rumen_Bacteria_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-4.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/TOGO_M1093_Rumen_Bacteria_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-5.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_124_Haemin_solution.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-6.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/mediadive_124_Haemin_solution.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-7.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_3774_VFA_solution.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-8.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/mediadive_3774_VFA_solution.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-9.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_5080_Main_sol_J1029.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-10.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/mediadive_5080_Main_sol_J1029.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-11.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_606_Main_sol_330.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-12.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/mediadive_606_Main_sol_330.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-13.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_607_Mineral_solution.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-14.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/mediadive_607_Mineral_solution.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-15.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_608_Volatile_fatty_acid_mixture.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-16.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/mediadive_608_Volatile_fatty_acid_mixture.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-17.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/medium_330_modified_for_dsm_17630.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-18.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/medium_330_modified_for_dsm_17630.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-19.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mineral_solution_medium_330.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-20.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/mineral_solution_medium_330.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-21.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/rumen_bacteria_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-22.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/rumen_bacteria_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-23.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/volatile_fatty_acid_mixture_medium_330.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-24.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/volatile_fatty_acid_mixture_medium_330.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-330-baseline-25.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    }
+  ],
+  "source_access_errors": [
+    {
+      "key": "JCM1029",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1029",
+      "error": "RecipeReferenceError: source_unavailable: JCM returned no recipe",
+      "http_status": null
+    }
+  ],
+  "normalized_sha256": "2be09e9249a816360bba52b76c1f3d889e12aae7bfd90d12771f117acb01a0d1",
+  "normalized_count": 15910,
+  "records_unchanged": true
+}

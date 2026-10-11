@@ -1,0 +1,611 @@
+{
+  "terminal": true,
+  "records_edited": 0,
+  "all_record_goal_complete": false,
+  "tests_modified": false,
+  "cases": [
+    {
+      "cohort": "20261007-komodo-media-0500-1000",
+      "records": 500,
+      "mismatches": [
+        {
+          "record": "data/normalized_yaml/archaea/KOMODO_119_METHANOBACTERIUM_medium.yaml",
+          "id": "CultureMech:003939",
+          "old_expected_sha256": "6ab9d6fb720bfb9381431420da2ade3b08a14ffb0452a4d60cc25a67939f0564",
+          "current_sha256": "64d7389f562312aa0ac036af82b0d90b2bfed232bcb8e7f32c138ab1df5632bd",
+          "registered_successor_sha256": "64d7389f562312aa0ac036af82b0d90b2bfed232bcb8e7f32c138ab1df5632bd",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanobacterium-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/for_dsm_16632_and_dsm_16643.yaml",
+          "id": "CultureMech:003918",
+          "old_expected_sha256": "1728c4a5eca46337595269bde6b3eeb6f81f14682951a403861dabb570b558cb",
+          "current_sha256": "90fc212f8dac27d34a4950ed291148438a362bd0f949c6cabce71d822af7a4c6",
+          "registered_successor_sha256": "90fc212f8dac27d34a4950ed291148438a362bd0f949c6cabce71d822af7a4c6",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanobacterium-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_1224.yaml",
+          "id": "CultureMech:003916",
+          "old_expected_sha256": "c09f4a7197d044a9fb6fc183f3301d9a57d789164419647ca7a05b410d8265d3",
+          "current_sha256": "64e6175631ce45d01c169ba5a6f6bfbe3ff102c846e9c0bed060a2b8c6a1b579",
+          "registered_successor_sha256": "64e6175631ce45d01c169ba5a6f6bfbe3ff102c846e9c0bed060a2b8c6a1b579",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanobacterium-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_3468.yaml",
+          "id": "CultureMech:003919",
+          "old_expected_sha256": "0996785c8aa9ce62640f4483ff997c8e7333d4889607d74d8bbfaa1e2539b015",
+          "current_sha256": "a6e19a5070dfb9abf2e1d23c924dc7cf04884bfc59c3304eeffaf2547ed596bb",
+          "registered_successor_sha256": "a6e19a5070dfb9abf2e1d23c924dc7cf04884bfc59c3304eeffaf2547ed596bb",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanobacterium-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_4855.yaml",
+          "id": "CultureMech:003920",
+          "old_expected_sha256": "64a91f8c69fc1565232cce3824c79de5be55a31dddd6447ce39049f88f3df83b",
+          "current_sha256": "23d5cdb0db7ad181f36779baf197011a221c215056d0c40e6045fc9ccb1e24f2",
+          "registered_successor_sha256": "23d5cdb0db7ad181f36779baf197011a221c215056d0c40e6045fc9ccb1e24f2",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanobacterium-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_6216.yaml",
+          "id": "CultureMech:003921",
+          "old_expected_sha256": "13fc6e0923022a7eacfe57faa31bdad2edac64c7a800f63579843cb965f64c6e",
+          "current_sha256": "dc95596dbe88ebce84c3fa24e4d11f5c2690a753c60709a4e2b8198e78be96bc",
+          "registered_successor_sha256": "dc95596dbe88ebce84c3fa24e4d11f5c2690a753c60709a4e2b8198e78be96bc",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanobacterium-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_7057.yaml",
+          "id": "CultureMech:003922",
+          "old_expected_sha256": "a6900e038a232b1f9311e0b676f3c705cfaa98f7910748fd45fd0d0f1fc39b1f",
+          "current_sha256": "2b27bde039af50295e00b5ae4d25e1cd6f1268760658a9383e774efccd4abfa8",
+          "registered_successor_sha256": "2b27bde039af50295e00b5ae4d25e1cd6f1268760658a9383e774efccd4abfa8",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanobacterium-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_7256.yaml",
+          "id": "CultureMech:003923",
+          "old_expected_sha256": "b9144a42ad3c84d45dc42782b10229ff6ea969b6cb7e8f53b098e60c148927af",
+          "current_sha256": "da16ef17c9167a84bfd2791507dd77d2e53a79657260ccd718d44c97443311af",
+          "registered_successor_sha256": "da16ef17c9167a84bfd2791507dd77d2e53a79657260ccd718d44c97443311af",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanobacterium-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_9575.yaml",
+          "id": "CultureMech:003924",
+          "old_expected_sha256": "360e25e7c01dd23e238c5f49155e3623973095d98e7b24f1d74a6475fd258707",
+          "current_sha256": "0d4a6e7d530e8078320fb6c46f23b862e85ccac6a4adfaa24273627f3b0f14b6",
+          "registered_successor_sha256": "0d4a6e7d530e8078320fb6c46f23b862e85ccac6a4adfaa24273627f3b0f14b6",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanobacterium-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11975.yaml",
+          "id": "CultureMech:003911",
+          "old_expected_sha256": "b6b2f08f06417f4037835cb2d68cc24733e59221d45706f2c161b295b5510280",
+          "current_sha256": "0f97cd8635b94586375e3bf9b87d97c867b1718248795516654ef5b3d66e75f2",
+          "registered_successor_sha256": "0f97cd8635b94586375e3bf9b87d97c867b1718248795516654ef5b3d66e75f2",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanobacterium-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11977.yaml",
+          "id": "CultureMech:003912",
+          "old_expected_sha256": "ad76aaa23fd507034fec2147651f1f4f64031cdd86461ca6e117192954c38300",
+          "current_sha256": "662388e4063d2270c99c83bdf0efcf06d77a73320e9e5f59fa5fde12faaa5d94",
+          "registered_successor_sha256": "662388e4063d2270c99c83bdf0efcf06d77a73320e9e5f59fa5fde12faaa5d94",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanobacterium-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11978.yaml",
+          "id": "CultureMech:003913",
+          "old_expected_sha256": "d34fe02dd9ee61eec1017a42c9d1d14b62c2e91bbfdec0cef307efca53d2d095",
+          "current_sha256": "ea3d658f456884ad606fe283c3d04e91942ae17458dc73261032d130d0b1d932",
+          "registered_successor_sha256": "ea3d658f456884ad606fe283c3d04e91942ae17458dc73261032d130d0b1d932",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanobacterium-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11979.yaml",
+          "id": "CultureMech:003914",
+          "old_expected_sha256": "4737ebdf5ae0e185151491f8eb1c315c87935aa9d37389ef89e6aec6a59fa6ea",
+          "current_sha256": "b6eab993e367b24e7af2e69a04be500fbb5b081607955d257696a55e9125c284",
+          "registered_successor_sha256": "b6eab993e367b24e7af2e69a04be500fbb5b081607955d257696a55e9125c284",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanobacterium-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11995.yaml",
+          "id": "CultureMech:003915",
+          "old_expected_sha256": "a8d288ae364d13bd583532002ab6e1b89736d70f24e9cd492e0213cde590819e",
+          "current_sha256": "d9bee896841c20b81d98a90c64ace0d981c9fc1433d7b434a8227d1651e9e6e8",
+          "registered_successor_sha256": "d9bee896841c20b81d98a90c64ace0d981c9fc1433d7b434a8227d1651e9e6e8",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanobacterium-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_15163.yaml",
+          "id": "CultureMech:003917",
+          "old_expected_sha256": "d7bdd12b0442108a30dff5593a67e765cfb30fe8a337fe115857bc72652c76f7",
+          "current_sha256": "091e32649b85c3d3c4a60054b536b8ec8ceac2bfaeebe9a1a51838cf02412d77",
+          "registered_successor_sha256": "091e32649b85c3d3c4a60054b536b8ec8ceac2bfaeebe9a1a51838cf02412d77",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanobacterium-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/archaea/KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml",
+          "id": "CultureMech:004186",
+          "old_expected_sha256": "2c7dc11649f555073d34c606056658238d667cfdd1e74a60a4a3a876826f60af",
+          "current_sha256": "17690510cc1d91151b68f7cf5b79158b3ef07b5ff8389c7c07e393e979db70f7",
+          "registered_successor_sha256": "17690510cc1d91151b68f7cf5b79158b3ef07b5ff8389c7c07e393e979db70f7",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/KOMODO_212_SYNTHROPHOMONAS_medium.yaml",
+          "id": "CultureMech:004403",
+          "old_expected_sha256": "d47308a1fb57269eba5f2bc77cb711542efe88b8c09804eace4ff2f2709989de",
+          "current_sha256": "df4773a5857a8c9eccb7c618cca58e985f19b30df078f1b5ee6e949dc283a372",
+          "registered_successor_sha256": "df4773a5857a8c9eccb7c618cca58e985f19b30df078f1b5ee6e949dc283a372",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        }
+      ],
+      "old_mapping_verifier": "passed"
+    },
+    {
+      "cohort": "20261007-komodo-media-1000-1500",
+      "records": 500,
+      "mismatches": [
+        {
+          "record": "data/normalized_yaml/bacterial/for_dsm_2805.yaml",
+          "id": "CultureMech:004855",
+          "old_expected_sha256": "e37fa78eb5c7e921d6d2e56bc5a49308da61d4cc3ecb9a60787f96ea3c628d2a",
+          "current_sha256": "0100ea13338c0250eccfbc024478378d85d0bdb9d240107e4007abafce3d09de",
+          "registered_successor_sha256": "0100ea13338c0250eccfbc024478378d85d0bdb9d240107e4007abafce3d09de",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/KOMODO_330_RUMEN_BACTERIA_medium.yaml",
+          "id": "CultureMech:005024",
+          "old_expected_sha256": "639be170cd1bd2d892dfd4fe8c7933427932e6328c4b2b21ff704b3fc8794f3b",
+          "current_sha256": "c494631fcdfdb8ff56d98cba9f04cb1fbed1a421eead22150e5d739b72acf960",
+          "registered_successor_sha256": "c494631fcdfdb8ff56d98cba9f04cb1fbed1a421eead22150e5d739b72acf960",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/medium_330_modified_for_dsm_17630.yaml",
+          "id": "CultureMech:005023",
+          "old_expected_sha256": "17505e0c5a4e2eab99ca8030b2e1064c5fb6e936dd332bb88c93172e30162509",
+          "current_sha256": "2c4dd28f7d7e4bb3fa014d5f6271ad17cf1f8b21a8cba92a384b22673906f311",
+          "registered_successor_sha256": "2c4dd28f7d7e4bb3fa014d5f6271ad17cf1f8b21a8cba92a384b22673906f311",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+          "id": "CultureMech:005218",
+          "old_expected_sha256": "6f1ce7009904b3a88cb0e4654926f8790e96cd3b47c226c7747155b926a0e87f",
+          "current_sha256": "f082d7c6a1607d1f9b3d4edc86fbbea6464ca1072644ec2a4bae5f32686190a6",
+          "registered_successor_sha256": "f082d7c6a1607d1f9b3d4edc86fbbea6464ca1072644ec2a4bae5f32686190a6",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-dsmz-albumin-preparations/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml",
+          "id": "CultureMech:005284",
+          "old_expected_sha256": "986ef1c3a524648c14550c565aa8b701cbd95affbd30757a0cb094b11226fc6f",
+          "current_sha256": "20efca3af40aca7fb5401e895eabb08963175a94447c6ed16628428e9d9c1a95",
+          "registered_successor_sha256": "20efca3af40aca7fb5401e895eabb08963175a94447c6ed16628428e9d9c1a95",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/medium_436_modified_for_dsm_18848.yaml",
+          "id": "CultureMech:005283",
+          "old_expected_sha256": "2ac2aaa94a86e282cdb24d1b9d575d4f27f164e1095f9277197f4926e48b92ed",
+          "current_sha256": "657aba4a32d95d2b1ddec37a69753b244153d02feb8881bb929650c77a1d8253",
+          "registered_successor_sha256": "657aba4a32d95d2b1ddec37a69753b244153d02feb8881bb929650c77a1d8253",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        }
+      ],
+      "old_mapping_verifier": "passed"
+    },
+    {
+      "cohort": "20261007-komodo-media-2500-3000",
+      "records": 500,
+      "mismatches": [
+        {
+          "record": "data/normalized_yaml/bacterial/KOMODO_829_DESULFUROBACTERIUM_MEDIUM.yaml",
+          "id": "CultureMech:006564",
+          "old_expected_sha256": "621a52392867217774bb996d21e5f1bb6caaa7d3fe1bd8501df8aac6c258ecf3",
+          "current_sha256": "797198373780239eebeaa0ae4da6f9bfb1c64a41b8c7f76f063e605743b74554",
+          "registered_successor_sha256": "797198373780239eebeaa0ae4da6f9bfb1c64a41b8c7f76f063e605743b74554",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/plan-v2.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/for_dsm_14290.yaml",
+          "id": "CultureMech:006561",
+          "old_expected_sha256": "4bbb412d994db7be1dfbab2c383ccb2b41594bccc5b16f7679ae60a7f2eb7e13",
+          "current_sha256": "7abce11156c62d55ab0e283846db0fbf85470f1fb5b52066f1c4af8e3b5499d7",
+          "registered_successor_sha256": "7abce11156c62d55ab0e283846db0fbf85470f1fb5b52066f1c4af8e3b5499d7",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/plan-v2.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/for_dsm_15218_dsm_15521_dsm_15522_dsm_16304.yaml",
+          "id": "CultureMech:006562",
+          "old_expected_sha256": "d85896a69e82911d989f4b131902e8e213599550c5254c125130a29c672e7957",
+          "current_sha256": "fc14bd7b44d17ce21f448796c0152cac67d87f0b39b0ac9ae4bd95ca081f2fbe",
+          "registered_successor_sha256": "fc14bd7b44d17ce21f448796c0152cac67d87f0b39b0ac9ae4bd95ca081f2fbe",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/plan-v2.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/for_dsm_21157.yaml",
+          "id": "CultureMech:006563",
+          "old_expected_sha256": "35cba95ed7df3112e3f6309ff560ebeb077758a3b32cc1bee5ba27fc2e5209a0",
+          "current_sha256": "8c63e73ab3c351031cb620a07aa32ccfa4edd6d27153e3c54492a31749103790",
+          "registered_successor_sha256": "8c63e73ab3c351031cb620a07aa32ccfa4edd6d27153e3c54492a31749103790",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/plan-v2.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/medium_829_modified_for_dsm_16661.yaml",
+          "id": "CultureMech:006560",
+          "old_expected_sha256": "35c2ff237b430a0d04c3f31f1ae11c1ed9359f5e17821aacc31581de7f811772",
+          "current_sha256": "dd78c0ce1ac8774904f93b928bb03dff3d96efdbc5ab61959bcfe8528ef8c01d",
+          "registered_successor_sha256": "dd78c0ce1ac8774904f93b928bb03dff3d96efdbc5ab61959bcfe8528ef8c01d",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/plan-v2.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/KOMODO_829a_DESULFUROBACTERIUM_ATLANTICUM_MEDIUM.yaml",
+          "id": "CultureMech:006565",
+          "old_expected_sha256": "13d34163655a9f370a20658917c52fdd572f547a8fef9a955255b6baffa4f792",
+          "current_sha256": "60fbe4289435f01852482bf75d758740383c68dcfc2138559f0b14fefc6f3438",
+          "registered_successor_sha256": "60fbe4289435f01852482bf75d758740383c68dcfc2138559f0b14fefc6f3438",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/plan-v2.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/KOMODO_911_MIDDLEBROCK_7H11_AGAR.yaml",
+          "id": "CultureMech:006786",
+          "old_expected_sha256": "5fe68df65345cfbdd9f268c63d741c475285f9a23981093f6cf9fc770944b7c2",
+          "current_sha256": "9bbcc6827f0bf294c30c0c24ca4243c5ed2c880bcc9abec29c57a9afd3862858",
+          "registered_successor_sha256": "9bbcc6827f0bf294c30c0c24ca4243c5ed2c880bcc9abec29c57a9afd3862858",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-middlebrook-linked/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/medium_911_modified_for_dsm_44536.yaml",
+          "id": "CultureMech:006785",
+          "old_expected_sha256": "77f718e29d8c09955be16c1889ce9ffdd42a5145168fe21319649fec6ea08f46",
+          "current_sha256": "d56e27c4b2a26a759c25a519f34d55d7747856f5891fd867fe6c92b778deb80a",
+          "registered_successor_sha256": "d56e27c4b2a26a759c25a519f34d55d7747856f5891fd867fe6c92b778deb80a",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-middlebrook-linked/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/KOMODO_1006_ALLISONELLA_medium.yaml",
+          "id": "CultureMech:003506",
+          "old_expected_sha256": "91bb66fc98dcc526c741fa448c77ff3fcb2e45ad79d4ca5826d6e2e30118c7f5",
+          "current_sha256": "703ca91ad8af07e196693c712f257c7171088e55d65cf9ace47addc985bda21a",
+          "registered_successor_sha256": "703ca91ad8af07e196693c712f257c7171088e55d65cf9ace47addc985bda21a",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-allisonella-acids/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml",
+          "id": "CultureMech:003534",
+          "old_expected_sha256": "290da5a489dd1e46585762af7a1dbc048692c36dbff95d3726a79f8cae60fd86",
+          "current_sha256": "e26a9ef01a8fe3130730db9ca330b9c97494cfbada9bbec5866c17a1dd6ebc28",
+          "registered_successor_sha256": "e26a9ef01a8fe3130730db9ca330b9c97494cfbada9bbec5866c17a1dd6ebc28",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-lactalbumin-formulations/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/medium_1021_modified_for_dsm_16929.yaml",
+          "id": "CultureMech:003533",
+          "old_expected_sha256": "cb3e80ab6fe71907dfc499d2fa55de756f4a36365b6b8151b7212e3b09698c7c",
+          "current_sha256": "502a85a5c5678cdd36283dceba01b3eca4699373969f7dbd2d332d9aa77da7c0",
+          "registered_successor_sha256": "502a85a5c5678cdd36283dceba01b3eca4699373969f7dbd2d332d9aa77da7c0",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-lactalbumin-formulations/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        }
+      ]
+    },
+    {
+      "cohort": "20261008-komodo-media-3000-3633",
+      "records": 633,
+      "mismatches": [
+        {
+          "record": "data/normalized_yaml/bacterial/KOMODO_1245_OTEB-MEDIUM.yaml",
+          "id": "CultureMech:004003",
+          "old_expected_sha256": "084c4278a2be6e87e42ac14164797c3933ff07172c521fa3b4a1f379408f0f47",
+          "current_sha256": "0f31228f716429d29d9e4f3770de742cee38b2c6215bb81c0d271512d1b8353c",
+          "registered_successor_sha256": "0f31228f716429d29d9e4f3770de742cee38b2c6215bb81c0d271512d1b8353c",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-oteb-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/medium_1245_modified_for_dsm_18691.yaml",
+          "id": "CultureMech:004002",
+          "old_expected_sha256": "a66deefdddb224dd4892a1b28bb32e8a02a5389803327f5cda8c232d2ecfe719",
+          "current_sha256": "33a13534ce93d6e8e6e3509c759d518800d331d52c3034e7f786cffd4b63b396",
+          "registered_successor_sha256": "33a13534ce93d6e8e6e3509c759d518800d331d52c3034e7f786cffd4b63b396",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-oteb-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/solution_of_growth_stimulating_factors_medium_829.yaml",
+          "id": "CultureMech:004294",
+          "old_expected_sha256": "2d6a142307aec05278b1280cf5f8414f9fe3eae43afc6939b3fe6871e5e48a92",
+          "current_sha256": "07b45adcf845f74fe1b69e63b82deddd20860ea4a57a8af9f1ee08b0145c70a2",
+          "registered_successor_sha256": "07b45adcf845f74fe1b69e63b82deddd20860ea4a57a8af9f1ee08b0145c70a2",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/plan-v2.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/fatty_acid_mixture_medium_436.yaml",
+          "id": "CultureMech:004796",
+          "old_expected_sha256": "3567e4e00eb7a1945c9b1be5655f8b8ad605e445c51d584520996b3b37cd74ae",
+          "current_sha256": "7e37845ad726dba20ab059a5aebb07b7bf28ded5c325cff5226433d7addc50af",
+          "registered_successor_sha256": "7e37845ad726dba20ab059a5aebb07b7bf28ded5c325cff5226433d7addc50af",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/mineral_solution_medium_330.yaml",
+          "id": "CultureMech:004812",
+          "old_expected_sha256": "3b24a77914f8314b40cd5998c40c973151c0dbb43eb85d28babef7c1d65dd688",
+          "current_sha256": "cd06915fd9c4f22b9573eb430915a97bd186b6b59f77a1d4deacf6dbd0541e2f",
+          "registered_successor_sha256": "cd06915fd9c4f22b9573eb430915a97bd186b6b59f77a1d4deacf6dbd0541e2f",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/volatile_fatty_acid_mixture_medium_330.yaml",
+          "id": "CultureMech:004979",
+          "old_expected_sha256": "caae3808a69c22caba62d5e6a082cbbd033c0ae869f1c8fc23e8d8742bee3e2b",
+          "current_sha256": "b167d90ea94a2b4f1f828c3043bbf3faadf6bbaee36ecd8b28efd83d17b4cab8",
+          "registered_successor_sha256": "b167d90ea94a2b4f1f828c3043bbf3faadf6bbaee36ecd8b28efd83d17b4cab8",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        },
+        {
+          "record": "data/normalized_yaml/bacterial/sugar_stock_solution_medium_1245.yaml",
+          "id": "CultureMech:006082",
+          "old_expected_sha256": "3024b892745fb14562eb55cd1a16bca6cb6b87938bf0c47fd9b4ac9e6ce8ed47",
+          "current_sha256": "62ed030fd7c033da4480c6bb8b47f257e0b027d090ee26e9732b61a5e797a0b6",
+          "registered_successor_sha256": "62ed030fd7c033da4480c6bb8b47f257e0b027d090ee26e9732b61a5e797a0b6",
+          "matches_registered_successor": true,
+          "successor_depth": 1,
+          "successor_plans": [
+            "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-oteb-family/plan.json"
+          ],
+          "independent_current_source_audit_passed": true,
+          "historical_accepted_claims_intact": 0
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "affected_records": 41,
+  "interpretation": "Historical tests name only early successor batches. These current record changes are hash-linked to later registered, independently audited curation. Keep the running full-suite failure and repair test history handling only after the run terminates; do not exempt arbitrary hashes or overwrite recipe data to satisfy old expectations."
+}

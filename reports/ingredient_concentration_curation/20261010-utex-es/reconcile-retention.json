@@ -1,0 +1,68 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "retention",
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "records": [
+    {
+      "path": "data/normalized_yaml/algae/Enriched_Seawater_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/Enriched_Seawater_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/ES_10_Enriched_Seawater_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/ES_10_Enriched_Seawater_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/ES_2_Enriched_Seawater_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/ES_2_Enriched_Seawater_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/ES_4_Enriched_Seawater_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/ES_4_Enriched_Seawater_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/1_2_Enriched_Seawater.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/1_2_Enriched_Seawater.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/2_3_Enriched_Seawater.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/2_3_Enriched_Seawater.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    }
+  ],
+  "distinct_cohort_groups": 6,
+  "derived_yaml_written": false,
+  "input_records": 15910,
+  "output_groups": 10781,
+  "source_inventory_unchanged": true
+}

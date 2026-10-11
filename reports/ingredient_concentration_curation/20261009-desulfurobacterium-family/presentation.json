@@ -1,0 +1,271 @@
+{
+  "terminal": true,
+  "phase": "presentation",
+  "checks": [],
+  "plan_sha256": "8452f7a0ffa1de24471cac81be183e7eb5deddfa26c4b03578ada91040181a1f",
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_829_DESULFUROBACTERIUM_MEDIUM.yaml",
+      "actual_sha256": "797198373780239eebeaa0ae4da6f9bfb1c64a41b8c7f76f063e605743b74554",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 13,
+      "prior_acid_spans_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_829a_DESULFUROBACTERIUM_ATLANTICUM_MEDIUM.yaml",
+      "actual_sha256": "60fbe4289435f01852482bf75d758740383c68dcfc2138559f0b14fefc6f3438",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "id",
+        "media_term",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 10,
+      "prior_acid_spans_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/desulfurobacterium_atlanticum_medium.yaml",
+      "actual_sha256": "3f28cdeb315a0e7a99e8361a87bfe97b4d2218a0e4db12adb1a82ba228cc3004",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 7,
+      "prior_acid_spans_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/desulfurobacterium_crinifex_medium.yaml",
+      "actual_sha256": "b4e7e20894774691800cafc49c9aea48d43eee4370c4edb7cbcfc36928895f37",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_range",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 9,
+      "prior_acid_spans_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/desulfurobacterium_indicum_medium.yaml",
+      "actual_sha256": "f99ab18fd40d7b7456ff8e7a804f8db57773302366dc2354600e2f4048841c61",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_range",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 9,
+      "prior_acid_spans_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/desulfurobacterium_medium.yaml",
+      "actual_sha256": "51bac1f50ee144a227f5d53cc1e88d5b65dae78f557c6c4e305ae0d20cb6d431",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 11,
+      "prior_acid_spans_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_14290.yaml",
+      "actual_sha256": "7abce11156c62d55ab0e283846db0fbf85470f1fb5b52066f1c4af8e3b5499d7",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "data_quality_flags",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 12,
+      "prior_acid_spans_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_15218_dsm_15521_dsm_15522_dsm_16304.yaml",
+      "actual_sha256": "fc14bd7b44d17ce21f448796c0152cac67d87f0b39b0ac9ae4bd95ca081f2fbe",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_range",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 12,
+      "prior_acid_spans_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_21157.yaml",
+      "actual_sha256": "8c63e73ab3c351031cb620a07aa32ccfa4edd6d27153e3c54492a31749103790",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "data_quality_flags",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state",
+        "variant_relationship"
+      ],
+      "prior_history_spans_preserved": 12,
+      "prior_acid_spans_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_829_modified_for_dsm_16661.yaml",
+      "actual_sha256": "dd78c0ce1ac8774904f93b928bb03dff3d96efdbc5ab61959bcfe8528ef8c01d",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 11,
+      "prior_acid_spans_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/thermodesulfobacterium_hydrogeniphilum_medium.yaml",
+      "actual_sha256": "f58bc38bed17199f87c0658f6a33494861642228d9f25b2d2758c01309e6827c",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 11,
+      "prior_acid_spans_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M2587_Desulfurobacterium_Medium.yaml",
+      "actual_sha256": "e14ddb8a98a60ca6f43516f6ca1bcc8c66927bf33abdcd853cde990be77e474e",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 13,
+      "prior_acid_spans_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/solution_of_growth_stimulating_factors_medium_829.yaml",
+      "actual_sha256": "07b45adcf845f74fe1b69e63b82deddd20860ea4a57a8af9f1ee08b0145c70a2",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "data_quality_flags",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state",
+        "preparation_steps",
+        "sterilization"
+      ],
+      "prior_history_spans_preserved": 8,
+      "prior_acid_spans_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_1680_Growth-stimulating_factors.yaml",
+      "actual_sha256": "b35c6734b1632fbd1610e761535c5357aa73d651710007be404cd8ecc96ff657",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 8,
+      "prior_acid_spans_preserved": 6,
+      "exact_preview_readback": true
+    }
+  ]
+}

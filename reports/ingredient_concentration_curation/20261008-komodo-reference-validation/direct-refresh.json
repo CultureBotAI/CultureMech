@@ -1,0 +1,7 @@
+{
+  "terminal": true,
+  "transport": "urllib.request",
+  "sources": [],
+  "scope": "Public GET requests only. No records, snippets or reports are uploaded.",
+  "error": "AssertionError: "
+}

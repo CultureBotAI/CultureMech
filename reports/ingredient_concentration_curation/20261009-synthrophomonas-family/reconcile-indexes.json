@@ -1,0 +1,25 @@
+{
+  "terminal": true,
+  "phase": "indexes",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/generate_recipe_indexes.py",
+        "--recipe-dir",
+        "data/normalized_yaml",
+        "--output-dir",
+        "/tmp/ingredient-media-20261007/212-index-preview"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/reconcile-indexes-0.log",
+      "log_sha256": "47833e1a2ee51c6d3c226eccdcd15a9962c255b7c238eabdf6bfed9a86e5f026"
+    }
+  ],
+  "errors": [],
+  "source_sha256": "a55dbe72d9740772e93f5dbb870bc17709d68b4b494cd12f69e5bb02b7c41f23",
+  "plan_sha256": "496c0f734f231756ee97a80021429802c1af9136472b77798c9f2162ad4b2d4c",
+  "ignored_files_included": true,
+  "applied_files": 6,
+  "unique_records": 6
+}

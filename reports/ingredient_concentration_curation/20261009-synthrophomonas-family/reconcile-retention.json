@@ -1,0 +1,78 @@
+{
+  "terminal": true,
+  "phase": "retention",
+  "checks": [],
+  "errors": [],
+  "source_sha256": "a55dbe72d9740772e93f5dbb870bc17709d68b4b494cd12f69e5bb02b7c41f23",
+  "plan_sha256": "496c0f734f231756ee97a80021429802c1af9136472b77798c9f2162ad4b2d4c",
+  "ignored_files_included": true,
+  "input_records": 15910,
+  "grouped_records": 10787,
+  "output_groups": 10781,
+  "routing": {
+    "total_processed": 15910,
+    "excluded_solutions": 4785,
+    "skipped_no_fingerprint": 2,
+    "skipped_error": 336,
+    "successfully_fingerprinted": 10787,
+    "reasons": {
+      "other_error": 336,
+      "no_valid_ingredients": 2
+    }
+  },
+  "targets": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_212_SYNTHROPHOMONAS_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_212_SYNTHROPHOMONAS_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_2805.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/for_dsm_2805.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/synthrophomonas_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/synthrophomonas_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_rectale_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/treponema_rectale_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    }
+  ],
+  "excluded_solution_paths": [
+    "data/normalized_yaml/bacterial/mediadive_1038_Seven_vitamins_solution.yaml",
+    "data/normalized_yaml/bacterial/mediadive_125_Vitamin_K1_solution.yaml",
+    "data/normalized_yaml/bacterial/mediadive_1728_Sugar_mix.yaml",
+    "data/normalized_yaml/bacterial/mediadive_446_Solution_A.yaml",
+    "data/normalized_yaml/bacterial/mediadive_447_Solution_B.yaml",
+    "data/normalized_yaml/bacterial/mediadive_448_Solution_C.yaml",
+    "data/normalized_yaml/bacterial/mediadive_450_Solution_E.yaml",
+    "data/normalized_yaml/bacterial/mediadive_451_Solution_F.yaml",
+    "data/normalized_yaml/bacterial/mediadive_453_Solution_A.yaml",
+    "data/normalized_yaml/bacterial/mediadive_454_Solution_B.yaml",
+    "data/normalized_yaml/bacterial/mediadive_455_Solution_C.yaml",
+    "data/normalized_yaml/bacterial/mediadive_456_Solution_D.yaml",
+    "data/normalized_yaml/bacterial/mediadive_459_Solution_G.yaml",
+    "data/normalized_yaml/bacterial/mediadive_460_Solution_H.yaml",
+    "data/normalized_yaml/bacterial/mediadive_461_Solution_I.yaml",
+    "data/normalized_yaml/bacterial/mediadive_595_Trace_element_solution_SL-10.yaml",
+    "data/normalized_yaml/bacterial/mediadive_608_Volatile_fatty_acid_mixture.yaml",
+    "data/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.yaml"
+  ],
+  "derived_yaml_written": false
+}

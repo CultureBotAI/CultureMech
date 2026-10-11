@@ -1,0 +1,46 @@
+{
+  "terminal": true,
+  "phase": "retention",
+  "checks": [],
+  "source_sha256": "3e69263bb0c82e782c51c5a994945630fbf3a3b9f685248e16d7daf3367f05fc",
+  "plan_sha256": "dc2a0e96231feac52125245dc55f41d3deb937970a06d151fba10d2fd63d7a4a",
+  "input_records": 15910,
+  "grouped_records": 10787,
+  "output_groups": 10781,
+  "routing": {
+    "total_processed": 15910,
+    "excluded_solutions": 4785,
+    "skipped_no_fingerprint": 2,
+    "skipped_error": 336,
+    "successfully_fingerprinted": 10787,
+    "reasons": {
+      "other_error": 336,
+      "no_valid_ingredients": 2
+    }
+  },
+  "targets": [
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/methanofollis_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/methanofollis_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    }
+  ],
+  "excluded_solution_paths": [
+    "data/normalized_yaml/bacterial/mediadive_209_Fatty_acid_mixture.yaml",
+    "data/normalized_yaml/bacterial/mediadive_241_Modified_Wolin_s_mineral_solution.yaml",
+    "data/normalized_yaml/bacterial/mediadive_277_Main_sol_161.yaml",
+    "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml"
+  ],
+  "derived_yaml_written": false
+}

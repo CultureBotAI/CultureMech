@@ -1,0 +1,223 @@
+{
+  "terminal": true,
+  "phase": "presentation-applied",
+  "checks": [],
+  "plan_sha256": "5940d6a1b64c0f21408a6bde46512049cb4cbfff12cb80ae9061c5c6edfd3a1f",
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/JCM_J1029_RUMEN_BACTERIA_MEDIUM.yaml",
+      "actual_sha256": "7107d8c6214e93e56b5cf0ddbb4f50329dc1fdfd39b9b725a1b03ab1924c6f7c",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state",
+        "preparation_steps"
+      ],
+      "prior_history_spans_preserved": 7,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_330_RUMEN_BACTERIA_medium.yaml",
+      "actual_sha256": "c494631fcdfdb8ff56d98cba9f04cb1fbed1a421eead22150e5d739b72acf960",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_range",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 9,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M1093_Rumen_Bacteria_Medium.yaml",
+      "actual_sha256": "b1ebe2c056076b8b6f9762d5816bf7e59156773b10af3bd9583f08c878ff4916",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 14,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_124_Haemin_solution.yaml",
+      "actual_sha256": "cbd224e5cf4099482b986af32f106e1e4a790dca1ce7ce59842c01c0150991d5",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7,
+      "prior_evidence_entries_preserved": 1,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3774_VFA_solution.yaml",
+      "actual_sha256": "2b404d2a69903bf264dffc460670c8af51ba78404327c476fa85eaec36d7596d",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 6,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_5080_Main_sol_J1029.yaml",
+      "actual_sha256": "3dc668253e720f959bae6646d5bfbc0dfec2ccd52358eefbb8eb9fd1295f473c",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 10,
+      "prior_evidence_entries_preserved": 6,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_606_Main_sol_330.yaml",
+      "actual_sha256": "7d927955eb405ff42546565d5823b2aef42513927d146cad49d5e56f5b3583b6",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 9,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_607_Mineral_solution.yaml",
+      "actual_sha256": "7507aba661e0514bcbbbc3a56b70d223d21ebea92d9fd981fc0e062c2ccb1e1a",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "term"
+      ],
+      "prior_history_spans_preserved": 8,
+      "prior_evidence_entries_preserved": 6,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_608_Volatile_fatty_acid_mixture.yaml",
+      "actual_sha256": "801f8b158c2bfb41cb311dd649f9805e09df4ad1e1e4612b45af70c4b4a6dac7",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_330_modified_for_dsm_17630.yaml",
+      "actual_sha256": "2c4dd28f7d7e4bb3fa014d5f6271ad17cf1f8b21a8cba92a384b22673906f311",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 8,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mineral_solution_medium_330.yaml",
+      "actual_sha256": "cd06915fd9c4f22b9573eb430915a97bd186b6b59f77a1d4deacf6dbd0541e2f",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state",
+        "record_kind"
+      ],
+      "prior_history_spans_preserved": 3,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/rumen_bacteria_medium.yaml",
+      "actual_sha256": "b35ac0877f460c2d6a5c8306012129611504954cb8230e8db630a2d3ac0ed27a",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_range",
+        "physical_state",
+        "preparation_steps"
+      ],
+      "prior_history_spans_preserved": 8,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/volatile_fatty_acid_mixture_medium_330.yaml",
+      "actual_sha256": "b167d90ea94a2b4f1f828c3043bbf3faadf6bbaee36ecd8b28efd83d17b4cab8",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state",
+        "record_kind"
+      ],
+      "prior_history_spans_preserved": 3,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    }
+  ]
+}

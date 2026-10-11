@@ -1,0 +1,174 @@
+{
+  "terminal": true,
+  "phase": "presentation-applied",
+  "checks": [],
+  "plan_sha256": "47771aa8b0a5d36a7ae339456df36304c2cdabd7508ec526f8f269106bb14332",
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml",
+      "actual_sha256": "20efca3af40aca7fb5401e895eabb08963175a94447c6ed16628428e9d9c1a95",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 7,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M694_Ruminococcus_Albus_Medium.yaml",
+      "actual_sha256": "3b69719fe6d6fa347a143e8c8cd51363553e229a06d78a60c988e6c018dda72f",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 13,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/fatty_acid_mixture_medium_436.yaml",
+      "actual_sha256": "7e37845ad726dba20ab059a5aebb07b7bf28ded5c325cff5226433d7addc50af",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state",
+        "record_kind"
+      ],
+      "prior_history_spans_preserved": 3,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_882_Main_sol_436.yaml",
+      "actual_sha256": "9b0621ec343da452f06fea20dd09d9513157274baa0ecf55217a31396e57afdf",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 9,
+      "prior_evidence_entries_preserved": 7,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_883_Mineral_solution_1.yaml",
+      "actual_sha256": "ad927b861ec3dbbe1c364dd3f1726f36fee30aebc9b750ee12c9987dd8643f68",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 5,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_884_Mineral_solution_2.yaml",
+      "actual_sha256": "f56e9bb31123026b824f2d33a2af0dcb4c98c3ab91729d09897c6f1af48fe3e8",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_885_Fatty_acid_mixture.yaml",
+      "actual_sha256": "dbb351350993be48b8476b1dc746159b48d7d7e4b735def836c3ba5dce518931",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_436_modified_for_dsm_18848.yaml",
+      "actual_sha256": "657aba4a32d95d2b1ddec37a69753b244153d02feb8881bb929650c77a1d8253",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 7,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ruminococcus_albus_medium.yaml",
+      "actual_sha256": "34fbeafc8f67913ecde48fbdc77b1fc68e555ee1ad4f723fe93c3f84304c78d5",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 6,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ruminococcus_albus_medium_maltose_1g_l_starch_1g_l.yaml",
+      "actual_sha256": "b3951d835e8e68b68711923477d59d06e155f565bfacfe60c68ed405f8a5913b",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 13,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    }
+  ]
+}

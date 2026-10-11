@@ -1,0 +1,95 @@
+{
+  "terminal": true,
+  "application": {
+    "mode": "apply",
+    "records": 4,
+    "changed": 4,
+    "already_applied": 0,
+    "claims": 187
+  },
+  "readback": {
+    "mode": "verify",
+    "records": 4,
+    "changed": 0,
+    "already_applied": 4,
+    "claims": 187
+  },
+  "no_op_rerun": {
+    "mode": "apply",
+    "records": 4,
+    "changed": 0,
+    "already_applied": 4,
+    "claims": 187
+  },
+  "audit": {
+    "K403": {
+      "new_quantity_slots": 6,
+      "stock_descriptors_added": 4,
+      "stock_nodes_relocated": 15,
+      "stock_dose_basis_corrections": 2,
+      "stock_stage_concentrations_rebased": 12,
+      "quantity_corrections": 1,
+      "unsupported_quantity_slots_removed": 3,
+      "preparation_steps_relocated": 0,
+      "preparation_steps_added": 1,
+      "inline_variant_options_added": 0,
+      "new_evidence": 33,
+      "new_references": 2,
+      "new_curation_history": 1,
+      "old_quantity_slots": 18,
+      "claims": 55,
+      "source_rows": 21
+    },
+    "K751": {
+      "unsupported_quantity_slots_removed": 11,
+      "new_quantity_slots": 5,
+      "stock_descriptors_added": 5,
+      "stock_nodes_relocated": 3,
+      "unquantified_carrier_nodes_added": 2,
+      "preparation_steps_relocated": 0,
+      "preparation_steps_added": 3,
+      "inline_variant_options_added": 1,
+      "new_evidence": 24,
+      "new_references": 2,
+      "new_curation_history": 1,
+      "old_quantity_slots": 11,
+      "claims": 39,
+      "source_rows": 10
+    },
+    "D403": {
+      "new_quantity_slots": 7,
+      "stock_descriptors_added": 4,
+      "stock_nodes_relocated": 14,
+      "stock_dose_basis_corrections": 2,
+      "stock_stage_concentrations_rebased": 11,
+      "quantity_corrections": 1,
+      "unsupported_quantity_slots_removed": 3,
+      "preparation_steps_relocated": 5,
+      "preparation_steps_added": 1,
+      "inline_variant_options_added": 0,
+      "new_evidence": 33,
+      "new_references": 2,
+      "new_curation_history": 1,
+      "old_quantity_slots": 17,
+      "claims": 54,
+      "source_rows": 21
+    },
+    "D751": {
+      "unsupported_quantity_slots_removed": 11,
+      "new_quantity_slots": 5,
+      "stock_descriptors_added": 5,
+      "stock_nodes_relocated": 3,
+      "unquantified_carrier_nodes_added": 2,
+      "preparation_steps_relocated": 2,
+      "preparation_steps_added": 3,
+      "inline_variant_options_added": 1,
+      "new_evidence": 24,
+      "new_references": 2,
+      "new_curation_history": 1,
+      "old_quantity_slots": 11,
+      "claims": 39,
+      "source_rows": 10
+    }
+  },
+  "reference_validation": "API checks pass; PDF literal excerpts manually verified against captured text and inspected page images. Automated PDF snippet/title checks remain failing."
+}

@@ -1,0 +1,59 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "retention",
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "records": [
+    {
+      "path": "data/normalized_yaml/algae/Bristol_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/Bristol_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/Bold_Basal_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/Bold_Basal_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/Botryococcus_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/Botryococcus_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/Proteose_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/Proteose_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/bristol_nacl_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/bristol_nacl_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    }
+  ],
+  "distinct_cohort_groups": 5,
+  "derived_yaml_written": false,
+  "input_records": 15910,
+  "output_groups": 10781,
+  "source_inventory_unchanged": true
+}

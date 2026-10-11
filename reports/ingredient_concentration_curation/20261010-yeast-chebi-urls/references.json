@@ -1,0 +1,74 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "references",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/fungal/yeast_mineral_medium_10_g_l_glucose.yaml",
+        "--cache-dir",
+        "/tmp/yeast-chebi-fixed-reference-cache-20261010",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-chebi-urls/references-00.log",
+      "log_sha256": "22a020a1e580459c6189ed48ea37a60918142373e354fc55d24003fb2b4a9048"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/fungal/yeast_mineral_medium_7_5_g_l_ethanol.yaml",
+        "--cache-dir",
+        "/tmp/yeast-chebi-fixed-reference-cache-20261010",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-chebi-urls/references-01.log",
+      "log_sha256": "ea045ca33e735da4741b6a8a96c2162b0a86113a8539909f90f1c9bbd106bf60"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/fungal/yeast_mineral_medium_25_g_l_glucose.yaml",
+        "--cache-dir",
+        "/tmp/yeast-chebi-fixed-reference-cache-20261010",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-chebi-urls/references-02.log",
+      "log_sha256": "e64928375ff8d98d26da78d5a2b2f6178e65224c62810d1476deb0b1182fe73b"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/fungal/yeast_mineral_medium_7_9_g_l_ethanol.yaml",
+        "--cache-dir",
+        "/tmp/yeast-chebi-fixed-reference-cache-20261010",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-chebi-urls/references-03.log",
+      "log_sha256": "6b1da198a791f240385125b9a2fbbfdb952ce0e17fc0aeb0cab89bb7893d085c"
+    }
+  ],
+  "source_sha256": "490eaa0ddf3d76f2a8f1fa48e582a25c089ae5978c89c83f4b9915b1a48b600e",
+  "code_sha256": {
+    "scripts/repair_yeast_chebi_references.py": "f168cdb417d0e108c956d45e89ccfa3e9449f1be9f8002939f2b6b6c71751ff8",
+    "tests/test_yeast_chebi_references.py": "acc514f61ca3884e5f22584470762a66ceaadb210214a5c83939db87df74b6eb"
+  },
+  "inventory_before_sha256": "b3cd07676477703b1f08992fa3017d0a48b2c5e374429dfe9f26c3108514fd87",
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "production_reference_gate_passed": false,
+  "inventory_after_sha256": "b3cd07676477703b1f08992fa3017d0a48b2c5e374429dfe9f26c3108514fd87",
+  "normalized_inventory_unchanged": true
+}

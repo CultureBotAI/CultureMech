@@ -1,0 +1,24 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "baseline",
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "newly_edited": 0,
+  "newly_reviewed": 0,
+  "existing_reports": [
+    {
+      "key": "f-2-medium",
+      "path": "reports/ingredient_concentration_curation/20261010-utex-f2/records/f-2-medium.md",
+      "sha256": "16186c8062c324599b54e3579250cc0132c9460ab7c4b6d8a660d07117560a8f"
+    },
+    {
+      "key": "f-2-nh4-medium",
+      "path": "reports/ingredient_concentration_curation/20261010-utex-f2/records/f-2-nh4-medium.md",
+      "sha256": "c2250bf73dc042aa87372cf158c1efacf5e3b25e698764255cff4915e848f742"
+    }
+  ],
+  "normalized_inventory_sha256": "da9766fa2581380e36cf1bef84b6e7fede418c8c70d76e9e5d7bb922e34d7d3b",
+  "report_search_includes_ignored_files": true,
+  "source_inventory_unchanged": true
+}

@@ -1,0 +1,249 @@
+{
+  "terminal": true,
+  "phase": "post",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/song_cdm.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-00.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/song_cdm.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-01.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/song_cdm.yaml"
+      ],
+      "returncode": 2,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-02.log",
+      "log_sha256": "5f663bd33eac45460a1b61389ee85b9a60a6d3d5bddbeac0d351125a7153544f"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/song_optimal_cdm.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-03.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/song_optimal_cdm.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-04.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/song_optimal_cdm.yaml"
+      ],
+      "returncode": 2,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-05.log",
+      "log_sha256": "1cd6c15691c2ea8e0459535a492688150eaa7bc633fc53539dcd41216aac129d"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/MEDIADB_430_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-06.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/MEDIADB_430_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-07.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/MEDIADB_430_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "returncode": 2,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-08.log",
+      "log_sha256": "18c0e97091d97b279fe3891d9a57261ecb00b6dbdd7ef629ca6ddd105cb6e4a3"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/MEDIADB_460_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-09.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/MEDIADB_460_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-10.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/MEDIADB_460_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "returncode": 2,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-11.log",
+      "log_sha256": "5f60bed1126bb7a344bbf06651db1650d1d193374df423fbaa49950d830c3520"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mcn_medium_whitman.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-12.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/mcn_medium_whitman.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-13.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/mcn_medium_whitman.yaml"
+      ],
+      "returncode": 2,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-14.log",
+      "log_sha256": "2120ecf2ef840e75330d733ad0da245ea1598149204f01495b9c10d831f3f752"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mcna_medium_lupa.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-15.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/mcna_medium_lupa.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-16.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/mcna_medium_lupa.yaml"
+      ],
+      "returncode": 2,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-17.log",
+      "log_sha256": "f6266e301f494769c86aace26ad8915df195108e7763c388af1f192a4179f8bf"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "--no-cov",
+        "tests/test_mediadb_ingredient_exceptions.py",
+        "tests/test_mediadb_sql_parsing.py",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_followup_report_coverage.py",
+        "tests/test_formulation_merge.py"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-18.log",
+      "log_sha256": "c756a2648085c3ea7e1a3ef8a2b08837869b40c8b0962d1cff27afb08de44f69"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/post-19.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "records_edited": 0,
+  "plan_sha256": "d7d3a7135aad5daf78ba2f3e82dfb73a0f3f185e1b7036457abd111da0892b9e",
+  "code_sha256": {
+    "scripts/repair_mediadb_ingredient_exceptions.py": "b27949707826eff4b229a612875452098d7cb5f6b3c62c81d0997958a1886f59",
+    "tests/test_mediadb_ingredient_exceptions.py": "9f96c7b25d1c5a1ef525d89328d7e594f73a55fed234dc3d795084bc00d51bc9"
+  },
+  "normalized_count": 15910,
+  "inventory_before_sha256": "83b9583a31a82ab2db7403fa21d8dc1fd30928d289bb7598a043348f4d82be2c",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "captured_source_snippet_checks": 156,
+  "source_check_scope": "Literal official MediaDB table snippets, raw capture hashes, medium identity and SQL/live amount agreement; not primary article verification.",
+  "passed": true,
+  "inventory_after_sha256": "83b9583a31a82ab2db7403fa21d8dc1fd30928d289bb7598a043348f4d82be2c",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

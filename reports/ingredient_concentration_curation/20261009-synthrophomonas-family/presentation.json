@@ -1,0 +1,292 @@
+{
+  "terminal": true,
+  "phase": "presentation",
+  "records_applied": 0,
+  "checks": [],
+  "errors": [],
+  "code_sha256": {
+    "scripts/repair_synthrophomonas_family.py": "76d17c072395868ef670d923fecc40090c3f6a31681d6901002ad8127bfcc54c",
+    "tests/test_synthrophomonas_family.py": "3671184eedb05cb9acd02cfdabdbf87d121408154fbd06f141e5e6ca49b2a1df",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/audit.py": "d846b22a482acc9d91e989fc1e392247a8c97e55471b34daaa2d575c21a6956f"
+  },
+  "plan_sha256": "83fdebb5c629773b4b0ec2c5b810a66dc226602ab0df9aed0728eba35a14276d",
+  "context_sha256": "1d9b09a2915e57c4f212f1de08bb1a5ada6b2a4b8a47b6b6c5d528d00250e84a",
+  "inventory_before": "3e69263bb0c82e782c51c5a994945630fbf3a3b9f685248e16d7daf3367f05fc",
+  "ignored_files_included": true,
+  "records": [
+    {
+      "key": "K212",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 9
+    },
+    {
+      "key": "B2805",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "data_quality_flags",
+        "id",
+        "incubation_atmosphere",
+        "media_term",
+        "medium_type",
+        "name",
+        "organism_culture_type",
+        "original_name",
+        "parent_media",
+        "ph_value",
+        "physical_state",
+        "preparation_steps",
+        "target_organisms",
+        "temperature_value",
+        "variant_modifications",
+        "variant_relationship"
+      ],
+      "prior_history_spans_preserved": 5
+    },
+    {
+      "key": "S1038",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "term"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "S125",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 6
+    },
+    {
+      "key": "S1728",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "S446",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 9
+    },
+    {
+      "key": "S447",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "S448",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "S450",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "S451",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "S453",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 9
+    },
+    {
+      "key": "S454",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "S455",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "S456",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "S459",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "S460",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "S461",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "S595",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "S608",
+      "unchanged_root_spans": [
+        "category",
+        "composition",
+        "curation_history",
+        "id",
+        "notes",
+        "preferred_term",
+        "references",
+        "term"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "S777",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "term"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "D212",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state",
+        "preparation_steps"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "D212a",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state",
+        "preparation_steps"
+      ],
+      "prior_history_spans_preserved": 8
+    }
+  ],
+  "all_checks_passed": true
+}

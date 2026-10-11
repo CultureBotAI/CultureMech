@@ -1,0 +1,38 @@
+{
+  "terminal": true,
+  "records_edited": 0,
+  "tests_modified_in_repo": false,
+  "all_record_goal_complete": false,
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "/tmp/ingredient-media-20261007/schema-history-candidate/tests/test_komodo_concentration_review.py",
+        "/tmp/ingredient-media-20261007/schema-history-candidate/tests/test_komodo_concentration_final_batch.py",
+        "/tmp/ingredient-media-20261007/schema-history-candidate/tests/test_komodo_concentration_sixth_batch.py",
+        "/tmp/ingredient-media-20261007/schema-history-candidate/tests/test_mediadive_stock_concentration_evidence.py"
+      ],
+      "exit_code": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-solution-evidence-schema/history-candidate-tests.log",
+      "log_sha256": "9b603dc91c4bb8abb757f06792fe081d749a172ce6f9ff0dec3ed3fbb4a79d88"
+    }
+  ],
+  "errors": [],
+  "candidate_sha256": {
+    "/tmp/ingredient-media-20261007/schema-history-candidate/tests/test_komodo_concentration_review.py": "afd71ed5b095d26641f90880c84f974db1adb47ba7fd91084625e2f4b9ba7c22",
+    "/tmp/ingredient-media-20261007/schema-history-candidate/tests/test_komodo_concentration_final_batch.py": "f1bd658d59013fb4b3c89a6ccdb0977af1aa0c507acae101e38dbb3f0f892988",
+    "/tmp/ingredient-media-20261007/schema-history-candidate/tests/test_komodo_concentration_sixth_batch.py": "887db18febcbd7b71bc07be3fad713aac66366e5aecde48a3166047ccc8b0662",
+    "/tmp/ingredient-media-20261007/schema-history-candidate/tests/test_mediadive_stock_concentration_evidence.py": "e41e5c919cc159560b12dd37ad1b6b15bf8eedc466dbbb54eeeb099a861666c7"
+  },
+  "original_sha256": {
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/tests/test_komodo_concentration_review.py": "3f00bbbd7a12738b21c55ef511f2717eebae27291e0880209f919a03c4cf2714",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/tests/test_komodo_concentration_final_batch.py": "90e3915c63ff5cada928b4ab8b41bc3c70403c9fdb14ea77cb3b47ac923c7615",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/tests/test_komodo_concentration_sixth_batch.py": "3b5e1a140e8effdaeb6b6ece5a929ab91b7f574273a781092b8df71f9753528e",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/tests/test_mediadive_stock_concentration_evidence.py": "6b2537cd266543b0444ff8553eab1174179b1d3aef0127d6b62765f621defccf"
+  }
+}

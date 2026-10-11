@@ -1,0 +1,503 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "retention",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_416_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_416_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_417_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_417_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_418_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_418_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_419_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_419_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_420_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_420_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_421_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_421_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_422_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_422_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_423_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_423_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_424_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_424_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_425_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_425_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_426_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_426_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_427_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_427_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_428_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_428_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_429_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_429_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_430_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_430_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_431_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_431_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_432_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_432_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_433_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_433_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_434_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_434_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_435_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_435_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_436_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_436_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_437_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_437_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_438_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_438_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_439_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_439_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_440_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_440_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_441_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_441_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_442_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_442_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_443_Defined_freshwater_medium_CoSO4.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_443_Defined_freshwater_medium_CoSO4.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_444_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_444_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_445_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_445_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_446_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_446_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_447_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_447_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_448_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_448_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_449_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_449_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_450_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_450_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_451_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_451_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_452_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_452_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_453_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_453_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_454_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_454_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_455_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_455_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_456_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_456_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_457_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_457_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_458_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_458_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_459_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_459_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_460_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_460_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_461_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_461_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_462_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_462_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_463_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_463_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_464_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_464_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_465_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_465_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_466_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_466_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_467_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_467_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_468_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_468_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_469_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_469_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_470_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_470_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_471_Defined_freshwater_medium_CoCl2.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/MEDIADB_471_Defined_freshwater_medium_CoCl2.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    }
+  ],
+  "variant_identity_pairs": [
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_416_Defined_freshwater_medium_CoSO4.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_417_Defined_freshwater_medium_CoSO4.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_416_Defined_freshwater_medium_CoSO4.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_423_Defined_freshwater_medium_CoSO4.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_416_Defined_freshwater_medium_CoSO4.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_424_Defined_freshwater_medium_CoSO4.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_419_Defined_freshwater_medium_CoSO4.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_421_Defined_freshwater_medium_CoSO4.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_435_Defined_freshwater_medium_CoSO4.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_434_Defined_freshwater_medium_CoSO4.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_444_Defined_freshwater_medium_CoCl2.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_447_Defined_freshwater_medium_CoCl2.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_444_Defined_freshwater_medium_CoCl2.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_451_Defined_freshwater_medium_CoCl2.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_444_Defined_freshwater_medium_CoCl2.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_455_Defined_freshwater_medium_CoCl2.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_446_Defined_freshwater_medium_CoCl2.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_448_Defined_freshwater_medium_CoCl2.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_463_Defined_freshwater_medium_CoCl2.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_457_Defined_freshwater_medium_CoCl2.yaml"
+    ]
+  ],
+  "derived_yaml_written": false,
+  "input_records": 15910,
+  "output_groups": 10781,
+  "source_inventory_unchanged": true
+}

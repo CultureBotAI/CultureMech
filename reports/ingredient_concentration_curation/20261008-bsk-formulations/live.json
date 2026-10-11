@@ -1,0 +1,1319 @@
+{
+  "terminal": true,
+  "phase": "live",
+  "checks": [],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "97b156240849be7bf096a61d00d7a683ff9c8de8922db8585e5e8128ba7eb36c"
+  },
+  "sources": [
+    {
+      "key": "M2410",
+      "matches_inspected_capture": true,
+      "metadata": {
+        "version": 1,
+        "url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+        "response_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+        "http_status": 200,
+        "sha256": "93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4",
+        "accessed_at": "2026-10-08T23:25:21.671858+00:00"
+      }
+    },
+    {
+      "key": "D1829",
+      "matches_inspected_capture": true,
+      "metadata": {
+        "version": 1,
+        "url": "https://mediadive.dsmz.de/rest/medium/1829",
+        "response_url": "https://mediadive.dsmz.de/rest/medium/1829",
+        "http_status": 200,
+        "sha256": "697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116",
+        "accessed_at": "2026-10-08T23:25:22.217567+00:00"
+      }
+    },
+    {
+      "key": "J173",
+      "matches_inspected_capture": true,
+      "metadata": {
+        "version": 1,
+        "url": "https://mediadive.dsmz.de/rest/medium/J173",
+        "response_url": "https://mediadive.dsmz.de/rest/medium/J173",
+        "http_status": 200,
+        "sha256": "8f4cbbe7540373891d881d30767ea51b41c5782b8e22220d299c9f7175b605ae",
+        "accessed_at": "2026-10-08T23:25:22.395204+00:00"
+      }
+    },
+    {
+      "key": "JCM173",
+      "matches_inspected_capture": true,
+      "metadata": {
+        "version": 1,
+        "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=173",
+        "response_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=173",
+        "http_status": 200,
+        "sha256": "0a7f822ca776eff0560f46b4ec3b5b0201954ca0a61caee9a4342d32322da86c",
+        "accessed_at": "2026-10-08T23:25:22.961981+00:00"
+      }
+    },
+    {
+      "key": "DSMZ1829",
+      "matches_inspected_capture": true,
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+        "http_status": 200,
+        "sha256": "315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2",
+        "accessed_at": "2026-10-08T23:25:24.506415+00:00",
+        "pdf_sha256": "7a1a4765f1c90054805ea3567880eec1c977290288f5db2c344764a17dd38ca2",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      }
+    }
+  ],
+  "records": {
+    "M2410": {
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+          "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 900,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 900,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+          "supporting_text": "{\n          \"component_name\": \"sodium bicarbonate\",\n          \"volume\": 2.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001019\",\n          \"gmo_id\": \"GMO_001019\",\n          \"label\": \"Sodium bicarbonate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"sodium bicarbonate\",\n          \"volume\": 2.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001019\",\n          \"gmo_id\": \"GMO_001019\",\n          \"label\": \"Sodium bicarbonate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+          "supporting_text": "{\n          \"component_name\": \"sodium pyruvate\",\n          \"volume\": 0.8,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001055\",\n          \"gmo_id\": \"GMO_001055\",\n          \"label\": \"Sodium pyruvate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"sodium pyruvate\",\n          \"volume\": 0.8,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001055\",\n          \"gmo_id\": \"GMO_001055\",\n          \"label\": \"Sodium pyruvate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+          "supporting_text": "{\n          \"component_name\": \"sodium citrate\",\n          \"volume\": 0.7,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001109\",\n          \"gmo_id\": \"GMO_001109\",\n          \"label\": \"Sodium citrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"sodium citrate\",\n          \"volume\": 0.7,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001109\",\n          \"gmo_id\": \"GMO_001109\",\n          \"label\": \"Sodium citrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+          "supporting_text": "{\n          \"component_name\": \"bovine serum albumin, FractionV (Miles Laboratories, Elkhart, IN, No.81-003)\",\n          \"volume\": 50,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\",\n          \"gmo_id\": \"GMO_001520\",\n          \"label\": \"Bovine serum albumin\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\": \"Nutrient source\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"bovine serum albumin, FractionV (Miles Laboratories, Elkhart, IN, No.81-003)\",\n          \"volume\": 50,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\",\n          \"gmo_id\": \"GMO_001520\",\n          \"label\": \"Bovine serum albumin\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\": \"Nutrient source\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+          "supporting_text": "{\n          \"component_name\": \"Yeastolate (Difco)\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001657\",\n          \"gmo_id\": \"GMO_001657\",\n          \"label\": \"Bacto &trade; TC yeastolate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\": \"Nutrient source\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Yeastolate (Difco)\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001657\",\n          \"gmo_id\": \"GMO_001657\",\n          \"label\": \"Bacto &trade; TC yeastolate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\": \"Nutrient source\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+          "supporting_text": "{\n          \"component_name\": \"N-acetylglucosamine (Sigma)\",\n          \"volume\": 0.4,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001708\",\n          \"gmo_id\": \"GMO_001708\",\n          \"label\": \"N-acetylglucosamine (Sigma)\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"N-acetylglucosamine (Sigma)\",\n          \"volume\": 0.4,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001708\",\n          \"gmo_id\": \"GMO_001708\",\n          \"label\": \"N-acetylglucosamine (Sigma)\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+          "supporting_text": "{\n          \"component_name\": \"N-2-hydroxyethylpiperazine-N-2-ethanesulfonic acid (HEPES, Sigma Chemical Co., St. Louis, MO)\",\n          \"volume\": 6,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001749\",\n          \"gmo_id\": \"GMO_001749\",\n          \"label\": \"HEPES (Sigma)\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"N-2-hydroxyethylpiperazine-N-2-ethanesulfonic acid (HEPES, Sigma Chemical Co., St. Louis, MO)\",\n          \"volume\": 6,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001749\",\n          \"gmo_id\": \"GMO_001749\",\n          \"label\": \"HEPES (Sigma)\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+          "supporting_text": "{\n          \"component_name\": \"glucose\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001815\",\n          \"gmo_id\": \"GMO_001815\",\n          \"label\": \"Glucose\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"glucose\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001815\",\n          \"gmo_id\": \"GMO_001815\",\n          \"label\": \"Glucose\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+          "supporting_text": "{\n          \"component_name\": \"Neopeptone (Difco Laboratories, Detroit, Ml)\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001610\",\n          \"gmo_id\": \"GMO_001610\",\n          \"label\": \"Bacto &trade; Neopeptone\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Neopeptone (Difco Laboratories, Detroit, Ml)\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001610\",\n          \"gmo_id\": \"GMO_001610\",\n          \"label\": \"Bacto &trade; Neopeptone\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+          "supporting_text": "{\n          \"component_name\": \"NaOH\",\n          \"conc_value\": 1,\n          \"conc_unit\": \"N\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001300\",\n          \"gmo_id\": \"GMO_001300\",\n          \"label\": \"Sodium hydroxide solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\": []\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"NaOH\",\n          \"conc_value\": 1,\n          \"conc_unit\": \"N\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001300\",\n          \"gmo_id\": \"GMO_001300\",\n          \"label\": \"Sodium hydroxide solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\": []\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+          "supporting_text": "{\n      \"paragraph_index\": 5,\n      \"comment\": \"5. Add 200ml of 7 percent gelatin (Difco) which had been dissolved in boilinig water.\"\n    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n      \"paragraph_index\": 5,\n      \"comment\": \"5. Add 200ml of 7 percent gelatin (Difco) which had been dissolved in boilinig water.\"\n    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+          "supporting_text": "{\n          \"component_name\": \"10X concentrate of CMRL 1066 without glutamine (Gibco Laboratories, GrandIsland, NY, No.330-1540)\",\n          \"volume\": 100,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001523\",\n          \"gmo_id\": \"GMO_001523\",\n          \"label\": \"CMRL 1066 (Gibco 330-1540)\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000050\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000050\",\n              \"label\": \"Complex component\"\n            }\n          ],\n          \"roles\": []\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"10X concentrate of CMRL 1066 without glutamine (Gibco Laboratories, GrandIsland, NY, No.330-1540)\",\n          \"volume\": 100,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001523\",\n          \"gmo_id\": \"GMO_001523\",\n          \"label\": \"CMRL 1066 (Gibco 330-1540)\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000050\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000050\",\n              \"label\": \"Complex component\"\n            }\n          ],\n          \"roles\": []\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        }
+      ],
+      "reference_issues": []
+    },
+    "D1829": {
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1829",
+          "supporting_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"HEPES\",\n                        \"compound_id\": 371,\n                        \"amount\": 0.51,\n                        \"unit\": \"g\",\n                        \"g_l\": 5.1,\n                        \"mmol_l\": 21.4016,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"HEPES\",\n                        \"compound_id\": 371,\n                        \"amount\": 0.51,\n                        \"unit\": \"g\",\n                        \"g_l\": 5.1,\n                        \"mmol_l\": 21.4016,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+          "supporting_text": "HEPES                                                              0.51          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "HEPES                                                              0.51          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1829",
+          "supporting_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Trisodium citrate x 2 H2O\",\n                        \"compound_id\": 1249,\n                        \"amount\": 0.05,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 1.7001,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Trisodium citrate x 2 H2O\",\n                        \"compound_id\": 1249,\n                        \"amount\": 0.05,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 1.7001,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+          "supporting_text": "Trisodium citrate x 2 H2O                                          0.05          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Trisodium citrate x 2 H2O                                          0.05          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1829",
+          "supporting_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 0.42,\n                        \"unit\": \"g\",\n                        \"g_l\": 4.2,\n                        \"mmol_l\": 23.3126,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 0.42,\n                        \"unit\": \"g\",\n                        \"g_l\": 4.2,\n                        \"mmol_l\": 23.3126,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+          "supporting_text": "Glucose                                                            0.42          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Glucose                                                            0.42          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1829",
+          "supporting_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Pyruvate\",\n                        \"compound_id\": 1386,\n                        \"amount\": 0.06,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.6,\n                        \"mmol_l\": 6.89259,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Pyruvate\",\n                        \"compound_id\": 1386,\n                        \"amount\": 0.06,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.6,\n                        \"mmol_l\": 6.89259,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+          "supporting_text": "Pyruvate                                                           0.06          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Pyruvate                                                           0.06          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1829",
+          "supporting_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"N-Acetylglucosamine\",\n                        \"compound_id\": 462,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\": 1.35618,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"N-Acetylglucosamine\",\n                        \"compound_id\": 462,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\": 1.35618,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+          "supporting_text": "N-Acetylglucosamine                                                0.03          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "N-Acetylglucosamine                                                0.03          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1829",
+          "supporting_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Sodium bicarbonate\",\n                        \"compound_id\": 2149,\n                        \"amount\": 0.18,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.8,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Sodium bicarbonate\",\n                        \"compound_id\": 2149,\n                        \"amount\": 0.18,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.8,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+          "supporting_text": "Sodium bicarbonate                                                 0.18          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Sodium bicarbonate                                                 0.18          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1829",
+          "supporting_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.17,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.7,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.17,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.7,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+          "supporting_text": "Yeast extract                                                      0.17          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Yeast extract                                                      0.17          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[6].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1829",
+          "supporting_text": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Bacto peptone\",\n                        \"compound_id\": 19,\n                        \"attribute\": \"Becton Dickinson\",\n                        \"amount\": 0.42,\n                        \"unit\": \"g\",\n                        \"g_l\": 4.2,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Bacto peptone\",\n                        \"compound_id\": 19,\n                        \"attribute\": \"Becton Dickinson\",\n                        \"amount\": 0.42,\n                        \"unit\": \"g\",\n                        \"g_l\": 4.2,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+          "supporting_text": "Bacto peptone (Becton Dickinson)                                   0.42          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Bacto peptone (Becton Dickinson)                                   0.42          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[7].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1829",
+          "supporting_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"attribute\": \"Fraction V\",\n                        \"amount\": 0.85,\n                        \"unit\": \"g\",\n                        \"g_l\": 8.5,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"attribute\": \"Fraction V\",\n                        \"amount\": 0.85,\n                        \"unit\": \"g\",\n                        \"g_l\": 8.5,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+          "supporting_text": "Bovine serum albumin (Fraction V)                                  0.85          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Bovine serum albumin (Fraction V)                                  0.85          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[8].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1829",
+          "supporting_text": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Rabbit serum\",\n                        \"compound_id\": 464,\n                        \"amount\": 8.56,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Rabbit serum\",\n                        \"compound_id\": 464,\n                        \"amount\": 8.56,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+          "supporting_text": "Rabbit serum                                                       8.56        ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Rabbit serum                                                       8.56        ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[9].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1829",
+          "supporting_text": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"MEM alpha Modification\",\n                        \"compound_id\": 1923,\n                        \"attribute\": \"BioWest Cat No. P0440\",\n                        \"amount\": 0.89,\n                        \"unit\": \"g\",\n                        \"g_l\": 8.9,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"MEM alpha Modification\",\n                        \"compound_id\": 1923,\n                        \"attribute\": \"BioWest Cat No. P0440\",\n                        \"amount\": 0.89,\n                        \"unit\": \"g\",\n                        \"g_l\": 8.9,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+          "supporting_text": "MEM alpha Modification (BioWest Cat No. P0440)                     0.89          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MEM alpha Modification (BioWest Cat No. P0440)                     0.89          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[10].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1829",
+          "supporting_text": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Deionized water\",\n                        \"compound_id\": 418,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Deionized water\",\n                        \"compound_id\": 418,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[11].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+          "supporting_text": "Deionized water                                           fill up to 100       ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Deionized water                                           fill up to 100       ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[11].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+          "supporting_text": "Combine all ingredients, adjust pH to 7.3 with 1 M NaOH and filter-sterilize",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Combine all ingredients, adjust pH to 7.3 with 1 M NaOH and filter-sterilize",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+          "supporting_text": "Combine all ingredients, adjust pH to 7.3 with 1 M NaOH and filter-sterilize",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Combine all ingredients, adjust pH to 7.3 with 1 M NaOH and filter-sterilize",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1829",
+          "supporting_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"attribute\": \"Fraction V\",\n                        \"amount\": 0.85,\n                        \"unit\": \"g\",\n                        \"g_l\": 8.5,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"attribute\": \"Fraction V\",\n                        \"amount\": 0.85,\n                        \"unit\": \"g\",\n                        \"g_l\": 8.5,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1829",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[1].title"
+        }
+      ],
+      "reference_issues": []
+    },
+    "J173": {
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J173",
+          "supporting_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"CMRL 1066\",\n                        \"compound_id\": 1680,\n                        \"attribute\": \"Sigma, with glutamate\",\n                        \"amount\": 4.95,\n                        \"unit\": \"g\",\n                        \"g_l\": 9.9,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"CMRL 1066\",\n                        \"compound_id\": 1680,\n                        \"attribute\": \"Sigma, with glutamate\",\n                        \"amount\": 4.95,\n                        \"unit\": \"g\",\n                        \"g_l\": 9.9,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=173",
+          "supporting_text": "CMRL 1066 with glutamate (Sigma) 4.95 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CMRL 1066 with glutamate (Sigma) 4.95 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J173",
+          "supporting_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"condition\": \" Fraction V\",\n                        \"attribute\": \"Wako\",\n                        \"amount\": 25,\n                        \"unit\": \"g\",\n                        \"g_l\": 50,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"condition\": \" Fraction V\",\n                        \"attribute\": \"Wako\",\n                        \"amount\": 25,\n                        \"unit\": \"g\",\n                        \"g_l\": 50,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=173",
+          "supporting_text": "Bovine serum albumin, Fraction V (Wako) 25.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Bovine serum albumin, Fraction V (Wako) 25.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J173",
+          "supporting_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"HEPES\",\n                        \"compound_id\": 371,\n                        \"attribute\": \"Sigma\",\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 6,\n                        \"mmol_l\": 25.1773,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"HEPES\",\n                        \"compound_id\": 371,\n                        \"attribute\": \"Sigma\",\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 6,\n                        \"mmol_l\": 25.1773,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=173",
+          "supporting_text": "HEPES (Sigma) 3.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "HEPES (Sigma) 3.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J173",
+          "supporting_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Trisodium citrate\",\n                        \"compound_id\": 1047,\n                        \"amount\": 0.35,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.7,\n                        \"mmol_l\": 2.71244,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Trisodium citrate\",\n                        \"compound_id\": 1047,\n                        \"amount\": 0.35,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.7,\n                        \"mmol_l\": 2.71244,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=173",
+          "supporting_text": "Trisodium citrate 0.35 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Trisodium citrate 0.35 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[3].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J173",
+          "supporting_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 27.7531,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 27.7531,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=173",
+          "supporting_text": "Glucose 2.5 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Glucose 2.5 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[4].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J173",
+          "supporting_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Sodium pyruvate\",\n                        \"compound_id\": 438,\n                        \"attribute\": \"Sigma\",\n                        \"amount\": 0.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.8,\n                        \"mmol_l\": 7.27008,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Sodium pyruvate\",\n                        \"compound_id\": 438,\n                        \"attribute\": \"Sigma\",\n                        \"amount\": 0.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.8,\n                        \"mmol_l\": 7.27008,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=173",
+          "supporting_text": "Sodium pyruvate (Sigma) 0.4 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Sodium pyruvate (Sigma) 0.4 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[5].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J173",
+          "supporting_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"N-Acetyl-D-glucosamine\",\n                        \"compound_id\": 1669,\n                        \"attribute\": \"Sigma\",\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.4,\n                        \"mmol_l\": 1.80824,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"N-Acetyl-D-glucosamine\",\n                        \"compound_id\": 1669,\n                        \"attribute\": \"Sigma\",\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.4,\n                        \"mmol_l\": 1.80824,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=173",
+          "supporting_text": "N-Acetyl-D-glucosamine (Sigma) 0.2 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "N-Acetyl-D-glucosamine (Sigma) 0.2 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[6].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J173",
+          "supporting_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"attribute\": \"Sigma\",\n                        \"amount\": 1.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.2,\n                        \"mmol_l\": 26.1883,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"attribute\": \"Sigma\",\n                        \"amount\": 1.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.2,\n                        \"mmol_l\": 26.1883,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=173",
+          "supporting_text": "NaHCO3 (Sigma) 1.1 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaHCO3 (Sigma) 1.1 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[7].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J173",
+          "supporting_text": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"BD-Difco, TC\",\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"BD-Difco, TC\",\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=173",
+          "supporting_text": "TC Yeastolate (BD-Difco) 1.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "TC Yeastolate (BD-Difco) 1.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[8].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J173",
+          "supporting_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 500,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 500,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=173",
+          "supporting_text": "Distilled water 500.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water 500.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[9].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J173",
+          "supporting_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Neopeptone\",\n                        \"compound_id\": 263,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 2.5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.025,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Neopeptone\",\n                        \"compound_id\": 263,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 2.5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.025,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=173",
+          "supporting_text": "Neopeptone (BD-Difco) 2.5 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Neopeptone (BD-Difco) 2.5 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J173",
+          "supporting_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Gelatin\",\n                        \"compound_id\": 1671,\n                        \"amount\": 7,\n                        \"unit\": \"g\",\n                        \"g_l\": 70,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Gelatin\",\n                        \"compound_id\": 1671,\n                        \"amount\": 7,\n                        \"unit\": \"g\",\n                        \"g_l\": 70,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=173",
+          "supporting_text": "Gelatin 7.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Gelatin 7.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J173",
+          "supporting_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=173",
+          "supporting_text": "Distilled water 100.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water 100.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=173",
+          "supporting_text": "Adjust pH to 7.6 with 1 N NaOH and sterilize by filtration through a 0.22 \u00b5m filter (Millipore). Autoclave Solution B, then mix Solutions A and B, and add 40 ml of heat-inactivated (56C, 45 min) sterile rabbit serum (Pel-Freez Biologicals).",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Adjust pH to 7.6 with 1 N NaOH and sterilize by filtration through a 0.22 \u00b5m filter (Millipore). Autoclave Solution B, then mix Solutions A and B, and add 40 ml of heat-inactivated (56C, 45 min) sterile rabbit serum (Pel-Freez Biologicals).",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J173",
+          "supporting_text": "{\n                \"id\": 3830,\n                \"name\": \"Solution A\",\n                \"volume\": 500,\n                \"recipe\": [\n                    {\n                        \"recipe_order\": 1,\n                        \"compound\": \"CMRL 1066\",\n                        \"compound_id\": 1680,\n                        \"attribute\": \"Sigma, with glutamate\",\n                        \"amount\": 4.95,\n                        \"unit\": \"g\",\n                        \"g_l\": 9.9,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 2,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"condition\": \" Fraction V\",\n                        \"attribute\": \"Wako\",\n                        \"amount\": 25,\n                        \"unit\": \"g\",\n                        \"g_l\": 50,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 3,\n                        \"compound\": \"HEPES\",\n                        \"compound_id\": 371,\n                        \"attribute\": \"Sigma\",\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 6,\n                        \"mmol_l\": 25.1773,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 4,\n                        \"compound\": \"Trisodium citrate\",\n                        \"compound_id\": 1047,\n                        \"amount\": 0.35,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.7,\n                        \"mmol_l\": 2.71244,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 5,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 27.7531,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 6,\n                        \"compound\": \"Sodium pyruvate\",\n                        \"compound_id\": 438,\n                        \"attribute\": \"Sigma\",\n                        \"amount\": 0.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.8,\n                        \"mmol_l\": 7.27008,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 7,\n                        \"compound\": \"N-Acetyl-D-glucosamine\",\n                        \"compound_id\": 1669,\n                        \"attribute\": \"Sigma\",\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.4,\n                        \"mmol_l\": 1.80824,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 8,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"attribute\": \"Sigma\",\n                        \"amount\": 1.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.2,\n                        \"mmol_l\": 26.1883,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 9,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"BD-Difco, TC\",\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 500,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }\n                ]\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"id\": 3830,\n                \"name\": \"Solution A\",\n                \"volume\": 500,\n                \"recipe\": [\n                    {\n                        \"recipe_order\": 1,\n                        \"compound\": \"CMRL 1066\",\n                        \"compound_id\": 1680,\n                        \"attribute\": \"Sigma, with glutamate\",\n                        \"amount\": 4.95,\n                        \"unit\": \"g\",\n                        \"g_l\": 9.9,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 2,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"condition\": \" Fraction V\",\n                        \"attribute\": \"Wako\",\n                        \"amount\": 25,\n                        \"unit\": \"g\",\n                        \"g_l\": 50,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 3,\n                        \"compound\": \"HEPES\",\n                        \"compound_id\": 371,\n                        \"attribute\": \"Sigma\",\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 6,\n                        \"mmol_l\": 25.1773,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 4,\n                        \"compound\": \"Trisodium citrate\",\n                        \"compound_id\": 1047,\n                        \"amount\": 0.35,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.7,\n                        \"mmol_l\": 2.71244,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 5,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 27.7531,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 6,\n                        \"compound\": \"Sodium pyruvate\",\n                        \"compound_id\": 438,\n                        \"attribute\": \"Sigma\",\n                        \"amount\": 0.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.8,\n                        \"mmol_l\": 7.27008,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 7,\n                        \"compound\": \"N-Acetyl-D-glucosamine\",\n                        \"compound_id\": 1669,\n                        \"attribute\": \"Sigma\",\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.4,\n                        \"mmol_l\": 1.80824,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 8,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"attribute\": \"Sigma\",\n                        \"amount\": 1.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.2,\n                        \"mmol_l\": 26.1883,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 9,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"BD-Difco, TC\",\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 500,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }\n                ]\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=173",
+          "supporting_text": "Adjust pH to 7.6 with 1 N NaOH and sterilize by filtration through a 0.22 \u00b5m filter (Millipore). Autoclave Solution B, then mix Solutions A and B, and add 40 ml of heat-inactivated (56C, 45 min) sterile rabbit serum (Pel-Freez Biologicals).",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Adjust pH to 7.6 with 1 N NaOH and sterilize by filtration through a 0.22 \u00b5m filter (Millipore). Autoclave Solution B, then mix Solutions A and B, and add 40 ml of heat-inactivated (56C, 45 min) sterile rabbit serum (Pel-Freez Biologicals).",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J173",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=173",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[1].title"
+        }
+      ],
+      "reference_issues": []
+    }
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "97b156240849be7bf096a61d00d7a683ff9c8de8922db8585e5e8128ba7eb36c"
+  }
+}

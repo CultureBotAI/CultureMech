@@ -1,0 +1,19 @@
+[
+  {
+    "id": "CultureMech:006986",
+    "medium_id": "9a",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/9a",
+    "source_sha256": "7d26effce741dae09f9321eb7087f1cf1cf34e3969ed6501f261b3e5a0a4f304",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "recipe"
+    ],
+    "snippet": "[\n                    {\n                        \"recipe_order\": 1,\n                        \"compound\": \"Baker's yeast\",\n                        \"compound_id\": 17,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.5,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 2,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 1.36,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.36,\n                        \"mmol_l\": 9.25076,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 3,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 0.5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0005,\n                        \"mmol_l\": 0.000368895,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 4,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"attribute\": \"Difco\",\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"mmol_l\": 23.7862,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 5,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }\n                ]",
+    "reason": "The reduced recipe specifies 2.5 g yeast and 8 g agar per source batch, while the local record retains 5 g and 15 g. Original DSMZ 9a PDF inspection confirms the reduced quantities. Resolve this formulation/version mismatch and yeast-stock preparation before endorsing even the matching rows; this veto does not select a replacement quantity."
+  }
+]

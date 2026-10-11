@@ -1,0 +1,86 @@
+{
+  "terminal": true,
+  "all_record_goal_complete": false,
+  "validation_sha256": "82401e1a6eb7157e0f116f3f49d2fb13c0cd60925cdbf10fafd5acf40715646b",
+  "normalized_count": 15910,
+  "normalized_sha256": "3e69263bb0c82e782c51c5a994945630fbf3a3b9f685248e16d7daf3367f05fc",
+  "code_and_receipts_unchanged": true,
+  "document_checks": [
+    {
+      "path": "reports/ingredient_concentration_curation/README.md",
+      "sha256": "fc92c0b25c6938480e2c22abd89f2cd54c797b3b3d648a6f105056c77d1d7dab",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-methanofollis-family/README.md",
+      "sha256": "f523c5751aa12bb6600d044f461915ec714325631ae05d511d4852060bdbe081",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-methanofollis-family/adversarial-review.md",
+      "sha256": "1ebb7c7fd27fb7942eec60eefece6c3232cb8ee167ab4e66122a9e534fe44cc3",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-methanofollis-family/issue-source-conflicts.md",
+      "sha256": "3a98e584369dd42dc1958f3298739acd0e6ead650558a5090c835c0a3c5e00d2",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-methanofollis-family/next-212-source-notes.md",
+      "sha256": "0cffa163897ea99d23a197e953c4107073f83e2ae8cd08c14eeb9851fe7c4c3d",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-methanofollis-family/next-work.md",
+      "sha256": "f879c32b202509d480fabc52b3abe0df8bb7ac36cc1b6ece28c4399b2de39240",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/D161.md",
+      "sha256": "a1acec42c8876c97a60a6f82214baf9c710b61f7739222d4f826a32fada77610",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/K161.md",
+      "sha256": "ae9d82e9b5f7da211c6f143341c3bf5c63f5b252cc15a7fb7e7997cc31ebfa22",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/S209.md",
+      "sha256": "c0820965f2231fb4577b30037f73099305083f5ddee16cf28d2a362890088ec5",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/S241.md",
+      "sha256": "6ceaa54e2d6ef3105595dbcbd410fb652e6756d3d817d3494066b124659f30fa",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/S277.md",
+      "sha256": "4ddd19a5bcdf0c8fc60d2000f2a4a6bb5fc61970b39a40f832b651e137311841",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/S5980.md",
+      "sha256": "c73b7cc5dca7e8446e5dcac3c02cecbf25ba80fc42e07f36bae71d94199e5167",
+      "whitespace_passed": true
+    }
+  ],
+  "next_212_preparation_sha256": "2eab3e821d39c9e507c7ad429bbca2ba4925a13a7ce9f66b70d7a53c536d67d3",
+  "next_212_unchanged_records": 22,
+  "next_212_source_capture_count": 3,
+  "next_212_cache_read_error_count": 20,
+  "next_212_guarded_proposal_complete": false,
+  "records_edited_in_status_followup": 0,
+  "next_212_successor_receipt_sha256": {
+    "next-212-discovery-initial": "b64cf8707b91deb2b646c7de88662eca811af3859c3c6609f61ff603c4f09ef9",
+    "next-212-discovery-approved": "e60f878b75d4b30c085844e8319c539cdededbb74f5e36eed20754b69e341b58",
+    "next-212-stocks-initial": "2f2ca3eac226aab1bb3ffb1f6e68eac570999c1b80fa4b6157dffbb080ada6bd",
+    "next-212-stocks-approved": "ce3de6b8865cecf04fcc8c78cbd054ec0254a14eef3dd4cf087344b752d21260",
+    "next-212-visual-review": "781c2d1b46bcb685a98b8a8609db21e8de6bd930ac4ba71bfba468da7a3facdb",
+    "next-212-source-inspection": "0635b4efdd6e19160c9f423d0a05b7b14181de95fa07e8d7d9b1e3d02909abae",
+    "next-212-DSM2805-source-capture": "0dc878756b5ace93b6c8888906fd8c6f3be3c4f29a93e0914f58a910e39a26cf",
+    "next-212-DSM2805-comparison": "46b5fa022f4079284bac37052dda05a5b58a93b2675fc29b2129634cd3ea4200"
+  }
+}

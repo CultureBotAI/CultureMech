@@ -1,0 +1,147 @@
+{
+  "terminal": true,
+  "phase": "post",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-0.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-1.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml"
+      ],
+      "exit_code": 2,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-2.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/medium_1021_modified_for_dsm_16929.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-3.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/medium_1021_modified_for_dsm_16929.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-4.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/medium_1021_modified_for_dsm_16929.yaml"
+      ],
+      "exit_code": 2,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-5.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mitsuhashi_maramorosch_m_m_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-6.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/mitsuhashi_maramorosch_m_m_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-7.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/mitsuhashi_maramorosch_m_m_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-8.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-9.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-10.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml"
+      ],
+      "exit_code": 2,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-11.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-media-variant-links"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-12.log"
+    },
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-13.log"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-14.log"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "d99a375e68d2bef008b27eae1eaa6da6fc414a7d67046a15a5d32a2661f813d2"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "d99a375e68d2bef008b27eae1eaa6da6fc414a7d67046a15a5d32a2661f813d2"
+  }
+}

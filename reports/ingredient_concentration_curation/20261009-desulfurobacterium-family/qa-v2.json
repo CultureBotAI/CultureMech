@@ -1,0 +1,453 @@
+{
+  "terminal": true,
+  "phase": "qa-v2",
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_desulfurobacterium_family.py",
+        "tests/test_desulfurobacterium_family.py",
+        "tests/test_medium_concentration_batch.py",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py",
+        "tests/test_repair_komodo_dsmz_submedia_score15.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-0.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_desulfurobacterium_family.py",
+        "tests/test_desulfurobacterium_family.py",
+        "tests/test_medium_concentration_batch.py",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py",
+        "tests/test_repair_komodo_dsmz_submedia_score15.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-1.log",
+      "log_sha256": "7657c5ec367da2c8d4deead1b5f1f8eca9c1b89120ad13df7f855ca4005696b6"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-2.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "scripts/repair_desulfurobacterium_family.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-3.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "tests/test_desulfurobacterium_family.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-4.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "tests/test_medium_concentration_batch.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-5.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/audit.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-6.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-7.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "tests/test_repair_komodo_dsmz_submedia_score15.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-8.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/README.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-9.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/adversarial-review.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-10.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/issue-legacy-submedia-contract.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-11.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/issue-source-conflicts.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-12.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/issue-title-prefixes.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-13.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/next-1245-decisions.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-14.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/next-work.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-15.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/D829.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-16.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/D829a.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-17.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/D829b.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-18.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/D829c.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-19.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/D829d.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-20.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/K2027.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-21.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/K829.1.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-22.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/K829.2.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-23.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/K829.3.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-24.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/K829.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-25.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/K829_16661.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-26.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/K829a.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-27.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/M2587.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-28.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/S1680.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-29.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_komodo670_source_versions.py",
+        "tests/test_repair_komodo_dsmz_submedia_score15.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/qa-v2-30.log",
+      "log_sha256": "329bae791d37aa92254c8c8a2ab39a310a427859c1f0cc2ce0717a35e5f3b418"
+    }
+  ],
+  "plan_sha256": "8452f7a0ffa1de24471cac81be183e7eb5deddfa26c4b03578ada91040181a1f",
+  "code_sha256": {
+    "scripts/repair_desulfurobacterium_family.py": "9701fcf22247d766000992718d3c553430a851d1031f80db0a30d6b3aee345cc",
+    "tests/test_desulfurobacterium_family.py": "358fbcf8308047c1c628ff651587c393c21dc242e5cdf1a189caa8749b38f900",
+    "tests/test_medium_concentration_batch.py": "a357bd8d8ab049119079d0997092656d7d8cca8c52dd52d6e6a11cc714a2e9d9",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/audit.py": "f4abf7280174baaf9a1e967a99f1dd1fdbdb11aec4f35da2e750dfd856b73eb8",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "6df4a23c475c0c5b472a6d18da6e4ea65722f61a4261fa65000cd67504fafec9",
+    "tests/test_repair_komodo_dsmz_submedia_score15.py": "2c50a61595adc051b6858349561af2ceac49bace378193acf2e755de5248888d"
+  }
+}

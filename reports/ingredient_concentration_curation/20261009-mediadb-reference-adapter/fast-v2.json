@@ -1,0 +1,33 @@
+{
+  "terminal": true,
+  "phase": "fast",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-reference-adapter/fast-v2-00.log",
+      "log_sha256": "6ae91cf8fdf0536c7ea6621d76c66b517b80e471a7ef82c4a1e1a84e289e23a6"
+    }
+  ],
+  "records_edited": 0,
+  "evidence_entries_added": 0,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "started_at": "2026-10-09T20:19:30.851484+00:00",
+  "normalized_count": 15910,
+  "inventory_before_sha256": "19c45017d3210c6bc2c2fde0ec7a2f2c4a4498191af394cb351249b3299f6a05",
+  "code_before_sha256": "82f9ce3057063e7493274c335c6b5f6c39d4eccd639d5d60117fcc3ff5d0f64d",
+  "adapter_sha256": "79923b9ef4c9662b67d907fccb9fa24aeab1a9e805face7d3e1e86132a9860a0",
+  "tests_sha256": "de4c2b6e7d7ceb0ce0b5c96b7648141c7ad89d70983a107cc540f4e867fb0343",
+  "helper_sha256": "ae1872eed9c419b978084f1e709c43200d708b4a29072bf15f64c3f5f2bda6f4",
+  "passed": false,
+  "error": "BrokenPipeError: [Errno 32] Broken pipe",
+  "inventory_after_sha256": "19c45017d3210c6bc2c2fde0ec7a2f2c4a4498191af394cb351249b3299f6a05",
+  "normalized_inventory_unchanged": true,
+  "code_unchanged_during_checks": true,
+  "finished_at": "2026-10-09T20:47:23.969396+00:00"
+}

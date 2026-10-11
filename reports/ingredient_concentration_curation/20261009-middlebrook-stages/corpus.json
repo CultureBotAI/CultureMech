@@ -1,0 +1,48 @@
+{
+  "terminal": true,
+  "phase": "corpus",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml",
+        "--out",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-middlebrook-stages/strict-errors.tsv"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-corpus-0.log"
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-corpus-1.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-corpus-2.log"
+    }
+  ],
+  "code_sha256": {
+    "scripts/repair_middlebrook_stages.py": "94b5bb1954773797fe64799a35e9fb08bc2250d9a081df80b7267a4ad0df7c0f",
+    "tests/test_middlebrook_stages.py": "921f96ffafce8f58bca6c6665ef068bb36caa93583c97617bd3ac5efd7af7d10",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-middlebrook-stages/audit.py": "e50c1f643faf65c1d7f95a6c5eb50b1b65da02d9bccafbdf2ebed083dc14fd2b"
+  },
+  "plan_sha256": "28032eb3f5837886b5e1d1b0b972bad659942781d4ca76950e2ee774df680e13",
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "d0d0451157b8ed78867e41503fd02bc9afa0f80d11758d67a3f60e9daee6b138"
+  },
+  "strict_scanned": 15910,
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "d0d0451157b8ed78867e41503fd02bc9afa0f80d11758d67a3f60e9daee6b138"
+  }
+}

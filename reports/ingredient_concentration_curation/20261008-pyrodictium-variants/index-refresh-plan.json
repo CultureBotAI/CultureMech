@@ -1,0 +1,60 @@
+{
+  "source_sha256": "56a1e7d74710535fa9ea37fd3859560d08414fe5b8eb38e9290efd5d1f630c9c",
+  "files": [
+    {
+      "target": "data/normalized_yaml/archaea_index.json",
+      "preview": "/tmp/ingredient-media-20261007/pyrodictium-index-preview/archaea_index.json",
+      "before_sha256": "e4edb9d02052da1c971167063be0cb2a6ada52056ac7c91ab385c8dbab917988",
+      "after_sha256": "6552875c05bbe1fb105f9470a6d81951903f4dd24632fff8089daf86e8b8176f",
+      "changes": [
+        {
+          "key": "CultureMech:008551",
+          "id": "CultureMech:008551",
+          "changes": {
+            "solution_count": [
+              4,
+              3
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_togo_index.json",
+      "preview": "/tmp/ingredient-media-20261007/pyrodictium-index-preview/by_source_togo_index.json",
+      "before_sha256": "644621a04df0819f230608a838933e94c468f2605eaa752e16d282a5ec6a490a",
+      "after_sha256": "bd0be915604d86538d59b8914375eeb161ae8d82c0468c5e9052b6735b5338ee",
+      "changes": [
+        {
+          "key": "CultureMech:008551",
+          "id": "CultureMech:008551",
+          "changes": {
+            "solution_count": [
+              4,
+              3
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_index.json",
+      "preview": "/tmp/ingredient-media-20261007/pyrodictium-index-preview/recipe_index.json",
+      "before_sha256": "b7fd00707f3d1519169523fbe7c18c4dbfa621655dca8d6d13b197f10a230690",
+      "after_sha256": "e6e69c88fb02354953cb5832fadd7fbfa1f804732be15d9c62f2cadfd804d063",
+      "changes": [
+        {
+          "key": "CultureMech:008551",
+          "id": "CultureMech:008551",
+          "changes": {
+            "solution_count": [
+              4,
+              3
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "only_reviewed_sources_changed": true
+}

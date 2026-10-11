@@ -1,0 +1,110 @@
+{
+  "terminal": true,
+  "phase": "presentation-applied",
+  "checks": [],
+  "plan_sha256": "d5e5b76a6b77434f3c0b79cf2502b3de47ad5eb70305e57430348154c83c4d8e",
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1245_OTEB-MEDIUM.yaml",
+      "actual_sha256": "0f31228f716429d29d9e4f3770de742cee38b2c6215bb81c0d271512d1b8353c",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_range",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 9,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2474_Main_sol_1245.yaml",
+      "actual_sha256": "6ec8063661f55bae0fa731ac0f2a0b1b5ff1b7abf643149c3a3ac3d521dd3526",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 9,
+      "prior_evidence_entries_preserved": 6,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_1245_modified_for_dsm_18691.yaml",
+      "actual_sha256": "33a13534ce93d6e8e6e3509c759d518800d331d52c3034e7f786cffd4b63b396",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 8,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/oteb_medium.yaml",
+      "actual_sha256": "36175e4579c5126baf9eba16d4855347072d30b2a422fc4ade6b24b9ec0eaa07",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_range",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 8,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/sugar_stock_solution_medium_1245.yaml",
+      "actual_sha256": "62ed030fd7c033da4480c6bb8b47f257e0b027d090ee26e9732b61a5e797a0b6",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state",
+        "record_kind"
+      ],
+      "prior_history_spans_preserved": 3,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_5688_Sugar_Stock_Solution.yaml",
+      "actual_sha256": "6c07c6f509d6e116513b59e219a36ce0dec6a1a034bee2c0150e286cc1b8f61f",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "term"
+      ],
+      "prior_history_spans_preserved": 8,
+      "prior_evidence_entries_preserved": 9,
+      "exact_preview_readback": true
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "terminal": true,
+  "phase": "corpus",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml",
+        "--out",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-jcm-albumin-inputs/strict-errors.tsv"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-albumin-inputs-corpus-0.log"
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-albumin-inputs-corpus-1.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-albumin-inputs-corpus-2.log"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "cc01a6b89ff98426f13409c5d4a6114691a9a12094c0230b6ed7057aae17f842"
+  },
+  "strict_scanned": 15910,
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "cc01a6b89ff98426f13409c5d4a6114691a9a12094c0230b6ed7057aae17f842"
+  }
+}

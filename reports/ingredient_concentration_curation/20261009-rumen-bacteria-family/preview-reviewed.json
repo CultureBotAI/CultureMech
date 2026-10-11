@@ -1,0 +1,18 @@
+{
+  "terminal": true,
+  "created_at": "2026-10-09T08:40:16.214903+00:00",
+  "command": [
+    "/tmp/culturemech-goal-py313-20261007/bin/python",
+    "scripts/repair_rumen_bacteria_family.py",
+    "--dry-run"
+  ],
+  "returncode": 0,
+  "normalized_count": 15910,
+  "normalized_sha256": "2be09e9249a816360bba52b76c1f3d889e12aae7bfd90d12771f117acb01a0d1",
+  "normalized_unchanged": true,
+  "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/preview-reviewed.log",
+  "log_sha256": "7bc065952a23edcfd1bab5c5501cd9d1c791799f96bdf12ec057fc324d54fa76",
+  "builder_sha256": "808bc4c49331d814172109b4cbbabf958c35d71417a068142b849dc8ffb3f40f",
+  "application_enabled": false,
+  "plan_sha256": "5940d6a1b64c0f21408a6bde46512049cb4cbfff12cb80ae9061c5c6edfd3a1f"
+}

@@ -1,0 +1,64 @@
+{
+  "terminal": true,
+  "phase": "final",
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_dsmz_albumin_preparations.py",
+        "tests/test_dsmz_albumin_preparations.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-dsmz-albumin-preparations/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-albumin-final-retry-0.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_dsmz_albumin_preparations.py",
+        "tests/test_dsmz_albumin_preparations.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-dsmz-albumin-preparations/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-albumin-final-retry-1.log"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_dsmz_albumin_preparations.py",
+        "tests/test_albumin_counterparts.py",
+        "tests/test_jcm_albumin_inputs.py",
+        "tests/test_recipe_references.py",
+        "tests/test_medium_concentration_batch.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-albumin-final-retry-2.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-albumin-final-retry-3.log"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "97b156240849be7bf096a61d00d7a683ff9c8de8922db8585e5e8128ba7eb36c"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "97b156240849be7bf096a61d00d7a683ff9c8de8922db8585e5e8128ba7eb36c"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "terminal": true,
+  "phase": "fast",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/fast-0.log",
+      "log_sha256": "6592ec3df82b174eff9b8d2a6b7317a16dd1cd69074abbeb720ad34347c02423"
+    }
+  ],
+  "errors": [],
+  "plan_sha256": "c9611e131c0bc87eb0ffca52aa596859e29f5a66e3b2b39349ff961ffe4f7b78",
+  "context_sha256": "5c32dabb73da826f5ad4a3fc1750bb701e077f4541fcb708522970538979cb33",
+  "preview_validation_sha256": "bdb37d465f8cc3b1b61050e73d95369c119590fa11f56041f7995bc3d8874c45",
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "82e954649cedc505c58a3630b18afc0ddb4d9d30f77b75693172a95010987d00"
+  },
+  "ignored_files_included": true,
+  "code_sha256": {
+    "scripts/review_halobacteria_variant_concentrations.py": "4db3b15b9680b6d691144fb7d45623f5b20396eb99635788546e9f5c3dcd75c3",
+    "tests/test_halobacteria_variant_concentrations.py": "d12f45a79561eeebd4f8078f9e236f8436699839ae836649274844ce2a4c395f",
+    "tests/test_halobacteria_ingredient_family.py": "e0d64940a45d8d2646b5576252f2bfcdabea41c27016967e3a657cd7f642da4b",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/audit.py": "b28f5c75785bf8b3d7bb70c195dfeec961f14fa2852612d1dad77ab0ddd6b271",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "4f8dba814b18b3346aafdde51df61ad7ccf6e04282ebb51fa83e8ab1c0d159fe"
+  },
+  "applied_audit": {
+    "M1065": {
+      "old_quantities": 10,
+      "old_quantities_reviewed": 10,
+      "nodes": 10,
+      "claims": 50,
+      "new_evidence": 33,
+      "new_references": 3
+    },
+    "M1212": {
+      "old_quantities": 9,
+      "old_quantities_reviewed": 9,
+      "nodes": 11,
+      "claims": 45,
+      "new_evidence": 22,
+      "new_references": 3
+    },
+    "M576": {
+      "old_quantities": 11,
+      "old_quantities_reviewed": 11,
+      "nodes": 11,
+      "claims": 55,
+      "new_evidence": 33,
+      "new_references": 3
+    },
+    "M959": {
+      "old_quantities": 10,
+      "old_quantities_reviewed": 10,
+      "nodes": 10,
+      "claims": 49,
+      "new_evidence": 33,
+      "new_references": 3
+    },
+    "M960": {
+      "old_quantities": 11,
+      "old_quantities_reviewed": 11,
+      "nodes": 11,
+      "claims": 53,
+      "new_evidence": 36,
+      "new_references": 3
+    },
+    "J1132": {
+      "old_quantities": 9,
+      "old_quantities_reviewed": 9,
+      "nodes": 11,
+      "claims": 46,
+      "new_evidence": 22,
+      "new_references": 2
+    },
+    "J914": {
+      "old_quantities": 9,
+      "old_quantities_reviewed": 9,
+      "nodes": 10,
+      "claims": 39,
+      "new_evidence": 22,
+      "new_references": 2
+    },
+    "J572": {
+      "old_quantities": 9,
+      "old_quantities_reviewed": 9,
+      "nodes": 11,
+      "claims": 44,
+      "new_evidence": 22,
+      "new_references": 2
+    },
+    "J1008": {
+      "old_quantities": 9,
+      "old_quantities_reviewed": 9,
+      "nodes": 10,
+      "claims": 40,
+      "new_evidence": 22,
+      "new_references": 2
+    },
+    "J377": {
+      "old_quantities": 9,
+      "old_quantities_reviewed": 9,
+      "nodes": 10,
+      "claims": 28,
+      "new_evidence": 12,
+      "new_references": 2
+    },
+    "M371": {
+      "old_quantities": 10,
+      "old_quantities_reviewed": 10,
+      "nodes": 10,
+      "claims": 32,
+      "new_evidence": 21,
+      "new_references": 2
+    },
+    "M372": {
+      "old_quantities": 11,
+      "old_quantities_reviewed": 11,
+      "nodes": 11,
+      "claims": 35,
+      "new_evidence": 23,
+      "new_references": 2
+    },
+    "S3823": {
+      "old_quantities": 10,
+      "old_quantities_reviewed": 10,
+      "nodes": 10,
+      "claims": 35,
+      "new_evidence": 20,
+      "new_references": 2
+    },
+    "J168": {
+      "old_quantities": 9,
+      "old_quantities_reviewed": 0,
+      "nodes": 10,
+      "claims": 10,
+      "new_evidence": 5,
+      "new_references": 5
+    },
+    "M159": {
+      "old_quantities": 9,
+      "old_quantities_reviewed": 0,
+      "nodes": 10,
+      "claims": 11,
+      "new_evidence": 7,
+      "new_references": 7
+    },
+    "M160": {
+      "old_quantities": 10,
+      "old_quantities_reviewed": 0,
+      "nodes": 11,
+      "claims": 3,
+      "new_evidence": 2,
+      "new_references": 2
+    }
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "82e954649cedc505c58a3630b18afc0ddb4d9d30f77b75693172a95010987d00"
+  }
+}

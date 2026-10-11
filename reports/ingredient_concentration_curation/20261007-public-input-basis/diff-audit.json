@@ -1,0 +1,15 @@
+{
+  "new_evidence": 39,
+  "new_references": 2,
+  "new_curation_history": 2,
+  "new_quantity_slots": 4,
+  "water_input_nodes_added": 5,
+  "unquantified_solvent_nodes_added": 1,
+  "quantity_corrections": 4,
+  "stock_dose_basis_corrections": 3,
+  "unsupported_quantity_slots_removed": 3,
+  "ingredient_context_notes_added": 4,
+  "stock_context_notes_corrected": 4,
+  "recipe_context_notes_corrected": 2,
+  "edited_records": 2
+}

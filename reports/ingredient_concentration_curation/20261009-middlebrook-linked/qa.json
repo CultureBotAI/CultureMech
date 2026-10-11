@@ -1,0 +1,342 @@
+{
+  "terminal": true,
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_linked_middlebrook.py",
+        "tests/test_linked_middlebrook.py",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-0.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_linked_middlebrook.py",
+        "tests/test_linked_middlebrook.py",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-1.log",
+      "log_sha256": "26a5fd9505f2b5608a20c4fed4b4c4795e0783d03b72ade02a6af34dae8ad086"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-2.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "scripts/repair_linked_middlebrook.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-3.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "tests/test_linked_middlebrook.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-4.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/audit.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-5.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-6.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/README.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-7.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/adversarial-review.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-8.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/decisions.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-9.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/issue-source-limits.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-10.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/next-work.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-11.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/records/D645.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-12.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/records/D911.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-13.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/records/K645.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-14.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/records/K645_44338.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-15.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/records/K645_44339.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-16.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/records/K645_44482.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-17.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/records/K645_44483.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-18.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/records/K645_44680.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-19.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/records/K645a.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-20.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/records/K911.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-21.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/records/K911_44536.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-22.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/qa-23.log",
+      "log_sha256": "0b356c4269349118184ad932b4e4b377387605749575de12b2576f7e3138681a"
+    }
+  ],
+  "code_sha256": {
+    "scripts/repair_linked_middlebrook.py": "b6571c6b97979de2b2ee7b16b4c3bc071d17467ef57fa104e5902d8e1a6658f1",
+    "tests/test_linked_middlebrook.py": "e95182859d2d576c3266645dd2abbbfa34314c4ed9d20de0f4c3ea019a2f6034",
+    "reports/ingredient_concentration_curation/20261009-middlebrook-linked/audit.py": "807c71a2ea7076245bb0ee989868f81ce24a673e53f6c7462daaf2f47396a73b",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "8a2e33d42853fd8ab4897b7c55d47d5518acb546434adb6ea523a4ee3b183a60"
+  },
+  "cumulative_accounting_rechecked": true,
+  "next_allisonella_unchanged": true
+}

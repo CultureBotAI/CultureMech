@@ -1,0 +1,112 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "corpus",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/corpus-v2-000.log",
+      "log_sha256": "e7a48e6e8ed0f78d7fc573bee52fa53a11fd99dd36405642430dd11568deb251"
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/corpus-v2-001.log",
+      "log_sha256": "eb7360e4d6ac289a3c075ae3f26d2a32b53e6b2da8d03073cfda3e697295cbc0"
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/corpus-v2-002.log",
+      "log_sha256": "3946e885d659c78a63efbdfba199e8c4e8e55c8e331c9eb181e809ef86f2bb86"
+    },
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/corpus-v2-003.log",
+      "log_sha256": "09a2922082db841587410042dc33d7d3f72b2601f1d6b6f2b33322471ee47f2c"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/corpus-v2-004.log",
+      "log_sha256": "330b23bfb64bc200ea2ca986dbf301b44d968f6b40be836dfed778c4165ea7f4"
+    }
+  ],
+  "plan_sha256": "e8f76ac0b17af3d742891096a8fe511ea74535f44922141a79693a696a22a4b0",
+  "code_sha256": {
+    "scripts/review_geobacter_primary_concentrations.py": "41ce3e12abba3fcce2b4e4cab96435dd1da0daaf0bf520301e4903c97d1369c0",
+    "tests/test_geobacter_primary_concentrations.py": "593ca4f403f67bdd7b7f7265b1498159c3ee6408a09a8ca7da8e341170fce45c"
+  },
+  "inventory_before_sha256": "bcec0dd6e2c94b3a58bf69511cb219c2f192c6402ccbcc74dac14f6301834750",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "variant_identity_pairs": [
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_416_Defined_freshwater_medium_CoSO4.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_417_Defined_freshwater_medium_CoSO4.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_416_Defined_freshwater_medium_CoSO4.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_423_Defined_freshwater_medium_CoSO4.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_416_Defined_freshwater_medium_CoSO4.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_424_Defined_freshwater_medium_CoSO4.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_419_Defined_freshwater_medium_CoSO4.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_421_Defined_freshwater_medium_CoSO4.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_435_Defined_freshwater_medium_CoSO4.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_434_Defined_freshwater_medium_CoSO4.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_444_Defined_freshwater_medium_CoCl2.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_447_Defined_freshwater_medium_CoCl2.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_444_Defined_freshwater_medium_CoCl2.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_451_Defined_freshwater_medium_CoCl2.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_444_Defined_freshwater_medium_CoCl2.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_455_Defined_freshwater_medium_CoCl2.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_446_Defined_freshwater_medium_CoCl2.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_448_Defined_freshwater_medium_CoCl2.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_463_Defined_freshwater_medium_CoCl2.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_457_Defined_freshwater_medium_CoCl2.yaml"
+    ]
+  ],
+  "pinned_scan_captures_and_reviewed_transcriptions_checked": true,
+  "automated_ocr_verification_asserted": false,
+  "inventory_after_sha256": "bcec0dd6e2c94b3a58bf69511cb219c2f192c6402ccbcc74dac14f6301834750",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

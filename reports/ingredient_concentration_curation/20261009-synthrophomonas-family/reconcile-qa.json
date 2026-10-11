@@ -1,0 +1,79 @@
+{
+  "terminal": true,
+  "phase": "qa",
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_synthrophomonas_family.py",
+        "tests/test_synthrophomonas_family.py",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_followup_report_coverage.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/audit.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/summarize_followup_coverage.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/reconcile-qa-0.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_synthrophomonas_family.py",
+        "tests/test_synthrophomonas_family.py",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_followup_report_coverage.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/audit.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/summarize_followup_coverage.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/reconcile-qa-1.log",
+      "log_sha256": "0b479fee9c3c70313b9c5c7a6339ecd413b78bbea93f1ad5050f49bdd3a655af"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_solution_concentration_batch.py",
+        "tests/test_komodo670_source_versions.py",
+        "tests/test_repair_komodo_dsmz_submedia_score15.py",
+        "tests/test_followup_report_coverage.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/reconcile-qa-2.log",
+      "log_sha256": "2c58959114b528e17c267760b27a3582d4fac6a8bde796eec4ccf73db46a7f72"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/reconcile-qa-3.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "errors": [],
+  "source_sha256": "a55dbe72d9740772e93f5dbb870bc17709d68b4b494cd12f69e5bb02b7c41f23",
+  "plan_sha256": "496c0f734f231756ee97a80021429802c1af9136472b77798c9f2162ad4b2d4c",
+  "ignored_files_included": true,
+  "code_sha256": {
+    "scripts/repair_synthrophomonas_family.py": "ef0dbeed08dfe0177b59bd628aa6b5ab5f828a1f3f2ea70e7298088831a61838",
+    "tests/test_synthrophomonas_family.py": "fc68e870d8cb3a56e73d29e2d6797f7fac8a241f33bdfb117ecf5bbe5f591a2e",
+    "tests/test_medium_concentration_batch.py": "61222e7e781696028f0a789a16e8c0b92476438408d6ab5b13ae5e41e2685e4c",
+    "tests/test_followup_report_coverage.py": "8f226c29d8081212461eec982f63a2db8ae0bc774b0df7fa487c37fe79819aba",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/audit.py": "e21d75bf5b782c9eba2df6e30ced68989d9bfcc2000bf1b9066cdf04e2a47458",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "6089cc38967e7859f9f81736b34a25ce43edcf08142050bb1a051e73c560c112",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/summarize_followup_coverage.py": "c73c13d5aa692cf19b42d802631fcfa7ff5b8a9469e33070b1f527fea15da904"
+  }
+}

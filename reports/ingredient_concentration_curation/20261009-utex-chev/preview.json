@@ -1,0 +1,600 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "preview",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/1_2_CHEV_Diatom_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-000.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/1_2_CHEV_Diatom_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-001.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-utex-chev/one-half-chev-diatom-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-002.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-utex-chev/one-half-chev-diatom-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-003.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/1_3_CHEV_Diatom_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-004.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/1_3_CHEV_Diatom_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-005.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-utex-chev/one-third-chev-diatom-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-006.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-utex-chev/one-third-chev-diatom-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-007.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/1_5_CHEV_Diatom_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-008.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/1_5_CHEV_Diatom_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-009.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-utex-chev/one-fifth-chev-diatom-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-010.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-utex-chev/one-fifth-chev-diatom-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-011.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/2X_CHEV_Diatom_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-012.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/2X_CHEV_Diatom_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-013.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-utex-chev/2x-chev-diatom-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-014.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-utex-chev/2x-chev-diatom-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-015.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/2_3_CHEV_Diatom_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-016.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/2_3_CHEV_Diatom_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-017.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-utex-chev/two-thirds-chev-diatom-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-018.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-utex-chev/two-thirds-chev-diatom-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-019.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/CHEV_Diatom_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-020.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/CHEV_Diatom_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-021.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-utex-chev/chev-diatom-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-022.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-utex-chev/chev-diatom-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-023.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/Modified_2X_CHEV_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-024.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/Modified_2X_CHEV_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-025.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-utex-chev/modified-2x-chev-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-026.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-utex-chev/modified-2x-chev-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-027.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/Modified_CHEV_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-028.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/Modified_CHEV_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-029.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-utex-chev/modified-chev-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-030.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-utex-chev/modified-chev-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-031.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/modified_2x_chev_soil_medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-032.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/modified_2x_chev_soil_medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-033.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-utex-chev/modified-2x-chev-plus-soil-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-034.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-utex-chev/modified-2x-chev-plus-soil-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-035.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "--no-cov",
+        "tests/test_utex_chev_concentrations.py"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-036.log",
+      "log_sha256": "de9c2f246245017d652302a167ee5f4e69deb18566b2f9b05e0b9e1ed94023f2"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/review_utex_chev_concentrations.py",
+        "tests/test_utex_chev_concentrations.py"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-037.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "--line-length",
+        "100",
+        "scripts/review_utex_chev_concentrations.py",
+        "tests/test_utex_chev_concentrations.py"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-038.log",
+      "log_sha256": "b9cf511501d306d2bd8355ccb165c8ddc0a6fdd62d7c72c4a7b1795cf8934c8c"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/preview-039.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "plan_sha256": "aec9a1ab3f6e913c9566a6fde4d4922a79753d0aba4839445524a97f66370836",
+  "code_sha256": {
+    "scripts/review_utex_chev_concentrations.py": "7b0c7ae44039bea8830a5255f9869f16e3e1155b15d16abad64e628740f5c8c8",
+    "tests/test_utex_chev_concentrations.py": "22ec37aec2d64709728a7c5b82cf9e8cbeea85778fab2ce57dbe5783eb1e4518"
+  },
+  "inventory_before_sha256": "bcec0dd6e2c94b3a58bf69511cb219c2f192c6402ccbcc74dac14f6301834750",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "source_checks": [
+    {
+      "key": "one-half-chev-diatom-medium",
+      "captures_unchanged": true,
+      "table_exact": true,
+      "component_links": [
+        {
+          "label": "CR1 Soil",
+          "url": "https://utex.org/products/cr1-soil"
+        },
+        {
+          "label": "Pasteurized Seawater",
+          "url": "https://utex.org/products/pasteurized-seawater"
+        }
+      ]
+    },
+    {
+      "key": "one-third-chev-diatom-medium",
+      "captures_unchanged": true,
+      "table_exact": true,
+      "component_links": [
+        {
+          "label": "CR1 Soil",
+          "url": "https://utex.org/products/cr1-soil"
+        },
+        {
+          "label": "Pasteurized Seawater",
+          "url": "https://utex.org/products/pasteurized-seawater"
+        }
+      ]
+    },
+    {
+      "key": "one-fifth-chev-diatom-medium",
+      "captures_unchanged": true,
+      "table_exact": true,
+      "component_links": [
+        {
+          "label": "CR1 Soil",
+          "url": "https://utex.org/products/cr1-soil"
+        },
+        {
+          "label": "Pasteurized Seawater",
+          "url": "https://utex.org/products/pasteurized-seawater"
+        }
+      ]
+    },
+    {
+      "key": "2x-chev-diatom-medium",
+      "captures_unchanged": true,
+      "table_exact": true,
+      "component_links": [
+        {
+          "label": "CR1 Soil",
+          "url": "https://utex.org/products/cr1-soil"
+        },
+        {
+          "label": "Pasteurized Seawater",
+          "url": "https://utex.org/products/pasteurized-seawater"
+        }
+      ]
+    },
+    {
+      "key": "two-thirds-chev-diatom-medium",
+      "captures_unchanged": true,
+      "table_exact": true,
+      "component_links": [
+        {
+          "label": "CR1 Soil",
+          "url": "https://utex.org/products/cr1-soil"
+        },
+        {
+          "label": "Pasteurized Seawater",
+          "url": "https://utex.org/products/pasteurized-seawater"
+        }
+      ]
+    },
+    {
+      "key": "chev-diatom-medium",
+      "captures_unchanged": true,
+      "table_exact": true,
+      "component_links": [
+        {
+          "label": "CR1 Soil",
+          "url": "https://utex.org/products/cr1-soil"
+        },
+        {
+          "label": "Pasteurized Seawater",
+          "url": "https://utex.org/products/pasteurized-seawater"
+        }
+      ]
+    },
+    {
+      "key": "modified-2x-chev-medium",
+      "captures_unchanged": true,
+      "table_exact": true,
+      "component_links": [
+        {
+          "label": "F/2 Medium",
+          "url": "https://utex.org/products/f-2-medium"
+        }
+      ]
+    },
+    {
+      "key": "modified-chev-medium",
+      "captures_unchanged": true,
+      "table_exact": true,
+      "component_links": [
+        {
+          "label": "CR1 Soil",
+          "url": "https://utex.org/products/cr1-soil"
+        },
+        {
+          "label": "F/2 Medium",
+          "url": "https://utex.org/products/f-2-medium"
+        }
+      ]
+    },
+    {
+      "key": "modified-2x-chev-plus-soil-medium",
+      "captures_unchanged": true,
+      "table_exact": true,
+      "component_links": [
+        {
+          "label": "CR1 Soil",
+          "url": "https://utex.org/products/cr1-soil"
+        },
+        {
+          "label": "F/2 Medium",
+          "url": "https://utex.org/products/f-2-medium"
+        }
+      ]
+    }
+  ],
+  "manual_pdf_review_pages": 9,
+  "automated_ocr_verification_asserted": false,
+  "inventory_after_sha256": "bcec0dd6e2c94b3a58bf69511cb219c2f192c6402ccbcc74dac14f6301834750",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

@@ -1,0 +1,112 @@
+{
+  "terminal": true,
+  "phase": "post",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/TOGO_M196_Pyrodictium_Brockii_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/pyrodictium-post-0.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/TOGO_M196_Pyrodictium_Brockii_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/pyrodictium-post-1.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/archaea/TOGO_M196_Pyrodictium_Brockii_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/pyrodictium-post-2.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/TOGO_M197_Pyrodictium_Ocultum_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/pyrodictium-post-3.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/TOGO_M197_Pyrodictium_Ocultum_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/pyrodictium-post-4.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/archaea/TOGO_M197_Pyrodictium_Ocultum_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/pyrodictium-post-5.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/TOGO_M198_Pyrodictium_Abysii_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/pyrodictium-post-6.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/TOGO_M198_Pyrodictium_Abysii_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/pyrodictium-post-7.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/archaea/TOGO_M198_Pyrodictium_Abysii_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/pyrodictium-post-8.log"
+    },
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/pyrodictium-post-9.log"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/pyrodictium-post-10.log"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "56a1e7d74710535fa9ea37fd3859560d08414fe5b8eb38e9290efd5d1f630c9c"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "56a1e7d74710535fa9ea37fd3859560d08414fe5b8eb38e9290efd5d1f630c9c"
+  }
+}

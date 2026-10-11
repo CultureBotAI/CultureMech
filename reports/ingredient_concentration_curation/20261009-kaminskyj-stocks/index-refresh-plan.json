@@ -1,0 +1,91 @@
+{
+  "files": [
+    {
+      "target": "data/normalized_yaml/bacterial_index.json",
+      "preview": "/tmp/kaminskyj-index-preview/bacterial_index.json",
+      "before_sha256": "16f7e645578ced9aaf17d44c6aab42f02bfccfd7f40e7bddfffcbbc99bf41d36",
+      "after_sha256": "67ab8132ca88518e60e893a778aebe6216114bded8b619e0e357c4fb7463b353",
+      "changes": [
+        {
+          "id": "CultureMech:007206",
+          "changes": {
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ],
+            "solution_count": [
+              null,
+              4
+            ],
+            "ingredient_count": [
+              14,
+              2
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_unknown_index.json",
+      "preview": "/tmp/kaminskyj-index-preview/by_source_unknown_index.json",
+      "before_sha256": "4cf4bcc5d6a88f31ccadf972f450520f0478217a06b2594c6b8d33cd44e73856",
+      "after_sha256": "eb5efd9f7024bb3d989982897cffda65a5c225e0169d2d7e07d0a382a4c30010",
+      "changes": [
+        {
+          "id": "CultureMech:007206",
+          "changes": {
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ],
+            "solution_count": [
+              null,
+              4
+            ],
+            "ingredient_count": [
+              14,
+              2
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_index.json",
+      "preview": "/tmp/kaminskyj-index-preview/recipe_index.json",
+      "before_sha256": "ac0263272e8683d88a7bf8c3e473ce0bd0f93e6bc2b3d0ae487e0c9600885bf9",
+      "after_sha256": "fcc989b454fbc0fd1c9ac21a0c0d630da947013b2c4a6b675816a67675598e63",
+      "changes": [
+        {
+          "id": "CultureMech:007206",
+          "changes": {
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ],
+            "solution_count": [
+              null,
+              4
+            ],
+            "ingredient_count": [
+              14,
+              2
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_statistics.json",
+      "preview": "/tmp/kaminskyj-index-preview/recipe_statistics.json",
+      "before_sha256": "34989f4beb1e5a0e6bb03486121e16552306cf6f548030b5f850f09606a05a25",
+      "after_sha256": "ef2a5de5ef613afd5429a580c725283bca730a1b162bc668472149412e68e69e",
+      "changes": {
+        "with_hierarchy_enrichment": [
+          1464,
+          1463
+        ]
+      }
+    }
+  ]
+}

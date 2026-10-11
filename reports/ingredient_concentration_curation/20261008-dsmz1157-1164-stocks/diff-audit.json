@@ -1,0 +1,19 @@
+{
+  "records": 6,
+  "applied": true,
+  "ingredient_context_notes_added": 36,
+  "new_quantity_slots": 16,
+  "stock_stage_concentrations_rebased": 3,
+  "stock_nodes_relocated": 15,
+  "stock_descriptors_added": 15,
+  "unsupported_quantity_slots_removed": 12,
+  "water_input_nodes_added": 4,
+  "recipe_context_notes_corrected": 6,
+  "new_evidence": 47,
+  "new_curation_history": 6,
+  "new_references": 10,
+  "evidence_scopes_corrected": 24,
+  "quantity_corrections": 2,
+  "parent_links_corrected": 1,
+  "child_links_corrected": 1
+}

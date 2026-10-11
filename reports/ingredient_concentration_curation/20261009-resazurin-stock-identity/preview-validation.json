@@ -1,0 +1,119 @@
+{
+  "terminal": true,
+  "phase": "preview-validation",
+  "checks": [],
+  "records_edited": 0,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "plan_sha256": "fd4e0e684d80ee6d9b93497148c8858f545a6bf6a906c4adb18a66ec08c03db9",
+  "code_sha256": {
+    "scripts/repair_resazurin_stock_identity.py": "30cc133bf2a0da789fdc541d0a131bbb09d269127934bfce350f0d58c2a595fb",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/audit.py": "34bfff226e6aec3f00e7a4c54bbf4118695c7bd0c1553efcc0ec6c607c111393",
+    "tests/test_resazurin_stock_identity.py": "9dd67e689e3b365be7d6b8fafde1ed357e47323f74a665e1615a69d51ca53fa3"
+  },
+  "normalized_count": 15910,
+  "inventory_before_sha256": "82e954649cedc505c58a3630b18afc0ddb4d9d30f77b75693172a95010987d00",
+  "ontology": {
+    "label": "Resazurin",
+    "metadata": {
+      "id": [
+        "CHEBI:8806"
+      ],
+      "chemrof:charge": [
+        0
+      ],
+      "chemrof:generalized_empirical_formula": [
+        "C12H7NO4"
+      ],
+      "chemrof:inchi_key_string": [
+        "PLXBWHJQWKZRKG-UHFFFAOYSA-N"
+      ],
+      "chemrof:inchi_string": [
+        "InChI=1S/C12H7NO4/c14-7-1-3-9-11(5-7)17-12-6-8(15)2-4-10(12)13(9)16/h1-6,14H"
+      ],
+      "chemrof:mass": [
+        "229.191"
+      ],
+      "chemrof:monoisotopic_mass": [
+        "229.03751"
+      ],
+      "chemrof:smiles_string": [
+        "O=c1ccc2[n+]([O-])c3ccc(O)cc3oc-2c1"
+      ],
+      "oio:hasDbXref": [
+        "cas:550-82-3",
+        "kegg.compound:C11178"
+      ],
+      "oio:hasOBONamespace": [
+        "chebi_ontology"
+      ],
+      "oio:hasRelatedSynonym": [
+        "Resazurin"
+      ],
+      "oio:id": [
+        "CHEBI:8806"
+      ],
+      "oio:inSubset": [
+        "obo:chebi/2_STAR"
+      ],
+      "rdfs:label": [
+        "Resazurin"
+      ],
+      "sh:prefix": [
+        "CHEBI"
+      ],
+      "schema:url": [
+        "http://purl.obolibrary.org/obo/CHEBI_8806"
+      ],
+      "rdfs:isDefinedBy": [
+        "http://purl.obolibrary.org/obo/chebi.owl"
+      ]
+    },
+    "source": "sqlite:obo:chebi",
+    "live_reverified": false
+  },
+  "mim_metadata": {
+    "byte_count": 922191,
+    "consumer_contract_version": 1,
+    "data_row_count": 9876,
+    "header": [
+      "label",
+      "match_type",
+      "identifier",
+      "preferred_term",
+      "ontology_id",
+      "mapping_status",
+      "ambiguity"
+    ],
+    "repository": "https://github.com/CultureBotAI/MediaIngredientMech",
+    "sha256": "a36cd4683feb89e2fc2a1721dc15008d1e10c12044e89a36c27b6621a8aaf262",
+    "source_commit": "9f09e4fb97fb0e6cbbd6f25baca40b36512adb88",
+    "source_path": "docs/data/label_index.csv"
+  },
+  "sources": [
+    {
+      "version": 2,
+      "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+      "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+      "http_status": 200,
+      "sha256": "8cc1d165274c4c0ce7a215cbe458c48d9880b183c7d62cbefa2d54e637d7625a",
+      "accessed_at": "2026-10-09T08:54:14.964059+00:00",
+      "pdf_sha256": "0f4ea6194efcb146abe36366dd72ce890643e9cfe39bc947a9df7281959478e0",
+      "pdf_pages": 2,
+      "media_type": "application/pdf",
+      "encoding": "utf-8",
+      "extraction": {
+        "library": "pypdf",
+        "version": "6.16.1",
+        "mode": "layout"
+      },
+      "pdf_path": "references_cache/ingredient-161-next/DSMZ161.pdf"
+    }
+  ],
+  "quantities_preserved": {},
+  "passed": false,
+  "error": "ValueError: too many values to unpack (expected 2)",
+  "inventory_after_sha256": "82e954649cedc505c58a3630b18afc0ddb4d9d30f77b75693172a95010987d00",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

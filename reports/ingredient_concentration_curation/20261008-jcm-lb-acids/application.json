@@ -1,0 +1,68 @@
+{
+  "audit": {
+    "J1203": {
+      "unsupported_quantity_slots_removed": 14,
+      "new_quantity_slots": 2,
+      "quantity_corrections": 4,
+      "stock_nodes_relocated": 2,
+      "stock_dose_basis_corrections": 1,
+      "stock_descriptors_added": 1,
+      "new_evidence": 38,
+      "new_references": 2,
+      "new_curation_history": 1,
+      "old_quantity_slots": 19,
+      "claims": 46,
+      "source_rows": 18
+    },
+    "J266": {
+      "unsupported_quantity_slots_removed": 16,
+      "new_quantity_slots": 12,
+      "stock_nodes_relocated": 24,
+      "stock_dose_basis_corrections": 1,
+      "stock_stage_concentrations_rebased": 21,
+      "stock_descriptors_added": 2,
+      "new_evidence": 89,
+      "new_references": 4,
+      "new_curation_history": 1,
+      "old_quantity_slots": 38,
+      "claims": 119,
+      "source_rows": 47
+    },
+    "J675": {
+      "unsupported_quantity_slots_removed": 8,
+      "new_quantity_slots": 8,
+      "ingredient_context_notes_added": 2,
+      "stock_nodes_relocated": 8,
+      "stock_stage_concentrations_rebased": 6,
+      "quantity_corrections": 2,
+      "new_evidence": 40,
+      "new_references": 2,
+      "new_curation_history": 1,
+      "old_quantity_slots": 16,
+      "claims": 48,
+      "source_rows": 20
+    }
+  },
+  "terminal": true,
+  "application": {
+    "mode": "apply",
+    "records": 3,
+    "changed": 3,
+    "already_applied": 0,
+    "claims": 213
+  },
+  "verification": {
+    "mode": "verify",
+    "records": 3,
+    "changed": 0,
+    "already_applied": 3,
+    "claims": 213
+  },
+  "no_op_rerun": {
+    "mode": "apply",
+    "records": 3,
+    "changed": 0,
+    "already_applied": 3,
+    "claims": 213
+  }
+}

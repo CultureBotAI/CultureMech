@@ -1,0 +1,82 @@
+{
+  "terminal": true,
+  "phase": "live",
+  "checks": [],
+  "commit": "f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f",
+  "files_sha256": {
+    "src/culturemech/validation/recipe_references.py": "496b60409c0f973063dbe2671785b2ebefbe810059cf988f99b5368cbe8f0f85",
+    "scripts/validate_recipe_references.py": "087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b",
+    "tests/test_recipe_komodo_references.py": "accc793474144d364a08ea91af82cf1b097e9b5e14091d84788f3edb31e69ce8",
+    "tests/test_recipe_references.py": "59d055b9239b03b3794ec5297f23c4b1ecb09e7984b252b4337755b86cf0f7ab",
+    "tests/test_recipe_pdf_references.py": "bd301e4d081a0ce7bd6d67e0a5fcc43406156eb27cc00ea7855c8d68a84d3166",
+    "tests/fixtures/recipe_references/DSMZ104a.json": "ec2600e109a962dd381c566c97c02d9b7873838de29593429c49e88065d7faa5",
+    "tests/fixtures/recipe_references/DSMZ1829.json": "e5746a0a85fbf74cd77490ebde4b427bf59579b622c54c1b113ead1b6ea1dda4",
+    "tests/fixtures/recipe_references/DSMZ261.json": "fd5b361d542572ce82b192e0f6ee26b6cb7a56639b6e48fbca28baea3a83974f",
+    "tests/fixtures/recipe_references/DSMZ403.json": "c8dfabc547468886a01ce5d5806ad87bd56b75cb313cd3d39e94b77f59673e1a",
+    "tests/fixtures/recipe_references/DSMZ605a.json": "a7888642201dd8a30dad78b0ec3af286a0981731ce15d993cca9facc0de5091d",
+    "tests/fixtures/recipe_references/DSMZ751.json": "a0f650c244d940185cc95bc884506ee2b589ac369b4bd29c9cd5797921a6b914",
+    "tests/fixtures/recipe_references/J151.json": "031437e5acf918fbe4a1f5284a30382521cf55fd4a87f5467eee250deef23852",
+    "tests/fixtures/recipe_references/JCM1084.json": "b36df18d9c126d4029cdc3b26e9d6d9ea46c15c03a1e09baf3db30d7d1f1a57a",
+    "tests/fixtures/recipe_references/JCM1282.json": "06b8a516026f912951ea5b857c982d5aa594de58ae5dd812f50dda4c23b2f01c",
+    "tests/fixtures/recipe_references/K1021.json": "2cdb9b77b35fb86fcd9870ae086a4e2a4a2bc5527f3a6be06a04ebeab2086144",
+    "tests/fixtures/recipe_references/K1021_16929.json": "be29bc90a30e1bce9d260b96febae642d97a27522ccbb18e242b93e26fdf8cb8",
+    "tests/fixtures/recipe_references/M1124.json": "4d9e7f49152b35ccce51ccceb43ad70530eb6caea989270d3f3541c5e9c69edf",
+    "tests/fixtures/recipe_references/README.md": "ee051cf42929f3e2cec04c99e8750db53c36b0fa2c3a7f90bcc4ce4519eef692",
+    "tests/fixtures/recipe_references/komodo_failed_excerpts.json": "6644fc181c01a66dce5136fd6456794f24d879daffbd6fcb1f5ae84c09c5ecdd",
+    "tests/fixtures/recipe_references/solution118.json": "a9116a6d5cb591e8ee66301fe1d56c32f68b96412bce2edb779b2d93f2306211"
+  },
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "d99a375e68d2bef008b27eae1eaa6da6fc414a7d67046a15a5d32a2661f813d2"
+  },
+  "prior_plan_sha256": "01711c7839a6e175b55b0237d48db7e74f3cc13f11b960213837bbbc19408462",
+  "prior_context_sha256": "b9afaadd95d0d21b285ebbde79b8a685f6fc18f6ecfb51b9cd2e86b2dcf8d8f2",
+  "sources": [
+    {
+      "key": "D1021",
+      "matches_inspected_capture": true,
+      "metadata": {
+        "version": 1,
+        "url": "https://mediadive.dsmz.de/rest/medium/1021",
+        "response_url": "https://mediadive.dsmz.de/rest/medium/1021",
+        "http_status": 200,
+        "sha256": "d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4",
+        "accessed_at": "2026-10-09T00:17:22.999456+00:00"
+      }
+    },
+    {
+      "key": "DSMZ1021",
+      "matches_inspected_capture": true,
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+        "http_status": 200,
+        "sha256": "1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8",
+        "accessed_at": "2026-10-09T00:17:23.993183+00:00",
+        "pdf_sha256": "6af992ef5048ce852d2c1c88463f1eeedf3441b682522231c93341b3ce1debac",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      }
+    },
+    {
+      "key": "M2287",
+      "matches_inspected_capture": true,
+      "metadata": {
+        "version": 1,
+        "url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2287",
+        "response_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2287",
+        "http_status": 200,
+        "sha256": "092c9df0b4705f01f5861559ae0c405ea07cd55eb428512258ed5847c8dcbd24",
+        "accessed_at": "2026-10-09T00:17:24.686375+00:00"
+      }
+    }
+  ],
+  "error": "RecipeReferenceError: source_access: unexpected HTTP 403 or redirect for https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021"
+}

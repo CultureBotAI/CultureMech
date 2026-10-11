@@ -1,0 +1,201 @@
+{
+  "terminal": true,
+  "phase": "presentation",
+  "records_applied": 0,
+  "checks": [],
+  "code_sha256": {
+    "scripts/repair_rumen_bacteria_family.py": "808bc4c49331d814172109b4cbbabf958c35d71417a068142b849dc8ffb3f40f",
+    "tests/test_rumen_bacteria_family.py": "c0d9d4688da656d281112a0bdb016473dc59146d414c46e08c723ea4795d3271",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/audit.py": "8d886bcd4799b6c216b8aaab16f130f126ab253bbc963fdedc4e37f0b22d1890",
+    "scripts/repair_oteb_family.py": "90aa83324ff1b28708921a00c409f50b4c4bd12eb15f09ae8feb0e1010916795",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/repair_mediadive_stock_concentration_evidence.py": "1badfa99205690cf6082d95db7dafbd6d4927b617027bc61fbaaf9dbd597c974",
+    "scripts/review_medium_concentration_evidence.py": "ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a",
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "src/culturemech/validation/write_validated.py": "8e1e2185231caecbe3dc99908c783cd83340b1e93fa9115ff1445d4b3820897e",
+    "src/culturemech/schema/culturemech.yaml": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a"
+  },
+  "plan_sha256": "5940d6a1b64c0f21408a6bde46512049cb4cbfff12cb80ae9061c5c6edfd3a1f",
+  "context_sha256": "97e6cfa229556a5251518fafb27c7506242afb62cb7be79ff7ff985dfb4e6c49",
+  "inventory_before": "2be09e9249a816360bba52b76c1f3d889e12aae7bfd90d12771f117acb01a0d1",
+  "records": [
+    {
+      "key": "DJ1029",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state",
+        "preparation_steps"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "K330",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_range",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 9
+    },
+    {
+      "key": "M1093",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 14
+    },
+    {
+      "key": "S124",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "S3774",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 6
+    },
+    {
+      "key": "S5080",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 10
+    },
+    {
+      "key": "S606",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 9
+    },
+    {
+      "key": "S607",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "term"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "S608",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "K330_17630",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "K3032",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state",
+        "record_kind"
+      ],
+      "prior_history_spans_preserved": 3
+    },
+    {
+      "key": "D330",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_range",
+        "physical_state",
+        "preparation_steps"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "K3131",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state",
+        "record_kind"
+      ],
+      "prior_history_spans_preserved": 3
+    }
+  ]
+}

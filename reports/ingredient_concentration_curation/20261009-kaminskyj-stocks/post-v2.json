@@ -1,0 +1,104 @@
+{
+  "terminal": true,
+  "phase": "post",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/kaminskyj_minimal_medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-kaminskyj-stocks/post-v2-00.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/kaminskyj_minimal_medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-kaminskyj-stocks/post-v2-01.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate",
+        "data/normalized_yaml/bacterial/kaminskyj_minimal_medium.yaml"
+      ],
+      "returncode": 2,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-kaminskyj-stocks/post-v2-02.log",
+      "log_sha256": "cabd412efead12f9eb08f038bad99e6ab81cb050bd960f0b03cbb4aeeb44836e"
+    },
+    {
+      "command": [
+        "just",
+        "validate-terms",
+        "data/normalized_yaml/bacterial/kaminskyj_minimal_medium.yaml"
+      ],
+      "returncode": 0,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-kaminskyj-stocks/post-v2-03.log",
+      "log_sha256": "6d1e6d9197ee2e4862a8c3e955bf66380f33809345381a786040ec40180d52e0"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/kaminskyj_minimal_medium.yaml"
+      ],
+      "returncode": 2,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-kaminskyj-stocks/post-v2-04.log",
+      "log_sha256": "15dd07fd9ec6b387e0577ae40b8c6f9f98dfaa102b104043097a69f18f1ab342"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "--no-cov",
+        "tests/test_kaminskyj_stocks.py",
+        "tests/test_formulation_merge.py",
+        "tests/test_solution_formulation_evidence.py",
+        "tests/test_followup_report_coverage.py"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-kaminskyj-stocks/post-v2-05.log",
+      "log_sha256": "533be3f6f1fd7b43bda03b73670d062ef832b17d684351c79872fd40f4e75e91"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-kaminskyj-stocks/post-v2-06.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "plan_sha256": "51f1a4f37ad7005cc3cdf531607bdcfae3e3adddd61d9a030631744ef89fd43f",
+  "code_sha256": {
+    "scripts/repair_kaminskyj_stocks.py": "b33eb2996f01df62e6c96f9721e09a15503016fe4d046d28d0d9526933523ac0",
+    "tests/test_kaminskyj_stocks.py": "4397904336cd6bd04af81d30dde385a4de5c8de0533e5afa7f64f76865556c85"
+  },
+  "normalized_count": 15910,
+  "inventory_before_sha256": "19c45017d3210c6bc2c2fde0ec7a2f2c4a4498191af394cb351249b3299f6a05",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "captured_source_snippet_checks": 20,
+  "captured_source_check_scope": "Re-extracted primary HTML, exact normalized text snippets, stock volume contexts, publisher metadata and MIM/local ontology labels; separate from production reference validation.",
+  "passed": true,
+  "inventory_after_sha256": "19c45017d3210c6bc2c2fde0ec7a2f2c4a4498191af394cb351249b3299f6a05",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

@@ -1,0 +1,2103 @@
+{
+  "terminal": true,
+  "records_edited": 0,
+  "all_record_goal_complete": false,
+  "state": "source_projection_only_not_a_guarded_apply_plan",
+  "apply_ready": false,
+  "capture_sha256": "8c802303cf38982bebc07777a71a7d2dab5d4c01d44c0cc1d1c8136d866a39a4",
+  "prior_stock_projection_sha256": "e3f1fe4a90038850621950fa86f6c2eb962c5aa394cb68284c1ad47b34a11acc",
+  "current_records": [
+    {
+      "key": "K323",
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "sha256": "ddf16580d20654367f1df777e76db38e1edb4071d4b0d9dea90b9bc02f612043"
+    },
+    {
+      "key": "S599",
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "sha256": "91cdb9a37c2cd48496c6039cbca7912b140c126ebc1f849c1877e52dfcdb212d"
+    },
+    {
+      "key": "S6552",
+      "path": "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+      "id": "CultureMech:015061",
+      "sha256": "34935a5129af3ca97dc91ffe288acaaf43aeed561e6f8e75f47513b711668a06"
+    },
+    {
+      "key": "D323",
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "sha256": "4a4cd36c2bf3c84cd704ad0aeae7838a4e11859e93db56c19f9474f577b43c67"
+    }
+  ],
+  "remaining_old_quantity_dispositions": [
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        0,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        0,
+        "concentration"
+      ],
+      "ingredient": "CaCl2 x 2 H2O",
+      "old": {
+        "value": "0.11976",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.13",
+        "unit": "G_PER_L"
+      },
+      "status": "correct",
+      "action": "use_exact_KOMODO_reported_rate",
+      "explanation": "Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts",
+          "locator": "Metabolites list heading",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        },
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "CaCl2 x 2 H2O Calcium chloride SEED-cpd00063#cpd00099## 0.13 0.00",
+          "locator": "Metabolites list, compound=CaCl2 x 2 H2O",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        1,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        1,
+        "concentration"
+      ],
+      "ingredient": "MgSO4 x 7 H2O",
+      "old": {
+        "value": "0.189621",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.22",
+        "unit": "G_PER_L"
+      },
+      "status": "correct",
+      "action": "use_exact_KOMODO_reported_rate",
+      "explanation": "Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts",
+          "locator": "Metabolites list heading",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        },
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "MgSO4 x 7 H2O Magnesium sulfate SEED-cpd00048#cpd00254## 0.22 0.00",
+          "locator": "Metabolites list, compound=MgSO4 x 7 H2O",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        2,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        2,
+        "concentration"
+      ],
+      "ingredient": "KH2PO4",
+      "old": {
+        "value": "0.449102",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.51",
+        "unit": "G_PER_L"
+      },
+      "status": "correct",
+      "action": "use_exact_KOMODO_reported_rate",
+      "explanation": "Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts",
+          "locator": "Metabolites list heading",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        },
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "KH2PO4 Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00",
+          "locator": "Metabolites list, compound=KH2PO4",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        3,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        3,
+        "concentration"
+      ],
+      "ingredient": "K2HPO4",
+      "old": {
+        "value": "0.449102",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.51",
+        "unit": "G_PER_L"
+      },
+      "status": "correct",
+      "action": "use_exact_KOMODO_reported_rate",
+      "explanation": "Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts",
+          "locator": "Metabolites list heading",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        },
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "K2HPO4 di Potassium hydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00",
+          "locator": "Metabolites list, compound=K2HPO4",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        4,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        4,
+        "concentration"
+      ],
+      "ingredient": "NaCl",
+      "old": {
+        "value": "0.898204",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "1.02",
+        "unit": "G_PER_L"
+      },
+      "status": "correct",
+      "action": "use_exact_KOMODO_reported_rate",
+      "explanation": "Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts",
+          "locator": "Metabolites list heading",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        },
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "NaCl NaCl SEED-cpd00099#cpd00971## 1.02 0.02",
+          "locator": "Metabolites list, compound=NaCl",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        5,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        5,
+        "concentration"
+      ],
+      "ingredient": "(NH4)2SO4",
+      "old": {
+        "value": "0.898204",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "1.02",
+        "unit": "G_PER_L"
+      },
+      "status": "correct",
+      "action": "use_exact_KOMODO_reported_rate",
+      "explanation": "Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts",
+          "locator": "Metabolites list heading",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        },
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "(NH4)2SO4 Ammonium sulfate SEED-cpd00013#cpd00048## 1.02 0.01",
+          "locator": "Metabolites list, compound=(NH4)2SO4",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        6,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        6,
+        "concentration"
+      ],
+      "ingredient": "Yeast extract",
+      "old": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "2.27",
+        "unit": "G_PER_L"
+      },
+      "status": "correct",
+      "action": "use_exact_KOMODO_reported_rate",
+      "explanation": "Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts",
+          "locator": "Metabolites list heading",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        },
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Yeast extract (Oxoid) Yeast extract rich-peptone# 2.27 null",
+          "locator": "Metabolites list, compound=Yeast extract (Oxoid)",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        7,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        7,
+        "concentration"
+      ],
+      "ingredient": "Trypticase peptone",
+      "old": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "2.27",
+        "unit": "G_PER_L"
+      },
+      "status": "correct",
+      "action": "use_exact_KOMODO_reported_rate",
+      "explanation": "Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts",
+          "locator": "Metabolites list heading",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        },
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Trypticase (BBL) Trypticase rich-peptone# 2.27 null",
+          "locator": "Metabolites list, compound=Trypticase (BBL)",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        8,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        8,
+        "concentration"
+      ],
+      "ingredient": "Sodium resazurin",
+      "old": {
+        "value": "0.000499002",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.00113",
+        "unit": "G_PER_L"
+      },
+      "status": "conflict",
+      "action": "resolve_salt_scope_before_applying",
+      "explanation": "Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. The source says Resazurin, not sodium resazurin. The rate cannot silently be attached to the sodium-salt name; the current base-compound CHEBI link is not newly certified by this comparison.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts",
+          "locator": "Metabolites list heading",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        },
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Resazurin Resazurin SEED-cpd08053### 1.13E-3 4.95E-6",
+          "locator": "Metabolites list, compound=Resazurin",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        9,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        9,
+        "concentration"
+      ],
+      "ingredient": "L-Cysteine HCl x H2O",
+      "old": {
+        "value": "0.998004",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "1.13",
+        "unit": "G_PER_L"
+      },
+      "status": "conflict",
+      "action": "resolve_stereochemical_scope_before_applying",
+      "explanation": "Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. The source names Cysteine-HCl x H2O without L stereochemistry. The 1.13 g/L rate belongs to that source-described material; it does not verify the existing L-specific ontology assertion.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts",
+          "locator": "Metabolites list heading",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        },
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Cysteine-HCl x H2O Cysteine-HCl SEED-cpd00084#cpd00099## 1.13 0.01",
+          "locator": "Metabolites list, compound=Cysteine-HCl x H2O",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        10,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        10,
+        "concentration"
+      ],
+      "ingredient": "Na2CO3",
+      "old": {
+        "value": "2.49501",
+        "unit": "G_PER_L"
+      },
+      "proposed": null,
+      "status": "conflict",
+      "action": "replace_only_after_identity_review",
+      "explanation": "KOMODO lists NaHCO3 at 5.67 g/L, not Na2CO3. These are different chemicals. Withdraw the copied carbonate assertion and propose a separate source-specific bicarbonate node; do not put 5.67 on the old carbonate identity or silently reuse its chemical links.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts",
+          "locator": "Metabolites list heading",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        },
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Medium: TREPONEMA SACCHAROPHILUM medium\nID: 323\nName: TREPONEMA SACCHAROPHILUM medium\nPH Info: 6.7 - 7.0, KOH\nIs Complex: true\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf\nMetabolites list\nCompounds in the medium listed by their compound names. Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts\nName Semi unique name Unique Name Gram Amount Mol Amount\nNaHCO3 sodium bicarbonate SEED-cpd00242#cpd00971#cpd09249# 5.67 0.07\niso-Valeric acid iso-Valeric acid SEED-cpd05178### null null\nDL-2-Methylbutyric acid DL-2-Methylbutyric acid 2-Methylbutyric acid# null null\nH2O H2O SEED-cpd00001### null null\nKOH KOH SEED-cpd00001#cpd00205## null null\nCysteine-HCl x H2O Cysteine-HCl SEED-cpd00084#cpd00099## 1.13 0.01\nYeast extract (Oxoid) Yeast extract rich-peptone# 2.27 null\nCO2 CO2 SEED-cpd00011### null null\nDistilled water H2O SEED-cpd00001### null null\nK2HPO4 di Potassium hydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nKH2PO4 Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nGlucose D-Glucose SEED-cpd00027### 2.27 0.01\niso-Butyric acid iso-Butyric acid SEED-cpd01711### null null\nn-Valeric acid n-Valeric acid SEED-cpd00597### null null\nMgSO4 x 7 H2O Magnesium sulfate SEED-cpd00048#cpd00254## 0.22 0.00\nCaCl2 x 2 H2O Calcium chloride SEED-cpd00063#cpd00099## 0.13 0.00\nn-Butyric acid n-Butyric acid SEED-cpd00211### null null\nResazurin Resazurin SEED-cpd08053### 1.13E-3 4.95E-6\nNaCl NaCl SEED-cpd00099#cpd00971## 1.02 0.02\nTrypticase (BBL) Trypticase rich-peptone# 2.27 null\n(NH4)2SO4 Ammonium sulfate SEED-cpd00013#cpd00048## 1.02 0.01",
+          "locator": "Metabolites list: entire 21-row compound table and identifying header; exclude the SEED aggregate table",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        11,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        11,
+        "concentration"
+      ],
+      "ingredient": "D-Glucose",
+      "old": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "2.27",
+        "unit": "G_PER_L"
+      },
+      "status": "correct",
+      "action": "use_exact_KOMODO_reported_rate",
+      "explanation": "Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts",
+          "locator": "Metabolites list heading",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        },
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Glucose D-Glucose SEED-cpd00027### 2.27 0.01",
+          "locator": "Metabolites list, compound=Glucose",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        12,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        12,
+        "concentration"
+      ],
+      "ingredient": "Agar",
+      "old": {
+        "value": "11.976",
+        "unit": "G_PER_L"
+      },
+      "proposed": null,
+      "status": "conflict",
+      "action": "withdraw_DSMZ_only_agar_assertion",
+      "explanation": "KOMODO's complete table has no agar row. The linked DSMZ instructions describe a different quantified formulation and cannot silently supply this amount. The required SOLID_AGAR classification remains unresolved; neither invent LIQUID nor treat schema validity as evidence. A guarded proposal must disclose this record-level limitation.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts",
+          "locator": "Metabolites list heading",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        },
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Medium: TREPONEMA SACCHAROPHILUM medium\nID: 323\nName: TREPONEMA SACCHAROPHILUM medium\nPH Info: 6.7 - 7.0, KOH\nIs Complex: true\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf\nMetabolites list\nCompounds in the medium listed by their compound names. Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts\nName Semi unique name Unique Name Gram Amount Mol Amount\nNaHCO3 sodium bicarbonate SEED-cpd00242#cpd00971#cpd09249# 5.67 0.07\niso-Valeric acid iso-Valeric acid SEED-cpd05178### null null\nDL-2-Methylbutyric acid DL-2-Methylbutyric acid 2-Methylbutyric acid# null null\nH2O H2O SEED-cpd00001### null null\nKOH KOH SEED-cpd00001#cpd00205## null null\nCysteine-HCl x H2O Cysteine-HCl SEED-cpd00084#cpd00099## 1.13 0.01\nYeast extract (Oxoid) Yeast extract rich-peptone# 2.27 null\nCO2 CO2 SEED-cpd00011### null null\nDistilled water H2O SEED-cpd00001### null null\nK2HPO4 di Potassium hydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nKH2PO4 Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nGlucose D-Glucose SEED-cpd00027### 2.27 0.01\niso-Butyric acid iso-Butyric acid SEED-cpd01711### null null\nn-Valeric acid n-Valeric acid SEED-cpd00597### null null\nMgSO4 x 7 H2O Magnesium sulfate SEED-cpd00048#cpd00254## 0.22 0.00\nCaCl2 x 2 H2O Calcium chloride SEED-cpd00063#cpd00099## 0.13 0.00\nn-Butyric acid n-Butyric acid SEED-cpd00211### null null\nResazurin Resazurin SEED-cpd08053### 1.13E-3 4.95E-6\nNaCl NaCl SEED-cpd00099#cpd00971## 1.02 0.02\nTrypticase (BBL) Trypticase rich-peptone# 2.27 null\n(NH4)2SO4 Ammonium sulfate SEED-cpd00013#cpd00048## 1.02 0.01",
+          "locator": "Metabolites list: entire 21-row compound table and identifying header; exclude the SEED aggregate table",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        13,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        13,
+        "concentration"
+      ],
+      "ingredient": "n-Butyric acid",
+      "old": {
+        "value": "5.8",
+        "unit": "G_PER_L"
+      },
+      "proposed": null,
+      "status": "correct",
+      "action": "withdraw_unsupported_numeric_amount",
+      "explanation": "The exact KOMODO compound row has a null gram amount. The current quantity was copied from a different DSMZ preparation/stock stage. Retain the ingredient identity but withdraw this unsupported numeric assertion; missing is neither zero nor a measured amount. No concentration is supplied by the separate SEED aggregate table.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts",
+          "locator": "Metabolites list heading",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        },
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "n-Butyric acid n-Butyric acid SEED-cpd00211### null null",
+          "locator": "Metabolites list, compound=n-Butyric acid",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        14,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        14,
+        "concentration"
+      ],
+      "ingredient": "iso-Butyric acid",
+      "old": {
+        "value": "275.5",
+        "unit": "G_PER_L"
+      },
+      "proposed": null,
+      "status": "correct",
+      "action": "withdraw_unsupported_numeric_amount",
+      "explanation": "The exact KOMODO compound row has a null gram amount. The current quantity was copied from a different DSMZ preparation/stock stage. Retain the ingredient identity but withdraw this unsupported numeric assertion; missing is neither zero nor a measured amount. No concentration is supplied by the separate SEED aggregate table.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts",
+          "locator": "Metabolites list heading",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        },
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "iso-Butyric acid iso-Butyric acid SEED-cpd01711### null null",
+          "locator": "Metabolites list, compound=iso-Butyric acid",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        15,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        15,
+        "concentration"
+      ],
+      "ingredient": "Tryptone",
+      "old": {
+        "value": "10.0",
+        "unit": "G_PER_L"
+      },
+      "proposed": null,
+      "status": "correct",
+      "action": "remove_unrelated_LB_product_node",
+      "explanation": "The complete exact formulation does not contain this appended LB product. Remove this identified product node and its LB-only notes/catalog context. Preserve the distinct, source-backed yeast-extract, peptone and sodium-chloride entries. Preserve historical events and document the removal on root evidence.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Medium: TREPONEMA SACCHAROPHILUM medium\nID: 323\nName: TREPONEMA SACCHAROPHILUM medium\nPH Info: 6.7 - 7.0, KOH\nIs Complex: true\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf\nMetabolites list\nCompounds in the medium listed by their compound names. Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts\nName Semi unique name Unique Name Gram Amount Mol Amount\nNaHCO3 sodium bicarbonate SEED-cpd00242#cpd00971#cpd09249# 5.67 0.07\niso-Valeric acid iso-Valeric acid SEED-cpd05178### null null\nDL-2-Methylbutyric acid DL-2-Methylbutyric acid 2-Methylbutyric acid# null null\nH2O H2O SEED-cpd00001### null null\nKOH KOH SEED-cpd00001#cpd00205## null null\nCysteine-HCl x H2O Cysteine-HCl SEED-cpd00084#cpd00099## 1.13 0.01\nYeast extract (Oxoid) Yeast extract rich-peptone# 2.27 null\nCO2 CO2 SEED-cpd00011### null null\nDistilled water H2O SEED-cpd00001### null null\nK2HPO4 di Potassium hydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nKH2PO4 Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nGlucose D-Glucose SEED-cpd00027### 2.27 0.01\niso-Butyric acid iso-Butyric acid SEED-cpd01711### null null\nn-Valeric acid n-Valeric acid SEED-cpd00597### null null\nMgSO4 x 7 H2O Magnesium sulfate SEED-cpd00048#cpd00254## 0.22 0.00\nCaCl2 x 2 H2O Calcium chloride SEED-cpd00063#cpd00099## 0.13 0.00\nn-Butyric acid n-Butyric acid SEED-cpd00211### null null\nResazurin Resazurin SEED-cpd08053### 1.13E-3 4.95E-6\nNaCl NaCl SEED-cpd00099#cpd00971## 1.02 0.02\nTrypticase (BBL) Trypticase rich-peptone# 2.27 null\n(NH4)2SO4 Ammonium sulfate SEED-cpd00013#cpd00048## 1.02 0.01",
+          "locator": "Metabolites list: entire 21-row compound table and identifying header; exclude the SEED aggregate table",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        16,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        16,
+        "concentration"
+      ],
+      "ingredient": "Yeast extract",
+      "old": {
+        "value": "5.0",
+        "unit": "G_PER_L"
+      },
+      "proposed": null,
+      "status": "correct",
+      "action": "remove_unrelated_LB_product_node",
+      "explanation": "The complete exact formulation does not contain this appended LB product. Remove this identified product node and its LB-only notes/catalog context. Preserve the distinct, source-backed yeast-extract, peptone and sodium-chloride entries. Preserve historical events and document the removal on root evidence.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Medium: TREPONEMA SACCHAROPHILUM medium\nID: 323\nName: TREPONEMA SACCHAROPHILUM medium\nPH Info: 6.7 - 7.0, KOH\nIs Complex: true\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf\nMetabolites list\nCompounds in the medium listed by their compound names. Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts\nName Semi unique name Unique Name Gram Amount Mol Amount\nNaHCO3 sodium bicarbonate SEED-cpd00242#cpd00971#cpd09249# 5.67 0.07\niso-Valeric acid iso-Valeric acid SEED-cpd05178### null null\nDL-2-Methylbutyric acid DL-2-Methylbutyric acid 2-Methylbutyric acid# null null\nH2O H2O SEED-cpd00001### null null\nKOH KOH SEED-cpd00001#cpd00205## null null\nCysteine-HCl x H2O Cysteine-HCl SEED-cpd00084#cpd00099## 1.13 0.01\nYeast extract (Oxoid) Yeast extract rich-peptone# 2.27 null\nCO2 CO2 SEED-cpd00011### null null\nDistilled water H2O SEED-cpd00001### null null\nK2HPO4 di Potassium hydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nKH2PO4 Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nGlucose D-Glucose SEED-cpd00027### 2.27 0.01\niso-Butyric acid iso-Butyric acid SEED-cpd01711### null null\nn-Valeric acid n-Valeric acid SEED-cpd00597### null null\nMgSO4 x 7 H2O Magnesium sulfate SEED-cpd00048#cpd00254## 0.22 0.00\nCaCl2 x 2 H2O Calcium chloride SEED-cpd00063#cpd00099## 0.13 0.00\nn-Butyric acid n-Butyric acid SEED-cpd00211### null null\nResazurin Resazurin SEED-cpd08053### 1.13E-3 4.95E-6\nNaCl NaCl SEED-cpd00099#cpd00971## 1.02 0.02\nTrypticase (BBL) Trypticase rich-peptone# 2.27 null\n(NH4)2SO4 Ammonium sulfate SEED-cpd00013#cpd00048## 1.02 0.01",
+          "locator": "Metabolites list: entire 21-row compound table and identifying header; exclude the SEED aggregate table",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        17,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        17,
+        "concentration"
+      ],
+      "ingredient": "Sodium chloride",
+      "old": {
+        "value": "10.0",
+        "unit": "G_PER_L"
+      },
+      "proposed": null,
+      "status": "correct",
+      "action": "remove_unrelated_LB_product_node",
+      "explanation": "The complete exact formulation does not contain this appended LB product. Remove this identified product node and its LB-only notes/catalog context. Preserve the distinct, source-backed yeast-extract, peptone and sodium-chloride entries. Preserve historical events and document the removal on root evidence.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Medium: TREPONEMA SACCHAROPHILUM medium\nID: 323\nName: TREPONEMA SACCHAROPHILUM medium\nPH Info: 6.7 - 7.0, KOH\nIs Complex: true\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf\nMetabolites list\nCompounds in the medium listed by their compound names. Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts\nName Semi unique name Unique Name Gram Amount Mol Amount\nNaHCO3 sodium bicarbonate SEED-cpd00242#cpd00971#cpd09249# 5.67 0.07\niso-Valeric acid iso-Valeric acid SEED-cpd05178### null null\nDL-2-Methylbutyric acid DL-2-Methylbutyric acid 2-Methylbutyric acid# null null\nH2O H2O SEED-cpd00001### null null\nKOH KOH SEED-cpd00001#cpd00205## null null\nCysteine-HCl x H2O Cysteine-HCl SEED-cpd00084#cpd00099## 1.13 0.01\nYeast extract (Oxoid) Yeast extract rich-peptone# 2.27 null\nCO2 CO2 SEED-cpd00011### null null\nDistilled water H2O SEED-cpd00001### null null\nK2HPO4 di Potassium hydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nKH2PO4 Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nGlucose D-Glucose SEED-cpd00027### 2.27 0.01\niso-Butyric acid iso-Butyric acid SEED-cpd01711### null null\nn-Valeric acid n-Valeric acid SEED-cpd00597### null null\nMgSO4 x 7 H2O Magnesium sulfate SEED-cpd00048#cpd00254## 0.22 0.00\nCaCl2 x 2 H2O Calcium chloride SEED-cpd00063#cpd00099## 0.13 0.00\nn-Butyric acid n-Butyric acid SEED-cpd00211### null null\nResazurin Resazurin SEED-cpd08053### 1.13E-3 4.95E-6\nNaCl NaCl SEED-cpd00099#cpd00971## 1.02 0.02\nTrypticase (BBL) Trypticase rich-peptone# 2.27 null\n(NH4)2SO4 Ammonium sulfate SEED-cpd00013#cpd00048## 1.02 0.01",
+          "locator": "Metabolites list: entire 21-row compound table and identifying header; exclude the SEED aggregate table",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        18,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        18,
+        "concentration"
+      ],
+      "ingredient": "n-Valeric acid",
+      "old": {
+        "value": "131.46",
+        "unit": "G_PER_L"
+      },
+      "proposed": null,
+      "status": "correct",
+      "action": "withdraw_unsupported_numeric_amount",
+      "explanation": "The exact KOMODO compound row has a null gram amount. The current quantity was copied from a different DSMZ preparation/stock stage. Retain the ingredient identity but withdraw this unsupported numeric assertion; missing is neither zero nor a measured amount. No concentration is supplied by the separate SEED aggregate table.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts",
+          "locator": "Metabolites list heading",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        },
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "n-Valeric acid n-Valeric acid SEED-cpd00597### null null",
+          "locator": "Metabolites list, compound=n-Valeric acid",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        19,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        19,
+        "concentration"
+      ],
+      "ingredient": "iso-Valeric acid",
+      "old": {
+        "value": "130.34",
+        "unit": "G_PER_L"
+      },
+      "proposed": null,
+      "status": "correct",
+      "action": "withdraw_unsupported_numeric_amount",
+      "explanation": "The exact KOMODO compound row has a null gram amount. The current quantity was copied from a different DSMZ preparation/stock stage. Retain the ingredient identity but withdraw this unsupported numeric assertion; missing is neither zero nor a measured amount. No concentration is supplied by the separate SEED aggregate table.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts",
+          "locator": "Metabolites list heading",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        },
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "iso-Valeric acid iso-Valeric acid SEED-cpd05178### null null",
+          "locator": "Metabolites list, compound=iso-Valeric acid",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "key": "K323",
+      "old_pointer": [
+        "ingredients",
+        20,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        20,
+        "concentration"
+      ],
+      "ingredient": "KOH",
+      "old": {
+        "value": "variable",
+        "unit": "VARIABLE"
+      },
+      "proposed": {
+        "value": "variable",
+        "unit": "VARIABLE"
+      },
+      "status": "not_quantified",
+      "action": "retain_with_evidence",
+      "explanation": "KOH is the stated pH reagent for 6.7-7.0, without a fixed quantity. Keep variable pH adjustment; do not infer zero or copy another recipe's amount.",
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts",
+          "locator": "Metabolites list heading",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        },
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "KOH KOH SEED-cpd00001#cpd00205## null null",
+          "locator": "Metabolites list, compound=KOH",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        },
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "PH Info: 6.7 - 7.0, KOH",
+          "locator": "medium feature table",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "key": "S599",
+      "old_pointer": [
+        "ingredients",
+        0,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        0,
+        "concentration"
+      ],
+      "ingredient": "See source for composition",
+      "old": {
+        "value": "variable",
+        "unit": "VARIABLE"
+      },
+      "proposed": null,
+      "status": "correct",
+      "action": "remove_import_placeholder",
+      "explanation": "The exact source supplies a concrete composition. Remove this importer-created placeholder, not any source ingredient. For S599 the missing solution6552 addition must also be restored before removing the incomplete-composition flag. Root formulation evidence and independent full-node accounting are required.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/599",
+          "snippet": "[\n            {\n                \"recipe_order\": 1,\n                \"compound\": \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.12,\n                \"unit\": \"g\",\n                \"g_l\": 0.11976,\n                \"mmol_l\": 0.814614,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\": \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.19,\n                \"unit\": \"g\",\n                \"g_l\": 0.189621,\n                \"mmol_l\": 0.769327,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\": 11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.45,\n                \"unit\": \"g\",\n                \"g_l\": 0.449102,\n                \"mmol_l\": 3.30016,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\": \"K2HPO4\",\n                \"compound_id\": 10,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.45,\n                \"unit\": \"g\",\n                \"g_l\": 0.449102,\n                \"mmol_l\": 2.57844,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\": \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.9,\n                \"unit\": \"g\",\n                \"g_l\": 0.898204,\n                \"mmol_l\": 15.3697,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\": \"(NH4)2SO4\",\n                \"compound_id\": 27,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.9,\n                \"unit\": \"g\",\n                \"g_l\": 0.898204,\n                \"mmol_l\": 6.79736,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\": \"Yeast extract\",\n                \"compound_id\": 16,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"OXOID\",\n                \"amount\": 2,\n                \"unit\": \"g\",\n                \"g_l\": 1.99601,\n                \"mmol_l\": null,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 8,\n                \"compound\": \"Trypticase peptone\",\n                \"compound_id\": 124,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"BD BBL\",\n                \"amount\": 2,\n                \"unit\": \"g\",\n                \"g_l\": 1.99601,\n                \"mmol_l\": null,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 14,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Fatty acid mixture\",\n                \"solution_id\": 6552,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.4,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 15,\n                \"compound\": \"Sodium resazurin\",\n                \"compound_id\": 1852,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"0.1% w/v\",\n                \"amount\": 0.5,\n                \"unit\": \"ml\",\n                \"g_l\": 0.000499002,\n                \"mmol_l\": 0.00198671,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 16,\n                \"compound\": \"L-Cysteine HCl x H2O\",\n                \"compound_id\": 770,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": 0.998004,\n                \"mmol_l\": 5.68223,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 17,\n                \"compound\": \"Na2CO3\",\n                \"compound_id\": 32,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2.5,\n                \"unit\": \"g\",\n                \"g_l\": 2.49501,\n                \"mmol_l\": 23.5405,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 18,\n                \"compound\": \"D-Glucose\",\n                \"compound_id\": 211,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\": \"g\",\n                \"g_l\": 1.99601,\n                \"mmol_l\": 11.0791,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 19,\n                \"compound\": \"Agar\",\n                \"compound_id\": 3,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": \"for solid medium\",\n                \"attribute\": \"BD Bacto\",\n                \"amount\": 12,\n                \"unit\": \"g\",\n                \"g_l\": 11.976,\n                \"mmol_l\": null,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 20,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }\n        ]",
+          "locator": [
+            "data",
+            "recipe"
+          ],
+          "source_sha256": "4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+      "id": "CultureMech:015061",
+      "key": "S6552",
+      "old_pointer": [
+        "ingredients",
+        0,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        0,
+        "concentration"
+      ],
+      "ingredient": "See source for composition",
+      "old": {
+        "value": "variable",
+        "unit": "VARIABLE"
+      },
+      "proposed": null,
+      "status": "correct",
+      "action": "remove_import_placeholder",
+      "explanation": "The exact source supplies a concrete composition. Remove this importer-created placeholder, not any source ingredient. For S599 the missing solution6552 addition must also be restored before removing the incomplete-composition flag. Root formulation evidence and independent full-node accounting are required.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/6552",
+          "snippet": "[\n            {\n                \"recipe_order\": 2,\n                \"compound\": \"n-Butyric acid\",\n                \"compound_id\": 376,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5.8,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\": \"iso-Butyric acid\",\n                \"compound_id\": 377,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5.8,\n                \"unit\": \"ml\",\n                \"g_l\": 275.5,\n                \"mmol_l\": 3126.77,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\": \"DL-2-Methylbutyric acid\",\n                \"compound_id\": 223,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2.8,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\": \"n-Valeric acid\",\n                \"compound_id\": 288,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2.8,\n                \"unit\": \"ml\",\n                \"g_l\": 131.46,\n                \"mmol_l\": 1287.18,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\": \"iso-Valeric acid\",\n                \"compound_id\": 378,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2.8,\n                \"unit\": \"ml\",\n                \"g_l\": 130.34,\n                \"mmol_l\": 1276.22,\n                \"optional\": 0\n            }\n        ]",
+          "locator": [
+            "data",
+            "recipe"
+          ],
+          "source_sha256": "16e43ae978af63fcb268a259960d5ddf66fc9643929ee8ccf33952b0a6c0392e"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        0,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        0,
+        "concentration"
+      ],
+      "ingredient": "CaCl2 x 2 H2O",
+      "old": {
+        "value": "0.11976",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.11976",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only",
+      "action": "retain_with_evidence",
+      "explanation": "Retain the exact provider-reported concentration in the matching main formulation, with its explicit source amount and 1002 ml volume basis. Existing chemical mappings are preserved, not independently recertified.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.12,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.11976,\n                        \"mmol_l\": 0.814614,\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            0
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        1,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        1,
+        "concentration"
+      ],
+      "ingredient": "MgSO4 x 7 H2O",
+      "old": {
+        "value": "0.189621",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.189621",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only",
+      "action": "retain_with_evidence",
+      "explanation": "Retain the exact provider-reported concentration in the matching main formulation, with its explicit source amount and 1002 ml volume basis. Existing chemical mappings are preserved, not independently recertified.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.19,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.189621,\n                        \"mmol_l\": 0.769327,\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            1
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        2,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        2,
+        "concentration"
+      ],
+      "ingredient": "KH2PO4",
+      "old": {
+        "value": "0.449102",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.449102",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only",
+      "action": "retain_with_evidence",
+      "explanation": "Retain the exact provider-reported concentration in the matching main formulation, with its explicit source amount and 1002 ml volume basis. Existing chemical mappings are preserved, not independently recertified.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.45,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.449102,\n                        \"mmol_l\": 3.30016,\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            2
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        3,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        3,
+        "concentration"
+      ],
+      "ingredient": "K2HPO4",
+      "old": {
+        "value": "0.449102",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.449102",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only",
+      "action": "retain_with_evidence",
+      "explanation": "Retain the exact provider-reported concentration in the matching main formulation, with its explicit source amount and 1002 ml volume basis. Existing chemical mappings are preserved, not independently recertified.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.45,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.449102,\n                        \"mmol_l\": 2.57844,\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            3
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        4,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        4,
+        "concentration"
+      ],
+      "ingredient": "NaCl",
+      "old": {
+        "value": "0.898204",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.898204",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only",
+      "action": "retain_with_evidence",
+      "explanation": "Retain the exact provider-reported concentration in the matching main formulation, with its explicit source amount and 1002 ml volume basis. Existing chemical mappings are preserved, not independently recertified.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 0.9,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.898204,\n                        \"mmol_l\": 15.3697,\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            4
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        5,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        5,
+        "concentration"
+      ],
+      "ingredient": "(NH4)2SO4",
+      "old": {
+        "value": "0.898204",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.898204",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only",
+      "action": "retain_with_evidence",
+      "explanation": "Retain the exact provider-reported concentration in the matching main formulation, with its explicit source amount and 1002 ml volume basis. Existing chemical mappings are preserved, not independently recertified.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.9,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.898204,\n                        \"mmol_l\": 6.79736,\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            5
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        6,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        6,
+        "concentration"
+      ],
+      "ingredient": "Yeast extract",
+      "old": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only",
+      "action": "retain_with_evidence",
+      "explanation": "Retain the exact provider-reported concentration in the matching main formulation, with its explicit source amount and 1002 ml volume basis. Existing chemical mappings are preserved, not independently recertified.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"OXOID\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99601,\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            6
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        7,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        7,
+        "concentration"
+      ],
+      "ingredient": "Trypticase peptone",
+      "old": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only",
+      "action": "retain_with_evidence",
+      "explanation": "Retain the exact provider-reported concentration in the matching main formulation, with its explicit source amount and 1002 ml volume basis. Existing chemical mappings are preserved, not independently recertified.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Trypticase peptone\",\n                        \"compound_id\": 124,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99601,\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            7
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        8,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        8,
+        "concentration"
+      ],
+      "ingredient": "Sodium resazurin",
+      "old": {
+        "value": "0.000499002",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.000499002",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only",
+      "action": "retain_with_evidence",
+      "explanation": "Retain the exact provider-reported concentration in the matching main formulation, with its explicit source amount and 1002 ml volume basis. Existing chemical mappings are preserved, not independently recertified. The original's 0.1% w/v reagent is 1 g/L: 1 g/L * 0.0005 L / 1.002 L = 0.000499001996 g/L, consistent with the existing rounded value. Do not double-count an extra reagent dose.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000499002,\n                        \"mmol_l\": 0.00198671,\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            9
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        },
+        {
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf",
+          "snippet": "Sodium resazurin (0.1% w/v)                                        0.50        ml",
+          "locator": "page 1, main table",
+          "source_sha256": "cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca"
+        },
+        {
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf",
+          "snippet": "Final volume: 1002 ml",
+          "locator": "page 1, final-volume heading",
+          "source_sha256": "cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        9,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        9,
+        "concentration"
+      ],
+      "ingredient": "L-Cysteine HCl x H2O",
+      "old": {
+        "value": "0.998004",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.998004",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only",
+      "action": "retain_with_evidence",
+      "explanation": "Retain the exact provider-reported concentration in the matching main formulation, with its explicit source amount and 1002 ml volume basis. Existing chemical mappings are preserved, not independently recertified.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 16,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.998004,\n                        \"mmol_l\": 5.68223,\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            10
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        10,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        10,
+        "concentration"
+      ],
+      "ingredient": "Na2CO3",
+      "old": {
+        "value": "2.49501",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "2.49501",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only",
+      "action": "retain_with_evidence",
+      "explanation": "Retain the exact provider-reported concentration in the matching main formulation, with its explicit source amount and 1002 ml volume basis. Existing chemical mappings are preserved, not independently recertified.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 17,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.49501,\n                        \"mmol_l\": 23.5405,\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            11
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        11,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        11,
+        "concentration"
+      ],
+      "ingredient": "D-Glucose",
+      "old": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only",
+      "action": "retain_with_evidence",
+      "explanation": "Retain the exact provider-reported concentration in the matching main formulation, with its explicit source amount and 1002 ml volume basis. Existing chemical mappings are preserved, not independently recertified.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 18,\n                        \"compound\": \"D-Glucose\",\n                        \"compound_id\": 211,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99601,\n                        \"mmol_l\": 11.0791,\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            12
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        12,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        12,
+        "concentration"
+      ],
+      "ingredient": "Agar",
+      "old": {
+        "value": "11.976",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "11.976",
+        "unit": "G_PER_L"
+      },
+      "status": "conflict",
+      "action": "retain_qualified_conditional_table_rate",
+      "explanation": "Retain the exact provider-reported concentration in the matching main formulation, with its explicit source amount and 1002 ml volume basis. Existing chemical mappings are preserved, not independently recertified. Retain the existing solid selection and conditional table-derived 11.976 g/L with the separate procedure's 12.00 g/L discrepancy disclosed. Do not average these bases or change the recipe to liquid.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 19,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"condition\": \"for solid medium\",\n                        \"attribute\": \"BD Bacto\",\n                        \"amount\": 12,\n                        \"unit\": \"g\",\n                        \"g_l\": 11.976,\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            13
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        },
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"step\": \"For solid medium add 12.00 g/l agar (BD Bacto).\"\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            1
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        13,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "solutions",
+        0,
+        "composition",
+        0,
+        "concentration"
+      ],
+      "ingredient": "n-Butyric acid",
+      "old": {
+        "value": "5.8",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.0058",
+        "unit": "L"
+      },
+      "status": "correct",
+      "action": "move_to_fatty_acid_stock_stage",
+      "explanation": "The source gives a stock input in ml, not g/L. Convert the exact batch input to liters and move it into solution6552 composition. Do not invent a final fraction, liquid density or receiving-medium rate.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"n-Butyric acid\",\n                        \"compound_id\": 376,\n                        \"amount\": 5.8,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            0
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        },
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 14,\n                        \"solution\": \"Fatty acid mixture\",\n                        \"solution_id\": 6552,\n                        \"amount\": 1.4,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            8
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        14,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "solutions",
+        0,
+        "composition",
+        1,
+        "concentration"
+      ],
+      "ingredient": "iso-Butyric acid",
+      "old": {
+        "value": "275.5",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "275.5",
+        "unit": "G_PER_L"
+      },
+      "status": "correct",
+      "action": "move_to_fatty_acid_stock_stage",
+      "explanation": "This provider-reported g/L value belongs inside solution6552, not the receiving medium. Move the exact ingredient and its existing chemical links into the stock composition, retaining the source-qualified rate. No density is inferred.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"iso-Butyric acid\",\n                        \"compound_id\": 377,\n                        \"amount\": 5.8,\n                        \"unit\": \"ml\",\n                        \"g_l\": 275.5,\n                        \"mmol_l\": 3126.77,\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            1
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        },
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 14,\n                        \"solution\": \"Fatty acid mixture\",\n                        \"solution_id\": 6552,\n                        \"amount\": 1.4,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            8
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        15,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        15,
+        "concentration"
+      ],
+      "ingredient": "Tryptone",
+      "old": {
+        "value": "10.0",
+        "unit": "G_PER_L"
+      },
+      "proposed": null,
+      "status": "correct",
+      "action": "remove_unrelated_LB_product_node",
+      "explanation": "The complete exact formulation does not contain this appended LB product. Remove this identified product node and its LB-only notes/catalog context. Preserve the distinct, source-backed yeast-extract, peptone and sodium-chloride entries. Preserve historical events and document the removal on root evidence.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "[\n            {\n                \"id\": 599,\n                \"name\": \"Main sol. 323\",\n                \"volume\": 1002,\n                \"recipe\": [\n                    {\n                        \"recipe_order\": 1,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.12,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.11976,\n                        \"mmol_l\": 0.814614,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.19,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.189621,\n                        \"mmol_l\": 0.769327,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 3,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.45,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.449102,\n                        \"mmol_l\": 3.30016,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 4,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.45,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.449102,\n                        \"mmol_l\": 2.57844,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 5,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 0.9,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.898204,\n                        \"mmol_l\": 15.3697,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 6,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.9,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.898204,\n                        \"mmol_l\": 6.79736,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 7,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"OXOID\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99601,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 8,\n                        \"compound\": \"Trypticase peptone\",\n                        \"compound_id\": 124,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99601,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 14,\n                        \"solution\": \"Fatty acid mixture\",\n                        \"solution_id\": 6552,\n                        \"amount\": 1.4,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 15,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000499002,\n                        \"mmol_l\": 0.00198671,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 16,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.998004,\n                        \"mmol_l\": 5.68223,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 17,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.49501,\n                        \"mmol_l\": 23.5405,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 18,\n                        \"compound\": \"D-Glucose\",\n                        \"compound_id\": 211,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99601,\n                        \"mmol_l\": 11.0791,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 19,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"condition\": \"for solid medium\",\n                        \"attribute\": \"BD Bacto\",\n                        \"amount\": 12,\n                        \"unit\": \"g\",\n                        \"g_l\": 11.976,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 20,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }\n                ],\n                \"steps\": [\n                    {\n                        \"step\": \"Dissolve ingredients (except cysteine, carbonate and glucose), adjust pH to 7.0 and sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the cysteine and carbonate, then equilibrate the medium with the CO2 gas to pH 7.0. Distribute medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Thereafter, add glucose from an anoxic stock solution prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust pH of complete medium to 7.0, if necessary.\"\n                    },\n                    {\n                        \"step\": \"For solid medium add 12.00 g/l agar (BD Bacto).\"\n                    }\n                ],\n                \"equipment\": {\n                    \"8\": \"Autoclave\",\n                    \"830\": \"Hungate tubes\",\n                    \"1886\": \"Filter\",\n                    \"4270\": \"Gassing station\"\n                }\n            },\n            {\n                \"id\": 6552,\n                \"name\": \"Fatty acid mixture\",\n                \"volume\": 20,\n                \"recipe\": [\n                    {\n                        \"recipe_order\": 2,\n                        \"compound\": \"n-Butyric acid\",\n                        \"compound_id\": 376,\n                        \"amount\": 5.8,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 3,\n                        \"compound\": \"iso-Butyric acid\",\n                        \"compound_id\": 377,\n                        \"amount\": 5.8,\n                        \"unit\": \"ml\",\n                        \"g_l\": 275.5,\n                        \"mmol_l\": 3126.77,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 4,\n                        \"compound\": \"DL-2-Methylbutyric acid\",\n                        \"compound_id\": 223,\n                        \"amount\": 2.8,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 5,\n                        \"compound\": \"n-Valeric acid\",\n                        \"compound_id\": 288,\n                        \"amount\": 2.8,\n                        \"unit\": \"ml\",\n                        \"g_l\": 131.46,\n                        \"mmol_l\": 1287.18,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 6,\n                        \"compound\": \"iso-Valeric acid\",\n                        \"compound_id\": 378,\n                        \"amount\": 2.8,\n                        \"unit\": \"ml\",\n                        \"g_l\": 130.34,\n                        \"mmol_l\": 1276.22,\n                        \"optional\": 0\n                    }\n                ],\n                \"steps\": [\n                    {\n                        \"step\": \"Store fatty acid mixture at -20\\u00b0C.\"\n                    }\n                ]\n            }\n        ]",
+          "locator": [
+            "data",
+            "solutions"
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        16,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        16,
+        "concentration"
+      ],
+      "ingredient": "Yeast extract",
+      "old": {
+        "value": "5.0",
+        "unit": "G_PER_L"
+      },
+      "proposed": null,
+      "status": "correct",
+      "action": "remove_unrelated_LB_product_node",
+      "explanation": "The complete exact formulation does not contain this appended LB product. Remove this identified product node and its LB-only notes/catalog context. Preserve the distinct, source-backed yeast-extract, peptone and sodium-chloride entries. Preserve historical events and document the removal on root evidence.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "[\n            {\n                \"id\": 599,\n                \"name\": \"Main sol. 323\",\n                \"volume\": 1002,\n                \"recipe\": [\n                    {\n                        \"recipe_order\": 1,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.12,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.11976,\n                        \"mmol_l\": 0.814614,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.19,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.189621,\n                        \"mmol_l\": 0.769327,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 3,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.45,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.449102,\n                        \"mmol_l\": 3.30016,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 4,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.45,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.449102,\n                        \"mmol_l\": 2.57844,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 5,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 0.9,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.898204,\n                        \"mmol_l\": 15.3697,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 6,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.9,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.898204,\n                        \"mmol_l\": 6.79736,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 7,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"OXOID\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99601,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 8,\n                        \"compound\": \"Trypticase peptone\",\n                        \"compound_id\": 124,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99601,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 14,\n                        \"solution\": \"Fatty acid mixture\",\n                        \"solution_id\": 6552,\n                        \"amount\": 1.4,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 15,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000499002,\n                        \"mmol_l\": 0.00198671,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 16,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.998004,\n                        \"mmol_l\": 5.68223,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 17,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.49501,\n                        \"mmol_l\": 23.5405,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 18,\n                        \"compound\": \"D-Glucose\",\n                        \"compound_id\": 211,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99601,\n                        \"mmol_l\": 11.0791,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 19,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"condition\": \"for solid medium\",\n                        \"attribute\": \"BD Bacto\",\n                        \"amount\": 12,\n                        \"unit\": \"g\",\n                        \"g_l\": 11.976,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 20,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }\n                ],\n                \"steps\": [\n                    {\n                        \"step\": \"Dissolve ingredients (except cysteine, carbonate and glucose), adjust pH to 7.0 and sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the cysteine and carbonate, then equilibrate the medium with the CO2 gas to pH 7.0. Distribute medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Thereafter, add glucose from an anoxic stock solution prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust pH of complete medium to 7.0, if necessary.\"\n                    },\n                    {\n                        \"step\": \"For solid medium add 12.00 g/l agar (BD Bacto).\"\n                    }\n                ],\n                \"equipment\": {\n                    \"8\": \"Autoclave\",\n                    \"830\": \"Hungate tubes\",\n                    \"1886\": \"Filter\",\n                    \"4270\": \"Gassing station\"\n                }\n            },\n            {\n                \"id\": 6552,\n                \"name\": \"Fatty acid mixture\",\n                \"volume\": 20,\n                \"recipe\": [\n                    {\n                        \"recipe_order\": 2,\n                        \"compound\": \"n-Butyric acid\",\n                        \"compound_id\": 376,\n                        \"amount\": 5.8,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 3,\n                        \"compound\": \"iso-Butyric acid\",\n                        \"compound_id\": 377,\n                        \"amount\": 5.8,\n                        \"unit\": \"ml\",\n                        \"g_l\": 275.5,\n                        \"mmol_l\": 3126.77,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 4,\n                        \"compound\": \"DL-2-Methylbutyric acid\",\n                        \"compound_id\": 223,\n                        \"amount\": 2.8,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 5,\n                        \"compound\": \"n-Valeric acid\",\n                        \"compound_id\": 288,\n                        \"amount\": 2.8,\n                        \"unit\": \"ml\",\n                        \"g_l\": 131.46,\n                        \"mmol_l\": 1287.18,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 6,\n                        \"compound\": \"iso-Valeric acid\",\n                        \"compound_id\": 378,\n                        \"amount\": 2.8,\n                        \"unit\": \"ml\",\n                        \"g_l\": 130.34,\n                        \"mmol_l\": 1276.22,\n                        \"optional\": 0\n                    }\n                ],\n                \"steps\": [\n                    {\n                        \"step\": \"Store fatty acid mixture at -20\\u00b0C.\"\n                    }\n                ]\n            }\n        ]",
+          "locator": [
+            "data",
+            "solutions"
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        17,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "ingredients",
+        17,
+        "concentration"
+      ],
+      "ingredient": "Sodium chloride",
+      "old": {
+        "value": "10.0",
+        "unit": "G_PER_L"
+      },
+      "proposed": null,
+      "status": "correct",
+      "action": "remove_unrelated_LB_product_node",
+      "explanation": "The complete exact formulation does not contain this appended LB product. Remove this identified product node and its LB-only notes/catalog context. Preserve the distinct, source-backed yeast-extract, peptone and sodium-chloride entries. Preserve historical events and document the removal on root evidence.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "[\n            {\n                \"id\": 599,\n                \"name\": \"Main sol. 323\",\n                \"volume\": 1002,\n                \"recipe\": [\n                    {\n                        \"recipe_order\": 1,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.12,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.11976,\n                        \"mmol_l\": 0.814614,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.19,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.189621,\n                        \"mmol_l\": 0.769327,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 3,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.45,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.449102,\n                        \"mmol_l\": 3.30016,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 4,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.45,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.449102,\n                        \"mmol_l\": 2.57844,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 5,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 0.9,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.898204,\n                        \"mmol_l\": 15.3697,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 6,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.9,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.898204,\n                        \"mmol_l\": 6.79736,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 7,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"OXOID\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99601,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 8,\n                        \"compound\": \"Trypticase peptone\",\n                        \"compound_id\": 124,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99601,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 14,\n                        \"solution\": \"Fatty acid mixture\",\n                        \"solution_id\": 6552,\n                        \"amount\": 1.4,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 15,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000499002,\n                        \"mmol_l\": 0.00198671,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 16,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.998004,\n                        \"mmol_l\": 5.68223,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 17,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.49501,\n                        \"mmol_l\": 23.5405,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 18,\n                        \"compound\": \"D-Glucose\",\n                        \"compound_id\": 211,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99601,\n                        \"mmol_l\": 11.0791,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 19,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"condition\": \"for solid medium\",\n                        \"attribute\": \"BD Bacto\",\n                        \"amount\": 12,\n                        \"unit\": \"g\",\n                        \"g_l\": 11.976,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 20,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }\n                ],\n                \"steps\": [\n                    {\n                        \"step\": \"Dissolve ingredients (except cysteine, carbonate and glucose), adjust pH to 7.0 and sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the cysteine and carbonate, then equilibrate the medium with the CO2 gas to pH 7.0. Distribute medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Thereafter, add glucose from an anoxic stock solution prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust pH of complete medium to 7.0, if necessary.\"\n                    },\n                    {\n                        \"step\": \"For solid medium add 12.00 g/l agar (BD Bacto).\"\n                    }\n                ],\n                \"equipment\": {\n                    \"8\": \"Autoclave\",\n                    \"830\": \"Hungate tubes\",\n                    \"1886\": \"Filter\",\n                    \"4270\": \"Gassing station\"\n                }\n            },\n            {\n                \"id\": 6552,\n                \"name\": \"Fatty acid mixture\",\n                \"volume\": 20,\n                \"recipe\": [\n                    {\n                        \"recipe_order\": 2,\n                        \"compound\": \"n-Butyric acid\",\n                        \"compound_id\": 376,\n                        \"amount\": 5.8,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 3,\n                        \"compound\": \"iso-Butyric acid\",\n                        \"compound_id\": 377,\n                        \"amount\": 5.8,\n                        \"unit\": \"ml\",\n                        \"g_l\": 275.5,\n                        \"mmol_l\": 3126.77,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 4,\n                        \"compound\": \"DL-2-Methylbutyric acid\",\n                        \"compound_id\": 223,\n                        \"amount\": 2.8,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 5,\n                        \"compound\": \"n-Valeric acid\",\n                        \"compound_id\": 288,\n                        \"amount\": 2.8,\n                        \"unit\": \"ml\",\n                        \"g_l\": 131.46,\n                        \"mmol_l\": 1287.18,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 6,\n                        \"compound\": \"iso-Valeric acid\",\n                        \"compound_id\": 378,\n                        \"amount\": 2.8,\n                        \"unit\": \"ml\",\n                        \"g_l\": 130.34,\n                        \"mmol_l\": 1276.22,\n                        \"optional\": 0\n                    }\n                ],\n                \"steps\": [\n                    {\n                        \"step\": \"Store fatty acid mixture at -20\\u00b0C.\"\n                    }\n                ]\n            }\n        ]",
+          "locator": [
+            "data",
+            "solutions"
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        18,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "solutions",
+        0,
+        "composition",
+        3,
+        "concentration"
+      ],
+      "ingredient": "n-Valeric acid",
+      "old": {
+        "value": "131.46",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "131.46",
+        "unit": "G_PER_L"
+      },
+      "status": "correct",
+      "action": "move_to_fatty_acid_stock_stage",
+      "explanation": "This provider-reported g/L value belongs inside solution6552, not the receiving medium. Move the exact ingredient and its existing chemical links into the stock composition, retaining the source-qualified rate. No density is inferred.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"n-Valeric acid\",\n                        \"compound_id\": 288,\n                        \"amount\": 2.8,\n                        \"unit\": \"ml\",\n                        \"g_l\": 131.46,\n                        \"mmol_l\": 1287.18,\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            3
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        },
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 14,\n                        \"solution\": \"Fatty acid mixture\",\n                        \"solution_id\": 6552,\n                        \"amount\": 1.4,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            8
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "applied": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "key": "D323",
+      "old_pointer": [
+        "ingredients",
+        19,
+        "concentration"
+      ],
+      "proposed_pointer": [
+        "solutions",
+        0,
+        "composition",
+        4,
+        "concentration"
+      ],
+      "ingredient": "iso-Valeric acid",
+      "old": {
+        "value": "130.34",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "130.34",
+        "unit": "G_PER_L"
+      },
+      "status": "correct",
+      "action": "move_to_fatty_acid_stock_stage",
+      "explanation": "This provider-reported g/L value belongs inside solution6552, not the receiving medium. Move the exact ingredient and its existing chemical links into the stock composition, retaining the source-qualified rate. No density is inferred.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"iso-Valeric acid\",\n                        \"compound_id\": 378,\n                        \"amount\": 2.8,\n                        \"unit\": \"ml\",\n                        \"g_l\": 130.34,\n                        \"mmol_l\": 1276.22,\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            4
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        },
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 14,\n                        \"solution\": \"Fatty acid mixture\",\n                        \"solution_id\": 6552,\n                        \"amount\": 1.4,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            8
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "applied": false
+    }
+  ],
+  "additional_formulation_requirements": [
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "kind": "full_source_node_inventory",
+      "rows": [
+        [
+          "NaHCO3",
+          "sodium bicarbonate",
+          "SEED-cpd00242#cpd00971#cpd09249#",
+          "5.67",
+          "0.07"
+        ],
+        [
+          "iso-Valeric acid",
+          "iso-Valeric acid",
+          "SEED-cpd05178###",
+          "null",
+          "null"
+        ],
+        [
+          "DL-2-Methylbutyric acid",
+          "DL-2-Methylbutyric acid",
+          "2-Methylbutyric acid#",
+          "null",
+          "null"
+        ],
+        [
+          "H2O",
+          "H2O",
+          "SEED-cpd00001###",
+          "null",
+          "null"
+        ],
+        [
+          "KOH",
+          "KOH",
+          "SEED-cpd00001#cpd00205##",
+          "null",
+          "null"
+        ],
+        [
+          "Cysteine-HCl x H2O",
+          "Cysteine-HCl",
+          "SEED-cpd00084#cpd00099##",
+          "1.13",
+          "0.01"
+        ],
+        [
+          "Yeast extract (Oxoid)",
+          "Yeast extract",
+          "rich-peptone#",
+          "2.27",
+          "null"
+        ],
+        [
+          "CO2",
+          "CO2",
+          "SEED-cpd00011###",
+          "null",
+          "null"
+        ],
+        [
+          "Distilled water",
+          "H2O",
+          "SEED-cpd00001###",
+          "null",
+          "null"
+        ],
+        [
+          "K2HPO4",
+          "di Potassium hydrogen phosphate",
+          "SEED-cpd00009#cpd00205##",
+          "0.51",
+          "0.00"
+        ],
+        [
+          "KH2PO4",
+          "Potassium dihydrogen phosphate",
+          "SEED-cpd00009#cpd00205##",
+          "0.51",
+          "0.00"
+        ],
+        [
+          "Glucose",
+          "D-Glucose",
+          "SEED-cpd00027###",
+          "2.27",
+          "0.01"
+        ],
+        [
+          "iso-Butyric acid",
+          "iso-Butyric acid",
+          "SEED-cpd01711###",
+          "null",
+          "null"
+        ],
+        [
+          "n-Valeric acid",
+          "n-Valeric acid",
+          "SEED-cpd00597###",
+          "null",
+          "null"
+        ],
+        [
+          "MgSO4 x 7 H2O",
+          "Magnesium sulfate",
+          "SEED-cpd00048#cpd00254##",
+          "0.22",
+          "0.00"
+        ],
+        [
+          "CaCl2 x 2 H2O",
+          "Calcium chloride",
+          "SEED-cpd00063#cpd00099##",
+          "0.13",
+          "0.00"
+        ],
+        [
+          "n-Butyric acid",
+          "n-Butyric acid",
+          "SEED-cpd00211###",
+          "null",
+          "null"
+        ],
+        [
+          "Resazurin",
+          "Resazurin",
+          "SEED-cpd08053###",
+          "1.13E-3",
+          "4.95E-6"
+        ],
+        [
+          "NaCl",
+          "NaCl",
+          "SEED-cpd00099#cpd00971##",
+          "1.02",
+          "0.02"
+        ],
+        [
+          "Trypticase (BBL)",
+          "Trypticase",
+          "rich-peptone#",
+          "2.27",
+          "null"
+        ],
+        [
+          "(NH4)2SO4",
+          "Ammonium sulfate",
+          "SEED-cpd00013#cpd00048##",
+          "1.02",
+          "0.01"
+        ]
+      ],
+      "missing_source_nodes": [
+        "NaHCO3",
+        "DL-2-Methylbutyric acid",
+        "H2O",
+        "CO2",
+        "Distilled water"
+      ],
+      "evidence": [
+        {
+          "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+          "snippet": "Medium: TREPONEMA SACCHAROPHILUM medium\nID: 323\nName: TREPONEMA SACCHAROPHILUM medium\nPH Info: 6.7 - 7.0, KOH\nIs Complex: true\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf\nMetabolites list\nCompounds in the medium listed by their compound names. Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts\nName Semi unique name Unique Name Gram Amount Mol Amount\nNaHCO3 sodium bicarbonate SEED-cpd00242#cpd00971#cpd09249# 5.67 0.07\niso-Valeric acid iso-Valeric acid SEED-cpd05178### null null\nDL-2-Methylbutyric acid DL-2-Methylbutyric acid 2-Methylbutyric acid# null null\nH2O H2O SEED-cpd00001### null null\nKOH KOH SEED-cpd00001#cpd00205## null null\nCysteine-HCl x H2O Cysteine-HCl SEED-cpd00084#cpd00099## 1.13 0.01\nYeast extract (Oxoid) Yeast extract rich-peptone# 2.27 null\nCO2 CO2 SEED-cpd00011### null null\nDistilled water H2O SEED-cpd00001### null null\nK2HPO4 di Potassium hydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nKH2PO4 Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nGlucose D-Glucose SEED-cpd00027### 2.27 0.01\niso-Butyric acid iso-Butyric acid SEED-cpd01711### null null\nn-Valeric acid n-Valeric acid SEED-cpd00597### null null\nMgSO4 x 7 H2O Magnesium sulfate SEED-cpd00048#cpd00254## 0.22 0.00\nCaCl2 x 2 H2O Calcium chloride SEED-cpd00063#cpd00099## 0.13 0.00\nn-Butyric acid n-Butyric acid SEED-cpd00211### null null\nResazurin Resazurin SEED-cpd08053### 1.13E-3 4.95E-6\nNaCl NaCl SEED-cpd00099#cpd00971## 1.02 0.02\nTrypticase (BBL) Trypticase rich-peptone# 2.27 null\n(NH4)2SO4 Ammonium sulfate SEED-cpd00013#cpd00048## 1.02 0.01",
+          "locator": "Metabolites list: entire 21-row compound table and identifying header; exclude the SEED aggregate table",
+          "source_sha256": "cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8"
+        }
+      ],
+      "constraint": "Both water rows are explicit but unquantified. Do not fabricate volumes or collapse them without an explicit source-preserving decision. Bicarbonate is not the existing carbonate identity."
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "kind": "missing_stock_dose",
+      "value": {
+        "value": "0.0014",
+        "unit": "L"
+      },
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 14,\n                        \"solution\": \"Fatty acid mixture\",\n                        \"solution_id\": 6552,\n                        \"amount\": 1.4,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            8
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "constraint": "1.4 ml / 1000 = 0.0014 L exact batch dose of solution6552; root formulation evidence."
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "kind": "missing_stock_component",
+      "ingredient": "DL-2-Methylbutyric acid",
+      "value": {
+        "value": "0.0028",
+        "unit": "L"
+      },
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"DL-2-Methylbutyric acid\",\n                        \"compound_id\": 223,\n                        \"amount\": 2.8,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            2
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        }
+      ],
+      "constraint": "2.8 ml / 1000 = 0.0028 L stock batch input; no unverified ontology ID."
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "kind": "missing_water_input",
+      "value": {
+        "value": "998.003992015968",
+        "unit": "ML_PER_L"
+      },
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/medium/323",
+          "snippet": "{\n                        \"recipe_order\": 20,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "locator": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            14
+          ],
+          "source_sha256": "c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2"
+        },
+        {
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf",
+          "snippet": "Final volume: 1002 ml",
+          "locator": "page 1 header",
+          "source_sha256": "cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca"
+        }
+      ],
+      "constraint": "1000 ml / 1.002 L = 998.003992015968 ml/L; explicit volume basis, not percent."
+    }
+  ],
+  "all_62_old_quantity_fields_accounted_for": true,
+  "next_action": "Build a complete guarded proposal with root evidence, immutable ingredient lineage and independent mutation tests. Resolve KOMODO chemical-form and required physical-state limitations explicitly. Do not apply this projection as a YAML patch or count it as canonical completed review coverage."
+}

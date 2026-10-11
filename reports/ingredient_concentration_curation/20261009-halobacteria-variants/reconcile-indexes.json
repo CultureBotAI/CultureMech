@@ -1,0 +1,25 @@
+{
+  "terminal": true,
+  "phase": "indexes",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/generate_recipe_indexes.py",
+        "--recipe-dir",
+        "data/normalized_yaml",
+        "--output-dir",
+        "/tmp/ingredient-media-20261007/halobacteria-variants-index-preview"
+      ],
+      "exit_code": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/reconcile-indexes-0.log",
+      "log_sha256": "708b8803891fe636650a28d54c633b9d47aaefc3952de104cf361d53e74d15e4"
+    }
+  ],
+  "errors": [],
+  "source_sha256": "82e954649cedc505c58a3630b18afc0ddb4d9d30f77b75693172a95010987d00",
+  "plan_sha256": "c9611e131c0bc87eb0ffca52aa596859e29f5a66e3b2b39349ff961ffe4f7b78",
+  "ignored_files_included": true,
+  "applied_files": 6,
+  "unique_records": 7
+}

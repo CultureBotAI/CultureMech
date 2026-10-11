@@ -1,0 +1,64 @@
+{
+  "terminal": true,
+  "phase": "final",
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_m689_stocks.py",
+        "tests/test_m689_stocks.py",
+        "reports/ingredient_concentration_curation/20261008-m689-stocks/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/m689-final-0.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_m689_stocks.py",
+        "tests/test_m689_stocks.py",
+        "reports/ingredient_concentration_curation/20261008-m689-stocks/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/m689-final-1.log"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_m689_stocks.py",
+        "tests/test_m142_nested_traces.py",
+        "tests/test_jcm_stock_preparations.py",
+        "tests/test_recipe_references.py",
+        "tests/test_medium_concentration_batch.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/m689-final-2.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/m689-final-3.log"
+    }
+  ],
+  "inventory_before": [
+    15910,
+    "636ead57e987b08ed47046ac5d4a0485c8c821953f80b009a6f1a3fd5f8a8d11"
+  ],
+  "inventory_after": [
+    15910,
+    "636ead57e987b08ed47046ac5d4a0485c8c821953f80b009a6f1a3fd5f8a8d11"
+  ]
+}

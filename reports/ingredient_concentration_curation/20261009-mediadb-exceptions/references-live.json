@@ -1,0 +1,108 @@
+{
+  "terminal": true,
+  "phase": "references-live",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/song_cdm.yaml",
+        "--cache-dir",
+        "/tmp/ingredient-media-20261009-mediadb/reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/references-live-00.log",
+      "log_sha256": "1872834e5e51ec2914fcfa44df329de251cbad7b4541f69d650d698bade9de61"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/song_optimal_cdm.yaml",
+        "--cache-dir",
+        "/tmp/ingredient-media-20261009-mediadb/reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/references-live-01.log",
+      "log_sha256": "848795952d69bc11faf1c4ca18ef3e3a63fc0898b06b27b03bf5168a421a418b"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_430_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/ingredient-media-20261009-mediadb/reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/references-live-02.log",
+      "log_sha256": "ba9e59d86ec0a11d38afd28e39183c1f7339678a0820de7f711b5fe1f8f2df04"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_460_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/ingredient-media-20261009-mediadb/reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/references-live-03.log",
+      "log_sha256": "d6e871755a51a3eac8ab7c8d74d8c0f4d01e67c0884423e99a1d7909aad3ad34"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/mcn_medium_whitman.yaml",
+        "--cache-dir",
+        "/tmp/ingredient-media-20261009-mediadb/reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/references-live-04.log",
+      "log_sha256": "a5ab959dc119cd22041a877a5fea9c6a9b17f272e7000dc6b6c2f8f5003dd738"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/mcna_medium_lupa.yaml",
+        "--cache-dir",
+        "/tmp/ingredient-media-20261009-mediadb/reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/references-live-05.log",
+      "log_sha256": "6cbe5a810a9980b0bd42cf6fef69f1a6386a46e0b7830491da97345498305fa9"
+    }
+  ],
+  "records_edited": 0,
+  "plan_sha256": "d7d3a7135aad5daf78ba2f3e82dfb73a0f3f185e1b7036457abd111da0892b9e",
+  "code_sha256": {
+    "scripts/repair_mediadb_ingredient_exceptions.py": "b27949707826eff4b229a612875452098d7cb5f6b3c62c81d0997958a1886f59",
+    "tests/test_mediadb_ingredient_exceptions.py": "9f96c7b25d1c5a1ef525d89328d7e594f73a55fed234dc3d795084bc00d51bc9"
+  },
+  "normalized_count": 15910,
+  "inventory_before_sha256": "83b9583a31a82ab2db7403fa21d8dc1fd30928d289bb7598a043348f4d82be2c",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "captured_source_snippet_checks": 156,
+  "source_check_scope": "Literal official MediaDB table snippets, raw capture hashes, medium identity and SQL/live amount agreement; not primary article verification.",
+  "reference_gate_passed": false,
+  "passed": false,
+  "error": "AssertionError: Reference validation failures remain",
+  "inventory_after_sha256": "83b9583a31a82ab2db7403fa21d8dc1fd30928d289bb7598a043348f4d82be2c",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

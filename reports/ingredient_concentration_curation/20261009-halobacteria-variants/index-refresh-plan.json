@@ -1,0 +1,308 @@
+{
+  "source_sha256": "82e954649cedc505c58a3630b18afc0ddb4d9d30f77b75693172a95010987d00",
+  "files": [
+    {
+      "target": "data/normalized_yaml/archaea_index.json",
+      "preview": "/tmp/ingredient-media-20261007/halobacteria-variants-index-preview/archaea_index.json",
+      "before_sha256": "c5de60fb2db4044e16a5fe1afecc0d2a653528499c7afffc1a4442f1d00618fb",
+      "after_sha256": "3cb2fe77d926e7ca85d6fcc365266e53a4ac3d3a3bf21f151a27f9dfb1ab1ba4",
+      "changes": [
+        {
+          "key": "CultureMech:007740",
+          "id": "CultureMech:007740",
+          "changes": {
+            "ingredient_count": [
+              9,
+              0
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:002305",
+          "id": "CultureMech:002305",
+          "changes": {
+            "ingredient_count": [
+              9,
+              0
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:003262",
+          "id": "CultureMech:003262",
+          "changes": {
+            "ingredient_count": [
+              9,
+              10
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:002920",
+          "id": "CultureMech:002920",
+          "changes": {
+            "ingredient_count": [
+              9,
+              10
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:002192",
+          "id": "CultureMech:002192",
+          "changes": {
+            "ingredient_count": [
+              9,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/bacterial_index.json",
+      "preview": "/tmp/ingredient-media-20261007/halobacteria-variants-index-preview/bacterial_index.json",
+      "before_sha256": "4cd157c01574067847bc08929bac80d4c9dabe6408c817581cfa2a0c26d93b3b",
+      "after_sha256": "0345ad75ab5e1a073b1948afa1cae8121b3788c8d62051aadd825960cfe284be",
+      "changes": [
+        {
+          "key": "CultureMech:002734",
+          "id": "CultureMech:002734",
+          "changes": {
+            "ingredient_count": [
+              9,
+              10
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:012901",
+          "id": "CultureMech:012901",
+          "changes": {
+            "ingredient_count": [
+              9,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_mediadive-solutions_index.json",
+      "preview": "/tmp/ingredient-media-20261007/halobacteria-variants-index-preview/by_source_mediadive-solutions_index.json",
+      "before_sha256": "030114623cc5bd9f5c6621d001e891a2b9d9091506fe65cea139cd51ef10bb84",
+      "after_sha256": "894582876838f633ba59c0de98df28924b39cdb1e136afd68e1c647ed846170a",
+      "changes": [
+        {
+          "key": "CultureMech:012901",
+          "id": "CultureMech:012901",
+          "changes": {
+            "ingredient_count": [
+              9,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_mediadive_index.json",
+      "preview": "/tmp/ingredient-media-20261007/halobacteria-variants-index-preview/by_source_mediadive_index.json",
+      "before_sha256": "f01be38a230c015dbb7fc4d3aa8d6d04c43a6b74cdab69f271946d716673b114",
+      "after_sha256": "3be3e216901c434a069d2aa9f6c783b86cd248c81972e2c36d94e745bd22314b",
+      "changes": [
+        {
+          "key": "CultureMech:002305",
+          "id": "CultureMech:002305",
+          "changes": {
+            "ingredient_count": [
+              9,
+              0
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:003262",
+          "id": "CultureMech:003262",
+          "changes": {
+            "ingredient_count": [
+              9,
+              10
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:002920",
+          "id": "CultureMech:002920",
+          "changes": {
+            "ingredient_count": [
+              9,
+              10
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:002192",
+          "id": "CultureMech:002192",
+          "changes": {
+            "ingredient_count": [
+              9,
+              10
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:002734",
+          "id": "CultureMech:002734",
+          "changes": {
+            "ingredient_count": [
+              9,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_togo_index.json",
+      "preview": "/tmp/ingredient-media-20261007/halobacteria-variants-index-preview/by_source_togo_index.json",
+      "before_sha256": "0769a10c8dd5112b329dc849f154256a2dc72a3b3d2bc67c7e2abf583fd064b7",
+      "after_sha256": "2623dd56533cc40712b92add8bd3d7d3b7735a38de4331d876f2bc7981d33edf",
+      "changes": [
+        {
+          "key": "CultureMech:007740",
+          "id": "CultureMech:007740",
+          "changes": {
+            "ingredient_count": [
+              9,
+              0
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_index.json",
+      "preview": "/tmp/ingredient-media-20261007/halobacteria-variants-index-preview/recipe_index.json",
+      "before_sha256": "9d1878c04c373186de1a61f7aa9643da1498b183e34968d225fc6a1d8deade18",
+      "after_sha256": "3fc4460be7230bed02b8b248d3135f7320b86473fe396579ae85a2346c51a758",
+      "changes": [
+        {
+          "key": "CultureMech:007740",
+          "id": "CultureMech:007740",
+          "changes": {
+            "ingredient_count": [
+              9,
+              0
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:002305",
+          "id": "CultureMech:002305",
+          "changes": {
+            "ingredient_count": [
+              9,
+              0
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:003262",
+          "id": "CultureMech:003262",
+          "changes": {
+            "ingredient_count": [
+              9,
+              10
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:002920",
+          "id": "CultureMech:002920",
+          "changes": {
+            "ingredient_count": [
+              9,
+              10
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:002192",
+          "id": "CultureMech:002192",
+          "changes": {
+            "ingredient_count": [
+              9,
+              10
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:002734",
+          "id": "CultureMech:002734",
+          "changes": {
+            "ingredient_count": [
+              9,
+              10
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:012901",
+          "id": "CultureMech:012901",
+          "changes": {
+            "ingredient_count": [
+              9,
+              10
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "metadata_changed_ids": [
+    "CultureMech:002192",
+    "CultureMech:002305",
+    "CultureMech:002734",
+    "CultureMech:002920",
+    "CultureMech:003262",
+    "CultureMech:007740",
+    "CultureMech:012901"
+  ]
+}

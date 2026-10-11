@@ -1,0 +1,761 @@
+{
+  "terminal": true,
+  "package_version": "0.1.6",
+  "checks": [
+    {
+      "name": "MediaRecipe",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/linkml-reference-validator",
+        "validate",
+        "data",
+        "/tmp/ingredient-media-20261007/stocks-1157-reference-MediaRecipe-network-recheck.yaml",
+        "--schema",
+        "src/culturemech/schema/culturemech.yaml",
+        "--target-class",
+        "MediaRecipe"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-reference-MediaRecipe-network-recheck.log"
+    },
+    {
+      "name": "SolutionRecipe",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/linkml-reference-validator",
+        "validate",
+        "data",
+        "/tmp/ingredient-media-20261007/stocks-1157-reference-SolutionRecipe-network-recheck.yaml",
+        "--schema",
+        "src/culturemech/schema/culturemech.yaml",
+        "--target-class",
+        "SolutionRecipe"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-reference-SolutionRecipe-network-recheck.log"
+    }
+  ],
+  "snippets": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1157_PYEM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1157",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1157"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1157_PYEM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        1
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1157",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1157"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1157_PYEM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        2
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1157",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1157"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1157_PYEM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        3
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1157",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1157"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1157_PYEM_medium.yaml",
+      "pointer": [
+        "solutions",
+        0,
+        "composition",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1157",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1157"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1157_PYEM_medium.yaml",
+      "pointer": [
+        "solutions",
+        1,
+        "composition",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1157",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1157"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1157_PYEM_medium.yaml",
+      "pointer": [
+        "solutions",
+        2,
+        "composition",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1157",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1157"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1157_PYEM_medium.yaml",
+      "pointer": [
+        "solutions",
+        3,
+        "composition",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1157",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1157"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1157_PYEM_medium.yaml",
+      "pointer": [],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1157",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1157"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1157_PYEM_medium.yaml",
+      "pointer": [],
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf",
+      "is_valid": false,
+      "message": "Text part not found as substring: 'Riboflavin (0.2 mg/ml) filter-sterilized 5.0 ml'"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1157_PYEM_medium.yaml",
+      "pointer": [],
+      "reference": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/pyem_medium.yaml",
+      "pointer": [
+        "ingredients",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1157",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1157"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/pyem_medium.yaml",
+      "pointer": [
+        "ingredients",
+        1
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1157",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1157"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/pyem_medium.yaml",
+      "pointer": [
+        "ingredients",
+        2
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1157",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1157"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/pyem_medium.yaml",
+      "pointer": [
+        "ingredients",
+        3
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1157",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1157"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/pyem_medium.yaml",
+      "pointer": [
+        "solutions",
+        0,
+        "composition",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1157",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1157"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/pyem_medium.yaml",
+      "pointer": [
+        "solutions",
+        1,
+        "composition",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1157",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1157"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/pyem_medium.yaml",
+      "pointer": [
+        "solutions",
+        2,
+        "composition",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1157",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1157"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/pyem_medium.yaml",
+      "pointer": [
+        "solutions",
+        3,
+        "composition",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1157",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1157"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/pyem_medium.yaml",
+      "pointer": [],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1157",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1157"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/pyem_medium.yaml",
+      "pointer": [],
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf",
+      "is_valid": false,
+      "message": "Text part not found as substring: 'Riboflavin (0.2 mg/ml) filter-sterilized 5.0 ml'"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2323_Main_sol_1157.yaml",
+      "pointer": [
+        "composition",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2323",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2323"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2323_Main_sol_1157.yaml",
+      "pointer": [
+        "composition",
+        1
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2323",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2323"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2323_Main_sol_1157.yaml",
+      "pointer": [
+        "composition",
+        2
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2323",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2323"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2323_Main_sol_1157.yaml",
+      "pointer": [
+        "composition",
+        3
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2323",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2323"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2323_Main_sol_1157.yaml",
+      "pointer": [
+        "solutions",
+        0,
+        "composition",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2323",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2323"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2323_Main_sol_1157.yaml",
+      "pointer": [
+        "solutions",
+        1,
+        "composition",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2323",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2323"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2323_Main_sol_1157.yaml",
+      "pointer": [
+        "solutions",
+        2,
+        "composition",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2323",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2323"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2323_Main_sol_1157.yaml",
+      "pointer": [
+        "solutions",
+        3,
+        "composition",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2323",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2323"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2323_Main_sol_1157.yaml",
+      "pointer": [
+        "source_data"
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2323",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2323"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2323_Main_sol_1157.yaml",
+      "pointer": [
+        "source_data"
+      ],
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf",
+      "is_valid": false,
+      "message": "Text part not found as substring: 'Riboflavin (0.2 mg/ml) filter-sterilized 5.0 ml'"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+      "pointer": [
+        "ingredients",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+      "pointer": [
+        "ingredients",
+        1
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+      "pointer": [
+        "ingredients",
+        2
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+      "pointer": [
+        "ingredients",
+        3
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+      "pointer": [
+        "ingredients",
+        4
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+      "pointer": [
+        "ingredients",
+        5
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+      "pointer": [
+        "ingredients",
+        6
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+      "pointer": [
+        "ingredients",
+        7
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+      "pointer": [
+        "ingredients",
+        8
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+      "pointer": [
+        "ingredients",
+        9
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+      "pointer": [
+        "solutions",
+        0,
+        "composition",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+      "pointer": [],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+      "pointer": [],
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf",
+      "is_valid": false,
+      "message": "Text part not found as substring: 'FeCl3 x 6 H2O (0.5%) 7 drops'"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+      "pointer": [],
+      "reference": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml",
+      "pointer": [
+        "ingredients",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml",
+      "pointer": [
+        "ingredients",
+        1
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml",
+      "pointer": [
+        "ingredients",
+        2
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml",
+      "pointer": [
+        "ingredients",
+        3
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml",
+      "pointer": [
+        "ingredients",
+        4
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml",
+      "pointer": [
+        "ingredients",
+        5
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml",
+      "pointer": [
+        "ingredients",
+        6
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml",
+      "pointer": [
+        "ingredients",
+        7
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml",
+      "pointer": [
+        "ingredients",
+        8
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml",
+      "pointer": [
+        "ingredients",
+        9
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml",
+      "pointer": [
+        "solutions",
+        0,
+        "composition",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml",
+      "pointer": [],
+      "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/medium/1164"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml",
+      "pointer": [],
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf",
+      "is_valid": false,
+      "message": "Text part not found as substring: 'FeCl3 x 6 H2O (0.5%) 7 drops'"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2333_Main_sol_1164.yaml",
+      "pointer": [
+        "composition",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2333",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2333"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2333_Main_sol_1164.yaml",
+      "pointer": [
+        "composition",
+        1
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2333",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2333"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2333_Main_sol_1164.yaml",
+      "pointer": [
+        "composition",
+        2
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2333",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2333"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2333_Main_sol_1164.yaml",
+      "pointer": [
+        "composition",
+        3
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2333",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2333"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2333_Main_sol_1164.yaml",
+      "pointer": [
+        "composition",
+        4
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2333",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2333"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2333_Main_sol_1164.yaml",
+      "pointer": [
+        "composition",
+        5
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2333",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2333"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2333_Main_sol_1164.yaml",
+      "pointer": [
+        "composition",
+        6
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2333",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2333"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2333_Main_sol_1164.yaml",
+      "pointer": [
+        "composition",
+        7
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2333",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2333"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2333_Main_sol_1164.yaml",
+      "pointer": [
+        "composition",
+        8
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2333",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2333"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2333_Main_sol_1164.yaml",
+      "pointer": [
+        "composition",
+        9
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2333",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2333"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2333_Main_sol_1164.yaml",
+      "pointer": [
+        "solutions",
+        0,
+        "composition",
+        0
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2333",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2333"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2333_Main_sol_1164.yaml",
+      "pointer": [
+        "source_data"
+      ],
+      "reference": "https://mediadive.dsmz.de/rest/solution/2333",
+      "is_valid": true,
+      "message": "Supporting text validated successfully in https://mediadive.dsmz.de/rest/solution/2333"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2333_Main_sol_1164.yaml",
+      "pointer": [
+        "source_data"
+      ],
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf",
+      "is_valid": false,
+      "message": "Text part not found as substring: 'FeCl3 x 6 H2O (0.5%) 7 drops'"
+    }
+  ],
+  "original_pdf_checks": [
+    {
+      "medium_id": "1157",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf",
+      "sha256": "5751821c9e6eeb6cba6e6d6dfcc64e8d5e268f6dfcc16b41e92f60d133e9e212",
+      "bytes_and_extracted_pages_match": true
+    },
+    {
+      "medium_id": "1164",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf",
+      "sha256": "f027673164f8c24fe2894a21b3487e26d8f7f48ec18ee14c365c0644790a9c4c",
+      "bytes_and_extracted_pages_match": true
+    }
+  ],
+  "snippets_passed": 65,
+  "snippets_failed": 6,
+  "scope": "All new/rescoped evidence checked. Installed validator result is not overridden by manual PDF verification. Original PDF bytes/text independently checked; no extracted PDF text injected into its cache."
+}

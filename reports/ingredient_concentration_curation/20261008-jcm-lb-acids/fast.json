@@ -1,0 +1,22 @@
+{
+  "terminal": true,
+  "phase": "fast",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-lb-acids-fast-0.log"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "506ccc96f0fa2c737b3a3a419ca7a47db1646b14cce0fdf7eec149da1fb284ea"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "506ccc96f0fa2c737b3a3a419ca7a47db1646b14cce0fdf7eec149da1fb284ea"
+  }
+}

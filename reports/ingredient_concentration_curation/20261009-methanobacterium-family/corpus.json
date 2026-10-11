@@ -1,0 +1,54 @@
+{
+  "terminal": true,
+  "phase": "corpus",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml",
+        "--out",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanobacterium-family/strict-errors.tsv"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/corpus-0.log",
+      "log_sha256": "cf985ccc155a06a9fb348263a61cf90dafd8ddc4009a008ff1825e50b71274f7"
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/corpus-1.log",
+      "log_sha256": "eb7360e4d6ac289a3c075ae3f26d2a32b53e6b2da8d03073cfda3e697295cbc0"
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/corpus-2.log",
+      "log_sha256": "c641f4d7a0eebcd8a3f3bccccfd8fa1ef28e238fa3a56cedad0d8a8c57251531"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "db8f5426f9aade2d77f947de6f5c4a756f3ed214bede448fbb31d273085da30f"
+  },
+  "code_sha256": {
+    "scripts/repair_methanobacterium_family.py": "87a3dec56047f5aeaa394a7c65788ee86c297ab086d142c0597e82983ac1f90f",
+    "tests/test_methanobacterium_family.py": "b402ee4ba9088302faa60da467b2ed06bcab302601174722a33f66436267382e",
+    "reports/ingredient_concentration_curation/20261009-methanobacterium-family/audit.py": "31c3125ed89f27f37c516b13d71636fa3b5ac9ce4ee50820ab0f130e10c0c383"
+  },
+  "plan_sha256": "302bb7c856b8b4b885a35de19edcadc32efc77b115ea3fe23630c288503a775d",
+  "preview_validation_sha256": "783079e989f2aa8effdc09ec9d9e27767df4e01239fa1f20a399565272b3f265",
+  "strict_scanned": 15910,
+  "global_variant_findings": [],
+  "cohort_variant_findings": [],
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "db8f5426f9aade2d77f947de6f5c4a756f3ed214bede448fbb31d273085da30f"
+  }
+}

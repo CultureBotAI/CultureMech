@@ -1,0 +1,979 @@
+{
+  "terminal": true,
+  "phase": "live",
+  "checks": [],
+  "inventory_before": [
+    15910,
+    "20a465aaa26a04df33252f3174924bc43dffd7758acc691cdaf8c13e85aa03bd"
+  ],
+  "sources": [
+    {
+      "key": "M689",
+      "url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M689",
+      "sha256": "a78076c0add2b1de59aed24e80226b44b9138587509376dfe8cd9721ddc9cec1",
+      "accessed_at": "2026-10-08T17:16:46.890037+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "JCM670",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=670",
+      "sha256": "449b16a5fb1916d6fef5ba89893ac198b3b23cd585e363e69904a26d62bc367d",
+      "accessed_at": "2026-10-08T17:16:47.798306+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "M142",
+      "url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+      "sha256": "610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33",
+      "accessed_at": "2026-10-08T17:16:48.114395+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "JCM151",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+      "sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+      "accessed_at": "2026-10-08T17:16:48.445147+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "M180",
+      "url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180",
+      "sha256": "a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba",
+      "accessed_at": "2026-10-08T17:16:48.769549+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "M190",
+      "url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+      "sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+      "accessed_at": "2026-10-08T17:16:48.958095+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "JCM187",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187",
+      "sha256": "e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804",
+      "accessed_at": "2026-10-08T17:16:49.289111+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "JCM197",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+      "sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532",
+      "accessed_at": "2026-10-08T17:16:49.633891+00:00",
+      "matches_inspected_capture": true
+    }
+  ],
+  "reference_checks": [
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M689",
+      "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[0].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M689",
+      "supporting_text": "{\n          \"component_name\": \"Resazurin\",\n          \"volume\": 0.5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001012\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Resazurin\",\n          \"volume\": 0.5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001012\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[1].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=670",
+      "supporting_text": "Resazurin 0.5 mg",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Resazurin 0.5 mg",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[1].evidence[1].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M689",
+      "supporting_text": "{\n          \"component_name\": \"Glucose\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001815\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Glucose\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001815\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[2].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M689",
+      "supporting_text": "{\n          \"component_name\": \"Tryptone (BD-Difco)\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001043\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Tryptone (BD-Difco)\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001043\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[3].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M689",
+      "supporting_text": "{\n          \"component_name\": \"L--Cysteine\u30fbHCl\u30fbH2O\",\n          \"volume\": 0.25,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001205\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"L--Cysteine\u30fbHCl\u30fbH2O\",\n          \"volume\": 0.25,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001205\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[4].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M689",
+      "supporting_text": "{\n          \"component_name\": \"NaOH\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001300\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"NaOH\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001300\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[6].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180",
+      "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 990,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 990,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[0].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180",
+      "supporting_text": "{\n          \"component_name\": \"FeCl2\u30fb4H2O\",\n          \"volume\": 1.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001548\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"FeCl2\u30fb4H2O\",\n          \"volume\": 1.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001548\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[1].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180",
+      "supporting_text": "{\n          \"component_name\": \"25% HCl (7.7 M)\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"conc_value\": 25,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001499\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"25% HCl (7.7 M)\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"conc_value\": 25,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001499\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].solutions[0].composition[0].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187",
+      "supporting_text": "25% HCl (7.7 M) 10.0 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "25% HCl (7.7 M) 10.0 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].solutions[0].composition[0].evidence[1].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180",
+      "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[1].composition[0].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180",
+      "supporting_text": "{\n          \"component_name\": \"Na2MoO4\u30fb2H2O\",\n          \"volume\": 36,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001011\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Na2MoO4\u30fb2H2O\",\n          \"volume\": 36,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001011\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[1].composition[1].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180",
+      "supporting_text": "{\n          \"component_name\": \"H3BO3\",\n          \"volume\": 6,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"H3BO3\",\n          \"volume\": 6,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[1].composition[2].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180",
+      "supporting_text": "{\n          \"component_name\": \"MnCl2\u30fb4H2O\",\n          \"volume\": 100,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001020\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"MnCl2\u30fb4H2O\",\n          \"volume\": 100,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001020\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[1].composition[3].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180",
+      "supporting_text": "{\n          \"component_name\": \"CoCl2\u30fb6H2O\",\n          \"volume\": 190,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001021\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"CoCl2\u30fb6H2O\",\n          \"volume\": 190,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001021\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[1].composition[4].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180",
+      "supporting_text": "{\n          \"component_name\": \"NiCl2\u30fb6H2O\",\n          \"volume\": 24,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001022\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"NiCl2\u30fb6H2O\",\n          \"volume\": 24,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001022\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[1].composition[5].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180",
+      "supporting_text": "{\n          \"component_name\": \"CuCl2\u30fb2H2O\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001024\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"CuCl2\u30fb2H2O\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001024\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[1].composition[6].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180",
+      "supporting_text": "{\n          \"component_name\": \"ZnCl2\",\n          \"volume\": 70,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001035\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"ZnCl2\",\n          \"volume\": 70,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001035\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[1].composition[7].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+      "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[0].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+      "supporting_text": "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\": 3,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\": 3,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[1].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+      "supporting_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[2].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+      "supporting_text": "{\n          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[3].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+      "supporting_text": "{\n          \"component_name\": \"Na2MoO4\u30fb2H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001011\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Na2MoO4\u30fb2H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001011\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[4].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+      "supporting_text": "{\n          \"component_name\": \"H3BO3\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"H3BO3\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[5].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+      "supporting_text": "{\n          \"component_name\": \"FeSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001016\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"FeSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001016\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[6].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+      "supporting_text": "{\n          \"component_name\": \"ZnSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001023\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"ZnSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001023\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[7].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+      "supporting_text": "{\n          \"component_name\": \"CuSO4\u30fb5H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001039\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"CuSO4\u30fb5H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001039\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[8].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+      "supporting_text": "{\n          \"component_name\": \"CoSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001050\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"CoSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001050\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[9].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+      "supporting_text": "{\n          \"component_name\": \"Nitrilotriacetic acid\",\n          \"volume\": 1.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001053\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Nitrilotriacetic acid\",\n          \"volume\": 1.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001053\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[10].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+      "supporting_text": "{\n          \"component_name\": \"MnSO4\u30fbxH2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001065\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"MnSO4\u30fbxH2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001065\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[11].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+      "supporting_text": "{\n          \"component_name\": \"AlK(SO4)2\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001088\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"AlK(SO4)2\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001088\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[12].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+      "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[3].composition[0].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+      "supporting_text": "{\n          \"component_name\": \"Biotin\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001025\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Biotin\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001025\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[3].composition[1].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+      "supporting_text": "{\n          \"component_name\": \"p--Aminobenzoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001026\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"p--Aminobenzoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001026\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[3].composition[2].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+      "supporting_text": "{\n          \"component_name\": \"Thiamine\u30fbHCl\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001027\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Thiamine\u30fbHCl\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001027\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[3].composition[3].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+      "supporting_text": "{\n          \"component_name\": \"Calcium pantothenate\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001028\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Calcium pantothenate\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001028\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[3].composition[4].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+      "supporting_text": "{\n          \"component_name\": \"Pyridoxine\u30fbHCl\",\n          \"volume\": 10,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001029\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Pyridoxine\u30fbHCl\",\n          \"volume\": 10,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001029\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[3].composition[5].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+      "supporting_text": "{\n          \"component_name\": \"Folic acid\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001033\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Folic acid\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001033\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[3].composition[6].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+      "supporting_text": "{\n          \"component_name\": \"Vitamin B12\",\n          \"volume\": 0.1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001034\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Vitamin B12\",\n          \"volume\": 0.1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001034\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[3].composition[7].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+      "supporting_text": "{\n          \"component_name\": \"Riboflavin\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001037\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Riboflavin\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001037\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[3].composition[8].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+      "supporting_text": "{\n          \"component_name\": \"Nicotinic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001038\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Nicotinic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001038\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[3].composition[9].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+      "supporting_text": "{\n          \"component_name\": \"Lipoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001699\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"Lipoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001699\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[3].composition[10].evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M689",
+      "supporting_text": "{\n          \"component_name\": \"FeCl2 solution (see Medium [M180])\",\n          \"volume\": 10,\n          \"unit\": \"ml\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"FeCl2 solution (see Medium [M180])\",\n          \"volume\": 10,\n          \"unit\": \"ml\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[0].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=670",
+      "supporting_text": "add to the medium (per liter):",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "add to the medium (per liter):",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[1].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180",
+      "supporting_text": "{\n          \"component_name\": \"25% HCl (7.7 M)\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"conc_value\": 25,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001499\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"25% HCl (7.7 M)\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"conc_value\": 25,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001499\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[2].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+      "supporting_text": "{\n          \"component_name\": \"KOH solution\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001903\"",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "{\n          \"component_name\": \"KOH solution\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001903\"",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[3].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+      "supporting_text": "Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[4].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+      "supporting_text": "Trace vitamins:",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Trace vitamins:",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[5].snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M689",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[0].title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=670",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[2].title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[3].title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[4].title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[5].title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[6].title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[7].title"
+    }
+  ],
+  "reference_issues": [],
+  "inventory_after": [
+    15910,
+    "20a465aaa26a04df33252f3174924bc43dffd7758acc691cdaf8c13e85aa03bd"
+  ]
+}

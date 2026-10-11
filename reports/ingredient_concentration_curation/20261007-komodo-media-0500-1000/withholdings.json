@@ -1,0 +1,59 @@
+[
+  {
+    "id": "CultureMech:003822",
+    "medium_id": "111",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/111",
+    "source_sha256": "55fa3c48de7789fb9e99215742233e9067f86705cdb7492c046fa783a5cc839b",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml H2O) and mix after cooling.",
+    "reason": "The source table uses 950 ml and its g_l values divide all listed solids by 0.95 L, but the preparation explicitly sterilizes glucose separately in another 50 ml of water before mixing. The local flat recipe does not separate the glucose stock from the basal stage. Resolve the preparation stages and volume basis before endorsing the table-derived amounts; this veto selects no replacement value."
+  },
+  {
+    "id": "CultureMech:004018",
+    "medium_id": "125",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/125",
+    "source_sha256": "2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Add 5 ml methanol or incubate under methane-air (4:1). Adjust pH to 6.8.",
+    "reason": "The preparation requires either a 5 ml methanol addition or methane-air incubation, neither of which is represented as a selected formulation in the local recipe. Resolve and represent these alternative substrate/atmosphere branches before endorsing an exact complete-medium formulation. A base recipe link does not choose a variant."
+  },
+  {
+    "id": "CultureMech:004211",
+    "medium_id": "187",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/187",
+    "source_sha256": "07625361f0d69ed4448c7db3385b713adc4e36e147923c59f5975a572023f583",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Adjust pH to 5.6. Sterilize at 121\u00b0C for 15 min",
+    "reason": "Source metadata and the local record state pH 5.4, while the source preparation says adjust pH to 5.6. The original linked PDF inspected in this review gives no pH statement. The preparation-stage or source-version distinction remains unresolved; no pH or concentration replacement is selected."
+  }
+]

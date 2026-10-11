@@ -1,0 +1,18 @@
+{
+  "terminal": true,
+  "phase": "live",
+  "checks": [],
+  "code_sha256": {
+    "scripts/repair_allisonella_acids.py": "afc95c9898218db0962b967e8a3189663e1a15ae393e9ef09faa87fbc145f390",
+    "tests/test_allisonella_acids.py": "e8ff482a4a799b5d7bde7bbdf1a7b0bc26e48b761e5f4c35377f00033bb1d5d4",
+    "reports/ingredient_concentration_curation/20261009-allisonella-acids/audit.py": "3d9dd9ae97cf62179e59e1f08506889747b22ce24c30d8336f5cf74596557f80"
+  },
+  "plan_sha256": "c42cb613f1e5e24c2383349e4869862808f7aebce7ab75463be77af2f0d3af18",
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "586888cea49e962e3fe4ccbe021599c5c21ee5f15e4aae265f5bdfe305ce8bb0"
+  },
+  "transport": "Explicit urllib public GET with no redirects; no silent validator transport fallback. Raw validated captures stored in the official-source cache.",
+  "sources": [],
+  "error": "RecipeReferenceError: source_cache: cannot read/write official recipe cache: URLError"
+}

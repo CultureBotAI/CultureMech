@@ -1,0 +1,68 @@
+{
+  "terminal": true,
+  "phase": "focused",
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_middlebrook_stages.py",
+        "tests/test_middlebrook_stages.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-middlebrook-stages/audit.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-focused-retry-0.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_middlebrook_stages.py",
+        "tests/test_middlebrook_stages.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-middlebrook-stages/audit.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-focused-retry-1.log"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_middlebrook_stages.py",
+        "tests/test_lactalbumin_formulations.py",
+        "tests/test_recipe_references.py",
+        "tests/test_recipe_pdf_references.py",
+        "tests/test_recipe_komodo_references.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-focused-retry-2.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-focused-retry-3.log"
+    }
+  ],
+  "code_sha256": {
+    "scripts/repair_middlebrook_stages.py": "94b5bb1954773797fe64799a35e9fb08bc2250d9a081df80b7267a4ad0df7c0f",
+    "tests/test_middlebrook_stages.py": "921f96ffafce8f58bca6c6665ef068bb36caa93583c97617bd3ac5efd7af7d10",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-middlebrook-stages/audit.py": "e50c1f643faf65c1d7f95a6c5eb50b1b65da02d9bccafbdf2ebed083dc14fd2b"
+  },
+  "plan_sha256": "28032eb3f5837886b5e1d1b0b972bad659942781d4ca76950e2ee774df680e13",
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "d99a375e68d2bef008b27eae1eaa6da6fc414a7d67046a15a5d32a2661f813d2"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "d99a375e68d2bef008b27eae1eaa6da6fc414a7d67046a15a5d32a2661f813d2"
+  }
+}

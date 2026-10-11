@@ -1,0 +1,22 @@
+{
+  "terminal": true,
+  "phase": "fast",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-albumin-inputs-fast-0.log"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "cc01a6b89ff98426f13409c5d4a6114691a9a12094c0230b6ed7057aae17f842"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "cc01a6b89ff98426f13409c5d4a6114691a9a12094c0230b6ed7057aae17f842"
+  }
+}

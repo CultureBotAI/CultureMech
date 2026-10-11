@@ -1,0 +1,68 @@
+{
+  "terminal": true,
+  "phase": "focused",
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "src/culturemech/validation/recipe_references.py",
+        "tests/test_recipe_nbrc_references.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-nbrc-reference-validation/focused-0.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "src/culturemech/validation/recipe_references.py",
+        "tests/test_recipe_nbrc_references.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-nbrc-reference-validation/focused-1.log",
+      "log_sha256": "b9cf511501d306d2bd8355ccb165c8ddc0a6fdd62d7c72c4a7b1795cf8934c8c"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_recipe_nbrc_references.py",
+        "tests/test_recipe_references.py",
+        "tests/test_recipe_pdf_references.py",
+        "tests/test_recipe_komodo_references.py",
+        "tests/test_middlebrook_stages.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-nbrc-reference-validation/focused-2.log",
+      "log_sha256": "6f6e5e532e33b90ec217f184927d38c8d54bf3821c9b62d3d1a4096dedfaa3d0"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-nbrc-reference-validation/focused-3.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "code_sha256": {
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "tests/test_recipe_nbrc_references.py": "bd7a993f246eb1482f4181c49a2d3501731c4cca2cbb8369a36afb9576ba4019"
+  },
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "d0d0451157b8ed78867e41503fd02bc9afa0f80d11758d67a3f60e9daee6b138"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "d0d0451157b8ed78867e41503fd02bc9afa0f80d11758d67a3f60e9daee6b138"
+  }
+}

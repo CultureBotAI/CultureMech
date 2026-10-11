@@ -1,0 +1,147 @@
+{
+  "terminal": true,
+  "phase": "presentation",
+  "checks": [],
+  "errors": [],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "4c2df727dbf13031b4473181f389ab53b3fa59f048abbec823a314bba3a5bd94"
+  },
+  "plan_sha256": "53bccdac789d6ff3e8cbb3df230fa241d0da39b21ed2acc5b11fd2367b7036be",
+  "context_sha256": "51b2cbe0e68dafaa7d155bd838c04e863169fc1de75e6ec64a856e77d7617bc3",
+  "preview_validation_sha256": "9025c39dfb7ea93a3281fced9bf335d6558a59a3f886ea9a75f082b585acbae2",
+  "ignored_files_included": true,
+  "code_sha256": {
+    "scripts/review_halobacteria_ingredient_family.py": "fe9cb9d40d95c4676a46893ad9e474f1311d0d10505440b334e0ca16871dbffe",
+    "tests/test_halobacteria_ingredient_family.py": "757ef474cd34b1f83d72e02ee53d1e95aa68d61e1de5676f6c20622cf400c472",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-family/audit.py": "bb74b1837dcc33da99ce9bac4cda1ac829b019f893f6233ba58f97d866e31085"
+  },
+  "applied_audit": {
+    "M1064": {
+      "old_quantities": 12,
+      "nodes": 12,
+      "claims": 42,
+      "evidence": 25,
+      "references": 3
+    },
+    "J1007": {
+      "old_quantities": 9,
+      "nodes": 12,
+      "claims": 35,
+      "evidence": 13,
+      "references": 2
+    },
+    "J168": {
+      "old_quantities": 9,
+      "nodes": 10,
+      "claims": 27,
+      "evidence": 12,
+      "references": 2
+    },
+    "M159": {
+      "old_quantities": 10,
+      "nodes": 10,
+      "claims": 32,
+      "evidence": 21,
+      "references": 2
+    },
+    "M160": {
+      "old_quantities": 11,
+      "nodes": 11,
+      "claims": 35,
+      "evidence": 23,
+      "references": 2
+    }
+  },
+  "records": [
+    {
+      "key": "M1064",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "high_metal",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 11
+    },
+    {
+      "key": "J1007",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "data_quality_flags",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state",
+        "preparation_steps"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "J168",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "high_metal",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state",
+        "preparation_steps"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "M159",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "high_metal",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state",
+        "variant_children"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "M160",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "high_metal",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state",
+        "variant_children"
+      ],
+      "prior_history_spans_preserved": 7
+    }
+  ],
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "4c2df727dbf13031b4473181f389ab53b3fa59f048abbec823a314bba3a5bd94"
+  }
+}

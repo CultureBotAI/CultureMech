@@ -1,0 +1,34 @@
+{
+  "terminal": true,
+  "command": [
+    "/tmp/culturemech-goal-py313-20261007/bin/python",
+    "-m",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q",
+    "tests/test_dsmz1157_1164_stocks.py",
+    "tests/test_dsmz803_1046_1065_water.py",
+    "tests/test_komodo_concentration_final_batch.py",
+    "tests/test_medium_concentration_batch.py",
+    "tests/test_solution_concentration_batch.py",
+    "tests/test_record_io.py",
+    "tests/test_concentration_plausibility.py",
+    "--junitxml",
+    "/tmp/ingredient-media-20261007/stocks-1157-focused-recheck.xml"
+  ],
+  "exit_code": 0,
+  "log": "/tmp/ingredient-media-20261007/stocks-1157-focused-recheck.log",
+  "suites": [
+    {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "156",
+      "time": "70.501",
+      "timestamp": "2026-10-08T01:58:41.344963-07:00",
+      "hostname": "Marcins-MacBook-Pro-2.local"
+    }
+  ]
+}

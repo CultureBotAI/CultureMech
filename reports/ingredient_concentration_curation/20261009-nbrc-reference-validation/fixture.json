@@ -1,0 +1,44 @@
+{
+  "terminal": true,
+  "phase": "fixture",
+  "checks": [],
+  "code_sha256": {
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "tests/test_recipe_nbrc_references.py": "bd7a993f246eb1482f4181c49a2d3501731c4cca2cbb8369a36afb9576ba4019"
+  },
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "d0d0451157b8ed78867e41503fd02bc9afa0f80d11758d67a3f60e9daee6b138"
+  },
+  "fixture": "tests/fixtures/recipe_references/NBRC1219.json",
+  "fixture_sha256": "c5982f395bd18ae3fef00123e20b37137edf18417e36c6550ea299ff6f31cd2c",
+  "capture_metadata": {
+    "url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1219",
+    "response_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1219",
+    "http_status": 200,
+    "sha256": "38cd19466f30cbe2c685b36bfb54db12c4ab4ddd11b231bdc10d370e9ff15d1d",
+    "accessed_at": "2026-10-09T00:42:01.984726+00:00",
+    "encoding": "utf-8"
+  },
+  "original_failure": {
+    "is_valid": false,
+    "reference_id": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1219",
+    "supporting_text": "Distilled water 900 mL",
+    "severity": "ERROR",
+    "message": "Text part not found as substring: 'Distilled water 900 mL'",
+    "match_result": {
+      "found": false,
+      "similarity_score": 0.0,
+      "matched_text": null,
+      "match_location": null,
+      "error_message": "Text part not found as substring: 'Distilled water 900 mL'",
+      "suggested_fix": null,
+      "best_match": null
+    },
+    "path": "evidence[1].snippet"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "d0d0451157b8ed78867e41503fd02bc9afa0f80d11758d67a3f60e9daee6b138"
+  }
+}

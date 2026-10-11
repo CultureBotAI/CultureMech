@@ -1,0 +1,46 @@
+{
+  "terminal": true,
+  "records_applied": 0,
+  "application_enabled": false,
+  "records_rebuilt_exactly": [
+    {
+      "key": "K161",
+      "after_sha256": "17690510cc1d91151b68f7cf5b79158b3ef07b5ff8389c7c07e393e979db70f7",
+      "claims": 143
+    },
+    {
+      "key": "D161",
+      "after_sha256": "e4930e4ceaf68ffbea48767e64811a882c358cb77fb8c5d2dbd866568e23179f",
+      "claims": 171
+    },
+    {
+      "key": "S209",
+      "after_sha256": "54b71f4e04abc9a9f0f95c37b0172b65e614e2bfbd8362dc73905c5f1c2684c2",
+      "claims": 23
+    },
+    {
+      "key": "S241",
+      "after_sha256": "3ad6e16dcff1f675260d599c644e49992fa8d76623e0889caaba21fd1e22bfab",
+      "claims": 27
+    },
+    {
+      "key": "S277",
+      "after_sha256": "e86734d13af7f6d5c3892fa7b27b69558a366aadf2fd0de2b570d67d74309c2d",
+      "claims": 52
+    },
+    {
+      "key": "S5980",
+      "after_sha256": "b8b5efd085ffa7d0f4e3da6ccf82c0de49b364082867d531beefa757fa3c5950",
+      "claims": 17
+    }
+  ],
+  "plan_sha256": "dc2a0e96231feac52125245dc55f41d3deb937970a06d151fba10d2fd63d7a4a",
+  "builder_sha256": "5c9a586eb9bb6bae87c35729026cab89623d1059e034e1c48fd2bf4038919b6e",
+  "context_sha256": "7c14648ed630e165a4ebc834b0ff55f560e11cfc50f1507a6776b90c99b413b0",
+  "historical_preview_sha256": "851df9cfa71e498f73cd0618ca8f4d2a52b2d24822565189e512eed6b4382d38",
+  "historical_builder_sha256": "c4256ca112ed63e1c785ce3e5f4f1c1d7bdb689e5318b8e9a23cea6ca9c9b04f",
+  "normalized_count": 15910,
+  "normalized_sha256": "746bda4b9dd276ab1077245cf751a5c652fd697e6f355cb7183b49f7f93edd71",
+  "normalized_unchanged": true,
+  "reason": "Replace assigned lambda with an equivalent local def for Ruff E731; current builder reproduces all proposed YAML bytes, claims and lineage. Historical receipt and plan remain immutable."
+}

@@ -1,0 +1,75 @@
+{
+  "terminal": true,
+  "records_edited": 0,
+  "authoritative_schema_edited": false,
+  "all_record_goal_complete": false,
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "linkml.generators.pythongen",
+        "/tmp/ingredient-media-20261007/solution-evidence-schema-preview/culturemech.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/next-schema-prototype-0.log",
+      "log_sha256": "12e2be06fde2b7ff06a7cd6c599ac80ee21ffc5af36a482a575b3908a5320814"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "linkml.generators.jsonschemagen",
+        "/tmp/ingredient-media-20261007/solution-evidence-schema-preview/culturemech.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/next-schema-prototype-1.log",
+      "log_sha256": "9d73bb91851d25b9a8ee6a8800117707d9a702147d5ebafe9cc5a49f87710e1a"
+    }
+  ],
+  "errors": [
+    "AssertionError: "
+  ],
+  "schema_sha256": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a",
+  "proposed_schema": "/tmp/ingredient-media-20261007/solution-evidence-schema-preview/culturemech.yaml",
+  "proposed_schema_sha256": "4c05b35859f769cfad80ca7b597f01e38ac5dee6d5948dfe0a334e137e2ea138",
+  "proposed_slot": {
+    "description": "Evidence for solution-level formulation, nested stock additions and preparation claims. Ingredient concentration evidence belongs on the relevant composition entry. Scope each claim to its exact field path and preparation stage in the evidence explanation.",
+    "range": "EvidenceItem",
+    "multivalued": true,
+    "recommended": false,
+    "inlined_as_list": true
+  },
+  "baseline_records_valid": [
+    "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+    "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+    "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+    "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml"
+  ],
+  "negative_cases": [
+    {
+      "name": "unknown_root",
+      "errors": [
+        "Additional properties are not allowed ('unreviewed_field' was unexpected) in /"
+      ]
+    },
+    {
+      "name": "unknown_evidence",
+      "errors": [
+        "Additional properties are not allowed ('unreviewed_field' was unexpected) in /evidence/0"
+      ]
+    },
+    {
+      "name": "inline_evidence",
+      "errors": [
+        "Additional properties are not allowed ('evidence' was unexpected) in /solutions/0"
+      ]
+    }
+  ],
+  "generated_dataclass_roundtrip": true,
+  "generated_artifacts": {
+    "/tmp/ingredient-media-20261007/solution-evidence-schema-preview/culturemech_dataclasses.py": "35fcea8702dd9d154789ba5017368e9d89f8008dcba2eebfe1e2afa8a53215c7",
+    "/tmp/ingredient-media-20261007/solution-evidence-schema-preview/culturemech.schema.json": "0c6fd2908979dfbf77d1abaff09069e838998858720ec24314319a64d121f78f"
+  },
+  "reference_results": []
+}

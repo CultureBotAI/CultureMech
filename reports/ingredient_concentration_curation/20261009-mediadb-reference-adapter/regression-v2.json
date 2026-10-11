@@ -1,0 +1,79 @@
+{
+  "terminal": true,
+  "phase": "regression",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "--no-cov",
+        "-q",
+        "tests/test_recipe_komodo_references.py",
+        "tests/test_recipe_mediadb_references.py",
+        "tests/test_recipe_nbrc_references.py",
+        "tests/test_recipe_pdf_references.py",
+        "tests/test_recipe_references.py",
+        "tests/test_mediadb_ingredient_exceptions.py",
+        "tests/test_kaminskyj_stocks.py"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-reference-adapter/regression-v2-00.log",
+      "log_sha256": "00537c3e6c6fb20a9963b93e9d5ab5444037fc8a13e0bb4553f3c5611a20612f"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "src/culturemech/validation/recipe_references.py",
+        "tests/test_recipe_mediadb_references.py"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-reference-adapter/regression-v2-01.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "--line-length",
+        "100",
+        "src/culturemech/validation/recipe_references.py",
+        "tests/test_recipe_mediadb_references.py"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-reference-adapter/regression-v2-02.log",
+      "log_sha256": "b9cf511501d306d2bd8355ccb165c8ddc0a6fdd62d7c72c4a7b1795cf8934c8c"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-reference-adapter/regression-v2-03.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "records_edited": 0,
+  "evidence_entries_added": 0,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "started_at": "2026-10-09T20:18:34.208415+00:00",
+  "normalized_count": 15910,
+  "inventory_before_sha256": "19c45017d3210c6bc2c2fde0ec7a2f2c4a4498191af394cb351249b3299f6a05",
+  "code_before_sha256": "82f9ce3057063e7493274c335c6b5f6c39d4eccd639d5d60117fcc3ff5d0f64d",
+  "adapter_sha256": "79923b9ef4c9662b67d907fccb9fa24aeab1a9e805face7d3e1e86132a9860a0",
+  "tests_sha256": "de4c2b6e7d7ceb0ce0b5c96b7648141c7ad89d70983a107cc540f4e867fb0343",
+  "helper_sha256": "ae1872eed9c419b978084f1e709c43200d708b4a29072bf15f64c3f5f2bda6f4",
+  "passed": true,
+  "inventory_after_sha256": "19c45017d3210c6bc2c2fde0ec7a2f2c4a4498191af394cb351249b3299f6a05",
+  "normalized_inventory_unchanged": true,
+  "code_unchanged_during_checks": true,
+  "finished_at": "2026-10-09T20:19:22.659343+00:00"
+}

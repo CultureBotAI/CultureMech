@@ -1,0 +1,16 @@
+{
+  "terminal": true,
+  "applied": true,
+  "records_changed": 4,
+  "counts": {
+    "new_evidence": 45,
+    "new_references": 8,
+    "new_curation_history": 4,
+    "stock_descriptors_added": 8,
+    "quantity_corrections": 2,
+    "stock_nodes_relocated": 31,
+    "unsupported_quantity_slots_removed": 25,
+    "stock_stage_concentrations_rebased": 4,
+    "new_quantity_slots": 2
+  }
+}

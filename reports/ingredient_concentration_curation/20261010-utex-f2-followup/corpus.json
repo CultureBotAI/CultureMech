@@ -1,0 +1,107 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "corpus",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/corpus-000.log",
+      "log_sha256": "e7a48e6e8ed0f78d7fc573bee52fa53a11fd99dd36405642430dd11568deb251"
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/corpus-001.log",
+      "log_sha256": "eb7360e4d6ac289a3c075ae3f26d2a32b53e6b2da8d03073cfda3e697295cbc0"
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/corpus-002.log",
+      "log_sha256": "f1aa6f9d98567175eea012854ad874f5743dc1c9baba240bba2b8e50add32ccc"
+    },
+    {
+      "command": [
+        "just",
+        "check-mim-label-index"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/corpus-003.log",
+      "log_sha256": "df0a76085c51b86963f1b33545ff48e844a4b36789c3efcd16d28885d55d71f7"
+    },
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/corpus-004.log",
+      "log_sha256": "09a2922082db841587410042dc33d7d3f72b2601f1d6b6f2b33322471ee47f2c"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/corpus-005.log",
+      "log_sha256": "107699d1907d6141144d03e94ae47e139bb12873acba42ec5a1598c2142a8eb8"
+    }
+  ],
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "plan_sha256": "2e9259ca340aaf5f4fb28a2ef280390470d2e5da3e37c968e8a0dfed7d87f74c",
+  "source_sha256": "2da2c7f0d0df2c65aa9e0980e757c3ff2bfdbf08290c28da22e3563bcff2e2b2",
+  "code_sha256": {
+    "scripts/review_utex_f2_followup.py": "fc4b034678735a1d3abcbd68a0d5e5966d2a23bb942ac9a8d4c6acfb2d5b2b86",
+    "tests/test_utex_f2_followup.py": "a68b820821a7f236168c7eb874a81e44c8550cd5746e0ca8e8630f0caf32af58"
+  },
+  "inventory_before_sha256": "3a9d681a1bef73f7948f0579e8622a491bf2b3888b7206bae677b65400f2e7b0",
+  "source_checks": [
+    {
+      "reference": "doi:10.1016/j.biortech.2017.04.008",
+      "capture_available": true,
+      "automatic_reference_pass_asserted": false
+    },
+    {
+      "reference": "DOI:10.1007/s10126-021-10037-4",
+      "capture_available": true,
+      "automatic_reference_pass_asserted": false
+    },
+    {
+      "reference": "DOI:10.1104/pp.18.00453",
+      "capture_available": false,
+      "automatic_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10126-021-10037-4/MediaObjects/10126_2021_10037_MOESM1_ESM.pdf",
+      "capture_available": true,
+      "automatic_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://utex.org/products/f-2-nh4-medium",
+      "capture_available": true,
+      "automatic_reference_pass_asserted": false
+    }
+  ],
+  "table_rows_and_unit_headings_matched": true,
+  "inventory_after_sha256": "3a9d681a1bef73f7948f0579e8622a491bf2b3888b7206bae677b65400f2e7b0",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

@@ -1,0 +1,62 @@
+{
+  "terminal": true,
+  "passed": true,
+  "steps": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/tmp/utex-chev-reconcile.py",
+        "reports"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/tmp/utex-chev-reconcile.py",
+        "cumulative"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/tmp/utex-chev-reconcile.py",
+        "indexes"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/tmp/utex-chev-reconcile.py",
+        "retention"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/tmp/utex-chev-checkpoint.py",
+        "post"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/tmp/utex-chev-checkpoint.py",
+        "corpus"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/tmp/utex-chev-checkpoint.py",
+        "fast"
+      ],
+      "returncode": 0
+    }
+  ]
+}

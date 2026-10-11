@@ -4,6 +4,13 @@
 curation batches, not a claim that the corpus audit's findings have all been
 resolved. The historical full-corpus audit remains unchanged.
 
+**Publication update, 2026-10-11:** the curation packet is committed and pushed
+in [draft PR 577](https://github.com/CultureBotAI/CultureMech/pull/577).
+The [publication review](20261011-publication-review/README.md) records
+reproducibility fixes and remaining release holds. The PR is not merged and its
+branch is retained. Statements below about denied or unattempted publication
+describe the historical batch checkpoints, not this publication update.
+
 The [initial structural audit](../ingredient_concentration_review/20261005T175229Z/summary.md)
 produced one report for each of 15,910 normalized and 6,320 merged records at its
 pinned checkout. The follow-up coverage below measures subsequent curation

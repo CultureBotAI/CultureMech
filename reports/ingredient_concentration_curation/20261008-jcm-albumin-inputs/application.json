@@ -1,0 +1,56 @@
+{
+  "audit": {
+    "J201": {
+      "unsupported_quantity_slots_removed": 10,
+      "ingredient_context_notes_added": 1,
+      "new_quantity_slots": 2,
+      "stock_nodes_relocated": 1,
+      "stock_dose_basis_corrections": 1,
+      "stock_descriptors_added": 2,
+      "unquantified_carrier_nodes_added": 1,
+      "preparation_actions_corrected": 1,
+      "new_evidence": 11,
+      "new_references": 1,
+      "new_curation_history": 1,
+      "old_quantity_slots": 11,
+      "claims": 20,
+      "source_rows": 10
+    },
+    "J220": {
+      "unsupported_quantity_slots_removed": 8,
+      "new_quantity_slots": 2,
+      "stock_dose_basis_corrections": 3,
+      "stock_nodes_relocated": 3,
+      "stock_descriptors_added": 1,
+      "unquantified_carrier_nodes_added": 1,
+      "new_evidence": 24,
+      "new_references": 2,
+      "new_curation_history": 1,
+      "old_quantity_slots": 11,
+      "claims": 45,
+      "source_rows": 10
+    }
+  },
+  "terminal": true,
+  "application": {
+    "mode": "apply",
+    "records": 2,
+    "changed": 2,
+    "already_applied": 0,
+    "claims": 65
+  },
+  "verification": {
+    "mode": "verify",
+    "records": 2,
+    "changed": 0,
+    "already_applied": 2,
+    "claims": 65
+  },
+  "no_op_rerun": {
+    "mode": "apply",
+    "records": 2,
+    "changed": 0,
+    "already_applied": 2,
+    "claims": 65
+  }
+}

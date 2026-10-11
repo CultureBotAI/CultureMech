@@ -1,0 +1,685 @@
+{
+  "terminal": true,
+  "phase": "live",
+  "checks": [],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "506ccc96f0fa2c737b3a3a419ca7a47db1646b14cce0fdf7eec149da1fb284ea"
+  },
+  "sources": [
+    {
+      "key": "J201",
+      "url": "https://mediadive.dsmz.de/rest/medium/J201",
+      "sha256": "811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536",
+      "accessed_at": "2026-10-08T21:19:42.022210+00:00",
+      "matches_inspected_capture": true,
+      "formulation_evidence_available": true,
+      "issue": null
+    },
+    {
+      "key": "J220",
+      "url": "https://mediadive.dsmz.de/rest/medium/J220",
+      "sha256": "60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993",
+      "accessed_at": "2026-10-08T21:19:42.197655+00:00",
+      "matches_inspected_capture": true,
+      "formulation_evidence_available": true,
+      "issue": null
+    },
+    {
+      "key": "JCM201",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=201",
+      "sha256": "eec7768c3a12a00e699e649042b66d9ac12aa5304413b4825674c442d4d574a9",
+      "accessed_at": "2026-10-08T21:19:42.768318+00:00",
+      "matches_inspected_capture": true,
+      "formulation_evidence_available": false,
+      "issue": "source_unavailable: JCM returned no recipe"
+    },
+    {
+      "key": "JCM220",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+      "sha256": "1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a",
+      "accessed_at": "2026-10-08T21:19:43.099283+00:00",
+      "matches_inspected_capture": true,
+      "formulation_evidence_available": true,
+      "issue": null
+    }
+  ],
+  "records": {
+    "J201": {
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J201",
+          "supporting_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Neopeptone\",\n                        \"compound_id\": 263,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Neopeptone\",\n                        \"compound_id\": 263,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J201",
+          "supporting_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Bovine albumin\",\n                        \"compound_id\": 1681,\n                        \"condition\": \" Fraction V\",\n                        \"amount\": 50,\n                        \"unit\": \"g\",\n                        \"g_l\": 50,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Bovine albumin\",\n                        \"compound_id\": 1681,\n                        \"condition\": \" Fraction V\",\n                        \"amount\": 50,\n                        \"unit\": \"g\",\n                        \"g_l\": 50,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J201",
+          "supporting_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"HEPES\",\n                        \"compound_id\": 371,\n                        \"amount\": 6,\n                        \"unit\": \"g\",\n                        \"g_l\": 6,\n                        \"mmol_l\": 25.1773,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"HEPES\",\n                        \"compound_id\": 371,\n                        \"amount\": 6,\n                        \"unit\": \"g\",\n                        \"g_l\": 6,\n                        \"mmol_l\": 25.1773,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J201",
+          "supporting_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Trisodium citrate\",\n                        \"compound_id\": 1047,\n                        \"amount\": 0.7,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.7,\n                        \"mmol_l\": 2.71244,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Trisodium citrate\",\n                        \"compound_id\": 1047,\n                        \"amount\": 0.7,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.7,\n                        \"mmol_l\": 2.71244,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J201",
+          "supporting_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 27.7531,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 27.7531,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J201",
+          "supporting_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Sodium pyruvate\",\n                        \"compound_id\": 438,\n                        \"amount\": 0.8,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.8,\n                        \"mmol_l\": 7.27008,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Sodium pyruvate\",\n                        \"compound_id\": 438,\n                        \"amount\": 0.8,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.8,\n                        \"mmol_l\": 7.27008,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J201",
+          "supporting_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"N-Acetyl-D-glucosamine\",\n                        \"compound_id\": 1669,\n                        \"amount\": 0.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.4,\n                        \"mmol_l\": 1.80824,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"N-Acetyl-D-glucosamine\",\n                        \"compound_id\": 1669,\n                        \"amount\": 0.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.4,\n                        \"mmol_l\": 1.80824,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J201",
+          "supporting_text": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\": 2.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.2,\n                        \"mmol_l\": 26.1883,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\": 2.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.2,\n                        \"mmol_l\": 26.1883,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J201",
+          "supporting_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 900,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 900,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J201",
+          "supporting_text": "Add 200 ml of 7% gelatin.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add 200 ml of 7% gelatin.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J201",
+          "supporting_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Bovine albumin\",\n                        \"compound_id\": 1681,\n                        \"condition\": \" Fraction V\",\n                        \"amount\": 50,\n                        \"unit\": \"g\",\n                        \"g_l\": 50,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Bovine albumin\",\n                        \"compound_id\": 1681,\n                        \"condition\": \" Fraction V\",\n                        \"amount\": 50,\n                        \"unit\": \"g\",\n                        \"g_l\": 50,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J201",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        }
+      ],
+      "reference_issues": []
+    },
+    "J220": {
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J220",
+          "supporting_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Corn meal agar\",\n                        \"compound_id\": 702,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 17,\n                        \"unit\": \"g\",\n                        \"g_l\": 16.4093,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Corn meal agar\",\n                        \"compound_id\": 702,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 17,\n                        \"unit\": \"g\",\n                        \"g_l\": 16.4093,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "Corn meal agar (BD-Difco) 17.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Corn meal agar (BD-Difco) 17.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J220",
+          "supporting_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Phytone peptone\",\n                        \"compound_id\": 125,\n                        \"attribute\": \"BD-BBL\",\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 7.72201,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Phytone peptone\",\n                        \"compound_id\": 125,\n                        \"attribute\": \"BD-BBL\",\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 7.72201,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "Phytone peptone (BD-BBL) 8.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Phytone peptone (BD-BBL) 8.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J220",
+          "supporting_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.965251,\n                        \"mmol_l\": 5.54181,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.965251,\n                        \"mmol_l\": 5.54181,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "K2HPO4 1.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "K2HPO4 1.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J220",
+          "supporting_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.965251,\n                        \"mmol_l\": 7.09295,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.965251,\n                        \"mmol_l\": 7.09295,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "KH2PO4 1.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "KH2PO4 1.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J220",
+          "supporting_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.19305,\n                        \"mmol_l\": 0.783241,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.19305,\n                        \"mmol_l\": 0.783241,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "MgSO4\u00b77H2O 0.2 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MgSO4\u00b77H2O 0.2 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J220",
+          "supporting_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "Distilled water 1.0 L",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water 1.0 L",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J220",
+          "supporting_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Hemin\",\n                        \"compound_id\": 704,\n                        \"attribute\": \"0.1% in 0.05 N NaOH\",\n                        \"amount\": 15,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Hemin\",\n                        \"compound_id\": 704,\n                        \"attribute\": \"0.1% in 0.05 N NaOH\",\n                        \"amount\": 15,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "Hemin (0.1% in 0.05 N NaOH) 15.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Hemin (0.1% in 0.05 N NaOH) 15.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J220",
+          "supporting_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Hemin\",\n                        \"compound_id\": 704,\n                        \"attribute\": \"0.1% in 0.05 N NaOH\",\n                        \"amount\": 15,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Hemin\",\n                        \"compound_id\": 704,\n                        \"attribute\": \"0.1% in 0.05 N NaOH\",\n                        \"amount\": 15,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "Hemin (0.1% in 0.05 N NaOH) 15.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Hemin (0.1% in 0.05 N NaOH) 15.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J220",
+          "supporting_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"condition\": \" fraction V\",\n                        \"attribute\": \"20%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"condition\": \" fraction V\",\n                        \"attribute\": \"20%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "20% Bovine serum albumin, fraction V 10.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "20% Bovine serum albumin, fraction V 10.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J220",
+          "supporting_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"attribute\": \"50%\",\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"attribute\": \"50%\",\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "50% Glucose 1.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "50% Glucose 1.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J220",
+          "supporting_text": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Cysteine\",\n                        \"compound_id\": 492,\n                        \"attribute\": \"10%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Cysteine\",\n                        \"compound_id\": 492,\n                        \"attribute\": \"10%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "10% Cysteine 10.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "10% Cysteine 10.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J220",
+          "supporting_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"condition\": \" fraction V\",\n                        \"attribute\": \"20%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"condition\": \" fraction V\",\n                        \"attribute\": \"20%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "Hemin (0.1% in 0.05 N NaOH) 15.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Hemin (0.1% in 0.05 N NaOH) 15.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J220",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[1].title"
+        }
+      ],
+      "reference_issues": []
+    }
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "506ccc96f0fa2c737b3a3a419ca7a47db1646b14cce0fdf7eec149da1fb284ea"
+  }
+}

@@ -1,0 +1,409 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "preview-v3",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/Enriched_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-000.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/Enriched_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-001.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-es/enriched-seawater-medium.preview-v3.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-002.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-es/enriched-seawater-medium.preview-v3.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-003.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/ES_10_Enriched_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-004.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/ES_10_Enriched_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-005.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-es/es-over-10-enriched-seawater-medium.preview-v3.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-006.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-es/es-over-10-enriched-seawater-medium.preview-v3.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-007.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/ES_2_Enriched_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-008.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/ES_2_Enriched_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-009.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-es/es-over-2-enriched-seawater-medium.preview-v3.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-010.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-es/es-over-2-enriched-seawater-medium.preview-v3.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-011.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/ES_4_Enriched_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-012.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/ES_4_Enriched_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-013.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-es/es-over-4-enriched-seawater-medium.preview-v3.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-014.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-es/es-over-4-enriched-seawater-medium.preview-v3.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-015.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/1_2_Enriched_Seawater.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-016.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/1_2_Enriched_Seawater.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-017.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-es/one-half-enriched-seawater-medium.preview-v3.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-018.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-es/one-half-enriched-seawater-medium.preview-v3.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-019.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/2_3_Enriched_Seawater.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-020.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/2_3_Enriched_Seawater.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-021.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-es/two-thirds-enriched-seawater-medium.preview-v3.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-022.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-es/two-thirds-enriched-seawater-medium.preview-v3.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-023.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "--no-cov",
+        "tests/test_utex_es_concentrations.py"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-024.log",
+      "log_sha256": "06a41d9c8e5b19239701fa7f6394aeb2481981709943108d9ba44cbab281692b"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/review_utex_es_concentrations.py",
+        "tests/test_utex_es_concentrations.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-025.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "--line-length",
+        "100",
+        "scripts/review_utex_es_concentrations.py",
+        "tests/test_utex_es_concentrations.py"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-026.log",
+      "log_sha256": "b9cf511501d306d2bd8355ccb165c8ddc0a6fdd62d7c72c4a7b1795cf8934c8c"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/preview-v3-027.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "plan_sha256": "445e4809c5c8ac1b162ea7a26bd8eaa25a325bcb3b53eae93d2613bb483fe13e",
+  "code_sha256": {
+    "scripts/review_utex_es_concentrations.py": "95f34b1c86b1caf4c7294da5eed917417779f21d78feafda5e11ca2c7a6bd72e",
+    "tests/test_utex_es_concentrations.py": "450cea1d70cc63017a088474fd6ff9caaac4b1a4916f2d0b68d2f0df33c16eb2"
+  },
+  "inventory_before_sha256": "5fb7aa3854ad7d9a61f4d5b02b53487df4503f3cdcf137eaa516d7d74b5d2f75",
+  "source_checks": [
+    {
+      "url": "https://utex.org/products/enriched-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/es-over-10-enriched-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/es-over-2-enriched-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/es-over-4-enriched-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/one-half-enriched-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/two-thirds-enriched-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/enrichment-solution-for-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/ES-Fe-solution",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/p-ii-metal-solution",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/vitamin-b-12",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/biotin-vitamin-solution",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/thiamine-vitamin-solution",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:17439",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:49105",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://www.sigmaaldrich.com/US/en/product/sigma/t1270",
+      "mode": "web_tool_inspected_excerpt; not a complete HTTP capture",
+      "automatic_capture_pass": false
+    },
+    {
+      "url": "https://www.sigmaaldrich.com/US/en/product/sigma/50020",
+      "mode": "manually_inspected_web_tool_page; not a full HTTP capture",
+      "automatic_capture_pass": false
+    },
+    {
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:15978",
+      "mode": "manually_inspected_web_tool_page; not a full HTTP capture",
+      "automatic_capture_pass": false
+    }
+  ],
+  "manual_pdf_review_pages": 6,
+  "automatic_supplier_capture_pass_asserted": false,
+  "inventory_after_sha256": "5fb7aa3854ad7d9a61f4d5b02b53487df4503f3cdcf137eaa516d7d74b5d2f75",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

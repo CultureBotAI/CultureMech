@@ -1,0 +1,132 @@
+{
+  "terminal": true,
+  "records_edited": false,
+  "state": "Six additional unchanged baselines; shape checks, not proof of scientific correctness.",
+  "context_sha256": "3d49da91d43453a89330f892fe38dd7b2f10fe79233f827a6b89605aee933a15",
+  "schema_sha256": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a",
+  "normalized_count": 15910,
+  "normalized_sha256": "db8f5426f9aade2d77f947de6f5c4a756f3ed214bede448fbb31d273085da30f",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/desulfurobacterium_crinifex_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/next-829-expanded-baseline-0.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/desulfurobacterium_crinifex_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/next-829-expanded-baseline-1.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/desulfurobacterium_indicum_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/next-829-expanded-baseline-2.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/desulfurobacterium_indicum_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/next-829-expanded-baseline-3.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/thermodesulfobacterium_hydrogeniphilum_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/next-829-expanded-baseline-4.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/thermodesulfobacterium_hydrogeniphilum_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/next-829-expanded-baseline-5.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/TOGO_M2587_Desulfurobacterium_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/next-829-expanded-baseline-6.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/TOGO_M2587_Desulfurobacterium_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/next-829-expanded-baseline-7.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/solution_of_growth_stimulating_factors_medium_829.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/next-829-expanded-baseline-8.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/solution_of_growth_stimulating_factors_medium_829.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/next-829-expanded-baseline-9.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_1680_Growth-stimulating_factors.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/next-829-expanded-baseline-10.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/mediadive_1680_Growth-stimulating_factors.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/next-829-expanded-baseline-11.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    }
+  ],
+  "records_unchanged": true
+}

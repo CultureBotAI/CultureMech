@@ -1,0 +1,44 @@
+{
+  "terminal": true,
+  "passed": true,
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/song_cdm.yaml",
+      "report": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/records/288.md",
+      "claims": 17,
+      "report_sha256": "659d7676062abaf2ae2e452d4341f0ea54ca1871719d4622e42c57527ba18b65"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/song_optimal_cdm.yaml",
+      "report": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/records/289.md",
+      "claims": 24,
+      "report_sha256": "7ad62f0aa8493e0bf4c51a046e14c8afc12320882fdddb434c210ac1d45edc42"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_430_Defined_freshwater_medium_CoSO4.yaml",
+      "report": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/records/430.md",
+      "claims": 32,
+      "report_sha256": "3815f3e8407440fc54034525724834a877a00ef1fc4e4ac771572fc00f4ba2e4"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_460_Defined_freshwater_medium_CoCl2.yaml",
+      "report": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/records/460.md",
+      "claims": 32,
+      "report_sha256": "0f46dfb8b3c1679b06a7eb71bd22305a7218762e24ef005e931989252e692153"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mcn_medium_whitman.yaml",
+      "report": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/records/473.md",
+      "claims": 29,
+      "report_sha256": "f0b7b437a681bda4b8051cad6261e98d09c263812a71c4348be64938ac26e2bb"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mcna_medium_lupa.yaml",
+      "report": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/records/474.md",
+      "claims": 30,
+      "report_sha256": "19a7e1e0f2d4cf134605cc9d8200b7e8a3fbc4b9f28a558a721d5c041d097eba"
+    }
+  ],
+  "claim_rows": 164,
+  "all_record_goal_complete": false
+}

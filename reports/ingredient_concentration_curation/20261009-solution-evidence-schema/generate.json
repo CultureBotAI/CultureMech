@@ -1,0 +1,47 @@
+{
+  "terminal": true,
+  "phase": "generate",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "gen-dataclasses"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-solution-evidence-schema/generate-0.log",
+      "log_sha256": "050d914d8c85849eff568fdf487dc79591c951ae109e8d1be5203c1d0e5d2091"
+    },
+    {
+      "command": [
+        "just",
+        "gen-json-schema"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-solution-evidence-schema/generate-1.log",
+      "log_sha256": "0b9592eab131100df08f5a75d40bcd14ceba5345548b5b377daf7e74061e7ac8"
+    },
+    {
+      "command": [
+        "just",
+        "gen-docs"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-solution-evidence-schema/generate-2.log",
+      "log_sha256": "969dfc09651ef8cb6bc9dd9beb6f7867089de1995cf4b2298789490cf36d7c16"
+    }
+  ],
+  "errors": [
+    "FileNotFoundError: [Errno 2] No such file or directory: 'docs/schema/SolutionRecipe.md'"
+  ],
+  "records_edited": 0,
+  "all_record_goal_complete": false,
+  "normalized_before": "82e954649cedc505c58a3630b18afc0ddb4d9d30f77b75693172a95010987d00",
+  "ignored_files_included": true,
+  "code_before": {
+    "src/culturemech/schema/culturemech.yaml": "4c05b35859f769cfad80ca7b597f01e38ac5dee6d5948dfe0a334e137e2ea138",
+    "src/culturemech/schema/culturemech_dataclasses.py": "cc12db5b5d1232059ddb7cb6085ff6c908845e5f34dc589f265b944e3e9fcfbe",
+    "src/culturemech/schema/culturemech.schema.json": "9b9cf59bb30443b234cb36fe5990fd9b5ca862d3bb2bf0cf3ee0a78be773253b",
+    ".claude/skills/review-ingredient-concentrations/references/evidence-contract.md": "5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1",
+    "tests/test_dataclasses_current.py": "51cbc0edb86452eca0e0e885e5004ee9eba626f0dfa77762a55ccc318d24d0ec"
+  }
+}

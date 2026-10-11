@@ -1,0 +1,2758 @@
+{
+  "terminal": true,
+  "phase": "references",
+  "records_applied": 0,
+  "checks": [],
+  "code_sha256": {
+    "scripts/repair_methanofollis_family.py": "5c9a586eb9bb6bae87c35729026cab89623d1059e034e1c48fd2bf4038919b6e",
+    "tests/test_methanofollis_family.py": "bcc83c55d3511bfb36dc849c5caef8926034d2947c9370455566a44cb59cfbf7",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/audit.py": "8d75f631a9d4d12b7cf8f932e70834817c6bb7efc7e077f092b78d3a460fa82e",
+    "scripts/repair_rumen_bacteria_family.py": "d3c23bf4b7141ffcc038f596fc7cad69c19372a5ecedaee21dbf6d99950fdf36",
+    "scripts/repair_oteb_family.py": "90aa83324ff1b28708921a00c409f50b4c4bd12eb15f09ae8feb0e1010916795",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/repair_mediadive_stock_concentration_evidence.py": "1badfa99205690cf6082d95db7dafbd6d4927b617027bc61fbaaf9dbd597c974",
+    "scripts/review_medium_concentration_evidence.py": "ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a",
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "src/culturemech/validation/write_validated.py": "8e1e2185231caecbe3dc99908c783cd83340b1e93fa9115ff1445d4b3820897e",
+    "src/culturemech/schema/culturemech.yaml": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a"
+  },
+  "plan_sha256": "dc2a0e96231feac52125245dc55f41d3deb937970a06d151fba10d2fd63d7a4a",
+  "context_sha256": "7c14648ed630e165a4ebc834b0ff55f560e11cfc50f1507a6776b90c99b413b0",
+  "inventory_before": "746bda4b9dd276ab1077245cf751a5c652fd697e6f355cb7183b49f7f93edd71",
+  "sources": {
+    "D161": {
+      "version": 1,
+      "url": "https://mediadive.dsmz.de/rest/medium/161",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/161",
+      "http_status": 200,
+      "sha256": "53d710b65b9a45b9d21c2fddd18a86b41de41d18c0a4c2cbd7de44b0a2ef8666",
+      "accessed_at": "2026-10-09T08:54:10.622738+00:00"
+    },
+    "K161": {
+      "version": 1,
+      "url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+      "response_url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+      "http_status": 200,
+      "sha256": "82aa8cc39b07788dfc142a7c9cd96abd8942d9cb85e2b991d2a77af23c9ec1f4",
+      "accessed_at": "2026-10-09T08:54:11.393080+00:00"
+    },
+    "DSMZ161": {
+      "version": 2,
+      "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+      "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+      "http_status": 200,
+      "sha256": "8cc1d165274c4c0ce7a215cbe458c48d9880b183c7d62cbefa2d54e637d7625a",
+      "accessed_at": "2026-10-09T08:54:14.964059+00:00",
+      "pdf_sha256": "0f4ea6194efcb146abe36366dd72ce890643e9cfe39bc947a9df7281959478e0",
+      "pdf_pages": 2,
+      "media_type": "application/pdf",
+      "encoding": "utf-8",
+      "extraction": {
+        "library": "pypdf",
+        "version": "6.16.1",
+        "mode": "layout"
+      }
+    },
+    "S209": {
+      "version": 1,
+      "url": "https://mediadive.dsmz.de/rest/solution/209",
+      "response_url": "https://mediadive.dsmz.de/rest/solution/209",
+      "http_status": 200,
+      "sha256": "48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af",
+      "accessed_at": "2026-10-09T09:25:31.827836+00:00"
+    },
+    "S241": {
+      "version": 1,
+      "url": "https://mediadive.dsmz.de/rest/solution/241",
+      "response_url": "https://mediadive.dsmz.de/rest/solution/241",
+      "http_status": 200,
+      "sha256": "50cc42c209f550b7abc4a5f48b455553516220b6ef9613f481941f9e15f0b25d",
+      "accessed_at": "2026-10-09T09:25:32.630682+00:00"
+    },
+    "S277": {
+      "version": 1,
+      "url": "https://mediadive.dsmz.de/rest/solution/277",
+      "response_url": "https://mediadive.dsmz.de/rest/solution/277",
+      "http_status": 200,
+      "sha256": "f83e1562576e293e692b3d41757f5d7cef722b95c14c8262c42ffc7ee772ec5d",
+      "accessed_at": "2026-10-09T09:25:33.424350+00:00"
+    },
+    "S5980": {
+      "version": 1,
+      "url": "https://mediadive.dsmz.de/rest/solution/5980",
+      "response_url": "https://mediadive.dsmz.de/rest/solution/5980",
+      "http_status": 200,
+      "sha256": "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c",
+      "accessed_at": "2026-10-09T09:25:34.224918+00:00"
+    }
+  },
+  "records": {
+    "K161": {
+      "checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "NaHCO3 sodium bicarbonate SEED-cpd00242#cpd00971#cpd09249# 2.00 0.02",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaHCO3 sodium bicarbonate SEED-cpd00242#cpd00971#cpd09249# 2.00 0.02",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "D-Ca-pantothenate D-Ca-pantothenate SEED-cpd00063#cpd00644## 5.00E-5 1.94E-7",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "D-Ca-pantothenate D-Ca-pantothenate SEED-cpd00063#cpd00644## 5.00E-5 1.94E-7",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Lipoic acid Lipoic acid SEED-cpd00541### 5.00E-5 2.44E-7",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Lipoic acid Lipoic acid SEED-cpd00541### 5.00E-5 2.44E-7",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Na2S x 9 H2O Sodium sulfide hydrate SEED-cpd00239#cpd00971## 0.50 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Na2S x 9 H2O Sodium sulfide hydrate SEED-cpd00239#cpd00971## 0.50 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Cysteine-HCl x H2O Cysteine-HCl SEED-cpd00084#cpd00099## 0.50 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Cysteine-HCl x H2O Cysteine-HCl SEED-cpd00084#cpd00099## 0.50 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Isovaleric acid Isovaleric acid SEED-cpd05178### 0.50 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Isovaleric acid Isovaleric acid SEED-cpd05178### 0.50 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "CO2 CO2 SEED-cpd00011### null null",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CO2 CO2 SEED-cpd00011### null null",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Nicotinic acid Niacin SEED-cpd00218### 5.00E-5 4.10E-7",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Nicotinic acid Niacin SEED-cpd00218### 5.00E-5 4.10E-7",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Riboflavin Riboflavin SEED-cpd00220### 5.00E-5 1.33E-7",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Riboflavin Riboflavin SEED-cpd00220### 5.00E-5 1.33E-7",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "K2HPO4 di Potassium hydrogen phosphate SEED-cpd00009#cpd00205## 0.30 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "K2HPO4 di Potassium hydrogen phosphate SEED-cpd00009#cpd00205## 0.30 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "KH2PO4 Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.30 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "KH2PO4 Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.30 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "CoSO4 x 7 H2O CoSO4 SEED-cpd00048#cpd00149## 1.80E-3 6.38E-6",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CoSO4 x 7 H2O CoSO4 SEED-cpd00048#cpd00149## 1.80E-3 6.38E-6",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[11].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Vitamin B12 Coenzyme B12 SEED-cpd00166### 1.00E-6 6.33E-10",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Vitamin B12 Coenzyme B12 SEED-cpd00166### 1.00E-6 6.33E-10",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[12].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "MgSO4 x 7 H2O Magnesium sulfate SEED-cpd00048#cpd00254## 0.16 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MgSO4 x 7 H2O Magnesium sulfate SEED-cpd00048#cpd00254## 0.16 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[13].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Folic acid Folic acid SEED-cpd00393### 2.00E-5 4.56E-8",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Folic acid Folic acid SEED-cpd00393### 2.00E-5 4.56E-8",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[14].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Thiamine-HCl x 2 H2O Thiamine-HCl SEED-cpd00099#cpd00305## 5.00E-5 1.49E-7",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Thiamine-HCl x 2 H2O Thiamine-HCl SEED-cpd00099#cpd00305## 5.00E-5 1.49E-7",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[15].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Pyridoxine HCl Pyridoxine HCl SEED-cpd00099#cpd00263## 1.00E-4 4.90E-7",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Pyridoxine HCl Pyridoxine HCl SEED-cpd00099#cpd00263## 1.00E-4 4.90E-7",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[16].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Na2MoO4 x 2 H2O Na2MoO4 SEED-cpd00971#cpd11145## 1.00E-4 4.13E-7",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Na2MoO4 x 2 H2O Na2MoO4 SEED-cpd00971#cpd11145## 1.00E-4 4.13E-7",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[17].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Resazurin Resazurin SEED-cpd08053### 1.00E-3 4.37E-6",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Resazurin Resazurin SEED-cpd08053### 1.00E-3 4.37E-6",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[18].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "MnSO4 x H2O MnSO4 SEED-cpd00030#cpd00048## 5.00E-3 2.96E-5",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MnSO4 x H2O MnSO4 SEED-cpd00030#cpd00048## 5.00E-3 2.96E-5",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[19].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "p-Aminobenzoic acid p Aminobenzoic acid (PABA) SEED-cpd00443### 5.00E-5 3.68E-7",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "p-Aminobenzoic acid p Aminobenzoic acid (PABA) SEED-cpd00443### 5.00E-5 3.68E-7",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[20].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "(NH4)2SO4 Ammonium sulfate SEED-cpd00013#cpd00048## 0.30 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "(NH4)2SO4 Ammonium sulfate SEED-cpd00013#cpd00048## 0.30 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[21].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "CuSO4 x 5 H2O CuSO4 SEED-cpd00048#cpd00058## 1.00E-4 4.00E-7",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CuSO4 x 5 H2O CuSO4 SEED-cpd00048#cpd00058## 1.00E-4 4.00E-7",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[22].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Nitrilotriacetic acid Nitrilotriacetic acid SEED-cpd10393### 0.01 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Nitrilotriacetic acid Nitrilotriacetic acid SEED-cpd10393### 0.01 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[23].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "H2O H2O SEED-cpd00001### null null",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "H2O H2O SEED-cpd00001### null null",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[24].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "KOH KOH SEED-cpd00001#cpd00205## null null",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "KOH KOH SEED-cpd00001#cpd00205## null null",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[25].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "2-Methylbutyric acid 2-methylbutyric acid 2-methylbutyric acid# 0.50 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "2-Methylbutyric acid 2-methylbutyric acid 2-methylbutyric acid# 0.50 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[26].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Na2SeO3 x 5 H2O Sodium selenite SEED-cpd00971#cpd03387## 3.00E-6 1.13E-8",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Na2SeO3 x 5 H2O Sodium selenite SEED-cpd00971#cpd03387## 3.00E-6 1.13E-8",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[27].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "ZnSO4 x 7 H2O ZnSO4 SEED-cpd00034#cpd00048## 1.80E-3 6.25E-6",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "ZnSO4 x 7 H2O ZnSO4 SEED-cpd00034#cpd00048## 1.80E-3 6.25E-6",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[28].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Distilled water H2O SEED-cpd00001### null null",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water H2O SEED-cpd00001### null null",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[29].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Biotin Biotin SEED-cpd00104### 2.00E-5 8.23E-8",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Biotin Biotin SEED-cpd00104### 2.00E-5 8.23E-8",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[30].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "H2 H2 SEED-cpd11640### null null",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "H2 H2 SEED-cpd11640### null null",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[31].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "FeSO4 x 7 H2O Iron sulfate SEED-cpd00048#cpd10515## 3.00E-3 1.08E-5",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "FeSO4 x 7 H2O Iron sulfate SEED-cpd00048#cpd10515## 3.00E-3 1.08E-5",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[32].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Isobutyric acid isobutyric acid SEED-cpd01711### 0.50 0.01",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Isobutyric acid isobutyric acid SEED-cpd01711### 0.50 0.01",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[33].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Valeric acid Valeric acid SEED-cpd00597### 0.50 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Valeric acid Valeric acid SEED-cpd00597### 0.50 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[34].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "CaCl2 x 2 H2O Calcium chloride SEED-cpd00063#cpd00099## 9.00E-3 6.15E-5",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CaCl2 x 2 H2O Calcium chloride SEED-cpd00063#cpd00099## 9.00E-3 6.15E-5",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[35].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "NiCl2 x 6 H2O NiCl2 SEED-cpd00099#cpd00244## 3.00E-4 1.26E-6",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NiCl2 x 6 H2O NiCl2 SEED-cpd00099#cpd00244## 3.00E-4 1.26E-6",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[36].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "clarified rumen fluid clarified rumen fluid rich-rumen# 300.00 0.30",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "clarified rumen fluid clarified rumen fluid rich-rumen# 300.00 0.30",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[37].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "H3BO3 Boric acid SEED-cpd09225### 1.00E-4 1.61E-6",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "H3BO3 Boric acid SEED-cpd09225### 1.00E-4 1.61E-6",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[38].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "NaCl NaCl SEED-cpd00099#cpd00971## 0.61 0.01",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaCl NaCl SEED-cpd00099#cpd00971## 0.61 0.01",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[39].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "KAl(SO4)2 x 12 H2O potassium alum alum# 2.00E-4 4.20E-7",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "KAl(SO4)2 x 12 H2O potassium alum alum# 2.00E-4 4.20E-7",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[40].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Trypticase (BBL) Trypticase rich-peptone# 1.00 null",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Trypticase (BBL) Trypticase rich-peptone# 1.00 null",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[41].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Yeast extract (Difco) Yeast extract rich-peptone# 1.00 null",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Yeast extract (Difco) Yeast extract rich-peptone# 1.00 null",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[42].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Gram & Mol amounts are per Liter of medium.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Gram & Mol amounts are per Liter of medium.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Dissolve ingredients (except bicarbonate, vitamins, cysteine and sulfide) and sparge\nmedium for 30 - 45 min with 80% H2 and 20% CO2 gas mixture to make it anoxic. Add and\ndissolve bicarbonate and adjust pH to 6.8, then distribute under same gas atmosphere into\nanoxic Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine\nand sulfide from sterile anoxic stock solutions autoclaved under 100% N2 gas atmosphere.\nVitamins are prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust\npH of complete medium to 6.5. For incubation use sterile 80% H2 and 20% CO2 gas\nmixture at two atmospheres of pressure.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Dissolve ingredients (except bicarbonate, vitamins, cysteine and sulfide) and sparge\nmedium for 30 - 45 min with 80% H2 and 20% CO2 gas mixture to make it anoxic. Add and\ndissolve bicarbonate and adjust pH to 6.8, then distribute under same gas atmosphere into\nanoxic Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine\nand sulfide from sterile anoxic stock solutions autoclaved under 100% N2 gas atmosphere.\nVitamins are prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust\npH of complete medium to 6.5. For incubation use sterile 80% H2 and 20% CO2 gas\nmixture at two atmospheres of pressure.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "parent_media.evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[1].title"
+        }
+      ],
+      "issues": []
+    },
+    "D161": {
+      "checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "K2HPO4                                                             0.30          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "K2HPO4                                                             0.30          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "KH2PO4                                                             0.30          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "KH2PO4                                                             0.30          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "(NH4)2SO4                                                          0.30          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "(NH4)2SO4                                                          0.30          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "NaCl                                                               0.60          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaCl                                                               0.60          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "MgSO4 x 7 H2O                                                      0.13          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MgSO4 x 7 H2O                                                      0.13          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "CaCl2 x 2 H2O (0.1% w/v)                                           8.00        ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CaCl2 x 2 H2O (0.1% w/v)                                           8.00        ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "FeSO4 x 7 H2O (0.1% w/v in 0.1 N        H2SO4)                     2.00        ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "FeSO4 x 7 H2O (0.1% w/v in 0.1 N        H2SO4)                     2.00        ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Yeast extract (DIFCO)                                              1.00          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Yeast extract (DIFCO)                                              1.00          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Trypticase (BBL)                                                   1.00          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Trypticase (BBL)                                                   1.00          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Sodium resazurin (0.1% w/v)                                        0.50        ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Sodium resazurin (0.1% w/v)                                        0.50        ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "NaHCO3                                                             2.00          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaHCO3                                                             2.00          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "L-Cysteine HCl x H2O                                               0.50          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "L-Cysteine HCl x H2O                                               0.50          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[11].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Na2S x 9 H2O                                                       0.50          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Na2S x 9 H2O                                                       0.50          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[12].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Distilled water                                                 660.00         ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water                                                 660.00         ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[13].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Nitrilotriacetic acid                                             1.50         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Nitrilotriacetic acid                                             1.50         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "MgSO4 x 7 H2O                                                     3.00         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MgSO4 x 7 H2O                                                     3.00         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "MnSO4 x H2O                                                       0.50         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MnSO4 x H2O                                                       0.50         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "NaCl                                                              1.00         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaCl                                                              1.00         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "FeSO4 x 7 H2O                                                     0.10         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "FeSO4 x 7 H2O                                                     0.10         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "CoSO4 x 7 H2O                                                     0.18         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CoSO4 x 7 H2O                                                     0.18         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "CaCl2 x 2 H2O                                                     0.10         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CaCl2 x 2 H2O                                                     0.10         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "ZnSO4 x 7 H2O                                                     0.18         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "ZnSO4 x 7 H2O                                                     0.18         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "CuSO4 x 5 H2O                                                     0.01         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CuSO4 x 5 H2O                                                     0.01         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "AlK(SO4)2 x 12 H2O                                                0.02         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "AlK(SO4)2 x 12 H2O                                                0.02         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "H3BO3                                                             0.01         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "H3BO3                                                             0.01         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Na2MoO4 x 2 H2O                                                   0.01         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Na2MoO4 x 2 H2O                                                   0.01         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[11].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "NiCl2 x 6 H2O                                                     0.03         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NiCl2 x 6 H2O                                                     0.03         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[12].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Na2SeO3 x 5 H2O                                                   0.30       mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Na2SeO3 x 5 H2O                                                   0.30       mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[13].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Na2WO4 x 2 H2O                                                    0.40       mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Na2WO4 x 2 H2O                                                    0.40       mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[14].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Distilled water                                               1000.00         ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water                                               1000.00         ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[15].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust\nfinal to pH 7.0 with KOH.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust\nfinal to pH 7.0 with KOH.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[16].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Isobutyric acid                                                  23.00        ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Isobutyric acid                                                  23.00        ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "DL-2-Methylbutyric acid                                          27.00        ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "DL-2-Methylbutyric acid                                          27.00        ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Valeric acid                                                     27.00        ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Valeric acid                                                     27.00        ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Isovaleric acid                                                  27.00        ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Isovaleric acid                                                  27.00        ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Distilled water                                                896.00         ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water                                                896.00         ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Adjust pH to 7.5 with concentrated NaOH.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Adjust pH to 7.5 with concentrated NaOH.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Biotin                                                           20.00       mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Biotin                                                           20.00       mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Folic acid                                                       20.00       mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Folic acid                                                       20.00       mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Pyridoxine hydrochloride                                       100.00        mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Pyridoxine hydrochloride                                       100.00        mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Thiamine HCl                                                     50.00       mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Thiamine HCl                                                     50.00       mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Riboflavin                                                       50.00       mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Riboflavin                                                       50.00       mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Nicotinic acid                                                   50.00       mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Nicotinic acid                                                   50.00       mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Calcium D-(+)-pantothenate                                       50.00       mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Calcium D-(+)-pantothenate                                       50.00       mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Vitamin B12                                                       1.00       mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Vitamin B12                                                       1.00       mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "p-Aminobenzoic acid                                              50.00       mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "p-Aminobenzoic acid                                              50.00       mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "(DL)-alpha-Lipoic acid                                           50.00       mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "(DL)-alpha-Lipoic acid                                           50.00       mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Distilled water                                               1000.00         ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water                                               1000.00         ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "Clarified rumen fluid                                           300.00         ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Clarified rumen fluid                                           300.00         ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "variant_children[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=161",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[1].title"
+        }
+      ],
+      "issues": []
+    },
+    "S209": {
+      "checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/209",
+          "supporting_text": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Isobutyric acid\",\n                \"compound_id\": 222,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 23,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Isobutyric acid\",\n                \"compound_id\": 222,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 23,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/209",
+          "supporting_text": "{\n                \"recipe_order\": 2,\n                \"compound\": \"DL-2-Methylbutyric acid\",\n                \"compound_id\": 223,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 2,\n                \"compound\": \"DL-2-Methylbutyric acid\",\n                \"compound_id\": 223,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/209",
+          "supporting_text": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Valeric acid\",\n                \"compound_id\": 224,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Valeric acid\",\n                \"compound_id\": 224,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/209",
+          "supporting_text": "{\n                \"recipe_order\": 4,\n                \"compound\": \"Isovaleric acid\",\n                \"compound_id\": 225,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 4,\n                \"compound\": \"Isovaleric acid\",\n                \"compound_id\": 225,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/209",
+          "supporting_text": "{\n                \"recipe_order\": 5,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 896,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 5,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 896,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/209",
+          "supporting_text": "Adjust pH to 7.5 with concentrated NaOH.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Adjust pH to 7.5 with concentrated NaOH.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/209",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        }
+      ],
+      "issues": []
+    },
+    "S241": {
+      "checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/241",
+          "supporting_text": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Nitrilotriacetic acid\",\n                \"compound_id\": 189,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.5,\n                \"unit\": \"g\",\n                \"g_l\": 1.5,\n                \"mmol_l\": 7.84765,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Nitrilotriacetic acid\",\n                \"compound_id\": 189,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.5,\n                \"unit\": \"g\",\n                \"g_l\": 1.5,\n                \"mmol_l\": 7.84765,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/241",
+          "supporting_text": "{\n                \"recipe_order\": 2,\n                \"compound\": \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\": \"g\",\n                \"g_l\": 3,\n                \"mmol_l\": 12.1716,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 2,\n                \"compound\": \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\": \"g\",\n                \"g_l\": 3,\n                \"mmol_l\": 12.1716,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/241",
+          "supporting_text": "{\n                \"recipe_order\": 3,\n                \"compound\": \"MnSO4 x H2O\",\n                \"compound_id\": 14,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\": \"g\",\n                \"g_l\": 0.5,\n                \"mmol_l\": 2.9583,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 3,\n                \"compound\": \"MnSO4 x H2O\",\n                \"compound_id\": 14,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\": \"g\",\n                \"g_l\": 0.5,\n                \"mmol_l\": 2.9583,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/241",
+          "supporting_text": "{\n                \"recipe_order\": 4,\n                \"compound\": \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": 1,\n                \"mmol_l\": 17.1116,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 4,\n                \"compound\": \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": 1,\n                \"mmol_l\": 17.1116,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/241",
+          "supporting_text": "{\n                \"recipe_order\": 5,\n                \"compound\": \"FeSO4 x 7 H2O\",\n                \"compound_id\": 12,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.359693,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 5,\n                \"compound\": \"FeSO4 x 7 H2O\",\n                \"compound_id\": 12,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.359693,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/241",
+          "supporting_text": "{\n                \"recipe_order\": 6,\n                \"compound\": \"CoSO4 x 7 H2O\",\n                \"compound_id\": 198,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.18,\n                \"unit\": \"g\",\n                \"g_l\": 0.18,\n                \"mmol_l\": 1.16132,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 6,\n                \"compound\": \"CoSO4 x 7 H2O\",\n                \"compound_id\": 198,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.18,\n                \"unit\": \"g\",\n                \"g_l\": 0.18,\n                \"mmol_l\": 1.16132,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/241",
+          "supporting_text": "{\n                \"recipe_order\": 7,\n                \"compound\": \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.680203,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 7,\n                \"compound\": \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.680203,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/241",
+          "supporting_text": "{\n                \"recipe_order\": 8,\n                \"compound\": \"ZnSO4 x 7 H2O\",\n                \"compound_id\": 35,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.18,\n                \"unit\": \"g\",\n                \"g_l\": 0.18,\n                \"mmol_l\": 0.625954,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 8,\n                \"compound\": \"ZnSO4 x 7 H2O\",\n                \"compound_id\": 35,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.18,\n                \"unit\": \"g\",\n                \"g_l\": 0.18,\n                \"mmol_l\": 0.625954,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/241",
+          "supporting_text": "{\n                \"recipe_order\": 9,\n                \"compound\": \"CuSO4 x 5 H2O\",\n                \"compound_id\": 121,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.01,\n                \"unit\": \"g\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.0400503,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 9,\n                \"compound\": \"CuSO4 x 5 H2O\",\n                \"compound_id\": 121,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.01,\n                \"unit\": \"g\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.0400503,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/241",
+          "supporting_text": "{\n                \"recipe_order\": 10,\n                \"compound\": \"AlK(SO4)2 x 12 H2O\",\n                \"compound_id\": 908,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.02,\n                \"unit\": \"g\",\n                \"g_l\": 0.02,\n                \"mmol_l\": 0.0421596,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 10,\n                \"compound\": \"AlK(SO4)2 x 12 H2O\",\n                \"compound_id\": 908,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.02,\n                \"unit\": \"g\",\n                \"g_l\": 0.02,\n                \"mmol_l\": 0.0421596,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/241",
+          "supporting_text": "{\n                \"recipe_order\": 11,\n                \"compound\": \"H3BO3\",\n                \"compound_id\": 37,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.01,\n                \"unit\": \"g\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.161708,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 11,\n                \"compound\": \"H3BO3\",\n                \"compound_id\": 37,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.01,\n                \"unit\": \"g\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.161708,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/241",
+          "supporting_text": "{\n                \"recipe_order\": 12,\n                \"compound\": \"Na2MoO4 x 2 H2O\",\n                \"compound_id\": 9,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.01,\n                \"unit\": \"g\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.0413309,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 12,\n                \"compound\": \"Na2MoO4 x 2 H2O\",\n                \"compound_id\": 9,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.01,\n                \"unit\": \"g\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.0413309,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[11].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/241",
+          "supporting_text": "{\n                \"recipe_order\": 13,\n                \"compound\": \"NiCl2 x 6 H2O\",\n                \"compound_id\": 40,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.03,\n                \"unit\": \"g\",\n                \"g_l\": 0.03,\n                \"mmol_l\": 0.231483,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 13,\n                \"compound\": \"NiCl2 x 6 H2O\",\n                \"compound_id\": 40,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.03,\n                \"unit\": \"g\",\n                \"g_l\": 0.03,\n                \"mmol_l\": 0.231483,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[12].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/241",
+          "supporting_text": "{\n                \"recipe_order\": 14,\n                \"compound\": \"Na2SeO3 x 5 H2O\",\n                \"compound_id\": 107,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\": \"mg\",\n                \"g_l\": 0.0003,\n                \"mmol_l\": 0.00114062,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 14,\n                \"compound\": \"Na2SeO3 x 5 H2O\",\n                \"compound_id\": 107,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\": \"mg\",\n                \"g_l\": 0.0003,\n                \"mmol_l\": 0.00114062,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[13].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/241",
+          "supporting_text": "{\n                \"recipe_order\": 15,\n                \"compound\": \"Na2WO4 x 2 H2O\",\n                \"compound_id\": 249,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\": \"mg\",\n                \"g_l\": 0.0004,\n                \"mmol_l\": 0.00121267,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 15,\n                \"compound\": \"Na2WO4 x 2 H2O\",\n                \"compound_id\": 249,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\": \"mg\",\n                \"g_l\": 0.0004,\n                \"mmol_l\": 0.00121267,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[14].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/241",
+          "supporting_text": "{\n                \"recipe_order\": 16,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 16,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[15].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/241",
+          "supporting_text": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[16].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/241",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        }
+      ],
+      "issues": []
+    },
+    "S277": {
+      "checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/277",
+          "supporting_text": "{\n                \"recipe_order\": 2,\n                \"compound\": \"K2HPO4\",\n                \"compound_id\": 10,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\": \"g\",\n                \"g_l\": 0.2997,\n                \"mmol_l\": 1.72068,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 2,\n                \"compound\": \"K2HPO4\",\n                \"compound_id\": 10,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\": \"g\",\n                \"g_l\": 0.2997,\n                \"mmol_l\": 1.72068,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/277",
+          "supporting_text": "{\n                \"recipe_order\": 3,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\": 11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\": \"g\",\n                \"g_l\": 0.2997,\n                \"mmol_l\": 2.2023,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 3,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\": 11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\": \"g\",\n                \"g_l\": 0.2997,\n                \"mmol_l\": 2.2023,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/277",
+          "supporting_text": "{\n                \"recipe_order\": 4,\n                \"compound\": \"(NH4)2SO4\",\n                \"compound_id\": 27,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\": \"g\",\n                \"g_l\": 0.2997,\n                \"mmol_l\": 2.26805,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 4,\n                \"compound\": \"(NH4)2SO4\",\n                \"compound_id\": 27,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\": \"g\",\n                \"g_l\": 0.2997,\n                \"mmol_l\": 2.26805,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/277",
+          "supporting_text": "{\n                \"recipe_order\": 5,\n                \"compound\": \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.6,\n                \"unit\": \"g\",\n                \"g_l\": 0.599401,\n                \"mmol_l\": 10.2567,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 5,\n                \"compound\": \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.6,\n                \"unit\": \"g\",\n                \"g_l\": 0.599401,\n                \"mmol_l\": 10.2567,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/277",
+          "supporting_text": "{\n                \"recipe_order\": 6,\n                \"compound\": \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.13,\n                \"unit\": \"g\",\n                \"g_l\": 0.12987,\n                \"mmol_l\": 0.526908,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 6,\n                \"compound\": \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.13,\n                \"unit\": \"g\",\n                \"g_l\": 0.12987,\n                \"mmol_l\": 0.526908,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/277",
+          "supporting_text": "{\n                \"recipe_order\": 7,\n                \"compound\": \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"0.1% w/v\",\n                \"amount\": 8,\n                \"unit\": \"ml\",\n                \"g_l\": 0.00799201,\n                \"mmol_l\": 0.0543619,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 7,\n                \"compound\": \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"0.1% w/v\",\n                \"amount\": 8,\n                \"unit\": \"ml\",\n                \"g_l\": 0.00799201,\n                \"mmol_l\": 0.0543619,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/277",
+          "supporting_text": "{\n                \"recipe_order\": 9,\n                \"compound\": \"FeSO4 x 7 H2O\",\n                \"compound_id\": 12,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"0.1% w/v in 0.1 N H2SO4\",\n                \"amount\": 2,\n                \"unit\": \"ml\",\n                \"g_l\": 0.001998,\n                \"mmol_l\": 0.00718667,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 9,\n                \"compound\": \"FeSO4 x 7 H2O\",\n                \"compound_id\": 12,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"0.1% w/v in 0.1 N H2SO4\",\n                \"amount\": 2,\n                \"unit\": \"ml\",\n                \"g_l\": 0.001998,\n                \"mmol_l\": 0.00718667,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/277",
+          "supporting_text": "{\n                \"recipe_order\": 10,\n                \"compound\": \"Yeast extract\",\n                \"compound_id\": 16,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"DIFCO\",\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": 0.999001,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 10,\n                \"compound\": \"Yeast extract\",\n                \"compound_id\": 16,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"DIFCO\",\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": 0.999001,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/277",
+          "supporting_text": "{\n                \"recipe_order\": 11,\n                \"compound\": \"Trypticase\",\n                \"compound_id\": 74,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"BBL\",\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": 0.999001,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 11,\n                \"compound\": \"Trypticase\",\n                \"compound_id\": 74,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"BBL\",\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": 0.999001,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/277",
+          "supporting_text": "{\n                \"recipe_order\": 13,\n                \"compound\": \"Sodium resazurin\",\n                \"compound_id\": 1852,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"0.1% w/v\",\n                \"amount\": 0.5,\n                \"unit\": \"ml\",\n                \"g_l\": 0.0004995,\n                \"mmol_l\": 0.0019887,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 13,\n                \"compound\": \"Sodium resazurin\",\n                \"compound_id\": 1852,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"0.1% w/v\",\n                \"amount\": 0.5,\n                \"unit\": \"ml\",\n                \"g_l\": 0.0004995,\n                \"mmol_l\": 0.0019887,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/277",
+          "supporting_text": "{\n                \"recipe_order\": 14,\n                \"compound\": \"NaHCO3\",\n                \"compound_id\": 55,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\": \"g\",\n                \"g_l\": 1.998,\n                \"mmol_l\": 23.7838,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 14,\n                \"compound\": \"NaHCO3\",\n                \"compound_id\": 55,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\": \"g\",\n                \"g_l\": 1.998,\n                \"mmol_l\": 23.7838,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/277",
+          "supporting_text": "{\n                \"recipe_order\": 16,\n                \"compound\": \"L-Cysteine HCl x H2O\",\n                \"compound_id\": 770,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\": \"g\",\n                \"g_l\": 0.499501,\n                \"mmol_l\": 2.84395,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 16,\n                \"compound\": \"L-Cysteine HCl x H2O\",\n                \"compound_id\": 770,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\": \"g\",\n                \"g_l\": 0.499501,\n                \"mmol_l\": 2.84395,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[11].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/277",
+          "supporting_text": "{\n                \"recipe_order\": 17,\n                \"compound\": \"Na2S x 9 H2O\",\n                \"compound_id\": 54,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\": \"g\",\n                \"g_l\": 0.499501,\n                \"mmol_l\": 2.07967,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 17,\n                \"compound\": \"Na2S x 9 H2O\",\n                \"compound_id\": 54,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\": \"g\",\n                \"g_l\": 0.499501,\n                \"mmol_l\": 2.07967,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[12].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/277",
+          "supporting_text": "{\n                \"recipe_order\": 18,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 660,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 18,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 660,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[13].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/277",
+          "supporting_text": "{\n                \"recipe_order\": 1,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Clarified rumen fluid\",\n                \"solution_id\": 2618,\n                \"condition\": \"\",\n                \"attribute\": null,\n                \"amount\": 300,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 1,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Clarified rumen fluid\",\n                \"solution_id\": 2618,\n                \"condition\": \"\",\n                \"attribute\": null,\n                \"amount\": 300,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[14].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/277",
+          "supporting_text": "{\n                \"recipe_order\": 8,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Modified Wolin's mineral solution\",\n                \"solution_id\": 241,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 8,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Modified Wolin's mineral solution\",\n                \"solution_id\": 241,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[15].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/277",
+          "supporting_text": "{\n                \"recipe_order\": 12,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Fatty acid mixture\",\n                \"solution_id\": 209,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 20,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 12,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Fatty acid mixture\",\n                \"solution_id\": 209,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 20,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[16].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/277",
+          "supporting_text": "{\n                \"recipe_order\": 15,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Wolin's vitamin solution (10x)\",\n                \"solution_id\": 5980,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 15,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Wolin's vitamin solution (10x)\",\n                \"solution_id\": 5980,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[17].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/277",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        }
+      ],
+      "issues": []
+    },
+    "S5980": {
+      "checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/5980",
+          "supporting_text": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Biotin\",\n                \"compound_id\": 46,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 20,\n                \"unit\": \"mg\",\n                \"g_l\": 0.02,\n                \"mmol_l\": 0.0818632,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Biotin\",\n                \"compound_id\": 46,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 20,\n                \"unit\": \"mg\",\n                \"g_l\": 0.02,\n                \"mmol_l\": 0.0818632,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/161",
+          "supporting_text": "[\n                    {\n                        \"recipe_order\": 1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0453104,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.148236,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.132837,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\": 1512,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.209846,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\": 252,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.24233,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }\n                ]",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "[\n                    {\n                        \"recipe_order\": 1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0453104,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.148236,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.132837,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\": 1512,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.209846,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\": 252,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.24233,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }\n                ]",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/5980",
+          "supporting_text": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Folic acid\",\n                \"compound_id\": 138,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 20,\n                \"unit\": \"mg\",\n                \"g_l\": 0.02,\n                \"mmol_l\": 0.0453104,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Folic acid\",\n                \"compound_id\": 138,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 20,\n                \"unit\": \"mg\",\n                \"g_l\": 0.02,\n                \"mmol_l\": 0.0453104,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/5980",
+          "supporting_text": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Pyridoxine hydrochloride\",\n                \"compound_id\": 519,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\": \"mg\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.486287,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Pyridoxine hydrochloride\",\n                \"compound_id\": 519,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\": \"mg\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.486287,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/5980",
+          "supporting_text": "{\n                \"recipe_order\": 4,\n                \"compound\": \"Thiamine HCl\",\n                \"compound_id\": 1207,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.148236,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 4,\n                \"compound\": \"Thiamine HCl\",\n                \"compound_id\": 1207,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.148236,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/5980",
+          "supporting_text": "{\n                \"recipe_order\": 5,\n                \"compound\": \"Riboflavin\",\n                \"compound_id\": 136,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.132837,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 5,\n                \"compound\": \"Riboflavin\",\n                \"compound_id\": 136,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.132837,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/5980",
+          "supporting_text": "{\n                \"recipe_order\": 6,\n                \"compound\": \"Nicotinic acid\",\n                \"compound_id\": 139,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.406141,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 6,\n                \"compound\": \"Nicotinic acid\",\n                \"compound_id\": 139,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.406141,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/5980",
+          "supporting_text": "{\n                \"recipe_order\": 7,\n                \"compound\": \"Calcium D-(+)-pantothenate\",\n                \"compound_id\": 1512,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.209846,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 7,\n                \"compound\": \"Calcium D-(+)-pantothenate\",\n                \"compound_id\": 1512,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.209846,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/5980",
+          "supporting_text": "{\n                \"recipe_order\": 8,\n                \"compound\": \"Vitamin B12\",\n                \"compound_id\": 18,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"mg\",\n                \"g_l\": 0.001,\n                \"mmol_l\": 0.00073779,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 8,\n                \"compound\": \"Vitamin B12\",\n                \"compound_id\": 18,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"mg\",\n                \"g_l\": 0.001,\n                \"mmol_l\": 0.00073779,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/5980",
+          "supporting_text": "{\n                \"recipe_order\": 9,\n                \"compound\": \"p-Aminobenzoic acid\",\n                \"compound_id\": 47,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.364591,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 9,\n                \"compound\": \"p-Aminobenzoic acid\",\n                \"compound_id\": 47,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.364591,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/5980",
+          "supporting_text": "{\n                \"recipe_order\": 10,\n                \"compound\": \"(DL)-alpha-Lipoic acid\",\n                \"compound_id\": 252,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.24233,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 10,\n                \"compound\": \"(DL)-alpha-Lipoic acid\",\n                \"compound_id\": 252,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.24233,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/5980",
+          "supporting_text": "{\n                \"recipe_order\": 11,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                \"recipe_order\": 11,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "composition[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/solution/5980",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/161",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[1].title"
+        }
+      ],
+      "issues": []
+    }
+  },
+  "reference_checks": {
+    "total": 159,
+    "passed": 159
+  }
+}

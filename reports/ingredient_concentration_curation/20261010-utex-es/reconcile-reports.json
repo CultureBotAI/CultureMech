@@ -1,0 +1,40 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "reports",
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "reports": [
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-utex-es/records/enriched-seawater-medium.md",
+      "sha256": "fd1a0205e08f82073227795a20e74aae7abbf83c5f6c7b1427eae00b7433da30",
+      "structured_claim_rows": 30
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-utex-es/records/es-over-10-enriched-seawater-medium.md",
+      "sha256": "6230a65af23825b502a7fc92c8f00898248e9683a624a96f354c9c3fa6c24956",
+      "structured_claim_rows": 30
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-utex-es/records/es-over-2-enriched-seawater-medium.md",
+      "sha256": "fe649c3638b03fbe5a592b69580cda6c0622a746a1c7e22b81b76529bebd2624",
+      "structured_claim_rows": 30
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-utex-es/records/es-over-4-enriched-seawater-medium.md",
+      "sha256": "e1f72f64787c465c6c410ad76044bcb1ac5a3aaa83a25c785e4f10f131388b9c",
+      "structured_claim_rows": 30
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-utex-es/records/one-half-enriched-seawater-medium.md",
+      "sha256": "fa000c2f1429cdd2ed355af24edda2d5c20bafcf747affc234221be8ac3d8269",
+      "structured_claim_rows": 2
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-utex-es/records/two-thirds-enriched-seawater-medium.md",
+      "sha256": "ea27b13b231d2fa6ab68ef35a49f38e55cb76b997ac727f19adf3cca636586d3",
+      "structured_claim_rows": 2
+    }
+  ],
+  "source_inventory_unchanged": true
+}

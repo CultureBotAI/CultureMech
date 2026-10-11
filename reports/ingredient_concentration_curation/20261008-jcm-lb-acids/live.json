@@ -1,0 +1,2999 @@
+{
+  "terminal": true,
+  "phase": "live",
+  "checks": [],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "60abc9aa956835c409849c117d0d09ae5b63a21ad5524273d3eba2867b1ee116"
+  },
+  "sources": [
+    {
+      "key": "J266",
+      "url": "https://mediadive.dsmz.de/rest/medium/J266",
+      "sha256": "83e78d50d0292fd28ad47e76b9f45204090825f59c6e83313a7c97bf8cd7fa79",
+      "accessed_at": "2026-10-08T20:43:20.286550+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "J675",
+      "url": "https://mediadive.dsmz.de/rest/medium/J675",
+      "sha256": "3695024b925cfaa3a2fc522c96ed2e22db052a940b5c67d9b1f6770ebb6503b7",
+      "accessed_at": "2026-10-08T20:43:20.465458+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "J1203",
+      "url": "https://mediadive.dsmz.de/rest/medium/J1203",
+      "sha256": "b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31",
+      "accessed_at": "2026-10-08T20:43:20.640520+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "JCM266",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+      "sha256": "0054a5cdd60634511ec40a28bc6743000104c8152118dfc019e987afb8886321",
+      "accessed_at": "2026-10-08T20:43:21.203798+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "JCM675",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+      "sha256": "dba13adff737fd8fbb00591b5eb9a0d25a33f6fa14dbcc15f29540136b634cca",
+      "accessed_at": "2026-10-08T20:43:21.546294+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "JCM1203",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+      "sha256": "09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343",
+      "accessed_at": "2026-10-08T20:43:21.882644+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "JCM151",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+      "sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+      "accessed_at": "2026-10-08T20:43:22.220080+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "JCM197",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+      "sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532",
+      "accessed_at": "2026-10-08T20:43:22.564903+00:00",
+      "matches_inspected_capture": true
+    }
+  ],
+  "records": {
+    "J1203": {
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.12,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.11976,\n                        \"mmol_l\": 0.814614,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.12,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.11976,\n                        \"mmol_l\": 0.814614,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "CaCl2\u00b72H2O 0.12 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CaCl2\u00b72H2O 0.12 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.19,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.189621,\n                        \"mmol_l\": 0.769327,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.19,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.189621,\n                        \"mmol_l\": 0.769327,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "MgSO4\u00b77H2O 0.19 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MgSO4\u00b77H2O 0.19 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.45,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.449102,\n                        \"mmol_l\": 3.30013,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.45,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.449102,\n                        \"mmol_l\": 3.30013,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "KH2PO4 0.45 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "KH2PO4 0.45 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.45,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.449102,\n                        \"mmol_l\": 2.57844,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.45,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.449102,\n                        \"mmol_l\": 2.57844,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "K2HPO4 0.45 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "K2HPO4 0.45 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 0.9,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.898204,\n                        \"mmol_l\": 15.3697,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 0.9,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.898204,\n                        \"mmol_l\": 15.3697,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "NaCl 0.9 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaCl 0.9 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.9,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.898204,\n                        \"mmol_l\": 6.79736,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.9,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.898204,\n                        \"mmol_l\": 6.79736,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "(NH4)2SO4 0.9 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "(NH4)2SO4 0.9 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99601,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99601,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "Yeast extract (BD-Difco) 2.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Yeast extract (BD-Difco) 2.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[6].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Trypticase peptone\",\n                        \"compound_id\": 124,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99601,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Trypticase peptone\",\n                        \"compound_id\": 124,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99601,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "Trypticase peptone 2.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Trypticase peptone 2.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[7].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"n-Butyric acid\",\n                        \"compound_id\": 376,\n                        \"amount\": 0.4,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"n-Butyric acid\",\n                        \"compound_id\": 376,\n                        \"amount\": 0.4,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "n-Butyric acid 0.4 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "n-Butyric acid 0.4 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[8].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"iso-Butyric acid\",\n                        \"compound_id\": 377,\n                        \"amount\": 0.4,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"iso-Butyric acid\",\n                        \"compound_id\": 377,\n                        \"amount\": 0.4,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "iso-Butyric acid 0.4 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "iso-Butyric acid 0.4 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[9].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"DL-2-Methylbutyric acid\",\n                        \"compound_id\": 223,\n                        \"amount\": 0.2,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"DL-2-Methylbutyric acid\",\n                        \"compound_id\": 223,\n                        \"amount\": 0.2,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "DL-2-Methyl butyric acid 0.2 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "DL-2-Methyl butyric acid 0.2 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[10].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"n-Valeric acid\",\n                        \"compound_id\": 288,\n                        \"amount\": 0.2,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"n-Valeric acid\",\n                        \"compound_id\": 288,\n                        \"amount\": 0.2,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[11].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "n-Valeric acid 0.2 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "n-Valeric acid 0.2 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[11].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"iso-Valeric acid\",\n                        \"compound_id\": 378,\n                        \"amount\": 0.2,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"iso-Valeric acid\",\n                        \"compound_id\": 378,\n                        \"amount\": 0.2,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[12].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "iso-Valeric acid 0.2 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "iso-Valeric acid 0.2 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[12].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.998004,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.998004,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[13].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "L-Cysteine\u00b7HCl\u00b7H2O 1.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "L-Cysteine\u00b7HCl\u00b7H2O 1.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[13].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "{\n                        \"recipe_order\": 16,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.49501,\n                        \"mmol_l\": 23.5405,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 16,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.49501,\n                        \"mmol_l\": 23.5405,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[14].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "Na2CO3 2.5 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Na2CO3 2.5 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[14].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "{\n                        \"recipe_order\": 18,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 18,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[15].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "Distilled water 1.0 L",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water 1.0 L",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[15].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"attribute\": \"0.05%\",\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"attribute\": \"0.05%\",\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "0.05% Resazurin solution 1.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "0.05% Resazurin solution 1.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "{\n                        \"recipe_order\": 17,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99601,\n                        \"mmol_l\": 11.0791,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 17,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99601,\n                        \"mmol_l\": 11.0791,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "Glucose 2.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Glucose 2.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "DL-2-Methyl butyric acid 0.2 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "DL-2-Methyl butyric acid 0.2 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"attribute\": \"0.05%\",\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"attribute\": \"0.05%\",\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J1203",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[1].title"
+        }
+      ],
+      "reference_issues": []
+    },
+    "J266": {
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\": 2.20449,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\": 2.20449,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "KH2PO4 0.3 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "KH2PO4 0.3 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\": 1.7224,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\": 1.7224,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "K2HPO4 0.3 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "K2HPO4 0.3 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\": 2.27032,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\": 2.27032,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "(NH4)2SO4 0.3 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "(NH4)2SO4 0.3 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 0.6,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.6,\n                        \"mmol_l\": 10.2669,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 0.6,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.6,\n                        \"mmol_l\": 10.2669,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "NaCl 0.6 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaCl 0.6 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.13,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.13,\n                        \"mmol_l\": 0.527435,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.13,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.13,\n                        \"mmol_l\": 0.527435,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "MgSO4\u00b77H2O 0.13 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MgSO4\u00b77H2O 0.13 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 8,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.008,\n                        \"mmol_l\": 0.0544162,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 8,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.008,\n                        \"mmol_l\": 0.0544162,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "CaCl2\u00b72H2O 8.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CaCl2\u00b72H2O 8.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.00719386,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.00719386,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "FeSO4\u00b77H2O 2.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "FeSO4\u00b77H2O 2.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[6].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\": 23.8075,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\": 23.8075,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "NaHCO3 2.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaHCO3 2.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[7].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "Yeast extract (BD-Difco) 1.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Yeast extract (BD-Difco) 1.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[8].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Trypticase peptone\",\n                        \"compound_id\": 124,\n                        \"attribute\": \"BD-BBL\",\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Trypticase peptone\",\n                        \"compound_id\": 124,\n                        \"attribute\": \"BD-BBL\",\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "Trypticase peptone (BD-BBL) 1.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Trypticase peptone (BD-BBL) 1.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[9].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00436319,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00436319,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "Resazurin 1.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Resazurin 1.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[10].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 18,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 660,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 18,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 660,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[11].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "Distilled water 660.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water 660.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[11].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Nitrilotriacetic acid\",\n                        \"compound_id\": 189,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.84765,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Nitrilotriacetic acid\",\n                        \"compound_id\": 189,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.84765,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "Nitrilotriacetic acid 1.5 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Nitrilotriacetic acid 1.5 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\": 12.1716,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\": 12.1716,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "MgSO4\u00b77H2O 3.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MgSO4\u00b77H2O 3.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MnSO4 x n H2O\",\n                        \"compound_id\": 1000,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MnSO4 x n H2O\",\n                        \"compound_id\": 1000,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "MnSO4\u00b7xH2O 0.5 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MnSO4\u00b7xH2O 0.5 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 17.1116,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 17.1116,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "NaCl 1.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaCl 1.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[3].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.359693,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.359693,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "FeSO4\u00b77H2O 0.1 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "FeSO4\u00b77H2O 0.1 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[4].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoSO4 x 7 H2O\",\n                        \"compound_id\": 198,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.645178,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoSO4 x 7 H2O\",\n                        \"compound_id\": 198,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.645178,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "CoSO4\u00b77H2O 0.1 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CoSO4\u00b77H2O 0.1 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[5].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.680203,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.680203,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "CaCl2\u00b72H2O 0.1 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CaCl2\u00b72H2O 0.1 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[6].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.347752,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.347752,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "ZnSO4\u00b77H2O 0.1 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "ZnSO4\u00b77H2O 0.1 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[7].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"CuSO4 x 5 H2O\",\n                        \"compound_id\": 121,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0400503,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"CuSO4 x 5 H2O\",\n                        \"compound_id\": 121,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0400503,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "CuSO4\u00b75H2O 0.01 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CuSO4\u00b75H2O 0.01 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[8].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"AlK(SO4)2\",\n                        \"compound_id\": 1015,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0387289,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"AlK(SO4)2\",\n                        \"compound_id\": 1015,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0387289,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "AlK(SO4)2 0.01 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "AlK(SO4)2 0.01 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[9].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.161708,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.161708,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "H3BO3 0.01 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "H3BO3 0.01 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[10].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0413309,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0413309,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[11].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "Na2MoO4\u00b72H2O 0.01 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Na2MoO4\u00b72H2O 0.01 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[11].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[12].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "Distilled water 1.0 L",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water 1.0 L",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[12].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.00818632,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.00818632,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+          "supporting_text": "Biotin 2.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Biotin 2.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.00453104,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.00453104,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+          "supporting_text": "Folic acid 2.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Folic acid 2.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 10,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0486287,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 10,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0486287,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+          "supporting_text": "Pyridoxine\u00b7HCl 10.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Pyridoxine\u00b7HCl 10.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0148236,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0148236,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+          "supporting_text": "Thiamine\u00b7HCl 5.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Thiamine\u00b7HCl 5.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[3].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0132837,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0132837,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+          "supporting_text": "Riboflavin 5.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Riboflavin 5.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[4].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0406141,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0406141,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+          "supporting_text": "Nicotinic acid 5.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Nicotinic acid 5.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[5].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Calcium pantothenate\",\n                        \"compound_id\": 518,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0104925,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Calcium pantothenate\",\n                        \"compound_id\": 518,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0104925,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+          "supporting_text": "Calcium pantothenate 5.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Calcium pantothenate 5.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[6].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 0.1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0001,\n                        \"mmol_l\": 7.3779e-5,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 0.1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0001,\n                        \"mmol_l\": 7.3779e-5,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+          "supporting_text": "Vitamin B12 0.1 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Vitamin B12 0.1 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[7].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0364591,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0364591,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+          "supporting_text": "p-Aminobenzoic acid 5.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "p-Aminobenzoic acid 5.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[8].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Lipoic acid\",\n                        \"compound_id\": 368,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.024233,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Lipoic acid\",\n                        \"compound_id\": 368,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.024233,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+          "supporting_text": "Lipoic acid 5.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Lipoic acid 5.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[9].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+          "supporting_text": "Distilled water 1.0 L",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water 1.0 L",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[10].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Valeric acid\",\n                        \"compound_id\": 224,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 25,\n                        \"mmol_l\": 244.786,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Valeric acid\",\n                        \"compound_id\": 224,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 25,\n                        \"mmol_l\": 244.786,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "Valeric acid 0.5 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Valeric acid 0.5 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Isovaleric acid\",\n                        \"compound_id\": 225,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 25,\n                        \"mmol_l\": 244.786,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Isovaleric acid\",\n                        \"compound_id\": 225,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 25,\n                        \"mmol_l\": 244.786,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "Isovaleric acid 0.5 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Isovaleric acid 0.5 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"alpha-Methylbutyric acid\",\n                        \"compound_id\": 1543,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 25,\n                        \"mmol_l\": 244.786,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"alpha-Methylbutyric acid\",\n                        \"compound_id\": 1543,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 25,\n                        \"mmol_l\": 244.786,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "\u03b1-Methylbutyric acid 0.5 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "\u03b1-Methylbutyric acid 0.5 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Isobutyric acid\",\n                        \"compound_id\": 222,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 25,\n                        \"mmol_l\": 283.736,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Isobutyric acid\",\n                        \"compound_id\": 222,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 25,\n                        \"mmol_l\": 283.736,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "Isobutyric acid 0.5 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Isobutyric acid 0.5 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[3].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 20,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 20,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "Distilled water 20.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water 20.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[4].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 16,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.08175,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 16,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.08175,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[4].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "Na2S\u00b79H2O 0.5 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Na2S\u00b79H2O 0.5 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[4].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 17,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 17,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[5].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "L-Cysteine\u00b7HCl\u00b7H2O 0.5 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "L-Cysteine\u00b7HCl\u00b7H2O 0.5 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[5].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "\u03b1-Methylbutyric acid 0.5 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "\u03b1-Methylbutyric acid 0.5 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Rumen fluid\",\n                        \"compound_id\": 145,\n                        \"condition\": \" clarified\",\n                        \"attribute\": \"see below\",\n                        \"amount\": 300,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Rumen fluid\",\n                        \"compound_id\": 145,\n                        \"condition\": \" clarified\",\n                        \"attribute\": \"see below\",\n                        \"amount\": 300,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to add minerals. Adjust final pH to 7.0.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to add minerals. Adjust final pH to 7.0.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[2].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=266",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J266",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[1].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[2].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[3].title"
+        }
+      ],
+      "reference_issues": []
+    },
+    "J675": {
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Tryptone\",\n                        \"compound_id\": 71,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 70.3433,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Tryptone\",\n                        \"compound_id\": 71,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 70.3433,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "Tryptone (BD-Difco) 5.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Tryptone (BD-Difco) 5.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "Yeast extract (BD-Difco) 2.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Yeast extract (BD-Difco) 2.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\": 16.6519,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\": 16.6519,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "Glucose 3.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Glucose 3.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Cellobiose\",\n                        \"compound_id\": 214,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\": 5.84283,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Cellobiose\",\n                        \"compound_id\": 214,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\": 5.84283,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "Cellobiose 2.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Cellobiose 2.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00436319,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00436319,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "Resazurin 1.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Resazurin 1.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 920,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 920,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "Distilled water 920.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water 920.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "add 4.0 g Na2CO3",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "add 4.0 g Na2CO3",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "500 mg L-cysteine\u00b7HCl\u00b7H2O.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "500 mg L-cysteine\u00b7HCl\u00b7H2O.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.6,\n                        \"unit\": \"g\",\n                        \"g_l\": 6,\n                        \"mmol_l\": 34.4479,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.6,\n                        \"unit\": \"g\",\n                        \"g_l\": 6,\n                        \"mmol_l\": 34.4479,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "K2HPO4 0.6 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "K2HPO4 0.6 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "Distilled water 100.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water 100.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.6,\n                        \"unit\": \"g\",\n                        \"g_l\": 6,\n                        \"mmol_l\": 44.0898,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.6,\n                        \"unit\": \"g\",\n                        \"g_l\": 6,\n                        \"mmol_l\": 44.0898,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "KH2PO4 0.6 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "KH2PO4 0.6 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 20,\n                        \"mmol_l\": 151.355,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 20,\n                        \"mmol_l\": 151.355,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "(NH4)2SO4 2.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "(NH4)2SO4 2.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 1.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 12,\n                        \"mmol_l\": 205.339,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 1.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 12,\n                        \"mmol_l\": 205.339,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "NaCl 1.2 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaCl 1.2 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 10.143,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 10.143,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "MgSO4\u00b77H2O 0.25 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MgSO4\u00b77H2O 0.25 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[3].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.16,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.6,\n                        \"mmol_l\": 10.8832,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.16,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.6,\n                        \"mmol_l\": 10.8832,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "CaCl2\u00b72H2O 0.16 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CaCl2\u00b72H2O 0.16 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[4].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "Distilled water 100.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water 100.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[5].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Isobutyric acid\",\n                        \"compound_id\": 222,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Isobutyric acid\",\n                        \"compound_id\": 222,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "Isobutyric acid 10.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Isobutyric acid 10.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Isovaleric acid\",\n                        \"compound_id\": 225,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Isovaleric acid\",\n                        \"compound_id\": 225,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "Isovaleric acid 10.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Isovaleric acid 10.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"2-Methylbutyric acid\",\n                        \"compound_id\": 480,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"2-Methylbutyric acid\",\n                        \"compound_id\": 480,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "2-Methylbutyric acid 10.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "2-Methylbutyric acid 10.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 70,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 70,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "Distilled water 70.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water 70.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[3].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "2-Methylbutyric acid 10.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "2-Methylbutyric acid 10.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "{\n                        \"recipe_order\": 5,\n                        \"solution\": \"S I solution 6.0 g/L\",\n                        \"solution_id\": 4566,\n                        \"amount\": 40,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 5,\n                        \"solution\": \"S I solution 6.0 g/L\",\n                        \"solution_id\": 4566,\n                        \"amount\": 40,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J675",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[1].title"
+        }
+      ],
+      "reference_issues": []
+    }
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "60abc9aa956835c409849c117d0d09ae5b63a21ad5524273d3eba2867b1ee116"
+  }
+}

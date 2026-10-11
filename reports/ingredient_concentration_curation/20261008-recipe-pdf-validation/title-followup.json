@@ -1,0 +1,1236 @@
+{
+  "state": "prepared only; no YAML edits",
+  "normalized_sha256": "97b156240849be7bf096a61d00d7a683ff9c8de8922db8585e5e8128ba7eb36c",
+  "proposals": [
+    {
+      "record": "data/normalized_yaml/archaea/DSMZ_1399_HALOPHILIC_MEDIUM.yaml",
+      "id": "CultureMech:000252",
+      "before_sha256": "90d9cb52a972d7e7bbac78adfcb2500bdebeabf25c196faebac76b78e27e2bca",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf",
+      "old_title": "DSMZ 1399. HALOPHILIC MEDIUM",
+      "proposed_title": "1399. HALOPHILIC MEDIUM",
+      "snippet": "1399. HALOPHILIC MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf",
+        "http_status": 200,
+        "sha256": "2963aad2443640140a0f16db0fa9cf1cf3d3287b6592cb15f2173e7272980ddc",
+        "accessed_at": "2026-10-08T22:44:43.877067+00:00",
+        "pdf_sha256": "c76a8a1d8c4e5da897b13caa810918454efc9258b0b78a433aa14032c3ed8d3e",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/archaea/KOMODO_265_THERMOFILUM_PENDENS_medium.yaml",
+      "id": "CultureMech:004668",
+      "before_sha256": "0e064365a59fdf189f7c45d375bfa0fa2c91c39a2fb87ac36eb6df719238c678",
+      "record_kind": "MEDIUM",
+      "field": "references[0].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "old_title": "DSMZ 265. THERMOFILUM PENDENS MEDIUM",
+      "proposed_title": "265. THERMOFILUM PENDENS MEDIUM",
+      "snippet": "265. THERMOFILUM PENDENS MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+        "http_status": 200,
+        "sha256": "53e482cbf53896ce91d7bf57a1c112219043ba312cb8a1a7865dfca13a5b0ca6",
+        "accessed_at": "2026-10-08T22:44:44.522143+00:00",
+        "pdf_sha256": "904a0973cffadca97f2da8c6b8cd2a89f5f842d53bdb98212d27aa86741ab173",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/archaea/thermofilum_pendens_medium.yaml",
+      "id": "CultureMech:001364",
+      "before_sha256": "0c92198681a294ee01a6ac55f2557a21d8a1d212bb7c05787b520171c2bb30ed",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "old_title": "DSMZ 265. THERMOFILUM PENDENS MEDIUM",
+      "proposed_title": "265. THERMOFILUM PENDENS MEDIUM",
+      "snippet": "265. THERMOFILUM PENDENS MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+        "http_status": 200,
+        "sha256": "53e482cbf53896ce91d7bf57a1c112219043ba312cb8a1a7865dfca13a5b0ca6",
+        "accessed_at": "2026-10-08T22:44:44.522143+00:00",
+        "pdf_sha256": "904a0973cffadca97f2da8c6b8cd2a89f5f842d53bdb98212d27aa86741ab173",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_111_BEIJERINCKIA_MEDIUM.yaml",
+      "id": "CultureMech:003822",
+      "before_sha256": "4d6740d46117ef7aefc3c6571eb4dab53e1fd06333c8cc9d08675366853d01e7",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf",
+      "old_title": "DSMZ 111. BEIJERINCKIA MEDIUM",
+      "proposed_title": "111. BEIJERINCKIA MEDIUM",
+      "snippet": "111. BEIJERINCKIA MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf",
+        "http_status": 200,
+        "sha256": "2d44e067af44c226040c8f0940de6277895466cd2873daafbbf61150a0671ae0",
+        "accessed_at": "2026-10-08T22:44:45.425741+00:00",
+        "pdf_sha256": "0d5b2157ff931d8a898043364f6eceac7b58391b019feb8178247235195208d8",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml",
+      "id": "CultureMech:004018",
+      "before_sha256": "9cb298367084d6cb6b8347acb301575cbbf14771acb8cea52df8979f522f578a",
+      "record_kind": "MEDIUM",
+      "field": "references[2].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+      "old_title": "DSMZ Medium 125: METHYLOBACTERIUM MEDIUM",
+      "proposed_title": "125. METHYLOBACTERIUM MEDIUM",
+      "snippet": "125. METHYLOBACTERIUM MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+        "http_status": 200,
+        "sha256": "7cc42bdcbea29168f3ee89a5afbabf42e68a3c298e2cc3a4af121d903f7386c4",
+        "accessed_at": "2026-10-08T22:44:46.037268+00:00",
+        "pdf_sha256": "e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_12_SOIL_EXTRACT_medium.yaml",
+      "id": "CultureMech:004048",
+      "before_sha256": "89eb50decf05ab23c9f30cb79f976644a257bd69bd46797412dced7a82b8eadd",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf",
+      "old_title": "DSMZ medium 12: SOIL EXTRACT MEDIUM",
+      "proposed_title": "12. SOIL EXTRACT MEDIUM",
+      "snippet": "12. SOIL EXTRACT MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf",
+        "http_status": 200,
+        "sha256": "80dd4d55dc6938cb97c9579e30a7c2452e5e5271e67ef7aa0fd5d00c6bd1232d",
+        "accessed_at": "2026-10-08T22:44:46.341444+00:00",
+        "pdf_sha256": "1b4394336f7ace4e09c66fc67ed2e745e3c633b725e436d94335b99289243580",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_467_OTTOW_medium.yaml",
+      "id": "CultureMech:005580",
+      "before_sha256": "d3096542df25d59b05455cf785a218cf6aca26a110df99da5187eb8d22783da9",
+      "record_kind": "MEDIUM",
+      "field": "references[2].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+      "old_title": "DSMZ 467. OTTOW MEDIUM",
+      "proposed_title": "467. OTTOW MEDIUM",
+      "snippet": "467. OTTOW MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+        "http_status": 200,
+        "sha256": "6b786f2ede7bfc29eb39e8003a6561f0049ea42f3ecfa87cf29a270baedb9e63",
+        "accessed_at": "2026-10-08T22:44:47.137776+00:00",
+        "pdf_sha256": "31ad0e734637e5aa1086a814056ce5e3baecd59847eaedf24db0e91ccc89e8f6",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_469_YM-CATALASE_medium.yaml",
+      "id": "CultureMech:005582",
+      "before_sha256": "ed32038b0f388d4683c30c896de142d9e1a18600f4203156bdd664d3df3c27dd",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+      "old_title": "DSMZ 469. YM-CATALASE MEDIUM",
+      "proposed_title": "469. YM-CATALASE MEDIUM",
+      "snippet": "469. YM-CATALASE MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+        "http_status": 200,
+        "sha256": "35bc4c04851489e382d7d69f4589dbb324478a4b84c46c9e89d5481fe3226429",
+        "accessed_at": "2026-10-08T22:44:47.490646+00:00",
+        "pdf_sha256": "a7da4f0650bedfcb0c353fe9ae83fd885641a14ed6565b62a6655db099855531",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_618_TWEEN_80A_medium.yaml",
+      "id": "CultureMech:006112",
+      "before_sha256": "739b42757f58f416b2826588350510972dfd7d0029f0872983ff498bfd072b17",
+      "record_kind": "MEDIUM",
+      "field": "references[0].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+      "old_title": "DSMZ 618: TWEEN 80A MEDIUM",
+      "proposed_title": "618. TWEEN 80A MEDIUM",
+      "snippet": "618. TWEEN 80A MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+        "http_status": 200,
+        "sha256": "e2e1b12a95b9343cb95683db400b11c733a3cbb6fd7016da0193cbcec1b110b9",
+        "accessed_at": "2026-10-08T22:44:48.896999+00:00",
+        "pdf_sha256": "cd503969dc2f910a9b50c270952adf4c00eaffb09762b02a50e60c23555d8f20",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
+      "id": "CultureMech:006900",
+      "before_sha256": "fdcd031f21238e9ce826143de772bc4bf32c97e71ffd4941eb04c69b268e0163",
+      "record_kind": "MEDIUM",
+      "field": "references[0].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "old_title": "DSMZ 956: MEDIUM FOR DSM 14457 AND 14458",
+      "proposed_title": "956. MEDIUM FOR DSM 14457 AND 14458",
+      "snippet": "956. MEDIUM FOR DSM 14457 AND 14458",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+        "http_status": 200,
+        "sha256": "46f47ed20f7136c62ed77cd94a6ca521236ce7483986fc81ca76129887834b0a",
+        "accessed_at": "2026-10-08T22:44:50.909334+00:00",
+        "pdf_sha256": "156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/bacillus_acidocaldarius_medium.yaml",
+      "id": "CultureMech:000861",
+      "before_sha256": "6302148d39581f7f35afdd342fdf182c5aee72aedbcb856cb7fed9c85d47e67b",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium13.pdf",
+      "old_title": "DSMZ medium 13: official recipe",
+      "proposed_title": "13. BACILLUS ACIDOCALDARIUS MEDIUM",
+      "snippet": "13. BACILLUS ACIDOCALDARIUS MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium13.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium13.pdf",
+        "http_status": 200,
+        "sha256": "75cf6a48ac25fa6be32f96f9e8e55f888d0bd7d744452b639737101bd15302eb",
+        "accessed_at": "2026-10-08T22:44:51.232199+00:00",
+        "pdf_sha256": "5de6bdfb00d6a166c335f5df44f780408884678ecc130a5474eb7a5d80c59c95",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml",
+      "id": "CultureMech:001399",
+      "before_sha256": "ab92b341bd473a3ed09c7a28b5c244dd977dc22783f299b728673842c22c36c6",
+      "record_kind": "MEDIUM",
+      "field": "references[2].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf",
+      "old_title": "DSMZ 2. BACILLUS PASTEURII MEDIUM",
+      "proposed_title": "2. BACILLUS PASTEURII MEDIUM",
+      "snippet": "2. BACILLUS PASTEURII MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf",
+        "http_status": 200,
+        "sha256": "f4927e608b91bac7a10f6575d0f5c318b40eb083cd88a0e80284d12ab9fc73fb",
+        "accessed_at": "2026-10-08T22:44:51.525790+00:00",
+        "pdf_sha256": "2216960d2564bff726b3b45c9f4a3e5d84d5a549cff3bb548c74a118de1e56c9",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml",
+      "id": "CultureMech:001399",
+      "before_sha256": "ab92b341bd473a3ed09c7a28b5c244dd977dc22783f299b728673842c22c36c6",
+      "record_kind": "MEDIUM",
+      "field": "references[3].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+      "old_title": "DSMZ 1. NUTRIENT AGAR",
+      "proposed_title": "1. NUTRIENT AGAR",
+      "snippet": "1. NUTRIENT AGAR",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+        "http_status": 200,
+        "sha256": "d9cbb12ce2d550b0953c9e4239215d81bf5f4f61642552edb7a3d591c44959a0",
+        "accessed_at": "2026-10-08T22:44:51.830745+00:00",
+        "pdf_sha256": "95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/bacillus_schlegelii_heterotrophic_medium.yaml",
+      "id": "CultureMech:001359",
+      "before_sha256": "15f3c43c7646827c4d90cbc9b4e0ea58bee6667aa87adb7203975ed895cd7a7c",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+      "old_title": "DSMZ medium 260: official recipe",
+      "proposed_title": "260. BACILLUS SCHLEGELII HETEROTROPHIC MEDIUM",
+      "snippet": "260. BACILLUS SCHLEGELII HETEROTROPHIC MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+        "http_status": 200,
+        "sha256": "076eea22a114607e65b219be50fff913152035f9fcd3a366891fb186c053513d",
+        "accessed_at": "2026-10-08T22:44:52.137947+00:00",
+        "pdf_sha256": "ab78dd71cbd8d2d91832258c3cda9ccde3c6344d87b1ac791892c257691bf291",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/bacillus_schlegelii_heterotrophic_medium.yaml",
+      "id": "CultureMech:001359",
+      "before_sha256": "15f3c43c7646827c4d90cbc9b4e0ea58bee6667aa87adb7203975ed895cd7a7c",
+      "record_kind": "MEDIUM",
+      "field": "references[2].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+      "old_title": "DSMZ medium 27: official recipe",
+      "proposed_title": "27. RHODOSPIRILLACEAE MEDIUM (modified)",
+      "snippet": "27. RHODOSPIRILLACEAE MEDIUM (modified)",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "http_status": 200,
+        "sha256": "fd5165d5e219288a724889bb95060ff67cc1098b3f1da1b3f08dd3542d62b6d0",
+        "accessed_at": "2026-10-08T22:44:52.468373+00:00",
+        "pdf_sha256": "e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9",
+        "pdf_pages": 2,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/bacillus_tusciae_medium.yaml",
+      "id": "CultureMech:001470",
+      "before_sha256": "f3af90a3c8f45afe680f0489ac7808318c88136aa0df90f6d9bcd26d4ec5da41",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium369.pdf",
+      "old_title": "DSMZ medium 369: official recipe",
+      "proposed_title": "369. BACILLUS TUSCIAE MEDIUM",
+      "snippet": "369. BACILLUS TUSCIAE MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium369.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium369.pdf",
+        "http_status": 200,
+        "sha256": "2dff57e0a4b973fc88b3fe481a9d45be50d1494d303788333e1b0254a2b041f9",
+        "accessed_at": "2026-10-08T22:44:52.767437+00:00",
+        "pdf_sha256": "cb7da859a785ac99638a2590b988241221a2b035de782e05785182d565c24ade",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/bacillus_tusciae_medium.yaml",
+      "id": "CultureMech:001470",
+      "before_sha256": "f3af90a3c8f45afe680f0489ac7808318c88136aa0df90f6d9bcd26d4ec5da41",
+      "record_kind": "MEDIUM",
+      "field": "references[2].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf",
+      "old_title": "DSMZ medium 261: official recipe",
+      "proposed_title": "261. MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF BACILLUS SCHLEGELII",
+      "snippet": "261.   MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF\n       BACILLUS SCHLEGELII",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf",
+        "http_status": 200,
+        "sha256": "da2157407b4dd0a17deeef1b75d8f209b58792e660b53113d8e0a9cc02457c0a",
+        "accessed_at": "2026-10-08T22:44:53.062184+00:00",
+        "pdf_sha256": "abea799d50da431e0446e012179e4ef6144c6f239cc8db830e33abafbcf33596",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/bacillus_tusciae_medium.yaml",
+      "id": "CultureMech:001470",
+      "before_sha256": "f3af90a3c8f45afe680f0489ac7808318c88136aa0df90f6d9bcd26d4ec5da41",
+      "record_kind": "MEDIUM",
+      "field": "references[3].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+      "old_title": "DSMZ medium 260: official recipe",
+      "proposed_title": "260. BACILLUS SCHLEGELII HETEROTROPHIC MEDIUM",
+      "snippet": "260. BACILLUS SCHLEGELII HETEROTROPHIC MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+        "http_status": 200,
+        "sha256": "076eea22a114607e65b219be50fff913152035f9fcd3a366891fb186c053513d",
+        "accessed_at": "2026-10-08T22:44:52.137947+00:00",
+        "pdf_sha256": "ab78dd71cbd8d2d91832258c3cda9ccde3c6344d87b1ac791892c257691bf291",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/bacillus_tusciae_medium.yaml",
+      "id": "CultureMech:001470",
+      "before_sha256": "f3af90a3c8f45afe680f0489ac7808318c88136aa0df90f6d9bcd26d4ec5da41",
+      "record_kind": "MEDIUM",
+      "field": "references[4].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+      "old_title": "DSMZ medium 27: official recipe",
+      "proposed_title": "27. RHODOSPIRILLACEAE MEDIUM (modified)",
+      "snippet": "27. RHODOSPIRILLACEAE MEDIUM (modified)",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "http_status": 200,
+        "sha256": "fd5165d5e219288a724889bb95060ff67cc1098b3f1da1b3f08dd3542d62b6d0",
+        "accessed_at": "2026-10-08T22:44:52.468373+00:00",
+        "pdf_sha256": "e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9",
+        "pdf_pages": 2,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/beijerinckia_medium.yaml",
+      "id": "CultureMech:000556",
+      "before_sha256": "26d5cf2253a725ad7623ad4626b28ac6b12cbd55ff5418aa1073c5f5da060a24",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf",
+      "old_title": "DSMZ 111. BEIJERINCKIA MEDIUM",
+      "proposed_title": "111. BEIJERINCKIA MEDIUM",
+      "snippet": "111. BEIJERINCKIA MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf",
+        "http_status": 200,
+        "sha256": "2d44e067af44c226040c8f0940de6277895466cd2873daafbbf61150a0671ae0",
+        "accessed_at": "2026-10-08T22:44:45.425741+00:00",
+        "pdf_sha256": "0d5b2157ff931d8a898043364f6eceac7b58391b019feb8178247235195208d8",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/cow_manure_agar.yaml",
+      "id": "CultureMech:001794",
+      "before_sha256": "0f25051dad672e09b6b25f3de36a6f225763127edbdd59e89c1a11ece118a2ee",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium657.pdf",
+      "old_title": "DSMZ medium 657: COW MANURE AGAR",
+      "proposed_title": "657. COW MANURE AGAR",
+      "snippet": "657. COW MANURE AGAR",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium657.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium657.pdf",
+        "http_status": 200,
+        "sha256": "50f333483881d3653cbd5c426f7698ebc74d80bcf0bd0ce4517df62bfebfde5c",
+        "accessed_at": "2026-10-08T22:44:53.371825+00:00",
+        "pdf_sha256": "eb788e7b0ce8da48e2699a178dac7fdc2f6b0a49742fb69e3e7595b8c1624930",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/glucose_medium_nakayama.yaml",
+      "id": "CultureMech:001562",
+      "before_sha256": "29fde6ad1272ff50f226d76aff4a521b7037ba37f107a7b21d265294c12ebc6c",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium452.pdf",
+      "old_title": "DSMZ medium 452: official recipe",
+      "proposed_title": "452. GLUCOSE MEDIUM (NAKAYAMA)",
+      "snippet": "452. GLUCOSE MEDIUM (NAKAYAMA)",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium452.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium452.pdf",
+        "http_status": 200,
+        "sha256": "79eba3787b074ad97710f07297182a5d7fe14bd974a4fba569fb97afe6d97bbe",
+        "accessed_at": "2026-10-08T22:44:53.723914+00:00",
+        "pdf_sha256": "e0cc3cb64fcf765793ff9064a8de060201aa4a3f020881546f58094216f6426e",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/leucothrix_medium.yaml",
+      "id": "CultureMech:001943",
+      "before_sha256": "c93134f4c1faaa4a87b58f9f121a39e92de9c817ee6bb679c666fcf9d4e7bfea",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium79.pdf",
+      "old_title": "DSMZ medium 79: official recipe",
+      "proposed_title": "79. LEUCOTHRIX MEDIUM",
+      "snippet": "79. LEUCOTHRIX MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium79.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium79.pdf",
+        "http_status": 200,
+        "sha256": "b72e19831bbc1a834a54f6e32bf0bf60398fbad0e7a8c3703e769da2f8e0a157",
+        "accessed_at": "2026-10-08T22:44:54.039345+00:00",
+        "pdf_sha256": "fa30638235b7c7bbe3ebf995ae0ad6cff524802e887d2750d5ce520a41f13984",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_190_Main_sol_111.yaml",
+      "id": "CultureMech:011325",
+      "before_sha256": "3a1b976e9bcd5b418eff9f7d9335298d551ab34b6cde06a874e5924801c228c1",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf",
+      "old_title": "DSMZ 111. BEIJERINCKIA MEDIUM",
+      "proposed_title": "111. BEIJERINCKIA MEDIUM",
+      "snippet": "111. BEIJERINCKIA MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf",
+        "http_status": 200,
+        "sha256": "2d44e067af44c226040c8f0940de6277895466cd2873daafbbf61150a0671ae0",
+        "accessed_at": "2026-10-08T22:44:45.425741+00:00",
+        "pdf_sha256": "0d5b2157ff931d8a898043364f6eceac7b58391b019feb8178247235195208d8",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_223_Main_sol_125.yaml",
+      "id": "CultureMech:011631",
+      "before_sha256": "b1ee6d78847637b14b08d136134423eb1b9a54a2f1bd5388431a595c2f64bb23",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+      "old_title": "DSMZ Medium 125: METHYLOBACTERIUM MEDIUM",
+      "proposed_title": "125. METHYLOBACTERIUM MEDIUM",
+      "snippet": "125. METHYLOBACTERIUM MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+        "http_status": 200,
+        "sha256": "7cc42bdcbea29168f3ee89a5afbabf42e68a3c298e2cc3a4af121d903f7386c4",
+        "accessed_at": "2026-10-08T22:44:46.037268+00:00",
+        "pdf_sha256": "e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_2838_Total_Salts.yaml",
+      "id": "CultureMech:012117",
+      "before_sha256": "9c8bf38adc102d98625e42260c4901b35800fdd9c84768a866a8c82671af885c",
+      "record_kind": "MEDIUM",
+      "field": "references[2].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf",
+      "old_title": "DSMZ 1399. HALOPHILIC MEDIUM",
+      "proposed_title": "1399. HALOPHILIC MEDIUM",
+      "snippet": "1399. HALOPHILIC MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf",
+        "http_status": 200,
+        "sha256": "2963aad2443640140a0f16db0fa9cf1cf3d3287b6592cb15f2173e7272980ddc",
+        "accessed_at": "2026-10-08T22:44:43.877067+00:00",
+        "pdf_sha256": "c76a8a1d8c4e5da897b13caa810918454efc9258b0b78a433aa14032c3ed8d3e",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_531_Main_sol_265.yaml",
+      "id": "CultureMech:014231",
+      "before_sha256": "28684ae21394b3dcd43f89b865618a6a81776e58548c29bfae89093963e6cdd8",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "old_title": "DSMZ 265. THERMOFILUM PENDENS MEDIUM",
+      "proposed_title": "265. THERMOFILUM PENDENS MEDIUM",
+      "snippet": "265. THERMOFILUM PENDENS MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+        "http_status": 200,
+        "sha256": "53e482cbf53896ce91d7bf57a1c112219043ba312cb8a1a7865dfca13a5b0ca6",
+        "accessed_at": "2026-10-08T22:44:44.522143+00:00",
+        "pdf_sha256": "904a0973cffadca97f2da8c6b8cd2a89f5f842d53bdb98212d27aa86741ab173",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_959_Main_sol_467.yaml",
+      "id": "CultureMech:015296",
+      "before_sha256": "aaffbea00b891aed25712f88d0803e219d98e6ea82e4409a59fdfa3090d0f55f",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+      "old_title": "DSMZ 467. OTTOW MEDIUM",
+      "proposed_title": "467. OTTOW MEDIUM",
+      "snippet": "467. OTTOW MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+        "http_status": 200,
+        "sha256": "6b786f2ede7bfc29eb39e8003a6561f0049ea42f3ecfa87cf29a270baedb9e63",
+        "accessed_at": "2026-10-08T22:44:47.137776+00:00",
+        "pdf_sha256": "31ad0e734637e5aa1086a814056ce5e3baecd59847eaedf24db0e91ccc89e8f6",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_961_Main_sol_469.yaml",
+      "id": "CultureMech:015299",
+      "before_sha256": "d3f82f7d3356f9468ff1c11d283ce32f1cfa3a175629d6c3221110d502a6e437",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+      "old_title": "DSMZ 469. YM-CATALASE MEDIUM",
+      "proposed_title": "469. YM-CATALASE MEDIUM",
+      "snippet": "469. YM-CATALASE MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+        "http_status": 200,
+        "sha256": "35bc4c04851489e382d7d69f4589dbb324478a4b84c46c9e89d5481fe3226429",
+        "accessed_at": "2026-10-08T22:44:47.490646+00:00",
+        "pdf_sha256": "a7da4f0650bedfcb0c353fe9ae83fd885641a14ed6565b62a6655db099855531",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/medium_for_chemolithotrophic_growth_of_bacillus_schlegelii.yaml",
+      "id": "CultureMech:001360",
+      "before_sha256": "e68fed511a9c3b8ec58fa22ca86e9657f7a541fb16a221145a47d7fb6693db50",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf",
+      "old_title": "DSMZ medium 261: official recipe",
+      "proposed_title": "261. MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF BACILLUS SCHLEGELII",
+      "snippet": "261.   MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF\n       BACILLUS SCHLEGELII",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf",
+        "http_status": 200,
+        "sha256": "da2157407b4dd0a17deeef1b75d8f209b58792e660b53113d8e0a9cc02457c0a",
+        "accessed_at": "2026-10-08T22:44:53.062184+00:00",
+        "pdf_sha256": "abea799d50da431e0446e012179e4ef6144c6f239cc8db830e33abafbcf33596",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/medium_for_chemolithotrophic_growth_of_bacillus_schlegelii.yaml",
+      "id": "CultureMech:001360",
+      "before_sha256": "e68fed511a9c3b8ec58fa22ca86e9657f7a541fb16a221145a47d7fb6693db50",
+      "record_kind": "MEDIUM",
+      "field": "references[2].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+      "old_title": "DSMZ medium 260: official recipe",
+      "proposed_title": "260. BACILLUS SCHLEGELII HETEROTROPHIC MEDIUM",
+      "snippet": "260. BACILLUS SCHLEGELII HETEROTROPHIC MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+        "http_status": 200,
+        "sha256": "076eea22a114607e65b219be50fff913152035f9fcd3a366891fb186c053513d",
+        "accessed_at": "2026-10-08T22:44:52.137947+00:00",
+        "pdf_sha256": "ab78dd71cbd8d2d91832258c3cda9ccde3c6344d87b1ac791892c257691bf291",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/medium_for_chemolithotrophic_growth_of_bacillus_schlegelii.yaml",
+      "id": "CultureMech:001360",
+      "before_sha256": "e68fed511a9c3b8ec58fa22ca86e9657f7a541fb16a221145a47d7fb6693db50",
+      "record_kind": "MEDIUM",
+      "field": "references[3].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+      "old_title": "DSMZ medium 27: official recipe",
+      "proposed_title": "27. RHODOSPIRILLACEAE MEDIUM (modified)",
+      "snippet": "27. RHODOSPIRILLACEAE MEDIUM (modified)",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "http_status": 200,
+        "sha256": "fd5165d5e219288a724889bb95060ff67cc1098b3f1da1b3f08dd3542d62b6d0",
+        "accessed_at": "2026-10-08T22:44:52.468373+00:00",
+        "pdf_sha256": "e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9",
+        "pdf_pages": 2,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml",
+      "id": "CultureMech:002134",
+      "before_sha256": "f322e18503801cfdd53950330c2476d7e5bbce6e3a0798ac159699935bc5bae9",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "old_title": "DSMZ 956: MEDIUM FOR DSM 14457 AND 14458",
+      "proposed_title": "956. MEDIUM FOR DSM 14457 AND 14458",
+      "snippet": "956. MEDIUM FOR DSM 14457 AND 14458",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+        "http_status": 200,
+        "sha256": "46f47ed20f7136c62ed77cd94a6ca521236ce7483986fc81ca76129887834b0a",
+        "accessed_at": "2026-10-08T22:44:50.909334+00:00",
+        "pdf_sha256": "156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine.yaml",
+      "id": "CultureMech:006899",
+      "before_sha256": "d0fcc93aba25c7662154bb86904cb303f4385b73419005de70f370b44fc79740",
+      "record_kind": "MEDIUM",
+      "field": "references[0].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "old_title": "DSMZ 956: MEDIUM FOR DSM 14457 AND 14458",
+      "proposed_title": "956. MEDIUM FOR DSM 14457 AND 14458",
+      "snippet": "956. MEDIUM FOR DSM 14457 AND 14458",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+        "http_status": 200,
+        "sha256": "46f47ed20f7136c62ed77cd94a6ca521236ce7483986fc81ca76129887834b0a",
+        "accessed_at": "2026-10-08T22:44:50.909334+00:00",
+        "pdf_sha256": "156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/methylobacterium_medium.yaml",
+      "id": "CultureMech:000718",
+      "before_sha256": "5182ee774e098c981851a759200b18f4c8382d0332ccf10d9800b99e6094b969",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+      "old_title": "DSMZ Medium 125: METHYLOBACTERIUM MEDIUM",
+      "proposed_title": "125. METHYLOBACTERIUM MEDIUM",
+      "snippet": "125. METHYLOBACTERIUM MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+        "http_status": 200,
+        "sha256": "7cc42bdcbea29168f3ee89a5afbabf42e68a3c298e2cc3a4af121d903f7386c4",
+        "accessed_at": "2026-10-08T22:44:46.037268+00:00",
+        "pdf_sha256": "e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/ottow_medium.yaml",
+      "id": "CultureMech:001596",
+      "before_sha256": "1f98e42a85b24347348bab2b82635d4f8064406a157ac9e3f187c53e21147a5b",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+      "old_title": "DSMZ 467. OTTOW MEDIUM",
+      "proposed_title": "467. OTTOW MEDIUM",
+      "snippet": "467. OTTOW MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+        "http_status": 200,
+        "sha256": "6b786f2ede7bfc29eb39e8003a6561f0049ea42f3ecfa87cf29a270baedb9e63",
+        "accessed_at": "2026-10-08T22:44:47.137776+00:00",
+        "pdf_sha256": "31ad0e734637e5aa1086a814056ce5e3baecd59847eaedf24db0e91ccc89e8f6",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/rhizobium_medium.yaml",
+      "id": "CultureMech:002171",
+      "before_sha256": "90b87448830e422a63bcade502988da691b5d598efd0565ad39f27094fcc48d4",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium98.pdf",
+      "old_title": "DSMZ medium 98: official recipe",
+      "proposed_title": "98. RHIZOBIUM MEDIUM",
+      "snippet": "98. RHIZOBIUM MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium98.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium98.pdf",
+        "http_status": 200,
+        "sha256": "4a1a9b0d5e9389bdde12115b733d0649612872017d38f5269fb3534f0e56dad4",
+        "accessed_at": "2026-10-08T22:44:54.398692+00:00",
+        "pdf_sha256": "ed72f0832f306618c096dd2458e9d07cfd0799b58240476727b5a4984d6551ed",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/soil_extract_medium.yaml",
+      "id": "CultureMech:000762",
+      "before_sha256": "fd4c42ebb7018bab05628d40958898adf8933e621c3534627463418adb8d4161",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf",
+      "old_title": "DSMZ medium 12: SOIL EXTRACT MEDIUM",
+      "proposed_title": "12. SOIL EXTRACT MEDIUM",
+      "snippet": "12. SOIL EXTRACT MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf",
+        "http_status": 200,
+        "sha256": "80dd4d55dc6938cb97c9579e30a7c2452e5e5271e67ef7aa0fd5d00c6bd1232d",
+        "accessed_at": "2026-10-08T22:44:46.341444+00:00",
+        "pdf_sha256": "1b4394336f7ace4e09c66fc67ed2e745e3c633b725e436d94335b99289243580",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/tween_80a_medium.yaml",
+      "id": "CultureMech:001748",
+      "before_sha256": "5981441bc27f792d7ef0ccac817f2cdbfd0c354c34ed29a2b07d53c45d7ab627",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+      "old_title": "DSMZ 618: TWEEN 80A MEDIUM",
+      "proposed_title": "618. TWEEN 80A MEDIUM",
+      "snippet": "618. TWEEN 80A MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+        "http_status": 200,
+        "sha256": "e2e1b12a95b9343cb95683db400b11c733a3cbb6fd7016da0193cbcec1b110b9",
+        "accessed_at": "2026-10-08T22:44:48.896999+00:00",
+        "pdf_sha256": "cd503969dc2f910a9b50c270952adf4c00eaffb09762b02a50e60c23555d8f20",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/ym_catalase_medium.yaml",
+      "id": "CultureMech:001598",
+      "before_sha256": "f182c9ebf843855662fd933ffa9927b5c7fc6bd44879123c1f498bd154c02ee1",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+      "old_title": "DSMZ 469. YM-CATALASE MEDIUM",
+      "proposed_title": "469. YM-CATALASE MEDIUM",
+      "snippet": "469. YM-CATALASE MEDIUM",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+        "http_status": 200,
+        "sha256": "35bc4c04851489e382d7d69f4589dbb324478a4b84c46c9e89d5481fe3226429",
+        "accessed_at": "2026-10-08T22:44:47.490646+00:00",
+        "pdf_sha256": "a7da4f0650bedfcb0c353fe9ae83fd885641a14ed6565b62a6655db099855531",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    },
+    {
+      "record": "data/normalized_yaml/fungal/potato_dextrose_agar.yaml",
+      "id": "CultureMech:010445",
+      "before_sha256": "f44d28688c166c55df27e18161dcb989a086e4f4446ea1b8ba3f95c4cfa4f105",
+      "record_kind": "MEDIUM",
+      "field": "references[1].title",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium129.pdf",
+      "old_title": "DSMZ medium 129: official recipe",
+      "proposed_title": "129. POTATO DEXTROSE AGAR",
+      "snippet": "129. POTATO DEXTROSE AGAR",
+      "locator": "Original PDF first heading block on page 1",
+      "source_metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium129.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium129.pdf",
+        "http_status": 200,
+        "sha256": "f20fb3a7767ed276db99b10dd698ce8bf823fcf4043616e57c0cb3e527538414",
+        "accessed_at": "2026-10-08T22:44:54.745733+00:00",
+        "pdf_sha256": "0cc96a482ddf12da286edde02e76d510b4d92ff9e9e42eb3133a6f440b442fff",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "status": "candidate; inspect complete record and attach scoped evidence before guarded application"
+    }
+  ]
+}

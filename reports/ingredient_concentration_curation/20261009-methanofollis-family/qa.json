@@ -1,0 +1,244 @@
+{
+  "terminal": true,
+  "phase": "qa",
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_methanofollis_family.py",
+        "tests/test_methanofollis_family.py",
+        "tests/test_medium_concentration_batch.py",
+        "reports/ingredient_concentration_curation/20261009-methanofollis-family/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py",
+        "tests/test_repair_komodo_dsmz_submedia_score15.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanofollis-family/qa-0.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_methanofollis_family.py",
+        "tests/test_methanofollis_family.py",
+        "tests/test_medium_concentration_batch.py",
+        "reports/ingredient_concentration_curation/20261009-methanofollis-family/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py",
+        "tests/test_repair_komodo_dsmz_submedia_score15.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanofollis-family/qa-1.log",
+      "log_sha256": "7657c5ec367da2c8d4deead1b5f1f8eca9c1b89120ad13df7f855ca4005696b6"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanofollis-family/qa-2.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "scripts/repair_methanofollis_family.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanofollis-family/qa-3.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "tests/test_methanofollis_family.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanofollis-family/qa-4.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "tests/test_medium_concentration_batch.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanofollis-family/qa-5.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanofollis-family/audit.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanofollis-family/qa-6.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanofollis-family/qa-7.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "tests/test_repair_komodo_dsmz_submedia_score15.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanofollis-family/qa-8.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/D161.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanofollis-family/qa-9.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/K161.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanofollis-family/qa-10.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/S209.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanofollis-family/qa-11.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/S241.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanofollis-family/qa-12.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/S277.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanofollis-family/qa-13.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/S5980.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanofollis-family/qa-14.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_solution_concentration_batch.py",
+        "tests/test_komodo670_source_versions.py",
+        "tests/test_repair_komodo_dsmz_submedia_score15.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanofollis-family/qa-15.log",
+      "log_sha256": "23654957eaf642e6ef1b8b26a5e86e92d1b232bfc574efbb6851ba706e4eafae"
+    }
+  ],
+  "plan_sha256": "dc2a0e96231feac52125245dc55f41d3deb937970a06d151fba10d2fd63d7a4a",
+  "code_sha256": {
+    "scripts/repair_methanofollis_family.py": "197c33dd0b0f2057faf29f891473668e31156690a5abe25171d6ed6afc62b7f3",
+    "tests/test_methanofollis_family.py": "967d2e55a423d2fccdc3ea213a28628f9a690d4b77078ec7ebab89dee74e81a0",
+    "tests/test_medium_concentration_batch.py": "acf85f32c20c3b46f6c94123617981c72cf785d624776fe8055bf80531d4b8b7",
+    "reports/ingredient_concentration_curation/20261009-methanofollis-family/audit.py": "8d75f631a9d4d12b7cf8f932e70834817c6bb7efc7e077f092b78d3a460fa82e",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "c74216c6738ce5077fadcc0d53ebec6decb7e6f34130f210efb8e43906407a09",
+    "tests/test_repair_komodo_dsmz_submedia_score15.py": "2c50a61595adc051b6858349561af2ceac49bace378193acf2e755de5248888d"
+  }
+}

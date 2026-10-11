@@ -1,0 +1,342 @@
+{
+  "terminal": true,
+  "phase": "qa",
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_rumen_bacteria_family.py",
+        "tests/test_rumen_bacteria_family.py",
+        "tests/test_medium_concentration_batch.py",
+        "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py",
+        "tests/test_repair_komodo_dsmz_submedia_score15.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-0.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_rumen_bacteria_family.py",
+        "tests/test_rumen_bacteria_family.py",
+        "tests/test_medium_concentration_batch.py",
+        "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py",
+        "tests/test_repair_komodo_dsmz_submedia_score15.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-1.log",
+      "log_sha256": "7657c5ec367da2c8d4deead1b5f1f8eca9c1b89120ad13df7f855ca4005696b6"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-2.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "scripts/repair_rumen_bacteria_family.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-3.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "tests/test_rumen_bacteria_family.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-4.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "tests/test_medium_concentration_batch.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-5.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/audit.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-6.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-7.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "tests/test_repair_komodo_dsmz_submedia_score15.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-8.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/D330.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-9.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/DJ1029.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-10.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/K3032.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-11.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/K3131.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-12.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/K330.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-13.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/K330_17630.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-14.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/M1093.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-15.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/S124.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-16.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/S3774.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-17.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/S5080.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-18.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/S606.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-19.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/S607.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-20.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/S608.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-21.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_solution_concentration_batch.py",
+        "tests/test_komodo670_source_versions.py",
+        "tests/test_repair_komodo_dsmz_submedia_score15.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/qa-22.log",
+      "log_sha256": "2a0550f01aee44838979ba59a298e8547facc3ea79574a1274a95366406fdfb2"
+    }
+  ],
+  "plan_sha256": "5940d6a1b64c0f21408a6bde46512049cb4cbfff12cb80ae9061c5c6edfd3a1f",
+  "code_sha256": {
+    "scripts/repair_rumen_bacteria_family.py": "d3c23bf4b7141ffcc038f596fc7cad69c19372a5ecedaee21dbf6d99950fdf36",
+    "tests/test_rumen_bacteria_family.py": "4fabfda109e7a4105722e156ff591eb8e8b8b0144ddf3898f9539de75677cb6a",
+    "tests/test_medium_concentration_batch.py": "033c0df92fd5efe88ea30efad271b69b16464441f241a70178b417af994c51b5",
+    "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/audit.py": "8d886bcd4799b6c216b8aaab16f130f126ab253bbc963fdedc4e37f0b22d1890",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "312a8f916ff532d9ebd191e3879850e1476615a8d2999770f0547545b6d6e439",
+    "tests/test_repair_komodo_dsmz_submedia_score15.py": "2c50a61595adc051b6858349561af2ceac49bace378193acf2e755de5248888d"
+  }
+}

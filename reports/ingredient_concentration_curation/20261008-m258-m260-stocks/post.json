@@ -1,0 +1,85 @@
+{
+  "terminal": true,
+  "phase": "post",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/TOGO_M258_Methanomicrobium_Mobile_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/m258-m260-post-0.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/TOGO_M258_Methanomicrobium_Mobile_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/m258-m260-post-1.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/archaea/TOGO_M258_Methanomicrobium_Mobile_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/m258-m260-post-2.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/TOGO_M260_MJ_YPGS_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/m258-m260-post-3.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/TOGO_M260_MJ_YPGS_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/m258-m260-post-4.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/TOGO_M260_MJ_YPGS_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/m258-m260-post-5.log"
+    },
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/m258-m260-post-6.log"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/m258-m260-post-7.log"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "60abc9aa956835c409849c117d0d09ae5b63a21ad5524273d3eba2867b1ee116"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "60abc9aa956835c409849c117d0d09ae5b63a21ad5524273d3eba2867b1ee116"
+  }
+}

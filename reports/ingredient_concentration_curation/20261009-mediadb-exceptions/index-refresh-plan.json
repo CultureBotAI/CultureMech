@@ -1,0 +1,142 @@
+{
+  "files": [
+    {
+      "target": "data/normalized_yaml/bacterial_index.json",
+      "preview": "/tmp/ingredient-media-20261009-mediadb/index-preview/bacterial_index.json",
+      "before_sha256": "ba89b9639cc29fea58d5e0d5ef5ece0301668f3723ab5585a6166c0d55606bfe",
+      "after_sha256": "16f7e645578ced9aaf17d44c6aab42f02bfccfd7f40e7bddfffcbbc99bf41d36",
+      "changes": [
+        {
+          "id": "CultureMech:007333",
+          "changes": {
+            "ingredient_count": [
+              31,
+              29
+            ]
+          }
+        },
+        {
+          "id": "CultureMech:007366",
+          "changes": {
+            "ingredient_count": [
+              31,
+              29
+            ]
+          }
+        },
+        {
+          "id": "CultureMech:007380",
+          "changes": {
+            "ingredient_count": [
+              27,
+              26
+            ]
+          }
+        },
+        {
+          "id": "CultureMech:007381",
+          "changes": {
+            "ingredient_count": [
+              28,
+              27
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_unknown_index.json",
+      "preview": "/tmp/ingredient-media-20261009-mediadb/index-preview/by_source_unknown_index.json",
+      "before_sha256": "846b6e58ddadbb480c206f0f2f7c004ef73778b6c0f55255faab2d4574cc80e1",
+      "after_sha256": "4cf4bcc5d6a88f31ccadf972f450520f0478217a06b2594c6b8d33cd44e73856",
+      "changes": [
+        {
+          "id": "CultureMech:007333",
+          "changes": {
+            "ingredient_count": [
+              31,
+              29
+            ]
+          }
+        },
+        {
+          "id": "CultureMech:007366",
+          "changes": {
+            "ingredient_count": [
+              31,
+              29
+            ]
+          }
+        },
+        {
+          "id": "CultureMech:007380",
+          "changes": {
+            "ingredient_count": [
+              27,
+              26
+            ]
+          }
+        },
+        {
+          "id": "CultureMech:007381",
+          "changes": {
+            "ingredient_count": [
+              28,
+              27
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_index.json",
+      "preview": "/tmp/ingredient-media-20261009-mediadb/index-preview/recipe_index.json",
+      "before_sha256": "ca55ef59a92637b90b34b36c85b24080dd5c37143a79339ff8882663f589aaad",
+      "after_sha256": "ac0263272e8683d88a7bf8c3e473ce0bd0f93e6bc2b3d0ae487e0c9600885bf9",
+      "changes": [
+        {
+          "id": "CultureMech:007333",
+          "changes": {
+            "ingredient_count": [
+              31,
+              29
+            ]
+          }
+        },
+        {
+          "id": "CultureMech:007366",
+          "changes": {
+            "ingredient_count": [
+              31,
+              29
+            ]
+          }
+        },
+        {
+          "id": "CultureMech:007380",
+          "changes": {
+            "ingredient_count": [
+              27,
+              26
+            ]
+          }
+        },
+        {
+          "id": "CultureMech:007381",
+          "changes": {
+            "ingredient_count": [
+              28,
+              27
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "metadata_changed_ids": [
+    "CultureMech:007333",
+    "CultureMech:007366",
+    "CultureMech:007380",
+    "CultureMech:007381"
+  ]
+}

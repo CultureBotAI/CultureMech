@@ -1,0 +1,22 @@
+{
+  "terminal": true,
+  "phase": "fast",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-albumin-fast-0.log"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "97b156240849be7bf096a61d00d7a683ff9c8de8922db8585e5e8128ba7eb36c"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "97b156240849be7bf096a61d00d7a683ff9c8de8922db8585e5e8128ba7eb36c"
+  }
+}

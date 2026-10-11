@@ -1,0 +1,287 @@
+[
+  {
+    "id": "CultureMech:004580",
+    "medium_id": "226",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/226",
+    "source_sha256": "ec46b38683e27e2491aeb50bd5eb25b021daf90f10316d00883461751a11a9d0",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone in ethanol.",
+    "reason": "The preparation requires 1 ml/l of a 10% acetylacetone solution in ethanol, absent from the local ingredient inventory. Its percentage basis, stock boundary and receiving formulation need explicit representation before endorsing the complete recipe."
+  },
+  {
+    "id": "CultureMech:004606",
+    "medium_id": "232",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/232",
+    "source_sha256": "49361623edf6d9a6773e37f89ffc7d95994a1c1133a7c69d2f42bc9d66dc3a5f",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "Add 0.05% cysteine-hydrochloride.",
+    "reason": "The required cysteine-hydrochloride addition is absent from the local record and the main table. Its unqualified 0.05% is not evidence for an assumed mass/volume basis. Resolve the complete formulation and percentage basis before endorsing it."
+  },
+  {
+    "id": "CultureMech:004607",
+    "medium_id": "232b",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/232b",
+    "source_sha256": "cd4a5581ecc39e2b47703f5bf9baf8065da76b9dbe857353b265cf79edfc2747",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "Add 4 ml Resazurin solution (25 mg/100 ml). 0.05% Cysteine-hydrochloride is added after the medium has been boiled and cooled and CO2. Distribute under N2 and autoclave.",
+    "reason": "The source adds a resazurin stock and cysteine after preparation under gas. Neither addition is represented locally. Base-medium 232 evidence or the legacy source-duplicate link does not establish this supplemented formulation."
+  },
+  {
+    "id": "CultureMech:004612",
+    "medium_id": "239",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/239",
+    "source_sha256": "fba5366340061bce0326a229f04f3b82f9382223642c8e93845128a608d838f2",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Adjust pH to 7.4. After sterilization add 100 ml of a filter-sterilized solution of 1 mM diethyl phosphonate (Eastman Organic Chemical Div., Rochester, N.Y., USA) or of 20 mM phosphate buffer.",
+    "reason": "The original recipe and API specify alternative 100 ml additions of diethyl phosphonate stock or phosphate buffer. The local flat record neither represents the alternative nor the stock boundary, and encodes a liquid dose as a mass rate. No branch is silently selected."
+  },
+  {
+    "id": "CultureMech:004659",
+    "medium_id": "255",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/255",
+    "source_sha256": "ad90fead8e1de314f7408b724971a61a40f1d11f5c079f013fccfe7a60524c5d",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Dissolve ingredients except cysteine and cellobiose and adjust pH to 7.2. Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, then add cysteine and readjust pH to 7.2, if necessary. Dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Prior to inoculation add cellobiose from an anoxic stock solution prepared under 100% N2 gas and sterilized by filtration.",
+    "reason": "The API uses a 1002 ml denominator while the source specifies 1000 ml water, 1.25 ml iron stock, 0.5 ml resazurin stock and a separately prepared cellobiose stock of unspecified volume. Reconcile stock staging, rounded provider volume and final-medium basis before endorsing these rates."
+  },
+  {
+    "id": "CultureMech:004666",
+    "medium_id": "262",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/262",
+    "source_sha256": "4fa0cfdb1493a81aa3c0193ab54d352f63717f585dd833261878b28222e5f3e1",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Adjust pH to 7.3 - 7.5. Dissolve glucose in 10 ml of distilled water and sterilize glucose separately. Aseptically add to the basis medium after sterilization.",
+    "reason": "The API preparation separately dissolves glucose in 10 ml water but retains a 1000 ml main-table denominator; the original PDF says sterilize glucose separately without specifying that volume. Reconcile glucose-stock versus basal and complete-medium concentration scope without guessing final volume."
+  },
+  {
+    "id": "CultureMech:004668",
+    "medium_id": "265",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/265",
+    "source_sha256": "f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled for few minutes, not autoclaved; sucrose (20 ml of 10% w/v solution)-filter-sterilized; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive days; polar lipid fraction (6 - 12ml)-prepared as described by W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere.",
+    "reason": "The API yeast-extract table reports 20 mg/l while its preparation and the original recipe specify 20 ml of 10% w/v solution (2 g input). The record also flattens separately prepared supplements and a variable lipid dose. Preserve this conflict; do not endorse the combined formulation."
+  },
+  {
+    "id": "CultureMech:004669",
+    "medium_id": "266",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/266",
+    "source_sha256": "fcf98385891431be398f7e4fbf3192bf68ec6f4b5a88fb6b0e07abf7006c23cf",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled for a few minutes not autoclaved; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive days; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere.",
+    "reason": "Both the API and original PDF list 5 g sulfur but their preparation says 10 g and adds an unlisted sulfide stock. The flat record omits that sulfide addition and its preparation boundary. No sulfur value or final-medium basis is selected from conflicting statements."
+  },
+  {
+    "id": "CultureMech:004671",
+    "medium_id": "268",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/268",
+    "source_sha256": "79bde67b83bd556f6088c1ea452d99ffc0150c961ca0a2b2724ae32a0db417df",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Add tea and sucrose to a 1 l flask, pour on freshly boiled tap water and allow to stand for 15 minutes. Filter and cool to room temperature. When starting with a small amount of tea fungus use a 50 ml beaker and 10 ml of the sweetened tea (freed of leaves) which has been acidified by addition of 0.05 ml of boiled vinegar (5%). Place a small disc of a cork stopper on the surface of the tea and place the inoculum onto it. Cover the beaker with aluminium foil and incubate. (Steam the cork disc for 15 min on two successive days).",
+    "reason": "Tea and sucrose are extraction inputs; the preparation filters the mixture, then specifies a separately acidified starter. The current flat recipe does not distinguish input loading, recovered sweetened tea and starter dilution. No retained-solute concentration or extraction yield is inferred."
+  },
+  {
+    "id": "CultureMech:004820",
+    "medium_id": "303",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/303",
+    "source_sha256": "0f38a3a52b539bb27ebb6438948d7505fc04cbff1ed1b46f50e0884dc5ed5886",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Prepare the medium without horse serum. After autoclaving cool to 50\u00b0C, then add 100 ml/l of sterile horse serum. Transfer cultures when actively growing. Cultures die rapidly in stationary growth phase!",
+    "reason": "The table contains 1000 ml water and 100 ml serum while the preparation adds serum after autoclaving at 100 ml/l. The API still reports a 1000 ml denominator. Establish the base-versus-supplemented volume basis and stock boundary before endorsing these rates."
+  },
+  {
+    "id": "CultureMech:005035",
+    "medium_id": "338",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/338",
+    "source_sha256": "0fd7b2d8a7ea1f0604a81a98abdea83db0ea4941034bf939a94c0e1be7fea49f",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "Autoclave solutions of haemin (dissolved in 0.1 ml 1N NaOH, then diluted with water to 10 ml and neutralized), formate, and fumarate separately under nitrogen.",
+    "reason": "Haemin is prepared separately in NaOH and diluted to 10 ml; formate and fumarate are also sterilized separately. The local flat record lacks those preparations and the source does not establish a complete final-volume basis beyond its 1000 ml water table. Reconcile preparation stages before supporting these rates."
+  },
+  {
+    "id": "CultureMech:005089",
+    "medium_id": "368",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/368",
+    "source_sha256": "de6ba13b828889cf820e62b008b308a37e9315670ce4fac8cea87f625b23f171",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "After sterilization aseptically add 10% (v/v) ethanol",
+    "reason": "The required post-sterilization 10% v/v ethanol addition is absent from the local record and table. Basal and ethanol-supplemented medium are not interchangeable. Restore the supported addition and its volume basis before endorsing the complete formulation."
+  },
+  {
+    "id": "CultureMech:005177",
+    "medium_id": "393",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/393",
+    "source_sha256": "57ff32b4634974d9f35ab6fca4eb5217704c6f24e424ab59e28494cc9e811d6c",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Adjust pH to 5.6. Sterilize at 121\u00b0C for 15 min.",
+    "reason": "The API preparation says pH 5.6, while local and API metadata and the original DSMZ PDF specify pH 6.5. Preserve the source disagreement and reconcile the exact recipe version; do not treat matching concentration rows as a fully reconciled formulation."
+  },
+  {
+    "id": "CultureMech:005178",
+    "medium_id": "394",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/394",
+    "source_sha256": "eadb359a816fe26f4b8a24fcfa57f3d6df3cb04f15d2c12e4a5d0fe82fda5bd6",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "Magnesium chloride should be sterilized separately by autoclaving, and the other ingredients should be sterilized separately by filtration.",
+    "reason": "The source defines separately sterilized molar and percentage stocks. Provider base rates use 1070 ml while several stock-derived rates use a different denominator, and local Tris-HCl is a volume encoded as mass. Reconcile mixed stage/denominator semantics and percentage bases before endorsing this flat recipe."
+  },
+  {
+    "id": "CultureMech:005282",
+    "medium_id": "435",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/435",
+    "source_sha256": "90d6d973b4871206c74cb3d3916cdddbaacfa7d449a8f352db8736d269b578e9",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      2,
+      "step"
+    ],
+    "snippet": "Add 2 g/l activated charcoal to the agar base solution before autoclaving. After autoclaving, cool to 45\u00b0C and add sterilized serum.",
+    "reason": "The source explicitly doses activated charcoal per litre of agar base before adding serum, but the local record presents an unqualified whole-medium rate. Reconcile the 800 ml base and subsequent 200 ml serum boundary; the original PDF says calf serum, not explicitly fetal bovine serum. No stock/receiving concentration or serum identity is inferred."
+  }
+]

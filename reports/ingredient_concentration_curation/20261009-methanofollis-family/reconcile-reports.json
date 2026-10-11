@@ -1,0 +1,124 @@
+{
+  "terminal": true,
+  "phase": "reports",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanofollis-family/reconcile-reports-0.log",
+      "log_sha256": "741e51ca682e19ac8e6e4cec9084778694d7f0147e078ceaab7f5a420c31262b"
+    }
+  ],
+  "source_sha256": "3e69263bb0c82e782c51c5a994945630fbf3a3b9f685248e16d7daf3367f05fc",
+  "plan_sha256": "dc2a0e96231feac52125245dc55f41d3deb937970a06d151fba10d2fd63d7a4a",
+  "normalized_count": 15910,
+  "canonical_reports": {
+    "data/normalized_yaml/archaea/KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/archaea/KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml.md",
+    "data/normalized_yaml/archaea/methanofollis_medium.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/archaea/methanofollis_medium.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_209_Fatty_acid_mixture.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_209_Fatty_acid_mixture.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_241_Modified_Wolin_s_mineral_solution.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_241_Modified_Wolin_s_mineral_solution.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_277_Main_sol_161.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_277_Main_sol_161.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-stocks/mediadive_5980_Wolin_s_vitamin_solution_10x.md"
+  },
+  "updated_canonical_reports": [
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/archaea/KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml.md",
+      "before_sha256": "0a8f1bda495d4cd2c959c13c339acc01fb40c0b31ab2d66b11c4e10acc5beacb",
+      "after_sha256": "76a6afc53ebd5d815d4d3b9494924db4b34013578ad8b79b5ffee96b09321a8c"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/archaea/methanofollis_medium.yaml.md",
+      "before_sha256": "a703976544e840fe7e613735c37478f4bb27a9ea18c7e6406bcd094938a07ddb",
+      "after_sha256": "d35663e62a0c4680794fa4024e5d63c12275cb362d9a822acd407bb779977340"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_209_Fatty_acid_mixture.yaml.md",
+      "before_sha256": "a5bfb133aa13b0bf8fe2d4cb08b2c8fc77ae28540b3ea69f3aa6aa23dc678523",
+      "after_sha256": "b4e0fea739e2ae4d66a2d517fcf24b4e3f0368c3b8747e6b778669f438bc752f"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_241_Modified_Wolin_s_mineral_solution.yaml.md",
+      "before_sha256": "2627d8fcbe5a5f8fb185e555372ff1890126cde14c3ee718d2459152e10b32db",
+      "after_sha256": "85711deb9d1cb52d632f21b8cd3493537940ca22b7dc3ac0fec860b073302109"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_277_Main_sol_161.yaml.md",
+      "before_sha256": "9e91f2b5f533af10881271d8981404f55cffab4815b2fcb65982d82b7bb45862",
+      "after_sha256": "3998c4904411521dcf3e08bef1c29b8a8fa6b3a606ae2fcc000a55a5f5cd9870"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-stocks/mediadive_5980_Wolin_s_vitamin_solution_10x.md",
+      "before_sha256": "0c111b8a82c3335945c276ad65d74d01e901136209a07e2ef76dee48c60d835c",
+      "after_sha256": "f2fe262502bc7b014e102df78f0d05196f15c28c02908757d89ab110de98be56"
+    }
+  ],
+  "cumulative_audit": {
+    "stock_nodes_relocated": 825,
+    "new_quantity_slots": 364,
+    "unsupported_quantity_slots_removed": 869,
+    "new_evidence": 35769,
+    "new_curation_history": 5472,
+    "new_references": 5816,
+    "stock_stage_concentrations_rebased": 199,
+    "stock_descriptors_added": 241,
+    "quantity_corrections": 1455,
+    "stock_dose_basis_corrections": 128,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 88,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 8,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 1,
+    "child_links_corrected": 7,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 14,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5258
+  },
+  "followup_unique_records": 11802,
+  "outside_this_followup": 4108,
+  "remaining_identity_candidates": {
+    "methylbutyrate_name": 33
+  },
+  "resolved_identity_candidates": [
+    "data/normalized_yaml/archaea/KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml",
+    "data/normalized_yaml/archaea/methanofollis_medium.yaml"
+  ],
+  "separate_m142_queue": 71
+}

@@ -1,0 +1,59 @@
+{
+  "terminal": true,
+  "phase": "corpus",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml",
+        "--out",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/strict-errors.tsv"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/corpus-0.log",
+      "log_sha256": "58c92d40a486f1ddf8a64a9150549315720b51ce3544f1ea74e92e31655a79be"
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/corpus-1.log",
+      "log_sha256": "eb7360e4d6ac289a3c075ae3f26d2a32b53e6b2da8d03073cfda3e697295cbc0"
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/corpus-2.log",
+      "log_sha256": "435cbe275acf457e114684b529642021ccc39922470cedc500a537f45652b869"
+    }
+  ],
+  "errors": [],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "a55dbe72d9740772e93f5dbb870bc17709d68b4b494cd12f69e5bb02b7c41f23"
+  },
+  "plan_sha256": "496c0f734f231756ee97a80021429802c1af9136472b77798c9f2162ad4b2d4c",
+  "context_sha256": "1d9b09a2915e57c4f212f1de08bb1a5ada6b2a4b8a47b6b6c5d528d00250e84a",
+  "preview_validation_sha256": "e0f27faf288e9d48aa44560169c45b46beae1856782c9a5aca7f3af77ee36eb8",
+  "code_sha256": {
+    "scripts/repair_synthrophomonas_family.py": "ef0dbeed08dfe0177b59bd628aa6b5ab5f828a1f3f2ea70e7298088831a61838",
+    "tests/test_synthrophomonas_family.py": "fc68e870d8cb3a56e73d29e2d6797f7fac8a241f33bdfb117ecf5bbe5f591a2e",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/audit.py": "e21d75bf5b782c9eba2df6e30ced68989d9bfcc2000bf1b9066cdf04e2a47458"
+  },
+  "focused_application_sha256": "d4e3746f6a9aee747fe3795603e79d9c8025d608352ca36ebad2805fdaee62f8",
+  "ignored_files_included": true,
+  "strict_scanned": 15910,
+  "global_variant_findings": [],
+  "cohort_variant_findings": [],
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "a55dbe72d9740772e93f5dbb870bc17709d68b4b494cd12f69e5bb02b7c41f23"
+  },
+  "all_command_checks_passed": true
+}

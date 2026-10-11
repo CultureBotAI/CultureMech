@@ -1,0 +1,26 @@
+{
+  "terminal": true,
+  "phase": "strict-full",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml",
+        "--out",
+        "reports/ingredient_concentration_curation/20261008-basal-makeup/strict-full-errors.tsv"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/basal-strict-full-0.log"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "b8f024d6b5c7faa334609caa01c6ce2e2ffd395e322d6459da1b6865597d46dc"
+  },
+  "exact_scanned_count": 15910,
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "b8f024d6b5c7faa334609caa01c6ce2e2ffd395e322d6459da1b6865597d46dc"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "retention",
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "records": [
+    {
+      "path": "data/normalized_yaml/algae/1_F_2_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/1_F_2_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/5_F_2_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/5_F_2_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/8_ppt_F_2_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/8_ppt_F_2_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/F_2_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/F_2_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/f_2_nh4_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/f_2_nh4_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    }
+  ],
+  "distinct_cohort_groups": 5,
+  "derived_yaml_written": false,
+  "input_records": 15910,
+  "output_groups": 10781,
+  "source_inventory_unchanged": true
+}

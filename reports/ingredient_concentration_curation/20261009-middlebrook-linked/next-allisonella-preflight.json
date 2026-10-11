@@ -1,0 +1,828 @@
+{
+  "terminal": true,
+  "state": "Read-only preflight and source inventory; not applied and not counted as complete reviews.",
+  "context_sha256": "dae45cfd1b14facc31aa8691044e6718031b2cd9f8f258b4e5ae141553bfc61f",
+  "normalized_count": 15910,
+  "normalized_sha256": "586888cea49e962e3fe4ccbe021599c5c21ee5f15e4aae265f5bdfe305ce8bb0",
+  "ignored_inclusive_inventory": true,
+  "neighbors": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1006_ALLISONELLA_medium.yaml",
+      "field": "parent_media",
+      "reference": {
+        "path": "data/normalized_yaml/bacterial/allisonella_medium.yaml",
+        "relationship": "SOURCE_DUPLICATE",
+        "id": "CultureMech:000422",
+        "name": "allisonella_medium",
+        "notes": "Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration signature."
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/allisonella_medium.yaml",
+      "field": "variant_children[0]",
+      "reference": {
+        "path": "data/normalized_yaml/bacterial/KOMODO_1006_ALLISONELLA_medium.yaml",
+        "relationship": "SOURCE_DUPLICATE",
+        "id": "CultureMech:003506",
+        "name": "allisonella_medium",
+        "notes": "Same source medium number and matching ingredient/concentration signature."
+      }
+    }
+  ],
+  "identity_errors": [],
+  "external_neighbors": [],
+  "sources": {
+    "D1006": {
+      "url": "https://mediadive.dsmz.de/rest/medium/1006",
+      "title": "ALLISONELLA MEDIUM",
+      "sha256": "e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f",
+      "accessed_at": "2026-10-09T01:48:14.082412+00:00"
+    },
+    "K1006": {
+      "url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "title": "KOMODO - the Known Media Database",
+      "sha256": "a589509cce9d95acc1437091b62ab3d764268e261e8bdec15fb5b1b8ab4a6fa7",
+      "accessed_at": "2026-10-09T01:48:14.608032+00:00"
+    },
+    "DSMZ1006": {
+      "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+      "title": "1006: ALLISONELLA MEDIUM",
+      "sha256": "49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31",
+      "accessed_at": "2026-10-09T01:48:16.318753+00:00"
+    }
+  },
+  "source_rows": [
+    {
+      "source": "D1006",
+      "label": "DL-Histidine",
+      "stage": "Main sol. 1006",
+      "source_pointer": [
+        "data",
+        "solutions",
+        0,
+        "recipe",
+        0
+      ],
+      "row": {
+        "recipe_order": 1,
+        "compound": "DL-Histidine",
+        "compound_id": 916,
+        "amount": 7.8,
+        "unit": "g",
+        "g_l": 7.76892,
+        "mmol_l": 50.072,
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"DL-Histidine\",\n                        \"compound_id\": 916,\n                        \"amount\": 7.8,\n                        \"unit\": \"g\",\n                        \"g_l\": 7.76892,\n                        \"mmol_l\": 50.072,\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "Yeast extract",
+      "stage": "Main sol. 1006",
+      "source_pointer": [
+        "data",
+        "solutions",
+        0,
+        "recipe",
+        1
+      ],
+      "row": {
+        "recipe_order": 2,
+        "compound": "Yeast extract",
+        "compound_id": 16,
+        "amount": 4,
+        "unit": "g",
+        "g_l": 3.98406,
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 4,\n                        \"unit\": \"g\",\n                        \"g_l\": 3.98406,\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "Trypticase peptone",
+      "stage": "Main sol. 1006",
+      "source_pointer": [
+        "data",
+        "solutions",
+        0,
+        "recipe",
+        2
+      ],
+      "row": {
+        "recipe_order": 3,
+        "compound": "Trypticase peptone",
+        "compound_id": 124,
+        "attribute": "BD BBL",
+        "amount": 1,
+        "unit": "g",
+        "g_l": 0.996016,
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Trypticase peptone\",\n                        \"compound_id\": 124,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.996016,\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "K2HPO4",
+      "stage": "Main sol. 1006",
+      "source_pointer": [
+        "data",
+        "solutions",
+        0,
+        "recipe",
+        3
+      ],
+      "row": {
+        "recipe_order": 4,
+        "compound": "K2HPO4",
+        "compound_id": 10,
+        "amount": 0.29,
+        "unit": "g",
+        "g_l": 0.288845,
+        "mmol_l": 1.65835,
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.29,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.288845,\n                        \"mmol_l\": 1.65835,\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "KH2PO4",
+      "stage": "Main sol. 1006",
+      "source_pointer": [
+        "data",
+        "solutions",
+        0,
+        "recipe",
+        4
+      ],
+      "row": {
+        "recipe_order": 5,
+        "compound": "KH2PO4",
+        "compound_id": 11,
+        "amount": 0.29,
+        "unit": "g",
+        "g_l": 0.288845,
+        "mmol_l": 2.12253,
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.29,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.288845,\n                        \"mmol_l\": 2.12253,\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "(NH4)2SO4",
+      "stage": "Main sol. 1006",
+      "source_pointer": [
+        "data",
+        "solutions",
+        0,
+        "recipe",
+        5
+      ],
+      "row": {
+        "recipe_order": 6,
+        "compound": "(NH4)2SO4",
+        "compound_id": 27,
+        "amount": 0.48,
+        "unit": "g",
+        "g_l": 0.478088,
+        "mmol_l": 3.61804,
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.48,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.478088,\n                        \"mmol_l\": 3.61804,\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "NaCl",
+      "stage": "Main sol. 1006",
+      "source_pointer": [
+        "data",
+        "solutions",
+        0,
+        "recipe",
+        6
+      ],
+      "row": {
+        "recipe_order": 7,
+        "compound": "NaCl",
+        "compound_id": 43,
+        "amount": 0.48,
+        "unit": "g",
+        "g_l": 0.478088,
+        "mmol_l": 8.18083,
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 0.48,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.478088,\n                        \"mmol_l\": 8.18083,\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "MgSO4 x 7 H2O",
+      "stage": "Main sol. 1006",
+      "source_pointer": [
+        "data",
+        "solutions",
+        0,
+        "recipe",
+        7
+      ],
+      "row": {
+        "recipe_order": 8,
+        "compound": "MgSO4 x 7 H2O",
+        "compound_id": 8,
+        "amount": 0.1,
+        "unit": "g",
+        "g_l": 0.0996016,
+        "mmol_l": 0.404103,
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0996016,\n                        \"mmol_l\": 0.404103,\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "CaCl2 x 2 H2O",
+      "stage": "Main sol. 1006",
+      "source_pointer": [
+        "data",
+        "solutions",
+        0,
+        "recipe",
+        8
+      ],
+      "row": {
+        "recipe_order": 9,
+        "compound": "CaCl2 x 2 H2O",
+        "compound_id": 7,
+        "amount": 64,
+        "unit": "mg",
+        "g_l": 0.063745,
+        "mmol_l": 0.433595,
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 64,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.063745,\n                        \"mmol_l\": 0.433595,\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "Sodium resazurin",
+      "stage": "Main sol. 1006",
+      "source_pointer": [
+        "data",
+        "solutions",
+        0,
+        "recipe",
+        9
+      ],
+      "row": {
+        "recipe_order": 10,
+        "compound": "Sodium resazurin",
+        "compound_id": 1852,
+        "attribute": "0.1% w/v",
+        "amount": 0.5,
+        "unit": "ml",
+        "g_l": 0.000498008,
+        "mmol_l": 0.00198275,
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000498008,\n                        \"mmol_l\": 0.00198275,\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "Na2CO3",
+      "stage": "Main sol. 1006",
+      "source_pointer": [
+        "data",
+        "solutions",
+        0,
+        "recipe",
+        10
+      ],
+      "row": {
+        "recipe_order": 11,
+        "compound": "Na2CO3",
+        "compound_id": 32,
+        "amount": 4,
+        "unit": "g",
+        "g_l": 3.98406,
+        "mmol_l": 37.5898,
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 4,\n                        \"unit\": \"g\",\n                        \"g_l\": 3.98406,\n                        \"mmol_l\": 37.5898,\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "Volatile fatty acid mixture",
+      "stage": "Main sol. 1006",
+      "source_pointer": [
+        "data",
+        "solutions",
+        0,
+        "recipe",
+        11
+      ],
+      "row": {
+        "recipe_order": 12,
+        "solution": "Volatile fatty acid mixture",
+        "solution_id": 608,
+        "amount": 3.1,
+        "unit": "ml",
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 12,\n                        \"solution\": \"Volatile fatty acid mixture\",\n                        \"solution_id\": 608,\n                        \"amount\": 3.1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "L-Cysteine HCl x H2O",
+      "stage": "Main sol. 1006",
+      "source_pointer": [
+        "data",
+        "solutions",
+        0,
+        "recipe",
+        12
+      ],
+      "row": {
+        "recipe_order": 13,
+        "compound": "L-Cysteine HCl x H2O",
+        "compound_id": 770,
+        "amount": 0.5,
+        "unit": "g",
+        "g_l": 0.498008,
+        "mmol_l": 2.83545,
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.498008,\n                        \"mmol_l\": 2.83545,\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "Distilled water",
+      "stage": "Main sol. 1006",
+      "source_pointer": [
+        "data",
+        "solutions",
+        0,
+        "recipe",
+        13
+      ],
+      "row": {
+        "recipe_order": 14,
+        "compound": "Distilled water",
+        "compound_id": 4,
+        "amount": 1000,
+        "unit": "ml",
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "Acetic acid",
+      "stage": "Volatile fatty acid mixture",
+      "source_pointer": [
+        "data",
+        "solutions",
+        1,
+        "recipe",
+        0
+      ],
+      "row": {
+        "recipe_order": 1,
+        "compound": "Acetic acid",
+        "compound_id": 380,
+        "amount": 548.5,
+        "unit": "ml",
+        "g_l": 573.182,
+        "mmol_l": 9545.09,
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Acetic acid\",\n                        \"compound_id\": 380,\n                        \"amount\": 548.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 573.182,\n                        \"mmol_l\": 9545.09,\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "Propionic acid",
+      "stage": "Volatile fatty acid mixture",
+      "source_pointer": [
+        "data",
+        "solutions",
+        1,
+        "recipe",
+        1
+      ],
+      "row": {
+        "recipe_order": 2,
+        "compound": "Propionic acid",
+        "compound_id": 381,
+        "amount": 193.5,
+        "unit": "ml",
+        "g_l": 192.145,
+        "mmol_l": 2593.76,
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Propionic acid\",\n                        \"compound_id\": 381,\n                        \"amount\": 193.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 192.145,\n                        \"mmol_l\": 2593.76,\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "Butyric acid",
+      "stage": "Volatile fatty acid mixture",
+      "source_pointer": [
+        "data",
+        "solutions",
+        1,
+        "recipe",
+        2
+      ],
+      "row": {
+        "recipe_order": 3,
+        "compound": "Butyric acid",
+        "compound_id": 314,
+        "amount": 129,
+        "unit": "ml",
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Butyric acid\",\n                        \"compound_id\": 314,\n                        \"amount\": 129,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "n-Valeric acid",
+      "stage": "Volatile fatty acid mixture",
+      "source_pointer": [
+        "data",
+        "solutions",
+        1,
+        "recipe",
+        3
+      ],
+      "row": {
+        "recipe_order": 4,
+        "compound": "n-Valeric acid",
+        "compound_id": 288,
+        "amount": 32.25,
+        "unit": "ml",
+        "g_l": 30.2827,
+        "mmol_l": 296.512,
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"n-Valeric acid\",\n                        \"compound_id\": 288,\n                        \"amount\": 32.25,\n                        \"unit\": \"ml\",\n                        \"g_l\": 30.2827,\n                        \"mmol_l\": 296.512,\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "iso-Butyric acid",
+      "stage": "Volatile fatty acid mixture",
+      "source_pointer": [
+        "data",
+        "solutions",
+        1,
+        "recipe",
+        4
+      ],
+      "row": {
+        "recipe_order": 5,
+        "compound": "iso-Butyric acid",
+        "compound_id": 377,
+        "amount": 32.25,
+        "unit": "ml",
+        "g_l": 30.6375,
+        "mmol_l": 347.719,
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"iso-Butyric acid\",\n                        \"compound_id\": 377,\n                        \"amount\": 32.25,\n                        \"unit\": \"ml\",\n                        \"g_l\": 30.6375,\n                        \"mmol_l\": 347.719,\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "DL-2-Methylbutyric acid",
+      "stage": "Volatile fatty acid mixture",
+      "source_pointer": [
+        "data",
+        "solutions",
+        1,
+        "recipe",
+        5
+      ],
+      "row": {
+        "recipe_order": 6,
+        "compound": "DL-2-Methylbutyric acid",
+        "compound_id": 223,
+        "amount": 32.25,
+        "unit": "ml",
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"DL-2-Methylbutyric acid\",\n                        \"compound_id\": 223,\n                        \"amount\": 32.25,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "D1006",
+      "label": "iso-Valeric acid",
+      "stage": "Volatile fatty acid mixture",
+      "source_pointer": [
+        "data",
+        "solutions",
+        1,
+        "recipe",
+        6
+      ],
+      "row": {
+        "recipe_order": 7,
+        "compound": "iso-Valeric acid",
+        "compound_id": 378,
+        "amount": 32.25,
+        "unit": "ml",
+        "g_l": 30.0247,
+        "mmol_l": 293.986,
+        "optional": 0
+      },
+      "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"iso-Valeric acid\",\n                        \"compound_id\": 378,\n                        \"amount\": 32.25,\n                        \"unit\": \"ml\",\n                        \"g_l\": 30.0247,\n                        \"mmol_l\": 293.986,\n                        \"optional\": 0\n                    }",
+      "reference": "https://mediadive.dsmz.de/rest/medium/1006"
+    },
+    {
+      "source": "K1006",
+      "label": "Na2CO3",
+      "source_pointer": [
+        "recipe_table",
+        1
+      ],
+      "gram_amount": "3.99",
+      "mol_amount": "0.04",
+      "snippet": "Na2CO3 Sodium carbonate SEED-cpd00242#cpd00971## 3.99 0.04",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "iso-Valeric acid",
+      "source_pointer": [
+        "recipe_table",
+        2
+      ],
+      "gram_amount": "null",
+      "mol_amount": "null",
+      "snippet": "iso-Valeric acid iso-Valeric acid SEED-cpd05178### null null",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "DL-histidine",
+      "source_pointer": [
+        "recipe_table",
+        3
+      ],
+      "gram_amount": "7.78",
+      "mol_amount": "0.05",
+      "snippet": "DL-histidine DL-histidine SEED-cpd00572### 7.78 0.05",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "Cysteine-HCl x H2O",
+      "source_pointer": [
+        "recipe_table",
+        4
+      ],
+      "gram_amount": "0.50",
+      "mol_amount": "0.00",
+      "snippet": "Cysteine-HCl x H2O Cysteine-HCl SEED-cpd00084#cpd00099## 0.50 0.00",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "Propionic acid",
+      "source_pointer": [
+        "recipe_table",
+        5
+      ],
+      "gram_amount": "null",
+      "mol_amount": "null",
+      "snippet": "Propionic acid Propionic acid SEED-cpd00141### null null",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "CO2",
+      "source_pointer": [
+        "recipe_table",
+        6
+      ],
+      "gram_amount": "null",
+      "mol_amount": "null",
+      "snippet": "CO2 CO2 SEED-cpd00011### null null",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "Distilled water",
+      "source_pointer": [
+        "recipe_table",
+        7
+      ],
+      "gram_amount": "null",
+      "mol_amount": "null",
+      "snippet": "Distilled water H2O SEED-cpd00001### null null",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "DL-2-Methyl butyric acid",
+      "source_pointer": [
+        "recipe_table",
+        8
+      ],
+      "gram_amount": "null",
+      "mol_amount": "null",
+      "snippet": "DL-2-Methyl butyric acid DL-2-Methylbutyric acid 2-Methylbutyric acid# null null",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "K2HPO4",
+      "source_pointer": [
+        "recipe_table",
+        9
+      ],
+      "gram_amount": "0.29",
+      "mol_amount": "0.00",
+      "snippet": "K2HPO4 di Potassium hydrogen phosphate SEED-cpd00009#cpd00205## 0.29 0.00",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "KH2PO4",
+      "source_pointer": [
+        "recipe_table",
+        10
+      ],
+      "gram_amount": "0.29",
+      "mol_amount": "0.00",
+      "snippet": "KH2PO4 Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.29 0.00",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "iso-Butyric acid",
+      "source_pointer": [
+        "recipe_table",
+        11
+      ],
+      "gram_amount": "null",
+      "mol_amount": "null",
+      "snippet": "iso-Butyric acid iso-Butyric acid SEED-cpd01711### null null",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "n-Valeric acid",
+      "source_pointer": [
+        "recipe_table",
+        12
+      ],
+      "gram_amount": "null",
+      "mol_amount": "null",
+      "snippet": "n-Valeric acid n-Valeric acid SEED-cpd00597### null null",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "MgSO4 x 7 H2O",
+      "source_pointer": [
+        "recipe_table",
+        13
+      ],
+      "gram_amount": "0.10",
+      "mol_amount": "0.00",
+      "snippet": "MgSO4 x 7 H2O Magnesium sulfate SEED-cpd00048#cpd00254## 0.10 0.00",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "Butyric acid",
+      "source_pointer": [
+        "recipe_table",
+        14
+      ],
+      "gram_amount": "null",
+      "mol_amount": "null",
+      "snippet": "Butyric acid Butyric acid SEED-cpd00211### null null",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "CaCl2 x 2 H2O",
+      "source_pointer": [
+        "recipe_table",
+        15
+      ],
+      "gram_amount": "0.06",
+      "mol_amount": "0.00",
+      "snippet": "CaCl2 x 2 H2O Calcium chloride SEED-cpd00063#cpd00099## 0.06 0.00",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "Yeast extract",
+      "source_pointer": [
+        "recipe_table",
+        16
+      ],
+      "gram_amount": "3.99",
+      "mol_amount": "null",
+      "snippet": "Yeast extract Yeast extract rich-peptone# 3.99 null",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "Trypticase",
+      "source_pointer": [
+        "recipe_table",
+        17
+      ],
+      "gram_amount": "1.00",
+      "mol_amount": "null",
+      "snippet": "Trypticase Trypticase rich-peptone# 1.00 null",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "Resazurin",
+      "source_pointer": [
+        "recipe_table",
+        18
+      ],
+      "gram_amount": "9.97E-4",
+      "mol_amount": "4.35E-6",
+      "snippet": "Resazurin Resazurin SEED-cpd08053### 9.97E-4 4.35E-6",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "NaCl",
+      "source_pointer": [
+        "recipe_table",
+        19
+      ],
+      "gram_amount": "0.48",
+      "mol_amount": "0.01",
+      "snippet": "NaCl NaCl SEED-cpd00099#cpd00971## 0.48 0.01",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "Acetic acid",
+      "source_pointer": [
+        "recipe_table",
+        20
+      ],
+      "gram_amount": "null",
+      "mol_amount": "null",
+      "snippet": "Acetic acid Acetic acid SEED-cpd00029### null null",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    },
+    {
+      "source": "K1006",
+      "label": "(NH4)2SO4",
+      "source_pointer": [
+        "recipe_table",
+        21
+      ],
+      "gram_amount": "0.48",
+      "mol_amount": "0.00",
+      "snippet": "(NH4)2SO4 Ammonium sulfate SEED-cpd00013#cpd00048## 0.48 0.00",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+      "basis_snippet": "Gram & Mol amounts are per Liter of medium."
+    }
+  ],
+  "source_row_count": 42,
+  "target_hashes_unchanged": true,
+  "pdf_visual_review": "First and only page rendered with sips and inspected; displayed liquid-acid stock inputs are ml, stock dose 3.10 ml, resazurin 0.50 ml of 0.1% w/v."
+}

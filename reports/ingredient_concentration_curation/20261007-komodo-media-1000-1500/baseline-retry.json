@@ -1,0 +1,52 @@
+{
+  "terminal": true,
+  "runtime": "isolated Python 3.11; not full project or CI",
+  "initial_attempt": "baseline.json: independent audit passed; representative schema invocation used a non-existent filename, before any apply",
+  "checks": [
+    {
+      "name": "schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/KOMODO_222_SP_-_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo-1500-baseline-retry-schema.log"
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo-1500-baseline-retry-strict.log"
+    },
+    {
+      "name": "guard-tests",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_medium_concentration_review.py",
+        "tests/test_komodo_concentration_review.py",
+        "-k",
+        "not applied_komodo_batch",
+        "--junitxml",
+        "/tmp/ingredient-media-20261007/komodo-1500-baseline-tests.xml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo-1500-baseline-retry-guard-tests.log"
+    }
+  ],
+  "presentation": {
+    "records": 46,
+    "inserted_lines": 8977,
+    "removed_lines": 0,
+    "replaced_blocks": 0
+  },
+  "closed_schema_targets": 500
+}

@@ -1,0 +1,97 @@
+{
+  "terminal": true,
+  "records_edited": 0,
+  "review_complete": false,
+  "capture_receipt_sha256": "8c802303cf38982bebc07777a71a7d2dab5d4c01d44c0cc1d1c8136d866a39a4",
+  "checks": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/next-323-baseline-0.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/next-323-baseline-1.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/next-323-baseline-2.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/next-323-baseline-3.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/next-323-baseline-4.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/next-323-baseline-5.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/next-323-baseline-6.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/next-323-baseline-7.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    }
+  ],
+  "all_passed": true
+}

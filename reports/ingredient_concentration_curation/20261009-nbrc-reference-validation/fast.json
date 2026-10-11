@@ -1,0 +1,27 @@
+{
+  "terminal": true,
+  "phase": "fast",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-nbrc-reference-validation/fast-0.log",
+      "log_sha256": "365fc837a2396ef51236ce7662012b6b4b075e3a21d5850410e4e2aea481a56e"
+    }
+  ],
+  "code_sha256": {
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "tests/test_recipe_nbrc_references.py": "bd7a993f246eb1482f4181c49a2d3501731c4cca2cbb8369a36afb9576ba4019"
+  },
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "d0d0451157b8ed78867e41503fd02bc9afa0f80d11758d67a3f60e9daee6b138"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "d0d0451157b8ed78867e41503fd02bc9afa0f80d11758d67a3f60e9daee6b138"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "terminal": true,
+  "scope": "Source discovery for unresolved variants/conflicts, not applied record edits. PDF text extracted with pypdf; no visual inspection claimed.",
+  "sources": [
+    {
+      "medium_id": "670",
+      "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+      "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+      "http_status": 200,
+      "accessed_at": "2026-10-08T05:10:57.114358+00:00",
+      "content_type": "application/pdf",
+      "sha256": "e21dbc3f7c16cf301001aaa5ca4ca7aa57fb486cbccba0995c46e094946917ab",
+      "local_cache": "/tmp/ingredient-media-20261007/next-variant-pdfs/670.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "text": "670: ACIDIFERROBACTER (MS) MEDIUM\n(NH4)2SO4 2.00 g\nMgSO4 x 7 H2O 0.25 g\nK2HPO4 0.10 g\nKCl 0.10 g\nFeSO4 x 7 H2O (40% w/v in 0.2 N H2SO4) 50.00 ml\nDistilled water 950.00 ml\n1. Dissolve ingredients except ferrous sulfate and adjust pH to 2.2 with 4 N H2SO4. Sterilize\nmedium by autoclaving for 15 min at 121\u00b0C. Before use, add  FeSO4 x 7 H2O from a 40%\n(w/v) stock solution prepared with 0.2 N H2SO4 and filter-sterilized under 100% N2 gas\natmosphere.\n2. Note: Incubate statically without shaking.\nFor DSM 9463: Adjust  pH  to 3.5  with 1 N H2SO4  prior to  autoclaving  and omit  FeSO4 x\n7 H2O from the medium. Before use, add 5.00 g/l of powdered sulfur sterilized by steaming\nin a boiling water bath for 3 hours on each of 3 successive days.\nFor DSM 9466: Adjust  pH  to 3.0  with 1 N H2SO4  prior  to autoclaving and  omit  FeSO4 x\n7 H2O from the medium. Before use, add 5.00 g/l of powdered sulfur sterilized by steaming\nin a boiling water bath for 3 hours on each of 3 successive days and 0.20 g/l of yeast\nextract (from a sterile stock solution).\nFor DSM 9467: Adjust  pH to 3.0  with 1 N H2SO4  prior to autoclaving   and  omit  FeSO4 x\n7 H2O from the medium. Before use, add 2.00 g/l D-glucose and 0.1 g/l yeast extract from\nfilter-sterilized stock solutions.\nFor DSM 9468: Adjust pH to 1.6 with 4 N H2SO4 prior to autoclaving.\n\u00a9 2022 DSMZ - All rights reserved Page 1 of 1"
+        }
+      ]
+    },
+    {
+      "medium_id": "673",
+      "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium673.pdf",
+      "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium673.pdf",
+      "http_status": 200,
+      "accessed_at": "2026-10-08T05:10:58.006646+00:00",
+      "content_type": "application/pdf",
+      "sha256": "9489b77804731d4fbf84e9e67e9477b37228d78fe25f926757b4ed8f75a6352a",
+      "local_cache": "/tmp/ingredient-media-20261007/next-variant-pdfs/673.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "text": " \n\u00a9 2007 DSMZ GmbH - All rights reserved \n673. THERMOCOCCUS PROFUNDUS MEDIUM \n \n \nPrepare medium 266 with the following modification: reduce the yeast extract \nconcentration to 1 g/l, add 5 g/l peptone and reduce the NaCl concentration to 25 g/l. \nPrepare the medium under N2 as described in medium 266. The final pH should be \nadjusted to pH 7.2. \n "
+        }
+      ]
+    },
+    {
+      "medium_id": "266",
+      "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium266.pdf",
+      "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium266.pdf",
+      "http_status": 200,
+      "accessed_at": "2026-10-08T05:10:58.888378+00:00",
+      "content_type": "application/pdf",
+      "sha256": "cf84ea0d423a592b710c04fbdfe2a9408bc82a35e04288eed6ec3110df636322",
+      "local_cache": "/tmp/ingredient-media-20261007/next-variant-pdfs/266.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "text": " \n\u00a9 2007 DSMZ GmbH - All rights reserved \n266. THERMOCOCCUS CELER MEDIUM \n \n \n (NH4)2SO4 1.30 g \n KH2PO4 0.28 g \n MgSO4 x 7 H2O 0.25 g \n CaCl2 x 2 H2O 0.07 g \n FeCl3 x 6 H2O 0.02 g \n MnCl2 x 4 H2O 1.80 mg \n Na2B4O7 x 10 H2O 4.50 mg \n ZnSO4 x 7 H2O 0.22 mg \n CuCl2 x 2 H2O 0.05 mg \n Na2MoO4 x 2 H2O 0.03 mg \n VOSO4 x 2 H2O 0.03 mg \n CoSO4 x 7 H2O 0.01 mg \n NaCl 40.00 g \n Resazurin 1.00 mg \n Yeast extract 2.00 g \n Sulfur, powdered 5.00 g \n Distilled water 1000.00 ml \n \nAdjust final pH to 5.8. \nPrepare the medium anaerobically under 100% nitrogen. The following constituents are \nprepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 \nml of 10% w/v solution)-boiled for a few minutes not autoclaved; sulfur (10 g)-sterilized \nby steaming for 3 h on each of three successive days; Na2S x 9 H2O (10 ml of 3% w/v \nsolution)-autoclaved under nitrogen atmosphere. \n "
+        }
+      ]
+    }
+  ]
+}

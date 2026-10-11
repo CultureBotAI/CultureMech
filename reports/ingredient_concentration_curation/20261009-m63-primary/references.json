@@ -1,0 +1,192 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "references",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_glucose_and_0_6_m_nacl.yaml",
+        "--cache-dir",
+        "/tmp/m63-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-m63-primary/references-00.log",
+      "log_sha256": "e13b07431bc85119184b943d9b120716d7171248647abf6e422d8925d59cdd22"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_glucose_and_0_75_m_nacl.yaml",
+        "--cache-dir",
+        "/tmp/m63-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-m63-primary/references-01.log",
+      "log_sha256": "60f8f54f064f87fc42c983cbadc0d2e3412520aa1f4afbc3ca4f37f9f61dcaac"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_glucose_and_1_5_m_nacl.yaml",
+        "--cache-dir",
+        "/tmp/m63-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-m63-primary/references-02.log",
+      "log_sha256": "ba1865d58a5c7212e08800c9509f5ea5565366eaa7b099421705f4382195e2c2"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_glucose_and_2_5_m_nacl.yaml",
+        "--cache-dir",
+        "/tmp/m63-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-m63-primary/references-03.log",
+      "log_sha256": "484f9295b9fbdf5382d4c4c09fd998456e0e1ab748286e2d0d6d9b1af43422dc"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_ectoine_and_0_6_m_nacl.yaml",
+        "--cache-dir",
+        "/tmp/m63-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-m63-primary/references-04.log",
+      "log_sha256": "759e017095ebfc7cd56df2c806ae7fda17e6f6ffdad6ea2ccaeede04853235e4"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_ectoine_and_0_75_m_nacl.yaml",
+        "--cache-dir",
+        "/tmp/m63-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-m63-primary/references-05.log",
+      "log_sha256": "a852a646e38e5798efab254424eec30f73600607c9cffbe514e1eddece55e39e"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_ectoine_and_1_5_m_nacl.yaml",
+        "--cache-dir",
+        "/tmp/m63-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-m63-primary/references-06.log",
+      "log_sha256": "e4ce858130afae7e15f93786a6c70c05118c1519d4b9d5bd971380731a645783"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_ectoine_and_2_5_m_nacl.yaml",
+        "--cache-dir",
+        "/tmp/m63-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-m63-primary/references-07.log",
+      "log_sha256": "f3e33ad8d78671ecb50532d5ac0d0600ce8c948f754b94bf541446e56fc20daa"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_hydroxyectoine_and_0_6_m_nacl.yaml",
+        "--cache-dir",
+        "/tmp/m63-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-m63-primary/references-08.log",
+      "log_sha256": "8cf6bb879801aab5e73e7a5fbe0fc7126a4994639e865748ad4b7013287bfb9c"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_hydroxyectoine_and_0_75_m_nacl.yaml",
+        "--cache-dir",
+        "/tmp/m63-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-m63-primary/references-09.log",
+      "log_sha256": "b6d9176a2e22929c93c8bbf54ca05dd66d40018d39ec3e9eff900095702e541c"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_hydroxyectoine_and_1_5_m_nacl.yaml",
+        "--cache-dir",
+        "/tmp/m63-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-m63-primary/references-10.log",
+      "log_sha256": "1bf445ebbe381826484f55c2bec56b0bdb0aefdd2dbef72e30b276d6cb9e4f0c"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_hydroxyectoine_and_2_5_m_nacl.yaml",
+        "--cache-dir",
+        "/tmp/m63-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-m63-primary/references-11.log",
+      "log_sha256": "8b84b57cba187cdaa1a2967c5a46a4ed83ee3aa13faae6c631e44ec17e6b90a0"
+    }
+  ],
+  "plan_sha256": "5d74efe2e5714804f5d82bbfee24fdb7d74c8aebde103c4f9828822e37f2b0f0",
+  "code_sha256": {
+    "scripts/review_m63_primary_concentrations.py": "e6e1224c27f999190d1143c001b640d992861a6ad0145c43d65335a82edaf19c",
+    "tests/test_m63_primary_concentrations.py": "b8272f4b55ecd8c8372a27b916040f8dba57b541c567ebe4ba45edc4ca27f20e",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-m63-primary/extract_source.py": "4000b6a1cf566c96d70721f8318258416db6d771acd88b6218bb345878f48951",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-m63-primary/extract_base_source.py": "e0e5e861b4acfbcc0d9f4c3cecf22ce90ee39548df634609b692e613fb3fc3bb"
+  },
+  "inventory_before_sha256": "05eafc9984ddb3e4defacd096eb7eecd7608453252a5c28e8f7bbad7e2faa525",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "primary_capture_snippets_verified": 24,
+  "base_claims_manual_scan_transcription_hash_checked": 60,
+  "scan_check_scope": "Pinned scan and reviewed transcription verified; no automated OCR claim.",
+  "production_reference_gate_passed": false,
+  "inventory_after_sha256": "05eafc9984ddb3e4defacd096eb7eecd7608453252a5c28e8f7bbad7e2faa525",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

@@ -1,0 +1,178 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "references",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/algae/Enriched_Seawater_Medium.yaml",
+        "--cache-dir",
+        "/tmp/utex-es-reference-cache",
+        "--json"
+      ],
+      "returncode": 2,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/references-000.log",
+      "log_sha256": "d11277dbc5a4267b7f72cdafa46a73b88b008ddeb2a5d5da1c6e2edc487c2400"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/algae/ES_10_Enriched_Seawater_Medium.yaml",
+        "--cache-dir",
+        "/tmp/utex-es-reference-cache",
+        "--json"
+      ],
+      "returncode": 2,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/references-001.log",
+      "log_sha256": "d11277dbc5a4267b7f72cdafa46a73b88b008ddeb2a5d5da1c6e2edc487c2400"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/algae/ES_2_Enriched_Seawater_Medium.yaml",
+        "--cache-dir",
+        "/tmp/utex-es-reference-cache",
+        "--json"
+      ],
+      "returncode": 2,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/references-002.log",
+      "log_sha256": "d11277dbc5a4267b7f72cdafa46a73b88b008ddeb2a5d5da1c6e2edc487c2400"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/algae/ES_4_Enriched_Seawater_Medium.yaml",
+        "--cache-dir",
+        "/tmp/utex-es-reference-cache",
+        "--json"
+      ],
+      "returncode": 2,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/references-003.log",
+      "log_sha256": "d11277dbc5a4267b7f72cdafa46a73b88b008ddeb2a5d5da1c6e2edc487c2400"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/algae/1_2_Enriched_Seawater.yaml",
+        "--cache-dir",
+        "/tmp/utex-es-reference-cache",
+        "--json"
+      ],
+      "returncode": 0,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/references-004.log",
+      "log_sha256": "dafddd1e59562c8a217633bf388c24b798e4fd73a737a3b85b247957a1cc747e"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/algae/2_3_Enriched_Seawater.yaml",
+        "--cache-dir",
+        "/tmp/utex-es-reference-cache",
+        "--json"
+      ],
+      "returncode": 0,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/references-005.log",
+      "log_sha256": "37903c221787efad742877a1274164ef618dc59ad8aeaab6851ccff8d520ff1c"
+    }
+  ],
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "plan_sha256": "445e4809c5c8ac1b162ea7a26bd8eaa25a325bcb3b53eae93d2613bb483fe13e",
+  "code_sha256": {
+    "scripts/review_utex_es_concentrations.py": "95f34b1c86b1caf4c7294da5eed917417779f21d78feafda5e11ca2c7a6bd72e",
+    "tests/test_utex_es_concentrations.py": "450cea1d70cc63017a088474fd6ff9caaac4b1a4916f2d0b68d2f0df33c16eb2"
+  },
+  "inventory_before_sha256": "da9766fa2581380e36cf1bef84b6e7fede418c8c70d76e9e5d7bb922e34d7d3b",
+  "source_checks": [
+    {
+      "url": "https://utex.org/products/enriched-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/es-over-10-enriched-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/es-over-2-enriched-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/es-over-4-enriched-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/one-half-enriched-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/two-thirds-enriched-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/enrichment-solution-for-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/ES-Fe-solution",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/p-ii-metal-solution",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/vitamin-b-12",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/biotin-vitamin-solution",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/thiamine-vitamin-solution",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:17439",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:49105",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://www.sigmaaldrich.com/US/en/product/sigma/t1270",
+      "mode": "web_tool_inspected_excerpt; not a complete HTTP capture",
+      "automatic_capture_pass": false
+    },
+    {
+      "url": "https://www.sigmaaldrich.com/US/en/product/sigma/50020",
+      "mode": "manually_inspected_web_tool_page; not a full HTTP capture",
+      "automatic_capture_pass": false
+    },
+    {
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:15978",
+      "mode": "manually_inspected_web_tool_page; not a full HTTP capture",
+      "automatic_capture_pass": false
+    }
+  ],
+  "manual_pdf_review_pages": 6,
+  "automatic_supplier_capture_pass_asserted": false,
+  "production_reference_gate_passed": false,
+  "inventory_after_sha256": "da9766fa2581380e36cf1bef84b6e7fede418c8c70d76e9e5d7bb922e34d7d3b",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

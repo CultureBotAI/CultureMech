@@ -1,0 +1,49 @@
+{
+  "created_at": "2026-10-11T02:47:41.414499+00:00",
+  "phase": "references",
+  "terminal": true,
+  "passed": true,
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/algae/Volvocacean_Medium.yaml"
+      ],
+      "returncode": 2,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-volvocacean-bg11/references-00.log",
+      "log_sha256": "4d1a3dadd7301c6245fb2ab5538297fd229eed7684451bc5ae9c2bc12db91f97"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/algae/bg_11_0_36_nacl_medium.yaml"
+      ],
+      "returncode": 2,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-volvocacean-bg11/references-01.log",
+      "log_sha256": "fd08364c144d940cf52efe3a9effe75794c337024dcca3fcee259d13df4541bd"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/algae/bg_11_1_nacl_medium.yaml"
+      ],
+      "returncode": 2,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-volvocacean-bg11/references-02.log",
+      "log_sha256": "1aa83fe13190f471bda84dfb3704b76594a1a5b30e926bc7162436985cc3eff8"
+    }
+  ],
+  "inventory_before_sha256": "57b71b6a9f0cc0bc43a000a7080ee34347368057149d1d732366c997b539c5cc",
+  "plan_sha256": "78ad345b1084bd72ad49ae3235a0f8d0aebb2041f52f8f222e0aef8dc2c194ff",
+  "normalized_count": 15910,
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "code_sha256": {
+    "scripts/review_utex_volvocacean_bg11.py": "9906dfc785de5f4bdcea433c5fddf385f0f4b686367028d4fb35220bd12f774c",
+    "tests/test_utex_volvocacean_bg11.py": "ba99858747df1592937f10441fd25b730add13d5abe95190da5812541c89bf68"
+  },
+  "all_gates_passed": false,
+  "inventory_after_sha256": "57b71b6a9f0cc0bc43a000a7080ee34347368057149d1d732366c997b539c5cc"
+}

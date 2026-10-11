@@ -1,0 +1,401 @@
+{
+  "terminal": true,
+  "phase": "baseline",
+  "state": "Preview only; no normalized YAML applied",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/KOMODO_119_METHANOBACTERIUM_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-0.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/KOMODO_119_METHANOBACTERIUM_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-1.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/methanomassiliicoccus_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-2.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/methanomassiliicoccus_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-3.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/for_dsm_16632_and_dsm_16643.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-4.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/for_dsm_16632_and_dsm_16643.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-5.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11975.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-6.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11975.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-7.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11977.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-8.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11977.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-9.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11978.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-10.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11978.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-11.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11979.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-12.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11979.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-13.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11995.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-14.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11995.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-15.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_1224.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-16.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_1224.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-17.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_15163.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-18.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_15163.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-19.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_3468.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-20.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_3468.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-21.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_4855.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-22.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_4855.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-23.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_6216.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-24.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_6216.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-25.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_7057.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-26.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_7057.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-27.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_7256.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-28.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_7256.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-29.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_9575.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-30.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_9575.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-31.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/methanobacterium_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-32.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/methanobacterium_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-33.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/gudongella_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-34.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/gudongella_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-35.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/methanobrevibacter_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-36.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/methanobrevibacter_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final-37.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    }
+  ],
+  "code_sha256": {
+    "scripts/repair_methanobacterium_family.py": "87a3dec56047f5aeaa394a7c65788ee86c297ab086d142c0597e82983ac1f90f",
+    "tests/test_methanobacterium_family.py": "b402ee4ba9088302faa60da467b2ed06bcab302601174722a33f66436267382e",
+    "reports/ingredient_concentration_curation/20261009-methanobacterium-family/audit.py": "31c3125ed89f27f37c516b13d71636fa3b5ac9ce4ee50820ab0f130e10c0c383"
+  },
+  "plan_sha256": "302bb7c856b8b4b885a35de19edcadc32efc77b115ea3fe23630c288503a775d",
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "27d92206953ca936698bfef2073b2c6ca5564b860007d866d29e6f941c3d1419"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "27d92206953ca936698bfef2073b2c6ca5564b860007d866d29e6f941c3d1419"
+  }
+}

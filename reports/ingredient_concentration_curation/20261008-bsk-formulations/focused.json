@@ -1,0 +1,70 @@
+{
+  "terminal": true,
+  "phase": "focused",
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_bsk_formulations.py",
+        "tests/test_bsk_formulations.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-bsk-formulations/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/bsk-formulations-focused-0.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_bsk_formulations.py",
+        "tests/test_bsk_formulations.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-bsk-formulations/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/bsk-formulations-focused-1.log"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_bsk_formulations.py",
+        "tests/test_dsmz_albumin_preparations.py",
+        "tests/test_recipe_pdf_references.py",
+        "tests/test_recipe_references.py",
+        "tests/test_medium_concentration_batch.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/bsk-formulations-focused-2.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/bsk-formulations-focused-3.log"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "781b097801c78303aae8b10e0b792993c35bd4c6eb10772559bc804536113b5a"
+  },
+  "code_sha256": {
+    "scripts/repair_bsk_formulations.py": "a0df723b84ed8dfa33b06023b540af8d67af79d33b375f643741d81f7f4cef2c",
+    "tests/test_bsk_formulations.py": "ed3727886d91fef83518c68c9be4b393d31fd358974c940d9ffefc63ac27ab47",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-bsk-formulations/audit.py": "8b97e7ff8b3a5acd9766ed02d2aa70a62308fd5a7e9f1ba48c6afdfa50e425af",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "f50309edc21ebcd71cc5882b2f5bf33d5efabe7d9b44e2117dd0f5e457fa2290"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "781b097801c78303aae8b10e0b792993c35bd4c6eb10772559bc804536113b5a"
+  }
+}

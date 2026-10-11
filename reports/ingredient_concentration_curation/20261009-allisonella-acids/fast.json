@@ -1,0 +1,29 @@
+{
+  "terminal": true,
+  "phase": "fast",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-allisonella-acids/fast-0.log",
+      "log_sha256": "dcdbf534aea82d86b8af54aae0bd080282b6d876ac3969b04e5682a998c29d49"
+    }
+  ],
+  "code_sha256": {
+    "scripts/repair_allisonella_acids.py": "afc95c9898218db0962b967e8a3189663e1a15ae393e9ef09faa87fbc145f390",
+    "tests/test_allisonella_acids.py": "e8ff482a4a799b5d7bde7bbdf1a7b0bc26e48b761e5f4c35377f00033bb1d5d4",
+    "reports/ingredient_concentration_curation/20261009-allisonella-acids/audit.py": "3d9dd9ae97cf62179e59e1f08506889747b22ce24c30d8336f5cf74596557f80"
+  },
+  "plan_sha256": "c42cb613f1e5e24c2383349e4869862808f7aebce7ab75463be77af2f0d3af18",
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "27d92206953ca936698bfef2073b2c6ca5564b860007d866d29e6f941c3d1419"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "27d92206953ca936698bfef2073b2c6ca5564b860007d866d29e6f941c3d1419"
+  }
+}

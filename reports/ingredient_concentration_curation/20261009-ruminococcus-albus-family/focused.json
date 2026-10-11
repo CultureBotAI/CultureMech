@@ -1,0 +1,76 @@
+{
+  "terminal": true,
+  "phase": "focused",
+  "records_applied": 0,
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_ruminococcus_albus_family.py",
+        "tests/test_ruminococcus_albus_family.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/audit.py"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/focused-0.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_ruminococcus_albus_family.py",
+        "tests/test_ruminococcus_albus_family.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/audit.py"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/focused-1.log",
+      "log_sha256": "45a468fa6205768496f23f1716ebb7575e9b723449d2099b88bf2afef60b721f"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_ruminococcus_albus_family.py",
+        "tests/test_recipe_references.py",
+        "tests/test_recipe_pdf_references.py",
+        "tests/test_recipe_komodo_references.py",
+        "tests/test_solution_merge_routing.py"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/focused-2.log",
+      "log_sha256": "fbce12106022647be38670b16143cd6bb3a64c51b00008cb7fe6470ab64fb77e"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/focused-3.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "code_sha256": {
+    "scripts/repair_ruminococcus_albus_family.py": "bd50694b6d094e72ced5c9869da14b889485d99b92f8a826fddfbbe92af5abff",
+    "tests/test_ruminococcus_albus_family.py": "20603276de67540569eb13e065ec796a753b0e2a571a77f15f029914a84daaa0",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/audit.py": "9f73f42bb35238527ec827d020eb2438d0b6b2dbb9e1018c38025ee5f29e269b",
+    "scripts/repair_oteb_family.py": "90aa83324ff1b28708921a00c409f50b4c4bd12eb15f09ae8feb0e1010916795",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/repair_mediadive_stock_concentration_evidence.py": "1badfa99205690cf6082d95db7dafbd6d4927b617027bc61fbaaf9dbd597c974",
+    "scripts/review_medium_concentration_evidence.py": "ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a",
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "src/culturemech/validation/write_validated.py": "8e1e2185231caecbe3dc99908c783cd83340b1e93fa9115ff1445d4b3820897e",
+    "src/culturemech/schema/culturemech.yaml": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a"
+  },
+  "plan_sha256": "47771aa8b0a5d36a7ae339456df36304c2cdabd7508ec526f8f269106bb14332",
+  "context_sha256": "45d48a0e66d0504c0bea2655ea38f2a88c4c3034f8f4bd520f6e6848e22d0b55",
+  "inventory_before": "b2fe53f9a5f5c2a28ce3af156e7c8d7c95e000e1f150df9ac3799f8a4e454cfe"
+}

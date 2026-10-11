@@ -1,0 +1,101 @@
+{
+  "terminal": true,
+  "canonical_reports": [
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/archaea/methanofollis_medium.yaml.md",
+      "before_sha256": "d35663e62a0c4680794fa4024e5d63c12275cb362d9a822acd407bb779977340",
+      "after_sha256": "9da1602c6202a8aa78e7a9e4ada906e4fac403906ba0e274d56ca96c2ff99c36",
+      "followup": "reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/records/CultureMech_001100.md"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/treponema_rectale_medium.yaml.md",
+      "before_sha256": "2f3b065147dacb869d63ca30e2bfde437d8714de8af5155651186a10e86dc351",
+      "after_sha256": "040e8aec1d61a810dcb5626ab11acb8e26e51ce0267b2028d1cf92171c3ebcea",
+      "followup": "reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/records/CultureMech_001311.md"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/synthrophomonas_medium.yaml.md",
+      "before_sha256": "4a18119621fdea1b2af367f4ef42b6e0389a9f8c0bb2af57fb395680963a115c",
+      "after_sha256": "6e34bb39a3ca90bf48ccda3b2ade1e1567257785b89139021d62da16e01a306e",
+      "followup": "reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/records/CultureMech_001310.md"
+    }
+  ],
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "canonical_before": {
+    "data/normalized_yaml/bacterial/treponema_rectale_medium.yaml": {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/treponema_rectale_medium.yaml.md",
+      "sha256": "2f3b065147dacb869d63ca30e2bfde437d8714de8af5155651186a10e86dc351"
+    },
+    "data/normalized_yaml/bacterial/synthrophomonas_medium.yaml": {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/synthrophomonas_medium.yaml.md",
+      "sha256": "4a18119621fdea1b2af367f4ef42b6e0389a9f8c0bb2af57fb395680963a115c"
+    },
+    "data/normalized_yaml/archaea/methanofollis_medium.yaml": {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/archaea/methanofollis_medium.yaml.md",
+      "sha256": "d35663e62a0c4680794fa4024e5d63c12275cb362d9a822acd407bb779977340"
+    }
+  },
+  "index_metadata_unchanged": true,
+  "cumulative_returncode": 0,
+  "cumulative": {
+    "stock_nodes_relocated": 825,
+    "new_quantity_slots": 364,
+    "unsupported_quantity_slots_removed": 869,
+    "new_evidence": 36384,
+    "new_curation_history": 5517,
+    "new_references": 5878,
+    "stock_stage_concentrations_rebased": 199,
+    "stock_descriptors_added": 241,
+    "quantity_corrections": 1455,
+    "stock_dose_basis_corrections": 128,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 88,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 8,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 1,
+    "child_links_corrected": 7,
+    "unsupported_primary_identities_removed": 3,
+    "ingredient_evidence_explanations_extended": 3,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 14,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5281
+  },
+  "passed": false,
+  "error": "AssertionError: "
+}

@@ -1,0 +1,15 @@
+{
+  "terminal": true,
+  "applied": true,
+  "records": 3,
+  "counts": {
+    "new_evidence": 19,
+    "new_references": 8,
+    "new_curation_history": 3,
+    "quantity_corrections": 9,
+    "unsupported_quantity_slots_removed": 44,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "new_quantity_slots": 1,
+    "stock_descriptors_added": 1
+  }
+}

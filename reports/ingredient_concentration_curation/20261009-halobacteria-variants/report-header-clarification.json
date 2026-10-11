@@ -1,0 +1,90 @@
+{
+  "terminal": true,
+  "records_edited": 0,
+  "all_record_goal_complete": false,
+  "ledger_sha256": "1459e0f65efaeb4d35211018781e982bbc0bb927cc7f5026ec3aa9f3c4d78d21",
+  "before_header": "Existing mappings, roles, flags, growth assertions and history are preserved.",
+  "after_header": "Existing mappings, roles, growth assertions and prior history are preserved. Quality flags are preserved except for the explicitly documented removal of S3823's false incomplete-composition flag.",
+  "reports": [
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/applied-records/M1065.md",
+      "before_sha256": "ebf2eacad12e34c5016ea3821fe36506e579d73deb5c6ea0fbf01cd75e083e53",
+      "after_sha256": "ad9c4fc7e3d4f6742c8915495e38cc3d82ba311990c9bcd789c342b799315fcb"
+    },
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/applied-records/M1212.md",
+      "before_sha256": "320e897056ec97be25512f8d91c111f80991ffdb3be14bbb349c5b5771488747",
+      "after_sha256": "94b029d23dfd156df42b77dd177e043bf20a5a38a3a40179c8fc5849e54179dc"
+    },
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/applied-records/M576.md",
+      "before_sha256": "d045729e70f7a68f2957a0d470e1b1ebb11f404f388b7251899a427de529b20b",
+      "after_sha256": "e9f6f84aea85bd53bb8f94a76fb76ce4016f24c2ae843225f9cda366c628a179"
+    },
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/applied-records/M959.md",
+      "before_sha256": "be78f1ea6f82e522e913d3809e4ac6f984ab1d771e6c92cc7c2f216b3fc3af38",
+      "after_sha256": "938d53df566fc63e870c24a6e782ef14260631d14fd3d5dd93e9b05ee185ce97"
+    },
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/applied-records/M960.md",
+      "before_sha256": "8765dcf05dc5a28ee19a84634f70d9af5088939154fa1ec3fe9432a95598e886",
+      "after_sha256": "79a3d54fd868354c88bdcbf556ab932b2b2030b74d926eec66a0d7bde19deba7"
+    },
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/applied-records/J1132.md",
+      "before_sha256": "b60dfde48e451b160b6133a507b3730c75b58b1d2bbea2837fa7037249dd2f42",
+      "after_sha256": "6df410e221dceade09d591fdaeb16c0a33330360169fc66d47b87802e96b5039"
+    },
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/applied-records/J914.md",
+      "before_sha256": "6e2710015d1fd740b6eccc944185546f31a512520d959cd0a6bc70fdefcc07fa",
+      "after_sha256": "6974ed4a453c1c9ddb9add7a4fbbd41e93f463f4a9ed92dab7217a5a6e6b3600"
+    },
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/applied-records/J572.md",
+      "before_sha256": "2206610942f52b26501e363176d1a286a5245d5cc3ebd6da47063fa0eca102a2",
+      "after_sha256": "1903617aa36c6fcdebaf3a7fee3122ff23a5075570055b678ec8df30f0eb44f5"
+    },
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/applied-records/J1008.md",
+      "before_sha256": "b65576920543b30a7b9b9328400919e68d34dc62d88c3ad5e4347e8a5529261c",
+      "after_sha256": "3ceadc38895a219897873fbda0bdba183973de033155dffce8f46bf2c23b60b8"
+    },
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/applied-records/J377.md",
+      "before_sha256": "cf50f5c08fb1e6726e13910b5059015e1fba516f1f32a3513162fa4ddc7877e5",
+      "after_sha256": "b77201f2b3418b7bc62f7e23296f25375c3ab4e3f72f913f1c1dfea8f4a0bfbc"
+    },
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/applied-records/M371.md",
+      "before_sha256": "377ad7cedb02e7c2aa8971c87773b0565df6c13ab8d80639b212acfa428f5e81",
+      "after_sha256": "8c0a2f50adce05921dc69cd7a1d7b0d2d36fad123b9e0809ae2e462e8bcb9ec7"
+    },
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/applied-records/M372.md",
+      "before_sha256": "f6d792529796f57ed123505c80bb153954efe1981ac67c199e8083807cb901f0",
+      "after_sha256": "7fd8e96817f4238b3951c5e7cb124d54d71ed6dfe552d193c1cb1d67e5549c54"
+    },
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/applied-records/S3823.md",
+      "before_sha256": "477a57fefbeb8daad26cd66f110140f4a53c9abfdc9d5c6d4faa14a5956daf46",
+      "after_sha256": "9fb850d096867ef5da5866fe5eca6f34da0a9f1aeb0407409f3c975195a07ed2"
+    },
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/applied-records/J168.md",
+      "before_sha256": "7ddb3edbc9e1cab7b213848b11323a3142c30196ca60130c89e68d664d7d7268",
+      "after_sha256": "49ecd3a8b194e5923ae00ee76e02e904d44e8670a04035325f943baab9cbe72d"
+    },
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/applied-records/M159.md",
+      "before_sha256": "7299235f69104435488073c0fe84fe66bebc8069f4e0c1f76889f59c0d93147a",
+      "after_sha256": "b6034d671d9461c9e3048992194355e87925fd0cd00801f22da4e707f1331705"
+    },
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/applied-records/M160.md",
+      "before_sha256": "2e46d1114ec6c9311eaad2c6ec70e93704c42b81636124eb40491b02b1a9028f",
+      "after_sha256": "6dd840d4bf8d8a714cdc4e6f5e0351bfb926f4503abaa14fdcbb9a8fd34c8747"
+    }
+  ]
+}

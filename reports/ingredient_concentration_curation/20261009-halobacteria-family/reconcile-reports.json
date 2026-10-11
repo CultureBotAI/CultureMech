@@ -1,0 +1,149 @@
+{
+  "terminal": true,
+  "phase": "reports",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-halobacteria-family/reconcile-reports-0.log",
+      "log_sha256": "fe6bd919d71d3d00a724617adeead75be67e680cd2dcd410ed1500fb10963500"
+    }
+  ],
+  "errors": [],
+  "source_sha256": "4c2df727dbf13031b4473181f389ab53b3fa59f048abbec823a314bba3a5bd94",
+  "plan_sha256": "53bccdac789d6ff3e8cbb3df230fa241d0da39b21ed2acc5b11fd2367b7036be",
+  "ignored_files_included": true,
+  "canonical_reports": {
+    "data/normalized_yaml/archaea/TOGO_M1064_Modified_Halobacteria_Medium-2.yaml": "reports/ingredient_concentration_curation/20261009-halobacteria-family/applied-records/M1064.md",
+    "data/normalized_yaml/archaea/modified_halobacteria_medium_2.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-media-2500-3000/records/archaea/modified_halobacteria_medium_2.yaml.md",
+    "data/normalized_yaml/archaea/JCM_J168_HALOBACTERIA_MEDIUM.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/archaea/JCM_J168_HALOBACTERIA_MEDIUM.yaml.md",
+    "data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml": "reports/ingredient_concentration_curation/20261009-halobacteria-family/applied-records/M159.md",
+    "data/normalized_yaml/archaea/TOGO_M160_Halobacteria_Medium.yaml": "reports/ingredient_concentration_curation/20261009-halobacteria-family/applied-records/M160.md"
+  },
+  "updated_canonical_reports": [
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-mediadive-media-2500-3000/records/archaea/modified_halobacteria_medium_2.yaml.md",
+      "sha256": "ea31cab8d774bbd132926bce0f1360191a9203c7e76bece4cb195e9e6ad7b98d",
+      "after_sha256": "6cce6e2705f0439b5a55c99b0df7234cbc41805696e1310fccf816369bd48557"
+    },
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/archaea/JCM_J168_HALOBACTERIA_MEDIUM.yaml.md",
+      "sha256": "313c9fb18496e4bba03407029b20d10eda59e8a45d997a345566ddb1a9773b10",
+      "after_sha256": "bd93f26ec38b5536a185bd1c7cd1ae46d8b1489055bbd39d017816d2b4835a98"
+    }
+  ],
+  "applied_ledgers": [
+    {
+      "key": "M1064",
+      "target": "data/normalized_yaml/archaea/TOGO_M1064_Modified_Halobacteria_Medium-2.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-family/applied-records/M1064.md",
+      "sha256": "8b5f5d4ddf28dea804c89f0e690708c4e57a663d9da2a2f9af5111d87669759d",
+      "claims": 42,
+      "changed": true
+    },
+    {
+      "key": "J1007",
+      "target": "data/normalized_yaml/archaea/modified_halobacteria_medium_2.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-family/applied-records/J1007.md",
+      "sha256": "2453618acae977ef7bc71ffdf760fc2b9ec4e6512d6c8eb044b1bbc87587a394",
+      "claims": 35,
+      "changed": true
+    },
+    {
+      "key": "J168",
+      "target": "data/normalized_yaml/archaea/JCM_J168_HALOBACTERIA_MEDIUM.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-family/applied-records/J168.md",
+      "sha256": "2971b498556f25b71aca8f58dc887852a50e55c728c4d0952ad319947671b832",
+      "claims": 27,
+      "changed": true
+    },
+    {
+      "key": "M159",
+      "target": "data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-family/applied-records/M159.md",
+      "sha256": "ece713050e6052cc12f4995fb0990a45e69975baa9744f414b06f48a46974e1d",
+      "claims": 32,
+      "changed": true
+    },
+    {
+      "key": "M160",
+      "target": "data/normalized_yaml/archaea/TOGO_M160_Halobacteria_Medium.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-family/applied-records/M160.md",
+      "sha256": "71469499327e940b2cf504edcaf48c0df335e15c4b3e0889b94aea115a0f4b92",
+      "claims": 35,
+      "changed": true
+    }
+  ],
+  "cumulative_audit": {
+    "stock_nodes_relocated": 825,
+    "new_quantity_slots": 364,
+    "unsupported_quantity_slots_removed": 869,
+    "new_evidence": 36049,
+    "new_curation_history": 5498,
+    "new_references": 5833,
+    "stock_stage_concentrations_rebased": 199,
+    "stock_descriptors_added": 241,
+    "quantity_corrections": 1455,
+    "stock_dose_basis_corrections": 128,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 88,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 8,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 1,
+    "child_links_corrected": 7,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 14,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5268
+  },
+  "followup_unique_records": 11805,
+  "outside_this_followup": 4105,
+  "excluded_preview_reports": 49,
+  "remaining_queues": {
+    "next-lb-identity-context": {
+      "remaining": 31,
+      "removed_exact_paths": []
+    },
+    "remaining-queue": {
+      "remaining": 71,
+      "removed_exact_paths": []
+    }
+  }
+}

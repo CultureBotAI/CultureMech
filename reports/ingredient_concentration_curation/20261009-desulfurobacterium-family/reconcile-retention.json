@@ -1,0 +1,131 @@
+{
+  "terminal": true,
+  "phase": "retention",
+  "checks": [],
+  "source_sha256": "48c3b9d310293ee12ee7655e555076f7787b0d9f52a88ff0a2f9d27ab98710b9",
+  "plan_sha256": "8452f7a0ffa1de24471cac81be183e7eb5deddfa26c4b03578ada91040181a1f",
+  "input_records": 15910,
+  "grouped_records": 10783,
+  "output_groups": 10777,
+  "routing": {
+    "total_processed": 15910,
+    "excluded_solutions": 4785,
+    "skipped_no_fingerprint": 2,
+    "skipped_error": 340,
+    "successfully_fingerprinted": 10783,
+    "reasons": {
+      "other_error": 340,
+      "no_valid_ingredients": 2
+    }
+  },
+  "targets": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_829_DESULFUROBACTERIUM_MEDIUM.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_829_DESULFUROBACTERIUM_MEDIUM.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_829a_DESULFUROBACTERIUM_ATLANTICUM_MEDIUM.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_829a_DESULFUROBACTERIUM_ATLANTICUM_MEDIUM.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M2587_Desulfurobacterium_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M2587_Desulfurobacterium_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/desulfurobacterium_atlanticum_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/desulfurobacterium_atlanticum_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/desulfurobacterium_crinifex_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/desulfurobacterium_crinifex_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/desulfurobacterium_indicum_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/desulfurobacterium_indicum_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/desulfurobacterium_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/desulfurobacterium_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_14290.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/for_dsm_14290.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_15218_dsm_15521_dsm_15522_dsm_16304.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/for_dsm_15218_dsm_15521_dsm_15522_dsm_16304.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_21157.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/for_dsm_21157.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_829_modified_for_dsm_16661.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/medium_829_modified_for_dsm_16661.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/solution_of_growth_stimulating_factors_medium_829.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/solution_of_growth_stimulating_factors_medium_829.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/thermodesulfobacterium_hydrogeniphilum_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/thermodesulfobacterium_hydrogeniphilum_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    }
+  ],
+  "excluded_solution_paths": [
+    "data/normalized_yaml/bacterial/mediadive_1680_Growth-stimulating_factors.yaml"
+  ],
+  "derived_yaml_written": false
+}

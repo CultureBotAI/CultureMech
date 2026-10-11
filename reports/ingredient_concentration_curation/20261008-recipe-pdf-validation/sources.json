@@ -1,0 +1,128 @@
+{
+  "DSMZ403": {
+    "version": 2,
+    "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "http_status": 200,
+    "sha256": "1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143",
+    "accessed_at": "2026-10-08T22:41:46.127153+00:00",
+    "pdf_sha256": "8053bfa9ef5ee989f52bc670e76bf85544eeae2142917643c06d99b629a222ef",
+    "pdf_pages": 1,
+    "media_type": "application/pdf",
+    "encoding": "utf-8",
+    "extraction": {
+      "library": "pypdf",
+      "version": "6.16.1",
+      "mode": "layout"
+    },
+    "title": "403. BSK-MEDIUM",
+    "fixture": "tests/fixtures/recipe_references/DSMZ403.json",
+    "fixture_sha256": "c8dfabc547468886a01ce5d5806ad87bd56b75cb313cd3d39e94b77f59673e1a",
+    "matches_previously_inspected_binary_and_text": true
+  },
+  "DSMZ751": {
+    "version": 2,
+    "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "http_status": 200,
+    "sha256": "4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3",
+    "accessed_at": "2026-10-08T22:41:46.334849+00:00",
+    "pdf_sha256": "721e0310d250ea6eab5d453f063b9452b48b8368ad53fa9384cb54434d2e59fb",
+    "pdf_pages": 1,
+    "media_type": "application/pdf",
+    "encoding": "utf-8",
+    "extraction": {
+      "library": "pypdf",
+      "version": "6.16.1",
+      "mode": "layout"
+    },
+    "title": "751. SC MEDIUM",
+    "fixture": "tests/fixtures/recipe_references/DSMZ751.json",
+    "fixture_sha256": "a0f650c244d940185cc95bc884506ee2b589ac369b4bd29c9cd5797921a6b914",
+    "matches_previously_inspected_binary_and_text": true
+  },
+  "DSMZ1829": {
+    "version": 2,
+    "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "http_status": 200,
+    "sha256": "315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2",
+    "accessed_at": "2026-10-08T22:41:47.257150+00:00",
+    "pdf_sha256": "7a1a4765f1c90054805ea3567880eec1c977290288f5db2c344764a17dd38ca2",
+    "pdf_pages": 1,
+    "media_type": "application/pdf",
+    "encoding": "utf-8",
+    "extraction": {
+      "library": "pypdf",
+      "version": "6.16.1",
+      "mode": "layout"
+    },
+    "title": "1829: BSKII medium (Borrelia)",
+    "fixture": "tests/fixtures/recipe_references/DSMZ1829.json",
+    "fixture_sha256": "e5746a0a85fbf74cd77490ebde4b427bf59579b622c54c1b113ead1b6ea1dda4",
+    "matches_previously_inspected_binary_and_text": true
+  },
+  "DSMZ261": {
+    "version": 2,
+    "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf",
+    "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf",
+    "http_status": 200,
+    "sha256": "da2157407b4dd0a17deeef1b75d8f209b58792e660b53113d8e0a9cc02457c0a",
+    "accessed_at": "2026-10-08T22:44:53.062184+00:00",
+    "pdf_sha256": "abea799d50da431e0446e012179e4ef6144c6f239cc8db830e33abafbcf33596",
+    "pdf_pages": 1,
+    "media_type": "application/pdf",
+    "encoding": "utf-8",
+    "extraction": {
+      "library": "pypdf",
+      "version": "6.16.1",
+      "mode": "layout"
+    },
+    "title": "261. MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF BACILLUS SCHLEGELII",
+    "fixture": "tests/fixtures/recipe_references/DSMZ261.json",
+    "fixture_sha256": "fd5b361d542572ce82b192e0f6ee26b6cb7a56639b6e48fbca28baea3a83974f",
+    "reason": "First heading wraps over two lines; corpus-scope check exposed truncation."
+  },
+  "DSMZ605a": {
+    "version": 2,
+    "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium605a.pdf",
+    "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium605a.pdf",
+    "http_status": 200,
+    "sha256": "d7a620907e9a0feeb825efe46a479c6192ee23376de85efd5a721e387695e245",
+    "accessed_at": "2026-10-08T22:59:30.871425+00:00",
+    "pdf_sha256": "29020201f1818e17846c1a470cf64da0c5a5345bc4274768cca86162576e1d0d",
+    "pdf_pages": 1,
+    "media_type": "application/pdf",
+    "encoding": "utf-8",
+    "extraction": {
+      "library": "pypdf",
+      "version": "6.16.1",
+      "mode": "layout"
+    },
+    "title": "605a. NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE",
+    "fixture": "tests/fixtures/recipe_references/DSMZ605a.json",
+    "fixture_sha256": "a7888642201dd8a30dad78b0ec3af286a0981731ce15d993cca9facc0de5091d",
+    "reason": "Official letter-suffixed variant; must not be silently excluded or matched to its base medium."
+  },
+  "DSMZ104a": {
+    "version": 2,
+    "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium104a.pdf",
+    "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium104a.pdf",
+    "http_status": 200,
+    "sha256": "05f2818242fe31869e69d3750b93af6062e9613b15d53413306c3d1ab6a0c214",
+    "accessed_at": "2026-10-08T22:59:31.990794+00:00",
+    "pdf_sha256": "b27c1260de2591e15098a89be2eae2040bee4d8852d801fec55f872db93d2000",
+    "pdf_pages": 1,
+    "media_type": "application/pdf",
+    "encoding": "utf-8",
+    "extraction": {
+      "library": "pypdf",
+      "version": "6.16.1",
+      "mode": "layout"
+    },
+    "title": "104a: ANAEROBACULUM MEDIUM",
+    "fixture": "tests/fixtures/recipe_references/DSMZ104a.json",
+    "fixture_sha256": "ec2600e109a962dd381c566c97c02d9b7873838de29593429c49e88065d7faa5",
+    "reason": "Official letter-suffixed variant; must not be silently excluded or matched to its base medium."
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "terminal": true,
+  "phase": "qa",
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/review_halobacteria_ingredient_family.py",
+        "tests/test_halobacteria_ingredient_family.py",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_followup_report_coverage.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-family/audit.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/summarize_followup_coverage.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-halobacteria-family/reconcile-qa-0.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/review_halobacteria_ingredient_family.py",
+        "tests/test_halobacteria_ingredient_family.py",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_followup_report_coverage.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-family/audit.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/summarize_followup_coverage.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-halobacteria-family/reconcile-qa-1.log",
+      "log_sha256": "0b479fee9c3c70313b9c5c7a6339ecd413b78bbea93f1ad5050f49bdd3a655af"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_solution_concentration_batch.py",
+        "tests/test_komodo670_source_versions.py",
+        "tests/test_repair_komodo_dsmz_submedia_score15.py",
+        "tests/test_followup_report_coverage.py",
+        "tests/test_halobacteria_ingredient_family.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-halobacteria-family/reconcile-qa-2.log",
+      "log_sha256": "ac272ef4a0ae2fe2a8b5f8ecd95bdf7815970f3c9ed3a4bb44a2d6e4bfd97db4"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-halobacteria-family/reconcile-qa-3.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "errors": [],
+  "source_sha256": "4c2df727dbf13031b4473181f389ab53b3fa59f048abbec823a314bba3a5bd94",
+  "plan_sha256": "53bccdac789d6ff3e8cbb3df230fa241d0da39b21ed2acc5b11fd2367b7036be",
+  "ignored_files_included": true,
+  "code_sha256": {
+    "scripts/review_halobacteria_ingredient_family.py": "fe9cb9d40d95c4676a46893ad9e474f1311d0d10505440b334e0ca16871dbffe",
+    "tests/test_halobacteria_ingredient_family.py": "757ef474cd34b1f83d72e02ee53d1e95aa68d61e1de5676f6c20622cf400c472",
+    "tests/test_medium_concentration_batch.py": "73b8670bcd75871e05ba9154b89a42085e84e6fda8d7dc1d86dbf831f5849602",
+    "tests/test_followup_report_coverage.py": "8f226c29d8081212461eec982f63a2db8ae0bc774b0df7fa487c37fe79819aba",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-family/audit.py": "bb74b1837dcc33da99ce9bac4cda1ac829b019f893f6233ba58f97d866e31085",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "37034b50840943056810c793e1119e3424dcd5ebd9b2c6ac704a5cfa05f36549",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/summarize_followup_coverage.py": "c73c13d5aa692cf19b42d802631fcfa7ff5b8a9469e33070b1f527fea15da904"
+  }
+}

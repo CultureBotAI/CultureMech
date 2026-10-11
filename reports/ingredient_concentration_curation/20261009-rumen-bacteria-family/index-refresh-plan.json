@@ -1,0 +1,363 @@
+{
+  "source_sha256": "746bda4b9dd276ab1077245cf751a5c652fd697e6f355cb7183b49f7f93edd71",
+  "files": [
+    {
+      "target": "data/normalized_yaml/bacterial_index.json",
+      "preview": "/tmp/ingredient-media-20261007/330-index-preview/bacterial_index.json",
+      "before_sha256": "2c18bdcfe33dc5137adb62e5f1c9427c729b5008e95374e7e39ca88d09a72d10",
+      "after_sha256": "672482f7919fd9c56cd2985430486320d27975fb82a7e52ef828aac5aed3ad8b",
+      "changes": [
+        {
+          "key": "CultureMech:002212",
+          "id": "CultureMech:002212",
+          "changes": {
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ],
+            "ingredient_count": [
+              25,
+              14
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:005024",
+          "id": "CultureMech:005024",
+          "changes": {
+            "ingredient_count": [
+              28,
+              27
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:007610",
+          "id": "CultureMech:007610",
+          "changes": {
+            "ingredient_count": [
+              20,
+              15
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:013996",
+          "id": "CultureMech:013996",
+          "changes": {
+            "ingredient_count": [
+              14,
+              16
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:014786",
+          "id": "CultureMech:014786",
+          "changes": {
+            "ingredient_count": [
+              13,
+              16
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:004812",
+          "id": "CultureMech:004812",
+          "changes": {
+            "ingredient_count": [
+              0,
+              6
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:001429",
+          "id": "CultureMech:001429",
+          "changes": {
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ],
+            "ingredient_count": [
+              28,
+              13
+            ],
+            "solution_count": [
+              null,
+              3
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:004979",
+          "id": "CultureMech:004979",
+          "changes": {
+            "ingredient_count": [
+              0,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_komodo_index.json",
+      "preview": "/tmp/ingredient-media-20261007/330-index-preview/by_source_komodo_index.json",
+      "before_sha256": "2a2e20835e1b4577dfd93c68e84db32f6744c53f9d4b8f2127ade7bd70f1309e",
+      "after_sha256": "87de85a7a93cb8f077e778c07f7c9c99739c550439d971c64ca2abaeb20ce965",
+      "changes": [
+        {
+          "key": "CultureMech:005024",
+          "id": "CultureMech:005024",
+          "changes": {
+            "ingredient_count": [
+              28,
+              27
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:004812",
+          "id": "CultureMech:004812",
+          "changes": {
+            "ingredient_count": [
+              0,
+              6
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:004979",
+          "id": "CultureMech:004979",
+          "changes": {
+            "ingredient_count": [
+              0,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_mediadive-solutions_index.json",
+      "preview": "/tmp/ingredient-media-20261007/330-index-preview/by_source_mediadive-solutions_index.json",
+      "before_sha256": "b916d54c939c4b0450556dd70d0f2301638f62f3141ac54e304803c36534fe7b",
+      "after_sha256": "60d0b27e781d4f1d24b057d414fddb0e8fdab3dcc9030bee794bea7d261b6a22",
+      "changes": [
+        {
+          "key": "CultureMech:013996",
+          "id": "CultureMech:013996",
+          "changes": {
+            "ingredient_count": [
+              14,
+              16
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:014786",
+          "id": "CultureMech:014786",
+          "changes": {
+            "ingredient_count": [
+              13,
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_mediadive_index.json",
+      "preview": "/tmp/ingredient-media-20261007/330-index-preview/by_source_mediadive_index.json",
+      "before_sha256": "15f58435e96bd7a2f6a338c4f2745ae3480bd490b5b08ac9b525683a7585b76a",
+      "after_sha256": "8b8487793ae71f628fb2121d3d16e567295e317520f7f1b06f4b8eb6b00f037d",
+      "changes": [
+        {
+          "key": "CultureMech:002212",
+          "id": "CultureMech:002212",
+          "changes": {
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ],
+            "ingredient_count": [
+              25,
+              14
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:001429",
+          "id": "CultureMech:001429",
+          "changes": {
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ],
+            "ingredient_count": [
+              28,
+              13
+            ],
+            "solution_count": [
+              null,
+              3
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_togo_index.json",
+      "preview": "/tmp/ingredient-media-20261007/330-index-preview/by_source_togo_index.json",
+      "before_sha256": "be07c363234c65dc3dfe9ff17d37eea883486696e863ae0d3648a223b4dd690b",
+      "after_sha256": "0769a10c8dd5112b329dc849f154256a2dc72a3b3d2bc67c7e2abf583fd064b7",
+      "changes": [
+        {
+          "key": "CultureMech:007610",
+          "id": "CultureMech:007610",
+          "changes": {
+            "ingredient_count": [
+              20,
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_index.json",
+      "preview": "/tmp/ingredient-media-20261007/330-index-preview/recipe_index.json",
+      "before_sha256": "6414e10a503590327a1821bbb558f967acb8907083aff41668406e520371f7ab",
+      "after_sha256": "79d623284a48c5b53d43fa413dcf1cf2677e12ffc53e418fd03887c18662c8a7",
+      "changes": [
+        {
+          "key": "CultureMech:002212",
+          "id": "CultureMech:002212",
+          "changes": {
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ],
+            "ingredient_count": [
+              25,
+              14
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:005024",
+          "id": "CultureMech:005024",
+          "changes": {
+            "ingredient_count": [
+              28,
+              27
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:007610",
+          "id": "CultureMech:007610",
+          "changes": {
+            "ingredient_count": [
+              20,
+              15
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:013996",
+          "id": "CultureMech:013996",
+          "changes": {
+            "ingredient_count": [
+              14,
+              16
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:014786",
+          "id": "CultureMech:014786",
+          "changes": {
+            "ingredient_count": [
+              13,
+              16
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:004812",
+          "id": "CultureMech:004812",
+          "changes": {
+            "ingredient_count": [
+              0,
+              6
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:001429",
+          "id": "CultureMech:001429",
+          "changes": {
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ],
+            "ingredient_count": [
+              28,
+              13
+            ],
+            "solution_count": [
+              null,
+              3
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:004979",
+          "id": "CultureMech:004979",
+          "changes": {
+            "ingredient_count": [
+              0,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_statistics.json",
+      "preview": "/tmp/ingredient-media-20261007/330-index-preview/recipe_statistics.json",
+      "before_sha256": "0d519c4cb0bace1dbb3a859827b69b18aab14e578fccf9778d50ff25df05bd94",
+      "after_sha256": "e4fffe948a6543a35301df299e0573c20d805b3abba9541a5c0cb7432b35076c",
+      "changes": {
+        "with_hierarchy_enrichment": [
+          1469,
+          1467
+        ]
+      }
+    }
+  ],
+  "metadata_changed_ids": [
+    "CultureMech:001429",
+    "CultureMech:002212",
+    "CultureMech:004812",
+    "CultureMech:004979",
+    "CultureMech:005024",
+    "CultureMech:007610",
+    "CultureMech:013996",
+    "CultureMech:014786"
+  ]
+}
